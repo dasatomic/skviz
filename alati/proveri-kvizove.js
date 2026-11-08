@@ -1,9 +1,10 @@
 #!/usr/bin/env node
 // Provera svih kvizova:  node alati/proveri-kvizove.js   (ili: npm run proveri)
-// Proverava format, broj odgovora, duplikate, postojanje slika i poznate vrste medija.
+// Proverava format, broj odgovora, duplikate, postojanje slika, poznate vrste medija i pojam za krug reči.
 const fs = require('fs');
 const path = require('path');
 const KOREN = path.join(__dirname, '..', 'kvizovi');
+const recnik = require('../lib/recnik');
 const VRSTE = ['slika', 'svg', 'melodija', 'morze', 'molekul', 'telo', 'atom', 'planeta', 'dnk', 'mapa', 'sat', 'formula', 'emodzi'];
 const MOLEKULI = ['voda', 'ugljen-dioksid', 'metan', 'amonijak', 'kiseonik', 'azot', 'vodonik', 'ozon', 'hlorovodonik', 'vodonik-peroksid', 'etanol', 'benzen', 'sumporna-kiselina', 'so', 'dijamant', 'glukoza'];
 
@@ -27,6 +28,12 @@ for (const dir of fs.readdirSync(KOREN).sort()) {
     if (![1, 2, 3].includes(p.tezina)) u(oz, 'tezina treba da bude 1, 2 ili 3');
     else t[p.tezina]++;
     if (!p.zanimljivost) u(oz, 'nema zanimljivosti');
+    if (p.rec !== undefined) {
+      // pojam za krug „Najduža reč“: latinica ili ćirilica, 3–11 slova (ćirilična slova; lj/nj/dž su po jedno)
+      const c = recnik.uCirilicu(String(p.rec));
+      if (!c) g(oz, `pojam „${p.rec}“ sadrži slova kojih nema u srpskoj azbuci`);
+      else if ([...c].length < 3 || [...c].length > 11) g(oz, `pojam „${p.rec}“ mora imati 3–11 slova`);
+    } else u(oz, 'nema pojma „rec“ za krug reči (biće izabran automatski)');
     const kljuc = (p.pitanje || '').toLowerCase().replace(/\W+/g, ' ').trim() + '|' + (p.odgovori || [])[0];
     if (svaPitanja.has(kljuc)) u(oz, 'isto pitanje postoji i u ' + svaPitanja.get(kljuc));
     svaPitanja.set(kljuc, oz);

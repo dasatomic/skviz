@@ -27,6 +27,7 @@ kvizovi/
       "pitanje": "Koje godine je Srpska crkva postala samostalna?",
       "odgovori": ["1219.", "1389.", "1166.", "1346."],
       "zanimljivost": "Nešto što nije očigledno, a lepo je znati…",
+      "rec": "crkva",
       "mediji": { "vrsta": "slika", "src": "slike/zica.jpg" }
     }
   ]
@@ -38,6 +39,7 @@ kvizovi/
 | `odgovori` | **tačno 4**, **prvi je uvek tačan** – igra ih sama meša |
 | `tezina` | 1 = lako, 2 = srednje, 3 = teško (vredi ×1,5 poena) |
 | `zanimljivost` | prikazuje se posle odgovora („💡 Da li si znao?“) – treba da bude nešto *neočigledno* |
+| `rec` | ključni pojam pitanja (3–11 slova, idealno 5–8, latinicom). U krugu „Najduža reč“ slova se biraju tako da se može složiti pojam iz nekog od odigranih pitanja – da se gradivo još jednom ponovi. Ne mora biti tačan odgovor, ali treba da je srodan (npr. za „Ko je izumeo gromobran?“ → `gromobran`). Vlastita imena su u redu (`pupin`, `mileševa`). Ako izostane, bira se automatski iz odgovora, pitanja i zanimljivosti. |
 | `objasnjenje` | (opciono) kratko objašnjenje zašto je odgovor tačan |
 | `vreme` | (opciono) sekundi za ovo pitanje, umesto podešavanja sobe |
 | `uOpstem` | `false` = kviz se ne meša u „Opšte znanje“ (npr. za kvizove za učenje jedne lekcije) |

@@ -12,7 +12,7 @@ Ceo interfejs, pitanja i komentari u kodu su na **srpskom (latinica)**. Igrači 
 - `server.js` – HTTP + Server-Sent Events (`/api/dogadjaji`), akcije preko `POST /api/akcija`.
 - `lib/soba.js` – tok igre: lobi → uvod → pitanje/otkrivanje ×N → tabela → reči ×N → tabela → kraj.
 - `lib/kvizovi.js` – učitavanje `kvizovi/*/kviz.json`, izbor pitanja (mešavina težina, prednost neodigranim – `podaci/odigrana-pitanja.json`).
-- `lib/recnik.js` – „Najduža reč“: `podaci/recnik.txt` (Hunspell sr, osnovni oblici, ćirilica) + `podaci/ucestalost.txt`.
+- `lib/recnik.js` – „Najduža reč“: `podaci/recnik.txt` (Hunspell sr, osnovni oblici, ćirilica) + `podaci/ucestalost.txt`. Slova se biraju tako da se može složiti pojam (`rec`) iz nekog od upravo odigranih pitanja (`slovaSaRecju`, `Soba.izaberiPojam`).
 - `lib/statistika.js` – porodična tabla slavnih u `podaci/statistika.json`.
 - `public/` – klijent (vanilla JS): `app.js` ekrani, `mediji.js` interaktivni mediji (3D, mape, melodije…), `geo/svet.json` mape.
 - `alati/` – `proveri-kvizove.js`, `preuzmi-slike.js` (Vikipedija), `preuzmi-udzbenike.js` (Fondacija Kavčić).
@@ -21,7 +21,7 @@ Ceo interfejs, pitanja i komentari u kodu su na **srpskom (latinica)**. Igrači 
 ## Dodavanje novog kviza (npr. iz slikanih stranica knjige)
 Format je opisan u `kvizovi/UPUTSTVO.md`. Ukratko:
 1. Napravi folder `kvizovi/<oblast-razred-tema>/` i `kviz.json` sa `naziv`, `ikona`, `boja`, `opis`, `pitanja`.
-2. Svako pitanje: `pitanje`, `odgovori` (tačno 4, **prvi je tačan**), `tezina` (1–3), `zanimljivost`, opciono `mediji`.
+2. Svako pitanje: `pitanje`, `odgovori` (tačno 4, **prvi je tačan**), `tezina` (1–3), `zanimljivost`, `rec` (ključni pojam 3–11 slova, idealno 5–8 – krug reči ga sakriva u slovima), opciono `mediji`.
 3. Pitanja pravi **svojim rečima** na osnovu gradiva (ne prepisuj odlomke iz knjige). Mešaj težine (~35% lako, 40% srednje, 25% teško), uz par pitanja koja bi pomučila i odrasle.
 4. `zanimljivost` = nešto neočigledno što proširuje znanje, ne ponavljanje tačnog odgovora.
 5. Kad god ima smisla, koristi interaktivne medije (molekul, telo, mapa, melodija, atom, sat, emodzi, svg).

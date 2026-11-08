@@ -314,7 +314,7 @@ function ekranUvod(nov) {
     <div class="sitno">Krug ${u.broj}</div>
     <h1>${pitanja ? esc(kv?.naziv || 'Pitanja') : 'Najduža reč'}</h1>
     <p>${pitanja ? `${u.brojPitanja} pitanja sa 4 ponuđena odgovora. Brži tačan odgovor donosi više poena, teška pitanja vrede ×1,5, a niz tačnih odgovora daje bonus!`
-      : `${u.brojReci}× po 12 slova. Složi što dužu reč u osnovnom obliku (imenica u jednini, glagol u infinitivu…). 100 poena po slovu, bonus za najdužu!`}</p>
+      : `${u.brojReci === 1 ? '12 slova' : `${u.brojReci}× po 12 slova`}. Složi što dužu reč u osnovnom obliku (imenica u jednini, glagol u infinitivu…). 100 poena po slovu, bonus za najdužu!${V.krugovi.includes('pitanja') ? ' U slovima se krije i jedan pojam iz prethodnih pitanja – ko ga pronađe, dobija +200.' : ''}`}</p>
   </div>`;
   Zvuk.efekat('bubanj');
   dugmeDalje('Kreni! ➜');
@@ -477,6 +477,7 @@ function ekranReci(nov, staro) {
       <div class="traka"><span class="znacka">🔤 Reč ${R.rb}/${R.ukupno}</span><span class="razmak"></span><span class="sekunde"></span></div>
       <div class="tajmer"><i></i></div>
       <div class="slova" id="slova">${R.slova.map((c, i) => `<button class="slovo" data-i="${i}" style="animation-delay:${i * 0.05}s">${slovo(c)}</button>`).join('')}</div>
+      ${R.imaPojam && !otkriveno ? '<div class="pojam-savet">💡 U ovim slovima krije se jedan pojam iz kviza – pronađi ga za +200!</div>' : ''}
       <div id="sredina"></div>`;
     if (!otkriveno) tajmer(R.pocetak, R.trajanje);
     if (!EKRAN && !otkriveno) {
@@ -538,6 +539,9 @@ function ekranReci(nov, staro) {
         return `<div class="st" style="animation-delay:${0.15 * i}s"><span style="font-size:1.4em">${esc(x.avatar)}</span><div><b>${esc(x.ime)}</b><div class="najbolja-rec" style="font-size:1.15em">${d.rec ? esc(rec(d.rec)) + ` <span class="sitno">(${[...d.rec].length})</span>` : '<span class="sitno">—</span>'}</div></div>
           <span class="p">${d.rec ? `<span class="plus">+${d.poeni + d.bonus}</span>` : ''}${d.oznaka ? `<div class="sitno">${d.oznaka}</div>` : ''}</span></div>`;
       }).join('')}</div></div>
+      ${R.kljuc ? `<div class="kartica pojam"><h3>🔁 Pojam iz kviza: <span class="najbolja-rec">${esc(rec(R.kljuc.rec))}</span></h3>
+        <div class="sitno">Iz pitanja: „${esc(R.kljuc.pitanje)}“ – tačan odgovor: <b>${esc(R.kljuc.odgovor)}</b></div>
+        ${R.nasli.length ? `<div class="sitno" style="margin-top:6px">Pronašli: ${R.nasli.map((id) => esc(igrac(id)?.ime || '')).join(', ')} (+200)</div>` : ''}</div>` : ''}
       <div class="kartica zanimljivost"><h3>🤖 Najduže moguće (${N.duzina} slova)</h3>
         <div class="najbolja-rec">${N.reci.map((r) => esc(rec(r))).join(' · ') || '—'}</div>
         <div class="sitno" style="margin-top:8px">Reči proverava srpski rečnik sa ${'oko 160.000'} reči u osnovnom obliku.</div></div>`;

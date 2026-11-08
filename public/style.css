@@ -229,3 +229,7 @@ body.ekran .odgovori, .odgovori.dvokolonski { grid-template-columns: 1fr 1fr; }
 
 @media (min-width: 640px) { .odgovori { grid-template-columns: 1fr 1fr; } .slova { gap: 10px; } }
 @media (max-width: 380px) { body { font-size: 15.5px; } .avatari { grid-template-columns: repeat(6, 1fr); } }
+/* pojam iz kviza u krugu reči */
+.pojam-savet { margin: 8px 0 0; padding: 8px 12px; border-radius: 12px; background: rgba(253, 203, 110, .14); color: var(--istaknuto); font-size: .9em; text-align: center; }
+.pojam { background: linear-gradient(135deg, #1f6f5c, #22406f); border-left: 6px solid #55efc4; animation: ulaz .6s .2s backwards; line-height: 1.45; }
+.pojam h3 { margin-top: 0; color: #55efc4; font-size: 1em; }
