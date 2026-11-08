@@ -1,0 +1,4552 @@
+{
+  "naziv": "7. razred · Fizika",
+  "ikona": "🚀",
+  "boja": "#3a86ff",
+  "opis": "Po udžbeniku Fizika 7 (Fondacija Kavčić): Njutnovi zakoni, slobodno padanje, trenje, ravnoteža i poluga, Arhimedov zakon, rad, energija, snaga i toplotne pojave",
+  "redosled": 112,
+  "uOpstem": false,
+  "oblast": "fizika",
+  "razred": 7,
+  "lekcije": [
+    {
+      "tema": "Sila i kretanje",
+      "naziv": "Sila kao uzrok promene brzine. Ubrzanje"
+    },
+    {
+      "tema": "Sila i kretanje",
+      "naziv": "Drugi Njutnov zakon"
+    },
+    {
+      "tema": "Sila i kretanje",
+      "naziv": "Ravnomerno promenljivo pravolinijsko kretanje"
+    },
+    {
+      "tema": "Sila i kretanje",
+      "naziv": "Srednja i trenutna brzina"
+    },
+    {
+      "tema": "Sila i kretanje",
+      "naziv": "Grafičko predstavljanje kretanja"
+    },
+    {
+      "tema": "Sila i kretanje",
+      "naziv": "Međusobno delovanje tela. Treći Njutnov zakon"
+    },
+    {
+      "tema": "Kretanje tela pod dejstvom sile teže. Sile trenja",
+      "naziv": "Ubrzanje Zemljine teže. Galilejev ogled. Slobodno padanje"
+    },
+    {
+      "tema": "Kretanje tela pod dejstvom sile teže. Sile trenja",
+      "naziv": "Hitac naviše i hitac naniže"
+    },
+    {
+      "tema": "Kretanje tela pod dejstvom sile teže. Sile trenja",
+      "naziv": "Bestežinsko stanje"
+    },
+    {
+      "tema": "Kretanje tela pod dejstvom sile teže. Sile trenja",
+      "naziv": "Sila trenja i sila otpora sredine"
+    },
+    {
+      "tema": "Ravnoteža tela",
+      "naziv": "Slaganje sila i ravnoteža tela"
+    },
+    {
+      "tema": "Ravnoteža tela",
+      "naziv": "Poluga. Moment sile"
+    },
+    {
+      "tema": "Ravnoteža tela",
+      "naziv": "Sila potiska. Arhimedov zakon"
+    },
+    {
+      "tema": "Ravnoteža tela",
+      "naziv": "Plivanje i tonjenje tela"
+    },
+    {
+      "tema": "Mehanički rad i energija. Snaga",
+      "naziv": "Mehanički rad"
+    },
+    {
+      "tema": "Mehanički rad i energija. Snaga",
+      "naziv": "Kinetička i potencijalna energija"
+    },
+    {
+      "tema": "Mehanički rad i energija. Snaga",
+      "naziv": "Zakon održanja mehaničke energije"
+    },
+    {
+      "tema": "Mehanički rad i energija. Snaga",
+      "naziv": "Snaga i koeficijent korisnog dejstva"
+    },
+    {
+      "tema": "Toplotne pojave",
+      "naziv": "Toplotno širenje i skupljanje tela"
+    },
+    {
+      "tema": "Toplotne pojave",
+      "naziv": "Temperatura i njeno merenje"
+    },
+    {
+      "tema": "Toplotne pojave",
+      "naziv": "Čestična struktura supstance. Toplotno kretanje"
+    },
+    {
+      "tema": "Toplotne pojave",
+      "naziv": "Unutrašnja energija i temperatura"
+    }
+  ],
+  "pitanja": [
+    {
+      "lekcija": 1,
+      "tezina": 1,
+      "pitanje": "Šta je ubrzanje?",
+      "odgovori": [
+        "Promena brzine u jedinici vremena",
+        "Pređeni put",
+        "Masa tela",
+        "Vreme kretanja"
+      ],
+      "zanimljivost": "Ubrzanje pokazuje koliko se „brzo menja brzina“ – i pri kočenju i pri ubrzavanju.",
+      "rec": "ubrzanje"
+    },
+    {
+      "lekcija": 1,
+      "tezina": 2,
+      "pitanje": "Koja je jedinica za ubrzanje?",
+      "odgovori": [
+        "Metar u sekundi na kvadrat (m/s²)",
+        "Metar u sekundi (m/s)",
+        "Njutn",
+        "Kilogram"
+      ],
+      "zanimljivost": "Ubrzanje 1 m/s² znači da se brzina svake sekunde poveća za 1 m/s.",
+      "rec": "jedinica",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "a = Δv / Δt"
+      }
+    },
+    {
+      "lekcija": 1,
+      "tezina": 2,
+      "pitanje": "Automobil za 5 s poveća brzinu sa 0 na 20 m/s. Koliko je ubrzanje?",
+      "odgovori": [
+        "4 m/s²",
+        "100 m/s²",
+        "20 m/s²",
+        "0,25 m/s²"
+      ],
+      "zanimljivost": "20 m/s je 72 km/h – ovakav automobil bi od 0 do 100 km/h ubrzao za oko 7 sekundi.",
+      "rec": "automobil"
+    },
+    {
+      "lekcija": 1,
+      "tezina": 1,
+      "pitanje": "Šta je uzrok promene brzine tela?",
+      "odgovori": [
+        "Sila koja deluje na telo",
+        "Boja tela",
+        "Oblik putanje",
+        "Ništa"
+      ],
+      "zanimljivost": "Bez sile telo zadržava svoju brzinu – to je Prvi Njutnov zakon.",
+      "rec": "sila"
+    },
+    {
+      "lekcija": 1,
+      "tezina": 2,
+      "pitanje": "Šta znači negativno ubrzanje (usporenje)?",
+      "odgovori": [
+        "Brzina tela se smanjuje",
+        "Telo ide unazad",
+        "Telo stoji",
+        "Brzina se povećava"
+      ],
+      "zanimljivost": "Pri naglom kočenju usporenje automobila može biti i oko 8 m/s².",
+      "rec": "usporenje"
+    },
+    {
+      "lekcija": 1,
+      "tezina": 3,
+      "pitanje": "Koliko je ubrzanje tela koje se kreće stalnom brzinom pravolinijski?",
+      "odgovori": [
+        "Nula",
+        "10 m/s²",
+        "Jednako brzini",
+        "Ne može se odrediti"
+      ],
+      "zanimljivost": "Iako se telo kreće, njegova brzina se ne menja – zato nema ubrzanja.",
+      "rec": "nula"
+    },
+    {
+      "lekcija": 1,
+      "tezina": 2,
+      "pitanje": "Biciklista smanji brzinu sa 10 m/s na 4 m/s za 3 s. Koliko je usporenje?",
+      "odgovori": [
+        "2 m/s²",
+        "6 m/s²",
+        "3 m/s²",
+        "14 m/s²"
+      ],
+      "zanimljivost": "Kočnice na mokrom putu daju mnogo manje usporenje – zato biciklisti po kiši voze sporije.",
+      "rec": "bicikl"
+    },
+    {
+      "lekcija": 1,
+      "tezina": 3,
+      "pitanje": "Kakvo ubrzanje podnosi pilot borbenog aviona u oštrom zaokretu?",
+      "odgovori": [
+        "Do oko 9 g (9 puta veće od ubrzanja Zemljine teže)",
+        "Oko 0,1 g",
+        "Nikakvo",
+        "Oko 100 g"
+      ],
+      "zanimljivost": "Piloti nose posebna odela koja stežu noge da krv ne bi „pobegla“ iz glave.",
+      "rec": "pilot"
+    },
+    {
+      "lekcija": 1,
+      "tezina": 1,
+      "pitanje": "Šta se dešava sa brzinom tela ako na njega deluje sila u smeru kretanja?",
+      "odgovori": [
+        "Povećava se",
+        "Smanjuje se",
+        "Ne menja se",
+        "Telo staje"
+      ],
+      "zanimljivost": "Kada guraš ljuljašku u pravom trenutku, ona se zaljulja sve više.",
+      "rec": "guranje"
+    },
+    {
+      "lekcija": 1,
+      "tezina": 2,
+      "pitanje": "Kada telo ima ubrzanje iako mu se brojčana vrednost brzine ne menja?",
+      "odgovori": [
+        "Kada menja pravac kretanja, npr. u krugu",
+        "Nikada",
+        "Kada stoji",
+        "Kada pada"
+      ],
+      "zanimljivost": "Automobil u krivini stalnom brzinom ima ubrzanje usmereno ka centru krivine.",
+      "rec": "krivina"
+    },
+    {
+      "lekcija": 1,
+      "tezina": 3,
+      "pitanje": "Rakete pri poletanju imaju ubrzanje oko 30 m/s². Kolika im je brzina posle 10 s?",
+      "odgovori": [
+        "300 m/s",
+        "30 m/s",
+        "3 m/s",
+        "3.000 m/s"
+      ],
+      "zanimljivost": "300 m/s je skoro brzina zvuka – a raketa nastavlja da ubrzava još nekoliko minuta.",
+      "rec": "raketa",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "🚀"
+      }
+    },
+    {
+      "lekcija": 1,
+      "tezina": 2,
+      "pitanje": "Šta pokazuje strelica ubrzanja kad telo usporava?",
+      "odgovori": [
+        "Suprotno od smera kretanja",
+        "U smeru kretanja",
+        "Naviše",
+        "Nema strelice"
+      ],
+      "zanimljivost": "Ubrzanje je vektor – ima pravac i smer, kao i sila.",
+      "rec": "smer"
+    },
+    {
+      "lekcija": 1,
+      "tezina": 1,
+      "pitanje": "Gde osećamo ubrzanje u svakodnevnom životu?",
+      "odgovori": [
+        "Kad lift krene ili auto naglo ubrza",
+        "Kad sedimo mirno",
+        "Kad spavamo",
+        "Kad čitamo"
+      ],
+      "zanimljivost": "Na tobogan-vozovima u zabavnim parkovima ubrzanje može dostići 4–5 g.",
+      "rec": "lift"
+    },
+    {
+      "lekcija": 1,
+      "tezina": 3,
+      "pitanje": "Šta je potrebno izmeriti da bi se odredilo ubrzanje?",
+      "odgovori": [
+        "Promenu brzine i vreme te promene",
+        "Samo masu",
+        "Samo put",
+        "Samo silu"
+      ],
+      "zanimljivost": "Mobilni telefoni imaju senzor – akcelerometar – koji meri ubrzanje i zna kako ga držiš.",
+      "rec": "senzor"
+    },
+    {
+      "lekcija": 1,
+      "tezina": 2,
+      "pitanje": "Gepard ubrzava od 0 do 25 m/s za oko 3 s. Koliko je otprilike njegovo ubrzanje?",
+      "odgovori": [
+        "Oko 8 m/s²",
+        "Oko 75 m/s²",
+        "Oko 25 m/s²",
+        "Oko 1 m/s²"
+      ],
+      "zanimljivost": "To je ubrzanje kakvo imaju najjači sportski automobili.",
+      "rec": "gepard"
+    },
+    {
+      "lekcija": 2,
+      "tezina": 1,
+      "pitanje": "Kako glasi Drugi Njutnov zakon?",
+      "odgovori": [
+        "F = m · a",
+        "F = m / a",
+        "F = m + a",
+        "F = a / m"
+      ],
+      "zanimljivost": "Zakon pokazuje da ista sila telu veće mase daje manje ubrzanje.",
+      "rec": "njutn",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "F = m · a"
+      }
+    },
+    {
+      "lekcija": 2,
+      "tezina": 2,
+      "pitanje": "Kolika sila daje telu mase 2 kg ubrzanje 3 m/s²?",
+      "odgovori": [
+        "6 N",
+        "5 N",
+        "1,5 N",
+        "0,67 N"
+      ],
+      "zanimljivost": "Jedan njutn je sila koja telu mase 1 kg daje ubrzanje 1 m/s².",
+      "rec": "računanje"
+    },
+    {
+      "lekcija": 2,
+      "tezina": 2,
+      "pitanje": "Ako se masa tela udvostruči, a sila ostane ista, šta se dešava sa ubrzanjem?",
+      "odgovori": [
+        "Smanji se dva puta",
+        "Udvostruči se",
+        "Ostane isto",
+        "Postane nula"
+      ],
+      "zanimljivost": "Zato natovaren kamion sporije ubrzava od praznog.",
+      "rec": "kamion"
+    },
+    {
+      "lekcija": 2,
+      "tezina": 2,
+      "pitanje": "Ako se sila udvostruči, a masa ostane ista, šta je sa ubrzanjem?",
+      "odgovori": [
+        "Udvostruči se",
+        "Smanji se upola",
+        "Ne menja se",
+        "Učetvorostruči se"
+      ],
+      "zanimljivost": "Zato sportski automobili imaju jake motore – veća sila daje veće ubrzanje.",
+      "rec": "dupla"
+    },
+    {
+      "lekcija": 2,
+      "tezina": 3,
+      "pitanje": "Sila 50 N deluje na kolica mase 25 kg. Koliko je ubrzanje?",
+      "odgovori": [
+        "2 m/s²",
+        "1.250 m/s²",
+        "0,5 m/s²",
+        "75 m/s²"
+      ],
+      "zanimljivost": "Ako se uračuna i trenje, stvarno ubrzanje kolica bilo bi manje.",
+      "rec": "kolica"
+    },
+    {
+      "lekcija": 2,
+      "tezina": 1,
+      "pitanje": "Šta je jedinica za silu?",
+      "odgovori": [
+        "Njutn (N)",
+        "Kilogram",
+        "Džul",
+        "Vat"
+      ],
+      "zanimljivost": "Isak Njutn je rođen 1643, iste godine kada je Toričeli izveo ogled sa živom.",
+      "rec": "njutn"
+    },
+    {
+      "lekcija": 2,
+      "tezina": 3,
+      "pitanje": "Telo mase 4 kg dobija ubrzanje 2,5 m/s². Kolika sila deluje na njega?",
+      "odgovori": [
+        "10 N",
+        "1,6 N",
+        "6,5 N",
+        "100 N"
+      ],
+      "zanimljivost": "Sila od 10 N je otprilike težina flaše vode od 1 litra.",
+      "rec": "sila"
+    },
+    {
+      "lekcija": 2,
+      "tezina": 2,
+      "pitanje": "Zašto je teže pogurati pun ormar nego prazan?",
+      "odgovori": [
+        "Veća masa – za isto ubrzanje treba veća sila",
+        "Pun ormar je manji",
+        "Prazan ima veće trenje",
+        "Isto je"
+      ],
+      "zanimljivost": "Masa je mera inertnosti – telo veće mase se „opire“ promeni brzine.",
+      "rec": "ormar"
+    },
+    {
+      "lekcija": 2,
+      "tezina": 2,
+      "pitanje": "Šta je rezultujuća sila?",
+      "odgovori": [
+        "Jedna sila koja ima isto dejstvo kao više sila zajedno",
+        "Najmanja sila",
+        "Sila trenja",
+        "Sila koja ne deluje"
+      ],
+      "zanimljivost": "U Drugom Njutnovom zakonu F je uvek rezultujuća sila na telo.",
+      "rec": "rezultanta"
+    },
+    {
+      "lekcija": 2,
+      "tezina": 3,
+      "pitanje": "Šta je dinamika?",
+      "odgovori": [
+        "Deo mehanike koji proučava kretanje i njegove uzroke (sile)",
+        "Proučavanje mirovanja",
+        "Proučavanje svetlosti",
+        "Proučavanje toplote"
+      ],
+      "zanimljivost": "Reč dinamika potiče od grčke reči dynamis – sila.",
+      "rec": "dinamika"
+    },
+    {
+      "lekcija": 2,
+      "tezina": 1,
+      "pitanje": "Koji naučnik je postavio tri zakona kretanja?",
+      "odgovori": [
+        "Isak Njutn",
+        "Galilej",
+        "Ajnštajn",
+        "Arhimed"
+      ],
+      "zanimljivost": "Njutn je bio i matematičar – istovremeno sa Lajbnicom razvio je diferencijalni račun.",
+      "rec": "njutn"
+    },
+    {
+      "lekcija": 2,
+      "tezina": 2,
+      "pitanje": "Teniska i kuglaška kugla udarene istom silom – koja dobija veće ubrzanje?",
+      "odgovori": [
+        "Teniska, jer ima manju masu",
+        "Kuglaška",
+        "Isto",
+        "Nijedna"
+      ],
+      "zanimljivost": "Pri udarcu reketom teniska loptica dobija brzinu i preko 200 km/h.",
+      "rec": "tenis",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "🎾 🎳"
+      }
+    },
+    {
+      "lekcija": 2,
+      "tezina": 3,
+      "pitanje": "Kolika je masa tela ako mu sila od 12 N daje ubrzanje 4 m/s²?",
+      "odgovori": [
+        "3 kg",
+        "48 kg",
+        "16 kg",
+        "0,33 kg"
+      ],
+      "zanimljivost": "Iz F = m·a dobija se m = F/a – tako se može „izmeriti“ masa i u bestežinskom stanju.",
+      "rec": "masa"
+    },
+    {
+      "lekcija": 2,
+      "tezina": 2,
+      "pitanje": "Koji instrument sa oprugom koristimo u školskoj laboratoriji da izmerimo silu koja ubrzava kolica?",
+      "odgovori": [
+        "Dinamometar",
+        "Akcelerometar",
+        "Barometar",
+        "Ampermetar"
+      ],
+      "zanimljivost": "Dinamometrom se može meriti i sila kojom stiskaš šaku – tako lekari proveravaju snagu mišića.",
+      "rec": "dinamometar"
+    },
+    {
+      "lekcija": 2,
+      "tezina": 2,
+      "pitanje": "Zašto prazan kamion lakše kreće nego pun, iako ima isti motor?",
+      "odgovori": [
+        "Ima manju masu, pa ista sila daje veće ubrzanje",
+        "Ima manje točkova",
+        "Ima veće trenje",
+        "Nema razlike"
+      ],
+      "zanimljivost": "Zato kamioni sa teretom polako ubrzavaju na semaforu.",
+      "rec": "teret"
+    },
+    {
+      "lekcija": 3,
+      "tezina": 1,
+      "pitanje": "Šta je ravnomerno ubrzano kretanje?",
+      "odgovori": [
+        "Kretanje pri kojem se brzina povećava jednako za jednaka vremena",
+        "Kretanje stalnom brzinom",
+        "Kretanje u krug",
+        "Mirovanje"
+      ],
+      "zanimljivost": "Slobodno padanje (bez otpora vazduha) je ravnomerno ubrzano kretanje.",
+      "rec": "ubrzano"
+    },
+    {
+      "lekcija": 3,
+      "tezina": 2,
+      "pitanje": "Kojom formulom se računa brzina pri ravnomerno ubrzanom kretanju iz mirovanja?",
+      "odgovori": [
+        "v = a · t",
+        "v = a / t",
+        "v = t / a",
+        "v = a + t"
+      ],
+      "zanimljivost": "Posle 3 s ubrzanja od 2 m/s², brzina je 6 m/s.",
+      "rec": "brzina",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "v = a · t"
+      }
+    },
+    {
+      "lekcija": 3,
+      "tezina": 3,
+      "pitanje": "Kojom formulom se računa pređeni put pri ravnomerno ubrzanom kretanju iz mirovanja?",
+      "odgovori": [
+        "s = a·t² / 2",
+        "s = a·t",
+        "s = v·t²",
+        "s = a/t"
+      ],
+      "zanimljivost": "Put raste sa kvadratom vremena – za dvostruko više vremena telo pređe četiri puta veći put.",
+      "rec": "kvadrat",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "s = a · t² / 2"
+      }
+    },
+    {
+      "lekcija": 3,
+      "tezina": 2,
+      "pitanje": "Šta je ravnomerno usporeno kretanje?",
+      "odgovori": [
+        "Brzina se smanjuje jednako za jednaka vremena",
+        "Brzina raste",
+        "Brzina je stalna",
+        "Telo stoji"
+      ],
+      "zanimljivost": "Automobil koji ravnomerno koči do zaustavljanja kreće se ravnomerno usporeno.",
+      "rec": "usporeno"
+    },
+    {
+      "lekcija": 3,
+      "tezina": 3,
+      "pitanje": "Telo kreće iz mirovanja sa ubrzanjem 2 m/s². Koliki put pređe za 5 s?",
+      "odgovori": [
+        "25 m",
+        "10 m",
+        "50 m",
+        "5 m"
+      ],
+      "zanimljivost": "s = 2 · 5² / 2 = 25 m.",
+      "rec": "računanje"
+    },
+    {
+      "lekcija": 3,
+      "tezina": 2,
+      "pitanje": "Automobil vozi 20 m/s i koči sa usporenjem 5 m/s². Za koliko sekundi se zaustavi?",
+      "odgovori": [
+        "4 s",
+        "100 s",
+        "25 s",
+        "15 s"
+      ],
+      "zanimljivost": "Kočioni put je tada 40 m – a vozač još pre kočenja pređe deo puta dok reaguje.",
+      "rec": "kočenje"
+    },
+    {
+      "lekcija": 3,
+      "tezina": 1,
+      "pitanje": "Kako se kreće telo koje se kotrlja niz strmu ravan?",
+      "odgovori": [
+        "Ubrzano",
+        "Usporeno",
+        "Ravnomerno",
+        "Ne kreće se"
+      ],
+      "zanimljivost": "Galilej je koristio strmu ravan da „uspori“ padanje i lakše ga izmeri.",
+      "rec": "strma"
+    },
+    {
+      "lekcija": 3,
+      "tezina": 3,
+      "pitanje": "Ako se vreme kočenja udvostruči (sa istom početnom brzinom), šta se dešava sa usporenjem?",
+      "odgovori": [
+        "Smanji se upola",
+        "Udvostruči se",
+        "Ostane isto",
+        "Učetvorostruči se"
+      ],
+      "zanimljivost": "Zato vazdušni jastuk „produžava“ vreme zaustavljanja glave – manje usporenje znači manju silu na telo.",
+      "rec": "jastuk"
+    },
+    {
+      "lekcija": 3,
+      "tezina": 2,
+      "pitanje": "Šta je zajedničko ravnomerno ubrzanom i ravnomerno usporenom kretanju?",
+      "odgovori": [
+        "Ubrzanje je stalno",
+        "Brzina je stalna",
+        "Telo stoji",
+        "Put je uvek isti"
+      ],
+      "zanimljivost": "Oba spadaju u ravnomerno promenljiva kretanja.",
+      "rec": "stalno"
+    },
+    {
+      "lekcija": 3,
+      "tezina": 1,
+      "pitanje": "Kada voz kreće sa stanice i ravnomerno povećava brzinu, kakvo je kretanje?",
+      "odgovori": [
+        "Ravnomerno ubrzano",
+        "Ravnomerno",
+        "Usporeno",
+        "Kružno"
+      ],
+      "zanimljivost": "Voz „Soko“ Beograd–Novi Sad dostiže brzinu do 200 km/h.",
+      "rec": "voz"
+    },
+    {
+      "lekcija": 3,
+      "tezina": 3,
+      "pitanje": "Kolika je brzina tela posle 4 s ako kreće iz mirovanja sa ubrzanjem 3 m/s²?",
+      "odgovori": [
+        "12 m/s",
+        "7 m/s",
+        "1,33 m/s",
+        "24 m/s"
+      ],
+      "zanimljivost": "To je oko 43 km/h – brzina kojom vozi gradski autobus.",
+      "rec": "brzina"
+    },
+    {
+      "lekcija": 3,
+      "tezina": 2,
+      "pitanje": "Kada vozač naglo zakoči, kakvo je kretanje automobila?",
+      "odgovori": [
+        "Usporeno",
+        "Ubrzano",
+        "Ravnomerno",
+        "Kružno"
+      ],
+      "zanimljivost": "ABS sistem sprečava blokiranje točkova pa automobil može da skreće i dok koči.",
+      "rec": "abs"
+    },
+    {
+      "lekcija": 3,
+      "tezina": 3,
+      "pitanje": "Koliki put pređe telo za prvu sekundu, a koliki za prve dve sekunde, ako kreće iz mirovanja sa a = 4 m/s²?",
+      "odgovori": [
+        "2 m i 8 m",
+        "4 m i 8 m",
+        "2 m i 4 m",
+        "1 m i 2 m"
+      ],
+      "zanimljivost": "Za dvostruko vreme put je četiri puta veći – to je Galilej otkrio na strmoj ravni.",
+      "rec": "galilej"
+    },
+    {
+      "lekcija": 3,
+      "tezina": 2,
+      "pitanje": "Avion ubrza od 0 do 80 m/s za 40 s. Koliko je ubrzanje?",
+      "odgovori": [
+        "2 m/s²",
+        "3.200 m/s²",
+        "0,5 m/s²",
+        "40 m/s²"
+      ],
+      "zanimljivost": "80 m/s je oko 290 km/h – brzina pri kojoj veliki putnički avioni otprilike poleću.",
+      "rec": "avion"
+    },
+    {
+      "lekcija": 3,
+      "tezina": 1,
+      "pitanje": "Kako se kreće lopta koju bacimo naviše dok se penje?",
+      "odgovori": [
+        "Usporeno",
+        "Ubrzano",
+        "Ravnomerno",
+        "Kružno"
+      ],
+      "zanimljivost": "U najvišoj tački lopta za trenutak ima brzinu nula.",
+      "rec": "lopta"
+    },
+    {
+      "lekcija": 4,
+      "tezina": 1,
+      "pitanje": "Koju brzinu vozač vidi na brzinomeru dok vozi?",
+      "odgovori": [
+        "Trenutnu brzinu",
+        "Srednju brzinu za ceo put",
+        "Ubrzanje",
+        "Pređeni put"
+      ],
+      "zanimljivost": "Kod policijskog „sekcijskog“ merenja računa se srednja brzina između dve kamere.",
+      "rec": "brzinomer"
+    },
+    {
+      "lekcija": 4,
+      "tezina": 2,
+      "pitanje": "Šta je trenutna brzina?",
+      "odgovori": [
+        "Brzina tela u određenom trenutku",
+        "Prosečna brzina za ceo put",
+        "Najveća brzina",
+        "Brzina na startu"
+      ],
+      "zanimljivost": "Radar policije meri trenutnu brzinu automobila.",
+      "rec": "trenutna"
+    },
+    {
+      "lekcija": 4,
+      "tezina": 2,
+      "pitanje": "Kako se računa srednja brzina kod ravnomerno ubrzanog kretanja iz mirovanja?",
+      "odgovori": [
+        "Kao polovina krajnje brzine",
+        "Kao krajnja brzina",
+        "Kao dvostruka krajnja brzina",
+        "Kao ubrzanje puta vreme na kvadrat"
+      ],
+      "zanimljivost": "Ako telo ubrza od 0 do 20 m/s ravnomerno, srednja brzina je 10 m/s.",
+      "rec": "polovina"
+    },
+    {
+      "lekcija": 4,
+      "tezina": 3,
+      "pitanje": "Trkač istrči 400 m za 50 s, a na cilju ima brzinu 9 m/s. Kolika je srednja brzina?",
+      "odgovori": [
+        "8 m/s",
+        "9 m/s",
+        "4,5 m/s",
+        "450 m/s"
+      ],
+      "zanimljivost": "Srednja brzina se ne računa iz brzine na cilju, već kao ceo put kroz celo vreme.",
+      "rec": "trkač"
+    },
+    {
+      "lekcija": 4,
+      "tezina": 2,
+      "pitanje": "Kada su srednja i trenutna brzina jednake?",
+      "odgovori": [
+        "Kod ravnomernog kretanja",
+        "Kod ubrzanog kretanja",
+        "Nikada",
+        "Kod kočenja"
+      ],
+      "zanimljivost": "Tempomat u automobilu pokušava da zadrži stalnu trenutnu brzinu.",
+      "rec": "tempomat"
+    },
+    {
+      "lekcija": 4,
+      "tezina": 2,
+      "pitanje": "Automobil je prvih 100 km prešao za 1 h, a sledećih 100 km za 2 h. Kolika je srednja brzina?",
+      "odgovori": [
+        "Oko 67 km/h",
+        "75 km/h",
+        "100 km/h",
+        "150 km/h"
+      ],
+      "zanimljivost": "200 km za 3 h – nije isto što i prosek brzina (100 i 50).",
+      "rec": "srednja"
+    },
+    {
+      "lekcija": 4,
+      "tezina": 1,
+      "pitanje": "Šta meri policijski radar?",
+      "odgovori": [
+        "Trenutnu brzinu vozila",
+        "Masu vozila",
+        "Boju vozila",
+        "Pređeni put"
+      ],
+      "zanimljivost": "Radar šalje talase koji se odbijaju od automobila; promena talasa pokazuje brzinu (Doplerov efekat).",
+      "rec": "radar"
+    },
+    {
+      "lekcija": 4,
+      "tezina": 3,
+      "pitanje": "Lopta padne sa visine i za 2 s dostigne brzinu 20 m/s. Kolika je srednja brzina u tom vremenu?",
+      "odgovori": [
+        "10 m/s",
+        "20 m/s",
+        "40 m/s",
+        "5 m/s"
+      ],
+      "zanimljivost": "Za 2 s lopta pređe 20 m – to je oko 7 spratova.",
+      "rec": "padanje"
+    },
+    {
+      "lekcija": 4,
+      "tezina": 2,
+      "pitanje": "Koja brzina je važnija za bezbednost na kratkom delu puta kod škole?",
+      "odgovori": [
+        "Trenutna brzina",
+        "Srednja brzina za ceo put",
+        "Brzina vetra",
+        "Brzina zvuka"
+      ],
+      "zanimljivost": "Pri brzini 30 km/h pešak skoro uvek preživi udar, a pri 50 km/h rizik je višestruko veći.",
+      "rec": "škola"
+    },
+    {
+      "lekcija": 4,
+      "tezina": 2,
+      "pitanje": "Kakvo kretanje ima telo kojem se trenutna brzina stalno menja?",
+      "odgovori": [
+        "Promenljivo",
+        "Ravnomerno",
+        "Mirovanje",
+        "Nijedno"
+      ],
+      "zanimljivost": "Kretanje kroz gradsku gužvu je tipično promenljivo kretanje.",
+      "rec": "gužva"
+    },
+    {
+      "lekcija": 4,
+      "tezina": 1,
+      "pitanje": "Šta pokazuje GPS uređaj u kolima kao „prosečnu brzinu“?",
+      "odgovori": [
+        "Srednju brzinu za pređeni put",
+        "Najveću brzinu",
+        "Trenutnu brzinu",
+        "Ubrzanje"
+      ],
+      "zanimljivost": "Gradska vožnja zbog semafora često ima srednju brzinu ispod 25 km/h.",
+      "rec": "gps"
+    },
+    {
+      "lekcija": 4,
+      "tezina": 3,
+      "pitanje": "Ako je srednja brzina na putu 60 km/h, da li je automobil morao nekad da vozi brže od 60 km/h?",
+      "odgovori": [
+        "Da, osim ako je sve vreme vozio tačno 60 km/h",
+        "Ne, nikad",
+        "Uvek je vozio sporije",
+        "Pitanje nema smisla"
+      ],
+      "zanimljivost": "Ako je negde vozio sporije (npr. stajao), morao je negde voziti brže da bi prosek bio 60.",
+      "rec": "prosek"
+    },
+    {
+      "lekcija": 4,
+      "tezina": 2,
+      "pitanje": "Biciklista je prvih 10 min vozio 18 km/h, a sledećih 10 min 30 km/h. Kolika je srednja brzina?",
+      "odgovori": [
+        "24 km/h",
+        "48 km/h",
+        "20 km/h",
+        "30 km/h"
+      ],
+      "zanimljivost": "Pošto su vremena jednaka, srednja brzina je baš prosek brzina.",
+      "rec": "bicikl"
+    },
+    {
+      "lekcija": 4,
+      "tezina": 3,
+      "pitanje": "Kako se iz grafika s(t) kod promenljivog kretanja određuje trenutna brzina?",
+      "odgovori": [
+        "Po nagibu tangente na krivu u tom trenutku",
+        "Po visini grafika",
+        "Po dužini krive",
+        "Nikako"
+      ],
+      "zanimljivost": "Ovu ideju su razradili Njutn i Lajbnic – i tako nastao diferencijalni račun.",
+      "rec": "tangenta"
+    },
+    {
+      "lekcija": 4,
+      "tezina": 1,
+      "pitanje": "Kako se zove uređaj na biciklu koji meri brzinu?",
+      "odgovori": [
+        "Brzinomer (kilometar-sat)",
+        "Barometar",
+        "Termometar",
+        "Dinamometar"
+      ],
+      "zanimljivost": "Brzinomer na biciklu broji okretaje točka pomoću magneta na žbici.",
+      "rec": "bicikl"
+    },
+    {
+      "lekcija": 5,
+      "tezina": 2,
+      "pitanje": "Kako izgleda grafik brzine od vremena kod ravnomerno ubrzanog kretanja iz mirovanja?",
+      "odgovori": [
+        "Kosa prava linija iz početka",
+        "Horizontalna linija",
+        "Kriva linija",
+        "Vertikalna linija"
+      ],
+      "zanimljivost": "Nagib ove prave jednak je ubrzanju.",
+      "rec": "grafik",
+      "mediji": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 220 170' xmlns='http://www.w3.org/2000/svg'><g stroke='#fff' stroke-width='3' fill='none'><line x1='30' y1='150' x2='210' y2='150'/><line x1='30' y1='150' x2='30' y2='10'/></g><line x1='30' y1='150' x2='190' y2='40' stroke='#ffd166' stroke-width='5'/><text x='200' y='166' fill='#fff' font-size='16'>t</text><text x='8' y='20' fill='#fff' font-size='16'>v</text></svg>"
+      }
+    },
+    {
+      "lekcija": 5,
+      "tezina": 3,
+      "pitanje": "Kako izgleda grafik pređenog puta od vremena kod ravnomerno ubrzanog kretanja?",
+      "odgovori": [
+        "Kriva linija (parabola) koja postaje sve strmija",
+        "Prava linija",
+        "Horizontalna linija",
+        "Krug"
+      ],
+      "zanimljivost": "Kriva postaje sve strmija jer telo svake sekunde prelazi sve veći put.",
+      "rec": "parabola",
+      "mediji": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 220 170' xmlns='http://www.w3.org/2000/svg'><g stroke='#fff' stroke-width='3' fill='none'><line x1='30' y1='150' x2='210' y2='150'/><line x1='30' y1='150' x2='30' y2='10'/><path d='M30 150 Q140 150 190 20' stroke='#ef476f' stroke-width='5'/></g><text x='200' y='166' fill='#fff' font-size='16'>t</text><text x='8' y='20' fill='#fff' font-size='16'>s</text></svg>"
+      }
+    },
+    {
+      "lekcija": 5,
+      "tezina": 2,
+      "pitanje": "Šta predstavlja površina ispod grafika v(t)?",
+      "odgovori": [
+        "Pređeni put",
+        "Ubrzanje",
+        "Masu",
+        "Silu"
+      ],
+      "zanimljivost": "Kod ubrzanog kretanja iz mirovanja to je površina trougla: v·t/2.",
+      "rec": "površina"
+    },
+    {
+      "lekcija": 5,
+      "tezina": 2,
+      "pitanje": "Šta pokazuje kosa linija naniže na grafiku v(t)?",
+      "odgovori": [
+        "Usporeno kretanje",
+        "Ubrzano kretanje",
+        "Mirovanje",
+        "Ravnomerno kretanje"
+      ],
+      "zanimljivost": "Kada linija dodirne vremensku osu, telo se zaustavilo.",
+      "rec": "usporenje",
+      "mediji": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 220 170' xmlns='http://www.w3.org/2000/svg'><g stroke='#fff' stroke-width='3' fill='none'><line x1='30' y1='150' x2='210' y2='150'/><line x1='30' y1='150' x2='30' y2='10'/></g><line x1='30' y1='40' x2='180' y2='150' stroke='#06d6a0' stroke-width='5'/><text x='200' y='166' fill='#fff' font-size='16'>t</text><text x='8' y='20' fill='#fff' font-size='16'>v</text></svg>"
+      }
+    },
+    {
+      "lekcija": 5,
+      "tezina": 3,
+      "pitanje": "Na grafiku v(t) brzina raste od 0 do 10 m/s za 5 s. Koliki je pređeni put?",
+      "odgovori": [
+        "25 m",
+        "50 m",
+        "10 m",
+        "2 m"
+      ],
+      "zanimljivost": "Površina trougla: 10 · 5 / 2 = 25 m.",
+      "rec": "trougao"
+    },
+    {
+      "lekcija": 5,
+      "tezina": 1,
+      "pitanje": "Šta je na horizontalnoj osi grafika v(t)?",
+      "odgovori": [
+        "Vreme",
+        "Brzina",
+        "Put",
+        "Masa"
+      ],
+      "zanimljivost": "Na vertikalnoj osi je brzina.",
+      "rec": "vreme"
+    },
+    {
+      "lekcija": 5,
+      "tezina": 2,
+      "pitanje": "Ako su na grafiku v(t) dve kose prave, koja odgovara većem ubrzanju?",
+      "odgovori": [
+        "Strmija",
+        "Blaža",
+        "Iste su",
+        "Ne može se znati"
+      ],
+      "zanimljivost": "Nagib grafika v(t) jednak je ubrzanju.",
+      "rec": "nagib"
+    },
+    {
+      "lekcija": 5,
+      "tezina": 3,
+      "pitanje": "Na grafiku v(t) linija je horizontalna na vrednosti 0. Šta telo radi?",
+      "odgovori": [
+        "Miruje",
+        "Kreće se stalnom brzinom",
+        "Ubrzava",
+        "Usporava"
+      ],
+      "zanimljivost": "Grafik leži na vremenskoj osi – brzina je stalno nula.",
+      "rec": "mirovanje"
+    },
+    {
+      "lekcija": 5,
+      "tezina": 2,
+      "pitanje": "Kako izgleda grafik ubrzanja od vremena kod ravnomerno ubrzanog kretanja?",
+      "odgovori": [
+        "Horizontalna linija",
+        "Kosa linija",
+        "Parabola",
+        "Krug"
+      ],
+      "zanimljivost": "Ubrzanje se ne menja – zato je grafik a(t) vodoravan.",
+      "rec": "ubrzanje"
+    },
+    {
+      "lekcija": 5,
+      "tezina": 1,
+      "pitanje": "Čemu služe grafici u fizici?",
+      "odgovori": [
+        "Da se pregledno prikaže kako se veličine menjaju",
+        "Za ukras",
+        "Za merenje mase",
+        "Ne služe ničemu"
+      ],
+      "zanimljivost": "Na grafiku je lako uočiti i greške merenja – tačka koja „iskače“ iz niza.",
+      "rec": "pregled"
+    },
+    {
+      "lekcija": 5,
+      "tezina": 3,
+      "pitanje": "Grafik v(t) ima oblik trapeza: ubrzanje, stalna brzina, kočenje. Šta opisuje?",
+      "odgovori": [
+        "Vožnju od stanice do stanice",
+        "Pad kamena",
+        "Mirovanje",
+        "Kretanje u krug"
+      ],
+      "zanimljivost": "Tako izgleda vožnja metroa između dve stanice.",
+      "rec": "metro"
+    },
+    {
+      "lekcija": 5,
+      "tezina": 2,
+      "pitanje": "Šta znači tačka preseka dve linije na grafiku v(t)?",
+      "odgovori": [
+        "U tom trenutku tela imaju istu brzinu",
+        "Tela su na istom mestu",
+        "Tela se sudaraju",
+        "Tela miruju"
+      ],
+      "zanimljivost": "Na grafiku v(t) presek nije susret – za to treba pogledati grafik s(t)!",
+      "rec": "presek"
+    },
+    {
+      "lekcija": 5,
+      "tezina": 2,
+      "pitanje": "Iz grafika v(t): brzina je za 4 s porasla sa 2 na 10 m/s. Koliko je ubrzanje?",
+      "odgovori": [
+        "2 m/s²",
+        "8 m/s²",
+        "2,5 m/s²",
+        "12 m/s²"
+      ],
+      "zanimljivost": "a = (10 − 2) / 4 = 2 m/s².",
+      "rec": "računanje"
+    },
+    {
+      "lekcija": 5,
+      "tezina": 3,
+      "pitanje": "Kakav je grafik s(t) kod usporenog kretanja do zaustavljanja?",
+      "odgovori": [
+        "Kriva koja je sve blaža i na kraju postaje horizontalna",
+        "Prava linija",
+        "Kriva sve strmija",
+        "Vertikalna linija"
+      ],
+      "zanimljivost": "Horizontalni deo na kraju znači da telo stoji.",
+      "rec": "zaustavljanje"
+    },
+    {
+      "lekcija": 5,
+      "tezina": 1,
+      "pitanje": "Kako izgleda grafik v(t) kod ravnomernog kretanja?",
+      "odgovori": [
+        "Horizontalna linija",
+        "Kosa linija",
+        "Parabola",
+        "Krug"
+      ],
+      "zanimljivost": "Ravnomerno = brzina se ne menja.",
+      "rec": "ravnomerno"
+    },
+    {
+      "lekcija": 6,
+      "tezina": 1,
+      "pitanje": "Kako glasi Treći Njutnov zakon?",
+      "odgovori": [
+        "Svakoj akciji odgovara reakcija iste jačine a suprotnog smera",
+        "F = m · a",
+        "Telo miruje dok na njega ne deluje sila",
+        "Sila zavisi od boje"
+      ],
+      "zanimljivost": "Kada skočiš sa čamca na obalu, čamac se otisne unazad – to je reakcija.",
+      "rec": "reakcija"
+    },
+    {
+      "lekcija": 6,
+      "tezina": 2,
+      "pitanje": "Na kom principu leti raketa?",
+      "odgovori": [
+        "Gasovi izlaze unazad, a raketa ide napred (akcija i reakcija)",
+        "Gura se od vazduha",
+        "Leti zbog krila",
+        "Zbog magneta"
+      ],
+      "zanimljivost": "Raketa leti i u praznom svemiru – ne treba joj vazduh da se „odgurne“.",
+      "rec": "raketa",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "🚀🔥"
+      }
+    },
+    {
+      "lekcija": 6,
+      "tezina": 2,
+      "pitanje": "Zašto puška „udari“ u rame pri pucanju?",
+      "odgovori": [
+        "Zbog reakcije – metak ide napred, a puška unazad",
+        "Zbog težine",
+        "Zbog zvuka",
+        "Zbog vetra"
+      ],
+      "zanimljivost": "Masa puške je mnogo veća od mase metka, pa je njena brzina unazad mnogo manja.",
+      "rec": "trzaj"
+    },
+    {
+      "lekcija": 6,
+      "tezina": 2,
+      "pitanje": "Da li se sile akcije i reakcije poništavaju?",
+      "odgovori": [
+        "Ne, jer deluju na različita tela",
+        "Da, uvek",
+        "Samo na Zemlji",
+        "Samo kod magneta"
+      ],
+      "zanimljivost": "Zato se konj i kola ipak kreću – konj vuče kola, a kola konja, ali konj se odupire o tlo.",
+      "rec": "tela"
+    },
+    {
+      "lekcija": 6,
+      "tezina": 3,
+      "pitanje": "Kada ti guraš zid silom 100 N, kolikom silom zid deluje na tebe?",
+      "odgovori": [
+        "100 N u suprotnom smeru",
+        "0 N",
+        "50 N",
+        "200 N"
+      ],
+      "zanimljivost": "Na klizaljkama bi te ta sila odgurnula od zida unazad.",
+      "rec": "zid"
+    },
+    {
+      "lekcija": 6,
+      "tezina": 1,
+      "pitanje": "Kako pliva riba?",
+      "odgovori": [
+        "Gura vodu unazad, a voda gura ribu napred",
+        "Leti",
+        "Hoda po dnu",
+        "Bez sile"
+      ],
+      "zanimljivost": "Hobotnice i lignje ispuštaju mlaz vode – pravi „reaktivni pogon“.",
+      "rec": "plivanje"
+    },
+    {
+      "lekcija": 6,
+      "tezina": 2,
+      "pitanje": "Kako hodamo?",
+      "odgovori": [
+        "Stopalom guramo tlo unazad, a tlo gura nas napred",
+        "Gravitacija nas gura",
+        "Vazduh nas gura",
+        "Bez sile"
+      ],
+      "zanimljivost": "Na savršeno glatkom ledu ne bismo mogli da se odgurnemo i krenemo.",
+      "rec": "hod"
+    },
+    {
+      "lekcija": 6,
+      "tezina": 2,
+      "pitanje": "Zašto se balon koji pustimo da se izduva leti po sobi?",
+      "odgovori": [
+        "Vazduh izlazi u jednom smeru, a balon ide u suprotnom",
+        "Zbog gravitacije",
+        "Zbog magnetizma",
+        "Zbog toplote"
+      ],
+      "zanimljivost": "Ovo je najjednostavniji „raketni motor“ koji možeš napraviti kod kuće.",
+      "rec": "balon",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "🎈💨"
+      }
+    },
+    {
+      "lekcija": 6,
+      "tezina": 3,
+      "pitanje": "Zemlja privlači jabuku silom 2 N. Kojom silom jabuka privlači Zemlju?",
+      "odgovori": [
+        "2 N",
+        "0 N",
+        "Mnogo manjom",
+        "Mnogo većom"
+      ],
+      "zanimljivost": "Sile su jednake, ali je masa Zemlje ogromna, pa se ona praktično ne pomeri.",
+      "rec": "jabuka"
+    },
+    {
+      "lekcija": 6,
+      "tezina": 2,
+      "pitanje": "Šta se dešava kada dva klizača, jedan teži i jedan lakši, odgurnu jedan drugog?",
+      "odgovori": [
+        "Oba se kreću u suprotnim smerovima, lakši brže",
+        "Samo lakši se pomera",
+        "Samo teži se pomera",
+        "Nijedan se ne pomera"
+      ],
+      "zanimljivost": "Sila na oba je ista, ali lakši klizač dobija veće ubrzanje.",
+      "rec": "klizači"
+    },
+    {
+      "lekcija": 6,
+      "tezina": 1,
+      "pitanje": "Kako se zove sila kojom podloga deluje na telo koje na njoj stoji?",
+      "odgovori": [
+        "Sila reakcije podloge",
+        "Sila trenja",
+        "Sila teže",
+        "Sila potiska"
+      ],
+      "zanimljivost": "Ako bi sto „prestao“ da deluje na knjigu, knjiga bi propala.",
+      "rec": "podloga"
+    },
+    {
+      "lekcija": 6,
+      "tezina": 3,
+      "pitanje": "Zašto veslač gura veslo unazad?",
+      "odgovori": [
+        "Voda deluje na veslo napred i pokreće čamac",
+        "Da bi ohladio vodu",
+        "Da bi uplašio ribe",
+        "Bez razloga"
+      ],
+      "zanimljivost": "Veslački osmerac dostiže brzinu i preko 20 km/h.",
+      "rec": "veslo"
+    },
+    {
+      "lekcija": 6,
+      "tezina": 2,
+      "pitanje": "Kako mlazni avion stvara potisak?",
+      "odgovori": [
+        "Izbacuje vrele gasove unazad velikom brzinom",
+        "Okreće točkove",
+        "Maše krilima",
+        "Odbija se od oblaka"
+      ],
+      "zanimljivost": "Motor velikog putničkog aviona izbaci i preko tone vazduha u sekundi.",
+      "rec": "mlazni"
+    },
+    {
+      "lekcija": 6,
+      "tezina": 2,
+      "pitanje": "Šta je zajedničko raketi, trzaju puške i plivanju lignje?",
+      "odgovori": [
+        "Treći Njutnov zakon",
+        "Inercija",
+        "Trenje",
+        "Sila potiska"
+      ],
+      "zanimljivost": "Konstantin Ciolkovski je još 1903. izračunao kako raketa može da stigne u svemir.",
+      "rec": "akcija"
+    },
+    {
+      "lekcija": 6,
+      "tezina": 3,
+      "pitanje": "Ako dečak (40 kg) i odrasli (80 kg) na klizaljkama odgurnu jedan drugog, kako se odnose njihove brzine?",
+      "odgovori": [
+        "Dečak ima dvostruko veću brzinu",
+        "Iste su",
+        "Odrasli ima dvostruko veću",
+        "Dečak ima četiri puta veću"
+      ],
+      "zanimljivost": "Sila i vreme dejstva su isti, pa je brzina obrnuto srazmerna masi.",
+      "rec": "klizaljke"
+    },
+    {
+      "lekcija": 7,
+      "tezina": 1,
+      "pitanje": "Koliko je ubrzanje Zemljine teže?",
+      "odgovori": [
+        "Oko 9,81 m/s²",
+        "Oko 1 m/s²",
+        "Oko 100 m/s²",
+        "Oko 0,5 m/s²"
+      ],
+      "zanimljivost": "U zadacima se često zaokružuje na 10 m/s².",
+      "rec": "ubrzanje",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "g ≈ 9,81 m/s²"
+      }
+    },
+    {
+      "lekcija": 7,
+      "tezina": 2,
+      "pitanje": "Šta je pokazao Galilejev ogled?",
+      "odgovori": [
+        "Bez otpora vazduha sva tela padaju jednako brzo",
+        "Teža tela uvek padaju brže",
+        "Laka tela ne padaju",
+        "Tela padaju ravnomerno"
+      ],
+      "zanimljivost": "Astronaut Dejvid Skot je 1971. na Mesecu pustio čekić i pero – pali su istovremeno.",
+      "rec": "galilej",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "🔨🪶🌕"
+      }
+    },
+    {
+      "lekcija": 7,
+      "tezina": 2,
+      "pitanje": "Zašto u vazduhu pero pada sporije od kamena?",
+      "odgovori": [
+        "Zbog otpora vazduha",
+        "Zato što je lakše",
+        "Gravitacija ne deluje na pero",
+        "Zbog vetra uvek"
+      ],
+      "zanimljivost": "U cevi iz koje je izvučen vazduh pero i novčić padaju istovremeno.",
+      "rec": "pero"
+    },
+    {
+      "lekcija": 7,
+      "tezina": 2,
+      "pitanje": "Šta je slobodno padanje?",
+      "odgovori": [
+        "Padanje tela samo pod dejstvom sile teže, bez otpora",
+        "Padanje sa padobranom",
+        "Bacanje naviše",
+        "Kotrljanje"
+      ],
+      "zanimljivost": "Skakači iz aviona u prvim sekundama padaju skoro slobodno.",
+      "rec": "padanje"
+    },
+    {
+      "lekcija": 7,
+      "tezina": 3,
+      "pitanje": "Kolika je brzina tela posle 3 s slobodnog padanja (g = 10 m/s²)?",
+      "odgovori": [
+        "30 m/s",
+        "10 m/s",
+        "3 m/s",
+        "90 m/s"
+      ],
+      "zanimljivost": "30 m/s je 108 km/h!",
+      "rec": "brzina"
+    },
+    {
+      "lekcija": 7,
+      "tezina": 3,
+      "pitanje": "Koliki put pređe telo za 2 s slobodnog padanja (g = 10 m/s²)?",
+      "odgovori": [
+        "20 m",
+        "10 m",
+        "40 m",
+        "5 m"
+      ],
+      "zanimljivost": "h = g·t²/2 = 10·4/2 = 20 m.",
+      "rec": "visina",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "h = g · t² / 2"
+      }
+    },
+    {
+      "lekcija": 7,
+      "tezina": 1,
+      "pitanje": "Ko je, po predanju, ispuštao kugle sa kosog tornja u Pizi?",
+      "odgovori": [
+        "Galileo Galilej",
+        "Isak Njutn",
+        "Arhimed",
+        "Aristotel"
+      ],
+      "zanimljivost": "Aristotel je tvrdio da teška tela padaju brže – Galilej je pokazao da nije tako.",
+      "rec": "piza"
+    },
+    {
+      "lekcija": 7,
+      "tezina": 2,
+      "pitanje": "Da li je slobodno padanje ravnomerno ili ubrzano kretanje?",
+      "odgovori": [
+        "Ravnomerno ubrzano",
+        "Ravnomerno",
+        "Usporeno",
+        "Kružno"
+      ],
+      "zanimljivost": "Svake sekunde brzina se poveća za oko 9,81 m/s.",
+      "rec": "ubrzano"
+    },
+    {
+      "lekcija": 7,
+      "tezina": 2,
+      "pitanje": "Gde je ubrzanje teže veće – na Zemlji ili na Mesecu?",
+      "odgovori": [
+        "Na Zemlji",
+        "Na Mesecu",
+        "Isto je",
+        "Na Mesecu nema teže"
+      ],
+      "zanimljivost": "Na Mesecu je ubrzanje teže oko 1,6 m/s².",
+      "rec": "mesec",
+      "mediji": {
+        "vrsta": "planeta",
+        "ime": "mesec"
+      }
+    },
+    {
+      "lekcija": 7,
+      "tezina": 3,
+      "pitanje": "Zašto skakač sa padobranom posle nekog vremena pada stalnom brzinom?",
+      "odgovori": [
+        "Otpor vazduha postane jednak sili teže",
+        "Gravitacija prestane",
+        "Postane lakši",
+        "Vetar ga drži"
+      ],
+      "zanimljivost": "Bez otvorenog padobrana ta „granična brzina“ je oko 200 km/h, a sa padobranom oko 20 km/h.",
+      "rec": "granična"
+    },
+    {
+      "lekcija": 7,
+      "tezina": 2,
+      "pitanje": "Telo padne za 1 s. Sa koje visine je pušteno (g = 10 m/s²)?",
+      "odgovori": [
+        "5 m",
+        "10 m",
+        "1 m",
+        "20 m"
+      ],
+      "zanimljivost": "Pad sa 5 m, otprilike drugi sprat, traje samo jednu sekundu.",
+      "rec": "sekunda"
+    },
+    {
+      "lekcija": 7,
+      "tezina": 1,
+      "pitanje": "Šta je uzrok padanja tela?",
+      "odgovori": [
+        "Sila Zemljine teže",
+        "Vetar",
+        "Trenje",
+        "Magnet"
+      ],
+      "zanimljivost": "Isak Njutn je shvatio da ista sila koja obara jabuku drži Mesec u orbiti.",
+      "rec": "teža"
+    },
+    {
+      "lekcija": 7,
+      "tezina": 3,
+      "pitanje": "Koliko bi otprilike trajao slobodan pad sa 45 m (g = 10 m/s²), bez otpora vazduha?",
+      "odgovori": [
+        "3 s",
+        "4,5 s",
+        "9 s",
+        "1 s"
+      ],
+      "zanimljivost": "45 = 10·t²/2 → t² = 9 → t = 3 s.",
+      "rec": "vreme"
+    },
+    {
+      "lekcija": 7,
+      "tezina": 2,
+      "pitanje": "Kako se može izmeriti ubrzanje Zemljine teže?",
+      "odgovori": [
+        "Merenjem vremena padanja sa poznate visine ili klatnom",
+        "Vagom",
+        "Termometrom",
+        "Lenjirom samo"
+      ],
+      "zanimljivost": "Ubrzanje teže se malo razlikuje od mesta do mesta – geolozi tako otkrivaju rude pod zemljom.",
+      "rec": "klatno"
+    },
+    {
+      "lekcija": 7,
+      "tezina": 2,
+      "pitanje": "Šta zajedničko imaju kap kiše i grad kada padaju dugo?",
+      "odgovori": [
+        "Dostižu stalnu (graničnu) brzinu zbog otpora vazduha",
+        "Padaju sve brže bez kraja",
+        "Padaju naviše",
+        "Ne padaju"
+      ],
+      "zanimljivost": "Kapi kiše padaju oko 30 km/h – da nema otpora vazduha, pogađale bi nas kao meci.",
+      "rec": "kiša"
+    },
+    {
+      "lekcija": 8,
+      "tezina": 1,
+      "pitanje": "Kakvo je kretanje lopte bačene vertikalno naviše dok se penje?",
+      "odgovori": [
+        "Ravnomerno usporeno",
+        "Ravnomerno ubrzano",
+        "Ravnomerno",
+        "Kružno"
+      ],
+      "zanimljivost": "Lopta se usporava jer joj sila teže stalno smanjuje brzinu – za oko 10 m/s svake sekunde.",
+      "rec": "naviše"
+    },
+    {
+      "lekcija": 8,
+      "tezina": 2,
+      "pitanje": "Kolika je brzina lopte u najvišoj tački hica naviše?",
+      "odgovori": [
+        "Nula",
+        "Najveća",
+        "Jednaka početnoj",
+        "10 m/s"
+      ],
+      "zanimljivost": "U najvišoj tački lopta za trenutak „stoji“ – a ubrzanje je i tada 9,81 m/s² naniže.",
+      "rec": "vrh"
+    },
+    {
+      "lekcija": 8,
+      "tezina": 3,
+      "pitanje": "Lopta je bačena naviše brzinom 20 m/s. Posle koliko vremena dostiže najvišu tačku (g = 10 m/s²)?",
+      "odgovori": [
+        "2 s",
+        "20 s",
+        "4 s",
+        "1 s"
+      ],
+      "zanimljivost": "Isto toliko vremena joj treba i da se vrati – ukupno 4 s u vazduhu.",
+      "rec": "vreme"
+    },
+    {
+      "lekcija": 8,
+      "tezina": 3,
+      "pitanje": "Do koje visine stigne telo bačeno naviše brzinom 10 m/s (g = 10 m/s²)?",
+      "odgovori": [
+        "5 m",
+        "10 m",
+        "1 m",
+        "20 m"
+      ],
+      "zanimljivost": "Visina se računa kao h = v²/(2g).",
+      "rec": "visina",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "h = v₀² / 2g"
+      }
+    },
+    {
+      "lekcija": 8,
+      "tezina": 2,
+      "pitanje": "Kakvo je kretanje kamena bačenog vertikalno naniže?",
+      "odgovori": [
+        "Ravnomerno ubrzano, sa početnom brzinom",
+        "Ravnomerno usporeno",
+        "Ravnomerno",
+        "Kružno"
+      ],
+      "zanimljivost": "Kamen bačen naniže brže stigne do tla nego pušten iz ruke.",
+      "rec": "naniže"
+    },
+    {
+      "lekcija": 8,
+      "tezina": 2,
+      "pitanje": "Kojom brzinom se lopta bačena naviše vraća u ruku (bez otpora vazduha)?",
+      "odgovori": [
+        "Istom brzinom kojom je bačena",
+        "Dvostruko većom",
+        "Manjom",
+        "Nula"
+      ],
+      "zanimljivost": "U stvarnosti je malo sporija, jer otpor vazduha uzme deo energije.",
+      "rec": "povratak"
+    },
+    {
+      "lekcija": 8,
+      "tezina": 1,
+      "pitanje": "Koja sila deluje na loptu tokom celog leta naviše i naniže?",
+      "odgovori": [
+        "Sila teže",
+        "Sila ruke",
+        "Sila trenja tla",
+        "Magnetna sila"
+      ],
+      "zanimljivost": "Sila ruke deluje samo dok je lopta u ruci – posle toga deluje samo Zemljina teža (i otpor vazduha).",
+      "rec": "teža"
+    },
+    {
+      "lekcija": 8,
+      "tezina": 2,
+      "pitanje": "Koliko traje penjanje u odnosu na spuštanje kod hica naviše (bez otpora vazduha)?",
+      "odgovori": [
+        "Jednako",
+        "Penjanje duže",
+        "Spuštanje duže",
+        "Ne može se reći"
+      ],
+      "zanimljivost": "Ova simetrija važi i za kosi hitac – lopta u fudbalu leti po luku sličnom na obe strane.",
+      "rec": "simetrija"
+    },
+    {
+      "lekcija": 8,
+      "tezina": 3,
+      "pitanje": "Kamen je bačen naniže brzinom 5 m/s sa mosta. Kolika mu je brzina posle 2 s (g = 10 m/s²)?",
+      "odgovori": [
+        "25 m/s",
+        "20 m/s",
+        "10 m/s",
+        "15 m/s"
+      ],
+      "zanimljivost": "v = v₀ + g·t = 5 + 20 = 25 m/s.",
+      "rec": "most"
+    },
+    {
+      "lekcija": 8,
+      "tezina": 2,
+      "pitanje": "Kakvo ubrzanje ima lopta u hicu naviše?",
+      "odgovori": [
+        "Stalno, oko 9,81 m/s², usmereno naniže",
+        "Naviše, pa naniže",
+        "Nula",
+        "Promenljivo"
+      ],
+      "zanimljivost": "Ubrzanje ne menja ni smer ni veličinu – menja se samo brzina.",
+      "rec": "ubrzanje"
+    },
+    {
+      "lekcija": 8,
+      "tezina": 3,
+      "pitanje": "Koliko je puta veća visina koju lopta dostiže ako je početna brzina dvostruko veća?",
+      "odgovori": [
+        "Četiri puta",
+        "Dva puta",
+        "Ista",
+        "Osam puta"
+      ],
+      "zanimljivost": "Visina zavisi od kvadrata brzine – zato skakači u vis toliko vežbaju zalet.",
+      "rec": "kvadrat"
+    },
+    {
+      "lekcija": 8,
+      "tezina": 1,
+      "pitanje": "Šta je hitac?",
+      "odgovori": [
+        "Kretanje tela bačenog nekom početnom brzinom",
+        "Padanje bez brzine",
+        "Kotrljanje",
+        "Mirovanje"
+      ],
+      "zanimljivost": "Postoje vertikalni, horizontalni i kosi hitac.",
+      "rec": "hitac"
+    },
+    {
+      "lekcija": 8,
+      "tezina": 2,
+      "pitanje": "Pod kojim uglom treba baciti kamen da bi otišao najdalje (bez otpora vazduha)?",
+      "odgovori": [
+        "Pod uglom od 45°",
+        "90°",
+        "0°",
+        "10°"
+      ],
+      "zanimljivost": "Zbog otpora vazduha, u stvarnosti je najbolji ugao bacanja kugle u atletici nešto manji – oko 37–42°.",
+      "rec": "ugao"
+    },
+    {
+      "lekcija": 8,
+      "tezina": 2,
+      "pitanje": "Zašto vodoskok izgleda kao luk koji se vraća?",
+      "odgovori": [
+        "Voda je bačena naviše i ukoso, a teža je vraća naniže",
+        "Zbog vetra",
+        "Zbog pritiska vazduha",
+        "Voda je laka"
+      ],
+      "zanimljivost": "Najviši vodoskok na svetu, u Džedi, izbacuje vodu do visine oko 300 m.",
+      "rec": "vodoskok"
+    },
+    {
+      "lekcija": 8,
+      "tezina": 3,
+      "pitanje": "Lopta bačena naviše vratila se posle 6 s. Kolikom brzinom je bačena (g = 10 m/s²)?",
+      "odgovori": [
+        "30 m/s",
+        "60 m/s",
+        "10 m/s",
+        "6 m/s"
+      ],
+      "zanimljivost": "Do vrha je putovala 3 s, a za to vreme brzina joj je pala sa 30 na 0.",
+      "rec": "lopta"
+    },
+    {
+      "lekcija": 9,
+      "tezina": 1,
+      "pitanje": "Šta je bestežinsko stanje?",
+      "odgovori": [
+        "Stanje kada telo ne pritiska podlogu niti zateže konac",
+        "Stanje bez mase",
+        "Stanje bez gravitacije uvek",
+        "Stanje mirovanja"
+      ],
+      "zanimljivost": "Bestežinsko stanje nastaje kada telo i sve oko njega slobodno padaju zajedno.",
+      "rec": "bestežinsko"
+    },
+    {
+      "lekcija": 9,
+      "tezina": 2,
+      "pitanje": "Zašto astronauti u svemirskoj stanici lebde?",
+      "odgovori": [
+        "Oni i stanica zajedno slobodno padaju oko Zemlje",
+        "Tamo nema gravitacije",
+        "Stanica je magnet",
+        "Lebde zbog vazduha"
+      ],
+      "zanimljivost": "Stanica kruži brzinom od oko 28.000 km/h i obiđe Zemlju za 90 minuta.",
+      "rec": "stanica"
+    },
+    {
+      "lekcija": 9,
+      "tezina": 2,
+      "pitanje": "Kada ćemo kratko osetiti bestežinsko stanje na zemlji?",
+      "odgovori": [
+        "Pri skoku sa trambuline ili na toboganu dok se spuštamo",
+        "Dok sedimo",
+        "Dok spavamo",
+        "Dok stojimo u liftu koji miruje"
+      ],
+      "zanimljivost": "„Stomak u grlu“ na ljuljašci je osećaj delimičnog bestežinskog stanja.",
+      "rec": "tobogan"
+    },
+    {
+      "lekcija": 9,
+      "tezina": 3,
+      "pitanje": "Šta bi pokazala vaga na kojoj stojiš u liftu koji slobodno pada?",
+      "odgovori": [
+        "Nulu",
+        "Tvoju masu",
+        "Duplo više",
+        "Pola tvoje mase"
+      ],
+      "zanimljivost": "I ti i vaga padate jednako, pa ne pritiskaš vagu.",
+      "rec": "vaga"
+    },
+    {
+      "lekcija": 9,
+      "tezina": 2,
+      "pitanje": "Da li astronaut u bestežinskom stanju ima masu?",
+      "odgovori": [
+        "Da, masa se ne menja",
+        "Ne, masa nestaje",
+        "Ima polovinu mase",
+        "Ima samo na Zemlji"
+      ],
+      "zanimljivost": "Na svemirskoj stanici masa astronauta meri se posebnim uređajem koji ih ljulja na oprugama.",
+      "rec": "masa"
+    },
+    {
+      "lekcija": 9,
+      "tezina": 2,
+      "pitanje": "Kako se treniraju astronauti za bestežinsko stanje?",
+      "odgovori": [
+        "U avionu koji leti po luku slobodnog pada",
+        "U bazenu sa ledom",
+        "Na trambulini samo",
+        "U pećini"
+      ],
+      "zanimljivost": "Avion zbog toga zovu „povraćajuća kometa“ – svaki luk daje oko 25 sekundi lebdenja.",
+      "rec": "avion"
+    },
+    {
+      "lekcija": 9,
+      "tezina": 3,
+      "pitanje": "Zašto je astronautima potrebno svakodnevno vežbanje?",
+      "odgovori": [
+        "Bez opterećenja slabe mišići i kosti",
+        "Da bi se zagrejali",
+        "Da bi rasli",
+        "Da bi ih snimale kamere"
+      ],
+      "zanimljivost": "Posle šest meseci u svemiru astronauti po povratku moraju ponovo da uče da hodaju stabilno.",
+      "rec": "vežbanje"
+    },
+    {
+      "lekcija": 9,
+      "tezina": 1,
+      "pitanje": "Kako se sveća ponaša u bestežinskom stanju?",
+      "odgovori": [
+        "Plamen je okrugao i plav",
+        "Plamen je kao na Zemlji",
+        "Ne može da gori",
+        "Plamen je duži"
+      ],
+      "zanimljivost": "Na Zemlji topao vazduh struji naviše i izdužuje plamen – u bestežinskom stanju toga nema.",
+      "rec": "plamen"
+    },
+    {
+      "lekcija": 9,
+      "tezina": 2,
+      "pitanje": "Šta se dešava sa kapljicom vode u bestežinskom stanju?",
+      "odgovori": [
+        "Postane loptasta i lebdi",
+        "Pada naniže",
+        "Ispari odmah",
+        "Zaledi se"
+      ],
+      "zanimljivost": "Površinski napon „steže“ vodu u loptu – astronauti tako pijuckaju vodu iz vazduha.",
+      "rec": "kap"
+    },
+    {
+      "lekcija": 9,
+      "tezina": 3,
+      "pitanje": "Zašto skakač u bazen oseća bestežinsko stanje dok pada?",
+      "odgovori": [
+        "Telo slobodno pada, pa unutrašnji organi ne pritiskaju jedni druge",
+        "Zbog vode",
+        "Zbog vazduha",
+        "Ne oseća"
+      ],
+      "zanimljivost": "Isto se dešava i u trenutku kada lift naglo krene naniže.",
+      "rec": "skok"
+    },
+    {
+      "lekcija": 9,
+      "tezina": 1,
+      "pitanje": "Koja država je prva poslala čoveka u svemir?",
+      "odgovori": [
+        "Sovjetski Savez (Jurij Gagarin, 1961)",
+        "SAD",
+        "Kina",
+        "Francuska"
+      ],
+      "zanimljivost": "Gagarin je obišao Zemlju jednom – let je trajao 108 minuta.",
+      "rec": "gagarin"
+    },
+    {
+      "lekcija": 9,
+      "tezina": 2,
+      "pitanje": "Da li na Međunarodnu svemirsku stanicu deluje gravitacija?",
+      "odgovori": [
+        "Da, oko 90% od one na površini Zemlje",
+        "Ne, uopšte",
+        "Samo noću",
+        "Samo ponekad"
+      ],
+      "zanimljivost": "Bez gravitacije stanica bi odletela pravo u svemir.",
+      "rec": "gravitacija"
+    },
+    {
+      "lekcija": 9,
+      "tezina": 2,
+      "pitanje": "Zašto se predmeti u svemirskoj stanici vezuju čičak-trakom?",
+      "odgovori": [
+        "Inače bi lebdeli i udarali",
+        "Da ih ne ukradu",
+        "Zbog magnetizma",
+        "Zbog hladnoće"
+      ],
+      "zanimljivost": "I astronauti spavaju u vrećama zakačenim za zid.",
+      "rec": "čičak"
+    },
+    {
+      "lekcija": 9,
+      "tezina": 3,
+      "pitanje": "Gde bi telo imalo stvarno nultu težinu i bez padanja?",
+      "odgovori": [
+        "Daleko od svih nebeskih tela, u dubokom svemiru",
+        "Na vrhu planine",
+        "Na Mesecu",
+        "U liftu"
+      ],
+      "zanimljivost": "Između Zemlje i Meseca postoji tačka u kojoj se njihova privlačenja poništavaju.",
+      "rec": "svemir"
+    },
+    {
+      "lekcija": 9,
+      "tezina": 2,
+      "pitanje": "Ko je prvi čovek koji je hodao po Mesecu?",
+      "odgovori": [
+        "Nil Armstrong",
+        "Jurij Gagarin",
+        "Baz Oldrin",
+        "Majkl Kolins"
+      ],
+      "zanimljivost": "„To je mali korak za čoveka, a džinovski skok za čovečanstvo“ – 20. jul 1969.",
+      "rec": "armstrong",
+      "mediji": {
+        "vrsta": "planeta",
+        "ime": "mesec"
+      }
+    },
+    {
+      "lekcija": 10,
+      "tezina": 1,
+      "pitanje": "Šta je sila trenja?",
+      "odgovori": [
+        "Sila koja se protivi kretanju tela po podlozi",
+        "Sila koja ubrzava telo",
+        "Gravitacija",
+        "Magnetna sila"
+      ],
+      "zanimljivost": "Trenje uvek deluje suprotno od smera kretanja (ili pokušaja kretanja).",
+      "rec": "trenje"
+    },
+    {
+      "lekcija": 10,
+      "tezina": 2,
+      "pitanje": "Od čega zavisi sila trenja klizanja?",
+      "odgovori": [
+        "Od vrste i hrapavosti površina i sile kojom telo pritiska podlogu",
+        "Samo od brzine",
+        "Od boje tela",
+        "Od veličine dodirne površine uvek"
+      ],
+      "zanimljivost": "Iznenađujuće, trenje gotovo ne zavisi od veličine dodirne površine – cigla na boku i na licu klizi slično.",
+      "rec": "hrapavost"
+    },
+    {
+      "lekcija": 10,
+      "tezina": 2,
+      "pitanje": "Šta je koeficijent trenja?",
+      "odgovori": [
+        "Broj koji pokazuje koliko je trenje između dve površine",
+        "Brzina klizanja",
+        "Masa tela",
+        "Jedinica sile"
+      ],
+      "zanimljivost": "Između gume i suvog asfalta koeficijent je oko 0,7, a između čelika i leda svega oko 0,02.",
+      "rec": "koeficijent"
+    },
+    {
+      "lekcija": 10,
+      "tezina": 3,
+      "pitanje": "Telo težine 100 N klizi po podlozi sa koeficijentom trenja 0,3. Kolika je sila trenja?",
+      "odgovori": [
+        "30 N",
+        "300 N",
+        "0,3 N",
+        "100 N"
+      ],
+      "zanimljivost": "Sila trenja: Ftr = μ · N, gde je N sila kojom telo pritiska podlogu.",
+      "rec": "računanje",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "F_tr = μ · N"
+      }
+    },
+    {
+      "lekcija": 10,
+      "tezina": 2,
+      "pitanje": "Zašto saonice lako klize po snegu?",
+      "odgovori": [
+        "Trenje između glatkih saonica i snega je malo",
+        "Sneg je lepljiv",
+        "Saonice su teške",
+        "Sneg ih gura"
+      ],
+      "zanimljivost": "Ispod klizaljke se stvara tanak sloj vode koji dodatno smanjuje trenje.",
+      "rec": "sanke",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "🛷❄️"
+      }
+    },
+    {
+      "lekcija": 10,
+      "tezina": 2,
+      "pitanje": "Šta se dešava sa telom na koje deluje samo sila trenja dok klizi?",
+      "odgovori": [
+        "Usporava se do zaustavljanja",
+        "Ubrzava",
+        "Kreće se stalnom brzinom",
+        "Poleti"
+      ],
+      "zanimljivost": "Hokejaški pak usporava sporo jer je trenje na ledu malo.",
+      "rec": "pak"
+    },
+    {
+      "lekcija": 10,
+      "tezina": 3,
+      "pitanje": "Zašto skijaši mažu skije voskom?",
+      "odgovori": [
+        "Da smanje trenje i brže klize",
+        "Da skije lepše mirišu",
+        "Da bi bile teže",
+        "Da se ne vide"
+      ],
+      "zanimljivost": "Za različite temperature snega koriste se različiti voskovi.",
+      "rec": "vosak"
+    },
+    {
+      "lekcija": 10,
+      "tezina": 1,
+      "pitanje": "Koje vozilo ima najmanje trenje – sa točkovima, sanke ili kutija koju vučemo?",
+      "odgovori": [
+        "Vozilo sa točkovima",
+        "Sanke po asfaltu",
+        "Kutija",
+        "Isto je"
+      ],
+      "zanimljivost": "Kotrljanje je mnogo lakše od klizanja – zato su točkovi revolucija u istoriji.",
+      "rec": "točak"
+    },
+    {
+      "lekcija": 10,
+      "tezina": 2,
+      "pitanje": "Zašto padobranac otvara padobran pre doskoka?",
+      "odgovori": [
+        "Da veliki otpor vazduha smanji brzinu padanja",
+        "Da ga ne vide",
+        "Zbog hladnoće",
+        "Da bi ubrzao"
+      ],
+      "zanimljivost": "Rekordni skok sa 39 km visine (2012) bio je toliko visok da je skakač u slobodnom padu probio brzinu zvuka.",
+      "rec": "padobran"
+    },
+    {
+      "lekcija": 10,
+      "tezina": 3,
+      "pitanje": "Zašto je za brzu vožnju autom potrebno mnogo više goriva?",
+      "odgovori": [
+        "Otpor vazduha raste otprilike sa kvadratom brzine",
+        "Gume se brže troše",
+        "Motor je umoran",
+        "Ne treba više goriva"
+      ],
+      "zanimljivost": "Pri 130 km/h više od polovine snage motora troši se na savladavanje otpora vazduha.",
+      "rec": "gorivo"
+    },
+    {
+      "lekcija": 10,
+      "tezina": 2,
+      "pitanje": "Šta je „granična brzina“ tela koje pada kroz vazduh?",
+      "odgovori": [
+        "Brzina pri kojoj otpor vazduha postane jednak težini",
+        "Najveća moguća brzina u svemiru",
+        "Brzina zvuka",
+        "Brzina svetlosti"
+      ],
+      "zanimljivost": "Mačka koja padne sa visine dostiže graničnu brzinu od oko 100 km/h i često prizemlji bez povrede.",
+      "rec": "granica"
+    },
+    {
+      "lekcija": 10,
+      "tezina": 1,
+      "pitanje": "Gde je trenje korisno?",
+      "odgovori": [
+        "Pri hodanju, kočenju i držanju predmeta",
+        "Samo u motorima",
+        "Nigde",
+        "Samo u svemiru"
+      ],
+      "zanimljivost": "Violinisti mažu gudalo kolofonijumom – baš da bi povećali trenje sa žicom.",
+      "rec": "gudalo"
+    },
+    {
+      "lekcija": 10,
+      "tezina": 2,
+      "pitanje": "Kako se zove trenje koje sprečava da telo krene?",
+      "odgovori": [
+        "Trenje mirovanja",
+        "Trenje kotrljanja",
+        "Otpor vazduha",
+        "Sila teže"
+      ],
+      "zanimljivost": "Trenje mirovanja omogućava i automobilu da stoji na nizbrdici sa podignutom ručnom kočnicom.",
+      "rec": "mirovanje"
+    },
+    {
+      "lekcija": 10,
+      "tezina": 3,
+      "pitanje": "Telo mase 10 kg vučemo stalnom brzinom po podu. Ako je sila trenja 25 N, kolikom silom vučemo?",
+      "odgovori": [
+        "25 N",
+        "100 N",
+        "10 N",
+        "250 N"
+      ],
+      "zanimljivost": "Pri stalnoj brzini rezultujuća sila je nula, pa je vučna sila jednaka sili trenja.",
+      "rec": "vuča"
+    },
+    {
+      "lekcija": 10,
+      "tezina": 2,
+      "pitanje": "Kakav oblik tela ima najmanji otpor u vodi?",
+      "odgovori": [
+        "Izdužen, kapljičast oblik",
+        "Kocka",
+        "Ravna ploča",
+        "Lopta sa bodljama"
+      ],
+      "zanimljivost": "Plivači nose posebna odela i kape da bi smanjili otpor vode.",
+      "rec": "kap"
+    },
+    {
+      "lekcija": 11,
+      "tezina": 1,
+      "pitanje": "Šta je rezultujuća sila?",
+      "odgovori": [
+        "Sila koja zamenjuje dejstvo svih sila na telo",
+        "Najveća sila",
+        "Sila trenja",
+        "Prva sila"
+      ],
+      "zanimljivost": "Kada je rezultujuća sila nula, telo je u ravnoteži.",
+      "rec": "rezultanta"
+    },
+    {
+      "lekcija": 11,
+      "tezina": 2,
+      "pitanje": "Dve sile od 3 N i 4 N deluju pod pravim uglom. Kolika je rezultanta?",
+      "odgovori": [
+        "5 N",
+        "7 N",
+        "1 N",
+        "12 N"
+      ],
+      "zanimljivost": "Rezultanta je dijagonala pravougaonika – važi Pitagorina teorema.",
+      "rec": "pitagora",
+      "mediji": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 220 170' xmlns='http://www.w3.org/2000/svg'><defs><marker id='s' markerWidth='8' markerHeight='8' refX='6' refY='4' orient='auto'><path d='M0,0 L8,4 L0,8 z' fill='#fff'/></marker></defs><g stroke-width='4' marker-end='url(#s)'><line x1='30' y1='140' x2='150' y2='140' stroke='#ffd166'/><line x1='30' y1='140' x2='30' y2='50' stroke='#06d6a0'/><line x1='30' y1='140' x2='150' y2='50' stroke='#ef476f'/></g><text x='80' y='162' fill='#ffd166' font-size='16'>4 N</text><text x='0' y='100' fill='#06d6a0' font-size='16'>3 N</text><text x='100' y='80' fill='#ef476f' font-size='16'>?</text></svg>"
+      }
+    },
+    {
+      "lekcija": 11,
+      "tezina": 2,
+      "pitanje": "Kada je telo u ravnoteži?",
+      "odgovori": [
+        "Kada je rezultujuća sila (i moment) na njega jednaka nuli",
+        "Kada je teško",
+        "Kada se kreće ubrzano",
+        "Kada nema mase"
+      ],
+      "zanimljivost": "Telo u ravnoteži može i da se kreće – stalnom brzinom po pravoj liniji.",
+      "rec": "ravnoteža"
+    },
+    {
+      "lekcija": 11,
+      "tezina": 2,
+      "pitanje": "Šta je težište tela?",
+      "odgovori": [
+        "Tačka u kojoj možemo smatrati da deluje sila teže",
+        "Najteži deo tela",
+        "Vrh tela",
+        "Dno tela"
+      ],
+      "zanimljivost": "Težište obruča je u njegovom centru – u praznom prostoru, izvan samog tela!",
+      "rec": "težište"
+    },
+    {
+      "lekcija": 11,
+      "tezina": 3,
+      "pitanje": "Kakva je stabilna ravnoteža?",
+      "odgovori": [
+        "Telo se posle malog pomeranja vraća u prvobitni položaj",
+        "Telo pada posle pomeranja",
+        "Telo ostaje u novom položaju",
+        "Telo se okreće stalno"
+      ],
+      "zanimljivost": "Lutka „ne-padalica“ ima težište vrlo nisko – zato se uvek uspravi.",
+      "rec": "stabilna"
+    },
+    {
+      "lekcija": 11,
+      "tezina": 2,
+      "pitanje": "Zašto je kamion sa teretom na krovu sklon prevrtanju?",
+      "odgovori": [
+        "Težište mu je visoko",
+        "Težište je nisko",
+        "Ima mnogo točkova",
+        "Zbog boje"
+      ],
+      "zanimljivost": "Trkački automobili su niski upravo da bi im težište bilo što niže.",
+      "rec": "prevrtanje"
+    },
+    {
+      "lekcija": 11,
+      "tezina": 3,
+      "pitanje": "Kakva je labilna ravnoteža?",
+      "odgovori": [
+        "Telo se posle malog pomeranja još više udalji od prvobitnog položaja",
+        "Telo se vrati",
+        "Telo ostane gde je",
+        "Telo nema težište"
+      ],
+      "zanimljivost": "Olovka koja stoji na vrhu primer je labilne ravnoteže.",
+      "rec": "labilna"
+    },
+    {
+      "lekcija": 11,
+      "tezina": 2,
+      "pitanje": "Zašto hodač po žici nosi dugu motku?",
+      "odgovori": [
+        "Da lakše održi ravnotežu",
+        "Da bi bio teži",
+        "Da bi se odmorio",
+        "Zbog lepote"
+      ],
+      "zanimljivost": "Duga motka sporo se okreće, pa hodač ima više vremena da ispravi položaj.",
+      "rec": "motka"
+    },
+    {
+      "lekcija": 11,
+      "tezina": 1,
+      "pitanje": "Šta je indiferentna ravnoteža?",
+      "odgovori": [
+        "Telo ostaje u ravnoteži u svakom novom položaju",
+        "Telo pada",
+        "Telo se vraća",
+        "Telo se ljulja"
+      ],
+      "zanimljivost": "Lopta na ravnom stolu je u indiferentnoj ravnoteži.",
+      "rec": "lopta"
+    },
+    {
+      "lekcija": 11,
+      "tezina": 3,
+      "pitanje": "Dve sile od 10 N deluju na telo u suprotnim smerovima. Šta se dešava sa telom koje miruje?",
+      "odgovori": [
+        "Ostaje da miruje",
+        "Kreće se brzinom 20 N",
+        "Ubrzava",
+        "Pada"
+      ],
+      "zanimljivost": "Rezultanta je nula – u igri potezanja konopca ravnopravne ekipe se ne pomeraju.",
+      "rec": "nula"
+    },
+    {
+      "lekcija": 11,
+      "tezina": 2,
+      "pitanje": "Zašto se pri nošenju teške torbe u jednoj ruci naginjemo na suprotnu stranu?",
+      "odgovori": [
+        "Da težište tela i torbe ostane iznad oslonca (stopala)",
+        "Zbog bola",
+        "Zbog vetra",
+        "Bez razloga"
+      ],
+      "zanimljivost": "Zato je zdravije nositi ranac na oba ramena.",
+      "rec": "torba"
+    },
+    {
+      "lekcija": 11,
+      "tezina": 2,
+      "pitanje": "Šta je oslonac?",
+      "odgovori": [
+        "Mesto gde telo dodiruje podlogu i oslanja se",
+        "Težište",
+        "Vrh tela",
+        "Sila trenja"
+      ],
+      "zanimljivost": "Telo stoji dok mu je težište iznad površine oslonca.",
+      "rec": "oslonac"
+    },
+    {
+      "lekcija": 11,
+      "tezina": 1,
+      "pitanje": "Kako se sabiraju sile koje deluju u istom smeru?",
+      "odgovori": [
+        "Sabiraju se",
+        "Oduzimaju se",
+        "Množe se",
+        "Dele se"
+      ],
+      "zanimljivost": "Konji upregnuti zajedno sabiraju svoje sile.",
+      "rec": "sabiranje"
+    },
+    {
+      "lekcija": 11,
+      "tezina": 3,
+      "pitanje": "Zašto se krivi toranj u Pizi ne ruši?",
+      "odgovori": [
+        "Vertikala iz njegovog težišta pada unutar osnove",
+        "Drže ga sajle",
+        "Ima magnet",
+        "Zbog vetra"
+      ],
+      "zanimljivost": "Inženjeri su krajem 20. veka uklonili zemlju ispod jedne strane i smanjili nagib za oko 40 cm.",
+      "rec": "piza"
+    },
+    {
+      "lekcija": 11,
+      "tezina": 2,
+      "pitanje": "Zašto je teže stajati na jednoj nozi nego na dve?",
+      "odgovori": [
+        "Površina oslonca je manja",
+        "Telo je teže",
+        "Težište je niže",
+        "Nema razlike"
+      ],
+      "zanimljivost": "Flamingosi spavaju na jednoj nozi – njihovo telo je tako građeno da im to štedi energiju.",
+      "rec": "flamingo",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "🦩"
+      }
+    },
+    {
+      "lekcija": 12,
+      "tezina": 1,
+      "pitanje": "Šta je poluga?",
+      "odgovori": [
+        "Kruto telo koje se može okretati oko oslonca",
+        "Opruga",
+        "Točak",
+        "Uže"
+      ],
+      "zanimljivost": "Arhimed je rekao: „Dajte mi oslonac i podići ću Zemlju!“",
+      "rec": "poluga",
+      "mediji": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 240 120' xmlns='http://www.w3.org/2000/svg'><line x1='10' y1='60' x2='230' y2='60' stroke='#ffd166' stroke-width='8'/><polygon points='80,64 64,100 96,100' fill='#06d6a0'/><rect x='12' y='30' width='30' height='26' fill='#ef476f'/><line x1='220' y1='20' x2='220' y2='55' stroke='#fff' stroke-width='4'/><polygon points='214,48 226,48 220,58' fill='#fff'/></svg>"
+      }
+    },
+    {
+      "lekcija": 12,
+      "tezina": 2,
+      "pitanje": "Kako se računa moment sile?",
+      "odgovori": [
+        "M = F · d (sila puta krak)",
+        "M = F / d",
+        "M = F + d",
+        "M = m · a"
+      ],
+      "zanimljivost": "Krak je normalno rastojanje od oslonca do pravca sile.",
+      "rec": "moment",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "M = F · d"
+      }
+    },
+    {
+      "lekcija": 12,
+      "tezina": 2,
+      "pitanje": "Zašto je lakše otvoriti vrata guranjem kod kvake nego kod šarki?",
+      "odgovori": [
+        "Veći krak sile daje veći moment",
+        "Kod šarki je trenje",
+        "Kvaka je teža",
+        "Isto je"
+      ],
+      "zanimljivost": "Probaj da gurneš vrata blizu šarki – trebaće ti mnogo više snage.",
+      "rec": "vrata"
+    },
+    {
+      "lekcija": 12,
+      "tezina": 3,
+      "pitanje": "Na klackalici, dete od 30 kg sedi 2 m od oslonca. Gde treba da sedne dete od 40 kg da bi bila ravnoteža?",
+      "odgovori": [
+        "1,5 m od oslonca",
+        "2 m",
+        "1 m",
+        "2,5 m"
+      ],
+      "zanimljivost": "Uslov ravnoteže poluge: F₁·d₁ = F₂·d₂.",
+      "rec": "klackalica",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "30 · 2 = 40 · ?"
+      }
+    },
+    {
+      "lekcija": 12,
+      "tezina": 2,
+      "pitanje": "Šta od navedenog je poluga?",
+      "odgovori": [
+        "Makaze, klešta i klackalica",
+        "Lopta",
+        "Kocka",
+        "Sveća"
+      ],
+      "zanimljivost": "I naša ruka je poluga – lakat je oslonac, a mišić bicepsa deluje blizu njega.",
+      "rec": "makaze"
+    },
+    {
+      "lekcija": 12,
+      "tezina": 2,
+      "pitanje": "Zašto ključ za odvrtanje šrafova na točku ima dugu dršku?",
+      "odgovori": [
+        "Duži krak daje veći moment uz manju silu",
+        "Da bude lepši",
+        "Da bude lakši",
+        "Nema razloga"
+      ],
+      "zanimljivost": "Ponekad majstori na ključ stave cev – produže krak i lakše odviju zarđali šraf.",
+      "rec": "ključ"
+    },
+    {
+      "lekcija": 12,
+      "tezina": 1,
+      "pitanje": "Šta je oslonac na klackalici?",
+      "odgovori": [
+        "Tačka oko koje se klackalica okreće",
+        "Sedište",
+        "Rukohvat",
+        "Dete"
+      ],
+      "zanimljivost": "Teže dete treba da sedne bliže osloncu da bi klackalica bila u ravnoteži.",
+      "rec": "oslonac"
+    },
+    {
+      "lekcija": 12,
+      "tezina": 3,
+      "pitanje": "Koja je cena „dobitka u sili“ kod poluge?",
+      "odgovori": [
+        "Moramo pomeriti kraj poluge na većem putu",
+        "Nema cene",
+        "Poluga postaje teža",
+        "Potrebno je više vremena samo"
+      ],
+      "zanimljivost": "Poluga ne štedi rad – koliko puta smanji silu, toliko puta poveća put. To je „zlatno pravilo mehanike“.",
+      "rec": "zlatno"
+    },
+    {
+      "lekcija": 12,
+      "tezina": 2,
+      "pitanje": "Šta je ravnoteža poluge?",
+      "odgovori": [
+        "Momenti sila sa obe strane oslonca su jednaki",
+        "Sile su jednake uvek",
+        "Poluga je horizontalna",
+        "Nema sila"
+      ],
+      "zanimljivost": "Stara apotekarska vaga sa tasovima je poluga sa jednakim kracima.",
+      "rec": "vaga",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "⚖️"
+      }
+    },
+    {
+      "lekcija": 12,
+      "tezina": 1,
+      "pitanje": "Koji alat koristi polugu da se izvuče ekser?",
+      "odgovori": [
+        "Čekić sa račvastim krajem (ili klešta)",
+        "Šrafciger",
+        "Lenjir",
+        "Testera"
+      ],
+      "zanimljivost": "Kratki krak kod eksera i dugi kod ruke – mala sila izvlači i čvrsto zakucan ekser.",
+      "rec": "ekser"
+    },
+    {
+      "lekcija": 12,
+      "tezina": 3,
+      "pitanje": "Sila od 20 N deluje na krak od 0,5 m. Koliki je moment sile?",
+      "odgovori": [
+        "10 N·m",
+        "40 N·m",
+        "20,5 N·m",
+        "0,025 N·m"
+      ],
+      "zanimljivost": "Moment se meri u njutn-metrima.",
+      "rec": "računanje"
+    },
+    {
+      "lekcija": 12,
+      "tezina": 2,
+      "pitanje": "Zašto kran ima kontrateg na kraćem kraku?",
+      "odgovori": [
+        "Da uravnoteži moment tereta",
+        "Da bude teži",
+        "Za ukras",
+        "Da ga vetar ne pomera"
+      ],
+      "zanimljivost": "Bez kontratega kran bi se prevrnuo čim podigne teret.",
+      "rec": "kran"
+    },
+    {
+      "lekcija": 12,
+      "tezina": 2,
+      "pitanje": "Koja je poluga u telu kada stanemo na prste?",
+      "odgovori": [
+        "Stopalo – oslonac je kod prstiju",
+        "Kičma",
+        "Lobanja",
+        "Rebra"
+      ],
+      "zanimljivost": "Ahilova tetiva vuče petu naviše i podiže celo telo.",
+      "rec": "stopalo"
+    },
+    {
+      "lekcija": 12,
+      "tezina": 3,
+      "pitanje": "Kod kog alata je oslonac na kraju, a teret u sredini?",
+      "odgovori": [
+        "Kod kolica za građevinu (tačke)",
+        "Kod makaza",
+        "Kod klackalice",
+        "Kod pincete"
+      ],
+      "zanimljivost": "Tačke se zovu poluga druge vrste – zato se lako nose teški tereti.",
+      "rec": "tačke"
+    },
+    {
+      "lekcija": 12,
+      "tezina": 1,
+      "pitanje": "Šta pomaže da se lakše okrene volan?",
+      "odgovori": [
+        "Veći prečnik volana (duži krak)",
+        "Manji volan",
+        "Teži volan",
+        "Nema razlike"
+      ],
+      "zanimljivost": "Stari kamioni bez servo-volana imali su ogromne volane.",
+      "rec": "volan"
+    },
+    {
+      "lekcija": 13,
+      "tezina": 1,
+      "pitanje": "Šta je sila potiska?",
+      "odgovori": [
+        "Sila kojom tečnost ili gas deluje naviše na telo u njima",
+        "Sila teže",
+        "Sila trenja",
+        "Magnetna sila"
+      ],
+      "zanimljivost": "Zbog potiska nam je u vodi lakše podići drugara nego na kopnu.",
+      "rec": "potisak"
+    },
+    {
+      "lekcija": 13,
+      "tezina": 2,
+      "pitanje": "Kako glasi Arhimedov zakon?",
+      "odgovori": [
+        "Sila potiska jednaka je težini istisnute tečnosti",
+        "Sila potiska jednaka je masi tela",
+        "Telo uvek tone",
+        "Telo uvek pliva"
+      ],
+      "zanimljivost": "Prema legendi, Arhimed je uzviknuo „Eureka!“ kada je u kadi primetio da se voda podigla.",
+      "rec": "arhimed"
+    },
+    {
+      "lekcija": 13,
+      "tezina": 2,
+      "pitanje": "Od čega zavisi sila potiska?",
+      "odgovori": [
+        "Od gustine tečnosti i zapremine potopljenog dela tela",
+        "Od boje tela",
+        "Od mase tela uvek",
+        "Od dubine uvek"
+      ],
+      "zanimljivost": "Potisak ne zavisi od dubine – telo potopljeno na 1 m i na 5 m ima isti potisak.",
+      "rec": "zapremina",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "F_p = ρ · g · V"
+      }
+    },
+    {
+      "lekcija": 13,
+      "tezina": 3,
+      "pitanje": "Kolika je sila potiska na telo zapremine 2 dm³ potpuno potopljeno u vodu (g = 10 N/kg)?",
+      "odgovori": [
+        "20 N",
+        "2 N",
+        "200 N",
+        "0,2 N"
+      ],
+      "zanimljivost": "2 dm³ vode ima masu 2 kg, a težinu 20 N.",
+      "rec": "računanje"
+    },
+    {
+      "lekcija": 13,
+      "tezina": 2,
+      "pitanje": "Zašto je lakše plivati u moru nego u reci?",
+      "odgovori": [
+        "Morska voda ima veću gustinu, pa je potisak veći",
+        "More je toplije",
+        "Reka je dublja",
+        "Nema razlike"
+      ],
+      "zanimljivost": "Brodovi koji plove iz reke u more malo „izrone“ – zato na trupu imaju oznake gaza za različite vode.",
+      "rec": "more"
+    },
+    {
+      "lekcija": 13,
+      "tezina": 1,
+      "pitanje": "Da li i vazduh deluje silom potiska?",
+      "odgovori": [
+        "Da",
+        "Ne",
+        "Samo na vodu",
+        "Samo noću"
+      ],
+      "zanimljivost": "Baloni sa helijumom lete zbog potiska vazduha.",
+      "rec": "balon",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "🎈"
+      }
+    },
+    {
+      "lekcija": 13,
+      "tezina": 3,
+      "pitanje": "Telo na vazduhu teži 10 N, a potopljeno u vodu 6 N. Kolika je sila potiska?",
+      "odgovori": [
+        "4 N",
+        "16 N",
+        "6 N",
+        "10 N"
+      ],
+      "zanimljivost": "Razlika težina u vazduhu i u vodi jednaka je sili potiska.",
+      "rec": "razlika"
+    },
+    {
+      "lekcija": 13,
+      "tezina": 2,
+      "pitanje": "Šta je, prema legendi, Arhimed proveravao za kralja Hijerona?",
+      "odgovori": [
+        "Da li je kruna od čistog zlata",
+        "Koliko je težak brod",
+        "Koliko je dubok bunar",
+        "Koliko je star hram"
+      ],
+      "zanimljivost": "Kruna od zlata pomešanog sa srebrom imala bi veću zapreminu – istisnula bi više vode.",
+      "rec": "kruna",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "👑💧"
+      }
+    },
+    {
+      "lekcija": 13,
+      "tezina": 2,
+      "pitanje": "Zašto se kamen u vodi čini lakšim?",
+      "odgovori": [
+        "Na njega deluje sila potiska",
+        "Postane manji",
+        "Gubi masu",
+        "Voda ga hladi"
+      ],
+      "zanimljivost": "Ronioci zato nose olovne pojaseve – da ih potisak ne izbaci na površinu.",
+      "rec": "kamen"
+    },
+    {
+      "lekcija": 13,
+      "tezina": 3,
+      "pitanje": "Kako podmornica zaranja i izranja?",
+      "odgovori": [
+        "Puni i prazni rezervoare vodom, pa menja svoju težinu",
+        "Menja boju",
+        "Uključi magnet",
+        "Okreće propeler naviše"
+      ],
+      "zanimljivost": "Ribe imaju sličan „uređaj“ – riblji mehur koji pune ili prazne gasom.",
+      "rec": "podmornica"
+    },
+    {
+      "lekcija": 13,
+      "tezina": 1,
+      "pitanje": "U kom smeru deluje sila potiska?",
+      "odgovori": [
+        "Naviše",
+        "Naniže",
+        "Bočno",
+        "U smeru kretanja"
+      ],
+      "zanimljivost": "Zato loptu za plažu teško gurnemo pod vodu – „bori se“ da izroni.",
+      "rec": "naviše"
+    },
+    {
+      "lekcija": 13,
+      "tezina": 2,
+      "pitanje": "Šta je istisnuta tečnost?",
+      "odgovori": [
+        "Tečnost koju telo potiskuje zauzimajući njeno mesto",
+        "Tečnost koja ispari",
+        "Tečnost u flaši",
+        "Tečnost iz česme"
+      ],
+      "zanimljivost": "Brod od 10.000 tona istiskuje 10.000 tona vode.",
+      "rec": "istiskivanje"
+    },
+    {
+      "lekcija": 13,
+      "tezina": 3,
+      "pitanje": "Koliko je potisak na telo u vodi u odnosu na isto telo u ulju (manje gustine)?",
+      "odgovori": [
+        "Veći je u vodi",
+        "Veći je u ulju",
+        "Isti je",
+        "Nema ga u ulju"
+      ],
+      "zanimljivost": "Gušća tečnost jače „gura“ telo naviše.",
+      "rec": "ulje"
+    },
+    {
+      "lekcija": 13,
+      "tezina": 2,
+      "pitanje": "Kada je Arhimed živeo?",
+      "odgovori": [
+        "U 3. veku pre nove ere, u Sirakuzi",
+        "U 15. veku",
+        "U 20. veku",
+        "U 1. veku nove ere u Rimu"
+      ],
+      "zanimljivost": "Arhimed je izmislio i „Arhimedov zavrtanj“ za podizanje vode, koji se koristi i danas.",
+      "rec": "sirakuza"
+    },
+    {
+      "lekcija": 13,
+      "tezina": 1,
+      "pitanje": "Zašto ljudi lakše plutaju kada udahnu duboko?",
+      "odgovori": [
+        "Vazduh u plućima povećava zapreminu tela, pa i potisak",
+        "Postanu teži",
+        "Voda postane gušća",
+        "Ne plutaju lakše"
+      ],
+      "zanimljivost": "Kada izdahnemo, većina ljudi polako tone.",
+      "rec": "udah"
+    },
+    {
+      "lekcija": 14,
+      "tezina": 1,
+      "pitanje": "Kada telo pliva na površini tečnosti?",
+      "odgovori": [
+        "Kada mu je gustina manja od gustine tečnosti",
+        "Kada je teško",
+        "Kada je veće",
+        "Uvek"
+      ],
+      "zanimljivost": "Drvo, led i pluta plivaju na vodi.",
+      "rec": "plivanje"
+    },
+    {
+      "lekcija": 14,
+      "tezina": 2,
+      "pitanje": "Kada telo tone?",
+      "odgovori": [
+        "Kada je njegova gustina veća od gustine tečnosti",
+        "Kada je malo",
+        "Kada je okruglo",
+        "Nikad"
+      ],
+      "zanimljivost": "Ekser tone, ali brod od istog gvožđa pluta – važna je ukupna gustina, sa vazduhom unutra.",
+      "rec": "tonjenje"
+    },
+    {
+      "lekcija": 14,
+      "tezina": 2,
+      "pitanje": "Kada telo lebdi u tečnosti (ni ne tone ni ne izranja)?",
+      "odgovori": [
+        "Kada su gustine tela i tečnosti jednake",
+        "Kada je telo veće",
+        "Kada je tečnost hladna",
+        "Nikad"
+      ],
+      "zanimljivost": "Ribe podešavaju gustinu tela ribljim mehurom i lebde na željenoj dubini.",
+      "rec": "lebdenje"
+    },
+    {
+      "lekcija": 14,
+      "tezina": 3,
+      "pitanje": "Zašto čelični brod pluta, a čelični ekser tone?",
+      "odgovori": [
+        "Brod je šupalj i istiskuje mnogo vode, pa mu je prosečna gustina manja od vode",
+        "Brod je od drugog čelika",
+        "Brod je lakši od eksera",
+        "Ekser je magnetan"
+      ],
+      "zanimljivost": "Najveći brodovi teže preko 400.000 tona – a ipak plove.",
+      "rec": "brod",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "🚢⚓"
+      }
+    },
+    {
+      "lekcija": 14,
+      "tezina": 2,
+      "pitanje": "Koliki deo santi leda je ispod površine mora?",
+      "odgovori": [
+        "Oko 90%",
+        "Oko 10%",
+        "Oko 50%",
+        "Ništa"
+      ],
+      "zanimljivost": "Otuda izraz „vrh ledenog brega“ – većina se ne vidi, a to je bilo kobno za „Titanik“.",
+      "rec": "santa",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "🧊🌊"
+      }
+    },
+    {
+      "lekcija": 14,
+      "tezina": 2,
+      "pitanje": "Zašto jaje tone u čistoj vodi, a pluta u jako slanoj?",
+      "odgovori": [
+        "Slana voda ima veću gustinu od jajeta",
+        "Jaje upije so",
+        "Jaje postane lakše",
+        "Ne pluta"
+      ],
+      "zanimljivost": "Ovaj ogled je lako izvesti u kuhinji – dovoljno je nekoliko kašika soli u čaši vode.",
+      "rec": "jaje"
+    },
+    {
+      "lekcija": 14,
+      "tezina": 1,
+      "pitanje": "Šta od navedenog pluta na vodi?",
+      "odgovori": [
+        "Pluta (čep)",
+        "Kamen",
+        "Ekser",
+        "Novčić"
+      ],
+      "zanimljivost": "Plutu daje kora hrasta plutnjaka – puna je vazduha.",
+      "rec": "čep"
+    },
+    {
+      "lekcija": 14,
+      "tezina": 3,
+      "pitanje": "Kakav je odnos sile teže i potiska kod tela koje pluta na površini?",
+      "odgovori": [
+        "Jednake su",
+        "Teža je veća",
+        "Potisak je veći",
+        "Potisak je nula"
+      ],
+      "zanimljivost": "Telo uroni tačno toliko da istisne vodu iste težine kao ono samo.",
+      "rec": "ravnoteža"
+    },
+    {
+      "lekcija": 14,
+      "tezina": 2,
+      "pitanje": "Šta je gaz broda?",
+      "odgovori": [
+        "Dubina do koje je brod uronjen u vodu",
+        "Brzina broda",
+        "Dužina broda",
+        "Vrsta goriva"
+      ],
+      "zanimljivost": "Natovaren brod ima veći gaz – po crtama na trupu vidi se da li je preopterećen.",
+      "rec": "gaz"
+    },
+    {
+      "lekcija": 14,
+      "tezina": 3,
+      "pitanje": "Zašto balon sa toplim vazduhom leti?",
+      "odgovori": [
+        "Topao vazduh je ređi od hladnog, pa je potisak veći od težine balona",
+        "Ima motor",
+        "Vetar ga podiže",
+        "Zbog magneta"
+      ],
+      "zanimljivost": "Prvi let ljudi balonom izveden je 1783. u Parizu – balonom braće Mongolfje.",
+      "rec": "mongolfje"
+    },
+    {
+      "lekcija": 14,
+      "tezina": 2,
+      "pitanje": "Šta je areometar i gde se koristi?",
+      "odgovori": [
+        "Plovak za merenje gustine tečnosti, npr. mleka ili akumulatorske kiseline",
+        "Merač brzine",
+        "Barometar",
+        "Vaga za zlato"
+      ],
+      "zanimljivost": "Što je tečnost gušća, areometar manje uranja.",
+      "rec": "areometar"
+    },
+    {
+      "lekcija": 14,
+      "tezina": 1,
+      "pitanje": "Zašto pojas za spasavanje drži čoveka na vodi?",
+      "odgovori": [
+        "Ima malu gustinu i veliku zapreminu, pa daje veliki potisak",
+        "Pliva sam",
+        "Ima motor",
+        "Zbog boje"
+      ],
+      "zanimljivost": "Moderni prsluci za spasavanje okreću onesvešćenu osobu licem naviše.",
+      "rec": "pojas"
+    },
+    {
+      "lekcija": 14,
+      "tezina": 3,
+      "pitanje": "Drvena kocka gustine 600 kg/m³ pluta na vodi. Koji deo je potopljen?",
+      "odgovori": [
+        "60%",
+        "40%",
+        "100%",
+        "6%"
+      ],
+      "zanimljivost": "Potopljeni deo jednak je odnosu gustina tela i tečnosti.",
+      "rec": "kocka"
+    },
+    {
+      "lekcija": 14,
+      "tezina": 2,
+      "pitanje": "Zašto se zeppelini (vazdušni brodovi) pune helijumom?",
+      "odgovori": [
+        "Helijum je mnogo ređi od vazduha",
+        "Helijum je težak",
+        "Helijum svetli",
+        "Helijum je jeftin"
+      ],
+      "zanimljivost": "Ranije su punjeni vodonikom, koji je zapaljiv – nesreća „Hindenburga“ 1937. okončala je to doba.",
+      "rec": "helijum"
+    },
+    {
+      "lekcija": 14,
+      "tezina": 2,
+      "pitanje": "Kako se riba podiže ka površini?",
+      "odgovori": [
+        "Puni riblji mehur gasom i smanjuje svoju gustinu",
+        "Pliva samo perajima",
+        "Isprazni stomak",
+        "Promeni boju"
+      ],
+      "zanimljivost": "Ajkule nemaju riblji mehur – zato moraju stalno da plivaju ili tonu.",
+      "rec": "mehur"
+    },
+    {
+      "lekcija": 15,
+      "tezina": 1,
+      "pitanje": "Kada se vrši mehanički rad?",
+      "odgovori": [
+        "Kada sila pomera telo",
+        "Kada držimo teret u mestu",
+        "Kada razmišljamo",
+        "Kada spavamo"
+      ],
+      "zanimljivost": "Ako držiš tešku torbu i stojiš, umaraš se, ali u fizičkom smislu ne vršiš rad.",
+      "rec": "rad"
+    },
+    {
+      "lekcija": 15,
+      "tezina": 2,
+      "pitanje": "Kojom formulom se računa mehanički rad?",
+      "odgovori": [
+        "A = F · s",
+        "A = F / s",
+        "A = m · a",
+        "A = F + s"
+      ],
+      "zanimljivost": "Rad je najveći kada sila deluje u pravcu kretanja.",
+      "rec": "formula",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "A = F · s"
+      }
+    },
+    {
+      "lekcija": 15,
+      "tezina": 2,
+      "pitanje": "Koja je jedinica za rad?",
+      "odgovori": [
+        "Džul (J)",
+        "Vat (W)",
+        "Njutn (N)",
+        "Paskal (Pa)"
+      ],
+      "zanimljivost": "Jedinica je dobila ime po engleskom fizičaru Džejmsu Džulu.",
+      "rec": "džul"
+    },
+    {
+      "lekcija": 15,
+      "tezina": 3,
+      "pitanje": "Koliki rad se izvrši kada se kutija gura silom 50 N na putu od 4 m?",
+      "odgovori": [
+        "200 J",
+        "12,5 J",
+        "54 J",
+        "46 J"
+      ],
+      "zanimljivost": "1 J je otprilike rad potreban da se jabuka podigne 1 metar.",
+      "rec": "računanje"
+    },
+    {
+      "lekcija": 15,
+      "tezina": 2,
+      "pitanje": "Da li vrši rad osoba koja nosi kofer vodoravno stalnom brzinom?",
+      "odgovori": [
+        "Praktično ne – sila je normalna na pravac kretanja",
+        "Da, mnogo",
+        "Samo ako trči",
+        "Samo naviše"
+      ],
+      "zanimljivost": "Rad se vrši kada se kofer podiže, ali ne kada se nosi vodoravno.",
+      "rec": "kofer"
+    },
+    {
+      "lekcija": 15,
+      "tezina": 3,
+      "pitanje": "Koliki rad je potreban da se telo mase 10 kg podigne 2 m (g = 10 N/kg)?",
+      "odgovori": [
+        "200 J",
+        "20 J",
+        "12 J",
+        "100 J"
+      ],
+      "zanimljivost": "Rad protiv sile teže: A = m·g·h.",
+      "rec": "podizanje"
+    },
+    {
+      "lekcija": 15,
+      "tezina": 1,
+      "pitanje": "Šta je potrebno za mehanički rad?",
+      "odgovori": [
+        "Sila i pomeranje tela",
+        "Samo sila",
+        "Samo vreme",
+        "Samo masa"
+      ],
+      "zanimljivost": "Zid koji guraš a ne pomeriš – nema rada!",
+      "rec": "pomeranje"
+    },
+    {
+      "lekcija": 15,
+      "tezina": 2,
+      "pitanje": "Kada je rad negativan?",
+      "odgovori": [
+        "Kada sila deluje suprotno od smera kretanja",
+        "Kada je sila velika",
+        "Nikad",
+        "Kada telo miruje"
+      ],
+      "zanimljivost": "Sila trenja vrši negativan rad – oduzima telu energiju.",
+      "rec": "negativan"
+    },
+    {
+      "lekcija": 15,
+      "tezina": 2,
+      "pitanje": "Šta je kilodžul?",
+      "odgovori": [
+        "1.000 džula",
+        "100 džula",
+        "10 džula",
+        "Milion džula"
+      ],
+      "zanimljivost": "Na pakovanju hrane energija je izražena u kilodžulima i kilokalorijama.",
+      "rec": "kilodžul"
+    },
+    {
+      "lekcija": 15,
+      "tezina": 3,
+      "pitanje": "Dizalica podigne teret od 5.000 N na visinu 10 m. Koliki je rad?",
+      "odgovori": [
+        "50.000 J",
+        "500 J",
+        "5.010 J",
+        "2.000 J"
+      ],
+      "zanimljivost": "Za isti posao čoveku bi trebali sati nošenja – mašine štede vreme, ali ne i rad.",
+      "rec": "dizalica"
+    },
+    {
+      "lekcija": 15,
+      "tezina": 1,
+      "pitanje": "Ko vrši rad – učenik koji gura ormar koji se ne pomera ili učenik koji vuče sanke?",
+      "odgovori": [
+        "Učenik koji vuče sanke",
+        "Učenik koji gura ormar",
+        "Obojica",
+        "Nijedan"
+      ],
+      "zanimljivost": "U fizici je „rad“ precizan pojam – nije isto što i umor.",
+      "rec": "sanke"
+    },
+    {
+      "lekcija": 15,
+      "tezina": 2,
+      "pitanje": "Kakav je rad sile teže kada telo pada?",
+      "odgovori": [
+        "Pozitivan",
+        "Negativan",
+        "Nula",
+        "Uvek beskonačan"
+      ],
+      "zanimljivost": "Sila teže i pomeranje imaju isti smer pa je rad pozitivan.",
+      "rec": "pad"
+    },
+    {
+      "lekcija": 15,
+      "tezina": 3,
+      "pitanje": "Pri koji ugao između sile i pomeranja rad je najveći?",
+      "odgovori": [
+        "0° (isti pravac i smer)",
+        "90°",
+        "180°",
+        "45°"
+      ],
+      "zanimljivost": "Pri uglu od 90° rad je nula – npr. sila teže kod satelita u kružnoj orbiti.",
+      "rec": "ugao"
+    },
+    {
+      "lekcija": 15,
+      "tezina": 2,
+      "pitanje": "Šta zajedničko imaju rad i energija?",
+      "odgovori": [
+        "Iste jedinice – džul",
+        "Nemaju ništa zajedničko",
+        "Istu oznaku F",
+        "Isto merilo vremena"
+      ],
+      "zanimljivost": "Rad je način na koji se energija prenosi sa tela na telo.",
+      "rec": "energija"
+    },
+    {
+      "lekcija": 15,
+      "tezina": 1,
+      "pitanje": "Kada penješ stepenice, protiv koje sile vršiš rad?",
+      "odgovori": [
+        "Sile teže",
+        "Sile trenja vode",
+        "Magnetne sile",
+        "Električne sile"
+      ],
+      "zanimljivost": "Penjanje uz stepenice jedno je od najboljih vežbi – trošiš energiju podižući celo telo.",
+      "rec": "stepenice"
+    },
+    {
+      "lekcija": 16,
+      "tezina": 1,
+      "pitanje": "Šta je kinetička energija?",
+      "odgovori": [
+        "Energija koju telo ima zbog kretanja",
+        "Energija zbog položaja",
+        "Toplotna energija",
+        "Električna energija"
+      ],
+      "zanimljivost": "Reč kinetička potiče od grčke reči kinesis – kretanje.",
+      "rec": "kretanje"
+    },
+    {
+      "lekcija": 16,
+      "tezina": 2,
+      "pitanje": "Kojom formulom se računa kinetička energija?",
+      "odgovori": [
+        "Ek = m·v² / 2",
+        "Ek = m·g·h",
+        "Ek = F·s",
+        "Ek = m·v"
+      ],
+      "zanimljivost": "Kinetička energija zavisi od kvadrata brzine – zato su sudari pri velikim brzinama toliko razorni.",
+      "rec": "formula",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "E_k = m · v² / 2"
+      }
+    },
+    {
+      "lekcija": 16,
+      "tezina": 2,
+      "pitanje": "Šta je gravitaciona potencijalna energija?",
+      "odgovori": [
+        "Energija koju telo ima zbog položaja (visine) iznad tla",
+        "Energija kretanja",
+        "Energija hrane",
+        "Energija svetlosti"
+      ],
+      "zanimljivost": "Voda u akumulacionom jezeru iznad hidroelektrane ima ogromnu potencijalnu energiju.",
+      "rec": "položaj",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "E_p = m · g · h"
+      }
+    },
+    {
+      "lekcija": 16,
+      "tezina": 3,
+      "pitanje": "Kolika je kinetička energija lopte mase 0,5 kg koja leti brzinom 10 m/s?",
+      "odgovori": [
+        "25 J",
+        "5 J",
+        "50 J",
+        "2,5 J"
+      ],
+      "zanimljivost": "Ek = 0,5 · 100 / 2 = 25 J.",
+      "rec": "lopta"
+    },
+    {
+      "lekcija": 16,
+      "tezina": 3,
+      "pitanje": "Ako se brzina automobila udvostruči, koliko puta mu se poveća kinetička energija?",
+      "odgovori": [
+        "Četiri puta",
+        "Dva puta",
+        "Osam puta",
+        "Ne menja se"
+      ],
+      "zanimljivost": "Zato je kočioni put pri 100 km/h otprilike četiri puta duži nego pri 50 km/h.",
+      "rec": "kočenje"
+    },
+    {
+      "lekcija": 16,
+      "tezina": 2,
+      "pitanje": "Kolika je potencijalna energija tela mase 2 kg na visini 5 m (g = 10 N/kg)?",
+      "odgovori": [
+        "100 J",
+        "10 J",
+        "7 J",
+        "50 J"
+      ],
+      "zanimljivost": "Ep = 2 · 10 · 5 = 100 J.",
+      "rec": "visina"
+    },
+    {
+      "lekcija": 16,
+      "tezina": 1,
+      "pitanje": "Koje telo ima potencijalnu energiju?",
+      "odgovori": [
+        "Knjiga na polici",
+        "Lopta na podu",
+        "Auto u garaži na zemlji",
+        "Kamen na dnu jame (u odnosu na dno)"
+      ],
+      "zanimljivost": "Kada knjiga padne, potencijalna energija prelazi u kinetičku.",
+      "rec": "polica"
+    },
+    {
+      "lekcija": 16,
+      "tezina": 2,
+      "pitanje": "Šta je elastična potencijalna energija?",
+      "odgovori": [
+        "Energija sabijene ili istegnute opruge",
+        "Energija kretanja",
+        "Energija hrane",
+        "Toplota"
+      ],
+      "zanimljivost": "Mehanički satovi i igračke na navijanje čuvaju energiju u opruzi.",
+      "rec": "opruga"
+    },
+    {
+      "lekcija": 16,
+      "tezina": 2,
+      "pitanje": "Koja vrsta energije pokreće vetrenjaču?",
+      "odgovori": [
+        "Kinetička energija vetra",
+        "Potencijalna energija stena",
+        "Toplota Zemlje",
+        "Hemijska energija"
+      ],
+      "zanimljivost": "Najveće vetroturbine imaju lopatice duže od 100 metara.",
+      "rec": "vetar",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "🌬️🌀"
+      }
+    },
+    {
+      "lekcija": 16,
+      "tezina": 3,
+      "pitanje": "Da li telo može imati istovremeno i kinetičku i potencijalnu energiju?",
+      "odgovori": [
+        "Da, npr. avion u letu",
+        "Ne",
+        "Samo u svemiru",
+        "Samo na Mesecu"
+      ],
+      "zanimljivost": "Zbir kinetičke i potencijalne energije zove se ukupna mehanička energija.",
+      "rec": "avion"
+    },
+    {
+      "lekcija": 16,
+      "tezina": 1,
+      "pitanje": "Od čega zavisi kinetička energija?",
+      "odgovori": [
+        "Od mase i brzine tela",
+        "Samo od boje",
+        "Samo od visine",
+        "Samo od oblika"
+      ],
+      "zanimljivost": "Kamion i bicikl iste brzine imaju veoma različitu kinetičku energiju.",
+      "rec": "masa"
+    },
+    {
+      "lekcija": 16,
+      "tezina": 3,
+      "pitanje": "Telo mase 4 kg ima kinetičku energiju 200 J. Kolika mu je brzina?",
+      "odgovori": [
+        "10 m/s",
+        "50 m/s",
+        "100 m/s",
+        "5 m/s"
+      ],
+      "zanimljivost": "Iz Ek = m·v²/2 → v² = 2·200/4 = 100.",
+      "rec": "brzina"
+    },
+    {
+      "lekcija": 16,
+      "tezina": 2,
+      "pitanje": "Šta je energija?",
+      "odgovori": [
+        "Sposobnost tela da izvrši rad",
+        "Isto što i sila",
+        "Isto što i masa",
+        "Brzina"
+      ],
+      "zanimljivost": "Energija se ne stvara ni iz čega, niti nestaje – samo prelazi iz jednog oblika u drugi.",
+      "rec": "energija"
+    },
+    {
+      "lekcija": 16,
+      "tezina": 2,
+      "pitanje": "Zašto je čekić koji se zamahne efikasan?",
+      "odgovori": [
+        "Ima veliku kinetičku energiju koja se pri udarcu predaje ekseru",
+        "Težak je u mirovanju",
+        "Ima magnet",
+        "Zbog trenja"
+      ],
+      "zanimljivost": "Malj za zabijanje stubova podiže se visoko – potencijalna energija prelazi u kinetičku.",
+      "rec": "čekić"
+    },
+    {
+      "lekcija": 16,
+      "tezina": 1,
+      "pitanje": "Koja energija se oslobađa kada voda pada niz vodopad?",
+      "odgovori": [
+        "Potencijalna prelazi u kinetičku",
+        "Kinetička u električnu bez razloga",
+        "Hemijska",
+        "Nuklearna"
+      ],
+      "zanimljivost": "Najviši vodopad na svetu, Anđeoski vodopad u Venecueli, visok je skoro kilometar.",
+      "rec": "vodopad"
+    },
+    {
+      "lekcija": 17,
+      "tezina": 1,
+      "pitanje": "Šta tvrdi zakon održanja mehaničke energije (bez trenja)?",
+      "odgovori": [
+        "Zbir kinetičke i potencijalne energije ostaje stalan",
+        "Energija nestaje",
+        "Energija raste",
+        "Energija se stvara"
+      ],
+      "zanimljivost": "U stvarnosti trenje pretvara deo mehaničke energije u toplotu.",
+      "rec": "održanje"
+    },
+    {
+      "lekcija": 17,
+      "tezina": 2,
+      "pitanje": "Šta se dešava sa energijom klatna dok se ljulja?",
+      "odgovori": [
+        "Potencijalna i kinetička energija se naizmenično pretvaraju jedna u drugu",
+        "Nestaje odmah",
+        "Samo raste",
+        "Ostaje samo kinetička"
+      ],
+      "zanimljivost": "Klatno se postepeno zaustavlja zbog otpora vazduha i trenja u osloncu.",
+      "rec": "klatno"
+    },
+    {
+      "lekcija": 17,
+      "tezina": 3,
+      "pitanje": "Telo pada sa visine 5 m bez otpora vazduha. Kolikom brzinom udari u tlo (g = 10 m/s²)?",
+      "odgovori": [
+        "10 m/s",
+        "5 m/s",
+        "50 m/s",
+        "25 m/s"
+      ],
+      "zanimljivost": "Iz m·g·h = m·v²/2 masa se skrati – brzina ne zavisi od mase!",
+      "rec": "pad"
+    },
+    {
+      "lekcija": 17,
+      "tezina": 2,
+      "pitanje": "Gde je kinetička energija tobogan-vozića najveća?",
+      "odgovori": [
+        "Na najnižoj tački staze",
+        "Na vrhu",
+        "Na sredini uspona",
+        "Na startu dok stoji"
+      ],
+      "zanimljivost": "Zato su najniže tačke staze ujedno i mesta najveće brzine.",
+      "rec": "tobogan"
+    },
+    {
+      "lekcija": 17,
+      "tezina": 2,
+      "pitanje": "Šta se dešava sa mehaničkom energijom kada kočimo bicikl?",
+      "odgovori": [
+        "Pretvara se u toplotu zbog trenja",
+        "Nestaje",
+        "Povećava se",
+        "Pretvara se u masu"
+      ],
+      "zanimljivost": "Neki električni automobili pri kočenju vraćaju energiju u bateriju – regenerativno kočenje.",
+      "rec": "toplota"
+    },
+    {
+      "lekcija": 17,
+      "tezina": 1,
+      "pitanje": "U šta se pretvara potencijalna energija vode u hidroelektrani?",
+      "odgovori": [
+        "U kinetičku, pa u električnu",
+        "U toplotu samo",
+        "U zvuk",
+        "U svetlost direktno"
+      ],
+      "zanimljivost": "Hidroelektrana „Đerdap 1“ ima turbine pokretane vodom Dunava.",
+      "rec": "turbina"
+    },
+    {
+      "lekcija": 17,
+      "tezina": 3,
+      "pitanje": "Lopta bačena naviše brzinom 20 m/s. Do koje visine stigne, ako nema otpora vazduha (g = 10 m/s²)?",
+      "odgovori": [
+        "20 m",
+        "40 m",
+        "10 m",
+        "200 m"
+      ],
+      "zanimljivost": "Sva kinetička energija na vrhu prelazi u potencijalnu: h = v²/(2g).",
+      "rec": "visina"
+    },
+    {
+      "lekcija": 17,
+      "tezina": 2,
+      "pitanje": "Zašto lopta pri svakom odskoku dostiže manju visinu?",
+      "odgovori": [
+        "Deo energije prelazi u toplotu i zvuk",
+        "Gravitacija raste",
+        "Lopta postaje teža",
+        "Zemlja je upija"
+      ],
+      "zanimljivost": "Zvuk udarca lopte o pod je takođe deo energije koji lopta „gubi“.",
+      "rec": "odskok"
+    },
+    {
+      "lekcija": 17,
+      "tezina": 2,
+      "pitanje": "Šta važi za ukupnu energiju u svakoj pojavi u prirodi?",
+      "odgovori": [
+        "Ukupna energija se održava – samo prelazi iz oblika u oblik",
+        "Uvek se smanji",
+        "Uvek se poveća",
+        "Nestaje noću"
+      ],
+      "zanimljivost": "Zakon održanja energije jedan je od najvažnijih zakona fizike – važi od atoma do galaksija.",
+      "rec": "zakon"
+    },
+    {
+      "lekcija": 17,
+      "tezina": 3,
+      "pitanje": "Zašto je nemoguća mašina „perpetuum mobile“ (večiti motor)?",
+      "odgovori": [
+        "Ne može davati rad bez dovođenja energije",
+        "Previše je skupa",
+        "Zabranjena je zakonom",
+        "Bila bi preteška"
+      ],
+      "zanimljivost": "Patentni zavodi mnogih zemalja odbijaju prijave za „večite motore“ bez razmatranja.",
+      "rec": "perpetuum"
+    },
+    {
+      "lekcija": 17,
+      "tezina": 1,
+      "pitanje": "Kada skakač u vis prelazi letvicu, koja energija je najveća?",
+      "odgovori": [
+        "Potencijalna",
+        "Kinetička",
+        "Toplotna",
+        "Električna"
+      ],
+      "zanimljivost": "Svetski rekord u skoku uvis, 2,45 m, postavio je Havijer Sotomajor 1993.",
+      "rec": "skok"
+    },
+    {
+      "lekcija": 17,
+      "tezina": 2,
+      "pitanje": "Kako se kod skoka sa motkom energija prenosi?",
+      "odgovori": [
+        "Kinetička energija zaleta → elastična energija motke → potencijalna energija skakača",
+        "Samo toplota",
+        "Samo zvuk",
+        "Bez promena"
+      ],
+      "zanimljivost": "Armand Duplantis je rekord u skoku sa motkom pomerio iznad 6,2 m.",
+      "rec": "motka"
+    },
+    {
+      "lekcija": 17,
+      "tezina": 3,
+      "pitanje": "Klatno kreće sa visine 0,2 m. Kolika mu je brzina u najnižoj tački (g = 10 m/s²)?",
+      "odgovori": [
+        "2 m/s",
+        "4 m/s",
+        "0,2 m/s",
+        "20 m/s"
+      ],
+      "zanimljivost": "v = √(2gh) = √4 = 2 m/s.",
+      "rec": "brzina"
+    },
+    {
+      "lekcija": 17,
+      "tezina": 2,
+      "pitanje": "Šta se dešava sa energijom strele dok leti naviše?",
+      "odgovori": [
+        "Kinetička opada, a potencijalna raste",
+        "Obe rastu",
+        "Obe opadaju",
+        "Ništa"
+      ],
+      "zanimljivost": "Najviša tačka – tu je kinetička energija najmanja.",
+      "rec": "strela"
+    },
+    {
+      "lekcija": 17,
+      "tezina": 1,
+      "pitanje": "U šta se pretvara energija hrane kada trčimo?",
+      "odgovori": [
+        "U kinetičku energiju i toplotu",
+        "U svetlost",
+        "U masu",
+        "Ni u šta"
+      ],
+      "zanimljivost": "Pri trčanju telo se zagreva – zato se znojimo.",
+      "rec": "hrana"
+    },
+    {
+      "lekcija": 18,
+      "tezina": 1,
+      "pitanje": "Šta je snaga?",
+      "odgovori": [
+        "Rad izvršen u jedinici vremena",
+        "Sila",
+        "Energija mirovanja",
+        "Masa"
+      ],
+      "zanimljivost": "Dva radnika istog rada – ali brži ima veću snagu.",
+      "rec": "snaga",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "P = A / t"
+      }
+    },
+    {
+      "lekcija": 18,
+      "tezina": 2,
+      "pitanje": "Koja je jedinica za snagu?",
+      "odgovori": [
+        "Vat (W)",
+        "Džul (J)",
+        "Njutn (N)",
+        "Paskal (Pa)"
+      ],
+      "zanimljivost": "Jedinica je dobila ime po Džejmsu Vatu, koji je usavršio parnu mašinu.",
+      "rec": "vat"
+    },
+    {
+      "lekcija": 18,
+      "tezina": 2,
+      "pitanje": "Koliku snagu razvija dizalica koja izvrši rad 6.000 J za 30 s?",
+      "odgovori": [
+        "200 W",
+        "180.000 W",
+        "6.030 W",
+        "0,005 W"
+      ],
+      "zanimljivost": "Snaga kućnog fena za kosu je oko 2.000 W.",
+      "rec": "dizalica"
+    },
+    {
+      "lekcija": 18,
+      "tezina": 2,
+      "pitanje": "Šta je konjska snaga?",
+      "odgovori": [
+        "Stara jedinica za snagu – oko 736 W",
+        "Snaga jednog konja uvek",
+        "Masa konja",
+        "Brzina konja"
+      ],
+      "zanimljivost": "Džejms Vat je smislio „konjsku snagu“ da bi uporedio parne mašine sa konjima koje su zamenjivale.",
+      "rec": "konj"
+    },
+    {
+      "lekcija": 18,
+      "tezina": 3,
+      "pitanje": "Šta je koeficijent korisnog dejstva?",
+      "odgovori": [
+        "Odnos korisnog i ukupno uloženog rada",
+        "Snaga motora",
+        "Brzina mašine",
+        "Masa goriva"
+      ],
+      "zanimljivost": "Nijedna mašina nema koeficijent 100% – deo energije se uvek pretvori u toplotu.",
+      "rec": "korisno"
+    },
+    {
+      "lekcija": 18,
+      "tezina": 3,
+      "pitanje": "Motor potroši 1.000 J, a izvrši koristan rad 250 J. Koliki je koeficijent korisnog dejstva?",
+      "odgovori": [
+        "25%",
+        "75%",
+        "4%",
+        "250%"
+      ],
+      "zanimljivost": "Benzinski motori automobila imaju koeficijent oko 25–35%.",
+      "rec": "motor"
+    },
+    {
+      "lekcija": 18,
+      "tezina": 1,
+      "pitanje": "Šta znači da sijalica ima snagu 10 W?",
+      "odgovori": [
+        "Svake sekunde troši 10 J električne energije",
+        "Teška je 10 kg",
+        "Svetli 10 sati",
+        "Ima 10 žica"
+      ],
+      "zanimljivost": "LED sijalica od 10 W svetli kao stara od 60–75 W.",
+      "rec": "sijalica"
+    },
+    {
+      "lekcija": 18,
+      "tezina": 2,
+      "pitanje": "Ko radi veću snagu – učenik koji uz stepenice trči ili onaj koji hoda (iste mase)?",
+      "odgovori": [
+        "Onaj koji trči",
+        "Onaj koji hoda",
+        "Isti su",
+        "Ne može se znati"
+      ],
+      "zanimljivost": "Rad je isti, ali trkač ga izvrši za kraće vreme.",
+      "rec": "stepenice"
+    },
+    {
+      "lekcija": 18,
+      "tezina": 2,
+      "pitanje": "Koliko vati ima 1 kilovat?",
+      "odgovori": [
+        "1.000",
+        "100",
+        "10",
+        "1.000.000"
+      ],
+      "zanimljivost": "Snaga automobila se često daje u kilovatima – npr. 75 kW.",
+      "rec": "kilovat"
+    },
+    {
+      "lekcija": 18,
+      "tezina": 3,
+      "pitanje": "Zašto električni motori imaju veći koeficijent korisnog dejstva od benzinskih?",
+      "odgovori": [
+        "Manje energije se gubi na toplotu",
+        "Teži su",
+        "Brži su",
+        "Nemaju struju"
+      ],
+      "zanimljivost": "Električni motori imaju koeficijent i preko 90%.",
+      "rec": "motor"
+    },
+    {
+      "lekcija": 18,
+      "tezina": 2,
+      "pitanje": "Šta je kilovat-čas (kWh)?",
+      "odgovori": [
+        "Jedinica za energiju – rad snage 1 kW tokom jednog sata",
+        "Jedinica za snagu",
+        "Jedinica za vreme",
+        "Jedinica za silu"
+      ],
+      "zanimljivost": "Strujomer u kući broji potrošene kilovat-časove – za njih plaćamo račun.",
+      "rec": "struja"
+    },
+    {
+      "lekcija": 18,
+      "tezina": 1,
+      "pitanje": "Šta ima veću snagu – fen od 2.000 W ili punjač telefona od 20 W?",
+      "odgovori": [
+        "Fen",
+        "Punjač",
+        "Isto",
+        "Ne može se uporediti"
+      ],
+      "zanimljivost": "Fen za jedan minut potroši energije kao punjač za skoro dva sata.",
+      "rec": "fen"
+    },
+    {
+      "lekcija": 18,
+      "tezina": 3,
+      "pitanje": "Čovek snage 100 W penje se 30 s. Koliki rad je izvršio?",
+      "odgovori": [
+        "3.000 J",
+        "130 J",
+        "3,3 J",
+        "300 J"
+      ],
+      "zanimljivost": "A = P · t – snažan biciklista može nekoliko minuta da razvija i 400 W.",
+      "rec": "rad"
+    },
+    {
+      "lekcija": 18,
+      "tezina": 2,
+      "pitanje": "Gde se gubi energija u automobilskom motoru?",
+      "odgovori": [
+        "Uglavnom kao toplota (izduvni gasovi, hladnjak)",
+        "Pretvara se u masu",
+        "Nestaje bez traga",
+        "Ne gubi se"
+      ],
+      "zanimljivost": "Zato motor ima hladnjak i ventilator.",
+      "rec": "toplota"
+    },
+    {
+      "lekcija": 18,
+      "tezina": 1,
+      "pitanje": "Po kome je jedinica za snagu dobila ime?",
+      "odgovori": [
+        "Džejms Vat",
+        "Isak Njutn",
+        "Džejms Džul",
+        "Blez Paskal"
+      ],
+      "zanimljivost": "Vatova parna mašina pokrenula je industrijsku revoluciju u 18. veku.",
+      "rec": "vat"
+    },
+    {
+      "lekcija": 19,
+      "tezina": 1,
+      "pitanje": "Šta se dešava sa većinom tela kada se zagreju?",
+      "odgovori": [
+        "Šire se",
+        "Skupljaju se",
+        "Ne menjaju se",
+        "Nestaju"
+      ],
+      "zanimljivost": "Ajfelov toranj je leti viši za oko 15 cm nego zimi – zbog toplotnog širenja gvožđa.",
+      "rec": "širenje"
+    },
+    {
+      "lekcija": 19,
+      "tezina": 2,
+      "pitanje": "Zašto se na mostovima i šinama ostavljaju razmaci (dilatacije)?",
+      "odgovori": [
+        "Da bi se metal mogao širiti leti bez oštećenja",
+        "Da bi bilo jeftinije",
+        "Da bi voda oticala",
+        "Zbog lepšeg zvuka"
+      ],
+      "zanimljivost": "„Tak-tak“ zvuk vožnje vozom potiče od tih razmaka između šina.",
+      "rec": "dilatacija"
+    },
+    {
+      "lekcija": 19,
+      "tezina": 2,
+      "pitanje": "Zašto se telefonske i električne žice leti više ugibaju?",
+      "odgovori": [
+        "Leti se šire i produže",
+        "Leti su teže",
+        "Zbog ptica",
+        "Zbog vetra"
+      ],
+      "zanimljivost": "Zimi se žice skrate i zategnu – zato se ne zatežu previše pri postavljanju.",
+      "rec": "žice"
+    },
+    {
+      "lekcija": 19,
+      "tezina": 3,
+      "pitanje": "Koja je izuzetna osobina vode između 0 °C i 4 °C?",
+      "odgovori": [
+        "Kada se zagreva, skuplja se",
+        "Širi se kao ostale tečnosti",
+        "Ne menja zapreminu",
+        "Isparava"
+      ],
+      "zanimljivost": "Ova „anomalija vode“ omogućava da ribe prežive zimu u jezerima.",
+      "rec": "anomalija"
+    },
+    {
+      "lekcija": 19,
+      "tezina": 2,
+      "pitanje": "Na kom principu radi termometar sa tečnošću?",
+      "odgovori": [
+        "Tečnost se zagrevanjem širi i diže u cevčici",
+        "Tečnost se skuplja",
+        "Tečnost menja boju",
+        "Tečnost isparava"
+      ],
+      "zanimljivost": "Danas se u termometrima umesto otrovne žive koristi obojeni alkohol ili digitalni senzori.",
+      "rec": "termometar"
+    },
+    {
+      "lekcija": 19,
+      "tezina": 3,
+      "pitanje": "Šta je bimetalna traka?",
+      "odgovori": [
+        "Dve spojene trake različitih metala koje se pri zagrevanju savijaju",
+        "Traka od jednog metala",
+        "Vrsta magneta",
+        "Električna žica"
+      ],
+      "zanimljivost": "Bimetalna traka radi kao prekidač u peglama i grejalicama – isključi struju kad se pregreje.",
+      "rec": "bimetal"
+    },
+    {
+      "lekcija": 19,
+      "tezina": 1,
+      "pitanje": "Zašto ne treba ostaviti zatvorenu flašu vode u zamrzivaču?",
+      "odgovori": [
+        "Voda se pri mržnjenju širi i može da razbije flašu",
+        "Voda ispari",
+        "Flaša se otopi",
+        "Ništa se ne desi"
+      ],
+      "zanimljivost": "Led ima oko 9% veću zapreminu od vode iz koje je nastao.",
+      "rec": "led"
+    },
+    {
+      "lekcija": 19,
+      "tezina": 2,
+      "pitanje": "Zašto se zaglavljen metalni poklopac tegle lakše odvrne kad ga pokvasimo toplom vodom?",
+      "odgovori": [
+        "Metal se širi više od stakla",
+        "Voda podmaže",
+        "Staklo se širi više",
+        "Zbog pare"
+      ],
+      "zanimljivost": "Metali se uglavnom šire više od stakla pri istom zagrevanju.",
+      "rec": "tegla"
+    },
+    {
+      "lekcija": 19,
+      "tezina": 2,
+      "pitanje": "Da li se i gasovi šire pri zagrevanju?",
+      "odgovori": [
+        "Da, i to mnogo više od tečnosti i čvrstih tela",
+        "Ne",
+        "Samo neki",
+        "Skupljaju se"
+      ],
+      "zanimljivost": "Zato se balon na suncu „naduje“, a zimi na hladnom delimično splasne.",
+      "rec": "gas"
+    },
+    {
+      "lekcija": 19,
+      "tezina": 3,
+      "pitanje": "Zašto se staklena čaša može pući kada u nju naglo sipamo vrelu vodu?",
+      "odgovori": [
+        "Unutrašnji deo se brzo širi, a spoljašnji ne stiže, pa nastaju naprezanja",
+        "Voda je teška",
+        "Staklo se topi",
+        "Zbog pare"
+      ],
+      "zanimljivost": "Vatrostalno staklo slabo se širi pri zagrevanju – zato ne puca u rerni.",
+      "rec": "staklo"
+    },
+    {
+      "lekcija": 19,
+      "tezina": 1,
+      "pitanje": "Šta se dešava sa telom kada se ohladi?",
+      "odgovori": [
+        "Uglavnom se skuplja",
+        "Širi se",
+        "Raste mu masa",
+        "Ništa"
+      ],
+      "zanimljivost": "Kovači stavljaju vreo metalni obruč na drveni točak – hlađenjem se obruč skupi i čvrsto stegne.",
+      "rec": "hlađenje"
+    },
+    {
+      "lekcija": 19,
+      "tezina": 2,
+      "pitanje": "Zašto se na betonskim pločnicima ostavljaju razmaci?",
+      "odgovori": [
+        "Da beton ne bi pucao pri širenju i skupljanju",
+        "Zbog trave",
+        "Zbog odvodnje vode samo",
+        "Zbog lepote"
+      ],
+      "zanimljivost": "Velika betonska ploča bez razmaka bi tokom godina popucala na nepravilnim mestima.",
+      "rec": "beton"
+    },
+    {
+      "lekcija": 19,
+      "tezina": 3,
+      "pitanje": "Zašto se zavrtnji na šinama postavljaju sa „zazorom“ u rupama?",
+      "odgovori": [
+        "Da se šine mogu pomerati pri širenju i skupljanju",
+        "Da budu jeftiniji",
+        "Da se lako ukradu",
+        "Bez razloga"
+      ],
+      "zanimljivost": "Na brzim prugama danas se šine zavaruju u duge trake, ali se prethodno zategnu da izdrže promene temperature.",
+      "rec": "šine"
+    },
+    {
+      "lekcija": 19,
+      "tezina": 2,
+      "pitanje": "Zašto ne treba pumpati gume do maksimuma po velikoj vrućini?",
+      "odgovori": [
+        "Vazduh u gumi se dodatno širi i pritisak raste",
+        "Guma postaje teža",
+        "Guma se skuplja",
+        "Nema veze"
+      ],
+      "zanimljivost": "Pritisak u gumama se proverava kada su „hladne“, pre vožnje.",
+      "rec": "guma"
+    },
+    {
+      "lekcija": 19,
+      "tezina": 1,
+      "pitanje": "Šta je toplotno širenje?",
+      "odgovori": [
+        "Povećanje dimenzija tela pri zagrevanju",
+        "Smanjenje mase",
+        "Promena boje",
+        "Topljenje"
+      ],
+      "zanimljivost": "Mostovi su zato često oslonjeni na valjke – da mogu da „klize“ dok se šire.",
+      "rec": "most"
+    },
+    {
+      "lekcija": 20,
+      "tezina": 1,
+      "pitanje": "Kojim instrumentom se meri temperatura?",
+      "odgovori": [
+        "Termometrom",
+        "Barometrom",
+        "Dinamometrom",
+        "Hronometrom"
+      ],
+      "zanimljivost": "Lekarski termometar meri od 35 do 42 °C – baš opseg telesne temperature.",
+      "rec": "termometar",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "🌡️"
+      }
+    },
+    {
+      "lekcija": 20,
+      "tezina": 2,
+      "pitanje": "Koje su dve tačke na Celzijusovoj skali?",
+      "odgovori": [
+        "0 °C – topljenje leda i 100 °C – ključanje vode",
+        "0 °C i 50 °C",
+        "10 °C i 100 °C",
+        "0 °C i 1.000 °C"
+      ],
+      "zanimljivost": "Anders Celzijus je prvobitno postavio skalu obrnuto – 100 je bila tačka mržnjenja!",
+      "rec": "celzijus"
+    },
+    {
+      "lekcija": 20,
+      "tezina": 2,
+      "pitanje": "Kako se pretvara temperatura iz °C u kelvine?",
+      "odgovori": [
+        "Doda se 273",
+        "Oduzme se 273",
+        "Pomnoži se sa 2",
+        "Podeli se sa 10"
+      ],
+      "zanimljivost": "20 °C je oko 293 K.",
+      "rec": "kelvin",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "T(K) = t(°C) + 273"
+      }
+    },
+    {
+      "lekcija": 20,
+      "tezina": 3,
+      "pitanje": "Koliko je apsolutna nula u stepenima Celzijusa?",
+      "odgovori": [
+        "Oko –273 °C",
+        "0 °C",
+        "–100 °C",
+        "–1.000 °C"
+      ],
+      "zanimljivost": "Na apsolutnoj nuli bi toplotno kretanje čestica bilo najmanje moguće – niža temperatura ne postoji.",
+      "rec": "nula"
+    },
+    {
+      "lekcija": 20,
+      "tezina": 2,
+      "pitanje": "Koja je gornja stalna tačka Celzijusove skale, pri normalnom pritisku?",
+      "odgovori": [
+        "100 °C",
+        "90 °C",
+        "80 °C",
+        "120 °C"
+      ],
+      "zanimljivost": "Na vrhu Mont Everesta voda ključa već na oko 70 °C – zato se tamo jaje teško skuva.",
+      "rec": "ključanje"
+    },
+    {
+      "lekcija": 20,
+      "tezina": 2,
+      "pitanje": "Koja temperaturna skala se koristi u SAD?",
+      "odgovori": [
+        "Farenhajtova",
+        "Celzijusova",
+        "Kelvinova samo",
+        "Rimska"
+      ],
+      "zanimljivost": "Normalna telesna temperatura je oko 98,6 °F.",
+      "rec": "farenhajt"
+    },
+    {
+      "lekcija": 20,
+      "tezina": 1,
+      "pitanje": "Kolika je normalna telesna temperatura čoveka?",
+      "odgovori": [
+        "Oko 36,5–37 °C",
+        "Oko 30 °C",
+        "Oko 40 °C",
+        "Oko 25 °C"
+      ],
+      "zanimljivost": "Tokom dana temperatura se menja za oko pola stepena.",
+      "rec": "telo"
+    },
+    {
+      "lekcija": 20,
+      "tezina": 3,
+      "pitanje": "Koliko je 300 K u stepenima Celzijusa?",
+      "odgovori": [
+        "27 °C",
+        "300 °C",
+        "573 °C",
+        "–27 °C"
+      ],
+      "zanimljivost": "Prijatna sobna temperatura je oko 293–298 K.",
+      "rec": "računanje"
+    },
+    {
+      "lekcija": 20,
+      "tezina": 2,
+      "pitanje": "Šta zapravo pokazuje temperatura?",
+      "odgovori": [
+        "Koliko se brzo u proseku kreću čestice tela",
+        "Količinu toplote",
+        "Masu",
+        "Gustinu"
+      ],
+      "zanimljivost": "Što se čestice brže kreću, telo je toplije.",
+      "rec": "čestice"
+    },
+    {
+      "lekcija": 20,
+      "tezina": 1,
+      "pitanje": "Gde je izmerena najniža temperatura na Zemlji?",
+      "odgovori": [
+        "Na Antarktiku",
+        "U Sibiru",
+        "Na Grenlandu",
+        "Na Kopaoniku"
+      ],
+      "zanimljivost": "Na stanici Vostok 1983. izmereno je –89,2 °C.",
+      "rec": "antarktik",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "🥶🐧"
+      }
+    },
+    {
+      "lekcija": 20,
+      "tezina": 3,
+      "pitanje": "Na kojoj temperaturi su Celzijusova i Farenhajtova skala iste?",
+      "odgovori": [
+        "–40°",
+        "0°",
+        "100°",
+        "–273°"
+      ],
+      "zanimljivost": "–40 °C je baš –40 °F – jedina zajednička tačka dve skale.",
+      "rec": "minus"
+    },
+    {
+      "lekcija": 20,
+      "tezina": 2,
+      "pitanje": "Šta je digitalni termometar?",
+      "odgovori": [
+        "Termometar sa elektronskim senzorom i ekranom",
+        "Termometar sa živom",
+        "Termometar od leda",
+        "Barometar"
+      ],
+      "zanimljivost": "Infracrveni termometri mere temperaturu i bez dodira – po zračenju koje telo emituje.",
+      "rec": "digitalni"
+    },
+    {
+      "lekcija": 20,
+      "tezina": 2,
+      "pitanje": "Zašto se ne preporučuje živin termometar u kući?",
+      "odgovori": [
+        "Živa je otrovna ako se termometar razbije",
+        "Pokazuje pogrešno",
+        "Preskup je",
+        "Preteški je"
+      ],
+      "zanimljivost": "Od 2009. živini termometri u Evropskoj uniji uglavnom su zabranjeni za prodaju.",
+      "rec": "živa"
+    },
+    {
+      "lekcija": 20,
+      "tezina": 1,
+      "pitanje": "Na kojoj temperaturi se led topi?",
+      "odgovori": [
+        "0 °C",
+        "10 °C",
+        "–10 °C",
+        "100 °C"
+      ],
+      "zanimljivost": "Posoljeni led topi se i ispod 0 °C – zato se ulice zimi posipaju solju.",
+      "rec": "led"
+    },
+    {
+      "lekcija": 20,
+      "tezina": 3,
+      "pitanje": "Ko je predložio apsolutnu temperaturnu skalu?",
+      "odgovori": [
+        "Lord Kelvin (Vilijam Tomson)",
+        "Celzijus",
+        "Farenhajt",
+        "Njutn"
+      ],
+      "zanimljivost": "Kelvin je dobio plemićku titulu i ime po reci Kelvin u Glazgovu.",
+      "rec": "kelvin"
+    },
+    {
+      "lekcija": 21,
+      "tezina": 1,
+      "pitanje": "Šta čini supstancu, prema čestičnoj teoriji?",
+      "odgovori": [
+        "Mnoštvo sitnih čestica (atoma i molekula) u stalnom kretanju",
+        "Od polja",
+        "Od svetlosti",
+        "Od zvuka"
+      ],
+      "zanimljivost": "Atom je toliko mali da bi ih preko tačke na kraju rečenice moglo da se poreda nekoliko miliona u nizu.",
+      "rec": "atom"
+    },
+    {
+      "lekcija": 21,
+      "tezina": 2,
+      "pitanje": "Šta je difuzija?",
+      "odgovori": [
+        "Spontano mešanje čestica različitih supstanci",
+        "Topljenje",
+        "Isparavanje",
+        "Kristalizacija"
+      ],
+      "zanimljivost": "Kada u čašu vode staviš kap mastila, ona se sama polako raširi – to je difuzija.",
+      "rec": "difuzija",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "💧🟣➡️🟪"
+      }
+    },
+    {
+      "lekcija": 21,
+      "tezina": 2,
+      "pitanje": "Zašto se difuzija brže odvija u toploj vodi?",
+      "odgovori": [
+        "Čestice se brže kreću",
+        "Topla voda je gušća",
+        "Topla voda je lepljiva",
+        "Nema razlike"
+      ],
+      "zanimljivost": "Kesica čaja zato brže oboji toplu nego hladnu vodu.",
+      "rec": "čaj"
+    },
+    {
+      "lekcija": 21,
+      "tezina": 3,
+      "pitanje": "Šta je Braunovo kretanje?",
+      "odgovori": [
+        "Nasumično drhtanje sitnih čestica u tečnosti zbog udara molekula",
+        "Kretanje planeta",
+        "Kretanje struje",
+        "Kretanje svetlosti"
+      ],
+      "zanimljivost": "Ajnštajn je 1905. objasnio Braunovo kretanje i time pomogao da se konačno dokaže postojanje atoma.",
+      "rec": "braun"
+    },
+    {
+      "lekcija": 21,
+      "tezina": 2,
+      "pitanje": "Kakvo je toplotno kretanje čestica?",
+      "odgovori": [
+        "Neprekidno i haotično (nesređeno)",
+        "Uvek pravolinijsko",
+        "Stalno u krug",
+        "Ne postoji"
+      ],
+      "zanimljivost": "Molekuli vazduha u sobi kreću se brzinom od oko 500 m/s – brže od zvuka!",
+      "rec": "haos"
+    },
+    {
+      "lekcija": 21,
+      "tezina": 2,
+      "pitanje": "Kako su raspoređene čestice u čvrstom telu?",
+      "odgovori": [
+        "Gusto, osciluju oko stalnih položaja",
+        "Slobodno lete",
+        "Daleko su jedna od druge",
+        "Ne postoje"
+      ],
+      "zanimljivost": "Zato čvrsta tela imaju stalan oblik.",
+      "rec": "kristal"
+    },
+    {
+      "lekcija": 21,
+      "tezina": 2,
+      "pitanje": "Kako se kreću čestice u gasu?",
+      "odgovori": [
+        "Slobodno, na velikim rastojanjima, i sudaraju se",
+        "Stoje u mestu",
+        "Osciluju u mestu",
+        "Ne kreću se"
+      ],
+      "zanimljivost": "Zato gas zauzima ceo prostor posude.",
+      "rec": "gas"
+    },
+    {
+      "lekcija": 21,
+      "tezina": 1,
+      "pitanje": "Zašto miris parfema brzo ispuni celu sobu?",
+      "odgovori": [
+        "Zbog kretanja i mešanja čestica (difuzije)",
+        "Zbog vetra uvek",
+        "Zbog gravitacije",
+        "Zbog svetlosti"
+      ],
+      "zanimljivost": "Pas može da nanjuši pojedinačne molekule mirisa u koncentracijama hiljadama puta manjim nego čovek.",
+      "rec": "parfem"
+    },
+    {
+      "lekcija": 21,
+      "tezina": 3,
+      "pitanje": "Šta je molekul vode?",
+      "odgovori": [
+        "Dva atoma vodonika i jedan atom kiseonika",
+        "Jedan atom",
+        "Tri atoma kiseonika",
+        "Atom ugljenika i kiseonika"
+      ],
+      "zanimljivost": "U jednoj čaši vode ima više molekula nego čaša vode u svim okeanima.",
+      "rec": "voda",
+      "mediji": {
+        "vrsta": "molekul",
+        "ime": "voda"
+      }
+    },
+    {
+      "lekcija": 21,
+      "tezina": 2,
+      "pitanje": "Šta se dešava sa česticama kada se telo zagreva?",
+      "odgovori": [
+        "Kreću se brže",
+        "Usporavaju",
+        "Nestaju",
+        "Postaju veće"
+      ],
+      "zanimljivost": "Kada se kreću dovoljno brzo, čvrsto telo se topi.",
+      "rec": "toplota"
+    },
+    {
+      "lekcija": 21,
+      "tezina": 1,
+      "pitanje": "Između čestica deluju…",
+      "odgovori": [
+        "privlačne i odbojne sile",
+        "samo magnetne sile",
+        "nikakve sile",
+        "samo gravitacione sile"
+      ],
+      "zanimljivost": "Zbog privlačnih sila kap vode „drži“ oblik, a zbog odbojnih se čvrsto telo teško sabija.",
+      "rec": "sile"
+    },
+    {
+      "lekcija": 21,
+      "tezina": 3,
+      "pitanje": "Ko je prvi zamislio da je materija građena od nedeljivih čestica – atoma?",
+      "odgovori": [
+        "Demokrit",
+        "Njutn",
+        "Galilej",
+        "Ajnštajn"
+      ],
+      "zanimljivost": "Reč atom na grčkom znači „nedeljiv“ – iako danas znamo da se atom ipak može podeliti.",
+      "rec": "demokrit"
+    },
+    {
+      "lekcija": 21,
+      "tezina": 2,
+      "pitanje": "Zašto se šećer brže rastvara u toplom čaju?",
+      "odgovori": [
+        "Čestice se brže kreću i mešaju",
+        "Šećer je lakši",
+        "Čaj je slađi",
+        "Nema razlike"
+      ],
+      "zanimljivost": "Mešanje kašičicom takođe ubrzava rastvaranje.",
+      "rec": "šećer"
+    },
+    {
+      "lekcija": 21,
+      "tezina": 2,
+      "pitanje": "Da li se difuzija odvija i u čvrstim telima?",
+      "odgovori": [
+        "Da, ali vrlo sporo",
+        "Ne, nikada",
+        "Samo u ledu",
+        "Samo u gvožđu"
+      ],
+      "zanimljivost": "Ploče zlata i olova, čvrsto pritisnute nekoliko godina, primetno se izmešaju u tankom sloju na dodiru.",
+      "rec": "sporo"
+    },
+    {
+      "lekcija": 21,
+      "tezina": 3,
+      "pitanje": "Kakvo je kretanje molekula na višoj temperaturi u gasu?",
+      "odgovori": [
+        "Brže i sudaraju se češće i jače",
+        "Sporije",
+        "Ne kreću se",
+        "Kreću se samo naviše"
+      ],
+      "zanimljivost": "Zato se pritisak gasa u zatvorenoj posudi povećava sa temperaturom.",
+      "rec": "pritisak"
+    },
+    {
+      "lekcija": 22,
+      "tezina": 1,
+      "pitanje": "Šta je unutrašnja energija tela?",
+      "odgovori": [
+        "Zbir energija svih čestica tela",
+        "Energija kretanja celog tela",
+        "Samo potencijalna energija",
+        "Energija svetlosti"
+      ],
+      "zanimljivost": "Čak i led ima unutrašnju energiju – čestice u njemu stalno osciluju.",
+      "rec": "unutrašnja"
+    },
+    {
+      "lekcija": 22,
+      "tezina": 2,
+      "pitanje": "Na koja dva načina se može promeniti unutrašnja energija tela?",
+      "odgovori": [
+        "Vršenjem rada i razmenom toplote",
+        "Samo bojenjem",
+        "Samo pomeranjem",
+        "Ne može se menjati"
+      ],
+      "zanimljivost": "Pumpa za bicikl se zagreje kada naduvavaš gumu – rad prelazi u unutrašnju energiju.",
+      "rec": "načini"
+    },
+    {
+      "lekcija": 22,
+      "tezina": 2,
+      "pitanje": "Šta je toplota (količina toplote)?",
+      "odgovori": [
+        "Energija koja prelazi sa toplijeg na hladnije telo",
+        "Isto što i temperatura",
+        "Vrsta goriva",
+        "Brzina čestica"
+      ],
+      "zanimljivost": "Toplota uvek sama prelazi sa toplijeg na hladnije telo, nikad obrnuto.",
+      "rec": "toplota"
+    },
+    {
+      "lekcija": 22,
+      "tezina": 3,
+      "pitanje": "Koja je razlika između temperature i toplote?",
+      "odgovori": [
+        "Temperatura pokazuje zagrejanost, a toplota je prenesena energija",
+        "Nema razlike",
+        "Toplota se meri termometrom",
+        "Temperatura se meri u džulima"
+      ],
+      "zanimljivost": "Varnica od 1.000 °C ne opeče jer nosi malo energije, a kada vruće vode od 60 °C može da opeče.",
+      "rec": "razlika"
+    },
+    {
+      "lekcija": 22,
+      "tezina": 2,
+      "pitanje": "Kako se zagrevaju ruke kada ih trljamo?",
+      "odgovori": [
+        "Rad sile trenja povećava unutrašnju energiju",
+        "Krv brže teče od sunca",
+        "Ne zagrevaju se",
+        "Vazduh ih greje"
+      ],
+      "zanimljivost": "Slično se i meteori užare pri prolasku kroz atmosferu.",
+      "rec": "trljanje"
+    },
+    {
+      "lekcija": 22,
+      "tezina": 1,
+      "pitanje": "Kada se dva tela različite temperature dodiruju, šta se dešava?",
+      "odgovori": [
+        "Toplija se hlade, a hladnija zagrevaju dok se temperature ne izjednače",
+        "Oba se zagrevaju",
+        "Oba se hlade",
+        "Ništa"
+      ],
+      "zanimljivost": "Ovo stanje se zove toplotna ravnoteža – tako radi i termometar.",
+      "rec": "ravnoteža"
+    },
+    {
+      "lekcija": 22,
+      "tezina": 3,
+      "pitanje": "Koji su načini prenošenja toplote?",
+      "odgovori": [
+        "Provođenje, strujanje i zračenje",
+        "Samo provođenje",
+        "Samo zračenje",
+        "Trenje i zvuk"
+      ],
+      "zanimljivost": "Toplota Sunca do nas stiže samo zračenjem – kroz prazan svemir.",
+      "rec": "prenos"
+    },
+    {
+      "lekcija": 22,
+      "tezina": 2,
+      "pitanje": "Zašto se metalna kašika u vrelom čaju brzo zagreje?",
+      "odgovori": [
+        "Metali dobro provode toplotu",
+        "Kašika je tanka",
+        "Čaj je slan",
+        "Nema razloga"
+      ],
+      "zanimljivost": "Drvene i plastične drške na šerpama postavljaju se jer slabo provode toplotu.",
+      "rec": "kašika"
+    },
+    {
+      "lekcija": 22,
+      "tezina": 2,
+      "pitanje": "Zašto je vazduh dobar izolator?",
+      "odgovori": [
+        "Slabo provodi toplotu",
+        "Odlično provodi toplotu",
+        "Težak je",
+        "Gust je"
+      ],
+      "zanimljivost": "Duple prozore i vunene džempere čini toplim upravo zarobljeni vazduh.",
+      "rec": "izolator"
+    },
+    {
+      "lekcija": 22,
+      "tezina": 1,
+      "pitanje": "Kako se toplota prenosi kroz vodu u šerpi na šporetu?",
+      "odgovori": [
+        "Strujanjem – topla voda se diže, a hladna spušta",
+        "Zračenjem samo",
+        "Ne prenosi se",
+        "Kroz poklopac"
+      ],
+      "zanimljivost": "Isto strujanje u atmosferi stvara vetrove i oblake.",
+      "rec": "strujanje"
+    },
+    {
+      "lekcija": 22,
+      "tezina": 3,
+      "pitanje": "Zašto je za zagrevanje vode potrebno mnogo više energije nego za zagrevanje iste mase peska?",
+      "odgovori": [
+        "Voda ima veliki specifični toplotni kapacitet",
+        "Voda je teža",
+        "Pesak je mokar",
+        "Nije potrebno više"
+      ],
+      "zanimljivost": "Zato je pesak na plaži vreo, a more prijatno – i zato more ublažava klimu primorja.",
+      "rec": "kapacitet"
+    },
+    {
+      "lekcija": 22,
+      "tezina": 2,
+      "pitanje": "Zašto je posle kočenja bicikla kočnica topla?",
+      "odgovori": [
+        "Kinetička energija je prešla u unutrašnju energiju",
+        "Zbog sunca",
+        "Zbog trenja vazduha",
+        "Nije topla"
+      ],
+      "zanimljivost": "Kočnice trkačkih automobila mogu se usijati do crvene boje.",
+      "rec": "kočnica"
+    },
+    {
+      "lekcija": 22,
+      "tezina": 2,
+      "pitanje": "Kako termos-boca čuva toplotu?",
+      "odgovori": [
+        "Vakuum između zidova sprečava provođenje i strujanje, a sjajni zid zračenje",
+        "Ima grejač",
+        "Ima led",
+        "Debelom plastikom"
+      ],
+      "zanimljivost": "Termos je izumeo škotski naučnik Džejms Djuar 1892, za čuvanje hladnih tečnih gasova.",
+      "rec": "termos"
+    },
+    {
+      "lekcija": 22,
+      "tezina": 1,
+      "pitanje": "Zašto zimi nosimo vunene rukavice?",
+      "odgovori": [
+        "Slabo provode toplotu i zadržavaju toplotu ruke",
+        "Grejaju same od sebe",
+        "Zbog boje",
+        "Zbog mode"
+      ],
+      "zanimljivost": "Rukavice ne „greju“ – one samo usporavaju da toplota tela izađe napolje.",
+      "rec": "rukavice"
+    },
+    {
+      "lekcija": 22,
+      "tezina": 3,
+      "pitanje": "Zašto se pri sabijanju gasa u pumpi on zagreva?",
+      "odgovori": [
+        "Rad sile se pretvara u unutrašnju energiju gasa",
+        "Zbog trenja ruke",
+        "Zbog sunca",
+        "Ne zagreva se"
+      ],
+      "zanimljivost": "Dizel motor radi bez svećice – vazduh se sabije toliko da se zagreje i zapali gorivo.",
+      "rec": "dizel"
+    }
+  ]
+}

@@ -1,0 +1,6192 @@
+{
+  "naziv": "8. razred · Fizika",
+  "ikona": "💡",
+  "boja": "#f4a261",
+  "opis": "Po udžbeniku Fizika 8 (Nova škola, Fondacija Kavčić): oscilacije i zvuk, svetlost i optika, elektricitet, struja, magnetizam i nuklearna fizika",
+  "redosled": 113,
+  "uOpstem": false,
+  "oblast": "fizika",
+  "razred": 8,
+  "lekcije": [
+    {
+      "tema": "Oscilatorno i talasno kretanje",
+      "naziv": "Oscilacije"
+    },
+    {
+      "tema": "Oscilatorno i talasno kretanje",
+      "naziv": "Održanje energije pri oscilovanju tela"
+    },
+    {
+      "tema": "Oscilatorno i talasno kretanje",
+      "naziv": "Mehanički talasi"
+    },
+    {
+      "tema": "Oscilatorno i talasno kretanje",
+      "naziv": "Zvuk"
+    },
+    {
+      "tema": "Svetlosne pojave",
+      "naziv": "Svetlosne pojave i pravolinijsko prostiranje svetlosti"
+    },
+    {
+      "tema": "Svetlosne pojave",
+      "naziv": "Odbijanje svetlosti. Ravna ogledala"
+    },
+    {
+      "tema": "Svetlosne pojave",
+      "naziv": "Sferna ogledala i konstrukcija likova"
+    },
+    {
+      "tema": "Svetlosne pojave",
+      "naziv": "Brzina svetlosti"
+    },
+    {
+      "tema": "Svetlosne pojave",
+      "naziv": "Prelamanje svetlosti i totalna refleksija"
+    },
+    {
+      "tema": "Svetlosne pojave",
+      "naziv": "Prelamanje svetlosti kroz ploču i prizmu"
+    },
+    {
+      "tema": "Svetlosne pojave",
+      "naziv": "Sočiva i likovi kod sočiva"
+    },
+    {
+      "tema": "Svetlosne pojave",
+      "naziv": "Optički instrumenti"
+    },
+    {
+      "tema": "Električno polje",
+      "naziv": "Naelektrisanje tela. Neutralne čestice i tela"
+    },
+    {
+      "tema": "Električno polje",
+      "naziv": "Uzajamno delovanje naelektrisanih tela"
+    },
+    {
+      "tema": "Električno polje",
+      "naziv": "Električno polje i njegova potencijalna energija"
+    },
+    {
+      "tema": "Električno polje",
+      "naziv": "Električne pojave u prirodi"
+    },
+    {
+      "tema": "Električna struja",
+      "naziv": "Električna struja i izvori struje"
+    },
+    {
+      "tema": "Električna struja",
+      "naziv": "Strujno kolo. Merenje struje i napona"
+    },
+    {
+      "tema": "Električna struja",
+      "naziv": "Omov zakon i električna otpornost"
+    },
+    {
+      "tema": "Električna struja",
+      "naziv": "Vezivanje otpornika"
+    },
+    {
+      "tema": "Električna struja",
+      "naziv": "Rad i snaga električne struje"
+    },
+    {
+      "tema": "Električna struja",
+      "naziv": "Električna struja u tečnostima i gasovima"
+    },
+    {
+      "tema": "Magnetno polje",
+      "naziv": "Pojava magnetizma. Magnetno polje"
+    },
+    {
+      "tema": "Magnetno polje",
+      "naziv": "Magnetno polje električne struje"
+    },
+    {
+      "tema": "Magnetno polje",
+      "naziv": "Dejstvo magnetnog polja na provodnik sa strujom"
+    },
+    {
+      "tema": "Elementi atomske i nuklearne fizike",
+      "naziv": "Struktura atoma"
+    },
+    {
+      "tema": "Elementi atomske i nuklearne fizike",
+      "naziv": "Izotopi i radioaktivni raspad"
+    },
+    {
+      "tema": "Elementi atomske i nuklearne fizike",
+      "naziv": "Radioaktivno zračenje i živi svet"
+    },
+    {
+      "tema": "Elementi atomske i nuklearne fizike",
+      "naziv": "Nuklearna fisija i fuzija"
+    },
+    {
+      "tema": "Fizika i savremeni svet",
+      "naziv": "Klasična i savremena fizika"
+    }
+  ],
+  "pitanja": [
+    {
+      "lekcija": 1,
+      "tezina": 1,
+      "pitanje": "Šta je oscilatorno kretanje?",
+      "odgovori": [
+        "Kretanje koje se ponavlja oko ravnotežnog položaja",
+        "Kretanje po pravoj",
+        "Kretanje u jednom smeru",
+        "Mirovanje"
+      ],
+      "zanimljivost": "Ljuljaška, klatno sata i žica gitare osciluju.",
+      "rec": "oscilacija",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "🎢↔️"
+      }
+    },
+    {
+      "lekcija": 1,
+      "tezina": 2,
+      "pitanje": "Šta je period oscilovanja?",
+      "odgovori": [
+        "Vreme jedne pune oscilacije",
+        "Broj oscilacija",
+        "Najveće udaljenje",
+        "Brzina tela"
+      ],
+      "zanimljivost": "Period se označava slovom T i meri u sekundama.",
+      "rec": "period"
+    },
+    {
+      "lekcija": 1,
+      "tezina": 2,
+      "pitanje": "Šta je frekvencija?",
+      "odgovori": [
+        "Broj oscilacija u jednoj sekundi",
+        "Vreme jedne oscilacije",
+        "Najveće udaljenje",
+        "Masa tela"
+      ],
+      "zanimljivost": "Jedinica za frekvenciju je herc (Hz) – jedna oscilacija u sekundi.",
+      "rec": "frekvencija",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "f = 1 / T"
+      }
+    },
+    {
+      "lekcija": 1,
+      "tezina": 2,
+      "pitanje": "Šta je amplituda?",
+      "odgovori": [
+        "Najveće udaljenje tela od ravnotežnog položaja",
+        "Vreme jedne oscilacije",
+        "Broj oscilacija",
+        "Brzina"
+      ],
+      "zanimljivost": "Kod zvuka, veća amplituda znači glasniji zvuk.",
+      "rec": "amplituda"
+    },
+    {
+      "lekcija": 1,
+      "tezina": 3,
+      "pitanje": "Ako je period oscilovanja 0,5 s, kolika je frekvencija?",
+      "odgovori": [
+        "2 Hz",
+        "0,5 Hz",
+        "5 Hz",
+        "20 Hz"
+      ],
+      "zanimljivost": "f = 1/T = 1/0,5 = 2 Hz.",
+      "rec": "računanje"
+    },
+    {
+      "lekcija": 1,
+      "tezina": 2,
+      "pitanje": "Od čega zavisi period matematičkog klatna?",
+      "odgovori": [
+        "Od dužine klatna (i ubrzanja teže)",
+        "Od mase kuglice",
+        "Od boje konca",
+        "Od amplitude jako"
+      ],
+      "zanimljivost": "Galilej je primetio da period ne zavisi od mase – i da je gotovo isti i kad je zamah mali i kad je malo veći.",
+      "rec": "dužina"
+    },
+    {
+      "lekcija": 1,
+      "tezina": 3,
+      "pitanje": "Ako se dužina klatna poveća četiri puta, šta se dešava sa periodom?",
+      "odgovori": [
+        "Udvostruči se",
+        "Učetvorostruči se",
+        "Smanji se upola",
+        "Ne menja se"
+      ],
+      "zanimljivost": "Period klatna srazmeran je korenu iz dužine.",
+      "rec": "koren"
+    },
+    {
+      "lekcija": 1,
+      "tezina": 1,
+      "pitanje": "Šta od navedenog osciluje?",
+      "odgovori": [
+        "Žica gitare dok svira",
+        "Kamen na zemlji",
+        "Zid kuće",
+        "Planina"
+      ],
+      "zanimljivost": "Žica „la“ na gitari osciluje 110 puta u sekundi.",
+      "rec": "gitara",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "🎸"
+      }
+    },
+    {
+      "lekcija": 1,
+      "tezina": 2,
+      "pitanje": "Šta se dešava sa oscilacijama ljuljaške ako je niko ne gura?",
+      "odgovori": [
+        "Postepeno se smanjuju (prigušuju)",
+        "Postaju sve veće",
+        "Ostaju iste zauvek",
+        "Odmah prestanu"
+      ],
+      "zanimljivost": "Prigušenje izazivaju otpor vazduha i trenje u osloncu.",
+      "rec": "prigušenje"
+    },
+    {
+      "lekcija": 1,
+      "tezina": 3,
+      "pitanje": "Šta je rezonancija?",
+      "odgovori": [
+        "Naglo povećanje amplitude kada spoljašnja sila deluje sa sopstvenom frekvencijom tela",
+        "Smanjenje oscilacija",
+        "Vrsta talasa",
+        "Odbijanje zvuka"
+      ],
+      "zanimljivost": "Zbog rezonancije vojnicima je nekada naređivano da „razbiju korak“ pri prelasku mosta.",
+      "rec": "rezonancija"
+    },
+    {
+      "lekcija": 1,
+      "tezina": 2,
+      "pitanje": "Šta je Fukoovo klatno dokazalo 1851. godine?",
+      "odgovori": [
+        "Da se Zemlja okreće oko svoje ose",
+        "Da je Zemlja ravna",
+        "Da Mesec ne postoji",
+        "Da gravitacija nestaje"
+      ],
+      "zanimljivost": "Ravan oscilovanja Fukoovog klatna polako se zakreće – zapravo se pod njim okreće Zemlja.",
+      "rec": "fuko"
+    },
+    {
+      "lekcija": 1,
+      "tezina": 1,
+      "pitanje": "Kako se zove jedinica za frekvenciju?",
+      "odgovori": [
+        "Herc (Hz)",
+        "Njutn",
+        "Džul",
+        "Vat"
+      ],
+      "zanimljivost": "Hajnrih Herc je prvi dokazao postojanje elektromagnetnih talasa.",
+      "rec": "herc"
+    },
+    {
+      "lekcija": 1,
+      "tezina": 3,
+      "pitanje": "Tegić na opruzi napravi 30 oscilacija za 15 s. Koliki je period?",
+      "odgovori": [
+        "0,5 s",
+        "2 s",
+        "45 s",
+        "450 s"
+      ],
+      "zanimljivost": "T = t/n = 15/30 = 0,5 s.",
+      "rec": "opruga"
+    },
+    {
+      "lekcija": 1,
+      "tezina": 2,
+      "pitanje": "Koliko puta u sekundi zamahne krilima kolibri?",
+      "odgovori": [
+        "50–80 puta",
+        "1 put",
+        "5.000 puta",
+        "1–2 puta"
+      ],
+      "zanimljivost": "Zbog toga krila kolibrija zuje – frekvencija zamaha je u opsegu zvuka.",
+      "rec": "kolibri"
+    },
+    {
+      "lekcija": 1,
+      "tezina": 2,
+      "pitanje": "Koje oscilacije prave srce i pluća?",
+      "odgovori": [
+        "Ritmične, periodične pokrete",
+        "Nikakve",
+        "Samo nasumične",
+        "Samo kad spavamo"
+      ],
+      "zanimljivost": "Puls od 60 otkucaja u minuti odgovara frekvenciji od 1 Hz.",
+      "rec": "srce"
+    },
+    {
+      "lekcija": 2,
+      "tezina": 1,
+      "pitanje": "Gde klatno ima najveću brzinu?",
+      "odgovori": [
+        "U ravnotežnom (najnižem) položaju",
+        "U krajnjim položajima",
+        "Uvek istu",
+        "Nigde"
+      ],
+      "zanimljivost": "U krajnjim položajima klatno se za trenutak zaustavi.",
+      "rec": "brzina"
+    },
+    {
+      "lekcija": 2,
+      "tezina": 2,
+      "pitanje": "Gde klatno ima najveću potencijalnu energiju?",
+      "odgovori": [
+        "U krajnjim (najvišim) položajima",
+        "U najnižem položaju",
+        "Svuda istu",
+        "Nema je"
+      ],
+      "zanimljivost": "Tu je kinetička energija nula, a sva energija je potencijalna.",
+      "rec": "položaj"
+    },
+    {
+      "lekcija": 2,
+      "tezina": 2,
+      "pitanje": "Šta se dešava sa energijom pri oscilovanju klatna bez trenja?",
+      "odgovori": [
+        "Ukupna mehanička energija ostaje ista",
+        "Raste",
+        "Nestaje",
+        "Pretvara se u masu"
+      ],
+      "zanimljivost": "Kinetička i potencijalna energija se neprekidno pretvaraju jedna u drugu.",
+      "rec": "održanje"
+    },
+    {
+      "lekcija": 2,
+      "tezina": 3,
+      "pitanje": "Kakva energija se pretvara pri oscilovanju tega na opruzi?",
+      "odgovori": [
+        "Kinetička i elastična potencijalna energija",
+        "Samo toplotna",
+        "Samo svetlosna",
+        "Električna"
+      ],
+      "zanimljivost": "Mehanički satovi „žive“ od energije sabijene opruge, koju predaju klatnu ili nemiru.",
+      "rec": "opruga"
+    },
+    {
+      "lekcija": 2,
+      "tezina": 2,
+      "pitanje": "Zašto ljuljaška bez guranja postepeno staje?",
+      "odgovori": [
+        "Energija se troši na savladavanje otpora vazduha i trenja",
+        "Gravitacija nestane",
+        "Lanci se skrate",
+        "Zemlja se zaustavi"
+      ],
+      "zanimljivost": "Izgubljena mehanička energija prelazi u toplotu – vrlo malo zagreje vazduh i lance.",
+      "rec": "trenje"
+    },
+    {
+      "lekcija": 2,
+      "tezina": 1,
+      "pitanje": "Kako dete samo „pumpa“ ljuljašku?",
+      "odgovori": [
+        "Pomeranjem tela u pravom trenutku dodaje energiju",
+        "Ne može",
+        "Vikanjem",
+        "Zatvaranjem očiju"
+      ],
+      "zanimljivost": "Dodavanje energije u ritmu oscilacija je oblik rezonancije.",
+      "rec": "ljuljaška"
+    },
+    {
+      "lekcija": 2,
+      "tezina": 3,
+      "pitanje": "Klatno mase 0,2 kg podigne se 5 cm iznad najniže tačke. Kolika je njegova najveća kinetička energija (g = 10 N/kg)?",
+      "odgovori": [
+        "0,1 J",
+        "1 J",
+        "10 J",
+        "0,01 J"
+      ],
+      "zanimljivost": "Ep = m·g·h = 0,2 · 10 · 0,05 = 0,1 J – toliko je i najveća Ek.",
+      "rec": "računanje"
+    },
+    {
+      "lekcija": 2,
+      "tezina": 2,
+      "pitanje": "Šta su prinudne oscilacije?",
+      "odgovori": [
+        "Oscilacije pod dejstvom spoljašnje periodične sile",
+        "Slobodne oscilacije",
+        "Prigušene oscilacije",
+        "Mirovanje"
+      ],
+      "zanimljivost": "Membrana zvučnika osciluje prinudno, u ritmu električnog signala.",
+      "rec": "zvučnik"
+    },
+    {
+      "lekcija": 2,
+      "tezina": 3,
+      "pitanje": "Zašto je 1940. pao most Takoma u SAD?",
+      "odgovori": [
+        "Vetar je izazvao jake oscilacije sličnim rezonanciji",
+        "Udario ga je brod",
+        "Zemljotres",
+        "Preopterećen kamionima"
+      ],
+      "zanimljivost": "Snimak mosta koji se uvija kao traka i danas se prikazuje studentima inženjerstva.",
+      "rec": "takoma"
+    },
+    {
+      "lekcija": 2,
+      "tezina": 2,
+      "pitanje": "Kako se zove uređaj koji štiti neboder od ljuljanja pri vetru?",
+      "odgovori": [
+        "Prigušivač (teško klatno ili masa na vrhu)",
+        "Gromobran",
+        "Lift",
+        "Antena"
+      ],
+      "zanimljivost": "Neboder Tajpej 101 ima na vrhu kuglu od 660 tona koja se ljulja suprotno zgradi.",
+      "rec": "prigušivač"
+    },
+    {
+      "lekcija": 2,
+      "tezina": 1,
+      "pitanje": "Šta pokreće klatno zidnog sata da ne stane?",
+      "odgovori": [
+        "Opruga ili teg koji predaju energiju",
+        "Ništa, osciluje večno",
+        "Sunce",
+        "Vetar"
+      ],
+      "zanimljivost": "Klatno od oko 1 m ima poluperiod (zamah) od oko 1 s – takva klatna nazivaju se „sekundna“.",
+      "rec": "teg"
+    },
+    {
+      "lekcija": 2,
+      "tezina": 2,
+      "pitanje": "Kada je kinetička energija tega na opruzi nula?",
+      "odgovori": [
+        "U krajnjim položajima",
+        "U ravnotežnom položaju",
+        "Uvek",
+        "Nikad"
+      ],
+      "zanimljivost": "Opruga je tada najviše sabijena ili istegnuta.",
+      "rec": "krajnji"
+    },
+    {
+      "lekcija": 2,
+      "tezina": 3,
+      "pitanje": "Šta se dešava sa periodom klatna na Mesecu?",
+      "odgovori": [
+        "Duži je (oko 2,5 puta)",
+        "Kraći je",
+        "Isti je",
+        "Klatno ne osciluje"
+      ],
+      "zanimljivost": "Na Mesecu je ubrzanje teže oko 6 puta manje, pa je period oko √6 puta duži.",
+      "rec": "mesec"
+    },
+    {
+      "lekcija": 2,
+      "tezina": 2,
+      "pitanje": "Zašto pevač može razbiti čašu glasom?",
+      "odgovori": [
+        "Ako peva tonom sopstvene frekvencije čaše, nastaje rezonancija",
+        "Zbog glasnoće samo",
+        "Zbog daha",
+        "To je nemoguće"
+      ],
+      "zanimljivost": "Ovo je retko i teško – potrebna je čaša od tankog kristala i veoma glasan, čist ton.",
+      "rec": "čaša"
+    },
+    {
+      "lekcija": 2,
+      "tezina": 1,
+      "pitanje": "Kakvu energiju ima zategnuta žica gitare pre nego što je pustimo?",
+      "odgovori": [
+        "Elastičnu potencijalnu energiju",
+        "Kinetičku",
+        "Toplotnu",
+        "Nuklearnu"
+      ],
+      "zanimljivost": "Kada žicu pustimo, njena energija prelazi u oscilacije, a deo u zvuk koji čujemo.",
+      "rec": "žica"
+    },
+    {
+      "lekcija": 3,
+      "tezina": 1,
+      "pitanje": "Šta je mehanički talas?",
+      "odgovori": [
+        "Prostiranje oscilacija kroz sredinu",
+        "Kretanje vode u reci",
+        "Vetar",
+        "Kretanje lopte"
+      ],
+      "zanimljivost": "Talas prenosi energiju, a ne supstancu – plovak na talasu samo se ljulja gore-dole.",
+      "rec": "talas",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "🌊"
+      }
+    },
+    {
+      "lekcija": 3,
+      "tezina": 2,
+      "pitanje": "Šta je talasna dužina?",
+      "odgovori": [
+        "Rastojanje između dva susedna brega talasa",
+        "Visina talasa",
+        "Brzina talasa",
+        "Broj talasa"
+      ],
+      "zanimljivost": "Talasna dužina se označava grčkim slovom lambda (λ).",
+      "rec": "lambda"
+    },
+    {
+      "lekcija": 3,
+      "tezina": 2,
+      "pitanje": "Kako se računa brzina talasa?",
+      "odgovori": [
+        "v = λ · f",
+        "v = λ / f",
+        "v = f / λ",
+        "v = λ + f"
+      ],
+      "zanimljivost": "Za zvuk od 340 Hz u vazduhu talasna dužina je oko 1 m.",
+      "rec": "brzina",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "v = λ · f"
+      }
+    },
+    {
+      "lekcija": 3,
+      "tezina": 2,
+      "pitanje": "Šta su transverzalni talasi?",
+      "odgovori": [
+        "Talasi kod kojih čestice osciluju normalno na pravac prostiranja",
+        "Talasi u istom pravcu",
+        "Talasi svetlosti samo",
+        "Zvučni talasi u vazduhu"
+      ],
+      "zanimljivost": "Talas na užetu koje trzneš rukom je transverzalan.",
+      "rec": "uže"
+    },
+    {
+      "lekcija": 3,
+      "tezina": 2,
+      "pitanje": "Šta su longitudinalni talasi?",
+      "odgovori": [
+        "Talasi kod kojih čestice osciluju u pravcu prostiranja",
+        "Talasi normalni na pravac",
+        "Morski talasi",
+        "Talasi u vakuumu"
+      ],
+      "zanimljivost": "Zvuk u vazduhu je longitudinalni talas – zgušnjavanja i razređivanja vazduha.",
+      "rec": "zgušnjenje"
+    },
+    {
+      "lekcija": 3,
+      "tezina": 3,
+      "pitanje": "Talas frekvencije 5 Hz ima talasnu dužinu 2 m. Kolika je brzina talasa?",
+      "odgovori": [
+        "10 m/s",
+        "2,5 m/s",
+        "7 m/s",
+        "0,4 m/s"
+      ],
+      "zanimljivost": "v = λ · f = 2 · 5 = 10 m/s.",
+      "rec": "računanje"
+    },
+    {
+      "lekcija": 3,
+      "tezina": 1,
+      "pitanje": "Da li talas prenosi supstancu?",
+      "odgovori": [
+        "Ne, prenosi energiju",
+        "Da, uvek",
+        "Samo vodu",
+        "Samo vazduh"
+      ],
+      "zanimljivost": "Navijači na stadionu prave „meksički talas“ – svaki ustane i sedne, a talas „putuje“ tribinama.",
+      "rec": "meksički"
+    },
+    {
+      "lekcija": 3,
+      "tezina": 2,
+      "pitanje": "Šta su seizmički talasi?",
+      "odgovori": [
+        "Talasi zemljotresa koji se šire kroz Zemlju",
+        "Morski talasi",
+        "Zvuk muzike",
+        "Svetlost"
+      ],
+      "zanimljivost": "Postoje P-talasi (brži, longitudinalni) i S-talasi (sporiji, transverzalni).",
+      "rec": "seizmički"
+    },
+    {
+      "lekcija": 3,
+      "tezina": 3,
+      "pitanje": "Šta je cunami?",
+      "odgovori": [
+        "Ogroman morski talas izazvan podmorskim zemljotresom",
+        "Vetar",
+        "Plima",
+        "Vrtlog"
+      ],
+      "zanimljivost": "Na otvorenom moru cunami putuje brzinom aviona i jedva se primeti, a kod obale naraste desetinama metara.",
+      "rec": "cunami"
+    },
+    {
+      "lekcija": 3,
+      "tezina": 2,
+      "pitanje": "Šta je talasni breg, a šta dolja?",
+      "odgovori": [
+        "Najviša i najniža tačka talasa",
+        "Početak i kraj talasa",
+        "Brzina i masa",
+        "Isto"
+      ],
+      "zanimljivost": "Visina od dolje do brega dvostruka je amplituda.",
+      "rec": "breg"
+    },
+    {
+      "lekcija": 3,
+      "tezina": 1,
+      "pitanje": "Kada bacimo kamen u vodu, kakvi se talasi šire?",
+      "odgovori": [
+        "Kružni",
+        "Pravougaoni",
+        "Trouglasti",
+        "Nikakvi"
+      ],
+      "zanimljivost": "Kad bacimo dva kamena, talasi se seku i „pojačavaju ili slabe“ – to je interferencija.",
+      "rec": "krug"
+    },
+    {
+      "lekcija": 3,
+      "tezina": 3,
+      "pitanje": "Šta se dešava sa talasima kada naiđu na prepreku sa otvorom?",
+      "odgovori": [
+        "Savijaju se iza prepreke (difrakcija)",
+        "Nestaju",
+        "Ubrzavaju",
+        "Pretvaraju se u svetlost"
+      ],
+      "zanimljivost": "Zato čujemo razgovor iza ugla, iako ne vidimo ljude koji pričaju.",
+      "rec": "difrakcija"
+    },
+    {
+      "lekcija": 3,
+      "tezina": 2,
+      "pitanje": "Šta je potrebno mehaničkom talasu da se prostire?",
+      "odgovori": [
+        "Sredina (čvrsta, tečna ili gasovita)",
+        "Vakuum",
+        "Svetlost",
+        "Magnet"
+      ],
+      "zanimljivost": "U svemiru nema vazduha – eksplozije u filmovima o svemiru zapravo bi bile tihe.",
+      "rec": "sredina"
+    },
+    {
+      "lekcija": 3,
+      "tezina": 2,
+      "pitanje": "Koliko je period talasa frekvencije 50 Hz?",
+      "odgovori": [
+        "0,02 s",
+        "50 s",
+        "0,5 s",
+        "2 s"
+      ],
+      "zanimljivost": "Struja u našim utičnicama menja smer sa frekvencijom 50 Hz.",
+      "rec": "period"
+    },
+    {
+      "lekcija": 3,
+      "tezina": 3,
+      "pitanje": "Kako delfini i kitovi komuniciraju na velikim udaljenostima?",
+      "odgovori": [
+        "Zvučnim talasima kroz vodu",
+        "Svetlošću",
+        "Mirisom",
+        "Ne komuniciraju"
+      ],
+      "zanimljivost": "Pesma grbavog kita može da se čuje stotinama kilometara daleko.",
+      "rec": "kit"
+    },
+    {
+      "lekcija": 4,
+      "tezina": 1,
+      "pitanje": "Kolika je brzina zvuka u vazduhu?",
+      "odgovori": [
+        "Oko 340 m/s",
+        "Oko 3.000 km/s",
+        "Oko 34 m/s",
+        "Oko 300.000 km/s"
+      ],
+      "zanimljivost": "Avion koji leti brže od zvuka stvara „probijanje zvučnog zida“ – gromki prasak.",
+      "rec": "zvuk"
+    },
+    {
+      "lekcija": 4,
+      "tezina": 2,
+      "pitanje": "U kojoj sredini se zvuk prostire najbrže?",
+      "odgovori": [
+        "U čvrstim telima",
+        "U vazduhu",
+        "U vakuumu",
+        "U gasu helijuma najsporije"
+      ],
+      "zanimljivost": "U čeliku zvuk putuje oko 5.000 m/s – zato su Indijanci prislanjali uvo na šine da čuju voz.",
+      "rec": "čelik"
+    },
+    {
+      "lekcija": 4,
+      "tezina": 2,
+      "pitanje": "Koji opseg frekvencija čuje čovek?",
+      "odgovori": [
+        "Od oko 20 Hz do 20.000 Hz",
+        "Od 1 do 10 Hz",
+        "Iznad 100.000 Hz",
+        "Svaki zvuk"
+      ],
+      "zanimljivost": "Sa godinama gubimo sluh za najviše tonove – deca čuju tonove koje odrasli ne čuju.",
+      "rec": "sluh"
+    },
+    {
+      "lekcija": 4,
+      "tezina": 2,
+      "pitanje": "Šta je ultrazvuk?",
+      "odgovori": [
+        "Zvuk frekvencije iznad 20.000 Hz",
+        "Veoma glasan zvuk",
+        "Zvuk ispod 20 Hz",
+        "Zvuk u svemiru"
+      ],
+      "zanimljivost": "Slepi miševi i delfini koriste ultrazvuk za eholokaciju, a lekari za preglede.",
+      "rec": "ultrazvuk"
+    },
+    {
+      "lekcija": 4,
+      "tezina": 3,
+      "pitanje": "Šta je infrazvuk?",
+      "odgovori": [
+        "Zvuk frekvencije ispod 20 Hz",
+        "Zvuk iznad 20.000 Hz",
+        "Tišina",
+        "Odjek"
+      ],
+      "zanimljivost": "Slonovi komuniciraju infrazvukom na udaljenostima i do 10 km.",
+      "rec": "infrazvuk"
+    },
+    {
+      "lekcija": 4,
+      "tezina": 2,
+      "pitanje": "Od čega zavisi visina tona?",
+      "odgovori": [
+        "Od frekvencije",
+        "Od amplitude",
+        "Od brzine zvuka",
+        "Od boje instrumenta"
+      ],
+      "zanimljivost": "Što je veća frekvencija, ton je viši – zato su kratke žice i male frule visokog tona.",
+      "rec": "visina",
+      "mediji": {
+        "vrsta": "melodija",
+        "note": "C4 E4 G4 C5",
+        "tempo": 100,
+        "instrument": "klavir"
+      }
+    },
+    {
+      "lekcija": 4,
+      "tezina": 2,
+      "pitanje": "Od čega zavisi jačina (glasnoća) zvuka?",
+      "odgovori": [
+        "Od amplitude oscilovanja",
+        "Od frekvencije",
+        "Od boje",
+        "Od temperature samo"
+      ],
+      "zanimljivost": "Glasnoća se izražava u decibelima (dB) – šapat je oko 30 dB, a rok koncert preko 110 dB.",
+      "rec": "decibel"
+    },
+    {
+      "lekcija": 4,
+      "tezina": 3,
+      "pitanje": "Šta je boja zvuka (timbar)?",
+      "odgovori": [
+        "Osobina po kojoj razlikujemo isti ton odsviran na različitim instrumentima",
+        "Visina tona",
+        "Glasnoća",
+        "Brzina zvuka"
+      ],
+      "zanimljivost": "Ton „la“ na violini i klaviru ima istu frekvenciju, ali drugačije „zvuči“ zbog alikvotnih tonova.",
+      "rec": "boja",
+      "mediji": {
+        "vrsta": "melodija",
+        "note": "A4/2",
+        "tempo": 80,
+        "instrument": "violina"
+      }
+    },
+    {
+      "lekcija": 4,
+      "tezina": 2,
+      "pitanje": "Šta je odjek (eho)?",
+      "odgovori": [
+        "Zvuk odbijen od prepreke koji čujemo odvojeno",
+        "Najjači zvuk",
+        "Infrazvuk",
+        "Muzika"
+      ],
+      "zanimljivost": "Da bismo čuli odvojen odjek, prepreka mora biti udaljena bar oko 17 m.",
+      "rec": "eho"
+    },
+    {
+      "lekcija": 4,
+      "tezina": 3,
+      "pitanje": "Grom smo čuli 5 s posle munje. Koliko je munja daleko?",
+      "odgovori": [
+        "Oko 1,7 km",
+        "Oko 5 km",
+        "Oko 340 m",
+        "Oko 17 km"
+      ],
+      "zanimljivost": "Svetlost stiže praktično trenutno, a zvuk prelazi oko 340 m u sekundi.",
+      "rec": "grom",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "⚡…5s…🔊"
+      }
+    },
+    {
+      "lekcija": 4,
+      "tezina": 1,
+      "pitanje": "Da li se zvuk prostire kroz vakuum?",
+      "odgovori": [
+        "Ne",
+        "Da",
+        "Samo glasan zvuk",
+        "Samo noću"
+      ],
+      "zanimljivost": "U ogledu sa zvoncetom pod staklenim zvonom, zvonce se sve slabije čuje kako se izvlači vazduh.",
+      "rec": "vakuum"
+    },
+    {
+      "lekcija": 4,
+      "tezina": 2,
+      "pitanje": "Šta je sonar?",
+      "odgovori": [
+        "Uređaj koji pomoću odbijenog zvuka otkriva predmete pod vodom",
+        "Vrsta radio-stanice",
+        "Teleskop",
+        "Radar za avione"
+      ],
+      "zanimljivost": "Brodovi sonarom mere dubinu i traže jata riba.",
+      "rec": "sonar"
+    },
+    {
+      "lekcija": 4,
+      "tezina": 3,
+      "pitanje": "Kako se zove promena visine tona kada nam se izvor zvuka približava ili udaljava?",
+      "odgovori": [
+        "Doplerov efekat",
+        "Rezonancija",
+        "Eho",
+        "Difrakcija"
+      ],
+      "zanimljivost": "Sirena hitne pomoći zvuči više dok prilazi, a niže kad prođe pored nas.",
+      "rec": "dopler"
+    },
+    {
+      "lekcija": 4,
+      "tezina": 2,
+      "pitanje": "Koliki je nivo buke koji već posle dužeg vremena oštećuje sluh?",
+      "odgovori": [
+        "Iznad oko 85 dB",
+        "Iznad 10 dB",
+        "Iznad 30 dB",
+        "Bilo koji zvuk"
+      ],
+      "zanimljivost": "Slušalice na najjačem tonu mogu dati i preko 100 dB.",
+      "rec": "buka"
+    },
+    {
+      "lekcija": 4,
+      "tezina": 1,
+      "pitanje": "Kojim organom čujemo zvuk?",
+      "odgovori": [
+        "Uhom",
+        "Okom",
+        "Nosom",
+        "Jezikom"
+      ],
+      "zanimljivost": "Zvučni talasi pomeraju bubnu opnu, a tri sitne koščice prenose oscilacije u unutrašnje uho.",
+      "rec": "uho"
+    },
+    {
+      "lekcija": 5,
+      "tezina": 1,
+      "pitanje": "Kako se svetlost prostire u homogenoj sredini?",
+      "odgovori": [
+        "Pravolinijski",
+        "U krug",
+        "Cik-cak",
+        "Ne prostire se"
+      ],
+      "zanimljivost": "Zato predmeti bacaju oštru senku – svetlost ne „skreće“ iza ugla.",
+      "rec": "prava"
+    },
+    {
+      "lekcija": 5,
+      "tezina": 2,
+      "pitanje": "Kako nastaje senka?",
+      "odgovori": [
+        "Neprovidno telo zaustavlja svetlost, pa iza njega ostaje neosvetljen prostor",
+        "Svetlost se odbija",
+        "Svetlost se prelama",
+        "Senka svetli"
+      ],
+      "zanimljivost": "Senka je duža ujutru i uveče, kada je Sunce nisko.",
+      "rec": "senka",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "🔦🧍⬛"
+      }
+    },
+    {
+      "lekcija": 5,
+      "tezina": 2,
+      "pitanje": "Šta je polusenka?",
+      "odgovori": [
+        "Delimično osvetljen prostor oko senke, kod velikog izvora svetlosti",
+        "Najtamniji deo senke",
+        "Odraz u ogledalu",
+        "Svetlost Meseca"
+      ],
+      "zanimljivost": "Kod pomračenja Sunca ljudi u polusenci vide delimično pomračenje.",
+      "rec": "polusenka"
+    },
+    {
+      "lekcija": 5,
+      "tezina": 3,
+      "pitanje": "Šta nastaje kada Zemlja dođe između Sunca i Meseca?",
+      "odgovori": [
+        "Pomračenje Meseca",
+        "Pomračenje Sunca",
+        "Mlađak",
+        "Duga"
+      ],
+      "zanimljivost": "Pri pomračenju Mesec često postane crvenkast – „krvavi Mesec“ – jer ga obasjava svetlost prelomljena kroz Zemljinu atmosferu.",
+      "rec": "pomračenje",
+      "mediji": {
+        "vrsta": "planeta",
+        "ime": "mesec"
+      }
+    },
+    {
+      "lekcija": 5,
+      "tezina": 2,
+      "pitanje": "Šta su prirodni izvori svetlosti?",
+      "odgovori": [
+        "Sunce, zvezde, munja, svitac",
+        "Ogledalo i Mesec",
+        "Sijalica",
+        "Lampa"
+      ],
+      "zanimljivost": "Mesec nije izvor svetlosti – on samo odbija svetlost Sunca.",
+      "rec": "izvor"
+    },
+    {
+      "lekcija": 5,
+      "tezina": 1,
+      "pitanje": "Šta je svetlosni zrak?",
+      "odgovori": [
+        "Linija koja pokazuje pravac prostiranja svetlosti",
+        "Sunčev deo",
+        "Vrsta lampe",
+        "Senka"
+      ],
+      "zanimljivost": "Laserski snop je najbliži „pravom“ svetlosnom zraku.",
+      "rec": "zrak"
+    },
+    {
+      "lekcija": 5,
+      "tezina": 2,
+      "pitanje": "Šta je camera obscura (mračna komora)?",
+      "odgovori": [
+        "Kutija sa malim otvorom u kojoj nastaje obrnut lik predmeta",
+        "Fotografski film",
+        "Ogledalo",
+        "Mikroskop"
+      ],
+      "zanimljivost": "Princip mračne komore poznavali su još stari Kinezi i Aristotel – to je preteča fotoaparata.",
+      "rec": "komora"
+    },
+    {
+      "lekcija": 5,
+      "tezina": 3,
+      "pitanje": "Zašto lik u mračnoj komori izlazi obrnut?",
+      "odgovori": [
+        "Zraci se ukrštaju u malom otvoru jer se prostiru pravolinijski",
+        "Zbog prelamanja",
+        "Zbog ogledala",
+        "Zbog boje"
+      ],
+      "zanimljivost": "Isto se dešava u našem oku – lik na mrežnjači je obrnut, a mozak ga „ispravi“.",
+      "rec": "obrnut"
+    },
+    {
+      "lekcija": 5,
+      "tezina": 2,
+      "pitanje": "Šta je providno telo?",
+      "odgovori": [
+        "Telo koje propušta svetlost tako da se kroz njega vidi",
+        "Telo koje ne propušta svetlost",
+        "Ogledalo",
+        "Crno telo"
+      ],
+      "zanimljivost": "Mlečno staklo je prozračno – propušta svetlost, ali kroz njega ne vidimo jasno.",
+      "rec": "staklo"
+    },
+    {
+      "lekcija": 5,
+      "tezina": 1,
+      "pitanje": "Kada nastaje pomračenje Sunca?",
+      "odgovori": [
+        "Kada Mesec dođe između Sunca i Zemlje",
+        "Kada Zemlja dođe između Sunca i Meseca",
+        "Noću",
+        "Zimi"
+      ],
+      "zanimljivost": "Mesec je oko 400 puta manji od Sunca, ali i oko 400 puta bliži – zato ga može tačno prekriti.",
+      "rec": "sunce",
+      "mediji": {
+        "vrsta": "planeta",
+        "ime": "sunce"
+      }
+    },
+    {
+      "lekcija": 5,
+      "tezina": 2,
+      "pitanje": "Zašto vidimo predmete koji nisu izvori svetlosti?",
+      "odgovori": [
+        "Odbijaju svetlost koja dolazi u naše oko",
+        "Sami svetle",
+        "Zbog toplote",
+        "Zbog zvuka"
+      ],
+      "zanimljivost": "U potpunom mraku ne vidimo ništa – bez svetlosti nema vida.",
+      "rec": "odbijanje"
+    },
+    {
+      "lekcija": 5,
+      "tezina": 3,
+      "pitanje": "Koja jedinica za rastojanje se koristi za udaljenosti do zvezda, a nije jedinica za vreme?",
+      "odgovori": [
+        "Svetlosna godina",
+        "Kilogram",
+        "Herc",
+        "Vat"
+      ],
+      "zanimljivost": "Svetlosna godina je oko 9.500 milijardi kilometara.",
+      "rec": "godina"
+    },
+    {
+      "lekcija": 5,
+      "tezina": 2,
+      "pitanje": "Šta je optika?",
+      "odgovori": [
+        "Deo fizike koji proučava svetlost",
+        "Nauka o zvuku",
+        "Nauka o toploti",
+        "Nauka o kretanju"
+      ],
+      "zanimljivost": "Reč optika dolazi od grčke reči za vid (optikos).",
+      "rec": "optika"
+    },
+    {
+      "lekcija": 5,
+      "tezina": 1,
+      "pitanje": "Šta od navedenog nije izvor svetlosti?",
+      "odgovori": [
+        "Mesec",
+        "Sunce",
+        "Sveća",
+        "Svitac"
+      ],
+      "zanimljivost": "Mesec odbija samo oko 12% sunčeve svetlosti koja na njega padne – sjajan je kao tamni asfalt.",
+      "rec": "mesec"
+    },
+    {
+      "lekcija": 5,
+      "tezina": 2,
+      "pitanje": "Zašto se kroz dugi uski kanal (cev) vidi samo ono što je pravo ispred?",
+      "odgovori": [
+        "Svetlost se prostire pravolinijski",
+        "Cev je mračna",
+        "Zbog prelamanja",
+        "Zbog vazduha"
+      ],
+      "zanimljivost": "Zidari i geometri koriste zategnut kanap ili laser da proveravaju pravce.",
+      "rec": "cev"
+    },
+    {
+      "lekcija": 6,
+      "tezina": 1,
+      "pitanje": "Šta tvrdi zakon odbijanja svetlosti?",
+      "odgovori": [
+        "Upadni ugao jednak je odbojnom uglu",
+        "Svetlost se uvek odbija nazad",
+        "Upadni ugao je dvostruko veći",
+        "Svetlost se ne odbija"
+      ],
+      "zanimljivost": "Bilijarska kugla se od ivice stola odbija po istom pravilu.",
+      "rec": "ugao",
+      "mediji": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 240 150' xmlns='http://www.w3.org/2000/svg'><line x1='10' y1='130' x2='230' y2='130' stroke='#aaa' stroke-width='6'/><line x1='120' y1='130' x2='120' y2='20' stroke='#fff' stroke-dasharray='6 5' stroke-width='2'/><line x1='40' y1='40' x2='120' y2='130' stroke='#ffd166' stroke-width='4'/><line x1='120' y1='130' x2='200' y2='40' stroke='#ffd166' stroke-width='4'/><text x='88' y='80' fill='#fff' font-size='16'>α</text><text x='140' y='80' fill='#fff' font-size='16'>β</text></svg>"
+      }
+    },
+    {
+      "lekcija": 6,
+      "tezina": 2,
+      "pitanje": "Kakav je lik u ravnom ogledalu?",
+      "odgovori": [
+        "Imaginaran, uspravan, iste veličine, simetričan",
+        "Realan i obrnut",
+        "Uvećan",
+        "Umanjen"
+      ],
+      "zanimljivost": "Zato je na kolima hitne pomoći natpis napisan „u ogledalu“ – da ga vozač ispred pročita u retrovizoru.",
+      "rec": "ogledalo",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "🪞🚑"
+      }
+    },
+    {
+      "lekcija": 6,
+      "tezina": 2,
+      "pitanje": "Koliko je lik udaljen od ravnog ogledala?",
+      "odgovori": [
+        "Isto koliko i predmet",
+        "Dvostruko više",
+        "Upola manje",
+        "Na ogledalu"
+      ],
+      "zanimljivost": "Ako stojiš 2 m od ogledala, tvoj lik je 4 m od tebe.",
+      "rec": "rastojanje"
+    },
+    {
+      "lekcija": 6,
+      "tezina": 3,
+      "pitanje": "Kolika je najmanja visina ogledala na zidu da bi se čovek video ceo?",
+      "odgovori": [
+        "Polovina visine čoveka",
+        "Cela visina",
+        "Četvrtina visine",
+        "Dvostruka visina"
+      ],
+      "zanimljivost": "I to ne zavisi od toga koliko daleko stojiš od ogledala!",
+      "rec": "polovina"
+    },
+    {
+      "lekcija": 6,
+      "tezina": 2,
+      "pitanje": "Šta je difuzno odbijanje?",
+      "odgovori": [
+        "Odbijanje svetlosti od hrapave površine u svim pravcima",
+        "Odbijanje od ogledala",
+        "Prelamanje",
+        "Upijanje"
+      ],
+      "zanimljivost": "Zbog difuznog odbijanja vidimo zidove i papir iz svakog ugla sobe.",
+      "rec": "difuzno"
+    },
+    {
+      "lekcija": 6,
+      "tezina": 1,
+      "pitanje": "Šta je upadni ugao?",
+      "odgovori": [
+        "Ugao između upadnog zraka i normale na površinu",
+        "Ugao između dva ogledala",
+        "Ugao pod kojim se vidi Sunce",
+        "Ugao senke"
+      ],
+      "zanimljivost": "Normala je zamišljena prava normalna na površinu ogledala.",
+      "rec": "normala"
+    },
+    {
+      "lekcija": 6,
+      "tezina": 3,
+      "pitanje": "Koliko likova predmeta vidimo između dva ogledala postavljena pod uglom od 90°?",
+      "odgovori": [
+        "Tri",
+        "Dva",
+        "Jedan",
+        "Beskonačno mnogo"
+      ],
+      "zanimljivost": "Ako su ogledala paralelna, likova je teorijski beskonačno mnogo – kao u liftu sa ogledalima.",
+      "rec": "likovi"
+    },
+    {
+      "lekcija": 6,
+      "tezina": 2,
+      "pitanje": "Na kom principu radi periskop?",
+      "odgovori": [
+        "Dva ravna ogledala (ili prizme) odbijaju svetlost",
+        "Prelamanje kroz sočivo",
+        "Zvuk",
+        "Magnet"
+      ],
+      "zanimljivost": "Podmornice periskopom osmatraju površinu dok su pod vodom.",
+      "rec": "periskop"
+    },
+    {
+      "lekcija": 6,
+      "tezina": 2,
+      "pitanje": "Zašto vozači imaju retrovizore?",
+      "odgovori": [
+        "Da odbijenom svetlošću vide šta je iza njih",
+        "Za ukras",
+        "Da sprečavaju sunce",
+        "Za radio"
+      ],
+      "zanimljivost": "Bočni retrovizori često su blago ispupčeni – vide širi prostor, ali predmeti izgledaju dalje nego što jesu.",
+      "rec": "retrovizor"
+    },
+    {
+      "lekcija": 6,
+      "tezina": 1,
+      "pitanje": "Koja strana lika se menja u ravnom ogledalu?",
+      "odgovori": [
+        "Leva i desna",
+        "Gore i dole",
+        "Nijedna",
+        "Napred i nazad sve"
+      ],
+      "zanimljivost": "Kada podigneš desnu ruku, lik u ogledalu podiže svoju „levu“.",
+      "rec": "simetrija"
+    },
+    {
+      "lekcija": 6,
+      "tezina": 3,
+      "pitanje": "Kada se svetlosni zrak odbija nazad istim putem?",
+      "odgovori": [
+        "Kada pada normalno na ogledalo",
+        "Kada pada pod 45°",
+        "Nikad",
+        "Kada je ogledalo krivo"
+      ],
+      "zanimljivost": "Reflektori na biciklima i saobraćajnim znacima vraćaju svetlost ka izvoru iz bilo kog ugla.",
+      "rec": "reflektor"
+    },
+    {
+      "lekcija": 6,
+      "tezina": 2,
+      "pitanje": "Kako se koristi odbijanje svetlosti u solarnim elektranama?",
+      "odgovori": [
+        "Ogledala usmeravaju sunčevu svetlost na jedno mesto",
+        "Ne koristi se",
+        "Za hlađenje",
+        "Za zvuk"
+      ],
+      "zanimljivost": "U nekim solarnim elektranama hiljade ogledala greju toranj do više stotina stepeni.",
+      "rec": "solarna"
+    },
+    {
+      "lekcija": 6,
+      "tezina": 1,
+      "pitanje": "Kakav lik daje ravno ogledalo – uvećan ili iste veličine?",
+      "odgovori": [
+        "Iste veličine",
+        "Uvećan",
+        "Umanjen",
+        "Nema lika"
+      ],
+      "zanimljivost": "Ogledala „uvećanja“ za šminkanje nisu ravna, već udubljena.",
+      "rec": "veličina"
+    },
+    {
+      "lekcija": 6,
+      "tezina": 3,
+      "pitanje": "Ako se ogledalo zaokrene za 10°, za koliko se zaokrene odbijeni zrak?",
+      "odgovori": [
+        "Za 20°",
+        "Za 10°",
+        "Za 5°",
+        "Ne zaokrene se"
+      ],
+      "zanimljivost": "Ovo svojstvo koristi se u preciznim instrumentima koji mere sitne zaokrete.",
+      "rec": "zaokret"
+    },
+    {
+      "lekcija": 6,
+      "tezina": 2,
+      "pitanje": "Od čega se pravi ogledalo?",
+      "odgovori": [
+        "Staklo sa tankim slojem metala (srebro ili aluminijum)",
+        "Samo staklo",
+        "Drvo",
+        "Papir"
+      ],
+      "zanimljivost": "Stari Egipćani i Rimljani koristili su ogledala od ulaštene bronze.",
+      "rec": "srebro"
+    },
+    {
+      "lekcija": 7,
+      "tezina": 1,
+      "pitanje": "Kakvo je udubljeno (konkavno) ogledalo?",
+      "odgovori": [
+        "Ogledalo čija je sjajna površina udubljena kao unutrašnjost kašike",
+        "Ravno ogledalo",
+        "Ispupčeno ogledalo",
+        "Ogledalo bez stakla"
+      ],
+      "zanimljivost": "U kašici vidiš svoj lik naopako – ona je kao malo udubljeno ogledalo.",
+      "rec": "kašika",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "🥄"
+      }
+    },
+    {
+      "lekcija": 7,
+      "tezina": 2,
+      "pitanje": "Gde se seku odbijeni zraci paralelni sa osom kod udubljenog ogledala?",
+      "odgovori": [
+        "U žiži",
+        "U centru krivine",
+        "Nigde",
+        "Na ogledalu"
+      ],
+      "zanimljivost": "Arhimed je, prema legendi, ogledalima palio rimske brodove – fokusirajući sunčevu svetlost.",
+      "rec": "žiža"
+    },
+    {
+      "lekcija": 7,
+      "tezina": 2,
+      "pitanje": "Gde se koristi ispupčeno (konveksno) ogledalo?",
+      "odgovori": [
+        "Na raskrsnicama i u prodavnicama – za pregled velikog prostora",
+        "U teleskopima",
+        "Za paljenje vatre",
+        "Za uvećanje lica"
+      ],
+      "zanimljivost": "Ispupčeno ogledalo uvek daje umanjen, uspravan i imaginaran lik.",
+      "rec": "raskrsnica"
+    },
+    {
+      "lekcija": 7,
+      "tezina": 3,
+      "pitanje": "Kakav lik daje udubljeno ogledalo kada je predmet između žiže i ogledala?",
+      "odgovori": [
+        "Uvećan, uspravan i imaginaran",
+        "Umanjen i obrnut",
+        "Iste veličine",
+        "Nema lika"
+      ],
+      "zanimljivost": "Zato kozmetička ogledala uvećavaju lice kad smo blizu njih.",
+      "rec": "uvećan"
+    },
+    {
+      "lekcija": 7,
+      "tezina": 2,
+      "pitanje": "Šta je žižna daljina?",
+      "odgovori": [
+        "Rastojanje od ogledala do žiže",
+        "Prečnik ogledala",
+        "Visina predmeta",
+        "Rastojanje do Sunca"
+      ],
+      "zanimljivost": "Žižna daljina sfernog ogledala jednaka je polovini poluprečnika krivine.",
+      "rec": "žiža"
+    },
+    {
+      "lekcija": 7,
+      "tezina": 2,
+      "pitanje": "Gde se koristi udubljeno ogledalo?",
+      "odgovori": [
+        "U farovima automobila i baterijskim lampama",
+        "U retrovizorima na kamionima",
+        "Na raskrsnicama",
+        "U kupatilu za celu figuru"
+      ],
+      "zanimljivost": "Sijalica u žiži udubljenog ogledala daje paralelan snop svetlosti.",
+      "rec": "far"
+    },
+    {
+      "lekcija": 7,
+      "tezina": 3,
+      "pitanje": "Kakav lik daje udubljeno ogledalo kada je predmet vrlo daleko?",
+      "odgovori": [
+        "Realan, obrnut i umanjen, blizu žiže",
+        "Uvećan i uspravan",
+        "Imaginaran",
+        "Isti kao predmet"
+      ],
+      "zanimljivost": "Na tom principu radi teleskop reflektor – prvi je napravio Njutn 1668.",
+      "rec": "teleskop"
+    },
+    {
+      "lekcija": 7,
+      "tezina": 1,
+      "pitanje": "Koje ogledalo daje uvek umanjen i uspravan lik?",
+      "odgovori": [
+        "Ispupčeno",
+        "Udubljeno",
+        "Ravno",
+        "Nijedno"
+      ],
+      "zanimljivost": "U ispupčenoj zadnjoj strani kašike vidiš sebe umanjeno i uspravno.",
+      "rec": "ispupčeno"
+    },
+    {
+      "lekcija": 7,
+      "tezina": 2,
+      "pitanje": "Šta je realan lik?",
+      "odgovori": [
+        "Lik koji se može dobiti na zaklonu (ekranu)",
+        "Lik koji se vidi samo u ogledalu",
+        "Lik u snu",
+        "Svaki lik"
+      ],
+      "zanimljivost": "Projektor u bioskopu daje realan lik na platnu.",
+      "rec": "realan"
+    },
+    {
+      "lekcija": 7,
+      "tezina": 3,
+      "pitanje": "Koliki je ugao pod kojim se odbija zrak koji prolazi kroz žižu udubljenog ogledala?",
+      "odgovori": [
+        "Odbija se paralelno sa optičkom osom",
+        "Vraća se kroz žižu",
+        "Prolazi kroz centar",
+        "Ne odbija se"
+      ],
+      "zanimljivost": "Ovo je jedan od tri karakteristična zraka za konstrukciju lika.",
+      "rec": "zraci"
+    },
+    {
+      "lekcija": 7,
+      "tezina": 2,
+      "pitanje": "Šta je centar krivine sfernog ogledala?",
+      "odgovori": [
+        "Središte sfere čiji je deo ogledalo",
+        "Sredina ogledala",
+        "Žiža",
+        "Ivica ogledala"
+      ],
+      "zanimljivost": "Zrak koji prolazi kroz centar krivine odbija se nazad istim putem.",
+      "rec": "centar"
+    },
+    {
+      "lekcija": 7,
+      "tezina": 1,
+      "pitanje": "Kakvo je ogledalo na zadnjem delu kašike?",
+      "odgovori": [
+        "Ispupčeno",
+        "Udubljeno",
+        "Ravno",
+        "Nije ogledalo"
+      ],
+      "zanimljivost": "Unutrašnja strana kašike je udubljeno ogledalo – lik je obrnut.",
+      "rec": "kašika"
+    },
+    {
+      "lekcija": 7,
+      "tezina": 3,
+      "pitanje": "Kakav lik daje udubljeno ogledalo kada je predmet tačno u žiži?",
+      "odgovori": [
+        "Nema lika – zraci posle odbijanja idu paralelno",
+        "Uvećan",
+        "Umanjen",
+        "Iste veličine"
+      ],
+      "zanimljivost": "Zato se izvor svetlosti u reflektoru postavlja tačno u žižu.",
+      "rec": "beskonačno"
+    },
+    {
+      "lekcija": 7,
+      "tezina": 2,
+      "pitanje": "Gde se u medicini koristi udubljeno ogledalo?",
+      "odgovori": [
+        "Stomatolog i lekar za uvo-grlo-nos ga koriste za osvetljavanje i uvećanje",
+        "Na rendgenu",
+        "U termometru",
+        "Nigde"
+      ],
+      "zanimljivost": "Stomatološko ogledalce je malo i okruglo – često ravno ili blago udubljeno.",
+      "rec": "stomatolog"
+    },
+    {
+      "lekcija": 7,
+      "tezina": 2,
+      "pitanje": "Koji je najveći teleskop sa ogledalom poslat u svemir?",
+      "odgovori": [
+        "Svemirski teleskop „Džejms Veb“",
+        "Habl",
+        "Galilejev teleskop",
+        "Kepler"
+      ],
+      "zanimljivost": "Ogledalo Džejms Veba ima prečnik 6,5 m i složeno je od 18 pozlaćenih šestougaonih segmenata.",
+      "rec": "veb"
+    },
+    {
+      "lekcija": 8,
+      "tezina": 1,
+      "pitanje": "Kolika je brzina svetlosti u vakuumu?",
+      "odgovori": [
+        "Oko 300.000 km/s",
+        "Oko 340 m/s",
+        "Oko 3.000 km/h",
+        "Beskonačna"
+      ],
+      "zanimljivost": "Svetlost bi za jednu sekundu obišla Zemlju oko 7,5 puta.",
+      "rec": "svetlost"
+    },
+    {
+      "lekcija": 8,
+      "tezina": 2,
+      "pitanje": "Koliko otprilike treba svetlosti od Sunca do Zemlje?",
+      "odgovori": [
+        "Oko 8 minuta",
+        "Oko 1 sekunde",
+        "Oko 1 sata",
+        "Oko 1 dana"
+      ],
+      "zanimljivost": "Zato Sunce vidimo onakvo kakvo je bilo pre 8 minuta.",
+      "rec": "sunce",
+      "mediji": {
+        "vrsta": "planeta",
+        "ime": "sunce"
+      }
+    },
+    {
+      "lekcija": 8,
+      "tezina": 3,
+      "pitanje": "Koji danski astronom je 1676. procenio brzinu svetlosti posmatrajući pomračenja Jupiterovog meseca Io?",
+      "odgovori": [
+        "Ole Remer",
+        "Galilej",
+        "Njutn",
+        "Ajnštajn"
+      ],
+      "zanimljivost": "Remer je primetio da pomračenja meseca Io kasne kada je Jupiter dalje od Zemlje.",
+      "rec": "remer",
+      "mediji": {
+        "vrsta": "planeta",
+        "ime": "jupiter"
+      }
+    },
+    {
+      "lekcija": 8,
+      "tezina": 2,
+      "pitanje": "Da li je brzina svetlosti u vodi veća ili manja nego u vazduhu?",
+      "odgovori": [
+        "Manja",
+        "Veća",
+        "Ista",
+        "Svetlost ne prolazi kroz vodu"
+      ],
+      "zanimljivost": "U vodi svetlost putuje oko 225.000 km/s, a u dijamantu oko 124.000 km/s.",
+      "rec": "voda"
+    },
+    {
+      "lekcija": 8,
+      "tezina": 1,
+      "pitanje": "Šta je brže – svetlost ili zvuk?",
+      "odgovori": [
+        "Svetlost, mnogo puta",
+        "Zvuk",
+        "Isti su",
+        "Zavisi od dana"
+      ],
+      "zanimljivost": "Svetlost je oko 900.000 puta brža od zvuka u vazduhu.",
+      "rec": "brže"
+    },
+    {
+      "lekcija": 8,
+      "tezina": 2,
+      "pitanje": "Koliko svetlosti treba od Meseca do Zemlje?",
+      "odgovori": [
+        "Nešto više od 1 sekunde",
+        "8 minuta",
+        "1 sat",
+        "1 dan"
+      ],
+      "zanimljivost": "Kada su astronauti razgovarali sa Zemljom, odgovori su kasnili oko 2,5 sekunde – tamo i nazad.",
+      "rec": "mesec",
+      "mediji": {
+        "vrsta": "planeta",
+        "ime": "mesec"
+      }
+    },
+    {
+      "lekcija": 8,
+      "tezina": 3,
+      "pitanje": "Zašto se kaže da kada gledamo daleke zvezde, gledamo u prošlost?",
+      "odgovori": [
+        "Svetlost od njih putuje godinama, pa ih vidimo kakve su bile kad je svetlost krenula",
+        "Zvezde su stare",
+        "Teleskopi su spori",
+        "Nije tačno"
+      ],
+      "zanimljivost": "Neke zvezde koje vidimo možda su odavno prestale da postoje.",
+      "rec": "prošlost"
+    },
+    {
+      "lekcija": 8,
+      "tezina": 2,
+      "pitanje": "Šta je indeks prelamanja?",
+      "odgovori": [
+        "Broj koji pokazuje koliko je puta brzina svetlosti u vakuumu veća nego u datoj sredini",
+        "Ugao odbijanja",
+        "Boja svetlosti",
+        "Jačina svetlosti"
+      ],
+      "zanimljivost": "Dijamant ima veliki indeks prelamanja (oko 2,4) – zato toliko „blista“.",
+      "rec": "indeks"
+    },
+    {
+      "lekcija": 8,
+      "tezina": 1,
+      "pitanje": "Može li išta da se kreće brže od svetlosti u vakuumu?",
+      "odgovori": [
+        "Ne, prema teoriji relativnosti",
+        "Da, zvuk",
+        "Da, avion",
+        "Da, raketa"
+      ],
+      "zanimljivost": "Brzina svetlosti je najveća moguća brzina prenošenja signala u svemiru.",
+      "rec": "ajnštajn"
+    },
+    {
+      "lekcija": 8,
+      "tezina": 3,
+      "pitanje": "Kako je Fizo 1849. izmerio brzinu svetlosti na Zemlji?",
+      "odgovori": [
+        "Pomoću nazubljenog točka i ogledala udaljenog nekoliko kilometara",
+        "Pomoću Jupitera",
+        "Pomoću Meseca",
+        "Satom"
+      ],
+      "zanimljivost": "Rezultat mu je bio oko 313.000 km/s – vrlo blizu prave vrednosti.",
+      "rec": "fizo"
+    },
+    {
+      "lekcija": 8,
+      "tezina": 2,
+      "pitanje": "Koliko je otprilike Sunce udaljeno u svetlosnim minutima od Neptuna?",
+      "odgovori": [
+        "Oko 4 sata svetlosti",
+        "8 minuta",
+        "1 sekunda",
+        "1 godina"
+      ],
+      "zanimljivost": "Sonde kod Neptuna dobijaju komande sa Zemlje sa višečasovnim zakašnjenjem.",
+      "rec": "neptun",
+      "mediji": {
+        "vrsta": "planeta",
+        "ime": "neptun"
+      }
+    },
+    {
+      "lekcija": 8,
+      "tezina": 2,
+      "pitanje": "Zašto munju vidimo pre nego što čujemo grom?",
+      "odgovori": [
+        "Svetlost putuje mnogo brže od zvuka",
+        "Grom je slabiji",
+        "Oči su brže od ušiju",
+        "Munja je bliže"
+      ],
+      "zanimljivost": "Isto se vidi na stadionu – udarac lopte vidimo pre nego što čujemo zvuk.",
+      "rec": "grom"
+    },
+    {
+      "lekcija": 8,
+      "tezina": 1,
+      "pitanje": "Kolika je svetlosna sekunda u kilometrima?",
+      "odgovori": [
+        "Oko 300.000 km",
+        "Oko 300 km",
+        "Oko 3 km",
+        "Oko 3 miliona km"
+      ],
+      "zanimljivost": "To je skoro rastojanje od Zemlje do Meseca (384.000 km).",
+      "rec": "sekunda"
+    },
+    {
+      "lekcija": 8,
+      "tezina": 3,
+      "pitanje": "Šta je optičko vlakno?",
+      "odgovori": [
+        "Tanka staklena nit kroz koju svetlost putuje odbijajući se, za prenos podataka",
+        "Žica za struju",
+        "Vrsta sijalice",
+        "Ogledalo"
+      ],
+      "zanimljivost": "Internet između kontinenata ide kroz optičke kablove po dnu okeana.",
+      "rec": "vlakno"
+    },
+    {
+      "lekcija": 8,
+      "tezina": 2,
+      "pitanje": "Zašto astronomi mere udaljenosti u svetlosnim godinama?",
+      "odgovori": [
+        "Rastojanja su ogromna, kilometri bi bili nepraktični",
+        "Zbog navike",
+        "Zato što je lakše meriti godine",
+        "Zbog boje zvezda"
+      ],
+      "zanimljivost": "Najbliža velika galaksija, Andromeda, udaljena je oko 2,5 miliona svetlosnih godina.",
+      "rec": "andromeda"
+    },
+    {
+      "lekcija": 9,
+      "tezina": 1,
+      "pitanje": "Šta je prelamanje svetlosti?",
+      "odgovori": [
+        "Promena pravca svetlosti pri prelasku iz jedne sredine u drugu",
+        "Odbijanje od ogledala",
+        "Upijanje svetlosti",
+        "Rasipanje u boje uvek"
+      ],
+      "zanimljivost": "Zbog prelamanja olovka u čaši vode izgleda „slomljena“.",
+      "rec": "prelamanje",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "✏️🥛"
+      }
+    },
+    {
+      "lekcija": 9,
+      "tezina": 2,
+      "pitanje": "Kako se prelama zrak pri prelasku iz vazduha u vodu?",
+      "odgovori": [
+        "Približava se normali",
+        "Udaljava se od normale",
+        "Ne menja pravac",
+        "Vraća se nazad"
+      ],
+      "zanimljivost": "Zato ribolovac mora da cilja ispod mesta gde „vidi“ ribu.",
+      "rec": "normala"
+    },
+    {
+      "lekcija": 9,
+      "tezina": 2,
+      "pitanje": "Šta je totalna refleksija?",
+      "odgovori": [
+        "Potpuno odbijanje svetlosti na granici sa ređom sredinom kada je upadni ugao veći od graničnog",
+        "Odbijanje od ogledala",
+        "Prelamanje u prizmi",
+        "Upijanje svetlosti"
+      ],
+      "zanimljivost": "Na totalnoj refleksiji rade optička vlakna i blistanje dijamanta.",
+      "rec": "refleksija"
+    },
+    {
+      "lekcija": 9,
+      "tezina": 3,
+      "pitanje": "Kada može nastati totalna refleksija?",
+      "odgovori": [
+        "Kada svetlost prelazi iz optički gušće u ređu sredinu",
+        "Iz ređe u gušću",
+        "Uvek",
+        "Nikad"
+      ],
+      "zanimljivost": "Ronilac koji gleda naviše vidi površinu vode kao ogledalo, osim u krugu iznad sebe.",
+      "rec": "uslov"
+    },
+    {
+      "lekcija": 9,
+      "tezina": 2,
+      "pitanje": "Šta je fatamorgana (privid)?",
+      "odgovori": [
+        "Lik nastao prelamanjem svetlosti kroz slojeve vazduha različite temperature",
+        "Halucinacija",
+        "Duga",
+        "Odbijanje od ogledala"
+      ],
+      "zanimljivost": "Leti na vrelom asfaltu vidimo „baru vode“ koje nema – to je odraz neba.",
+      "rec": "fatamorgana",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "🏜️💧❓"
+      }
+    },
+    {
+      "lekcija": 9,
+      "tezina": 2,
+      "pitanje": "Zašto bazen izgleda plići nego što jeste?",
+      "odgovori": [
+        "Zbog prelamanja svetlosti na površini vode",
+        "Zbog boje pločica",
+        "Zbog hlora",
+        "Zbog odbijanja"
+      ],
+      "zanimljivost": "Bazen dubok 2 m izgleda kao da je dubok oko 1,5 m.",
+      "rec": "bazen"
+    },
+    {
+      "lekcija": 9,
+      "tezina": 3,
+      "pitanje": "Koliki je granični ugao za prelaz iz vode u vazduh?",
+      "odgovori": [
+        "Oko 49°",
+        "Oko 90°",
+        "Oko 10°",
+        "Oko 0°"
+      ],
+      "zanimljivost": "Za dijamant je granični ugao samo oko 24°, pa svetlost u njemu „luta“ i izlazi kao iskre.",
+      "rec": "granični"
+    },
+    {
+      "lekcija": 9,
+      "tezina": 1,
+      "pitanje": "Šta je normala u tački upada?",
+      "odgovori": [
+        "Prava normalna na graničnu površinu",
+        "Svetlosni zrak",
+        "Ogledalo",
+        "Senka"
+      ],
+      "zanimljivost": "Uglovi u optici se uvek mere od normale, a ne od površine.",
+      "rec": "normala"
+    },
+    {
+      "lekcija": 9,
+      "tezina": 2,
+      "pitanje": "Zašto zvezde trepere?",
+      "odgovori": [
+        "Zbog prelamanja svetlosti u nemirnoj atmosferi",
+        "Zvezde se pale i gase",
+        "Zbog oblaka",
+        "Zbog Meseca"
+      ],
+      "zanimljivost": "Zato su teleskopi postavljeni na visoke planine ili u svemir.",
+      "rec": "treperenje"
+    },
+    {
+      "lekcija": 9,
+      "tezina": 3,
+      "pitanje": "Zašto Sunce na zalasku izgleda spljošteno?",
+      "odgovori": [
+        "Svetlost donjeg dela više se prelama u atmosferi",
+        "Sunce je zaista spljošteno",
+        "Zbog oblaka",
+        "Zbog brzine Zemlje"
+      ],
+      "zanimljivost": "Zbog prelamanja Sunce vidimo i nekoliko minuta posle stvarnog zalaska.",
+      "rec": "zalazak"
+    },
+    {
+      "lekcija": 9,
+      "tezina": 1,
+      "pitanje": "Šta se dešava sa olovkom u čaši vode?",
+      "odgovori": [
+        "Izgleda kao da je prelomljena",
+        "Postaje veća",
+        "Nestaje",
+        "Menja boju"
+      ],
+      "zanimljivost": "Pojava se zove prividni lom – ali olovka je, naravno, cela.",
+      "rec": "olovka"
+    },
+    {
+      "lekcija": 9,
+      "tezina": 2,
+      "pitanje": "Kako se zove sredina u kojoj se svetlost kreće sporije?",
+      "odgovori": [
+        "Optički gušća",
+        "Optički ređa",
+        "Vakuum",
+        "Prazna"
+      ],
+      "zanimljivost": "Voda je optički gušća od vazduha, a staklo od vode.",
+      "rec": "gušća"
+    },
+    {
+      "lekcija": 9,
+      "tezina": 3,
+      "pitanje": "Zašto dijamant blista više od stakla?",
+      "odgovori": [
+        "Ima veliki indeks prelamanja i mali granični ugao pa svetlost doživi mnogo totalnih refleksija",
+        "Ima lampicu",
+        "Hladniji je",
+        "Teži je"
+      ],
+      "zanimljivost": "Brušenje dijamanta sa 57–58 ploha napravljeno je baš da iskoristi totalnu refleksiju.",
+      "rec": "dijamant",
+      "mediji": {
+        "vrsta": "molekul",
+        "ime": "dijamant"
+      }
+    },
+    {
+      "lekcija": 9,
+      "tezina": 2,
+      "pitanje": "Kako lekari gledaju unutrašnjost želuca bez operacije?",
+      "odgovori": [
+        "Endoskopom sa optičkim vlaknima",
+        "Rendgenom samo",
+        "Stetoskopom",
+        "Termometrom"
+      ],
+      "zanimljivost": "Svetlost kroz vlakno ide „krivudavim“ putem zahvaljujući totalnoj refleksiji.",
+      "rec": "endoskop"
+    },
+    {
+      "lekcija": 9,
+      "tezina": 1,
+      "pitanje": "Kada svetlost prelazi iz vazduha u staklo, šta se dešava sa brzinom?",
+      "odgovori": [
+        "Smanjuje se",
+        "Povećava se",
+        "Ne menja se",
+        "Postaje nula"
+      ],
+      "zanimljivost": "Upravo promena brzine izaziva skretanje zraka.",
+      "rec": "brzina"
+    },
+    {
+      "lekcija": 10,
+      "tezina": 2,
+      "pitanje": "Šta se dešava sa belom svetlošću kada prođe kroz prizmu?",
+      "odgovori": [
+        "Razlaže se na boje (spektar)",
+        "Postaje crvena",
+        "Nestaje",
+        "Postaje jača"
+      ],
+      "zanimljivost": "Njutn je 1666. prvi pokazao da je bela svetlost mešavina svih boja.",
+      "rec": "spektar",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "⬜🔺🌈"
+      }
+    },
+    {
+      "lekcija": 10,
+      "tezina": 2,
+      "pitanje": "Koja boja se najviše prelama u prizmi?",
+      "odgovori": [
+        "Ljubičasta",
+        "Crvena",
+        "Zelena",
+        "Žuta"
+      ],
+      "zanimljivost": "Crvena se najmanje prelama – zato je na vrhu duge.",
+      "rec": "ljubičasta"
+    },
+    {
+      "lekcija": 10,
+      "tezina": 1,
+      "pitanje": "Kako nastaje duga?",
+      "odgovori": [
+        "Prelamanjem i odbijanjem sunčeve svetlosti u kapima kiše",
+        "Odbijanjem od oblaka",
+        "Od boje neba",
+        "Od Meseca"
+      ],
+      "zanimljivost": "Dugu vidimo kad nam je Sunce iza leđa, a kiša ispred nas.",
+      "rec": "duga",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "🌦️🌈"
+      }
+    },
+    {
+      "lekcija": 10,
+      "tezina": 2,
+      "pitanje": "Kakav je zrak posle prolaska kroz planparalelnu ploču (prozorsko staklo)?",
+      "odgovori": [
+        "Paralelan upadnom, samo malo pomeren",
+        "Skrenut za 90°",
+        "Vraćen nazad",
+        "Raspršen"
+      ],
+      "zanimljivost": "Zato kroz prozor vidimo predmete gotovo neizmenjene.",
+      "rec": "ploča"
+    },
+    {
+      "lekcija": 10,
+      "tezina": 3,
+      "pitanje": "Koji je redosled boja u spektru, od najmanje do najviše prelomljene?",
+      "odgovori": [
+        "Crvena, narandžasta, žuta, zelena, plava, indigo, ljubičasta",
+        "Ljubičasta pa crvena",
+        "Žuta, crvena, plava",
+        "Zelena, žuta, crvena"
+      ],
+      "zanimljivost": "Mnemotehnika na engleskom je „ROY G BIV“ – po prvim slovima boja.",
+      "rec": "boje"
+    },
+    {
+      "lekcija": 10,
+      "tezina": 2,
+      "pitanje": "Šta je disperzija svetlosti?",
+      "odgovori": [
+        "Razlaganje svetlosti na boje jer se različite boje različito prelamaju",
+        "Odbijanje",
+        "Upijanje",
+        "Totalna refleksija"
+      ],
+      "zanimljivost": "Disperzija stvara i šarene ivice na naočarima i jeftinim sočivima.",
+      "rec": "disperzija"
+    },
+    {
+      "lekcija": 10,
+      "tezina": 3,
+      "pitanje": "Zašto je nebo plavo?",
+      "odgovori": [
+        "Atmosfera više rasipa plavu svetlost nego crvenu",
+        "Odbija more",
+        "Zbog vodene pare",
+        "Zbog ozona"
+      ],
+      "zanimljivost": "Na Marsu je nebo danju crvenkasto, a zalazak sunca plavičast!",
+      "rec": "nebo"
+    },
+    {
+      "lekcija": 10,
+      "tezina": 2,
+      "pitanje": "Šta je dvostruka duga?",
+      "odgovori": [
+        "Druga, slabija duga sa obrnutim redosledom boja",
+        "Dve iste duge",
+        "Duga u ogledalu",
+        "Ne postoji"
+      ],
+      "zanimljivost": "Druga duga nastaje sa dva odbijanja u kapi – zato je bleđa i obrnuta.",
+      "rec": "dvostruka"
+    },
+    {
+      "lekcija": 10,
+      "tezina": 1,
+      "pitanje": "Koliko boja tradicionalno navodimo u dugi?",
+      "odgovori": [
+        "Sedam",
+        "Tri",
+        "Pet",
+        "Deset"
+      ],
+      "zanimljivost": "Njutn je izabrao sedam boja po uzoru na sedam tonova u muzičkoj skali.",
+      "rec": "sedam"
+    },
+    {
+      "lekcija": 10,
+      "tezina": 3,
+      "pitanje": "Kako se zove prizma koja zrak vraća za 180° pomoću totalne refleksije?",
+      "odgovori": [
+        "Prizma sa pravim uglom (reflektujuća prizma)",
+        "Rasipna prizma",
+        "Sočivo",
+        "Ogledalo"
+      ],
+      "zanimljivost": "Takve prizme su u dvogledima – zato su dvogledi kraći od cevi teleskopa.",
+      "rec": "dvogled"
+    },
+    {
+      "lekcija": 10,
+      "tezina": 2,
+      "pitanje": "Zašto zalazak sunca ima crveno-narandžaste boje?",
+      "odgovori": [
+        "Svetlost prelazi dug put kroz atmosferu, pa se plava rasprši",
+        "Sunce se ohladi",
+        "Zbog oblaka uvek",
+        "Zbog mora"
+      ],
+      "zanimljivost": "Posle velikih vulkanskih erupcija zalasci su godinama bili neobično crveni.",
+      "rec": "zalazak"
+    },
+    {
+      "lekcija": 10,
+      "tezina": 1,
+      "pitanje": "Šta je spektar?",
+      "odgovori": [
+        "Niz boja dobijenih razlaganjem svetlosti",
+        "Vrsta lampe",
+        "Senka",
+        "Ogledalo"
+      ],
+      "zanimljivost": "Iz spektra zvezde astronomi saznaju od čega je ona sastavljena.",
+      "rec": "spektar"
+    },
+    {
+      "lekcija": 10,
+      "tezina": 3,
+      "pitanje": "Šta je infracrveno zračenje?",
+      "odgovori": [
+        "Nevidljivo zračenje iza crvenog dela spektra, koje osećamo kao toplotu",
+        "Vidljiva ljubičasta svetlost",
+        "Zvuk",
+        "Rendgen"
+      ],
+      "zanimljivost": "Otkrio ga je Vilijam Heršel 1800. godine termometrom postavljenim iza crvene boje spektra.",
+      "rec": "heršel"
+    },
+    {
+      "lekcija": 10,
+      "tezina": 2,
+      "pitanje": "Šta je ultraljubičasto zračenje?",
+      "odgovori": [
+        "Nevidljivo zračenje iza ljubičastog dela spektra",
+        "Crvena svetlost",
+        "Zvuk",
+        "Infracrveno"
+      ],
+      "zanimljivost": "UV zračenje izaziva preplanulost, ali i opekotine – zato koristimo kremu sa zaštitnim faktorom.",
+      "rec": "krema"
+    },
+    {
+      "lekcija": 10,
+      "tezina": 2,
+      "pitanje": "Zašto list izgleda zeleno?",
+      "odgovori": [
+        "Odbija zelenu svetlost, a ostale boje upija",
+        "Proizvodi zeleno svetlo",
+        "Upija samo zelenu",
+        "Zbog vode"
+      ],
+      "zanimljivost": "Hlorofil upija crvenu i plavu svetlost koje koristi za fotosintezu.",
+      "rec": "zelena"
+    },
+    {
+      "lekcija": 11,
+      "tezina": 1,
+      "pitanje": "Kakvo je sabirno sočivo?",
+      "odgovori": [
+        "Deblje u sredini nego na ivicama",
+        "Tanje u sredini",
+        "Ravno",
+        "Šuplje"
+      ],
+      "zanimljivost": "Lupa je sabirno sočivo – može da „skupi“ sunčeve zrake u tačku i zapali papir.",
+      "rec": "lupa",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "🔍☀️🔥"
+      }
+    },
+    {
+      "lekcija": 11,
+      "tezina": 2,
+      "pitanje": "Kakvo je rasipno sočivo?",
+      "odgovori": [
+        "Tanje u sredini nego na ivicama",
+        "Deblje u sredini",
+        "Ravno sa obe strane",
+        "Uvek okruglo kao lopta"
+      ],
+      "zanimljivost": "Rasipna sočiva nose kratkovide osobe.",
+      "rec": "rasipno"
+    },
+    {
+      "lekcija": 11,
+      "tezina": 2,
+      "pitanje": "Šta je žiža sabirnog sočiva?",
+      "odgovori": [
+        "Tačka u kojoj se seku zraci paralelni optičkoj osi posle prelamanja",
+        "Centar sočiva",
+        "Ivica sočiva",
+        "Mesto gde stoji predmet"
+      ],
+      "zanimljivost": "Kod rasipnog sočiva žiža je imaginarna – u njoj se seku produžeci zraka.",
+      "rec": "žiža"
+    },
+    {
+      "lekcija": 11,
+      "tezina": 3,
+      "pitanje": "Šta je jačina (optička moć) sočiva?",
+      "odgovori": [
+        "Recipročna vrednost žižne daljine, izražena u dioptrijama",
+        "Debljina sočiva",
+        "Masa sočiva",
+        "Prečnik sočiva"
+      ],
+      "zanimljivost": "Naočare od +2 dioptrije imaju žižnu daljinu 0,5 m.",
+      "rec": "dioptrija",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "ω = 1 / f"
+      }
+    },
+    {
+      "lekcija": 11,
+      "tezina": 2,
+      "pitanje": "Kakav lik daje lupa?",
+      "odgovori": [
+        "Uvećan, uspravan i imaginaran",
+        "Umanjen i obrnut",
+        "Realan i uvećan",
+        "Nema lika"
+      ],
+      "zanimljivost": "Predmet se mora staviti između lupe i njene žiže.",
+      "rec": "uvećan"
+    },
+    {
+      "lekcija": 11,
+      "tezina": 3,
+      "pitanje": "Kakav lik daje sabirno sočivo kada je predmet daleko iza dvostruke žižne daljine?",
+      "odgovori": [
+        "Realan, obrnut, umanjen",
+        "Uvećan i uspravan",
+        "Imaginaran",
+        "Iste veličine"
+      ],
+      "zanimljivost": "Tako radi i fotoaparat – na senzoru nastaje mali obrnut lik.",
+      "rec": "fotoaparat"
+    },
+    {
+      "lekcija": 11,
+      "tezina": 2,
+      "pitanje": "Kakav lik daje rasipno sočivo?",
+      "odgovori": [
+        "Uvek umanjen, uspravan i imaginaran",
+        "Uvek uvećan",
+        "Realan i obrnut",
+        "Nikakav"
+      ],
+      "zanimljivost": "Špijunka na vratima koristi rasipno sočivo – vidi se širok prostor, ali umanjeno.",
+      "rec": "špijunka"
+    },
+    {
+      "lekcija": 11,
+      "tezina": 1,
+      "pitanje": "Koje sočivo je u našem oku?",
+      "odgovori": [
+        "Sabirno",
+        "Rasipno",
+        "Ravno staklo",
+        "Ogledalo"
+      ],
+      "zanimljivost": "Očno sočivo menja svoju debljinu da bi izoštrilo lik – ta sposobnost zove se akomodacija.",
+      "rec": "oko",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "👁️"
+      }
+    },
+    {
+      "lekcija": 11,
+      "tezina": 2,
+      "pitanje": "Šta je optički centar sočiva?",
+      "odgovori": [
+        "Tačka kroz koju zrak prolazi bez skretanja",
+        "Žiža",
+        "Ivica",
+        "Najdeblji deo uvek je žiža"
+      ],
+      "zanimljivost": "Zrak kroz optički centar je jedan od tri karakteristična zraka za konstrukciju lika.",
+      "rec": "centar"
+    },
+    {
+      "lekcija": 11,
+      "tezina": 3,
+      "pitanje": "Kakav lik daje sabirno sočivo kada je predmet između žiže i dvostruke žižne daljine?",
+      "odgovori": [
+        "Realan, obrnut i uvećan",
+        "Umanjen i uspravan",
+        "Imaginaran",
+        "Iste veličine"
+      ],
+      "zanimljivost": "Na ovom principu radi projektor – mali slajd daje veliki lik na platnu.",
+      "rec": "projektor"
+    },
+    {
+      "lekcija": 11,
+      "tezina": 2,
+      "pitanje": "Kakve naočare nose dalekovide osobe?",
+      "odgovori": [
+        "Sa sabirnim sočivima",
+        "Sa rasipnim sočivima",
+        "Sa ravnim staklima",
+        "Bez sočiva"
+      ],
+      "zanimljivost": "Plus (+) dioptrija znači sabirno, a minus (−) rasipno sočivo.",
+      "rec": "plus"
+    },
+    {
+      "lekcija": 11,
+      "tezina": 1,
+      "pitanje": "Gde se koriste sočiva?",
+      "odgovori": [
+        "U naočarima, fotoaparatima, mikroskopima i teleskopima",
+        "Samo u igračkama",
+        "U frižideru",
+        "U termometru"
+      ],
+      "zanimljivost": "Prve naočare pojavile su se u Italiji krajem 13. veka.",
+      "rec": "naočare"
+    },
+    {
+      "lekcija": 11,
+      "tezina": 3,
+      "pitanje": "Sočivo ima žižnu daljinu 25 cm. Kolika mu je jačina?",
+      "odgovori": [
+        "4 dioptrije",
+        "25 dioptrija",
+        "0,25 dioptrije",
+        "40 dioptrija"
+      ],
+      "zanimljivost": "ω = 1/0,25 m = 4 m⁻¹ = 4 dioptrije.",
+      "rec": "računanje"
+    },
+    {
+      "lekcija": 11,
+      "tezina": 2,
+      "pitanje": "Šta je realan lik kod sočiva?",
+      "odgovori": [
+        "Lik koji nastaje presekom zraka i može se uhvatiti na zaklonu",
+        "Lik koji vidimo samo kroz sočivo",
+        "Lik u ogledalu",
+        "Senka"
+      ],
+      "zanimljivost": "Na zidu sobe sabirnim sočivom možeš uhvatiti obrnut lik prozora.",
+      "rec": "zaklon"
+    },
+    {
+      "lekcija": 11,
+      "tezina": 2,
+      "pitanje": "Šta se dešava sa kapi vode na listu po sunčanom danu?",
+      "odgovori": [
+        "Ponaša se kao malo sabirno sočivo",
+        "Hladi list",
+        "Ništa",
+        "Odbija svetlost samo"
+      ],
+      "zanimljivost": "Popularno verovanje da kapi zalivanja „spaljuju“ listove uglavnom ne važi – kap retko skupi dovoljno svetlosti.",
+      "rec": "kap"
+    },
+    {
+      "lekcija": 12,
+      "tezina": 1,
+      "pitanje": "Koji instrument služi za posmatranje sitnih predmeta?",
+      "odgovori": [
+        "Mikroskop",
+        "Teleskop",
+        "Periskop",
+        "Barometar"
+      ],
+      "zanimljivost": "Mikroskop ima dva sabirna sistema sočiva – objektiv i okular.",
+      "rec": "mikroskop",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "🔬"
+      }
+    },
+    {
+      "lekcija": 12,
+      "tezina": 2,
+      "pitanje": "Kako se računa ukupno uvećanje mikroskopa?",
+      "odgovori": [
+        "Množenjem uvećanja objektiva i okulara",
+        "Sabiranjem",
+        "Deljenjem",
+        "Oduzimanjem"
+      ],
+      "zanimljivost": "Okular 10× i objektiv 40× daju uvećanje 400×.",
+      "rec": "uvećanje"
+    },
+    {
+      "lekcija": 12,
+      "tezina": 2,
+      "pitanje": "Čemu služi teleskop?",
+      "odgovori": [
+        "Posmatranju udaljenih predmeta, npr. nebeskih tela",
+        "Posmatranju bakterija",
+        "Merenju temperature",
+        "Merenju pritiska"
+      ],
+      "zanimljivost": "Galilej je 1609. napravio teleskop koji je uvećavao oko 20 puta.",
+      "rec": "teleskop",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "🔭🌙"
+      }
+    },
+    {
+      "lekcija": 12,
+      "tezina": 3,
+      "pitanje": "Koja je razlika između teleskopa refraktora i reflektora?",
+      "odgovori": [
+        "Refraktor koristi sočiva, a reflektor ogledala",
+        "Refraktor koristi ogledala",
+        "Nema razlike",
+        "Reflektor je za zvuk"
+      ],
+      "zanimljivost": "Najveći teleskopi danas su reflektori – ogledala mogu biti mnogo veća od sočiva.",
+      "rec": "reflektor"
+    },
+    {
+      "lekcija": 12,
+      "tezina": 2,
+      "pitanje": "Kako radi fotoaparat?",
+      "odgovori": [
+        "Objektiv (sabirno sočivo) daje realan, umanjen lik na senzoru",
+        "Ogledalom stvara uvećan lik",
+        "Ne koristi svetlost",
+        "Zvukom"
+      ],
+      "zanimljivost": "Prva sačuvana fotografija napravljena je 1826/1827. i snimanje je trajalo više sati.",
+      "rec": "fotoaparat"
+    },
+    {
+      "lekcija": 12,
+      "tezina": 1,
+      "pitanje": "Koji instrument ima dva teleskopa – za oba oka?",
+      "odgovori": [
+        "Dvogled",
+        "Mikroskop",
+        "Periskop",
+        "Lupa"
+      ],
+      "zanimljivost": "Dvogled zahvaljujući prizmama može da bude kratak, a da ipak dobro uvećava.",
+      "rec": "dvogled"
+    },
+    {
+      "lekcija": 12,
+      "tezina": 2,
+      "pitanje": "Šta je akomodacija oka?",
+      "odgovori": [
+        "Sposobnost oka da menja debljinu sočiva i izoštri lik na različitim udaljenostima",
+        "Menjanje boje oka",
+        "Treptanje",
+        "Suzenje"
+      ],
+      "zanimljivost": "Sa godinama sočivo gubi elastičnost, pa stariji ljudi teško čitaju izbliza.",
+      "rec": "akomodacija"
+    },
+    {
+      "lekcija": 12,
+      "tezina": 3,
+      "pitanje": "Koji instrument je dao prve slike ćelija i mikroorganizama?",
+      "odgovori": [
+        "Mikroskop",
+        "Teleskop",
+        "Spektroskop",
+        "Barometar"
+      ],
+      "zanimljivost": "Levenhuk je svojim mikroskopima sa jednim sočivom postizao uvećanje i do 270 puta.",
+      "rec": "levenhuk"
+    },
+    {
+      "lekcija": 12,
+      "tezina": 2,
+      "pitanje": "Šta je projektor?",
+      "odgovori": [
+        "Uređaj koji daje uvećan realan lik na platnu",
+        "Uređaj koji umanjuje",
+        "Ogledalo",
+        "Kamera za snimanje"
+      ],
+      "zanimljivost": "Prvi bioskopski projektor napravili su braća Limijer 1895. u Parizu.",
+      "rec": "limijer"
+    },
+    {
+      "lekcija": 12,
+      "tezina": 2,
+      "pitanje": "Kako se koriguje kratkovidost?",
+      "odgovori": [
+        "Rasipnim sočivima",
+        "Sabirnim sočivima",
+        "Prizmama",
+        "Ogledalima"
+      ],
+      "zanimljivost": "Kratkovidost se danas može ispraviti i laserskom operacijom rožnjače.",
+      "rec": "miopija"
+    },
+    {
+      "lekcija": 12,
+      "tezina": 1,
+      "pitanje": "Na šta liči ljudsko oko po građi?",
+      "odgovori": [
+        "Na fotoaparat",
+        "Na mikrofon",
+        "Na termometar",
+        "Na sat"
+      ],
+      "zanimljivost": "Zenica je kao otvor objektiva, a mrežnjača kao senzor.",
+      "rec": "kamera"
+    },
+    {
+      "lekcija": 12,
+      "tezina": 3,
+      "pitanje": "Koji svemirski teleskop je 1990. lansiran i nosi ime astronoma koji je otkrio širenje svemira?",
+      "odgovori": [
+        "Habl",
+        "Galilej",
+        "Kepler",
+        "Džejms Veb"
+      ],
+      "zanimljivost": "Habl je otkrio da se galaksije udaljavaju – svemir se širi.",
+      "rec": "habl"
+    },
+    {
+      "lekcija": 12,
+      "tezina": 2,
+      "pitanje": "Zašto astronomi grade velike teleskope?",
+      "odgovori": [
+        "Veći objektiv skuplja više svetlosti i vidi slabije i dalje objekte",
+        "Da budu lepši",
+        "Da budu teži",
+        "Da ih ne ukradu"
+      ],
+      "zanimljivost": "Ekstremno veliki teleskop u Čileu imaće ogledalo prečnika 39 m.",
+      "rec": "ogledalo"
+    },
+    {
+      "lekcija": 12,
+      "tezina": 3,
+      "pitanje": "Šta je elektronski mikroskop?",
+      "odgovori": [
+        "Mikroskop koji umesto svetlosti koristi snop elektrona i daje mnogo veća uvećanja",
+        "Mikroskop sa baterijom",
+        "Digitalni fotoaparat",
+        "Teleskop"
+      ],
+      "zanimljivost": "Elektronskim mikroskopom mogu se videti i virusi, pa čak i pojedinačni atomi.",
+      "rec": "elektron"
+    },
+    {
+      "lekcija": 12,
+      "tezina": 1,
+      "pitanje": "Šta ima lupa?",
+      "odgovori": [
+        "Jedno sabirno sočivo",
+        "Rasipno sočivo",
+        "Ogledalo",
+        "Prizmu"
+      ],
+      "zanimljivost": "Šerlok Holms je postao simbol lupe u detektivskim pričama.",
+      "rec": "lupa"
+    },
+    {
+      "lekcija": 13,
+      "tezina": 1,
+      "pitanje": "Koje vrste naelektrisanja postoje?",
+      "odgovori": [
+        "Pozitivno i negativno",
+        "Samo pozitivno",
+        "Samo negativno",
+        "Severno i južno"
+      ],
+      "zanimljivost": "Imena „pozitivno“ i „negativno“ smislio je Bendžamin Frenklin.",
+      "rec": "plus"
+    },
+    {
+      "lekcija": 13,
+      "tezina": 2,
+      "pitanje": "Šta se dešava sa telom koje primi elektrone?",
+      "odgovori": [
+        "Naelektriše se negativno",
+        "Naelektriše se pozitivno",
+        "Ostaje neutralno",
+        "Postaje magnet"
+      ],
+      "zanimljivost": "Pri trljanju balona o kosu elektroni prelaze sa kose na balon.",
+      "rec": "elektroni"
+    },
+    {
+      "lekcija": 13,
+      "tezina": 2,
+      "pitanje": "Kakvo je naelektrisanje elektrona?",
+      "odgovori": [
+        "Negativno",
+        "Pozitivno",
+        "Neutralno",
+        "Promenljivo"
+      ],
+      "zanimljivost": "Naelektrisanje elektrona je najmanje slobodno naelektrisanje u prirodi – elementarno naelektrisanje.",
+      "rec": "elektron"
+    },
+    {
+      "lekcija": 13,
+      "tezina": 2,
+      "pitanje": "Koja čestica u atomu nema naelektrisanje?",
+      "odgovori": [
+        "Neutron",
+        "Proton",
+        "Elektron",
+        "Jon"
+      ],
+      "zanimljivost": "Neutron je otkrio Džejms Čedvik 1932. godine.",
+      "rec": "neutron"
+    },
+    {
+      "lekcija": 13,
+      "tezina": 3,
+      "pitanje": "Koja je jedinica za količinu naelektrisanja?",
+      "odgovori": [
+        "Kulon (C)",
+        "Amper",
+        "Volt",
+        "Om"
+      ],
+      "zanimljivost": "Jedan kulon je ogromno naelektrisanje – oko 6 milijardi milijardi elektrona.",
+      "rec": "kulon"
+    },
+    {
+      "lekcija": 13,
+      "tezina": 2,
+      "pitanje": "Zašto je atom u celini neutralan?",
+      "odgovori": [
+        "Ima jednak broj protona i elektrona",
+        "Nema čestica",
+        "Ima samo neutrone",
+        "Uvek je pozitivan"
+      ],
+      "zanimljivost": "Kada atom izgubi ili primi elektron, postaje jon.",
+      "rec": "jon"
+    },
+    {
+      "lekcija": 13,
+      "tezina": 1,
+      "pitanje": "Kako se tela naelektrišu?",
+      "odgovori": [
+        "Trljanjem, dodirom ili uticajem (indukcijom)",
+        "Samo hlađenjem",
+        "Samo bojenjem",
+        "Ne mogu se naelektrisati"
+      ],
+      "zanimljivost": "Najčešće se naelektrisanje vidi zimi, kada je vazduh suv.",
+      "rec": "trljanje"
+    },
+    {
+      "lekcija": 13,
+      "tezina": 2,
+      "pitanje": "Šta je elektroskop?",
+      "odgovori": [
+        "Uređaj za utvrđivanje da li je telo naelektrisano",
+        "Merač struje",
+        "Merač napona",
+        "Vrsta mikroskopa"
+      ],
+      "zanimljivost": "Listići elektroskopa se razmaknu jer se istoimeno naelektrisani odbijaju.",
+      "rec": "elektroskop"
+    },
+    {
+      "lekcija": 13,
+      "tezina": 3,
+      "pitanje": "Šta je naelektrisanje indukcijom (uticajem)?",
+      "odgovori": [
+        "Razdvajanje naelektrisanja u telu zbog blizine naelektrisanog tela, bez dodira",
+        "Naelektrisanje trljanjem",
+        "Naelektrisanje kroz žicu",
+        "Gubitak naelektrisanja"
+      ],
+      "zanimljivost": "Zato naelektrisan češalj privlači i neutralne papiriće.",
+      "rec": "indukcija"
+    },
+    {
+      "lekcija": 13,
+      "tezina": 2,
+      "pitanje": "Šta su provodnici?",
+      "odgovori": [
+        "Materijali kroz koje se naelektrisanje lako kreće (metali)",
+        "Materijali koji ne propuštaju naelektrisanje",
+        "Samo staklo",
+        "Samo plastika"
+      ],
+      "zanimljivost": "Najbolji provodnik je srebro, pa bakar – zato su električne žice bakarne.",
+      "rec": "provodnik"
+    },
+    {
+      "lekcija": 13,
+      "tezina": 2,
+      "pitanje": "Šta su izolatori?",
+      "odgovori": [
+        "Materijali kroz koje se naelektrisanje teško kreće",
+        "Metali",
+        "Morska voda",
+        "Zlato"
+      ],
+      "zanimljivost": "Plastika oko žica je izolator – štiti nas od strujnog udara.",
+      "rec": "izolator"
+    },
+    {
+      "lekcija": 13,
+      "tezina": 1,
+      "pitanje": "Šta se dešava kada približimo dva negativno naelektrisana tela?",
+      "odgovori": [
+        "Odbijaju se",
+        "Privlače se",
+        "Spajaju se",
+        "Ništa"
+      ],
+      "zanimljivost": "Istoimena naelektrisanja se odbijaju, raznoimena privlače.",
+      "rec": "odbijanje"
+    },
+    {
+      "lekcija": 13,
+      "tezina": 3,
+      "pitanje": "Šta tvrdi zakon održanja naelektrisanja?",
+      "odgovori": [
+        "Ukupno naelektrisanje izolovanog sistema se ne menja",
+        "Naelektrisanje nestaje",
+        "Naelektrisanje se stvara trljanjem",
+        "Naelektrisanje raste"
+      ],
+      "zanimljivost": "Pri trljanju se naelektrisanje ne stvara – samo prelazi sa jednog tela na drugo.",
+      "rec": "održanje"
+    },
+    {
+      "lekcija": 13,
+      "tezina": 2,
+      "pitanje": "Šta je uzemljenje?",
+      "odgovori": [
+        "Povezivanje uređaja sa zemljom da bi naelektrisanje bezbedno oteklo",
+        "Zakopavanje uređaja",
+        "Hlađenje uređaja",
+        "Bojenje žica"
+      ],
+      "zanimljivost": "Treći, „zaštitni“ kontakt u šuko utičnici služi upravo uzemljenju.",
+      "rec": "uzemljenje"
+    },
+    {
+      "lekcija": 13,
+      "tezina": 1,
+      "pitanje": "Šta je u atomu pozitivno naelektrisano?",
+      "odgovori": [
+        "Protoni u jezgru",
+        "Elektroni",
+        "Neutroni",
+        "Cela elektronska ljuska"
+      ],
+      "zanimljivost": "Broj protona određuje koji je element – vodonik ima 1, a uranijum 92.",
+      "rec": "proton"
+    },
+    {
+      "lekcija": 14,
+      "tezina": 1,
+      "pitanje": "Kako deluju raznoimena naelektrisanja?",
+      "odgovori": [
+        "Privlače se",
+        "Odbijaju se",
+        "Ne deluju",
+        "Poništavaju se uvek"
+      ],
+      "zanimljivost": "Ova sila drži elektrone uz jezgro atoma.",
+      "rec": "privlačenje"
+    },
+    {
+      "lekcija": 14,
+      "tezina": 2,
+      "pitanje": "Ko je formulisao zakon o sili između naelektrisanja?",
+      "odgovori": [
+        "Šarl Kulon",
+        "Isak Njutn",
+        "Andre Amper",
+        "Majkl Faradej"
+      ],
+      "zanimljivost": "Kulon je silu merio torzionom vagom – vrlo osetljivim uvrtanjem tanke žice.",
+      "rec": "kulon"
+    },
+    {
+      "lekcija": 14,
+      "tezina": 2,
+      "pitanje": "Kako električna sila zavisi od rastojanja?",
+      "odgovori": [
+        "Opada sa kvadratom rastojanja",
+        "Raste sa rastojanjem",
+        "Ne zavisi",
+        "Opada linearno"
+      ],
+      "zanimljivost": "Ako se rastojanje udvostruči, sila je četiri puta slabija – isto kao kod gravitacije.",
+      "rec": "kvadrat"
+    },
+    {
+      "lekcija": 14,
+      "tezina": 3,
+      "pitanje": "Ako se oba naelektrisanja udvostruče, a rastojanje ostane isto, sila je…",
+      "odgovori": [
+        "četiri puta veća",
+        "dva puta veća",
+        "ista",
+        "četiri puta manja"
+      ],
+      "zanimljivost": "Sila je srazmerna proizvodu naelektrisanja.",
+      "rec": "proizvod"
+    },
+    {
+      "lekcija": 14,
+      "tezina": 2,
+      "pitanje": "Kakva je električna sila u odnosu na gravitacionu između elektrona i protona?",
+      "odgovori": [
+        "Neuporedivo jača",
+        "Mnogo slabija",
+        "Ista",
+        "Ne postoji"
+      ],
+      "zanimljivost": "Gravitacija je jaka samo zato što su planete ogromne i električno neutralne.",
+      "rec": "jačina"
+    },
+    {
+      "lekcija": 14,
+      "tezina": 1,
+      "pitanje": "Zašto se kosa naelektrisana češljem „nakostreši“?",
+      "odgovori": [
+        "Vlasi dobiju isto naelektrisanje i odbijaju se",
+        "Kosa je mokra",
+        "Zbog vetra",
+        "Zbog magneta"
+      ],
+      "zanimljivost": "Isto se dešava kada dodirneš kuglu Van de Grafovog generatora – kosa se digne.",
+      "rec": "kosa"
+    },
+    {
+      "lekcija": 14,
+      "tezina": 3,
+      "pitanje": "Dva naelektrisanja deluju silom 8 N. Kolika je sila kada se rastojanje udvostruči?",
+      "odgovori": [
+        "2 N",
+        "4 N",
+        "16 N",
+        "8 N"
+      ],
+      "zanimljivost": "Udvostručeno rastojanje → četiri puta slabija sila.",
+      "rec": "računanje"
+    },
+    {
+      "lekcija": 14,
+      "tezina": 2,
+      "pitanje": "Zašto se prašina lepi za ekran televizora?",
+      "odgovori": [
+        "Ekran je naelektrisan i privlači čestice prašine",
+        "Ekran je lepljiv",
+        "Zbog toplote",
+        "Zbog magnetizma"
+      ],
+      "zanimljivost": "Kod starih televizora sa katodnom cevi to je bilo posebno izraženo.",
+      "rec": "prašina"
+    },
+    {
+      "lekcija": 14,
+      "tezina": 2,
+      "pitanje": "Šta drži atome zajedno u molekulima?",
+      "odgovori": [
+        "Električne sile između naelektrisanih čestica",
+        "Gravitacija",
+        "Magnetizam",
+        "Trenje"
+      ],
+      "zanimljivost": "Sve hemijske veze su u osnovi električne prirode.",
+      "rec": "veza"
+    },
+    {
+      "lekcija": 14,
+      "tezina": 3,
+      "pitanje": "Kako radi fotokopir aparat?",
+      "odgovori": [
+        "Naelektrisani valjak privlači prah tonera na mesta gde treba da bude slika",
+        "Toplotom",
+        "Magnetom",
+        "Mastilom kroz cevi"
+      ],
+      "zanimljivost": "Ovaj postupak (kserografija) izumeo je Čester Karlson 1938.",
+      "rec": "toner"
+    },
+    {
+      "lekcija": 14,
+      "tezina": 1,
+      "pitanje": "Šta je statički elektricitet?",
+      "odgovori": [
+        "Naelektrisanje koje miruje na telu",
+        "Struja u žici",
+        "Magnet",
+        "Svetlost"
+      ],
+      "zanimljivost": "Na benzinskim pumpama upozoravaju na statički elektricitet – varnica može zapaliti pare goriva.",
+      "rec": "statički"
+    },
+    {
+      "lekcija": 14,
+      "tezina": 2,
+      "pitanje": "Zašto pre ulaska u auto zimi dodirnemo metal ključem?",
+      "odgovori": [
+        "Da se naelektrisanje isprazni preko ključa, a ne kroz prst",
+        "Da otključamo",
+        "Da zagrejemo ruku",
+        "Bez razloga"
+      ],
+      "zanimljivost": "Varnica koja „peče“ prst bezopasna je, ali neprijatna.",
+      "rec": "ključ"
+    },
+    {
+      "lekcija": 14,
+      "tezina": 3,
+      "pitanje": "Šta je dielektrik?",
+      "odgovori": [
+        "Izolator koji se nalazi u električnom polju",
+        "Provodnik",
+        "Magnet",
+        "Baterija"
+      ],
+      "zanimljivost": "Kondenzatori imaju dielektrik između ploča da bi skladištili više naelektrisanja.",
+      "rec": "dielektrik"
+    },
+    {
+      "lekcija": 14,
+      "tezina": 2,
+      "pitanje": "Zašto se balon protrljan o džemper zalepi za zid?",
+      "odgovori": [
+        "Naelektrisan balon indukcijom privlači naelektrisanje suprotnog znaka u zidu",
+        "Zid je magnet",
+        "Balon je lepljiv",
+        "Zbog vazduha"
+      ],
+      "zanimljivost": "Balon može da visi na zidu i više sati ako je vazduh suv.",
+      "rec": "balon",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "🎈🧱"
+      }
+    },
+    {
+      "lekcija": 14,
+      "tezina": 1,
+      "pitanje": "Kako deluju istoimena naelektrisanja?",
+      "odgovori": [
+        "Odbijaju se",
+        "Privlače se",
+        "Ne deluju",
+        "Spajaju se"
+      ],
+      "zanimljivost": "Dva protona u jezgru se odbijaju, ali ih drži još jača – nuklearna sila.",
+      "rec": "odbijanje"
+    },
+    {
+      "lekcija": 15,
+      "tezina": 1,
+      "pitanje": "Šta je električno polje?",
+      "odgovori": [
+        "Prostor oko naelektrisanog tela u kojem deluje električna sila",
+        "Polje sa žicama",
+        "Magnet",
+        "Livada"
+      ],
+      "zanimljivost": "Polje se ne vidi, ali se može prikazati linijama sila.",
+      "rec": "polje"
+    },
+    {
+      "lekcija": 15,
+      "tezina": 2,
+      "pitanje": "Kako se crtaju linije električnog polja pozitivnog naelektrisanja?",
+      "odgovori": [
+        "Izlaze iz naelektrisanja na sve strane",
+        "Ulaze u naelektrisanje",
+        "U krug",
+        "Ne crtaju se"
+      ],
+      "zanimljivost": "Kod negativnog naelektrisanja linije ulaze u njega.",
+      "rec": "linije"
+    },
+    {
+      "lekcija": 15,
+      "tezina": 2,
+      "pitanje": "Šta je električni napon?",
+      "odgovori": [
+        "Razlika potencijala između dve tačke, koja „tera“ naelektrisanje",
+        "Jačina struje",
+        "Otpor",
+        "Snaga"
+      ],
+      "zanimljivost": "Napon se meri u voltima – nazvan po Alesandru Volti.",
+      "rec": "napon"
+    },
+    {
+      "lekcija": 15,
+      "tezina": 2,
+      "pitanje": "Koja je jedinica za napon?",
+      "odgovori": [
+        "Volt (V)",
+        "Amper (A)",
+        "Om (Ω)",
+        "Vat (W)"
+      ],
+      "zanimljivost": "Napon u utičnici u Srbiji je 230 V, a obična baterija ima 1,5 V.",
+      "rec": "volt"
+    },
+    {
+      "lekcija": 15,
+      "tezina": 3,
+      "pitanje": "Šta je električni potencijal?",
+      "odgovori": [
+        "Potencijalna energija jediničnog naelektrisanja u nekoj tački polja",
+        "Jačina struje",
+        "Masa naelektrisanja",
+        "Brzina elektrona"
+      ],
+      "zanimljivost": "Slično kao što voda teče sa višeg nivoa na niži, naelektrisanje „teče“ sa višeg na niži potencijal.",
+      "rec": "potencijal"
+    },
+    {
+      "lekcija": 15,
+      "tezina": 2,
+      "pitanje": "Šta je kondenzator?",
+      "odgovori": [
+        "Uređaj koji skladišti naelektrisanje i električnu energiju",
+        "Baterija za punjenje",
+        "Sijalica",
+        "Magnet"
+      ],
+      "zanimljivost": "Blic fotoaparata koristi kondenzator koji se puni pa naglo isprazni.",
+      "rec": "kondenzator"
+    },
+    {
+      "lekcija": 15,
+      "tezina": 3,
+      "pitanje": "Zašto je ptica na električnoj žici bezbedna?",
+      "odgovori": [
+        "Obe noge su joj na istom potencijalu, pa kroz nju ne teče struja",
+        "Ptice su izolatori",
+        "Žica nije pod naponom",
+        "Ptice su lagane"
+      ],
+      "zanimljivost": "Opasno je ako ptica istovremeno dodirne dve žice ili žicu i stub.",
+      "rec": "ptica",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "🐦⚡"
+      }
+    },
+    {
+      "lekcija": 15,
+      "tezina": 1,
+      "pitanje": "Šta je potrebno da bi se naelektrisanje kretalo kroz provodnik?",
+      "odgovori": [
+        "Napon (razlika potencijala)",
+        "Hladnoća",
+        "Magnet",
+        "Svetlost"
+      ],
+      "zanimljivost": "Bez napona slobodni elektroni u metalu kreću se samo haotično.",
+      "rec": "napon"
+    },
+    {
+      "lekcija": 15,
+      "tezina": 2,
+      "pitanje": "Šta je Faradejev kavez?",
+      "odgovori": [
+        "Metalni oklop unutar kog nema električnog polja spolja",
+        "Kavez za ptice",
+        "Vrsta magneta",
+        "Baterija"
+      ],
+      "zanimljivost": "Automobil štiti putnike od udara groma jer radi kao Faradejev kavez.",
+      "rec": "faradej"
+    },
+    {
+      "lekcija": 15,
+      "tezina": 3,
+      "pitanje": "Koliki rad izvrši električno polje pri pomeranju 2 C naelektrisanja kroz napon 6 V?",
+      "odgovori": [
+        "12 J",
+        "3 J",
+        "8 J",
+        "4 J"
+      ],
+      "zanimljivost": "Rad je A = q · U.",
+      "rec": "rad"
+    },
+    {
+      "lekcija": 15,
+      "tezina": 2,
+      "pitanje": "Zašto mikrotalasna ima metalnu mrežicu na vratima?",
+      "odgovori": [
+        "Radi kao Faradejev kavez i ne propušta talase",
+        "Za ukras",
+        "Za hlađenje",
+        "Za lakše otvaranje"
+      ],
+      "zanimljivost": "Rupice u mrežici su manje od talasne dužine mikrotalasa, a svetlost prolazi.",
+      "rec": "mrežica"
+    },
+    {
+      "lekcija": 15,
+      "tezina": 1,
+      "pitanje": "Kakva je oznaka za napon?",
+      "odgovori": [
+        "U",
+        "I",
+        "R",
+        "P"
+      ],
+      "zanimljivost": "Napon se meri voltmetrom, koji se vezuje paralelno sa potrošačem.",
+      "rec": "oznaka"
+    },
+    {
+      "lekcija": 15,
+      "tezina": 2,
+      "pitanje": "Kako se u polju kreće pozitivno naelektrisanje pušteno iz mirovanja?",
+      "odgovori": [
+        "U smeru linija polja",
+        "Suprotno od linija",
+        "U krug",
+        "Ne kreće se"
+      ],
+      "zanimljivost": "Elektron se, naprotiv, kreće suprotno od linija polja.",
+      "rec": "smer"
+    },
+    {
+      "lekcija": 15,
+      "tezina": 3,
+      "pitanje": "Šta je elektron-volt?",
+      "odgovori": [
+        "Energija koju elektron dobije prolaskom kroz napon od 1 V",
+        "Jedinica za struju",
+        "Jedinica za otpor",
+        "Jedinica za snagu"
+      ],
+      "zanimljivost": "Elektron-volt se koristi u atomskoj i nuklearnoj fizici – vrlo je mala jedinica energije.",
+      "rec": "energija"
+    },
+    {
+      "lekcija": 15,
+      "tezina": 2,
+      "pitanje": "Gde se u prirodi stvara ogromno električno polje?",
+      "odgovori": [
+        "U olujnim oblacima",
+        "U ledu",
+        "U kamenu",
+        "U vodi bunara"
+      ],
+      "zanimljivost": "Napon između oblaka i zemlje pri munji može biti stotine miliona volti.",
+      "rec": "oblak"
+    },
+    {
+      "lekcija": 16,
+      "tezina": 1,
+      "pitanje": "Šta je munja?",
+      "odgovori": [
+        "Ogromno električno pražnjenje između oblaka i zemlje ili između oblaka",
+        "Svetlost Sunca",
+        "Vatra u oblaku",
+        "Odraz Meseca"
+      ],
+      "zanimljivost": "Na Zemlji svake sekunde udari oko 40–50 munja.",
+      "rec": "munja",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "⛈️⚡"
+      }
+    },
+    {
+      "lekcija": 16,
+      "tezina": 2,
+      "pitanje": "Šta je gromobran?",
+      "odgovori": [
+        "Metalni štap povezan sa zemljom koji bezbedno odvodi munju",
+        "Antena",
+        "Sijalica",
+        "Kišobran"
+      ],
+      "zanimljivost": "Gromobran je izumeo Bendžamin Frenklin sredinom 18. veka.",
+      "rec": "gromobran"
+    },
+    {
+      "lekcija": 16,
+      "tezina": 2,
+      "pitanje": "Šta je grom?",
+      "odgovori": [
+        "Zvuk nastao naglim širenjem vazduha zagrejanog munjom",
+        "Svetlost munje",
+        "Vetar",
+        "Kiša"
+      ],
+      "zanimljivost": "Vazduh se kod munje zagreje do oko 30.000 °C i eksplozivno se širi.",
+      "rec": "grom"
+    },
+    {
+      "lekcija": 16,
+      "tezina": 3,
+      "pitanje": "Zašto ne treba stajati pod usamljenim drvetom za vreme oluje?",
+      "odgovori": [
+        "Munja najčešće udara u visoke predmete",
+        "Drvo može pasti od kiše",
+        "Zbog lišća",
+        "Nema opasnosti"
+      ],
+      "zanimljivost": "Najbezbednije je u zgradi ili automobilu, daleko od visokih predmeta i vode.",
+      "rec": "drvo"
+    },
+    {
+      "lekcija": 16,
+      "tezina": 2,
+      "pitanje": "Šta je „Elmova vatra“?",
+      "odgovori": [
+        "Svetlucanje na vrhovima jarbola ili tornjeva pri jakom električnom polju",
+        "Šumski požar",
+        "Vatromet",
+        "Polarna svetlost"
+      ],
+      "zanimljivost": "Mornari su je smatrali znakom zaštite svetog Elma.",
+      "rec": "elmo"
+    },
+    {
+      "lekcija": 16,
+      "tezina": 2,
+      "pitanje": "Šta je pravilo „30-30“ kod oluje?",
+      "odgovori": [
+        "Ako je između munje i groma manje od 30 s, sklonite se; sačekajte 30 min posle poslednjeg groma",
+        "Brojite do 30 i trčite",
+        "Oluja traje 30 min",
+        "Nema takvog pravila"
+      ],
+      "zanimljivost": "30 s odgovara udaljenosti od oko 10 km – munja može udariti i toliko daleko od oluje.",
+      "rec": "pravilo"
+    },
+    {
+      "lekcija": 16,
+      "tezina": 1,
+      "pitanje": "Šta treba izbegavati za vreme grmljavine?",
+      "odgovori": [
+        "Kupanje, otvoren prostor i visoke predmete",
+        "Boravak u kući",
+        "Boravak u autu",
+        "Sedenje"
+      ],
+      "zanimljivost": "Ako te oluja uhvati na otvorenom, čučni sa sastavljenim stopalima.",
+      "rec": "kupanje"
+    },
+    {
+      "lekcija": 16,
+      "tezina": 3,
+      "pitanje": "Kakva je temperatura u kanalu munje?",
+      "odgovori": [
+        "Oko 30.000 °C",
+        "Oko 100 °C",
+        "Oko 1.000 °C",
+        "Oko 0 °C"
+      ],
+      "zanimljivost": "To je oko pet puta više od temperature površine Sunca.",
+      "rec": "temperatura"
+    },
+    {
+      "lekcija": 16,
+      "tezina": 2,
+      "pitanje": "Zašto se kosa naelektriše pri skidanju džempera?",
+      "odgovori": [
+        "Trenje prenosi elektrone",
+        "Zbog vlage",
+        "Zbog toplote",
+        "Zbog magneta"
+      ],
+      "zanimljivost": "Ponekad se u mraku vide i sitne varnice – mini-munje!",
+      "rec": "džemper"
+    },
+    {
+      "lekcija": 16,
+      "tezina": 2,
+      "pitanje": "Koja električna riba može da proizvede napon i do 600 V?",
+      "odgovori": [
+        "Električna jegulja",
+        "Pastrmka",
+        "Šaran",
+        "Som"
+      ],
+      "zanimljivost": "Električna jegulja koristi napon za lov i odbranu.",
+      "rec": "jegulja"
+    },
+    {
+      "lekcija": 16,
+      "tezina": 3,
+      "pitanje": "Šta je loptasta munja?",
+      "odgovori": [
+        "Retka, nedovoljno objašnjena svetleća lopta koja se viđa za vreme oluja",
+        "Vrsta vatrometa",
+        "Sijalica",
+        "Meteor"
+      ],
+      "zanimljivost": "Naučnici je još istražuju – laboratorijski su dobijene slične pojave.",
+      "rec": "lopta"
+    },
+    {
+      "lekcija": 16,
+      "tezina": 1,
+      "pitanje": "Gde je najbezbednije za vreme oluje?",
+      "odgovori": [
+        "U zgradi ili zatvorenom automobilu",
+        "Na vrhu brda",
+        "Pod drvetom",
+        "U bazenu"
+      ],
+      "zanimljivost": "Automobil štiti zbog metalne karoserije, a ne zbog guma.",
+      "rec": "automobil"
+    },
+    {
+      "lekcija": 16,
+      "tezina": 2,
+      "pitanje": "Zašto su avioni bezbedni kada ih udari munja?",
+      "odgovori": [
+        "Metalni trup provodi struju po površini (Faradejev kavez)",
+        "Munja ne može da udari avion",
+        "Avioni imaju gromobran na vrhu",
+        "Zbog brzine"
+      ],
+      "zanimljivost": "Svaki putnički avion pogodi munja otprilike jednom godišnje – bez posledica po putnike.",
+      "rec": "avion"
+    },
+    {
+      "lekcija": 16,
+      "tezina": 3,
+      "pitanje": "Šta je jonosfera?",
+      "odgovori": [
+        "Sloj atmosfere sa naelektrisanim česticama koji odbija radio-talase",
+        "Sloj oblaka",
+        "Ozonski omotač",
+        "Morsko dno"
+      ],
+      "zanimljivost": "Zahvaljujući odbijanju od jonosfere, radio-amateri mogu razgovarati preko celog sveta.",
+      "rec": "jonosfera"
+    },
+    {
+      "lekcija": 16,
+      "tezina": 2,
+      "pitanje": "Kako se zove pojava kada naelektrisano telo izgubi naelektrisanje kroz vazduh ili provodnik?",
+      "odgovori": [
+        "Pražnjenje",
+        "Punjenje",
+        "Indukcija",
+        "Trenje"
+      ],
+      "zanimljivost": "Munja je najveće prirodno pražnjenje.",
+      "rec": "pražnjenje"
+    },
+    {
+      "lekcija": 17,
+      "tezina": 1,
+      "pitanje": "Šta je električna struja?",
+      "odgovori": [
+        "Usmereno kretanje naelektrisanih čestica",
+        "Haotično kretanje molekula",
+        "Magnetno polje",
+        "Svetlost"
+      ],
+      "zanimljivost": "U metalima struju čine slobodni elektroni.",
+      "rec": "struja"
+    },
+    {
+      "lekcija": 17,
+      "tezina": 2,
+      "pitanje": "Koja je jedinica za jačinu struje?",
+      "odgovori": [
+        "Amper (A)",
+        "Volt",
+        "Om",
+        "Vat"
+      ],
+      "zanimljivost": "Struja od 0,1 A kroz srce može biti smrtonosna – zato je struja iz utičnice opasna.",
+      "rec": "amper"
+    },
+    {
+      "lekcija": 17,
+      "tezina": 2,
+      "pitanje": "Šta je izvor električne struje?",
+      "odgovori": [
+        "Uređaj koji održava napon između polova",
+        "Sijalica",
+        "Prekidač",
+        "Žica"
+      ],
+      "zanimljivost": "Prvu bateriju („Voltin stub“) napravio je Alesandro Volta 1800. godine.",
+      "rec": "volta"
+    },
+    {
+      "lekcija": 17,
+      "tezina": 2,
+      "pitanje": "Koliki je napon obične „AA“ baterije?",
+      "odgovori": [
+        "1,5 V",
+        "230 V",
+        "12 V",
+        "0,1 V"
+      ],
+      "zanimljivost": "Akumulator u automobilu ima 12 V.",
+      "rec": "baterija",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "🔋"
+      }
+    },
+    {
+      "lekcija": 17,
+      "tezina": 3,
+      "pitanje": "Šta je konvencionalni smer struje?",
+      "odgovori": [
+        "Od pozitivnog ka negativnom polu izvora (spolja)",
+        "Od negativnog ka pozitivnom",
+        "U krug bez smera",
+        "Nema smera"
+      ],
+      "zanimljivost": "Elektroni se zapravo kreću suprotno – smer je dogovoren pre nego što je elektron otkriven.",
+      "rec": "smer"
+    },
+    {
+      "lekcija": 17,
+      "tezina": 1,
+      "pitanje": "Koja je oznaka za jačinu struje?",
+      "odgovori": [
+        "I",
+        "U",
+        "R",
+        "P"
+      ],
+      "zanimljivost": "Oznaka I potiče od francuske reči intensité – jačina.",
+      "rec": "oznaka"
+    },
+    {
+      "lekcija": 17,
+      "tezina": 2,
+      "pitanje": "Kako radi solarna ćelija?",
+      "odgovori": [
+        "Svetlost direktno stvara napon u poluprovodniku",
+        "Sagoreva gorivo",
+        "Koristi vetar",
+        "Koristi magnete"
+      ],
+      "zanimljivost": "Solarne ćelije napajaju i satelite i Međunarodnu svemirsku stanicu.",
+      "rec": "solarna"
+    },
+    {
+      "lekcija": 17,
+      "tezina": 3,
+      "pitanje": "Šta je jednosmerna, a šta naizmenična struja?",
+      "odgovori": [
+        "Jednosmerna ima stalan smer (baterija), naizmenična menja smer (utičnica)",
+        "Obe su iste",
+        "Jednosmerna je u utičnici",
+        "Naizmenična je u bateriji"
+      ],
+      "zanimljivost": "„Rat struja“ krajem 19. veka – Tesla (naizmenična) protiv Edisona (jednosmerna) – pobedio je Tesla.",
+      "rec": "tesla"
+    },
+    {
+      "lekcija": 17,
+      "tezina": 2,
+      "pitanje": "Šta je akumulator?",
+      "odgovori": [
+        "Izvor struje koji se može više puta puniti",
+        "Sijalica",
+        "Prekidač",
+        "Osigurač"
+      ],
+      "zanimljivost": "Litijum-jonske baterije u telefonima su vrsta akumulatora.",
+      "rec": "akumulator"
+    },
+    {
+      "lekcija": 17,
+      "tezina": 1,
+      "pitanje": "Kojim polovima je obeležena baterija?",
+      "odgovori": [
+        "Plus (+) i minus (−)",
+        "Sever i jug",
+        "Gore i dole",
+        "Levo i desno"
+      ],
+      "zanimljivost": "Ravna strana AA baterije je minus pol.",
+      "rec": "polovi"
+    },
+    {
+      "lekcija": 17,
+      "tezina": 3,
+      "pitanje": "Koliko elektrona prođe kroz presek žice u sekundi pri struji od 1 A?",
+      "odgovori": [
+        "Oko 6 milijardi milijardi",
+        "Oko 1",
+        "Oko milion",
+        "Oko hiljadu"
+      ],
+      "zanimljivost": "1 A = 1 C/s, a 1 C je oko 6,24·10¹⁸ elektrona.",
+      "rec": "računanje"
+    },
+    {
+      "lekcija": 17,
+      "tezina": 2,
+      "pitanje": "Kolika je frekvencija naizmenične struje u našoj mreži?",
+      "odgovori": [
+        "50 Hz",
+        "60 Hz",
+        "1 Hz",
+        "1.000 Hz"
+      ],
+      "zanimljivost": "U SAD je frekvencija 60 Hz, a napon 120 V.",
+      "rec": "frekvencija"
+    },
+    {
+      "lekcija": 17,
+      "tezina": 2,
+      "pitanje": "Koja je brzina elektrona u žici pri uobičajenoj struji?",
+      "odgovori": [
+        "Veoma mala – delići milimetra u sekundi",
+        "Brzina svetlosti",
+        "340 m/s",
+        "Kao brzina automobila"
+      ],
+      "zanimljivost": "Sijalica se ipak upali odmah, jer se električno polje kroz žicu širi skoro brzinom svetlosti.",
+      "rec": "spor"
+    },
+    {
+      "lekcija": 17,
+      "tezina": 1,
+      "pitanje": "Šta od navedenog je izvor struje?",
+      "odgovori": [
+        "Baterija",
+        "Sijalica",
+        "Prekidač",
+        "Žica"
+      ],
+      "zanimljivost": "I krompir ili limun sa dve različite metalne pločice mogu da daju slab napon!",
+      "rec": "limun",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "🍋🔋"
+      }
+    },
+    {
+      "lekcija": 17,
+      "tezina": 3,
+      "pitanje": "Ko je otkrio da žablji krak trza na dodir dva metala, što je dovelo do baterije?",
+      "odgovori": [
+        "Luiđi Galvani",
+        "Volta",
+        "Faradej",
+        "Amper"
+      ],
+      "zanimljivost": "Galvani je mislio da je to „životinjski elektricitet“, a Volta je pokazao da je izvor u metalima.",
+      "rec": "galvani"
+    },
+    {
+      "lekcija": 18,
+      "tezina": 1,
+      "pitanje": "Šta je strujno kolo?",
+      "odgovori": [
+        "Zatvoren put kroz koji teče struja",
+        "Okrugla žica",
+        "Baterija bez žica",
+        "Prekidač"
+      ],
+      "zanimljivost": "Ako je kolo prekinuto bilo gde, struja ne teče i sijalica ne svetli.",
+      "rec": "kolo"
+    },
+    {
+      "lekcija": 18,
+      "tezina": 2,
+      "pitanje": "Čime se meri jačina struje?",
+      "odgovori": [
+        "Ampermetrom",
+        "Voltmetrom",
+        "Ommetrom",
+        "Barometrom"
+      ],
+      "zanimljivost": "Ampermetar se vezuje redno u kolo – struja mora da prođe kroz njega.",
+      "rec": "ampermetar"
+    },
+    {
+      "lekcija": 18,
+      "tezina": 2,
+      "pitanje": "Čime se meri napon?",
+      "odgovori": [
+        "Voltmetrom",
+        "Ampermetrom",
+        "Dinamometrom",
+        "Termometrom"
+      ],
+      "zanimljivost": "Voltmetar se vezuje paralelno, „preko“ potrošača.",
+      "rec": "voltmetar"
+    },
+    {
+      "lekcija": 18,
+      "tezina": 2,
+      "pitanje": "Kako se vezuje ampermetar?",
+      "odgovori": [
+        "Redno sa potrošačem",
+        "Paralelno",
+        "Ne vezuje se",
+        "Preko izvora uvek"
+      ],
+      "zanimljivost": "Ampermetar ima veoma mali otpor da ne bi smanjio struju u kolu.",
+      "rec": "redno"
+    },
+    {
+      "lekcija": 18,
+      "tezina": 3,
+      "pitanje": "Kako se vezuje voltmetar?",
+      "odgovori": [
+        "Paralelno sa potrošačem",
+        "Redno",
+        "Na izvor uvek",
+        "Ne vezuje se"
+      ],
+      "zanimljivost": "Voltmetar ima veoma veliki otpor – kroz njega teče zanemarljiva struja.",
+      "rec": "paralelno"
+    },
+    {
+      "lekcija": 18,
+      "tezina": 1,
+      "pitanje": "Čemu služi prekidač?",
+      "odgovori": [
+        "Zatvara i otvara strujno kolo",
+        "Pojačava struju",
+        "Meri napon",
+        "Pravi struju"
+      ],
+      "zanimljivost": "Prekidač za svetlo u sobi zapravo samo spaja ili razdvaja žice.",
+      "rec": "prekidač"
+    },
+    {
+      "lekcija": 18,
+      "tezina": 2,
+      "pitanje": "Šta je osigurač?",
+      "odgovori": [
+        "Uređaj koji prekida kolo kada je struja prevelika",
+        "Prekidač za svetlo",
+        "Baterija",
+        "Sijalica"
+      ],
+      "zanimljivost": "Osigurači štite instalaciju od pregrevanja i požara.",
+      "rec": "osigurač"
+    },
+    {
+      "lekcija": 18,
+      "tezina": 2,
+      "pitanje": "Šta je kratak spoj?",
+      "odgovori": [
+        "Direktno spajanje polova izvora bez potrošača, pa struja naglo poraste",
+        "Kratka žica",
+        "Mala baterija",
+        "Prekidač"
+      ],
+      "zanimljivost": "Kratak spoj može izazvati požar – zato se žice ne smeju oštetiti.",
+      "rec": "kratak"
+    },
+    {
+      "lekcija": 18,
+      "tezina": 1,
+      "pitanje": "Šta su potrošači u strujnom kolu?",
+      "odgovori": [
+        "Uređaji koji troše električnu energiju (sijalica, motor)",
+        "Žice",
+        "Prekidači",
+        "Baterije"
+      ],
+      "zanimljivost": "Svaki uređaj na utičnici je potrošač.",
+      "rec": "potrošač"
+    },
+    {
+      "lekcija": 18,
+      "tezina": 3,
+      "pitanje": "Šta je multimetar?",
+      "odgovori": [
+        "Instrument koji može da meri napon, struju i otpor",
+        "Termometar",
+        "Barometar",
+        "Sat"
+      ],
+      "zanimljivost": "Električari multimetrom proveravaju i da li je žica pod naponom.",
+      "rec": "multimetar"
+    },
+    {
+      "lekcija": 18,
+      "tezina": 2,
+      "pitanje": "Kako se crta sijalica na šemi strujnog kola?",
+      "odgovori": [
+        "Krug sa krstićem (×) unutra",
+        "Kvadrat",
+        "Trougao",
+        "Talasasta linija"
+      ],
+      "zanimljivost": "Šeme koriste standardne simbole da bi ih razumeli inženjeri širom sveta.",
+      "rec": "šema",
+      "mediji": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 200 120' xmlns='http://www.w3.org/2000/svg'><g stroke='#fff' stroke-width='4' fill='none'><circle cx='100' cy='60' r='30'/><line x1='79' y1='39' x2='121' y2='81'/><line x1='121' y1='39' x2='79' y2='81'/><line x1='10' y1='60' x2='70' y2='60'/><line x1='130' y1='60' x2='190' y2='60'/></g></svg>"
+      }
+    },
+    {
+      "lekcija": 18,
+      "tezina": 2,
+      "pitanje": "Šta se dešava ako pregori jedna sijalica u nizu redno vezanih lampica za jelku?",
+      "odgovori": [
+        "Sve se ugase",
+        "Ostale svetle jače",
+        "Ništa",
+        "Samo susedne se ugase"
+      ],
+      "zanimljivost": "Moderne lampice imaju zaštitu – pregorela sijalica ne prekida ceo niz.",
+      "rec": "jelka"
+    },
+    {
+      "lekcija": 18,
+      "tezina": 3,
+      "pitanje": "Zašto ampermetar ne sme da se veže direktno na polove baterije?",
+      "odgovori": [
+        "Ima mali otpor, pa bi nastao kratak spoj",
+        "Pokvario bi se od napona",
+        "Pokazao bi nulu",
+        "Može slobodno"
+      ],
+      "zanimljivost": "Zato ampermetar uvek mora biti u kolu sa potrošačem.",
+      "rec": "zaštita"
+    },
+    {
+      "lekcija": 18,
+      "tezina": 1,
+      "pitanje": "Šta je izvor u strujnom kolu baterijske lampe?",
+      "odgovori": [
+        "Baterija",
+        "Sijalica",
+        "Prekidač",
+        "Kućište"
+      ],
+      "zanimljivost": "Baterijska lampa je najjednostavnije strujno kolo.",
+      "rec": "lampa"
+    },
+    {
+      "lekcija": 18,
+      "tezina": 2,
+      "pitanje": "Šta je diferencijalna zaštitna sklopka (FID)?",
+      "odgovori": [
+        "Uređaj koji prekida struju kad deo „curi“ kroz čoveka ili u zemlju",
+        "Sijalica",
+        "Utičnica",
+        "Brojilo"
+      ],
+      "zanimljivost": "FID sklopka reaguje za delić sekunde i spasava živote, npr. u kupatilu.",
+      "rec": "sklopka"
+    },
+    {
+      "lekcija": 19,
+      "tezina": 1,
+      "pitanje": "Šta tvrdi Omov zakon?",
+      "odgovori": [
+        "Jačina struje srazmerna je naponu, a obrnuto srazmerna otporu",
+        "Struja je jednaka naponu",
+        "Otpor ne postoji",
+        "Napon je uvek nula"
+      ],
+      "zanimljivost": "Georg Om je zakon objavio 1827. godine.",
+      "rec": "otpor",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "I = U / R"
+      }
+    },
+    {
+      "lekcija": 19,
+      "tezina": 2,
+      "pitanje": "Koja je jedinica za električni otpor?",
+      "odgovori": [
+        "Om (Ω)",
+        "Amper",
+        "Volt",
+        "Vat"
+      ],
+      "zanimljivost": "Simbol Ω je grčko slovo omega.",
+      "rec": "omega"
+    },
+    {
+      "lekcija": 19,
+      "tezina": 3,
+      "pitanje": "Kroz otpornik od 10 Ω na naponu 20 V teče struja od…",
+      "odgovori": [
+        "2 A",
+        "200 A",
+        "0,5 A",
+        "30 A"
+      ],
+      "zanimljivost": "I = U/R = 20/10 = 2 A.",
+      "rec": "računanje"
+    },
+    {
+      "lekcija": 19,
+      "tezina": 2,
+      "pitanje": "Od čega zavisi otpor žice?",
+      "odgovori": [
+        "Od materijala, dužine i debljine",
+        "Samo od boje",
+        "Samo od mase",
+        "Ne zavisi ni od čega"
+      ],
+      "zanimljivost": "Duža i tanja žica ima veći otpor.",
+      "rec": "žica"
+    },
+    {
+      "lekcija": 19,
+      "tezina": 2,
+      "pitanje": "Zašto su električni kablovi od bakra?",
+      "odgovori": [
+        "Bakar ima mali otpor i nije skup kao srebro",
+        "Bakar je lep",
+        "Bakar je magnetan",
+        "Bakar je izolator"
+      ],
+      "zanimljivost": "Srebro je još bolji provodnik, ali je preskupo za kablove.",
+      "rec": "bakar"
+    },
+    {
+      "lekcija": 19,
+      "tezina": 3,
+      "pitanje": "Kako se otpor metala menja sa temperaturom?",
+      "odgovori": [
+        "Raste sa temperaturom",
+        "Opada",
+        "Ne menja se",
+        "Postaje nula"
+      ],
+      "zanimljivost": "Neki materijali na veoma niskim temperaturama potpuno gube otpor – to je superprovodljivost.",
+      "rec": "temperatura"
+    },
+    {
+      "lekcija": 19,
+      "tezina": 1,
+      "pitanje": "Šta je otpornik?",
+      "odgovori": [
+        "Element strujnog kola koji ima određeni otpor",
+        "Baterija",
+        "Sijalica obavezno",
+        "Prekidač"
+      ],
+      "zanimljivost": "Otpornici imaju obojene prstenove – po bojama se čita njihov otpor.",
+      "rec": "otpornik"
+    },
+    {
+      "lekcija": 19,
+      "tezina": 2,
+      "pitanje": "Na napon 12 V priključen je otpornik i kroz njega teče 3 A. Koliki je otpor?",
+      "odgovori": [
+        "4 Ω",
+        "36 Ω",
+        "15 Ω",
+        "0,25 Ω"
+      ],
+      "zanimljivost": "R = U/I = 12/3 = 4 Ω.",
+      "rec": "otpor"
+    },
+    {
+      "lekcija": 19,
+      "tezina": 3,
+      "pitanje": "Šta je specifični otpor?",
+      "odgovori": [
+        "Otpor žice od nekog materijala dužine 1 m i preseka 1 mm²",
+        "Otpor svakog provodnika",
+        "Masa materijala",
+        "Jačina struje"
+      ],
+      "zanimljivost": "Bakar ima specifični otpor oko 0,017 Ω·mm²/m – zato je odličan provodnik.",
+      "rec": "specifični"
+    },
+    {
+      "lekcija": 19,
+      "tezina": 2,
+      "pitanje": "Zašto se električna grejalica zagreva?",
+      "odgovori": [
+        "Struja prolazi kroz žicu velikog otpora i zagreva je",
+        "Ima vatru",
+        "Zbog magneta",
+        "Ne zagreva se"
+      ],
+      "zanimljivost": "Žice grejača su od legure (npr. nikl-hrom) koja ima veliki otpor i ne oksidiše lako.",
+      "rec": "grejač"
+    },
+    {
+      "lekcija": 19,
+      "tezina": 1,
+      "pitanje": "Šta se dešava sa strujom ako se napon poveća, a otpor ostane isti?",
+      "odgovori": [
+        "Struja se poveća",
+        "Struja se smanji",
+        "Ostane ista",
+        "Postane nula"
+      ],
+      "zanimljivost": "Zato pri većem naponu sijalica jače svetli (dok ne pregori).",
+      "rec": "napon"
+    },
+    {
+      "lekcija": 19,
+      "tezina": 3,
+      "pitanje": "Šta je reostat?",
+      "odgovori": [
+        "Promenljivi otpornik kojim se reguliše struja",
+        "Vrsta baterije",
+        "Prekidač",
+        "Osigurač"
+      ],
+      "zanimljivost": "Dugme za jačinu zvuka na starim radijima bilo je promenljivi otpornik.",
+      "rec": "reostat"
+    },
+    {
+      "lekcija": 19,
+      "tezina": 2,
+      "pitanje": "Zašto je mokra koža opasna pri radu sa strujom?",
+      "odgovori": [
+        "Smanjuje otpor tela, pa kroz telo teče veća struja",
+        "Povećava otpor",
+        "Nema razlike",
+        "Hladi struju"
+      ],
+      "zanimljivost": "Suva koža ima otpor i desetinama puta veći od mokre.",
+      "rec": "koža"
+    },
+    {
+      "lekcija": 19,
+      "tezina": 2,
+      "pitanje": "Kako izgleda grafik zavisnosti struje od napona za otpornik?",
+      "odgovori": [
+        "Prava linija kroz koordinatni početak",
+        "Horizontalna linija",
+        "Parabola",
+        "Krug"
+      ],
+      "zanimljivost": "Strmiji grafik znači manji otpor.",
+      "rec": "grafik"
+    },
+    {
+      "lekcija": 19,
+      "tezina": 1,
+      "pitanje": "Koja je oznaka za otpor?",
+      "odgovori": [
+        "R",
+        "I",
+        "U",
+        "P"
+      ],
+      "zanimljivost": "R dolazi od engleske reči resistance – otpor.",
+      "rec": "oznaka"
+    },
+    {
+      "lekcija": 20,
+      "tezina": 1,
+      "pitanje": "Kako su vezani otpornici jedan iza drugog u nizu?",
+      "odgovori": [
+        "Redno",
+        "Paralelno",
+        "Mešovito",
+        "Nisu vezani"
+      ],
+      "zanimljivost": "Kod rednog vezivanja kroz sve otpornike teče ista struja.",
+      "rec": "redno"
+    },
+    {
+      "lekcija": 20,
+      "tezina": 2,
+      "pitanje": "Koliki je ukupni otpor dva redno vezana otpornika od 4 Ω i 6 Ω?",
+      "odgovori": [
+        "10 Ω",
+        "2,4 Ω",
+        "24 Ω",
+        "2 Ω"
+      ],
+      "zanimljivost": "Kod rednog vezivanja otpori se sabiraju.",
+      "rec": "zbir",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "R = R₁ + R₂"
+      }
+    },
+    {
+      "lekcija": 20,
+      "tezina": 3,
+      "pitanje": "Koliki je ukupni otpor dva paralelno vezana otpornika od 6 Ω i 6 Ω?",
+      "odgovori": [
+        "3 Ω",
+        "12 Ω",
+        "6 Ω",
+        "36 Ω"
+      ],
+      "zanimljivost": "Kod paralelne veze ukupni otpor je manji od najmanjeg pojedinačnog.",
+      "rec": "paralelno"
+    },
+    {
+      "lekcija": 20,
+      "tezina": 2,
+      "pitanje": "Kako su vezani uređaji u kućnoj instalaciji?",
+      "odgovori": [
+        "Paralelno",
+        "Redno",
+        "Nisu vezani",
+        "Svi na jednu sijalicu"
+      ],
+      "zanimljivost": "Zato svaki uređaj radi na istom naponu od 230 V i može se nezavisno uključiti.",
+      "rec": "kuća"
+    },
+    {
+      "lekcija": 20,
+      "tezina": 2,
+      "pitanje": "Šta je isto za sve paralelno vezane potrošače?",
+      "odgovori": [
+        "Napon",
+        "Struja",
+        "Otpor",
+        "Snaga"
+      ],
+      "zanimljivost": "Kroz uređaj manjeg otpora teče veća struja.",
+      "rec": "napon"
+    },
+    {
+      "lekcija": 20,
+      "tezina": 3,
+      "pitanje": "Tri otpornika od po 30 Ω vezana su paralelno. Koliki je ukupni otpor?",
+      "odgovori": [
+        "10 Ω",
+        "90 Ω",
+        "30 Ω",
+        "3 Ω"
+      ],
+      "zanimljivost": "1/R = 1/30 + 1/30 + 1/30 = 1/10.",
+      "rec": "računanje"
+    },
+    {
+      "lekcija": 20,
+      "tezina": 1,
+      "pitanje": "Šta se dešava sa ukupnim otporom kada dodamo još jedan otpornik redno?",
+      "odgovori": [
+        "Povećava se",
+        "Smanjuje se",
+        "Ne menja se",
+        "Postaje nula"
+      ],
+      "zanimljivost": "Duži „put“ kroz više otpornika teže je proći.",
+      "rec": "povećanje"
+    },
+    {
+      "lekcija": 20,
+      "tezina": 2,
+      "pitanje": "Šta se dešava sa ukupnim otporom kada dodamo još jedan otpornik paralelno?",
+      "odgovori": [
+        "Smanjuje se",
+        "Povećava se",
+        "Ne menja se",
+        "Postaje beskonačan"
+      ],
+      "zanimljivost": "Paralelna veza je kao više traka na autoputu – lakše se prolazi.",
+      "rec": "smanjenje"
+    },
+    {
+      "lekcija": 20,
+      "tezina": 2,
+      "pitanje": "Zašto se uključivanjem previše uređaja u jedan produžni kabl izbaci osigurač?",
+      "odgovori": [
+        "Ukupni otpor se smanji, a ukupna struja poveća",
+        "Napon padne na nulu",
+        "Uređaji se svađaju",
+        "Kabl je kratak"
+      ],
+      "zanimljivost": "Preopterećen produžni kabl može da se pregreje i izazove požar.",
+      "rec": "produžni"
+    },
+    {
+      "lekcija": 20,
+      "tezina": 3,
+      "pitanje": "Kako je u stvarnosti vezana većina lampica za jelku danas?",
+      "odgovori": [
+        "U grupama, kombinovano redno i paralelno",
+        "Sve redno",
+        "Sve paralelno pojedinačno",
+        "Nisu vezane"
+      ],
+      "zanimljivost": "Kombinovana (mešovita) veza omogućava niske napone na lampicama i otpornost na kvar.",
+      "rec": "mešovito"
+    },
+    {
+      "lekcija": 20,
+      "tezina": 2,
+      "pitanje": "Ukupni napon izvora je 12 V, a na prvom od dva redno vezana otpornika je 5 V. Koliki je napon na drugom?",
+      "odgovori": [
+        "7 V",
+        "12 V",
+        "5 V",
+        "17 V"
+      ],
+      "zanimljivost": "Kod redne veze naponi na otpornicima se sabiraju.",
+      "rec": "razlika"
+    },
+    {
+      "lekcija": 20,
+      "tezina": 1,
+      "pitanje": "Gde je ista struja – kod redne ili paralelne veze?",
+      "odgovori": [
+        "Kod redne",
+        "Kod paralelne",
+        "Kod obe",
+        "Kod nijedne"
+      ],
+      "zanimljivost": "Kod paralelne veze struja se grana kao reka u rukavce.",
+      "rec": "struja"
+    },
+    {
+      "lekcija": 20,
+      "tezina": 3,
+      "pitanje": "Struja u glavnoj grani je 5 A, a u jednoj od dve paralelne grane 2 A. Kolika je struja u drugoj grani?",
+      "odgovori": [
+        "3 A",
+        "7 A",
+        "2 A",
+        "10 A"
+      ],
+      "zanimljivost": "Prvo Kirhofovo pravilo: zbir struja koje ulaze u čvor jednak je zbiru struja koje izlaze.",
+      "rec": "kirhof"
+    },
+    {
+      "lekcija": 20,
+      "tezina": 2,
+      "pitanje": "Zašto se sijalice u kući ne vezuju redno?",
+      "odgovori": [
+        "Gašenjem jedne ugasile bi se sve, a i napon bi se delio",
+        "Zato što je skupo",
+        "Zbog zakona",
+        "Može i redno bez razlike"
+      ],
+      "zanimljivost": "Svaka sijalica u kući dobija punih 230 V.",
+      "rec": "sijalice"
+    },
+    {
+      "lekcija": 20,
+      "tezina": 2,
+      "pitanje": "Koji otpornik ima veći napon u rednoj vezi – veći ili manji?",
+      "odgovori": [
+        "Veći otpornik",
+        "Manji",
+        "Isti su",
+        "Zavisi od boje"
+      ],
+      "zanimljivost": "Struja je ista, pa je napon srazmeran otporu (U = I·R).",
+      "rec": "veći"
+    },
+    {
+      "lekcija": 21,
+      "tezina": 1,
+      "pitanje": "Kojom formulom se računa snaga struje?",
+      "odgovori": [
+        "P = U · I",
+        "P = U / I",
+        "P = I / U",
+        "P = U + I"
+      ],
+      "zanimljivost": "Fen od 2.000 W na 230 V uzima struju od skoro 9 A.",
+      "rec": "snaga",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "P = U · I"
+      }
+    },
+    {
+      "lekcija": 21,
+      "tezina": 2,
+      "pitanje": "Šta meri brojilo (strujomer) u kući?",
+      "odgovori": [
+        "Potrošenu električnu energiju u kWh",
+        "Napon",
+        "Struju",
+        "Snagu trenutno"
+      ],
+      "zanimljivost": "Račun za struju plaća se po kilovat-času.",
+      "rec": "brojilo"
+    },
+    {
+      "lekcija": 21,
+      "tezina": 2,
+      "pitanje": "Koliko energije potroši sijalica od 100 W za 10 sati?",
+      "odgovori": [
+        "1 kWh",
+        "10 kWh",
+        "0,1 kWh",
+        "1.000 kWh"
+      ],
+      "zanimljivost": "E = P · t = 0,1 kW · 10 h = 1 kWh.",
+      "rec": "računanje"
+    },
+    {
+      "lekcija": 21,
+      "tezina": 3,
+      "pitanje": "Koliku struju uzima uređaj snage 460 W na naponu 230 V?",
+      "odgovori": [
+        "2 A",
+        "0,5 A",
+        "690 A",
+        "230 A"
+      ],
+      "zanimljivost": "I = P/U = 460/230 = 2 A.",
+      "rec": "struja"
+    },
+    {
+      "lekcija": 21,
+      "tezina": 2,
+      "pitanje": "Šta je Džulov zakon?",
+      "odgovori": [
+        "Struja kroz provodnik oslobađa toplotu srazmernu otporu, kvadratu struje i vremenu",
+        "Struja ne greje",
+        "Napon greje",
+        "Otpor hladi"
+      ],
+      "zanimljivost": "Na ovom zakonu rade bojler, šporet, pegla i tost-aparat.",
+      "rec": "džul"
+    },
+    {
+      "lekcija": 21,
+      "tezina": 1,
+      "pitanje": "Koji uređaj u kući obično troši najviše energije?",
+      "odgovori": [
+        "Bojler i grejalice",
+        "Punjač telefona",
+        "Sat",
+        "LED sijalica"
+      ],
+      "zanimljivost": "Grejanje vode i prostora čini veliki deo računa za struju.",
+      "rec": "bojler"
+    },
+    {
+      "lekcija": 21,
+      "tezina": 2,
+      "pitanje": "Zašto LED sijalice štede energiju?",
+      "odgovori": [
+        "Veći deo energije pretvaraju u svetlost, a manje u toplotu",
+        "Svetle slabije",
+        "Rade bez struje",
+        "Kraće rade"
+      ],
+      "zanimljivost": "Stara sijalica sa užarenom niti pretvara u svetlost samo oko 5% energije.",
+      "rec": "led"
+    },
+    {
+      "lekcija": 21,
+      "tezina": 3,
+      "pitanje": "Koliko košta rad grejalice od 2 kW tokom 3 sata ako je kWh 10 dinara?",
+      "odgovori": [
+        "60 dinara",
+        "6 dinara",
+        "20 dinara",
+        "600 dinara"
+      ],
+      "zanimljivost": "E = 2 kW · 3 h = 6 kWh; 6 · 10 = 60 dinara.",
+      "rec": "cena"
+    },
+    {
+      "lekcija": 21,
+      "tezina": 2,
+      "pitanje": "Šta je „stand-by“ potrošnja?",
+      "odgovori": [
+        "Struja koju uređaji troše dok su ugašeni ali uključeni u utičnicu",
+        "Struja pri punom radu",
+        "Struja u bateriji",
+        "Ne postoji"
+      ],
+      "zanimljivost": "Uređaji u stanju pripravnosti mogu činiti nekoliko procenata godišnje potrošnje domaćinstva.",
+      "rec": "pripravnost"
+    },
+    {
+      "lekcija": 21,
+      "tezina": 1,
+      "pitanje": "Šta pretvara električnu energiju u toplotu?",
+      "odgovori": [
+        "Grejač",
+        "Zvučnik",
+        "Ventilator samo",
+        "Antena"
+      ],
+      "zanimljivost": "U tost-aparatu žice se usijaju do crvene boje.",
+      "rec": "grejač"
+    },
+    {
+      "lekcija": 21,
+      "tezina": 3,
+      "pitanje": "Zašto se dalekovodi grade sa veoma visokim naponom (stotine hiljada volti)?",
+      "odgovori": [
+        "Za istu snagu manja je struja, pa su manji gubici na toplotu",
+        "Da struja brže putuje",
+        "Zbog ptica",
+        "Zbog lepote"
+      ],
+      "zanimljivost": "Transformatori podižu napon za prenos, a zatim ga spuštaju na 230 V za kuće.",
+      "rec": "dalekovod"
+    },
+    {
+      "lekcija": 21,
+      "tezina": 2,
+      "pitanje": "Koja je snaga uređaja koji na 230 V uzima 10 A?",
+      "odgovori": [
+        "2.300 W",
+        "23 W",
+        "230 W",
+        "10 W"
+      ],
+      "zanimljivost": "To je otprilike snaga veće grejalice ili bojlera.",
+      "rec": "snaga"
+    },
+    {
+      "lekcija": 21,
+      "tezina": 2,
+      "pitanje": "Kako električni automobil pretvara energiju?",
+      "odgovori": [
+        "Električnu u kinetičku pomoću elektromotora",
+        "Hemijsku u toplotu",
+        "Sunčevu direktno",
+        "Toplotnu u svetlost"
+      ],
+      "zanimljivost": "Električni automobili troše oko 15–20 kWh na 100 km.",
+      "rec": "automobil"
+    },
+    {
+      "lekcija": 21,
+      "tezina": 1,
+      "pitanje": "Šta je kilovat-čas?",
+      "odgovori": [
+        "Jedinica za energiju",
+        "Jedinica za snagu",
+        "Jedinica za napon",
+        "Jedinica za vreme"
+      ],
+      "zanimljivost": "1 kWh = 3,6 miliona džula.",
+      "rec": "kilovat"
+    },
+    {
+      "lekcija": 21,
+      "tezina": 3,
+      "pitanje": "Zašto pregoreva osigurač pri preopterećenju?",
+      "odgovori": [
+        "Velika struja zagreje tanku žicu osigurača i ona se istopi",
+        "Zbog magneta",
+        "Zbog napona",
+        "Zbog svetlosti"
+      ],
+      "zanimljivost": "Moderni automatski osigurači se ne tope – „iskoče“ i mogu se ponovo uključiti.",
+      "rec": "topljenje"
+    },
+    {
+      "lekcija": 22,
+      "tezina": 1,
+      "pitanje": "Da li destilovana (čista) voda dobro provodi struju?",
+      "odgovori": [
+        "Ne, veoma slabo",
+        "Da, odlično",
+        "Kao bakar",
+        "Bolje od metala"
+      ],
+      "zanimljivost": "Struju dobro provodi voda u kojoj su rastvorene soli – kao voda iz česme ili morska voda.",
+      "rec": "voda"
+    },
+    {
+      "lekcija": 22,
+      "tezina": 2,
+      "pitanje": "Šta su elektroliti?",
+      "odgovori": [
+        "Rastvori ili rastopi koji provode struju zbog jona",
+        "Metali",
+        "Izolatori",
+        "Gasovi uvek"
+      ],
+      "zanimljivost": "So rastvorena u vodi raspada se na jone natrijuma i hlora.",
+      "rec": "elektrolit"
+    },
+    {
+      "lekcija": 22,
+      "tezina": 2,
+      "pitanje": "Šta je elektroliza?",
+      "odgovori": [
+        "Razlaganje supstance prolaskom struje kroz elektrolit",
+        "Topljenje metala",
+        "Isparavanje vode",
+        "Sagorevanje"
+      ],
+      "zanimljivost": "Elektrolizom vode dobijaju se vodonik i kiseonik.",
+      "rec": "elektroliza"
+    },
+    {
+      "lekcija": 22,
+      "tezina": 3,
+      "pitanje": "Šta je galvanizacija?",
+      "odgovori": [
+        "Prevlačenje predmeta tankim slojem metala pomoću elektrolize",
+        "Bojenje predmeta",
+        "Topljenje metala",
+        "Hlađenje"
+      ],
+      "zanimljivost": "Tako se pozlaćuje nakit i hromira deo automobila.",
+      "rec": "zlato"
+    },
+    {
+      "lekcija": 22,
+      "tezina": 2,
+      "pitanje": "Kako struja prolazi kroz gas?",
+      "odgovori": [
+        "Kada se gas jonizuje, npr. u fluorescentnoj cevi ili munji",
+        "Nikada",
+        "Uvek lako",
+        "Kroz molekule kiseonika samo"
+      ],
+      "zanimljivost": "Neonske reklame svetle jer struja prolazi kroz razređen neon.",
+      "rec": "neon"
+    },
+    {
+      "lekcija": 22,
+      "tezina": 1,
+      "pitanje": "Zašto je opasno koristiti fen pored kade sa vodom?",
+      "odgovori": [
+        "Voda iz česme provodi struju i može doći do strujnog udara",
+        "Voda se zagreje",
+        "Fen se pokvari",
+        "Nema opasnosti"
+      ],
+      "zanimljivost": "U kupatilu se električni uređaji drže daleko od vode, a instalacija mora imati zaštitnu sklopku.",
+      "rec": "kupatilo"
+    },
+    {
+      "lekcija": 22,
+      "tezina": 2,
+      "pitanje": "Na kom principu radi akumulator u automobilu?",
+      "odgovori": [
+        "Na hemijskim reakcijama u elektrolitu",
+        "Na magnetima",
+        "Na suncu",
+        "Na trenju"
+      ],
+      "zanimljivost": "Olovni akumulator izumljen je još 1859. godine.",
+      "rec": "akumulator"
+    },
+    {
+      "lekcija": 22,
+      "tezina": 3,
+      "pitanje": "Kako se dobija aluminijum iz rude?",
+      "odgovori": [
+        "Elektrolizom rastopljene rude",
+        "Topljenjem na vatri",
+        "Magnetom",
+        "Destilacijom"
+      ],
+      "zanimljivost": "Sredinom 19. veka aluminijum je bio skuplji od srebra – Napoleon III je za najvažnije goste imao pribor za jelo od aluminijuma. Pojeftinio je tek posle 1886, kada je izumljen postupak elektrolize.",
+      "rec": "aluminijum"
+    },
+    {
+      "lekcija": 22,
+      "tezina": 2,
+      "pitanje": "Šta je plazma u fizici?",
+      "odgovori": [
+        "Jonizovan gas koji provodi struju",
+        "Krvna plazma",
+        "Tečnost",
+        "Čvrsto telo"
+      ],
+      "zanimljivost": "Sunce, munje i polarna svetlost su primeri plazme.",
+      "rec": "plazma"
+    },
+    {
+      "lekcija": 22,
+      "tezina": 1,
+      "pitanje": "Šta su joni?",
+      "odgovori": [
+        "Naelektrisani atomi ili molekuli",
+        "Neutralni atomi",
+        "Elektroni",
+        "Neutroni"
+      ],
+      "zanimljivost": "Pozitivni joni zovu se katjoni, a negativni anjoni.",
+      "rec": "jon"
+    },
+    {
+      "lekcija": 22,
+      "tezina": 3,
+      "pitanje": "Šta je katoda u elektrolizi?",
+      "odgovori": [
+        "Negativna elektroda, ka kojoj idu pozitivni joni",
+        "Pozitivna elektroda",
+        "Rastvor",
+        "Izvor"
+      ],
+      "zanimljivost": "Pozitivna elektroda zove se anoda.",
+      "rec": "katoda"
+    },
+    {
+      "lekcija": 22,
+      "tezina": 2,
+      "pitanje": "Zašto se ljudi ne smeju kupati u reci ili jezeru za vreme grmljavine?",
+      "odgovori": [
+        "Voda provodi struju munje na velike udaljenosti",
+        "Voda je hladna",
+        "Ribe ujedaju",
+        "Nema opasnosti"
+      ],
+      "zanimljivost": "Munja koja udari u vodu širi se po površini desetinama metara.",
+      "rec": "reka"
+    },
+    {
+      "lekcija": 22,
+      "tezina": 2,
+      "pitanje": "Kako svetli fluorescentna cev?",
+      "odgovori": [
+        "Struja kroz živine pare stvara UV zračenje, koje premaz pretvara u vidljivu svetlost",
+        "Užarenom niti",
+        "Plamenom",
+        "Magnetom"
+      ],
+      "zanimljivost": "Zato se fluorescentne cevi ne smeju razbijati – sadrže malo žive.",
+      "rec": "cev"
+    },
+    {
+      "lekcija": 22,
+      "tezina": 3,
+      "pitanje": "Ko je otkrio zakone elektrolize?",
+      "odgovori": [
+        "Majkl Faradej",
+        "Volta",
+        "Om",
+        "Edison"
+      ],
+      "zanimljivost": "Faradej je uveo reči elektroda, anoda, katoda, jon i elektrolit.",
+      "rec": "faradej"
+    },
+    {
+      "lekcija": 22,
+      "tezina": 1,
+      "pitanje": "Da li morska voda provodi struju?",
+      "odgovori": [
+        "Da, dobro, jer sadrži mnogo rastvorenih soli",
+        "Ne",
+        "Samo noću",
+        "Samo leti"
+      ],
+      "zanimljivost": "Električne ribe i ajkule koriste provodljivost vode da otkriju plen.",
+      "rec": "more"
+    },
+    {
+      "lekcija": 23,
+      "tezina": 1,
+      "pitanje": "Koje supstance magnet jako privlači?",
+      "odgovori": [
+        "Gvožđe, nikl i kobalt",
+        "Bakar i aluminijum",
+        "Drvo i staklo",
+        "Zlato i srebro"
+      ],
+      "zanimljivost": "Ove supstance zovu se feromagnetici.",
+      "rec": "gvožđe",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "🧲📎🔩"
+      }
+    },
+    {
+      "lekcija": 23,
+      "tezina": 2,
+      "pitanje": "Šta je magnetit?",
+      "odgovori": [
+        "Prirodni magnetni mineral (kamen)",
+        "Vrsta legure",
+        "Plastični magnet",
+        "Vrsta baterije"
+      ],
+      "zanimljivost": "Prema legendi, ime potiče od pastira Magnesa čije su se gvozdene čavle zalepile za stenu.",
+      "rec": "magnetit"
+    },
+    {
+      "lekcija": 23,
+      "tezina": 2,
+      "pitanje": "Šta su linije magnetnog polja?",
+      "odgovori": [
+        "Zamišljene linije koje pokazuju pravac magnetne sile; izlaze iz severnog i ulaze u južni pol",
+        "Žice u magnetu",
+        "Gvozdeni opiljci",
+        "Ne postoje"
+      ],
+      "zanimljivost": "Gvozdeni opiljci oko magneta poređaju se upravo duž ovih linija.",
+      "rec": "linije"
+    },
+    {
+      "lekcija": 23,
+      "tezina": 3,
+      "pitanje": "Gde se nalazi južni magnetni pol Zemlje?",
+      "odgovori": [
+        "Blizu geografskog severnog pola",
+        "Na Južnom polu tačno",
+        "Na ekvatoru",
+        "U Srbiji"
+      ],
+      "zanimljivost": "Zato severni pol igle kompasa pokazuje na geografski sever.",
+      "rec": "pol"
+    },
+    {
+      "lekcija": 23,
+      "tezina": 2,
+      "pitanje": "Šta se dobija kada se magnet prepolovi?",
+      "odgovori": [
+        "Dva nova magneta, svaki sa oba pola",
+        "Severni i južni pol odvojeno",
+        "Nemagnetno gvožđe",
+        "Ništa"
+      ],
+      "zanimljivost": "Izolovan magnetni pol (monopol) nikada nije pronađen.",
+      "rec": "polovi"
+    },
+    {
+      "lekcija": 23,
+      "tezina": 1,
+      "pitanje": "Šta pokazuje igla kompasa?",
+      "odgovori": [
+        "Smer sever–jug",
+        "Brzinu",
+        "Temperaturu",
+        "Vreme"
+      ],
+      "zanimljivost": "Kompas su Kinezi koristili za plovidbu oko 11. veka.",
+      "rec": "kompas",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "🧭"
+      }
+    },
+    {
+      "lekcija": 23,
+      "tezina": 2,
+      "pitanje": "Šta štiti Zemlju od naelektrisanih čestica sa Sunca?",
+      "odgovori": [
+        "Zemljino magnetno polje",
+        "Ozonski omotač samo",
+        "Oblaci",
+        "Mesec"
+      ],
+      "zanimljivost": "Polarna svetlost nastaje kada te čestice uđu u atmosferu blizu polova.",
+      "rec": "zaštita"
+    },
+    {
+      "lekcija": 23,
+      "tezina": 3,
+      "pitanje": "Da li se Zemljini magnetni polovi menjaju?",
+      "odgovori": [
+        "Da, sporo se pomeraju, a kroz istoriju su se i obrtali",
+        "Nikada",
+        "Svakog dana",
+        "Samo zimi"
+      ],
+      "zanimljivost": "Poslednje obrtanje polova desilo se pre oko 780.000 godina – tragovi su ostali u stenama.",
+      "rec": "obrtanje"
+    },
+    {
+      "lekcija": 23,
+      "tezina": 2,
+      "pitanje": "Kako životinje koriste Zemljino magnetno polje?",
+      "odgovori": [
+        "Ptice selice, kornjače i ribe se po njemu orijentišu",
+        "Ne koriste ga",
+        "Za ishranu",
+        "Za razmnožavanje"
+      ],
+      "zanimljivost": "Morske kornjače se posle više godina vraćaju na istu plažu gde su se izlegle.",
+      "rec": "selica"
+    },
+    {
+      "lekcija": 23,
+      "tezina": 1,
+      "pitanje": "Da li magnet privlači aluminijumsku limenku?",
+      "odgovori": [
+        "Ne",
+        "Da, jako",
+        "Samo hladnu",
+        "Samo punu"
+      ],
+      "zanimljivost": "Zato se na reciklaži magnetom odvajaju čelične od aluminijumskih limenki.",
+      "rec": "limenka"
+    },
+    {
+      "lekcija": 23,
+      "tezina": 3,
+      "pitanje": "Šta je Kirijeva tačka?",
+      "odgovori": [
+        "Temperatura iznad koje materijal gubi feromagnetna svojstva",
+        "Tačka na kompasu",
+        "Polje magneta",
+        "Najjači magnet"
+      ],
+      "zanimljivost": "Za gvožđe je to oko 770 °C – nazvana je po Pjeru Kiriju.",
+      "rec": "kiri"
+    },
+    {
+      "lekcija": 23,
+      "tezina": 2,
+      "pitanje": "Kako se neko gvozdeno telo može namagnetisati?",
+      "odgovori": [
+        "Trljanjem magnetom u istom smeru ili u magnetnom polju",
+        "Bojenjem",
+        "Kuvanjem",
+        "Hlađenjem"
+      ],
+      "zanimljivost": "Šrafciger se lako namagnetiše – zgodno je za vađenje šrafova.",
+      "rec": "šrafciger"
+    },
+    {
+      "lekcija": 23,
+      "tezina": 2,
+      "pitanje": "Šta su neodijumski magneti?",
+      "odgovori": [
+        "Veoma jaki trajni magneti od legure neodijuma, gvožđa i bora",
+        "Elektromagneti",
+        "Plastični magneti",
+        "Prirodni kamen"
+      ],
+      "zanimljivost": "Nalaze se u slušalicama, motorima i hard-diskovima.",
+      "rec": "neodijum"
+    },
+    {
+      "lekcija": 23,
+      "tezina": 1,
+      "pitanje": "Gde je magnetno polje magneta najjače?",
+      "odgovori": [
+        "Na polovima",
+        "U sredini",
+        "Svuda isto",
+        "Nigde"
+      ],
+      "zanimljivost": "Zato se ekseri najviše lepe na krajevima šipkastog magneta.",
+      "rec": "polovi"
+    },
+    {
+      "lekcija": 23,
+      "tezina": 3,
+      "pitanje": "Šta je magnetna rezonancija (MR) u medicini?",
+      "odgovori": [
+        "Snimanje unutrašnjosti tela pomoću jakog magnetnog polja i radio-talasa",
+        "Rendgen",
+        "Ultrazvuk",
+        "Termometar"
+      ],
+      "zanimljivost": "Pre ulaska u MR moraju se skinuti svi metalni predmeti – polje je hiljadama puta jače od Zemljinog.",
+      "rec": "magnet"
+    },
+    {
+      "lekcija": 24,
+      "tezina": 1,
+      "pitanje": "Ko je otkrio da električna struja stvara magnetno polje?",
+      "odgovori": [
+        "Hans Kristijan Ersted",
+        "Isak Njutn",
+        "Galileo Galilej",
+        "Arhimed"
+      ],
+      "zanimljivost": "Ersted je 1820. tokom predavanja primetio da se igla kompasa pomera kada se uključi struja.",
+      "rec": "ersted"
+    },
+    {
+      "lekcija": 24,
+      "tezina": 2,
+      "pitanje": "Kakve su linije magnetnog polja oko pravog provodnika sa strujom?",
+      "odgovori": [
+        "Koncentrični krugovi oko provodnika",
+        "Prave linije",
+        "Nema polja",
+        "Kvadrati"
+      ],
+      "zanimljivost": "Smer linija određuje se „pravilom desne ruke“.",
+      "rec": "krugovi"
+    },
+    {
+      "lekcija": 24,
+      "tezina": 2,
+      "pitanje": "Šta je elektromagnet?",
+      "odgovori": [
+        "Kalem sa gvozdenim jezgrom koji je magnet samo dok teče struja",
+        "Trajni magnet",
+        "Baterija",
+        "Sijalica"
+      ],
+      "zanimljivost": "Elektromagnetne dizalice podižu automobile na otpadu.",
+      "rec": "kalem"
+    },
+    {
+      "lekcija": 24,
+      "tezina": 3,
+      "pitanje": "Kako se može pojačati elektromagnet?",
+      "odgovori": [
+        "Većom strujom, većim brojem navojaka i gvozdenim jezgrom",
+        "Bojenjem",
+        "Hlađenjem samo",
+        "Smanjenjem struje"
+      ],
+      "zanimljivost": "Najjači elektromagneti koriste superprovodne kalemove hlađene tečnim helijumom.",
+      "rec": "navojci"
+    },
+    {
+      "lekcija": 24,
+      "tezina": 2,
+      "pitanje": "Gde se koristi elektromagnet?",
+      "odgovori": [
+        "U zvonu, zvučniku, relejima i električnim motorima",
+        "U termometru",
+        "U lenjiru",
+        "U olovci"
+      ],
+      "zanimljivost": "Kućno zvonce radi tako što elektromagnet stalno privlači i pušta čekić.",
+      "rec": "zvono"
+    },
+    {
+      "lekcija": 24,
+      "tezina": 1,
+      "pitanje": "Šta je solenoid?",
+      "odgovori": [
+        "Kalem žice kroz koji teče struja",
+        "Magnetni kamen",
+        "Vrsta baterije",
+        "Sijalica"
+      ],
+      "zanimljivost": "Polje u solenoidu liči na polje šipkastog magneta.",
+      "rec": "solenoid"
+    },
+    {
+      "lekcija": 24,
+      "tezina": 2,
+      "pitanje": "Kako se okreće igla kompasa pored žice kada se promeni smer struje?",
+      "odgovori": [
+        "Okrene se na suprotnu stranu",
+        "Ne pomera se",
+        "Okreće se stalno",
+        "Nestaje"
+      ],
+      "zanimljivost": "Smer magnetnog polja zavisi od smera struje.",
+      "rec": "smer"
+    },
+    {
+      "lekcija": 24,
+      "tezina": 3,
+      "pitanje": "Kako leti maglev voz?",
+      "odgovori": [
+        "Elektromagneti ga podižu iznad šina i pokreću bez dodira",
+        "Na točkovima",
+        "Na mlaznim motorima",
+        "Na vazdušnom jastuku"
+      ],
+      "zanimljivost": "Bez trenja o šine, maglev vozovi postižu brzine i preko 600 km/h na probnim vožnjama.",
+      "rec": "maglev"
+    },
+    {
+      "lekcija": 24,
+      "tezina": 2,
+      "pitanje": "Ko je u Srbiji proučavao i razvio pronalaske zasnovane na elektromagnetizmu, npr. obrtno magnetno polje?",
+      "odgovori": [
+        "Nikola Tesla",
+        "Mihajlo Pupin",
+        "Milutin Milanković",
+        "Pavle Savić"
+      ],
+      "zanimljivost": "Teslin asinhroni motor sa obrtnim magnetnim poljem i danas pokreće većinu industrijskih mašina.",
+      "rec": "tesla"
+    },
+    {
+      "lekcija": 24,
+      "tezina": 1,
+      "pitanje": "Šta se dešava sa elektromagnetom kada se isključi struja?",
+      "odgovori": [
+        "Gubi magnetna svojstva",
+        "Postaje jači",
+        "Pretvara se u bateriju",
+        "Ništa"
+      ],
+      "zanimljivost": "Zato se elektromagneti koriste za brave koje se otključavaju strujom.",
+      "rec": "isključenje"
+    },
+    {
+      "lekcija": 24,
+      "tezina": 2,
+      "pitanje": "Koja je jedinica za magnetnu indukciju?",
+      "odgovori": [
+        "Tesla (T)",
+        "Volt",
+        "Amper",
+        "Herc"
+      ],
+      "zanimljivost": "Zemljino polje je oko 0,00005 T, a MR aparat ima 1,5–3 T.",
+      "rec": "tesla"
+    },
+    {
+      "lekcija": 24,
+      "tezina": 3,
+      "pitanje": "Ko je pokazao da i promenljivo magnetno polje stvara struju (elektromagnetna indukcija)?",
+      "odgovori": [
+        "Majkl Faradej",
+        "Ersted",
+        "Om",
+        "Amper"
+      ],
+      "zanimljivost": "Na Faradejevom otkriću (1831) rade svi generatori struje u elektranama.",
+      "rec": "indukcija"
+    },
+    {
+      "lekcija": 24,
+      "tezina": 2,
+      "pitanje": "Kako radi generator?",
+      "odgovori": [
+        "Okretanjem kalema u magnetnom polju indukuje se struja",
+        "Sagoreva gorivo u kalemu",
+        "Ima bateriju unutra",
+        "Pomoću svetlosti"
+      ],
+      "zanimljivost": "Dinamo na biciklu je mali generator – točak okreće magnet i svetlo svetli.",
+      "rec": "generator"
+    },
+    {
+      "lekcija": 24,
+      "tezina": 2,
+      "pitanje": "Šta je transformator?",
+      "odgovori": [
+        "Uređaj koji menja napon naizmenične struje",
+        "Baterija",
+        "Prekidač",
+        "Motor"
+      ],
+      "zanimljivost": "Punjač telefona sadrži mali transformator ili elektroniku koja spušta 230 V na oko 5 V.",
+      "rec": "napon"
+    },
+    {
+      "lekcija": 24,
+      "tezina": 1,
+      "pitanje": "Zašto struja u žici skreće iglu kompasa?",
+      "odgovori": [
+        "Oko žice nastaje magnetno polje",
+        "Zbog toplote",
+        "Zbog svetlosti",
+        "Ne skreće"
+      ],
+      "zanimljivost": "Ovim otkrićem su elektricitet i magnetizam spojeni u jednu nauku – elektromagnetizam.",
+      "rec": "polje"
+    },
+    {
+      "lekcija": 25,
+      "tezina": 1,
+      "pitanje": "Šta se dešava sa provodnikom sa strujom u magnetnom polju?",
+      "odgovori": [
+        "Na njega deluje sila",
+        "Ništa",
+        "Zagreje se samo",
+        "Postaje magnet trajno"
+      ],
+      "zanimljivost": "Ova sila (Amperova sila) pokreće sve električne motore.",
+      "rec": "sila"
+    },
+    {
+      "lekcija": 25,
+      "tezina": 2,
+      "pitanje": "Na kom principu radi električni motor?",
+      "odgovori": [
+        "Magnetno polje deluje silom na provodnik sa strujom i okreće ga",
+        "Na sagorevanju",
+        "Na pari",
+        "Na trenju"
+      ],
+      "zanimljivost": "Električni motori su u frižideru, veš-mašini, fenu, bušilici i električnom autu.",
+      "rec": "motor"
+    },
+    {
+      "lekcija": 25,
+      "tezina": 2,
+      "pitanje": "Šta određuje smer sile na provodnik u magnetnom polju?",
+      "odgovori": [
+        "Smer struje i smer magnetnog polja",
+        "Samo boja žice",
+        "Samo debljina žice",
+        "Temperatura"
+      ],
+      "zanimljivost": "Za određivanje smera koristi se „pravilo leve ruke“.",
+      "rec": "smer"
+    },
+    {
+      "lekcija": 25,
+      "tezina": 3,
+      "pitanje": "Šta je kolektor (komutator) u motoru jednosmerne struje?",
+      "odgovori": [
+        "Deo koji menja smer struje u kalemu da bi se okretao stalno u istom smeru",
+        "Magnet",
+        "Kućište",
+        "Baterija"
+      ],
+      "zanimljivost": "Bez komutatora bi kalem samo „klecnuo“ i zaustavio se.",
+      "rec": "komutator"
+    },
+    {
+      "lekcija": 25,
+      "tezina": 2,
+      "pitanje": "Kako radi zvučnik?",
+      "odgovori": [
+        "Struja kroz kalem u polju magneta pokreće membranu koja stvara zvuk",
+        "Svetlošću",
+        "Toplotom",
+        "Vodom"
+      ],
+      "zanimljivost": "Mikrofon radi obrnuto – zvuk pomera membranu i stvara struju.",
+      "rec": "zvučnik"
+    },
+    {
+      "lekcija": 25,
+      "tezina": 1,
+      "pitanje": "Šta pretvara električni motor?",
+      "odgovori": [
+        "Električnu energiju u mehaničku",
+        "Mehaničku u električnu",
+        "Toplotu u svetlost",
+        "Zvuk u struju"
+      ],
+      "zanimljivost": "Generator radi obrnuto – mehaničku energiju pretvara u električnu.",
+      "rec": "motor"
+    },
+    {
+      "lekcija": 25,
+      "tezina": 3,
+      "pitanje": "Šta je ampermetar sa okretnim kalemom?",
+      "odgovori": [
+        "Instrument u kojem sila na kalem sa strujom pomera kazaljku",
+        "Digitalni sat",
+        "Barometar",
+        "Termometar"
+      ],
+      "zanimljivost": "Starinski analogni instrumenti rade na ovom principu – kazaljka skreće srazmerno struji.",
+      "rec": "kazaljka"
+    },
+    {
+      "lekcija": 25,
+      "tezina": 2,
+      "pitanje": "Kako se može promeniti smer okretanja motora jednosmerne struje?",
+      "odgovori": [
+        "Promenom smera struje ili polova magneta",
+        "Bojenjem",
+        "Hlađenjem",
+        "Ne može"
+      ],
+      "zanimljivost": "Električni automobili tako „idu unazad“ bez posebnog menjača.",
+      "rec": "unazad"
+    },
+    {
+      "lekcija": 25,
+      "tezina": 2,
+      "pitanje": "Zašto se dve paralelne žice sa strujom istog smera privlače?",
+      "odgovori": [
+        "Svaka je u magnetnom polju one druge",
+        "Zbog gravitacije",
+        "Zbog toplote",
+        "Odbijaju se uvek"
+      ],
+      "zanimljivost": "Na ovoj pojavi bila je zasnovana definicija ampera sve do 2019.",
+      "rec": "amper"
+    },
+    {
+      "lekcija": 25,
+      "tezina": 1,
+      "pitanje": "Gde se koriste električni motori u kući?",
+      "odgovori": [
+        "U veš-mašini, frižideru, fenu, mikseru",
+        "U sijalici",
+        "U ogledalu",
+        "U jastuku"
+      ],
+      "zanimljivost": "U prosečnoj kući ima desetine električnih motora.",
+      "rec": "kuća"
+    },
+    {
+      "lekcija": 25,
+      "tezina": 3,
+      "pitanje": "Zašto se elektroni u katodnoj cevi starog televizora skreću magnetom?",
+      "odgovori": [
+        "Na naelektrisane čestice u kretanju deluje magnetna sila",
+        "Zbog gravitacije",
+        "Zbog toplote",
+        "Ne skreću"
+      ],
+      "zanimljivost": "Zato je magnet prinesen ekranu starog TV-a izobličavao sliku – ne pokušavaj to kod kuće!",
+      "rec": "katodna"
+    },
+    {
+      "lekcija": 25,
+      "tezina": 2,
+      "pitanje": "Šta je Lorencova sila?",
+      "odgovori": [
+        "Sila kojom magnetno polje deluje na naelektrisanu česticu u kretanju",
+        "Sila trenja",
+        "Sila gravitacije",
+        "Sila elastičnosti"
+      ],
+      "zanimljivost": "Ona usmerava čestice sa Sunca ka polovima Zemlje – i stvara polarnu svetlost.",
+      "rec": "lorenc"
+    },
+    {
+      "lekcija": 25,
+      "tezina": 1,
+      "pitanje": "Koji pronalazač se smatra „ocem“ naizmeničnih motora?",
+      "odgovori": [
+        "Nikola Tesla",
+        "Tomas Edison",
+        "Aleksandar Bel",
+        "Džejms Vat"
+      ],
+      "zanimljivost": "Teslin asinhroni motor patentiran je 1888. godine.",
+      "rec": "tesla"
+    },
+    {
+      "lekcija": 25,
+      "tezina": 3,
+      "pitanje": "Kako akcelerator čestica (npr. u CERN-u) drži čestice na kružnoj putanji?",
+      "odgovori": [
+        "Jakim elektromagnetima",
+        "Ogledalima",
+        "Gravitacijom",
+        "Trenjem"
+      ],
+      "zanimljivost": "U LHC-u ima više od 1.200 superprovodnih magneta.",
+      "rec": "cern"
+    },
+    {
+      "lekcija": 25,
+      "tezina": 2,
+      "pitanje": "Kako hard disk zapisuje podatke?",
+      "odgovori": [
+        "Magnetizuje sićušne delove ploče",
+        "Laserom spaljuje",
+        "Mastilom",
+        "Zvukom"
+      ],
+      "zanimljivost": "Glava diska lebdi nanometrima iznad ploče koja se okreće hiljadama obrtaja u minuti.",
+      "rec": "disk"
+    },
+    {
+      "lekcija": 26,
+      "tezina": 1,
+      "pitanje": "Od čega je građen atom?",
+      "odgovori": [
+        "Od jezgra (protoni i neutroni) i elektronskog omotača",
+        "Samo od elektrona",
+        "Od molekula",
+        "Od svetlosti"
+      ],
+      "zanimljivost": "Jezgro je oko 100.000 puta manje od atoma – kada bi atom bio stadion, jezgro bi bilo zrno graška na sredini.",
+      "rec": "atom",
+      "mediji": {
+        "vrsta": "atom",
+        "ljuske": [
+          2,
+          8,
+          1
+        ],
+        "jezgro": "11+"
+      }
+    },
+    {
+      "lekcija": 26,
+      "tezina": 2,
+      "pitanje": "Ko je otkrio atomsko jezgro ogledom sa zlatnom folijom?",
+      "odgovori": [
+        "Ernest Raderford",
+        "Nils Bor",
+        "Džon Dalton",
+        "Albert Ajnštajn"
+      ],
+      "zanimljivost": "Većina alfa-čestica prošla je kroz foliju, a neke su se odbile – kao da „metak odskoči od maramice“.",
+      "rec": "raderford"
+    },
+    {
+      "lekcija": 26,
+      "tezina": 2,
+      "pitanje": "Kako se zovu čestice u jezgru atoma?",
+      "odgovori": [
+        "Protoni i neutroni (nukleoni)",
+        "Elektroni",
+        "Fotoni",
+        "Joni"
+      ],
+      "zanimljivost": "Proton je oko 1.836 puta teži od elektrona.",
+      "rec": "nukleoni"
+    },
+    {
+      "lekcija": 26,
+      "tezina": 3,
+      "pitanje": "Šta je redni (atomski) broj elementa?",
+      "odgovori": [
+        "Broj protona u jezgru",
+        "Broj neutrona",
+        "Masa atoma",
+        "Broj elektrona u poslednjoj ljusci"
+      ],
+      "zanimljivost": "Atom sa 6 protona je uvek ugljenik, a sa 8 – kiseonik.",
+      "rec": "redni"
+    },
+    {
+      "lekcija": 26,
+      "tezina": 2,
+      "pitanje": "Ko je predložio model atoma u kome elektroni kruže po određenim putanjama?",
+      "odgovori": [
+        "Nils Bor",
+        "Raderford",
+        "Tomson",
+        "Demokrit"
+      ],
+      "zanimljivost": "Bor je dobio Nobelovu nagradu 1922. godine.",
+      "rec": "bor",
+      "mediji": {
+        "vrsta": "atom",
+        "ljuske": [
+          2,
+          4
+        ],
+        "jezgro": "6+"
+      }
+    },
+    {
+      "lekcija": 26,
+      "tezina": 1,
+      "pitanje": "Kakvo je naelektrisanje jezgra atoma?",
+      "odgovori": [
+        "Pozitivno",
+        "Negativno",
+        "Neutralno",
+        "Promenljivo"
+      ],
+      "zanimljivost": "Pozitivno jezgro privlači negativne elektrone.",
+      "rec": "jezgro"
+    },
+    {
+      "lekcija": 26,
+      "tezina": 2,
+      "pitanje": "Šta je maseni broj?",
+      "odgovori": [
+        "Ukupan broj protona i neutrona u jezgru",
+        "Broj elektrona",
+        "Broj protona samo",
+        "Masa elektrona"
+      ],
+      "zanimljivost": "Za ugljenik-12: 6 protona + 6 neutrona = 12.",
+      "rec": "maseni"
+    },
+    {
+      "lekcija": 26,
+      "tezina": 3,
+      "pitanje": "Ko je otkrio elektron 1897. godine?",
+      "odgovori": [
+        "Dž. Dž. Tomson",
+        "Raderford",
+        "Bor",
+        "Čedvik"
+      ],
+      "zanimljivost": "Tomson je zamislio atom kao „puding sa suvim grožđem“ – elektroni utisnuti u pozitivnu masu.",
+      "rec": "tomson"
+    },
+    {
+      "lekcija": 26,
+      "tezina": 2,
+      "pitanje": "Koliko je atom „prazan“?",
+      "odgovori": [
+        "Gotovo potpuno – skoro sva masa je u sićušnom jezgru",
+        "Uopšte nije prazan",
+        "Pola je prazno",
+        "Atom je pun vode"
+      ],
+      "zanimljivost": "Kada bi se iz svih atoma ljudi izbacio „prazan prostor“, celo čovečanstvo stalo bi u zapreminu kocke šećera.",
+      "rec": "praznina"
+    },
+    {
+      "lekcija": 26,
+      "tezina": 1,
+      "pitanje": "Koja čestica kruži oko jezgra?",
+      "odgovori": [
+        "Elektron",
+        "Proton",
+        "Neutron",
+        "Foton"
+      ],
+      "zanimljivost": "Elektroni u atomu ne kruže kao planete – nalaze se u „oblacima“ verovatnoće.",
+      "rec": "elektron"
+    },
+    {
+      "lekcija": 26,
+      "tezina": 3,
+      "pitanje": "Šta drži protone u jezgru uprkos njihovom električnom odbijanju?",
+      "odgovori": [
+        "Jaka nuklearna sila",
+        "Gravitacija",
+        "Magnetna sila",
+        "Trenje"
+      ],
+      "zanimljivost": "Nuklearna sila je najjača poznata sila, ali deluje samo na veoma malim rastojanjima.",
+      "rec": "nuklearna"
+    },
+    {
+      "lekcija": 26,
+      "tezina": 2,
+      "pitanje": "Šta je kvark?",
+      "odgovori": [
+        "Još sitnija čestica od koje su građeni protoni i neutroni",
+        "Vrsta atoma",
+        "Elektron",
+        "Molekul"
+      ],
+      "zanimljivost": "Proton se sastoji od tri kvarka – dva „gornja“ i jednog „donjeg“.",
+      "rec": "kvark"
+    },
+    {
+      "lekcija": 26,
+      "tezina": 2,
+      "pitanje": "Koji je najjednostavniji atom?",
+      "odgovori": [
+        "Vodonik – jedan proton i jedan elektron",
+        "Helijum",
+        "Ugljenik",
+        "Uranijum"
+      ],
+      "zanimljivost": "Vodonik čini oko 74% mase vidljive materije u svemiru.",
+      "rec": "vodonik",
+      "mediji": {
+        "vrsta": "atom",
+        "ljuske": [
+          1
+        ],
+        "jezgro": "1+"
+      }
+    },
+    {
+      "lekcija": 26,
+      "tezina": 1,
+      "pitanje": "Ko je, po starim Grcima, prvi zamislio atome?",
+      "odgovori": [
+        "Demokrit",
+        "Aristotel",
+        "Platon",
+        "Pitagora"
+      ],
+      "zanimljivost": "Atomos na grčkom znači „nedeljiv“.",
+      "rec": "demokrit"
+    },
+    {
+      "lekcija": 26,
+      "tezina": 3,
+      "pitanje": "Koliko protona ima atom kiseonika?",
+      "odgovori": [
+        "8",
+        "16",
+        "6",
+        "2"
+      ],
+      "zanimljivost": "Kiseonik-16 ima 8 protona i 8 neutrona.",
+      "rec": "kiseonik",
+      "mediji": {
+        "vrsta": "atom",
+        "ljuske": [
+          2,
+          6
+        ],
+        "jezgro": "8+"
+      }
+    },
+    {
+      "lekcija": 27,
+      "tezina": 1,
+      "pitanje": "Kako se zovu atomi istog elementa koji se razlikuju po broju neutrona?",
+      "odgovori": [
+        "Izotopi",
+        "Joni",
+        "Molekuli",
+        "Izomeri"
+      ],
+      "zanimljivost": "Vodonik ima tri izotopa: procijum, deuterijum i tricijum.",
+      "rec": "izotop"
+    },
+    {
+      "lekcija": 27,
+      "tezina": 2,
+      "pitanje": "Šta je radioaktivnost?",
+      "odgovori": [
+        "Spontani raspad nestabilnih jezgara uz emitovanje zračenja",
+        "Svetljenje sijalice",
+        "Magnetizam",
+        "Hemijska reakcija"
+      ],
+      "zanimljivost": "Radioaktivnost je otkrio Anri Bekerel 1896. godine.",
+      "rec": "bekerel"
+    },
+    {
+      "lekcija": 27,
+      "tezina": 2,
+      "pitanje": "Koja vrsta zračenja se sastoji od jezgara helijuma?",
+      "odgovori": [
+        "Alfa (α) zračenje",
+        "Beta",
+        "Gama",
+        "Rendgensko"
+      ],
+      "zanimljivost": "Alfa-čestice zaustavlja već list papira ili koža.",
+      "rec": "alfa"
+    },
+    {
+      "lekcija": 27,
+      "tezina": 2,
+      "pitanje": "Šta je beta (β) zračenje?",
+      "odgovori": [
+        "Snop brzih elektrona (ili pozitrona) iz jezgra",
+        "Jezgra helijuma",
+        "Svetlost",
+        "Zvuk"
+      ],
+      "zanimljivost": "Beta zračenje zaustavlja tanka aluminijumska ploča.",
+      "rec": "beta"
+    },
+    {
+      "lekcija": 27,
+      "tezina": 3,
+      "pitanje": "Šta je gama (γ) zračenje?",
+      "odgovori": [
+        "Elektromagnetno zračenje velike energije iz jezgra",
+        "Elektroni",
+        "Jezgra helijuma",
+        "Zvuk"
+      ],
+      "zanimljivost": "Za zaštitu od gama zračenja potrebni su debeli slojevi olova ili betona.",
+      "rec": "gama"
+    },
+    {
+      "lekcija": 27,
+      "tezina": 3,
+      "pitanje": "Šta je vreme poluraspada?",
+      "odgovori": [
+        "Vreme za koje se raspadne polovina jezgara radioaktivnog uzorka",
+        "Vreme za koje se raspadne sve",
+        "Vreme do eksplozije",
+        "Starost atoma"
+      ],
+      "zanimljivost": "Ugljenik-14 ima vreme poluraspada oko 5.730 godina – na tome se zasniva datiranje arheoloških nalaza.",
+      "rec": "poluraspad"
+    },
+    {
+      "lekcija": 27,
+      "tezina": 2,
+      "pitanje": "Ko je, uz Pjera Kirija, otkrio polonijum i radijum?",
+      "odgovori": [
+        "Marija Kiri",
+        "Lize Majtner",
+        "Ada Lavlejs",
+        "Rozalind Frenklin"
+      ],
+      "zanimljivost": "Marija Kiri je jedina osoba sa Nobelovim nagradama iz dve različite nauke – fizike i hemije.",
+      "rec": "kiri"
+    },
+    {
+      "lekcija": 27,
+      "tezina": 2,
+      "pitanje": "Šta je deuterijum?",
+      "odgovori": [
+        "Izotop vodonika sa jednim neutronom",
+        "Vrsta kiseonika",
+        "Radioaktivni metal",
+        "Vrsta leda"
+      ],
+      "zanimljivost": "„Teška voda“ sadrži deuterijum umesto običnog vodonika.",
+      "rec": "deuterijum"
+    },
+    {
+      "lekcija": 27,
+      "tezina": 1,
+      "pitanje": "Kojim instrumentom se meri radioaktivno zračenje?",
+      "odgovori": [
+        "Gajger-Milerovim brojačem",
+        "Termometrom",
+        "Barometrom",
+        "Vagom"
+      ],
+      "zanimljivost": "Gajgerov brojač „krčka“ – svaki klik je jedna registrovana čestica.",
+      "rec": "gajger"
+    },
+    {
+      "lekcija": 27,
+      "tezina": 3,
+      "pitanje": "Posle dva vremena poluraspada, koliki deo uzorka ostaje neraspadnut?",
+      "odgovori": [
+        "Četvrtina",
+        "Polovina",
+        "Ništa",
+        "Osmina"
+      ],
+      "zanimljivost": "Posle tri vremena poluraspada ostaje osmina, posle četiri – šesnaestina.",
+      "rec": "četvrtina"
+    },
+    {
+      "lekcija": 27,
+      "tezina": 2,
+      "pitanje": "Kojim izotopom se određuje starost ostataka organizama?",
+      "odgovori": [
+        "Ugljenikom-14",
+        "Uranijumom-238",
+        "Kiseonikom-16",
+        "Helijumom-4"
+      ],
+      "zanimljivost": "Metoda radiokarbonskog datiranja koristi se do oko 50.000 godina starosti.",
+      "rec": "ugljenik"
+    },
+    {
+      "lekcija": 27,
+      "tezina": 2,
+      "pitanje": "Šta se dešava sa elementom kada mu jezgro emituje alfa-česticu?",
+      "odgovori": [
+        "Pretvara se u drugi element",
+        "Ostaje isti",
+        "Nestaje",
+        "Postaje magnet"
+      ],
+      "zanimljivost": "Alhemičari su sanjali o pretvaranju elemenata – radioaktivnost to radi spontano.",
+      "rec": "pretvaranje"
+    },
+    {
+      "lekcija": 27,
+      "tezina": 1,
+      "pitanje": "Da li je radioaktivnost prirodna pojava?",
+      "odgovori": [
+        "Da, postoji i u prirodi (stene, vazduh, hrana)",
+        "Ne, samo u laboratoriji",
+        "Samo u svemiru",
+        "Samo u bombama"
+      ],
+      "zanimljivost": "Čak i banane su blago radioaktivne zbog kalijuma-40.",
+      "rec": "banana",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "🍌☢️"
+      }
+    },
+    {
+      "lekcija": 27,
+      "tezina": 3,
+      "pitanje": "Koliko je vreme poluraspada uranijuma-238?",
+      "odgovori": [
+        "Oko 4,5 milijardi godina",
+        "Oko 5 minuta",
+        "Oko 100 godina",
+        "Oko 1 dan"
+      ],
+      "zanimljivost": "To je otprilike starost same Zemlje – do danas se raspala oko polovina prvobitnog U-238.",
+      "rec": "uranijum"
+    },
+    {
+      "lekcija": 27,
+      "tezina": 2,
+      "pitanje": "Šta je radon?",
+      "odgovori": [
+        "Radioaktivni gas koji izlazi iz tla i može se nakupljati u podrumima",
+        "Vrsta metala",
+        "Lek",
+        "Vrsta svetlosti"
+      ],
+      "zanimljivost": "Redovno provetravanje podruma smanjuje količinu radona.",
+      "rec": "radon"
+    },
+    {
+      "lekcija": 28,
+      "tezina": 1,
+      "pitanje": "Zašto je radioaktivno zračenje opasno za živa bića?",
+      "odgovori": [
+        "Oštećuje ćelije i DNK",
+        "Hladi telo",
+        "Hrani ćelije",
+        "Nije opasno"
+      ],
+      "zanimljivost": "Zbog toga radnici sa izvorima zračenja nose dozimetre.",
+      "rec": "opasnost"
+    },
+    {
+      "lekcija": 28,
+      "tezina": 2,
+      "pitanje": "Kako se koristi zračenje u medicini?",
+      "odgovori": [
+        "Za lečenje raka (zračna terapija) i dijagnostiku",
+        "Za hlađenje",
+        "Za pravljenje vitamina",
+        "Ne koristi se"
+      ],
+      "zanimljivost": "Zračenje se usmerava na tumor iz više pravaca da bi zdravo tkivo što manje stradalo.",
+      "rec": "terapija"
+    },
+    {
+      "lekcija": 28,
+      "tezina": 2,
+      "pitanje": "Koja je jedinica za ekvivalentnu dozu zračenja?",
+      "odgovori": [
+        "Sivert (Sv)",
+        "Volt",
+        "Kelvin",
+        "Džul"
+      ],
+      "zanimljivost": "Tipična doza od rendgenskog snimka zuba je nekoliko mikrosiverta – manja od doze tokom leta avionom.",
+      "rec": "sivert"
+    },
+    {
+      "lekcija": 28,
+      "tezina": 2,
+      "pitanje": "Šta je znak upozorenja za radioaktivnost?",
+      "odgovori": [
+        "Žuti trolist (☢)",
+        "Crveni krst",
+        "Plavi krug",
+        "Zelena strelica"
+      ],
+      "zanimljivost": "Znak je osmišljen 1946. na Univerzitetu Kalifornije u Berkliju.",
+      "rec": "znak",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "☢️"
+      }
+    },
+    {
+      "lekcija": 28,
+      "tezina": 3,
+      "pitanje": "Koja nuklearna katastrofa se dogodila 1986. u Ukrajini?",
+      "odgovori": [
+        "Černobilj",
+        "Fukušima",
+        "Tri milje",
+        "Hirošima"
+      ],
+      "zanimljivost": "Oko Černobilja i danas postoji zona isključenja – u njoj se priroda oporavila, a žive i vukovi i divlji konji.",
+      "rec": "černobilj"
+    },
+    {
+      "lekcija": 28,
+      "tezina": 2,
+      "pitanje": "Kako se zaštititi od zračenja?",
+      "odgovori": [
+        "Udaljenost, kraće izlaganje i zaklon (olovo, beton)",
+        "Debela odeća samo",
+        "Sunčane naočare",
+        "Nije moguće"
+      ],
+      "zanimljivost": "Tri pravila zaštite su: vreme, rastojanje, zaklon.",
+      "rec": "zaštita"
+    },
+    {
+      "lekcija": 28,
+      "tezina": 1,
+      "pitanje": "Koje prirodno zračenje stiže iz svemira?",
+      "odgovori": [
+        "Kosmičko zračenje",
+        "Zvuk",
+        "Toplotno zračenje Meseca",
+        "Nikakvo"
+      ],
+      "zanimljivost": "Piloti i stjuardese zbog kosmičkog zračenja primaju nešto veće doze od ljudi na zemlji.",
+      "rec": "kosmičko"
+    },
+    {
+      "lekcija": 28,
+      "tezina": 3,
+      "pitanje": "Šta je jodna profilaksa?",
+      "odgovori": [
+        "Uzimanje stabilnog joda da štitna žlezda ne upije radioaktivni jod",
+        "Lečenje prehlade",
+        "Vrsta vakcine",
+        "Zračenje hrane"
+      ],
+      "zanimljivost": "Ovo je mera zaštite pri nuklearnim nesrećama.",
+      "rec": "jod"
+    },
+    {
+      "lekcija": 28,
+      "tezina": 2,
+      "pitanje": "Kako se zračenje koristi za čuvanje hrane?",
+      "odgovori": [
+        "Ozračivanjem se uništavaju bakterije i paraziti",
+        "Hrana postaje radioaktivna",
+        "Hladi se",
+        "Ne koristi se"
+      ],
+      "zanimljivost": "Ozračena hrana nije radioaktivna, kao što ni ti ne postaješ radioaktivan posle rendgenskog snimka.",
+      "rec": "hrana"
+    },
+    {
+      "lekcija": 28,
+      "tezina": 1,
+      "pitanje": "Šta nosi radiolog da bi se zaštitio?",
+      "odgovori": [
+        "Olovnu kecelju",
+        "Kišni mantil",
+        "Rukavice od vune",
+        "Kacigu"
+      ],
+      "zanimljivost": "Olovo je zbog velike gustine odlično u zaustavljanju rendgenskog i gama zračenja.",
+      "rec": "olovo"
+    },
+    {
+      "lekcija": 28,
+      "tezina": 3,
+      "pitanje": "Šta je radioaktivni obeleživač u medicini?",
+      "odgovori": [
+        "Mala količina radioaktivnog izotopa koja pokazuje kako radi neki organ",
+        "Vrsta flastera",
+        "Igla",
+        "Lek protiv bolova"
+      ],
+      "zanimljivost": "Scintigrafija štitne žlezde koristi izotop tehnecijuma ili joda.",
+      "rec": "izotop"
+    },
+    {
+      "lekcija": 28,
+      "tezina": 2,
+      "pitanje": "Da li ljudi stalno primaju malu dozu zračenja iz prirode?",
+      "odgovori": [
+        "Da – iz tla, vazduha, hrane i svemira",
+        "Ne nikada",
+        "Samo u bolnici",
+        "Samo na Mesecu"
+      ],
+      "zanimljivost": "Prosečna godišnja prirodna doza je oko 2–3 milisiverta.",
+      "rec": "prirodno"
+    },
+    {
+      "lekcija": 28,
+      "tezina": 2,
+      "pitanje": "Šta je dozimetar?",
+      "odgovori": [
+        "Uređaj koji meri primljenu dozu zračenja",
+        "Merač temperature",
+        "Merač napona",
+        "Vaga"
+      ],
+      "zanimljivost": "Nekada su dozimetri bili kao olovke, a danas su elektronski.",
+      "rec": "dozimetar"
+    },
+    {
+      "lekcija": 28,
+      "tezina": 3,
+      "pitanje": "Zašto je radioaktivni jod opasan posle nuklearne nesreće?",
+      "odgovori": [
+        "Nakuplja se u štitnoj žlezdi",
+        "Ide u kosti",
+        "Uopšte nije opasan",
+        "Isparava odmah"
+      ],
+      "zanimljivost": "Njegovo vreme poluraspada je samo oko 8 dana, pa opasnost brže prolazi.",
+      "rec": "štitna"
+    },
+    {
+      "lekcija": 28,
+      "tezina": 1,
+      "pitanje": "Ko je otkrio rendgensko zračenje?",
+      "odgovori": [
+        "Vilhelm Rendgen",
+        "Marija Kiri",
+        "Bekerel",
+        "Ajnštajn"
+      ],
+      "zanimljivost": "Rendgen je 1901. dobio prvu Nobelovu nagradu za fiziku.",
+      "rec": "rendgen"
+    },
+    {
+      "lekcija": 29,
+      "tezina": 1,
+      "pitanje": "Šta je nuklearna fisija?",
+      "odgovori": [
+        "Cepanje teškog jezgra na lakša uz oslobađanje energije",
+        "Spajanje lakih jezgara",
+        "Gorenje uglja",
+        "Hemijska reakcija"
+      ],
+      "zanimljivost": "Fisija uranijuma pokreće nuklearne elektrane.",
+      "rec": "fisija"
+    },
+    {
+      "lekcija": 29,
+      "tezina": 2,
+      "pitanje": "Šta je nuklearna fuzija?",
+      "odgovori": [
+        "Spajanje lakih jezgara u teža uz oslobađanje energije",
+        "Cepanje jezgra",
+        "Sagorevanje",
+        "Topljenje"
+      ],
+      "zanimljivost": "U Suncu se svake sekunde oko 600 miliona tona vodonika pretvori u helijum.",
+      "rec": "fuzija",
+      "mediji": {
+        "vrsta": "planeta",
+        "ime": "sunce"
+      }
+    },
+    {
+      "lekcija": 29,
+      "tezina": 2,
+      "pitanje": "Šta je lančana reakcija?",
+      "odgovori": [
+        "Neutroni iz jedne fisije izazivaju nove fisije",
+        "Hemijska reakcija u lancu",
+        "Mehaničko kretanje",
+        "Elektroliza"
+      ],
+      "zanimljivost": "U elektrani je lančana reakcija kontrolisana, a u atomskoj bombi nekontrolisana.",
+      "rec": "lanac"
+    },
+    {
+      "lekcija": 29,
+      "tezina": 3,
+      "pitanje": "Ko je otkrio fisiju uranijuma 1938. godine?",
+      "odgovori": [
+        "Oto Han i Fric Štrasman (uz objašnjenje Lize Majtner)",
+        "Ajnštajn",
+        "Raderford",
+        "Bor"
+      ],
+      "zanimljivost": "Hemijski element meitnerijum nosi ime po Lizi Majtner.",
+      "rec": "han"
+    },
+    {
+      "lekcija": 29,
+      "tezina": 2,
+      "pitanje": "Šta pokazuje Ajnštajnova formula E = mc²?",
+      "odgovori": [
+        "Masa i energija su ekvivalentne – mala masa daje ogromnu energiju",
+        "Brzinu svetlosti",
+        "Jačinu struje",
+        "Masu zvezda"
+      ],
+      "zanimljivost": "U nuklearnim reakcijama mali deo mase pretvara se u energiju.",
+      "rec": "ajnštajn",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "E = m · c²"
+      }
+    },
+    {
+      "lekcija": 29,
+      "tezina": 2,
+      "pitanje": "Koje gorivo se koristi u nuklearnim elektranama?",
+      "odgovori": [
+        "Uranijum",
+        "Ugalj",
+        "Vodonik",
+        "Benzin"
+      ],
+      "zanimljivost": "Kilogram uranijuma-235 pri potpunoj fisiji daje energije koliko i oko 2.500 tona uglja.",
+      "rec": "uranijum"
+    },
+    {
+      "lekcija": 29,
+      "tezina": 3,
+      "pitanje": "Šta je moderator u nuklearnom reaktoru?",
+      "odgovori": [
+        "Supstanca koja usporava neutrone (voda, grafit)",
+        "Gorivo",
+        "Hladnjak za spoljašnjost",
+        "Zaštitni zid"
+      ],
+      "zanimljivost": "Spori neutroni lakše izazivaju fisiju uranijuma-235.",
+      "rec": "moderator"
+    },
+    {
+      "lekcija": 29,
+      "tezina": 2,
+      "pitanje": "Čemu služe kontrolne šipke u reaktoru?",
+      "odgovori": [
+        "Upijaju neutrone i regulišu brzinu reakcije",
+        "Daju gorivo",
+        "Prave struju",
+        "Hlade vodu"
+      ],
+      "zanimljivost": "Spuštanjem šipki reaktor se može potpuno zaustaviti.",
+      "rec": "šipke"
+    },
+    {
+      "lekcija": 29,
+      "tezina": 1,
+      "pitanje": "Šta je izvor energije Sunca?",
+      "odgovori": [
+        "Nuklearna fuzija",
+        "Sagorevanje uglja",
+        "Fisija",
+        "Elektricitet"
+      ],
+      "zanimljivost": "Sunce „sija“ fuzijom oko 4,6 milijardi godina i trajaće još oko 5 milijardi.",
+      "rec": "sunce"
+    },
+    {
+      "lekcija": 29,
+      "tezina": 3,
+      "pitanje": "Zašto je teško napraviti fuzionu elektranu?",
+      "odgovori": [
+        "Potrebne su temperature od više miliona stepeni i držanje plazme",
+        "Nema goriva",
+        "Zabranjena je",
+        "Previše je jednostavna"
+      ],
+      "zanimljivost": "Međunarodni projekat ITER u Francuskoj gradi eksperimentalni fuzioni reaktor.",
+      "rec": "iter"
+    },
+    {
+      "lekcija": 29,
+      "tezina": 2,
+      "pitanje": "Koji je naš institut u kome je radio prvi istraživački reaktor u Srbiji?",
+      "odgovori": [
+        "Institut za nuklearne nauke „Vinča“",
+        "Institut „Mihajlo Pupin“",
+        "Petnica",
+        "Institut za biologiju"
+      ],
+      "zanimljivost": "Reaktor u Vinči pušten je u rad 1959. godine.",
+      "rec": "vinča"
+    },
+    {
+      "lekcija": 29,
+      "tezina": 2,
+      "pitanje": "Šta je otpad nuklearnih elektrana?",
+      "odgovori": [
+        "Radioaktivni materijal koji se mora bezbedno čuvati veoma dugo",
+        "Ugljen-dioksid",
+        "Obična voda",
+        "Pepeo"
+      ],
+      "zanimljivost": "Neki izotopi u otpadu ostaju opasni hiljadama godina.",
+      "rec": "otpad"
+    },
+    {
+      "lekcija": 29,
+      "tezina": 1,
+      "pitanje": "Šta nuklearne elektrane NE ispuštaju u velikoj meri tokom rada?",
+      "odgovori": [
+        "Ugljen-dioksid",
+        "Toplotu",
+        "Paru",
+        "Struju"
+      ],
+      "zanimljivost": "Para iz velikih rashladnih tornjeva je samo vodena para.",
+      "rec": "para"
+    },
+    {
+      "lekcija": 29,
+      "tezina": 3,
+      "pitanje": "Koliko energije bi se oslobodilo kada bi se 1 g mase potpuno pretvorio u energiju?",
+      "odgovori": [
+        "Oko 90.000 milijardi džula (kao atomska bomba)",
+        "1 J",
+        "1.000 J",
+        "Oko kao baterija"
+      ],
+      "zanimljivost": "To je zato što je c² ogroman broj – oko 9·10¹⁶ m²/s².",
+      "rec": "energija"
+    },
+    {
+      "lekcija": 29,
+      "tezina": 2,
+      "pitanje": "Koji izotopi vodonika se koriste u fuzionim reaktorima?",
+      "odgovori": [
+        "Deuterijum i tricijum",
+        "Samo procijum",
+        "Uranijum",
+        "Helijum-4"
+      ],
+      "zanimljivost": "Deuterijuma ima u morskoj vodi – u jednoj litri dovoljno za energiju 300 litara benzina, kada bi fuzija bila praktična.",
+      "rec": "deuterijum"
+    },
+    {
+      "lekcija": 30,
+      "tezina": 1,
+      "pitanje": "Šta proučava klasična fizika?",
+      "odgovori": [
+        "Pojave iz svakodnevnog iskustva – kretanje, toplotu, svetlost, elektricitet",
+        "Samo atome",
+        "Samo svemir",
+        "Samo kvarkove"
+      ],
+      "zanimljivost": "Klasična fizika (Njutn, Maksvel) savršeno opisuje kretanje lopte, ali ne i elektrona u atomu.",
+      "rec": "klasična"
+    },
+    {
+      "lekcija": 30,
+      "tezina": 2,
+      "pitanje": "Koje dve teorije su temelj savremene (moderne) fizike?",
+      "odgovori": [
+        "Teorija relativnosti i kvantna mehanika",
+        "Zakon poluge i Paskalov zakon",
+        "Omov i Džulov zakon",
+        "Zakon inercije i trenje"
+      ],
+      "zanimljivost": "Obe su nastale na početku 20. veka.",
+      "rec": "kvant"
+    },
+    {
+      "lekcija": 30,
+      "tezina": 2,
+      "pitanje": "Ko je autor teorije relativnosti?",
+      "odgovori": [
+        "Albert Ajnštajn",
+        "Isak Njutn",
+        "Nils Bor",
+        "Nikola Tesla"
+      ],
+      "zanimljivost": "Ajnštajn je Nobelovu nagradu dobio za fotoelektrični efekat, a ne za relativnost.",
+      "rec": "ajnštajn"
+    },
+    {
+      "lekcija": 30,
+      "tezina": 3,
+      "pitanje": "Šta predviđa teorija relativnosti za sat koji se kreće veoma brzo?",
+      "odgovori": [
+        "Kuca sporije (dilatacija vremena)",
+        "Kuca brže",
+        "Staje",
+        "Nema promene"
+      ],
+      "zanimljivost": "Atomski satovi u avionima izmerili su ovu malu razliku 1971. godine.",
+      "rec": "vreme"
+    },
+    {
+      "lekcija": 30,
+      "tezina": 2,
+      "pitanje": "Koji srpski naučnik je objasnio cikluse ledenih doba promenama Zemljine putanje?",
+      "odgovori": [
+        "Milutin Milanković",
+        "Mihajlo Pupin",
+        "Nikola Tesla",
+        "Pavle Savić"
+      ],
+      "zanimljivost": "Krater na Mesecu i jedan na Marsu nose ime Milanković.",
+      "rec": "milanković"
+    },
+    {
+      "lekcija": 30,
+      "tezina": 3,
+      "pitanje": "Šta je fotoelektrični efekat?",
+      "odgovori": [
+        "Izbijanje elektrona iz metala pod dejstvom svetlosti",
+        "Svetljenje sijalice",
+        "Odbijanje svetlosti",
+        "Prelamanje"
+      ],
+      "zanimljivost": "Na ovom efektu rade solarne ćelije i senzori u kamerama.",
+      "rec": "foton"
+    },
+    {
+      "lekcija": 30,
+      "tezina": 1,
+      "pitanje": "Koji pronalazak savremene fizike nosiš u džepu?",
+      "odgovori": [
+        "Mobilni telefon (poluprovodnici, radio-talasi, GPS)",
+        "Kamen",
+        "Drvenu olovku",
+        "Klikere"
+      ],
+      "zanimljivost": "Telefon u džepu ima veću računarsku moć od računara koji su vodili misiju Apolo 11.",
+      "rec": "telefon"
+    },
+    {
+      "lekcija": 30,
+      "tezina": 2,
+      "pitanje": "Koji naučnik poreklom iz naših krajeva je zaslužan za sistem naizmenične struje koji danas koristi ceo svet?",
+      "odgovori": [
+        "Nikola Tesla",
+        "Mihajlo Pupin",
+        "Đorđe Stanojević",
+        "Jovan Cvijić"
+      ],
+      "zanimljivost": "Tesla je rođen 10. jula 1856. u Smiljanu; beogradski aerodrom i jedna elektrana nose njegovo ime.",
+      "rec": "tesla"
+    },
+    {
+      "lekcija": 30,
+      "tezina": 3,
+      "pitanje": "Šta je kvantna mehanika?",
+      "odgovori": [
+        "Teorija koja opisuje ponašanje atoma i sitnih čestica",
+        "Teorija o kretanju planeta",
+        "Teorija o zvuku",
+        "Teorija o trenju"
+      ],
+      "zanimljivost": "Na kvantnoj mehanici zasnivaju se laseri, tranzistori i MR snimanje.",
+      "rec": "kvant"
+    },
+    {
+      "lekcija": 30,
+      "tezina": 2,
+      "pitanje": "Šta je laser?",
+      "odgovori": [
+        "Izvor veoma usmerene, jednobojne svetlosti",
+        "Sijalica sa niti",
+        "Ogledalo",
+        "Teleskop"
+      ],
+      "zanimljivost": "Prvi laser napravio je Teodor Mejman 1960. godine.",
+      "rec": "laser"
+    },
+    {
+      "lekcija": 30,
+      "tezina": 2,
+      "pitanje": "Šta su poluprovodnici?",
+      "odgovori": [
+        "Materijali čija je provodljivost između provodnika i izolatora (npr. silicijum)",
+        "Metali",
+        "Plastika",
+        "Staklo"
+      ],
+      "zanimljivost": "Silicijumska dolina u Kaliforniji dobila je ime po poluprovodniku od kog se prave čipovi.",
+      "rec": "silicijum"
+    },
+    {
+      "lekcija": 30,
+      "tezina": 1,
+      "pitanje": "Šta je CERN?",
+      "odgovori": [
+        "Evropska organizacija za nuklearna istraživanja kod Ženeve",
+        "Teleskop",
+        "Svemirska stanica",
+        "Fabrika automobila"
+      ],
+      "zanimljivost": "U CERN-u je 1989. nastao i svetski veb (WWW) – Tim Berners-Li.",
+      "rec": "cern"
+    },
+    {
+      "lekcija": 30,
+      "tezina": 3,
+      "pitanje": "Šta su gravitacioni talasi, prvi put detektovani 2015?",
+      "odgovori": [
+        "Talasi u prostor-vremenu nastali sudarom crnih rupa",
+        "Talasi na moru",
+        "Zvučni talasi",
+        "Radio-talasi"
+      ],
+      "zanimljivost": "Ajnštajn ih je predvideo još 1916. – trebalo je skoro 100 godina da se izmere.",
+      "rec": "talasi"
+    },
+    {
+      "lekcija": 30,
+      "tezina": 2,
+      "pitanje": "Šta je bila „ultraljubičasta katastrofa“ koja je dovela do kvantne fizike?",
+      "odgovori": [
+        "Neuspeh klasične fizike da objasni zračenje zagrejanih tela",
+        "Eksplozija na Suncu",
+        "Ozonska rupa",
+        "Vulkanska erupcija"
+      ],
+      "zanimljivost": "Maks Plank je 1900. rešio problem pretpostavkom da se energija emituje u „paketićima“ – kvantima.",
+      "rec": "plank"
+    },
+    {
+      "lekcija": 30,
+      "tezina": 2,
+      "pitanje": "Šta je Higsov bozon, otkriven 2012?",
+      "odgovori": [
+        "Čestica povezana sa poljem koje daje masu česticama",
+        "Novi element",
+        "Planeta",
+        "Virus"
+      ],
+      "zanimljivost": "Piter Higs i Fransoa Englert dobili su Nobelovu nagradu 2013.",
+      "rec": "higs"
+    }
+  ]
+}

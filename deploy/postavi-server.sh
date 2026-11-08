@@ -36,16 +36,37 @@ ReadWritePaths=$DIR/podaci
 WantedBy=multi-user.target
 UNIT
 
-# Caddy: reverse proxy ka Node-u
-ADRESA="${DOMEN:-:80}"
-cat > /etc/caddy/Caddyfile <<CADDY
-$ADRESA {
-	# gzip ne sme na SSE tok (/api/dogadjaji) – sažimanje bi zadržavalo poruke
-	@nijeTok not path /api/dogadjaji
+# Caddy: reverse proxy ka Node-u. gzip ne sme na SSE tok (/api/dogadjaji) – sažimanje bi zadržavalo poruke.
+IGRA='	@nijeTok not path /api/dogadjaji
 	encode @nijeTok gzip
-	reverse_proxy 127.0.0.1:3000
+	reverse_proxy 127.0.0.1:3000'
+IP="$(curl -4 -fsS https://api.ipify.org 2>/dev/null || hostname -I | awk '{print $1}')"
+if [ -n "${DOMEN:-}" ]; then
+  # HTTPS na domenu (Caddy sam vadi i obnavlja Let's Encrypt sertifikat), www → glavna adresa,
+  # a preko IP adrese igra i dalje radi na običnom HTTP-u
+  cat > /etc/caddy/Caddyfile <<CADDY
+$DOMEN {
+$IGRA
+}
+
+www.$DOMEN {
+	redir https://$DOMEN{uri} permanent
+}
+
+http://$IP {
+$IGRA
 }
 CADDY
+  ADRESA="https://$DOMEN"
+else
+  cat > /etc/caddy/Caddyfile <<CADDY
+:80 {
+$IGRA
+}
+CADDY
+  ADRESA="http://$IP"
+fi
+caddy validate --config /etc/caddy/Caddyfile --adapter caddyfile >/dev/null
 
 ufw allow OpenSSH >/dev/null
 ufw allow 80/tcp >/dev/null
