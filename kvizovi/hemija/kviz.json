@@ -1,0 +1,1397 @@
+{
+  "naziv": "Hemija",
+  "ikona": "⚗️",
+  "boja": "#00b894",
+  "opis": "Atomi, molekuli, elementi i reakcije – za 7. i 8. razred i malo preko toga",
+  "redosled": 40,
+  "pitanja": [
+    {
+      "tezina": 1,
+      "pitanje": "Koji je ovo molekul? (Okreni ga prstom!)",
+      "mediji": {
+        "vrsta": "molekul",
+        "ime": "voda"
+      },
+      "odgovori": [
+        "Voda (H₂O)",
+        "Ugljen-dioksid (CO₂)",
+        "Amonijak (NH₃)",
+        "Kiseonik (O₂)"
+      ],
+      "zanimljivost": "Molekul vode nije prav nego savijen – ugao između dva vodonika je oko 104,5°. Baš zbog tog oblika voda je „polarna“, pa rastvara so i šećer, a led pluta jer je ređi od tečne vode."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koji gas izdišemo, a biljke ga koriste za fotosintezu? Evo njegovog molekula:",
+      "mediji": {
+        "vrsta": "molekul",
+        "ime": "ugljen-dioksid"
+      },
+      "odgovori": [
+        "Ugljen-dioksid",
+        "Kiseonik",
+        "Azot",
+        "Vodonik"
+      ],
+      "zanimljivost": "Molekul CO₂ je potpuno prav (linearan): O=C=O. Zaleđen ugljen-dioksid zove se „suvi led“ – na −78 °C ne topi se u tečnost nego odmah prelazi u gas (sublimuje)."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Ovaj molekul ima jedan atom ugljenika i četiri vodonika raspoređena kao vrhovi tetraedra. Koji je to gas?",
+      "mediji": {
+        "vrsta": "molekul",
+        "ime": "metan"
+      },
+      "odgovori": [
+        "Metan",
+        "Etanol",
+        "Propan",
+        "Amonijak"
+      ],
+      "zanimljivost": "Metan je glavni sastojak zemnog gasa kojim se greju kuće. Krave ga, dok vare travu, ispuštaju stotine litara dnevno! Sam metan nema miris – miris „gasa“ dodaje se namerno, da bi se curenje osetilo."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šest atoma ugljenika u prstenu, svaki sa po jednim vodonikom. Koji je ovo molekul?",
+      "mediji": {
+        "vrsta": "molekul",
+        "ime": "benzen"
+      },
+      "odgovori": [
+        "Benzen",
+        "Glukoza",
+        "Metan",
+        "Etanol"
+      ],
+      "zanimljivost": "Hemičar Kekule je pričao da je oblik prstena benzena smislio kada je sanjao zmiju koja grize svoj rep. Benzen je otrovan, ali je osnova za pravljenje boja, lekova i plastike."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kristalna rešetka u kojoj se smenjuju ljubičasti i zeleni atomi – šta je ovo?",
+      "mediji": {
+        "vrsta": "molekul",
+        "ime": "so"
+      },
+      "odgovori": [
+        "Kuhinjska so (NaCl)",
+        "Dijamant",
+        "Led",
+        "Šećer"
+      ],
+      "zanimljivost": "Natrijum je metal koji eksplodira u vodi, a hlor je otrovan gas – a zajedno daju so koju jedemo svaki dan! Zato su kristali soli savršene male kocke: tako su poređani joni Na⁺ i Cl⁻."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Svaki atom ugljenika vezan je za tačno četiri druga ugljenika. Koja supstanca ima ovakvu strukturu?",
+      "mediji": {
+        "vrsta": "molekul",
+        "ime": "dijamant",
+        "legenda": false
+      },
+      "odgovori": [
+        "Dijamant",
+        "Grafit",
+        "Ugalj",
+        "Kvarc"
+      ],
+      "zanimljivost": "I dijamant i grafit (iz olovke) su čist ugljenik! Razlika je samo u rasporedu atoma: u dijamantu je čvrsta 3D mreža, a grafit ima slojeve koji klize jedan preko drugog – zato olovka piše."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koji element ima hemijski simbol O?",
+      "odgovori": [
+        "Kiseonik",
+        "Zlato",
+        "Osmijum",
+        "Olovo"
+      ],
+      "zanimljivost": "Kiseonik čini oko 21% vazduha, ali čak oko 65% mase ljudskog tela – najviše zato što smo puni vode. Tečni kiseonik je svetloplav i privlači ga magnet!"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Šta je hemijski simbol za zlato?",
+      "odgovori": [
+        "Au",
+        "Zl",
+        "Go",
+        "Ag"
+      ],
+      "zanimljivost": "Au dolazi od latinske reči „aurum“ – „sjajna zora“. Ag je srebro (argentum). Sve zlato ikada iskopano stalo bi u kocku sa stranicom od samo oko 22 metra."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je hemijski simbol za gvožđe?",
+      "odgovori": [
+        "Fe",
+        "G",
+        "Gv",
+        "Ir"
+      ],
+      "zanimljivost": "Fe je od latinskog „ferrum“. Gvožđe u našoj krvi (u hemoglobinu) nosi kiseonik, i zato je krv crvena. Zemljino jezgro je uglavnom od gvožđa i nikla."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koji element ima simbol K?",
+      "odgovori": [
+        "Kalijum",
+        "Kalcijum",
+        "Kripton",
+        "Ugljenik"
+      ],
+      "zanimljivost": "K dolazi od latinskog naziva „kalium“. Kalijuma ima mnogo u bananama. Kalcijum je Ca, kripton Kr, a ugljenik C."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koji je element prikazan ovim Borovim modelom atoma (2 elektrona u prvoj ljusci, 4 u drugoj)?",
+      "mediji": {
+        "vrsta": "atom",
+        "ljuske": [
+          2,
+          4
+        ],
+        "jezgro": "6+"
+      },
+      "odgovori": [
+        "Ugljenik",
+        "Kiseonik",
+        "Azot",
+        "Bor"
+      ],
+      "zanimljivost": "Ugljenik ima 6 protona i 6 elektrona. Pošto u spoljašnjoj ljusci ima 4 elektrona, može da napravi 4 veze – zato od ugljenika nastaje ogroman broj jedinjenja, pa i sav život na Zemlji."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji je element prikazan modelom: 2 elektrona u prvoj, 8 u drugoj i 1 u trećoj ljusci?",
+      "mediji": {
+        "vrsta": "atom",
+        "ljuske": [
+          2,
+          8,
+          1
+        ],
+        "jezgro": "11+"
+      },
+      "odgovori": [
+        "Natrijum",
+        "Neon",
+        "Magnezijum",
+        "Hlor"
+      ],
+      "zanimljivost": "Natrijum lako „poklanja“ taj jedan usamljeni elektron, pa je veoma reaktivan: čuva se pod petrolejom, jer u vodi burno reaguje i može da eksplodira."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliko protona ima atom sa ovim modelom ako je neutralan?",
+      "mediji": {
+        "vrsta": "atom",
+        "ljuske": [
+          2,
+          6
+        ],
+        "jezgro": "?"
+      },
+      "odgovori": [
+        "8",
+        "6",
+        "2",
+        "16"
+      ],
+      "zanimljivost": "Kod neutralnog atoma broj protona jednak je broju elektrona: 2 + 6 = 8. To je kiseonik! Redni broj elementa u periodnom sistemu je baš broj protona."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Ko je tvorac periodnog sistema elemenata?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/mendeljejev.jpg"
+      },
+      "odgovori": [
+        "Dmitrij Mendeljejev",
+        "Antoan Lavoazje",
+        "Alfred Nobel",
+        "Džon Dalton"
+      ],
+      "zanimljivost": "Mendeljejev je 1869. ostavio prazna mesta za elemente koji tada još nisu bili otkriveni i tačno predvideo njihove osobine. Kada su galijum i germanijum pronađeni, svi su poverovali u njegov sistem."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Ova naučnica je jedina osoba koja je dobila Nobelovu nagradu iz dve različite nauke. Ko je ona?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/kiri.jpg"
+      },
+      "odgovori": [
+        "Marija Kiri",
+        "Mileva Marić",
+        "Rozalind Frenklin",
+        "Ada Lavlejs"
+      ],
+      "zanimljivost": "Marija Kiri dobila je Nobelovu nagradu za fiziku (1903) i za hemiju (1911). Otkrila je polonijum (nazvan po njenoj Poljskoj) i radijum. Njene sveske su i danas radioaktivne i čuvaju se u olovnim kutijama!"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Ovaj hemičar je dokazao da se masa u hemijskoj reakciji ne gubi (zakon održanja mase). Ko je on?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/lavoazje.jpg"
+      },
+      "odgovori": [
+        "Antoan Lavoazje",
+        "Robert Bojl",
+        "Dmitrij Mendeljejev",
+        "Amedeo Avogadro"
+      ],
+      "zanimljivost": "Lavoazje je dao ime kiseoniku i vodoniku. Nažalost, pogubljen je giljotinom tokom Francuske revolucije 1794, jer je radio kao ubirač poreza. Jedan naučnik je tada rekao: „Trebao je trenutak da se odrubi ta glava, a ni za sto godina se neće roditi slična.“"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Ovaj švedski hemičar izumeo je dinamit, a bogatstvo ostavio za čuvenu nagradu. Ko je on?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/nobel.jpg"
+      },
+      "odgovori": [
+        "Alfred Nobel",
+        "Anders Celzijus",
+        "Karl Line",
+        "Jens Bercelijus"
+      ],
+      "zanimljivost": "Kada je jedne novine greškom objavile njegovu čitulju pod naslovom „Trgovac smrću je mrtav“, Nobel se zabrinuo kako će ga pamtiti – i u testamentu ostavio novac za nagrade za mir, nauku i književnost."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Na kojoj temperaturi ključa voda na nivou mora?",
+      "odgovori": [
+        "100 °C",
+        "90 °C",
+        "120 °C",
+        "80 °C"
+      ],
+      "zanimljivost": "Na vrhu Mont Everesta voda ključa već na oko 70 °C, jer je pritisak vazduha mnogo manji. Zato se tamo jaje teško skuva – a u ekspres-loncu, gde je pritisak veći, voda ključa na preko 110 °C i hrana se brže kuva."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kakav je pH čiste vode?",
+      "odgovori": [
+        "Neutralan (7)",
+        "Kiseo (2)",
+        "Bazan (12)",
+        "Zavisi od boje"
+      ],
+      "zanimljivost": "pH skala ide od 0 do 14. Limunov sok ima pH oko 2, želudačna kiselina čak oko 1–2, a sapun i varikina su bazni. Crveni kupus može da posluži kao indikator – menja boju od crvene do zelene!"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji gas čini najveći deo vazduha koji udišemo?",
+      "odgovori": [
+        "Azot",
+        "Kiseonik",
+        "Ugljen-dioksid",
+        "Argon"
+      ],
+      "zanimljivost": "Vazduh je oko 78% azota i 21% kiseonika. Azot udišemo i izdišemo bez promene. Tečni azot (−196 °C) koristi se za pravljenje sladoleda za nekoliko sekundi!"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji je metal tečan na sobnoj temperaturi?",
+      "odgovori": [
+        "Živa",
+        "Olovo",
+        "Aluminijum",
+        "Kalaj"
+      ],
+      "zanimljivost": "Živa (Hg, od grčkog „hydrargyrum“ – tečno srebro) se nekad stavljala u toplomere. Otrovna je, pa se danas koriste digitalni. Metal galijum se topi već na oko 30 °C – istopio bi ti se u ruci!"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji je najlakši hemijski element?",
+      "mediji": {
+        "vrsta": "molekul",
+        "ime": "vodonik"
+      },
+      "odgovori": [
+        "Vodonik",
+        "Helijum",
+        "Litijum",
+        "Kiseonik"
+      ],
+      "zanimljivost": "Vodonik je i najzastupljeniji element u svemiru – oko tri četvrtine sve obične materije. Zvezde, pa i naše Sunce, svetle tako što spajaju vodonik u helijum."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koji plemeniti gas se stavlja u balone da lete, a od njega glas postaje tanak i smešan?",
+      "odgovori": [
+        "Helijum",
+        "Neon",
+        "Hlor",
+        "Ugljen-monoksid"
+      ],
+      "zanimljivost": "Helijum je prvo otkriven na Suncu (1868, posmatranjem sunčeve svetlosti), pa je dobio ime po grčkom bogu Sunca Heliosu – tek kasnije su ga našli na Zemlji."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je ovo? Tri atoma kiseonika u jednom molekulu.",
+      "mediji": {
+        "vrsta": "molekul",
+        "ime": "ozon"
+      },
+      "odgovori": [
+        "Ozon",
+        "Kiseonik",
+        "Ugljen-dioksid",
+        "Voda"
+      ],
+      "zanimljivost": "Ozonski omotač, 15–35 km iznad nas, upija opasne UV zrake. Posle oluje ponekad osetiš „svež“ miris – to je ozon koji nastaje od munja."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koja kiselina je prikazana? (atom sumpora je žut)",
+      "mediji": {
+        "vrsta": "molekul",
+        "ime": "sumporna-kiselina"
+      },
+      "odgovori": [
+        "Sumporna kiselina (H₂SO₄)",
+        "Sona kiselina (HCl)",
+        "Azotna kiselina (HNO₃)",
+        "Sirćetna kiselina"
+      ],
+      "zanimljivost": "Sumporna kiselina je najproizvođenija hemikalija na svetu. Važno pravilo iz laboratorije: uvek se kiselina sipa u vodu, a nikad voda u kiselinu – jer bi se smeša mogla naglo zagrejati i prsnuti."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Molekul sa dva ugljenika i jednom OH grupom – koja je ovo supstanca?",
+      "mediji": {
+        "vrsta": "molekul",
+        "ime": "etanol"
+      },
+      "odgovori": [
+        "Etanol (alkohol)",
+        "Metan",
+        "Sirćetna kiselina",
+        "Glukoza"
+      ],
+      "zanimljivost": "Etanol se dobija vrenjem šećera uz pomoć kvasca. Koristi se i za dezinfekciju i kao gorivo – u Brazilu mnogi automobili voze na etanol od šećerne trske."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koja se supstanca nalazi u ovom molekulu sa jednim azotom i tri vodonika, a ima oštar miris?",
+      "mediji": {
+        "vrsta": "molekul",
+        "ime": "amonijak"
+      },
+      "odgovori": [
+        "Amonijak",
+        "Metan",
+        "Voda",
+        "Azot-dioksid"
+      ],
+      "zanimljivost": "Amonijak je oblika niske piramide. Od njega se prave veštačka đubriva – procenjuje se da bez Haber-Bošovog postupka za dobijanje amonijaka ne bi bilo dovoljno hrane za polovinu današnjeg čovečanstva."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kako se zove promena kada led prelazi u tečnu vodu?",
+      "odgovori": [
+        "Topljenje",
+        "Isparavanje",
+        "Kondenzacija",
+        "Sublimacija"
+      ],
+      "zanimljivost": "Obrnuto, kada voda prelazi u led, to je očvršćavanje. Neobično je što se voda pri zamrzavanju širi za oko 9% – zato zimi pucaju cevi i flaše u zamrzivaču."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kada se para na hladnom ogledalu pretvara u kapljice, to se zove:",
+      "odgovori": [
+        "Kondenzacija",
+        "Isparavanje",
+        "Topljenje",
+        "Destilacija"
+      ],
+      "zanimljivost": "Oblaci su takođe nastali kondenzacijom – vodena para se u hladnijem vazduhu skuplja u sitne kapljice oko čestica prašine. Jedan prosečan oblak može da bude težak kao stotine slonova!"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliko elemenata (otprilike) danas ima periodni sistem?",
+      "odgovori": [
+        "118",
+        "92",
+        "64",
+        "150"
+      ],
+      "zanimljivost": "Poslednja četiri elementa (nihonijum, moskovijum, tenesin i oganeson) zvanično su imenovana 2016. Elementi posle uranijuma (92) uglavnom su napravljeni veštački u laboratorijama."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koji je jedini element nazvan po osobi koja je bila živa kada je dobio ime (pored Siborga)?",
+      "odgovori": [
+        "Oganeson",
+        "Ajnštajnijum",
+        "Kirijum",
+        "Mendeljevijum"
+      ],
+      "zanimljivost": "Oganeson (118) nazvan je 2016. po ruskom fizičaru Juriju Oganesjanu. Pre toga je samo Glen Siborg, po kome je nazvan siborgijum, doživeo tu čast za života."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zove smeša u kojoj se sastojci ne mogu golim okom razlikovati, kao šećer rastvoren u vodi?",
+      "odgovori": [
+        "Homogena smeša (rastvor)",
+        "Heterogena smeša",
+        "Hemijski element",
+        "Jedinjenje"
+      ],
+      "zanimljivost": "Rastvor šećera može da se razdvoji isparavanjem vode. A mleko izgleda homogeno, ali pod mikroskopom se vide kapljice masti – ono je zapravo koloidna smeša."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Šta nastaje kada gvožđe dugo stoji na vlažnom vazduhu?",
+      "odgovori": [
+        "Rđa",
+        "Zlato",
+        "Bakar",
+        "So"
+      ],
+      "zanimljivost": "Rđa je gvožđe-oksid – gvožđe se polako sjedinjuje sa kiseonikom uz pomoć vode. Kip slobode je od bakra; pozelenio je od bakarne patine, koja ga zapravo štiti."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koliko atoma ukupno ima u jednom molekulu glukoze (C₆H₁₂O₆)?",
+      "odgovori": [
+        "24",
+        "12",
+        "18",
+        "6"
+      ],
+      "zanimljivost": "6 ugljenika + 12 vodonika + 6 kiseonika = 24 atoma. Glukozu biljke prave fotosintezom, a naš mozak je njen najveći „potrošač“ – troši je oko 120 grama dnevno."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji gas nastaje kada se soda bikarbona pomeša sa sirćetom (ono „penušanje“)?",
+      "odgovori": [
+        "Ugljen-dioksid",
+        "Kiseonik",
+        "Vodonik",
+        "Hlor"
+      ],
+      "zanimljivost": "Isti gas pravi mehuriće u gaziranim sokovima i čini da testo naraste. Ovom reakcijom pravi se i čuveni školski „vulkan“."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koji je najtvrđi prirodni materijal?",
+      "odgovori": [
+        "Dijamant",
+        "Čelik",
+        "Kvarc",
+        "Granit"
+      ],
+      "zanimljivost": "Na Mosovoj skali tvrdoće dijamant ima 10, a talk (od koga je puder) samo 1. Iako je najtvrđi, dijamant može da se razbije čekićem – tvrdoća nije isto što i otpornost na udarac."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji je element obeležen simbolom Na?",
+      "odgovori": [
+        "Natrijum",
+        "Azot",
+        "Neon",
+        "Nikl"
+      ],
+      "zanimljivost": "Na dolazi od latinskog „natrium“. Azot je N, neon Ne, a nikl Ni. Uličnu rasvetu narandžaste boje daju baš natrijumove lampe."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koja je hemijska formula kuhinjske soli?",
+      "odgovori": [
+        "NaCl",
+        "KCl",
+        "NaOH",
+        "CaCO₃"
+      ],
+      "zanimljivost": "CaCO₃ je kreda (i krečnjak i ljuske jaja), NaOH je kaustična soda kojom se otpušavaju cevi, a KCl se koristi kao „so bez natrijuma“."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Šta je ovo? Dva atoma kiseonika i dva vodonika, a koristi se za izbeljivanje i dezinfekciju rana.",
+      "mediji": {
+        "vrsta": "molekul",
+        "ime": "vodonik-peroksid"
+      },
+      "odgovori": [
+        "Vodonik-peroksid (hidrogen)",
+        "Voda",
+        "Ozon",
+        "Sona kiselina"
+      ],
+      "zanimljivost": "Kada se hidrogen sipa na ranu, peni se zato što ga enzim katalaza iz naših ćelija brzo razlaže na vodu i kiseonik – mehurići su upravo kiseonik."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koja čestica atoma ima negativno naelektrisanje?",
+      "odgovori": [
+        "Elektron",
+        "Proton",
+        "Neutron",
+        "Jezgro"
+      ],
+      "zanimljivost": "Atom je uglavnom prazan prostor! Kada bi jezgro bilo veliko kao zrno graška na sredini fudbalskog stadiona, elektroni bi kružili oko tribina."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koji je hemijski simbol vodonika?",
+      "odgovori": [
+        "H",
+        "V",
+        "Hd",
+        "O"
+      ],
+      "zanimljivost": "H dolazi od latinskog „hydrogenium“ – „onaj koji stvara vodu“. Vodonik je prvi element periodnog sistema."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koji je hemijski simbol ugljenika?",
+      "odgovori": [
+        "C",
+        "U",
+        "Ca",
+        "Co"
+      ],
+      "zanimljivost": "C dolazi od latinske reči „carbo“ – ugalj. Ca je kalcijum, a Co kobalt."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koji je hemijski simbol srebra?",
+      "odgovori": [
+        "Ag",
+        "Sr",
+        "S",
+        "Si"
+      ],
+      "zanimljivost": "Ag je od latinskog „argentum“. Država Argentina je dobila ime po srebru, jer su Španci verovali da tamo ima mnogo srebra."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Šta je formula vode?",
+      "odgovori": [
+        "H₂O",
+        "HO₂",
+        "H₂O₂",
+        "OH"
+      ],
+      "zanimljivost": "Dva atoma vodonika i jedan kiseonika. H₂O₂ je vodonik-peroksid, sasvim druga supstanca – zato je važno pažljivo pisati formule!"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koje je agregatno stanje kiseonika na sobnoj temperaturi?",
+      "odgovori": [
+        "Gasovito",
+        "Tečno",
+        "Čvrsto",
+        "Plazma"
+      ],
+      "zanimljivost": "Kiseonik postaje tečan tek na −183 °C. Tečni kiseonik je svetloplav."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Šta je od navedenog hemijska promena?",
+      "odgovori": [
+        "Gorenje drveta",
+        "Topljenje leda",
+        "Seckanje papira",
+        "Rastvaranje šećera u vodi"
+      ],
+      "zanimljivost": "Kod hemijske promene nastaju nove supstance – iz drveta nastaju pepeo, dim i gasovi. Topljenje i seckanje su fizičke promene."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Šta je potrebno za gorenje?",
+      "odgovori": [
+        "Gorivo, kiseonik i dovoljna temperatura",
+        "Samo voda",
+        "Samo vetar",
+        "Samo ugljen-dioksid"
+      ],
+      "zanimljivost": "To je „trougao gorenja“. Vatra se gasi uklanjanjem bar jednog – na primer, prekrivanjem ćebetom (bez kiseonika) ili vodom (hlađenje)."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koji metal je glavni sastojak bronze, uz kalaj?",
+      "odgovori": [
+        "Bakar",
+        "Gvožđe",
+        "Zlato",
+        "Aluminijum"
+      ],
+      "zanimljivost": "Bronza je legura – mešavina metala. Bila je toliko važna da je po njoj nazvano celo jedno doba ljudske istorije – bronzano doba."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koji gas se koristi u reklamama koje svetle crvenkasto-narandžasto?",
+      "odgovori": [
+        "Neon",
+        "Kiseonik",
+        "Vodonik",
+        "Azot"
+      ],
+      "zanimljivost": "Neon svetli kada kroz njega prođe struja. Druge boje reklama daju drugi gasovi ili obojena stakla, ali ih sve zovemo „neonkama“."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Šta je smeša?",
+      "odgovori": [
+        "Dve ili više supstanci pomešanih bez hemijske promene",
+        "Čist element",
+        "Jedan molekul",
+        "Jedinjenje sa stalnim sastavom"
+      ],
+      "zanimljivost": "Vazduh, morska voda i musli su smeše. Sastojci smeše mogu se razdvojiti fizičkim postupcima."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kojim postupkom se iz morske vode dobija so?",
+      "odgovori": [
+        "Isparavanjem vode",
+        "Filtriranjem",
+        "Magnetom",
+        "Zamrzavanjem"
+      ],
+      "zanimljivost": "U solanama se morska voda pusti u plitke bazene, sunce i vetar ispare vodu, a ostaje so. Tako se so dobija već hiljadama godina."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kako se razdvajaju pesak i voda?",
+      "odgovori": [
+        "Filtriranjem",
+        "Isparavanjem soli",
+        "Magnetom",
+        "Destilacijom šećera"
+      ],
+      "zanimljivost": "Filter-papir propušta vodu, a zadržava zrnca peska. Isto rade i filteri za kafu."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koji metal privlači magnet?",
+      "odgovori": [
+        "Gvožđe",
+        "Bakar",
+        "Aluminijum",
+        "Zlato"
+      ],
+      "zanimljivost": "Od metala, magnet privlači gvožđe, nikl i kobalt. Zato se magnetom mogu razdvojiti gvozdeni opiljci od peska."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kakve su kiseline po ukusu?",
+      "odgovori": [
+        "Kisele",
+        "Slatke",
+        "Gorke",
+        "Bez ukusa"
+      ],
+      "zanimljivost": "Limun, sirće i kiseli kupus su kiseli zbog kiselina. Nikada ne probaj nepoznate hemikalije – mnoge kiseline su vrlo opasne!"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koja kiselina se nalazi u sirćetu?",
+      "odgovori": [
+        "Sirćetna kiselina",
+        "Sona kiselina",
+        "Limunska kiselina",
+        "Sumporna kiselina"
+      ],
+      "zanimljivost": "Sirće obično sadrži oko 4–9% sirćetne kiseline. Nastaje kada bakterije pretvaraju alkohol iz vina ili jabukovače u kiselinu."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koja kiselina se nalazi u našem želucu?",
+      "odgovori": [
+        "Sona (hlorovodonična)",
+        "Sirćetna",
+        "Sumporna",
+        "Azotna"
+      ],
+      "zanimljivost": "Želudačna kiselina ubija bakterije iz hrane i pomaže varenje belančevina. Zidove želuca štiti sloj sluzi."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji je redni broj kiseonika u periodnom sistemu?",
+      "odgovori": [
+        "8",
+        "6",
+        "16",
+        "1"
+      ],
+      "zanimljivost": "Redni broj je broj protona u jezgru. Kiseonik je treći najzastupljeniji element u svemiru, posle vodonika i helijuma."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliko elektrona ima atom ugljenika?",
+      "odgovori": [
+        "6",
+        "4",
+        "12",
+        "8"
+      ],
+      "zanimljivost": "Neutralan atom ima isto elektrona koliko i protona. Ugljenik ima po dva elektrona u prvoj i četiri u drugoj ljusci."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zove čestica atoma bez naelektrisanja?",
+      "odgovori": [
+        "Neutron",
+        "Proton",
+        "Elektron",
+        "Jon"
+      ],
+      "zanimljivost": "Neutron je otkrio Džejms Čedvik 1932. Protoni i neutroni čine jezgro, a elektroni ga okružuju."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zove atom koji je primio ili otpustio elektron, pa ima naelektrisanje?",
+      "odgovori": [
+        "Jon",
+        "Izotop",
+        "Molekul",
+        "Neutron"
+      ],
+      "zanimljivost": "Na⁺ je jon natrijuma koji je otpustio elektron, a Cl⁻ jon hlora koji ga je primio. Takvi joni grade kuhinjsku so."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta su izotopi?",
+      "odgovori": [
+        "Atomi istog elementa sa različitim brojem neutrona",
+        "Različiti elementi iste mase",
+        "Molekuli od dva atoma",
+        "Joni metala"
+      ],
+      "zanimljivost": "Ugljenik-14 je izotop ugljenika koji se koristi za određivanje starosti fosila i arheoloških nalaza – „metoda radioaktivnog ugljenika“."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji element je najzastupljeniji u Zemljinoj kori?",
+      "odgovori": [
+        "Kiseonik",
+        "Gvožđe",
+        "Silicijum",
+        "Aluminijum"
+      ],
+      "zanimljivost": "Kiseonik čini skoro polovinu mase Zemljine kore, uglavnom vezan u stenama. Silicijum je drugi – od njega se prave računarski čipovi."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zovu elementi u poslednjoj (18.) grupi periodnog sistema?",
+      "odgovori": [
+        "Plemeniti gasovi",
+        "Alkalni metali",
+        "Halogeni elementi",
+        "Lantanoidi"
+      ],
+      "zanimljivost": "Helijum, neon, argon, kripton, ksenon i radon skoro uopšte ne reaguju sa drugim elementima – „plemeniti“ su jer se „ne mešaju sa drugima“."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zovu elementi prve grupe (natrijum, kalijum…), koji burno reaguju sa vodom?",
+      "odgovori": [
+        "Alkalni metali",
+        "Plemeniti gasovi",
+        "Halogeni",
+        "Plemeniti metali"
+      ],
+      "zanimljivost": "Što je alkalni metal niže u grupi, to burnije reaguje. Cezijum u dodiru sa vodom eksplodira!"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kojoj grupi pripadaju fluor, hlor, brom i jod?",
+      "odgovori": [
+        "Halogenim elementima",
+        "Plemenitim gasovima",
+        "Alkalnim metalima",
+        "Zemnoalkalnim metalima"
+      ],
+      "zanimljivost": "„Halogen“ znači „onaj koji stvara so“. Brom je jedan od samo dva elementa koja su tečna na sobnoj temperaturi (drugi je živa)."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji element se dodaje kuhinjskoj soli da bi sprečio bolest štitne žlezde?",
+      "odgovori": [
+        "Jod",
+        "Fluor",
+        "Gvožđe",
+        "Kalcijum"
+      ],
+      "zanimljivost": "Jodirana so se u Srbiji koristi decenijama. Nedostatak joda izaziva gušavost – uvećanje štitne žlezde."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Zašto se fluor dodaje pastama za zube?",
+      "odgovori": [
+        "Jača zubnu gleđ i štiti od karijesa",
+        "Daje boju",
+        "Daje ukus mente",
+        "Ubija sve bakterije u ustima"
+      ],
+      "zanimljivost": "Gleđ je najtvrđa materija u ljudskom telu. Ipak, jedino što je može ozbiljno oštetiti su kiseline koje stvaraju bakterije iz šećera."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je pH vrednost 2?",
+      "odgovori": [
+        "Jaka kiselina",
+        "Neutralno",
+        "Jaka baza",
+        "Slaba baza"
+      ],
+      "zanimljivost": "Što je pH manji, kiselina je jača. Limun ima oko 2, kafa oko 5, a sapun oko 9–10."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta se dobija kada se kiselina neutrališe bazom?",
+      "odgovori": [
+        "So i voda",
+        "Samo gas",
+        "Nova kiselina",
+        "Metal"
+      ],
+      "zanimljivost": "To je reakcija neutralizacije. Tablete protiv gorušice sadrže baze koje neutrališu višak želudačne kiseline."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji indikator pocrveni u kiselini, a poplavi u bazi?",
+      "odgovori": [
+        "Lakmus",
+        "Fenolftalein",
+        "Jod",
+        "Hlorofil"
+      ],
+      "zanimljivost": "Lakmus se dobija iz lišajeva. Fenolftalein je bezbojan u kiselini, a u bazi postaje ljubičastoružičast."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji gas nastaje pri reakciji cinka i sone kiseline?",
+      "odgovori": [
+        "Vodonik",
+        "Kiseonik",
+        "Hlor",
+        "Azot"
+      ],
+      "zanimljivost": "Vodonik je zapaljiv – kada mu se prinese plamen, čuje se karakteristično „pucketanje“. To je školski dokaz za vodonik."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se dokazuje ugljen-dioksid u školskoj laboratoriji?",
+      "odgovori": [
+        "Krečna voda se zamuti",
+        "Plamen se pojača",
+        "Pojavi se plavi plamen",
+        "Miriše na jaja"
+      ],
+      "zanimljivost": "Ugljen-dioksid sa krečnom vodom gradi kreč (kalcijum-karbonat), koji ne rastvara se pa voda postaje mutna. Duni slamčicom u krečnu vodu – zamutiće se!"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se dokazuje kiseonik?",
+      "odgovori": [
+        "Tinjajuća treščica se ponovo razgori",
+        "Krečna voda se zamuti",
+        "Plamen se ugasi",
+        "Lakmus poplavi"
+      ],
+      "zanimljivost": "Kiseonik ne gori sam, ali pomaže gorenje – u čistom kiseoniku i usijano gvožđe gori sa varnicama."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je destilacija?",
+      "odgovori": [
+        "Razdvajanje tečnosti isparavanjem i ponovnim hlađenjem pare",
+        "Filtriranje kroz papir",
+        "Mešanje dve tečnosti",
+        "Zamrzavanje vode"
+      ],
+      "zanimljivost": "Destilovana voda se koristi u peglama i laboratorijama jer nema rastvorenih minerala. Destilacijom se razdvajaju i sastojci nafte."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je hromatografija?",
+      "odgovori": [
+        "Razdvajanje sastojaka smeše po brzini kojom putuju kroz papir ili drugu sredinu",
+        "Merenje temperature",
+        "Bojenje tkanine",
+        "Vrsta mikroskopa"
+      ],
+      "zanimljivost": "Ogled: nacrtaj flomasterom tačku na papiru i umoči kraj u vodu – videćeš da se crna boja razdvaja na više boja!"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji metal se nalazi u hemoglobinu i boji krv u crveno?",
+      "odgovori": [
+        "Gvožđe",
+        "Bakar",
+        "Cink",
+        "Magnezijum"
+      ],
+      "zanimljivost": "Kod hobotnice i nekih rakova krv sadrži bakar umesto gvožđa – pa je plava!"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji metal je glavni sastojak u hlorofilu?",
+      "odgovori": [
+        "Magnezijum",
+        "Gvožđe",
+        "Bakar",
+        "Kalcijum"
+      ],
+      "zanimljivost": "Molekuli hlorofila i hemoglobina su građeni vrlo slično, ali hlorofil u centru ima magnezijum, a hemoglobin gvožđe."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je čelik?",
+      "odgovori": [
+        "Legura gvožđa i ugljenika",
+        "Čisto gvožđe",
+        "Legura bakra i cinka",
+        "Vrsta stakla"
+      ],
+      "zanimljivost": "Čelik ima do oko 2% ugljenika. Nerđajući čelik sadrži još i hrom, koji ga štiti od rđe – kašike su najčešće od njega."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je mesing?",
+      "odgovori": [
+        "Legura bakra i cinka",
+        "Legura gvožđa i ugljenika",
+        "Čisti bakar",
+        "Legura zlata i srebra"
+      ],
+      "zanimljivost": "Mesing je žut i sjajan, pa liči na zlato. Od njega se prave kvake, muzički instrumenti (truba, saksofon) i ukrasi."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji metal je najlakši i provodi struju, a koristi se za baterije u telefonima?",
+      "odgovori": [
+        "Litijum",
+        "Olovo",
+        "Gvožđe",
+        "Živa"
+      ],
+      "zanimljivost": "Litijum je toliko lak da pluta na vodi (ali sa njom reaguje). Litijum-jonske baterije su u telefonima, laptopovima i električnim automobilima."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji metal se koristi za limenke za sokove, jer je lak i ne rđa?",
+      "odgovori": [
+        "Aluminijum",
+        "Gvožđe",
+        "Olovo",
+        "Bakar"
+      ],
+      "zanimljivost": "U 19. veku aluminijum je bio skuplji od zlata, jer se teško dobijao. Napoleon III je za najvažnije goste imao aluminijumski pribor za jelo!"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Zašto se zlato toliko ceni i koristi za nakit?",
+      "odgovori": [
+        "Ne reaguje sa vazduhom i vodom, pa zauvek ostaje sjajno",
+        "Najtvrđi je metal",
+        "Najlakši je metal",
+        "Magnetno je"
+      ],
+      "zanimljivost": "Zlato je toliko kovno da se od jednog grama može izvući žica duga kilometrima ili napraviti listić tanji od papira."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je ozonski omotač?",
+      "odgovori": [
+        "Sloj atmosfere bogat ozonom (O₃) koji upija UV zračenje",
+        "Sloj oblaka",
+        "Sloj leda",
+        "Najniži sloj atmosfere"
+      ],
+      "zanimljivost": "Ozonska rupa iznad Antarktika nastala je zbog freona iz sprejeva i frižidera. Posle zabrane freona 1987. ona se polako smanjuje."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji gas je najzaslužniji za efekat staklene bašte, koji izaziva čovek?",
+      "odgovori": [
+        "Ugljen-dioksid",
+        "Kiseonik",
+        "Azot",
+        "Helijum"
+      ],
+      "zanimljivost": "Ugljen-dioksid zadržava toplotu kao staklo u stakleniku. Bez prirodnog efekta staklene bašte Zemlja bi bila hladna oko −18 °C, ali previše tih gasova izaziva globalno zagrevanje."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji otrovni gas bez boje i mirisa nastaje nepotpunim sagorevanjem, na primer u lošim pećima?",
+      "odgovori": [
+        "Ugljen-monoksid (CO)",
+        "Ugljen-dioksid",
+        "Kiseonik",
+        "Azot"
+      ],
+      "zanimljivost": "CO se vezuje za hemoglobin mnogo jače od kiseonika i sprečava prenos kiseonika. Zato postoje detektori ugljen-monoksida, a peći se moraju redovno čistiti."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je katalizator?",
+      "odgovori": [
+        "Supstanca koja ubrzava hemijsku reakciju, a sama se ne troši",
+        "Vrsta goriva",
+        "Kiselina iz baterije",
+        "Proizvod gorenja"
+      ],
+      "zanimljivost": "U automobilima katalizator pretvara otrovne izduvne gasove u manje štetne. U našem telu katalizatori su enzimi."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji element je osnova svih organskih jedinjenja?",
+      "odgovori": [
+        "Ugljenik",
+        "Kiseonik",
+        "Azot",
+        "Gvožđe"
+      ],
+      "zanimljivost": "Organska hemija proučava jedinjenja ugljenika – ima ih preko 10 miliona. Dugo se mislilo da ih mogu stvarati samo živa bića."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Ko je 1828. prvi napravio organsko jedinjenje (ureu) iz neorganskih supstanci?",
+      "odgovori": [
+        "Fridrih Veler",
+        "Antoan Lavoazje",
+        "Dmitrij Mendeljejev",
+        "Robert Bojl"
+      ],
+      "zanimljivost": "Velerov ogled je srušio ideju da organske supstance stvara samo „životna sila“. Urea se danas proizvodi u ogromnim količinama kao veštačko đubrivo."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kakav je ukus baza (na primer sapuna)?",
+      "odgovori": [
+        "Gorak i klizav na dodir",
+        "Sladak",
+        "Kiseo",
+        "Slan"
+      ],
+      "zanimljivost": "Baze su na dodir klizave. Jake baze, kao kaustična soda, mogu teško da opeku kožu – nikada ih ne dodiruj!"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji je hemijski naziv za kreč koji se koristi za krečenje zidova?",
+      "odgovori": [
+        "Kalcijum-hidroksid",
+        "Natrijum-hlorid",
+        "Kalcijum-karbonat",
+        "Kalijum-nitrat"
+      ],
+      "zanimljivost": "Krečni zid se polako „stvrdne“ jer kalcijum-hidroksid upija ugljen-dioksid iz vazduha i postaje kalcijum-karbonat – isto što i krečnjak."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Od čega su pretežno izgrađene ljuske jaja, krečnjak i kreda?",
+      "odgovori": [
+        "Kalcijum-karbonata",
+        "Natrijum-hlorida",
+        "Silicijum-dioksida",
+        "Gvožđe-oksida"
+      ],
+      "zanimljivost": "Ako jaje potopiš u sirće, ljuska se rastvori i izlaze mehurići ugljen-dioksida. Ostane samo jaje u opni!"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je glavni sastojak peska i stakla?",
+      "odgovori": [
+        "Silicijum-dioksid",
+        "Kalcijum-karbonat",
+        "Natrijum-hlorid",
+        "Gvožđe"
+      ],
+      "zanimljivost": "Staklo se pravi topljenjem peska sa sodom i krečnjakom na oko 1.500 °C. Prvo staklo pravili su verovatno u Mesopotamiji pre oko 4.500 godina."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koji element je dobio ime po planeti Uran?",
+      "odgovori": [
+        "Uranijum",
+        "Neptunijum",
+        "Plutonijum",
+        "Torijum"
+      ],
+      "zanimljivost": "Uranijum je otkriven 1789, nekoliko godina posle otkrića planete Uran. Neptunijum i plutonijum su kasnije nazvani po narednim „planetama“."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koji element je dobio ime po Mendeljejevu?",
+      "odgovori": [
+        "Mendeljevijum",
+        "Ajnštajnijum",
+        "Kirijum",
+        "Nobelijum"
+      ],
+      "zanimljivost": "Mendeljevijum ima redni broj 101. Elementi su nazvani i po Ajnštajnu (99), Kirijevima (96) i Nobelu (102)."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Kako se zove element čiji je simbol W?",
+      "odgovori": [
+        "Volfram",
+        "Vanadijum",
+        "Vodonik",
+        "Itrijum"
+      ],
+      "zanimljivost": "W dolazi od nemačkog „Wolfram“. Volfram ima najvišu tačku topljenja od svih metala (oko 3.400 °C), pa se od njega prave niti u sijalicama."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koji je simbol olova?",
+      "odgovori": [
+        "Pb",
+        "Ol",
+        "Pl",
+        "O"
+      ],
+      "zanimljivost": "Pb je od latinskog „plumbum“. Odatle i engleska reč „plumber“ (vodoinstalater), jer su Rimljani pravili vodovodne cevi od olova – što je bilo štetno po zdravlje."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koji je simbol žive?",
+      "odgovori": [
+        "Hg",
+        "Zv",
+        "Ž",
+        "Ag"
+      ],
+      "zanimljivost": "Hg je od grčko-latinskog „hydrargyrum“ – tečno srebro. U astrologiji i alhemiji živa je povezivana sa bogom Merkurom, pa se na engleskom zove „mercury“."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koliko vodoničnih atoma ima molekul metana (CH₄)?",
+      "odgovori": [
+        "4",
+        "1",
+        "2",
+        "6"
+      ],
+      "zanimljivost": "Metan je najjednostavniji ugljovodonik. Propan (C₃H₈) i butan (C₄H₁₀) su gasovi u bocama za kampovanje i upaljačima."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koji je pravilan izgled hemijske jednačine za nastanak vode?",
+      "odgovori": [
+        "2H₂ + O₂ → 2H₂O",
+        "H₂ + O₂ → H₂O",
+        "H + O → HO",
+        "2H + O₂ → H₂O"
+      ],
+      "zanimljivost": "Broj atoma svakog elementa mora biti isti sa obe strane – to je Lavoazjeov zakon održanja mase. Pre i posle reakcije: 4 atoma H i 2 atoma O."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Šta je mol u hemiji?",
+      "odgovori": [
+        "Količina supstance sa oko 6 · 10²³ čestica",
+        "Jedinica za temperaturu",
+        "Molekul vode",
+        "Vrsta kiseline"
+      ],
+      "zanimljivost": "To je Avogadrov broj. Kada bi imao mol zrna peska, njima bi mogla da se pokrije cela Srbija u sloju debelom više od kilometra!"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koja supstanca se u istoriji koristila kao balzam za mumije i dala ime „bitumenu“?",
+      "odgovori": [
+        "Asfalt (bitumen)",
+        "Med",
+        "So",
+        "Šećer"
+      ],
+      "zanimljivost": "Egipćani su za balzamovanje koristili so natron, smole i ponekad bitumen. Persijska reč „mumija“ zapravo je značila bitumen!"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koji element najbolje provodi struju?",
+      "odgovori": [
+        "Srebro",
+        "Bakar",
+        "Zlato",
+        "Aluminijum"
+      ],
+      "zanimljivost": "Srebro je najbolji provodnik, ali je skupo, pa se za žice koristi bakar, koji je odmah iza njega."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Šta je amalgam?",
+      "odgovori": [
+        "Legura žive sa drugim metalom",
+        "Vrsta kiseline",
+        "Gasna smeša",
+        "Plastika"
+      ],
+      "zanimljivost": "Zubne plombe „srebrne“ boje su amalgam žive, srebra, kalaja i bakra. Danas se sve češće koriste bele, kompozitne plombe."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koji gas daje miris pokvarenim jajima?",
+      "odgovori": [
+        "Vodonik-sulfid",
+        "Metan",
+        "Amonijak",
+        "Hlor"
+      ],
+      "zanimljivost": "Vodonik-sulfid je u većim količinama otrovan. Ljudski nos ga oseti i kada ga ima samo nekoliko molekula na milijardu molekula vazduha!"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koji gas, dodat kao miris, prepoznajemo kao „miris gasa“ iz šporeta?",
+      "odgovori": [
+        "Merkaptani (jedinjenja sumpora)",
+        "Metan",
+        "Propan",
+        "Kiseonik"
+      ],
+      "zanimljivost": "Sam zemni gas nema miris. Dodaju mu se jedinjenja sumpora jakog mirisa, da bi se curenje odmah osetilo – to spasava živote."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Šta je polimer?",
+      "odgovori": [
+        "Veliki molekul sastavljen od mnogo ponovljenih manjih delova",
+        "Jedan atom",
+        "Vrsta kiseline",
+        "Metalna legura"
+      ],
+      "zanimljivost": "Plastika, guma, celuloza, skrob, pa i DNK su polimeri. Najlon je bio prvi potpuno sintetički polimer od koga su se pravila vlakna (1935)."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koja supstanca je prirodni polimer od koga se prave papir i pamuk?",
+      "odgovori": [
+        "Celuloza",
+        "Najlon",
+        "Polietilen",
+        "Teflon"
+      ],
+      "zanimljivost": "Celuloza je najzastupljenije organsko jedinjenje na Zemlji. Ljudi je ne mogu svariti, ali preživari mogu – uz pomoć bakterija u želucu."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Ko je otkrio da se teflon ne lepi, potpuno slučajno, 1938?",
+      "odgovori": [
+        "Roj Plunket",
+        "Tomas Edison",
+        "Alfred Nobel",
+        "Marija Kiri"
+      ],
+      "zanimljivost": "Plunket je ispitivao gasove za frižidere i otkrio belu, klizavu supstancu u boci. Teflon se danas koristi za tiganje, ali i u svemirskim odelima."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Od čega se dobija benzin?",
+      "odgovori": [
+        "Destilacijom nafte",
+        "Iz šećerne repe",
+        "Iz morske vode",
+        "Iz kamenog uglja topljenjem"
+      ],
+      "zanimljivost": "Nafta se zagreva u visokim kolonama, a njeni sastojci se razdvajaju po temperaturi ključanja: gasovi, benzin, kerozin, dizel, mazut, asfalt."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koji element je u periodnom sistemu označen brojem 79?",
+      "odgovori": [
+        "Zlato",
+        "Srebro",
+        "Platina",
+        "Živa"
+      ],
+      "zanimljivost": "Zlato ima 79 protona. Ogromne količine zlata u svemiru nastale su, prema nauci, pri sudarima neutronskih zvezda."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koji element se stavlja u balone za meteorološka merenja i vazdušne brodove, jer ne gori?",
+      "odgovori": [
+        "Helijum",
+        "Vodonik",
+        "Neon",
+        "Kiseonik"
+      ],
+      "zanimljivost": "Vazdušni brod „Hindenburg“ bio je napunjen vodonikom i 1937. izgoreo za pola minuta. Od tada se koristi nezapaljivi helijum."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Šta znači oznaka „E“ uz broj (npr. E330) na pakovanju hrane?",
+      "odgovori": [
+        "Oznaka dodatka hrani odobrenog u Evropi",
+        "Broj kalorija",
+        "Rok trajanja",
+        "Zemlja porekla"
+      ],
+      "zanimljivost": "E330 je limunska kiselina, a E300 vitamin C. Mnogi E-brojevi su sasvim prirodne materije, ali ih je dobro znati."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zove proces kojim kvasac pretvara šećer u alkohol i ugljen-dioksid?",
+      "odgovori": [
+        "Vrenje (fermentacija)",
+        "Fotosinteza",
+        "Oksidacija gvožđa",
+        "Neutralizacija"
+      ],
+      "zanimljivost": "Vrenjem nastaju hleb, jogurt, kiseli kupus i sir. Luj Paster je dokazao da vrenje izazivaju živi mikroorganizmi."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Zašto jabuka potamni kada se iseče?",
+      "odgovori": [
+        "Sastojci jabuke reaguju sa kiseonikom iz vazduha",
+        "Zbog bakterija",
+        "Zbog svetlosti",
+        "Zato što se suši"
+      ],
+      "zanimljivost": "Enzimi jabuke, u dodiru sa kiseonikom, stvaraju braon materije. Ako je pokapaš limunovim sokom, sporije će tamneti – vitamin C usporava tu reakciju."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kojom bojom gori plamen kada se u njega ubaci malo kuhinjske soli?",
+      "odgovori": [
+        "Žutom",
+        "Zelenom",
+        "Ljubičastom",
+        "Plavom"
+      ],
+      "zanimljivost": "Natrijum boji plamen žuto, bakar zeleno-plavo, kalijum ljubičasto, a stroncijum crveno. Tako nastaju boje vatrometa!"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koja supstanca daje crvenu boju vatrometu?",
+      "odgovori": [
+        "Jedinjenja stroncijuma",
+        "Jedinjenja natrijuma",
+        "Jedinjenja bakra",
+        "Jedinjenja barijuma"
+      ],
+      "zanimljivost": "Barijum daje zelenu, bakar plavu, a natrijum žutu boju. Vatromet su izmislili Kinezi, pre više od 1.000 godina."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Šta je ulje u vodi?",
+      "odgovori": [
+        "Ne meša se sa vodom i pluta na površini",
+        "Rastvara se potpuno",
+        "Tone na dno",
+        "Pretvara se u gas"
+      ],
+      "zanimljivost": "Ulje je ređe od vode i ne meša se sa njom. Sapun i deterdženti pomažu da se masnoća „spoji“ sa vodom i spere."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Šta se dešava sa šećerom u toplom čaju?",
+      "odgovori": [
+        "Rastvara se",
+        "Isparava",
+        "Pretvara se u so",
+        "Tone i ostaje ceo"
+      ],
+      "zanimljivost": "U toploj vodi šećer se brže rastvara jer se molekuli brže kreću. U litru vode na sobnoj temperaturi može da se rastvori oko 2 kg šećera!"
+    }
+  ]
+}

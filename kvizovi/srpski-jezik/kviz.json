@@ -1,0 +1,1259 @@
+{
+  "naziv": "Srpski jezik i književnost",
+  "ikona": "📚",
+  "boja": "#fdcb6e",
+  "opis": "Gramatika, pravopis, pisci, pesme i narodna književnost",
+  "redosled": 15,
+  "pitanja": [
+    {
+      "tezina": 1,
+      "pitanje": "Ko je ovaj reformator jezika, autor rečenice „Piši kao što govoriš“ u srpskoj tradiciji?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/vuk.jpg"
+      },
+      "odgovori": [
+        "Vuk Stefanović Karadžić",
+        "Dositej Obradović",
+        "Đura Daničić",
+        "Branko Radičević"
+      ],
+      "zanimljivost": "Pravilo „Piši kao što govoriš“ Vuk je preuzeo od nemačkog jezikoslovca Adelunga. Vukova azbuka je zvanično prihvaćena tek 1868, četiri godine posle njegove smrti."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koliko slova ima srpska ćirilica (azbuka)?",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "А Б В Г Д Ђ Е Ж З И Ј К Л Љ М Н Њ О П Р С Т Ћ У Ф Х Ц Ч Џ Ш"
+      },
+      "odgovori": [
+        "30",
+        "26",
+        "32",
+        "28"
+      ],
+      "zanimljivost": "Srpska ćirilica je jedno od retkih pisama u kome za svaki glas postoji tačno jedno slovo. Latinica takođe ima 30 slova, ali su tri od njih dvoslovi: lj, nj i dž."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koje je slovo Vuk Karadžić uzeo iz latinice?",
+      "odgovori": [
+        "J",
+        "Đ",
+        "Ć",
+        "Č"
+      ],
+      "zanimljivost": "Zbog slova J, Vukovi protivnici su ga optuživali da „latinizira“ srpski jezik. Spor oko pravopisa trajao je decenijama, a Vukova pobeda se vezuje za 1847. godinu."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koliko padeža ima srpski jezik?",
+      "odgovori": [
+        "7",
+        "5",
+        "6",
+        "9"
+      ],
+      "zanimljivost": "Nominativ, genitiv, dativ, akuzativ, vokativ, instrumental i lokativ. Za pamćenje se koriste pitanja: ko-šta, koga-čega, kome-čemu, koga-šta, hej!, s kim-čim, o kome-čemu."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "U kom padežu je reč „baki“ u rečenici „Dao sam poklon baki“?",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "Dao sam poklon BAKI."
+      },
+      "odgovori": [
+        "Dativ",
+        "Lokativ",
+        "Genitiv",
+        "Akuzativ"
+      ],
+      "zanimljivost": "Dativ odgovara na pitanje „kome?“, a lokativ „o kome?“. Oblik „baki“ je isti u oba padeža, pa se padež prepoznaje samo po pitanju i značenju!"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koja je glasovna promena u reči „mnogo → množina“?",
+      "odgovori": [
+        "Palatalizacija",
+        "Sibilarizacija",
+        "Jotovanje",
+        "Jednačenje po zvučnosti"
+      ],
+      "zanimljivost": "Kod palatalizacije k, g, h prelaze u č, ž, š (ruka → ručica, mnogo → množina, duh → duša). Kod sibilarizacije prelaze u c, z, s (ruka → ruci, noga → nozi)."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koja je glasovna promena u reči „ruka → ruci“?",
+      "odgovori": [
+        "Sibilarizacija",
+        "Palatalizacija",
+        "Jotovanje",
+        "Gubljenje suglasnika"
+      ],
+      "zanimljivost": "Sibilarizacija je dobila ime po „sibilantima“ – zviždavim suglasnicima c, z, s. Postoje i izuzeci: kaže se „seki“ i „baki“, a ne „seci“ i „baci“."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koja glasovna promena se desila u reči „vrabac → vrapca“?",
+      "odgovori": [
+        "Jednačenje suglasnika po zvučnosti",
+        "Nepostojano a",
+        "Jotovanje",
+        "Asimilacija po mestu tvorbe"
+      ],
+      "zanimljivost": "Kad nestane „a“ (nepostojano a), „b“ se nađe pored bezvučnog „c“ i i samo postaje bezvučno „p“. Tu su se zapravo desile dve promene – ali „b → p“ je jednačenje po zvučnosti."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koja od ovih reči je glagol?",
+      "odgovori": [
+        "Trčati",
+        "Trkač",
+        "Brz",
+        "Brzo"
+      ],
+      "zanimljivost": "Glagoli označavaju radnju, stanje ili zbivanje. U srpskom postoji 10 vrsta reči: imenice, zamenice, pridevi, brojevi, glagoli, prilozi, predlozi, veznici, rečce i uzvici."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zove reč suprotnog značenja (npr. „visok – nizak“)?",
+      "odgovori": [
+        "Antonim",
+        "Sinonim",
+        "Homonim",
+        "Akronim"
+      ],
+      "zanimljivost": "Sinonimi su reči sličnog značenja (lep – zgodan), a homonimi reči istog oblika, a različitog značenja (kosa na glavi i kosa za košenje)."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Kako se zove rečenica koja se isto čita sleva nadesno i zdesna nalevo, kao „Ana voli Milovana“?",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "ANA VOLI MILOVANA"
+      },
+      "odgovori": [
+        "Palindrom",
+        "Anagram",
+        "Akrostih",
+        "Rebus"
+      ],
+      "zanimljivost": "Još jedan palindrom: „Udovica baci vodu“ – probaj da ga pročitaš unazad! Anagram je nešto drugo: od istih slova se složi nova reč, kao „Rim – mir“ ili „sok – kos“."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Ko je ovaj pisac, jedini dobitnik Nobelove nagrade za književnost sa ovih prostora (1961)?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/andric.jpg"
+      },
+      "odgovori": [
+        "Ivo Andrić",
+        "Meša Selimović",
+        "Danilo Kiš",
+        "Miloš Crnjanski"
+      ],
+      "zanimljivost": "Andrić je nagradu dobio najviše za roman „Na Drini ćuprija“. Novac od nagrade poklonio je za kupovinu knjiga za biblioteke u Bosni i Hercegovini."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Ova pesnikinja je napisala „Krvavu bajku“ i „Tražim pomilovanje“. Ko je ona?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/desanka.jpg"
+      },
+      "odgovori": [
+        "Desanka Maksimović",
+        "Isidora Sekulić",
+        "Milica Stojadinović Srpkinja",
+        "Vesna Parun"
+      ],
+      "zanimljivost": "Desanka Maksimović je rođena u Rabrovici kod Valjeva, a odrasla u Brankovini, gde je i sahranjena. Bila je profesorka srpskog jezika u gimnaziji i živela je skoro 95 godina."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Ovaj pesnik je napisao zbirku „Čika Jovine pesme“ za decu. Ko je on?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/zmaj.jpg"
+      },
+      "odgovori": [
+        "Jovan Jovanović Zmaj",
+        "Branko Ćopić",
+        "Dušan Radović",
+        "Laza Kostić"
+      ],
+      "zanimljivost": "Zmaj je bio lekar po zanimanju. Pokrenuo je dečji časopis „Neven“. Festival „Zmajeve dečje igre“ u Novom Sadu nosi njegovo ime."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Ko je ovaj komediograf, autor „Gospođe ministarke“ i „Sumnjivog lica“?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/nusic.jpg"
+      },
+      "odgovori": [
+        "Branislav Nušić",
+        "Jovan Sterija Popović",
+        "Stevan Sremac",
+        "Radoje Domanović"
+      ],
+      "zanimljivost": "Nušić je zbog jedne satirične pesme o kralju Milanu odležao u zatvoru, gde je napisao „Narodnog poslanika“. Njegova „Autobiografija“ je jedna od najsmešnijih knjiga srpske književnosti."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Šta je ovo, najstarija sačuvana srpska ćirilična knjiga?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/miroslavljevo.jpg"
+      },
+      "odgovori": [
+        "Miroslavljevo jevanđelje",
+        "Oktoih prvoglasnik",
+        "Zakonopravilo",
+        "Srpski rječnik"
+      ],
+      "zanimljivost": "Nastalo je oko 1180. za kneza Miroslava, brata Stefana Nemanje. Ukrašeno je sa oko 300 minijatura i inicijala. Jedan njegov list je u 19. veku otkinut i odnet u Rusiju, gde se i danas čuva."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Ko je napisao „Ježevu kućicu“?",
+      "odgovori": [
+        "Branko Ćopić",
+        "Jovan Jovanović Zmaj",
+        "Dušan Radović",
+        "Grigor Vitez"
+      ],
+      "zanimljivost": "„Ježeva kućica“ ima stih „Ježeva kuća, ježevo zdanje…“ i govori o ježu Eži koji ne bi menjao svoj dom ni za kakve gozbe. Ćopić je napisao i „Orlovi rano lete“ i „Bašta sljezove boje“."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji roman Branka Ćopića govori o dečjoj družini iz jednog bosanskog sela u vreme Drugog svetskog rata?",
+      "odgovori": [
+        "Orlovi rano lete",
+        "Bašta sljezove boje",
+        "Hajduci",
+        "Dečak Mita i njegov pas Bobi"
+      ],
+      "zanimljivost": "Po romanu „Orlovi rano lete“ snimljen je i film 1966. Ćopić je pisao i za decu i za odrasle; „Hajduci“ su delo Branislava Nušića o dečjoj „hajdučkoj“ družini."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Ko je autor pesme „Santa Maria della Salute“?",
+      "odgovori": [
+        "Laza Kostić",
+        "Jovan Dučić",
+        "Đura Jakšić",
+        "Vojislav Ilić"
+      ],
+      "zanimljivost": "Laza Kostić je pesmu napisao u starosti, posvećenu mladoj Leni Dunđerski, koju je voleo, a nije se oženio njome. Mnogi je smatraju najlepšom ljubavnom pesmom na srpskom jeziku."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koja junakinja narodne pesme odlazi posle boja da traži svog verenika i neguje ranjene?",
+      "odgovori": [
+        "Kosovka devojka",
+        "Hasanaginica",
+        "Carica Milica",
+        "Majka Jugovića"
+      ],
+      "zanimljivost": "Verenik Kosovke devojke bio je Milan Toplica, a pobratimi Miloš Obilić i Ivan Kosančić. Od ranjenika Pavla Orlovića ona saznaje da su sva trojica poginula. Uroš Predić je ovu pesmu naslikao na čuvenoj slici."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Ko je najpoznatiji junak srpskih epskih pesama, jahač konja Šarca?",
+      "odgovori": [
+        "Kraljević Marko",
+        "Miloš Obilić",
+        "Banović Strahinja",
+        "Starina Novak"
+      ],
+      "zanimljivost": "Marko je bio stvarna istorijska ličnost – sin kralja Vukašina, koji je poginuo 1395. Narodne pesme su ga pretvorile u diva koji pije vino sa svojim Šarcem i bori se sa Musom Kesedžijom."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Ko je napisao komediju „Pokondirena tikva“?",
+      "odgovori": [
+        "Jovan Sterija Popović",
+        "Branislav Nušić",
+        "Stevan Sremac",
+        "Kosta Trifković"
+      ],
+      "zanimljivost": "Glavna junakinja Fema pravi se „velikom gospođom“ i meša nemačke reči u govor da bi bila „otmena“. Sterija je napisao i „Tvrdicu“ (Kir Janju) – komediju o škrcu."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Ko je napisao roman „Pop Ćira i pop Spira“?",
+      "odgovori": [
+        "Stevan Sremac",
+        "Branislav Nušić",
+        "Borisav Stanković",
+        "Milovan Glišić"
+      ],
+      "zanimljivost": "Sremac je napisao i „Zonu Zamfirovu“ i „Ivkovu slavu“. U „Pop Ćiri i pop Spiri“ dvojica popova u jednom banatskom selu svađaju se – a sve je počelo od jedne večere."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koja je narodna balada čiji je prepis Fortis objavio u Evropi, pa su je prevodili Gete i Puškin?",
+      "odgovori": [
+        "Hasanaginica",
+        "Smrt majke Jugovića",
+        "Zidanje Skadra",
+        "Banović Strahinja"
+      ],
+      "zanimljivost": "Italijan Alberto Fortis objavio je „Hasanaginicu“ 1774. Gete ju je preveo na nemački, a kasnije su je prevodili na mnoge jezike. Bila je jedno od prvih dela južnoslovenske narodne poezije poznatih u Evropi."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kako se pravilno piše?",
+      "odgovori": [
+        "Neću",
+        "Ne ću",
+        "Nećću",
+        "Nečju"
+      ],
+      "zanimljivost": "„Neću“, „nemam“, „nisam“ i „nemoj“ pišu se spojeno, a ostali glagoli sa „ne“ odvojeno: „ne znam“, „ne volim“, „ne idem“."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se pravilno piše?",
+      "odgovori": [
+        "Uopšte",
+        "U opšte",
+        "Uopće",
+        "Uobšte"
+      ],
+      "zanimljivost": "„Uopšte“ se piše spojeno, kao i „sutradan“, „ponekad“ i „najzad“. A „na primer“ i „do viđenja“ pišu se odvojeno."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Kako se pravilno piše?",
+      "odgovori": [
+        "Pretpostavka",
+        "Predpostavka",
+        "Pret postavka",
+        "Predhpostavka"
+      ],
+      "zanimljivost": "Ovo je jednačenje po zvučnosti: „pred“ + „postavka“ – zvučno d ispred bezvučnog p postaje t. Isto se desi i u reči „podpisati → potpisati“."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koja je od ovih reči imenica?",
+      "odgovori": [
+        "Radost",
+        "Radostan",
+        "Radovati se",
+        "Radosno"
+      ],
+      "zanimljivost": "Mnoge apstraktne imenice završavaju se na „-ost“: radost, mladost, hrabrost. Imenice označavaju bića, predmete, pojave i osobine."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je basna?",
+      "odgovori": [
+        "Kratka priča u kojoj životinje imaju ljudske osobine, sa poukom",
+        "Duga epska pesma",
+        "Narodna zagonetka",
+        "Pozorišni komad"
+      ],
+      "zanimljivost": "Najpoznatiji basnopisac je Ezop, grčki rob iz 6. veka pre n. e. Dositej Obradović je preveo i prepričao mnoge Ezopove basne, i dodao im svoja „naravoučenija“."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kako se zove pesma od 14 stihova, raspoređenih u dve strofe od četiri i dve od tri stiha?",
+      "odgovori": [
+        "Sonet",
+        "Haiku",
+        "Balada",
+        "Epigram"
+      ],
+      "zanimljivost": "Sonet je nastao u Italiji – majstor soneta bio je Petrarka. Haiku je japanska pesma od samo tri stiha sa 5, 7 i 5 slogova."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji pesnik je napisao „Đački rastanak“ i umro mlad, sa 29 godina?",
+      "odgovori": [
+        "Branko Radičević",
+        "Đura Jakšić",
+        "Laza Kostić",
+        "Jovan Dučić"
+      ],
+      "zanimljivost": "Branko Radičević je prvi napisao pesme na čistom narodnom jeziku po Vukovom pravopisu (1847). Njegove kosti su 1883. prenete iz Beča i sahranjene na Stražilovu, na Fruškoj gori, kako je želeo u pesmi."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kako se zove deo knjige na početku, u kome autor objašnjava zašto je napisao knjigu?",
+      "odgovori": [
+        "Predgovor",
+        "Pogovor",
+        "Sadržaj",
+        "Epilog"
+      ],
+      "zanimljivost": "Pogovor je na kraju knjige, a epilog je završni deo priče koji kaže šta se desilo sa junacima kasnije. Sadržaj je spisak poglavlja."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Kako se zove stilska figura u kojoj se neživim stvarima daju ljudske osobine („vetar peva“)?",
+      "odgovori": [
+        "Personifikacija",
+        "Hiperbola",
+        "Poređenje",
+        "Onomatopeja"
+      ],
+      "zanimljivost": "Hiperbola je preterivanje („čekam te sto godina“), a onomatopeja je reč koja podražava zvuk („bum“, „mjau“, „šuštati“). Poređenje koristi reči „kao“ i „poput“."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Ko je ovaj prosvetitelj, autor „Života i priključenija“?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/dositej.jpg"
+      },
+      "odgovori": [
+        "Dositej Obradović",
+        "Vuk Karadžić",
+        "Zaharija Orfelin",
+        "Gavril Stefanović Venclović"
+      ],
+      "zanimljivost": "Dositej je kao dečak pobegao u manastir jer je želeo da postane svetac, ali je kasnije shvatio da je važnije prosvećivati narod. Pisao je jezikom bliskim narodnom, a ne crkvenim jezikom."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je „bukvar“?",
+      "odgovori": [
+        "Knjiga za učenje slova i čitanja",
+        "Rečnik stranih reči",
+        "Molitvenik",
+        "Zbirka bajki"
+      ],
+      "zanimljivost": "Reč dolazi od staroslovenske reči „buki“ – slovo B, kao što „azbuka“ dolazi od prva dva slova: az (A) i buki (B). Tako je i „alfabet“ nastao od grčkih slova alfa i beta."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Ko je napisao roman „Seobe“?",
+      "odgovori": [
+        "Miloš Crnjanski",
+        "Ivo Andrić",
+        "Meša Selimović",
+        "Dobrica Ćosić"
+      ],
+      "zanimljivost": "Crnjanski je napisao i „Roman o Londonu“ i poemu „Stražilovo“. Posle Drugog svetskog rata dugo je živeo kao emigrant u Londonu, a u Beograd se vratio 1965."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Šta je od ovoga narodna zagonetka?",
+      "odgovori": [
+        "Kuća bez vrata, a sva puna zlata (jaje)",
+        "Ko rano rani, dve sreće grabi",
+        "Bila jednom jedna kraljevina…",
+        "Tamo daleko, daleko od mora"
+      ],
+      "zanimljivost": "„Ko rano rani, dve sreće grabi“ je poslovica, a „Bila jednom…“ početak bajke. Vuk Karadžić je sakupio hiljade narodnih poslovica i stotine zagonetki."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koja je ispravna množina reči „čovek“?",
+      "odgovori": [
+        "Ljudi",
+        "Čoveci",
+        "Čovekovi",
+        "Čoveki"
+      ],
+      "zanimljivost": "Ovo se zove supletivizam – kada se oblici prave od potpuno različitih reči. Isto je i „dete → deca“, i kod prideva: „dobar → bolji“, „zao → gori“."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koja zbirka Desanke Maksimović je zamišljena kao razgovor pesnikinje sa carem Dušanom i njegovim zakonikom?",
+      "odgovori": [
+        "Tražim pomilovanje",
+        "Krvava bajka",
+        "Zeleni vitez",
+        "Pesme iz Norveške"
+      ],
+      "zanimljivost": "U zbirci „Tražim pomilovanje“ (1964) pesnikinja moli cara da oprosti ljudima koje bi njegov zakonik strogo kaznio. Za tu zbirku dobila je Njegoševu nagradu."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koja je od ovih reči pridev?",
+      "odgovori": [
+        "Hrabar",
+        "Hrabrost",
+        "Hrabriti",
+        "Hrabro"
+      ],
+      "zanimljivost": "Pridevi označavaju osobine bića i predmeta i odgovaraju na pitanje „kakav?“. „Hrabro“ je prilog, a „hrabrost“ imenica."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koja je od ovih reči zamenica?",
+      "odgovori": [
+        "Ona",
+        "Kuća",
+        "Lepo",
+        "Trčati"
+      ],
+      "zanimljivost": "Zamenice „zamenjuju“ imenice da se ne bi ponavljale. Lične zamenice su ja, ti, on, ona, ono, mi, vi, oni."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koja reč je broj?",
+      "odgovori": [
+        "Sedam",
+        "Sedmica",
+        "Sedeti",
+        "Sed"
+      ],
+      "zanimljivost": "Brojevi mogu biti glavni (sedam), redni (sedmi) i zbirni (sedmoro). „Sedmica“ je imenica, a „sed“ pridev."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "U rečenici „Mačka spava“, šta je „spava“?",
+      "odgovori": [
+        "Predikat",
+        "Subjekat",
+        "Objekat",
+        "Atribut"
+      ],
+      "zanimljivost": "Predikat kaže šta subjekat radi ili kakav je. Subjekat je „mačka“ – vršilac radnje."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "U rečenici „Marko čita knjigu“, koja reč je subjekat?",
+      "odgovori": [
+        "Marko",
+        "Čita",
+        "Knjigu",
+        "Nijedna"
+      ],
+      "zanimljivost": "Subjekat odgovara na pitanje „ko?“ ili „šta?“. „Knjigu“ je objekat – na nju se radnja prenosi."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koliko samoglasnika ima srpski jezik?",
+      "odgovori": [
+        "5",
+        "6",
+        "7",
+        "4"
+      ],
+      "zanimljivost": "Samoglasnici su a, e, i, o, u. A glas R može da bude i slogotvoran – zato reč „prst“ ima slog iako nema samoglasnika!"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koja reč nema samoglasnik, a ipak ima slog?",
+      "odgovori": [
+        "Crv",
+        "Mačka",
+        "Pas",
+        "Oko"
+      ],
+      "zanimljivost": "U rečima kao što su „crv“, „srce“ i „trg“ glas R je slogotvoran. Neki stranci se čude kako izgovaramo „Krk“ ili „smrt“."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Šta je bajka?",
+      "odgovori": [
+        "Priča sa čudesnim bićima i događajima",
+        "Istinita priča",
+        "Naučni tekst",
+        "Pesma u stihu"
+      ],
+      "zanimljivost": "U bajkama dobro uvek pobeđuje zlo. Vuk Karadžić je sakupio srpske narodne bajke, kao što su „Čardak ni na nebu ni na zemlji“ i „Baš-Čelik“."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Ko je napisao „Pepeljugu“ i „Crvenkapu“ u najpoznatijoj verziji sa srećnim krajem?",
+      "odgovori": [
+        "Braća Grim",
+        "Hans Kristijan Andersen",
+        "Ezop",
+        "Vuk Karadžić"
+      ],
+      "zanimljivost": "Braća Jakob i Vilhelm Grim bili su nemački jezikoslovci, kao i Vuk – i zaista su se dopisivali sa Vukom!"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Ko je napisao „Ružno pače“ i „Malu sirenu“?",
+      "odgovori": [
+        "Hans Kristijan Andersen",
+        "Braća Grim",
+        "Šarl Pero",
+        "Oskar Vajld"
+      ],
+      "zanimljivost": "Andersen je bio Danac, sin siromašnog obućara. U Kopenhagenu stoji čuvena statua Male sirene, simbol grada."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Ko je autor „Alise u zemlji čuda“?",
+      "odgovori": [
+        "Luis Kerol",
+        "Džonatan Svift",
+        "Mark Tven",
+        "Čarls Dikens"
+      ],
+      "zanimljivost": "Luis Kerol se zapravo zvao Čarls Dodžson i bio je profesor matematike na Oksfordu. Priču je smislio na izletu čamcem za devojčicu Alis Lidel."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Ko je napisao „Pinokija“?",
+      "odgovori": [
+        "Karlo Kolodi",
+        "Đani Rodari",
+        "Edmondo de Amičis",
+        "Hans Kristijan Andersen"
+      ],
+      "zanimljivost": "„Pinokio“ je preveden na stotine jezika i jedna je od najprevođenijih knjiga na svetu. Kolodi je zapravo pseudonim – pisac se zvao Karlo Lorencini."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kako se zove Vukov rodni kraj, selo kod Loznice?",
+      "odgovori": [
+        "Tršić",
+        "Orašac",
+        "Brankovina",
+        "Takovo"
+      ],
+      "zanimljivost": "U Tršiću se svake godine održava Vukov sabor. Rođen je 1787. u porodici doseljenika iz Hercegovine."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koja je glasovna promena u reči „brat → braća“?",
+      "odgovori": [
+        "Jotovanje",
+        "Palatalizacija",
+        "Sibilarizacija",
+        "Gubljenje suglasnika"
+      ],
+      "zanimljivost": "Jotovanje je spajanje suglasnika sa glasom J: t + j daje ć (brat + ja → braća), d + j daje đ (glad → glađu)."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koja je glasovna promena u „dobar → dobra“?",
+      "odgovori": [
+        "Nepostojano a",
+        "Jotovanje",
+        "Palatalizacija",
+        "Asimilacija"
+      ],
+      "zanimljivost": "Nepostojano a se pojavljuje i nestaje u istoj reči: momak – momka, vrabac – vrapca."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koja je glasovna promena u reči „pisac → pišče“ (vokativ)?",
+      "odgovori": [
+        "Palatalizacija",
+        "Sibilarizacija",
+        "Jotovanje",
+        "Nepostojano a"
+      ],
+      "zanimljivost": "I c ispred e prelazi u č: stric – striče, pisac – pišče. Ovo je u vokativu česta pojava."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako glasi vokativ reči „Milan“?",
+      "odgovori": [
+        "Milane",
+        "Milanu",
+        "Milanom",
+        "Milana"
+      ],
+      "zanimljivost": "Vokativ je padež dozivanja. Odvaja se zarezom: „Milane, dođi!“"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji je padež u izrazu „s drugom“?",
+      "odgovori": [
+        "Instrumental",
+        "Lokativ",
+        "Dativ",
+        "Genitiv"
+      ],
+      "zanimljivost": "Instrumental odgovara na pitanja „s kim?“ i „čim?“ Pazi: piše se „s drugom“ ili „sa drugom“, a „sa“ se koristi ispred reči koje počinju sa s, z, š, ž."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "U kom padežu je „o školi“?",
+      "odgovori": [
+        "Lokativ",
+        "Dativ",
+        "Akuzativ",
+        "Genitiv"
+      ],
+      "zanimljivost": "Lokativ uvek dolazi uz predlog (o, u, na, po, pri) i odgovara na pitanje „o kome? o čemu?“."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je antonim reči „veseo“?",
+      "odgovori": [
+        "Tužan",
+        "Radostan",
+        "Srećan",
+        "Razdragan"
+      ],
+      "zanimljivost": "Antonimi su reči suprotnog značenja. Radostan, srećan i razdragan su sinonimi reči „veseo“."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je sinonim za reč „lep“?",
+      "odgovori": [
+        "Zgodan",
+        "Ružan",
+        "Visok",
+        "Star"
+      ],
+      "zanimljivost": "Srpski jezik je bogat sinonimima: lep, zgodan, krasan, divan, ljupak, privlačan…"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta znači izreka „pala mu je sekira u med“?",
+      "odgovori": [
+        "Imao je veliku sreću",
+        "Izgubio je nešto",
+        "Povredio se",
+        "Uradio je glupost"
+      ],
+      "zanimljivost": "Frazeologizmi su ustaljeni izrazi čije značenje nije zbir značenja reči. „Popiti hladan tuš“ znači doživeti razočarenje."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta znači izreka „baciti koplje u trnje“?",
+      "odgovori": [
+        "Odustati",
+        "Pobediti",
+        "Uplašiti se",
+        "Posvađati se"
+      ],
+      "zanimljivost": "Izraz potiče od vojnika koji, posle poraza, bacaju oružje. „Ne baciti koplje u trnje“ znači istrajati."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta znači izraz „Ahilova peta“?",
+      "odgovori": [
+        "Nečija slaba tačka",
+        "Brzo trčanje",
+        "Povreda u sportu",
+        "Velika snaga"
+      ],
+      "zanimljivost": "Po grčkom mitu, majka je Ahila umočila u reku Stiks i učinila ga neranjivim, osim pete za koju ga je držala. Tu ga je pogodila strela."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta znači izraz „Sizifov posao“?",
+      "odgovori": [
+        "Beskrajan, uzaludan posao",
+        "Lak posao",
+        "Dobro plaćen posao",
+        "Tajni zadatak"
+      ],
+      "zanimljivost": "Bogovi su Sizifa kaznili da večno gura kamen uzbrdo, a kamen se uvek skotrlja nazad."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta znači izraz „Pandorina kutija“?",
+      "odgovori": [
+        "Izvor mnogih nevolja",
+        "Kutija sa nakitom",
+        "Velika tajna koja donosi sreću",
+        "Poklon"
+      ],
+      "zanimljivost": "Pandora je otvorila kutiju i iz nje su izletela sva zla sveta. Na dnu je ostala samo nada."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta znači „Danajski dar“?",
+      "odgovori": [
+        "Poklon koji donosi nesreću",
+        "Velika nagrada",
+        "Poklon iz Grčke",
+        "Rođendanski dar"
+      ],
+      "zanimljivost": "Izraz potiče od Trojanskog konja – Danajci (Grci) su ga „poklonili“ Trojancima. Rimljanin Vergilije je napisao: „Bojim se Danajaca i kad darove nose.“"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koja je vrsta reči „i“, „ali“, „pa“, „jer“?",
+      "odgovori": [
+        "Veznici",
+        "Predlozi",
+        "Rečce",
+        "Uzvici"
+      ],
+      "zanimljivost": "Veznici povezuju reči i rečenice. Predlozi stoje ispred imenica (u, na, sa), a uzvici izražavaju osećanja (jao, oh, ura)."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je uzvik?",
+      "odgovori": [
+        "Reč koja izražava osećanja ili podražava zvuk",
+        "Reč koja označava radnju",
+        "Reč koja zamenjuje imenicu",
+        "Reč koja povezuje rečenice"
+      ],
+      "zanimljivost": "Uzvici: jao, joj, ura, bravo, mjau, bum. Iza uzvika se često piše uzvičnik."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je glagolski vid?",
+      "odgovori": [
+        "Da li je radnja svršena (napisati) ili nesvršena (pisati)",
+        "Vreme radnje",
+        "Lice koje vrši radnju",
+        "Broj vršilaca"
+      ],
+      "zanimljivost": "Glagoli se često javljaju u parovima: učiti – naučiti, čitati – pročitati. Stranci kažu da je to jedno od najtežih pravila srpskog!"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koje glagolsko vreme je u rečenici „Ja ću čitati“?",
+      "odgovori": [
+        "Futur I",
+        "Perfekat",
+        "Prezent",
+        "Aorist"
+      ],
+      "zanimljivost": "Futur I izražava buduću radnju. Kada pomoćni glagol stoji iza glagola, piše se spojeno: „čitaću“, a kad stoji ispred – odvojeno: „ja ću čitati“."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se pravilno piše futur glagola „pisati“?",
+      "odgovori": [
+        "Pisaću",
+        "Pisati ću",
+        "Pisat ću",
+        "Pisaticu"
+      ],
+      "zanimljivost": "Kad glagol na -ti stoji ispred „ću“, „ti“ se gubi i piše se spojeno: pisaću, čitaću. Ali glagoli na -ći pišu se odvojeno: „doći ću“, „reći ću“."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koje vreme je u „Juče sam igrao fudbal“?",
+      "odgovori": [
+        "Perfekat",
+        "Prezent",
+        "Futur",
+        "Aorist"
+      ],
+      "zanimljivost": "Perfekat je najčešće prošlo vreme u srpskom. Aorist („igrah“) danas se ređe koristi, više u pisanom jeziku i u narodnim pesmama."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je deseterac?",
+      "odgovori": [
+        "Stih od deset slogova",
+        "Pesma od deset strofa",
+        "Desetogodišnji pesnik",
+        "Pesma o deset junaka"
+      ],
+      "zanimljivost": "Epske narodne pesme pevaju se u desetercu, uz gusle, sa pauzom (cezurom) posle četvrtog sloga: „Vino pije / Kraljeviću Marko“."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zove kratka narodna umotvorina koja daje pouku, kao „Bez muke nema nauke“?",
+      "odgovori": [
+        "Poslovica",
+        "Zagonetka",
+        "Brzalica",
+        "Basna"
+      ],
+      "zanimljivost": "Poslovice sažimaju iskustvo mnogih generacija. Brzalice se, s druge strane, brzo izgovaraju: „Riba ribi grize rep.“"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je brzalica?",
+      "odgovori": [
+        "Rečenica koju je teško brzo izgovoriti",
+        "Kratka priča",
+        "Brzo pevanje",
+        "Šala"
+      ],
+      "zanimljivost": "Probaj: „Na vrh brda vrba mrda.“ U ovoj brzalici nema nijednog samoglasnika osim A – a kod reči „vrh“, „brda“, „vrba“ i „mrda“ slog nosi R!"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Ko je napisao roman „Na Drini ćuprija“?",
+      "odgovori": [
+        "Ivo Andrić",
+        "Meša Selimović",
+        "Branko Ćopić",
+        "Dobrica Ćosić"
+      ],
+      "zanimljivost": "Roman prati 400 godina života oko višegradskog mosta. Andrić je za njega i za celokupno delo dobio Nobelovu nagradu 1961."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji pisac je napisao „Derviš i smrt“?",
+      "odgovori": [
+        "Meša Selimović",
+        "Ivo Andrić",
+        "Danilo Kiš",
+        "Miloš Crnjanski"
+      ],
+      "zanimljivost": "Roman počinje rečima iz Kurana. Selimović ga je pisao nakon što mu je brat bio nepravedno pogubljen posle rata."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Ko je napisao „Hajduke“, roman o dečjoj „hajdučkoj“ družini?",
+      "odgovori": [
+        "Branislav Nušić",
+        "Branko Ćopić",
+        "Dušan Radović",
+        "Stevan Sremac"
+      ],
+      "zanimljivost": "Pored komedija, Nušić je pisao i za decu. U „Hajducima“ dečaci beže u šumu da bi postali hajduci – i to se loše završi."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji pesnik je napisao zbirku „Kapetan Džon Piplfoks“ i bio urednik dečjeg programa Radio Beograda?",
+      "odgovori": [
+        "Dušan Radović",
+        "Jovan Jovanović Zmaj",
+        "Miroslav Antić",
+        "Ljubivoje Ršumović"
+      ],
+      "zanimljivost": "Radović je pokrenuo čuvenu emisiju „Beograde, dobro jutro“. Njegove pesme i aforizmi i danas se citiraju."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Ko je napisao „Plavi čuperak“?",
+      "odgovori": [
+        "Miroslav Antić",
+        "Dušan Radović",
+        "Branko Ćopić",
+        "Desanka Maksimović"
+      ],
+      "zanimljivost": "Mika Antić je bio pesnik, slikar i režiser iz Mokrina. Pisao je o odrastanju i prvoj ljubavi, pa su ga voleli i deca i odrasli."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji pesnik je napisao „Đački rastanak“, pesmu o rastanku od Karlovaca?",
+      "odgovori": [
+        "Branko Radičević",
+        "Laza Kostić",
+        "Đura Jakšić",
+        "Jovan Dučić"
+      ],
+      "zanimljivost": "Branko je odrastao u Sremskim Karlovcima. Pesma opisuje đačke nestašluke i lepotu Fruške gore i Stražilova."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji je pisac bio i slikar, autor pesme „Na Liparu“?",
+      "odgovori": [
+        "Đura Jakšić",
+        "Laza Kostić",
+        "Branko Radičević",
+        "Vojislav Ilić"
+      ],
+      "zanimljivost": "Đura Jakšić je bio romantičar, i slikar i pesnik. Njegova kuća u Skadarliji danas je mesto književnih večeri."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Ko je napisao „Emina“, „Ostajte ovdje“ i „Veče na školju“?",
+      "odgovori": [
+        "Aleksa Šantić",
+        "Jovan Dučić",
+        "Vladislav Petković Dis",
+        "Milan Rakić"
+      ],
+      "zanimljivost": "Šantić je bio pesnik iz Mostara. „Emina“ je postala jedna od najpoznatijih sevdalinki – pesama koje se pevaju uz harmoniku i sviru."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji pesnik je bio diplomata i napisao „Plave legende“?",
+      "odgovori": [
+        "Jovan Dučić",
+        "Milan Rakić",
+        "Laza Kostić",
+        "Branko Ćopić"
+      ],
+      "zanimljivost": "Dučić je bio rodom iz Trebinja. Poslednje godine proveo je u Americi, a 2000. njegove kosti su prenete u Trebinje, kako je želeo."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Ko je napisao „Gospođu ministarku“?",
+      "odgovori": [
+        "Branislav Nušić",
+        "Jovan Sterija Popović",
+        "Stevan Sremac",
+        "Borislav Pekić"
+      ],
+      "zanimljivost": "Glavna junakinja Živka, kad joj muž postane ministar, postaje uobražena i sva rodbina dolazi po usluge. Komedija je i danas aktuelna."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Ko je napisao roman „Zona Zamfirova“?",
+      "odgovori": [
+        "Stevan Sremac",
+        "Borisav Stanković",
+        "Branislav Nušić",
+        "Milovan Glišić"
+      ],
+      "zanimljivost": "Radnja se dešava u Nišu, a priča je o ljubavi bogate devojke i siromašnog kujundžije Mane. Po romanu je 2002. snimljen veoma popularan film."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Ko je napisao „Nečistu krv“ i dramu „Koštana“?",
+      "odgovori": [
+        "Borisav Stanković",
+        "Stevan Sremac",
+        "Ivo Andrić",
+        "Branislav Nušić"
+      ],
+      "zanimljivost": "Stanković je pisao o starom Vranju i njegovim ljudima. Koštana je pevačica čija pesma budi zaboravljene čežnje."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koja je najpoznatija knjiga Radoja Domanovića, satira o vožđu koji vodi narod, iako je slep?",
+      "odgovori": [
+        "„Vođa“",
+        "„Stradija“",
+        "„Hajduci“",
+        "„Pokondirena tikva“"
+      ],
+      "zanimljivost": "Domanović je u satirama „Vođa“, „Stradija“ i „Danga“ ismevao vlast i poslušnost. Smatra se jednim od najvećih srpskih satiričara."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zove pripovetka Laze Lazarevića u kojoj otac prokocka imanje, a majka svojom mudrošću spase porodicu?",
+      "odgovori": [
+        "„Prvi put s ocem na jutrenje“",
+        "„Švabica“",
+        "„Verter“",
+        "„Sve će to narod pozlatiti“"
+      ],
+      "zanimljivost": "Majka otplati očev dug i ništa mu ne prebaci, a otac se posle toga promeni. Laza Lazarević je bio i čuveni lekar – lični lekar kralja Milana."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Ko je napisao roman „Seobe“ i poemu „Lament nad Beogradom“?",
+      "odgovori": [
+        "Miloš Crnjanski",
+        "Ivo Andrić",
+        "Danilo Kiš",
+        "Rastko Petrović"
+      ],
+      "zanimljivost": "U „Lamentu nad Beogradom“ Crnjanski pesnički opisuje Beograd kao grad za kojim čezne. Sahranjen je u Aleji zaslužnih građana."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koji pisac je autor knjige „Bašta, pepeo“ i „Rani jadi“?",
+      "odgovori": [
+        "Danilo Kiš",
+        "Meša Selimović",
+        "Borislav Pekić",
+        "Milorad Pavić"
+      ],
+      "zanimljivost": "Kiš je pisao o detinjstvu u Vojvodini i Mađarskoj i o nestalom ocu. Njegova knjiga „Grobnica za Borisa Davidoviča“ prevedena je na mnoge jezike."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Ko je napisao „Hazarski rečnik“, roman koji se može čitati u bilo kom redosledu?",
+      "odgovori": [
+        "Milorad Pavić",
+        "Danilo Kiš",
+        "Borislav Pekić",
+        "Dobrica Ćosić"
+      ],
+      "zanimljivost": "„Hazarski rečnik“ je objavljen u „muškom“ i „ženskom“ izdanju, koja se razlikuju u jednom pasusu. Preveden je na desetine jezika."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Ko je napisao roman „Vreme smrti“, o Srbiji u Prvom svetskom ratu?",
+      "odgovori": [
+        "Dobrica Ćosić",
+        "Ivo Andrić",
+        "Branko Ćopić",
+        "Miloš Crnjanski"
+      ],
+      "zanimljivost": "„Vreme smrti“ je opsežan roman u četiri knjige, koji prati Kolubarsku bitku i povlačenje preko Albanije."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Ko je napisao zbirku „Utopljene duše“ i pesmu „Možda spava“?",
+      "odgovori": [
+        "Vladislav Petković Dis",
+        "Milan Rakić",
+        "Sima Pandurović",
+        "Jovan Dučić"
+      ],
+      "zanimljivost": "Dis je bio jedan od najvećih srpskih pesnika modernog doba. Poginuo je 1917. kada je brod na kome je putovao torpedovan u Jonskom moru."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koji pisac je autor „Kamenog spavača“ – zbirke inspirisane stećcima?",
+      "odgovori": [
+        "Mak Dizdar",
+        "Ivo Andrić",
+        "Meša Selimović",
+        "Branko Ćopić"
+      ],
+      "zanimljivost": "Mak Dizdar je u zbirci spojio motive sa natpisa na stećcima sa modernim pesničkim izrazom."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Ko je napisao pesmu „Simonida“, o freski sa iskopanim očima u Gračanici?",
+      "odgovori": [
+        "Milan Rakić",
+        "Jovan Dučić",
+        "Aleksa Šantić",
+        "Desanka Maksimović"
+      ],
+      "zanimljivost": "Rakić je opisao kako je „Arbanas“ iskopao oči lepe kraljice na freski, ali je ona i dalje lepa. Rakić je bio diplomata i u Prištini."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Kojim pismom je napisan najstariji sačuvani srpski tekst?",
+      "odgovori": [
+        "Ćirilicom",
+        "Latinicom",
+        "Glagoljicom",
+        "Grčkim"
+      ],
+      "zanimljivost": "Najstariji srpski spomenici, kao Miroslavljevo jevanđelje, pisani su ćirilicom. Glagoljica je starija, ali se kod Srba brzo povukla pred ćirilicom."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Kako se zove glasovna promena u reči „podpisati → potpisati“?",
+      "odgovori": [
+        "Jednačenje suglasnika po zvučnosti",
+        "Jednačenje po mestu tvorbe",
+        "Jotovanje",
+        "Gubljenje suglasnika"
+      ],
+      "zanimljivost": "Zvučno D ispred bezvučnog P prelazi u bezvučno T. Isto se dešava u „sladak → slatko“."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Kako se zove glasovna promena u „jedan → jedanput → jedamput“ ili „stan → stambeni“?",
+      "odgovori": [
+        "Jednačenje suglasnika po mestu tvorbe",
+        "Jotovanje",
+        "Palatalizacija",
+        "Nepostojano a"
+      ],
+      "zanimljivost": "N ispred B i P prelazi u M: stan → stambeni, zelen → zelembać. Ova promena se u pisanju ponekad ne beleži, kao u „jedanput“."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Šta je akrostih?",
+      "odgovori": [
+        "Pesma u kojoj početna slova stihova čitana odozgo nadole daju reč",
+        "Pesma bez rime",
+        "Pesma o akrobatama",
+        "Najduži stih u pesmi"
+      ],
+      "zanimljivost": "Despot Stefan Lazarević napisao je „Slovo ljubve“ kao akrostih – početna slova stihova daju poruku. To je jedan od najlepših primera srednjovekovne srpske poezije."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Kako se zove pesnička figura koja je preterivanje, kao „Čekam te sto godina“?",
+      "odgovori": [
+        "Hiperbola",
+        "Metafora",
+        "Personifikacija",
+        "Onomatopeja"
+      ],
+      "zanimljivost": "Hiperbole su česte u narodnim pesmama: junaci piju vino iz kabla i nose topuze od sto oka."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Šta je metafora?",
+      "odgovori": [
+        "Prenošenje značenja na osnovu sličnosti, bez reči „kao“",
+        "Poređenje sa „kao“",
+        "Ponavljanje istog glasa",
+        "Preterivanje"
+      ],
+      "zanimljivost": "„Ona je zvezda razreda“ je metafora, a „blista kao zvezda“ poređenje."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Kako se zove ponavljanje istih suglasnika u stihu radi zvučnog efekta?",
+      "odgovori": [
+        "Aliteracija",
+        "Asonanca",
+        "Anafora",
+        "Epitet"
+      ],
+      "zanimljivost": "Aliteracija se često koristi u brzalicama i reklamnim sloganima. Asonanca je ponavljanje samoglasnika, a anafora ponavljanje reči na početku stihova."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Šta je epitet?",
+      "odgovori": [
+        "Ukrasni pridev uz imenicu",
+        "Završetak pesme",
+        "Glavni junak",
+        "Strofa od četiri stiha"
+      ],
+      "zanimljivost": "Stalni epiteti u narodnim pesmama: „bijelo grlo“, „rujno vino“, „sivi soko“, „crna zemlja“."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Šta je „gusle-pevač“ u narodnoj tradiciji?",
+      "odgovori": [
+        "Guslar",
+        "Kantor",
+        "Trubadur",
+        "Bard"
+      ],
+      "zanimljivost": "Najpoznatiji guslari su Filip Višnjić i Tešan Podrugović, od kojih je Vuk zapisao mnoge epske pesme."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Ko je bio Tešan Podrugović?",
+      "odgovori": [
+        "Guslar i hajduk od koga je Vuk zapisao pesme o Marku Kraljeviću",
+        "Srpski kralj",
+        "Pisac romana",
+        "Slikar"
+      ],
+      "zanimljivost": "Vuk je govorio da Podrugović pevao „kao niko“ – bio je i najbolji pripovedač među svim Vukovim kazivačima."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koja je srpska pesnikinja iz 19. veka bila prijateljica Vuka i zvala se „Srpkinja“?",
+      "odgovori": [
+        "Milica Stojadinović Srpkinja",
+        "Desanka Maksimović",
+        "Isidora Sekulić",
+        "Draga Gavrilović"
+      ],
+      "zanimljivost": "Milica Stojadinović je pisala dnevnik o susretima sa Vukom, Njegošem i Brankom. Bila je jedna od prvih srpskih pesnikinja novog doba."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koja srpska književnica je bila prva žena-akademik SANU?",
+      "odgovori": [
+        "Isidora Sekulić",
+        "Desanka Maksimović",
+        "Milica Stojadinović",
+        "Svetlana Velmar-Janković"
+      ],
+      "zanimljivost": "Isidora Sekulić je bila esejista i putopisac, autorka knjige „Pisma iz Norveške“. Govorila je mnoge jezike."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Šta je strofa?",
+      "odgovori": [
+        "Grupa stihova u pesmi",
+        "Jedan red pesme",
+        "Naslov pesme",
+        "Kraj pesme"
+      ],
+      "zanimljivost": "Strofa od četiri stiha zove se katren, a od dva distih. Prozni tekst je podeljen na pasuse, a pesma na strofe."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Šta je rima?",
+      "odgovori": [
+        "Podudaranje glasova na kraju stihova",
+        "Broj slogova u stihu",
+        "Naslov pesme",
+        "Pauza u stihu"
+      ],
+      "zanimljivost": "„Ljubav – plav, sunce – zvonce…“ Narodne epske pesme uglavnom nemaju rimu, ali imaju ritam deseterca."
+    }
+  ]
+}

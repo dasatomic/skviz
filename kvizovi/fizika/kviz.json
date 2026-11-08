@@ -1,0 +1,1405 @@
+{
+  "naziv": "Fizika",
+  "ikona": "⚡",
+  "boja": "#6c5ce7",
+  "opis": "Sila, kretanje, svetlost, struja, svemir – i veliki naučnici",
+  "redosled": 30,
+  "pitanja": [
+    {
+      "tezina": 1,
+      "pitanje": "Ko je ovaj čuveni naučnik rođen u Smiljanu u Lici?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/tesla.jpg"
+      },
+      "odgovori": [
+        "Nikola Tesla",
+        "Mihajlo Pupin",
+        "Milutin Milanković",
+        "Albert Ajnštajn"
+      ],
+      "zanimljivost": "Tesla je izumeo motor na naizmeničnu struju i sistem kojim se i danas prenosi struja do naših kuća. Jedinica za magnetnu indukciju zove se „tesla“ (T). Imao je preko 300 patenata, a mnoge ideje je pamtio napamet, bez crteža."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Ovaj naučnik iz Idvora izumeo je kalemove koji su omogućili telefoniranje na velike daljine. Ko je on?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/pupin.jpg"
+      },
+      "odgovori": [
+        "Mihajlo Pupin",
+        "Nikola Tesla",
+        "Đorđe Stanojević",
+        "Ognjeslav Kostović"
+      ],
+      "zanimljivost": "Pupin je u Ameriku stigao kao siromašan dečak sa nekoliko centi u džepu, a postao profesor na Univerzitetu Kolumbija. Za autobiografiju „Od pašnjaka do naučenjaka“ dobio je Pulicerovu nagradu 1924. godine."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Ovaj naučnik iz Dalja objasnio je kako promene Zemljine putanje izazivaju ledena doba. Ko je on?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/milankovic.jpg"
+      },
+      "odgovori": [
+        "Milutin Milanković",
+        "Mihajlo Pupin",
+        "Jovan Cvijić",
+        "Josif Pančić"
+      ],
+      "zanimljivost": "Po Milankoviću su nazvani krater na Mesecu i krater na Marsu. Napravio je i reformu julijanskog kalendara koja je tačnija od gregorijanskog kalendara – i danas je zvanično prihvaćena u nekim pravoslavnim crkvama."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Ko je ovaj naučnik, tvorac teorije relativnosti?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/ajnstajn.jpg"
+      },
+      "odgovori": [
+        "Albert Ajnštajn",
+        "Isak Njutn",
+        "Nikola Tesla",
+        "Stiven Hoking"
+      ],
+      "zanimljivost": "Ajnštajn je Nobelovu nagradu dobio za objašnjenje fotoelektričnog efekta, a ne za relativnost. Njegova prva supruga bila je Mileva Marić iz Titela, takođe fizičarka."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Ova fizičarka iz Titela bila je prva supruga Alberta Ajnštajna. Ko je ona?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/mileva.jpg"
+      },
+      "odgovori": [
+        "Mileva Marić",
+        "Marija Kiri",
+        "Nadežda Petrović",
+        "Desanka Maksimović"
+      ],
+      "zanimljivost": "Mileva je bila jedina žena na svojoj godini studija fizike na Politehnici u Cirihu. Ajnštajn joj je, posle razvoda, dao novac od svoje Nobelove nagrade."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Ko je, prema priči, otkrio zakon gravitacije kada mu je jabuka pala sa drveta?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/njutn.jpg"
+      },
+      "odgovori": [
+        "Isak Njutn",
+        "Galileo Galilej",
+        "Albert Ajnštajn",
+        "Arhimed"
+      ],
+      "zanimljivost": "Jabuka mu verovatno nije pala na glavu – ali je Njutn sam pričao da ga je pad jabuke podstakao da razmišlja zašto predmeti padaju pravo ka Zemlji. Po njemu se jedinica za silu zove njutn (N)."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Ovaj italijanski naučnik prvi je teleskopom posmatrao Jupiterove mesece. Ko je on?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/galilej.jpg"
+      },
+      "odgovori": [
+        "Galileo Galilej",
+        "Leonardo da Vinči",
+        "Nikola Kopernik",
+        "Johan Kepler"
+      ],
+      "zanimljivost": "Četiri najveća Jupiterova meseca (Io, Evropa, Ganimed i Kalisto) zovu se „Galilejevi meseci“. Galilej je zbog tvrdnje da se Zemlja okreće oko Sunca osuđen i proveo poslednje godine u kućnom pritvoru."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koja je ovo planeta, poznata po prstenovima?",
+      "mediji": {
+        "vrsta": "planeta",
+        "ime": "saturn"
+      },
+      "odgovori": [
+        "Saturn",
+        "Jupiter",
+        "Neptun",
+        "Mars"
+      ],
+      "zanimljivost": "Saturn je toliko redak da bi plutao u ogromnoj kadi vode! Prstenovi su od komada leda i stena, široki stotinama hiljada kilometara, a debeli uglavnom samo desetine metara."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koja planeta se zove „Crvena planeta“?",
+      "mediji": {
+        "vrsta": "planeta",
+        "ime": "mars"
+      },
+      "odgovori": [
+        "Mars",
+        "Venera",
+        "Merkur",
+        "Jupiter"
+      ],
+      "zanimljivost": "Mars je crven zbog gvožđe-oksida, odnosno rđe u prašini. Na njemu je Olimp – najveći vulkan u Sunčevom sistemu, skoro tri puta viši od Mont Everesta."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koja je ovo planeta, sa trakama i velikom crvenom pegom?",
+      "mediji": {
+        "vrsta": "planeta",
+        "ime": "jupiter"
+      },
+      "odgovori": [
+        "Jupiter",
+        "Saturn",
+        "Uran",
+        "Venera"
+      ],
+      "zanimljivost": "Velika crvena pega je oluja veća od Zemlje, koju astronomi neprekidno prate skoro 200 godina. Jupiter je toliko velik da bi u njega stalo oko 1.300 Zemalja."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koja je planeta najbliža Suncu?",
+      "odgovori": [
+        "Merkur",
+        "Venera",
+        "Zemlja",
+        "Mars"
+      ],
+      "zanimljivost": "Iako je Merkur najbliži, najtoplija planeta je Venera (oko 465 °C) – njena gusta atmosfera od ugljen-dioksida zadržava toplotu kao staklenik."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "U kojoj jedinici se meri sila?",
+      "odgovori": [
+        "Njutn (N)",
+        "Džul (J)",
+        "Vat (W)",
+        "Kilogram (kg)"
+      ],
+      "zanimljivost": "Jedan njutn je otprilike sila kojom mala jabuka (oko 100 g) pritiska tvoj dlan. Džul je jedinica za energiju, a vat za snagu."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kolika je brzina svetlosti (približno)?",
+      "odgovori": [
+        "300.000 km/s",
+        "300.000 km/h",
+        "30.000 km/s",
+        "3.000.000 km/s"
+      ],
+      "zanimljivost": "Svetlost sa Sunca do nas putuje oko 8 minuta i 20 sekundi. Kada gledaš zvezde, vidiš ih kakve su bile pre mnogo godina – nekih možda više i nema!"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Šta je brže – svetlost ili zvuk?",
+      "odgovori": [
+        "Svetlost",
+        "Zvuk",
+        "Jednako su brzi",
+        "Zavisi od vremena"
+      ],
+      "zanimljivost": "Zvuk u vazduhu prelazi oko 340 m u sekundi. Kada vidiš munju, broj sekunde do groma i podeli sa 3 – dobićeš otprilike koliko kilometara je oluja daleko."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta se dešava sa zvukom u vakuumu (svemiru)?",
+      "odgovori": [
+        "Ne prostire se",
+        "Putuje brže",
+        "Postaje glasniji",
+        "Pretvara se u svetlost"
+      ],
+      "zanimljivost": "Zvuku treba sredina – vazduh, voda ili čvrsto telo – da bi se prenosio. Zato su eksplozije u svemiru zapravo potpuno tihe, za razliku od filmova. Kroz čelik zvuk putuje oko 15 puta brže nego kroz vazduh!"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Šta pokazuje ova reč u Morzeovoj azbuci? Pusti signal!",
+      "mediji": {
+        "vrsta": "morze",
+        "tekst": "SOS"
+      },
+      "odgovori": [
+        "SOS",
+        "TESLA",
+        "HELP",
+        "OK"
+      ],
+      "zanimljivost": "SOS je · · · – – – · · · (tri kratka, tri duga, tri kratka). Izabran je 1906. jer se lako prepoznaje, a ne kao skraćenica. Titanik je 1912. bio jedan od prvih brodova koji su ga poslali."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koje slovo je ovo u Morzeovoj azbuci?",
+      "mediji": {
+        "vrsta": "morze",
+        "tekst": "E"
+      },
+      "odgovori": [
+        "E",
+        "T",
+        "A",
+        "S"
+      ],
+      "zanimljivost": "E je samo jedna tačkica, a T jedna crta – zato što su to najčešća slova u engleskom. Semjuel Morze je brojao slova u štampariji da bi najčešćima dao najkraće znakove."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koje boje se dobijaju kada se bela svetlost propusti kroz prizmu?",
+      "odgovori": [
+        "Duga – sve boje spektra",
+        "Samo crvena",
+        "Crna",
+        "Samo plava i zelena"
+      ],
+      "zanimljivost": "Njutn je prvi pokazao da je bela svetlost mešavina svih boja. Duga nastaje isto – svaka kapljica kiše je mala prizma. Dugu možeš videti samo kad ti je Sunce iza leđa."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Zašto je nebo plavo?",
+      "odgovori": [
+        "Vazduh najviše rasipa plavu svetlost",
+        "Odražava more",
+        "Zbog ozona koji je plave boje",
+        "Zbog vodene pare"
+      ],
+      "zanimljivost": "Sunčeva svetlost se sudara sa molekulima vazduha, a plava (kratke talasne dužine) se rasipa mnogo više od crvene. Pri zalasku svetlost prelazi duži put kroz vazduh, plava se „izgubi“ i nebo postaje crveno-narandžasto."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Ko je otkrio da telo potopljeno u vodu biva potisnuto silom jednakom težini istisnute vode?",
+      "odgovori": [
+        "Arhimed",
+        "Pitagora",
+        "Njutn",
+        "Aristotel"
+      ],
+      "zanimljivost": "Prema legendi, Arhimed se toga setio u kadi i istrčao na ulicu vičući „Eureka!“ („Našao sam!“). Zato brodovi od čelika plutaju – istiskuju mnogo vode."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta se dešava sa težinom astronauta na Mesecu?",
+      "mediji": {
+        "vrsta": "planeta",
+        "ime": "mesec"
+      },
+      "odgovori": [
+        "Težina je oko 6 puta manja",
+        "Težina je ista",
+        "Težina je 6 puta veća",
+        "Nema nikakvu masu"
+      ],
+      "zanimljivost": "Masa ostaje ista, ali Mesec privlači slabije – oko 1/6 Zemljine teže. Na Mesecu bi skočio šest puta više! Tragovi astronauta „Apola“ i dalje stoje jer na Mesecu nema vetra."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Ako u vakuumu ispustiš čekić i pero istovremeno, šta će pasti prvo?",
+      "odgovori": [
+        "Padaju istovremeno",
+        "Čekić",
+        "Pero",
+        "Ništa ne pada u vakuumu"
+      ],
+      "zanimljivost": "Astronaut Dejvid Skot je to 1971. pokazao na Mesecu sa čekićem i sokolovim perom – pali su zajedno! Galilej je to predvideo vekovima ranije: bez otpora vazduha sva tela padaju jednako brzo."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koji pol magneta privlači severni pol drugog magneta?",
+      "odgovori": [
+        "Južni",
+        "Severni",
+        "Oba",
+        "Nijedan"
+      ],
+      "zanimljivost": "Raznoimeni polovi se privlače, a istoimeni odbijaju. Zemlja je ogroman magnet – zato kompas radi. Zanimljivo: severni magnetni pol Zemlje zapravo je, fizički, južni pol njenog „magneta“!"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koja je jedinica za električni napon?",
+      "odgovori": [
+        "Volt",
+        "Amper",
+        "Om",
+        "Vat"
+      ],
+      "zanimljivost": "Jedinica je nazvana po Italijanu Aleksandru Volti, koji je napravio prvu bateriju („Voltin stub“) 1800. godine. U našim utičnicama je napon oko 230 V."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zove energija koju telo ima zbog kretanja?",
+      "odgovori": [
+        "Kinetička",
+        "Potencijalna",
+        "Hemijska",
+        "Toplotna"
+      ],
+      "zanimljivost": "Kinetička energija raste sa kvadratom brzine: automobil koji ide dvostruko brže ima četiri puta više energije – zato mu treba četiri puta duži put za kočenje."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Na kojoj temperaturi u Celzijusima prestaje svako kretanje čestica (apsolutna nula)?",
+      "odgovori": [
+        "−273,15 °C",
+        "−100 °C",
+        "−459 °C",
+        "−1000 °C"
+      ],
+      "zanimljivost": "To je 0 kelvina. Do nje se ne može tačno stići, ali naučnici su se približili na milijarditi deo stepena. Najhladnije prirodno mesto poznato u svemiru je maglina Bumerang, oko −272 °C."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Šta pokazuje termometar?",
+      "odgovori": [
+        "Temperaturu",
+        "Pritisak",
+        "Brzinu vetra",
+        "Vlažnost"
+      ],
+      "zanimljivost": "Pritisak meri barometar, brzinu vetra anemometar, a vlažnost higrometar. Celzijusova skala nazvana je po švedskom astronomu koji je prvobitno stavio 0 za ključanje, a 100 za smrzavanje vode – obrnuto od danas!"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliko je planeta u Sunčevom sistemu?",
+      "mediji": {
+        "vrsta": "planeta",
+        "ime": "sunce"
+      },
+      "odgovori": [
+        "8",
+        "9",
+        "7",
+        "10"
+      ],
+      "zanimljivost": "Pluton je 2006. godine „degradiran“ u patuljastu planetu. Redosled od Sunca možeš zapamtiti: Merkur, Venera, Zemlja, Mars, Jupiter, Saturn, Uran, Neptun."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koja planeta se okreće „ležeći na boku“, sa osom nagnutom skoro 98°?",
+      "mediji": {
+        "vrsta": "planeta",
+        "ime": "uran"
+      },
+      "odgovori": [
+        "Uran",
+        "Neptun",
+        "Saturn",
+        "Venera"
+      ],
+      "zanimljivost": "Uran se kotrlja oko Sunca, pa na njegovim polovima dan i noć traju po oko 42 godine! Verovatno ga je u davnoj prošlosti udarilo neko ogromno telo."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji je prvi čovek kročio na Mesec?",
+      "odgovori": [
+        "Nil Armstrong",
+        "Jurij Gagarin",
+        "Baz Oldrin",
+        "Majkl Kolins"
+      ],
+      "zanimljivost": "To se desilo 20. jula 1969. (misija Apolo 11). Armstrong je rekao: „Ovo je mali korak za čoveka, a veliki skok za čovečanstvo.“ Gagarin je 1961. bio prvi čovek u svemiru."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Kako se zove pojava kada štap u čaši vode izgleda „prelomljeno“?",
+      "odgovori": [
+        "Prelamanje (refrakcija) svetlosti",
+        "Odbijanje (refleksija)",
+        "Difrakcija",
+        "Polarizacija"
+      ],
+      "zanimljivost": "Svetlost u vodi putuje sporije nego u vazduhu, pa menja pravac na granici. Zbog toga je i bazen zapravo dublji nego što izgleda – oko trećinu."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koliko otprilike traje da svetlost sa Meseca stigne do Zemlje?",
+      "odgovori": [
+        "Oko 1,3 sekunde",
+        "Oko 8 minuta",
+        "Oko 1 sat",
+        "Trenutno"
+      ],
+      "zanimljivost": "Mesec je udaljen oko 384.000 km. Naučnici i danas ispaljuju laser na ogledala koja su ostavili astronauti i tako mere da se Mesec udaljava od Zemlje oko 3,8 cm godišnje."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Zašto se zimi ne zaledi cela reka, nego samo gornji sloj?",
+      "odgovori": [
+        "Led je lakši od vode pa pluta i čuva toplotu ispod",
+        "Ribe zagrevaju vodu",
+        "Dno reke je toplo od Zemljinog jezgra",
+        "Reka teče prebrzo"
+      ],
+      "zanimljivost": "Voda je najgušća na oko 4 °C, pa ta voda pada na dno. Led odozgo deluje kao pokrivač. Da led tone, jezera bi se zaleđivala odozdo i život u njima ne bi preživeo zimu."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Šta Zemlja obiđe za jednu godinu?",
+      "mediji": {
+        "vrsta": "planeta",
+        "ime": "zemlja"
+      },
+      "odgovori": [
+        "Oko Sunca",
+        "Oko Meseca",
+        "Oko svoje ose",
+        "Oko Marsa"
+      ],
+      "zanimljivost": "Zemlja oko Sunca juri brzinom od oko 30 km u sekundi! Oko svoje ose se okrene za oko 24 sata – to je dan. Mi to ne osećamo jer se krećemo zajedno sa njom."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je jače privučeno magnetom?",
+      "odgovori": [
+        "Ekser od gvožđa",
+        "Aluminijumska konzerva",
+        "Zlatni prsten",
+        "Bakarna žica"
+      ],
+      "zanimljivost": "Samo neki metali su magnetni: gvožđe, nikl i kobalt. Zato se u reciklaži gvožđe izdvaja magnetima, a aluminijum ne može tako."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Šta je od navedenog Tesla izumeo ili usavršio?",
+      "odgovori": [
+        "Motor na naizmeničnu struju",
+        "Sijalicu sa užarenom niti",
+        "Telefon",
+        "Parnu mašinu"
+      ],
+      "zanimljivost": "Sijalicu je usavršio Edison, telefon Bel, a parnu mašinu Džejms Vat. Tesla i Edison su vodili čuveni „rat struja“ – Teslina naizmenična struja je pobedila i koristi se do danas."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta meri ampermetar?",
+      "odgovori": [
+        "Jačinu električne struje",
+        "Napon",
+        "Otpor",
+        "Snagu"
+      ],
+      "zanimljivost": "Ampermetar se vezuje redno, a voltmetar paralelno. Jedinica amper nazvana je po francuskom fizičaru Andre-Mari Amperu."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koja je najveća zvezda koja se vidi danju?",
+      "odgovori": [
+        "Sunce",
+        "Sirijus",
+        "Severnjača",
+        "Venera"
+      ],
+      "zanimljivost": "Sunce je zvezda! I to prilično prosečna – postoje zvezde koje su hiljadu puta veće. Venera nije zvezda nego planeta, iako je zovu „Zvezda Danica“."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Šta je jedinica za merenje dužine u SI sistemu?",
+      "odgovori": [
+        "Metar",
+        "Kilogram",
+        "Sekunda",
+        "Litar"
+      ],
+      "zanimljivost": "Metar je danas definisan pomoću brzine svetlosti: to je put koji svetlost u vakuumu pređe za 1/299.792.458 deo sekunde."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koja je jedinica za merenje mase?",
+      "odgovori": [
+        "Kilogram",
+        "Njutn",
+        "Metar",
+        "Litar"
+      ],
+      "zanimljivost": "Masa se meri vagom i ne zavisi od mesta – na Mesecu imaš istu masu, ali manju težinu. Težina je sila i meri se njutnima."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koja je jedinica za vreme u SI sistemu?",
+      "odgovori": [
+        "Sekunda",
+        "Minut",
+        "Sat",
+        "Dan"
+      ],
+      "zanimljivost": "Sekunda je danas definisana pomoću oscilacija atoma cezijuma – atomski satovi pogreše manje od jedne sekunde za desetine miliona godina."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kako se zove sila kojom Zemlja privlači sva tela?",
+      "odgovori": [
+        "Sila Zemljine teže (gravitacija)",
+        "Sila trenja",
+        "Sila otpora vazduha",
+        "Magnetna sila"
+      ],
+      "zanimljivost": "Zbog gravitacije sve što bacimo uvis pada nazad. Ona drži i Mesec oko Zemlje i Zemlju oko Sunca."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Šta se dešava sa vodom kada je zagrevamo do 100 °C na nivou mora?",
+      "odgovori": [
+        "Ključa i prelazi u paru",
+        "Mrzne",
+        "Postaje teža",
+        "Menja boju"
+      ],
+      "zanimljivost": "Isparavanje se dešava na svakoj temperaturi, sa površine. Ključanje je kada se para stvara u celoj zapremini tečnosti – i to se vidi po mehurićima."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Šta je provodnik električne struje?",
+      "odgovori": [
+        "Bakar",
+        "Plastika",
+        "Staklo",
+        "Drvo"
+      ],
+      "zanimljivost": "Metali dobro provode struju jer imaju slobodne elektrone. Plastika, staklo i suvo drvo su izolatori – zato su kablovi obloženi plastikom."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kroz koji materijal svetlost NE prolazi?",
+      "odgovori": [
+        "Kroz zid od cigle",
+        "Kroz staklo",
+        "Kroz vodu",
+        "Kroz vazduh"
+      ],
+      "zanimljivost": "Tela kroz koja svetlost ne prolazi zovu se neprozirna. Iza njih nastaje senka."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koji je izvor svetlosti prirodan?",
+      "odgovori": [
+        "Sunce",
+        "Sijalica",
+        "Sveća",
+        "Baterijska lampa"
+      ],
+      "zanimljivost": "Svici i neke ribe takođe svetle sami – to je bioluminiscencija. Mesec nije izvor svetlosti, on samo odbija svetlost Sunca."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Šta pokazuje kompas?",
+      "odgovori": [
+        "Pravac magnetnog severa",
+        "Tačno vreme",
+        "Brzinu vetra",
+        "Nadmorsku visinu"
+      ],
+      "zanimljivost": "Kompas su izumeli Kinezi, verovatno pre više od 2.000 godina. Igla je mali magnet koji se okreće prema Zemljinom magnetnom polju."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Zašto se zimi na vrućem čaju stvara para?",
+      "odgovori": [
+        "Topla vodena para se hladi u vazduhu i kondenzuje u kapljice",
+        "Čaj gori",
+        "Vazduh je pun dima",
+        "Šoljica isparava"
+      ],
+      "zanimljivost": "Ono što vidimo nije sama para (ona je nevidljiva), nego sitne kapljice nastale kondenzacijom."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kakvu putanju opisuje Zemlja oko Sunca?",
+      "odgovori": [
+        "Skoro kružnu (eliptičnu)",
+        "Kvadratnu",
+        "Pravu liniju",
+        "Cik-cak"
+      ],
+      "zanimljivost": "Kepler je otkrio da su putanje planeta elipse. Zemljina je skoro krug – najbliža je Suncu početkom januara, a ne leti!"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Šta je potrebno da bi se čuo zvuk?",
+      "odgovori": [
+        "Izvor koji treperi i sredina kroz koju se prenosi",
+        "Samo svetlost",
+        "Magnet",
+        "Struja"
+      ],
+      "zanimljivost": "Zvučne talase stvaraju tela koja trepere – žice gitare, glasne žice. U vakuumu zvuk ne može da putuje."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koje boje je Mars zbog čestica prašine?",
+      "odgovori": [
+        "Crvene",
+        "Plave",
+        "Zelene",
+        "Bele"
+      ],
+      "zanimljivost": "Prašina na Marsu sadrži gvožđe-oksid – rđu. Na Marsu je zalazak Sunca, zanimljivo, plavičast!"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliko je g (ubrzanje Zemljine teže) približno?",
+      "odgovori": [
+        "9,81 m/s²",
+        "1 m/s²",
+        "3,14 m/s²",
+        "100 m/s²"
+      ],
+      "zanimljivost": "To znači da telo koje slobodno pada svake sekunde ubrza za oko 10 m/s. Posle 3 sekunde pada (bez otpora vazduha) bilo bi brzo oko 30 m/s."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kolika je težina tela mase 10 kg na Zemlji (približno)?",
+      "odgovori": [
+        "100 N",
+        "10 N",
+        "1 N",
+        "1000 N"
+      ],
+      "zanimljivost": "G = m · g ≈ 10 kg · 10 m/s² = 100 N. Na Mesecu bi ista masa težila samo oko 16 N."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Telo pređe 100 m za 20 s. Kolika mu je brzina?",
+      "odgovori": [
+        "5 m/s",
+        "2000 m/s",
+        "0,2 m/s",
+        "120 m/s"
+      ],
+      "zanimljivost": "v = s/t = 100/20 = 5 m/s. To je otprilike brzina lakog trčanja – 18 km/h."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kolika je gustina vode?",
+      "odgovori": [
+        "1000 kg/m³",
+        "1 kg/m³",
+        "100 kg/m³",
+        "10.000 kg/m³"
+      ],
+      "zanimljivost": "Jedan litar vode ima masu oko 1 kg. Tela gušća od vode tonu, a ređa plutaju – led ima oko 917 kg/m³, pa pluta."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta tvrdi Njutnov treći zakon?",
+      "odgovori": [
+        "Svakoj akciji odgovara jednaka i suprotna reakcija",
+        "Telo miruje dok ga sila ne pokrene",
+        "Sila je masa puta ubrzanje",
+        "Energija se ne gubi"
+      ],
+      "zanimljivost": "Zato raketa leti: izbacuje gasove unazad, a gasovi „guraju“ raketu napred. Isto oseti i ko skoči iz čamca – čamac krene unazad."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta tvrdi Njutnov prvi zakon (zakon inercije)?",
+      "odgovori": [
+        "Telo miruje ili se kreće ravnomerno pravolinijski dok na njega ne deluje sila",
+        "Svaka sila ima reakciju",
+        "Sva tela padaju jednako brzo",
+        "Energija se pretvara u toplotu"
+      ],
+      "zanimljivost": "Zbog inercije putnici u autobusu „lete“ napred kad on naglo zakoči. Zato su pojasevi tako važni."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Zašto lakše hodamo po asfaltu nego po ledu?",
+      "odgovori": [
+        "Zbog većeg trenja između obuće i asfalta",
+        "Asfalt je topliji",
+        "Led je teži",
+        "Na ledu nema gravitacije"
+      ],
+      "zanimljivost": "Trenje je ponekad korisno – bez njega ne bismo mogli ni da hodamo. Zimi se po ledu posipa pesak upravo da bi se trenje povećalo."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je poluga?",
+      "odgovori": [
+        "Prosta mašina koja pomoću oslonca olakšava podizanje tereta",
+        "Vrsta motora",
+        "Električni prekidač",
+        "Merni instrument"
+      ],
+      "zanimljivost": "Arhimed je rekao: „Dajte mi oslonac i pomeriću Zemlju!“ Klackalica, makaze i klešta su poluge."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Na čemu radi hidraulična presa (i kočnice u automobilu)?",
+      "odgovori": [
+        "Na Paskalovom zakonu – pritisak se u tečnosti prenosi podjednako u svim pravcima",
+        "Na magnetizmu",
+        "Na trenju",
+        "Na svetlosti"
+      ],
+      "zanimljivost": "Mala sila na malom klipu stvara veliku silu na velikom klipu. Tako jedna noga vozača zaustavlja automobil od tone i više."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Zašto ekser lako ulazi u drvo vrhom, a ne glavom?",
+      "odgovori": [
+        "Ista sila na manjoj površini stvara veći pritisak",
+        "Vrh je teži",
+        "Glava je od drugog metala",
+        "Drvo je mekše sa jedne strane"
+      ],
+      "zanimljivost": "Pritisak je sila podeljena površinom. Zato su i noževi oštri, a krplje za sneg široke – da bi pritisak bio manji."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Zašto u planinama uši „zapuše“ dok se vozimo?",
+      "odgovori": [
+        "Menja se vazdušni pritisak",
+        "Menja se temperatura",
+        "Zbog vetra",
+        "Zbog visine drveća"
+      ],
+      "zanimljivost": "Sa visinom vazdušni pritisak opada. Gutanjem ili zevanjem izjednačavamo pritisak u srednjem uhu sa spoljašnjim."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zove prenos toplote kroz čvrsto telo, na primer kroz kašiku u toplom čaju?",
+      "odgovori": [
+        "Provođenje (kondukcija)",
+        "Strujanje (konvekcija)",
+        "Zračenje",
+        "Isparavanje"
+      ],
+      "zanimljivost": "Strujanjem se toplota prenosi u tečnostima i gasovima (topao vazduh se diže), a zračenjem čak i kroz vakuum – tako nas greje Sunce."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se toplota sa Sunca prenosi do Zemlje?",
+      "odgovori": [
+        "Zračenjem",
+        "Provođenjem",
+        "Strujanjem",
+        "Ne prenosi se"
+      ],
+      "zanimljivost": "Između Sunca i Zemlje je skoro prazan prostor, pa ni provođenje ni strujanje nisu mogući. Svetlost i toplotno zračenje putuju i kroz vakuum."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Zašto se šine na prugama postavljaju sa malim razmacima?",
+      "odgovori": [
+        "Leti se šire od toplote",
+        "Da bi voz bio tiši",
+        "Zbog uštede metala",
+        "Da bi kiša oticala"
+      ],
+      "zanimljivost": "Većina tela se pri zagrevanju širi. Ajfelova kula leti „naraste“ oko 15 cm iz istog razloga."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koja je boja svetlosti sa najvećom talasnom dužinom među vidljivim bojama?",
+      "odgovori": [
+        "Crvena",
+        "Ljubičasta",
+        "Plava",
+        "Zelena"
+      ],
+      "zanimljivost": "Redosled boja u dugi: crvena, narandžasta, žuta, zelena, plava, indigo, ljubičasta. Ispod crvene je infracrveno, a iznad ljubičaste ultraljubičasto zračenje, koje ne vidimo."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kakav lik daje ravno ogledalo?",
+      "odgovori": [
+        "Uspravan, iste veličine, sa zamenjenom levom i desnom stranom",
+        "Obrnut i umanjen",
+        "Uvećan",
+        "Nikakav"
+      ],
+      "zanimljivost": "Zato je natpis AMBULANCE na kolima hitne pomoći napisan obrnuto – vozač ispred ga u retrovizoru pročita pravilno."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kakva sočiva koriste kratkovidi ljudi?",
+      "odgovori": [
+        "Rasipna (konkavna)",
+        "Sabirna (konveksna)",
+        "Ravna stakla",
+        "Obojena stakla"
+      ],
+      "zanimljivost": "Kratkovidi dobro vide blizu, a mutno daleko. Lupa je sabirno sočivo, i takva sočiva nose dalekovidi."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Ko je prvi izmerio brzinu svetlosti, posmatrajući Jupiterove mesece (1676)?",
+      "odgovori": [
+        "Ole Remer",
+        "Isak Njutn",
+        "Galileo Galilej",
+        "Albert Ajnštajn"
+      ],
+      "zanimljivost": "Remer je primetio da pomračenja Jupiterovog meseca Ioa kasne kada je Zemlja dalje od Jupitera – zato što svetlosti treba vreme da pređe dodatni put."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je eho?",
+      "odgovori": [
+        "Zvuk odbijen od prepreke",
+        "Vrsta muzičkog instrumenta",
+        "Vrlo tih zvuk",
+        "Zvuk u vakuumu"
+      ],
+      "zanimljivost": "Slepi miševi i delfini koriste eho za orijentaciju. Brodovi istim principom – sonarom – mere dubinu mora."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zove zvuk previsok da bi ga čovek čuo?",
+      "odgovori": [
+        "Ultrazvuk",
+        "Infrazvuk",
+        "Eho",
+        "Šum"
+      ],
+      "zanimljivost": "Čovek čuje od oko 20 do 20.000 Hz. Psi čuju ultrazvuk – zato postoje pištaljke za pse koje mi ne čujemo. Ultrazvukom lekari gledaju bebe u stomaku."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zove jedinica za frekvenciju?",
+      "odgovori": [
+        "Herc",
+        "Decibel",
+        "Vat",
+        "Om"
+      ],
+      "zanimljivost": "Nazvana je po Hajnrihu Hercu, koji je dokazao postojanje radio-talasa. Struja u našim utičnicama menja smer 50 puta u sekundi – 50 Hz."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "U čemu se meri glasnost zvuka?",
+      "odgovori": [
+        "U decibelima",
+        "U hercima",
+        "U voltima",
+        "U luksima"
+      ],
+      "zanimljivost": "Šapat ima oko 30 dB, razgovor oko 60 dB, a zvuk jačine preko 120 dB može da ošteti sluh. Na koncertima nosite čepiće za uši!"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zove jedinica za električni otpor?",
+      "odgovori": [
+        "Om",
+        "Amper",
+        "Volt",
+        "Kulon"
+      ],
+      "zanimljivost": "Nazvana je po Georgu Omu. Om je otkrio vezu napona, struje i otpora: U = I · R."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliki je napon u kućnoj utičnici u Srbiji?",
+      "odgovori": [
+        "230 V",
+        "12 V",
+        "1,5 V",
+        "1000 V"
+      ],
+      "zanimljivost": "Baterija AA ima 1,5 V, a akumulator automobila 12 V. U SAD utičnice imaju samo oko 120 V, pa se uređaji sa putovanja ponekad ne mogu koristiti bez adaptera."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je kratak spoj?",
+      "odgovori": [
+        "Kada struja prođe putem sa skoro nultim otporom, pa naglo poraste",
+        "Kada se sijalica ugasi",
+        "Kada nema struje",
+        "Kada je kabl previše dug"
+      ],
+      "zanimljivost": "Kratak spoj može izazvati požar. Zato u instalaciji postoje osigurači koji tada prekidaju struju."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta se dešava sa sijalicama vezanim redno ako jedna pregori?",
+      "odgovori": [
+        "Ugase se sve",
+        "Ostale svetle jače",
+        "Ništa se ne menja",
+        "Pregore i ostale"
+      ],
+      "zanimljivost": "U rednoj vezi struja ima samo jedan put. Zato su sijalice u kući vezane paralelno – svaka ima svoj put struje."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Ko je izumeo bateriju („Voltin stub“)?",
+      "odgovori": [
+        "Alesandro Volta",
+        "Benjamin Frenklin",
+        "Majkl Faradej",
+        "Andre Amper"
+      ],
+      "zanimljivost": "Volta je slagao naizmenično pločice cinka i bakra, odvojene tkaninom natopljenom slanom vodom. Bilo je to 1800. godine."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Ko je izumeo gromobran?",
+      "odgovori": [
+        "Benjamin Frenklin",
+        "Nikola Tesla",
+        "Tomas Edison",
+        "Alesandro Volta"
+      ],
+      "zanimljivost": "Frenklin je, kaže priča, puštao zmaja tokom oluje da dokaže da je munja električna pojava. To je bilo izuzetno opasno – nikada ne pokušavajte!"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je elektromagnet?",
+      "odgovori": [
+        "Kalem kroz koji teče struja i ponaša se kao magnet",
+        "Magnet od plastike",
+        "Prirodni magnet iz zemlje",
+        "Baterija"
+      ],
+      "zanimljivost": "Elektromagnet se može uključiti i isključiti. Na otpadu velikim elektromagnetima podižu automobile, a mali su u zvoncima i zvučnicima."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zove pojava kada promena magnetnog polja stvara struju u žici?",
+      "odgovori": [
+        "Elektromagnetna indukcija",
+        "Fotosinteza",
+        "Refrakcija",
+        "Rezonancija"
+      ],
+      "zanimljivost": "Otkrio ju je Majkl Faradej 1831. Na tom principu rade generatori u elektranama i bicikl-dinamo."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliko je planeta veće od Zemlje u Sunčevom sistemu?",
+      "odgovori": [
+        "4",
+        "2",
+        "7",
+        "0"
+      ],
+      "zanimljivost": "Jupiter, Saturn, Uran i Neptun su veći od Zemlje – to su gasoviti džinovi. Merkur, Venera i Mars su manji."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koja je ovo plava planeta, najudaljenija od Sunca?",
+      "odgovori": [
+        "Neptun",
+        "Uran",
+        "Zemlja",
+        "Venera"
+      ],
+      "zanimljivost": "Na Neptunu duvaju najjači vetrovi u Sunčevom sistemu – preko 2.000 km/h. Otkriven je 1846. računski, pre nego što je viđen teleskopom!",
+      "mediji": {
+        "vrsta": "planeta",
+        "ime": "neptun"
+      }
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Ova planeta je najsjajnija na nebu posle Meseca i zovu je „Zvezda Danica“. Koja je?",
+      "odgovori": [
+        "Venera",
+        "Mars",
+        "Jupiter",
+        "Merkur"
+      ],
+      "zanimljivost": "Venera se okreće oko svoje ose u suprotnom smeru od većine planeta, pa tamo Sunce izlazi na zapadu. Dan na Veneri traje duže od njene godine!",
+      "mediji": {
+        "vrsta": "planeta",
+        "ime": "venera"
+      }
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koja planeta, prikazana ovde, nema skoro nikakvu atmosferu i liči na Mesec?",
+      "odgovori": [
+        "Merkur",
+        "Mars",
+        "Venera",
+        "Neptun"
+      ],
+      "zanimljivost": "Na Merkuru je danju preko 400 °C, a noću oko −180 °C, jer nema atmosfere da zadrži toplotu. Godina na Merkuru traje samo 88 dana.",
+      "mediji": {
+        "vrsta": "planeta",
+        "ime": "merkur"
+      }
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je svetlosna godina?",
+      "odgovori": [
+        "Put koji svetlost pređe za godinu dana",
+        "Godina sa mnogo sunčanih dana",
+        "Vreme za koje Zemlja obiđe Sunce",
+        "Starost neke zvezde"
+      ],
+      "zanimljivost": "Svetlosna godina je mera udaljenosti, oko 9.460 milijardi km. Najbliža zvezda posle Sunca, Proksima Kentauri, udaljena je oko 4,2 svetlosne godine."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta izaziva plimu i oseku na moru?",
+      "odgovori": [
+        "Privlačenje Meseca (i Sunca)",
+        "Vetar",
+        "Rotacija Sunca",
+        "Podzemni vulkani"
+      ],
+      "zanimljivost": "U zalivu Fandi u Kanadi razlika između plime i oseke može biti i preko 15 metara! U Jadranskom moru ona iznosi samo desetine centimetara."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Zašto vidimo uvek istu stranu Meseca?",
+      "odgovori": [
+        "Mesec se okrene oko svoje ose za isto vreme za koje obiđe Zemlju",
+        "Mesec se ne okreće",
+        "Druga strana je stalno u senci",
+        "Zemlja zaklanja drugu stranu"
+      ],
+      "zanimljivost": "Daleku stranu Meseca prvi su fotografisali Sovjeti 1959. sondom Luna 3. Ona nije „tamna strana“ – i ona dobija sunčevu svetlost."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta se dešava kod pomračenja Sunca?",
+      "odgovori": [
+        "Mesec se nađe između Sunca i Zemlje",
+        "Zemlja se nađe između Sunca i Meseca",
+        "Sunce se ugasi",
+        "Oblaci zaklone Sunce"
+      ],
+      "zanimljivost": "Ne gledaj u Sunce ni tokom pomračenja bez posebnih naočara – može trajno da ošteti vid! Kod pomračenja Meseca Zemlja baca senku na Mesec."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je crna rupa?",
+      "odgovori": [
+        "Područje sa toliko jakom gravitacijom da ni svetlost ne može da pobegne",
+        "Rupa u Zemljinoj kori",
+        "Tamna planeta",
+        "Ugašeno Sunce"
+      ],
+      "zanimljivost": "Prvu „sliku“ crne rupe snimili su astronomi 2019, koristeći teleskope širom sveta. U središtu našeg Mlečnog puta je ogromna crna rupa."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koja je najbliža zvezda Zemlji?",
+      "odgovori": [
+        "Sunce",
+        "Proksima Kentauri",
+        "Sirijus",
+        "Severnjača"
+      ],
+      "zanimljivost": "Sunce je zvezda udaljena oko 150 miliona km. Ta udaljenost zove se astronomska jedinica."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Ko je postavio heliocentrični sistem – da se Zemlja okreće oko Sunca?",
+      "odgovori": [
+        "Nikola Kopernik",
+        "Ptolemej",
+        "Aristotel",
+        "Tiho Brahe"
+      ],
+      "zanimljivost": "Kopernik je knjigu objavio 1543, pred samu smrt. Ptolemej je, nasuprot tome, verovao da je Zemlja nepomična u centru svemira."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Kolika je druga kosmička brzina – potrebna da se raketa otrgne od Zemljine teže?",
+      "odgovori": [
+        "Oko 11,2 km/s",
+        "Oko 340 m/s",
+        "Oko 300.000 km/s",
+        "Oko 1 km/s"
+      ],
+      "zanimljivost": "To je oko 40.000 km/h. Prva kosmička brzina, potrebna da bi satelit kružio oko Zemlje, je oko 7,9 km/s."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Zašto astronauti u Međunarodnoj svemirskoj stanici lebde, iako na toj visini gravitacija iznosi oko 90% one na Zemlji?",
+      "odgovori": [
+        "Zato što zajedno sa stanicom stalno „padaju“ oko Zemlje",
+        "Zato što u svemiru nema gravitacije",
+        "Zato što nose posebna odela",
+        "Zbog magneta u stanici"
+      ],
+      "zanimljivost": "Stanica se kreće toliko brzo (oko 28.000 km/h) da, dok pada ka Zemlji, stalno „promaši“ – i tako kruži. Sve unutra pada zajedno, pa izgleda kao bestežinsko stanje."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koliko puta dnevno Međunarodna svemirska stanica obiđe Zemlju?",
+      "odgovori": [
+        "Oko 16",
+        "Jednom",
+        "Oko 100",
+        "Oko 4"
+      ],
+      "zanimljivost": "Jedan krug traje oko 90 minuta, pa astronauti svakog dana vide oko 16 izlazaka i 16 zalazaka Sunca!"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Šta se pomera u Fukoovom klatnu i dokazuje rotaciju Zemlje?",
+      "odgovori": [
+        "Ravan njihanja klatna polako se okreće",
+        "Klatno se ubrzava",
+        "Klatno se zaustavi",
+        "Klatno menja dužinu"
+      ],
+      "zanimljivost": "Leon Fuko je 1851. okačio teg od 28 kg na žicu od 67 m u pariskom Panteonu. Ravan njihanja se sporo okretala – zapravo se Zemlja okretala ispod klatna."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Šta je apsolutna nula u Kelvinima?",
+      "odgovori": [
+        "0 K",
+        "273 K",
+        "−273 K",
+        "100 K"
+      ],
+      "zanimljivost": "Kelvinova skala nema negativnih brojeva. Voda se smrzava na 273,15 K, a ključa na 373,15 K."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Kako se zove pojava da svaki zvuk izvora koji nam se približava zvuči više, a kad se udaljava – niže?",
+      "odgovori": [
+        "Doplerov efekat",
+        "Eho",
+        "Rezonancija",
+        "Interferencija"
+      ],
+      "zanimljivost": "Primećuješ ga kad pored tebe prođe sirena hitne pomoći. Astronomi istim efektom (sa svetlošću) otkrivaju da se galaksije udaljavaju – dokaz širenja svemira."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Šta je rezonancija?",
+      "odgovori": [
+        "Pojačano treperenje kada spoljašnja sila deluje istom frekvencijom kao sopstvena frekvencija tela",
+        "Odbijanje svetlosti",
+        "Topljenje metala",
+        "Gubitak struje"
+      ],
+      "zanimljivost": "Pevač može glasom da razbije čašu ako pogodi njenu frekvenciju. Zbog rezonancije vojnici preko mostova ne marširaju u korak."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koji most se 1940. srušio zbog vetra koji ga je zaljuljao, a snimak je postao čuven?",
+      "odgovori": [
+        "Most Takoma Nerouz",
+        "Zlatna vrata",
+        "Bruklinski most",
+        "Londonski most"
+      ],
+      "zanimljivost": "Vetar od samo oko 60 km/h izazvao je sve jače talasanje mosta u SAD dok se nije srušio. Od tada se mostovi obavezno ispituju u aerodinamičnim tunelima."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Ko je otkrio radioaktivnost (1896), slučajno, zahvaljujući fotografskim pločama i soli uranijuma?",
+      "odgovori": [
+        "Anri Bekerel",
+        "Marija Kiri",
+        "Ernest Raderford",
+        "Vilhelm Rendgen"
+      ],
+      "zanimljivost": "Bekerel je ostavio uranijumovu so na zamotanu fotografsku ploču u fioci, a ploča je ipak pocrnela. Jedinica za radioaktivnost zove se bekerel."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Ko je otkrio X-zrake, kojima se snimaju kosti?",
+      "odgovori": [
+        "Vilhelm Rendgen",
+        "Marija Kiri",
+        "Nikola Tesla",
+        "Tomas Edison"
+      ],
+      "zanimljivost": "Prvi snimak bio je šaka Rendgenove supruge, sa prstenom. Dobio je prvu Nobelovu nagradu za fiziku 1901. Kod nas se snimak zove „rendgen“, po njemu."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Šta je pronašao Ernest Raderford ogledom sa tankim zlatnim listićem?",
+      "odgovori": [
+        "Da atom ima malo, gusto jezgro",
+        "Elektron",
+        "Da je svetlost talas",
+        "Radio-talase"
+      ],
+      "zanimljivost": "Većina čestica je prošla kroz zlato, ali su se neke odbile nazad – kao da „topovsko đule odskoči od maramice“, rekao je Raderford."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koja je najjača od četiri osnovne sile prirode?",
+      "odgovori": [
+        "Jaka nuklearna sila",
+        "Gravitacija",
+        "Elektromagnetna sila",
+        "Slaba nuklearna sila"
+      ],
+      "zanimljivost": "Jaka sila drži protone i neutrone u jezgru. Gravitacija je, iznenađujuće, najslabija – mali magnet može da podigne ekser uprkos privlačenju cele Zemlje!"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Šta znači čuvena Ajnštajnova formula E = mc²?",
+      "odgovori": [
+        "Masa i energija su povezane – mala masa sadrži ogromnu energiju",
+        "Energija je jednaka brzini",
+        "Svetlost ima masu",
+        "Masa se ne može promeniti"
+      ],
+      "zanimljivost": "„c“ je brzina svetlosti, a njen kvadrat je ogroman broj. Zato u nuklearnim elektranama i u Suncu iz malo mase nastaje mnogo energije."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "U kojoj zemlji se nalazi Veliki hadronski sudarač (LHC), najveća mašina na svetu?",
+      "odgovori": [
+        "Na granici Švajcarske i Francuske",
+        "U SAD",
+        "U Japanu",
+        "U Nemačkoj"
+      ],
+      "zanimljivost": "Tunel LHC-a je kružnog oblika, dug oko 27 km, ispod zemlje kod Ženeve. Tu je 2012. otkriven Higsov bozon. Srbija je član CERN-a."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koji srpski fizičar je bio jedan od osnivača Instituta „Vinča“?",
+      "odgovori": [
+        "Pavle Savić",
+        "Mihajlo Pupin",
+        "Milutin Milanković",
+        "Đorđe Stanojević"
+      ],
+      "zanimljivost": "Pavle Savić je radio sa Irenom Žolio-Kiri u Parizu, na istraživanjima koja su vodila ka otkriću fisije uranijuma. Bio je i predsednik SANU."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Ko je Đorđe Stanojević?",
+      "odgovori": [
+        "Fizičar i astronom koji je uveo električno osvetljenje u Srbiji",
+        "Pesnik",
+        "Vojvoda",
+        "Kompozitor"
+      ],
+      "zanimljivost": "Stanojević je pomogao izgradnju prve hidroelektrane u Srbiji, „Pod gradom“ u Užicu (1900), po Teslinim principima naizmenične struje. Bio je i rektor Beogradskog univerziteta."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koja hidroelektrana, izgrađena 1900. u Užicu po Teslinim principima, je jedna od najstarijih takve vrste?",
+      "odgovori": [
+        "„Pod gradom“",
+        "„Đerdap“",
+        "„Bajina Bašta“",
+        "„Zvornik“"
+      ],
+      "zanimljivost": "Ona i danas radi i daje struju. Tesla je bio veoma ponosan što se njegov sistem primenjuje u Srbiji."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "U kojoj godini je rođen Nikola Tesla?",
+      "odgovori": [
+        "1856.",
+        "1900.",
+        "1812.",
+        "1876."
+      ],
+      "zanimljivost": "Tesla je rođen 10. jula 1856. u Smiljanu, a umro 1943. u Njujorku. Urna sa njegovim pepelom čuva se u Beogradu."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Gde se nalazi Muzej Nikole Tesle?",
+      "odgovori": [
+        "U Beogradu",
+        "U Novom Sadu",
+        "U Nišu",
+        "U Kragujevcu"
+      ],
+      "zanimljivost": "Muzej čuva njegovu ličnu zaostavštinu – preko 160.000 dokumenata, koja su upisana na UNESCO listu „Pamćenje sveta“."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "U kom američkom gradu je Tesla 1899. imao laboratoriju u kojoj je stvarao veštačke munje duge desetinama metara?",
+      "odgovori": [
+        "Kolorado Springs",
+        "Menlo Park",
+        "Las Vegas",
+        "Čikago"
+      ],
+      "zanimljivost": "Pričalo se da su od Teslinih ogleda varnice skakale iz potkovica konja u okolini. Menlo Park je bio mesto Edisonove laboratorije, a kasnije je Tesla na Long Ajlendu gradio kulu Vardenklif."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Za šta je Mihajlo Pupin dobio Pulicerovu nagradu?",
+      "odgovori": [
+        "Za autobiografiju „Od pašnjaka do naučenjaka“",
+        "Za otkriće X-zraka",
+        "Za teoriju relativnosti",
+        "Za izum radija"
+      ],
+      "zanimljivost": "Knjiga opisuje njegov put od siromašnog dečaka iz Idvora do profesora na Kolumbiji. Pupinovi kalemovi su omogućili telefoniranje na velike daljine."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je Milutin Milanković izračunao?",
+      "odgovori": [
+        "Kako promene Zemljine putanje izazivaju ledena doba",
+        "Brzinu svetlosti",
+        "Masu Zemlje",
+        "Starost Meseca"
+      ],
+      "zanimljivost": "Svoje proračune radio je ručno godinama, a delo „Kanon osunčavanja Zemlje“ završio je tokom Drugog svetskog rata. Njegove teorije su potvrđene analizom dubokomorskog mulja 1970-ih."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Šta se dešava sa ledom kad se zagreje iznad 0 °C?",
+      "odgovori": [
+        "Topi se",
+        "Isparava odmah",
+        "Postaje tvrđi",
+        "Ništa"
+      ],
+      "zanimljivost": "Led na Antarktiku je ponegde debeo preko 4 km. Kad bi se sav istopio, nivo mora bi porastao za oko 58 metara!"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Zašto metalna klupa zimi deluje hladnije od drvene, iako su iste temperature?",
+      "odgovori": [
+        "Metal brže odvodi toplotu iz ruke",
+        "Metal je stvarno hladniji",
+        "Drvo se samo greje",
+        "Metal privlači hladnoću"
+      ],
+      "zanimljivost": "Naša koža oseća koliko brzo gubi toplotu, a ne pravu temperaturu predmeta. Metal je dobar provodnik toplote, a drvo loš."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Zašto termos-boca dugo čuva čaj toplim?",
+      "odgovori": [
+        "Između zidova je vakuum, koji skoro ne provodi toplotu",
+        "Ima grejač",
+        "Napravljen je od leda",
+        "Ima magnet"
+      ],
+      "zanimljivost": "Vakuum sprečava provođenje i strujanje, a sjajni zidovi odbijaju toplotno zračenje. Termos isto tako čuva i hladne napitke hladnim."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Zašto je pustinja danju vrela, a noću hladna?",
+      "odgovori": [
+        "Suvi vazduh bez oblaka ne zadržava toplotu",
+        "Zbog vetra",
+        "Zbog peska koji svetli",
+        "Zato što je bliže Suncu"
+      ],
+      "zanimljivost": "U Sahari temperatura može danju biti preko 40 °C, a noću pasti blizu nule. Oblaci i vlaga deluju kao pokrivač."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Kako se zove uređaj koji pretvara svetlost u struju?",
+      "odgovori": [
+        "Solarna ćelija (fotonaponska)",
+        "Generator na paru",
+        "Transformator",
+        "Akumulator"
+      ],
+      "zanimljivost": "Solarne ćelije rade na fotoelektričnom efektu – baš za njegovo objašnjenje Ajnštajn je dobio Nobelovu nagradu."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta radi transformator?",
+      "odgovori": [
+        "Menja (povećava ili smanjuje) napon naizmenične struje",
+        "Pravi struju od vode",
+        "Skladišti struju",
+        "Pretvara struju u svetlost"
+      ],
+      "zanimljivost": "Struja se dalekovodima prenosi pod visokim naponom da bi se manje gubila, a transformatori je pred kućama spuštaju na 230 V. To je deo Teslinog sistema."
+    }
+  ]
+}

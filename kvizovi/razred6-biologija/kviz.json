@@ -1,0 +1,1224 @@
+{
+  "naziv": "6. razred · Biologija",
+  "ikona": "🔬",
+  "boja": "#00a8a8",
+  "opis": "Po udžbeniku Biologija 6 (Fondacija Kavčić): mikroskop i ćelija, bakterije, protisti, gljive, biljke, sistemi organa životinja, ekologija, nasleđivanje, evolucija i zdravlje",
+  "redosled": 108,
+  "uOpstem": false,
+  "pitanja": [
+    {
+      "tezina": 1,
+      "pitanje": "Kako se zove proučavanje veličine, oblika i rasporeda delova tela koji se vide spolja?",
+      "odgovori": [
+        "Spoljašnja građa organizma",
+        "Unutrašnja građa organizma",
+        "Ćelijska teorija",
+        "Mikroskopija"
+      ],
+      "zanimljivost": "Unutrašnja građa je raspored delova unutar tela. Kod jednoćelijskih organizama to su delovi ćelije, a kod višećelijskih tkiva i organi koji rade zajedno."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koji je ispravan redosled nivoa organizacije višećelijskog organizma, od najmanjeg?",
+      "odgovori": [
+        "Ćelija → tkivo → organ → sistem organa → organizam",
+        "Tkivo → ćelija → organ → organizam → sistem organa",
+        "Organ → ćelija → tkivo → sistem organa → organizam",
+        "Ćelija → organ → tkivo → organizam → sistem organa"
+      ],
+      "zanimljivost": "Na primer: koštane ćelije grade koštano tkivo, ono gradi kost (organ), kosti čine skeletni sistem, a svi sistemi zajedno čine čoveka."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Od čega su građene kosti?",
+      "odgovori": [
+        "Od koštanog tkiva koje grade koštane ćelije",
+        "Samo od kalcijuma, bez ćelija",
+        "Od mišićnog tkiva",
+        "Od hrskavice koja se ne menja"
+      ],
+      "zanimljivost": "Koštane ćelije liče na pauke – imaju mnogo nastavaka kojima su povezane u mrežu. One oko sebe izlučuju čvrstu materiju koja kost čini tvrdom. Kost je živa i stalno se obnavlja!"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji sistemi organa sarađuju kada se krećemo?",
+      "odgovori": [
+        "Skeletni, mišićni i nervni",
+        "Krvni i sistem za varenje",
+        "Kožni i sistem za disanje",
+        "Sistem za izlučivanje i razmnožavanje"
+      ],
+      "zanimljivost": "Kosti se pokreću zahvaljujući mišićima koji se grče kada dobiju signal iz nervnog sistema. Sistemi organa nikad ne rade sami – telo je jedna celina."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Ko su braća Hans i Zaharijus Jansen?",
+      "odgovori": [
+        "Holanđani koji su oko 1590. složili sočiva u cev – preteču mikroskopa",
+        "Prvi astronauti",
+        "Osnivači ćelijske teorije",
+        "Izumitelji teleskopa sa ogledalom"
+      ],
+      "zanimljivost": "Primetili su da dva sočiva postavljena u cev pod određenim uglom jako uvećavaju predmete. Time je počeo razvoj mikroskopa."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji holandski trgovac tkaninama se smatra osnivačem mikroskopije i prvi je video jednoćelijske organizme?",
+      "odgovori": [
+        "Antoni van Levenhuk",
+        "Robert Huk",
+        "Matijas Šlajden",
+        "Luj Paster"
+      ],
+      "zanimljivost": "Levenhuk je sam izbrusio više od 500 uvećavajućih stakala. Pretpostavlja se da je slikar Johanes Vermer naslikao baš njega na slici „Astronom“ – bili su sugrađani iz Delfta."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Ko je uveo reč „ćelija“ u nauku, posmatrajući tanke preseke plute?",
+      "odgovori": [
+        "Robert Huk",
+        "Antoni van Levenhuk",
+        "Čarls Darvin",
+        "Teodor Švan"
+      ],
+      "zanimljivost": "Hukove komorice u pluti podsetile su ga na sobice monaha – „ćelije“. Svoja posmatranja objavio je 1665. u knjizi „Mikrografija“. Pluta je zapravo mrtva kora drveta."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koja dvojica naučnika su postavila osnovu ćelijske teorije – da su sva živa bića građena od ćelija?",
+      "odgovori": [
+        "Matijas Šlajden i Teodor Švan",
+        "Robert Huk i Isak Njutn",
+        "Darvin i Mendel",
+        "Paster i Koh"
+      ],
+      "zanimljivost": "Botaničar Šlajden je 1838. zaključio da su biljke građene od ćelija, a Švan je 1839. isto pokazao za životinje."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Ako okular uvećava 10 puta, a objektiv 40 puta, koliko je ukupno uvećanje mikroskopa?",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "10 × 40 = ?"
+      },
+      "odgovori": [
+        "400 puta",
+        "50 puta",
+        "4.000 puta",
+        "30 puta"
+      ],
+      "zanimljivost": "Ukupno uvećanje je proizvod uvećanja okulara i objektiva. Svetlosni mikroskop može da uveća i do oko 2.000 puta, a elektronski mikroskopi mnogo više."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji deo mikroskopa sakuplja i usmerava svetlost na posmatrani predmet?",
+      "odgovori": [
+        "Kondenzor",
+        "Okular",
+        "Stočić",
+        "Postolje"
+      ],
+      "zanimljivost": "Optički delovi su okular, objektivi, kondenzor i izvor svetlosti (ogledalo ili sijalica). Mehanički delovi – postolje, ručica, cev, stočić i zavrtnji – nose i podešavaju optičke."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Čemu služi „mali zavrtanj“ na mikroskopu?",
+      "odgovori": [
+        "Za fino izoštravanje slike",
+        "Za uključivanje svetla",
+        "Za promenu objektiva",
+        "Za pomeranje stočića levo-desno"
+      ],
+      "zanimljivost": "Veliki zavrtanj služi za grubo podešavanje, a mali za fino. Pri radu se uvek počinje sa najmanjim uvećanjem pa se postepeno prelazi na veće."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "U kojim ćelijskim organelama se stvara energija u procesu ćelijskog disanja?",
+      "odgovori": [
+        "U mitohondrijama",
+        "U jedru",
+        "U vakuoli",
+        "U ćelijskom zidu"
+      ],
+      "zanimljivost": "U mitohondrijama se hranljive materije „sagorevaju“ uz pomoć kiseonika, a kao otpad nastaje ugljen-dioksid, koji krv odnosi do pluća. Mitohondrije imaju i sopstveni nasledni materijal."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta znači da je ćelijska membrana „selektivno propustljiva“?",
+      "odgovori": [
+        "Propušta samo neke materije, kroz posebna „vrata“",
+        "Propušta sve materije podjednako",
+        "Ne propušta ništa",
+        "Propušta samo vodu"
+      ],
+      "zanimljivost": "Kiseonik i ugljen-dioksid lako prolaze kroz membranu, a za mnoge druge materije postoje posebne čestice-„vrata“. Tako membrana štiti ćeliju od štetnih materija."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je citoplazma?",
+      "odgovori": [
+        "Polutečna sredina unutar ćelije u kojoj su organele",
+        "Spoljni omotač ćelije",
+        "Nasledni materijal",
+        "Vrsta ćelijskog zida"
+      ],
+      "zanimljivost": "Citoplazma je gušća od vode, pomalo nalik želatinu. U njoj su rastvorene soli, belančevine, šećeri i druge materije."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je skraćenica DNK?",
+      "odgovori": [
+        "Dezoksiribonukleinska kiselina",
+        "Dvostruka nukleinska kost",
+        "Duga nasledna kiselina",
+        "Deoba nasledne kombinacije"
+      ],
+      "zanimljivost": "DNK možeš da zamisliš kao nisku perli, gde su perle geni. Svaka nova ćelija dobija kopiju DNK – zato deca liče na roditelje."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Kako se jednostavnim ogledom može „ogoliti“ jaje da bi se videla njegova membrana?",
+      "odgovori": [
+        "Potapanjem u sirće na dan-dva dok se ljuska ne rastvori",
+        "Kuvanjem 10 minuta",
+        "Zamrzavanjem",
+        "Potapanjem u slanu vodu"
+      ],
+      "zanimljivost": "Jaje je zapravo jedna ogromna ćelija! Sirće rastvara krečnu ljusku, a ostane samo tanka opna – ćelijska membrana koja drži unutrašnjost."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Gde se kod bakterija nalazi DNK?",
+      "odgovori": [
+        "Slobodno u citoplazmi, jer nemaju jedro",
+        "U jedru",
+        "U mitohondrijama",
+        "U ćelijskom zidu"
+      ],
+      "zanimljivost": "Organizmi bez jedra zovu se prokariotski (bakterije i arhee), a oni sa jedrom eukariotski (protisti, gljive, biljke i životinje)."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Kolika je najveća poznata bakterija, otkrivena 2009. na Gvadalupi?",
+      "odgovori": [
+        "Oko 0,9 cm – vidi se golim okom",
+        "Oko 1 milimetar",
+        "Oko 1 metar",
+        "Kao glava čioda – 0,001 mm"
+      ],
+      "zanimljivost": "Zbog izgleda je dobila nadimak „veličanstveni sumporni biser“. Obične bakterije su milion puta manje i mere se u mikrometrima."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Čemu bakterijama služe bičevi?",
+      "odgovori": [
+        "Za kretanje",
+        "Za disanje",
+        "Za razmnožavanje",
+        "Za fotosintezu"
+      ],
+      "zanimljivost": "Mnoge bakterije imaju i ćelijski zid i sluzavu kapsulu koji ih štite od povreda, isušivanja, pa i od nekih virusa."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Od čega je građen ćelijski zid biljnih ćelija?",
+      "odgovori": [
+        "Od celuloze",
+        "Od hitina",
+        "Od kreča",
+        "Od belančevina"
+      ],
+      "zanimljivost": "Od celuloze čovek pravi papir. Ćelijski zid gljiva je od druge materije – hitina, koja gradi i oklop insekata i rakova."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "U kojim organelama biljnih ćelija se odvija fotosinteza?",
+      "odgovori": [
+        "U hloroplastima",
+        "U mitohondrijama",
+        "U vakuolama",
+        "U jedru"
+      ],
+      "zanimljivost": "U hloroplastima je zeleni pigment hlorofil, koji upija sunčevu svetlost. I hloroplasti, kao mitohondrije, imaju svoj nasledni materijal."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koja krupna organela zauzima najveći deo odrasle biljne ćelije?",
+      "odgovori": [
+        "Vakuola sa ćelijskim sokom",
+        "Jedro",
+        "Hloroplast",
+        "Mitohondrija"
+      ],
+      "zanimljivost": "Mlade biljne ćelije imaju više malih vakuola, koje se tokom rasta spajaju u jednu veliku. Vakuola daje čvrstinu ćeliji i čuva i odbrambene materije."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koja materija u vakuolama paprike izaziva ljutinu?",
+      "odgovori": [
+        "Kapsaicin",
+        "Hlorofil",
+        "Celuloza",
+        "Kofein"
+      ],
+      "zanimljivost": "Kapsaicin je odbrana od biljojeda – sisare peče, ali na ptice ne deluje! Zato ptice jedu ljute papričice i šire njihovo seme."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta životinjska ćelija NEMA, a biljna ima?",
+      "odgovori": [
+        "Ćelijski zid, hloroplaste i veliku vakuolu",
+        "Jedro",
+        "Mitohondrije",
+        "Ćelijsku membranu"
+      ],
+      "zanimljivost": "Životinjske ćelije imaju samo membranu kao spoljnu granicu, pa mogu biti vrlo raznih oblika: nervne su dugačke i razgranate, a crvena krvna zrnca okrugla i ulegnuta."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koja ćelija u ljudskom telu prenosi kiseonik?",
+      "odgovori": [
+        "Crveno krvno zrnce",
+        "Nervna ćelija",
+        "Mišićna ćelija",
+        "Belo krvno zrnce"
+      ],
+      "zanimljivost": "Bela krvna zrnca brane telo od infekcija, nervne ćelije prenose informacije, a mišićne se grče i opuštaju. Ćelije višećelijskog organizma ne mogu da žive same – dele poslove."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zovu otporne strukture koje bakterije stvaraju u nepovoljnim uslovima?",
+      "odgovori": [
+        "Spore",
+        "Kapsule",
+        "Vakuole",
+        "Ciste mora"
+      ],
+      "zanimljivost": "U sporama bakterije miruju i ne razmnožavaju se, a mogu tako da prežive godinama dok uslovi ne postanu povoljni."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koliko često se bakterija u povoljnim uslovima deli na dve?",
+      "odgovori": [
+        "Otprilike na svakih 20 minuta",
+        "Jednom dnevno",
+        "Jednom godišnje",
+        "Na svakih 5 sekundi"
+      ],
+      "zanimljivost": "Za 24 sata od jedne bakterije može ih nastati milioni. Zato se pokvarena hrana tako brzo kvari – i zato hranu čuvamo u frižideru, gde se bakterije sporije dele."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koje bakterije sadrže hlorofil i smatraju se najstarijim organizmima koji vrše fotosintezu (preko 3,5 milijardi godina)?",
+      "odgovori": [
+        "Cijanobakterije (modrozelene bakterije)",
+        "Probiotske bakterije",
+        "Bacili",
+        "Spirale"
+      ],
+      "zanimljivost": "Cijanobakterije su napunile atmosferu kiseonikom. Kad ih ima previše u vodi, izazivaju „cvetanje vode“, koje može da smanji kiseonik i ubije ribe."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koji mlečni proizvodi nastaju uz pomoć korisnih bakterija?",
+      "odgovori": [
+        "Jogurt i kefir",
+        "Maslac i mleko u prahu",
+        "Sladoled i čokolada",
+        "Pavlaka i šlag iz spreja"
+      ],
+      "zanimljivost": "Kefir ima ne samo puno bakterija, već i više različitih vrsta – i kvasce. Takve „dobre“ bakterije zovu se probiotske jer pomažu varenju i imunitetu."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zovu izbočine pomoću kojih se ameba kreće i hvata hranu?",
+      "odgovori": [
+        "Lažne nožice",
+        "Treplje",
+        "Bičevi",
+        "Pipci"
+      ],
+      "zanimljivost": "Ameba stalno menja oblik jer joj citoplazma struji. Kada obuhvati česticu hrane, oko nje nastaje hranljiva vakuola u kojoj se hrana vari."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Čemu služi kontraktilna vakuola kod amebe?",
+      "odgovori": [
+        "Izbacuje višak vode iz ćelije",
+        "Vari hranu",
+        "Proizvodi energiju",
+        "Čuva DNK"
+      ],
+      "zanimljivost": "Ameba u slatkoj vodi stalno upija vodu kroz membranu. Bez kontraktilne vakuole, koja se „grči“ i izbacuje vodu, ćelija bi se naduvala i pukla!"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koje oboljenje može izazvati dizenterična ameba?",
+      "odgovori": [
+        "Dizenteriju (crevnu bolest)",
+        "Grip",
+        "Malariju",
+        "Boginje"
+      ],
+      "zanimljivost": "Dizenterična ameba se prenosi zagađenom vodom i hranom. Zato je pranje ruku i pijenje čiste vode tako važno, posebno na putovanjima."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kako se razmnožavaju kvasci?",
+      "odgovori": [
+        "Pupljenjem",
+        "Semenom",
+        "Sporama u šeširu",
+        "Deobom korena"
+      ],
+      "zanimljivost": "Kod pupljenja na ćeliji izraste mali „pupoljak“ koji se kasnije odvoji. Kvasci razlažu šećer i oslobađaju ugljen-dioksid – mehurići tog gasa dižu testo."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je Volvoks?",
+      "odgovori": [
+        "Kolonija jednoćelijskih organizama u obliku šuplje lopte",
+        "Višećelijska biljka",
+        "Vrsta bakterije",
+        "Gljiva"
+      ],
+      "zanimljivost": "Volvoks može imati i više hiljada jedinki povezanih citoplazmatskim mostićima. Svaka jedinka ima dva biča, a cela kolonija pliva koordinisano ka svetlosti."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koji naš naučnik je tražio poreklo višećelijskih organizama u višejedarnim trepljarima, a ne u kolonijama?",
+      "odgovori": [
+        "Jovan Hadži",
+        "Josif Pančić",
+        "Siniša Stanković",
+        "Jovan Cvijić"
+      ],
+      "zanimljivost": "Nemac Ernst Hekel je smatrao da su višećelijski organizmi nastali od kolonija bičara. Hadžijeva teorija kaže da su nastali deljenjem citoplazme oko jedara jednog velikog višejedarnog organizma."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zovu niti od kojih je građeno telo višećelijskih gljiva?",
+      "odgovori": [
+        "Hife",
+        "Korenčići",
+        "Vlakna",
+        "Hromozomi"
+      ],
+      "zanimljivost": "Hife se granaju i prepliću u mrežu koja se zove micelijum. Pečurka koju beremo samo je plodonosno telo – pravi organizam je micelijum u zemlji."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koji organizam se danas smatra jednim od najvećih na svetu, a micelijum mu se prostire na skoro 1.000 hektara?",
+      "odgovori": [
+        "Medna gljiva u Oregonu",
+        "Plavi kit",
+        "Sekvoja",
+        "Koralni greben"
+      ],
+      "zanimljivost": "Medna gljiva je parazit koji izaziva sušenje drveća u planinama. Njena starost se procenjuje na više od 2.500 godina!"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zovu telašca buđi u kojima nastaju spore?",
+      "odgovori": [
+        "Sporangije",
+        "Šeširi",
+        "Hife",
+        "Micelijumi"
+      ],
+      "zanimljivost": "Spore su toliko lagane da ih prenosi vazduh. Kad padnu na hleb u toplom i vlažnom, iz njih se razvije novi micelijum – zato se hleb ubuđa."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Gde se kod pečurke stvaraju spore?",
+      "odgovori": [
+        "Ispod šešira, u pregradama (listićima)",
+        "U dršci",
+        "U micelijumu u zemlji",
+        "Na vrhu šešira"
+      ],
+      "zanimljivost": "Ako šešir pečurke staviš na papir preko noći, spore će ostaviti šaru – „otisak spora“. Po boji tog otiska gljivari raspoznaju vrste."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Zašto su gljive dugo svrstavane u biljke, a danas su posebno carstvo?",
+      "odgovori": [
+        "Liče na biljke spolja, ali nemaju hloroplaste i hrane se kao životinje",
+        "Zato što imaju lišće",
+        "Zato što vrše fotosintezu",
+        "Zato što imaju cvet"
+      ],
+      "zanimljivost": "Gljive su heterotrofi – ne mogu same da prave hranu. Ćelijski zid im je od hitina, kao oklop insekata, a ne od celuloze kao kod biljaka."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zovu gljive koje se hrane uginulim organizmima i razlažu ih?",
+      "odgovori": [
+        "Saprotrofi (razlagači)",
+        "Paraziti",
+        "Autotrofi",
+        "Predatori"
+      ],
+      "zanimljivost": "Razlaganjem gljive i bakterije vraćaju minerale u zemlju, a njih zatim koriste biljke. Bez razlagača bi šume bile zatrpane opalim lišćem i uginulim životinjama."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Kako gljive dišu i izlučuju štetne materije?",
+      "odgovori": [
+        "Preko cele površine tela – nemaju posebne organe",
+        "Plućima",
+        "Škrgama",
+        "Preko korena"
+      ],
+      "zanimljivost": "Neke gljive u vakuolama čuvaju otrovne materije koje ih štite – životinje ih izbegavaju. Zato nikad ne beri pečurke koje ne poznaješ!"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta se dešava u ogledu sa kvascem, toplom vodom i šećerom u flašici sa balonom na grliću?",
+      "odgovori": [
+        "Balon se naduva od ugljen-dioksida koji kvasac oslobađa",
+        "Balon pukne od kiseonika",
+        "Ništa – kvasac je mrtav",
+        "Voda proključa"
+      ],
+      "zanimljivost": "Bez šećera balon se jedva pomeri, a sa više šećera najviše se naduva. Tako se dokazuje da kvasac diše i razlaže šećer."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koji biljni organi su vegetativni?",
+      "odgovori": [
+        "Koren, stablo i list",
+        "Cvet, plod i seme",
+        "Samo cvet",
+        "Samo seme i plod"
+      ],
+      "zanimljivost": "Vegetativni organi služe preživljavanju biljke, a reproduktivni (cvet, plod i seme) razmnožavanju i rasejavanju. Nauka o biljkama zove se botanika."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zovu izdužene ćelije na površini korena koje upijaju vodu i minerale?",
+      "odgovori": [
+        "Korenske dlačice",
+        "Stome",
+        "Provodni snopići",
+        "Hife"
+      ],
+      "zanimljivost": "Korenske dlačice ogromno povećavaju površinu korena. Često je površina korena višestruko veća od površine svih nadzemnih delova biljke!"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kakav koren ima šargarepa?",
+      "odgovori": [
+        "Vretenast",
+        "Žiličast",
+        "Osovinski bez zadebljanja",
+        "Vazdušni"
+      ],
+      "zanimljivost": "U zadebljalom korenu biljka čuva hranljive materije. Cvekla, rotkvica i repa imaju repast koren, a većina trava žiličast – mnogo sličnih tankih žila."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je zapravo krtola krompira?",
+      "odgovori": [
+        "Podzemno stablo",
+        "Koren",
+        "Plod",
+        "Seme"
+      ],
+      "zanimljivost": "Ne razvijaju se svi podzemni delovi biljke iz korena! Krompir je podzemno stablo, crni luk takođe ima podzemno stablo, a kikiriki je plod koji sazreva pod zemljom."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zovu cevčice kojima voda i hranljive materije putuju kroz biljku?",
+      "odgovori": [
+        "Provodni snopići",
+        "Korenske dlačice",
+        "Kapilari",
+        "Stome"
+      ],
+      "zanimljivost": "U ogledu sa belim cvetom u obojenoj vodi latice posle nekoliko sati promene boju – tako se vidi da voda putuje kroz stablo do cveta."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kako se zovu dva lica lista – gornje, tamnije, i donje, svetlije?",
+      "odgovori": [
+        "Lice i naličje",
+        "Ploča i drška",
+        "Nervatura i ivica",
+        "Stoma i ćelija"
+      ],
+      "zanimljivost": "Lice je okrenuto ka svetlosti i tamnije je jer ima više hloroplasta. Na naličju se vide linije – lisna nervatura, kroz koju prolaze provodni snopići."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zovu sićušni otvori na listu kroz koje biljka razmenjuje gasove i ispušta vodenu paru?",
+      "odgovori": [
+        "Stome",
+        "Pore",
+        "Lenticele",
+        "Alveole"
+      ],
+      "zanimljivost": "Stome otvaraju i zatvaraju posebne ćelije zatvaračice. Najviše ih je na naličju lista, a obično su otvorene danju, a zatvorene noću."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zove izlučivanje vode iz biljke u obliku vodene pare?",
+      "odgovori": [
+        "Transpiracija",
+        "Gutacija",
+        "Fotosinteza",
+        "Respiracija"
+      ],
+      "zanimljivost": "Transpiracija „vuče“ vodu od korena kroz stablo do lista. Kada je vazduh vrlo vlažan, neke biljke (npr. adam) izbacuju vodu u kapljicama – to se zove gutacija, pa izgleda kao da biljka plače."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Zašto su kod kaktusa listovi pretvoreni u trnje?",
+      "odgovori": [
+        "Da bi gubili što manje vode u pustinji",
+        "Da bi brže rasli",
+        "Zato što ne vrše disanje",
+        "Da bi privukli insekte"
+      ],
+      "zanimljivost": "Kod kaktusa fotosintezu obavlja zeleno, sočno stablo, a ne listovi. Stome im se otvaraju noću, kada je hladnije, pa manje vode ispari."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta biljke oslobađaju u procesu disanja?",
+      "odgovori": [
+        "Ugljen-dioksid",
+        "Kiseonik",
+        "Šećer",
+        "Hlorofil"
+      ],
+      "zanimljivost": "Fotosinteza i disanje su suprotni procesi: u fotosintezi biljka troši ugljen-dioksid i oslobađa kiseonik, a u disanju troši kiseonik i oslobađa ugljen-dioksid. Fotosinteza ide samo danju, a disanje stalno."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koliko bi, po proračunima švajcarskih naučnika, svaki stanovnik Zemlje trebalo da posadi stabala da bi se zaustavilo globalno zagrevanje?",
+      "odgovori": [
+        "Oko 160",
+        "Oko 2",
+        "Oko 10.000",
+        "Nijedno – drveće ne pomaže"
+      ],
+      "zanimljivost": "Biljke upijaju ugljen-dioksid, kojeg je u vazduhu sve više zbog industrije i saobraćaja. U vazduhu ima oko 21% kiseonika, a ugljen-dioksida samo oko 0,04%."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kako se zovu organizmi koji sami prave hranu, i oni koji uzimaju gotovu hranu?",
+      "odgovori": [
+        "Autotrofi i heterotrofi",
+        "Biljojedi i mesojedi",
+        "Paraziti i razlagači",
+        "Prokarioti i eukarioti"
+      ],
+      "zanimljivost": "Biljke su autotrofi, a sve životinje heterotrofi. Neke bakterije su autotrofi, a neke heterotrofi."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se hrane sunđeri?",
+      "odgovori": [
+        "Filtriraju vodu kroz pore i vare hranu unutar ćelija",
+        "Imaju zube i želudac",
+        "Vrše fotosintezu",
+        "Hrane se samo krvlju"
+      ],
+      "zanimljivost": "Kod sunđera je varenje unutarćelijsko – hrana se razlaže u ćelijama. Kod čoveka i većine životinja varenje je vanćelijsko, u organima sistema za varenje."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koliko stalnih zuba ima odrastao čovek?",
+      "odgovori": [
+        "32",
+        "20",
+        "28",
+        "36"
+      ],
+      "zanimljivost": "U svakoj vilici su 4 sekutića, 2 očnjaka, 4 pretkutnjaka i 6 kutnjaka. Mlečnih zuba ima 20, a treći kutnjaci – „umnjaci“ – izbijaju tek kod odraslih."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta sadrži želudačni sok, a uništava mikroorganizme iz hrane?",
+      "odgovori": [
+        "Želudačnu kiselinu",
+        "Pljuvačku",
+        "Žuč",
+        "Hlorofil"
+      ],
+      "zanimljivost": "Zidovi želuca su od mišića koji gnječe i mešaju hranu. Želudac se od sopstvene kiseline štiti debelim slojem sluzi."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zove početni deo tankog creva, u koji se ulivaju kanali jetre i pankreasa?",
+      "odgovori": [
+        "Dvanaestopalačno crevo",
+        "Slepo crevo",
+        "Debelo crevo",
+        "Jednjak"
+      ],
+      "zanimljivost": "Ime je dobilo jer je dugo otprilike koliko širina dvanaest prstiju. Kroz zidove tankog creva hranljive materije prelaze u krv."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koliko otprilike različitih funkcija ima jetra, koju zovu „laboratorija“ tela?",
+      "odgovori": [
+        "Oko 500",
+        "Oko 5",
+        "Oko 50.000",
+        "Samo jednu – pravljenje žuči"
+      ],
+      "zanimljivost": "Jetra je najveća žlezda u telu. Učestvuje u varenju, skladišti hranljive materije i uklanja otrove iz krvi."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Zašto biljojedi imaju mnogo duža creva od mesojeda?",
+      "odgovori": [
+        "Biljna hrana sadrži celulozu koja se teže razlaže",
+        "Zato što su veći",
+        "Zato što jedu manje",
+        "Zato što nemaju zube"
+      ],
+      "zanimljivost": "Preživari (krave, ovce, koze, žirafe, jeleni) imaju želudac od četiri dela i vraćaju progutanu hranu u usta da je ponovo žvaću – to je preživanje."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koje životinje uopšte nemaju sistem za varenje i upijaju hranu celom površinom tela?",
+      "odgovori": [
+        "Pantljičare",
+        "Kišne gliste",
+        "Hidre",
+        "Puževi"
+      ],
+      "zanimljivost": "Pantljičare su pljosnati crvi paraziti koji žive u crevima domaćina. Hidre, meduze i korali imaju samo jedan otvor – kroz njega i unose hranu i izbacuju ostatke."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako dišu kišne gliste?",
+      "odgovori": [
+        "Preko vlažne površine tela",
+        "Plućima",
+        "Škrgama",
+        "Kroz traheje"
+      ],
+      "zanimljivost": "Zato gliste posle kiše izlaze na površinu – kada je zemlja natopljena vodom, teško im je da dobiju kiseonik. Žabe dišu i plućima i preko vlažne kože."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako dišu insekti?",
+      "odgovori": [
+        "Kroz sistem cevčica – traheja",
+        "Škrgama",
+        "Plućima",
+        "Samo preko krila"
+      ],
+      "zanimljivost": "Vazduh ulazi u traheje kroz otvore na telu i direktno stiže do organa. Zato insekti ne mogu da budu ogromni – vazduh ne bi stigao duboko u veliko telo."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koja struktura zatvara prolaz ka dušniku kada gutamo hranu?",
+      "odgovori": [
+        "Grkljanski poklopac",
+        "Jezik",
+        "Glasne žice",
+        "Ždrelo"
+      ],
+      "zanimljivost": "Ždrelo je zajedničko za disanje i varenje. Zato ne treba pričati dok jedeš – hrana može da „krene“ u pogrešnu cev, pa se zakašlješ."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koliko otprilike alveola ima u oba ljudska plućna krila?",
+      "odgovori": [
+        "Oko 300 miliona",
+        "Oko 300",
+        "Oko 30.000",
+        "Oko 3 milijarde puta milijardu"
+      ],
+      "zanimljivost": "Kada bi se sve alveole raširile, zauzele bi oko 70 m² – kao manji stan! U alveolama kiseonik prelazi u krv, a ugljen-dioksid iz krvi u vazduh."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Šta je dokaz da izdahnuti vazduh sadrži vodenu paru?",
+      "odgovori": [
+        "Staklo se zamagli kad dahneš na njega",
+        "Izdahnuti vazduh je hladniji",
+        "Izdahnuti vazduh je bez mirisa",
+        "Ne sadrži vodenu paru"
+      ],
+      "zanimljivost": "Zimi je naš dah vidljiv zato što se vodena para na hladnom vazduhu odmah kondenzuje u sitne kapljice – kao mali oblak."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koje krvne ćelije učestvuju u zgrušavanju krvi kad se posečemo?",
+      "odgovori": [
+        "Krvne pločice",
+        "Crvena krvna zrnca",
+        "Bela krvna zrnca",
+        "Plazma"
+      ],
+      "zanimljivost": "Pločice se skupljaju na mestu povrede i grade čep. Crvena zrnca prenose gasove, a bela brane telo od infekcija – neka mogu i da „puze“ iz krvi u tkiva, kao ameba."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Zašto crvena krvna zrnca nemaju jedro ni mitohondrije?",
+      "odgovori": [
+        "Da bi imala što više mesta za hemoglobin, koji vezuje kiseonik",
+        "Zato što su mrtva",
+        "Zato što su to bakterije",
+        "Zato što se brzo dele"
+      ],
+      "zanimljivost": "Hemoglobin je belančevina sa gvožđem, zbog koje je krv crvena. Krvna plazma, tečni deo krvi, žućkaste je boje."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliko šupljina ima srce čoveka?",
+      "odgovori": [
+        "Četiri – dve pretkomore i dve komore",
+        "Dve",
+        "Tri",
+        "Šest"
+      ],
+      "zanimljivost": "Desnom stranom srca prolazi krv bogata ugljen-dioksidom, a levom krv bogata kiseonikom. Žabe i većina gmizavaca imaju trodelno srce, a ribe dvodelno."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zovu krvni sudovi koji odvode krv OD srca?",
+      "odgovori": [
+        "Arterije",
+        "Vene",
+        "Kapilari",
+        "Limfni sudovi"
+      ],
+      "zanimljivost": "Najveća arterija je aorta. Vene dovode krv u srce, a najtanji sudovi – kapilari – imaju toliko tanke zidove da kroz njih prolaze gasovi i hranljive materije."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koje životinje imaju otvoren krvotok, gde se krv izliva u telesne šupljine?",
+      "odgovori": [
+        "Insekti, pauci i rakovi",
+        "Ribe",
+        "Ptice",
+        "Sisari"
+      ],
+      "zanimljivost": "Zatvoreni krvotok prvi put se javio kod člankovitih crva, kao što je kišna glista. Ona ima pet „srca“ – zapravo proširenih krvnih sudova koji pumpaju krv."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koliko otprilike krvi ima odrastao čovek?",
+      "odgovori": [
+        "Oko 5 litara",
+        "Oko 1 litar",
+        "Oko 15 litara",
+        "Oko pola litra"
+      ],
+      "zanimljivost": "Normalan broj otkucaja srca u mirovanju je 60–100 u minutu. Puls se meri sa dva prsta na vratu ili na zglobu šake."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji organi su glavni u sistemu za izlučivanje kod čoveka?",
+      "odgovori": [
+        "Bubrezi",
+        "Pluća",
+        "Jetra",
+        "Srce"
+      ],
+      "zanimljivost": "Bubrezi filtriraju krv i stvaraju mokraću, koja kroz mokraćovod ide u mokraćnu bešiku. Izlučivanje se dešava i preko kože – znojem."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Kako se zove zajednički završni deo creva kod ptica, u koji se ulivaju i sistem za izlučivanje i za razmnožavanje?",
+      "odgovori": [
+        "Kloaka",
+        "Kesa",
+        "Vole",
+        "Bešika"
+      ],
+      "zanimljivost": "Kloaku imaju i žabe i većina gmizavaca. Zato kod ptica postoji samo jedan otvor za sva tri sistema – i jaja izlaze kroz njega."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koja je uloga znoja?",
+      "odgovori": [
+        "Izbacuje štetne materije i hladi telo",
+        "Hrani kožu",
+        "Štiti od sunca",
+        "Brani od bakterija"
+      ],
+      "zanimljivost": "Kad znoj isparava sa kože, odnosi toplotu i telo se rashlađuje. Psi se skoro ne znoje – hlade se dahtanjem, isparavanjem preko jezika."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kako se zove prva ćelija novog organizma, nastala spajanjem jajne ćelije i spermatozoida?",
+      "odgovori": [
+        "Zigot",
+        "Embrion",
+        "Gameta",
+        "Hromozom"
+      ],
+      "zanimljivost": "Deobom zigota nastaju sve ćelije tela. Čovek, koji se sastoji od hiljada milijardi ćelija, počinje kao samo jedna ćelija!"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Kako se razmnožavaju morske zvezde osim polno?",
+      "odgovori": [
+        "Regeneracijom – iz dela tela izraste nova jedinka",
+        "Pupljenjem",
+        "Sporama",
+        "Ne mogu drugačije"
+      ],
+      "zanimljivost": "Hidre mogu da se razmnožavaju i pupljenjem i polno. Organizmi koji imaju i muške i ženske polne organe zovu se hermafroditi."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kako se zove skup svih živih bića koja naseljavaju isto stanište?",
+      "odgovori": [
+        "Životna zajednica (biocenoza)",
+        "Populacija",
+        "Biotop",
+        "Ekološka niša"
+      ],
+      "zanimljivost": "Biocenoza (živo) i biotop (neživa sredina) zajedno čine ekosistem. Biocenoza se sastoji od više populacija."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je populacija?",
+      "odgovori": [
+        "Sve jedinke iste vrste na istom staništu",
+        "Sve životinje u šumi",
+        "Skup različitih vrsta",
+        "Jedna porodica životinja"
+      ],
+      "zanimljivost": "Na brojnost populacije utiče razmnožavanje, ali i doseljavanje i iseljavanje jedinki. Norveški leming se, kad ga ima previše a hrane premalo, masovno seli tražeći novo stanište."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zove raspored biljaka u šumi po visini – od visokog drveća do mahovina?",
+      "odgovori": [
+        "Spratovnost",
+        "Sukcesija",
+        "Lanac ishrane",
+        "Migracija"
+      ],
+      "zanimljivost": "U našim šumama najviši sprat čine hrast i brest, niže drveće beli grab i klen, žbunje leska i glog, pa zeljaste biljke, a na zemlji mahovine i gljive."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je vremenska organizacija biocenoze?",
+      "odgovori": [
+        "Članovi zajednice aktivni su u različito doba dana i godine",
+        "Starost drveća",
+        "Brzina rasta biljaka",
+        "Broj godina postojanja šume"
+      ],
+      "zanimljivost": "Sova buljina je noćna ptica grabljivica, a suri orao dnevna – mogu da žive u istoj šumi, a da jedna drugoj ne smetaju. Zimi krzno nekih sisara postaje gušće."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Od koje francuske reči potiče reč „niša“?",
+      "odgovori": [
+        "Od reči za „ugnezditi se“",
+        "Od reči za „hrana“",
+        "Od reči za „kuća“",
+        "Od reči za „voda“"
+      ],
+      "zanimljivost": "Ekološka niša je mesto i uloga vrste u ekosistemu. Koala ima vrlo usku nišu – hrani se samo lišćem eukaliptusa, pa može živeti samo tamo gde on raste."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta se dešava kada se ekološke niše dve vrste u istoj zajednici potpuno poklapaju?",
+      "odgovori": [
+        "Nastaje kompeticija – jedna vrsta potisne drugu",
+        "Spoje se u jednu vrstu",
+        "Ništa se ne dešava",
+        "Obe izumru odmah"
+      ],
+      "zanimljivost": "Ambrozija je korovska biljka koja se brzo širi i u nadmetanju za prostor, vodu i minerale često „pobeđuje“ domaće biljke."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koju ulogu u ekosistemu imaju biljke?",
+      "odgovori": [
+        "Proizvođači",
+        "Potrošači",
+        "Razlagači",
+        "Paraziti"
+      ],
+      "zanimljivost": "Potrošači su biljojedi, mesojedi i svaštojedi. Razlagači – gljive i bakterije – vraćaju minerale u zemlju i mogu biti poslednji korisnici bilo kog člana lanca ishrane."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je trofička piramida?",
+      "odgovori": [
+        "Prikaz brojnosti ili mase organizama na svakom nivou ishrane",
+        "Egipatska grobnica",
+        "Raspored drveća u šumi",
+        "Vrsta lanca ishrane u moru"
+      ],
+      "zanimljivost": "Na dnu piramide su proizvođači (biljke), čija je ukupna masa najveća, a na vrhu krajnji mesojedi. Na svakom višem nivou ima manje mase."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zovu neživi činioci sredine – temperatura, svetlost, voda, vetar?",
+      "odgovori": [
+        "Abiotički faktori",
+        "Biotički faktori",
+        "Antropogeni faktori",
+        "Genetski faktori"
+      ],
+      "zanimljivost": "Biotički faktori su odnosi sa drugim živim bićima (plen, predator, parazit…). Uticaj čoveka zove se antropogeni faktor i može biti i štetan i koristan."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Zašto je u tropskim kišnim šumama tako velika raznovrsnost živog sveta?",
+      "odgovori": [
+        "Stalna toplota (oko 23 °C) i mnogo vode pogoduju bujnoj vegetaciji",
+        "Zato što tamo nema predatora",
+        "Zbog dugih zima",
+        "Zato što tamo ne pada kiša"
+      ],
+      "zanimljivost": "Biljke u kišnim šumama izlučuju toliko vodene pare da ona stvara oblake iznad šume – zato tamo kiša pada skoro svakodnevno."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta zajedničko imaju ajkula, delfin i pingvin, iako su riba, sisar i ptica?",
+      "odgovori": [
+        "Istu životnu formu – vretenasto telo i udove poput peraja",
+        "Isto disanje škrgama",
+        "Isto poreklo",
+        "Isti način razmnožavanja"
+      ],
+      "zanimljivost": "Slični uslovi sredine dovode do sličnih prilagođenosti kod nesrodnih bića. Rovac (insekt) i krtica (sisar) takođe imaju istu – „rijuću“ – životnu formu."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Gde se nalazi DNK kod organizama koji imaju jedro?",
+      "odgovori": [
+        "U jedru",
+        "U citoplazmi",
+        "U ćelijskom zidu",
+        "U vakuoli"
+      ],
+      "zanimljivost": "DNK izgleda kao spiralno uvijene merdevine, sastavljene od dva lanca. Kod bakterija je DNK u citoplazmi i najčešće kružnog oblika."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Kolika je količina DNK u polnim ćelijama u odnosu na telesne?",
+      "odgovori": [
+        "Dvostruko manja – polovina",
+        "Ista",
+        "Dvostruko veća",
+        "Polne ćelije nemaju DNK"
+      ],
+      "zanimljivost": "Kada se jajna ćelija i spermatozoid spoje, zigot dobija punu količinu DNK – pola od majke, pola od oca. Zato braća i sestre liče, ali nisu isti (osim jednojajčanih blizanaca)."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koja vrsta ćelijske deobe nam omogućava da posekotina na prstu zaraste bez ožiljka?",
+      "odgovori": [
+        "Deoba telesnih ćelija",
+        "Deoba polnih ćelija",
+        "Pupljenje",
+        "Stvaranje spora"
+      ],
+      "zanimljivost": "Telesne ćelije pri deobi daju dve „ćerke“ sa potpuno istom DNK. Tako telo raste i stalno zamenjuje stare ćelije novim."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koja je od ovih osobina NASLEDNA i na nju sredina ne utiče?",
+      "odgovori": [
+        "Boja očiju",
+        "Veština vožnje bicikla",
+        "Jezik kojim govorimo",
+        "Ožiljak na koži"
+      ],
+      "zanimljivost": "Nasledne su i krvna grupa, kovrdžava kosa i rupica na bradi. Visina je nasledna, ali na nju utiču i ishrana i fizička aktivnost. Veštine i navike su stečene i ne prenose se genima."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je individualna varijabilnost?",
+      "odgovori": [
+        "Male razlike između jedinki iste vrste",
+        "Razlike između vrsta",
+        "Promena boje sa godišnjim dobom",
+        "Rast jedinke"
+      ],
+      "zanimljivost": "Jedinke koje nastaju polnim razmnožavanjem međusobno se više razlikuju od onih nastalih bespolno. Veća raznolikost povećava šanse da vrsta preživi kad se uslovi promene."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je prirodna selekcija?",
+      "odgovori": [
+        "Različito preživljavanje i razmnožavanje jedinki sa različitim osobinama",
+        "Odabir koji vrši čovek",
+        "Slučajno izumiranje",
+        "Seoba životinja"
+      ],
+      "zanimljivost": "Primer: sivi leptiri na crno-beloj podlozi lako postaju plen ptica, a beli i crni se bolje skrivaju. Posle više generacija u populaciji ostaju uglavnom beli i crni leptiri. Kod veštačke selekcije osobine bira čovek – tako su nastale rase pasa."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Pre koliko se, prema savremenoj nauci, pojavio prvi život na Zemlji?",
+      "odgovori": [
+        "Pre oko 4 milijarde godina",
+        "Pre oko 6.000 godina",
+        "Pre oko 65 miliona godina",
+        "Pre oko 13,7 milijardi godina"
+      ],
+      "zanimljivost": "Svemir je star oko 13,7 milijardi godina, a Zemlja oko 4,5 milijardi. Prve ćelije su verovatno nastale kod vrelih izvora na dnu praokeana."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koji ruski naučnik je smatrao da su prve ćelije nastale postepeno, od nežive materije u praokeanu?",
+      "odgovori": [
+        "Aleksandar Oparin",
+        "Dmitrij Mendeljejev",
+        "Ivan Pavlov",
+        "Jurij Gagarin"
+      ],
+      "zanimljivost": "Oparin i Haldejn su postavili ovu hipotezu u prvoj polovini 20. veka. Miler i Juri su 1953. ogledom pokazali da u uslovima davne Zemlje mogu nastati organske materije."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Kako se zovu stenovite tvorevine cijanobakterija, čiji su fosili stari oko 3,8 milijardi godina?",
+      "odgovori": [
+        "Stromatoliti",
+        "Stalaktiti",
+        "Koralji",
+        "Fosilni amoniti"
+      ],
+      "zanimljivost": "Živi stromatoliti i danas rastu u plitkim obalnim vodama Australije. Cijanobakterije su ispunile atmosferu kiseonikom, a od kiseonika je nastao i zaštitni ozonski omotač."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Šta tvrdi teorija endosimbioze?",
+      "odgovori": [
+        "Mitohondrije i hloroplasti potiču od nekada slobodnih bakterija koje su „usvojile“ veće ćelije",
+        "Život je došao iz svemira",
+        "Biljke su nastale od životinja",
+        "Jedro je nastalo od virusa"
+      ],
+      "zanimljivost": "Dokazi: mitohondrije i hloroplasti imaju svoju DNK, dele se sami i imaju dve membrane. „Endo“ na grčkom znači unutra."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zove naziv za „poslednjeg univerzalnog zajedničkog pretka“ svih živih bića?",
+      "odgovori": [
+        "LUCA",
+        "DNK",
+        "Pangea",
+        "Homo"
+      ],
+      "zanimljivost": "Prema nauci, sva živa bića – bakterije, arhee i eukarije – vode poreklo od istog davnog pretka. Darvin je prvi nacrtao „drvo života“ u svesci, uz reči „Mislim…“."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zove oblast biologije koja proučava srodnost i predačko-potomačke odnose vrsta?",
+      "odgovori": [
+        "Filogenija",
+        "Ekologija",
+        "Anatomija",
+        "Botanika"
+      ],
+      "zanimljivost": "Prednji udovi čoveka, mačke, konja, slepog miša i delfina spolja izgledaju sasvim različito, ali imaju iste kosti – dokaz zajedničkog porekla svih sisara."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Na koja tri domena se dele sva živa bića?",
+      "odgovori": [
+        "Bakterije, arhee i eukarije",
+        "Biljke, životinje i gljive",
+        "Kopnena, vodena i vazdušna",
+        "Sisari, ptice i ribe"
+      ],
+      "zanimljivost": "Eukarije obuhvataju četiri carstva: protiste, gljive, biljke i životinje. Bakterije i arhee nemaju jedro."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zove bolest koja se proširila na više zemalja, na svetskom nivou?",
+      "odgovori": [
+        "Pandemija",
+        "Epidemija",
+        "Infekcija",
+        "Alergija"
+      ],
+      "zanimljivost": "Epidemija je kada se zarazna bolest brzo proširi na mnogo ljudi u jednoj sredini. Prema Svetskoj zdravstvenoj organizaciji, zdravlje je stanje potpunog fizičkog, duševnog i socijalnog blagostanja."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kojom vakcinom se štitimo od tuberkuloze?",
+      "odgovori": [
+        "BCG vakcinom",
+        "Vakcinom protiv gripa",
+        "Antibiotikom",
+        "Vitaminom C"
+      ],
+      "zanimljivost": "Vakcinu su razvili Francuzi Kalmet i Gerin, posle 20 godina rada, a prvi put je upotrebljena 1921. Robert Koh je 1882. otkrio bakteriju koja izaziva tuberkulozu."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Na kojoj temperaturi termička obrada hrane ubija salmonelu za oko pola sata?",
+      "odgovori": [
+        "Iznad 55 °C",
+        "Ispod 0 °C",
+        "Na 20 °C",
+        "Salmonela se ne može uništiti"
+      ],
+      "zanimljivost": "Zamrzavanje ne ubija salmonelu, samo usporava njeno razmnožavanje. Osoba koja prenosi bolest, a nema simptome, zove se kliconoša."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koja bakterija spiralnog oblika, koju prenose krpelji, izaziva lajmsku bolest?",
+      "odgovori": [
+        "Borelija",
+        "Salmonela",
+        "Streptokok",
+        "Bacil kuge"
+      ],
+      "zanimljivost": "Lajmska bolest može da napadne kožu, nerve, zglobove i srce. Zato posle šetnje kroz travu ili šumu treba pregledati telo i ukloniti krpelja što pre."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koju bolest su, u srednjem veku, prenosile buve sa glodara na čoveka?",
+      "odgovori": [
+        "Kugu",
+        "Grip",
+        "Male boginje",
+        "Tuberkulozu"
+      ],
+      "zanimljivost": "Kuga je u srednjem veku odnela više od 75 miliona života. Danas je skoro istrebljena zahvaljujući higijeni i lekovima."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Protiv čega NE deluju antibiotici?",
+      "odgovori": [
+        "Protiv virusa",
+        "Protiv bakterija",
+        "Protiv bakterijskih upala",
+        "Protiv salmonele"
+      ],
+      "zanimljivost": "Grip i prehlada su virusne bolesti, pa ih antibiotici ne leče. Antibiotik se uzima samo po preporuci lekara, obično 5–7 dana, i terapija se ne prekida čak ni kad nam bude bolje."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Zašto je opasno samoinicijativno i nepravilno uzimati antibiotike?",
+      "odgovori": [
+        "Preživele bakterije postaju otporne na lek",
+        "Antibiotici izazivaju grip",
+        "Pojačavaju bakterije u mleku",
+        "Nisu opasni"
+      ],
+      "zanimljivost": "Lekar može da uradi antibiogram – uzorak sa bakterijama stavi u Petrijevu šolju sa kružićima raznih antibiotika i vidi oko kog nastaje najveća „prazna“ površina."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Ko je 1928. otkrio penicilin, prvi antibiotik, zahvaljujući buđi na zaboravljenoj posudi?",
+      "odgovori": [
+        "Aleksandar Fleming",
+        "Luj Paster",
+        "Robert Koh",
+        "Edvard Džener"
+      ],
+      "zanimljivost": "Kada se vratio sa odmora, Fleming je primetio da oko plesni penicilijum bakterije ne rastu. Do kraja 19. veka smrtnost od infekcija bila je i preko 60%."
+    }
+  ]
+}

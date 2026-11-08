@@ -1,0 +1,615 @@
+{
+  "naziv": "7. razred · Hemija",
+  "ikona": "🧪",
+  "boja": "#20bf6b",
+  "opis": "Po udžbeniku Hemija 7 (Fondacija Kavčić): supstance, atomi, periodni sistem, hemijske veze, smeše, reakcije i mol",
+  "redosled": 110,
+  "uOpstem": false,
+  "pitanja": [
+    {
+      "tezina": 1,
+      "pitanje": "Šta proučava hemija?",
+      "odgovori": [
+        "Supstance, njihov sastav, svojstva i promene",
+        "Kretanje tela",
+        "Živa bića",
+        "Istoriju"
+      ],
+      "zanimljivost": "Hemija je svuda oko nas – u kuhinji, u lekovima, u bojama i u našem telu."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Šta su čiste supstance?",
+      "odgovori": [
+        "Supstance stalnog sastava – elementi i jedinjenja",
+        "Smeše više supstanci",
+        "Samo voda",
+        "Samo metali"
+      ],
+      "zanimljivost": "Kuhinjska so (NaCl) i destilovana voda su čiste supstance. Vazduh i morska voda su smeše."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je hemijski element?",
+      "odgovori": [
+        "Čista supstanca sastavljena od atoma iste vrste",
+        "Smeša dve supstance",
+        "Bilo koja tečnost",
+        "Molekul vode"
+      ],
+      "zanimljivost": "Danas je poznato 118 elemenata. Oko 90 se nalazi u prirodi, a ostali su napravljeni u laboratorijama."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je hemijsko jedinjenje?",
+      "odgovori": [
+        "Čista supstanca od dva ili više različitih elemenata, hemijski vezanih",
+        "Smeša elemenata",
+        "Jedan atom",
+        "Rastvor soli u vodi"
+      ],
+      "zanimljivost": "Jedinjenje ima sasvim nova svojstva: od otrovnog hlora i burnog natrijuma nastaje bezopasna kuhinjska so."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Šta je od navedenog laboratorijsko posuđe za merenje zapremine tečnosti?",
+      "odgovori": [
+        "Menzura",
+        "Tronožac",
+        "Avan sa tučkom",
+        "Pinceta"
+      ],
+      "zanimljivost": "Menzura je graduisani stakleni cilindar. Pri čitanju, oko treba da bude u visini donjeg ruba površine tečnosti (meniska)."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Čemu služi avan sa tučkom u laboratoriji?",
+      "odgovori": [
+        "Za usitnjavanje čvrstih supstanci",
+        "Za zagrevanje",
+        "Za merenje mase",
+        "Za filtriranje"
+      ],
+      "zanimljivost": "I u kuhinji se koristi avan – za usitnjavanje začina. Laboratorijski je obično od porcelana."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je od navedenog FIZIČKO svojstvo supstance?",
+      "odgovori": [
+        "Boja, miris i temperatura topljenja",
+        "Zapaljivost",
+        "Reakcija sa kiselinom",
+        "Rđanje"
+      ],
+      "zanimljivost": "Hemijska svojstva se vide tek kada supstanca učestvuje u hemijskoj promeni – na primer da li gori ili rđa."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je HEMIJSKO svojstvo supstance?",
+      "odgovori": [
+        "Zapaljivost",
+        "Gustina",
+        "Boja",
+        "Agregatno stanje"
+      ],
+      "zanimljivost": "Zapaljivost se vidi tek kada supstanca gori – tada nastaju nove supstance."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koja je od navedenih promena hemijska?",
+      "odgovori": [
+        "Kiseljenje mleka",
+        "Topljenje čokolade",
+        "Lomljenje stakla",
+        "Isparavanje vode"
+      ],
+      "zanimljivost": "Kod hemijske promene nastaju nove supstance. Kiselo mleko ima drugačiji ukus i sastav od svežeg."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kako se zove najmanja čestica elementa koja zadržava njegova svojstva?",
+      "odgovori": [
+        "Atom",
+        "Molekul",
+        "Jon",
+        "Kristal"
+      ],
+      "zanimljivost": "Reč „atom“ dolazi od grčkog „atomos“ – nedeljiv. Danas znamo da se atom sastoji od još manjih čestica."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Ko je predložio da se elementi obeležavaju početnim slovima latinskih naziva (H, O, C…)?",
+      "odgovori": [
+        "Jens Jakob Bercelijus",
+        "Dmitrij Mendeljejev",
+        "Džon Dalton",
+        "Antoan Lavoazje"
+      ],
+      "zanimljivost": "Švedski hemičar Bercelijus je uveo sistem simbola 1813. Dalton je pre njega crtao elemente kružićima sa šarama – što je bilo nepraktično."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Gde se nalaze protoni i neutroni u atomu?",
+      "odgovori": [
+        "U jezgru",
+        "U elektronskom omotaču",
+        "Svuda podjednako",
+        "Izvan atoma"
+      ],
+      "zanimljivost": "Jezgro je sićušno, ali u njemu je skoro sva masa atoma. Elektroni se kreću u omotaču oko jezgra."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta pokazuje atomski (redni) broj elementa?",
+      "odgovori": [
+        "Broj protona u jezgru",
+        "Broj neutrona",
+        "Masu atoma",
+        "Broj elektronskih nivoa"
+      ],
+      "zanimljivost": "Ugljenik ima redni broj 6 – svaki atom ugljenika ima 6 protona. Broj protona „određuje“ koji je element."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Šta je maseni broj atoma?",
+      "odgovori": [
+        "Zbir protona i neutrona",
+        "Broj elektrona",
+        "Broj protona",
+        "Broj nivoa"
+      ],
+      "zanimljivost": "Ugljenik-12 ima 6 protona i 6 neutrona. Ugljenik-14 ima 6 protona i 8 neutrona – to je izotop."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koliko neutrona ima atom natrijuma sa masenim brojem 23 i rednim brojem 11?",
+      "odgovori": [
+        "12",
+        "11",
+        "23",
+        "34"
+      ],
+      "zanimljivost": "Broj neutrona = maseni broj − redni broj = 23 − 11 = 12."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koliko elektrona najviše može da primi prvi energetski nivo?",
+      "odgovori": [
+        "2",
+        "8",
+        "18",
+        "4"
+      ],
+      "zanimljivost": "Drugi nivo prima najviše 8 elektrona. Zato su helijum (2) i neon (2 + 8) vrlo stabilni – nivoi su im popunjeni."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako je raspoređeno 8 elektrona atoma kiseonika po nivoima?",
+      "odgovori": [
+        "2, 6",
+        "8",
+        "4, 4",
+        "2, 2, 4"
+      ],
+      "zanimljivost": "Kiseoniku do popunjenog drugog nivoa nedostaju 2 elektrona – zato gradi dve veze, kao u molekulu vode."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zovu horizontalni redovi u periodnom sistemu?",
+      "odgovori": [
+        "Periode",
+        "Grupe",
+        "Familije",
+        "Kolone"
+      ],
+      "zanimljivost": "Ima ih sedam. Broj periode pokazuje koliko energetskih nivoa ima atom tog elementa."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zovu vertikalne kolone periodnog sistema?",
+      "odgovori": [
+        "Grupe",
+        "Periode",
+        "Redovi",
+        "Nizovi"
+      ],
+      "zanimljivost": "Elementi u istoj grupi imaju isti broj elektrona u poslednjem nivou, pa imaju i slična svojstva."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je zajedničko elementima jedne grupe?",
+      "odgovori": [
+        "Isti broj elektrona u poslednjem energetskom nivou",
+        "Ista masa",
+        "Isti broj neutrona",
+        "Ista boja"
+      ],
+      "zanimljivost": "Zato se litijum, natrijum i kalijum ponašaju slično – svi imaju po jedan elektron u spoljašnjem nivou."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Zbog čega plemeniti gasovi skoro ne reaguju sa drugim elementima?",
+      "odgovori": [
+        "Imaju popunjen spoljašnji energetski nivo",
+        "Previše su teški",
+        "Nemaju elektrone",
+        "Uvek su tečni"
+      ],
+      "zanimljivost": "Argon se zbog toga koristi u sijalicama i pri zavarivanju – štiti metal od kiseonika iz vazduha."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji plemeniti gas čini skoro 1% vazduha?",
+      "odgovori": [
+        "Argon",
+        "Neon",
+        "Helijum",
+        "Kripton"
+      ],
+      "zanimljivost": "Ime argon znači „lenj“ na grčkom – jer ne reaguje. Otkriven je tek 1894, iako ga udišemo svaki dan."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji plemeniti gas se koristi za svetleće reklame crveno-narandžaste boje?",
+      "odgovori": [
+        "Neon",
+        "Argon",
+        "Kripton",
+        "Radon"
+      ],
+      "zanimljivost": "Neon je otkriven 1898. Ime mu na grčkom znači „nov“."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koji plemeniti gas je radioaktivan i može se nakupljati u podrumima?",
+      "odgovori": [
+        "Radon",
+        "Neon",
+        "Helijum",
+        "Argon"
+      ],
+      "zanimljivost": "Radon nastaje raspadom uranijuma u stenama. Zato je važno redovno provetravati prostorije, posebno podrume."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zove veza nastala zajedničkim elektronskim parom između atoma?",
+      "odgovori": [
+        "Kovalentna veza",
+        "Jonska veza",
+        "Metalna veza",
+        "Vodonična veza"
+      ],
+      "zanimljivost": "Kovalentnom vezom su povezani atomi u molekulima vodonika, kiseonika, vode i metana."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zove veza koja nastaje privlačenjem suprotno naelektrisanih jona?",
+      "odgovori": [
+        "Jonska veza",
+        "Kovalentna veza",
+        "Metalna veza",
+        "Polarna veza"
+      ],
+      "zanimljivost": "Jonska veza postoji, na primer, u kuhinjskoj soli – između jona Na⁺ i Cl⁻."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliko atoma ima molekul kiseonika O₂?",
+      "odgovori": [
+        "2",
+        "1",
+        "3",
+        "4"
+      ],
+      "zanimljivost": "Kiseonik u vazduhu postoji kao dvoatomni molekul O₂. Ozon (O₃) ima tri atoma kiseonika."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta znači broj „2“ u formuli H₂O?",
+      "odgovori": [
+        "Molekul ima dva atoma vodonika",
+        "Dva molekula vode",
+        "Dva atoma kiseonika",
+        "Voda ključa na 2 °C"
+      ],
+      "zanimljivost": "Mali broj ispod i desno od simbola zove se indeks. Broj ispred formule (koeficijent) pokazuje broj molekula: 2H₂O su dva molekula vode."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je valenca?",
+      "odgovori": [
+        "Broj veza koje atom može da gradi sa drugim atomima",
+        "Masa atoma",
+        "Broj protona",
+        "Gustina supstance"
+      ],
+      "zanimljivost": "Vodonik je uvek jednovalentan, a kiseonik najčešće dvovalentan. Na osnovu valence pišu se formule jedinjenja."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koja je formula jedinjenja dvovalentnog magnezijuma i dvovalentnog kiseonika?",
+      "odgovori": [
+        "MgO",
+        "Mg₂O",
+        "MgO₂",
+        "Mg₂O₃"
+      ],
+      "zanimljivost": "Kada su valence iste, atomi se jednostavno spoje 1 : 1. Magnezijum-oksid nastaje kada magnezijum gori jarkim belim plamenom."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koja je formula aluminijum-oksida, ako je aluminijum trovalentan, a kiseonik dvovalentan?",
+      "odgovori": [
+        "Al₂O₃",
+        "AlO",
+        "Al₃O₂",
+        "AlO₃"
+      ],
+      "zanimljivost": "Valence se „unakrsno“ prepisuju kao indeksi: Al ima 3, O ima 2 – pa je formula Al₂O₃. Od ovog jedinjenja je i rubin, sa malo hroma."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kakvu kristalnu rešetku ima kuhinjska so?",
+      "odgovori": [
+        "Jonsku",
+        "Molekulsku",
+        "Atomsku",
+        "Metalnu"
+      ],
+      "zanimljivost": "Kristali soli su kockasti jer su joni poređani u kockastu rešetku. Jonska jedinjenja obično imaju visoku temperaturu topljenja."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Kakvu kristalnu rešetku ima dijamant?",
+      "odgovori": [
+        "Atomsku",
+        "Jonsku",
+        "Molekulsku",
+        "Metalnu"
+      ],
+      "zanimljivost": "U atomskoj rešetki svi atomi su povezani jakim kovalentnim vezama – zato je dijamant tako tvrd. Led ima molekulsku rešetku."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kakva je smeša kada se njeni sastojci ne vide golim okom?",
+      "odgovori": [
+        "Homogena",
+        "Heterogena",
+        "Kristalna",
+        "Jonska"
+      ],
+      "zanimljivost": "Rastvor šećera u vodi i vazduh su homogene smeše. Pesak u vodi ili supa sa povrćem su heterogene."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zove supstanca koja rastvara drugu, na primer voda u slanoj vodi?",
+      "odgovori": [
+        "Rastvarač",
+        "Rastvorena supstanca",
+        "Talog",
+        "Filtrat"
+      ],
+      "zanimljivost": "Voda je „univerzalni rastvarač“ – rastvara više supstanci od bilo koje druge tečnosti."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je zasićen rastvor?",
+      "odgovori": [
+        "Rastvor u kome se na datoj temperaturi više ne može rastvoriti ista supstanca",
+        "Rastvor sa malo soli",
+        "Vrlo topao rastvor",
+        "Rastvor koji je ispario"
+      ],
+      "zanimljivost": "Ako se zasićen rastvor zagreje, obično može da primi još supstance. Pri hlađenju, višak se izdvaja u obliku kristala."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako temperatura obično utiče na rastvorljivost čvrstih supstanci u vodi?",
+      "odgovori": [
+        "Sa porastom temperature rastvorljivost raste",
+        "Ne utiče",
+        "Rastvorljivost opada",
+        "Supstanca se pretvara u gas"
+      ],
+      "zanimljivost": "Gasovi se, obrnuto, bolje rastvaraju u hladnoj vodi – zato topao sok brže gubi mehuriće."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koliki je maseni udeo soli u rastvoru od 20 g soli i 80 g vode?",
+      "odgovori": [
+        "20%",
+        "25%",
+        "80%",
+        "16%"
+      ],
+      "zanimljivost": "Maseni udeo = masa supstance / masa rastvora = 20 / (20 + 80) = 0,2 = 20%."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kojim postupkom se iz smeše izdvaja gvožđe od sumpora u prahu?",
+      "odgovori": [
+        "Magnetom",
+        "Filtriranjem",
+        "Destilacijom",
+        "Isparavanjem"
+      ],
+      "zanimljivost": "Kad se gvožđe i sumpor zagrevaju zajedno, nastaje jedinjenje gvožđe-sulfid – i tada ih magnet više ne može razdvojiti."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kojim postupkom se razdvajaju sastojci koji imaju različite temperature ključanja?",
+      "odgovori": [
+        "Destilacijom",
+        "Dekantovanjem",
+        "Filtriranjem",
+        "Magnetom"
+      ],
+      "zanimljivost": "Destilacija se koristi u preradi nafte i za dobijanje destilovane vode."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Šta je dekantovanje?",
+      "odgovori": [
+        "Pažljivo odlivanje tečnosti iznad taloga",
+        "Isparavanje vode",
+        "Zagrevanje do ključanja",
+        "Mešanje dve tečnosti"
+      ],
+      "zanimljivost": "Kada se mutna voda ostavi da stoji, čestice se istalože na dno. Zatim se bistra voda pažljivo odlije – to je dekantovanje."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Kako se zove odvajanje dve tečnosti koje se ne mešaju (npr. ulje i voda)?",
+      "odgovori": [
+        "Pomoću levka za odvajanje",
+        "Destilacijom",
+        "Filtriranjem",
+        "Kristalizacijom"
+      ],
+      "zanimljivost": "Levak za odvajanje ima slavinu na dnu: teža tečnost (voda) iscuri prva, a ulje ostane."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koji gas je najzastupljeniji u vazduhu?",
+      "odgovori": [
+        "Azot",
+        "Kiseonik",
+        "Ugljen-dioksid",
+        "Argon"
+      ],
+      "zanimljivost": "Vazduh je smeša: oko 78% azota, 21% kiseonika, oko 1% argona i malo ugljen-dioksida i drugih gasova."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta tvrdi zakon o održanju mase?",
+      "odgovori": [
+        "Ukupna masa supstanci pre i posle hemijske reakcije je ista",
+        "Masa se uvek povećava",
+        "Masa se uvek smanjuje",
+        "Gasovi nemaju masu"
+      ],
+      "zanimljivost": "Zakon je postavio Lavoazje. Ako drvo izgori, pepeo je lakši – ali je masa gasova koji su otišli u vazduh tačno nadoknađuje razliku."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zovu supstance koje ulaze u hemijsku reakciju?",
+      "odgovori": [
+        "Reaktanti",
+        "Proizvodi",
+        "Katalizatori",
+        "Rastvarači"
+      ],
+      "zanimljivost": "Reaktanti se pišu levo od strelice, a proizvodi desno. Strelica znači „nastaje“ ili „daje“."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Kako glasi jednačina sagorevanja ugljenika u kiseoniku?",
+      "odgovori": [
+        "C + O₂ → CO₂",
+        "C + O → CO₂",
+        "2C + O₂ → CO₂",
+        "C₂ + O₂ → C₂O"
+      ],
+      "zanimljivost": "Jednačina je izjednačena: sa obe strane je po jedan atom ugljenika i dva atoma kiseonika."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Kako glasi relativna molekulska masa vode (Ar(H) = 1, Ar(O) = 16)?",
+      "odgovori": [
+        "18",
+        "17",
+        "16",
+        "10"
+      ],
+      "zanimljivost": "Mr(H₂O) = 2 · 1 + 16 = 18. Relativne mase nemaju jedinicu – pokazuju koliko je puta molekul teži od dvanaestine atoma ugljenika-12."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Kolika je molarna masa ugljen-dioksida (Ar(C) = 12, Ar(O) = 16)?",
+      "odgovori": [
+        "44 g/mol",
+        "28 g/mol",
+        "32 g/mol",
+        "40 g/mol"
+      ],
+      "zanimljivost": "M(CO₂) = 12 + 2 · 16 = 44 g/mol. Jedan mol CO₂ ima masu 44 grama i sadrži oko 6 · 10²³ molekula."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koliko molova je 36 g vode?",
+      "odgovori": [
+        "2 mola",
+        "1 mol",
+        "18 molova",
+        "0,5 mola"
+      ],
+      "zanimljivost": "n = m / M = 36 g : 18 g/mol = 2 mol."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Šta tvrdi zakon stalnih odnosa masa?",
+      "odgovori": [
+        "Elementi se u jedinjenju uvek spajaju u istom odnosu masa",
+        "Masa se ne menja",
+        "Svi gasovi imaju istu masu",
+        "Gustina je stalna"
+      ],
+      "zanimljivost": "U vodi je odnos mase vodonika i kiseonika uvek 1 : 8, bez obzira da li je voda iz reke ili sa Antarktika."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koliki je maseni udeo kiseonika u vodi?",
+      "odgovori": [
+        "Oko 89%",
+        "Oko 11%",
+        "Oko 33%",
+        "Oko 50%"
+      ],
+      "zanimljivost": "16 / 18 ≈ 0,89. Iako molekul vode ima dva atoma vodonika, oni čine samo oko 11% njegove mase – kiseonik je mnogo teži."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji je najlakši gas, koji se nekada koristio za vazdušne brodove?",
+      "odgovori": [
+        "Vodonik",
+        "Helijum",
+        "Kiseonik",
+        "Azot"
+      ],
+      "zanimljivost": "Vodonik je i najzastupljeniji element u svemiru. Danas se razvijaju automobili na vodonik – iz auspuha im izlazi samo voda."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se kiseonik industrijski dobija?",
+      "odgovori": [
+        "Iz tečnog vazduha, destilacijom",
+        "Iz vode prokuvavanjem",
+        "Iz peska",
+        "Iz soli"
+      ],
+      "zanimljivost": "Vazduh se ohladi do oko −200 °C pa postane tečan. Zatim se zagreva, i azot ispari pre kiseonika."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se nazivaju jedinjenja koja u vodenom rastvoru boje lakmus u crveno i imaju kiseo ukus?",
+      "odgovori": [
+        "Kiseline",
+        "Hidroksidi (baze)",
+        "Soli",
+        "Oksidi metala"
+      ],
+      "zanimljivost": "Kiseline sadrže vodonik koji u vodi daje vodonikove jone (H⁺). Nikada ne treba probati laboratorijske kiseline!"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se nazivaju jedinjenja koja boje lakmus u plavo i klizava su na dodir?",
+      "odgovori": [
+        "Hidroksidi (baze)",
+        "Kiseline",
+        "Oksidi nemetala",
+        "Plemeniti gasovi"
+      ],
+      "zanimljivost": "Natrijum-hidroksid (kaustična soda) koristi se za pravljenje sapuna i odčepljivanje odvoda – vrlo je nagrizajući."
+    }
+  ]
+}

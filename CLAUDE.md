@@ -1,0 +1,37 @@
+# Gric kviz – porodični kućni kviz
+
+Kviz u stilu Jackbox igara za porodicu: server radi na ovom računaru, svi igraju preko telefona u kućnoj Wi-Fi mreži.
+Ceo interfejs, pitanja i komentari u kodu su na **srpskom (latinica)**. Igrači su deca 11–15 godina i odrasli.
+
+## Pokretanje
+- `node server.js` (ili `npm start`), port 3000 (`PORT=…` za drugi). Bez npm zavisnosti – samo Node.
+- Telefoni: `http://<IP računara>:3000`, TV/veliki ekran: `/ekran`.
+- Firewall (ufw) mora da propušta port: `sudo ufw allow 3000/tcp`.
+
+## Struktura
+- `server.js` – HTTP + Server-Sent Events (`/api/dogadjaji`), akcije preko `POST /api/akcija`.
+- `lib/soba.js` – tok igre: lobi → uvod → pitanje/otkrivanje ×N → tabela → reči ×N → tabela → kraj.
+- `lib/kvizovi.js` – učitavanje `kvizovi/*/kviz.json`, izbor pitanja (mešavina težina, prednost neodigranim – `podaci/odigrana-pitanja.json`).
+- `lib/recnik.js` – „Najduža reč“: `podaci/recnik.txt` (Hunspell sr, osnovni oblici, ćirilica) + `podaci/ucestalost.txt`.
+- `lib/statistika.js` – porodična tabla slavnih u `podaci/statistika.json`.
+- `public/` – klijent (vanilla JS): `app.js` ekrani, `mediji.js` interaktivni mediji (3D, mape, melodije…), `geo/svet.json` mape.
+- `alati/` – `proveri-kvizove.js`, `preuzmi-slike.js` (Vikipedija), `preuzmi-udzbenike.js` (Fondacija Kavčić).
+- `izvori/udzbenici/<razred>/<udžbenik>/` – preuzete stranice udžbenika (slike `str-NNNN.jpg`, `tekst.md`); nije deo igre i **nije u git-u** (`.gitignore`, tuđa autorska prava) – preuzima se alatom `alati/preuzmi-udzbenike.js`.
+
+## Dodavanje novog kviza (npr. iz slikanih stranica knjige)
+Format je opisan u `kvizovi/UPUTSTVO.md`. Ukratko:
+1. Napravi folder `kvizovi/<oblast-razred-tema>/` i `kviz.json` sa `naziv`, `ikona`, `boja`, `opis`, `pitanja`.
+2. Svako pitanje: `pitanje`, `odgovori` (tačno 4, **prvi je tačan**), `tezina` (1–3), `zanimljivost`, opciono `mediji`.
+3. Pitanja pravi **svojim rečima** na osnovu gradiva (ne prepisuj odlomke iz knjige). Mešaj težine (~35% lako, 40% srednje, 25% teško), uz par pitanja koja bi pomučila i odrasle.
+4. `zanimljivost` = nešto neočigledno što proširuje znanje, ne ponavljanje tačnog odgovora.
+5. Kad god ima smisla, koristi interaktivne medije (molekul, telo, mapa, melodija, atom, sat, emodzi, svg).
+6. Za učenje jedne lekcije postavi `"uOpstem": false` da se ne meša u „Opšte znanje“.
+7. Pokreni `npm run proveri` – mora proći bez grešaka. Server pokupi nove kvizove bez restarta.
+
+## Konvencije
+- Ne dodavati npm zavisnosti; klijent radi i bez interneta (osim Google fonta, koji ima rezervu).
+- Proveravati činjenice – pitanja su za decu i moraju biti tačna.
+
+## Git i licence
+- Repozitorijum je otvoren (kôd MIT, pitanja CC BY-SA 4.0). Pre dodavanja slika proveriti licencu (`node alati/licence-slika.js` osvežava `SLIKE.md`).
+- Ne dodavati u git: `izvori/`, `podaci/statistika.json`, `podaci/odigrana-pitanja.json`.

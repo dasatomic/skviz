@@ -1,0 +1,24 @@
+{
+  "name": "gric-kviz",
+  "version": "1.0.0",
+  "description": "Porodični kućni kviz za igru preko telefona u kućnoj mreži",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "proveri": "node alati/proveri-kvizove.js"
+  },
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "kviz",
+    "quiz",
+    "skola",
+    "srpski",
+    "jackbox",
+    "porodica"
+  ],
+  "author": "Aleksandar Tomic"
+}

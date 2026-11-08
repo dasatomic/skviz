@@ -1,0 +1,604 @@
+{
+  "naziv": "6. razred · Fizika",
+  "ikona": "🧲",
+  "boja": "#4834d4",
+  "opis": "Po udžbeniku Fizika 6 (Fondacija Kavčić): kretanje, brzina, sila, merenje, masa i gustina, pritisak",
+  "redosled": 109,
+  "uOpstem": false,
+  "pitanja": [
+    {
+      "tezina": 1,
+      "pitanje": "Šta proučava fizika?",
+      "odgovori": [
+        "Najopštije oblike kretanja materije i njenu građu",
+        "Samo živa bića",
+        "Samo hemijske reakcije",
+        "Istoriju naroda"
+      ],
+      "zanimljivost": "Fizika proučava mehaničke, toplotne, električne, magnetne i svetlosne pojave – od zvezda do najsitnijih čestica."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koja su dva osnovna oblika materije u fizici?",
+      "odgovori": [
+        "Supstanca i fizičko polje",
+        "Voda i vazduh",
+        "Čvrsto i tečno",
+        "Atom i molekul"
+      ],
+      "zanimljivost": "Fizičko polje se ne vidi, ali deluje – na primer gravitaciono i magnetno polje. Supstanca je ono od čega su sačinjena tela."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je od navedenog FIZIČKO TELO, a ne supstanca?",
+      "odgovori": [
+        "Srebrna kašika",
+        "Srebro",
+        "Gvožđe",
+        "Voda"
+      ],
+      "zanimljivost": "Supstanca je materijal (srebro, drvo, voda), a telo je predmet određenog oblika i zapremine napravljen od supstance."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kada se telo u fizici može posmatrati kao materijalna tačka?",
+      "odgovori": [
+        "Kada su njegove dimenzije zanemarljive u odnosu na pređeni put",
+        "Uvek",
+        "Samo kada miruje",
+        "Samo kada je vrlo teško"
+      ],
+      "zanimljivost": "Zemlja se pri kretanju oko Sunca može posmatrati kao tačka – njen prečnik je više od deset hiljada puta manji od prečnika putanje."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kako se zove linija po kojoj se telo kreće?",
+      "odgovori": [
+        "Putanja (trajektorija)",
+        "Brzina",
+        "Pređeni put",
+        "Ubrzanje"
+      ],
+      "zanimljivost": "Trag aviona na nebu ili svetli trag meteora su primeri putanje koju možemo da vidimo."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kakvo je kretanje jabuke koja pada sa drveta (bez vetra)?",
+      "odgovori": [
+        "Pravolinijsko",
+        "Krivolinijsko",
+        "Kružno",
+        "Oscilatorno"
+      ],
+      "zanimljivost": "Fudbalska lopta posle udarca kreće se krivolinijski, po luku. Skijaš niz padinu najčešće takođe krivolinijski."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Putnik sedi u vozu koji se kreće. U odnosu na šta on miruje?",
+      "odgovori": [
+        "U odnosu na voz",
+        "U odnosu na prugu",
+        "U odnosu na drveće pored pruge",
+        "U odnosu na Sunce"
+      ],
+      "zanimljivost": "Svako kretanje i mirovanje je relativno – zavisi od referentnog tela. U odnosu na prugu putnik se kreće brzinom voza."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zove telo u odnosu na koje posmatramo kretanje?",
+      "odgovori": [
+        "Referentno (uporedno) telo",
+        "Materijalna tačka",
+        "Putanja",
+        "Merilo"
+      ],
+      "zanimljivost": "Za kretanje na Zemlji obično se kao referentno telo bira kuća, drvo ili sama površina Zemlje."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Čime je potpuno određena brzina tela?",
+      "odgovori": [
+        "Intenzitetom, pravcem i smerom",
+        "Samo brojem",
+        "Samo pravcem",
+        "Samo masom tela"
+      ],
+      "zanimljivost": "Podatak „80 km/h“ nije dovoljan. Potpun podatak je, na primer: 80 km/h, auto-putem, od Beograda ka Nišu."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Voz pređe 360 km za 6 sati. Kolika je njegova srednja brzina?",
+      "odgovori": [
+        "60 km/h",
+        "36 km/h",
+        "66 km/h",
+        "2160 km/h"
+      ],
+      "zanimljivost": "Srednja brzina je ukupan pređeni put podeljen ukupnim vremenom. Voz je možda negde stajao, a negde jurio – srednja brzina to ne pokazuje."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zove kretanje kod koga telo u jednakim vremenskim intervalima prelazi jednake puteve, po pravoj liniji?",
+      "odgovori": [
+        "Ravnomerno pravolinijsko",
+        "Promenljivo",
+        "Kružno",
+        "Krivolinijsko"
+      ],
+      "zanimljivost": "Pravo ravnomerno kretanje je retko u prirodi – automobili i vozovi stalno menjaju brzinu."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koliko je 72 km/h u metrima u sekundi?",
+      "odgovori": [
+        "20 m/s",
+        "7,2 m/s",
+        "72 m/s",
+        "200 m/s"
+      ],
+      "zanimljivost": "1 km/h = 1000 m : 3600 s, pa se km/h deli sa 3,6 da bi se dobilo m/s."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Biciklista vozi 2 sata brzinom 15 km/h. Koliki put pređe?",
+      "odgovori": [
+        "30 km",
+        "7,5 km",
+        "17 km",
+        "13 km"
+      ],
+      "zanimljivost": "s = v · t = 15 km/h · 2 h = 30 km."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kako se zove privlačna sila kojom Zemlja deluje na sva tela?",
+      "odgovori": [
+        "Gravitaciona sila (Zemljina teža)",
+        "Sila trenja",
+        "Sila elastičnosti",
+        "Magnetna sila"
+      ],
+      "zanimljivost": "Zemljina gravitacija deluje i na Mesec i drži ga na putanji oko Zemlje."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Zašto balon sa helijumom ne pada na zemlju, iako na njega deluje gravitacija?",
+      "odgovori": [
+        "Druga sila (potisak vazduha) je veća od njegove težine",
+        "Na njega ne deluje gravitacija",
+        "Helijum je magnetan",
+        "Balon je prazan"
+      ],
+      "zanimljivost": "Gravitacija deluje na sva tela, ali ponekad je savladaju druge sile – potisak, uzgon krila aviona ili mišići ptice."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kojim instrumentom se meri sila?",
+      "odgovori": [
+        "Dinamometrom",
+        "Termometrom",
+        "Barometrom",
+        "Hronometrom"
+      ],
+      "zanimljivost": "Ime dolazi od grčke reči „dinamis“ – sila. Dinamometar ima oprugu koja se isteže pod dejstvom sile."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kako se zove jedinica za silu, nazvana po engleskom naučniku?",
+      "odgovori": [
+        "Njutn (N)",
+        "Kilogram",
+        "Paskal",
+        "Metar"
+      ],
+      "zanimljivost": "Jedinica je dobila ime po Isaku Njutnu. Telo mase oko 100 g na Zemlji pritiska podlogu silom od oko 1 N."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Dva zeca vuku glavicu kupusa u istom pravcu i smeru, silama od 50 N i 40 N. Kolika je ukupna (rezultujuća) sila?",
+      "odgovori": [
+        "90 N",
+        "10 N",
+        "2000 N",
+        "45 N"
+      ],
+      "zanimljivost": "Sile istog pravca i smera se sabiraju. Da vuku u suprotnim smerovima, rezultujuća sila bi bila razlika: 10 N."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zove sila koja vraća opruženu oprugu ili gumu u prvobitni oblik?",
+      "odgovori": [
+        "Sila elastičnosti",
+        "Sila trenja",
+        "Gravitaciona sila",
+        "Električna sila"
+      ],
+      "zanimljivost": "Akrobate na trambulini koriste silu elastičnosti mreže. Ako se telo previše istegne, ne vrati se – trajno se deformiše."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta se dešava sa automobilom kada vozač isključi motor na ravnom putu?",
+      "odgovori": [
+        "Usporava i zaustavlja se zbog trenja i otpora vazduha",
+        "Nastavlja beskonačno",
+        "Ubrzava",
+        "Odmah staje"
+      ],
+      "zanimljivost": "Na ledu bi isti automobil prešao mnogo duži put, jer je trenje manje."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Od čega zavisi sila otpora sredine?",
+      "odgovori": [
+        "Od vrste sredine, brzine tela i njegove veličine i oblika",
+        "Samo od boje tela",
+        "Samo od mase",
+        "Ni od čega"
+      ],
+      "zanimljivost": "Hodanje kroz vodu je teže od hodanja kroz vazduh, a trčanje kroz vodu još teže. Zato su ribe i avioni vretenastog, „aerodinamičnog“ oblika."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Kako se zove razlika između trenja i sile trenja?",
+      "odgovori": [
+        "Trenje je pojava, a sila trenja je veličina koja je brojno opisuje",
+        "Nema razlike",
+        "Trenje postoji samo na ledu",
+        "Sila trenja postoji samo u vodi"
+      ],
+      "zanimljivost": "Kada telo miruje i ne gura ga nijedna sila, sila trenja ne postoji – pojavljuje se tek kad pokušamo da ga pomerimo."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je osnovna jedinica za dužinu u Međunarodnom sistemu (SI)?",
+      "odgovori": [
+        "Metar",
+        "Kilometar",
+        "Centimetar",
+        "Milja"
+      ],
+      "zanimljivost": "SI sistem ima sedam osnovnih veličina, među njima dužinu, masu, vreme i temperaturu. Sve ostale su izvedene iz njih."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koja je osnovna jedinica za vreme u SI sistemu?",
+      "odgovori": [
+        "Sekunda",
+        "Minut",
+        "Sat",
+        "Dan"
+      ],
+      "zanimljivost": "Za precizno merenje vremena koriste se hronometar (štoperica) i metronom. Digitalni hronometar meri i stote delove sekunde."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Šta je veće: jedan metar ili jedna sekunda?",
+      "odgovori": [
+        "Ne mogu se porediti – to su različite veličine",
+        "Metar",
+        "Sekunda",
+        "Jednaki su"
+      ],
+      "zanimljivost": "Porediti se mogu samo iste vrste veličina – dužina sa dužinom, vreme sa vremenom. Ovo je česta „zamka“ u fizici."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliki je jedan kubni metar u litrima?",
+      "odgovori": [
+        "1000 litara",
+        "100 litara",
+        "10 litara",
+        "1 litar"
+      ],
+      "zanimljivost": "Kubni metar je zapremina kocke sa ivicom 1 m. U njega staje 1000 kocaka sa ivicom 1 dm – a svaka je jedan litar."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se meri zapremina kamena nepravilnog oblika?",
+      "odgovori": [
+        "Potopi se u menzuru sa vodom i očita koliko je voda porasla",
+        "Izmeri se lenjirom",
+        "Izvaga se",
+        "Ne može se izmeriti"
+      ],
+      "zanimljivost": "Ovo je Arhimedova metoda. Po legendi, tako je otkrio da li je kraljeva kruna od čistog zlata."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliko puta se mala (satna) kazaljka okrene oko osovine za 24 sata?",
+      "odgovori": [
+        "2 puta",
+        "24 puta",
+        "1 put",
+        "12 puta"
+      ],
+      "zanimljivost": "Minutna kazaljka se za 24 sata okrene 24 puta, a sekundna čak 1440 puta."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Šta je klepsidra?",
+      "odgovori": [
+        "Vodeni sat",
+        "Peščani sat",
+        "Sunčani sat",
+        "Metronom"
+      ],
+      "zanimljivost": "U klepsidri voda kaplje iz jedne posude u drugu kroz mali otvor. Koristili su je stari Egipćani i Grci – i u sudovima da bi se ograničilo vreme govora!"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Šta je apsolutna greška merenja?",
+      "odgovori": [
+        "Razlika između izmerene i stvarne vrednosti",
+        "Greška u pisanju jedinice",
+        "Uvek nula",
+        "Greška u računanju površine"
+      ],
+      "zanimljivost": "Nijedno merenje nije savršeno tačno. Zato se meri više puta, pa se uzima srednja vrednost."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Ko je prvi opisao pojavu inercije?",
+      "odgovori": [
+        "Galileo Galilej",
+        "Arhimed",
+        "Aristotel",
+        "Ajnštajn"
+      ],
+      "zanimljivost": "Galilej je pokazao da kuglica na glatkoj podlozi prelazi sve duži put kada je trenje manje. Njutn je to kasnije formulisao kao Prvi Njutnov zakon."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta tvrdi zakon inercije?",
+      "odgovori": [
+        "Telo miruje ili se kreće ravnomerno pravolinijski dok ga druga tela ne nateraju da promeni stanje",
+        "Svako telo pada",
+        "Sila je jednaka masi",
+        "Brzina zavisi od boje"
+      ],
+      "zanimljivost": "Kad autobus naglo zakoči, putnici se zbog inercije „nastave“ kretati napred – zato je važno držati se i vezati pojas."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kada je lakše zaustaviti vagon koji se kreće?",
+      "odgovori": [
+        "Kada je prazan",
+        "Kada je natovaren",
+        "Uvek je isto teško",
+        "Nikada"
+      ],
+      "zanimljivost": "Tela veće mase su inertnija – teže im se menja brzina. Zato teški kamioni imaju duži put kočenja."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta se dešava sa masom litra vode kada se zamrzne?",
+      "odgovori": [
+        "Ostaje ista",
+        "Povećava se",
+        "Smanjuje se",
+        "Nestaje"
+      ],
+      "zanimljivost": "Masa ne zavisi od agregatnog stanja. Ali zapremina leda je veća, pa led ima manju gustinu i pluta."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliko puta je težina istog tela manja na Mesecu nego na Zemlji?",
+      "odgovori": [
+        "Oko 6 puta",
+        "2 puta",
+        "100 puta",
+        "Ista je"
+      ],
+      "zanimljivost": "Masa je svuda ista, a težina je sila kojom telo pritiska podlogu – na Mesecu je mnogo manja jer je Mesec slabije privlači."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kojim slovom se označava gustina?",
+      "odgovori": [
+        "Grčkim slovom ρ (ro)",
+        "Slovom G",
+        "Slovom m",
+        "Slovom V"
+      ],
+      "zanimljivost": "Gustina se računa kao masa podeljena zapreminom: ρ = m / V. Jedinica je kilogram po kubnom metru (kg/m³)."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Kocka zapremine 2 m³ ima masu 4000 kg. Kolika je njena gustina?",
+      "odgovori": [
+        "2000 kg/m³",
+        "8000 kg/m³",
+        "4002 kg/m³",
+        "500 kg/m³"
+      ],
+      "zanimljivost": "ρ = m / V = 4000 kg : 2 m³ = 2000 kg/m³. To je otprilike gustina betona."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Zašto komad drveta pluta, a ekser tone?",
+      "odgovori": [
+        "Drvo ima manju gustinu od vode, a gvožđe veću",
+        "Ekser je teži od celog drveta",
+        "Drvo je šuplje",
+        "Voda privlači drvo"
+      ],
+      "zanimljivost": "Gustina vode je 1000 kg/m³. Hrastovo drvo ima oko 700, a gvožđe oko 7800 kg/m³. Čelični brod pluta jer je pun vazduha, pa mu je prosečna gustina manja od vode."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zove pritisak koji tečnost u mirovanju vrši zbog svoje težine?",
+      "odgovori": [
+        "Hidrostatički pritisak",
+        "Atmosferski pritisak",
+        "Aerostatički pritisak",
+        "Magnetni pritisak"
+      ],
+      "zanimljivost": "Hidrostatički pritisak zavisi od gustine tečnosti i dubine. Zato roniocima „pritiska“ uši sve jače što dublje zarone."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Od čega NE zavisi hidrostatički pritisak na dno suda?",
+      "odgovori": [
+        "Od oblika suda",
+        "Od gustine tečnosti",
+        "Od visine stuba tečnosti",
+        "Od jačine Zemljinog gravitacionog polja"
+      ],
+      "zanimljivost": "Ovo je „hidrostatički paradoks“: u uskoj i u širokoj posudi, sa istom visinom vode, pritisak na dno je isti."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta tvrdi Paskalov zakon?",
+      "odgovori": [
+        "Spoljašnji pritisak se kroz tečnosti i gasove prenosi podjednako u svim pravcima",
+        "Tela padaju jednako brzo",
+        "Svaka akcija ima reakciju",
+        "Toplota prelazi sa toplijeg na hladnije telo"
+      ],
+      "zanimljivost": "Ogled: lopta sa rupicama puna vode – kada se pritisne klip, voda šiklja jednako iz svih rupica."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Na kojoj visini se zaustavi živa u Toričelijevom ogledu na nivou mora?",
+      "odgovori": [
+        "Oko 76 cm",
+        "Oko 10 m",
+        "Oko 1 cm",
+        "Oko 1 m"
+      ],
+      "zanimljivost": "Iznad žive u cevi ostaje prazan prostor – „Toričelijeva praznina“. Da je umesto žive voda, stub bi bio visok preko 10 m!"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kojim instrumentom se meri atmosferski pritisak?",
+      "odgovori": [
+        "Barometrom",
+        "Manometrom",
+        "Termometrom",
+        "Dinamometrom"
+      ],
+      "zanimljivost": "Postoje živini i metalni barometri (aneroidi). Manometri mere pritisak gasova i tečnosti u zatvorenim sudovima – npr. u gumama automobila."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Zašto voda ne iscuri iz prevrnute čaše pokrivene papirom?",
+      "odgovori": [
+        "Atmosferski pritisak pritiska papir odozdo",
+        "Papir je lepljiv",
+        "Voda se zaledi",
+        "Čaša je magnetna"
+      ],
+      "zanimljivost": "Ovaj ogled pokazuje da vazduh pritiska u svim pravcima, pa i odozdo nagore."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliko je debeo vazdušni omotač Zemlje (atmosfera)?",
+      "odgovori": [
+        "Nekoliko stotina kilometara, sve ređi ka vrhu",
+        "Oko 10 metara",
+        "Oko 1 km",
+        "Oko 100.000 km"
+      ],
+      "zanimljivost": "Atmosfera postepeno prelazi u bezvazdušni prostor. Polovina mase vazduha nalazi se ispod oko 5,5 km visine."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Kako se zove metalni barometar bez tečnosti?",
+      "odgovori": [
+        "Aneroid",
+        "Manometar",
+        "Higrometar",
+        "Areometar"
+      ],
+      "zanimljivost": "Aneroid ima zatvorenu metalnu kutijicu bez vazduha, čiji se poklopac ugiba kada se menja pritisak. Na tom principu rade i visinomeri u avionima."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Zašto ronioci ne smeju brzo da izranjaju iz velike dubine?",
+      "odgovori": [
+        "Pritisak se naglo menja i gasovi u krvi stvaraju mehuriće",
+        "Zato što se umore",
+        "Zbog hladnoće",
+        "Zbog ajkula"
+      ],
+      "zanimljivost": "To se zove „ronilačka bolest“. Ronioci izranjaju polako, sa pauzama, da bi se telo prilagodilo promeni pritiska."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zove sila koja deluje između naelektrisanih tela?",
+      "odgovori": [
+        "Električna sila",
+        "Gravitaciona sila",
+        "Sila trenja",
+        "Sila elastičnosti"
+      ],
+      "zanimljivost": "Istoimena naelektrisanja se odbijaju, a raznoimena privlače. Protrljan balon se zato „lepi“ za zid ili kosu."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta privlači magnet?",
+      "odgovori": [
+        "Predmete od gvožđa, nikla i kobalta",
+        "Sve metale",
+        "Plastiku",
+        "Drvo"
+      ],
+      "zanimljivost": "Magnetna sila deluje i kroz papir, staklo i vodu. Zato magnetom možeš pomerati spajalicu kroz sto."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Šta je pređeni put?",
+      "odgovori": [
+        "Dužina putanje koju telo pređe",
+        "Brzina tela",
+        "Vreme kretanja",
+        "Masa tela"
+      ],
+      "zanimljivost": "Pređeni put se meri u metrima (ili kilometrima). Na putu kroz grad pređeni put je duži od rastojanja „vazdušnom linijom“."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Dva automobila kreću iz istog mesta u suprotnim smerovima brzinama 60 km/h i 40 km/h. Koliko su udaljeni posle 2 sata?",
+      "odgovori": [
+        "200 km",
+        "40 km",
+        "100 km",
+        "20 km"
+      ],
+      "zanimljivost": "Prvi pređe 120 km, a drugi 80 km, u suprotnim smerovima – ukupno 200 km."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je inertnost?",
+      "odgovori": [
+        "Svojstvo tela da se „opire“ promeni brzine",
+        "Brzina tela",
+        "Boja tela",
+        "Temperatura tela"
+      ],
+      "zanimljivost": "Mera inertnosti je masa. Zato je teško i pokrenuti i zaustaviti tešku kolica."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kada pritisak čvrstog tela na podlogu postaje veći?",
+      "odgovori": [
+        "Kada se ista sila rasporedi na manju površinu",
+        "Kada je površina veća",
+        "Kada je telo hladnije",
+        "Nikada se ne menja"
+      ],
+      "zanimljivost": "Zato se po snegu lakše hoda u krpljama ili skijama, a oštar nož lako seče."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "U kojoj jedinici se meri pritisak?",
+      "odgovori": [
+        "Paskal (Pa)",
+        "Njutn",
+        "Džul",
+        "Vat"
+      ],
+      "zanimljivost": "Jedan paskal je mali pritisak – kao list papira koji leži na stolu. Atmosferski pritisak je oko 100.000 Pa."
+    }
+  ]
+}

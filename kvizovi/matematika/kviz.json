@@ -1,0 +1,1605 @@
+{
+  "naziv": "Matematika",
+  "ikona": "📐",
+  "boja": "#0984e3",
+  "opis": "Brojevi, geometrija, 3D tela i mozgalice",
+  "redosled": 10,
+  "pitanja": [
+    {
+      "tezina": 1,
+      "pitanje": "Kako se zove ovo geometrijsko telo? (Okreni ga prstom!)",
+      "mediji": {
+        "vrsta": "telo",
+        "oblik": "kocka"
+      },
+      "odgovori": [
+        "Kocka",
+        "Kvadar",
+        "Piramida",
+        "Prizma"
+      ],
+      "zanimljivost": "Kocka ima 6 strana, 12 ivica i 8 temena. Zbir brojeva na suprotnim stranama obične kockice za igru uvek je 7 (1–6, 2–5, 3–4)."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliko ivica ima ovo telo?",
+      "mediji": {
+        "vrsta": "telo",
+        "oblik": "kocka",
+        "boja": "#00b894"
+      },
+      "odgovori": [
+        "12",
+        "8",
+        "6",
+        "24"
+      ],
+      "zanimljivost": "Ojlerova formula važi za svako ovakvo telo: temena − ivice + strane = 2. Za kocku: 8 − 12 + 6 = 2. Proveri je na sledećem telu koje vidiš!"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliko strana ima ovo telo?",
+      "mediji": {
+        "vrsta": "telo",
+        "oblik": "oktaedar",
+        "boja": "#e17055"
+      },
+      "odgovori": [
+        "8",
+        "6",
+        "10",
+        "12"
+      ],
+      "zanimljivost": "Ovo je oktaedar (okta = osam). Sastoji se od dve četvorostrane piramide spojene osnovama. Kristali dijamanta i fluorita često rastu baš u obliku oktaedra."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koliko strana ima ovo pravilno telo? Okreći ga i broji pažljivo!",
+      "mediji": {
+        "vrsta": "telo",
+        "oblik": "ikosaedar",
+        "boja": "#a29bfe",
+        "temena": false
+      },
+      "odgovori": [
+        "20",
+        "12",
+        "16",
+        "24"
+      ],
+      "zanimljivost": "Ovo je ikosaedar – 20 jednakostraničnih trouglova. Postoji samo 5 pravilnih (Platonovih) tela: tetraedar, kocka, oktaedar, dodekaedar i ikosaedar. Mnogi virusi imaju oblik ikosaedra!"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Od kojih mnogouglova se sastoje strane ovog tela?",
+      "mediji": {
+        "vrsta": "telo",
+        "oblik": "dodekaedar",
+        "boja": "#fdcb6e"
+      },
+      "odgovori": [
+        "Petouglova",
+        "Šestouglova",
+        "Kvadrata",
+        "Trouglova"
+      ],
+      "zanimljivost": "Dodekaedar ima 12 pravilnih petouglova, 30 ivica i 20 temena. Stari Grci su ga povezivali sa celim svemirom, a danas se koristi kao kockica sa 12 strana u društvenim igrama."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kako se zove ovo telo?",
+      "mediji": {
+        "vrsta": "telo",
+        "oblik": "piramida4",
+        "boja": "#fab1a0"
+      },
+      "odgovori": [
+        "Četvorostrana piramida",
+        "Tetraedar",
+        "Kupa",
+        "Trostrana prizma"
+      ],
+      "zanimljivost": "Keopsova piramida u Egiptu je pravilna četvorostrana piramida visoka oko 139 m (prvobitno 146 m). Skoro 3.800 godina bila je najviša građevina na svetu!"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliko temena ima ova prizma?",
+      "mediji": {
+        "vrsta": "telo",
+        "oblik": "prizma6",
+        "boja": "#74b9ff"
+      },
+      "odgovori": [
+        "12",
+        "6",
+        "18",
+        "8"
+      ],
+      "zanimljivost": "Šestostrana prizma ima 2 osnove po 6 temena = 12 temena, 18 ivica i 8 strana. Pčele prave saće u obliku šestouglova jer se tako troši najmanje voska za najviše prostora."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliko ivica ima ova piramida?",
+      "mediji": {
+        "vrsta": "telo",
+        "oblik": "piramida4",
+        "boja": "#55efc4"
+      },
+      "odgovori": [
+        "8",
+        "5",
+        "6",
+        "10"
+      ],
+      "zanimljivost": "Četvorostrana piramida: 4 ivice osnove + 4 bočne ivice = 8. Ima 5 temena i 5 strana. Ojler: 5 − 8 + 5 = 2 ✔."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kako se zove ovo obrtno telo?",
+      "mediji": {
+        "vrsta": "telo",
+        "oblik": "valjak",
+        "boja": "#fd79a8"
+      },
+      "odgovori": [
+        "Valjak",
+        "Kupa",
+        "Lopta",
+        "Prizma"
+      ],
+      "zanimljivost": "Zapremina valjka je V = r²πh. Arhimed je toliko bio ponosan na otkriće da lopta upisana u valjak ima tačno 2/3 njegove zapremine da je tražio da mu to bude nacrtano na grobu."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koliko je sati na ovom satu?",
+      "mediji": {
+        "vrsta": "sat",
+        "vreme": "3:00"
+      },
+      "odgovori": [
+        "3:00",
+        "12:15",
+        "9:00",
+        "6:00"
+      ],
+      "zanimljivost": "U 3:00 kazaljke zaklapaju tačno prav ugao (90°). Kroz ceo dan to se dešava 44 puta, ne 48 kako bi mnogi pomislili!"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koliki je manji ugao između kazaljki u ovom trenutku?",
+      "mediji": {
+        "vrsta": "sat",
+        "vreme": "3:30"
+      },
+      "odgovori": [
+        "75°",
+        "90°",
+        "60°",
+        "105°"
+      ],
+      "zanimljivost": "Mala kazaljka se ne zaustavlja na 3, nego se za pola sata pomeri za još 15° (za 1 minut prelazi 0,5°). Velika je na 6 (180°), mala na 105° – razlika je 75°."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliki ugao zaklapaju kazaljke u 4:00?",
+      "mediji": {
+        "vrsta": "sat",
+        "vreme": "4:00"
+      },
+      "odgovori": [
+        "120°",
+        "100°",
+        "90°",
+        "140°"
+      ],
+      "zanimljivost": "Između svaka dva susedna broja na satu ima 30° (360° : 12). Od 12 do 4 su četiri razmaka: 4 · 30° = 120°."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koliki je zbir uglova u trouglu?",
+      "odgovori": [
+        "180°",
+        "360°",
+        "90°",
+        "270°"
+      ],
+      "zanimljivost": "Ovo važi na ravnom papiru. Na lopti nije tako! Ako sa Severnog pola odeš do ekvatora, skreneš 90° i opet 90° nazad ka polu – nacrtaš trougao sa zbirom uglova 270°."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koliko je 7 · 8?",
+      "odgovori": [
+        "56",
+        "54",
+        "64",
+        "48"
+      ],
+      "zanimljivost": "Trik za pamćenje: 5, 6, 7, 8 → 56 = 7 · 8. Ovo je jedan od proizvoda u tablici množenja koji ljudi najčešće pogrešno pamte."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koji je od ovih brojeva prost?",
+      "odgovori": [
+        "13",
+        "15",
+        "21",
+        "27"
+      ],
+      "zanimljivost": "Prost broj je deljiv samo sa 1 i samim sobom. Najveći poznati prosti brojevi imaju desetine miliona cifara – pronalaze ih računari širom sveta koji rade zajedno."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliko iznosi broj π zaokružen na dve decimale?",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "π ≈ ?"
+      },
+      "odgovori": [
+        "3,14",
+        "3,41",
+        "2,71",
+        "1,61"
+      ],
+      "zanimljivost": "π je odnos obima i prečnika svakog kruga i ima beskonačno mnogo decimala bez ponavljanja. Dan broja π slavi se 14. marta (3/14). Broj 2,71 je Ojlerov broj e, a 1,61 je zlatni presek."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliko je 2¹⁰?",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "2¹⁰ = ?"
+      },
+      "odgovori": [
+        "1024",
+        "1000",
+        "512",
+        "2048"
+      ],
+      "zanimljivost": "Zato 1 kilobajt u računarima tradicionalno ima 1024 bajta. Ako papir presaviješ na pola 42 puta, debljina bi stigla do Meseca – toliko brzo rastu stepeni broja 2!"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji je sledeći broj u nizu?",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "1, 1, 2, 3, 5, 8, 13, ?"
+      },
+      "odgovori": [
+        "21",
+        "18",
+        "20",
+        "26"
+      ],
+      "zanimljivost": "Ovo je Fibonačijev niz – svaki broj je zbir prethodna dva. Pojavljuje se u prirodi: u broju latica cveća, u spiralama semenki suncokreta i šišarki."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koji je sledeći broj u nizu?",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "2, 6, 12, 20, 30, ?"
+      },
+      "odgovori": [
+        "42",
+        "40",
+        "36",
+        "44"
+      ],
+      "zanimljivost": "Razlike rastu: +4, +6, +8, +10, +12. A može i ovako: 1·2, 2·3, 3·4, 4·5, 5·6, pa sledeći je 6·7 = 42."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koliko je 25% od 80?",
+      "odgovori": [
+        "20",
+        "25",
+        "16",
+        "40"
+      ],
+      "zanimljivost": "25% je isto što i četvrtina. Lep trik: x% od y je isto što i y% od x. Zato je 8% od 50 isto što i 50% od 8 = 4!"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kvadrat ima obim 36 cm. Kolika mu je površina?",
+      "odgovori": [
+        "81 cm²",
+        "36 cm²",
+        "144 cm²",
+        "72 cm²"
+      ],
+      "zanimljivost": "Stranica je 36 : 4 = 9 cm, pa je površina 9 · 9 = 81 cm². Od svih pravougaonika sa istim obimom, kvadrat ima najveću površinu."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliko je √144?",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "√144"
+      },
+      "odgovori": [
+        "12",
+        "14",
+        "72",
+        "11"
+      ],
+      "zanimljivost": "Znak √ potiče od izduženog slova r, od latinske reči „radix“ – koren. 144 se zove i „gros“ – to je tuce tuceta (12 · 12)."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Šta je veće: 2³ ili 3²?",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "2³  ?  3²"
+      },
+      "odgovori": [
+        "3² (9 > 8)",
+        "2³ (8 > 9)",
+        "Jednaki su",
+        "Ne može da se uporedi"
+      ],
+      "zanimljivost": "2³ = 8, a 3² = 9. Jedini različiti prirodni brojevi za koje je aᵇ = bᵃ su 2 i 4: 2⁴ = 4² = 16."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koliko stepeni ima prav ugao?",
+      "odgovori": [
+        "90°",
+        "180°",
+        "45°",
+        "60°"
+      ],
+      "zanimljivost": "Podela kruga na 360 stepeni potiče od starih Vavilonaca, koji su računali u šezdesetičnom sistemu – odatle nam i 60 minuta u satu i 60 sekundi u minutu."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliko dijagonala ima šestougao?",
+      "odgovori": [
+        "9",
+        "6",
+        "12",
+        "3"
+      ],
+      "zanimljivost": "Formula za broj dijagonala mnogougla sa n temena je n·(n−3)/2. Za šestougao: 6·3/2 = 9. Trougao nema nijednu dijagonalu!"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Pravougli trougao ima katete 6 cm i 8 cm. Kolika je hipotenuza?",
+      "odgovori": [
+        "10 cm",
+        "14 cm",
+        "12 cm",
+        "9 cm"
+      ],
+      "zanimljivost": "Pitagorina teorema: 6² + 8² = 36 + 64 = 100 = 10². Stari Egipćani su pravili prave uglove pomoću užeta sa 12 čvorova, savijenog u trougao 3–4–5."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliko je XIV napisano rimskim brojevima?",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "XIV"
+      },
+      "odgovori": [
+        "14",
+        "16",
+        "9",
+        "114"
+      ],
+      "zanimljivost": "X = 10, a IV = 4 (jedan manje od pet). Rimljani nisu imali nulu! Na mnogim satovima sa rimskim brojevima umesto IV piše IIII."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koja je godina napisana rimskim brojevima?",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "MCMLXXXIX"
+      },
+      "odgovori": [
+        "1989",
+        "1889",
+        "2011",
+        "1991"
+      ],
+      "zanimljivost": "M = 1000, CM = 900, LXXX = 80, IX = 9 → 1989. Rimskim brojevima se i danas obeležavaju vekovi, vladari (Petar I) i godine na zgradama."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koliko minuta ima u 2,5 sata?",
+      "odgovori": [
+        "150",
+        "250",
+        "125",
+        "130"
+      ],
+      "zanimljivost": "2,5 sata = 2 sata i 30 minuta = 120 + 30 = 150 minuta. Jedan dan ima 1440 minuta, a jedna godina preko pola miliona."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Ako je 3x + 5 = 20, koliko je x?",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "3x + 5 = 20"
+      },
+      "odgovori": [
+        "5",
+        "15",
+        "8",
+        "25/3"
+      ],
+      "zanimljivost": "Reč „algebra“ dolazi iz naslova knjige persijskog matematičara Al-Horezmija iz 9. veka. Od njegovog imena potiče i reč „algoritam“."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliko nula ima jedan milion?",
+      "odgovori": [
+        "6",
+        "9",
+        "5",
+        "12"
+      ],
+      "zanimljivost": "Milion = 10⁶, milijarda = 10⁹. „Gugol“ je 1 sa 100 nula – po njemu je (sa izmenjenim pisanjem) nazvan Google."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koliko ima dvocifrenih prirodnih brojeva?",
+      "odgovori": [
+        "90",
+        "99",
+        "100",
+        "89"
+      ],
+      "zanimljivost": "Od 10 do 99: 99 − 10 + 1 = 90. Česta greška je da se zaboravi „+1“ – ta greška se zove „greška ograde“: za ogradu od 10 m sa stubom na svakih metar treba 11 stubova!"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "U sobi je 23 osobe. Kolika je otprilike verovatnoća da bar dve imaju rođendan istog dana?",
+      "odgovori": [
+        "Oko 50%",
+        "Oko 6%",
+        "Oko 23%",
+        "Manje od 1%"
+      ],
+      "zanimljivost": "Ovo je čuveni „paradoks rođendana“. Već sa 23 osobe šansa je preko 50%, a sa 70 osoba preko 99,9%! Zvuči nemoguće, ali broj mogućih parova raste jako brzo."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji broj nije ni pozitivan ni negativan?",
+      "odgovori": [
+        "0",
+        "1",
+        "−1",
+        "Svaki paran broj"
+      ],
+      "zanimljivost": "Nulu kao broj razvili su indijski matematičari; Brahmagupta je u 7. veku dao pravila računanja sa njom. Nulom se ne sme deliti – takav račun nema smisla."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Puž se penje uz bunar dubok 10 m. Danju se popne 3 m, a noću sklizne 2 m. Kog dana izlazi iz bunara?",
+      "odgovori": [
+        "8. dana",
+        "10. dana",
+        "7. dana",
+        "9. dana"
+      ],
+      "zanimljivost": "Posle 7 dana i noći puž je na 7 m. Osmog dana se popne 3 m i stigne do 10 m – izašao je, pa više ne sklizne! Mnogi pogrešno računaju samo 10 : 1 = 10."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Loptica i palica zajedno koštaju 110 dinara. Palica je 100 dinara skuplja od loptice. Koliko košta loptica?",
+      "odgovori": [
+        "5 dinara",
+        "10 dinara",
+        "1 dinar",
+        "55 dinara"
+      ],
+      "zanimljivost": "Ako je loptica 5, palica je 105, a zajedno 110 ✔. Odgovor „10“ prvi padne na pamet, ali tada bi palica bila 110 i ukupno 120. Ovu mozgalicu pogreši i većina studenata!"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zove trougao kome su sve tri stranice jednake?",
+      "odgovori": [
+        "Jednakostraničan",
+        "Jednakokraki",
+        "Pravougli",
+        "Raznostraničan"
+      ],
+      "zanimljivost": "Svaki ugao jednakostraničnog trougla ima 60°. Od šest takvih trouglova može se sklopiti pravilan šestougao."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koliko je 1000 − 1?",
+      "odgovori": [
+        "999",
+        "990",
+        "900",
+        "9999"
+      ],
+      "zanimljivost": "Broj 999 je zanimljiv: 1/999 = 0,001001001… Inače, 0,999… sa beskonačno devetki je potpuno jednako broju 1!"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koliko je 111.111.111 · 111.111.111?",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "111111111²"
+      },
+      "odgovori": [
+        "12345678987654321",
+        "11111111111111111",
+        "123456789",
+        "98765432123456789"
+      ],
+      "zanimljivost": "Ovo je predivan „palindrom“: 11² = 121, 111² = 12321, 1111² = 1234321… i tako sve do devet jedinica. Čita se isto sleva i zdesna!"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliko ima sekundi u jednom satu?",
+      "odgovori": [
+        "3600",
+        "360",
+        "6000",
+        "1440"
+      ],
+      "zanimljivost": "60 · 60 = 3600. Broj 1440 je broj minuta u danu. A jedna godina ima preko 31,5 miliona sekundi."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koja je polovina od 3/4?",
+      "odgovori": [
+        "3/8",
+        "3/2",
+        "1/4",
+        "6/4"
+      ],
+      "zanimljivost": "Polovina razlomka se dobija kada se imenilac pomnoži sa 2: 3/4 : 2 = 3/8. Razlomačku crtu su u Evropu doneli arapski matematičari."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Obim kruga poluprečnika 5 cm približno iznosi:",
+      "odgovori": [
+        "31,4 cm",
+        "78,5 cm",
+        "15,7 cm",
+        "25 cm"
+      ],
+      "zanimljivost": "O = 2rπ = 2 · 5 · 3,14 = 31,4 cm. Broj 78,5 je površina tog kruga (r²π). Arhimed je π izračunao upisujući u krug mnogougao sa 96 stranica!"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koliko je 12 · 12?",
+      "odgovori": [
+        "144",
+        "124",
+        "132",
+        "154"
+      ],
+      "zanimljivost": "Proizvod broja sa samim sobom zove se kvadrat broja. 144 je i jedini kvadrat (osim 0, 1) u Fibonačijevom nizu!"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koliko je 1/2 + 1/4?",
+      "odgovori": [
+        "3/4",
+        "2/6",
+        "1/6",
+        "2/4"
+      ],
+      "zanimljivost": "Razlomke sabiramo kada ih svedemo na isti imenilac: 1/2 = 2/4, pa 2/4 + 1/4 = 3/4. Egipćani su skoro sve razlomke zapisivali kao zbir razlomaka sa brojiocem 1!"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koliko stranica ima šestougao?",
+      "odgovori": [
+        "6",
+        "5",
+        "8",
+        "7"
+      ],
+      "zanimljivost": "Pčelinje saće je od šestouglova. Od svih pravilnih mnogouglova, samo trouglovi, kvadrati i šestouglovi mogu bez praznina da pokriju ravan."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koliko je 100 : 4?",
+      "odgovori": [
+        "25",
+        "20",
+        "40",
+        "24"
+      ],
+      "zanimljivost": "Deljenje sa 4 je isto što i dva puta deljenje sa 2: 100 : 2 = 50, 50 : 2 = 25."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koji broj je najmanji prost broj?",
+      "odgovori": [
+        "2",
+        "1",
+        "0",
+        "3"
+      ],
+      "zanimljivost": "Broj 2 je jedini paran prost broj. Broj 1 se po dogovoru ne smatra prostim, jer ima samo jednog delioca."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koliko centimetara ima jedan metar?",
+      "odgovori": [
+        "100",
+        "10",
+        "1000",
+        "60"
+      ],
+      "zanimljivost": "„Centi“ znači stoti deo (od latinskog centum – sto), a „mili“ hiljaditi. Zato 1 m = 100 cm = 1000 mm."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koliko je 9 · 6?",
+      "odgovori": [
+        "54",
+        "56",
+        "45",
+        "63"
+      ],
+      "zanimljivost": "Trik sa prstima za množenje devetkom: ispruži 10 prstiju i savij šesti – levo ostane 5, desno 4 prsta: 54!"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koliko ima minuta u jednom danu?",
+      "odgovori": [
+        "1440",
+        "1000",
+        "2400",
+        "720"
+      ],
+      "zanimljivost": "24 · 60 = 1440. A sekundi u danu ima 86.400."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koji je od ovih brojeva deljiv sa 3?",
+      "odgovori": [
+        "123",
+        "124",
+        "125",
+        "128"
+      ],
+      "zanimljivost": "Broj je deljiv sa 3 ako mu je zbir cifara deljiv sa 3: 1 + 2 + 3 = 6. Isto pravilo važi i za deljivost sa 9."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kako se zove trougao koji ima jedan prav ugao?",
+      "odgovori": [
+        "Pravougli",
+        "Oštrougli",
+        "Tupougli",
+        "Jednakostranični"
+      ],
+      "zanimljivost": "Najduža stranica pravouglog trougla, naspram pravog ugla, zove se hipotenuza, a druge dve katete."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koliko je 15% od 200?",
+      "odgovori": [
+        "30",
+        "15",
+        "20",
+        "45"
+      ],
+      "zanimljivost": "10% od 200 je 20, a 5% je pola od toga – 10. Zajedno: 30."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koliko iznosi zbir uglova u četvorouglu?",
+      "odgovori": [
+        "360°",
+        "180°",
+        "540°",
+        "270°"
+      ],
+      "zanimljivost": "Svaki četvorougao može da se dijagonalom podeli na dva trougla: 2 · 180° = 360°."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koliko je 2³?",
+      "odgovori": [
+        "8",
+        "6",
+        "9",
+        "5"
+      ],
+      "zanimljivost": "2³ = 2 · 2 · 2. Kocka sa ivicom od 2 cm ima zapreminu 8 cm³ – odatle i naziv „kub“ za treći stepen."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Šta je veće: 0,5 ili 0,45?",
+      "odgovori": [
+        "0,5",
+        "0,45",
+        "Jednaki su",
+        "Ne može da se uporedi"
+      ],
+      "zanimljivost": "0,5 = 0,50, a 50 stotih je više od 45 stotih. Česta greška je misliti da je „duži“ decimalni broj veći."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koliko je −3 + 7?",
+      "odgovori": [
+        "4",
+        "−4",
+        "10",
+        "−10"
+      ],
+      "zanimljivost": "Na brojevnoj pravoj kreni od −3 i pomeri se 7 mesta udesno – stižeš do 4."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koliko je 1 kg u gramima?",
+      "odgovori": [
+        "1000",
+        "100",
+        "10",
+        "10.000"
+      ],
+      "zanimljivost": "„Kilo“ znači hiljadu. Kilogram je do 2019. bio definisan stvarnim metalnim valjkom koji se čuvao u Parizu!"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koliko osa simetrije ima kvadrat?",
+      "odgovori": [
+        "4",
+        "2",
+        "1",
+        "8"
+      ],
+      "zanimljivost": "Dve ose idu kroz sredine naspramnih stranica, a dve kroz dijagonale. Krug ima beskonačno mnogo osa simetrije."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koliko je polovina od 3/5?",
+      "odgovori": [
+        "3/10",
+        "3/2",
+        "6/5",
+        "1/5"
+      ],
+      "zanimljivost": "Kad delimo razlomak sa 2, množimo imenilac sa 2: 3/5 : 2 = 3/10."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliko je 3/4 od 60?",
+      "odgovori": [
+        "45",
+        "15",
+        "40",
+        "30"
+      ],
+      "zanimljivost": "Prvo se nađe četvrtina (60 : 4 = 15), pa se uzmu tri: 3 · 15 = 45."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliko je (−2) · (−5)?",
+      "odgovori": [
+        "10",
+        "−10",
+        "7",
+        "−7"
+      ],
+      "zanimljivost": "„Minus puta minus daje plus.“ To pravilo mora da važi da bi računske operacije ostale usklađene – inače bi se pravila sabiranja i množenja „posvađala“."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kolika je površina pravougaonika sa stranicama 7 cm i 9 cm?",
+      "odgovori": [
+        "63 cm²",
+        "32 cm²",
+        "16 cm²",
+        "56 cm²"
+      ],
+      "zanimljivost": "Površina pravougaonika je proizvod dužina stranica. 32 cm bi bio njegov obim: 2 · (7 + 9)."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliki je obim jednakostraničnog trougla sa stranicom 12 cm?",
+      "odgovori": [
+        "36 cm",
+        "24 cm",
+        "144 cm",
+        "48 cm"
+      ],
+      "zanimljivost": "Sve tri stranice su jednake: 3 · 12 = 36 cm. Svaki ugao takvog trougla ima tačno 60°."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliki je najveći zajednički delilac brojeva 24 i 36?",
+      "odgovori": [
+        "12",
+        "6",
+        "4",
+        "72"
+      ],
+      "zanimljivost": "72 je njihov najmanji zajednički sadržalac. Proizvod NZD i NZS dva broja jednak je proizvodu tih brojeva: 12 · 72 = 24 · 36 = 864."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliki je najmanji zajednički sadržalac brojeva 4 i 6?",
+      "odgovori": [
+        "12",
+        "24",
+        "2",
+        "10"
+      ],
+      "zanimljivost": "Najmanji broj koji je deljiv i sa 4 i sa 6 je 12. Potreban je kada sabiramo razlomke sa imeniocima 4 i 6."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliko iznosi spoljašnji ugao pravilnog šestougla?",
+      "odgovori": [
+        "60°",
+        "120°",
+        "30°",
+        "90°"
+      ],
+      "zanimljivost": "Zbir spoljašnjih uglova svakog konveksnog mnogougla je 360°, pa kod šestougla svaki ima 360° : 6 = 60°. Unutrašnji ugao je 120°."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kolika je zapremina kocke sa ivicom 3 cm?",
+      "odgovori": [
+        "27 cm³",
+        "9 cm³",
+        "18 cm³",
+        "54 cm³"
+      ],
+      "zanimljivost": "V = a³ = 3 · 3 · 3. Broj 54 je njena površina (6 · 9 cm²)."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliko litara ima jedan kubni metar?",
+      "odgovori": [
+        "1000",
+        "100",
+        "10",
+        "10.000"
+      ],
+      "zanimljivost": "Jedan litar je kocka sa ivicom 10 cm. U kubni metar staje 10 · 10 · 10 takvih kockica."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliko je 0,2 · 0,3?",
+      "odgovori": [
+        "0,06",
+        "0,6",
+        "0,5",
+        "6"
+      ],
+      "zanimljivost": "2 · 3 = 6, a pošto ukupno imamo dve decimale, rezultat je 0,06. Množenje decimalnih brojeva manjih od 1 daje još manji broj!"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji je broj rešenje jednačine x : 4 = 9?",
+      "odgovori": [
+        "36",
+        "13",
+        "5",
+        "2,25"
+      ],
+      "zanimljivost": "Nepoznati deljenik dobijamo kada pomnožimo količnik i delilac: 9 · 4 = 36."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliki je ugao naspram osnovice jednakokrakog trougla ako su uglovi na osnovici po 70°?",
+      "odgovori": [
+        "40°",
+        "70°",
+        "110°",
+        "20°"
+      ],
+      "zanimljivost": "180° − 70° − 70° = 40°. U jednakokrakom trouglu uglovi na osnovici su uvek jednaki."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliko je 25% od 25% od 100?",
+      "odgovori": [
+        "6,25",
+        "25",
+        "12,5",
+        "50"
+      ],
+      "zanimljivost": "25% od 100 je 25, a 25% od 25 je 6,25. Procenti „od procenata“ brzo postaju mali!"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliko je 7² − 5²?",
+      "odgovori": [
+        "24",
+        "4",
+        "2",
+        "12"
+      ],
+      "zanimljivost": "49 − 25 = 24. Zanimljivo: to je isto što i (7 − 5) · (7 + 5) = 2 · 12 – razlika kvadrata!"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je veće: 3/7 ili 4/9?",
+      "odgovori": [
+        "4/9",
+        "3/7",
+        "Jednaki su",
+        "Ne može se uporediti"
+      ],
+      "zanimljivost": "Svedemo na isti imenilac: 3/7 = 27/63, a 4/9 = 28/63. Razlika je samo 1/63!"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Proizvod je 8 jabuka po 45 dinara. Koliko se plaća ukupno?",
+      "odgovori": [
+        "360 dinara",
+        "320 dinara",
+        "400 dinara",
+        "345 dinara"
+      ],
+      "zanimljivost": "8 · 45 = 8 · 40 + 8 · 5 = 320 + 40 = 360. Rastavljanje na desetice i jedinice olakšava računanje napamet."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliko dana ima u 7 nedelja?",
+      "odgovori": [
+        "49",
+        "42",
+        "56",
+        "35"
+      ],
+      "zanimljivost": "Sedmodnevna nedelja potiče još iz starog Vavilona, gde je svaki dan bio posvećen jednom od sedam nebeskih tela vidljivih golim okom: Suncu, Mesecu i pet planeta."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Brzina od 72 km/h je koliko metara u sekundi?",
+      "odgovori": [
+        "20 m/s",
+        "72 m/s",
+        "7,2 m/s",
+        "36 m/s"
+      ],
+      "zanimljivost": "Da bi se km/h pretvorilo u m/s, deli se sa 3,6: 72 : 3,6 = 20. Brzina zvuka u vazduhu je oko 340 m/s."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliko temena ima trostrana prizma?",
+      "odgovori": [
+        "6",
+        "5",
+        "9",
+        "3"
+      ],
+      "zanimljivost": "Dve trougaone osnove imaju po 3 temena. Trostrana prizma ima i 9 ivica i 5 strana – Ojler: 6 − 9 + 5 = 2."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliko strana ima ovo telo?",
+      "odgovori": [
+        "5",
+        "6",
+        "3",
+        "9"
+      ],
+      "zanimljivost": "Dve trougaone osnove i tri pravougaone bočne strane. Kristalne prizme razlažu svetlost u dugu baš zato što svetlost lomi na dve kose strane.",
+      "mediji": {
+        "vrsta": "telo",
+        "oblik": "prizma3",
+        "boja": "#e17055"
+      }
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliko temena ima ovo telo?",
+      "odgovori": [
+        "4",
+        "3",
+        "6",
+        "8"
+      ],
+      "zanimljivost": "Tetraedar je najjednostavnije pravilno telo – 4 temena, 6 ivica i 4 strane, sve jednakostranični trouglovi. Neke kese za mleko nekada su bile u obliku tetraedra!",
+      "mediji": {
+        "vrsta": "telo",
+        "oblik": "tetraedar",
+        "boja": "#00b894"
+      }
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koliko strana ima ovo telo (petostrana bipiramida)?",
+      "odgovori": [
+        "10",
+        "5",
+        "7",
+        "12"
+      ],
+      "zanimljivost": "Gornja i donja piramida imaju po pet trouglastih strana. Ima 7 temena i 15 ivica: 7 − 15 + 10 = 2, Ojler opet važi!",
+      "mediji": {
+        "vrsta": "telo",
+        "oblik": "bipiramida5",
+        "boja": "#74b9ff"
+      }
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kako se zove ovo obrtno telo?",
+      "odgovori": [
+        "Kupa",
+        "Valjak",
+        "Piramida",
+        "Lopta"
+      ],
+      "zanimljivost": "Kupa nastaje obrtanjem pravouglog trougla oko jedne katete. Zapremina kupe je trećina zapremine valjka iste osnove i visine.",
+      "mediji": {
+        "vrsta": "telo",
+        "oblik": "kupa",
+        "boja": "#fd79a8"
+      }
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koliki ugao zaklapaju kazaljke u ovom trenutku?",
+      "odgovori": [
+        "90°",
+        "180°",
+        "270°",
+        "45°"
+      ],
+      "zanimljivost": "Manji ugao između kazaljki u 9:00 je prav. Merimo uvek manji od dva ugla, pa nije 270°.",
+      "mediji": {
+        "vrsta": "sat",
+        "vreme": "9:00"
+      }
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koliki ugao zaklapaju kazaljke?",
+      "odgovori": [
+        "180°",
+        "90°",
+        "360°",
+        "0°"
+      ],
+      "zanimljivost": "U 6:00 kazaljke leže na istoj pravoj, suprotno usmerene – to je opružen ugao.",
+      "mediji": {
+        "vrsta": "sat",
+        "vreme": "6:00"
+      }
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koliki je manji ugao između kazaljki u 2:20?",
+      "odgovori": [
+        "50°",
+        "40°",
+        "60°",
+        "80°"
+      ],
+      "zanimljivost": "Velika kazaljka je na 4 (120°). Mala je prešla 2 sata i 20 minuta: 60° + 10° = 70°. Razlika je 120° − 70° = 50°.",
+      "mediji": {
+        "vrsta": "sat",
+        "vreme": "2:20"
+      }
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koliko puta tokom 12 sati se kazaljke na satu poklope?",
+      "odgovori": [
+        "11",
+        "12",
+        "24",
+        "10"
+      ],
+      "zanimljivost": "Kazaljke se poklapaju na otprilike svakih 65,45 minuta, a ne na svakih sat vremena. Zato između 11 i 1 nema poklapanja osim tačno u 12."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji je sledeći broj u nizu: 1, 4, 9, 16, 25, …?",
+      "odgovori": [
+        "36",
+        "30",
+        "35",
+        "49"
+      ],
+      "zanimljivost": "To su kvadrati prirodnih brojeva. Zanimljivo: razlike su uzastopni neparni brojevi (3, 5, 7, 9, 11) – zbir prvih n neparnih brojeva uvek je n²."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji je sledeći broj: 2, 3, 5, 7, 11, 13, …?",
+      "odgovori": [
+        "17",
+        "15",
+        "19",
+        "14"
+      ],
+      "zanimljivost": "To su prosti brojevi. Euklid je pre više od 2.000 godina dokazao da ih ima beskonačno mnogo."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koji je sledeći broj: 1, 3, 6, 10, 15, …?",
+      "odgovori": [
+        "21",
+        "20",
+        "25",
+        "18"
+      ],
+      "zanimljivost": "To su „trougaoni brojevi“ – toliko kuglica može da se složi u trougao (kao kugle u bilijaru: 15). Razlike rastu za 1."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koji je sledeći broj: 1, 2, 6, 24, 120, …?",
+      "odgovori": [
+        "720",
+        "240",
+        "600",
+        "144"
+      ],
+      "zanimljivost": "Svaki broj je prethodni pomnožen sledećim prirodnim brojem: to su faktorijeli. 6! = 720 – toliko ima načina da se 6 knjiga složi na policu!"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliko je 1 + 2 + 3 + … + 100?",
+      "odgovori": [
+        "5050",
+        "5000",
+        "10.100",
+        "1000"
+      ],
+      "zanimljivost": "Mali Gaus je to izračunao za nekoliko sekundi: spojio je 1 + 100, 2 + 99, … – 50 parova po 101 = 5050."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliko je 11 · 11?",
+      "odgovori": [
+        "121",
+        "111",
+        "122",
+        "1111"
+      ],
+      "zanimljivost": "Množenje dvocifrenog broja sa 11: zbir cifara se upiše u sredinu. 11 · 23 = 2(2+3)3 = 253."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koliko je 11 · 45?",
+      "odgovori": [
+        "495",
+        "455",
+        "405",
+        "445"
+      ],
+      "zanimljivost": "Trik sa 11: 4 _ 5, a u sredinu ide 4 + 5 = 9 → 495. Ako je zbir veći od 9, prenosi se jedinica."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliko je 25 · 4 · 7?",
+      "odgovori": [
+        "700",
+        "725",
+        "175",
+        "1000"
+      ],
+      "zanimljivost": "Pametan redosled: 25 · 4 = 100, pa 100 · 7 = 700. Množenje je komutativno, pa redosled ne menja rezultat."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji je rezultat: 6 + 4 · 3?",
+      "odgovori": [
+        "18",
+        "30",
+        "21",
+        "13"
+      ],
+      "zanimljivost": "Množenje ima prednost nad sabiranjem: 4 · 3 = 12, pa 6 + 12 = 18. Ova vrsta zadataka je česta zamka na internetu!"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koliko je 8 : 2 · (2 + 2)?",
+      "odgovori": [
+        "16",
+        "1",
+        "8",
+        "4"
+      ],
+      "zanimljivost": "Prvo zagrada (4), pa se deljenje i množenje rade redom sleva udesno: 8 : 2 = 4, 4 · 4 = 16. Ovaj zadatak je izazvao ogromne svađe na društvenim mrežama!"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Ako 5 radnika završi posao za 12 dana, za koliko dana bi ga završilo 10 radnika?",
+      "odgovori": [
+        "6",
+        "24",
+        "10",
+        "12"
+      ],
+      "zanimljivost": "Ovo je obrnuta proporcionalnost: duplo više radnika – duplo manje dana (uz pretpostavku da rade jednako brzo)."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Na karti razmere 1 : 100.000, 3 cm predstavlja koliko u prirodi?",
+      "odgovori": [
+        "3 km",
+        "30 km",
+        "300 m",
+        "3 m"
+      ],
+      "zanimljivost": "1 cm na karti je 100.000 cm = 1 km u prirodi. Planinarske karte često imaju razmeru 1 : 25.000."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliko je √81 + √16?",
+      "odgovori": [
+        "13",
+        "97",
+        "10",
+        "17"
+      ],
+      "zanimljivost": "9 + 4 = 13. Pazi: √(81 + 16) = √97 bi bio sasvim drugi broj – oko 9,85!"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koliko je √2 približno?",
+      "odgovori": [
+        "1,41",
+        "1,2",
+        "1,73",
+        "2,82"
+      ],
+      "zanimljivost": "To je dužina dijagonale kvadrata sa stranicom 1. Pitagorejci su otkrili da se √2 ne može zapisati kao razlomak – to ih je, kaže legenda, toliko uznemirilo da su otkriće krili."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliko ukupno trouglova ima na ovom crtežu (kvadrat sa obe dijagonale)?",
+      "odgovori": [
+        "8",
+        "4",
+        "6",
+        "5"
+      ],
+      "zanimljivost": "Četiri mala trougla u kvadratu podeljenom dijagonalama, plus četiri veća koja se dobiju spajanjem dva susedna malog. Brojanje oblika je prava vežba pažnje!",
+      "mediji": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 220 220' xmlns='http://www.w3.org/2000/svg'><g fill='none' stroke='#fff' stroke-width='4'><rect x='20' y='20' width='180' height='180'/><line x1='20' y1='20' x2='200' y2='200'/><line x1='200' y1='20' x2='20' y2='200'/></g></svg>"
+      }
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliko je 10% od 10% od 10.000?",
+      "odgovori": [
+        "100",
+        "1000",
+        "10",
+        "200"
+      ],
+      "zanimljivost": "10% od 10.000 je 1000, a 10% od 1000 je 100."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Cena je bila 1000 dinara, pa je poskupela 10%, a zatim pojeftinila 10%. Kolika je sada?",
+      "odgovori": [
+        "990 dinara",
+        "1000 dinara",
+        "1010 dinara",
+        "900 dinara"
+      ],
+      "zanimljivost": "Posle poskupljenja: 1100. Pojeftinjenje od 10% od 1100 je 110 → 990. Procenti se računaju od različitih osnovica!"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koliko je potrebno ljudi da bi sigurno bar dvoje bilo rođeno istog meseca?",
+      "odgovori": [
+        "13",
+        "12",
+        "24",
+        "2"
+      ],
+      "zanimljivost": "Ima 12 meseci. Ako je ljudi 13, bar dvoje mora da deli mesec – to je „Dirihleov princip“ ili princip golubarnika."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "U fioci su crne i bele čarape, izmešane. Koliko najmanje treba izvući u mraku da sigurno dobiješ par iste boje?",
+      "odgovori": [
+        "3",
+        "2",
+        "4",
+        "5"
+      ],
+      "zanimljivost": "Prve dve mogu biti različite, ali treća sigurno pravi par sa jednom od njih. Opet Dirihleov princip!"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Otac ima 40 godina, a sin 10. Za koliko godina će otac biti dvostruko stariji od sina?",
+      "odgovori": [
+        "20",
+        "10",
+        "30",
+        "15"
+      ],
+      "zanimljivost": "Razlika uvek ostaje 30 godina. Kad sin ima 30, otac ima 60 – dvostruko. To je za 20 godina."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Ako 3 mačke uhvate 3 miša za 3 minuta, koliko mačaka treba da uhvate 100 miševa za 100 minuta?",
+      "odgovori": [
+        "3",
+        "100",
+        "33",
+        "300"
+      ],
+      "zanimljivost": "Svaka mačka uhvati jednog miša za 3 minuta, pa za 100 minuta tri mačke uhvate oko 100 miševa. Mozgalice sa „radnicima i vremenom“ su zamka jer navode da se brojevi proporcionalno uvećaju."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zove duž koja spaja centar kruga sa tačkom na kružnici?",
+      "odgovori": [
+        "Poluprečnik",
+        "Prečnik",
+        "Tetiva",
+        "Tangenta"
+      ],
+      "zanimljivost": "Prečnik je dvostruko duži od poluprečnika i prolazi kroz centar. Tetiva spaja bilo koje dve tačke kružnice, a tangenta je dodiruje u jednoj tački."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zove ugao veći od 90°, a manji od 180°?",
+      "odgovori": [
+        "Tup",
+        "Oštar",
+        "Prav",
+        "Pun"
+      ],
+      "zanimljivost": "Oštar ugao je manji od 90°, prav je 90°, opružen 180°, a pun 360°."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliko iznosi zbir unutrašnjih uglova petougla?",
+      "odgovori": [
+        "540°",
+        "360°",
+        "720°",
+        "450°"
+      ],
+      "zanimljivost": "Formula je (n − 2) · 180°. Za petougao: 3 · 180° = 540°. Petougaone su, na primer, ploče na fudbalskoj lopti."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koliko iznosi svaki unutrašnji ugao pravilnog petougla?",
+      "odgovori": [
+        "108°",
+        "120°",
+        "90°",
+        "72°"
+      ],
+      "zanimljivost": "540° : 5 = 108°. Zgrada Pentagon u SAD je pravilni petougao – po njemu je i dobila ime."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koliko dijagonala ima desetougao?",
+      "odgovori": [
+        "35",
+        "45",
+        "20",
+        "70"
+      ],
+      "zanimljivost": "Formula n · (n − 3) / 2: 10 · 7 / 2 = 35."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji broj je i kvadrat i kub prirodnog broja (osim 1)?",
+      "odgovori": [
+        "64",
+        "16",
+        "27",
+        "100"
+      ],
+      "zanimljivost": "64 = 8² = 4³. Sledeći takav broj je 729 = 27² = 9³."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Šta je „savršen broj“, kao što je 6?",
+      "odgovori": [
+        "Broj jednak zbiru svojih delilaca manjih od njega",
+        "Prost broj",
+        "Broj deljiv sa 10",
+        "Kvadrat celog broja"
+      ],
+      "zanimljivost": "Delioci broja 6 su 1, 2 i 3, a 1 + 2 + 3 = 6. Sledeći savršeni brojevi su 28, 496 i 8128."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji rimski broj predstavlja 50?",
+      "odgovori": [
+        "L",
+        "C",
+        "D",
+        "V"
+      ],
+      "zanimljivost": "I=1, V=5, X=10, L=50, C=100, D=500, M=1000. C dolazi od „centum“ (sto), a M od „mille“ (hiljadu)."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliko je MMXXVI?",
+      "odgovori": [
+        "2026",
+        "2016",
+        "1526",
+        "2046"
+      ],
+      "zanimljivost": "MM = 2000, XX = 20, VI = 6. Rimski brojevi se i danas koriste za godine na filmovima i za vekove."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Kako se zove matematičar iz Srbije, poznat i kao „Alas“, koji je bio i ribar i muzičar?",
+      "odgovori": [
+        "Mihailo Petrović",
+        "Milutin Milanković",
+        "Mihajlo Pupin",
+        "Ruđer Bošković"
+      ],
+      "zanimljivost": "Mika Alas je bio profesor Beogradskog univerziteta, osnivač srpske matematičke škole i strastveni ribar na Dunavu. Izmislio je i hidraulični računar za rešavanje diferencijalnih jednačina!"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Šta znači da je broj iracionalan, kao π?",
+      "odgovori": [
+        "Ne može se zapisati kao razlomak dva cela broja",
+        "Negativan je",
+        "Veći je od 1000",
+        "Ima tačno 10 decimala"
+      ],
+      "zanimljivost": "Decimale iracionalnih brojeva se nikada ne ponavljaju u istom obrascu. Računari su izračunali π na desetine biliona decimala, i obrazac se nije pojavio."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koliko je 1000 : 10?",
+      "odgovori": [
+        "100",
+        "10",
+        "1000",
+        "110"
+      ],
+      "zanimljivost": "Kad delimo sa 10, „brišemo“ jednu nulu sa kraja. Kad množimo sa 10 – dodajemo je."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koliko je pola sata i četvrt sata zajedno u minutima?",
+      "odgovori": [
+        "45",
+        "30",
+        "60",
+        "75"
+      ],
+      "zanimljivost": "30 + 15 = 45 minuta – to je i „tri četvrt sata“."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kvadrat i pravougaonik imaju isti obim 20 cm. Pravougaonik ima stranice 8 i 2 cm. Čija je površina veća?",
+      "odgovori": [
+        "Kvadrata (25 cm² prema 16 cm²)",
+        "Pravougaonika",
+        "Iste su",
+        "Ne može se izračunati"
+      ],
+      "zanimljivost": "Kvadrat sa obimom 20 ima stranicu 5 i površinu 25. Od svih pravougaonika sa istim obimom, kvadrat ima najveću površinu."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je medijana niza 3, 7, 9, 12, 20?",
+      "odgovori": [
+        "9",
+        "10,2",
+        "12",
+        "7"
+      ],
+      "zanimljivost": "Medijana je srednji član uređenog niza. Aritmetička sredina ovog niza je 10,2. Medijana je otpornija na „ekstremne“ vrednosti."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliko iznosi aritmetička sredina brojeva 4, 8 i 12?",
+      "odgovori": [
+        "8",
+        "12",
+        "24",
+        "6"
+      ],
+      "zanimljivost": "(4 + 8 + 12) : 3 = 24 : 3 = 8. Prosečna ocena u školi je upravo aritmetička sredina ocena."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Kocka za igru se baca jednom. Kolika je verovatnoća da padne broj veći od 4?",
+      "odgovori": [
+        "1/3",
+        "1/2",
+        "1/6",
+        "2/3"
+      ],
+      "zanimljivost": "Povoljna su samo 5 i 6 – dva od šest ishoda, a 2/6 = 1/3."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Novčić je pao „pismo“ 5 puta zaredom. Kolika je verovatnoća da šesti put padne „glava“?",
+      "odgovori": [
+        "1/2",
+        "Veća od 1/2",
+        "Manja od 1/2",
+        "Sigurno će pasti glava"
+      ],
+      "zanimljivost": "Novčić „nema pamćenje“. Verovanje da je glava „na redu“ zove se kockarska zabluda – zbog nje su ljudi gubili bogatstva u kockarnicama."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koliko različitih dvocifrenih brojeva možeš da napraviš od cifara 1, 2 i 3, ako se cifre ne ponavljaju?",
+      "odgovori": [
+        "6",
+        "9",
+        "3",
+        "12"
+      ],
+      "zanimljivost": "12, 13, 21, 23, 31, 32. Za prvu cifru imaš 3 izbora, a za drugu 2: 3 · 2 = 6."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliko je 2⁰?",
+      "odgovori": [
+        "1",
+        "0",
+        "2",
+        "Nije definisano"
+      ],
+      "zanimljivost": "Svaki broj različit od nule na nultom stepenu je 1. To mora da važi da bi pravilo 2ⁿ : 2ⁿ = 2⁰ = 1 bilo tačno."
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koliko je 10⁻²?",
+      "odgovori": [
+        "0,01",
+        "−100",
+        "−20",
+        "0,1"
+      ],
+      "zanimljivost": "Negativan izložilac znači recipročnu vrednost: 10⁻² = 1/10² = 1/100."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kolika je dužina hipotenuze ako su katete 5 cm i 12 cm?",
+      "odgovori": [
+        "13 cm",
+        "17 cm",
+        "15 cm",
+        "11 cm"
+      ],
+      "zanimljivost": "25 + 144 = 169 = 13². Trojke celih brojeva kao 3-4-5 i 5-12-13 zovu se Pitagorine trojke."
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliko je 3 · (−4) + 20?",
+      "odgovori": [
+        "8",
+        "−32",
+        "32",
+        "−8"
+      ],
+      "zanimljivost": "3 · (−4) = −12, pa −12 + 20 = 8."
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koliko se dobije kad se 50 podeli na pola?",
+      "odgovori": [
+        "25",
+        "100",
+        "5",
+        "0,5"
+      ],
+      "zanimljivost": "Podeliti na pola znači podeliti sa 2. Ali pazi: „podeliti sa pola“ je nešto drugo – 50 : 0,5 = 100!"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koliko je 50 : 0,5?",
+      "odgovori": [
+        "100",
+        "25",
+        "0,5",
+        "250"
+      ],
+      "zanimljivost": "Deliti sa 0,5 je isto što i množiti sa 2. Ovo je čuvena zamka: mnogi kažu 25!"
+    }
+  ]
+}

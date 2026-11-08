@@ -1,0 +1,65 @@
+# Kako se pravi novi kviz
+
+Svaki kviz je jedan folder u `kvizovi/` sa fajlom `kviz.json` (i opciono folderom `slike/`).
+Server sam pronalazi nove foldere – dovoljno je osvežiti lobi (nema potrebe za restartom).
+
+```
+kvizovi/
+  istorija-6-srednji-vek/
+    kviz.json
+    slike/
+      zica.jpg
+```
+
+## kviz.json
+
+```json
+{
+  "naziv": "Istorija 6 – Srednji vek",
+  "ikona": "🏰",
+  "boja": "#c0392b",
+  "opis": "Lekcije 1–5 iz udžbenika",
+  "redosled": 80,
+  "uOpstem": true,
+  "pitanja": [
+    {
+      "tezina": 2,
+      "pitanje": "Koje godine je Srpska crkva postala samostalna?",
+      "odgovori": ["1219.", "1389.", "1166.", "1346."],
+      "zanimljivost": "Nešto što nije očigledno, a lepo je znati…",
+      "mediji": { "vrsta": "slika", "src": "slike/zica.jpg" }
+    }
+  ]
+}
+```
+
+| polje | značenje |
+|---|---|
+| `odgovori` | **tačno 4**, **prvi je uvek tačan** – igra ih sama meša |
+| `tezina` | 1 = lako, 2 = srednje, 3 = teško (vredi ×1,5 poena) |
+| `zanimljivost` | prikazuje se posle odgovora („💡 Da li si znao?“) – treba da bude nešto *neočigledno* |
+| `objasnjenje` | (opciono) kratko objašnjenje zašto je odgovor tačan |
+| `vreme` | (opciono) sekundi za ovo pitanje, umesto podešavanja sobe |
+| `uOpstem` | `false` = kviz se ne meša u „Opšte znanje“ (npr. za kvizove za učenje jedne lekcije) |
+
+## Mediji (`"mediji": {...}`)
+
+| vrsta | primer | napomena |
+|---|---|---|
+| slika | `{"vrsta":"slika","src":"slike/x.jpg","opis":"potpis"}` | dodir uvećava; `"zamagljeno":true` – slika se polako izoštrava |
+| melodija | `{"vrsta":"melodija","note":"E4 E4 F4 G4/2 R/1 C4+E4+G4/2","tempo":120,"instrument":"klavir"}` | `/2` = trajanje u dobama, `R` = pauza, `+` = akord; instrumenti: klavir, flauta, violina, orgulje, truba, fagot |
+| morze | `{"vrsta":"morze","tekst":"SOS"}` | zvuk + svetlo |
+| molekul | `{"vrsta":"molekul","ime":"voda"}` | 3D, okreće se prstom. Gotovi: voda, ugljen-dioksid, metan, amonijak, kiseonik, azot, vodonik, ozon, hlorovodonik, vodonik-peroksid, etanol, benzen, sumporna-kiselina, so, dijamant, glukoza. Svoj: `"atomi":[["O",0,0,0],["H",0.76,0.59,0]],"veze":[[0,1,1]]` |
+| telo | `{"vrsta":"telo","oblik":"kocka"}` | tetraedar, kocka, kvadar, oktaedar, dodekaedar, ikosaedar, prizmaN, piramidaN, bipiramidaN, valjak, kupa, lopta |
+| atom | `{"vrsta":"atom","ljuske":[2,8,1],"jezgro":"11+"}` | Borov model, elektroni kruže |
+| planeta | `{"vrsta":"planeta","ime":"saturn"}` | merkur, venera, zemlja, mesec, mars, jupiter, saturn, uran, neptun, sunce |
+| dnk | `{"vrsta":"dnk"}` | 3D dvostruka spirala |
+| mapa | `{"vrsta":"mapa","oblast":"srbija","tacke":[{"lat":44.8,"lon":20.46}],"reke":["Dunav"],"istakni":["SRB"]}` | oblasti: svet, evropa, balkan, srbija, afrika, azija, j-amerika, s-amerika, australija, bliski-istok; ili `"silueta":"ITA"` (samo obris države). Države su ISO kodovi (SRB, ITA, FRA…). Reke: Dunav, Sava, Tisa, Morava, Drina, Rajna, Volga, Nil, Amazon, Misisipi, Jangce, Temza, Sena, Loara, Elba, Visla, Po, Tibar |
+| sat | `{"vrsta":"sat","vreme":"3:30"}` | analogni sat |
+| formula | `{"vrsta":"formula","tekst":"2¹⁰ = ?"}` | veliki tekst (formule, rečenice za analizu) |
+| emodzi | `{"vrsta":"emodzi","tekst":"🧙‍♂️⚡👓"}` | rebus od emodžija |
+| svg | `{"vrsta":"svg","kod":"<svg …>"}` | sopstveni crtež (geometrija, grafici) |
+
+Slike sa Vikipedije: `node alati/preuzmi-slike.js kvizovi/<folder> ime-fajla "Naslov članka" [jezik]`
+
+Provera pre igranja: `npm run proveri`
