@@ -3,6 +3,7 @@
 // kao slike, za lično korišćenje pri pravljenju kvizova.
 //
 //   node alati/preuzmi-udzbenike.js 5 6 7          (razredi)
+//   node alati/preuzmi-udzbenike.js 8 --samo biologija   (samo udžbenici čije ime sadrži reč)
 //
 // Rezultat: izvori/udzbenici/<razred>/<udzbenik>/str-0001.jpg …  + spisak.json
 const fs = require('fs');
@@ -63,10 +64,14 @@ async function h5pTekst(url) {
 }
 
 (async () => {
-  const razredi = process.argv.slice(2).length ? process.argv.slice(2) : ['5', '6', '7'];
+  const arg = process.argv.slice(2);
+  const iSamo = arg.indexOf('--samo');
+  const samo = iSamo >= 0 ? arg.splice(iSamo, 2)[1] : '';
+  const razredi = arg.length ? arg : ['5', '6', '7'];
   for (const raz of razredi) {
     const lista = await tekst(`https://interaktivnabiblioteka.com/udzbenici/razredi/${raz}-razred/`);
-    const knjige = jedinstveno([...lista.matchAll(/href="(https:\/\/interaktivnabiblioteka\.com\/udzbenik\/[^"]+)"/g)].map((m) => m[1]));
+    const knjige = jedinstveno([...lista.matchAll(/href="(https:\/\/interaktivnabiblioteka\.com\/udzbenik\/[^"]+)"/g)].map((m) => m[1]))
+      .filter((k) => !samo || k.includes(samo));
     console.log(`\n=== ${raz}. razred: ${knjige.length} udžbenika`);
     for (const k of knjige) {
       const ime = k.split('/').filter(Boolean).pop();

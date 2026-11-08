@@ -245,6 +245,7 @@ async function ekranLobi(nov) {
       <div class="kartica" id="slavni"></div>`;
     slavni();
   }
+  if (!$('#igraci')) return; // prvo crtanje još čeka /api/kvizovi – ono će prikazati i ovu izmenu
   $('#igraci').innerHTML = V.igraci.map((x) => avatarHTML(x)).join('') || '<div class="sitno">Još nema igrača</div>';
   if (jaDomacin()) {
     app.querySelectorAll('#igraci .igrac').forEach((el) => {
@@ -255,12 +256,78 @@ async function ekranLobi(nov) {
   podesavanja();
 }
 
+// ───── izbor kviza: 'opste' | 'oblast:biologija' | 'razred5-biologija' (cela godina) | 'razred5-biologija#3' (lekcija) ─────
+const RAZREDI = [5, 6, 7, 8];
+const kvizPo = (id) => kvizovi.find((x) => x.id === id);
+
+function grupaOblasti(o) {
+  const clanovi = kvizovi.filter((x) => x.oblast === o);
+  const glavni = clanovi.find((x) => !x.razred) || clanovi[0] || {};
+  return { oblast: o, glavni, clanovi, naziv: glavni.razred ? glavni.naziv.replace(/^\d+\. razred · /, '') : glavni.naziv, ikona: glavni.ikona, boja: glavni.boja, broj: clanovi.reduce((s, x) => s + x.broj, 0) };
+}
+
+// rastavlja izbor na delove: { oblast, paket, lekcija }
+function rastaviIzbor(id) {
+  id = String(id || 'opste');
+  if (id.startsWith('oblast:')) return { oblast: id.slice(7) };
+  const [pid, lek] = id.split('#');
+  const k = kvizPo(pid);
+  return { oblast: k?.oblast || null, paket: k || null, lekcija: lek ? +lek : null };
+}
+
+function opisIzbora(id) {
+  const r = rastaviIzbor(id);
+  if (id === 'opste' || (!r.oblast && !r.paket)) return kvizPo('opste') || { naziv: 'Opšte znanje', ikona: '🌍' };
+  if (!r.paket) { const g = grupaOblasti(r.oblast); return { naziv: g.naziv, podnaslov: 'svi razredi', ikona: g.ikona, boja: g.boja }; }
+  const k = r.paket;
+  if (r.lekcija) return { naziv: k.lekcije[r.lekcija - 1]?.naziv || k.naziv, podnaslov: k.naziv, ikona: k.ikona, boja: k.boja };
+  return { naziv: k.naziv, podnaslov: k.razred ? 'cela godina' : '', ikona: k.ikona, boja: k.boja };
+}
+
+function izborKvizaHTML(P) {
+  const r = rastaviIzbor(P.kviz);
+  // kartice: obični kvizovi + jedna kartica po oblasti (opšti kviz i razredi zajedno)
+  const vidjene = new Set();
+  const kartice = [];
+  for (const q of kvizovi) {
+    if (!q.oblast) { kartice.push({ id: q.id, naziv: q.naziv, ikona: q.ikona, broj: q.broj, izabran: q.id === P.kviz }); continue; }
+    if (vidjene.has(q.oblast)) continue;
+    vidjene.add(q.oblast);
+    const g = grupaOblasti(q.oblast);
+    kartice.push({ id: 'oblast:' + q.oblast, naziv: g.naziv, ikona: g.ikona, broj: g.broj, izabran: r.oblast === q.oblast, razredi: g.clanovi.some((x) => x.razred) });
+  }
+  let html = `<div class="kartica"><h3>Izaberi kviz</h3><div class="kvizovi">${kartice.map((q) => `
+    <button class="kviz ${q.izabran ? 'izabran' : ''}" data-k="${q.id}"><div class="ik">${q.ikona}</div><div class="nz">${esc(q.naziv)}</div><div class="br">${q.broj} pitanja${q.razredi ? ' · po razredima' : ''}</div></button>`).join('')}</div></div>`;
+  if (!r.oblast) return html;
+  const g = grupaOblasti(r.oblast);
+  if (!g.clanovi.some((x) => x.razred)) return html;
+  const raz = r.paket?.razred || null;
+  html += `<div class="kartica"><h3>${g.ikona} ${esc(g.naziv)} – razred</h3><div class="izbor razredi">
+    <button data-k="oblast:${g.oblast}" class="${!r.paket ? 'izabran' : ''}">Svi razredi</button>
+    ${RAZREDI.map((n) => {
+      const k = g.clanovi.find((x) => x.razred === n);
+      return `<button ${k ? `data-k="${k.id}"` : 'disabled title="Još nema pitanja za ovaj razred"'} class="${raz === n ? 'izabran' : ''}">${n}.</button>`;
+    }).join('')}</div>`;
+  if (raz && r.paket.lekcije.length) {
+    const k = r.paket;
+    let tema = null;
+    html += `<div class="lekcije"><button class="lekcija ${!r.lekcija ? 'izabran' : ''}" data-k="${k.id}"><b>📚 Cela godina</b><span>${k.broj}</span></button>`;
+    k.lekcije.forEach((l, i) => {
+      if (l.tema && l.tema !== tema) { tema = l.tema; html += `<div class="tema">${esc(tema)}</div>`; }
+      html += `<button class="lekcija ${r.lekcija === i + 1 ? 'izabran' : ''}" data-k="${k.id}#${i + 1}" ${l.broj ? '' : 'disabled'}><span class="rb">${i + 1}.</span> ${esc(l.naziv)}<span>${l.broj}</span></button>`;
+    });
+    html += '</div>';
+  }
+  return html + '</div>';
+}
+
 function podesavanja() {
   const P = V.podesavanja;
   const k = $('#podesavanja');
-  const izbranKviz = kvizovi.find((x) => x.id === P.kviz);
+  const izbor = opisIzbora(P.kviz);
   if (!jaDomacin()) {
-    k.innerHTML = `<div class="kartica centar"><div style="font-size:2.5em">${izbranKviz?.ikona || '🌍'}</div><h2>${esc(izbranKviz?.naziv || 'Opšte znanje')}</h2>
+    k.innerHTML = `<div class="kartica centar"><div style="font-size:2.5em">${izbor.ikona || '🌍'}</div><h2>${esc(izbor.naziv)}</h2>
+      ${izbor.podnaslov ? `<div class="sitno">${esc(izbor.podnaslov)}</div>` : ''}
       <div class="cekanje">Čeka se da vođa igre pokrene igru<span class="tackice"></span></div></div>`;
     donjaTraka('');
     return;
@@ -268,8 +335,7 @@ function podesavanja() {
   const opcija = (ime, vrednosti, natpisi) => `<div class="izbor" data-p="${ime}">${vrednosti.map((v, i) =>
     `<button data-v="${v}" class="${String(P[ime]) === String(v) ? 'izabran' : ''}">${natpisi ? natpisi[i] : v}</button>`).join('')}</div>`;
   const html = `
-    <div class="kartica"><h3>Izaberi kviz</h3><div class="kvizovi">${kvizovi.map((q) => `
-      <button class="kviz ${q.id === P.kviz ? 'izabran' : ''}" data-k="${q.id}"><div class="ik">${q.ikona}</div><div class="nz">${esc(q.naziv)}</div><div class="br">${q.broj} pitanja</div></button>`).join('')}</div></div>
+    ${izborKvizaHTML(P)}
     <div class="kartica"><h3>Podešavanja</h3>
       <div class="podesavanje"><span>Krugovi</span>${opcija('krugovi', ['oba', 'pitanja', 'reci'], ['Oba', 'Pitanja', 'Reči'])}</div>
       ${P.krugovi !== 'reci' ? `<div class="podesavanje"><span>Broj pitanja</span>${opcija('brojPitanja', [5, 10, 15, 20, 25])}</div>
@@ -281,8 +347,14 @@ function podesavanja() {
   if (k.dataset.h !== html) {
     k.innerHTML = html;
     k.dataset.h = html;
-    k.querySelectorAll('.kviz').forEach((b) => (b.onclick = () => { Zvuk.efekat('klik'); akcija('podesavanja', { podesavanja: { kviz: b.dataset.k } }); }));
-    k.querySelectorAll('.izbor button').forEach((b) => (b.onclick = () => {
+    k.querySelectorAll('[data-k]').forEach((b) => (b.onclick = () => {
+      Zvuk.efekat('klik');
+      let id = b.dataset.k;
+      // klik na karticu oblasti koja je već izabrana ne briše izabrani razred/lekciju
+      if (id.startsWith('oblast:') && b.classList.contains('kviz') && rastaviIzbor(P.kviz).oblast === id.slice(7)) return;
+      akcija('podesavanja', { podesavanja: { kviz: id } });
+    }));
+    k.querySelectorAll('.izbor[data-p] button').forEach((b) => (b.onclick = () => {
       Zvuk.efekat('klik');
       akcija('podesavanja', { podesavanja: { [b.parentNode.dataset.p]: b.dataset.v } });
     }));
@@ -308,10 +380,10 @@ function ekranUvod(nov) {
   if (!nov) return;
   const u = V.uvod;
   const pitanja = u.vrsta === 'pitanja';
-  const kv = kvizovi.find((x) => x.id === V.podesavanja.kviz);
+  const kv = opisIzbora(V.podesavanja.kviz);
   app.innerHTML = `<div class="uvod">
     <div class="veliki">${pitanja ? kv?.ikona || '❓' : '🔤'}</div>
-    <div class="sitno">Krug ${u.broj}</div>
+    <div class="sitno">Krug ${u.broj}${pitanja && kv?.podnaslov ? ' · ' + esc(kv.podnaslov) : ''}</div>
     <h1>${pitanja ? esc(kv?.naziv || 'Pitanja') : 'Najduža reč'}</h1>
     <p>${pitanja ? `${u.brojPitanja} pitanja sa 4 ponuđena odgovora. Brži tačan odgovor donosi više poena, teška pitanja vrede ×1,5, a niz tačnih odgovora daje bonus!`
       : `${u.brojReci === 1 ? '12 slova' : `${u.brojReci}× po 12 slova`}. Složi što dužu reč u osnovnom obliku (imenica u jednini, glagol u infinitivu…). 100 poena po slovu, bonus za najdužu!${V.krugovi.includes('pitanja') ? ' U slovima se krije i jedan pojam iz prethodnih pitanja – ko ga pronađe, dobija +200.' : ''}`}</p>

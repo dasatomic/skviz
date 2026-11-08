@@ -15,7 +15,7 @@ Ceo interfejs, pitanja i komentari u kodu su na **srpskom (latinica)**. Igrači 
 - `lib/recnik.js` – „Najduža reč“: `podaci/recnik.txt` (Hunspell sr, osnovni oblici, ćirilica) + `podaci/ucestalost.txt`. Slova se biraju tako da se može složiti pojam (`rec`) iz nekog od upravo odigranih pitanja (`slovaSaRecju`, `Soba.izaberiPojam`).
 - `lib/statistika.js` – porodična tabla slavnih u `podaci/statistika.json`.
 - `public/` – klijent (vanilla JS): `app.js` ekrani, `mediji.js` interaktivni mediji (3D, mape, melodije…), `geo/svet.json` mape.
-- `alati/` – `proveri-kvizove.js`, `preuzmi-slike.js` (Vikipedija), `preuzmi-udzbenike.js` (Fondacija Kavčić).
+- `alati/` – `proveri-kvizove.js`, `preuzmi-slike.js` (Vikipedija), `preuzmi-udzbenike.js` (Fondacija Kavčić; `node alati/preuzmi-udzbenike.js 8 --samo biologija`).
 - `izvori/udzbenici/<razred>/<udžbenik>/` – preuzete stranice udžbenika (slike `str-NNNN.jpg`, `tekst.md`); nije deo igre i **nije u git-u** (`.gitignore`, tuđa autorska prava) – preuzima se alatom `alati/preuzmi-udzbenike.js`.
 
 ## Dodavanje novog kviza (npr. iz slikanih stranica knjige)
@@ -26,6 +26,7 @@ Format je opisan u `kvizovi/UPUTSTVO.md`. Ukratko:
 4. `zanimljivost` = nešto neočigledno što proširuje znanje, ne ponavljanje tačnog odgovora.
 5. Kad god ima smisla, koristi interaktivne medije (molekul, telo, mapa, melodija, atom, sat, emodzi, svg).
 6. Za učenje jedne lekcije postavi `"uOpstem": false` da se ne meša u „Opšte znanje“.
+6a. Kvizovi po razredima: `kvizovi/razred<N>-<oblast>/` sa `oblast`, `razred`, `lekcije` (naslovi iz sadržaja udžbenika u `izvori/`), a svako pitanje ima `lekcija` (redni broj). Lobi: oblast → Svi razredi / 5–8 → Cela godina / lekcija. Bar 15 pitanja po lekciji, mešane težine. Izbor kviza na serveru: `opste`, `oblast:<oblast>`, `<paket>`, `<paket>#<lekcija>` (`lib/kvizovi.js` → `izvor`).
 7. Pokreni `npm run proveri` – mora proći bez grešaka. Server pokupi nove kvizove bez restarta.
 
 ## Konvencije

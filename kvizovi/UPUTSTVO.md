@@ -43,6 +43,17 @@ kvizovi/
 | `objasnjenje` | (opciono) kratko objašnjenje zašto je odgovor tačan |
 | `vreme` | (opciono) sekundi za ovo pitanje, umesto podešavanja sobe |
 | `uOpstem` | `false` = kviz se ne meša u „Opšte znanje“ (npr. za kvizove za učenje jedne lekcije) |
+| `oblast` | (opciono) npr. `"biologija"` – svi kvizovi iste oblasti (opšti + po razredima) prikazuju se u lobiju kao jedna kartica |
+| `razred` | (opciono) 5–8 – kviz za taj razred; u lobiju se bira „Svi razredi / 5. / 6. / 7. / 8.“ |
+| `lekcije` | (opciono) spisak lekcija iz udžbenika: `[{"naziv":"Ćelijska građa","tema":"Poreklo i raznovrsnost života","strana":26}]` |
+| `lekcija` | (u pitanju) redni broj lekcije iz spiska `lekcije` (od 1) – posle izbora razreda može se igrati „Cela godina“ ili jedna lekcija |
+
+## Kvizovi po razredima i lekcijama
+
+Folder `kvizovi/razred<N>-<oblast>/` (npr. `razred6-biologija`) sa `"oblast"`, `"razred"`, `"uOpstem": false` i spiskom `lekcije` (naslovi iz sadržaja udžbenika, redom).
+Svaka lekcija treba da ima **bar 15 pitanja** različite težine (i lakih i teških) – `npm run proveri` upozorava ako nema.
+Ako lekcija sama ne daje dovoljno smislenih pitanja, dodaj srodna pitanja koja proširuju znanje iz te oblasti.
+Opšti kviz oblasti (npr. `kvizovi/biologija`) dobija samo `"oblast": "biologija"` i ulazi u izbor „Svi razredi“.
 
 ## Mediji (`"mediji": {...}`)
 

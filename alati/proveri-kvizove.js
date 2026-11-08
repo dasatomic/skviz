@@ -19,9 +19,16 @@ for (const dir of fs.readdirSync(KOREN).sort()) {
   let k;
   try { k = JSON.parse(fs.readFileSync(f, 'utf8')); } catch (e) { g(dir, 'neispravan JSON – ' + e.message); continue; }
   const t = { 1: 0, 2: 0, 3: 0 };
+  const lekcije = k.lekcije || [];
+  const poLekciji = lekcije.map(() => ({ 1: 0, 2: 0, 3: 0, n: 0 }));
+  if (k.razred && !k.oblast) u(dir, 'kviz ima razred, a nema oblast (npr. "biologija")');
   (k.pitanja || []).forEach((p, i) => {
     const oz = `${dir} #${i + 1}`;
     ukupno++;
+    if (lekcije.length) {
+      if (!Number.isInteger(p.lekcija) || p.lekcija < 1 || p.lekcija > lekcije.length) g(oz, `lekcija mora biti broj od 1 do ${lekcije.length}`);
+      else { poLekciji[p.lekcija - 1].n++; poLekciji[p.lekcija - 1][p.tezina]++; }
+    } else if (p.lekcija !== undefined) g(oz, 'pitanje ima lekciju, a kviz nema spisak „lekcije“');
     if (!p.pitanje) g(oz, 'nema teksta pitanja');
     if (!Array.isArray(p.odgovori) || p.odgovori.length !== 4) g(oz, 'mora imati tačno 4 odgovora (prvi je tačan)');
     else if (new Set(p.odgovori.map((x) => x.trim().toLowerCase())).size !== 4) g(oz, 'odgovori se ponavljaju');
@@ -50,7 +57,13 @@ for (const dir of fs.readdirSync(KOREN).sort()) {
       if (m.vrsta === 'melodija' && !/^[A-HR#b0-9+/.\s]+$/.test(m.note || '')) g(oz, 'neispravan zapis nota');
     }
   });
-  console.log(`✓ ${dir}: ${k.pitanja?.length || 0} pitanja (lako ${t[1]}, srednje ${t[2]}, teško ${t[3]})`);
+  lekcije.forEach((l, i) => {
+    const x = poLekciji[i];
+    const ime = typeof l === 'string' ? l : l.naziv;
+    if (x.n < 15) u(`${dir} lekcija ${i + 1}`, `„${ime}“ ima samo ${x.n} pitanja (preporuka: bar 15)`);
+    else if (!x[1] || !x[3]) u(`${dir} lekcija ${i + 1}`, `„${ime}“ nema i lakih i teških pitanja`);
+  });
+  console.log(`✓ ${dir}: ${k.pitanja?.length || 0} pitanja (lako ${t[1]}, srednje ${t[2]}, teško ${t[3]})${lekcije.length ? `, ${lekcije.length} lekcija` : ''}`);
 }
 console.log(`\nUkupno ${ukupno} pitanja · ${greske} grešaka · ${upozorenja} upozorenja`);
 process.exit(greske ? 1 : 0);
