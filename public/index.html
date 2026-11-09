@@ -6,23 +6,76 @@
 <meta name="theme-color" content="#1e1b4b">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<title>Сквиз</title>
+<title>Сквиз – породични квиз знања | Skviz kviz za decu i odrasle</title>
 <meta name="apple-mobile-web-app-title" content="Сквиз">
 <meta name="application-name" content="Сквиз">
-<meta name="description" content="Сквиз – породични квиз знања за игру преко телефона. Питања из свих школских предмета, за децу и одрасле.">
+<meta name="description" content="Сквиз (Skviz) – бесплатан породични квиз знања преко телефона, без апликације. Преко 5.000 питања из биологије, физике, географије, историје и општег знања, по лекцијама за 5–8. разред.">
+<link rel="canonical" href="https://skviz.rs/">
 <meta property="og:title" content="Сквиз – породични квиз знања">
 <meta property="og:description" content="Направи собу, позови породицу и играјте преко телефона.">
 <meta property="og:url" content="https://skviz.rs">
 <meta property="og:type" content="website">
+<meta property="og:locale" content="sr_RS">
+<meta property="og:site_name" content="Сквиз">
 <link rel="icon" type="image/svg+xml" href="/ikona.svg">
 <link rel="apple-touch-icon" href="/ikona-180.png">
-<meta property="og:image" content="https://skviz.rs/ikona-180.png">
+<meta property="og:image" content="https://skviz.rs/og-slika.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Сквиз – породични квиз знања">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Сквиз",
+  "alternateName": "Skviz",
+  "url": "https://skviz.rs/",
+  "description": "Бесплатан породични квиз знања за игру преко телефона. Питања из школских предмета по лекцијама за 5–8. разред и опште знање.",
+  "inLanguage": "sr",
+  "applicationCategory": "GameApplication",
+  "genre": "Квиз знања",
+  "operatingSystem": "Веб прегледач",
+  "isAccessibleForFree": true,
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "RSD" },
+  "audience": { "@type": "PeopleAudience", "suggestedMinAge": 10 },
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sameAs": ["https://github.com/dasatomic/skviz"]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&display=swap">
 <link rel="stylesheet" href="/style.css">
 </head>
 <body>
 <div id="app"></div>
+<!-- O igri: vidljivo samo na početnom ekranu (ispod forme); tekst je i za pretraživače -->
+<section id="o-igri">
+  <h2>Šta je Skviz?</h2>
+  <p>Skviz je besplatan porodični kviz znanja koji se igra preko telefona – bez instaliranja aplikacije i bez naloga.
+  Jedan igrač napravi sobu, ostali uđu kodom od četiri slova, a pitanja se mogu prikazati i na televizoru ili računaru.
+  Igra je namenjena deci od 11 do 15 godina i odraslima, a može se igrati i sam.</p>
+  <h2>Kako se igra</h2>
+  <ol>
+    <li>Upiši ime, izaberi avatar i napravi sobu.</li>
+    <li>Pozovi ostale – ulaze sa svojih telefona kodom sobe.</li>
+    <li>Izaberi predmet, razred ili lekciju i pokreni kviz.</li>
+    <li>Odgovaraj brzo i tačno, a na kraju složi najdužu reč od ponuđenih slova.</li>
+  </ol>
+  <h2>Predmeti i razredi</h2>
+  <ul>
+    <li>Biologija – 5, 6. i 8. razred, po lekcijama</li>
+    <li>Fizika – 6, 7. i 8. razred</li>
+    <li>Geografija – 5. razred</li>
+    <li>Istorija – 5. i 8. razred</li>
+    <li>Hemija – 7. razred</li>
+    <li>Matematika – zadaci za 7. razred sa rešenjem korak po korak</li>
+    <li>Opšte znanje: srpska i svetska istorija, srpski jezik i književnost, muzička kultura, slikarstvo i arhitektura, manastiri Srbije, sport, filmovi i igrice</li>
+  </ul>
+  <p>Više od 5.000 pitanja, sa zanimljivostima posle svakog odgovora, mapama, 3D modelima i melodijama.</p>
+  <p class="lat" data-lat lang="sr-Latn">Skviz – kviz znanja za decu i odrasle, kviz za osnovnu školu (5, 6, 7. i 8. razred) i igra za porodicu i društvo preko telefona.</p>
+  <p class="sitno">Otvoren kod: <a href="https://github.com/dasatomic/skviz" rel="noopener" data-lat>github.com/dasatomic/skviz</a> · pitanja pod licencom CC BY-SA 4.0</p>
+</section>
 <canvas id="konfete"></canvas>
 <div id="poruka" class="poruka"></div>
 <script>

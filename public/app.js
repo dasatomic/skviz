@@ -46,7 +46,7 @@ const _confirm = window.confirm.bind(window);
 window.confirm = (t) => _confirm(tr(t));
 function postaviPismo(p, crtajPonovo = true) {
   p = p === 'latinica' ? 'latinica' : 'cirilica';
-  document.title = p === 'cirilica' ? 'Сквиз' : 'Skviz';
+  document.title = p === 'cirilica' ? 'Сквиз – породични квиз знања | Skviz kviz' : 'Skviz – porodični kviz znanja | Сквиз';
   if (p === PISMO) return;
   PISMO = p;
   ls.set('pismo', p);
@@ -160,7 +160,17 @@ function povezi(kod) {
   }, 3000);
 }
 
+// „O igri“ (statični tekst iz index.html, i za pretraživače) – samo na početnom ekranu telefona
+const oIgri = document.getElementById('o-igri');
+const oIgriLat = oIgri ? oIgri.innerHTML : '';
+function prikaziOIgri(da) {
+  if (!oIgri) return;
+  oIgri.hidden = !da;
+  if (da) oIgri.innerHTML = oIgriLat; // iznova, da se preslovi po izabranom pismu
+}
+
 function ocisti() {
+  prikaziOIgri(false);
   ciscenje.forEach((f) => { try { f(); } catch {} });
   ciscenje = [];
   clearInterval(tikTajmer);
@@ -195,6 +205,7 @@ async function pocetna() {
     if (kodIzLinka) kreni();
     return;
   }
+  prikaziOIgri(true);
   let poznati = [];
   try { poznati = Object.values((await (await fetch('/api/statistika')).json()).igraci || {}); } catch {}
   app.innerHTML = `
@@ -213,8 +224,10 @@ async function pocetna() {
       <div class="red"><input class="polje kod" id="kod" maxlength="4" placeholder="KOD" value="${esc(kodIzLinka)}" style="flex:1">
       <button class="dugme" id="udji">Uđi</button></div>
     </div>
-    <div class="centar sitno">Igra se može igrati i sam – napravi sobu i pokreni.<br>TV / računar kao veliki ekran: <b data-lat>${location.host}/ekran</b></div>`;
+    <div class="centar sitno">Igra se može igrati i sam – napravi sobu i pokreni.<br>TV / računar kao veliki ekran: <b data-lat>${location.host}/ekran</b></div>
+    <div class="centar podnozje"><a href="#" id="kontakt">Kontakt</a></div>`;
   const ime = $('#ime');
+  $('#kontakt').onclick = (e) => { e.preventDefault(); ja.ime = ime.value.trim(); kontakt(); };
   app.querySelectorAll('[data-pismo]').forEach((b) => (b.onclick = () => { ja.ime = ime.value.trim(); Zvuk.efekat('klik'); postaviPismo(b.dataset.pismo); }));
   app.querySelectorAll('.avatari button').forEach((b) => (b.onclick = () => {
     ja.avatar = b.dataset.a;
@@ -244,6 +257,22 @@ async function pocetna() {
     const r = await akcija('udji', { soba: kod, ime: ja.ime, avatar: ja.avatar });
     if (r.kod) povezi(r.kod);
   };
+}
+
+// ───────────────────────── kontakt ─────────────────────────
+function kontakt() {
+  ocisti();
+  window.scrollTo(0, 0);
+  app.innerHTML = `
+    <h1 class="naslov-igre mali"><img class="logo" src="/logo.svg" alt="Сквиз"></h1>
+    <div class="kartica centar">
+      <h2>Kontakt</h2>
+      <p>Pitanja, predlozi i greške – javi nam se na Discord kanalu:</p>
+      <a class="dugme zuto siroko" href="https://discord.gg/9sMYvbGZAr" target="_blank" rel="noopener">💬 Discord</a>
+      <div class="sitno" style="margin-top:10px" data-lat>discord.gg/9sMYvbGZAr</div>
+    </div>
+    <div class="centar"><button class="dugme" id="nazad">⬅ Nazad</button></div>`;
+  $('#nazad').onclick = () => pocetna();
 }
 
 // ───────────────────────── meni ─────────────────────────

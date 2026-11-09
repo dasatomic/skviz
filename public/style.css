@@ -331,3 +331,12 @@ svg.geo .novo.ist { animation: geo-novo .9s ease-out, geo-puls 1.4s 0.9s ease-in
 .koraci-dugmad #kr-sled { flex: 1; }
 .koraci-dugmad .dugme { padding: 10px 14px; }
 .koraci-dugmad .dugme:disabled { opacity: .35; }
+.podnozje { margin: 28px 0 8px; }
+.podnozje a { color: var(--blago); font-size: .85em; }
+a.dugme { display: block; text-align: center; text-decoration: none; box-sizing: border-box; }
+#app:has(+ #o-igri:not([hidden])) { min-height: 0; padding-bottom: 0; }
+#o-igri { max-width: 720px; margin: 24px auto 0; padding: 0 16px 40px; color: var(--blago); line-height: 1.5; }
+#o-igri h2 { color: var(--tekst); font-size: 1.15em; margin-top: 1.2em; }
+#o-igri ul, #o-igri ol { padding-left: 1.3em; }
+#o-igri a { color: var(--blago); }
+body.ekran #o-igri { display: none; }

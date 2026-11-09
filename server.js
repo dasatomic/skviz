@@ -83,6 +83,7 @@ const TIPOVI = {
   '.json': 'application/json; charset=utf-8', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg',
   '.svg': 'image/svg+xml', '.webp': 'image/webp', '.gif': 'image/gif', '.mp3': 'audio/mpeg', '.ogg': 'audio/ogg',
   '.wav': 'audio/wav', '.ico': 'image/x-icon', '.webmanifest': 'application/manifest+json',
+  '.txt': 'text/plain; charset=utf-8', '.xml': 'application/xml; charset=utf-8',
 };
 
 // verzija klijenta (otisak fajlova iz public/) – telefon koji je otvorio staru verziju stranice sam se osveži
@@ -98,7 +99,7 @@ function verzijaKlijenta() {
 }
 Soba.verzijaKlijenta = verzijaKlijenta;
 
-function staticki(res, koren, rel) {
+function staticki(res, koren, rel, zaglavlja = {}) {
   const f = path.normalize(path.join(koren, rel));
   if (!f.startsWith(koren)) return kraj(res, 403, 'zabranjeno');
   fs.stat(f, (e, st) => {
@@ -107,6 +108,7 @@ function staticki(res, koren, rel) {
       'Content-Type': TIPOVI[path.extname(f).toLowerCase()] || 'application/octet-stream',
       'Content-Length': st.size,
       'Cache-Control': koren === KVIZOVI || rel.startsWith('/geo/') ? 'public, max-age=3600' : 'no-cache',
+      ...zaglavlja,
     });
     fs.createReadStream(f).pipe(res);
   });
@@ -227,7 +229,9 @@ async function obradi(req, res) {
   }
 
   if (p.startsWith('/kvizovi/')) return staticki(res, KVIZOVI, p.slice('/kvizovi'.length));
-  if (p === '/' || p === '/ekran') return staticki(res, JAVNO, '/index.html');
+  if (p === '/') return staticki(res, JAVNO, '/index.html');
+  // TV ekran je ista stranica – pretraživači neka indeksiraju samo početnu
+  if (p === '/ekran') return staticki(res, JAVNO, '/index.html', { 'X-Robots-Tag': 'noindex' });
   return staticki(res, JAVNO, p);
 }
 
