@@ -35,7 +35,7 @@
         "6",
         "24"
       ],
-      "zanimljivost": "Ojlerova formula važi za svako ovakvo telo: temena − ivice + strane = 2. Za kocku: 8 − 12 + 6 = 2. Proveri je na sledećem telu koje vidiš!",
+      "zanimljivost": "Ojlerova formula važi za svako ovakvo telo: temena − ivice + strane = 2. Za kocku: 8 − 12 + 6 = 2. Proveri je i na drugim telima u kvizu!",
       "rec": "ivica"
     },
     {
@@ -384,7 +384,11 @@
         "3"
       ],
       "zanimljivost": "Formula za broj dijagonala mnogougla sa n temena je n·(n−3)/2. Za šestougao: 6·3/2 = 9. Trougao nema nijednu dijagonalu!",
-      "rec": "dijagonala"
+      "rec": "dijagonala",
+      "mediji": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 220 220' xmlns='http://www.w3.org/2000/svg'><g fill='none' stroke='#fff' stroke-width='4' stroke-linejoin='round'><polygon points='200,110 155,32 65,32 20,110 65,188 155,188'/></g><g fill='#fff' font-size='20' font-family='sans-serif' text-anchor='middle'></g></svg>"
+      }
     },
     {
       "tezina": 3,
@@ -396,7 +400,11 @@
         "9 cm"
       ],
       "zanimljivost": "Pitagorina teorema: 6² + 8² = 36 + 64 = 100 = 10². Stari Egipćani su pravili prave uglove pomoću užeta sa 12 čvorova, savijenog u trougao 3–4–5.",
-      "rec": "hipotenuza"
+      "rec": "hipotenuza",
+      "mediji": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 220 230' xmlns='http://www.w3.org/2000/svg'><g fill='none' stroke='#fff' stroke-width='4' stroke-linejoin='round'><polygon points='40,190 200,190 40,70'/><polyline points='40,170 60,170 60,190' stroke-width='3'/></g><g fill='#fff' font-size='20' font-family='sans-serif' text-anchor='middle'><text x='120' y='220'>8 cm</text><text x='15' y='135' text-anchor='middle'>6</text><text x='135' y='120'>?</text></g></svg>"
+      }
     },
     {
       "tezina": 2,
@@ -856,7 +864,11 @@
         "56 cm²"
       ],
       "zanimljivost": "Površina pravougaonika je proizvod dužina stranica. 32 cm bi bio njegov obim: 2 · (7 + 9).",
-      "rec": "površina"
+      "rec": "površina",
+      "mediji": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 230 210' xmlns='http://www.w3.org/2000/svg'><g fill='none' stroke='#fff' stroke-width='4' stroke-linejoin='round'><rect x='25' y='30' width='180' height='140'/></g><g fill='#fff' font-size='20' font-family='sans-serif' text-anchor='middle'><text x='115' y='200'>9 cm</text><text x='12' y='105'>7</text></g></svg>"
+      }
     },
     {
       "tezina": 2,
@@ -964,7 +976,11 @@
         "20°"
       ],
       "zanimljivost": "180° − 70° − 70° = 40°. U jednakokrakom trouglu uglovi na osnovici su uvek jednaki.",
-      "rec": "trougao"
+      "rec": "trougao",
+      "mediji": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 220 260' xmlns='http://www.w3.org/2000/svg'><g fill='none' stroke='#fff' stroke-width='4' stroke-linejoin='round'><polygon points='30,240 190,240 110,20'/></g><g fill='#fff' font-size='20' font-family='sans-serif' text-anchor='middle'><text x='58' y='230'>70°</text><text x='162' y='230'>70°</text><text x='110' y='80'>?</text></g></svg>"
+      }
     },
     {
       "tezina": 2,
@@ -1004,7 +1020,7 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Proizvod je 8 jabuka po 45 dinara. Koliko se plaća ukupno?",
+      "pitanje": "Kupljeno je 8 jabuka po 45 dinara. Koliko se plaća ukupno?",
       "odgovori": [
         "360 dinara",
         "320 dinara",
@@ -1467,7 +1483,7 @@
         "720°",
         "450°"
       ],
-      "zanimljivost": "Formula je (n − 2) · 180°. Za petougao: 3 · 180° = 540°. Petougaone su, na primer, ploče na fudbalskoj lopti.",
+      "zanimljivost": "Formula je (n − 2) · 180°. Za petougao: 3 · 180° = 540°. Klasična fudbalska lopta sašivena je od 12 crnih petouglova i 20 belih šestouglova.",
       "rec": "petougao"
     },
     {
@@ -1480,7 +1496,11 @@
         "72°"
       ],
       "zanimljivost": "540° : 5 = 108°. Zgrada Pentagon u SAD je pravilni petougao – po njemu je i dobila ime.",
-      "rec": "petougao"
+      "rec": "petougao",
+      "mediji": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 220 210' xmlns='http://www.w3.org/2000/svg'><g fill='none' stroke='#fff' stroke-width='4' stroke-linejoin='round'><polygon points='110,20 200.4,85.6 165.8,191.9 54.2,191.9 19.6,85.6'/></g><g fill='#fff' font-size='20' font-family='sans-serif' text-anchor='middle'><text x='110' y='55'>?</text></g></svg>"
+      }
     },
     {
       "tezina": 3,
@@ -1696,7 +1716,11 @@
         "11 cm"
       ],
       "zanimljivost": "25 + 144 = 169 = 13². Trojke celih brojeva kao 3-4-5 i 5-12-13 zovu se Pitagorine trojke.",
-      "rec": "hipotenuza"
+      "rec": "hipotenuza",
+      "mediji": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 230 150' xmlns='http://www.w3.org/2000/svg'><g fill='none' stroke='#fff' stroke-width='4' stroke-linejoin='round'><polygon points='30,110 198,110 30,40'/><polyline points='30,95 45,95 45,110' stroke-width='3'/></g><g fill='#fff' font-size='20' font-family='sans-serif' text-anchor='middle'><text x='114' y='138'>12 cm</text><text x='16' y='82'>5</text><text x='125' y='65'>?</text></g></svg>"
+      }
     },
     {
       "tezina": 2,

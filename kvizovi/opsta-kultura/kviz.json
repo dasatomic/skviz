@@ -411,7 +411,11 @@
         "Madridu"
       ],
       "zanimljivost": "Luvr je nekada bio kraljevska palata. Ulaz je staklena piramida koju je 1989. projektovao arhitekta I. M. Pej. Kad bi se svaka izložena slika gledala po 30 sekundi, obilazak bi trajao danima.",
-      "rec": "luvr"
+      "rec": "luvr",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/luvr.jpg"
+      }
     },
     {
       "tezina": 3,
@@ -522,16 +526,16 @@
       "rec": "olimpijada"
     },
     {
-      "tezina": 1,
-      "pitanje": "Koliko nogu imaju pauci?",
+      "pitanje": "Šta je kajmak?",
       "odgovori": [
-        "8",
-        "6",
-        "10",
-        "4"
+        "Masni sloj skupljen sa prokuvanog mleka",
+        "Namaz od pečenih paprika i patlidžana",
+        "Slatko od šljiva kuvano u kazanu",
+        "Hleb od kukuruznog brašna"
       ],
-      "zanimljivost": "Pauci imaju i do 8 očiju, ali mnogi ipak slabo vide. Lov im omogućava osećaj za vibracije mreže.",
-      "rec": "pauk"
+      "tezina": 1,
+      "zanimljivost": "Mleko se prokuva i ostavi da se hladi u plitkim posudama, a sloj koji se uhvati na površini skida se i soli. Najpoznatiji su zlatiborski i čačanski kajmak. Kukuruzni hleb je proja, a namaz od paprika ajvar.",
+      "rec": "kajmak"
     },
     {
       "tezina": 1,
@@ -582,16 +586,16 @@
       "rec": "šajkača"
     },
     {
-      "tezina": 1,
-      "pitanje": "Šta je slava?",
+      "pitanje": "Čime se po srpskom običaju dočekuju dragi gosti na ulazu u kuću?",
       "odgovori": [
-        "Porodični praznik u čast svetitelja zaštitnika",
-        "Proslava rođendana domaćina kuće uz celu porodicu",
-        "Svečanost venčanja na kojoj kum daje ime prvom detetu",
-        "Krštenje"
+        "Hlebom i solju",
+        "Kafom i kolačima",
+        "Rakijom i pečenjem",
+        "Cvećem i pesmom"
       ],
-      "zanimljivost": "Krsna slava se nasleđuje sa oca na sina. Na UNESCO listi je od 2014.",
-      "rec": "slava"
+      "tezina": 1,
+      "zanimljivost": "Hleb i so su simbol gostoprimstva u mnogim slovenskim narodima. Gost odlomi parče pogače, umoči ga u so i pojede – time domaćin pokazuje da mu je dobrodošao.",
+      "rec": "pogača"
     },
     {
       "tezina": 1,
@@ -918,16 +922,16 @@
       "rec": "trougao"
     },
     {
-      "tezina": 2,
-      "pitanje": "Ko je napravio prvi telefon (1876)?",
+      "pitanje": "Ko je izumeo telegrafsku azbuku od tačaka i crta, koja i danas nosi njegovo ime?",
       "odgovori": [
+        "Semjuel Morze",
         "Aleksandar Grejem Bel",
-        "Nikola Tesla (Smiljan)",
-        "Tomas Alva Edison (SAD)",
-        "Mihajlo Pupin (Idvor)"
+        "Tomas Edison",
+        "Gugljelmo Markoni"
       ],
-      "zanimljivost": "Bel je bio i učitelj gluvih – njegova majka i supruga bile su gluve. Zato je proučavao zvuk i glas.",
-      "rec": "telefon"
+      "tezina": 1,
+      "zanimljivost": "Morze je pre toga bio poznat slikar portreta. Prvu telegrafsku poruku na velikoj daljini, između Vašingtona i Baltimora, poslao je 1844.",
+      "rec": "telegraf"
     },
     {
       "tezina": 2,
@@ -975,19 +979,23 @@
         "Sat na Brandenburškoj kapiji u centru Berlina"
       ],
       "zanimljivost": "„Big Ben“ je zapravo ime najvećeg zvona, a ne kule. Kula je 2012. preimenovana u „Kula Elizabete“.",
-      "rec": "sat"
+      "rec": "sat",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/big-ben.jpg"
+      }
     },
     {
-      "tezina": 2,
-      "pitanje": "U kojoj zemlji je nastala pica?",
+      "pitanje": "Iz koje zemlje potiče jelo od pirinča sa šafranom, paelja?",
       "odgovori": [
-        "Italiji",
-        "Grčkoj",
-        "SAD",
-        "Francuskoj"
+        "Španija",
+        "Italija",
+        "Portugalija",
+        "Meksiko"
       ],
-      "zanimljivost": "Napulj se smatra rodnim mestom pice. Umetnost napolitanskih pica-majstora upisana je na UNESCO listu nematerijalne baštine.",
-      "rec": "italija"
+      "tezina": 2,
+      "zanimljivost": "Paelja potiče iz okoline Valensije. Ime je dobila po širokom, plitkom tiganju u kome se kuva. Šafran, koji joj daje žutu boju, jedan je od najskupljih začina na svetu.",
+      "rec": "pirinač"
     },
     {
       "tezina": 2,
@@ -1023,7 +1031,11 @@
         "Biblija sa slikama u boji, napravljena za decu i kraljeve"
       ],
       "zanimljivost": "Danas postoji samo 49 primeraka, a jedan bi vredeo desetine miliona dolara.",
-      "rec": "gutenberg"
+      "rec": "gutenberg",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/gutenberg.jpg"
+      }
     },
     {
       "tezina": 3,
@@ -1038,16 +1050,16 @@
       "rec": "plovdiv"
     },
     {
-      "tezina": 3,
-      "pitanje": "Šta znači „Veni, vidi, vici“ i ko je to rekao?",
+      "pitanje": "Ko je rekao „Kocka je bačena“, prelazeći reku Rubikon sa vojskom?",
       "odgovori": [
-        "„Dođoh, videh, pobedih“ – Julije Cezar",
-        "„Iskoristi dan“ – Horacije",
-        "„Sve teče“ – Heraklit",
-        "„Mislim, dakle postojim“ – Dekart"
+        "Julije Cezar",
+        "Marko Antonije",
+        "Car Avgust",
+        "Hanibal"
       ],
-      "zanimljivost": "Cezar je ovim rečima javio Senatu o brzoj pobedi 47. pre n. e. kod Zele, u današnjoj Turskoj.",
-      "rec": "cezar"
+      "tezina": 2,
+      "zanimljivost": "Rimski zakon je zabranjivao vojskovođi da sa vojskom pređe Rubikon i uđe u Italiju. Cezar ga je 49. p. n. e. ipak prešao i započeo građanski rat. Otuda izraz „preći Rubikon“ – doneti odluku od koje nema povratka.",
+      "rec": "rubikon"
     },
     {
       "tezina": 3,
@@ -1110,16 +1122,16 @@
       "rec": "surinam"
     },
     {
-      "tezina": 3,
-      "pitanje": "Koja je jedina država na svetu čija zastava nije pravougaona?",
+      "pitanje": "Koja država, pored Vatikana, ima kvadratnu zastavu?",
       "odgovori": [
-        "Nepal",
         "Švajcarska",
-        "Vatikan",
-        "Butan"
+        "Danska",
+        "Austrija",
+        "Japan"
       ],
-      "zanimljivost": "Švajcarska i Vatikan imaju kvadratne zastave, ali je samo nepalska u obliku dva trougla.",
-      "rec": "nepal"
+      "tezina": 2,
+      "zanimljivost": "Simbol Crvenog krsta je švajcarska zastava sa obrnutim bojama – u čast Švajcarca Anrija Dinana, osnivača te organizacije. Švajcarski brodovi ipak koriste pravougaonu verziju zastave.",
+      "rec": "zastava"
     },
     {
       "tezina": 3,
@@ -1143,19 +1155,23 @@
         "Kamen sa vrha Everesta"
       ],
       "zanimljivost": "Kamen je pronađen 1799. tokom Napoleonovog pohoda u Egiptu, a danas je u Britanskom muzeju u Londonu.",
-      "rec": "rozeta"
+      "rec": "rozeta",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/rozeta.jpg"
+      }
     },
     {
-      "tezina": 3,
-      "pitanje": "Ko je naslikao „Poslednju večeru“ (Tajnu večeru)?",
+      "pitanje": "Koji instrument pokazuje da vazdušni pritisak pada, pa verovatno stiže kiša?",
       "odgovori": [
-        "Leonardo da Vinči",
-        "Mikelanđelo Buonaroti",
-        "Rafael Santi (Urbino)",
-        "Mikelanđelo da Karavađo"
+        "Barometrom",
+        "Termometrom",
+        "Higrometrom",
+        "Anemometrom"
       ],
-      "zanimljivost": "Slika je u trpezariji samostana Santa Marija dele Gracije u Milanu. Za posetu treba rezervisati karte mesecima unapred.",
-      "rec": "vinča"
+      "tezina": 2,
+      "zanimljivost": "Prvi barometar napravio je Italijan Evanđelista Toričeli 1643, sa staklenom cevi punom žive. Kada pritisak naglo pada, obično stiže kiša ili oluja. Higrometar meri vlažnost, a anemometar brzinu vetra.",
+      "rec": "pritisak"
     },
     {
       "tezina": 3,
@@ -1286,7 +1302,7 @@
         "U Briselu",
         "U Beču"
       ],
-      "zanimljivost": "Zemljište za zgradu UN poklonila je porodica Rokfeler. Formalno, ono ne pripada SAD nego je međunarodna teritorija.",
+      "zanimljivost": "Zemljište za zgradu UN poklonio je Džon D. Rokfeler mlađi. Sedište ima poseban, međunarodni status – ima svoju poštu i marke, a policija SAD ne ulazi bez dozvole.",
       "rec": "njujork"
     },
     {

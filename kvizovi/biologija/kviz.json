@@ -387,7 +387,11 @@
         "Megalodon"
       ],
       "zanimljivost": "Plavi kit može biti dug oko 30 m i težak preko 150 tona – teži od svih dinosaurusa. Njegovo srce je veliko kao mali automobil, a hrani se sićušnim račićima – krilom.",
-      "rec": "sisar"
+      "rec": "sisar",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/plavi-kit.jpg"
+      }
     },
     {
       "tezina": 1,
@@ -535,7 +539,7 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Šta je od ovoga NIJE insekt?",
+      "pitanje": "Šta od ovoga NIJE insekt?",
       "odgovori": [
         "Škorpija",
         "Mrav",
@@ -735,7 +739,11 @@
         "Golub"
       ],
       "zanimljivost": "Kolibri maše krilima i do 80 puta u sekundi. Srce mu kuca preko 1.000 puta u minutu, a dnevno pojede više nektara nego što je težak.",
-      "rec": "kolibri"
+      "rec": "kolibri",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/kolibri.jpg"
+      }
     },
     {
       "tezina": 2,
@@ -747,7 +755,11 @@
         "Orao krstaš"
       ],
       "zanimljivost": "U obrušavanju na plen sivi soko dostiže preko 300 km/h – brže od bilo koje druge životinje na svetu.",
-      "rec": "soko"
+      "rec": "soko",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/sivi-soko.jpg"
+      }
     },
     {
       "tezina": 2,
@@ -759,7 +771,11 @@
         "Som (najveća rečna riba u Evropi)"
       ],
       "zanimljivost": "Kitova ajkula može biti duga 12–18 m, a hrani se sitnim planktonom. Plavi kit je sisar, a ne riba.",
-      "rec": "kitopsina"
+      "rec": "kitopsina",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/kitova-ajkula.jpg"
+      }
     },
     {
       "tezina": 2,
@@ -804,7 +820,7 @@
         "Uzengija (stremen) u uhu",
         "Kost malog prsta na levoj nozi",
         "Zub umnjak u vilici",
-        "Čašica kolena na zadnjoj nozi"
+        "Čašica kolena (patela)"
       ],
       "zanimljivost": "Uzengija je dugačka samo oko 3 mm. Zajedno sa čekićem i nakovnjem prenosi zvučne vibracije u unutrašnje uho.",
       "rec": "uzengija"
@@ -1047,7 +1063,11 @@
         "Lutajući albatros"
       ],
       "zanimljivost": "Mužjak carskog pingvina oko dva meseca drži jaje na stopalima ispod kožnog nabora, bez hrane, na −40 °C, dok ženka lovi u moru.",
-      "rec": "pingvin"
+      "rec": "pingvin",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/carski-pingvin.jpg"
+      }
     },
     {
       "tezina": 2,
@@ -1059,7 +1079,11 @@
         "Papagaj"
       ],
       "zanimljivost": "Procenjuje se da grenlandske ajkule mogu da žive i oko 400 godina! Rastu samo oko 1 cm godišnje.",
-      "rec": "ajkula"
+      "rec": "ajkula",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/grenlandska-ajkula.jpg"
+      }
     },
     {
       "tezina": 2,
@@ -1086,16 +1110,16 @@
       "rec": "kiseonik"
     },
     {
-      "tezina": 2,
-      "pitanje": "Koje drvo u Srbiji je zaštićeno i raste samo kod nas i u BiH?",
+      "pitanje": "Koja krupna ptica, jedna od najtežih letećih ptica na svetu, živi u ravnicama severnog Banata?",
       "odgovori": [
-        "Pančićeva omorika",
-        "Hrast lužnjak",
-        "Bukva",
-        "Bela topola"
+        "Velika droplja",
+        "Siva čaplja",
+        "Bela roda",
+        "Crni ždral"
       ],
-      "zanimljivost": "Omorika je endemit – živi samo na malom području oko Drine. Kao ukrasno drvo danas se sadi u parkovima širom Evrope.",
-      "rec": "omorika"
+      "tezina": 3,
+      "zanimljivost": "Mužjak velike droplje može biti težak i 15 kg. U Srbiji je ostalo samo nekoliko desetina ovih ptica, u rezervatu kod Mokrina, gde ih štite od uznemiravanja i oranja u vreme gnežđenja.",
+      "rec": "droplja"
     },
     {
       "tezina": 2,
@@ -1203,7 +1227,11 @@
         "Venerina muholovka"
       ],
       "zanimljivost": "Cvet raflezije može imati prečnik oko 1 m i težinu oko 10 kg. Smrad privlači muve, koje je oprašuju. Nema ni lišće ni stablo – parazit je.",
-      "rec": "raflezija"
+      "rec": "raflezija",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/raflezija.jpg"
+      }
     },
     {
       "tezina": 3,
@@ -1263,7 +1291,11 @@
         "Kivi"
       ],
       "zanimljivost": "Dodo je živeo na ostrvu Mauricijus i nije umeo da leti. Nestao je za manje od sto godina posle dolaska ljudi i životinja koje su doneli.",
-      "rec": "dodo"
+      "rec": "dodo",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/dodo.jpg"
+      }
     },
     {
       "tezina": 3,
@@ -1350,16 +1382,20 @@
       "rec": "hermafrodit"
     },
     {
-      "tezina": 3,
-      "pitanje": "Kako se zove mladunče žabe, koje diše škrgama?",
+      "pitanje": "Koja je najveća žaba na svetu, teška i preko 3 kg?",
       "odgovori": [
-        "Punoglavac",
-        "Gusenica",
-        "Lutka",
-        "Larva komarca"
+        "Golijat žaba",
+        "Volovska žaba (bik-žaba)",
+        "Zelena žaba",
+        "Krastava žaba (krastača)"
       ],
-      "zanimljivost": "Punoglavci postepeno gube rep i dobijaju noge i pluća. Neke vrste žaba u tropima nose punoglavce na leđima do vode.",
-      "rec": "punoglavac"
+      "tezina": 3,
+      "zanimljivost": "Golijat žaba iz zapadne Afrike može biti dugačka preko 30 cm. Mužjaci kopaju male bazene na obali reke i premeštaju kamenje teže od sebe da bi napravili „gnezdo“ za jaja.",
+      "rec": "golijat",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/golijat-zaba.jpg"
+      }
     },
     {
       "tezina": 3,
@@ -1407,7 +1443,11 @@
         "Paun (ptica sa plavim perjem)"
       ],
       "zanimljivost": "Krv potkovičastog raka reaguje na bakterijske otrove, pa se koristi za proveru vakcina i lekova. Ova „živa fosilna“ vrsta postoji oko 450 miliona godina!",
-      "rec": "limulus"
+      "rec": "limulus",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/limulus.jpg"
+      }
     },
     {
       "tezina": 3,
@@ -1419,7 +1459,11 @@
         "Rečna jegulja (iz Dunava)"
       ],
       "zanimljivost": "Celakant je pronađen u ulovu ribara kod Južne Afrike. Peraja su mu mesnata, nalik nogama – srodan je ribama od kojih su potekli kopneni kičmenjaci.",
-      "rec": "celakant"
+      "rec": "celakant",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/celakant.png"
+      }
     },
     {
       "tezina": 1,
@@ -1446,16 +1490,20 @@
       "rec": "ovca"
     },
     {
-      "tezina": 1,
-      "pitanje": "Šta je kameleon?",
+      "pitanje": "Koji medved se hrani gotovo isključivo mesom, najviše fokama?",
       "odgovori": [
-        "Gušter koji menja boju",
-        "Vrsta žabe sa dugim jezikom",
-        "Vrsta zmije koja živi na drveću",
-        "Riba"
+        "Polarni (beli) medved",
+        "Mrki medved",
+        "Američki crni medved",
+        "Panda"
       ],
-      "zanimljivost": "Kameleon ima jezik duži od tela i oči koje se okreću nezavisno jedna od druge.",
-      "rec": "gušter"
+      "tezina": 2,
+      "zanimljivost": "Ispod belog krzna polarni medved ima crnu kožu koja upija toplotu, a dlake su mu zapravo providne i šuplje. Fokama prilazi preko leda i čeka ih kod otvora za disanje.",
+      "rec": "medved",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/polarni-medved.jpg"
+      }
     },
     {
       "tezina": 1,

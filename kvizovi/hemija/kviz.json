@@ -256,7 +256,7 @@
         "Dmitrij Mendeljejev",
         "Amedeo Avogadro"
       ],
-      "zanimljivost": "Lavoazje je dao ime kiseoniku i vodoniku. Nažalost, pogubljen je giljotinom tokom Francuske revolucije 1794, jer je radio kao ubirač poreza. Jedan naučnik je tada rekao: „Trebao je trenutak da se odrubi ta glava, a ni za sto godina se neće roditi slična.“",
+      "zanimljivost": "Lavoazje je dao ime kiseoniku i vodoniku. Nažalost, pogubljen je giljotinom tokom Francuske revolucije 1794, jer je radio kao ubirač poreza. Matematičar Lagranž je tada rekao: „Bio je dovoljan trenutak da se odrubi ta glava, a ni za sto godina se možda neće roditi slična.“",
       "rec": "lavoazje"
     },
     {
@@ -309,7 +309,11 @@
         "Argon"
       ],
       "zanimljivost": "Vazduh je oko 78% azota i 21% kiseonika. Azot udišemo i izdišemo bez promene. Tečni azot (−196 °C) koristi se za pravljenje sladoleda za nekoliko sekundi!",
-      "rec": "azot"
+      "rec": "azot",
+      "mediji": {
+        "vrsta": "molekul",
+        "ime": "azot"
+      }
     },
     {
       "tezina": 2,
@@ -497,7 +501,11 @@
         "6"
       ],
       "zanimljivost": "6 ugljenika + 12 vodonika + 6 kiseonika = 24 atoma. Glukozu biljke prave fotosintezom, a naš mozak je njen najveći „potrošač“ – troši je oko 120 grama dnevno.",
-      "rec": "glukoza"
+      "rec": "glukoza",
+      "mediji": {
+        "vrsta": "molekul",
+        "ime": "glukoza"
+      }
     },
     {
       "tezina": 2,
@@ -753,7 +761,11 @@
         "Azotna (iz đubriva)"
       ],
       "zanimljivost": "Želudačna kiselina ubija bakterije iz hrane i pomaže varenje belančevina. Zidove želuca štiti sloj sluzi.",
-      "rec": "želudac"
+      "rec": "želudac",
+      "mediji": {
+        "vrsta": "molekul",
+        "ime": "hlorovodonik"
+      }
     },
     {
       "tezina": 2,
@@ -944,7 +956,7 @@
         "Pojavi se plavi plamen",
         "Miriše na jaja"
       ],
-      "zanimljivost": "Ugljen-dioksid sa krečnom vodom gradi kreč (kalcijum-karbonat), koji ne rastvara se pa voda postaje mutna. Duni slamčicom u krečnu vodu – zamutiće se!",
+      "zanimljivost": "Ugljen-dioksid sa krečnom vodom gradi kalcijum-karbonat (isto što i kreda), koji se ne rastvara u vodi, pa voda postane mutna. Duni slamčicom u krečnu vodu – zamutiće se!",
       "rec": "kreč"
     },
     {
@@ -1137,7 +1149,11 @@
         "Robert Bojl"
       ],
       "zanimljivost": "Velerov ogled je srušio ideju da organske supstance stvara samo „životna sila“. Urea se danas proizvodi u ogromnim količinama kao veštačko đubrivo.",
-      "rec": "veler"
+      "rec": "veler",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/veler.jpg"
+      }
     },
     {
       "tezina": 2,
@@ -1257,7 +1273,11 @@
         "6"
       ],
       "zanimljivost": "Metan je najjednostavniji ugljovodonik. Propan (C₃H₈) i butan (C₄H₁₀) su gasovi u bocama za kampovanje i upaljačima.",
-      "rec": "metan"
+      "rec": "metan",
+      "mediji": {
+        "vrsta": "molekul",
+        "ime": "metan"
+      }
     },
     {
       "tezina": 3,
@@ -1404,16 +1424,16 @@
       "rec": "zlato"
     },
     {
-      "tezina": 3,
-      "pitanje": "Koji element se stavlja u balone za meteorološka merenja i vazdušne brodove, jer ne gori?",
+      "pitanje": "Kojim gasom su se punile sijalice sa užarenim vlaknom, da vlakno ne bi izgorelo?",
       "odgovori": [
-        "Helijum",
-        "Vodonik",
-        "Neon",
-        "Kiseonik"
+        "Argonom",
+        "Kiseonikom",
+        "Vodonikom",
+        "Hlorom"
       ],
-      "zanimljivost": "Vazdušni brod „Hindenburg“ bio je napunjen vodonikom i 1937. izgoreo za pola minuta. Od tada se koristi nezapaljivi helijum.",
-      "rec": "helijum"
+      "tezina": 3,
+      "zanimljivost": "Argon čini skoro 1% vazduha – više od ugljen-dioksida. Ime mu na grčkom znači „lenj“, jer skoro ni sa čim ne reaguje. U kiseoniku bi se užareno vlakno odmah zapalilo.",
+      "rec": "argon"
     },
     {
       "tezina": 3,
@@ -1473,7 +1493,11 @@
         "Jedinjenja barijuma"
       ],
       "zanimljivost": "Barijum daje zelenu, bakar plavu, a natrijum žutu boju. Vatromet su izmislili Kinezi, pre više od 1.000 godina.",
-      "rec": "vatromet"
+      "rec": "vatromet",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/vatromet.jpg"
+      }
     },
     {
       "tezina": 1,

@@ -110,7 +110,7 @@
         "Jotovanje",
         "Asimilacija po mestu tvorbe"
       ],
-      "zanimljivost": "Kad nestane „a“ (nepostojano a), „b“ se nađe pored bezvučnog „c“ i i samo postaje bezvučno „p“. Tu su se zapravo desile dve promene – ali „b → p“ je jednačenje po zvučnosti.",
+      "zanimljivost": "Kad nestane „a“ (nepostojano a), „b“ se nađe pored bezvučnog „c“ i samo postaje bezvučno „p“. Tu su se zapravo desile dve promene – ali „b → p“ je jednačenje po zvučnosti.",
       "rec": "jednačenje"
     },
     {
@@ -218,20 +218,16 @@
       "rec": "nušić"
     },
     {
-      "tezina": 3,
-      "pitanje": "Šta je ovo, najstarija sačuvana srpska ćirilična knjiga?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/miroslavljevo.jpg"
-      },
+      "pitanje": "Kako se zove deo reči koji nosi osnovno značenje, kao „pis“ u rečima pisac, pismo i pisati?",
       "odgovori": [
-        "Miroslavljevo jevanđelje",
-        "Oktoih prvoglasnik",
-        "Zakonopravilo",
-        "Srpski rječnik"
+        "Koren",
+        "Sufiks",
+        "Prefiks",
+        "Nastavak"
       ],
-      "zanimljivost": "Nastalo je oko 1180. za kneza Miroslava, brata Stefana Nemanje. Ukrašeno je sa oko 300 minijatura i inicijala. Jedan njegov list je u 19. veku otkinut i odnet u Rusiju, gde se i danas čuva.",
-      "rec": "jevanđelje"
+      "tezina": 2,
+      "zanimljivost": "Reči sa istim korenom čine porodicu reči. Prefiks se dodaje ispred korena (na-pisati), a sufiks iza njega (pis-ac).",
+      "rec": "koren"
     },
     {
       "tezina": 2,
@@ -282,16 +278,16 @@
       "rec": "devojka"
     },
     {
-      "tezina": 1,
-      "pitanje": "Ko je najpoznatiji junak srpskih epskih pesama, jahač konja Šarca?",
+      "pitanje": "Koji junak narodne pesme odlazi u tursku zemlju da oslobodi zarobljenu ženu, a zatim joj oprosti izdaju?",
       "odgovori": [
-        "Kraljević Marko",
-        "Miloš Obilić",
         "Banović Strahinja",
-        "Starina Novak"
+        "Starina Novak",
+        "Kraljević Marko",
+        "Miloš Obilić"
       ],
-      "zanimljivost": "Marko je bio stvarna istorijska ličnost – sin kralja Vukašina, koji je poginuo 1395. Narodne pesme su ga pretvorile u diva koji pije vino sa svojim Šarcem i bori se sa Musom Kesedžijom.",
-      "rec": "marko"
+      "tezina": 3,
+      "zanimljivost": "Strahinjina žena ga je izdala i prešla na stranu Vlah-Alije, ali kad njeni rođaci zatraže da je kazni, on joj oprosti. Po pesmi je 1981. snimljen i film.",
+      "rec": "oproštaj"
     },
     {
       "tezina": 2,
@@ -319,7 +315,7 @@
     },
     {
       "tezina": 3,
-      "pitanje": "Koja je narodna balada čiji je prepis Fortis objavio u Evropi, pa su je prevodili Gete i Puškin?",
+      "pitanje": "Koju narodnu baladu je Alberto Fortis objavio u Evropi, pa su je prevodili Gete i Valter Skot?",
       "odgovori": [
         "Hasanaginica",
         "Smrt majke Jugovića",
@@ -1006,16 +1002,16 @@
       "rec": "antić"
     },
     {
-      "tezina": 2,
-      "pitanje": "Koji pesnik je napisao „Đački rastanak“, pesmu o rastanku od Karlovaca?",
+      "pitanje": "Ko je napisao „Magareće godine“, roman o nestašnim dečacima u đačkom internatu?",
       "odgovori": [
-        "Branko Radičević",
-        "Laza Kostić",
-        "Đura Jakšić",
-        "Jovan Dučić"
+        "Branko Ćopić",
+        "Dušan Radović",
+        "Miroslav Antić",
+        "Grigor Vitez"
       ],
-      "zanimljivost": "Branko je odrastao u Sremskim Karlovcima. Pesma opisuje đačke nestašluke i lepotu Fruške gore i Stražilova.",
-      "rec": "radičević"
+      "tezina": 2,
+      "zanimljivost": "Ćopić je u romanu opisao i sopstvene đačke dane u Bihaću. Po romanu je 1994. snimljen i istoimeni film.",
+      "rec": "internat"
     },
     {
       "tezina": 2,
@@ -1054,16 +1050,16 @@
       "rec": "dučić"
     },
     {
-      "tezina": 2,
-      "pitanje": "Ko je napisao „Gospođu ministarku“?",
+      "pitanje": "U kojoj Nušićevoj komediji se Jevrem Prokić kandiduje za poslanika?",
       "odgovori": [
-        "Branislav Nušić",
-        "Jovan Sterija Popović",
-        "Stevan Sremac",
-        "Borislav Pekić"
+        "Narodni poslanik",
+        "Sumnjivo lice",
+        "Ožalošćena porodica",
+        "Pokojnik"
       ],
-      "zanimljivost": "Glavna junakinja Živka, kad joj muž postane ministar, postaje uobražena i sva rodbina dolazi po usluge. Komedija je i danas aktuelna.",
-      "rec": "nušić"
+      "tezina": 3,
+      "zanimljivost": "Nušić je „Narodnog poslanika“ napisao 1883, ali je komedija zbog ismevanja izbora i vlasti čekala čak 13 godina da bude izvedena na sceni.",
+      "rec": "poslanik"
     },
     {
       "tezina": 2,
@@ -1115,7 +1111,7 @@
     },
     {
       "tezina": 3,
-      "pitanje": "Ko je napisao roman „Seobe“ i poemu „Lament nad Beogradom“?",
+      "pitanje": "Ko je napisao poemu „Lament nad Beogradom“?",
       "odgovori": [
         "Miloš Crnjanski",
         "Ivo Andrić",
@@ -1198,16 +1194,16 @@
       "rec": "rakić"
     },
     {
-      "tezina": 3,
-      "pitanje": "Kojim pismom je napisan najstariji sačuvani srpski tekst?",
+      "pitanje": "Koji padež odgovara na pitanja „koga? čega?“",
       "odgovori": [
-        "Ćirilicom",
-        "Latinicom",
-        "Glagoljicom",
-        "Grčkim"
+        "Genitiv",
+        "Dativ",
+        "Akuzativ",
+        "Lokativ"
       ],
-      "zanimljivost": "Najstariji srpski spomenici, kao Miroslavljevo jevanđelje, pisani su ćirilicom. Glagoljica je starija, ali se kod Srba brzo povukla pred ćirilicom.",
-      "rec": "roman"
+      "tezina": 2,
+      "zanimljivost": "Genitiv označava i pripadanje: „knjiga moga brata“. Akuzativ odgovara na pitanja „koga? šta?“ – pa se lako pomeša sa genitivom kad je reč o osobama.",
+      "rec": "padež"
     },
     {
       "tezina": 3,
@@ -1295,7 +1291,7 @@
     },
     {
       "tezina": 3,
-      "pitanje": "Šta je „gusle-pevač“ u narodnoj tradiciji?",
+      "pitanje": "Kako se zove narodni pevač koji peva epske pesme uz gusle?",
       "odgovori": [
         "Guslar",
         "Kantor",

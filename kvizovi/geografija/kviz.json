@@ -933,7 +933,7 @@
         "Italija",
         "Francuska"
       ],
-      "zanimljivost": "Španija je druga najveća država Evropske unije. Njeni Kanarska ostrva su zapravo kod obala Afrike.",
+      "zanimljivost": "Španija je po površini druga država Evropske unije, posle Francuske. Njena Kanarska ostrva nalaze se zapravo kod obala Afrike.",
       "mediji": {
         "vrsta": "mapa",
         "oblast": "evropa",
@@ -990,7 +990,7 @@
         "Grenland",
         "Farska ostrva"
       ],
-      "zanimljivost": "Island ima više od 100 vulkana, a struju i grejanje uglavnom dobija iz podzemne vruće vode. Na Islandu nema komaraca!",
+      "zanimljivost": "Island ima više od 100 vulkana, a struju i grejanje uglavnom dobija iz podzemne vruće vode. Dugo je bio jedna od retkih zemalja bez komaraca – prvi su tamo pronađeni tek 2025. godine.",
       "mediji": {
         "vrsta": "mapa",
         "oblast": "evropa",
@@ -1267,39 +1267,39 @@
       "rec": "argentina"
     },
     {
-      "tezina": 1,
-      "pitanje": "Koji kontinent je istovremeno i država?",
+      "pitanje": "Koja država, sastavljena od preko 17.000 ostrva, je označena na mapi?",
       "odgovori": [
-        "Australija",
-        "Antarktik",
-        "Grenland",
-        "Afrika"
+        "Indonezija",
+        "Filipini",
+        "Malezija",
+        "Japan"
       ],
-      "zanimljivost": "Australija je najsuvlji naseljeni kontinent. Tamo žive kenguri, koale i kljunari – životinje kojih nema nigde drugde u prirodi.",
+      "tezina": 2,
+      "zanimljivost": "Indonezija je najveća ostrvska država na svetu i ima više od 270 miliona stanovnika. Na ostrvu Komodo žive komodski varani, a Indonezija ima i najviše aktivnih vulkana na svetu.",
+      "rec": "ostrvo",
       "mediji": {
         "vrsta": "mapa",
         "oblast": "svet",
         "istakni": [
-          "AUS"
+          "IDN"
         ]
-      },
-      "rec": "australija"
+      }
     },
     {
-      "tezina": 1,
       "pitanje": "Čiji je ovo obris?",
       "odgovori": [
-        "Italija",
-        "Grčka",
-        "Hrvatska",
-        "Španija"
+        "Turske",
+        "Grčke",
+        "Irana",
+        "Bugarske"
       ],
-      "zanimljivost": "Italija ima oblik čizme. Na njenoj teritoriji su i dve nezavisne države – Vatikan i San Marino.",
+      "tezina": 2,
+      "zanimljivost": "Samo oko 3% Turske je u Evropi (Istočna Trakija), a ostalo je u Aziji, na poluostrvu Anadoliji. Ipak, upravo u evropskom delu je najveći deo Istanbula.",
+      "rec": "anadolija",
       "mediji": {
         "vrsta": "mapa",
-        "silueta": "ITA"
-      },
-      "rec": "italija"
+        "silueta": "TUR"
+      }
     },
     {
       "tezina": 3,
@@ -1334,52 +1334,52 @@
       "rec": "indija"
     },
     {
-      "tezina": 1,
       "pitanje": "Čiji je ovo obris?",
       "odgovori": [
-        "Australije",
-        "Afrike",
-        "Grenlanda",
-        "Madagaskara"
-      ],
-      "zanimljivost": "Australija je skoro iste veličine kao SAD bez Aljaske, ali ima samo oko 27 miliona stanovnika.",
-      "mediji": {
-        "vrsta": "mapa",
-        "silueta": "AUS"
-      },
-      "rec": "australija"
-    },
-    {
-      "tezina": 2,
-      "pitanje": "Čiji je ovo obris?",
-      "odgovori": [
-        "Brazila",
-        "Argentine",
-        "Indije",
-        "Kanade"
-      ],
-      "zanimljivost": "Brazil zauzima skoro polovinu Južne Amerike. Ime je dobio po drvetu brazil, od koga se dobijala crvena boja.",
-      "mediji": {
-        "vrsta": "mapa",
-        "silueta": "BRA"
-      },
-      "rec": "brazil"
-    },
-    {
-      "tezina": 3,
-      "pitanje": "Čiji je ovo obris?",
-      "odgovori": [
-        "Norveške",
-        "Švedske",
+        "Vijetnama",
         "Čilea",
-        "Finske"
+        "Laosa",
+        "Tajlanda"
       ],
-      "zanimljivost": "Na severu Norveške leti Sunce ne zalazi nedeljama – to je „ponoćno sunce“. Zimi je obrnuto: polarna noć.",
+      "tezina": 3,
+      "zanimljivost": "Vijetnam je dug oko 1.650 km, a na najužem mestu širok samo oko 50 km. Zbog oblika ga porede sa slovom S ili sa motkom na kojoj se nose dve korpe pirinča – dve velike delte, Crvene reke i Mekonga.",
+      "rec": "pirinač",
       "mediji": {
         "vrsta": "mapa",
-        "silueta": "NOR"
-      },
-      "rec": "norveška"
+        "silueta": "VNM"
+      }
+    },
+    {
+      "pitanje": "Čiji je ovo obris?",
+      "odgovori": [
+        "Meksika",
+        "Kolumbije",
+        "Venecuele",
+        "Perua"
+      ],
+      "tezina": 2,
+      "zanimljivost": "Na severozapadu Meksika je dugačko i usko poluostrvo Donja Kalifornija. Meksiko Siti je izgrađen na mestu nekadašnjeg jezera i astečke prestonice Tenočtitlan, pa svake godine pomalo tone.",
+      "rec": "kaktus",
+      "mediji": {
+        "vrsta": "mapa",
+        "silueta": "MEX"
+      }
+    },
+    {
+      "pitanje": "Čiji je ovo obris?",
+      "odgovori": [
+        "Finske",
+        "Švedske",
+        "Estonije",
+        "Letonije"
+      ],
+      "tezina": 3,
+      "zanimljivost": "Finska ima oko 188.000 jezera, pa je zovu „zemlja hiljadu jezera“. Zbog oblika na karti Finci za svoju zemlju kažu da liči na devojku sa podignutom rukom – „Suomi-neito“.",
+      "rec": "jezero",
+      "mediji": {
+        "vrsta": "mapa",
+        "silueta": "FIN"
+      }
     },
     {
       "tezina": 2,
@@ -1498,7 +1498,7 @@
         "Kolorado",
         "Jukon"
       ],
-      "zanimljivost": "Misisipi sa pritokom Misuri je najduži rečni sistem Severne Amerike. Po njemu je pisao Mark Tven u „Doživljajima Toma Sojera“.",
+      "zanimljivost": "Misisipi sa pritokom Misuri je najduži rečni sistem Severne Amerike. Na njemu se odvijaju „Doživljaji Haklberija Fina“ Marka Tvena, koji je i sam bio rečni pilot – i njegovo ime „Mark Tven“ je povik rečnih mornara za dubinu od dva hvata.",
       "mediji": {
         "vrsta": "mapa",
         "oblast": "svet",
@@ -2064,7 +2064,7 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Koja je najveća pećina u Srbiji, poznata po stalaktitima?",
+      "pitanje": "Koja čuvena pećina kod Despotovca, otkrivena tek 1962, poznata je po bogatstvu stalaktita i stalagmita?",
       "odgovori": [
         "Resavska pećina",
         "Lazareva pećina",

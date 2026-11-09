@@ -255,7 +255,7 @@
         "A",
         "S"
       ],
-      "zanimljivost": "E je samo jedna tačkica, a T jedna crta – zato što su to najčešća slova u engleskom. Semjuel Morze je brojao slova u štampariji da bi najčešćima dao najkraće znakove.",
+      "zanimljivost": "E je samo jedna tačkica, a T jedna crta – zato što su to najčešća slova u engleskom. Morze i njegov saradnik Alfred Vejl prebrojali su slova u kutijama štamparije da bi najčešćima dali najkraće znakove.",
       "rec": "morze"
     },
     {
@@ -415,16 +415,16 @@
       "rec": "uran"
     },
     {
-      "tezina": 2,
-      "pitanje": "Koji je prvi čovek kročio na Mesec?",
+      "pitanje": "Koliko je otprilike Mesec udaljen od Zemlje?",
       "odgovori": [
-        "Nil Armstrong",
-        "Jurij Gagarin",
-        "Baz Oldrin",
-        "Majkl Kolins"
+        "Oko 384.000 km",
+        "Oko 38.000 km",
+        "Oko 3,8 miliona km",
+        "Oko 150 miliona km"
       ],
-      "zanimljivost": "To se desilo 20. jula 1969. (misija Apolo 11). Armstrong je rekao: „Ovo je mali korak za čoveka, a veliki skok za čovečanstvo.“ Gagarin je 1961. bio prvi čovek u svemiru.",
-      "rec": "armstrong"
+      "tezina": 2,
+      "zanimljivost": "U taj razmak bi stale sve ostale planete Sunčevog sistema, poređane jedna do druge! Udaljenost od 150 miliona km je, inače, razdaljina od Zemlje do Sunca.",
+      "rec": "mesec"
     },
     {
       "tezina": 3,
@@ -1004,7 +1004,11 @@
         "Andre Amper"
       ],
       "zanimljivost": "Volta je slagao naizmenično pločice cinka i bakra, odvojene tkaninom natopljenom slanom vodom. Bilo je to 1800. godine.",
-      "rec": "baterija"
+      "rec": "baterija",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/volta.jpg"
+      }
     },
     {
       "tezina": 2,
@@ -1016,7 +1020,11 @@
         "Alesandro Volta"
       ],
       "zanimljivost": "Frenklin je, kaže priča, puštao zmaja tokom oluje da dokaže da je munja električna pojava. To je bilo izuzetno opasno – nikada ne pokušavajte!",
-      "rec": "gromobran"
+      "rec": "gromobran",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/frenklin.jpg"
+      }
     },
     {
       "tezina": 2,
@@ -1160,7 +1168,11 @@
         "Ugašeno Sunce"
       ],
       "zanimljivost": "Prvu „sliku“ crne rupe snimili su astronomi 2019, koristeći teleskope širom sveta. U središtu našeg Mlečnog puta je ogromna crna rupa.",
-      "rec": "gravitacija"
+      "rec": "gravitacija",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/crna-rupa.jpg"
+      }
     },
     {
       "tezina": 2,
@@ -1184,7 +1196,11 @@
         "Tiho Brahe (Danska)"
       ],
       "zanimljivost": "Kopernik je knjigu objavio 1543, pred samu smrt. Ptolemej je, nasuprot tome, verovao da je Zemlja nepomična u centru svemira.",
-      "rec": "kopernik"
+      "rec": "kopernik",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/kopernik.jpg"
+      }
     },
     {
       "tezina": 3,
@@ -1232,7 +1248,11 @@
         "Klatno menja svoju dužinu tokom dana"
       ],
       "zanimljivost": "Leon Fuko je 1851. okačio teg od 28 kg na žicu od 67 m u pariskom Panteonu. Ravan njihanja se sporo okretala – zapravo se Zemlja okretala ispod klatna.",
-      "rec": "klatno"
+      "rec": "klatno",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/fuko.jpg"
+      }
     },
     {
       "tezina": 3,
@@ -1280,7 +1300,11 @@
         "Londonski most"
       ],
       "zanimljivost": "Vetar od samo oko 60 km/h izazvao je sve jače talasanje mosta u SAD dok se nije srušio. Od tada se mostovi obavezno ispituju u aerodinamičnim tunelima.",
-      "rec": "most"
+      "rec": "most",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/takoma.jpg"
+      }
     },
     {
       "tezina": 3,
@@ -1292,7 +1316,11 @@
         "Vilhelm Rendgen"
       ],
       "zanimljivost": "Bekerel je ostavio uranijumovu so na zamotanu fotografsku ploču u fioci, a ploča je ipak pocrnela. Jedinica za radioaktivnost zove se bekerel.",
-      "rec": "bekerel"
+      "rec": "bekerel",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/bekerel.jpg"
+      }
     },
     {
       "tezina": 2,
@@ -1304,7 +1332,11 @@
         "Tomas Edison"
       ],
       "zanimljivost": "Prvi snimak bio je šaka Rendgenove supruge, sa prstenom. Dobio je prvu Nobelovu nagradu za fiziku 1901. Kod nas se snimak zove „rendgen“, po njemu.",
-      "rec": "rendgen"
+      "rec": "rendgen",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/rendgen-saka.jpg"
+      }
     },
     {
       "tezina": 3,
@@ -1316,7 +1348,11 @@
         "Radio-talase koji prolaze kroz zid"
       ],
       "zanimljivost": "Većina čestica je prošla kroz zlato, ali su se neke odbile nazad – kao da „topovsko đule odskoči od maramice“, rekao je Raderford.",
-      "rec": "jezgro"
+      "rec": "jezgro",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/raderford.jpg"
+      }
     },
     {
       "tezina": 3,
@@ -1424,7 +1460,11 @@
         "Čikago (Ilinois)"
       ],
       "zanimljivost": "Pričalo se da su od Teslinih ogleda varnice skakale iz potkovica konja u okolini. Menlo Park je bio mesto Edisonove laboratorije, a kasnije je Tesla na Long Ajlendu gradio kulu Vardenklif.",
-      "rec": "kolorado"
+      "rec": "kolorado",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/tesla-kolorado.jpg"
+      }
     },
     {
       "tezina": 3,

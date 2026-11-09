@@ -355,7 +355,7 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Koji svetitelj je bio prvi iguman Studenice i napisao njena pravila?",
+      "pitanje": "Koji svetitelj je bio iguman Studenice i napisao Studenički tipik – njena pravila?",
       "odgovori": [
         "Sveti Sava",
         "Sveti Simeon",
@@ -399,7 +399,11 @@
         "Savina"
       ],
       "zanimljivost": "Manastir Ostrog je uklesan u gotovo vertikalnu stenu, na oko 900 m nadmorske visine. Jedno je od najposećenijih hrišćanskih svetilišta na Balkanu – dolaze i pravoslavni, i katolici, i muslimani.",
-      "rec": "manastir"
+      "rec": "manastir",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/ostrog.jpg"
+      }
     },
     {
       "tezina": 2,
@@ -615,7 +619,11 @@
         "Hram Svetog Save"
       ],
       "zanimljivost": "Crkva Svetog Marka je završena 1940. U njoj su sarkofag sa moštima cara Dušana, prenetim iz Prizrena, i grob kralja Aleksandra Obrenovića i kraljice Drage.",
-      "rec": "crkva"
+      "rec": "crkva",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/crkva-svetog-marka.jpg"
+      }
     },
     {
       "tezina": 2,
@@ -627,7 +635,11 @@
         "Saborna crkva"
       ],
       "zanimljivost": "Pored Ružice je i kapela Svete Petke, sa izvorom za koji se veruje da ima lekovitu vodu.",
-      "rec": "ružica"
+      "rec": "ružica",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/ruzica.jpg"
+      }
     },
     {
       "tezina": 2,
@@ -690,16 +702,16 @@
       "rec": "klisura"
     },
     {
-      "tezina": 2,
-      "pitanje": "Kako se zove Lazareva zadužbina kod Ćuprije, sa kulama i bedemima?",
+      "pitanje": "Koji manastir je kralj Milutin podigao za svoj grob, iako se njegove mošti danas čuvaju u Sofiji?",
       "odgovori": [
-        "Ravanica",
-        "Manasija",
-        "Lazarica",
-        "Kalenić"
+        "Banjska",
+        "Gračanica",
+        "Studenica",
+        "Bogorodica Ljeviška"
       ],
-      "zanimljivost": "Ravanica je nekada imala sedam kula. U crkvi su freske Lazareve porodice, a na zidinama su vidljivi tragovi vekovnih razaranja.",
-      "rec": "ravanica"
+      "tezina": 3,
+      "zanimljivost": "Banjska kod Zvečana bila je građena od kamena tri boje, kao Dečani. Milutinove mošti su posle Kosovske bitke prenete u Trepču, a kasnije u Sofiju, gde se i danas čuvaju u crkvi Svete Nedelje.",
+      "rec": "banjska"
     },
     {
       "tezina": 2,
@@ -786,16 +798,16 @@
       "rec": "kupola"
     },
     {
-      "tezina": 3,
-      "pitanje": "U kom manastiru se nalazi čuvena freska „Uspenje Bogorodice“, smatrana jednim od vrhunaca evropskog slikarstva 13. veka?",
+      "pitanje": "U kojoj svojoj zadužbini kod Prizrena je sahranjen car Dušan?",
       "odgovori": [
-        "Sopoćani",
-        "Studenica",
-        "Žiča",
-        "Ravanica"
+        "Sveti Arhanđeli",
+        "Gračanica",
+        "Visoki Dečani",
+        "Banjska"
       ],
-      "zanimljivost": "Freske Sopoćana su naslikane oko 1265. Umetnički istoričari ih porede sa delima renesanse, iako su starije od Đota.",
-      "rec": "sopoćani"
+      "tezina": 3,
+      "zanimljivost": "Manastir Svetih Arhanđela su u 16. veku razorili Turci i od njegovog kamena podigli džamiju u Prizrenu. Dušanove mošti pronađene su 1927. i prenete u Beograd, u crkvu Svetog Marka.",
+      "rec": "arhanđeli"
     },
     {
       "tezina": 3,

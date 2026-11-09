@@ -506,7 +506,11 @@
         "Gajde"
       ],
       "zanimljivost": "Žica i gudalo gusala tradicionalno su od konjske dlake. Pevanje uz gusle upisano je 2018. na UNESCO listu nematerijalnog kulturnog nasleđa. I Filip Višnjić je bio guslar.",
-      "rec": "gusle"
+      "rec": "gusle",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/gusle.jpg"
+      }
     },
     {
       "tezina": 2,
@@ -754,7 +758,11 @@
         "Violina"
       ],
       "zanimljivost": "Kontrabas je viši od odraslog čoveka, pa se svira stojeći ili sedeći na visokoj stolici. Često se svira i trzanjem prstima – u džezu.",
-      "rec": "kontrabas"
+      "rec": "kontrabas",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/kontrabas.jpg"
+      }
     },
     {
       "tezina": 2,
@@ -766,7 +774,11 @@
         "Horna"
       ],
       "zanimljivost": "Svirač pomera klizač napred-nazad da bi promenio visinu tona. Trombon postoji preko 500 godina.",
-      "rec": "trombon"
+      "rec": "trombon",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/trombon.jpg"
+      }
     },
     {
       "tezina": 2,
@@ -790,7 +802,11 @@
         "Iz Italije"
       ],
       "zanimljivost": "Belgijanac Adolf Saks ga je izumeo oko 1840. Saksofon je od metala, ali je drveni duvački instrument, jer ima pisak sa trskom.",
-      "rec": "saksofon"
+      "rec": "saksofon",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/saksofon.png"
+      }
     },
     {
       "tezina": 2,
@@ -802,7 +818,11 @@
         "Đuzepe Verdi"
       ],
       "zanimljivost": "Stradivari je živeo u Kremoni i napravio oko 1.100 instrumenata. Sačuvano je oko 650, a neki vrede više od 15 miliona dolara.",
-      "rec": "stradivari"
+      "rec": "stradivari",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/stradivari.jpg"
+      }
     },
     {
       "tezina": 2,
@@ -897,20 +917,20 @@
         "Mocart",
         "Rosini"
       ],
-      "zanimljivost": "„Aida“ je naručena povodom otvaranja nove opere u Kairu. Njen „Trijumfalni marš“ izvodi se i na stadionima.",
+      "zanimljivost": "„Aidu“ je naručio egipatski kediv za novu operu u Kairu, gde je praizvedena 1871. Njen „Trijumfalni marš“ izvodi se i na stadionima.",
       "rec": "verdi"
     },
     {
-      "tezina": 2,
-      "pitanje": "Ko je komponovao balet „Orašar“?",
+      "pitanje": "Koji kompozitor je napisao brzi, žestoki „Ples sablji“ iz baleta „Gajane“?",
       "odgovori": [
-        "Petar Iljič Čajkovski",
-        "Igor Stravinski",
-        "Sergej Prokofjev",
-        "Modest Musorgski"
+        "Aram Hačaturjan",
+        "Nikolaj Rimski-Korsakov",
+        "Modest Musorgski",
+        "Aleksandar Borodin"
       ],
-      "zanimljivost": "„Orašar“ se izvodi za Božić i Novu godinu u pozorištima širom sveta. Premijera 1892. nije bila uspešna!",
-      "rec": "čajkovski"
+      "tezina": 3,
+      "zanimljivost": "Hačaturjan je „Ples sablji“ napisao 1942. za samo nekoliko sati, jer je baletu na probi zatrebala još jedna igra. Kasnije je mrzeo što ga svi znaju samo po tom kratkom komadu.",
+      "rec": "sablja"
     },
     {
       "tezina": 2,
@@ -921,7 +941,7 @@
         "Rimski-Korsakov",
         "Mocart"
       ],
-      "zanimljivost": "Petar je gudački kvartet, ptica flauta, patka oboa, mačka klarinet, deda fagot, a vuk – tri horne. Delo je napisano da deca upoznaju orkestar.",
+      "zanimljivost": "Petra predstavljaju gudači, pticu flauta, patku oboa, mačku klarinet, dedu fagot, a vuka – tri horne. Prokofjev je delo napisao da bi deca upoznala orkestar.",
       "rec": "prokofjev"
     },
     {
@@ -969,7 +989,7 @@
         "Gitarom",
         "Orguljama"
       ],
-      "zanimljivost": "Šopen je napisao valcere, nokturna, mazurke i polonezu – plesove svoje Poljske. Prvi koncert je održao sa samo 7 godina.",
+      "zanimljivost": "Šopen je napisao valcere, nokturna, mazurke i poloneze – plesove svoje Poljske. Prvu kompoziciju objavio je sa 7, a prvi javni koncert održao sa 8 godina.",
       "rec": "klavir"
     },
     {
@@ -1114,7 +1134,11 @@
         "Udaraljka, kao bubanj"
       ],
       "zanimljivost": "Tamburaški orkestri su veoma popularni u Vojvodini. Tambura je u naše krajeve stigla verovatno sa Istoka.",
-      "rec": "tamburica"
+      "rec": "tamburica",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/tamburica.jpg"
+      }
     },
     {
       "tezina": 2,
@@ -1249,16 +1273,16 @@
       "rec": "džez"
     },
     {
-      "tezina": 3,
-      "pitanje": "Koji kompozitor je napisao „Četiri godišnja doba“ i bio sveštenik?",
+      "pitanje": "Koji ruski kompozitor je napisao „Slike sa izložbe“, posle šetnje kroz izložbu slika preminulog prijatelja?",
       "odgovori": [
-        "Antonio Vivaldi",
-        "Arkanđelo Koreli",
-        "Tomazo Albinoni",
-        "Đuzepe Tartini"
+        "Modest Musorgski",
+        "Petar Iljič Čajkovski",
+        "Sergej Rahmanjinov",
+        "Dmitrij Šostakovič"
       ],
-      "zanimljivost": "Zbog crvene kose zvali su ga „Crveni sveštenik“. Pola veka posle smrti bio je skoro zaboravljen, a ponovo otkriven u 20. veku.",
-      "rec": "vivaldi"
+      "tezina": 3,
+      "zanimljivost": "Delo je napisano za klavir 1874, u spomen na slikara Viktora Hartmana. Najpoznatiju verziju za orkestar napravio je kasnije Moris Ravel. „Šetnja“ (promenada) između stavova je kao hod od slike do slike.",
+      "rec": "izložba"
     },
     {
       "tezina": 3,

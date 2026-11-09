@@ -770,16 +770,16 @@
       "rec": "desetoboj"
     },
     {
-      "tezina": 2,
-      "pitanje": "Koji sport je izmislio Džejms Nejsmit, nastavnik fizičkog?",
+      "pitanje": "Na kojoj visini od poda je obruč košarkaškog koša?",
       "odgovori": [
-        "Košarku",
-        "Odbojku",
-        "Rukomet",
-        "Bejzbol"
+        "3,05 m",
+        "2,80 m",
+        "3,50 m",
+        "2,50 m"
       ],
-      "zanimljivost": "Prvi koševi su bile korpe za breskve, pa je posle svakog koša neko vadio loptu merdevinama. Mreža bez dna je uvedena tek 1906.",
-      "rec": "košarka"
+      "tezina": 2,
+      "zanimljivost": "To je tačno 10 stopa – na toj visini je Džejms Nejsmit 1891. zakačio korpu za breskve na ogradu galerije u sali. Visina se od tada nije promenila, iako su igrači danas mnogo viši.",
+      "rec": "obruč"
     },
     {
       "tezina": 2,
@@ -827,7 +827,11 @@
         "Ronaldo"
       ],
       "zanimljivost": "Pele je postigao preko 1.000 golova u karijeri. Prvo Svetsko prvenstvo je osvojio sa samo 17 godina, 1958.",
-      "rec": "pele"
+      "rec": "pele",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/pele.jpg"
+      }
     },
     {
       "tezina": 2,
@@ -902,16 +906,16 @@
       "rec": "partizan"
     },
     {
-      "tezina": 2,
-      "pitanje": "Koja srpska teniserka je osvojila Rolan Garos 2008?",
+      "pitanje": "Koji srpski plivač je na OI u Pekingu 2008. izgubio zlato od Majkla Felpsa za samo jednu stotinku sekunde (100 m delfin)?",
       "odgovori": [
-        "Ana Ivanović",
-        "Jelena Janković",
-        "Nina Stojanović",
-        "Olga Danilović"
+        "Milorad Čavić",
+        "Velimir Stjepanović",
+        "Andrej Barna",
+        "Nemanja Majdov"
       ],
-      "zanimljivost": "Iste godine je bila i prva na WTA listi. Jelena Janković je takođe bila prva na svetu 2008.",
-      "rec": "ivanović"
+      "tezina": 3,
+      "zanimljivost": "Čavić je do cilja doplivao prvi, ali je Felps jače udario u ploču i zaustavio vreme stotinku ranije. Snimci iz brze kamere potvrdili su rezultat – Čavić je osvojio srebro, a godinu dana kasnije postao svetski prvak na 50 m delfin.",
+      "rec": "delfin"
     },
     {
       "tezina": 2,
@@ -938,16 +942,16 @@
       "rec": "skok"
     },
     {
-      "tezina": 2,
-      "pitanje": "Koja srpska atletičarka je svetska prvakinja u skoku udalj u dvorani (2022)?",
+      "pitanje": "Koja srpska teniserka je 2008. završila godinu kao prva na svetu, iako nikada nije osvojila grend slem u singlu?",
       "odgovori": [
-        "Ivana Vuleta (Španović)",
-        "Tijana Bogdanović",
-        "Angela Đuričić",
-        "Milica Mandić"
+        "Jelena Janković",
+        "Ana Ivanović",
+        "Monika Seleš",
+        "Bojana Jovanovski"
       ],
-      "zanimljivost": "Ivana Vuleta je 2022. postala svetska prvakinja skokom od 7,06 m – na prvenstvu održanom u Beogradu.",
-      "rec": "vuleta"
+      "tezina": 3,
+      "zanimljivost": "Jelena Janković je 2008. igrala finale US opena. Grend slem je ipak osvojila – u mešovitim parovima na Vimbldonu 2007, sa Džejmijem Marejem.",
+      "rec": "teniserka"
     },
     {
       "tezina": 2,
@@ -974,16 +978,16 @@
       "rec": "sarajevo"
     },
     {
-      "tezina": 2,
-      "pitanje": "Šta je maraton u kilometrima?",
+      "pitanje": "Koliko je dug polumaraton?",
       "odgovori": [
-        "42,195",
-        "21,0975",
-        "40,0 tačno",
-        "50 kilometara"
+        "21,0975 km",
+        "25 km",
+        "20 km",
+        "15 km"
       ],
-      "zanimljivost": "Polumaraton je 21,0975 km. Beogradski maraton je jedan od najstarijih u ovom delu Evrope – od 1988.",
-      "rec": "maraton"
+      "tezina": 2,
+      "zanimljivost": "Polumaraton je tačno pola maratona. Beogradski maraton, koji se trči od 1988, ima i trku na polumaratonskoj stazi, u kojoj učestvuje mnogo više trkača nego u celom maratonu.",
+      "rec": "trka"
     },
     {
       "tezina": 2,
@@ -1090,7 +1094,7 @@
         "Dejan Stanković",
         "Siniša Mihajlović"
       ],
-      "zanimljivost": "Rajko Mitić je bio prvi kapiten Crvene zvezde i igrao je 59 utakmica za reprezentaciju. Stadion nosi njegovo ime od 2014.",
+      "zanimljivost": "Rajko Mitić je bio legendarni kapiten Crvene zvezde i odigrao 59 utakmica za reprezentaciju. Stadion nosi njegovo ime od 2014.",
       "rec": "mitić"
     },
     {
@@ -1199,7 +1203,11 @@
         "Abebe Bikila"
       ],
       "zanimljivost": "Spiridon Luis je bio nosač vode. Postao je nacionalni junak Grčke, a mnogi su mu nudili poklone – od odela do besplatnog brijanja doživotno.",
-      "rec": "maraton"
+      "rec": "maraton",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/spiridon-luis.jpg"
+      }
     },
     {
       "tezina": 3,
@@ -1211,7 +1219,11 @@
         "Elijud Kipčoge"
       ],
       "zanimljivost": "Bikila je trčao bos jer mu nijedne patike nisu odgovarale. Četiri godine kasnije je ponovo pobedio – u patikama.",
-      "rec": "maraton"
+      "rec": "maraton",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/bikila.jpg"
+      }
     },
     {
       "tezina": 3,
