@@ -356,11 +356,7 @@
         "Kitova ajkula"
       ],
       "zanimljivost": "Srce plavog kita teži oko 180 kilograma, a njegov glas se pod vodom čuje stotinama kilometara daleko.",
-      "rec": "kit",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🐋"
-      }
+      "rec": "kit"
     },
     {
       "lekcija": 1,
@@ -533,11 +529,7 @@
         "Termometar"
       ],
       "zanimljivost": "Ornitolozi ptice obeležavaju i laganim prstenom na nozi – tako se saznalo da neke lastavice zimi lete čak do južne Afrike.",
-      "rec": "dvogled",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🔭🐦🌳"
-      }
+      "rec": "dvogled"
     },
     {
       "lekcija": 2,
@@ -644,17 +636,17 @@
       "rec": "virus"
     },
     {
-      "lekcija": 3,
-      "tezina": 1,
-      "pitanje": "Šta je zajedničko svim živim bićima?",
+      "pitanje": "Koje od ovih živih bića ne može samo da stvara hranu fotosintezom?",
       "odgovori": [
-        "Rastu, razmnožavaju se i hrane se",
-        "Sva živa bića imaju kosti i zglobove",
-        "Sva živa bića umeju da lete ili plivaju",
-        "Sva živa bića imaju zelenu boju lista"
+        "Pečurka",
+        "Hrast",
+        "Pšenica",
+        "Alga"
       ],
-      "zanimljivost": "Kristal soli takođe može da „raste“, ali nema metabolizam niti se razmnožava – zato nije živ.",
-      "rec": "osobine"
+      "tezina": 2,
+      "zanimljivost": "Gljive nemaju hlorofil, pa se hrane gotovom hranom – najčešće razlažu ostatke biljaka i životinja. Zato su nekada svrstavane među biljke, a danas su posebno carstvo.",
+      "rec": "gljiva",
+      "lekcija": 3
     },
     {
       "lekcija": 3,
@@ -719,11 +711,7 @@
         "Glista"
       ],
       "zanimljivost": "Bez vode nema života – ali sama voda je neživa materija, deo nežive prirode.",
-      "rec": "voda",
-      "mediji": {
-        "vrsta": "molekul",
-        "ime": "voda"
-      }
+      "rec": "voda"
     },
     {
       "lekcija": 3,
@@ -830,17 +818,17 @@
       "rec": "bakterija"
     },
     {
-      "lekcija": 4,
-      "tezina": 1,
-      "pitanje": "Od čega su građena sva živa bića?",
+      "pitanje": "Koje ćelije u telu čoveka mogu biti najduže, i duže od jednog metra?",
       "odgovori": [
-        "Od ćelija",
-        "Od atoma kiseonika samo",
-        "Od kostiju",
-        "Od kamena"
+        "Nervne ćelije",
+        "Mišićne ćelije",
+        "Crvena krvna zrnca",
+        "Ćelije kože"
       ],
-      "zanimljivost": "U telu odraslog čoveka ima oko 30.000 milijardi ćelija.",
-      "rec": "ćelija"
+      "tezina": 3,
+      "zanimljivost": "Neke nervne ćelije pružaju svoj dugi nastavak od kičmene moždine sve do prstiju na nogama. Crvena krvna zrnca su, naprotiv, sićušna – oko 7 hiljaditih delova milimetra.",
+      "rec": "neuron",
+      "lekcija": 4
     },
     {
       "lekcija": 4,
@@ -909,11 +897,7 @@
         "Bakterija"
       ],
       "zanimljivost": "Nojevo jaje teži oko 1,5 kilograma – kao 25 kokošijih jaja.",
-      "rec": "jaje",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🥚🐦‍⬛"
-      }
+      "rec": "jaje"
     },
     {
       "lekcija": 4,
@@ -978,11 +962,7 @@
         "Stetoskopom"
       ],
       "zanimljivost": "Prvi mikroskopi s kraja 16. veka uveličavali su samo desetak puta, a današnji elektronski mikroskopi i milionima puta.",
-      "rec": "mikroskop",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🔬"
-      }
+      "rec": "mikroskop"
     },
     {
       "lekcija": 4,
@@ -1050,17 +1030,17 @@
       "rec": "ameba"
     },
     {
-      "lekcija": 5,
-      "tezina": 2,
-      "pitanje": "Šta je tkivo?",
+      "pitanje": "Koje tkivo prekriva telo spolja i oblaže unutrašnje organe?",
       "odgovori": [
-        "Grupa sličnih ćelija koje obavljaju isti posao",
-        "Jedan organ tela, na primer srce, jetra ili pluća",
-        "Ćelija bez jedra koja se ne može deliti nikada više",
-        "Deo ćelije u kome se nalazi sav nasledni materijal"
+        "Epitelno (pokrovno)",
+        "Mišićno",
+        "Nervno",
+        "Vezivno"
       ],
-      "zanimljivost": "Mišićno tkivo se sastoji od dugačkih ćelija koje mogu da se skraćuju – zato mišići mogu da pokreću telo.",
-      "rec": "tkivo"
+      "tezina": 2,
+      "zanimljivost": "Koža je spolja pokrivena epitelom čije se ćelije stalno ljušte i obnavljaju – za oko mesec dana zameni se ceo spoljni sloj kože.",
+      "rec": "epitel",
+      "lekcija": 5
     },
     {
       "lekcija": 5,
@@ -1294,11 +1274,7 @@
         "Pet – carstvo, klasa, red, rod i vrsta"
       ],
       "zanimljivost": "Naučni naziv čoveka je Homo sapiens – „razuman čovek“; takvi nazivi pišu se latinskim jezikom da bi ih razumeli naučnici celog sveta.",
-      "rec": "line",
-      "mediji": {
-        "vrsta": "formula",
-        "tekst": "Homo sapiens"
-      }
+      "rec": "line"
     },
     {
       "lekcija": 6,
@@ -1376,11 +1352,7 @@
         "Protistima"
       ],
       "zanimljivost": "Morska sasa je srodnik meduza i korala – ima pipke sa žarnim ćelijama kojima omamljuje plen.",
-      "rec": "sasa",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🌺❓🌊"
-      }
+      "rec": "sasa"
     },
     {
       "lekcija": 6,
@@ -1523,11 +1495,7 @@
         "Šećer i so iz zemljišta i đubriva"
       ],
       "zanimljivost": "Gas ugljen-dioksid biljka uzima iz vazduha kroz sićušne otvore na listu – stome.",
-      "rec": "fotosinteza",
-      "mediji": {
-        "vrsta": "molekul",
-        "ime": "ugljen-dioksid"
-      }
+      "rec": "fotosinteza"
     },
     {
       "lekcija": 7,
@@ -1557,11 +1525,7 @@
         "Ništa"
       ],
       "zanimljivost": "Krava ima želudac sa četiri dela i ponovo preživa hranu – da bi svarila tvrdu travu.",
-      "rec": "biljojed",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🐄🌿"
-      }
+      "rec": "biljojed"
     },
     {
       "lekcija": 7,
@@ -1574,11 +1538,7 @@
         "Razlagači"
       ],
       "zanimljivost": "Lav pojede i do 40 kilograma mesa u jednom obroku, a zatim nekoliko dana ne mora da jede.",
-      "rec": "mesojed",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🦁🥩"
-      }
+      "rec": "mesojed"
     },
     {
       "lekcija": 7,
@@ -1669,11 +1629,7 @@
         "Vodonik"
       ],
       "zanimljivost": "Mozak čini samo 2% mase tela, a troši oko petinu kiseonika koji udahnemo.",
-      "rec": "kiseonik",
-      "mediji": {
-        "vrsta": "molekul",
-        "ime": "kiseonik"
-      }
+      "rec": "kiseonik"
     },
     {
       "lekcija": 8,
@@ -1686,11 +1642,7 @@
         "Ozon"
       ],
       "zanimljivost": "Kada dunemo kroz slamčicu u krečnu vodu, ona se zamuti – to je dokaz ugljen-dioksida u izdahnutom vazduhu.",
-      "rec": "izdah",
-      "mediji": {
-        "vrsta": "molekul",
-        "ime": "ugljen-dioksid"
-      }
+      "rec": "izdah"
     },
     {
       "lekcija": 8,
@@ -1703,11 +1655,7 @@
         "Kroz usta u stomak"
       ],
       "zanimljivost": "Škrge su crvene zato što kroz njih protiče mnogo krvi koja uzima kiseonik iz vode.",
-      "rec": "škrge",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🐟💧"
-      }
+      "rec": "škrge"
     },
     {
       "lekcija": 8,
@@ -1746,11 +1694,7 @@
         "Traheama, kao insekti"
       ],
       "zanimljivost": "Punoglavci dišu škrgama, a odrasle žabe plućima i vlažnom kožom – zato koža žabe mora uvek da bude vlažna.",
-      "rec": "žaba",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🐸"
-      }
+      "rec": "žaba"
     },
     {
       "lekcija": 8,
@@ -1789,11 +1733,7 @@
         "Morski konjic"
       ],
       "zanimljivost": "Delfini spavaju tako da im se odmara samo jedna polovina mozga – druga polovina pazi da ne zaborave da izrone i udahnu.",
-      "rec": "delfin",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🐬"
-      }
+      "rec": "delfin"
     },
     {
       "lekcija": 8,
@@ -1884,11 +1824,7 @@
         "Izbacuje ih kroz plodove i semenke tokom zime i rano u proleće"
       ],
       "zanimljivost": "Žuta i crvena boja lišća postoje i leti, ali ih „prekriva“ zeleni hlorofil – ujesen se on razgrađuje pa se pokažu.",
-      "rec": "lišće",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🍂🍁🌳"
-      }
+      "rec": "lišće"
     },
     {
       "lekcija": 9,
@@ -1919,7 +1855,7 @@
     {
       "lekcija": 9,
       "tezina": 2,
-      "pitanje": "Kroz koji organ, osim bubrega, izlučujemo ugljen-dioksid?",
+      "pitanje": "Kroz koji organ izbacujemo ugljen-dioksid iz tela?",
       "odgovori": [
         "Pluća",
         "Želudac",
@@ -2204,11 +2140,7 @@
         "Toplotom tela plena, koju osete kožom na krilima i ušima"
       ],
       "zanimljivost": "Ljudi su na istom principu izmislili sonar – a slepi miševi ga koriste već desetine miliona godina.",
-      "rec": "eholokacija",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🦇🔊〰️🦟"
-      }
+      "rec": "eholokacija"
     },
     {
       "lekcija": 10,
@@ -2221,11 +2153,7 @@
         "Dodirom"
       ],
       "zanimljivost": "Pas ima oko 300 miliona mirisnih ćelija u nosu, a čovek samo oko 6 miliona.",
-      "rec": "njuh",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🐕👃"
-      }
+      "rec": "njuh"
     },
     {
       "lekcija": 11,
@@ -2251,11 +2179,7 @@
         "Pipcima kojima se odguruju"
       ],
       "zanimljivost": "Sabljarka i jedrilica su među najbržim ribama – mogu da plivaju više desetina kilometara na sat.",
-      "rec": "peraje",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🐟➡️"
-      }
+      "rec": "peraje"
     },
     {
       "lekcija": 11,
@@ -2268,11 +2192,7 @@
         "Poljski zec"
       ],
       "zanimljivost": "Gepard za samo 3 sekunde ubrza do 100 km/h, ali tu brzinu može da drži samo nekoliko stotina metara.",
-      "rec": "gepard",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🐆💨"
-      }
+      "rec": "gepard"
     },
     {
       "lekcija": 11,
@@ -2324,11 +2244,7 @@
         "Kotrlja se po tlu skriven u svojoj kućici"
       ],
       "zanimljivost": "Sluz puža je toliko klizava i istovremeno lepljiva da puž može da puzi i preko oštrice noža bez povrede.",
-      "rec": "puž",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🐌"
-      }
+      "rec": "puž"
     },
     {
       "lekcija": 11,
@@ -2354,11 +2270,7 @@
         "Kotrlja se po talasima"
       ],
       "zanimljivost": "Isti princip reaktivnog kretanja koriste i lignje i hobotnice kada beže od opasnosti.",
-      "rec": "meduza",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🪼"
-      }
+      "rec": "meduza"
     },
     {
       "lekcija": 11,
@@ -2371,11 +2283,7 @@
         "Golub"
       ],
       "zanimljivost": "Pingvini pod vodom „lete“ – krila su im pretvorena u čvrsta peraja.",
-      "rec": "pingvin",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🐧🌊"
-      }
+      "rec": "pingvin"
     },
     {
       "lekcija": 11,
@@ -2388,11 +2296,7 @@
         "Lasta"
       ],
       "zanimljivost": "Pri obrušavanju sivi soko dostiže i preko 300 km/h – brže od brzog voza.",
-      "rec": "soko",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🦅⬇️💨"
-      }
+      "rec": "soko"
     },
     {
       "lekcija": 11,
@@ -2418,11 +2322,7 @@
         "Klizi samo niz brdo, a uzbrdo je nosi vetar ili voda potoka"
       ],
       "zanimljivost": "Neke zmije imaju i više od 300 pršljenova sa rebrima – zato su tako savitljive.",
-      "rec": "zmija",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🐍"
-      }
+      "rec": "zmija"
     },
     {
       "lekcija": 11,
@@ -2448,11 +2348,7 @@
         "Dugačak vrat"
       ],
       "zanimljivost": "Kopito konja je zapravo jedan jako razvijen prst – konj „hoda na prstima“.",
-      "rec": "kopito",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🐎"
-      }
+      "rec": "kopito"
     },
     {
       "lekcija": 12,
@@ -2572,17 +2468,17 @@
       "rec": "spora"
     },
     {
-      "lekcija": 12,
-      "tezina": 2,
-      "pitanje": "Šta je oplođenje?",
+      "pitanje": "Gde se kod cvetnica nalaze muške polne ćelije?",
       "odgovori": [
-        "Spajanje muške i ženske polne ćelije",
-        "Izlazak mladunca iz jajeta",
-        "Opadanje lišća",
-        "Rast biljke"
+        "U polenovim zrnima",
+        "U laticama cveta",
+        "U korenu biljke",
+        "U listovima"
       ],
-      "zanimljivost": "Kod riba i žaba oplođenje se najčešće dešava u vodi, van tela ženke.",
-      "rec": "oplođenje"
+      "tezina": 2,
+      "zanimljivost": "Polen nastaje u prašnicima. Vetar, insekti ili ptice prenose ga na tučak – to je oprašivanje, posle kog može doći do oplođenja.",
+      "rec": "polen",
+      "lekcija": 12
     },
     {
       "lekcija": 12,
@@ -2595,11 +2491,7 @@
         "Deobom jedne ćelije na dve nove, isto kao i bakterije"
       ],
       "zanimljivost": "Jagodino „seme“ su zapravo sitni plodovi na površini – jedna jagoda ih ima oko 200.",
-      "rec": "jagoda",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🍓"
-      }
+      "rec": "jagoda"
     },
     {
       "lekcija": 12,
@@ -2612,11 +2504,7 @@
         "Golub pismonoša"
       ],
       "zanimljivost": "Da bi od kraka izrasla cela zvezda, krak mora da sadrži i deo središnjeg diska.",
-      "rec": "zvezda",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "⭐🌊"
-      }
+      "rec": "zvezda"
     },
     {
       "lekcija": 12,
@@ -2642,11 +2530,7 @@
         "Pas"
       ],
       "zanimljivost": "Kokoška snese i bez petla – ali iz takvog jajeta, neoplođenog, ne može se izleći pile.",
-      "rec": "jaje",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🐔🥚🐣"
-      }
+      "rec": "jaje"
     },
     {
       "lekcija": 12,
@@ -2741,11 +2625,7 @@
         "Gušter"
       ],
       "zanimljivost": "Punoglavac diše škrgama i ima rep, a tokom preobražaja dobija noge i pluća, a rep mu nestaje.",
-      "rec": "punoglavac",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🐸"
-      }
+      "rec": "punoglavac"
     },
     {
       "lekcija": 13,
@@ -2940,11 +2820,7 @@
         "Gradski vrabac (sa krova)"
       ],
       "zanimljivost": "Kornjača Džonatan sa ostrva Sveta Jelena izlegla se oko 1832. i dočekala je 21. vek – smatra se najstarijom poznatom kopnenom životinjom.",
-      "rec": "kornjača",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🐢"
-      }
+      "rec": "kornjača"
     },
     {
       "lekcija": 14,
@@ -2983,11 +2859,7 @@
         "Jedan mesec"
       ],
       "zanimljivost": "Hrčci su aktivni noću, a u obrazima mogu da nose hranu skoro koliko i njihova glava.",
-      "rec": "hrčak",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🐹"
-      }
+      "rec": "hrčak"
     },
     {
       "lekcija": 14,
@@ -3013,11 +2885,7 @@
         "Sto meseci"
       ],
       "zanimljivost": "Neki papagaji nadžive svoje vlasnike i nasleđuju ih unuci.",
-      "rec": "papagaj",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🦜"
-      }
+      "rec": "papagaj"
     },
     {
       "lekcija": 14,
@@ -3056,11 +2924,7 @@
         "Ribica živi 100 godina"
       ],
       "zanimljivost": "Zlatne ribice u dobrom jezercetu žive i preko 20 godina; rekorderka je doživela 43!",
-      "rec": "ribica",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🐱🐠"
-      }
+      "rec": "ribica"
     },
     {
       "lekcija": 14,
@@ -3151,11 +3015,7 @@
         "Vrsta stene"
       ],
       "zanimljivost": "Grba kamile nije puna vode, već masti – kamila iz nje dobija energiju kada nema hrane.",
-      "rec": "adaptacija",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🐪🏜️"
-      }
+      "rec": "adaptacija"
     },
     {
       "lekcija": 15,
@@ -3168,11 +3028,7 @@
         "Prekrivene ljuskama"
       ],
       "zanimljivost": "Fenek je najmanja lisica na svetu, a uši su mu duge i do 15 cm.",
-      "rec": "fenek",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🦊🏜️👂"
-      }
+      "rec": "fenek"
     },
     {
       "lekcija": 15,
@@ -3185,11 +3041,7 @@
         "Ima gusto perje ispod svog belog krzna"
       ],
       "zanimljivost": "Koža polarnog medveda je crna, a dlake su providne i šuplje – samo nam izgledaju belo.",
-      "rec": "medved",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🐻‍❄️❄️"
-      }
+      "rec": "medved"
     },
     {
       "lekcija": 15,
@@ -3202,11 +3054,7 @@
         "Da bolje vidi Sunce"
       ],
       "zanimljivost": "Kod kaktusa fotosintezu obavlja zeleno, debelo stablo u kojem se čuva voda.",
-      "rec": "kaktus",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🌵☀️"
-      }
+      "rec": "kaktus"
     },
     {
       "lekcija": 15,
@@ -3284,11 +3132,7 @@
         "Lakše dišu"
       ],
       "zanimljivost": "Kameleon menja boju više zbog raspoloženja i temperature nego da bi se sakrio – ali i to mu pomaže.",
-      "rec": "kamuflaža",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🦎🍃"
-      }
+      "rec": "kamuflaža"
     },
     {
       "lekcija": 15,
@@ -3301,11 +3145,7 @@
         "Čuje bolje od lavova i hijena"
       ],
       "zanimljivost": "Iako je vrat dug i do 2 metra, žirafa ima samo 7 vratnih pršljenova – isto kao i čovek!",
-      "rec": "žirafa",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🦒🌳"
-      }
+      "rec": "žirafa"
     },
     {
       "lekcija": 16,
@@ -3617,11 +3457,7 @@
         "Život pod vodom, u velikim podzemnim jezerima ispod peska"
       ],
       "zanimljivost": "U Sahari danju može biti preko 45 °C, a noću temperatura padne i blizu nule.",
-      "rec": "pustinja",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🏜️☀️🌙"
-      }
+      "rec": "pustinja"
     },
     {
       "lekcija": 17,
@@ -3634,11 +3470,7 @@
         "Menjaju vrstu i postaju potpuno druge životinje do proleća"
       ],
       "zanimljivost": "Tokom zimskog sna ježu srce kuca samo oko 20 puta u minuti, umesto skoro 200.",
-      "rec": "zima",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🦔💤❄️"
-      }
+      "rec": "zima"
     },
     {
       "lekcija": 17,
@@ -3651,11 +3483,7 @@
         "Svraka"
       ],
       "zanimljivost": "Bela roda u jednom pravcu preleti i do 10.000 km, a često se vraća u isto gnezdo na dimnjaku ili banderi.",
-      "rec": "roda",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🪺➡️🌍➡️🪺"
-      }
+      "rec": "roda"
     },
     {
       "lekcija": 17,
@@ -3681,11 +3509,7 @@
         "Puž golać"
       ],
       "zanimljivost": "Oklop kornjače srastao je sa njenim rebrima i kičmom – kornjača ne može da „izađe“ iz oklopa.",
-      "rec": "oklop",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🐢"
-      }
+      "rec": "oklop"
     },
     {
       "lekcija": 17,
@@ -3724,11 +3548,7 @@
         "Gliste nemaju nikakav uticaj, jer samo žive u zemlji i ništa ne rade"
       ],
       "zanimljivost": "Čarls Darvin je napisao celu knjigu o glistama i izračunao da one tokom godina mogu da „preore“ ceo površinski sloj zemlje.",
-      "rec": "glista",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🪱🌱"
-      }
+      "rec": "glista"
     },
     {
       "lekcija": 18,
@@ -3754,11 +3574,7 @@
         "Žaba"
       ],
       "zanimljivost": "Krtica dnevno može da iskopa i više desetina metara hodnika i ume da zalihe glista sačuva u „ostavi“.",
-      "rec": "krtica",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🐾⛏️🕳️"
-      }
+      "rec": "krtica"
     },
     {
       "lekcija": 18,
@@ -3849,11 +3665,7 @@
         "Muve"
       ],
       "zanimljivost": "Neke kolonije mrava imaju milione stanovnika i čak „gaje“ gljive u podzemnim baštama.",
-      "rec": "mrav",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🐜🏰"
-      }
+      "rec": "mrav"
     },
     {
       "lekcija": 18,
@@ -3905,11 +3717,7 @@
         "Šljiva"
       ],
       "zanimljivost": "Krompir je zadebljalo podzemno stablo – „okca“ na njemu su pupoljci iz kojih niču nove biljke.",
-      "rec": "krompir",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🥔"
-      }
+      "rec": "krompir"
     },
     {
       "lekcija": 18,
@@ -4006,11 +3814,7 @@
         "Preplanulost od sunca"
       ],
       "zanimljivost": "Preplanulost nestane posle leta i ne prenosi se na decu – to je stečena osobina.",
-      "rec": "oči",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "👁️🟤🔵🟢"
-      }
+      "rec": "oči"
     },
     {
       "lekcija": 19,
@@ -4036,11 +3840,7 @@
         "Rođeni su istog dana"
       ],
       "zanimljivost": "Jednojajčani blizanci nastaju kada se jedna oplođena jajna ćelija podeli na dva embriona – ali ni oni nemaju iste otiske prstiju!",
-      "rec": "blizanci",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "👯"
-      }
+      "rec": "blizanci"
     },
     {
       "lekcija": 19,
@@ -4053,11 +3853,7 @@
         "Robert Huk"
       ],
       "zanimljivost": "Mendel je bio monah i u manastirskoj bašti 8 godina gajio gotovo 30.000 biljaka graška.",
-      "rec": "mendel",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🫛👨‍🌾📊"
-      }
+      "rec": "mendel"
     },
     {
       "lekcija": 19,
@@ -4161,11 +3957,7 @@
         "Uvek manji"
       ],
       "zanimljivost": "Sve banane koje jedemo (sorta Kavendiš) praktično su klonovi – zato jedna bolest može da ugrozi sve zasade.",
-      "rec": "klon",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🍌🍌🍌"
-      }
+      "rec": "klon"
     },
     {
       "lekcija": 20,
@@ -4256,11 +4048,7 @@
         "Jer krtola brže cveta"
       ],
       "zanimljivost": "Krompir cveta i ima sitne zelene bobice sa semenom, ali one su otrovne i iz njih niču biljke različite od roditelja.",
-      "rec": "krtola",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🥔🌱"
-      }
+      "rec": "krtola"
     },
     {
       "lekcija": 20,
@@ -4299,11 +4087,7 @@
         "Pčela ne može nastati tako"
       ],
       "zanimljivost": "Trutovi nemaju oca, ali imaju dedu – zanimljiva posledica ovakvog razmnožavanja!",
-      "rec": "trut",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🐝👑"
-      }
+      "rec": "trut"
     },
     {
       "lekcija": 20,
@@ -4381,11 +4165,7 @@
         "Zbog hrane koju jedu, jer od nje zavise boja, veličina i oblik tela"
       ],
       "zanimljivost": "Čivava i doga su ista vrsta – svi psi potiču od vuka, pripitomljenog pre više od 15.000 godina.",
-      "rec": "pas",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🐺➡️🐕🐩🦮"
-      }
+      "rec": "pas"
     },
     {
       "lekcija": 21,
@@ -4411,11 +4191,7 @@
         "Selidba ptica"
       ],
       "zanimljivost": "Ptice su potomci dinosaurusa – kokoška je bliži rođak tiranosaurusa od bilo kog gmizavca.",
-      "rec": "evolucija",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🦖➡️🐓"
-      }
+      "rec": "evolucija"
     },
     {
       "lekcija": 21,
@@ -4428,11 +4204,7 @@
         "Mejflauer"
       ],
       "zanimljivost": "Putovanje broda Bigl trajalo je skoro 5 godina (1831–1836); Darvin je tada imao samo 22 godine.",
-      "rec": "bigl",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "⛵🌍🐢"
-      }
+      "rec": "bigl"
     },
     {
       "lekcija": 21,
@@ -4458,11 +4230,7 @@
         "Leptiri su prestali da lete zbog dima, pa su se kretali samo hodanjem"
       ],
       "zanimljivost": "Kad je vazduh ponovo postao čist, svetli leptiri su opet postali brojniji – evolucija „uživo“.",
-      "rec": "leptir",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🦋🏭🌳"
-      }
+      "rec": "leptir"
     },
     {
       "lekcija": 21,
@@ -4501,11 +4269,7 @@
         "Bolest bira svoje žrtve među najslabijim jedinkama u čoporu ili stadu"
       ],
       "zanimljivost": "Kupus, karfiol, brokoli, kelj i prokelj nastali su od iste divlje biljke – veštačkim odabiranjem.",
-      "rec": "odabir",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🥦🥬🥗 = 🌿"
-      }
+      "rec": "odabir"
     },
     {
       "lekcija": 21,
@@ -4531,11 +4295,7 @@
         "Pre 6 milijardi godina"
       ],
       "zanimljivost": "Glavni uzrok bio je udar ogromnog asteroida u današnji Meksiko, kod Čiksuluba.",
-      "rec": "dinosaurus",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "☄️🦕"
-      }
+      "rec": "dinosaurus"
     },
     {
       "lekcija": 21,
@@ -4669,11 +4429,7 @@
         "Kupovina novih stvari umesto popravke"
       ],
       "zanimljivost": "Reciklažom jedne aluminijumske limenke uštedi se dovoljno energije da televizor radi oko tri sata.",
-      "rec": "reciklaža",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "♻️🥫📦"
-      }
+      "rec": "reciklaža"
     },
     {
       "lekcija": 22,
@@ -4738,11 +4494,7 @@
         "Nisu opasne"
       ],
       "zanimljivost": "Baterije treba nositi na posebna mesta za sakupljanje – iz njih se izdvajaju metali za ponovnu upotrebu.",
-      "rec": "baterija",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🔋🚫🗑️"
-      }
+      "rec": "baterija"
     },
     {
       "lekcija": 22,
@@ -4755,11 +4507,7 @@
         "Helijum"
       ],
       "zanimljivost": "Jedna krava dnevno ispusti i više stotina litara metana – uglavnom podrigivanjem, a ne kako bi se mislilo!",
-      "rec": "metan",
-      "mediji": {
-        "vrsta": "molekul",
-        "ime": "metan"
-      }
+      "rec": "metan"
     },
     {
       "lekcija": 22,
@@ -4925,11 +4673,7 @@
         "Gavran"
       ],
       "zanimljivost": "Beloglavi sup, iako nije na grbu, primer je uspešne zaštite – na Uvcu ga je sa nekoliko parova sada stotine.",
-      "rec": "orao",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🦅"
-      }
+      "rec": "orao"
     },
     {
       "lekcija": 23,
@@ -5121,11 +4865,7 @@
         "Od cveta raži, ječma i ovsa"
       ],
       "zanimljivost": "Iz jednog klasa pšenice dobije se oko 30–50 zrna.",
-      "rec": "zrno",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🌾➡️🍞"
-      }
+      "rec": "zrno"
     },
     {
       "lekcija": 24,
@@ -5151,11 +4891,7 @@
         "Lana"
       ],
       "zanimljivost": "Mladi suncokret prati kretanje Sunca, a kada procveta, okrene se ka istoku i tu ostane.",
-      "rec": "suncokret",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🌻"
-      }
+      "rec": "suncokret"
     },
     {
       "lekcija": 24,
@@ -5194,11 +4930,7 @@
         "Šećerne trske (iz koje se dobija beli šećer)"
       ],
       "zanimljivost": "Asteci su kakao zrna koristili i kao novac.",
-      "rec": "kakao",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🍫🌳"
-      }
+      "rec": "kakao"
     },
     {
       "lekcija": 25,
@@ -5224,11 +4956,7 @@
         "Leptir"
       ],
       "zanimljivost": "Za samo pola kilograma meda pčele moraju da obiđu oko 2 miliona cvetova.",
-      "rec": "pčela",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🐝🍯"
-      }
+      "rec": "pčela"
     },
     {
       "lekcija": 25,
@@ -5241,11 +4969,7 @@
         "Kokoške"
       ],
       "zanimljivost": "Ovca godišnje da 2–5 kilograma vune; jedna ovca u Australiji, nestrižena godinama, imala je 41 kg vune.",
-      "rec": "ovca",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🐑🧶"
-      }
+      "rec": "ovca"
     },
     {
       "lekcija": 25,
@@ -5297,11 +5021,7 @@
         "Daju mleko"
       ],
       "zanimljivost": "U starom Egiptu mačke su bile svete – za ubistvo mačke mogla je da sledi smrtna kazna.",
-      "rec": "mačka",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🐈🐁🌾"
-      }
+      "rec": "mačka"
     },
     {
       "lekcija": 25,
@@ -5366,11 +5086,7 @@
         "Noj"
       ],
       "zanimljivost": "Dobra koka nosilja snese oko 300 jaja godišnje.",
-      "rec": "kokoška",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🐔🥚"
-      }
+      "rec": "kokoška"
     },
     {
       "lekcija": 25,
@@ -5409,11 +5125,7 @@
         "Skakavac"
       ],
       "zanimljivost": "Jedna bubamara za život pojede i do 5.000 biljnih vaši.",
-      "rec": "bubamara",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🐞"
-      }
+      "rec": "bubamara"
     },
     {
       "lekcija": 26,
@@ -5465,11 +5177,7 @@
         "Samo meso"
       ],
       "zanimljivost": "Preporuka je bar 5 porcija voća i povrća dnevno – „pet šaka“ različitih boja.",
-      "rec": "voće",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🍎🥕🥦🍊🍇"
-      }
+      "rec": "voće"
     },
     {
       "lekcija": 26,
@@ -5521,11 +5229,7 @@
         "Zlato"
       ],
       "zanimljivost": "Najviše kalcijuma ima u mleku i mlečnim proizvodima, ali i u bademu, susamu i zelenom povrću.",
-      "rec": "kalcijum",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🥛🦴🧀"
-      }
+      "rec": "kalcijum"
     },
     {
       "lekcija": 26,
@@ -5538,11 +5242,7 @@
         "Grip"
       ],
       "zanimljivost": "Britanski mornari su nosili limete da bi se zaštitili od skorbuta – zato su ih zvali „limiji“.",
-      "rec": "skorbut",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "⛵🍋"
-      }
+      "rec": "skorbut"
     },
     {
       "lekcija": 26,
@@ -5607,11 +5307,7 @@
         "Ledeni čaj sa šećerom"
       ],
       "zanimljivost": "Jedna limenka gaziranog soka ima i do 8–9 kockica šećera.",
-      "rec": "voda",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "💧🥤🍬"
-      }
+      "rec": "voda"
     },
     {
       "lekcija": 26,
@@ -5797,11 +5493,7 @@
         "Hleb i keks"
       ],
       "zanimljivost": "Lubenica i krastavac sadrže oko 95% vode – osvežavaju kao čaša vode.",
-      "rec": "lubenica",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🍉🥒"
-      }
+      "rec": "lubenica"
     },
     {
       "lekcija": 27,
@@ -5944,11 +5636,7 @@
         "Uopšte ne utiče na san i učenje"
       ],
       "zanimljivost": "Plava svetlost sa ekrana „zbuni“ mozak da je još dan, pa je teže zaspati.",
-      "rec": "ekran",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "📱🌙😵"
-      }
+      "rec": "ekran"
     },
     {
       "lekcija": 28,
@@ -6065,11 +5753,7 @@
         "Uopšte ne treba"
       ],
       "zanimljivost": "Sat igre napolju – trčanje, vožnja bicikla, fudbal – računa se kao fizička aktivnost.",
-      "rec": "aktivnost",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🚴⚽🏊⏱️"
-      }
+      "rec": "aktivnost"
     },
     {
       "lekcija": 29,
@@ -6095,11 +5779,7 @@
         "Zato što sanjamo ono što ćemo učiti sutradan"
       ],
       "zanimljivost": "Hormon rasta se najviše luči tokom dubokog sna – deca zaista rastu dok spavaju.",
-      "rec": "san",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "😴🧠📚"
-      }
+      "rec": "san"
     },
     {
       "lekcija": 29,
@@ -6177,11 +5857,7 @@
         "Skoro ceo život"
       ],
       "zanimljivost": "Neke životinje spavaju još više – koale i do 20 sati dnevno.",
-      "rec": "koala",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🐨💤"
-      }
+      "rec": "koala"
     },
     {
       "lekcija": 29,
@@ -6237,11 +5913,7 @@
         "Gazirani sok i grickalice"
       ],
       "zanimljivost": "Boravak u prirodi već posle 20 minuta smanjuje hormon stresa kortizol.",
-      "rec": "šetnja",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🌳🚶‍♀️😊"
-      }
+      "rec": "šetnja"
     },
     {
       "lekcija": 30,
@@ -6254,11 +5926,7 @@
         "Samo kad su vidno prljave"
       ],
       "zanimljivost": "Pravilno pranje ruku sapunom treba da traje bar 20 sekundi – koliko traje dvaput otpevana pesma „Srećan rođendan“.",
-      "rec": "ruke",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🧼🙌💧"
-      }
+      "rec": "ruke"
     },
     {
       "lekcija": 30,
@@ -6284,11 +5952,7 @@
         "Jednom mesečno"
       ],
       "zanimljivost": "Zube treba prati oko 2 minuta, a četkicu menjati na svaka 3 meseca.",
-      "rec": "zubi",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🪥🦷✨"
-      }
+      "rec": "zubi"
     },
     {
       "lekcija": 30,

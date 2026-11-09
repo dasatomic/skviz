@@ -284,26 +284,22 @@
       "rec": "legenda"
     },
     {
-      "lekcija": 1,
-      "tezina": 1,
-      "pitanje": "Kako se zove umanjeni model Zemlje u obliku lopte?",
+      "pitanje": "Kako se zove crtež manjeg prostora, na primer škole ili dela grada, u veoma krupnoj razmeri?",
       "odgovori": [
-        "Globus",
+        "Plan",
         "Atlas",
-        "Karta",
-        "Kompas"
+        "Globus",
+        "Legenda"
       ],
-      "zanimljivost": "Najstariji sačuvani globus napravio je Martin Behajm 1492. – na njemu još nema Amerike!",
-      "rec": "globus",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🌍"
-      }
+      "tezina": 1,
+      "zanimljivost": "Na planu se vide i pojedine zgrade i ulice. Planovi gradova imaju razmeru, na primer, 1:10.000, a karte cele države mnogo sitniju.",
+      "rec": "plan",
+      "lekcija": 1
     },
     {
       "lekcija": 1,
       "tezina": 2,
-      "pitanje": "Kojim strelicama se na karti uobičajeno označava sever?",
+      "pitanje": "Koja strana karte je uobičajeno okrenuta ka severu?",
       "odgovori": [
         "Gornja ivica karte je sever",
         "Donja ivica karte je uvek sever",
@@ -350,11 +346,7 @@
         "Planina, reka, more, nebo"
       ],
       "zanimljivost": "Sunce izlazi na istoku, a zalazi na zapadu.",
-      "rec": "strane",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🧭"
-      }
+      "rec": "strane"
     },
     {
       "lekcija": 1,
@@ -424,7 +416,7 @@
     {
       "lekcija": 2,
       "tezina": 2,
-      "pitanje": "Koja su psi bila među prvim putnicima u svemir, pre Jurija Gagarina?",
+      "pitanje": "Koji psi su bili među prvim putnicima u svemir, pre Jurija Gagarina?",
       "odgovori": [
         "Lajka, Belka i Strelka",
         "Leksi, Rin i Tin",
@@ -510,11 +502,7 @@
         "Sateliti"
       ],
       "zanimljivost": "Halejeva kometa se vraća na svakih oko 76 godina – sledeći put 2061.",
-      "rec": "kometa",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "☄️"
-      }
+      "rec": "kometa"
     },
     {
       "lekcija": 2,
@@ -530,17 +518,17 @@
       "rec": "meteorit"
     },
     {
-      "lekcija": 2,
-      "tezina": 1,
-      "pitanje": "Kako se zove naša galaksija?",
+      "pitanje": "Koliko otprilike zvezda ima u našoj galaksiji, Mlečnom putu?",
       "odgovori": [
-        "Mlečni put",
-        "Andromeda",
-        "Veliki medved",
-        "Orion"
+        "Više od 100 milijardi",
+        "Oko 2 miliona",
+        "Oko 2.000",
+        "Tačno 8"
       ],
-      "zanimljivost": "Mlečni put ima između 100 i 400 milijardi zvezda.",
-      "rec": "mlečni"
+      "tezina": 2,
+      "zanimljivost": "Golim okom se sa Zemlje, za vedre noći, vidi samo nekoliko hiljada zvezda. Svetlosti treba oko 100.000 godina da pređe Mlečni put s kraja na kraj.",
+      "rec": "zvezda",
+      "lekcija": 2
     },
     {
       "lekcija": 2,
@@ -595,17 +583,17 @@
       "rec": "andromeda"
     },
     {
-      "lekcija": 2,
-      "tezina": 1,
-      "pitanje": "Šta su „zvezde padalice“?",
+      "pitanje": "Kako se zove najsjajnija zvezda noćnog neba?",
       "odgovori": [
-        "Meteori – sitna tela koja sagore u atmosferi",
-        "Prave zvezde koje se otkinu i padnu na Zemlju",
-        "Komete sa dugim repom koje prolete pored Zemlje",
-        "Sateliti"
+        "Sirijus",
+        "Severnjača",
+        "Vega",
+        "Betelgez"
       ],
-      "zanimljivost": "Najlepša „kiša meteora“, Perseidi, vidi se oko 12. avgusta.",
-      "rec": "meteor"
+      "tezina": 3,
+      "zanimljivost": "Sirijus je u sazvežđu Veliki pas, pa ga zovu i „Pseća zvezda“. Severnjača nije najsjajnija, ali je važna jer pokazuje sever.",
+      "rec": "sirijus",
+      "lekcija": 2
     },
     {
       "lekcija": 2,
@@ -721,11 +709,7 @@
         "Uran"
       ],
       "zanimljivost": "Crvenu boju daju joj gvozdeni oksidi – „rđa“ u prašini.",
-      "rec": "mars",
-      "mediji": {
-        "vrsta": "planeta",
-        "ime": "mars"
-      }
+      "rec": "mars"
     },
     {
       "lekcija": 3,
@@ -785,11 +769,7 @@
         "Jupiter"
       ],
       "zanimljivost": "Zemlja je jedina poznata planeta sa tečnom vodom na površini i životom.",
-      "rec": "zemlja",
-      "mediji": {
-        "vrsta": "planeta",
-        "ime": "zemlja"
-      }
+      "rec": "zemlja"
     },
     {
       "lekcija": 3,
@@ -848,21 +828,17 @@
       "rec": "kopernik"
     },
     {
-      "lekcija": 3,
-      "tezina": 2,
-      "pitanje": "Koja je planeta najudaljenija od Sunca?",
+      "pitanje": "Kako se zove patuljasta planeta koja se do 2006. smatrala devetom planetom Sunčevog sistema?",
       "odgovori": [
-        "Neptun",
-        "Uran",
         "Pluton",
-        "Saturn"
+        "Ceres",
+        "Eris",
+        "Haumea"
       ],
-      "zanimljivost": "Na Neptunu duvaju najjači vetrovi u Sunčevom sistemu – preko 2.000 km/h.",
-      "rec": "neptun",
-      "mediji": {
-        "vrsta": "planeta",
-        "ime": "neptun"
-      }
+      "tezina": 2,
+      "zanimljivost": "Pluton je manji od našeg Meseca. Sonda „Nju Horajzons“ ga je 2015. snimila izbliza i na njemu pronašla ledenu ravnicu u obliku srca.",
+      "rec": "pluton",
+      "lekcija": 3
     },
     {
       "lekcija": 4,
@@ -951,17 +927,17 @@
       "rec": "pomračenje"
     },
     {
-      "lekcija": 4,
-      "tezina": 2,
-      "pitanje": "Koliko otprilike traje obilazak Meseca oko Zemlje (od mladog do mladog Meseca)?",
+      "pitanje": "Koliko kilometara otprilike deli Zemlju od Meseca?",
       "odgovori": [
-        "Oko 29,5 dana",
-        "Oko 7 dana",
-        "Oko 365 dana",
-        "Oko 24 sata"
+        "Oko 384.000 km",
+        "Oko 38.000 km",
+        "Oko 3,8 miliona km",
+        "Oko 150 miliona km"
       ],
-      "zanimljivost": "Reč „mesec“ za deo godine potiče baš od Meseca.",
-      "rec": "ciklus"
+      "tezina": 2,
+      "zanimljivost": "Svetlost sa Meseca do nas stiže za oko 1,3 sekunde. Mesec se svake godine udaljava od Zemlje za oko 3,8 cm.",
+      "rec": "mesec",
+      "lekcija": 4
     },
     {
       "lekcija": 4,
@@ -1291,17 +1267,17 @@
       "rec": "hemisfera"
     },
     {
-      "lekcija": 5,
-      "tezina": 2,
-      "pitanje": "Ko je prvi oplovio svet?",
+      "pitanje": "Ko je prvi stigao morem do Indije, oplovivši Afriku (1498)?",
       "odgovori": [
-        "Magelanova ekspedicija (1519–1522)",
-        "Kristifor Kolumbo (putovanja 1492–1504)",
-        "Marko Polo (dugo putovanje do Kine)",
-        "Vasko da Gama (put oko Afrike do Indije)"
+        "Vasko da Gama",
+        "Kristifor Kolumbo",
+        "Ferdinand Magelan",
+        "Džejms Kuk"
       ],
-      "zanimljivost": "Sam Magelan je poginuo na Filipinima – put je završio Huan Sebastijan Elkano sa 18 mornara.",
-      "rec": "magelan"
+      "tezina": 2,
+      "zanimljivost": "Portugalac Vasko da Gama je tako otvorio pomorski put začina. Kolumbo je šest godina ranije, ploveći na zapad, takođe tražio Indiju – a stigao do Amerike.",
+      "rec": "indija",
+      "lekcija": 5
     },
     {
       "lekcija": 5,
@@ -1343,17 +1319,17 @@
       "rec": "polovi"
     },
     {
-      "lekcija": 5,
-      "tezina": 2,
-      "pitanje": "Šta je geoid?",
+      "pitanje": "Za koliko je otprilike prečnik Zemlje kroz polove kraći od prečnika na ekvatoru?",
       "odgovori": [
-        "Pravi oblik Zemlje – nepravilno telo nalik lopti",
-        "Ravna Zemlja – stari naziv za prve mape celog sveta",
-        "Kocka",
-        "Vrsta stene"
+        "Za oko 43 km",
+        "Za oko 4 km",
+        "Za oko 430 km",
+        "Za oko 4.300 km"
       ],
-      "zanimljivost": "Reč geoid znači „zemljoliki“ – Zemlja ima oblik samo sebi svojstven.",
-      "rec": "geoid"
+      "tezina": 3,
+      "zanimljivost": "Prečnik na ekvatoru je oko 12.756 km, a kroz polove oko 12.714 km. Razlika je tako mala da bi globus izgledao savršeno okrugao.",
+      "rec": "prečnik",
+      "lekcija": 5
     },
     {
       "lekcija": 6,
@@ -1639,17 +1615,17 @@
       "rec": "dan"
     },
     {
-      "lekcija": 7,
-      "tezina": 2,
-      "pitanje": "Koja je posledica Zemljine rotacije?",
+      "pitanje": "Koliko vremenskih zona ima Rusija, najveća država na svetu?",
       "odgovori": [
-        "Smena dana i noći",
-        "Godišnja doba",
-        "Plima samo",
-        "Zemljotresi"
+        "11",
+        "7",
+        "3",
+        "24"
       ],
-      "zanimljivost": "Kada je kod nas podne, na suprotnoj strani Zemlje je ponoć.",
-      "rec": "smena"
+      "tezina": 2,
+      "zanimljivost": "Kada je u Kalinjingradu na zapadu podne, na Kamčatki na istoku je već 10 uveče.",
+      "rec": "zona",
+      "lekcija": 7
     },
     {
       "lekcija": 7,
@@ -1727,11 +1703,7 @@
         "Na jugu"
       ],
       "zanimljivost": "Leti Sunce kod nas izlazi na severoistoku, a zimi na jugoistoku.",
-      "rec": "istok",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🌅"
-      }
+      "rec": "istok"
     },
     {
       "lekcija": 7,
@@ -1800,17 +1772,17 @@
       "rec": "osa"
     },
     {
-      "lekcija": 7,
-      "tezina": 2,
-      "pitanje": "Koliko brzo se okreću tačke na ekvatoru?",
+      "pitanje": "Kakav oblik Zemlja dobija zbog okretanja oko svoje ose?",
       "odgovori": [
-        "Oko 1.670 km/h",
-        "Oko 100 km/h",
-        "Ne okreću se",
-        "Oko 30 km/h"
+        "Spljoštena je na polovima, a ispupčena na ekvatoru",
+        "Izdužena je kao jaje od pola do pola",
+        "Savršeno je okrugla",
+        "Ima oblik kocke zaobljenih ivica"
       ],
-      "zanimljivost": "Na polovima je brzina rotacije gotovo nula.",
-      "rec": "brzina"
+      "tezina": 2,
+      "zanimljivost": "Pri okretanju se ekvatorski deo „odbacuje“ ka spolja, kao suknja koja se širi pri okretanju u plesu.",
+      "rec": "oblik",
+      "lekcija": 7
     },
     {
       "lekcija": 7,
@@ -1905,11 +1877,7 @@
         "Plima i oseka"
       ],
       "zanimljivost": "Kad je kod nas leto, u Australiji je zima.",
-      "rec": "doba",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🌸☀️🍂❄️"
-      }
+      "rec": "doba"
     },
     {
       "lekcija": 8,
@@ -1925,30 +1893,30 @@
       "rec": "nagib"
     },
     {
-      "lekcija": 8,
-      "tezina": 3,
-      "pitanje": "Šta je povratnik Raka?",
+      "pitanje": "Šta je povratnik Jarca?",
       "odgovori": [
-        "Paralela na 23,5° severno, do koje Sunce u podne može biti u zenitu",
-        "Paralela na 0°, koja deli Zemlju na severnu i južnu polovinu podjednako",
-        "Paralela na 66,5° severno, iznad koje Sunce leti ne zalazi danima i noćima",
-        "Meridijan na 23,5° istočno, preko kojeg se računa vreme za Istočnu Evropu"
+        "Paralela na 23,5° južno od ekvatora",
+        "Paralela na 66,5° severno od ekvatora",
+        "Početni meridijan kroz Grinič",
+        "Paralela na 45° južno"
       ],
-      "zanimljivost": "Sunce je iznad povratnika Raka u zenitu oko 21. juna.",
-      "rec": "povratnik"
+      "tezina": 2,
+      "zanimljivost": "Oko 22. decembra Sunce je u podne u zenitu nad povratnikom Jarca – tada je na južnoj polulopti leto, a kod nas zima.",
+      "rec": "jarac",
+      "lekcija": 8
     },
     {
-      "lekcija": 8,
-      "tezina": 2,
-      "pitanje": "Kada počinje astronomsko leto na severnoj polulopti?",
+      "pitanje": "Kada počinje astronomska jesen na severnoj polulopti?",
       "odgovori": [
-        "Oko 21. juna",
-        "Oko 21. marta",
         "Oko 23. septembra",
-        "Oko 22. decembra"
+        "Oko 1. septembra",
+        "Oko 21. juna",
+        "Oko 1. oktobra"
       ],
-      "zanimljivost": "To je dan letnje dugodnevice – najduži dan u godini.",
-      "rec": "dugodnevica"
+      "tezina": 2,
+      "zanimljivost": "Na jesenju ravnodnevicu dan i noć traju jednako. Posle nje noći kod nas postaju duže od dana, sve do 22. decembra.",
+      "rec": "jesen",
+      "lekcija": 8
     },
     {
       "lekcija": 8,
@@ -1977,17 +1945,17 @@
       "rec": "krug"
     },
     {
-      "lekcija": 8,
-      "tezina": 2,
-      "pitanje": "Šta je ravnodnevica?",
+      "pitanje": "Šta je polarna noć?",
       "odgovori": [
-        "Dan kada su dan i noć jednaki svuda na Zemlji",
-        "Najduži dan u godini, kada je Sunce najviše na nebu",
-        "Najkraći dan",
-        "Polarni dan"
+        "Period kada Sunce danima ne izlazi iznad horizonta",
+        "Noć kada se vidi polarna svetlost",
+        "Najkraća noć u godini kod nas",
+        "Noć sa punim Mesecom"
       ],
-      "zanimljivost": "Prolećna ravnodnevica je oko 21. marta, a jesenja oko 23. septembra.",
-      "rec": "jednakost"
+      "tezina": 2,
+      "zanimljivost": "Na samim polovima polarna noć traje oko šest meseci. Na severu Norveške traje nekoliko nedelja oko Božića.",
+      "rec": "noć",
+      "lekcija": 8
     },
     {
       "lekcija": 8,
@@ -2159,17 +2127,17 @@
       "rec": "omotač"
     },
     {
-      "lekcija": 9,
-      "tezina": 1,
-      "pitanje": "Na kom sloju Zemlje živimo?",
+      "pitanje": "Kolika je približno debljina Zemljine kore ispod kontinenata?",
       "odgovori": [
-        "Na Zemljinoj kori",
-        "Na omotaču (plaštu)",
-        "Na unutrašnjem jezgru",
-        "U atmosferi, iznad tla"
+        "Oko 30–70 km",
+        "Oko 3 km",
+        "Oko 300 km",
+        "Oko 3.000 km"
       ],
-      "zanimljivost": "Kora je u odnosu na Zemlju tanka kao ljuska jabuke.",
-      "rec": "kora"
+      "tezina": 3,
+      "zanimljivost": "Ispod okeana kora je tanja, svega 5–10 km. Najdublja bušotina, Kolska, stigla je do samo oko 12 km.",
+      "rec": "kora",
+      "lekcija": 9
     },
     {
       "lekcija": 9,
@@ -2417,17 +2385,17 @@
       "rec": "subdukcija"
     },
     {
-      "lekcija": 10,
-      "tezina": 2,
-      "pitanje": "Šta je Pangea?",
+      "pitanje": "Kako se zvao južni deo Pangee, od kog su nastale Afrika, Južna Amerika, Australija, Antarktik i Indija?",
       "odgovori": [
-        "Prakontinent koji je postojao pre oko 300–200 miliona godina",
-        "Prvobitni okean koji je pokrivao celu Zemlju pre nastanka kopna",
-        "Najstariji planinski venac na Zemlji, nastao pre više od milijardu godina",
-        "Vrsta vulkanske stene nastale hlađenjem lave na dnu prvobitnog okeana"
+        "Gondvana",
+        "Laurazija",
+        "Atlantida",
+        "Panonija"
       ],
-      "zanimljivost": "Ime znači „sva zemlja“; okean oko nje zvao se Pantalasa – „sve more“.",
-      "rec": "pangea"
+      "tezina": 3,
+      "zanimljivost": "Severni deo Pangee zvao se Laurazija – od njega su nastale Severna Amerika, Evropa i veći deo Azije. Atlantida je izmišljeno ostrvo iz grčke priče.",
+      "rec": "gondvana",
+      "lekcija": 10
     },
     {
       "lekcija": 10,
@@ -2557,11 +2525,7 @@
         "Jezero"
       ],
       "zanimljivost": "Na Zemlji je oko 1.350 potencijalno aktivnih vulkana.",
-      "rec": "vulkan",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🌋"
-      }
+      "rec": "vulkan"
     },
     {
       "lekcija": 11,
@@ -2743,17 +2707,17 @@
       "rec": "granit"
     },
     {
-      "lekcija": 12,
-      "tezina": 3,
-      "pitanje": "Od kog kamena je sagrađena crkva Svetog Marka u Beogradu?",
+      "pitanje": "Koji mineral je najtvrđi u prirodi?",
       "odgovori": [
-        "Od ružičastog peščara",
-        "Od belog mermera",
-        "Od granita",
-        "Od bazalta"
+        "Dijamant",
+        "Kvarc",
+        "Granit",
+        "Mermer"
       ],
-      "zanimljivost": "Peščar je taložna stena sa zrncima kvarca. Beli mermer je metamorfna stena – kod nas ga najviše ima na planini Venčac kod Aranđelovca.",
-      "rec": "petra"
+      "tezina": 1,
+      "zanimljivost": "Dijamant je čist ugljenik, a nastaje duboko u Zemlji pod ogromnim pritiskom. Granit i mermer nisu minerali nego stene.",
+      "rec": "dijamant",
+      "lekcija": 12
     },
     {
       "lekcija": 12,
@@ -2912,17 +2876,17 @@
       "rec": "pesak"
     },
     {
-      "lekcija": 12,
-      "tezina": 2,
-      "pitanje": "Koja tvrda magmatska stena, često u crvenkastim i sivim tonovima, se koristi za stepenice i spomenike?",
+      "pitanje": "Kako se zove rastresita stena od prašine koju je nanosio vetar, rasprostranjena u Vojvodini?",
       "odgovori": [
+        "Les",
         "Granit",
-        "Kreda",
-        "Glina",
-        "Pesak"
+        "Bazalt",
+        "Mermer"
       ],
-      "zanimljivost": "Granit je nastao sporim hlađenjem magme duboko pod zemljom – zato ima krupna, vidljiva zrna.",
-      "rec": "granit"
+      "tezina": 3,
+      "zanimljivost": "Lesne zaravni Vojvodine nastale su u ledeno doba. Les je vrlo plodan, a u lesnim odsecima, kao kod Titela, mogu se videti i tragovi davnih zemljišta.",
+      "rec": "les",
+      "lekcija": 12
     },
     {
       "lekcija": 13,
@@ -3320,17 +3284,17 @@
       }
     },
     {
-      "lekcija": 14,
-      "tezina": 2,
-      "pitanje": "Kako se zove reljef od krečnjaka sa pećinama, vrtačama i ponorima?",
+      "pitanje": "Kako se zove otvor u kršu kroz koji reka ponire pod zemlju?",
       "odgovori": [
-        "Kras (karst)",
-        "Ravnica",
-        "Lesna zaravan",
+        "Ponor",
+        "Vrelo",
+        "Kanjon",
         "Delta"
       ],
-      "zanimljivost": "Reč „karst“ dolazi od oblasti Kras u Sloveniji.",
-      "rec": "kras"
+      "tezina": 2,
+      "zanimljivost": "Reka koja ponire i ponovo izbija zove se ponornica. Vrelo je, obrnuto, mesto gde jaka podzemna voda izbija na površinu.",
+      "rec": "ponor",
+      "lekcija": 14
     },
     {
       "lekcija": 14,
@@ -3571,11 +3535,7 @@
         "Vodonik"
       ],
       "zanimljivost": "Kiseonika ima oko 21%, a ostalih gasova oko 1%.",
-      "rec": "azot",
-      "mediji": {
-        "vrsta": "molekul",
-        "ime": "azot"
-      }
+      "rec": "azot"
     },
     {
       "lekcija": 16,
@@ -3595,17 +3555,17 @@
       }
     },
     {
-      "lekcija": 16,
-      "tezina": 2,
-      "pitanje": "U kom sloju atmosfere nastaju oblaci i padavine?",
+      "pitanje": "Kolika je otprilike debljina troposfere?",
       "odgovori": [
-        "Troposferi",
-        "Stratosferi",
-        "Mezosferi",
-        "Termosferi"
+        "Oko 8–18 km",
+        "Oko 1 km",
+        "Oko 100 km",
+        "Oko 500 km"
       ],
-      "zanimljivost": "Troposfera je debela oko 10–17 km i u njoj je oko 80% mase atmosfere.",
-      "rec": "troposfera"
+      "tezina": 3,
+      "zanimljivost": "Troposfera je najdeblja iznad ekvatora, a najtanja iznad polova. U njoj se nalazi skoro sva vodena para atmosfere, pa tu nastaje i vreme.",
+      "rec": "troposfera",
+      "lekcija": 16
     },
     {
       "lekcija": 16,
@@ -3739,11 +3699,7 @@
         "Helijum (laki gas za balone)"
       ],
       "zanimljivost": "Ugljen-dioksida ima samo oko 0,04%, ali snažno utiče na klimu.",
-      "rec": "ugljen",
-      "mediji": {
-        "vrsta": "molekul",
-        "ime": "ugljen-dioksid"
-      }
+      "rec": "ugljen"
     },
     {
       "lekcija": 16,
@@ -3967,17 +3923,17 @@
       "rec": "monsun"
     },
     {
-      "lekcija": 18,
-      "tezina": 2,
-      "pitanje": "Kako se zove prosečno stanje vremena na nekom mestu tokom mnogo godina?",
+      "pitanje": "Šta je meteorološka stanica?",
       "odgovori": [
-        "Klima",
-        "Vreme",
-        "Prognoza",
-        "Godišnje doba"
+        "Mesto sa instrumentima za merenje vremena",
+        "Mesto gde se prave vremenske prognoze za TV",
+        "Satelit koji snima oblake",
+        "Stanica za merenje zemljotresa"
       ],
-      "zanimljivost": "Vreme je trenutno stanje atmosfere (danas pada kiša), a klima je prosek za 30 i više godina.",
-      "rec": "klima"
+      "tezina": 1,
+      "zanimljivost": "Na meteorološkim stanicama se nekoliko puta dnevno mere temperatura, pritisak, vlažnost, vetar i padavine. Iz tih podataka se računa i klima.",
+      "rec": "stanica",
+      "lekcija": 18
     },
     {
       "lekcija": 18,
@@ -4106,17 +4062,17 @@
       "rec": "kilimandžaro"
     },
     {
-      "lekcija": 18,
-      "tezina": 2,
-      "pitanje": "Šta su monsuni?",
+      "pitanje": "Kako se zove snažan tropski ciklon u Atlantiku, kod obala Amerike?",
       "odgovori": [
-        "Vetrovi koji leti duvaju sa mora (kiše), a zimi sa kopna",
-        "Topli i suvi pustinjski vetrovi koji nose pesak preko Sahare",
-        "Hladni polarni vetrovi koji duvaju sa leda ka jugu tokom cele godine",
-        "Vetrovi u pećinama"
+        "Uragan",
+        "Monsun",
+        "Košava",
+        "Fen"
       ],
-      "zanimljivost": "Monsunske kiše hrane polja pirinča za milijarde ljudi u južnoj Aziji.",
-      "rec": "monsun"
+      "tezina": 2,
+      "zanimljivost": "Isti vetrovi u istočnoj Aziji zovu se tajfuni. Uragani dobijaju ljudska imena, po spisku koji se pravi unapred.",
+      "rec": "uragan",
+      "lekcija": 18
     },
     {
       "lekcija": 18,
@@ -4237,11 +4193,7 @@
         "Duže voziš automobil umesto da voziš bicikl"
       ],
       "zanimljivost": "Jedno drvo godišnje upije desetine kilograma ugljen-dioksida.",
-      "rec": "bicikl",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🚲🌳💡"
-      }
+      "rec": "bicikl"
     },
     {
       "lekcija": 19,
@@ -4345,11 +4297,7 @@
         "Helijum"
       ],
       "zanimljivost": "Metan zadržava toplotu mnogo jače od ugljen-dioksida.",
-      "rec": "metan",
-      "mediji": {
-        "vrsta": "molekul",
-        "ime": "metan"
-      }
+      "rec": "metan"
     },
     {
       "lekcija": 19,
@@ -4634,24 +4582,20 @@
         "Cunami uvek"
       ],
       "zanimljivost": "Najviši izmereni talas izazvan vetrom bio je visok oko 30 m.",
-      "rec": "talas",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🌊"
-      }
+      "rec": "talas"
     },
     {
-      "lekcija": 21,
-      "tezina": 2,
-      "pitanje": "Šta su plima i oseka?",
+      "pitanje": "Koliko puta dnevno nastupa plima na većini morskih obala?",
       "odgovori": [
-        "Periodično podizanje i spuštanje nivoa mora zbog privlačenja Meseca i Sunca",
-        "Talasi koje stvara vetar kada duva preko otvorenog mora i velikih okeana tokom dana",
-        "Stalna kretanja velikih masa morske vode, koja nastaju zbog razlike u temperaturi",
-        "Cunami"
+        "Dva puta",
+        "Jednom",
+        "Četiri puta",
+        "Jednom nedeljno"
       ],
-      "zanimljivost": "Plima i oseka se smenjuju otprilike dva puta dnevno.",
-      "rec": "plima"
+      "tezina": 2,
+      "zanimljivost": "Između dve plime prođe oko 12 sati i 25 minuta, pa plima svakog dana nastupa nešto kasnije nego prethodnog.",
+      "rec": "plima",
+      "lekcija": 21
     },
     {
       "lekcija": 21,
@@ -4758,17 +4702,17 @@
       "rec": "boja"
     },
     {
-      "lekcija": 21,
-      "tezina": 1,
-      "pitanje": "Šta pokreće talase na moru?",
+      "pitanje": "Kako se zove more usred Atlantskog okeana, bez ijedne obale, poznato po plutajućim algama?",
       "odgovori": [
-        "Najčešće vetar",
-        "Privlačenje Meseca",
-        "Ribe koje brzo plivaju",
-        "Brodovi koji plove morem"
+        "Sargaško more",
+        "Sredozemno more",
+        "Severno more",
+        "Karipsko more"
       ],
-      "zanimljivost": "Što vetar duže i jače duva nad većom površinom, talasi su viši.",
-      "rec": "vetar"
+      "tezina": 3,
+      "zanimljivost": "Sargaško more je okruženo samo okeanskim strujama. Tu se mreste evropske jegulje – i jegulje iz naših reka plivaju hiljade kilometara do njega.",
+      "rec": "sargaško",
+      "lekcija": 21
     },
     {
       "lekcija": 21,
@@ -4934,17 +4878,17 @@
       "rec": "ponornica"
     },
     {
-      "lekcija": 22,
-      "tezina": 3,
-      "pitanje": "Šta su gejziri?",
+      "pitanje": "Na kom ostrvu u Evropi ima najviše gejzira?",
       "odgovori": [
-        "Topli izvori koji povremeno izbacuju mlaz vode i pare",
-        "Hladni izvori iz kojih stalno teče mineralna voda za piće",
-        "Otvori na vulkanu iz kojih povremeno izlazi užarena lava",
-        "Jezera sa toplom vodom u krateru ugašenog vulkana"
+        "Na Islandu",
+        "Na Siciliji",
+        "Na Kritu",
+        "Na Sardiniji"
       ],
-      "zanimljivost": "Reč gejzir potiče od islandskog izvora Gejsir.",
-      "rec": "gejzir"
+      "tezina": 2,
+      "zanimljivost": "Reč „gejzir“ potiče od imena islandskog izvora Gejsir. Island toplu podzemnu vodu koristi i za grejanje kuća i staklenika.",
+      "rec": "gejzir",
+      "lekcija": 22
     },
     {
       "lekcija": 22,
@@ -5048,17 +4992,17 @@
       "rec": "izvor"
     },
     {
-      "lekcija": 23,
-      "tezina": 2,
-      "pitanje": "Kako se zove područje sa koga reka i njene pritoke skupljaju vodu?",
+      "pitanje": "Kako se zove linija koja razdvaja dva rečna sliva?",
       "odgovori": [
-        "Rečni sliv",
-        "Razvođe",
-        "Delta",
-        "Meandar"
+        "Razvođe (vododelnica)",
+        "Ušće",
+        "Meandar",
+        "Proticaj"
       ],
-      "zanimljivost": "Granica između dva sliva je razvođe. Skoro cela Srbija pripada Crnomorskom slivu.",
-      "rec": "sliv"
+      "tezina": 3,
+      "zanimljivost": "Kroz Srbiju prolazi razvođe između slivova Crnog, Jadranskog i Egejskog mora. Kod Đeneral Jankovića je jedno mesto gde se vode dele čak ka dva mora.",
+      "rec": "razvođe",
+      "lekcija": 23
     },
     {
       "lekcija": 23,
@@ -5347,17 +5291,17 @@
       }
     },
     {
-      "lekcija": 24,
-      "tezina": 2,
-      "pitanje": "Šta je lednik (glečer)?",
+      "pitanje": "Koja oblast ima najveći ledeni pokrivač posle Antarktika?",
       "odgovori": [
-        "Velika masa leda koja se sporo kreće",
-        "Zaleđena reka tokom zime na dalekom severu",
-        "Snežni pokrivač na visokim planinama zimi",
-        "Ledeni brod koji pluta morem"
+        "Grenland",
+        "Island",
+        "Alpi",
+        "Sibir"
       ],
-      "zanimljivost": "Lednici sadrže oko 69% slatke vode na Zemlji.",
-      "rec": "lednik"
+      "tezina": 2,
+      "zanimljivost": "Led na Grenlandu je ponegde debeo preko 3 km. Kada bi se sav istopio, nivo mora bi porastao za oko 7 metara.",
+      "rec": "grenland",
+      "lekcija": 24
     },
     {
       "lekcija": 24,
@@ -5747,11 +5691,7 @@
         "Visoka planina prekrivena snegom i ledom tokom cele godine"
       ],
       "zanimljivost": "Antarktik je takođe pustinja – najveća na svetu, ledena.",
-      "rec": "pustinja",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🏜️🐪🌵"
-      }
+      "rec": "pustinja"
     },
     {
       "lekcija": 26,
@@ -5790,11 +5730,7 @@
         "U Australiji"
       ],
       "zanimljivost": "Pingvini žive na južnoj polulopti – polarni medved i pingvin se u prirodi nikad ne sreću!",
-      "rec": "medved",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🐻‍❄️ ≠ 🐧"
-      }
+      "rec": "medved"
     },
     {
       "lekcija": 26,
@@ -5833,11 +5769,7 @@
         "Losovi, vukovi, risovi i severni jeleni"
       ],
       "zanimljivost": "Velika seoba gnuova u Serengetiju jedna je od najvećih seoba životinja na svetu.",
-      "rec": "savana",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🦁🦓🦒🐘"
-      }
+      "rec": "savana"
     },
     {
       "lekcija": 26,
@@ -6111,11 +6043,7 @@
         "Samo prave vosak za sveće i ništa više"
       ],
       "zanimljivost": "Bez oprašivača bi nestao velik deo voća i povrća koje jedemo.",
-      "rec": "pčela",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🐝🌼"
-      }
+      "rec": "pčela"
     },
     {
       "lekcija": 27,

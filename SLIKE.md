@@ -25,18 +25,6 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | biologija | darvin.jpg | Charles_Darwin_seated.jpg: Henry Maull (1829–1914) and John Fox (1832–1907) (Mau | Public domain | [izvor](https://en.wikipedia.org/wiki/Charles_Darwin) |
 | biologija | mendel.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Gregor_Mendel) |
 | biologija | pasteur.jpg | Paul Nadar | Public domain | [izvor](https://en.wikipedia.org/wiki/Louis_Pasteur) |
-| biologija | plavi-kit.jpg | NOAA Photo Library | Public domain | [izvor](https://en.wikipedia.org/wiki/Blue_whale) |
-| biologija | kolibri.jpg | Charles J. Sharp | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Hummingbird) |
-| biologija | sivi-soko.jpg | Mykola Swarnyk | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Peregrine_falcon) |
-| biologija | carski-pingvin.jpg | Ian Duffy from UK | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Emperor_penguin) |
-| biologija | raflezija.jpg | LukeTriton | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Rafflesia_arnoldii) |
-| biologija | dodo.jpg | BazzaDaRambler | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Dodo) |
-| biologija | limulus.jpg | Hans Hillewaert | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Atlantic_horseshoe_crab) |
-| biologija | celakant.png | Bruce A.S. Henderson | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/West_Indian_Ocean_coelacanth) |
-| biologija | kitova-ajkula.jpg | Abe Khao Lak | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Whale_shark) |
-| biologija | grenlandska-ajkula.jpg | NOAA Okeanos Explorer Program | Public domain | [izvor](https://en.wikipedia.org/wiki/Greenland_shark) |
-| biologija | golijat-zaba.jpg | jeanlouisamiet | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Goliath_frog) |
-| biologija | polarni-medved.jpg | Alan Wilson | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Polar_bear) |
 | fizika | ajnstajn.jpg | Oren Jack Turner | Public domain | [izvor](https://en.wikipedia.org/wiki/Albert_Einstein) |
 | fizika | kiri.jpg | Henri Manuel | Public domain | [izvor](https://en.wikipedia.org/wiki/Marie_Curie) |
 | fizika | njutn.jpg | Godfrey Kneller | Public domain | [izvor](https://en.wikipedia.org/wiki/Isaac_Newton) |
@@ -48,12 +36,7 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | fizika | fuko.jpg | Rémih | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Foucault_pendulum) |
 | fizika | rendgen-saka.jpg | Wilhelm Röntgen. | Public domain | [izvor](https://commons.wikimedia.org/wiki/File%3AFirst%20medical%20X-ray%20by%20Wilhelm%20R%C3%B6ntgen%20of%20his%20wife%20Anna%20Bertha%20Ludwig's%20hand%20-%2018951222.gif) |
 | fizika | tesla-kolorado.jpg | Dickenson V. Alley, photographer, Century Magazine | Public domain | [izvor](https://commons.wikimedia.org/wiki/File%3ATesla%20colorado%20adjusted.jpg) |
-| fizika | frenklin.jpg | Joseph-Siffred Duplessis | Public domain | [izvor](https://en.wikipedia.org/wiki/Benjamin_Franklin) |
-| fizika | volta.jpg | — | Public domain | [izvor](https://en.wikipedia.org/wiki/Alessandro_Volta) |
-| fizika | kopernik.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Nicolaus_Copernicus) |
 | fizika | raderford.jpg | Bain News Service, publisher Restored by: Bammesk | Public domain | [izvor](https://en.wikipedia.org/wiki/Ernest_Rutherford) |
-| fizika | bekerel.jpg | Paul Nadar / Adam Cuerden | Public domain | [izvor](https://en.wikipedia.org/wiki/Henri_Becquerel) |
-| fizika | takoma.jpg | University of Washington Libraries Digital Collections | Public domain | [izvor](https://commons.wikimedia.org/wiki/File%3AOpening%20day%20of%20the%20Tacoma%20Narrows%20Bridge%2C%20Tacoma%2C%20Washington.jpg) |
 | fizika | crna-rupa.jpg | Event Horizon Telescope, uploader cropped and converted TIF to JPG | CC BY 4.0 | [izvor](https://commons.wikimedia.org/wiki/File%3ABlack%20hole%20-%20Messier%2087%20crop%20max%20res.jpg) |
 | geografija | uvac.jpg | Vladimir Mijailović | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Uvac_Special_Nature_Reserve) |
 | geografija | djavolja-varos.jpg | Dimo Dimov | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/%C4%90avolja_Varo%C5%A1) |
@@ -89,7 +72,6 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | hemija | lavoazje.jpg | Jacques-Louis David | Public domain | [izvor](https://en.wikipedia.org/wiki/Antoine_Lavoisier) |
 | hemija | nobel.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Alfred_Nobel) |
 | hemija | vatromet.jpg | Rob Chandler | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Fireworks) |
-| hemija | veler.jpg | Rudolph Hoffmann | Public domain | [izvor](https://en.wikipedia.org/wiki/Friedrich_W%C3%B6hler) |
 | manastiri | studenica.jpg | DjordjeMarkovic | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Studenica_Monastery) |
 | manastiri | zica.jpg | Vera Bukvic | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/%C5%BDi%C4%8Da) |
 | manastiri | mileseva.jpg | Novosivacki | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Mile%C5%A1eva_Monastery) |
@@ -128,17 +110,12 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | muzicko | tamburica.jpg | Dejan Krsmanovic | CC BY 2.0 | [izvor](https://sr.wikipedia.org/wiki/%D0%A2%D0%B0%D0%BC%D0%B1%D1%83%D1%80%D0%B0) |
 | muzicko | stradivari.jpg | Geni | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Messiah_Stradivarius) |
 | opsta-kultura | rozeta.jpg | Hans Hillewaert | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Rosetta_Stone) |
-| opsta-kultura | big-ben.jpg | Christian David | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Big_Ben) |
-| opsta-kultura | luvr.jpg | Benh LIEU SONG (Flickr) | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Louvre) |
 | opsta-kultura | gutenberg.jpg | NYC Wanderer (Kevin Eng) | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Gutenberg_Bible) |
 | razred5-istorija | giza.jpg | KennyOMG | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Giza_pyramid_complex) |
 | razred5-istorija | vucica.jpg | — | CC0 | [izvor](https://en.wikipedia.org/wiki/Capitoline_Wolf) |
-| razred5-istorija | papirus.jpg | — | Public domain | [izvor](https://en.wikipedia.org/wiki/Papyrus) |
-| razred5-istorija | gladijatori.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Gladiator) |
 | razred5-istorija | konstantin.jpg | Merulana | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Constantine_the_Great) |
 | razred5-istorija | dioklecijan.jpg | Dosseman | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Diocletian) |
 | razred5-istorija | trajanova-tabla.jpg | Ynhockey | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Tabula_Traiana) |
-| razred5-istorija | falanga.jpg | Ernest de Sarzec - Choquin de Sarzec, Ernest (1832-1901) | Public domain | [izvor](https://en.wikipedia.org/wiki/Phalanx) |
 | razred5-istorija | homer.jpg | Photograph by Mike Peel (www.mikepeel.net). | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Homer) |
 | razred5-istorija | zevs.jpg | Unknown artistUnknown artist | Public domain | [izvor](https://en.wikipedia.org/wiki/Zeus) |
 | razred5-istorija | ra.png | Jeff Dahl | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Ra) |
@@ -147,9 +124,6 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | razred5-istorija | pula-arena.jpg | Olgierd Rudak | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Pula_Arena) |
 | sport | djokovic.jpg | Andymiah | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Novak_Djokovic) |
 | sport | jokic.jpg | All-Pro Reels | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Nikola_Joki%C4%87) |
-| sport | spiridon-luis.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Spyridon_Louis) |
-| sport | bikila.jpg | Anefo Derivative work MagentaGreen | CC BY-SA 3.0 nl | [izvor](https://en.wikipedia.org/wiki/Abebe_Bikila) |
-| sport | pele.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Pel%C3%A9) |
 | srpska-istorija | milos-obrenovic.jpg | Unidentified painter | Public domain | [izvor](https://en.wikipedia.org/wiki/Milo%C5%A1_Obrenovi%C4%87) |
 | srpska-istorija | sveti-sava.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Saint_Sava) |
 | srpska-istorija | dusan.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Stefan_Du%C5%A1an) |
@@ -219,7 +193,6 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | svetska-istorija | klinasto-pismo.jpg | Bjørn Christian Tørrissen | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Cuneiform) |
 | svetska-istorija | terakota.jpg | xiquinhosilva | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Terracotta_Army) |
 | svetska-istorija | dzingis-kan.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Genghis_Khan) |
-| svetska-istorija | titanik.jpg | Francis Godolphin Osbourne Stuart | Public domain | [izvor](https://en.wikipedia.org/wiki/Titanic) |
 | svetska-istorija | mejflauer.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Mayflower) |
 | svetska-istorija | sputnjik.jpg | Andrey Butko | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Sputnik_1) |
 | svetska-istorija | magna-karta.jpg | Original authors were the barons and King John of England. Uploaded by Earthsoun | Public domain | [izvor](https://en.wikipedia.org/wiki/Magna_Carta) |
@@ -233,7 +206,6 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | svetska-istorija | garibaldi.jpg | In album: Cartes-de-visite portraits of U.S. Army officers, children, and others | Public domain | [izvor](https://en.wikipedia.org/wiki/Giuseppe_Garibaldi) |
 | svetska-istorija | bizmark.jpg | Jacques Pilartz | Public domain | [izvor](https://en.wikipedia.org/wiki/Otto_von_Bismarck) |
 | svetska-istorija | mlk.jpg | Yoichi Okamoto | Public domain | [izvor](https://en.wikipedia.org/wiki/Martin_Luther_King_Jr.) |
-| svetska-istorija | apolo11.jpg | Neil A. Armstrong | Public domain | [izvor](https://en.wikipedia.org/wiki/Apollo_11) |
 | svetska-istorija | brace-rajt.jpg | Orville Wright and Wilbur Wright (credited as photographers) [1], [2] | Public domain | [izvor](https://en.wikipedia.org/wiki/Wright_brothers) |
 | svetska-istorija | lindberg.jpg | Harris & Ewing | Public domain | [izvor](https://en.wikipedia.org/wiki/Charles_Lindbergh) |
 | svetska-istorija | konfucije.jpg | Anonymous Chinese painter of the Western Han period | Public domain | [izvor](https://en.wikipedia.org/wiki/Confucius) |
@@ -243,14 +215,11 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | svetska-istorija | kenedi.jpg | Cecil W. Stoughton | Public domain | [izvor](https://en.wikipedia.org/wiki/John_F._Kennedy) |
 | svetska-istorija | amundsen.jpg | AnonymousUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Roald_Amundsen) |
 | svetska-istorija | ana-frank.jpg | Unknown photographer | Public domain | [izvor](https://en.wikipedia.org/wiki/Anne_Frank) |
-| svetska-istorija | ford-t.jpg | ModelTMitch | Public domain | [izvor](https://en.wikipedia.org/wiki/Ford_Model_T) |
 | svetska-istorija | tutankamon.jpg | Roland Unger | Public domain | [izvor](https://en.wikipedia.org/wiki/Mask_of_Tutankhamun) |
 | svetska-istorija | sliman.jpg | Ed. Schultze Hofphotograph Heidelberg Plöckstrasse 79 | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Heinrich_Schliemann) |
 | svetska-istorija | berlinski-zid.jpg | Noir | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Berlin_Wall) |
 | svetska-istorija | karlo-veliki.jpg | Charlemagne. Autorité émettrice de monnaie indéterminé. Atelier monétaire. Émett | Public domain | [izvor](https://en.wikipedia.org/wiki/Charlemagne) |
 | svetska-istorija | cezar.jpg | Ángel M. Felicísimo from Mérida, España | Public domain | [izvor](https://en.wikipedia.org/wiki/Julius_Caesar) |
-| svetska-istorija | vikinski-brod.jpg | Viking own archive, Jarmeryk (archiwum własne wikingów, Jarmeryk) | Attribution | [izvor](https://en.wikipedia.org/wiki/Viking_ship) |
-| svetska-istorija | parna-masina.jpg | Nicolás Pérez | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Watt_steam_engine) |
 | svetska-istorija | abu-simbel.jpg | youssef_alam | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Abu_Simbel) |
 | svetska-istorija | nefertiti.jpg | Philip Pikart | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Nefertiti_Bust) |
 | svetska-istorija | marko-aurelije.jpg | Merulana | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Equestrian_statue_of_Marcus_Aurelius) |
@@ -322,7 +291,6 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | umetnost | firentinska-katedrala.jpg | Gary Campbell-Hall | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Florence_Cathedral) |
 | umetnost | grand-zat.jpg | Georges Seurat | Public domain | [izvor](https://en.wikipedia.org/wiki/A_Sunday_Afternoon_on_the_Island_of_La_Grande_Jatte) |
 | umetnost | vilendorf.jpg | User:MatthiasKabel | CC BY 2.5 | [izvor](https://en.wikipedia.org/wiki/Venus_of_Willendorf) |
-| umetnost | mozaik.jpg | AnonymousUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Mosaic) |
 | umetnost | vitraz.jpg | PtrQs | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Stained_glass) |
 | umetnost | veliki-talas.jpg | Katsushika Hokusai | Public domain | [izvor](https://en.wikipedia.org/wiki/The_Great_Wave_off_Kanagawa) |
 | umetnost | americka-gotika.jpg | Grant Wood | Public domain | [izvor](https://en.wikipedia.org/wiki/American_Gothic) |
