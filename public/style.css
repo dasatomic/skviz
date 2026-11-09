@@ -31,8 +31,10 @@ input, select { font: inherit; }
 body.ekran #app { max-width: 1400px; font-size: 1.35em; }
 
 h1, h2, h3 { margin: .3em 0; line-height: 1.15; }
-.naslov-igre { font-size: 2.6rem; font-weight: 900; text-align: center; margin: 18px 0 2px; letter-spacing: -1px;
-  background: linear-gradient(90deg, #fdcb6e, #fd79a8, #74b9ff); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.naslov-igre { text-align: center; margin: 14px 0 4px; line-height: 0; }
+.naslov-igre .logo { width: min(250px, 68vw); height: auto; filter: drop-shadow(0 4px 18px rgba(69, 189, 232, .28)); animation: uskok .7s; }
+.naslov-igre.mali .logo { width: 150px; }
+body.ekran .naslov-igre .logo { width: min(420px, 50vw); }
 .podnaslov { text-align: center; color: var(--blago); margin-bottom: 18px; }
 .kartica { background: var(--kartica); border-radius: var(--radijus); padding: 16px; margin: 12px 0; box-shadow: 0 6px 24px rgba(0,0,0,.25); }
 .red { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
@@ -68,8 +70,8 @@ h1, h2, h3 { margin: .3em 0; line-height: 1.15; }
 .igrac.odsutan { opacity: .4; }
 .igrac .kruna { position: absolute; top: -12px; font-size: 1.1em; }
 .igrac .kvacica { position: absolute; right: 4px; top: 38px; background: var(--dobro); border-radius: 50%; width: 22px; height: 22px; display: grid; place-items: center; font-size: .75em; animation: uskok .3s; }
-.kvizovi { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
-.kviz { background: #1b1846; border-radius: 14px; padding: 12px; text-align: left; border: 3px solid transparent; }
+.kvizovi { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 10px; }
+.kviz { background: #1b1846; border-radius: 14px; padding: 10px; text-align: left; border: 3px solid transparent; }
 .kviz.izabran { border-color: var(--istaknuto); background: #2d2870; }
 .kviz .ik { font-size: 1.8em; }
 .kviz .nz { font-weight: 800; line-height: 1.15; }
@@ -291,3 +293,8 @@ body.ekran .mini { width: 44px; height: 44px; font-size: 1.4em; }
 .tabela.gusto .av { font-size: 1.2em; }
 .tabela.gusto .pp { font-size: 1em; }
 .tabela .red-t.ja { outline: 2px solid var(--istaknuto); }
+.pismo-izbor { justify-content: center; margin: -6px 0 14px; }
+.izabrani-predmet { display: flex; align-items: center; gap: 12px; }
+.izabrani-predmet .ik { font-size: 2.2em; }
+.izabrani-predmet .nz { flex: 1; font-weight: 900; font-size: 1.15em; }
+.izabrani-predmet button { background: #1b1846; padding: 8px 12px; border-radius: 10px; font-weight: 800; font-size: .85em; }

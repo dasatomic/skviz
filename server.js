@@ -177,6 +177,7 @@ async function obradi(req, res) {
       if (!kod) return kraj(res, 503, { greska: 'Server je pun. Pokušaj malo kasnije.' });
       const s = new Soba(kod, emituj);
       sobe.set(kod, s);
+      if (b.pismo === 'latinica') s.podesavanja.pismo = 'latinica';
       s.dodajIgraca(id, b.ime, b.avatar);
       return kraj(res, 200, { kod });
     }

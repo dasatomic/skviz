@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="36 30 300 300">
+  <!-- ikona „Сквиз“: slovo К iz logoa -->
+  <defs>
+    <linearGradient id="g" x1="0" y1="56" x2="0" y2="330" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#5a9cff"/><stop offset=".6" stop-color="#45bde8"/><stop offset="1" stop-color="#38d9a6"/></linearGradient>
+  </defs>
+  <rect x="36" y="30" width="300" height="300" rx="66" fill="#1e1b4b"/>
+  <g fill="url(#g)">
+  <g transform="translate(186 164) scale(.86) translate(-371 -165)">
+    <path d="M304,52 C322,46 340,44 358,40 C350,52 346,62 344,76 L344,248 C344,262 346,274 350,286 C334,282 318,282 302,286 C308,272 310,260 310,246 L314,78 C314,68 310,60 304,52 Z"/>
+    <path d="M338,170 C364,140 392,100 412,60 C420,58 430,56 440,54 C434,64 428,72 422,82 C402,116 372,150 346,180 Z"/>
+    <path d="M348,170 C374,184 396,206 408,232 C412,244 414,254 412,262 C416,252 418,242 416,230 C408,204 384,180 352,164 Z"/>
+  </g>
+    <path transform="translate(0 -14)" d="M78,300 C84,304 92,306 100,305 C160,298 220,296 290,302 C298,303 304,306 310,310 C304,314 300,320 298,328 C292,322 286,318 280,316 C220,310 160,312 104,318 C94,320 86,326 80,334 C82,322 82,310 78,300 Z"/>
+  </g>
+</svg>
