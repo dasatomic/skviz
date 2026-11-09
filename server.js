@@ -85,6 +85,19 @@ const TIPOVI = {
   '.wav': 'audio/wav', '.ico': 'image/x-icon', '.webmanifest': 'application/manifest+json',
 };
 
+// verzija klijenta (otisak fajlova iz public/) – telefon koji je otvorio staru verziju stranice sam se osveži
+let otisak = { do: 0, v: '' };
+function verzijaKlijenta() {
+  if (Date.now() < otisak.do) return otisak.v;
+  let v = '';
+  for (const f of ['index.html', 'app.js', 'geo.js', 'mediji.js', 'pismo.js', 'style.css']) {
+    try { const st = fs.statSync(path.join(JAVNO, f)); v += st.size.toString(36) + st.mtimeMs.toString(36); } catch {}
+  }
+  otisak = { do: Date.now() + 5000, v: require('crypto').createHash('md5').update(v).digest('hex').slice(0, 10) };
+  return otisak.v;
+}
+Soba.verzijaKlijenta = verzijaKlijenta;
+
 function staticki(res, koren, rel) {
   const f = path.normalize(path.join(koren, rel));
   if (!f.startsWith(koren)) return kraj(res, 403, 'zabranjeno');
@@ -93,7 +106,7 @@ function staticki(res, koren, rel) {
     res.writeHead(200, {
       'Content-Type': TIPOVI[path.extname(f).toLowerCase()] || 'application/octet-stream',
       'Content-Length': st.size,
-      'Cache-Control': koren === KVIZOVI || rel.startsWith('/geo') ? 'public, max-age=3600' : 'no-cache',
+      'Cache-Control': koren === KVIZOVI || rel.startsWith('/geo/') ? 'public, max-age=3600' : 'no-cache',
     });
     fs.createReadStream(f).pipe(res);
   });

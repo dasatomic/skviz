@@ -108,7 +108,13 @@ async function akcija(tip, podaci = {}) {
 let nacin = 'sse';      // 'sse' ili 'poll' (long-polling kad SSE ne prolazi, npr. kroz Cloudflare tunel)
 let generacija = 0;
 
+// verzija koda sa servera pri prvom stanju; ako se kasnije promeni (server je dobio novi kod), stranica se osveži
+let mojaVerzija = null;
 function primi(v) {
+  if (v.klijent) {
+    if (mojaVerzija === null) mojaVerzija = v.klijent;
+    else if (v.klijent !== mojaVerzija) { location.reload(); return; }
+  }
   pomak = v.sada - Date.now();
   const staro = V;
   V = v;
