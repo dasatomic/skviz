@@ -1050,11 +1050,7 @@
         "Kada Venera dođe između Sunca i Zemlje"
       ],
       "zanimljivost": "Mesec je oko 400 puta manji od Sunca, ali i oko 400 puta bliži – zato ga može tačno prekriti.",
-      "rec": "sunce",
-      "mediji": {
-        "vrsta": "planeta",
-        "ime": "sunce"
-      }
+      "rec": "sunce"
     },
     {
       "lekcija": 5,
@@ -1132,11 +1128,7 @@
         "Svetlost se ne odbija"
       ],
       "zanimljivost": "Bilijarska kugla se od ivice stola odbija po istom pravilu.",
-      "rec": "ugao",
-      "mediji": {
-        "vrsta": "svg",
-        "kod": "<svg viewBox='0 0 240 150' xmlns='http://www.w3.org/2000/svg'><line x1='10' y1='130' x2='230' y2='130' stroke='#aaa' stroke-width='6'/><line x1='120' y1='130' x2='120' y2='20' stroke='#fff' stroke-dasharray='6 5' stroke-width='2'/><line x1='40' y1='40' x2='120' y2='130' stroke='#ffd166' stroke-width='4'/><line x1='120' y1='130' x2='200' y2='40' stroke='#ffd166' stroke-width='4'/><text x='88' y='80' fill='#fff' font-size='16'>α</text><text x='140' y='80' fill='#fff' font-size='16'>β</text></svg>"
-      }
+      "rec": "ugao"
     },
     {
       "lekcija": 6,
@@ -1508,9 +1500,9 @@
       "pitanje": "Koji je najveći teleskop sa ogledalom poslat u svemir?",
       "odgovori": [
         "Svemirski teleskop „Džejms Veb“",
-        "Habl (Hubble), iz 1990",
-        "Galilejev teleskop iz 1609. godine",
-        "Kepler, za traženje planeta drugih zvezda"
+        "Habl",
+        "Galilejev teleskop",
+        "Kepler"
       ],
       "zanimljivost": "Ogledalo Džejms Veba ima prečnik 6,5 m i složeno je od 18 pozlaćenih šestougaonih segmenata.",
       "rec": "veb"
@@ -1539,11 +1531,7 @@
         "Oko 1 dana"
       ],
       "zanimljivost": "Zato Sunce vidimo onakvo kakvo je bilo pre 8 minuta.",
-      "rec": "sunce",
-      "mediji": {
-        "vrsta": "planeta",
-        "ime": "sunce"
-      }
+      "rec": "sunce"
     },
     {
       "lekcija": 8,
@@ -1556,11 +1544,7 @@
         "Ajnštajn"
       ],
       "zanimljivost": "Remer je primetio da pomračenja meseca Io kasne kada je Jupiter dalje od Zemlje.",
-      "rec": "remer",
-      "mediji": {
-        "vrsta": "planeta",
-        "ime": "jupiter"
-      }
+      "rec": "remer"
     },
     {
       "lekcija": 8,
@@ -1599,11 +1583,7 @@
         "Oko 1 dan, jer Mesec svetli slabo"
       ],
       "zanimljivost": "Kada su astronauti razgovarali sa Zemljom, odgovori su kasnili oko 2,5 sekunde – tamo i nazad.",
-      "rec": "mesec",
-      "mediji": {
-        "vrsta": "planeta",
-        "ime": "mesec"
-      }
+      "rec": "mesec"
     },
     {
       "lekcija": 8,
@@ -1668,11 +1648,7 @@
         "Oko 1 godine svetlosti"
       ],
       "zanimljivost": "Sonde kod Neptuna dobijaju komande sa Zemlje sa višečasovnim zakašnjenjem.",
-      "rec": "neptun",
-      "mediji": {
-        "vrsta": "planeta",
-        "ime": "neptun"
-      }
+      "rec": "neptun"
     },
     {
       "lekcija": 8,
@@ -3626,11 +3602,7 @@
         "Talasasta linija"
       ],
       "zanimljivost": "Šeme koriste standardne simbole da bi ih razumeli inženjeri širom sveta.",
-      "rec": "šema",
-      "mediji": {
-        "vrsta": "svg",
-        "kod": "<svg viewBox='0 0 200 120' xmlns='http://www.w3.org/2000/svg'><g stroke='#fff' stroke-width='4' fill='none'><circle cx='100' cy='60' r='30'/><line x1='79' y1='39' x2='121' y2='81'/><line x1='121' y1='39' x2='79' y2='81'/><line x1='10' y1='60' x2='70' y2='60'/><line x1='130' y1='60' x2='190' y2='60'/></g></svg>"
-      }
+      "rec": "šema"
     },
     {
       "lekcija": 18,
@@ -5016,19 +4988,6 @@
     },
     {
       "lekcija": 25,
-      "tezina": 1,
-      "pitanje": "Koji pronalazač se smatra „ocem“ naizmeničnih motora?",
-      "odgovori": [
-        "Nikola Tesla",
-        "Tomas Edison",
-        "Aleksandar Bel",
-        "Džejms Vat"
-      ],
-      "zanimljivost": "Teslin asinhroni motor patentiran je 1888. godine.",
-      "rec": "tesla"
-    },
-    {
-      "lekcija": 25,
       "tezina": 3,
       "pitanje": "Kako akcelerator čestica (npr. u CERN-u) drži čestice na kružnoj putanji?",
       "odgovori": [
@@ -5054,6 +5013,19 @@
       "rec": "disk"
     },
     {
+      "lekcija": 25,
+      "tezina": 2,
+      "pitanje": "Šta se dešava sa silom na provodnik u magnetnom polju ako se jačina struje kroz njega udvostruči?",
+      "odgovori": [
+        "Sila se udvostruči",
+        "Sila se smanji upola",
+        "Sila ostane ista",
+        "Sila nestane"
+      ],
+      "zanimljivost": "Sila na provodnik srazmerna je jačini struje, jačini magnetnog polja i dužini provodnika u polju. Zato jači elektromotori imaju više navojaka žice i jače magnete.",
+      "rec": "sila"
+    },
+    {
       "lekcija": 26,
       "tezina": 1,
       "pitanje": "Od čega je građen atom?",
@@ -5064,16 +5036,7 @@
         "Od svetlosti"
       ],
       "zanimljivost": "Jezgro je oko 100.000 puta manje od atoma – kada bi atom bio stadion, jezgro bi bilo zrno graška na sredini.",
-      "rec": "atom",
-      "mediji": {
-        "vrsta": "atom",
-        "ljuske": [
-          2,
-          8,
-          1
-        ],
-        "jezgro": "11+"
-      }
+      "rec": "atom"
     },
     {
       "lekcija": 26,
@@ -5237,14 +5200,7 @@
         "Uranijum – najteži prirodni element koji se lako cepa"
       ],
       "zanimljivost": "Vodonik čini oko 74% mase vidljive materije u svemiru.",
-      "rec": "vodonik",
-      "mediji": {
-        "vrsta": "atom",
-        "ljuske": [
-          1
-        ],
-        "jezgro": "1+"
-      }
+      "rec": "vodonik"
     },
     {
       "lekcija": 26,
@@ -5270,15 +5226,7 @@
         "2"
       ],
       "zanimljivost": "Kiseonik-16 ima 8 protona i 8 neutrona.",
-      "rec": "kiseonik",
-      "mediji": {
-        "vrsta": "atom",
-        "ljuske": [
-          2,
-          6
-        ],
-        "jezgro": "8+"
-      }
+      "rec": "kiseonik"
     },
     {
       "lekcija": 27,
@@ -5312,7 +5260,7 @@
       "pitanje": "Koja vrsta zračenja se sastoji od jezgara helijuma?",
       "odgovori": [
         "Alfa (α) zračenje",
-        "Beta (β) zračenje elektrona",
+        "Beta (β) zračenje",
         "Gama (γ) zračenje",
         "Rendgensko (X) zračenje"
       ],
@@ -5694,11 +5642,7 @@
         "Topljenje čvrstog tela na visokoj temperaturi u tečno stanje"
       ],
       "zanimljivost": "U Suncu se svake sekunde oko 600 miliona tona vodonika pretvori u helijum.",
-      "rec": "fuzija",
-      "mediji": {
-        "vrsta": "planeta",
-        "ime": "sunce"
-      }
+      "rec": "fuzija"
     },
     {
       "lekcija": 29,
