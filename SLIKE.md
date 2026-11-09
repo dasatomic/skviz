@@ -94,6 +94,20 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | muzicko | harfa.png | — | Public domain | [izvor](https://en.wikipedia.org/wiki/Harp) |
 | muzicko | fagot.png | Gregory F. Maxwell &lt;gmaxwell@gmail.com&gt; PGP:0xB0413BFA | GFDL 1.2 | [izvor](https://en.wikipedia.org/wiki/Bassoon) |
 | muzicko | tuba.jpg | Yamaha Corporation | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Tuba) |
+| razred5-istorija | giza.jpg | KennyOMG | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Giza_pyramid_complex) |
+| razred5-istorija | vucica.jpg | — | CC0 | [izvor](https://en.wikipedia.org/wiki/Capitoline_Wolf) |
+| razred5-istorija | papirus.jpg | — | Public domain | [izvor](https://en.wikipedia.org/wiki/Papyrus) |
+| razred5-istorija | gladijatori.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Gladiator) |
+| razred5-istorija | konstantin.jpg | Merulana | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Constantine_the_Great) |
+| razred5-istorija | dioklecijan.jpg | Dosseman | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Diocletian) |
+| razred5-istorija | trajanova-tabla.jpg | Ynhockey | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Tabula_Traiana) |
+| razred5-istorija | falanga.jpg | Ernest de Sarzec - Choquin de Sarzec, Ernest (1832-1901) | Public domain | [izvor](https://en.wikipedia.org/wiki/Phalanx) |
+| razred5-istorija | homer.jpg | Photograph by Mike Peel (www.mikepeel.net). | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Homer) |
+| razred5-istorija | zevs.jpg | Unknown artistUnknown artist | Public domain | [izvor](https://en.wikipedia.org/wiki/Zeus) |
+| razred5-istorija | ra.png | Jeff Dahl | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Ra) |
+| razred5-istorija | lepenski-vir.jpg | Myself | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Lepenski_Vir) |
+| razred5-istorija | akropolj.jpg | Giles Laurent | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Acropolis_of_Athens) |
+| razred5-istorija | pula-arena.jpg | Olgierd Rudak | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Pula_Arena) |
 | sport | djokovic.jpg | Andymiah | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Novak_Djokovic) |
 | sport | jokic.jpg | All-Pro Reels | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Nikola_Joki%C4%87) |
 | srpska-istorija | milos-obrenovic.jpg | Unidentified painter | Public domain | [izvor](https://en.wikipedia.org/wiki/Milo%C5%A1_Obrenovi%C4%87) |
@@ -114,6 +128,39 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | srpska-istorija | nemanja.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Stefan_Nemanja) |
 | srpska-istorija | lepenski-vir.jpg | Myself | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Lepenski_Vir) |
 | srpska-istorija | romulijana.jpg | Unknown authorUnknown author | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Gamzigrad) |
+| srpska-istorija | golubac.jpg | Ynhockey | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Golubac_Fortress) |
+| srpska-istorija | neznani-junak.jpg | Ivanbuki | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Monument_to_the_Unknown_Hero) |
+| srpska-istorija | cele-kula.jpg | martijnmunneke | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Skull_Tower) |
+| srpska-istorija | miroslavljevo.jpg | anonimus | Public domain | [izvor](https://en.wikipedia.org/wiki/Miroslav_Gospel) |
+| srpska-istorija | oktoih.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Cetinje_Octoechos) |
+| srpska-istorija | stecak.jpg | Litany | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Ste%C4%87ak) |
+| srpska-istorija | kalemegdan.jpg | Oliver Bunic | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Belgrade_Fortress) |
+| srpska-istorija | rajs.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Archibald_Reiss) |
+| srpska-istorija | elsi-inglis.jpg | Balfour, Lady Francis | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Elsie_Inglis) |
+| srpska-istorija | flora-sends.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Flora_Sandes) |
+| srpska-istorija | hajduk-veljko.jpg | Uroš Knežević | Public domain | [izvor](https://en.wikipedia.org/wiki/Hajduk_Veljko) |
+| srpska-istorija | garasanin.jpg | Stojanović/Karastoyanov, Anastas Nikolov | Public domain | [izvor](https://en.wikipedia.org/wiki/Ilija_Gara%C5%A1anin) |
+| srpska-istorija | kneginja-ljubica.jpg | AnonymousUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Ljubica_Vukomanovi%C4%87) |
+| srpska-istorija | stepa.jpg | — | Public domain | [izvor](https://en.wikipedia.org/wiki/Stepa_Stepanovi%C4%87) |
+| srpska-istorija | bojovic.jpg | — | Public domain | [izvor](https://en.wikipedia.org/wiki/Petar_Bojovi%C4%87) |
+| srpska-istorija | kralj-aleksandar.jpg | http://sr.wikipedia.org/wiki/%D0%9A%D0%BE%D1%80%D0%B8%D1%81%D0%BD%D0%B8%D0%BA:Dj | Public domain | [izvor](https://en.wikipedia.org/wiki/Alexander_I_of_Yugoslavia) |
+| srpska-istorija | knez-mihailo.jpg | Johann Böss | Public domain | [izvor](https://en.wikipedia.org/wiki/Mihailo_Obrenovi%C4%87%2C_Prince_of_Serbia) |
+| srpska-istorija | kralj-milan.jpg | Josef Löwy | Public domain | [izvor](https://en.wikipedia.org/wiki/Milan_I_of_Serbia) |
+| srpska-istorija | novo-brdo.jpg | Arben Llapashtica | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Novo_Brdo_Fortress) |
+| srpska-istorija | niska-tvrdjava.jpg | J tomic m | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Ni%C5%A1_Fortress) |
+| srpska-istorija | lazarica.jpg | Sun82 | Public domain | [izvor](https://en.wikipedia.org/wiki/Lazarica_Church) |
+| srpska-istorija | stari-ras.jpg | Саша Стефановић!!! (talk) The original uploader was Kolossus at English Wikipedi | Public domain | [izvor](https://en.wikipedia.org/wiki/Stari_Ras) |
+| srpska-istorija | viminacijum.jpg | This image was made by Sadko. Please credit this with: "Sadko, Wikipedia" in the | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Viminacium) |
+| srpska-istorija | caricin-grad.jpg | Maja1407 | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Justiniana_Prima) |
+| srpska-istorija | kraljevic-marko.jpg | AnonymousUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Prince_Marko) |
+| srpska-istorija | kneginja-milica.jpg | This image was made by Sadko. Please credit this with: "Sadko, Wikipedia" in the | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Princess_Milica_of_Serbia) |
+| srpska-istorija | djuradj.jpg | Unknown painter | Public domain | [izvor](https://en.wikipedia.org/wiki/%C4%90ura%C4%91_Brankovi%C4%87) |
+| srpska-istorija | stefan-decanski.jpg | BLAGO Fund, Inc. | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Stefan_De%C4%8Danski) |
+| srpska-istorija | uros-predic-milos.jpg | Aleksandar Dobrić (Alexander Dobrich) | Public domain | [izvor](https://en.wikipedia.org/wiki/Milo%C5%A1_Obili%C4%87) |
+| srpska-istorija | maglic.jpg | Okremen | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Magli%C4%8D) |
+| srpska-istorija | franc-ferdinand.jpg | Ferdinand Schmutzer | Public domain | [izvor](https://en.wikipedia.org/wiki/Archduke_Franz_Ferdinand_of_Austria) |
+| srpska-istorija | milutin.jpg | Unknown Serbian painter | Public domain | [izvor](https://en.wikipedia.org/wiki/Stefan_Milutin) |
+| srpska-istorija | smederevska-tvrdjava.jpg | Duja | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Smederevo_Fortress) |
 | srpski-jezik | vuk.jpg | J.B.Rotfmayer | Public domain | [izvor](https://en.wikipedia.org/wiki/Vuk_Karad%C5%BEi%C4%87) |
 | srpski-jezik | dositej.png | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Dositej_Obradovi%C4%87) |
 | srpski-jezik | desanka.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Desanka_Maksimovi%C4%87) |
@@ -131,6 +178,58 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | svetska-istorija | mandela.jpg | Kingkongphoto & www.celebrity-photos.com from Laurel | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Nelson_Mandela) |
 | svetska-istorija | gagarin.jpg | Александр Моклецов / СовИнформБюро | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Yuri_Gagarin) |
 | svetska-istorija | armstrong.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Neil_Armstrong) |
+| svetska-istorija | bastilja.jpg | Unidentified painter | Public domain | [izvor](https://en.wikipedia.org/wiki/Storming_of_the_Bastille) |
+| svetska-istorija | gutenberg.jpg | Kenneth C. Zirkel | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Johannes_Gutenberg) |
+| svetska-istorija | hijeroglifi.jpg | unknown Egyptian scribe | Copyrighted free use | [izvor](https://en.wikipedia.org/wiki/Egyptian_hieroglyphs) |
+| svetska-istorija | klinasto-pismo.jpg | Bjørn Christian Tørrissen | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Cuneiform) |
+| svetska-istorija | terakota.jpg | xiquinhosilva | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Terracotta_Army) |
+| svetska-istorija | dzingis-kan.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Genghis_Khan) |
+| svetska-istorija | titanik.jpg | Francis Godolphin Osbourne Stuart | Public domain | [izvor](https://en.wikipedia.org/wiki/Titanic) |
+| svetska-istorija | mejflauer.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Mayflower) |
+| svetska-istorija | sputnjik.jpg | Andrey Butko | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Sputnik_1) |
+| svetska-istorija | magna-karta.jpg | Original authors were the barons and King John of England. Uploaded by Earthsoun | Public domain | [izvor](https://en.wikipedia.org/wiki/Magna_Carta) |
+| svetska-istorija | moai.jpg | Ian Sewell | CC BY 2.5 | [izvor](https://en.wikipedia.org/wiki/Moai) |
+| svetska-istorija | stradun.jpg | dronepicr | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Stradun_(street)) |
+| svetska-istorija | boskovic.jpg | — | Public domain | [izvor](https://en.wikipedia.org/wiki/Roger_Joseph_Boscovich) |
+| svetska-istorija | pompeja.jpg | Carsten Steger | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Pompeii) |
+| svetska-istorija | sokrat.jpg | Copy of Lysippos (?) | Public domain | [izvor](https://en.wikipedia.org/wiki/Socrates) |
+| svetska-istorija | luter.jpg | Lucas Cranach the Elder | Public domain | [izvor](https://en.wikipedia.org/wiki/Martin_Luther) |
+| svetska-istorija | versaj.jpg | ToucanWings | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Palace_of_Versailles) |
+| svetska-istorija | garibaldi.jpg | In album: Cartes-de-visite portraits of U.S. Army officers, children, and others | Public domain | [izvor](https://en.wikipedia.org/wiki/Giuseppe_Garibaldi) |
+| svetska-istorija | bizmark.jpg | Jacques Pilartz | Public domain | [izvor](https://en.wikipedia.org/wiki/Otto_von_Bismarck) |
+| svetska-istorija | mlk.jpg | Yoichi Okamoto | Public domain | [izvor](https://en.wikipedia.org/wiki/Martin_Luther_King_Jr.) |
+| svetska-istorija | apolo11.jpg | Neil A. Armstrong | Public domain | [izvor](https://en.wikipedia.org/wiki/Apollo_11) |
+| svetska-istorija | brace-rajt.jpg | Orville Wright and Wilbur Wright (credited as photographers) [1], [2] | Public domain | [izvor](https://en.wikipedia.org/wiki/Wright_brothers) |
+| svetska-istorija | lindberg.jpg | Harris & Ewing | Public domain | [izvor](https://en.wikipedia.org/wiki/Charles_Lindbergh) |
+| svetska-istorija | konfucije.jpg | Anonymous Chinese painter of the Western Han period | Public domain | [izvor](https://en.wikipedia.org/wiki/Confucius) |
+| svetska-istorija | justinijan.jpg | Petar Milošević | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Justinian_I) |
+| svetska-istorija | lepanto.jpg | Laureys a Castro | Public domain | [izvor](https://en.wikipedia.org/wiki/Battle_of_Lepanto) |
+| svetska-istorija | trafalgar.jpg | Clarkson Frederick Stanfield | Public domain | [izvor](https://en.wikipedia.org/wiki/Battle_of_Trafalgar) |
+| svetska-istorija | kenedi.jpg | Cecil W. Stoughton | Public domain | [izvor](https://en.wikipedia.org/wiki/John_F._Kennedy) |
+| svetska-istorija | amundsen.jpg | AnonymousUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Roald_Amundsen) |
+| svetska-istorija | ana-frank.jpg | Unknown photographer | Public domain | [izvor](https://en.wikipedia.org/wiki/Anne_Frank) |
+| svetska-istorija | ford-t.jpg | ModelTMitch | Public domain | [izvor](https://en.wikipedia.org/wiki/Ford_Model_T) |
+| svetska-istorija | tutankamon.jpg | Roland Unger | Public domain | [izvor](https://en.wikipedia.org/wiki/Mask_of_Tutankhamun) |
+| svetska-istorija | sliman.jpg | Ed. Schultze Hofphotograph Heidelberg Plöckstrasse 79 | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Heinrich_Schliemann) |
+| svetska-istorija | berlinski-zid.jpg | Noir | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Berlin_Wall) |
+| svetska-istorija | karlo-veliki.jpg | Charlemagne. Autorité émettrice de monnaie indéterminé. Atelier monétaire. Émett | Public domain | [izvor](https://en.wikipedia.org/wiki/Charlemagne) |
+| svetska-istorija | cezar.jpg | Ángel M. Felicísimo from Mérida, España | Public domain | [izvor](https://en.wikipedia.org/wiki/Julius_Caesar) |
+| svetska-istorija | vikinski-brod.jpg | Viking own archive, Jarmeryk (archiwum własne wikingów, Jarmeryk) | Attribution | [izvor](https://en.wikipedia.org/wiki/Viking_ship) |
+| svetska-istorija | parna-masina.jpg | Nicolás Pérez | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Watt_steam_engine) |
+| svetska-istorija | abu-simbel.jpg | youssef_alam | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Abu_Simbel) |
+| svetska-istorija | nefertiti.jpg | Philip Pikart | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Nefertiti_Bust) |
+| svetska-istorija | marko-aurelije.jpg | Merulana | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Equestrian_statue_of_Marcus_Aurelius) |
+| svetska-istorija | kraljica-viktorija.jpg | Alexander Bassano | Public domain | [izvor](https://en.wikipedia.org/wiki/Queen_Victoria) |
+| svetska-istorija | petar-veliki.jpg | Attributed to Jean-Marc Nattier | Public domain | [izvor](https://en.wikipedia.org/wiki/Peter_the_Great) |
+| svetska-istorija | katarina-velika.jpg | After Alexander Roslin | Public domain | [izvor](https://en.wikipedia.org/wiki/Catherine_the_Great) |
+| svetska-istorija | bolivar.jpg | Luis Enrique Toro Moreno (1897-1933) | Public domain | [izvor](https://en.wikipedia.org/wiki/Sim%C3%B3n_Bol%C3%ADvar) |
+| svetska-istorija | zabranjeni-grad.jpg | Pixelflake | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Forbidden_City) |
+| svetska-istorija | elizabeta-prva.jpg | Unidentified painter | Public domain | [izvor](https://en.wikipedia.org/wiki/Elizabeth_I) |
+| svetska-istorija | vaterlo.jpg | William Sadler | Public domain | [izvor](https://en.wikipedia.org/wiki/Battle_of_Waterloo) |
+| svetska-istorija | rozeta.jpg | Hans Hillewaert | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Rosetta_Stone) |
+| svetska-istorija | vasington.jpg | Gilbert Stuart | Public domain | [izvor](https://en.wikipedia.org/wiki/George_Washington) |
+| svetska-istorija | hamurabi.jpg | Mbzt | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Code_of_Hammurabi) |
+| svetska-istorija | mehmed.jpg | Gentile Bellini | Public domain | [izvor](https://en.wikipedia.org/wiki/Mehmed_II) |
 | umetnost | mona-liza.jpg | Leonardo da Vinci | Public domain | [izvor](https://en.wikipedia.org/wiki/Mona_Lisa) |
 | umetnost | zvezdana-noc.jpg | Vincent van Gogh | Public domain | [izvor](https://en.wikipedia.org/wiki/The_Starry_Night) |
 | umetnost | krik.jpg | Edvard Munch | Public domain | [izvor](https://en.wikipedia.org/wiki/The_Scream) |
@@ -170,3 +269,48 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | umetnost | paja-jovanovic.jpg | Milan Jovanović (1863–1944) | Public domain | [izvor](https://en.wikipedia.org/wiki/Pavle_Paja_Jovanovi%C4%87) |
 | umetnost | gernika-zgrada.jpg | Naotake Murayama | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Guggenheim_Museum_Bilbao) |
 | umetnost | ajfelova-kula.jpg | Benh LIEU SONG | Public domain | [izvor](https://commons.wikimedia.org/wiki/File%3ATour%20Eiffel%20Wikimedia%20Commons.jpg) |
+| umetnost | david.jpg | Jörg Bittner Unna | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/David_(Michelangelo)) |
+| umetnost | lokvanji.jpg | Claude Monet | Public domain | [izvor](https://en.wikipedia.org/wiki/Water_Lilies_(Monet_series)) |
+| umetnost | poljubac.jpg | Gustav Klimt | Public domain | [izvor](https://en.wikipedia.org/wiki/The_Kiss_(Klimt)) |
+| umetnost | djura-jaksic.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/%C4%90ura_Jak%C5%A1i%C4%87) |
+| umetnost | kelnska-katedrala.jpg | Raimond Spekking | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Cologne_Cathedral) |
+| umetnost | subotica-gradska-kuca.jpg | Sunce Niš | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Subotica_City_Hall) |
+| umetnost | narodna-skupstina.jpg | Boris Dimitrov | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/House_of_the_National_Assembly%2C_Belgrade) |
+| umetnost | palata-albanija.jpg | Vladimir Babic | Public domain | [izvor](https://en.wikipedia.org/wiki/Palace_Albanija) |
+| umetnost | atinska-skola.jpg | Raphael | Public domain | [izvor](https://en.wikipedia.org/wiki/The_School_of_Athens) |
+| umetnost | mlekarica.jpg | Johannes Vermeer | Public domain | [izvor](https://en.wikipedia.org/wiki/The_Milkmaid_(Vermeer)) |
+| umetnost | treci-maj.jpg | El_Tres_de_Mayo,_by_Francisco_de_Goya,_from_Prado_in_Google_Earth.jpg: Francisco | Public domain | [izvor](https://en.wikipedia.org/wiki/The_Third_of_May_1808) |
+| umetnost | venera-miloska.jpg | Livioandronico2013 | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Venus_de_Milo) |
+| umetnost | mislilac.jpg | Kaisching | Public domain | [izvor](https://en.wikipedia.org/wiki/The_Thinker) |
+| umetnost | kuca-batljo.jpg | ChristianSchd | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Casa_Batll%C3%B3) |
+| umetnost | panteon.jpg | NikonZ7II | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Pantheon%2C_Rome) |
+| umetnost | firentinska-katedrala.jpg | Gary Campbell-Hall | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Florence_Cathedral) |
+| umetnost | grand-zat.jpg | Georges Seurat | Public domain | [izvor](https://en.wikipedia.org/wiki/A_Sunday_Afternoon_on_the_Island_of_La_Grande_Jatte) |
+| umetnost | vilendorf.jpg | User:MatthiasKabel | CC BY 2.5 | [izvor](https://en.wikipedia.org/wiki/Venus_of_Willendorf) |
+| umetnost | mozaik.jpg | AnonymousUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Mosaic) |
+| umetnost | vitraz.jpg | PtrQs | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Stained_glass) |
+| umetnost | veliki-talas.jpg | Katsushika Hokusai | Public domain | [izvor](https://en.wikipedia.org/wiki/The_Great_Wave_off_Kanagawa) |
+| umetnost | americka-gotika.jpg | Grant Wood | Public domain | [izvor](https://en.wikipedia.org/wiki/American_Gothic) |
+| umetnost | laokon.jpg | Wilfredor | CC0 | [izvor](https://en.wikipedia.org/wiki/Laoco%C3%B6n_and_His_Sons) |
+| umetnost | lovci-u-snegu.jpg | Pieter Brueghel the Elder | Public domain | [izvor](https://en.wikipedia.org/wiki/The_Hunters_in_the_Snow) |
+| umetnost | vavilonska-kula.jpg | Pieter Brueghel the Elder | Public domain | [izvor](https://en.wikipedia.org/wiki/The_Tower_of_Babel_(Bruegel)) |
+| umetnost | vrt-uzivanja.jpg | Hieronymus Bosch | Public domain | [izvor](https://en.wikipedia.org/wiki/The_Garden_of_Earthly_Delights) |
+| umetnost | las-meninas.jpg | Diego Velázquez | Public domain | [izvor](https://en.wikipedia.org/wiki/Las_Meninas) |
+| umetnost | splav-meduze.jpg | Théodore Géricault | Public domain | [izvor](https://en.wikipedia.org/wiki/The_Raft_of_the_Medusa) |
+| umetnost | sloboda-predvodi.jpg | Eugène Delacroix | Public domain | [izvor](https://en.wikipedia.org/wiki/Liberty_Leading_the_People) |
+| umetnost | dorucak-na-travi.jpg | Édouard Manet | Public domain | [izvor](https://en.wikipedia.org/wiki/Le_D%C3%A9jeuner_sur_l'herbe) |
+| umetnost | bal-mulen.jpg | Pierre-Auguste Renoir | Public domain | [izvor](https://en.wikipedia.org/wiki/Bal_du_moulin_de_la_Galette) |
+| umetnost | terasa-kafea.jpg | Vincent van Gogh | Public domain | [izvor](https://en.wikipedia.org/wiki/Caf%C3%A9_Terrace_at_Night) |
+| umetnost | sikstinska-madona.jpg | Raphael | Public domain | [izvor](https://en.wikipedia.org/wiki/Sistine_Madonna) |
+| umetnost | kapetan-misino.jpg | Jorge Láscar from Melbourne, Australia | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Captain_Mi%C5%A1a_Mansion) |
+| umetnost | alhambra.jpg | Jebulon | CC0 | [izvor](https://en.wikipedia.org/wiki/Alhambra) |
+| umetnost | angkor-vat.jpg | Bjørn Christian Tørrissen | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Angkor_Wat) |
+| umetnost | nojsvanstajn.jpg | Thomas Wolf, www.foto-tw.de | CC BY-SA 3.0 de | [izvor](https://en.wikipedia.org/wiki/Neuschwanstein_Castle) |
+| umetnost | brandenburska-kapija.jpg | Thomas Wolf, www.foto-tw.de | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Brandenburg_Gate) |
+| umetnost | rembrant-autoportret.jpg | Rembrandt | Public domain | [izvor](https://en.wikipedia.org/wiki/Self-Portrait_with_Two_Circles) |
+| umetnost | gogen.jpg | Louis-Maurice Boutet de Monvel | Public domain | [izvor](https://en.wikipedia.org/wiki/Paul_Gauguin) |
+| umetnost | sezan-kartasi.jpg | Paul Cézanne | Public domain | [izvor](https://en.wikipedia.org/wiki/The_Card_Players) |
+| umetnost | cas-plesa.jpg | Edgar Degas | Public domain | [izvor](https://en.wikipedia.org/wiki/The_Ballet_Class_(Degas%2C_Mus%C3%A9e_d'Orsay)) |
+| umetnost | pobednik.jpg | Petar Milošević | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Pobednik) |
+| umetnost | nike.jpg | Shonagon | CC0 | [izvor](https://en.wikipedia.org/wiki/Winged_Victory_of_Samothrace) |
+| umetnost | vasilije-blazeni.jpg | Tsy1980 | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Saint_Basil's_Cathedral) |

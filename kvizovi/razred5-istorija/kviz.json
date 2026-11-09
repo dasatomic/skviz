@@ -105,6 +105,10 @@
     {
       "tezina": 1,
       "pitanje": "Koje tri čuvene piramide se nalaze u Gizi?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/giza.jpg"
+      },
       "odgovori": [
         "Keopsova, Kefrenova i Mikerinova",
         "Tutankamonova, Ramzesova i Kleopatrina",
@@ -189,6 +193,10 @@
     {
       "tezina": 3,
       "pitanje": "Kako se zvala grčka bojna formacija zbijenih pešaka sa štitovima i kopljima?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/falanga.jpg"
+      },
       "odgovori": [
         "Falanga",
         "Legija",
@@ -201,6 +209,10 @@
     {
       "tezina": 1,
       "pitanje": "Po legendi, ko su bili braća-osnivači Rima koje je odgojila vučica?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/vucica.jpg"
+      },
       "odgovori": [
         "Romul i Rem",
         "Kastor i Poluks",
@@ -417,6 +429,10 @@
     {
       "tezina": 2,
       "pitanje": "Kako se zvao egipatski bog Sunca?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/ra.png"
+      },
       "odgovori": [
         "Ra",
         "Oziris",
@@ -439,8 +455,12 @@
       "rec": "mumija"
     },
     {
-      "tezina": 3,
+      "tezina": 2,
       "pitanje": "Na čemu su pisali stari Egipćani?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/papirus.jpg"
+      },
       "odgovori": [
         "Na papirusu",
         "Na papiru",
@@ -453,6 +473,10 @@
     {
       "tezina": 2,
       "pitanje": "Ko je, po grčkom predanju, napisao „Ilijadu“ i „Odiseju“?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/homer.jpg"
+      },
       "odgovori": [
         "Homer",
         "Herodot",
@@ -465,6 +489,10 @@
     {
       "tezina": 2,
       "pitanje": "Kako se zvao vrhovni grčki bog, koji je bacao munje?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/zevs.jpg"
+      },
       "odgovori": [
         "Zevs",
         "Posejdon",
@@ -537,6 +565,10 @@
     {
       "tezina": 2,
       "pitanje": "Kako su se zvali rimski borci koji su se borili u arenama radi zabave publike?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/gladijatori.jpg"
+      },
       "odgovori": [
         "Gladijatori",
         "Legionari",
@@ -573,6 +605,10 @@
     {
       "tezina": 3,
       "pitanje": "Koji rimski car je 313. godine dozvolio slobodu hrišćanima?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/konstantin.jpg"
+      },
       "odgovori": [
         "Konstantin Veliki",
         "Neron (koji je zapalio Rim)",
@@ -585,6 +621,10 @@
     {
       "tezina": 3,
       "pitanje": "Koji rimski car je podelio carstvo na četiri dela (tetrarhija)?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/dioklecijan.jpg"
+      },
       "odgovori": [
         "Dioklecijan",
         "Konstantin",
@@ -609,6 +649,10 @@
     {
       "tezina": 3,
       "pitanje": "Gde se nalazi „Trajanova tabla“, rimski natpis isklesan u steni iznad Dunava?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/trajanova-tabla.jpg"
+      },
       "odgovori": [
         "U Đerdapu, na srpskoj strani",
         "U Rimu, na samom Trajanovom stubu",
@@ -621,6 +665,10 @@
     {
       "tezina": 2,
       "pitanje": "Kako se zove grad u Istri koji je imao čuveni rimski amfiteatar, „malu arenu“?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/pula-arena.jpg"
+      },
       "odgovori": [
         "Pula",
         "Split",
@@ -629,6 +677,108 @@
       ],
       "zanimljivost": "Pulska arena je jedan od najbolje očuvanih rimskih amfiteatara na svetu. Može da primi oko 20.000 ljudi.",
       "rec": "amfiteatar"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koje praistorijsko naselje u Đerdapu je poznato po kamenim skulpturama „riboliki“?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/lepenski-vir.jpg"
+      },
+      "odgovori": [
+        "Lepenski Vir",
+        "Vinča",
+        "Starčevo",
+        "Gomolava"
+      ],
+      "zanimljivost": "Lepenski Vir je star oko 9.000 godina. Kada je pravljeno jezero hidrocentrale Đerdap, celo naselje je premešteno na viši teren.",
+      "rec": "riba"
+    },
+    {
+      "vrsta": "spoji",
+      "tezina": 1,
+      "pitanje": "Spoji grčkog boga sa onim čime vlada",
+      "parovi": [
+        [
+          "Zevs",
+          "Nebo i munje"
+        ],
+        [
+          "Posejdon",
+          "More"
+        ],
+        [
+          "Ares",
+          "Rat"
+        ],
+        [
+          "Atina",
+          "Mudrost"
+        ],
+        [
+          "Afrodita",
+          "Ljubav i lepota"
+        ]
+      ],
+      "zanimljivost": "Grci su verovali da bogovi žive na planini Olimp i da se ponašaju kao ljudi – svađaju se, vole i ljute.",
+      "rec": "bogovi"
+    },
+    {
+      "vrsta": "spoji",
+      "tezina": 2,
+      "pitanje": "Spoji pojam sa civilizacijom kojoj pripada",
+      "parovi": [
+        [
+          "Faraon",
+          "Egipat"
+        ],
+        [
+          "Polis",
+          "Grčka"
+        ],
+        [
+          "Legija",
+          "Rim"
+        ],
+        [
+          "Hamurabijev zakonik",
+          "Vavilon"
+        ],
+        [
+          "Klinasto pismo",
+          "Sumer"
+        ]
+      ],
+      "zanimljivost": "Sumerani su oko 3200. pre n. e. počeli da pišu klinastim znacima na glinenim pločicama – to je jedno od najstarijih pisama na svetu.",
+      "rec": "pismo"
+    },
+    {
+      "vrsta": "uljez",
+      "tezina": 1,
+      "pitanje": "Ko od njih NIJE bio rimski car?",
+      "odgovori": [
+        "Perikle",
+        "Avgust",
+        "Neron",
+        "Trajan"
+      ],
+      "objasnjenje": "Perikle je bio atinski državnik u 5. veku pre n. e.",
+      "zanimljivost": "Pod Periklom je Atina doživela „zlatno doba“ – tada je sagrađen Partenon.",
+      "rec": "perikle"
+    },
+    {
+      "vrsta": "uljez",
+      "tezina": 2,
+      "pitanje": "Šta od ovoga NIJE nastalo u starom Egiptu?",
+      "odgovori": [
+        "Demokratija",
+        "Piramide",
+        "Hijeroglifi",
+        "Mumije"
+      ],
+      "objasnjenje": "Demokratija je nastala u Atini, u staroj Grčkoj.",
+      "zanimljivost": "Reč demokratija znači „vladavina naroda“ – od grčkih reči demos (narod) i kratos (vlast).",
+      "rec": "narod"
     }
   ]
 }

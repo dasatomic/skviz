@@ -257,7 +257,17 @@
     },
     {
       "tezina": 1,
-      "pitanje": "Koja bitka je u avgustu 1914. bila prva savezička pobeda u Prvom svetskom ratu?",
+      "pitanje": "Koja bitka, vođena na planini označenoj na mapi, bila je u avgustu 1914. prva saveznička pobeda u Prvom svetskom ratu?",
+      "mediji": {
+        "vrsta": "mapa",
+        "oblast": "srbija",
+        "tacke": [
+          {
+            "lat": 44.6,
+            "lon": 19.48
+          }
+        ]
+      },
       "odgovori": [
         "Cerska bitka",
         "Kolubarska bitka",
@@ -379,7 +389,17 @@
     },
     {
       "tezina": 3,
-      "pitanje": "Koji grad na teritoriji Srbije je bio jedna od četiri prestonice Rimskog carstva?",
+      "pitanje": "Koji grad, označen na mapi, je bio jedna od četiri prestonice Rimskog carstva?",
+      "mediji": {
+        "vrsta": "mapa",
+        "oblast": "srbija",
+        "tacke": [
+          {
+            "lat": 44.97,
+            "lon": 19.61
+          }
+        ]
+      },
       "odgovori": [
         "Sirmijum (Sremska Mitrovica)",
         "Singidunum (Beograd)",
@@ -468,6 +488,10 @@
     {
       "tezina": 2,
       "pitanje": "Šta su Turci sazidali od lobanja srpskih ustanika posle boja na Čegru 1809, u kome je Stevan Sinđelić pucao u barutanu?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/cele-kula.jpg"
+      },
       "odgovori": [
         "Ćele-kula u Nišu",
         "Spomenik na Gazimestanu",
@@ -480,6 +504,10 @@
     {
       "tezina": 3,
       "pitanje": "„Glavu dajem, Krajinu ne dajem“ – ko je to rekao braneći Negotin 1813?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/hajduk-veljko.jpg"
+      },
       "odgovori": [
         "Hajduk Veljko Petrović",
         "Stevan Sinđelić",
@@ -509,6 +537,10 @@
     {
       "tezina": 3,
       "pitanje": "Koji srpski knez je 1867. godine izborio da turska vojska napusti gradove u Srbiji, uključujući Beograd?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/knez-mihailo.jpg"
+      },
       "odgovori": [
         "Knez Mihailo Obrenović",
         "Knez Miloš Obrenović",
@@ -571,6 +603,10 @@
     {
       "tezina": 3,
       "pitanje": "Koja je prva štampana knjiga kod Južnih Slovena, štampana ćirilicom 1494?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/oktoih.jpg"
+      },
       "odgovori": [
         "Oktoih prvoglasnik",
         "Miroslavljevo jevanđelje",
@@ -583,6 +619,10 @@
     {
       "tezina": 2,
       "pitanje": "Koji je najstariji sačuvani srpski ćirilični rukopis, pisan za kneza Miroslava, Nemanjinog brata?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/miroslavljevo.jpg"
+      },
       "odgovori": [
         "Miroslavljevo jevanđelje",
         "Vukanovo jevanđelje",
@@ -607,6 +647,10 @@
     {
       "tezina": 1,
       "pitanje": "Šta je Kalemegdan?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/kalemegdan.jpg"
+      },
       "odgovori": [
         "Park i tvrđava na ušću Save u Dunav",
         "Manastir na Fruškoj gori",
@@ -630,7 +674,17 @@
     },
     {
       "tezina": 3,
-      "pitanje": "Koja je bitka u Prvom balkanskom ratu (1912) donela veliku pobedu nad Turcima i čin vojvode Radomiru Putniku?",
+      "pitanje": "Koja je bitka u Prvom balkanskom ratu (1912) donela veliku pobedu nad Turcima i čin vojvode Radomiru Putniku? (Mesto bitke je označeno na mapi.)",
+      "mediji": {
+        "vrsta": "mapa",
+        "oblast": "balkan",
+        "tacke": [
+          {
+            "lat": 42.13,
+            "lon": 21.72
+          }
+        ]
+      },
       "odgovori": [
         "Kumanovska bitka",
         "Bregalnička bitka",
@@ -642,7 +696,17 @@
     },
     {
       "tezina": 3,
-      "pitanje": "Koju bitku iz 1806. godine je Filip Višnjić opevao u čuvenoj pesmi?",
+      "pitanje": "Koju bitku iz 1806. godine je Filip Višnjić opevao u čuvenoj pesmi? (Mesto boja je označeno na mapi.)",
+      "mediji": {
+        "vrsta": "mapa",
+        "oblast": "srbija",
+        "tacke": [
+          {
+            "lat": 44.73,
+            "lon": 19.66
+          }
+        ]
+      },
       "odgovori": [
         "Boj na Mišaru",
         "Boj na Čegru",
@@ -679,6 +743,10 @@
     {
       "tezina": 3,
       "pitanje": "Koji srpski kralj iz dinastije Nemanjića je podigao najviše crkava i manastira, uključujući Gračanicu?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/milutin.jpg"
+      },
       "odgovori": [
         "Kralj Milutin",
         "Kralj Dragutin",
@@ -703,6 +771,10 @@
     {
       "tezina": 3,
       "pitanje": "Ko je bio prvi kralj moderne Srbije, proglašene za kraljevinu 1882?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/kralj-milan.jpg"
+      },
       "odgovori": [
         "Milan Obrenović",
         "Petar I Karađorđević",
@@ -739,6 +811,10 @@
     {
       "tezina": 2,
       "pitanje": "Koja kneginja je bila supruga kneza Miloša Obrenovića, poznata po hrabrosti i mudrosti?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/kneginja-ljubica.jpg"
+      },
       "odgovori": [
         "Kneginja Ljubica",
         "Kneginja Milica",
@@ -751,6 +827,10 @@
     {
       "tezina": 3,
       "pitanje": "Ko je bio komandant srpske vojske u Cerskoj bici 1914?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/stepa.jpg"
+      },
       "odgovori": [
         "Stepa Stepanović",
         "Živojin Mišić",
@@ -785,6 +865,10 @@
     {
       "tezina": 2,
       "pitanje": "Ko je prema narodnim pesmama ubio sultana Murata u Kosovskoj bici?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/uros-predic-milos.jpg"
+      },
       "odgovori": [
         "Miloš Obilić",
         "Kraljević Marko",
@@ -797,6 +881,10 @@
     {
       "tezina": 3,
       "pitanje": "Koji srpski kralj je 1330. pobedio Bugare u bici kod Velbužda?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/stefan-decanski.jpg"
+      },
       "odgovori": [
         "Stefan Dečanski",
         "Car Dušan",
@@ -869,6 +957,10 @@
     {
       "tezina": 1,
       "pitanje": "Ko je ubijen u Sarajevu 28. juna 1914, što je bio povod za Prvi svetski rat?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/franc-ferdinand.jpg"
+      },
       "odgovori": [
         "Austrougarski prestolonaslednik Franc Ferdinand",
         "Srpski kralj Petar I Karađorđević, u poseti Sarajevu",
@@ -928,7 +1020,17 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Gde je bila prestonica kneza Lazara?",
+      "pitanje": "Koji grad, označen na mapi, bio je prestonica kneza Lazara?",
+      "mediji": {
+        "vrsta": "mapa",
+        "oblast": "srbija",
+        "tacke": [
+          {
+            "lat": 43.58,
+            "lon": 21.33
+          }
+        ]
+      },
       "odgovori": [
         "Kruševac",
         "Ras",
@@ -1013,6 +1115,10 @@
     {
       "tezina": 2,
       "pitanje": "Kako se zovu srednjovekovni kameni nadgrobni spomenici u Bosni, Hercegovini i susednim oblastima, upisani na UNESCO listu?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/stecak.jpg"
+      },
       "odgovori": [
         "Stećci",
         "Menhiri",
@@ -1132,7 +1238,17 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Na kom grčkom ostrvu se oporavljala srpska vojska 1916?",
+      "pitanje": "Na kom grčkom ostrvu se oporavljala srpska vojska 1916? (Ostrvo je označeno na mapi.)",
+      "mediji": {
+        "vrsta": "mapa",
+        "oblast": "balkan",
+        "tacke": [
+          {
+            "lat": 39.62,
+            "lon": 19.92
+          }
+        ]
+      },
       "odgovori": [
         "Krfu",
         "Kritu",
@@ -1157,6 +1273,10 @@
     {
       "tezina": 2,
       "pitanje": "Koji je srpski vojskovođa komandovao Prvom armijom pri proboju Solunskog fronta?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/bojovic.jpg"
+      },
       "odgovori": [
         "Petar Bojović",
         "Živojin Mišić",
@@ -1217,6 +1337,10 @@
     {
       "tezina": 2,
       "pitanje": "Gde je 1934. ubijen kralj Aleksandar Karađorđević?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/kralj-aleksandar.jpg"
+      },
       "odgovori": [
         "U Marselju",
         "U Beogradu",
@@ -1252,7 +1376,17 @@
     },
     {
       "tezina": 3,
-      "pitanje": "Kod koje dunavske tvrđave je 1428. poginuo čuveni poljski vitez Zaviša Crni, boreći se protiv Turaka?",
+      "pitanje": "Kod koje dunavske tvrđave je 1428. poginuo čuveni poljski vitez Zaviša Crni, boreći se protiv Turaka? (Tvrđava je označena na mapi.)",
+      "mediji": {
+        "vrsta": "mapa",
+        "oblast": "srbija",
+        "tacke": [
+          {
+            "lat": 44.65,
+            "lon": 21.63
+          }
+        ]
+      },
       "odgovori": [
         "Golubac",
         "Maglič",
@@ -1349,6 +1483,10 @@
     {
       "tezina": 3,
       "pitanje": "Ko je autor „Načertanija“ (1844), tajnog programa spoljne politike Srbije?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/garasanin.jpg"
+      },
       "odgovori": [
         "Ilija Garašanin",
         "Knez Miloš Obrenović",
@@ -1385,6 +1523,10 @@
     {
       "tezina": 3,
       "pitanje": "Ko je bio Arčibald Rajs?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/rajs.jpg"
+      },
       "odgovori": [
         "Švajcarski kriminolog koji je dokumentovao zločine nad Srbima u Prvom svetskom ratu i ostao u Srbiji",
         "Engleski kralj koji je u Prvom svetskom ratu lično pomagao Srbiji hranom, lekovima, odećom i modernim oružjem",
@@ -1397,6 +1539,10 @@
     {
       "tezina": 3,
       "pitanje": "Koja Škotkinja je bila lekarka koja je osnovala bolnice u Srbiji tokom Prvog svetskog rata?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/elsi-inglis.jpg"
+      },
       "odgovori": [
         "Elsi Inglis",
         "Florens Najtingejl",
@@ -1409,6 +1555,10 @@
     {
       "tezina": 3,
       "pitanje": "Koja Engleskinja je bila jedina žena-oficir u srpskoj vojsci u Prvom svetskom ratu?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/flora-sends.jpg"
+      },
       "odgovori": [
         "Flora Sends",
         "Elsi Inglis",
@@ -1432,7 +1582,17 @@
     },
     {
       "tezina": 3,
-      "pitanje": "Na kojoj planini se u Prvom svetskom ratu 1916. vodila bitka na visini od preko 2.500 m?",
+      "pitanje": "Na kojoj planini se u Prvom svetskom ratu 1916. vodila bitka na visini od preko 2.500 m? (Planina je označena na mapi.)",
+      "mediji": {
+        "vrsta": "mapa",
+        "oblast": "balkan",
+        "tacke": [
+          {
+            "lat": 40.97,
+            "lon": 21.8
+          }
+        ]
+      },
       "odgovori": [
         "Kajmakčalan",
         "Kopaonik",
@@ -1493,6 +1653,10 @@
     {
       "tezina": 3,
       "pitanje": "Kako se zvao srednjovekovni rudnik srebra koji je u 15. veku bio jedan od najvećih u Evropi?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/novo-brdo.jpg"
+      },
       "odgovori": [
         "Novo Brdo",
         "Rudnik",
@@ -1517,6 +1681,10 @@
     {
       "tezina": 3,
       "pitanje": "Koja je srednjovekovna srpska tvrđava na stenama iznad Ibra, u blizini Kraljeva?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/maglic.jpg"
+      },
       "odgovori": [
         "Maglič",
         "Golubac",
@@ -1529,6 +1697,10 @@
     {
       "tezina": 2,
       "pitanje": "Koja je srednjovekovna tvrđava na Dunavu na samom ulazu u Đerdap?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/golubac.jpg"
+      },
       "odgovori": [
         "Golubac",
         "Maglič",
@@ -1565,6 +1737,10 @@
     {
       "tezina": 2,
       "pitanje": "Koji spomenik na Avali je posvećen poginulim borcima Prvog svetskog rata?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/neznani-junak.jpg"
+      },
       "odgovori": [
         "Spomenik Neznanom junaku",
         "Pobednik",
@@ -1717,6 +1893,236 @@
       ],
       "zanimljivost": "Ubijen je zajedno sa kraljicom Dragom u Majskom prevratu 1903. Dinastija Obrenović je tada nestala.",
       "rec": "kralj"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koja je ova ogromna tvrđava na Dunavu, poslednja prestonica srednjovekovne Srbije?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/smederevska-tvrdjava.jpg"
+      },
+      "odgovori": [
+        "Smederevska tvrđava",
+        "Golubačka tvrđava",
+        "Petrovaradinska tvrđava",
+        "Beogradska tvrđava"
+      ],
+      "zanimljivost": "Smederevska tvrđava ima 25 kula i jedna je od najvećih ravničarskih tvrđava u Evropi. Sagrađena je za samo oko dve godine.",
+      "rec": "tvrđava"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "U kom gradu se nalazi ova tvrđava na reci Nišavi, sa Stambol-kapijom?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/niska-tvrdjava.jpg"
+      },
+      "odgovori": [
+        "Niš",
+        "Kruševac",
+        "Pirot",
+        "Leskovac"
+      ],
+      "zanimljivost": "Današnju tvrđavu su podigli Turci početkom 18. veka, na mestu starog rimskog i vizantijskog utvrđenja.",
+      "rec": "kapija"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Ovu crkvu u Kruševcu podigao je knez Lazar kao svoju dvorsku crkvu. Kako se zove?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/lazarica.jpg"
+      },
+      "odgovori": [
+        "Lazarica",
+        "Ravanica kod Ćuprije",
+        "Ljubostinja kod Trstenika",
+        "Kalenić kod Rekovca"
+      ],
+      "zanimljivost": "Lazarica je jedan od najlepših primera moravskog stila, sa bogatim kamenim ukrasima – rozetama i preplitima.",
+      "rec": "crkva"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji srednjovekovni grad, prvo središte države Nemanjića, danas je ruševina iznad Novog Pazara?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/stari-ras.jpg"
+      },
+      "odgovori": [
+        "Ras",
+        "Prizren",
+        "Skoplje",
+        "Kruševac"
+      ],
+      "zanimljivost": "Po Rasu je država dobila ime Raška. Ruševine Starog Rasa sa Sopoćanima su na Uneskovoj listi svetske baštine.",
+      "rec": "ruševina"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Ovaj rimski grad i vojni logor kod Kostolca bio je glavni grad provincije Gornje Mezije. Kako se zove?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/viminacijum.jpg"
+      },
+      "odgovori": [
+        "Viminacijum",
+        "Singidunum",
+        "Naisus",
+        "Sirmijum"
+      ],
+      "zanimljivost": "U Viminacijumu su pronađene hiljade grobova, ostaci amfiteatra i skelet mamuta star preko milion godina.",
+      "rec": "logor"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koji vizantijski car je kod Lebana podigao grad Justinijana Prima (Caričin grad), u čast mesta svog rođenja?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/caricin-grad.jpg"
+      },
+      "odgovori": [
+        "Justinijan I",
+        "Konstantin Veliki",
+        "Teodosije I",
+        "Heraklije"
+      ],
+      "zanimljivost": "Grad je imao vodovod, kupatila i velike crkve, ali je napušten već posle oko 80 godina, verovatno zbog najezde Avara i Slovena.",
+      "rec": "car"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Ko je ovaj junak brojnih narodnih pesama, sa konjem Šarcem i teškim buzdovanom?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/kraljevic-marko.jpg"
+      },
+      "odgovori": [
+        "Kraljević Marko",
+        "Miloš Obilić",
+        "Starina Novak",
+        "Banović Strahinja"
+      ],
+      "zanimljivost": "Istorijski Marko je bio kralj i turski vazal, ali ga je narod u pesmama pretvorio u najvećeg junaka – koji pije vino sa Šarcem i bori se sa vilama.",
+      "rec": "junak"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kneginja Milica, supruga kneza Lazara, podigla je manastir u kome se posle Kosovske bitke zamonašila. Koji?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/kneginja-milica.jpg"
+      },
+      "odgovori": [
+        "Ljubostinju",
+        "Studenicu",
+        "Žiču",
+        "Mileševu"
+      ],
+      "zanimljivost": "U Ljubostinji je Milica, kao monahinja Jevgenija, okupila udovice poginulih vlastelina. Tu je i sahranjena.",
+      "rec": "manastir"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji despot je podigao Smederevsku tvrđavu za samo nekoliko godina?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/djuradj.jpg"
+      },
+      "odgovori": [
+        "Đurađ Branković",
+        "Stefan Lazarević",
+        "Lazar Branković",
+        "Vuk Branković"
+      ],
+      "zanimljivost": "Narod je zbog teškog rada na gradnji tvrđave „Prokletom Jerinom“ nazvao Đurđevu suprugu Jerinu Kantakuzinu.",
+      "rec": "despot"
+    },
+    {
+      "vrsta": "spoji",
+      "tezina": 2,
+      "pitanje": "Spoji vladara sa njegovom prestonicom",
+      "parovi": [
+        [
+          "Knez Lazar",
+          "Kruševac"
+        ],
+        [
+          "Despot Stefan Lazarević",
+          "Beograd"
+        ],
+        [
+          "Despot Đurađ Branković",
+          "Smederevo"
+        ],
+        [
+          "Karađorđe",
+          "Topola"
+        ],
+        [
+          "Knez Miloš",
+          "Kragujevac"
+        ]
+      ],
+      "zanimljivost": "Beograd je prvi put postao srpska prestonica 1403, za vreme despota Stefana, koji ga je obnovio i ukrasio.",
+      "rec": "prestonica"
+    },
+    {
+      "vrsta": "spoji",
+      "tezina": 2,
+      "pitanje": "Spoji bitku sa godinom",
+      "parovi": [
+        [
+          "Marička bitka",
+          "1371."
+        ],
+        [
+          "Kosovska bitka",
+          "1389."
+        ],
+        [
+          "Boj na Mišaru",
+          "1806."
+        ],
+        [
+          "Kumanovska bitka",
+          "1912."
+        ],
+        [
+          "Cerska bitka",
+          "1914."
+        ]
+      ],
+      "zanimljivost": "Između Maričke i Kosovske bitke prošlo je samo 18 godina, a između Kosovske i Cerske – više od pet vekova.",
+      "rec": "bitka"
+    },
+    {
+      "vrsta": "uljez",
+      "tezina": 2,
+      "pitanje": "Ko NIJE bio vladar iz dinastije Nemanjića?",
+      "odgovori": [
+        "Knez Lazar",
+        "Stefan Prvovenčani",
+        "Kralj Milutin",
+        "Car Dušan"
+      ],
+      "objasnjenje": "Knez Lazar Hrebeljanović nije bio Nemanjić, mada je njegova supruga Milica bila iz pobočne loze Nemanjića.",
+      "zanimljivost": "Nemanjići su vladali Srbijom skoro dva veka – od Stefana Nemanje (1166) do cara Uroša (1371).",
+      "rec": "dinastija"
+    },
+    {
+      "vrsta": "uljez",
+      "tezina": 1,
+      "pitanje": "Koja bitka NIJE vođena u Prvom svetskom ratu?",
+      "odgovori": [
+        "Kosovska bitka",
+        "Cerska bitka",
+        "Kolubarska bitka",
+        "Proboj Solunskog fronta"
+      ],
+      "objasnjenje": "Kosovska bitka je vođena 1389. godine.",
+      "zanimljivost": "Cerska bitka (avgust 1914) bila je prva saveznička pobeda u Prvom svetskom ratu.",
+      "rec": "pobeda"
     }
   ]
 }
