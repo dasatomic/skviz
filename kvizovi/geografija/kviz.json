@@ -129,7 +129,7 @@
     },
     {
       "tezina": 1,
-      "pitanje": "Koji je ovo kontinent-država?",
+      "pitanje": "Koja je država označena na mapi?",
       "mediji": {
         "vrsta": "mapa",
         "oblast": "australija",
@@ -147,8 +147,8 @@
       "rec": "australija"
     },
     {
-      "tezina": 3,
-      "pitanje": "Koje ostrvo-država je označeno?",
+      "tezina": 1,
+      "pitanje": "Koja ostrvska država je označena na mapi?",
       "mediji": {
         "vrsta": "mapa",
         "oblast": "afrika",
@@ -158,16 +158,16 @@
       },
       "odgovori": [
         "Madagaskar",
-        "Šri Lanka",
-        "Kuba",
-        "Kipar"
+        "Mauricijus",
+        "Sejšeli",
+        "Zelenortska Ostrva"
       ],
       "zanimljivost": "Madagaskar se odvojio od Indije pre oko 88 miliona godina, pa je oko 90% njegovih biljaka i životinja jedinstveno na svetu. Tu žive lemuri – nigde drugde u prirodi ih nema.",
       "rec": "madagaskar"
     },
     {
       "tezina": 2,
-      "pitanje": "Koja najveća država Južne Amerike je označena?",
+      "pitanje": "Koja država Južne Amerike je označena na mapi?",
       "mediji": {
         "vrsta": "mapa",
         "oblast": "j-amerika",
@@ -243,7 +243,7 @@
     },
     {
       "tezina": 3,
-      "pitanje": "Koja reka, označena na mapi, je najduža reka koja cela teče kroz Srbiju?",
+      "pitanje": "Koja reka je označena na mapi Srbije?",
       "mediji": {
         "vrsta": "mapa",
         "oblast": "srbija",
@@ -252,17 +252,17 @@
         ]
       },
       "odgovori": [
-        "Velika Morava",
-        "Ibar (kroz Kraljevo)",
-        "Timok (kod Zaječara)",
-        "Kolubara (kroz Valjevo)"
+        "Morava",
+        "Ibar",
+        "Timok",
+        "Kolubara"
       ],
-      "zanimljivost": "Velika Morava nastaje spajanjem Južne i Zapadne Morave kod Stalaća, a uliva se u Dunav kod Smedereva. Zajedno sa Zapadnom Moravom duga je oko 500 km.",
+      "zanimljivost": "Na mapi su Južna i Velika Morava. Velika Morava nastaje spajanjem Južne i Zapadne Morave kod Stalaća, a uliva se u Dunav kod Smedereva. Zajedno sa Zapadnom Moravom duga je oko 500 km – to je najduža reka koja cela teče kroz Srbiju.",
       "rec": "velik"
     },
     {
       "tezina": 1,
-      "pitanje": "Koja najduža reka Afrike je označena?",
+      "pitanje": "Koja afrička reka je označena na mapi?",
       "mediji": {
         "vrsta": "mapa",
         "oblast": "afrika",
@@ -281,7 +281,7 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Koja je ovo najduža reka Evrope?",
+      "pitanje": "Koja reka je označena na mapi Evrope?",
       "mediji": {
         "vrsta": "mapa",
         "oblast": "evropa",
@@ -366,7 +366,7 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Koji je grad označen na mapi – najseverniji veći grad Srbije?",
+      "pitanje": "Koji je grad označen na mapi?",
       "mediji": {
         "vrsta": "mapa",
         "oblast": "srbija",
@@ -1029,13 +1029,6 @@
         "Poljska"
       ],
       "zanimljivost": "Rusija je veća, ali je većim delom u Aziji. Ukrajina je poznata po crnici – jednom od najplodnijih zemljišta na svetu.",
-      "mediji": {
-        "vrsta": "mapa",
-        "oblast": "evropa",
-        "istakni": [
-          "UKR"
-        ]
-      },
       "rec": "ukrajina"
     },
     {
@@ -1062,9 +1055,9 @@
       "pitanje": "Koja je država označena na mapi?",
       "odgovori": [
         "Severna Makedonija",
-        "Republika Bugarska (istok)",
-        "Republika Albanija",
-        "Kosovo i Metohija"
+        "Bugarska",
+        "Albanija",
+        "Crna Gora"
       ],
       "zanimljivost": "Ohridsko jezero, na granici sa Albanijom, jedno je od najstarijih jezera u Evropi – staro je verovatno preko milion godina.",
       "mediji": {
@@ -1233,9 +1226,9 @@
       "pitanje": "Koja je država označena na mapi?",
       "odgovori": [
         "Južnoafrička Republika",
-        "Republika Namibija (zapad)",
-        "Republika Bocvana (sever)",
-        "Madagaskar (veliko ostrvo)"
+        "Namibija",
+        "Bocvana",
+        "Zimbabve"
       ],
       "zanimljivost": "JAR ima tri glavna grada: Pretoriju, Kejptaun i Blumfontejn. Njen prvi crni predsednik bio je Nelson Mandela.",
       "mediji": {
@@ -1322,8 +1315,8 @@
       "pitanje": "Čiji je ovo obris?",
       "odgovori": [
         "Indije",
-        "Afrike",
-        "Južne Amerike",
+        "Pakistana",
+        "Bangladeša",
         "Kine"
       ],
       "zanimljivost": "Indijsko poluostrvo se pre oko 50 miliona godina sudarilo sa Azijom – tako su nastali Himalaji, koji i danas rastu.",
@@ -1812,12 +1805,12 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Koji je najviši vrh Evrope?",
+      "pitanje": "Koji vrh na Kavkazu se najčešće smatra najvišim vrhom Evrope?",
       "odgovori": [
         "Elbrus",
-        "Mon Blan",
-        "Materhorn",
-        "Olimp"
+        "Kazbek",
+        "Ararat",
+        "Mon Blan"
       ],
       "zanimljivost": "Elbrus (5.642 m) je ugašeni vulkan na Kavkazu. Ako se Kavkaz ne računa u Evropu, najviši je Mon Blan (4.808 m).",
       "rec": "elbrus"
@@ -1836,7 +1829,7 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Koja je najduža planinska ograda na kopnu?",
+      "pitanje": "Koji je najduži planinski venac na kopnu?",
       "odgovori": [
         "Andi",
         "Himalaji",
@@ -1920,7 +1913,7 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Koja dva grada povezuje Bosfor?",
+      "pitanje": "Šta razdvaja moreuz Bosfor?",
       "odgovori": [
         "Evropski i azijski deo Istanbula",
         "Atinu i luku Pirej u južnoj Grčkoj",
@@ -1956,7 +1949,7 @@
     },
     {
       "tezina": 3,
-      "pitanje": "Koja država ima najviše vulkana?",
+      "pitanje": "Koja država ima najviše aktivnih vulkana?",
       "odgovori": [
         "Indonezija",
         "Island",

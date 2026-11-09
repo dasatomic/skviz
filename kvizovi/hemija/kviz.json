@@ -10,7 +10,8 @@
       "pitanje": "Koji je ovo molekul? (Okreni ga prstom!)",
       "mediji": {
         "vrsta": "molekul",
-        "ime": "voda"
+        "ime": "voda",
+        "legenda": false
       },
       "odgovori": [
         "Voda (H₂O)",
@@ -70,7 +71,8 @@
       "pitanje": "Kristalna rešetka u kojoj se smenjuju ljubičasti i zeleni atomi – šta je ovo?",
       "mediji": {
         "vrsta": "molekul",
-        "ime": "so"
+        "ime": "so",
+        "legenda": false
       },
       "odgovori": [
         "Kuhinjska so (NaCl)",
@@ -361,10 +363,11 @@
     },
     {
       "tezina": 3,
-      "pitanje": "Koja kiselina je prikazana? (atom sumpora je žut)",
+      "pitanje": "Koja kiselina je prikazana na ovom modelu?",
       "mediji": {
         "vrsta": "molekul",
-        "ime": "sumporna-kiselina"
+        "ime": "sumporna-kiselina",
+        "legenda": false
       },
       "odgovori": [
         "Sumporna kiselina (H₂SO₄)",
@@ -1241,7 +1244,7 @@
     },
     {
       "tezina": 3,
-      "pitanje": "Koliko vodoničnih atoma ima molekul metana (CH₄)?",
+      "pitanje": "Koliko atoma vodonika ima jedan molekul metana?",
       "odgovori": [
         "4",
         "1",
@@ -1473,7 +1476,7 @@
     },
     {
       "tezina": 1,
-      "pitanje": "Šta je ulje u vodi?",
+      "pitanje": "Šta se dešava kada se ulje sipa u vodu?",
       "odgovori": [
         "Ne meša se sa vodom i pluta na površini",
         "Rastvara se potpuno, isto kao šećer u toplom čaju",

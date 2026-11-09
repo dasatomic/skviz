@@ -194,7 +194,7 @@
       "rec": "princ"
     },
     {
-      "tezina": 3,
+      "tezina": 1,
       "pitanje": "Ko je napisao „Romeo i Julija“ i „Hamlet“?",
       "odgovori": [
         "Vilijam Šekspir",
@@ -410,7 +410,7 @@
       "rec": "luvr"
     },
     {
-      "tezina": 3,
+      "tezina": 2,
       "pitanje": "Koji je najmanji kontinent?",
       "odgovori": [
         "Australija",
@@ -821,7 +821,7 @@
       "tezina": 2,
       "pitanje": "Koji je najviši vodopad na svetu?",
       "odgovori": [
-        "Anđeoski vodopad (Venecuela)",
+        "Anđeoski vodopad",
         "Nijagara",
         "Viktorijini vodopadi",
         "Iguasu"
@@ -831,14 +831,14 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Koja je najduža reka na svetu?",
+      "pitanje": "Koja reka se tradicionalno smatra najdužom na svetu?",
       "odgovori": [
-        "Nil (ili Amazon – naučnici se spore)",
-        "Dunav (najduža reka koja teče kroz Evropu)",
-        "Volga (najveća reka u Rusiji i Evropi)",
-        "Misisipi (najduža reka u Severnoj Americi)"
+        "Nil",
+        "Jangce",
+        "Misisipi",
+        "Volga"
       ],
-      "zanimljivost": "Merenje dužine reke zavisi od toga gde se uzme izvor. Neka merenja daju prednost Amazonu, a većina Nilu.",
+      "zanimljivost": "Merenje dužine reke zavisi od toga gde se uzme izvor. Nil je dug oko 6.650 km, ali neka novija merenja daju malu prednost Amazonu, pa se naučnici i dalje spore.",
       "rec": "reka"
     },
     {
@@ -963,14 +963,14 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Koji je najpoznatiji sat na svetu, u Londonu, čije zvono se zove „Big Ben“?",
+      "pitanje": "Kako se danas zove kula londonskog Parlamenta u kojoj je zvono „Big Ben“?",
       "odgovori": [
-        "Sat na kuli Elizabete (Parlament)",
-        "Sat na Ajfelovoj kuli u Parizu, nad Senom",
-        "Astronomski sat na Starogradskom trgu u Pragu",
-        "Sat na Brandenburškoj kapiji u centru Berlina"
+        "Kula Elizabete",
+        "Kula Viktorije",
+        "Londonski Tauer",
+        "Kula Vestminsterske opatije"
       ],
-      "zanimljivost": "„Big Ben“ je zapravo ime najvećeg zvona, a ne kule. Kula je 2012. preimenovana u „Kula Elizabete“.",
+      "zanimljivost": "Kula je 2012. dobila ime u čast 60 godina vladavine kraljice Elizabete II. „Big Ben“ je zapravo ime najvećeg zvona, teškog preko 13 tona, a ne kule.",
       "rec": "sat"
     },
     {
@@ -1029,8 +1029,8 @@
       "tezina": 3,
       "pitanje": "Koji je najstariji grad u Evropi koji je i danas naseljen, prema mnogima?",
       "odgovori": [
-        "Plovdiv (Bugarska)",
-        "Rim (Italija), „večni grad“",
+        "Plovdiv",
+        "Rim",
         "Beč",
         "Pariz"
       ],
@@ -1242,7 +1242,7 @@
       "rec": "ikar"
     },
     {
-      "tezina": 3,
+      "tezina": 2,
       "pitanje": "Šta je labirint u grčkom mitu o Minotauru?",
       "odgovori": [
         "Zamršena građevina na Kritu u kojoj je zatvoren Minotaur",
@@ -1270,9 +1270,9 @@
       "pitanje": "Koliko ima zemalja članica Ujedinjenih nacija?",
       "odgovori": [
         "193",
-        "50",
-        "250",
-        "100"
+        "175",
+        "206",
+        "160"
       ],
       "zanimljivost": "Poslednja je primljena Južni Sudan 2011. Vatikan i Palestina imaju status posmatrača.",
       "rec": "članica"

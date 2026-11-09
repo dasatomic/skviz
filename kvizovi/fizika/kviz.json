@@ -258,10 +258,10 @@
       "tezina": 1,
       "pitanje": "Koje boje se dobijaju kada se bela svetlost propusti kroz prizmu?",
       "odgovori": [
-        "Duga – sve boje spektra",
-        "Samo crvena",
-        "Crna",
-        "Samo plava i zelena"
+        "Sve boje duge",
+        "Samo crvena i plava",
+        "Samo bela, ali jača",
+        "Crna i bela"
       ],
       "zanimljivost": "Njutn je prvi pokazao da je bela svetlost mešavina svih boja. Duga nastaje isto – svaka kapljica kiše je mala prizma. Dugu možeš videti samo kad ti je Sunce iza leđa.",
       "rec": "duga"
@@ -356,7 +356,7 @@
     },
     {
       "tezina": 3,
-      "pitanje": "Na kojoj temperaturi u Celzijusima prestaje svako kretanje čestica (apsolutna nula)?",
+      "pitanje": "Kolika je najniža moguća temperatura (apsolutna nula) u Celzijusima?",
       "odgovori": [
         "−273,15 °C",
         "−100 °C",
@@ -381,10 +381,6 @@
     {
       "tezina": 2,
       "pitanje": "Koliko je planeta u Sunčevom sistemu?",
-      "mediji": {
-        "vrsta": "planeta",
-        "ime": "sunce"
-      },
       "odgovori": [
         "8",
         "9",
@@ -461,10 +457,6 @@
     {
       "tezina": 1,
       "pitanje": "Šta Zemlja obiđe za jednu godinu?",
-      "mediji": {
-        "vrsta": "planeta",
-        "ime": "zemlja"
-      },
       "odgovori": [
         "Oko Sunca",
         "Oko Meseca",
@@ -512,7 +504,7 @@
     },
     {
       "tezina": 3,
-      "pitanje": "Koja je najveća zvezda koja se vidi danju?",
+      "pitanje": "Koju zvezdu vidimo golim okom danju?",
       "odgovori": [
         "Sunce",
         "Sirijus",
@@ -584,7 +576,7 @@
     },
     {
       "tezina": 1,
-      "pitanje": "Šta je provodnik električne struje?",
+      "pitanje": "Koji od ovih materijala dobro provodi električnu struju?",
       "odgovori": [
         "Bakar",
         "Plastika",
@@ -992,7 +984,7 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Ko je izumeo bateriju („Voltin stub“)?",
+      "pitanje": "Ko je 1800. napravio prvu električnu bateriju?",
       "odgovori": [
         "Alesandro Volta",
         "Benjamin Frenklin",
@@ -1276,7 +1268,7 @@
     },
     {
       "tezina": 3,
-      "pitanje": "Koji most se 1940. srušio zbog vetra koji ga je zaljuljao, a snimak je postao čuven?",
+      "pitanje": "Koji je ovo most, koji se 1940. srušio zbog vetra koji ga je zaljuljao?",
       "odgovori": [
         "Most Takoma Nerouz",
         "Zlatna vrata",
@@ -1284,7 +1276,11 @@
         "Londonski most"
       ],
       "zanimljivost": "Vetar od samo oko 60 km/h izazvao je sve jače talasanje mosta u SAD dok se nije srušio. Od tada se mostovi obavezno ispituju u aerodinamičnim tunelima.",
-      "rec": "most"
+      "rec": "most",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/takoma.jpg"
+      }
     },
     {
       "tezina": 3,
@@ -1453,18 +1449,6 @@
       ],
       "zanimljivost": "Knjiga opisuje njegov put od siromašnog dečaka iz Idvora do profesora na Kolumbiji. Pupinovi kalemovi su omogućili telefoniranje na velike daljine.",
       "rec": "pašnjak"
-    },
-    {
-      "tezina": 2,
-      "pitanje": "Šta je Milutin Milanković izračunao?",
-      "odgovori": [
-        "Kako promene Zemljine putanje izazivaju ledena doba",
-        "Brzinu svetlosti u vakuumu i u vodi, pomoću ogledala i točka",
-        "Masu Zemlje",
-        "Starost Meseca"
-      ],
-      "zanimljivost": "Svoje proračune radio je ručno godinama, a delo „Kanon osunčavanja Zemlje“ završio je tokom Drugog svetskog rata. Njegove teorije su potvrđene analizom dubokomorskog mulja 1970-ih.",
-      "rec": "milanković"
     },
     {
       "tezina": 1,

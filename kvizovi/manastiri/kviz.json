@@ -71,7 +71,7 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Koji je ovo manastir, zadužbina kralja Uroša I, čije se freske „Uspenje Bogorodice“ ubrajaju u najlepše slike srednjovekovne Evrope?",
+      "pitanje": "Koji je ovo manastir kod Novog Pazara, čije se freske „Uspenje Bogorodice“ ubrajaju u najlepše slike srednjovekovne Evrope?",
       "mediji": {
         "vrsta": "slika",
         "src": "slike/sopocani.jpg"
@@ -87,7 +87,7 @@
     },
     {
       "tezina": 1,
-      "pitanje": "Koji je ovo manastir na Kosovu, sa pet kupola, zadužbina kralja Milutina?",
+      "pitanje": "Koji je ovo manastir na Kosovu, zadužbina kralja Milutina?",
       "mediji": {
         "vrsta": "slika",
         "src": "slike/gracanica.jpg"
@@ -215,12 +215,12 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Koja planina u Vojvodini ima oko 16 manastira, pa je zovu „Srpska Sveta Gora“?",
+      "pitanje": "Koja planina u Vojvodini ima oko 16 manastira?",
       "odgovori": [
         "Fruška gora",
-        "Vršački breg",
-        "Zlatibor",
-        "Kopaonik"
+        "Vršačke planine",
+        "Titelski breg",
+        "Avala"
       ],
       "zanimljivost": "Fruškogorski manastiri su većinom podignuti u 16. i 17. veku. Posle Velike seobe 1690. u njih su donete mošti i knjige iz južnih krajeva, pa su postali čuvari srpske kulture.",
       "rec": "gora"
@@ -331,7 +331,7 @@
     },
     {
       "tezina": 1,
-      "pitanje": "Koja je čuvena ikona Bogorodice, sa tri ruke, čuvana u Hilandaru?",
+      "pitanje": "Koja čudotvorna ikona Bogorodice se čuva u Hilandaru, a po predanju je pripadala Svetom Jovanu Damaskinu?",
       "odgovori": [
         "Bogorodica Trojeručica",
         "Bogorodica Odigitrija",
@@ -515,18 +515,6 @@
     },
     {
       "tezina": 1,
-      "pitanje": "Šta je zvonik?",
-      "odgovori": [
-        "Kula u kojoj su crkvena zvona",
-        "Deo oltara iza ikonostasa",
-        "Visoka kamena ograda manastira",
-        "Monaška ćelija za molitvu i san"
-      ],
-      "zanimljivost": "U starim srpskim manastirima zvonici su često dograđivani kasnije. Pre zvona, monasi su udarali u drvenu ili metalnu ploču – klepalo.",
-      "rec": "crkvena"
-    },
-    {
-      "tezina": 1,
       "pitanje": "Kako se zove ploča u koju monasi udaraju drvenim čekićem da pozovu na molitvu?",
       "odgovori": [
         "Klepalo",
@@ -575,7 +563,7 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Kojoj zadužbini Jelene Anžujske pripada manastir na Ibru, kod Raške?",
+      "pitanje": "Koji je ovo manastir na Ibru, kod Raške, zadužbina kraljice Jelene Anžujske?",
       "odgovori": [
         "Gradac",
         "Žiča",
@@ -583,7 +571,11 @@
         "Sopoćani"
       ],
       "zanimljivost": "Gradac je građen u raškom stilu, ali sa jakim uticajem gotike – kraljica je bila katoličkog, francuskog porekla.",
-      "rec": "gradac"
+      "rec": "gradac",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/gradac.jpg"
+      }
     },
     {
       "tezina": 2,
@@ -702,7 +694,7 @@
       "rec": "klisura"
     },
     {
-      "pitanje": "Koji manastir je kralj Milutin podigao za svoj grob, iako se njegove mošti danas čuvaju u Sofiji?",
+      "pitanje": "Koji je ovo manastir, koji je kralj Milutin podigao za svoj grob, iako se njegove mošti danas čuvaju u Sofiji?",
       "odgovori": [
         "Banjska",
         "Gračanica",
@@ -711,7 +703,11 @@
       ],
       "tezina": 3,
       "zanimljivost": "Banjska kod Zvečana bila je građena od kamena tri boje, kao Dečani. Milutinove mošti su posle Kosovske bitke prenete u Trepču, a kasnije u Sofiju, gde se i danas čuvaju u crkvi Svete Nedelje.",
-      "rec": "banjska"
+      "rec": "banjska",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/banjska.jpg"
+      }
     },
     {
       "tezina": 2,
@@ -727,7 +723,7 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Kroz klisuru koje reke, između planina Ovčar i Kablar, se nalazi desetak manastira („Srpska Sveta Gora“)?",
+      "pitanje": "Klisura koje reke, između planina Ovčar i Kablar, krije desetak manastira?",
       "odgovori": [
         "Zapadne Morave",
         "Ibra",
@@ -739,27 +735,15 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Koji Fruškogorski manastir je čuven po Lazarevim moštima, koje su tu čuvane skoro dva i po veka?",
+      "pitanje": "Koji fruškogorski manastir je čuven po moštima kneza Lazara, koje su u njemu čuvane skoro dva i po veka?",
       "odgovori": [
-        "Vrdnik (Ravanica Sremska)",
-        "Krušedol (zadužbina Brankovića)",
-        "Grgeteg (kod istoimenog sela)",
-        "Hopovo (sa freskama iz 1608)"
+        "Vrdnik",
+        "Krušedol",
+        "Grgeteg",
+        "Hopovo"
       ],
       "zanimljivost": "Zbog toga se manastir Vrdnik zove i „Sremska Ravanica“. Lazareve mošti su 1989. vraćene u Ravanicu kod Ćuprije.",
       "rec": "vrdnik"
-    },
-    {
-      "tezina": 2,
-      "pitanje": "Kojim stilom je građena Lazarica u Kruševcu, sa šarenim fasadama od kamena i opeke?",
-      "odgovori": [
-        "Moravskim",
-        "Raškim",
-        "Gotskim",
-        "Baroknim"
-      ],
-      "zanimljivost": "Moravski stil se pojavio u vreme kneza Lazara, kada je središte države premešteno ka Pomoravlju. Rozete i ukrasi od kamena nalikuju čipki.",
-      "rec": "kamen"
     },
     {
       "tezina": 2,
@@ -808,18 +792,6 @@
       "tezina": 3,
       "zanimljivost": "Manastir Svetih Arhanđela su u 16. veku razorili Turci i od njegovog kamena podigli džamiju u Prizrenu. Dušanove mošti pronađene su 1927. i prenete u Beograd, u crkvu Svetog Marka.",
       "rec": "arhanđeli"
-    },
-    {
-      "tezina": 3,
-      "pitanje": "Kako se zove čuvena freska iz Mileševe sa anđelom u belom na Hristovom grobu?",
-      "odgovori": [
-        "Beli anđeo (Mironosice na grobu)",
-        "Uspenje Presvete Bogorodice (Studenica)",
-        "Raspeće",
-        "Tajna večera"
-      ],
-      "zanimljivost": "Ispod Belog anđela je sloj kasnijih fresaka uklonjen tokom restauracije – tako je anđeo „otkriven“ i postao svetski poznat.",
-      "rec": "anđeo"
     },
     {
       "tezina": 3,

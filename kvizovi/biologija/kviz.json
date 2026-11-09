@@ -103,16 +103,16 @@
     },
     {
       "tezina": 3,
-      "pitanje": "Ova biljka može da se potpuno osuši, a onda „oživi“ kada je zaliješ. Nosi ime naše zemlje. Kako se zove?",
+      "pitanje": "Ova biljka može da se potpuno osuši, a onda „oživi“ kada je zaliješ. Raste po krečnjačkim stenama istočne Srbije. Kako se zove?",
       "mediji": {
         "vrsta": "slika",
         "src": "slike/ramonda.jpg"
       },
       "odgovori": [
         "Srpska ramonda",
-        "Pančićeva omorika",
-        "Natalijina ramonda",
-        "Runolist"
+        "Runolist",
+        "Planinski jaglac",
+        "Ljubičica"
       ],
       "zanimljivost": "Natalijina ramonda, njena rođaka nazvana po kraljici Nataliji Obrenović, simbol je Dana primirja u Prvom svetskom ratu – jer i ona „vaskrsava“, kao što se i Srbija podigla posle rata.",
       "rec": "ramonda"
@@ -135,7 +135,7 @@
     },
     {
       "tezina": 1,
-      "pitanje": "Ova biljka hvata muve! Kako se zove?",
+      "pitanje": "Ova biljka mesožderka zaklapa listove kao zamku za manje od sekunde. Kako se zove?",
       "mediji": {
         "vrsta": "slika",
         "src": "slike/venerina-muholovka.jpg"
@@ -173,7 +173,7 @@
         "src": "slike/pangolin.jpg"
       },
       "odgovori": [
-        "Pangolin (ljuskavac)",
+        "Pangolin",
         "Armadilo (pasavac)",
         "Jež (sa bodljama)",
         "Mravojed (dugog jezika)"
@@ -510,13 +510,13 @@
       "rec": "gepard"
     },
     {
-      "tezina": 3,
-      "pitanje": "Koja životinja je ključna za nastanak meda i oprašivanje trećine hrane koju jedemo?",
+      "tezina": 2,
+      "pitanje": "Koji insekt živi u zajednici sa jednom maticom i desetinama hiljada radilica i pravi saće od voska?",
       "odgovori": [
         "Medonosna pčela",
-        "Bumbar (krupna pčela)",
-        "Osa (žuto-crna, sa žaokom)",
-        "Leptir (dnevni)"
+        "Bumbar",
+        "Osa",
+        "Mrav"
       ],
       "zanimljivost": "Za kilogram meda pčele moraju da obiđu nekoliko miliona cvetova. Med se ne kvari – u egipatskim grobnicama pronađen je med star preko 3.000 godina!",
       "rec": "pčela"
@@ -814,8 +814,8 @@
       "pitanje": "Koja je najduža kost u ljudskom telu?",
       "odgovori": [
         "Butna kost",
-        "Kičma",
-        "Rebro",
+        "Ramena kost",
+        "Lakatna kost",
         "Golenjača"
       ],
       "zanimljivost": "Butna kost je oko četvrtine visine čoveka i izuzetno je čvrsta – jača od betona iste debljine.",
@@ -1039,11 +1039,11 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Koja je jedina ptica kod koje mužjak nosi jaja na nogama tokom antarktičke zime?",
+      "pitanje": "Kod koje ptice mužjak sam čuva jaje na nogama tokom cele antarktičke zime, dok ženka lovi u moru?",
       "odgovori": [
         "Carski pingvin",
-        "Afrički noj",
-        "Australijski emu",
+        "Kraljevski pingvin",
+        "Adelijin pingvin",
         "Lutajući albatros"
       ],
       "zanimljivost": "Mužjak carskog pingvina oko dva meseca drži jaje na stopalima ispod kožnog nabora, bez hrane, na −40 °C, dok ženka lovi u moru.",
@@ -1086,7 +1086,7 @@
       "rec": "kiseonik"
     },
     {
-      "pitanje": "Koja krupna ptica, jedna od najtežih letećih ptica na svetu, živi u ravnicama severnog Banata?",
+      "pitanje": "Koja je ovo krupna ptica, jedna od najtežih letećih ptica na svetu, koja živi u ravnicama severnog Banata?",
       "odgovori": [
         "Velika droplja",
         "Siva čaplja",
@@ -1095,16 +1095,20 @@
       ],
       "tezina": 3,
       "zanimljivost": "Mužjak velike droplje može biti težak i 15 kg. U Srbiji je ostalo samo nekoliko desetina ovih ptica, u rezervatu kod Mokrina, gde ih štite od uznemiravanja i oranja u vreme gnežđenja.",
-      "rec": "droplja"
+      "rec": "droplja",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/droplja.jpg"
+      }
     },
     {
       "tezina": 2,
-      "pitanje": "Koje drvo može da živi hiljadama godina, a najstarije poznato je bor u Kaliforniji?",
+      "pitanje": "Koje drvo iz planina Kalifornije živi i do 5.000 godina, pa je među najstarijim živim bićima na Zemlji?",
       "odgovori": [
         "Dugovečni bor",
-        "Breza (belo stablo)",
-        "Topola (visoka)",
-        "Vrba (žalosna)"
+        "Crveni javor",
+        "Bela breza",
+        "Žalosna vrba"
       ],
       "zanimljivost": "Jedan bor u Belim planinama Kalifornije star je preko 4.800 godina. Njegova tačna lokacija se čuva u tajnosti da ga ljudi ne bi oštetili.",
       "rec": "bor"
@@ -1195,7 +1199,7 @@
     },
     {
       "tezina": 3,
-      "pitanje": "Kako se zove biljka sa najvećim cvetom na svetu, koja ima miris trulog mesa?",
+      "pitanje": "Kako se zove ova biljka sa najvećim cvetom na svetu, koja ima miris trulog mesa?",
       "odgovori": [
         "Raflezija",
         "Lotos",
@@ -1203,7 +1207,11 @@
         "Venerina muholovka"
       ],
       "zanimljivost": "Cvet raflezije može imati prečnik oko 1 m i težinu oko 10 kg. Smrad privlači muve, koje je oprašuju. Nema ni lišće ni stablo – parazit je.",
-      "rec": "raflezija"
+      "rec": "raflezija",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/raflezija.jpg"
+      }
     },
     {
       "tezina": 3,
@@ -1255,15 +1263,19 @@
     },
     {
       "tezina": 3,
-      "pitanje": "Koja vrsta ptica je izumrla 1681, a postala simbol izumiranja?",
+      "pitanje": "Koja je ovo ptica, izumrla oko 1681, koja je postala simbol izumiranja?",
       "odgovori": [
         "Dodo",
-        "Pingvin",
-        "Noj",
+        "Kakapo",
+        "Kazuar",
         "Kivi"
       ],
       "zanimljivost": "Dodo je živeo na ostrvu Mauricijus i nije umeo da leti. Nestao je za manje od sto godina posle dolaska ljudi i životinja koje su doneli.",
-      "rec": "dodo"
+      "rec": "dodo",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/dodo.jpg"
+      }
     },
     {
       "tezina": 3,
@@ -1399,7 +1411,7 @@
     },
     {
       "tezina": 3,
-      "pitanje": "Koja životinja ima „plavu krv“ koja se koristi za proveru čistoće lekova?",
+      "pitanje": "Ova životinja ima „plavu krv“ koja se koristi za proveru čistoće lekova. Šta je ovo?",
       "odgovori": [
         "Potkovičasti rak (limulus)",
         "Hobotnica (glavonožac iz mora)",
@@ -1407,11 +1419,15 @@
         "Paun (ptica sa plavim perjem)"
       ],
       "zanimljivost": "Krv potkovičastog raka reaguje na bakterijske otrove, pa se koristi za proveru vakcina i lekova. Ova „živa fosilna“ vrsta postoji oko 450 miliona godina!",
-      "rec": "limulus"
+      "rec": "limulus",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/limulus.jpg"
+      }
     },
     {
       "tezina": 3,
-      "pitanje": "Kako se zove čuvena životinja-„živi fosil“, riba za koju se mislilo da je izumrla pre 66 miliona godina, a pronađena je živa 1938?",
+      "pitanje": "Kako se zove ova riba – „živi fosil“ za koju se mislilo da je izumrla pre 66 miliona godina, a pronađena je živa 1938?",
       "odgovori": [
         "Celakant (latimerija)",
         "Morski konjic (iz mora)",
@@ -1419,7 +1435,11 @@
         "Rečna jegulja (iz Dunava)"
       ],
       "zanimljivost": "Celakant je pronađen u ulovu ribara kod Južne Afrike. Peraja su mu mesnata, nalik nogama – srodan je ribama od kojih su potekli kopneni kičmenjaci.",
-      "rec": "celakant"
+      "rec": "celakant",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/celakant.png"
+      }
     },
     {
       "tezina": 1,
