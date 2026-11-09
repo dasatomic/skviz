@@ -19,6 +19,7 @@ Ceo interfejs, pitanja i komentari u kodu su na **srpskom (latinica)**. Igrači 
 - `lib/recnik.js` – „Najduža reč“: `podaci/recnik.txt` (Hunspell sr, osnovni oblici, ćirilica) + `podaci/ucestalost.txt`. Slova se biraju tako da se može složiti pojam (`rec`) iz nekog od upravo odigranih pitanja (`slovaSaRecju`, `Soba.izaberiPojam`).
 - `lib/statistika.js` – porodična tabla slavnih u `podaci/statistika.json`.
 - `public/` – klijent (vanilla JS): `logo.svg` (logo „Сквиз“ po ručnom crtežu), `ikona.svg`/`ikona-180.png` (slovo К), `app.js` ekrani, `mediji.js` interaktivni mediji (3D, mape, melodije…), `geo/svet.json` mape.
+- `public/urednik.html` + `urednik.js` (`/urednik`) – urednik pitanja za ljude koji ne znaju JSON: predmet → razred/lekcija → spisak → izmena/novo sa pregledom → „Predloži“. `lib/predlozi.js` (`POST /api/predlog`) primenjuje izmenu na najnoviji `main` sa GitHub-a i otvara PR preko robot naloga (`GITHUB_TOKEN`, fork robota; postavka u `deploy/README.md`). Pitanje dobija polje `autor` (samo evidencija). Matematički zadaci se ne menjaju ovde (generišu se alatom).
 - `alati/` – `proveri-kvizove.js`, `preuzmi-slike.js` (Vikipedija), `preuzmi-udzbenike.js` (Fondacija Kavčić; `node alati/preuzmi-udzbenike.js 8 --samo biologija`).
 - `izvori/udzbenici/<razred>/<udžbenik>/` – preuzete stranice udžbenika (slike `str-NNNN.jpg`, `tekst.md`); nije deo igre i **nije u git-u** (`.gitignore`, tuđa autorska prava) – preuzima se alatom `alati/preuzmi-udzbenike.js`.
 

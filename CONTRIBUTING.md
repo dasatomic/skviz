@@ -4,6 +4,10 @@ Najlakši način je da dodaš nova pitanja ili popraviš netačna – svaka pomo
 
 ## Dodavanje pitanja
 
+**Najlakše:** otvori [skviz.rs/urednik](https://skviz.rs/urednik), izaberi predmet, izmeni ili dodaj pitanje i klikni „Predloži“ – pull request se otvara sam, bez znanja JSON-a i bez GitHub naloga.
+
+Ručno, preko GitHub-a:
+
 1. Pročitaj [kvizovi/UPUTSTVO.md](kvizovi/UPUTSTVO.md) (format kviza i svi tipovi medija).
 2. Dodaj pitanja u `kviz.json` postojećeg paketa ili napravi novi folder u `kvizovi/`.
    Za brzo dodavanje većeg broja pitanja koristi `node alati/dodaj-pitanja.js <folder> <fajl.txt>`.

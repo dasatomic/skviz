@@ -1,0 +1,106 @@
+/* Urednik pitanja (/urednik) – za rad sa računara; koristi boje i delove iz style.css */
+body.urednik { font-size: 16px; }
+.u-zaglavlje { display: flex; align-items: center; gap: 16px; padding: 10px 24px; background: #15123a; border-bottom: 1px solid #ffffff14; position: sticky; top: 0; z-index: 20; }
+.u-logo { display: flex; align-items: center; gap: 12px; color: var(--tekst); text-decoration: none; font-weight: 900; font-size: 1.15em; }
+.u-logo img { height: 34px; }
+.u-link { color: var(--blago); text-decoration: none; font-weight: 700; }
+.u-link:hover { color: var(--tekst); }
+.razmak { flex: 1; }
+#urednik { max-width: 1400px; margin: 0 auto; padding: 18px 24px 80px; }
+#urednik a { color: var(--istaknuto); }
+.u-uvod { max-width: 820px; line-height: 1.5; }
+.u-uvod ol { padding-left: 22px; margin: 6px 0; }
+
+/* polja forme */
+.u-polje { display: block; margin: 0 0 14px; }
+.u-polje > .natpis { display: block; font-weight: 800; margin-bottom: 5px; }
+.u-polje > .pomoc { display: block; font-size: .85em; color: var(--blago); margin-top: 4px; }
+.u-polje input[type=text], .u-polje input:not([type]), .u-polje textarea, .u-polje select, .u-pretraga {
+  width: 100%; background: #13103a; color: var(--tekst); border: 2px solid #4b4794; border-radius: 10px; padding: 9px 11px; font: inherit; }
+.u-polje textarea { resize: vertical; min-height: 64px; line-height: 1.4; }
+.u-polje textarea.kod { font-family: ui-monospace, Consolas, monospace; font-size: .85em; min-height: 120px; }
+.u-polje input:focus, .u-polje textarea:focus, .u-polje select:focus, .u-pretraga:focus { outline: none; border-color: var(--istaknuto); }
+.u-polje.greska input, .u-polje.greska textarea { border-color: #ff7675; }
+.u-polje select option { background: #13103a; }
+.u-upozorenje { background: #5a3d00; border-left: 5px solid var(--istaknuto); padding: 8px 12px; border-radius: 8px; margin: 6px 0 12px; font-size: .92em; }
+.u-greske { background: #5c1a1a; border-left: 5px solid #ff7675; padding: 8px 12px 8px 30px; border-radius: 8px; margin: 10px 0; }
+.u-greske li { margin: 2px 0; }
+.u-dobro { color: #55efc4; font-size: .85em; }
+
+.u-odgovor { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+.u-odgovor .oznaka { flex: 0 0 150px; font-weight: 800; font-size: .9em; padding: 9px 10px; border-radius: 10px; text-align: center; }
+.u-odgovor .oznaka.tacan { background: #00876a; }
+.u-odgovor .oznaka.netacan { background: #4b4794; }
+.u-odgovor input { flex: 1; }
+.u-par { display: grid; grid-template-columns: 1fr auto 1fr auto; gap: 8px; align-items: center; margin-bottom: 8px; }
+.u-par .strelica { color: var(--blago); font-weight: 900; }
+.u-mini { background: #4b4794; border-radius: 8px; padding: 6px 10px; font-weight: 800; font-size: .85em; }
+.u-mini:hover { background: #5d58b0; }
+.u-mini:disabled { opacity: .4; }
+
+.u-radio { display: flex; gap: 6px; flex-wrap: wrap; }
+.u-radio button { background: #1b1846; padding: 8px 14px; border-radius: 10px; font-weight: 800; border: 2px solid #4b4794; }
+.u-pregled-okvir h3 .u-radio button { padding: 4px 10px; font-size: .75em; }
+.u-radio button.izabran { background: var(--istaknuto); color: #2d1b00; border-color: var(--istaknuto); }
+
+/* izbor predmeta / razreda */
+.u-kvizovi { grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); }
+.u-kvizovi .kviz:hover { border-color: #8b84e8; }
+.u-razredi { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+.u-razredi button { background: #1b1846; padding: 8px 14px; border-radius: 10px; font-weight: 800; border: 2px solid transparent; }
+.u-razredi button.izabran { background: var(--istaknuto); color: #2d1b00; }
+.u-razredi button:disabled { opacity: .35; cursor: default; }
+
+/* spisak pitanja */
+.u-alati { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin: 6px 0 12px; }
+.u-alati .u-pretraga { width: 340px; }
+.u-alati select { background: #13103a; color: var(--tekst); border: 2px solid #4b4794; border-radius: 10px; padding: 9px 11px; font: inherit; max-width: 460px; }
+.u-tabela { width: 100%; border-collapse: collapse; font-size: .93em; }
+.u-tabela th { text-align: left; color: var(--blago); font-size: .8em; text-transform: uppercase; letter-spacing: .04em; padding: 6px 8px; border-bottom: 2px solid #4b4794; position: sticky; top: 55px; background: var(--kartica); }
+.u-tabela td { padding: 8px; border-bottom: 1px solid #ffffff12; vertical-align: top; }
+.u-tabela tr.red-pitanja { cursor: pointer; }
+.u-tabela tr.red-pitanja:hover td { background: #3b3590; }
+.u-tabela .br { color: var(--blago); white-space: nowrap; }
+.u-tabela .zv { color: var(--istaknuto); white-space: nowrap; }
+.u-tabela .tacan { color: #55efc4; }
+.u-tabela .autor { color: var(--blago); font-size: .85em; }
+.u-prazno { padding: 30px; text-align: center; color: var(--blago); }
+
+/* izmena: forma levo, pregled desno */
+.u-izmena { display: grid; grid-template-columns: minmax(0, 1fr) 420px; gap: 24px; align-items: start; }
+.u-pregled-okvir { position: sticky; top: 70px; }
+.u-pregled-okvir h3 { display: flex; align-items: center; gap: 10px; }
+.u-pregled { background: var(--poz); border: 3px solid #4b4794; border-radius: 28px; padding: 18px 14px; max-height: calc(100vh - 160px); overflow-y: auto; font-size: 15px; }
+.u-pregled * { animation: none !important; }
+.u-pregled .traka { padding-right: 0; }
+.u-pregled .odg, .u-pregled .spoj { cursor: default; }
+.u-pregled .napomena { font-size: .78em; color: var(--blago); text-align: center; margin: 8px 0 0; }
+.u-akcije { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-top: 18px; }
+.u-akcije .dugme { padding: 12px 22px; }
+.u-sekcija { border-top: 1px solid #ffffff1a; padding-top: 14px; margin-top: 6px; }
+details.u-napredno summary { cursor: pointer; font-weight: 800; color: var(--blago); margin: 4px 0 10px; }
+
+/* moji predlozi */
+.u-predlozi { list-style: none; padding: 0; margin: 0; }
+.u-predlozi li { display: flex; gap: 12px; align-items: center; padding: 8px 0; border-bottom: 1px solid #ffffff12; }
+.u-predlozi .naslov { flex: 1; }
+.u-stanje { border-radius: 999px; padding: 3px 10px; font-size: .8em; font-weight: 800; white-space: nowrap; }
+.u-stanje.ceka { background: #4b4794; }
+.u-stanje.prihvacen { background: #00876a; }
+.u-stanje.odbijen { background: #8a2b2b; }
+
+/* prozor (potvrda, rezultat) */
+.u-prozor { position: fixed; inset: 0; background: #000a; display: flex; align-items: center; justify-content: center; z-index: 50; padding: 20px; }
+.u-prozor[hidden] { display: none; }
+.u-prozor-sadrzaj { background: var(--kartica); border-radius: var(--radijus); padding: 24px 28px; max-width: 640px; width: 100%; max-height: 90vh; overflow-y: auto; box-shadow: 0 20px 60px #0008; line-height: 1.5; }
+.u-prozor-sadrzaj h2 { margin-top: 0; }
+.u-potvrda { display: flex; gap: 10px; align-items: flex-start; margin: 14px 0; font-weight: 700; }
+.u-potvrda input { width: 20px; height: 20px; margin-top: 2px; flex: none; }
+.u-veza { display: block; background: #13103a; padding: 10px 12px; border-radius: 10px; word-break: break-all; margin: 8px 0 14px; }
+.u-ceka { display: inline-block; width: 18px; height: 18px; border: 3px solid #fff4; border-top-color: #fff; border-radius: 50%; animation: okret 0.8s linear infinite; vertical-align: -3px; margin-right: 8px; }
+@keyframes okret { to { transform: rotate(360deg); } }
+
+@media (max-width: 1000px) {
+  .u-izmena { grid-template-columns: 1fr; }
+  .u-pregled-okvir { position: static; }
+}

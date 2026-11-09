@@ -23,6 +23,8 @@ After=network.target
 User=gric
 WorkingDirectory=$DIR
 Environment=NODE_ENV=production PORT=3000
+# GITHUB_TOKEN za urednik pitanja (deploy/README.md → „Nalog za predloge“); fajl nije obavezan
+EnvironmentFile=-/etc/gric-kviz.env
 ExecStart=/usr/bin/node server.js
 Restart=always
 RestartSec=2

@@ -10,6 +10,7 @@ const kvizovi = require('./lib/kvizovi');
 const recnik = require('./lib/recnik');
 const statistika = require('./lib/statistika');
 const Soba = require('./lib/soba');
+const predlozi = require('./lib/predlozi');
 
 const PORT = +process.env.PORT || 3000;
 const JAVNO = path.join(__dirname, 'public');
@@ -40,6 +41,8 @@ function posalji(res, podaci) {
 const MAKS_SOBA = 20000; // 4 slova = 160.000 kodova; iznad ovoga nova soba se odbija (umesto beskonačne petlje)
 const LIMIT_SOBA = +process.env.LIMIT_SOBA || 20; // novih soba po minutu po adresi
 const LIMIT_NEMA = +process.env.LIMIT_NEMA || 120; // pogrešnih kodova soba po minutu po adresi
+const LIMIT_PREDLOGA = +process.env.LIMIT_PREDLOGA || 10; // predloga (pull request-ova) po satu po adresi
+const LIMIT_PREDLOGA_DAN = +process.env.LIMIT_PREDLOGA_DAN || 100; // ukupno predloga dnevno (zaštita od zloupotrebe)
 function novKod() {
   const A = 'ABCDEFGHJKLMNPRSTUVZ';
   if (sobe.size >= MAKS_SOBA) return null;
@@ -61,10 +64,10 @@ function adresa(req) {
 function previse(req, vrsta, maks, prozorMs) {
   const k = vrsta + '|' + adresa(req), sad = Date.now();
   let b = brojaci.get(k);
-  if (!b || sad - b.od > prozorMs) { b = { n: 0, od: sad }; brojaci.set(k, b); }
+  if (!b || sad - b.od > prozorMs) { b = { n: 0, od: sad, prozor: prozorMs }; brojaci.set(k, b); }
   return ++b.n > maks;
 }
-setInterval(() => { const sad = Date.now(); for (const [k, b] of brojaci) if (sad - b.od > 300e3) brojaci.delete(k); }, 60e3);
+setInterval(() => { const sad = Date.now(); for (const [k, b] of brojaci) if (sad - b.od > Math.max(300e3, b.prozor)) brojaci.delete(k); }, 60e3);
 
 process.on('uncaughtException', (e) => console.error('Neuhvaćena greška:', e));
 process.on('unhandledRejection', (e) => console.error('Neobrađeno odbijanje:', e));
@@ -181,6 +184,27 @@ async function obradi(req, res) {
   // na javnom serveru (production) porodična statistika se ne izlaže strancima
   if (p === '/api/statistika') return kraj(res, 200, process.env.NODE_ENV === 'production' && !process.env.JAVNA_STATISTIKA ? { igraci: {}, igre: [] } : statistika.citaj());
   if (p === '/api/info') return kraj(res, 200, { adrese: lanAdrese(), port: PORT, reci: brojReci });
+
+  // ───── urednik pitanja: predlozi izmena → pull request na GitHub-u (lib/predlozi.js) ─────
+  if (p === '/api/predlog/info') return kraj(res, 200, { ukljuceno: predlozi.ukljuceno(), repo: predlozi.REPO });
+  if (p === '/api/predlog' && req.method === 'POST') {
+    const b = await citajTelo(req);
+    if (previse(req, 'predlog', LIMIT_PREDLOGA, 3600e3) || previse({ socket: {}, headers: {} }, 'predlog-dan', LIMIT_PREDLOGA_DAN, 86400e3))
+      return kraj(res, 429, { greska: 'Previše predloga za kratko vreme. Pokušaj ponovo za sat vremena.' });
+    try {
+      kvizovi.ucitajSve();
+      return kraj(res, 200, await predlozi.predlozi(b, kvizovi.paket(String(b.paket || ''))));
+    } catch (e) {
+      if (e instanceof predlozi.Greska) return kraj(res, e.kod, { greska: e.message });
+      console.error('Predlog nije uspeo:', e);
+      return kraj(res, 502, { greska: 'GitHub trenutno ne odgovara kako treba. Pokušaj ponovo za nekoliko minuta.' });
+    }
+  }
+  if (p === '/api/predlog/stanje') {
+    const brojevi = (url.searchParams.get('brojevi') || '').split(',').map(Number).filter((n) => Number.isInteger(n) && n > 0);
+    try { return kraj(res, 200, await predlozi.stanje(brojevi)); } catch (e) { return kraj(res, e.kod || 502, { greska: e.message }); }
+  }
+  if (p === '/urednik') return staticki(res, JAVNO, '/urednik.html', { 'X-Robots-Tag': 'noindex' });
 
   if (p === '/api/akcija' && req.method === 'POST') {
     const b = await citajTelo(req);

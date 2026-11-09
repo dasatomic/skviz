@@ -46,6 +46,7 @@ for (const dir of fs.readdirSync(KOREN).sort()) {
       else if (new Set(p.odgovori.map((x) => x.trim().toLowerCase())).size !== 4) g(oz, 'odgovori se ponavljaju');
       if (p.vrsta === 'uljez' && !p.objasnjenje) u(oz, 'uljez: dodaj „objasnjenje“ – zašto je baš to uljez');
     }
+    if (p.autor !== undefined && (typeof p.autor !== 'string' || !p.autor.trim())) g(oz, '„autor“ mora biti tekst (ime i prezime)');
     if (![1, 2, 3].includes(p.tezina)) u(oz, 'tezina treba da bude 1, 2 ili 3');
     else t[p.tezina]++;
     if (k.zadaci) {
