@@ -1,4 +1,4 @@
-// Gric kviz – klijent (telefon ili TV ekran)
+// Skviz – klijent (telefon ili TV ekran)
 'use strict';
 const { prikaziMedij, Zvuk } = window.Mediji;
 const $ = (s, el = document) => el.querySelector(s);
@@ -129,7 +129,7 @@ async function pocetna() {
   const qs = new URLSearchParams(location.search);
   const kodIzLinka = (qs.get('soba') || '').toUpperCase();
   if (EKRAN) {
-    app.innerHTML = `<div class="naslov-igre">Gric kviz</div><div class="podnaslov">📺 TV ekran – prikazuje igru za sve</div>
+    app.innerHTML = `<div class="naslov-igre">Skviz</div><div class="podnaslov">📺 TV ekran – prikazuje igru za sve</div>
       <div class="kartica"><label>Kod sobe</label><input class="polje kod" id="kod" maxlength="4" value="${esc(kodIzLinka)}" placeholder="ABCD">
       <div style="height:12px"></div><button class="dugme zuto siroko" id="gledaj">Prikaži sobu</button></div>`;
     const kreni = () => { const k = $('#kod').value.trim().toUpperCase(); if (k.length === 4) povezi(k); };
@@ -140,7 +140,7 @@ async function pocetna() {
   let poznati = [];
   try { poznati = Object.values((await (await fetch('/api/statistika')).json()).igraci || {}); } catch {}
   app.innerHTML = `
-    <div class="naslov-igre">Gric kviz</div>
+    <div class="naslov-igre">Skviz</div>
     <div class="podnaslov">Porodični kviz znanja 🦉</div>
     <div class="kartica">
       <label class="sitno">Kako se zoveš?</label>
@@ -235,7 +235,7 @@ async function ekranLobi(nov) {
     const lokalno = /^(localhost|127\.|\d+\.\d+\.\d+\.\d+$)/.test(location.hostname);
     const adresa = lokalno ? `http://${info.adrese[0] || location.hostname}:${info.port}` : location.origin;
     app.innerHTML = `
-      <div class="naslov-igre" style="font-size:1.8rem">Gric kviz</div>
+      <div class="naslov-igre" style="font-size:1.8rem">Skviz</div>
       <div class="kartica centar">
         <div class="sitno">Kod sobe</div><div class="kod-sobe">${V.kod}</div>
         <div class="adresa">${adresa}/?soba=${V.kod}</div>
@@ -413,17 +413,56 @@ function tajmer(pocetak, trajanje) {
 }
 
 // ───────────────────────── pitanje ─────────────────────────
-function ekranPitanje(nov, staro) {
-  const P = V.pitanje;
-  const otkriveno = V.faza === 'otkrivanje';
-  if (nov) {
-    const zvezde = [1, 2, 3].map((i) => `<span style="opacity:${i <= P.tezina ? 1 : 0.25}">★</span>`).join('');
-    app.innerHTML = `
+// posebne vrste pitanja: natpis iznad pitanja
+const VRSTE_PITANJA = { uljez: '🕵️ Izbaci uljeza', spoji: '🔗 Spoji pojmove' };
+
+function zaglavljePitanja(P) {
+  const zvezde = [1, 2, 3].map((i) => `<span style="opacity:${i <= P.tezina ? 1 : 0.25}">★</span>`).join('');
+  return `
       <div class="traka"><span class="znacka">${P.rb}/${P.ukupno}</span>
         ${P.oblast ? `<span class="znacka" style="background:${P.oblast.boja}">${P.oblast.ikona} ${esc(P.oblast.naziv)}</span>` : ''}
         <span class="znacka tezina" title="težina">${zvezde}${P.tezina === 3 ? ' ×1,5' : ''}</span><span class="razmak"></span><span class="sekunde"></span></div>
       <div class="tajmer"><i></i></div>
-      <div class="pitanje-tekst">${esc(P.tekst)}</div>
+      ${VRSTE_PITANJA[P.vrsta] ? `<div class="vrsta-pitanja">${VRSTE_PITANJA[P.vrsta]}</div>` : ''}
+      <div class="pitanje-tekst">${esc(P.tekst)}</div>`;
+}
+
+// rezultat igrača, „Da li si znao?“ i poeni svih igrača – zajedničko za sve vrste pitanja
+function otkrivanjePitanja(P, naslov) {
+  const moj = V.dobitak[ja.id];
+  let rez = '';
+  if (moj && !EKRAN) {
+    if (moj.tacno) {
+      rez = `<div class="rezultat dobro">${P.vrsta === 'spoji' ? 'Sve tačno!' : 'Tačno!'} +${moj.poeni}</div>${moj.bonus ? `<div class="bonus">🔥 Niz od ${moj.niz} tačnih: +${moj.bonus}</div>` : ''}`;
+      Zvuk.efekat('tacno');
+      if (moj.niz >= 3) konfete(40);
+    } else if (moj.pogodjeno) {
+      rez = `<div class="rezultat delimicno">${moj.pogodjeno} od ${moj.od} tačno · +${moj.poeni}</div>`;
+      Zvuk.efekat('tacno');
+    } else {
+      rez = `<div class="rezultat lose">${moj.bez ? 'Vreme je isteklo ⏰' : 'Netačno 😕'}</div>`;
+      Zvuk.efekat('netacno');
+    }
+  } else if (EKRAN) Zvuk.efekat('tacno');
+  const tacniLista = V.igraci.filter((x) => V.dobitak[x.id]?.tacno).sort((a, b) => V.dobitak[a.id].ms - V.dobitak[b.id].ms);
+  const brzi = tacniLista[0];
+  const poeni = V.igraci.length > 1 || EKRAN ? `<div class="kartica"><div class="lista-poena">${[...V.igraci].sort((a, b) => b.poeni - a.poeni).map((x, i) => {
+    const d = V.dobitak[x.id] || {};
+    return `<div class="st" style="animation-delay:${0.1 * i}s"><span style="font-size:1.4em">${esc(x.avatar)}</span><b>${esc(x.ime)}</b>
+      ${d.poeni > 0 ? `<span class="plus">+${d.poeni + (d.bonus || 0)}</span>${d.od ? ` <span class="sitno">${d.pogodjeno}/${d.od}</span>` : ''}${x === brzi && tacniLista.length > 1 ? ' ⚡' : ''}` : '<span class="sitno">—</span>'}<span class="p">${x.poeni}</span></div>`;
+  }).join('')}</div></div>` : '';
+  return `${rez}
+      <div class="kartica zanimljivost">${naslov}${P.objasnjenje ? `<p>${esc(P.objasnjenje)}</p>` : ''}
+      ${P.zanimljivost ? `<h3 style="margin-top:12px">💡 Da li si znao?</h3><div>${esc(P.zanimljivost)}</div>` : ''}</div>
+      ${poeni}`;
+}
+
+function ekranPitanje(nov, staro) {
+  const P = V.pitanje;
+  if (P.vrsta === 'spoji') return ekranSpoji(nov, staro);
+  const otkriveno = V.faza === 'otkrivanje';
+  if (nov) {
+    app.innerHTML = `${zaglavljePitanja(P)}
       <div id="medij"></div>
       <div class="odgovori" id="odgovori">${P.odgovori.map((o, i) => `<button class="odg" data-i="${i}" data-slovo="${SLOVA_ODG[i]}">${esc(o)}<span class="glasovi"></span><span class="procenat"></span></button>`).join('')}</div>
       <div id="ispod"></div>`;
@@ -445,6 +484,7 @@ function ekranPitanje(nov, staro) {
     b.classList.toggle('tacan', otkriveno && P.tacan === i);
   });
   odg.classList.toggle('zakljucano', V.mojOdgovor !== null && !otkriveno);
+  odg.classList.toggle('otkriveno', otkriveno);
   const ispod = $('#ispod');
 
   if (!otkriveno) {
@@ -465,29 +505,109 @@ function ekranPitanje(nov, staro) {
       $('.procenat', b).style.width = (100 * V.raspodela[i]) / ukupno + '%';
       $('.glasovi', b).innerHTML = Object.entries(V.izbori).filter(([, iz]) => iz === i).map(([id]) => esc(igrac(id)?.avatar || '')).join('');
     });
-    const moj = V.dobitak[ja.id];
-    let rez = '';
-    if (moj && !EKRAN) {
-      if (moj.tacno) {
-        rez = `<div class="rezultat dobro">Tačno! +${moj.poeni}</div>${moj.bonus ? `<div class="bonus">🔥 Niz od ${moj.niz} tačnih: +${moj.bonus}</div>` : ''}`;
-        Zvuk.efekat('tacno');
-        if (moj.niz >= 3) konfete(40);
-      } else {
-        rez = `<div class="rezultat lose">${moj.bez ? 'Vreme je isteklo ⏰' : 'Netačno 😕'}</div>`;
-        Zvuk.efekat('netacno');
+    const naslov = P.vrsta === 'uljez' ? `<h3>🕵️ Uljez je: ${esc(P.odgovori[P.tacan])}</h3>` : `<h3>✅ ${esc(P.odgovori[P.tacan])}</h3>`;
+    ispod.innerHTML = otkrivanjePitanja(P, naslov);
+    if (!EKRAN) setTimeout(() => $('.zanimljivost')?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 900);
+  }
+  dugmeDalje(P.rb === P.ukupno ? 'Rang lista 🏆' : 'Sledeće pitanje ➜');
+}
+
+// ───────────────────────── spoji pojmove ─────────────────────────
+// Dodirni pojam levo, pa njegov par desno – spojeni parovi dobiju istu boju. Ponovni dodir raskida par.
+const BOJE_PAROVA = ['#e17055', '#0984e3', '#00b894', '#e1a700', '#a29bfe'];
+let spajanje = { levo: 0, parovi: [] }; // parovi[i] = indeks pojma desno spojenog sa i-tim levo (ili null)
+
+function ekranSpoji(nov, staro) {
+  const P = V.pitanje;
+  const otkriveno = V.faza === 'otkrivanje';
+  const n = P.levo.length;
+  if (nov) {
+    spajanje = { levo: 0, parovi: Array(n).fill(null) };
+    app.innerHTML = `${zaglavljePitanja(P)}
+      <div id="medij"></div>
+      <div class="spoji" id="spoji">
+        <div class="kolona">${P.levo.map((t, i) => `<button class="spoj levo" data-i="${i}" style="animation-delay:${0.05 * i}s">${esc(t)}</button>`).join('')}</div>
+        <div class="kolona">${P.desno.map((t, j) => `<button class="spoj desno" data-j="${j}" style="animation-delay:${0.05 * j + 0.1}s">${esc(t)}</button>`).join('')}</div>
+      </div>
+      <div id="ispod"></div>`;
+    if (P.mediji) ciscenje.push(prikaziMedij($('#medij'), P.mediji, { auto: true, paket: P.paket }));
+    else $('#medij').remove();
+    const moze = () => !EKRAN && V.faza === 'pitanje' && V.mojOdgovor === null;
+    app.querySelectorAll('.spoj.levo').forEach((b) => (b.onclick = () => {
+      if (!moze()) return;
+      const i = +b.dataset.i;
+      spajanje.parovi[i] = null;
+      spajanje.levo = i;
+      Zvuk.efekat('klik');
+      ekranSpoji(false);
+    }));
+    app.querySelectorAll('.spoj.desno').forEach((b) => (b.onclick = () => {
+      if (!moze()) return;
+      const j = +b.dataset.j;
+      const vec = spajanje.parovi.indexOf(j);
+      if (vec >= 0) spajanje.parovi[vec] = null;
+      if (spajanje.levo === null || vec === spajanje.levo) { spajanje.levo = vec >= 0 ? vec : spajanje.parovi.indexOf(null); }
+      else {
+        spajanje.parovi[spajanje.levo] = j;
+        const sledeci = spajanje.parovi.findIndex((x, k) => x === null && k > spajanje.levo);
+        spajanje.levo = sledeci >= 0 ? sledeci : spajanje.parovi.indexOf(null);
       }
-    } else if (EKRAN) Zvuk.efekat('tacno');
-    const tacniLista = V.igraci.filter((x) => V.dobitak[x.id]?.tacno).sort((a, b) => V.dobitak[a.id].ms - V.dobitak[b.id].ms);
-    const brzi = tacniLista[0];
-    const poeni = V.igraci.length > 1 || EKRAN ? `<div class="kartica"><div class="lista-poena">${[...V.igraci].sort((a, b) => b.poeni - a.poeni).map((x, i) => {
-      const d = V.dobitak[x.id] || {};
-      return `<div class="st" style="animation-delay:${0.1 * i}s"><span style="font-size:1.4em">${esc(x.avatar)}</span><b>${esc(x.ime)}</b>
-        ${d.tacno ? `<span class="plus">+${d.poeni + (d.bonus || 0)}</span>${x === brzi && tacniLista.length > 1 ? ' ⚡' : ''}` : '<span class="sitno">—</span>'}<span class="p">${x.poeni}</span></div>`;
-    }).join('')}</div></div>` : '';
-    ispod.innerHTML = `${rez}
-      <div class="kartica zanimljivost"><h3>✅ ${esc(P.odgovori[P.tacan])}</h3>${P.objasnjenje ? `<p>${esc(P.objasnjenje)}</p>` : ''}
-      ${P.zanimljivost ? `<h3 style="margin-top:12px">💡 Da li si znao?</h3><div>${esc(P.zanimljivost)}</div>` : ''}</div>
-      ${poeni}`;
+      if (spajanje.levo < 0) spajanje.levo = null;
+      Zvuk.efekat('klik');
+      ekranSpoji(false);
+    }));
+    if (!otkriveno) tajmer(P.pocetak, P.trajanje);
+  }
+  // boje parova: moji izbori (pre slanja – lokalni, posle – sa servera)
+  const parovi = Array.isArray(V.mojOdgovor) ? V.mojOdgovor : spajanje.parovi;
+  app.querySelectorAll('.spoj.levo').forEach((b, i) => {
+    const boja = parovi[i] !== null && parovi[i] !== undefined ? BOJE_PAROVA[i] : '';
+    b.style.background = boja;
+    b.classList.toggle('spojen', !!boja);
+    b.classList.toggle('aktivan', !otkriveno && V.mojOdgovor === null && spajanje.levo === i);
+    b.classList.toggle('tacan', otkriveno && Array.isArray(V.mojOdgovor) && V.mojOdgovor[i] === P.tacan[i]);
+    b.classList.toggle('pogresan', otkriveno && Array.isArray(V.mojOdgovor) && V.mojOdgovor[i] !== P.tacan[i]);
+  });
+  app.querySelectorAll('.spoj.desno').forEach((b, j) => {
+    const i = parovi.indexOf(j);
+    b.style.background = i >= 0 ? BOJE_PAROVA[i] : '';
+    b.classList.toggle('spojen', i >= 0);
+  });
+  $('#spoji').classList.toggle('zakljucano', V.mojOdgovor !== null && !otkriveno);
+  const ispod = $('#ispod');
+
+  if (!otkriveno) {
+    const ko = V.igraci.map((x) => avatarHTML(x, V.odgovorili.includes(x.id) ? '<span class="kvacica">✓</span>' : '')).join('');
+    const spremno = spajanje.parovi.every((x) => x !== null);
+    ispod.innerHTML = `${V.mojOdgovor !== null ? '<div class="cekanje">Parovi poslati 🔒 čekamo ostale<span class="tackice"></span></div>'
+      : EKRAN ? '' : `<div class="sitno centar">${spremno ? 'Sve je spojeno – proveri pa pošalji.' : 'Dodirni pojam levo, pa njegov par desno.'}</div>`}
+      ${V.igraci.length > 1 || EKRAN ? `<div class="igraci">${ko}</div>` : ''}`;
+    if (!EKRAN && V.mojOdgovor === null && spremno) {
+      const d = donjaTraka('<button class="dugme zeleno" id="posalji-parove">Pošalji parove ✓</button>');
+      $('#posalji-parove', d).onclick = () => {
+        if (V.mojOdgovor !== null) return;
+        Zvuk.efekat('klik');
+        V.mojOdgovor = [...spajanje.parovi];
+        akcija('odgovor', { izbor: V.mojOdgovor });
+        ekranSpoji(false);
+      };
+    } else donjaTraka('');
+    return;
+  }
+
+  if (nov || staro?.faza !== 'otkrivanje') {
+    clearInterval(tikTajmer);
+    $('.tajmer i').style.transform = 'scaleX(0)';
+    $('.sekunde').textContent = '';
+    const odgovorilo = Object.keys(V.izbori).length || 1;
+    const resenje = P.levo.map((l, i) => {
+      const moj = Array.isArray(V.mojOdgovor) ? V.mojOdgovor[i] : null;
+      const znak = moj === null || EKRAN ? '' : moj === P.tacan[i] ? '✅' : '❌';
+      return `<div class="par-resenje" style="animation-delay:${0.12 * i}s"><span class="boja" style="background:${BOJE_PAROVA[i]}"></span>
+        <span class="tekst"><b>${esc(l)}</b> <span class="strelica">→</span> ${esc(P.desno[P.tacan[i]])}</span>
+        <span class="sitno">${Math.round((100 * V.raspodela[i]) / odgovorilo)}%</span>${znak ? `<span>${znak}</span>` : ''}</div>`;
+    }).join('');
+    ispod.innerHTML = otkrivanjePitanja(P, `<h3>🔗 Tačni parovi</h3>${resenje}`);
     if (!EKRAN) setTimeout(() => $('.zanimljivost')?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 900);
   }
   dugmeDalje(P.rb === P.ukupno ? 'Rang lista 🏆' : 'Sledeće pitanje ➜');

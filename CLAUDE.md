@@ -1,4 +1,4 @@
-# Gric kviz – porodični kućni kviz
+# Skviz – porodični kućni kviz
 
 Kviz u stilu Jackbox igara za porodicu: server radi na ovom računaru, svi igraju preko telefona u kućnoj Wi-Fi mreži.
 Ceo interfejs, pitanja i komentari u kodu su na **srpskom (latinica)**. Igrači su deca 11–15 godina i odrasli.
@@ -25,6 +25,7 @@ Format je opisan u `kvizovi/UPUTSTVO.md`. Ukratko:
 3. Pitanja pravi **svojim rečima** na osnovu gradiva (ne prepisuj odlomke iz knjige). Mešaj težine (~35% lako, 40% srednje, 25% teško), uz par pitanja koja bi pomučila i odrasle.
 4. `zanimljivost` = nešto neočigledno što proširuje znanje, ne ponavljanje tačnog odgovora.
 5. Kad god ima smisla, koristi interaktivne medije (molekul, telo, mapa, melodija, atom, sat, emodzi, svg).
+5a. Posebne vrste pitanja (`"vrsta"`): `"uljez"` (4 odgovora, prvi je uljez, obavezno `objasnjenje`) i `"spoji"` (`"parovi": [[levo, desno], …]`, 3–5 parova, bez `odgovori`). Partija ih meša oko 15% (`lib/kvizovi.js` → `izaberi`); bodovanje „spoji“ je srazmerno tačnim parovima (`lib/soba.js` → `otkrij`). Prvi primer: `kvizovi/biologija`.
 6. Za učenje jedne lekcije postavi `"uOpstem": false` da se ne meša u „Opšte znanje“.
 6a. Kvizovi po razredima: `kvizovi/razred<N>-<oblast>/` sa `oblast`, `razred`, `lekcije` (naslovi iz sadržaja udžbenika u `izvori/`), a svako pitanje ima `lekcija` (redni broj). Lobi: oblast → Svi razredi / 5–8 → Cela godina / lekcija. Bar 15 pitanja po lekciji, mešane težine. Izbor kviza na serveru: `opste`, `oblast:<oblast>`, `<paket>`, `<paket>#<lekcija>` (`lib/kvizovi.js` → `izvor`).
 7. Pokreni `npm run proveri` – mora proći bez grešaka. Server pokupi nove kvizove bez restarta.

@@ -48,6 +48,27 @@ kvizovi/
 | `lekcije` | (opciono) spisak lekcija iz udžbenika: `[{"naziv":"Ćelijska građa","tema":"Poreklo i raznovrsnost života","strana":26}]` |
 | `lekcija` | (u pitanju) redni broj lekcije iz spiska `lekcije` (od 1) – posle izbora razreda može se igrati „Cela godina“ ili jedna lekcija |
 
+## Posebne vrste pitanja (`"vrsta"`)
+
+Pored običnih pitanja sa 4 odgovora (`"vrsta": "izbor"`, podrazumevano) postoje:
+
+**Izbaci uljeza** – 4 pojma, od kojih jedan ne pripada ostalima. **Prvi u spisku je uljez** (igra meša redosled). Obavezno `objasnjenje`: zašto je baš on uljez i šta povezuje ostale.
+```json
+{ "vrsta": "uljez", "tezina": 1, "pitanje": "Ko ovde NIJE sisar?",
+  "odgovori": ["Pingvin", "Delfin", "Slepi miš", "Kit"],
+  "objasnjenje": "Pingvin je ptica, a delfin, slepi miš i kit su sisari.",
+  "zanimljivost": "…", "rec": "pingvin" }
+```
+
+**Spoji pojmove** – 3–5 parova `[levo, desno]` (preporuka 4). Igra meša obe kolone; igrač dodirne pojam levo, pa njegov par desno. Poeni se dele srazmerno broju tačnih parova, a „tačno“ (i niz) računa se tek kad su svi parovi dobri. Pitanje automatski dobija 5 s više po paru. Pojmovi desno treba da budu kratki (do ~40 znakova) i jednoznačni – svaki levo sme da odgovara samo jednom desno.
+```json
+{ "vrsta": "spoji", "tezina": 2, "pitanje": "Spoji organ sa njegovom ulogom",
+  "parovi": [["Srce", "Pumpa krv"], ["Pluća", "Razmena gasova"], ["Bubrezi", "Prečišćavaju krv"], ["Želudac", "Vari hranu"]],
+  "zanimljivost": "…", "rec": "organ" }
+```
+
+U jednoj partiji ovakva pitanja čine oko 15% (npr. 2 od 15), naizmenično po vrsti, kad god ih izabrani kviz ima.
+
 ## Kvizovi po razredima i lekcijama
 
 Folder `kvizovi/razred<N>-<oblast>/` (npr. `razred6-biologija`) sa `"oblast"`, `"razred"`, `"uOpstem": false` i spiskom `lekcije` (naslovi iz sadržaja udžbenika, redom).

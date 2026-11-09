@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Gric kviz – kućni kviz za igru preko telefona u kućnoj mreži.
+// Skviz – kućni kviz za igru preko telefona u kućnoj mreži.
 // Pokretanje:  node server.js   (ili: npm start)   – port se menja sa PORT=8080 node server.js
 const http = require('http');
 const fs = require('fs');
@@ -190,7 +190,7 @@ function lanAdrese() {
 
 server.listen(PORT, '0.0.0.0', () => {
   const ukupno = Object.values(kvizovi.svi()).reduce((s, k) => s + k.pitanja.length, 0);
-  console.log(`\n  🎉 Gric kviz radi!  (${Object.keys(kvizovi.svi()).length} kvizova, ${ukupno} pitanja, ${brojReci} reči u rečniku)\n`);
+  console.log(`\n  🎉 Skviz radi!  (${Object.keys(kvizovi.svi()).length} kvizova, ${ukupno} pitanja, ${brojReci} reči u rečniku)\n`);
   console.log('  Na telefonima (ista Wi-Fi mreža) otvori:');
   for (const a of lanAdrese()) console.log(`     http://${a}:${PORT}`);
   console.log(`  Na ovom računaru:  http://localhost:${PORT}`);

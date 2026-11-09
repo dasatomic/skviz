@@ -1,11 +1,12 @@
-# 🦉 Gric kviz
+# 🦉 Skviz
 
-Porodični kviz znanja za igru preko telefona u kućnoj mreži (u stilu Jackbox igara).
+Porodični kviz znanja za igru preko telefona (u stilu Jackbox igara). Igra se na **https://skviz.rs**, a može se pokrenuti i kod kuće, u kućnoj mreži.
 
 ## Pokretanje
 
 ```bash
-cd ~/projects/gric_kviz
+git clone https://github.com/dasatomic/skviz.git
+cd skviz
 node server.js
 ```
 

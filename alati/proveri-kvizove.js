@@ -30,8 +30,22 @@ for (const dir of fs.readdirSync(KOREN).sort()) {
       else { poLekciji[p.lekcija - 1].n++; poLekciji[p.lekcija - 1][p.tezina]++; }
     } else if (p.lekcija !== undefined) g(oz, 'pitanje ima lekciju, a kviz nema spisak „lekcije“');
     if (!p.pitanje) g(oz, 'nema teksta pitanja');
-    if (!Array.isArray(p.odgovori) || p.odgovori.length !== 4) g(oz, 'mora imati tačno 4 odgovora (prvi je tačan)');
-    else if (new Set(p.odgovori.map((x) => x.trim().toLowerCase())).size !== 4) g(oz, 'odgovori se ponavljaju');
+    if (p.vrsta !== undefined && !['izbor', 'uljez', 'spoji'].includes(p.vrsta)) g(oz, 'nepoznata vrsta pitanja: ' + p.vrsta);
+    if (p.vrsta === 'spoji') {
+      // „spoji pojmove“: 3–5 parova [levo, desno], bez ponavljanja ni levo ni desno
+      const P = p.parovi;
+      if (!Array.isArray(P) || P.length < 3 || P.length > 5 || P.some((x) => !Array.isArray(x) || x.length !== 2 || x.some((y) => typeof y !== 'string' || !y.trim())))
+        g(oz, 'spoji: „parovi“ mora imati 3–5 parova oblika ["levo", "desno"]');
+      else {
+        if (new Set(P.map((x) => x[0].trim().toLowerCase())).size !== P.length) g(oz, 'spoji: pojmovi levo se ponavljaju');
+        if (new Set(P.map((x) => x[1].trim().toLowerCase())).size !== P.length) g(oz, 'spoji: pojmovi desno se ponavljaju');
+      }
+      if (p.odgovori) u(oz, 'spoji: „odgovori“ se ne koriste (samo „parovi“)');
+    } else {
+      if (!Array.isArray(p.odgovori) || p.odgovori.length !== 4) g(oz, 'mora imati tačno 4 odgovora (prvi je tačan)');
+      else if (new Set(p.odgovori.map((x) => x.trim().toLowerCase())).size !== 4) g(oz, 'odgovori se ponavljaju');
+      if (p.vrsta === 'uljez' && !p.objasnjenje) u(oz, 'uljez: dodaj „objasnjenje“ – zašto je baš to uljez');
+    }
     if (![1, 2, 3].includes(p.tezina)) u(oz, 'tezina treba da bude 1, 2 ili 3');
     else t[p.tezina]++;
     if (!p.zanimljivost) u(oz, 'nema zanimljivosti');
@@ -41,7 +55,7 @@ for (const dir of fs.readdirSync(KOREN).sort()) {
       if (!c) g(oz, `pojam „${p.rec}“ sadrži slova kojih nema u srpskoj azbuci`);
       else if ([...c].length < 3 || [...c].length > 11) g(oz, `pojam „${p.rec}“ mora imati 3–11 slova`);
     } else u(oz, 'nema pojma „rec“ za krug reči (biće izabran automatski)');
-    const kljuc = (p.pitanje || '').toLowerCase().replace(/\W+/g, ' ').trim() + '|' + (p.odgovori || [])[0];
+    const kljuc = (p.pitanje || '').toLowerCase().replace(/\W+/g, ' ').trim() + '|' + (p.odgovori || p.parovi || [])[0];
     if (svaPitanja.has(kljuc)) u(oz, 'isto pitanje postoji i u ' + svaPitanja.get(kljuc));
     svaPitanja.set(kljuc, oz);
     const m = p.mediji;

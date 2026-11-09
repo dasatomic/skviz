@@ -15,6 +15,7 @@ Najlakši način je da dodaš nova pitanja ili popraviš netačna – svaka pomo
 - Pitanja su za decu od 11 do 15 godina, ali neka bude i nekoliko teških za odrasle.
 - **Činjenice moraju biti tačne** – ako nisi siguran, pitanje ne dodaj. Navedi izvor u opisu pull request-a.
 - Obavezna je „zanimljivost“: nešto **neočigledno** što proširuje znanje, a ne ponavljanje odgovora.
+- Pored običnih pitanja, dobrodošla su i „Izbaci uljeza“ i „Spoji pojmove“ (vidi `kvizovi/UPUTSTVO.md`).
 - Dodaj i `rec` – ključni pojam pitanja (3–11 slova, idealno 5–8). Krug „Najduža reč“ sakriva jedan od tih pojmova u slovima, da se gradivo ponovi.
 - Pitanja piši **svojim rečima** – ne prepisuj odlomke iz knjiga, enciklopedija ni stihove pesama.
 - Tačan odgovor je uvek prvi u listi `odgovori` (igra ih sama meša); netačni odgovori treba da budu verodostojni.
