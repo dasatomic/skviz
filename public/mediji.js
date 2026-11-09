@@ -267,7 +267,7 @@ function prikaziMolekul(k, m) {
   legenda.className = 'legenda';
   const elementi = [...new Set(at.map((a) => a.e))];
   legenda.innerHTML = (m.formula && m.prikaziFormulu ? `<b class="formula-mala">${m.formula}</b>` : '') +
-    (m.legenda === false ? '' : elementi.map((e) => `<span><i style="background:${ATOMI[e]?.boja || '#ccc'}"></i>${m.skrijImena ? e : ATOMI[e]?.ime || e}</span>`).join(''));
+    (m.legenda === false ? '' : elementi.map((e) => `<span><i style="background:${ATOMI[e]?.boja || '#ccc'}"></i>${m.skrijImena ? `<span data-lat>${e}</span>` : ATOMI[e]?.ime || e}</span>`).join(''));
   k.appendChild(legenda);
   return okretanje(cv, (ax, ay) => {
     g.clearRect(0, 0, w, h);

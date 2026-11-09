@@ -431,9 +431,9 @@
       "pitanje": "Kako se zove pojava kada štap u čaši vode izgleda „prelomljeno“?",
       "odgovori": [
         "Prelamanje (refrakcija) svetlosti",
-        "Odbijanje (refleksija)",
-        "Difrakcija",
-        "Polarizacija"
+        "Odbijanje (refleksija) svetlosti",
+        "Difrakcija (savijanje oko ivica)",
+        "Polarizacija svetlosti u providnom kristalu"
       ],
       "zanimljivost": "Svetlost u vodi putuje sporije nego u vazduhu, pa menja pravac na granici. Zbog toga je i bazen zapravo dublji nego što izgleda – oko trećinu.",
       "rec": "prelamanje"
@@ -507,9 +507,9 @@
       "pitanje": "Šta meri ampermetar?",
       "odgovori": [
         "Jačinu električne struje",
-        "Napon",
-        "Otpor",
-        "Snagu"
+        "Električni napon u voltima",
+        "Električni otpor provodnika",
+        "Snagu uređaja izraženu u vatima"
       ],
       "zanimljivost": "Ampermetar se vezuje redno, a voltmetar paralelno. Jedinica amper nazvana je po francuskom fizičaru Andre-Mari Amperu.",
       "rec": "ampermetar"
@@ -543,9 +543,9 @@
       "pitanje": "Koja je jedinica za merenje mase?",
       "odgovori": [
         "Kilogram",
-        "Njutn",
-        "Metar",
-        "Litar"
+        "Njutn (N)",
+        "Metar (m)",
+        "Litar (l)"
       ],
       "zanimljivost": "Masa se meri vagom i ne zavisi od mesta – na Mesecu imaš istu masu, ali manju težinu. Težina je sila i meri se njutnima.",
       "rec": "kilogram"
@@ -567,9 +567,9 @@
       "pitanje": "Kako se zove sila kojom Zemlja privlači sva tela?",
       "odgovori": [
         "Sila Zemljine teže (gravitacija)",
-        "Sila trenja",
-        "Sila otpora vazduha",
-        "Magnetna sila"
+        "Sila trenja između tela i podloge",
+        "Sila otpora vazduha pri padu tela",
+        "Magnetna sila Zemljinog gvozdenog jezgra"
       ],
       "zanimljivost": "Zbog gravitacije sve što bacimo uvis pada nazad. Ona drži i Mesec oko Zemlje i Zemlju oko Sunca.",
       "rec": "sila"
@@ -579,9 +579,9 @@
       "pitanje": "Šta se dešava sa vodom kada je zagrevamo do 100 °C na nivou mora?",
       "odgovori": [
         "Ključa i prelazi u paru",
-        "Mrzne",
-        "Postaje teža",
-        "Menja boju"
+        "Mrzne i pretvara se u led",
+        "Postaje teža i gušća",
+        "Menja boju u plavičastu ili zelenkastu"
       ],
       "zanimljivost": "Isparavanje se dešava na svakoj temperaturi, sa površine. Ključanje je kada se para stvara u celoj zapremini tečnosti – i to se vidi po mehurićima.",
       "rec": "ključanje"
@@ -603,9 +603,9 @@
       "pitanje": "Kroz koji materijal svetlost NE prolazi?",
       "odgovori": [
         "Kroz zid od cigle",
-        "Kroz staklo",
-        "Kroz vodu",
-        "Kroz vazduh"
+        "Kroz prozorsko staklo",
+        "Kroz čistu vodu u čaši",
+        "Kroz vazduh oko nas"
       ],
       "zanimljivost": "Tela kroz koja svetlost ne prolazi zovu se neprozirna. Iza njih nastaje senka.",
       "rec": "cigla"
@@ -639,8 +639,8 @@
       "pitanje": "Zašto se zimi na vrućem čaju stvara para?",
       "odgovori": [
         "Topla vodena para se hladi u vazduhu i kondenzuje u kapljice",
-        "Čaj gori",
-        "Vazduh je pun dima",
+        "Čaj na visokoj temperaturi gori, pa se iz šoljice diže beli dim",
+        "Vazduh je zimi pun dima iz dimnjaka, pa se dim skuplja iznad čaja",
         "Šoljica isparava"
       ],
       "zanimljivost": "Ono što vidimo nije sama para (ona je nevidljiva), nego sitne kapljice nastale kondenzacijom.",
@@ -651,9 +651,9 @@
       "pitanje": "Kakvu putanju opisuje Zemlja oko Sunca?",
       "odgovori": [
         "Skoro kružnu (eliptičnu)",
-        "Kvadratnu",
-        "Pravu liniju",
-        "Cik-cak"
+        "Kvadratnu, sa četiri ugla",
+        "Pravu liniju kroz svemir",
+        "Cik-cak liniju oko Sunca"
       ],
       "zanimljivost": "Kepler je otkrio da su putanje planeta elipse. Zemljina je skoro krug – najbliža je Suncu početkom januara, a ne leti!",
       "rec": "elipsa"
@@ -663,8 +663,8 @@
       "pitanje": "Šta je potrebno da bi se čuo zvuk?",
       "odgovori": [
         "Izvor koji treperi i sredina kroz koju se prenosi",
-        "Samo svetlost",
-        "Magnet",
+        "Samo svetlost, jer zvuk putuje uvek zajedno sa njom",
+        "Jak magnet koji pokreće sitne čestice vazduha u našem uhu",
         "Struja"
       ],
       "zanimljivost": "Zvučne talase stvaraju tela koja trepere – žice gitare, glasne žice. U vakuumu zvuk ne može da putuje.",
@@ -747,8 +747,8 @@
       "pitanje": "Šta tvrdi Njutnov prvi zakon (zakon inercije)?",
       "odgovori": [
         "Telo miruje ili se kreće ravnomerno pravolinijski dok na njega ne deluje sila",
-        "Svaka sila ima reakciju",
-        "Sva tela padaju jednako brzo",
+        "Svaka sila ima svoju reakciju iste jačine i pravca, ali suprotnog smera na drugo telo",
+        "Sva tela padaju jednako brzo u vakuumu, bez obzira na njihovu masu i oblik tela",
         "Energija se pretvara u toplotu"
       ],
       "zanimljivost": "Zbog inercije putnici u autobusu „lete“ napred kad on naglo zakoči. Zato su pojasevi tako važni.",
@@ -759,7 +759,7 @@
       "pitanje": "Zašto lakše hodamo po asfaltu nego po ledu?",
       "odgovori": [
         "Zbog većeg trenja između obuće i asfalta",
-        "Asfalt je topliji",
+        "Asfalt je topliji od leda, pa se obuća zagreje i lepi",
         "Led je teži",
         "Na ledu nema gravitacije"
       ],
@@ -771,7 +771,7 @@
       "pitanje": "Šta je poluga?",
       "odgovori": [
         "Prosta mašina koja pomoću oslonca olakšava podizanje tereta",
-        "Vrsta motora",
+        "Vrsta motora koji pokreće veoma teške terete pomoću pare i vode",
         "Električni prekidač",
         "Merni instrument"
       ],
@@ -783,8 +783,8 @@
       "pitanje": "Na čemu radi hidraulična presa (i kočnice u automobilu)?",
       "odgovori": [
         "Na Paskalovom zakonu – pritisak se u tečnosti prenosi podjednako u svim pravcima",
-        "Na magnetizmu",
-        "Na trenju",
+        "Na magnetizmu – jak elektromagnet pritiska klip i tako pokreće točkove automobila",
+        "Na trenju – pločice se trljaju o točak i usporavaju ga zbog velikog trenja površina",
         "Na svetlosti"
       ],
       "zanimljivost": "Mala sila na malom klipu stvara veliku silu na velikom klipu. Tako jedna noga vozača zaustavlja automobil od tone i više.",
@@ -795,9 +795,9 @@
       "pitanje": "Zašto ekser lako ulazi u drvo vrhom, a ne glavom?",
       "odgovori": [
         "Ista sila na manjoj površini stvara veći pritisak",
-        "Vrh je teži",
-        "Glava je od drugog metala",
-        "Drvo je mekše sa jedne strane"
+        "Vrh eksera je mnogo teži od glave, pa lakše prodire",
+        "Glava eksera je napravljena od drugog, mekšeg metala",
+        "Drvo je mekše sa jedne strane, pa ekser ulazi samo tako"
       ],
       "zanimljivost": "Pritisak je sila podeljena površinom. Zato su i noževi oštri, a krplje za sneg široke – da bi pritisak bio manji.",
       "rec": "ekser"
@@ -867,9 +867,9 @@
       "pitanje": "Kakav lik daje ravno ogledalo?",
       "odgovori": [
         "Uspravan, iste veličine, sa zamenjenom levom i desnom stranom",
-        "Obrnut i umanjen",
-        "Uvećan",
-        "Nikakav"
+        "Obrnut i umanjen, kao u kašiki, sa zamenjenim gornjim i donjim delom",
+        "Uvećan i uspravan, kao lupa, sa istim rasporedom leve i desne strane",
+        "Nikakav – ravno ogledalo samo odbija svetlost i ne daje nikakav lik"
       ],
       "zanimljivost": "Zato je natpis AMBULANCE na kolima hitne pomoći napisan obrnuto – vozač ispred ga u retrovizoru pročita pravilno.",
       "rec": "ogledalo"
@@ -975,8 +975,8 @@
       "pitanje": "Šta je kratak spoj?",
       "odgovori": [
         "Kada struja prođe putem sa skoro nultim otporom, pa naglo poraste",
-        "Kada se sijalica ugasi",
-        "Kada nema struje",
+        "Kada se sijalica ugasi jer je njena tanka nit pregorela od dugog i jakog rada",
+        "Kada uopšte nema struje u kući jer je nestalo napona u celom gradu ili kraju",
         "Kada je kabl previše dug"
       ],
       "zanimljivost": "Kratak spoj može izazvati požar. Zato u instalaciji postoje osigurači koji tada prekidaju struju.",
@@ -1023,8 +1023,8 @@
       "pitanje": "Šta je elektromagnet?",
       "odgovori": [
         "Kalem kroz koji teče struja i ponaša se kao magnet",
-        "Magnet od plastike",
-        "Prirodni magnet iz zemlje",
+        "Magnet napravljen od tvrde plastike, gume i gvozdenog praha",
+        "Prirodni magnet koji se vadi iz zemlje u dubokom rudniku",
         "Baterija"
       ],
       "zanimljivost": "Elektromagnet se može uključiti i isključiti. Na otpadu velikim elektromagnetima podižu automobile, a mali su u zvoncima i zvučnicima.",
@@ -1035,9 +1035,9 @@
       "pitanje": "Kako se zove pojava kada promena magnetnog polja stvara struju u žici?",
       "odgovori": [
         "Elektromagnetna indukcija",
-        "Fotosinteza",
-        "Refrakcija",
-        "Rezonancija"
+        "Fotosinteza (stvaranje hrane)",
+        "Refrakcija (prelamanje svetlosti)",
+        "Rezonancija (pojačano treperenje)"
       ],
       "zanimljivost": "Otkrio ju je Majkl Faradej 1831. Na tom principu rade generatori u elektranama i bicikl-dinamo.",
       "rec": "indukcija"
@@ -1119,7 +1119,7 @@
       "pitanje": "Šta izaziva plimu i oseku na moru?",
       "odgovori": [
         "Privlačenje Meseca (i Sunca)",
-        "Vetar",
+        "Jak vetar koji duva nad okeanom i morem",
         "Rotacija Sunca",
         "Podzemni vulkani"
       ],
@@ -1131,9 +1131,9 @@
       "pitanje": "Zašto vidimo uvek istu stranu Meseca?",
       "odgovori": [
         "Mesec se okrene oko svoje ose za isto vreme za koje obiđe Zemlju",
-        "Mesec se ne okreće",
-        "Druga strana je stalno u senci",
-        "Zemlja zaklanja drugu stranu"
+        "Mesec se uopšte ne okreće oko svoje ose, već samo kruži oko Zemlje",
+        "Druga strana je stalno u senci, pa je ne možemo videti sa Zemlje noću",
+        "Zemlja svojim oblakom i senkom stalno zaklanja drugu stranu Meseca"
       ],
       "zanimljivost": "Daleku stranu Meseca prvi su fotografisali Sovjeti 1959. sondom Luna 3. Ona nije „tamna strana“ – i ona dobija sunčevu svetlost.",
       "rec": "mesec"
@@ -1155,8 +1155,8 @@
       "pitanje": "Šta je crna rupa?",
       "odgovori": [
         "Područje sa toliko jakom gravitacijom da ni svetlost ne može da pobegne",
-        "Rupa u Zemljinoj kori",
-        "Tamna planeta",
+        "Velika rupa u Zemljinoj kori koja vodi duboko do užarenog jezgra planete",
+        "Tamna planeta koja ne odbija svetlost Sunca pa je ne vidimo ni teleskopom",
         "Ugašeno Sunce"
       ],
       "zanimljivost": "Prvu „sliku“ crne rupe snimili su astronomi 2019, koristeći teleskope širom sveta. U središtu našeg Mlečnog puta je ogromna crna rupa.",
@@ -1179,9 +1179,9 @@
       "pitanje": "Ko je postavio heliocentrični sistem – da se Zemlja okreće oko Sunca?",
       "odgovori": [
         "Nikola Kopernik",
-        "Ptolemej",
-        "Aristotel",
-        "Tiho Brahe"
+        "Klaudije Ptolomej",
+        "Aristotel iz Stagire",
+        "Tiho Brahe (Danska)"
       ],
       "zanimljivost": "Kopernik je knjigu objavio 1543, pred samu smrt. Ptolemej je, nasuprot tome, verovao da je Zemlja nepomična u centru svemira.",
       "rec": "kopernik"
@@ -1203,7 +1203,7 @@
       "pitanje": "Zašto astronauti u Međunarodnoj svemirskoj stanici lebde, iako na toj visini gravitacija iznosi oko 90% one na Zemlji?",
       "odgovori": [
         "Zato što zajedno sa stanicom stalno „padaju“ oko Zemlje",
-        "Zato što u svemiru nema gravitacije",
+        "Zato što u svemiru uopšte nema gravitacije, čak ni blizu planeta i Zemlje",
         "Zato što nose posebna odela",
         "Zbog magneta u stanici"
       ],
@@ -1227,9 +1227,9 @@
       "pitanje": "Šta se pomera u Fukoovom klatnu i dokazuje rotaciju Zemlje?",
       "odgovori": [
         "Ravan njihanja klatna polako se okreće",
-        "Klatno se ubrzava",
-        "Klatno se zaustavi",
-        "Klatno menja dužinu"
+        "Klatno se stalno ubrzava dok se njiše tamo-amo",
+        "Klatno se zaustavi posle tačno 24 sata njihanja",
+        "Klatno menja svoju dužinu tokom dana"
       ],
       "zanimljivost": "Leon Fuko je 1851. okačio teg od 28 kg na žicu od 67 m u pariskom Panteonu. Ravan njihanja se sporo okretala – zapravo se Zemlja okretala ispod klatna.",
       "rec": "klatno"
@@ -1263,9 +1263,9 @@
       "pitanje": "Šta je rezonancija?",
       "odgovori": [
         "Pojačano treperenje kada spoljašnja sila deluje istom frekvencijom kao sopstvena frekvencija tela",
-        "Odbijanje svetlosti",
-        "Topljenje metala",
-        "Gubitak struje"
+        "Odbijanje svetlosti od glatke površine pod potpuno istim uglom pod kojim je svetlost pala na tu površinu",
+        "Topljenje metala kada se zagreje do tačke na kojoj njegove čestice počnu slobodno da se kreću kroz telo",
+        "Gubitak električne struje u dugim vodovima zbog otpora žica, pa se deo energije pretvara u toplotu"
       ],
       "zanimljivost": "Pevač može glasom da razbije čašu ako pogodi njenu frekvenciju. Zbog rezonancije vojnici preko mostova ne marširaju u korak.",
       "rec": "rezonancija"
@@ -1311,9 +1311,9 @@
       "pitanje": "Šta je pronašao Ernest Raderford ogledom sa tankim zlatnim listićem?",
       "odgovori": [
         "Da atom ima malo, gusto jezgro",
-        "Elektron",
-        "Da je svetlost talas",
-        "Radio-talase"
+        "Elektron i njegovo naelektrisanje",
+        "Da je svetlost elektromagnetni talas",
+        "Radio-talase koji prolaze kroz zid"
       ],
       "zanimljivost": "Većina čestica je prošla kroz zlato, ali su se neke odbile nazad – kao da „topovsko đule odskoči od maramice“, rekao je Raderford.",
       "rec": "jezgro"
@@ -1335,9 +1335,9 @@
       "pitanje": "Šta znači čuvena Ajnštajnova formula E = mc²?",
       "odgovori": [
         "Masa i energija su povezane – mala masa sadrži ogromnu energiju",
-        "Energija je jednaka brzini",
-        "Svetlost ima masu",
-        "Masa se ne može promeniti"
+        "Energija je uvek jednaka brzini tela pomnoženoj sa njegovom masom",
+        "Svetlost ima veliku masu, pa zato snažno pritiska sve što obasja",
+        "Masa se nikako ne može promeniti, čak ni u nuklearnim reakcijama"
       ],
       "zanimljivost": "„c“ je brzina svetlosti, a njen kvadrat je ogroman broj. Zato u nuklearnim elektranama i u Suncu iz malo mase nastaje mnogo energije.",
       "rec": "energija"
@@ -1347,9 +1347,9 @@
       "pitanje": "U kojoj zemlji se nalazi Veliki hadronski sudarač (LHC), najveća mašina na svetu?",
       "odgovori": [
         "Na granici Švajcarske i Francuske",
-        "U SAD",
-        "U Japanu",
-        "U Nemačkoj"
+        "U SAD, u pustinji Novog Meksika, kraj Los Alamosa",
+        "U Japanu, ispod planine Fudži",
+        "U Nemačkoj, kraj grada Hamburga, uz reku Elbu"
       ],
       "zanimljivost": "Tunel LHC-a je kružnog oblika, dug oko 27 km, ispod zemlje kod Ženeve. Tu je 2012. otkriven Higsov bozon. Srbija je član CERN-a.",
       "rec": "sudarač"
@@ -1371,9 +1371,9 @@
       "pitanje": "Ko je Đorđe Stanojević?",
       "odgovori": [
         "Fizičar i astronom koji je uveo električno osvetljenje u Srbiji",
-        "Pesnik",
-        "Vojvoda",
-        "Kompozitor"
+        "Pesnik romantizma koji je pisao rodoljubive pesme o Kosovskom boju",
+        "Vojvoda iz Prvog srpskog ustanka koji je oslobodio Beograd 1806.",
+        "Kompozitor koji je napisao prvu srpsku operu i himnu „Bože pravde“"
       ],
       "zanimljivost": "Stanojević je pomogao izgradnju prve hidroelektrane u Srbiji, „Pod gradom“ u Užicu (1900), po Teslinim principima naizmenične struje. Bio je i rektor Beogradskog univerziteta.",
       "rec": "stanojević"
@@ -1419,9 +1419,9 @@
       "pitanje": "U kom američkom gradu je Tesla 1899. imao laboratoriju u kojoj je stvarao veštačke munje duge desetinama metara?",
       "odgovori": [
         "Kolorado Springs",
-        "Menlo Park",
-        "Las Vegas",
-        "Čikago"
+        "Menlo Park (Nju Džerzi)",
+        "Las Vegas (Nevada)",
+        "Čikago (Ilinois)"
       ],
       "zanimljivost": "Pričalo se da su od Teslinih ogleda varnice skakale iz potkovica konja u okolini. Menlo Park je bio mesto Edisonove laboratorije, a kasnije je Tesla na Long Ajlendu gradio kulu Vardenklif.",
       "rec": "kolorado"
@@ -1431,7 +1431,7 @@
       "pitanje": "Za šta je Mihajlo Pupin dobio Pulicerovu nagradu?",
       "odgovori": [
         "Za autobiografiju „Od pašnjaka do naučenjaka“",
-        "Za otkriće X-zraka",
+        "Za otkriće X-zraka (rendgenskih zraka) u Americi",
         "Za teoriju relativnosti",
         "Za izum radija"
       ],
@@ -1443,7 +1443,7 @@
       "pitanje": "Šta je Milutin Milanković izračunao?",
       "odgovori": [
         "Kako promene Zemljine putanje izazivaju ledena doba",
-        "Brzinu svetlosti",
+        "Brzinu svetlosti u vakuumu i u vodi, pomoću ogledala i točka",
         "Masu Zemlje",
         "Starost Meseca"
       ],
@@ -1479,7 +1479,7 @@
       "pitanje": "Zašto termos-boca dugo čuva čaj toplim?",
       "odgovori": [
         "Između zidova je vakuum, koji skoro ne provodi toplotu",
-        "Ima grejač",
+        "Ima mali grejač u dnu koji se puni dok je čaj vreo, pa ga posle greje",
         "Napravljen je od leda",
         "Ima magnet"
       ],
@@ -1491,7 +1491,7 @@
       "pitanje": "Zašto je pustinja danju vrela, a noću hladna?",
       "odgovori": [
         "Suvi vazduh bez oblaka ne zadržava toplotu",
-        "Zbog vetra",
+        "Zbog jakog i vrelog vetra koji duva i danju i noću",
         "Zbog peska koji svetli",
         "Zato što je bliže Suncu"
       ],
@@ -1503,9 +1503,9 @@
       "pitanje": "Kako se zove uređaj koji pretvara svetlost u struju?",
       "odgovori": [
         "Solarna ćelija (fotonaponska)",
-        "Generator na paru",
-        "Transformator",
-        "Akumulator"
+        "Generator na paru u termoelektrani",
+        "Transformator koji menja napon struje",
+        "Akumulator koji čuva struju u automobilu"
       ],
       "zanimljivost": "Solarne ćelije rade na fotoelektričnom efektu – baš za njegovo objašnjenje Ajnštajn je dobio Nobelovu nagradu.",
       "rec": "ćelija"
@@ -1515,9 +1515,9 @@
       "pitanje": "Šta radi transformator?",
       "odgovori": [
         "Menja (povećava ili smanjuje) napon naizmenične struje",
-        "Pravi struju od vode",
-        "Skladišti struju",
-        "Pretvara struju u svetlost"
+        "Pravi električnu struju od vode koja teče kroz njega u elektrani",
+        "Skladišti struju kao velika baterija, pa je daje kad zatreba gradu",
+        "Pretvara struju u svetlost, kao velika sijalica na dalekovodu"
       ],
       "zanimljivost": "Struja se dalekovodima prenosi pod visokim naponom da bi se manje gubila, a transformatori je pred kućama spuštaju na 230 V. To je deo Teslinog sistema.",
       "rec": "napon"

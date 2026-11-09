@@ -30,9 +30,9 @@
       },
       "odgovori": [
         "Ugljen-dioksid",
-        "Kiseonik",
-        "Azot",
-        "Vodonik"
+        "Kiseonik (O₂)",
+        "Azot iz vazduha",
+        "Vodonik (najlakši gas)"
       ],
       "zanimljivost": "Molekul CO₂ je potpuno prav (linearan): O=C=O. Zaleđen ugljen-dioksid zove se „suvi led“ – na −78 °C ne topi se u tečnost nego odmah prelazi u gas (sublimuje).",
       "rec": "ugljen"
@@ -78,9 +78,9 @@
       },
       "odgovori": [
         "Kuhinjska so (NaCl)",
-        "Dijamant",
-        "Led",
-        "Šećer"
+        "Dijamant (čist ugljenik)",
+        "Led (smrznuta voda, H₂O)",
+        "Šećer (kristal saharoze)"
       ],
       "zanimljivost": "Natrijum je metal koji eksplodira u vodi, a hlor je otrovan gas – a zajedno daju so koju jedemo svaki dan! Zato su kristali soli savršene male kocke: tako su poređani joni Na⁺ i Cl⁻.",
       "rec": "natrijum"
@@ -468,9 +468,9 @@
       "pitanje": "Kako se zove smeša u kojoj se sastojci ne mogu golim okom razlikovati, kao šećer rastvoren u vodi?",
       "odgovori": [
         "Homogena smeša (rastvor)",
-        "Heterogena smeša",
-        "Hemijski element",
-        "Jedinjenje"
+        "Heterogena smeša (vidljivi delovi)",
+        "Hemijski element (jedna vrsta atoma)",
+        "Jedinjenje (stalan hemijski sastav)"
       ],
       "zanimljivost": "Rastvor šećera može da se razdvoji isparavanjem vode. A mleko izgleda homogeno, ali pod mikroskopom se vide kapljice masti – ono je zapravo koloidna smeša.",
       "rec": "smeša"
@@ -504,7 +504,7 @@
       "pitanje": "Koji gas nastaje kada se soda bikarbona pomeša sa sirćetom (ono „penušanje“)?",
       "odgovori": [
         "Ugljen-dioksid",
-        "Kiseonik",
+        "Kiseonik (O₂) iz vazduha",
         "Vodonik",
         "Hlor"
       ],
@@ -528,9 +528,9 @@
       "pitanje": "Koji je element obeležen simbolom Na?",
       "odgovori": [
         "Natrijum",
-        "Azot",
-        "Neon",
-        "Nikl"
+        "Azot (Nitrogen)",
+        "Neon (plemeniti gas)",
+        "Nikl (metal)"
       ],
       "zanimljivost": "Na dolazi od latinskog „natrium“. Azot je N, neon Ne, a nikl Ni. Uličnu rasvetu narandžaste boje daju baš natrijumove lampe.",
       "rec": "natrijum"
@@ -556,9 +556,9 @@
       },
       "odgovori": [
         "Vodonik-peroksid (hidrogen)",
-        "Voda",
-        "Ozon",
-        "Sona kiselina"
+        "Obična pijaća voda iz česme (H₂O)",
+        "Ozon (molekul od tri atoma kiseonika)",
+        "Sona (hlorovodonična) kiselina"
       ],
       "zanimljivost": "Kada se hidrogen sipa na ranu, peni se zato što ga enzim katalaza iz naših ćelija brzo razlaže na vodu i kiseonik – mehurići su upravo kiseonik.",
       "rec": "peroksid"
@@ -652,9 +652,9 @@
       "pitanje": "Šta je potrebno za gorenje?",
       "odgovori": [
         "Gorivo, kiseonik i dovoljna temperatura",
-        "Samo voda",
-        "Samo vetar",
-        "Samo ugljen-dioksid"
+        "Samo voda i malo vlage u vazduhu",
+        "Samo jak vetar koji raspiruje plamen",
+        "Samo ugljen-dioksid koji se lagano diže uvis"
       ],
       "zanimljivost": "To je „trougao gorenja“. Vatra se gasi uklanjanjem bar jednog – na primer, prekrivanjem ćebetom (bez kiseonika) ili vodom (hlađenje).",
       "rec": "gorivo"
@@ -688,9 +688,9 @@
       "pitanje": "Šta je smeša?",
       "odgovori": [
         "Dve ili više supstanci pomešanih bez hemijske promene",
-        "Čist element",
-        "Jedan molekul",
-        "Jedinjenje sa stalnim sastavom"
+        "Čist element koji se sastoji od atoma iste vrste",
+        "Jedan molekul nastao spajanjem dva ili više atoma istog elementa",
+        "Jedinjenje sa uvek stalnim sastavom i stalnim osobinama"
       ],
       "zanimljivost": "Vazduh, morska voda i musli su smeše. Sastojci smeše mogu se razdvojiti fizičkim postupcima.",
       "rec": "smeša"
@@ -760,9 +760,9 @@
       "pitanje": "Koja kiselina se nalazi u našem želucu?",
       "odgovori": [
         "Sona (hlorovodonična)",
-        "Sirćetna",
-        "Sumporna",
-        "Azotna"
+        "Sirćetna (iz kuhinjskog sirćeta)",
+        "Sumporna (iz akumulatora)",
+        "Azotna (iz đubriva)"
       ],
       "zanimljivost": "Želudačna kiselina ubija bakterije iz hrane i pomaže varenje belančevina. Zidove želuca štiti sloj sluzi.",
       "rec": "želudac"
@@ -820,9 +820,9 @@
       "pitanje": "Šta su izotopi?",
       "odgovori": [
         "Atomi istog elementa sa različitim brojem neutrona",
-        "Različiti elementi iste mase",
-        "Molekuli od dva atoma",
-        "Joni metala"
+        "Različiti elementi koji imaju potpuno istu masu atoma",
+        "Molekuli koji se sastoje od samo dva ista atoma kiseonika",
+        "Joni metala koji imaju pozitivno naelektrisanje u vodi"
       ],
       "zanimljivost": "Ugljenik-14 je izotop ugljenika koji se koristi za određivanje starosti fosila i arheoloških nalaza – „metoda radioaktivnog ugljenika“.",
       "rec": "izotop"
@@ -964,9 +964,9 @@
       "pitanje": "Kako se dokazuje kiseonik?",
       "odgovori": [
         "Tinjajuća treščica se ponovo razgori",
-        "Krečna voda se zamuti",
-        "Plamen se ugasi",
-        "Lakmus poplavi"
+        "Krečna voda se zamuti i postane mlečna",
+        "Plamen sveće se odmah ugasi u tom gasu",
+        "Lakmus papir poplavi kada se umoči u gas"
       ],
       "zanimljivost": "Kiseonik ne gori sam, ali pomaže gorenje – u čistom kiseoniku i usijano gvožđe gori sa varnicama.",
       "rec": "treščica"
@@ -976,9 +976,9 @@
       "pitanje": "Šta je destilacija?",
       "odgovori": [
         "Razdvajanje tečnosti isparavanjem i ponovnim hlađenjem pare",
-        "Filtriranje kroz papir",
-        "Mešanje dve tečnosti",
-        "Zamrzavanje vode"
+        "Filtriranje smeše kroz filter-papir da bi se odvojio talog od tečnosti",
+        "Mešanje dve tečnosti dok ne nastane potpuno nova supstanca drugih osobina",
+        "Zamrzavanje vode u frižideru da bi se iz nje izdvojile sve rastvorene soli"
       ],
       "zanimljivost": "Destilovana voda se koristi u peglama i laboratorijama jer nema rastvorenih minerala. Destilacijom se razdvajaju i sastojci nafte.",
       "rec": "destilacija"
@@ -988,8 +988,8 @@
       "pitanje": "Šta je hromatografija?",
       "odgovori": [
         "Razdvajanje sastojaka smeše po brzini kojom putuju kroz papir ili drugu sredinu",
-        "Merenje temperature",
-        "Bojenje tkanine",
+        "Merenje temperature tečnosti pomoću papira koji menja boju kada se zagreje ili ohladi",
+        "Bojenje tkanine prirodnim bojama dobijenim iz biljaka, kore drveta i korena različitih biljaka",
         "Vrsta mikroskopa"
       ],
       "zanimljivost": "Ogled: nacrtaj flomasterom tačku na papiru i umoči kraj u vodu – videćeš da se crna boja razdvaja na više boja!",
@@ -1060,9 +1060,9 @@
       "pitanje": "Koji metal se koristi za limenke za sokove, jer je lak i ne rđa?",
       "odgovori": [
         "Aluminijum",
-        "Gvožđe",
-        "Olovo",
-        "Bakar"
+        "Gvožđe (čelik)",
+        "Olovo (teški metal)",
+        "Bakar (crveni metal)"
       ],
       "zanimljivost": "U 19. veku aluminijum je bio skuplji od zlata, jer se teško dobijao. Napoleon III je za najvažnije goste imao aluminijumski pribor za jelo!",
       "rec": "aluminijum"
@@ -1072,9 +1072,9 @@
       "pitanje": "Zašto se zlato toliko ceni i koristi za nakit?",
       "odgovori": [
         "Ne reaguje sa vazduhom i vodom, pa zauvek ostaje sjajno",
-        "Najtvrđi je metal",
-        "Najlakši je metal",
-        "Magnetno je"
+        "Najtvrđi je metal, pa se nakit od zlata nikada ne ogrebe",
+        "Najlakši je metal, pa je nakit od zlata prijatan za nošenje",
+        "Magnetno je, pa se nakit od zlata lako kači i drži na koži"
       ],
       "zanimljivost": "Zlato je toliko kovno da se od jednog grama može izvući žica duga kilometrima ili napraviti listić tanji od papira.",
       "rec": "zlato"
@@ -1084,9 +1084,9 @@
       "pitanje": "Šta je ozonski omotač?",
       "odgovori": [
         "Sloj atmosfere bogat ozonom (O₃) koji upija UV zračenje",
-        "Sloj oblaka",
-        "Sloj leda",
-        "Najniži sloj atmosfere"
+        "Sloj oblaka koji zadržava toplotu i stvara kišu nad gradovima",
+        "Sloj leda na vrhu atmosfere koji odbija sunčevu svetlost nazad",
+        "Najniži sloj atmosfere u kome živimo i u kome nastaju oblaci"
       ],
       "zanimljivost": "Ozonska rupa iznad Antarktika nastala je zbog freona iz sprejeva i frižidera. Posle zabrane freona 1987. ona se polako smanjuje.",
       "rec": "ozon"
@@ -1096,9 +1096,9 @@
       "pitanje": "Koji gas je najzaslužniji za efekat staklene bašte, koji izaziva čovek?",
       "odgovori": [
         "Ugljen-dioksid",
-        "Kiseonik",
-        "Azot",
-        "Helijum"
+        "Kiseonik iz vazduha",
+        "Azot (N₂)",
+        "Helijum (plemeniti gas)"
       ],
       "zanimljivost": "Ugljen-dioksid zadržava toplotu kao staklo u stakleniku. Bez prirodnog efekta staklene bašte Zemlja bi bila hladna oko −18 °C, ali previše tih gasova izaziva globalno zagrevanje.",
       "rec": "ugljen"
@@ -1120,7 +1120,7 @@
       "pitanje": "Šta je katalizator?",
       "odgovori": [
         "Supstanca koja ubrzava hemijsku reakciju, a sama se ne troši",
-        "Vrsta goriva",
+        "Vrsta goriva koje se dodaje benzinu da bi automobil bio brži i jači",
         "Kiselina iz baterije",
         "Proizvod gorenja"
       ],
@@ -1156,9 +1156,9 @@
       "pitanje": "Kakav je ukus baza (na primer sapuna)?",
       "odgovori": [
         "Gorak i klizav na dodir",
-        "Sladak",
-        "Kiseo",
-        "Slan"
+        "Sladak i lepljiv, kao šećer",
+        "Kiseo i oštar, kao limun",
+        "Slan i peckav, kao morska so"
       ],
       "zanimljivost": "Baze su na dodir klizave. Jake baze, kao kaustična soda, mogu teško da opeku kožu – nikada ih ne dodiruj!",
       "rec": "sapun"
@@ -1288,8 +1288,8 @@
       "pitanje": "Šta je mol u hemiji?",
       "odgovori": [
         "Količina supstance sa oko 6 · 10²³ čestica",
-        "Jedinica za temperaturu",
-        "Molekul vode",
+        "Jedinica za merenje temperature tečnosti i gasova",
+        "Jedan molekul vode koji ima dva atoma vodonika i kiseonik",
         "Vrsta kiseline"
       ],
       "zanimljivost": "To je Avogadrov broj. Kada bi imao mol zrna peska, njima bi mogla da se pokrije cela Srbija u sloju debelom više od kilometra!",
@@ -1300,9 +1300,9 @@
       "pitanje": "Koja supstanca se u istoriji koristila kao balzam za mumije i dala ime „bitumenu“?",
       "odgovori": [
         "Asfalt (bitumen)",
-        "Med",
-        "So",
-        "Šećer"
+        "Med (pčelinji, zgusnut)",
+        "So (morska, kamena)",
+        "Šećer (od trske)"
       ],
       "zanimljivost": "Egipćani su za balzamovanje koristili so natron, smole i ponekad bitumen. Persijska reč „mumija“ zapravo je značila bitumen!",
       "rec": "asfalt"
@@ -1324,9 +1324,9 @@
       "pitanje": "Šta je amalgam?",
       "odgovori": [
         "Legura žive sa drugim metalom",
-        "Vrsta kiseline",
-        "Gasna smeša",
-        "Plastika"
+        "Vrsta jake kiseline za čišćenje",
+        "Gasna smeša za balone",
+        "Vrsta tvrde plastike za igračke"
       ],
       "zanimljivost": "Zubne plombe „srebrne“ boje su amalgam žive, srebra, kalaja i bakra. Danas se sve češće koriste bele, kompozitne plombe.",
       "rec": "amalgam"
@@ -1336,7 +1336,7 @@
       "pitanje": "Koji gas daje miris pokvarenim jajima?",
       "odgovori": [
         "Vodonik-sulfid",
-        "Metan",
+        "Metan (iz močvara)",
         "Amonijak",
         "Hlor"
       ],
@@ -1348,9 +1348,9 @@
       "pitanje": "Koji gas, dodat kao miris, prepoznajemo kao „miris gasa“ iz šporeta?",
       "odgovori": [
         "Merkaptani (jedinjenja sumpora)",
-        "Metan",
-        "Propan",
-        "Kiseonik"
+        "Metan (glavni sastojak prirodnog gasa)",
+        "Propan (gas iz plinske boce za roštilj)",
+        "Kiseonik (gas koji podržava gorenje plamena)"
       ],
       "zanimljivost": "Sam zemni gas nema miris. Dodaju mu se jedinjenja sumpora jakog mirisa, da bi se curenje odmah osetilo – to spasava živote.",
       "rec": "miris"
@@ -1360,9 +1360,9 @@
       "pitanje": "Šta je polimer?",
       "odgovori": [
         "Veliki molekul sastavljen od mnogo ponovljenih manjih delova",
-        "Jedan atom",
-        "Vrsta kiseline",
-        "Metalna legura"
+        "Jedan veoma veliki atom sa mnogo protona, neutrona i elektrona",
+        "Vrsta jake kiseline koja razara plastiku, gumu i druge materijale",
+        "Metalna legura od mnogo različitih metala, kao što su bronza i mesing"
       ],
       "zanimljivost": "Plastika, guma, celuloza, skrob, pa i DNK su polimeri. Najlon je bio prvi potpuno sintetički polimer od koga su se pravila vlakna (1935).",
       "rec": "polimer"
@@ -1432,9 +1432,9 @@
       "pitanje": "Šta znači oznaka „E“ uz broj (npr. E330) na pakovanju hrane?",
       "odgovori": [
         "Oznaka dodatka hrani odobrenog u Evropi",
-        "Broj kalorija",
-        "Rok trajanja",
-        "Zemlja porekla"
+        "Broj kalorija u 100 grama proizvoda",
+        "Rok trajanja proizvoda izražen u danima od dana proizvodnje",
+        "Zemlja porekla proizvoda (slovo E znači Evropa)"
       ],
       "zanimljivost": "E330 je limunska kiselina, a E300 vitamin C. Mnogi E-brojevi su sasvim prirodne materije, ali ih je dobro znati.",
       "rec": "oznaka"
@@ -1456,9 +1456,9 @@
       "pitanje": "Zašto jabuka potamni kada se iseče?",
       "odgovori": [
         "Sastojci jabuke reaguju sa kiseonikom iz vazduha",
-        "Zbog bakterija",
-        "Zbog svetlosti",
-        "Zato što se suši"
+        "Zbog bakterija iz vazduha koje odmah počnu da je razgrađuju",
+        "Zbog jake svetlosti koja izbeljuje i zatim zatamnjuje voće",
+        "Zato što se brzo suši, pa voda isparava iz isečene površine"
       ],
       "zanimljivost": "Enzimi jabuke, u dodiru sa kiseonikom, stvaraju braon materije. Ako je pokapaš limunovim sokom, sporije će tamneti – vitamin C usporava tu reakciju.",
       "rec": "jabuka"
@@ -1492,9 +1492,9 @@
       "pitanje": "Šta je ulje u vodi?",
       "odgovori": [
         "Ne meša se sa vodom i pluta na površini",
-        "Rastvara se potpuno",
-        "Tone na dno",
-        "Pretvara se u gas"
+        "Rastvara se potpuno, isto kao šećer u toplom čaju",
+        "Tone na dno suda i ostaje ispod vode",
+        "Pretvara se u gas čim dodirne hladnu vodu"
       ],
       "zanimljivost": "Ulje je ređe od vode i ne meša se sa njom. Sapun i deterdženti pomažu da se masnoća „spoji“ sa vodom i spere.",
       "rec": "ulje"

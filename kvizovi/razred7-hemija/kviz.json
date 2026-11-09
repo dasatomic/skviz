@@ -11,9 +11,9 @@
       "pitanje": "Šta proučava hemija?",
       "odgovori": [
         "Supstance, njihov sastav, svojstva i promene",
-        "Kretanje tela",
-        "Živa bića",
-        "Istoriju"
+        "Kretanje tela, sile i energiju u celoj prirodi",
+        "Živa bića, njihovu građu, razvoj i način života",
+        "Istoriju naroda, gradova i nastanak prvih pisama"
       ],
       "zanimljivost": "Hemija je svuda oko nas – u kuhinji, u lekovima, u bojama i u našem telu.",
       "rec": "hemija"
@@ -23,8 +23,8 @@
       "pitanje": "Šta su čiste supstance?",
       "odgovori": [
         "Supstance stalnog sastava – elementi i jedinjenja",
-        "Smeše više supstanci",
-        "Samo voda",
+        "Smeše više supstanci koje se lako razdvajaju filtriranjem",
+        "Samo destilovana voda bez ikakvih primesa i rastvorenih soli",
         "Samo metali"
       ],
       "zanimljivost": "Kuhinjska so (NaCl) i destilovana voda su čiste supstance. Vazduh i morska voda su smeše.",
@@ -35,7 +35,7 @@
       "pitanje": "Šta je hemijski element?",
       "odgovori": [
         "Čista supstanca sastavljena od atoma iste vrste",
-        "Smeša dve supstance",
+        "Smeša dve ili više supstanci koje se mogu razdvojiti",
         "Bilo koja tečnost",
         "Molekul vode"
       ],
@@ -47,9 +47,9 @@
       "pitanje": "Šta je hemijsko jedinjenje?",
       "odgovori": [
         "Čista supstanca od dva ili više različitih elemenata, hemijski vezanih",
-        "Smeša elemenata",
-        "Jedan atom",
-        "Rastvor soli u vodi"
+        "Smeša dva ili više elemenata koji se mogu razdvojiti fizičkim postupcima, npr. magnetom",
+        "Jedan atom nekog elementa koji se ne može razložiti na prostije supstance ni na koji način",
+        "Rastvor soli u vodi, u kome je so ravnomerno raspoređena, a može se izdvojiti isparavanjem"
       ],
       "zanimljivost": "Jedinjenje ima sasvim nova svojstva: od otrovnog hlora i burnog natrijuma nastaje bezopasna kuhinjska so.",
       "rec": "jedinjenje"
@@ -71,9 +71,9 @@
       "pitanje": "Čemu služi avan sa tučkom u laboratoriji?",
       "odgovori": [
         "Za usitnjavanje čvrstih supstanci",
-        "Za zagrevanje",
-        "Za merenje mase",
-        "Za filtriranje"
+        "Za zagrevanje tečnosti na plamenu gorionika",
+        "Za merenje mase supstanci u gramima",
+        "Za filtriranje smeše kroz filter-papir"
       ],
       "zanimljivost": "I u kuhinji se koristi avan – za usitnjavanje začina. Laboratorijski je obično od porcelana.",
       "rec": "avan"
@@ -83,9 +83,9 @@
       "pitanje": "Šta je od navedenog FIZIČKO svojstvo supstance?",
       "odgovori": [
         "Boja, miris i temperatura topljenja",
-        "Zapaljivost",
-        "Reakcija sa kiselinom",
-        "Rđanje"
+        "Zapaljivost (gori na vazduhu)",
+        "Reakcija sa kiselinom uz mnogo mehurića gasa",
+        "Rđanje gvožđa na vlažnom vazduhu"
       ],
       "zanimljivost": "Hemijska svojstva se vide tek kada supstanca učestvuje u hemijskoj promeni – na primer da li gori ili rđa.",
       "rec": "svojstvo"
@@ -167,9 +167,9 @@
       "pitanje": "Šta je maseni broj atoma?",
       "odgovori": [
         "Zbir protona i neutrona",
-        "Broj elektrona",
-        "Broj protona",
-        "Broj nivoa"
+        "Broj elektrona u omotaču",
+        "Broj protona u samom jezgru",
+        "Broj energetskih nivoa atoma"
       ],
       "zanimljivost": "Ugljenik-12 ima 6 protona i 6 neutrona. Ugljenik-14 ima 6 protona i 8 neutrona – to je izotop.",
       "rec": "neutron"
@@ -239,9 +239,9 @@
       "pitanje": "Šta je zajedničko elementima jedne grupe?",
       "odgovori": [
         "Isti broj elektrona u poslednjem energetskom nivou",
-        "Ista masa",
-        "Isti broj neutrona",
-        "Ista boja"
+        "Ista masa atoma, izražena u jedinicama atomske mase",
+        "Isti broj neutrona u jezgru atoma svakog od tih elemenata",
+        "Ista boja i sjaj, pa ih je lako prepoznati u prirodi"
       ],
       "zanimljivost": "Zato se litijum, natrijum i kalijum ponašaju slično – svi imaju po jedan elektron u spoljašnjem nivou.",
       "rec": "grupa"
@@ -251,9 +251,9 @@
       "pitanje": "Zbog čega plemeniti gasovi skoro ne reaguju sa drugim elementima?",
       "odgovori": [
         "Imaju popunjen spoljašnji energetski nivo",
-        "Previše su teški",
-        "Nemaju elektrone",
-        "Uvek su tečni"
+        "Previše su teški, pa ne mogu da se pomeraju",
+        "Nemaju elektrone, pa nemaju čime da se vežu",
+        "Uvek su tečni, pa se ne mešaju sa gasovima"
       ],
       "zanimljivost": "Argon se zbog toga koristi u sijalicama i pri zavarivanju – štiti metal od kiseonika iz vazduha.",
       "rec": "stabilnost"
@@ -335,9 +335,9 @@
       "pitanje": "Šta znači broj „2“ u formuli H₂O?",
       "odgovori": [
         "Molekul ima dva atoma vodonika",
-        "Dva molekula vode",
-        "Dva atoma kiseonika",
-        "Voda ključa na 2 °C"
+        "Dva molekula vode u jednoj kapi",
+        "Dva atoma kiseonika u molekulu vode",
+        "Voda ključa na 2 °C na vrhu planine"
       ],
       "zanimljivost": "Mali broj ispod i desno od simbola zove se indeks. Broj ispred formule (koeficijent) pokazuje broj molekula: 2H₂O su dva molekula vode.",
       "rec": "molekul"
@@ -347,9 +347,9 @@
       "pitanje": "Šta je valenca?",
       "odgovori": [
         "Broj veza koje atom može da gradi sa drugim atomima",
-        "Masa atoma",
-        "Broj protona",
-        "Gustina supstance"
+        "Masa atoma izražena u jedinicama atomske mase (u) i gramima",
+        "Broj protona u jezgru atoma, što je isto što i njegov redni broj",
+        "Gustina supstance izražena u gramima po kubnom centimetru"
       ],
       "zanimljivost": "Vodonik je uvek jednovalentan, a kiseonik najčešće dvovalentan. Na osnovu valence pišu se formule jedinjenja.",
       "rec": "valenca"
@@ -431,9 +431,9 @@
       "pitanje": "Šta je zasićen rastvor?",
       "odgovori": [
         "Rastvor u kome se na datoj temperaturi više ne može rastvoriti ista supstanca",
-        "Rastvor sa malo soli",
-        "Vrlo topao rastvor",
-        "Rastvor koji je ispario"
+        "Rastvor u kome ima vrlo malo soli, pa se ona još lako rastvara na svakoj temperaturi",
+        "Veoma topao rastvor, jer se na visokoj temperaturi supstance uopšte ne mogu rastvarati",
+        "Rastvor koji je delimično ispario, pa je na dnu suda ostala samo čvrsta supstanca"
       ],
       "zanimljivost": "Ako se zasićen rastvor zagreje, obično može da primi još supstance. Pri hlađenju, višak se izdvaja u obliku kristala.",
       "rec": "rastvor"
@@ -443,9 +443,9 @@
       "pitanje": "Kako temperatura obično utiče na rastvorljivost čvrstih supstanci u vodi?",
       "odgovori": [
         "Sa porastom temperature rastvorljivost raste",
-        "Ne utiče",
-        "Rastvorljivost opada",
-        "Supstanca se pretvara u gas"
+        "Ne utiče – rastvorljivost je ista na svakoj temperaturi",
+        "Sa porastom temperature rastvorljivost čvrstih tela opada",
+        "Supstanca se pri zagrevanju pretvara u gas i nestaje iz vode"
       ],
       "zanimljivost": "Gasovi se, obrnuto, bolje rastvaraju u hladnoj vodi – zato topao sok brže gubi mehuriće.",
       "rec": "temperatura"
@@ -491,9 +491,9 @@
       "pitanje": "Šta je dekantovanje?",
       "odgovori": [
         "Pažljivo odlivanje tečnosti iznad taloga",
-        "Isparavanje vode",
-        "Zagrevanje do ključanja",
-        "Mešanje dve tečnosti"
+        "Isparavanje vode iz rastvora soli",
+        "Zagrevanje tečnosti sve do tačke ključanja",
+        "Mešanje dve tečnosti dok se ne spoje u jednu"
       ],
       "zanimljivost": "Kada se mutna voda ostavi da stoji, čestice se istalože na dno. Zatim se bistra voda pažljivo odlije – to je dekantovanje.",
       "rec": "dekantacija"
@@ -503,8 +503,8 @@
       "pitanje": "Kako se zove odvajanje dve tečnosti koje se ne mešaju (npr. ulje i voda)?",
       "odgovori": [
         "Pomoću levka za odvajanje",
-        "Destilacijom",
-        "Filtriranjem",
+        "Destilacijom (isparavanjem)",
+        "Filtriranjem kroz filter-papir u levku",
         "Kristalizacijom"
       ],
       "zanimljivost": "Levak za odvajanje ima slavinu na dnu: teža tečnost (voda) iscuri prva, a ulje ostane.",
@@ -527,9 +527,9 @@
       "pitanje": "Šta tvrdi zakon o održanju mase?",
       "odgovori": [
         "Ukupna masa supstanci pre i posle hemijske reakcije je ista",
-        "Masa se uvek povećava",
-        "Masa se uvek smanjuje",
-        "Gasovi nemaju masu"
+        "Masa se uvek povećava, jer u reakciji nastaje nova supstanca",
+        "Masa se uvek smanjuje, jer se deo supstance pretvori u energiju",
+        "Gasovi nemaju masu, pa se zbog njih masa posle reakcije menja"
       ],
       "zanimljivost": "Zakon je postavio Lavoazje. Ako drvo izgori, pepeo je lakši – ali je masa gasova koji su otišli u vazduh tačno nadoknađuje razliku.",
       "rec": "masa"
@@ -599,9 +599,9 @@
       "pitanje": "Šta tvrdi zakon stalnih odnosa masa?",
       "odgovori": [
         "Elementi se u jedinjenju uvek spajaju u istom odnosu masa",
-        "Masa se ne menja",
-        "Svi gasovi imaju istu masu",
-        "Gustina je stalna"
+        "Masa se nikada ne menja ni u jednoj hemijskoj reakciji ili promeni",
+        "Svi gasovi imaju potpuno istu masu na istoj temperaturi i pritisku",
+        "Gustina svake supstance je stalna, bez obzira na temperaturu"
       ],
       "zanimljivost": "U vodi je odnos mase vodonika i kiseonika uvek 1 : 8, bez obzira da li je voda iz reke ili sa Antarktika.",
       "rec": "zakon"

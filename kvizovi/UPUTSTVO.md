@@ -36,7 +36,7 @@ kvizovi/
 
 | polje | značenje |
 |---|---|
-| `odgovori` | **tačno 4**, **prvi je uvek tačan** – igra ih sama meša |
+| `odgovori` | **tačno 4**, **prvi je uvek tačan** – igra ih sama meša ; netačni odgovori treba da budu uverljivi i **slične dužine kao tačan** (tačan odgovor ne sme da se prepozna po dužini ili po tome što je jedini opisan) |
 | `tezina` | 1 = lako, 2 = srednje, 3 = teško (vredi ×1,5 poena) |
 | `zanimljivost` | prikazuje se posle odgovora („💡 Da li si znao?“) – treba da bude nešto *neočigledno* |
 | `rec` | ključni pojam pitanja (3–11 slova, idealno 5–8, latinicom). U krugu „Najduža reč“ slova se biraju tako da se može složiti pojam iz nekog od odigranih pitanja – da se gradivo još jednom ponovi. Ne mora biti tačan odgovor, ali treba da je srodan (npr. za „Ko je izumeo gromobran?“ → `gromobran`). Vlastita imena su u redu (`pupin`, `mileševa`). Ako izostane, bira se automatski iz odgovora, pitanja i zanimljivosti. |

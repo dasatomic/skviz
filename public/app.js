@@ -20,27 +20,8 @@ const sacuvajJa = () => { if (!EKRAN) ls.set('ja', ja); };
 // ───── pismo: ćirilica (podrazumevano) ili latinica – važi za ceo prikaz ─────
 // Kod i podaci ostaju na latinici; ceo ekran (tekst čvorovi, placeholder/title) se preslovljava u hodu.
 let PISMO = ls.get('pismo', 'cirilica') === 'latinica' ? 'latinica' : 'cirilica';
-const CIR = { a: 'а', b: 'б', v: 'в', g: 'г', d: 'д', đ: 'ђ', e: 'е', ž: 'ж', z: 'з', i: 'и', j: 'ј', k: 'к', l: 'л', m: 'м', n: 'н', o: 'о', p: 'п',
-  r: 'р', s: 'с', t: 'т', ć: 'ћ', u: 'у', f: 'ф', h: 'х', c: 'ц', č: 'ч', š: 'ш' };
 const NE_DIRAJ = 'script,style,textarea,input,[data-lat],.formula,.formula-mala,.kod-sobe,.adresa';
-function recUCir(t) {
-  // ostavi: strane reči (q, w, x, y), formule i oznake sa ciframa (H2O, CO2), „NaCl“, „iPhone“
-  if (/[qwxyQWXY]/.test(t) || (/\d/.test(t) && /[A-Za-z]/.test(t)) || /[a-zčćžšđ][A-ZČĆŽŠĐ]/.test(t)) return t;
-  const m = t.toLowerCase();
-  const bezNj = /^(konjug|konjunk|injek|vanjezi|tanjug)/.test(m), bezDz = /^(nad|pod)ž/.test(m);
-  let out = '';
-  for (let i = 0; i < t.length; i++) {
-    const c = m[i], d = m[i + 1], vel = t[i] !== c;
-    let r;
-    if (c === 'l' && d === 'j') { r = 'љ'; i++; }
-    else if (c === 'n' && d === 'j' && !bezNj) { r = 'њ'; i++; }
-    else if (c === 'd' && d === 'ž' && !bezDz) { r = 'џ'; i++; }
-    else r = CIR[c] ?? t[i];
-    out += vel ? r.toUpperCase() : r;
-  }
-  return out;
-}
-const tr = (t) => (PISMO === 'cirilica' ? String(t).replace(/[A-Za-zČĆŽŠĐčćžšđ0-9]+/g, recUCir) : String(t));
+const tr = (t) => (PISMO === 'cirilica' ? window.Pismo.uCirilicu(t) : String(t)); // pravila u pismo.js
 function prevedi(koren) {
   if (PISMO !== 'cirilica') return;
   if (koren.nodeType === 3) { if (!koren.parentElement?.closest(NE_DIRAJ)) { const n = tr(koren.data); if (n !== koren.data) koren.data = n; } return; }

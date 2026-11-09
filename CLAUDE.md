@@ -12,6 +12,7 @@ Ceo interfejs, pitanja i komentari u kodu su na **srpskom (latinica)**. Igrači 
 - `server.js` – HTTP + Server-Sent Events (`/api/dogadjaji`), akcije preko `POST /api/akcija`.
 - `lib/soba.js` – tok igre: lobi → uvod → pitanje/otkrivanje ×N → tabela → reči ×N → tabela → kraj.
 - Pismo: podrazumevano ćirilica za ceo prikaz (`podesavanja.pismo`, na početnom ekranu izbor po uređaju). Kod i `kviz.json` ostaju na latinici – `public/app.js` preslovljava DOM u hodu (`tr`, `prevedi`, MutationObserver); izuzeci: `[data-lat]`, `.formula`, kod sobe, adresa, strane reči (q/w/x/y) i oznake sa ciframa (H2O).
+- Pravila preslovljavanja su u `public/pismo.js` (rimski brojevi, formule, jedinice, hemijski simboli, krvne grupe, strani navodi ostaju latinicom); provera nad svim pitanjima: `node -e "require('./public/pismo.js').uCirilicu('…')"`.
 - Lobi vođe u dva koraka: predmet → razred/lekcija + podešavanja + „Pokreni“ (`korakLobija`).
 - Soba ima najviše 40 igrača (`MAKS_IGRACA`). Klijent ima dva prikaza: do 5 igrača avatari sa imenima, preko 5 sažeto (brojač „N / M odgovorilo“, mali avatari, skraćene liste poena – `mnogo()`, `koJeOdgovorio`, `skratiListu` u `public/app.js`).
 - `lib/kvizovi.js` – učitavanje `kvizovi/*/kviz.json`, izbor pitanja (mešavina težina, prednost neodigranim – `podaci/odigrana-pitanja.json`).
@@ -25,6 +26,7 @@ Ceo interfejs, pitanja i komentari u kodu su na **srpskom (latinica)**. Igrači 
 Format je opisan u `kvizovi/UPUTSTVO.md`. Ukratko:
 1. Napravi folder `kvizovi/<oblast-razred-tema>/` i `kviz.json` sa `naziv`, `ikona`, `boja`, `opis`, `pitanja`.
 2. Svako pitanje: `pitanje`, `odgovori` (tačno 4, **prvi je tačan**), `tezina` (1–3), `zanimljivost`, `rec` (ključni pojam 3–11 slova, idealno 5–8 – krug reči ga sakriva u slovima), opciono `mediji`.
+2a. **Netačni odgovori moraju biti uverljivi i slične dužine kao tačan** – tačan odgovor ne sme da se prepoznaje po tome što je najduži ili najdetaljniji. Statistika: `node alati/duzine-odgovora.js` (tačan je najduži u ~25% pitanja, kao slučajno).
 3. Pitanja pravi **svojim rečima** na osnovu gradiva (ne prepisuj odlomke iz knjige). Mešaj težine (~35% lako, 40% srednje, 25% teško), uz par pitanja koja bi pomučila i odrasle.
 4. `zanimljivost` = nešto neočigledno što proširuje znanje, ne ponavljanje tačnog odgovora.
 5. Kad god ima smisla, koristi interaktivne medije (molekul, telo, mapa, melodija, atom, sat, emodzi, svg).

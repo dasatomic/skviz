@@ -1511,8 +1511,8 @@
       "pitanje": "Šta je „savršen broj“, kao što je 6?",
       "odgovori": [
         "Broj jednak zbiru svojih delilaca manjih od njega",
-        "Prost broj",
-        "Broj deljiv sa 10",
+        "Prost broj, koji je deljiv samo sa 1 i sa samim sobom",
+        "Broj koji je deljiv sa 10 bez ikakvog ostatka pri deljenju",
         "Kvadrat celog broja"
       ],
       "zanimljivost": "Delioci broja 6 su 1, 2 i 3, a 1 + 2 + 3 = 6. Sledeći savršeni brojevi su 28, 496 i 8128.",
@@ -1559,9 +1559,9 @@
       "pitanje": "Šta znači da je broj iracionalan, kao π?",
       "odgovori": [
         "Ne može se zapisati kao razlomak dva cela broja",
-        "Negativan je",
-        "Veći je od 1000",
-        "Ima tačno 10 decimala"
+        "Negativan je, odnosno manji od nule na brojevnoj pravoj",
+        "Veći je od hiljadu, pa ga je teško zapisati ceo na papiru",
+        "Ima tačno deset decimala posle zareza, ni više ni manje"
       ],
       "zanimljivost": "Decimale iracionalnih brojeva se nikada ne ponavljaju u istom obrascu. Računari su izračunali π na desetine biliona decimala, i obrazac se nije pojavio.",
       "rec": "iracionalan"

@@ -104,9 +104,9 @@
       "pitanje": "Šta je ubrzanje?",
       "odgovori": [
         "Promena brzine u jedinici vremena",
-        "Pređeni put",
-        "Masa tela",
-        "Vreme kretanja"
+        "Pređeni put u jedinici vremena (metri u sekundi)",
+        "Masa tela koje se kreće veoma brzo",
+        "Ukupno vreme kretanja tela"
       ],
       "zanimljivost": "Ubrzanje pokazuje koliko se „brzo menja brzina“ – i pri kočenju i pri ubrzavanju.",
       "rec": "ubrzanje"
@@ -117,9 +117,9 @@
       "pitanje": "Koja je jedinica za ubrzanje?",
       "odgovori": [
         "Metar u sekundi na kvadrat (m/s²)",
-        "Metar u sekundi (m/s)",
-        "Njutn",
-        "Kilogram"
+        "Metar u sekundi (m/s), kao kod brzine",
+        "Njutn (N), jedinica za silu",
+        "Kilogram (kg), jedinica za masu"
       ],
       "zanimljivost": "Ubrzanje 1 m/s² znači da se brzina svake sekunde poveća za 1 m/s.",
       "rec": "jedinica",
@@ -147,9 +147,9 @@
       "pitanje": "Šta je uzrok promene brzine tela?",
       "odgovori": [
         "Sila koja deluje na telo",
-        "Boja tela",
-        "Oblik putanje",
-        "Ništa"
+        "Boja tela koje se kreće",
+        "Oblik putanje po kojoj ide",
+        "Ništa – brzina se menja sama"
       ],
       "zanimljivost": "Bez sile telo zadržava svoju brzinu – to je Prvi Njutnov zakon.",
       "rec": "sila"
@@ -199,7 +199,7 @@
       "pitanje": "Kakvo ubrzanje podnosi pilot borbenog aviona u oštrom zaokretu?",
       "odgovori": [
         "Do oko 9 g (9 puta veće od ubrzanja Zemljine teže)",
-        "Oko 0,1 g",
+        "Oko 0,1 g – u zaokretu avion usporava, pa je ubrzanje skoro nula",
         "Nikakvo",
         "Oko 100 g"
       ],
@@ -225,9 +225,9 @@
       "pitanje": "Kada telo ima ubrzanje iako mu se brojčana vrednost brzine ne menja?",
       "odgovori": [
         "Kada menja pravac kretanja, npr. u krugu",
-        "Nikada",
-        "Kada stoji",
-        "Kada pada"
+        "Nikada – bez promene brzine nema ubrzanja",
+        "Kada telo stoji potpuno mirno u mestu na kosoj ravni",
+        "Kada telo pada slobodno sa velike visine ka zemlji"
       ],
       "zanimljivost": "Automobil u krivini stalnom brzinom ima ubrzanje usmereno ka centru krivine.",
       "rec": "krivina"
@@ -255,9 +255,9 @@
       "pitanje": "Šta pokazuje strelica ubrzanja kad telo usporava?",
       "odgovori": [
         "Suprotno od smera kretanja",
-        "U smeru kretanja",
-        "Naviše",
-        "Nema strelice"
+        "U istom smeru kretanja tela",
+        "Uvek naviše, ka nebu i oblacima iznad",
+        "Nema strelice kad telo usporava"
       ],
       "zanimljivost": "Ubrzanje je vektor – ima pravac i smer, kao i sila.",
       "rec": "smer"
@@ -268,9 +268,9 @@
       "pitanje": "Gde osećamo ubrzanje u svakodnevnom životu?",
       "odgovori": [
         "Kad lift krene ili auto naglo ubrza",
-        "Kad sedimo mirno",
-        "Kad spavamo",
-        "Kad čitamo"
+        "Kad sedimo mirno na stolici u učionici",
+        "Kad spavamo u krevetu tokom cele noći",
+        "Kad čitamo knjigu sedeći na kauču u sobi"
       ],
       "zanimljivost": "Na tobogan-vozovima u zabavnim parkovima ubrzanje može dostići 4–5 g.",
       "rec": "lift"
@@ -281,9 +281,9 @@
       "pitanje": "Šta je potrebno izmeriti da bi se odredilo ubrzanje?",
       "odgovori": [
         "Promenu brzine i vreme te promene",
-        "Samo masu",
-        "Samo put",
-        "Samo silu"
+        "Samo masu tela u kilogramima i ništa više",
+        "Samo pređeni put tela u metrima ili kilometrima",
+        "Samo silu koja deluje na telo, izraženu u njutnima"
       ],
       "zanimljivost": "Mobilni telefoni imaju senzor – akcelerometar – koji meri ubrzanje i zna kako ga držiš.",
       "rec": "senzor"
@@ -402,9 +402,9 @@
       "pitanje": "Zašto je teže pogurati pun ormar nego prazan?",
       "odgovori": [
         "Veća masa – za isto ubrzanje treba veća sila",
-        "Pun ormar je manji",
-        "Prazan ima veće trenje",
-        "Isto je"
+        "Pun ormar je manji, pa ga je teže uhvatiti i gurati",
+        "Prazan ormar ima veće trenje, pa ga je lakše gurati",
+        "Isto je – masa ne utiče na to koliko je teško gurati"
       ],
       "zanimljivost": "Masa je mera inertnosti – telo veće mase se „opire“ promeni brzine.",
       "rec": "ormar"
@@ -415,7 +415,7 @@
       "pitanje": "Šta je rezultujuća sila?",
       "odgovori": [
         "Jedna sila koja ima isto dejstvo kao više sila zajedno",
-        "Najmanja sila",
+        "Najmanja sila od svih sila koje deluju na telo istovremeno",
         "Sila trenja",
         "Sila koja ne deluje"
       ],
@@ -428,9 +428,9 @@
       "pitanje": "Šta je dinamika?",
       "odgovori": [
         "Deo mehanike koji proučava kretanje i njegove uzroke (sile)",
-        "Proučavanje mirovanja",
-        "Proučavanje svetlosti",
-        "Proučavanje toplote"
+        "Proučavanje tela koja miruju i uslova njihove ravnoteže na podlozi",
+        "Proučavanje svetlosti, njenog prostiranja, odbijanja i prelamanja",
+        "Proučavanje toplote, temperature i promena agregatnog stanja tela"
       ],
       "zanimljivost": "Reč dinamika potiče od grčke reči dynamis – sila.",
       "rec": "dinamika"
@@ -454,8 +454,8 @@
       "pitanje": "Teniska i kuglaška kugla udarene istom silom – koja dobija veće ubrzanje?",
       "odgovori": [
         "Teniska, jer ima manju masu",
-        "Kuglaška",
-        "Isto",
+        "Kuglaška, jer je teža i jača",
+        "Isto, jer je sila ista za obe",
         "Nijedna"
       ],
       "zanimljivost": "Pri udarcu reketom teniska loptica dobija brzinu i preko 200 km/h.",
@@ -497,9 +497,9 @@
       "pitanje": "Zašto prazan kamion lakše kreće nego pun, iako ima isti motor?",
       "odgovori": [
         "Ima manju masu, pa ista sila daje veće ubrzanje",
-        "Ima manje točkova",
-        "Ima veće trenje",
-        "Nema razlike"
+        "Ima manje točkova koji dodiruju put, pa je trenje manje",
+        "Ima veće trenje sa putem, pa se lakše odgurne od tla",
+        "Nema razlike – prazan i pun kamion kreću potpuno isto"
       ],
       "zanimljivost": "Zato kamioni sa teretom polako ubrzavaju na semaforu.",
       "rec": "teret"
@@ -510,9 +510,9 @@
       "pitanje": "Šta je ravnomerno ubrzano kretanje?",
       "odgovori": [
         "Kretanje pri kojem se brzina povećava jednako za jednaka vremena",
-        "Kretanje stalnom brzinom",
-        "Kretanje u krug",
-        "Mirovanje"
+        "Kretanje stalnom brzinom po pravoj liniji, bez ikakve promene brzine tela",
+        "Kretanje u krug stalnom brzinom, kao kretanje kazaljke na zidnom satu",
+        "Mirovanje tela na podlozi, kada se njegov položaj uopšte ne menja"
       ],
       "zanimljivost": "Slobodno padanje (bez otpora vazduha) je ravnomerno ubrzano kretanje.",
       "rec": "ubrzano"
@@ -540,9 +540,9 @@
       "pitanje": "Kojom formulom se računa pređeni put pri ravnomerno ubrzanom kretanju iz mirovanja?",
       "odgovori": [
         "s = a·t² / 2",
-        "s = a·t",
-        "s = v·t²",
-        "s = a/t"
+        "s = a·t (bez kvadrata)",
+        "s = v·t² (puta kvadrat)",
+        "s = a/t + v (podeljeno)"
       ],
       "zanimljivost": "Put raste sa kvadratom vremena – za dvostruko više vremena telo pređe četiri puta veći put.",
       "rec": "kvadrat",
@@ -557,9 +557,9 @@
       "pitanje": "Šta je ravnomerno usporeno kretanje?",
       "odgovori": [
         "Brzina se smanjuje jednako za jednaka vremena",
-        "Brzina raste",
-        "Brzina je stalna",
-        "Telo stoji"
+        "Brzina se povećava jednako za jednaka vremena kretanja",
+        "Brzina je stalna i ista tokom celog kretanja tela",
+        "Telo stoji u mestu i ne menja svoj položaj"
       ],
       "zanimljivost": "Automobil koji ravnomerno koči do zaustavljanja kreće se ravnomerno usporeno.",
       "rec": "usporeno"
@@ -635,9 +635,9 @@
       "pitanje": "Kada voz kreće sa stanice i ravnomerno povećava brzinu, kakvo je kretanje?",
       "odgovori": [
         "Ravnomerno ubrzano",
-        "Ravnomerno",
-        "Usporeno",
-        "Kružno"
+        "Ravnomerno kretanje",
+        "Usporeno kretanje",
+        "Kružno kretanje voza"
       ],
       "zanimljivost": "Voz „Soko“ Beograd–Novi Sad dostiže brzinu do 200 km/h.",
       "rec": "voz"
@@ -791,8 +791,8 @@
       "pitanje": "Šta meri policijski radar?",
       "odgovori": [
         "Trenutnu brzinu vozila",
-        "Masu vozila",
-        "Boju vozila",
+        "Masu vozila izraženu u tonama",
+        "Boju, marku i registraciju vozila",
         "Pređeni put"
       ],
       "zanimljivost": "Radar šalje talase koji se odbijaju od automobila; promena talasa pokazuje brzinu (Doplerov efekat).",
@@ -843,7 +843,7 @@
       "pitanje": "Šta pokazuje GPS uređaj u kolima kao „prosečnu brzinu“?",
       "odgovori": [
         "Srednju brzinu za pređeni put",
-        "Najveću brzinu",
+        "Najveću brzinu tokom cele vožnje",
         "Trenutnu brzinu",
         "Ubrzanje"
       ],
@@ -856,8 +856,8 @@
       "pitanje": "Ako je srednja brzina na putu 60 km/h, da li je automobil morao nekad da vozi brže od 60 km/h?",
       "odgovori": [
         "Da, osim ako je sve vreme vozio tačno 60 km/h",
-        "Ne, nikad",
-        "Uvek je vozio sporije",
+        "Ne, nikad nije morao da vozi brže od 60 km/h na putu",
+        "Ne – uvek je vozio sporije od 60 km/h na celom putu",
         "Pitanje nema smisla"
       ],
       "zanimljivost": "Ako je negde vozio sporije (npr. stajao), morao je negde voziti brže da bi prosek bio 60.",
@@ -882,9 +882,9 @@
       "pitanje": "Kako se iz grafika s(t) kod promenljivog kretanja određuje trenutna brzina?",
       "odgovori": [
         "Po nagibu tangente na krivu u tom trenutku",
-        "Po visini grafika",
-        "Po dužini krive",
-        "Nikako"
+        "Po visini grafika u tom trenutku, izraženoj u metrima",
+        "Po ukupnoj dužini krive od početka do kraja kretanja",
+        "Nikako – iz grafika s(t) se brzina uopšte ne može odrediti"
       ],
       "zanimljivost": "Ovu ideju su razradili Njutn i Lajbnic – i tako nastao diferencijalni račun.",
       "rec": "tangenta"
@@ -895,9 +895,9 @@
       "pitanje": "Kako se zove uređaj na biciklu koji meri brzinu?",
       "odgovori": [
         "Brzinomer (kilometar-sat)",
-        "Barometar",
-        "Termometar",
-        "Dinamometar"
+        "Barometar (merač pritiska)",
+        "Termometar (merač toplote)",
+        "Dinamometar (merač sile u njutnima)"
       ],
       "zanimljivost": "Brzinomer na biciklu broji okretaje točka pomoću magneta na žbici.",
       "rec": "bicikl"
@@ -925,8 +925,8 @@
       "pitanje": "Kako izgleda grafik pređenog puta od vremena kod ravnomerno ubrzanog kretanja?",
       "odgovori": [
         "Kriva linija (parabola) koja postaje sve strmija",
-        "Prava linija",
-        "Horizontalna linija",
+        "Prava linija koja polazi iz samog koordinatnog početka",
+        "Horizontalna linija koja je paralelna sa osom vremena",
         "Krug"
       ],
       "zanimljivost": "Kriva postaje sve strmija jer telo svake sekunde prelazi sve veći put.",
@@ -1024,9 +1024,9 @@
       "pitanje": "Kako izgleda grafik ubrzanja od vremena kod ravnomerno ubrzanog kretanja?",
       "odgovori": [
         "Horizontalna linija",
-        "Kosa linija",
-        "Parabola",
-        "Krug"
+        "Kosa linija koja raste",
+        "Parabola koja se savija",
+        "Krug oko početka grafika"
       ],
       "zanimljivost": "Ubrzanje se ne menja – zato je grafik a(t) vodoravan.",
       "rec": "ubrzanje"
@@ -1037,8 +1037,8 @@
       "pitanje": "Čemu služe grafici u fizici?",
       "odgovori": [
         "Da se pregledno prikaže kako se veličine menjaju",
-        "Za ukras",
-        "Za merenje mase",
+        "Za ukras udžbenika, da bi bio šareniji, zanimljiviji i lepši",
+        "Za merenje mase tela pomoću linija nacrtanih na milimetarskom papiru",
         "Ne služe ničemu"
       ],
       "zanimljivost": "Na grafiku je lako uočiti i greške merenja – tačka koja „iskače“ iz niza.",
@@ -1050,9 +1050,9 @@
       "pitanje": "Grafik v(t) ima oblik trapeza: ubrzanje, stalna brzina, kočenje. Šta opisuje?",
       "odgovori": [
         "Vožnju od stanice do stanice",
-        "Pad kamena",
-        "Mirovanje",
-        "Kretanje u krug"
+        "Pad kamena sa krova visoke zgrade",
+        "Mirovanje automobila na parkingu",
+        "Kretanje u krug po kružnom toku"
       ],
       "zanimljivost": "Tako izgleda vožnja metroa između dve stanice.",
       "rec": "metro"
@@ -1063,9 +1063,9 @@
       "pitanje": "Šta znači tačka preseka dve linije na grafiku v(t)?",
       "odgovori": [
         "U tom trenutku tela imaju istu brzinu",
-        "Tela su na istom mestu",
-        "Tela se sudaraju",
-        "Tela miruju"
+        "Tela su u tom trenutku na istom mestu u prostoru",
+        "Tela se u tom trenutku sudaraju jedno sa drugim",
+        "Tela u tom trenutku potpuno miruju na mestu"
       ],
       "zanimljivost": "Na grafiku v(t) presek nije susret – za to treba pogledati grafik s(t)!",
       "rec": "presek"
@@ -1089,9 +1089,9 @@
       "pitanje": "Kakav je grafik s(t) kod usporenog kretanja do zaustavljanja?",
       "odgovori": [
         "Kriva koja je sve blaža i na kraju postaje horizontalna",
-        "Prava linija",
-        "Kriva sve strmija",
-        "Vertikalna linija"
+        "Prava linija koja ravnomerno raste od početka do kraja kretanja",
+        "Kriva koja je sve strmija i strmija, sve dok se telo ne zaustavi",
+        "Vertikalna linija, jer se telo zaustavlja u jednom jedinom trenutku"
       ],
       "zanimljivost": "Horizontalni deo na kraju znači da telo stoji.",
       "rec": "zaustavljanje"
@@ -1102,9 +1102,9 @@
       "pitanje": "Kako izgleda grafik v(t) kod ravnomernog kretanja?",
       "odgovori": [
         "Horizontalna linija",
-        "Kosa linija",
-        "Parabola",
-        "Krug"
+        "Kosa linija koja raste",
+        "Parabola koja se savija",
+        "Krug oko početka grafika"
       ],
       "zanimljivost": "Ravnomerno = brzina se ne menja.",
       "rec": "ravnomerno"
@@ -1115,9 +1115,9 @@
       "pitanje": "Kako glasi Treći Njutnov zakon?",
       "odgovori": [
         "Svakoj akciji odgovara reakcija iste jačine a suprotnog smera",
-        "F = m · a",
-        "Telo miruje dok na njega ne deluje sila",
-        "Sila zavisi od boje"
+        "Sila je jednaka proizvodu mase tela i njegovog ubrzanja (F = m · a)",
+        "Telo miruje ili se kreće ravnomerno dok na njega ne deluje neka sila",
+        "Sila zavisi samo od boje i oblika tela na koje deluje u prirodi"
       ],
       "zanimljivost": "Kada skočiš sa čamca na obalu, čamac se otisne unazad – to je reakcija.",
       "rec": "reakcija"
@@ -1128,9 +1128,9 @@
       "pitanje": "Na kom principu leti raketa?",
       "odgovori": [
         "Gasovi izlaze unazad, a raketa ide napred (akcija i reakcija)",
-        "Gura se od vazduha",
-        "Leti zbog krila",
-        "Zbog magneta"
+        "Gasovi iz rakete se odguruju od vazduha iza nje, pa je vazduh gura napred",
+        "Leti zbog velikih krila koja su skrivena u telu rakete i otvaraju se pri poletanju",
+        "Zbog jakog magneta u vrhu rakete koji se odbija od Zemljinog magnetnog polja"
       ],
       "zanimljivost": "Raketa leti i u praznom svemiru – ne treba joj vazduh da se „odgurne“.",
       "rec": "raketa",
@@ -1145,9 +1145,9 @@
       "pitanje": "Zašto puška „udari“ u rame pri pucanju?",
       "odgovori": [
         "Zbog reakcije – metak ide napred, a puška unazad",
-        "Zbog težine",
-        "Zbog zvuka",
-        "Zbog vetra"
+        "Zbog težine – puška postaje teža kada metak krene",
+        "Zbog zvuka – talas pucnja odgurne pušku nazad u rame",
+        "Zbog vetra – vazduh koji izlazi iz cevi gura kundak"
       ],
       "zanimljivost": "Masa puške je mnogo veća od mase metka, pa je njena brzina unazad mnogo manja.",
       "rec": "trzaj"
@@ -1158,8 +1158,8 @@
       "pitanje": "Da li se sile akcije i reakcije poništavaju?",
       "odgovori": [
         "Ne, jer deluju na različita tela",
-        "Da, uvek",
-        "Samo na Zemlji",
+        "Da, uvek se potpuno poništavaju na svakom mestu",
+        "Samo na Zemlji, a u svemiru se ne poništavaju",
         "Samo kod magneta"
       ],
       "zanimljivost": "Zato se konj i kola ipak kreću – konj vuče kola, a kola konja, ali konj se odupire o tlo.",
@@ -1171,9 +1171,9 @@
       "pitanje": "Kada ti guraš zid silom 100 N, kolikom silom zid deluje na tebe?",
       "odgovori": [
         "100 N u suprotnom smeru",
-        "0 N",
-        "50 N",
-        "200 N"
+        "0 N, jer zid ne može da se pomeri",
+        "50 N, polovinom sile kojom guraš",
+        "200 N, duplo jače u suprotnom smeru"
       ],
       "zanimljivost": "Na klizaljkama bi te ta sila odgurnula od zida unazad.",
       "rec": "zid"
@@ -1184,7 +1184,7 @@
       "pitanje": "Kako pliva riba?",
       "odgovori": [
         "Gura vodu unazad, a voda gura ribu napred",
-        "Leti",
+        "Leti kroz vodu, jer je voda mnogo lakša od same ribe",
         "Hoda po dnu",
         "Bez sile"
       ],
@@ -1197,8 +1197,8 @@
       "pitanje": "Kako hodamo?",
       "odgovori": [
         "Stopalom guramo tlo unazad, a tlo gura nas napred",
-        "Gravitacija nas gura",
-        "Vazduh nas gura",
+        "Gravitacija nas gura napred svakim korakom koji napravimo",
+        "Vazduh nas gura napred kada pomeramo ruke dok hodamo",
         "Bez sile"
       ],
       "zanimljivost": "Na savršeno glatkom ledu ne bismo mogli da se odgurnemo i krenemo.",
@@ -1210,9 +1210,9 @@
       "pitanje": "Zašto se balon koji pustimo da se izduva leti po sobi?",
       "odgovori": [
         "Vazduh izlazi u jednom smeru, a balon ide u suprotnom",
-        "Zbog gravitacije",
-        "Zbog magnetizma",
-        "Zbog toplote"
+        "Zbog gravitacije koja privlači gumu balona naizmenično ka podu i zidovima",
+        "Zbog magnetizma gume, koja se odbija od metalnih predmeta u sobi oko nas",
+        "Zbog toplote vazduha iz pluća koji se diže uvis i nosi balon po celoj sobi"
       ],
       "zanimljivost": "Ovo je najjednostavniji „raketni motor“ koji možeš napraviti kod kuće.",
       "rec": "balon",
@@ -1240,9 +1240,9 @@
       "pitanje": "Šta se dešava kada dva klizača, jedan teži i jedan lakši, odgurnu jedan drugog?",
       "odgovori": [
         "Oba se kreću u suprotnim smerovima, lakši brže",
-        "Samo lakši se pomera",
-        "Samo teži se pomera",
-        "Nijedan se ne pomera"
+        "Samo se lakši klizač pomera, a teži ostaje na mestu",
+        "Samo se teži klizač pomera, jer je jači i ima veću silu",
+        "Nijedan se ne pomera, jer se njihove sile međusobno poništavaju"
       ],
       "zanimljivost": "Sila na oba je ista, ali lakši klizač dobija veće ubrzanje.",
       "rec": "klizači"
@@ -1253,7 +1253,7 @@
       "pitanje": "Kako se zove sila kojom podloga deluje na telo koje na njoj stoji?",
       "odgovori": [
         "Sila reakcije podloge",
-        "Sila trenja",
+        "Sila trenja između tela i tla",
         "Sila teže",
         "Sila potiska"
       ],
@@ -1266,8 +1266,8 @@
       "pitanje": "Zašto veslač gura veslo unazad?",
       "odgovori": [
         "Voda deluje na veslo napred i pokreće čamac",
-        "Da bi ohladio vodu",
-        "Da bi uplašio ribe",
+        "Da bi ohladio vodu oko čamca dok vesla po suncu",
+        "Da bi uplašio ribe i oslobodio put ispred čamca",
         "Bez razloga"
       ],
       "zanimljivost": "Veslački osmerac dostiže brzinu i preko 20 km/h.",
@@ -1279,7 +1279,7 @@
       "pitanje": "Kako mlazni avion stvara potisak?",
       "odgovori": [
         "Izbacuje vrele gasove unazad velikom brzinom",
-        "Okreće točkove",
+        "Okreće velike točkove ispod krila koji ga guraju napred",
         "Maše krilima",
         "Odbija se od oblaka"
       ],
@@ -1292,9 +1292,9 @@
       "pitanje": "Šta je zajedničko raketi, trzaju puške i plivanju lignje?",
       "odgovori": [
         "Treći Njutnov zakon",
-        "Inercija",
-        "Trenje",
-        "Sila potiska"
+        "Inercija (tromost tela)",
+        "Trenje između površina",
+        "Sila potiska u tečnosti"
       ],
       "zanimljivost": "Konstantin Ciolkovski je još 1903. izračunao kako raketa može da stigne u svemir.",
       "rec": "akcija"
@@ -1335,9 +1335,9 @@
       "pitanje": "Šta je pokazao Galilejev ogled?",
       "odgovori": [
         "Bez otpora vazduha sva tela padaju jednako brzo",
-        "Teža tela uvek padaju brže",
-        "Laka tela ne padaju",
-        "Tela padaju ravnomerno"
+        "Teža tela uvek padaju mnogo brže od lakših tela, čak i u vakuumu",
+        "Laka tela, kao pero, uopšte ne padaju na zemlju",
+        "Tela padaju ravnomerno, istom brzinom od početka"
       ],
       "zanimljivost": "Astronaut Dejvid Skot je 1971. na Mesecu pustio čekić i pero – pali su istovremeno.",
       "rec": "galilej",
@@ -1365,9 +1365,9 @@
       "pitanje": "Šta je slobodno padanje?",
       "odgovori": [
         "Padanje tela samo pod dejstvom sile teže, bez otpora",
-        "Padanje sa padobranom",
-        "Bacanje naviše",
-        "Kotrljanje"
+        "Padanje tela sa padobranom, kada otpor vazduha usporava",
+        "Bacanje tela naviše, pa ono pada kada stane u vazduhu",
+        "Kotrljanje tela niz strmu kosu ravan na kojoj uopšte nema trenja"
       ],
       "zanimljivost": "Skakači iz aviona u prvim sekundama padaju skoro slobodno.",
       "rec": "padanje"
@@ -1408,9 +1408,9 @@
       "pitanje": "Ko je, po predanju, ispuštao kugle sa kosog tornja u Pizi?",
       "odgovori": [
         "Galileo Galilej",
-        "Isak Njutn",
-        "Arhimed",
-        "Aristotel"
+        "Isak Njutn (Engleska)",
+        "Arhimed iz Sirakuze",
+        "Aristotel iz Stagire"
       ],
       "zanimljivost": "Aristotel je tvrdio da teška tela padaju brže – Galilej je pokazao da nije tako.",
       "rec": "piza"
@@ -1421,9 +1421,9 @@
       "pitanje": "Da li je slobodno padanje ravnomerno ili ubrzano kretanje?",
       "odgovori": [
         "Ravnomerno ubrzano",
-        "Ravnomerno",
-        "Usporeno",
-        "Kružno"
+        "Ravnomerno kretanje",
+        "Usporeno kretanje",
+        "Kružno kretanje tela"
       ],
       "zanimljivost": "Svake sekunde brzina se poveća za oko 9,81 m/s.",
       "rec": "ubrzano"
@@ -1451,9 +1451,9 @@
       "pitanje": "Zašto skakač sa padobranom posle nekog vremena pada stalnom brzinom?",
       "odgovori": [
         "Otpor vazduha postane jednak sili teže",
-        "Gravitacija prestane",
-        "Postane lakši",
-        "Vetar ga drži"
+        "Gravitacija prestane da deluje na velikoj visini",
+        "Postane lakši jer izgubi deo mase u vazduhu",
+        "Vetar ga drži i ne dozvoljava mu da brže pada"
       ],
       "zanimljivost": "Bez otvorenog padobrana ta „granična brzina“ je oko 200 km/h, a sa padobranom oko 20 km/h.",
       "rec": "granična"
@@ -1477,9 +1477,9 @@
       "pitanje": "Šta je uzrok padanja tela?",
       "odgovori": [
         "Sila Zemljine teže",
-        "Vetar",
-        "Trenje",
-        "Magnet"
+        "Vetar koji gura telo naniže",
+        "Trenje između tela i vazduha",
+        "Magnetna sila Zemljinog jezgra"
       ],
       "zanimljivost": "Isak Njutn je shvatio da ista sila koja obara jabuku drži Mesec u orbiti.",
       "rec": "teža"
@@ -1503,8 +1503,8 @@
       "pitanje": "Kako se može izmeriti ubrzanje Zemljine teže?",
       "odgovori": [
         "Merenjem vremena padanja sa poznate visine ili klatnom",
-        "Vagom",
-        "Termometrom",
+        "Vagom – izmeri se težina tela i podeli sa masom zapisanom na pakovanju",
+        "Termometrom – ubrzanje Zemljine teže zavisi samo od temperature vazduha",
         "Lenjirom samo"
       ],
       "zanimljivost": "Ubrzanje teže se malo razlikuje od mesta do mesta – geolozi tako otkrivaju rude pod zemljom.",
@@ -1516,8 +1516,8 @@
       "pitanje": "Šta zajedničko imaju kap kiše i grad kada padaju dugo?",
       "odgovori": [
         "Dostižu stalnu (graničnu) brzinu zbog otpora vazduha",
-        "Padaju sve brže bez kraja",
-        "Padaju naviše",
+        "Padaju sve brže i brže bez kraja, sve do samog udara u tlo",
+        "Padaju naviše, jer ih topao vazduh nosi uvis kao balone",
         "Ne padaju"
       ],
       "zanimljivost": "Kapi kiše padaju oko 30 km/h – da nema otpora vazduha, pogađale bi nas kao meci.",
@@ -1585,9 +1585,9 @@
       "pitanje": "Kakvo je kretanje kamena bačenog vertikalno naniže?",
       "odgovori": [
         "Ravnomerno ubrzano, sa početnom brzinom",
-        "Ravnomerno usporeno",
-        "Ravnomerno",
-        "Kružno"
+        "Ravnomerno usporeno, jer ga otpor vazduha koči",
+        "Ravnomerno, istom stalnom brzinom od samog početka",
+        "Kružno, jer se kamen okreće dok pada"
       ],
       "zanimljivost": "Kamen bačen naniže brže stigne do tla nego pušten iz ruke.",
       "rec": "naniže"
@@ -1598,8 +1598,8 @@
       "pitanje": "Kojom brzinom se lopta bačena naviše vraća u ruku (bez otpora vazduha)?",
       "odgovori": [
         "Istom brzinom kojom je bačena",
-        "Dvostruko većom",
-        "Manjom",
+        "Dvostruko većom brzinom od početne",
+        "Manjom brzinom, jer je ruka malo niže",
         "Nula"
       ],
       "zanimljivost": "U stvarnosti je malo sporija, jer otpor vazduha uzme deo energije.",
@@ -1650,9 +1650,9 @@
       "pitanje": "Kakvo ubrzanje ima lopta u hicu naviše?",
       "odgovori": [
         "Stalno, oko 9,81 m/s², usmereno naniže",
-        "Naviše, pa naniže",
-        "Nula",
-        "Promenljivo"
+        "Prvo naviše, a zatim naniže, posle vrha",
+        "Nula na vrhu putanje, pa i ceo let",
+        "Promenljivo, zavisi samo od jačine bacanja lopte"
       ],
       "zanimljivost": "Ubrzanje ne menja ni smer ni veličinu – menja se samo brzina.",
       "rec": "ubrzanje"
@@ -1676,9 +1676,9 @@
       "pitanje": "Šta je hitac?",
       "odgovori": [
         "Kretanje tela bačenog nekom početnom brzinom",
-        "Padanje bez brzine",
-        "Kotrljanje",
-        "Mirovanje"
+        "Padanje tela bez ikakve početne brzine na zemlju",
+        "Kotrljanje tela niz kosu ravan bez trenja i otpora",
+        "Mirovanje tela posle udarca o čvrstu prepreku"
       ],
       "zanimljivost": "Postoje vertikalni, horizontalni i kosi hitac.",
       "rec": "hitac"
@@ -1689,9 +1689,9 @@
       "pitanje": "Pod kojim uglom treba baciti kamen da bi otišao najdalje (bez otpora vazduha)?",
       "odgovori": [
         "Pod uglom od 45°",
-        "90°",
-        "0°",
-        "10°"
+        "Pod uglom od 90° (pravo uvis)",
+        "Pod uglom od 0° (vodoravno)",
+        "Pod uglom od 10° (skoro ravno)"
       ],
       "zanimljivost": "Zbog otpora vazduha, u stvarnosti je najbolji ugao bacanja kugle u atletici nešto manji – oko 37–42°.",
       "rec": "ugao"
@@ -1702,8 +1702,8 @@
       "pitanje": "Zašto vodoskok izgleda kao luk koji se vraća?",
       "odgovori": [
         "Voda je bačena naviše i ukoso, a teža je vraća naniže",
-        "Zbog vetra",
-        "Zbog pritiska vazduha",
+        "Zbog vetra koji uvek duva i savija tanak mlaz vode u luk",
+        "Zbog pritiska vazduha koji pritiska mlaz odozgo naniže",
         "Voda je laka"
       ],
       "zanimljivost": "Najviši vodoskok na svetu, u Džedi, izbacuje vodu do visine oko 300 m.",
@@ -1728,7 +1728,7 @@
       "pitanje": "Šta je bestežinsko stanje?",
       "odgovori": [
         "Stanje kada telo ne pritiska podlogu niti zateže konac",
-        "Stanje bez mase",
+        "Stanje u kome telo nema nikakvu masu i potpuno je prazno iznutra",
         "Stanje bez gravitacije uvek",
         "Stanje mirovanja"
       ],
@@ -1741,8 +1741,8 @@
       "pitanje": "Zašto astronauti u svemirskoj stanici lebde?",
       "odgovori": [
         "Oni i stanica zajedno slobodno padaju oko Zemlje",
-        "Tamo nema gravitacije",
-        "Stanica je magnet",
+        "Tamo uopšte nema gravitacije, jer je stanica daleko od Zemlje",
+        "Stanica je jak magnet koji privlači astronaute ka zidovima",
         "Lebde zbog vazduha"
       ],
       "zanimljivost": "Stanica kruži brzinom od oko 28.000 km/h i obiđe Zemlju za 90 minuta.",
@@ -1754,9 +1754,9 @@
       "pitanje": "Kada ćemo kratko osetiti bestežinsko stanje na zemlji?",
       "odgovori": [
         "Pri skoku sa trambuline ili na toboganu dok se spuštamo",
-        "Dok sedimo",
-        "Dok spavamo",
-        "Dok stojimo u liftu koji miruje"
+        "Dok mirno sedimo u školskoj klupi tokom celog časa fizike",
+        "Dok spavamo u krevetu tokom cele duge i mirne zimske noći",
+        "Dok stojimo u liftu koji uopšte ne miruje, nego čeka na spratu"
       ],
       "zanimljivost": "„Stomak u grlu“ na ljuljašci je osećaj delimičnog bestežinskog stanja.",
       "rec": "tobogan"
@@ -1793,9 +1793,9 @@
       "pitanje": "Kako se treniraju astronauti za bestežinsko stanje?",
       "odgovori": [
         "U avionu koji leti po luku slobodnog pada",
-        "U bazenu sa ledom",
-        "Na trambulini samo",
-        "U pećini"
+        "U bazenu sa ledom, gde je voda veoma hladna",
+        "Na velikoj trambulini, dok skaču što više mogu",
+        "U dubokoj pećini, gde nema sunčeve svetlosti"
       ],
       "zanimljivost": "Avion zbog toga zovu „povraćajuća kometa“ – svaki luk daje oko 25 sekundi lebdenja.",
       "rec": "avion"
@@ -1806,9 +1806,9 @@
       "pitanje": "Zašto je astronautima potrebno svakodnevno vežbanje?",
       "odgovori": [
         "Bez opterećenja slabe mišići i kosti",
-        "Da bi se zagrejali",
-        "Da bi rasli",
-        "Da bi ih snimale kamere"
+        "Da bi se zagrejali, jer je u stanici hladno",
+        "Da bi brže rasli i bili viši kad se vrate",
+        "Da bi ih snimale kamere za televiziju i internet"
       ],
       "zanimljivost": "Posle šest meseci u svemiru astronauti po povratku moraju ponovo da uče da hodaju stabilno.",
       "rec": "vežbanje"
@@ -1832,8 +1832,8 @@
       "pitanje": "Šta se dešava sa kapljicom vode u bestežinskom stanju?",
       "odgovori": [
         "Postane loptasta i lebdi",
-        "Pada naniže",
-        "Ispari odmah",
+        "Pada naniže, kao i na Zemlji",
+        "Ispari odmah, jer nema vazduha",
         "Zaledi se"
       ],
       "zanimljivost": "Površinski napon „steže“ vodu u loptu – astronauti tako pijuckaju vodu iz vazduha.",
@@ -1845,9 +1845,9 @@
       "pitanje": "Zašto skakač u bazen oseća bestežinsko stanje dok pada?",
       "odgovori": [
         "Telo slobodno pada, pa unutrašnji organi ne pritiskaju jedni druge",
-        "Zbog vode",
-        "Zbog vazduha",
-        "Ne oseća"
+        "Voda u bazenu odbija vazduh, pa telo pada sporije nego što bi palo na kopnu",
+        "Vazduh je ispod skakača gušći nego iznad njega, pa ga nosi naviše dok pada",
+        "Ne oseća – bestežinsko stanje postoji samo u svemiru, daleko od Zemljine teže"
       ],
       "zanimljivost": "Isto se dešava i u trenutku kada lift naglo krene naniže.",
       "rec": "skok"
@@ -1858,9 +1858,9 @@
       "pitanje": "Koja država je prva poslala čoveka u svemir?",
       "odgovori": [
         "Sovjetski Savez (Jurij Gagarin, 1961)",
-        "SAD",
-        "Kina",
-        "Francuska"
+        "SAD (Alan Šepard, 1958. godine, na Floridi)",
+        "Kina (Jang Livej, 1957. godine, iz pustinje Gobi)",
+        "Francuska (Žak Kusto, 1959. godine, iz Gvajane)"
       ],
       "zanimljivost": "Gagarin je obišao Zemlju jednom – let je trajao 108 minuta.",
       "rec": "gagarin"
@@ -1871,9 +1871,9 @@
       "pitanje": "Da li na Međunarodnu svemirsku stanicu deluje gravitacija?",
       "odgovori": [
         "Da, oko 90% od one na površini Zemlje",
-        "Ne, uopšte",
-        "Samo noću",
-        "Samo ponekad"
+        "Ne, u svemiru uopšte nema gravitacije",
+        "Samo noću, kada je stanica u Zemljinoj senci",
+        "Samo ponekad, kada se stanica približi Mesecu"
       ],
       "zanimljivost": "Bez gravitacije stanica bi odletela pravo u svemir.",
       "rec": "gravitacija"
@@ -1884,9 +1884,9 @@
       "pitanje": "Zašto se predmeti u svemirskoj stanici vezuju čičak-trakom?",
       "odgovori": [
         "Inače bi lebdeli i udarali",
-        "Da ih ne ukradu",
-        "Zbog magnetizma",
-        "Zbog hladnoće"
+        "Da ih ne ukradu drugi astronauti",
+        "Zbog magnetizma metalnih zidova stanice",
+        "Zbog velike hladnoće unutar stanice"
       ],
       "zanimljivost": "I astronauti spavaju u vrećama zakačenim za zid.",
       "rec": "čičak"
@@ -1897,9 +1897,9 @@
       "pitanje": "Gde bi telo imalo stvarno nultu težinu i bez padanja?",
       "odgovori": [
         "Daleko od svih nebeskih tela, u dubokom svemiru",
-        "Na vrhu planine",
-        "Na Mesecu",
-        "U liftu"
+        "Na vrhu najviše planine na svetu, gde je vazduh redak",
+        "Na Mesecu, jer tamo nema ni vazduha ni prave atmosfere",
+        "U liftu koji se kreće stalnom brzinom naviše ka krovu"
       ],
       "zanimljivost": "Između Zemlje i Meseca postoji tačka u kojoj se njihova privlačenja poništavaju.",
       "rec": "svemir"
@@ -1927,9 +1927,9 @@
       "pitanje": "Šta je sila trenja?",
       "odgovori": [
         "Sila koja se protivi kretanju tela po podlozi",
-        "Sila koja ubrzava telo",
-        "Gravitacija",
-        "Magnetna sila"
+        "Sila koja ubrzava telo i gura ga napred po podlozi",
+        "Gravitacija kojom Zemlja privlači telo ka sebi",
+        "Magnetna sila kojom podloga privlači gvozdeno telo"
       ],
       "zanimljivost": "Trenje uvek deluje suprotno od smera kretanja (ili pokušaja kretanja).",
       "rec": "trenje"
@@ -1940,9 +1940,9 @@
       "pitanje": "Od čega zavisi sila trenja klizanja?",
       "odgovori": [
         "Od vrste i hrapavosti površina i sile kojom telo pritiska podlogu",
-        "Samo od brzine",
-        "Od boje tela",
-        "Od veličine dodirne površine uvek"
+        "Samo od brzine kojom se telo kreće po podlozi, bez obzira na težinu tela",
+        "Od boje tela i podloge, jer tamnije površine uvek imaju mnogo veće trenje",
+        "Uvek od veličine dodirne površine – što je veća površina, veće je trenje"
       ],
       "zanimljivost": "Iznenađujuće, trenje gotovo ne zavisi od veličine dodirne površine – cigla na boku i na licu klizi slično.",
       "rec": "hrapavost"
@@ -1953,9 +1953,9 @@
       "pitanje": "Šta je koeficijent trenja?",
       "odgovori": [
         "Broj koji pokazuje koliko je trenje između dve površine",
-        "Brzina klizanja",
-        "Masa tela",
-        "Jedinica sile"
+        "Brzina kojom telo klizi niz kosu ravan, izražena u metrima u sekundi",
+        "Masa tela koje klizi po podlozi, izražena u kilogramima ili gramima",
+        "Jedinica za merenje sile trenja, kao što je to njutn ili kilopond"
       ],
       "zanimljivost": "Između gume i suvog asfalta koeficijent je oko 0,7, a između čelika i leda svega oko 0,02.",
       "rec": "koeficijent"
@@ -1983,9 +1983,9 @@
       "pitanje": "Zašto saonice lako klize po snegu?",
       "odgovori": [
         "Trenje između glatkih saonica i snega je malo",
-        "Sneg je lepljiv",
-        "Saonice su teške",
-        "Sneg ih gura"
+        "Sneg je lepljiv, pa vuče saonice napred niz brdo",
+        "Saonice su teške, pa svojom težinom probijaju sneg",
+        "Sneg ih gura napred jer se topi ispod saonica"
       ],
       "zanimljivost": "Ispod klizaljke se stvara tanak sloj vode koji dodatno smanjuje trenje.",
       "rec": "sanke",
@@ -2039,8 +2039,8 @@
       "pitanje": "Zašto padobranac otvara padobran pre doskoka?",
       "odgovori": [
         "Da veliki otpor vazduha smanji brzinu padanja",
-        "Da ga ne vide",
-        "Zbog hladnoće",
+        "Da ga ne vide sa zemlje pre nego što bezbedno sleti",
+        "Zbog hladnoće, jer padobran zadržava toplotu tela",
         "Da bi ubrzao"
       ],
       "zanimljivost": "Rekordni skok sa 39 km visine (2012) bio je toliko visok da je skakač u slobodnom padu probio brzinu zvuka.",
@@ -2052,8 +2052,8 @@
       "pitanje": "Zašto je za brzu vožnju autom potrebno mnogo više goriva?",
       "odgovori": [
         "Otpor vazduha raste otprilike sa kvadratom brzine",
-        "Gume se brže troše",
-        "Motor je umoran",
+        "Gume se brže troše na asfaltu, pa motor mora jače da radi",
+        "Motor je umoran od brze vožnje, pa troši mnogo više goriva",
         "Ne treba više goriva"
       ],
       "zanimljivost": "Pri 130 km/h više od polovine snage motora troši se na savladavanje otpora vazduha.",
@@ -2065,7 +2065,7 @@
       "pitanje": "Šta je „granična brzina“ tela koje pada kroz vazduh?",
       "odgovori": [
         "Brzina pri kojoj otpor vazduha postane jednak težini",
-        "Najveća moguća brzina u svemiru",
+        "Najveća moguća brzina u svemiru, koju ništa ne može da pređe",
         "Brzina zvuka",
         "Brzina svetlosti"
       ],
@@ -2078,8 +2078,8 @@
       "pitanje": "Gde je trenje korisno?",
       "odgovori": [
         "Pri hodanju, kočenju i držanju predmeta",
-        "Samo u motorima",
-        "Nigde",
+        "Samo u motorima automobila i drugih mašina",
+        "Nigde – trenje je uvek štetno i treba ga ukloniti",
         "Samo u svemiru"
       ],
       "zanimljivost": "Violinisti mažu gudalo kolofonijumom – baš da bi povećali trenje sa žicom.",
@@ -2130,8 +2130,8 @@
       "pitanje": "Šta je rezultujuća sila?",
       "odgovori": [
         "Sila koja zamenjuje dejstvo svih sila na telo",
-        "Najveća sila",
-        "Sila trenja",
+        "Najveća sila od svih koje deluju na telo u tom trenutku",
+        "Sila trenja koja nastaje na dodiru tela i podloge kad klizi",
         "Prva sila"
       ],
       "zanimljivost": "Kada je rezultujuća sila nula, telo je u ravnoteži.",
@@ -2160,9 +2160,9 @@
       "pitanje": "Kada je telo u ravnoteži?",
       "odgovori": [
         "Kada je rezultujuća sila (i moment) na njega jednaka nuli",
-        "Kada je teško",
-        "Kada se kreće ubrzano",
-        "Kada nema mase"
+        "Kada je veoma teško, pa ga ništa ne može pomeriti sa mesta na kojem stoji",
+        "Kada se kreće ubrzano, jer ga tada sile stalno guraju u istom smeru napred",
+        "Kada nema mase, pa na njega uopšte ne deluje sila Zemljine teže ni trenje"
       ],
       "zanimljivost": "Telo u ravnoteži može i da se kreće – stalnom brzinom po pravoj liniji.",
       "rec": "ravnoteža"
@@ -2173,7 +2173,7 @@
       "pitanje": "Šta je težište tela?",
       "odgovori": [
         "Tačka u kojoj možemo smatrati da deluje sila teže",
-        "Najteži deo tela",
+        "Najteži deo tela, gde se nalazi najveći deo njegove mase",
         "Vrh tela",
         "Dno tela"
       ],
@@ -2186,8 +2186,8 @@
       "pitanje": "Kakva je stabilna ravnoteža?",
       "odgovori": [
         "Telo se posle malog pomeranja vraća u prvobitni položaj",
-        "Telo pada posle pomeranja",
-        "Telo ostaje u novom položaju",
+        "Telo pada i prevrne se čim ga malo pomerimo iz prvobitnog položaja",
+        "Telo ostaje u svakom novom položaju u koji ga pomerimo, bez vraćanja",
         "Telo se okreće stalno"
       ],
       "zanimljivost": "Lutka „ne-padalica“ ima težište vrlo nisko – zato se uvek uspravi.",
@@ -2212,7 +2212,7 @@
       "pitanje": "Kakva je labilna ravnoteža?",
       "odgovori": [
         "Telo se posle malog pomeranja još više udalji od prvobitnog položaja",
-        "Telo se vrati",
+        "Telo se posle malog pomeranja samo vrati u prvobitni položaj, kao klatno",
         "Telo ostane gde je",
         "Telo nema težište"
       ],
@@ -2225,9 +2225,9 @@
       "pitanje": "Zašto hodač po žici nosi dugu motku?",
       "odgovori": [
         "Da lakše održi ravnotežu",
-        "Da bi bio teži",
-        "Da bi se odmorio",
-        "Zbog lepote"
+        "Da bi bio teži i stabilniji",
+        "Da bi se odmorio na sredini",
+        "Zbog lepote i utiska publike"
       ],
       "zanimljivost": "Duga motka sporo se okreće, pa hodač ima više vremena da ispravi položaj.",
       "rec": "motka"
@@ -2238,8 +2238,8 @@
       "pitanje": "Šta je indiferentna ravnoteža?",
       "odgovori": [
         "Telo ostaje u ravnoteži u svakom novom položaju",
-        "Telo pada",
-        "Telo se vraća",
+        "Telo pada čim se malo pomeri iz položaja",
+        "Telo se posle malog pomeranja uvek vraća u isti položaj",
         "Telo se ljulja"
       ],
       "zanimljivost": "Lopta na ravnom stolu je u indiferentnoj ravnoteži.",
@@ -2264,9 +2264,9 @@
       "pitanje": "Zašto se pri nošenju teške torbe u jednoj ruci naginjemo na suprotnu stranu?",
       "odgovori": [
         "Da težište tela i torbe ostane iznad oslonca (stopala)",
-        "Zbog bola",
-        "Zbog vetra",
-        "Bez razloga"
+        "Zbog bola u ramenu koji nas tera da se iskrivimo na drugu stranu",
+        "Zbog otpora vazduha koji torba stvara dok hodamo po ulici",
+        "Bez razloga – to je samo navika koju stičemo još kao deca"
       ],
       "zanimljivost": "Zato je zdravije nositi ranac na oba ramena.",
       "rec": "torba"
@@ -2277,9 +2277,9 @@
       "pitanje": "Šta je oslonac?",
       "odgovori": [
         "Mesto gde telo dodiruje podlogu i oslanja se",
-        "Težište",
-        "Vrh tela",
-        "Sila trenja"
+        "Težište – tačka u kojoj deluje sila teže na telo",
+        "Najviši vrh tela, na koji pada svetlost odozgo",
+        "Sila trenja koja zaustavlja telo dok se kreće po podlozi"
       ],
       "zanimljivost": "Telo stoji dok mu je težište iznad površine oslonca.",
       "rec": "oslonac"
@@ -2303,8 +2303,8 @@
       "pitanje": "Zašto se krivi toranj u Pizi ne ruši?",
       "odgovori": [
         "Vertikala iz njegovog težišta pada unutar osnove",
-        "Drže ga sajle",
-        "Ima magnet",
+        "Drže ga čelične sajle koje su zakačene za susedne zgrade",
+        "Ima magnet u temelju koji ga privlači uspravno ka zemlji",
         "Zbog vetra"
       ],
       "zanimljivost": "Inženjeri su krajem 20. veka uklonili zemlju ispod jedne strane i smanjili nagib za oko 40 cm.",
@@ -2316,9 +2316,9 @@
       "pitanje": "Zašto je teže stajati na jednoj nozi nego na dve?",
       "odgovori": [
         "Površina oslonca je manja",
-        "Telo je teže",
-        "Težište je niže",
-        "Nema razlike"
+        "Telo je tada mnogo teže nego inače",
+        "Težište tela je tada mnogo niže",
+        "Nema nikakve razlike u tome"
       ],
       "zanimljivost": "Flamingosi spavaju na jednoj nozi – njihovo telo je tako građeno da im to štedi energiju.",
       "rec": "flamingo",
@@ -2333,7 +2333,7 @@
       "pitanje": "Šta je poluga?",
       "odgovori": [
         "Kruto telo koje se može okretati oko oslonca",
-        "Opruga",
+        "Elastično telo koje se rasteže kad na njega deluje sila",
         "Točak",
         "Uže"
       ],
@@ -2350,9 +2350,9 @@
       "pitanje": "Kako se računa moment sile?",
       "odgovori": [
         "M = F · d (sila puta krak)",
-        "M = F / d",
-        "M = F + d",
-        "M = m · a"
+        "M = F / d (sila podeljena krakom)",
+        "M = F + d (sila plus krak sile)",
+        "M = m · a (masa puta ubrzanje tela)"
       ],
       "zanimljivost": "Krak je normalno rastojanje od oslonca do pravca sile.",
       "rec": "moment",
@@ -2367,9 +2367,9 @@
       "pitanje": "Zašto je lakše otvoriti vrata guranjem kod kvake nego kod šarki?",
       "odgovori": [
         "Veći krak sile daje veći moment",
-        "Kod šarki je trenje",
-        "Kvaka je teža",
-        "Isto je"
+        "Kod šarki je mnogo veće trenje u metalu",
+        "Kvaka je teža, pa vrata lakše pada",
+        "Isto je – mesto guranja nije važno"
       ],
       "zanimljivost": "Probaj da gurneš vrata blizu šarki – trebaće ti mnogo više snage.",
       "rec": "vrata"
@@ -2380,8 +2380,8 @@
       "pitanje": "Na klackalici, dete od 30 kg sedi 2 m od oslonca. Gde treba da sedne dete od 40 kg da bi bila ravnoteža?",
       "odgovori": [
         "1,5 m od oslonca",
-        "2 m",
-        "1 m",
+        "2 m od oslonca, isto kao i prvo dete",
+        "1 m od oslonca",
         "2,5 m"
       ],
       "zanimljivost": "Uslov ravnoteže poluge: F₁·d₁ = F₂·d₂.",
@@ -2397,9 +2397,9 @@
       "pitanje": "Šta od navedenog je poluga?",
       "odgovori": [
         "Makaze, klešta i klackalica",
-        "Lopta",
-        "Kocka",
-        "Sveća"
+        "Lopta, kocka i valjak od drveta",
+        "Kocka, piramida i šuplja kugla",
+        "Sveća, kašika i tanjir od stakla"
       ],
       "zanimljivost": "I naša ruka je poluga – lakat je oslonac, a mišić bicepsa deluje blizu njega.",
       "rec": "makaze"
@@ -2410,7 +2410,7 @@
       "pitanje": "Zašto ključ za odvrtanje šrafova na točku ima dugu dršku?",
       "odgovori": [
         "Duži krak daje veći moment uz manju silu",
-        "Da bude lepši",
+        "Da bude lepši i lakše se drži u ruci dok radimo",
         "Da bude lakši",
         "Nema razloga"
       ],
@@ -2423,8 +2423,8 @@
       "pitanje": "Šta je oslonac na klackalici?",
       "odgovori": [
         "Tačka oko koje se klackalica okreće",
-        "Sedište",
-        "Rukohvat",
+        "Sedište na kraju daske na koje sedne dete",
+        "Rukohvat za koji se deca drže dok se klackaju",
         "Dete"
       ],
       "zanimljivost": "Teže dete treba da sedne bliže osloncu da bi klackalica bila u ravnoteži.",
@@ -2449,9 +2449,9 @@
       "pitanje": "Šta je ravnoteža poluge?",
       "odgovori": [
         "Momenti sila sa obe strane oslonca su jednaki",
-        "Sile su jednake uvek",
-        "Poluga je horizontalna",
-        "Nema sila"
+        "Sile sa obe strane oslonca su uvek potpuno jednake",
+        "Poluga je postavljena horizontalno, paralelno sa tlom",
+        "Na polugu ne deluje nijedna sila, pa ona miruje"
       ],
       "zanimljivost": "Stara apotekarska vaga sa tasovima je poluga sa jednakim kracima.",
       "rec": "vaga",
@@ -2466,7 +2466,7 @@
       "pitanje": "Koji alat koristi polugu da se izvuče ekser?",
       "odgovori": [
         "Čekić sa račvastim krajem (ili klešta)",
-        "Šrafciger",
+        "Šrafciger sa dugom, tankom i ravnom drškom",
         "Lenjir",
         "Testera"
       ],
@@ -2505,9 +2505,9 @@
       "pitanje": "Koja je poluga u telu kada stanemo na prste?",
       "odgovori": [
         "Stopalo – oslonac je kod prstiju",
-        "Kičma",
-        "Lobanja",
-        "Rebra"
+        "Kičma – oslonac je u predelu kukova",
+        "Lobanja – oslonac je u predelu vrata",
+        "Kolena – oslonac je u predelu butina"
       ],
       "zanimljivost": "Ahilova tetiva vuče petu naviše i podiže celo telo.",
       "rec": "stopalo"
@@ -2518,7 +2518,7 @@
       "pitanje": "Kod kog alata je oslonac na kraju, a teret u sredini?",
       "odgovori": [
         "Kod kolica za građevinu (tačke)",
-        "Kod makaza",
+        "Kod makaza (oslonac je u sredini)",
         "Kod klackalice",
         "Kod pincete"
       ],
@@ -2531,9 +2531,9 @@
       "pitanje": "Šta pomaže da se lakše okrene volan?",
       "odgovori": [
         "Veći prečnik volana (duži krak)",
-        "Manji volan",
-        "Teži volan",
-        "Nema razlike"
+        "Manji volan sa kraćim krakom sile",
+        "Teži volan od metala i prirodne kože",
+        "Nema razlike – svi volani su isti"
       ],
       "zanimljivost": "Stari kamioni bez servo-volana imali su ogromne volane.",
       "rec": "volan"
@@ -2544,9 +2544,9 @@
       "pitanje": "Šta je sila potiska?",
       "odgovori": [
         "Sila kojom tečnost ili gas deluje naviše na telo u njima",
-        "Sila teže",
-        "Sila trenja",
-        "Magnetna sila"
+        "Sila teže kojom Zemlja privlači telo naniže, ka svom središtu",
+        "Sila trenja koja usporava telo dok se kreće kroz vodu ili vazduh",
+        "Magnetna sila kojom voda privlači gvozdene predmete na dno suda"
       ],
       "zanimljivost": "Zbog potiska nam je u vodi lakše podići drugara nego na kopnu.",
       "rec": "potisak"
@@ -2557,9 +2557,9 @@
       "pitanje": "Kako glasi Arhimedov zakon?",
       "odgovori": [
         "Sila potiska jednaka je težini istisnute tečnosti",
-        "Sila potiska jednaka je masi tela",
-        "Telo uvek tone",
-        "Telo uvek pliva"
+        "Sila potiska jednaka je masi tela izraženoj u kilogramima",
+        "Svako telo uvek tone u tečnosti, bez obzira na gustinu",
+        "Svako telo uvek pliva na površini tečnosti, kao drvo"
       ],
       "zanimljivost": "Prema legendi, Arhimed je uzviknuo „Eureka!“ kada je u kadi primetio da se voda podigla.",
       "rec": "arhimed"
@@ -2570,7 +2570,7 @@
       "pitanje": "Od čega zavisi sila potiska?",
       "odgovori": [
         "Od gustine tečnosti i zapremine potopljenog dela tela",
-        "Od boje tela",
+        "Od boje i oblika tela koje je potopljeno u tečnost ili gas",
         "Od mase tela uvek",
         "Od dubine uvek"
       ],
@@ -2600,9 +2600,9 @@
       "pitanje": "Zašto je lakše plivati u moru nego u reci?",
       "odgovori": [
         "Morska voda ima veću gustinu, pa je potisak veći",
-        "More je toplije",
-        "Reka je dublja",
-        "Nema razlike"
+        "More je toplije od reke, pa se telo opusti i lakše pliva",
+        "Reka je dublja od mora, pa telo lakše tone u reci nego u moru",
+        "Nema razlike – plivanje je isto teško u slanoj i u slatkoj vodi"
       ],
       "zanimljivost": "Brodovi koji plove iz reke u more malo „izrone“ – zato na trupu imaju oznake gaza za različite vode.",
       "rec": "more"
@@ -2660,9 +2660,9 @@
       "pitanje": "Zašto se kamen u vodi čini lakšim?",
       "odgovori": [
         "Na njega deluje sila potiska",
-        "Postane manji",
-        "Gubi masu",
-        "Voda ga hladi"
+        "Postane manji u vodi",
+        "Gubi masu dok je u vodi",
+        "Voda ga hladi, pa se on skuplja i smanjuje"
       ],
       "zanimljivost": "Ronioci zato nose olovne pojaseve – da ih potisak ne izbaci na površinu.",
       "rec": "kamen"
@@ -2673,9 +2673,9 @@
       "pitanje": "Kako podmornica zaranja i izranja?",
       "odgovori": [
         "Puni i prazni rezervoare vodom, pa menja svoju težinu",
-        "Menja boju",
-        "Uključi magnet",
-        "Okreće propeler naviše"
+        "Menja boju svog trupa, pa je voda gura ka površini ili ka dnu",
+        "Uključi jak magnet koji je privlači ka dnu mora",
+        "Okreće propeler naviše ili naniže, isto kao helikopter u vazduhu"
       ],
       "zanimljivost": "Ribe imaju sličan „uređaj“ – riblji mehur koji pune ili prazne gasom.",
       "rec": "podmornica"
@@ -2699,9 +2699,9 @@
       "pitanje": "Šta je istisnuta tečnost?",
       "odgovori": [
         "Tečnost koju telo potiskuje zauzimajući njeno mesto",
-        "Tečnost koja ispari",
-        "Tečnost u flaši",
-        "Tečnost iz česme"
+        "Tečnost koja ispari iz suda kada se on zagreje na šporetu",
+        "Tečnost koja je zatvorena u flaši i ne može nikako da izađe",
+        "Tečnost koja teče iz česme kada se slavina potpuno odvrne"
       ],
       "zanimljivost": "Brod od 10.000 tona istiskuje 10.000 tona vode.",
       "rec": "istiskivanje"
@@ -2738,9 +2738,9 @@
       "pitanje": "Zašto ljudi lakše plutaju kada udahnu duboko?",
       "odgovori": [
         "Vazduh u plućima povećava zapreminu tela, pa i potisak",
-        "Postanu teži",
-        "Voda postane gušća",
-        "Ne plutaju lakše"
+        "Postanu teži od vazduha u plućima, pa ih voda jače gura gore",
+        "Voda oko njih postane gušća zbog toplog daha koji izdahnu u nju",
+        "Ne plutaju lakše – udisanje vazduha uopšte ne utiče na plutanje"
       ],
       "zanimljivost": "Kada izdahnemo, većina ljudi polako tone.",
       "rec": "udah"
@@ -2751,8 +2751,8 @@
       "pitanje": "Kada telo pliva na površini tečnosti?",
       "odgovori": [
         "Kada mu je gustina manja od gustine tečnosti",
-        "Kada je teško",
-        "Kada je veće",
+        "Kada je veoma teško i ima mnogo veliku masu u odnosu na vodu",
+        "Kada je po veličini veće od suda u kome je tečnost",
         "Uvek"
       ],
       "zanimljivost": "Drvo, led i pluta plivaju na vodi.",
@@ -2764,8 +2764,8 @@
       "pitanje": "Kada telo tone?",
       "odgovori": [
         "Kada je njegova gustina veća od gustine tečnosti",
-        "Kada je malo",
-        "Kada je okruglo",
+        "Kada je malo i lako, pa ga voda ne može da drži",
+        "Kada je okruglog oblika, pa se lako kotrlja ka dnu",
         "Nikad"
       ],
       "zanimljivost": "Ekser tone, ali brod od istog gvožđa pluta – važna je ukupna gustina, sa vazduhom unutra.",
@@ -2777,9 +2777,9 @@
       "pitanje": "Kada telo lebdi u tečnosti (ni ne tone ni ne izranja)?",
       "odgovori": [
         "Kada su gustine tela i tečnosti jednake",
-        "Kada je telo veće",
-        "Kada je tečnost hladna",
-        "Nikad"
+        "Kada je telo mnogo veće od suda sa tečnošću",
+        "Kada je tečnost veoma hladna, skoro zaleđena",
+        "Nikad – svako telo ili tone ili izranja na površinu"
       ],
       "zanimljivost": "Ribe podešavaju gustinu tela ribljim mehurom i lebde na željenoj dubini.",
       "rec": "lebdenje"
@@ -2790,9 +2790,9 @@
       "pitanje": "Zašto čelični brod pluta, a čelični ekser tone?",
       "odgovori": [
         "Brod je šupalj i istiskuje mnogo vode, pa mu je prosečna gustina manja od vode",
-        "Brod je od drugog čelika",
-        "Brod je lakši od eksera",
-        "Ekser je magnetan"
+        "Brod je napravljen od posebne vrste čelika koji je lakši od vode i zato ne tone",
+        "Brod je lakši od eksera jer ima mnogo manje čelika po kilogramu svoje ukupne mase",
+        "Ekser je magnetan, pa ga Zemljino magnetno polje snažno vuče na dno mora ili reke"
       ],
       "zanimljivost": "Najveći brodovi teže preko 400.000 tona – a ipak plove.",
       "rec": "brod",
@@ -2824,9 +2824,9 @@
       "pitanje": "Zašto jaje tone u čistoj vodi, a pluta u jako slanoj?",
       "odgovori": [
         "Slana voda ima veću gustinu od jajeta",
-        "Jaje upije so",
-        "Jaje postane lakše",
-        "Ne pluta"
+        "Jaje upije so kroz ljusku, pa postane lakše",
+        "Jaje postane lakše od soli koja se rastvori",
+        "Ne pluta – jaje uvek tone, i u slanoj vodi"
       ],
       "zanimljivost": "Ovaj ogled je lako izvesti u kuhinji – dovoljno je nekoliko kašika soli u čaši vode.",
       "rec": "jaje"
@@ -2837,9 +2837,9 @@
       "pitanje": "Šta od navedenog pluta na vodi?",
       "odgovori": [
         "Pluta (čep)",
-        "Kamen",
-        "Ekser",
-        "Novčić"
+        "Kamen iz reke",
+        "Gvozdeni ekser",
+        "Metalni novčić"
       ],
       "zanimljivost": "Plutu daje kora hrasta plutnjaka – puna je vazduha.",
       "rec": "čep"
@@ -2863,9 +2863,9 @@
       "pitanje": "Šta je gaz broda?",
       "odgovori": [
         "Dubina do koje je brod uronjen u vodu",
-        "Brzina broda",
-        "Dužina broda",
-        "Vrsta goriva"
+        "Najveća brzina broda na mirnoj vodi u čvorovima",
+        "Dužina broda od pramca do krme izražena u metrima",
+        "Vrsta goriva koje brod koristi za pokretanje motora"
       ],
       "zanimljivost": "Natovaren brod ima veći gaz – po crtama na trupu vidi se da li je preopterećen.",
       "rec": "gaz"
@@ -2876,9 +2876,9 @@
       "pitanje": "Zašto balon sa toplim vazduhom leti?",
       "odgovori": [
         "Topao vazduh je ređi od hladnog, pa je potisak veći od težine balona",
-        "Ima motor",
-        "Vetar ga podiže",
-        "Zbog magneta"
+        "Ima mali motor ispod korpe koji okreće elisu i diže ceo balon naviše ka nebu",
+        "Vetar ga podiže, a topao vazduh služi samo da balon ostane naduvan tokom leta",
+        "Zbog magneta u korpi koji se odbija od Zemljinog magnetnog polja ispod balona"
       ],
       "zanimljivost": "Prvi let ljudi balonom izveden je 1783. u Parizu – balonom braće Mongolfje.",
       "rec": "mongolfje"
@@ -2889,8 +2889,8 @@
       "pitanje": "Šta je areometar i gde se koristi?",
       "odgovori": [
         "Plovak za merenje gustine tečnosti, npr. mleka ili akumulatorske kiseline",
-        "Merač brzine",
-        "Barometar",
+        "Uređaj za merenje brzine vetra pomoću okretnih kašičica, npr. na meteorološkim stanicama",
+        "Instrument za merenje vazdušnog pritiska, npr. kod predviđanja promene vremena",
         "Vaga za zlato"
       ],
       "zanimljivost": "Što je tečnost gušća, areometar manje uranja.",
@@ -2902,9 +2902,9 @@
       "pitanje": "Zašto pojas za spasavanje drži čoveka na vodi?",
       "odgovori": [
         "Ima malu gustinu i veliku zapreminu, pa daje veliki potisak",
-        "Pliva sam",
-        "Ima motor",
-        "Zbog boje"
+        "Napravljen je od teške gume koja sama pliva bez obzira na gustinu",
+        "Ima mali ugrađeni motor koji ga stalno gura naviše ka površini vode",
+        "Zbog jarke boje ga voda odbija i ne dozvoljava mu da potone ispod"
       ],
       "zanimljivost": "Moderni prsluci za spasavanje okreću onesvešćenu osobu licem naviše.",
       "rec": "pojas"
@@ -2928,9 +2928,9 @@
       "pitanje": "Zašto se zeppelini (vazdušni brodovi) pune helijumom?",
       "odgovori": [
         "Helijum je mnogo ređi od vazduha",
-        "Helijum je težak",
-        "Helijum svetli",
-        "Helijum je jeftin"
+        "Helijum je mnogo teži od vazduha oko nas",
+        "Helijum svetli u mraku i noću pokazuje put",
+        "Helijum je najjeftiniji gas na svetu"
       ],
       "zanimljivost": "Ranije su punjeni vodonikom, koji je zapaljiv – nesreća „Hindenburga“ 1937. okončala je to doba.",
       "rec": "helijum"
@@ -2941,9 +2941,9 @@
       "pitanje": "Kako se riba podiže ka površini?",
       "odgovori": [
         "Puni riblji mehur gasom i smanjuje svoju gustinu",
-        "Pliva samo perajima",
-        "Isprazni stomak",
-        "Promeni boju"
+        "Pliva samo perajima, snažno mašući repom i perajima naviše",
+        "Isprazni stomak, pa postane lakša od vode oko sebe",
+        "Promeni boju krljušti, pa je voda gura ka površini"
       ],
       "zanimljivost": "Ajkule nemaju riblji mehur – zato moraju stalno da plivaju ili tonu.",
       "rec": "mehur"
@@ -3010,9 +3010,9 @@
       "pitanje": "Da li vrši rad osoba koja nosi kofer vodoravno stalnom brzinom?",
       "odgovori": [
         "Praktično ne – sila je normalna na pravac kretanja",
-        "Da, mnogo",
-        "Samo ako trči",
-        "Samo naviše"
+        "Da, mnogo – rad je jednak težini kofera puta pređeni put",
+        "Samo ako trči, jer se tada povećava brzina i energija kofera",
+        "Samo naviše – rad postoji samo kad kofer podignemo na sto"
       ],
       "zanimljivost": "Rad se vrši kada se kofer podiže, ali ne kada se nosi vodoravno.",
       "rec": "kofer"
@@ -3036,9 +3036,9 @@
       "pitanje": "Šta je potrebno za mehanički rad?",
       "odgovori": [
         "Sila i pomeranje tela",
-        "Samo sila",
-        "Samo vreme",
-        "Samo masa"
+        "Samo dovoljno velika sila",
+        "Samo dovoljno dugo vreme",
+        "Samo velika masa tela koje se kreće"
       ],
       "zanimljivost": "Zid koji guraš a ne pomeriš – nema rada!",
       "rec": "pomeranje"
@@ -3049,9 +3049,9 @@
       "pitanje": "Kada je rad negativan?",
       "odgovori": [
         "Kada sila deluje suprotno od smera kretanja",
-        "Kada je sila velika",
-        "Nikad",
-        "Kada telo miruje"
+        "Kada je sila veoma velika u odnosu na masu tela",
+        "Nikad – rad je uvek pozitivan ili jednak nuli",
+        "Kada telo miruje i uopšte se ne pomera ni malo"
       ],
       "zanimljivost": "Sila trenja vrši negativan rad – oduzima telu energiju.",
       "rec": "negativan"
@@ -3114,9 +3114,9 @@
       "pitanje": "Pri koji ugao između sile i pomeranja rad je najveći?",
       "odgovori": [
         "0° (isti pravac i smer)",
-        "90°",
-        "180°",
-        "45°"
+        "90° (sila normalna na pomeranje)",
+        "180° (sila suprotna pomeranju)",
+        "45° (sila koso, pod pola pravog ugla)"
       ],
       "zanimljivost": "Pri uglu od 90° rad je nula – npr. sila teže kod satelita u kružnoj orbiti.",
       "rec": "ugao"
@@ -3153,9 +3153,9 @@
       "pitanje": "Šta je kinetička energija?",
       "odgovori": [
         "Energija koju telo ima zbog kretanja",
-        "Energija zbog položaja",
-        "Toplotna energija",
-        "Električna energija"
+        "Energija koju telo ima zbog svog položaja iznad tla",
+        "Toplotna energija zagrejanog tela, kao kod peći",
+        "Električna energija koja je sačuvana u bateriji"
       ],
       "zanimljivost": "Reč kinetička potiče od grčke reči kinesis – kretanje.",
       "rec": "kretanje"
@@ -3183,8 +3183,8 @@
       "pitanje": "Šta je gravitaciona potencijalna energija?",
       "odgovori": [
         "Energija koju telo ima zbog položaja (visine) iznad tla",
-        "Energija kretanja",
-        "Energija hrane",
+        "Energija kretanja tela koje se kreće velikom brzinom po tlu",
+        "Energija hrane koju telo dobija varenjem i koristi za rad",
         "Energija svetlosti"
       ],
       "zanimljivost": "Voda u akumulacionom jezeru iznad hidroelektrane ima ogromnu potencijalnu energiju.",
@@ -3252,9 +3252,9 @@
       "pitanje": "Šta je elastična potencijalna energija?",
       "odgovori": [
         "Energija sabijene ili istegnute opruge",
-        "Energija kretanja",
-        "Energija hrane",
-        "Toplota"
+        "Energija kretanja tela koje se brzo kreće",
+        "Energija koju telo dobija iz hrane i vode",
+        "Toplota koja nastaje trenjem dva tela"
       ],
       "zanimljivost": "Mehanički satovi i igračke na navijanje čuvaju energiju u opruzi.",
       "rec": "opruga"
@@ -3282,9 +3282,9 @@
       "pitanje": "Da li telo može imati istovremeno i kinetičku i potencijalnu energiju?",
       "odgovori": [
         "Da, npr. avion u letu",
-        "Ne",
-        "Samo u svemiru",
-        "Samo na Mesecu"
+        "Ne, nikada – samo jednu od te dve",
+        "Samo u svemiru, daleko od Zemlje",
+        "Samo na Mesecu, gde je teža manja"
       ],
       "zanimljivost": "Zbir kinetičke i potencijalne energije zove se ukupna mehanička energija.",
       "rec": "avion"
@@ -3295,9 +3295,9 @@
       "pitanje": "Od čega zavisi kinetička energija?",
       "odgovori": [
         "Od mase i brzine tela",
-        "Samo od boje",
-        "Samo od visine",
-        "Samo od oblika"
+        "Samo od boje i sjaja tela",
+        "Samo od visine na kojoj se nalazi",
+        "Samo od oblika i veličine tela"
       ],
       "zanimljivost": "Kamion i bicikl iste brzine imaju veoma različitu kinetičku energiju.",
       "rec": "masa"
@@ -3321,8 +3321,8 @@
       "pitanje": "Šta je energija?",
       "odgovori": [
         "Sposobnost tela da izvrši rad",
-        "Isto što i sila",
-        "Isto što i masa",
+        "Isto što i sila, ali u džulima",
+        "Isto što i masa tela u kilogramima",
         "Brzina"
       ],
       "zanimljivost": "Energija se ne stvara ni iz čega, niti nestaje – samo prelazi iz jednog oblika u drugi.",
@@ -3334,9 +3334,9 @@
       "pitanje": "Zašto je čekić koji se zamahne efikasan?",
       "odgovori": [
         "Ima veliku kinetičku energiju koja se pri udarcu predaje ekseru",
-        "Težak je u mirovanju",
-        "Ima magnet",
-        "Zbog trenja"
+        "Težak je i dok miruje, pa je za zakucavanje važna samo njegova masa",
+        "Ima mali magnet u glavi koji privlači i uvlači ekser u drvo",
+        "Zbog trenja između glave čekića i eksera, koje gura ekser naniže"
       ],
       "zanimljivost": "Malj za zabijanje stubova podiže se visoko – potencijalna energija prelazi u kinetičku.",
       "rec": "čekić"
@@ -3360,9 +3360,9 @@
       "pitanje": "Šta tvrdi zakon održanja mehaničke energije (bez trenja)?",
       "odgovori": [
         "Zbir kinetičke i potencijalne energije ostaje stalan",
-        "Energija nestaje",
-        "Energija raste",
-        "Energija se stvara"
+        "Energija stalno nestaje dok se telo kreće, pa se ono mora gurati",
+        "Energija tela stalno raste dok se kreće, pa telo sve više ubrzava",
+        "Energija se stvara iz ničega kada telo pada sa velike visine na tlo"
       ],
       "zanimljivost": "U stvarnosti trenje pretvara deo mehaničke energije u toplotu.",
       "rec": "održanje"
@@ -3373,7 +3373,7 @@
       "pitanje": "Šta se dešava sa energijom klatna dok se ljulja?",
       "odgovori": [
         "Potencijalna i kinetička energija se naizmenično pretvaraju jedna u drugu",
-        "Nestaje odmah",
+        "Energija odmah nestaje kad se klatno pusti, pa se ono kreće samo po inerciji",
         "Samo raste",
         "Ostaje samo kinetička"
       ],
@@ -3412,9 +3412,9 @@
       "pitanje": "Šta se dešava sa mehaničkom energijom kada kočimo bicikl?",
       "odgovori": [
         "Pretvara se u toplotu zbog trenja",
-        "Nestaje",
-        "Povećava se",
-        "Pretvara se u masu"
+        "Nestaje bez ikakvog traga i potpuno se gubi",
+        "Povećava se zbog kočenja i trenja točka",
+        "Pretvara se u masu kočnice, koja postaje teža"
       ],
       "zanimljivost": "Neki električni automobili pri kočenju vraćaju energiju u bateriju – regenerativno kočenje.",
       "rec": "toplota"
@@ -3451,9 +3451,9 @@
       "pitanje": "Zašto lopta pri svakom odskoku dostiže manju visinu?",
       "odgovori": [
         "Deo energije prelazi u toplotu i zvuk",
-        "Gravitacija raste",
-        "Lopta postaje teža",
-        "Zemlja je upija"
+        "Gravitacija raste svaki put kad lopta udari",
+        "Lopta postaje teža posle svakog odskoka",
+        "Zemlja je upija kao sunđer pri svakom udaru"
       ],
       "zanimljivost": "Zvuk udarca lopte o pod je takođe deo energije koji lopta „gubi“.",
       "rec": "odskok"
@@ -3464,9 +3464,9 @@
       "pitanje": "Šta važi za ukupnu energiju u svakoj pojavi u prirodi?",
       "odgovori": [
         "Ukupna energija se održava – samo prelazi iz oblika u oblik",
-        "Uvek se smanji",
-        "Uvek se poveća",
-        "Nestaje noću"
+        "Uvek se smanji, jer se deo energije nepovratno izgubi i nestane",
+        "Uvek se poveća, jer svaka pojava u prirodi stvara novu energiju",
+        "Nestaje noću kada nema Sunca, a ujutru se ponovo stvara iz svetlosti"
       ],
       "zanimljivost": "Zakon održanja energije jedan je od najvažnijih zakona fizike – važi od atoma do galaksija.",
       "rec": "zakon"
@@ -3477,9 +3477,9 @@
       "pitanje": "Zašto je nemoguća mašina „perpetuum mobile“ (večiti motor)?",
       "odgovori": [
         "Ne može davati rad bez dovođenja energije",
-        "Previše je skupa",
-        "Zabranjena je zakonom",
-        "Bila bi preteška"
+        "Previše je skupa za pravljenje u fabrikama",
+        "Zabranjena je zakonom u većini zemalja sveta",
+        "Bila bi preteška, pa ne bi mogla da se pomeri"
       ],
       "zanimljivost": "Patentni zavodi mnogih zemalja odbijaju prijave za „večite motore“ bez razmatranja.",
       "rec": "perpetuum"
@@ -3503,9 +3503,9 @@
       "pitanje": "Kako se kod skoka sa motkom energija prenosi?",
       "odgovori": [
         "Kinetička energija zaleta → elastična energija motke → potencijalna energija skakača",
-        "Samo toplota",
-        "Samo zvuk",
-        "Bez promena"
+        "Potencijalna energija skakača → kinetička energija motke → toplota u vazduhu i u pesku",
+        "Elastična energija motke → zvučna energija udarca → kinetička energija skakača u letu",
+        "Energija se ne prenosi – skakač samo snagom ruku podiže telo uz motku do vrha letvice"
       ],
       "zanimljivost": "Armand Duplantis je rekord u skoku sa motkom pomerio iznad 6,2 m.",
       "rec": "motka"
@@ -3529,9 +3529,9 @@
       "pitanje": "Šta se dešava sa energijom strele dok leti naviše?",
       "odgovori": [
         "Kinetička opada, a potencijalna raste",
-        "Obe rastu",
-        "Obe opadaju",
-        "Ništa"
+        "Obe energije rastu dok strela ide gore",
+        "Obe energije opadaju zbog otpora vazduha",
+        "Ništa – energija strele je stalno ista"
       ],
       "zanimljivost": "Najviša tačka – tu je kinetička energija najmanja.",
       "rec": "strela"
@@ -3542,9 +3542,9 @@
       "pitanje": "U šta se pretvara energija hrane kada trčimo?",
       "odgovori": [
         "U kinetičku energiju i toplotu",
-        "U svetlost",
-        "U masu",
-        "Ni u šta"
+        "U svetlost koju telo slabo zrači",
+        "U masu, pa telo posle trčanja postaje teže",
+        "Ni u šta – energija hrane nestaje"
       ],
       "zanimljivost": "Pri trčanju telo se zagreva – zato se znojimo.",
       "rec": "hrana"
@@ -3555,9 +3555,9 @@
       "pitanje": "Šta je snaga?",
       "odgovori": [
         "Rad izvršen u jedinici vremena",
-        "Sila",
-        "Energija mirovanja",
-        "Masa"
+        "Sila koja deluje na telo",
+        "Energija koju telo ima u mirovanju na tlu",
+        "Masa tela koje vrši rad"
       ],
       "zanimljivost": "Dva radnika istog rada – ali brži ima veću snagu.",
       "rec": "snaga",
@@ -3598,9 +3598,9 @@
       "pitanje": "Šta je konjska snaga?",
       "odgovori": [
         "Stara jedinica za snagu – oko 736 W",
-        "Snaga jednog konja uvek",
-        "Masa konja",
-        "Brzina konja"
+        "Snaga jednog jakog konja, uvek potpuno ista",
+        "Masa prosečnog konja izražena u kilogramima",
+        "Brzina konja u galopu, u km na sat"
       ],
       "zanimljivost": "Džejms Vat je smislio „konjsku snagu“ da bi uporedio parne mašine sa konjima koje su zamenjivale.",
       "rec": "konj"
@@ -3611,9 +3611,9 @@
       "pitanje": "Šta je koeficijent korisnog dejstva?",
       "odgovori": [
         "Odnos korisnog i ukupno uloženog rada",
-        "Snaga motora",
-        "Brzina mašine",
-        "Masa goriva"
+        "Najveća snaga motora koju on može da razvije",
+        "Najveća brzina kojom mašina može da radi",
+        "Masa goriva koju mašina potroši za jedan sat"
       ],
       "zanimljivost": "Nijedna mašina nema koeficijent 100% – deo energije se uvek pretvori u toplotu.",
       "rec": "korisno"
@@ -3637,8 +3637,8 @@
       "pitanje": "Šta znači da sijalica ima snagu 10 W?",
       "odgovori": [
         "Svake sekunde troši 10 J električne energije",
-        "Teška je 10 kg",
-        "Svetli 10 sati",
+        "Teška je 10 kg zajedno sa grlom i staklenim balonom",
+        "Svetli tačno 10 sati pre nego što potpuno pregori",
         "Ima 10 žica"
       ],
       "zanimljivost": "LED sijalica od 10 W svetli kao stara od 60–75 W.",
@@ -3676,8 +3676,8 @@
       "pitanje": "Zašto električni motori imaju veći koeficijent korisnog dejstva od benzinskih?",
       "odgovori": [
         "Manje energije se gubi na toplotu",
-        "Teži su",
-        "Brži su",
+        "Teži su, pa imaju mnogo veću snagu",
+        "Brži su, pa troše manje vremena na put",
         "Nemaju struju"
       ],
       "zanimljivost": "Električni motori imaju koeficijent i preko 90%.",
@@ -3689,8 +3689,8 @@
       "pitanje": "Šta je kilovat-čas (kWh)?",
       "odgovori": [
         "Jedinica za energiju – rad snage 1 kW tokom jednog sata",
-        "Jedinica za snagu",
-        "Jedinica za vreme",
+        "Jedinica za snagu električnih uređaja, isto što i 1.000 vati",
+        "Jedinica za vreme rada uređaja – broj sati koje uređaj radi",
         "Jedinica za silu"
       ],
       "zanimljivost": "Strujomer u kući broji potrošene kilovat-časove – za njih plaćamo račun.",
@@ -3728,9 +3728,9 @@
       "pitanje": "Gde se gubi energija u automobilskom motoru?",
       "odgovori": [
         "Uglavnom kao toplota (izduvni gasovi, hladnjak)",
-        "Pretvara se u masu",
-        "Nestaje bez traga",
-        "Ne gubi se"
+        "Pretvara se u masu, pa automobil postaje teži",
+        "Nestaje bez traga, jer se energija stalno troši i gubi",
+        "Ne gubi se – sva energija goriva ide samo u kretanje auta"
       ],
       "zanimljivost": "Zato motor ima hladnjak i ventilator.",
       "rec": "toplota"
@@ -3767,9 +3767,9 @@
       "pitanje": "Zašto se na mostovima i šinama ostavljaju razmaci (dilatacije)?",
       "odgovori": [
         "Da bi se metal mogao širiti leti bez oštećenja",
-        "Da bi bilo jeftinije",
-        "Da bi voda oticala",
-        "Zbog lepšeg zvuka"
+        "Da bi gradnja bila jeftinija, jer se troši manje čelika",
+        "Da bi kišnica oticala sa mosta i ne bi stvarala bare",
+        "Zbog lepšeg zvuka točkova voza dok prelaze preko šina"
       ],
       "zanimljivost": "„Tak-tak“ zvuk vožnje vozom potiče od tih razmaka između šina.",
       "rec": "dilatacija"
@@ -3780,9 +3780,9 @@
       "pitanje": "Zašto se telefonske i električne žice leti više ugibaju?",
       "odgovori": [
         "Leti se šire i produže",
-        "Leti su teže",
-        "Zbog ptica",
-        "Zbog vetra"
+        "Leti su teže zbog prašine",
+        "Zbog ptica koje sede na njima",
+        "Zbog vetra koji ih vuče dole"
       ],
       "zanimljivost": "Zimi se žice skrate i zategnu – zato se ne zatežu previše pri postavljanju.",
       "rec": "žice"
@@ -3806,8 +3806,8 @@
       "pitanje": "Na kom principu radi termometar sa tečnošću?",
       "odgovori": [
         "Tečnost se zagrevanjem širi i diže u cevčici",
-        "Tečnost se skuplja",
-        "Tečnost menja boju",
+        "Tečnost se pri zagrevanju skuplja i spušta u cevčici",
+        "Tečnost menja boju na višoj temperaturi, od plave ka crvenoj",
         "Tečnost isparava"
       ],
       "zanimljivost": "Danas se u termometrima umesto otrovne žive koristi obojeni alkohol ili digitalni senzori.",
@@ -3819,8 +3819,8 @@
       "pitanje": "Šta je bimetalna traka?",
       "odgovori": [
         "Dve spojene trake različitih metala koje se pri zagrevanju savijaju",
-        "Traka od jednog metala",
-        "Vrsta magneta",
+        "Traka napravljena od samo jednog metala koja se pri zagrevanju skraćuje",
+        "Vrsta jakog magneta od dva metala koji se ne mogu razdvojiti na toploti",
         "Električna žica"
       ],
       "zanimljivost": "Bimetalna traka radi kao prekidač u peglama i grejalicama – isključi struju kad se pregreje.",
@@ -3832,7 +3832,7 @@
       "pitanje": "Zašto ne treba ostaviti zatvorenu flašu vode u zamrzivaču?",
       "odgovori": [
         "Voda se pri mržnjenju širi i može da razbije flašu",
-        "Voda ispari",
+        "Voda u flaši ispari od hladnoće, pa se plastična flaša skupi",
         "Flaša se otopi",
         "Ništa se ne desi"
       ],
@@ -3858,8 +3858,8 @@
       "pitanje": "Da li se i gasovi šire pri zagrevanju?",
       "odgovori": [
         "Da, i to mnogo više od tečnosti i čvrstih tela",
-        "Ne",
-        "Samo neki",
+        "Ne, gasovi se pri zagrevanju uopšte ne šire, već se skupljaju",
+        "Samo neki gasovi, i to oni koji su teži od vazduha",
         "Skupljaju se"
       ],
       "zanimljivost": "Zato se balon na suncu „naduje“, a zimi na hladnom delimično splasne.",
@@ -3871,7 +3871,7 @@
       "pitanje": "Zašto se staklena čaša može pući kada u nju naglo sipamo vrelu vodu?",
       "odgovori": [
         "Unutrašnji deo se brzo širi, a spoljašnji ne stiže, pa nastaju naprezanja",
-        "Voda je teška",
+        "Vrela voda je teža od hladne, pa svojom težinom pritisne dno čaše i probije ga",
         "Staklo se topi",
         "Zbog pare"
       ],
@@ -3897,9 +3897,9 @@
       "pitanje": "Zašto se na betonskim pločnicima ostavljaju razmaci?",
       "odgovori": [
         "Da beton ne bi pucao pri širenju i skupljanju",
-        "Zbog trave",
-        "Zbog odvodnje vode samo",
-        "Zbog lepote"
+        "Zbog trave koja treba da raste između betonskih ploča",
+        "Zbog odvodnje kišnice, a nikako ne zbog temperature",
+        "Zbog lepote i šare koju razmaci prave na trotoaru"
       ],
       "zanimljivost": "Velika betonska ploča bez razmaka bi tokom godina popucala na nepravilnim mestima.",
       "rec": "beton"
@@ -3910,8 +3910,8 @@
       "pitanje": "Zašto se zavrtnji na šinama postavljaju sa „zazorom“ u rupama?",
       "odgovori": [
         "Da se šine mogu pomerati pri širenju i skupljanju",
-        "Da budu jeftiniji",
-        "Da se lako ukradu",
+        "Da budu jeftiniji, jer se manje čelika troši za izradu šina",
+        "Da se lakše odvrnu kada radnici menjaju stare i oštećene šine",
         "Bez razloga"
       ],
       "zanimljivost": "Na brzim prugama danas se šine zavaruju u duge trake, ali se prethodno zategnu da izdrže promene temperature.",
@@ -3923,8 +3923,8 @@
       "pitanje": "Zašto ne treba pumpati gume do maksimuma po velikoj vrućini?",
       "odgovori": [
         "Vazduh u gumi se dodatno širi i pritisak raste",
-        "Guma postaje teža",
-        "Guma se skuplja",
+        "Guma postaje teža od vrelog vazduha, pa se brže troši na asfaltu",
+        "Guma se skuplja na vrućini, pa vazduh brže izlazi kroz ventil",
         "Nema veze"
       ],
       "zanimljivost": "Pritisak u gumama se proverava kada su „hladne“, pre vožnje.",
@@ -3936,9 +3936,9 @@
       "pitanje": "Šta je toplotno širenje?",
       "odgovori": [
         "Povećanje dimenzija tela pri zagrevanju",
-        "Smanjenje mase",
-        "Promena boje",
-        "Topljenje"
+        "Smanjenje mase tela pri jakom zagrevanju",
+        "Promena boje tela pri veoma jakom zagrevanju",
+        "Topljenje tela kada se zagreje do tačke ključanja"
       ],
       "zanimljivost": "Mostovi su zato često oslonjeni na valjke – da mogu da „klize“ dok se šire.",
       "rec": "most"
@@ -3966,9 +3966,9 @@
       "pitanje": "Koje su dve tačke na Celzijusovoj skali?",
       "odgovori": [
         "0 °C – topljenje leda i 100 °C – ključanje vode",
-        "0 °C i 50 °C",
-        "10 °C i 100 °C",
-        "0 °C i 1.000 °C"
+        "0 °C – ključanje vode i 50 °C – topljenje leda u vodi",
+        "10 °C – sobna temperatura i 100 °C – ključanje vode",
+        "0 °C – topljenje leda i 1.000 °C – topljenje gvožđa"
       ],
       "zanimljivost": "Anders Celzijus je prvobitno postavio skalu obrnuto – 100 je bila tačka mržnjenja!",
       "rec": "celzijus"
@@ -4035,9 +4035,9 @@
       "pitanje": "Kolika je normalna telesna temperatura čoveka?",
       "odgovori": [
         "Oko 36,5–37 °C",
-        "Oko 30 °C",
-        "Oko 40 °C",
-        "Oko 25 °C"
+        "Oko 30 °C (kao u sobi)",
+        "Oko 40 °C (stalno)",
+        "Oko 25 °C (kao voda u moru)"
       ],
       "zanimljivost": "Tokom dana temperatura se menja za oko pola stepena.",
       "rec": "telo"
@@ -4061,9 +4061,9 @@
       "pitanje": "Šta zapravo pokazuje temperatura?",
       "odgovori": [
         "Koliko se brzo u proseku kreću čestice tela",
-        "Količinu toplote",
-        "Masu",
-        "Gustinu"
+        "Količinu toplote koju telo sadrži u sebi i oslobađa",
+        "Masu tela izraženu u kilogramima ili gramima",
+        "Gustinu tela, odnosno koliko je ono teško po komadu"
       ],
       "zanimljivost": "Što se čestice brže kreću, telo je toplije.",
       "rec": "čestice"
@@ -4104,9 +4104,9 @@
       "pitanje": "Šta je digitalni termometar?",
       "odgovori": [
         "Termometar sa elektronskim senzorom i ekranom",
-        "Termometar sa živom",
-        "Termometar od leda",
-        "Barometar"
+        "Termometar sa živom u tankoj staklenoj cevčici",
+        "Termometar napravljen od leda, soli i obojene vode",
+        "Barometar koji meri pritisak, vlažnost i temperaturu"
       ],
       "zanimljivost": "Infracrveni termometri mere temperaturu i bez dodira – po zračenju koje telo emituje.",
       "rec": "digitalni"
@@ -4117,9 +4117,9 @@
       "pitanje": "Zašto se ne preporučuje živin termometar u kući?",
       "odgovori": [
         "Živa je otrovna ako se termometar razbije",
-        "Pokazuje pogrešno",
-        "Preskup je",
-        "Preteški je"
+        "Pokazuje pogrešno, za nekoliko stepeni više",
+        "Preskup je za običnu porodicu i domaćinstvo",
+        "Preteški je, pa se lako ispusti iz ruke i polomi"
       ],
       "zanimljivost": "Od 2009. živini termometri u Evropskoj uniji uglavnom su zabranjeni za prodaju.",
       "rec": "živa"
@@ -4143,8 +4143,8 @@
       "pitanje": "Ko je predložio apsolutnu temperaturnu skalu?",
       "odgovori": [
         "Lord Kelvin (Vilijam Tomson)",
-        "Celzijus",
-        "Farenhajt",
+        "Anders Celzijus (astronom iz Švedske)",
+        "Danijel Farenhajt (fizičar iz Nemačke)",
         "Njutn"
       ],
       "zanimljivost": "Kelvin je dobio plemićku titulu i ime po reci Kelvin u Glazgovu.",
@@ -4156,7 +4156,7 @@
       "pitanje": "Šta čini supstancu, prema čestičnoj teoriji?",
       "odgovori": [
         "Mnoštvo sitnih čestica (atoma i molekula) u stalnom kretanju",
-        "Od polja",
+        "Neprekidna masa bez ikakvih praznina i delova, koja se ne može deliti",
         "Od svetlosti",
         "Od zvuka"
       ],
@@ -4169,9 +4169,9 @@
       "pitanje": "Šta je difuzija?",
       "odgovori": [
         "Spontano mešanje čestica različitih supstanci",
-        "Topljenje",
-        "Isparavanje",
-        "Kristalizacija"
+        "Topljenje čvrstog tela kad se zagreje do tačke topljenja",
+        "Isparavanje tečnosti sa površine na svakoj temperaturi",
+        "Kristalizacija – stvaranje kristala iz zasićenog rastvora"
       ],
       "zanimljivost": "Kada u čašu vode staviš kap mastila, ona se sama polako raširi – to je difuzija.",
       "rec": "difuzija",
@@ -4199,9 +4199,9 @@
       "pitanje": "Šta je Braunovo kretanje?",
       "odgovori": [
         "Nasumično drhtanje sitnih čestica u tečnosti zbog udara molekula",
-        "Kretanje planeta",
-        "Kretanje struje",
-        "Kretanje svetlosti"
+        "Kretanje planeta oko Sunca po elipsama, koje je opisao astronom Robert Braun",
+        "Kretanje električne struje kroz tečnost, koje je otkrio fizičar Robert Braun",
+        "Kretanje svetlosti kroz vodu u cik-cak liniji, koje je opisao naučnik Robert Braun"
       ],
       "zanimljivost": "Ajnštajn je 1905. objasnio Braunovo kretanje i time pomogao da se konačno dokaže postojanje atoma.",
       "rec": "braun"
@@ -4212,9 +4212,9 @@
       "pitanje": "Kakvo je toplotno kretanje čestica?",
       "odgovori": [
         "Neprekidno i haotično (nesređeno)",
-        "Uvek pravolinijsko",
-        "Stalno u krug",
-        "Ne postoji"
+        "Uvek pravolinijsko, u jednom smeru",
+        "Stalno u krug oko jednog središta",
+        "Ne postoji – čestice stoje na mestu"
       ],
       "zanimljivost": "Molekuli vazduha u sobi kreću se brzinom od oko 500 m/s – brže od zvuka!",
       "rec": "haos"
@@ -4225,9 +4225,9 @@
       "pitanje": "Kako su raspoređene čestice u čvrstom telu?",
       "odgovori": [
         "Gusto, osciluju oko stalnih položaja",
-        "Slobodno lete",
-        "Daleko su jedna od druge",
-        "Ne postoje"
+        "Slobodno lete po celoj posudi",
+        "Daleko su jedna od druge, isto kao u gasu",
+        "Ne postoje – čvrsto telo nema čestice"
       ],
       "zanimljivost": "Zato čvrsta tela imaju stalan oblik.",
       "rec": "kristal"
@@ -4238,9 +4238,9 @@
       "pitanje": "Kako se kreću čestice u gasu?",
       "odgovori": [
         "Slobodno, na velikim rastojanjima, i sudaraju se",
-        "Stoje u mestu",
-        "Osciluju u mestu",
-        "Ne kreću se"
+        "Stoje u mestu, čvrsto vezane jedna za drugu kao u ledu",
+        "Osciluju oko stalnih položaja, isto kao čestice u kristalu",
+        "Ne kreću se uopšte, osim kada se gas veoma jako zagreje"
       ],
       "zanimljivost": "Zato gas zauzima ceo prostor posude.",
       "rec": "gas"
@@ -4251,9 +4251,9 @@
       "pitanje": "Zašto miris parfema brzo ispuni celu sobu?",
       "odgovori": [
         "Zbog kretanja i mešanja čestica (difuzije)",
-        "Zbog vetra uvek",
-        "Zbog gravitacije",
-        "Zbog svetlosti"
+        "Zbog vetra koji uvek duva kroz otvorene prozore",
+        "Zbog gravitacije koja vuče miris naniže, ka podu",
+        "Zbog svetlosti koja nosi čestice mirisa kroz sobu"
       ],
       "zanimljivost": "Pas može da nanjuši pojedinačne molekule mirisa u koncentracijama hiljadama puta manjim nego čovek.",
       "rec": "parfem"
@@ -4264,7 +4264,7 @@
       "pitanje": "Šta je molekul vode?",
       "odgovori": [
         "Dva atoma vodonika i jedan atom kiseonika",
-        "Jedan atom",
+        "Jedan jedini atom vode, nedeljiv na delove",
         "Tri atoma kiseonika",
         "Atom ugljenika i kiseonika"
       ],
@@ -4320,9 +4320,9 @@
       "pitanje": "Zašto se šećer brže rastvara u toplom čaju?",
       "odgovori": [
         "Čestice se brže kreću i mešaju",
-        "Šećer je lakši",
-        "Čaj je slađi",
-        "Nema razlike"
+        "Šećer je mnogo lakši u toploj vodi",
+        "Čaj je mnogo slađi kada je topao",
+        "Nema razlike u brzini rastvaranja"
       ],
       "zanimljivost": "Mešanje kašičicom takođe ubrzava rastvaranje.",
       "rec": "šećer"
@@ -4346,9 +4346,9 @@
       "pitanje": "Kakvo je kretanje molekula na višoj temperaturi u gasu?",
       "odgovori": [
         "Brže i sudaraju se češće i jače",
-        "Sporije",
-        "Ne kreću se",
-        "Kreću se samo naviše"
+        "Sporije i sudaraju se ređe nego inače",
+        "Ne kreću se uopšte, već stoje u mestu",
+        "Kreću se samo naviše, ka vrhu posude"
       ],
       "zanimljivost": "Zato se pritisak gasa u zatvorenoj posudi povećava sa temperaturom.",
       "rec": "pritisak"
@@ -4372,9 +4372,9 @@
       "pitanje": "Na koja dva načina se može promeniti unutrašnja energija tela?",
       "odgovori": [
         "Vršenjem rada i razmenom toplote",
-        "Samo bojenjem",
-        "Samo pomeranjem",
-        "Ne može se menjati"
+        "Samo bojenjem tela u tamnu ili crnu boju",
+        "Samo pomeranjem tela sa jednog mesta na drugo",
+        "Ne može se menjati ni na koji način uopšte"
       ],
       "zanimljivost": "Pumpa za bicikl se zagreje kada naduvavaš gumu – rad prelazi u unutrašnju energiju.",
       "rec": "načini"
@@ -4385,7 +4385,7 @@
       "pitanje": "Šta je toplota (količina toplote)?",
       "odgovori": [
         "Energija koja prelazi sa toplijeg na hladnije telo",
-        "Isto što i temperatura",
+        "Isto što i temperatura tela izražena u stepenima Celzijusa",
         "Vrsta goriva",
         "Brzina čestica"
       ],
@@ -4398,9 +4398,9 @@
       "pitanje": "Koja je razlika između temperature i toplote?",
       "odgovori": [
         "Temperatura pokazuje zagrejanost, a toplota je prenesena energija",
-        "Nema razlike",
-        "Toplota se meri termometrom",
-        "Temperatura se meri u džulima"
+        "Nema razlike – temperatura i toplota su dva naziva za istu veličinu i mere se isto",
+        "Toplota se meri termometrom u stepenima, a temperatura u džulima na vagi",
+        "Temperatura se meri u džulima, a toplota u stepenima Celzijusa ili kelvinima"
       ],
       "zanimljivost": "Varnica od 1.000 °C ne opeče jer nosi malo energije, a kada vruće vode od 60 °C može da opeče.",
       "rec": "razlika"
@@ -4411,9 +4411,9 @@
       "pitanje": "Kako se zagrevaju ruke kada ih trljamo?",
       "odgovori": [
         "Rad sile trenja povećava unutrašnju energiju",
-        "Krv brže teče od sunca",
-        "Ne zagrevaju se",
-        "Vazduh ih greje"
+        "Krv mnogo brže teče kroz ruke od sunčeve toplote",
+        "Ne zagrevaju se uopšte – samo nam se tako čini",
+        "Vazduh između dlanova ih greje kao fen za kosu"
       ],
       "zanimljivost": "Slično se i meteori užare pri prolasku kroz atmosferu.",
       "rec": "trljanje"
@@ -4424,7 +4424,7 @@
       "pitanje": "Kada se dva tela različite temperature dodiruju, šta se dešava?",
       "odgovori": [
         "Toplija se hlade, a hladnija zagrevaju dok se temperature ne izjednače",
-        "Oba se zagrevaju",
+        "Oba tela se zagrevaju, jer trenje pri dodiru stvara dodatnu toplotu u njima",
         "Oba se hlade",
         "Ništa"
       ],
@@ -4437,9 +4437,9 @@
       "pitanje": "Koji su načini prenošenja toplote?",
       "odgovori": [
         "Provođenje, strujanje i zračenje",
-        "Samo provođenje",
-        "Samo zračenje",
-        "Trenje i zvuk"
+        "Samo provođenje kroz metale i drvo",
+        "Samo zračenje sa Sunca ka Zemlji danju",
+        "Trenje, zvuk i svetlost u vazduhu"
       ],
       "zanimljivost": "Toplota Sunca do nas stiže samo zračenjem – kroz prazan svemir.",
       "rec": "prenos"
@@ -4450,9 +4450,9 @@
       "pitanje": "Zašto se metalna kašika u vrelom čaju brzo zagreje?",
       "odgovori": [
         "Metali dobro provode toplotu",
-        "Kašika je tanka",
-        "Čaj je slan",
-        "Nema razloga"
+        "Kašika je veoma tanka i lagana",
+        "Čaj je slan, pa brzo greje metal",
+        "Nema razloga – to se samo tako čini"
       ],
       "zanimljivost": "Drvene i plastične drške na šerpama postavljaju se jer slabo provode toplotu.",
       "rec": "kašika"
@@ -4476,8 +4476,8 @@
       "pitanje": "Kako se toplota prenosi kroz vodu u šerpi na šporetu?",
       "odgovori": [
         "Strujanjem – topla voda se diže, a hladna spušta",
-        "Zračenjem samo",
-        "Ne prenosi se",
+        "Samo zračenjem – plamen šporeta zrači toplotu kroz dno šerpe",
+        "Ne prenosi se – zagreva se samo voda na samom dnu šerpe",
         "Kroz poklopac"
       ],
       "zanimljivost": "Isto strujanje u atmosferi stvara vetrove i oblake.",
@@ -4489,9 +4489,9 @@
       "pitanje": "Zašto je za zagrevanje vode potrebno mnogo više energije nego za zagrevanje iste mase peska?",
       "odgovori": [
         "Voda ima veliki specifični toplotni kapacitet",
-        "Voda je teža",
-        "Pesak je mokar",
-        "Nije potrebno više"
+        "Voda je teža od peska pa je potrebno više energije",
+        "Pesak je mokar, pa se mnogo teže zagreje od vode",
+        "Nije potrebno više – pesak i voda se zagreju isto"
       ],
       "zanimljivost": "Zato je pesak na plaži vreo, a more prijatno – i zato more ublažava klimu primorja.",
       "rec": "kapacitet"
@@ -4502,9 +4502,9 @@
       "pitanje": "Zašto je posle kočenja bicikla kočnica topla?",
       "odgovori": [
         "Kinetička energija je prešla u unutrašnju energiju",
-        "Zbog sunca",
-        "Zbog trenja vazduha",
-        "Nije topla"
+        "Zbog sunca koje je zagrejalo metal tokom vožnje",
+        "Zbog trenja vazduha koji duva preko kočnice dok vozimo",
+        "Nije topla – kočnica ostaje hladna i posle dugog kočenja"
       ],
       "zanimljivost": "Kočnice trkačkih automobila mogu se usijati do crvene boje.",
       "rec": "kočnica"
@@ -4515,8 +4515,8 @@
       "pitanje": "Kako termos-boca čuva toplotu?",
       "odgovori": [
         "Vakuum između zidova sprečava provođenje i strujanje, a sjajni zid zračenje",
-        "Ima grejač",
-        "Ima led",
+        "Ima mali grejač u dnu koji se puni toplotom ruku, pa održava piće toplim i nekoliko sati",
+        "Ima sloj leda između zidova koji ne dozvoljava toploti da izađe iz boce ni posle par sati",
         "Debelom plastikom"
       ],
       "zanimljivost": "Termos je izumeo škotski naučnik Džejms Djuar 1892, za čuvanje hladnih tečnih gasova.",
@@ -4528,8 +4528,8 @@
       "pitanje": "Zašto zimi nosimo vunene rukavice?",
       "odgovori": [
         "Slabo provode toplotu i zadržavaju toplotu ruke",
-        "Grejaju same od sebe",
-        "Zbog boje",
+        "Grejaju same od sebe, jer vuna proizvodi toplotu",
+        "Zbog tamne boje vune koja upija sunčevu svetlost",
         "Zbog mode"
       ],
       "zanimljivost": "Rukavice ne „greju“ – one samo usporavaju da toplota tela izađe napolje.",
@@ -4541,8 +4541,8 @@
       "pitanje": "Zašto se pri sabijanju gasa u pumpi on zagreva?",
       "odgovori": [
         "Rad sile se pretvara u unutrašnju energiju gasa",
-        "Zbog trenja ruke",
-        "Zbog sunca",
+        "Zbog trenja ruke o ručku pumpe dok pumpamo gume bicikla",
+        "Zbog sunca koje greje pumpu dok pumpamo bicikl napolju",
         "Ne zagreva se"
       ],
       "zanimljivost": "Dizel motor radi bez svećice – vazduh se sabije toliko da se zagreje i zapali gorivo.",
