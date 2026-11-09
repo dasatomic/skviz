@@ -25,6 +25,11 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | biologija | darvin.jpg | Charles_Darwin_seated.jpg: Henry Maull (1829–1914) and John Fox (1832–1907) (Mau | Public domain | [izvor](https://en.wikipedia.org/wiki/Charles_Darwin) |
 | biologija | mendel.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Gregor_Mendel) |
 | biologija | pasteur.jpg | Paul Nadar | Public domain | [izvor](https://en.wikipedia.org/wiki/Louis_Pasteur) |
+| biologija | raflezija.jpg | LukeTriton | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Rafflesia_arnoldii) |
+| biologija | dodo.jpg | BazzaDaRambler | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Dodo) |
+| biologija | celakant.png | Bruce A.S. Henderson | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Coelacanth) |
+| biologija | droplja.jpg | Andrej Chudý from Slovakia | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Great_bustard) |
+| biologija | limulus.jpg | Hans Hillewaert | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Atlantic_horseshoe_crab) |
 | fizika | ajnstajn.jpg | Oren Jack Turner | Public domain | [izvor](https://en.wikipedia.org/wiki/Albert_Einstein) |
 | fizika | kiri.jpg | Henri Manuel | Public domain | [izvor](https://en.wikipedia.org/wiki/Marie_Curie) |
 | fizika | njutn.jpg | Godfrey Kneller | Public domain | [izvor](https://en.wikipedia.org/wiki/Isaac_Newton) |
@@ -38,6 +43,7 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | fizika | tesla-kolorado.jpg | Dickenson V. Alley, photographer, Century Magazine | Public domain | [izvor](https://commons.wikimedia.org/wiki/File%3ATesla%20colorado%20adjusted.jpg) |
 | fizika | raderford.jpg | Bain News Service, publisher Restored by: Bammesk | Public domain | [izvor](https://en.wikipedia.org/wiki/Ernest_Rutherford) |
 | fizika | crna-rupa.jpg | Event Horizon Telescope, uploader cropped and converted TIF to JPG | CC BY 4.0 | [izvor](https://commons.wikimedia.org/wiki/File%3ABlack%20hole%20-%20Messier%2087%20crop%20max%20res.jpg) |
+| fizika | takoma.jpg | University of Washington Libraries Digital Collections | Public domain | [izvor](https://en.wikipedia.org/wiki/Tacoma_Narrows_Bridge_(1940)) |
 | geografija | uvac.jpg | Vladimir Mijailović | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Uvac_Special_Nature_Reserve) |
 | geografija | djavolja-varos.jpg | Dimo Dimov | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/%C4%90avolja_Varo%C5%A1) |
 | geografija | golubac.jpg | Ynhockey | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Golubac_Fortress) |
@@ -92,6 +98,8 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | manastiri | ostrog.jpg | Diego Delso | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Ostrog_Monastery) |
 | manastiri | ruzica.jpg | This image was made by White Writer. Please credit this with : "White Writer, Wi | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Ru%C5%BEica_Church) |
 | manastiri | crkva-svetog-marka.jpg | Petar Milošević | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Church_of_Saint_Mark%2C_Belgrade) |
+| manastiri | gradac.jpg | M.radosavljevic | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Gradac_Monastery) |
+| manastiri | banjska.jpg | Konstantin Novakovic | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Banjska_Monastery) |
 | muzicko | mocart.jpg | Johann Nepomuk della Croce | Public domain | [izvor](https://en.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart) |
 | muzicko | betoven.jpg | Joseph Karl Stieler | Public domain | [izvor](https://en.wikipedia.org/wiki/Ludwig_van_Beethoven) |
 | muzicko | bah.jpg | Elias Gottlob Haussmann | Public domain | [izvor](https://en.wikipedia.org/wiki/Johann_Sebastian_Bach) |
@@ -105,7 +113,6 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | muzicko | tuba.jpg | Yamaha Corporation | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Tuba) |
 | muzicko | kontrabas.jpg | User:AndrewKepert | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Double_bass) |
 | muzicko | trombon.jpg | Yamaha Corporation | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Trombone) |
-| muzicko | saksofon.png | Jonathanischoice | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Saxophone) |
 | muzicko | gusle.jpg | Gmihail at Serbian Wikipedia | CC BY-SA 3.0 rs | [izvor](https://sr.wikipedia.org/wiki/%D0%93%D1%83%D1%81%D0%BB%D0%B5) |
 | muzicko | tamburica.jpg | Dejan Krsmanovic | CC BY 2.0 | [izvor](https://sr.wikipedia.org/wiki/%D0%A2%D0%B0%D0%BC%D0%B1%D1%83%D1%80%D0%B0) |
 | muzicko | stradivari.jpg | Geni | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Messiah_Stradivarius) |
@@ -141,11 +148,9 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | srpska-istorija | lepenski-vir.jpg | Myself | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Lepenski_Vir) |
 | srpska-istorija | romulijana.jpg | Unknown authorUnknown author | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Gamzigrad) |
 | srpska-istorija | neznani-junak.jpg | Ivanbuki | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Monument_to_the_Unknown_Hero) |
-| srpska-istorija | cele-kula.jpg | martijnmunneke | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Skull_Tower) |
 | srpska-istorija | miroslavljevo.jpg | anonimus | Public domain | [izvor](https://en.wikipedia.org/wiki/Miroslav_Gospel) |
 | srpska-istorija | oktoih.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Cetinje_Octoechos) |
 | srpska-istorija | stecak.jpg | Litany | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Ste%C4%87ak) |
-| srpska-istorija | kalemegdan.jpg | Oliver Bunic | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Belgrade_Fortress) |
 | srpska-istorija | rajs.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Archibald_Reiss) |
 | srpska-istorija | elsi-inglis.jpg | Balfour, Lady Francis | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Elsie_Inglis) |
 | srpska-istorija | flora-sends.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Flora_Sandes) |
@@ -290,7 +295,6 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | umetnost | firentinska-katedrala.jpg | Gary Campbell-Hall | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Florence_Cathedral) |
 | umetnost | grand-zat.jpg | Georges Seurat | Public domain | [izvor](https://en.wikipedia.org/wiki/A_Sunday_Afternoon_on_the_Island_of_La_Grande_Jatte) |
 | umetnost | vilendorf.jpg | User:MatthiasKabel | CC BY 2.5 | [izvor](https://en.wikipedia.org/wiki/Venus_of_Willendorf) |
-| umetnost | vitraz.jpg | PtrQs | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Stained_glass) |
 | umetnost | veliki-talas.jpg | Katsushika Hokusai | Public domain | [izvor](https://en.wikipedia.org/wiki/The_Great_Wave_off_Kanagawa) |
 | umetnost | americka-gotika.jpg | Grant Wood | Public domain | [izvor](https://en.wikipedia.org/wiki/American_Gothic) |
 | umetnost | laokon.jpg | Wilfredor | CC0 | [izvor](https://en.wikipedia.org/wiki/Laoco%C3%B6n_and_His_Sons) |
