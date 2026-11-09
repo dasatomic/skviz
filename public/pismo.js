@@ -16,11 +16,53 @@
   const OPERATORI = '=+−-·×÷/^<>()';
   const INDEKSI = /[\u00B2\u00B3\u00B9\u2070-\u209F\u1D2C-\u1D6A]/; // gornji i donji indeksi (², ₂, ᵇ, ⁿ)
   // međunarodne skraćenice koje se i u ćiriličnom tekstu pišu latinicom (ДНК, САД, ТВ… se preslovljavaju)
-  const SKRACENICE = new Set(['GPS', 'GIS', 'LHC', 'BCG', 'HPV', 'MVP', 'CERN', 'ABO', 'AA', 'AAA', 'USB', 'WC', 'Rh', 'HIPPO', 'SOS']);
+  const SKRACENICE = new Set(['BTS', 'ILM', 'IUCN', 'RGB', 'OASIS', 'GPS', 'GIS', 'LHC', 'BCG', 'HPV', 'MVP', 'CERN', 'ABO', 'AA', 'AAA', 'USB', 'WC', 'Rh', 'HIPPO', 'SOS']);
   // hemijski simboli (u tekstovima o elementima ostaju latinicom: Au, Fe, Pb, N, Ca…)
   const SIMBOLI = new Set(('H He Li Be B C N O F Ne Na Mg Al Si P S Cl Ar K Ca Ti Cr Mn Fe Co Ni Cu Zn As Se Br Kr Ag Sn Sb I Xe ' +
     'Ba Pt Au Hg Pb Bi Po Rn Ra U Pu W Ur Sr Cs').split(' '));
   const SRPSKE_RECI = new Set(['ne', 'na', 'ni', 'po', 'se', 'li', 'i', 'u', 'as']);
+  // Strane reči i imena koja se i u ćiriličnom tekstu pišu izvorno (igre, brendovi, naslovi, latinski nazivi vrsta,
+  // italijanske muzičke oznake). Ostaju latinicom i sa padežnim nastavkom (Minecraftu, Cupheada, Netherita).
+  // Prepisana imena (Hari Poter, Dart Vejder, Piksar) se preslovljavaju normalno.
+  // Ovde ne smeju reči koje postoje i u srpskom (love, star, let, me, on, king…).
+  const STRANE = new Set((
+    // video-igre
+    'minecraft cuphead mugman chalice fortnite terraria creeper enderman ender end nether netherit redstone villagers notch ' +
+    'pac bulbasaur nintendo jumpman ' +
+    // brendovi, kompanije, studiji
+    'google microsoft apple ghibli pictures animation studios industrial light magic illumination amblin reese pieces ' +
+    // filmovi, serije, pesme, likovi (izvorni nazivi)
+    'stranger things thing finger hand hunters huntr kpop blackpink golden girls frozen trek bourne fight club hook ' +
+    'eleven elder kettle dice ms miss cup coffee delicious course riddle dumbledore running hill that take it africa ' +
+    'motion capture phone home run gun thriller dangerous bad abba europe bells jingle mamma nessun dorma clair ' +
+    'submarine bohemian little nevermore nišville ' +
+    // pojedinačni strani izrazi u zagradama i navodima
+    'cell ground hubble pollution poaching passerines appeasement nuclear disarmament straddle dripping uffizi plumber ' +
+    'plumbum godt leg vous dirai maman lune della ' +
+    // latinski: nazivi vrsta i izreke
+    'homo sapiens erectus habilis neanderthalensis floresiensis lactobacillus bulgaricus penicillium turritopsis dohrnii naegleria palingenia longicauda ' +
+    'centum mille passus septem omnis cellula carpe diem mens sana corpore sano perpetuum mobile ' +
+    // muzičke oznake (italijanski)
+    'allegro adagio crescendo decrescendo fortissimo pianissimo ff pp mf mp ' +
+    // engleske službene reči (ne postoje u srpskom)
+    'the of and with from is am are up off all').split(/\s+/).filter(Boolean));
+  const NASTAVCI = /^(a|u|om|e|i|ima|ov|ova|ove|ovi|ovo|ovog|ovom|ovu|ovih|ovim|ovoj|ovim)$/;
+  // samo kad su sami u navodu: „love“ (tenis) – inače je to srpska reč (love)
+  const STRANE_U_NAVODU = new Set(['love']);
+  function strana(tok) {
+    if (/[qwxyQWXY]/.test(tok) && /[a-z]/.test(tok)) return true; // ne XIV, HUNTR/X
+    const m = tok.toLowerCase();
+    if (STRANE.has(m)) return true;
+    for (let k = m.length - 1; k >= 4; k--) if (NASTAVCI.test(m.slice(k)) && STRANE.has(m.slice(0, k))) return true;
+    return false;
+  }
+  // deo teksta (ceo tekst, navod, zagrada) koji je u celini strani naziv: sve reči su strane ili pišu velikim slovom,
+  // a bar jedna je strana – „Ace of Base“, „(Elder Kettle)“, „(E.T. phone home)“
+  function straniNaziv(deo) {
+    const reci = deo.match(/[A-Za-zČĆŽŠĐčćžšđ]+/g);
+    if (!reci || !reci.some(strana)) return false;
+    return reci.every((r) => strana(r) || /^[A-ZČĆŽŠĐ]/.test(r));
+  }
   const RIMSKI = /^(?=[MDCLXVI])M{0,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$/;
 
   function recUCir(t) {
@@ -45,7 +87,9 @@
     if (/[qwxyQWXY]/.test(tok)) return true;                                 // strane reči
     if (/\d/.test(tok)) return true;                                         // 5G, mp3
     if (/[a-zčćžšđ][A-ZČĆŽŠĐ]/.test(tok) && tok !== 'BiH') return true;      // NaCl, iPhone, pH
+    if (strana(tok)) return true;                                            // Minecraft, Homo sapiens, allegro
     const pre = tekst.slice(0, i), posle = tekst.slice(i + tok.length);
+    if (/^[A-Z]{1,3}$/.test(tok) && /^-\d/.test(posle)) return true;         // oznake robota: BB-8, IG-88
     const preZnak = (pre.match(/(\S)\s?$/) || [])[1] || '';                  // znak neposredno pre (najviše jedan razmak)
     const posleZnak = (posle.match(/^\s?(\S)/) || [])[1] || '';
     const odmahPre = pre.slice(-1), odmahPosle = posle.slice(0, 1);
@@ -128,7 +172,28 @@
     }
     for (const m of tekst.matchAll(/(?:\b[A-Z]\b[\s,]+){4,}\b[A-Z]\b/g)) nizovi.push([m.index, m.index + m[0].length]);
     // navodnici sa stranim tekstom („How Far I'll Go“, „ROY G BIV“) – ceo navod latinicom
-    for (const m of tekst.matchAll(/„([^“”]+)[“”]/g)) if (/[qwxyQWXY]/.test(m[1])) nizovi.push([m.index, m.index + m[0].length]);
+    // isto i za navod sa stranom reči („Running Up That Hill“, „Carpe diem“), i zagradu koja je ceo strani naziv („(King Dice)“)
+    // ceo tekst (bez navoda i zagrada) je strani naziv: „Ace of Base“, „Homo sapiens (moderan čovek)“
+    for (const m of tekst.matchAll(/\b[A-Z]&[A-Z]('s)?\b/g)) nizovi.push([m.index, m.index + m[0].length]); // M&M's, R&B
+    const vanZagrada = tekst.replace(/„[^“”]*[“”]|\([^()]*\)/g, (z) => ' '.repeat(z.length));
+    if (straniNaziv(vanZagrada)) for (const m of vanZagrada.matchAll(TOKEN)) nizovi.push([m.index, m.index + m[0].length]);
+    for (const m of tekst.matchAll(/„([^“”]+)[“”]/g)) {
+      if (/[qwxyQWXY]/.test(m[1]) || (m[1].match(TOKEN) || []).some(strana) || STRANE_U_NAVODU.has(m[1])) nizovi.push([m.index, m.index + m[0].length]);
+    }
+    for (const m of tekst.matchAll(/\(([^()]+)\)/g)) if (straniNaziv(m[1])) nizovi.push([m.index, m.index + m[0].length]);
+    // višečlani strani nazivi u rečenici: uz stranu reč ostaju latinicom i susedne reči sa velikim slovom
+    // („KPop Demon Hunters“, „Studio Ghibli“, „Pac-Man“), osim na početku rečenice („U Minecraftu…“)
+    const tokeni = [...tekst.matchAll(TOKEN)];
+    const pocetak = (k) => k === 0 || /[.!?:]\s*[„"]?$/.test(tekst.slice(tokeni[k - 1].index + tokeni[k - 1][0].length, tokeni[k].index));
+    const spojeni = (k) => /^(\s|-|\s&\s|')$/.test(tekst.slice(tokeni[k].index + tokeni[k][0].length, tokeni[k + 1].index));
+    const velikim = (k) => /^[A-ZČĆŽŠĐ][A-Za-zČĆŽŠĐčćžšđ]+$/.test(tokeni[k][0]) && !pocetak(k);
+    tokeni.forEach((m, k) => {
+      if (!strana(m[0]) || !/^[A-ZČĆŽŠĐ]/.test(m[0])) return;
+      let a = k, b = k;
+      while (a > 0 && spojeni(a - 1) && velikim(a - 1)) a--;
+      while (b < tokeni.length - 1 && spojeni(b) && velikim(b + 1)) b++;
+      if (a < k || b > k) nizovi.push([tokeni[a].index, tokeni[b].index + tokeni[b][0].length]);
+    });
     const uNizu = (i) => nizovi.some(([a, b]) => i >= a && i < b);
     return tekst.replace(TOKEN, (tok, i) => (uNizu(i) || latinicom(tok, i, tekst) ? tok : recUCir(tok)));
   }

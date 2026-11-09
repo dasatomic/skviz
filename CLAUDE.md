@@ -12,7 +12,7 @@ Ceo interfejs, pitanja i komentari u kodu su na **srpskom (latinica)**. Igrači 
 - `server.js` – HTTP + Server-Sent Events (`/api/dogadjaji`), akcije preko `POST /api/akcija`.
 - `lib/soba.js` – tok igre: lobi → uvod → pitanje/otkrivanje ×N → tabela → reči ×N → tabela → kraj.
 - Pismo: podrazumevano ćirilica za ceo prikaz (`podesavanja.pismo`, na početnom ekranu izbor po uređaju). Kod i `kviz.json` ostaju na latinici – `public/app.js` preslovljava DOM u hodu (`tr`, `prevedi`, MutationObserver); izuzeci: `[data-lat]`, `.formula`, kod sobe, adresa, strane reči (q/w/x/y) i oznake sa ciframa (H2O).
-- Pravila preslovljavanja su u `public/pismo.js` (rimski brojevi, formule, jedinice, hemijski simboli, krvne grupe, strani navodi ostaju latinicom); provera nad svim pitanjima: `node -e "require('./public/pismo.js').uCirilicu('…')"`.
+- Pravila preslovljavanja su u `public/pismo.js` (rimski brojevi, formule, jedinice, hemijski simboli, krvne grupe, strani navodi ostaju latinicom; izvorno pisani strani nazivi – igre, brendovi, naslovi, latinski nazivi vrsta – su u skupu `STRANE`, sa padežima i susednim rečima naziva: „Minecraftu“, „KPop Demon Hunters“, „Homo sapiens“); provera nad svim pitanjima: `node -e "require('./public/pismo.js').uCirilicu('…')"`.
 - Lobi vođe u dva koraka: predmet → razred/lekcija + podešavanja + „Pokreni“ (`korakLobija`).
 - Soba ima najviše 40 igrača (`MAKS_IGRACA`). Klijent ima dva prikaza: do 5 igrača avatari sa imenima, preko 5 sažeto (brojač „N / M odgovorilo“, mali avatari, skraćene liste poena – `mnogo()`, `koJeOdgovorio`, `skratiListu` u `public/app.js`).
 - `lib/kvizovi.js` – učitavanje `kvizovi/*/kviz.json`, izbor pitanja (mešavina težina, prednost neodigranim – `podaci/odigrana-pitanja.json`).
