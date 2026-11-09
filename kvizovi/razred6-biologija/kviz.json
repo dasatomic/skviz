@@ -862,7 +862,7 @@
     {
       "lekcija": 4,
       "tezina": 2,
-      "pitanje": "Kako se zove opna koja okružuje jedro?",
+      "pitanje": "Kako se zove dvostruka opna koja odvaja nasledni materijal ćelije od citoplazme?",
       "odgovori": [
         "Jedrova membrana (ovojnica)",
         "Ćelijski zid od tvrde celuloze",
@@ -1246,12 +1246,12 @@
     {
       "lekcija": 6,
       "tezina": 2,
-      "pitanje": "Koje oboljenje može izazvati dizenterična ameba?",
+      "pitanje": "Koju crevnu bolest može izazvati jedna vrsta amebe iz zagađene vode?",
       "odgovori": [
-        "Dizenteriju (crevnu bolest)",
-        "Grip (virusnu bolest disajnih puteva)",
-        "Malariju (koju prenose komarci)",
-        "Boginje"
+        "Dizenteriju",
+        "Malariju",
+        "Toksoplazmozu",
+        "Koleru"
       ],
       "zanimljivost": "Dizenterična ameba se prenosi zagađenom vodom i hranom. Zato je pranje ruku i pijenje čiste vode tako važno, posebno na putovanjima.",
       "rec": "ameba"
@@ -1421,9 +1421,9 @@
       "tezina": 3,
       "pitanje": "Koja „sluzava gljiva“ (protist) živi kao pojedinačne ćelije, ali se pri nestašici hrane okupi u jedan organizam koji puzi?",
       "odgovori": [
-        "Dictyostelium (ćelijska sluzava buđ)",
-        "Pivski kvasac (gljiva koja vari šećer)",
-        "Euglena (zelena ćelija sa bičem u bari)",
+        "Diktiostelijum",
+        "Pivski kvasac",
+        "Euglena",
         "Volvoks"
       ],
       "zanimljivost": "Hiljade amebastih ćelija se spoje u „puža“ koji traži svetlije mesto i stvara spore.",
@@ -1646,7 +1646,7 @@
       "tezina": 3,
       "pitanje": "Koja biljna tkiva provode vodu i hranljive materije?",
       "odgovori": [
-        "Ksilem i floem (provodna tkiva)",
+        "Ksilem i floem",
         "Pokorično tkivo – epiderm lista i stabla",
         "Pluta (mrtve ćelije kore drveta)",
         "Tvorno tkivo na vrhovima korena i stabla"
@@ -1828,7 +1828,7 @@
       "tezina": 1,
       "pitanje": "Kom carstvu pripadaju gljive?",
       "odgovori": [
-        "Posebnom carstvu gljiva",
+        "Svom posebnom carstvu",
         "Biljkama (bez hlorofila)",
         "Životinjama",
         "Bakterijama"
@@ -1925,8 +1925,8 @@
       "odgovori": [
         "Višećelijska gljiva koja raste na hrani",
         "Vrsta bakterije koja živi samo na hlebu i voću",
-        "Biljka",
-        "Insekt"
+        "Sitna biljka bez cveta, slična mahovini",
+        "Prašina koja se vremenom skupi na hrani"
       ],
       "zanimljivost": "Buđ na hlebu je samo vidljivi deo – njeni končići već su prodrli duboko, zato ne treba jesti „neubuđali“ deo.",
       "rec": "buđ",
@@ -1966,10 +1966,10 @@
       "tezina": 2,
       "pitanje": "Kako se zovu gljive koje se hrane uginulim organizmima i razlažu ih?",
       "odgovori": [
-        "Saprotrofi (razlagači)",
-        "Paraziti (žive na drugom)",
-        "Autotrofi (prave hranu same)",
-        "Predatori (love druge gljive)"
+        "Saprotrofi",
+        "Paraziti",
+        "Autotrofi",
+        "Simbionti"
       ],
       "zanimljivost": "Razlaganjem gljive i bakterije vraćaju minerale u zemlju, a njih zatim koriste biljke. Bez razlagača bi šume bile zatrpane opalim lišćem i uginulim životinjama.",
       "rec": "saprotrof"
@@ -2176,7 +2176,7 @@
     {
       "lekcija": 11,
       "tezina": 2,
-      "pitanje": "Kako se zovu izdužene ćelije na površini korena koje upijaju vodu i minerale?",
+      "pitanje": "Kako se zovu izdužene ćelije podzemnog dela biljke koje upijaju vodu i minerale?",
       "odgovori": [
         "Korenske dlačice",
         "Stome",
@@ -2323,7 +2323,7 @@
     {
       "lekcija": 11,
       "tezina": 1,
-      "pitanje": "Koji deo biljke je zadužen za razmnožavanje kod cvetnica?",
+      "pitanje": "Koji deo biljke služi za polno razmnožavanje kod skrivenosemenica?",
       "odgovori": [
         "Cvet",
         "Koren",
@@ -2381,19 +2381,6 @@
       }
     },
     {
-      "lekcija": 11,
-      "tezina": 3,
-      "pitanje": "Od kog dela cveta posle oplođenja nastaje plod?",
-      "odgovori": [
-        "Od plodnika",
-        "Od latica",
-        "Od čašice",
-        "Od prašnika"
-      ],
-      "zanimljivost": "Kod jagode, jabuke i kruške u stvaranju ploda učestvuje i cvetna loža, pa ih zovemo lažnim plodovima.",
-      "rec": "plodnik"
-    },
-    {
       "lekcija": 12,
       "tezina": 2,
       "pitanje": "Od čega su građene kosti?",
@@ -2438,9 +2425,9 @@
       "pitanje": "Koji sistem organa upravlja radom svih ostalih?",
       "odgovori": [
         "Nervni sistem (uz žlezde)",
-        "Sistem za varenje",
-        "Koža",
-        "Skelet"
+        "Sistem organa za varenje",
+        "Sistem organa za cirkulaciju",
+        "Skeletni i mišićni sistem"
       ],
       "zanimljivost": "Mozak čoveka ima oko 86 milijardi nervnih ćelija.",
       "rec": "nervni"
@@ -2636,7 +2623,7 @@
       "tezina": 2,
       "pitanje": "Šta sadrži želudačni sok, a uništava mikroorganizme iz hrane?",
       "odgovori": [
-        "Želudačnu kiselinu",
+        "Hlorovodoničnu (sonu) kiselinu",
         "Pljuvačku koja dolazi iz usta",
         "Žuč iz jetre i žučne kese",
         "Hlorofil iz zelenog povrća"
@@ -2987,9 +2974,9 @@
       "pitanje": "Šta se dešava sa vazduhom u nosu pre nego što stigne do pluća?",
       "odgovori": [
         "Zagreva se, vlaži i čisti",
-        "Hladi se",
-        "Isušuje se",
-        "Pretvara se u vodu"
+        "Hladi se, suši i čisti",
+        "Zagreva se i pretvara u kiseonik",
+        "Ostaje potpuno isti kao spolja"
       ],
       "zanimljivost": "Dlačice i sluz u nosu zaustavljaju prašinu i mikroorganizme.",
       "rec": "nos"
@@ -3291,12 +3278,12 @@
     {
       "lekcija": 16,
       "tezina": 2,
-      "pitanje": "Kako se zovu cevi koje vode mokraću od bubrega do bešike?",
+      "pitanje": "Kako se zovu cevi koje spajaju bubrege sa bešikom?",
       "odgovori": [
         "Mokraćovodi",
-        "Jednjak",
-        "Dušnik",
-        "Arterije"
+        "Mokraćna cev",
+        "Bubrežne vene",
+        "Bubrežne arterije"
       ],
       "zanimljivost": "Bubreg ima oko milion sićušnih filtera – nefrona.",
       "rec": "mokraćovod"
@@ -4257,9 +4244,9 @@
       "pitanje": "Šta su biotički činioci?",
       "odgovori": [
         "Uticaji drugih živih bića",
-        "Svetlost i toplota",
-        "Voda",
-        "Vetar"
+        "Svetlost i toplota Sunca",
+        "Voda i vlažnost vazduha",
+        "Sastav i vrsta zemljišta"
       ],
       "zanimljivost": "Biljojedi su za travu biotički činilac – kao i oprašivači za cvet.",
       "rec": "biotički"
@@ -4492,8 +4479,8 @@
       "odgovori": [
         "Penjačku – duge ruke i hvatajući rep",
         "Kopačku – jake kandže i snažne prednje noge",
-        "Plivačku",
-        "Trčeću"
+        "Plivačku – opne između prstiju",
+        "Trkačku – duge noge i tvrda kopita"
       ],
       "zanimljivost": "Neki majmuni Južne Amerike mogu da vise na repu kao na petoj ruci.",
       "rec": "majmun",
@@ -4544,12 +4531,12 @@
     {
       "lekcija": 22,
       "tezina": 3,
-      "pitanje": "Kako se zovu životinje koje skaču, poput skakavca, kengura i žabe?",
+      "pitanje": "Kojoj životnoj formi pripadaju kengur, žaba i buva?",
       "odgovori": [
-        "Skakačka životna forma",
-        "Kopačka životna forma (rovci)",
-        "Puzajuća životna forma (puževi)",
-        "Leteća životna forma"
+        "Skakačkoj",
+        "Kopačkoj",
+        "Puzajućoj",
+        "Letećoj"
       ],
       "zanimljivost": "Buva skoči i preko 100 puta dalje od dužine svog tela.",
       "rec": "skok"
@@ -4750,12 +4737,12 @@
     {
       "lekcija": 23,
       "tezina": 3,
-      "pitanje": "Koji hromozomi određuju pol čoveka?",
+      "pitanje": "Koji par hromozoma određuje pol čoveka?",
       "odgovori": [
-        "X i Y hromozomi",
-        "Prvi i drugi par",
-        "Svi podjednako",
-        "Nijedan"
+        "23. par (X i Y)",
+        "1. par",
+        "21. par",
+        "Svi parovi podjednako"
       ],
       "zanimljivost": "Žene imaju dva X, a muškarci X i Y hromozom – pol deteta zavisi od toga da li spermatozoid nosi X ili Y.",
       "rec": "pol",
@@ -4976,9 +4963,9 @@
       "pitanje": "Koja nasledna osobina kod ljudi „preskače“ generaciju, npr. daltonizam češći kod muškaraca?",
       "odgovori": [
         "Osobina vezana za X hromozom",
-        "Boja kože (zavisi samo od Sunca)",
-        "Visina",
-        "Težina"
+        "Osobina koja zavisi samo od ishrane",
+        "Osobina nasleđena samo od oca",
+        "Osobina koja nastaje od sunčanja"
       ],
       "zanimljivost": "Oko 8% muškaraca i manje od 1% žena ne razlikuje dobro crvenu i zelenu boju.",
       "rec": "daltonizam",
@@ -5507,8 +5494,8 @@
       "odgovori": [
         "Zajednički predak svih živih bića (LUCA)",
         "Čovek, kao najrazvijenije biće od koga su potekla sva druga bića",
-        "Dinosaurus",
-        "Gljiva"
+        "Dinosaurusi, kao najstarije i najveće životinje na Zemlji",
+        "Prve biljke koje su izašle iz mora na kopno"
       ],
       "zanimljivost": "LUCA je živeo pre oko 4 milijarde godina i verovatno je bio jednoćelijski organizam.",
       "rec": "predak"
@@ -5542,12 +5529,12 @@
     {
       "lekcija": 27,
       "tezina": 2,
-      "pitanje": "Kojim životinjama su najsrodnije gljive?",
+      "pitanje": "Sa kojom grupom organizama su gljive najbliže srodne?",
       "odgovori": [
-        "Životinjama",
-        "Biljkama",
-        "Bakterijama",
-        "Virusima"
+        "Sa životinjama",
+        "Sa biljkama",
+        "Sa bakterijama",
+        "Sa algama"
       ],
       "zanimljivost": "Gljive i životinje imaju zajedničkog pretka koji je živeo pre više od milijardu godina.",
       "rec": "srodnost"
@@ -5957,7 +5944,7 @@
       "tezina": 2,
       "pitanje": "Od kog organizma je dobijen penicilin?",
       "odgovori": [
-        "Od plesni Penicillium",
+        "Od plesni (buđi)",
         "Od bakterije",
         "Od biljke",
         "Od kvasca za hleb"

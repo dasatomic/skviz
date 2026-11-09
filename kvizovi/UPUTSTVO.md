@@ -97,3 +97,21 @@ Opšti kviz oblasti (npr. `kvizovi/biologija`) dobija samo `"oblast": "biologija
 Slike sa Vikipedije: `node alati/preuzmi-slike.js kvizovi/<folder> ime-fajla "Naslov članka" [jezik]`
 
 Provera pre igranja: `npm run proveri`
+
+## Matematički zadaci (`"zadaci": true`)
+
+Kviz sa `"zadaci": true` (npr. `kvizovi/razred7-matematika-zadaci`) je poseban predmet: ne meša se u druge kvizove, igra se samo krug zadataka (bez „Najduže reči“), a u lobiju se bira broj zadataka (1–10) i vreme po zadatku (podrazumevano 5 min). Igrači rešavaju na papiru i biraju jedan od 4 odgovora (prvi je tačan; netačni neka budu tipične greške). Umesto zanimljivosti dobija se **rešenje korak po korak**:
+
+```json
+{ "lekcija": 10, "tezina": 2,
+  "pitanje": "Katete su $9 cm$ i $12 cm$. Kolika je hipotenuza?",
+  "odgovori": ["$15 cm$", "$21 cm$", "$17 cm$", "$13 cm$"],
+  "mediji": { "vrsta": "geo", "t": { "C": [0, 0], "A": [12, 0], "B": [0, 9] },
+              "e": [{ "p": "ABC" }, { "pu": "ACB" }, { "d": "AB", "o": "c", "id": "c" }, { "d": "CD", "k": 2 }] },
+  "resenje": [ { "t": "Prvi korak…", "i": ["c"] }, { "t": "$c² = 9² + 12² = 225$" }, { "t": "…", "crtez": { "vrsta": "geo", … } } ] }
+```
+
+- Tekst između `$…$` je matematika: ostaje latinicom (oznake tačaka, promenljive). `√{x}` je koren sa crtom, `{a|b}` razlomak, `\n` novi red.
+- Crtež `geo` (opis u `public/geo.js`): tačke `t` (y nagore; treći broj = smer oznake u stepenima), elementi: `p` mnogougao, `d` duž (`o` oznaka, `isp` isprekidana, `na` mesto oznake), `u` ugao, `pu` pravi ugao, `kr` kružnica, `l` luk, `tx` tekst, `tacka`, `osa` brojevna prava, `mreza` koordinatna ravan. Mala slova su pomoćne tačke bez imena; `bezImena` sakriva imena.
+- U rešenju: element sa `"k": n` pojavljuje se od n-tog koraka, a korak ističe elemente iz `"i"`. Korak sa sopstvenim `crtez` prikazuje taj crtež.
+- Bar 10 zadataka po lekciji, mešane težine. Zadaci za 7. razred se grade iz `alati/gradi-zadaci-7.js`.

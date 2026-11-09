@@ -288,7 +288,7 @@
     {
       "lekcija": 1,
       "tezina": 2,
-      "pitanje": "Kako se zove grana biologije koja proučava mikroorganizme, poput bakterija?",
+      "pitanje": "Kako se zove grana biologije koja proučava bakterije, kvasce i druga sićušna bića?",
       "odgovori": [
         "Mikrobiologija",
         "Ornitologija",
@@ -365,11 +365,11 @@
     {
       "lekcija": 1,
       "tezina": 3,
-      "pitanje": "Koji naš naučnik je opisao Pančićevu omoriku, endemsku vrstu četinara?",
+      "pitanje": "Koji naš botaničar je 1875. otkrio omoriku, endemsku vrstu četinara sa Tare?",
       "odgovori": [
         "Josif Pančić",
-        "Nikola Tesla",
-        "Mihajlo Pupin",
+        "Jovan Cvijić",
+        "Mihailo Petrović Alas",
         "Milutin Milanković"
       ],
       "zanimljivost": "Pančić je 1875. otkrio omoriku na planini Tari; po njegovoj želji sahranjen je na vrhu Kopaonika, koji danas nosi ime Pančićev vrh.",
@@ -1536,8 +1536,8 @@
       "odgovori": [
         "Šećer (glukozu) i kiseonik",
         "Ugljen-dioksid i vodu",
-        "Samo vodu",
-        "So i azot"
+        "Kiseonik i ugljen-dioksid",
+        "Vodu i mineralne soli"
       ],
       "zanimljivost": "Skoro sav kiseonik koji udišemo nastao je fotosintezom – oko polovine stvaraju biljke na kopnu, a polovinu alge u morima.",
       "rec": "glukoza",
@@ -1935,9 +1935,9 @@
       "pitanje": "Šta ptice i gmizavci izlučuju umesto tečne mokraće da bi štedeli vodu?",
       "odgovori": [
         "Belu pastu mokraćne kiseline",
-        "Čistu vodu",
-        "Ugljen-dioksid u obliku leda",
-        "Ništa"
+        "Gustu žutu mokraću sa mnogo soli",
+        "Suve kristale kuhinjske soli",
+        "Zelenu žuč iz jetre"
       ],
       "zanimljivost": "Beli deo ptičjeg izmeta upravo je mokraćna kiselina – tako ptice ne nose višak vode i lakše lete.",
       "rec": "ptica"
@@ -2703,12 +2703,12 @@
     {
       "lekcija": 13,
       "tezina": 2,
-      "pitanje": "Kako se zove mutiranje glasa kod dečaka u pubertetu?",
+      "pitanje": "Kako se zove promena kada glas dečaka u pubertetu postaje dublji?",
       "odgovori": [
-        "Promena glasa (mutiranje)",
-        "Adolescencija (sazrevanje)",
-        "Zigot (prva ćelija organizma)",
-        "Klijanje (rast mlade biljke iz semena)"
+        "Mutiranje",
+        "Promuklost",
+        "Adolescencija",
+        "Ovulacija"
       ],
       "zanimljivost": "Pubertet obično traje do 17. godine, a kod svakoga počinje u drugo vreme. Proces adolescencije – i psihičkog i društvenog sazrevanja – može trajati i do 25. godine.",
       "rec": "pubertet"
@@ -2854,7 +2854,7 @@
     {
       "lekcija": 13,
       "tezina": 3,
-      "pitanje": "Kako se zove presvlačenje kod insekata i rakova, kada odbace stari spoljni skelet?",
+      "pitanje": "Kako se zove odbacivanje starog spoljašnjeg skeleta kod insekata i rakova dok rastu?",
       "odgovori": [
         "Presvlačenje (linjanje)",
         "Metamorfoza (preobražaj)",
@@ -3121,8 +3121,8 @@
       "odgovori": [
         "Svetlost, voda, temperatura i vazduh",
         "Biljke i životinje u okolini kuće i šume",
-        "Gljive",
-        "Bakterije"
+        "Gljive i bakterije u zemljištu",
+        "Paraziti, grabljivci i plen"
       ],
       "zanimljivost": "Bez svetlosti nema fotosinteze, pa su i u dubokim pećinama i okeanima životne zajednice mnogo siromašnije.",
       "rec": "svetlost"
@@ -3518,7 +3518,7 @@
     {
       "lekcija": 17,
       "tezina": 2,
-      "pitanje": "Kako se zovu biljke koje u šumi procvetaju rano u proleće, pre nego što drveće olista?",
+      "pitanje": "Kako se zovu biljke poput visibabe i šafrana, koje u šumi procvetaju pre nego što drveće olista?",
       "odgovori": [
         "Prolećnice",
         "Zimzelenice",
@@ -3828,12 +3828,12 @@
     {
       "lekcija": 18,
       "tezina": 2,
-      "pitanje": "Kako se zove ulaz u jazbinu lisice ili jazavca?",
+      "pitanje": "Kako se zove podzemno sklonište lisice ili jazavca?",
       "odgovori": [
-        "Rupa (jazbina) sa više izlaza",
-        "Gnezdo od grančica u krošnji drveta",
-        "Košnica napravljena u šupljem drvetu",
-        "Mravinjak od suvih iglica i zemlje"
+        "Jazbina",
+        "Duplja",
+        "Gnezdo",
+        "Košnica"
       ],
       "zanimljivost": "Jazavci kopaju prostrane jazbine sa mnogo hodnika, koje generacije porodice koriste i proširuju desetinama godina.",
       "rec": "jazbina"
@@ -5102,10 +5102,10 @@
       "tezina": 1,
       "pitanje": "Koja biljka nam daje šećer u našim krajevima?",
       "odgovori": [
-        "Šećerna repa",
-        "Pšenica (žito)",
-        "Krompir iz njive",
-        "Pamuk"
+        "Repa",
+        "Kukuruz",
+        "Suncokret",
+        "Krompir"
       ],
       "zanimljivost": "Šećer iz repe izdvojen je tek početkom 19. veka – pre toga je šećer bio skup jer se pravio samo od trske.",
       "rec": "šećer"
@@ -5676,8 +5676,8 @@
       "odgovori": [
         "Osećajem žeđi, umorom i glavoboljom",
         "Kijanjem, kašljanjem i curenjem nosa",
-        "Kašljanjem",
-        "Štucanjem"
+        "Štucanjem i čestim zevanjem",
+        "Crvenilom i svrabom kože"
       ],
       "zanimljivost": "Kada osetimo žeđ, telo je već izgubilo oko 1–2% vode.",
       "rec": "žeđ"
@@ -6423,7 +6423,7 @@
     {
       "lekcija": 30,
       "tezina": 3,
-      "pitanje": "Ko je dokazao da mikroorganizmi izazivaju kvarenje i neke bolesti, i smislio pasterizaciju?",
+      "pitanje": "Ko je dokazao da mikroorganizmi izazivaju kvarenje i neke bolesti, i napravio vakcinu protiv besnila?",
       "odgovori": [
         "Luj Paster",
         "Gregor Mendel",

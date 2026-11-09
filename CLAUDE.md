@@ -33,6 +33,7 @@ Format je opisan u `kvizovi/UPUTSTVO.md`. Ukratko:
 5a. Posebne vrste pitanja (`"vrsta"`): `"uljez"` (4 odgovora, prvi je uljez, obavezno `objasnjenje`) i `"spoji"` (`"parovi": [[levo, desno], …]`, 3–5 parova, bez `odgovori`). Partija ih meša oko 15% (`lib/kvizovi.js` → `izaberi`); bodovanje „spoji“ je srazmerno tačnim parovima (`lib/soba.js` → `otkrij`). Prvi primer: `kvizovi/biologija`.
 6. Za učenje jedne lekcije postavi `"uOpstem": false` da se ne meša u „Opšte znanje“.
 6a. Kvizovi po razredima: `kvizovi/razred<N>-<oblast>/` sa `oblast`, `razred`, `lekcije` (naslovi iz sadržaja udžbenika u `izvori/`), a svako pitanje ima `lekcija` (redni broj). Lobi: oblast → Svi razredi / 5–8 → Cela godina / lekcija. Bar 15 pitanja po lekciji, mešane težine. Izbor kviza na serveru: `opste`, `oblast:<oblast>`, `<paket>`, `<paket>#<lekcija>` (`lib/kvizovi.js` → `izvor`).
+6b. **Matematički zadaci** (`"zadaci": true`, `kvizovi/razred7-matematika-zadaci`, izvor `alati/gradi-zadaci-7.js`): poseban predmet „Matematika – zadaci“, rešava se na papiru (podrazumevano 5 min, `brojZadataka`/`vremeZadatka`), bez kruga reči; umesto zanimljivosti `resenje` korak po korak sa crtežom `geo` (`public/geo.js`) koji ističe delove po koracima. Matematika u tekstu između `$…$`. Detalji u `kvizovi/UPUTSTVO.md`. Ne kopirati tekst zadataka iz zbirki – samo ideje, sopstveni brojevi.
 7. Pokreni `npm run proveri` – mora proći bez grešaka. Server pokupi nove kvizove bez restarta.
 
 ## Konvencije

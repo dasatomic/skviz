@@ -5,7 +5,7 @@ const fs = require('fs');
 const path = require('path');
 const KOREN = path.join(__dirname, '..', 'kvizovi');
 const recnik = require('../lib/recnik');
-const VRSTE = ['slika', 'svg', 'melodija', 'morze', 'molekul', 'telo', 'atom', 'planeta', 'dnk', 'mapa', 'sat', 'formula', 'emodzi'];
+const VRSTE = ['slika', 'svg', 'melodija', 'morze', 'molekul', 'telo', 'atom', 'planeta', 'dnk', 'mapa', 'sat', 'formula', 'emodzi', 'geo'];
 const MOLEKULI = ['voda', 'ugljen-dioksid', 'metan', 'amonijak', 'kiseonik', 'azot', 'vodonik', 'ozon', 'hlorovodonik', 'vodonik-peroksid', 'etanol', 'benzen', 'sumporna-kiselina', 'so', 'dijamant', 'glukoza'];
 
 let greske = 0, upozorenja = 0, ukupno = 0;
@@ -48,8 +48,25 @@ for (const dir of fs.readdirSync(KOREN).sort()) {
     }
     if (![1, 2, 3].includes(p.tezina)) u(oz, 'tezina treba da bude 1, 2 ili 3');
     else t[p.tezina]++;
-    if (!p.zanimljivost) u(oz, 'nema zanimljivosti');
-    if (p.rec !== undefined) {
+    if (k.zadaci) {
+      // matematički zadatak: umesto zanimljivosti ide rešenje korak po korak
+      if (!Array.isArray(p.resenje) || !p.resenje.length || p.resenje.some((x) => !x || typeof x.t !== 'string' || !x.t.trim())) g(oz, 'zadatak mora imati „resenje“: [{ "t": "korak" }, …]');
+      for (const tekst of [p.pitanje, ...(p.odgovori || []), ...(p.resenje || []).map((x) => x?.t || '')])
+        if (((tekst || '').match(/\$/g) || []).length % 2) g(oz, 'neuparen znak $ u: ' + tekst);
+      const crtezi = [p.mediji, ...(p.resenje || []).map((x) => x?.crtez)].filter((m) => m && m.vrsta === 'geo');
+      for (const m of crtezi) {
+        const T = m.t || {};
+        const imena = (x) => (Array.isArray(x) ? x : String(x).match(/[A-Z][0-9₀-₉']*|[a-z][0-9]*/g) || []);
+        for (const e of m.e || []) {
+          for (const kljuc of ['p', 'd', 'u', 'pu', 'tacka']) if (e[kljuc]) for (const n of imena(e[kljuc])) if (!T[n]) g(oz, `crtež: nema tačke ${n} (${kljuc}: ${e[kljuc]})`);
+          for (const kljuc of ['kr', 'l', 'kroz']) if (e[kljuc] && !T[e[kljuc]]) g(oz, `crtež: nema tačke ${e[kljuc]}`);
+          if (e.k > (p.resenje || []).length) g(oz, `crtež: element se pojavljuje u koraku ${e.k}, a rešenje ima ${(p.resenje || []).length} koraka`);
+        }
+        const idjevi = new Set((m.e || []).map((e) => e.id).filter(Boolean));
+        if (m === p.mediji) for (const x of p.resenje || []) for (const id of x.i || []) if (!idjevi.has(id)) g(oz, `rešenje ističe nepoznat element „${id}“`);
+      }
+    } else if (!p.zanimljivost) u(oz, 'nema zanimljivosti');
+    if (k.zadaci && p.rec === undefined) {} else if (p.rec !== undefined) {
       // pojam za krug „Najduža reč“: latinica ili ćirilica, 3–11 slova (ćirilična slova; lj/nj/dž su po jedno)
       const c = recnik.uCirilicu(String(p.rec));
       if (!c) g(oz, `pojam „${p.rec}“ sadrži slova kojih nema u srpskoj azbuci`);
@@ -74,6 +91,7 @@ for (const dir of fs.readdirSync(KOREN).sort()) {
   lekcije.forEach((l, i) => {
     const x = poLekciji[i];
     const ime = typeof l === 'string' ? l : l.naziv;
+    if (k.zadaci) { if (x.n && x.n < 10) u(`${dir} lekcija ${i + 1}`, `„${ime}“ ima samo ${x.n} zadataka (preporuka: bar 10)`); return; }
     if (x.n < 15) u(`${dir} lekcija ${i + 1}`, `„${ime}“ ima samo ${x.n} pitanja (preporuka: bar 15)`);
     else if (!x[1] || !x[3]) u(`${dir} lekcija ${i + 1}`, `„${ime}“ nema i lakih i teških pitanja`);
   });

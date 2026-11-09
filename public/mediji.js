@@ -738,10 +738,19 @@ function prikaziSVG(k, m, auto, paket) {
   return () => {};
 }
 
+// geometrijski crtež zadatka (public/geo.js)
+function prikaziGeo(k, m) {
+  const d = document.createElement('div');
+  d.className = 'medij-svg medij-geo';
+  d.innerHTML = window.Geo.crtajGeo(m, { korak: 0 });
+  k.appendChild(d);
+  return () => {};
+}
+
 const PRIKAZI = {
   slika: prikaziSliku, svg: prikaziSVG, melodija: prikaziMelodiju, morze: prikaziMorze, molekul: prikaziMolekul,
   telo: prikaziTelo, atom: prikaziAtom, planeta: prikaziPlanetu, dnk: prikaziDNK, mapa: prikaziMapu,
-  sat: prikaziSat, formula: prikaziTekst, emodzi: prikaziTekst,
+  sat: prikaziSat, formula: prikaziTekst, emodzi: prikaziTekst, geo: prikaziGeo,
 };
 
 // glavna funkcija: vraća funkciju za čišćenje

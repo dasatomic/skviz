@@ -20,7 +20,7 @@ const sacuvajJa = () => { if (!EKRAN) ls.set('ja', ja); };
 // ───── pismo: ćirilica (podrazumevano) ili latinica – važi za ceo prikaz ─────
 // Kod i podaci ostaju na latinici; ceo ekran (tekst čvorovi, placeholder/title) se preslovljava u hodu.
 let PISMO = ls.get('pismo', 'cirilica') === 'latinica' ? 'latinica' : 'cirilica';
-const NE_DIRAJ = 'script,style,textarea,input,[data-lat],.formula,.formula-mala,.kod-sobe,.adresa';
+const NE_DIRAJ = 'script,style,textarea,input,[data-lat],.formula,.formula-mala,.kod-sobe,.adresa,.mat';
 const tr = (t) => (PISMO === 'cirilica' ? window.Pismo.uCirilicu(t) : String(t)); // pravila u pismo.js
 function prevedi(koren) {
   if (PISMO !== 'cirilica') return;
@@ -66,6 +66,18 @@ let kvizovi = [];
 let tikTajmer = null;
 
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+// tekst sa matematikom: $…$ ostaje latinicom (oznake tačaka, promenljive), √{x} – koren sa crtom, {a|b} – razlomak
+function mat(t) {
+  return esc(t).replace(/\$([^$]+)\$/g, (_, m) => {
+    let x = m, pre;
+    do {
+      pre = x;
+      x = x.replace(/√\{([^{}]*)\}/g, '√<span class="pod-korenom">$1</span>')
+        .replace(/\{([^{}|]*)\|([^{}|]*)\}/g, '<span class="razlomak"><span>$1</span><span>$2</span></span>');
+    } while (x !== pre);
+    return `<span class="mat">${x}</span>`;
+  }).replace(/\n/g, '<br>');
+}
 const slovo = (c) => (PISMO === 'cirilica' ? c : LAT[c] ?? c);
 const rec = (r) => [...(r || '')].map(slovo).join('');
 const igrac = (id) => V?.igraci.find((x) => x.id === id);
@@ -334,7 +346,7 @@ const kvizPo = (id) => kvizovi.find((x) => x.id === id);
 function grupaOblasti(o) {
   const clanovi = kvizovi.filter((x) => x.oblast === o);
   const glavni = clanovi.find((x) => !x.razred) || clanovi[0] || {};
-  return { oblast: o, glavni, clanovi, naziv: glavni.razred ? glavni.naziv.replace(/^\d+\. razred · /, '') : glavni.naziv, ikona: glavni.ikona, boja: glavni.boja, broj: clanovi.reduce((s, x) => s + x.broj, 0) };
+  return { oblast: o, glavni, clanovi, naziv: glavni.razred ? glavni.naziv.replace(/^\d+\. razred · /, '') : glavni.naziv, ikona: glavni.ikona, boja: glavni.boja, broj: clanovi.reduce((s, x) => s + x.broj, 0), zadaci: clanovi.every((x) => x.zadaci) };
 }
 
 // rastavlja izbor na delove: { oblast, paket, lekcija }
@@ -365,10 +377,10 @@ function izborKvizaHTML(P) {
     if (vidjene.has(q.oblast)) continue;
     vidjene.add(q.oblast);
     const g = grupaOblasti(q.oblast);
-    kartice.push({ id: 'oblast:' + q.oblast, naziv: g.naziv, ikona: g.ikona, broj: g.broj, izabran: r.oblast === q.oblast, razredi: g.clanovi.some((x) => x.razred) });
+    kartice.push({ id: 'oblast:' + q.oblast, naziv: g.naziv, ikona: g.ikona, broj: g.broj, izabran: r.oblast === q.oblast, razredi: g.clanovi.some((x) => x.razred), zadaci: g.zadaci });
   }
   return `<div class="kartica"><h3>Izaberi predmet</h3><div class="kvizovi">${kartice.map((q) => `
-    <button class="kviz ${q.izabran ? 'izabran' : ''}" data-k="${q.id}"><div class="ik">${q.ikona}</div><div class="nz">${esc(q.naziv)}</div><div class="br">${q.broj} pitanja${q.razredi ? ' · po razredima' : ''}</div></button>`).join('')}</div></div>`;
+    <button class="kviz ${q.izabran ? 'izabran' : ''}" data-k="${q.id}"><div class="ik">${q.ikona}</div><div class="nz">${esc(q.naziv)}</div><div class="br">${q.broj} ${q.zadaci ? 'zadataka' : 'pitanja'}${q.razredi ? ' · po razredima' : ''}</div></button>`).join('')}</div></div>`;
 }
 
 // drugi korak: izabrani predmet (sa „promeni“) + razred i lekcija, ako ih predmet ima
@@ -438,12 +450,15 @@ function podesavanja() {
   const html = `
     ${izborRazredaHTML(P)}
     <div class="kartica"><h3>Podešavanja</h3>
+      ${V.zadaci ? `<div class="podesavanje"><span>Broj zadataka</span>${opcija('brojZadataka', [1, 3, 5, 10])}</div>
+      <div class="podesavanje"><span>Minuta po zadatku</span>${opcija('vremeZadatka', [120, 180, 300, 480, 600, 900], ['2', '3', '5', '8', '10', '15'])}</div>
+      <div class="sitno">Zadaci se rešavaju na papiru; posle svakog sledi detaljno rešenje korak po korak.</div>` : `
       <div class="podesavanje"><span>Krugovi</span>${opcija('krugovi', ['oba', 'pitanja', 'reci'], ['Oba', 'Pitanja', 'Reči'])}</div>
       ${P.krugovi !== 'reci' ? `<div class="podesavanje"><span>Broj pitanja</span>${opcija('brojPitanja', [5, 10, 15, 20, 25])}</div>
       <div class="podesavanje"><span>Sekundi za pitanje</span>${opcija('vreme', [10, 15, 20, 30, 45])}</div>` : ''}
       ${P.krugovi !== 'pitanja' ? `<div class="podesavanje"><span>Krug „Najduža reč“</span>${opcija('brojReci', [1, 3, 5, 10, 15], ['1', '3', '5', '10', '15'])}</div>
       <div class="podesavanje"><span>Sekundi za reč</span>${opcija('vremeReci', [45, 60, 75, 90, 120])}</div>
-      ` : ''}
+      ` : ''}`}
       <div class="podesavanje"><span>Pismo</span>${opcija('pismo', ['cirilica', 'latinica'], ['Ćirilica', '<span data-lat>Latinica</span>'])}</div>
     </div>`;
   if (k.dataset.h !== html) {
@@ -485,7 +500,8 @@ function ekranUvod(nov) {
     <div class="veliki">${pitanja ? kv?.ikona || '❓' : '🔤'}</div>
     <div class="sitno">Krug ${u.broj}${pitanja && kv?.podnaslov ? ' · ' + esc(kv.podnaslov) : ''}</div>
     <h1>${pitanja ? esc(kv?.naziv || 'Pitanja') : 'Najduža reč'}</h1>
-    <p>${pitanja ? `${u.brojPitanja} pitanja sa 4 ponuđena odgovora. Brži tačan odgovor donosi više poena, teška pitanja vrede ×1,5, a niz tačnih odgovora daje bonus!`
+    <p>${pitanja && V.zadaci ? `${u.brojPitanja} ${u.brojPitanja === 1 ? 'zadatak' : u.brojPitanja < 5 ? 'zadatka' : 'zadataka'}, po ${Math.round(V.podesavanja.vremeZadatka / 60)} min. Pripremi papir i olovku! Tačan odgovor donosi poene (brže rešenje malo više), a posle svakog zadatka sledi detaljno rešenje korak po korak.`
+      : pitanja ? `${u.brojPitanja} pitanja sa 4 ponuđena odgovora. Brži tačan odgovor donosi više poena, teška pitanja vrede ×1,5, a niz tačnih odgovora daje bonus!`
       : `${u.brojReci === 1 ? '12 slova' : `${u.brojReci}× po 12 slova`}. Složi što dužu reč u osnovnom obliku (imenica u jednini, glagol u infinitivu…). 100 poena po slovu, bonus za najdužu!${V.krugovi.includes('pitanja') ? ' U slovima se krije i jedan pojam iz prethodnih pitanja – ko ga pronađe, dobija +200.' : ''}`}</p>
   </div>`;
   Zvuk.efekat('bubanj');
@@ -501,7 +517,7 @@ function tajmer(pocetak, trajanje) {
     if (traka) traka.style.transform = `scaleX(${ost / trajanje})`;
     const s = Math.ceil(ost / 1000);
     if (br && s !== posl) {
-      br.textContent = s;
+      br.textContent = trajanje > 99000 ? `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}` : s;
       br.classList.toggle('hitno', s <= 5);
       if (s <= 5 && s > 0 && posl !== -1) Zvuk.efekat('tik');
       posl = s;
@@ -524,7 +540,7 @@ function zaglavljePitanja(P) {
         <span class="znacka tezina" title="težina">${zvezde}${P.tezina === 3 ? ' ×1,5' : ''}</span><span class="razmak"></span><span class="sekunde"></span></div>
       <div class="tajmer"><i></i></div>
       ${VRSTE_PITANJA[P.vrsta] ? `<div class="vrsta-pitanja">${VRSTE_PITANJA[P.vrsta]}</div>` : ''}
-      <div class="pitanje-tekst">${esc(P.tekst)}</div>`;
+      <div class="pitanje-tekst${P.zadatak ? ' zadatak' : ''}">${mat(P.tekst)}</div>`;
 }
 
 // rezultat igrača, „Da li si znao?“ i poeni svih igrača – zajedničko za sve vrste pitanja
@@ -554,7 +570,53 @@ function otkrivanjePitanja(P, naslov) {
   return `${rez}
       <div class="kartica zanimljivost">${naslov}${P.objasnjenje ? `<p>${esc(P.objasnjenje)}</p>` : ''}
       ${P.zanimljivost ? `<h3 style="margin-top:12px">💡 Da li si znao?</h3><div>${esc(P.zanimljivost)}</div>` : ''}</div>
+      ${P.resenje ? resenjeHTML(P) : ''}
       ${poeni}`;
+}
+
+// ───── rešenje zadatka korak po korak: crtež prati korak (novi elementi se pojavljuju, delovi se ističu) ─────
+function resenjeHTML(P) {
+  const R = P.resenje;
+  const crtez = P.mediji?.vrsta === 'geo' || R.some((k) => k.crtez);
+  return `<div class="kartica resenje"><h3>📝 Rešenje</h3>
+    ${crtez ? '<div class="medij medij-svg resenje-crtez" id="resenje-crtez"></div>' : ''}
+    <ol class="koraci">${R.map((k, i) => `<li data-k="${i}">${mat(k.t)}</li>`).join('')}</ol>
+    <div class="koraci-dugmad"><button class="dugme sivo" id="kr-pre">◀</button><span id="kr-br"></span>
+      <button class="dugme zuto" id="kr-sled">Sledeći korak ▶</button><button class="dugme sivo" id="kr-sve">Sve</button></div>
+  </div>`;
+}
+
+function pokreniResenje(P) {
+  const R = P.resenje;
+  let tek = 0, vidljivo = 0;
+  const crtez = $('#resenje-crtez');
+  const prikazi = () => {
+    app.querySelectorAll('.koraci li').forEach((li, i) => {
+      li.classList.toggle('skriven', i > vidljivo);
+      li.classList.toggle('aktivan', i === tek);
+    });
+    if (crtez) {
+      const k = R[tek];
+      const m = k.crtez || (P.mediji?.vrsta === 'geo' ? P.mediji : null);
+      crtez.style.display = m ? '' : 'none';
+      if (m) crtez.innerHTML = window.Geo.crtajGeo(m, { korak: k.crtez ? 99 : tek + 1, istakni: k.i || [], prevod: tr });
+    }
+    $('#kr-br').textContent = `${tek + 1} / ${R.length}`;
+    $('#kr-pre').disabled = tek === 0;
+    $('#kr-sled').disabled = tek === R.length - 1;
+    $('#kr-sve').style.display = vidljivo === R.length - 1 ? 'none' : '';
+  };
+  const idi = (i) => { tek = Math.max(0, Math.min(R.length - 1, i)); vidljivo = Math.max(vidljivo, tek); prikazi(); };
+  $('#kr-pre').onclick = () => { Zvuk.efekat('klik'); idi(tek - 1); };
+  $('#kr-sled').onclick = () => { Zvuk.efekat('klik'); idi(tek + 1); $('.koraci li.aktivan')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); };
+  $('#kr-sve').onclick = () => { vidljivo = R.length - 1; prikazi(); };
+  app.querySelectorAll('.koraci li').forEach((li) => (li.onclick = () => { if (!li.classList.contains('skriven')) idi(+li.dataset.k); }));
+  // veliki ekran sam prolazi kroz korake
+  if (EKRAN) {
+    const t = setInterval(() => { if (tek < R.length - 1) idi(tek + 1); else clearInterval(t); }, 7000);
+    ciscenje.push(() => clearInterval(t));
+  }
+  prikazi();
 }
 
 function ekranPitanje(nov, staro) {
@@ -564,7 +626,7 @@ function ekranPitanje(nov, staro) {
   if (nov) {
     app.innerHTML = `${zaglavljePitanja(P)}
       <div id="medij"></div>
-      <div class="odgovori" id="odgovori">${P.odgovori.map((o, i) => `<button class="odg" data-i="${i}" data-slovo="${slovaOdg()[i]}">${esc(o)}<span class="glasovi"></span><span class="procenat"></span></button>`).join('')}</div>
+      <div class="odgovori" id="odgovori">${P.odgovori.map((o, i) => `<button class="odg" data-i="${i}" data-slovo="${slovaOdg()[i]}">${mat(o)}<span class="glasovi"></span><span class="procenat"></span></button>`).join('')}</div>
       <div id="ispod"></div>`;
     if (P.mediji) ciscenje.push(prikaziMedij($('#medij'), P.mediji, { auto: true, paket: P.paket }));
     else $('#medij').remove();
@@ -588,7 +650,8 @@ function ekranPitanje(nov, staro) {
   const ispod = $('#ispod');
 
   if (!otkriveno) {
-    ispod.innerHTML = `${V.mojOdgovor !== null ? '<div class="cekanje">Odgovor zaključan 🔒 čekamo ostale<span class="tackice"></span></div>' : ''}
+    ispod.innerHTML = `${V.mojOdgovor !== null ? '<div class="cekanje">Odgovor zaključan 🔒 čekamo ostale<span class="tackice"></span></div>'
+      : P.zadatak && !EKRAN ? '<div class="sitno centar">✏️ Reši zadatak na papiru, pa izaberi odgovor.</div>' : ''}
       ${koJeOdgovorio(V.odgovorili)}`;
     donjaTraka('');
     return;
@@ -606,8 +669,9 @@ function ekranPitanje(nov, staro) {
       // u velikoj sobi samo broj glasova (avatari bi prekrili tekst odgovora)
       $('.glasovi', b).innerHTML = mnogo() ? (glasali.length ? `<b class="jos">${glasali.length}</b>` : '') : glasali.join('');
     });
-    const naslov = P.vrsta === 'uljez' ? `<h3>🕵️ Uljez je: ${esc(P.odgovori[P.tacan])}</h3>` : `<h3>✅ ${esc(P.odgovori[P.tacan])}</h3>`;
+    const naslov = P.vrsta === 'uljez' ? `<h3>🕵️ Uljez je: ${esc(P.odgovori[P.tacan])}</h3>` : `<h3>✅ ${mat(P.odgovori[P.tacan])}</h3>`;
     ispod.innerHTML = otkrivanjePitanja(P, naslov);
+    if (P.resenje) pokreniResenje(P);
     if (!EKRAN) setTimeout(() => $('.zanimljivost')?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 900);
   }
   dugmeDalje(P.rb === P.ukupno ? 'Rang lista 🏆' : 'Sledeće pitanje ➜');

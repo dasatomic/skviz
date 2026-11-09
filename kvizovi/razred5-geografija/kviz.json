@@ -548,9 +548,9 @@
       "pitanje": "Šta su asteroidi?",
       "odgovori": [
         "Mala stenovita tela koja kruže oko Sunca, najviše između Marsa i Jupitera",
-        "Zvezde",
-        "Galaksije",
-        "Komete sa dugim svetlim repom koje dolaze iz najudaljenijih delova Sunčevog sistema"
+        "Komete sa dugim svetlim repom koje dolaze iz najudaljenijih delova Sunčevog sistema",
+        "Prirodni sateliti koji kruže oko velikih planeta, kao što su Jupiterovi meseci",
+        "Udaljene zvezde koje izgledaju sitno jer su veoma daleko od Sunčevog sistema"
       ],
       "zanimljivost": "Najveći asteroid, Ceres, danas se svrstava u patuljaste planete.",
       "rec": "asteroid"
@@ -751,8 +751,8 @@
       "odgovori": [
         "Zvezda – užarena lopta gasova",
         "Planeta – najveća u Sunčevom sistemu",
-        "Kometa",
-        "Mesec"
+        "Kometa – usijano jezgro od leda i gasa",
+        "Galaksija – skup milijardi zvezda"
       ],
       "zanimljivost": "Sunce čini 99,8% mase celog Sunčevog sistema.",
       "rec": "sunce",
@@ -1280,12 +1280,12 @@
     {
       "lekcija": 5,
       "tezina": 1,
-      "pitanje": "Kako se zove polovina Zemlje severno od ekvatora?",
+      "pitanje": "Na kojoj polulopti, u odnosu na ekvator, se nalazi Srbija?",
       "odgovori": [
-        "Severna polulopta (hemisfera)",
-        "Južna polulopta (južna hemisfera)",
-        "Istočna polulopta (Azija i Evropa)",
-        "Zapadna polulopta"
+        "Na severnoj",
+        "Na južnoj",
+        "Na ekvatoru je, između njih",
+        "Delom na severnoj, delom na južnoj"
       ],
       "zanimljivost": "Na severnoj polulopti živi oko 90% svih ljudi.",
       "rec": "hemisfera"
@@ -1791,7 +1791,7 @@
       "tezina": 1,
       "pitanje": "Kako se zove zamišljena prava oko koje se Zemlja okreće?",
       "odgovori": [
-        "Zemljina osa",
+        "Osa rotacije",
         "Ekvator",
         "Meridijan",
         "Orbita"
@@ -2226,12 +2226,12 @@
     {
       "lekcija": 9,
       "tezina": 1,
-      "pitanje": "Kako temperatura raste sa dubinom u Zemlji?",
+      "pitanje": "Kako se menja temperatura sa dubinom u unutrašnjosti Zemlje?",
       "odgovori": [
         "Raste",
         "Opada",
         "Ne menja se",
-        "Prvo raste pa nestaje"
+        "Prvo raste, pa opada"
       ],
       "zanimljivost": "U rudnicima na nekoliko kilometara dubine temperatura stena je preko 50 °C.",
       "rec": "toplota"
@@ -2319,10 +2319,10 @@
       "tezina": 2,
       "pitanje": "Kako se zove čuveni rased u Kaliforniji gde se dve tektonske ploče mimoilaze?",
       "odgovori": [
-        "Rased San Andreas",
+        "San Andreas",
         "Marijanski rov",
         "Veliki kanjon",
-        "Rift doline"
+        "Istočnoafrički rov"
       ],
       "zanimljivost": "Duž ovog raseda Pacifička ploča klizi ka severu u odnosu na Severnoameričku. Zbog toga su u Kaliforniji česti zemljotresi, a Los Anđeles se svake godine malo približi San Francisku.",
       "rec": "rased"
@@ -2706,12 +2706,12 @@
     {
       "lekcija": 11,
       "tezina": 3,
-      "pitanje": "Kako se zove zemljotres koji je 1963. razorio Skoplje?",
+      "pitanje": "Koji grad je 1963. razorio snažan zemljotres, posle čega je obnovljen uz pomoć celog sveta?",
       "odgovori": [
-        "Skopski zemljotres",
-        "Lisabonski zemljotres (1755)",
-        "Kraljevački zemljotres (2010)",
-        "Sarajevski zemljotres (Bosna)"
+        "Skoplje",
+        "Kraljevo",
+        "Banja Luka",
+        "Sarajevo"
       ],
       "zanimljivost": "Oko 80% grada je uništeno, a obnova je postala simbol solidarnosti mnogih zemalja.",
       "rec": "skoplje"
@@ -2901,7 +2901,7 @@
     {
       "lekcija": 12,
       "tezina": 1,
-      "pitanje": "Koja stena se koristi kao pesak za gradnju i nastaje raspadanjem drugih stena?",
+      "pitanje": "Koja rastresita sedimentna stena nastaje raspadanjem drugih stena i koristi se za malter i beton?",
       "odgovori": [
         "Pesak (sedimentna)",
         "Mermer (metamorfna)",
@@ -3089,8 +3089,8 @@
       "tezina": 1,
       "pitanje": "Kako se zove visina mesta iznad nivoa mora?",
       "odgovori": [
-        "Nadmorska visina",
-        "Dubina mesta u odnosu na tlo",
+        "Apsolutna visina",
+        "Relativna visina",
         "Geografska širina",
         "Geografska dužina"
       ],
@@ -3417,8 +3417,8 @@
       "odgovori": [
         "Zemljani bedem uz reku koji štiti od poplava",
         "Vrsta niskog brda nastalog nanošenjem peska vetrom",
-        "Tunel",
-        "Most"
+        "Prokopani kanal kojim se voda odvodi sa njiva",
+        "Peščano ostrvo koje reka nanese na ušću"
       ],
       "zanimljivost": "Nasipi uz Dunav i Tisu u Vojvodini dugi su stotinama kilometara.",
       "rec": "nasip"
@@ -3709,8 +3709,8 @@
       "odgovori": [
         "Nekoliko stotina kilometara, bez oštre granice",
         "Samo oko 1 kilometar, koliko se penje i najviši oblak",
-        "10 m",
-        "Milion km"
+        "Tačno 10 km, koliko visoko lete putnički avioni",
+        "Oko 384.000 km – proteže se sve do Meseca"
       ],
       "zanimljivost": "„Karmanova linija“ na 100 km smatra se dogovornom granicom svemira.",
       "rec": "karman"
@@ -3830,8 +3830,8 @@
       "odgovori": [
         "Temperatura, padavine, vazdušni pritisak, vetar, vlažnost, oblačnost",
         "Reke, jezera i mora koja svojim isparavanjem utiču na vreme u nekoj oblasti",
-        "Planine",
-        "Biljke"
+        "Geografska širina, nadmorska visina i udaljenost nekog mesta od mora",
+        "Biljni pokrivač, vrsta zemljišta i životinjski svet nekog kraja"
       ],
       "zanimljivost": "Meteorolozi ove elemente mere u meteorološkim stanicama nekoliko puta dnevno.",
       "rec": "elementi"
@@ -4021,7 +4021,7 @@
     {
       "lekcija": 18,
       "tezina": 2,
-      "pitanje": "Kako se zove klima u unutrašnjosti kontinenata, sa toplim letima i hladnim zimama?",
+      "pitanje": "Kako se zove klima daleko od mora, sa toplim letima, hladnim zimama i umereno malo padavina?",
       "odgovori": [
         "Kontinentalna",
         "Sredozemna",
@@ -4940,8 +4940,8 @@
       "odgovori": [
         "Topli izvori koji povremeno izbacuju mlaz vode i pare",
         "Hladni izvori iz kojih stalno teče mineralna voda za piće",
-        "Bunari",
-        "Jezera"
+        "Otvori na vulkanu iz kojih povremeno izlazi užarena lava",
+        "Jezera sa toplom vodom u krateru ugašenog vulkana"
       ],
       "zanimljivost": "Reč gejzir potiče od islandskog izvora Gejsir.",
       "rec": "gejzir"
@@ -5291,8 +5291,8 @@
       "odgovori": [
         "Udubljenje na kopnu ispunjeno vodom",
         "Tekuća voda koja teče stalnim koritom",
-        "More",
-        "Izvor"
+        "Deo mora koji se duboko uvlači u kopno",
+        "Mesto gde podzemna voda izbija na površinu"
       ],
       "zanimljivost": "Najdublje jezero na svetu je Bajkal u Rusiji – dubok preko 1.600 m.",
       "rec": "jezero"
@@ -5440,7 +5440,7 @@
     {
       "lekcija": 24,
       "tezina": 3,
-      "pitanje": "Kako se zovu jezera nastala u krateru ugašenog vulkana?",
+      "pitanje": "Kako se zovu jezera nastala u udubljenju na vrhu ugašenog vulkana?",
       "odgovori": [
         "Kraterska jezera",
         "Lednička planinska jezera",
@@ -5509,8 +5509,8 @@
       "odgovori": [
         "Postrojenje koje čisti kanalizacionu vodu pre ispuštanja u reku",
         "Postrojenje koje od rečne vode pravi vodu za piće i šalje je u česme grada",
-        "Bunar",
-        "Brana"
+        "Brana koja zadržava rečnu vodu i stvara veliko veštačko jezero",
+        "Filter na česmi koji iz vode za piće uklanja kamenac i hlor"
       ],
       "zanimljivost": "Mnogi gradovi u Srbiji još grade prečistače.",
       "rec": "prečistač"
@@ -6077,12 +6077,12 @@
     {
       "lekcija": 27,
       "tezina": 2,
-      "pitanje": "Kako se zove zaštićeno područje bara i ptica pored Save, jedno od najstarijih u Evropi?",
+      "pitanje": "Koja močvara pored Save, poznata po pticama, je jedno od najstarijih zaštićenih područja u Evropi?",
       "odgovori": [
         "Obedska bara",
-        "Palićko jezero",
-        "Zlatibor (planina)",
-        "Nacionalni park Tara"
+        "Carska bara",
+        "Koviljski rit",
+        "Ludaško jezero"
       ],
       "zanimljivost": "Obedska bara zaštićena je još 1874. godine.",
       "rec": "obedska"

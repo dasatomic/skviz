@@ -298,3 +298,36 @@ body.ekran .mini { width: 44px; height: 44px; font-size: 1.4em; }
 .izabrani-predmet .ik { font-size: 2.2em; }
 .izabrani-predmet .nz { flex: 1; font-weight: 900; font-size: 1.15em; }
 .izabrani-predmet button { background: #1b1846; padding: 8px 12px; border-radius: 10px; font-weight: 800; font-size: .85em; }
+
+/* ───── matematički zadaci ───── */
+.mat { white-space: nowrap; font-variant-numeric: lining-nums; }
+.mat .pod-korenom { border-top: 2px solid currentColor; padding: 0 1px; margin-left: 1px; }
+.mat .razlomak { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: .85em; line-height: 1.15; margin: 0 2px; }
+.mat .razlomak > span:first-child { border-bottom: 1.5px solid currentColor; padding: 0 2px; }
+.pitanje-tekst.zadatak { font-size: 1.12em; font-weight: 700; line-height: 1.4; }
+.medij-geo svg, .resenje-crtez svg { max-height: 46vh; }
+body.ekran .medij-geo svg, body.ekran .resenje-crtez svg { max-height: 58vh; }
+svg.geo { font-family: Nunito, system-ui, sans-serif; }
+svg.geo .oznaka { fill: #fff; font-size: 15px; font-weight: 800; text-anchor: middle; paint-order: stroke; stroke: #120f35; stroke-width: 4px; }
+svg.geo .ime-tacke { fill: var(--istaknuto); font-size: 16px; font-weight: 900; text-anchor: middle; font-style: italic; paint-order: stroke; stroke: #120f35; stroke-width: 4px; }
+svg.geo .broj { fill: var(--blago); font-size: 12px; text-anchor: middle; }
+svg.geo .mreza { stroke: #ffffff22; stroke-width: 1; }
+svg.geo .mreza.osa, svg.geo .brojevna { stroke: #ffffffaa; stroke-width: 1.6; }
+svg.geo .ist { stroke: var(--istaknuto) !important; stroke-width: 4.5px; animation: geo-puls 1.4s ease-in-out infinite; }
+svg.geo .lik.ist { fill: var(--istaknuto); fill-opacity: .35; }
+svg.geo text.ist { fill: var(--istaknuto); stroke: #120f35 !important; stroke-width: 4px !important; animation: none; font-size: 17px; }
+svg.geo .novo { animation: geo-novo .9s ease-out; }
+svg.geo .novo.ist { animation: geo-novo .9s ease-out, geo-puls 1.4s 0.9s ease-in-out infinite; }
+@keyframes geo-puls { 50% { opacity: .55; } }
+@keyframes geo-novo { from { opacity: 0; } }
+.resenje { border-left: 6px solid var(--dobro); line-height: 1.45; animation: ulaz .6s .4s backwards; }
+.resenje h3 { margin-top: 0; color: #55efc4; }
+.koraci { margin: 6px 0 10px; padding-left: 1.6em; }
+.koraci li { padding: 7px 8px; border-radius: 10px; margin: 4px 0; opacity: .6; cursor: pointer; transition: opacity .3s, background .3s; }
+.koraci li.aktivan { opacity: 1; background: #1b1846; box-shadow: inset 3px 0 0 var(--istaknuto); animation: ulaz .4s; }
+.koraci li.skriven { display: none; }
+.koraci-dugmad { display: flex; gap: 8px; align-items: center; }
+.koraci-dugmad #kr-br { color: var(--blago); font-size: .85em; min-width: 3.2em; text-align: center; }
+.koraci-dugmad #kr-sled { flex: 1; }
+.koraci-dugmad .dugme { padding: 10px 14px; }
+.koraci-dugmad .dugme:disabled { opacity: .35; }
