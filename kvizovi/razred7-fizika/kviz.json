@@ -889,11 +889,7 @@
         "Vertikalna linija"
       ],
       "zanimljivost": "Nagib ove prave jednak je ubrzanju.",
-      "rec": "grafik",
-      "mediji": {
-        "vrsta": "svg",
-        "kod": "<svg viewBox='0 0 220 170' xmlns='http://www.w3.org/2000/svg'><g stroke='#fff' stroke-width='3' fill='none'><line x1='30' y1='150' x2='210' y2='150'/><line x1='30' y1='150' x2='30' y2='10'/></g><line x1='30' y1='150' x2='190' y2='40' stroke='#ffd166' stroke-width='5'/><text x='200' y='166' fill='#fff' font-size='16'>t</text><text x='8' y='20' fill='#fff' font-size='16'>v</text></svg>"
-      }
+      "rec": "grafik"
     },
     {
       "lekcija": 5,
@@ -906,11 +902,7 @@
         "Krug"
       ],
       "zanimljivost": "Kriva postaje sve strmija jer telo svake sekunde prelazi sve veći put.",
-      "rec": "parabola",
-      "mediji": {
-        "vrsta": "svg",
-        "kod": "<svg viewBox='0 0 220 170' xmlns='http://www.w3.org/2000/svg'><g stroke='#fff' stroke-width='3' fill='none'><line x1='30' y1='150' x2='210' y2='150'/><line x1='30' y1='150' x2='30' y2='10'/><path d='M30 150 Q140 150 190 20' stroke='#ef476f' stroke-width='5'/></g><text x='200' y='166' fill='#fff' font-size='16'>t</text><text x='8' y='20' fill='#fff' font-size='16'>s</text></svg>"
-      }
+      "rec": "parabola"
     },
     {
       "lekcija": 5,
@@ -936,11 +928,7 @@
         "Ravnomerno kretanje"
       ],
       "zanimljivost": "Kada linija dodirne vremensku osu, telo se zaustavilo.",
-      "rec": "usporenje",
-      "mediji": {
-        "vrsta": "svg",
-        "kod": "<svg viewBox='0 0 220 170' xmlns='http://www.w3.org/2000/svg'><g stroke='#fff' stroke-width='3' fill='none'><line x1='30' y1='150' x2='210' y2='150'/><line x1='30' y1='150' x2='30' y2='10'/></g><line x1='30' y1='40' x2='180' y2='150' stroke='#06d6a0' stroke-width='5'/><text x='200' y='166' fill='#fff' font-size='16'>t</text><text x='8' y='20' fill='#fff' font-size='16'>v</text></svg>"
-      }
+      "rec": "usporenje"
     },
     {
       "lekcija": 5,
@@ -1399,11 +1387,7 @@
         "Na Mesecu nema teže"
       ],
       "zanimljivost": "Na Mesecu je ubrzanje teže oko 1,6 m/s².",
-      "rec": "mesec",
-      "mediji": {
-        "vrsta": "planeta",
-        "ime": "mesec"
-      }
+      "rec": "mesec"
     },
     {
       "lekcija": 7,
@@ -1875,11 +1859,7 @@
         "Majkl Kolins"
       ],
       "zanimljivost": "„To je mali korak za čoveka, a džinovski skok za čovečanstvo“ – 20. jul 1969.",
-      "rec": "armstrong",
-      "mediji": {
-        "vrsta": "planeta",
-        "ime": "mesec"
-      }
+      "rec": "armstrong"
     },
     {
       "lekcija": 10,
@@ -2290,11 +2270,7 @@
         "Kosa daska niz koju se tereti guraju naviše"
       ],
       "zanimljivost": "Arhimed je rekao: „Dajte mi oslonac i podići ću Zemlju!“",
-      "rec": "poluga",
-      "mediji": {
-        "vrsta": "svg",
-        "kod": "<svg viewBox='0 0 240 120' xmlns='http://www.w3.org/2000/svg'><line x1='10' y1='60' x2='230' y2='60' stroke='#ffd166' stroke-width='8'/><polygon points='80,64 64,100 96,100' fill='#06d6a0'/><rect x='12' y='30' width='30' height='26' fill='#ef476f'/><line x1='220' y1='20' x2='220' y2='55' stroke='#fff' stroke-width='4'/><polygon points='214,48 226,48 220,58' fill='#fff'/></svg>"
-      }
+      "rec": "poluga"
     },
     {
       "lekcija": 12,
@@ -3641,16 +3617,16 @@
     },
     {
       "lekcija": 18,
-      "tezina": 1,
-      "pitanje": "Po kome je jedinica za snagu dobila ime?",
+      "tezina": 2,
+      "pitanje": "Kolika je snaga motora koji za 10 s izvrši rad od 5.000 J?",
       "odgovori": [
-        "Džejms Vat",
-        "Isak Njutn",
-        "Džejms Džul",
-        "Blez Paskal"
+        "500 W",
+        "50.000 W",
+        "50 W",
+        "5.010 W"
       ],
-      "zanimljivost": "Vatova parna mašina pokrenula je industrijsku revoluciju u 18. veku.",
-      "rec": "vat"
+      "zanimljivost": "Snaga se računa kao rad podeljen vremenom: P = A / t. Motor jakog automobila ima snagu oko 100.000 W – dvesta puta više od ovog motora.",
+      "rec": "snaga"
     },
     {
       "lekcija": 19,
@@ -4035,9 +4011,9 @@
       "pitanje": "Ko je predložio apsolutnu temperaturnu skalu?",
       "odgovori": [
         "Lord Kelvin (Vilijam Tomson)",
-        "Anders Celzijus (astronom iz Švedske)",
-        "Danijel Farenhajt (fizičar iz Nemačke)",
-        "Njutn"
+        "Anders Celzijus",
+        "Danijel Farenhajt",
+        "Isak Njutn"
       ],
       "zanimljivost": "Kelvin je dobio plemićku titulu i ime po reci Kelvin u Glazgovu.",
       "rec": "kelvin"
@@ -4157,11 +4133,7 @@
         "Atom ugljenika i kiseonika"
       ],
       "zanimljivost": "U jednoj čaši vode ima više molekula nego čaša vode u svim okeanima.",
-      "rec": "voda",
-      "mediji": {
-        "vrsta": "molekul",
-        "ime": "voda"
-      }
+      "rec": "voda"
     },
     {
       "lekcija": 21,
