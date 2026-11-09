@@ -52,7 +52,7 @@ Pitanja i ispravke su dobrodošli – vidi [CONTRIBUTING.md](CONTRIBUTING.md).
 ## Licence
 
 - **Kôd:** [MIT](LICENSE)
-- **Pitanja i tekstovi:** [CC BY-SA 4.0](LICENSE-SADRZAJ.md)
+- **Pitanja i tekstovi:** [CC0 – javni domen](LICENSE-SADRZAJ.md)
 - **Slike:** sopstvene licence autora, vidi [SLIKE.md](SLIKE.md)
 - **Rečnik, mape i drugi tuđi materijali:** vidi [NOTICE.md](NOTICE.md)
 

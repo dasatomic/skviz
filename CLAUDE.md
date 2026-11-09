@@ -42,5 +42,5 @@ Format je opisan u `kvizovi/UPUTSTVO.md`. Ukratko:
 - Proveravati činjenice – pitanja su za decu i moraju biti tačna.
 
 ## Git i licence
-- Repozitorijum je otvoren (kôd MIT, pitanja CC BY-SA 4.0). Pre dodavanja slika proveriti licencu (`node alati/licence-slika.js` osvežava `SLIKE.md`).
+- Repozitorijum je otvoren (kôd MIT, pitanja CC0 – javni domen). Pre dodavanja slika proveriti licencu (`node alati/licence-slika.js` osvežava `SLIKE.md`).
 - Ne dodavati u git: `izvori/`, `podaci/statistika.json`, `podaci/odigrana-pitanja.json`.

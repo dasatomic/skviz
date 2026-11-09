@@ -1,12 +1,15 @@
 # Licenca sadržaja (pitanja i tekstovi)
 
-Pitanja, odgovori i „Da li si znao?“ zanimljivosti u folderu `kvizovi/` (fajlovi `kviz.json`)
-objavljeni su pod licencom **Creative Commons Imenovanje-Deliti pod istim uslovima 4.0 (CC BY-SA 4.0)**.
+Pitanja, odgovori, „Da li si znao?“ zanimljivosti i rešenja zadataka u folderu `kvizovi/`
+(fajlovi `kviz.json`) predati su u **javni domen** po **Creative Commons CC0 1.0** (Univerzalna
+posveta javnom domenu).
 
-Slobodno ih koristite, menjajte i delite – i u školi, i u sopstvenim igrama – uz navođenje
-izvora („Skviz“, https://skviz.rs) i uz objavljivanje izmena pod istom licencom.
+To znači da ih svako sme da koristi, menja, deli i objavljuje – u školi, u sopstvenim igrama i
+aplikacijama, i komercijalno – bez ikakvog uslova i bez obaveze navođenja izvora.
+Navođenje „Skviz, https://skviz.rs“ nije obavezno, ali nam je drago kad ga vidimo.
 
-Puni tekst licence: https://creativecommons.org/licenses/by-sa/4.0/legalcode.sr-latn
+Puni tekst: https://creativecommons.org/publicdomain/zero/1.0/legalcode.sr-Latn
 
-**Šta ova licenca NE pokriva:** slike u `kvizovi/*/slike/` imaju sopstvene licence svojih autora
-(vidi [SLIKE.md](SLIKE.md)), a kôd programa je pod MIT licencom (vidi [LICENSE](LICENSE)).
+**Šta ovo NE pokriva:** slike u `kvizovi/*/slike/` imaju sopstvene licence svojih autora
+(vidi [SLIKE.md](SLIKE.md)) i pri ponovnoj upotrebi treba poštovati njihove uslove.
+Kôd programa je pod MIT licencom (vidi [LICENSE](LICENSE)).
