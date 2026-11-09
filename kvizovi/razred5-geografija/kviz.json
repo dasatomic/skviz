@@ -234,11 +234,7 @@
         "Crtež grada sa ulicama i zgradama koji je napravio slikar"
       ],
       "zanimljivost": "Najstarija poznata karta sveta, vavilonska, urezana je na glinenu pločicu pre oko 2.600 godina.",
-      "rec": "karta",
-      "mediji": {
-        "vrsta": "mapa",
-        "oblast": "svet"
-      }
+      "rec": "karta"
     },
     {
       "lekcija": 1,
@@ -251,11 +247,7 @@
         "Legenda"
       ],
       "zanimljivost": "Razmer 1:100.000 znači da je 1 cm na karti 1 km u prirodi.",
-      "rec": "razmer",
-      "mediji": {
-        "vrsta": "formula",
-        "tekst": "1 : 100.000"
-      }
+      "rec": "razmer"
     },
     {
       "lekcija": 1,
@@ -650,7 +642,7 @@
     {
       "lekcija": 3,
       "tezina": 1,
-      "pitanje": "Koja planeta je najbliža Suncu?",
+      "pitanje": "Koja je ovo planeta, najbliža Suncu?",
       "odgovori": [
         "Merkur",
         "Venera",
@@ -667,7 +659,7 @@
     {
       "lekcija": 3,
       "tezina": 1,
-      "pitanje": "Koja planeta Sunčevog sistema je i najveća i najmasivnija?",
+      "pitanje": "Koja je ovo planeta, najveća i najmasivnija u Sunčevom sistemu?",
       "odgovori": [
         "Jupiter",
         "Saturn",
@@ -684,7 +676,7 @@
     {
       "lekcija": 3,
       "tezina": 2,
-      "pitanje": "Koja planeta je poznata po izraženim prstenovima?",
+      "pitanje": "Koja je ovo planeta, poznata po izraženim prstenovima?",
       "odgovori": [
         "Saturn",
         "Mars",
@@ -714,7 +706,7 @@
     {
       "lekcija": 3,
       "tezina": 3,
-      "pitanje": "Koja je najtoplija planeta Sunčevog sistema?",
+      "pitanje": "Koja je ovo planeta, najtoplija u Sunčevom sistemu?",
       "odgovori": [
         "Venera",
         "Merkur",
@@ -774,7 +766,7 @@
     {
       "lekcija": 3,
       "tezina": 3,
-      "pitanje": "Koja planeta se okreće „ležeći na boku“?",
+      "pitanje": "Koja je ovo planeta, koja se okreće „ležeći na boku“?",
       "odgovori": [
         "Uran",
         "Neptun",
@@ -791,7 +783,7 @@
     {
       "lekcija": 3,
       "tezina": 2,
-      "pitanje": "Kako se zove pojas asteroida?",
+      "pitanje": "Šta je pojas asteroida?",
       "odgovori": [
         "Prostor između Marsa i Jupitera sa mnoštvom asteroida",
         "Prstenovi planete Saturn, sastavljeni od leda, prašine i kamenja",
@@ -894,11 +886,7 @@
         "Mali, srednji, veliki, ogroman"
       ],
       "zanimljivost": "Mene nastaju jer vidimo različit deo osvetljene polovine Meseca.",
-      "rec": "mene",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🌑🌓🌕🌗"
-      }
+      "rec": "mene"
     },
     {
       "lekcija": 4,
@@ -1060,10 +1048,6 @@
       "lekcija": 5,
       "tezina": 2,
       "pitanje": "Koji grčki naučnik je, posmatrajući senku Zemlje na Mesecu pri pomračenju, zaključio da je Zemlja okrugla?",
-      "mediji": {
-        "vrsta": "planeta",
-        "ime": "mesec"
-      },
       "odgovori": [
         "Aristotel",
         "Arhimed",
@@ -1136,11 +1120,7 @@
         "Valjak"
       ],
       "zanimljivost": "Zemlja je spljoštena na polovima zbog okretanja oko svoje ose.",
-      "rec": "lopta",
-      "mediji": {
-        "vrsta": "planeta",
-        "ime": "zemlja"
-      }
+      "rec": "lopta"
     },
     {
       "lekcija": 5,
@@ -1187,22 +1167,12 @@
       "pitanje": "Kroz koje mesto prolazi početni (nulti) meridijan?",
       "odgovori": [
         "Kroz Grinič u Londonu",
-        "Kroz Beograd u Srbiji (Kalemegdan)",
+        "Kroz Beograd u Srbiji",
         "Kroz Pariz u Francuskoj",
         "Kroz Njujork u Americi"
       ],
       "zanimljivost": "Na opservatoriji u Griniču posetioci stoje jednom nogom na istočnoj, a drugom na zapadnoj polulopti.",
-      "rec": "grinič",
-      "mediji": {
-        "vrsta": "mapa",
-        "oblast": "evropa",
-        "tacke": [
-          {
-            "lat": 51.48,
-            "lon": 0
-          }
-        ]
-      }
+      "rec": "grinič"
     },
     {
       "lekcija": 5,
@@ -1372,11 +1342,7 @@
         "Severna Amerika"
       ],
       "zanimljivost": "Azija zauzima oko 30% kopna i u njoj živi oko 60% svih ljudi.",
-      "rec": "azija",
-      "mediji": {
-        "vrsta": "mapa",
-        "oblast": "azija"
-      }
+      "rec": "azija"
     },
     {
       "lekcija": 6,
@@ -1402,11 +1368,7 @@
         "Južna Amerika"
       ],
       "zanimljivost": "Australija je jedini kontinent koji je istovremeno i jedna država.",
-      "rec": "australija",
-      "mediji": {
-        "vrsta": "mapa",
-        "oblast": "australija"
-      }
+      "rec": "australija"
     },
     {
       "lekcija": 6,
@@ -1458,14 +1420,7 @@
         "Amerika"
       ],
       "zanimljivost": "Evropa je drugi najmanji kontinent, ali jedan od najgušće naseljenih.",
-      "rec": "evropa",
-      "mediji": {
-        "vrsta": "mapa",
-        "oblast": "evropa",
-        "istakni": [
-          "SRB"
-        ]
-      }
+      "rec": "evropa"
     },
     {
       "lekcija": 6,
@@ -1499,9 +1454,9 @@
       "pitanje": "Koji okean je najmanji?",
       "odgovori": [
         "Severni ledeni okean",
-        "Indijski okean (oko Indije)",
-        "Atlantski okean (do Amerike)",
-        "Tihi okean (najdublji i najveći)"
+        "Indijski okean",
+        "Atlantski okean",
+        "Tihi okean"
       ],
       "zanimljivost": "Veći deo godine prekriven je ledom koji se poslednjih decenija ubrzano smanjuje.",
       "rec": "ledeni"
@@ -1562,10 +1517,6 @@
       "lekcija": 7,
       "tezina": 3,
       "pitanje": "Kojom brzinom se, zbog rotacije Zemlje, kreću ljudi na ekvatoru?",
-      "mediji": {
-        "vrsta": "planeta",
-        "ime": "zemlja"
-      },
       "odgovori": [
         "Oko 1.670 km/h",
         "Oko 100 km/h",
@@ -1716,21 +1667,7 @@
         "Nije tačno – Sunce svuda u Srbiji izlazi u isto vreme"
       ],
       "zanimljivost": "Razlika u izlasku Sunca između krajnjeg istoka i zapada Srbije iznosi i do petnaestak minuta.",
-      "rec": "niš",
-      "mediji": {
-        "vrsta": "mapa",
-        "oblast": "srbija",
-        "tacke": [
-          {
-            "lat": 43.32,
-            "lon": 21.9
-          },
-          {
-            "lat": 46.1,
-            "lon": 19.67
-          }
-        ]
-      }
+      "rec": "niš"
     },
     {
       "lekcija": 7,
@@ -1795,11 +1732,7 @@
         "Vreme na ekvatoru, gde su dan i noć tokom cele godine dugi po 12 sati"
       ],
       "zanimljivost": "U Srbiji se sat pomera poslednje nedelje marta i vraća poslednje nedelje oktobra.",
-      "rec": "sat",
-      "mediji": {
-        "vrsta": "sat",
-        "vreme": "3:00"
-      }
+      "rec": "sat"
     },
     {
       "lekcija": 8,
@@ -2538,20 +2471,7 @@
         "Krakatau"
       ],
       "zanimljivost": "Ispod pepela su sačuvani hleb u pećima, freske i otisci ljudi.",
-      "rec": "vezuv",
-      "mediji": {
-        "vrsta": "mapa",
-        "oblast": "evropa",
-        "tacke": [
-          {
-            "lat": 40.82,
-            "lon": 14.43
-          }
-        ],
-        "istakni": [
-          "ITA"
-        ]
-      }
+      "rec": "vezuv"
     },
     {
       "lekcija": 11,
@@ -2598,9 +2518,9 @@
       "pitanje": "Po kojoj skali se izražava jačina (magnituda) zemljotresa?",
       "odgovori": [
         "Rihterovoj (magnitudnoj) skali",
-        "Celzijusovoj (temperaturnoj) skali",
-        "Boforovoj (skali za jačinu vetra)",
-        "Mohsovoj (skali tvrdoće minerala)"
+        "Celzijusovoj skali",
+        "Boforovoj skali",
+        "Mohsovoj skali"
       ],
       "zanimljivost": "Zemljotres jačine 7 oslobađa oko 32 puta više energije od zemljotresa jačine 6.",
       "rec": "rihter"
@@ -2655,17 +2575,7 @@
         "Zrenjanin"
       ],
       "zanimljivost": "Zemljotres jačine 5,4 oštetio je hiljade kuća u Kraljevu i okolini.",
-      "rec": "kraljevo",
-      "mediji": {
-        "vrsta": "mapa",
-        "oblast": "srbija",
-        "tacke": [
-          {
-            "lat": 43.72,
-            "lon": 20.69
-          }
-        ]
-      }
+      "rec": "kraljevo"
     },
     {
       "lekcija": 11,
@@ -2735,12 +2645,12 @@
     {
       "lekcija": 12,
       "tezina": 2,
-      "pitanje": "Kako se zovu stene nastale hlađenjem magme?",
+      "pitanje": "Kojoj grupi stena pripadaju granit i bazalt?",
       "odgovori": [
-        "Magmatske stene",
-        "Taložne stene",
-        "Metamorfne stene",
-        "Kristalne soli"
+        "Magmatskim stenama",
+        "Taložnim stenama",
+        "Metamorfnim stenama",
+        "Kristalnim solima"
       ],
       "zanimljivost": "Granit i bazalt su magmatske stene. Taložne nastaju taloženjem (krečnjak, pesak), a metamorfne preobražajem pod pritiskom i toplotom (mermer).",
       "rec": "magma"
@@ -2867,10 +2777,10 @@
       "tezina": 1,
       "pitanje": "Koja rastresita sedimentna stena nastaje raspadanjem drugih stena i koristi se za malter i beton?",
       "odgovori": [
-        "Pesak (sedimentna)",
-        "Mermer (metamorfna)",
-        "Granit (magmatska stena)",
-        "Bazalt (vulkanska stena)"
+        "Pesak",
+        "Mermer",
+        "Granit",
+        "Bazalt"
       ],
       "zanimljivost": "Pesak sa plaža često je od sitnih zrna kvarca, a na nekim ostrvima od izmrvljenih školjki i korala.",
       "rec": "pesak"
@@ -2964,11 +2874,7 @@
         "Andima"
       ],
       "zanimljivost": "Najviši vrh centralne Srbije je Midžor na Staroj planini (2.169 m).",
-      "rec": "dinaridi",
-      "mediji": {
-        "vrsta": "mapa",
-        "oblast": "srbija"
-      }
+      "rec": "dinaridi"
     },
     {
       "lekcija": 13,
@@ -3147,14 +3053,7 @@
         "Morska obala sa visokim liticama koje je oblikovao vetar"
       ],
       "zanimljivost": "Kanjon Tare je najdublji u Evropi – dubok do oko 1.300 m.",
-      "rec": "kanjon",
-      "mediji": {
-        "vrsta": "mapa",
-        "oblast": "balkan",
-        "reke": [
-          "Drina"
-        ]
-      }
+      "rec": "kanjon"
     },
     {
       "lekcija": 14,
@@ -3271,17 +3170,7 @@
         "Uzan kanjon reke Toplice sa visokim krečnjačkim stenama i vodopadima"
       ],
       "zanimljivost": "Oko 200 stubova visine do 15 m „zaštićeno“ je kamenim kapama koje ih štite od kiše.",
-      "rec": "varoš",
-      "mediji": {
-        "vrsta": "mapa",
-        "oblast": "srbija",
-        "tacke": [
-          {
-            "lat": 42.99,
-            "lon": 21.4
-          }
-        ]
-      }
+      "rec": "varoš"
     },
     {
       "pitanje": "Kako se zove otvor u kršu kroz koji reka ponire pod zemlju?",
@@ -3548,11 +3437,7 @@
         "Egzosfera (najviši sloj atmosfere)"
       ],
       "zanimljivost": "Ozon čini samo mali deo vazduha, ali bez njega život na kopnu bi bio nemoguć.",
-      "rec": "ozon",
-      "mediji": {
-        "vrsta": "molekul",
-        "ime": "ozon"
-      }
+      "rec": "ozon"
     },
     {
       "pitanje": "Kolika je otprilike debljina troposfere?",
@@ -3648,7 +3533,7 @@
     {
       "lekcija": 16,
       "tezina": 1,
-      "pitanje": "Šta je kiseonik u vazduhu potrebno?",
+      "pitanje": "Čemu služi kiseonik u vazduhu?",
       "odgovori": [
         "Za disanje živih bića",
         "Za stvaranje kiše i snega",
@@ -3656,11 +3541,7 @@
         "Ničemu – kiseonik je samo višak u vazduhu"
       ],
       "zanimljivost": "Skoro sav kiseonik u vazduhu nastao je fotosintezom.",
-      "rec": "kiseonik",
-      "mediji": {
-        "vrsta": "molekul",
-        "ime": "kiseonik"
-      }
+      "rec": "kiseonik"
     },
     {
       "lekcija": 16,
@@ -3772,9 +3653,9 @@
       "pitanje": "Kojim instrumentom se meri količina padavina?",
       "odgovori": [
         "Kišomerom (ombrometrom)",
-        "Barometrom (merač pritiska)",
-        "Termometrom (merač toplote)",
-        "Anemometrom (merač vetra)"
+        "Barometrom",
+        "Termometrom",
+        "Anemometrom"
       ],
       "zanimljivost": "Količina padavina se izražava u milimetrima – 1 mm kiše znači jedan litar vode na kvadratnom metru.",
       "rec": "kišomer"
@@ -4137,11 +4018,7 @@
         "Zemljotresi"
       ],
       "zanimljivost": "Količina CO₂ u vazduhu danas je najveća u poslednjih bar 800.000 godina.",
-      "rec": "ugljen",
-      "mediji": {
-        "vrsta": "molekul",
-        "ime": "ugljen-dioksid"
-      }
+      "rec": "ugljen"
     },
     {
       "lekcija": 19,
@@ -4336,11 +4213,7 @@
         "Reke"
       ],
       "zanimljivost": "Svetsko more zauzima oko 71% Zemljine površine.",
-      "rec": "more",
-      "mediji": {
-        "vrsta": "mapa",
-        "oblast": "svet"
-      }
+      "rec": "more"
     },
     {
       "lekcija": 20,
@@ -4392,15 +4265,7 @@
         "Severnom ledenom okeanu (preko reka)"
       ],
       "zanimljivost": "Jadran je najbliže more Srbiji – deo Sredozemnog mora.",
-      "rec": "jadran",
-      "mediji": {
-        "vrsta": "mapa",
-        "oblast": "balkan",
-        "istakni": [
-          "MNE",
-          "HRV"
-        ]
-      }
+      "rec": "jadran"
     },
     {
       "lekcija": 20,
@@ -4457,7 +4322,7 @@
     {
       "lekcija": 20,
       "tezina": 1,
-      "pitanje": "Kako se zove more na severu Crne Gore i Hrvatske?",
+      "pitanje": "Koje more zapljuskuje obale Crne Gore i Hrvatske?",
       "odgovori": [
         "Jadransko more",
         "Crno more",
@@ -4725,14 +4590,7 @@
         "Sredozemno more"
       ],
       "zanimljivost": "U Crno more uliva se i Dunav sa svim vodama iz Srbije.",
-      "rec": "crno",
-      "mediji": {
-        "vrsta": "mapa",
-        "oblast": "evropa",
-        "reke": [
-          "Dunav"
-        ]
-      }
+      "rec": "crno"
     },
     {
       "lekcija": 22,
@@ -4927,17 +4785,7 @@
         "Banja Koviljača"
       ],
       "zanimljivost": "Toplotom vode iz Vranjske banje greju se i staklenici za cveće.",
-      "rec": "vranje",
-      "mediji": {
-        "vrsta": "mapa",
-        "oblast": "srbija",
-        "tacke": [
-          {
-            "lat": 42.55,
-            "lon": 22
-          }
-        ]
-      }
+      "rec": "vranje"
     },
     {
       "lekcija": 23,
@@ -5028,21 +4876,7 @@
         "Meandar"
       ],
       "zanimljivost": "Ušće Save u Dunav nalazi se u Beogradu, ispod Kalemegdana.",
-      "rec": "ušće",
-      "mediji": {
-        "vrsta": "mapa",
-        "oblast": "srbija",
-        "reke": [
-          "Dunav",
-          "Sava"
-        ],
-        "tacke": [
-          {
-            "lat": 44.83,
-            "lon": 20.45
-          }
-        ]
-      }
+      "rec": "ušće"
     },
     {
       "lekcija": 23,
@@ -5068,14 +4902,7 @@
         "Drina"
       ],
       "zanimljivost": "Dunav kroz Srbiju teče oko 588 km.",
-      "rec": "dunav",
-      "mediji": {
-        "vrsta": "mapa",
-        "oblast": "srbija",
-        "reke": [
-          "Dunav"
-        ]
-      }
+      "rec": "dunav"
     },
     {
       "lekcija": 23,
@@ -5119,22 +4946,15 @@
     {
       "lekcija": 23,
       "tezina": 2,
-      "pitanje": "Koja je najduža reka na svetu?",
+      "pitanje": "Koja reka se tradicionalno smatra najdužom na svetu?",
       "odgovori": [
-        "Nil (ili Amazon, po nekim merenjima)",
-        "Dunav (najduža reka u Evropskoj uniji)",
+        "Nil",
+        "Jangce",
         "Misisipi",
         "Volga"
       ],
       "zanimljivost": "Amazon je reka sa najviše vode – nosi oko petinu sve rečne vode koja se uliva u mora.",
-      "rec": "nil",
-      "mediji": {
-        "vrsta": "mapa",
-        "oblast": "afrika",
-        "reke": [
-          "Nil"
-        ]
-      }
+      "rec": "nil"
     },
     {
       "lekcija": 23,
@@ -5186,14 +5006,7 @@
         "Timok"
       ],
       "zanimljivost": "„Na Drini ćuprija“ Ive Andrića govori o mostu u Višegradu.",
-      "rec": "drina",
-      "mediji": {
-        "vrsta": "mapa",
-        "oblast": "srbija",
-        "reke": [
-          "Drina"
-        ]
-      }
+      "rec": "drina"
     },
     {
       "lekcija": 23,
@@ -5201,19 +5014,12 @@
       "pitanje": "Kako se zove najveća reka koja teče samo kroz Srbiju?",
       "odgovori": [
         "Velika Morava",
-        "Dunav (kroz Beograd)",
-        "Sava (kroz Šabac)",
-        "Tisa (kroz Sentu)"
+        "Dunav",
+        "Sava",
+        "Tisa"
       ],
       "zanimljivost": "Velika Morava nastaje spajanjem Zapadne i Južne Morave kod Stalaća.",
-      "rec": "morava",
-      "mediji": {
-        "vrsta": "mapa",
-        "oblast": "srbija",
-        "reke": [
-          "Morava"
-        ]
-      }
+      "rec": "morava"
     },
     {
       "lekcija": 24,
@@ -5821,11 +5627,7 @@
         "U Evropi"
       ],
       "zanimljivost": "Australija se dugo razvijala odvojeno, pa ima mnogo jedinstvenih životinja.",
-      "rec": "kengur",
-      "mediji": {
-        "vrsta": "mapa",
-        "oblast": "australija"
-      }
+      "rec": "kengur"
     },
     {
       "lekcija": 26,
@@ -5890,17 +5692,7 @@
         "Fruška gora"
       ],
       "zanimljivost": "U Đerdapu se nalazi i Lepenski Vir.",
-      "rec": "đerdap",
-      "mediji": {
-        "vrsta": "mapa",
-        "oblast": "srbija",
-        "tacke": [
-          {
-            "lat": 44.6,
-            "lon": 22.1
-          }
-        ]
-      }
+      "rec": "đerdap"
     },
     {
       "lekcija": 27,
@@ -6035,7 +5827,7 @@
     {
       "lekcija": 27,
       "tezina": 2,
-      "pitanje": "Šta su pčele važne za prirodu i čoveka?",
+      "pitanje": "Zašto su pčele važne za prirodu i čoveka?",
       "odgovori": [
         "Oprašuju biljke, pa nastaju plodovi",
         "Ne rade ništa korisno, samo jedu cvetove",

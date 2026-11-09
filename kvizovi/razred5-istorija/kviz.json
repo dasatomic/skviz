@@ -886,19 +886,6 @@
     },
     {
       "lekcija": 4,
-      "tezina": 2,
-      "pitanje": "Šta je najveće otkriće praistorijskog čoveka?",
-      "odgovori": [
-        "Upotreba vatre",
-        "Izum točka i kola",
-        "Pronalazak pisma",
-        "Novac"
-      ],
-      "zanimljivost": "Vatra je davala toplotu, zaštitu od zveri i omogućila kuvanje hrane.",
-      "rec": "vatra"
-    },
-    {
-      "lekcija": 4,
       "tezina": 3,
       "pitanje": "Ko je homo sapiens?",
       "odgovori": [
@@ -993,9 +980,9 @@
       "tezina": 2,
       "pitanje": "Kako se zove period kada su ljudi počeli da se bave zemljoradnjom i stočarstvom?",
       "odgovori": [
-        "Neolit (mlađe kameno doba)",
-        "Paleolit (starije kameno doba)",
-        "Bronzano doba (prvi metali)",
+        "Neolit",
+        "Paleolit",
+        "Bronzano doba",
         "Srednji vek"
       ],
       "zanimljivost": "Taj veliki preokret zove se „neolitska revolucija“. Ljudi su prestali da lutaju i podigli prva stalna sela.",
@@ -1215,29 +1202,6 @@
     },
     {
       "lekcija": 6,
-      "tezina": 1,
-      "pitanje": "Koje je čuveno praistorijsko nalazište na Dunavu kod Đerdapa?",
-      "odgovori": [
-        "Lepenski Vir",
-        "Vinča",
-        "Starčevo",
-        "Gradac"
-      ],
-      "zanimljivost": "U Lepenskom Viru ljudi su gradili kuće trapezoidne osnove i pravili riboliku kamenu skulpturu.",
-      "rec": "lepenski",
-      "mediji": {
-        "vrsta": "mapa",
-        "oblast": "srbija",
-        "tacke": [
-          {
-            "lat": 44.56,
-            "lon": 22.03
-          }
-        ]
-      }
-    },
-    {
-      "lekcija": 6,
       "tezina": 2,
       "pitanje": "Po čemu je poznata Vinčanska kultura?",
       "odgovori": [
@@ -1316,19 +1280,6 @@
     },
     {
       "lekcija": 6,
-      "tezina": 2,
-      "pitanje": "Kakve su skulpture iz Lepenskog Vira?",
-      "odgovori": [
-        "Kamene skulpture glava sa licima nalik ribama",
-        "Mermerne statue grčkih bogova, donete sa juga Balkana",
-        "Bronzane konjanike",
-        "Drvene maske"
-      ],
-      "zanimljivost": "Lepenski Vir je otkriven 1960-ih, pred izgradnju brane na Đerdapu.",
-      "rec": "riba"
-    },
-    {
-      "lekcija": 6,
       "tezina": 3,
       "pitanje": "Zašto je Lepenski Vir premešten?",
       "odgovori": [
@@ -1368,19 +1319,6 @@
     },
     {
       "lekcija": 6,
-      "tezina": 1,
-      "pitanje": "Koje praistorijsko naselje se nalazi u Beogradu na obali Dunava?",
-      "odgovori": [
-        "Vinča – Belo brdo",
-        "Lepenski Vir",
-        "Gamzigrad",
-        "Pločnik"
-      ],
-      "zanimljivost": "Na Belom brdu slojevi naselja duboki su oko 10 metara – gradilo se na istom mestu vekovima.",
-      "rec": "belo"
-    },
-    {
-      "lekcija": 6,
       "tezina": 3,
       "pitanje": "Šta pokazuju znaci urezani na vinčanskim predmetima?",
       "odgovori": [
@@ -1391,6 +1329,45 @@
       ],
       "zanimljivost": "O „vinčanskim znacima“ naučnici se i dalje spore.",
       "rec": "znaci"
+    },
+    {
+      "lekcija": 6,
+      "tezina": 3,
+      "pitanje": "Šta je Gomolava, nalazište na obali Save u Sremu?",
+      "odgovori": [
+        "Praistorijsko naselje sa slojevima iz više hiljada godina",
+        "Rimski vojni logor sa amfiteatrom",
+        "Srednjovekovna tvrđava despota Đurđa",
+        "Pećina sa crtežima iz ledenog doba"
+      ],
+      "zanimljivost": "Na Gomolavi su ljudi živeli, uz prekide, od mlađeg kamenog doba do srednjeg veka, pa su se slojevi naselja nagomilali jedan na drugi kao brdo – arheolozi ih „čitaju“ kao stranice knjige.",
+      "rec": "gomolava"
+    },
+    {
+      "lekcija": 6,
+      "tezina": 3,
+      "pitanje": "Koji narod je, prema većini istoričara, osnovao naselje Singidunum na mestu današnjeg Beograda?",
+      "odgovori": [
+        "Kelti (pleme Skordisci)",
+        "Rimljani",
+        "Stari Grci",
+        "Vizantinci"
+      ],
+      "zanimljivost": "Kelti su na ušće Save u Dunav stigli u 3. veku pre nove ere. Rimljani su kasnije zauzeli njihovo naselje i zadržali keltsko ime Singidunum.",
+      "rec": "kelti"
+    },
+    {
+      "lekcija": 6,
+      "tezina": 2,
+      "pitanje": "Šta su gajili prvi zemljoradnici starčevačke kulture?",
+      "odgovori": [
+        "Pšenicu i ječam",
+        "Kukuruz i krompir",
+        "Pirinač i soju",
+        "Suncokret i paradajz"
+      ],
+      "zanimljivost": "Kukuruz, krompir, suncokret i paradajz u Evropu su stigli tek posle otkrića Amerike, pre oko 500 godina – hiljadama godina posle starčevačkih zemljoradnika.",
+      "rec": "psenica"
     },
     {
       "lekcija": 7,
@@ -1446,14 +1423,7 @@
         "U Australiji"
       ],
       "zanimljivost": "Mesopotamija na grčkom znači „zemlja između reka“.",
-      "rec": "sumeri",
-      "mediji": {
-        "vrsta": "mapa",
-        "oblast": "bliski-istok",
-        "istakni": [
-          "IRQ"
-        ]
-      }
+      "rec": "sumeri"
     },
     {
       "lekcija": 7,
@@ -1466,17 +1436,7 @@
         "Ganges"
       ],
       "zanimljivost": "Herodot je napisao da je Egipat „dar Nila“.",
-      "rec": "nil",
-      "mediji": {
-        "vrsta": "mapa",
-        "oblast": "afrika",
-        "reke": [
-          "Nil"
-        ],
-        "istakni": [
-          "EGY"
-        ]
-      }
+      "rec": "nil"
     },
     {
       "lekcija": 7,
@@ -1541,17 +1501,7 @@
         "Volga i Don"
       ],
       "zanimljivost": "Žuta reka je dobila ime po žutom mulju koji nosi.",
-      "rec": "jangce",
-      "mediji": {
-        "vrsta": "mapa",
-        "oblast": "azija",
-        "reke": [
-          "Jangce"
-        ],
-        "istakni": [
-          "CHN"
-        ]
-      }
+      "rec": "jangce"
     },
     {
       "lekcija": 7,
@@ -1578,19 +1528,6 @@
       ],
       "zanimljivost": "Ukupna dužina svih delova zida veća je od 20.000 km.",
       "rec": "zid"
-    },
-    {
-      "lekcija": 7,
-      "tezina": 1,
-      "pitanje": "Zašto su prve civilizacije nastale uz reke?",
-      "odgovori": [
-        "Reke su donosile vodu i plodno tlo za zemljoradnju",
-        "Zbog ribe, koja je bila jedina hrana prvih ljudi u dolinama",
-        "Zbog mostova",
-        "Slučajno, jer su se ljudi tu zatekli dok su lutali za stadima"
-      ],
-      "zanimljivost": "Izlivanje Nila svake godine ostavljalo je plodni mulj na poljima.",
-      "rec": "reka"
     },
     {
       "lekcija": 7,
@@ -1630,6 +1567,19 @@
       ],
       "zanimljivost": "Biblioteka kralja Asurbanipala imala je oko 30.000 pločica – među njima i „Ep o Gilgamešu“.",
       "rec": "ninive"
+    },
+    {
+      "lekcija": 7,
+      "tezina": 2,
+      "pitanje": "Na teritoriji koje današnje države se najvećim delom nalazila Mesopotamija?",
+      "odgovori": [
+        "Iraka",
+        "Egipta",
+        "Grčke",
+        "Indije"
+      ],
+      "zanimljivost": "Ime Mesopotamija na grčkom znači „zemlja između reka“ – između Tigra i Eufrata. Danas je tu prestonica Iraka, Bagdad.",
+      "rec": "irak"
     },
     {
       "lekcija": 8,
@@ -1717,19 +1667,6 @@
     },
     {
       "lekcija": 8,
-      "tezina": 1,
-      "pitanje": "Gde su nastale piramide u Gizi?",
-      "odgovori": [
-        "U Egiptu",
-        "U Mesopotamiji",
-        "U Grčkoj",
-        "U Kini"
-      ],
-      "zanimljivost": "Keopsova piramida bila je najviša građevina na svetu skoro 4.000 godina.",
-      "rec": "piramida"
-    },
-    {
-      "lekcija": 8,
       "tezina": 2,
       "pitanje": "Šta je klinasto pismo?",
       "odgovori": [
@@ -1809,7 +1746,7 @@
     {
       "lekcija": 8,
       "tezina": 2,
-      "pitanje": "Šta su Visoki vrtovi Semiramide?",
+      "pitanje": "Šta su Viseći vrtovi Semiramide?",
       "odgovori": [
         "Jedno od sedam svetskih čuda, u Vavilonu",
         "Egipatski hram boginje Izide na obali reke Nil",
@@ -2073,19 +2010,6 @@
     {
       "lekcija": 9,
       "tezina": 2,
-      "pitanje": "Koji bog Sunca je bio najvažniji u Egiptu?",
-      "odgovori": [
-        "Ra",
-        "Anubis",
-        "Set",
-        "Izida"
-      ],
-      "zanimljivost": "Egipćani su verovali da Ra svake noći plovi barkom kroz podzemni svet.",
-      "rec": "sunce"
-    },
-    {
-      "lekcija": 9,
-      "tezina": 2,
       "pitanje": "Šta je bio Marduk?",
       "odgovori": [
         "Glavni bog Vavilona",
@@ -2107,20 +2031,7 @@
         "Na Rodosu"
       ],
       "zanimljivost": "Ime je dobila po legendarnom kralju Minosu.",
-      "rec": "krit",
-      "mediji": {
-        "vrsta": "mapa",
-        "oblast": "evropa",
-        "tacke": [
-          {
-            "lat": 35.3,
-            "lon": 25.16
-          }
-        ],
-        "istakni": [
-          "GRC"
-        ]
-      }
+      "rec": "krit"
     },
     {
       "lekcija": 10,
@@ -2189,19 +2100,6 @@
     },
     {
       "lekcija": 10,
-      "tezina": 1,
-      "pitanje": "Kako se zove rat Grka protiv grada Troje?",
-      "odgovori": [
-        "Trojanski rat",
-        "Peloponeski rat",
-        "Persijski rat",
-        "Punski rat"
-      ],
-      "zanimljivost": "Prema mitu, rat je počeo kada je Paris oteo lepu Jelenu.",
-      "rec": "troja"
-    },
-    {
-      "lekcija": 10,
       "tezina": 2,
       "pitanje": "Šta je trojanski konj?",
       "odgovori": [
@@ -2254,19 +2152,6 @@
     },
     {
       "lekcija": 10,
-      "tezina": 3,
-      "pitanje": "Koje more je, prema mitu, dobilo ime po kralju Egeju, ocu junaka Tezeja?",
-      "odgovori": [
-        "Egejsko more",
-        "Jonsko more",
-        "Jadransko more",
-        "Crno more"
-      ],
-      "zanimljivost": "Prema mitu, Egej se bacio u more misleći da mu je sin poginuo.",
-      "rec": "egej"
-    },
-    {
-      "lekcija": 10,
       "tezina": 2,
       "pitanje": "Zašto su Mikenjani gradili zidine od ogromnog kamenja?",
       "odgovori": [
@@ -2303,6 +2188,32 @@
       ],
       "zanimljivost": "Pločice sa Linearom A i dalje čekaju svog „Šampoliona“.",
       "rec": "linear"
+    },
+    {
+      "lekcija": 10,
+      "tezina": 2,
+      "pitanje": "Ko je, prema mitu, sagradio lavirint na Kritu?",
+      "odgovori": [
+        "Dedal",
+        "Tezej",
+        "Minos",
+        "Ikar"
+      ],
+      "zanimljivost": "Dedal je bio toliko vešt graditelj da ni sam nije lako izlazio iz lavirinta. Sa Krita je pobegao krilima od perja i voska koja je napravio sebi i sinu Ikaru.",
+      "rec": "dedal"
+    },
+    {
+      "lekcija": 10,
+      "tezina": 2,
+      "pitanje": "Kako se zove čuvena kapija u Mikeni, sa dve isklesane životinje iznad ulaza?",
+      "odgovori": [
+        "Lavlja kapija",
+        "Zlatna kapija",
+        "Ištarina kapija",
+        "Bikova kapija"
+      ],
+      "zanimljivost": "Kamena ploča iznad kapije teška je oko 20 tona. Kasniji Grci nisu verovali da su ljudi mogli da podignu takvo kamenje, pa su govorili da su zidine gradili divovi – Kiklopi.",
+      "rec": "mikena"
     },
     {
       "lekcija": 11,
@@ -2359,19 +2270,6 @@
       ],
       "zanimljivost": "Odisejeva žena Penelopa čekala ga je 20 godina.",
       "rec": "odisej"
-    },
-    {
-      "lekcija": 11,
-      "tezina": 2,
-      "pitanje": "Šta je polis?",
-      "odgovori": [
-        "Grčki grad-država",
-        "Malo selo u grčkim planinama",
-        "Hram posvećen bogu Zevsu",
-        "Vojska"
-      ],
-      "zanimljivost": "Najpoznatiji polisi bili su Atina i Sparta.",
-      "rec": "polis"
     },
     {
       "lekcija": 11,
@@ -2504,6 +2402,19 @@
       "rec": "primirje"
     },
     {
+      "lekcija": 11,
+      "tezina": 3,
+      "pitanje": "Kako se zvala grčka kolonija na mestu današnjeg Marselja u Francuskoj?",
+      "odgovori": [
+        "Masalija",
+        "Sirakuza",
+        "Vizantion",
+        "Kirena"
+      ],
+      "zanimljivost": "Masaliju su oko 600. godine pre nove ere osnovali Grci iz Male Azije. Preko nje su vino i masline stigli do mnogih naroda Galije.",
+      "rec": "masalija"
+    },
+    {
       "lekcija": 12,
       "tezina": 2,
       "pitanje": "Koliko je kraljeva istovremeno imala Sparta?",
@@ -2609,19 +2520,6 @@
     },
     {
       "lekcija": 12,
-      "tezina": 1,
-      "pitanje": "Kako se zvala vlast naroda u Atini?",
-      "odgovori": [
-        "Demokratija",
-        "Monarhija",
-        "Tiranija",
-        "Oligarhija"
-      ],
-      "zanimljivost": "Demokratija na grčkom znači „vladavina naroda“.",
-      "rec": "demokratija"
-    },
-    {
-      "lekcija": 12,
       "tezina": 2,
       "pitanje": "Ko je smatran „ocem atinske demokratije“?",
       "odgovori": [
@@ -2684,19 +2582,6 @@
       ],
       "zanimljivost": "Atina je bila na poluostrvu Atika.",
       "rec": "peloponez"
-    },
-    {
-      "lekcija": 12,
-      "tezina": 2,
-      "pitanje": "Kako su Atinjani mogli da proteraju opasnog političara iz grada na 10 godina?",
-      "odgovori": [
-        "Ostrakizmom – glasanjem na crepovima",
-        "Dvobojem na agori",
-        "Lutrijom sa obojenim kamenčićima i pasuljem",
-        "Ne mogu"
-      ],
-      "zanimljivost": "Na krhotinama grnčarije (ostrakon) urezivano je ime osobe.",
-      "rec": "ostrakizam"
     },
     {
       "lekcija": 12,
@@ -3003,9 +2888,9 @@
       "pitanje": "U kom gradu u Egiptu su se nalazili svetionik na Farosu i najveća biblioteka antičkog sveta?",
       "odgovori": [
         "U Aleksandriji",
-        "Kairo, na Nilu",
-        "Memfis, staru prestonicu",
-        "Tebu, grad hramova"
+        "U Kairu",
+        "U Memfisu",
+        "U Tebi"
       ],
       "zanimljivost": "Aleksandar je osnovao više od 20 gradova sa svojim imenom.",
       "rec": "faros"
@@ -3103,19 +2988,6 @@
     },
     {
       "lekcija": 14,
-      "tezina": 1,
-      "pitanje": "Iz koje zemlje je bio Aleksandar?",
-      "odgovori": [
-        "Iz Makedonije",
-        "Iz Atine",
-        "Iz Sparte",
-        "Iz Persije"
-      ],
-      "zanimljivost": "Njegova prestonica bila je Pela.",
-      "rec": "makedonija"
-    },
-    {
-      "lekcija": 14,
       "tezina": 2,
       "pitanje": "Kako se zvala Aleksandrova vojna formacija sa veoma dugim kopljima?",
       "odgovori": [
@@ -3152,6 +3024,19 @@
       ],
       "zanimljivost": "Za 13 godina stvorio je jedno od najvećih carstava starog veka.",
       "rec": "kralj"
+    },
+    {
+      "lekcija": 14,
+      "tezina": 3,
+      "pitanje": "Kod kog mesta je Aleksandar Makedonski 331. p. n. e. odlučno porazio persijskog kralja Darija III?",
+      "odgovori": [
+        "Kod Gaugamele",
+        "Kod Maratona",
+        "Kod Termopila",
+        "Kod Salamine"
+      ],
+      "zanimljivost": "Darije je imao mnogo veću vojsku i bojna kola sa sečivima na točkovima, ali je Aleksandar napao baš mesto gde je stajao Darije. Persijski kralj je pobegao, a Persijsko carstvo je palo.",
+      "rec": "darije"
     },
     {
       "lekcija": 15,
@@ -3216,24 +3101,11 @@
     {
       "lekcija": 15,
       "tezina": 2,
-      "pitanje": "Ko je bio grčki bog mora?",
-      "odgovori": [
-        "Posejdon",
-        "Zevs",
-        "Hermes",
-        "Ares"
-      ],
-      "zanimljivost": "Rimljani su ga zvali Neptun.",
-      "rec": "posejdon"
-    },
-    {
-      "lekcija": 15,
-      "tezina": 2,
-      "pitanje": "Kako se zove boginja mudrosti, zaštitnica Atine?",
+      "pitanje": "Kako se zove boginja mudrosti, kojoj je posvećen Partenon?",
       "odgovori": [
         "Atina (Palada Atena)",
-        "Hera, Zevsova žena i boginja braka",
-        "Afrodita, boginja lepote i ljubavi",
+        "Hera",
+        "Afrodita",
         "Artemida"
       ],
       "zanimljivost": "Po mitu, Atina je pobedila Posejdona u nadmetanju darujući građanima maslinu.",
@@ -3368,6 +3240,19 @@
       ],
       "zanimljivost": "Apolonovo svetilište bilo je u Delfima.",
       "rec": "apolon"
+    },
+    {
+      "lekcija": 15,
+      "tezina": 1,
+      "pitanje": "Ko je kod starih Grka bio bog podzemnog sveta?",
+      "odgovori": [
+        "Had",
+        "Posejdon",
+        "Apolon",
+        "Hermes"
+      ],
+      "zanimljivost": "Had je bio Zevsov i Posejdonov brat. Ulaz u njegovo carstvo čuvao je troglavi pas Kerber, a duše je preko reke Stiks prevozio skeledžija Haron.",
+      "rec": "had"
     },
     {
       "lekcija": 16,
@@ -3709,19 +3594,6 @@
     },
     {
       "lekcija": 17,
-      "tezina": 1,
-      "pitanje": "Kako se zove period grčke istorije posle smrti Aleksandra?",
-      "odgovori": [
-        "Helenistički period",
-        "Arhajski",
-        "Mikenski",
-        "Srednji vek grčke istorije"
-      ],
-      "zanimljivost": "Završava se padom Egipta pod Rim 30. godine pre nove ere.",
-      "rec": "helenizam"
-    },
-    {
-      "lekcija": 17,
       "tezina": 2,
       "pitanje": "Šta su naučnici u Aleksandriji radili na Muzejonu?",
       "odgovori": [
@@ -3758,6 +3630,19 @@
       ],
       "zanimljivost": "Hiparh se smatra najvećim astronomom antike.",
       "rec": "hiparh"
+    },
+    {
+      "lekcija": 17,
+      "tezina": 2,
+      "pitanje": "Kako se zove čuvena helenistička skulptura krilate boginje pobede, danas u Luvru?",
+      "odgovori": [
+        "Nike sa Samotrake",
+        "Venera Miloska",
+        "Laokon",
+        "Diskobol"
+      ],
+      "zanimljivost": "Kip je pronađen 1863. na ostrvu Samotraka, razbijen na više od sto komada. Glava i ruke nikada nisu pronađene, ali i bez njih deluje kao da boginja upravo sleće na pramac broda.",
+      "rec": "nike"
     },
     {
       "lekcija": 18,
@@ -3800,17 +3685,7 @@
         "Na Padu"
       ],
       "zanimljivost": "Rim je, po predanju, nastao na sedam brežuljaka.",
-      "rec": "tibar",
-      "mediji": {
-        "vrsta": "mapa",
-        "oblast": "evropa",
-        "reke": [
-          "Tibar"
-        ],
-        "istakni": [
-          "ITA"
-        ]
-      }
+      "rec": "tibar"
     },
     {
       "lekcija": 18,
@@ -3957,16 +3832,16 @@
     },
     {
       "lekcija": 18,
-      "tezina": 1,
-      "pitanje": "Kako se zvala ženka koja je, po legendi, dojila Romula i Rema?",
+      "tezina": 2,
+      "pitanje": "Na koliko brežuljaka je, prema predanju, nastao Rim?",
       "odgovori": [
-        "Vučica",
-        "Medvedica",
-        "Koza",
-        "Košuta"
+        "Sedam",
+        "Tri",
+        "Dvanaest",
+        "Pet"
       ],
-      "zanimljivost": "Blizance je, po legendi, pronašao pastir Faustul i odgajio ih.",
-      "rec": "vučica"
+      "zanimljivost": "Najpoznatiji od rimskih brežuljaka je Palatin, na kome je, po legendi, Romul osnovao grad. Od njegovog imena potiče i reč „palata“, jer su tu kasnije živeli carevi.",
+      "rec": "palatin"
     },
     {
       "lekcija": 19,
@@ -4271,14 +4146,7 @@
         "Glavni kameni put od Rima do Brindizija"
       ],
       "zanimljivost": "Deo limesa išao je duž Dunava kroz današnju Srbiju.",
-      "rec": "limes",
-      "mediji": {
-        "vrsta": "mapa",
-        "oblast": "srbija",
-        "reke": [
-          "Dunav"
-        ]
-      }
+      "rec": "limes"
     },
     {
       "lekcija": 20,
@@ -4373,19 +4241,6 @@
     },
     {
       "lekcija": 20,
-      "tezina": 1,
-      "pitanje": "Kako se zvala rimska prestonica?",
-      "odgovori": [
-        "Rim",
-        "Atina",
-        "Aleksandrija",
-        "Kartagina"
-      ],
-      "zanimljivost": "U vreme najveće moći Rim je imao oko milion stanovnika.",
-      "rec": "rim"
-    },
-    {
-      "lekcija": 20,
       "tezina": 3,
       "pitanje": "Koliko provincija i stanovnika je imalo carstvo na vrhuncu?",
       "odgovori": [
@@ -4426,19 +4281,6 @@
       ],
       "zanimljivost": "Pulska arena je jedan od najbolje očuvanih rimskih amfiteatara na svetu. Može da primi oko 20.000 ljudi.",
       "rec": "amfiteatar"
-    },
-    {
-      "lekcija": 21,
-      "tezina": 1,
-      "pitanje": "Kako su se zvali gladijatori i gde su se borili?",
-      "odgovori": [
-        "Borci u arenama, npr. u Koloseumu",
-        "Senatori koji su se raspravljali u Senatu",
-        "Mornari koji su se borili na brodovima na moru",
-        "Sveštenici koji su se nadmetali u hramovima bogova"
-      ],
-      "zanimljivost": "Koloseum je mogao da primi oko 50.000 gledalaca.",
-      "rec": "koloseum"
     },
     {
       "lekcija": 21,
@@ -4597,6 +4439,19 @@
       "rec": "vestalke"
     },
     {
+      "lekcija": 21,
+      "tezina": 2,
+      "pitanje": "Kako se zvao rimski bog mora, kome je kod Grka odgovarao Posejdon?",
+      "odgovori": [
+        "Neptun",
+        "Jupiter",
+        "Mars",
+        "Merkur"
+      ],
+      "zanimljivost": "Rimljani su preuzeli mnoge grčke bogove i dali im svoja imena: Zevs je postao Jupiter, Ares – Mars, a Afrodita – Venera. Po Neptunu je nazvana najudaljenija planeta Sunčevog sistema.",
+      "rec": "neptun"
+    },
+    {
       "lekcija": 22,
       "tezina": 3,
       "pitanje": "Koji rimski car je 313. godine dozvolio slobodu hrišćanima?",
@@ -4606,9 +4461,9 @@
       },
       "odgovori": [
         "Konstantin Veliki",
-        "Neron (koji je zapalio Rim)",
-        "Dioklecijan (progonitelj)",
-        "Avgust (prvi rimski car)"
+        "Neron",
+        "Dioklecijan",
+        "Avgust"
       ],
       "zanimljivost": "Milanski edikt je i važan deo istorije Niša, gde je Konstantin rođen. Dioklecijan je, naprotiv, progonio hrišćane.",
       "rec": "hrišćanstvo"
@@ -4651,19 +4506,6 @@
       "zanimljivost": "Teodosije je bio poslednji car koji je vladao celim carstvom. Posle njegove smrti 395. carstvo je trajno podeljeno na Zapadno i Istočno.",
       "rec": "teodosije",
       "lekcija": 22
-    },
-    {
-      "lekcija": 22,
-      "tezina": 3,
-      "pitanje": "Koji car je hrišćanstvo proglasio državnom verom 380. godine?",
-      "odgovori": [
-        "Teodosije I",
-        "Konstantin",
-        "Julijan",
-        "Dioklecijan"
-      ],
-      "zanimljivost": "Teodosije je zabranio i olimpijske igre kao pagansko slavlje.",
-      "rec": "teodosije"
     },
     {
       "lekcija": 22,
@@ -4762,9 +4604,9 @@
       "pitanje": "Kako se zvao grad koji je Konstantin osnovao kao novu prestonicu?",
       "odgovori": [
         "Carigrad (na mestu Vizantiona)",
-        "Rim (večni grad na reci Tibru)",
-        "Niš (antički Naisus, rodni grad)",
-        "Milano (Mediolanum u Italiji)"
+        "Rim",
+        "Niš",
+        "Milano"
       ],
       "zanimljivost": "Grad je osnovan 330. godine na mestu grčkog Vizantiona.",
       "rec": "carigrad"
@@ -4796,6 +4638,19 @@
       "rec": "jerusalim"
     },
     {
+      "lekcija": 22,
+      "tezina": 2,
+      "pitanje": "Kojim ediktom je 313. godine hrišćanima dozvoljeno da slobodno ispovedaju veru?",
+      "odgovori": [
+        "Milanskim",
+        "Niškim",
+        "Rimskim",
+        "Carigradskim"
+      ],
+      "zanimljivost": "Edikt su u Milanu dogovorili carevi Konstantin i Licinije. Godine 2013, na 1.700 godina od tog događaja, u Nišu – Konstantinovom rodnom gradu – održana je velika proslava.",
+      "rec": "edikt"
+    },
+    {
       "lekcija": 23,
       "tezina": 2,
       "pitanje": "Ko je bio prozvan „Bič Božiji“?",
@@ -4824,7 +4679,7 @@
     {
       "lekcija": 23,
       "tezina": 2,
-      "pitanje": "Ko je 476. godine svrgnuo poslednjeg zapadnorimskog cara Romula Avgustula?",
+      "pitanje": "Ko je svrgnuo poslednjeg zapadnorimskog cara i time okončao Zapadno rimsko carstvo?",
       "odgovori": [
         "Odoakar",
         "Atila",
@@ -4863,7 +4718,7 @@
     {
       "lekcija": 23,
       "tezina": 1,
-      "pitanje": "Koje godine je pao Zapadno rimsko carstvo?",
+      "pitanje": "Koje godine je palo Zapadno rimsko carstvo?",
       "odgovori": [
         "476.",
         "1453.",
@@ -4874,7 +4729,7 @@
       "rec": "pad"
     },
     {
-      "pitanje": "Kako se zvao poslednji car Zapadnog rimskog carstva, svrgnut 476. godine?",
+      "pitanje": "Kako se zvao poslednji car Zapadnog rimskog carstva?",
       "odgovori": [
         "Romul Avgustul",
         "Konstantin Veliki",
@@ -4893,7 +4748,7 @@
       "odgovori": [
         "395. godine, posle smrti Teodosija",
         "476. godine, padom Rima",
-        "313. godine, Milanskim ediktom",
+        "330. godine, osnivanjem Carigrada",
         "1054. godine, velikim crkvenim raskolom"
       ],
       "zanimljivost": "Istočno rimsko carstvo (Vizantija) trajalo je još skoro hiljadu godina – do 1453.",
@@ -4930,10 +4785,10 @@
       "tezina": 1,
       "pitanje": "Kako se zvala država koja je nastavila da postoji na istoku posle pada Rima?",
       "odgovori": [
-        "Vizantija (Istočno rimsko carstvo)",
-        "Persija (Persijsko carstvo)",
-        "Kartagina (u severnoj Africi, kod Tunisa)",
-        "Egipat (staro kraljevstvo faraona na Nilu)"
+        "Vizantija",
+        "Persija",
+        "Kartagina",
+        "Egipat"
       ],
       "zanimljivost": "Vizantinci su sebe sve vreme nazivali Rimljanima – Romejima.",
       "rec": "vizantija"
@@ -4976,19 +4831,6 @@
       ],
       "zanimljivost": "Seoba je promenila kartu Evrope – i Sloveni su tada došli na Balkan.",
       "rec": "seoba"
-    },
-    {
-      "lekcija": 23,
-      "tezina": 1,
-      "pitanje": "Ko je Atila?",
-      "odgovori": [
-        "Vođa Huna, „Bič Božiji“",
-        "Rimski car",
-        "Grčki filozof",
-        "Frankovski kralj"
-      ],
-      "zanimljivost": "Atila je umro 453. godine, a njegova država se brzo raspala.",
-      "rec": "atila"
     },
     {
       "lekcija": 23,
@@ -5044,17 +4886,7 @@
         "Viminacijum"
       ],
       "zanimljivost": "Ime Singidunum je keltskog porekla.",
-      "rec": "singidunum",
-      "mediji": {
-        "vrsta": "mapa",
-        "oblast": "srbija",
-        "tacke": [
-          {
-            "lat": 44.82,
-            "lon": 20.45
-          }
-        ]
-      }
+      "rec": "singidunum"
     },
     {
       "lekcija": 24,
@@ -5080,24 +4912,14 @@
         "Sirmijum"
       ],
       "zanimljivost": "U Viminacijumu je bilo sedište legije i amfiteatar.",
-      "rec": "viminacijum",
-      "mediji": {
-        "vrsta": "mapa",
-        "oblast": "srbija",
-        "tacke": [
-          {
-            "lat": 44.74,
-            "lon": 21.21
-          }
-        ]
-      }
+      "rec": "viminacijum"
     },
     {
       "lekcija": 24,
       "tezina": 3,
       "pitanje": "Šta je Feliks Romulijana?",
       "odgovori": [
-        "Palata cara Galerija kod Gamzigrada, na listi UNESKO-a",
+        "Carska palata kod Gamzigrada, na listi UNESKO-a",
         "Rimski kameni most preko Dunava koji je podigao car Trajan",
         "Velika arena u Nišu u kojoj su se borili gladijatori i zveri",
         "Hram boga Jupitera u rimskom Singidunumu, današnjem Beogradu"
@@ -5123,7 +4945,7 @@
       "tezina": 2,
       "pitanje": "Gde je rođen Konstantin Veliki?",
       "odgovori": [
-        "U Nišu (Naisus)",
+        "U Nišu",
         "U Rimu",
         "U Carigradu",
         "U Atini"
@@ -5159,19 +4981,6 @@
     },
     {
       "lekcija": 24,
-      "tezina": 1,
-      "pitanje": "Šta je „Trajanova tabla“?",
-      "odgovori": [
-        "Rimski natpis isklesan u steni iznad Dunava u Đerdapu",
-        "Ostaci rimske kuće sa mozaicima u Kostolcu",
-        "Rimski hram posvećen bogu reke Dunava, na samoj obali reke",
-        "Rimski novčić sa likom cara Trajana, nađen u Viminacijumu kod Kostolca"
-      ],
-      "zanimljivost": "Pre potapanja Đerdapa, ploča je podignuta 1960-ih više od 20 metara.",
-      "rec": "tabla"
-    },
-    {
-      "lekcija": 24,
       "tezina": 3,
       "pitanje": "Šta je Justinijana Prima?",
       "odgovori": [
@@ -5188,10 +4997,10 @@
       "tezina": 2,
       "pitanje": "Koji car je bio iz Sirmijuma i ubrzao jačanje carstva u 3. veku?",
       "odgovori": [
-        "Probus (i drugi carevi rođeni u Sirmijumu)",
-        "Neron (koji je, po predanju, zapalio grad Rim 64. godine)",
-        "Avgust (prvi rimski car)",
-        "Kaligula (ludi car iz Rima)"
+        "Probus",
+        "Neron",
+        "Avgust",
+        "Kaligula"
       ],
       "zanimljivost": "Probus je, prema predanju, sadio vinovu lozu na Fruškoj gori.",
       "rec": "probus"
@@ -5234,6 +5043,19 @@
       ],
       "zanimljivost": "Na brdu Magura iznad palate nalaze se mauzoleji Galerija i njegove majke.",
       "rec": "galerije"
+    },
+    {
+      "lekcija": 24,
+      "tezina": 3,
+      "pitanje": "Kako se zvala rimska provincija čiji je glavni grad bio Viminacijum?",
+      "odgovori": [
+        "Gornja Mezija",
+        "Panonija",
+        "Dalmacija",
+        "Dakija"
+      ],
+      "zanimljivost": "Gornja Mezija je obuhvatala veliki deo današnje Srbije južno od Dunava. U Viminacijumu je bila stacionirana čitava legija – oko 5.000 vojnika.",
+      "rec": "mezija"
     }
   ]
 }
