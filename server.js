@@ -37,21 +37,46 @@ function posalji(res, podaci) {
   try { res.write(`data: ${JSON.stringify(podaci)}\n\n`); } catch {}
 }
 
+const MAKS_SOBA = 20000; // 4 slova = 160.000 kodova; iznad ovoga nova soba se odbija (umesto beskonačne petlje)
+const LIMIT_SOBA = +process.env.LIMIT_SOBA || 20; // novih soba po minutu po adresi
+const LIMIT_NEMA = +process.env.LIMIT_NEMA || 120; // pogrešnih kodova soba po minutu po adresi
 function novKod() {
   const A = 'ABCDEFGHJKLMNPRSTUVZ';
-  let k;
-  do k = Array.from({ length: 4 }, () => A[Math.floor(Math.random() * A.length)]).join('');
-  while (sobe.has(k));
-  return k;
+  if (sobe.size >= MAKS_SOBA) return null;
+  for (let i = 0; i < 200; i++) {
+    const k = Array.from({ length: 4 }, () => A[Math.floor(Math.random() * A.length)]).join('');
+    if (!sobe.has(k)) return k;
+  }
+  return null;
 }
+
+// ograničenje učestalosti po adresi (iza Caddy-ja prava adresa je u X-Forwarded-For)
+const brojaci = new Map(); // kljuc -> { n, od }
+function adresa(req) {
+  const l = req.socket.remoteAddress || '';
+  const lokalno = l === '127.0.0.1' || l === '::1' || l === '::ffff:127.0.0.1';
+  const xf = lokalno && req.headers['x-forwarded-for'];
+  return xf ? String(xf).split(',').pop().trim() : l;
+}
+function previse(req, vrsta, maks, prozorMs) {
+  const k = vrsta + '|' + adresa(req), sad = Date.now();
+  let b = brojaci.get(k);
+  if (!b || sad - b.od > prozorMs) { b = { n: 0, od: sad }; brojaci.set(k, b); }
+  return ++b.n > maks;
+}
+setInterval(() => { const sad = Date.now(); for (const [k, b] of brojaci) if (sad - b.od > 300e3) brojaci.delete(k); }, 60e3);
+
+process.on('uncaughtException', (e) => console.error('Neuhvaćena greška:', e));
+process.on('unhandledRejection', (e) => console.error('Neobrađeno odbijanje:', e));
 
 // brisanje napuštenih soba
 setInterval(() => {
   for (const [k, s] of sobe) {
-    const nikog = !(tokovi.get(k)?.size);
-    if (nikog && Date.now() - s.zadnjaAktivnost > 3 * 3600e3) { sobe.delete(k); tokovi.delete(k); }
+    const nikog = !(tokovi.get(k)?.size) && !(cekaci.get(k)?.size);
+    const dokle = s.igraci.size === 0 || s.faza === 'lobi' ? 30 * 60e3 : 3 * 3600e3; // prazne i nepokrenute sobe brže nestaju
+    if (nikog && Date.now() - s.zadnjaAktivnost > dokle) { sobe.delete(k); tokovi.delete(k); cekaci.delete(k); }
   }
-}, 600e3);
+}, 60e3);
 
 const TIPOVI = {
   '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8',
@@ -84,18 +109,26 @@ function citajTelo(req) {
   return new Promise((ok) => {
     let d = '';
     req.on('data', (c) => { d += c; if (d.length > 1e5) req.destroy(); });
-    req.on('end', () => { try { ok(JSON.parse(d || '{}')); } catch { ok({}); } });
+    req.on('end', () => { try { const o = JSON.parse(d || '{}'); ok(o && typeof o === 'object' && !Array.isArray(o) ? o : {}); } catch { ok({}); } });
   });
 }
 
 const server = http.createServer(async (req, res) => {
-  const url = new URL(req.url, 'http://x');
-  const p = decodeURIComponent(url.pathname);
+  try { await obradi(req, res); } catch (e) {
+    console.error('Greška u zahtevu:', req.method, req.url, e);
+    if (!res.headersSent) kraj(res, 400, { greska: 'Loš zahtev' }); else res.end();
+  }
+});
+
+async function obradi(req, res) {
+  let url, p;
+  try { url = new URL(req.url, 'http://x'); p = decodeURIComponent(url.pathname); } catch { return kraj(res, 400, { greska: 'Loša adresa' }); }
 
   if (p === '/api/dogadjaji') {
     const soba = sobe.get((url.searchParams.get('soba') || '').toUpperCase());
     const id = url.searchParams.get('igrac') || '';
-    if (!soba) return kraj(res, 404, { greska: 'Soba ne postoji' });
+    if (!soba) return kraj(res, previse(req, 'nema', LIMIT_NEMA, 60e3) ? 429 : 404, { greska: 'Soba ne postoji' });
+    if (id.length > 64) return kraj(res, 400, { greska: 'Loš ID' });
     res.writeHead(200, { 'Content-Type': 'text/event-stream', 'Cache-Control': 'no-cache', Connection: 'keep-alive', 'X-Accel-Buffering': 'no' });
     res.write('retry: 1500\n\n');
     const t = { res, id };
@@ -116,7 +149,8 @@ const server = http.createServer(async (req, res) => {
   if (p === '/api/stanje') {
     const soba = sobe.get((url.searchParams.get('soba') || '').toUpperCase());
     const id = url.searchParams.get('igrac') || '';
-    if (!soba) return kraj(res, 404, { greska: 'Soba ne postoji' });
+    if (!soba) return kraj(res, previse(req, 'nema', LIMIT_NEMA, 60e3) ? 429 : 404, { greska: 'Soba ne postoji' });
+    if (id.length > 64) return kraj(res, 400, { greska: 'Loš ID' });
     soba.vidjen(id);
     const v = +(url.searchParams.get('v') ?? -1);
     if (v < soba.verzija) return kraj(res, 200, soba.pogled(id));
@@ -129,21 +163,25 @@ const server = http.createServer(async (req, res) => {
   }
 
   if (p === '/api/kvizovi') { kvizovi.ucitajSve(); return kraj(res, 200, kvizovi.spisak()); }
-  if (p === '/api/statistika') return kraj(res, 200, statistika.citaj());
+  // na javnom serveru (production) porodična statistika se ne izlaže strancima
+  if (p === '/api/statistika') return kraj(res, 200, process.env.NODE_ENV === 'production' && !process.env.JAVNA_STATISTIKA ? { igraci: {}, igre: [] } : statistika.citaj());
   if (p === '/api/info') return kraj(res, 200, { adrese: lanAdrese(), port: PORT, reci: brojReci });
 
   if (p === '/api/akcija' && req.method === 'POST') {
     const b = await citajTelo(req);
     const id = String(b.igrac || '');
+    if (!id || id.length > 64) return kraj(res, 400, { greska: 'Loš ID igrača' });
     if (b.tip === 'nova-soba') {
+      if (previse(req, 'soba', LIMIT_SOBA, 60e3)) return kraj(res, 429, { greska: 'Previše novih soba. Pokušaj za minut.' });
       const kod = novKod();
+      if (!kod) return kraj(res, 503, { greska: 'Server je pun. Pokušaj malo kasnije.' });
       const s = new Soba(kod, emituj);
       sobe.set(kod, s);
       s.dodajIgraca(id, b.ime, b.avatar);
       return kraj(res, 200, { kod });
     }
     const soba = sobe.get(String(b.soba || '').toUpperCase());
-    if (!soba) return kraj(res, 404, { greska: 'Soba ne postoji. Proveri kod.' });
+    if (!soba) return kraj(res, previse(req, 'nema', LIMIT_NEMA, 60e3) ? 429 : 404, { greska: 'Soba ne postoji. Proveri kod.' });
     const domacin = soba.domacin === id;
     switch (b.tip) {
       case 'udji':
@@ -177,7 +215,7 @@ const server = http.createServer(async (req, res) => {
   if (p.startsWith('/kvizovi/')) return staticki(res, KVIZOVI, p.slice('/kvizovi'.length));
   if (p === '/' || p === '/ekran') return staticki(res, JAVNO, '/index.html');
   return staticki(res, JAVNO, p);
-});
+}
 
 function lanAdrese() {
   const out = [];
