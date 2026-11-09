@@ -25,6 +25,16 @@
 <div id="app"></div>
 <canvas id="konfete"></canvas>
 <div id="poruka" class="poruka"></div>
+<script>
+// GoatCounter (bez kolačića) – samo na javnom domenu, ne u kućnoj mreži
+if (/(^|\.)skviz\.rs$/.test(location.hostname)) {
+  var gc = document.createElement('script');
+  gc.async = true;
+  gc.src = '//gc.zgo.at/count.js';
+  gc.setAttribute('data-goatcounter', 'https://skviz.goatcounter.com/count');
+  document.head.appendChild(gc);
+}
+</script>
 <script src="/mediji.js"></script>
 <script src="/pismo.js"></script>
 <script src="/app.js"></script>
