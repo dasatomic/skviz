@@ -185,7 +185,7 @@ async function obradi(req, res) {
     const domacin = soba.domacin === id;
     switch (b.tip) {
       case 'udji':
-        soba.dodajIgraca(id, b.ime, b.avatar);
+        if (!soba.dodajIgraca(id, b.ime, b.avatar)) return kraj(res, 403, { greska: 'Soba je puna (najviše 40 igrača).' });
         return kraj(res, 200, { kod: soba.kod });
       case 'odgovor':
         soba.odgovori_(id, b.izbor);

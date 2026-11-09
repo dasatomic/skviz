@@ -263,3 +263,31 @@ body.ekran .odgovori, .odgovori.dvokolonski { grid-template-columns: 1fr 1fr; }
 .par-resenje:last-child { border-bottom: 0; }
 .par-resenje .boja { width: 12px; height: 12px; border-radius: 50%; flex: none; }
 .par-resenje .strelica { color: var(--blago); }
+
+/* ── veće sobe (više od 5 igrača): sažet prikaz ── */
+.igraci.gusto { gap: 4px 2px; }
+.igraci.gusto .igrac { width: 52px; }
+.igraci.gusto .igrac .av { width: 38px; height: 38px; font-size: 1.3em; border-width: 2px; }
+.igraci.gusto .igrac .ime { font-size: .68em; max-width: 52px; }
+.igraci.gusto .igrac .kruna { top: -10px; font-size: .9em; }
+#broj-igraca { margin-top: 2px; }
+.napredak { display: flex; align-items: center; gap: 10px; margin: 12px 0 8px; font-size: .95em; }
+.napredak-traka { flex: 1; height: 10px; border-radius: 6px; background: #1b1846; overflow: hidden; }
+.napredak-traka i { display: block; height: 100%; background: var(--dobro); border-radius: 6px; transition: width .4s ease-out; }
+.mini-igraci { display: flex; flex-wrap: wrap; gap: 4px; justify-content: center; }
+.mini { width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; font-size: 1em; border: 2px solid; background: #1b1846;
+  opacity: .35; filter: grayscale(.8); transition: opacity .3s, filter .3s, transform .3s; }
+.mini.gotov { opacity: 1; filter: none; transform: scale(1.06); box-shadow: 0 0 0 2px var(--dobro); }
+.mini.odsutan { border-style: dashed; }
+.mini.ja { outline: 2px solid var(--istaknuto); outline-offset: 1px; }
+body.ekran .mini { width: 44px; height: 44px; font-size: 1.4em; }
+.odg .glasovi .jos { font-size: .8em; background: rgba(0,0,0,.35); border-radius: 10px; padding: 1px 7px; }
+.odgovori.dvokolonski .odg .glasovi { top: 6px; right: 6px; transform: none; }
+.lista-poena .st .rb { min-width: 1.7em; color: var(--blago); }
+.lista-poena .st.ja { box-shadow: 0 0 0 2px var(--istaknuto); }
+.lista-poena .razmak { text-align: center; color: var(--blago); line-height: .6; }
+.tabela.gusto .red-t { height: 36px; border-radius: 10px; gap: 8px; }
+.tabela.gusto .mesto { font-size: 1em; }
+.tabela.gusto .av { font-size: 1.2em; }
+.tabela.gusto .pp { font-size: 1em; }
+.tabela .red-t.ja { outline: 2px solid var(--istaknuto); }

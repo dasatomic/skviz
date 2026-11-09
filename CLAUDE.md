@@ -11,6 +11,7 @@ Ceo interfejs, pitanja i komentari u kodu su na **srpskom (latinica)**. Igrači 
 ## Struktura
 - `server.js` – HTTP + Server-Sent Events (`/api/dogadjaji`), akcije preko `POST /api/akcija`.
 - `lib/soba.js` – tok igre: lobi → uvod → pitanje/otkrivanje ×N → tabela → reči ×N → tabela → kraj.
+- Soba ima najviše 40 igrača (`MAKS_IGRACA`). Klijent ima dva prikaza: do 5 igrača avatari sa imenima, preko 5 sažeto (brojač „N / M odgovorilo“, mali avatari, skraćene liste poena – `mnogo()`, `koJeOdgovorio`, `skratiListu` u `public/app.js`).
 - `lib/kvizovi.js` – učitavanje `kvizovi/*/kviz.json`, izbor pitanja (mešavina težina, prednost neodigranim – `podaci/odigrana-pitanja.json`).
 - `lib/recnik.js` – „Najduža reč“: `podaci/recnik.txt` (Hunspell sr, osnovni oblici, ćirilica) + `podaci/ucestalost.txt`. Slova se biraju tako da se može složiti pojam (`rec`) iz nekog od upravo odigranih pitanja (`slovaSaRecju`, `Soba.izaberiPojam`).
 - `lib/statistika.js` – porodična tabla slavnih u `podaci/statistika.json`.
