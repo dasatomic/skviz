@@ -734,17 +734,17 @@
       "rec": "telo"
     },
     {
-      "lekcija": 4,
-      "tezina": 1,
-      "pitanje": "Koja su dva osnovna oblika materije?",
+      "pitanje": "Koje polje okružuje magnet i deluje na gvozdene predmete?",
       "odgovori": [
-        "Supstanca i fizičko polje",
-        "Voda i vazduh na planeti",
-        "Čvrsto i tečno stanje tela",
-        "Svetlost i tama u svemiru"
+        "Magnetno polje",
+        "Gravitaciono polje",
+        "Zvučno polje",
+        "Toplotno polje"
       ],
-      "zanimljivost": "Polje ne vidimo, ali ga osećamo – npr. kada magnet privuče ekser na rastojanju.",
-      "rec": "materija"
+      "tezina": 1,
+      "zanimljivost": "Magnetno polje ne vidimo, ali ga otkrivaju gvozdeni opiljci i igla kompasa. I Zemlja ima magnetno polje, koje nas štiti od čestica sa Sunca.",
+      "rec": "magnet",
+      "lekcija": 4
     },
     {
       "lekcija": 4,
@@ -946,17 +946,17 @@
       "rec": "kretanje"
     },
     {
-      "lekcija": 5,
-      "tezina": 2,
-      "pitanje": "Kada telo možemo smatrati materijalnom tačkom?",
+      "pitanje": "Kako se zove kretanje kod koga se telo vraća u isti položaj i ponavlja isto kretanje, kao ljuljaška?",
       "odgovori": [
-        "Kada su mu dimenzije zanemarljive u odnosu na pređeni put",
-        "Uvek, bez obzira na veličinu tela i na dužinu puta koji ono pređe",
-        "Nikad, jer svako telo ima svoju dužinu, širinu i visinu, ma kako malo",
-        "Samo kad je okruglo"
+        "Oscilatorno",
+        "Pravolinijsko",
+        "Ravnomerno",
+        "Kružno"
       ],
-      "zanimljivost": "Avion na putu Beograd–Njujork možemo smatrati tačkom, ali ne i dok ulazi u hangar.",
-      "rec": "tačka"
+      "tezina": 2,
+      "zanimljivost": "Ljuljaška, klatno i žica gitare osciluju. Vreme jednog celog zamaha zove se period oscilovanja.",
+      "rec": "klatno",
+      "lekcija": 5
     },
     {
       "lekcija": 5,
@@ -1149,17 +1149,17 @@
       "rec": "telo"
     },
     {
-      "lekcija": 6,
-      "tezina": 1,
-      "pitanje": "Kako se zove linija koju telo opisuje pri kretanju?",
+      "pitanje": "Kakvu putanju opisuje vrh kazaljke na satu?",
       "odgovori": [
-        "Putanja",
-        "Brzina",
-        "Pređeni put",
-        "Masa"
+        "Kružnu",
+        "Pravu",
+        "Talasastu",
+        "Spiralnu"
       ],
-      "zanimljivost": "Avioni na nebu ponekad ostavljaju belu liniju – „trag“ kondenzovane pare koji pokazuje putanju.",
-      "rec": "putanja"
+      "tezina": 1,
+      "zanimljivost": "Kružno kretanje je krivolinijsko. Iako se kazaljka kreće stalnom brzinom, pravac njenog kretanja se neprestano menja.",
+      "rec": "krug",
+      "lekcija": 6
     },
     {
       "lekcija": 6,
@@ -1218,17 +1218,17 @@
       }
     },
     {
-      "lekcija": 6,
-      "tezina": 1,
-      "pitanje": "Šta je referentno telo?",
+      "pitanje": "Ako sediš u vozu koji se kreće, u odnosu na šta se krećeš?",
       "odgovori": [
-        "Telo u odnosu na koje posmatramo kretanje",
-        "Najteže telo u celoj prostoriji ili okolini",
-        "Telo koje se kreće najbrže od svih ostalih tela",
-        "Telo koje je pokvareno i ne može da se pomeri"
+        "U odnosu na peron i drveće pored pruge",
+        "U odnosu na sedište u vozu",
+        "U odnosu na saputnika naspram tebe",
+        "Ni u odnosu na šta"
       ],
-      "zanimljivost": "Najčešće je referentno telo Zemlja – ali može biti i voz, učionica ili Sunce.",
-      "rec": "referentno"
+      "tezina": 1,
+      "zanimljivost": "Isto telo može istovremeno i da miruje i da se kreće – zavisi od toga šta uzmemo za referentno telo. Zato kažemo da je kretanje relativno.",
+      "rec": "voz",
+      "lekcija": 6
     },
     {
       "lekcija": 6,
@@ -1400,17 +1400,17 @@
       "rec": "automobil"
     },
     {
-      "lekcija": 7,
-      "tezina": 1,
-      "pitanje": "Šta je pređeni put?",
+      "pitanje": "Ako trkač optrči ceo krug na stazi od 400 m i vrati se na start, koliki je pređeni put?",
       "odgovori": [
-        "Dužina putanje koju telo pređe za neko vreme",
-        "Pravac kretanja tela, koji se crta strelicom na slici",
-        "Brzina kojom se telo kreće kroz prostor tokom vremena",
-        "Masa tela koje se kreće tokom vremena, izražena u kg"
+        "400 m",
+        "0 m",
+        "200 m",
+        "800 m"
       ],
-      "zanimljivost": "Pređeni put se obeležava slovom s i meri se u metrima.",
-      "rec": "put"
+      "tezina": 2,
+      "zanimljivost": "Pređeni put je dužina putanje – 400 m, iako je trkač završio na mestu odakle je krenuo.",
+      "rec": "put",
+      "lekcija": 7
     },
     {
       "lekcija": 7,
@@ -1499,17 +1499,17 @@
       "rec": "puž"
     },
     {
-      "lekcija": 7,
-      "tezina": 2,
-      "pitanje": "Šta je ravnomerno pravolinijsko kretanje?",
+      "pitanje": "Automobil vozi pravim putem i svake sekunde pređe 25 m. Kakvo je njegovo kretanje?",
       "odgovori": [
-        "Kretanje po pravoj liniji stalnom brzinom",
-        "Kretanje u krug",
-        "Kretanje sa povećanjem brzine",
-        "Stajanje u mestu"
+        "Ravnomerno pravolinijsko",
+        "Ubrzano",
+        "Usporeno",
+        "Kružno"
       ],
-      "zanimljivost": "U stvarnosti je ravnomerno kretanje retko – ali voz ili avion na dugom pravcu mu se približavaju.",
-      "rec": "ravnomerno"
+      "tezina": 1,
+      "zanimljivost": "Brzina od 25 m/s je 90 km/h. Kod ravnomernog kretanja grafik puta od vremena je prava linija.",
+      "rec": "kretanje",
+      "lekcija": 7
     },
     {
       "lekcija": 7,
@@ -2679,17 +2679,17 @@
       "rec": "kalem"
     },
     {
-      "lekcija": 13,
-      "tezina": 1,
-      "pitanje": "Kojim instrumentom se meri sila?",
+      "pitanje": "Šta je napadna tačka sile?",
       "odgovori": [
-        "Dinamometrom",
-        "Termometrom",
-        "Barometrom",
-        "Hronometrom"
+        "Tačka tela u kojoj sila deluje",
+        "Najveća vrednost sile",
+        "Pravac u kome sila deluje",
+        "Mesto gde sila prestaje da deluje"
       ],
-      "zanimljivost": "Ime dolazi od grčke reči „dinamis“ – sila. Dinamometar ima oprugu koja se isteže pod dejstvom sile.",
-      "rec": "dinamometar"
+      "tezina": 2,
+      "zanimljivost": "Napadna tačka je važna: ista sila može vrata da otvori lako ako deluje daleko od šarki, a teško ako deluje blizu njih.",
+      "rec": "tačka",
+      "lekcija": 13
     },
     {
       "lekcija": 13,
@@ -2744,30 +2744,30 @@
       "rec": "huk"
     },
     {
-      "lekcija": 13,
-      "tezina": 1,
-      "pitanje": "Kojim instrumentom merimo silu?",
+      "pitanje": "Na kom principu radi dinamometar?",
       "odgovori": [
-        "Dinamometrom",
-        "Termometrom",
-        "Barometrom",
-        "Hronometrom"
+        "Istezanje opruge srazmerno je sili koja na nju deluje",
+        "Opruga se skraćuje kada se zagreje",
+        "Magnet privlači kazaljku jače kada je sila veća",
+        "Vazduh u cevi se sabija pod teretom"
       ],
-      "zanimljivost": "Kuhinjska vaga sa oprugom zapravo meri silu (težinu), a skala je podešena da pokazuje kilograme.",
-      "rec": "dinamometar"
+      "tezina": 2,
+      "zanimljivost": "Dvostruko veća sila dvostruko više istegne oprugu – zato je skala dinamometra ravnomerno podeljena. Ovo je otkrio Robert Huk.",
+      "rec": "opruga",
+      "lekcija": 13
     },
     {
-      "lekcija": 13,
-      "tezina": 2,
-      "pitanje": "Koja je jedinica za silu?",
+      "pitanje": "Kolika je približno težina tela mase 100 g na Zemlji?",
       "odgovori": [
-        "Njutn (N)",
-        "Kilogram (kg)",
-        "Metar (m)",
-        "Paskal (Pa)"
+        "Oko 1 N",
+        "Oko 10 N",
+        "Oko 100 N",
+        "Oko 0,1 N"
       ],
-      "zanimljivost": "1 N je sila kojom Zemlja privlači telo mase oko 102 grama.",
-      "rec": "njutn"
+      "tezina": 2,
+      "zanimljivost": "Težina je masa puta ubrzanje Zemljine teže: 0,1 kg · 10 N/kg = 1 N. Toliko otprilike teži mala jabuka.",
+      "rec": "težina",
+      "lekcija": 13
     },
     {
       "lekcija": 13,
@@ -2995,17 +2995,17 @@
       "rec": "padobran"
     },
     {
-      "lekcija": 14,
-      "tezina": 3,
-      "pitanje": "Od čega zavisi otpor vazduha?",
+      "pitanje": "Zašto padobran usporava pad padobranca?",
       "odgovori": [
-        "Od oblika i veličine tela i njegove brzine",
-        "Samo od boje tela koje se kreće kroz vazduh",
-        "Samo od mase tela, a nikako od njegovog oblika",
-        "Ne zavisi ni od čega – uvek je potpuno isti"
+        "Velika površina stvara veliki otpor vazduha",
+        "Padobran smanjuje masu padobranca",
+        "Padobran isključuje Zemljinu težu",
+        "Vazduh u padobranu je lakši od helijuma"
       ],
-      "zanimljivost": "Pri dvostruko većoj brzini otpor vazduha je oko četiri puta veći – zato brza vožnja troši mnogo goriva.",
-      "rec": "otpor"
+      "tezina": 1,
+      "zanimljivost": "Sa otvorenim padobranom brzina pada se smanji sa oko 200 km/h na oko 20 km/h – dovoljno za bezbedno sletanje.",
+      "rec": "padobran",
+      "lekcija": 14
     },
     {
       "lekcija": 14,
@@ -3501,17 +3501,17 @@
       }
     },
     {
-      "lekcija": 16,
-      "tezina": 2,
-      "pitanje": "Kako se meri zapremina malog kamena nepravilnog oblika?",
+      "pitanje": "Kako se zove posuda sa podeocima za merenje zapremine tečnosti, koja se koristi u laboratoriji?",
       "odgovori": [
-        "Potopi se u menzuru i meri se koliko se podigao nivo vode",
-        "Izmere mu se dužina, širina i visina lenjirom i te tri dužine pomnože",
-        "Izmeri se na vagi, jer je masa u gramima uvek jednaka njegovoj zapremini",
-        "Zagreje se u vodi i termometrom se meri koliko se ohladila"
+        "Menzura",
+        "Epruveta",
+        "Areometar",
+        "Dinamometar"
       ],
-      "zanimljivost": "Prema legendi, Arhimed se dosetio ovog metoda u kadi i istrčao uzvikujući „Eureka!“.",
-      "rec": "eureka"
+      "tezina": 2,
+      "zanimljivost": "Pri čitanju menzure oko treba držati u visini površine tečnosti. Voda u uskoj menzuri obrazuje blago udubljenje, pa se čita njegovo dno.",
+      "rec": "menzura",
+      "lekcija": 16
     },
     {
       "lekcija": 16,
@@ -3592,17 +3592,17 @@
       "rec": "papir"
     },
     {
-      "lekcija": 16,
-      "tezina": 2,
-      "pitanje": "Koliko kubnih decimetara (litara) ima 1 m³?",
+      "pitanje": "Koliko kubnih centimetara ima jedan litar?",
       "odgovori": [
         "1.000",
         "100",
         "10",
         "10.000"
       ],
-      "zanimljivost": "Prosečna kada za kupanje primi oko 150–200 litara vode.",
-      "rec": "zapremina"
+      "tezina": 2,
+      "zanimljivost": "Jedan litar je kocka sa ivicom 10 cm: 10 · 10 · 10 = 1.000 cm³. Zato se 1 cm³ zove i mililitar.",
+      "rec": "litar",
+      "lekcija": 16
     },
     {
       "lekcija": 17,
@@ -3631,17 +3631,17 @@
       "rec": "klepsidra"
     },
     {
-      "lekcija": 17,
-      "tezina": 1,
-      "pitanje": "Koja je osnovna jedinica za vreme?",
+      "pitanje": "Koliko sekundi ima jedan dan?",
       "odgovori": [
-        "Sekunda",
-        "Minut",
-        "Sat",
-        "Dan"
+        "86.400",
+        "3.600",
+        "1.440",
+        "24.000"
       ],
-      "zanimljivost": "Sekunda je danas definisana preko oscilacija atoma cezijuma – 9.192.631.770 oscilacija.",
-      "rec": "sekunda"
+      "tezina": 2,
+      "zanimljivost": "24 sata · 60 minuta · 60 sekundi = 86.400 sekundi. Broj 1.440 je broj minuta u danu, a 3.600 broj sekundi u jednom satu.",
+      "rec": "sekunda",
+      "lekcija": 17
     },
     {
       "lekcija": 17,
@@ -3752,17 +3752,17 @@
       "rec": "voda"
     },
     {
-      "lekcija": 17,
-      "tezina": 2,
-      "pitanje": "Kako se zvao vodeni sat starih Grka, iz kojeg voda ističe ravnomerno?",
+      "pitanje": "Koliko minuta ima u jednom danu?",
       "odgovori": [
-        "Klepsidra",
-        "Gnomon",
-        "Astrolab",
-        "Hronometar"
+        "1.440",
+        "1.000",
+        "2.400",
+        "720"
       ],
-      "zanimljivost": "Klepsidre su korišćene u antičkoj Atini da bi se ograničilo vreme govornika na sudu.",
-      "rec": "klepsidra"
+      "tezina": 2,
+      "zanimljivost": "24 · 60 = 1.440 minuta. A godina ima preko pola miliona minuta – oko 525.600.",
+      "rec": "minut",
+      "lekcija": 17
     },
     {
       "lekcija": 17,
@@ -3860,17 +3860,17 @@
       "rec": "greška"
     },
     {
-      "lekcija": 18,
-      "tezina": 2,
-      "pitanje": "Šta je apsolutna greška merenja?",
+      "pitanje": "Ko je napravio prvi praktično upotrebljiv sat sa klatnom (1656)?",
       "odgovori": [
-        "Razlika između izmerene i tačne (srednje) vrednosti",
-        "Greška koja nastane kada se rezultat pogrešno zapiše u svesku",
-        "Pogrešan instrument koji uvek pokazuje veću vrednost od tačne",
-        "Odnos dve dužine izmerene istim lenjirom u istom ogledu"
+        "Kristijan Hajgens",
+        "Isak Njutn",
+        "Galileo Galilej",
+        "Blez Paskal"
       ],
-      "zanimljivost": "Apsolutna greška ima istu jedinicu kao i merena veličina, npr. ±1 mm.",
-      "rec": "apsolutna"
+      "tezina": 3,
+      "zanimljivost": "Galilej je primetio da klatno uvek osciluje isto vreme, a Holanđanin Hajgens je tu ideju iskoristio za sat koji greši samo nekoliko sekundi dnevno.",
+      "rec": "klatno",
+      "lekcija": 18
     },
     {
       "lekcija": 18,
@@ -4137,17 +4137,17 @@
       "rec": "stolnjak"
     },
     {
-      "lekcija": 19,
-      "tezina": 3,
-      "pitanje": "Kako glasi Prvi Njutnov zakon?",
+      "pitanje": "Zašto putnici u autobusu „polete“ napred kada autobus naglo zakoči?",
       "odgovori": [
-        "Telo miruje ili se kreće ravnomerno pravolinijski dok ga druga tela ne nateraju da to promeni",
-        "Sila koja deluje na telo jednaka je proizvodu njegove mase i ubrzanja koje to telo ima (F = m · a)",
-        "Svakoj akciji odgovara reakcija iste jačine i pravca, ali suprotnog smera, na drugo telo",
-        "Svako telo koje se kreće uvek se samo od sebe zaustavi posle nekog vremena, čak i kada nema sile"
+        "Zbog inercije nastavljaju da se kreću napred",
+        "Autobus ih gura napred",
+        "Vazduh u autobusu ih gura",
+        "Zemlja ih privlači napred"
       ],
-      "zanimljivost": "Njutn je zakone kretanja objavio 1687. u knjizi „Matematički principi prirodne filozofije“.",
-      "rec": "njutn"
+      "tezina": 1,
+      "zanimljivost": "Autobus se zaustavlja, a putnici teže da zadrže brzinu koju su imali. Zato se u vozilima drže rukohvati i vezuju pojasevi.",
+      "rec": "inercija",
+      "lekcija": 19
     },
     {
       "lekcija": 19,
@@ -4228,17 +4228,17 @@
       "rec": "novčić"
     },
     {
-      "lekcija": 19,
-      "tezina": 3,
-      "pitanje": "Ko je pre Njutna otkrio da telo u kretanju samo od sebe ne staje, već ga zaustavlja trenje?",
+      "pitanje": "Zašto je teže pokrenuti pun nego prazan kofer na točkićima?",
       "odgovori": [
-        "Galileo Galilej",
-        "Aristotel iz Stagire",
-        "Arhimed iz Sirakuze",
-        "Klaudije Ptolomej"
+        "Pun kofer ima veću masu, pa i veću inertnost",
+        "Pun kofer ima manje trenje",
+        "Prazan kofer privlači Zemlja jače",
+        "Točkići se okreću samo kod praznog kofera"
       ],
-      "zanimljivost": "Aristotel je mislio da je za kretanje stalno potrebna sila – trebalo je skoro 2.000 godina da se to ispravi.",
-      "rec": "galilej"
+      "tezina": 1,
+      "zanimljivost": "Što je masa tela veća, teže mu je promeniti brzinu – i pokrenuti ga i zaustaviti ga. Masa je mera inertnosti.",
+      "rec": "kofer",
+      "lekcija": 19
     },
     {
       "lekcija": 19,
@@ -4254,17 +4254,17 @@
       "rec": "čekić"
     },
     {
-      "lekcija": 19,
-      "tezina": 1,
-      "pitanje": "Šta je jedinica za masu?",
+      "pitanje": "Koliko kilograma ima jedna tona?",
       "odgovori": [
-        "Kilogram",
-        "Njutn",
-        "Metar",
-        "Sekunda"
+        "1.000",
+        "100",
+        "10.000",
+        "10"
       ],
-      "zanimljivost": "Prvobitno je kilogram bio masa jednog litra vode na 4 °C.",
-      "rec": "kilogram"
+      "tezina": 1,
+      "zanimljivost": "Tona se koristi za veoma teške terete. Jedan kubni metar vode ima masu od oko jedne tone.",
+      "rec": "tona",
+      "lekcija": 19
     },
     {
       "lekcija": 19,
@@ -4293,17 +4293,17 @@
       "rec": "masa"
     },
     {
-      "lekcija": 20,
-      "tezina": 2,
-      "pitanje": "Koliko puta je težina istog tela manja na Mesecu nego na Zemlji?",
+      "pitanje": "Zašto je težina tela na Mesecu manja nego na Zemlji?",
       "odgovori": [
-        "Oko 6 puta",
-        "2 puta",
-        "100 puta",
-        "Ista je"
+        "Mesec ima mnogo manju masu, pa slabije privlači tela",
+        "Na Mesecu nema vazduha koji pritiska telo",
+        "Mesec je dalje od Sunca nego Zemlja",
+        "Telo na Mesecu izgubi deo mase"
       ],
-      "zanimljivost": "Masa je svuda ista, a težina je sila kojom telo pritiska podlogu – na Mesecu je mnogo manja jer je Mesec slabije privlači.",
-      "rec": "mesec"
+      "tezina": 2,
+      "zanimljivost": "Masa tela je svuda ista, a težina zavisi od toga koliko jako ga nebesko telo privlači. Na Mesecu je ta sila oko 6 puta slabija.",
+      "rec": "mesec",
+      "lekcija": 20
     },
     {
       "lekcija": 20,
@@ -4349,21 +4349,17 @@
       "rec": "vaga"
     },
     {
-      "lekcija": 20,
-      "tezina": 2,
-      "pitanje": "Šta se dešava sa težinom astronauta na Mesecu?",
+      "pitanje": "Šta se dešava sa masom astronauta kada ode na Mesec?",
       "odgovori": [
-        "Smanji se oko 6 puta",
-        "Ostane potpuno ista kao na Zemlji",
-        "Poveća se",
-        "Postane nula"
+        "Ostaje ista",
+        "Smanji se 6 puta",
+        "Poveća se 6 puta",
+        "Postane jednaka nuli"
       ],
-      "zanimljivost": "Masa astronauta ostaje ista – menja se samo težina.",
-      "rec": "mesec",
-      "mediji": {
-        "vrsta": "planeta",
-        "ime": "mesec"
-      }
+      "tezina": 2,
+      "zanimljivost": "Masa je količina supstance i ne zavisi od mesta. Na Mesecu se smanjuje samo težina, jer ga Mesec slabije privlači.",
+      "rec": "masa",
+      "lekcija": 20
     },
     {
       "lekcija": 20,
@@ -4802,17 +4798,17 @@
       "rec": "pritisak"
     },
     {
-      "lekcija": 22,
-      "tezina": 1,
-      "pitanje": "Koja je jedinica za pritisak?",
+      "pitanje": "Koliko paskala ima jedan kilopaskal?",
       "odgovori": [
-        "Paskal (Pa)",
-        "Njutn",
-        "Kilogram",
-        "Vat"
+        "1.000",
+        "100",
+        "10",
+        "1.000.000"
       ],
-      "zanimljivost": "1 Pa je mali pritisak – otprilike kao list papira koji leži na stolu.",
-      "rec": "paskal"
+      "tezina": 1,
+      "zanimljivost": "Pritisak u gumama automobila meri se stotinama kilopaskala, oko 200–250 kPa, ili u barima: 1 bar je 100 kPa.",
+      "rec": "paskal",
+      "lekcija": 22
     },
     {
       "lekcija": 22,
@@ -5036,17 +5032,17 @@
       "rec": "ronilac"
     },
     {
-      "lekcija": 23,
-      "tezina": 1,
-      "pitanje": "Kako se zove pritisak koji tečnost vrši zbog svoje težine?",
+      "pitanje": "U kom moru bi ronilac na istoj dubini osetio malo veći pritisak – u slanom ili u slatkom jezeru?",
       "odgovori": [
-        "Hidrostatički pritisak",
-        "Atmosferski pritisak",
-        "Pritisak čvrstih tela",
-        "Električni pritisak"
+        "U slanom moru, jer je gušće",
+        "U slatkom jezeru, jer je ređe",
+        "Isti je",
+        "U onom koje je toplije"
       ],
-      "zanimljivost": "„Hidro“ na grčkom znači voda, a „statički“ – koji miruje.",
-      "rec": "dubina"
+      "tezina": 3,
+      "zanimljivost": "Hidrostatički pritisak zavisi od gustine tečnosti. Morska voda je oko 3% gušća od slatke, pa je i pritisak na istoj dubini za toliko veći.",
+      "rec": "more",
+      "lekcija": 23
     },
     {
       "lekcija": 23,
@@ -5075,17 +5071,17 @@
       "rec": "brana"
     },
     {
-      "lekcija": 23,
-      "tezina": 3,
-      "pitanje": "Šta tvrdi Paskalov zakon?",
+      "pitanje": "Šta se dešava kada stisnemo plastičnu kesu punu vode sa rupicama?",
       "odgovori": [
-        "Pritisak na tečnost ili gas prenosi se podjednako u svim pravcima",
-        "Pritisak u tečnosti se prenosi samo naniže, ka dnu suda, a ne u stranu",
-        "Pritisak se uopšte ne prenosi kroz tečnost, već ostaje samo na površini",
-        "Pritisak zavisi od boje"
+        "Voda šiklja iz svih rupica, na sve strane",
+        "Voda ističe samo iz donjih rupica",
+        "Voda ističe samo na stranu na koju pritiskamo",
+        "Voda uopšte ne ističe"
       ],
-      "zanimljivost": "Blez Paskal je bio i matematičar – sa samo 19 godina napravio je jednu od prvih mašina za računanje.",
-      "rec": "paskal"
+      "tezina": 2,
+      "zanimljivost": "Ovo je ogled koji pokazuje Paskalov zakon – pritisak se kroz tečnost prenosi podjednako u svim pravcima.",
+      "rec": "kesa",
+      "lekcija": 23
     },
     {
       "lekcija": 23,
@@ -5101,17 +5097,17 @@
       "rec": "presa"
     },
     {
-      "lekcija": 23,
-      "tezina": 2,
-      "pitanje": "Od čega zavisi hidrostatički pritisak na dno suda?",
+      "pitanje": "Zašto se vodotornjevi grade visoko?",
       "odgovori": [
-        "Od dubine i gustine tečnosti",
-        "Od oblika suda",
-        "Od količine tečnosti samo",
-        "Od boje suda"
+        "Da bi voda imala dovoljan pritisak da stigne u stanove",
+        "Da bi voda bila hladnija",
+        "Da bi voda bila čistija",
+        "Da bi bili vidljivi iz daleka"
       ],
-      "zanimljivost": "Ova pojava zove se hidrostatički paradoks – u uskoj visokoj cevi pritisak na dno može biti veći nego u širokom niskom bazenu.",
-      "rec": "paradoks"
+      "tezina": 2,
+      "zanimljivost": "Što je voda u tornju više, veći je pritisak u cevima. Zato na najvišim spratovima zgrada ponekad treba dodatna pumpa.",
+      "rec": "toranj",
+      "lekcija": 23
     },
     {
       "lekcija": 23,
@@ -5326,17 +5322,17 @@
       "rec": "toričeli"
     },
     {
-      "lekcija": 24,
-      "tezina": 2,
-      "pitanje": "Šta je barometar?",
+      "pitanje": "Šta vazdušni pritisak čini sa tačkom ključanja vode na vrhu visoke planine?",
       "odgovori": [
-        "Instrument za merenje atmosferskog pritiska",
-        "Instrument za merenje temperature",
-        "Instrument za merenje brzine vetra",
-        "Instrument za merenje vlage"
+        "Voda ključa na nižoj temperaturi",
+        "Voda ključa na višoj temperaturi",
+        "Voda ne može da proključa",
+        "Ništa se ne menja"
       ],
-      "zanimljivost": "Pad pritiska na barometru najavljuje kišu i lošije vreme.",
-      "rec": "barometar"
+      "tezina": 3,
+      "zanimljivost": "Na vrhu Mont Everesta voda ključa već na oko 70 °C, pa se tamo jaje teško skuva. U ekspres-loncu je pritisak veći, pa voda ključa na preko 110 °C.",
+      "rec": "ključanje",
+      "lekcija": 24
     },
     {
       "lekcija": 24,
@@ -5469,17 +5465,17 @@
       "rec": "oluja"
     },
     {
-      "lekcija": 24,
-      "tezina": 3,
-      "pitanje": "Kako radi metalni barometar (aneroid)?",
+      "pitanje": "Zašto se kod naglog pada atmosferskog pritiska kaže da „dolazi promena vremena“?",
       "odgovori": [
-        "Tanka metalna kutijica bez vazduha se ugiba pod promenom pritiska",
-        "Pomoću stuba žive u staklenoj cevi koji se diže i spušta sa pritiskom",
-        "Pomoću stuba vode u dugoj cevi, kao što je to radio Evanđelista Toričeli",
-        "Pomoću struje"
+        "Nizak pritisak često prate oblaci, kiša i vetar",
+        "Pad pritiska uvek znači sneg",
+        "Pad pritiska znači da će biti sunčano",
+        "Pritisak nema veze sa vremenom"
       ],
-      "zanimljivost": "Reč aneroid znači „bez tečnosti“ – prvi je napravljen sredinom 19. veka.",
-      "rec": "aneroid"
+      "tezina": 2,
+      "zanimljivost": "Oblasti niskog pritiska zovu se cikloni i donose oblačno vreme. Visok pritisak – anticiklon – obično donosi vedro i stabilno vreme.",
+      "rec": "ciklon",
+      "lekcija": 24
     },
     {
       "lekcija": 24,

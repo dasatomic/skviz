@@ -876,17 +876,17 @@
       "rec": "odšteta"
     },
     {
-      "lekcija": 4,
-      "tezina": 1,
-      "pitanje": "Gde je potpisan mir sa Nemačkom 1919?",
+      "pitanje": "Koliko je otprilike vojnika poginulo u Prvom svetskom ratu?",
       "odgovori": [
-        "U Versaju kod Pariza",
-        "U Beogradu, u Starom dvoru",
-        "U Berlinu",
-        "U Londonu"
+        "Oko 9–10 miliona",
+        "Oko 100.000",
+        "Oko 1 milion",
+        "Oko 50 miliona"
       ],
-      "zanimljivost": "Isti dan bila je i godišnjica Sarajevskog atentata.",
-      "rec": "versaj"
+      "tezina": 2,
+      "zanimljivost": "Prvi svetski rat se zvao „Veliki rat“. Uz vojnike, stradali su i milioni civila – a odmah posle rata usledila je pandemija španskog gripa, koja je odnela još više života.",
+      "rec": "rat",
+      "lekcija": 4
     },
     {
       "lekcija": 4,
@@ -1595,7 +1595,14 @@
         "Rusija"
       ],
       "zanimljivost": "Japan je potom napustio Ligu naroda.",
-      "rec": "japan"
+      "rec": "japan",
+      "mediji": {
+        "vrsta": "mapa",
+        "oblast": "azija",
+        "istakni": [
+          "CHN"
+        ]
+      }
     },
     {
       "lekcija": 8,
@@ -2482,17 +2489,17 @@
       "rec": "ružička"
     },
     {
-      "lekcija": 13,
-      "tezina": 1,
-      "pitanje": "Kojim napadom je počeo Drugi svetski rat?",
+      "pitanje": "Koje dve države su objavile rat Nemačkoj 3. septembra 1939, posle napada na Poljsku?",
       "odgovori": [
-        "Napadom Nemačke na Poljsku 1. septembra 1939.",
-        "Napadom Nemačke na Francusku preko Belgije i Holandije",
-        "Napadom Nemačke na Sovjetski Savez u leto 1941. godine",
-        "Napadom Japana na američku flotu u Perl Harboru 1941."
+        "Velika Britanija i Francuska",
+        "SAD i SSSR",
+        "Italija i Japan",
+        "Jugoslavija i Grčka"
       ],
-      "zanimljivost": "Već 17. septembra Poljsku je sa istoka napao i SSSR.",
-      "rec": "poljska"
+      "tezina": 2,
+      "zanimljivost": "Prvih meseci na zapadu se skoro nije ratovalo – taj period su nazvali „čudni rat“. Pravi napad Nemačke na Francusku počeo je tek u maju 1940.",
+      "rec": "britanija",
+      "lekcija": 13
     },
     {
       "lekcija": 13,
@@ -2583,7 +2590,14 @@
         "Turska"
       ],
       "zanimljivost": "Grčko „Ne!“ (Ohi) Musoliniju i danas se slavi 28. oktobra.",
-      "rec": "grčka"
+      "rec": "grčka",
+      "mediji": {
+        "vrsta": "mapa",
+        "oblast": "balkan",
+        "istakni": [
+          "GRC"
+        ]
+      }
     },
     {
       "lekcija": 13,
@@ -2664,17 +2678,17 @@
       "rec": "romel"
     },
     {
-      "lekcija": 13,
-      "tezina": 1,
-      "pitanje": "Kada je počeo Drugi svetski rat?",
+      "pitanje": "Kako se zvala odbrambena linija utvrđenja na francusko-nemačkoj granici, koju su Nemci 1940. zaobišli preko Belgije?",
       "odgovori": [
-        "1939.",
-        "1914.",
-        "1941.",
-        "1945."
+        "Mažinoova linija",
+        "Zigfridova linija",
+        "Gotska linija",
+        "Atlantski zid"
       ],
-      "zanimljivost": "Rat je trajao skoro šest godina.",
-      "rec": "rat"
+      "tezina": 3,
+      "zanimljivost": "Francuzi su verovali da je linija neprobojna, pa su Nemci napali kroz šume Ardena i Belgiju, gde je odbrana bila slaba.",
+      "rec": "linija",
+      "lekcija": 13
     },
     {
       "lekcija": 14,
@@ -3015,17 +3029,17 @@
       "rec": "musolini"
     },
     {
-      "lekcija": 15,
-      "tezina": 3,
-      "pitanje": "Koja organizacija je osnovana 1945. u San Francisku?",
+      "pitanje": "U kom gradu je sedište Ujedinjenih nacija, osnovanih 1945?",
       "odgovori": [
-        "Ujedinjene nacije",
-        "NATO",
-        "Varšavski pakt",
-        "Liga naroda"
+        "U Njujorku",
+        "U Ženevi",
+        "U Parizu",
+        "U Londonu"
       ],
-      "zanimljivost": "Povelju UN potpisala je i Jugoslavija kao jedna od osnivačica.",
-      "rec": "nacije"
+      "tezina": 1,
+      "zanimljivost": "Zgrada UN-a na obali reke Ist River otvorena je 1952. U Ženevi su, međutim, mnoge agencije UN, a u Hagu je Međunarodni sud pravde.",
+      "rec": "njujork",
+      "lekcija": 15
     },
     {
       "lekcija": 15,
@@ -3043,7 +3057,7 @@
     {
       "lekcija": 15,
       "tezina": 1,
-      "pitanje": "Šta je simbol Dana pobede nad fašizmom?",
+      "pitanje": "Koji datum se obeležava kao Dan pobede nad fašizmom?",
       "odgovori": [
         "9. maj",
         "1. maj",
@@ -3197,17 +3211,17 @@
       "rec": "istok"
     },
     {
-      "lekcija": 16,
-      "tezina": 1,
-      "pitanje": "Koja devojčica je pisala dnevnik dok se krila u Amsterdamu?",
+      "pitanje": "Šta je bila Vanzejska konferencija 1942?",
       "odgovori": [
-        "Ana Frank",
-        "Marija Kiri",
-        "Rozalind Frenklin",
-        "Ana Karenjina"
+        "Sastanak nacističkih zvaničnika na kome je dogovorena organizacija istrebljenja Jevreja",
+        "Mirovna konferencija Saveznika",
+        "Sastanak Hitlera i Musolinija o napadu na Grčku",
+        "Konferencija o podeli Nemačke posle rata"
       ],
-      "zanimljivost": "Kuća u kojoj se krila danas je muzej.",
-      "rec": "frank"
+      "tezina": 3,
+      "zanimljivost": "Konferencija je održana u jednoj vili kod Berlina i trajala je samo oko 90 minuta. Zapisnik sa nje je jedan od najvažnijih dokaza o planiranju Holokausta.",
+      "rec": "vanzej",
+      "lekcija": 16
     },
     {
       "lekcija": 16,
@@ -3249,17 +3263,17 @@
       "rec": "nikad"
     },
     {
-      "lekcija": 16,
-      "tezina": 1,
-      "pitanje": "Šta je bio Nirnberški proces?",
+      "pitanje": "Koji međunarodni sud u Hagu je posle ratova 1990-ih sudio za ratne zločine na prostoru bivše Jugoslavije?",
       "odgovori": [
-        "Suđenje nacističkim zločincima posle rata",
-        "Mirovna konferencija kojom je završen Drugi svetski rat",
-        "Sportski događaj – Olimpijske igre održane u Nemačkoj",
-        "Izbor"
+        "Haški tribunal (MKSJ)",
+        "Nirnberški sud",
+        "Sud Evropske unije",
+        "Ustavni sud Srbije"
       ],
-      "zanimljivost": "Prvi put je međunarodni sud sudio vođama za „zločine protiv čovečnosti“.",
-      "rec": "suđenje"
+      "tezina": 2,
+      "zanimljivost": "Međunarodni krivični tribunal za bivšu Jugoslaviju radio je od 1993. do 2017. Pred njim se sudilo pripadnicima svih strana u ratovima.",
+      "rec": "tribunal",
+      "lekcija": 16
     },
     {
       "lekcija": 17,
@@ -4355,17 +4369,17 @@
       }
     },
     {
-      "lekcija": 22,
-      "tezina": 2,
-      "pitanje": "Šta je dekolonizacija?",
+      "pitanje": "Koja godina se zove „Godina Afrike“, jer je tada nezavisnost dobilo 17 afričkih država?",
       "odgovori": [
-        "Sticanje nezavisnosti bivših kolonija",
-        "Osvajanje novih kolonija u Africi i Aziji",
-        "Osnivanje Ujedinjenih nacija u San Francisku",
-        "Svemirska trka"
+        "1960.",
+        "1945.",
+        "1918.",
+        "1989."
       ],
-      "zanimljivost": "Indija je stekla nezavisnost od Britanije 1947.",
-      "rec": "nezavisnost"
+      "tezina": 3,
+      "zanimljivost": "Te godine su nezavisnost stekle, između ostalih, Nigerija, Kongo, Senegal i Madagaskar. Mnoge granice u Africi su i danas prave linije koje su povukle kolonijalne sile.",
+      "rec": "afrika",
+      "lekcija": 22
     },
     {
       "lekcija": 22,
@@ -5202,7 +5216,7 @@
     {
       "lekcija": 26,
       "tezina": 1,
-      "pitanje": "Koja su bila deca organizacija u SFRJ u koju su primani prvaci?",
+      "pitanje": "Kako se zvala dečja organizacija u SFRJ u koju su primani prvaci?",
       "odgovori": [
         "Pioniri",
         "Skauti samo",
@@ -5267,7 +5281,7 @@
     {
       "lekcija": 27,
       "tezina": 3,
-      "pitanje": "Ko su pobedili na prvim višestranačkim izborima 1990. u većini republika?",
+      "pitanje": "Ko je pobedio na prvim višestranačkim izborima 1990. u većini jugoslovenskih republika?",
       "odgovori": [
         "Nacionalne stranke",
         "Komunisti svuda",
@@ -5395,17 +5409,17 @@
       "rec": "slovenija"
     },
     {
-      "lekcija": 27,
-      "tezina": 1,
-      "pitanje": "Koja je bila prestonica SFRJ?",
+      "pitanje": "Koliko je republika činilo SFRJ?",
       "odgovori": [
-        "Beograd",
-        "Zagreb",
-        "Ljubljana",
-        "Sarajevo"
+        "Šest",
+        "Četiri",
+        "Osam",
+        "Deset"
       ],
-      "zanimljivost": "Beograd je ostao prestonica i SRJ.",
-      "rec": "beograd"
+      "tezina": 1,
+      "zanimljivost": "To su bile Srbija, Hrvatska, Slovenija, Bosna i Hercegovina, Crna Gora i Makedonija. U sastavu Srbije bile su i dve autonomne pokrajine.",
+      "rec": "republika",
+      "lekcija": 27
     },
     {
       "lekcija": 27,
@@ -5423,7 +5437,7 @@
     {
       "lekcija": 28,
       "tezina": 1,
-      "pitanje": "Gde je vođen kratak rat 1991. između JNA i teritorijalne odbrane, koji je trajao oko deset dana?",
+      "pitanje": "Gde je vođen kratak rat 1991. između JNA i teritorijalne odbrane, koji je trajao oko deset dana? (Mesto je označeno na mapi.)",
       "odgovori": [
         "U Sloveniji",
         "U Makedoniji",
@@ -5431,12 +5445,23 @@
         "U Crnoj Gori"
       ],
       "zanimljivost": "Posle Brionske deklaracije JNA se povukla iz Slovenije.",
-      "rec": "slovenija"
+      "rec": "slovenija",
+      "mediji": {
+        "vrsta": "mapa",
+        "oblast": "evropa",
+        "tacke": [
+          {
+            "lat": 46.05,
+            "lon": 14.5,
+            "oznaka": "?"
+          }
+        ]
+      }
     },
     {
       "lekcija": 28,
       "tezina": 2,
-      "pitanje": "Koji grad u istočnoj Slavoniji je teško razoren 1991?",
+      "pitanje": "Koji grad u istočnoj Slavoniji, označen na mapi, je teško razoren 1991?",
       "odgovori": [
         "Vukovar",
         "Ljubljana",
@@ -5444,7 +5469,18 @@
         "Novi Sad"
       ],
       "zanimljivost": "Borbe za Vukovar trajale su oko tri meseca.",
-      "rec": "vukovar"
+      "rec": "vukovar",
+      "mediji": {
+        "vrsta": "mapa",
+        "oblast": "balkan",
+        "tacke": [
+          {
+            "lat": 45.35,
+            "lon": 19,
+            "oznaka": "?"
+          }
+        ]
+      }
     },
     {
       "lekcija": 28,
@@ -5655,17 +5691,17 @@
       "rec": "evro"
     },
     {
-      "lekcija": 29,
-      "tezina": 3,
-      "pitanje": "Kako se zove pojava sve veće povezanosti sveta preko interneta i trgovine?",
+      "pitanje": "Kako se zove prvi veliki skup pravila o slobodnoj trgovini, potpisan 1947, iz kog je kasnije nastala Svetska trgovinska organizacija?",
       "odgovori": [
-        "Globalizacija",
-        "Kolonizacija",
-        "Industrijalizacija",
-        "Urbanizacija"
+        "GATT – Opšti sporazum o carinama i trgovini",
+        "Maršalov plan",
+        "Varšavski ugovor",
+        "Rimski ugovori"
       ],
-      "zanimljivost": "Prvi pametni telefon sa ekranom na dodir postao je masovno popularan posle 2007.",
-      "rec": "svet"
+      "tezina": 3,
+      "zanimljivost": "Svetska trgovinska organizacija (STO) osnovana je 1995. kao naslednik GATT-a. Danas ima preko 160 članica.",
+      "rec": "trgovina",
+      "lekcija": 29
     },
     {
       "lekcija": 29,

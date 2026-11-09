@@ -1708,17 +1708,17 @@
       "rec": "usklađivanje"
     },
     {
-      "lekcija": 8,
-      "tezina": 2,
-      "pitanje": "Koji hormon izaziva „leptiriće u stomaku“ i lupanje srca kad smo uzbuđeni?",
+      "pitanje": "Koji hormon, uz adrenalin, luči srž nadbubrežne žlezde i ubrzava rad srca u opasnosti?",
       "odgovori": [
-        "Adrenalin",
+        "Noradrenalin",
         "Insulin",
         "Melatonin",
-        "Hormon rasta"
+        "Tiroksin"
       ],
-      "zanimljivost": "Adrenalin usporava varenje i šalje krv u mišiće – otuda čudan osećaj u stomaku.",
-      "rec": "uzbuđenje"
+      "tezina": 3,
+      "zanimljivost": "Adrenalin i noradrenalin za nekoliko sekundi pripreme telo za „bori se ili beži“: podižu šećer u krvi, ubrzavaju disanje i usmeravaju krv u mišiće.",
+      "rec": "hormon",
+      "lekcija": 8
     },
     {
       "lekcija": 8,
@@ -1877,17 +1877,17 @@
       "rec": "pingvin"
     },
     {
-      "lekcija": 9,
-      "tezina": 1,
-      "pitanje": "Koje mesto u mozgu je „termostat“ tela?",
+      "pitanje": "Na kojoj temperaturi tela nastaje groznica (povišena temperatura)?",
       "odgovori": [
-        "Hipotalamus",
-        "Mali mozak",
-        "Kičmena moždina",
-        "Kora mozga"
+        "Iznad oko 38 °C",
+        "Iznad oko 35 °C",
+        "Iznad oko 45 °C",
+        "Ispod 36 °C"
       ],
-      "zanimljivost": "Kada nam je groznica, hipotalamus „podesi“ termostat na višu temperaturu.",
-      "rec": "termostat"
+      "tezina": 2,
+      "zanimljivost": "Groznica je odbrambena reakcija – na višoj temperaturi mnogi mikroorganizmi se sporije razmnožavaju, a imunski sistem radi brže. Opasna postaje tek preko oko 41 °C.",
+      "rec": "groznica",
+      "lekcija": 9
     },
     {
       "lekcija": 9,
@@ -2228,17 +2228,17 @@
       "rec": "žeđ"
     },
     {
-      "lekcija": 11,
-      "tezina": 1,
-      "pitanje": "Koja žlezda luči insulin?",
+      "pitanje": "Gde se u pankreasu nalaze ćelije koje luče insulin?",
       "odgovori": [
-        "Pankreas",
-        "Štitna žlezda",
-        "Hipofiza",
-        "Timus"
+        "U Langerhansovim ostrvcima",
+        "U jetrinim režnjevima",
+        "U kori nadbubrežne žlezde",
+        "U mišićima"
       ],
-      "zanimljivost": "Pre otkrića insulina deca sa dijabetesom tipa 1 živela su samo nekoliko godina posle dijagnoze.",
-      "rec": "pankreas"
+      "tezina": 3,
+      "zanimljivost": "Langerhansova ostrvca su sićušne grupe ćelija rasute po pankreasu – čine samo oko 1–2% njegove mase. Ostatak pankreasa luči sokove za varenje.",
+      "rec": "ostrvca",
+      "lekcija": 11
     },
     {
       "lekcija": 11,
@@ -2280,17 +2280,17 @@
       "rec": "poremećaj"
     },
     {
-      "lekcija": 11,
-      "tezina": 3,
-      "pitanje": "Koja materija u soli sprečava gušavost?",
+      "pitanje": "Zašto je štitna žlezda važna za decu u razvoju?",
       "odgovori": [
-        "Jod",
-        "Natrijum",
-        "Fluor",
-        "Gvožđe"
+        "Njeni hormoni upravljaju rastom i razvojem mozga",
+        "Proizvodi krvna zrnca",
+        "Luči želudačni sok",
+        "Prečišćava krv od otrova"
       ],
-      "zanimljivost": "Srbija je uvela obavezno jodiranje soli još 1950-ih – i gušavost kod dece je praktično nestala.",
-      "rec": "jod"
+      "tezina": 2,
+      "zanimljivost": "Zato se svim bebama u porodilištu proverava rad štitne žlezde. Za njene hormone neophodan je jod, koji se dodaje kuhinjskoj soli.",
+      "rec": "štitna",
+      "lekcija": 11
     },
     {
       "lekcija": 11,
@@ -2464,7 +2464,7 @@
     {
       "lekcija": 12,
       "tezina": 2,
-      "pitanje": "Šta su ovulacija i jajna ćelija?",
+      "pitanje": "Šta je ovulacija?",
       "odgovori": [
         "Oslobađanje jajne ćelije iz jajnika",
         "Rast kostiju u dužinu tokom puberteta",
@@ -5580,27 +5580,17 @@
       "rec": "omorika"
     },
     {
-      "lekcija": 28,
-      "tezina": 3,
-      "pitanje": "Koja retka i strogo zaštićena ptica grabljivica živi u Srbiji na Uvcu i Trešnjici?",
+      "pitanje": "Koja velika sova, najveća u Evropi, živi i u kanjonima i stenovitim predelima Srbije?",
       "odgovori": [
-        "Beloglavi sup",
-        "Andski kondor (Južna Amerika)",
-        "Afrički noj iz savane",
-        "Kudravi pelikan"
+        "Buljina",
+        "Kukuvija",
+        "Šumska sova",
+        "Mala ušara"
       ],
-      "zanimljivost": "Beloglavi sup ima raspon krila do 2,8 m, a hrani se isključivo uginulim životinjama.",
-      "rec": "sup",
-      "mediji": {
-        "vrsta": "mapa",
-        "oblast": "srbija",
-        "tacke": [
-          {
-            "lat": 43.4,
-            "lon": 19.92
-          }
-        ]
-      }
+      "tezina": 3,
+      "zanimljivost": "Buljina ima raspon krila do 1,8 m i narandžaste oči. Lovi noću, čak i lisice i mlade srne, a zaštićena je vrsta.",
+      "rec": "buljina",
+      "lekcija": 28
     },
     {
       "lekcija": 28,

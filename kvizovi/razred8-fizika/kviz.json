@@ -1282,17 +1282,17 @@
       "rec": "solarna"
     },
     {
-      "lekcija": 6,
-      "tezina": 1,
-      "pitanje": "Kakav lik daje ravno ogledalo – uvećan ili iste veličine?",
+      "pitanje": "Koliko daleko vidiš svoj lik ako stojiš 2 m ispred ravnog ogledala?",
       "odgovori": [
-        "Iste veličine",
-        "Uvećan",
-        "Umanjen",
-        "Nema lika"
+        "4 m od sebe",
+        "2 m od sebe",
+        "1 m od sebe",
+        "8 m od sebe"
       ],
-      "zanimljivost": "Ogledala „uvećanja“ za šminkanje nisu ravna, već udubljena.",
-      "rec": "veličina"
+      "tezina": 2,
+      "zanimljivost": "Lik je iza ogledala isto toliko koliko si ti ispred njega – 2 m. Zato je od tebe udaljen ukupno 4 m.",
+      "rec": "ogledalo",
+      "lekcija": 6
     },
     {
       "lekcija": 6,
@@ -1576,17 +1576,17 @@
       "rec": "voda"
     },
     {
-      "lekcija": 8,
-      "tezina": 1,
-      "pitanje": "Šta je brže – svetlost ili zvuk?",
+      "pitanje": "Koliko je puta svetlost brža od zvuka u vazduhu?",
       "odgovori": [
-        "Svetlost, mnogo puta",
-        "Zvuk",
-        "Isti su",
-        "Zavisi od dana"
+        "Oko 900.000 puta",
+        "Oko 1.000 puta",
+        "Oko 100 puta",
+        "Oko 10 puta"
       ],
-      "zanimljivost": "Svetlost je oko 900.000 puta brža od zvuka u vazduhu.",
-      "rec": "brže"
+      "tezina": 3,
+      "zanimljivost": "Svetlost pređe oko 300.000 km u sekundi, a zvuk samo oko 340 m. Zato munju vidimo praktično odmah, a grom čujemo kasnije.",
+      "rec": "svetlost",
+      "lekcija": 8
     },
     {
       "lekcija": 8,
@@ -1660,7 +1660,7 @@
     {
       "lekcija": 8,
       "tezina": 2,
-      "pitanje": "Koliko je otprilike Sunce udaljeno u svetlosnim minutima od Neptuna?",
+      "pitanje": "Koliko je otprilike potrebno svetlosti da od Sunca stigne do Neptuna?",
       "odgovori": [
         "Oko 4 sata svetlosti",
         "Oko 8 minuta, kao do Zemlje",
@@ -2888,17 +2888,17 @@
       "rec": "balon"
     },
     {
-      "lekcija": 14,
-      "tezina": 1,
-      "pitanje": "Kako deluju istoimena naelektrisanja?",
+      "pitanje": "Šta se dešava sa listićima elektroskopa kada mu priđemo naelektrisanim štapom?",
       "odgovori": [
-        "Odbijaju se",
-        "Privlače se",
-        "Ne deluju",
-        "Spajaju se"
+        "Razmaknu se, jer dobiju istoimeno naelektrisanje",
+        "Skupe se i slepe",
+        "Promene boju",
+        "Ništa se ne dešava"
       ],
-      "zanimljivost": "Dva protona u jezgru se odbijaju, ali ih drži još jača – nuklearna sila.",
-      "rec": "odbijanje"
+      "tezina": 2,
+      "zanimljivost": "Listići se odbijaju jer su naelektrisani istim znakom. Što je naelektrisanje veće, razmak je veći.",
+      "rec": "elektroskop",
+      "lekcija": 14
     },
     {
       "lekcija": 15,
@@ -4768,17 +4768,17 @@
       "rec": "maglev"
     },
     {
-      "lekcija": 24,
-      "tezina": 2,
-      "pitanje": "Ko je u Srbiji proučavao i razvio pronalaske zasnovane na elektromagnetizmu, npr. obrtno magnetno polje?",
+      "pitanje": "Ko je izumeo indukcioni motor naizmenične struje zasnovan na obrtnom magnetnom polju?",
       "odgovori": [
         "Nikola Tesla",
-        "Mihajlo Pupin",
-        "Milutin Milanković",
-        "Pavle Savić"
+        "Tomas Edison",
+        "Majkl Faradej",
+        "Džejms Vat"
       ],
-      "zanimljivost": "Teslin asinhroni motor sa obrtnim magnetnim poljem i danas pokreće većinu industrijskih mašina.",
-      "rec": "tesla"
+      "tezina": 1,
+      "zanimljivost": "Tesla je ideju o obrtnom magnetnom polju dobio 1882, šetajući parkom u Budimpešti. Njegovi motori danas pokreću veš-mašine, pumpe i fabrike širom sveta.",
+      "rec": "motor",
+      "lekcija": 24
     },
     {
       "lekcija": 24,
@@ -5961,17 +5961,17 @@
       "rec": "telefon"
     },
     {
-      "lekcija": 30,
-      "tezina": 2,
-      "pitanje": "Koji naučnik poreklom iz naših krajeva je zaslužan za sistem naizmenične struje koji danas koristi ceo svet?",
+      "pitanje": "Ko je predložio da se elektroni ponašaju i kao talasi, što je kasnije iskorišćeno za elektronski mikroskop?",
       "odgovori": [
-        "Nikola Tesla",
-        "Mihajlo Pupin",
-        "Đorđe Stanojević",
-        "Jovan Cvijić"
+        "Luj de Broj",
+        "Isak Njutn",
+        "Džejms Vat",
+        "Aleksandro Volta"
       ],
-      "zanimljivost": "Tesla je rođen 10. jula 1856. u Smiljanu; beogradski aerodrom i jedna elektrana nose njegovo ime.",
-      "rec": "tesla"
+      "tezina": 3,
+      "zanimljivost": "Francuski fizičar Luj de Broj je 1924. predložio da sve čestice imaju i talasna svojstva. Za to je dobio Nobelovu nagradu 1929.",
+      "rec": "talas",
+      "lekcija": 30
     },
     {
       "lekcija": 30,

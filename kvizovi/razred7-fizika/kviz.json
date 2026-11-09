@@ -333,17 +333,17 @@
       "rec": "kamion"
     },
     {
-      "lekcija": 2,
-      "tezina": 2,
-      "pitanje": "Ako se masa tela udvostruči, a sila ostane ista, šta je sa ubrzanjem?",
+      "pitanje": "Ako se sila koja deluje na telo udvostruči, a masa ostane ista, šta se dešava sa ubrzanjem?",
       "odgovori": [
-        "Smanji se upola",
         "Udvostruči se",
-        "Ne menja se",
-        "Smanji se četiri puta"
+        "Smanji se upola",
+        "Ostane isto",
+        "Poveća se četiri puta"
       ],
-      "zanimljivost": "Zato sportski automobili imaju jake motore – veća sila daje veće ubrzanje.",
-      "rec": "dupla"
+      "tezina": 2,
+      "zanimljivost": "Ubrzanje je srazmerno sili: a = F / m. Zato jači motor brže ubrza isti automobil.",
+      "rec": "ubrzanje",
+      "lekcija": 2
     },
     {
       "lekcija": 2,
@@ -788,17 +788,17 @@
       "rec": "padanje"
     },
     {
-      "lekcija": 4,
-      "tezina": 2,
-      "pitanje": "Koja brzina je važnija za bezbednost na kratkom delu puta kod škole?",
+      "pitanje": "Koliki put pređe automobil brzinom 72 km/h za jednu sekundu, dok vozač reaguje na opasnost?",
       "odgovori": [
-        "Trenutna brzina",
-        "Srednja brzina za ceo put",
-        "Brzina vetra",
-        "Brzina zvuka"
+        "20 m",
+        "72 m",
+        "7,2 m",
+        "2 m"
       ],
-      "zanimljivost": "Pri brzini 30 km/h pešak skoro uvek preživi udar, a pri 50 km/h rizik je višestruko veći.",
-      "rec": "škola"
+      "tezina": 2,
+      "zanimljivost": "72 km/h je 20 m/s. Za samo jednu sekundu „reakcije“ automobil pređe 20 metara pre nego što vozač uopšte počne da koči.",
+      "rec": "reakcija",
+      "lekcija": 4
     },
     {
       "lekcija": 4,
@@ -1484,17 +1484,17 @@
       "rec": "kiša"
     },
     {
-      "lekcija": 8,
-      "tezina": 1,
-      "pitanje": "Kakvo je kretanje lopte bačene vertikalno naviše dok se penje?",
+      "pitanje": "Kakvo je kretanje lopte bačene naviše dok pada nazad ka zemlji?",
       "odgovori": [
-        "Ravnomerno usporeno",
         "Ravnomerno ubrzano",
         "Ravnomerno",
+        "Ravnomerno usporeno",
         "Kružno"
       ],
-      "zanimljivost": "Lopta se usporava jer joj sila teže stalno smanjuje brzinu – za oko 10 m/s svake sekunde.",
-      "rec": "naviše"
+      "tezina": 2,
+      "zanimljivost": "Dok pada, lopta svake sekunde dobija oko 10 m/s brzine. Penjanje i padanje traju jednako ako nema otpora vazduha.",
+      "rec": "pad",
+      "lekcija": 8
     },
     {
       "lekcija": 8,
@@ -2016,17 +2016,17 @@
       "rec": "gorivo"
     },
     {
-      "lekcija": 10,
-      "tezina": 2,
-      "pitanje": "Šta je „granična brzina“ tela koje pada kroz vazduh?",
+      "pitanje": "Zašto kočenje traje mnogo duže kada je put zaleđen?",
       "odgovori": [
-        "Brzina pri kojoj otpor vazduha postane jednak težini",
-        "Najveća moguća brzina u svemiru, koju ništa ne može da pređe",
-        "Brzina zvuka",
-        "Brzina svetlosti"
+        "Trenje između guma i leda je veoma malo",
+        "Led povećava masu automobila",
+        "Na ledu je gravitacija slabija",
+        "Kočnice ne rade na hladnoći"
       ],
-      "zanimljivost": "Mačka koja padne sa visine dostiže graničnu brzinu od oko 100 km/h i često prizemlji bez povrede.",
-      "rec": "granica"
+      "tezina": 1,
+      "zanimljivost": "Na ledu put kočenja može biti i do deset puta duži nego na suvom asfaltu. Zato se zimi vozi sporije i koriste zimske gume.",
+      "rec": "led",
+      "lekcija": 10
     },
     {
       "lekcija": 10,
@@ -2081,17 +2081,17 @@
       "rec": "kap"
     },
     {
-      "lekcija": 11,
-      "tezina": 1,
-      "pitanje": "Šta je rezultujuća sila?",
+      "pitanje": "Dve sile od 6 N i 8 N deluju na telo u suprotnim smerovima. Kolika je rezultujuća sila?",
       "odgovori": [
-        "Sila koja zamenjuje dejstvo svih sila na telo",
-        "Najveća sila od svih koje deluju na telo u tom trenutku",
-        "Sila trenja koja nastaje na dodiru tela i podloge kad klizi",
-        "Prva sila"
+        "2 N, u smeru veće sile",
+        "14 N",
+        "48 N",
+        "0 N"
       ],
-      "zanimljivost": "Kada je rezultujuća sila nula, telo je u ravnoteži.",
-      "rec": "rezultanta"
+      "tezina": 1,
+      "zanimljivost": "Kada sile deluju duž istog pravca u suprotnim smerovima, oduzimaju se. Kada deluju u istom smeru, sabiraju se.",
+      "rec": "sila",
+      "lekcija": 11
     },
     {
       "lekcija": 11,
@@ -2366,17 +2366,17 @@
       "rec": "ključ"
     },
     {
-      "lekcija": 12,
-      "tezina": 1,
-      "pitanje": "Šta je oslonac na klackalici?",
+      "pitanje": "Na klackalici sede dva deteta iste mase. Gde treba da sede da bi bila ravnoteža?",
       "odgovori": [
-        "Tačka oko koje se klackalica okreće",
-        "Sedište na kraju daske na koje sedne dete",
-        "Rukohvat za koji se deca drže dok se klackaju",
-        "Dete"
+        "Na jednakoj udaljenosti od oslonca",
+        "Jedno do samog oslonca",
+        "Oba na istoj strani",
+        "Bilo gde – masa je ista"
       ],
-      "zanimljivost": "Teže dete treba da sedne bliže osloncu da bi klackalica bila u ravnoteži.",
-      "rec": "oslonac"
+      "tezina": 1,
+      "zanimljivost": "Kod jednakih masa ravnoteža je kada su i krakovi jednaki. Teže dete mora da sedne bliže osloncu.",
+      "rec": "klackalica",
+      "lekcija": 12
     },
     {
       "lekcija": 12,
@@ -2951,17 +2951,17 @@
       "rec": "podizanje"
     },
     {
-      "lekcija": 15,
-      "tezina": 1,
-      "pitanje": "Šta je potrebno za mehanički rad?",
+      "pitanje": "Koliki rad izvrši sila Zemljine teže kada jabuka težine 1 N padne sa visine 3 m?",
       "odgovori": [
-        "Sila i pomeranje tela",
-        "Samo dovoljno velika sila",
-        "Samo dovoljno dugo vreme",
-        "Samo velika masa tela koje se kreće"
+        "3 J",
+        "1 J",
+        "30 J",
+        "0 J"
       ],
-      "zanimljivost": "Zid koji guraš a ne pomeriš – nema rada!",
-      "rec": "pomeranje"
+      "tezina": 2,
+      "zanimljivost": "Rad je sila puta put: 1 N · 3 m = 3 J. Taj rad se pretvara u kinetičku energiju jabuke.",
+      "rec": "jabuka",
+      "lekcija": 15
     },
     {
       "lekcija": 15,
@@ -3900,17 +3900,17 @@
       "rec": "nula"
     },
     {
-      "lekcija": 20,
-      "tezina": 2,
-      "pitanje": "Koja je gornja stalna tačka Celzijusove skale, pri normalnom pritisku?",
+      "pitanje": "Koja je temperatura topljenja leda izražena u kelvinima?",
       "odgovori": [
-        "100 °C",
-        "90 °C",
-        "80 °C",
-        "120 °C"
+        "Oko 273 K",
+        "0 K",
+        "100 K",
+        "373 K"
       ],
-      "zanimljivost": "Na vrhu Mont Everesta voda ključa već na oko 70 °C – zato se tamo jaje teško skuva.",
-      "rec": "ključanje"
+      "tezina": 2,
+      "zanimljivost": "Na Kelvinovoj skali nema negativnih temperatura. Voda ključa na oko 373 K, a apsolutna nula je 0 K.",
+      "rec": "kelvin",
+      "lekcija": 20
     },
     {
       "lekcija": 20,
@@ -4203,17 +4203,17 @@
       "rec": "demokrit"
     },
     {
-      "lekcija": 21,
-      "tezina": 2,
-      "pitanje": "Zašto se šećer brže rastvara u toplom čaju?",
+      "pitanje": "Kako se zove prelazak čvrstog tela direktno u gas, kao kod suvog leda ili naftalina?",
       "odgovori": [
-        "Čestice se brže kreću i mešaju",
-        "Šećer je mnogo lakši u toploj vodi",
-        "Čaj je mnogo slađi kada je topao",
-        "Nema razlike u brzini rastvaranja"
+        "Sublimacija",
+        "Kondenzacija",
+        "Topljenje",
+        "Očvršćavanje"
       ],
-      "zanimljivost": "Mešanje kašičicom takođe ubrzava rastvaranje.",
-      "rec": "šećer"
+      "tezina": 3,
+      "zanimljivost": "Suvi led (zaleđen ugljen-dioksid) na običnom pritisku se ne topi nego odmah prelazi u gas. Obrnut proces – iz gasa u čvrsto – zove se depozicija, tako nastaje inje.",
+      "rec": "sublimacija",
+      "lekcija": 21
     },
     {
       "lekcija": 21,
@@ -4229,17 +4229,17 @@
       "rec": "sporo"
     },
     {
-      "lekcija": 21,
-      "tezina": 3,
-      "pitanje": "Kakvo je kretanje molekula na višoj temperaturi u gasu?",
+      "pitanje": "Zašto se balon na suncu nadme jače nego u hladovini?",
       "odgovori": [
-        "Brže i sudaraju se češće i jače",
-        "Sporije i sudaraju se ređe nego inače",
-        "Ne kreću se uopšte, već stoje u mestu",
-        "Kreću se samo naviše, ka vrhu posude"
+        "Molekuli vazduha u njemu se brže kreću i jače udaraju u zidove",
+        "Sunce uduvava vazduh u balon",
+        "Balon na suncu postaje lakši",
+        "Guma se na suncu skuplja"
       ],
-      "zanimljivost": "Zato se pritisak gasa u zatvorenoj posudi povećava sa temperaturom.",
-      "rec": "pritisak"
+      "tezina": 2,
+      "zanimljivost": "Pritisak gasa potiče od udara molekula u zidove posude. Što je gas topliji, udari su češći i jači.",
+      "rec": "balon",
+      "lekcija": 21
     },
     {
       "lekcija": 22,

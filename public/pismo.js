@@ -64,13 +64,13 @@
         if (!z || crticaUReci(z, susedno)) return false;
         if (z === '=') return true;
         // „t + j daje ć“ (gramatika) nije matematika – operator važi tek kad u tekstu ima i „=“ ili cifara
-        if (!/[=\d→]/.test(tekst)) return false;
+        if (!/[=\d]/.test(tekst) && !(/→/.test(tekst) && /^[A-Z]$/.test(tok))) return false;
         return (/^[iuaoskv]$/i.test(tok) ? '+·×÷^<>/' : OPERATORI).includes(z);
       };
       if (operator(preZnak, pre.slice(-2, -1)) || operator(posleZnak, posle.slice(1, 2))) return true;
     }
     // kraće oznake uz znak jednakosti (Ek = …, M = 1000)
-    if (tok.length <= 3 && (preZnak === '=' || posleZnak === '=' || preZnak === '→' || posleZnak === '→')) return true;
+    if (tok.length <= 3 && (preZnak === '=' || posleZnak === '=' || ((preZnak === '→' || posleZnak === '→') && /[A-Z\d]/.test(tok)))) return true;
     // formula u zagradi u hemijskom tekstu: „Ugljen-monoksid (CO)“
     if (preZnak === '(' && posleZnak === ')' && /^(?:[A-Z][a-z]?\d*)+$/.test(tok) && (tok.match(/[A-Z][a-z]?/g) || []).every((x) => SIMBOLI.has(x))
       && /(oksid|kiselin|gas|hemij|molekul|atom|element|jedinjenj|baz|so\b)/i.test(tekst)) return true;
@@ -123,6 +123,7 @@
     // strane reči pod navodnicima posle „od latinskog…“, „engleske reči…“: „centum“, „mille“
     for (const m of tekst.matchAll(/(?:latinsk|grčk|engles|nemačk|francusk|italijansk|špansk|tursk|japansk|rimsk|persijsk)[a-zčćžšđ]*\s+(?:(?:reči|naziva|naziv|izraza|izraz|korena|izreka|rečenica|imena|novca)\s+)?„([^“”]+)[“”]|\b[A-Z]\s+(?:dolazi\s+)?od\s+„([^“”]+)[“”]/g)) {
       const deo = m[1] ?? m[2];
+      if (/[čćžšđČĆŽŠĐ]/.test(deo)) continue; // „šah mat“, „računar“ – već prilagođeno srpskom
       nizovi.push([m.index + m[0].length - deo.length - 1, m.index + m[0].length]);
     }
     for (const m of tekst.matchAll(/(?:\b[A-Z]\b[\s,]+){4,}\b[A-Z]\b/g)) nizovi.push([m.index, m.index + m[0].length]);
