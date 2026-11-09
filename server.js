@@ -5,6 +5,7 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 const os = require('os');
+const crypto = require('crypto');
 
 const kvizovi = require('./lib/kvizovi');
 const recnik = require('./lib/recnik');
@@ -25,6 +26,14 @@ const tokovi = new Map(); // kod -> Set<{res, id}>
 
 const cekaci = new Map(); // kod -> Set<{res, id, tajmer}>  (long-polling, kad SSE ne prolazi – npr. Cloudflare tunel)
 
+// Telefon šalje svoj TAJNI id (čuva ga u localStorage); ostali igrači vide samo javni id izveden iz njega.
+// Tako niko ne može da se predstavi kao drugi igrač ili vođa samo zato što mu vidi id u stanju sobe.
+// Ključ je nasumičan po pokretanju servera (sobe ionako žive samo u memoriji).
+const KLJUC_ID = crypto.randomBytes(32);
+const javniId = (tajni) => (tajni ? crypto.createHmac('sha256', KLJUC_ID).update(String(tajni)).digest('hex').slice(0, 16) : '');
+// broj otvorenih SSE tokova jednog igrača (računa se iz skupa tokova, pa ne može da se „raštimuje“)
+const brojVeza = (kod, id) => { let n = 0; for (const t of tokovi.get(kod) || []) if (t.id === id) n++; return n; };
+
 function emituj(soba) {
   const set = tokovi.get(soba.kod);
   if (set) for (const t of set) posalji(t.res, soba.pogled(t.id));
@@ -43,6 +52,7 @@ const LIMIT_SOBA = +process.env.LIMIT_SOBA || 20; // novih soba po minutu po adr
 const LIMIT_NEMA = +process.env.LIMIT_NEMA || 120; // pogrešnih kodova soba po minutu po adresi
 const LIMIT_PREDLOGA = +process.env.LIMIT_PREDLOGA || 10; // predloga (pull request-ova) po satu po adresi
 const LIMIT_PREDLOGA_DAN = +process.env.LIMIT_PREDLOGA_DAN || 100; // ukupno predloga dnevno (zaštita od zloupotrebe)
+const LIMIT_STANJA = +process.env.LIMIT_STANJA || 20; // provera stanja predloga („Moji predlozi“) po minutu po adresi
 function novKod() {
   const A = 'ABCDEFGHJKLMNPRSTUVZ';
   if (sobe.size >= MAKS_SOBA) return null;
@@ -77,9 +87,11 @@ setInterval(() => {
   for (const [k, s] of sobe) {
     const nikog = !(tokovi.get(k)?.size) && !(cekaci.get(k)?.size);
     const dokle = s.igraci.size === 0 || s.faza === 'lobi' ? 30 * 60e3 : 3 * 3600e3; // prazne i nepokrenute sobe brže nestaju
-    if (nikog && Date.now() - s.zadnjaAktivnost > dokle) { sobe.delete(k); tokovi.delete(k); cekaci.delete(k); }
+    if (nikog && Date.now() - s.zadnjaAktivnost > dokle) { clearTimeout(s.tajmer); sobe.delete(k); tokovi.delete(k); cekaci.delete(k); }
   }
 }, 60e3);
+// vođa koji je nestao (ugašen telefon, zatvorena stranica) predaje vođstvo prvom prisutnom igraču
+setInterval(() => { for (const s of sobe.values()) s.proveriDomacina(); }, 4000);
 
 const TIPOVI = {
   '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8',
@@ -97,37 +109,45 @@ function verzijaKlijenta() {
   for (const f of ['index.html', 'app.js', 'geo.js', 'mediji.js', 'pismo.js', 'style.css']) {
     try { const st = fs.statSync(path.join(JAVNO, f)); v += st.size.toString(36) + st.mtimeMs.toString(36); } catch {}
   }
-  otisak = { do: Date.now() + 5000, v: require('crypto').createHash('md5').update(v).digest('hex').slice(0, 10) };
+  otisak = { do: Date.now() + 5000, v: crypto.createHash('md5').update(v).digest('hex').slice(0, 10) };
   return otisak.v;
 }
 Soba.verzijaKlijenta = verzijaKlijenta;
 
 function staticki(res, koren, rel, zaglavlja = {}) {
   const f = path.normalize(path.join(koren, rel));
-  if (!f.startsWith(koren)) return kraj(res, 403, 'zabranjeno');
+  // sme samo unutar korena („public-x“ pored „public“ nije unutra, iako počinje isto)
+  if (f !== koren && !f.startsWith(koren + path.sep)) return kraj(res, 403, 'zabranjeno');
   fs.stat(f, (e, st) => {
     if (e || !st.isFile()) return kraj(res, 404, 'nema');
     res.writeHead(200, {
       'Content-Type': TIPOVI[path.extname(f).toLowerCase()] || 'application/octet-stream',
       'Content-Length': st.size,
       'Cache-Control': koren === KVIZOVI || rel.startsWith('/geo/') ? 'public, max-age=3600' : 'no-cache',
+      'X-Content-Type-Options': 'nosniff',
+      // fajlovi kvizova (slike, SVG) su samo sadržaj: ako se otvore direktno u pregledaču, ne smeju da pokreću skripte
+      ...(koren === KVIZOVI ? { 'Content-Security-Policy': "default-src 'none'; img-src 'self' data:; style-src 'unsafe-inline'" } : {}),
       ...zaglavlja,
     });
-    fs.createReadStream(f).pipe(res);
+    fs.createReadStream(f).on('error', () => res.destroy()).pipe(res);
   });
 }
 
 function kraj(res, kod, telo) {
   const json = typeof telo !== 'string';
-  res.writeHead(kod, { 'Content-Type': json ? 'application/json; charset=utf-8' : 'text/plain; charset=utf-8' });
+  res.writeHead(kod, { 'Content-Type': json ? 'application/json; charset=utf-8' : 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'Cache-Control': 'no-store' });
   res.end(json ? JSON.stringify(telo) : telo);
 }
 
 function citajTelo(req) {
   return new Promise((ok) => {
-    let d = '';
-    req.on('data', (c) => { d += c; if (d.length > 1e5) req.destroy(); });
-    req.on('end', () => { try { const o = JSON.parse(d || '{}'); ok(o && typeof o === 'object' && !Array.isArray(o) ? o : {}); } catch { ok({}); } });
+    const delovi = [];
+    let n = 0;
+    // delovi se spajaju kao bajtovi – višebajtno slovo (š, ћ, emodži) može da bude presečeno između dva dela
+    req.on('data', (c) => { n += c.length; if (n > 1e5) { req.destroy(); return ok({}); } delovi.push(c); });
+    req.on('end', () => { try { const o = JSON.parse(Buffer.concat(delovi).toString('utf8') || '{}'); ok(o && typeof o === 'object' && !Array.isArray(o) ? o : {}); } catch { ok({}); } });
+    req.on('error', () => ok({}));
+    req.on('close', () => ok({})); // prekinuta veza – da obrada ne ostane da visi
   });
 }
 
@@ -144,31 +164,33 @@ async function obradi(req, res) {
 
   if (p === '/api/dogadjaji') {
     const soba = sobe.get((url.searchParams.get('soba') || '').toUpperCase());
-    const id = url.searchParams.get('igrac') || '';
+    const tajni = url.searchParams.get('igrac') || '';
     if (!soba) return kraj(res, previse(req, 'nema', LIMIT_NEMA, 60e3) ? 429 : 404, { greska: 'Soba ne postoji' });
-    if (id.length > 64) return kraj(res, 400, { greska: 'Loš ID' });
+    if (tajni.length > 64) return kraj(res, 400, { greska: 'Loš ID' });
+    const id = javniId(tajni);
     res.writeHead(200, { 'Content-Type': 'text/event-stream', 'Cache-Control': 'no-cache', Connection: 'keep-alive', 'X-Accel-Buffering': 'no' });
     res.write('retry: 1500\n\n');
     const t = { res, id };
     if (!tokovi.has(soba.kod)) tokovi.set(soba.kod, new Set());
     tokovi.get(soba.kod).add(t);
-    const igrac = soba.igraci.has(id);
-    if (igrac) soba.povezan(id, true);
+    soba.povezan(id, brojVeza(soba.kod, id));
     posalji(res, soba.pogled(id));
     const puls = setInterval(() => { try { res.write(': puls\n\n'); } catch {} }, 15000);
     req.on('close', () => {
       clearInterval(puls);
       tokovi.get(soba.kod)?.delete(t);
-      if (igrac) soba.povezan(id, false);
+      // soba je možda u međuvremenu obrisana (ili je pod istim kodom napravljena nova)
+      if (sobe.get(soba.kod) === soba) soba.povezan(id, brojVeza(soba.kod, id));
     });
     return;
   }
 
   if (p === '/api/stanje') {
     const soba = sobe.get((url.searchParams.get('soba') || '').toUpperCase());
-    const id = url.searchParams.get('igrac') || '';
+    const tajni = url.searchParams.get('igrac') || '';
     if (!soba) return kraj(res, previse(req, 'nema', LIMIT_NEMA, 60e3) ? 429 : 404, { greska: 'Soba ne postoji' });
-    if (id.length > 64) return kraj(res, 400, { greska: 'Loš ID' });
+    if (tajni.length > 64) return kraj(res, 400, { greska: 'Loš ID' });
+    const id = javniId(tajni);
     soba.vidjen(id);
     const v = +(url.searchParams.get('v') ?? -1);
     if (v < soba.verzija) return kraj(res, 200, soba.pogled(id));
@@ -183,7 +205,8 @@ async function obradi(req, res) {
   if (p === '/api/kvizovi') { kvizovi.ucitajSve(); return kraj(res, 200, kvizovi.spisak()); }
   // na javnom serveru (production) porodična statistika se ne izlaže strancima
   if (p === '/api/statistika') return kraj(res, 200, process.env.NODE_ENV === 'production' && !process.env.JAVNA_STATISTIKA ? { igraci: {}, igre: [] } : statistika.citaj());
-  if (p === '/api/info') return kraj(res, 200, { adrese: lanAdrese(), port: PORT, reci: brojReci });
+  // adrese računara trebaju samo u kućnoj mreži (lobi ih ispisuje za telefone); javni server ih ne otkriva
+  if (p === '/api/info') return kraj(res, 200, { adrese: process.env.NODE_ENV === 'production' ? [] : lanAdrese(), port: PORT, reci: brojReci });
 
   // ───── urednik pitanja: predlozi izmena → pull request na GitHub-u (lib/predlozi.js) ─────
   if (p === '/api/predlog/info') return kraj(res, 200, { ukljuceno: predlozi.ukljuceno(), repo: predlozi.REPO });
@@ -201,15 +224,19 @@ async function obradi(req, res) {
     }
   }
   if (p === '/api/predlog/stanje') {
-    const brojevi = (url.searchParams.get('brojevi') || '').split(',').map(Number).filter((n) => Number.isInteger(n) && n > 0);
+    // svaki nepoznat broj je jedan poziv GitHub-u sa robotovog naloga – ne dati da se limit potroši spolja
+    if (previse(req, 'stanje', LIMIT_STANJA, 60e3)) return kraj(res, 429, { greska: 'Previše zahteva. Pokušaj za minut.' });
+    const brojevi = (url.searchParams.get('brojevi') || '').slice(0, 400).split(',').map(Number).filter((n) => Number.isSafeInteger(n) && n > 0);
     try { return kraj(res, 200, await predlozi.stanje(brojevi)); } catch (e) { return kraj(res, e.kod || 502, { greska: e.message }); }
   }
   if (p === '/urednik') return staticki(res, JAVNO, '/urednik.html', { 'X-Robots-Tag': 'noindex' });
 
   if (p === '/api/akcija' && req.method === 'POST') {
     const b = await citajTelo(req);
-    const id = String(b.igrac || '');
-    if (!id || id.length > 64) return kraj(res, 400, { greska: 'Loš ID igrača' });
+    const tajni = typeof b.igrac === 'string' ? b.igrac : '';
+    // prekratak id bi mogao da se pogodi; klijent pravi nasumičan od 32 znaka
+    if (tajni.length < 8 || tajni.length > 64) return kraj(res, 400, { greska: 'Loš ID igrača' });
+    const id = javniId(tajni);
     if (b.tip === 'nova-soba') {
       if (previse(req, 'soba', LIMIT_SOBA, 60e3)) return kraj(res, 429, { greska: 'Previše novih soba. Pokušaj za minut.' });
       const kod = novKod();
@@ -243,11 +270,11 @@ async function obradi(req, res) {
         if (b.tip === 'podesavanja') soba.postavi(b.podesavanja || {});
         else if (b.tip === 'pokreni') {
           kvizovi.ucitajSve(); // pokupi nove kvizove bez restartovanja servera
-          soba.pokreni();
-        } else if (b.tip === 'dalje') soba.dalje();
+          if (!soba.pokreni()) return kraj(res, 409, { greska: 'Za ovaj izbor nema pitanja. Izaberi drugi kviz.' });
+        } else if (b.tip === 'dalje') soba.dalje(typeof b.faza === 'string' ? b.faza : undefined);
         else if (b.tip === 'lobi') soba.uLobi();
         else if (b.tip === 'izbaci') soba.izbaci(String(b.koga));
-        else if (b.tip === 'vodja' && soba.igraci.has(b.koga)) { soba.domacin = b.koga; soba.promena(); }
+        else if (b.tip === 'vodja' && typeof b.koga === 'string' && soba.igraci.has(b.koga)) { soba.domacin = b.koga; soba.promena(); }
     }
     return kraj(res, 200, { ok: true });
   }

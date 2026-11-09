@@ -13,7 +13,16 @@ const ls = {
   get: (k, d) => { try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch { return d; } },
   set: (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} },
 };
-const ja = ls.get('ja', null) || { id: (EKRAN ? 'tv-' : 'p-') + Math.random().toString(36).slice(2, 10), ime: '', avatar: AVATARI[Math.floor(Math.random() * 12)] };
+// ja.id je TAJNI ključ ovog uređaja (šalje se samo serveru); ostali igrači vide javni id koji server izvodi iz njega (V.ja)
+function noviId() {
+  try { return 'p-' + Array.from(crypto.getRandomValues(new Uint8Array(15)), (b) => b.toString(16).padStart(2, '0')).join(''); } catch {}
+  return 'p-' + Math.random().toString(36).slice(2, 12) + Math.random().toString(36).slice(2, 12);
+}
+let ja = ls.get('ja', null);
+if (!ja || typeof ja !== 'object' || typeof ja.id !== 'string' || ja.id.length < 8 || ja.id.length > 60)
+  ja = { id: noviId(), ime: typeof ja?.ime === 'string' ? ja.ime : '', avatar: AVATARI[Math.floor(Math.random() * 12)] };
+if (typeof ja.ime !== 'string') ja.ime = '';
+if (typeof ja.avatar !== 'string') ja.avatar = AVATARI[0];
 if (EKRAN && !ja.id.startsWith('tv-')) ja.id = 'tv-' + ja.id;
 const sacuvajJa = () => { if (!EKRAN) ls.set('ja', ja); };
 
@@ -46,7 +55,7 @@ const _confirm = window.confirm.bind(window);
 window.confirm = (t) => _confirm(tr(t));
 function postaviPismo(p, crtajPonovo = true) {
   p = p === 'latinica' ? 'latinica' : 'cirilica';
-  document.title = p === 'cirilica' ? 'Сквиз – породични квиз знања | Skviz kviz' : 'Skviz – porodični kviz znanja | Сквиз';
+  document.title = p === 'cirilica' ? 'Сквиз – школски квиз знања | Skviz kviz' : 'Skviz – školski kviz znanja | Сквиз';
   if (p === PISMO) return;
   PISMO = p;
   ls.set('pismo', p);
@@ -81,7 +90,7 @@ function mat(t) {
 const slovo = (c) => (PISMO === 'cirilica' ? c : LAT[c] ?? c);
 const rec = (r) => [...(r || '')].map(slovo).join('');
 const igrac = (id) => V?.igraci.find((x) => x.id === id);
-const jaDomacin = () => V && V.domacin === ja.id;
+const jaDomacin = () => !!V && !!V.ja && V.domacin === V.ja;
 const sada = () => Date.now() + pomak;
 
 function poruka(t, ms = 2200) {
@@ -119,7 +128,7 @@ function primi(v) {
   const staro = V;
   V = v;
   if (v.podesavanja?.pismo && v.podesavanja.pismo !== PISMO) { postaviPismo(v.podesavanja.pismo, false); kljucEkrana = ''; }
-  if (!EKRAN && !v.igraci.some((x) => x.id === ja.id)) {
+  if (!EKRAN && !v.igraci.some((x) => x.id === v.ja)) {
     // izbačen ili soba nova – vrati na početak
     if (staro) { prekiniVezu(); V = null; ls.set('soba', ''); poruka('Nisi više u sobi'); pocetna(); return; }
   }
@@ -137,7 +146,10 @@ async function anketa(kod, gen) {
       const r = await fetch(`/api/stanje?soba=${encodeURIComponent(kod)}&igrac=${encodeURIComponent(ja.id)}&v=${V && V.kod === kod ? V.verzija : -1}`, { cache: 'no-store' });
       if (gen !== generacija) return;
       if (r.status === 404) { prekiniVezu(); V = null; ls.set('soba', ''); poruka('Soba više ne postoji'); return pocetna(); }
-      primi(await r.json());
+      if (!r.ok) { await new Promise((ok) => setTimeout(ok, r.status === 429 ? 5000 : 1500)); continue; }
+      const v = await r.json();
+      if (gen !== generacija) return;
+      primi(v);
     } catch { await new Promise((ok) => setTimeout(ok, 1500)); }
   }
 }
@@ -149,9 +161,11 @@ function povezi(kod) {
   if (nacin === 'poll') return anketa(kod, gen);
   let stiglo = false;
   izvor = new EventSource(`/api/dogadjaji?soba=${encodeURIComponent(kod)}&igrac=${encodeURIComponent(ja.id)}`);
-  izvor.onmessage = (e) => { stiglo = true; primi(JSON.parse(e.data)); };
+  izvor.onmessage = (e) => { if (gen !== generacija) return; stiglo = true; primi(JSON.parse(e.data)); };
   izvor.onerror = async () => {
-    const r = await fetch(`/api/stanje?soba=${kod}&igrac=x&v=999999999`, { method: 'HEAD' }).catch(() => null);
+    // v=-1: server odgovara odmah (ne drži zahtev otvoren kao kod long-pollinga)
+    const r = await fetch(`/api/stanje?soba=${encodeURIComponent(kod)}&igrac=x&v=-1`, { method: 'HEAD', cache: 'no-store' }).catch(() => null);
+    if (gen !== generacija) return;
     if (r && r.status === 404) { prekiniVezu(); V = null; ls.set('soba', ''); poruka('Soba više ne postoji'); pocetna(); }
   };
   // ako za 3 s ne stigne ništa preko SSE-a, prelazimo na long-polling
@@ -190,7 +204,8 @@ function crtaj(staro) {
 }
 
 // ───────────────────────── početna ─────────────────────────
-async function pocetna() {
+let linkIskoriscen = false; // kod sobe iz adrese (/ekran?soba=ABCD) koristi se samo jednom – inače mrtva soba vrti u krug
+function pocetna() {
   ocisti();
   kljucEkrana = '';
   $('.meni-dugme')?.remove();
@@ -202,26 +217,23 @@ async function pocetna() {
       <div style="height:12px"></div><button class="dugme zuto siroko" id="gledaj">Prikaži sobu</button></div>`;
     const kreni = () => { const k = kodSobe($('#kod').value); if (k.length === 4) povezi(k); };
     $('#gledaj').onclick = kreni;
-    if (kodIzLinka) kreni();
+    if (kodIzLinka && !linkIskoriscen) { linkIskoriscen = true; kreni(); }
     return;
   }
   prikaziOIgri(true);
-  let poznati = [];
-  try { poznati = Object.values((await (await fetch('/api/statistika')).json()).igraci || {}); } catch {}
   app.innerHTML = `
     <h1 class="naslov-igre"><img class="logo" src="/logo.svg" alt="Сквиз"></h1>
-    <div class="podnaslov">Porodični kviz znanja 🦉</div>
+    <div class="podnaslov">Školski kviz znanja 🦉</div>
     <div class="izbor pismo-izbor">${['cirilica', 'latinica'].map((p) => `<button data-pismo="${p}" class="${PISMO === p ? 'izabran' : ''}" ${p === 'latinica' ? 'data-lat' : ''}>${p === 'cirilica' ? 'Ćirilica' : 'Latinica'}</button>`).join('')}</div>
     <div class="kartica">
       <label class="sitno">Kako se zoveš?</label>
       <input class="polje" id="ime" maxlength="16" value="${esc(ja.ime)}" placeholder="Ime" autocomplete="off">
-      ${poznati.length ? `<div class="cipovi">${poznati.map((p) => `<button class="cip" data-ime="${esc(p.ime)}" data-av="${esc(p.avatar)}">${esc(p.avatar)} ${esc(p.ime)}</button>`).join('')}</div>` : ''}
       <div class="avatari">${AVATARI.map((a) => `<button data-a="${a}" class="${a === ja.avatar ? 'izabran' : ''}">${a}</button>`).join('')}</div>
     </div>
     <div class="kartica">
       <button class="dugme zuto siroko" id="nova">🎲 Napravi sobu</button>
       <div class="centar sitno" style="margin:12px 0">ili uđi u postojeću</div>
-      <div class="red"><input class="polje kod" id="kod" maxlength="4" placeholder="KOD" value="${esc(kodIzLinka)}" style="flex:1">
+      <div class="red"><input class="polje kod" id="kod" maxlength="4" placeholder="KOD" value="${esc(kodIzLinka || ls.get('soba', ''))}" style="flex:1">
       <button class="dugme" id="udji">Uđi</button></div>
     </div>
     <div class="centar sitno">Igra se može igrati i sam – napravi sobu i pokreni.<br>TV / računar kao veliki ekran: <b data-lat>${location.host}/ekran</b></div>
@@ -234,10 +246,16 @@ async function pocetna() {
     app.querySelectorAll('.avatari button').forEach((x) => x.classList.toggle('izabran', x === b));
     Zvuk.efekat('klik');
   }));
-  app.querySelectorAll('.cip').forEach((b) => (b.onclick = () => {
-    ime.value = b.dataset.ime; ja.avatar = b.dataset.av;
-    app.querySelectorAll('.avatari button').forEach((x) => x.classList.toggle('izabran', x.dataset.a === ja.avatar));
-  }));
+  // poznati igrači (porodična statistika) – stižu naknadno, da početni ekran ne čeka server
+  fetch('/api/statistika').then((r) => r.json()).then((st) => {
+    const poznati = Object.values(st.igraci || {}).filter((p) => p && typeof p.ime === 'string');
+    if (!poznati.length || !ime.isConnected || $('.cipovi')) return;
+    ime.insertAdjacentHTML('afterend', `<div class="cipovi">${poznati.map((p) => `<button class="cip" data-ime="${esc(p.ime)}" data-av="${esc(p.avatar)}">${esc(p.avatar)} ${esc(p.ime)}</button>`).join('')}</div>`);
+    app.querySelectorAll('.cip').forEach((b) => (b.onclick = () => {
+      ime.value = b.dataset.ime; ja.avatar = b.dataset.av;
+      app.querySelectorAll('.avatari button').forEach((x) => x.classList.toggle('izabran', x.dataset.a === ja.avatar));
+    }));
+  }).catch(() => {});
   const proveri = () => {
     Zvuk.otkljucaj();
     ja.ime = ime.value.trim();
@@ -288,7 +306,7 @@ function meniDugme() {
     m.className = 'meni';
     const stavke = [[Zvuk.tiho ? '🔊 Uključi zvuk' : '🔇 Isključi zvuk', () => (Zvuk.tiho = !Zvuk.tiho)]];
     if (jaDomacin() && V.faza !== 'lobi') stavke.push(['⏹ Prekini igru (nazad u sobu)', () => confirm('Prekinuti igru?') && akcija('lobi')]);
-    if (jaDomacin() && V.faza === 'pitanje') stavke.push(['⏭ Završi pitanje sad', () => akcija('dalje')]);
+    if (jaDomacin() && V.faza === 'pitanje') stavke.push(['⏭ Završi pitanje sad', () => akcija('dalje', { faza: V.faza })]);
     if (!EKRAN) stavke.push(['🚪 Izađi iz sobe', async () => { if (!confirm('Izaći iz sobe?')) return; await akcija('izadji'); prekiniVezu(); V = null; ls.set('soba', ''); pocetna(); }]);
     stavke.forEach(([t, f]) => { const x = document.createElement('button'); x.textContent = t; x.onclick = () => { m.remove(); f(); }; m.appendChild(x); });
     document.body.appendChild(m);
@@ -306,11 +324,11 @@ function donjaTraka(html) {
 function dugmeDalje(natpis = 'Dalje ➜') {
   if (!jaDomacin()) { donjaTraka(EKRAN ? '' : '<div class="cekanje">Vođa igre nastavlja<span class="tackice"></span></div>'); return; }
   const d = donjaTraka(`<button class="dugme zuto" id="dalje">${natpis}</button>`);
-  $('#dalje', d).onclick = () => { Zvuk.efekat('klik'); akcija('dalje'); };
+  $('#dalje', d).onclick = () => { Zvuk.efekat('klik'); akcija('dalje', { faza: V.faza }); };
 }
 
 function avatarHTML(x, dodatak = '') {
-  return `<div class="igrac ${x.povezan ? '' : 'odsutan'}" data-id="${x.id}">${x.id === V.domacin ? '<span class="kruna">👑</span>' : ''}
+  return `<div class="igrac ${x.povezan ? '' : 'odsutan'}" data-id="${esc(x.id)}">${x.id === V.domacin ? '<span class="kruna">👑</span>' : ''}
     <div class="av" style="border-color:${x.boja}">${esc(x.avatar)}</div><div class="ime">${esc(x.ime)}</div>${dodatak}</div>`;
 }
 
@@ -325,14 +343,14 @@ function koJeOdgovorio(spisak, rec = 'odgovorilo') {
   const n = V.igraci.filter((x) => spisak.includes(x.id)).length;
   const cekamo = V.igraci.filter((x) => !spisak.includes(x.id) && x.povezan);
   return `<div class="napredak"><div class="napredak-traka"><i style="width:${(100 * n) / V.igraci.length}%"></i></div><span><b>${n}</b> / ${V.igraci.length} ${rec}</span></div>
-    <div class="mini-igraci">${V.igraci.map((x) => `<span class="mini ${spisak.includes(x.id) ? 'gotov' : ''} ${x.povezan ? '' : 'odsutan'} ${x.id === ja.id ? 'ja' : ''}" title="${esc(x.ime)}" style="border-color:${x.boja}">${esc(x.avatar)}</span>`).join('')}</div>
+    <div class="mini-igraci">${V.igraci.map((x) => `<span class="mini ${spisak.includes(x.id) ? 'gotov' : ''} ${x.povezan ? '' : 'odsutan'} ${x.id === V.ja ? 'ja' : ''}" title="${esc(x.ime)}" style="border-color:${x.boja}">${esc(x.avatar)}</span>`).join('')}</div>
     ${cekamo.length && cekamo.length <= 6 && n ? `<div class="sitno centar">Čekamo: ${cekamo.map((x) => esc(x.ime)).join(', ')}</div>` : ''}`;
 }
 
 // u sažetom prikazu: prvih `limit` redova + moj red (ako nisam među njima) + „i još N“
 function skratiListu(lista, red, limit = EKRAN ? 10 : 5) {
   if (!mnogo() || lista.length <= limit + 1) return lista.map(red).join('');
-  const moj = lista.findIndex((x) => x.id === ja.id);
+  const moj = lista.findIndex((x) => x.id === V.ja);
   let html = lista.slice(0, limit).map(red).join('');
   if (moj >= limit) html += '<div class="razmak">⋯</div>' + red(lista[moj], moj);
   const ostalo = lista.length - limit - (moj >= limit ? 1 : 0);
@@ -344,9 +362,11 @@ const mesto = (i) => (mnogo() ? `<b class="rb">${i + 1}.</b>` : '');
 // ───────────────────────── lobi ─────────────────────────
 async function ekranLobi(nov) {
   if (nov) {
-    if (!kvizovi.length) try { kvizovi = await (await fetch('/api/kvizovi')).json(); } catch {}
+    if (!kvizovi.length) try { const k = await (await fetch('/api/kvizovi')).json(); if (Array.isArray(k)) kvizovi = k; } catch {}
     let info = { adrese: [location.hostname], port: location.port };
-    try { info = await (await fetch('/api/info')).json(); } catch {}
+    try { const i = await (await fetch('/api/info')).json(); if (Array.isArray(i.adrese)) info = i; } catch {}
+    // dok smo čekali server, igra je možda krenula ili smo izašli iz sobe
+    if (!V || V.faza !== 'lobi' || kljucEkrana !== 'lobi') return;
     // preko tunela (javna adresa) prikaži nju, a u kućnoj mreži IP adresu računara
     const lokalno = /^(localhost|127\.|\d+\.\d+\.\d+\.\d+$)/.test(location.hostname);
     const adresa = lokalno ? `http://${info.adrese[0] || location.hostname}:${info.port}` : location.origin;
@@ -367,7 +387,7 @@ async function ekranLobi(nov) {
   $('#broj-igraca').textContent = V.igraci.length > 1 ? `${V.igraci.length} / 40 igrača` : '';
   if (jaDomacin()) {
     app.querySelectorAll('#igraci .igrac').forEach((el) => {
-      if (el.dataset.id === ja.id) return;
+      if (el.dataset.id === V.ja) return;
       el.onclick = () => { if (confirm('Izbaciti igrača?')) akcija('izbaci', { koga: el.dataset.id }); };
     });
   }
@@ -580,7 +600,7 @@ function zaglavljePitanja(P) {
 
 // rezultat igrača, „Da li si znao?“ i poeni svih igrača – zajedničko za sve vrste pitanja
 function otkrivanjePitanja(P, naslov) {
-  const moj = V.dobitak[ja.id];
+  const moj = V.dobitak[V.ja];
   let rez = '';
   if (moj && !EKRAN) {
     if (moj.tacno) {
@@ -599,7 +619,7 @@ function otkrivanjePitanja(P, naslov) {
   const brzi = tacniLista[0];
   const poeni = V.igraci.length > 1 || EKRAN ? `<div class="kartica"><div class="lista-poena">${skratiListu([...V.igraci].sort((a, b) => b.poeni - a.poeni), (x, i) => {
     const d = V.dobitak[x.id] || {};
-    return `<div class="st ${x.id === ja.id ? 'ja' : ''}" style="animation-delay:${0.1 * Math.min(i, 8)}s">${mesto(i)}<span style="font-size:1.4em">${esc(x.avatar)}</span><b>${esc(x.ime)}</b>
+    return `<div class="st ${x.id === V.ja ? 'ja' : ''}" style="animation-delay:${0.1 * Math.min(i, 8)}s">${mesto(i)}<span style="font-size:1.4em">${esc(x.avatar)}</span><b>${esc(x.ime)}</b>
       ${d.poeni > 0 ? `<span class="plus">+${d.poeni + (d.bonus || 0)}</span>${d.od ? ` <span class="sitno">${d.pogodjeno}/${d.od}</span>` : ''}${x === brzi && tacniLista.length > 1 ? ' ⚡' : ''}` : '<span class="sitno">—</span>'}<span class="p">${x.poeni}</span></div>`;
   })}</div></div>` : '';
   return `${rez}
@@ -825,13 +845,13 @@ function ekranTabela(nov) {
     <div class="tabela ${gusto ? 'gusto' : ''}" style="height:${T.sada.length * visina}px">${T.sada.map((r) => {
       const x = igrac(r.id); if (!x) return '';
       const i0 = prePoz[r.id] ?? T.sada.length;
-      return `<div class="red-t${r.id === ja.id ? ' ja' : ''}" data-id="${r.id}" style="top:${i0 * visina}px"><span class="traka-p" style="width:${(100 * (prePoeni[r.id] || 0)) / max}%;background:${x.boja}"></span>
+      return `<div class="red-t${r.id === V.ja ? ' ja' : ''}" data-id="${esc(r.id)}" style="top:${i0 * visina}px"><span class="traka-p" style="width:${(100 * (prePoeni[r.id] || 0)) / max}%;background:${x.boja}"></span>
         <span class="mesto">${i0 + 1}.</span><span class="av">${esc(x.avatar)}</span><span class="nm">${esc(x.ime)}</span><span class="strelica"></span><span class="pp">${prePoeni[r.id] || 0}</span></div>`;
     }).join('')}</div>`;
   Zvuk.efekat('bubanj');
   setTimeout(() => {
     T.sada.forEach((r, i) => {
-      const el = app.querySelector(`.red-t[data-id="${r.id}"]`);
+      const el = [...app.querySelectorAll('.red-t')].find((x) => x.dataset.id === r.id);
       if (!el) return;
       el.style.top = i * visina + 'px';
       $('.traka-p', el).style.width = (100 * r.poeni) / max + '%';
@@ -903,7 +923,7 @@ function ekranReci(nov, staro) {
     if (!EKRAN) {
       $('#najbolja').textContent = R.mojaNajbolja ? `${rec(R.mojaNajbolja)} (${[...R.mojaNajbolja].length})` : '—';
       $('#pokusaji').innerHTML = R.moji.map((p) => `<div class="pokusaj ${p.ok ? 'ok' : 'ne'}"><span>${esc(rec(p.rec))}</span><small>${esc(p.poruka)}</small></div>`).join('');
-      const gotov = R.gotovi.includes(ja.id);
+      const gotov = R.gotovi.includes(V.ja);
       const d = donjaTraka(gotov ? '<div class="cekanje">Čekamo ostale<span class="tackice"></span></div>' : '<button class="dugme zuto" id="gotov">Gotov sam ✋</button>');
       if (!gotov) $('#gotov', d).onclick = () => { if (!R.mojaNajbolja && !confirm('Još nemaš nijednu ispravnu reč. Završiti?')) return; akcija('gotov'); };
     } else {
@@ -919,7 +939,7 @@ function ekranReci(nov, staro) {
     app.querySelectorAll('.slovo').forEach((b) => (b.onclick = null));
     const N = R.najbolje;
     const redosled = [...V.igraci].sort((a, b) => [...(V.dobitak[b.id]?.rec || '')].length - [...(V.dobitak[a.id]?.rec || '')].length);
-    const moj = V.dobitak[ja.id];
+    const moj = V.dobitak[V.ja];
     if (moj && !EKRAN) {
       if (moj.rec) Zvuk.efekat('tacno'); else Zvuk.efekat('netacno');
       if (moj.oznaka === 'Savršeno!') konfete(80);
@@ -928,7 +948,7 @@ function ekranReci(nov, staro) {
       ${moj && !EKRAN ? `<div class="rezultat ${moj.rec ? 'dobro' : 'lose'}">${moj.rec ? `+${moj.poeni + moj.bonus}${moj.oznaka ? ' · ' + moj.oznaka : ''}` : 'Bez reči 😕'}</div>` : ''}
       <div class="kartica"><div class="lista-poena">${skratiListu(redosled, (x, i) => {
         const d = V.dobitak[x.id] || {};
-        return `<div class="st ${x.id === ja.id ? 'ja' : ''}" style="animation-delay:${0.15 * Math.min(i, 8)}s">${mesto(i)}<span style="font-size:1.4em">${esc(x.avatar)}</span><div><b>${esc(x.ime)}</b><div class="najbolja-rec" style="font-size:1.15em">${d.rec ? esc(rec(d.rec)) + ` <span class="sitno">(${[...d.rec].length})</span>` : '<span class="sitno">—</span>'}</div></div>
+        return `<div class="st ${x.id === V.ja ? 'ja' : ''}" style="animation-delay:${0.15 * Math.min(i, 8)}s">${mesto(i)}<span style="font-size:1.4em">${esc(x.avatar)}</span><div><b>${esc(x.ime)}</b><div class="najbolja-rec" style="font-size:1.15em">${d.rec ? esc(rec(d.rec)) + ` <span class="sitno">(${[...d.rec].length})</span>` : '<span class="sitno">—</span>'}</div></div>
           <span class="p">${d.rec ? `<span class="plus">+${d.poeni + d.bonus}</span>` : ''}${d.oznaka ? `<div class="sitno">${d.oznaka}</div>` : ''}</span></div>`;
       })}</div></div>
       ${R.kljuc ? `<div class="kartica pojam"><h3>🔁 Pojam iz kviza: <span class="najbolja-rec">${esc(rec(R.kljuc.rec))}</span></h3>
@@ -956,7 +976,7 @@ function ekranKraj(nov) {
     const stub = (x, m) => x ? `<div class="stub m${m}"><div class="lice">${esc(x.avatar)}</div><div class="ime">${esc(x.ime)}</div><div class="poeni">${x.poeni}</div><div class="blok">${m}</div></div>` : '<div class="stub"></div>';
     app.innerHTML = `<h1 class="centar" style="animation:uskok .8s">${R.length > 1 ? '🎉 Pobednik!' : '🎉 Kraj igre!'}</h1>
       <div class="podijum">${stub(p2, 2)}${stub(p1, 1)}${stub(p3, 3)}</div>
-      ${R.length > 3 ? `<div class="kartica"><div class="lista-poena">${skratiListu(R.slice(3), (x, i) => `<div class="st ${x.id === ja.id ? 'ja' : ''}"><b>${i + 4}.</b> ${esc(x.avatar)} ${esc(x.ime)}<span class="p">${x.poeni}</span></div>`, EKRAN ? 12 : 7)}</div></div>` : ''}
+      ${R.length > 3 ? `<div class="kartica"><div class="lista-poena">${skratiListu(R.slice(3), (x, i) => `<div class="st ${x.id === V.ja ? 'ja' : ''}"><b>${i + 4}.</b> ${esc(x.avatar)} ${esc(x.ime)}<span class="p">${x.poeni}</span></div>`, EKRAN ? 12 : 7)}</div></div>` : ''}
       <div class="kartica centar sitno">Rezultati su upisani u porodičnu tablu slavnih 🏆</div>`;
     Zvuk.efekat('bubanj');
     setTimeout(() => { Zvuk.efekat('fanfare'); konfete(200); }, 2000);
@@ -1002,14 +1022,14 @@ document.addEventListener('visibilitychange', () => {
 });
 (async () => {
   postaviPismo(PISMO, false); // naslov kartice
-  fetch('/api/kvizovi').then((r) => r.json()).then((k) => (kvizovi = k)).catch(() => {});
+  fetch('/api/kvizovi').then((r) => r.json()).then((k) => { if (Array.isArray(k)) kvizovi = k; }).catch(() => {});
   const qs = new URLSearchParams(location.search);
   const sacuvana = ls.get('soba', '');
   const kod = (qs.get('soba') || '').toUpperCase();
   if (!EKRAN && sacuvana && ja.ime && (!kod || kod === sacuvana)) {
     const r = await akcija('udji', { soba: sacuvana, ime: ja.ime, avatar: ja.avatar });
     if (r.kod) return povezi(r.kod);
-    ls.set('soba', '');
+    if (r.greska) ls.set('soba', '');
   }
   pocetna();
 })();

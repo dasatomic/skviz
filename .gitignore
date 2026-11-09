@@ -11,3 +11,5 @@ izvori/
 # lični podaci i stanje igre (imena igrača, istorija odigranih pitanja)
 podaci/statistika.json
 podaci/odigrana-pitanja.json
+# privremene datoteke bezbednog upisa (lib/upis.js)
+podaci/*.tmp

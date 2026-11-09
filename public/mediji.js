@@ -4,6 +4,9 @@
 'use strict';
 (() => {
 
+// tekst iz kviz.json koji ulazi u HTML (opis, oznake na mapi, formula) – uvek kao tekst, ne kao oznake
+const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+
 const Zvuk = (() => {
   let ctx = null;
   let ugaseno = false;
@@ -266,7 +269,7 @@ function prikaziMolekul(k, m) {
   const legenda = document.createElement('div');
   legenda.className = 'legenda';
   const elementi = [...new Set(at.map((a) => a.e))];
-  legenda.innerHTML = (m.formula && m.prikaziFormulu ? `<b class="formula-mala">${m.formula}</b>` : '') +
+  legenda.innerHTML = (m.formula && m.prikaziFormulu ? `<b class="formula-mala">${esc(m.formula)}</b>` : '') +
     (m.legenda === false ? '' : elementi.map((e) => `<span><i style="background:${ATOMI[e]?.boja || '#ccc'}"></i>${m.skrijImena ? `<span data-lat>${e}</span>` : ATOMI[e]?.ime || e}</span>`).join(''));
   k.appendChild(legenda);
   return okretanje(cv, (ax, ay) => {
@@ -640,7 +643,7 @@ async function prikaziMapu(k, m) {
   for (const t of m.tacke || []) {
     const [x, y] = px(t.lon, t.lat);
     svg += `<g class="pin"><circle cx="${x}" cy="${y}" r="${W / 55}" /><circle cx="${x}" cy="${y}" r="${W / 55}" class="talas"/>`;
-    if (t.oznaka) svg += `<text x="${x}" y="${y - W / 40}" text-anchor="middle">${t.oznaka}</text>`;
+    if (t.oznaka) svg += `<text x="${x}" y="${y - W / 40}" text-anchor="middle">${esc(t.oznaka)}</text>`;
     svg += '</g>';
   }
   k.insertAdjacentHTML('beforeend', svg + '</svg>');
@@ -703,8 +706,9 @@ function prikaziMelodiju(k, m, auto) {
     vis.appendChild(n);
     setTimeout(() => n.remove(), 1600);
   }));
-  if (auto) setTimeout(d.pusti, 400);
-  return d.stop;
+  // automatsko puštanje se otkazuje ako se ekran promeni pre nego što krene
+  const odlozeno = auto ? setTimeout(d.pusti, 400) : null;
+  return () => { clearTimeout(odlozeno); d.stop(); };
 }
 
 function prikaziMorze(k, m, auto) {
@@ -713,8 +717,9 @@ function prikaziMorze(k, m, auto) {
     const s = vis.firstChild;
     return Zvuk.morze(m.tekst, (on) => s.classList.toggle('upaljeno', on));
   });
-  if (auto) setTimeout(d.pusti, 400);
-  return d.stop;
+  // automatsko puštanje se otkazuje ako se ekran promeni pre nego što krene
+  const odlozeno = auto ? setTimeout(d.pusti, 400) : null;
+  return () => { clearTimeout(odlozeno); d.stop(); };
 }
 
 function prikaziSliku(k, m, auto, paket) {
@@ -729,11 +734,29 @@ function prikaziSliku(k, m, auto, paket) {
   return () => {};
 }
 
+// SVG crtež iz kviz.json (pitanja predlažu i ljudi spolja, preko urednika): propuštaju se samo crtački
+// elementi – bez skripti, obrada događaja (onload…), ugrađenih stranica i spoljnih veza
+const SVG_ELEMENTI = new Set(['svg', 'g', 'path', 'polygon', 'polyline', 'line', 'rect', 'circle', 'ellipse', 'text', 'tspan', 'defs', 'marker',
+  'lineargradient', 'radialgradient', 'stop', 'clippath', 'mask', 'pattern', 'symbol', 'use', 'title', 'desc']);
+function bezbedanSVG(kod) {
+  const t = document.createElement('template'); // sadržaj šablona je „mrtav“ dok se ne ubaci u stranicu
+  t.innerHTML = typeof kod === 'string' ? kod : '';
+  for (const el of [...t.content.querySelectorAll('*')]) {
+    if (!SVG_ELEMENTI.has(el.localName.toLowerCase())) { el.remove(); continue; }
+    for (const a of [...el.attributes]) {
+      const ime = a.name.toLowerCase(), v = a.value.replace(/\s+/g, '');
+      const veza = ime === 'href' || ime.endsWith(':href') || ime === 'src';
+      if (ime.startsWith('on') || (veza && !v.startsWith('#')) || /javascript:/i.test(v) || /url\((?!['"]?#)/i.test(v)) el.removeAttribute(a.name);
+    }
+  }
+  return t.content;
+}
+
 function prikaziSVG(k, m, auto, paket) {
   if (m.src) return prikaziSliku(k, m, auto, paket);
   const d = document.createElement('div');
   d.className = 'medij-svg';
-  d.innerHTML = m.kod;
+  d.appendChild(bezbedanSVG(m.kod));
   k.appendChild(d);
   return () => {};
 }
@@ -756,16 +779,16 @@ const PRIKAZI = {
 // glavna funkcija: vraća funkciju za čišćenje
 function prikaziMedij(kontejner, m, { auto = false, paket = '' } = {}) {
   if (!m) return () => {};
-  const f = PRIKAZI[m.vrsta];
+  const f = Object.hasOwn(PRIKAZI, m.vrsta) ? PRIKAZI[m.vrsta] : null;
   if (!f) return () => {};
   kontejner.classList.add('medij', 'medij-' + m.vrsta);
   let ciscenje = () => {};
   try {
     const r = f(kontejner, m, auto, paket);
-    if (r && r.then) r.then((c) => (ciscenje = c || ciscenje));
+    if (r && r.then) r.then((c) => (ciscenje = c || ciscenje)).catch((e) => console.error(e));
     else if (typeof r === 'function') ciscenje = r;
   } catch (e) { console.error(e); }
-  if (m.opis) kontejner.insertAdjacentHTML('beforeend', `<div class="medij-opis">${m.opis}</div>`);
+  if (m.opis) kontejner.insertAdjacentHTML('beforeend', `<div class="medij-opis">${esc(m.opis)}</div>`);
   return () => ciscenje();
 }
 

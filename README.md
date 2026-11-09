@@ -1,6 +1,6 @@
 # 🦉 Skviz
 
-Porodični kviz znanja za igru preko telefona (u stilu Jackbox igara). Igra se na **https://skviz.rs**, a može se pokrenuti i kod kuće, u kućnoj mreži.
+Školski kviz znanja za igru preko telefona (u stilu Jackbox igara). Igra se na **https://skviz.rs**, a može se pokrenuti i kod kuće, u kućnoj mreži.
 
 ## Pokretanje
 

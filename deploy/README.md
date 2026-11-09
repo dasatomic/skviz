@@ -61,4 +61,4 @@ Ako token procuri, najviše što neko može je da otvara PR-ove i menja robotov 
 
 Prihvatanje predloga: na stranici PR-a „Merge pull request“, pa `git pull` i `./deploy/objavi.sh …`.
 Autor predloga vidi stanje („Čeka pregled / Prihvaćeno“) i komentare u uredniku pod „Moji predlozi“.
-Ograničenja: 10 predloga na sat po adresi, 100 dnevno ukupno (`LIMIT_PREDLOGA`, `LIMIT_PREDLOGA_DAN`).
+Ograničenja: 10 predloga na sat po adresi, 100 dnevno ukupno (`LIMIT_PREDLOGA`, `LIMIT_PREDLOGA_DAN`); provera stanja predloga („Moji predlozi“) 20 puta u minutu po adresi (`LIMIT_STANJA`).

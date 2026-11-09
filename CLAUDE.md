@@ -11,6 +11,7 @@ Ceo interfejs, pitanja i komentari u kodu su na **srpskom (latinica)**. Igrači 
 ## Struktura
 - `server.js` – HTTP + Server-Sent Events (`/api/dogadjaji`), akcije preko `POST /api/akcija`.
 - `lib/soba.js` – tok igre: lobi → uvod → pitanje/otkrivanje ×N → tabela → reči ×N → tabela → kraj.
+- ID igrača: telefon čuva **tajni** id (`ja.id` u localStorage) i šalje ga samo serveru; `server.js` iz njega izvodi **javni** id (`javniId`, HMAC) i samo taj ide u `Soba` i u stanje koje vide ostali. Klijent se prepoznaje po `V.ja` (ne po `ja.id`), a akcije nad drugima (`izbaci`, `vodja`) šalju javni id.
 - Pismo: podrazumevano ćirilica za ceo prikaz (`podesavanja.pismo`, na početnom ekranu izbor po uređaju). Kod i `kviz.json` ostaju na latinici – `public/app.js` preslovljava DOM u hodu (`tr`, `prevedi`, MutationObserver); izuzeci: `[data-lat]`, `.formula`, kod sobe, adresa, strane reči (q/w/x/y) i oznake sa ciframa (H2O).
 - Pravila preslovljavanja su u `public/pismo.js` (rimski brojevi, formule, jedinice, hemijski simboli, krvne grupe, strani navodi ostaju latinicom; izvorno pisani strani nazivi – igre, brendovi, naslovi, latinski nazivi vrsta – su u skupu `STRANE`, sa padežima i susednim rečima naziva: „Minecraftu“, „KPop Demon Hunters“, „Homo sapiens“); provera nad svim pitanjima: `node -e "require('./public/pismo.js').uCirilicu('…')"`.
 - Lobi vođe u dva koraka: predmet → razred/lekcija + podešavanja + „Pokreni“ (`korakLobija`).

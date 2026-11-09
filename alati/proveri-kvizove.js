@@ -42,7 +42,7 @@ for (const dir of fs.readdirSync(KOREN).sort()) {
       }
       if (p.odgovori) u(oz, 'spoji: „odgovori“ se ne koriste (samo „parovi“)');
     } else {
-      if (!Array.isArray(p.odgovori) || p.odgovori.length !== 4) g(oz, 'mora imati tačno 4 odgovora (prvi je tačan)');
+      if (!Array.isArray(p.odgovori) || p.odgovori.length !== 4 || p.odgovori.some((x) => typeof x !== 'string' || !x.trim())) g(oz, 'mora imati tačno 4 odgovora (prvi je tačan), svaki kao neprazan tekst');
       else if (new Set(p.odgovori.map((x) => x.trim().toLowerCase())).size !== 4) g(oz, 'odgovori se ponavljaju');
       if (p.vrsta === 'uljez' && !p.objasnjenje) u(oz, 'uljez: dodaj „objasnjenje“ – zašto je baš to uljez');
     }
@@ -77,9 +77,15 @@ for (const dir of fs.readdirSync(KOREN).sort()) {
     if (svaPitanja.has(kljuc)) u(oz, 'isto pitanje postoji i u ' + svaPitanja.get(kljuc));
     svaPitanja.set(kljuc, oz);
     const m = p.mediji;
-    if (m) {
+    if (m !== undefined && (!m || typeof m !== 'object' || Array.isArray(m))) g(oz, '„mediji“ mora biti objekat sa poljem „vrsta“');
+    else if (m) {
       if (!VRSTE.includes(m.vrsta)) g(oz, 'nepoznata vrsta medija: ' + m.vrsta);
-      if (m.src && !/^https?:/.test(m.src)) {
+      // SVG kôd se ubacuje u stranicu: skripte, obrade događaja i ugrađene stranice ne smeju u kviz
+      // (igra ih ionako uklanja pri crtanju – public/mediji.js → bezbedanSVG – ali predlog sa njima ne treba prihvatiti)
+      if (m.kod !== undefined && (typeof m.kod !== 'string' || /<\s*(script|iframe|object|embed|foreignObject|style|link|meta|a|image|animate|set)\b|\son[a-z]+\s*=|javascript:|data:text/i.test(m.kod)))
+        g(oz, 'svg: „kod“ sme da sadrži samo crtež (bez skripti, onload/onclick, stilova, veza i ugrađenih sadržaja)');
+      if (m.src !== undefined && typeof m.src !== 'string') g(oz, '„src“ mora biti tekst (putanja do slike)');
+      else if (m.src && !/^https?:/.test(m.src)) {
         const put = m.src.startsWith('/kvizovi/') ? path.join(KOREN, m.src.slice('/kvizovi/'.length)) : path.join(KOREN, dir, m.src);
         const baza = put.replace(/\.[^.]+$/, '');
         const postoji = fs.existsSync(put) || (fs.existsSync(path.dirname(put)) && fs.readdirSync(path.dirname(put)).some((x) => path.join(path.dirname(put), x).replace(/\.[^.]+$/, '') === baza));
