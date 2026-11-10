@@ -55,7 +55,7 @@ const _confirm = window.confirm.bind(window);
 window.confirm = (t) => _confirm(tr(t));
 function postaviPismo(p, crtajPonovo = true) {
   p = p === 'latinica' ? 'latinica' : 'cirilica';
-  document.title = p === 'cirilica' ? 'Сквиз – школски квиз знања | Skviz kviz' : 'Skviz – školski kviz znanja | Сквиз';
+  document.title = p === 'cirilica' ? 'Квиз' : 'Kviz';
   if (p === PISMO) return;
   PISMO = p;
   ls.set('pismo', p);
