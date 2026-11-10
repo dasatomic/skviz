@@ -285,7 +285,7 @@ function kontakt() {
     <div class="kartica centar">
       <h2>Kontakt</h2>
       <p>Pitanja, predlozi i greške – javi nam se na Discord kanalu:</p>
-      <a class="dugme zuto siroko" href="https://discord.gg/9sMYvbGZAr" target="_blank" rel="noopener">💬 Discord</a>
+      <a class="dugme zuto siroko" data-lat href="https://discord.gg/9sMYvbGZAr" target="_blank" rel="noopener">💬 Discord</a>
       <div class="sitno" style="margin-top:10px" data-lat>discord.gg/9sMYvbGZAr</div>
     </div>
     <div class="centar"><button class="dugme" id="nazad">⬅ Nazad</button></div>`;

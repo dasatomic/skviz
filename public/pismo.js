@@ -30,7 +30,7 @@
     'minecraft cuphead mugman chalice fortnite terraria creeper enderman ender end nether netherit redstone villagers notch ' +
     'pac bulbasaur nintendo jumpman ' +
     // brendovi, kompanije, studiji
-    'google microsoft apple ghibli pictures animation studios industrial light magic illumination amblin reese pieces ' +
+    'google discord microsoft apple ghibli pictures animation studios industrial light magic illumination amblin reese pieces ' +
     // filmovi, serije, pesme, likovi (izvorni nazivi)
     'stranger things thing finger hand hunters huntr kpop blackpink golden girls frozen trek bourne fight club hook ' +
     'eleven elder kettle dice ms miss cup coffee delicious course riddle dumbledore running hill that take it africa ' +
