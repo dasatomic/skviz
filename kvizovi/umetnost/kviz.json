@@ -1379,6 +1379,11 @@
     {
       "tezina": 2,
       "pitanje": "Koji španski slikar je poznat po „topljenim satovima“ na slici „Postojanost pamćenja“?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/dali-satovi.jpg",
+        "opis": "Slika je sasvim mala – samo 24 × 33 cm"
+      },
       "odgovori": [
         "Salvador Dali",
         "Pablo Pikaso",
@@ -1921,6 +1926,11 @@
     {
       "tezina": 3,
       "pitanje": "Koji slikar je naslikao „Gerniku“, sliku protiv rata?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/pikaso-gernika.jpg",
+        "opis": "Slika je široka skoro 8 metara, a naslikana je samo crnom, belom i sivom bojom"
+      },
       "odgovori": [
         "Pablo Pikaso",
         "Salvador Dali",
@@ -2280,11 +2290,20 @@
         "Realizam"
       ],
       "zanimljivost": "Nadrealisti (Dali, Magrit, Miro) slikali su nemoguće prizore. I u Beogradu je postojala jaka grupa nadrealista, sa Markom Ristićem i Kočom Popovićem.",
-      "rec": "nadrealizam"
+      "rec": "nadrealizam",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/magrit-sin.jpg",
+        "opis": "Rene Magrit, „Sin čovečji“ (1964) – nadrealisti slikaju obične predmete na neobičan način, kao u snu"
+      }
     },
     {
       "tezina": 3,
       "pitanje": "Koji belgijski nadrealista je naslikao lulu sa natpisom „Ovo nije lula“?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/magrit-lula.jpg"
+      },
       "odgovori": [
         "Rene Magrit",
         "Salvador Dali",
@@ -2292,7 +2311,12 @@
         "Huan Miro"
       ],
       "zanimljivost": "Magrit je hteo da pokaže da slika lule nije prava lula – ne možeš je napuniti duvanom! Poznat je i po čoveku sa jabukom ispred lica.",
-      "rec": "magrit"
+      "rec": "magrit",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/magrit.jpg",
+        "opis": "Rene Magrit pored jedne od svojih slika"
+      }
     },
     {
       "tezina": 3,

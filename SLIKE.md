@@ -9,6 +9,10 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 - umetnost/vorhol-merilin.jpg – https://en.wikipedia.org/wiki/Marilyn_Diptych
 - umetnost/polok-ritam.jpg – https://en.wikipedia.org/wiki/Autumn_Rhythm_(Number_30)
 - umetnost/polok-plavi.jpg – https://en.wikipedia.org/wiki/Blue_Poles
+- umetnost/pikaso-gernika.jpg – https://en.wikipedia.org/wiki/Guernica_(Picasso)
+- umetnost/dali-satovi.jpg – https://en.wikipedia.org/wiki/The_Persistence_of_Memory
+- umetnost/magrit-lula.jpg – https://en.wikipedia.org/wiki/The_Treachery_of_Images
+- umetnost/magrit-sin.jpg – https://en.wikipedia.org/wiki/The_Son_of_Man
 
 ## Spisak
 
@@ -378,6 +382,11 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | umetnost | vorhol-merilin.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Marilyn_Diptych) |
 | umetnost | polok-ritam.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Autumn_Rhythm_(Number_30)) |
 | umetnost | polok-plavi.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Blue_Poles) |
+| umetnost | pikaso-gernika.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Guernica_(Picasso)) |
+| umetnost | dali-satovi.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/The_Persistence_of_Memory) |
+| umetnost | magrit-lula.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/The_Treachery_of_Images) |
+| umetnost | magrit-sin.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/The_Son_of_Man) |
+| umetnost | magrit.jpg | Unknown authorUnknown author | CC0 | [izvor](https://en.wikipedia.org/wiki/Ren%C3%A9_Magritte) |
 | zabava | ortega.jpg | Harald Krichel | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Jenna_Ortega) |
 | zabava | barton.jpg | Harald Krichel | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Tim_Burton) |
 | zabava | violoncelo.png | Georg Feitscher | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Cello) |
