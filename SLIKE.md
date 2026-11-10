@@ -323,3 +323,62 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | umetnost | mondrijan.jpg | Piet Mondrian | Public domain | [izvor](https://commons.wikimedia.org/wiki/File%3APiet%20Mondriaan%2C%201930%20-%20Mondrian%20Composition%20II%20in%20Red%2C%20Blue%2C%20and%20Yellow.jpg) |
 | umetnost | fallingwater.jpg | lachrimae72 | CC0 | [izvor](https://en.wikipedia.org/wiki/Fallingwater) |
 | umetnost | pijeta.jpg | original file by Stanislav Traykov | CC BY 2.5 | [izvor](https://en.wikipedia.org/wiki/Piet%C3%A0_(Michelangelo)) |
+| zabava | ortega.jpg | Harald Krichel | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Jenna_Ortega) |
+| zabava | barton.jpg | Harald Krichel | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Tim_Burton) |
+| zabava | violoncelo.png | Georg Feitscher | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Cello) |
+| zabava | po.jpg | Unknown authorUnknown author; Restored by Yann Forget and Adam Cuerden | Public domain | [izvor](https://en.wikipedia.org/wiki/Edgar_Allan_Poe) |
+| zabava | snezna-sova.jpg | Chuck Homler d/b/a Focus On Wildlife | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Snowy_owl) |
+| zabava | mandragora.jpg | H. Zell | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Mandragora_officinarum) |
+| zabava | rouling.jpg | Daniel Ogren | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/J._K._Rowling) |
+| zabava | tolkin.jpg | Unknown photo studio commissioned by Tolkien's students 1925/6 (private communic | Public domain | [izvor](https://en.wikipedia.org/wiki/J._R._R._Tolkien) |
+| zabava | redklif.jpg | Philip Romano | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Daniel_Radcliffe) |
+| zabava | hobiton.jpg | Harsh.gavhane | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Hobbiton_Movie_Set) |
+| zabava | ngauruhoe.jpg | Eusebius | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Mount_Ngauruhoe) |
+| zabava | lukas.jpg | Gage Skidmore | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/George_Lucas) |
+| zabava | spilberg.jpg | Martin Kraft | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Steven_Spielberg) |
+| zabava | ford.jpg | Kevin Paul | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Harrison_Ford) |
+| zabava | hamil.jpg | Kevin Paul | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Mark_Hamill) |
+| zabava | dzons.jpg | Kingkongphoto & www.celebrity-photos.com from Laurel | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/James_Earl_Jones) |
+| zabava | sidi-dris.jpg | Damien slattery Photographed by Colin Kenworthy | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Matmata%2C_Tunisia) |
+| zabava | opsidijan.jpg | Ji-Elle It feels nice and warm It feels like a love storm | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Obsidian) |
+| zabava | tetromino.png | Anypodetos | Public domain | [izvor](https://en.wikipedia.org/wiki/Tetromino) |
+| zabava | pazitnov.jpg | Official GDC | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Alexey_Pajitnov) |
+| zabava | dafer.png | Gage Skidmore | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/The_Duffer_Brothers) |
+| zabava | harbor.jpg | PelucheEn ElEstuche | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/David_Harbour) |
+| zabava | kejt-bus.jpg | Guido Harari | Public domain | [izvor](https://en.wikipedia.org/wiki/Kate_Bush) |
+| zabava | sintisajzer.jpg | . The original uploader was Kimi95 at Italian Wikipedia. | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Moog_synthesizer) |
+| zabava | ajkula.jpg | Pterantula (Terry Goss) at en.wikipedia | CC BY 2.5 | [izvor](https://en.wikipedia.org/wiki/Great_white_shark) |
+| zabava | t-reks.jpg | ScottRobertAnselmo | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Tyrannosaurus) |
+| zabava | velociraptor.jpg | Eduard Solà Vázquez | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Velociraptor) |
+| zabava | kovceg.jpg | James Tissot | Public domain | [izvor](https://en.wikipedia.org/wiki/Ark_of_the_Covenant) |
+| zabava | koneri.jpg | Unknown authorUnknown author – Comet Photo AG (Zürich) | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Sean_Connery) |
+| zabava | vilijams.jpg | Kingkongphoto & www.celebrity-photos.com from Laurel, Maryland, USA | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Robin_Williams) |
+| zabava | dikaprio.jpg | Raph_PH | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Leonardo_DiCaprio) |
+| zabava | dzobs.jpg | Matthew Yohe | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Steve_Jobs) |
+| zabava | mijazaki.jpg | Natasha Baucas at https://www.flickr.com/photos/sdnatasha/ | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Hayao_Miyazaki) |
+| zabava | kaproni.jpg | Unknown authorUnknown author or not provided | Public domain | [izvor](https://en.wikipedia.org/wiki/Caproni_Ca.309) |
+| zabava | dogo-onsen.jpg | Japanexperterna.se | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/D%C5%8Dgo_Onsen) |
+| zabava | visbi.jpg | L.G.foto | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Visby) |
+| zabava | jakusima.jpg | Σ64 | CC BY 4.0 | [izvor](https://commons.wikimedia.org/wiki/File%3AShiratani%20Unsui%20Gorge%2018.jpg) |
+| zabava | kolmar.jpg | --sinava-- from Berlin | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Colmar) |
+| zabava | svitac.jpg | Bruce Marlin | CC BY-SA 2.5 | [izvor](https://en.wikipedia.org/wiki/Firefly) |
+| zabava | riba-klovn.jpg | Ritiks | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Ocellaris_clownfish) |
+| zabava | ratatuj.jpg | Jack145945 | CC0 | [izvor](https://en.wikipedia.org/wiki/Ratatouille) |
+| zabava | dan-mrtvih.jpg | Paolaricaurte | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Day_of_the_Dead) |
+| zabava | ekman.jpg | Paul Ekman Group, LLC | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Paul_Ekman) |
+| zabava | bred-berd.jpg | nicolas genin from Paris, France | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Brad_Bird) |
+| zabava | henks.jpg | Raph_PH | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Tom_Hanks) |
+| zabava | volt-dizni.jpg | Boy Scouts of America | Public domain | [izvor](https://en.wikipedia.org/wiki/Walt_Disney) |
+| zabava | pinokio.jpg | Enrico Mazzanti (1852-1910) | Public domain | [izvor](https://en.wikipedia.org/wiki/The_Adventures_of_Pinocchio) |
+| zabava | mulan.jpg | Identified as He Dazi (赫達資) | Public domain | [izvor](https://en.wikipedia.org/wiki/Hua_Mulan) |
+| zabava | kokora.jpg | Angela Calle and Daniel Di Palma | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Cocora_Valley) |
+| zabava | hokulea.jpg | Phil Uhl | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/H%C5%8Dk%C5%ABle%CA%BBa) |
+| zabava | kameleon.jpg | Kupos | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Veiled_chameleon) |
+| zabava | lego.jpg | Benjamin D. Esham (bdesham) | CC BY-SA 4.0 | [izvor](https://commons.wikimedia.org/wiki/File%3ALego%20bricks.jpg) |
+| zabava | kocke.jpg | Dark Elf Dice | CC BY-SA 4.0 | [izvor](https://commons.wikimedia.org/wiki/File%3ABlack%20Polyhedral%20Game%20Dice.jpg) |
+| zabava | cilibar.jpg | GiveMeMollusks | CC0 | [izvor](https://commons.wikimedia.org/wiki/File%3AChiapas%20amber%20containing%20insects.jpg) |
+| zabava | snezana.jpg | Unknown authorUnknown author | Public domain | [izvor](https://commons.wikimedia.org/wiki/File%3AWalt%20Disney%20Snow%20white%201937%20trailer%20screenshot%20(13).jpg) |
+| zabava | sirena.jpg | Vilhelm Pedersen | Public domain | [izvor](https://commons.wikimedia.org/wiki/File%3AVilhelm%20Pedersen-Little%20mermaid.jpg) |
+| zabava | lavic.jpg | Charles J. Sharp | CC BY-SA 4.0 | [izvor](https://commons.wikimedia.org/wiki/File%3AKalahari%20lion%20(Panthera%20leo)%20male%20cub%204%20months.jpg) |
+| zabava | peron.jpg | Bert Seghers | CC0 | [izvor](https://commons.wikimedia.org/wiki/File%3APlatform%209%203-4%20(King's%20Cross%20station%2C%20London%2C%202014).jpg) |
+| zabava | mili.jpg | TheWrap | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Millie_Bobby_Brown) |

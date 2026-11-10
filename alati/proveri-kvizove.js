@@ -76,23 +76,24 @@ for (const dir of fs.readdirSync(KOREN).sort()) {
     const kljuc = (p.pitanje || '').toLowerCase().replace(/\W+/g, ' ').trim() + '|' + (p.odgovori || p.parovi || [])[0];
     if (svaPitanja.has(kljuc)) u(oz, 'isto pitanje postoji i u ' + svaPitanja.get(kljuc));
     svaPitanja.set(kljuc, oz);
-    const m = p.mediji;
-    if (m !== undefined && (!m || typeof m !== 'object' || Array.isArray(m))) g(oz, '„mediji“ mora biti objekat sa poljem „vrsta“');
-    else if (m) {
-      if (!VRSTE.includes(m.vrsta)) g(oz, 'nepoznata vrsta medija: ' + m.vrsta);
-      // SVG kôd se ubacuje u stranicu: skripte, obrade događaja i ugrađene stranice ne smeju u kviz
-      // (igra ih ionako uklanja pri crtanju – public/mediji.js → bezbedanSVG – ali predlog sa njima ne treba prihvatiti)
-      if (m.kod !== undefined && (typeof m.kod !== 'string' || /<\s*(script|iframe|object|embed|foreignObject|style|link|meta|a|image|animate|set)\b|\son[a-z]+\s*=|javascript:|data:text/i.test(m.kod)))
-        g(oz, 'svg: „kod“ sme da sadrži samo crtež (bez skripti, onload/onclick, stilova, veza i ugrađenih sadržaja)');
-      if (m.src !== undefined && typeof m.src !== 'string') g(oz, '„src“ mora biti tekst (putanja do slike)');
-      else if (m.src && !/^https?:/.test(m.src)) {
-        const put = m.src.startsWith('/kvizovi/') ? path.join(KOREN, m.src.slice('/kvizovi/'.length)) : path.join(KOREN, dir, m.src);
-        const baza = put.replace(/\.[^.]+$/, '');
-        const postoji = fs.existsSync(put) || (fs.existsSync(path.dirname(put)) && fs.readdirSync(path.dirname(put)).some((x) => path.join(path.dirname(put), x).replace(/\.[^.]+$/, '') === baza));
-        if (!postoji) g(oz, 'nema fajla ' + m.src);
+    for (const [polje, m] of [['mediji', p.mediji], ['medijiOdgovora', p.medijiOdgovora]]) {
+      if (m !== undefined && (!m || typeof m !== 'object' || Array.isArray(m))) g(oz, `„${polje}“ mora biti objekat sa poljem „vrsta“`);
+      else if (m) {
+        if (!VRSTE.includes(m.vrsta)) g(oz, 'nepoznata vrsta medija: ' + m.vrsta);
+        // SVG kôd se ubacuje u stranicu: skripte, obrade događaja i ugrađene stranice ne smeju u kviz
+        // (igra ih ionako uklanja pri crtanju – public/mediji.js → bezbedanSVG – ali predlog sa njima ne treba prihvatiti)
+        if (m.kod !== undefined && (typeof m.kod !== 'string' || /<\s*(script|iframe|object|embed|foreignObject|style|link|meta|a|image|animate|set)\b|\son[a-z]+\s*=|javascript:|data:text/i.test(m.kod)))
+          g(oz, 'svg: „kod“ sme da sadrži samo crtež (bez skripti, onload/onclick, stilova, veza i ugrađenih sadržaja)');
+        if (m.src !== undefined && typeof m.src !== 'string') g(oz, '„src“ mora biti tekst (putanja do slike)');
+        else if (m.src && !/^https?:/.test(m.src)) {
+          const put = m.src.startsWith('/kvizovi/') ? path.join(KOREN, m.src.slice('/kvizovi/'.length)) : path.join(KOREN, dir, m.src);
+          const baza = put.replace(/\.[^.]+$/, '');
+          const postoji = fs.existsSync(put) || (fs.existsSync(path.dirname(put)) && fs.readdirSync(path.dirname(put)).some((x) => path.join(path.dirname(put), x).replace(/\.[^.]+$/, '') === baza));
+          if (!postoji) g(oz, 'nema fajla ' + m.src);
+        }
+        if (m.vrsta === 'molekul' && !m.atomi && !MOLEKULI.includes(m.ime)) g(oz, 'nepoznat molekul ' + m.ime);
+        if (m.vrsta === 'melodija' && !/^[A-HR#b0-9+/.\s]+$/.test(m.note || '')) g(oz, 'neispravan zapis nota');
       }
-      if (m.vrsta === 'molekul' && !m.atomi && !MOLEKULI.includes(m.ime)) g(oz, 'nepoznat molekul ' + m.ime);
-      if (m.vrsta === 'melodija' && !/^[A-HR#b0-9+/.\s]+$/.test(m.note || '')) g(oz, 'neispravan zapis nota');
     }
   });
   lekcije.forEach((l, i) => {

@@ -42,6 +42,7 @@ kvizovi/
 | `rec` | ključni pojam pitanja (3–11 slova, idealno 5–8, latinicom). U krugu „Najduža reč“ slova se biraju tako da se može složiti pojam iz nekog od odigranih pitanja – da se gradivo još jednom ponovi. Ne mora biti tačan odgovor, ali treba da je srodan (npr. za „Ko je izumeo gromobran?“ → `gromobran`). Vlastita imena su u redu (`pupin`, `mileševa`). Ako izostane, bira se automatski iz odgovora, pitanja i zanimljivosti. |
 | `autor` | (opciono) ime i prezime autora pitanja (više autora odvojeno zarezom) – samo za evidenciju, u igri se ne prikazuje. Urednik pitanja (`/urednik`) ga upisuje sam. |
 | `objasnjenje` | (opciono) kratko objašnjenje zašto je odgovor tačan |
+| `medijiOdgovora` | (opciono) medij koji se prikazuje tek posle odgovora, ispod zanimljivosti – isti oblik kao `mediji` (najčešće `{"vrsta":"slika","src":"slike/x.jpg","opis":"…"}`). Za sliku onoga što je tačan odgovor (glumac, pisac, životinja), koja bi u pitanju otkrila rešenje. |
 | `vreme` | (opciono) sekundi za ovo pitanje, umesto podešavanja sobe |
 | `uOpstem` | `false` = kviz se ne meša u „Opšte znanje“ (npr. za kvizove za učenje jedne lekcije) |
 | `oblast` | (opciono) npr. `"biologija"` – svi kvizovi iste oblasti (opšti + po razredima) prikazuju se u lobiju kao jedna kartica |
@@ -96,6 +97,8 @@ Opšti kviz oblasti (npr. `kvizovi/biologija`) dobija samo `"oblast": "biologija
 | svg | `{"vrsta":"svg","kod":"<svg …>"}` | sopstveni crtež (geometrija, grafici) |
 
 Slike sa Vikipedije: `node alati/preuzmi-slike.js kvizovi/<folder> ime-fajla "Naslov članka" [jezik]`
+
+Samo slike sa slobodnom licencom (Commons): kadrovi iz filmova, posteri i likovi iz crtanih filmova/igrica to nisu – umesto njih fotografije glumaca, autora, mesta snimanja, stvarnih životinja i predmeta, ili dela u javnom domenu. Posle preuzimanja: `node alati/licence-slika.js` (osvežava `SLIKE.md`, ističe neslobodne).
 
 Provera pre igranja: `npm run proveri`
 

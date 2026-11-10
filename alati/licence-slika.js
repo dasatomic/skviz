@@ -5,7 +5,7 @@
 const fs = require('fs');
 const path = require('path');
 const KOREN = path.join(__dirname, '..', 'kvizovi');
-const UA = 'GricKviz/1.0 (otvoreni školski kviz; licence slika)';
+const UA = 'GricKviz/1.0 (otvoreni skolski kviz; licence slika)';
 const pauza = (ms) => new Promise((r) => setTimeout(r, ms));
 
 function nazivDatoteke(url) {

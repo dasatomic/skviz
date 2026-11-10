@@ -623,9 +623,16 @@ function otkrivanjePitanja(P, naslov) {
   })}</div></div>` : '';
   return `${rez}
       <div class="kartica zanimljivost">${naslov}${P.objasnjenje ? `<p>${esc(P.objasnjenje)}</p>` : ''}
-      ${P.zanimljivost ? `<h3 style="margin-top:12px">💡 Da li si znao?</h3><div>${esc(P.zanimljivost)}</div>` : ''}</div>
+      ${P.zanimljivost ? `<h3 style="margin-top:12px">💡 Da li si znao?</h3><div>${esc(P.zanimljivost)}</div>` : ''}
+      ${P.medijiOdgovora ? '<div id="medij-odgovora"></div>' : ''}</div>
       ${P.resenje ? resenjeHTML(P) : ''}
       ${poeni}`;
+}
+
+// medij uz zanimljivost (npr. fotografija onoga što je bio tačan odgovor) – crta se tek pri otkrivanju
+function prikaziMedijOdgovora(P) {
+  const k = $('#medij-odgovora');
+  if (k && P.medijiOdgovora) ciscenje.push(prikaziMedij(k, P.medijiOdgovora, { auto: true, paket: P.paket }));
 }
 
 // ───── rešenje zadatka korak po korak: crtež prati korak (novi elementi se pojavljuju, delovi se ističu) ─────
@@ -725,6 +732,7 @@ function ekranPitanje(nov, staro) {
     });
     const naslov = P.vrsta === 'uljez' ? `<h3>🕵️ Uljez je: ${esc(P.odgovori[P.tacan])}</h3>` : `<h3>✅ ${mat(P.odgovori[P.tacan])}</h3>`;
     ispod.innerHTML = otkrivanjePitanja(P, naslov);
+    prikaziMedijOdgovora(P);
     if (P.resenje) pokreniResenje(P);
     if (!EKRAN) setTimeout(() => $('.zanimljivost')?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 900);
   }
@@ -826,6 +834,7 @@ function ekranSpoji(nov, staro) {
         <span class="sitno">${Math.round((100 * V.raspodela[i]) / odgovorilo)}%</span>${znak ? `<span>${znak}</span>` : ''}</div>`;
     }).join('');
     ispod.innerHTML = otkrivanjePitanja(P, `<h3>🔗 Tačni parovi</h3>${resenje}`);
+    prikaziMedijOdgovora(P);
     if (!EKRAN) setTimeout(() => $('.zanimljivost')?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 900);
   }
   dugmeDalje(P.rb === P.ukupno ? 'Rang lista 🏆' : 'Sledeće pitanje ➜');

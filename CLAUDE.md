@@ -32,6 +32,7 @@ Format je opisan u `kvizovi/UPUTSTVO.md`. Ukratko:
 3. Pitanja pravi **svojim rečima** na osnovu gradiva (ne prepisuj odlomke iz knjige). Mešaj težine (~35% lako, 40% srednje, 25% teško), uz par pitanja koja bi pomučila i odrasle.
 4. `zanimljivost` = nešto neočigledno što proširuje znanje, ne ponavljanje tačnog odgovora.
 5. Kad god ima smisla, koristi interaktivne medije (molekul, telo, mapa, melodija, atom, sat, emodzi, svg).
+   Slika onoga što je odgovor (glumac, pisac, mesto, životinja) ide u `medijiOdgovora` – prikazuje se tek pri otkrivanju, ispod zanimljivosti.
    **Medij ne sme da otkriva tačan odgovor**: bez ukrasnih emodžija (🐝🍯 uz „ko daje med“), formula koje su same odgovor, molekula čija legenda imenuje traženi element, slike baš onoga što se pita. Slika onoga što se prepoznaje ide uz pitanje „Koji je ovo…?“. Slike: `node alati/preuzmi-slike.js kvizovi/<paket> --lista spisak.txt` (putanja do foldera paketa, ne samo ime).
 5a. Posebne vrste pitanja (`"vrsta"`): `"uljez"` (4 odgovora, prvi je uljez, obavezno `objasnjenje`) i `"spoji"` (`"parovi": [[levo, desno], …]`, 3–5 parova, bez `odgovori`). Partija ih meša oko 15% (`lib/kvizovi.js` → `izaberi`); bodovanje „spoji“ je srazmerno tačnim parovima (`lib/soba.js` → `otkrij`). Prvi primer: `kvizovi/biologija`.
 6. Za učenje jedne lekcije postavi `"uOpstem": false` da se ne meša u „Opšte znanje“.
