@@ -223,7 +223,6 @@ function pocetna() {
   prikaziOIgri(true);
   app.innerHTML = `
     <h1 class="naslov-igre"><img class="logo" src="/logo.svg" alt="Сквиз"></h1>
-    <div class="podnaslov">Školski kviz znanja 🦉</div>
     <div class="izbor pismo-izbor">${['cirilica', 'latinica'].map((p) => `<button data-pismo="${p}" class="${PISMO === p ? 'izabran' : ''}" ${p === 'latinica' ? 'data-lat' : ''}>${p === 'cirilica' ? 'Ćirilica' : 'Latinica'}</button>`).join('')}</div>
     <div class="kartica">
       <label class="sitno">Kako se zoveš?</label>
