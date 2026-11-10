@@ -11,5 +11,7 @@ izvori/
 # lični podaci i stanje igre (imena igrača, istorija odigranih pitanja)
 podaci/statistika.json
 podaci/odigrana-pitanja.json
+# telemetrija za /admin (SQLite, lib/telemetrija.js)
+podaci/telemetrija.db*
 # privremene datoteke bezbednog upisa (lib/upis.js)
 podaci/*.tmp

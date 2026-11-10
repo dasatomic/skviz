@@ -23,7 +23,7 @@ if [ "${2:-}" = "--prvi-put" ]; then
 fi
 
 rsync -az --delete \
-  --exclude .github --exclude podaci/statistika.json --exclude podaci/odigrana-pitanja.json \
+  --exclude .github --exclude podaci/statistika.json --exclude podaci/odigrana-pitanja.json --exclude 'podaci/telemetrija.db*' \
   "$IZVOR/" "$CILJ:$DIR/"
 
 ssh "$CILJ" "chown -R gric:gric $DIR && systemctl restart gric-kviz && sleep 1 && systemctl is-active gric-kviz && curl -fsS http://127.0.0.1:3000/api/info >/dev/null && echo 'Igra radi ✓'"

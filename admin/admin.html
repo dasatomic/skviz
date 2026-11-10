@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="sr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Skviz admin</title>
+<link rel="icon" type="image/svg+xml" href="/ikona.svg">
+<style>
+  /* Pregled za vlasnika servera: sobe uživo (SSE /api/admin/uzivo) i istorija iz SQLite-a (/api/admin/istorija). */
+  :root {
+    color-scheme: light;
+    --pozadina: #f4f4f2;
+    --povrs: #fcfcfb;
+    --ivica: #e2e1dc;
+    --mreza: #ecebe7;
+    --tekst: #0b0b0b;
+    --tekst-2: #52514e;
+    --tekst-3: #7a7974;
+    --serija: #2a78d6;
+    --serija-povrs: rgba(42, 120, 214, .12);
+    --uzivo: #008300;
+    --greska: #c62828;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --pozadina: #111110;
+      --povrs: #1a1a19;
+      --ivica: #2e2d2b;
+      --mreza: #262624;
+      --tekst: #f0efec;
+      --tekst-2: #c3c2b7;
+      --tekst-3: #8f8e86;
+      --serija: #3987e5;
+      --serija-povrs: rgba(57, 135, 229, .18);
+      --uzivo: #3fb950;
+      --greska: #f07171;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --pozadina: #111110; --povrs: #1a1a19; --ivica: #2e2d2b; --mreza: #262624;
+    --tekst: #f0efec; --tekst-2: #c3c2b7; --tekst-3: #8f8e86;
+    --serija: #3987e5; --serija-povrs: rgba(57, 135, 229, .18); --uzivo: #3fb950; --greska: #f07171;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--pozadina); color: var(--tekst);
+    font: 15px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-variant-numeric: tabular-nums;
+  }
+  main { max-width: 1120px; margin: 0 auto; padding: 20px 16px 48px; }
+  header { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 20px; }
+  header h1 { font-size: 20px; margin: 0; flex: 1; }
+  h2 { font-size: 16px; margin: 32px 0 12px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  h3 { font-size: 13px; font-weight: 600; color: var(--tekst-2); margin: 0 0 10px; }
+  button, select, input {
+    font: inherit; color: var(--tekst); background: var(--povrs); border: 1px solid var(--ivica);
+    border-radius: 8px; padding: 6px 12px;
+  }
+  button { cursor: pointer; }
+  button:hover { border-color: var(--tekst-3); }
+  .tacka { width: 8px; height: 8px; border-radius: 50%; background: var(--tekst-3); display: inline-block; }
+  .tacka.uzivo { background: var(--uzivo); }
+  .status { font-size: 13px; color: var(--tekst-2); display: flex; align-items: center; gap: 6px; }
+  .plocice { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
+  .plocica, .kartica { background: var(--povrs); border: 1px solid var(--ivica); border-radius: 12px; padding: 14px 16px; }
+  .plocica .broj { font-size: 30px; font-weight: 650; line-height: 1.1; }
+  .plocica .opis { font-size: 13px; color: var(--tekst-2); margin-top: 4px; }
+  .mreza2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: 12px; margin-top: 12px; }
+  .kartica { min-width: 0; }
+  .grafikon { position: relative; }
+  .grafikon svg { display: block; width: 100%; overflow: visible; }
+  .grafikon text { fill: var(--tekst-3); font-size: 11px; }
+  .savet {
+    position: absolute; pointer-events: none; background: var(--tekst); color: var(--povrs);
+    font-size: 12px; padding: 5px 8px; border-radius: 6px; white-space: nowrap; transform: translate(-50%, -100%);
+    margin-top: -8px; display: none; z-index: 2;
+  }
+  .savet b { font-weight: 650; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th { text-align: left; font-weight: 600; font-size: 12px; color: var(--tekst-2); padding: 6px 8px; border-bottom: 1px solid var(--ivica); }
+  td { padding: 7px 8px; border-bottom: 1px solid var(--mreza); vertical-align: top; }
+  td.br, th.br { text-align: right; white-space: nowrap; }
+  td.dan { white-space: nowrap; }
+  tr.neaktivna td { color: var(--tekst-3); }
+  .sitno { font-size: 12px; color: var(--tekst-3); }
+  .kod { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-weight: 600; letter-spacing: .04em; }
+  .faza { font-size: 12px; padding: 1px 8px; border-radius: 99px; border: 1px solid var(--ivica); white-space: nowrap; }
+  .traka { height: 8px; border-radius: 0 4px 4px 0; background: var(--serija); min-width: 2px; }
+  .trakaRed { display: grid; grid-template-columns: minmax(110px, 38%) 1fr auto; gap: 10px; align-items: center; padding: 5px 0; font-size: 14px; }
+  .trakaRed .ime { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .trakaRed .vr { font-size: 13px; color: var(--tekst-2); white-space: nowrap; }
+  .prazno { color: var(--tekst-3); font-size: 14px; padding: 8px 0; }
+  .skrol { overflow-x: auto; }
+  .napomena { font-size: 13px; color: var(--tekst-2); margin-top: 8px; }
+  #prijava { max-width: 340px; margin: 18vh auto 0; padding: 0 16px; }
+  #prijava form { display: grid; gap: 10px; }
+  #prijava input { padding: 10px 12px; }
+  #prijava button { padding: 10px; background: var(--serija); color: #fff; border: 0; font-weight: 600; }
+  #greskaPrijave { color: var(--greska); font-size: 14px; min-height: 1.4em; }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+
+<section id="prijava" hidden>
+  <h1 style="font-size:20px">Skviz admin</h1>
+  <form id="formaPrijave">
+    <input id="lozinka" type="password" autocomplete="current-password" placeholder="Lozinka" required autofocus>
+    <button type="submit">Prijava</button>
+    <div id="greskaPrijave"></div>
+  </form>
+</section>
+
+<main id="pregled" hidden>
+  <header>
+    <h1>Skviz admin</h1>
+    <span class="status"><span id="tacka" class="tacka"></span><span id="statusTekst">Povezivanje…</span></span>
+    <button id="odjava" type="button">Odjava</button>
+  </header>
+
+  <div class="plocice">
+    <div class="plocica"><div class="broj" id="uAktivne">–</div><div class="opis">aktivnih soba (bar jedan igrač tu)</div></div>
+    <div class="plocica"><div class="broj" id="uUIgri">–</div><div class="opis">soba usred partije</div></div>
+    <div class="plocica"><div class="broj" id="uIgraca">–</div><div class="opis">igrača povezano</div></div>
+    <div class="plocica"><div class="broj" id="uSobe">–</div><div class="opis">soba u memoriji ukupno</div></div>
+  </div>
+
+  <div class="mreza2">
+    <div class="kartica">
+      <h3>Aktivne sobe po kategoriji</h3>
+      <div id="uzivoKategorije"></div>
+    </div>
+    <div class="kartica">
+      <h3>Sobe</h3>
+      <div class="skrol"><table>
+        <thead><tr><th>Kod</th><th>Kviz</th><th>Faza</th><th class="br">Igrači</th><th class="br">Traje</th></tr></thead>
+        <tbody id="uzivoSobe"></tbody>
+      </table></div>
+      <div class="sitno" id="uzivoSobeVise"></div>
+    </div>
+  </div>
+
+  <h2>Istorija
+    <select id="period" aria-label="Period">
+      <option value="7">poslednjih 7 dana</option>
+      <option value="14" selected>poslednjih 14 dana</option>
+      <option value="30">poslednjih 30 dana</option>
+    </select>
+    <span class="sitno" id="istorijaOsvezeno"></span>
+  </h2>
+  <div id="bezIstorije" class="kartica" hidden>Istorija nije dostupna: server radi na Node-u bez <code>node:sqlite</code> (potreban je Node 22.13 ili noviji).</div>
+
+  <div id="istorija">
+    <div class="plocice">
+      <div class="plocica"><div class="broj" id="iIgre">–</div><div class="opis">pokrenutih partija</div></div>
+      <div class="plocica"><div class="broj" id="iZavrsene">–</div><div class="opis">odigrano do kraja</div></div>
+      <div class="plocica"><div class="broj" id="iIgraca">–</div><div class="opis">igrača u partijama (zbir)</div></div>
+      <div class="plocica"><div class="broj" id="iSobe">–</div><div class="opis">napravljenih soba</div></div>
+      <div class="plocica"><div class="broj" id="iVrh">–</div><div class="opis">najviše aktivnih soba odjednom</div></div>
+    </div>
+
+    <div class="mreza2">
+      <div class="kartica"><h3>Aktivne sobe – najviše u satu</h3><div class="grafikon" id="gSobe"></div></div>
+      <div class="kartica"><h3>Povezani igrači – najviše u satu</h3><div class="grafikon" id="gIgraci"></div></div>
+      <div class="kartica"><h3>Pokrenute partije po danu</h3><div class="grafikon" id="gDani"></div></div>
+      <div class="kartica"><h3>Pokrenute partije po satu u danu</h3><div class="grafikon" id="gSatDana"></div></div>
+    </div>
+
+    <div class="mreza2">
+      <div class="kartica">
+        <h3>Kategorije</h3>
+        <div class="skrol"><table>
+          <thead><tr><th>Kategorija</th><th class="br">Partija</th><th class="br">Igrača</th><th class="br">Prosek trajanja</th></tr></thead>
+          <tbody id="kategorije"></tbody>
+        </table></div>
+      </div>
+      <div class="kartica">
+        <h3>Najigraniji izbori (kategorija – razred/lekcija)</h3>
+        <div id="najigranije"></div>
+      </div>
+    </div>
+
+    <div class="kartica" style="margin-top:12px">
+      <h3>Po danima</h3>
+      <div class="skrol"><table>
+        <thead><tr><th>Dan</th><th class="br">Soba</th><th class="br">Partija</th><th class="br">Do kraja</th><th class="br">Prekinuto</th><th class="br">Igrača</th><th class="br">Vrh soba</th><th class="br">Vrh igrača</th></tr></thead>
+        <tbody id="dani"></tbody>
+      </table></div>
+      <div class="napomena">„Vrh“ je najveći broj aktivnih soba ili povezanih igrača u istom trenutku (presek jednom u minutu). Prazne crte u grafikonu = server nije radio.</div>
+    </div>
+  </div>
+</main>
+
+<script>
+'use strict';
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
+const broj = (n) => (n == null ? '–' : Number(n).toLocaleString('sr-Latn'));
+const FAZE = { lobi: 'Lobi', uvod: 'Uvod', pitanje: 'Pitanje', otkrivanje: 'Otkrivanje', tabela: 'Tabela', reci: 'Reči', 'reci-otkrivanje': 'Reči – otkrivanje', kraj: 'Kraj' };
+
+function trajanje(ms) {
+  if (ms == null || ms < 0) return '';
+  const m = Math.floor(ms / 60e3);
+  if (m < 1) return '< 1 min';
+  if (m < 60) return m + ' min';
+  return Math.floor(m / 60) + ' h ' + (m % 60) + ' min';
+}
+
+// ───────── prijava ─────────
+function prikaziPrijavu() {
+  zatvoriTok();
+  $('pregled').hidden = true;
+  $('prijava').hidden = false;
+  $('lozinka').focus();
+}
+$('formaPrijave').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  $('greskaPrijave').textContent = '';
+  const r = await fetch('/api/admin/prijava', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ lozinka: $('lozinka').value }) }).catch(() => null);
+  if (!r) return ($('greskaPrijave').textContent = 'Server ne odgovara');
+  if (!r.ok) return ($('greskaPrijave').textContent = (await r.json().catch(() => ({}))).greska || 'Greška');
+  $('lozinka').value = '';
+  pokreni();
+});
+$('odjava').addEventListener('click', async () => {
+  await fetch('/api/admin/odjava', { method: 'POST' }).catch(() => {});
+  prikaziPrijavu();
+});
+
+// ───────── uživo ─────────
+let tok = null;
+function zatvoriTok() { if (tok) { tok.close(); tok = null; } }
+function otvoriTok() {
+  zatvoriTok();
+  tok = new EventSource('/api/admin/uzivo');
+  tok.onmessage = (e) => { status(true); crtajUzivo(JSON.parse(e.data)); };
+  tok.onerror = async () => {
+    status(false);
+    // EventSource ne vidi kod greške – proveri da li je sesija istekla
+    const r = await fetch('/api/admin/istorija?dana=1').catch(() => null);
+    if (r && r.status === 401) prikaziPrijavu();
+  };
+}
+function status(ok) {
+  $('tacka').classList.toggle('uzivo', ok);
+  $('statusTekst').textContent = ok ? 'Uživo' : 'Veza prekinuta, ponovo se povezujem…';
+}
+
+const MAKS_SOBA_U_TABELI = 60;
+function crtajUzivo(d) {
+  $('uAktivne').textContent = broj(d.ukupno.aktivne);
+  $('uUIgri').textContent = broj(d.ukupno.uIgri);
+  $('uIgraca').textContent = broj(d.ukupno.igraca);
+  $('uSobe').textContent = broj(d.ukupno.sobe);
+  const maks = Math.max(1, ...d.poKategoriji.map((k) => k.sobe));
+  $('uzivoKategorije').innerHTML = d.poKategoriji.length
+    ? d.poKategoriji.map((k) => `<div class="trakaRed"><span class="ime" title="${esc(k.kategorija)}">${esc(k.kategorija)}</span>
+        <div><div class="traka" style="width:${(k.sobe / maks) * 100}%"></div></div>
+        <span class="vr">${k.sobe} sob${k.sobe === 1 ? 'a' : 'e'} · ${k.uIgri} u igri · ${k.igraca} igr.</span></div>`).join('')
+    : '<div class="prazno">Trenutno niko ne igra.</div>';
+  const sobe = d.sobe.slice(0, MAKS_SOBA_U_TABELI);
+  $('uzivoSobe').innerHTML = sobe.length
+    ? sobe.map((s) => `<tr class="${s.prisutnih ? '' : 'neaktivna'}">
+        <td class="kod">${esc(s.kod)}</td>
+        <td>${esc(s.kategorija)}${s.detalj ? `<div class="sitno">${esc(s.detalj)}</div>` : ''}</td>
+        <td><span class="faza">${esc(FAZE[s.faza] || s.faza)}</span></td>
+        <td class="br">${s.prisutnih} / ${s.igraca}</td>
+        <td class="br">${s.igraOd ? 'igra ' + trajanje(d.sada - s.igraOd) : 'otvorena ' + trajanje(d.sada - s.otvorena)}${s.prisutnih ? '' : `<div class="sitno">neaktivna ${trajanje(s.neaktivnaMs)}</div>`}</td>
+      </tr>`).join('')
+    : '<tr><td colspan="5" class="prazno">Nema soba.</td></tr>';
+  $('uzivoSobeVise').textContent = d.sobe.length > sobe.length ? `+ još ${d.sobe.length - sobe.length} soba` : '';
+}
+
+// ───────── grafikoni (SVG, bez biblioteka) ─────────
+const SVG = 'http://www.w3.org/2000/svg';
+function el(ime, atributi = {}, roditelj) {
+  const e = document.createElementNS(SVG, ime);
+  for (const [k, v] of Object.entries(atributi)) e.setAttribute(k, v);
+  if (roditelj) roditelj.appendChild(e);
+  return e;
+}
+// „lepa“ gornja granica ose i podeoci (celi brojevi)
+function skala(maks) {
+  if (maks <= 0) return { vrh: 1, podeoci: [0, 1] };
+  const sirovo = maks / 4;
+  const p = Math.pow(10, Math.floor(Math.log10(sirovo)));
+  const korak = Math.max(1, [1, 2, 5, 10].map((m) => m * p).find((k) => k >= sirovo));
+  const vrh = Math.ceil(maks / korak) * korak;
+  const podeoci = [];
+  for (let v = 0; v <= vrh + 1e-9; v += korak) podeoci.push(v);
+  return { vrh, podeoci };
+}
+function osnova(kontejner, visina) {
+  kontejner.innerHTML = '';
+  const sirina = Math.max(260, kontejner.clientWidth);
+  const svg = el('svg', { viewBox: `0 0 ${sirina} ${visina}`, height: visina, role: 'img' }, kontejner);
+  const savet = document.createElement('div');
+  savet.className = 'savet';
+  kontejner.appendChild(savet);
+  return { svg, savet, sirina };
+}
+function mrezaY(svg, podeoci, y, levo, desno) {
+  for (const v of podeoci) {
+    el('line', { x1: levo, x2: desno, y1: y(v), y2: y(v), stroke: 'var(--mreza)', 'stroke-width': 1 }, svg);
+    el('text', { x: levo - 6, y: y(v) + 4, 'text-anchor': 'end' }, svg).textContent = v;
+  }
+}
+
+// linija kroz satne tačke; null = nema podataka (linija se prekida)
+function linija(kontejner, tacke, { naziv, oznakaX, oznakaSaveta }) {
+  const V = 190, M = { l: 34, r: 10, t: 12, b: 24 };
+  const { svg, savet, sirina } = osnova(kontejner, V);
+  svg.setAttribute('aria-label', naziv);
+  const { vrh, podeoci } = skala(Math.max(0, ...tacke.map((t) => t.v ?? 0)));
+  const n = tacke.length;
+  const x = (i) => M.l + (n > 1 ? (i / (n - 1)) * (sirina - M.l - M.r) : 0);
+  const y = (v) => M.t + (1 - v / vrh) * (V - M.t - M.b);
+  mrezaY(svg, podeoci, y, M.l, sirina - M.r);
+  // oznake na x osi (ponoć) – ne gušće od ~70 px
+  let poslednja = -Infinity;
+  tacke.forEach((t, i) => {
+    const o = oznakaX(t, i);
+    if (!o || x(i) - poslednja < 70) return;
+    poslednja = x(i);
+    el('line', { x1: x(i), x2: x(i), y1: V - M.b, y2: V - M.b + 4, stroke: 'var(--tekst-3)' }, svg);
+    el('text', { x: x(i), y: V - 6, 'text-anchor': 'middle' }, svg).textContent = o;
+  });
+  // površina i linija, po neprekinutim delovima
+  let deo = [];
+  const zatvori = () => {
+    if (!deo.length) return;
+    const d = deo.map(([i, v], k) => `${k ? 'L' : 'M'}${x(i).toFixed(1)},${y(v).toFixed(1)}`).join('');
+    el('path', { d: `${d}L${x(deo[deo.length - 1][0]).toFixed(1)},${y(0)}L${x(deo[0][0]).toFixed(1)},${y(0)}Z`, fill: 'var(--serija-povrs)' }, svg);
+    el('path', { d, fill: 'none', stroke: 'var(--serija)', 'stroke-width': 2, 'stroke-linejoin': 'round', 'stroke-linecap': 'round' }, svg);
+    if (deo.length === 1) el('circle', { cx: x(deo[0][0]), cy: y(deo[0][1]), r: 2.5, fill: 'var(--serija)' }, svg);
+    deo = [];
+  };
+  tacke.forEach((t, i) => { if (t.v == null) zatvori(); else deo.push([i, t.v]); });
+  zatvori();
+  el('line', { x1: M.l, x2: sirina - M.r, y1: y(0), y2: y(0), stroke: 'var(--tekst-3)', 'stroke-width': 1 }, svg);
+  // hover: vertikalna linija + tačka + savet
+  const nisan = el('line', { y1: M.t, y2: V - M.b, stroke: 'var(--tekst-3)', 'stroke-dasharray': '3 3', visibility: 'hidden' }, svg);
+  const tacka = el('circle', { r: 4.5, fill: 'var(--serija)', stroke: 'var(--povrs)', 'stroke-width': 2, visibility: 'hidden' }, svg);
+  const povrs = el('rect', { x: M.l, y: 0, width: sirina - M.l - M.r, height: V, fill: 'transparent' }, svg);
+  const pomeri = (e) => {
+    const r = svg.getBoundingClientRect();
+    const px = ((e.clientX - r.left) / r.width) * sirina;
+    const i = Math.max(0, Math.min(n - 1, Math.round(((px - M.l) / (sirina - M.l - M.r)) * (n - 1))));
+    const t = tacke[i];
+    nisan.setAttribute('x1', x(i)); nisan.setAttribute('x2', x(i)); nisan.setAttribute('visibility', 'visible');
+    if (t.v != null) { tacka.setAttribute('cx', x(i)); tacka.setAttribute('cy', y(t.v)); tacka.setAttribute('visibility', 'visible'); }
+    else tacka.setAttribute('visibility', 'hidden');
+    savet.innerHTML = oznakaSaveta(t);
+    savet.style.display = 'block';
+    savet.style.left = Math.min(Math.max((x(i) / sirina) * r.width, 70), r.width - 70) + 'px';
+    savet.style.top = (t.v != null ? (y(t.v) / V) * r.height : M.t) + 'px';
+  };
+  povrs.addEventListener('pointermove', pomeri);
+  povrs.addEventListener('pointerdown', pomeri);
+  povrs.addEventListener('pointerleave', () => { savet.style.display = 'none'; nisan.setAttribute('visibility', 'hidden'); tacka.setAttribute('visibility', 'hidden'); });
+}
+
+// stubići (jedna serija), 2 px razmaka, zaobljen vrh
+function stubici(kontejner, stavke, { naziv, oznakaSaveta, svakaOznaka = 1 }) {
+  const V = 190, M = { l: 34, r: 6, t: 12, b: 24 };
+  const { svg, savet, sirina } = osnova(kontejner, V);
+  svg.setAttribute('aria-label', naziv);
+  const { vrh, podeoci } = skala(Math.max(0, ...stavke.map((s) => s.v)));
+  const y = (v) => M.t + (1 - v / vrh) * (V - M.t - M.b);
+  mrezaY(svg, podeoci, y, M.l, sirina - M.r);
+  const n = stavke.length, korak = (sirina - M.l - M.r) / n, s = Math.max(2, korak - 2);
+  const oznakaKorak = Math.max(svakaOznaka, Math.ceil(40 / korak));
+  stavke.forEach((st, i) => {
+    const x0 = M.l + i * korak + 1, y0 = y(st.v), h = y(0) - y0;
+    if (h > 0) {
+      const r = Math.min(4, s / 2, h);
+      el('path', { d: `M${x0},${y(0)}V${y0 + r}Q${x0},${y0} ${x0 + r},${y0}H${x0 + s - r}Q${x0 + s},${y0} ${x0 + s},${y0 + r}V${y(0)}Z`, fill: 'var(--serija)' }, svg);
+    }
+    if (i % oznakaKorak === 0) el('text', { x: x0 + s / 2, y: V - 6, 'text-anchor': 'middle' }, svg).textContent = st.oznaka;
+    // pogodak je cela kolona (veći od stubića)
+    const meta = el('rect', { x: M.l + i * korak, y: M.t, width: korak, height: V - M.t - M.b, fill: 'transparent' }, svg);
+    const prikazi = () => {
+      const r = svg.getBoundingClientRect();
+      meta.setAttribute('fill', 'var(--serija-povrs)');
+      savet.innerHTML = oznakaSaveta(st);
+      savet.style.display = 'block';
+      savet.style.left = Math.min(Math.max(((x0 + s / 2) / sirina) * r.width, 70), r.width - 70) + 'px';
+      savet.style.top = (y0 / V) * r.height + 'px';
+    };
+    meta.addEventListener('pointerenter', prikazi);
+    meta.addEventListener('pointerdown', prikazi);
+    meta.addEventListener('pointerleave', () => { meta.setAttribute('fill', 'transparent'); savet.style.display = 'none'; });
+  });
+  el('line', { x1: M.l, x2: sirina - M.r, y1: y(0), y2: y(0), stroke: 'var(--tekst-3)', 'stroke-width': 1 }, svg);
+}
+
+// ───────── istorija ─────────
+let istorija = null;
+const DANI_U_NEDELJI = ['ned', 'pon', 'uto', 'sre', 'čet', 'pet', 'sub'];
+const datum = (dan) => { const [g, m, d] = dan.split('-'); return `${+d}. ${+m}.`; };
+const danUNedelji = (dan) => DANI_U_NEDELJI[new Date(dan + 'T12:00:00Z').getUTCDay()];
+
+async function ucitajIstoriju() {
+  const r = await fetch('/api/admin/istorija?dana=' + $('period').value).catch(() => null);
+  if (!r) return;
+  if (r.status === 401) return prikaziPrijavu();
+  istorija = await r.json();
+  $('istorijaOsvezeno').textContent = 'osveženo ' + new Date().toLocaleTimeString('sr-Latn', { hour: '2-digit', minute: '2-digit' });
+  crtajIstoriju();
+}
+
+function crtajIstoriju() {
+  const d = istorija;
+  if (!d) return;
+  $('bezIstorije').hidden = d.istorija;
+  $('istorija').hidden = !d.istorija;
+  if (!d.istorija) return;
+  const zbir = (k) => d.dani.reduce((a, x) => a + x[k], 0);
+  $('iIgre').textContent = broj(zbir('igre'));
+  const igre = zbir('igre'), zavrsene = zbir('zavrsene');
+  $('iZavrsene').textContent = broj(zavrsene) + (igre ? ` (${Math.round((zavrsene / igre) * 100)}%)` : '');
+  $('iIgraca').textContent = broj(zbir('igraca'));
+  $('iSobe').textContent = broj(zbir('sobe'));
+  $('iVrh').textContent = broj(Math.max(0, ...d.dani.map((x) => x.vrhAktivnih)));
+
+  const zona = d.zona;
+  const fSat = new Intl.DateTimeFormat('sr-Latn', { timeZone: zona, hour: '2-digit', hourCycle: 'h23' });
+  const fDan = new Intl.DateTimeFormat('sr-Latn', { timeZone: zona, day: 'numeric', month: 'numeric' });
+  const fPun = new Intl.DateTimeFormat('sr-Latn', { timeZone: zona, weekday: 'short', day: 'numeric', month: 'numeric', hour: '2-digit', minute: '2-digit' });
+  const ponoc = (t) => +fSat.format(t) === 0;
+  const oznakaX = (t) => (ponoc(t.t) ? fDan.format(t.t) : '');
+  const opisSata = (t) => `${fPun.format(t.t)}–${fSat.format(t.t + 3600e3)}h`;
+
+  linija($('gSobe'), d.sati.map((s) => ({ t: s.t, v: s.aktivne })), {
+    naziv: 'Aktivne sobe po satu', oznakaX,
+    oznakaSaveta: (t) => `${opisSata(t)}<br><b>${t.v == null ? 'nema podataka' : t.v + ' aktivnih soba'}</b>`,
+  });
+  linija($('gIgraci'), d.sati.map((s) => ({ t: s.t, v: s.igraca })), {
+    naziv: 'Povezani igrači po satu', oznakaX,
+    oznakaSaveta: (t) => `${opisSata(t)}<br><b>${t.v == null ? 'nema podataka' : t.v + ' igrača'}</b>`,
+  });
+  stubici($('gDani'), d.dani.map((x) => ({ oznaka: datum(x.dan), v: x.igre, x })), {
+    naziv: 'Pokrenute partije po danu',
+    oznakaSaveta: (s) => `${danUNedelji(s.x.dan)} ${datum(s.x.dan)}<br><b>${s.v} partija</b> · ${s.x.zavrsene} do kraja · ${s.x.igraca} igrača`,
+  });
+  stubici($('gSatDana'), d.poSatuDana.map((x) => ({ oznaka: String(x.sat), v: x.igre, x })), {
+    naziv: 'Pokrenute partije po satu u danu', svakaOznaka: 3,
+    oznakaSaveta: (s) => `${s.x.sat}–${s.x.sat + 1}h<br><b>${s.v} partija</b>`,
+  });
+
+  $('kategorije').innerHTML = d.poKategoriji.length
+    ? d.poKategoriji.map((k) => `<tr><td>${esc(k.kategorija)}</td><td class="br">${broj(k.igre)}</td><td class="br">${broj(k.igraca)}</td><td class="br">${k.prosecnoMin == null ? '–' : k.prosecnoMin.toLocaleString('sr-Latn') + ' min'}</td></tr>`).join('')
+    : '<tr><td colspan="4" class="prazno">Još nema odigranih partija.</td></tr>';
+
+  const maks = Math.max(1, ...d.najigranije.map((x) => x.igre));
+  $('najigranije').innerHTML = d.najigranije.length
+    ? d.najigranije.map((x) => `<div class="trakaRed"><span class="ime" title="${esc(x.izbor)}">${esc(x.izbor)}</span><div><div class="traka" style="width:${(x.igre / maks) * 100}%"></div></div><span class="vr">${x.igre}</span></div>`).join('')
+    : '<div class="prazno">Još nema odigranih partija.</div>';
+
+  $('dani').innerHTML = [...d.dani].reverse().map((x) => `<tr>
+      <td class="dan">${danUNedelji(x.dan)} ${datum(x.dan)}</td><td class="br">${x.sobe}</td><td class="br">${x.igre}</td><td class="br">${x.zavrsene}</td>
+      <td class="br">${x.prekinute}</td><td class="br">${x.igraca}</td><td class="br">${x.vrhAktivnih}</td><td class="br">${x.vrhIgraca}</td></tr>`).join('');
+}
+
+$('period').addEventListener('change', ucitajIstoriju);
+let tajmerVelicine;
+addEventListener('resize', () => { clearTimeout(tajmerVelicine); tajmerVelicine = setTimeout(crtajIstoriju, 150); });
+
+// ───────── početak ─────────
+let tajmerIstorije;
+async function pokreni() {
+  const r = await fetch('/api/admin/istorija?dana=' + $('period').value).catch(() => null);
+  if (!r || r.status === 401) return prikaziPrijavu();
+  $('prijava').hidden = true;
+  $('pregled').hidden = false;
+  istorija = await r.json();
+  $('istorijaOsvezeno').textContent = 'osveženo ' + new Date().toLocaleTimeString('sr-Latn', { hour: '2-digit', minute: '2-digit' });
+  crtajIstoriju();
+  otvoriTok();
+  clearInterval(tajmerIstorije);
+  tajmerIstorije = setInterval(ucitajIstoriju, 5 * 60e3);
+}
+pokreni();
+</script>
+</body>
+</html>

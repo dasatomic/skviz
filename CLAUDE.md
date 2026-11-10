@@ -19,6 +19,7 @@ Ceo interfejs, pitanja i komentari u kodu su na **srpskom (latinica)**. Igrači 
 - `lib/kvizovi.js` – učitavanje `kvizovi/*/kviz.json`, izbor pitanja (mešavina težina, prednost neodigranim – `podaci/odigrana-pitanja.json`).
 - `lib/recnik.js` – „Najduža reč“: `podaci/recnik.txt` (Hunspell sr, osnovni oblici, ćirilica) + `podaci/ucestalost.txt`. Slova se biraju tako da se može složiti pojam (`rec`) iz nekog od upravo odigranih pitanja (`slovaSaRecju`, `Soba.izaberiPojam`).
 - `lib/statistika.js` – porodična tabla slavnih u `podaci/statistika.json`.
+- `lib/telemetrija.js` + `admin/admin.html` (`/admin`, samo uz `ADMIN_LOZINKA`) – sobe uživo i istorija u SQLite-u (`podaci/telemetrija.db`, ugrađeni `node:sqlite`): događaji soba (`Soba.zabelezi`) i presek stanja svakog minuta. Bez imena igrača. Postavka u `deploy/README.md`.
 - `public/` – klijent (vanilla JS): `logo.svg` (logo „Сквиз“ po ručnom crtežu), `ikona.svg`/`ikona-180.png` (slovo К), `app.js` ekrani, `mediji.js` interaktivni mediji (3D, mape, melodije…), `geo/svet.json` mape.
 - `public/urednik.html` + `urednik.js` (`/urednik`) – urednik pitanja za ljude koji ne znaju JSON: predmet → razred/lekcija → spisak → izmena/novo sa pregledom → „Predloži“. `lib/predlozi.js` (`POST /api/predlog`) primenjuje izmenu na najnoviji `main` sa GitHub-a i otvara PR preko robot naloga (`GITHUB_TOKEN`, fork robota; postavka u `deploy/README.md`). Pitanje dobija polje `autor` (samo evidencija). Matematički zadaci se ne menjaju ovde (generišu se alatom).
 - `alati/` – `proveri-kvizove.js`, `preuzmi-slike.js` (Vikipedija), `preuzmi-udzbenike.js` (Fondacija Kavčić; `node alati/preuzmi-udzbenike.js 8 --samo biologija`).
@@ -46,4 +47,4 @@ Format je opisan u `kvizovi/UPUTSTVO.md`. Ukratko:
 
 ## Git i licence
 - Repozitorijum je otvoren (kôd MIT, pitanja CC0 – javni domen). Pre dodavanja slika proveriti licencu (`node alati/licence-slika.js` osvežava `SLIKE.md`).
-- Ne dodavati u git: `izvori/`, `podaci/statistika.json`, `podaci/odigrana-pitanja.json`.
+- Ne dodavati u git: `izvori/`, `podaci/statistika.json`, `podaci/odigrana-pitanja.json`, `podaci/telemetrija.db*`.

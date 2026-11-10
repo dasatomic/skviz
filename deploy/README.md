@@ -14,7 +14,7 @@ Na kraju treba da piše `active` i `Igra radi ✓`.
 ## Šta skripta radi
 1. Uzme poslednji commit (necommitovane izmene se **ne šalju** – skripta upozori).
 2. Pokrene proveru kvizova – ako ne prođe, ništa se ne šalje.
-3. Pošalje kod na server u `/opt/gric-kviz` (ne dira statistiku i istoriju odigranih pitanja na serveru).
+3. Pošalje kod na server u `/opt/gric-kviz` (ne dira statistiku, istoriju odigranih pitanja ni telemetriju `podaci/telemetrija.db` na serveru).
 4. Restartuje servis `gric-kviz` i proveri da igra odgovara.
 
 ## Važno
@@ -62,3 +62,12 @@ Ako token procuri, najviše što neko može je da otvara PR-ove i menja robotov 
 Prihvatanje predloga: na stranici PR-a „Merge pull request“, pa `git pull` i `./deploy/objavi.sh …`.
 Autor predloga vidi stanje („Čeka pregled / Prihvaćeno“) i komentare u uredniku pod „Moji predlozi“.
 Ograničenja: 10 predloga na sat po adresi, 100 dnevno ukupno (`LIMIT_PREDLOGA`, `LIMIT_PREDLOGA_DAN`); provera stanja predloga („Moji predlozi“) 20 puta u minutu po adresi (`LIMIT_STANJA`).
+
+## Admin pregled (`/admin`)
+Sobe uživo (koliko ih je aktivno, iz kojih kategorija, faza igre) i istorija poslednjih 7/14/30 dana iz SQLite baze `podaci/telemetrija.db` (`lib/telemetrija.js`, ugrađeni `node:sqlite`, Node 22.13+). Beleže se samo zbirni podaci o sobama, bez imena igrača; zapisi stariji od 90 dana se brišu (`TELEMETRIJA_DANA`).
+
+Stranica postoji samo ako je postavljena lozinka (inače `/admin` vraća 404):
+```bash
+ssh root@2.29.146.92 'umask 077; echo "ADMIN_LOZINKA=$(openssl rand -base64 18)" >> /etc/gric-kviz.env && systemctl restart gric-kviz && grep ADMIN_LOZINKA /etc/gric-kviz.env'
+```
+Lokalno: `ADMIN_LOZINKA=nesto npm start`, pa `http://localhost:3000/admin`. Prijava važi 12 sati (restart servera traži novu prijavu); 10 pokušaja prijave na 15 minuta po adresi (`LIMIT_PRIJAVA`).

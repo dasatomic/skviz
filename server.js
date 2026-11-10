@@ -12,6 +12,7 @@ const recnik = require('./lib/recnik');
 const statistika = require('./lib/statistika');
 const Soba = require('./lib/soba');
 const predlozi = require('./lib/predlozi');
+const telemetrija = require('./lib/telemetrija');
 
 const PORT = +process.env.PORT || 3000;
 const JAVNO = path.join(__dirname, 'public');
@@ -22,6 +23,8 @@ greske.forEach((g) => console.warn('⚠ Greška u kvizu', g));
 const brojReci = recnik.ucitaj();
 
 const sobe = new Map(); // kod -> Soba
+Soba.zabelezi = telemetrija.dogadjaj;
+telemetrija.pokreni(sobe);
 const tokovi = new Map(); // kod -> Set<{res, id}>
 
 const cekaci = new Map(); // kod -> Set<{res, id, tajmer}>  (long-polling, kad SSE ne prolazi – npr. Cloudflare tunel)
@@ -63,12 +66,44 @@ function novKod() {
   return null;
 }
 
+// ───── /admin: pregled soba uživo i istorija (lib/telemetrija.js), samo uz lozinku ADMIN_LOZINKA ─────
+// Bez postavljene lozinke stranica ne postoji (404). Prijava daje nasumičan token u HttpOnly kolačiću;
+// sesije žive u memoriji (restart servera = nova prijava).
+const ADMIN_LOZINKA = process.env.ADMIN_LOZINKA || '';
+const LIMIT_PRIJAVA = +process.env.LIMIT_PRIJAVA || 10; // pokušaja prijave na 15 minuta po adresi
+const ADMIN_TRAJE = 12 * 3600e3;
+const adminSesije = new Map(); // token -> ističe (ms)
+const otisakLozinke = (x) => crypto.createHash('sha256').update(String(x)).digest();
+function tacnaLozinka(x) {
+  return !!ADMIN_LOZINKA && typeof x === 'string' && crypto.timingSafeEqual(otisakLozinke(x), otisakLozinke(ADMIN_LOZINKA));
+}
+function kolacic(req, ime) {
+  for (const deo of String(req.headers.cookie || '').split(';')) {
+    const [k, ...v] = deo.trim().split('=');
+    if (k === ime) return v.join('=');
+  }
+  return '';
+}
+function jeAdmin(req) {
+  const t = kolacic(req, 'skviz_admin');
+  const istice = t && adminSesije.get(t);
+  if (!istice) return false;
+  if (Date.now() > istice) { adminSesije.delete(t); return false; }
+  return true;
+}
+// iza Caddy-ja (HTTPS) kolačić sme samo preko HTTPS-a
+const preko_https = (req) => adresaJeLokalna(req) && req.headers['x-forwarded-proto'] === 'https';
+setInterval(() => { const sad = Date.now(); for (const [t, d] of adminSesije) if (sad > d) adminSesije.delete(t); }, 3600e3).unref();
+
 // ograničenje učestalosti po adresi (iza Caddy-ja prava adresa je u X-Forwarded-For)
 const brojaci = new Map(); // kljuc -> { n, od }
+function adresaJeLokalna(req) {
+  const l = req.socket.remoteAddress || '';
+  return l === '127.0.0.1' || l === '::1' || l === '::ffff:127.0.0.1';
+}
 function adresa(req) {
   const l = req.socket.remoteAddress || '';
-  const lokalno = l === '127.0.0.1' || l === '::1' || l === '::ffff:127.0.0.1';
-  const xf = lokalno && req.headers['x-forwarded-for'];
+  const xf = adresaJeLokalna(req) && req.headers['x-forwarded-for'];
   return xf ? String(xf).split(',').pop().trim() : l;
 }
 function previse(req, vrsta, maks, prozorMs) {
@@ -87,7 +122,11 @@ setInterval(() => {
   for (const [k, s] of sobe) {
     const nikog = !(tokovi.get(k)?.size) && !(cekaci.get(k)?.size);
     const dokle = s.igraci.size === 0 || s.faza === 'lobi' ? 30 * 60e3 : 3 * 3600e3; // prazne i nepokrenute sobe brže nestaju
-    if (nikog && Date.now() - s.zadnjaAktivnost > dokle) { clearTimeout(s.tajmer); sobe.delete(k); tokovi.delete(k); cekaci.delete(k); }
+    if (nikog && Date.now() - s.zadnjaAktivnost > dokle) {
+      if (s.faza !== 'lobi' && s.faza !== 'kraj') s.zabelezi('igra-prekinuta', Date.now() - s.igraPocela);
+      s.zabelezi('soba-zatvorena', Date.now() - s.napravljena);
+      clearTimeout(s.tajmer); sobe.delete(k); tokovi.delete(k); cekaci.delete(k);
+    }
   }
 }, 60e3);
 // vođa koji je nestao (ugašen telefon, zatvorena stranica) predaje vođstvo prvom prisutnom igraču
@@ -229,6 +268,7 @@ async function obradi(req, res) {
     const brojevi = (url.searchParams.get('brojevi') || '').slice(0, 400).split(',').map(Number).filter((n) => Number.isSafeInteger(n) && n > 0);
     try { return kraj(res, 200, await predlozi.stanje(brojevi)); } catch (e) { return kraj(res, e.kod || 502, { greska: e.message }); }
   }
+  if (p === '/admin' || p.startsWith('/api/admin/')) return admin(req, res, p, url);
   if (p === '/urednik') return staticki(res, JAVNO, '/urednik.html', { 'X-Robots-Tag': 'noindex' });
 
   if (p === '/api/akcija' && req.method === 'POST') {
@@ -245,6 +285,7 @@ async function obradi(req, res) {
       sobe.set(kod, s);
       if (b.pismo === 'latinica') s.podesavanja.pismo = 'latinica';
       s.dodajIgraca(id, b.ime, b.avatar);
+      s.zabelezi('soba-nova');
       return kraj(res, 200, { kod });
     }
     const soba = sobe.get(String(b.soba || '').toUpperCase());
@@ -284,6 +325,47 @@ async function obradi(req, res) {
   // TV ekran je ista stranica – pretraživači neka indeksiraju samo početnu
   if (p === '/ekran') return staticki(res, JAVNO, '/index.html', { 'X-Robots-Tag': 'noindex' });
   return staticki(res, JAVNO, p);
+}
+
+async function admin(req, res, p, url) {
+  if (!ADMIN_LOZINKA) return kraj(res, 404, 'nema');
+  if (p === '/admin') {
+    return staticki(res, path.join(__dirname, 'admin'), '/admin.html', {
+      'X-Robots-Tag': 'noindex, nofollow', 'Cache-Control': 'no-store', 'X-Frame-Options': 'DENY',
+      'Content-Security-Policy': "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; frame-ancestors 'none'",
+    });
+  }
+  if (p === '/api/admin/prijava' && req.method === 'POST') {
+    if (previse(req, 'prijava', LIMIT_PRIJAVA, 15 * 60e3)) return kraj(res, 429, { greska: 'Previše pokušaja. Pokušaj ponovo za 15 minuta.' });
+    const b = await citajTelo(req);
+    if (!tacnaLozinka(b.lozinka)) return kraj(res, 403, { greska: 'Pogrešna lozinka' });
+    const t = crypto.randomBytes(32).toString('hex');
+    adminSesije.set(t, Date.now() + ADMIN_TRAJE);
+    res.setHeader('Set-Cookie', `skviz_admin=${t}; Path=/; HttpOnly; SameSite=Strict; Max-Age=${ADMIN_TRAJE / 1000}${preko_https(req) ? '; Secure' : ''}`);
+    return kraj(res, 200, { ok: true });
+  }
+  if (p === '/api/admin/odjava' && req.method === 'POST') {
+    adminSesije.delete(kolacic(req, 'skviz_admin'));
+    res.setHeader('Set-Cookie', 'skviz_admin=; Path=/; HttpOnly; SameSite=Strict; Max-Age=0');
+    return kraj(res, 200, { ok: true });
+  }
+  if (!jeAdmin(req)) return kraj(res, 401, { greska: 'Potrebna je prijava' });
+  if (p === '/api/admin/istorija') return kraj(res, 200, telemetrija.istorija(url.searchParams.get('dana') || 14));
+  if (p === '/api/admin/uzivo') {
+    // presek svih soba na svake 2 s, dok je stranica otvorena
+    res.writeHead(200, { 'Content-Type': 'text/event-stream', 'Cache-Control': 'no-cache', Connection: 'keep-alive', 'X-Accel-Buffering': 'no' });
+    res.write('retry: 3000\n\n');
+    let tik = null;
+    const salji = () => {
+      if (!jeAdmin(req)) { clearInterval(tik); return res.end(); } // sesija je istekla ili je odjavljen
+      posalji(res, telemetrija.presek(sobe));
+    };
+    salji();
+    tik = setInterval(salji, 2000);
+    req.on('close', () => clearInterval(tik));
+    return;
+  }
+  return kraj(res, 404, { greska: 'nema' });
 }
 
 function lanAdrese() {
