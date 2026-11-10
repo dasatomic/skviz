@@ -323,6 +323,53 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | umetnost | mondrijan.jpg | Piet Mondrian | Public domain | [izvor](https://commons.wikimedia.org/wiki/File%3APiet%20Mondriaan%2C%201930%20-%20Mondrian%20Composition%20II%20in%20Red%2C%20Blue%2C%20and%20Yellow.jpg) |
 | umetnost | fallingwater.jpg | lachrimae72 | CC0 | [izvor](https://en.wikipedia.org/wiki/Fallingwater) |
 | umetnost | pijeta.jpg | original file by Stanislav Traykov | CC BY 2.5 | [izvor](https://en.wikipedia.org/wiki/Piet%C3%A0_(Michelangelo)) |
+| umetnost | vg-autoportret.jpg | Vincent van Gogh | Public domain | [izvor](https://en.wikipedia.org/wiki/Vincent_van_Gogh) |
+| umetnost | vg-uvo.jpg | Vincent van Gogh | Public domain | [izvor](https://en.wikipedia.org/wiki/Self-Portrait_with_Bandaged_Ear) |
+| umetnost | santa-marija.jpg | Marcin Białek | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Santa_Maria_delle_Grazie%2C_Milan) |
+| umetnost | sikstina.jpg | Antoine Taveneaux | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Sistine_Chapel_ceiling) |
+| umetnost | rijksmuzej.jpg | Trougnouf (Benoit Brummer) | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Rijksmuseum) |
+| umetnost | mone.jpg | Nadar | Public domain | [izvor](https://en.wikipedia.org/wiki/Claude_Monet) |
+| umetnost | predic.jpg | The original uploader was Бошко at Serbian Wikipedia. | CC BY 3.0 rs | [izvor](https://en.wikipedia.org/wiki/Uro%C5%A1_Predi%C4%87) |
+| umetnost | mikelandjelo.jpg | Attributed to Daniele da Volterra | Public domain | [izvor](https://en.wikipedia.org/wiki/Michelangelo) |
+| umetnost | mala-balerina.jpg | Edgar Degas | CC0 | [izvor](https://en.wikipedia.org/wiki/Little_Dancer_of_Fourteen_Years) |
+| umetnost | klimt.jpg | Josef Anton Trčka | Public domain | [izvor](https://en.wikipedia.org/wiki/Gustav_Klimt) |
+| umetnost | mondrijan-foto.jpg | AnonymousUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Piet_Mondrian) |
+| umetnost | rafael.jpg | Raphael | Public domain | [izvor](https://en.wikipedia.org/wiki/Raphael) |
+| umetnost | goja.jpg | Vicente López Portaña | Public domain | [izvor](https://en.wikipedia.org/wiki/Francisco_Goya) |
+| umetnost | hokusai.jpg | missing name | CC0 | [izvor](https://en.wikipedia.org/wiki/Hokusai) |
+| umetnost | bazilika-petar.jpg | Alvesgaspar | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/St._Peter's_Basilica) |
+| umetnost | milena.jpg | Fondacija Milenin dom – Galerija Milene Pavlović-Barili | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Milena_Pavlovi%C4%87-Barili) |
+| umetnost | mozaik.jpg | Petar Milošević | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Justinian_I) |
+| umetnost | pejzaz.jpg | John Constable | Public domain | [izvor](https://en.wikipedia.org/wiki/The_Hay_Wain) |
+| umetnost | direr.jpg | Albrecht Dürer | Public domain | [izvor](https://en.wikipedia.org/wiki/Self-Portrait_(D%C3%BCrer%2C_Munich)) |
+| umetnost | mrtva-priroda.jpg | Juan Sánchez Cotán | Public domain | [izvor](https://en.wikipedia.org/wiki/Still_life) |
+| umetnost | zec.jpg | Albrecht Dürer | Public domain | [izvor](https://en.wikipedia.org/wiki/Young_Hare) |
+| umetnost | leonardo.jpg | Leonardo da Vinci | Public domain | [izvor](https://en.wikipedia.org/wiki/Portrait_of_a_Man_in_Red_Chalk) |
+| umetnost | dali.jpg | Van Vechten, Carl, 1880-1964. | Public domain | [izvor](https://en.wikipedia.org/wiki/Salvador_Dal%C3%AD) |
+| umetnost | matis-sesir.jpg | Henri Matisse | Public domain | [izvor](https://en.wikipedia.org/wiki/Woman_with_a_Hat) |
+| umetnost | polok.jpg | Hans Namuth | Public domain | [izvor](https://en.wikipedia.org/wiki/Jackson_Pollock) |
+| umetnost | frida.jpg | Guillermo Kahlo | Public domain | [izvor](https://en.wikipedia.org/wiki/Frida_Kahlo) |
+| umetnost | ufici.jpg | Arek N. | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Uffizi) |
+| umetnost | ermitaz.jpg | GAlexandrova | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Hermitage_Museum) |
+| umetnost | prado.jpg | Emilio J. Rodríguez Posada | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Museo_del_Prado) |
+| umetnost | sumanovic.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Sava_%C5%A0umanovi%C4%87) |
+| umetnost | vitraz.jpg | PtrQs | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Stained_glass) |
+| umetnost | mezon-kare.jpg | Krzysztof Golik | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Maison_carr%C3%A9e) |
+| umetnost | kula-beograd.jpg | kallerna | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Belgrade_Tower) |
+| umetnost | geneks.jpg | kallerna | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Western_City_Gate) |
+| umetnost | korbizje.jpg | Joop van Bilsen for Anefo | CC0 | [izvor](https://en.wikipedia.org/wiki/Le_Corbusier) |
+| umetnost | akvaticki.jpg | Rick Ligthelm from Rotterdam, The Netherlands | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/London_Aquatics_Centre) |
+| umetnost | abramovic.jpg | Manfred Werner / Tsui | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Marina_Abramovi%C4%87) |
+| umetnost | pikaso.jpg | Argentina. Revista Vea y Lea | Public domain | [izvor](https://en.wikipedia.org/wiki/Pablo_Picasso) |
+| umetnost | vazari.jpg | Attributed to Jacopo Zucchi | Public domain | [izvor](https://en.wikipedia.org/wiki/Giorgio_Vasari) |
+| umetnost | knez-mihailo.jpg | George Groutas | CC BY 2.0 | [izvor](https://commons.wikimedia.org/wiki/File%3AThe%20statue%20of%20Prince%20Mihailo%20on%20Republic%20Square%20in%20Belgrade%20(cropped).jpg) |
+| umetnost | siroce.jpg | Uroš Predić | Public domain | [izvor](https://commons.wikimedia.org/wiki/File%3AUro%C5%A1%20Predi%C4%87%20-%20Siro%C4%8De.jpg) |
+| umetnost | zivernij.jpg | Michal Osmenda from Brussels, Belgium | CC BY 2.0 | [izvor](https://commons.wikimedia.org/wiki/File%3AClaude%20Monet%20house%20and%20garden%20in%20Giverny%20(8742619222).jpg) |
+| umetnost | gris-pikaso.jpg | Juan Gris | Public domain | [izvor](https://commons.wikimedia.org/wiki/File%3AJuan%20Gris%20-%20Portrait%20of%20Pablo%20Picasso%20-%20Google%20Art%20Project.jpg) |
+| umetnost | vinca.jpg | Original uploader was sr:Корисник:Дарко Максимовић at sr.wikipedia | CC BY-SA 3.0 | [izvor](https://commons.wikimedia.org/wiki/File%3AVincha%20066.jpg) |
+| umetnost | narodni-muzej.jpg | Imeao | CC0 | [izvor](https://commons.wikimedia.org/wiki/File%3ANational%20Museum%20of%20Serbia%20at%20the%20Republic%20Square%2C%20Belgrade%202022.jpg) |
+| umetnost | vorhol.jpg | Bernard Gotfryd | Public domain | [izvor](https://en.wikipedia.org/wiki/Andy_Warhol) |
+| umetnost | munk.jpg | Unknown authorUnknown author | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Edvard_Munch) |
 | zabava | ortega.jpg | Harald Krichel | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Jenna_Ortega) |
 | zabava | barton.jpg | Harald Krichel | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Tim_Burton) |
 | zabava | violoncelo.png | Georg Feitscher | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Cello) |

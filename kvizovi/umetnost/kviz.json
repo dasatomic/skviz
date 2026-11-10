@@ -35,7 +35,12 @@
         "Salvador Dali"
       ],
       "zanimljivost": "Van Gog je ovu sliku naslikao 1889, gledajući kroz prozor bolnice u kojoj se lečio. Za života je prodao vrlo malo slika, a danas su među najskupljima na svetu.",
-      "rec": "van"
+      "rec": "van",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/vg-autoportret.jpg",
+        "opis": "Van Gogov autoportret (1887) – naslikao ih je više od 35"
+      }
     },
     {
       "tezina": 2,
@@ -51,7 +56,12 @@
         "Egon Šile"
       ],
       "zanimljivost": "Norveški slikar Munk naslikao je nekoliko verzija Krika (slike, pasteli, litografije). Inspiraciju je dobio kada je u šetnji video krvavo crveno nebo – možda posledica erupcije vulkana Krakatau, čiji je pepeo bojio zalaske Sunca širom sveta.",
-      "rec": "munk"
+      "rec": "munk",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/munk.jpg",
+        "opis": "Edvard Munk (1863–1944)"
+      }
     },
     {
       "tezina": 2,
@@ -83,7 +93,12 @@
         "Sandro Botičeli"
       ],
       "zanimljivost": "Leonardo je eksperimentisao i slikao temperom na suvom zidu umesto kao fresku, pa je slika počela da se ljušti još za njegovog života. U Drugom svetskom ratu bomba je srušila deo zgrade, ali je zid sa slikom, zaštićen vrećama peska, preživeo.",
-      "rec": "večera"
+      "rec": "večera",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/santa-marija.jpg",
+        "opis": "Crkva i manastir Santa Marija dele Gracije u Milanu – „Tajna večera“ je na zidu manastirske trpezarije"
+      }
     },
     {
       "tezina": 2,
@@ -115,7 +130,12 @@
         "Donatelo"
       ],
       "zanimljivost": "Mikelanđelo je tavanicu slikao četiri godine (1508–1512), stojeći na skelama i zabačene glave. Smatrao je sebe pre svega vajarom – on je izvajao i čuvenog „Davida“.",
-      "rec": "mikelanđelo"
+      "rec": "mikelanđelo",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/sikstina.jpg",
+        "opis": "Tavanica Sikstinske kapele – Mikelanđelo ju je oslikavao četiri godine (1508–1512)"
+      }
     },
     {
       "tezina": 2,
@@ -147,7 +167,12 @@
         "Van Ajk"
       ],
       "zanimljivost": "Slika uopšte ne prikazuje noć! Potamnela je od starog laka, pa je dobila takvo ime. Prava scena se dešava danju. Kad je premeštana 1715, odsečeni su joj delovi sa strane da bi stala na zid.",
-      "rec": "rembrant"
+      "rec": "rembrant",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/rijksmuzej.jpg",
+        "opis": "Rajksmuzej u Amsterdamu, gde se čuva „Noćna straža“"
+      }
     },
     {
       "tezina": 3,
@@ -163,7 +188,12 @@
         "Ekspresionizam"
       ],
       "zanimljivost": "Slika se zove „Impresija, izlazak Sunca“ (1872). Jedan kritičar je podrugljivo nazvao slikare „impresionistima“ – a oni su ime prihvatili sa ponosom!",
-      "rec": "impresija"
+      "rec": "impresija",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/mone.jpg",
+        "opis": "Klod Mone 1899. godine"
+      }
     },
     {
       "tezina": 1,
@@ -179,7 +209,12 @@
         "Carica Milica"
       ],
       "zanimljivost": "Slika prikazuje devojku koja posle bitke na Kosovu polju traži svog verenika i neguje ranjene junake, kao u narodnoj pesmi. Uroš Predić je bio i najpoznatiji srpski portretista svog vremena.",
-      "rec": "devojka"
+      "rec": "devojka",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/predic.jpg",
+        "opis": "Uroš Predić (1857–1953)"
+      }
     },
     {
       "tezina": 2,
@@ -211,7 +246,27 @@
         "Mikerinova piramida"
       ],
       "zanimljivost": "Piramida je sagrađena od oko 2,3 miliona kamenih blokova, za faraona Kufua (Keopsa), pre oko 4.500 godina. Radili su je plaćeni radnici, a ne robovi, kako se dugo mislilo.",
-      "rec": "piramida"
+      "rec": "piramida",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "kutija": [
+          18,
+          26,
+          50,
+          42
+        ],
+        "istakni": [
+          "EGY"
+        ],
+        "tacke": [
+          {
+            "lat": 29.979,
+            "lon": 31.134,
+            "oznaka": "Giza"
+          }
+        ],
+        "opis": "Piramide u Gizi, kod Kaira"
+      }
     },
     {
       "tezina": 2,
@@ -223,7 +278,56 @@
         "Kolos sa Rodosa"
       ],
       "zanimljivost": "Sedam čuda starog sveta: Keopsova piramida, Viseći vrtovi Semiramide, Zevsov kip u Olimpiji, Artemidin hram u Efesu, Mauzolej u Halikarnasu, Kolos sa Rodosa i Svetionik na Farosu kod Aleksandrije. Kineski zid je proglašen za jedno od Novih sedam svetskih čuda 2007.",
-      "rec": "zid"
+      "rec": "zid",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "kutija": [
+          15,
+          8,
+          125,
+          52
+        ],
+        "istakni": [
+          "CHN"
+        ],
+        "tacke": [
+          {
+            "lat": 29.979,
+            "lon": 31.134
+          },
+          {
+            "lat": 32.536,
+            "lon": 44.421,
+            "oznaka": ""
+          },
+          {
+            "lat": 37.638,
+            "lon": 21.63
+          },
+          {
+            "lat": 37.95,
+            "lon": 27.36
+          },
+          {
+            "lat": 37.04,
+            "lon": 27.42
+          },
+          {
+            "lat": 36.451,
+            "lon": 28.227
+          },
+          {
+            "lat": 31.214,
+            "lon": 29.885
+          },
+          {
+            "lat": 40.43,
+            "lon": 116.57,
+            "oznaka": "Kineski zid"
+          }
+        ],
+        "opis": "Svih sedam čuda starog sveta bilo je oko istočnog Sredozemlja i u Mesopotamiji, svetu koji su poznavali stari Grci – Kineski zid je hiljadama kilometara dalje."
+      }
     },
     {
       "tezina": 2,
@@ -240,7 +344,27 @@
         "Atena Partenos"
       ],
       "zanimljivost": "Kolos je bio visok oko 33 m – skoro kao Kip slobode bez postolja. Srušio ga je zemljotres posle samo 54 godine. Slika gde stoji raskrečen iznad ulaza u luku je izmišljena – to ne bi bilo moguće izgraditi.",
-      "rec": "kolos"
+      "rec": "kolos",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "kutija": [
+          18,
+          26,
+          50,
+          42
+        ],
+        "istakni": [
+          "GRC"
+        ],
+        "tacke": [
+          {
+            "lat": 36.451,
+            "lon": 28.227,
+            "oznaka": "Rodos"
+          }
+        ],
+        "opis": "Ostrvo Rodos, u Grčkoj"
+      }
     },
     {
       "tezina": 3,
@@ -256,7 +380,27 @@
         "Viseći vrtovi Semiramide"
       ],
       "zanimljivost": "Grobnica je podignuta za persijskog namesnika Mausola, pa se po njemu sve velike grobnice zovu „mauzoleji“. Bila je u današnjem gradu Bodrumu u Turskoj.",
-      "rec": "mauzolej"
+      "rec": "mauzolej",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "kutija": [
+          18,
+          26,
+          50,
+          42
+        ],
+        "istakni": [
+          "TUR"
+        ],
+        "tacke": [
+          {
+            "lat": 37.038,
+            "lon": 27.424,
+            "oznaka": "Bodrum"
+          }
+        ],
+        "opis": "Halikarnas je današnji Bodrum, u Turskoj"
+      }
     },
     {
       "tezina": 2,
@@ -273,7 +417,27 @@
         "Mauzolej"
       ],
       "zanimljivost": "Svetionik je bio visok verovatno preko 100 m i stajao je skoro 1.500 godina, dok ga nisu srušili zemljotresi. Po ostrvu Faros, svetionik se u mnogim jezicima kaže „far“.",
-      "rec": "svetionik"
+      "rec": "svetionik",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "kutija": [
+          18,
+          26,
+          50,
+          42
+        ],
+        "istakni": [
+          "EGY"
+        ],
+        "tacke": [
+          {
+            "lat": 31.214,
+            "lon": 29.885,
+            "oznaka": "Aleksandrija"
+          }
+        ],
+        "opis": "Aleksandrija, u Egiptu"
+      }
     },
     {
       "tezina": 3,
@@ -290,7 +454,27 @@
         "Mauzolej u Halikarnasu"
       ],
       "zanimljivost": "Neki naučnici misle da su vrtovi zapravo bili u asirskom gradu Ninivi, a ne u Vavilonu. Arheolozi u Vavilonu nisu pronašli nikakve pouzdane ostatke vrtova.",
-      "rec": "vrt"
+      "rec": "vrt",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "kutija": [
+          18,
+          26,
+          50,
+          42
+        ],
+        "istakni": [
+          "IRQ"
+        ],
+        "tacke": [
+          {
+            "lat": 32.536,
+            "lon": 44.421,
+            "oznaka": "Vavilon"
+          }
+        ],
+        "opis": "Ruševine Vavilona, u današnjem Iraku"
+      }
     },
     {
       "tezina": 3,
@@ -307,7 +491,27 @@
         "Miron"
       ],
       "zanimljivost": "Kip je bio visok oko 12 m i Zevs je sedeo na prestolu – da je ustao, probio bi krov hrama. Fidija je izradio i kip boginje Atine u Partenonu.",
-      "rec": "fidija"
+      "rec": "fidija",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "kutija": [
+          18,
+          26,
+          50,
+          42
+        ],
+        "istakni": [
+          "GRC"
+        ],
+        "tacke": [
+          {
+            "lat": 37.638,
+            "lon": 21.63,
+            "oznaka": "Olimpija"
+          }
+        ],
+        "opis": "Olimpija na Peloponezu, gde su održavane i antičke olimpijske igre"
+      }
     },
     {
       "tezina": 1,
@@ -323,7 +527,22 @@
         "Forum"
       ],
       "zanimljivost": "Koloseum je primao oko 50.000 gledalaca i imao je platnenu tendu protiv Sunca. Arena je mogla i da se napuni vodom za prikazivanje pomorskih bitaka!",
-      "rec": "koloseum"
+      "rec": "koloseum",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "evropa",
+        "istakni": [
+          "ITA"
+        ],
+        "tacke": [
+          {
+            "lat": 41.89,
+            "lon": 12.492,
+            "oznaka": "Rim"
+          }
+        ],
+        "opis": "Rim, Italija"
+      }
     },
     {
       "tezina": 1,
@@ -339,7 +558,22 @@
         "Alhambra"
       ],
       "zanimljivost": "Mogulski car Šah Džahan podigao ga je kao grobnicu za voljenu ženu Mumtaz Mahal. Gradilo ga je oko 20.000 radnika, a mermer menja boju tokom dana – od ružičaste do zlatne.",
-      "rec": "tadž"
+      "rec": "tadž",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "azija",
+        "istakni": [
+          "IND"
+        ],
+        "tacke": [
+          {
+            "lat": 27.175,
+            "lon": 78.042,
+            "oznaka": "Agra"
+          }
+        ],
+        "opis": "Agra, Indija"
+      }
     },
     {
       "tezina": 2,
@@ -355,7 +589,22 @@
         "Teotivakan"
       ],
       "zanimljivost": "Maču Pikču je na oko 2.400 m visine. Inke su zidove gradile bez maltera, a kamenovi su toliko precizno uklopljeni da između njih ne može da stane ni oštrica noža.",
-      "rec": "inke"
+      "rec": "inke",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "j-amerika",
+        "istakni": [
+          "PER"
+        ],
+        "tacke": [
+          {
+            "lat": -13.163,
+            "lon": -72.545,
+            "oznaka": "Maču Pikču"
+          }
+        ],
+        "opis": "Andi u Peruu, na 2.430 m visine"
+      }
     },
     {
       "tezina": 2,
@@ -371,7 +620,22 @@
         "Persepolis"
       ],
       "zanimljivost": "Petru su isklesali Nabatejci pre više od 2.000 godina. Imali su pametan sistem kanala i cisterni za vodu usred pustinje. Petra je jedno od Novih sedam svetskih čuda.",
-      "rec": "petra"
+      "rec": "petra",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "bliski-istok",
+        "istakni": [
+          "JOR"
+        ],
+        "tacke": [
+          {
+            "lat": 30.328,
+            "lon": 35.444,
+            "oznaka": "Petra"
+          }
+        ],
+        "opis": "Petra, Jordan"
+      }
     },
     {
       "tezina": 2,
@@ -387,7 +651,22 @@
         "Tikal"
       ],
       "zanimljivost": "Piramida Kukulkan ima 365 stepenika – koliko dana u godini. Na prolećnu i jesenju ravnodnevnicu senka na stepeništu izgleda kao zmija koja silazi niz piramidu!",
-      "rec": "maje"
+      "rec": "maje",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "s-amerika",
+        "istakni": [
+          "MEX"
+        ],
+        "tacke": [
+          {
+            "lat": 20.684,
+            "lon": -88.568,
+            "oznaka": "Čičen Ica"
+          }
+        ],
+        "opis": "Poluostrvo Jukatan, Meksiko"
+      }
     },
     {
       "tezina": 1,
@@ -403,7 +682,22 @@
         "Meksiko Siti"
       ],
       "zanimljivost": "Statua je visoka 30 m (sa postoljem 38 m), a raspon ruku joj je 28 m. Nekoliko puta godišnje u nju udari grom!",
-      "rec": "hristos"
+      "rec": "hristos",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "j-amerika",
+        "istakni": [
+          "BRA"
+        ],
+        "tacke": [
+          {
+            "lat": -22.952,
+            "lon": -43.211,
+            "oznaka": "Rio"
+          }
+        ],
+        "opis": "Brdo Korkovado iznad Rio de Žaneira, Brazil"
+      }
     },
     {
       "tezina": 1,
@@ -419,7 +713,22 @@
         "Zid plača"
       ],
       "zanimljivost": "Sa svim krakovima Kineski zid je dug preko 20.000 km. Ali – ne vidi se golim okom sa Meseca, to je mit! Gradila ga je jedna dinastija za drugom tokom skoro 2.000 godina.",
-      "rec": "zid"
+      "rec": "zid",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "azija",
+        "istakni": [
+          "CHN"
+        ],
+        "tacke": [
+          {
+            "lat": 40.43,
+            "lon": 116.57,
+            "oznaka": "Badaling"
+          }
+        ],
+        "opis": "Badaling kod Pekinga – najposećeniji deo zida; ceo zid se proteže hiljadama kilometara kroz severnu Kinu"
+      }
     },
     {
       "tezina": 1,
@@ -435,7 +744,22 @@
         "Koloseum"
       ],
       "zanimljivost": "Partenon je posvećen boginji Atini. Na njemu skoro nema savršeno pravih linija – stubovi su malo zakrivljeni i nagnuti da bi iz daljine izgledali savršeno pravi.",
-      "rec": "partenon"
+      "rec": "partenon",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "evropa",
+        "istakni": [
+          "GRC"
+        ],
+        "tacke": [
+          {
+            "lat": 37.971,
+            "lon": 23.726,
+            "oznaka": "Atina"
+          }
+        ],
+        "opis": "Atina, Grčka"
+      }
     },
     {
       "tezina": 2,
@@ -451,7 +775,22 @@
         "Frenk Geri"
       ],
       "zanimljivost": "Gaudi je na Sagradi Familiji radio preko 40 godina. Kada su ga pitali zašto gradnja toliko traje, odgovorio je: „Moj klijent ne žuri“ – misleći na Boga.",
-      "rec": "gaudi"
+      "rec": "gaudi",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "evropa",
+        "istakni": [
+          "ESP"
+        ],
+        "tacke": [
+          {
+            "lat": 41.404,
+            "lon": 2.174,
+            "oznaka": "Barselona"
+          }
+        ],
+        "opis": "Barselona, Španija"
+      }
     },
     {
       "tezina": 1,
@@ -467,7 +806,22 @@
         "Big Ben"
       ],
       "zanimljivost": "Leti, zbog toplote, gvožđe se širi pa je Ajfelova kula i do 15 cm viša nego zimi. Farba se svakih sedam godina, a za to treba oko 60 tona boje.",
-      "rec": "ajfel"
+      "rec": "ajfel",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "evropa",
+        "istakni": [
+          "FRA"
+        ],
+        "tacke": [
+          {
+            "lat": 48.858,
+            "lon": 2.294,
+            "oznaka": "Pariz"
+          }
+        ],
+        "opis": "Pariz, Francuska"
+      }
     },
     {
       "tezina": 1,
@@ -483,7 +837,22 @@
         "Crkva na Oplencu"
       ],
       "zanimljivost": "Gradnja hrama je počela 1935, a prekidana je zbog ratova decenijama. Sa krstom je visok preko 80 m, a njegovih 49 zvona izliveno je u Austriji. Kupola je podignuta 1989. – teška preko 4.000 tona, dizana je hidrauličnim dizalicama.",
-      "rec": "hram"
+      "rec": "hram",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "srbija",
+        "istakni": [
+          "SRB"
+        ],
+        "tacke": [
+          {
+            "lat": 44.798,
+            "lon": 20.469,
+            "oznaka": "Beograd"
+          }
+        ],
+        "opis": "Vračar, Beograd"
+      }
     },
     {
       "tezina": 1,
@@ -499,7 +868,22 @@
         "Ajfelova kula"
       ],
       "zanimljivost": "Toranj je počeo da se naginje već tokom gradnje, jer je tlo bilo mekano. Inženjeri su ga 1990–2001. ispravili za oko 40 cm, pa sad „sigurno“ stoji bar još 200 godina.",
-      "rec": "piza"
+      "rec": "piza",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "evropa",
+        "istakni": [
+          "ITA"
+        ],
+        "tacke": [
+          {
+            "lat": 43.723,
+            "lon": 10.396,
+            "oznaka": "Piza"
+          }
+        ],
+        "opis": "Piza, Italija"
+      }
     },
     {
       "tezina": 2,
@@ -515,7 +899,22 @@
         "San Francisko"
       ],
       "zanimljivost": "Projektovao ju je danski arhitekta Jern Uton, koji je pobedio na konkursu. Gradnja je trajala 14 godina umesto planiranih 4, a krov je pokriven sa preko milion pločica.",
-      "rec": "opera"
+      "rec": "opera",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "australija",
+        "istakni": [
+          "AUS"
+        ],
+        "tacke": [
+          {
+            "lat": -33.857,
+            "lon": 151.215,
+            "oznaka": "Sidnej"
+          }
+        ],
+        "opis": "Sidnej, Australija"
+      }
     },
     {
       "tezina": 2,
@@ -531,7 +930,22 @@
         "Notr Dam"
       ],
       "zanimljivost": "Aja Sofiju je podigao vizantijski car Justinijan 537. godine za samo oko pet godina. Kada je ušao, navodno je uzviknuo: „Solomone, nadmašio sam te!“ Posle 1453. pretvorena je u džamiju.",
-      "rec": "sofija"
+      "rec": "sofija",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "evropa",
+        "istakni": [
+          "TUR"
+        ],
+        "tacke": [
+          {
+            "lat": 41.008,
+            "lon": 28.98,
+            "oznaka": "Istanbul"
+          }
+        ],
+        "opis": "Istanbul, Turska – nekadašnji Carigrad"
+      }
     },
     {
       "tezina": 2,
@@ -547,7 +961,22 @@
         "Karnak"
       ],
       "zanimljivost": "Stounhendž je star oko 5.000 godina. Neki manji „plavi kamenovi“ dovučeni su iz Velsa, udaljenog oko 240 km! Za letnju dugodnevicu Sunce izlazi tačno u pravcu glavne ose spomenika.",
-      "rec": "stounhendž"
+      "rec": "stounhendž",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "evropa",
+        "istakni": [
+          "GBR"
+        ],
+        "tacke": [
+          {
+            "lat": 51.179,
+            "lon": -1.826,
+            "oznaka": "Stounhendž"
+          }
+        ],
+        "opis": "Ravnica Solsberi, južna Engleska"
+      }
     },
     {
       "tezina": 1,
@@ -563,7 +992,22 @@
         "Boston"
       ],
       "zanimljivost": "Kip je poklon Francuske Americi (1886). Unutrašnju gvozdenu konstrukciju projektovao je Gustav Ajfel – isti onaj od Ajfelove kule. Kip je od bakra, pa je prvobitno bio braon-sjajan, a tek kasnije pozeleneo.",
-      "rec": "kip"
+      "rec": "kip",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "s-amerika",
+        "istakni": [
+          "USA"
+        ],
+        "tacke": [
+          {
+            "lat": 40.689,
+            "lon": -74.045,
+            "oznaka": "Njujork"
+          }
+        ],
+        "opis": "Ostrvo Slobode u njujorškoj luci, SAD"
+      }
     },
     {
       "tezina": 2,
@@ -579,7 +1023,22 @@
         "Petronas tornjevi"
       ],
       "zanimljivost": "Burdž Kalifa u Dubaiju visoka je 828 m i ima preko 160 spratova. Na vrhu je toliko hladnije nego na zemlji da ljudi na gornjim spratovima, za vreme ramazana, prekidaju post nekoliko minuta kasnije – jer duže vide Sunce!",
-      "rec": "burdž"
+      "rec": "burdž",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "bliski-istok",
+        "istakni": [
+          "ARE"
+        ],
+        "tacke": [
+          {
+            "lat": 25.197,
+            "lon": 55.274,
+            "oznaka": "Dubai"
+          }
+        ],
+        "opis": "Dubai, Ujedinjeni Arapski Emirati"
+      }
     },
     {
       "tezina": 3,
@@ -595,7 +1054,22 @@
         "Panteon"
       ],
       "zanimljivost": "Gradnja Notr Dama počela je 1163. i trajala skoro 200 godina. U požaru se srušio vitki toranj, ali su vatrogasci spasli zvonike. Grbavac iz Notr Dama, roman Viktora Igoa, pomogao je u 19. veku da se katedrala spasi od propadanja.",
-      "rec": "katedrala"
+      "rec": "katedrala",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "evropa",
+        "istakni": [
+          "FRA"
+        ],
+        "tacke": [
+          {
+            "lat": 48.853,
+            "lon": 2.35,
+            "oznaka": "Pariz"
+          }
+        ],
+        "opis": "Ostrvo Site na reci Seni, u samom centru Pariza"
+      }
     },
     {
       "tezina": 3,
@@ -611,7 +1085,22 @@
         "Tejt modern"
       ],
       "zanimljivost": "Muzej je toliko privukao turiste da se pojava kada jedna zgrada promeni ceo grad zove „efekat Bilbaa“. Frenk Geri je modele za zgrade pravio od zgužvanog papira i kartona.",
-      "rec": "gugenhajm"
+      "rec": "gugenhajm",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "evropa",
+        "istakni": [
+          "ESP"
+        ],
+        "tacke": [
+          {
+            "lat": 43.268,
+            "lon": -2.934,
+            "oznaka": "Bilbao"
+          }
+        ],
+        "opis": "Bilbao, Baskija (Španija)"
+      }
     },
     {
       "tezina": 3,
@@ -639,7 +1128,11 @@
         "Narandžasta, ljubičasta, zelena"
       ],
       "zanimljivost": "Mešanjem osnovnih boja dobijaju se izvedene: žuta i plava daju zelenu, crvena i žuta narandžastu, crvena i plava ljubičastu. Ekrani rade drugačije – svetlo meša crvenu, zelenu i plavu (RGB).",
-      "rec": "boja"
+      "rec": "boja",
+      "medijiOdgovora": {
+        "vrsta": "svg",
+        "kod": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 222\"><rect x=\"14\" y=\"10\" width=\"56\" height=\"40\" rx=\"8\" fill=\"#e8262b\" stroke=\"#fff\" stroke-width=\"1\"/><text x=\"42\" y=\"66\" text-anchor=\"middle\" font-size=\"11\" fill=\"#fff\">crvena</text><text x=\"88\" y=\"37\" text-anchor=\"middle\" font-size=\"22\" fill=\"#fff\">+</text><rect x=\"116\" y=\"10\" width=\"56\" height=\"40\" rx=\"8\" fill=\"#ffd700\" stroke=\"#fff\" stroke-width=\"1\"/><text x=\"144\" y=\"66\" text-anchor=\"middle\" font-size=\"11\" fill=\"#fff\">žuta</text><text x=\"190\" y=\"37\" text-anchor=\"middle\" font-size=\"22\" fill=\"#fff\">=</text><rect x=\"218\" y=\"10\" width=\"56\" height=\"40\" rx=\"8\" fill=\"#ff8c00\" stroke=\"#fff\" stroke-width=\"1\"/><text x=\"246\" y=\"66\" text-anchor=\"middle\" font-size=\"11\" fill=\"#fff\">narandžasta</text><rect x=\"14\" y=\"82\" width=\"56\" height=\"40\" rx=\"8\" fill=\"#ffd700\" stroke=\"#fff\" stroke-width=\"1\"/><text x=\"42\" y=\"138\" text-anchor=\"middle\" font-size=\"11\" fill=\"#fff\">žuta</text><text x=\"88\" y=\"109\" text-anchor=\"middle\" font-size=\"22\" fill=\"#fff\">+</text><rect x=\"116\" y=\"82\" width=\"56\" height=\"40\" rx=\"8\" fill=\"#1e50c8\" stroke=\"#fff\" stroke-width=\"1\"/><text x=\"144\" y=\"138\" text-anchor=\"middle\" font-size=\"11\" fill=\"#fff\">plava</text><text x=\"190\" y=\"109\" text-anchor=\"middle\" font-size=\"22\" fill=\"#fff\">=</text><rect x=\"218\" y=\"82\" width=\"56\" height=\"40\" rx=\"8\" fill=\"#2e9e3e\" stroke=\"#fff\" stroke-width=\"1\"/><text x=\"246\" y=\"138\" text-anchor=\"middle\" font-size=\"11\" fill=\"#fff\">zelena</text><rect x=\"14\" y=\"154\" width=\"56\" height=\"40\" rx=\"8\" fill=\"#1e50c8\" stroke=\"#fff\" stroke-width=\"1\"/><text x=\"42\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" fill=\"#fff\">plava</text><text x=\"88\" y=\"181\" text-anchor=\"middle\" font-size=\"22\" fill=\"#fff\">+</text><rect x=\"116\" y=\"154\" width=\"56\" height=\"40\" rx=\"8\" fill=\"#e8262b\" stroke=\"#fff\" stroke-width=\"1\"/><text x=\"144\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" fill=\"#fff\">crvena</text><text x=\"190\" y=\"181\" text-anchor=\"middle\" font-size=\"22\" fill=\"#fff\">=</text><rect x=\"218\" y=\"154\" width=\"56\" height=\"40\" rx=\"8\" fill=\"#7b2fa8\" stroke=\"#fff\" stroke-width=\"1\"/><text x=\"246\" y=\"210\" text-anchor=\"middle\" font-size=\"11\" fill=\"#fff\">ljubičasta</text></svg>"
+      }
     },
     {
       "tezina": 2,
@@ -651,7 +1144,12 @@
         "Realizam"
       ],
       "zanimljivost": "Pikaso je počeo da crta pre nego što je progovorio – prva reč mu je bila „piz“, od „lapiz“ (olovka). Puno ime mu ima preko 20 reči!",
-      "rec": "kubizam"
+      "rec": "kubizam",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/gris-pikaso.jpg",
+        "opis": "Huan Gris, „Portret Pabla Pikasa“ (1912) – kubistički portret: lice i odelo razloženi na geometrijske plohe"
+      }
     },
     {
       "tezina": 3,
@@ -663,7 +1161,12 @@
         "Olja Ivanjicki"
       ],
       "zanimljivost": "Milena je umrla mlada, sa samo 36 godina, u Njujorku. Njena rodna kuća u Požarevcu danas je galerija. Bila je i pesnikinja, a slikala je neobične, sanjive prizore u stilu nadrealizma.",
-      "rec": "barili"
+      "rec": "barili",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/milena.jpg",
+        "opis": "Milena Pavlović Barili (1909–1945)"
+      }
     },
     {
       "tezina": 1,
@@ -675,7 +1178,12 @@
         "Grafika"
       ],
       "zanimljivost": "Mozaici iz Feliks Romulijane i Medijane u Nišu stari su oko 1.700 godina. Najveće mozaičke površine u Srbiji su u crkvi na Oplencu i u Hramu Svetog Save.",
-      "rec": "mozaik"
+      "rec": "mozaik",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/mozaik.jpg",
+        "opis": "Car Justinijan na mozaiku iz crkve San Vitale u Raveni (6. vek)"
+      }
     },
     {
       "tezina": 3,
@@ -699,7 +1207,12 @@
         "Autoportret"
       ],
       "zanimljivost": "Portret prikazuje osobu, autoportret samog slikara, a mrtva priroda predmete – voće, cveće, posuđe.",
-      "rec": "pejzaž"
+      "rec": "pejzaž",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/pejzaz.jpg",
+        "opis": "Džon Konstabl, „Kola sa senom“ (1821) – pejzaž engleskog sela"
+      }
     },
     {
       "tezina": 1,
@@ -711,7 +1224,12 @@
         "Karikatura"
       ],
       "zanimljivost": "Van Gog je naslikao preko 35 autoportreta, delom i zato što nije imao novca da plaća modele.",
-      "rec": "autoportret"
+      "rec": "autoportret",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/direr.jpg",
+        "opis": "Albreht Direr, autoportret iz 1500. godine"
+      }
     },
     {
       "tezina": 1,
@@ -723,7 +1241,12 @@
         "Mural"
       ],
       "zanimljivost": "Holandski slikari 17. veka bili su majstori mrtve prirode – njihove slike bile su toliko verne da su se činile stvarnim.",
-      "rec": "priroda"
+      "rec": "priroda",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/mrtva-priroda.jpg",
+        "opis": "Huan Sančes Kotan, mrtva priroda (oko 1602)"
+      }
     },
     {
       "tezina": 1,
@@ -747,7 +1270,12 @@
         "Kredom"
       ],
       "zanimljivost": "Akvarel je providan – svetlost prolazi kroz boju i odbija se od belog papira. Zato se bela boja u akvarelu ne koristi, već se ostavlja beo papir.",
-      "rec": "akvarel"
+      "rec": "akvarel",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/zec.jpg",
+        "opis": "Albreht Direr, „Mladi zec“ (1502) – akvarel u kome se vidi skoro svaka dlaka"
+      }
     },
     {
       "tezina": 1,
@@ -771,7 +1299,11 @@
         "Braon"
       ],
       "zanimljivost": "Dodavanjem bele boja postaje svetlija, a dodavanjem crne – tamnija. Svetle nijanse zovu se pastelne boje.",
-      "rec": "roze"
+      "rec": "roze",
+      "medijiOdgovora": {
+        "vrsta": "svg",
+        "kod": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 150\"><rect x=\"14\" y=\"10\" width=\"56\" height=\"40\" rx=\"8\" fill=\"#e8262b\" stroke=\"#fff\" stroke-width=\"1\"/><text x=\"42\" y=\"66\" text-anchor=\"middle\" font-size=\"11\" fill=\"#fff\">crvena</text><text x=\"88\" y=\"37\" text-anchor=\"middle\" font-size=\"22\" fill=\"#fff\">+</text><rect x=\"116\" y=\"10\" width=\"56\" height=\"40\" rx=\"8\" fill=\"#ffffff\" stroke=\"#fff\" stroke-width=\"1\"/><text x=\"144\" y=\"66\" text-anchor=\"middle\" font-size=\"11\" fill=\"#fff\">bela</text><text x=\"190\" y=\"37\" text-anchor=\"middle\" font-size=\"22\" fill=\"#fff\">=</text><rect x=\"218\" y=\"10\" width=\"56\" height=\"40\" rx=\"8\" fill=\"#f4a6c0\" stroke=\"#fff\" stroke-width=\"1\"/><text x=\"246\" y=\"66\" text-anchor=\"middle\" font-size=\"11\" fill=\"#fff\">roze</text><rect x=\"14\" y=\"82\" width=\"56\" height=\"40\" rx=\"8\" fill=\"#e8262b\" stroke=\"#fff\" stroke-width=\"1\"/><text x=\"42\" y=\"138\" text-anchor=\"middle\" font-size=\"11\" fill=\"#fff\">crvena</text><text x=\"88\" y=\"109\" text-anchor=\"middle\" font-size=\"22\" fill=\"#fff\">+</text><rect x=\"116\" y=\"82\" width=\"56\" height=\"40\" rx=\"8\" fill=\"#111111\" stroke=\"#fff\" stroke-width=\"1\"/><text x=\"144\" y=\"138\" text-anchor=\"middle\" font-size=\"11\" fill=\"#fff\">crna</text><text x=\"190\" y=\"109\" text-anchor=\"middle\" font-size=\"22\" fill=\"#fff\">=</text><rect x=\"218\" y=\"82\" width=\"56\" height=\"40\" rx=\"8\" fill=\"#6e0f14\" stroke=\"#fff\" stroke-width=\"1\"/><text x=\"246\" y=\"138\" text-anchor=\"middle\" font-size=\"11\" fill=\"#fff\">bordo</text></svg>"
+      }
     },
     {
       "tezina": 1,
@@ -783,7 +1315,11 @@
         "Siva i braon"
       ],
       "zanimljivost": "Tople boje podsećaju na vatru i sunce, a hladne na vodu i led. Slikari ih koriste da bi izazvali raspoloženje.",
-      "rec": "toplo"
+      "rec": "toplo",
+      "medijiOdgovora": {
+        "vrsta": "svg",
+        "kod": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 146\"><text x=\"145\" y=\"18\" text-anchor=\"middle\" font-size=\"13\" fill=\"#fff\">tople – podsećaju na vatru i sunce</text><rect x=\"40\" y=\"26\" width=\"64\" height=\"36\" rx=\"8\" fill=\"#e8262b\"/><rect x=\"112\" y=\"26\" width=\"64\" height=\"36\" rx=\"8\" fill=\"#ff8c00\"/><rect x=\"184\" y=\"26\" width=\"64\" height=\"36\" rx=\"8\" fill=\"#ffd700\"/><text x=\"145\" y=\"92\" text-anchor=\"middle\" font-size=\"13\" fill=\"#fff\">hladne – podsećaju na vodu i led</text><rect x=\"40\" y=\"100\" width=\"64\" height=\"36\" rx=\"8\" fill=\"#1e50c8\"/><rect x=\"112\" y=\"100\" width=\"64\" height=\"36\" rx=\"8\" fill=\"#2e9e3e\"/><rect x=\"184\" y=\"100\" width=\"64\" height=\"36\" rx=\"8\" fill=\"#7b2fa8\"/></svg>"
+      }
     },
     {
       "tezina": 1,
@@ -799,7 +1335,12 @@
         "Donatelo"
       ],
       "zanimljivost": "„David“ je visok preko 5 metara. Mikelanđelo je imao samo 26 godina kad je počeo da ga kleše.",
-      "rec": "mikelanđelo"
+      "rec": "mikelanđelo",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/mikelandjelo.jpg",
+        "opis": "Mikelanđelo na portretu Danijela da Voltere"
+      }
     },
     {
       "tezina": 1,
@@ -811,7 +1352,12 @@
         "Klod Mone"
       ],
       "zanimljivost": "Van Gog je to uradio 1888, posle svađe sa prijateljem Polom Gogenom. Za života je prodao vrlo malo slika, a danas su među najskupljima na svetu.",
-      "rec": "uvo"
+      "rec": "uvo",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/vg-uvo.jpg",
+        "opis": "Van Gog, „Autoportret sa zavijenim uhom“ (1889)"
+      }
     },
     {
       "tezina": 1,
@@ -823,7 +1369,12 @@
         "Sandro Botičeli"
       ],
       "zanimljivost": "Mona Liza nema obrve – možda ih je u ono doba bilo moderno brijati, a možda su izbledele tokom vekova.",
-      "rec": "leonardo"
+      "rec": "leonardo",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/leonardo.jpg",
+        "opis": "Crtež crvenom kredom za koji se veruje da je Leonardov autoportret"
+      }
     },
     {
       "tezina": 2,
@@ -835,7 +1386,12 @@
         "Huan Miro"
       ],
       "zanimljivost": "Dali je bio nadrealista – slikao je prizore kao iz snova. Imao je čuvene brkove uvijene nagore i voleo je da šokira publiku.",
-      "rec": "dali"
+      "rec": "dali",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/dali.jpg",
+        "opis": "Salvador Dali i njegovi čuveni zašiljeni brkovi"
+      }
     },
     {
       "tezina": 2,
@@ -851,7 +1407,12 @@
         "Pjer-Ogist Renoar"
       ],
       "zanimljivost": "Mone je naslikao oko 250 slika lokvanja. U starosti je imao kataraktu, pa su mu kasnije slike crvenkastije – tako je video boje.",
-      "rec": "mone"
+      "rec": "mone",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/zivernij.jpg",
+        "opis": "Moneov vrt u Živerniju danas – japanski most i jezerce sa lokvanjima"
+      }
     },
     {
       "pitanje": "Kako se zove pravac s početka 20. veka koji je predvodio Anri Matis, sa „divljim“, jarkim bojama?",
@@ -863,7 +1424,12 @@
       ],
       "tezina": 3,
       "zanimljivost": "Ime je nastalo od podsmeha: jedan kritičar je 1905. njihove slike nazvao delima „divljih zveri“ – na francuskom „les fauves“. Matis je kasnije, kad više nije mogao da slika, pravio slike od isečenog obojenog papira.",
-      "rec": "boja"
+      "rec": "boja",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/matis-sesir.jpg",
+        "opis": "Anri Matis, „Žena sa šeširom“ (1905) – lice je naslikano zelenom, ljubičastom i narandžastom"
+      }
     },
     {
       "tezina": 2,
@@ -879,7 +1445,12 @@
         "Rembrant"
       ],
       "zanimljivost": "Dega je naslikao i izvajao više stotina balerina. Najpoznatija skulptura „Mala plesačica“ nosi pravu tilnu suknjicu i mašnu.",
-      "rec": "dega"
+      "rec": "dega",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/mala-balerina.jpg",
+        "opis": "Dega je i vajao: „Mala balerina od četrnaest godina“ ima pravu suknjicu od tila i mašnu u kosi"
+      }
     },
     {
       "tezina": 2,
@@ -895,7 +1466,12 @@
         "Mone"
       ],
       "zanimljivost": "Klimt je koristio pravo zlato u listićima, kao na srednjovekovnim ikonama. „Poljubac“ se čuva u Beču, u Belvederu.",
-      "rec": "klimt"
+      "rec": "klimt",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/klimt.jpg",
+        "opis": "Gustav Klimt (1862–1918)"
+      }
     },
     {
       "tezina": 2,
@@ -911,6 +1487,11 @@
       "mediji": {
         "vrsta": "slika",
         "src": "slike/mondrijan.jpg"
+      },
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/mondrijan-foto.jpg",
+        "opis": "Pit Mondrijan kao mladić – počeo je slikajući sasvim obične pejzaže"
       }
     },
     {
@@ -923,7 +1504,12 @@
         "Rojs Lihtenštajn"
       ],
       "zanimljivost": "Vorhol je bio začetnik pop-arta. Rekao je da će „u budućnosti svako biti slavan 15 minuta“.",
-      "rec": "vorhol"
+      "rec": "vorhol",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/vorhol.jpg",
+        "opis": "Endi Vorhol (1928–1987)"
+      }
     },
     {
       "tezina": 2,
@@ -935,7 +1521,12 @@
         "Mone"
       ],
       "zanimljivost": "Polokova tehnika se zove „dripping“ (kapanje). Njegove slike nemaju ni početak ni kraj, ni gornju ni donju stranu.",
-      "rec": "polok"
+      "rec": "polok",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/polok.jpg",
+        "opis": "Džekson Polok (1912–1956)"
+      }
     },
     {
       "tezina": 2,
@@ -947,7 +1538,12 @@
         "Pikaso"
       ],
       "zanimljivost": "Frida Kalo je posle teške saobraćajne nesreće slikala ležeći u krevetu, sa ogledalom iznad sebe – zato ima toliko autoportreta.",
-      "rec": "kalo"
+      "rec": "kalo",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/frida.jpg",
+        "opis": "Frida Kalo na fotografiji svog oca Giljerma Kala (1932)"
+      }
     },
     {
       "tezina": 2,
@@ -959,7 +1555,12 @@
         "Muzej Bardelo"
       ],
       "zanimljivost": "U Uficiju su „Rođenje Venere“ i „Proleće“ Botičelija. Zgrada je prvobitno bila namenjena za kancelarije – „uffizi“ na italijanskom znači kancelarije.",
-      "rec": "ufici"
+      "rec": "ufici",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/ufici.jpg",
+        "opis": "Dvorište galerije Ufici – zgrada je prvobitno sagrađena za kancelarije firentinskih vlasti, a „uffizi“ na italijanskom i znači „kancelarije“"
+      }
     },
     {
       "tezina": 2,
@@ -971,7 +1572,12 @@
         "Pariz"
       ],
       "zanimljivost": "Ermitaž ima preko 3 miliona predmeta. U muzeju „radi“ i desetine mačaka koje čuvaju zgradu od miševa!",
-      "rec": "ermitaž"
+      "rec": "ermitaž",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/ermitaz.jpg",
+        "opis": "Zimski dvorac na reci Nevi, glavna zgrada Ermitaža"
+      }
     },
     {
       "tezina": 2,
@@ -983,7 +1589,12 @@
         "Lisabonu"
       ],
       "zanimljivost": "U Pradu su remek-dela Velaskeza, Goje i El Greka. Velaskezova slika „Las Meninas“ je jedna od najproučavanijih slika u istoriji.",
-      "rec": "prado"
+      "rec": "prado",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/prado.jpg",
+        "opis": "Muzej Prado, sa spomenikom slikaru Velaskezu ispred ulaza"
+      }
     },
     {
       "pitanje": "Koje selo u Banatu je poznato kao centar naivnog slikarstva, sa slikama seoskog života u jarkim bojama?",
@@ -995,7 +1606,22 @@
       ],
       "tezina": 3,
       "zanimljivost": "Naivni slikari iz Kovačice uglavnom su bili seljaci-samouci, najčešće Slovaci. Njihove slike prikazuju žetvu, svadbe, zimu i seoske poslove, a izlagane su širom sveta.",
-      "rec": "naiva"
+      "rec": "naiva",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "srbija",
+        "istakni": [
+          "SRB"
+        ],
+        "tacke": [
+          {
+            "lat": 45.111,
+            "lon": 20.621,
+            "oznaka": "Kovačica"
+          }
+        ],
+        "opis": "Kovačica, južni Banat"
+      }
     },
     {
       "tezina": 2,
@@ -1007,7 +1633,12 @@
         "Nadežda Petrović"
       ],
       "zanimljivost": "Šumanović je živeo u Šidu, gde je danas njegova galerija. Stradao je 1942. u Drugom svetskom ratu.",
-      "rec": "šumanović"
+      "rec": "šumanović",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/sumanovic.jpg",
+        "opis": "Sava Šumanović (1896–1942)"
+      }
     },
     {
       "tezina": 2,
@@ -1027,6 +1658,10 @@
     },
     {
       "pitanje": "Ko je izvajao konjanički spomenik knezu Mihailu na Trgu republike u Beogradu?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/knez-mihailo.jpg"
+      },
       "odgovori": [
         "Enriko Paci",
         "Ivan Meštrović",
@@ -1079,7 +1714,12 @@
         "Fresko-slika"
       ],
       "zanimljivost": "Vitraži katedrale Šartr su čuveni po plavoj boji. Svetlost koja prolazi kroz njih stvara šarene mrlje po podu crkve.",
-      "rec": "vitraž"
+      "rec": "vitraž",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/vitraz.jpg",
+        "opis": "Vitraž-rozeta u katedrali u Šartru (Francuska)"
+      }
     },
     {
       "tezina": 2,
@@ -1091,7 +1731,12 @@
         "Secesija"
       ],
       "zanimljivost": "Grčki stubovi su dorski, jonski i korintski. Korintski imaju kapitele sa lišćem akanta. Zgrada Narodne skupštine u Beogradu ima stubove po uzoru na antiku.",
-      "rec": "stub"
+      "rec": "stub",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/mezon-kare.jpg",
+        "opis": "Mezon Kare u Nimu (Francuska), rimski hram iz 1. veka – jedan od najbolje očuvanih"
+      }
     },
     {
       "tezina": 2,
@@ -1135,7 +1780,12 @@
         "Hram Svetog Save"
       ],
       "zanimljivost": "Kula Beograd na Beogradu na vodi visoka je oko 168 m. Beogradanka je, kada je izgrađena 1974, bila najviša zgrada u gradu.",
-      "rec": "kula"
+      "rec": "kula",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/kula-beograd.jpg",
+        "opis": "Kula Beograd (168 m) na obali Save"
+      }
     },
     {
       "tezina": 2,
@@ -1147,7 +1797,12 @@
         "Kula Ušće pored Brankovog mosta u Beogradu"
       ],
       "zanimljivost": "Geneks kulu je projektovao Mihajlo Mitrović 1977. Smatra se jednim od najlepših primera brutalizma u svetu.",
-      "rec": "geneks"
+      "rec": "geneks",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/geneks.jpg",
+        "opis": "Zapadna kapija Beograda (1977), delo arhitekte Mihajla Mitrovića"
+      }
     },
     {
       "tezina": 2,
@@ -1175,7 +1830,12 @@
         "Zaha Hadid"
       ],
       "zanimljivost": "Le Korbizje je smatrao da kuća treba da bude praktična kao mašina. Njegove ideje su oblikovale moderne gradove 20. veka.",
-      "rec": "korbizje"
+      "rec": "korbizje",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/korbizje.jpg",
+        "opis": "Le Korbizje i njegove čuvene okrugle naočare"
+      }
     },
     {
       "tezina": 2,
@@ -1187,7 +1847,12 @@
         "Milena Pavlović Barili"
       ],
       "zanimljivost": "Zaha Hadid je prva žena koja je dobila Prickerovu nagradu – „Nobela za arhitekturu“ (2004).",
-      "rec": "hadid"
+      "rec": "hadid",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/akvaticki.jpg",
+        "opis": "Olimpijski bazen u Londonu (2012), delo Zahe Hadid – krov podseća na talas"
+      }
     },
     {
       "tezina": 2,
@@ -1199,7 +1864,12 @@
         "Nadežda Petrović"
       ],
       "zanimljivost": "U performansu u Njujorku 2010. Marina je sedela nepomično i gledala posetioce u oči – ukupno preko 700 sati.",
-      "rec": "abramović"
+      "rec": "abramović",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/abramovic.jpg",
+        "opis": "Marina Abramović"
+      }
     },
     {
       "tezina": 3,
@@ -1215,7 +1885,12 @@
         "Ticijan"
       ],
       "zanimljivost": "Rafael je na freski naslikao filozofe sa licima svojih savremenika – Platon ima lice Leonarda, a Heraklit Mikelanđela.",
-      "rec": "rafael"
+      "rec": "rafael",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/rafael.jpg",
+        "opis": "Rafaelov autoportret – na „Atinskoj školi“ je naslikao i sebe, sasvim desno"
+      }
     },
     {
       "tezina": 3,
@@ -1243,7 +1918,12 @@
         "Goja"
       ],
       "zanimljivost": "Slika prikazuje bombardovanje baskijskog grada Gernike 1937. Kada je jedan nemački oficir pitao Pikasa „Jeste li vi ovo uradili?“, odgovorio je: „Ne, vi ste!“",
-      "rec": "gernika"
+      "rec": "gernika",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/pikaso.jpg",
+        "opis": "Pablo Pikaso (1881–1973)"
+      }
     },
     {
       "tezina": 3,
@@ -1259,7 +1939,12 @@
         "Pablo Pikaso"
       ],
       "zanimljivost": "Goja je u kasnim godinama ogluveo i slikao mračne „Crne slike“ direktno na zidovima svoje kuće.",
-      "rec": "goja"
+      "rec": "goja",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/goja.jpg",
+        "opis": "Francisko Goja na portretu Visentea Lopesa (1826)"
+      }
     },
     {
       "tezina": 3,
@@ -1271,7 +1956,12 @@
         "Mikelanđelo"
       ],
       "zanimljivost": "Vazari je prvi upotrebio reč „renesansa“ (rinascita – preporod). Njegova knjiga je glavni izvor o životu Leonarda i Mikelanđela.",
-      "rec": "vazari"
+      "rec": "vazari",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/vazari.jpg",
+        "opis": "Đorđo Vazari, autoportret"
+      }
     },
     {
       "tezina": 3,
@@ -1283,7 +1973,12 @@
         "Lepljenje papira, tkanine i drugih materijala na platno ili drvenu ploču"
       ],
       "zanimljivost": "Zahvaljujući sfumatu, osmeh Mona Lize izgleda kao da se menja – zavisno od toga gde gledamo.",
-      "rec": "sfumato"
+      "rec": "sfumato",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/mona-liza.jpg",
+        "opis": "Pogledaj uglove usana i očiju Mona Lize – nigde oštre linije, pa izraz lica kao da se menja"
+      }
     },
     {
       "tezina": 3,
@@ -1327,7 +2022,22 @@
         "Venera iz Vinče"
       ],
       "zanimljivost": "Figura je visoka samo 11 cm. Verovatno je bila simbol plodnosti. I Vinčanska kultura kod Beograda ostavila je hiljade glinenih figurina.",
-      "rec": "venera"
+      "rec": "venera",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "evropa",
+        "istakni": [
+          "AUT"
+        ],
+        "tacke": [
+          {
+            "lat": 48.32,
+            "lon": 15.4,
+            "oznaka": "Vilendorf"
+          }
+        ],
+        "opis": "Selo Vilendorf u dolini Dunava, Austrija"
+      }
     },
     {
       "tezina": 3,
@@ -1339,7 +2049,12 @@
         "Venera Miloska"
       ],
       "zanimljivost": "Vinčanska kultura je stara oko 7.000 godina. Ljudi iz Vinče su topili bakar – među prvima u Evropi.",
-      "rec": "vinča"
+      "rec": "vinča",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/vinca.jpg",
+        "opis": "Figurina iz Vinče, stara oko 7.000 godina"
+      }
     },
     {
       "tezina": 3,
@@ -1355,7 +2070,22 @@
         "Pobednik"
       ],
       "zanimljivost": "Venera Miloska pronađena je 1820. na grčkom ostrvu Milos. Ruke su joj verovatno odlomljene pre ili tokom iskopavanja – i nikada nisu pronađene.",
-      "rec": "venera"
+      "rec": "venera",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "evropa",
+        "istakni": [
+          "GRC"
+        ],
+        "tacke": [
+          {
+            "lat": 36.69,
+            "lon": 24.42,
+            "oznaka": "Milos"
+          }
+        ],
+        "opis": "Grčko ostrvo Milos, gde je statua pronađena 1820."
+      }
     },
     {
       "tezina": 3,
@@ -1387,7 +2117,22 @@
         "Sagrada Familija"
       ],
       "zanimljivost": "Kuća Batljo nema skoro nijednu pravu liniju. Narod je zove i „Kuća kostiju“ zbog balkona nalik lobanjama.",
-      "rec": "batljo"
+      "rec": "batljo",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "evropa",
+        "istakni": [
+          "ESP"
+        ],
+        "tacke": [
+          {
+            "lat": 41.392,
+            "lon": 2.165,
+            "oznaka": "Barselona"
+          }
+        ],
+        "opis": "Barselona, Španija"
+      }
     },
     {
       "tezina": 3,
@@ -1403,6 +2148,21 @@
       "mediji": {
         "vrsta": "slika",
         "src": "slike/fallingwater.jpg"
+      },
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "s-amerika",
+        "istakni": [
+          "USA"
+        ],
+        "tacke": [
+          {
+            "lat": 39.906,
+            "lon": -79.468,
+            "oznaka": "Fallingwater"
+          }
+        ],
+        "opis": "Pensilvanija, SAD"
       }
     },
     {
@@ -1419,6 +2179,11 @@
       "mediji": {
         "vrsta": "slika",
         "src": "slike/pijeta.jpg"
+      },
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/bazilika-petar.jpg",
+        "opis": "Bazilika Svetog Petra u Vatikanu, gde se čuva „Pijeta“"
       }
     },
     {
@@ -1447,7 +2212,22 @@
         "Visoki kameni zvonik"
       ],
       "zanimljivost": "Panteon je star skoro 1.900 godina i i dalje ima najveću kupolu od nearmiranog betona na svetu. Kada pada kiša, voda pada kroz okulus i otiče kroz rupice u podu.",
-      "rec": "okulus"
+      "rec": "okulus",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "evropa",
+        "istakni": [
+          "ITA"
+        ],
+        "tacke": [
+          {
+            "lat": 41.899,
+            "lon": 12.477,
+            "oznaka": "Rim"
+          }
+        ],
+        "opis": "Rim, Italija"
+      }
     },
     {
       "tezina": 3,
@@ -1463,7 +2243,22 @@
         "Donato Bramante"
       ],
       "zanimljivost": "Bruneleski je izmislio posebne dizalice i način ređanja cigli u „riblju kost“. Kupola je i danas najveća zidana kupola na svetu.",
-      "rec": "bruneleski"
+      "rec": "bruneleski",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "evropa",
+        "istakni": [
+          "ITA"
+        ],
+        "tacke": [
+          {
+            "lat": 43.773,
+            "lon": 11.256,
+            "oznaka": "Firenca"
+          }
+        ],
+        "opis": "Firenca, Italija"
+      }
     },
     {
       "tezina": 3,
@@ -1492,6 +2287,10 @@
     {
       "tezina": 3,
       "pitanje": "Koji srpski slikar, autor slike „Siroče na majčinom grobu“, naslikao je i ikonostas Saborne crkve u Pančevu?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/siroce.jpg"
+      },
       "odgovori": [
         "Uroš Predić",
         "Paja Jovanović",
@@ -1523,7 +2322,12 @@
         "Muzej Nikole Tesle"
       ],
       "zanimljivost": "Narodni muzej je posle 15 godina obnove ponovo otvoren 2018. U njemu je i Miroslavljevo jevanđelje.",
-      "rec": "muzej"
+      "rec": "muzej",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/narodni-muzej.jpg",
+        "opis": "Narodni muzej na Trgu republike u Beogradu"
+      }
     },
     {
       "tezina": 2,
@@ -1539,7 +2343,12 @@
         "Tošusai Šaraku"
       ],
       "zanimljivost": "Hokusai je ovaj drvorez napravio sa oko 70 godina. Odštampan je u hiljadama primeraka – zato danas postoji u mnogim muzejima sveta, a ne samo u jednom.",
-      "rec": "talas"
+      "rec": "talas",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/hokusai.jpg",
+        "opis": "Hokusaijev autoportret – menjao je ime više od 30 puta"
+      }
     },
     {
       "tezina": 2,
@@ -1779,7 +2588,22 @@
         "Novgorod"
       ],
       "zanimljivost": "To je Saborni hram Vasilija Blaženog na Crvenom trgu, iz 16. veka. Po legendi, car Ivan Grozni je zbog lepote oslepeo graditelje, ali za to nema dokaza.",
-      "rec": "kupola"
+      "rec": "kupola",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "evropa",
+        "istakni": [
+          "RUS"
+        ],
+        "tacke": [
+          {
+            "lat": 55.752,
+            "lon": 37.623,
+            "oznaka": "Moskva"
+          }
+        ],
+        "opis": "Crveni trg, Moskva"
+      }
     },
     {
       "tezina": 2,
@@ -1795,7 +2619,22 @@
         "El Eskorijal"
       ],
       "zanimljivost": "Ime „Alhambra“ znači „crvena“ – po boji zidova. Unutrašnji zidovi su prekriveni hiljadama ukrasa od geometrijskih šara i natpisa.",
-      "rec": "palata"
+      "rec": "palata",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "evropa",
+        "istakni": [
+          "ESP"
+        ],
+        "tacke": [
+          {
+            "lat": 37.176,
+            "lon": -3.588,
+            "oznaka": "Granada"
+          }
+        ],
+        "opis": "Granada, Andaluzija (Španija)"
+      }
     },
     {
       "tezina": 2,
@@ -1811,7 +2650,22 @@
         "Zabranjeni grad"
       ],
       "zanimljivost": "Angkor Vat je toliko važan za Kambodžu da se nalazi i na njenoj državnoj zastavi.",
-      "rec": "hram"
+      "rec": "hram",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "azija",
+        "istakni": [
+          "KHM"
+        ],
+        "tacke": [
+          {
+            "lat": 13.412,
+            "lon": 103.867,
+            "oznaka": "Angkor"
+          }
+        ],
+        "opis": "Angkor, Kambodža"
+      }
     },
     {
       "tezina": 2,
@@ -1827,7 +2681,22 @@
         "Hoencolern"
       ],
       "zanimljivost": "Dvorac je dao da se sagradi „ludi kralj“ Ludvig II, koji je u njemu živeo samo 172 dana pre smrti.",
-      "rec": "dvorac"
+      "rec": "dvorac",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "evropa",
+        "istakni": [
+          "DEU"
+        ],
+        "tacke": [
+          {
+            "lat": 47.558,
+            "lon": 10.75,
+            "oznaka": "Nojšvanštajn"
+          }
+        ],
+        "opis": "Bavarske Alpe, Nemačka"
+      }
     },
     {
       "tezina": 1,
@@ -1843,7 +2712,22 @@
         "Prag"
       ],
       "zanimljivost": "To je Brandenburška kapija. Tokom podele Nemačke stajala je odmah uz Berlinski zid, a danas je simbol ujedinjenja.",
-      "rec": "kapija"
+      "rec": "kapija",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "evropa",
+        "istakni": [
+          "DEU"
+        ],
+        "tacke": [
+          {
+            "lat": 52.516,
+            "lon": 13.378,
+            "oznaka": "Berlin"
+          }
+        ],
+        "opis": "Berlin, Nemačka"
+      }
     },
     {
       "tezina": 2,
@@ -1949,7 +2833,44 @@
         ]
       ],
       "zanimljivost": "Od ovih građevina najmlađa je Sagrada Familija – gradi se od 1882. i još uvek nije završena.",
-      "rec": "grad"
+      "rec": "grad",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "kutija": [
+          -5,
+          20,
+          85,
+          50
+        ],
+        "tacke": [
+          {
+            "lat": 41.89,
+            "lon": 12.49,
+            "oznaka": "Rim"
+          },
+          {
+            "lat": 37.97,
+            "lon": 23.73,
+            "oznaka": "Atina"
+          },
+          {
+            "lat": 41.01,
+            "lon": 28.98,
+            "oznaka": "Istanbul"
+          },
+          {
+            "lat": 41.4,
+            "lon": 2.17,
+            "oznaka": "Barselona"
+          },
+          {
+            "lat": 27.18,
+            "lon": 78.04,
+            "oznaka": "Agra"
+          }
+        ],
+        "opis": "Gde su ove građevine"
+      }
     },
     {
       "vrsta": "uljez",
