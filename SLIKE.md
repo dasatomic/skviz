@@ -4,6 +4,12 @@ Slike u `kvizovi/*/slike/` preuzete su sa Wikimedia Commons-a / Vikipedije i **z
 (najčešće javno vlasništvo, CC BY ili CC BY-SA). Ovaj spisak je generisan alatom `alati/licence-slika.js`.
 Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uklonjena.
 
+## ⚠ Proveriti ručno
+
+- umetnost/vorhol-merilin.jpg – https://en.wikipedia.org/wiki/Marilyn_Diptych
+- umetnost/polok-ritam.jpg – https://en.wikipedia.org/wiki/Autumn_Rhythm_(Number_30)
+- umetnost/polok-plavi.jpg – https://en.wikipedia.org/wiki/Blue_Poles
+
 ## Spisak
 
 | Paket | Fajl | Autor | Licenca | Izvor |
@@ -347,7 +353,6 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | umetnost | leonardo.jpg | Leonardo da Vinci | Public domain | [izvor](https://en.wikipedia.org/wiki/Portrait_of_a_Man_in_Red_Chalk) |
 | umetnost | dali.jpg | Van Vechten, Carl, 1880-1964. | Public domain | [izvor](https://en.wikipedia.org/wiki/Salvador_Dal%C3%AD) |
 | umetnost | matis-sesir.jpg | Henri Matisse | Public domain | [izvor](https://en.wikipedia.org/wiki/Woman_with_a_Hat) |
-| umetnost | polok.jpg | Hans Namuth | Public domain | [izvor](https://en.wikipedia.org/wiki/Jackson_Pollock) |
 | umetnost | frida.jpg | Guillermo Kahlo | Public domain | [izvor](https://en.wikipedia.org/wiki/Frida_Kahlo) |
 | umetnost | ufici.jpg | Arek N. | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Uffizi) |
 | umetnost | ermitaz.jpg | GAlexandrova | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Hermitage_Museum) |
@@ -368,8 +373,11 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | umetnost | gris-pikaso.jpg | Juan Gris | Public domain | [izvor](https://commons.wikimedia.org/wiki/File%3AJuan%20Gris%20-%20Portrait%20of%20Pablo%20Picasso%20-%20Google%20Art%20Project.jpg) |
 | umetnost | vinca.jpg | Original uploader was sr:Корисник:Дарко Максимовић at sr.wikipedia | CC BY-SA 3.0 | [izvor](https://commons.wikimedia.org/wiki/File%3AVincha%20066.jpg) |
 | umetnost | narodni-muzej.jpg | Imeao | CC0 | [izvor](https://commons.wikimedia.org/wiki/File%3ANational%20Museum%20of%20Serbia%20at%20the%20Republic%20Square%2C%20Belgrade%202022.jpg) |
-| umetnost | vorhol.jpg | Bernard Gotfryd | Public domain | [izvor](https://en.wikipedia.org/wiki/Andy_Warhol) |
 | umetnost | munk.jpg | Unknown authorUnknown author | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Edvard_Munch) |
+| umetnost | vorhol-supa.jpg | Brandon Fick | Public domain | [izvor](https://en.wikipedia.org/wiki/Campbell's_Soup_Cans) |
+| umetnost | vorhol-merilin.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Marilyn_Diptych) |
+| umetnost | polok-ritam.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Autumn_Rhythm_(Number_30)) |
+| umetnost | polok-plavi.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Blue_Poles) |
 | zabava | ortega.jpg | Harald Krichel | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Jenna_Ortega) |
 | zabava | barton.jpg | Harald Krichel | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Tim_Burton) |
 | zabava | violoncelo.png | Georg Feitscher | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Cello) |
