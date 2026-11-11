@@ -56,4 +56,5 @@ rsync -az --delete \
   --exclude .github --exclude podaci/statistika.json --exclude podaci/odigrana-pitanja.json --exclude 'podaci/telemetrija.db*' \
   "$IZVOR/" "$CILJ:$DIR/"
 
-ssh "$CILJ" "chown -R gric:gric $DIR && echo $COMMIT > $DIR/.objavljeno && systemctl restart gric-kviz && sleep 1 && systemctl is-active gric-kviz && curl -fsS http://127.0.0.1:3000/api/info >/dev/null && echo 'Igra radi ✓'"
+# server se pokreće ~1–2 s (učitava rečnik), pa se odgovor čeka do 15 s
+ssh "$CILJ" "chown -R gric:gric $DIR && echo $COMMIT > $DIR/.objavljeno && systemctl restart gric-kviz && systemctl is-active gric-kviz && for i in \$(seq 30); do curl -fsS http://127.0.0.1:3000/api/info >/dev/null 2>&1 && { echo 'Igra radi ✓'; exit 0; }; sleep 0.5; done; echo 'Igra ne odgovara – journalctl -u gric-kviz -n 50'; exit 1"
