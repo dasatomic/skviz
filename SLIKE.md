@@ -583,3 +583,63 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | zabava | lavic.jpg | Charles J. Sharp | CC BY-SA 4.0 | [izvor](https://commons.wikimedia.org/wiki/File%3AKalahari%20lion%20(Panthera%20leo)%20male%20cub%204%20months.jpg) |
 | zabava | peron.jpg | Bert Seghers | CC0 | [izvor](https://commons.wikimedia.org/wiki/File%3APlatform%209%203-4%20(King's%20Cross%20station%2C%20London%2C%202014).jpg) |
 | zabava | mili.jpg | TheWrap | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Millie_Bobby_Brown) |
+| zabava | ajnstajn.jpg | Oren Jack Turner | Public domain | [izvor](https://en.wikipedia.org/wiki/Albert_Einstein) |
+| zabava | teslin-kalem.jpg | fir0002 flagstaffotos [at] gmail.com Canon 20D + Tamron 28-75mm f/2.8 | GFDL 1.2 | [izvor](https://en.wikipedia.org/wiki/Tesla_coil) |
+| zabava | mijamoto.jpg | 文部科学省 | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Shigeru_Miyamoto) |
+| zabava | sapkovski.jpg | Niccolò Caranti | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Andrzej_Sapkowski) |
+| zabava | kordiceps.png | David P. Hughes, Maj-Britt Pontoppidan | CC BY 2.5 | [izvor](https://en.wikipedia.org/wiki/Ophiocordyceps_unilateralis) |
+| zabava | svarcvald-torta.jpg | Mikelo | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Black_Forest_gateau) |
+| zabava | ivatani.jpg | Official GDC | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/T%C5%8Dru_Iwatani) |
+| zabava | jez.jpg | Jörg Hempel | CC BY-SA 2.0 de | [izvor](https://en.wikipedia.org/wiki/European_hedgehog) |
+| zabava | karmak.jpg | RoboSabs | CC0 | [izvor](https://en.wikipedia.org/wiki/John_Carmack) |
+| zabava | vil-rajt.jpg | Official GDC | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Will_Wright_(game_designer)) |
+| zabava | dzordz-martin.jpg | Gage Skidmore from Surprise, AZ, United States of America | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/George_R._R._Martin) |
+| zabava | ron-gilbert.jpg | Brian_McInnis (talk) (Uploads) | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Ron_Gilbert) |
+| zabava | mekner.jpg | Official GDC | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Jordan_Mechner) |
+| zabava | hanafuda.jpg | Marcus Richert | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Hanafuda) |
+| zabava | dzenova-cen.jpg | Vincent Diamante | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Jenova_Chen) |
+| zabava | tornkvist.jpg | Sergey Galyonkin from Kyiv, Ukraine | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Ragnar_T%C3%B8rnquist) |
+| zabava | kauboj.jpg | Charles Marion Russell | Public domain | [izvor](https://en.wikipedia.org/wiki/Cowboy) |
+| zabava | sosenk.jpg | Niagara66 | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Ohio_State_Reformatory) |
+| zabava | brando.png | None visible/Paramount Pictures | Public domain | [izvor](https://en.wikipedia.org/wiki/Marlon_Brando) |
+| zabava | ledzer.jpg | Howie | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Heath_Ledger) |
+| zabava | fonda.jpg | Studio publicity still | Public domain | [izvor](https://en.wikipedia.org/wiki/Henry_Fonda) |
+| zabava | tarantino.jpg | Gage Skidmore | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Quentin_Tarantino) |
+| zabava | rivs.jpg | Gabriel Hutchinson | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Keanu_Reeves) |
+| zabava | crna-rupa.jpg | Event Horizon Telescope, uploader cropped and converted TIF to JPG | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Black_hole) |
+| zabava | hickok.jpg | Ante Brkan | Public domain | [izvor](https://en.wikipedia.org/wiki/Alfred_Hitchcock) |
+| zabava | bogart.jpg | Elmer Fryer | Public domain | [izvor](https://en.wikipedia.org/wiki/Humphrey_Bogart) |
+| zabava | morikone.jpg | Olivier Strecker | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Ennio_Morricone) |
+| zabava | kurosava.jpg | 映画の友 (Eiga no tomo) | Public domain | [izvor](https://en.wikipedia.org/wiki/Akira_Kurosawa) |
+| zabava | delorean.jpg | Kevin Abato, www.grenexmedia.com | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/DMC_DeLorean) |
+| zabava | krou.jpg | Colleen Sturtevant | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Russell_Crowe) |
+| zabava | svarceneger.jpg | Bernhard Holub | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Arnold_Schwarzenegger) |
+| zabava | dauni.jpg | PhilipRomano | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Robert_Downey_Jr.) |
+| zabava | bong.jpg | Jay Dixit | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Bong_Joon_Ho) |
+| zabava | benjini.jpg | Harald Krichel | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Roberto_Benigni) |
+| zabava | caplin.jpg | Strauss-Peyton Studio | Public domain | [izvor](https://en.wikipedia.org/wiki/Charlie_Chaplin) |
+| zabava | kjubrik.jpg | Columbia Pictures | Public domain | [izvor](https://en.wikipedia.org/wiki/Stanley_Kubrick) |
+| zabava | vels.jpg | Carl Van Vechten | Public domain | [izvor](https://en.wikipedia.org/wiki/Orson_Welles) |
+| zabava | tesla.jpg | Napoleon Sarony | Public domain | [izvor](https://en.wikipedia.org/wiki/Nikola_Tesla) |
+| zabava | bouvi.jpg | Adam Bielawski | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/David_Bowie) |
+| zabava | triniti.jpg | Jack W. Aeby, July 16, 1945, Civilian worker at Los Alamos laboratory, working u | Public domain | [izvor](https://en.wikipedia.org/wiki/Trinity_(nuclear_test)) |
+| zabava | haciko.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Hachik%C5%8D) |
+| zabava | vitmen.jpg | George Collins Cox / Adam Cuerden | Public domain | [izvor](https://en.wikipedia.org/wiki/Walt_Whitman) |
+| zabava | nolan.jpg | PhilipRomano | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Christopher_Nolan) |
+| zabava | kometa.jpg | E. Kolmhofer, H. Raab; Johannes-Kepler-Observatory, Linz, Austria (https://stern | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Comet_Hale%E2%80%93Bopp) |
+| zabava | trifunovic.png | Južne vesti | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Sergej_Trifunovi%C4%87) |
+| zabava | djuricko.jpg | Medija centar Beograd | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Nikola_%C4%90uri%C4%8Dko) |
+| zabava | kovacevic.jpg | sr:Корисник:Djordjes | CC BY 2.5 | [izvor](https://en.wikipedia.org/wiki/Du%C5%A1an_Kova%C4%8Devi%C4%87) |
+| zabava | stojkovic.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Danilo_Stojkovi%C4%87) |
+| zabava | dragojevic.jpg | Andriy Makukha (Amakuha) | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Sr%C4%91an_Dragojevi%C4%87) |
+| zabava | fica.jpg | Runolist | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Zastava_750) |
+| zabava | sremac.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Stevan_Sremac) |
+| zabava | alas.jpg | — | Public domain | [izvor](https://en.wikipedia.org/wiki/Mihailo_Petrovi%C4%87_Alas) |
+| zabava | centenario.jpg | Marcelo Campi | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Estadio_Centenario) |
+| zabava | toma.jpg | Unknown authorUnknown author | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Toma_Zdravkovi%C4%87) |
+| zabava | variola.jpg | Content Providers(s): CDC/ Dr. Fred Murphy; Sylvia Whitfield | Public domain | [izvor](https://en.wikipedia.org/wiki/Variola_virus) |
+| zabava | cigra.jpg | Davidturnswood | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Spinning_top) |
+| zabava | jasminka.jpg | Fotograf Sanja Latinović Photographer Sanja Latinovic | CC BY-SA 3.0 | [izvor](https://sr.wikipedia.org/wiki/%D0%88%D0%B0%D1%81%D0%BC%D0%B8%D0%BD%D0%BA%D0%B0_%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%B2%D0%B8%D1%9B) |
+| zabava | bombardovanje.jpg | Der Adler No. 9, Apr. 29. 1941 | CC BY-SA 3.0 | [izvor](https://sr.wikipedia.org/wiki/%D0%91%D0%BE%D0%BC%D0%B1%D0%B0%D1%80%D0%B4%D0%BE%D0%B2%D0%B0%D1%9A%D0%B5_%D0%91%D0%B5%D0%BE%D0%B3%D1%80%D0%B0%D0%B4%D0%B0_(1941)) |
+| zabava | mate.jpg | — | Licence Ouverte | [izvor](https://en.wikipedia.org/wiki/Georges_Math%C3%A9) |
+| zabava | pajser.jpg | 15RCH | CC BY-SA 3.0 | [izvor](https://commons.wikimedia.org/wiki/File%3APince%20monseigneur.jpg) |

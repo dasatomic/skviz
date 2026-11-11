@@ -30,7 +30,15 @@
   const STRANE = new Set((
     // video-igre
     'minecraft cuphead mugman chalice fortnite terraria creeper enderman ender end nether netherit redstone villagers notch ' +
-    'pac bulbasaur nintendo jumpman ' +
+    'pac bulbasaur nintendo jumpman fandango life counter doom undertale elden baldur gate tomb raider uncharted redemption ' +
+    'corrupted duke invaders sports football rocket silksong megalovania black hedgehog sight funcom projekt valve larian ' +
+    'drum bass hal ibm bucks minecoins cake lie imdb ' +
+    // izvorni nazivi stranih filmova u zagradi: „Pakleni šund“ (Pulp Fiction)
+    'pulp forrest gump philadelphia inception interstellar casablanca noon gladiator avengers endgame iron gisaengchung citizen ' +
+    'oppenheimer tale buono brutto cattivo pugno dollari toride akunin shichinin samurai sjunde inseglet bella times ' +
+    'coraline encanto moana transformers goosebumps jurassic ice petit jones schindler graffiti grease flash superman tonari ' +
+    'kamikakushi ugoku shiro haka hime kimetsu hen ratatouille monsters inside coco aladdin tangled pinocchio fantasia shrek ' +
+    'finding encounters beetlejuice titanic lincoln ahsoka strider wall ' +
     // brendovi, kompanije, studiji
     'google discord microsoft apple ghibli pictures animation studios industrial light magic illumination amblin reese pieces ' +
     // filmovi, serije, pesme, likovi (izvorni nazivi)
@@ -59,11 +67,13 @@
     return false;
   }
   // deo teksta (ceo tekst, navod, zagrada) koji je u celini strani naziv: sve reči su strane ili pišu velikim slovom,
-  // a bar jedna je strana – „Ace of Base“, „(Elder Kettle)“, „(E.T. phone home)“
+  // a bar jedna je strana – „Ace of Base“, „(Elder Kettle)“, „(E.T. phone home)“; u takvom nazivu malim slovom smeju
+  // i strane rečce – (Back to the Future), (La vita è bella), (Kimi no Na wa), (Hachi: A Dog's Tale)
+  const RECCE_NAZIVA = new Set(['to', 'no', 'il', 'la', 'le', 'un', 'di', 'd', 's', 'de', 'du', 'del', 'der', 'von', 'van', 'san', 'vita', 'in', 'a', 'ue', 'ka']);
   function straniNaziv(deo) {
     const reci = deo.match(/[A-Za-zČĆŽŠĐčćžšđ]+/g);
     if (!reci || !reci.some(strana)) return false;
-    return reci.every((r) => strana(r) || /^[A-ZČĆŽŠĐ]/.test(r));
+    return reci.every((r) => strana(r) || /^[A-ZČĆŽŠĐ]/.test(r) || RECCE_NAZIVA.has(r));
   }
   const RIMSKI = /^(?=[MDCLXVI])M{0,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$/;
 
