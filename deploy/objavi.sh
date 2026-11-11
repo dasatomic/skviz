@@ -38,7 +38,8 @@ if [ "$NACIN" = "--pitanja" ]; then
   fi
   # --delay-updates: sve izmenjene datoteke se zamene tek na kraju prenosa (server nikad ne čita pola objave);
   # P slike/**: stare slike se ne brišu, jer ih možda prikazuje soba u toku (počistiće ih sledeći pun deploy)
-  rsync -rlptz --chown=gric:gric --delete-after --delay-updates --filter='P slike/**' \
+  # --checksum: upisuje se samo ono čiji se sadržaj promenio (git archive svima daje vreme commita)
+  rsync -rlptz --checksum --chown=gric:gric --delete-after --delay-updates --filter='P slike/**' \
     "$IZVOR/kvizovi/" "$CILJ:$DIR/kvizovi/" | { grep -v 'cannot delete non-empty directory' || true; }
   # /api/kvizovi odmah ponovo učitava izmenjene kvizove – proveri da server vidi isto što i ovaj commit
   OCEKIVANO="$(cd "$IZVOR" && node -e "const k = require('./lib/kvizovi'); k.ucitajSve(); console.log(Object.values(k.svi()).reduce((s, p) => s + p.pitanja.length, 0))")"
