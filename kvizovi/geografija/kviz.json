@@ -58,7 +58,12 @@
         "Island"
       ],
       "zanimljivost": "Norveška obala je toliko razuđena fjordovima da bi, kada bi se razvukla zajedno sa ostrvima, bila duga preko 100.000 km – dovoljno da dva i po puta obiđe Zemlju!",
-      "rec": "norveška"
+      "rec": "norveška",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/fjord.jpg",
+        "opis": "Gejrangerfjord u Norveškoj"
+      }
     },
     {
       "tezina": 2,
@@ -76,7 +81,7 @@
         "Severna Makedonija",
         "Grčka"
       ],
-      "zanimljivost": "Bugarska je najveći proizvođač ružinog ulja na svetu – Dolina ruža kod Kazanlaka. Bugari klimaju glavom kada kažu „ne“, a odmahuju kada kažu „da“!",
+      "zanimljivost": "Bugarska je jedan od najvećih proizvođača ružinog ulja na svetu – ruže se beru u Dolini ruža kod Kazanlaka. Bugari klimaju glavom kada kažu „ne“, a odmahuju kada kažu „da“!",
       "rec": "bugarska"
     },
     {
@@ -109,7 +114,12 @@
         "Argentina"
       ],
       "zanimljivost": "Čile je dug oko 4.300 km, a širok u proseku samo oko 180 km. Na severu je pustinja Atakama, jedno od najsuvljih mesta na Zemlji – na nekim mestima nije padala kiša stotinama godina.",
-      "rec": "čile"
+      "rec": "čile",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/atakama.png",
+        "opis": "Pustinja Atakama na severu Čilea"
+      }
     },
     {
       "tezina": 2,
@@ -163,7 +173,12 @@
         "Zelenortska Ostrva"
       ],
       "zanimljivost": "Madagaskar se odvojio od Indije pre oko 88 miliona godina, pa je oko 90% njegovih biljaka i životinja jedinstveno na svetu. Tu žive lemuri – nigde drugde u prirodi ih nema.",
-      "rec": "madagaskar"
+      "rec": "madagaskar",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/lemur.jpg",
+        "opis": "Prstenasti lemur – živi samo na Madagaskaru"
+      }
     },
     {
       "tezina": 2,
@@ -220,7 +235,12 @@
         "Lim"
       ],
       "zanimljivost": "Drina je granica između Srbije i BiH. Na njoj je čuvena kućica na steni kod Bajine Bašte, a most na Drini u Višegradu, iz Andrićevog romana, podigao je Mehmed-paša Sokolović.",
-      "rec": "drina"
+      "rec": "drina",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/most-visegrad.jpg",
+        "opis": "Most Mehmed-paše Sokolovića na Drini u Višegradu (16. vek)"
+      }
     },
     {
       "tezina": 2,
@@ -239,7 +259,12 @@
         "Tamiš"
       ],
       "zanimljivost": "Na Tisi se svake godine u junu dešava „cvetanje Tise“ – milioni vodenih cvetova (insekata Palingenia longicauda) izlete iz vode i žive samo nekoliko sati.",
-      "rec": "tisa"
+      "rec": "tisa",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/tiski-cvet.jpg",
+        "opis": "Tiski cvet – vodeni cvet koji kao odrastao insekt živi samo nekoliko sati"
+      }
     },
     {
       "tezina": 3,
@@ -276,7 +301,7 @@
         "Niger",
         "Zambezi"
       ],
-      "zanimljivost": "Nil je dug oko 6.650 km i protiče kroz 11 država. Bez njegovih poplava, koje su nanosile plodno blato, stari Egipat ne bi ni postojao usred pustinje.",
+      "zanimljivost": "Nil je dug oko 6.650 km, a njegov sliv obuhvata 11 država. Bez njegovih poplava, koje su nanosile plodno blato, stari Egipat ne bi ni postojao usred pustinje.",
       "rec": "afrika"
     },
     {
@@ -315,7 +340,12 @@
         "Rona"
       ],
       "zanimljivost": "Rajna izvire u Alpima u Švajcarskoj i uliva se u Severno more u Holandiji. Na njoj je čuveni Rajnski vodopad, najveći vodopad u Evropi po količini vode.",
-      "rec": "rajna"
+      "rec": "rajna",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/rajnski-vodopad.jpg",
+        "opis": "Rajnski vodopad kod Šafhauzena u Švajcarskoj"
+      }
     },
     {
       "tezina": 1,
@@ -339,8 +369,13 @@
         "Sombor",
         "Zrenjanin"
       ],
-      "zanimljivost": "Novi Sad je bio „Srpska Atina“ – centar srpske kulture u 19. veku, gde je osnovana Matica srpska (prvobitno u Pešti, 1826). Preko Dunava, na Petrovaradinu, nalazi se tvrđava sa „pijanim satom“.",
-      "rec": "atina"
+      "zanimljivost": "Novi Sad su zvali „Srpska Atina“ – bio je centar srpske kulture u 19. veku. Matica srpska, osnovana 1826. u Pešti, preseljena je u Novi Sad 1864. Preko Dunava, na Petrovaradinu, nalazi se tvrđava sa „pijanim satom“.",
+      "rec": "atina",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/petrovaradin.jpg",
+        "opis": "Petrovaradinska tvrđava, preko puta Novog Sada"
+      }
     },
     {
       "tezina": 1,
@@ -362,7 +397,12 @@
         "Kruševac"
       ],
       "zanimljivost": "Niš je jedan od najstarijih gradova na Balkanu. Tu je Niška tvrđava, Ćele-kula i Medijana – letnjikovac cara Konstantina. Niš je poznat i po burekima i roštilju!",
-      "rec": "tvrđava"
+      "rec": "tvrđava",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/nis-tvrdjava.jpg",
+        "opis": "Niška tvrđava"
+      }
     },
     {
       "tezina": 2,
@@ -384,7 +424,12 @@
         "Senta"
       ],
       "zanimljivost": "Subotica je poznata po zgradama u stilu secesije, posebno Gradskoj kući i Sinagogi. U blizini je Palićko jezero.",
-      "rec": "subotica"
+      "rec": "subotica",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/subotica-gradska-kuca.jpg",
+        "opis": "Gradska kuća u Subotici, u stilu secesije"
+      }
     },
     {
       "tezina": 2,
@@ -406,7 +451,12 @@
         "Novi Pazar"
       ],
       "zanimljivost": "Kod Užica je Zlatibor, a u blizini su Mokra Gora i čuvena pruga „Šarganska osmica“, koja zbog strmine pravi oblik broja 8 da bi savladala visinu.",
-      "rec": "užice"
+      "rec": "užice",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/sarganska-osmica.png",
+        "opis": "Šarganska osmica kod Mokre Gore"
+      }
     },
     {
       "tezina": 3,
@@ -428,7 +478,12 @@
         "Negotin"
       ],
       "zanimljivost": "Pirot je poznat po ćilimima sa šarama koje imaju svoja imena i značenja, i po pirotskom kačkavalju. Iznad grada je Stara planina, sa najvišim vrhom Srbije van Kosova – Midžorom (2.169 m).",
-      "rec": "pirot"
+      "rec": "pirot",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/pirotski-cilim.jpg",
+        "opis": "Pirotski ćilim"
+      }
     },
     {
       "tezina": 1,
@@ -587,7 +642,7 @@
         "Ajger",
         "Triglav"
       ],
-      "zanimljivost": "Materhorn je visok 4.478 m. Na njemu je nastao i oblik čuvene čokolade Tobleron. Prvi uspon 1865. završio se tragedijom – četvorica od sedmorice penjača poginula su u silasku.",
+      "zanimljivost": "Materhorn je visok 4.478 m, a često se kaže da je po njemu oblikovana čokolada Tobleron. Prvi uspon 1865. završio se tragedijom – četvorica od sedmorice penjača poginula su u silasku.",
       "rec": "materhorn"
     },
     {
@@ -667,7 +722,7 @@
         "Argentina",
         "Jamajka"
       ],
-      "zanimljivost": "Na plavom krugu je nebo nad Rio de Žaneirom 15. novembra 1889, kada je proglašena republika. Svaka zvezda predstavlja jednu brazilsku saveznu državu, a natpis znači „Red i napredak“.",
+      "zanimljivost": "Na plavom krugu je nebo nad Rio de Žaneirom 15. novembra 1889, kada je proglašena republika. Svaka od 27 zvezda predstavlja jednu saveznu državu ili glavni distrikt, a natpis znači „Red i napredak“.",
       "rec": "brazil"
     },
     {
@@ -731,7 +786,7 @@
         "Krit",
         "Sicilija"
       ],
-      "zanimljivost": "Obris je bakarne boje, jer ime Kipar verovatno potiče od reči za bakar (latinski „cuprum“), koji se tu kopao još u starom veku. Maslinove grančice znače mir.",
+      "zanimljivost": "Obris je bakarne boje jer je Kipar u starom veku bio čuven po rudnicima bakra, pa i latinska reč za bakar potiče od imena ostrva („kiparski metal“). Maslinove grančice znače mir.",
       "rec": "kipar"
     },
     {
@@ -776,7 +831,12 @@
         "Brisel"
       ],
       "zanimljivost": "Pariz se zove „Grad svetlosti“, jer je bio jedan od prvih gradova sa uličnom rasvetom. Ajfelova kula je trebalo da bude srušena posle 20 godina, ali je spašena jer je poslužila kao radio-antena.",
-      "rec": "pariz"
+      "rec": "pariz",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/ajfelova-kula.jpg",
+        "opis": "Ajfelova kula, izgrađena 1889. za Svetsku izložbu"
+      }
     },
     {
       "tezina": 2,
@@ -788,7 +848,31 @@
         "Pert"
       ],
       "zanimljivost": "Kanbera je planski izgrađen grad, sa jezerom u sredini. Izgradnja je počela 1913. Sidnej je najveći grad, ali nije prestonica – kao što ni Istanbul nije prestonica Turske (to je Ankara).",
-      "rec": "kanbera"
+      "rec": "kanbera",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "australija",
+        "istakni": [
+          "AUS"
+        ],
+        "tacke": [
+          {
+            "lat": -35.28,
+            "lon": 149.13,
+            "oznaka": "Kanbera"
+          },
+          {
+            "lat": -33.87,
+            "lon": 151.21,
+            "oznaka": "Sidnej"
+          },
+          {
+            "lat": -37.81,
+            "lon": 144.96,
+            "oznaka": "Melburn"
+          }
+        ]
+      }
     },
     {
       "tezina": 3,
@@ -800,7 +884,12 @@
         "Montreal"
       ],
       "zanimljivost": "Otavu je za prestonicu izabrala kraljica Viktorija 1857, delom zato što je bila na granici engleskog i francuskog dela zemlje. Zimi se kanal kroz grad pretvara u najveće klizalište na svetu, dugo skoro 8 km.",
-      "rec": "otava"
+      "rec": "otava",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/rido-kanal.jpg",
+        "opis": "Kanal Rido u Otavi – zimi se zaledi i postaje klizalište"
+      }
     },
     {
       "tezina": 1,
@@ -836,7 +925,12 @@
         "Rtanj"
       ],
       "zanimljivost": "Đeravica je visoka 2.656 m. Pančićev vrh na Kopaoniku (2.017 m) dobio je ime po botaničaru Josifu Pančiću, koji je, po njegovoj želji, tu i sahranjen u mauzoleju.",
-      "rec": "đeravica"
+      "rec": "đeravica",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/djeravica.jpg",
+        "opis": "Đeravica na Prokletijama"
+      }
     },
     {
       "tezina": 3,
@@ -848,7 +942,12 @@
         "Goč"
       ],
       "zanimljivost": "Najviši vrh Rtnja zove se Šiljak (1.565 m). Planina je poznata po čaju od rtanjskog vriska, a ljudi pričaju i legende o skrivenom blagu i neobičnim pojavama.",
-      "rec": "rtanj"
+      "rec": "rtanj",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/rtanj.jpg",
+        "opis": "Rtanj"
+      }
     },
     {
       "tezina": 1,
@@ -903,7 +1002,12 @@
         "Lihtenštajn"
       ],
       "zanimljivost": "Vatikan ima površinu od samo oko 0,44 km² – manje od mnogih parkova. Ima svoju poštu, novine i radio, a čuva ga Švajcarska garda u šarenim uniformama.",
-      "rec": "vatikan"
+      "rec": "vatikan",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/vatikan.jpg",
+        "opis": "Trg Svetog Petra u Vatikanu"
+      }
     },
     {
       "tezina": 1,
@@ -968,8 +1072,8 @@
       "odgovori": [
         "Ujedinjeno Kraljevstvo",
         "Republika Irska",
-        "Island (Republika Island)",
-        "Kraljevina Danska"
+        "Kraljevina Danska",
+        "Kraljevina Holandija"
       ],
       "zanimljivost": "Ujedinjeno Kraljevstvo čine Engleska, Škotska, Vels i Severna Irska. Nijedno mesto u njemu nije dalje od oko 120 km od mora.",
       "mediji": {
@@ -1029,7 +1133,14 @@
         "Poljska"
       ],
       "zanimljivost": "Rusija je veća, ali je većim delom u Aziji. Ukrajina je poznata po crnici – jednom od najplodnijih zemljišta na svetu.",
-      "rec": "ukrajina"
+      "rec": "ukrajina",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "evropa",
+        "istakni": [
+          "UKR"
+        ]
+      }
     },
     {
       "tezina": 2,
@@ -1048,7 +1159,12 @@
           "MNE"
         ]
       },
-      "rec": "gora"
+      "rec": "gora",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/boka.jpg",
+        "opis": "Bokokotorski zaliv"
+      }
     },
     {
       "tezina": 2,
@@ -1067,7 +1183,12 @@
           "MKD"
         ]
       },
-      "rec": "makedonija"
+      "rec": "makedonija",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/ohrid.jpg",
+        "opis": "Ohridsko jezero"
+      }
     },
     {
       "tezina": 2,
@@ -1105,7 +1226,12 @@
           "HUN"
         ]
       },
-      "rec": "mađarska"
+      "rec": "mađarska",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/balaton.jpg",
+        "opis": "Balaton"
+      }
     },
     {
       "tezina": 1,
@@ -1200,7 +1326,12 @@
           "MNG"
         ]
       },
-      "rec": "mongolija"
+      "rec": "mongolija",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/jurta.jpg",
+        "opis": "Jurta – šator mongolskih nomada"
+      }
     },
     {
       "tezina": 1,
@@ -1238,7 +1369,12 @@
           "ZAF"
         ]
       },
-      "rec": "republika"
+      "rec": "republika",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/mandela.jpg",
+        "opis": "Nelson Mandela"
+      }
     },
     {
       "tezina": 2,
@@ -1257,7 +1393,12 @@
           "ARG"
         ]
       },
-      "rec": "argentina"
+      "rec": "argentina",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/akonkagva.jpg",
+        "opis": "Akonkagva, najviši vrh obe Amerike"
+      }
     },
     {
       "pitanje": "Koja država, sastavljena od preko 17.000 ostrva, je označena na mapi?",
@@ -1276,6 +1417,11 @@
         "istakni": [
           "IDN"
         ]
+      },
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/komodo.jpg",
+        "opis": "Komodski varan – najveći gušter na svetu"
       }
     },
     {
@@ -1298,12 +1444,12 @@
       "tezina": 3,
       "pitanje": "Čiji je ovo obris?",
       "odgovori": [
-        "Velike Britanije",
+        "Ujedinjenog Kraljevstva",
         "Irske",
         "Islanda",
         "Novog Zelanda"
       ],
-      "zanimljivost": "Velika Britanija je deveto najveće ostrvo na svetu. Na krajnjem severu Škotske ostrva Šetland su bliže Norveškoj nego Londonu.",
+      "zanimljivost": "Ujedinjeno Kraljevstvo čine ostrvo Velika Britanija (deveto najveće ostrvo na svetu) i Severna Irska na susednom ostrvu. Šetlandska ostrva, na krajnjem severu Škotske, bliža su Norveškoj nego Londonu.",
       "mediji": {
         "vrsta": "mapa",
         "silueta": "GBR"
@@ -1423,7 +1569,12 @@
           "Temza"
         ]
       },
-      "rec": "temza"
+      "rec": "temza",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/temza-tunel.jpg",
+        "opis": "Tunel ispod Temze"
+      }
     },
     {
       "tezina": 3,
@@ -1480,7 +1631,12 @@
           "Amazon"
         ]
       },
-      "rec": "amazon"
+      "rec": "amazon",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/susret-voda.jpg",
+        "opis": "„Susret voda“ kod Manausa: tamna i mutna reka teku jedna pored druge kilometrima pre nego što se pomešaju u Amazon"
+      }
     },
     {
       "tezina": 2,
@@ -1499,7 +1655,12 @@
           "Misisipi"
         ]
       },
-      "rec": "misisipi"
+      "rec": "misisipi",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/mark-tven.jpg",
+        "opis": "Mark Tven"
+      }
     },
     {
       "tezina": 3,
@@ -1518,7 +1679,12 @@
           "Jangce"
         ]
       },
-      "rec": "jangce"
+      "rec": "jangce",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/tri-klisure.jpg",
+        "opis": "Brana „Tri klisure“ na Jangceu"
+      }
     },
     {
       "tezina": 2,
@@ -1537,7 +1703,12 @@
           "Sava"
         ]
       },
-      "rec": "sava"
+      "rec": "sava",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/beogradska-tvrdjava.jpg",
+        "opis": "Beogradska tvrđava iznad ušća Save u Dunav"
+      }
     },
     {
       "tezina": 1,
@@ -1603,7 +1774,12 @@
           }
         ]
       },
-      "rec": "pazar"
+      "rec": "pazar",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/petrova-crkva.jpg",
+        "opis": "Petrova crkva kod Novog Pazara"
+      }
     },
     {
       "tezina": 3,
@@ -1702,7 +1878,7 @@
         "Atina",
         "Solun",
         "Sparta",
-        "Krit"
+        "Patra"
       ],
       "zanimljivost": "Atina je ime dobila po boginji Atini. Akropolj sa Partenonom stoji iznad grada skoro 2.500 godina.",
       "rec": "atina"
@@ -1729,7 +1905,26 @@
         "Antalija"
       ],
       "zanimljivost": "Istanbul je najveći grad, ali je Ataturk 1923. za prestonicu izabrao Ankaru. Istanbul je jedini veliki grad koji leži na dva kontinenta.",
-      "rec": "ankara"
+      "rec": "ankara",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "bliski-istok",
+        "istakni": [
+          "TUR"
+        ],
+        "tacke": [
+          {
+            "lat": 39.93,
+            "lon": 32.86,
+            "oznaka": "Ankara"
+          },
+          {
+            "lat": 41.01,
+            "lon": 28.98,
+            "oznaka": "Istanbul"
+          }
+        ]
+      }
     },
     {
       "tezina": 2,
@@ -1741,7 +1936,31 @@
         "Hirošima"
       ],
       "zanimljivost": "Kjoto je bio prestonica preko 1.000 godina. Šira oblast Tokija je najveća gradska aglomeracija na svetu – preko 37 miliona ljudi.",
-      "rec": "tokio"
+      "rec": "tokio",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "kutija": [
+          125,
+          29,
+          147,
+          46
+        ],
+        "istakni": [
+          "JPN"
+        ],
+        "tacke": [
+          {
+            "lat": 35.68,
+            "lon": 139.69,
+            "oznaka": "Tokio"
+          },
+          {
+            "lat": 35.01,
+            "lon": 135.77,
+            "oznaka": "Kjoto"
+          }
+        ]
+      }
     },
     {
       "tezina": 2,
@@ -1753,7 +1972,26 @@
         "Buenos Ajres"
       ],
       "zanimljivost": "Brazilija je izgrađena za samo oko 4 godine i proglašena prestonicom 1960. Gledano odozgo, ima oblik aviona ili ptice.",
-      "rec": "brazilija"
+      "rec": "brazilija",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "j-amerika",
+        "istakni": [
+          "BRA"
+        ],
+        "tacke": [
+          {
+            "lat": -15.79,
+            "lon": -47.88,
+            "oznaka": "Brazilija"
+          },
+          {
+            "lat": -22.91,
+            "lon": -43.17,
+            "oznaka": "Rio"
+          }
+        ]
+      }
     },
     {
       "tezina": 2,
@@ -1765,7 +2003,31 @@
         "Čikago"
       ],
       "zanimljivost": "Vašington se ne nalazi ni u jednoj saveznoj državi, nego u posebnom Distriktu Kolumbija. Ime je dobio po prvom predsedniku.",
-      "rec": "vašington"
+      "rec": "vašington",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "kutija": [
+          -128,
+          23,
+          -64,
+          52
+        ],
+        "istakni": [
+          "USA"
+        ],
+        "tacke": [
+          {
+            "lat": 38.9,
+            "lon": -77.04,
+            "oznaka": "Vašington"
+          },
+          {
+            "lat": 40.71,
+            "lon": -74,
+            "oznaka": "Njujork"
+          }
+        ]
+      }
     },
     {
       "tezina": 2,
@@ -1777,7 +2039,36 @@
         "Bazel"
       ],
       "zanimljivost": "Švajcarska formalno nema glavni grad, ali je Bern „savezni grad“ gde je vlada. Zemlja ima četiri zvanična jezika.",
-      "rec": "bern"
+      "rec": "bern",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "kutija": [
+          5.5,
+          45.6,
+          10.8,
+          48
+        ],
+        "istakni": [
+          "CHE"
+        ],
+        "tacke": [
+          {
+            "lat": 46.95,
+            "lon": 7.45,
+            "oznaka": "Bern"
+          },
+          {
+            "lat": 46.2,
+            "lon": 6.14,
+            "oznaka": "Ženeva"
+          },
+          {
+            "lat": 47.37,
+            "lon": 8.54,
+            "oznaka": "Cirih"
+          }
+        ]
+      }
     },
     {
       "tezina": 3,
@@ -1789,7 +2080,31 @@
         "Kanbera"
       ],
       "zanimljivost": "Velington je najjužniji glavni grad jedne nezavisne države na svetu. Na Novom Zelandu je sniman „Gospodar prstenova“.",
-      "rec": "velington"
+      "rec": "velington",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "kutija": [
+          164,
+          -48,
+          180,
+          -33
+        ],
+        "istakni": [
+          "NZL"
+        ],
+        "tacke": [
+          {
+            "lat": -41.29,
+            "lon": 174.78,
+            "oznaka": "Velington"
+          },
+          {
+            "lat": -36.85,
+            "lon": 174.76,
+            "oznaka": "Okland"
+          }
+        ]
+      }
     },
     {
       "tezina": 3,
@@ -1801,7 +2116,31 @@
         "Biškek"
       ],
       "zanimljivost": "Astana je prestonica od 1997. Ime grada na kazaškom znači „prestonica“. Kazahstan je najveća država na svetu bez izlaza na more.",
-      "rec": "astana"
+      "rec": "astana",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "kutija": [
+          45,
+          38,
+          90,
+          56
+        ],
+        "istakni": [
+          "KAZ"
+        ],
+        "tacke": [
+          {
+            "lat": 51.17,
+            "lon": 71.45,
+            "oznaka": "Astana"
+          },
+          {
+            "lat": 43.24,
+            "lon": 76.89,
+            "oznaka": "Almati"
+          }
+        ]
+      }
     },
     {
       "tezina": 2,
@@ -1813,7 +2152,12 @@
         "Mon Blan"
       ],
       "zanimljivost": "Elbrus (5.642 m) je ugašeni vulkan na Kavkazu. Ako se Kavkaz ne računa u Evropu, najviši je Mon Blan (4.808 m).",
-      "rec": "elbrus"
+      "rec": "elbrus",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/elbrus.jpg",
+        "opis": "Elbrus – dva vrha ugašenog vulkana"
+      }
     },
     {
       "tezina": 2,
@@ -1825,7 +2169,12 @@
         "Elgon"
       ],
       "zanimljivost": "Kilimandžaro (5.895 m) je vulkan u Tanzaniji, a na vrhu ima sneg i led iako je blizu ekvatora. Led se, nažalost, brzo topi.",
-      "rec": "kilimandžaro"
+      "rec": "kilimandžaro",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/kilimandzaro.jpg",
+        "opis": "Kilimandžaro"
+      }
     },
     {
       "tezina": 2,
@@ -1837,7 +2186,12 @@
         "Stenovite planine"
       ],
       "zanimljivost": "Andi se protežu oko 7.000 km duž zapadne obale Južne Amerike. Himalaji su najviši, ali ne i najduži.",
-      "rec": "andi"
+      "rec": "andi",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/andi.jpg",
+        "opis": "Andi"
+      }
     },
     {
       "tezina": 2,
@@ -1849,7 +2203,12 @@
         "Japanski rov"
       ],
       "zanimljivost": "Najdublja tačka, Čelendžer, duboka je oko 11 km. Do nje su ljudi stigli samo nekoliko puta – prvi put 1960, a 2012. se sam spustio i reditelj Džejms Kameron.",
-      "rec": "tačka"
+      "rec": "tačka",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/batiskaf-trst.jpg",
+        "opis": "Batiskaf „Trst“ – 1960. se spustio na dno Marijanskog rova"
+      }
     },
     {
       "tezina": 2,
@@ -1861,7 +2220,15 @@
         "Madagaskar"
       ],
       "zanimljivost": "Australija se računa kao kontinent. Grenland je skoro ceo pod ledom, a pripada Danskoj. Ime „zelena zemlja“ dali su mu Vikinzi da privuku naseljenike!",
-      "rec": "grenland"
+      "rec": "grenland",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "svet",
+        "istakni": [
+          "GRL",
+          "DNK"
+        ]
+      }
     },
     {
       "tezina": 2,
@@ -1873,7 +2240,12 @@
         "Atakama"
       ],
       "zanimljivost": "Sahara je velika skoro kao SAD. Pre oko 6.000 godina bila je zelena, sa jezerima i žirafama – to pokazuju crteži na stenama.",
-      "rec": "sahara"
+      "rec": "sahara",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/sahara.jpg",
+        "opis": "Sahara"
+      }
     },
     {
       "tezina": 2,
@@ -1885,7 +2257,12 @@
         "Kaspijsko jezero"
       ],
       "zanimljivost": "Mrtvo more je oko 9 puta slanije od okeana i nalazi se oko 430 m ispod nivoa mora – najniža tačka na kopnu.",
-      "rec": "more"
+      "rec": "more",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/mrtvo-more.jpg",
+        "opis": "Mrtvo more – so se taloži na obali"
+      }
     },
     {
       "tezina": 2,
@@ -1897,7 +2274,12 @@
         "Severni ledeni i Atlantski"
       ],
       "zanimljivost": "Kanal je otvoren 1914. Brodovi njime štede preko 10.000 km plovidbe oko Južne Amerike.",
-      "rec": "kanal"
+      "rec": "kanal",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/panamski-kanal.jpg",
+        "opis": "Panamski kanal – brodovi se prevode kroz prevodnice"
+      }
     },
     {
       "tezina": 2,
@@ -1909,31 +2291,61 @@
         "Kaspijsko i Crno more"
       ],
       "zanimljivost": "Suecki kanal je otvoren 1869. Kroz njega prolazi oko 12% ukupne svetske trgovine. Godine 2021. jedan brod se zaglavio i blokirao ga skoro nedelju dana.",
-      "rec": "more"
+      "rec": "more",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/suecki-kanal.jpg",
+        "opis": "Suecki kanal"
+      }
     },
     {
       "tezina": 2,
       "pitanje": "Šta razdvaja moreuz Bosfor?",
       "odgovori": [
         "Evropski i azijski deo Istanbula",
-        "Atinu i luku Pirej u južnoj Grčkoj",
-        "Rim i Napulj u južnoj Italiji uz more",
-        "Beograd i Zemun preko Save"
+        "Grčko kopno i ostrvo Krit",
+        "Italiju i ostrvo Siciliju",
+        "Španiju i severnu Afriku"
       ],
-      "zanimljivost": "Bosfor je moreuz između Crnog i Mramornog mora i granica između Evrope i Azije.",
-      "rec": "istanbul"
+      "zanimljivost": "Bosfor je moreuz između Crnog i Mramornog mora i granica između Evrope i Azije. Španiju i Afriku razdvaja Gibraltarski, a Italiju i Siciliju Mesinski moreuz.",
+      "rec": "istanbul",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/bosfor.jpg",
+        "opis": "Bosfor u Istanbulu"
+      }
     },
     {
       "tezina": 2,
-      "pitanje": "Kroz koliko zemalja protiče Nil?",
+      "pitanje": "Koliko država deli sliv reke Nil (Nil sa svim pritokama)?",
       "odgovori": [
         "11",
-        "3",
-        "25",
-        "1"
+        "5",
+        "8",
+        "15"
       ],
-      "zanimljivost": "Nil ima dva glavna kraka: Beli Nil i Plavi Nil, koji se spajaju u Kartumu u Sudanu. Plavi Nil donosi najviše vode i plodnog mulja.",
-      "rec": "kartum"
+      "zanimljivost": "Nil ima dva glavna kraka: Beli Nil i Plavi Nil, koji se spajaju u Kartumu u Sudanu. Plavi Nil, iz Etiopije, donosi najviše vode i plodnog mulja.",
+      "rec": "kartum",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "afrika",
+        "reke": [
+          "Nil"
+        ],
+        "istakni": [
+          "EGY",
+          "SDN",
+          "SDS",
+          "ETH",
+          "ERI",
+          "UGA",
+          "KEN",
+          "TZA",
+          "RWA",
+          "BDI",
+          "COD"
+        ]
+      }
     },
     {
       "tezina": 3,
@@ -1945,7 +2357,12 @@
         "Italija"
       ],
       "zanimljivost": "Kafa potiče iz Etiopije, gde je, prema legendi, pastir primetio da su njegove koze vesele i živahne posle jedenja crvenih bobica.",
-      "rec": "brazil"
+      "rec": "brazil",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/kafa.jpg",
+        "opis": "Cvetovi kafe – iz njih nastaju crvene bobice, a „zrna“ kafe su njihove semenke"
+      }
     },
     {
       "tezina": 3,
@@ -1957,10 +2374,15 @@
         "Japan"
       ],
       "zanimljivost": "Indonezija ima preko 120 aktivnih vulkana. Erupcija Tambore 1815. bila je toliko jaka da je 1816. u Evropi nazvana „godina bez leta“.",
-      "rec": "indonezija"
+      "rec": "indonezija",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/tambora.jpg",
+        "opis": "Krater vulkana Tambora, širok oko 6 km"
+      }
     },
     {
-      "tezina": 3,
+      "tezina": 2,
       "pitanje": "Na kojoj geografskoj širini se nalazi ekvator?",
       "odgovori": [
         "0°",
@@ -1981,16 +2403,21 @@
         "Kroz Beograd u Srbiji"
       ],
       "zanimljivost": "Dogovor o Griniču postignut je 1884. Ranije su mnoge zemlje imale svoj nulti meridijan – Francuzi su koristili pariski.",
-      "rec": "london"
+      "rec": "london",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/grinic.jpg",
+        "opis": "Početni meridijan u Griniču"
+      }
     },
     {
       "tezina": 3,
       "pitanje": "Koja je međunarodna datumska granica?",
       "odgovori": [
-        "Zamišljena linija na oko 180° geografske dužine gde se menja datum",
-        "Ekvator, zamišljena linija na 0° geografske širine koja deli Zemlju na polovine",
-        "Grinički meridijan",
-        "Severni povratnik"
+        "Linija oko 180. meridijana na kojoj se menja datum",
+        "Linija na ekvatoru na kojoj počinje nova godina",
+        "Linija kroz Grinič od koje se računa vreme",
+        "Linija na kojoj počinje polarni dan"
       ],
       "zanimljivost": "Kada je prelaziš ka zapadu, „preskočiš“ jedan dan. Ostrvska država Samoa je 2011. pomerila granicu i potpuno preskočila 30. decembar!",
       "rec": "linija"
@@ -2005,7 +2432,12 @@
         "Hladna morska struja kod obala Antarktika i Južne Amerike"
       ],
       "zanimljivost": "Zbog Golfske struje u Norveškoj luke ne zamrzavaju, a London ima blažu zimu od Montreala, iako je severnije.",
-      "rec": "struja"
+      "rec": "struja",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/golfska-struja.jpg",
+        "opis": "Golfska struja – topla voda (crveno) teče od Meksičkog zaliva ka Evropi"
+      }
     },
     {
       "tezina": 3,
@@ -2036,24 +2468,29 @@
       "pitanje": "Kako se zove jak jugoistočni vetar koji duva u Beogradu, uglavnom zimi?",
       "odgovori": [
         "Košava",
-        "Bura (Jadran)",
-        "Jugo (sa juga)",
-        "Fen (topao, suv)"
+        "Bura",
+        "Jugo",
+        "Severac"
       ],
       "zanimljivost": "Košava nastaje kada je pritisak visok nad Ukrajinom, a nizak nad Jadranom. Može da duva i nekoliko dana, sa udarima preko 100 km/h.",
       "rec": "košava"
     },
     {
       "tezina": 2,
-      "pitanje": "Koji je najveći prirodni rezervat stepe i peska u Srbiji, „evropska Sahara“?",
+      "pitanje": "Koja je najveća peščara u Srbiji, koju zovu i „evropska Sahara“?",
       "odgovori": [
         "Deliblatska peščara",
-        "Fruška gora (kod Novog Sada)",
-        "Obedska bara (pored Save)",
-        "Zasavica (kod Sremske Mitrovice)"
+        "Subotičko-horgoška peščara",
+        "Ramsko-golubačka peščara",
+        "Kladovska peščara"
       ],
-      "zanimljivost": "Deliblatska peščara je najveća peščara u Evropi. Nastala je od peska koji je vetar donosio posle ledenog doba. Danas je pošumljena i zaštićena.",
-      "rec": "peščara"
+      "zanimljivost": "Deliblatska peščara u južnom Banatu najveća je kontinentalna peščara u Evropi. Nastala je od peska koji je vetar nanosio posle ledenog doba. Krajem 19. veka počelo je pošumljavanje da pesak ne bi zatrpavao njive.",
+      "rec": "peščara",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/deliblatska-pescara.jpg",
+        "opis": "Deliblatska peščara"
+      }
     },
     {
       "tezina": 2,
@@ -2065,19 +2502,29 @@
         "Rajkova pećina"
       ],
       "zanimljivost": "Resavska pećina je stara oko 80 miliona godina, a otkrivena je tek 1962. Temperatura u njoj je cele godine oko 7 °C.",
-      "rec": "pećina"
+      "rec": "pećina",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/resavska-pecina.jpg",
+        "opis": "Resavska pećina"
+      }
     },
     {
       "tezina": 3,
-      "pitanje": "Kako se zove najveća močvara i ornitološki rezervat u Srbiji, nekad lovište Habzburgovaca?",
+      "pitanje": "Koja močvara u Sremu, nekad lovište Habzburgovaca, spada među najstarije zaštićene prirodne rezervate na svetu?",
       "odgovori": [
         "Obedska bara",
         "Ludaško jezero",
         "Carska bara",
         "Slano Kopovo"
       ],
-      "zanimljivost": "Obedska bara je jedan od najstarijih zaštićenih prirodnih rezervata na svetu – zaštićena je još 1874. godine.",
-      "rec": "bara"
+      "zanimljivost": "Obedska bara je zaštićena još 1874. godine. To je stari rukavac Save, a u njoj se gnezdi i odmara preko 200 vrsta ptica – čaplje, vodomari, orlovi belorepani.",
+      "rec": "bara",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/obedska-bara.jpg",
+        "opis": "Obedska bara"
+      }
     },
     {
       "tezina": 3,
@@ -2089,7 +2536,12 @@
         "Perućac"
       ],
       "zanimljivost": "Đerdapsko jezero nastalo je izgradnjom brane Đerdap 1972. Vlasinsko jezero ima „plovna ostrva“ od tresetne mahovine.",
-      "rec": "jezero"
+      "rec": "jezero",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/djerdap-brana.jpg",
+        "opis": "Brana i hidroelektrana Đerdap I"
+      }
     },
     {
       "tezina": 3,
@@ -2101,7 +2553,12 @@
         "Na planini Tari, kod Bajine Bašte"
       ],
       "zanimljivost": "U prirodi Đavolja varoš ima preko 200 zemljanih figura sa kamenim kapama. Bila je i kandidat na svetskom izboru za Sedam novih čuda prirode.",
-      "rec": "planina"
+      "rec": "planina",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/djavolja-varos.jpg",
+        "opis": "Đavolja varoš"
+      }
     }
   ]
 }

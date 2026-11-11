@@ -83,6 +83,52 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | geografija | zastava-australija.png | Original: Ivor Evans, Leslie John Hawkins, Egbert John Nuttall, Annie Dorrington | Public domain | [izvor](https://commons.wikimedia.org/wiki/File%3AFlag%20of%20Australia.svg) |
 | geografija | zastava-indija.png | Government of India | Public domain | [izvor](https://commons.wikimedia.org/wiki/File%3AFlag%20of%20India.svg) |
 | geografija | zastava-argentina.png | Manuel Belgrano | Public domain | [izvor](https://commons.wikimedia.org/wiki/File%3AFlag%20of%20Argentina.svg) |
+| geografija | nis-tvrdjava.jpg | J tomic m | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Ni%C5%A1_Fortress) |
+| geografija | subotica-gradska-kuca.jpg | Sunce Niš | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Subotica_City_Hall) |
+| geografija | sarganska-osmica.png | Ivan25 | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/%C5%A0argan_Eight) |
+| geografija | petrova-crkva.jpg | Diego Delso | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Church_of_the_Holy_Apostles_Peter_and_Paul%2C_Ras) |
+| geografija | kanbera-parlament.jpg | Thennicke | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Parliament_House%2C_Canberra) |
+| geografija | rido-kanal.jpg | Bobak Ha'Eri | CC BY-SA 2.5 | [izvor](https://en.wikipedia.org/wiki/Rideau_Canal) |
+| geografija | djeravica.jpg | Tamnavac | Public domain | [izvor](https://en.wikipedia.org/wiki/Gjeravica) |
+| geografija | rtanj.jpg | Dojchin | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Rtanj) |
+| geografija | vatikan.jpg | Diliff | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/St._Peter's_Square) |
+| geografija | elbrus.jpg | Aleksandr Markin | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Mount_Elbrus) |
+| geografija | kilimandzaro.jpg | Sergey Pesterev | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Mount_Kilimanjaro) |
+| geografija | andi.jpg | Diego Delso | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Andes) |
+| geografija | batiskaf-trst.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Trieste_(bathyscaphe)) |
+| geografija | sahara.jpg | Project Apollo Archive | Public domain | [izvor](https://en.wikipedia.org/wiki/Sahara) |
+| geografija | mrtvo-more.jpg | لا روسا | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Dead_Sea) |
+| geografija | suecki-kanal.jpg | NASA | Public domain | [izvor](https://en.wikipedia.org/wiki/Suez_Canal) |
+| geografija | kafa.jpg | Marcelo Corrêa | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Coffea_arabica) |
+| geografija | tambora.jpg | This image was taken by the NASA Expedition 20 crew. | Public domain | [izvor](https://en.wikipedia.org/wiki/Mount_Tambora) |
+| geografija | grinic.jpg | en:User:Markhamilton | Public domain | [izvor](https://en.wikipedia.org/wiki/Prime_meridian_(Greenwich)) |
+| geografija | golfska-struja.jpg | User Sommerstoffel on de.wikipedia | Public domain | [izvor](https://en.wikipedia.org/wiki/Gulf_Stream) |
+| geografija | deliblatska-pescara.jpg | Author:Sors bona | Public domain | [izvor](https://en.wikipedia.org/wiki/Deliblatska_Pe%C5%A1%C4%8Dara) |
+| geografija | resavska-pecina.jpg | No machine-readable author provided. Bože pravde~commonswiki assumed (based on c | Public domain | [izvor](https://en.wikipedia.org/wiki/Resava_Cave) |
+| geografija | obedska-bara.jpg | Fjhurt at English Wikipedia | Public domain | [izvor](https://en.wikipedia.org/wiki/Obedska_bara) |
+| geografija | djerdap-brana.jpg | CrniBombarder!!! | Public domain | [izvor](https://en.wikipedia.org/wiki/Iron_Gate_I_Hydroelectric_Power_Station) |
+| geografija | tiski-cvet.jpg | Original uploader was Derzsi Elekes Andor at hu.wikipedia | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Palingenia_longicauda) |
+| geografija | most-visegrad.jpg | Branevgd | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Mehmed_Pa%C5%A1a_Sokolovi%C4%87_Bridge) |
+| geografija | rajnski-vodopad.jpg | Kabelleger / David Gubler | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Rhine_Falls) |
+| geografija | temza-tunel.jpg | — | Public domain | [izvor](https://en.wikipedia.org/wiki/Thames_Tunnel) |
+| geografija | mark-tven.jpg | A.F. Bradley, New York | Public domain | [izvor](https://en.wikipedia.org/wiki/Mark_Twain) |
+| geografija | tri-klisure.jpg | Source file: Le Grand Portage Derivative work: Rehman | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Three_Gorges_Dam) |
+| geografija | fjord.jpg | Andreas Trepte | CC BY-SA 2.5 | [izvor](https://en.wikipedia.org/wiki/Geirangerfjord) |
+| geografija | lemur.jpg | Charles J. Sharp | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Ring-tailed_lemur) |
+| geografija | atakama.png | NASA | Public domain | [izvor](https://en.wikipedia.org/wiki/Atacama_Desert) |
+| geografija | jurta.jpg | Myrzabek Ozubekov | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Yurt) |
+| geografija | mandela.jpg | Kingkongphoto & www.celebrity-photos.com from Laurel | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Nelson_Mandela) |
+| geografija | akonkagva.jpg | Bjørn Christian Tørrissen | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Aconcagua) |
+| geografija | komodo.jpg | James Jolokia (james1203) | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Komodo_dragon) |
+| geografija | boka.jpg | kallerna | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Bay_of_Kotor) |
+| geografija | ohrid.jpg | NASA/METI/AIST/Japan Space Systems, and U.S./Japan ASTER Science Team | Public domain | [izvor](https://en.wikipedia.org/wiki/Lake_Ohrid) |
+| geografija | balaton.jpg | txd | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Lake_Balaton) |
+| geografija | grenland.png | Eric Gaba (Sting - fr:Sting) | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Greenland_ice_sheet) |
+| geografija | susret-voda.jpg | Portal da Copa | CC BY 3.0 br | [izvor](https://en.wikipedia.org/wiki/Meeting_of_Waters) |
+| geografija | pirotski-cilim.jpg | Orjen | CC BY-SA 3.0 | [izvor](https://sr.wikipedia.org/wiki/%D0%9F%D0%B8%D1%80%D0%BE%D1%82%D1%81%D0%BA%D0%B8_%D1%9B%D0%B8%D0%BB%D0%B8%D0%BC) |
+| geografija | ajfelova-kula.jpg | Benh LIEU SONG | Public domain | [izvor](https://commons.wikimedia.org/wiki/File%3ATour_Eiffel_Wikimedia_Commons.jpg) |
+| geografija | bosfor.jpg | Huseyinakbas63 | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Bosphorus_Bridge) |
+| geografija | panamski-kanal.jpg | Adam Jones | CC BY-SA 2.0 | [izvor](https://commons.wikimedia.org/wiki/File%3AContainer_Ship_Enters_Miraflores_Locks_-_Panama_Canal.jpg) |
 | hemija | mendeljejev.jpg | Original: Unknown authorUnknown author Upload: Germansociety2014 | Public domain | [izvor](https://en.wikipedia.org/wiki/Dmitri_Mendeleev) |
 | hemija | kiri.jpg | Henri Manuel | Public domain | [izvor](https://en.wikipedia.org/wiki/Marie_Curie) |
 | hemija | lavoazje.jpg | Jacques-Louis David | Public domain | [izvor](https://en.wikipedia.org/wiki/Antoine_Lavoisier) |
@@ -127,6 +173,97 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | muzicko | tamburica.jpg | Dejan Krsmanovic | CC BY 2.0 | [izvor](https://sr.wikipedia.org/wiki/%D0%A2%D0%B0%D0%BC%D0%B1%D1%83%D1%80%D0%B0) |
 | muzicko | stradivari.jpg | Geni | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Messiah_Stradivarius) |
 | opsta-kultura | gutenberg.jpg | NYC Wanderer (Kevin Eng) | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Gutenberg_Bible) |
+| razred5-geografija | behajmov-globus.jpg | Martin Behaim / Georg Glockendon | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Behaim_Globe) |
+| razred5-geografija | vavilonska-karta.jpg | Osama Shukir Muhammed Amin FRCP(Glasg) | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Babylonian_Map_of_the_World) |
+| razred5-geografija | cvijic.jpg | Milan Jovanović | Public domain | [izvor](https://en.wikipedia.org/wiki/Jovan_Cviji%C4%87) |
+| razred5-geografija | farnezeov-atlas.jpg | Gabriel Seah | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Farnese_Atlas) |
+| razred5-geografija | mlecni-put.jpg | ESO/Y. Beletsky | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Milky_Way) |
+| razred5-geografija | habl.jpg | NASA | Public domain | [izvor](https://en.wikipedia.org/wiki/Hubble_Space_Telescope) |
+| razred5-geografija | perseidi.jpg | Jim Vajda from Oxford, Ohio, USA | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Perseids) |
+| razred5-geografija | halej.jpg | NASA/W. Liller | Public domain | [izvor](https://en.wikipedia.org/wiki/Halley's_Comet) |
+| razred5-geografija | hoba.jpg | Sergio Conti from Montevecchia (LC), Italia | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Hoba_meteorite) |
+| razred5-geografija | ceres.jpg | Justin Cowart | Public domain | [izvor](https://en.wikipedia.org/wiki/Ceres_(dwarf_planet)) |
+| razred5-geografija | andromeda.jpg | Lviatour | CC BY-SA 2.5 | [izvor](https://en.wikipedia.org/wiki/Andromeda_Galaxy) |
+| razred5-geografija | gagarin.jpg | Александр Моклецов / СовИнформБюро | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Yuri_Gagarin) |
+| razred5-geografija | pomracenje-sunca.jpg | Luc Viatour | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Solar_eclipse) |
+| razred5-geografija | otisak-cizme.jpg | NASA / Buzz Aldrin | Public domain | [izvor](https://commons.wikimedia.org/wiki/File%3AApollo_11_bootprint.jpg) |
+| razred5-geografija | pomracenje-meseca.jpg | Robert Jay GaBany | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Lunar_eclipse) |
+| razred5-geografija | mene.jpg | Andonee | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Lunar_phase) |
+| razred5-geografija | vasko-da-gama.jpg | Sailko | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Vasco_da_Gama) |
+| razred5-geografija | amundsen-skot.jpg | Christopher Michel | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Amundsen%E2%80%93Scott_South_Pole_Station) |
+| razred5-geografija | panamska-prevlaka.png | — | Public domain | [izvor](https://en.wikipedia.org/wiki/Isthmus_of_Panama) |
+| razred5-geografija | fukoovo-klatno.jpg | Rémih | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Foucault_pendulum) |
+| razred5-geografija | gradja-zemlje.png | CharlesC | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Internal_structure_of_Earth) |
+| razred5-geografija | kolska.jpg | Andre Belozeroff | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Kola_Superdeep_Borehole) |
+| razred5-geografija | geotermalna.jpg | Gretar Ívarsson – Edited by Fir0002 | Public domain | [izvor](https://en.wikipedia.org/wiki/Nesjavellir_Geothermal_Power_Station) |
+| razred5-geografija | vrnjacka-banja.jpg | Katarina Z | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Vrnja%C4%8Dka_Banja) |
+| razred5-geografija | pangea.png | Scotese, Christopher R.; Vérard, Christian; Burgener, Landon; Elling, Reece P.;  | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Pangaea) |
+| razred5-geografija | san-andreas.jpg | John Wiley User:Jw4nvc - Santa Barbara, California | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/San_Andreas_Fault) |
+| razred5-geografija | silfra.jpg | Diego Delso | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Silfra) |
+| razred5-geografija | mezosaurus.jpg | Kevmin | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Mesosaurus) |
+| razred5-geografija | istocnoafricki-rov.png | USGS | Public domain | [izvor](https://en.wikipedia.org/wiki/East_African_Rift) |
+| razred5-geografija | vatreni-pojas.png | Gringer (talk) 23:52, 10 February 2009 (UTC) | Public domain | [izvor](https://en.wikipedia.org/wiki/Ring_of_Fire) |
+| razred5-geografija | krakatau.jpg | Lithograph: Parker & Coward, Britain; | Public domain | [izvor](https://en.wikipedia.org/wiki/Krakatoa) |
+| razred5-geografija | pompeja.jpg | Carsten Steger | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Pompeii) |
+| razred5-geografija | etna.jpg | BenAveling | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Mount_Etna) |
+| razred5-geografija | seizmograf.jpg | — | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Seismometer) |
+| razred5-geografija | strokkur.jpg | Christoph Strässler from Oberdorf BL, Schweiz | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Strokkur) |
+| razred5-geografija | skoplje-1963.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/1963_Skopje_earthquake) |
+| razred5-geografija | granit.jpg | The stone gate | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Granite) |
+| razred5-geografija | dijamant.jpg | DGPC/ADF Luísa Oliveira | CC0 | [izvor](https://en.wikipedia.org/wiki/Diamond) |
+| razred5-geografija | oplenac.jpg | This image was made by Sadko. Please credit this with: "Sadko, Wikipedia" in the | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Oplenac) |
+| razred5-geografija | dzinovski-put.jpg | code poet on flickr. | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Giant's_Causeway) |
+| razred5-geografija | piramida.jpg | Douwe C. van der Zee | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza) |
+| razred5-geografija | les.jpg | Wilson44691 | Public domain | [izvor](https://en.wikipedia.org/wiki/Loess) |
+| razred5-geografija | fruska-gora.jpg | Jovancavic | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Fru%C5%A1ka_Gora) |
+| razred5-geografija | stalaktiti.jpg | Dave Bunnell / Under Earth Images | CC BY-SA 2.5 | [izvor](https://en.wikipedia.org/wiki/Stalactite) |
+| razred5-geografija | tara-kanjon.jpg | Milan B. | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Tara_River_Canyon) |
+| razred5-geografija | delta-dunava.jpg | European Space Agency | Attribution | [izvor](https://en.wikipedia.org/wiki/Danube_Delta) |
+| razred5-geografija | dina.jpg | Himarerme | Public domain | [izvor](https://en.wikipedia.org/wiki/Dune) |
+| razred5-geografija | morena.jpg | Bijaya2043 | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Moraine) |
+| razred5-geografija | dover.jpg | Immanuel Giel | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/White_Cliffs_of_Dover) |
+| razred5-geografija | banaue.jpg | User: (WT-shared) Roundtheworld at wts wikivoyage | Public domain | [izvor](https://en.wikipedia.org/wiki/Banaue_Rice_Terraces) |
+| razred5-geografija | bingem.jpg | Farragutful | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Bingham_Canyon_Mine) |
+| razred5-geografija | gotard.jpg | Hannes Ortlieb (Diskussion) | CC BY-SA 3.0 de | [izvor](https://en.wikipedia.org/wiki/Gotthard_Base_Tunnel) |
+| razred5-geografija | palma-dubai.jpg | Member of the Expedition 22 crew. | Public domain | [izvor](https://en.wikipedia.org/wiki/Palm_Jumeirah) |
+| razred5-geografija | afslujtdajk.jpg | Condor3d | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Afsluitdijk) |
+| razred5-geografija | lepenski-vir.jpg | Myself | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Lepenski_Vir) |
+| razred5-geografija | atmosfera.jpg | NASA Earth Observatory | Public domain | [izvor](https://en.wikipedia.org/wiki/Atmosphere_of_Earth) |
+| razred5-geografija | polarna-svetlost.jpg | United States Air Force photo by Senior Airman Joshua Strang | Public domain | [izvor](https://en.wikipedia.org/wiki/Aurora) |
+| razred5-geografija | barometar.jpg | — | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Barometer) |
+| razred5-geografija | anemometar.jpg | photographer: Archival Photograph by Mr. Sean Linehan, NOS, NGS | Public domain | [izvor](https://en.wikipedia.org/wiki/Anemometer) |
+| razred5-geografija | dolina-smrti.jpg | NASA | Public domain | [izvor](https://en.wikipedia.org/wiki/Death_Valley) |
+| razred5-geografija | monsun.jpg | w:user:PlaneMad | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Monsoon) |
+| razred5-geografija | uragan.jpg | NASA/Goddard Space Flight Center | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Tropical_cyclone) |
+| razred5-geografija | tundra.jpg | Hannes Grobe, AWI | CC BY-SA 2.5 | [izvor](https://en.wikipedia.org/wiki/Tundra) |
+| razred5-geografija | alec.jpg | Robert J Heath | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Aletsch_Glacier) |
+| razred5-geografija | smog-london.jpg | N T Stobbs | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Great_Smog_of_London) |
+| razred5-geografija | gibraltar.jpg | NASA | Public domain | [izvor](https://en.wikipedia.org/wiki/Strait_of_Gibraltar) |
+| razred5-geografija | fandi.jpg | Decumanus at English Wikipedia | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Bay_of_Fundy) |
+| razred5-geografija | patkice.png | NordNordWest | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Friendly_Floatees_spill) |
+| razred5-geografija | sargasum.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Sargassum) |
+| razred5-geografija | palic.jpg | Dcabrilo | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Lake_Pali%C4%87) |
+| razred5-geografija | santa.jpg | AWeith | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Iceberg) |
+| razred5-geografija | kratersko.jpg | John Manard | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Crater_Lake) |
+| razred5-geografija | pacificko-smetliste.jpg | L. Lebreton, B. Slat, F. Ferrari, B. Sainte-Rose, J. Aitken, R. Marthouse, S. Ha | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Great_Pacific_Garbage_Patch) |
+| razred5-geografija | tajga.jpg | Bartosh Dmytro, Ukraine, Kiev. http://fotostudio.com.ua | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Taiga) |
+| razred5-geografija | savana.jpg | ProfessorX | Public domain | [izvor](https://en.wikipedia.org/wiki/Savanna) |
+| razred5-geografija | prasuma.jpg | lubasi | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Tropical_rainforest) |
+| razred5-geografija | mangrove.jpg | Ariefrahman | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Mangrove) |
+| razred5-geografija | omorika.jpg | mikepirie | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Picea_omorika) |
+| razred5-geografija | jelouston.jpg | Carsten Steger | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Grand_Prismatic_Spring) |
+| razred5-geografija | sup.jpg | Pierre Dalous | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Eurasian_griffon_vulture) |
+| razred5-geografija | ramonda.jpg | Francine Riez | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Ramonda_nathaliae) |
+| razred5-geografija | gnu.jpg | Muhammad Mahdi Karim | GFDL 1.2 | [izvor](https://en.wikipedia.org/wiki/Blue_wildebeest) |
+| razred5-geografija | kaluderski-skok.jpg | Nenanenad | CC BY-SA 4.0 | [izvor](https://sr.wikipedia.org/wiki/%D0%92%D0%BE%D0%B4%D0%BE%D0%BF%D0%B0%D0%B4_%D0%9A%D0%B0%D0%BB%D1%83%D1%92%D0%B5%D1%80%D1%81%D0%BA%D0%B8_%D1%81%D0%BA%D0%BE%D0%BA%D0%BE%D0%B2%D0%B8) |
+| razred5-geografija | ostrvica.jpg | Original uploader was sr:Корисник:Ranko at sr.wikipedia | CC BY-SA 2.5 | [izvor](https://sr.wikipedia.org/wiki/%D0%9E%D1%81%D1%82%D1%80%D0%B2%D0%B8%D1%86%D0%B0_(%D0%A0%D1%83%D0%B4%D0%BD%D0%B8%D0%BA)) |
+| razred5-geografija | pluton.jpg | NASA/Johns Hopkins University Applied Physics Laboratory/Southwest Research Inst | Public domain | [izvor](https://en.wikipedia.org/wiki/Pluto) |
+| razred5-geografija | druga-strana-meseca.jpg | NASA | Public domain | [izvor](https://en.wikipedia.org/wiki/Far_side_of_the_Moon) |
+| razred5-geografija | olimp-mars.jpg | ESA/DLR/FUBerlin/AndreaLuck | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Olympus_Mons) |
+| razred5-geografija | vlasinsko.jpg | — | Public domain | [izvor](https://en.wikipedia.org/wiki/Vlasina_Lake) |
+| razred5-geografija | srebrno-jezero.jpg | User:Duja, using the NAS WorldWind software | Public domain | [izvor](https://en.wikipedia.org/wiki/Silver_Lake_(Serbia)) |
+| razred5-geografija | aralsko.jpg | National Aeronautics and Space Administration (NASA), collage by Dylan240. | Public domain | [izvor](https://en.wikipedia.org/wiki/Aral_Sea) |
+| razred5-geografija | ozonska-rupa.jpg | National Oceanic & Atmospheric Administration (NOAA) | Public domain | [izvor](https://commons.wikimedia.org/wiki/File%3ASatellite_Image_of_Ozone_Hole_in_2007.jpg) |
 | razred5-istorija | giza.jpg | KennyOMG | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Giza_pyramid_complex) |
 | razred5-istorija | vucica.jpg | — | CC0 | [izvor](https://en.wikipedia.org/wiki/Capitoline_Wolf) |
 | razred5-istorija | konstantin.jpg | Merulana | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Constantine_the_Great) |
