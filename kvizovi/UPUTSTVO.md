@@ -49,6 +49,9 @@ kvizovi/
 | `razred` | (opciono) 5–8 – kviz za taj razred; u lobiju se bira „Svi razredi / 5. / 6. / 7. / 8.“ |
 | `lekcije` | (opciono) spisak lekcija iz udžbenika: `[{"naziv":"Ćelijska građa","tema":"Poreklo i raznovrsnost života","strana":26}]` |
 | `lekcija` | (u pitanju) redni broj lekcije iz spiska `lekcije` (od 1) – posle izbora razreda može se igrati „Cela godina“ ili jedna lekcija |
+| `kategorija` | `true` = kviz bez pitanja koji samo imenuje oblast u lobiju (naziv, ikona, boja) – vidi „Kategorije i podkategorije“ |
+| `celina` | (opciono) natpis za ceo kviz sa lekcijama umesto „Cela godina“, npr. `"Cela knjiga"` |
+| `jezik` | (opciono) jezik sadržaja, npr. `"en"` – pitanja, odgovori, zanimljivosti i nazivi lekcija se prikazuju sa `lang="en"` i nikad ne preslovljavaju u ćirilicu (interfejs ostaje srpski) |
 
 ## Posebne vrste pitanja (`"vrsta"`)
 
@@ -78,6 +81,12 @@ Svaka lekcija treba da ima **bar 15 pitanja** različite težine (i lakih i teš
 Ako lekcija sama ne daje dovoljno smislenih pitanja, dodaj srodna pitanja koja proširuju znanje iz te oblasti.
 Opšti kviz oblasti (npr. `kvizovi/biologija`) dobija samo `"oblast": "biologija"` i ulazi u izbor „Svi razredi“.
 
+## Kategorije i podkategorije (npr. „Eksperimenti“ → TLA+)
+
+Za teme van školskog gradiva: kategorija je kviz bez pitanja sa `"kategorija": true` (npr. `kvizovi/eksperimenti/kviz.json`, ikona 🚧, `"oblast": "eksperimenti"` – ime foldera = ime oblasti). Svaki kviz sa istom `oblast` i bez `razred` je njena podkategorija (npr. `kvizovi/eksperimenti-tla`, „TLA+“). U lobiju: kartica kategorije → „Sve teme“ ili jedna tema → (ako tema ima `lekcije`) cela tema ili jedno poglavlje. Podkategorije obično imaju `"uOpstem": false`.
+
+Primer: `kvizovi/eksperimenti-tla` – pitanja po poglavljima knjige Leslija Lamporta „Specifying Systems“ (besplatna, `izvori/knjige/tla/`, nije u git-u), sa `"celina": "Cela knjiga"` i `"jezik": "en"` – pitanja su na engleskom, a `rec` (krug „Najduža reč“) ostaje srpski. Kôd u tekstu ide između `$…$` (`mat()` u `public/app.js` – važi i za zanimljivost, objašnjenje i parove), a duži isečak kao medij `kod`.
+
 ## Mediji (`"mediji": {...}`)
 
 | vrsta | primer | napomena |
@@ -95,6 +104,7 @@ Opšti kviz oblasti (npr. `kvizovi/biologija`) dobija samo `"oblast": "biologija
 | formula | `{"vrsta":"formula","tekst":"2¹⁰ = ?"}` | veliki tekst (formule, rečenice za analizu) |
 | emodzi | `{"vrsta":"emodzi","tekst":"🧙‍♂️⚡👓"}` | rebus od emodžija |
 | svg | `{"vrsta":"svg","kod":"<svg …>"}` | sopstveni crtež (geometrija, grafici) |
+| kod | `{"vrsta":"kod","tekst":"Init == x = 0\nNext == x' = x + 1"}` | isečak izvornog koda: monospace, poravnat levo, uvek latinicom; redovi do ~40 znakova (telefon) |
 
 Slike sa Vikipedije: `node alati/preuzmi-slike.js kvizovi/<folder> ime-fajla "Naslov članka" [jezik]`
 

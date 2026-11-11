@@ -157,6 +157,7 @@ body.ekran .odgovori, .odgovori.dvokolonski { grid-template-columns: 1fr 1fr; }
 .bonus { text-align: center; color: var(--istaknuto); font-weight: 800; }
 .zanimljivost { background: linear-gradient(135deg, #3b2f8f, #22406f); border-left: 6px solid var(--istaknuto); animation: ulaz .6s .3s backwards; line-height: 1.45; }
 .zanimljivost h3 { margin-top: 0; color: var(--istaknuto); font-size: 1em; }
+.kod { margin: 0; padding: 12px 14px; text-align: left; white-space: pre; overflow-x: auto; font: 500 .82em/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; }
 .lista-poena { display: flex; flex-direction: column; gap: 6px; }
 .lista-poena .st { display: flex; align-items: center; gap: 10px; background: #1b1846; padding: 8px 12px; border-radius: 12px; animation: ulaz .4s backwards; }
 .lista-poena .st .p { margin-left: auto; font-weight: 900; }

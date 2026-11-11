@@ -676,6 +676,15 @@ function prikaziTekst(k, m) {
   return () => {};
 }
 
+// izvorni kôd (npr. TLA+ specifikacija): monospace, poravnat levo, uvek latinicom (.kod je u NE_DIRAJ)
+function prikaziKod(k, m) {
+  const d = document.createElement('pre');
+  d.className = 'kod';
+  d.textContent = m.tekst || '';
+  k.appendChild(d);
+  return () => {};
+}
+
 function dugmeZvuk(k, natpis, pokreni) {
   const b = document.createElement('button');
   b.className = 'dugme-zvuk';
@@ -773,7 +782,7 @@ function prikaziGeo(k, m) {
 const PRIKAZI = {
   slika: prikaziSliku, svg: prikaziSVG, melodija: prikaziMelodiju, morze: prikaziMorze, molekul: prikaziMolekul,
   telo: prikaziTelo, atom: prikaziAtom, planeta: prikaziPlanetu, dnk: prikaziDNK, mapa: prikaziMapu,
-  sat: prikaziSat, formula: prikaziTekst, emodzi: prikaziTekst, geo: prikaziGeo,
+  sat: prikaziSat, formula: prikaziTekst, emodzi: prikaziTekst, geo: prikaziGeo, kod: prikaziKod,
 };
 
 // glavna funkcija: vraća funkciju za čišćenje

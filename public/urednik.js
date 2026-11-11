@@ -83,8 +83,10 @@ const nazivLekcije = (l) => (typeof l === 'string' ? l : l?.naziv || '');
 
 function grupaOblasti(o) {
   const clanovi = kvizovi.filter((x) => x.oblast === o);
-  const g = clanovi.find((x) => !x.razred) || clanovi[0] || {};
-  return { oblast: o, clanovi, naziv: g.razred ? g.naziv.replace(/^\d+\. razred · /, '') : g.naziv, ikona: g.ikona, broj: clanovi.reduce((s, x) => s + x.broj, 0) };
+  // kategorija (kviz sa "kategorija": true, bez pitanja) okuplja podkategorije iste oblasti – npr. „Eksperimenti“ → TLA+
+  const g = clanovi.find((x) => x.kategorija) || clanovi.find((x) => !x.razred) || clanovi[0] || {};
+  const podkategorije = g.kategorija ? clanovi.filter((x) => x !== g && !x.razred) : [];
+  return { oblast: o, clanovi, podkategorije, naziv: g.razred ? g.naziv.replace(/^\d+\. razred · /, '') : g.naziv, ikona: g.ikona, broj: clanovi.reduce((s, x) => s + x.broj, 0) };
 }
 
 // ───── 1) početna: autor, izbor predmeta, moji predlozi ─────
@@ -97,8 +99,9 @@ function ekranPocetna() {
     vidjene.add(q.oblast);
     const g = grupaOblasti(q.oblast);
     const razredi = g.clanovi.some((x) => x.razred);
-    // oblast sa jednim kvizom odmah vodi na njega
-    kartice.push({ h: g.clanovi.length > 1 ? adresa({ oblast: q.oblast }) : adresa({ paket: g.clanovi[0].id }), naziv: g.naziv, ikona: g.ikona, broj: g.broj, razredi });
+    // oblast (ili kategorija) sa jednim kvizom odmah vodi na njega
+    const jedini = g.podkategorije.length === 1 ? g.podkategorije[0] : !g.podkategorije.length && g.clanovi.length === 1 ? g.clanovi[0] : null;
+    kartice.push({ h: jedini ? adresa({ paket: jedini.id }) : adresa({ oblast: q.oblast }), naziv: g.naziv, ikona: g.ikona, broj: g.broj, razredi });
   }
   glavni.innerHTML = `
     <div class="u-uvod">
@@ -153,6 +156,8 @@ async function mojiPredlozi() {
 // ───── 2) spisak pitanja (sa izborom razreda i lekcije) ─────
 function izborRazreda(oblast, paketId) {
   const g = grupaOblasti(oblast);
+  if (g.podkategorije.length) return `<div class="u-razredi"><b style="margin-right:6px">Tema:</b>
+    ${g.podkategorije.map((k) => `<button data-h="${adresa({ paket: k.id })}" class="${k.id === paketId ? 'izabran' : ''}">${k.ikona} ${esc(k.naziv)}</button>`).join('')}</div>`;
   if (g.clanovi.length < 2) return '';
   const opsti = g.clanovi.filter((x) => !x.razred);
   return `<div class="u-razredi"><b style="margin-right:6px">Razred:</b>
@@ -174,7 +179,7 @@ function zaglavljePredmeta(oblast, paketId) {
 }
 
 function ekranOblast(oblast) {
-  glavni.innerHTML = zaglavljePredmeta(oblast, null) + '<div class="u-prazno">Izaberi razred ☝️</div>';
+  glavni.innerHTML = zaglavljePredmeta(oblast, null) + `<div class="u-prazno">Izaberi ${grupaOblasti(oblast).podkategorije.length ? 'temu' : 'razred'} ☝️</div>`;
   $$('[data-h]').forEach((b) => (b.onclick = () => idi(b.dataset.h)));
 }
 
@@ -492,7 +497,7 @@ function osveziPregled(odmah = false) {
 }
 
 // preslovljavanje pregleda (kao u igri, pravila su u pismo.js)
-const NE_DIRAJ = 'script,style,textarea,input,[data-lat],.formula,.formula-mala,.mat,#pv-medij';
+const NE_DIRAJ = 'script,style,textarea,input,[data-lat],.formula,.formula-mala,.mat,.kod,#pv-medij';
 function uCirilicu(koren) {
   const w = document.createTreeWalker(koren, NodeFilter.SHOW_TEXT);
   const cvorovi = [];

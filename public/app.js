@@ -29,7 +29,7 @@ const sacuvajJa = () => { if (!EKRAN) ls.set('ja', ja); };
 // ───── pismo: ćirilica (podrazumevano) ili latinica – važi za ceo prikaz ─────
 // Kod i podaci ostaju na latinici; ceo ekran (tekst čvorovi, placeholder/title) se preslovljava u hodu.
 let PISMO = ls.get('pismo', 'cirilica') === 'latinica' ? 'latinica' : 'cirilica';
-const NE_DIRAJ = 'script,style,textarea,input,[data-lat],.formula,.formula-mala,.kod-sobe,.adresa,.mat';
+const NE_DIRAJ = 'script,style,textarea,input,[data-lat],[lang="en"],.formula,.formula-mala,.kod-sobe,.adresa,.mat,.kod';
 const tr = (t) => (PISMO === 'cirilica' ? window.Pismo.uCirilicu(t) : String(t)); // pravila u pismo.js
 function prevedi(koren) {
   if (PISMO !== 'cirilica') return;
@@ -76,7 +76,12 @@ let tikTajmer = null;
 
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 // tekst sa matematikom: $…$ ostaje latinicom (oznake tačaka, promenljive), √{x} – koren sa crtom, {a|b} – razlomak
+// sadržaj kviza na stranom jeziku ("jezik": "en", npr. TLA+) ide u <span lang> – ne preslovljava se u ćirilicu
+const strano = (html, jezik = V?.pitanje?.jezik) => (jezik ? `<span lang="${esc(jezik)}">${html}</span>` : html);
 function mat(t) {
+  return strano(matTekst(t));
+}
+function matTekst(t) {
   return esc(t).replace(/\$([^$]+)\$/g, (_, m) => {
     let x = m, pre;
     do {
@@ -397,11 +402,16 @@ async function ekranLobi(nov) {
 const RAZREDI = [5, 6, 7, 8];
 const kvizPo = (id) => kvizovi.find((x) => x.id === id);
 
+// kategorija (kviz sa "kategorija": true, bez pitanja – npr. „Eksperimenti“) okuplja podkategorije iste oblasti (npr. TLA+)
 function grupaOblasti(o) {
   const clanovi = kvizovi.filter((x) => x.oblast === o);
-  const glavni = clanovi.find((x) => !x.razred) || clanovi[0] || {};
-  return { oblast: o, glavni, clanovi, naziv: glavni.razred ? glavni.naziv.replace(/^\d+\. razred · /, '') : glavni.naziv, ikona: glavni.ikona, boja: glavni.boja, broj: clanovi.reduce((s, x) => s + x.broj, 0), zadaci: clanovi.every((x) => x.zadaci) };
+  const glavni = clanovi.find((x) => x.kategorija) || clanovi.find((x) => !x.razred) || clanovi[0] || {};
+  const podkategorije = glavni.kategorija ? clanovi.filter((x) => x !== glavni && !x.razred) : [];
+  return { oblast: o, glavni, clanovi, podkategorije, naziv: glavni.razred ? glavni.naziv.replace(/^\d+\. razred · /, '') : glavni.naziv, ikona: glavni.ikona, boja: glavni.boja, broj: clanovi.reduce((s, x) => s + x.broj, 0), zadaci: clanovi.every((x) => x.zadaci) };
 }
+const brojTema = (n) => `${n} ${n % 10 === 1 && n % 100 !== 11 ? 'tema' : [2, 3, 4].includes(n % 10) && ![12, 13, 14].includes(n % 100) ? 'teme' : 'tema'}`;
+// natpis za ceo kviz sa lekcijama: „Cela godina“ (razredi) ili sopstveni ("celina": "Cela knjiga")
+const celina = (k) => k.celina || 'Cela godina';
 
 // rastavlja izbor na delove: { oblast, paket, lekcija }
 function rastaviIzbor(id) {
@@ -415,10 +425,10 @@ function rastaviIzbor(id) {
 function opisIzbora(id) {
   const r = rastaviIzbor(id);
   if (id === 'opste' || (!r.oblast && !r.paket)) return kvizPo('opste') || { naziv: 'Opšte znanje', ikona: '🌍' };
-  if (!r.paket) { const g = grupaOblasti(r.oblast); return { naziv: g.naziv, podnaslov: 'svi razredi', ikona: g.ikona, boja: g.boja }; }
+  if (!r.paket) { const g = grupaOblasti(r.oblast); return { naziv: g.naziv, podnaslov: g.podkategorije.length ? 'sve teme' : 'svi razredi', ikona: g.ikona, boja: g.boja }; }
   const k = r.paket;
-  if (r.lekcija) return { naziv: k.lekcije[r.lekcija - 1]?.naziv || k.naziv, podnaslov: k.naziv, ikona: k.ikona, boja: k.boja };
-  return { naziv: k.naziv, podnaslov: k.razred ? 'cela godina' : '', ikona: k.ikona, boja: k.boja };
+  if (r.lekcija) return { naziv: k.lekcije[r.lekcija - 1]?.naziv || k.naziv, podnaslov: k.naziv, ikona: k.ikona, boja: k.boja, jezik: k.jezik };
+  return { naziv: k.naziv, podnaslov: k.razred || (k.celina && k.lekcije.length) ? celina(k).toLowerCase() : '', ikona: k.ikona, boja: k.boja };
 }
 
 function izborKvizaHTML(P) {
@@ -431,10 +441,21 @@ function izborKvizaHTML(P) {
     if (vidjene.has(q.oblast)) continue;
     vidjene.add(q.oblast);
     const g = grupaOblasti(q.oblast);
-    kartice.push({ id: 'oblast:' + q.oblast, naziv: g.naziv, ikona: g.ikona, broj: g.broj, izabran: r.oblast === q.oblast, razredi: g.clanovi.some((x) => x.razred), zadaci: g.zadaci });
+    kartice.push({ id: 'oblast:' + q.oblast, naziv: g.naziv, ikona: g.ikona, broj: g.broj, izabran: r.oblast === q.oblast, razredi: g.clanovi.some((x) => x.razred), teme: g.podkategorije.length, zadaci: g.zadaci });
   }
   return `<div class="kartica"><h3>Izaberi predmet</h3><div class="kvizovi">${kartice.map((q) => `
-    <button class="kviz ${q.izabran ? 'izabran' : ''}" data-k="${q.id}"><div class="ik">${q.ikona}</div><div class="nz">${esc(q.naziv)}</div><div class="br">${q.broj} ${q.zadaci ? 'zadataka' : 'pitanja'}${q.razredi ? ' · po razredima' : ''}</div></button>`).join('')}</div></div>`;
+    <button class="kviz ${q.izabran ? 'izabran' : ''}" data-k="${q.id}"><div class="ik">${q.ikona}</div><div class="nz">${esc(q.naziv)}</div><div class="br">${q.broj} ${q.zadaci ? 'zadataka' : 'pitanja'}${q.razredi ? ' · po razredima' : ''}${q.teme ? ' · ' + brojTema(q.teme) : ''}</div></button>`).join('')}</div></div>`;
+}
+
+// spisak lekcija izabranog kviza: „Cela godina“ (ili `celina`) + lekcije, grupisane po temama
+function lekcijeHTML(k, lekcija) {
+  let tema = null;
+  let html = `<div class="lekcije"><button class="lekcija ${!lekcija ? 'izabran' : ''}" data-k="${k.id}"><b>📚 ${esc(celina(k))}</b><span>${k.broj}</span></button>`;
+  k.lekcije.forEach((l, i) => {
+    if (l.tema && l.tema !== tema) { tema = l.tema; html += `<div class="tema">${strano(esc(tema), k.jezik)}</div>`; }
+    html += `<button class="lekcija ${lekcija === i + 1 ? 'izabran' : ''}" data-k="${k.id}#${i + 1}" ${l.broj ? '' : 'disabled'}><span class="rb">${i + 1}.</span> ${strano(esc(l.naziv), k.jezik)}<span>${l.broj}</span></button>`;
+  });
+  return html + '</div>';
 }
 
 // drugi korak: izabrani predmet (sa „promeni“) + razred i lekcija, ako ih predmet ima
@@ -445,6 +466,14 @@ function izborRazredaHTML(P) {
     <button id="promeni-predmet">← Promeni</button></div>`;
   if (!r.oblast) return html;
   const g = grupaOblasti(r.oblast);
+  if (g.podkategorije.length) {
+    // kategorija (npr. „Eksperimenti“): izbor teme, pa poglavlje/lekcija
+    html += `<div class="kartica"><h3>Tema</h3><div class="izbor razredi">
+      <button data-k="oblast:${g.oblast}" class="${!r.paket ? 'izabran' : ''}">Sve teme</button>
+      ${g.podkategorije.map((k) => `<button data-k="${k.id}" class="${r.paket === k ? 'izabran' : ''}">${k.ikona} ${esc(k.naziv)}</button>`).join('')}</div>`;
+    if (r.paket?.lekcije.length) html += lekcijeHTML(r.paket, r.lekcija);
+    return html + '</div>';
+  }
   if (!g.clanovi.some((x) => x.razred)) return html;
   const raz = r.paket?.razred || null;
   html += `<div class="kartica"><h3>Razred</h3><div class="izbor razredi">
@@ -453,16 +482,7 @@ function izborRazredaHTML(P) {
       const k = g.clanovi.find((x) => x.razred === n);
       return `<button ${k ? `data-k="${k.id}"` : 'disabled title="Još nema pitanja za ovaj razred"'} class="${raz === n ? 'izabran' : ''}">${n}.</button>`;
     }).join('')}</div>`;
-  if (raz && r.paket.lekcije.length) {
-    const k = r.paket;
-    let tema = null;
-    html += `<div class="lekcije"><button class="lekcija ${!r.lekcija ? 'izabran' : ''}" data-k="${k.id}"><b>📚 Cela godina</b><span>${k.broj}</span></button>`;
-    k.lekcije.forEach((l, i) => {
-      if (l.tema && l.tema !== tema) { tema = l.tema; html += `<div class="tema">${esc(tema)}</div>`; }
-      html += `<button class="lekcija ${r.lekcija === i + 1 ? 'izabran' : ''}" data-k="${k.id}#${i + 1}" ${l.broj ? '' : 'disabled'}><span class="rb">${i + 1}.</span> ${esc(l.naziv)}<span>${l.broj}</span></button>`;
-    });
-    html += '</div>';
-  }
+  if (raz && r.paket.lekcije.length) html += lekcijeHTML(r.paket, r.lekcija);
   return html + '</div>';
 }
 
@@ -473,7 +493,7 @@ function podesavanja() {
   const k = $('#podesavanja');
   const izbor = opisIzbora(P.kviz);
   if (!jaDomacin()) {
-    k.innerHTML = `<div class="kartica centar"><div style="font-size:2.5em">${izbor.ikona || '🌍'}</div><h2>${esc(izbor.naziv)}</h2>
+    k.innerHTML = `<div class="kartica centar"><div style="font-size:2.5em">${izbor.ikona || '🌍'}</div><h2>${strano(esc(izbor.naziv), izbor.jezik)}</h2>
       ${izbor.podnaslov ? `<div class="sitno">${esc(izbor.podnaslov)}</div>` : ''}
       <div class="cekanje">Čeka se da vođa igre pokrene igru<span class="tackice"></span></div></div>`;
     donjaTraka('');
@@ -622,8 +642,8 @@ function otkrivanjePitanja(P, naslov) {
       ${d.poeni > 0 ? `<span class="plus">+${d.poeni + (d.bonus || 0)}</span>${d.od ? ` <span class="sitno">${d.pogodjeno}/${d.od}</span>` : ''}${x === brzi && tacniLista.length > 1 ? ' ⚡' : ''}` : '<span class="sitno">—</span>'}<span class="p">${x.poeni}</span></div>`;
   })}</div></div>` : '';
   return `${rez}
-      <div class="kartica zanimljivost">${naslov}${P.objasnjenje ? `<p>${esc(P.objasnjenje)}</p>` : ''}
-      ${P.zanimljivost ? `<h3 style="margin-top:12px">💡 Da li si znao?</h3><div>${esc(P.zanimljivost)}</div>` : ''}
+      <div class="kartica zanimljivost">${naslov}${P.objasnjenje ? `<p>${mat(P.objasnjenje)}</p>` : ''}
+      ${P.zanimljivost ? `<h3 style="margin-top:12px">💡 Da li si znao?</h3><div>${mat(P.zanimljivost)}</div>` : ''}
       ${P.medijiOdgovora ? '<div id="medij-odgovora"></div>' : ''}</div>
       ${P.resenje ? resenjeHTML(P) : ''}
       ${poeni}`;
@@ -730,7 +750,7 @@ function ekranPitanje(nov, staro) {
       // u velikoj sobi samo broj glasova (avatari bi prekrili tekst odgovora)
       $('.glasovi', b).innerHTML = mnogo() ? (glasali.length ? `<b class="jos">${glasali.length}</b>` : '') : glasali.join('');
     });
-    const naslov = P.vrsta === 'uljez' ? `<h3>🕵️ Uljez je: ${esc(P.odgovori[P.tacan])}</h3>` : `<h3>✅ ${mat(P.odgovori[P.tacan])}</h3>`;
+    const naslov = P.vrsta === 'uljez' ? `<h3>🕵️ Uljez je: ${mat(P.odgovori[P.tacan])}</h3>` : `<h3>✅ ${mat(P.odgovori[P.tacan])}</h3>`;
     ispod.innerHTML = otkrivanjePitanja(P, naslov);
     prikaziMedijOdgovora(P);
     if (P.resenje) pokreniResenje(P);
@@ -753,8 +773,8 @@ function ekranSpoji(nov, staro) {
     app.innerHTML = `${zaglavljePitanja(P)}
       <div id="medij"></div>
       <div class="spoji" id="spoji">
-        <div class="kolona">${P.levo.map((t, i) => `<button class="spoj levo" data-i="${i}" style="animation-delay:${0.05 * i}s">${esc(t)}</button>`).join('')}</div>
-        <div class="kolona">${P.desno.map((t, j) => `<button class="spoj desno" data-j="${j}" style="animation-delay:${0.05 * j + 0.1}s">${esc(t)}</button>`).join('')}</div>
+        <div class="kolona">${P.levo.map((t, i) => `<button class="spoj levo" data-i="${i}" style="animation-delay:${0.05 * i}s">${mat(t)}</button>`).join('')}</div>
+        <div class="kolona">${P.desno.map((t, j) => `<button class="spoj desno" data-j="${j}" style="animation-delay:${0.05 * j + 0.1}s">${mat(t)}</button>`).join('')}</div>
       </div>
       <div id="ispod"></div>`;
     if (P.mediji) ciscenje.push(prikaziMedij($('#medij'), P.mediji, { auto: true, paket: P.paket }));
@@ -830,7 +850,7 @@ function ekranSpoji(nov, staro) {
       const moj = Array.isArray(V.mojOdgovor) ? V.mojOdgovor[i] : null;
       const znak = moj === null || EKRAN ? '' : moj === P.tacan[i] ? '✅' : '❌';
       return `<div class="par-resenje" style="animation-delay:${0.12 * i}s"><span class="boja" style="background:${BOJE_PAROVA[i]}"></span>
-        <span class="tekst"><b>${esc(l)}</b> <span class="strelica">→</span> ${esc(P.desno[P.tacan[i]])}</span>
+        <span class="tekst"><b>${mat(l)}</b> <span class="strelica">→</span> ${mat(P.desno[P.tacan[i]])}</span>
         <span class="sitno">${Math.round((100 * V.raspodela[i]) / odgovorilo)}%</span>${znak ? `<span>${znak}</span>` : ''}</div>`;
     }).join('');
     ispod.innerHTML = otkrivanjePitanja(P, `<h3>🔗 Tačni parovi</h3>${resenje}`);
