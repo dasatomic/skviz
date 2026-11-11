@@ -347,6 +347,44 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | razred5-istorija | atila.jpg | Eugène Delacroix | Public domain | [izvor](https://commons.wikimedia.org/wiki/File%3AEugene%20Ferdinand%20Victor%20Delacroix%20Attila%20fragment%20(cropped).jpg) |
 | razred5-istorija | senat.jpg | Cesare Maccari | Public domain | [izvor](https://commons.wikimedia.org/wiki/File%3ACicero%20Denounces%20Catiline%20in%20the%20Roman%20Senate%20by%20Cesare%20Maccari.png) |
 | razred5-istorija | hadrijanov-zid.jpg | Benjamin Smith | CC BY-SA 4.0 | [izvor](https://commons.wikimedia.org/wiki/File%3AHadrian's%20Wall%20on%20Housesteads%20Crags%20-%2006.jpg) |
+| razred7-biologija | vocna-musica.jpg | Sanjay Acharya | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Drosophila_melanogaster) |
+| razred7-biologija | grasak.jpg | Rasbak | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Pea) |
+| razred7-biologija | hortenzija.jpg | belvedere04 | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Hydrangea_macrophylla) |
+| razred7-biologija | kvrgavi-bor.jpg | Dcrjsr | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Pinus_longaeva) |
+| razred7-biologija | dzonatan.jpg | Kevstan | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Jonathan_(tortoise)) |
+| razred7-biologija | isihara.png | Shinobu Ishihara | Public domain | [izvor](https://en.wikipedia.org/wiki/Ishihara_test) |
+| razred7-biologija | orhideja.jpg | Rohit Naniwadekar | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Orchid) |
+| razred7-biologija | ameba.jpg | SmallRex | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Amoeba_proteus) |
+| razred7-biologija | paramecijum.jpg | Barfooz at the English Wikipedia. | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Paramecium) |
+| razred7-biologija | euglena.jpg | Petr Knotek | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Euglena) |
+| razred7-biologija | noktiluka.jpg | Maria Antónia Sampayo, Instituto de Oceanografia, Faculdade Ciências da Universi | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Noctiluca) |
+| razred7-biologija | kremenjasice.jpg | Prof. Gordon T. Taylor, Stony Brook University | Public domain | [izvor](https://en.wikipedia.org/wiki/Diatom) |
+| razred7-biologija | kelp.jpg | Kip Evans | Public domain | [izvor](https://en.wikipedia.org/wiki/Kelp_forest) |
+| razred7-biologija | stoma.jpg | Photohound | Public domain | [izvor](https://en.wikipedia.org/wiki/Stoma) |
+| razred7-biologija | godovi.jpg | Arpingstone | Public domain | [izvor](https://en.wikipedia.org/wiki/Dendrochronology) |
+| razred7-biologija | cicak.jpg | Epukas | Public domain | [izvor](https://en.wikipedia.org/wiki/Arctium) |
+| razred7-biologija | morski-kokos.jpg | WL~commonswiki | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Lodoicea) |
+| razred7-biologija | mimoza.jpg | Suyash.dwivedi | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Mimosa_pudica) |
+| razred7-biologija | lisaj.jpg | Jason Hollinger | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Lichen) |
+| razred7-biologija | zelena-pupavka.jpg | Archenzo | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Amanita_phalloides) |
+| razred7-biologija | krokodil.jpg | Dewet | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Nile_crocodile) |
+| razred7-biologija | polarni-medved.jpg | Alan Wilson | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Polar_bear) |
+| razred7-biologija | nilski-konj.jpg | Muhammad Mahdi Karim | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Hippopotamus) |
+| razred7-biologija | slozeno-oko.jpg | Gerd Alberti and Uwe Kils | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Compound_eye) |
+| razred7-biologija | planarija.jpg | Eduard Solà | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Planarian) |
+| razred7-biologija | arheopteriks.jpg | H. Raab (User: Vesta) | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Archaeopteryx) |
+| razred7-biologija | ginko.jpg | EecherplazGinkgo06.jpg: Cayambe derivative work: Ginkgotree (talk) | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Ginkgo_biloba) |
+| razred7-biologija | cilibar.jpg | Anders L. Damgaard - www.amber-inclusions.dk - Baltic-amber-beetle | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Amber) |
+| razred7-biologija | homologi-organi.png | Волков Владислав Петрович | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Homology_(biology)) |
+| razred7-biologija | tundra.jpg | Hannes Grobe, AWI | CC BY-SA 2.5 | [izvor](https://en.wikipedia.org/wiki/Tundra) |
+| razred7-biologija | los.jpg | Paxson Woelber | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Moose) |
+| razred7-biologija | fenek.jpg | Drew Avery | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Fennec_fox) |
+| razred7-biologija | brezina-grbica.jpg | Cyndy Sims Parr | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Peppered_moth) |
+| razred7-biologija | riba-klovn.jpg | Nick Hobgood | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Clownfish) |
+| razred7-biologija | rosulja.jpg | Alan Rockefeller | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Drosera_rotundifolia) |
+| razred7-biologija | plutnjak.jpg | Kent Wang from London, United Kingdom | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Quercus_suber) |
+| razred7-biologija | bakteriofag.jpg | Dr. Victor Padilla-Sanchez, PhD https://www.drvictorpadillasanchez.com | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Bacteriophage) |
+| razred7-biologija | albino-aligator.jpg | Brocken Inaglory | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Albinism) |
 | razred8-istorija | un.jpg | Kidfly182 | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Headquarters_of_the_United_Nations) |
 | razred8-istorija | lenjin.jpg | Unknown, presumably official | Public domain | [izvor](https://en.wikipedia.org/wiki/Vladimir_Lenin) |
 | razred8-istorija | nikolaj.jpg | Unknown author (originally uploaded to Wikimedia Commons on 22 August 2012 by Pe | Public domain | [izvor](https://en.wikipedia.org/wiki/Nicholas_II) |
