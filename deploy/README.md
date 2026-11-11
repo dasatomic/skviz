@@ -11,14 +11,27 @@ git push                                     # čuva izmene na GitHub-u (nije ob
 
 Na kraju treba da piše `active` i `Igra radi ✓`.
 
-## Šta skripta radi
+### Samo pitanja (bez restarta)
+Kad su se menjala samo pitanja (`kvizovi/`), objavi ih bez prekidanja soba u toku:
+```bash
+./deploy/objavi.sh root@2.29.146.92 --pitanja
+```
+- Šalje se samo folder `kvizovi/`; server ga pokupi odmah (najkasnije za 10 s), bez restarta i bez prekida veza.
+- Sobe u toku igraju sa već izabranim pitanjima; nove sobe (i „Pokreni“ u lobiju) dobijaju nova pitanja, kvizove i kategorije.
+- Stare slike se ne brišu (možda ih prikazuje soba u toku) – čisti ih sledeći pun deploy.
+- Skripta odbija ako je od poslednjeg punog deploy-a promenjen i kod (`server.js`, `lib/`, `public/`, `podaci/`…) –
+  tada treba pun deploy. Pun deploy zato upisuje svoj commit u `/opt/gric-kviz/.objavljeno`
+  (prvi put posle ove izmene treba jednom uraditi pun deploy).
+- Na kraju piše `Pitanja objavljena ✓ (N pitanja…)` – server vidi isti broj pitanja kao commit.
+
+## Šta skripta radi (pun deploy)
 1. Uzme poslednji commit (necommitovane izmene se **ne šalju** – skripta upozori).
 2. Pokrene proveru kvizova – ako ne prođe, ništa se ne šalje.
 3. Pošalje kod na server u `/opt/gric-kviz` (ne dira statistiku, istoriju odigranih pitanja ni telemetriju `podaci/telemetrija.db` na serveru).
-4. Restartuje servis `gric-kviz` i proveri da igra odgovara.
+4. Zapiše commit u `.objavljeno`, restartuje servis `gric-kviz` i proveri da igra odgovara.
 
 ## Važno
-- Restart **prekida sve sobe u toku** (stanje je samo u memoriji) – objavljujte kad niko ne igra.
+- Pun deploy (restart) **prekida sve sobe u toku** (stanje je samo u memoriji) – objavljujte kad niko ne igra. Za samo pitanja koristi `--pitanja`.
 - Za pristup serveru koristi se SSH ključ dodat na Hetzneru. Ako traži lozinku, ključ nije učitan.
 - Starija verzija (vraćanje): `REF=<commit> ./deploy/objavi.sh root@2.29.146.92`
 - Novi server (jednom): `DOMEN=skviz.rs ./deploy/objavi.sh root@IP --prvi-put` – instalira Node, Caddy (HTTPS) i firewall (`deploy/postavi-server.sh`).
@@ -59,7 +72,7 @@ Ako token procuri, najviše što neko može je da otvara PR-ove i menja robotov 
 5. Na svom nalogu (`dasatomic`): Watch → Custom → Pull requests, da stižu imejlovi o predlozima.
    GitHub Actions za PR-ove iz forka novih saradnika traže odobrenje („Approve and run“) – to je u redu.
 
-Prihvatanje predloga: na stranici PR-a „Merge pull request“, pa `git pull` i `./deploy/objavi.sh …`.
+Prihvatanje predloga: na stranici PR-a „Merge pull request“, pa `git pull` i `./deploy/objavi.sh … --pitanja` (predlozi menjaju samo pitanja).
 Autor predloga vidi stanje („Čeka pregled / Prihvaćeno“) i komentare u uredniku pod „Moji predlozi“.
 Ograničenja: 10 predloga na sat po adresi, 100 dnevno ukupno (`LIMIT_PREDLOGA`, `LIMIT_PREDLOGA_DAN`); provera stanja predloga („Moji predlozi“) 20 puta u minutu po adresi (`LIMIT_STANJA`).
 

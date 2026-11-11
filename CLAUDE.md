@@ -7,6 +7,7 @@ Ceo interfejs, pitanja i komentari u kodu su na **srpskom (latinica)**. Igrači 
 - `node server.js` (ili `npm start`), port 3000 (`PORT=…` za drugi). Bez npm zavisnosti – samo Node.
 - Telefoni: `http://<IP računara>:3000`, TV/veliki ekran: `/ekran`.
 - Firewall (ufw) mora da propušta port: `sudo ufw allow 3000/tcp`.
+- Objava na server: `./deploy/objavi.sh root@IP` (pun, restart) ili `… --pitanja` (samo `kvizovi/`, bez restarta – server pokupi izmene za ≤10 s, sobe u toku zadržavaju svoja pitanja). Detalji u `deploy/README.md`.
 
 ## Struktura
 - `server.js` – HTTP + Server-Sent Events (`/api/dogadjaji`), akcije preko `POST /api/akcija`.

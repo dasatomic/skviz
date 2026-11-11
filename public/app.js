@@ -366,7 +366,8 @@ const mesto = (i) => (mnogo() ? `<b class="rb">${i + 1}.</b>` : '');
 // ───────────────────────── lobi ─────────────────────────
 async function ekranLobi(nov) {
   if (nov) {
-    if (!kvizovi.length) try { const k = await (await fetch('/api/kvizovi')).json(); if (Array.isArray(k)) kvizovi = k; } catch {}
+    // spisak kvizova se osvežava pri svakom ulasku u lobi – pitanja objavljena bez restarta servera vidi svaka nova soba
+    await osveziKvizove();
     let info = { adrese: [location.hostname], port: location.port };
     try { const i = await (await fetch('/api/info')).json(); if (Array.isArray(i.adrese)) info = i; } catch {}
     // dok smo čekali server, igra je možda krenula ili smo izašli iz sobe
@@ -400,6 +401,9 @@ async function ekranLobi(nov) {
 
 // ───── izbor kviza: 'opste' | 'oblast:biologija' | 'razred5-biologija' (cela godina) | 'razred5-biologija#3' (lekcija) ─────
 const RAZREDI = [5, 6, 7, 8];
+async function osveziKvizove() {
+  try { const k = await (await fetch('/api/kvizovi')).json(); if (Array.isArray(k)) kvizovi = k; } catch {}
+}
 const kvizPo = (id) => kvizovi.find((x) => x.id === id);
 
 // kategorija (kviz sa "kategorija": true, bez pitanja – npr. „Eksperimenti“) okuplja podkategorije iste oblasti (npr. TLA+)
@@ -542,7 +546,7 @@ function podesavanja() {
       Zvuk.efekat('klik');
       akcija('podesavanja', { podesavanja: { kviz: b.dataset.k } });
     }));
-    $('#promeni-predmet', k).onclick = () => { Zvuk.efekat('klik'); korakLobija = 'predmet'; podesavanja(); };
+    $('#promeni-predmet', k).onclick = () => { Zvuk.efekat('klik'); korakLobija = 'predmet'; podesavanja(); osveziKvizove().then(() => korakLobija === 'predmet' && V?.faza === 'lobi' && $('#podesavanja') && podesavanja()); };
     k.querySelectorAll('.izbor[data-p] button').forEach((b) => (b.onclick = () => {
       Zvuk.efekat('klik');
       akcija('podesavanja', { podesavanja: { [b.parentNode.dataset.p]: b.dataset.v } });
@@ -1051,7 +1055,7 @@ document.addEventListener('visibilitychange', () => {
 });
 (async () => {
   postaviPismo(PISMO, false); // naslov kartice
-  fetch('/api/kvizovi').then((r) => r.json()).then((k) => { if (Array.isArray(k)) kvizovi = k; }).catch(() => {});
+  osveziKvizove();
   const qs = new URLSearchParams(location.search);
   const sacuvana = ls.get('soba', '');
   const kod = (qs.get('soba') || '').toUpperCase();

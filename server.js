@@ -20,6 +20,16 @@ const KVIZOVI = path.join(__dirname, 'kvizovi');
 
 const greske = kvizovi.ucitajSve();
 greske.forEach((g) => console.warn('⚠ Greška u kvizu', g));
+// pitanja objavljena bez restarta (`deploy/objavi.sh … --pitanja`) server pokupi najkasnije za 10 s
+// (i odmah pri /api/kvizovi i „Pokreni“); sobe u toku zadržavaju već izabrana pitanja
+setInterval(() => {
+  const pre = kvizovi.svi();
+  const g = kvizovi.ucitajSve();
+  if (kvizovi.svi() === pre) return;
+  const sve = Object.values(kvizovi.svi());
+  console.log(`Kvizovi osveženi: ${sve.length} kvizova, ${sve.reduce((s, k) => s + k.pitanja.length, 0)} pitanja`);
+  g.forEach((x) => console.warn('⚠ Greška u kvizu', x));
+}, 10e3).unref();
 const brojReci = recnik.ucitaj();
 
 const sobe = new Map(); // kod -> Soba
