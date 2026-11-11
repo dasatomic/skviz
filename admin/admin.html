@@ -472,6 +472,8 @@ addEventListener('resize', () => { clearTimeout(tajmerVelicine); tajmerVelicine 
 // ───────── početak ─────────
 let tajmerIstorije;
 async function pokreni() {
+  // živi tok odmah, uporedo sa istorijom (bez prijave tok javi grešku i vrati na prijavu)
+  otvoriTok();
   const r = await fetch('/api/admin/istorija?dana=' + $('period').value).catch(() => null);
   if (!r || r.status === 401) return prikaziPrijavu();
   $('prijava').hidden = true;
@@ -479,7 +481,6 @@ async function pokreni() {
   istorija = await r.json();
   $('istorijaOsvezeno').textContent = 'osveženo ' + new Date().toLocaleTimeString('sr-Latn', { hour: '2-digit', minute: '2-digit' });
   crtajIstoriju();
-  otvoriTok();
   clearInterval(tajmerIstorije);
   tajmerIstorije = setInterval(ucitajIstoriju, 5 * 60e3);
 }

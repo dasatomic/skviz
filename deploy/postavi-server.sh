@@ -38,9 +38,20 @@ ReadWritePaths=$DIR/podaci
 WantedBy=multi-user.target
 UNIT
 
-# Caddy: reverse proxy ka Node-u. gzip ne sme na SSE tok (/api/dogadjaji) – sažimanje bi zadržavalo poruke.
-IGRA='	@nijeTok not path /api/dogadjaji
-	encode @nijeTok gzip
+# Caddy: reverse proxy ka Node-u. Sažimaju se samo navedene vrste sadržaja – SSE tokovi
+# (text/event-stream: /api/dogadjaji, /api/admin/uzivo) nisu na spisku, jer bi sažimanje zadržavalo poruke.
+# Ne koristiti text/* (ni Caddy-jev podrazumevani spisak) – obuhvata i text/event-stream.
+IGRA='	encode zstd gzip {
+		match {
+			header Content-Type text/html*
+			header Content-Type text/css*
+			header Content-Type text/javascript*
+			header Content-Type text/plain*
+			header Content-Type application/json*
+			header Content-Type application/xml*
+			header Content-Type image/svg+xml*
+		}
+	}
 	reverse_proxy 127.0.0.1:3000'
 IP="$(curl -4 -fsS https://api.ipify.org 2>/dev/null || hostname -I | awk '{print $1}')"
 if [ -n "${DOMEN:-}" ]; then
