@@ -2,8 +2,8 @@
 
 | Šta | Odakle | Licenca |
 |---|---|---|
-| Srpski rečnik (`podaci/recnik.txt`, osnovni oblici reči u ćirilici) | Hunspell rečnik srpskog jezika za LibreOffice, autor Milutin Smiljanić – https://github.com/LibreOffice/dictionaries/tree/master/sr | GNU LGPL 3+ / MPL 2+ / GPL 3+ (koristi se pod LGPL 3+) |
-| Učestalost reči (`podaci/ucestalost.txt`, samo redosled) | FrequencyWords (Hermit Dave), nastalo iz OpenSubtitles korpusa – https://github.com/hermitdave/FrequencyWords | MIT |
+| Srpski rečnik (`podaci/hunspell/sr.dic` i `sr.aff`, ćirilica; preuzima ga `alati/gradi-recnik.js`) | Hunspell rečnik srpskog jezika za LibreOffice, autor Milutin Smiljanić – https://github.com/LibreOffice/dictionaries/tree/master/sr | GNU LGPL 3+ / MPL 2+ / GPL 3+ (koristi se pod LGPL 3+) |
+| Učestalost reči (`podaci/ucestalost.txt`, samo redosled osnovnih oblika) | FrequencyWords (Hermit Dave), nastalo iz OpenSubtitles korpusa – https://github.com/hermitdave/FrequencyWords | MIT |
 | Mape država i reka (`public/geo/svet.json`, pojednostavljeno) | Natural Earth – https://www.naturalearthdata.com | Javno vlasništvo |
 | Slike u kvizovima | Wikimedia Commons / Vikipedija | Različite slobodne licence, vidi [SLIKE.md](SLIKE.md) |
 | Font Nunito (učitava se sa Google Fonts) | Vernon Adams i saradnici | SIL Open Font License 1.1 |

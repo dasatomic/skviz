@@ -576,7 +576,7 @@ function ekranUvod(nov) {
     <h1>${pitanja ? esc(kv?.naziv || 'Pitanja') : 'Najduža reč'}</h1>
     <p>${pitanja && V.zadaci ? `${u.brojPitanja} ${u.brojPitanja === 1 ? 'zadatak' : u.brojPitanja < 5 ? 'zadatka' : 'zadataka'}, po ${Math.round(V.podesavanja.vremeZadatka / 60)} min. Pripremi papir i olovku! Tačan odgovor donosi poene (brže rešenje malo više), a posle svakog zadatka sledi detaljno rešenje korak po korak.`
       : pitanja ? `${u.brojPitanja} pitanja sa 4 ponuđena odgovora. Brži tačan odgovor donosi više poena, teška pitanja vrede ×1,5, a niz tačnih odgovora daje bonus!`
-      : `${u.brojReci === 1 ? '12 slova' : `${u.brojReci}× po 12 slova`}. Složi što dužu reč u osnovnom obliku (imenica u jednini, glagol u infinitivu…). 100 poena po slovu, bonus za najdužu!${V.krugovi.includes('pitanja') ? ' U slovima se krije i jedan pojam iz prethodnih pitanja – ko ga pronađe, dobija +200.' : ''}`}</p>
+      : `${u.brojReci === 1 ? '12 slova' : `${u.brojReci}× po 12 slova`}. Složi što dužu reč u osnovnom obliku (imenica u jednini, glagol u infinitivu…) – važe i imena, npr. Venera ili Beograd. 100 poena po slovu, bonus za najdužu!${V.krugovi.includes('pitanja') ? ' U slovima se krije i jedan pojam iz prethodnih pitanja – ko ga pronađe, dobija +200.' : ''}`}</p>
   </div>`;
   Zvuk.efekat('bubanj');
   dugmeDalje('Kreni! ➜');
@@ -942,7 +942,8 @@ function ekranReci(nov, staro) {
         if (slozeno.length < 2) return poruka('Izaberi bar 2 slova');
         const r = await akcija('rec', { indeksi: slozeno });
         if (r.ok) { Zvuk.efekat('tacno'); slozeno = []; osveziSlaganje(); }
-        else { Zvuk.efekat('netacno'); poruka(r.poruka === 'Nema u rečniku' ? 'Nema u rečniku – probaj osnovni oblik reči' : r.poruka || 'Ne može'); }
+        else { Zvuk.efekat('netacno'); poruka(r.poruka === 'Nema u rečniku' ? 'Nema u rečniku – probaj osnovni oblik reči'
+          : r.poruka?.startsWith('Oblik reči') ? r.poruka + ' – složi osnovni oblik' : r.poruka || 'Ne može'); }
       };
       osveziSlaganje();
     }
@@ -984,7 +985,7 @@ function ekranReci(nov, staro) {
         ${R.nasli.length ? `<div class="sitno" style="margin-top:6px">Pronašli: ${R.nasli.length > 8 ? R.nasli.length + ' igrača' : R.nasli.map((id) => esc(igrac(id)?.ime || '')).join(', ')} (+200)</div>` : ''}</div>` : ''}
       <div class="kartica zanimljivost"><h3>🤖 Najduže moguće (${N.duzina} slova)</h3>
         <div class="najbolja-rec">${N.reci.map((r) => esc(rec(r))).join(' · ') || '—'}</div>
-        <div class="sitno" style="margin-top:8px">Reči proverava srpski rečnik sa ${'oko 160.000'} reči u osnovnom obliku.</div></div>`;
+        <div class="sitno" style="margin-top:8px">Reči proverava srpski rečnik sa oko 190.000 reči u osnovnom obliku (sa imenima i pojmovima iz kvizova).</div></div>`;
   }
   dugmeDalje(R.rb === R.ukupno ? 'Rang lista 🏆' : 'Sledeća slova ➜');
 }
