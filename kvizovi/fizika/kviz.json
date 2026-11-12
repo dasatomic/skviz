@@ -144,6 +144,10 @@
         "Jupiter"
       ],
       "zanimljivost": "Mars je crven zbog gvožđe-oksida, odnosno rđe u prašini. Na njemu je Olimp – najveći vulkan u Sunčevom sistemu, skoro tri puta viši od Mont Everesta.",
+      "medijiOdgovora": {
+        "vrsta": "planeta",
+        "ime": "mars"
+      },
       "rec": "mars"
     },
     {
@@ -172,6 +176,10 @@
         "Mars"
       ],
       "zanimljivost": "Iako je Merkur najbliži, najtoplija planeta je Venera (oko 465 °C) – njena gusta atmosfera od ugljen-dioksida zadržava toplotu kao staklenik.",
+      "medijiOdgovora": {
+        "vrsta": "planeta",
+        "ime": "merkur"
+      },
       "rec": "merkur"
     },
     {
@@ -220,6 +228,11 @@
         "Pretvara se u svetlost"
       ],
       "zanimljivost": "Zvuku treba sredina – vazduh, voda ili čvrsto telo – da bi se prenosio. Zato su eksplozije u svemiru zapravo potpuno tihe, za razliku od filmova. Kroz čelik zvuk putuje oko 15 puta brže nego kroz vazduh!",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "talas",
+        "tip": "zvuk"
+      },
       "rec": "vakuum"
     },
     {
@@ -280,6 +293,11 @@
         "Zbog vodene pare"
       ],
       "zanimljivost": "Sunčeva svetlost se sudara sa molekulima vazduha, a plava (kratke talasne dužine) se rasipa mnogo više od crvene. Pri zalasku svetlost prelazi duži put kroz vazduh, plava se „izgubi“ i nebo postaje crveno-narandžasto.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/rasejanje.jpg",
+        "opis": "Vazduh rasipa plavu svetlost na sve strane – zato je nebo plavo, a zalazak crven"
+      },
       "rec": "nebo"
     },
     {
@@ -292,6 +310,23 @@
         "Aristotel"
       ],
       "zanimljivost": "Prema legendi, Arhimed se toga setio u kadi i istrčao na ulicu vičući „Eureka!“ („Našao sam!“). Zato brodovi od čelika plutaju – istiskuju mnogo vode.",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "tecnost",
+        "tela": [
+          {
+            "ro": 600,
+            "o": "~drvo",
+            "b": 5
+          },
+          {
+            "ro": 7800,
+            "o": "~gvožđe",
+            "b": 0
+          }
+        ],
+        "sile": true
+      },
       "rec": "arhimed"
     },
     {
@@ -356,6 +391,18 @@
         "Vat"
       ],
       "zanimljivost": "Jedinica je nazvana po Italijanu Aleksandru Volti, koji je napravio prvu bateriju („Voltin stub“) 1800. godine. U našim utičnicama je napon oko 230 V.",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "kolo",
+        "elementi": [
+          {
+            "t": "sijalica"
+          }
+        ],
+        "izvor": "4,5 V",
+        "voltmetar": 0,
+        "prekidac": true
+      },
       "rec": "volt"
     },
     {
@@ -368,6 +415,11 @@
         "Toplotna"
       ],
       "zanimljivost": "Kinetička energija raste sa kvadratom brzine: automobil koji ide dvostruko brže ima četiri puta više energije – zato mu treba četiri puta duži put za kočenje.",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "energija",
+        "tip": "staza"
+      },
       "rec": "energija"
     },
     {
@@ -380,6 +432,30 @@
         "−1000 °C"
       ],
       "zanimljivost": "To je 0 kelvina. Do nje se ne može tačno stići, ali naučnici su se približili na milijarditi deo stepena. Najhladnije prirodno mesto poznato u svemiru je maglina Bumerang, oko −272 °C.",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "termometar",
+        "skale": [
+          "C",
+          "K"
+        ],
+        "od": -280,
+        "do": 110,
+        "tacke": [
+          {
+            "c": -273.15,
+            "o": "~apsolutna nula"
+          },
+          {
+            "c": 0,
+            "o": "~led se topi"
+          },
+          {
+            "c": 100,
+            "o": "~voda ključa"
+          }
+        ]
+      },
       "rec": "nula"
     },
     {
@@ -404,6 +480,11 @@
         "10"
       ],
       "zanimljivost": "Pluton je 2006. godine „degradiran“ u patuljastu planetu. Redosled od Sunca možeš zapamtiti: Merkur, Venera, Zemlja, Mars, Jupiter, Saturn, Uran, Neptun.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/planete.png",
+        "opis": "Planete Sunčevog sistema (veličine u razmeri, rastojanja ne)"
+      },
       "rec": "planeta"
     },
     {
@@ -432,6 +513,11 @@
       ],
       "tezina": 2,
       "zanimljivost": "U taj razmak bi stale sve ostale planete Sunčevog sistema, poređane jedna do druge! Udaljenost od 150 miliona km je, inače, razdaljina od Zemlje do Sunca.",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "orbita",
+        "tip": "mesec"
+      },
       "rec": "mesec"
     },
     {
@@ -475,6 +561,18 @@
         "Reka teče prebrzo"
       ],
       "zanimljivost": "Voda je najgušća na oko 4 °C, pa ta voda pada na dno. Led odozgo deluje kao pokrivač. Da led tone, jezera bi se zaleđivala odozdo i život u njima ne bi preživeo zimu.",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "tecnost",
+        "tela": [
+          {
+            "ro": 917,
+            "o": "~led",
+            "b": 2
+          }
+        ],
+        "tecnost": "~voda"
+      },
       "rec": "led"
     },
     {
@@ -499,6 +597,11 @@
         "Bakarna žica"
       ],
       "zanimljivost": "Samo neki metali su magnetni: gvožđe, nikl i kobalt. Zato se u reciklaži gvožđe izdvaja magnetima, a aluminijum ne može tako.",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "magnet",
+        "tip": "sipka"
+      },
       "rec": "ekser"
     },
     {
@@ -511,6 +614,11 @@
         "Parnu mašinu"
       ],
       "zanimljivost": "Sijalicu je usavršio Edison, telefon Bel, a parnu mašinu Džejms Vat. Tesla i Edison su vodili čuveni „rat struja“ – Teslina naizmenična struja je pobedila i koristi se do danas.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/motor.jpg",
+        "opis": "Indukcioni motori – po Teslinom principu (1888) danas pokreću većinu mašina"
+      },
       "rec": "motor"
     },
     {
@@ -523,6 +631,21 @@
         "Snagu uređaja izraženu u vatima"
       ],
       "zanimljivost": "Ampermetar se vezuje redno, a voltmetar paralelno. Jedinica amper nazvana je po francuskom fizičaru Andre-Mari Amperu.",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "kolo",
+        "elementi": [
+          {
+            "t": "sijalica"
+          },
+          {
+            "t": "sijalica"
+          }
+        ],
+        "izvor": "12 V",
+        "ampermetar": true,
+        "prekidac": true
+      },
       "rec": "ampermetar"
     },
     {
@@ -535,6 +658,10 @@
         "Venera"
       ],
       "zanimljivost": "Sunce je zvezda! I to prilično prosečna – postoje zvezde koje su hiljadu puta veće. Venera nije zvezda nego planeta, iako je zovu „Zvezda Danica“.",
+      "medijiOdgovora": {
+        "vrsta": "planeta",
+        "ime": "sunce"
+      },
       "rec": "sunce"
     },
     {
@@ -583,6 +710,12 @@
         "Magnetna sila Zemljinog gvozdenog jezgra"
       ],
       "zanimljivost": "Zbog gravitacije sve što bacimo uvis pada nazad. Ona drži i Mesec oko Zemlje i Zemlju oko Sunca.",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "pad",
+        "tip": "slobodan",
+        "visina": 20
+      },
       "rec": "sila"
     },
     {
@@ -595,6 +728,11 @@
         "Menja boju u plavičastu ili zelenkastu"
       ],
       "zanimljivost": "Isparavanje se dešava na svakoj temperaturi, sa površine. Ključanje je kada se para stvara u celoj zapremini tečnosti – i to se vidi po mehurićima.",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "cestice",
+        "tip": "zagrevanje"
+      },
       "rec": "ključanje"
     },
     {
@@ -607,6 +745,11 @@
         "Drvo"
       ],
       "zanimljivost": "Metali dobro provode struju jer imaju slobodne elektrone. Plastika, staklo i suvo drvo su izolatori – zato su kablovi obloženi plastikom.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/bakar.jpg",
+        "opis": "Bakar – posle srebra najbolji provodnik, a mnogo jeftiniji"
+      },
       "rec": "bakar"
     },
     {
@@ -643,6 +786,11 @@
         "Nadmorsku visinu"
       ],
       "zanimljivost": "Kompas su izumeli Kinezi, verovatno pre više od 2.000 godina. Igla je mali magnet koji se okreće prema Zemljinom magnetnom polju.",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "magnet",
+        "tip": "zemlja"
+      },
       "rec": "pravac"
     },
     {
@@ -679,6 +827,12 @@
         "Struja"
       ],
       "zanimljivost": "Zvučne talase stvaraju tela koja trepere – žice gitare, glasne žice. U vakuumu zvuk ne može da putuje.",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "talas",
+        "tip": "uzduzni",
+        "oznake": true
+      },
       "rec": "zvuk"
     },
     {
@@ -691,6 +845,10 @@
         "Bele"
       ],
       "zanimljivost": "Prašina na Marsu sadrži gvožđe-oksid – rđu. Na Marsu je zalazak Sunca, zanimljivo, plavičast!",
+      "medijiOdgovora": {
+        "vrsta": "planeta",
+        "ime": "mars"
+      },
       "rec": "prašina"
     },
     {
@@ -703,6 +861,14 @@
         "100 m/s²"
       ],
       "zanimljivost": "To znači da telo koje slobodno pada svake sekunde ubrza za oko 10 m/s. Posle 3 sekunde pada (bez otpora vazduha) bilo bi brzo oko 30 m/s.",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "pad",
+        "tip": "slobodan",
+        "visina": 20,
+        "brzina": true,
+        "sat": true
+      },
       "rec": "ubrzanje"
     },
     {
@@ -857,6 +1023,25 @@
         "Drvo je mekše sa jedne strane, pa ekser ulazi samo tako"
       ],
       "zanimljivost": "Pritisak je sila podeljena površinom. Zato su i noževi oštri, a krplje za sneg široke – da bi pritisak bio manji.",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "pritisak",
+        "tip": "podloga",
+        "tela": [
+          {
+            "w": 110,
+            "h": 34,
+            "o": "~veća površina"
+          },
+          {
+            "w": 34,
+            "h": 110,
+            "o": "~manja površina"
+          }
+        ],
+        "podloga": "~pesak",
+        "boja": "#e1b866"
+      },
       "rec": "ekser"
     },
     {
@@ -869,6 +1054,11 @@
         "Zbog visine drveća"
       ],
       "zanimljivost": "Sa visinom vazdušni pritisak opada. Gutanjem ili zevanjem izjednačavamo pritisak u srednjem uhu sa spoljašnjim.",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "pritisak",
+        "tip": "visina"
+      },
       "rec": "pritisak"
     },
     {
@@ -932,6 +1122,10 @@
         "Zelena"
       ],
       "zanimljivost": "Redosled boja u dugi: crvena, narandžasta, žuta, zelena, plava, indigo, ljubičasta. Ispod crvene je infracrveno, a iznad ljubičaste ultraljubičasto zračenje, koje ne vidimo.",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "prizma"
+      },
       "rec": "talas"
     },
     {
@@ -963,6 +1157,12 @@
         "Obojena stakla"
       ],
       "zanimljivost": "Kratkovidi dobro vide blizu, a mutno daleko. Lupa je sabirno sočivo, i takva sočiva nose dalekovidi.",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "socivo",
+        "tip": "rasipno",
+        "snop": true
+      },
       "rec": "sočivo"
     },
     {
@@ -975,6 +1175,11 @@
         "Albert Ajnštajn"
       ],
       "zanimljivost": "Remer je primetio da pomračenja Jupiterovog meseca Ioa kasne kada je Zemlja dalje od Jupitera – zato što svetlosti treba vreme da pređe dodatni put.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/remer.jpg",
+        "opis": "Ole Remer"
+      },
       "rec": "remer"
     },
     {
@@ -1004,6 +1209,11 @@
         "Šum"
       ],
       "zanimljivost": "Čovek čuje od oko 20 do 20.000 Hz. Psi čuju ultrazvuk – zato postoje pištaljke za pse koje mi ne čujemo. Ultrazvukom lekari gledaju bebe u stomaku.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/ultrazvuk.jpg",
+        "opis": "Ultrazvučni pregled"
+      },
       "rec": "ultrazvuk"
     },
     {
@@ -1016,6 +1226,11 @@
         "Om"
       ],
       "zanimljivost": "Nazvana je po Hajnrihu Hercu, koji je dokazao postojanje radio-talasa. Struja u našim utičnicama menja smer 50 puta u sekundi – 50 Hz.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/herc.jpg",
+        "opis": "Hajnrih Herc"
+      },
       "rec": "herc"
     },
     {
@@ -1040,6 +1255,11 @@
         "Kulon"
       ],
       "zanimljivost": "Nazvana je po Georgu Omu. Om je otkrio vezu napona, struje i otpora: U = I · R.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/om.jpg",
+        "opis": "Georg Om"
+      },
       "rec": "otpor"
     },
     {
@@ -1105,6 +1325,11 @@
         "Andre Amper"
       ],
       "zanimljivost": "Volta je slagao naizmenično pločice cinka i bakra, odvojene tkaninom natopljenom slanom vodom. Bilo je to 1800. godine.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/voltin-stub.png",
+        "opis": "Voltin stub – naizmenične pločice cinka i bakra sa slanom tkaninom"
+      },
       "rec": "baterija"
     },
     {
@@ -1117,6 +1342,11 @@
         "Alesandro Volta"
       ],
       "zanimljivost": "Frenklin je, kaže priča, puštao zmaja tokom oluje da dokaže da je munja električna pojava. To je bilo izuzetno opasno – nikada ne pokušavajte!",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/frenklin.jpg",
+        "opis": "Benjamin Frenklin"
+      },
       "rec": "gromobran"
     },
     {
@@ -1146,6 +1376,11 @@
         "Rezonancija (pojačano treperenje)"
       ],
       "zanimljivost": "Otkrio ju je Majkl Faradej 1831. Na tom principu rade generatori u elektranama i bicikl-dinamo.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/faradej.jpg",
+        "opis": "Majkl Faradej, otkrio elektromagnetnu indukciju 1831."
+      },
       "rec": "indukcija"
     },
     {
@@ -1158,6 +1393,11 @@
         "0"
       ],
       "zanimljivost": "Jupiter, Saturn, Uran i Neptun su veći od Zemlje – to su gasoviti džinovi. Merkur, Venera i Mars su manji.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/planete.png",
+        "opis": "Jupiter, Saturn, Uran i Neptun su veći od Zemlje"
+      },
       "rec": "planeta"
     },
     {
@@ -1230,6 +1470,11 @@
         "Podzemni vulkani"
       ],
       "zanimljivost": "U zalivu Fandi u Kanadi razlika između plime i oseke može biti i preko 15 metara! U Jadranskom moru ona iznosi samo desetine centimetara.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/plima.png",
+        "opis": "Mesec privlači vodu – plima je na strani okrenutoj Mesecu, ali i na suprotnoj"
+      },
       "rec": "plima"
     },
     {
@@ -1242,6 +1487,11 @@
         "Zemlja svojim oblakom i senkom stalno zaklanja drugu stranu Meseca"
       ],
       "zanimljivost": "Daleku stranu Meseca prvi su fotografisali Sovjeti 1959. sondom Luna 3. Ona nije „tamna strana“ – i ona dobija sunčevu svetlost.",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "orbita",
+        "tip": "mesec"
+      },
       "rec": "mesec"
     },
     {
@@ -1287,6 +1537,10 @@
         "Severnjača"
       ],
       "zanimljivost": "Sunce je zvezda udaljena oko 150 miliona km. Ta udaljenost zove se astronomska jedinica.",
+      "medijiOdgovora": {
+        "vrsta": "planeta",
+        "ime": "sunce"
+      },
       "rec": "sunce"
     },
     {
@@ -1299,6 +1553,11 @@
         "Tiho Brahe (Danska)"
       ],
       "zanimljivost": "Kopernik je knjigu objavio 1543, pred samu smrt. Ptolemej je, nasuprot tome, verovao da je Zemlja nepomična u centru svemira.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/kopernik.jpg",
+        "opis": "Nikola Kopernik"
+      },
       "rec": "kopernik"
     },
     {
@@ -1311,6 +1570,11 @@
         "Oko 1 km/s"
       ],
       "zanimljivost": "To je oko 40.000 km/h. Prva kosmička brzina, potrebna da bi satelit kružio oko Zemlje, je oko 7,9 km/s.",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "orbita",
+        "tip": "njutn"
+      },
       "rec": "brzina"
     },
     {
@@ -1340,6 +1604,11 @@
         "Oko 4"
       ],
       "zanimljivost": "Jedan krug traje oko 90 minuta, pa astronauti svakog dana vide oko 16 izlazaka i 16 zalazaka Sunca!",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/mss.jpg",
+        "opis": "Međunarodna svemirska stanica"
+      },
       "rec": "stanica"
     },
     {
@@ -1368,6 +1637,30 @@
         "100 K"
       ],
       "zanimljivost": "Kelvinova skala nema negativnih brojeva. Voda se smrzava na 273,15 K, a ključa na 373,15 K.",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "termometar",
+        "skale": [
+          "C",
+          "K"
+        ],
+        "od": -280,
+        "do": 110,
+        "tacke": [
+          {
+            "c": -273.15,
+            "o": "~apsolutna nula"
+          },
+          {
+            "c": 0,
+            "o": "~led se topi"
+          },
+          {
+            "c": 100,
+            "o": "~voda ključa"
+          }
+        ]
+      },
       "rec": "kelvin"
     },
     {
@@ -1397,6 +1690,11 @@
         "Gubitak električne struje u dugim vodovima zbog otpora žica, pa se deo energije pretvara u toplotu"
       ],
       "zanimljivost": "Pevač može glasom da razbije čašu ako pogodi njenu frekvenciju. Zbog rezonancije vojnici preko mostova ne marširaju u korak.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/takoma.jpg",
+        "opis": "Most Takoma Nerouz u trenutku rušenja – vetar ga je zaljuljao u rezonanciji"
+      },
       "rec": "rezonancija"
     },
     {
@@ -1425,6 +1723,11 @@
         "Vilhelm Rendgen"
       ],
       "zanimljivost": "Bekerel je ostavio uranijumovu so na zamotanu fotografsku ploču u fioci, a ploča je ipak pocrnela. Jedinica za radioaktivnost zove se bekerel.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/bekerel.jpg",
+        "opis": "Anri Bekerel"
+      },
       "rec": "bekerel"
     },
     {
@@ -1486,6 +1789,11 @@
         "Masa se nikako ne može promeniti, čak ni u nuklearnim reakcijama"
       ],
       "zanimljivost": "„c“ je brzina svetlosti, a njen kvadrat je ogroman broj. Zato u nuklearnim elektranama i u Suncu iz malo mase nastaje mnogo energije.",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "raspad",
+        "tip": "fisija"
+      },
       "rec": "energija"
     },
     {
@@ -1498,6 +1806,11 @@
         "U Nemačkoj, kraj grada Hamburga, uz reku Elbu"
       ],
       "zanimljivost": "Tunel LHC-a je kružnog oblika, dug oko 27 km, ispod zemlje kod Ženeve. Tu je 2012. otkriven Higsov bozon. Srbija je član CERN-a.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/lhc.png",
+        "opis": "Šema Velikog hadronskog sudarača – prsten dug 27 km"
+      },
       "rec": "sudarač"
     },
     {
@@ -1522,6 +1835,11 @@
         "Kompozitor koji je napisao prvu srpsku operu i himnu „Bože pravde“"
       ],
       "zanimljivost": "Stanojević je pomogao izgradnju prve hidroelektrane u Srbiji, „Pod gradom“ u Užicu (1900), po Teslinim principima naizmenične struje. Bio je i rektor Beogradskog univerziteta.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/stanojevic.jpg",
+        "opis": "Đorđe Stanojević"
+      },
       "rec": "stanojević"
     },
     {
@@ -1558,6 +1876,11 @@
         "U Kragujevcu"
       ],
       "zanimljivost": "Muzej čuva njegovu ličnu zaostavštinu – preko 160.000 dokumenata, koja su upisana na UNESCO listu „Pamćenje sveta“.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/muzej-tesle.jpg",
+        "opis": "Muzej Nikole Tesle u Beogradu"
+      },
       "rec": "muzej"
     },
     {
@@ -1610,6 +1933,11 @@
         "Metal privlači hladnoću"
       ],
       "zanimljivost": "Naša koža oseća koliko brzo gubi toplotu, a ne pravu temperaturu predmeta. Metal je dobar provodnik toplote, a drvo loš.",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "toplota",
+        "tip": "provodjenje"
+      },
       "rec": "metal"
     },
     {
@@ -1622,6 +1950,11 @@
         "Ima magnet"
       ],
       "zanimljivost": "Vakuum sprečava provođenje i strujanje, a sjajni zidovi odbijaju toplotno zračenje. Termos isto tako čuva i hladne napitke hladnim.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/termos.jpg",
+        "opis": "Termos-boca: između dvostrukih zidova je vakuum"
+      },
       "rec": "termos"
     },
     {
@@ -1646,6 +1979,11 @@
         "Akumulator koji čuva struju u automobilu"
       ],
       "zanimljivost": "Solarne ćelije rade na fotoelektričnom efektu – baš za njegovo objašnjenje Ajnštajn je dobio Nobelovu nagradu.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/solarna.jpg",
+        "opis": "Solarni paneli"
+      },
       "rec": "ćelija"
     },
     {
@@ -1658,6 +1996,11 @@
         "Pretvara struju u svetlost, kao velika sijalica na dalekovodu"
       ],
       "zanimljivost": "Struja se dalekovodima prenosi pod visokim naponom da bi se manje gubila, a transformatori je pred kućama spuštaju na 230 V. To je deo Teslinog sistema.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/transformator.jpg",
+        "opis": "Transformator"
+      },
       "rec": "napon"
     }
   ]

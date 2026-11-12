@@ -175,6 +175,44 @@
         "1905."
       ],
       "zanimljivost": "Povod je bio atentat Gavrila Principa na austrougarskog prestolonaslednika Franca Ferdinanda u Sarajevu, 28. juna 1914. Rat je trajao do novembra 1918.",
+      "medijiOdgovora": {
+        "vrsta": "lenta",
+        "od": 1905,
+        "do": 1950,
+        "dogadjaji": [
+          {
+            "g": 1914,
+            "t": "Sarajevski atentat",
+            "ist": true
+          },
+          {
+            "g": 1918,
+            "t": "kraj Prvog sv. rata"
+          },
+          {
+            "g": 1939,
+            "t": "napad na Poljsku"
+          },
+          {
+            "g": 1945,
+            "t": "kapitulacija Nemačke i Japana"
+          }
+        ],
+        "periodi": [
+          {
+            "od": 1914,
+            "do": 1918,
+            "t": "Prvi svetski rat",
+            "boja": "#d9823d"
+          },
+          {
+            "od": 1939,
+            "do": 1945,
+            "t": "Drugi svetski rat",
+            "boja": "#c0392b"
+          }
+        ]
+      },
       "rec": "rat"
     },
     {
@@ -187,6 +225,44 @@
         "1950."
       ],
       "zanimljivost": "Rat u Evropi završen je u maju 1945, a sa Japanom u septembru, posle atomskih bombi na Hirošimu i Nagasaki. To je najsmrtonosniji sukob u istoriji čovečanstva.",
+      "medijiOdgovora": {
+        "vrsta": "lenta",
+        "od": 1905,
+        "do": 1950,
+        "dogadjaji": [
+          {
+            "g": 1914,
+            "t": "Sarajevski atentat"
+          },
+          {
+            "g": 1918,
+            "t": "kraj Prvog sv. rata"
+          },
+          {
+            "g": 1939,
+            "t": "napad na Poljsku"
+          },
+          {
+            "g": 1945,
+            "t": "kapitulacija Nemačke i Japana",
+            "ist": true
+          }
+        ],
+        "periodi": [
+          {
+            "od": 1914,
+            "do": 1918,
+            "t": "Prvi svetski rat",
+            "boja": "#d9823d"
+          },
+          {
+            "od": 1939,
+            "do": 1945,
+            "t": "Drugi svetski rat",
+            "boja": "#c0392b"
+          }
+        ]
+      },
       "rec": "rat"
     },
     {
@@ -264,6 +340,11 @@
         "Kanovi"
       ],
       "zanimljivost": "Najpoznatiji faraon, Tutankamon, postao je vladar sa 9 godina i umro mlad. Njegova grobnica, otkrivena 1922, bila je skoro netaknuta – sa zlatnom posmrtnom maskom od preko 10 kg.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/tutankamon.jpg",
+        "opis": "Zlatna maska faraona Tutankamona"
+      },
       "rec": "faraon"
     },
     {
@@ -547,6 +628,11 @@
         "Bitka kod Varne"
       ],
       "zanimljivost": "Poljski kralj Jan Sobjeski predvodio je jedan od najvećih konjičkih juriša u istoriji. Prema legendi, posle bitke su u Beču nastale prve kafane od kafe koju su Turci ostavili.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/bitka-bec.jpg",
+        "opis": "Bitka kod Beča 1683."
+      },
       "rec": "beč"
     },
     {
@@ -754,6 +840,11 @@
         "Džore Držić"
       ],
       "zanimljivost": "Komedija iz 1551. prikazuje škrtog starca koji u Rimu traži sina rasipnika. Ivan Gundulić je napisao ep „Osman“ i pastoralu „Dubravka“, u kojoj je čuvena himna slobodi.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/drzic.jpg",
+        "opis": "Medalja sa likom Marina Držića"
+      },
       "rec": "držić"
     },
     {
@@ -916,6 +1007,11 @@
       ],
       "tezina": 2,
       "zanimljivost": "Papirni novac se u Kini masovno koristio već u 11. veku. Marko Polo se čudio kako ljudi papir prihvataju kao zlato, a u Evropi su novčanice postale uobičajene tek nekoliko vekova kasnije.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/djiaodzi.jpg",
+        "opis": "Kineski papirni novac"
+      },
       "rec": "novac"
     },
     {
@@ -1107,6 +1203,11 @@
         "Ratovi u Kini"
       ],
       "zanimljivost": "Prvi krstaški rat je počeo 1096, a krstaši su 1099. osvojili Jerusalim. U Četvrtom krstaškom ratu 1204. krstaši su opljačkali hrišćanski Carigrad.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/krstasi.jpg",
+        "opis": "Krstaški ratovi"
+      },
       "rec": "krstaški"
     },
     {
@@ -1170,6 +1271,11 @@
         "Olmeci"
       ],
       "zanimljivost": "Tenočtitlan je bio izgrađen na ostrvu u jezeru, sa kanalima i plutajućim baštama. Španci, predvođeni Kortesom, osvojili su ga 1521.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/tenoctitlan.jpg",
+        "opis": "Tenočtitlan, grad na jezeru – rekonstrukcija"
+      },
       "rec": "astek"
     },
     {
@@ -1248,6 +1354,11 @@
         "Samo Maksimilijan Robespjer, vođa jakobinaca"
       ],
       "zanimljivost": "Marija Antoaneta nikada nije rekla „Ako nemaju hleba, neka jedu kolače“ – to je izmišljena priča. Robespjer je i sam pogubljen 1794.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/marija-antoaneta.jpg",
+        "opis": "Marija Antoaneta"
+      },
       "rec": "revolucija"
     },
     {
@@ -1260,6 +1371,17 @@
         "Krit"
       ],
       "zanimljivost": "Ostrvo Sveta Jelena je u južnom Atlantiku, daleko od svega. Napoleon je tu umro 1821. Pre toga je bio prognan na Elbu, odakle je pobegao.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "svet",
+        "tacke": [
+          {
+            "lat": -15.95,
+            "lon": -5.7,
+            "oznaka": "Sveta Jelena"
+          }
+        ]
+      },
       "rec": "jelena"
     },
     {
@@ -1506,6 +1628,11 @@
         "Morski put oko Afrike"
       ],
       "zanimljivost": "Osim svile, putem su putovali začini, papir, barut, ali i ideje i religije – nažalost, i kuga.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/put-svile.jpg",
+        "opis": "Put svile"
+      },
       "rec": "svila"
     },
     {
@@ -1768,6 +1895,11 @@
       ],
       "tezina": 3,
       "zanimljivost": "Inke su zidove gradile od kamenih blokova uklopljenih tako precizno, bez maltera, da ni oštrica noža ne može da uđe između njih. Španci su na tim zidovima kasnije podizali svoje crkve – i mnoge su se srušile u zemljotresima, a inkaški zidovi nisu.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/kusko.jpg",
+        "opis": "Kusko u Peruu"
+      },
       "rec": "inke"
     },
     {

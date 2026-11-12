@@ -1,26 +1,162 @@
 {
-  "vuk.jpg": {
-    "izvor": "https://en.wikipedia.org/wiki/Vuk_Karad%C5%BEi%C4%87",
-    "slika": "https://upload.wikimedia.org/wikipedia/commons/9/9c/J.B.Rotfmayer_-_Vuk_Stefanovi%C4%87_Karad%C5%BEi%C4%87.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
-  },
-  "dositej.png": {
-    "izvor": "https://en.wikipedia.org/wiki/Dositej_Obradovi%C4%87",
-    "slika": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Dositej_obradovic_Novi_Sad.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
-  },
-  "desanka.jpg": {
-    "izvor": "https://en.wikipedia.org/wiki/Desanka_Maksimovi%C4%87",
-    "slika": "https://upload.wikimedia.org/wikipedia/commons/7/77/Desanka_Maksimovi%C4%87_1969.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
-  },
-  "andric.jpg": {
-    "izvor": "https://en.wikipedia.org/wiki/Ivo_Andri%C4%87",
-    "slika": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/S._Kragujevic%2C_Ivo_Andric%2C_1961_%283x4_cropped%29.jpg/960px-S._Kragujevic%2C_Ivo_Andric%2C_1961_%283x4_cropped%29.jpg"
-  },
-  "zmaj.jpg": {
-    "izvor": "https://en.wikipedia.org/wiki/Jovan_Jovanovi%C4%87_Zmaj",
-    "slika": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Jovan_Jovanovi%C4%87_Zmaj.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
-  },
-  "nusic.jpg": {
-    "izvor": "https://en.wikipedia.org/wiki/Branislav_Nu%C5%A1i%C4%87",
-    "slika": "https://upload.wikimedia.org/wikipedia/commons/3/39/Branislav_Nu%C5%A1i%C4%87_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
-  }
+ "vuk.jpg": {
+  "izvor": "https://en.wikipedia.org/wiki/Vuk_Karad%C5%BEi%C4%87",
+  "slika": "https://upload.wikimedia.org/wikipedia/commons/9/9c/J.B.Rotfmayer_-_Vuk_Stefanovi%C4%87_Karad%C5%BEi%C4%87.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+ },
+ "dositej.png": {
+  "izvor": "https://en.wikipedia.org/wiki/Dositej_Obradovi%C4%87",
+  "slika": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Dositej_obradovic_Novi_Sad.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+ },
+ "desanka.jpg": {
+  "izvor": "https://en.wikipedia.org/wiki/Desanka_Maksimovi%C4%87",
+  "slika": "https://upload.wikimedia.org/wikipedia/commons/7/77/Desanka_Maksimovi%C4%87_1969.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+ },
+ "andric.jpg": {
+  "izvor": "https://en.wikipedia.org/wiki/Ivo_Andri%C4%87",
+  "slika": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/S._Kragujevic%2C_Ivo_Andric%2C_1961_%283x4_cropped%29.jpg/960px-S._Kragujevic%2C_Ivo_Andric%2C_1961_%283x4_cropped%29.jpg"
+ },
+ "zmaj.jpg": {
+  "izvor": "https://en.wikipedia.org/wiki/Jovan_Jovanovi%C4%87_Zmaj",
+  "slika": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Jovan_Jovanovi%C4%87_Zmaj.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+ },
+ "nusic.jpg": {
+  "izvor": "https://en.wikipedia.org/wiki/Branislav_Nu%C5%A1i%C4%87",
+  "slika": "https://upload.wikimedia.org/wikipedia/commons/3/39/Branislav_Nu%C5%A1i%C4%87_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+ },
+ "copic.jpg": {
+  "izvor": "https://en.wikipedia.org/wiki/Branko_%C4%86opi%C4%87",
+  "slika": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/S.Kragujevic%2C_Branko_Copic.JPG/960px-S.Kragujevic%2C_Branko_Copic.JPG"
+ },
+ "salute.jpg": {
+  "izvor": "https://en.wikipedia.org/wiki/Santa_Maria_della_Salute",
+  "slika": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Santa_Maria_della_Salute_from_Hotel_Monaco.jpg/960px-Santa_Maria_della_Salute_from_Hotel_Monaco.jpg"
+ },
+ "sterija.jpg": {
+  "izvor": "https://en.wikipedia.org/wiki/Jovan_Sterija_Popovi%C4%87",
+  "slika": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Sterija.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+ },
+ "sremac.jpg": {
+  "izvor": "https://en.wikipedia.org/wiki/Stevan_Sremac",
+  "slika": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Stevan_Sremac.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+ },
+ "radicevic.jpg": {
+  "izvor": "https://en.wikipedia.org/wiki/Branko_Radi%C4%8Devi%C4%87",
+  "slika": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Branko_Radi%C4%8Devi%C4%87.gif?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+ },
+ "crnjanski.jpg": {
+  "izvor": "https://en.wikipedia.org/wiki/Milo%C5%A1_Crnjanski",
+  "slika": "https://upload.wikimedia.org/wikipedia/commons/9/99/Milo%C5%A1_Crnjanski_crop.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+ },
+ "grim.jpg": {
+  "izvor": "https://en.wikipedia.org/wiki/Brothers_Grimm",
+  "slika": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Grimm.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+ },
+ "andersen.jpg": {
+  "izvor": "https://en.wikipedia.org/wiki/Hans_Christian_Andersen",
+  "slika": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/HCA_by_Thora_Hallager_1869_crop.jpg/960px-HCA_by_Thora_Hallager_1869_crop.jpg"
+ },
+ "kerol.jpg": {
+  "izvor": "https://en.wikipedia.org/wiki/Lewis_Carroll",
+  "slika": "https://upload.wikimedia.org/wikipedia/commons/f/fb/LewisCarrollSelfPhoto.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+ },
+ "kolodi.jpg": {
+  "izvor": "https://en.wikipedia.org/wiki/Carlo_Collodi",
+  "slika": "https://upload.wikimedia.org/wikipedia/commons/6/60/Carlo_Collodi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+ },
+ "trsic.jpg": {
+  "izvor": "https://en.wikipedia.org/wiki/Tr%C5%A1i%C4%87",
+  "slika": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Spomen_ku%C4%87a_Vuka_Karad%C5%BEi%C4%87a%2C_Tr%C5%A1i%C4%87005.jpg/960px-Spomen_ku%C4%87a_Vuka_Karad%C5%BEi%C4%87a%2C_Tr%C5%A1i%C4%87005.jpg"
+ },
+ "sizif.jpg": {
+  "izvor": "https://en.wikipedia.org/wiki/Sisyphus",
+  "slika": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Nekyia_Staatliche_Antikensammlungen_1494_n2.jpg/960px-Nekyia_Staatliche_Antikensammlungen_1494_n2.jpg"
+ },
+ "pandora.jpg": {
+  "izvor": "https://en.wikipedia.org/wiki/Pandora's_box",
+  "slika": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Lawrence_Alma-Tadema_10.jpeg/960px-Lawrence_Alma-Tadema_10.jpeg"
+ },
+ "trojanski-konj.jpg": {
+  "izvor": "https://en.wikipedia.org/wiki/Trojan_Horse",
+  "slika": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Mykonos_vase.jpg/960px-Mykonos_vase.jpg"
+ },
+ "most-visegrad.jpg": {
+  "izvor": "https://en.wikipedia.org/wiki/Mehmed_Pa%C5%A1a_Sokolovi%C4%87_Bridge",
+  "slika": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Bridge_on_the_Drina%2C_januar_2018.jpg/960px-Bridge_on_the_Drina%2C_januar_2018.jpg"
+ },
+ "selimovic.jpg": {
+  "izvor": "https://en.wikipedia.org/wiki/Me%C5%A1a_Selimovi%C4%87",
+  "slika": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Mesa_Selimovic_0.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+ },
+ "radovic.jpg": {
+  "izvor": "https://en.wikipedia.org/wiki/Du%C5%A1ko_Radovi%C4%87",
+  "slika": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Du%C5%A1ko_Radovi%C4%87_1966_crop.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+ },
+ "antic.jpg": {
+  "izvor": "https://en.wikipedia.org/wiki/Mika_Anti%C4%87",
+  "slika": "https://upload.wikimedia.org/wikipedia/en/6/67/Miroslav_antic.gif?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+ },
+ "jaksic.jpg": {
+  "izvor": "https://en.wikipedia.org/wiki/%C4%90ura_Jak%C5%A1i%C4%87",
+  "slika": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/%C4%90ura_Jaki%C5%A1i%C4%87.pdf/page1-500px-%C4%90ura_Jaki%C5%A1i%C4%87.pdf.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+ },
+ "santic.jpg": {
+  "izvor": "https://en.wikipedia.org/wiki/Aleksa_%C5%A0anti%C4%87",
+  "slika": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Aleksa_Santic_%28cropped%29.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+ },
+ "ducic.jpg": {
+  "izvor": "https://en.wikipedia.org/wiki/Jovan_Du%C4%8Di%C4%87",
+  "slika": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Ducic.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+ },
+ "stankovic.jpg": {
+  "izvor": "https://en.wikipedia.org/wiki/Borisav_Stankovi%C4%87",
+  "slika": "https://upload.wikimedia.org/wikipedia/commons/4/46/Bora_Stankovi%C4%87.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+ },
+ "domanovic.png": {
+  "izvor": "https://en.wikipedia.org/wiki/Radoje_Domanovi%C4%87",
+  "slika": "https://upload.wikimedia.org/wikipedia/commons/6/63/Radoje_Domanovic.PNG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+ },
+ "lazarevic.jpg": {
+  "izvor": "https://en.wikipedia.org/wiki/Laza_Lazarevi%C4%87",
+  "slika": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Laza_Lazarevi%C4%87.pdf/page1-500px-Laza_Lazarevi%C4%87.pdf.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+ },
+ "kis.jpg": {
+  "izvor": "https://en.wikipedia.org/wiki/Danilo_Ki%C5%A1",
+  "slika": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Danilo_Kis_Serbian_Literature_Great_Men_Stamps.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+ },
+ "pavic.jpg": {
+  "izvor": "https://en.wikipedia.org/wiki/Milorad_Pavi%C4%87",
+  "slika": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Milorad_Pavic.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+ },
+ "cosic.jpg": {
+  "izvor": "https://en.wikipedia.org/wiki/Dobrica_%C4%86osi%C4%87",
+  "slika": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/%D0%94%D0%BE%D0%B1%D1%80%D0%B8%D1%86%D0%B0_%D0%8B%D0%BE%D1%81%D0%B8%D1%9B_%28Dobrica_Chosich%29%2C_firct_President_of_Federal_Republic_of_Yugoslavia.jpg/960px-%D0%94%D0%BE%D0%B1%D1%80%D0%B8%D1%86%D0%B0_%D0%8B%D0%BE%D1%81%D0%B8%D1%9B_%28Dobrica_Chosich%29%2C_firct_President_of_Federal_Republic_of_Yugoslavia.jpg"
+ },
+ "dis.jpg": {
+  "izvor": "https://en.wikipedia.org/wiki/Vladislav_Petkovi%C4%87_Dis",
+  "slika": "https://upload.wikimedia.org/wikipedia/commons/6/61/Vladislav_Petkovi%C4%87_Dis.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+ },
+ "stecak.jpg": {
+  "izvor": "https://en.wikipedia.org/wiki/Ste%C4%87ak",
+  "slika": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Bosniangraves_bosniska_gravar_februari_2007_stecak_stecci3.jpg/960px-Bosniangraves_bosniska_gravar_februari_2007_stecak_stecci3.jpg"
+ },
+ "simonida.jpg": {
+  "izvor": "https://en.wikipedia.org/wiki/Simonida",
+  "slika": "https://upload.wikimedia.org/wikipedia/commons/1/11/Simonida_fresco.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+ },
+ "srpkinja.jpg": {
+  "izvor": "https://en.wikipedia.org/wiki/Milica_Stojadinovi%C4%87-Srpkinja",
+  "slika": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Milica_Stojadinovi%C4%87_Srpkinja.pdf/page1-500px-Milica_Stojadinovi%C4%87_Srpkinja.pdf.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+ },
+ "sekulic.jpg": {
+  "izvor": "https://en.wikipedia.org/wiki/Isidora_Sekuli%C4%87",
+  "slika": "https://upload.wikimedia.org/wikipedia/commons/6/67/Isidora_Sekulic.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+ },
+ "kosovka.jpg": {
+  "izvor": "https://sr.wikipedia.org/wiki/%D0%9A%D0%BE%D1%81%D0%BE%D0%B2%D0%BA%D0%B0_%D0%94%D0%B5%D0%B2%D0%BE%D1%98%D0%BA%D0%B0",
+  "slika": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Kosovo_Maiden%2C_Uro%C5%A1_Predi%C4%87%2C_1919.jpg/960px-Kosovo_Maiden%2C_Uro%C5%A1_Predi%C4%87%2C_1919.jpg"
+ },
+ "gusle.jpg": {
+  "izvor": "https://sr.wikipedia.org/wiki/%D0%93%D1%83%D1%81%D0%BB%D0%B5",
+  "slika": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Vuk_Karad%C5%BEi%C4%87%27s_gusle%2C_Museum_of_Vuk_and_Dositej.jpg/960px-Vuk_Karad%C5%BEi%C4%87%27s_gusle%2C_Museum_of_Vuk_and_Dositej.jpg"
+ }
 }

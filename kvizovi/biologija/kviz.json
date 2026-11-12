@@ -296,6 +296,10 @@
     {
       "tezina": 1,
       "pitanje": "Koliko srca ima hobotnica?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/hobotnica.jpg"
+      },
       "odgovori": [
         "Tri",
         "Jedno",
@@ -315,6 +319,12 @@
         "Bubreg"
       ],
       "zanimljivost": "Srce otkuca oko 100.000 puta dnevno, i za ceo život oko 3 milijarde puta. Ono je mišić koji nikada ne odmara.",
+      "medijiOdgovora": {
+        "vrsta": "biologija",
+        "scena": "srce",
+        "tip": "sisar",
+        "broj": true
+      },
       "rec": "srce"
     },
     {
@@ -327,6 +337,10 @@
         "Slezina"
       ],
       "zanimljivost": "Jetra ima više od 500 zadataka – od čišćenja krvi od otrova do skladištenja energije. Ako se ukloni deo jetre, ona može da naraste nazad! Najveći organ uopšte je, inače, koža.",
+      "medijiOdgovora": {
+        "vrsta": "biologija",
+        "scena": "varenje"
+      },
       "rec": "jetra"
     },
     {
@@ -339,6 +353,11 @@
         "412"
       ],
       "zanimljivost": "Beba se rađa sa oko 300 kostiju koje se kasnije srastaju. Najmanja kost je stremen u uhu (oko 3 mm), a najduža butna kost.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/skelet.jpg",
+        "opis": "Kostur odraslog čoveka"
+      },
       "rec": "kost"
     },
     {
@@ -351,6 +370,10 @@
         "Oprašivanje"
       ],
       "zanimljivost": "Fotosinteza se odvija u hloroplastima, a zelena boja dolazi od hlorofila. Morske alge proizvode najmanje polovinu kiseonika na Zemlji – više nego sve šume!",
+      "medijiOdgovora": {
+        "vrsta": "biologija",
+        "scena": "fotosinteza"
+      },
       "rec": "fotosinteza"
     },
     {
@@ -363,6 +386,10 @@
         "Vakuola"
       ],
       "zanimljivost": "Mitohondrije imaju sopstvenu DNK i verovatno su nekada bile slobodne bakterije koje su „uselile“ u veće ćelije. Mitohondrijsku DNK nasleđuješ samo od mame!",
+      "medijiOdgovora": {
+        "vrsta": "biologija",
+        "scena": "mitohondrija"
+      },
       "rec": "elektrana"
     },
     {
@@ -375,6 +402,11 @@
         "Ćelijsku membranu"
       ],
       "zanimljivost": "Ćelijski zid od celuloze daje biljkama čvrstinu. Pamuk i papir su gotovo čista celuloza. Prvu ćeliju je 1665. video Robert Huk, posmatrajući parče plute.",
+      "medijiOdgovora": {
+        "vrsta": "biologija",
+        "scena": "celija",
+        "tip": "biljna"
+      },
       "rec": "hloroplast"
     },
     {
@@ -387,6 +419,11 @@
         "Megalodon"
       ],
       "zanimljivost": "Plavi kit može biti dug oko 30 m i težak preko 150 tona – teži od svih dinosaurusa. Njegovo srce je veliko kao mali automobil, a hrani se sićušnim račićima – krilom.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/plavi-kit.jpg",
+        "opis": "Plavi kit – dug do 30 m, težak do 190 tona"
+      },
       "rec": "sisar"
     },
     {
@@ -399,6 +436,11 @@
         "Gusenica"
       ],
       "zanimljivost": "Punoglavci dišu škrgama i imaju rep, kao ribe. Promena u odraslu žabu zove se preobražaj (metamorfoza). Neke žabe mogu da prežive zimu potpuno zamrznute!",
+      "medijiOdgovora": {
+        "vrsta": "biologija",
+        "scena": "preobrazaj",
+        "tip": "zaba"
+      },
       "rec": "punoglavac"
     },
     {
@@ -411,6 +453,11 @@
         "Emu"
       ],
       "zanimljivost": "Noj može da trči i do 70 km/h. Njegovo oko je veće od njegovog mozga! I ne, noj ne zabija glavu u pesak – on okreće jaja u jami koju kopa u zemlji.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/noj.jpg",
+        "opis": "Noj"
+      },
       "rec": "ptica"
     },
     {
@@ -423,6 +470,11 @@
         "Leteća riba"
       ],
       "zanimljivost": "Slepi miševi „vide“ ušima – ispuštaju zvuk i slušaju odjek (eholokacija). Postoji preko 1.400 vrsta, oko petine svih vrsta sisara. Leteća riba nije sisar.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/slepi-mis.jpg",
+        "opis": "Slepi miš"
+      },
       "rec": "šišmiš"
     },
     {
@@ -447,6 +499,11 @@
         "12"
       ],
       "zanimljivost": "Pauci nisu insekti (insekti imaju 6 nogu) nego paukoliki zglavkari. Paukova svila je, za istu debljinu, jača od čelika!",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/pauk.jpg",
+        "opis": "Pauk – osam nogu i dva dela tela"
+      },
       "rec": "pauk"
     },
     {
@@ -459,6 +516,11 @@
         "Noj"
       ],
       "zanimljivost": "Oko džinovske i kolosalne lignje veliko je kao fudbalska lopta (oko 27 cm). Tako velike oči pomažu da u mraku dubokog mora na vreme uoče kita ulješuru – svog najvećeg neprijatelja.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/dzinovska-lignja.jpg",
+        "opis": "Džinovska lignja"
+      },
       "rec": "lignja"
     },
     {
@@ -471,6 +533,11 @@
         "Limfni sudovi"
       ],
       "zanimljivost": "Kada bi se svi krvni sudovi jednog čoveka spojili u jednu nit, obišli bi Zemlju više od dva puta (oko 100.000 km)! Najviše tu ima tankih kapilara.",
+      "medijiOdgovora": {
+        "vrsta": "biologija",
+        "scena": "srce",
+        "tip": "sisar"
+      },
       "rec": "arterija"
     },
     {
@@ -483,6 +550,11 @@
         "Perajima"
       ],
       "zanimljivost": "Škrge izvlače kiseonik rastvoren u vodi. Neke ribe, poput dvodihalica, imaju i škrge i pluća i mogu mesecima da prežive zakopane u blatu.",
+      "medijiOdgovora": {
+        "vrsta": "biologija",
+        "scena": "disanje",
+        "tip": "skrge"
+      },
       "rec": "škrga"
     },
     {
@@ -495,6 +567,11 @@
         "Ćelijski zid biljke napravljen od celuloze"
       ],
       "zanimljivost": "Hlorofil upija crvenu i plavu svetlost, a odbija zelenu – zato vidimo lišće zeleno. U jesen se hlorofil razgrađuje i ostaju žuti i narandžasti pigmenti (karotenoidi).",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/hloroplasti.jpg",
+        "opis": "Zeleni hloroplasti u ćelijama lista, pod mikroskopom"
+      },
       "rec": "svetlost"
     },
     {
@@ -507,6 +584,11 @@
         "Konj"
       ],
       "zanimljivost": "Gepard do 100 km/h ubrza za oko 3 sekunde, kao sportski automobil – ali tako brzo može da trči samo dvadesetak sekundi, pa se mora odmoriti.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/gepard.jpg",
+        "opis": "Gepard"
+      },
       "rec": "gepard"
     },
     {
@@ -519,6 +601,11 @@
         "Mrav"
       ],
       "zanimljivost": "Za kilogram meda pčele moraju da obiđu nekoliko miliona cvetova. Med se ne kvari – u egipatskim grobnicama pronađen je med star preko 3.000 godina!",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/sace.jpg",
+        "opis": "Saće od voska – šestougaone ćelije"
+      },
       "rec": "pčela"
     },
     {
@@ -531,6 +618,11 @@
         "64"
       ],
       "zanimljivost": "To su 23 para – jedan hromozom iz svakog para dobijamo od mame, a jedan od tate. Šimpanze imaju 48 hromozoma, a neke paprati preko 1.000!",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/kariotip.png",
+        "opis": "Svih 46 hromozoma čoveka, složenih u 23 para"
+      },
       "rec": "hromozom"
     },
     {
@@ -543,6 +635,11 @@
         "Vilin konjic"
       ],
       "zanimljivost": "Škorpija ima 8 nogu i spada u paukolike. Pod UV svetlom škorpije svetle plavozeleno! Insekti imaju telo u tri dela: glava, grudi i trbuh, i 6 nogu.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/skorpija.jpg",
+        "opis": "Škorpija – paukolika životinja sa osam nogu"
+      },
       "rec": "škorpija"
     },
     {
@@ -555,6 +652,25 @@
         "Samo insekte"
       ],
       "zanimljivost": "Krava ima želudac podeljen na četiri dela i vraća hranu iz želuca u usta da bi je ponovo žvakala – to se zove preživanje. Panda je po vrsti mesojed, a jede skoro samo bambus!",
+      "medijiOdgovora": {
+        "vrsta": "biologija",
+        "scena": "lanac",
+        "uloge": true,
+        "clanovi": [
+          {
+            "e": "🌿",
+            "o": "~trava"
+          },
+          {
+            "e": "🐇",
+            "o": "~zec"
+          },
+          {
+            "e": "🦊",
+            "o": "~lisica"
+          }
+        ]
+      },
       "rec": "biljka"
     },
     {
@@ -567,6 +683,11 @@
         "Jaguar"
       ],
       "zanimljivost": "Sibirski (amurski) tigar može biti težak preko 300 kg. Šare tigra su jedinstvene kao otisci prstiju – i koža ispod krzna mu je prugasta!",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/tigar.jpg",
+        "opis": "Tigar"
+      },
       "rec": "tigar"
     },
     {
@@ -579,6 +700,11 @@
         "Insekte, crve i puževe"
       ],
       "zanimljivost": "Panda dnevno pojede i do 15 kg bambusa i jede oko 12 sati dnevno. Iako jede biljke, njen probavni sistem je kao kod mesojeda, pa slabo vari bambus.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/panda.jpg",
+        "opis": "Džinovska panda"
+      },
       "rec": "bambus"
     },
     {
@@ -603,6 +729,11 @@
         "Paun"
       ],
       "zanimljivost": "Sova je u staroj Grčkoj bila ptica boginje Atine. Sove mogu da okrenu glavu za oko 270°, jer ne mogu da pomeraju oči.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/sova.jpg",
+        "opis": "Kukuvija mala (Athene noctua) – ptica boginje Atine, simbol mudrosti"
+      },
       "rec": "sova"
     },
     {
@@ -615,6 +746,11 @@
         "Jež"
       ],
       "zanimljivost": "Kućica puža raste zajedno sa njim. Vinogradski puž može da živi i preko 10 godina i zimu prespava zatvorivši kućicu poklopcem.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/puz.jpg",
+        "opis": "Vinogradarski puž"
+      },
       "rec": "kućica"
     },
     {
@@ -627,6 +763,10 @@
         "Želudac"
       ],
       "zanimljivost": "Odrastao čovek udahne i izdahne oko 12–20 puta u minutu, što je preko 20.000 udisaja dnevno.",
+      "medijiOdgovora": {
+        "vrsta": "biologija",
+        "scena": "pluca"
+      },
       "rec": "pluća"
     },
     {
@@ -651,6 +791,11 @@
         "Krvni sud"
       ],
       "zanimljivost": "Čovek ima 33–34 pršljena. Žirafa, iako ima dug vrat, u vratu ima isto pršljenova kao i čovek – sedam!",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/kicma.png",
+        "opis": "Kičma: vratni, grudni, slabinski pršljenovi, krsna i trtična kost"
+      },
       "rec": "kičma"
     },
     {
@@ -663,6 +808,11 @@
         "Šećer od repe"
       ],
       "zanimljivost": "Pčela tokom celog života napravi samo oko dvanaestinu kašičice meda. Za kilogram meda pčele prelete razdaljinu kao nekoliko puta oko Zemlje.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/sace.jpg",
+        "opis": "Saće od voska puno meda"
+      },
       "rec": "vosak"
     },
     {
@@ -675,6 +825,11 @@
         "Kamila"
       ],
       "zanimljivost": "Žirafa može biti visoka do 5,5 m. Srce joj je teško oko 11 kg, da bi moglo da „pumpa“ krv sve do glave.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/zirafa.jpg",
+        "opis": "Žirafa"
+      },
       "rec": "žirafa"
     },
     {
@@ -687,6 +842,11 @@
         "Razlagač"
       ],
       "zanimljivost": "Herbi znači biljka (latinski), a „vor“ dolazi od reči za „jesti“. Karnivor je mesojed, a omnivor svaštojed.",
+      "medijiOdgovora": {
+        "vrsta": "biologija",
+        "scena": "zubi",
+        "tip": "biljojed"
+      },
       "rec": "biljojed"
     },
     {
@@ -699,6 +859,11 @@
         "Jare"
       ],
       "zanimljivost": "Ždrebe može da stoji i hoda već nekoliko sati posle rođenja – da bi moglo da beži od grabljivica sa majkom.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/zdrebe.jpg",
+        "opis": "Ždrebe sa kobilom"
+      },
       "rec": "ždrebe"
     },
     {
@@ -723,6 +888,11 @@
         "Kućica"
       ],
       "zanimljivost": "U jednoj košnici može živeti i do 60.000 pčela, ali samo jedna matica. Saće od voska pčele grade u obliku šestouglova.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/kosnica.jpg",
+        "opis": "Košnica"
+      },
       "rec": "košnica"
     },
     {
@@ -735,6 +905,11 @@
         "Golub"
       ],
       "zanimljivost": "Kolibri maše krilima i do 80 puta u sekundi. Srce mu kuca preko 1.000 puta u minutu, a dnevno pojede više nektara nego što je težak.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/kolibri.jpg",
+        "opis": "Kolibri"
+      },
       "rec": "kolibri"
     },
     {
@@ -747,6 +922,11 @@
         "Orao krstaš"
       ],
       "zanimljivost": "U obrušavanju na plen sivi soko dostiže preko 300 km/h – brže od bilo koje druge životinje na svetu.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/sivi-soko.jpg",
+        "opis": "Sivi soko"
+      },
       "rec": "soko"
     },
     {
@@ -759,6 +939,11 @@
         "Som (najveća rečna riba u Evropi)"
       ],
       "zanimljivost": "Kitova ajkula može biti duga 12–18 m, a hrani se sitnim planktonom. Plavi kit je sisar, a ne riba.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/kitopsina.jpg",
+        "opis": "Kitopsina – riba duga i preko 12 m"
+      },
       "rec": "kitopsina"
     },
     {
@@ -771,6 +956,11 @@
         "Koala (australijski tobolčar)"
       ],
       "zanimljivost": "Kljunari i ehidne su monotremate – jedini sisari koji polažu jaja. Obe vrste žive u Australiji i na Novoj Gvineji.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/ehidna.jpg",
+        "opis": "Ehidna (kljunasti jež)"
+      },
       "rec": "ehidna"
     },
     {
@@ -783,6 +973,11 @@
         "U plućima i dušniku"
       ],
       "zanimljivost": "Koštana srž svake sekunde napravi oko 2 miliona crvenih krvnih zrnaca. Jedno zrnce živi oko 120 dana.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/kostana-srz.jpg",
+        "opis": "Koštana srž pod mikroskopom"
+      },
       "rec": "srž"
     },
     {
@@ -795,6 +990,10 @@
         "Pluća"
       ],
       "zanimljivost": "Koža odraslog čoveka ima površinu oko 2 m² i težinu oko 4 kg. Svakog dana ljuštimo hiljade mrtvih ćelija – veliki deo kućne prašine su upravo one!",
+      "medijiOdgovora": {
+        "vrsta": "biologija",
+        "scena": "koza"
+      },
       "rec": "koža"
     },
     {
@@ -807,6 +1006,11 @@
         "Čašica kolena (patela)"
       ],
       "zanimljivost": "Uzengija je dugačka samo oko 3 mm. Zajedno sa čekićem i nakovnjem prenosi zvučne vibracije u unutrašnje uho.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/uzengija.png",
+        "opis": "Uzengija – manja od zrna pirinča"
+      },
       "rec": "uzengija"
     },
     {
@@ -819,6 +1023,11 @@
         "Golenjača"
       ],
       "zanimljivost": "Butna kost je oko četvrtine visine čoveka i izuzetno je čvrsta – jača od betona iste debljine.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/butna-kost.jpg",
+        "opis": "Butna kost"
+      },
       "rec": "kost"
     },
     {
@@ -855,6 +1064,10 @@
         "Mrežnjača"
       ],
       "zanimljivost": "Zenica je otvor u dužici koji se širi u mraku i skuplja na svetlu. Plave oči nemaju plavi pigment – boja nastaje rasipanjem svetlosti, kao kod plavog neba!",
+      "medijiOdgovora": {
+        "vrsta": "biologija",
+        "scena": "oko"
+      },
       "rec": "dužica"
     },
     {
@@ -896,6 +1109,12 @@
     {
       "tezina": 2,
       "pitanje": "Koji deo mozga upravlja ravnotežom i koordinacijom pokreta?",
+      "mediji": {
+        "vrsta": "biologija",
+        "scena": "mozak",
+        "istakni": "mali",
+        "natpisi": false
+      },
       "odgovori": [
         "Mali mozak",
         "Veliki mozak",
@@ -903,6 +1122,10 @@
         "Hipofiza"
       ],
       "zanimljivost": "Mali mozak je samo oko desetine mase mozga, ali sadrži više od polovine svih njegovih nervnih ćelija.",
+      "medijiOdgovora": {
+        "vrsta": "biologija",
+        "scena": "mozak"
+      },
       "rec": "mozak"
     },
     {
@@ -915,6 +1138,10 @@
         "Oko 860"
       ],
       "zanimljivost": "Signal kroz neke nerve putuje i do 120 m/s. Mozak troši oko 20% energije tela, iako čini samo oko 2% mase.",
+      "medijiOdgovora": {
+        "vrsta": "biologija",
+        "scena": "neuron"
+      },
       "rec": "neuron"
     },
     {
@@ -927,6 +1154,10 @@
         "Nervne ćelije"
       ],
       "zanimljivost": "Insulin reguliše šećer u krvi, adrenalin nas priprema za opasnost, a hormon rasta nam pomaže da rastemo – najviše dok spavamo.",
+      "medijiOdgovora": {
+        "vrsta": "biologija",
+        "scena": "zlezde"
+      },
       "rec": "hormon"
     },
     {
@@ -939,6 +1170,10 @@
         "Grip"
       ],
       "zanimljivost": "Insulin su 1921. otkrili Banting i Best. Pre toga je dijabetes kod dece bio smrtonosan, a od tada se uspešno leči.",
+      "medijiOdgovora": {
+        "vrsta": "biologija",
+        "scena": "sprega"
+      },
       "rec": "dijabetes"
     },
     {
@@ -963,11 +1198,20 @@
         "Malarija"
       ],
       "zanimljivost": "Poslednja velika epidemija velikih boginja u Evropi bila je 1972. u Jugoslaviji, a zaustavljena je masovnom vakcinacijom miliona ljudi za nekoliko nedelja.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/dzener.jpg",
+        "opis": "Edvard Džener, tvorac prve vakcine (protiv velikih boginja, 1796)"
+      },
       "rec": "boginje"
     },
     {
       "tezina": 2,
       "pitanje": "Šta prenose komarci anofeles u tropskim krajevima?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/anofeles.jpg"
+      },
       "odgovori": [
         "Malariju",
         "Grip",
@@ -987,6 +1231,11 @@
         "Migracija (seoba u toplije krajeve)"
       ],
       "zanimljivost": "Potpun preobražaj ima četiri faze: jaje, larva (gusenica), lutka i odrastao insekt. U lutki se telo gusenice skoro potpuno razgradi i ponovo izgradi!",
+      "medijiOdgovora": {
+        "vrsta": "biologija",
+        "scena": "preobrazaj",
+        "tip": "leptir"
+      },
       "rec": "preobražaj"
     },
     {
@@ -999,6 +1248,11 @@
         "Zajednički lov vukova u čoporu tokom hladne zime"
       ],
       "zanimljivost": "Medved, jež, slepi miš i puh spavaju zimski san. Puhu tada srce kuca samo nekoliko puta u minutu, a temperatura tela padne skoro do nule.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/hibernacija.jpg",
+        "opis": "Slepi miš u zimskom snu – srce mu kuca i do 20 puta sporije"
+      },
       "rec": "hibernacija"
     },
     {
@@ -1035,6 +1289,11 @@
         "Roda"
       ],
       "zanimljivost": "Mladunče kukavice često izbaci druga jaja iz gnezda, a ptice-hranitelji ga hrane iako je mnogo veće od njih!",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/kukavica.jpg",
+        "opis": "Kukavica"
+      },
       "rec": "kukavica"
     },
     {
@@ -1047,6 +1306,11 @@
         "Lutajući albatros"
       ],
       "zanimljivost": "Mužjak carskog pingvina oko dva meseca drži jaje na stopalima ispod kožnog nabora, bez hrane, na −40 °C, dok ženka lovi u moru.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/carski-pingvin.jpg",
+        "opis": "Carski pingvin"
+      },
       "rec": "pingvin"
     },
     {
@@ -1059,6 +1323,11 @@
         "Papagaj"
       ],
       "zanimljivost": "Procenjuje se da grenlandske ajkule mogu da žive i oko 400 godina! Rastu samo oko 1 cm godišnje.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/grenlandska-ajkula.jpg",
+        "opis": "Grenlandska ajkula – može da živi i preko 250 godina"
+      },
       "rec": "ajkula"
     },
     {
@@ -1083,6 +1352,10 @@
         "Metan"
       ],
       "zanimljivost": "Pre oko 2,4 milijarde godina kiseonik iz fotosinteze toliko se nagomilao u atmosferi da je mnogim tadašnjim organizmima bio otrov. Naučnici to zovu „Velika oksidacija“.",
+      "medijiOdgovora": {
+        "vrsta": "biologija",
+        "scena": "satZemlje"
+      },
       "rec": "kiseonik"
     },
     {
@@ -1111,6 +1384,11 @@
         "Žalosna vrba"
       ],
       "zanimljivost": "Jedan bor u Belim planinama Kalifornije star je preko 4.800 godina. Njegova tačna lokacija se čuva u tajnosti da ga ljudi ne bi oštetili.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/dugovecni-bor.jpg",
+        "opis": "Dugovečni bor u Belim planinama Kalifornije"
+      },
       "rec": "bor"
     },
     {
@@ -1123,6 +1401,11 @@
         "Saprofite"
       ],
       "zanimljivost": "Mnoge orhideje i bromelije u prašumama rastu na granama drveća da bi bile bliže svetlosti. Imela je, naprotiv, poluparazit – uzima vodu iz drveta.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/epifite.jpg",
+        "opis": "Epifite na stablu drveta"
+      },
       "rec": "epifit"
     },
     {
@@ -1135,6 +1418,11 @@
         "List"
       ],
       "zanimljivost": "Na krtoli se vide „okca“ – pupoljci iz kojih rastu nove biljke. Zeleni delovi krompira sadrže otrov solanin, pa ih ne treba jesti.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/krtola.jpg",
+        "opis": "Krtole – zadebljala podzemna stabla puna skroba"
+      },
       "rec": "stablo"
     },
     {
@@ -1147,6 +1435,11 @@
         "Plod"
       ],
       "zanimljivost": "I brokoli je skup cvetnih pupoljaka. Ako ga ne uberemo na vreme, procvetaće sitnim žutim cvetovima.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/karfiol.jpg",
+        "opis": "Karfiol"
+      },
       "rec": "karfiol"
     },
     {
@@ -1164,6 +1457,11 @@
     {
       "tezina": 2,
       "pitanje": "Kako se zove muški deo cveta u kome nastaje polen?",
+      "mediji": {
+        "vrsta": "biologija",
+        "scena": "cvet",
+        "istakni": "prasnik"
+      },
       "odgovori": [
         "Prašnik",
         "Tučak",
@@ -1183,6 +1481,11 @@
         "Trave"
       ],
       "zanimljivost": "Pre 300 miliona godina papratnice su bile visoke kao drveće i od njih je nastao veliki deo kamenog uglja.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/paprat.jpg",
+        "opis": "Paprat – spore nastaju u gomilicama (sorusima) na naličju listova"
+      },
       "rec": "papratnica"
     },
     {
@@ -1195,6 +1498,11 @@
         "Mahovine"
       ],
       "zanimljivost": "Kod golosemenica seme nije zatvoreno u plodu, nego leži na ljuspama šišarke. Najviša stabla na svetu – sekvoje – takođe su golosemenice.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/cesar.jpg",
+        "opis": "Šišarke – semena kod golosemenica nisu zatvorena u plod"
+      },
       "rec": "smrča"
     },
     {
@@ -1223,6 +1531,11 @@
         "Nijedno"
       ],
       "zanimljivost": "Kišna glista diše kožom i nema pluća. Čarls Darvin je napisao celu knjigu o glistama i pokazao koliko su važne za plodnost zemljišta.",
+      "medijiOdgovora": {
+        "vrsta": "biologija",
+        "scena": "krvotok",
+        "tip": "zatvoreni"
+      },
       "rec": "glista"
     },
     {
@@ -1235,6 +1548,11 @@
         "Zelembać (gušter)"
       ],
       "zanimljivost": "Bubašvaba diše kroz otvore na telu, a ne kroz usta, pa joj glava nije potrebna za disanje. Ugine tek kada ožedni.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/bubasvaba.jpg",
+        "opis": "Bubašvaba"
+      },
       "rec": "bubašvaba"
     },
     {
@@ -1247,6 +1565,11 @@
         "Gorila"
       ],
       "zanimljivost": "Sila ugriza morskog krokodila izmerena je na preko 16.000 njutna. Ipak, mišići koji otvaraju čeljust su mu slabi – mogu se zadržati i gumicom!",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/morski-krokodil.jpg",
+        "opis": "Morski krokodil"
+      },
       "rec": "krokodil"
     },
     {
@@ -1259,6 +1582,11 @@
         "Refleksija"
       ],
       "zanimljivost": "Svici svetle bez stvaranja toplote – skoro 100% energije pretvaraju u svetlost. Obična sijalica sa vlaknom pretvarala je u svetlost manje od 10%.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/svici.jpg",
+        "opis": "Svitac"
+      },
       "rec": "svetlost"
     },
     {
@@ -1287,6 +1615,9 @@
         "Fiziologija"
       ],
       "zanimljivost": "Ime je smislio Vilijam Bejtson 1905. Gregor Mendel se smatra ocem genetike, iako u njegovo vreme ta reč nije postojala.",
+      "medijiOdgovora": {
+        "vrsta": "dnk"
+      },
       "rec": "genetika"
     },
     {
@@ -1299,6 +1630,11 @@
         "Najbrža ovca na svetu, koja je trčala brzo kao trkački konj"
       ],
       "zanimljivost": "Doli je nazvana po pevačici Doli Parton. Dobijena je iz jedne ćelije vimena druge ovce, pa je bila njena genetska kopija.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/doli.jpg",
+        "opis": "Ovca Doli sa svojim prvim jagnjetom Boni"
+      },
       "rec": "ovca"
     },
     {
@@ -1323,6 +1659,11 @@
         "Potpuno, 100%"
       ],
       "zanimljivost": "Ali i sa bananom delimo dosta gena – mnogi osnovni procesi u ćelijama su isti kod svih živih bića.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/simpanza.jpg",
+        "opis": "Šimpanza"
+      },
       "rec": "šimpanza"
     },
     {
@@ -1335,6 +1676,11 @@
         "Pupljenje"
       ],
       "zanimljivost": "Mitozom nastaju telesne ćelije sa istim brojem hromozoma. Mejoza meša nasledni materijal, pa je svaka polna ćelija jedinstvena.",
+      "medijiOdgovora": {
+        "vrsta": "biologija",
+        "scena": "hromozomi",
+        "tip": "polna"
+      },
       "rec": "mejoza"
     },
     {
@@ -1371,6 +1717,11 @@
       ],
       "tezina": 3,
       "zanimljivost": "Golijat žaba iz zapadne Afrike može biti dugačka preko 30 cm. Mužjaci kopaju male bazene na obali reke i premeštaju kamenje teže od sebe da bi napravili „gnezdo“ za jaja.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/golijat-zaba.jpg",
+        "opis": "Golijat žaba"
+      },
       "rec": "golijat"
     },
     {
@@ -1383,6 +1734,11 @@
         "Seli se svake godine u toplije krajeve na jugu"
       ],
       "zanimljivost": "Na Madagaskaru je oko 90% vrsta endemsko. Kod nas su endemi, na primer, Pančićeva omorika i Pančićev skakavac.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/omorika.jpg",
+        "opis": "Pančićeva omorika – endemit kanjona Drine"
+      },
       "rec": "endem"
     },
     {
@@ -1407,6 +1763,10 @@
         "Pankreas"
       ],
       "zanimljivost": "Bubrezi dnevno filtriraju oko 180 litara krvi, ali najveći deo vode vraćaju u telo, pa nastane samo oko 1,5 litara mokraće.",
+      "medijiOdgovora": {
+        "vrsta": "biologija",
+        "scena": "mokraca"
+      },
       "rec": "bubreg"
     },
     {
@@ -1475,6 +1835,11 @@
       ],
       "tezina": 2,
       "zanimljivost": "Ispod belog krzna polarni medved ima crnu kožu koja upija toplotu, a dlake su mu zapravo providne i šuplje. Fokama prilazi preko leda i čeka ih kod otvora za disanje.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/polarni-medved.jpg",
+        "opis": "Polarni medved"
+      },
       "rec": "medved"
     },
     {
@@ -1499,6 +1864,11 @@
         "Ne pada uvek na noge"
       ],
       "zanimljivost": "Mačka ima oko 30 pršljenova i nema čvrstu ključnu kost, pa se izuzetno lako uvija. Ipak, padovi sa visine su i za mačke opasni.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/macka-pada.jpg",
+        "opis": "Mačka se u padu okreće: prvo glava i prednji deo, pa zadnji"
+      },
       "rec": "refleks"
     },
     {
@@ -1511,6 +1881,11 @@
         "Šest"
       ],
       "zanimljivost": "Delovi se zovu burag, kapura, listavac i sirište. Hrana se iz buraga vraća u usta na ponovno žvakanje – preživanje.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/prezivar.jpg",
+        "opis": "Preživari: govedo, srna, žirafa, irvas, antilopa…"
+      },
       "rec": "komora"
     },
     {
@@ -1586,7 +1961,12 @@
         ]
       ],
       "rec": "organela",
-      "zanimljivost": "Mitohondrije imaju sopstvenu DNK, i to nasleđujemo samo od majke – zato naučnici po njoj prate poreklo ljudi hiljadama godina unazad."
+      "zanimljivost": "Mitohondrije imaju sopstvenu DNK, i to nasleđujemo samo od majke – zato naučnici po njoj prate poreklo ljudi hiljadama godina unazad.",
+      "medijiOdgovora": {
+        "vrsta": "biologija",
+        "scena": "celija",
+        "tip": "zivotinjska"
+      }
     },
     {
       "vrsta": "spoji",
@@ -1690,7 +2070,11 @@
         ]
       ],
       "rec": "biljka",
-      "zanimljivost": "Kada su naučnici izmerili sve korenove jedne biljke raži, ukupna dužina je bila veća od 600 kilometara!"
+      "zanimljivost": "Kada su naučnici izmerili sve korenove jedne biljke raži, ukupna dužina je bila veća od 600 kilometara!",
+      "medijiOdgovora": {
+        "vrsta": "biologija",
+        "scena": "transpiracija"
+      }
     },
     {
       "vrsta": "spoji",
@@ -1794,7 +2178,11 @@
         ]
       ],
       "rec": "hormon",
-      "zanimljivost": "Insulin su 1921. izdvojili Frederik Banting i Čarls Best, a već 1922. njime je spasen četrnaestogodišnji dečak oboleo od dijabetesa."
+      "zanimljivost": "Insulin su 1921. izdvojili Frederik Banting i Čarls Best, a već 1922. njime je spasen četrnaestogodišnji dečak oboleo od dijabetesa.",
+      "medijiOdgovora": {
+        "vrsta": "biologija",
+        "scena": "zlezde"
+      }
     },
     {
       "vrsta": "spoji",
@@ -1819,7 +2207,30 @@
         ]
       ],
       "rec": "lanac",
-      "zanimljivost": "Na svaki sledeći nivo lanca ishrane prelazi samo oko 10% energije – zato lanci ishrane retko imaju više od 4–5 karika."
+      "zanimljivost": "Na svaki sledeći nivo lanca ishrane prelazi samo oko 10% energije – zato lanci ishrane retko imaju više od 4–5 karika.",
+      "medijiOdgovora": {
+        "vrsta": "biologija",
+        "scena": "lanac",
+        "uloge": true,
+        "clanovi": [
+          {
+            "e": "🌿",
+            "o": "~trava"
+          },
+          {
+            "e": "🐇",
+            "o": "~zec"
+          },
+          {
+            "e": "🦊",
+            "o": "~lisica"
+          }
+        ],
+        "razlagac": {
+          "e": "🍄",
+          "o": "~gljive i bakterije"
+        }
+      }
     },
     {
       "vrsta": "spoji",
@@ -1844,7 +2255,12 @@
         ]
       ],
       "rec": "kost",
-      "zanimljivost": "Novorođenče ima oko 300 kostiju, a odrastao čovek 206 – tokom rasta se mnoge kosti srastu."
+      "zanimljivost": "Novorođenče ima oko 300 kostiju, a odrastao čovek 206 – tokom rasta se mnoge kosti srastu.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/skelet.jpg",
+        "opis": "Kostur čoveka"
+      }
     },
     {
       "vrsta": "spoji",
@@ -1919,7 +2335,11 @@
         ]
       ],
       "rec": "mozak",
-      "zanimljivost": "Mozak čini svega oko 2% mase tela, a troši oko 20% energije koju telo dobija iz hrane."
+      "zanimljivost": "Mozak čini svega oko 2% mase tela, a troši oko 20% energije koju telo dobija iz hrane.",
+      "medijiOdgovora": {
+        "vrsta": "biologija",
+        "scena": "mozak"
+      }
     },
     {
       "vrsta": "spoji",
@@ -1973,7 +2393,11 @@
         ]
       ],
       "rec": "varenje",
-      "zanimljivost": "Zahvaljujući naborima i resicama, unutrašnja površina tankog creva iznosi oko 30 m² – koliko i omanji stan."
+      "zanimljivost": "Zahvaljujući naborima i resicama, unutrašnja površina tankog creva iznosi oko 30 m² – koliko i omanji stan.",
+      "medijiOdgovora": {
+        "vrsta": "biologija",
+        "scena": "varenje"
+      }
     },
     {
       "vrsta": "spoji",
@@ -2027,7 +2451,12 @@
         ]
       ],
       "rec": "disanje",
-      "zanimljivost": "Zbog vazdušnih kesa vazduh kroz ptičja pluća struji u jednom smeru, pa ptice dišu mnogo efikasnije od nas – zato mogu da lete i iznad Himalaja."
+      "zanimljivost": "Zbog vazdušnih kesa vazduh kroz ptičja pluća struji u jednom smeru, pa ptice dišu mnogo efikasnije od nas – zato mogu da lete i iznad Himalaja.",
+      "medijiOdgovora": {
+        "vrsta": "biologija",
+        "scena": "disanje",
+        "tip": "kese"
+      }
     },
     {
       "vrsta": "spoji",
@@ -2160,7 +2589,11 @@
         ]
       ],
       "rec": "carstvo",
-      "zanimljivost": "Meduze nemaju ni mozak ni srce, a na Zemlji postoje duže od 500 miliona godina – mnogo pre dinosaurusa."
+      "zanimljivost": "Meduze nemaju ni mozak ni srce, a na Zemlji postoje duže od 500 miliona godina – mnogo pre dinosaurusa.",
+      "medijiOdgovora": {
+        "vrsta": "biologija",
+        "scena": "drvo"
+      }
     },
     {
       "vrsta": "uljez",
@@ -2202,7 +2635,11 @@
       ],
       "objasnjenje": "Pluća su deo sistema za disanje. Želudac, jetra i tanko crevo učestvuju u varenju hrane.",
       "rec": "pluća",
-      "zanimljivost": "Desno plućno krilo ima tri režnja, a levo samo dva – da bi ostalo mesta za srce."
+      "zanimljivost": "Desno plućno krilo ima tri režnja, a levo samo dva – da bi ostalo mesta za srce.",
+      "medijiOdgovora": {
+        "vrsta": "biologija",
+        "scena": "varenje"
+      }
     },
     {
       "vrsta": "uljez",
@@ -2258,7 +2695,12 @@
       ],
       "objasnjenje": "Hidra je višećelijska životinja iz grupe žarnjaka. Ameba, papučica i euglena su jednoćelijski protisti.",
       "rec": "hidra",
-      "zanimljivost": "Hidra stalno obnavlja svoje ćelije i, koliko naučnici znaju, gotovo da ne stari."
+      "zanimljivost": "Hidra stalno obnavlja svoje ćelije i, koliko naučnici znaju, gotovo da ne stari.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/hidra.jpg",
+        "opis": "Hidra – višećelijska životinja duga oko 1 cm"
+      }
     },
     {
       "vrsta": "uljez",
@@ -2328,7 +2770,12 @@
       ],
       "objasnjenje": "Kengur rađa mladunce, koji dalje rastu u tobolcu. Kljunar je jedan od retkih sisara koji polažu jaja.",
       "rec": "kengur",
-      "zanimljivost": "Kljunar i ehidna su jedini danas živi sisari koji polažu jaja."
+      "zanimljivost": "Kljunar i ehidna su jedini danas živi sisari koji polažu jaja.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/kengur.jpg",
+        "opis": "Kengur sa mladunčetom u torbi"
+      }
     },
     {
       "vrsta": "uljez",
@@ -2384,7 +2831,11 @@
       ],
       "objasnjenje": "Kiseonik nastaje fotosintezom – on je proizvod, a ne sirovina. Biljci su potrebni svetlost, voda i ugljen-dioksid.",
       "rec": "fotosinteza",
-      "zanimljivost": "Otprilike polovinu kiseonika na Zemlji proizvode sitne alge i cijanobakterije u okeanima."
+      "zanimljivost": "Otprilike polovinu kiseonika na Zemlji proizvode sitne alge i cijanobakterije u okeanima.",
+      "medijiOdgovora": {
+        "vrsta": "biologija",
+        "scena": "fotosinteza"
+      }
     },
     {
       "vrsta": "uljez",
@@ -2412,7 +2863,11 @@
       ],
       "objasnjenje": "Lisna drška je deo lista. Prašnici (muški deo), tučak (ženski deo) i krunični listići su delovi cveta.",
       "rec": "cvet",
-      "zanimljivost": "Većina biljaka ima i prašnike i tučak u istom cvetu, ali neke, poput vrbe, imaju posebne muške i ženske biljke."
+      "zanimljivost": "Većina biljaka ima i prašnike i tučak u istom cvetu, ali neke, poput vrbe, imaju posebne muške i ženske biljke.",
+      "medijiOdgovora": {
+        "vrsta": "biologija",
+        "scena": "cvet"
+      }
     },
     {
       "vrsta": "uljez",

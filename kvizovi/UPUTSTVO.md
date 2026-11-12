@@ -134,3 +134,13 @@ Kviz sa `"zadaci": true` (npr. `kvizovi/razred7-matematika-zadaci`) je poseban p
 - **Crtež uz pitanje ne sme da oda odgovor**: delovi rešenja (natpisi, pomoćne linije, tražena tačka) dobijaju `k`, pa se pojavljuju tek u rešenju.
 - U rešenju: element sa `"k": n` pojavljuje se od n-tog koraka, a korak ističe elemente iz `"i"`. Korak sa sopstvenim `crtez` prikazuje taj crtež.
 - Bar 10 zadataka po lekciji, mešane težine. Zadaci za 7. razred se grade iz `alati/gradi-zadaci-7.js`, koji učitava teme iz `alati/zadaci-7/` (`osnova.js` – spisak lekcija i pomoćne funkcije: `pravilni` mnogougao, `stubici` i `kruzni` dijagram, `kocke` izometrijska kocka, `prava`; `1-realni-brojevi.js` … `6-podaci.js`). `proveri(uslov, opis)` u alatu zaustavlja gradnju ako račun ne važi.
+
+## Kviz „Matematika“ – pitanja iz alata i animacije
+
+Pored ručno pisanih pitanja, `kvizovi/matematika` dobija pitanja iz `alati/matematika/<n>-<tema>.js` (kompaktan zapis: `Q(težina, pitanje, odgovori, zanimljivost, pojam, { mediji, medijiOdgovora })`, `U(…)` za uljeza, `S(…)` za spajanje, `proveri(uslov, opis)` za račun). Posle izmene: `node alati/gradi-matematiku.js && npm run proveri`.
+
+- Pitanja su za rešavanje **u glavi**; zadaci za papir idu u `razred<N>-matematika-zadaci`.
+- Crteži su medij `geo` (isti kao u zadacima); crtež uz pitanje ne sme da oda odgovor – „rešen“ crtež ide u `medijiOdgovora`.
+- Oznake tačaka (`$ABC$`), promenljive (`$n$`, `$a + b$`) i formule pisati između `$…$` – inače bi se u ćirilici pretvorile u АБЦ, а + б.
+- Animacije (dokazi „bez reči“) su manim scene u `alati/manim/scene.py`; `alati/manim/renderuj.sh [Scena…]` ih pravi kao animirani WebP (480 px, ponavlja se) u `kvizovi/matematika/animacije/`, a u pitanje se stavljaju kao slika: `A('pitagora', 'opis')` → `{"vrsta":"slika","src":"animacije/pitagora.webp"}`. Na animacijama su samo brojevi, slova promenljivih i znaci (ne preslovljavaju se).
+

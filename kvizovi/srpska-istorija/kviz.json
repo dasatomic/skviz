@@ -146,6 +146,18 @@
         "Bitka kod Velbužda"
       ],
       "zanimljivost": "U Maričkoj bici poginuli su kralj Vukašin i despot Uglješa Mrnjavčević. Iste godine umro je car Uroš – poslednji Nemanjić na prestolu, kome je narod dao nadimak „Nejaki“.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "balkan",
+        "tacke": [
+          {
+            "lat": 41.73,
+            "lon": 26.2,
+            "oznaka": "Černomen na Marici",
+            "znak": "⚔️"
+          }
+        ]
+      },
       "rec": "marica"
     },
     {
@@ -174,6 +186,56 @@
         "1912."
       ],
       "zanimljivost": "Povod je bila „seča knezova“ – dahije su ubili mnoge ugledne srpske starešine. Ustanak je podignut na Sretenje 1804. u Orašcu, u Marićevića jaruzi.",
+      "medijiOdgovora": {
+        "vrsta": "lenta",
+        "od": 1800,
+        "do": 1845,
+        "dogadjaji": [
+          {
+            "g": 1804,
+            "t": "Prvi ustanak",
+            "ist": true
+          },
+          {
+            "g": 1806,
+            "t": "Mišar"
+          },
+          {
+            "g": 1813,
+            "t": "slom ustanka"
+          },
+          {
+            "g": 1815,
+            "t": "Drugi ustanak"
+          },
+          {
+            "g": 1830,
+            "t": "hatišerif"
+          },
+          {
+            "g": 1835,
+            "t": "Sretenjski ustav"
+          },
+          {
+            "g": 1841,
+            "t": "Beograd prestonica"
+          }
+        ],
+        "periodi": [
+          {
+            "od": 1804,
+            "do": 1813,
+            "t": "Karađorđe",
+            "boja": "#3d7fd9"
+          },
+          {
+            "od": 1815,
+            "do": 1839,
+            "t": "knez Miloš",
+            "boja": "#d9823d"
+          }
+        ]
+      },
       "rec": "ustanak"
     },
     {
@@ -224,6 +286,56 @@
         "Božićni ustav"
       ],
       "zanimljivost": "Donet je 15. februara, na Sretenje – isti dan kada je 1804. počeo Prvi ustanak. Zato je 15. februar danas Dan državnosti Srbije. Ustav je bio toliko liberalan da su ga velike sile ukinule posle samo nekoliko nedelja.",
+      "medijiOdgovora": {
+        "vrsta": "lenta",
+        "od": 1800,
+        "do": 1845,
+        "dogadjaji": [
+          {
+            "g": 1804,
+            "t": "Prvi ustanak"
+          },
+          {
+            "g": 1806,
+            "t": "Mišar"
+          },
+          {
+            "g": 1813,
+            "t": "slom ustanka"
+          },
+          {
+            "g": 1815,
+            "t": "Drugi ustanak"
+          },
+          {
+            "g": 1830,
+            "t": "hatišerif"
+          },
+          {
+            "g": 1835,
+            "t": "Sretenjski ustav",
+            "ist": true
+          },
+          {
+            "g": 1841,
+            "t": "Beograd prestonica"
+          }
+        ],
+        "periodi": [
+          {
+            "od": 1804,
+            "do": 1813,
+            "t": "Karađorđe",
+            "boja": "#3d7fd9"
+          },
+          {
+            "od": 1815,
+            "do": 1839,
+            "t": "knez Miloš",
+            "boja": "#d9823d"
+          }
+        ]
+      },
       "rec": "ustav"
     },
     {
@@ -323,6 +435,10 @@
         "Srebrni zaliv"
       ],
       "zanimljivost": "Pesmu „Plava grobnica“ napisao je Milutin Bojić. Iscrpljeni vojnici su se na Krfu oporavili, a zatim su 1918. probili Solunski front i oslobodili Srbiju.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "karta": "albanska-golgota"
+      },
       "rec": "vido"
     },
     {
@@ -587,6 +703,11 @@
         "Đurđevdan"
       ],
       "zanimljivost": "Na Vidovdan su se dogodili i Kosovska bitka (1389), Sarajevski atentat (1914) i donošenje Vidovdanskog ustava (1921). Tada se dele i đačke diplome i svedočanstva.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/kosovski-boj.jpg",
+        "opis": "Kosovski boj, 28. jun (Vidovdan) 1389."
+      },
       "rec": "vidovdan"
     },
     {
@@ -672,6 +793,56 @@
         "Novi Sad"
       ],
       "zanimljivost": "Knez Mihailo je prestonicu iz Kragujevca preneo u Beograd, iako su u beogradskoj tvrđavi tada još bili Turci. Konačno su je napustili tek 1867.",
+      "medijiOdgovora": {
+        "vrsta": "lenta",
+        "od": 1800,
+        "do": 1845,
+        "dogadjaji": [
+          {
+            "g": 1804,
+            "t": "Prvi ustanak"
+          },
+          {
+            "g": 1806,
+            "t": "Mišar"
+          },
+          {
+            "g": 1813,
+            "t": "slom ustanka"
+          },
+          {
+            "g": 1815,
+            "t": "Drugi ustanak"
+          },
+          {
+            "g": 1830,
+            "t": "hatišerif"
+          },
+          {
+            "g": 1835,
+            "t": "Sretenjski ustav"
+          },
+          {
+            "g": 1841,
+            "t": "Beograd prestonica",
+            "ist": true
+          }
+        ],
+        "periodi": [
+          {
+            "od": 1804,
+            "do": 1813,
+            "t": "Karađorđe",
+            "boja": "#3d7fd9"
+          },
+          {
+            "od": 1815,
+            "do": 1839,
+            "t": "knez Miloš",
+            "boja": "#d9823d"
+          }
+        ]
+      },
       "rec": "beograd"
     },
     {
@@ -955,6 +1126,69 @@
         "Karađorđevići"
       ],
       "zanimljivost": "Nemanjići su dali 11 vladara i mnogo svetitelja – zato se nazivaju i „sveta loza“.",
+      "medijiOdgovora": {
+        "vrsta": "lenta",
+        "od": 1160,
+        "do": 1375,
+        "dogadjaji": [
+          {
+            "g": 1166,
+            "t": "Nemanja",
+            "ist": true
+          },
+          {
+            "g": 1219,
+            "t": "samostalna crkva"
+          },
+          {
+            "g": 1346,
+            "t": "carstvo"
+          },
+          {
+            "g": 1371,
+            "t": "kraj dinastije",
+            "ist": true
+          }
+        ],
+        "periodi": [
+          {
+            "od": 1166,
+            "do": 1196,
+            "t": "Nemanja",
+            "boja": "#3d7fd9"
+          },
+          {
+            "od": 1196,
+            "do": 1228,
+            "t": "Prvovenčani",
+            "boja": "#5aa0e0"
+          },
+          {
+            "od": 1243,
+            "do": 1276,
+            "t": "Uroš I",
+            "boja": "#3d7fd9"
+          },
+          {
+            "od": 1282,
+            "do": 1321,
+            "t": "Milutin",
+            "boja": "#d9823d"
+          },
+          {
+            "od": 1331,
+            "do": 1355,
+            "t": "Dušan",
+            "boja": "#c0392b"
+          },
+          {
+            "od": 1355,
+            "do": 1371,
+            "t": "Uroš",
+            "boja": "#8e44ad"
+          }
+        ]
+      },
       "rec": "nemanjić"
     },
     {
@@ -967,6 +1201,11 @@
         "Miroslav"
       ],
       "zanimljivost": "Rastko je bio najmlađi sin Stefana Nemanje. Sa oko 17 godina potajno je otišao na Svetu Goru, a otac je slao vojnike da ga vrate – ali uzalud.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/sveti-sava.jpg",
+        "opis": "Sveti Sava (Rastko Nemanjić)"
+      },
       "rec": "rastko"
     },
     {
@@ -979,6 +1218,11 @@
         "Grčkim pismom"
       ],
       "zanimljivost": "Ćirilicu su stvorili učenici Ćirila i Metodija, verovatno u Bugarskoj krajem 9. veka. Srpska ćirilica je kasnije prilagođena srpskom jeziku.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/miroslavljevo.jpg",
+        "opis": "Miroslavljevo jevanđelje – ćirilica iz 12. veka"
+      },
       "rec": "ćirilica"
     },
     {
@@ -1036,6 +1280,11 @@
         "Veliki župan"
       ],
       "zanimljivost": "Despot je bila visoka vizantijska titula. Despot Stefan je bio i jedan od najobrazovanijih vladara svog vremena i veliki vitez – član Reda zmaja.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/despot-stefan.jpg",
+        "opis": "Despot Stefan Lazarević"
+      },
       "rec": "despot"
     },
     {
@@ -1070,6 +1319,22 @@
         "Smederevo"
       ],
       "zanimljivost": "Dušan je krunisan u Skoplju 1346. Sahranjen je u svojoj zadužbini, manastiru Svetih Arhangela kod Prizrena.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "balkan",
+        "tacke": [
+          {
+            "lat": 42,
+            "lon": 21.43,
+            "oznaka": "Skoplje"
+          },
+          {
+            "lat": 42.21,
+            "lon": 20.74,
+            "oznaka": "Prizren"
+          }
+        ]
+      },
       "rec": "prizren"
     },
     {
@@ -1145,6 +1410,11 @@
         "Vuk Branković"
       ],
       "zanimljivost": "U narodnim pesmama Marko je najveći junak, a u stvarnosti je bio vazal Turaka. Pesme kažu da je živeo 300 godina!",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/kraljevic-marko.jpg",
+        "opis": "Kraljević Marko"
+      },
       "rec": "kraljević"
     },
     {
@@ -1221,6 +1491,11 @@
         "1700."
       ],
       "zanimljivost": "Velika škola je osnovana za vreme Prvog ustanka. Univerzitet u Beogradu nosi taj naziv od 1905.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/velika-skola.jpg",
+        "opis": "Zdanje u Beogradu u kome je 1808. otvorena Velika škola (danas Muzej Vuka i Dositeja)"
+      },
       "rec": "škola"
     },
     {
@@ -1233,6 +1508,11 @@
         "Sveti Sava, kao deo prve srpske škole u manastiru Studenica"
       ],
       "zanimljivost": "Matica srpska je 1864. prešla u Novi Sad. Izdaje i „Letopis Matice srpske“ – najstariji književni časopis koji još izlazi u svetu.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/matica.jpg",
+        "opis": "Znak Matice srpske, osnovane 1826. u Pešti"
+      },
       "rec": "matica"
     },
     {
@@ -1262,6 +1542,11 @@
         "Mojkovačka bitka"
       ],
       "zanimljivost": "U toj bici je poginulo ili ranjeno desetine hiljada vojnika na obe strane. Uz Cersku bitku, bila je prva velika pobeda saveznika u Prvom svetskom ratu.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/misic.jpg",
+        "opis": "Vojvoda Živojin Mišić"
+      },
       "rec": "bitka"
     },
     {
@@ -1313,6 +1598,10 @@
         "1920."
       ],
       "zanimljivost": "Proboj kod Dobrog polja počeo je 15. septembra 1918. Za oko 45 dana srpska vojska je, uz saveznike, oslobodila Srbiju – jedan od najbržih pohoda u Prvom svetskom ratu.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "karta": "solunski-front"
+      },
       "rec": "front"
     },
     {
@@ -1341,6 +1630,11 @@
       ],
       "tezina": 2,
       "zanimljivost": "U Nišu je Narodna skupština u decembru 1914. donela Nišku deklaraciju, kojom je kao ratni cilj proglašeno oslobođenje i ujedinjenje Srba, Hrvata i Slovenaca. Vrhovna komanda bila je u Kragujevcu.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/niska-tvrdjava.jpg",
+        "opis": "Niška tvrđava"
+      },
       "rec": "deklaracija"
     },
     {
@@ -1495,6 +1789,11 @@
         "Kralj Milutin"
       ],
       "zanimljivost": "Sveti Sava je Zakonopravilo sastavio od vizantijskih pravnih zbornika, prilagodivši ih srpskoj državi i crkvi. Najstariji sačuvani prepis, Ilovički, potiče iz 1262. godine.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/sveti-sava.jpg",
+        "opis": "Sveti Sava"
+      },
       "rec": "sava"
     },
     {
@@ -1524,6 +1823,11 @@
         "1912."
       ],
       "zanimljivost": "Posle neuspeha austrijske vojske u ratu sa Turcima, desetine hiljada Srba preselilo se u Ugarsku. Druga velika seoba bila je 1737, pod Arsenijem IV.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/umetnost/slike/paja-jovanovic.jpg",
+        "opis": "Paja Jovanović: „Seoba Srba“"
+      },
       "rec": "seoba"
     },
     {
@@ -1536,6 +1840,10 @@
         "Slavonija"
       ],
       "zanimljivost": "Ime Vojvodina potiče od Srpske Vojvodine, proglašene na Majskoj skupštini u Sremskim Karlovcima 1848.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "karta": "vojvodina"
+      },
       "rec": "vojvodina"
     },
     {
@@ -1653,6 +1961,18 @@
         "Bitka na Kajmakčalanu"
       ],
       "zanimljivost": "U borbama na Mačkovom kamenu septembra 1914. smenjivali su se srpski i austrougarski napadi danima. Mnogi borci su zauvek ostali na planini Jagodnji.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "srbija",
+        "tacke": [
+          {
+            "lat": 44.27,
+            "lon": 19.33,
+            "oznaka": "Mačkov kamen",
+            "znak": "⚔️"
+          }
+        ]
+      },
       "rec": "bitka"
     },
     {
@@ -1733,6 +2053,11 @@
         "Pavle"
       ],
       "zanimljivost": "Patrijaršija je proglašena kada je Dušan krunisan za cara. Sedište je bilo u Peći.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/manastiri/slike/pecka-patrijarsija.jpg",
+        "opis": "Pećka patrijaršija, sedište patrijarha"
+      },
       "rec": "joanikije"
     },
     {
@@ -1761,6 +2086,11 @@
         "Pravila za škole u kojima su učila deca vlastele"
       ],
       "zanimljivost": "Ovaj zakonik je jedan od najstarijih rudarskih zakona u Evropi. Sadrži i odredbe o gradskoj samoupravi i javnom redu.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/novo-brdo.jpg",
+        "opis": "Novo Brdo"
+      },
       "rec": "zakonik"
     },
     {
@@ -1823,6 +2153,11 @@
         "Pravoslavna crkva iz 19. veka posvećena Svetom Nikoli"
       ],
       "zanimljivost": "Iz ovog logora se 1942. dogodio jedan od najmasovnijih bekstava iz nacističkih logora u Evropi. Danas je to muzej.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/crveni-krst.jpg",
+        "opis": "Logor na Crvenom krstu u Nišu, danas muzej"
+      },
       "rec": "logor"
     },
     {
@@ -1851,6 +2186,11 @@
         "Topolska republika"
       ],
       "zanimljivost": "Užička republika je bila oslobođena teritorija u jesen 1941. U trezoru banke u Užicu bila je fabrika oružja, koja je eksplodirala u novembru 1941.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/kadinjaca.jpg",
+        "opis": "Spomenik na Kadinjači, gde je 1941. pao Radnički bataljon"
+      },
       "rec": "užice"
     },
     {
@@ -1875,6 +2215,56 @@
       ],
       "tezina": 3,
       "zanimljivost": "Hatišerif je bio sultanov ukaz. Njime je Srbija dobila unutrašnju samoupravu, a Turci su smeli da žive samo u gradovima sa tvrđavama. Već sledeće godine u Beogradu je proradila prva štamparija u Kneževini.",
+      "medijiOdgovora": {
+        "vrsta": "lenta",
+        "od": 1800,
+        "do": 1845,
+        "dogadjaji": [
+          {
+            "g": 1804,
+            "t": "Prvi ustanak"
+          },
+          {
+            "g": 1806,
+            "t": "Mišar"
+          },
+          {
+            "g": 1813,
+            "t": "slom ustanka"
+          },
+          {
+            "g": 1815,
+            "t": "Drugi ustanak"
+          },
+          {
+            "g": 1830,
+            "t": "hatišerif",
+            "ist": true
+          },
+          {
+            "g": 1835,
+            "t": "Sretenjski ustav"
+          },
+          {
+            "g": 1841,
+            "t": "Beograd prestonica"
+          }
+        ],
+        "periodi": [
+          {
+            "od": 1804,
+            "do": 1813,
+            "t": "Karađorđe",
+            "boja": "#3d7fd9"
+          },
+          {
+            "od": 1815,
+            "do": 1839,
+            "t": "knez Miloš",
+            "boja": "#d9823d"
+          }
+        ]
+      },
       "rec": "knez"
     },
     {
@@ -1899,6 +2289,18 @@
         "Tršić"
       ],
       "zanimljivost": "Danas se u Orašcu nalazi spomen-kompleks Marićevića jaruga. Na Sretenje se tu svake godine obeležava Dan državnosti.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "srbija",
+        "tacke": [
+          {
+            "lat": 44.33,
+            "lon": 20.6,
+            "oznaka": "Orašac",
+            "znak": "⚔️"
+          }
+        ]
+      },
       "rec": "orašac"
     },
     {
@@ -1911,6 +2313,57 @@
         "20. oktobra"
       ],
       "zanimljivost": "Datum podseća na početak Prvog ustanka (1804) i donošenje Sretenjskog ustava (1835) – oba na Sretenje.",
+      "medijiOdgovora": {
+        "vrsta": "lenta",
+        "od": 1800,
+        "do": 1845,
+        "dogadjaji": [
+          {
+            "g": 1804,
+            "t": "Prvi ustanak",
+            "ist": true
+          },
+          {
+            "g": 1806,
+            "t": "Mišar"
+          },
+          {
+            "g": 1813,
+            "t": "slom ustanka"
+          },
+          {
+            "g": 1815,
+            "t": "Drugi ustanak"
+          },
+          {
+            "g": 1830,
+            "t": "hatišerif"
+          },
+          {
+            "g": 1835,
+            "t": "Sretenjski ustav",
+            "ist": true
+          },
+          {
+            "g": 1841,
+            "t": "Beograd prestonica"
+          }
+        ],
+        "periodi": [
+          {
+            "od": 1804,
+            "do": 1813,
+            "t": "Karađorđe",
+            "boja": "#3d7fd9"
+          },
+          {
+            "od": 1815,
+            "do": 1839,
+            "t": "knez Miloš",
+            "boja": "#d9823d"
+          }
+        ]
+      },
       "rec": "sretenje"
     },
     {
@@ -1969,6 +2422,68 @@
       ],
       "tezina": 2,
       "zanimljivost": "Uroš je bio sin cara Dušana i nasledio ga je 1355. sa oko 19 godina. Moćna vlastela ga nije slušala, pa se carstvo raspalo na oblasti. Umro je 1371, iste godine kada je bila Marička bitka.",
+      "medijiOdgovora": {
+        "vrsta": "lenta",
+        "od": 1160,
+        "do": 1375,
+        "dogadjaji": [
+          {
+            "g": 1166,
+            "t": "Nemanja"
+          },
+          {
+            "g": 1219,
+            "t": "samostalna crkva"
+          },
+          {
+            "g": 1346,
+            "t": "carstvo"
+          },
+          {
+            "g": 1371,
+            "t": "kraj dinastije",
+            "ist": true
+          }
+        ],
+        "periodi": [
+          {
+            "od": 1166,
+            "do": 1196,
+            "t": "Nemanja",
+            "boja": "#3d7fd9"
+          },
+          {
+            "od": 1196,
+            "do": 1228,
+            "t": "Prvovenčani",
+            "boja": "#5aa0e0"
+          },
+          {
+            "od": 1243,
+            "do": 1276,
+            "t": "Uroš I",
+            "boja": "#3d7fd9"
+          },
+          {
+            "od": 1282,
+            "do": 1321,
+            "t": "Milutin",
+            "boja": "#d9823d"
+          },
+          {
+            "od": 1331,
+            "do": 1355,
+            "t": "Dušan",
+            "boja": "#c0392b"
+          },
+          {
+            "od": 1355,
+            "do": 1371,
+            "t": "Uroš",
+            "boja": "#8e44ad"
+          }
+        ]
+      },
       "rec": "nejaki"
     },
     {
@@ -2221,6 +2736,67 @@
       ],
       "objasnjenje": "Knez Lazar Hrebeljanović nije bio Nemanjić, mada je njegova supruga Milica bila iz pobočne loze Nemanjića.",
       "zanimljivost": "Nemanjići su vladali Srbijom skoro dva veka – od Stefana Nemanje (1166) do cara Uroša (1371).",
+      "medijiOdgovora": {
+        "vrsta": "lenta",
+        "od": 1160,
+        "do": 1375,
+        "dogadjaji": [
+          {
+            "g": 1166,
+            "t": "Nemanja"
+          },
+          {
+            "g": 1219,
+            "t": "samostalna crkva"
+          },
+          {
+            "g": 1346,
+            "t": "carstvo"
+          },
+          {
+            "g": 1371,
+            "t": "kraj dinastije"
+          }
+        ],
+        "periodi": [
+          {
+            "od": 1166,
+            "do": 1196,
+            "t": "Nemanja",
+            "boja": "#3d7fd9"
+          },
+          {
+            "od": 1196,
+            "do": 1228,
+            "t": "Prvovenčani",
+            "boja": "#5aa0e0"
+          },
+          {
+            "od": 1243,
+            "do": 1276,
+            "t": "Uroš I",
+            "boja": "#3d7fd9"
+          },
+          {
+            "od": 1282,
+            "do": 1321,
+            "t": "Milutin",
+            "boja": "#d9823d"
+          },
+          {
+            "od": 1331,
+            "do": 1355,
+            "t": "Dušan",
+            "boja": "#c0392b"
+          },
+          {
+            "od": 1355,
+            "do": 1371,
+            "t": "Uroš",
+            "boja": "#8e44ad"
+          }
+        ]
+      },
       "rec": "dinastija"
     },
     {

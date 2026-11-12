@@ -71,6 +71,11 @@
         "Dinamo Zagreb"
       ],
       "zanimljivost": "Zvezda je u finalu pobedila Olimpik iz Marselja posle penala. Iste godine, u Tokiju, osvojila je i Interkontinentalni kup i postala klupski prvak sveta.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/bari.jpg",
+        "opis": "Stadion San Nikola u Bariju, gde je Zvezda postala prvak Evrope"
+      },
       "rec": "zvezda"
     },
     {
@@ -83,6 +88,11 @@
         "Šutnuo levom nogom sa centra"
       ],
       "zanimljivost": "Golman je skočio u stranu, a lopta je polako ušla u sredinu. Taj šut je u Beogradu doneo titulu Čehoslovačkoj, a danas se takav penal u celom svetu zove „Panenka“.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/panenka.jpg",
+        "opis": "Antonjin Panenka"
+      },
       "rec": "penal"
     },
     {
@@ -95,6 +105,11 @@
         "Vaterpolo"
       ],
       "zanimljivost": "Najbolja igračica obe pobede bila je Tijana Bošković. Odbojka je izmišljena 1895. u Americi kao blaža igra od košarke, za starije ljude.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/boskovic.jpg",
+        "opis": "Tijana Bošković, najbolja igračica oba svetska prvenstva"
+      },
       "rec": "odbojka"
     },
     {
@@ -131,6 +146,11 @@
         "Rimu"
       ],
       "zanimljivost": "Pokretač modernih Olimpijskih igara bio je Francuz Pjer de Kuberten. Na prvim igrama nije bilo žena, a pobednici su dobijali srebrnu medalju i maslinovu grančicu.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/panatinaiko.jpg",
+        "opis": "Panatinaiko stadion u Atini, napravljen od mermera"
+      },
       "rec": "olimpijada"
     },
     {
@@ -143,6 +163,22 @@
         "21,1 km"
       ],
       "zanimljivost": "Po legendi, glasnik Fidipid je trčao od Maratona do Atine da javi pobedu nad Persijancima. Čudna dužina 42,195 km utvrđena je 1908. u Londonu, da bi trka završila ispred kraljevske lože.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "evropa",
+        "tacke": [
+          {
+            "lat": 38.15,
+            "lon": 23.96,
+            "oznaka": "Maraton"
+          },
+          {
+            "lat": 37.98,
+            "lon": 23.73,
+            "oznaka": "Atina"
+          }
+        ]
+      },
       "rec": "maraton"
     },
     {
@@ -155,6 +191,11 @@
         "Tajson Gej"
       ],
       "zanimljivost": "Bolt je rekord postavio 2009. u Berlinu, sa prosečnom brzinom od oko 37,6 km/h, a najvećom preko 44 km/h. Visok je 1,95 m – za sprintera neobično visok.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/bolt.jpg",
+        "opis": "Jusein Bolt"
+      },
       "rec": "bolt"
     },
     {
@@ -167,6 +208,11 @@
         "Kejleb Dresel"
       ],
       "zanimljivost": "Felps ima 23 zlatne i ukupno 28 olimpijskih medalja. Raspon ruku mu je 2,01 m – veći od njegove visine – što mu je pomagalo u plivanju.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/felps.jpg",
+        "opis": "Majkl Felps"
+      },
       "rec": "felps"
     },
     {
@@ -179,6 +225,11 @@
         "Vilijam Morgan"
       ],
       "zanimljivost": "Nejsmit je bio nastavnik fizičkog i trebala mu je igra za zimu u sali. Koševi su bile korpe za breskve, pa je posle svakog koša neko morao da se popne merdevinama po loptu!",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/nejsmit.jpg",
+        "opis": "Džejms Nejsmit sa prvom loptom i košem – korpom za breskve"
+      },
       "rec": "nejsmit"
     },
     {
@@ -191,6 +242,11 @@
         "Olga Danilović"
       ],
       "zanimljivost": "Iste 2008. i Jelena Janković je bila prva na svetu. Monika Seleš, rođena u Novom Sadu, osvojila je čak 9 grend slem titula, a sa 16 godina je postala najmlađa pobednica Rolan Garosa.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/ivanovic.jpg",
+        "opis": "Ana Ivanović"
+      },
       "rec": "ivanović"
     },
     {
@@ -203,6 +259,11 @@
         "Na tepihu"
       ],
       "zanimljivost": "Vimbldon je najstariji teniski turnir (od 1877). Igrači moraju nositi skoro potpuno belu opremu, a gledaoci tradicionalno jedu jagode sa šlagom. Rolan Garos se igra na šljaci.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/vimbldon.jpg",
+        "opis": "Teniski tereni Vimbldona – na travi se igra od 1877."
+      },
       "rec": "trava"
     },
     {
@@ -227,6 +288,13 @@
         "Hrvatska"
       ],
       "zanimljivost": "Finale protiv Francuske završeno je 3:3, a Argentina je pobedila na penale. Lionel Mesi je tako, u petom pokušaju, konačno osvojio titulu prvaka sveta.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "j-amerika",
+        "istakni": [
+          "ARG"
+        ]
+      },
       "rec": "argentina"
     },
     {
@@ -291,6 +359,11 @@
         "Aleksandra Perišić"
       ],
       "zanimljivost": "Milica Mandić je u Londonu osvojila prvo olimpijsko zlato za samostalnu Srbiju. Tekvondo je korejska borilačka veština – ime znači otprilike „put stopala i šake“.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/mandic.jpg",
+        "opis": "Milica Mandić"
+      },
       "rec": "mandić"
     },
     {
@@ -303,6 +376,11 @@
         "Bacanje kugle"
       ],
       "zanimljivost": "Ivana je 2022. u Beogradu postala svetska prvakinja u dvorani, skokom od 7,06 m. Osvojila je i olimpijsku bronzu u Riju 2016.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/spanovic.jpg",
+        "opis": "Ivana Španović"
+      },
       "rec": "skok"
     },
     {
@@ -315,6 +393,11 @@
         "12 petouglova i 12 šestouglova"
       ],
       "zanimljivost": "Taj oblik se u geometriji zove zarubljeni ikosaedar – nastaje kad se ikosaedru „odseku“ sva 12 temena. Isti oblik ima i molekul fulerena C₆₀, sastavljen od 60 atoma ugljenika!",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/lopta.jpg",
+        "opis": "Zarubljeni ikosaedar: 12 petouglova i 20 šestouglova"
+      },
       "rec": "lopta"
     },
     {
@@ -327,6 +410,11 @@
         "Belu"
       ],
       "zanimljivost": "Žuta boja je izabrana jer su novine koje su organizovale trku bile štampane na žutom papiru! Zelenu majicu nosi najbolji sprinter, a belu sa crvenim tačkama najbolji brdski vozač.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/zuta-majica.jpg",
+        "opis": "Žuta majica Tur de Fransa"
+      },
       "rec": "majica"
     },
     {
@@ -363,6 +451,11 @@
         "Pet"
       ],
       "zanimljivost": "Jokić je bio MVP 2021, 2022. i 2024. Godine 2023. je sa Denverom osvojio titulu i bio MVP finala. Poznat je po neverovatnim dodavanjima – on je centar koji igra kao plejmejker.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/jokic.jpg",
+        "opis": "Nikola Jokić"
+      },
       "rec": "jokić",
       "autor": "Aleksandar Tomic"
     },
@@ -400,6 +493,11 @@
         "U Tokiju"
       ],
       "zanimljivost": "Los Anđeles će biti domaćin treći put (posle 1932. i 1984). Brizbejn u Australiji dobio je Igre 2032.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/koloseum-la.jpg",
+        "opis": "Memorijalni koloseum u Los Anđelesu – domaćin igara 1932, 1984. i 2028."
+      },
       "rec": "olimpijada"
     },
     {
@@ -592,6 +690,10 @@
         "Kada golman izađe iz kaznenog prostora sa loptom u rukama tokom igre i nastavi da trči"
       ],
       "zanimljivost": "Ofsajd sprečava da napadači stalno „čekaju“ ispred protivničkog gola. To je pravilo koje i odrasli često pogrešno razumeju!",
+      "medijiOdgovora": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox=\"0 0 320 190\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"170\" fill=\"#3a9d4a\"/><line x1=\"300\" y1=\"0\" x2=\"300\" y2=\"170\" stroke=\"#fff\" stroke-width=\"2\"/><rect x=\"300\" y=\"60\" width=\"14\" height=\"50\" fill=\"none\" stroke=\"#fff\" stroke-width=\"3\"/><rect x=\"240\" y=\"35\" width=\"60\" height=\"100\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1.5\"/><line x1=\"205\" y1=\"0\" x2=\"205\" y2=\"170\" stroke=\"#ffeaa7\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><circle cx=\"292\" cy=\"85\" r=\"8\" fill=\"#2e86de\"/><text x=\"292\" y=\"72\" font-size=\"10\" text-anchor=\"middle\" fill=\"#fff\">golman</text><circle cx=\"205\" cy=\"120\" r=\"8\" fill=\"#2e86de\"/><text x=\"205\" y=\"142\" font-size=\"10\" text-anchor=\"middle\" fill=\"#fff\">odbrana</text><circle cx=\"235\" cy=\"60\" r=\"8\" fill=\"#e84118\"/><text x=\"235\" y=\"45\" font-size=\"10\" text-anchor=\"middle\" fill=\"#fff\">napadač</text><circle cx=\"90\" cy=\"100\" r=\"8\" fill=\"#e84118\"/><circle cx=\"102\" cy=\"100\" r=\"4\" fill=\"#fff\"/><line x1=\"106\" y1=\"97\" x2=\"222\" y2=\"63\" stroke=\"#fff\" stroke-width=\"1.5\" stroke-dasharray=\"3 3\"/><text x=\"160\" y=\"186\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\">Napadač je iza pretposlednjeg protivnika – ofsajd</text></svg>"
+      },
       "rec": "ofsajd"
     },
     {
@@ -616,6 +718,32 @@
         "Samo Vimbldon"
       ],
       "zanimljivost": "Grend slem turniri se igraju na tri podloge: tvrdoj (Australija i SAD), šljaci (Pariz) i travi (London).",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "svet",
+        "tacke": [
+          {
+            "lat": -37.81,
+            "lon": 144.96,
+            "oznaka": "Melburn"
+          },
+          {
+            "lat": 48.85,
+            "lon": 2.35,
+            "oznaka": "Pariz"
+          },
+          {
+            "lat": 51.43,
+            "lon": -0.21,
+            "oznaka": "London"
+          },
+          {
+            "lat": 40.75,
+            "lon": -73.85,
+            "oznaka": "Njujork"
+          }
+        ]
+      },
       "rec": "grend"
     },
     {
@@ -748,6 +876,11 @@
         "Ronaldo"
       ],
       "zanimljivost": "Pele je postigao preko 1.000 golova u karijeri. Prvo Svetsko prvenstvo je osvojio sa samo 17 godina, 1958.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/pele.jpg",
+        "opis": "Pele"
+      },
       "rec": "pele"
     },
     {
@@ -760,6 +893,11 @@
         "Zinedin Zidan"
       ],
       "zanimljivost": "Mesi je kao dete imao problem sa rastom, a Barselona je platila lečenje kada je imao 13 godina.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/mesi.jpg",
+        "opis": "Lionel Mesi"
+      },
       "rec": "mesi"
     },
     {
@@ -772,6 +910,11 @@
         "Medžik Džonson"
       ],
       "zanimljivost": "Džordan je u srednjoj školi bio isključen iz prvog tima. Kasnije je to opisivao kao motivaciju da postane najbolji.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/dzordan.jpg",
+        "opis": "Majkl Džordan"
+      },
       "rec": "džordan"
     },
     {
@@ -784,6 +927,11 @@
         "Nikola Jokić"
       ],
       "zanimljivost": "Divac je kasnije bio predsednik Olimpijskog komiteta Srbije. Bio je jedan od prvih evropskih centara koji su odlično dodavali – kao kasnije Jokić.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/divac.jpg",
+        "opis": "Vlade Divac"
+      },
       "rec": "divac"
     },
     {
@@ -796,6 +944,11 @@
         "Vasilije Micić"
       ],
       "zanimljivost": "Stojaković je dva puta pobedio na NBA takmičenju u šutiranju trojki. Sa Dalasom je 2011. osvojio NBA titulu.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/stojakovic.jpg",
+        "opis": "Peđa Stojaković"
+      },
       "rec": "stojaković"
     },
     {
@@ -808,6 +961,11 @@
         "Saša Đorđević"
       ],
       "zanimljivost": "Željko Obradović je prvake Evrope vodio sa Partizanom, Badalonom, Realom, Panatinaikosom (pet puta) i Fenerbahčeom. Prvu titulu, sa Partizanom 1992, osvojio je u prvoj trenerskoj sezoni!",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/obradovic.jpg",
+        "opis": "Željko Obradović"
+      },
       "rec": "obradović"
     },
     {
@@ -832,6 +990,11 @@
       ],
       "tezina": 3,
       "zanimljivost": "Čavić je do cilja doplivao prvi, ali je Felps jače udario u ploču i zaustavio vreme stotinku ranije. Snimci iz brze kamere potvrdili su rezultat – Čavić je osvojio srebro, a godinu dana kasnije postao svetski prvak na 50 m delfin.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/cavic.jpg",
+        "opis": "Milorad Čavić"
+      },
       "rec": "delfin"
     },
     {
@@ -856,6 +1019,11 @@
         "Skok udalj"
       ],
       "zanimljivost": "Dik Fozberi je ovim stilom 1968. osvojio olimpijsko zlato. Do tada su svi skakali licem ka letvici, a danas skoro svi skaču leđima.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/fozberi.jpg",
+        "opis": "Fozberi flop"
+      },
       "rec": "skok"
     },
     {
@@ -868,6 +1036,11 @@
       ],
       "tezina": 3,
       "zanimljivost": "Jelena Janković je 2008. igrala finale US opena. Grend slem je ipak osvojila – u mešovitim parovima na Vimbldonu 2007, sa Džejmijem Marejem.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/jankovic.jpg",
+        "opis": "Jelena Janković"
+      },
       "rec": "teniserka"
     },
     {
@@ -892,6 +1065,11 @@
         "2000."
       ],
       "zanimljivost": "To su bile jedine Zimske olimpijske igre u Jugoslaviji. Maskota je bila vučić Vučko.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/zetra.jpg",
+        "opis": "Olimpijska dvorana Zetra u Sarajevu"
+      },
       "rec": "sarajevo"
     },
     {
@@ -916,6 +1094,11 @@
         "Kombinacija"
       ],
       "zanimljivost": "Posle trčanja, kada srce brzo kuca, biatlonci moraju mirno da gađaju mete prečnika samo nekoliko centimetara.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/biatlon.jpg",
+        "opis": "Biatlon"
+      },
       "rec": "biatlon"
     },
     {
@@ -928,6 +1111,11 @@
         "Hokej"
       ],
       "zanimljivost": "Kriket se igra palicom i loptom, a utakmice mogu trajati i do pet dana! U Indiji je igra skoro religija.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/kriket.jpg",
+        "opis": "Kriket"
+      },
       "rec": "kriket"
     },
     {
@@ -964,6 +1152,11 @@
         "Maks Ferstapen"
       ],
       "zanimljivost": "Šumaher je 7 titula osvojio sa Benetonom i Ferarijem. Hamilton je izjednačio rekord 2020.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/sumaher.jpg",
+        "opis": "Mihael Šumaher"
+      },
       "rec": "šumaher"
     },
     {
@@ -988,6 +1181,11 @@
         "Italija"
       ],
       "zanimljivost": "Urugvaj je u finalu pobedio Argentinu 4:2. Pehar je kasnije nazvan „Žil Rime“, po tadašnjem predsedniku FIFA koji je pokrenuo prvenstvo.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/centenario.jpg",
+        "opis": "Stadion Sentenario u Montevideu, napravljen za prvo Svetsko prvenstvo"
+      },
       "rec": "urugvaj"
     },
     {
@@ -1012,6 +1210,11 @@
         "Dejan Savićević"
       ],
       "zanimljivost": "Džajić, „Magični Džaja“, bio je levo krilo Crvene zvezde. Jugoslavija je tada izgubila finale od Italije tek u ponovljenoj utakmici.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/dzajic.jpg",
+        "opis": "Dragan Džajić"
+      },
       "rec": "džajić"
     },
     {
@@ -1036,6 +1239,11 @@
         "Tijana Bošković"
       ],
       "zanimljivost": "Karate je na Olimpijskim igrama bio samo u Tokiju 2020. Jovana Preković je u finalu pobedila Kineskinju Jin Siaojan.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/prekovic.jpg",
+        "opis": "Jovana Preković"
+      },
       "rec": "preković"
     },
     {
@@ -1048,6 +1256,11 @@
         "Zorana Arunović"
       ],
       "zanimljivost": "Jasna Šekarić je jedna od najuspešnijih streljačica u istoriji – nastupala je na sedam Olimpijskih igara!",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/sekaric.jpg",
+        "opis": "Jasna Šekarić"
+      },
       "rec": "šekarić"
     },
     {
@@ -1072,6 +1285,11 @@
         "Bjern Borg"
       ],
       "zanimljivost": "Na šljaci Rolan Garosa Nadal je izgubio samo četiri meča u celoj karijeri – neverovatan rekord.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/nadal.jpg",
+        "opis": "Rafael Nadal"
+      },
       "rec": "nadal"
     },
     {
@@ -1108,6 +1326,11 @@
         "Abebe Bikila"
       ],
       "zanimljivost": "Spiridon Luis je bio nosač vode. Postao je nacionalni junak Grčke, a mnogi su mu nudili poklone – od odela do besplatnog brijanja doživotno.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/luis.jpg",
+        "opis": "Spiridon Luis"
+      },
       "rec": "maraton"
     },
     {
@@ -1120,6 +1343,11 @@
         "Elijud Kipčoge"
       ],
       "zanimljivost": "Bikila je trčao bos jer mu nijedne patike nisu odgovarale. Četiri godine kasnije je ponovo pobedio – u patikama.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/bikila.jpg",
+        "opis": "Abebe Bikila"
+      },
       "rec": "maraton"
     },
     {
@@ -1132,6 +1360,11 @@
         "Abebe Bikila"
       ],
       "zanimljivost": "Kipčoge je istrčao 1:59:40 u Beču, uz pomoć zečeva koji su se smenjivali. Zato rezultat nije zvanični svetski rekord.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/kipcoge.jpg",
+        "opis": "Elijud Kipčoge"
+      },
       "rec": "kipčoge"
     },
     {
@@ -1144,6 +1377,11 @@
         "Larisa Latinjina"
       ],
       "zanimljivost": "Komaneči je imala samo 14 godina. Semafor nije mogao da prikaže 10,00, pa je pokazao 1,00!",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/komaneci.jpg",
+        "opis": "Nadja Komaneči"
+      },
       "rec": "komaneči"
     },
     {
@@ -1156,6 +1394,11 @@
         "Aleksandra Rajsman"
       ],
       "zanimljivost": "Simon Bajls izvodi skokove koji su toliko teški da su nazvani po njoj – „Bajls“ elementi.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/bajls.jpg",
+        "opis": "Simon Bajls"
+      },
       "rec": "bajls"
     }
   ]

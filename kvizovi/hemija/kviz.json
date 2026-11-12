@@ -33,6 +33,10 @@
         "Vodonik (najlakši gas)"
       ],
       "zanimljivost": "Molekul CO₂ je potpuno prav (linearan): O=C=O. Zaleđen ugljen-dioksid zove se „suvi led“ – na −78 °C ne topi se u tečnost nego odmah prelazi u gas (sublimuje).",
+      "medijiOdgovora": {
+        "vrsta": "molekul",
+        "ime": "ugljen-dioksid"
+      },
       "rec": "ugljen"
     },
     {
@@ -111,6 +115,14 @@
         "Olovo"
       ],
       "zanimljivost": "Kiseonik čini oko 21% vazduha, ali čak oko 65% mase ljudskog tela – najviše zato što smo puni vode. Tečni kiseonik je svetloplav i privlači ga magnet!",
+      "medijiOdgovora": {
+        "vrsta": "atom",
+        "ljuske": [
+          2,
+          6
+        ],
+        "jezgro": "8+"
+      },
       "rec": "kiseonik"
     },
     {
@@ -123,6 +135,11 @@
         "Ag"
       ],
       "zanimljivost": "Au dolazi od latinske reči „aurum“ – „sjajna zora“. Ag je srebro (argentum). Sve zlato ikada iskopano stalo bi u kocku sa stranicom od samo oko 22 metra.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/zlato.jpg",
+        "opis": "Grumenje zlata"
+      },
       "rec": "zlato"
     },
     {
@@ -135,6 +152,11 @@
         "Ir"
       ],
       "zanimljivost": "Fe je od latinskog „ferrum“. Gvožđe u našoj krvi (u hemoglobinu) nosi kiseonik, i zato je krv crvena. Zemljino jezgro je uglavnom od gvožđa i nikla.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/gvozdje.jpg",
+        "opis": "Čisto gvožđe"
+      },
       "rec": "gvožđe"
     },
     {
@@ -147,6 +169,11 @@
         "Ugljenik"
       ],
       "zanimljivost": "K dolazi od latinskog naziva „kalium“. Kalijuma ima mnogo u bananama. Kalcijum je Ca, kripton Kr, a ugljenik C.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/kalijum.jpg",
+        "opis": "Kalijum je toliko mekan da se seče nožem; čuva se pod uljem"
+      },
       "rec": "kalijum"
     },
     {
@@ -284,6 +311,26 @@
         "80 °C"
       ],
       "zanimljivost": "Na vrhu Mont Everesta voda ključa već na oko 70 °C, jer je pritisak vazduha mnogo manji. Zato se tamo jaje teško skuva – a u ekspres-loncu, gde je pritisak veći, voda ključa na preko 110 °C i hrana se brže kuva.",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "termometar",
+        "skale": [
+          "C",
+          "F"
+        ],
+        "od": -20,
+        "do": 110,
+        "tacke": [
+          {
+            "c": 0,
+            "o": "~led se topi"
+          },
+          {
+            "c": 100,
+            "o": "~voda ključa"
+          }
+        ]
+      },
       "rec": "ključanje"
     },
     {
@@ -296,6 +343,10 @@
         "Zavisi od boje"
       ],
       "zanimljivost": "pH skala ide od 0 do 14. Limunov sok ima pH oko 2, želudačna kiselina čak oko 1–2, a sapun i varikina su bazni. Crveni kupus može da posluži kao indikator – menja boju od crvene do zelene!",
+      "medijiOdgovora": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\"><rect x=\"10\" y=\"40\" width=\"20\" height=\"34\" fill=\"#e8312a\"/><text x=\"20\" y=\"90\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\">0</text><rect x=\"30\" y=\"40\" width=\"20\" height=\"34\" fill=\"#ee5a24\"/><text x=\"40\" y=\"90\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\">1</text><rect x=\"50\" y=\"40\" width=\"20\" height=\"34\" fill=\"#f39c12\"/><text x=\"60\" y=\"90\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\">2</text><rect x=\"70\" y=\"40\" width=\"20\" height=\"34\" fill=\"#f6b93b\"/><text x=\"80\" y=\"90\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\">3</text><rect x=\"90\" y=\"40\" width=\"20\" height=\"34\" fill=\"#f9ca24\"/><text x=\"100\" y=\"90\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\">4</text><rect x=\"110\" y=\"40\" width=\"20\" height=\"34\" fill=\"#c4e538\"/><text x=\"120\" y=\"90\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\">5</text><rect x=\"130\" y=\"40\" width=\"20\" height=\"34\" fill=\"#6ab04c\"/><text x=\"140\" y=\"90\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\">6</text><rect x=\"150\" y=\"40\" width=\"20\" height=\"34\" fill=\"#22a6b3\"/><text x=\"160\" y=\"90\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\">7</text><rect x=\"170\" y=\"40\" width=\"20\" height=\"34\" fill=\"#2e86de\"/><text x=\"180\" y=\"90\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\">8</text><rect x=\"190\" y=\"40\" width=\"20\" height=\"34\" fill=\"#3867d6\"/><text x=\"200\" y=\"90\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\">9</text><rect x=\"210\" y=\"40\" width=\"20\" height=\"34\" fill=\"#4a3fc4\"/><text x=\"220\" y=\"90\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\">10</text><rect x=\"230\" y=\"40\" width=\"20\" height=\"34\" fill=\"#6c3fc4\"/><text x=\"240\" y=\"90\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\">11</text><rect x=\"250\" y=\"40\" width=\"20\" height=\"34\" fill=\"#8e44ad\"/><text x=\"260\" y=\"90\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\">12</text><rect x=\"270\" y=\"40\" width=\"20\" height=\"34\" fill=\"#7d3c98\"/><text x=\"280\" y=\"90\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\">13</text><rect x=\"290\" y=\"40\" width=\"20\" height=\"34\" fill=\"#5b2c6f\"/><text x=\"300\" y=\"90\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\">14</text><text x=\"20\" y=\"22\" font-size=\"18\">🍋</text><text x=\"10\" y=\"35\" font-size=\"9\" fill=\"currentColor\">želudačni sok, limun</text><text x=\"150\" y=\"22\" font-size=\"18\">💧</text><text x=\"160\" y=\"35\" font-size=\"9\" text-anchor=\"middle\" fill=\"currentColor\">čista voda</text><text x=\"240\" y=\"22\" font-size=\"18\">🧼</text><text x=\"250\" y=\"35\" font-size=\"9\" text-anchor=\"middle\" fill=\"currentColor\">sapun</text><text x=\"70\" y=\"115\" font-size=\"13\" text-anchor=\"middle\" fill=\"#e8312a\" font-weight=\"bold\">kiselo</text><text x=\"160\" y=\"115\" font-size=\"13\" text-anchor=\"middle\" fill=\"#6ab04c\" font-weight=\"bold\">neutralno</text><text x=\"255\" y=\"115\" font-size=\"13\" text-anchor=\"middle\" fill=\"#8e44ad\" font-weight=\"bold\">bazno</text><text x=\"160\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"currentColor\">pH skala: svaki korak je 10 puta jače</text></svg>"
+      },
       "rec": "neutralan"
     },
     {
@@ -308,6 +359,26 @@
         "Argon"
       ],
       "zanimljivost": "Vazduh je oko 78% azota i 21% kiseonika. Azot udišemo i izdišemo bez promene. Tečni azot (−196 °C) koristi se za pravljenje sladoleda za nekoliko sekundi!",
+      "medijiOdgovora": {
+        "vrsta": "biologija",
+        "scena": "stubici",
+        "naslov": "~sastav vazduha",
+        "jedinica": "%",
+        "stavke": [
+          {
+            "o": "~azot",
+            "v": 78
+          },
+          {
+            "o": "~kiseonik",
+            "v": 21
+          },
+          {
+            "o": "~argon i ostalo",
+            "v": 1
+          }
+        ]
+      },
       "rec": "azot"
     },
     {
@@ -320,6 +391,11 @@
         "Kalaj"
       ],
       "zanimljivost": "Živa (Hg, od grčkog „hydrargyrum“ – tečno srebro) se nekad stavljala u toplomere. Otrovna je, pa se danas koriste digitalni. Metal galijum se topi već na oko 30 °C – istopio bi ti se u ruci!",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/ziva.jpg",
+        "opis": "Živa – kapi tečnog metala"
+      },
       "rec": "živa"
     },
     {
@@ -332,6 +408,13 @@
         "Kiseonik"
       ],
       "zanimljivost": "Vodonik je i najzastupljeniji element u svemiru – oko tri četvrtine sve obične materije. Zvezde, pa i naše Sunce, svetle tako što spajaju vodonik u helijum.",
+      "medijiOdgovora": {
+        "vrsta": "atom",
+        "ljuske": [
+          1
+        ],
+        "jezgro": "1+"
+      },
       "rec": "vodonik"
     },
     {
@@ -344,6 +427,13 @@
         "Ugljen-monoksid"
       ],
       "zanimljivost": "Helijum je prvo otkriven na Suncu (1868, posmatranjem sunčeve svetlosti), pa je dobio ime po grčkom bogu Sunca Heliosu – tek kasnije su ga našli na Zemlji.",
+      "medijiOdgovora": {
+        "vrsta": "atom",
+        "ljuske": [
+          2
+        ],
+        "jezgro": "2+"
+      },
       "rec": "helijum"
     },
     {
@@ -421,6 +511,11 @@
         "Sublimacija"
       ],
       "zanimljivost": "Obrnuto, kada voda prelazi u led, to je očvršćavanje. Neobično je što se voda pri zamrzavanju širi za oko 9% – zato zimi pucaju cevi i flaše u zamrzivaču.",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "cestice",
+        "tip": "zagrevanje"
+      },
       "rec": "topljenje"
     },
     {
@@ -433,6 +528,11 @@
         "Destilacija"
       ],
       "zanimljivost": "Oblaci su takođe nastali kondenzacijom – vodena para se u hladnijem vazduhu skuplja u sitne kapljice oko čestica prašine. Jedan prosečan oblak može da bude težak kao stotine slonova!",
+      "medijiOdgovora": {
+        "vrsta": "biologija",
+        "scena": "kruzenje",
+        "tip": "voda"
+      },
       "rec": "para"
     },
     {
@@ -445,6 +545,11 @@
         "150"
       ],
       "zanimljivost": "Poslednja četiri elementa (nihonijum, moskovijum, tenesin i oganeson) zvanično su imenovana 2016. Elementi posle uranijuma (92) uglavnom su napravljeni veštački u laboratorijama.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/periodni-sistem.png",
+        "opis": "Periodni sistem elemenata"
+      },
       "rec": "element"
     },
     {
@@ -481,6 +586,11 @@
         "So"
       ],
       "zanimljivost": "Rđa je gvožđe-oksid – gvožđe se polako sjedinjuje sa kiseonikom uz pomoć vode. Kip slobode je od bakra; pozelenio je od bakarne patine, koja ga zapravo štiti.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/rdja.jpg",
+        "opis": "Rđa – gvožđe oksidovano kiseonikom uz vlagu"
+      },
       "rec": "rđa"
     },
     {
@@ -493,6 +603,10 @@
         "6"
       ],
       "zanimljivost": "6 ugljenika + 12 vodonika + 6 kiseonika = 24 atoma. Glukozu biljke prave fotosintezom, a naš mozak je njen najveći „potrošač“ – troši je oko 120 grama dnevno.",
+      "medijiOdgovora": {
+        "vrsta": "molekul",
+        "ime": "glukoza"
+      },
       "rec": "glukoza"
     },
     {
@@ -505,6 +619,10 @@
         "Hlor"
       ],
       "zanimljivost": "Isti gas pravi mehuriće u gaziranim sokovima i čini da testo naraste. Ovom reakcijom pravi se i čuveni školski „vulkan“.",
+      "medijiOdgovora": {
+        "vrsta": "molekul",
+        "ime": "ugljen-dioksid"
+      },
       "rec": "ugljen"
     },
     {
@@ -517,6 +635,10 @@
         "Granit"
       ],
       "zanimljivost": "Na Mosovoj skali tvrdoće dijamant ima 10, a talk (od koga je puder) samo 1. Iako je najtvrđi, dijamant može da se razbije čekićem – tvrdoća nije isto što i otpornost na udarac.",
+      "medijiOdgovora": {
+        "vrsta": "molekul",
+        "ime": "dijamant"
+      },
       "rec": "dijamant"
     },
     {
@@ -529,6 +651,15 @@
         "Nikl (metal)"
       ],
       "zanimljivost": "Na dolazi od latinskog „natrium“. Azot je N, neon Ne, a nikl Ni. Uličnu rasvetu narandžaste boje daju baš natrijumove lampe.",
+      "medijiOdgovora": {
+        "vrsta": "atom",
+        "ljuske": [
+          2,
+          8,
+          1
+        ],
+        "jezgro": "11+"
+      },
       "rec": "natrijum"
     },
     {
@@ -541,6 +672,10 @@
         "CaCO₃"
       ],
       "zanimljivost": "CaCO₃ je kreda (i krečnjak i ljuske jaja), NaOH je kaustična soda kojom se otpušavaju cevi, a KCl se koristi kao „so bez natrijuma“.",
+      "medijiOdgovora": {
+        "vrsta": "molekul",
+        "ime": "so"
+      },
       "rec": "natrijum"
     },
     {
@@ -569,6 +704,14 @@
         "Jezgro"
       ],
       "zanimljivost": "Atom je uglavnom prazan prostor! Kada bi jezgro bilo veliko kao zrno graška na sredini fudbalskog stadiona, elektroni bi kružili oko tribina.",
+      "medijiOdgovora": {
+        "vrsta": "atom",
+        "ljuske": [
+          2,
+          4
+        ],
+        "jezgro": "6+"
+      },
       "rec": "elektron"
     },
     {
@@ -581,6 +724,10 @@
         "O"
       ],
       "zanimljivost": "H dolazi od latinskog „hydrogenium“ – „onaj koji stvara vodu“. Vodonik je prvi element periodnog sistema.",
+      "medijiOdgovora": {
+        "vrsta": "molekul",
+        "ime": "vodonik"
+      },
       "rec": "vodonik"
     },
     {
@@ -593,6 +740,14 @@
         "Co"
       ],
       "zanimljivost": "C dolazi od latinske reči „carbo“ – ugalj. Ca je kalcijum, a Co kobalt.",
+      "medijiOdgovora": {
+        "vrsta": "atom",
+        "ljuske": [
+          2,
+          4
+        ],
+        "jezgro": "6+"
+      },
       "rec": "ugljenik"
     },
     {
@@ -605,6 +760,11 @@
         "Si"
       ],
       "zanimljivost": "Ag je od latinskog „argentum“. Država Argentina je dobila ime po srebru, jer su Španci verovali da tamo ima mnogo srebra.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/srebro.jpg",
+        "opis": "Kristali srebra"
+      },
       "rec": "srebro"
     },
     {
@@ -617,6 +777,10 @@
         "OH"
       ],
       "zanimljivost": "Dva atoma vodonika i jedan kiseonika. H₂O₂ je vodonik-peroksid, sasvim druga supstanca – zato je važno pažljivo pisati formule!",
+      "medijiOdgovora": {
+        "vrsta": "molekul",
+        "ime": "voda"
+      },
       "rec": "voda"
     },
     {
@@ -629,6 +793,10 @@
         "Plazma"
       ],
       "zanimljivost": "Kiseonik postaje tečan tek na −183 °C. Tečni kiseonik je svetloplav.",
+      "medijiOdgovora": {
+        "vrsta": "molekul",
+        "ime": "kiseonik"
+      },
       "rec": "kiseonik"
     },
     {
@@ -653,6 +821,11 @@
         "Samo ugljen-dioksid koji se lagano diže uvis"
       ],
       "zanimljivost": "To je „trougao gorenja“. Vatra se gasi uklanjanjem bar jednog – na primer, prekrivanjem ćebetom (bez kiseonika) ili vodom (hlađenje).",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/trougao-gorenja.png",
+        "opis": "Trougao gorenja: gorivo, kiseonik i toplota"
+      },
       "rec": "gorivo"
     },
     {
@@ -665,6 +838,11 @@
         "Aluminijum"
       ],
       "zanimljivost": "Bronza je legura – mešavina metala. Bila je toliko važna da je po njoj nazvano celo jedno doba ljudske istorije – bronzano doba.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/bronza.jpg",
+        "opis": "Glava bika od bronze, stara oko 4.500 godina"
+      },
       "rec": "bakar"
     },
     {
@@ -677,6 +855,11 @@
         "Azot"
       ],
       "zanimljivost": "Neon svetli kada kroz njega prođe struja. Druge boje reklama daju drugi gasovi ili obojena stakla, ali ih sve zovemo „neonkama“.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/neon.jpg",
+        "opis": "Neon u staklenoj cevi svetli crvenonarandžasto"
+      },
       "rec": "neon"
     },
     {
@@ -701,6 +884,11 @@
         "Zamrzavanjem"
       ],
       "zanimljivost": "U solanama se morska voda pusti u plitke bazene, sunce i vetar ispare vodu, a ostaje so. Tako se so dobija već hiljadama godina.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/solana.jpg",
+        "opis": "Solana – morska voda isparava na suncu, a so ostaje"
+      },
       "rec": "isparavanje"
     },
     {
@@ -713,6 +901,11 @@
         "Destilacijom šećera"
       ],
       "zanimljivost": "Filter-papir propušta vodu, a zadržava zrnca peska. Isto rade i filteri za kafu.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/filtriranje.png",
+        "opis": "Filtriranje"
+      },
       "rec": "filter"
     },
     {
@@ -725,6 +918,11 @@
         "Zlato"
       ],
       "zanimljivost": "Od metala, magnet privlači gvožđe, nikl i kobalt. Zato se magnetom mogu razdvojiti gvozdeni opiljci od peska.",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "magnet",
+        "tip": "sipka"
+      },
       "rec": "gvožđe"
     },
     {
@@ -749,6 +947,10 @@
         "Azotna (iz đubriva)"
       ],
       "zanimljivost": "Želudačna kiselina ubija bakterije iz hrane i pomaže varenje belančevina. Zidove želuca štiti sloj sluzi.",
+      "medijiOdgovora": {
+        "vrsta": "molekul",
+        "ime": "hlorovodonik"
+      },
       "rec": "želudac"
     },
     {
@@ -761,6 +963,14 @@
         "1"
       ],
       "zanimljivost": "Redni broj je broj protona u jezgru. Kiseonik je treći najzastupljeniji element u svemiru, posle vodonika i helijuma.",
+      "medijiOdgovora": {
+        "vrsta": "atom",
+        "ljuske": [
+          2,
+          6
+        ],
+        "jezgro": "8+"
+      },
       "rec": "kiseonik"
     },
     {
@@ -773,6 +983,14 @@
         "8"
       ],
       "zanimljivost": "Neutralan atom ima isto elektrona koliko i protona. Ugljenik ima po dva elektrona u prvoj i četiri u drugoj ljusci.",
+      "medijiOdgovora": {
+        "vrsta": "atom",
+        "ljuske": [
+          2,
+          4
+        ],
+        "jezgro": "6+"
+      },
       "rec": "ugljenik"
     },
     {
@@ -833,6 +1051,11 @@
         "Lantanoidi"
       ],
       "zanimljivost": "Helijum, neon, argon, kripton, ksenon i radon skoro uopšte ne reaguju sa drugim elementima – „plemeniti“ su jer se „ne mešaju sa drugima“.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/plemeniti-gasovi.jpg",
+        "opis": "Plemeniti gasovi svetle u cevima kroz koje prolazi struja"
+      },
       "rec": "helijum"
     },
     {
@@ -845,6 +1068,11 @@
         "Plemeniti metali"
       ],
       "zanimljivost": "Što je alkalni metal niže u grupi, to burnije reaguje. Cezijum u dodiru sa vodom eksplodira!",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/alkalni-metali.jpg",
+        "opis": "Alkalni metal burno reaguje sa vodom"
+      },
       "rec": "alkalni"
     },
     {
@@ -857,6 +1085,11 @@
         "Zemnoalkalnim metalima"
       ],
       "zanimljivost": "„Halogen“ znači „onaj koji stvara so“. Brom je jedan od samo dva elementa koja su tečna na sobnoj temperaturi (drugi je živa).",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/halogeni.jpg",
+        "opis": "Halogeni elementi burno reaguju i grade soli – otuda ime („solotvorci“)"
+      },
       "rec": "halogen"
     },
     {
@@ -869,6 +1102,11 @@
         "Kalcijum"
       ],
       "zanimljivost": "Jodirana so se u Srbiji koristi decenijama. Nedostatak joda izaziva gušavost – uvećanje štitne žlezde.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/jod.jpg",
+        "opis": "Kristali joda – zagrevanjem odmah prelaze u ljubičastu paru"
+      },
       "rec": "jod"
     },
     {
@@ -893,6 +1131,10 @@
         "Slaba baza"
       ],
       "zanimljivost": "Što je pH manji, kiselina je jača. Limun ima oko 2, kafa oko 5, a sapun oko 9–10.",
+      "medijiOdgovora": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\"><rect x=\"10\" y=\"40\" width=\"20\" height=\"34\" fill=\"#e8312a\"/><text x=\"20\" y=\"90\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\">0</text><rect x=\"30\" y=\"40\" width=\"20\" height=\"34\" fill=\"#ee5a24\"/><text x=\"40\" y=\"90\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\">1</text><rect x=\"50\" y=\"40\" width=\"20\" height=\"34\" fill=\"#f39c12\"/><text x=\"60\" y=\"90\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\">2</text><rect x=\"70\" y=\"40\" width=\"20\" height=\"34\" fill=\"#f6b93b\"/><text x=\"80\" y=\"90\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\">3</text><rect x=\"90\" y=\"40\" width=\"20\" height=\"34\" fill=\"#f9ca24\"/><text x=\"100\" y=\"90\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\">4</text><rect x=\"110\" y=\"40\" width=\"20\" height=\"34\" fill=\"#c4e538\"/><text x=\"120\" y=\"90\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\">5</text><rect x=\"130\" y=\"40\" width=\"20\" height=\"34\" fill=\"#6ab04c\"/><text x=\"140\" y=\"90\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\">6</text><rect x=\"150\" y=\"40\" width=\"20\" height=\"34\" fill=\"#22a6b3\"/><text x=\"160\" y=\"90\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\">7</text><rect x=\"170\" y=\"40\" width=\"20\" height=\"34\" fill=\"#2e86de\"/><text x=\"180\" y=\"90\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\">8</text><rect x=\"190\" y=\"40\" width=\"20\" height=\"34\" fill=\"#3867d6\"/><text x=\"200\" y=\"90\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\">9</text><rect x=\"210\" y=\"40\" width=\"20\" height=\"34\" fill=\"#4a3fc4\"/><text x=\"220\" y=\"90\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\">10</text><rect x=\"230\" y=\"40\" width=\"20\" height=\"34\" fill=\"#6c3fc4\"/><text x=\"240\" y=\"90\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\">11</text><rect x=\"250\" y=\"40\" width=\"20\" height=\"34\" fill=\"#8e44ad\"/><text x=\"260\" y=\"90\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\">12</text><rect x=\"270\" y=\"40\" width=\"20\" height=\"34\" fill=\"#7d3c98\"/><text x=\"280\" y=\"90\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\">13</text><rect x=\"290\" y=\"40\" width=\"20\" height=\"34\" fill=\"#5b2c6f\"/><text x=\"300\" y=\"90\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\">14</text><text x=\"20\" y=\"22\" font-size=\"18\">🍋</text><text x=\"10\" y=\"35\" font-size=\"9\" fill=\"currentColor\">želudačni sok, limun</text><text x=\"150\" y=\"22\" font-size=\"18\">💧</text><text x=\"160\" y=\"35\" font-size=\"9\" text-anchor=\"middle\" fill=\"currentColor\">čista voda</text><text x=\"240\" y=\"22\" font-size=\"18\">🧼</text><text x=\"250\" y=\"35\" font-size=\"9\" text-anchor=\"middle\" fill=\"currentColor\">sapun</text><text x=\"70\" y=\"115\" font-size=\"13\" text-anchor=\"middle\" fill=\"#e8312a\" font-weight=\"bold\">kiselo</text><text x=\"160\" y=\"115\" font-size=\"13\" text-anchor=\"middle\" fill=\"#6ab04c\" font-weight=\"bold\">neutralno</text><text x=\"255\" y=\"115\" font-size=\"13\" text-anchor=\"middle\" fill=\"#8e44ad\" font-weight=\"bold\">bazno</text><text x=\"160\" y=\"140\" font-size=\"10\" text-anchor=\"middle\" fill=\"currentColor\">pH skala: svaki korak je 10 puta jače</text></svg>"
+      },
       "rec": "kiselina"
     },
     {
@@ -917,6 +1159,11 @@
         "Hlorofil"
       ],
       "zanimljivost": "Lakmus se dobija iz lišajeva. Fenolftalein je bezbojan u kiselini, a u bazi postaje ljubičastoružičast.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/lakmus.jpg",
+        "opis": "Lakmus – boja koja se dobija iz lišajeva"
+      },
       "rec": "lakmus"
     },
     {
@@ -941,6 +1188,11 @@
         "Miriše na jaja"
       ],
       "zanimljivost": "Ugljen-dioksid sa krečnom vodom gradi kalcijum-karbonat (isto što i kreda), koji se ne rastvara u vodi, pa voda postane mutna. Duni slamčicom u krečnu vodu – zamutiće se!",
+      "medijiOdgovora": {
+        "vrsta": "biologija",
+        "scena": "ogled",
+        "tip": "krecna-voda"
+      },
       "rec": "kreč"
     },
     {
@@ -965,6 +1217,11 @@
         "Zamrzavanje vode u frižideru da bi se iz nje izdvojile sve rastvorene soli"
       ],
       "zanimljivost": "Destilovana voda se koristi u peglama i laboratorijama jer nema rastvorenih minerala. Destilacijom se razdvajaju i sastojci nafte.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/destilacija.png",
+        "opis": "Aparatura za destilaciju"
+      },
       "rec": "destilacija"
     },
     {
@@ -977,6 +1234,11 @@
         "Vrsta mikroskopa"
       ],
       "zanimljivost": "Ogled: nacrtaj flomasterom tačku na papiru i umoči kraj u vodu – videćeš da se crna boja razdvaja na više boja!",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/hromatografija.png",
+        "opis": "Hromatografija na papiru"
+      },
       "rec": "papir"
     },
     {
@@ -989,6 +1251,11 @@
         "Magnezijum"
       ],
       "zanimljivost": "Kod hobotnice i nekih rakova krv sadrži bakar umesto gvožđa – pa je plava!",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/hemoglobin.jpg",
+        "opis": "Molekul hemoglobina – četiri lanca, svaki sa po jednim atomom gvožđa"
+      },
       "rec": "gvožđe"
     },
     {
@@ -1001,6 +1268,11 @@
         "Kalcijum"
       ],
       "zanimljivost": "Molekuli hlorofila i hemoglobina su građeni vrlo slično, ali hlorofil u centru ima magnezijum, a hemoglobin gvožđe.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/hlorofil.jpg",
+        "opis": "Hlorofil boji listove u zeleno; u sredini njegovog molekula je atom magnezijuma"
+      },
       "rec": "magnezijum"
     },
     {
@@ -1025,6 +1297,11 @@
         "Legura zlata i srebra"
       ],
       "zanimljivost": "Mesing je žut i sjajan, pa liči na zlato. Od njega se prave kvake, muzički instrumenti (truba, saksofon) i ukrasi.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/mesing.jpg",
+        "opis": "Astrolab od mesinga"
+      },
       "rec": "mesing"
     },
     {
@@ -1037,6 +1314,11 @@
         "Živa"
       ],
       "zanimljivost": "Litijum je toliko lak da pluta na vodi (ali sa njom reaguje). Litijum-jonske baterije su u telefonima, laptopovima i električnim automobilima.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/litijum.jpg",
+        "opis": "Litijum – toliko je lak da pluta i na ulju"
+      },
       "rec": "litijum"
     },
     {
@@ -1049,6 +1331,11 @@
         "Bakar (crveni metal)"
       ],
       "zanimljivost": "U 19. veku aluminijum je bio skuplji od zlata, jer se teško dobijao. Napoleon III je za najvažnije goste imao aluminijumski pribor za jelo!",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/aluminijum.jpg",
+        "opis": "Aluminijum"
+      },
       "rec": "aluminijum"
     },
     {
@@ -1061,6 +1348,11 @@
         "Magnetno je, pa se nakit od zlata lako kači i drži na koži"
       ],
       "zanimljivost": "Zlato je toliko kovno da se od jednog grama može izvući žica duga kilometrima ili napraviti listić tanji od papira.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/tutankamon.jpg",
+        "opis": "Zlatna maska Tutankamona – posle 3.300 godina sjaji kao nova"
+      },
       "rec": "zlato"
     },
     {
@@ -1073,6 +1365,10 @@
         "Najniži sloj atmosfere u kome živimo i u kome nastaju oblaci"
       ],
       "zanimljivost": "Ozonska rupa iznad Antarktika nastala je zbog freona iz sprejeva i frižidera. Posle zabrane freona 1987. ona se polako smanjuje.",
+      "medijiOdgovora": {
+        "vrsta": "molekul",
+        "ime": "ozon"
+      },
       "rec": "ozon"
     },
     {
@@ -1085,6 +1381,11 @@
         "Helijum (plemeniti gas)"
       ],
       "zanimljivost": "Ugljen-dioksid zadržava toplotu kao staklo u stakleniku. Bez prirodnog efekta staklene bašte Zemlja bi bila hladna oko −18 °C, ali previše tih gasova izaziva globalno zagrevanje.",
+      "medijiOdgovora": {
+        "vrsta": "biologija",
+        "scena": "staklena",
+        "pojacan": true
+      },
       "rec": "ugljen"
     },
     {
@@ -1097,6 +1398,30 @@
         "Azot"
       ],
       "zanimljivost": "CO se vezuje za hemoglobin mnogo jače od kiseonika i sprečava prenos kiseonika. Zato postoje detektori ugljen-monoksida, a peći se moraju redovno čistiti.",
+      "medijiOdgovora": {
+        "vrsta": "molekul",
+        "atomi": [
+          [
+            "C",
+            -0.56,
+            0,
+            0
+          ],
+          [
+            "O",
+            0.57,
+            0,
+            0
+          ]
+        ],
+        "veze": [
+          [
+            0,
+            1,
+            3
+          ]
+        ]
+      },
       "rec": "ugljen"
     },
     {
@@ -1109,6 +1434,11 @@
         "Proizvod gorenja"
       ],
       "zanimljivost": "U automobilima katalizator pretvara otrovne izduvne gasove u manje štetne. U našem telu katalizatori su enzimi.",
+      "medijiOdgovora": {
+        "vrsta": "biologija",
+        "scena": "enzim",
+        "tip": "energija"
+      },
       "rec": "katalizator"
     },
     {
@@ -1121,6 +1451,14 @@
         "Gvožđe"
       ],
       "zanimljivost": "Organska hemija proučava jedinjenja ugljenika – ima ih preko 10 miliona. Dugo se mislilo da ih mogu stvarati samo živa bića.",
+      "medijiOdgovora": {
+        "vrsta": "atom",
+        "ljuske": [
+          2,
+          4
+        ],
+        "jezgro": "6+"
+      },
       "rec": "ugljenik"
     },
     {
@@ -1133,6 +1471,11 @@
         "Robert Bojl"
       ],
       "zanimljivost": "Velerov ogled je srušio ideju da organske supstance stvara samo „životna sila“. Urea se danas proizvodi u ogromnim količinama kao veštačko đubrivo.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/veler.jpg",
+        "opis": "Fridrih Veler"
+      },
       "rec": "veler"
     },
     {
@@ -1169,6 +1512,11 @@
         "Gvožđe-oksida"
       ],
       "zanimljivost": "Ako jaje potopiš u sirće, ljuska se rastvori i izlaze mehurići ugljen-dioksida. Ostane samo jaje u opni!",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/kreda.jpg",
+        "opis": "Bele stene Dovera – kreda od ljušturica sićušnih morskih organizama"
+      },
       "rec": "kalcijum"
     },
     {
@@ -1181,6 +1529,11 @@
         "Gvožđe"
       ],
       "zanimljivost": "Staklo se pravi topljenjem peska sa sodom i krečnjakom na oko 1.500 °C. Prvo staklo pravili su verovatno u Mesopotamiji pre oko 4.500 godina.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/kvarc.jpg",
+        "opis": "Kristali kvarca (silicijum-dioksid)"
+      },
       "rec": "pesak"
     },
     {
@@ -1193,6 +1546,10 @@
         "Torijum"
       ],
       "zanimljivost": "Uranijum je otkriven 1789, nekoliko godina posle otkrića planete Uran. Neptunijum i plutonijum su kasnije nazvani po narednim „planetama“.",
+      "medijiOdgovora": {
+        "vrsta": "planeta",
+        "ime": "uran"
+      },
       "rec": "uranijum"
     },
     {
@@ -1205,6 +1562,11 @@
         "Nobelijum"
       ],
       "zanimljivost": "Mendeljevijum ima redni broj 101. Elementi su nazvani i po Ajnštajnu (99), Kirijevima (96) i Nobelu (102).",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/mendeljejev.jpg",
+        "opis": "Dmitrij Mendeljejev"
+      },
       "rec": "element"
     },
     {
@@ -1217,6 +1579,11 @@
         "Itrijum"
       ],
       "zanimljivost": "W dolazi od nemačkog „Wolfram“. Volfram ima najvišu tačku topljenja od svih metala (oko 3.400 °C), pa se od njega prave niti u sijalicama.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/sijalica.jpg",
+        "opis": "Volframovo vlakno u sijalici – topi se tek na 3.422 °C"
+      },
       "rec": "volfram"
     },
     {
@@ -1229,6 +1596,11 @@
         "O"
       ],
       "zanimljivost": "Pb je od latinskog „plumbum“. Odatle i engleska reč „plumber“ (vodoinstalater), jer su Rimljani pravili vodovodne cevi od olova – što je bilo štetno po zdravlje.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/olovo.jpg",
+        "opis": "Olovo"
+      },
       "rec": "olovo"
     },
     {
@@ -1241,6 +1613,11 @@
         "Ag"
       ],
       "zanimljivost": "Hg je od grčko-latinskog „hydrargyrum“ – tečno srebro. U astrologiji i alhemiji živa je povezivana sa bogom Merkurom, pa se na engleskom zove „mercury“.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/ziva.jpg",
+        "opis": "Živa"
+      },
       "rec": "živa"
     },
     {
@@ -1253,6 +1630,10 @@
         "6"
       ],
       "zanimljivost": "Metan je najjednostavniji ugljovodonik. Propan (C₃H₈) i butan (C₄H₁₀) su gasovi u bocama za kampovanje i upaljačima.",
+      "medijiOdgovora": {
+        "vrsta": "molekul",
+        "ime": "metan"
+      },
       "rec": "metan"
     },
     {
@@ -1289,6 +1670,11 @@
         "Šećer (od trske)"
       ],
       "zanimljivost": "Egipćani su za balzamovanje koristili so natron, smole i ponekad bitumen. Persijska reč „mumija“ zapravo je značila bitumen!",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/bitumen.jpg",
+        "opis": "Prirodni bitumen"
+      },
       "rec": "asfalt"
     },
     {
@@ -1301,6 +1687,11 @@
         "Aluminijum"
       ],
       "zanimljivost": "Srebro je najbolji provodnik, ali je skupo, pa se za žice koristi bakar, koji je odmah iza njega.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/srebro.jpg",
+        "opis": "Srebro"
+      },
       "rec": "srebro"
     },
     {
@@ -1313,6 +1704,11 @@
         "Vrsta tvrde plastike za igračke"
       ],
       "zanimljivost": "Zubne plombe „srebrne“ boje su amalgam žive, srebra, kalaja i bakra. Danas se sve češće koriste bele, kompozitne plombe.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/amalgam.jpg",
+        "opis": "Amalgamska plomba u zubu"
+      },
       "rec": "amalgam"
     },
     {
@@ -1325,6 +1721,39 @@
         "Hlor"
       ],
       "zanimljivost": "Vodonik-sulfid je u većim količinama otrovan. Ljudski nos ga oseti i kada ga ima samo nekoliko molekula na milijardu molekula vazduha!",
+      "medijiOdgovora": {
+        "vrsta": "molekul",
+        "atomi": [
+          [
+            "S",
+            0,
+            0,
+            0
+          ],
+          [
+            "H",
+            0.96,
+            -0.93,
+            0
+          ],
+          [
+            "H",
+            -0.96,
+            -0.93,
+            0
+          ]
+        ],
+        "veze": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ]
+        ]
+      },
       "rec": "sumpor"
     },
     {
@@ -1361,6 +1790,11 @@
         "Teflon"
       ],
       "zanimljivost": "Celuloza je najzastupljenije organsko jedinjenje na Zemlji. Ljudi je ne mogu svariti, ali preživari mogu – uz pomoć bakterija u želucu.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/pamuk.jpg",
+        "opis": "Pamuk – gotovo čista celuloza"
+      },
       "rec": "celuloza"
     },
     {
@@ -1385,6 +1819,10 @@
         "Iz kamenog uglja topljenjem"
       ],
       "zanimljivost": "Nafta se zagreva u visokim kolonama, a njeni sastojci se razdvajaju po temperaturi ključanja: gasovi, benzin, kerozin, dizel, mazut, asfalt.",
+      "medijiOdgovora": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox=\"0 0 320 230\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\"><defs><linearGradient id=\"tg\" x1=\"0\" y1=\"1\" x2=\"0\" y2=\"0\"><stop offset=\"0\" stop-color=\"#e84118\"/><stop offset=\"1\" stop-color=\"#2e86de\"/></linearGradient></defs><rect x=\"40\" y=\"10\" width=\"60\" height=\"200\" rx=\"8\" fill=\"url(#tg)\" opacity=\"0.85\"/><text x=\"70\" y=\"226\" font-size=\"11\" text-anchor=\"middle\" fill=\"currentColor\">🔥 nafta</text><line x1=\"100\" y1=\"25\" x2=\"130\" y2=\"25\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"136\" y=\"29\" font-size=\"12\" fill=\"currentColor\">gas (propan, butan)</text><text x=\"70\" y=\"29\" font-size=\"10\" text-anchor=\"middle\" fill=\"#fff\">20 °C</text><line x1=\"100\" y1=\"60\" x2=\"130\" y2=\"60\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"136\" y=\"64\" font-size=\"12\" fill=\"currentColor\">benzin</text><text x=\"70\" y=\"64\" font-size=\"10\" text-anchor=\"middle\" fill=\"#fff\">70 °C</text><line x1=\"100\" y1=\"95\" x2=\"130\" y2=\"95\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"136\" y=\"99\" font-size=\"12\" fill=\"currentColor\">kerozin (avionsko gorivo)</text><text x=\"70\" y=\"99\" font-size=\"10\" text-anchor=\"middle\" fill=\"#fff\">170 °C</text><line x1=\"100\" y1=\"130\" x2=\"130\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"136\" y=\"134\" font-size=\"12\" fill=\"currentColor\">dizel</text><text x=\"70\" y=\"134\" font-size=\"10\" text-anchor=\"middle\" fill=\"#fff\">270 °C</text><line x1=\"100\" y1=\"165\" x2=\"130\" y2=\"165\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"136\" y=\"169\" font-size=\"12\" fill=\"currentColor\">mazut, ulja</text><text x=\"70\" y=\"169\" font-size=\"10\" text-anchor=\"middle\" fill=\"#fff\">350 °C</text><line x1=\"100\" y1=\"200\" x2=\"130\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"136\" y=\"204\" font-size=\"12\" fill=\"currentColor\">asfalt (bitumen)</text><text x=\"70\" y=\"204\" font-size=\"10\" text-anchor=\"middle\" fill=\"#fff\">400 °C</text></svg>"
+      },
       "rec": "benzin"
     },
     {
@@ -1397,6 +1835,11 @@
         "Živa"
       ],
       "zanimljivost": "Zlato ima 79 protona. Ogromne količine zlata u svemiru nastale su, prema nauci, pri sudarima neutronskih zvezda.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/zlato.jpg",
+        "opis": "Zlato"
+      },
       "rec": "zlato"
     },
     {
@@ -1409,6 +1852,11 @@
       ],
       "tezina": 3,
       "zanimljivost": "Argon čini skoro 1% vazduha – više od ugljen-dioksida. Ime mu na grčkom znači „lenj“, jer skoro ni sa čim ne reaguje. U kiseoniku bi se užareno vlakno odmah zapalilo.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/sijalica.jpg",
+        "opis": "Sijalica sa užarenim vlaknom"
+      },
       "rec": "argon"
     },
     {
@@ -1433,6 +1881,13 @@
         "Neutralizacija"
       ],
       "zanimljivost": "Vrenjem nastaju hleb, jogurt, kiseli kupus i sir. Luj Paster je dokazao da vrenje izazivaju živi mikroorganizmi.",
+      "medijiOdgovora": {
+        "vrsta": "biologija",
+        "scena": "deoba",
+        "tip": "kvasac",
+        "koraci": 3,
+        "o": "~pupljenje kvasca"
+      },
       "rec": "vrenje"
     },
     {
@@ -1445,6 +1900,11 @@
         "Zato što se brzo suši, pa voda isparava iz isečene površine"
       ],
       "zanimljivost": "Enzimi jabuke, u dodiru sa kiseonikom, stvaraju braon materije. Ako je pokapaš limunovim sokom, sporije će tamneti – vitamin C usporava tu reakciju.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/jabuka.jpg",
+        "opis": "Isečena jabuka potamni za nekoliko minuta"
+      },
       "rec": "jabuka"
     },
     {
@@ -1457,6 +1917,11 @@
         "Plavom"
       ],
       "zanimljivost": "Natrijum boji plamen žuto, bakar zeleno-plavo, kalijum ljubičasto, a stroncijum crveno. Tako nastaju boje vatrometa!",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/plamen.jpg",
+        "opis": "Plamena proba – po boji plamena prepoznaje se metal"
+      },
       "rec": "plamen"
     },
     {
@@ -1497,6 +1962,11 @@
         "Tone i ostaje ceo"
       ],
       "zanimljivost": "U toploj vodi šećer se brže rastvara jer se molekuli brže kreću. U litru vode na sobnoj temperaturi može da se rastvori oko 2 kg šećera!",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "cestice",
+        "tip": "difuzija"
+      },
       "rec": "šećer"
     }
   ]

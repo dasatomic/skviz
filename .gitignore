@@ -15,3 +15,6 @@ podaci/odigrana-pitanja.json
 podaci/telemetrija.db*
 # privremene datoteke bezbednog upisa (lib/upis.js)
 podaci/*.tmp
+
+# Python keš (alati/manim)
+__pycache__/
