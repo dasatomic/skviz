@@ -398,6 +398,7 @@ body.ekran .mini { width: 44px; height: 44px; font-size: 1.4em; }
 
 /* ───── matematički zadaci ───── */
 .mat { white-space: nowrap; font-variant-numeric: lining-nums; }
+.mat sup, .mat sub { font-size: .7em; line-height: 0; }
 .mat .pod-korenom { border-top: 2px solid currentColor; padding: 0 1px; margin-left: 1px; }
 .mat .razlomak { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: .85em; line-height: 1.15; margin: 0 2px; }
 .mat .razlomak > span:first-child { border-bottom: 1.5px solid currentColor; padding: 0 2px; }
@@ -407,6 +408,7 @@ body.ekran .medij-geo svg, body.ekran .resenje-crtez svg { max-height: 58vh; }
 svg.geo { font-family: Roboto, system-ui, sans-serif; }
 svg.geo .oznaka { fill: #fff; font-size: 15px; font-weight: 800; text-anchor: middle; paint-order: stroke; stroke: var(--panel); stroke-width: 4px; }
 svg.geo .ime-tacke { fill: var(--istaknuto); font-size: 16px; font-weight: 900; text-anchor: middle; font-style: italic; paint-order: stroke; stroke: var(--panel); stroke-width: 4px; }
+svg.geo .ime-ose { fill: var(--blago); font-size: 15px; font-weight: 800; font-style: italic; text-anchor: middle; }
 svg.geo .broj { fill: var(--blago); font-size: 12px; text-anchor: middle; }
 svg.geo .mreza { stroke: #ffffff22; stroke-width: 1; }
 svg.geo .mreza.osa, svg.geo .brojevna { stroke: #ffffffaa; stroke-width: 1.6; }

@@ -63,7 +63,7 @@ for (const dir of fs.readdirSync(KOREN).sort()) {
         const imena = (x) => (Array.isArray(x) ? x : String(x).match(/[A-Z][0-9₀-₉']*|[a-z][0-9]*/g) || []);
         for (const e of m.e || []) {
           for (const kljuc of ['p', 'd', 'u', 'pu', 'tacka']) if (e[kljuc]) for (const n of imena(e[kljuc])) if (!T[n]) g(oz, `crtež: nema tačke ${n} (${kljuc}: ${e[kljuc]})`);
-          for (const kljuc of ['kr', 'l', 'kroz']) if (e[kljuc] && !T[e[kljuc]]) g(oz, `crtež: nema tačke ${e[kljuc]}`);
+          for (const kljuc of ['kr', 'l', 'kroz', 'is', 'oko']) if (e[kljuc] && !T[e[kljuc]]) g(oz, `crtež: nema tačke ${e[kljuc]}`);
           if (e.k > (p.resenje || []).length) g(oz, `crtež: element se pojavljuje u koraku ${e.k}, a rešenje ima ${(p.resenje || []).length} koraka`);
         }
         const idjevi = new Set((m.e || []).map((e) => e.id).filter(Boolean));

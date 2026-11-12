@@ -75,7 +75,7 @@ let kvizovi = [];
 let tikTajmer = null;
 
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-// tekst sa matematikom: $…$ ostaje latinicom (oznake tačaka, promenljive), √{x} – koren sa crtom, {a|b} – razlomak
+// tekst sa matematikom: $…$ ostaje latinicom (oznake tačaka, promenljive), √{x} – koren sa crtom, {a|b} – razlomak, ^{n} – izložilac, _{c} – indeks
 // sadržaj kviza na stranom jeziku ("jezik": "en", npr. TLA+) ide u <span lang> – ne preslovljava se u ćirilicu
 const strano = (html, jezik = V?.pitanje?.jezik) => (jezik ? `<span lang="${esc(jezik)}">${html}</span>` : html);
 function mat(t) {
@@ -87,6 +87,7 @@ function matTekst(t) {
     do {
       pre = x;
       x = x.replace(/√\{([^{}]*)\}/g, '√<span class="pod-korenom">$1</span>')
+        .replace(/\^\{([^{}|]*)\}/g, '<sup>$1</sup>').replace(/_\{([^{}|]*)\}/g, '<sub>$1</sub>')
         .replace(/\{([^{}|]*)\|([^{}|]*)\}/g, '<span class="razlomak"><span>$1</span><span>$2</span></span>');
     } while (x !== pre);
     return `<span class="mat">${x}</span>`;
