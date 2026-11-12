@@ -151,6 +151,8 @@ body.ekran .medij-slika { max-height: 55vh; }
 .medij-slika.zamagljeno { filter: blur(18px); }
 .medij-slika.zamagljeno.izostri { filter: blur(0); transition: filter 12s linear; }
 .medij-svg svg { width: 100%; max-height: 42vh; display: block; }
+.medij-fizika svg { max-height: 44vh; -webkit-tap-highlight-color: transparent; }
+body.ekran .medij-fizika svg { max-height: 56vh; }
 .medij-opis { font-size: .8em; color: var(--blago); padding: 6px 10px; }
 .zanimljivost .medij { margin: 12px 0 0; }
 .legenda { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; padding: 0 8px 10px; font-size: .8em; color: var(--blago); }

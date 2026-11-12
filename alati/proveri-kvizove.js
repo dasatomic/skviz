@@ -5,7 +5,8 @@ const fs = require('fs');
 const path = require('path');
 const KOREN = path.join(__dirname, '..', 'kvizovi');
 const recnik = require('../lib/recnik');
-const VRSTE = ['slika', 'svg', 'melodija', 'morze', 'molekul', 'telo', 'atom', 'planeta', 'dnk', 'mapa', 'sat', 'formula', 'emodzi', 'geo', 'kod'];
+const VRSTE = ['slika', 'svg', 'melodija', 'morze', 'molekul', 'telo', 'atom', 'planeta', 'dnk', 'mapa', 'sat', 'formula', 'emodzi', 'geo', 'kod', 'fizika'];
+const SCENE = require('../public/fizika.js').SCENE;
 const MOLEKULI = ['voda', 'ugljen-dioksid', 'metan', 'amonijak', 'kiseonik', 'azot', 'vodonik', 'ozon', 'hlorovodonik', 'vodonik-peroksid', 'etanol', 'benzen', 'sumporna-kiselina', 'so', 'dijamant', 'glukoza'];
 
 let greske = 0, upozorenja = 0, ukupno = 0;
@@ -91,6 +92,7 @@ for (const dir of fs.readdirSync(KOREN).sort()) {
           const postoji = fs.existsSync(put) || (fs.existsSync(path.dirname(put)) && fs.readdirSync(path.dirname(put)).some((x) => path.join(path.dirname(put), x).replace(/\.[^.]+$/, '') === baza));
           if (!postoji) g(oz, 'nema fajla ' + m.src);
         }
+        if (m.vrsta === 'fizika' && !SCENE.includes(m.scena)) g(oz, 'nepoznata fizička scena ' + m.scena + ' (postoje: ' + SCENE.join(', ') + ')');
         if (m.vrsta === 'molekul' && !m.atomi && !MOLEKULI.includes(m.ime)) g(oz, 'nepoznat molekul ' + m.ime);
         if (m.vrsta === 'melodija' && !/^[A-HR#b0-9+/.\s]+$/.test(m.note || '')) g(oz, 'neispravan zapis nota');
       }

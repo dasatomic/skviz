@@ -779,10 +779,15 @@ function prikaziGeo(k, m) {
   return () => {};
 }
 
+// animirana fizička scena (public/fizika.js)
+function prikaziFiziku(k, m) {
+  return window.Fizika ? window.Fizika.prikazi(k, m) : () => {};
+}
+
 const PRIKAZI = {
   slika: prikaziSliku, svg: prikaziSVG, melodija: prikaziMelodiju, morze: prikaziMorze, molekul: prikaziMolekul,
   telo: prikaziTelo, atom: prikaziAtom, planeta: prikaziPlanetu, dnk: prikaziDNK, mapa: prikaziMapu,
-  sat: prikaziSat, formula: prikaziTekst, emodzi: prikaziTekst, geo: prikaziGeo, kod: prikaziKod,
+  sat: prikaziSat, formula: prikaziTekst, emodzi: prikaziTekst, geo: prikaziGeo, kod: prikaziKod, fizika: prikaziFiziku,
 };
 
 // glavna funkcija: vraća funkciju za čišćenje

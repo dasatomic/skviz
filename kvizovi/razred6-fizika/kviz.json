@@ -273,7 +273,14 @@
         "Upijanje svetlosti"
       ],
       "zanimljivost": "Zbog prelamanja svetlosti bazen uvek izgleda plići nego što stvarno jeste.",
-      "rec": "prelamanje"
+      "rec": "prelamanje",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "prelamanje",
+        "gore": "vazduh",
+        "dole": "voda",
+        "ugao": 50
+      }
     },
     {
       "lekcija": 1,
@@ -728,7 +735,12 @@
       "tezina": 1,
       "zanimljivost": "Magnetno polje ne vidimo, ali ga otkrivaju gvozdeni opiljci i igla kompasa. I Zemlja ima magnetno polje, koje nas štiti od čestica sa Sunca.",
       "rec": "magnet",
-      "lekcija": 4
+      "lekcija": 4,
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "magnet",
+        "tip": "sipka"
+      }
     },
     {
       "lekcija": 4,
@@ -767,7 +779,25 @@
         "U boji i bez boje, providno i mutno"
       ],
       "zanimljivost": "Četvrto stanje je plazma – od nje su Sunce i munja.",
-      "rec": "stanje"
+      "rec": "stanje",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "cestice",
+        "poredi": [
+          {
+            "stanje": "cvrsto",
+            "o": "~čvrsto"
+          },
+          {
+            "stanje": "tecno",
+            "o": "~tečno"
+          },
+          {
+            "stanje": "gas",
+            "o": "~gas"
+          }
+        ]
+      }
     },
     {
       "lekcija": 4,
@@ -793,7 +823,12 @@
         "Stalan oblik, promenljivu zapreminu"
       ],
       "zanimljivost": "Zato voda u čaši ima oblik čaše, a u flaši oblik flaše.",
-      "rec": "tečnost"
+      "rec": "tečnost",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "pritisak",
+        "tip": "spojeni"
+      }
     },
     {
       "lekcija": 4,
@@ -806,7 +841,13 @@
         "Imaju i stalan oblik i stalnu zapreminu, kao i sva čvrsta tela"
       ],
       "zanimljivost": "Gas uvek zauzima ceo prostor posude – miris parfema zato ispuni celu sobu.",
-      "rec": "gas"
+      "rec": "gas",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "cestice",
+        "stanje": "gas",
+        "o": "~gas ispunjava ceo sud"
+      }
     },
     {
       "lekcija": 4,
@@ -819,7 +860,25 @@
         "Od zvuka i toplote zarobljenih u telima"
       ],
       "zanimljivost": "U jednoj kapi vode ima oko 1.500 milijardi milijardi molekula.",
-      "rec": "molekul"
+      "rec": "molekul",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "cestice",
+        "poredi": [
+          {
+            "stanje": "cvrsto",
+            "o": "~čvrsto"
+          },
+          {
+            "stanje": "tecno",
+            "o": "~tečno"
+          },
+          {
+            "stanje": "gas",
+            "o": "~gas"
+          }
+        ]
+      }
     },
     {
       "lekcija": 4,
@@ -845,7 +904,12 @@
         "Ne može se videti ni na koji način, ni u laboratoriji"
       ],
       "zanimljivost": "Opiljci se poređaju u linije – linije sila magnetnog polja.",
-      "rec": "opiljci"
+      "rec": "opiljci",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "magnet",
+        "tip": "sipka"
+      }
     },
     {
       "lekcija": 4,
@@ -910,7 +974,13 @@
         "Oscilatorno"
       ],
       "zanimljivost": "Fudbalska lopta posle udarca kreće se krivolinijski, po luku. Skijaš niz padinu najčešće takođe krivolinijski.",
-      "rec": "jabuka"
+      "rec": "jabuka",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "pad",
+        "tip": "slobodan",
+        "visina": 5
+      }
     },
     {
       "lekcija": 5,
@@ -936,7 +1006,12 @@
       "tezina": 2,
       "zanimljivost": "Ljuljaška, klatno i žica gitare osciluju. Vreme jednog celog zamaha zove se period oscilovanja.",
       "rec": "klatno",
-      "lekcija": 5
+      "lekcija": 5,
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "klatno",
+        "ugao": 30
+      }
     },
     {
       "lekcija": 5,
@@ -1044,7 +1119,12 @@
         "Nema kretanja – klatno stoji na jednom mestu"
       ],
       "zanimljivost": "Galilej je primetio da klatno uvek isto dugo zaljulja, posmatrajući luster u katedrali u Pizi.",
-      "rec": "klatno"
+      "rec": "klatno",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "klatno",
+        "ugao": 25
+      }
     },
     {
       "lekcija": 5,
@@ -1200,7 +1280,23 @@
         "Kao da leti"
       ],
       "zanimljivost": "Kod dopunjavanja goriva u vazduhu avioni lete istom brzinom, pa jedan u odnosu na drugi miruju.",
-      "rec": "vozovi"
+      "rec": "vozovi",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "kretanje",
+        "duzina": 200,
+        "tela": [
+          {
+            "e": "🚆",
+            "v": 25
+          },
+          {
+            "e": "🚆",
+            "v": 25
+          }
+        ],
+        "sat": false
+      }
     },
     {
       "lekcija": 6,
@@ -1226,7 +1322,15 @@
         "Tačku"
       ],
       "zanimljivost": "Mlaz vode iz creva za zalivanje dobro pokazuje oblik ove putanje – parabolu.",
-      "rec": "luk"
+      "rec": "luk",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "pad",
+        "tip": "kosi",
+        "uglovi": [
+          45
+        ]
+      }
     },
     {
       "lekcija": 6,
@@ -1304,7 +1408,21 @@
         "Krivolinijsko kretanje tela"
       ],
       "zanimljivost": "Pravo ravnomerno kretanje je retko u prirodi – automobili i vozovi stalno menjaju brzinu.",
-      "rec": "kretanje"
+      "rec": "kretanje",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "kretanje",
+        "duzina": 100,
+        "tela": [
+          {
+            "e": "🚗",
+            "v": 20,
+            "o": "20 m/s"
+          }
+        ],
+        "trag": 1,
+        "tragNatpis": true
+      }
     },
     {
       "lekcija": 7,
@@ -1330,7 +1448,26 @@
         "13 km"
       ],
       "zanimljivost": "s = v · t = 15 km/h · 2 h = 30 km.",
-      "rec": "put"
+      "rec": "put",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "kretanje",
+        "duzina": 30,
+        "jedinica": "km",
+        "podeok": 3,
+        "natpisi": 2,
+        "jedVreme": "h",
+        "tempo": 0.5,
+        "tela": [
+          {
+            "e": "🚴",
+            "v": 15,
+            "o": "15 km/h"
+          }
+        ],
+        "trag": 1,
+        "tragNatpis": true
+      }
     },
     {
       "lekcija": 7,
@@ -1356,7 +1493,33 @@
         "20 km"
       ],
       "zanimljivost": "Prvi pređe 120 km, a drugi 80 km, u suprotnim smerovima – ukupno 200 km.",
-      "rec": "automobil"
+      "rec": "automobil",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "kretanje",
+        "duzina": 200,
+        "jedinica": "km",
+        "podeok": 20,
+        "natpisi": 2,
+        "jedVreme": "h",
+        "tempo": 0.5,
+        "tela": [
+          {
+            "e": "🚗",
+            "v": 60,
+            "x0": 80,
+            "o": "60 km/h"
+          },
+          {
+            "e": "🚙",
+            "v": -40,
+            "x0": 80,
+            "o": "40 km/h",
+            "b": 1
+          }
+        ],
+        "trag": 1
+      }
     },
     {
       "pitanje": "Ako trkač optrči ceo krug na stazi od 400 m i vrati se na start, koliki je pređeni put?",
@@ -1425,7 +1588,26 @@
         "900 km"
       ],
       "zanimljivost": "Ovo je primer ravnomernog pravolinijskog kretanja: s = v · t.",
-      "rec": "automobil"
+      "rec": "automobil",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "kretanje",
+        "duzina": 180,
+        "jedinica": "km",
+        "podeok": 15,
+        "natpisi": 2,
+        "jedVreme": "h",
+        "tempo": 0.5,
+        "tela": [
+          {
+            "e": "🚗",
+            "v": 90,
+            "o": "90 km/h"
+          }
+        ],
+        "trag": 1,
+        "tragNatpis": true
+      }
     },
     {
       "lekcija": 7,
@@ -1442,6 +1624,24 @@
       "mediji": {
         "vrsta": "emodzi",
         "tekst": "🏃‍♂️ vs 🚴"
+      },
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "kretanje",
+        "duzina": 100,
+        "tela": [
+          {
+            "e": "🏃",
+            "v": 10,
+            "o": "100 m : 10 s"
+          },
+          {
+            "e": "🚴",
+            "v": 10,
+            "o": "36 km/h",
+            "b": 1
+          }
+        ]
       }
     },
     {
@@ -1468,7 +1668,20 @@
       "tezina": 1,
       "zanimljivost": "Brzina od 25 m/s je 90 km/h. Kod ravnomernog kretanja grafik puta od vremena je prava linija.",
       "rec": "kretanje",
-      "lekcija": 7
+      "lekcija": 7,
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "kretanje",
+        "duzina": 125,
+        "tela": [
+          {
+            "e": "🚗",
+            "v": 25
+          }
+        ],
+        "trag": 1,
+        "tragNatpis": true
+      }
     },
     {
       "lekcija": 7,
@@ -1623,7 +1836,56 @@
         "100 km/h"
       ],
       "zanimljivost": "Ovde je srednja brzina jednaka proseku brzina samo zato što su vremena jednaka.",
-      "rec": "prosek"
+      "rec": "prosek",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "grafik",
+        "x": "t (h)",
+        "y": "s (km)",
+        "xmax": 2,
+        "ymax": 180,
+        "xk": 0.5,
+        "yk": 40,
+        "linije": [
+          {
+            "t": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                60
+              ],
+              [
+                2,
+                160
+              ]
+            ]
+          },
+          {
+            "t": [
+              [
+                0,
+                0
+              ],
+              [
+                2,
+                160
+              ]
+            ],
+            "b": 2,
+            "isp": true,
+            "o": "80 km/h"
+          }
+        ],
+        "projekcije": [
+          [
+            2,
+            160
+          ]
+        ]
+      }
     },
     {
       "lekcija": 8,
@@ -1636,7 +1898,56 @@
         "30 km/h"
       ],
       "zanimljivost": "Prva deonica traje 1 sat, druga 2 sata: 120 km za 3 sata. Prosek brzina (45) ovde ne važi!",
-      "rec": "zamka"
+      "rec": "zamka",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "grafik",
+        "x": "t (h)",
+        "y": "s (km)",
+        "xmax": 3,
+        "ymax": 130,
+        "xk": 1,
+        "yk": 20,
+        "linije": [
+          {
+            "t": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                60
+              ],
+              [
+                3,
+                120
+              ]
+            ]
+          },
+          {
+            "t": [
+              [
+                0,
+                0
+              ],
+              [
+                3,
+                120
+              ]
+            ],
+            "b": 2,
+            "isp": true,
+            "o": "40 km/h"
+          }
+        ],
+        "projekcije": [
+          [
+            3,
+            120
+          ]
+        ]
+      }
     },
     {
       "lekcija": 8,
@@ -1649,7 +1960,20 @@
         "Satelit na stalnoj brzini"
       ],
       "zanimljivost": "Lopta se usporava zbog trenja i otpora vazduha.",
-      "rec": "lopta"
+      "rec": "lopta",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "kretanje",
+        "duzina": 20,
+        "tela": [
+          {
+            "e": "⚽",
+            "v": 8,
+            "a": -2
+          }
+        ],
+        "trag": 1
+      }
     },
     {
       "lekcija": 8,
@@ -1662,7 +1986,22 @@
         "Oscilatorno"
       ],
       "zanimljivost": "Avion na pisti ubrzava do oko 250 km/h pre poletanja.",
-      "rec": "ubrzanje"
+      "rec": "ubrzanje",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "kretanje",
+        "duzina": 50,
+        "tela": [
+          {
+            "e": "🚗",
+            "v": 0,
+            "a": 4,
+            "o": "~ubrzava"
+          }
+        ],
+        "trag": 1,
+        "vektor": true
+      }
     },
     {
       "lekcija": 8,
@@ -1675,7 +2014,22 @@
         "Kružno"
       ],
       "zanimljivost": "Automobil koji koči od 50 km/h zaustavi se za oko 10–15 metara na suvom putu.",
-      "rec": "kočenje"
+      "rec": "kočenje",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "kretanje",
+        "duzina": 50,
+        "tela": [
+          {
+            "e": "🚗",
+            "v": 20,
+            "a": -4,
+            "o": "~usporava"
+          }
+        ],
+        "trag": 1,
+        "vektor": true
+      }
     },
     {
       "lekcija": 8,
@@ -1727,7 +2081,21 @@
         "nepostojeće"
       ],
       "zanimljivost": "Brzi vozovi ubrzavaju postepeno da putnici ne bi osetili trzaj.",
-      "rec": "voz"
+      "rec": "voz",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "kretanje",
+        "duzina": 50,
+        "tela": [
+          {
+            "e": "🚆",
+            "v": 0,
+            "a": 4
+          }
+        ],
+        "trag": 1,
+        "vektor": true
+      }
     },
     {
       "lekcija": 8,
@@ -1740,7 +2108,50 @@
         "20 km/h"
       ],
       "zanimljivost": "I vreme stajanja ulazi u ukupno vreme – zato je srednja brzina gradskog prevoza mala.",
-      "rec": "tramvaj"
+      "rec": "tramvaj",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "grafik",
+        "x": "t (min)",
+        "y": "s (km)",
+        "xmax": 30,
+        "ymax": 7,
+        "xk": 10,
+        "yk": 1,
+        "linije": [
+          {
+            "t": [
+              [
+                0,
+                0
+              ],
+              [
+                10,
+                0
+              ],
+              [
+                30,
+                6
+              ]
+            ]
+          },
+          {
+            "t": [
+              [
+                0,
+                0
+              ],
+              [
+                30,
+                6
+              ]
+            ],
+            "b": 2,
+            "isp": true,
+            "o": "12 km/h"
+          }
+        ]
+      }
     },
     {
       "lekcija": 8,
@@ -1766,7 +2177,28 @@
         "Krug"
       ],
       "zanimljivost": "Što je linija strmija, veća je brzina.",
-      "rec": "grafik"
+      "rec": "grafik",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "grafik",
+        "x": "t (s)",
+        "y": "s (m)",
+        "linije": [
+          {
+            "t": [
+              [
+                0,
+                0
+              ],
+              [
+                5,
+                20
+              ]
+            ]
+          }
+        ],
+        "telo": "🚗"
+      }
     },
     {
       "lekcija": 9,
@@ -1779,7 +2211,28 @@
         "Tačka u samom koordinatnom početku"
       ],
       "zanimljivost": "Površina ispod tog grafika jednaka je pređenom putu!",
-      "rec": "horizontala"
+      "rec": "horizontala",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "grafik",
+        "x": "t (s)",
+        "y": "v (m/s)",
+        "ymax": 6,
+        "linije": [
+          {
+            "t": [
+              [
+                0,
+                4
+              ],
+              [
+                5,
+                4
+              ]
+            ]
+          }
+        ]
+      }
     },
     {
       "lekcija": 9,
@@ -1796,6 +2249,42 @@
       "mediji": {
         "vrsta": "svg",
         "kod": "<svg viewBox='0 0 220 170' xmlns='http://www.w3.org/2000/svg'><g stroke='#fff' stroke-width='3' fill='none'><line x1='30' y1='150' x2='210' y2='150'/><line x1='30' y1='150' x2='30' y2='10'/></g><line x1='30' y1='150' x2='120' y2='20' stroke='#ef476f' stroke-width='5'/><line x1='30' y1='150' x2='200' y2='100' stroke='#118ab2' stroke-width='5'/><text x='125' y='25' fill='#ef476f' font-size='18'>A</text><text x='200' y='95' fill='#118ab2' font-size='18'>B</text><text x='200' y='166' fill='#fff' font-size='16'>t</text><text x='8' y='20' fill='#fff' font-size='16'>s</text></svg>"
+      },
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "grafik",
+        "x": "t (s)",
+        "y": "s (m)",
+        "linije": [
+          {
+            "t": [
+              [
+                0,
+                0
+              ],
+              [
+                4,
+                20
+              ]
+            ],
+            "o": "~brže"
+          },
+          {
+            "t": [
+              [
+                0,
+                0
+              ],
+              [
+                4,
+                8
+              ]
+            ],
+            "o": "~sporije",
+            "b": 1
+          }
+        ],
+        "telo": "🚗"
       }
     },
     {
@@ -1822,7 +2311,34 @@
         "Telo pada"
       ],
       "zanimljivost": "Kada autobus stoji na stanici, njegov grafik puta u tom delu postaje vodoravan.",
-      "rec": "mirovanje"
+      "rec": "mirovanje",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "grafik",
+        "x": "t (s)",
+        "y": "s (m)",
+        "ymax": 14,
+        "linije": [
+          {
+            "t": [
+              [
+                0,
+                0
+              ],
+              [
+                2,
+                10
+              ],
+              [
+                5,
+                10
+              ]
+            ]
+          }
+        ],
+        "telo": "🚗",
+        "trajanje": 4
+      }
     },
     {
       "lekcija": 9,
@@ -1839,6 +2355,29 @@
       "mediji": {
         "vrsta": "svg",
         "kod": "<svg viewBox='0 0 220 170' xmlns='http://www.w3.org/2000/svg'><g stroke='#fff' stroke-width='3' fill='none'><line x1='30' y1='150' x2='210' y2='150'/><line x1='30' y1='150' x2='30' y2='10'/></g><rect x='30' y='70' width='160' height='80' fill='#06d6a055'/><line x1='30' y1='70' x2='190' y2='70' stroke='#06d6a0' stroke-width='5'/><text x='5' y='75' fill='#fff' font-size='14'>5</text><text x='185' y='166' fill='#fff' font-size='14'>4 s</text><text x='8' y='20' fill='#fff' font-size='16'>v</text></svg>"
+      },
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "grafik",
+        "x": "t (s)",
+        "y": "v (m/s)",
+        "ymax": 7,
+        "xmax": 5,
+        "linije": [
+          {
+            "t": [
+              [
+                0,
+                5
+              ],
+              [
+                4,
+                5
+              ]
+            ]
+          }
+        ],
+        "povrsina": 0
       }
     },
     {
@@ -1852,7 +2391,37 @@
         "2 m/s"
       ],
       "zanimljivost": "Grafici omogućavaju da se brzina „pročita“ bez merenja brzinomerom.",
-      "rec": "čitanje"
+      "rec": "čitanje",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "grafik",
+        "x": "t (s)",
+        "y": "s (m)",
+        "xmax": 4,
+        "ymax": 22,
+        "xk": 1,
+        "yk": 5,
+        "linije": [
+          {
+            "t": [
+              [
+                0,
+                0
+              ],
+              [
+                4,
+                20
+              ]
+            ]
+          }
+        ],
+        "projekcije": [
+          [
+            2,
+            10
+          ]
+        ]
+      }
     },
     {
       "lekcija": 9,
@@ -1878,7 +2447,70 @@
         "Stalno je mirovalo na istom mestu sve vreme"
       ],
       "zanimljivost": "Takav grafik ima autobus koji staje na stanicama.",
-      "rec": "zastoj"
+      "rec": "zastoj",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "grafik",
+        "x": "t (s)",
+        "y": "s (m)",
+        "xmax": 6,
+        "ymax": 22,
+        "linije": [
+          {
+            "t": [
+              [
+                0,
+                0
+              ],
+              [
+                2,
+                10
+              ],
+              [
+                4,
+                10
+              ],
+              [
+                6,
+                20
+              ]
+            ]
+          }
+        ],
+        "trajanje": 4
+      },
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "grafik",
+        "x": "t (s)",
+        "y": "s (m)",
+        "xmax": 6,
+        "ymax": 22,
+        "linije": [
+          {
+            "t": [
+              [
+                0,
+                0
+              ],
+              [
+                2,
+                10
+              ],
+              [
+                4,
+                10
+              ],
+              [
+                6,
+                20
+              ]
+            ]
+          }
+        ],
+        "telo": "🚗",
+        "trajanje": 5
+      }
     },
     {
       "lekcija": 9,
@@ -1904,7 +2536,53 @@
         "Tela su se sudarila, jer se uvek sudaraju"
       ],
       "zanimljivost": "Presek linija na grafiku pokazuje kada i gde se tela susreću – tako se rešavaju zadaci sa „sustizanjem“.",
-      "rec": "susret"
+      "rec": "susret",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "grafik",
+        "x": "t (s)",
+        "y": "s (m)",
+        "xmax": 6,
+        "ymax": 24,
+        "linije": [
+          {
+            "t": [
+              [
+                0,
+                0
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                4,
+                12
+              ],
+              [
+                6,
+                24
+              ]
+            ],
+            "o": "A"
+          },
+          {
+            "t": [
+              [
+                0,
+                0
+              ],
+              [
+                6,
+                18
+              ]
+            ],
+            "o": "B",
+            "b": 1
+          }
+        ],
+        "trajanje": 4
+      }
     },
     {
       "lekcija": 9,
@@ -1930,7 +2608,28 @@
         "unazad"
       ],
       "zanimljivost": "Ravnomerno kretanje = stalna brzina = horizontalna linija na grafiku brzine.",
-      "rec": "stalno"
+      "rec": "stalno",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "grafik",
+        "x": "t (s)",
+        "y": "v (m/s)",
+        "ymax": 6,
+        "linije": [
+          {
+            "t": [
+              [
+                0,
+                4
+              ],
+              [
+                5,
+                4
+              ]
+            ]
+          }
+        ]
+      }
     },
     {
       "lekcija": 9,
@@ -1943,7 +2642,43 @@
         "Pređeni put"
       ],
       "zanimljivost": "Što je veći ugao prave prema vremenskoj osi, to je veća brzina.",
-      "rec": "nagib"
+      "rec": "nagib",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "grafik",
+        "x": "t (s)",
+        "y": "s (m)",
+        "linije": [
+          {
+            "t": [
+              [
+                0,
+                0
+              ],
+              [
+                4,
+                20
+              ]
+            ],
+            "o": "5 m/s"
+          },
+          {
+            "t": [
+              [
+                0,
+                0
+              ],
+              [
+                4,
+                8
+              ]
+            ],
+            "o": "2 m/s",
+            "b": 1
+          }
+        ],
+        "telo": "🚗"
+      }
     },
     {
       "lekcija": 9,
@@ -1956,7 +2691,37 @@
         "35 m"
       ],
       "zanimljivost": "Kod ravnomernog kretanja svaka sekunda dodaje isti put – grafik je zato prava linija.",
-      "rec": "put"
+      "rec": "put",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "grafik",
+        "x": "t (s)",
+        "y": "s (m)",
+        "xmax": 5,
+        "ymax": 18,
+        "xk": 1,
+        "yk": 3,
+        "linije": [
+          {
+            "t": [
+              [
+                0,
+                0
+              ],
+              [
+                5,
+                15
+              ]
+            ]
+          }
+        ],
+        "projekcije": [
+          [
+            5,
+            15
+          ]
+        ]
+      }
     },
     {
       "lekcija": 10,
@@ -1982,7 +2747,39 @@
         "45 N"
       ],
       "zanimljivost": "Sile istog pravca i smera se sabiraju. Da vuku u suprotnim smerovima, rezultujuća sila bi bila razlika: 10 N.",
-      "rec": "zec"
+      "rec": "zec",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "sile",
+        "sile": [
+          {
+            "F": 50,
+            "ugao": 0
+          },
+          {
+            "F": 40,
+            "ugao": 0
+          }
+        ],
+        "e": "🥬"
+      },
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "sile",
+        "sile": [
+          {
+            "F": 50,
+            "ugao": 0
+          },
+          {
+            "F": 40,
+            "ugao": 0
+          }
+        ],
+        "e": "🥬",
+        "rezultanta": "90 N",
+        "kretanje": true
+      }
     },
     {
       "lekcija": 10,
@@ -2060,7 +2857,39 @@
         "60 N u smeru jačeg deteta"
       ],
       "zanimljivost": "Kad sile deluju u suprotnim smerovima, oduzimaju se; u istom smeru – sabiraju se.",
-      "rec": "rezultanta"
+      "rec": "rezultanta",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "sile",
+        "sile": [
+          {
+            "F": 60,
+            "ugao": 0
+          },
+          {
+            "F": 40,
+            "ugao": 180
+          }
+        ],
+        "e": "🛷"
+      },
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "sile",
+        "sile": [
+          {
+            "F": 60,
+            "ugao": 0
+          },
+          {
+            "F": 40,
+            "ugao": 180
+          }
+        ],
+        "e": "🛷",
+        "rezultanta": "20 N",
+        "kretanje": true
+      }
     },
     {
       "lekcija": 10,
@@ -2099,7 +2928,21 @@
         "Slučajne sile"
       ],
       "zanimljivost": "Knjiga na stolu miruje jer su sila Zemljine teže i sila stola uravnotežene.",
-      "rec": "ravnoteža"
+      "rec": "ravnoteža",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "sile",
+        "sile": [
+          {
+            "F": 50,
+            "ugao": 0
+          },
+          {
+            "F": 50,
+            "ugao": 180
+          }
+        ]
+      }
     },
     {
       "lekcija": 10,
@@ -2112,7 +2955,21 @@
         "Raspada se"
       ],
       "zanimljivost": "U igri potezanja konopca, ako su ekipe jednako jake, konopac stoji u mestu.",
-      "rec": "konopac"
+      "rec": "konopac",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "sile",
+        "sile": [
+          {
+            "F": 40,
+            "ugao": 0
+          },
+          {
+            "F": 40,
+            "ugao": 180
+          }
+        ]
+      }
     },
     {
       "lekcija": 10,
@@ -2125,7 +2982,23 @@
         "900 N"
       ],
       "zanimljivost": "Kada konj i magarac vuku zajedno, sile im se sabiraju.",
-      "rec": "zbir"
+      "rec": "zbir",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "sile",
+        "sile": [
+          {
+            "F": 30,
+            "ugao": 0
+          },
+          {
+            "F": 30,
+            "ugao": 0
+          }
+        ],
+        "rezultanta": "60 N",
+        "kretanje": true
+      }
     },
     {
       "lekcija": 10,
@@ -2177,7 +3050,12 @@
         "Nikada – svaka sila koja deluje na telo uvek mora da poveća ili smanji njegovu brzinu"
       ],
       "zanimljivost": "Kada vrtiš kamen na kanapu, kanap stalno „vuče“ ka centru i kamen ide u krug.",
-      "rec": "krug"
+      "rec": "krug",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "orbita",
+        "tip": "mesec"
+      }
     },
     {
       "lekcija": 11,
@@ -2268,7 +3146,12 @@
         "Lebdi u vazduhu, jer je lakši od vazduha koji okružuje Zemlju"
       ],
       "zanimljivost": "Mesec se svake godine udalji od Zemlje za oko 3,8 cm.",
-      "rec": "mesec"
+      "rec": "mesec",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "orbita",
+        "tip": "njutn"
+      }
     },
     {
       "lekcija": 11,
@@ -2333,7 +3216,12 @@
         "Sila trenja"
       ],
       "zanimljivost": "Bez gravitacije Sunca Zemlja bi odletela pravo u svemir brzinom od 30 km/s.",
-      "rec": "orbita"
+      "rec": "orbita",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "orbita",
+        "tip": "mesec"
+      }
     },
     {
       "lekcija": 11,
@@ -2359,7 +3247,13 @@
         "Ne pada, već ostaje u vazduhu"
       ],
       "zanimljivost": "Najjači bacači mogu da bace loptu desetinama metara uvis, ali ona se uvek vrati.",
-      "rec": "lopta"
+      "rec": "lopta",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "pad",
+        "tip": "navise",
+        "v0": 15
+      }
     },
     {
       "lekcija": 11,
@@ -2441,7 +3335,12 @@
         "Samo dva negativna naelektrisanja (elektroni)"
       ],
       "zanimljivost": "Istoimena naelektrisanja se odbijaju – zato se kosa „nakostreši“ posle skidanja vunenog džempera.",
-      "rec": "privlačenje"
+      "rec": "privlačenje",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "naelektrisanje",
+        "znaci": "+-"
+      }
     },
     {
       "lekcija": 12,
@@ -2480,7 +3379,13 @@
         "Spajaju se trajno"
       ],
       "zanimljivost": "Na tom principu rade maglev vozovi koji „lebde“ iznad šina brzinom i preko 400 km/h.",
-      "rec": "odbijanje"
+      "rec": "odbijanje",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "magnet",
+        "tip": "polovi",
+        "polovi": "NN"
+      }
     },
     {
       "lekcija": 12,
@@ -2506,7 +3411,12 @@
         "Zbog gravitacije Severnog pola"
       ],
       "zanimljivost": "Geografski severni pol Zemlje je u blizini njenog magnetnog južnog pola – zato privlači severni pol igle.",
-      "rec": "kompas"
+      "rec": "kompas",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "magnet",
+        "tip": "zemlja"
+      }
     },
     {
       "lekcija": 12,
@@ -2623,7 +3533,12 @@
         "Sijalica"
       ],
       "zanimljivost": "Elektromagnetne dizalice na otpadu podižu automobile, a kad se struja isključi – puste ih.",
-      "rec": "kalem"
+      "rec": "kalem",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "magnet",
+        "tip": "kalem"
+      }
     },
     {
       "pitanje": "Šta je napadna tačka sile?",
@@ -2688,7 +3603,29 @@
         "Opruga se ne isteže"
       ],
       "zanimljivost": "Ovu zakonitost je otkrio Robert Huk 1676. – isti onaj koji je dao ime ćeliji.",
-      "rec": "huk"
+      "rec": "huk",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "opruga",
+        "tip": "istezanje",
+        "koraci": [
+          {
+            "F": "1 N",
+            "dl": 1,
+            "o": "1 cm"
+          },
+          {
+            "F": "2 N",
+            "dl": 2,
+            "o": "2 cm"
+          },
+          {
+            "F": "3 N",
+            "dl": 3,
+            "o": "3 cm"
+          }
+        ]
+      }
     },
     {
       "pitanje": "Na kom principu radi dinamometar?",
@@ -2701,7 +3638,29 @@
       "tezina": 2,
       "zanimljivost": "Dvostruko veća sila dvostruko više istegne oprugu – zato je skala dinamometra ravnomerno podeljena. Ovo je otkrio Robert Huk.",
       "rec": "opruga",
-      "lekcija": 13
+      "lekcija": 13,
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "opruga",
+        "tip": "istezanje",
+        "koraci": [
+          {
+            "F": "2 N",
+            "dl": 1,
+            "o": "1 cm"
+          },
+          {
+            "F": "4 N",
+            "dl": 2,
+            "o": "2 cm"
+          },
+          {
+            "F": "6 N",
+            "dl": 3,
+            "o": "3 cm"
+          }
+        ]
+      }
     },
     {
       "pitanje": "Kolika je približno težina tela mase 100 g na Zemlji?",
@@ -2727,7 +3686,41 @@
         "8 cm"
       ],
       "zanimljivost": "Istezanje je srazmerno sili: 4 N → 2 cm, znači 2 N → 1 cm.",
-      "rec": "računanje"
+      "rec": "računanje",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "opruga",
+        "tip": "istezanje",
+        "koraci": [
+          {
+            "F": "4 N",
+            "dl": 2,
+            "o": "2 cm"
+          },
+          {
+            "F": "10 N",
+            "dl": 5,
+            "o": "?"
+          }
+        ]
+      },
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "opruga",
+        "tip": "istezanje",
+        "koraci": [
+          {
+            "F": "4 N",
+            "dl": 2,
+            "o": "2 cm"
+          },
+          {
+            "F": "10 N",
+            "dl": 5,
+            "o": "5 cm"
+          }
+        ]
+      }
     },
     {
       "lekcija": 13,
@@ -2861,7 +3854,21 @@
         "Odmah staje, jer automobil bez rada motora ne može da se kreće"
       ],
       "zanimljivost": "Na ledu bi isti automobil prešao mnogo duži put, jer je trenje manje.",
-      "rec": "trenje"
+      "rec": "trenje",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "kretanje",
+        "duzina": 60,
+        "tela": [
+          {
+            "e": "🚗",
+            "v": 15,
+            "a": -2
+          }
+        ],
+        "trag": 1,
+        "vektor": true
+      }
     },
     {
       "lekcija": 14,
@@ -2926,7 +3933,27 @@
         "Da bi bilo glatkije"
       ],
       "zanimljivost": "So topi led, a pesak povećava trenje – zato se često koriste zajedno.",
-      "rec": "pesak"
+      "rec": "pesak",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "kretanje",
+        "duzina": 30,
+        "tela": [
+          {
+            "v": 10,
+            "a": -2,
+            "staza": "~led",
+            "podloga": "led"
+          },
+          {
+            "v": 10,
+            "a": -6,
+            "staza": "~pesak",
+            "podloga": "pesak",
+            "b": 5
+          }
+        ]
+      }
     },
     {
       "lekcija": 14,
@@ -2952,7 +3979,12 @@
       "tezina": 1,
       "zanimljivost": "Sa otvorenim padobranom brzina pada se smanji sa oko 200 km/h na oko 20 km/h – dovoljno za bezbedno sletanje.",
       "rec": "padobran",
-      "lekcija": 14
+      "lekcija": 14,
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "pad",
+        "tip": "padobran"
+      }
     },
     {
       "lekcija": 14,
@@ -4034,7 +5066,12 @@
         "Da se ne prehladimo"
       ],
       "zanimljivost": "Pri sudaru brzinom od 50 km/h telo bez pojasa udara kao da je palo sa trećeg sprata.",
-      "rec": "pojas"
+      "rec": "pojas",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "inercija",
+        "tip": "autobus"
+      }
     },
     {
       "lekcija": 19,
@@ -4047,7 +5084,12 @@
         "Okretanje stola dok posuđe stoji na njemu bez pomeranja"
       ],
       "zanimljivost": "Što je izvlačenje brže, posuđe ima manje vremena da „krene“ za stolnjakom.",
-      "rec": "stolnjak"
+      "rec": "stolnjak",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "inercija",
+        "tip": "stolnjak"
+      }
     },
     {
       "pitanje": "Zašto putnici u autobusu „polete“ napred kada autobus naglo zakoči?",
@@ -4060,7 +5102,12 @@
       "tezina": 1,
       "zanimljivost": "Autobus se zaustavlja, a putnici teže da zadrže brzinu koju su imali. Zato se u vozilima drže rukohvati i vezuju pojasevi.",
       "rec": "inercija",
-      "lekcija": 19
+      "lekcija": 19,
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "inercija",
+        "tip": "autobus"
+      }
     },
     {
       "lekcija": 19,
@@ -4138,7 +5185,12 @@
         "Kockica se okrene"
       ],
       "zanimljivost": "Ovaj ogled može da se izvede i sa novčićem na kartonu iznad čaše – novčić upadne u čašu.",
-      "rec": "novčić"
+      "rec": "novčić",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "inercija",
+        "tip": "novcic"
+      }
     },
     {
       "pitanje": "Zašto je teže pokrenuti pun nego prazan kofer na točkićima?",
@@ -4445,7 +5497,23 @@
         "Voda privlači drvo"
       ],
       "zanimljivost": "Gustina vode je 1000 kg/m³. Hrastovo drvo ima oko 700, a gvožđe oko 7800 kg/m³. Čelični brod pluta jer je pun vazduha, pa mu je prosečna gustina manja od vode.",
-      "rec": "drvo"
+      "rec": "drvo",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "tecnost",
+        "tela": [
+          {
+            "ro": 600,
+            "o": "~drvo",
+            "b": 5
+          },
+          {
+            "ro": 7800,
+            "o": "~gvožđe",
+            "b": 0
+          }
+        ]
+      }
     },
     {
       "lekcija": 21,
@@ -4484,7 +5552,18 @@
         "Led je vruć iznutra, pa se diže gore"
       ],
       "zanimljivost": "Zbog toga se jezera mrznu odozgo – led štiti ribe ispod sebe od hladnoće.",
-      "rec": "led"
+      "rec": "led",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "tecnost",
+        "tela": [
+          {
+            "ro": 917,
+            "o": "~led",
+            "b": 0
+          }
+        ]
+      }
     },
     {
       "lekcija": 21,
@@ -4562,7 +5641,29 @@
         "Nijedno telo"
       ],
       "zanimljivost": "Drvo ebanovina ima gustinu veću od vode i tone, za razliku od većine drveća.",
-      "rec": "tonjenje"
+      "rec": "tonjenje",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "tecnost",
+        "tela": [
+          {
+            "ro": 600,
+            "o": "600 kg/m³"
+          },
+          {
+            "ro": 1000,
+            "o": "1000 kg/m³",
+            "b": 4
+          },
+          {
+            "ro": 2700,
+            "o": "2700 kg/m³",
+            "b": 1
+          }
+        ],
+        "tecnost": "~voda · 1000 kg/m³",
+        "sile": true
+      }
     },
     {
       "lekcija": 21,
@@ -4657,7 +5758,26 @@
         "Nikada se ne menja"
       ],
       "zanimljivost": "Zato se po snegu lakše hoda u krpljama ili skijama, a oštar nož lako seče.",
-      "rec": "pritisak"
+      "rec": "pritisak",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "pritisak",
+        "tip": "podloga",
+        "tela": [
+          {
+            "w": 110,
+            "h": 34,
+            "o": "~veća površina"
+          },
+          {
+            "w": 34,
+            "h": 110,
+            "o": "~manja površina"
+          }
+        ],
+        "podloga": "~pesak",
+        "boja": "#e1b866"
+      }
     },
     {
       "lekcija": 22,
@@ -4722,7 +5842,29 @@
         "Zbog trenja između skija i snega koje ih drži gore"
       ],
       "zanimljivost": "Krplje (rakete za sneg) koriste isti princip – stari ih narodi koriste hiljadama godina.",
-      "rec": "skije"
+      "rec": "skije",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "pritisak",
+        "tip": "podloga",
+        "tela": [
+          {
+            "w": 120,
+            "h": 50,
+            "e": "⛷️",
+            "o": "~skije",
+            "b": 0
+          },
+          {
+            "w": 30,
+            "h": 50,
+            "e": "🥾",
+            "o": "~čizme",
+            "b": 4
+          }
+        ],
+        "podloga": "~sneg"
+      }
     },
     {
       "lekcija": 22,
@@ -4774,7 +5916,26 @@
         "Ne zavisi"
       ],
       "zanimljivost": "Težina cigle je ista, ali se raspoređuje na različitu površinu.",
-      "rec": "cigla"
+      "rec": "cigla",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "pritisak",
+        "tip": "podloga",
+        "tela": [
+          {
+            "w": 100,
+            "h": 30,
+            "o": "~leži"
+          },
+          {
+            "w": 30,
+            "h": 70,
+            "o": "~stoji"
+          }
+        ],
+        "podloga": "~pesak",
+        "boja": "#e1b866"
+      }
     },
     {
       "lekcija": 22,
@@ -4891,7 +6052,12 @@
         "Od jačine Zemljinog gravitacionog polja"
       ],
       "zanimljivost": "Ovo je „hidrostatički paradoks“: u uskoj i u širokoj posudi, sa istom visinom vode, pritisak na dno je isti.",
-      "rec": "sud"
+      "rec": "sud",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "pritisak",
+        "tip": "spojeni"
+      }
     },
     {
       "lekcija": 23,
@@ -4904,7 +6070,12 @@
         "Toplota prelazi sa toplijeg na hladnije telo"
       ],
       "zanimljivost": "Ogled: lopta sa rupicama puna vode – kada se pritisne klip, voda šiklja jednako iz svih rupica.",
-      "rec": "paskal"
+      "rec": "paskal",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "pritisak",
+        "tip": "paskal"
+      }
     },
     {
       "lekcija": 23,
@@ -4943,7 +6114,12 @@
         "Nestaje na dnu"
       ],
       "zanimljivost": "Na svakih 10 m dubine u vodi pritisak se poveća za otprilike još jednu atmosferu.",
-      "rec": "dubina"
+      "rec": "dubina",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "pritisak",
+        "tip": "dubina"
+      }
     },
     {
       "lekcija": 23,
@@ -4956,7 +6132,12 @@
         "Zbog trenja vode o dno jezera iza brane"
       ],
       "zanimljivost": "Brana „Tri klisure“ u Kini pri dnu je široka oko 115 metara.",
-      "rec": "brana"
+      "rec": "brana",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "pritisak",
+        "tip": "dubina"
+      }
     },
     {
       "pitanje": "Šta se dešava kada stisnemo plastičnu kesu punu vode sa rupicama?",
@@ -4969,7 +6150,12 @@
       "tezina": 2,
       "zanimljivost": "Ovo je ogled koji pokazuje Paskalov zakon – pritisak se kroz tečnost prenosi podjednako u svim pravcima.",
       "rec": "kesa",
-      "lekcija": 23
+      "lekcija": 23,
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "pritisak",
+        "tip": "paskal"
+      }
     },
     {
       "lekcija": 23,
@@ -4982,7 +6168,12 @@
         "Na Omovom zakonu"
       ],
       "zanimljivost": "Hidraulični podizač u auto-servisu lako podigne automobil malom silom na malom klipu.",
-      "rec": "presa"
+      "rec": "presa",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "pritisak",
+        "tip": "presa"
+      }
     },
     {
       "pitanje": "Zašto se vodotornjevi grade visoko?",
@@ -5025,7 +6216,12 @@
         "Sudovi bez tečnosti spojeni cevima, koji služe za merenje pritiska vazduha"
       ],
       "zanimljivost": "Na principu spojenih sudova rade čajnik, vodovod i libela kojom majstori proveravaju da li je nešto vodoravno.",
-      "rec": "spojeni"
+      "rec": "spojeni",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "pritisak",
+        "tip": "spojeni"
+      }
     },
     {
       "lekcija": 23,
@@ -5077,7 +6273,12 @@
         "Ne ističe dalje"
       ],
       "zanimljivost": "Ovaj jednostavan ogled sa flašom i tri rupice pokazuje rast pritiska sa dubinom.",
-      "rec": "flaša"
+      "rec": "flaša",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "pritisak",
+        "tip": "rupice"
+      }
     },
     {
       "lekcija": 23,
@@ -5090,7 +6291,14 @@
         "Ista je"
       ],
       "zanimljivost": "Koliko puta je veća površina, toliko puta je veća sila – ali veliki klip se pomera toliko puta manje.",
-      "rec": "klip"
+      "rec": "klip",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "pritisak",
+        "tip": "presa",
+        "s1": "10 cm²",
+        "s2": "1.000 cm²"
+      }
     },
     {
       "lekcija": 23,
@@ -5129,7 +6337,13 @@
         "Oko 1 m"
       ],
       "zanimljivost": "Iznad žive u cevi ostaje prazan prostor – „Toričelijeva praznina“. Da je umesto žive voda, stub bi bio visok preko 10 m!",
-      "rec": "živa"
+      "rec": "živa",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "pritisak",
+        "tip": "toriceli",
+        "visina": "76 cm"
+      }
     },
     {
       "lekcija": 24,
@@ -5207,7 +6421,13 @@
         "Isak Njutn"
       ],
       "zanimljivost": "Toričeli je bio Galilejev učenik i ogled je izveo 1643. godine.",
-      "rec": "toričeli"
+      "rec": "toričeli",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "pritisak",
+        "tip": "toriceli",
+        "visina": "76 cm"
+      }
     },
     {
       "pitanje": "Šta vazdušni pritisak čini sa tačkom ključanja vode na vrhu visoke planine?",
@@ -5233,7 +6453,12 @@
         "Udvostručuje se"
       ],
       "zanimljivost": "Na vrhu Mont Everesta pritisak je oko trećine onog na nivou mora – planinari nose bocu kiseonika.",
-      "rec": "visina"
+      "rec": "visina",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "pritisak",
+        "tip": "visina"
+      }
     },
     {
       "lekcija": 24,
@@ -5285,7 +6510,13 @@
         "Živa je providna"
       ],
       "zanimljivost": "Paskal je navodno napravio barometar sa crnim vinom – stub je bio visok preko 10 m!",
-      "rec": "živa"
+      "rec": "živa",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "pritisak",
+        "tip": "toriceli",
+        "visina": "76 cm"
+      }
     },
     {
       "lekcija": 24,

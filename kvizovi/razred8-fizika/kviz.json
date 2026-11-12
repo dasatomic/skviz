@@ -141,7 +141,12 @@
         "Mirovanje tela u položaju stabilne ravnoteže na podlozi"
       ],
       "zanimljivost": "Ljuljaška, klatno sata i žica gitare osciluju.",
-      "rec": "oscilacija"
+      "rec": "oscilacija",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "opruga",
+        "oznake": true
+      }
     },
     {
       "lekcija": 1,
@@ -180,7 +185,12 @@
         "Najveća brzina tela u ravnotežnom položaju klatna"
       ],
       "zanimljivost": "Kod zvuka, veća amplituda znači glasniji zvuk.",
-      "rec": "amplituda"
+      "rec": "amplituda",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "opruga",
+        "oznake": true
+      }
     },
     {
       "lekcija": 1,
@@ -206,7 +216,22 @@
         "Od amplitude jako"
       ],
       "zanimljivost": "Galilej je primetio da period ne zavisi od mase – i da je gotovo isti i kad je zamah mali i kad je malo veći.",
-      "rec": "dužina"
+      "rec": "dužina",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "klatno",
+        "ugao": 20,
+        "klatna": [
+          {
+            "l": 1,
+            "o": "1 m"
+          },
+          {
+            "l": 4,
+            "o": "4 m"
+          }
+        ]
+      }
     },
     {
       "lekcija": 1,
@@ -219,7 +244,22 @@
         "Ne menja se"
       ],
       "zanimljivost": "Period klatna srazmeran je korenu iz dužine.",
-      "rec": "koren"
+      "rec": "koren",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "klatno",
+        "ugao": 20,
+        "klatna": [
+          {
+            "l": 1,
+            "o": "l"
+          },
+          {
+            "l": 4,
+            "o": "4l"
+          }
+        ]
+      }
     },
     {
       "lekcija": 1,
@@ -245,7 +285,14 @@
         "Odmah prestanu, već posle prvog zamaha ljuljaške"
       ],
       "zanimljivost": "Prigušenje izazivaju otpor vazduha i trenje u osloncu.",
-      "rec": "prigušenje"
+      "rec": "prigušenje",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "klatno",
+        "ugao": 35,
+        "energija": true,
+        "prigusenje": 0.15
+      }
     },
     {
       "lekcija": 1,
@@ -336,7 +383,14 @@
         "Nigde – brzina klatna je stalno nula"
       ],
       "zanimljivost": "U krajnjim položajima klatno se za trenutak zaustavi.",
-      "rec": "brzina"
+      "rec": "brzina",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "klatno",
+        "ugao": 35,
+        "energija": true,
+        "brzina": true
+      }
     },
     {
       "lekcija": 2,
@@ -349,7 +403,14 @@
         "Nema je uopšte, jer klatno stalno osciluje"
       ],
       "zanimljivost": "Tu je kinetička energija nula, a sva energija je potencijalna.",
-      "rec": "položaj"
+      "rec": "položaj",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "klatno",
+        "ugao": 35,
+        "energija": true,
+        "brzina": true
+      }
     },
     {
       "lekcija": 2,
@@ -362,7 +423,14 @@
         "Pretvara se u masu tega koji visi na klatnu"
       ],
       "zanimljivost": "Kinetička i potencijalna energija se neprekidno pretvaraju jedna u drugu.",
-      "rec": "održanje"
+      "rec": "održanje",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "klatno",
+        "ugao": 35,
+        "energija": true,
+        "brzina": true
+      }
     },
     {
       "lekcija": 2,
@@ -375,7 +443,13 @@
         "Električna"
       ],
       "zanimljivost": "Mehanički satovi „žive“ od energije sabijene opruge, koju predaju klatnu ili nemiru.",
-      "rec": "opruga"
+      "rec": "opruga",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "opruga",
+        "energija": true,
+        "brzina": true
+      }
     },
     {
       "lekcija": 2,
@@ -388,7 +462,14 @@
         "Zemlja se zaustavi"
       ],
       "zanimljivost": "Izgubljena mehanička energija prelazi u toplotu – vrlo malo zagreje vazduh i lance.",
-      "rec": "trenje"
+      "rec": "trenje",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "klatno",
+        "ugao": 35,
+        "energija": true,
+        "prigusenje": 0.15
+      }
     },
     {
       "lekcija": 2,
@@ -479,7 +560,13 @@
         "Nikad"
       ],
       "zanimljivost": "Opruga je tada najviše sabijena ili istegnuta.",
-      "rec": "krajnji"
+      "rec": "krajnji",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "opruga",
+        "energija": true,
+        "brzina": true
+      }
     },
     {
       "lekcija": 2,
@@ -492,7 +579,24 @@
         "Klatno ne osciluje"
       ],
       "zanimljivost": "Na Mesecu je ubrzanje teže oko 6 puta manje, pa je period oko √6 puta duži.",
-      "rec": "mesec"
+      "rec": "mesec",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "klatno",
+        "ugao": 20,
+        "klatna": [
+          {
+            "l": 1,
+            "o": "~Zemlja"
+          },
+          {
+            "l": 1,
+            "g": 0.165,
+            "o": "~Mesec",
+            "b": 4
+          }
+        ]
+      }
     },
     {
       "lekcija": 2,
@@ -531,7 +635,12 @@
         "Kretanje lopte kada je šutnemo nogom"
       ],
       "zanimljivost": "Talas prenosi energiju, a ne supstancu – plovak na talasu samo se ljulja gore-dole.",
-      "rec": "talas"
+      "rec": "talas",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "talas",
+        "tip": "poprecni"
+      }
     },
     {
       "lekcija": 3,
@@ -544,7 +653,13 @@
         "Broj talasa koji prođu kroz neku tačku u sekundi"
       ],
       "zanimljivost": "Talasna dužina se označava grčkim slovom lambda (λ).",
-      "rec": "lambda"
+      "rec": "lambda",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "talas",
+        "tip": "poprecni",
+        "oznake": true
+      }
     },
     {
       "lekcija": 3,
@@ -570,7 +685,12 @@
         "Zvučni talasi u vazduhu, koje čujemo kada čestice vazduha osciluju oko nas"
       ],
       "zanimljivost": "Talas na užetu koje trzneš rukom je transverzalan.",
-      "rec": "uže"
+      "rec": "uže",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "talas",
+        "tip": "poprecni"
+      }
     },
     {
       "lekcija": 3,
@@ -583,7 +703,13 @@
         "Talasi koji se prostiru samo u vakuumu, bez ikakve sredine"
       ],
       "zanimljivost": "Zvuk u vazduhu je longitudinalni talas – zgušnjavanja i razređivanja vazduha.",
-      "rec": "zgušnjenje"
+      "rec": "zgušnjenje",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "talas",
+        "tip": "uzduzni",
+        "oznake": true
+      }
     },
     {
       "lekcija": 3,
@@ -609,7 +735,12 @@
         "Samo vazduh, kada je talas zvuk"
       ],
       "zanimljivost": "Navijači na stadionu prave „meksički talas“ – svaki ustane i sedne, a talas „putuje“ tribinama.",
-      "rec": "meksički"
+      "rec": "meksički",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "talas",
+        "tip": "kruzni"
+      }
     },
     {
       "lekcija": 3,
@@ -648,7 +779,13 @@
         "Isto"
       ],
       "zanimljivost": "Visina od dolje do brega dvostruka je amplituda.",
-      "rec": "breg"
+      "rec": "breg",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "talas",
+        "tip": "poprecni",
+        "oznake": true
+      }
     },
     {
       "lekcija": 3,
@@ -661,7 +798,12 @@
         "Nikakvi"
       ],
       "zanimljivost": "Kad bacimo dva kamena, talasi se seku i „pojačavaju ili slabe“ – to je interferencija.",
-      "rec": "krug"
+      "rec": "krug",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "talas",
+        "tip": "kruzni"
+      }
     },
     {
       "lekcija": 3,
@@ -797,6 +939,23 @@
         "note": "C4 E4 G4 C5",
         "tempo": 100,
         "instrument": "klavir"
+      },
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "talas",
+        "tip": "poredi",
+        "talasi": [
+          {
+            "A": 22,
+            "lambda": 120,
+            "o": "~nizak ton"
+          },
+          {
+            "A": 22,
+            "lambda": 45,
+            "o": "~visok ton"
+          }
+        ]
       }
     },
     {
@@ -810,7 +969,24 @@
         "Od temperature samo"
       ],
       "zanimljivost": "Glasnoća se izražava u decibelima (dB) – šapat je oko 30 dB, a rok koncert preko 110 dB.",
-      "rec": "decibel"
+      "rec": "decibel",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "talas",
+        "tip": "poredi",
+        "talasi": [
+          {
+            "A": 10,
+            "lambda": 80,
+            "o": "~tih zvuk"
+          },
+          {
+            "A": 30,
+            "lambda": 80,
+            "o": "~glasan zvuk"
+          }
+        ]
+      }
     },
     {
       "lekcija": 4,
@@ -842,7 +1018,12 @@
         "Muzika"
       ],
       "zanimljivost": "Da bismo čuli odvojen odjek, prepreka mora biti udaljena bar oko 17 m.",
-      "rec": "eho"
+      "rec": "eho",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "talas",
+        "tip": "jeka"
+      }
     },
     {
       "lekcija": 4,
@@ -894,7 +1075,12 @@
         "Difrakcija"
       ],
       "zanimljivost": "Sirena hitne pomoći zvuči više dok prilazi, a niže kad prođe pored nas.",
-      "rec": "dopler"
+      "rec": "dopler",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "talas",
+        "tip": "dopler"
+      }
     },
     {
       "lekcija": 4,
@@ -933,7 +1119,12 @@
         "Ne prostire se"
       ],
       "zanimljivost": "Zato predmeti bacaju oštru senku – svetlost ne „skreće“ iza ugla.",
-      "rec": "prava"
+      "rec": "prava",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "senka",
+        "tip": "tackasti"
+      }
     },
     {
       "lekcija": 5,
@@ -946,7 +1137,12 @@
         "Senka svetli slabom svetlošću koju telo samo emituje, pa nam izgleda tamnije od okoline"
       ],
       "zanimljivost": "Senka je duža ujutru i uveče, kada je Sunce nisko.",
-      "rec": "senka"
+      "rec": "senka",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "senka",
+        "tip": "tackasti"
+      }
     },
     {
       "lekcija": 5,
@@ -959,7 +1155,13 @@
         "Svetlost Meseca"
       ],
       "zanimljivost": "Kod pomračenja Sunca ljudi u polusenci vide delimično pomračenje.",
-      "rec": "polusenka"
+      "rec": "polusenka",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "senka",
+        "tip": "oba",
+        "oznake": true
+      }
     },
     {
       "lekcija": 5,
@@ -972,7 +1174,12 @@
         "Duga"
       ],
       "zanimljivost": "Pri pomračenju Mesec često postane crvenkast – „krvavi Mesec“ – jer ga obasjava svetlost prelomljena kroz Zemljinu atmosferu.",
-      "rec": "pomračenje"
+      "rec": "pomračenje",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "pomracenje",
+        "tip": "meseca"
+      }
     },
     {
       "lekcija": 5,
@@ -1011,7 +1218,11 @@
         "Mikroskop sa malim otvorom kroz koji se gledaju sitni predmeti"
       ],
       "zanimljivost": "Princip mračne komore poznavali su još stari Kinezi i Aristotel – to je preteča fotoaparata.",
-      "rec": "komora"
+      "rec": "komora",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "kamera"
+      }
     },
     {
       "lekcija": 5,
@@ -1024,7 +1235,12 @@
         "Zbog boje unutrašnjih zidova – crna boja obrće svetlost koja pada na nju"
       ],
       "zanimljivost": "Isto se dešava u našem oku – lik na mrežnjači je obrnut, a mozak ga „ispravi“.",
-      "rec": "obrnut"
+      "rec": "obrnut",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "kamera",
+        "e": "🕯️"
+      }
     },
     {
       "lekcija": 5,
@@ -1050,7 +1266,12 @@
         "Kada Venera dođe između Sunca i Zemlje"
       ],
       "zanimljivost": "Mesec je oko 400 puta manji od Sunca, ali i oko 400 puta bliži – zato ga može tačno prekriti.",
-      "rec": "sunce"
+      "rec": "sunce",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "pomracenje",
+        "tip": "sunca"
+      }
     },
     {
       "lekcija": 5,
@@ -1128,7 +1349,12 @@
         "Svetlost se ne odbija"
       ],
       "zanimljivost": "Bilijarska kugla se od ivice stola odbija po istom pravilu.",
-      "rec": "ugao"
+      "rec": "ugao",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "ogledalo",
+        "menja": true
+      }
     },
     {
       "lekcija": 6,
@@ -1141,7 +1367,14 @@
         "Umanjen upola i pomeren duboko iza ogledala, u dubinu zida"
       ],
       "zanimljivost": "Zato je na kolima hitne pomoći natpis napisan „u ogledalu“ – da ga vozač ispred pročita u retrovizoru.",
-      "rec": "ogledalo"
+      "rec": "ogledalo",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "ogledalo",
+        "tip": "lik",
+        "o1": "d",
+        "o2": "d"
+      }
     },
     {
       "lekcija": 6,
@@ -1154,7 +1387,14 @@
         "Na samom ogledalu, na površini"
       ],
       "zanimljivost": "Ako stojiš 2 m od ogledala, tvoj lik je 4 m od tebe.",
-      "rec": "rastojanje"
+      "rec": "rastojanje",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "ogledalo",
+        "tip": "lik",
+        "o1": "d",
+        "o2": "d"
+      }
     },
     {
       "lekcija": 6,
@@ -1180,7 +1420,12 @@
         "Upijanje svetlosti u tamnim i crnim površinama tela"
       ],
       "zanimljivost": "Zbog difuznog odbijanja vidimo zidove i papir iz svakog ugla sobe.",
-      "rec": "difuzno"
+      "rec": "difuzno",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "ogledalo",
+        "tip": "difuzno"
+      }
     },
     {
       "lekcija": 6,
@@ -1193,7 +1438,12 @@
         "Ugao senke"
       ],
       "zanimljivost": "Normala je zamišljena prava normalna na površinu ogledala.",
-      "rec": "normala"
+      "rec": "normala",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "ogledalo",
+        "ugao": 40
+      }
     },
     {
       "lekcija": 6,
@@ -1219,7 +1469,12 @@
         "Jak magnet koji usmerava svetlost kroz dugačku metalnu cev"
       ],
       "zanimljivost": "Podmornice periskopom osmatraju površinu dok su pod vodom.",
-      "rec": "periskop"
+      "rec": "periskop",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "ogledalo",
+        "tip": "periskop"
+      }
     },
     {
       "lekcija": 6,
@@ -1284,7 +1539,21 @@
       "tezina": 2,
       "zanimljivost": "Lik je iza ogledala isto toliko koliko si ti ispred njega – 2 m. Zato je od tebe udaljen ukupno 4 m.",
       "rec": "ogledalo",
-      "lekcija": 6
+      "lekcija": 6,
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "ogledalo",
+        "tip": "lik",
+        "o1": "2 m",
+        "o2": "?"
+      },
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "ogledalo",
+        "tip": "lik",
+        "o1": "2 m",
+        "o2": "2 m"
+      }
     },
     {
       "lekcija": 6,
@@ -1336,7 +1605,13 @@
         "Na ogledalu"
       ],
       "zanimljivost": "Arhimed je, prema legendi, ogledalima palio rimske brodove – fokusirajući sunčevu svetlost.",
-      "rec": "žiža"
+      "rec": "žiža",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "sferno",
+        "tip": "konkavno",
+        "snop": true
+      }
     },
     {
       "lekcija": 7,
@@ -1362,7 +1637,13 @@
         "Nema lika – zraci se uopšte ne odbijaju"
       ],
       "zanimljivost": "Zato kozmetička ogledala uvećavaju lice kad smo blizu njih.",
-      "rec": "uvećan"
+      "rec": "uvećan",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "sferno",
+        "tip": "konkavno",
+        "predmet": 0.5
+      }
     },
     {
       "lekcija": 7,
@@ -1375,7 +1656,13 @@
         "Rastojanje od ogledala do samog Sunca"
       ],
       "zanimljivost": "Žižna daljina sfernog ogledala jednaka je polovini poluprečnika krivine.",
-      "rec": "žiža"
+      "rec": "žiža",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "sferno",
+        "tip": "konkavno",
+        "snop": true
+      }
     },
     {
       "lekcija": 7,
@@ -1401,7 +1688,13 @@
         "Isti kao predmet"
       ],
       "zanimljivost": "Na tom principu radi teleskop reflektor – prvi je napravio Njutn 1668.",
-      "rec": "teleskop"
+      "rec": "teleskop",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "sferno",
+        "tip": "konkavno",
+        "predmet": 4
+      }
     },
     {
       "lekcija": 7,
@@ -1414,7 +1707,13 @@
         "Nijedno"
       ],
       "zanimljivost": "U ispupčenoj zadnjoj strani kašike vidiš sebe umanjeno i uspravno.",
-      "rec": "ispupčeno"
+      "rec": "ispupčeno",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "sferno",
+        "tip": "konveksno",
+        "predmet": 2
+      }
     },
     {
       "lekcija": 7,
@@ -1479,7 +1778,13 @@
         "Lik iste veličine, koji nastaje na mestu predmeta"
       ],
       "zanimljivost": "Zato se izvor svetlosti u reflektoru postavlja tačno u žižu.",
-      "rec": "beskonačno"
+      "rec": "beskonačno",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "sferno",
+        "tip": "konkavno",
+        "predmet": 1
+      }
     },
     {
       "lekcija": 7,
@@ -1713,7 +2018,14 @@
         "Rasipanje bele svetlosti u boje duge pri svakom prolasku kroz vazduh"
       ],
       "zanimljivost": "Zbog prelamanja olovka u čaši vode izgleda „slomljena“.",
-      "rec": "prelamanje"
+      "rec": "prelamanje",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "prelamanje",
+        "gore": "vazduh",
+        "dole": "voda",
+        "ugao": 50
+      }
     },
     {
       "lekcija": 9,
@@ -1726,7 +2038,14 @@
         "Vraća se nazad"
       ],
       "zanimljivost": "Zato ribolovac mora da cilja ispod mesta gde „vidi“ ribu.",
-      "rec": "normala"
+      "rec": "normala",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "prelamanje",
+        "gore": "vazduh",
+        "dole": "voda",
+        "ugao": 50
+      }
     },
     {
       "lekcija": 9,
@@ -1739,7 +2058,15 @@
         "Upijanje svetlosti u crnoj površini, pri čemu se sva svetlost pretvara u toplotu i nema odbijanja"
       ],
       "zanimljivost": "Na totalnoj refleksiji rade optička vlakna i blistanje dijamanta.",
-      "rec": "refleksija"
+      "rec": "refleksija",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "prelamanje",
+        "gore": "vazduh",
+        "dole": "voda",
+        "iz": "dole",
+        "menja": true
+      }
     },
     {
       "lekcija": 9,
@@ -1752,7 +2079,15 @@
         "Kada svetlost pada na hrapavu površinu i odbija se u svim pravcima"
       ],
       "zanimljivost": "Ronilac koji gleda naviše vidi površinu vode kao ogledalo, osim u krugu iznad sebe.",
-      "rec": "uslov"
+      "rec": "uslov",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "prelamanje",
+        "gore": "vazduh",
+        "dole": "voda",
+        "iz": "dole",
+        "menja": true
+      }
     },
     {
       "lekcija": 9,
@@ -1791,7 +2126,15 @@
         "Oko 0°"
       ],
       "zanimljivost": "Za dijamant je granični ugao samo oko 24°, pa svetlost u njemu „luta“ i izlazi kao iskre.",
-      "rec": "granični"
+      "rec": "granični",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "prelamanje",
+        "gore": "vazduh",
+        "dole": "voda",
+        "iz": "dole",
+        "menja": true
+      }
     },
     {
       "lekcija": 9,
@@ -1804,7 +2147,14 @@
         "Senka koju baca predmet iza sebe"
       ],
       "zanimljivost": "Uglovi u optici se uvek mere od normale, a ne od površine.",
-      "rec": "normala"
+      "rec": "normala",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "prelamanje",
+        "gore": "vazduh",
+        "dole": "voda",
+        "ugao": 50
+      }
     },
     {
       "lekcija": 9,
@@ -1843,7 +2193,14 @@
         "Menja boju u plavu ili zelenu kao voda"
       ],
       "zanimljivost": "Pojava se zove prividni lom – ali olovka je, naravno, cela.",
-      "rec": "olovka"
+      "rec": "olovka",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "prelamanje",
+        "gore": "vazduh",
+        "dole": "voda",
+        "ugao": 50
+      }
     },
     {
       "lekcija": 9,
@@ -1886,7 +2243,11 @@
         "Termometrom, merenjem temperature"
       ],
       "zanimljivost": "Svetlost kroz vlakno ide „krivudavim“ putem zahvaljujući totalnoj refleksiji.",
-      "rec": "endoskop"
+      "rec": "endoskop",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "vlakno"
+      }
     },
     {
       "lekcija": 9,
@@ -1912,7 +2273,11 @@
         "Postaje jača"
       ],
       "zanimljivost": "Njutn je 1666. prvi pokazao da je bela svetlost mešavina svih boja.",
-      "rec": "spektar"
+      "rec": "spektar",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "prizma"
+      }
     },
     {
       "lekcija": 10,
@@ -1925,7 +2290,11 @@
         "Žuta svetlost"
       ],
       "zanimljivost": "Crvena se najmanje prelama – zato je na vrhu duge.",
-      "rec": "ljubičasta"
+      "rec": "ljubičasta",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "prizma"
+      }
     },
     {
       "lekcija": 10,
@@ -1951,7 +2320,11 @@
         "Raspršen u sve boje duge na drugoj strani"
       ],
       "zanimljivost": "Zato kroz prozor vidimo predmete gotovo neizmenjene.",
-      "rec": "ploča"
+      "rec": "ploča",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "ploca"
+      }
     },
     {
       "lekcija": 10,
@@ -1964,7 +2337,11 @@
         "Zelena, žuta, crvena"
       ],
       "zanimljivost": "Mnemotehnika na engleskom je „ROY G BIV“ – po prvim slovima boja.",
-      "rec": "boje"
+      "rec": "boje",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "prizma"
+      }
     },
     {
       "lekcija": 10,
@@ -1977,7 +2354,11 @@
         "Totalna refleksija"
       ],
       "zanimljivost": "Disperzija stvara i šarene ivice na naočarima i jeftinim sočivima.",
-      "rec": "disperzija"
+      "rec": "disperzija",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "prizma"
+      }
     },
     {
       "lekcija": 10,
@@ -2120,7 +2501,13 @@
         "Uvek okruglo kao lopta"
       ],
       "zanimljivost": "Rasipna sočiva nose kratkovide osobe.",
-      "rec": "rasipno"
+      "rec": "rasipno",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "socivo",
+        "tip": "rasipno",
+        "snop": true
+      }
     },
     {
       "lekcija": 11,
@@ -2133,7 +2520,13 @@
         "Mesto gde stoji predmet"
       ],
       "zanimljivost": "Kod rasipnog sočiva žiža je imaginarna – u njoj se seku produžeci zraka.",
-      "rec": "žiža"
+      "rec": "žiža",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "socivo",
+        "tip": "sabirno",
+        "snop": true
+      }
     },
     {
       "lekcija": 11,
@@ -2159,7 +2552,13 @@
         "Nema lika"
       ],
       "zanimljivost": "Predmet se mora staviti između lupe i njene žiže.",
-      "rec": "uvećan"
+      "rec": "uvećan",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "socivo",
+        "tip": "sabirno",
+        "predmet": 0.5
+      }
     },
     {
       "lekcija": 11,
@@ -2172,7 +2571,13 @@
         "Iste veličine"
       ],
       "zanimljivost": "Tako radi i fotoaparat – na senzoru nastaje mali obrnut lik.",
-      "rec": "fotoaparat"
+      "rec": "fotoaparat",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "socivo",
+        "tip": "sabirno",
+        "predmet": 3
+      }
     },
     {
       "lekcija": 11,
@@ -2185,7 +2590,13 @@
         "Nikakav lik – rasipno sočivo ne daje lik"
       ],
       "zanimljivost": "Špijunka na vratima koristi rasipno sočivo – vidi se širok prostor, ali umanjeno.",
-      "rec": "špijunka"
+      "rec": "špijunka",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "socivo",
+        "tip": "rasipno",
+        "predmet": 2
+      }
     },
     {
       "lekcija": 11,
@@ -2211,7 +2622,13 @@
         "Najdeblji deo sočiva, koji je uvek isto što i žiža"
       ],
       "zanimljivost": "Zrak kroz optički centar je jedan od tri karakteristična zraka za konstrukciju lika.",
-      "rec": "centar"
+      "rec": "centar",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "socivo",
+        "tip": "sabirno",
+        "predmet": 3
+      }
     },
     {
       "lekcija": 11,
@@ -2224,7 +2641,13 @@
         "Iste veličine"
       ],
       "zanimljivost": "Na ovom principu radi projektor – mali slajd daje veliki lik na platnu.",
-      "rec": "projektor"
+      "rec": "projektor",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "socivo",
+        "tip": "sabirno",
+        "predmet": 1.5
+      }
     },
     {
       "lekcija": 11,
@@ -2276,7 +2699,13 @@
         "Senka predmeta koja nastaje na zidu kad se predmet osvetli lampom"
       ],
       "zanimljivost": "Na zidu sobe sabirnim sočivom možeš uhvatiti obrnut lik prozora.",
-      "rec": "zaklon"
+      "rec": "zaklon",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "socivo",
+        "tip": "sabirno",
+        "predmet": 3
+      }
     },
     {
       "lekcija": 11,
@@ -2354,7 +2783,13 @@
         "Zvukom, isto kao šišmiš – šalje zvuk i hvata odjek od svakog predmeta"
       ],
       "zanimljivost": "Prva sačuvana fotografija napravljena je 1826/1827. i snimanje je trajalo više sati.",
-      "rec": "fotoaparat"
+      "rec": "fotoaparat",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "socivo",
+        "tip": "sabirno",
+        "predmet": 3
+      }
     },
     {
       "lekcija": 12,
@@ -2406,7 +2841,13 @@
         "Kamera za snimanje"
       ],
       "zanimljivost": "Prvi bioskopski projektor napravili su braća Limijer 1895. u Parizu.",
-      "rec": "limijer"
+      "rec": "limijer",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "socivo",
+        "tip": "sabirno",
+        "predmet": 1.5
+      }
     },
     {
       "lekcija": 12,
@@ -2588,7 +3029,12 @@
         "Vrsta mikroskopa"
       ],
       "zanimljivost": "Listići elektroskopa se razmaknu jer se istoimeno naelektrisani odbijaju.",
-      "rec": "elektroskop"
+      "rec": "elektroskop",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "naelektrisanje",
+        "tip": "elektroskop"
+      }
     },
     {
       "lekcija": 13,
@@ -2601,7 +3047,12 @@
         "Gubitak naelektrisanja kada telo dodirne zemlju, pa sve naelektrisanje oteče u nju"
       ],
       "zanimljivost": "Zato naelektrisan češalj privlači i neutralne papiriće.",
-      "rec": "indukcija"
+      "rec": "indukcija",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "naelektrisanje",
+        "tip": "elektroskop"
+      }
     },
     {
       "lekcija": 13,
@@ -2640,7 +3091,12 @@
         "Ništa"
       ],
       "zanimljivost": "Istoimena naelektrisanja se odbijaju, raznoimena privlače.",
-      "rec": "odbijanje"
+      "rec": "odbijanje",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "naelektrisanje",
+        "znaci": "--"
+      }
     },
     {
       "lekcija": 13,
@@ -2692,7 +3148,12 @@
         "Poništavaju se uvek"
       ],
       "zanimljivost": "Ova sila drži elektrone uz jezgro atoma.",
-      "rec": "privlačenje"
+      "rec": "privlačenje",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "naelektrisanje",
+        "znaci": "+-"
+      }
     },
     {
       "lekcija": 14,
@@ -2874,7 +3335,12 @@
       "tezina": 2,
       "zanimljivost": "Listići se odbijaju jer su naelektrisani istim znakom. Što je naelektrisanje veće, razmak je veći.",
       "rec": "elektroskop",
-      "lekcija": 14
+      "lekcija": 14,
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "naelektrisanje",
+        "tip": "elektroskop"
+      }
     },
     {
       "lekcija": 15,
@@ -2887,7 +3353,13 @@
         "Livada"
       ],
       "zanimljivost": "Polje se ne vidi, ali se može prikazati linijama sila.",
-      "rec": "polje"
+      "rec": "polje",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "naelektrisanje",
+        "tip": "polje",
+        "znak": "+"
+      }
     },
     {
       "lekcija": 15,
@@ -2900,7 +3372,13 @@
         "Ne crtaju se, jer se električno polje ne vidi"
       ],
       "zanimljivost": "Kod negativnog naelektrisanja linije ulaze u njega.",
-      "rec": "linije"
+      "rec": "linije",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "naelektrisanje",
+        "tip": "polje",
+        "znak": "+"
+      }
     },
     {
       "lekcija": 15,
@@ -3277,7 +3755,18 @@
         "Svetlost"
       ],
       "zanimljivost": "U metalima struju čine slobodni elektroni.",
-      "rec": "struja"
+      "rec": "struja",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "kolo",
+        "elementi": [
+          {
+            "t": "sijalica"
+          }
+        ],
+        "izvor": "4,5 V",
+        "elektroni": true
+      }
     },
     {
       "lekcija": 17,
@@ -3329,7 +3818,17 @@
         "Nema smera – struja ide istovremeno na obe strane od izvora struje"
       ],
       "zanimljivost": "Elektroni se zapravo kreću suprotno – smer je dogovoren pre nego što je elektron otkriven.",
-      "rec": "smer"
+      "rec": "smer",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "kolo",
+        "elementi": [
+          {
+            "t": "sijalica"
+          }
+        ],
+        "izvor": "4,5 V"
+      }
     },
     {
       "lekcija": 17,
@@ -3472,7 +3971,18 @@
         "Prekidač"
       ],
       "zanimljivost": "Ako je kolo prekinuto bilo gde, struja ne teče i sijalica ne svetli.",
-      "rec": "kolo"
+      "rec": "kolo",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "kolo",
+        "elementi": [
+          {
+            "t": "sijalica"
+          }
+        ],
+        "izvor": "4,5 V",
+        "prekidac": "klik"
+      }
     },
     {
       "lekcija": 18,
@@ -3511,7 +4021,18 @@
         "Preko izvora uvek"
       ],
       "zanimljivost": "Ampermetar ima veoma mali otpor da ne bi smanjio struju u kolu.",
-      "rec": "redno"
+      "rec": "redno",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "kolo",
+        "elementi": [
+          {
+            "t": "sijalica"
+          }
+        ],
+        "izvor": "4,5 V",
+        "ampermetar": true
+      }
     },
     {
       "lekcija": 18,
@@ -3524,7 +4045,21 @@
         "Ne vezuje se u kolo uopšte"
       ],
       "zanimljivost": "Voltmetar ima veoma veliki otpor – kroz njega teče zanemarljiva struja.",
-      "rec": "paralelno"
+      "rec": "paralelno",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "kolo",
+        "elementi": [
+          {
+            "t": "sijalica"
+          },
+          {
+            "t": "sijalica"
+          }
+        ],
+        "izvor": "4,5 V",
+        "voltmetar": 0
+      }
     },
     {
       "lekcija": 18,
@@ -3537,7 +4072,18 @@
         "Pravi struju kada se pritisne prstom"
       ],
       "zanimljivost": "Prekidač za svetlo u sobi zapravo samo spaja ili razdvaja žice.",
-      "rec": "prekidač"
+      "rec": "prekidač",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "kolo",
+        "elementi": [
+          {
+            "t": "sijalica"
+          }
+        ],
+        "izvor": "4,5 V",
+        "prekidac": "klik"
+      }
     },
     {
       "lekcija": 18,
@@ -3615,7 +4161,24 @@
         "Samo susedne se ugase"
       ],
       "zanimljivost": "Moderne lampice imaju zaštitu – pregorela sijalica ne prekida ceo niz.",
-      "rec": "jelka"
+      "rec": "jelka",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "kolo",
+        "elementi": [
+          {
+            "t": "sijalica"
+          },
+          {
+            "t": "sijalica",
+            "pregorela": true
+          },
+          {
+            "t": "sijalica"
+          }
+        ],
+        "izvor": "12 V"
+      }
     },
     {
       "lekcija": 18,
@@ -3862,7 +4425,26 @@
         "Nisu vezani"
       ],
       "zanimljivost": "Kod rednog vezivanja kroz sve otpornike teče ista struja.",
-      "rec": "redno"
+      "rec": "redno",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "kolo",
+        "elementi": [
+          {
+            "t": "otpornik",
+            "o": "R₁"
+          },
+          {
+            "t": "otpornik",
+            "o": "R₂"
+          },
+          {
+            "t": "otpornik",
+            "o": "R₃"
+          }
+        ],
+        "izvor": "12 V"
+      }
     },
     {
       "lekcija": 20,
@@ -3877,8 +4459,19 @@
       "zanimljivost": "Kod rednog vezivanja otpori se sabiraju.",
       "rec": "zbir",
       "mediji": {
-        "vrsta": "formula",
-        "tekst": "R = R₁ + R₂"
+        "vrsta": "fizika",
+        "scena": "kolo",
+        "elementi": [
+          {
+            "t": "otpornik",
+            "o": "4 Ω"
+          },
+          {
+            "t": "otpornik",
+            "o": "6 Ω"
+          }
+        ],
+        "izvor": "U"
       }
     },
     {
@@ -3892,7 +4485,23 @@
         "36 Ω"
       ],
       "zanimljivost": "Kod paralelne veze ukupni otpor je manji od najmanjeg pojedinačnog.",
-      "rec": "paralelno"
+      "rec": "paralelno",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "kolo",
+        "veza": "paralelno",
+        "elementi": [
+          {
+            "t": "otpornik",
+            "o": "6 Ω"
+          },
+          {
+            "t": "otpornik",
+            "o": "6 Ω"
+          }
+        ],
+        "izvor": "U"
+      }
     },
     {
       "lekcija": 20,
@@ -3905,7 +4514,25 @@
         "Svi na jednu sijalicu"
       ],
       "zanimljivost": "Zato svaki uređaj radi na istom naponu od 230 V i može se nezavisno uključiti.",
-      "rec": "kuća"
+      "rec": "kuća",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "kolo",
+        "veza": "paralelno",
+        "elementi": [
+          {
+            "t": "sijalica"
+          },
+          {
+            "t": "sijalica"
+          },
+          {
+            "t": "motor"
+          }
+        ],
+        "izvor": "230 V",
+        "prekidac": "klik"
+      }
     },
     {
       "lekcija": 20,
@@ -3931,7 +4558,27 @@
         "3 Ω"
       ],
       "zanimljivost": "1/R = 1/30 + 1/30 + 1/30 = 1/10.",
-      "rec": "računanje"
+      "rec": "računanje",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "kolo",
+        "veza": "paralelno",
+        "elementi": [
+          {
+            "t": "otpornik",
+            "o": "30 Ω"
+          },
+          {
+            "t": "otpornik",
+            "o": "30 Ω"
+          },
+          {
+            "t": "otpornik",
+            "o": "30 Ω"
+          }
+        ],
+        "izvor": "U"
+      }
     },
     {
       "lekcija": 20,
@@ -3996,7 +4643,24 @@
         "17 V"
       ],
       "zanimljivost": "Kod redne veze naponi na otpornicima se sabiraju.",
-      "rec": "razlika"
+      "rec": "razlika",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "kolo",
+        "elementi": [
+          {
+            "t": "otpornik",
+            "o": "R₁"
+          },
+          {
+            "t": "otpornik",
+            "o": "R₂"
+          }
+        ],
+        "izvor": "12 V",
+        "voltmetar": 0,
+        "napon": "5 V"
+      }
     },
     {
       "lekcija": 20,
@@ -4022,7 +4686,26 @@
         "10 A"
       ],
       "zanimljivost": "Prvo Kirhofovo pravilo: zbir struja koje ulaze u čvor jednak je zbiru struja koje izlaze.",
-      "rec": "kirhof"
+      "rec": "kirhof",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "kolo",
+        "veza": "paralelno",
+        "elementi": [
+          {
+            "t": "sijalica"
+          },
+          {
+            "t": "sijalica"
+          }
+        ],
+        "izvor": "U",
+        "ampermetar": "5 A",
+        "ampermetri": [
+          "2 A",
+          "?"
+        ]
+      }
     },
     {
       "lekcija": 20,
@@ -4035,7 +4718,25 @@
         "Može i redno bez razlike"
       ],
       "zanimljivost": "Svaka sijalica u kući dobija punih 230 V.",
-      "rec": "sijalice"
+      "rec": "sijalice",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "kolo",
+        "veza": "paralelno",
+        "elementi": [
+          {
+            "t": "sijalica"
+          },
+          {
+            "t": "sijalica",
+            "pregorela": true
+          },
+          {
+            "t": "sijalica"
+          }
+        ],
+        "izvor": "230 V"
+      }
     },
     {
       "lekcija": 20,
@@ -4477,7 +5178,12 @@
         "Ne postoje"
       ],
       "zanimljivost": "Gvozdeni opiljci oko magneta poređaju se upravo duž ovih linija.",
-      "rec": "linije"
+      "rec": "linije",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "magnet",
+        "tip": "sipka"
+      }
     },
     {
       "lekcija": 23,
@@ -4490,7 +5196,12 @@
         "U Srbiji, blizu planine Kopaonik"
       ],
       "zanimljivost": "Zato severni pol igle kompasa pokazuje na geografski sever.",
-      "rec": "pol"
+      "rec": "pol",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "magnet",
+        "tip": "zemlja"
+      }
     },
     {
       "lekcija": 23,
@@ -4516,7 +5227,12 @@
         "Vreme"
       ],
       "zanimljivost": "Kompas su Kinezi koristili za plovidbu oko 11. veka.",
-      "rec": "kompas"
+      "rec": "kompas",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "magnet",
+        "tip": "zemlja"
+      }
     },
     {
       "lekcija": 23,
@@ -4620,7 +5336,12 @@
         "Nigde"
       ],
       "zanimljivost": "Zato se ekseri najviše lepe na krajevima šipkastog magneta.",
-      "rec": "polovi"
+      "rec": "polovi",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "magnet",
+        "tip": "sipka"
+      }
     },
     {
       "lekcija": 23,
@@ -4646,7 +5367,12 @@
         "Arhimed"
       ],
       "zanimljivost": "Ersted je 1820. tokom predavanja primetio da se igla kompasa pomera kada se uključi struja.",
-      "rec": "ersted"
+      "rec": "ersted",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "magnet",
+        "tip": "zica"
+      }
     },
     {
       "lekcija": 24,
@@ -4659,7 +5385,12 @@
         "Kvadrati oko provodnika, sa uglovima ka polovima"
       ],
       "zanimljivost": "Smer linija određuje se „pravilom desne ruke“.",
-      "rec": "krugovi"
+      "rec": "krugovi",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "magnet",
+        "tip": "zica"
+      }
     },
     {
       "lekcija": 24,
@@ -4672,7 +5403,12 @@
         "Sijalica koja svetli zahvaljujući magnetnom polju oko užarenog vlakna"
       ],
       "zanimljivost": "Elektromagnetne dizalice podižu automobile na otpadu.",
-      "rec": "kalem"
+      "rec": "kalem",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "magnet",
+        "tip": "kalem"
+      }
     },
     {
       "lekcija": 24,
@@ -4711,7 +5447,12 @@
         "Sijalica sa spiralnom niti od volframa"
       ],
       "zanimljivost": "Polje u solenoidu liči na polje šipkastog magneta.",
-      "rec": "solenoid"
+      "rec": "solenoid",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "magnet",
+        "tip": "kalem"
+      }
     },
     {
       "lekcija": 24,
@@ -4724,7 +5465,12 @@
         "Nestaje magnetizam igle kompasa"
       ],
       "zanimljivost": "Smer magnetnog polja zavisi od smera struje.",
-      "rec": "smer"
+      "rec": "smer",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "magnet",
+        "tip": "zica"
+      }
     },
     {
       "lekcija": 24,
@@ -4828,7 +5574,12 @@
         "Ne skreće"
       ],
       "zanimljivost": "Ovim otkrićem su elektricitet i magnetizam spojeni u jednu nauku – elektromagnetizam.",
-      "rec": "polje"
+      "rec": "polje",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "magnet",
+        "tip": "zica"
+      }
     },
     {
       "lekcija": 25,
@@ -5049,7 +5800,12 @@
         "Albert Ajnštajn"
       ],
       "zanimljivost": "Većina alfa-čestica prošla je kroz foliju, a neke su se odbile – kao da „metak odskoči od maramice“.",
-      "rec": "raderford"
+      "rec": "raderford",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "raspad",
+        "tip": "raderford"
+      }
     },
     {
       "lekcija": 26,
@@ -5148,7 +5904,12 @@
         "Atom je pun vode, a jezgro i elektroni plivaju u njoj kao ribe u akvarijumu"
       ],
       "zanimljivost": "Kada bi se iz svih atoma ljudi izbacio „prazan prostor“, celo čovečanstvo stalo bi u zapreminu kocke šećera.",
-      "rec": "praznina"
+      "rec": "praznina",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "raspad",
+        "tip": "raderford"
+      }
     },
     {
       "lekcija": 26,
@@ -5304,7 +6065,13 @@
         "Starost atoma"
       ],
       "zanimljivost": "Ugljenik-14 ima vreme poluraspada oko 5.730 godina – na tome se zasniva datiranje arheoloških nalaza.",
-      "rec": "poluraspad"
+      "rec": "poluraspad",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "raspad",
+        "tip": "poluraspad",
+        "koraka": 4
+      }
     },
     {
       "lekcija": 27,
@@ -5356,7 +6123,13 @@
         "Osmina"
       ],
       "zanimljivost": "Posle tri vremena poluraspada ostaje osmina, posle četiri – šesnaestina.",
-      "rec": "četvrtina"
+      "rec": "četvrtina",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "raspad",
+        "tip": "poluraspad",
+        "koraka": 2
+      }
     },
     {
       "lekcija": 27,
@@ -5499,7 +6272,12 @@
         "Nije moguće"
       ],
       "zanimljivost": "Tri pravila zaštite su: vreme, rastojanje, zaklon.",
-      "rec": "zaštita"
+      "rec": "zaštita",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "raspad",
+        "tip": "prodornost"
+      }
     },
     {
       "lekcija": 28,
@@ -5538,7 +6316,12 @@
         "Kacigu"
       ],
       "zanimljivost": "Olovo je zbog velike gustine odlično u zaustavljanju rendgenskog i gama zračenja.",
-      "rec": "olovo"
+      "rec": "olovo",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "raspad",
+        "tip": "prodornost"
+      }
     },
     {
       "lekcija": 28,
@@ -5629,7 +6412,12 @@
         "Hemijska reakcija"
       ],
       "zanimljivost": "Fisija uranijuma pokreće nuklearne elektrane.",
-      "rec": "fisija"
+      "rec": "fisija",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "raspad",
+        "tip": "fisija"
+      }
     },
     {
       "lekcija": 29,
@@ -5642,7 +6430,12 @@
         "Topljenje čvrstog tela na visokoj temperaturi u tečno stanje"
       ],
       "zanimljivost": "U Suncu se svake sekunde oko 600 miliona tona vodonika pretvori u helijum.",
-      "rec": "fuzija"
+      "rec": "fuzija",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "raspad",
+        "tip": "fuzija"
+      }
     },
     {
       "lekcija": 29,
@@ -5655,7 +6448,12 @@
         "Elektroliza u kojoj se joni kreću u nizu kroz rastvor"
       ],
       "zanimljivost": "U elektrani je lančana reakcija kontrolisana, a u atomskoj bombi nekontrolisana.",
-      "rec": "lanac"
+      "rec": "lanac",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "raspad",
+        "tip": "lancana"
+      }
     },
     {
       "lekcija": 29,
@@ -5733,7 +6531,12 @@
         "Elektricitet"
       ],
       "zanimljivost": "Sunce „sija“ fuzijom oko 4,6 milijardi godina i trajaće još oko 5 milijardi.",
-      "rec": "sunce"
+      "rec": "sunce",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "raspad",
+        "tip": "fuzija"
+      }
     },
     {
       "lekcija": 29,
@@ -5811,7 +6614,12 @@
         "Helijum-4 i helijum-3"
       ],
       "zanimljivost": "Deuterijuma ima u morskoj vodi – u jednoj litri dovoljno za energiju 300 litara benzina, kada bi fuzija bila praktična.",
-      "rec": "deuterijum"
+      "rec": "deuterijum",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "raspad",
+        "tip": "fuzija"
+      }
     },
     {
       "lekcija": 30,
