@@ -603,7 +603,9 @@ const OBLASTI = {
 };
 async function prikaziMapu(k, m) {
   const D = await geo();
-  const kutija = m.kutija || OBLASTI[m.oblast || 'evropa'];
+  const I = window.IstorijskeKarte || { oblasti: {}, linije: {}, karte: {} };
+  const karta = m.karta ? I.karte[m.karta] || {} : null;
+  const kutija = m.kutija || (!m.oblast && karta?.kutija) || OBLASTI[m.oblast || 'evropa'];
   const [x0, y0, x1, y1] = kutija;
   const kos = Math.cos((((y0 + y1) / 2) * Math.PI) / 180);
   const W = 1000, H = Math.round((1000 * (y1 - y0)) / ((x1 - x0) * kos));
@@ -632,21 +634,118 @@ async function prikaziMapu(k, m) {
     k.insertAdjacentHTML('beforeend', svg + '</svg>');
     return () => {};
   }
+  // istorijska karta (public/istorija.js): savremene granice se ne crtaju, preko kopna idu slojevi
+  // (države/oblasti iz tog doba), linije (fronte, pohodi) i natpisi
+  const slojevi = [...(karta?.slojevi || []), ...(m.slojevi || [])];
+  const istorijska = !!(karta || slojevi.length);
+  const kopno = [];
   for (const [kod, rings] of Object.entries(D.drzave)) {
     const ist = istakni.has(kod);
     const vidljivo = rings.some((r) => r.some(([a, b]) => a > x0 - 15 && a < x1 + 15 && b > y0 - 15 && b < y1 + 15));
     if (!vidljivo) continue;
-    const dom = !ist && kod === 'SRB' && !istakni.size && ['srbija', 'balkan'].includes(m.oblast);
-    svg += `<path d="${rings.map(putanja).join('')}" class="${ist ? 'drz ist' : dom ? 'drz dom' : 'drz'}"/>`;
+    const d = rings.map(putanja).join('');
+    kopno.push(d);
+    const dom = !ist && !istorijska && kod === 'SRB' && !istakni.size && ['srbija', 'balkan'].includes(m.oblast);
+    svg += `<path d="${d}" class="${ist ? 'drz ist' : dom ? 'drz dom' : istorijska ? 'drz kop' : 'drz'}"/>`;
   }
-  for (const r of m.reke || []) for (const l of D.reke[r] || []) svg += `<path d="${linija(l)}" class="reka"/>`;
+  if (istorijska) {
+    const id = 'kopno' + Math.random().toString(36).slice(2, 8);
+    svg += `<clipPath id="${id}"><path d="${kopno.join('')}"/></clipPath><g clip-path="url(#${id})">`;
+    const nat = [];
+    for (const s of slojevi) {
+      const o = typeof s.o === 'string' ? I.oblasti[s.o] || {} : s;
+      // država (sa svojim rupama) je jedna putanja, a svaki dodatni prsten posebna – da se preklopljeni ne ponište
+      const delovi = [...(o.d || []).map((kod) => D.drzave[kod] || []).filter((x) => x.length), ...(o.r || []).map((r) => [r])];
+      const prst = delovi.flat();
+      if (!prst.length) continue;
+      const ist = s.kljuc && istakni.has(s.kljuc);
+      svg += `<g class="sl${ist ? ' ist' : ''}" style="fill:${esc(s.boja || '#888')}">${delovi.map((d) => `<path d="${d.map(putanja).join('')}"/>`).join('')}</g>`;
+      const sakrij = m.bezNatpisa === true || (m.sakrij || []).includes(s.kljuc);
+      if (s.natpis && !sakrij) {
+        let na = s.na || o.na;
+        if (!na) {
+          const g = prst.reduce((x, r) => (r.length > x.length ? r : x), []);
+          const [a, b, c, e] = g.reduce(([a, b, c, e], [x, y]) => [Math.min(a, x), Math.min(b, y), Math.max(c, x), Math.max(e, y)], [1e9, 1e9, -1e9, -1e9]);
+          na = [(a + c) / 2, (b + e) / 2];
+        }
+        nat.push({ lon: na[0], lat: na[1], t: s.natpis, vel: s.vel });
+      }
+    }
+    svg += '</g>';
+    const linije = [...(karta?.linije || []), ...(m.linije || [])];
+    linije.forEach((l, i) => {
+      const tt = typeof l.l === 'string' ? I.linije[l.l] || [] : l.tacke || [];
+      if (tt.length < 2) return;
+      const boja = esc(l.boja || '#ff4757'), mid = `${id}s${i}`;
+      if (l.strelica) svg += `<marker id="${mid}" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse"><path d="M0,0L10,5L0,10Z" fill="${boja}"/></marker>`;
+      svg += `<path d="${linija(tt)}" pathLength="1" class="lin${l.isprekidana ? ' isp' : ' crtaj'}" style="stroke:${boja};stroke-width:${l.debljina || 4}px;animation-delay:${(l.kasni || 0) + 0.3}s"${l.strelica ? ` marker-end="url(#${mid})"` : ''}/>`;
+      if (l.natpis) { const [a, b] = l.na || tt[Math.floor(tt.length / 2)]; nat.push({ lon: a, lat: b, t: l.natpis, vel: 'm', boja: l.boja }); }
+    });
+    for (const n of [...nat, ...(karta?.natpisi || []), ...(m.natpisi || [])]) {
+      const [x, y] = px(n.lon, n.lat);
+      const vel = n.vel === 'm' ? 24 : n.vel === 'v' ? 40 : 30;
+      svg += `<text x="${x.toFixed(1)}" y="${(y + vel / 3).toFixed(1)}" class="nat${n.more ? ' more' : ''}" style="font-size:${vel}px${n.boja ? ';fill:' + esc(n.boja) : ''}" text-anchor="middle">${esc(n.t)}</text>`;
+    }
+  }
+  for (const r of [...(karta?.reke || []), ...(m.reke || [])]) for (const l of D.reke[r] || []) svg += `<path d="${linija(l)}" class="reka${istorijska ? ' tiha' : ''}"/>`;
   for (const t of m.tacke || []) {
     const [x, y] = px(t.lon, t.lat);
-    svg += `<g class="pin"><circle cx="${x}" cy="${y}" r="${W / 55}" /><circle cx="${x}" cy="${y}" r="${W / 55}" class="talas"/>`;
+    if (t.znak) svg += `<g class="pin znak"><text x="${x}" y="${y + 14}" text-anchor="middle" font-size="40">${esc(t.znak)}</text>`;
+    else svg += `<g class="pin"><circle cx="${x}" cy="${y}" r="${W / 55}" /><circle cx="${x}" cy="${y}" r="${W / 55}" class="talas"/>`;
     if (t.oznaka) svg += `<text x="${x}" y="${y - W / 40}" text-anchor="middle">${esc(t.oznaka)}</text>`;
     svg += '</g>';
   }
-  k.insertAdjacentHTML('beforeend', svg + '</svg>');
+  const leg = m.legenda ?? karta?.legenda;
+  k.insertAdjacentHTML('beforeend', svg + '</svg>' + (leg && leg.length ? `<div class="legenda">${leg.map(([b, t]) => `<span><i style="background:${esc(b)}"></i>${esc(t)}</span>`).join('')}</div>` : ''));
+  return () => {};
+}
+
+// ───────────────────────── vremenska lenta ─────────────────────────
+// {"vrsta":"lenta","od":1800,"do":1840,"dogadjaji":[{"g":1804,"t":"Prvi srpski ustanak"},{"g":1815,"t":"?","ist":true}],
+//  "periodi":[{"od":1804,"do":1813,"t":"Karađorđe","boja":"#4a90d9"}]}
+function prikaziLentu(k, m) {
+  const od = m.od, dok = m.do, W = 1000, P = 70;
+  const X = (g) => P + ((g - od) / (dok - od)) * (W - 2 * P);
+  const raspon = dok - od;
+  const korak = [1, 2, 5, 10, 20, 25, 50, 100].find((s) => raspon / s <= 10) || 100;
+  const prelomi = (t) => {
+    const reci = String(t).split(' '), red = [];
+    for (const r of reci) { if (red.length && (red[red.length - 1] + ' ' + r).length <= 14) red[red.length - 1] += ' ' + r; else red.push(r); }
+    return red.slice(0, 3);
+  };
+  const ev = (m.dogadjaji || []).map((d, i) => ({ ...d, i, x: X(d.g), redovi: prelomi(d.t) })).sort((a, b) => a.x - b.x);
+  const nivoi = [1, -1, 2, -2, 3, -3, 4, -4], kraj = {};
+  for (const e of ev) {
+    const sir = Math.max(...e.redovi.map((r) => r.length), 6) * 19 + 24;
+    e.tx = Math.min(Math.max(e.x, sir / 2 + 4), W - sir / 2 - 4);
+    const nv = nivoi.find((n) => (kraj[n] ?? -1e9) < e.tx - sir / 2) ?? nivoi[e.i % 2];
+    e.nivo = nv; kraj[nv] = e.tx + sir / 2;
+  }
+  const LV = 150;
+  const gore = Math.max(0, ...ev.map((e) => e.nivo)), dole = Math.max(0, ...ev.map((e) => -e.nivo));
+  const Y0 = gore * LV + 24, H = Y0 + Math.max(dole * LV, 30) + 30;
+  let s = `<svg viewBox="0 0 ${W} ${H}" class="lenta" xmlns="http://www.w3.org/2000/svg">`;
+  s += `<line x1="${P - 30}" y1="${Y0}" x2="${W - P + 30}" y2="${Y0}" class="osa"/><path d="M${W - P + 30},${Y0 - 12}L${W - P + 52},${Y0}L${W - P + 30},${Y0 + 12}Z" class="osa-vrh"/>`;
+  for (const p of m.periodi || []) {
+    const a = X(p.od), b = X(p.do);
+    s += `<rect x="${a}" y="${Y0 - 14}" width="${Math.max(4, b - a)}" height="28" rx="6" style="fill:${esc(p.boja || '#5cc8ff')}" class="period"/>`;
+    if (p.t && (b - a) > p.t.length * 13) s += `<text x="${(a + b) / 2}" y="${Y0 + 8}" text-anchor="middle" class="period-t">${esc(p.t)}</text>`;
+  }
+  for (let g = Math.ceil(od / korak) * korak; g <= dok; g += korak) {
+    s += `<line x1="${X(g)}" y1="${Y0 - 8}" x2="${X(g)}" y2="${Y0 + 8}" class="crtica"/>`;
+    if (!ev.some((e) => Math.abs(e.x - X(g)) < 40)) s += `<text x="${X(g)}" y="${Y0 + (dole ? -22 : 40)}" text-anchor="middle" class="god-osa">${g}.</text>`;
+  }
+  ev.forEach((e, j) => {
+    const gor = e.nivo > 0, n = Math.abs(e.nivo);
+    const yTekst = gor ? Y0 - n * LV + 32 : Y0 + (n - 1) * LV + 54;
+    const yStub = gor ? yTekst + 33 * e.redovi.length + 10 : yTekst - 30;
+    s += `<g class="dog${e.ist ? ' ist' : ''}" style="animation-delay:${0.2 + j * 0.25}s">`;
+    s += `<line x1="${e.x}" y1="${Y0}" x2="${e.tx}" y2="${yStub}" class="stub"/><circle cx="${e.x}" cy="${Y0}" r="11" class="tackaL"/>`;
+    s += `<text x="${e.tx}" y="${yTekst}" text-anchor="middle" class="god">${esc(e.n || Math.floor(e.g) + '.')}</text>`;
+    e.redovi.forEach((r, ri) => (s += `<text x="${e.tx}" y="${yTekst + 33 * (ri + 1)}" text-anchor="middle" class="opis${r === '?' ? ' upit' : ''}">${esc(r)}</text>`));
+    s += '</g>';
+  });
+  k.insertAdjacentHTML('beforeend', s + '</svg>');
   return () => {};
 }
 
@@ -670,7 +769,7 @@ function prikaziSat(k, m) {
 // ───────────────────────── ostalo ─────────────────────────
 function prikaziTekst(k, m) {
   const d = document.createElement('div');
-  d.className = m.vrsta === 'emodzi' ? 'emodzi' : 'formula';
+  d.className = m.vrsta === 'emodzi' ? 'emodzi' : m.vrsta === 'citat' ? 'citat' : 'formula';
   d.textContent = m.tekst;
   k.appendChild(d);
   return () => {};
@@ -792,7 +891,7 @@ function prikaziBiologiju(k, m) {
 const PRIKAZI = {
   slika: prikaziSliku, svg: prikaziSVG, melodija: prikaziMelodiju, morze: prikaziMorze, molekul: prikaziMolekul,
   telo: prikaziTelo, atom: prikaziAtom, planeta: prikaziPlanetu, dnk: prikaziDNK, mapa: prikaziMapu,
-  sat: prikaziSat, formula: prikaziTekst, emodzi: prikaziTekst, geo: prikaziGeo, kod: prikaziKod, fizika: prikaziFiziku,
+  sat: prikaziSat, lenta: prikaziLentu, formula: prikaziTekst, citat: prikaziTekst, emodzi: prikaziTekst, geo: prikaziGeo, kod: prikaziKod, fizika: prikaziFiziku,
   biologija: prikaziBiologiju,
 };
 

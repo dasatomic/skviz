@@ -160,6 +160,7 @@ body.ekran .medij-fizika svg { max-height: 56vh; }
 .formula-mala { color: #fff; font-size: 1.2em; }
 .formula { font-size: 2.6em; font-weight: 900; padding: 22px 10px; letter-spacing: 1px; }
 .kod { margin: 0; padding: 12px 14px; text-align: left; white-space: pre; overflow-x: auto; font: 500 .82em/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; }
+.citat { font-size: 1.9em; font-weight: 800; padding: 22px 14px; line-height: 1.3; color: #ffeaa7; }
 .emodzi { font-size: 3.4em; padding: 18px 10px; letter-spacing: .1em; line-height: 1.3; }
 .mapa { width: 100%; display: block; max-height: 48vh; }
 .mapa .drz { fill: var(--kopno); stroke: #8aa3bf; stroke-width: 1; vector-effect: non-scaling-stroke; }
@@ -169,6 +170,33 @@ body.ekran .medij-fizika svg { max-height: 56vh; }
 .mapa .pin circle { fill: #ff4757; stroke: #fff; stroke-width: 3; vector-effect: non-scaling-stroke; }
 .mapa .pin .talas { fill: none; stroke: #ff4757; animation: talas 1.6s infinite; transform-box: fill-box; transform-origin: center; }
 .mapa .pin text { fill: #fff; font-weight: 900; font-size: 34px; paint-order: stroke; stroke: #000; stroke-width: 6px; }
+/* istorijske karte (public/istorija.js) */
+.mapa .drz.kop { fill: #3b4f66; stroke: #ffffff14; }
+.mapa .sl { opacity: .9; stroke: none; animation: ulaz .6s; }
+.mapa .sl.ist { animation: treptajSloj 1s infinite alternate; }
+.mapa .sl.ist path { stroke: #fff; stroke-width: 2.5; vector-effect: non-scaling-stroke; }
+.mapa .reka.tiha { animation: none; stroke-width: 2.5; opacity: .85; }
+.mapa .lin { fill: none; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+.mapa .lin.crtaj { stroke-dasharray: 1; stroke-dashoffset: 1; animation: crtajLiniju 2.2s ease-out forwards; }
+.mapa .lin.isp { stroke-dasharray: .012 .008; }
+.mapa .nat { fill: #fff; font-weight: 800; paint-order: stroke; stroke: #0b1826; stroke-width: 6px; stroke-linejoin: round; pointer-events: none; }
+.mapa .nat.more { fill: #8fc6ff; font-style: italic; font-weight: 600; stroke-width: 4px; }
+.mapa .pin.znak text { font-size: 40px; stroke: none; }
+.lenta { width: 100%; max-height: 46vh; display: block; }
+.lenta .osa { stroke: #8aa3bf; stroke-width: 6; stroke-linecap: round; }
+.lenta .osa-vrh { fill: #8aa3bf; }
+.lenta .crtica { stroke: #8aa3bf; stroke-width: 3; }
+.lenta .god-osa { fill: #8aa3bf; font-size: 24px; }
+.lenta .period { opacity: .9; }
+.lenta .period-t { fill: #fff; font-size: 20px; font-weight: 800; paint-order: stroke; stroke: #0008; stroke-width: 4px; }
+.lenta .dog { animation: ulaz .5s backwards; }
+.lenta .stub { stroke: #5cc8ff99; stroke-width: 2.5; stroke-dasharray: 5 4; }
+.lenta .tackaL { fill: #5cc8ff; stroke: #fff; stroke-width: 3; }
+.lenta .god { fill: #5cc8ff; font-size: 33px; font-weight: 900; }
+.lenta .opis { fill: #fff; font-size: 30px; font-weight: 600; }
+.lenta .dog.ist .tackaL { fill: var(--istaknuto); animation: puls .8s infinite alternate; transform-box: fill-box; transform-origin: center; }
+.lenta .dog.ist .god, .lenta .dog.ist .opis { fill: var(--istaknuto); }
+.lenta .opis.upit { font-size: 44px; font-weight: 900; }
 .sat { width: 230px; max-width: 70%; margin: 14px auto; display: block; }
 .dugme-zvuk { margin: 18px auto; background: var(--akcent); padding: 14px 26px; border-radius: 99px; font-weight: 700; font-size: 1.1em; display: flex; align-items: center; gap: 10px; box-shadow: 0 0 18px #3390ec66; }
 .dugme-zvuk.svira .ikona-zvuk { animation: puls .4s infinite alternate; }
@@ -299,6 +327,8 @@ body.ekran .odgovori, .odgovori.dvokolonski { grid-template-columns: 1fr 1fr; }
 @keyframes nota { from { transform: translateY(0) rotate(0); opacity: 1; } to { transform: translateY(-70px) rotate(25deg); opacity: 0; } }
 @keyframes treptaj { to { fill: #ffeaa7; } }
 @keyframes treptajReka { to { stroke: #b3e5fc; } }
+@keyframes treptajSloj { to { opacity: .45; } }
+@keyframes crtajLiniju { to { stroke-dashoffset: 0; } }
 @keyframes talas { from { transform: scale(1); opacity: 1; } to { transform: scale(3); opacity: 0; } }
 @keyframes tackice { from { width: 0; } }
 

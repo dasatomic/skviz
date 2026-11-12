@@ -155,7 +155,7 @@ let otisak = { do: 0, v: '' };
 function verzijaKlijenta() {
   if (Date.now() < otisak.do) return otisak.v;
   let v = '';
-  for (const f of ['index.html', 'app.js', 'geo.js', 'fizika.js', 'biologija.js', 'mediji.js', 'pismo.js', 'style.css']) {
+  for (const f of ['index.html', 'app.js', 'geo.js', 'fizika.js', 'biologija.js', 'istorija.js', 'mediji.js', 'pismo.js', 'style.css']) {
     try { const st = fs.statSync(path.join(JAVNO, f)); v += st.size.toString(36) + st.mtimeMs.toString(36); } catch {}
   }
   otisak = { do: Date.now() + 5000, v: crypto.createHash('md5').update(v).digest('hex').slice(0, 10) };

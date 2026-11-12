@@ -5,9 +5,10 @@ const fs = require('fs');
 const path = require('path');
 const KOREN = path.join(__dirname, '..', 'kvizovi');
 const recnik = require('../lib/recnik');
-const VRSTE = ['slika', 'svg', 'melodija', 'morze', 'molekul', 'telo', 'atom', 'planeta', 'dnk', 'mapa', 'sat', 'formula', 'emodzi', 'geo', 'kod', 'fizika', 'biologija'];
+const VRSTE = ['slika', 'svg', 'melodija', 'morze', 'molekul', 'telo', 'atom', 'planeta', 'dnk', 'mapa', 'sat', 'formula', 'emodzi', 'geo', 'kod', 'fizika', 'biologija', 'lenta', 'citat'];
 const SCENE = require('../public/fizika.js').SCENE;
 const BIO_SCENE = require('../public/biologija.js').SCENE;
+const ISTORIJA = require('../public/istorija.js');
 const MOLEKULI = ['voda', 'ugljen-dioksid', 'metan', 'amonijak', 'kiseonik', 'azot', 'vodonik', 'ozon', 'hlorovodonik', 'vodonik-peroksid', 'etanol', 'benzen', 'sumporna-kiselina', 'so', 'dijamant', 'glukoza'];
 
 let greske = 0, upozorenja = 0, ukupno = 0;
@@ -96,6 +97,11 @@ for (const dir of fs.readdirSync(KOREN).sort()) {
         if (m.vrsta === 'fizika' && !SCENE.includes(m.scena)) g(oz, 'nepoznata fizička scena ' + m.scena + ' (postoje: ' + SCENE.join(', ') + ')');
         if (m.vrsta === 'biologija' && !BIO_SCENE.includes(m.scena)) g(oz, 'nepoznata biološka scena ' + m.scena + ' (postoje: ' + BIO_SCENE.join(', ') + ')');
         if (m.vrsta === 'molekul' && !m.atomi && !MOLEKULI.includes(m.ime)) g(oz, 'nepoznat molekul ' + m.ime);
+        if (m.vrsta === 'mapa' && m.karta && !ISTORIJA.karte[m.karta]) g(oz, 'nepoznata istorijska karta ' + m.karta + ' (postoje: ' + Object.keys(ISTORIJA.karte).join(', ') + ')');
+        if (m.vrsta === 'mapa') for (const s of m.slojevi || []) if (typeof s.o === 'string' && !ISTORIJA.oblasti[s.o]) g(oz, 'nepoznata istorijska oblast ' + s.o);
+        if (m.vrsta === 'mapa') for (const l of m.linije || []) if (typeof l.l === 'string' && !ISTORIJA.linije[l.l]) g(oz, 'nepoznata istorijska linija ' + l.l);
+        if (m.vrsta === 'lenta' && (typeof m.od !== 'number' || typeof m.do !== 'number' || !(m.od < m.do) || !Array.isArray(m.dogadjaji) || m.dogadjaji.some((d) => typeof d.g !== 'number' || d.g < m.od || d.g > m.do || !d.t)))
+          g(oz, 'lenta: potrebni su „od“ < „do“ i „dogadjaji“ [{g, t}] sa godinama unutar raspona');
         if (m.vrsta === 'melodija' && !/^[A-HR#b0-9+/.\s]+$/.test(m.note || '')) g(oz, 'neispravan zapis nota');
       }
     }
