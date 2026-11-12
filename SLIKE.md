@@ -173,6 +173,83 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | muzicko | tamburica.jpg | Dejan Krsmanovic | CC BY 2.0 | [izvor](https://sr.wikipedia.org/wiki/%D0%A2%D0%B0%D0%BC%D0%B1%D1%83%D1%80%D0%B0) |
 | muzicko | stradivari.jpg | Geni | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Messiah_Stradivarius) |
 | opsta-kultura | gutenberg.jpg | NYC Wanderer (Kevin Eng) | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Gutenberg_Bible) |
+| razred5-biologija | nautilus.jpg | Hans Hillewaert | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Chambered_nautilus) |
+| razred5-biologija | luci.jpg | 120 | CC BY 2.5 | [izvor](https://en.wikipedia.org/wiki/Lucy_(hominid)) |
+| razred5-biologija | mamut.jpg | Lou.gruber | Public domain | [izvor](https://en.wikipedia.org/wiki/Woolly_mammoth) |
+| razred5-biologija | kuksonija.jpg | Jonathan Chen | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Cooksonia) |
+| razred5-biologija | ruso.jpg | Maurice Quentin de La Tour (Life time: 1788) | Public domain | [izvor](https://en.wikipedia.org/wiki/Jean-Jacques_Rousseau) |
+| razred5-biologija | levenhuk.jpg | Jan Verkolje | Public domain | [izvor](https://en.wikipedia.org/wiki/Antonie_van_Leeuwenhoek) |
+| razred5-biologija | pipeta.jpg | User:Squidonius, myself, and User:Beliason (assumed). | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Pipette) |
+| razred5-biologija | epruveta.jpg | Amitchell125 at English Wikipedia | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Test_tube) |
+| razred5-biologija | avan.jpg | Evan-Amos | Public domain | [izvor](https://en.wikipedia.org/wiki/Mortar_and_pestle) |
+| razred5-biologija | binokularna-lupa.jpg | Wammes Waggel | Public domain | [izvor](https://en.wikipedia.org/wiki/Stereo_microscope) |
+| razred5-biologija | kornjaca-galapagos.jpg | Mfield, Matthew Field, http://www.photography.mattfield.com | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Gal%C3%A1pagos_tortoise) |
+| razred5-biologija | huk-pluta.jpg | Robert Hooke (1635–1707) | Public domain | [izvor](https://commons.wikimedia.org/wiki/File%3ARobertHookeMicrographia1665.jpg) |
+| razred5-biologija | volvoks.jpg | Frank Fox | CC BY-SA 3.0 de | [izvor](https://en.wikipedia.org/wiki/Volvox) |
+| razred5-biologija | liger.jpg | Hkandy | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Liger) |
+| razred5-biologija | mula.jpg | Pacific Southwest Region 5 | Public domain | [izvor](https://en.wikipedia.org/wiki/Mule) |
+| razred5-biologija | ljubicica.jpg | Carl Axel Magnus Lindman | Public domain | [izvor](https://en.wikipedia.org/wiki/Viola_tricolor) |
+| razred5-biologija | bujad.jpg | Rasbak | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Pteridium_aquilinum) |
+| razred5-biologija | linej.jpg | Alexander Roslin | Public domain | [izvor](https://en.wikipedia.org/wiki/Carl_Linnaeus) |
+| razred5-biologija | meduza.jpg | Dan90266 | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Jellyfish) |
+| razred5-biologija | polarna-lisica.jpg | Jonatan Pie (unsplash.com/@r3dmax) | CC0 | [izvor](https://en.wikipedia.org/wiki/Arctic_fox) |
+| razred5-biologija | lenjivac.jpg | Daniella Maraschiello | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Sloth) |
+| razred5-biologija | vilin-konjic.jpg | Charles J. Sharp | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Dragonfly) |
+| razred5-biologija | morski-jez.jpg | Nhobgood (talk) Nick Hobgood | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Sea_urchin) |
+| razred5-biologija | golo-slepo-kuce.jpg | Kein keen | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Naked_mole-rat) |
+| razred5-biologija | carski-pingvin.jpg | Ian Duffy from UK | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Emperor_penguin) |
+| razred5-biologija | pastrmka.jpg | USFWS Mountain Prairie | Public domain | [izvor](https://en.wikipedia.org/wiki/Brown_trout) |
+| razred5-biologija | saran.jpg | George Chernilevsky | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Common_carp) |
+| razred5-biologija | stuka.jpg | Jik jik | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Northern_pike) |
+| razred5-biologija | recni-rak.jpg | Dragon187 | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Astacus_astacus) |
+| razred5-biologija | gnjurac.jpg | photo by E van Herk (User Evanherk) on en.wikipedia | Public domain | [izvor](https://en.wikipedia.org/wiki/Great_diving_beetle) |
+| razred5-biologija | lokvanj.jpg | Jacek Halicki | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Nymphaea_alba) |
+| razred5-biologija | detlic.jpg | Charles J. Sharp | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Great_spotted_woodpecker) |
+| razred5-biologija | jazavac.jpg | Charles J. Sharp | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/European_badger) |
+| razred5-biologija | jela.jpg | Crusier | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Abies_alba) |
+| razred5-biologija | smrca.jpg | Ivar Leidus | CC BY-SA 3.0 ee | [izvor](https://en.wikipedia.org/wiki/Picea_abies) |
+| razred5-biologija | srna.jpg | Charles J. Sharp | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Roe_deer) |
+| razred5-biologija | krtica.jpg | bristolian | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/European_mole) |
+| razred5-biologija | rovac.jpg | Eszter Kovács | CC BY-SA 2.0 de | [izvor](https://en.wikipedia.org/wiki/Gryllotalpa_gryllotalpa) |
+| razred5-biologija | kuber-pedi.jpg | qwesy qwesy | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Coober_Pedy) |
+| razred5-biologija | krompirova-zlatica.jpg | Scott Bauer, USDA ARS | Public domain | [izvor](https://en.wikipedia.org/wiki/Colorado_potato_beetle) |
+| razred5-biologija | ambrozija.jpg | Harry Rose from South West Rocks, Australia | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Ambrosia_artemisiifolia) |
+| razred5-biologija | dabar.jpg | Per Harald Olsen | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Eurasian_beaver) |
+| razred5-biologija | mangulica.jpg | Nienetwiler | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Mangalica) |
+| razred5-biologija | podolsko-govece.jpg | Riccardo orl | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Podolica) |
+| razred5-biologija | panda.jpg | J. Patrick Fischer | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Giant_panda) |
+| razred5-biologija | sremus.jpg | Rodolph | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Allium_ursinum) |
+| razred5-biologija | beli-slez.jpg | Franz Eugen Köhler, Köhler's Medizinal-Pflanzen | Public domain | [izvor](https://en.wikipedia.org/wiki/Althaea_officinalis) |
+| razred5-biologija | cikorija.jpg | Original book source: Prof. Dr. Otto Wilhelm Thomé Flora von Deutschland, Österr | Public domain | [izvor](https://en.wikipedia.org/wiki/Chicory) |
+| razred5-biologija | djurdjevak.jpg | Ivar Leidus | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Lily_of_the_valley) |
+| razred5-biologija | velebilje.jpg | Joan Simon from Barcelona, España | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Atropa_bella-donna) |
+| razred5-biologija | bukovaca.jpg | voir ci-dessous / see below | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Pleurotus_ostreatus) |
+| razred5-biologija | zova.jpg | Willow | CC BY 2.5 | [izvor](https://en.wikipedia.org/wiki/Sambucus_nigra) |
+| razred5-biologija | bivol.jpg | Alexander Vasenin | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Water_buffalo) |
+| razred5-biologija | krpelj.jpg | W.alter | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Ixodes_ricinus) |
+| razred5-biologija | poskok.jpg | Holger Krisp | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Vipera_ammodytes) |
+| razred5-biologija | belka-strelka.jpg | Teknoraver | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Belka_and_Strelka) |
+| razred5-biologija | sekvoja.jpg | Acroterion | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Sequoia_sempervirens) |
+| razred5-biologija | plavi-kit.jpg | NOAA Photo Library | Public domain | [izvor](https://en.wikipedia.org/wiki/Blue_whale) |
+| razred5-biologija | litops.jpg | yellowcloud | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Lithops) |
+| razred5-biologija | gepard.jpg | AfricanConservation | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Cheetah) |
+| razred5-biologija | sivi-soko.jpg | Mykola Swarnyk | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Peregrine_falcon) |
+| razred5-biologija | hidra.jpg | Flatters & Co. (photograph) | Public domain | [izvor](https://en.wikipedia.org/wiki/Hydra_(genus)) |
+| razred5-biologija | morski-konjic.jpg | Hans Hillewaert | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Seahorse) |
+| razred5-biologija | besmrtna-meduza.jpg | Bachware | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Turritopsis_dohrnii) |
+| razred5-biologija | tisa.jpg | Didier Descouens | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Taxus_baccata) |
+| razred5-biologija | grenlandska-ajkula.jpg | NOAA Okeanos Explorer Program | Public domain | [izvor](https://en.wikipedia.org/wiki/Greenland_shark) |
+| razred5-biologija | trst.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Trieste_(bathyscaphe)) |
+| razred5-biologija | visibaba.jpg | — | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Galanthus_nivalis) |
+| razred5-biologija | roda.jpg | Charles J. Sharp | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/White_stork) |
+| razred5-biologija | darvinove-zebe.jpg | John Gould (14.Sep.1804 - 3.Feb.1881) | Public domain | [izvor](https://en.wikipedia.org/wiki/Darwin's_finches) |
+| razred5-biologija | bigl.png | R. T. Pritchett | Public domain | [izvor](https://en.wikipedia.org/wiki/HMS_Beagle) |
+| razred5-biologija | vidra.jpg | Bernard Landgraf | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Eurasian_otter) |
+| razred5-biologija | crni-dazdevnjak.jpg | Ekki3 | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Alpine_salamander) |
+| razred5-biologija | dudov-svilac.jpg | Oakenking at en.wikipedia | CC BY-SA 2.5 | [izvor](https://en.wikipedia.org/wiki/Bombyx_mori) |
+| razred5-biologija | pijavica.jpg | (c) Георгий Виноградов (Georgy Vinogradov), some rights reserved (CC BY) | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Hirudo_medicinalis) |
+| razred5-biologija | zemelvajs.jpg | József Borsos / Albert Doctor | Public domain | [izvor](https://en.wikipedia.org/wiki/Ignaz_Semmelweis) |
+| razred5-biologija | tartuf.jpg | moi-même | Public domain | [izvor](https://en.wikipedia.org/wiki/Truffle) |
 | razred5-geografija | behajmov-globus.jpg | Martin Behaim / Georg Glockendon | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Behaim_Globe) |
 | razred5-geografija | vavilonska-karta.jpg | Osama Shukir Muhammed Amin FRCP(Glasg) | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Babylonian_Map_of_the_World) |
 | razred5-geografija | cvijic.jpg | Milan Jovanović | Public domain | [izvor](https://en.wikipedia.org/wiki/Jovan_Cviji%C4%87) |

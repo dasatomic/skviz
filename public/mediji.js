@@ -784,10 +784,16 @@ function prikaziFiziku(k, m) {
   return window.Fizika ? window.Fizika.prikazi(k, m) : () => {};
 }
 
+// animirana biološka scena (public/biologija.js)
+function prikaziBiologiju(k, m) {
+  return window.Biologija ? window.Biologija.prikazi(k, m) : () => {};
+}
+
 const PRIKAZI = {
   slika: prikaziSliku, svg: prikaziSVG, melodija: prikaziMelodiju, morze: prikaziMorze, molekul: prikaziMolekul,
   telo: prikaziTelo, atom: prikaziAtom, planeta: prikaziPlanetu, dnk: prikaziDNK, mapa: prikaziMapu,
   sat: prikaziSat, formula: prikaziTekst, emodzi: prikaziTekst, geo: prikaziGeo, kod: prikaziKod, fizika: prikaziFiziku,
+  biologija: prikaziBiologiju,
 };
 
 // glavna funkcija: vraća funkciju za čišćenje

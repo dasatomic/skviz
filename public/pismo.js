@@ -52,7 +52,7 @@
     // latinski: nazivi vrsta i izreke
     'homo sapiens erectus habilis neanderthalensis floresiensis lactobacillus bulgaricus penicillium turritopsis dohrnii naegleria palingenia longicauda ' +
     'felis catus panthera leo tigris gorilla pongo australopithecus escherichia coli coccinella septempunctata drosophila melanogaster ' +
-    'pinus longaeva vacca adolescere ' +
+    'pinus longaeva vacca adolescere tricolor ' +
     'centum mille passus septem omnis cellula carpe diem mens sana corpore sano perpetuum mobile ' +
     // muzičke oznake (italijanski)
     'allegro adagio crescendo decrescendo fortissimo pianissimo ff pp mf mp ' +

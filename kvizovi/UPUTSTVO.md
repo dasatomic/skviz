@@ -105,6 +105,7 @@ Primer: `kvizovi/eksperimenti-tla` – pitanja po poglavljima knjige Leslija Lam
 | emodzi | `{"vrsta":"emodzi","tekst":"🧙‍♂️⚡👓"}` | rebus od emodžija |
 | svg | `{"vrsta":"svg","kod":"<svg …>"}` | sopstveni crtež (geometrija, grafici) |
 | kod | `{"vrsta":"kod","tekst":"Init == x = 0\nNext == x' = x + 1"}` | isečak izvornog koda: monospace, poravnat levo, uvek latinicom; redovi do ~40 znakova (telefon) |
+| biologija | `{"vrsta":"biologija","scena":"celija","tip":"biljna","istakni":"vakuola"}` | animirana scena (`public/biologija.js`, parametri opisani iznad svake scene): `celija`, `deoba`, `fotosinteza`, `transpiracija`, `pluca`, `varenje`, `mokraca`, `oko`, `ruka`, `preobrazaj`, `klijanje`, `cvet`, `lanac`, `tropizam`, `odabiranje`, `ogled`, `dodir`, `oplodjenje`, `riba`, `mikroskop`, `stubici`, `piramida`. Scene sa delovima imaju `natpisi` i `istakni` (deo treperi i dobija „?“ – za „Kako se zove označeni deo?“). Natpis koji počinje sa `~` je srpska reč (preslovljava se) |
 
 Slike sa Vikipedije: `node alati/preuzmi-slike.js kvizovi/<folder> ime-fajla "Naslov članka" [jezik]`
 

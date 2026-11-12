@@ -2437,7 +2437,12 @@
     return pokreni(svg, sc);
   }
 
-  const API = { prikazi, SCENE: Object.keys(SCENE) };
+  // pomoćne funkcije za crtanje dele i druge animirane scene (public/biologija.js)
+  const alati = {
+    NS, BOJE, C, boja, br, f2, bf, niz, ogr, glatko, RAD, slucajni, el, at, tx, postaviTekst, emo, poz,
+    lin, kr, put, tacke, strelica, zrak, luk, vel, sud, cikcak, pokreni,
+  };
+  const API = { prikazi, SCENE: Object.keys(SCENE), alati };
   if (typeof window !== 'undefined') window.Fizika = API;
   if (typeof module !== 'undefined') module.exports = { SCENE: Object.keys(SCENE) };
 })();
