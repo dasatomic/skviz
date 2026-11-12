@@ -424,6 +424,81 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | razred5-istorija | atila.jpg | Eugène Delacroix | Public domain | [izvor](https://commons.wikimedia.org/wiki/File%3AEugene%20Ferdinand%20Victor%20Delacroix%20Attila%20fragment%20(cropped).jpg) |
 | razred5-istorija | senat.jpg | Cesare Maccari | Public domain | [izvor](https://commons.wikimedia.org/wiki/File%3ACicero%20Denounces%20Catiline%20in%20the%20Roman%20Senate%20by%20Cesare%20Maccari.png) |
 | razred5-istorija | hadrijanov-zid.jpg | Benjamin Smith | CC BY-SA 4.0 | [izvor](https://commons.wikimedia.org/wiki/File%3AHadrian's%20Wall%20on%20Housesteads%20Crags%20-%2006.jpg) |
+| razred6-biologija | vezal.jpg | Jan van Calcar | Public domain | [izvor](https://en.wikipedia.org/wiki/Andreas_Vesalius) |
+| razred6-biologija | lasko.jpg | EU | Public domain | [izvor](https://en.wikipedia.org/wiki/Lascaux) |
+| razred6-biologija | levenhukov-mikroskop.jpg | Moira Costa, Fotografia:Teresa Llordés | CC BY-SA 4.0 | [izvor](https://commons.wikimedia.org/wiki/File%3AR%C3%A9plica%20del%20microscopio%20de%20Leeuwenhoek.jpg) |
+| razred6-biologija | virhov.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Rudolf_Virchow) |
+| razred6-biologija | elektronski-mikroskop.jpg | Alice im Miniland | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Electron_microscope) |
+| razred6-biologija | kvasac.jpg | Mogana Das Murtey and Patchamuthu Ramasamy | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Saccharomyces_cerevisiae) |
+| razred6-biologija | cijanobakterije.jpg | Willem van Aken, CSIRO | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Cyanobacteria) |
+| razred6-biologija | jeloustoun-izvor.jpg | Carsten Steger | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Grand_Prismatic_Spring) |
+| razred6-biologija | gonijum.jpg | Environmental Protection Agency | Public domain | [izvor](https://en.wikipedia.org/wiki/Gonium) |
+| razred6-biologija | sundjer.jpg | Twilight Zone Expedition Team 2007, NOAA-OE | Public domain | [izvor](https://en.wikipedia.org/wiki/Sponge) |
+| razred6-biologija | irukandzi.jpg | GondwanaGirl 04:29, 6 January 2009 (UTC) | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Irukandji_jellyfish) |
+| razred6-biologija | muhara.jpg | Kieran Roy Powell | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Amanita_muscaria) |
+| razred6-biologija | vrganj.jpg | ReddishClover | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Boletus_edulis) |
+| razred6-biologija | reisi.jpg | This image was created by user TecheOldFox (Techieoldfox) at Mushroom Observer,  | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Lingzhi_(mushroom)) |
+| razred6-biologija | medna-gljiva.jpg | W.J.Pilsak (Walter J. Pilsak, Waldsassen) at de.wikipedia | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Armillaria_ostoyae) |
+| razred6-biologija | garka.jpg | Jamain | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Corn_smut) |
+| razred6-biologija | rokfor.jpg | Thesupermat | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Roquefort) |
+| razred6-biologija | monilija.jpg | Jerzy Opioła | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Monilinia_fructigena) |
+| razred6-biologija | vilina-kosica.jpg | No machine-readable author provided. Bogdan assumed (based on copyright claims). | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Cuscuta) |
+| razred6-biologija | amfioksus.jpg | Hans Hillewaert | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Lancelet) |
+| razred6-biologija | skoljka-ming.jpg | Alan D Wanamaker Jr1, Jan Heinemeier • James D Scourse • Christopher A Richardso | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Ming_(clam)) |
+| razred6-biologija | vodeni-pauk.jpg | Norbert Schuller Baupi | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Diving_bell_spider) |
+| razred6-biologija | skocimis.jpg | Marius Burger | CC0 | [izvor](https://en.wikipedia.org/wiki/Jerboa) |
+| razred6-biologija | losos.jpg | This image is copyrighted by Dmitry Azovtsev. I, the copyright holder of this wo | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Salmon_run) |
+| razred6-biologija | mlecika.jpg | Cayambe | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Euphorbia_canariensis) |
+| razred6-biologija | cuvarkuca.jpg | — | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Sempervivum_tectorum) |
+| razred6-biologija | rak-samac.jpg | Diego Delso | CC BY-SA 4.0 | [izvor](https://commons.wikimedia.org/wiki/File%3ACangrejo%20ermita%C3%B1o%20(Dardanus%20gemmatus)%20con%20an%C3%A9monas%20(Calliactis%20polypus)%2C%20mar%20Rojo%2C%20Egipto%2C%202023-04-16%2C%20DD%2064.jpg) |
+| razred6-biologija | riba-pilot.jpg | Raju Saravanan | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Pilot_fish) |
+| razred6-biologija | nocna-frajla.jpg | Khalid Mahmood at English Wikipedia | Public domain | [izvor](https://en.wikipedia.org/wiki/Mirabilis_jalapa) |
+| razred6-biologija | tekunica.jpg | Charles J. Sharp | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/European_ground_squirrel) |
+| razred6-biologija | puh.jpg | Svíčková | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Glis_(genus)) |
+| razred6-biologija | kukuvija.jpg | Steven Ward | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Western_barn_owl) |
+| razred6-biologija | crna-roda.jpg | Chris Eason | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Black_stork) |
+| razred6-biologija | kecige.jpg | Karelj | Public domain | [izvor](https://en.wikipedia.org/wiki/Sterlet) |
+| razred6-biologija | apolon.jpg | Hinox | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Apollo_(butterfly)) |
+| razred6-biologija | azijska-bubamara.jpg | — | Attribution | [izvor](https://en.wikipedia.org/wiki/Harmonia_axyridis) |
+| razred6-biologija | cvetanje-vode.jpg | Jesse Allen and Robert Simmon | Public domain | [izvor](https://en.wikipedia.org/wiki/Algal_bloom) |
+| razred6-biologija | teozinte.jpg | Original version: Image:Corncobs.jpg - Edit by User:Waugsberg (overexposed part  | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Zea_(plant)) |
+| razred6-biologija | doga.jpg | Lilly M | CC BY-SA 2.5 | [izvor](https://en.wikipedia.org/wiki/Great_Dane) |
+| razred6-biologija | civava.jpg | Bonnie van den Born, http://www.bonfoto.nl. The original uploader was Cwazi at D | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Chihuahua_(dog_breed)) |
+| razred6-biologija | lipicaner.jpg | AtjanHop | CC0 | [izvor](https://en.wikipedia.org/wiki/Lipizzan) |
+| razred6-biologija | otisak-prsta.jpg | Cyrillic at English Wikipedia | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Fingerprint) |
+| razred6-biologija | stromatoliti.jpg | Didier Descouens | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Stromatolite) |
+| razred6-biologija | rinija.jpg | Griensteidl | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Rhynia) |
+| razred6-biologija | koh.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Robert_Koch) |
+| razred6-biologija | fleming.jpg | Official photographer | Public domain | [izvor](https://en.wikipedia.org/wiki/Alexander_Fleming) |
+| razred6-biologija | branko.jpg | Unknown authorUnknown author | Public domain | [izvor](https://sr.wikipedia.org/wiki/%D0%91%D1%80%D0%B0%D0%BD%D0%BA%D0%BE_%D0%A0%D0%B0%D0%B4%D0%B8%D1%87%D0%B5%D0%B2%D0%B8%D1%9B) |
+| razred6-biologija | sugarac.jpg | Kalumet | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Sarcoptes_scabiei) |
+| razred6-biologija | trihina.jpg | DPDx Image Library | Public domain | [izvor](https://en.wikipedia.org/wiki/Trichinella_spiralis) |
+| razred6-biologija | pantljicara.jpg | CDC/Dr. L.L.A. Moore, Jr | Public domain | [izvor](https://en.wikipedia.org/wiki/Echinococcus_granulosus) |
+| razred6-biologija | anofeles.jpg | Jim Gathany | Public domain | [izvor](https://en.wikipedia.org/wiki/Anopheles) |
+| razred6-biologija | tigrasti-komarac.jpg | James Gathany, CDC | Public domain | [izvor](https://en.wikipedia.org/wiki/Aedes_albopictus) |
+| razred6-biologija | strsljen.jpg | Filippo Turetta | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/European_hornet) |
+| razred6-biologija | dzon-snou.jpg | — | Public domain | [izvor](https://en.wikipedia.org/wiki/John_Snow) |
+| razred6-biologija | penicilijum.jpg | — | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Penicillium) |
+| razred6-biologija | hipokrat.jpg | Unidentified engraver | Public domain | [izvor](https://en.wikipedia.org/wiki/Hippocrates) |
+| razred6-biologija | stafilokok.jpg | Content Providers(s): CDC/ Matthew J. Arduino, DRPH Photo Credit: Janice Haney C | Public domain | [izvor](https://en.wikipedia.org/wiki/Staphylococcus_aureus) |
+| razred6-biologija | vinogradarski-puz.jpg | Waugsberg | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Helix_pomatia) |
+| razred6-biologija | salmonela.jpg | — | Public domain | [izvor](https://en.wikipedia.org/wiki/Salmonella) |
+| razred6-biologija | kolubarsko.jpg | P.Cikovac | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Bu%C5%A1a) |
+| razred6-biologija | banka-semena.jpg | Tiq | CC BY-SA 4.0 | [izvor](https://commons.wikimedia.org/wiki/File%3ASvalbard%20Global%20Seed%20Vault%20april2017.jpg) |
+| razred6-biologija | eritrociti.jpg | BruceBlaus. When using this image in external sources it can be cited as: Blause | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Red_blood_cell) |
+| razred6-biologija | kordiceps.jpg | David P. Hughes, Maj-Britt Pontoppidan | CC BY 2.5 | [izvor](https://en.wikipedia.org/wiki/Ophiocordyceps_unilateralis) |
+| razred6-biologija | miler-juri.jpg | GYassineMrabetTalk✉ | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Miller%E2%80%93Urey_experiment) |
+| razred6-biologija | morska-zvezda.jpg | Top left: Klaus Rassinger (Museum Wiesbaden) Top right: Katie Ahlfeld Bottom rig | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Starfish) |
+| razred6-biologija | trilobit.jpg | PaleoNeolitic (montage creator) | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Trilobite) |
+| razred6-biologija | raflezija.jpg | LukeTriton | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Rafflesia_arnoldii) |
+| razred6-biologija | omorika.jpg | mikepirie | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Picea_omorika) |
+| razred6-biologija | aksolotl.jpg | LoKiLeCh | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Axolotl) |
+| razred6-biologija | ramonda.jpg | Sir Wolf | Public domain | [izvor](https://en.wikipedia.org/wiki/Ramonda_serbica) |
+| razred6-biologija | beloglavi-sup.jpg | Pierre Dalous | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Eurasian_griffon_vulture) |
+| razred6-biologija | mendel.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Gregor_Mendel) |
+| razred6-biologija | darvin.jpg | Charles_Darwin_seated.jpg: Henry Maull (1829–1914) and John Fox (1832–1907) (Mau | Public domain | [izvor](https://en.wikipedia.org/wiki/Charles_Darwin) |
+| razred6-biologija | okapi.jpg | Daniel Jolivet | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Okapi) |
+| razred6-biologija | pasteur.jpg | Paul Nadar | Public domain | [izvor](https://en.wikipedia.org/wiki/Louis_Pasteur) |
 | razred7-biologija | vocna-musica.jpg | Sanjay Acharya | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Drosophila_melanogaster) |
 | razred7-biologija | grasak.jpg | Rasbak | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Pea) |
 | razred7-biologija | hortenzija.jpg | belvedere04 | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Hydrangea_macrophylla) |
