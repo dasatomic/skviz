@@ -6,6 +6,7 @@
 //   node alati/preuzmi-udzbenike.js 8 --samo biologija   (samo udžbenici čije ime sadrži reč)
 //
 // Rezultat: izvori/udzbenici/<razred>/<udzbenik>/str-0001.jpg …  + spisak.json
+//           (H5P knjige, npr. matematika: tekst.md sa formulama $…$ i slikama iz slike/LNNN-NNNN.jpg)
 const fs = require('fs');
 const path = require('path');
 
@@ -40,27 +41,59 @@ async function preuzmi(url, f) {
 
 const jedinstveno = (a) => [...new Set(a)];
 
-// tekst iz H5P interaktivnih lekcija (novije knjige nemaju slike stranica, nego H5P prezentacije)
-async function h5pTekst(url) {
-  const h = await tekst(url.replace(/&#0?38;/g, '&'));
-  const m = h.match(/H5PIntegration\s*=\s*(\{[\s\S]*?\});\s*\n/);
-  if (!m) return '';
-  let d;
-  try { d = JSON.parse(m[1]); } catch { return ''; }
+// H5P podaci iz stranice: \u201eH5PIntegration = {\u2026};\u201c \u2013 JSON se izdvaja brojanjem zagrada
+// (regex do \u201e};\n\u201c puca kad iza sledi jo\u0161 skripte, npr. kod lekcija matematike)
+function h5pPodaci(h) {
+  const i = h.search(/H5PIntegration\s*=\s*\{/);
+  if (i < 0) return null;
+  const p = h.indexOf('{', i);
+  let dub = 0, uNizu = false;
+  for (let j = p; j < h.length; j++) {
+    const c = h[j];
+    if (uNizu) { if (c === '\\') j++; else if (c === '"') uNizu = false; continue; }
+    if (c === '"') uNizu = true;
+    else if (c === '{') dub++;
+    else if (c === '}' && --dub === 0) { try { return JSON.parse(h.slice(p, j + 1)); } catch { return null; } }
+  }
+  return null;
+}
+
+// HTML \u2192 \u010dist tekst; MathJax \( \u2026 \) \u2192 $ \u2026 $
+const ocisti = (v) => v.replace(/<br\s*\/?>|<\/p>|<\/li>|<\/h\d>/gi, '\n').replace(/<[^>]+>/g, ' ')
+  .replace(/&nbsp;/g, ' ').replace(/&shy;|\u00ad/g, '').replace(/&gt;/g, '>').replace(/&lt;/g, '<').replace(/&amp;/g, '&')
+  .replace(/&[a-z#0-9]+;/gi, ' ').replace(/\\\(([\s\S]*?)\\\)/g, (_, f) => `$${f.trim()}$`)
+  .replace(/[ \t]+/g, ' ').replace(/ *\n */g, '\n').replace(/\n{2,}/g, '\n').trim();
+
+// tekst i slike iz H5P sadr\u017eaja, redom kako se pojavljuju; slika je u tekstu oznaka @SLIKAn@
+function h5pSadrzaj(d) {
   const out = [];
-  const setaj = (o) => {
-    if (Array.isArray(o)) return o.forEach(setaj);
-    if (o && typeof o === 'object') {
+  const slike = [];
+  if (!d) return { tekst: '', slike };
+  const baza = (d.baseUrl || '') + (d.url || '/media/h5p');
+  for (const [kljuc, c] of Object.entries(d.contents || {})) {
+    const id = kljuc.replace(/^cid-/, '');
+    const setaj = (o) => {
+      if (Array.isArray(o)) return o.forEach(setaj);
+      if (!o || typeof o !== 'object') return;
+      if (typeof o.path === 'string' && /^image\//.test(o.mime || '')) {
+        slike.push(/^https?:/.test(o.path) ? o.path : `${baza}/content/${id}/${o.path}`);
+        out.push(`![](@SLIKA${slike.length - 1}@)`);
+      }
       for (const [k, v] of Object.entries(o)) {
         if (['text', 'question', 'answer', 'correct', 'tip', 'feedback'].includes(k) && typeof v === 'string') {
-          const t = v.replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ').replace(/&shy;|\u00ad/g, '').replace(/&[a-z#0-9]+;/gi, ' ').replace(/\s+/g, ' ').trim();
+          const t = ocisti(v);
           if (t && !/^Untitled/.test(t)) out.push(t);
-        } else setaj(v);
+        } else if (k !== 'path') setaj(v);
       }
-    }
-  };
-  for (const c of Object.values(d.contents || {})) { try { setaj(JSON.parse(c.jsonContent)); } catch {} }
-  return jedinstveno(out).join('\n');
+    };
+    try { setaj(JSON.parse(c.jsonContent)); } catch {}
+  }
+  return { tekst: jedinstveno(out).join('\n'), slike };
+}
+
+// tekst iz H5P interaktivnih lekcija (novije knjige nemaju slike stranica, nego H5P prezentacije)
+async function h5pTekst(url) {
+  return h5pSadrzaj(h5pPodaci(await tekst(url.replace(/&#0?38;/g, '&'))));
 }
 
 (async () => {
@@ -87,14 +120,25 @@ async function h5pTekst(url) {
       // stranice udžbenika su slike sa „page-XXXX“ u imenu
       const slike = new Map();
       const tekstovi = [];
-      for (const l of lekcije) {
+      let brSlika = 0;
+      for (const [rb, l] of lekcije.entries()) {
         const h = await tekst(l);
-        // tekst lekcije iz H5P sadržaja
+        // tekst i slike lekcije iz H5P sadržaja – ugrađenog u stranicu (matematika) ili preko embed linka
         const naslov = ((h.match(/<title>([^<]*)<\/title>/) || [])[1] || l).replace(/ – .*$/, '').replace(/&#8211;.*$/, '').trim();
-        const delovi = [];
+        const sadrzaji = [h5pSadrzaj(h5pPodaci(h))];
         for (const f of jedinstveno([...h.matchAll(/src="([^"]*action=h5p_embed[^"]*)"/g)].map((x) => x[1]))) {
-          const t = await h5pTekst(f);
-          if (t) delovi.push(t);
+          sadrzaji.push(await h5pTekst(f));
+        }
+        const delovi = [];
+        for (const { tekst: t, slike: sl } of sadrzaji) {
+          if (!t) continue;
+          const imena = [];
+          for (const url of sl) {
+            const ime = `slike/L${String(rb + 1).padStart(3, '0')}-${String(++brSlika).padStart(4, '0')}${path.extname(url).toLowerCase()}`;
+            fs.mkdirSync(path.join(dir, 'slike'), { recursive: true });
+            imena.push((await preuzmi(url, path.join(dir, ime))) ? ime : url);
+          }
+          delovi.push(t.replace(/@SLIKA(\d+)@/g, (_, i) => imena[+i]));
         }
         if (delovi.length) tekstovi.push(`### ${naslov}\n${delovi.join('\n')}`);
         for (const m of h.matchAll(/src="(https:\/\/app\.[a-z.]+\/media\/[^"]*?page-?(\d+)[^"]*?\.(?:jpg|jpeg|png|webp))"/gi)) {
@@ -108,8 +152,8 @@ async function h5pTekst(url) {
         if (await preuzmi(url, path.join(dir, `str-${String(br).padStart(4, '0')}${path.extname(url)}`))) ok++;
       }
       if (tekstovi.length) fs.writeFileSync(path.join(dir, 'tekst.md'), tekstovi.join('\n\n'));
-      fs.writeFileSync(path.join(dir, 'spisak.json'), JSON.stringify({ udzbenik: k, kurs, lekcija: lekcije.length, strana: ok }, null, 1));
-      console.log(`  ${ime}: ${lekcije.length} lekcija, ${ok} strana, ${tekstovi.length} lekcija sa tekstom`);
+      fs.writeFileSync(path.join(dir, 'spisak.json'), JSON.stringify({ udzbenik: k, kurs, lekcija: lekcije.length, strana: ok, slika: brSlika }, null, 1));
+      console.log(`  ${ime}: ${lekcije.length} lekcija, ${ok} strana, ${brSlika} slika iz lekcija, ${tekstovi.length} lekcija sa tekstom`);
     }
   }
 })();
