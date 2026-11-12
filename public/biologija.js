@@ -2305,6 +2305,669 @@
         },
       };
     },
+
+    // ─────────── 8. razred ───────────
+    // Enzim po modelu „ključ i brava“: supstrat ulazi u aktivni centar, nastaje kompleks enzim–supstrat, pa se
+    // oslobađaju proizvodi, a enzim ostaje isti. Delovi: enzim, centar, supstrat, proizvod.
+    // tip: 'energija' – grafik energije reakcije bez enzima i sa enzimom; skrij: 'aktivacija' – umesto naziva „?“.
+    enzim(s, m) {
+      const W = 320, H = 220;
+      vel(s, W, H);
+      if (m.tip === 'energija') {
+        const x0 = 34, y0 = 186, x1 = 306;
+        lin(s, x0, y0, x1, y0, '#5d7a96', 1.5); lin(s, x0, y0, x0, 18, '#5d7a96', 1.5);
+        tx(s, x0 + 4, 12, '~energija', { a: 'start', v: 9.5, b: '#9fb3c8' });
+        tx(s, x1, y0 + 12, '~tok reakcije', { a: 'end', v: 9.5, b: '#9fb3c8' });
+        const kriva = (vrh) => { const p = []; for (let i = 0; i <= 60; i++) { const u = i / 60, x = 50 + u * 240; const y = lerp(120, 160, glatko((u - 0.45) / 0.3)) - vrh * Math.exp(-((u - 0.5) ** 2) / 0.018); p.push([x, y]); } return p; };
+        const bez = kriva(92), sa = kriva(42);
+        const L = (p) => { let d = 0; for (let i = 1; i < p.length; i++) d += Math.hypot(p[i][0] - p[i - 1][0], p[i][1] - p[i - 1][1]); return d; };
+        const lb = L(bez), ls = L(sa);
+        const eb = el(s, 'polyline', { points: tacke(bez), fill: 'none', stroke: '#ff7675', 'stroke-width': 3, 'stroke-dasharray': `${f2(lb)}`, 'stroke-dashoffset': f2(lb) });
+        const es = el(s, 'polyline', { points: tacke(sa), fill: 'none', stroke: '#55efc4', 'stroke-width': 3, 'stroke-dasharray': `${f2(ls)}`, 'stroke-dashoffset': f2(ls) });
+        tx(s, 62, 108, '~reaktanti', { a: 'start', v: 9.5 });
+        tx(s, 292, 172, '~proizvod', { a: 'end', v: 9.5 });
+        tx(s, 196, 34, '~bez enzima', { a: 'start', v: 10, b: '#ff7675' });
+        tx(s, 196, 84, '~sa enzimom', { a: 'start', v: 10, b: '#55efc4' });
+        const sk = lista(m.skrij).includes('aktivacija');
+        const zag = el(s, 'g');
+        strelica(zag, C.zuta, 2).set(170, 120, 170, 32);
+        tx(zag, 164, 76, sk ? '?' : '~energija aktivacije', { a: 'end', v: sk ? 16 : 9.5, b: C.zuta });
+        zag.style.opacity = 0;
+        const loptaB = kr(s, 0, 0, 5, { fill: '#ff7675' }), loptaS = kr(s, 0, 0, 5, { fill: '#55efc4' });
+        return {
+          trajanje: 5.5, pauza: 3,
+          kadar(t) {
+            const ub = glatko(t / 4.5), us = glatko(t / 2.6);
+            at(eb, { 'stroke-dashoffset': f2(lb * (1 - ub)) }); at(es, { 'stroke-dashoffset': f2(ls * (1 - us)) });
+            const [xb, yb] = na(bez, ub), [xs, ys] = na(sa, us);
+            at(loptaB, { cx: f2(xb), cy: f2(yb) }); at(loptaS, { cx: f2(xs), cy: f2(ys) });
+            zag.style.opacity = f2(glatko((t - 2.8) / 0.8));
+          },
+        };
+      }
+      const enz = el(s, 'path', { d: 'M70,200 L70,132 Q70,112 90,112 L132,112 L160,146 L188,112 L230,112 Q250,112 250,132 L250,200 Z', fill: 'rgba(162,155,254,.3)', stroke: '#a29bfe', 'stroke-width': 3 });
+      const centar = put(s, 'M132,112 L160,146 L188,112', { stroke: '#a29bfe', 'stroke-width': 3 });
+      const sup = el(s, 'g');
+      const pl = el(sup, 'polygon', { points: '-27,0 0,33 0,-24 -27,-24', fill: '#ffeaa7', stroke: '#fdcb6e', 'stroke-width': 2 });
+      const pd = el(sup, 'polygon', { points: '27,0 0,33 0,-24 27,-24', fill: '#ffeaa7', stroke: '#fdcb6e', 'stroke-width': 2 });
+      const veza = lin(sup, 0, -24, 0, 33, '#e17055', 3);
+      const plus = [0, 1, 2].map((i) => { const g = emo(s, '✨', 12); g.style.opacity = 0; return g; });
+      const delovi = [
+        { id: 'enzim', naziv: '~enzim', ax: 200, ay: 170, lx: 300, ly: 196, a: 'end', sjaj: sjaj(enz) },
+        { id: 'centar', naziv: '~aktivni centar', ax: 172, ay: 130, lx: 304, ly: 140, a: 'end', sjaj: sjaj(centar) },
+        { id: 'supstrat', naziv: '~supstrat', ax: 54, ay: 40, lx: 20, ly: 16, a: 'start', skriven: false },
+        { id: 'proizvod', naziv: '~proizvodi', ax: 270, ay: 40, lx: 304, ly: 16, a: 'end' },
+      ];
+      const nat = natpisi(s, m, delovi);
+      return {
+        trajanje: 6, pauza: 1,
+        kadar(t) {
+          const u1 = glatko(t / 2);
+          let x = lerp(54, 160, u1), y = lerp(40, 112, u1), rot = lerp(-40, 0, u1);
+          const razd = glatko((t - 3.2) / 2);
+          poz(sup, x, y, false, rot);
+          at(pl, { transform: `translate(${f2(-razd * 95)} ${f2(-razd * 80)}) rotate(${f2(-razd * 30)})` });
+          at(pd, { transform: `translate(${f2(razd * 110)} ${f2(-razd * 80)}) rotate(${f2(razd * 30)})` });
+          veza.style.opacity = t < 3.2 ? 1 : 0;
+          const kompleks = t > 2 && t < 3.4;
+          at(enz, { fill: kompleks ? 'rgba(253,203,110,.25)' : 'rgba(162,155,254,.3)' });
+          plus.forEach((g, i) => { poz(g, 140 + i * 20, 104 - (t - 2) * 12); g.style.opacity = kompleks ? f2(Math.sin(((t - 2) / 1.4) * Math.PI)) : 0; });
+          nat.kadar(t);
+        },
+      };
+    },
+
+    // Nervna ćelija: impuls putuje od kratkih nastavaka kroz telo i nervno vlakno do završetaka.
+    // mijelin: true – vlakno sa mijelinskim omotačem, impuls „skače“ od čvora do čvora.
+    // Delovi: dendriti, telo, jedro, akson, mijelin (samo uz mijelin), zavrsetak.
+    neuron(s, m) {
+      const W = 320, H = 200;
+      vel(s, W, H);
+      const mij = !!m.mijelin;
+      const g = el(s, 'g');
+      const dend = el(g, 'g');
+      const r = slucajni(5);
+      const grane = [];
+      for (let i = 0; i < 6; i++) {
+        const a = Math.PI * (0.55 + (i / 5) * 0.9);
+        const x1 = 62 + 22 * Math.cos(a), y1 = 100 + 22 * Math.sin(a), x2 = 62 + 52 * Math.cos(a), y2 = 100 + 52 * Math.sin(a);
+        put(dend, `M${f2(x1)},${f2(y1)} Q${f2((x1 + x2) / 2 + (r() - 0.5) * 14)},${f2((y1 + y2) / 2 + (r() - 0.5) * 14)} ${f2(x2)},${f2(y2)}`, { stroke: '#fab1a0', 'stroke-width': 3 });
+        const a2 = a + (r() - 0.5) * 0.9;
+        put(dend, `M${f2(x2)},${f2(y2)} L${f2(x2 + 16 * Math.cos(a2))},${f2(y2 + 16 * Math.sin(a2))} M${f2(x2)},${f2(y2)} L${f2(x2 + 14 * Math.cos(a - 0.5))},${f2(y2 + 14 * Math.sin(a - 0.5))}`, { stroke: '#fab1a0', 'stroke-width': 2 });
+        grane.push([x2, y2]);
+      }
+      const telo = el(g, 'path', { d: mrlja(62, 100, 26, 0, 3, 14, 0.8), fill: 'rgba(250,177,160,.35)', stroke: '#fab1a0', 'stroke-width': 2.5 });
+      const jed = kr(g, 60, 100, 9, { fill: B.jedro, stroke: '#dcd6ff', 'stroke-width': 1.5 });
+      const akson = put(g, 'M86,100 L262,100', { stroke: '#fab1a0', 'stroke-width': 4 });
+      const zav = el(g, 'g');
+      const kraj = [[296, 70], [304, 100], [296, 130]];
+      kraj.forEach(([x, y]) => { put(zav, `M262,100 Q280,${(100 + y) / 2} ${x},${y}`, { stroke: '#fab1a0', 'stroke-width': 2.5 }); kr(zav, x, y, 5, { fill: '#fab1a0' }); });
+      const omotaci = [];
+      const cvorovi = [92];
+      if (mij) for (let i = 0; i < 5; i++) { const x = 98 + i * 33; omotaci.push(el(g, 'rect', { x, y: 91, width: 27, height: 18, rx: 8, fill: 'rgba(255,234,167,.55)', stroke: '#fdcb6e', 'stroke-width': 1.5 })); cvorovi.push(x + 30); }
+      const impuls = kr(s, 0, 0, 7, { fill: C.zuta, opacity: 0.9 });
+      const sjajI = kr(s, 0, 0, 14, { fill: 'rgba(255,234,167,.25)' });
+      const delovi = [
+        { id: 'dendriti', naziv: '~kratki nastavci', ax: grane[0][0], ay: grane[0][1], lx: 14, ly: 186, a: 'start', sjaj: sjaj(...dend.children) },
+        { id: 'telo', naziv: '~telo ćelije', ax: 70, ay: 80, lx: 40, ly: 16, a: 'start', sjaj: sjaj(telo) },
+        { id: 'jedro', naziv: '~jedro', ax: 60, ay: 104, lx: 128, ly: 150, a: 'start', sjaj: sjaj(jed) },
+        { id: 'akson', naziv: '~nervno vlakno', ax: 180, ay: 100, lx: 170, ly: 52, a: 'middle', sjaj: sjaj(akson) },
+        ...(mij ? [{ id: 'mijelin', naziv: '~mijelinski omotač', ax: 210, ay: 108, lx: 215, ly: 162, a: 'middle', sjaj: sjaj(...omotaci) }] : []),
+        { id: 'zavrsetak', naziv: '~završeci', ax: 300, ay: 132, lx: 312, ly: 180, a: 'end', sjaj: sjaj(...zav.children) },
+      ];
+      const nat = natpisi(s, m, delovi);
+      return {
+        kadar(t) {
+          const u = (t % 3.2) / 3.2;
+          let x, y = 100;
+          if (u < 0.2) { const k = u / 0.2; x = lerp(grane[2][0], 62, k); y = lerp(grane[2][1], 100, k); }
+          else if (!mij) x = lerp(62, 300, glatko((u - 0.2) / 0.75));
+          else { const k = Math.min(1, (u - 0.2) / 0.7), i = Math.min(cvorovi.length - 1, Math.floor(k * cvorovi.length)); x = k >= 1 ? 300 : cvorovi[i]; }
+          at(impuls, { cx: f2(x), cy: f2(y) }); at(sjajI, { cx: f2(x), cy: f2(y), r: f2(12 + 4 * Math.sin(t * 12)) });
+          at(telo, { d: mrlja(62, 100, 26, t, 3, 14, 0.8) });
+          nat.kadar(t);
+        },
+      };
+    },
+
+    // Sinapsa: impuls stiže do završetka vlakna, kesice (vezikule) izbacuju neurotransmiter u sinaptičku pukotinu,
+    // on se vezuje za receptore sledeće ćelije i u njoj nastaje novi impuls.
+    // Delovi: zavrsetak, vezikule, pukotina, receptori, sledeca.
+    sinapsa(s, m) {
+      const W = 320, H = 220;
+      vel(s, W, H);
+      const pukot = el(s, 'rect', { x: 70, y: 116, width: 180, height: 24, fill: 'rgba(116,185,255,.06)', stroke: 'rgba(116,185,255,.25)', 'stroke-width': 1, 'stroke-dasharray': '4 3' });
+      const zav = el(s, 'path', { d: 'M135,0 L135,36 C78,46 78,114 160,114 C242,114 242,46 185,36 L185,0', fill: 'rgba(250,177,160,.22)', stroke: '#fab1a0', 'stroke-width': 3 });
+      const sled = el(s, 'path', { d: 'M40,142 L280,142 L280,220 L40,220 Z', fill: 'rgba(129,236,236,.12)', stroke: '#81ecec', 'stroke-width': 3 });
+      const recX = [100, 130, 160, 190, 220];
+      const rec = recX.map((x) => put(s, `M${x - 7},136 L${x - 7},142 M${x + 7},136 L${x + 7},142 M${x - 7},142 L${x + 7},142`, { stroke: '#55efc4', 'stroke-width': 3 }));
+      const vezPos = [[128, 72], [160, 64], [192, 72], [142, 94], [176, 94], [160, 84]];
+      const vez = vezPos.map(([x, y]) => { const gg = el(s, 'g'); kr(gg, 0, 0, 9, { fill: 'rgba(253,203,110,.25)', stroke: '#fdcb6e', 'stroke-width': 1.5 }); [[-3, -2], [3, -1], [0, 3]].forEach(([a, b]) => kr(gg, a, b, 1.8, { fill: '#fd79a8' })); poz(gg, x, y); return { gg, x, y }; });
+      const r = slucajni(3);
+      const nt = Array.from({ length: 18 }, (_, i) => ({ c: kr(s, 0, 0, 2.6, { fill: '#fd79a8', opacity: 0 }), x0: 120 + r() * 80, cilj: recX[i % 5], d: r() * 0.4 }));
+      const imp = kr(s, 160, 0, 7, { fill: C.zuta });
+      const imp2 = kr(s, 0, 0, 7, { fill: C.zuta, opacity: 0 });
+      const delovi = [
+        { id: 'zavrsetak', naziv: '~završetak vlakna', ax: 200, ay: 30, lx: 312, ly: 14, a: 'end', sjaj: sjaj(zav) },
+        { id: 'vezikule', naziv: '~kesice (vezikule)', ax: 202, ay: 72, lx: 312, ly: 60, a: 'end', sjaj: sjaj(...vez.map((v) => v.gg.firstChild)) },
+        { id: 'pukotina', naziv: '~sinaptička pukotina', ax: 68, ay: 128, lx: 8, ly: 100, a: 'start', sjaj: sjaj(pukot) },
+        { id: 'receptori', naziv: '~receptori', ax: 228, ay: 138, lx: 312, ly: 118, a: 'end', sjaj: sjaj(...rec) },
+        { id: 'sledeca', naziv: '~sledeća ćelija', ax: 60, ay: 190, lx: 8, ly: 206, a: 'start', sjaj: sjaj(sled) },
+      ];
+      const nat = natpisi(s, m, delovi);
+      return {
+        trajanje: 5.2, pauza: 1.2,
+        kadar(t) {
+          at(imp, { cy: f2(lerp(0, 40, glatko(t / 0.8))), opacity: t < 1 ? 1 : 0 });
+          const sp = glatko((t - 0.8) / 0.8);
+          vez.forEach((v) => poz(v.gg, v.x, lerp(v.y, 108, sp * (v.y > 80 ? 1 : 0.6)), false, 0, t > 1.7 ? Math.max(0.2, 1 - (t - 1.7) * 2) : 1));
+          nt.forEach((n) => {
+            const k = ogr((t - 1.7 - n.d) / 1.4, 0, 1);
+            at(n.c, { cx: f2(lerp(n.x0, n.cilj, k)), cy: f2(lerp(110, 134, k)), opacity: k > 0 && t < 4.3 ? 1 : 0 });
+          });
+          const pr = t > 3.2;
+          rec.forEach((e) => at(e, { stroke: pr ? C.zuta : '#55efc4' }));
+          const k2 = ogr((t - 3.4) / 1.6, 0, 1);
+          at(imp2, { cx: f2(lerp(160, 270, k2)), cy: 180, opacity: k2 > 0 && k2 < 1 ? 1 : 0 });
+          nat.kadar(t);
+        },
+      };
+    },
+
+    // Refleksni luk (refleks povlačenja): receptor u koži → osetno vlakno → siva masa kičmene moždine
+    // (umetnuta ćelija) → pokretačko vlakno → mišić (efektor), ruka se povlači od plamena.
+    // Delovi: receptor, osetno, mozdina, umetnuta, pokretacko, misic.
+    refleks(s, m) {
+      const W = 320, H = 220;
+      vel(s, W, H);
+      const cx = 238, cy = 70;
+      const mozd = el(s, 'ellipse', { cx, cy, rx: 52, ry: 42, fill: 'rgba(223,230,233,.12)', stroke: '#dfe6e9', 'stroke-width': 2 });
+      const siva = el(s, 'path', { d: `M${cx},${cy - 6} C${cx - 18},${cy - 34} ${cx - 34},${cy - 24} ${cx - 22},${cy - 4} C${cx - 34},${cy + 14} ${cx - 26},${cy + 34} ${cx},${cy + 8} C${cx + 26},${cy + 34} ${cx + 34},${cy + 14} ${cx + 22},${cy - 4} C${cx + 34},${cy - 24} ${cx + 18},${cy - 34} ${cx},${cy - 6}Z`, fill: 'rgba(178,190,195,.45)', stroke: '#b2bec3', 'stroke-width': 1.5 });
+      const ruka = el(s, 'g');
+      el(ruka, 'path', { d: 'M20,150 Q60,138 112,142 L118,160 Q60,166 20,170 Z', fill: B.koza, stroke: '#e0a17e', 'stroke-width': 2 });
+      const mis = el(ruka, 'ellipse', { cx: 70, cy: 152, rx: 30, ry: 8, fill: B.misic, stroke: '#ff7675', 'stroke-width': 1.5 });
+      const rec = kr(ruka, 30, 168, 4, { fill: '#74b9ff', stroke: '#0b1826' });
+      const plamen = emo(s, '🔥', 26); poz(plamen, 30, 196);
+      const osP = [[30, 168], [120, 176], [170, 120], [cx - 40, cy - 22], [cx - 14, cy - 14]];
+      const umP = [[cx - 14, cy - 14], [cx - 2, cy + 2], [cx + 12, cy + 14]];
+      const poP = [[cx + 12, cy + 14], [cx - 20, cy + 36], [160, 130], [100, 152]];
+      const osetno = el(s, 'polyline', { points: tacke(osP), fill: 'none', stroke: '#74b9ff', 'stroke-width': 3, 'stroke-linejoin': 'round' });
+      kr(s, cx - 40, cy - 22, 7, { fill: 'rgba(116,185,255,.4)', stroke: '#74b9ff' });
+      const umetnuta = el(s, 'polyline', { points: tacke(umP), fill: 'none', stroke: C.zuta, 'stroke-width': 3 });
+      const pokret = el(s, 'polyline', { points: tacke(poP), fill: 'none', stroke: '#ff7675', 'stroke-width': 3, 'stroke-linejoin': 'round' });
+      const imp = kr(s, 0, 0, 6, { fill: C.zuta });
+      const mozak = el(s, 'g'); const sv = tx(mozak, 300, 196, '~„Au, vruće!“', { a: 'end', v: 11, b: C.zuta }); mozak.style.opacity = 0;
+      const delovi = [
+        { id: 'receptor', naziv: '~receptor', ax: 30, ay: 168, lx: 8, ly: 124, a: 'start', sjaj: sjaj(rec) },
+        { id: 'osetno', naziv: '~osetno vlakno', ax: 120, ay: 176, lx: 150, ly: 206, a: 'middle', sjaj: sjaj(osetno) },
+        { id: 'mozdina', naziv: '~kičmena moždina', ax: cx + 40, ay: cy - 26, lx: 314, ly: 12, a: 'end', sjaj: sjaj(mozd) },
+        { id: 'umetnuta', naziv: '~umetnuta ćelija', ax: cx + 2, ay: cy + 4, lx: 314, ly: 128, a: 'end', sjaj: sjaj(umetnuta, siva) },
+        { id: 'pokretacko', naziv: '~pokretačko vlakno', ax: 196, ay: 115, lx: 190, ly: 154, a: 'start', sjaj: sjaj(pokret) },
+        { id: 'misic', naziv: '~mišić (efektor)', ax: 70, ay: 146, lx: 8, ly: 104, a: 'start', sjaj: sjaj(mis) },
+      ];
+      const nat = natpisi(s, m, delovi);
+      const put3 = [...osP, ...umP.slice(1), ...poP.slice(1)];
+      return {
+        trajanje: 5, pauza: 1.5,
+        kadar(t) {
+          const u = ogr((t - 0.4) / 2.6, 0, 1);
+          const [x, y] = na(put3, u);
+          at(imp, { cx: f2(x), cy: f2(y), opacity: u > 0 && u < 1 ? 1 : 0 });
+          const pov = glatko((t - 3) / 0.6);
+          ruka.setAttribute('transform', `translate(${f2(pov * 28)} ${f2(-pov * 22)})`);
+          at(mis, { rx: f2(30 - pov * 6), ry: f2(8 + pov * 3) });
+          mozak.style.opacity = f2(glatko((t - 3.8) / 0.5));
+          nat.kadar(t);
+        },
+      };
+    },
+
+    // Žlezde sa unutrašnjim lučenjem u telu čoveka; hormoni (tačkice) odlaze u krv.
+    // Delovi: hipofiza, epifiza, stitna, grudna, gusteraca, nadbubrezna, polne.
+    zlezde(s, m) {
+      const W = 320, H = 240;
+      vel(s, W, H);
+      const telo = el(s, 'g');
+      kr(telo, 100, 34, 26, { fill: 'rgba(243,198,165,.18)', stroke: '#9fb3c8', 'stroke-width': 2 });
+      el(telo, 'path', { d: 'M90,58 L110,58 L112,72 C150,74 158,90 156,120 L150,206 C150,222 132,226 126,214 L118,150 L100,150 L82,150 L74,214 C68,226 50,222 50,206 L44,120 C42,90 50,74 88,72Z', fill: 'rgba(243,198,165,.18)', stroke: '#9fb3c8', 'stroke-width': 2 });
+      const Z = {};
+      Z.hipofiza = kr(s, 100, 42, 4, { fill: '#fd79a8', stroke: '#fff', 'stroke-width': 1 });
+      Z.epifiza = kr(s, 108, 30, 3.5, { fill: '#a29bfe', stroke: '#fff', 'stroke-width': 1 });
+      Z.stitna = el(s, 'path', { d: 'M92,66 C86,60 86,74 93,74 L107,74 C114,74 114,60 108,66 Z', fill: '#e17055', stroke: '#fff', 'stroke-width': 1 });
+      Z.grudna = el(s, 'ellipse', { cx: 100, cy: 92, rx: 9, ry: 7, fill: '#fdcb6e', stroke: '#fff', 'stroke-width': 1 });
+      Z.gusteraca = el(s, 'path', { d: 'M82,128 C96,120 118,122 126,126 C120,134 98,134 82,132Z', fill: '#ffeaa7', stroke: '#fff', 'stroke-width': 1 });
+      Z.nadbubrezna = el(s, 'g');
+      for (const x of [76, 124]) { el(Z.nadbubrezna, 'ellipse', { cx: x, cy: 120, rx: 6, ry: 9, fill: 'rgba(192,57,43,.45)' }); el(Z.nadbubrezna, 'path', { d: `M${x - 6},111 L${x},103 L${x + 6},111Z`, fill: '#55efc4', stroke: '#fff', 'stroke-width': 1 }); }
+      Z.polne = el(s, 'g');
+      for (const x of [84, 116]) kr(Z.polne, x, 150, 5, { fill: '#74b9ff', stroke: '#fff', 'stroke-width': 1 });
+      const sj = (e) => (e.tagName === 'g' ? sjaj(...e.children) : sjaj(e));
+      const delovi = [
+        { id: 'hipofiza', naziv: '~hipofiza', ax: 100, ay: 42, lx: 196, ly: 32, a: 'start', sjaj: sj(Z.hipofiza) },
+        { id: 'epifiza', naziv: '~epifiza', ax: 108, ay: 30, lx: 196, ly: 12, a: 'start', sjaj: sj(Z.epifiza) },
+        { id: 'stitna', naziv: '~štitna žlezda', ax: 108, ay: 70, lx: 196, ly: 62, a: 'start', sjaj: sj(Z.stitna) },
+        { id: 'grudna', naziv: '~grudna žlezda (timus)', ax: 106, ay: 92, lx: 196, ly: 90, a: 'start', sjaj: sj(Z.grudna) },
+        { id: 'nadbubrezna', naziv: '~nadbubrežne žlezde', ax: 128, ay: 106, lx: 196, ly: 116, a: 'start', sjaj: sj(Z.nadbubrezna) },
+        { id: 'gusteraca', naziv: '~gušterača', ax: 120, ay: 128, lx: 196, ly: 142, a: 'start', sjaj: sj(Z.gusteraca) },
+        { id: 'polne', naziv: '~polne žlezde', ax: 116, ay: 152, lx: 196, ly: 172, a: 'start', sjaj: sj(Z.polne) },
+      ];
+      const nat = natpisi(s, m, delovi);
+      const izv = [[100, 42], [108, 30], [100, 70], [100, 92], [104, 128], [76, 112], [116, 150]];
+      const r = slucajni(9);
+      const hor = Array.from({ length: 14 }, (_, i) => ({ c: kr(s, 0, 0, 1.8, { fill: C.zuta, opacity: 0 }), p: izv[i % izv.length], a: r() * 6.28, f: r() }));
+      return {
+        kadar(t) {
+          hor.forEach((h) => { const u = (t * 0.35 + h.f) % 1; at(h.c, { cx: f2(h.p[0] + Math.cos(h.a) * u * 26), cy: f2(h.p[1] + Math.sin(h.a) * u * 18), opacity: f2(Math.sin(u * Math.PI) * 0.9) }); });
+          nat.kadar(t);
+        },
+      };
+    },
+
+    // Mozak čoveka (bočno). Delovi: veliki, medjumozak, srednji, mali, produzena (moždano stablo).
+    // tip: 'reznjevi' – režnjevi kore velikog mozga: ceoni, temeni, potiljacni, slepoocni.
+    mozak(s, m) {
+      const W = 320, H = 220;
+      vel(s, W, H);
+      const rez = m.tip === 'reznjevi';
+      const id = 'mz' + Math.floor(Math.random() * 1e9);
+      const def = el(s, 'defs'); const cp = el(def, 'clipPath', { id });
+      const OB = 'M40,104 C30,50 90,14 160,16 C232,18 262,56 258,100 C256,128 236,136 214,134 C200,150 178,148 168,136 C130,148 70,150 48,130 C42,122 40,114 40,104Z';
+      el(cp, 'path', { d: OB });
+      const mali = el(s, 'g');
+      el(mali, 'ellipse', { cx: 222, cy: 150, rx: 40, ry: 22, fill: 'rgba(253,203,110,.3)', stroke: '#fdcb6e', 'stroke-width': 2 });
+      for (let i = 0; i < 4; i++) put(mali, `M${190 + i * 4},${140 + i * 5} Q222,${130 + i * 9} ${256 - i * 3},${142 + i * 5}`, { stroke: '#fdcb6e', 'stroke-width': 1 });
+      const stablo = el(s, 'path', { d: 'M158,124 C164,150 168,180 172,214 L192,214 C188,180 186,150 184,124Z', fill: 'rgba(129,236,236,.25)', stroke: '#81ecec', 'stroke-width': 2 });
+      const produzena = el(s, 'path', { d: 'M169,178 C170,190 171,202 172,214 L192,214 C190,202 189,190 188,178Z', fill: 'rgba(85,239,196,.35)', stroke: '#55efc4', 'stroke-width': 2 });
+      const veliki = el(s, 'g');
+      const kor = el(veliki, 'path', { d: OB, fill: 'rgba(253,121,168,.22)', stroke: '#fd79a8', 'stroke-width': 2.5 });
+      const lob = {};
+      if (rez) {
+        const gc = el(veliki, 'g', { 'clip-path': `url(#${id})` });
+        lob.ceoni = el(gc, 'polygon', { points: '0,0 150,0 128,108 40,124 0,140', fill: 'rgba(116,185,255,.55)' });
+        lob.temeni = el(gc, 'polygon', { points: '150,0 232,0 224,96 128,108', fill: 'rgba(85,239,196,.55)' });
+        lob.potiljacni = el(gc, 'polygon', { points: '232,0 320,0 320,150 214,140 224,96', fill: 'rgba(253,203,110,.6)' });
+        lob.slepoocni = el(gc, 'polygon', { points: '40,124 128,108 224,96 214,150 40,160', fill: 'rgba(253,121,168,.55)' });
+        put(veliki, OB, { stroke: '#fff', 'stroke-width': 2 });
+      }
+      const r = slucajni(4);
+      for (let i = 0; i < 9; i++) { const x = 60 + r() * 180, y = 34 + r() * 80; put(veliki, `M${f2(x)},${f2(y)} q${f2(8 + r() * 10)},${f2(-6 + r() * 12)} ${f2(18 + r() * 12)},${f2(-4 + r() * 8)}`, { stroke: 'rgba(255,255,255,.35)', 'stroke-width': 1.5 }); }
+      const medju = el(s, 'ellipse', { cx: 160, cy: 110, rx: 16, ry: 9, fill: 'rgba(162,155,254,.5)', stroke: '#a29bfe', 'stroke-width': 1.5, opacity: rez ? 0 : 1 });
+      const delovi = rez ? [
+        { id: 'ceoni', naziv: '~čeoni režanj', ax: 76, ay: 70, lx: 8, ly: 14, a: 'start', sjaj: sjaj(lob.ceoni) },
+        { id: 'temeni', naziv: '~temeni režanj', ax: 186, ay: 40, lx: 200, ly: 8, a: 'start', sjaj: sjaj(lob.temeni) },
+        { id: 'potiljacni', naziv: '~potiljačni režanj', ax: 246, ay: 92, lx: 314, ly: 60, a: 'end', sjaj: sjaj(lob.potiljacni) },
+        { id: 'slepoocni', naziv: '~slepoočni režanj', ax: 120, ay: 128, lx: 8, ly: 186, a: 'start', sjaj: sjaj(lob.slepoocni) },
+      ] : [
+        { id: 'veliki', naziv: '~veliki mozak', ax: 110, ay: 50, lx: 8, ly: 14, a: 'start', sjaj: sjaj(kor) },
+        { id: 'medjumozak', naziv: '~međumozak', ax: 152, ay: 112, lx: 8, ly: 168, a: 'start', sjaj: sjaj(medju) },
+        { id: 'mali', naziv: '~mali mozak', ax: 240, ay: 158, lx: 314, ly: 196, a: 'end', sjaj: sjaj(...mali.children) },
+        { id: 'stablo', naziv: '~moždano stablo', ax: 182, ay: 150, lx: 314, ly: 108, a: 'end', sjaj: sjaj(stablo) },
+        { id: 'produzena', naziv: '~produžena moždina', ax: 172, ay: 200, lx: 8, ly: 206, a: 'start', sjaj: sjaj(produzena) },
+      ];
+      const nat = natpisi(s, m, delovi);
+      const iskre = Array.from({ length: 10 }, () => ({ c: kr(s, 0, 0, 2.2, { fill: C.zuta, opacity: 0 }), x: 60 + r() * 180, y: 30 + r() * 90, f: r() }));
+      return {
+        kadar(t) {
+          iskre.forEach((k) => { const u = (t * 0.7 + k.f) % 1; at(k.c, { cx: k.x, cy: k.y, opacity: f2(u < 0.3 ? Math.sin((u / 0.3) * Math.PI) : 0) }); });
+          nat.kadar(t);
+        },
+      };
+    },
+
+    // Povratna sprega: nivo šećera u krvi posle obroka raste, gušterača luči insulin i nivo pada; kad padne
+    // ispod normale, luči glukagon i nivo raste. Traka – normalan nivo.
+    sprega(s, m) {
+      const W = 320, H = 200;
+      vel(s, W, H);
+      const x0 = 30, x1 = 306, yS = 100;
+      el(s, 'rect', { x: x0, y: yS - 16, width: x1 - x0, height: 32, fill: 'rgba(85,239,196,.12)' });
+      tx(s, x1, yS - 22, '~normalan nivo', { a: 'end', v: 9, b: '#55efc4' });
+      lin(s, x0, 176, x1, 176, '#5d7a96', 1.5); lin(s, x0, 176, x0, 20, '#5d7a96', 1.5);
+      tx(s, x0, 188, '~šećer u krvi', { a: 'start', v: 9, b: '#9fb3c8' });
+      tx(s, x1, 188, '~vreme', { a: 'end', v: 9, b: '#9fb3c8' });
+      const N = 120, pts = [];
+      const nivo = (u) => { const t = u * 12; return yS - 62 * Math.exp(-((t - 2) ** 2) / 1.2) + 46 * Math.exp(-((t - 6.4) ** 2) / 1.3) - 50 * Math.exp(-((t - 9.4) ** 2) / 1) + 6 * Math.sin(t * 3); };
+      for (let i = 0; i <= N; i++) pts.push([x0 + 6 + (i / N) * (x1 - x0 - 12), nivo(i / N)]);
+      let L = 0; for (let i = 1; i < pts.length; i++) L += Math.hypot(pts[i][0] - pts[i - 1][0], pts[i][1] - pts[i - 1][1]);
+      const kriva = el(s, 'polyline', { points: tacke(pts), fill: 'none', stroke: '#74b9ff', 'stroke-width': 3, 'stroke-dasharray': f2(L + 2), 'stroke-dashoffset': f2(L + 2) });
+      const tacka = kr(s, 0, 0, 5, { fill: '#74b9ff', stroke: '#0b1826', 'stroke-width': 1.5 });
+      const dog = [[0.12, '🍞', '~obrok', '#fdcb6e'], [0.24, '💉', '~insulin', '#55efc4'], [0.5, '🏃', '~glad', '#fdcb6e'], [0.6, '⬆️', '~glukagon', '#fd79a8'], [0.78, '🍎', '~obrok', '#fdcb6e'], [0.88, '💉', '~insulin', '#55efc4']];
+      const ozn = dog.map(([u, e, o, b], i) => { const g = el(s, 'g'); const x = x0 + 6 + u * (x1 - x0 - 12); const gore = i % 2 === 0; poz(emo(g, e, 13), x, gore ? 20 : 162); tx(g, x, gore ? 34 : 148, o, { v: 9, b }); g.style.opacity = 0; return { g, u }; });
+      return {
+        trajanje: 7, pauza: 2.5,
+        kadar(t) {
+          const u = Math.min(1, t / 6.6);
+          at(kriva, { 'stroke-dashoffset': f2((L + 2) * (1 - u)) });
+          const [x, y] = na(pts, u); at(tacka, { cx: f2(x), cy: f2(y) });
+          ozn.forEach((o) => { o.g.style.opacity = u >= o.u ? 1 : 0; });
+        },
+      };
+    },
+
+    // Kruženje materije. tip: 'voda' (isparavanje, transpiracija, kondenzacija, padavine, oticanje),
+    // 'ugljenik' (fotosinteza, disanje, ishrana, razlaganje, sagorevanje), 'azot' (fiksacija, munja, amonifikacija,
+    // nitrifikacija, usvajanje, denitrifikacija). istakni: id procesa – strelica treperi, umesto naziva „?“.
+    kruzenje(s, m) {
+      const W = 320, H = 230;
+      vel(s, W, H);
+      const tip = izbor(m.tip, ['voda', 'ugljenik', 'azot'], 'voda');
+      const ist = lista(m.istakni), pokazi = m.natpisi ?? true;
+      const cv = [], ve = [];
+      if (tip === 'voda') {
+        el(s, 'path', { d: 'M0,200 Q80,192 150,200 L150,230 L0,230Z', fill: 'rgba(46,134,222,.55)' });
+        el(s, 'path', { d: 'M150,230 L150,200 L210,120 L250,170 L280,110 L320,180 L320,230Z', fill: '#5d4330' });
+        el(s, 'path', { d: 'M150,212 C190,206 214,190 236,176', stroke: '#74b9ff', 'stroke-width': 4, fill: 'none' });
+        poz(emo(s, '☀️', 28), 34, 30);
+        const oblak = emo(s, '☁️', 46); poz(oblak, 190, 44);
+        poz(emo(s, '🌳', 34), 112, 178);
+        cv.push(['oblak', 190, 44]);
+        ve.push(
+          { id: 'isparavanje', o: '~isparavanje', p: [[60, 194], [80, 130], [168, 56]], b: '#74b9ff', lx: 46, ly: 120 },
+          { id: 'transpiracija', o: '~transpiracija', p: [[116, 160], [130, 110], [176, 62]], b: '#55efc4', lx: 128, ly: 140, a: 'start' },
+          { id: 'kondenzacija', o: '~kondenzacija', p: [[150, 30], [190, 20], [228, 30]], b: '#dfe6e9', lx: 190, ly: 8 },
+          { id: 'padavine', o: '~padavine', p: [[230, 60], [246, 96], [262, 124]], b: '#74b9ff', lx: 270, ly: 70, a: 'start' },
+          { id: 'oticanje', o: '~oticanje', p: [[236, 176], [200, 196], [150, 212], [100, 206]], b: '#2e86de', lx: 226, ly: 216 },
+        );
+      } else if (tip === 'ugljenik') {
+        el(s, 'rect', { x: 0, y: 180, width: 320, height: 50, fill: B.zemlja });
+        const C2 = (x, y, e, o, v = 30) => { poz(emo(s, e, v), x, y); tx(s, x, y + v / 2 + 8, o, { v: 9.5 }); };
+        C2(160, 24, '☁️', 'CO₂', 34); tx(s, 192, 48, '~u vazduhu', { a: 'start', v: 9 });
+        C2(56, 150, '🌳', '', 44); C2(160, 156, '🐇', '', 30); C2(268, 150, '🏭', '', 36); C2(160, 206, '🍄', '', 22);
+        tx(s, 160, 222, '~razlagači', { v: 9 });
+        ve.push(
+          { id: 'fotosinteza', o: '~fotosinteza', p: [[140, 36], [70, 60], [56, 120]], b: '#55efc4', lx: 44, ly: 70, a: 'middle' },
+          { id: 'disanje', o: '~disanje', p: [[160, 138], [160, 90], [160, 50]], b: '#b2bec3', lx: 166, ly: 96, a: 'start' },
+          { id: 'ishrana', o: '~ishrana', p: [[80, 158], [118, 162], [144, 160]], b: '#fdcb6e', lx: 110, ly: 178 },
+          { id: 'razlaganje', o: '~razlaganje', p: [[176, 200], [214, 180], [214, 90], [178, 44]], b: '#a29bfe', lx: 222, ly: 120, a: 'start' },
+          { id: 'sagorevanje', o: '~sagorevanje', p: [[268, 128], [262, 70], [186, 30]], b: '#ff7675', lx: 290, ly: 90, a: 'middle' },
+        );
+      } else {
+        el(s, 'rect', { x: 0, y: 132, width: 320, height: 98, fill: B.zemlja });
+        tx(s, 120, 18, 'N₂', { v: 12, a: 'end' }); tx(s, 126, 18, '~u vazduhu (78%)', { v: 10, a: 'start' });
+        poz(emo(s, '⚡', 22), 272, 52);
+        poz(emo(s, '🫘', 30), 52, 110);
+        poz(emo(s, '🐄', 26), 200, 108);
+        tx(s, 70, 176, 'NH₃', { v: 12, b: '#fdcb6e' }); tx(s, 250, 176, 'NO₃⁻', { v: 12, b: '#55efc4' });
+        ve.push(
+          { id: 'fiksacija', o: '~azotofiksatori', p: [[110, 26], [60, 60], [52, 150]], b: '#74b9ff', lx: 10, ly: 70, a: 'start' },
+          { id: 'munja', o: '~munja', p: [[272, 64], [282, 110], [262, 160]], b: C.zuta, lx: 312, ly: 112, a: 'end' },
+          { id: 'nitrifikacija', o: '~nitrifikatori', p: [[96, 182], [160, 196], [226, 182]], b: '#55efc4', lx: 160, ly: 212 },
+          { id: 'usvajanje', o: '~biljke usvajaju', p: [[240, 162], [160, 150], [82, 126]], b: '#55efc4', lx: 160, ly: 142 },
+          { id: 'ishrana', o: '~ishrana', p: [[76, 100], [130, 96], [184, 104]], b: '#fdcb6e', lx: 130, ly: 86 },
+          { id: 'denitrifikacija', o: '~razlagači', p: [[214, 92], [226, 60], [210, 28]], b: '#a29bfe', lx: 234, ly: 44, a: 'start' },
+        );
+      }
+      const sv = ve.map((v) => {
+        const je = ist.includes(v.id);
+        const p = el(s, 'polyline', { points: tacke(v.p), fill: 'none', stroke: v.b, 'stroke-width': je ? 4 : 2.5, 'stroke-dasharray': '7 5', opacity: 0.85, 'stroke-linejoin': 'round' });
+        const n = v.p.length, [xa, ya] = v.p[n - 2], [xb, yb] = v.p[n - 1];
+        strelica(s, v.b, je ? 3.5 : 2.5).set(xa + (xb - xa) * 0.6, ya + (yb - ya) * 0.6, xb, yb);
+        if (je) { kr(s, v.lx, v.ly, 10, { fill: C.zuta }); tx(s, v.lx, v.ly + 0.5, '?', { v: 14, b: C.pozadina, obrub: false }); }
+        else if (pokazi) tx(s, v.lx, v.ly, v.o, { v: 9.5, a: v.a || 'middle', b: v.b === '#b2bec3' ? C.bela : v.b });
+        const kap = [0, 1, 2].map(() => kr(s, 0, 0, 3, { fill: v.b }));
+        return { p, v, kap, je, s0: je ? sjaj(p) : null };
+      });
+      return {
+        kadar(t) {
+          sv.forEach(({ v, kap, je, s0 }, j) => {
+            kap.forEach((k, i) => { const u = (t * 0.28 + i / 3 + j * 0.13) % 1; const [x, y] = na(v.p, u); at(k, { cx: f2(x), cy: f2(y), opacity: f2(Math.min(1, u * 5, (1 - u) * 5)) }); });
+            if (je) s0(talas(t, 0.8));
+          });
+        },
+      };
+    },
+
+    // Simbioza. tip: 'lisaj' (gljiva i alge: alge daju šećer, gljiva vodu i minerale), 'mikoriza' (hife gljive
+    // oko korena drveta), 'kvrzice' (kvržice sa bakterijama na korenu mahunarke vezuju azot iz vazduha).
+    // Delovi – lisaj: gljiva, alge, podloga; mikoriza: koren, hife; kvrzice: koren, kvrzice.
+    simbioza(s, m) {
+      const W = 320, H = 220;
+      vel(s, W, H);
+      const tip = izbor(m.tip, ['lisaj', 'mikoriza', 'kvrzice'], 'lisaj');
+      const r = slucajni(6);
+      const tokovi = [];
+      let delovi = [];
+      if (tip === 'lisaj') {
+        el(s, 'rect', { x: 0, y: 176, width: 320, height: 44, fill: '#636e72' });
+        const hife = el(s, 'g');
+        for (let i = 0; i < 26; i++) { const x = 20 + r() * 280, y = 40 + r() * 130; put(hife, `M${f2(x)},${f2(y)} q${f2(-20 + r() * 40)},${f2(-12 + r() * 24)} ${f2(-30 + r() * 60)},${f2(-14 + r() * 28)}`, { stroke: '#dfe6e9', 'stroke-width': 2 }); }
+        for (let i = 0; i < 8; i++) put(hife, `M${30 + i * 36},170 L${26 + i * 36},186`, { stroke: '#dfe6e9', 'stroke-width': 2 });
+        el(s, 'path', { d: 'M10,46 C80,30 240,30 310,46', stroke: '#dfe6e9', 'stroke-width': 6, fill: 'none' });
+        const alge = el(s, 'g');
+        for (let i = 0; i < 16; i++) kr(alge, 26 + i * 18 + r() * 6, 74 + r() * 24, 6, { fill: '#27ae60', stroke: '#55efc4', 'stroke-width': 1.5 });
+        tokovi.push({ p: [[90, 84], [110, 120], [130, 150]], b: '#ffeaa7', o: '~šećer' }, { p: [[210, 176], [200, 130], [190, 92]], b: '#74b9ff', o: '~voda i minerali' });
+        delovi = [
+          { id: 'alge', naziv: '~alge', ax: 280, ay: 84, lx: 312, ly: 18, a: 'end', sjaj: sjaj(...alge.children) },
+          { id: 'gljiva', naziv: '~hife gljive', ax: 60, ay: 140, lx: 8, ly: 18, a: 'start', sjaj: sjaj(...hife.children) },
+          { id: 'podloga', naziv: '~kamen', ax: 280, ay: 196, lx: 312, ly: 208, a: 'end' },
+        ];
+      } else if (tip === 'mikoriza') {
+        el(s, 'rect', { x: 0, y: 40, width: 320, height: 180, fill: B.zemlja });
+        el(s, 'rect', { x: 146, y: 0, width: 28, height: 50, fill: '#6d4c41' });
+        const koren = el(s, 'g');
+        const kor = [[160, 50, 160, 120], [160, 80, 90, 150], [160, 80, 240, 150], [160, 120, 120, 200], [160, 120, 210, 200], [90, 150, 50, 190], [240, 150, 290, 186]];
+        kor.forEach(([a, b, c, d], i) => put(koren, `M${a},${b} Q${(a + c) / 2 + (i % 2 ? 10 : -10)},${(b + d) / 2} ${c},${d}`, { stroke: '#d6a46c', 'stroke-width': i < 3 ? 7 : 4, 'stroke-linecap': 'round' }));
+        const hife = el(s, 'g');
+        for (let i = 0; i < 40; i++) { const [a, b, c, d] = kor[i % kor.length], u = r(); const x = lerp(a, c, u), y = lerp(b, d, u); put(hife, `M${f2(x)},${f2(y)} q${f2(-24 + r() * 48)},${f2(-14 + r() * 30)} ${f2(-40 + r() * 80)},${f2(-10 + r() * 40)}`, { stroke: 'rgba(255,255,255,.75)', 'stroke-width': 1.2 }); }
+        tokovi.push({ p: [[40, 210], [70, 180], [96, 152]], b: '#74b9ff', o: '~voda i minerali' }, { p: [[234, 150], [258, 166], [282, 184]], b: '#ffeaa7', o: '~šećer' });
+        delovi = [
+          { id: 'koren', naziv: '~koren', ax: 160, ay: 100, lx: 312, ly: 60, a: 'end', sjaj: sjaj(...koren.children) },
+          { id: 'hife', naziv: '~hife gljive', ax: 120, ay: 182, lx: 8, ly: 60, a: 'start', sjaj: sjaj(...hife.children) },
+        ];
+      } else {
+        el(s, 'rect', { x: 0, y: 60, width: 320, height: 160, fill: B.zemlja });
+        poz(emo(s, '🌱', 40), 160, 36);
+        const koren = el(s, 'g');
+        const kor = [[160, 60, 160, 200], [160, 90, 80, 170], [160, 90, 240, 170], [160, 130, 100, 210], [160, 130, 220, 210]];
+        kor.forEach(([a, b, c, d]) => put(koren, `M${a},${b} Q${(a + c) / 2},${(b + d) / 2 + 10} ${c},${d}`, { stroke: '#d6a46c', 'stroke-width': 4, 'stroke-linecap': 'round' }));
+        const kv = el(s, 'g');
+        for (let i = 0; i < 14; i++) { const [a, b, c, d] = kor[i % kor.length], u = 0.3 + r() * 0.6; kr(kv, lerp(a, c, u) + (r() - 0.5) * 6, lerp(b, d, u) + 4, 4.5 + r() * 2, { fill: '#fab1a0', stroke: '#e17055', 'stroke-width': 1.2 }); }
+        tokovi.push({ p: [[30, 70], [40, 120], [86, 160]], b: '#74b9ff', o: 'N₂' }, { p: [[160, 70], [176, 110], [208, 160]], b: '#ffeaa7', o: '~šećer' });
+        delovi = [
+          { id: 'koren', naziv: '~koren', ax: 160, ay: 180, lx: 312, ly: 210, a: 'end', sjaj: sjaj(...koren.children) },
+          { id: 'kvrzice', naziv: '~kvržice sa bakterijama', ax: 90, ay: 166, lx: 8, ly: 210, a: 'start', sjaj: sjaj(...kv.children) },
+        ];
+      }
+      const tk = tokovi.map((x) => { put(s, `M${x.p.map((p) => p.join(',')).join(' L')}`, { stroke: x.b, 'stroke-width': 1.5, 'stroke-dasharray': '4 4', opacity: 0.6 }); const n = x.p.length; tx(s, x.p[n - 1][0], x.p[n - 1][1] + 12, x.o, { v: 9.5, b: x.b }); return { ...x, k: [0, 1, 2].map(() => kr(s, 0, 0, 3.2, { fill: x.b })) }; });
+      const nat = natpisi(s, m, delovi);
+      return {
+        kadar(t) {
+          tk.forEach((x, j) => x.k.forEach((k, i) => { const u = (t * 0.3 + i / 3 + j * 0.17) % 1; const [px, py] = na(x.p, u); at(k, { cx: f2(px), cy: f2(py), opacity: f2(Math.min(1, u * 5, (1 - u) * 5)) }); }));
+          nat.kadar(t);
+        },
+      };
+    },
+
+    // Sukcesija: gola stena → lišajevi i mahovine (pionirska zajednica) → trave → žbunje → šuma (klimaks).
+    // skrij: indeks stadijuma (0–4) za „?“.
+    sukcesija(s, m) {
+      const W = 320, H = 200;
+      vel(s, W, H);
+      const skrij = lista(m.skrij);
+      const r = slucajni(2);
+      const nazivi = [['~gola stena', ''], ['~lišajevi', '~(pionirska)'], ['~trave', ''], ['~žbunje', ''], ['~šuma', '~(klimaks)']];
+      const pan = nazivi.map((n, i) => {
+        const g = el(s, 'g');
+        const x = 4 + i * 63;
+        el(g, 'rect', { x, y: 18, width: 59, height: 132, rx: 6, fill: '#13263a', stroke: '#22384d' });
+        el(g, 'path', { d: `M${x},150 L${x},${138 - i * 2} Q${x + 30},${130 - i * 3} ${x + 59},${138 - i * 2} L${x + 59},150Z`, fill: i ? B.zemlja2 : '#7f8c8d' });
+        if (i === 0) for (let k = 0; k < 3; k++) el(g, 'ellipse', { cx: x + 14 + k * 16, cy: 138, rx: 10, ry: 7, fill: '#95a5a6' });
+        if (i >= 1) for (let k = 0; k < 8; k++) kr(g, x + 6 + r() * 47, 132 + r() * 6, 2.5, { fill: ['#fdcb6e', '#55efc4', '#b2bec3'][k % 3] });
+        if (i >= 2) for (let k = 0; k < 9; k++) { const xx = x + 5 + k * 6; put(g, `M${xx},136 q-2,-10 1,-18`, { stroke: '#7bed9f', 'stroke-width': 2 }); }
+        if (i >= 3) for (const dx of [14, 44]) kr(g, x + dx, 118, 11, { fill: '#55b96a', stroke: '#1e6b3a' });
+        if (i >= 4) { for (const dx of [20, 42]) { el(g, 'rect', { x: x + dx - 2, y: 64, width: 5, height: 70, fill: '#6d4c41' }); el(g, 'ellipse', { cx: x + dx, cy: 58, rx: 16, ry: 26, fill: '#27ae60', stroke: '#1e6b3a' }); } }
+        const sk = skrij.includes(i);
+        tx(g, x + 29.5, 164, sk ? '?' : n[0], { v: sk ? 16 : 9.5, b: sk ? C.zuta : C.bela });
+        if (n[1] && !sk) tx(g, x + 29.5, 178, n[1], { v: 8.5, b: '#9fb3c8' });
+        if (i < 4) strelica(s, C.zuta, 2).set(x + 56, 10, x + 70, 10);
+        g.style.opacity = 0;
+        return g;
+      });
+      return {
+        trajanje: 5, pauza: 3,
+        kadar(t) { pan.forEach((g, i) => { g.style.opacity = f2(glatko((t - i * 0.9) / 0.6)); }); },
+      };
+    },
+
+    // Efekat staklene bašte: sunčevi zraci greju tlo, tlo zrači toplotu, a gasovi (CO₂, metan, vodena para) je deo
+    // vraćaju. pojacan: true – više gasova, manje toplote odlazi u svemir, termometar raste.
+    staklena(s, m) {
+      const W = 320, H = 220;
+      vel(s, W, H);
+      const poj = !!m.pojacan;
+      poz(emo(s, '☀️', 30), 30, 26);
+      el(s, 'path', { d: 'M0,70 Q160,50 320,70', stroke: 'rgba(116,185,255,.5)', 'stroke-width': poj ? 22 : 12, fill: 'none' });
+      const r = slucajni(8);
+      for (let i = 0; i < (poj ? 40 : 14); i++) { const x = 8 + r() * 304; kr(s, x, 62 - Math.abs(x - 160) * 0.04 + (r() - 0.5) * (poj ? 16 : 8), 2.4, { fill: '#b2bec3' }); }
+      tx(s, 8, 92, 'CO₂, CH₄, H₂O', { a: 'start', v: 8.5, b: '#b2bec3' });
+      tx(s, 312, 92, '~gasovi staklene bašte', { a: 'end', v: 9, b: '#74b9ff' });
+      el(s, 'path', { d: 'M0,190 Q160,174 320,190 L320,220 L0,220Z', fill: '#2d8a47' });
+      const zr = [0, 1, 2].map(() => lin(s, 0, 0, 0, 0, C.zuta, 3));
+      const tp = [0, 1, 2, 3].map(() => put(s, '', { stroke: '#ff7675', 'stroke-width': 2.5 }));
+      const term = el(s, 'g');
+      el(term, 'rect', { x: 290, y: 110, width: 10, height: 60, rx: 5, fill: '#13263a', stroke: '#dfe6e9', 'stroke-width': 1.5 });
+      kr(term, 295, 174, 8, { fill: '#ff7675' });
+      const stub = el(term, 'rect', { x: 292.5, y: 150, width: 5, height: 24, fill: '#ff7675' });
+      const tlab = tx(s, 284, 120, '', { a: 'end', v: 10, b: '#ff7675' });
+      const talasP = (x, y0, y1, faza) => { let d = `M${f2(x)},${y0}`; for (let y = y0; y >= y1; y -= 4) d += ` L${f2(x + 5 * Math.sin((y + faza) / 5))},${y}`; return d; };
+      return {
+        kadar(t) {
+          zr.forEach((z, i) => { const u = (t * 0.5 + i / 3) % 1; const x = 60 + i * 70; at(z, { x1: f2(x - 30 + u * 30), y1: f2(30 + u * 140 - 20), x2: f2(x - 22 + u * 30), y2: f2(30 + u * 140), opacity: f2(Math.min(1, (1 - u) * 6)) }); });
+          tp.forEach((p, i) => {
+            const u = (t * 0.4 + i / 4) % 1;
+            const x = 70 + i * 60;
+            const zarobljen = poj ? i !== 3 : i % 2 === 0;
+            const yv = 180 - u * 150;
+            const y = zarobljen && yv < 76 ? 76 + (76 - yv) : yv;
+            at(p, { d: talasP(x, f2(y + 22), f2(y), t * 30), opacity: f2(Math.min(1, (1 - u) * 4)) });
+          });
+          const h = poj ? Math.min(46, 24 + t * 4) : 24;
+          at(stub, { y: f2(174 - h), height: f2(h) });
+          postaviTekst(tlab, `${(15 + (h - 24) / 10).toFixed(1).replace('.', ',')} °C`);
+        },
+      };
+    },
+
+    // Jaje kopnenih kičmenjaka (gmizavci, ptice) sa omotačima. Delovi: ljuska, horion, amnion, alantois, zumance, embrion.
+    jaje(s, m) {
+      const W = 320, H = 210;
+      vel(s, W, H);
+      const ljuska = el(s, 'ellipse', { cx: 140, cy: 105, rx: 120, ry: 92, fill: '#f5ecd7', stroke: '#dfe6e9', 'stroke-width': 4 });
+      const horion = el(s, 'ellipse', { cx: 140, cy: 105, rx: 110, ry: 82, fill: 'rgba(250,177,160,.25)', stroke: '#e17055', 'stroke-width': 2 });
+      const alantois = el(s, 'ellipse', { cx: 196, cy: 74, rx: 42, ry: 30, fill: 'rgba(162,155,254,.45)', stroke: '#a29bfe', 'stroke-width': 2 });
+      const zum = el(s, 'ellipse', { cx: 130, cy: 150, rx: 54, ry: 30, fill: '#fdcb6e', stroke: '#e1a82c', 'stroke-width': 2 });
+      const amnion = el(s, 'ellipse', { cx: 118, cy: 82, rx: 46, ry: 36, fill: 'rgba(116,185,255,.45)', stroke: '#74b9ff', 'stroke-width': 2 });
+      const emb = el(s, 'path', { d: 'M100,76 C100,58 132,56 136,76 C140,96 120,106 108,98 C100,92 112,84 118,90', stroke: '#ff7675', 'stroke-width': 7, fill: 'none', 'stroke-linecap': 'round' });
+      put(s, 'M120,100 C124,116 128,126 130,128', { stroke: '#e17055', 'stroke-width': 2 });
+      const mehur = [0, 1, 2].map(() => kr(s, 0, 0, 3, { fill: 'rgba(223,230,233,.8)' }));
+      const delovi = [
+        { id: 'ljuska', naziv: '~ljuska', ax: 254, ay: 120, lx: 316, ly: 150, a: 'end', sjaj: sjaj(ljuska) },
+        { id: 'horion', naziv: '~horion', ax: 240, ay: 140, lx: 316, ly: 186, a: 'end', sjaj: sjaj(horion) },
+        { id: 'alantois', naziv: '~alantois', ax: 220, ay: 60, lx: 316, ly: 22, a: 'end', sjaj: sjaj(alantois) },
+        { id: 'amnion', naziv: '~amnion', ax: 86, ay: 64, lx: 8, ly: 14, a: 'start', sjaj: sjaj(amnion) },
+        { id: 'embrion', naziv: '~zametak', ax: 104, ay: 70, lx: 8, ly: 50, a: 'start', sjaj: sjaj(emb) },
+        { id: 'zumance', naziv: '~žumančana kesa', ax: 92, ay: 160, lx: 8, ly: 202, a: 'start', sjaj: sjaj(zum) },
+      ];
+      const nat = natpisi(s, m, delovi);
+      return {
+        kadar(t) {
+          const p = 1 + 0.04 * Math.max(0, Math.sin(t * 7));
+          emb.setAttribute('transform', `translate(118 82) scale(${f2(p)}) translate(-118 -82)`);
+          mehur.forEach((k, i) => { const u = (t * 0.35 + i / 3) % 1; at(k, { cx: f2(210 + i * 10 + u * 40), cy: f2(40 - u * 30 + i * 8), opacity: f2(Math.sin(u * Math.PI)) }); });
+          nat.kadar(t);
+        },
+      };
+    },
+
+    // Izlazak na kopno: riba → riba šakoperka (mesnata peraja) → vodozemac → gmizavac (jaje sa ljuskom).
+    // skrij: indeks (0–3) za „?“.
+    kopno(s, m) {
+      const W = 320, H = 190;
+      vel(s, W, H);
+      const skrij = lista(m.skrij);
+      el(s, 'rect', { x: 0, y: 100, width: 150, height: 90, fill: 'rgba(46,134,222,.45)' });
+      el(s, 'path', { d: 'M150,100 Q200,96 320,92 L320,190 L150,190Z', fill: '#7a5a3f' });
+      el(s, 'path', { d: 'M150,100 Q160,140 170,190', stroke: '#c2a25a', 'stroke-width': 3, fill: 'none' });
+      const sk = (g, x, y) => { kr(g, x, y, 15, { fill: C.zuta }); tx(g, x, y + 0.5, '?', { v: 18, b: C.pozadina, obrub: false }); };
+      const fig = [
+        (g) => poz(emo(g, '🐟', 30), 38, 132),
+        (g) => {
+          el(g, 'ellipse', { cx: 110, cy: 124, rx: 26, ry: 10, fill: '#8395a7', stroke: '#c8d6e5', 'stroke-width': 1.5 });
+          el(g, 'path', { d: 'M84,124 L70,114 L72,134Z', fill: '#8395a7' });
+          for (const [x, y, a] of [[118, 134, 30], [100, 134, 30]]) el(g, 'ellipse', { cx: x, cy: y + 4, rx: 8, ry: 4, fill: '#576574', transform: `rotate(${a} ${x} ${y + 4})` });
+          kr(g, 128, 120, 2, { fill: '#0b1826' });
+        },
+        (g) => poz(emo(g, '🐸', 30), 206, 80),
+        (g) => poz(emo(g, '🦎', 32), 280, 74),
+      ];
+      const naz = ['~riba', '~šakoperka', '~vodozemac', '~gmizavac'];
+      const xs = [38, 110, 206, 280];
+      const gr = fig.map((f, i) => {
+        const g = el(s, 'g');
+        if (skrij.includes(i) && i !== 1) sk(g, xs[i], i < 2 ? 132 : 78); else f(g);
+        tx(g, xs[i], 170, skrij.includes(i) ? '?' : naz[i], { v: skrij.includes(i) ? 16 : 10, b: skrij.includes(i) ? C.zuta : C.bela });
+        g.style.opacity = 0;
+        return g;
+      });
+      tx(s, 8, 14, '~voda', { a: 'start', v: 9, b: '#74b9ff' }); tx(s, 312, 14, '~kopno', { a: 'end', v: 9, b: '#d6a46c' });
+      const str = [0, 1, 2].map((i) => { const a = strelica(s, C.zuta, 2).set(xs[i] + 18, 40, xs[i + 1] - 18, 40); a.g.style.opacity = 0; return a.g; });
+      return {
+        trajanje: 4.5, pauza: 3,
+        kadar(t) { gr.forEach((g, i) => { g.style.opacity = f2(glatko((t - i) / 0.6)); }); str.forEach((g, i) => { g.style.opacity = f2(glatko((t - i - 0.7) / 0.4)); }); },
+      };
+    },
+
+    // Grčenje mišića: niti aktina klize preko niti miozina, pa se deo mišićnog vlakna skraćuje.
+    kontrakcija(s, m) {
+      const W = 320, H = 180;
+      vel(s, W, H);
+      const zl = lin(s, 0, 30, 0, 150, '#dfe6e9', 5), zd = lin(s, 0, 30, 0, 150, '#dfe6e9', 5);
+      const akt = [], mio = [];
+      for (let i = 0; i < 4; i++) { const y = 42 + i * 32; akt.push([lin(s, 0, y, 0, y, '#74b9ff', 3), lin(s, 0, y, 0, y, '#74b9ff', 3)]); }
+      for (let i = 0; i < 3; i++) { const y = 58 + i * 32; mio.push(el(s, 'rect', { x: 110, y: y - 5, width: 100, height: 10, rx: 5, fill: '#e17055' })); for (let k = 0; k < 8; k++) lin(s, 114 + k * 12, y - 9, 120 + k * 12, y - 5, '#fab1a0', 1.5), lin(s, 114 + k * 12, y + 9, 120 + k * 12, y + 5, '#fab1a0', 1.5); }
+      tx(s, 40, 168, '~aktin', { v: 10, b: '#74b9ff' }); tx(s, 160, 168, '~miozin', { v: 10, b: '#e17055' });
+      const st = tx(s, 160, 14, '', { v: 11, b: C.zuta });
+      return {
+        kadar(t) {
+          const u = 0.5 - 0.5 * Math.cos(t * 1.4);
+          const xl = lerp(30, 76, u), xd = lerp(290, 244, u);
+          at(zl, { x1: f2(xl), x2: f2(xl) }); at(zd, { x1: f2(xd), x2: f2(xd) });
+          akt.forEach(([a, b], i) => { const y = 42 + i * 32; at(a, { x1: f2(xl), y1: y, x2: f2(xl + 90), y2: y }); at(b, { x1: f2(xd), y1: y, x2: f2(xd - 90), y2: y }); });
+          postaviTekst(st, u > 0.6 ? '~zgrčen' : u < 0.4 ? '~opušten' : '');
+        },
+      };
+    },
+
+    // Matične ćelije: matična ćelija se deli – jedna ćerka ostaje matična (samoobnavljanje), a druge se
+    // diferenciraju u nervnu, mišićnu, masnu ćeliju i crveno krvno zrnce.
+    maticne(s, m) {
+      const W = 320, H = 210;
+      vel(s, W, H);
+      const cx = 80, cy = 105;
+      const mat = el(s, 'g'); kr(mat, 0, 0, 20, { fill: 'rgba(162,155,254,.4)', stroke: '#a29bfe', 'stroke-width': 2.5 }); kr(mat, 0, 0, 8, { fill: B.jedro }); poz(mat, cx, cy);
+      tx(s, cx, cy + 34, '~matična ćelija', { v: 10 });
+      const kopija = el(s, 'g'); kr(kopija, 0, 0, 14, { fill: 'rgba(162,155,254,.4)', stroke: '#a29bfe', 'stroke-width': 2 }); kr(kopija, 0, 0, 5, { fill: B.jedro });
+      const sam = tx(s, 40, 26, '~samoobnavljanje', { v: 9.5, b: '#a29bfe' });
+      const cilj = [
+        { y: 30, o: '~nervna', crt: (g) => { kr(g, 0, 0, 8, { fill: 'rgba(250,177,160,.5)', stroke: '#fab1a0', 'stroke-width': 2 }); lin(g, 8, 0, 40, 0, '#fab1a0', 2.5); for (const a of [2.2, 2.8, 3.6, 4.1]) lin(g, 0, 0, 16 * Math.cos(a), 16 * Math.sin(a), '#fab1a0', 2); } },
+        { y: 80, o: '~mišićna', crt: (g) => { el(g, 'ellipse', { cx: 14, cy: 0, rx: 26, ry: 6, fill: B.misic, stroke: '#ff7675' }); kr(g, 14, 0, 2.5, { fill: B.jedro }); } },
+        { y: 130, o: '~masna', crt: (g) => { kr(g, 6, 0, 14, { fill: 'rgba(255,234,167,.6)', stroke: '#fdcb6e', 'stroke-width': 2 }); kr(g, -4, -9, 3, { fill: B.jedro }); } },
+        { y: 180, o: '~crveno krvno zrnce', crt: (g) => { el(g, 'ellipse', { cx: 6, cy: 0, rx: 14, ry: 9, fill: '#e74c3c', stroke: '#ff7675', 'stroke-width': 1.5 }); el(g, 'ellipse', { cx: 6, cy: 0, rx: 6, ry: 3.5, fill: '#c0392b' }); } },
+      ];
+      const ce = cilj.map((c) => { const g = el(s, 'g'); const pom = el(s, 'g'); kr(pom, 0, 0, 12, { fill: 'rgba(162,155,254,.35)', stroke: '#a29bfe', 'stroke-width': 1.5 }); c.crt(g); poz(g, 230, c.y); const t2 = tx(s, 262 + (c.o === '~nervna' ? 14 : 0), c.y, c.o, { a: 'start', v: 9.5 }); const a = strelica(s, '#5d7a96', 1.5).set(cx + 26, cy, 210, c.y); return { g, pom, t2, c, a: a.g }; });
+      return {
+        trajanje: 6, pauza: 2,
+        kadar(t) {
+          const d = glatko((t - 0.3) / 0.8);
+          poz(kopija, lerp(cx, 40, d), lerp(cy, 56, d)); kopija.style.opacity = f2(d); sam.style.opacity = f2(d);
+          ce.forEach((x, i) => {
+            const u = glatko((t - 1.2 - i * 0.9) / 0.9);
+            poz(x.pom, lerp(cx, 230, u), lerp(cy, x.c.y, u));
+            x.pom.style.opacity = f2(u > 0 && u < 1 ? 1 : 0);
+            x.g.style.opacity = f2(u >= 1 ? 1 : 0); x.t2.style.opacity = x.g.style.opacity; x.a.style.opacity = f2(u > 0 ? 0.7 : 0);
+          });
+        },
+      };
+    },
   };
 
   function prikazi(k, m) {
