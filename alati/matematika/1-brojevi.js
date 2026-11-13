@@ -8,10 +8,10 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, pr, polja, kuglica }) => {
     e.push(...polja(12, 1, () => 0, { x0: 0, y0: 5.2, a }));
     e.push(...polja(6, 2, () => 2, { x0: 0, y0: 3.0, a }));
     e.push(...polja(4, 3, () => 4, { x0: 0, y0: 0, a }));
-    Q(2, 'Od 12 kockica mogu da se slože pravougaonici 1 × 12, 2 × 6 i 3 × 4. Od koliko kockica može da se složi SAMO jedan dugačak red?',
+    Q(3, 'Od 12 kvadrata mogu da se slože pravougaonici 1 × 12, 2 × 6 i 3 × 4. Od koliko kvadrata može da se složi SAMO jedan dugačak red?',
       ['13', '15', '16', '21'],
       'Brojevi od kojih se može složiti samo jedan red su prosti brojevi – imaju tačno dva delioca: 1 i sebe. Od 15 kockica ide 3 × 5, od 16 čak 2 × 8 i 4 × 4, a od 21 ide 3 × 7.',
-      'prost', { mediji: G({ O: [0, 0] }, e, { bezImena: ['O'] }) });
+      'prost', { mediji: G({ O: [0, 0] }, e, { bezImena: ['O'] }), autor: 'Miroslav Antonić' });
   }
 
   // prosti brojevi do 20
@@ -33,19 +33,20 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, pr, polja, kuglica }) => {
     'Dovoljno je pogledati poslednje dve cifre: 16 je deljivo sa 4, pa je i 1.316. Stotine su uvek deljive sa 4, jer je 100 = 4 · 25.',
     'deljiv');
 
-  Q(2, 'Pod sobe 12 × 18 dm treba popločati jednakim kvadratnim pločicama, bez sečenja. Kolika je stranica NAJVEĆE takve pločice?',
+  Q(3, 'Pod sobe 12 × 18 dm treba popločati jednakim kvadratnim pločicama, bez sečenja. Kolika je stranica NAJVEĆE takve pločice?',
     ['6 dm', '3 dm', '2 dm', '9 dm'],
     'Stranica mora da deli i 12 i 18, a tražimo najveću – to je najveći zajednički delilac, NZD(12, 18) = 6. Biće potrebno 2 · 3 = 6 pločica.',
     'pločica', {
+      autor: 'Miroslav Antonić',
       mediji: G({ A: [0, 0], B: [18, 0], C: [18, 12], D: [0, 12] }, [{ p: 'ABCD', b: 3 }, { d: 'AB', o: '18 dm' }, { d: 'DA', o: '12 dm' }], { bezImena: ['A', 'B', 'C', 'D'], velicina: 260 }),
       medijiOdgovora: G({ O: [0, 0] }, polja(3, 2, (i, j) => [0, 2, 4][(i + j) % 3], { a: 6 }), { bezImena: ['O'], velicina: 260 }),
     });
 
   proveri(36 % 12 === 0 && 36 % 18 === 0, 'NZS 12 i 18');
-  Q(2, 'Dva autobusa kreću sa iste stanice u 8:00. Prvi polazi na svakih 12 minuta, a drugi na svakih 18. Kada će prvi sledeći put opet krenuti zajedno?',
+  Q(3, 'Dva autobusa kreću sa iste stanice u 8:00. Prvi polazi na svakih 12 minuta, a drugi na svakih 18. Kada će prvi sledeći put opet krenuti zajedno?',
     ['U 8:36', 'U 8:30', 'U 8:54', 'U 9:00'],
     'Traži se najmanji zajednički sadržalac: NZS(12, 18) = 36. Prvi polazi u 8:12, 8:24, 8:36…, a drugi u 8:18, 8:36… Isti račun objašnjava zašto se zupčanici na biciklu „poklope“ tek posle mnogo okretaja.',
-    'autobus', { medijiOdgovora: F('NZS(12, 18) = 36') });
+    'autobus', { medijiOdgovora: F('NZS(12, 18) = 36'), autor: 'Miroslav Antonić' });
 
   Q(3, 'Koji od ovih brojeva ima NEPARAN broj delilaca?', ['36', '24', '30', '40'],
     'Delioci se javljaju u parovima: 36 = 1 · 36 = 2 · 18 = 3 · 12 = 4 · 9 = 6 · 6. Samo kod kvadrata jedan „par“ čini isti broj (6 · 6), pa se broji jednom – zato samo kvadrati imaju neparan broj delilaca (36 ih ima 9).',
@@ -122,9 +123,9 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, pr, polja, kuglica }) => {
     'Svakih 7 dana dan u nedelji se ponavlja, pa je bitan samo ostatak: 100 = 14 · 7 + 2. Dva dana posle ponedeljka je sreda. Ovakvo „računanje u krug“ zove se računanje po modulu – kao kazaljke na satu.',
     'ostatak');
 
-  S(1, 'Spoji broj sa brojem njegovih delilaca', [['7', '2 delioca'], ['9', '3 delioca'], ['8', '4 delioca'], ['12', '6 delilaca']],
+  S(2, 'Spoji broj sa brojem njegovih delilaca', [['7', '2 delioca'], ['9', '3 delioca'], ['8', '4 delioca'], ['12', '6 delilaca']],
     '9 ima delioce 1, 3 i 9; 8 ima 1, 2, 4 i 8; a 12 čak 1, 2, 3, 4, 6 i 12. Brojevi sa mnogo delilaca, poput 12 i 60, zgodni su za deljenje – zato sat ima 12 sati, a sat 60 minuta.',
-    'delilac');
+    'delilac', { autor: 'Miroslav Antonić' });
 
   U(2, 'Koji od ovih brojeva NIJE prost?', ['51', '53', '59', '61'],
     '51 = 3 · 17 (zbir cifara 5 + 1 = 6 je deljiv sa 3), a 53, 59 i 61 su prosti.',

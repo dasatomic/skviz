@@ -22,7 +22,7 @@ const posle = (x) => ({
   ...(x.objasnjenje ? { objasnjenje: x.objasnjenje } : {}),
 });
 
-// Q(težina, pitanje, odgovori [prvi tačan], zanimljivost, pojam, { mediji, medijiOdgovora, vreme })
+// Q(težina, pitanje, odgovori [prvi tačan], zanimljivost, pojam, { mediji, medijiOdgovora, vreme, autor })
 function Q(tezina, pitanje, odgovori, zanimljivost, rec, x = {}) {
   if (new Set(odgovori).size !== 4) throw new Error('Odgovori moraju biti 4 različita: ' + pitanje);
   dodaj({
@@ -30,6 +30,7 @@ function Q(tezina, pitanje, odgovori, zanimljivost, rec, x = {}) {
     ...(x.medijiOdgovora ? { medijiOdgovora: x.medijiOdgovora } : {}),
     ...(x.vreme ? { vreme: x.vreme } : {}),
     rec,
+    ...(x.autor ? { autor: x.autor } : {}),
   });
 }
 // U(težina, pitanje, odgovori [prvi je uljez], objašnjenje, zanimljivost, pojam, { … })
@@ -39,6 +40,7 @@ function U(tezina, pitanje, odgovori, objasnjenje, zanimljivost, rec, x = {}) {
     vrsta: 'uljez', tezina, pitanje, ...dodatno(x), odgovori, objasnjenje, zanimljivost,
     ...(x.medijiOdgovora ? { medijiOdgovora: x.medijiOdgovora } : {}),
     rec,
+    ...(x.autor ? { autor: x.autor } : {}),
   });
 }
 // S(težina, pitanje, parovi [[levo, desno], …], zanimljivost, pojam, { … })
@@ -47,6 +49,7 @@ function S(tezina, pitanje, parovi, zanimljivost, rec, x = {}) {
     vrsta: 'spoji', tezina, pitanje, ...dodatno(x), parovi, zanimljivost,
     ...(x.medijiOdgovora ? { medijiOdgovora: x.medijiOdgovora } : {}),
     rec,
+    ...(x.autor ? { autor: x.autor } : {}),
   });
 }
 
