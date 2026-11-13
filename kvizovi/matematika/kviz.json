@@ -3325,7 +3325,7 @@
       "rec": "deljiv"
     },
     {
-      "tezina": 2,
+      "tezina": 3,
       "pitanje": "Pod sobe 12 × 18 dm treba popločati jednakim kvadratnim pločicama, bez sečenja. Kolika je stranica NAJVEĆE takve pločice?",
       "mediji": {
         "vrsta": "geo",
@@ -3376,6 +3376,8 @@
         "9 dm"
       ],
       "zanimljivost": "Stranica mora da deli i 12 i 18, a tražimo najveću – to je najveći zajednički delilac, NZD(12, 18) = 6. Biće potrebno 2 · 3 = 6 pločica.",
+      "rec": "pločica",
+      "autor": "Miroslav Antonić",
       "medijiOdgovora": {
         "vrsta": "geo",
         "t": {
@@ -3528,8 +3530,7 @@
           "O"
         ],
         "velicina": 260
-      },
-      "rec": "pločica"
+      }
     },
     {
       "tezina": 2,
