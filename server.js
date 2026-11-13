@@ -13,10 +13,15 @@ const statistika = require('./lib/statistika');
 const Soba = require('./lib/soba');
 const predlozi = require('./lib/predlozi');
 const telemetrija = require('./lib/telemetrija');
+const upisi = require('./lib/upis');
 
 const PORT = +process.env.PORT || 3000;
 const JAVNO = path.join(__dirname, 'public');
 const KVIZOVI = path.join(__dirname, 'kvizovi');
+const PODACI = path.join(__dirname, 'podaci');
+const SOBE_DAT = path.join(PODACI, 'sobe.json'); // sobe sačuvane pri gašenju (deploy), vraćaju se pri pokretanju
+const MAKS_PAUZA = 10 * 60e3; // starije sačuvane sobe se ne vraćaju (server je dugo stajao – igrači su otišli)
+const POKRENUT = Date.now();
 
 const greske = kvizovi.ucitajSve();
 greske.forEach((g) => console.warn('⚠ Greška u kvizu', g));
@@ -41,8 +46,17 @@ const cekaci = new Map(); // kod -> Set<{res, id, tajmer}>  (long-polling, kad S
 
 // Telefon šalje svoj TAJNI id (čuva ga u localStorage); ostali igrači vide samo javni id izveden iz njega.
 // Tako niko ne može da se predstavi kao drugi igrač ili vođa samo zato što mu vidi id u stanju sobe.
-// Ključ je nasumičan po pokretanju servera (sobe ionako žive samo u memoriji).
-const KLJUC_ID = crypto.randomBytes(32);
+// Ključ se pravi jednom i čuva u podaci/kljuc-id: posle restarta (deploy) isti telefon mora da dobije isti javni id,
+// inače ga vraćena soba ne bi prepoznala ni kao igrača ni kao vođu. deploy/izuzeci-rsync.txt ga štiti od brisanja.
+function kljucId() {
+  const f = path.join(PODACI, 'kljuc-id');
+  try { const k = Buffer.from(fs.readFileSync(f, 'utf8').trim(), 'hex'); if (k.length === 32) return k; } catch {}
+  const k = crypto.randomBytes(32);
+  try { fs.mkdirSync(PODACI, { recursive: true }); fs.writeFileSync(f, k.toString('hex') + '\n', { mode: 0o600 }); }
+  catch (e) { console.warn('⚠ Ključ za id igrača nije sačuvan – posle restarta sobe neće prepoznati igrače:', e.message); }
+  return k;
+}
+const KLJUC_ID = kljucId();
 const javniId = (tajni) => (tajni ? crypto.createHmac('sha256', KLJUC_ID).update(String(tajni)).digest('hex').slice(0, 16) : '');
 // broj otvorenih SSE tokova jednog igrača (računa se iz skupa tokova, pa ne može da se „raštimuje“)
 const brojVeza = (kod, id) => { let n = 0; for (const t of tokovi.get(kod) || []) if (t.id === id) n++; return n; };
@@ -150,15 +164,22 @@ const TIPOVI = {
   '.txt': 'text/plain; charset=utf-8', '.xml': 'application/xml; charset=utf-8',
 };
 
-// verzija klijenta (otisak fajlova iz public/) – telefon koji je otvorio staru verziju stranice sam se osveži
+// verzija klijenta (otisak fajlova iz public/) – telefon koji je otvorio staru verziju stranice sam se osveži.
+// Na javnom serveru (production) računa se jednom, iz SADRŽAJA fajlova: novi kod stiže samo punim deploy-om (restart),
+// pa se telefoni osvežavaju tek kad novi server radi, i to samo ako se klijent zaista promenio (git archive svakom
+// commitu daje novo vreme izmene). Lokalno se prati vreme izmene, da se vidi i izmena bez restarta.
+const PRODUKCIJA = process.env.NODE_ENV === 'production';
 let otisak = { do: 0, v: '' };
 function verzijaKlijenta() {
-  if (Date.now() < otisak.do) return otisak.v;
-  let v = '';
+  if (Date.now() < otisak.do || (otisak.v && PRODUKCIJA)) return otisak.v;
+  const h = crypto.createHash('md5');
   for (const f of ['index.html', 'app.js', 'geo.js', 'fizika.js', 'biologija.js', 'istorija.js', 'mediji.js', 'pismo.js', 'style.css']) {
-    try { const st = fs.statSync(path.join(JAVNO, f)); v += st.size.toString(36) + st.mtimeMs.toString(36); } catch {}
+    try {
+      if (PRODUKCIJA) h.update(fs.readFileSync(path.join(JAVNO, f)));
+      else { const st = fs.statSync(path.join(JAVNO, f)); h.update(st.size.toString(36) + st.mtimeMs.toString(36)); }
+    } catch {}
   }
-  otisak = { do: Date.now() + 5000, v: crypto.createHash('md5').update(v).digest('hex').slice(0, 10) };
+  otisak = { do: Date.now() + 5000, v: h.digest('hex').slice(0, 10) };
   return otisak.v;
 }
 Soba.verzijaKlijenta = verzijaKlijenta;
@@ -251,6 +272,12 @@ async function obradi(req, res) {
     return;
   }
 
+  // stanje servera za deploy skriptu (deploy/objavi.sh: --kad-niko-ne-igra, provera posle restarta) – samo sa samog
+  // servera, ne preko Caddy-ja (Caddy uvek dodaje X-Forwarded-For)
+  if (p === '/api/zdravlje') {
+    if (!adresaJeLokalna(req) || req.headers['x-forwarded-for']) return kraj(res, 404, 'nema');
+    return kraj(res, 200, { ...telemetrija.presek(sobe).ukupno, format: Soba.FORMAT, pokrenut: POKRENUT, vraceno: vraceno.sobe });
+  }
   if (p === '/api/kvizovi') { kvizovi.ucitajSve(); return kraj(res, 200, kvizovi.spisak()); }
   // na javnom serveru (production) porodična statistika se ne izlaže strancima
   if (p === '/api/statistika') return kraj(res, 200, process.env.NODE_ENV === 'production' && !process.env.JAVNA_STATISTIKA ? { igraci: {}, igre: [] } : statistika.citaj());
@@ -386,6 +413,61 @@ function lanAdrese() {
   }
   return out;
 }
+
+// ───── sobe preko restarta (deploy): sačuvaj pri gašenju, vrati pri pokretanju ─────
+// Map/Set se u JSON-u čuvaju kao { "__Map": [...] } / { "__Set": [...] }
+const uJson = (k, v) => (v instanceof Map ? { __Map: [...v] } : v instanceof Set ? { __Set: [...v] } : v);
+const izJsona = (k, v) => (v && typeof v === 'object' && !Array.isArray(v) ? (Array.isArray(v.__Map) ? new Map(v.__Map) : Array.isArray(v.__Set) ? new Set(v.__Set) : v) : v);
+
+function sacuvajSobe() {
+  const lista = [...sobe.values()].filter((s) => s.igraci.size).map((s) => s.uStanje());
+  upisi(SOBE_DAT, JSON.stringify({ format: Soba.FORMAT, sacuvano: Date.now(), sobe: lista }, uJson));
+  console.log(`Sačuvano ${lista.length} soba za sledeće pokretanje.`);
+}
+
+// vraćene sobe pamte se do kraja rada (za /api/zdravlje i test deploy-a)
+const vraceno = { sobe: 0 };
+function vratiSobe() {
+  let z;
+  try { z = JSON.parse(fs.readFileSync(SOBE_DAT, 'utf8'), izJsona); } catch (e) { if (e.code !== 'ENOENT') console.warn('⚠ Sačuvane sobe se ne mogu pročitati:', e.message); return; }
+  // zapis se briše odmah: ako se server posle sruši i sam podigne, ne vraćaju se ponovo stare sobe
+  try { fs.unlinkSync(SOBE_DAT); } catch {}
+  const pauza = Date.now() - (+z?.sacuvano || 0);
+  // stariji format se prevodi migracijama korak po korak (Soba.MIGRACIJE, lib/soba.js); bez migracije sobe se odbacuju
+  let format = z?.format;
+  try {
+    while (Number.isInteger(format) && format < Soba.FORMAT && Soba.MIGRACIJE[format] && Array.isArray(z.sobe)) {
+      z.sobe = z.sobe.map(Soba.MIGRACIJE[format]);
+      console.log(`Sačuvane sobe prevedene iz formata ${format} u ${++format}.`);
+    }
+  } catch (e) { return console.error(`⚠ Migracija soba iz formata ${format} nije uspela – sobe odbačene:`, e); }
+  if (format !== Soba.FORMAT) return console.warn(`⚠ Sačuvane sobe su u formatu ${z?.format}, a server traži ${Soba.FORMAT} (nema migracije) – odbačene.`);
+  if (!(pauza >= 0 && pauza < MAKS_PAUZA)) return console.warn(`⚠ Sačuvane sobe su stare ${Math.round(pauza / 1000)} s – odbačene.`);
+  for (const o of Array.isArray(z.sobe) ? z.sobe : []) {
+    try {
+      const s = Soba.izStanja(o, emituj, pauza);
+      if (s.kod && !sobe.has(s.kod)) { sobe.set(s.kod, s); vraceno.sobe++; }
+    } catch (e) { console.error('Soba nije vraćena:', o?.kod, e); }
+  }
+  console.log(`Vraćeno ${vraceno.sobe} soba (server je stajao ${pauza} ms).`);
+}
+vratiSobe();
+
+// systemctl restart / stop šalje SIGTERM (Ctrl+C lokalno – SIGINT): sobe se sačuvaju, a otvorene veze zatvore,
+// pa se telefoni odmah povezuju ponovo (na novi server)
+let gasenje = false;
+function ugasi(signal) {
+  if (gasenje) return;
+  gasenje = true;
+  console.log(`${signal}: gasim server…`);
+  server.close();
+  try { sacuvajSobe(); } catch (e) { console.error('Sobe nisu sačuvane:', e); }
+  for (const set of tokovi.values()) for (const t of set) { try { t.res.end(); } catch {} }
+  for (const set of cekaci.values()) for (const w of set) { clearTimeout(w.tajmer); try { w.res.destroy(); } catch {} }
+  process.exit(0);
+}
+process.on('SIGTERM', () => ugasi('SIGTERM'));
+process.on('SIGINT', () => ugasi('SIGINT'));
 
 server.listen(PORT, '0.0.0.0', () => {
   const ukupno = Object.values(kvizovi.svi()).reduce((s, k) => s + k.pitanja.length, 0);

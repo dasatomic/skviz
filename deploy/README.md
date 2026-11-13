@@ -9,7 +9,49 @@ git push                                     # čuva izmene na GitHub-u (nije ob
 ./deploy/objavi.sh root@2.29.146.92
 ```
 
-Na kraju treba da piše `active` i `Igra radi ✓`.
+Na kraju treba da piše `active` i `Igra radi ✓ (vraćeno soba: N, …)`.
+
+## Pre svakog deploy-a: lokalni test (obavezan)
+Pun deploy ne prekida igre u toku, a to se **pre svakog punog deploy-a proverava lokalno**:
+```bash
+node alati/test-deploy.js                 # stara = poslednje objavljeno, nova = HEAD  (ili: npm run test-deploy)
+node alati/test-deploy.js --nova radni    # proba necommitovanih izmena (pre commita)
+```
+Test na ovom računaru pokrene **staru verziju** (ono što je na serveru) iza proksija koji radi kao Caddy, otvori
+5 soba u raznim fazama (lobi, pitanje, otkrivanje, krug reči) sa simuliranim telefonima i pravim pregledačem
+(headless chromium), uradi **isti deploy** kao `objavi.sh` (rsync sa istim izuzecima, SIGTERM, 2,5 s pauze, start nove
+verzije) i proveri da su sobe preživele: isti igrači i vođa, ista faza, poeni, odgovori, slova, rok pomeren za pauzu,
+odgovor poslat dok server nije radio je primljen, telefoni i pregledač su se sami povezali (i osvežili stranicu ako je
+promenjen klijent). Zatim sve partije odigra do kraja na novoj verziji. Traje ~40 s.
+- `0` ✓ – sme da se objavi.  `1` ✗ – **ne objavljivati**; logovi servera ostaju u privremenom folderu koji test ispiše.
+- `2` ⚠ – nova verzija namerno ne preuzima sobe (vidi „Promena formata“ ispod) – deploy prekida igre u toku.
+
+`objavi.sh` test pokreće **sam**, za prelaz *verzija sa servera* (`/opt/gric-kviz/.objavljeno`) → *commit koji se
+objavljuje*; ako test padne, ništa se ne šalje. Ručno pokretanje je za proveru pre commita i za ispitivanje grešaka.
+Ostale opcije: `--stara/--nova <commit|grana|radni>`, `--pauza <ms>`, `--bez-pregledaca`, `--zadrzi`, `--tiho`.
+
+## Kako deploy ne prekida igre
+- Stari server na SIGTERM (`systemctl restart`) upiše sve sobe u `podaci/sobe.json` i zatvori veze; novi ih pri
+  pokretanju vrati (ako zapis nije stariji od 10 min), pomeri rokove za trajanje pauze i nastavi tajmere.
+- Javni id igrača se izvodi ključem iz `podaci/kljuc-id` (pravi se jednom), pa novi server prepoznaje iste telefone.
+- Telefoni se sami ponovo povežu (i posle 502 od Caddy-ja), a akcije poslate dok server ne radi ponavljaju (~4 s).
+  Ako je promenjen klijent (`public/`), stranica se osveži i vrati u istu sobu (TV ekran preko `/ekran?soba=KOD`).
+- `deploy/izuzeci-rsync.txt`: šta rsync ne šalje i ne briše (statistika, telemetrija, ključ, sačuvane sobe).
+- Pauza za igrače: oko 1 s (koliko se novi server pokreće).
+
+## Promena formata stanja sobe
+Čuvaju se sva polja sobe, pa **izmene koje ne menjaju format nemaju uticaja na igre u toku** – i novo polje sa
+podrazumevanom vrednošću u konstruktoru je u redu. Kad se promeni značenje ili oblik postojećeg polja sobe
+(`lib/soba.js`), poveća se `Soba.FORMAT`:
+- **sa migracijom** (`Soba.MIGRACIJE[stari] = (soba) => …` u `lib/soba.js`) – stare sobe se prevedu i igre idu dalje
+  (test to proverava kao običan deploy, `0`);
+- **bez migracije** – novi server odbacuje stare sobe, test vraća `2`, a `objavi.sh` objavljuje samo:
+  - ako trenutno niko nije u sobi (proveri sam), ili
+  - `./deploy/objavi.sh root@2.29.146.92 --kad-niko-ne-igra` – čeka da niko ne bude u sobi (do `SACEKAJ_MIN=30` min), ili
+  - `PREKINI_SOBE=1 ./deploy/objavi.sh root@2.29.146.92` – svesno prekida igre u toku.
+
+**Prvi deploy posle uvođenja čuvanja soba** je takav slučaj (stara verzija na serveru ne ume da sačuva sobe, a nema ni
+`/api/zdravlje`): objavi kad niko ne igra (pogledaj `/admin`) sa `PREKINI_SOBE=1`. Od sledećeg deploy-a sobe preživljavaju.
 
 ### Samo pitanja (bez restarta)
 Kad su se menjala samo pitanja (`kvizovi/`), objavi ih bez prekidanja soba u toku:
@@ -27,12 +69,18 @@ Kad su se menjala samo pitanja (`kvizovi/`), objavi ih bez prekidanja soba u tok
 ## Šta skripta radi (pun deploy)
 1. Uzme poslednji commit (necommitovane izmene se **ne šalju** – skripta upozori).
 2. Pokrene proveru kvizova – ako ne prođe, ništa se ne šalje.
-3. Pošalje kod na server u `/opt/gric-kviz` (ne dira statistiku, istoriju odigranih pitanja ni telemetriju `podaci/telemetrija.db` na serveru).
-4. Uskladi podešavanje Caddy-ja sa `deploy/caddy.sh` (dira ga samo ako se razlikuje; staro sačuva kao `/etc/caddy/Caddyfile.pre-<vreme>`).
-5. Zapiše commit u `.objavljeno`, restartuje servis `gric-kviz` i proveri da igra odgovara.
+3. Pokrene **lokalni test deploy-a** (verzija sa servera → ovaj commit) – ako ne prođe, ništa se ne šalje; ako deploy
+   prekida sobe (`2`), nastavlja samo kad niko nije u sobi, uz `--kad-niko-ne-igra` ili `PREKINI_SOBE=1`.
+   `BEZ_TESTA=1` preskače test – samo u nuždi.
+4. Pošalje kod na server u `/opt/gric-kviz` (`rsync --checksum --delay-updates`, izuzeci iz `deploy/izuzeci-rsync.txt`:
+   ne dira statistiku, istoriju odigranih pitanja, telemetriju, ključ id-jeva ni sačuvane sobe).
+5. Uskladi podešavanje Caddy-ja sa `deploy/caddy.sh` (dira ga samo ako se razlikuje; staro sačuva kao `/etc/caddy/Caddyfile.pre-<vreme>`).
+6. Zapiše commit u `.objavljeno` (i lokalno u `refs/skviz/objavljeno`, za ručni test), restartuje servis `gric-kviz`
+   (sobe se sačuvaju i vrate) i proveri da igra odgovara.
 
 ## Važno
-- Pun deploy (restart) **prekida sve sobe u toku** (stanje je samo u memoriji) – objavljujte kad niko ne igra. Za samo pitanja koristi `--pitanja`.
+- Pun deploy **ne prekida sobe u toku** (osim kad test kaže drugačije – vidi „Promena formata“). Za samo pitanja i dalje je brže `--pitanja` (bez restarta).
+- Stanje servera za skripte (samo sa samog servera): `ssh root@2.29.146.92 curl -s localhost:3000/api/zdravlje` – broj soba, aktivnih, partija u toku, vraćenih posle restarta.
 - Za pristup serveru koristi se SSH ključ dodat na Hetzneru. Ako traži lozinku, ključ nije učitan.
 - Starija verzija (vraćanje): `REF=<commit> ./deploy/objavi.sh root@2.29.146.92`
 - Novi server (jednom): `DOMEN=skviz.rs ./deploy/objavi.sh root@IP --prvi-put` – instalira Node, Caddy (HTTPS) i firewall (`deploy/postavi-server.sh`).

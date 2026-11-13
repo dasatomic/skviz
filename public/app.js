@@ -107,28 +107,40 @@ function poruka(t, ms = 2200) {
   poruka.t = setTimeout(() => p.classList.remove('vidljiva'), ms);
 }
 
+// Dok se server restartuje (deploy, ~1 s) zahtev ne prolazi: bez veze ili 502/503/504 od Caddy-ja. Akcija se tada
+// ponavlja još nekoliko puta (ukupno ~4 s), da se ne izgubi odgovor ili reč poslata baš u tom trenutku. Ponavljanje je
+// bezbedno: server zanemaruje drugi odgovor na isto pitanje, „Dalje“ nosi fazu, „Pokreni“ ne kreće dvaput.
 async function akcija(tip, podaci = {}) {
-  try {
-    const r = await fetch('/api/akcija', {
-      method: 'POST', headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ tip, igrac: ja.id, soba: V?.kod || ls.get('soba', ''), ...podaci }),
-    });
-    const j = await r.json();
-    if (j.greska) poruka(j.greska);
-    return j;
-  } catch { poruka('Nema veze sa serverom'); return {}; }
+  const telo = JSON.stringify({ tip, igrac: ja.id, soba: V?.kod || ls.get('soba', ''), ...podaci });
+  for (let pokusaj = 0; ; pokusaj++) {
+    try {
+      const r = await fetch('/api/akcija', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: telo });
+      if (r.status >= 502 && r.status <= 504 && pokusaj < 5) throw new Error('restart');
+      const j = await r.json();
+      if (j.greska) poruka(j.greska);
+      return j;
+    } catch {
+      if (pokusaj >= 5) { poruka('Nema veze sa serverom'); return {}; }
+      await new Promise((ok) => setTimeout(ok, 800));
+    }
+  }
 }
 
 // ───────────────────────── veza ─────────────────────────
 let nacin = 'sse';      // 'sse' ili 'poll' (long-polling kad SSE ne prolazi, npr. kroz Cloudflare tunel)
 let generacija = 0;
+let sseRadi = false;    // SSE je bar jednom proradio na ovoj stranici
 
 // verzija koda sa servera pri prvom stanju; ako se kasnije promeni (server je dobio novi kod), stranica se osveži
 let mojaVerzija = null;
 function primi(v) {
   if (v.klijent) {
     if (mojaVerzija === null) mojaVerzija = v.klijent;
-    else if (v.klijent !== mojaVerzija) { location.reload(); return; }
+    else if (v.klijent !== mojaVerzija) {
+      // TV ekran posle osvežavanja ne zna sobu (telefon je pamti u localStorage) – zato ide na adresu sa kodom
+      if (EKRAN && v.kod) location.replace('/ekran?soba=' + encodeURIComponent(v.kod)); else location.reload();
+      return;
+    }
   }
   pomak = v.sada - Date.now();
   const staro = V;
@@ -167,16 +179,20 @@ function povezi(kod) {
   if (nacin === 'poll') return anketa(kod, gen);
   let stiglo = false;
   izvor = new EventSource(`/api/dogadjaji?soba=${encodeURIComponent(kod)}&igrac=${encodeURIComponent(ja.id)}`);
-  izvor.onmessage = (e) => { if (gen !== generacija) return; stiglo = true; primi(JSON.parse(e.data)); };
+  izvor.onmessage = (e) => { if (gen !== generacija) return; stiglo = sseRadi = true; primi(JSON.parse(e.data)); };
   izvor.onerror = async () => {
     // v=-1: server odgovara odmah (ne drži zahtev otvoren kao kod long-pollinga)
     const r = await fetch(`/api/stanje?soba=${encodeURIComponent(kod)}&igrac=x&v=-1`, { method: 'HEAD', cache: 'no-store' }).catch(() => null);
     if (gen !== generacija) return;
-    if (r && r.status === 404) { prekiniVezu(); V = null; ls.set('soba', ''); poruka('Soba više ne postoji'); pocetna(); }
+    if (r && r.status === 404) { prekiniVezu(); V = null; ls.set('soba', ''); poruka('Soba više ne postoji'); return pocetna(); }
+    // Pregledač sam ponovo otvara tok samo posle mrežne greške. Ako je odgovor bio greška (502 od Caddy-ja dok se
+    // server restartuje), EventSource se trajno zatvara (readyState 2) – tada se povezujemo sami.
+    if (izvor && izvor.readyState === 2) setTimeout(() => { if (gen === generacija) povezi(kod); }, 1500);
   };
-  // ako za 3 s ne stigne ništa preko SSE-a, prelazimo na long-polling
+  // ako za 3 s ne stigne ništa preko SSE-a, prelazimo na long-polling (samo ako SSE nikad nije proradio –
+  // inače je to samo restart servera, a ne mreža koja ne propušta SSE)
   setTimeout(() => {
-    if (!stiglo && gen === generacija) { nacin = 'poll'; povezi(kod); }
+    if (!stiglo && !sseRadi && gen === generacija) { nacin = 'poll'; povezi(kod); }
   }, 3000);
 }
 

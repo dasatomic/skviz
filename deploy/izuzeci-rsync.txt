@@ -1,0 +1,13 @@
+# Šta pun deploy (rsync --delete) ne šalje na server i tamo ne briše.
+# Koriste ga deploy/objavi.sh i alati/test-deploy.js (test radi isti rsync kao pravi deploy).
+/.github
+/.objavljeno
+# stanje servera (podaci/ – piše ga igra)
+/podaci/statistika.json
+/podaci/odigrana-pitanja.json
+/podaci/telemetrija.db*
+# ključ za javne id-jeve igrača: ako se obriše, vraćene sobe ne prepoznaju igrače
+/podaci/kljuc-id
+# sobe sačuvane pri gašenju starog servera – novi server ih vraća
+/podaci/sobe.json
+/podaci/*.tmp
