@@ -119,11 +119,14 @@ Ako token procuri, najviše što neko može je da otvara PR-ove i menja robotov 
    (Novi serveri dobijaju `EnvironmentFile` automatski iz `postavi-server.sh`; dovoljan je prvi red.)
    Lokalno: `GITHUB_TOKEN=ghp_… npm start`.
 4. **Fork** se pravi sam pri prvom predlogu (`skviz-predlozi/skviz`).
-5. Na svom nalogu (`dasatomic`): Watch → Custom → Pull requests, da stižu imejlovi o predlozima.
+5. Na svom nalogu (`dasatomic`): Watch → Custom → **Pull requests** i **Issues**, da stižu imejlovi o predlozima i komentarima.
    GitHub Actions za PR-ove iz forka novih saradnika traže odobrenje („Approve and run“) – to je u redu.
 
 Prihvatanje predloga: na stranici PR-a „Merge pull request“, pa `git pull` i `./deploy/objavi.sh … --pitanja` (predlozi menjaju samo pitanja).
-Autor predloga vidi stanje („Čeka pregled / Prihvaćeno“) i komentare u uredniku pod „Moji predlozi“.
+Vrste predloga iz urednika: **izmena / novo pitanje** (PR), **🗑 brisanje** (PR koji uklanja pitanje, uz obavezan razlog u opisu)
+i **💬 komentar** (issue u `dasatomic/skviz` – primedba bez izmene `kviz.json`; zatvoriti ga kad se postupi po njemu).
+Napomene i razlozi idu samo u opis PR-a/issue-a, nikad u `kviz.json`.
+Autor predloga vidi stanje („Čeka pregled / Prihvaćeno / Rešeno“) i komentare u uredniku pod „Moji predlozi“.
 Ograničenja: 100 predloga na sat po adresi, 1000 dnevno ukupno (`LIMIT_PREDLOGA`, `LIMIT_PREDLOGA_DAN`); provera stanja predloga („Moji predlozi“) 200 puta u minutu po adresi (`LIMIT_STANJA`).
 
 ## Admin pregled (`/admin`)

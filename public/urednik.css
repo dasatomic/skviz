@@ -77,6 +77,10 @@ body.urednik { font-size: 16px; }
 .u-pregled .napomena { font-size: .78em; color: var(--blago); text-align: center; margin: 8px 0 0; }
 .u-akcije { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-top: 18px; }
 .u-akcije .dugme { padding: 12px 22px; }
+.u-druge-akcije { margin-top: 10px; gap: 8px; }
+.u-mini.u-opasno { background: #6b2a2a; }
+.u-mini.u-opasno:hover { background: #8a3434; }
+.dugme.crveno { background: var(--lose); }
 .u-sekcija { border-top: 1px solid #ffffff1a; padding-top: 14px; margin-top: 6px; }
 details.u-napredno summary { cursor: pointer; font-weight: 800; color: var(--blago); margin: 4px 0 10px; }
 

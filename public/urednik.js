@@ -173,6 +173,7 @@ async function mojiPredlozi() {
         const oznaka = !s ? '<span class="u-stanje ceka">…</span>'
           : s.stanje === 'prihvacen' ? '<span class="u-stanje prihvacen">✓ Prihvaćeno</span>'
           : s.stanje === 'odbijen' ? '<span class="u-stanje odbijen">Nije prihvaćeno</span>'
+          : s.stanje === 'reseno' ? '<span class="u-stanje prihvacen">✓ Rešeno</span>'
           : '<span class="u-stanje ceka">⏳ Čeka pregled</span>';
         return `<li>${oznaka}<span class="naslov">${esc(p.naslov)}<br><span class="sitno">${new Date(p.datum).toLocaleDateString('sr-RS')}${s?.komentari ? ` · 💬 ${s.komentari} komentar${s.komentari === 1 ? '' : 'a'}` : ''}</span></span>
           <a href="${esc(p.url)}" target="_blank" rel="noopener">Pogledaj ↗</a></li>`;
@@ -325,6 +326,9 @@ function proveri() {
   if (r && !DOZVOLJENA.test(r.toLowerCase())) g.push('Ključna reč sme da ima samo slova srpske azbuke (bez razmaka i cifara).');
   else if (r && (brojSlova(r) < 3 || brojSlova(r) > 11)) g.push('Ključna reč mora imati od 3 do 11 slova.');
   if (!r) u.push('Nema ključne reči – igra će je izabrati sama, ali bolje je da je upišeš.');
+  // objašnjenje vide svi igrači – primedbe uredniku ne idu tu (nego u napomenu ili „Ostavi komentar“)
+  if (F.vrsta !== 'uljez' && /\b(obri[sš]|izbri[sš]|prebaci|premesti|da li je ovo)|pitanje (ni|je )|ispraviti|proveriti/i.test(F.objasnjenje))
+    u.push('Objašnjenje vide svi igrači posle odgovora. Ako je ovo primedba za urednika, upiši je u „Napomenu za urednika“ ili klikni „💬 Ostavi komentar“ / „🗑 Predloži brisanje“.');
   if (F.zanimljivost.trim() && F.vrsta !== 'spoji' && F.zanimljivost.trim().toLowerCase() === F.odgovori[0].trim().toLowerCase()) u.push('Zanimljivost samo ponavlja odgovor – napiši nešto novo i neočigledno.');
   return { g, u };
 }
@@ -366,7 +370,7 @@ async function ekranIzmena(a) {
         <div class="u-sekcija" id="f-medij"></div>
         <div class="u-sekcija">
           ${polje('Izvor ili napomena za urednika (nije obavezno)', '<textarea id="f-izvor" rows="2" maxlength="1000" placeholder="npr. Udžbenik Biologija 5, str. 34 · ili: ispravljena godina, bila je pogrešna"></textarea>',
-            'Odakle je činjenica ili šta si ispravio/la – pomaže uredniku da brže proveri predlog.')}
+            'Odakle je činjenica ili šta si ispravio/la – pomaže uredniku da brže proveri predlog. <b>Ne prikazuje se u igri.</b>')}
           ${polje('Tvoje ime i prezime', `<input id="f-autor" maxlength="80" value="${esc(ls.get('autor', ''))}" placeholder="npr. Milica Petrović" style="max-width:360px">`, 'Upisuje se uz pitanje kao autor (ne prikazuje se u igri).')}
         </div>
         <div id="f-greske"></div>
@@ -375,6 +379,11 @@ async function ekranIzmena(a) {
           <button class="dugme sivo" id="odustani">Odustani</button>
           ${ukljuceno ? '' : '<span class="sitno">Slanje predloga nije podešeno na ovom serveru.</span>'}
         </div>
+        ${novo ? '' : `<div class="u-akcije u-druge-akcije">
+          <span class="sitno">Ne želiš da menjaš pitanje?</span>
+          <button class="u-mini" id="komentar" title="Primedba ili pitanje za urednika – pitanje ostaje kakvo jeste">💬 Ostavi komentar</button>
+          <button class="u-mini u-opasno" id="brisanje" title="Predlog da se pitanje izbaci iz igre">🗑 Predloži brisanje</button>
+        </div>`}
       </div>
       <div class="u-pregled-okvir">
         <h3>👁 Pregled <span class="razmak"></span>${radio('pismo', { cirilica: 'Ćirilica', latinica: 'Latinica' }, ls.get('pismo', 'cirilica'))}</h3>
@@ -406,6 +415,10 @@ async function ekranIzmena(a) {
   })));
   $('#nazad').onclick = $('#odustani').onclick = () => idi(nazad);
   $('#predlozi').onclick = () => potvrdi(a, original);
+  if (!novo) {
+    $('#komentar').onclick = () => potvrdiRadnju('komentar', a, original);
+    $('#brisanje').onclick = () => potvrdiRadnju('brisanje', a, original);
+  }
   osveziPregled(true);
 }
 
@@ -442,7 +455,8 @@ function crtajObjasnjenje() {
   const el = $('#f-objasnjenje-mesto');
   const obavezno = F.vrsta === 'uljez';
   el.innerHTML = polje(obavezno ? 'Objašnjenje (zašto je to uljez)' : 'Objašnjenje (nije obavezno)', '<textarea id="f-objasnjenje" rows="2" maxlength="800"></textarea>',
-    obavezno ? 'Npr. „Pingvin je ptica, a delfin, slepi miš i kit su sisari.“' : 'Kratko objašnjenje zašto je odgovor tačan – prikazuje se iznad zanimljivosti.');
+    obavezno ? 'Npr. „Pingvin je ptica, a delfin, slepi miš i kit su sisari.“'
+      : 'Kratko objašnjenje zašto je odgovor tačan – <b>vide ga svi igrači</b> iznad zanimljivosti. Primedbe uredniku piši u napomenu ili preko „💬 Ostavi komentar“.');
   $('#f-objasnjenje').value = F.objasnjenje;
   $('#f-objasnjenje').oninput = (e) => { F.objasnjenje = e.target.value; izmenjeno = true; osveziPregled(); };
 }
@@ -565,22 +579,69 @@ function potvrdi(a, original) {
   const omoguci = () => { dugme.disabled = !($('#tacno').checked && $('#licenca').checked); };
   $('#tacno').onchange = $('#licenca').onchange = omoguci;
   $('#ne').onclick = zatvoriProzor;
-  dugme.onclick = () => posalji(a, original, autor);
+  dugme.onclick = () => posalji(a, original, autor, { radnja: 'izmena', pitanje: zaSlanje(), izvor: $('#f-izvor').value });
 }
 
-async function posalji(a, original, autor) {
-  prozor('<h2>📨 Slanje predloga</h2><p><span class="u-ceka"></span>Šaljem predlog… ovo može da potraje do pola minuta.</p>');
+// komentar (issue, pitanje se ne menja) ili predlog za brisanje (PR koji uklanja pitanje) – uz obavezan tekst
+const RADNJE = {
+  komentar: {
+    naslov: '💬 Komentar na pitanje',
+    uvod: 'Komentar dobija urednik igre – <b>pitanje ostaje kakvo jeste</b> i ništa od ovoga se ne prikazuje u igri.',
+    natpis: 'Šta nije u redu ili šta predlažeš?',
+    primer: 'npr. Pitanje navodi na odgovor – bolje: „Koja od navedenih životinja je najveća?“',
+    dugme: 'Pošalji komentar',
+  },
+  brisanje: {
+    naslov: '🗑 Predlog za brisanje',
+    uvod: 'Predlažeš da se ovo pitanje <b>izbaci iz igre</b>. Urednik igre pregleda predlog pre nego što se pitanje obriše.',
+    natpis: 'Zašto pitanje treba obrisati?',
+    primer: 'npr. Nije prilagođeno uzrastu · ne pripada ovom predmetu · ponavlja se u lekciji 3',
+    dugme: 'Predloži brisanje',
+  },
+};
+function potvrdiRadnju(radnja, a, original) {
+  const R = RADNJE[radnja];
+  const autor = $('#f-autor').value.trim();
+  const g = [];
+  if (autor.length < 3) g.push('Upiši svoje ime i prezime (na dnu forme).');
+  if (!ukljuceno) g.push('Slanje predloga nije podešeno na ovom serveru.');
+  if (g.length) {
+    $('#f-greske').innerHTML = `<ul class="u-greske">${g.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>`;
+    $('#f-greske').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    return;
+  }
+  prozor(`<h2>${R.naslov}</h2>
+    <p>${R.uvod}</p>
+    <p class="kartica" style="margin:8px 0">${mat(original.pitanje)}</p>
+    ${izmenjeno ? '<div class="u-upozorenje">Izmene koje si uneo/la u formu se ne šalju uz ovo. Ako želiš da ih predložiš, zatvori ovaj prozor i klikni „📨 Predloži izmenu“.</div>' : ''}
+    ${polje(R.natpis, `<textarea id="r-tekst" rows="4" maxlength="2000" placeholder="${esc(R.primer)}"></textarea>`)}
+    <div class="u-akcije"><button class="dugme ${radnja === 'brisanje' ? 'crveno' : 'zeleno'}" id="posalji" disabled>${R.dugme}</button><button class="dugme sivo" id="ne">Nazad</button></div>`);
+  const tekst = $('#r-tekst');
+  tekst.value = $('#f-izvor').value;
+  const dugme = $('#posalji');
+  const omoguci = () => { dugme.disabled = tekst.value.trim().length < 5; };
+  tekst.oninput = omoguci;
+  omoguci();
+  tekst.focus();
+  $('#ne').onclick = zatvoriProzor;
+  dugme.onclick = () => posalji(a, original, autor, { radnja, izvor: tekst.value });
+}
+
+async function posalji(a, original, autor, telo) {
+  const komentar = telo.radnja === 'komentar';
+  const sta = komentar ? 'komentar' : 'predlog';
+  prozor(`<h2>📨 Slanje</h2><p><span class="u-ceka"></span>Šaljem ${sta}… ovo može da potraje do pola minuta.</p>`);
   let r, odg;
   try {
     r = await fetch('/api/predlog', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ paket: kvizId, original, pitanje: zaSlanje(), autor, izvor: $('#f-izvor').value }),
+      body: JSON.stringify({ paket: kvizId, original, autor, ...telo }),
     });
     odg = await r.json();
   } catch { odg = { greska: 'Nema veze sa serverom. Proveri internet i pokušaj ponovo.' }; }
   if (!r?.ok || odg.greska) {
-    prozor(`<h2>😕 Predlog nije poslat</h2><p>${esc(odg.greska || 'Nepoznata greška.')}</p>
+    prozor(`<h2>😕 ${komentar ? 'Komentar' : 'Predlog'} nije poslat</h2><p>${esc(odg.greska || 'Nepoznata greška.')}</p>
       <div class="u-akcije"><button class="dugme sivo" id="ne">U redu</button></div>`);
     $('#ne').onclick = zatvoriProzor;
     return;
@@ -588,13 +649,16 @@ async function posalji(a, original, autor) {
   const lista = ls.get('predlozi', []);
   lista.push({ broj: odg.broj, url: odg.url, naslov: odg.naslov, datum: Date.now() });
   ls.set('predlozi', lista);
-  izmenjeno = false;
-  prozor(`<h2>🎉 Hvala! Predlog je poslat.</h2>
-    <p>Urednik igre će ga pregledati. Kad ga prihvati, pitanje ulazi u igru sa sledećim osvežavanjem sajta.</p>
-    <p>Ovde možeš da pratiš svoj predlog i da vidiš da li je urednik ostavio komentar ili pitanje:</p>
+  if (telo.radnja === 'izmena') izmenjeno = false;
+  const posle = komentar ? 'Urednik igre će ga pročitati i, ako treba, ispraviti pitanje.'
+    : telo.radnja === 'brisanje' ? 'Urednik igre će ga pregledati. Kad ga prihvati, pitanje se uklanja iz igre.'
+    : 'Urednik igre će ga pregledati. Kad ga prihvati, pitanje ulazi u igru sa sledećim osvežavanjem sajta.';
+  prozor(`<h2>🎉 Hvala! ${komentar ? 'Komentar' : 'Predlog'} je poslat.</h2>
+    <p>${posle}</p>
+    <p>Ovde možeš da pratiš ${komentar ? 'svoj komentar' : 'svoj predlog'} i da vidiš da li je urednik odgovorio:</p>
     <a class="u-veza" href="${esc(odg.url)}" target="_blank" rel="noopener">${esc(odg.url)}</a>
     <p class="sitno">Link je sačuvan i na početnoj strani urednika, pod „Moji predlozi“. Za komentarisanje na GitHub-u potreban je nalog, a za gledanje nije.</p>
-    <div class="u-akcije"><a class="dugme zeleno" href="${esc(odg.url)}" target="_blank" rel="noopener" style="text-decoration:none">Otvori predlog ↗</a>
+    <div class="u-akcije"><a class="dugme zeleno" href="${esc(odg.url)}" target="_blank" rel="noopener" style="text-decoration:none">Otvori ${sta} ↗</a>
       <button class="dugme" id="jos">＋ Dodaj još jedno pitanje</button><button class="dugme sivo" id="spisak">Nazad na spisak</button></div>`);
   $('#jos').onclick = () => { zatvoriProzor(); idi({ paket: a.paket, lekcija: F.lekcija || a.lekcija, pitanje: 'novo' }); };
   $('#spisak').onclick = () => { zatvoriProzor(); idi({ paket: a.paket, lekcija: a.lekcija }); };
