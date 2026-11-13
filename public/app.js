@@ -75,7 +75,8 @@ let kvizovi = [];
 let tikTajmer = null;
 
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-// tekst sa matematikom: $…$ ostaje latinicom (oznake tačaka, promenljive), √{x} – koren sa crtom, {a|b} – razlomak, ^{n} – izložilac, _{c} – indeks
+// tekst sa matematikom: $…$ ostaje latinicom (oznake tačaka, promenljive), √{x} – koren sa crtom, {a|b} – razlomak, ^{n} – izložilac, _{c} – indeks,
+// \vec{AB} – vektor, \| – obična crta (skup zadat osobinom: {n \| n ∈ N}), \{ \} – obične zagrade
 // sadržaj kviza na stranom jeziku ("jezik": "en", npr. TLA+) ide u <span lang> – ne preslovljava se u ćirilicu
 const strano = (html, jezik = V?.pitanje?.jezik) => (jezik ? `<span lang="${esc(jezik)}">${html}</span>` : html);
 function mat(t) {
@@ -83,13 +84,14 @@ function mat(t) {
 }
 function matTekst(t) {
   return esc(t).replace(/\$([^$]+)\$/g, (_, m) => {
-    let x = m, pre;
+    let x = m.replace(/\\\|/g, '\u0001').replace(/\\\{/g, '\u0002').replace(/\\\}/g, '\u0003'), pre;
     do {
       pre = x;
-      x = x.replace(/√\{([^{}]*)\}/g, '√<span class="pod-korenom">$1</span>')
+      x = x.replace(/√\{([^{}]*)\}/g, '√<span class="pod-korenom">$1</span>').replace(/\\vec\{([^{}]*)\}/g, '<span class="vektor">$1</span>')
         .replace(/\^\{([^{}|]*)\}/g, '<sup>$1</sup>').replace(/_\{([^{}|]*)\}/g, '<sub>$1</sub>')
         .replace(/\{([^{}|]*)\|([^{}|]*)\}/g, '<span class="razlomak"><span>$1</span><span>$2</span></span>');
     } while (x !== pre);
+    x = x.replace(/\u0001/g, '|').replace(/\u0002/g, '{').replace(/\u0003/g, '}');
     return `<span class="mat">${x}</span>`;
   }).replace(/\n/g, '<br>');
 }
@@ -306,9 +308,11 @@ function kontakt() {
     <h1 class="naslov-igre mali"><img class="logo" src="/logo.svg" alt="Сквиз"></h1>
     <div class="kartica centar">
       <h2>Kontakt</h2>
-      <p>Pitanja, predlozi i greške – javi nam se na Discord kanalu:</p>
+      <p>Pitanja, predlozi i greške – javi nam se na Discord ili Telegram kanalu:</p>
       <a class="dugme zuto siroko" data-lat href="https://discord.gg/9sMYvbGZAr" target="_blank" rel="noopener">💬 Discord</a>
       <div class="sitno" style="margin-top:10px" data-lat>discord.gg/9sMYvbGZAr</div>
+      <a class="dugme zuto siroko" style="margin-top:16px" data-lat href="https://t.me/+IU6wxwSuSDVkYTk0" target="_blank" rel="noopener">✈️ Telegram</a>
+      <div class="sitno" style="margin-top:10px" data-lat>t.me/+IU6wxwSuSDVkYTk0</div>
     </div>
     <div class="centar"><button class="dugme" id="nazad">⬅ Nazad</button></div>`;
   $('#nazad').onclick = () => pocetna();
