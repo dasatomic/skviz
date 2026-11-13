@@ -985,7 +985,7 @@ function ekranReci(nov, staro) {
         return `<div class="st ${x.id === V.ja ? 'ja' : ''}" style="animation-delay:${0.15 * Math.min(i, 8)}s">${mesto(i)}<span style="font-size:1.4em">${esc(x.avatar)}</span><div><b>${esc(x.ime)}</b><div class="najbolja-rec" style="font-size:1.15em">${d.rec ? esc(rec(d.rec)) + ` <span class="sitno">(${[...d.rec].length})</span>` : '<span class="sitno">—</span>'}</div></div>
           <span class="p">${d.rec ? `<span class="plus">+${d.poeni + d.bonus}</span>` : ''}${d.oznaka ? `<div class="sitno">${d.oznaka}</div>` : ''}</span></div>`;
       })}</div></div>
-      ${R.kljuc ? `<div class="kartica pojam"><h3>🔁 Pojam iz kviza: <span class="najbolja-rec">${esc(rec(R.kljuc.rec))}</span></h3>
+      ${R.kljuc ? `<div class="kartica pojam"><h3>🔁 Pojam iz kviza: <span class="najbolja-rec">${esc(rec(R.kljuc.rec))}</span>${R.kljuc.oblici?.length ? ` <span class="sitno">(važi i ${R.kljuc.oblici.map((o) => esc(rec(o))).join(', ')})</span>` : ''}</h3>
         <div class="sitno">Iz pitanja: „${esc(R.kljuc.pitanje)}“ – tačan odgovor: <b>${esc(R.kljuc.odgovor)}</b></div>
         ${R.nasli.length ? `<div class="sitno" style="margin-top:6px">Pronašli: ${R.nasli.length > 8 ? R.nasli.length + ' igrača' : R.nasli.map((id) => esc(igrac(id)?.ime || '')).join(', ')} (+200)</div>` : ''}</div>` : ''}
       <div class="kartica zanimljivost"><h3>🤖 Najduže moguće (${N.duzina} slova)</h3>

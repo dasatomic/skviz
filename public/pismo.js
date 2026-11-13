@@ -54,6 +54,8 @@
     'felis catus panthera leo tigris gorilla pongo australopithecus escherichia coli coccinella septempunctata drosophila melanogaster ' +
     'pinus longaeva vacca adolescere tricolor ' +
     'centum mille passus septem omnis cellula carpe diem mens sana corpore sano perpetuum mobile ' +
+    // poreklo gramatičkih termina (Gramatika 7): lat. potentia, imperare…, grč. sýntagma, nem. Fußnote
+    'potentia imperare congruentia particula copula reportare plagiarius citare aisthesis sýntagma onomatopoiía fußnote fuß ' +
     // muzičke oznake (italijanski)
     'allegro adagio crescendo decrescendo fortissimo pianissimo ff pp mf mp ' +
     // engleske službene reči (ne postoje u srpskom)

@@ -48,6 +48,7 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 - razred7-istorija/tanasko-rajic.jpg – https://en.wikipedia.org/wiki/Tanasko_Raji%C4%87
 - razred7-istorija/ljubica.jpg – https://en.wikipedia.org/wiki/Ljubica_Vukomanovi%C4%87
 - razred7-istorija/sretenjski-ustav.jpg – https://en.wikipedia.org/wiki/1835_Constitution_of_Serbia
+- razred7-srpski-gramatika/vuk.jpg – https://en.wikipedia.org/wiki/Vuk_Karad%C5%BEi%C4%87
 - sport/vaterpolo.jpg – https://en.wikipedia.org/wiki/Serbia_men's_national_water_polo_team
 - sport/avgusta.png – https://en.wikipedia.org/wiki/Augusta_National_Golf_Club
 - srpska-istorija/milos-obrenovic.jpg – https://en.wikipedia.org/wiki/Milo%C5%A1_Obrenovi%C4%87
@@ -1131,6 +1132,16 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | razred7-istorija | flora.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Flora_Sandes) |
 | razred7-istorija | ultimatum.jpg | Leopold Graf Bechtold, foreign minister of Austria-Hungary from 1912-1915. | Public domain | [izvor](https://en.wikipedia.org/wiki/Ultimatum_of_July_23%2C_1914) |
 | razred7-istorija | vido.jpg | Alex Alishevskikh | CC BY-SA 2.0 | [izvor](https://commons.wikimedia.org/wiki/File%3ACorfu%20Vido%20Island%20(9707927978).jpg) |
+| razred7-srpski-gramatika | vuk.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Vuk_Karad%C5%BEi%C4%87) |
+| razred7-srpski-gramatika | crnjanski.jpg | Unknown authorUnknown author | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Milo%C5%A1_Crnjanski) |
+| razred7-srpski-gramatika | sizif.jpg | Swing Painter | Public domain | [izvor](https://en.wikipedia.org/wiki/Sisyphus) |
+| razred7-srpski-gramatika | andric.jpg | Stevan Kragujević | CC BY-SA 3.0 rs | [izvor](https://en.wikipedia.org/wiki/Ivo_Andri%C4%87) |
+| razred7-srpski-gramatika | nusic.jpg | Milan Jovanović (1863-1944) | Public domain | [izvor](https://en.wikipedia.org/wiki/Branislav_Nu%C5%A1i%C4%87) |
+| razred7-srpski-gramatika | danicic.jpg | Stevan Todorović | Public domain | [izvor](https://en.wikipedia.org/wiki/%C4%90uro_Dani%C4%8Di%C4%87) |
+| razred7-srpski-gramatika | kulin.jpg | — | Public domain | [izvor](https://en.wikipedia.org/wiki/Charter_of_Ban_Kulin) |
+| razred7-srpski-gramatika | ahil.jpg | Jona Lendering | CC0 | [izvor](https://en.wikipedia.org/wiki/Achilles) |
+| razred7-srpski-gramatika | bifon.jpg | François-Hubert Drouais | Public domain | [izvor](https://en.wikipedia.org/wiki/Georges-Louis_Leclerc%2C_Comte_de_Buffon) |
+| razred7-srpski-gramatika | tomlinson.jpg | Andreu Veà, WiWiW.org | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Ray_Tomlinson) |
 | razred8-biologija | stoma.jpg | Photohound | Public domain | [izvor](https://en.wikipedia.org/wiki/Stoma) |
 | razred8-biologija | polarni-medved.jpg | Alan Wilson | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Polar_bear) |
 | razred8-biologija | krokodil.jpg | Dewet | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Nile_crocodile) |

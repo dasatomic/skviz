@@ -1,0 +1,3758 @@
+{
+ "naziv": "7. razred · Srpski – gramatika",
+ "ikona": "✍️",
+ "boja": "#2e86ab",
+ "opis": "Po udžbeniku Gramatika 7 i Radnoj svesci 7 (Arhiknjiga / Fondacija Kavčić, 2024): nepromenljive reči, glagolski oblici, rečenični članovi, sintagme, kongruencija, zavisne rečenice, akcenti, pravopis i jezička kultura",
+ "redosled": 16,
+ "uOpstem": false,
+ "oblast": "srpski-gramatika",
+ "razred": 7,
+ "lekcije": [
+  {
+   "tema": "Vrste reči",
+   "naziv": "Nepromenljive vrste reči: veznici, rečce i uzvici",
+   "strana": 12
+  },
+  {
+   "tema": "Glagolski oblici",
+   "naziv": "Lični glagolski oblici: imperativ, potencijal i futur drugi",
+   "strana": 26
+  },
+  {
+   "tema": "Glagolski oblici",
+   "naziv": "Nelični glagolski oblici: glagolski prilozi i trpni pridev",
+   "strana": 39
+  },
+  {
+   "tema": "Rečenični članovi i služba reči u rečenici",
+   "naziv": "Subjekat i predikat",
+   "strana": 52
+  },
+  {
+   "tema": "Sintagme",
+   "naziv": "Sintagme: imeničke, pridevske, priloške i glagolske",
+   "strana": 67
+  },
+  {
+   "tema": "Naporedni odnosi među rečeničnim članovima",
+   "naziv": "Sastavni, suprotni i rastavni odnos",
+   "strana": 86
+  },
+  {
+   "tema": "Kongruencija",
+   "naziv": "Kongruencija (slaganje)",
+   "strana": 93
+  },
+  {
+   "tema": "Rečenica",
+   "naziv": "Komunikativna i predikatska rečenica; nezavisne rečenice",
+   "strana": 106
+  },
+  {
+   "tema": "Rečenica",
+   "naziv": "Zavisne rečenice: izrične, odnosne, mesne, vremenske, uzročne",
+   "strana": 114
+  },
+  {
+   "tema": "Rečenica",
+   "naziv": "Zavisne rečenice: posledične, uslovne, namerne, poredbene, dopusne",
+   "strana": 129
+  },
+  {
+   "tema": "Pravilan izgovor",
+   "naziv": "Akcenti: dugouzlazni i dugosilazni",
+   "strana": 150
+  },
+  {
+   "tema": "Pravopis",
+   "naziv": "Pravopisna rešenja u vezi s glagolskim oblicima",
+   "strana": 156
+  },
+  {
+   "tema": "Pravopis",
+   "naziv": "Interpunkcija, pravopisni znaci i skraćenice",
+   "strana": 163
+  },
+  {
+   "tema": "Jezička kultura",
+   "naziv": "Funkcionalni stilovi, reportaža, citati i fusnote",
+   "strana": 186
+  },
+  {
+   "tema": "Jezička kultura",
+   "naziv": "Opisi, imejl, frazeologizmi, nelinearni tekst i argumentacija",
+   "strana": 194
+  }
+ ],
+ "pitanja": [
+  {
+   "lekcija": 1,
+   "tezina": 1,
+   "pitanje": "Kakve su po obliku vrste reči veznici, rečce i uzvici?",
+   "odgovori": [
+    "Nepromenljive",
+    "Promenljive",
+    "Samo po padežima promenljive",
+    "Samo po licima promenljive"
+   ],
+   "zanimljivost": "Nepromenljivih vrsta reči ima pet: prilozi, predlozi, veznici, rečce i uzvici. Od njih se samo neki prilozi (brzo – brže – najbrže) mogu porediti, ali ni oni ne menjaju oblik po padežima.",
+   "rec": "veznik"
+  },
+  {
+   "lekcija": 1,
+   "tezina": 1,
+   "pitanje": "Na koje dve velike grupe se dele svi veznici?",
+   "odgovori": [
+    "Naporedne i zavisne",
+    "Proste i složene",
+    "Upitne i odrične",
+    "Sastavne i suprotne"
+   ],
+   "zanimljivost": "Naporedni veznici mogu da povezuju i reči i rečenice, a zavisni samo rečenice. Zato u „Ana i Vuk“ može stajati „i“, ali ne i „jer“.",
+   "rec": "veznik"
+  },
+  {
+   "lekcija": 1,
+   "vrsta": "spoji",
+   "tezina": 1,
+   "pitanje": "Spoji veznik sa vrstom naporednog odnosa koji označava",
+   "parovi": [
+    [
+     "pa",
+     "Sastavni"
+    ],
+    [
+     "ali",
+     "Suprotni"
+    ],
+    [
+     "ili",
+     "Rastavni"
+    ],
+    [
+     "jer",
+     "Nije naporedni, već zavisni"
+    ]
+   ],
+   "zanimljivost": "Sastavni veznici su i, pa, te, ni, niti; suprotni a, ali, nego, već, no; a rastavni ili. „Jer“ uvodi zavisnu uzročnu rečenicu.",
+   "rec": "veznik"
+  },
+  {
+   "lekcija": 1,
+   "vrsta": "uljez",
+   "tezina": 1,
+   "pitanje": "Koja reč NIJE veznik?",
+   "odgovori": [
+    "zbog",
+    "jer",
+    "iako",
+    "čim"
+   ],
+   "objasnjenje": "„Zbog“ je predlog – stoji uz imenicu u genitivu (zbog kiše). „Jer“, „iako“ i „čim“ su zavisni veznici: uzročni, dopusni i vremenski.",
+   "zanimljivost": "Predlog i veznik mogu imati isto značenje: „Nije došao zbog kiše“ (predlog) i „Nije došao jer je padala kiša“ (veznik). Razlika je u tome šta povezuju – reč ili rečenicu.",
+   "rec": "predlog"
+  },
+  {
+   "lekcija": 1,
+   "tezina": 2,
+   "pitanje": "Ispred kojih veznika se, kada povezuju dve rečenice, uvek piše zapeta?",
+   "odgovori": [
+    "Ispred suprotnih: a, ali, nego, već",
+    "Ispred sastavnih: i, pa, te",
+    "Ispred rastavnog veznika ili",
+    "Ispred svih zavisnih veznika"
+   ],
+   "zanimljivost": "Pravilo važi i kad suprotni veznik povezuje reči: „Umoran, ali srećan.“ Ispred „i“ se zapeta ne piše, osim kad se „i“ ponavlja radi isticanja ili kad je ispred njega umetnut deo rečenice.",
+   "rec": "zapeta",
+   "mediji": {
+    "vrsta": "citat",
+    "tekst": "Juče je bilo veliko nevreme, ali sam ipak otišao na trening."
+   }
+  },
+  {
+   "lekcija": 1,
+   "tezina": 2,
+   "pitanje": "Kojoj vrsti reči pripada „koji“ u rečenici „Vuk je gledao film koji mu je Ana preporučila“?",
+   "odgovori": [
+    "Zamenici u službi veznika",
+    "Zavisnom vezniku",
+    "Upitnoj rečci",
+    "Prilogu za način"
+   ],
+   "zanimljivost": "Reči „koji“, „čiji“, „kad“, „gde“ ne prestaju da budu zamenice i prilozi kada povezuju rečenice – samo im je služba veznička. Zato se zovu „reči u vezničkoj ulozi“.",
+   "rec": "zamenica"
+  },
+  {
+   "lekcija": 1,
+   "tezina": 1,
+   "pitanje": "Kako se pravilno zove nepromenljiva vrsta reči kojoj pripadaju „li“, „zar“ i „baš“?",
+   "odgovori": [
+    "Rečca",
+    "Rečica",
+    "Rečka",
+    "Rečnica"
+   ],
+   "zanimljivost": "Udžbenik upozorava na čestu grešku: „rečica“ je mala reka, a „rečca“ je vrsta reči. Drugo ime za rečce je partikule (lat. particula – deo, čestica).",
+   "rec": "rečca"
+  },
+  {
+   "lekcija": 1,
+   "vrsta": "spoji",
+   "tezina": 2,
+   "pitanje": "Spoji rečcu sa njenom vrstom po značenju",
+   "parovi": [
+    [
+     "zar",
+     "Upitna"
+    ],
+    [
+     "evo",
+     "Pokazna"
+    ],
+    [
+     "neka",
+     "Zapovedna"
+    ],
+    [
+     "dakle",
+     "Zaključna"
+    ]
+   ],
+   "zanimljivost": "Ostale rečce iz udžbenika: potvrdna „da“, odrična „ne“, suprotne „međutim“ i „pak“, uzvična „ala“, rečce za isticanje „bar“ i „baš“, povratna „se“ i modalne „možda“, „verovatno“, „naravno“.",
+   "rec": "rečca"
+  },
+  {
+   "lekcija": 1,
+   "tezina": 1,
+   "pitanje": "Šta je reč „da“ u odgovoru „Da, sve mi je jasno.“?",
+   "odgovori": [
+    "Rečca",
+    "Veznik",
+    "Uzvik",
+    "Prilog za način"
+   ],
+   "zanimljivost": "U nastavku „Idem da kupim patike“ ista reč „da“ je veznik, jer povezuje dve rečenice. Vrstu reči ovde određuje uloga u rečenici, a ne izgled.",
+   "rec": "rečca"
+  },
+  {
+   "lekcija": 1,
+   "tezina": 3,
+   "pitanje": "U kojoj rečenici je „se“ rečca, a ne kraći oblik povratne zamenice „sebe“?",
+   "odgovori": [
+    "Rastužio se i otišao na spavanje.",
+    "Video se u izlogu i iznenadio.",
+    "Češljao se pred ogledalom.",
+    "Brzo se obukao za školu."
+   ],
+   "zanimljivost": "Proba iz udžbenika: ako „se“ može da se zameni sa „sebe“, to je zamenica (video je sebe, češljao je sebe). „Rastužio je sebe“ nema smisla – tu je „se“ povratna rečca uz nepravi povratni glagol.",
+   "rec": "zamenica",
+   "objasnjenje": "Kod pravih povratnih glagola subjekat radnju vrši na sebi, pa stoji zamenica; kod nepravih (rastužiti se, nasmejati se) „se“ je rečca."
+  },
+  {
+   "lekcija": 1,
+   "tezina": 2,
+   "pitanje": "U kojoj rečenici je „sigurno“ rečca, a ne prilog?",
+   "odgovori": [
+    "Ana je, sigurno, najbolji đak odeljenja.",
+    "Ana sigurno odgovara biologiju.",
+    "Vozač sigurno upravlja autobusom.",
+    "Dete je sigurno hodalo po gredi."
+   ],
+   "zanimljivost": "Kao rečca, „sigurno“ izražava stav govornika (verovatno je tako) i odvaja se zapetama jer se pri izgovoru pravi pauza. Kao prilog, kazuje kako se radnja vrši.",
+   "rec": "prilog"
+  },
+  {
+   "lekcija": 1,
+   "tezina": 3,
+   "pitanje": "Koja rečca se nikada ne odvaja zapetama?",
+   "odgovori": [
+    "pak",
+    "međutim",
+    "naravno",
+    "verovatno"
+   ],
+   "zanimljivost": "Primer iz udžbenika: „Bila su to pak druga vremena.“ Ni modalne rečce se ne odvajaju kad iza njih dolazi kraći oblik zamenice ili pomoćnog glagola: „Možda su učenici razumeli zadatak.“",
+   "rec": "rečca"
+  },
+  {
+   "lekcija": 1,
+   "tezina": 1,
+   "pitanje": "Šta se najčešće izražava uzvicima?",
+   "odgovori": [
+    "Osećanja, dozivanje, zvukovi",
+    "Vreme, mesto i način radnje",
+    "Odnosi među rečima u rečenici",
+    "Stav govornika o tačnosti iskaza"
+   ],
+   "zanimljivost": "Uzvici nemaju precizno značenje – „Jao, dobio sam peticu!“ i „Jao, dobila sam jedinicu!“ izražavaju suprotna osećanja istim uzvikom.",
+   "rec": "uzvik"
+  },
+  {
+   "lekcija": 1,
+   "vrsta": "spoji",
+   "tezina": 1,
+   "pitanje": "Spoji uzvik sa onim što izražava",
+   "parovi": [
+    [
+     "ura",
+     "Radost"
+    ],
+    [
+     "mac-mac",
+     "Dozivanje životinje"
+    ],
+    [
+     "buć",
+     "Zvuk iz prirode"
+    ],
+    [
+     "šic",
+     "Teranje životinje"
+    ]
+   ],
+   "zanimljivost": "Uzvici koji oponašaju zvukove su i stilska figura onomatopeja (grč. onomatopoiía – „pravljenje imena“). Od njih nastaju onomatopejske reči: kukurikati, fijukati, škripav.",
+   "rec": "uzvik"
+  },
+  {
+   "lekcija": 1,
+   "vrsta": "uljez",
+   "tezina": 1,
+   "pitanje": "Koja reč NIJE uzvik?",
+   "odgovori": [
+    "baš",
+    "kuku",
+    "lele",
+    "oho"
+   ],
+   "objasnjenje": "„Baš“ je rečca za isticanje („baš je pametan“), a „kuku“, „lele“ i „oho“ su uzvici kojima se izražavaju osećanja.",
+   "zanimljivost": "Isti zadatak postoji u udžbeniku i radnoj svesci: u nizu „kuku, lele, baš, oho, ura“ uljez je „baš“.",
+   "rec": "uzvik"
+  },
+  {
+   "lekcija": 1,
+   "tezina": 2,
+   "pitanje": "Koja rečenica je pravilno napisana?",
+   "odgovori": [
+    "Uh, kakva tragedija!",
+    "Uh kakva tragedija!",
+    "Uh. Kakva tragedija.",
+    "Uh, kakva, tragedija!"
+   ],
+   "zanimljivost": "Uzvik se odvaja zapetom kad je naglašen ili odvojen pauzom. Ne odvaja se kad je tesno vezan za reč iza sebe ili kad iza njega dolazi dativ: „Jao njemu sirotom!“, „Ma nemoj mi reći!“",
+   "rec": "uzvik"
+  },
+  {
+   "lekcija": 1,
+   "tezina": 3,
+   "pitanje": "Zašto se u rečenici „Jao njoj jadnici!“ iza uzvika NE piše zapeta?",
+   "odgovori": [
+    "Jer iza uzvika dolazi dativ",
+    "Jer je uzvik na početku rečenice",
+    "Jer rečenica ima uzvičnik",
+    "Jer je „jao“ zapravo rečca"
+   ],
+   "zanimljivost": "Uzvik i dativ zajedno čine jednu celinu izgovorenu bez pauze. Isto pravilo važi za „Kuku meni!“ i „Teško tebi!“.",
+   "rec": "dativ"
+  },
+  {
+   "lekcija": 1,
+   "tezina": 1,
+   "pitanje": "Koje su reči sve iz iste vrste: „bar, baš, pak, zar“?",
+   "odgovori": [
+    "Rečce",
+    "Veznici",
+    "Prilozi",
+    "Uzvici"
+   ],
+   "zanimljivost": "Rečce se lako pomešaju s prilozima, ali ne odgovaraju na pitanja kad, gde, kako – one samo dodaju stav, pitanje ili isticanje.",
+   "rec": "rečca"
+  },
+  {
+   "lekcija": 1,
+   "tezina": 3,
+   "pitanje": "Kojoj vrsti reči pripada „međutim“ u rečenici „Ona, međutim, nije poverovala u to.“?",
+   "odgovori": [
+    "Rečci",
+    "Vezniku",
+    "Prilogu",
+    "Predlogu"
+   ],
+   "zanimljivost": "Udžbenik „međutim“ svrstava u suprotne rečce. Za razliku od veznika „ali“, može se pomerati po rečenici: „Međutim, ona…“, „Ona, međutim, …“.",
+   "rec": "rečca"
+  },
+  {
+   "lekcija": 2,
+   "tezina": 1,
+   "pitanje": "Koliko ukupno glagolskih oblika ima srpski jezik?",
+   "odgovori": [
+    "Četrnaest",
+    "Deset",
+    "Dvanaest",
+    "Devet"
+   ],
+   "zanimljivost": "Ličnih je devet (sedam vremena i dva načina – imperativ i potencijal, a futur drugi može biti i jedno i drugo), a neličnih pet: infinitiv, radni i trpni glagolski pridev i dva glagolska priloga.",
+   "rec": "glagol"
+  },
+  {
+   "lekcija": 2,
+   "tezina": 2,
+   "pitanje": "Po čemu se glagolski načini razlikuju od glagolskih vremena?",
+   "odgovori": [
+    "Kazuju stav govornika",
+    "Kazuju samo radnje u prošlosti",
+    "Nemaju oblike za lice i broj",
+    "Uvek su sastavljeni od dve reči"
+   ],
+   "zanimljivost": "Imperativom se izriče zapovest, zabrana, molba ili savet, a potencijalom mogućnost, želja ili uslov. Ni jedno ni drugo ne smešta radnju u prošlost, sadašnjost ili budućnost.",
+   "rec": "način"
+  },
+  {
+   "lekcija": 2,
+   "tezina": 1,
+   "pitanje": "Koji glagolski oblik je „Donesi loptu!“?",
+   "odgovori": [
+    "Imperativ",
+    "Potencijal",
+    "Prezent",
+    "Aorist"
+   ],
+   "zanimljivost": "Imperativ se zove i zapovedni način (lat. imperare – zapovedati). Isti koren je u reči „imperija“ i „imperator“.",
+   "rec": "imperativ"
+  },
+  {
+   "lekcija": 2,
+   "vrsta": "spoji",
+   "tezina": 2,
+   "pitanje": "Spoji rečenicu sa značenjem imperativa u njoj",
+   "parovi": [
+    [
+     "Zatvori vrata!",
+     "Zapovest"
+    ],
+    [
+     "Ne izlazi napolje!",
+     "Zabrana"
+    ],
+    [
+     "Dodaj mi, molim te, vodu.",
+     "Molba"
+    ],
+    [
+     "Razmišljaj pozitivno.",
+     "Savet"
+    ]
+   ],
+   "zanimljivost": "Isti oblik može da znači i zapovest i molbu – razliku prave intonacija i reči poput „molim te“.",
+   "rec": "imperativ"
+  },
+  {
+   "lekcija": 2,
+   "tezina": 2,
+   "pitanje": "Za koja lica imperativ NEMA svoj oblik?",
+   "odgovori": [
+    "Za 1. lice jednine i oba 3. lica",
+    "Za 2. lice jednine i množine",
+    "Za 1. i 2. lice množine",
+    "Ima oblik za svako lice"
+   ],
+   "zanimljivost": "Ne možemo sami sebi da naređujemo, pa nema 1. lica jednine. Zapovest za 3. lice izriče se rečcom „neka“ i prezentom: „Neka Vuk obriše tablu!“",
+   "rec": "imperativ"
+  },
+  {
+   "lekcija": 2,
+   "tezina": 3,
+   "pitanje": "Kako glasi 2. lice jednine imperativa glagola „vući“?",
+   "odgovori": [
+    "vuci",
+    "vuki",
+    "vuči",
+    "vukni"
+   ],
+   "zanimljivost": "Prezentska osnova je vuk- (vuku), a ispred nastavka -i glas k prelazi u c – to je sibilarizacija. Isto: leći → lezi, peći → peci, reći → reci.",
+   "rec": "promena",
+   "objasnjenje": "Sibilarizacija: k, g, h ispred i prelaze u c, z, s."
+  },
+  {
+   "lekcija": 2,
+   "tezina": 2,
+   "pitanje": "Kako glasi pravilan imperativ glagola „obojiti“ (2. lice jednine)?",
+   "odgovori": [
+    "oboj",
+    "oboji",
+    "obojaj",
+    "obojij"
+   ],
+   "zanimljivost": "Kad u osnovi infinitiva postoji glas j (obojiti, prebrojati, krojiti), u 2. licu jednine nema nastavka -i: oboj, prebroj, kroj, ali u množini obojte, prebrojte.",
+   "rec": "imperativ"
+  },
+  {
+   "lekcija": 2,
+   "tezina": 3,
+   "pitanje": "Koji odrični imperativ NIJE pravilan po pravilu iz udžbenika?",
+   "odgovori": [
+    "Ne dođi!",
+    "Ne dolazi!",
+    "Nemoj doći!",
+    "Nemoj da dođeš!"
+   ],
+   "zanimljivost": "Odrični imperativ sa „ne“ gradi se samo od nesvršenih glagola (ne dolazi). Od svršenih se koristi „nemoj“ + infinitiv ili „da“ + prezent. Retki izuzeci su „ne zaboravi“ i „ne reci“.",
+   "rec": "imperativ"
+  },
+  {
+   "lekcija": 2,
+   "tezina": 1,
+   "pitanje": "Od čega se gradi potencijal?",
+   "odgovori": [
+    "Od aorista glagola biti i radnog prideva",
+    "Od prezenta glagola biti i infinitiva",
+    "Od prezenta glagola hteti i infinitiva",
+    "Od perfekta glagola biti i trpnog prideva"
+   ],
+   "zanimljivost": "Bih, bi, bi, bismo, biste, bi su oblici aorista glagola „biti“. U 3. licu množine umesto „biše“ stoji „bi“: „oni bi došli“.",
+   "rec": "potencijal"
+  },
+  {
+   "lekcija": 2,
+   "tezina": 2,
+   "pitanje": "Šta se NE izražava potencijalom?",
+   "odgovori": [
+    "Ostvarena radnja",
+    "Želja",
+    "Mogućnost",
+    "Uslov"
+   ],
+   "zanimljivost": "Potencijal (lat. potentia – moć, mogućnost) označava neostvarenu radnju. Koristimo ga i kao učtiv oblik: „Da li biste mi pomogli?“ zvuči ljubaznije od „Pomozite mi!“.",
+   "rec": "potencijal"
+  },
+  {
+   "lekcija": 2,
+   "tezina": 1,
+   "pitanje": "Koji oblik je pravilan u 1. licu jednine potencijala?",
+   "odgovori": [
+    "ja bih pevao",
+    "ja bi pevao",
+    "ja bih sam pevao",
+    "ja bio bih pevao"
+   ],
+   "zanimljivost": "Najčešća greška u govoru je „ja bi“ umesto „ja bih“. Pravilno je: ja bih, ti bi, on bi, mi bismo, vi biste, oni bi.",
+   "rec": "potencijal"
+  },
+  {
+   "lekcija": 2,
+   "tezina": 1,
+   "pitanje": "Kako se pravilno piše 2. lice množine potencijala?",
+   "odgovori": [
+    "vi biste kupili",
+    "vi bi ste kupili",
+    "vi bi kupili",
+    "vi bista kupili"
+   ],
+   "zanimljivost": "„Biste“ i „bismo“ su jedna reč (oblici aorista), pa se pišu sastavljeno. „Vi bi kupili“ je česta govorna greška.",
+   "rec": "potencijal"
+  },
+  {
+   "lekcija": 2,
+   "tezina": 1,
+   "pitanje": "Od čega se gradi futur drugi?",
+   "odgovori": [
+    "Od prezenta glagola biti i radnog glagolskog prideva",
+    "Od aorista glagola biti i radnog glagolskog prideva",
+    "Od prezenta glagola hteti i infinitiva",
+    "Od imperfekta glagola biti i infinitiva"
+   ],
+   "zanimljivost": "Budem, budeš, bude, budemo, budete, budu je prezent glagola „biti“: kad budem došao, ako budeš hteo.",
+   "rec": "futur"
+  },
+  {
+   "lekcija": 2,
+   "tezina": 2,
+   "pitanje": "U kakvim rečenicama se futur drugi najčešće upotrebljava?",
+   "odgovori": [
+    "U zavisnim rečenicama",
+    "U upitnim nezavisnim rečenicama",
+    "U zapovednim rečenicama",
+    "U rečenicama o prošlim događajima"
+   ],
+   "zanimljivost": "Futur drugi označava buduću radnju koja se desi pre neke druge buduće: „Kad budem položio vozački, voziću pažljivo.“ Sam, u nezavisnoj rečenici, ne stoji.",
+   "rec": "futur"
+  },
+  {
+   "lekcija": 2,
+   "tezina": 3,
+   "pitanje": "Koja rečenica je pravilna?",
+   "odgovori": [
+    "Kad budem porastao, biću pilot.",
+    "Kad ću porasti, biću pilot.",
+    "Kad bih porastao, biću pilot.",
+    "Kad budem porastao, bio sam pilot."
+   ],
+   "zanimljivost": "U zavisnoj vremenskoj rečenici za buduću radnju stoji futur drugi (ili prezent: „kad porastem“), a u glavnoj futur prvi.",
+   "rec": "futur"
+  },
+  {
+   "lekcija": 2,
+   "tezina": 2,
+   "pitanje": "Šta je zajedničko potencijalu i futuru drugom?",
+   "odgovori": [
+    "Oba sadrže radni glagolski pridev",
+    "Oba sadrže infinitiv",
+    "Oba su prosti glagolski oblici",
+    "Oba izriču zapovest"
+   ],
+   "zanimljivost": "Zato se lako pomešaju: „ako budemo zamolili“ (futur II) i „ako bismo zamolili“ (potencijal). Razlika je u pomoćnom glagolu – budem (prezent) ili bih (aorist).",
+   "rec": "potencijal"
+  },
+  {
+   "lekcija": 2,
+   "vrsta": "uljez",
+   "tezina": 2,
+   "pitanje": "Koji glagolski oblik je uljez po građenju?",
+   "odgovori": [
+    "Imperativ",
+    "Potencijal",
+    "Futur drugi",
+    "Perfekat"
+   ],
+   "objasnjenje": "Imperativ je prost oblik – jedna reč (pevaj). Potencijal, futur drugi i perfekat su složeni: pomoćni glagol + radni glagolski pridev.",
+   "zanimljivost": "Složenih glagolskih oblika ima pet: perfekat, pluskvamperfekat, futur prvi, futur drugi i potencijal.",
+   "rec": "imperativ"
+  },
+  {
+   "lekcija": 2,
+   "tezina": 3,
+   "pitanje": "Kako glasi imperativ glagola „biti“ u 2. licu množine?",
+   "odgovori": [
+    "budite",
+    "bite",
+    "bidite",
+    "budete"
+   ],
+   "zanimljivost": "„Budete“ je prezent (ako budete došli), a „budite“ imperativ (Budite tihi!). Razlikuju se samo u jednom glasu, pa se lako zamene.",
+   "rec": "imperativ"
+  },
+  {
+   "lekcija": 3,
+   "tezina": 1,
+   "pitanje": "Zašto glagolski prilozi ne mogu biti predikat rečenice?",
+   "odgovori": [
+    "Jer su nelični glagolski oblici",
+    "Jer su složeni glagolski oblici",
+    "Jer se menjaju po padežima",
+    "Jer označavaju samo prošlost"
+   ],
+   "zanimljivost": "Nelični oblici ne pokazuju lice: iz „služeći se“ ne može da se zaključi ko vrši radnju. Nelični su infinitiv, radni i trpni glagolski pridev i dva glagolska priloga.",
+   "rec": "prilog"
+  },
+  {
+   "lekcija": 3,
+   "tezina": 1,
+   "pitanje": "Kako se gradi glagolski prilog sadašnji?",
+   "odgovori": [
+    "Na 3. lice množine prezenta doda se -ći",
+    "Na infinitivnu osnovu doda se -vši",
+    "Na infinitiv doda se -ći",
+    "Na 1. lice jednine prezenta doda se -ći"
+   ],
+   "zanimljivost": "Od „pevaju“ nastaje „pevajući“, od „nose“ – „noseći“. Gradi se od nesvršenih glagola i kazuje radnju istovremenu sa radnjom predikata.",
+   "rec": "prilog"
+  },
+  {
+   "lekcija": 3,
+   "tezina": 2,
+   "pitanje": "Koji oblik glagolskog priloga sadašnjeg je pravilan?",
+   "odgovori": [
+    "dajući",
+    "davajući",
+    "davajuć",
+    "dajajući"
+   ],
+   "zanimljivost": "Treće lice množine prezenta od „davati“ je „daju“, pa je prilog „dajući“. Isto tako: prepisujući (ne prepisivajući), poznajući (ne poznavajući), plačući (ne plakajući).",
+   "rec": "prilog"
+  },
+  {
+   "lekcija": 3,
+   "tezina": 2,
+   "pitanje": "Kako se gradi glagolski prilog prošli?",
+   "odgovori": [
+    "Na infinitivnu osnovu doda se -vši ili -avši",
+    "Na 3. lice množine prezenta doda se -vši",
+    "Na radni pridev doda se -ši",
+    "Na prezentsku osnovu doda se -avši"
+   ],
+   "zanimljivost": "-vši ide iza samoglasnika (mahnu-vši), a -avši iza suglasnika (ispek-avši, rek-avši). Gradi se pretežno od svršenih glagola i kazuje radnju koja je prethodila radnji predikata.",
+   "rec": "prilog"
+  },
+  {
+   "lekcija": 3,
+   "tezina": 2,
+   "pitanje": "Kako glasi glagolski prilog prošli od „reći“?",
+   "odgovori": [
+    "rekavši",
+    "rekući",
+    "rečevši",
+    "rekovši"
+   ],
+   "zanimljivost": "Infinitivna osnova je rek- (vidi se u aoristu „rekoh“), a pošto se završava suglasnikom, dodaje se -avši. U starijoj književnosti sreće se i kraći oblik „rekav“.",
+   "rec": "prilog"
+  },
+  {
+   "lekcija": 3,
+   "vrsta": "spoji",
+   "tezina": 2,
+   "pitanje": "Spoji pomoćni glagol sa njegovim glagolskim prilozima",
+   "parovi": [
+    [
+     "biti – sadašnji",
+     "budući"
+    ],
+    [
+     "biti – prošli",
+     "bivši"
+    ],
+    [
+     "hteti – sadašnji",
+     "hoteći"
+    ],
+    [
+     "hteti – prošli",
+     "htevši"
+    ]
+   ],
+   "zanimljivost": "Od priloga „budući“ i „bivši“ nastali su pridevi koje svakodnevno koristimo: budući lekar, bivši đak. Od „hoteći“ je nastao prilog „nehotice“.",
+   "rec": "prilog"
+  },
+  {
+   "lekcija": 3,
+   "tezina": 2,
+   "pitanje": "Koju službu u rečenici „Šetajući ulicom, sreo je druga.“ ima glagolski prilog?",
+   "odgovori": [
+    "Priloške odredbe za vreme",
+    "Predikata rečenice",
+    "Gramatičkog subjekta",
+    "Pravog objekta"
+   ],
+   "zanimljivost": "Glagolski prilozi obično su priloške odredbe za vreme (kada?), uzrok (zašto?) ili način (kako?). „Plašeći se da će zakasniti, Ana je krenula autobusom“ – odredba za uzrok.",
+   "rec": "odredba"
+  },
+  {
+   "lekcija": 3,
+   "tezina": 3,
+   "pitanje": "U kojoj rečenici je glagolski prilog odredba za NAČIN?",
+   "odgovori": [
+    "Prošla je pored Vuka ne pogledavši ga.",
+    "Videvši Vuka, potrčala je ka njemu.",
+    "Razbolevši se, Ana nije došla u školu.",
+    "Vrativši se kući, odmah je zaspao."
+   ],
+   "zanimljivost": "Pitamo: kako je prošla? – ne pogledavši ga. U ostalim rečenicama prilog odgovara na pitanja kada? (videvši, vrativši se) i zašto? (razbolevši se).",
+   "rec": "odredba"
+  },
+  {
+   "lekcija": 3,
+   "tezina": 1,
+   "pitanje": "Kako se piše rečca „ne“ uz glagolski prilog sadašnji?",
+   "odgovori": [
+    "Odvojeno: ne znajući",
+    "Sastavljeno: neznajući",
+    "Sa crticom: ne-znajući",
+    "Svejedno je kako"
+   ],
+   "zanimljivost": "Rečca „ne“ uz glagole se piše odvojeno, osim u oblicima nisam, neću, nemam i nemoj. „Neznajući“ je jedna od najčešćih pravopisnih grešaka.",
+   "rec": "odrična"
+  },
+  {
+   "lekcija": 3,
+   "tezina": 1,
+   "pitanje": "Koji je glagolski oblik „otvoren“ u rečenici „Otvoren je novi bioskop.“?",
+   "odgovori": [
+    "Trpni glagolski pridev",
+    "Radni glagolski pridev",
+    "Glagolski prilog prošli",
+    "Infinitiv"
+   ],
+   "zanimljivost": "Trpni pridev menja se po rodu i broju kao obični pridev: otvoren, otvorena, otvoreno, otvoreni. Gradi se od prelaznih glagola.",
+   "rec": "pridev"
+  },
+  {
+   "lekcija": 3,
+   "tezina": 2,
+   "pitanje": "Šta se izražava trpnim glagolskim pridevom u rečenici „Film je prikazan prošle nedelje.“?",
+   "odgovori": [
+    "Pasiv – subjekat trpi radnju",
+    "Aktiv – subjekat vrši radnju",
+    "Zapovest upućena subjektu",
+    "Mogućnost da se radnja desi"
+   ],
+   "zanimljivost": "U pasivu na mestu subjekta stoji trpilac radnje, a vršilac se često i ne pominje. Isti princip postoji u engleskom: „The film was shown“.",
+   "rec": "pasiv"
+  },
+  {
+   "lekcija": 3,
+   "vrsta": "spoji",
+   "tezina": 2,
+   "pitanje": "Spoji glagol sa njegovim trpnim pridevom",
+   "parovi": [
+    [
+     "nacrtati",
+     "nacrtan"
+    ],
+    [
+     "plesti",
+     "pleten"
+    ],
+    [
+     "pokrenuti",
+     "pokrenut"
+    ],
+    [
+     "pronaći",
+     "pronađen"
+    ]
+   ],
+   "zanimljivost": "Glagoli na -ati imaju nastavak -n, glagoli na -ći i -sti najčešće -en, a glagoli na -nuti nastavak -t.",
+   "rec": "pridev"
+  },
+  {
+   "lekcija": 3,
+   "tezina": 3,
+   "pitanje": "Koji trpni pridev je pravilan?",
+   "odgovori": [
+    "donesen",
+    "donešen",
+    "donosen",
+    "donesan"
+   ],
+   "zanimljivost": "Kad se prezentska osnova završava na -e (donesemo), nema jotovanja: donesen, unesen, dovezen. Jotovanje postoji samo kad se osnova završava na -i: donosimo → donošen.",
+   "rec": "jotovanje"
+  },
+  {
+   "lekcija": 3,
+   "tezina": 3,
+   "pitanje": "Koji je pravilan trpni pridev glagola „zagristi“?",
+   "odgovori": [
+    "zagrizen",
+    "zagrižen",
+    "zagristen",
+    "zagrizat"
+   ],
+   "zanimljivost": "Prezent je „zagrizemo“ – osnova na -e, pa nema jotovanja. Zato je „Sendvič je zagrizen“, a ne „zagrižen“.",
+   "rec": "jotovanje"
+  },
+  {
+   "lekcija": 3,
+   "vrsta": "uljez",
+   "tezina": 2,
+   "pitanje": "Koji glagolski oblik je uljez?",
+   "odgovori": [
+    "Potencijal",
+    "Infinitiv",
+    "Glagolski prilog sadašnji",
+    "Trpni glagolski pridev"
+   ],
+   "objasnjenje": "Potencijal je lični oblik (ja bih, ti bi…) i može biti predikat. Ostala tri su nelični glagolski oblici.",
+   "zanimljivost": "Svi nelični oblici osim infinitiva prave reči drugih vrsta: od priloga sadašnjeg nastaju pridevi (leteći tanjir), a od trpnog prideva obični pridevi (kuvano jaje).",
+   "rec": "potencijal"
+  },
+  {
+   "lekcija": 3,
+   "tezina": 3,
+   "pitanje": "Koja rečenica ima glagolski prilog prošli?",
+   "odgovori": [
+    "Pobedivši Federera, Đoković je ušao u finale.",
+    "Pobeđujući redom, Đoković je ušao u finale.",
+    "Pobeđen u finalu, Federer je čestitao.",
+    "Đoković bi pobedio i u finalu."
+   ],
+   "zanimljivost": "„Pobedivši“ kazuje radnju završenu pre radnje predikata. „Pobeđujući“ je prilog sadašnji (istovremenost), „pobeđen“ trpni pridev, a „bi pobedio“ potencijal.",
+   "rec": "prilog"
+  },
+  {
+   "lekcija": 3,
+   "tezina": 2,
+   "pitanje": "Kakvog su vida glagoli od kojih se gradi glagolski prilog prošli?",
+   "odgovori": [
+    "Najčešće svršenog",
+    "Najčešće nesvršenog",
+    "Isključivo povratnog",
+    "Isključivo nesvršenog"
+   ],
+   "zanimljivost": "Radnja mora biti završena da bi joj usledila druga: „Stigavši na posao, počeo je da radi.“ Prilog sadašnji je obrnuto – od nesvršenih glagola.",
+   "rec": "vid"
+  },
+  {
+   "lekcija": 4,
+   "tezina": 1,
+   "pitanje": "U kom padežu stoji gramatički subjekat?",
+   "odgovori": [
+    "U nominativu",
+    "U genitivu",
+    "U akuzativu",
+    "U dativu"
+   ],
+   "zanimljivost": "Gramatički subjekat odgovara na pitanje ko? ili šta? i slaže se sa predikatom. Može biti imenica, imenička zamenica ili skup reči sa imenicom kao glavnom reči.",
+   "rec": "subjekat"
+  },
+  {
+   "lekcija": 4,
+   "tezina": 2,
+   "pitanje": "Šta je „Ani“ u rečenici „Ani je hladno.“?",
+   "odgovori": [
+    "Logički subjekat u dativu",
+    "Gramatički subjekat",
+    "Indirektni objekat",
+    "Priloška odredba za mesto"
+   ],
+   "zanimljivost": "Logički subjekat označava nosioca stanja, a ne stoji u nominativu: Ani je hladno (dativ), Anu je sramota (akuzativ), Nema hleba (genitiv).",
+   "rec": "subjekat"
+  },
+  {
+   "lekcija": 4,
+   "tezina": 2,
+   "pitanje": "U kojim padežima može stajati logički subjekat?",
+   "odgovori": [
+    "U genitivu, dativu ili akuzativu",
+    "Samo u nominativu",
+    "U vokativu ili instrumentalu",
+    "U lokativu ili instrumentalu"
+   ],
+   "zanimljivost": "Logički subjekat u genitivu kazuje da nečega ima ili nema („Ima vode“), a u dativu i akuzativu nosioca stanja ili osećanja („Vuku je dosadno“, „Anu je strah“).",
+   "rec": "subjekat"
+  },
+  {
+   "lekcija": 4,
+   "tezina": 3,
+   "pitanje": "Šta je reč „glava“ u rečenici „Anu boli glava.“?",
+   "odgovori": [
+    "Gramatički subjekat",
+    "Logički subjekat",
+    "Pravi objekat",
+    "Imenski deo predikata"
+   ],
+   "zanimljivost": "Šta boli? – glava (nominativ), pa je to gramatički subjekat, a „Anu“ je objekat. U rečenici „Anu boli u grudima“ nema nominativa, pa je „Anu“ logički subjekat. U rečenici ne mogu postojati oba subjekta.",
+   "rec": "subjekat"
+  },
+  {
+   "lekcija": 4,
+   "tezina": 1,
+   "pitanje": "Kako se zove predikat sastavljen od glagola „biti“ (jesam) i imenice ili prideva?",
+   "odgovori": [
+    "Imenski predikat",
+    "Prost glagolski predikat",
+    "Složeni glagolski predikat",
+    "Logički predikat"
+   ],
+   "zanimljivost": "„Vuk je vredan“, „Ana je učenica“. Glagol „biti“ tu samo povezuje subjekat i osobinu – zove se kopula (lat. copula – veza).",
+   "rec": "predikat"
+  },
+  {
+   "lekcija": 4,
+   "tezina": 2,
+   "pitanje": "Koji predikat je u rečenici „Vuk želi da putuje.“?",
+   "odgovori": [
+    "Složeni glagolski predikat",
+    "Prost glagolski predikat",
+    "Imenski predikat",
+    "Dva prosta predikata"
+   ],
+   "zanimljivost": "Glagol nepotpunog značenja (želeti, moći, hteti, smeti, morati, početi, prestati) dopunjuje se infinitivom ili konstrukcijom „da + prezent“: „Vuk želi putovati“ = „Vuk želi da putuje“.",
+   "rec": "predikat"
+  },
+  {
+   "lekcija": 4,
+   "tezina": 2,
+   "pitanje": "Koja rečenica ima prost glagolski predikat?",
+   "odgovori": [
+    "Ana uči hemiju.",
+    "Ana mora da uči.",
+    "Ana je odlična učenica.",
+    "Ana može učiti."
+   ],
+   "zanimljivost": "Prost glagolski predikat čini samo jedan glagol u ličnom obliku. Perfekat „je učila“ je takođe prost predikat – iako ima dve reči, to je jedan glagolski oblik.",
+   "rec": "predikat"
+  },
+  {
+   "lekcija": 4,
+   "tezina": 3,
+   "pitanje": "Koja rečenica je pravilna po udžbeniku?",
+   "odgovori": [
+    "Ti treba da učiš više.",
+    "Ti trebaš da učiš više.",
+    "Ti trebaš učiti više.",
+    "Ti trebao bi da učiš više."
+   ],
+   "zanimljivost": "Kao deo složenog predikata „trebati“ je bezličan glagol – uvek u 3. licu jednine: ja treba da…, ti treba da… Lice pokazuje drugi glagol. „Trebam knjigu“ (= potrebna mi je) je drugo, punoznačno značenje.",
+   "rec": "trebati"
+  },
+  {
+   "lekcija": 4,
+   "tezina": 1,
+   "pitanje": "Šta je predikat u rečenici „Banana je moja omiljena voćka.“?",
+   "odgovori": [
+    "je voćka",
+    "je",
+    "banana",
+    "moja omiljena"
+   ],
+   "zanimljivost": "Imenski deo predikata ovde je imenica „voćka“ (sa atributima „moja omiljena“), a glagolski deo „je“.",
+   "rec": "predikat"
+  },
+  {
+   "lekcija": 4,
+   "vrsta": "spoji",
+   "tezina": 2,
+   "pitanje": "Spoji rečenicu sa vrstom predikata u njoj",
+   "parovi": [
+    [
+     "Vuk trči.",
+     "Prost glagolski"
+    ],
+    [
+     "Vuk počinje da trči.",
+     "Složeni glagolski"
+    ],
+    [
+     "Vuk je brz.",
+     "Imenski"
+    ]
+   ],
+   "zanimljivost": "Perfekat „je trčao“ i futur „trčaće“ su i dalje prost predikat – broji se glagolski oblik, a ne broj reči.",
+   "rec": "predikat"
+  },
+  {
+   "lekcija": 4,
+   "tezina": 2,
+   "pitanje": "Koja je služba reči „vode“ u rečenici „U česmi nema vode.“?",
+   "odgovori": [
+    "Logički subjekat",
+    "Pravi objekat",
+    "Gramatički subjekat",
+    "Atribut uz imenicu"
+   ],
+   "zanimljivost": "Glagoli „ima“ i „nema“ u značenju postojanja imaju logički subjekat u genitivu. Proba: rečenica nema nominativa (nema „ko? šta?“).",
+   "rec": "subjekat"
+  },
+  {
+   "lekcija": 4,
+   "vrsta": "uljez",
+   "tezina": 2,
+   "pitanje": "Koji glagol se u složenom predikatu NE javlja kao glagol nepotpunog značenja?",
+   "odgovori": [
+    "spavati",
+    "moći",
+    "morati",
+    "smeti"
+   ],
+   "objasnjenje": "„Spavati“ ima potpuno značenje i sam čini predikat. Moći, morati i smeti traže dopunu: mogu da…, moram da…, smem da…",
+   "zanimljivost": "Glagoli nepotpunog značenja zovu se i modalni (moći, morati, smeti, hteti, trebati) i fazni (početi, nastaviti, prestati) – fazni kazuju fazu radnje.",
+   "rec": "glagol"
+  },
+  {
+   "lekcija": 4,
+   "tezina": 3,
+   "pitanje": "U kojoj rečenici je subjekat izostavljen, ali se zna ko je?",
+   "odgovori": [
+    "Kupili smo nov sto.",
+    "Kiša pada.",
+    "Smrkava se.",
+    "Ima hleba."
+   ],
+   "zanimljivost": "Iz nastavka „smo“ zna se da je subjekat „mi“. „Smrkava se“ je bezlična rečenica – subjekta nema ni u mislima.",
+   "rec": "subjekat"
+  },
+  {
+   "lekcija": 4,
+   "tezina": 2,
+   "pitanje": "U kojim kategorijama se imenski deo predikata (pridev) slaže sa subjektom?",
+   "odgovori": [
+    "U rodu, broju i padežu",
+    "Samo u licu",
+    "U licu i vremenu",
+    "U licu, vidu i broju"
+   ],
+   "zanimljivost": "„Vuk je umoran“ – „Ana je umorna“ – „Deca su umorna“. Pridev prati subjekat kao senka, pa i u nominativu.",
+   "rec": "slaganje"
+  },
+  {
+   "lekcija": 4,
+   "tezina": 1,
+   "pitanje": "Kojim rečeničnim članovima pripadaju subjekat i predikat?",
+   "odgovori": [
+    "Glavnim rečeničnim članovima",
+    "Zavisnim rečeničnim članovima",
+    "Dodatnim članovima rečenice",
+    "Nijednima – oni su sintagme"
+   ],
+   "zanimljivost": "Zavisni rečenični članovi su objekat, priloške odredbe, atribut i apozicija – oni bliže određuju glavne članove.",
+   "rec": "predikat"
+  },
+  {
+   "lekcija": 4,
+   "tezina": 3,
+   "pitanje": "Koja rečenica ima logički subjekat u akuzativu?",
+   "odgovori": [
+    "Vuka je strah od mraka.",
+    "Vuk se boji mraka.",
+    "Vuku je strašno u mraku.",
+    "Mrak plaši Vuka."
+   ],
+   "zanimljivost": "Ko oseća strah? – Vuka (akuzativ). U „Vuku je strašno“ logički subjekat je u dativu, a u ostale dve „Vuk“ i „Mrak“ su gramatički subjekti.",
+   "rec": "subjekat"
+  },
+  {
+   "lekcija": 5,
+   "tezina": 1,
+   "pitanje": "Šta je sintagma?",
+   "odgovori": [
+    "Skup reči oko jedne glavne reči",
+    "Svaka rečenica sa dva predikata",
+    "Reč nastala spajanjem dve osnove",
+    "Grupa rečenica sa istom temom"
+   ],
+   "zanimljivost": "Reč „sintagma“ je grčkog porekla (sýntagma – ono što je složeno zajedno), kao i „sintaksa“, deo gramatike o rečenici.",
+   "rec": "sintagma"
+  },
+  {
+   "lekcija": 5,
+   "tezina": 1,
+   "pitanje": "Kako se zove sintagma čija je glavna reč imenica?",
+   "odgovori": [
+    "Imenička",
+    "Pridevska",
+    "Glagolska",
+    "Priloška"
+   ],
+   "zanimljivost": "Vrstu sintagme određuje vrsta glavne reči. Glavna reč je ona koja ne može da se izostavi bez gubitka smisla.",
+   "rec": "sintagma"
+  },
+  {
+   "lekcija": 5,
+   "vrsta": "spoji",
+   "tezina": 2,
+   "pitanje": "Spoji sintagmu sa njenom vrstom",
+   "parovi": [
+    [
+     "vredni učenici",
+     "Imenička"
+    ],
+    [
+     "pun vode",
+     "Pridevska"
+    ],
+    [
+     "vrlo brzo",
+     "Priloška"
+    ],
+    [
+     "čita knjigu",
+     "Glagolska"
+    ]
+   ],
+   "zanimljivost": "Glavne reči su: učenici (imenica), pun (pridev), brzo (prilog), čita (glagol).",
+   "rec": "sintagma"
+  },
+  {
+   "lekcija": 5,
+   "tezina": 1,
+   "pitanje": "Koja je glavna reč u sintagmi „vredni učenici sedmog razreda“?",
+   "odgovori": [
+    "učenici",
+    "vredni",
+    "sedmog",
+    "razreda"
+   ],
+   "zanimljivost": "Bez reči „učenici“ ostaje „vredni sedmog razreda“ – nepotpuno. Ostale reči su atributi, pa je ovo imenička sintagma.",
+   "rec": "sintagma"
+  },
+  {
+   "lekcija": 5,
+   "tezina": 2,
+   "pitanje": "Koji zavisni članovi stoje uz imenicu u imeničkoj sintagmi?",
+   "odgovori": [
+    "Atribut i apozicija",
+    "Objekat i priloška odredba",
+    "Subjekat i predikat",
+    "Samo priloške odredbe"
+   ],
+   "zanimljivost": "Atribut kazuje osobinu (lepa kuća, kuća od kamena), a apozicija je imenica koja drugom imenicom bliže određuje pojam (reka Dunav, Vuk, reformator jezika).",
+   "rec": "atribut"
+  },
+  {
+   "lekcija": 5,
+   "tezina": 2,
+   "pitanje": "Koju službu u rečenici može imati sintagma?",
+   "odgovori": [
+    "Bilo koju – kao jedna reč",
+    "Samo službu subjekta",
+    "Samo službu predikata",
+    "Nijednu – nije rečenični član"
+   ],
+   "zanimljivost": "Sintagma se ponaša kao jedna reč: „Moj stariji brat“ može biti subjekat, „mog starijeg brata“ objekat, „sa mojim starijim bratom“ priloška odredba.",
+   "rec": "sintagma"
+  },
+  {
+   "lekcija": 5,
+   "tezina": 3,
+   "pitanje": "Kakva je sintagma „veoma ponosan na sestru“?",
+   "odgovori": [
+    "Pridevska",
+    "Imenička",
+    "Priloška",
+    "Glagolska"
+   ],
+   "zanimljivost": "Glavna reč je pridev „ponosan“; „veoma“ je odredba za meru, a „na sestru“ dopuna prideva. U rečenici ova sintagma može biti imenski deo predikata: „Vuk je veoma ponosan na sestru.“",
+   "rec": "pridev"
+  },
+  {
+   "lekcija": 5,
+   "tezina": 2,
+   "pitanje": "Koja sintagma je glagolska?",
+   "odgovori": [
+    "brzo trčati kroz park",
+    "brzi trkač iz parka",
+    "veoma brzo",
+    "brz kao vetar"
+   ],
+   "zanimljivost": "Glavna reč je glagol „trčati“, a zavisni članovi su priloške odredbe (brzo – za način, kroz park – za mesto). Uz glagol u sintagmi stoje objekti i priloške odredbe.",
+   "rec": "glagol"
+  },
+  {
+   "lekcija": 5,
+   "tezina": 3,
+   "pitanje": "Koju službu ima sintagma „mog najboljeg druga“ u rečenici „Upoznao sam brata mog najboljeg druga.“?",
+   "odgovori": [
+    "Atributa",
+    "Objekta",
+    "Subjekta",
+    "Apozicije"
+   ],
+   "zanimljivost": "Objekat je cela sintagma „brata mog najboljeg druga“, a unutar nje „mog najboljeg druga“ bliže određuje glavnu reč „brata“ – čijeg brata? – pa je atribut. Sintagme mogu biti jedna u drugoj.",
+   "rec": "atribut"
+  },
+  {
+   "lekcija": 5,
+   "vrsta": "uljez",
+   "tezina": 2,
+   "pitanje": "Koja sintagma je uljez po vrsti?",
+   "odgovori": [
+    "sasvim tiho",
+    "tiha noć",
+    "kuća na brdu",
+    "Mila, moja sestra"
+   ],
+   "objasnjenje": "„Sasvim tiho“ je priloška sintagma (glavna reč je prilog „tiho“). Ostale tri su imeničke – glavne reči su noć, kuća i Mila.",
+   "zanimljivost": "Priloške sintagme su najkraće: glavni prilog obično dobija samo odredbu za meru – vrlo, veoma, sasvim, previše.",
+   "rec": "prilog"
+  },
+  {
+   "lekcija": 5,
+   "tezina": 1,
+   "pitanje": "Šta je „pisac“ u sintagmi „Ivo Andrić, pisac“?",
+   "odgovori": [
+    "Apozicija",
+    "Atribut",
+    "Objekat",
+    "Predikat"
+   ],
+   "zanimljivost": "Apozicija je imenica (ili imenička sintagma) koja bliže određuje drugu imenicu i obično se odvaja zapetama: „Ivo Andrić, nobelovac, rođen je u Dolcu kod Travnika.“",
+   "rec": "apozicija",
+   "medijiOdgovora": {
+    "vrsta": "slika",
+    "src": "slike/andric.jpg",
+    "opis": "Ivo Andrić, dobitnik Nobelove nagrade za književnost 1961."
+   }
+  },
+  {
+   "lekcija": 5,
+   "tezina": 1,
+   "pitanje": "Šta je „crveni“ u sintagmi „crveni balon“?",
+   "odgovori": [
+    "Atribut",
+    "Apozicija",
+    "Glavna reč",
+    "Priloška odredba"
+   ],
+   "zanimljivost": "Pridevski atribut odgovara na pitanje kakav? koji? čiji? i slaže se sa imenicom u rodu, broju i padežu: crveni balon, crvene lopte, crvenom autu.",
+   "rec": "atribut"
+  },
+  {
+   "lekcija": 5,
+   "tezina": 3,
+   "pitanje": "U rečenici „Stara kuća na brdu prodata je juče.“ koja sintagma je subjekat?",
+   "odgovori": [
+    "Stara kuća na brdu",
+    "kuća",
+    "na brdu",
+    "prodata je juče"
+   ],
+   "zanimljivost": "Subjekat je cela imenička sintagma, a ne samo glavna reč. U njoj „stara“ i „na brdu“ su atributi imenice „kuća“.",
+   "rec": "subjekat"
+  },
+  {
+   "lekcija": 5,
+   "tezina": 2,
+   "pitanje": "Kakav atribut je „od kamena“ u sintagmi „kuća od kamena“?",
+   "odgovori": [
+    "Imenički atribut",
+    "Pridevski atribut",
+    "Apozicija",
+    "Priloška odredba za mesto"
+   ],
+   "zanimljivost": "Atribut ne mora biti pridev: kuća od kamena = kamena kuća. Imenički atribut može biti i bez predloga: „knjiga mog brata“.",
+   "rec": "atribut"
+  },
+  {
+   "lekcija": 5,
+   "tezina": 3,
+   "pitanje": "Koja služba u rečenici „Pročitao sam knjigu o dinosaurusima.“ pripada sintagmi „knjigu o dinosaurusima“?",
+   "odgovori": [
+    "Pravi objekat",
+    "Subjekat",
+    "Priloška odredba za mesto",
+    "Apozicija"
+   ],
+   "zanimljivost": "Šta sam pročitao? – knjigu o dinosaurusima. Glavna reč „knjigu“ je u akuzativu bez predloga, a „o dinosaurusima“ je njen atribut (kakvu knjigu?), a ne odredba za mesto.",
+   "rec": "objekat"
+  },
+  {
+   "lekcija": 5,
+   "tezina": 1,
+   "pitanje": "Kojoj vrsti pripada sintagma „srećan zbog uspeha“?",
+   "odgovori": [
+    "Pridevskoj",
+    "Imeničkoj",
+    "Priloškoj",
+    "Glagolskoj"
+   ],
+   "zanimljivost": "Glavna reč je pridev „srećan“. Pridevi koji izražavaju osećanje često traže dopunu: srećan zbog…, ljut na…, ponosan na…",
+   "rec": "pridev"
+  },
+  {
+   "lekcija": 6,
+   "tezina": 1,
+   "pitanje": "Šta je zajedničko rečeničnim članovima koji su u naporednom odnosu?",
+   "odgovori": [
+    "Imaju istu službu u rečenici",
+    "Stoje u istom padežu i rodu",
+    "Uvek su imenice",
+    "Uvek stoje jedan do drugog"
+   ],
+   "zanimljivost": "U „Volim jabuke i kruške“ obe reči su pravi objekat. Naporedni (nezavisni) odnos znači da nijedan član ne zavisi od drugog – „ravnopravni“ su.",
+   "rec": "objekat"
+  },
+  {
+   "lekcija": 6,
+   "tezina": 1,
+   "pitanje": "Koja tri naporedna odnosa među rečeničnim članovima se uče u 7. razredu?",
+   "odgovori": [
+    "Sastavni, suprotni i rastavni",
+    "Uzročni, posledični i namerni",
+    "Vremenski, mesni i načinski",
+    "Gramatički, logički i semantički"
+   ],
+   "zanimljivost": "Sastavni sabira (i, pa, te, ni, niti), suprotni suprotstavlja (a, ali, nego, već, no), a rastavni nudi izbor (ili).",
+   "rec": "odnos"
+  },
+  {
+   "lekcija": 6,
+   "vrsta": "spoji",
+   "tezina": 2,
+   "pitanje": "Spoji rečenicu sa naporednim odnosom subjekata u njoj",
+   "parovi": [
+    [
+     "I pas i mačka su dobri ljubimci.",
+     "Sastavni"
+    ],
+    [
+     "Pas, a ne mačka, čuva kuću.",
+     "Suprotni"
+    ],
+    [
+     "Pas ili mačka biće moj poklon.",
+     "Rastavni"
+    ]
+   ],
+   "zanimljivost": "Primer je iz radne sveske. U rečenici „U avionu nisu dozvoljeni ni psi ni mačke“ odnos je takođe sastavni – „ni… ni“ je odrični sastavni veznik.",
+   "rec": "odnos"
+  },
+  {
+   "lekcija": 6,
+   "tezina": 1,
+   "pitanje": "U kom su odnosu podvučeni članovi u rečenici „Bio sam umoran, ali srećan.“?",
+   "odgovori": [
+    "U suprotnom",
+    "U sastavnom",
+    "U rastavnom",
+    "U zavisnom"
+   ],
+   "zanimljivost": "Oba prideva su imenski deo predikata, a „ali“ ih suprotstavlja. Ispred suprotnog veznika uvek stoji zapeta.",
+   "rec": "odnos",
+   "mediji": {
+    "vrsta": "citat",
+    "tekst": "Bio sam umoran, ali srećan."
+   }
+  },
+  {
+   "lekcija": 6,
+   "tezina": 2,
+   "pitanje": "Koja je služba naporednih članova u rečenici „Ići ću na skijanje u januaru ili februaru.“?",
+   "odgovori": [
+    "Priloška odredba za vreme",
+    "Pravi objekat",
+    "Gramatički subjekat",
+    "Atribut uz imenicu"
+   ],
+   "zanimljivost": "Kada ću ići? – u januaru ili februaru. Naporedni članovi mogu imati bilo koju službu, pod uslovom da je ista za sve.",
+   "rec": "odredba"
+  },
+  {
+   "lekcija": 6,
+   "tezina": 3,
+   "pitanje": "Koja je služba naporednih članova u rečenici „Ne kuvaj mi crnu, nego belu kafu.“?",
+   "odgovori": [
+    "Atribut",
+    "Pravi objekat",
+    "Imenski deo predikata",
+    "Apozicija"
+   ],
+   "zanimljivost": "Kakvu kafu? – crnu, nego belu. Suprotno su postavljeni samo atributi, a imenica „kafu“ je zajednička – pravi objekat.",
+   "rec": "atribut"
+  },
+  {
+   "lekcija": 6,
+   "vrsta": "uljez",
+   "tezina": 1,
+   "pitanje": "Koji veznik NIJE suprotni?",
+   "odgovori": [
+    "te",
+    "nego",
+    "već",
+    "no"
+   ],
+   "objasnjenje": "„Te“ je sastavni veznik (kao i, pa, ni, niti). „Nego“, „već“ i „no“ su suprotni.",
+   "zanimljivost": "Veznik „no“ je danas ređi i zvuči pomalo starinski ili pesnički: „Lep je dan, no hladan.“",
+   "rec": "veznik"
+  },
+  {
+   "lekcija": 6,
+   "tezina": 2,
+   "pitanje": "Gde se stavlja zapeta u nabrajanju „Kupila sam jabuke kruške mandarine i banane.“?",
+   "odgovori": [
+    "Posle „jabuke“ i „kruške“",
+    "Posle svake reči, i ispred „i“",
+    "Samo ispred „i banane“",
+    "Nigde, jer nema veznika"
+   ],
+   "zanimljivost": "Članovi nabrajanja odvajaju se zapetama, ali se zapeta ne piše ispred poslednjeg člana uz koji stoji veznik „i“.",
+   "rec": "zapeta",
+   "mediji": {
+    "vrsta": "citat",
+    "tekst": "Kupila sam jabuke kruške mandarine i banane."
+   }
+  },
+  {
+   "lekcija": 6,
+   "tezina": 3,
+   "pitanje": "U kojoj rečenici su članovi u sastavnom odnosu iskazani predloško-padežnom konstrukcijom?",
+   "odgovori": [
+    "Učinila sam to i iz poštovanja i iz ljubavi.",
+    "Marko je crnomanjast i visok dečak.",
+    "Učiću srpski, matematiku i fiziku.",
+    "Ili Zvezda ili Partizan biće prvak."
+   ],
+   "zanimljivost": "„Iz poštovanja“ i „iz ljubavi“ su predlog + imenica u genitivu – priloške odredbe za uzrok. U drugoj rečenici naporedni su atributi (pridevi), u trećoj objekti, u četvrtoj subjekti.",
+   "rec": "uzrok"
+  },
+  {
+   "lekcija": 6,
+   "tezina": 1,
+   "pitanje": "Koji veznik označava rastavni odnos (izbor)?",
+   "odgovori": [
+    "ili",
+    "ni",
+    "već",
+    "pa"
+   ],
+   "zanimljivost": "Rastavni odnos nudi mogućnosti od kojih se bira jedna: „Ili ćeš učiti, ili ćeš ostati kod kuće.“ Kada se veznik ponavlja, ispred drugog „ili“ može stajati zapeta.",
+   "rec": "izbor"
+  },
+  {
+   "lekcija": 6,
+   "tezina": 2,
+   "pitanje": "Kakav je odnos u „Prvo sam ispratila društvo, pa rodbinu.“?",
+   "odgovori": [
+    "Sastavni",
+    "Suprotni",
+    "Rastavni",
+    "Uzročni"
+   ],
+   "zanimljivost": "Veznik „pa“ je sastavni, ali kazuje i da je jedna radnja usledila posle druge. Zato se kaže „Došao je, pa otišao“, a ne obrnuto.",
+   "rec": "redosled"
+  },
+  {
+   "lekcija": 6,
+   "vrsta": "spoji",
+   "tezina": 1,
+   "pitanje": "Spoji veznik sa vrstom naporednog odnosa",
+   "parovi": [
+    [
+     "niti",
+     "Sastavni"
+    ],
+    [
+     "nego",
+     "Suprotni"
+    ],
+    [
+     "ili",
+     "Rastavni"
+    ]
+   ],
+   "zanimljivost": "Veznici „ni“ i „niti“ su sastavni, ali odrični: „Ne volim ni narandže ni mandarine.“",
+   "rec": "veznik"
+  },
+  {
+   "lekcija": 6,
+   "tezina": 3,
+   "pitanje": "Zašto „velik i prostran“ u rečenici „Legao sam u velik i prostran krevet.“ čine sastavni odnos?",
+   "odgovori": [
+    "Oba su atributi iste imenice, a veznik je „i“",
+    "Jer je „i“ zavisni veznik koji ih spaja",
+    "Jer je „krevet“ subjekat cele rečenice",
+    "Jer su oba prideva u nominativu jednine"
+   ],
+   "zanimljivost": "Kakav krevet? – velik i prostran. Oba atributa su u istom padežu (akuzativu) i ravnopravna su.",
+   "rec": "atribut"
+  },
+  {
+   "lekcija": 6,
+   "tezina": 1,
+   "pitanje": "Koja rečenica ima suprotni odnos među članovima?",
+   "odgovori": [
+    "Ne volim sarmu, nego pečeno meso.",
+    "Volim i sarmu i pečeno meso.",
+    "Za večeru je sarma ili meso.",
+    "Ne volim ni sarmu ni meso."
+   ],
+   "zanimljivost": "Veznik „nego“ uvodi ono što zamenjuje odbačeni član. Isto značenje imaju „već“ i „a ne“: „Nisam očekivala tebe, već Mariju.“",
+   "rec": "odnos"
+  },
+  {
+   "lekcija": 6,
+   "tezina": 2,
+   "pitanje": "Koji naporedni odnos postoji između subjekata u rečenici „Biljana, a ne Milica, dobiće nagradu.“?",
+   "odgovori": [
+    "Suprotni",
+    "Sastavni",
+    "Rastavni",
+    "Isključni"
+   ],
+   "zanimljivost": "Jedan član se tvrdi, drugi odbacuje. Zapete oko „a ne Milica“ pokazuju da je to umetnuti deo.",
+   "rec": "nagrada"
+  },
+  {
+   "lekcija": 6,
+   "vrsta": "uljez",
+   "tezina": 3,
+   "pitanje": "Koji primer NE sadrži naporedne rečenične članove?",
+   "odgovori": [
+    "Brat moje drugarice",
+    "Brat i sestra",
+    "Brat ili sestra",
+    "Ne brat, nego sestra"
+   ],
+   "objasnjenje": "U „brat moje drugarice“ reč „drugarice“ zavisi od reči „brat“ (atribut) – to je zavisni, a ne naporedni odnos.",
+   "zanimljivost": "Razlika je bitna: naporedni članovi mogu da zamene mesta (sestra i brat), a zavisni ne mogu.",
+   "rec": "brat"
+  },
+  {
+   "lekcija": 6,
+   "tezina": 1,
+   "pitanje": "Kakvi su naporedni članovi u rečenici „Danas imamo srpski, matematiku i fiziku.“?",
+   "odgovori": [
+    "Pravi objekti u sastavnom odnosu",
+    "Subjekti u rastavnom odnosu",
+    "Atributi u suprotnom odnosu",
+    "Odredbe za vreme u sastavnom odnosu"
+   ],
+   "zanimljivost": "Šta imamo? – srpski, matematiku i fiziku (akuzativ bez predloga). Nabrajanje bez veznika i sa „i“ na kraju je sastavni odnos.",
+   "rec": "objekat"
+  },
+  {
+   "lekcija": 7,
+   "tezina": 1,
+   "pitanje": "Šta je kongruencija?",
+   "odgovori": [
+    "Slaganje reči po obliku",
+    "Ponavljanje istih reči u rečenici",
+    "Spajanje dve rečenice u jednu",
+    "Pravilan izgovor akcenta"
+   ],
+   "zanimljivost": "Reč dolazi od latinskog congruentia – podudarnost, sklad. Isti koren je u matematičkom pojmu „podudarni (kongruentni) trouglovi“.",
+   "rec": "slaganje"
+  },
+  {
+   "lekcija": 7,
+   "tezina": 2,
+   "pitanje": "Kako se zove reč prema kojoj se druge reči slažu (npr. imenica u službi subjekta)?",
+   "odgovori": [
+    "Kontrolor kongruencije",
+    "Kongruentna reč",
+    "Glavni predikat",
+    "Zavisni član sintagme"
+   ],
+   "zanimljivost": "U „Naša nova nastavnica je došla“ kontrolor je „nastavnica“, a sa njom se slažu „naša“, „nova“ i „došla“ – one su kongruentne reči.",
+   "rec": "slaganje"
+  },
+  {
+   "lekcija": 7,
+   "tezina": 1,
+   "pitanje": "U kojim kategorijama se glagolski predikat u prezentu slaže sa subjektom?",
+   "odgovori": [
+    "U licu i broju",
+    "U licu, broju i rodu",
+    "U rodu i padežu",
+    "Samo u rodu"
+   ],
+   "zanimljivost": "Prezent ne razlikuje rod: „Učenik ide“ i „Učenica ide“. Rod se pojavljuje tek u složenim oblicima sa radnim ili trpnim pridevom: „Učenik je išao“ – „Učenica je išla“.",
+   "rec": "prezent"
+  },
+  {
+   "lekcija": 7,
+   "tezina": 2,
+   "pitanje": "Zašto se u perfektu predikat slaže sa subjektom i u rodu?",
+   "odgovori": [
+    "Jer sadrži radni glagolski pridev",
+    "Jer je perfekat prost oblik",
+    "Jer se perfekat gradi od infinitiva",
+    "Jer perfekat stoji u nominativu"
+   ],
+   "zanimljivost": "Radni glagolski pridev ima oblike za rod (pevao, pevala, pevalo), pa ga ima i svaki oblik koji ga sadrži: perfekat, pluskvamperfekat, futur II i potencijal.",
+   "rec": "perfekat"
+  },
+  {
+   "lekcija": 7,
+   "tezina": 1,
+   "pitanje": "U kojim kategorijama se atribut slaže sa imenicom u imeničkoj sintagmi?",
+   "odgovori": [
+    "U rodu, broju i padežu",
+    "U licu i broju",
+    "Samo u padežu",
+    "U licu, rodu i vidu"
+   ],
+   "zanimljivost": "Pridevi, pridevske zamenice, redni brojevi i broj „jedan“ kao atributi prate imenicu: „jednom lepom danu“, „jednoj lepoj noći“.",
+   "rec": "atribut"
+  },
+  {
+   "lekcija": 7,
+   "tezina": 3,
+   "pitanje": "Koja rečenica pokazuje semantičku kongruenciju (slaganje po značenju)?",
+   "odgovori": [
+    "Komšija je došao.",
+    "Komšinica je došla.",
+    "Komšije su došle.",
+    "Komšiluk se okupio."
+   ],
+   "zanimljivost": "„Komšija“ ima nastavke ženskog roda (kao „nastavnica“), ali označava muškarca, pa predikat glasi „došao“. Isto važi za sudija, gazda, Nikola, Vlada.",
+   "rec": "slaganje"
+  },
+  {
+   "lekcija": 7,
+   "tezina": 3,
+   "pitanje": "Kako po udžbeniku glasi pravilna rečenica sa imenicom „komšija“ u množini?",
+   "odgovori": [
+    "Komšije su došle.",
+    "Komšije su došli.",
+    "Komšije je došlo.",
+    "Komšije su došlo."
+   ],
+   "zanimljivost": "U množini se ove imenice obično slažu po obliku (ženski rod), pa je to gramatička kongruencija – za razliku od jednine, gde se slažu po značenju.",
+   "rec": "slaganje"
+  },
+  {
+   "lekcija": 7,
+   "tezina": 2,
+   "pitanje": "Koja rečenica je pravilna ako je sudija muškarac?",
+   "odgovori": [
+    "Sudija je dosudio penal.",
+    "Sudija su dosudile penal.",
+    "Sudija su dosudili penal.",
+    "Sudija je dosudilo penal."
+   ],
+   "zanimljivost": "Kada „sudija“ označava muškarca, predikat je u muškom rodu. Ako sudi žena, pravilno je „sutkinja je dosudila“ ili „sudija je dosudila“ – po značenju.",
+   "rec": "sudija"
+  },
+  {
+   "lekcija": 7,
+   "tezina": 1,
+   "pitanje": "U kojim kategorijama se imenski deo predikata izražen pridevom slaže sa subjektom?",
+   "odgovori": [
+    "U rodu, broju i padežu",
+    "Samo u licu",
+    "U licu i broju",
+    "U licu, vidu i rodu"
+   ],
+   "zanimljivost": "„Ana je srećna“ – nominativ, jednina, ženski rod, baš kao subjekat „Ana“.",
+   "rec": "pridev"
+  },
+  {
+   "lekcija": 7,
+   "tezina": 3,
+   "pitanje": "Koja rečenica je gramatički pravilna?",
+   "odgovori": [
+    "Deca su se igrala u parku.",
+    "Deca se igrala u parku.",
+    "Deca su se igrali u parku.",
+    "Deca je se igralo u parku."
+   ],
+   "zanimljivost": "„Deca“ je zbirna imenica: po obliku ženskog roda jednine (kao „žena“), ali traži predikat u množini srednjeg roda – „su se igrala“. Isto: „braća su došla“, „gospoda su sela“.",
+   "rec": "deca"
+  },
+  {
+   "lekcija": 7,
+   "tezina": 3,
+   "pitanje": "Koja rečenica je pravilna?",
+   "odgovori": [
+    "Pet učenika je došlo.",
+    "Pet učenika su došli.",
+    "Pet učenika su došlo.",
+    "Pet učenika je došli."
+   ],
+   "zanimljivost": "Uz brojeve od pet naviše (i uz „mnogo“, „malo“, „nekoliko“) predikat stoji u 3. licu jednine srednjeg roda: „Mnogo ljudi je čekalo.“",
+   "rec": "broj"
+  },
+  {
+   "lekcija": 7,
+   "tezina": 3,
+   "pitanje": "Koja rečenica je pravilna?",
+   "odgovori": [
+    "Dva učenika su došla.",
+    "Dva učenika je došlo.",
+    "Dva učenika su došli.",
+    "Dva učenika je došao."
+   ],
+   "zanimljivost": "Uz brojeve dva, tri, četiri imenica muškog roda dobija nastavak -a, a radni pridev se slaže sa njom: „dva brata su došla“, „tri prozora su bila otvorena“.",
+   "rec": "broj"
+  },
+  {
+   "lekcija": 7,
+   "tezina": 1,
+   "pitanje": "Koja je reč kontrolor kongruencije u sintagmi „moja mlađa sestra“?",
+   "odgovori": [
+    "sestra",
+    "moja",
+    "mlađa",
+    "nijedna"
+   ],
+   "zanimljivost": "Imenica određuje rod, broj i padež, a pridevska zamenica „moja“ i pridev „mlađa“ se prema njoj ravnaju.",
+   "rec": "sestra"
+  },
+  {
+   "lekcija": 7,
+   "vrsta": "uljez",
+   "tezina": 2,
+   "pitanje": "Koja reč u sintagmi „treći veliki odmor“ NIJE kongruentna reč?",
+   "odgovori": [
+    "odmor",
+    "treći",
+    "veliki",
+    "Sve su kongruentne"
+   ],
+   "objasnjenje": "„Odmor“ je imenica – kontrolor kongruencije. Redni broj „treći“ i pridev „veliki“ slažu se sa njom.",
+   "zanimljivost": "Osnovni brojevi (osim „jedan“) ne slažu se sa imenicom kao pridevi – „pet odmora“, a ne „peti odmori“.",
+   "rec": "odmor"
+  },
+  {
+   "lekcija": 7,
+   "tezina": 2,
+   "pitanje": "Kako glasi rečenica „Nastavnik je preneo lekciju“ kad subjekat stavimo u množinu ženskog roda?",
+   "odgovori": [
+    "Nastavnice su prenele lekciju.",
+    "Nastavnice su preneli lekciju.",
+    "Nastavnice je prenela lekciju.",
+    "Nastavnice su preneo lekciju."
+   ],
+   "zanimljivost": "Menjaju se i pomoćni glagol (je → su – lice i broj) i radni pridev (preneo → prenele – rod i broj).",
+   "rec": "nastavnica"
+  },
+  {
+   "lekcija": 7,
+   "tezina": 2,
+   "pitanje": "Šta znači kada kažemo da reči „kongruiraju“?",
+   "odgovori": [
+    "Slažu se po obliku",
+    "Imaju suprotno značenje",
+    "Zvuče isto, a znače različito",
+    "Nastale su od iste osnove"
+   ],
+   "zanimljivost": "Glagol „kongruirati“ i imenica „kongruencija“ su termini; u svakodnevnom govoru kažemo jednostavno da se reči slažu.",
+   "rec": "slaganje"
+  },
+  {
+   "lekcija": 7,
+   "tezina": 3,
+   "pitanje": "U rečenici „Šoljica za kafu poigravala je u dedinoj ruci.“ u kojim kategorijama se predikat slaže sa subjektom?",
+   "odgovori": [
+    "U licu, broju i rodu",
+    "Samo u licu i broju",
+    "U rodu i padežu",
+    "Samo u rodu"
+   ],
+   "zanimljivost": "Predikat je u perfektu (poigravala je): „je“ pokazuje 3. lice jednine, a „poigravala“ ženski rod jednine – kao „šoljica“. „Za kafu“ je atribut i ne utiče na slaganje.",
+   "rec": "šoljica",
+   "mediji": {
+    "vrsta": "citat",
+    "tekst": "Šoljica za kafu poigravala je u dedinoj drhtavoj ruci."
+   }
+  },
+  {
+   "lekcija": 8,
+   "tezina": 1,
+   "pitanje": "Šta je predikatska rečenica?",
+   "odgovori": [
+    "Rečenica izgrađena oko jednog predikata",
+    "Svaka rečenica koja se završava tačkom",
+    "Rečenica koja nema subjekat",
+    "Rečenica od tačno dve reči"
+   ],
+   "zanimljivost": "Koliko predikata – toliko predikatskih rečenica. Komunikativna rečenica je zaokružena poruka između dve tačke (ili upitnika, uzvičnika) i može da sadrži više predikatskih.",
+   "rec": "predikat"
+  },
+  {
+   "lekcija": 8,
+   "tezina": 2,
+   "pitanje": "Koliko predikatskih rečenica ima u: „Kad se razboleo, prestao je da puši, ali sada je kasno.“?",
+   "odgovori": [
+    "Tri",
+    "Jedna",
+    "Dve",
+    "Četiri"
+   ],
+   "zanimljivost": "Predikati su: se razboleo, je prestao da puši (složeni predikat se broji kao jedan) i je kasno. Sve tri čine jednu komunikativnu rečenicu.",
+   "rec": "rečenica",
+   "mediji": {
+    "vrsta": "citat",
+    "tekst": "Kad se razboleo, prestao je da puši, ali sada je kasno za sve."
+   }
+  },
+  {
+   "lekcija": 8,
+   "tezina": 2,
+   "pitanje": "Koje su vrste komunikativnih rečenica po značenju?",
+   "odgovori": [
+    "Obaveštajne, upitne, uzvične, zapovedne…",
+    "Proste, proširene, složene i višestruke",
+    "Nezavisne, zavisne i umetnute rečenice",
+    "Glagolske, imenske i bezlične rečenice"
+   ],
+   "zanimljivost": "Interpunkcija prati vrstu: obaveštajna se završava tačkom, upitna upitnikom, a uzvična i zapovedna obično uzvičnikom. Intonacija upitnih rečenica je uzlazna, a obaveštajnih silazna.",
+   "rec": "rečenica"
+  },
+  {
+   "lekcija": 8,
+   "tezina": 1,
+   "pitanje": "Šta su nezavisne predikatske rečenice?",
+   "odgovori": [
+    "Rečenice koje mogu stajati i same",
+    "Rečenice koje vrše službu nekog člana",
+    "Rečenice koje nemaju predikat",
+    "Samo upitne i uzvične rečenice"
+   ],
+   "zanimljivost": "U „Pada kiša, a mi smo bez kišobrana“ obe rečenice mogu stajati odvojeno. Zavisna „…jer nemamo kišobran“ bez glavne nema smisla.",
+   "rec": "rečenica"
+  },
+  {
+   "lekcija": 8,
+   "vrsta": "spoji",
+   "tezina": 2,
+   "pitanje": "Spoji složenu rečenicu sa odnosom među nezavisnim rečenicama",
+   "parovi": [
+    [
+     "Milica sedi i sluša muziku.",
+     "Sastavni"
+    ],
+    [
+     "Trenira, ali ne igra u timu.",
+     "Suprotni"
+    ],
+    [
+     "Ili ćeš krenuti, ili ćeš kasniti.",
+     "Rastavni"
+    ]
+   ],
+   "zanimljivost": "Isti odnosi postoje među rečeničnim članovima i među rečenicama, sa istim veznicima.",
+   "rec": "odnos"
+  },
+  {
+   "lekcija": 8,
+   "tezina": 2,
+   "pitanje": "U kom su odnosu rečenice „Niti volim dosadne ljude, niti mogu s njima da se družim.“?",
+   "odgovori": [
+    "U sastavnom",
+    "U suprotnom",
+    "U rastavnom",
+    "U zavisnom"
+   ],
+   "zanimljivost": "„Niti… niti“ sabira dve odrične tvrdnje. Kada se veznik ponavlja, ispred drugog se piše zapeta.",
+   "rec": "odnos"
+  },
+  {
+   "lekcija": 8,
+   "tezina": 1,
+   "pitanje": "Koji znak stoji ispred veznika „ali“ kad povezuje dve nezavisne rečenice?",
+   "odgovori": [
+    "Zapeta",
+    "Tačka i zapeta",
+    "Crta",
+    "Dve tačke"
+   ],
+   "zanimljivost": "Pravilo važi za sve suprotne veznike: a, ali, nego, već, no – „Još je sveže, ali se toplota sve jače oseća.“",
+   "rec": "zapeta"
+  },
+  {
+   "lekcija": 8,
+   "tezina": 3,
+   "pitanje": "U kom su odnosu rečenice „Razumeo je sve, te je počeo da vežba.“?",
+   "odgovori": [
+    "U sastavnom",
+    "U suprotnom",
+    "U rastavnom",
+    "U uzročnom zavisnom"
+   ],
+   "zanimljivost": "Veznik „te“ je sastavni, ali često nosi i nijansu posledice (znači „pa zato“). Ipak, po vrsti veznika ovo je naporedni sastavni odnos.",
+   "rec": "odnos"
+  },
+  {
+   "lekcija": 8,
+   "tezina": 2,
+   "pitanje": "Kako se zove rečenica sastavljena od dve ili više nezavisnih predikatskih rečenica?",
+   "odgovori": [
+    "Nezavisnosložena rečenica",
+    "Zavisnosložena rečenica",
+    "Prosta proširena rečenica",
+    "Eliptična rečenica"
+   ],
+   "zanimljivost": "Kada jedna rečenica zavisi od druge, cela rečenica je zavisnosložena. Ima i kombinacija: nezavisne rečenice mogu imati svoje zavisne.",
+   "rec": "rečenica"
+  },
+  {
+   "lekcija": 8,
+   "tezina": 2,
+   "pitanje": "Koliko komunikativnih rečenica ima u tekstu: „Kada sam je prvi put video, sat mi je stao. Tom rečenicom počeo je priču.“?",
+   "odgovori": [
+    "Dve",
+    "Jednu",
+    "Tri",
+    "Četiri"
+   ],
+   "zanimljivost": "Komunikativne rečenice brojimo po završnim znacima, a predikatske po predikatima – ovde ih je tri: video, je stao, je počeo.",
+   "rec": "rečenica"
+  },
+  {
+   "lekcija": 8,
+   "tezina": 3,
+   "pitanje": "Šta je „Ruke uvis!“ sa stanovišta predikatske rečenice?",
+   "odgovori": [
+    "Komunikativna rečenica bez predikata",
+    "Predikatska rečenica sa imenskim predikatom",
+    "Zavisna namerna rečenica",
+    "Nezavisnosložena rečenica"
+   ],
+   "zanimljivost": "Komunikativna rečenica ne mora imati predikat – „Ruke uvis!“, „Laku noć!“, „Požar!“ su potpune poruke. Zato je važno razlikovati komunikativnu i predikatsku rečenicu.",
+   "rec": "rečenica"
+  },
+  {
+   "lekcija": 8,
+   "vrsta": "uljez",
+   "tezina": 2,
+   "pitanje": "Koji veznik NE povezuje nezavisne rečenice?",
+   "odgovori": [
+    "jer",
+    "a",
+    "ili",
+    "pa"
+   ],
+   "objasnjenje": "„Jer“ uvodi zavisnu uzročnu rečenicu. „A“, „ili“ i „pa“ su naporedni veznici – suprotni, rastavni i sastavni.",
+   "zanimljivost": "Naporedni veznici povezuju i reči i rečenice, a zavisni samo rečenice.",
+   "rec": "veznik"
+  },
+  {
+   "lekcija": 8,
+   "tezina": 1,
+   "pitanje": "Koja rečenica je upitna?",
+   "odgovori": [
+    "Da li si video moju svesku?",
+    "Pitam se gde je moja sveska.",
+    "Nađi moju svesku!",
+    "Da mi je da nađem svesku!"
+   ],
+   "zanimljivost": "Druga rečenica govori o pitanju, ali je po funkciji obaveštajna (zavisnoupitna rečenica u njoj ne menja to), pa se završava tačkom.",
+   "rec": "pitanje"
+  },
+  {
+   "lekcija": 8,
+   "tezina": 2,
+   "pitanje": "Kako se piše kraj rečenice „Pitaj ovu ženu gde je ovde biblioteka“?",
+   "odgovori": [
+    "Tačkom ili uzvičnikom",
+    "Upitnikom, jer ima reč „gde“",
+    "Trima tačkama",
+    "Upitnikom i uzvičnikom"
+   ],
+   "zanimljivost": "Rečenica je zapovedna (pitaj!), a „gde je biblioteka“ je zavisnoupitna rečenica u službi objekta. Primer je iz radne sveske.",
+   "rec": "pitanje"
+  },
+  {
+   "lekcija": 8,
+   "tezina": 1,
+   "pitanje": "Kakva je rečenica „Nek ti je srećan rođendan!“ po komunikativnoj funkciji?",
+   "odgovori": [
+    "Rečenica želje",
+    "Upitna",
+    "Obaveštajna",
+    "Zavisna uslovna"
+   ],
+   "zanimljivost": "Rečenice želje često počinju rečcom „neka“ ili veznikom „da“: „Da mi je da odem na more!“",
+   "rec": "želja"
+  },
+  {
+   "lekcija": 8,
+   "tezina": 3,
+   "pitanje": "Šta pokazuje ova rečenica: „Svi su danas spremni za čas, a jedino Nebojša nije.“?",
+   "odgovori": [
+    "Suprotni odnos sa izostavljenim delom",
+    "Rastavni odnos između dva subjekta",
+    "Zavisnu odnosnu rečenicu bez veznika",
+    "Prostu rečenicu sa dva gramatička subjekta"
+   ],
+   "zanimljivost": "Druga rečenica je skraćena: „jedino Nebojša nije (spreman)“. Ponovljeni delovi se u nezavisnosloženim rečenicama često izostavljaju.",
+   "rec": "odnos"
+  },
+  {
+   "lekcija": 9,
+   "tezina": 1,
+   "pitanje": "Šta je zavisna rečenica?",
+   "odgovori": [
+    "Rečenica u službi rečeničnog člana",
+    "Rečenica koja nema subjekat",
+    "Rečenica koja je uvek upitna",
+    "Prva rečenica u složenoj rečenici"
+   ],
+   "zanimljivost": "Zavisne rečenice „preuzimaju posao“ reči: „Vratio se kasno“ → „Vratio se kad je pala noć“. Vrstu određuju veznik, značenje i služba.",
+   "rec": "rečenica"
+  },
+  {
+   "lekcija": 9,
+   "tezina": 1,
+   "pitanje": "Koji veznici uvode izrične rečenice?",
+   "odgovori": [
+    "da i kako",
+    "jer i pošto",
+    "ako i ukoliko",
+    "iako i mada"
+   ],
+   "zanimljivost": "Izrične rečenice stoje uz glagole govorenja, mišljenja i opažanja: rekao je da…, misli da…, video je kako…",
+   "rec": "izrična"
+  },
+  {
+   "lekcija": 9,
+   "tezina": 2,
+   "pitanje": "Koju službu najčešće ima izrična rečenica?",
+   "odgovori": [
+    "Objekta",
+    "Atributa",
+    "Priloške odredbe za mesto",
+    "Imenskog dela predikata"
+   ],
+   "zanimljivost": "„Rekla je istinu“ → „Rekla je da je sve u redu.“ Šta je rekla? – zavisna rečenica zamenjuje pravi objekat.",
+   "rec": "objekat"
+  },
+  {
+   "lekcija": 9,
+   "tezina": 2,
+   "pitanje": "Kako se zove izrična rečenica uvedena sa „da li“ ili upitnom reči, npr. „Pitali su me da li idem.“?",
+   "odgovori": [
+    "Zavisnoupitna rečenica",
+    "Upitna komunikativna rečenica",
+    "Namerna rečenica",
+    "Uslovna rečenica"
+   ],
+   "zanimljivost": "Zavisnoupitna rečenica prenosi pitanje, ali sama nije pitanje – zato na kraju nema upitnika: „Reci mi kakva ti je pljeskavica.“",
+   "rec": "pitanje"
+  },
+  {
+   "lekcija": 9,
+   "tezina": 3,
+   "pitanje": "U kojoj rečenici „da“ NE uvodi izričnu rečenicu, nego je deo složenog predikata?",
+   "odgovori": [
+    "Hteo je da prošeta pored reke.",
+    "Rekla mu je da je sačeka.",
+    "Sanjala sam da letim.",
+    "Čuo sam da si se vratio."
+   ],
+   "zanimljivost": "Glagol nepotpunog značenja „hteti“ i „da prošeta“ zajedno čine jedan predikat (= hteo je prošetati). U ostalim rečenicama posle „da“ dolazi novi subjekat ili nova radnja.",
+   "rec": "predikat"
+  },
+  {
+   "lekcija": 9,
+   "tezina": 1,
+   "pitanje": "Koje reči uvode odnosne rečenice?",
+   "odgovori": [
+    "Zamenice koji, čiji, ko, što",
+    "Veznici jer, pošto, budući da",
+    "Veznici iako, mada, premda",
+    "Prilozi gde, kuda, odakle"
+   ],
+   "zanimljivost": "U vezničkoj ulozi su odnosne zamenice. One se menjaju po padežima: „knjiga koju čitam“, „drug kome sam pisao“.",
+   "rec": "odnosna"
+  },
+  {
+   "lekcija": 9,
+   "tezina": 2,
+   "pitanje": "Kada se ispred odnosne rečenice piše zapeta?",
+   "odgovori": [
+    "Kad je apozicija – dodaje podatak",
+    "Kad je atribut – izdvaja pojam",
+    "Uvek, kao ispred svake zavisne",
+    "Nikada, jer je odnosna rečenica"
+   ],
+   "zanimljivost": "„Kupio je poklon drugarici koja slavi u subotu“ (koja drugarica? – atribut, bez zapete). „Kupio je poklon najboljoj drugarici, koja slavi u subotu“ (zna se koja – dodatak, zapeta).",
+   "rec": "zapeta"
+  },
+  {
+   "lekcija": 9,
+   "tezina": 3,
+   "pitanje": "Koja rečenica je pravilno napisana?",
+   "odgovori": [
+    "Ovo je moj najstariji brat, koji živi u Nišu.",
+    "Podigao je levu ruku, koja ga boli.",
+    "Pozvali smo sve učenike, koji idu u sedmi razred.",
+    "Uzmi olovku, koja piše."
+   ],
+   "zanimljivost": "Brat je jedan i već određen („najstariji“), pa je odnosna rečenica samo dodatak – apozicija sa zapetom. U ostalim rečenicama odnosna rečenica izdvaja pojam (baš onu ruku, baš one učenike) – atribut bez zapete.",
+   "rec": "apozicija"
+  },
+  {
+   "lekcija": 9,
+   "tezina": 1,
+   "pitanje": "Koje reči uvode mesne rečenice?",
+   "odgovori": [
+    "gde, kuda, odakle",
+    "kad, dok, čim",
+    "jer, pošto, kako",
+    "ako, ukoliko, kad"
+   ],
+   "zanimljivost": "„Gde konj bude stao, tamo gradi sebi stan!“ – reči iz legende o Svetom Savi, primer iz radne sveske. Mesne rečenice su priloške odredbe za mesto.",
+   "rec": "mesto"
+  },
+  {
+   "lekcija": 9,
+   "tezina": 1,
+   "pitanje": "Kakva je zavisna rečenica „Kuda ona prođe, dugo ostaje miris parfema.“?",
+   "odgovori": [
+    "Mesna",
+    "Vremenska",
+    "Uzročna",
+    "Odnosna"
+   ],
+   "zanimljivost": "Gde ostaje miris? – kuda ona prođe. Prilog „kuda“ ovde ima vezničku ulogu.",
+   "rec": "mesto"
+  },
+  {
+   "lekcija": 9,
+   "tezina": 3,
+   "pitanje": "Koja je zavisna rečenica u „Bili smo u Beču, gde je sahranjen Vuk Karadžić.“?",
+   "odgovori": [
+    "Odnosna",
+    "Mesna",
+    "Izrična",
+    "Uzročna"
+   ],
+   "zanimljivost": "„Gde“ se ovde odnosi na imenicu „Beč“ i daje o njemu dodatni podatak – zato je to odnosna rečenica, a ne mesna. Vuk je umro u Beču 1864, a njegovi posmrtni ostaci preneti su u Beograd 1897.",
+   "rec": "odnosna",
+   "medijiOdgovora": {
+    "vrsta": "slika",
+    "src": "slike/vuk.jpg",
+    "opis": "Vuk Stefanović Karadžić"
+   }
+  },
+  {
+   "lekcija": 9,
+   "tezina": 1,
+   "pitanje": "Koji veznici uvode vremenske rečenice?",
+   "odgovori": [
+    "kad, dok, čim",
+    "da, kako, da li",
+    "jer, pošto, budući da",
+    "iako, mada, premda"
+   ],
+   "zanimljivost": "Vremenske rečenice su odredbe za vreme: „Čim se završi školska godina, počeću da volontiram.“",
+   "rec": "vreme"
+  },
+  {
+   "lekcija": 9,
+   "tezina": 1,
+   "pitanje": "Koja rečenica je vremenska?",
+   "odgovori": [
+    "Čim stigneš, javi se.",
+    "Pošto je kasno, idem kući.",
+    "Ako stigneš, javi se.",
+    "Iako je kasno, ostaću."
+   ],
+   "zanimljivost": "„Čim“ označava radnju koja neposredno prethodi drugoj. „Pošto“ je ovde uzročni veznik (znači „jer“), ali može biti i vremenski: „Pošto je ručao, legao je.“",
+   "rec": "vreme"
+  },
+  {
+   "lekcija": 9,
+   "tezina": 1,
+   "pitanje": "Kojim veznikom najčešće počinje uzročna rečenica?",
+   "odgovori": [
+    "jer",
+    "iako",
+    "ako",
+    "da bi"
+   ],
+   "zanimljivost": "Uzročne rečenice odgovaraju na pitanje zašto? i služe kao priloške odredbe za uzrok. Veznici su i pošto, kako, budući da, zato što.",
+   "rec": "uzrok"
+  },
+  {
+   "lekcija": 9,
+   "vrsta": "spoji",
+   "tezina": 2,
+   "pitanje": "Spoji veznik sa vrstom zavisne rečenice koju najčešće uvodi",
+   "parovi": [
+    [
+     "jer",
+     "Uzročna"
+    ],
+    [
+     "čim",
+     "Vremenska"
+    ],
+    [
+     "gde",
+     "Mesna"
+    ],
+    [
+     "koji",
+     "Odnosna"
+    ]
+   ],
+   "zanimljivost": "Veznik je samo putokaz: „kako“ može uvoditi izričnu, uzročnu, vremensku, poredbenu i namernu rečenicu. Zato uvek proveravamo značenje.",
+   "rec": "veznik"
+  },
+  {
+   "lekcija": 9,
+   "tezina": 3,
+   "pitanje": "Kakva je rečenica uvedena veznikom „kako“ u „Kako je bio umoran, odmah je zaspao.“?",
+   "odgovori": [
+    "Uzročna",
+    "Izrična",
+    "Poredbena",
+    "Namerna"
+   ],
+   "zanimljivost": "Zašto je zaspao? – jer je bio umoran. Isti veznik u „Gledao je kako pada sneg“ uvodi izričnu, a u „Uradi kako ti kažem“ poredbenu rečenicu.",
+   "rec": "uzrok"
+  },
+  {
+   "lekcija": 9,
+   "tezina": 2,
+   "pitanje": "Gde se piše zapeta u rečenici „Ako to nekome kažeš imaćeš problema.“?",
+   "odgovori": [
+    "Posle „kažeš“",
+    "Posle „ako“",
+    "Nigde – zapeta nije potrebna",
+    "Posle „nekome“"
+   ],
+   "zanimljivost": "Kad zavisna rečenica stoji ispred glavne, odvaja se zapetom. Kad stoji iza nje, zapeta se obično ne piše: „Imaćeš problema ako to kažeš.“",
+   "rec": "zapeta"
+  },
+  {
+   "lekcija": 9,
+   "tezina": 3,
+   "pitanje": "Koja odnosna rečenica ima službu subjekta?",
+   "odgovori": [
+    "Ko rano rani, dve sreće grabi.",
+    "Volim ljude koji su iskreni.",
+    "Video sam kuću čiji je krov crven.",
+    "Ovo je grad u kome sam rođen."
+   ],
+   "zanimljivost": "Ko grabi dve sreće? – ko rano rani. U ostalim primerima odnosna rečenica bliže određuje imenicu (ljude, kuću, grad) – to su atributi.",
+   "rec": "subjekat"
+  },
+  {
+   "lekcija": 9,
+   "tezina": 2,
+   "pitanje": "Kakva je rečenica „Sećam se kako smo se rastali.“?",
+   "odgovori": [
+    "Izrična u službi objekta",
+    "Vremenska u službi odredbe",
+    "Poredbena",
+    "Uzročna"
+   ],
+   "zanimljivost": "Čega se sećam? – kako smo se rastali. Izrične rečenice stoje uz glagole sećanja, govorenja i opažanja.",
+   "rec": "izrična"
+  },
+  {
+   "lekcija": 10,
+   "tezina": 1,
+   "pitanje": "Koji veznici uvode uslovne rečenice?",
+   "odgovori": [
+    "ako, ukoliko, kad, da",
+    "jer, pošto, kako",
+    "iako, mada, premda",
+    "tako da, toliko da"
+   ],
+   "zanimljivost": "Uslovne rečenice su priloške odredbe za uslov: „Ako bude lepo vreme, idemo na izlet.“ Uz veznik „da“ uslov je obično neostvariv: „Da sam ptica, leteo bih.“",
+   "rec": "uslov"
+  },
+  {
+   "lekcija": 10,
+   "tezina": 2,
+   "pitanje": "Kakva je rečenica „Da sam znao, došao bih ranije.“?",
+   "odgovori": [
+    "Uslovna",
+    "Izrična",
+    "Namerna",
+    "Posledična"
+   ],
+   "zanimljivost": "Uslov se nije ostvario (nisam znao), pa ni posledica (nisam došao ranije). U glavnoj rečenici je potencijal.",
+   "rec": "uslov"
+  },
+  {
+   "lekcija": 10,
+   "tezina": 1,
+   "pitanje": "Šta kazuje namerna rečenica?",
+   "odgovori": [
+    "Cilj radnje",
+    "Uzrok radnje",
+    "Vreme radnje",
+    "Mesto radnje"
+   ],
+   "zanimljivost": "Namerna rečenica odgovara na pitanje zašto? u smislu radi čega? – „Došao je da mi pomogne“, „Ustao je rano kako bi stigao na voz.“",
+   "rec": "namera"
+  },
+  {
+   "lekcija": 10,
+   "tezina": 2,
+   "pitanje": "Koji oblici se javljaju u namernim rečenicama?",
+   "odgovori": [
+    "Prezent i potencijal",
+    "Aorist i imperfekat",
+    "Imperativ i aorist",
+    "Futur drugi i perfekat"
+   ],
+   "zanimljivost": "Namerne rečenice uvode samo dva veznika – da i kako: „…da pomogne“, „…da bi pomogao“, „…kako bi pomogao“. Odrično: „da ne bi zakasnio“.",
+   "rec": "namera"
+  },
+  {
+   "lekcija": 10,
+   "tezina": 1,
+   "pitanje": "Koji veznik uvodi posledičnu rečenicu?",
+   "odgovori": [
+    "tako da",
+    "jer",
+    "kako bi",
+    "iako"
+   ],
+   "zanimljivost": "Posledičnu rečenicu sa „da“ često najavljuju reči tako, toliko, takav u glavnoj rečenici: „Bio je toliko umoran da je zaspao u autobusu.“",
+   "rec": "posledica"
+  },
+  {
+   "lekcija": 10,
+   "tezina": 3,
+   "pitanje": "Kakva je rečenica „Toliko je vikao da je promukao.“?",
+   "odgovori": [
+    "Posledična",
+    "Namerna",
+    "Izrična",
+    "Uzročna"
+   ],
+   "zanimljivost": "Promuklost je posledica vikanja, a nije njegov cilj. Proba: namerna rečenica bi značila da je vikao kako bi promukao.",
+   "rec": "posledica"
+  },
+  {
+   "lekcija": 10,
+   "tezina": 1,
+   "pitanje": "Kojim veznicima počinju dopusne rečenice?",
+   "odgovori": [
+    "iako, mada, premda",
+    "ako, ukoliko",
+    "jer, pošto",
+    "kao što, nego što"
+   ],
+   "zanimljivost": "Dopusna rečenica kazuje okolnost uprkos kojoj se radnja ipak vrši: „Iako je padala kiša, utakmica je odigrana.“",
+   "rec": "dopuštanje"
+  },
+  {
+   "lekcija": 10,
+   "tezina": 1,
+   "pitanje": "Koja rečenica je dopusna?",
+   "odgovori": [
+    "Otišao je na trening, mada ga je grlo bolelo.",
+    "Otišao je na trening jer ga ništa nije bolelo.",
+    "Otišao je na trening da bi ojačao.",
+    "Otišao je na trening kad je prestala kiša."
+   ],
+   "zanimljivost": "Bol u grlu je okolnost koja bi mogla da spreči odlazak, ali ga nije sprečila – to je suština dopuštanja.",
+   "rec": "dopuštanje"
+  },
+  {
+   "lekcija": 10,
+   "tezina": 1,
+   "pitanje": "Šta kazuje poredbena rečenica?",
+   "odgovori": [
+    "Poređenje dve radnje",
+    "Uzrok glavne radnje",
+    "Posledicu glavne radnje",
+    "Mesto vršenja radnje"
+   ],
+   "zanimljivost": "Veznici su kao što, kako, nego što, kao da, koliko: „Bilo je lakše nego što smo mislili.“, „Ponaša se kao da se ništa nije desilo.“",
+   "rec": "poređenje"
+  },
+  {
+   "lekcija": 10,
+   "vrsta": "spoji",
+   "tezina": 2,
+   "pitanje": "Spoji zavisnu rečenicu sa njenom vrstom",
+   "parovi": [
+    [
+     "…da bi stigao na voz.",
+     "Namerna"
+    ],
+    [
+     "…tako da je zakasnio.",
+     "Posledična"
+    ],
+    [
+     "…ako bude vremena.",
+     "Uslovna"
+    ],
+    [
+     "…iako je bio umoran.",
+     "Dopusna"
+    ]
+   ],
+   "zanimljivost": "Namera i posledica se lako zamene: namera je ono čemu se teži, a posledica ono što se stvarno desilo.",
+   "rec": "namera"
+  },
+  {
+   "lekcija": 10,
+   "vrsta": "uljez",
+   "tezina": 1,
+   "pitanje": "Koji veznik NE uvodi dopusnu rečenicu?",
+   "odgovori": [
+    "ukoliko",
+    "iako",
+    "mada",
+    "premda"
+   ],
+   "objasnjenje": "„Ukoliko“ je uslovni veznik (znači „ako“). „Iako“, „mada“ i „premda“ su dopusni.",
+   "zanimljivost": "Dopusni veznik „premda“ danas se češće sreće u pisanom jeziku nego u govoru.",
+   "rec": "veznik"
+  },
+  {
+   "lekcija": 10,
+   "tezina": 3,
+   "pitanje": "Kakva je rečenica „Kad bih imao vremena, išao bih s vama.“?",
+   "odgovori": [
+    "Uslovna",
+    "Vremenska",
+    "Namerna",
+    "Izrična"
+   ],
+   "zanimljivost": "„Kad“ uz potencijal ima uslovno značenje (kao „ako bih imao“). Zato se vrsta rečenice ne određuje samo po vezniku nego i po glagolskom obliku i značenju.",
+   "rec": "uslov"
+  },
+  {
+   "lekcija": 10,
+   "tezina": 2,
+   "pitanje": "Koju službu ima uslovna rečenica?",
+   "odgovori": [
+    "Priloške odredbe za uslov",
+    "Pravog objekta",
+    "Atributa uz imenicu",
+    "Gramatičkog subjekta"
+   ],
+   "zanimljivost": "Pod kojim uslovom? – „Ako budeš vredno učio, upisaćeš željenu školu.“ U udžbeniku: uslovne rečenice uvode ako, ukoliko, kad, da.",
+   "rec": "uslov"
+  },
+  {
+   "lekcija": 10,
+   "tezina": 3,
+   "pitanje": "Kakva je rečenica „Ponašao se kao da se ništa nije desilo.“?",
+   "odgovori": [
+    "Poredbena",
+    "Uzročna",
+    "Dopusna",
+    "Posledična"
+   ],
+   "zanimljivost": "„Kao da“ poredi stvarno ponašanje sa zamišljenom situacijom. Poredbene rečenice su priloške odredbe (ili dopune) za poređenje.",
+   "rec": "poređenje"
+  },
+  {
+   "lekcija": 10,
+   "tezina": 3,
+   "pitanje": "U rečenici „Rekla je da dođem i da ponesem knjigu.“ u kom su odnosu zavisne rečenice?",
+   "odgovori": [
+    "U sastavnom",
+    "U suprotnom",
+    "U rastavnom",
+    "U uzročnom"
+   ],
+   "zanimljivost": "I zavisne rečenice mogu biti međusobno naporedne: obe su izrične i obe su objekti glagola „rekla je“, a povezane su sastavnim veznikom „i“.",
+   "rec": "odnos"
+  },
+  {
+   "lekcija": 10,
+   "tezina": 1,
+   "pitanje": "Koja je rečenica namerna?",
+   "odgovori": [
+    "Uzeo je kišobran da ne bi pokisao.",
+    "Uzeo je kišobran jer je padala kiša.",
+    "Uzeo je kišobran iako nije padala kiša.",
+    "Uzeo je kišobran kad je izašao."
+   ],
+   "zanimljivost": "Cilj je da ne pokisne. Odrične namerne rečenice imaju oblik „da ne bi“ + radni glagolski pridev.",
+   "rec": "namera"
+  },
+  {
+   "lekcija": 10,
+   "tezina": 3,
+   "pitanje": "Koji rečenični član može biti iskazan rečju, predloško-padežnom konstrukcijom, sintagmom ili rečenicom?",
+   "odgovori": [
+    "Gotovo svaki, npr. odredba za vreme",
+    "Samo subjekat",
+    "Samo predikat",
+    "Nijedan – član je uvek jedna reč"
+   ],
+   "zanimljivost": "Odredba za vreme: „Sutra…“ (reč), „U ponedeljak…“ (predloško-padežna konstrukcija), „Sledećeg ponedeljka…“ (sintagma), „Kad se vratim…“ (rečenica).",
+   "rec": "odredba"
+  },
+  {
+   "lekcija": 10,
+   "tezina": 2,
+   "pitanje": "Koja rečenica je poredbena?",
+   "odgovori": [
+    "Bilo je lakše nego što smo očekivali.",
+    "Bilo je lako jer smo vežbali.",
+    "Bilo je lako, iako se nismo spremali.",
+    "Bilo je lako, tako da smo završili ranije."
+   ],
+   "zanimljivost": "Veznik „nego što“ uvodi poređenje nejednakosti uz komparativ (lakše, bolje, više).",
+   "rec": "poređenje"
+  },
+  {
+   "lekcija": 11,
+   "tezina": 1,
+   "pitanje": "Šta je akcenat?",
+   "odgovori": [
+    "Naglasak u reči",
+    "Znak interpunkcije",
+    "Pauza između reči",
+    "Vrsta glasovne promene"
+   ],
+   "zanimljivost": "Akcentovani slog je onaj koji je naglašen. Reč može imati samo jedan akcenat, a neke kratke reči (je, sam, li, se) nemaju svoj – one se „naslanjaju“ na susednu reč i zovu se klitike.",
+   "rec": "akcenat"
+  },
+  {
+   "lekcija": 11,
+   "tezina": 1,
+   "pitanje": "Koliko akcenata ima srpski književni jezik?",
+   "odgovori": [
+    "Četiri",
+    "Dva",
+    "Tri",
+    "Šest"
+   ],
+   "zanimljivost": "Akcenti se razlikuju po trajanju (kratki i dugi) i po tonu (silazni i uzlazni): kratkosilazni, kratkouzlazni, dugosilazni i dugouzlazni. U 7. razredu se uče dugi akcenti.",
+   "rec": "akcenat"
+  },
+  {
+   "lekcija": 11,
+   "tezina": 1,
+   "pitanje": "Na kom slogu višesložne reči NE može stajati akcenat?",
+   "odgovori": [
+    "Na poslednjem",
+    "Na prvom",
+    "Na drugom",
+    "Na pretposlednjem"
+   ],
+   "zanimljivost": "Zato se kaže da je srpski akcenat „uslovno slobodan“: može biti na bilo kom slogu, osim na poslednjem. U francuskom je, nasuprot tome, akcenat uvek na poslednjem slogu, a u češkom na prvom.",
+   "rec": "slog"
+  },
+  {
+   "lekcija": 11,
+   "tezina": 1,
+   "pitanje": "Kakve akcente mogu imati jednosložne reči?",
+   "odgovori": [
+    "Samo silazne",
+    "Samo uzlazne",
+    "I silazne i uzlazne",
+    "Nemaju akcenat"
+   ],
+   "zanimljivost": "Za uzlaznu intonaciju potrebna su bar dva sloga: naglašeni i sledeći, koji zadržava istu ili višu visinu tona. Zato su sok, sir, med i grad sa silaznim akcentom.",
+   "rec": "akcenat"
+  },
+  {
+   "lekcija": 11,
+   "tezina": 2,
+   "pitanje": "Gde se u višesložnoj reči mogu naći silazni akcenti?",
+   "odgovori": [
+    "Samo na prvom slogu",
+    "Samo na poslednjem slogu",
+    "Na bilo kom slogu",
+    "Samo u sredini reči"
+   ],
+   "zanimljivost": "Uzlazni akcenti mogu stajati na prvom ili unutrašnjem slogu, ali nikad na poslednjem. Kada je akcenat u sredini reči, on je sigurno uzlazni.",
+   "rec": "akcenat"
+  },
+  {
+   "lekcija": 11,
+   "tezina": 2,
+   "pitanje": "Šta se dešava sa glasom kod dugosilaznog akcenta?",
+   "odgovori": [
+    "Ton se podigne, pa spusti",
+    "Ton stalno raste",
+    "Ton ostaje potpuno isti",
+    "Slog se izgovara šapatom"
+   ],
+   "zanimljivost": "Udžbenik savetuje vežbu: glasno izgovaraj naglašeni slog dugo, prvo dižući pa spuštajući ton (sȗnce), a zatim tako da ton ostane visok i na sledećem slogu (rúka).",
+   "rec": "ton"
+  },
+  {
+   "lekcija": 11,
+   "vrsta": "spoji",
+   "tezina": 3,
+   "pitanje": "Spoji akcenat sa njegovim znakom",
+   "parovi": [
+    [
+     "Dugosilazni",
+     "ȃ (obrnuti polukrug)"
+    ],
+    [
+     "Dugouzlazni",
+     "á (kosa crta udesno)"
+    ],
+    [
+     "Kratkouzlazni",
+     "à (kosa crta ulevo)"
+    ],
+    [
+     "Kratkosilazni",
+     "ȁ (dvostruka crta)"
+    ]
+   ],
+   "zanimljivost": "Akcenatske znake je u srpski uveo Vuk Karadžić u „Srpskom rječniku“ 1818. godine, a Đura Daničić ih je kasnije detaljno opisao. U običnom pisanju se ne stavljaju.",
+   "rec": "akcenat",
+   "medijiOdgovora": {
+    "vrsta": "slika",
+    "src": "slike/danicic.jpg",
+    "opis": "Đura Daničić, jezikoslovac i Vukov saradnik"
+   }
+  },
+  {
+   "lekcija": 11,
+   "tezina": 2,
+   "pitanje": "Koji akcenat ima reč „sunce“?",
+   "odgovori": [
+    "Dugosilazni",
+    "Dugouzlazni",
+    "Kratkouzlazni",
+    "Kratkosilazni"
+   ],
+   "zanimljivost": "Sȗnce, grȃd, mȇd, sȋr – dugosilazni akcenat je na prvom (ili jedinom) slogu. Za razliku od njih, rúka i žéna imaju dugouzlazni.",
+   "rec": "sunce"
+  },
+  {
+   "lekcija": 11,
+   "tezina": 3,
+   "pitanje": "Koji akcenat ima reč „ruka“?",
+   "odgovori": [
+    "Dugouzlazni",
+    "Dugosilazni",
+    "Kratkosilazni",
+    "Nema akcenat"
+   ],
+   "zanimljivost": "Kod dugouzlaznog akcenta ton se penje i zadržava na sledećem slogu: rú-ka. U akuzativu se akcenat menja: rȗku – i to je dugosilazni.",
+   "rec": "ruka"
+  },
+  {
+   "lekcija": 11,
+   "tezina": 3,
+   "pitanje": "Po čemu se razlikuju „grad“ (naselje) i „grad“ (led koji pada)?",
+   "odgovori": [
+    "Po akcentu – dugom i kratkom",
+    "Po broju slogova",
+    "Po pisanju",
+    "Ne razlikuju se ni po čemu"
+   ],
+   "zanimljivost": "Grȃd (naselje) ima dugosilazni, a grȁd (led) kratkosilazni akcenat. Slično su pȃs (kaiš) i pȁs (životinja) – akcenat menja značenje!",
+   "rec": "grad"
+  },
+  {
+   "lekcija": 11,
+   "tezina": 1,
+   "pitanje": "Kako se zove slog koji nosi akcenat?",
+   "odgovori": [
+    "Akcentovani slog",
+    "Zatvoreni slog",
+    "Otvoreni slog",
+    "Nenaglašeni slog"
+   ],
+   "zanimljivost": "Slogovi bez akcenta se zovu neakcentovani. Iza akcenta slog može biti dug – to je postakcenatska dužina (u reči jùnāk).",
+   "rec": "slog"
+  },
+  {
+   "lekcija": 11,
+   "tezina": 2,
+   "pitanje": "Koja tvrdnja o akcentima je tačna?",
+   "odgovori": [
+    "Uzlazne akcente imaju samo višesložne reči",
+    "Jednosložne reči nemaju akcenat",
+    "Poslednji slog uvek nosi akcenat",
+    "Silazni akcenat može biti u sredini reči"
+   ],
+   "zanimljivost": "Pravila u kratko: silazni – samo na prvom slogu; uzlazni – nikad na poslednjem i nikad u jednosložnoj reči.",
+   "rec": "akcenat"
+  },
+  {
+   "lekcija": 11,
+   "vrsta": "uljez",
+   "tezina": 3,
+   "pitanje": "Koja reč po trajanju akcenta NE pripada ostalima?",
+   "odgovori": [
+    "pas (životinja)",
+    "sok",
+    "sir",
+    "med"
+   ],
+   "objasnjenje": "Pȁs (životinja) ima kratak akcenat, a sȏk, sȋr i mȇd dug – sve četiri reči su jednosložne, pa im je akcenat silazan.",
+   "zanimljivost": "Dužinu možeš da proveriš ako reč „razvučeš“ – med i sok mogu da traju, a pas zvuči odsečeno.",
+   "rec": "akcenat"
+  },
+  {
+   "lekcija": 11,
+   "tezina": 2,
+   "pitanje": "Koja dva svojstva određuju vrstu akcenta?",
+   "odgovori": [
+    "Trajanje i ton (intonacija)",
+    "Jačina i brzina",
+    "Boja glasa i visina",
+    "Broj slogova i dužina reči"
+   ],
+   "zanimljivost": "Kao i rečenica, i reč ima svoju intonaciju: kod upitnih rečenica ton raste, kod obaveštajnih pada. Isto važi za uzlazne i silazne akcente.",
+   "rec": "ton"
+  },
+  {
+   "lekcija": 11,
+   "tezina": 3,
+   "pitanje": "Zašto se kaže da je srpski akcenat „slobodan“, ali „uslovno“?",
+   "odgovori": [
+    "Može biti na svakom slogu osim poslednjeg",
+    "Uvek je na prvom slogu, ali može biti dug",
+    "Svako ga može staviti gde želi",
+    "Zavisi samo od toga koliko je reč duga"
+   ],
+   "zanimljivost": "U češkom i mađarskom akcenat je vezan za prvi slog, u poljskom za pretposlednji. Srpski spada u jezike sa pokretnim akcentom, koji se menja i pri promeni reči (rúka – rȗku).",
+   "rec": "akcenat"
+  },
+  {
+   "lekcija": 11,
+   "tezina": 2,
+   "pitanje": "Koja vrsta akcenta se NE može naći na unutrašnjem slogu reči?",
+   "odgovori": [
+    "Silazni",
+    "Uzlazni",
+    "Ni jedan ni drugi",
+    "Oba podjednako"
+   ],
+   "zanimljivost": "Unutrašnji slogovi mogu imati samo uzlazni akcenat. Silazni akcenat je „vezan“ za početak reči.",
+   "rec": "akcenat"
+  },
+  {
+   "lekcija": 12,
+   "tezina": 1,
+   "pitanje": "Kako se piše odrična rečca „ne“ uz većinu glagola?",
+   "odgovori": [
+    "Odvojeno: ne znam",
+    "Sastavljeno: neznam",
+    "Sa crticom: ne-znam",
+    "Kako izgovaramo"
+   ],
+   "zanimljivost": "Sastavljeno se piše samo u nekoliko oblika: nisam (od jesam), neću (od hteti), nemam (od imati) i nemoj. „Ne mogu“, „ne znam“ i „ne želim“ – uvek odvojeno.",
+   "rec": "odrična"
+  },
+  {
+   "lekcija": 12,
+   "vrsta": "uljez",
+   "tezina": 1,
+   "pitanje": "Koji oblik se piše SASTAVLJENO, za razliku od ostalih?",
+   "odgovori": [
+    "nemam",
+    "ne znam",
+    "ne mogu",
+    "ne idem"
+   ],
+   "objasnjenje": "„Nemam“ je odrični oblik glagola „imati“ i piše se kao jedna reč, kao i nisam, neću i nemoj. Uz ostale glagole „ne“ se piše odvojeno.",
+   "zanimljivost": "„Nemogu“ i „neznam“ su među najčešćim greškama u porukama na telefonu.",
+   "rec": "odrična"
+  },
+  {
+   "lekcija": 12,
+   "tezina": 2,
+   "pitanje": "Koji oblik radnog glagolskog prideva je pravilan?",
+   "odgovori": [
+    "video",
+    "vidio",
+    "vidijo",
+    "vidjo"
+   ],
+   "zanimljivost": "Između i i o na kraju radnog prideva muškog roda ne piše se j: video, mislio, slomio, slavio, probudio. „Vidio“ je ijekavski oblik.",
+   "rec": "pridev"
+  },
+  {
+   "lekcija": 12,
+   "tezina": 1,
+   "pitanje": "Kako je pravilno?",
+   "odgovori": [
+    "Nisam stigao da ih proverim.",
+    "Nisam stigo da ih proverim.",
+    "Nisam stig’o da ih proverim.",
+    "Nisam stigl da ih proverim."
+   ],
+   "zanimljivost": "Završno -ao (i -eo) u radnom pridevu se u pisanom jeziku ne skraćuje u -o: rekao, izdržao, stigao. „Reko“ i „stigo“ su govorni oblici.",
+   "rec": "pridev"
+  },
+  {
+   "lekcija": 12,
+   "tezina": 1,
+   "pitanje": "Kako se pravilno piše futur prvi glagola „pevati“ (1. lice jednine, glagol na prvom mestu)?",
+   "odgovori": [
+    "pevaću",
+    "pevat ću",
+    "pevati ću",
+    "peva ću"
+   ],
+   "zanimljivost": "Kod glagola na -ti, kada pomoćni glagol dođe iza, gubi se završno -ti i sve se piše zajedno: pisaću, nosiću, kupićeš.",
+   "rec": "futur"
+  },
+  {
+   "lekcija": 12,
+   "tezina": 1,
+   "pitanje": "Kako se pravilno piše futur prvi glagola „doći“?",
+   "odgovori": [
+    "doći ću",
+    "doćiću",
+    "doću",
+    "doć ću"
+   ],
+   "zanimljivost": "Kod glagola na -ći pomoćni glagol se uvek piše odvojeno – i ispred i iza: „doći ću“, „ja ću doći“, „reći ćemo“, „naći ćeš“.",
+   "rec": "futur"
+  },
+  {
+   "lekcija": 12,
+   "tezina": 1,
+   "pitanje": "Kako glasi 1. lice jednine aorista glagola „reći“?",
+   "odgovori": [
+    "rekoh",
+    "reko",
+    "rekok",
+    "reći"
+   ],
+   "zanimljivost": "U 1. licu jednine aorista uvek se piše -h: čuh, padoh, sedoh, uzeh, rekoh, bih. U govoru se h često ne čuje, pa nastaju greške.",
+   "rec": "aorist"
+  },
+  {
+   "lekcija": 12,
+   "tezina": 3,
+   "pitanje": "Koja rečenica je pravilno napisana?",
+   "odgovori": [
+    "Ja bih ti pomogla, ali bismo onda zakasnili.",
+    "Ja bi ti pomogla, ali bi smo onda zakasnili.",
+    "Ja bih ti pomogla, ali bi smo onda zakasnili.",
+    "Ja bi ti pomogla, ali bismo onda zakasnili."
+   ],
+   "zanimljivost": "Udžbenik ističe da se najviše grešaka pravi u 1. licu jednine (bih) i množine (bismo), i u 2. licu množine (biste).",
+   "rec": "potencijal"
+  },
+  {
+   "lekcija": 12,
+   "tezina": 2,
+   "pitanje": "Kako se pravilno piše imperativ glagola „prebrojati“?",
+   "odgovori": [
+    "prebroj, prebrojte",
+    "prebroji, prebrojite",
+    "prebrojaj, prebrojajte",
+    "prebrojij, prebrojijte"
+   ],
+   "zanimljivost": "Kad osnova sadrži j, u imperativu nema nastavka -i: (o)boj, (po)doj, iskroj, (pre)broj.",
+   "rec": "imperativ"
+  },
+  {
+   "lekcija": 12,
+   "tezina": 3,
+   "pitanje": "Koji glagolski prilog sadašnji je pravilan?",
+   "odgovori": [
+    "prepisujući",
+    "prepisivajući",
+    "prepisavajući",
+    "prepisujuć"
+   ],
+   "zanimljivost": "Greške nastaju kad se pogrešno odredi 3. lice množine prezenta: oni prepisuju → prepisujući; oni poznaju → poznajući; oni plaču → plačući.",
+   "rec": "prilog"
+  },
+  {
+   "lekcija": 12,
+   "tezina": 2,
+   "pitanje": "Gde ide zapeta u rečenici „Slušajući grčku muziku razmišljala je o letovanju.“?",
+   "odgovori": [
+    "Posle „muziku“",
+    "Posle „slušajući“",
+    "Posle „razmišljala je“",
+    "Nigde"
+   ],
+   "zanimljivost": "Glagolski prilog (sam ili sa svojim dopunama) na početku rečenice odvaja se zapetom od predikata. Ne odvaja se kad stoji iza predikata sa kojim je tesno vezan: „Razmišljala je žmureći.“",
+   "rec": "zapeta",
+   "mediji": {
+    "vrsta": "citat",
+    "tekst": "Slušajući grčku muziku razmišljala je o letovanju."
+   }
+  },
+  {
+   "lekcija": 12,
+   "tezina": 3,
+   "pitanje": "Koja rečenica je pravilno napisana?",
+   "odgovori": [
+    "Naš profesor je, objašnjavajući lekciju, ponavljao važne stvari.",
+    "Naš profesor je objašnjavajući lekciju, ponavljao važne stvari.",
+    "Naš profesor je, objašnjavajući lekciju ponavljao važne stvari.",
+    "Naš profesor, je objašnjavajući lekciju ponavljao važne stvari."
+   ],
+   "zanimljivost": "Kada je glagolski prilog sa dopunama umetnut u rečenicu, odvaja se zapetama s obe strane – kao u zagradi.",
+   "rec": "zapeta"
+  },
+  {
+   "lekcija": 12,
+   "tezina": 2,
+   "pitanje": "Koji je pravilan trpni pridev?",
+   "odgovori": [
+    "unesen",
+    "unešen",
+    "unesan",
+    "unosen"
+   ],
+   "zanimljivost": "Prezent „unesemo“ ima osnovu na -e, pa nema jotovanja: unesen, donesen, dovezen, izvezen. Ali „unosimo“ → unošen, jer se osnova završava na -i.",
+   "rec": "jotovanje"
+  },
+  {
+   "lekcija": 12,
+   "tezina": 3,
+   "pitanje": "Koji oblik je pravilan u 3. licu jednine perfekta povratnog glagola?",
+   "odgovori": [
+    "Vuk se obukao.",
+    "Vuk se je obukao.",
+    "Vuk je se obukao.",
+    "Vuk se obuk’o."
+   ],
+   "zanimljivost": "Kod povratnih glagola u 3. licu jednine perfekta pomoćni glagol „je“ se izostavlja: obukao se, nasmejala se, okupalo se.",
+   "rec": "perfekat"
+  },
+  {
+   "lekcija": 12,
+   "tezina": 3,
+   "pitanje": "U kojoj rečenici je upotrebljen futur drugi (a ne potencijal)?",
+   "odgovori": [
+    "Ako budemo zamolili nastavnika, odložiće test.",
+    "Ako bismo zamolili nastavnika, odložio bi test.",
+    "Kad bismo ga zamolili, odložio bi test.",
+    "Zamolili bismo nastavnika da odloži test."
+   ],
+   "zanimljivost": "Futur II čine budem, budeš… i radni pridev, a potencijal bih, bi… i radni pridev. Obe konstrukcije su ispravne, ali znače različito: prva – realna buduća mogućnost, druga – zamišljena.",
+   "rec": "futur"
+  },
+  {
+   "lekcija": 12,
+   "tezina": 2,
+   "pitanje": "Koji niz sadrži samo pravilno napisane oblike?",
+   "odgovori": [
+    "nisam, neću, ne mogu, ne idi",
+    "nisam, ne ću, nemogu, ne idi",
+    "ne sam, neću, ne mogu, neidi",
+    "nisam, neću, nemogu, neidi"
+   ],
+   "zanimljivost": "Isto važi i u imperativu: „ne idi“, „ne pij“ – odvojeno, ali „nemoj“ – sastavljeno.",
+   "rec": "odrična"
+  },
+  {
+   "lekcija": 12,
+   "tezina": 2,
+   "pitanje": "Koji glagolski prilog prošli je pravilno napisan uz rečcu „ne“?",
+   "odgovori": [
+    "ne pogledavši",
+    "nepogledavši",
+    "ne-pogledavši",
+    "nepogledav"
+   ],
+   "zanimljivost": "Kao i uz ostale glagolske oblike, „ne“ uz glagolske priloge pišemo odvojeno: ne znajući, ne videvši, ne rekavši ni reč.",
+   "rec": "odrična"
+  },
+  {
+   "lekcija": 13,
+   "tezina": 1,
+   "pitanje": "Kako se pravilno piše redni broj arapskim ciframa?",
+   "odgovori": [
+    "7. razred",
+    "7-mi razred",
+    "7 razred",
+    "7-i razred"
+   ],
+   "zanimljivost": "Tačka iza arapske cifre pokazuje da je broj redni: 7. razred, 5. avgust, 31. strana. Oblici „15-ti“ i „7-mi“ su nepravilni.",
+   "rec": "tačka"
+  },
+  {
+   "lekcija": 13,
+   "tezina": 2,
+   "pitanje": "Iza čega se NE piše tačka?",
+   "odgovori": [
+    "Iza naslova",
+    "Iza obaveštajne rečenice",
+    "Iza rednog broja u arapskim ciframa",
+    "Iza skraćenice „npr.“"
+   ],
+   "zanimljivost": "Tačka se ne stavlja ni iza potpisa ni iza rimskih brojeva: XX vek, Petar I Karađorđević.",
+   "rec": "tačka"
+  },
+  {
+   "lekcija": 13,
+   "tezina": 2,
+   "pitanje": "Kada se piše tačka i zapeta (;)?",
+   "odgovori": [
+    "Između dužih delova nabrajanja",
+    "Na kraju svake upitne rečenice",
+    "Ispred upravnog govora u dijalogu",
+    "Između imena i prezimena autora"
+   ],
+   "zanimljivost": "Tačka i zapeta je „jača od zapete, a slabija od tačke“: koristi se kad delovi nabrajanja već sadrže zapete ili su sami duge rečenice.",
+   "rec": "zapeta"
+  },
+  {
+   "lekcija": 13,
+   "tezina": 1,
+   "pitanje": "Šta najavljuju dve tačke u rečenici „Kupili smo: hleb, jaja i sir.“?",
+   "odgovori": [
+    "Nabrajanje",
+    "Upravni govor",
+    "Pitanje",
+    "Nedovršenu misao"
+   ],
+   "zanimljivost": "Dve tačke najavljuju i upravni govor („Ana je rekla: …“), dolaze iza imena u dijalogu i drami, a stoje i između brojeva u odnosu (rezultat 3 : 2).",
+   "rec": "nabrajanje"
+  },
+  {
+   "lekcija": 13,
+   "tezina": 2,
+   "pitanje": "Zašto je reč „pametan“ u navodnicima u rečenici: Baš si „pametan“, opet si zaboravio ključ.?",
+   "odgovori": [
+    "Da nagovesti suprotno značenje",
+    "Jer je to upravni govor drugog lica",
+    "Jer je reč preuzeta iz stranog jezika",
+    "Jer je to naziv umetničkog dela"
+   ],
+   "zanimljivost": "Navodnici još obeležavaju upravni govor i nazive dela, ustanova i manifestacija: predstava „Gospođa ministarka“, Gimnazija „Patrijarh Pavle“.",
+   "rec": "navodnici",
+   "medijiOdgovora": {
+    "vrsta": "slika",
+    "src": "slike/nusic.jpg",
+    "opis": "Branislav Nušić, pisac komedije „Gospođa ministarka“"
+   }
+  },
+  {
+   "lekcija": 13,
+   "tezina": 3,
+   "pitanje": "Koji naziv se NE piše u navodnicima?",
+   "odgovori": [
+    "Crvena zvezda (klub)",
+    "roman „Na Drini ćuprija“",
+    "film „Varljivo leto ’68“",
+    "Gimnazija „Svetozar Marković“"
+   ],
+   "zanimljivost": "Opštepoznata imena klubova i ustanova ne stavljaju se u navodnike: „Večeras igraju Crvena zvezda i Partizan.“ Navodnici izostaju i kad je naziv istaknut kurzivom.",
+   "rec": "navodnici"
+  },
+  {
+   "lekcija": 13,
+   "tezina": 2,
+   "pitanje": "Koja je razlika između crte (–) i crtice (-)?",
+   "odgovori": [
+    "Crta je duža i odvaja delove rečenice",
+    "Nema razlike – to je isti znak različitog imena",
+    "Crtica je duža i stoji između dve rečenice",
+    "Crta se koristi samo u matematici, kao minus"
+   ],
+   "zanimljivost": "U udžbeniku Ana ispravlja Vuka: „To nije crta, već crtica!“ Crtica stoji u remek-delo, auto-put, veš-mašina, a crta u relaciji Beograd–Bar i za umetnute delove.",
+   "rec": "crtica"
+  },
+  {
+   "lekcija": 13,
+   "vrsta": "spoji",
+   "tezina": 2,
+   "pitanje": "Spoji primer sa znakom koji se u njemu piše",
+   "parovi": [
+    [
+     "pruga Beograd … Bar",
+     "Crta (–)"
+    ],
+    [
+     "remek … delo",
+     "Crtica (-)"
+    ],
+    [
+     "rezultat 3 … 2",
+     "Dve tačke (:)"
+    ],
+    [
+     "… ajde (izostavljeno h)",
+     "Apostrof (’)"
+    ]
+   ],
+   "zanimljivost": "Apostrof obeležava izostavljen glas, najčešće u pesmama i u prenošenju govora: „’ajde“, „rek’o“.",
+   "rec": "crtica"
+  },
+  {
+   "lekcija": 13,
+   "tezina": 2,
+   "pitanje": "Kako se pravilno piše složenica za jednu nijansu boje?",
+   "odgovori": [
+    "svetloplav",
+    "svetlo-plav",
+    "svetlo plav",
+    "svetlo–plav"
+   ],
+   "zanimljivost": "Jedna boja ili nijansa – jedna reč: svetloplav, tamnocrven, maslinastozelen. Dve boje – sa crticom: crveno-beli dres, plavo-žuta zastava.",
+   "rec": "boja"
+  },
+  {
+   "lekcija": 13,
+   "tezina": 3,
+   "pitanje": "Gde stoji zapeta u rečenici „Vuk Nikolić učenik sedmog razreda učestvovao je na olimpijadi.“?",
+   "odgovori": [
+    "Posle „Nikolić“ i „razreda“",
+    "Samo posle reči „Nikolić“",
+    "Samo posle reči „razreda“",
+    "Nigde, jer nema veznika"
+   ],
+   "zanimljivost": "„Učenik sedmog razreda“ je apozicija iza imena i odvaja se zapetama s obe strane. Ako zanimanje stoji ispred imena, zapete nema: „Profesor Petrović je došao.“",
+   "rec": "apozicija",
+   "mediji": {
+    "vrsta": "citat",
+    "tekst": "Vuk Nikolić učenik sedmog razreda učestvovao je na olimpijadi."
+   }
+  },
+  {
+   "lekcija": 13,
+   "tezina": 2,
+   "pitanje": "Kada se zavisna rečenica NE odvaja zapetom od glavne?",
+   "odgovori": [
+    "Kada stoji iza glavne rečenice",
+    "Kada stoji ispred glavne",
+    "Kada je umetnuta u glavnu",
+    "Kada je odnosna apozicija"
+   ],
+   "zanimljivost": "„Ana je čula da Vuk ide na utakmicu“ – bez zapete. Ali: „Da Vuk ide na utakmicu, Ana je čula od drugova“ – sa zapetom, jer je zavisna ispred.",
+   "rec": "zapeta"
+  },
+  {
+   "lekcija": 13,
+   "tezina": 2,
+   "pitanje": "Kako se piše umetnuta rečenica?",
+   "odgovori": [
+    "Odvaja se zapetama s obe strane",
+    "Piše se u navodnicima",
+    "Ne odvaja se ničim",
+    "Odvaja se tačkom i zapetom"
+   ],
+   "zanimljivost": "„Mama će, ako bude imala vremena, napraviti kolač.“ Umesto zapeta može stajati i crta: „Koliko god se trudila – a trudila se – nije uspevala.“",
+   "rec": "zapeta"
+  },
+  {
+   "lekcija": 13,
+   "tezina": 3,
+   "pitanje": "Koji pisac je poznat po neobičnoj, ličnoj upotrebi zapete u „Lamentu nad Beogradom“ i „Sumatri“?",
+   "odgovori": [
+    "Miloš Crnjanski",
+    "Branislav Nušić",
+    "Jovan Jovanović Zmaj",
+    "Dobrica Ćosić"
+   ],
+   "zanimljivost": "Zapete u književnim delima nisu uvek obavezne – pisac ih koristi da uspori ritam ili nešto naglasi. Crnjanski je za svoj pesnički pravac (sumatraizam) dao ime upravo po pesmi „Sumatra“.",
+   "rec": "zapeta",
+   "medijiOdgovora": {
+    "vrsta": "slika",
+    "src": "slike/crnjanski.jpg",
+    "opis": "Miloš Crnjanski"
+   }
+  },
+  {
+   "lekcija": 13,
+   "vrsta": "uljez",
+   "tezina": 2,
+   "pitanje": "Koji znak NIJE interpunkcijski, već samo pravopisni?",
+   "odgovori": [
+    "Crtica",
+    "Upitnik",
+    "Zapeta",
+    "Uzvičnik"
+   ],
+   "objasnjenje": "Interpunkcijski znaci odvajaju rečenice i delove rečenica i sugerišu intonaciju. Crtica ne utiče na rečenicu, već na reč – spaja ili deli njene delove.",
+   "zanimljivost": "Neki znaci su i jedno i drugo: tačka je interpunkcijski znak na kraju rečenice, a pravopisni iza skraćenice ili rednog broja.",
+   "rec": "crtica"
+  },
+  {
+   "lekcija": 13,
+   "tezina": 1,
+   "pitanje": "Koja skraćenica se piše BEZ tačke?",
+   "odgovori": [
+    "kg (kilogram)",
+    "npr. (na primer)",
+    "itd. (i tako dalje)",
+    "tzv. (takozvani)"
+   ],
+   "zanimljivost": "Oznake mernih jedinica (kg, km, cm, l) pišu se bez tačke, kao i skraćenice od velikih početnih slova (SAD, UN).",
+   "rec": "skraćenica"
+  },
+  {
+   "lekcija": 13,
+   "tezina": 1,
+   "pitanje": "Šta znači skraćenica „i sl.“?",
+   "odgovori": [
+    "i slično",
+    "i slede",
+    "i slovo",
+    "i sledeći"
+   ],
+   "zanimljivost": "Česte skraćenice: itd. – i tako dalje; npr. – na primer; tzv. – takozvani; tj. – to jest; str. – strana; br. – broj.",
+   "rec": "skraćenica"
+  },
+  {
+   "lekcija": 13,
+   "tezina": 3,
+   "pitanje": "Kako se pravilno zapisuje: „Živeli su u Novom Sadu pet godina _____.“?",
+   "odgovori": [
+    "(2010–2015)",
+    "(2010-2015.)",
+    "(od 2010 - 2015)",
+    "(2010.–2015.)"
+   ],
+   "zanimljivost": "Između godina koje označavaju raspon piše se crta, bez razmaka. Tačka iza poslednje cifre izostaje kad iza nje dolazi zagrada ili drugi znak, da se znaci ne bi gomilali.",
+   "rec": "crta"
+  },
+  {
+   "lekcija": 13,
+   "tezina": 2,
+   "pitanje": "Kada se iza imena u dijalogu ili drami pišu dve tačke?",
+   "odgovori": [
+    "Uvek, iza imena lica koje govori",
+    "Samo kad lice govori uzbuđeno",
+    "Nikada, tu se piše zapeta",
+    "Samo kad lice postavlja pitanje"
+   ],
+   "zanimljivost": "Primer iz udžbenika – „Ana: Ha-ha-ha, ne uopšte!“. U pripovedanju se upravni govor može uvesti i crtom na početku reda.",
+   "rec": "dijalog"
+  },
+  {
+   "lekcija": 14,
+   "tezina": 1,
+   "pitanje": "Koliko funkcionalnih stilova ima standardni jezik?",
+   "odgovori": [
+    "Pet",
+    "Tri",
+    "Četiri",
+    "Sedam"
+   ],
+   "zanimljivost": "To su: književnoumetnički, naučni, publicistički (novinarski), administrativni (pravni) i razgovorni. Zovu se funkcionalni jer služe različitim funkcijama u komunikaciji.",
+   "rec": "stil"
+  },
+  {
+   "lekcija": 14,
+   "tezina": 1,
+   "pitanje": "Kako se zove nauka o stilu u jeziku?",
+   "odgovori": [
+    "Stilistika",
+    "Sintaksa",
+    "Fonetika",
+    "Morfologija"
+   ],
+   "zanimljivost": "Rečenica „Stil je sam čovek“ potiče od francuskog prirodnjaka Bifona (1753). Kao što imamo stil u oblačenju i ponašanju, imamo ga i u jeziku.",
+   "rec": "stil",
+   "medijiOdgovora": {
+    "vrsta": "slika",
+    "src": "slike/bifon.jpg",
+    "opis": "Žorž-Luj Bifon, francuski prirodnjak"
+   }
+  },
+  {
+   "lekcija": 14,
+   "vrsta": "spoji",
+   "tezina": 1,
+   "pitanje": "Spoji tekst sa stilom kome pripada",
+   "parovi": [
+    [
+     "Pesma, roman, bajka",
+     "Književnoumetnički"
+    ],
+    [
+     "Udžbenik, enciklopedija",
+     "Naučni"
+    ],
+    [
+     "Vest, reportaža, intervju",
+     "Publicistički"
+    ],
+    [
+     "Zakon, ugovor, rešenje",
+     "Administrativni"
+    ]
+   ],
+   "zanimljivost": "Peti stil – razgovorni – koristimo u svakodnevnom, neslužbenom govoru sa porodicom i prijateljima.",
+   "rec": "stil"
+  },
+  {
+   "lekcija": 14,
+   "tezina": 2,
+   "pitanje": "Šta odlikuje književnoumetnički stil?",
+   "odgovori": [
+    "Slikovitost, figure i emocionalnost",
+    "Brojke, termini i preciznost",
+    "Ustaljene formule i paragrafi",
+    "Kratka obaveštenja bez ličnog stava"
+   ],
+   "zanimljivost": "Iako je pisan standardnim jezikom, u njemu se mogu javiti i dijalekat, žargon ili tuđice – kad pisac želi da verno predstavi lik ili sredinu.",
+   "rec": "stil"
+  },
+  {
+   "lekcija": 14,
+   "tezina": 2,
+   "pitanje": "Po čemu se reportaža razlikuje od vesti i izveštaja?",
+   "odgovori": [
+    "Sadrži lični doživljaj i utiske reportera",
+    "Mnogo je kraća od vesti",
+    "Ne odgovara ni na jedno novinarsko pitanje",
+    "Piše se samo stihovima"
+   ],
+   "zanimljivost": "Vest i izveštaj su objektivni i sažeti. Reporter je svedok sa lica mesta: opisuje atmosferu, ljude, mirise i zvuke, pa reportaža spaja novinarski i književni stil.",
+   "rec": "reportaža"
+  },
+  {
+   "lekcija": 14,
+   "tezina": 1,
+   "pitanje": "Na koja pitanja mora da odgovori svaka vest?",
+   "odgovori": [
+    "Ko? Šta? Gde? Kada? Kako?",
+    "Zašto? Koliko? Čiji?",
+    "Kakav? Koji? Čiji?",
+    "Samo: Šta se desilo?"
+   ],
+   "zanimljivost": "U engleskom novinarstvu ovo je pravilo pet pitanja koja počinju istim slovom (who, what, where, when, why) – pa se često dodaje i šesto pitanje: zašto? Izveštaj je duži od vesti, ima više podataka i može preneti tuđe reči.",
+   "rec": "vest"
+  },
+  {
+   "lekcija": 14,
+   "tezina": 1,
+   "pitanje": "Kako se zove novinski tekst sa lica mesta u kome novinar opisuje svoj doživljaj događaja?",
+   "odgovori": [
+    "Reportaža",
+    "Vest",
+    "Oglas",
+    "Fusnota"
+   ],
+   "zanimljivost": "Reč dolazi od latinskog reportare – doneti nazad, javiti. Reportaže mogu biti putopisne, ratne, sportske…",
+   "rec": "reportaža"
+  },
+  {
+   "lekcija": 14,
+   "tezina": 1,
+   "pitanje": "Šta je citat?",
+   "odgovori": [
+    "Doslovno navedene tuđe reči",
+    "Prepričan sadržaj knjige",
+    "Napomena na dnu strane",
+    "Spisak korišćene literature"
+   ],
+   "zanimljivost": "Citat se piše u navodnicima i uz njega se navodi izvor – autor, delo, strana. Reč dolazi od latinskog citare – pozvati.",
+   "rec": "citat"
+  },
+  {
+   "lekcija": 14,
+   "tezina": 1,
+   "pitanje": "Šta je fusnota?",
+   "odgovori": [
+    "Napomena na dnu strane",
+    "Naslov poglavlja u knjizi",
+    "Citat na samom početku knjige",
+    "Spisak poglavlja na kraju knjige"
+   ],
+   "zanimljivost": "Reč je nemačka (Fußnote) i znači „beleška u podnožju“ – Fuß je noga. Napomene skupljene na kraju knjige zovu se endnote.",
+   "rec": "fusnota"
+  },
+  {
+   "lekcija": 14,
+   "tezina": 2,
+   "pitanje": "U kom stilu se fusnote najčešće koriste?",
+   "odgovori": [
+    "U naučnom",
+    "U razgovornom",
+    "U administrativnom",
+    "U književnoumetničkom"
+   ],
+   "zanimljivost": "Fusnota objašnjava deo teksta, upućuje na slična ili suprotna mišljenja i na dodatnu literaturu – sve što je naučniku važno, a ne sme da prekida osnovni tekst.",
+   "rec": "fusnota"
+  },
+  {
+   "lekcija": 14,
+   "tezina": 3,
+   "pitanje": "Kojim stilom bi trebalo napisati zahtev školi za izdavanje potvrde?",
+   "odgovori": [
+    "Administrativnim",
+    "Razgovornim",
+    "Književnoumetničkim",
+    "Novinarskim"
+   ],
+   "zanimljivost": "Administrativni stil ima ustaljene formule („Molim da mi se izda…“, „S poštovanjem“), jasan raspored i nema ličnih osećanja.",
+   "rec": "zahtev"
+  },
+  {
+   "lekcija": 14,
+   "vrsta": "uljez",
+   "tezina": 2,
+   "pitanje": "Koji tekst NE pripada publicističkom (novinarskom) stilu?",
+   "odgovori": [
+    "Bajka",
+    "Vest",
+    "Izveštaj",
+    "Reportaža"
+   ],
+   "objasnjenje": "Bajka je delo usmene ili autorske književnosti – književnoumetnički stil. Vest, izveštaj i reportaža su novinarski žanrovi.",
+   "zanimljivost": "Narodna književnost takođe pripada književnoumetničkom stilu, iako je nastala i prenosila se usmeno.",
+   "rec": "bajka"
+  },
+  {
+   "lekcija": 14,
+   "tezina": 2,
+   "pitanje": "Šta je odlika novinskog teksta kao što je vest?",
+   "odgovori": [
+    "Aktuelan, sažet i objektivan",
+    "Opširan, zastareo i subjektivan",
+    "Nejasan, slikovit i pun figura",
+    "Pisan u stihovima, sa rimom"
+   ],
+   "zanimljivost": "Zadatak iz udžbenika traži da se izabere: informativan/neinformativan, aktuelan/star, opširan/sažet, subjektivan/objektivan. Vest je uvek ovo prvo.",
+   "rec": "vest"
+  },
+  {
+   "lekcija": 14,
+   "tezina": 3,
+   "pitanje": "Šta piše na kraju citata u naučnom radu?",
+   "odgovori": [
+    "Podatak o izvoru",
+    "Ime urednika časopisa",
+    "Datum kada je rad napisan",
+    "Lično mišljenje autora o citatu"
+   ],
+   "zanimljivost": "Prepisivanje tuđih reči bez navođenja izvora zove se plagijat (lat. plagiarius – otmičar). U nauci i školi to je ozbiljan prekršaj.",
+   "rec": "citat"
+  },
+  {
+   "lekcija": 14,
+   "tezina": 2,
+   "pitanje": "U kom stilu ljudi međusobno „persiraju“ najčešće?",
+   "odgovori": [
+    "U službenom obraćanju",
+    "U razgovoru sa najboljim drugom",
+    "U porukama mlađoj sestri",
+    "U pesmi koju pišemo za mamu"
+   ],
+   "zanimljivost": "Persiranje je obraćanje sa „Vi“ iz poštovanja – prema starijima, nepoznatima i u službenim situacijama (sud, škola, prodavnica). Zamenica se tada piše velikim slovom u pismima.",
+   "rec": "persiranje"
+  },
+  {
+   "lekcija": 14,
+   "tezina": 1,
+   "pitanje": "Kom stilu pripada razgovor sa prijateljem na odmoru?",
+   "odgovori": [
+    "Razgovornom",
+    "Naučnom",
+    "Administrativnom",
+    "Publicističkom"
+   ],
+   "zanimljivost": "Razgovorni stil je opušten: kratke rečenice, uzvici, šale, žargon. Isti čovek tokom dana menja više stilova – u školi, kod lekara, kod kuće.",
+   "rec": "razgovor"
+  },
+  {
+   "lekcija": 15,
+   "tezina": 1,
+   "pitanje": "Kakav opis se najčešće sreće na Vikipediji i u udžbenicima?",
+   "odgovori": [
+    "Tehnički (naučni)",
+    "Sugestivni (književni)",
+    "Lirski",
+    "Humoristički"
+   ],
+   "zanimljivost": "Tehnički opis je objektivan i precizan, koristi stručne termine. Sreće se i u enciklopedijama, priručnicima i uputstvima za upotrebu.",
+   "rec": "opis"
+  },
+  {
+   "lekcija": 15,
+   "tezina": 2,
+   "pitanje": "Šta je sugestivni opis?",
+   "odgovori": [
+    "Opis koji budi doživljaj",
+    "Opis sa tačnim merama i brojkama",
+    "Opis dat u obliku tabele",
+    "Opis od samo jedne rečenice"
+   ],
+   "zanimljivost": "„Sugestivan“ znači onaj koji ima moć da utiče na drugoga. Udžbenik poredi tekst iz fizike o bestežinskom stanju sa pričom o autobusu koji se prevrće – isti pojam, dva opisa.",
+   "rec": "opis"
+  },
+  {
+   "lekcija": 15,
+   "tezina": 1,
+   "pitanje": "Kojim pismom se piše adresa primaoca u imejlu?",
+   "odgovori": [
+    "Latinicom",
+    "Ćirilicom",
+    "Bilo kojim",
+    "Samo velikim slovima"
+   ],
+   "zanimljivost": "Adrese ne prihvataju ćirilična slova, a poruka se može pisati i ćirilicom i latinicom. Znak @ u srpskom šaljivo zovemo „majmunče“, a u imejl ga je 1971. uveo Rej Tomlinson.",
+   "rec": "imejl",
+   "medijiOdgovora": {
+    "vrsta": "slika",
+    "src": "slike/tomlinson.jpg",
+    "opis": "Rej Tomlinson, autor prvog imejla između dva računara"
+   }
+  },
+  {
+   "lekcija": 15,
+   "tezina": 1,
+   "pitanje": "Šta znači frazeologizam „Ahilova peta“?",
+   "odgovori": [
+    "Ranjivo mesto",
+    "Brzo trčanje",
+    "Mudro rešenje",
+    "Uzaludan posao"
+   ],
+   "zanimljivost": "Po mitu, majka je Ahila umočila u reku Stiks da postane neranjiv, držeći ga za petu – jedino to mesto je ostalo ranjivo, i tu ga je pogodila Parisova strela.",
+   "rec": "peta",
+   "medijiOdgovora": {
+    "vrsta": "slika",
+    "src": "slike/ahil.jpg",
+    "opis": "Ahil na grčkoj vazi (4. vek pre n. e.)"
+   }
+  },
+  {
+   "lekcija": 15,
+   "vrsta": "spoji",
+   "tezina": 2,
+   "pitanje": "Spoji frazeologizam sa značenjem",
+   "parovi": [
+    [
+     "Sizifov posao",
+     "Težak i uzaludan posao"
+    ],
+    [
+     "Solomonsko rešenje",
+     "Mudro i pravedno rešenje"
+    ],
+    [
+     "Drakonske kazne",
+     "Veoma stroge kazne"
+    ],
+    [
+     "Potemkinova sela",
+     "Nešto lažno, prividno"
+    ]
+   ],
+   "zanimljivost": "Drakon je bio atinski zakonodavac (7. vek pre n. e.) čiji su zakoni za mnoge prestupe predviđali smrt. Potemkin je, po priči, carici Katarini II pokazivao lažna, nameštena sela.",
+   "rec": "izraz",
+   "medijiOdgovora": {
+    "vrsta": "slika",
+    "src": "slike/sizif.jpg",
+    "opis": "Sizif gura kamen uzbrdo – prikaz na grčkoj vazi"
+   }
+  },
+  {
+   "lekcija": 15,
+   "tezina": 2,
+   "pitanje": "Šta znači „proći kao Janko na Kosovu“?",
+   "odgovori": [
+    "Proći veoma loše",
+    "Pobediti bez ikakve muke",
+    "Zakasniti na dogovor",
+    "Biti hrabar kao junak"
+   ],
+   "zanimljivost": "Ovaj izraz postoji samo u srpskom jeziku. Doslovno preveden na engleski, francuski ili ruski, ne bi bio jasan – takvi izrazi su „kulturološki obojeni“.",
+   "rec": "kosovo"
+  },
+  {
+   "lekcija": 15,
+   "tezina": 2,
+   "pitanje": "Šta znači „od Kulina bana“?",
+   "odgovori": [
+    "Od davnina",
+    "Od jutra do mraka",
+    "Od danas pa nadalje",
+    "Od kuće do kuće"
+   ],
+   "zanimljivost": "Kulin ban je vladao Bosnom krajem 12. veka. Njegova povelja Dubrovčanima iz 1189, pisana na latinskom i na narodnom jeziku ćirilicom, jedan je od najstarijih sačuvanih ćiriličnih dokumenata.",
+   "rec": "ban",
+   "medijiOdgovora": {
+    "vrsta": "slika",
+    "src": "slike/kulin.jpg",
+    "opis": "Povelja Kulina bana (1189)"
+   }
+  },
+  {
+   "lekcija": 15,
+   "tezina": 1,
+   "pitanje": "Šta je frazeologizam?",
+   "odgovori": [
+    "Ustaljen izraz sa prenesenim značenjem",
+    "Reč nastala spajanjem dve osnove",
+    "Svaka rečenica duža od deset reči",
+    "Strana reč preuzeta u srpski jezik"
+   ],
+   "zanimljivost": "Frazeologizam se ne razume doslovno: „baciti koplje u trnje“ ne znači bacanje koplja, nego odustajanje. Može imati oblik predloško-padežne konstrukcije, sintagme ili rečenice.",
+   "rec": "izraz"
+  },
+  {
+   "lekcija": 15,
+   "tezina": 3,
+   "pitanje": "Koji frazeologizam znači „pomiriti se, prekinuti svađu“?",
+   "odgovori": [
+    "spustiti loptu",
+    "baciti rukavicu",
+    "prosuti čorbu",
+    "dići nos"
+   ],
+   "zanimljivost": "Iz udžbenika: „Umalo su se posvađali zbog gluposti, ali je Ana na vreme spustila loptu.“ „Baciti rukavicu“ znači izazvati nekoga, a „dići nos“ – uobraziti se.",
+   "rec": "lopta"
+  },
+  {
+   "lekcija": 15,
+   "tezina": 1,
+   "pitanje": "Šta je nelinearni tekst?",
+   "odgovori": [
+    "Sadržaj u tabeli, grafikonu ili mapi",
+    "Tekst bez ijednog znaka interpunkcije",
+    "Pesma pisana u slobodnom stihu",
+    "Tekst koji se čita s kraja na početak"
+   ],
+   "zanimljivost": "Linearni tekst čitamo red po red, a nelinearni u različitim smerovima – pogledom tražimo ono što nam treba. Isti podaci mogu biti i u tabeli i u grafikonu.",
+   "rec": "tabela"
+  },
+  {
+   "lekcija": 15,
+   "tezina": 1,
+   "pitanje": "Šta je legenda na geografskoj karti?",
+   "odgovori": [
+    "Objašnjenje znakova na karti",
+    "Narodna priča o tom kraju",
+    "Naslov ispisan iznad karte",
+    "Razmer na dnu karte"
+   ],
+   "zanimljivost": "Reč „legenda“ ovde potiče od latinskog legenda – „ono što treba pročitati“. Isti koren ima i legenda kao priča.",
+   "rec": "legenda"
+  },
+  {
+   "lekcija": 15,
+   "tezina": 1,
+   "pitanje": "Šta je mapa uma?",
+   "odgovori": [
+    "Crtež: pojam u sredini, grane ka podpojmovima",
+    "Karta grada sa ucrtanim školama i parkovima",
+    "Spisak lekcija poređanih po redu iz knjige",
+    "Tabela sa ocenama iz svih predmeta"
+   ],
+   "zanimljivost": "Mape uma je popularizovao britanski autor Toni Buzan sedamdesetih godina. Pomažu u učenju jer povezuju pojmove bojama i slikama – baš kao što mozak povezuje misli.",
+   "rec": "mapa"
+  },
+  {
+   "lekcija": 15,
+   "tezina": 3,
+   "pitanje": "Kako se zove pojava kada neko povezuje slova, brojeve ili zvuke sa bojama?",
+   "odgovori": [
+    "Sinestezija",
+    "Onomatopeja",
+    "Apozicija",
+    "Kongruencija"
+   ],
+   "zanimljivost": "Sinestezija (grč. syn – zajedno, aisthesis – osećaj) je i stilska figura: „zvonki miris“, „hladna boja“. Neki ljudi zaista „vide“ zvuke u bojama.",
+   "rec": "sinestezija"
+  },
+  {
+   "lekcija": 15,
+   "tezina": 1,
+   "pitanje": "Šta je teza u argumentaciji?",
+   "odgovori": [
+    "Tvrdnja koja se dokazuje",
+    "Završni pozdrav govornika",
+    "Pitanje koje postavlja publika",
+    "Primer iz svakodnevnog života"
+   ],
+   "zanimljivost": "Argumenti su razlozi za ili protiv teze. U debati jedan tim brani tezu, a drugi je osporava – npr. „Internet poboljšava komunikaciju.“",
+   "rec": "teza"
+  },
+  {
+   "lekcija": 15,
+   "tezina": 3,
+   "pitanje": "Koji oblik je pravilan: „Juče sam posetio tetku, _____ sestru.“?",
+   "odgovori": [
+    "majčinu",
+    "majkinu",
+    "majkovu",
+    "majčiju"
+   ],
+   "zanimljivost": "Prisvojni pridev od „majka“ je „majčin“ (k ispred -in prelazi u č – palatalizacija). Isto: Milica → Miličin, sestra → sestrin.",
+   "rec": "majka"
+  },
+  {
+   "lekcija": 15,
+   "tezina": 3,
+   "pitanje": "Koja rečenica je pravilna?",
+   "odgovori": [
+    "S obzirom na to da je kasno, idemo kući.",
+    "Obzirom da je kasno, idemo kući.",
+    "Obzirom na to da je kasno, idemo kući.",
+    "Sa obzirom da je kasno, idemo kući."
+   ],
+   "zanimljivost": "Izraz je „s obzirom na“ – „obzirom“ bez predloga je česta greška. Iz istog zadatka u udžbeniku: „zbog gladi“ (uzrok), a ne „radi gladi“, jer „radi“ znači cilj.",
+   "rec": "obzir"
+  },
+  {
+   "lekcija": 15,
+   "tezina": 2,
+   "pitanje": "Koja je reč pravilno napisana?",
+   "odgovori": [
+    "pretčas",
+    "predčas",
+    "pre čas",
+    "prečas"
+   ],
+   "zanimljivost": "Pred + čas: zvučno d ispred bezvučnog č prelazi u t – jednačenje suglasnika po zvučnosti. Isto: pretpostaviti, otkuda.",
+   "rec": "jednačenje"
+  },
+  {
+   "lekcija": 15,
+   "tezina": 2,
+   "pitanje": "Kada se upotrebljava predlog „zahvaljujući“?",
+   "odgovori": [
+    "Kad je uzrok nešto dobro",
+    "Kad je uzrok nešto loše",
+    "Uvek umesto „zbog“",
+    "Samo uz glagole kretanja"
+   ],
+   "zanimljivost": "„Zahvaljujući treneru, pobedili smo“ – ali „Zakasnio sam zbog gužve“, a ne „zahvaljujući gužvi“, jer gužvi niko nije zahvalan.",
+   "rec": "zbog"
+  }
+ ]
+}
