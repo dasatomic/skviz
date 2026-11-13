@@ -38,48 +38,8 @@ ReadWritePaths=$DIR/podaci
 WantedBy=multi-user.target
 UNIT
 
-# Caddy: reverse proxy ka Node-u. Sažimaju se samo navedene vrste sadržaja – SSE tokovi
-# (text/event-stream: /api/dogadjaji, /api/admin/uzivo) nisu na spisku, jer bi sažimanje zadržavalo poruke.
-# Ne koristiti text/* (ni Caddy-jev podrazumevani spisak) – obuhvata i text/event-stream.
-IGRA='	encode zstd gzip {
-		match {
-			header Content-Type text/html*
-			header Content-Type text/css*
-			header Content-Type text/javascript*
-			header Content-Type text/plain*
-			header Content-Type application/json*
-			header Content-Type application/xml*
-			header Content-Type image/svg+xml*
-		}
-	}
-	reverse_proxy 127.0.0.1:3000'
 IP="$(curl -4 -fsS https://api.ipify.org 2>/dev/null || hostname -I | awk '{print $1}')"
-if [ -n "${DOMEN:-}" ]; then
-  # HTTPS na domenu (Caddy sam vadi i obnavlja Let's Encrypt sertifikat), www → glavna adresa,
-  # a preko IP adrese igra i dalje radi na običnom HTTP-u
-  cat > /etc/caddy/Caddyfile <<CADDY
-$DOMEN {
-$IGRA
-}
-
-www.$DOMEN {
-	redir https://$DOMEN{uri} permanent
-}
-
-http://$IP {
-$IGRA
-}
-CADDY
-  ADRESA="https://$DOMEN"
-else
-  cat > /etc/caddy/Caddyfile <<CADDY
-:80 {
-$IGRA
-}
-CADDY
-  ADRESA="http://$IP"
-fi
-caddy validate --config /etc/caddy/Caddyfile --adapter caddyfile >/dev/null
+if [ -n "${DOMEN:-}" ]; then ADRESA="https://$DOMEN"; else ADRESA="http://$IP"; fi
 
 ufw allow OpenSSH >/dev/null
 ufw allow 80/tcp >/dev/null
@@ -88,5 +48,5 @@ ufw --force enable >/dev/null
 
 systemctl daemon-reload
 systemctl enable gric-kviz >/dev/null
-systemctl reload caddy || systemctl restart caddy
+# Caddy (reverse proxy ka Node-u) podešava deploy/caddy.sh – objavi.sh ga pokreće posle ove skripte
 echo "Server je spreman (adresa: $ADRESA)."

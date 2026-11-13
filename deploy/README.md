@@ -28,7 +28,8 @@ Kad su se menjala samo pitanja (`kvizovi/`), objavi ih bez prekidanja soba u tok
 1. Uzme poslednji commit (necommitovane izmene se **ne šalju** – skripta upozori).
 2. Pokrene proveru kvizova – ako ne prođe, ništa se ne šalje.
 3. Pošalje kod na server u `/opt/gric-kviz` (ne dira statistiku, istoriju odigranih pitanja ni telemetriju `podaci/telemetrija.db` na serveru).
-4. Zapiše commit u `.objavljeno`, restartuje servis `gric-kviz` i proveri da igra odgovara.
+4. Uskladi podešavanje Caddy-ja sa `deploy/caddy.sh` (dira ga samo ako se razlikuje; staro sačuva kao `/etc/caddy/Caddyfile.pre-<vreme>`).
+5. Zapiše commit u `.objavljeno`, restartuje servis `gric-kviz` i proveri da igra odgovara.
 
 ## Važno
 - Pun deploy (restart) **prekida sve sobe u toku** (stanje je samo u memoriji) – objavljujte kad niko ne igra. Za samo pitanja koristi `--pitanja`.
@@ -38,6 +39,7 @@ Kad su se menjala samo pitanja (`kvizovi/`), objavi ih bez prekidanja soba u tok
 
 ## Provera i problemi
 - Da li sajt radi: `curl -s https://skviz.rs/api/info`
+- Samo Caddy (bez restarta igre, sobe rade dalje): `ssh root@2.29.146.92 'bash -s' < deploy/caddy.sh`
 - Logovi na serveru: `ssh root@2.29.146.92 journalctl -u gric-kviz -n 50`
 - Ručni restart: `ssh root@2.29.146.92 systemctl restart gric-kviz`
 - Status: `ssh root@2.29.146.92 systemctl status gric-kviz`

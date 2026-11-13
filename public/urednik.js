@@ -12,7 +12,7 @@ const ls = {
 };
 const RAZREDI = [5, 6, 7, 8];
 const TEZINE = { 1: 'Lako', 2: 'Srednje', 3: 'Teško' };
-const VRSTE = { izbor: 'Obično pitanje', uljez: 'Izbaci uljeza', spoji: 'Spoji pojmove' };
+const VRSTE = { izbor: 'Obično pitanje', uljez: 'Izbaci uljeza', spoji: 'Spoj pojmove' };
 const IKONE_VRSTA = { uljez: '🕵️', spoji: '🔗' };
 
 let kvizovi = [];       // iz /api/kvizovi (bez „Opšte znanje“ i bez matematičkih zadataka)
@@ -276,7 +276,7 @@ function proveri() {
   if (!F.pitanje.trim()) g.push('Upiši tekst pitanja.');
   if (F.vrsta === 'spoji') {
     const P = F.parovi.filter((x) => x[0].trim() || x[1].trim());
-    if (P.length < 3) g.push('„Spoji pojmove“ mora imati bar 3 para.');
+    if (P.length < 3) g.push('„Spoj pojmove“ mora imati bar 3 para.');
     if (P.some((x) => !x[0].trim() || !x[1].trim())) g.push('Svaki par mora imati popunjena oba pojma.');
     if (new Set(P.map((x) => x[0].trim().toLowerCase())).size !== P.length) g.push('Pojmovi levo se ponavljaju.');
     if (new Set(P.map((x) => x[1].trim().toLowerCase())).size !== P.length) g.push('Pojmovi desno se ponavljaju.');
@@ -320,7 +320,7 @@ async function ekranIzmena(a) {
       <div class="kartica">
         <h2>${novo ? '＋ Novo pitanje' : `✏️ Izmena pitanja #${indeks + 1}`}</h2>
         ${original?.autor ? `<p class="sitno">Dosadašnji autor: ${esc(original.autor)}</p>` : ''}
-        ${polje('Vrsta pitanja', radio('vrsta', VRSTE, F.vrsta), '„Izbaci uljeza“: među 4 pojma jedan ne pripada ostalima. „Spoji pojmove“: igrač spaja parove (3–5).')}
+        ${polje('Vrsta pitanja', radio('vrsta', VRSTE, F.vrsta), '„Izbaci uljeza“: među 4 pojma jedan ne pripada ostalima. „Spoj pojmove“: igrač spaja parove (3–5).')}
         ${lekcije.length ? polje('Lekcija', `<select id="f-lekcija"><option value="">— izaberi lekciju —</option>${lekcije.map((l, i) =>
           `<option value="${i + 1}" ${F.lekcija === i + 1 ? 'selected' : ''}>${i + 1}. ${esc(nazivLekcije(l))}</option>`).join('')}</select>`) : ''}
         ${polje('Težina', radio('tezina', TEZINE, F.tezina), 'Teška pitanja nose 1,5 puta više poena. Dobra mešavina: oko trećine lakih, malo više srednjih i četvrtina teških.')}
@@ -472,7 +472,7 @@ function osveziPregled(odmah = false) {
   el.innerHTML = `
     <div class="traka"><span class="znacka">1/10</span>${kviz.ikona ? `<span class="znacka" style="background:${esc(kviz.boja || '#6c5ce7')}">${kviz.ikona} ${esc(kviz.naziv)}</span>` : ''}
       <span class="znacka tezina">${zv}${P.tezina === 3 ? ' ×1,5' : ''}</span></div>
-    ${P.vrsta !== 'izbor' ? `<div class="vrsta-pitanja">${P.vrsta === 'uljez' ? '🕵️ Izbaci uljeza' : '🔗 Spoji pojmove'}</div>` : ''}
+    ${P.vrsta !== 'izbor' ? `<div class="vrsta-pitanja">${P.vrsta === 'uljez' ? '🕵️ Izbaci uljeza' : '🔗 Spoj pojmove'}</div>` : ''}
     <div class="pitanje-tekst">${mat(P.pitanje) || '<span style="opacity:.4">Tekst pitanja…</span>'}</div>
     <div id="pv-medij-mesto"></div>
     ${telo}

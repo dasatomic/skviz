@@ -65,7 +65,7 @@ Pored običnih pitanja sa 4 odgovora (`"vrsta": "izbor"`, podrazumevano) postoje
   "zanimljivost": "…", "rec": "pingvin" }
 ```
 
-**Spoji pojmove** – 3–5 parova `[levo, desno]` (preporuka 4). Igra meša obe kolone; igrač dodirne pojam levo, pa njegov par desno. Poeni se dele srazmerno broju tačnih parova, a „tačno“ (i niz) računa se tek kad su svi parovi dobri. Pitanje automatski dobija 5 s više po paru. Pojmovi desno treba da budu kratki (do ~40 znakova) i jednoznačni – svaki levo sme da odgovara samo jednom desno.
+**Spoj pojmove** – 3–5 parova `[levo, desno]` (preporuka 4). Igra meša obe kolone; igrač dodirne pojam levo, pa njegov par desno. Poeni se dele srazmerno broju tačnih parova, a „tačno“ (i niz) računa se tek kad su svi parovi dobri. Pitanje automatski dobija 5 s više po paru. Pojmovi desno treba da budu kratki (do ~40 znakova) i jednoznačni – svaki levo sme da odgovara samo jednom desno.
 ```json
 { "vrsta": "spoji", "tezina": 2, "pitanje": "Spoji organ sa njegovom ulogom",
   "parovi": [["Srce", "Pumpa krv"], ["Pluća", "Razmena gasova"], ["Bubrezi", "Prečišćavaju krv"], ["Želudac", "Vari hranu"]],

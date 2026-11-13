@@ -343,7 +343,7 @@ body.ekran .odgovori, .odgovori.dvokolonski { grid-template-columns: 1fr 1fr; }
 .vrsta-pitanja { display: table; margin: 8px auto 0; padding: 4px 14px; border-radius: 999px; background: var(--istaknuto); color: #2d1b00; font-weight: 700; font-size: .85em; animation: uskok .4s; box-shadow: 0 0 14px #ffc93c77; }
 .rezultat.delimicno { color: var(--istaknuto); }
 
-/* spoji pojmove */
+/* spoj pojmove */
 .spoji { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 .spoji .kolona { display: flex; flex-direction: column; gap: 8px; }
 .spoj { min-height: 54px; padding: 10px 12px; border-radius: 18px; font-weight: 700; font-size: 1em; line-height: 1.2; text-align: center;

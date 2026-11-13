@@ -609,7 +609,7 @@ function tajmer(pocetak, trajanje) {
 
 // ───────────────────────── pitanje ─────────────────────────
 // posebne vrste pitanja: natpis iznad pitanja
-const VRSTE_PITANJA = { uljez: '🕵️ Izbaci uljeza', spoji: '🔗 Spoji pojmove' };
+const VRSTE_PITANJA = { uljez: '🕵️ Izbaci uljeza', spoji: '🔗 Spoj pojmove' };
 
 function zaglavljePitanja(P) {
   const zvezde = [1, 2, 3].map((i) => `<span style="opacity:${i <= P.tezina ? 1 : 0.25}">★</span>`).join('');
@@ -764,7 +764,7 @@ function ekranPitanje(nov, staro) {
   dugmeDalje(P.rb === P.ukupno ? 'Rang lista 🏆' : 'Sledeće pitanje ➜');
 }
 
-// ───────────────────────── spoji pojmove ─────────────────────────
+// ───────────────────────── spoj pojmove ─────────────────────────
 // Dodirni pojam levo, pa njegov par desno – spojeni parovi dobiju istu boju. Ponovni dodir raskida par.
 const BOJE_PAROVA = ['#e17055', '#0984e3', '#00b894', '#e1a700', '#a29bfe'];
 let spajanje = { levo: 0, parovi: [] }; // parovi[i] = indeks pojma desno spojenog sa i-tim levo (ili null)

@@ -35,7 +35,7 @@ for (const dir of fs.readdirSync(KOREN).sort()) {
     if (!p.pitanje) g(oz, 'nema teksta pitanja');
     if (p.vrsta !== undefined && !['izbor', 'uljez', 'spoji'].includes(p.vrsta)) g(oz, 'nepoznata vrsta pitanja: ' + p.vrsta);
     if (p.vrsta === 'spoji') {
-      // „spoji pojmove“: 3–5 parova [levo, desno], bez ponavljanja ni levo ni desno
+      // „spoj pojmove“: 3–5 parova [levo, desno], bez ponavljanja ni levo ni desno
       const P = p.parovi;
       if (!Array.isArray(P) || P.length < 3 || P.length > 5 || P.some((x) => !Array.isArray(x) || x.length !== 2 || x.some((y) => typeof y !== 'string' || !y.trim())))
         g(oz, 'spoji: „parovi“ mora imati 3–5 parova oblika ["levo", "desno"]');
