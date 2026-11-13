@@ -3532,7 +3532,7 @@
       "rec": "pločica"
     },
     {
-      "tezina": 2,
+      "tezina": 3,
       "pitanje": "Dva autobusa kreću sa iste stanice u 8:00. Prvi polazi na svakih 12 minuta, a drugi na svakih 18. Kada će prvi sledeći put opet krenuti zajedno?",
       "odgovori": [
         "U 8:36",
@@ -3541,11 +3541,12 @@
         "U 9:00"
       ],
       "zanimljivost": "Traži se najmanji zajednički sadržalac: NZS(12, 18) = 36. Prvi polazi u 8:12, 8:24, 8:36…, a drugi u 8:18, 8:36… Isti račun objašnjava zašto se zupčanici na biciklu „poklope“ tek posle mnogo okretaja.",
+      "rec": "autobus",
+      "autor": "Miroslav Antonić",
       "medijiOdgovora": {
         "vrsta": "formula",
         "tekst": "NZS(12, 18) = 36"
-      },
-      "rec": "autobus"
+      }
     },
     {
       "tezina": 3,
