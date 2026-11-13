@@ -124,7 +124,7 @@ Ako token procuri, najviše što neko može je da otvara PR-ove i menja robotov 
 
 Prihvatanje predloga: na stranici PR-a „Merge pull request“, pa `git pull` i `./deploy/objavi.sh … --pitanja` (predlozi menjaju samo pitanja).
 Autor predloga vidi stanje („Čeka pregled / Prihvaćeno“) i komentare u uredniku pod „Moji predlozi“.
-Ograničenja: 10 predloga na sat po adresi, 100 dnevno ukupno (`LIMIT_PREDLOGA`, `LIMIT_PREDLOGA_DAN`); provera stanja predloga („Moji predlozi“) 20 puta u minutu po adresi (`LIMIT_STANJA`).
+Ograničenja: 100 predloga na sat po adresi, 1000 dnevno ukupno (`LIMIT_PREDLOGA`, `LIMIT_PREDLOGA_DAN`); provera stanja predloga („Moji predlozi“) 200 puta u minutu po adresi (`LIMIT_STANJA`).
 
 ## Admin pregled (`/admin`)
 Sobe uživo (koliko ih je aktivno, iz kojih kategorija, faza igre) i istorija poslednjih 7/14/30 dana iz SQLite baze `podaci/telemetrija.db` (`lib/telemetrija.js`, ugrađeni `node:sqlite`, Node 22.13+). Beleže se samo zbirni podaci o sobama, bez imena igrača; zapisi stariji od 90 dana se brišu (`TELEMETRIJA_DANA`).

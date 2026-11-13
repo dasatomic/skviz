@@ -77,10 +77,10 @@ function posalji(res, podaci) {
 const MAKS_SOBA = 20000; // 4 slova = 160.000 kodova; iznad ovoga nova soba se odbija (umesto beskonačne petlje)
 const LIMIT_SOBA = +process.env.LIMIT_SOBA || 20; // novih soba po minutu po adresi
 const LIMIT_NEMA = +process.env.LIMIT_NEMA || 120; // pogrešnih kodova soba po minutu po adresi
-const LIMIT_PREDLOGA = +process.env.LIMIT_PREDLOGA || 10; // predloga (pull request-ova) po satu po adresi
-const LIMIT_PREDLOGA_DAN = +process.env.LIMIT_PREDLOGA_DAN || 100; // ukupno predloga dnevno (zaštita od zloupotrebe)
-const LIMIT_PRIJAVA_PITANJA = +process.env.LIMIT_PRIJAVA_PITANJA || 30; // prijava pogrešnih pitanja po satu po adresi
-const LIMIT_STANJA = +process.env.LIMIT_STANJA || 20; // provera stanja predloga („Moji predlozi“) po minutu po adresi
+const LIMIT_PREDLOGA = +process.env.LIMIT_PREDLOGA || 100; // predloga (pull request-ova) po satu po adresi
+const LIMIT_PREDLOGA_DAN = +process.env.LIMIT_PREDLOGA_DAN || 1000; // ukupno predloga dnevno (zaštita od zloupotrebe)
+const LIMIT_PRIJAVA_PITANJA = +process.env.LIMIT_PRIJAVA_PITANJA || 300; // prijava pogrešnih pitanja po satu po adresi
+const LIMIT_STANJA = +process.env.LIMIT_STANJA || 200; // provera stanja predloga („Moji predlozi“) po minutu po adresi
 function novKod() {
   const A = 'ABCDEFGHJKLMNPRSTUVZ';
   if (sobe.size >= MAKS_SOBA) return null;
