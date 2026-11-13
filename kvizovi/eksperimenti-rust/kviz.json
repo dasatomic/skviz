@@ -1,0 +1,4638 @@
+{
+  "naziv": "Rust",
+  "ikona": "🦀",
+  "boja": "#b7410e",
+  "opis": "The Rust language by topic: the core from „The Rust Programming Language“ and advanced chapters from Jon Gjengset's „Rust for Rustaceans“",
+  "redosled": 902,
+  "oblast": "eksperimenti",
+  "uOpstem": false,
+  "jezik": "en",
+  "celina": "Sve oblasti",
+  "lekcije": [
+    {
+      "naziv": "Common Programming Concepts",
+      "tema": "The Rust Programming Language – intermediate"
+    },
+    {
+      "naziv": "Understanding Ownership",
+      "tema": "The Rust Programming Language – intermediate"
+    },
+    {
+      "naziv": "Structs and Methods",
+      "tema": "The Rust Programming Language – intermediate"
+    },
+    {
+      "naziv": "Enums and Pattern Matching",
+      "tema": "The Rust Programming Language – intermediate"
+    },
+    {
+      "naziv": "Packages, Crates, Modules and Cargo",
+      "tema": "The Rust Programming Language – intermediate"
+    },
+    {
+      "naziv": "Common Collections",
+      "tema": "The Rust Programming Language – intermediate"
+    },
+    {
+      "naziv": "Error Handling",
+      "tema": "The Rust Programming Language – intermediate"
+    },
+    {
+      "naziv": "Generics and Traits",
+      "tema": "The Rust Programming Language – intermediate"
+    },
+    {
+      "naziv": "Lifetimes",
+      "tema": "The Rust Programming Language – intermediate"
+    },
+    {
+      "naziv": "Writing Automated Tests",
+      "tema": "The Rust Programming Language – intermediate"
+    },
+    {
+      "naziv": "Closures and Iterators",
+      "tema": "The Rust Programming Language – intermediate"
+    },
+    {
+      "naziv": "Smart Pointers",
+      "tema": "The Rust Programming Language – intermediate"
+    },
+    {
+      "naziv": "Fearless Concurrency",
+      "tema": "The Rust Programming Language – intermediate"
+    },
+    {
+      "naziv": "Async and Await",
+      "tema": "The Rust Programming Language – intermediate"
+    },
+    {
+      "naziv": "Trait Objects and OOP",
+      "tema": "The Rust Programming Language – intermediate"
+    },
+    {
+      "naziv": "Advanced Features",
+      "tema": "The Rust Programming Language – intermediate"
+    },
+    {
+      "naziv": "Foundations",
+      "tema": "Rust for Rustaceans – advanced"
+    },
+    {
+      "naziv": "Types",
+      "tema": "Rust for Rustaceans – advanced"
+    },
+    {
+      "naziv": "Designing Interfaces",
+      "tema": "Rust for Rustaceans – advanced"
+    },
+    {
+      "naziv": "Error Handling (advanced)",
+      "tema": "Rust for Rustaceans – advanced"
+    },
+    {
+      "naziv": "Project Structure",
+      "tema": "Rust for Rustaceans – advanced"
+    },
+    {
+      "naziv": "Testing",
+      "tema": "Rust for Rustaceans – advanced"
+    },
+    {
+      "naziv": "Macros",
+      "tema": "Rust for Rustaceans – advanced"
+    },
+    {
+      "naziv": "Asynchronous Programming",
+      "tema": "Rust for Rustaceans – advanced"
+    },
+    {
+      "naziv": "Unsafe Code",
+      "tema": "Rust for Rustaceans – advanced"
+    },
+    {
+      "naziv": "Concurrency and Parallelism",
+      "tema": "Rust for Rustaceans – advanced"
+    },
+    {
+      "naziv": "Foreign Function Interfaces",
+      "tema": "Rust for Rustaceans – advanced"
+    },
+    {
+      "naziv": "Rust Without the Standard Library",
+      "tema": "Rust for Rustaceans – advanced"
+    },
+    {
+      "naziv": "The Rust Ecosystem",
+      "tema": "Rust for Rustaceans – advanced"
+    }
+  ],
+  "pitanja": [
+    {
+      "lekcija": 1,
+      "tezina": 1,
+      "pitanje": "By default, a variable declared with $let$ is…",
+      "odgovori": [
+        "Immutable",
+        "Mutable",
+        "Global",
+        "Heap-allocated"
+      ],
+      "zanimljivost": "Mutability is opt-in with $let mut$. The compiler even warns when you write $mut$ but never actually change the variable.",
+      "rec": "promenljiva"
+    },
+    {
+      "lekcija": 1,
+      "tezina": 2,
+      "pitanje": "What does shadowing ($let x = …; let x = …;$) allow that $mut$ does not?",
+      "odgovori": [
+        "Changing the type under the same name",
+        "Changing a $const$ at run time",
+        "Mutating through a shared reference",
+        "Reassigning without any keyword"
+      ],
+      "zanimljivost": "The Book's example: $let spaces = \"   \"; let spaces = spaces.len();$ – the name stays, but the type changes from a string slice to a number.",
+      "rec": "senka"
+    },
+    {
+      "lekcija": 1,
+      "tezina": 1,
+      "pitanje": "Which integer type does Rust use when it cannot infer anything better?",
+      "odgovori": [
+        "$i32$",
+        "$i64$",
+        "$isize$",
+        "$u32$"
+      ],
+      "zanimljivost": "$i32$ is usually the fastest choice even on 64-bit machines. For floating point, the default is $f64$.",
+      "rec": "broj"
+    },
+    {
+      "lekcija": 1,
+      "tezina": 2,
+      "pitanje": "In a debug build, what happens when a $u8$ holding 255 is increased by 1?",
+      "odgovori": [
+        "The program panics",
+        "It silently wraps to 0",
+        "It saturates at 255",
+        "It becomes a $u16$"
+      ],
+      "zanimljivost": "In release builds overflow checks are off by default and the value wraps. To choose explicitly, use $wrapping_add$, $checked_add$, $saturating_add$ or $overflowing_add$.",
+      "rec": "prelivanje"
+    },
+    {
+      "lekcija": 1,
+      "tezina": 1,
+      "pitanje": "How many bytes does a Rust $char$ occupy?",
+      "odgovori": [
+        "4 bytes",
+        "1 byte",
+        "2 bytes",
+        "1 to 4 bytes"
+      ],
+      "zanimljivost": "A $char$ is a Unicode scalar value, so it can hold Cyrillic letters, Chinese characters and emoji – unlike a C $char$.",
+      "rec": "znak"
+    },
+    {
+      "lekcija": 1,
+      "tezina": 2,
+      "pitanje": "What is the value of $y$ here?",
+      "odgovori": [
+        "4",
+        "$()$",
+        "3",
+        "It does not compile"
+      ],
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "let y = {\n    let x = 3;\n    x + 1\n};"
+      },
+      "zanimljivost": "A block is an expression and its last line without a semicolon is its value. Add a semicolon after $x + 1$ and the block's value becomes $()$.",
+      "rec": "izraz"
+    },
+    {
+      "lekcija": 1,
+      "tezina": 2,
+      "pitanje": "Which loop can return a value with $break value$?",
+      "odgovori": [
+        "$loop$",
+        "$while$",
+        "$for$",
+        "All three of them"
+      ],
+      "zanimljivost": "Only $loop$ is guaranteed to end through a $break$, so only it can produce a value: $let r = loop { … break n * 2; };$",
+      "rec": "petlja"
+    },
+    {
+      "lekcija": 1,
+      "tezina": 1,
+      "pitanje": "What must a $const$ declaration always have?",
+      "odgovori": [
+        "An explicit type",
+        "The $mut$ keyword",
+        "A heap allocation",
+        "An $unsafe$ block"
+      ],
+      "zanimljivost": "Constants are named in SCREAMING_SNAKE_CASE, e.g. $const SECONDS_IN_HOUR: u32 = 60 * 60;$ – the value must be computable at compile time.",
+      "rec": "konstanta"
+    },
+    {
+      "lekcija": 1,
+      "tezina": 2,
+      "pitanje": "What happens with $let n = if c { 5 } else { \"six\" };$?",
+      "odgovori": [
+        "Compile error: types differ",
+        "$n$ is \"six\" when $c$ is false",
+        "$n$ becomes an $Option$",
+        "It panics at run time"
+      ],
+      "zanimljivost": "$if$ is an expression, and every variable must have exactly one type known at compile time, so both branches must agree.",
+      "rec": "uslov"
+    },
+    {
+      "vrsta": "spoji",
+      "lekcija": 1,
+      "tezina": 1,
+      "pitanje": "Match each type with its description",
+      "parovi": [
+        [
+          "$i8$",
+          "Signed 8-bit integer"
+        ],
+        [
+          "$u64$",
+          "Unsigned 64-bit integer"
+        ],
+        [
+          "$f64$",
+          "Default floating-point type"
+        ],
+        [
+          "$usize$",
+          "Pointer-sized unsigned integer"
+        ]
+      ],
+      "zanimljivost": "$usize$ is used for indexing collections because its size matches the machine's address width (64 bits on most computers today).",
+      "rec": "tip"
+    },
+    {
+      "lekcija": 1,
+      "tezina": 3,
+      "pitanje": "An array has 5 elements and the index comes from user input as 10. What happens on $a[i]$?",
+      "odgovori": [
+        "A panic: index out of bounds",
+        "It silently reads memory past the end",
+        "It returns zero",
+        "It returns $None$"
+      ],
+      "zanimljivost": "Rust checks bounds at run time, which is exactly what C does not do. If you want to handle it yourself, $a.get(i)$ returns an $Option$.",
+      "rec": "niz"
+    },
+    {
+      "lekcija": 1,
+      "tezina": 1,
+      "pitanje": "Given $let t = (500, 6.4, 1);$, what is $t.1$?",
+      "odgovori": [
+        "6.4",
+        "500",
+        "1",
+        "A compile error"
+      ],
+      "zanimljivost": "Tuple fields are indexed from zero with a dot. The empty tuple $()$ is called the unit type – what a function returns when it returns “nothing”.",
+      "rec": "torka"
+    },
+    {
+      "lekcija": 2,
+      "tezina": 1,
+      "pitanje": "How many owners can a value have at one time?",
+      "odgovori": [
+        "Exactly one",
+        "Up to two",
+        "Any number",
+        "One per thread"
+      ],
+      "zanimljivost": "The three rules: every value has an owner, there is only one owner at a time, and the value is dropped when the owner goes out of scope.",
+      "rec": "vlasnik"
+    },
+    {
+      "lekcija": 2,
+      "tezina": 2,
+      "pitanje": "After $let s1 = String::from(\"hi\"); let s2 = s1;$ what happens when you use $s1$?",
+      "odgovori": [
+        "Compile error: value moved",
+        "It prints \"hi\"",
+        "It prints an empty string after the move",
+        "It panics at run time"
+      ],
+      "zanimljivost": "Copying only the pointer would make two owners free the same memory (a double free). Rust instead moves ownership and invalidates $s1$.",
+      "rec": "premeštanje"
+    },
+    {
+      "lekcija": 2,
+      "tezina": 2,
+      "pitanje": "Why can you still use $x$ after $let x = 5; let y = x;$?",
+      "odgovori": [
+        "$i32$ implements $Copy$",
+        "Integers are references",
+        "Every type is cloned",
+        "$x$ is a constant"
+      ],
+      "zanimljivost": "Types whose size is known and that own no other resources (integers, $bool$, $char$, floats, tuples of such) are copied bit by bit.",
+      "rec": "kopija"
+    },
+    {
+      "lekcija": 2,
+      "tezina": 1,
+      "pitanje": "What do the borrowing rules allow at any given time?",
+      "odgovori": [
+        "One mutable or many shared references",
+        "Many mutable and many shared references",
+        "One mutable plus one shared reference",
+        "Mutable references only in $unsafe$"
+      ],
+      "zanimljivost": "It is like a reading room: many people may read a book at once, but whoever writes in it must be alone.",
+      "rec": "pozajmica"
+    },
+    {
+      "lekcija": 2,
+      "tezina": 2,
+      "pitanje": "Which bug class does the “one mutable reference” rule prevent at compile time?",
+      "odgovori": [
+        "Data races",
+        "Stack overflows",
+        "Memory leaks",
+        "Integer overflow"
+      ],
+      "zanimljivost": "Surprisingly, leaks are NOT prevented: $std::mem::forget$ is a safe function, and $Rc$ cycles can leak memory.",
+      "rec": "trka"
+    },
+    {
+      "lekcija": 2,
+      "tezina": 3,
+      "pitanje": "What does the compiler say about this function?",
+      "odgovori": [
+        "Missing lifetime specifier",
+        "Nothing – it works fine",
+        "It moves $s$ to the heap automatically",
+        "It prints a warning only"
+      ],
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "fn dangle() -> &String {\n    let s = String::from(\"hi\");\n    &s\n}"
+      },
+      "zanimljivost": "$s$ is dropped at the end of the function, so the reference would dangle. The fix is to return the $String$ itself and move ownership out.",
+      "rec": "referenca"
+    },
+    {
+      "lekcija": 2,
+      "tezina": 2,
+      "pitanje": "What is a string slice ($&str$)?",
+      "odgovori": [
+        "A pointer and length into UTF-8 text",
+        "An owned copy of a $String$",
+        "An array of $char$ on the stack",
+        "A reference-counted string"
+      ],
+      "zanimljivost": "That's why a function taking $&str$ accepts both literals and $&String$: the $String$ derefs to a slice of itself.",
+      "rec": "isečak"
+    },
+    {
+      "lekcija": 2,
+      "tezina": 2,
+      "pitanje": "What is the type of the literal $\"hello\"$?",
+      "odgovori": [
+        "$&'static str$",
+        "$String$",
+        "$&String$",
+        "$[char; 5]$"
+      ],
+      "zanimljivost": "The bytes of the literal are stored directly in the program's binary, so the reference stays valid for the whole run.",
+      "rec": "literal"
+    },
+    {
+      "lekcija": 2,
+      "tezina": 1,
+      "pitanje": "When is a $String$'s heap memory freed?",
+      "odgovori": [
+        "When its owner goes out of scope",
+        "When the garbage collector next runs",
+        "When the program exits",
+        "When you call $free()$"
+      ],
+      "zanimljivost": "At the closing brace Rust automatically calls $drop$. The pattern is known from C++ as RAII.",
+      "rec": "doseg"
+    },
+    {
+      "lekcija": 2,
+      "tezina": 3,
+      "pitanje": "Does this compile?",
+      "odgovori": [
+        "Yes – $r1$ is not used after printing",
+        "No – $s$ is already borrowed immutably",
+        "Only in a release build",
+        "Yes, but it panics"
+      ],
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "let mut s = String::new();\nlet r1 = &s;\nprintln!(\"{r1}\");\nlet r2 = &mut s;"
+      },
+      "zanimljivost": "Since the 2018 edition, Non-Lexical Lifetimes end a borrow at its last use, not at the end of the block.",
+      "rec": "dozvola"
+    },
+    {
+      "vrsta": "spoji",
+      "lekcija": 2,
+      "tezina": 2,
+      "pitanje": "Match each type with what it means",
+      "parovi": [
+        [
+          "$String$",
+          "Owned, growable text"
+        ],
+        [
+          "$&str$",
+          "Borrowed view of text"
+        ],
+        [
+          "$&mut T$",
+          "Exclusive borrow"
+        ],
+        [
+          "$&T$",
+          "Shared borrow"
+        ]
+      ],
+      "zanimljivost": "“Shared” and “exclusive” are better names than “immutable” and “mutable” – some types allow mutation even through $&T$ (interior mutability).",
+      "rec": "vlasništvo"
+    },
+    {
+      "vrsta": "uljez",
+      "lekcija": 2,
+      "tezina": 2,
+      "pitanje": "Which of these types does NOT implement $Copy$?",
+      "odgovori": [
+        "$String$",
+        "$(i32, char)$",
+        "$bool$",
+        "$f64$"
+      ],
+      "objasnjenje": "$String$ owns memory on the heap; copying it bit by bit would create two owners. You must call $.clone()$ explicitly.",
+      "zanimljivost": "A type cannot implement both $Copy$ and $Drop$ – if a type needs cleanup, a silent copy would be dangerous.",
+      "rec": "gomila"
+    },
+    {
+      "lekcija": 3,
+      "tezina": 1,
+      "pitanje": "When does the shorthand $User { email, username }$ work?",
+      "odgovori": [
+        "Variables have the same names as fields",
+        "All fields are public",
+        "The struct type derives $Default$ and $Clone$",
+        "It is a tuple struct"
+      ],
+      "zanimljivost": "It's called field init shorthand – it saves you from writing $email: email$.",
+      "rec": "polje"
+    },
+    {
+      "lekcija": 3,
+      "tezina": 2,
+      "pitanje": "After $let u2 = User { email: e, ..u1 };$ where $username$ is a $String$, what about $u1$?",
+      "odgovori": [
+        "It can't be used as a whole anymore",
+        "It is unchanged and fully usable",
+        "All its fields are reset",
+        "It is always a compile error"
+      ],
+      "zanimljivost": "Struct update syntax moves the remaining fields. $u1.email$ is still usable, but $u1$ as a whole is not, because $username$ moved.",
+      "rec": "struktura"
+    },
+    {
+      "lekcija": 3,
+      "tezina": 1,
+      "pitanje": "Which line declares a tuple struct?",
+      "odgovori": [
+        "$struct Color(i32, i32, i32);$",
+        "$struct Color { r: i32 }$",
+        "$type Color = (i32, i32);$",
+        "$enum Color { Rgb }$"
+      ],
+      "zanimljivost": "$Color$ and $Point(i32, i32, i32)$ are different types even with the same fields – that is the point of naming them.",
+      "rec": "boja"
+    },
+    {
+      "lekcija": 3,
+      "tezina": 2,
+      "pitanje": "What is a unit-like struct such as $struct AlwaysEqual;$ useful for?",
+      "odgovori": [
+        "Implementing a trait with no data",
+        "Holding exactly one field",
+        "Creating a global variable with no type",
+        "Faster struct comparisons"
+      ],
+      "zanimljivost": "It takes zero bytes of memory. Marker types like this are common in typestate APIs.",
+      "rec": "jedinica"
+    },
+    {
+      "lekcija": 3,
+      "tezina": 1,
+      "pitanje": "Which derive lets you print a struct with $\\{:?\\}$?",
+      "odgovori": [
+        "$Debug$",
+        "$Display$",
+        "$Clone$",
+        "$Print$"
+      ],
+      "zanimljivost": "$\\{:#?\\}$ pretty-prints, and $dbg!(expr)$ prints file, line and value to stderr – and returns ownership of the value.",
+      "rec": "ispis"
+    },
+    {
+      "lekcija": 3,
+      "tezina": 1,
+      "pitanje": "In a method signature, $&self$ is short for…",
+      "odgovori": [
+        "$self: &Self$",
+        "$self: Self$",
+        "$this: &Self$",
+        "$self: *const Self$"
+      ],
+      "zanimljivost": "$Self$ is an alias for the type the $impl$ block is for. Methods may also take $self: Box<Self>$ or $self: Rc<Self>$.",
+      "rec": "metoda"
+    },
+    {
+      "lekcija": 3,
+      "tezina": 2,
+      "pitanje": "How do you call an associated function that has no $self$, like $from$?",
+      "odgovori": [
+        "With $::$ on the type",
+        "With $.$ on an instance",
+        "Only inside the $impl$",
+        "With the $static$ keyword"
+      ],
+      "zanimljivost": "Constructors such as $new$ are ordinary associated functions – Rust has no special constructor syntax.",
+      "rec": "funkcija"
+    },
+    {
+      "lekcija": 3,
+      "tezina": 2,
+      "pitanje": "Why can you write $p1.distance(&p2)$ instead of $(&p1).distance(&p2)$?",
+      "odgovori": [
+        "Rust adds $&$, $&mut$ or $*$ for you",
+        "Rust copies $p1$ every time",
+        "Methods always take ownership of $p1$ anyway",
+        "The dot is a macro"
+      ],
+      "zanimljivost": "Automatic referencing works because the receiver's type is clear from the method signature. C++ needs separate $.$ and $->$ operators.",
+      "rec": "primalac"
+    },
+    {
+      "lekcija": 3,
+      "tezina": 3,
+      "pitanje": "How many $impl$ blocks can one struct have?",
+      "odgovori": [
+        "Any number",
+        "Exactly one",
+        "One per module",
+        "One per trait only"
+      ],
+      "zanimljivost": "Splitting methods into several $impl$ blocks is useful with generics: $impl Point<f32>$ adds methods only for one concrete type.",
+      "rec": "blok"
+    },
+    {
+      "lekcija": 3,
+      "tezina": 2,
+      "pitanje": "Why does the Book's $User$ struct store $String$ rather than $&str$?",
+      "odgovori": [
+        "Each instance owns all its data",
+        "Structs can't hold references of any kind",
+        "$String$ is always faster",
+        "$&str$ can't be compared"
+      ],
+      "zanimljivost": "Storing references is allowed, but then the struct needs lifetime parameters – a topic the Book postpones to chapter 10.",
+      "rec": "podatak"
+    },
+    {
+      "vrsta": "spoji",
+      "lekcija": 3,
+      "tezina": 2,
+      "pitanje": "Match the method receiver with what the method can do",
+      "parovi": [
+        [
+          "$self$",
+          "Takes ownership of the instance"
+        ],
+        [
+          "$&self$",
+          "Reads the instance"
+        ],
+        [
+          "$&mut self$",
+          "Changes the instance"
+        ],
+        [
+          "$-> Self$",
+          "Returns the implementing type"
+        ]
+      ],
+      "zanimljivost": "Methods taking $self$ are rare; they typically turn the value into something else, like $String::into_bytes$.",
+      "rec": "instanca"
+    },
+    {
+      "lekcija": 4,
+      "tezina": 1,
+      "pitanje": "What does Rust use instead of null?",
+      "odgovori": [
+        "$Option<T>$",
+        "$Result<T, E>$",
+        "$Null<T>$",
+        "$Nil$"
+      ],
+      "zanimljivost": "Tony Hoare called null his “billion-dollar mistake”. With $Option$ the compiler forces you to handle the missing case.",
+      "rec": "praznina"
+    },
+    {
+      "lekcija": 4,
+      "tezina": 1,
+      "pitanje": "What are the variants of $Option<T>$?",
+      "odgovori": [
+        "$Some(T)$ and $None$",
+        "$Ok(T)$ and $Err(E)$",
+        "$Just(T)$ and $Nothing$",
+        "$Value(T)$ and $Null$"
+      ],
+      "zanimljivost": "They are in the prelude, so you write $Some(5)$ instead of $Option::Some(5)$.",
+      "rec": "izbor"
+    },
+    {
+      "lekcija": 4,
+      "tezina": 2,
+      "pitanje": "What happens if a $match$ on an enum leaves out one variant?",
+      "odgovori": [
+        "Compile error: non-exhaustive",
+        "A panic when it is hit",
+        "That case is silently skipped",
+        "Only a warning is printed"
+      ],
+      "zanimljivost": "Exhaustiveness checking pays off when you add a variant later: the compiler lists every $match$ you forgot to update.",
+      "rec": "obrazac"
+    },
+    {
+      "lekcija": 4,
+      "tezina": 2,
+      "pitanje": "What is $if let Some(x) = opt { … }$?",
+      "odgovori": [
+        "A $match$ that handles one pattern",
+        "A loop over all $Some$ values",
+        "A runtime type check",
+        "A declaration of $x$ as a global variable"
+      ],
+      "zanimljivost": "You trade exhaustiveness for brevity. An $else$ branch plays the role of $_ =>$ in $match$.",
+      "rec": "grana"
+    },
+    {
+      "lekcija": 4,
+      "tezina": 2,
+      "pitanje": "How does the catch-all $_$ differ from a named pattern like $other$?",
+      "odgovori": [
+        "$_$ does not bind the value",
+        "$_$ only works for integers",
+        "They are exactly the same",
+        "$other$ must come first"
+      ],
+      "zanimljivost": "$_ => ()$ is the idiom for “do nothing in all other cases”.",
+      "rec": "džoker"
+    },
+    {
+      "lekcija": 4,
+      "tezina": 1,
+      "pitanje": "What can enum variants hold?",
+      "odgovori": [
+        "Different kinds of data each",
+        "Only integer values",
+        "Data of one shared type for all variants",
+        "No data at all"
+      ],
+      "zanimljivost": "$enum Message { Quit, Move { x: i32, y: i32 }, Write(String) }$ – one type, variants shaped differently.",
+      "rec": "varijanta"
+    },
+    {
+      "lekcija": 4,
+      "tezina": 3,
+      "pitanje": "With $x = Some(5)$, what does this $match$ return?",
+      "odgovori": [
+        "\"small\"",
+        "\"big\"",
+        "\"none\"",
+        "It does not compile"
+      ],
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "match x {\n    Some(n) if n > 5 => \"big\",\n    Some(_) => \"small\",\n    None => \"none\",\n}"
+      },
+      "zanimljivost": "A match guard ($if n > 5$) is checked after the pattern matches. The compiler does not use guards when checking exhaustiveness.",
+      "rec": "čuvar"
+    },
+    {
+      "lekcija": 4,
+      "tezina": 2,
+      "pitanje": "In the pattern $id @ 3..=7$, what does $@$ do?",
+      "odgovori": [
+        "Binds the value while testing it",
+        "Multiplies the range by $id$",
+        "Takes the address of $id$",
+        "Marks the whole pattern as optional"
+      ],
+      "zanimljivost": "Without $@$ you could test the range, but you wouldn't have the actual number in a variable.",
+      "rec": "opseg"
+    },
+    {
+      "lekcija": 4,
+      "tezina": 2,
+      "pitanje": "In $let Some(x) = opt else { … };$ what must the $else$ block do?",
+      "odgovori": [
+        "Diverge – return, break or panic",
+        "Assign a default to $x$",
+        "Run when the pattern matches",
+        "Nothing – it may be empty"
+      ],
+      "zanimljivost": "let-else (stable since Rust 1.65) keeps the “happy path” unindented, which is great for early returns.",
+      "rec": "prekid"
+    },
+    {
+      "lekcija": 4,
+      "tezina": 1,
+      "pitanje": "When does $while let Some(top) = stack.pop()$ stop?",
+      "odgovori": [
+        "When $pop$ returns $None$",
+        "After one iteration",
+        "When $top$ is zero",
+        "Never – the loop runs forever"
+      ],
+      "zanimljivost": "$pop$ on a $Vec$ returns $Option<T>$, which makes it a natural fit for $while let$.",
+      "rec": "stek"
+    },
+    {
+      "lekcija": 4,
+      "tezina": 3,
+      "pitanje": "Which pattern is refutable, so a plain $let$ rejects it?",
+      "odgovori": [
+        "$Some(x)$",
+        "$(a, b)$",
+        "$Point { x, y }$",
+        "$_$"
+      ],
+      "zanimljivost": "Refutable patterns can fail to match. $let$, function parameters and $for$ loops accept only irrefutable ones.",
+      "rec": "odbijanje"
+    },
+    {
+      "vrsta": "spoji",
+      "lekcija": 4,
+      "tezina": 2,
+      "pitanje": "Match each pattern with its meaning",
+      "parovi": [
+        [
+          "$1 | 2$",
+          "Either value"
+        ],
+        [
+          "$1..=5$",
+          "Inclusive range"
+        ],
+        [
+          "$..$",
+          "Ignore the remaining parts"
+        ],
+        [
+          "$_$",
+          "Ignore one value"
+        ]
+      ],
+      "zanimljivost": "Ranges in patterns work only for numbers and $char$, because the compiler must check if the range is empty.",
+      "rec": "poklapanje"
+    },
+    {
+      "lekcija": 5,
+      "tezina": 1,
+      "pitanje": "What is a crate?",
+      "odgovori": [
+        "The smallest unit the compiler builds",
+        "A folder that contains only the test files",
+        "A single function",
+        "A downloaded zip archive"
+      ],
+      "zanimljivost": "A crate is either a binary (has $main$) or a library. In everyday speech Rustaceans often say crate when they mean a library.",
+      "rec": "sanduk"
+    },
+    {
+      "lekcija": 5,
+      "tezina": 1,
+      "pitanje": "Which file is the crate root of a library crate by default?",
+      "odgovori": [
+        "$src/lib.rs$",
+        "$src/main.rs$",
+        "$Cargo.toml$",
+        "$src/mod.rs$"
+      ],
+      "zanimljivost": "If a package has both $src/main.rs$ and $src/lib.rs$, it contains two crates with the same name.",
+      "rec": "koren"
+    },
+    {
+      "lekcija": 5,
+      "tezina": 2,
+      "pitanje": "By default, an item inside a module is…",
+      "odgovori": [
+        "Private to its module and children",
+        "Public to the whole crate",
+        "Public to every crate",
+        "Private to the file it is written in"
+      ],
+      "zanimljivost": "Child modules can see their ancestors' private items, but parents can't see into private children.",
+      "rec": "modul"
+    },
+    {
+      "lekcija": 5,
+      "tezina": 2,
+      "pitanje": "If a struct is $pub$, what about its fields?",
+      "odgovori": [
+        "They stay private unless marked $pub$",
+        "They all become public",
+        "They become read-only",
+        "They become $pub(crate)$"
+      ],
+      "zanimljivost": "Enums are the opposite: if the enum is $pub$, all its variants are public too.",
+      "rec": "privatnost"
+    },
+    {
+      "lekcija": 5,
+      "tezina": 1,
+      "pitanje": "What does $use std::io::Result as IoResult;$ do?",
+      "odgovori": [
+        "Brings the type in under a new name",
+        "Creates a new distinct type",
+        "Imports a whole module",
+        "Re-exports it publicly from your crate"
+      ],
+      "zanimljivost": "$as$ solves name clashes, e.g. between $fmt::Result$ and $io::Result$.",
+      "rec": "nadimak"
+    },
+    {
+      "lekcija": 5,
+      "tezina": 2,
+      "pitanje": "What is $pub use$ for?",
+      "odgovori": [
+        "Re-exporting an item",
+        "Importing into every file",
+        "Making $use$ lines faster",
+        "Hiding an item from docs"
+      ],
+      "zanimljivost": "It lets the public API differ from the internal module tree – users write $mycrate::Thing$ instead of a long path.",
+      "rec": "izlog"
+    },
+    {
+      "lekcija": 5,
+      "tezina": 1,
+      "pitanje": "What is $Cargo.lock$ for?",
+      "odgovori": [
+        "Recording exact dependency versions",
+        "Preventing two builds from running at once",
+        "Listing the crate's features",
+        "Storing registry passwords"
+      ],
+      "zanimljivost": "Binaries should commit it to version control so everyone builds the same thing. Cargo now recommends committing it for libraries too.",
+      "rec": "zapis"
+    },
+    {
+      "lekcija": 5,
+      "tezina": 2,
+      "pitanje": "What $opt-level$ does the release profile use by default?",
+      "odgovori": [
+        "3",
+        "0",
+        "1",
+        "$\"s\"$"
+      ],
+      "zanimljivost": "The dev profile uses $opt-level = 0$ – faster compilation, slower code. $\"s\"$ and $\"z\"$ optimize for size.",
+      "rec": "nivo"
+    },
+    {
+      "vrsta": "spoji",
+      "lekcija": 5,
+      "tezina": 2,
+      "pitanje": "Match each path start with what it refers to",
+      "parovi": [
+        [
+          "$crate::$",
+          "Root of the current crate"
+        ],
+        [
+          "$super::$",
+          "Parent module"
+        ],
+        [
+          "$self::$",
+          "Current module"
+        ],
+        [
+          "$std::$",
+          "The standard library"
+        ]
+      ],
+      "zanimljivost": "$super$ works like $..$ in a file system path.",
+      "rec": "putanja"
+    },
+    {
+      "lekcija": 5,
+      "tezina": 2,
+      "pitanje": "What do packages in a Cargo workspace share?",
+      "odgovori": [
+        "One $Cargo.lock$ and output folder",
+        "A single $src$ folder",
+        "The same crate name",
+        "One common $main$ function for all crates"
+      ],
+      "zanimljivost": "Sharing the $target$ directory avoids rebuilding the same dependencies for each crate in the workspace.",
+      "rec": "prostor"
+    },
+    {
+      "lekcija": 5,
+      "tezina": 3,
+      "pitanje": "How many library crates can one package contain?",
+      "odgovori": [
+        "At most one",
+        "Any number",
+        "Exactly two",
+        "None at all"
+      ],
+      "zanimljivost": "But it can have many binary crates: each file in $src/bin/$ becomes a separate binary.",
+      "rec": "paket"
+    },
+    {
+      "lekcija": 5,
+      "tezina": 1,
+      "pitanje": "Which comment style becomes HTML documentation for the next item?",
+      "odgovori": [
+        "$///$",
+        "$//$",
+        "$/* */$",
+        "$#$"
+      ],
+      "zanimljivost": "$//!$ documents the enclosing item (usually the whole crate). Code examples in doc comments are run as tests.",
+      "rec": "uputstvo"
+    },
+    {
+      "lekcija": 6,
+      "tezina": 1,
+      "pitanje": "Which macro creates a $Vec$ with given elements?",
+      "odgovori": [
+        "$vec!$",
+        "$array!$",
+        "$list!$",
+        "$new!$"
+      ],
+      "zanimljivost": "$vec![0; 5]$ creates five zeros – the same syntax as array repeat expressions.",
+      "rec": "vektor"
+    },
+    {
+      "lekcija": 6,
+      "tezina": 2,
+      "pitanje": "For a 5-element vector $v$, how do $v.get(100)$ and $&v[100]$ differ?",
+      "odgovori": [
+        "$get$ returns $None$, $[]$ panics",
+        "Both return $None$",
+        "Both panic immediately",
+        "$[]$ returns $None$, $get$ panics"
+      ],
+      "zanimljivost": "Choose based on whether an out-of-range index is a bug ($[]$) or a normal situation ($get$).",
+      "rec": "indeks"
+    },
+    {
+      "lekcija": 6,
+      "tezina": 3,
+      "pitanje": "Why doesn't this compile?",
+      "odgovori": [
+        "$push$ may move the vector's data",
+        "$v$ is not declared $mut$",
+        "$first$ is a copy of $v$",
+        "Vectors can't hold $i32$"
+      ],
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "let mut v = vec![1, 2, 3];\nlet first = &v[0];\nv.push(4);\nprintln!(\"{first}\");"
+      },
+      "zanimljivost": "If the vector has no spare capacity, $push$ allocates a new buffer and copies elements – $first$ would point to freed memory.",
+      "rec": "kapacitet"
+    },
+    {
+      "lekcija": 6,
+      "tezina": 2,
+      "pitanje": "Why can't you write $s[0]$ on a $String$?",
+      "odgovori": [
+        "A byte is not always a character",
+        "Strings are always immutable in Rust",
+        "Strings are linked lists",
+        "Indexing is only for arrays"
+      ],
+      "zanimljivost": "Indexing is expected to be O(1), but finding the n-th character in UTF-8 requires walking from the start.",
+      "rec": "kodiranje"
+    },
+    {
+      "lekcija": 6,
+      "tezina": 2,
+      "pitanje": "What does $\"Здраво\".len()$ return?",
+      "odgovori": [
+        "12",
+        "6",
+        "24",
+        "7"
+      ],
+      "zanimljivost": "$len()$ counts bytes, and every Cyrillic letter takes 2 bytes in UTF-8. $.chars().count()$ would return 6.",
+      "rec": "bajt"
+    },
+    {
+      "lekcija": 6,
+      "tezina": 2,
+      "pitanje": "After $let s3 = s1 + &s2;$, which strings can you still use?",
+      "odgovori": [
+        "$s2$ and $s3$",
+        "All three of them",
+        "Only $s3$",
+        "$s1$ and $s3$"
+      ],
+      "zanimljivost": "$+$ calls $add(self, s: &str)$: it takes ownership of $s1$, appends to its buffer and returns it. $format!$ doesn't take ownership of anything.",
+      "rec": "spajanje"
+    },
+    {
+      "lekcija": 6,
+      "tezina": 2,
+      "pitanje": "What does $*map.entry(word).or_insert(0) += 1;$ do?",
+      "odgovori": [
+        "Counts how often each word occurs",
+        "Resets every count to zero",
+        "Inserts each word only once, never again",
+        "Removes words seen twice"
+      ],
+      "zanimljivost": "$or_insert$ returns $&mut V$ to the existing or newly inserted value – a classic word counter in one line.",
+      "rec": "rečnik"
+    },
+    {
+      "lekcija": 6,
+      "tezina": 2,
+      "pitanje": "Which hash function does $HashMap$ use by default?",
+      "odgovori": [
+        "SipHash",
+        "FNV",
+        "MD5",
+        "CRC32"
+      ],
+      "zanimljivost": "SipHash is not the fastest, but resists HashDoS attacks. You can swap in another hasher with the $BuildHasher$ trait.",
+      "rec": "ključ"
+    },
+    {
+      "lekcija": 6,
+      "tezina": 1,
+      "pitanje": "What happens to a $String$ key inserted into a $HashMap$?",
+      "odgovori": [
+        "The map takes ownership of it",
+        "The map stores a copy",
+        "The map stores a reference to the key",
+        "It is converted to $&str$"
+      ],
+      "zanimljivost": "If you insert references instead, the referenced values must outlive the map.",
+      "rec": "unos"
+    },
+    {
+      "vrsta": "uljez",
+      "lekcija": 6,
+      "tezina": 1,
+      "pitanje": "Which of these is NOT a Rust standard library collection?",
+      "odgovori": [
+        "$ArrayList$",
+        "$VecDeque$",
+        "$BinaryHeap$",
+        "$BTreeSet$"
+      ],
+      "objasnjenje": "$ArrayList$ is Java's growable array; in Rust that role is played by $Vec$.",
+      "zanimljivost": "$std::collections$ docs advise: “use $Vec$ or $HashMap$” for almost everything.",
+      "rec": "zbirka"
+    },
+    {
+      "vrsta": "spoji",
+      "lekcija": 6,
+      "tezina": 1,
+      "pitanje": "Match each collection with its role",
+      "parovi": [
+        [
+          "$VecDeque$",
+          "Double-ended queue"
+        ],
+        [
+          "$BTreeMap$",
+          "Map sorted by key"
+        ],
+        [
+          "$HashSet$",
+          "Unique values, no order"
+        ],
+        [
+          "$BinaryHeap$",
+          "Priority queue"
+        ]
+      ],
+      "zanimljivost": "$BTreeMap$ is a B-tree, not a binary tree – each node holds several keys, which is friendlier to CPU caches.",
+      "rec": "red"
+    },
+    {
+      "lekcija": 6,
+      "tezina": 3,
+      "pitanje": "How many $char$ values are in the Hindi word “नमस्ते”?",
+      "odgovori": [
+        "6",
+        "4",
+        "18",
+        "3"
+      ],
+      "zanimljivost": "The Book's example: 18 bytes, 6 Unicode scalar values, but 4 letters (grapheme clusters) as a reader would count them.",
+      "rec": "slovo"
+    },
+    {
+      "lekcija": 7,
+      "tezina": 1,
+      "pitanje": "Which macro signals an unrecoverable error?",
+      "odgovori": [
+        "$panic!$",
+        "$abort!$",
+        "$throw!$",
+        "$fail!$"
+      ],
+      "zanimljivost": "By default, a panic unwinds the stack and runs destructors. Rust has no exceptions in the usual sense.",
+      "rec": "panika"
+    },
+    {
+      "lekcija": 7,
+      "tezina": 1,
+      "pitanje": "What are the variants of $Result<T, E>$?",
+      "odgovori": [
+        "$Ok(T)$ and $Err(E)$",
+        "$Some(T)$ and $None$",
+        "$Pass(T)$ and $Fail(E)$",
+        "$Value(T)$ and $Error(E)$"
+      ],
+      "zanimljivost": "$Result$ is marked $#[must_use]$ – ignoring one produces a compiler warning.",
+      "rec": "rezultat"
+    },
+    {
+      "lekcija": 7,
+      "tezina": 2,
+      "pitanje": "What does $?$ do when the value is $Err(e)$?",
+      "odgovori": [
+        "Returns early, converting $e$",
+        "Panics with message $e$",
+        "Replaces it with a default",
+        "Retries the same call"
+      ],
+      "zanimljivost": "Conversion goes through the $From$ trait, so one function can turn many error types into its own.",
+      "rec": "upitnik"
+    },
+    {
+      "lekcija": 7,
+      "tezina": 2,
+      "pitanje": "In which functions can you use the $?$ operator?",
+      "odgovori": [
+        "Those returning $Result$ or $Option$",
+        "Only inside $main$",
+        "Any function at all",
+        "Only in $async$ functions and closures"
+      ],
+      "zanimljivost": "More precisely: types implementing $FromResidual$. You can't mix them – $?$ on an $Option$ in a function returning $Result$ won't compile.",
+      "rec": "operator"
+    },
+    {
+      "lekcija": 7,
+      "tezina": 1,
+      "pitanje": "How does $expect(\"msg\")$ differ from $unwrap()$?",
+      "odgovori": [
+        "You choose the panic message",
+        "It never panics",
+        "It returns a default value instead",
+        "It logs and continues"
+      ],
+      "zanimljivost": "Many Rustaceans write the message as the expectation: $expect(\"config file should exist\")$.",
+      "rec": "poruka"
+    },
+    {
+      "lekcija": 7,
+      "tezina": 2,
+      "pitanje": "What does $panic = 'abort'$ in a Cargo profile change?",
+      "odgovori": [
+        "No unwinding – smaller binary",
+        "Panics become warnings",
+        "Panics restart the program from $main$",
+        "Only $main$ may panic"
+      ],
+      "zanimljivost": "Without unwinding there's no need for cleanup tables in the binary, but destructors of other values won't run.",
+      "rec": "odmotavanje"
+    },
+    {
+      "lekcija": 7,
+      "tezina": 1,
+      "pitanje": "If $main$ returns $Err$, the process exits with…",
+      "odgovori": [
+        "A non-zero status code",
+        "Status code 0",
+        "An infinite loop",
+        "A core dump every time"
+      ],
+      "zanimljivost": "$main$ can return any type implementing $Termination$, e.g. $Result<(), Box<dyn Error>>$.",
+      "rec": "izlaz"
+    },
+    {
+      "lekcija": 7,
+      "tezina": 3,
+      "pitanje": "Which environment variable shows a backtrace on panic?",
+      "odgovori": [
+        "$RUST_BACKTRACE=1$",
+        "$RUST_LOG=debug$",
+        "$CARGO_TRACE=1$",
+        "$RUST_DEBUG=full$"
+      ],
+      "zanimljivost": "$RUST_BACKTRACE=full$ shows even more frames. Line numbers need debug symbols, which are on in debug builds.",
+      "rec": "trag"
+    },
+    {
+      "lekcija": 7,
+      "tezina": 2,
+      "pitanje": "When does the Book consider $unwrap$ acceptable?",
+      "odgovori": [
+        "In prototypes and tests",
+        "In public library APIs",
+        "When parsing user input",
+        "Never under any condition"
+      ],
+      "zanimljivost": "Also when you know more than the compiler, e.g. parsing the hard-coded IP address $\"127.0.0.1\"$.",
+      "rec": "prototip"
+    },
+    {
+      "lekcija": 7,
+      "tezina": 2,
+      "pitanje": "What does $\"42\".parse::<i32>()$ return?",
+      "odgovori": [
+        "$Result<i32, ParseIntError>$",
+        "$i32$",
+        "$Option<i32>$",
+        "$Result<i32, String>$"
+      ],
+      "zanimljivost": "$parse$ is generic over any type implementing $FromStr$, so you must say which type you want.",
+      "rec": "parsiranje"
+    },
+    {
+      "vrsta": "spoji",
+      "lekcija": 7,
+      "tezina": 2,
+      "pitanje": "Match each method with what it does",
+      "parovi": [
+        [
+          "$unwrap()$",
+          "Panics on error"
+        ],
+        [
+          "$unwrap_or(d)$",
+          "Uses a default value"
+        ],
+        [
+          "$ok()$",
+          "Turns $Result$ into $Option$"
+        ],
+        [
+          "$map_err(f)$",
+          "Transforms the error"
+        ]
+      ],
+      "zanimljivost": "$unwrap_or_else(f)$ computes the default lazily – only when it is actually needed.",
+      "rec": "greška"
+    },
+    {
+      "lekcija": 7,
+      "tezina": 3,
+      "pitanje": "What does the Book's $Guess$ type (accepting only 1–100) illustrate?",
+      "odgovori": [
+        "Using a type to guarantee validity",
+        "Using panics for normal control flow",
+        "Avoiding the $Result$ type",
+        "Storing numbers as strings"
+      ],
+      "zanimljivost": "Once checked in $Guess::new$, the value can't be invalid, so other functions need no repeated checks.",
+      "rec": "provera"
+    },
+    {
+      "lekcija": 8,
+      "tezina": 1,
+      "pitanje": "What is a trait?",
+      "odgovori": [
+        "Shared behavior types can implement",
+        "A class with its own fields and inheritance",
+        "A kind of struct",
+        "A compiler warning"
+      ],
+      "zanimljivost": "Traits resemble interfaces in other languages, but you can implement your trait even for types you didn't write, like $i32$.",
+      "rec": "osobina"
+    },
+    {
+      "lekcija": 8,
+      "tezina": 2,
+      "pitanje": "Can your crate implement $Display$ for $Vec<T>$?",
+      "odgovori": [
+        "No – both are foreign (orphan rule)",
+        "Yes, always",
+        "Yes, but only inside an $unsafe$ block",
+        "Yes, but only in $main.rs$"
+      ],
+      "zanimljivost": "The orphan rule ensures two crates can't provide conflicting implementations. The workaround is a newtype wrapper.",
+      "rec": "siroče"
+    },
+    {
+      "lekcija": 8,
+      "tezina": 2,
+      "pitanje": "Why do Rust generics cost nothing at run time?",
+      "odgovori": [
+        "Monomorphization",
+        "Garbage collection",
+        "Type erasure",
+        "Just-in-time compiling"
+      ],
+      "zanimljivost": "The compiler generates a separate copy of the code for each concrete type – fast, but it makes binaries larger.",
+      "rec": "šablon"
+    },
+    {
+      "lekcija": 8,
+      "tezina": 2,
+      "pitanje": "$fn notify(item: &impl Summary)$ is shorthand for…",
+      "odgovori": [
+        "A generic with a trait bound",
+        "A trait object $&dyn$",
+        "A $Box<Summary>$",
+        "A runtime type check"
+      ],
+      "zanimljivost": "The long form is $fn notify<T: Summary>(item: &T)$. Only the long form can force two parameters to be the same type.",
+      "rec": "granica"
+    },
+    {
+      "lekcija": 8,
+      "tezina": 2,
+      "pitanje": "What is a $where$ clause for?",
+      "odgovori": [
+        "Writing trait bounds more readably",
+        "Choosing which branch runs at run time",
+        "Filtering an iterator",
+        "Declaring lifetimes"
+      ],
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "fn f<T, U>(t: &T, u: &U) -> i32\nwhere\n    T: Display + Clone,\n    U: Clone + Debug,\n{ … }"
+      },
+      "zanimljivost": "Long bound lists in angle brackets get hard to read; $where$ moves them after the signature.",
+      "rec": "klauzula"
+    },
+    {
+      "lekcija": 8,
+      "tezina": 3,
+      "pitanje": "A function returns $impl Summary$. What may it return?",
+      "odgovori": [
+        "One concrete type only",
+        "Any type with $Summary$",
+        "Different types per branch",
+        "Only references"
+      ],
+      "zanimljivost": "Returning a $Tweet$ in one branch and a $NewsArticle$ in another won't compile – for that you need $Box<dyn Summary>$.",
+      "rec": "skrivanje"
+    },
+    {
+      "lekcija": 8,
+      "tezina": 1,
+      "pitanje": "What happens with a default method implementation in a trait?",
+      "odgovori": [
+        "Types may use or override it",
+        "Every implementing type must override it",
+        "It can't call other methods",
+        "It's only for $Copy$ types"
+      ],
+      "zanimljivost": "A default method may call other methods of the same trait that have no default – a type implements just a little and gets a lot.",
+      "rec": "predložak"
+    },
+    {
+      "lekcija": 8,
+      "tezina": 2,
+      "pitanje": "What is $impl<T: Display> ToString for T$ an example of?",
+      "odgovori": [
+        "A blanket implementation",
+        "An orphan implementation",
+        "Trait specialization",
+        "A procedural macro"
+      ],
+      "zanimljivost": "That's why you can call $.to_string()$ on any type that implements $Display$.",
+      "rec": "pokrivač"
+    },
+    {
+      "lekcija": 8,
+      "tezina": 1,
+      "pitanje": "Why does $fn largest<T: PartialOrd>(list: &[T]) -> &T$ need $PartialOrd$?",
+      "odgovori": [
+        "To compare items with $>$",
+        "To copy the items",
+        "To print the items",
+        "To hash the items for lookups"
+      ],
+      "zanimljivost": "“Partial” because some values are incomparable – for floats, $NaN$ isn't less, greater or equal to anything.",
+      "rec": "poređenje"
+    },
+    {
+      "vrsta": "spoji",
+      "lekcija": 8,
+      "tezina": 2,
+      "pitanje": "Match each derivable trait with what it gives you",
+      "parovi": [
+        [
+          "$Clone$",
+          "An explicit $.clone()$ copy"
+        ],
+        [
+          "$PartialEq$",
+          "$==$ and $!=$"
+        ],
+        [
+          "$Hash$",
+          "Use as a $HashMap$ key"
+        ],
+        [
+          "$Default$",
+          "A starting value"
+        ]
+      ],
+      "zanimljivost": "A $HashMap$ key needs $Eq$ as well as $Hash$, and equal values must have equal hashes.",
+      "rec": "izvođenje"
+    },
+    {
+      "lekcija": 8,
+      "tezina": 3,
+      "pitanje": "What does $impl Point<f32> { fn distance_from_origin(&self) … }$ mean?",
+      "odgovori": [
+        "Only $Point<f32>$ has the method",
+        "Every $Point<T>$ has the method",
+        "$f32$ gets a new method",
+        "It is a compile error"
+      ],
+      "zanimljivost": "Methods can be added for one concrete type, while the rest of the $impl<T>$ block is shared by all $Point<T>$.",
+      "rec": "tačka"
+    },
+    {
+      "lekcija": 8,
+      "tezina": 2,
+      "pitanje": "With $struct Point<T> { x: T, y: T }$, what is $Point { x: 5, y: 4.0 }$?",
+      "odgovori": [
+        "A type mismatch error",
+        "$T$ inferred as $f64$",
+        "$T$ inferred as $i32$",
+        "A $Point<Any>$"
+      ],
+      "zanimljivost": "Both fields share one $T$. For different types, declare $Point<T, U>$.",
+      "rec": "mešavina"
+    },
+    {
+      "lekcija": 9,
+      "tezina": 1,
+      "pitanje": "What is the main purpose of lifetimes?",
+      "odgovori": [
+        "Preventing dangling references",
+        "Freeing memory faster",
+        "Making threads safe",
+        "Measuring how long code takes to run"
+      ],
+      "zanimljivost": "Most lifetimes are inferred, just like most types. You annotate them only where the compiler can't decide.",
+      "rec": "trajanje"
+    },
+    {
+      "lekcija": 9,
+      "tezina": 2,
+      "pitanje": "In $fn longest<'a>(x: &'a str, y: &'a str) -> &'a str$, how long is the result valid?",
+      "odgovori": [
+        "As long as the shorter-lived input",
+        "As long as the longer-lived of the two inputs",
+        "As long as $x$ only",
+        "Forever"
+      ],
+      "zanimljivost": "$'a$ becomes the overlap of both inputs' lifetimes, so the result is safe whichever one is returned.",
+      "rec": "vek"
+    },
+    {
+      "lekcija": 9,
+      "tezina": 2,
+      "pitanje": "According to the elision rules, when there is exactly one input lifetime…",
+      "odgovori": [
+        "It's assigned to all output references",
+        "The output must be $'static$",
+        "The output gets a new, separate lifetime",
+        "Annotations are mandatory"
+      ],
+      "zanimljivost": "Rule 1: every input reference gets its own lifetime. Rule 2: a single input lifetime goes to outputs. Rule 3: with $&self$, outputs get $self$'s lifetime.",
+      "rec": "pravilo"
+    },
+    {
+      "lekcija": 9,
+      "tezina": 2,
+      "pitanje": "For a method taking $&self$ and another reference, which lifetime does the returned reference get?",
+      "odgovori": [
+        "The lifetime of $self$",
+        "The lifetime of the argument",
+        "The $'static$ lifetime",
+        "A fresh, unrelated one"
+      ],
+      "zanimljivost": "It's the third elision rule – the reason most methods need no lifetime annotations at all.",
+      "rec": "metod"
+    },
+    {
+      "lekcija": 9,
+      "tezina": 1,
+      "pitanje": "What does $'static$ mean on a reference?",
+      "odgovori": [
+        "It can live for the whole program",
+        "It's stored on the stack",
+        "It can never be read",
+        "It's a constant expression"
+      ],
+      "zanimljivost": "When the compiler suggests $'static$, it's often a sign of a different problem, such as a dangling reference.",
+      "rec": "trajnost"
+    },
+    {
+      "lekcija": 9,
+      "tezina": 3,
+      "pitanje": "What does $struct Excerpt<'a> { part: &'a str }$ guarantee?",
+      "odgovori": [
+        "An instance can't outlive the text",
+        "The text is copied in",
+        "$part$ is always $'static$",
+        "The struct must always live on the heap"
+      ],
+      "zanimljivost": "The Book splits a novel into sentences – each $Excerpt$ only points into the original text.",
+      "rec": "odlomak"
+    },
+    {
+      "lekcija": 9,
+      "tezina": 2,
+      "pitanje": "What does the compiler say here?",
+      "odgovori": [
+        "$x$ does not live long enough",
+        "$r$ is used before it's initialized",
+        "$r$ must be mutable",
+        "Nothing – it prints 5"
+      ],
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "let r;\n{\n    let x = 5;\n    r = &x;\n}\nprintln!(\"{r}\");"
+      },
+      "zanimljivost": "The borrow checker compares scopes: $x$ dies at the inner closing brace, but $r$ is still used afterwards.",
+      "rec": "nestanak"
+    },
+    {
+      "lekcija": 9,
+      "tezina": 3,
+      "pitanje": "Do lifetime annotations change how long references live?",
+      "odgovori": [
+        "No – they only describe relations",
+        "Yes – they extend how long values live",
+        "Yes – in release builds",
+        "Only when using $'static$"
+      ],
+      "zanimljivost": "Annotations are a contract checked by the compiler, not an instruction for it. They never make a value live longer.",
+      "rec": "opis"
+    },
+    {
+      "lekcija": 9,
+      "tezina": 1,
+      "pitanje": "How are lifetime parameters written?",
+      "odgovori": [
+        "An apostrophe and a short name",
+        "A dollar sign and a name",
+        "A hash and a number",
+        "In double angle brackets"
+      ],
+      "zanimljivost": "Usually $'a$, $'b$… The special $'_$ means “let the compiler infer it”.",
+      "rec": "apostrof"
+    },
+    {
+      "lekcija": 9,
+      "tezina": 3,
+      "pitanje": "What does the bound $T: 'static$ mean?",
+      "odgovori": [
+        "$T$ holds no short-lived references",
+        "$T$ must be declared as a $static$ item",
+        "$T$ lives in the binary",
+        "$T$ is never dropped"
+      ],
+      "zanimljivost": "A $String$ satisfies $T: 'static$ – it owns its data. That's why $thread::spawn$ accepts owned values.",
+      "rec": "ograda"
+    },
+    {
+      "vrsta": "spoji",
+      "lekcija": 9,
+      "tezina": 2,
+      "pitanje": "Match each type with its description",
+      "parovi": [
+        [
+          "$&i32$",
+          "Reference, lifetime inferred"
+        ],
+        [
+          "$&'a i32$",
+          "Reference with lifetime $'a$"
+        ],
+        [
+          "$&'a mut i32$",
+          "Exclusive reference for $'a$"
+        ],
+        [
+          "$&'static str$",
+          "Text valid for the whole run"
+        ]
+      ],
+      "zanimljivost": "The lifetime always comes right after the $&$ and before $mut$.",
+      "rec": "oznaka"
+    },
+    {
+      "lekcija": 10,
+      "tezina": 1,
+      "pitanje": "Which attribute marks a function as a test?",
+      "odgovori": [
+        "$#[test]$",
+        "$#[check]$",
+        "$#[unit]$",
+        "$#[assert]$"
+      ],
+      "zanimljivost": "A test fails if it panics. $cargo test$ builds a special binary that runs all marked functions.",
+      "rec": "test"
+    },
+    {
+      "lekcija": 10,
+      "tezina": 1,
+      "pitanje": "What does $assert_eq!(a, b)$ add over $assert!(a == b)$?",
+      "odgovori": [
+        "It prints both values on failure",
+        "It runs faster",
+        "It never panics",
+        "It also compares the types of both values"
+      ],
+      "zanimljivost": "Both values must implement $PartialEq$ and $Debug$. In Rust the order of “left” and “right” doesn't matter.",
+      "rec": "jednakost"
+    },
+    {
+      "lekcija": 10,
+      "tezina": 2,
+      "pitanje": "What does $#[should_panic(expected = \"less than 100\")]$ check?",
+      "odgovori": [
+        "The panic message contains that text",
+        "The test never panics",
+        "The test panics before printing anything",
+        "The return value is 100"
+      ],
+      "zanimljivost": "$expected$ makes the test more precise – it fails if the code panics for some other reason.",
+      "rec": "očekivanje"
+    },
+    {
+      "lekcija": 10,
+      "tezina": 1,
+      "pitanje": "How does $cargo test$ run tests by default?",
+      "odgovori": [
+        "In parallel, using threads",
+        "One by one, in order",
+        "In separate processes",
+        "Alphabetically, one at a time"
+      ],
+      "zanimljivost": "If tests share state (e.g. a file), run $cargo test -- --test-threads=1$.",
+      "rec": "istovremeno"
+    },
+    {
+      "lekcija": 10,
+      "tezina": 2,
+      "pitanje": "What happens to $println!$ output from a passing test?",
+      "odgovori": [
+        "It is captured and hidden",
+        "It is printed immediately",
+        "It goes to a log file",
+        "It causes the test to fail"
+      ],
+      "zanimljivost": "$cargo test -- --show-output$ shows output from passing tests too.",
+      "rec": "prikaz"
+    },
+    {
+      "lekcija": 10,
+      "tezina": 2,
+      "pitanje": "How do you run only the tests marked $#[ignore]$?",
+      "odgovori": [
+        "$cargo test -- --ignored$",
+        "$cargo test --ignore$",
+        "$cargo test --all$",
+        "$cargo test --slow$"
+      ],
+      "zanimljivost": "$--include-ignored$ runs both kinds. Ignoring is meant for slow tests, not broken ones.",
+      "rec": "preskok"
+    },
+    {
+      "lekcija": 10,
+      "tezina": 2,
+      "pitanje": "Why are unit tests put in a $#[cfg(test)] mod tests$?",
+      "odgovori": [
+        "They compile only for $cargo test$",
+        "They run on every startup",
+        "To make them public",
+        "It is required by $rustc$"
+      ],
+      "zanimljivost": "So the test code doesn't end up in the final binary and doesn't slow down $cargo build$.",
+      "rec": "prevodilac"
+    },
+    {
+      "lekcija": 10,
+      "tezina": 3,
+      "pitanje": "Where do integration tests go, and what can they use?",
+      "odgovori": [
+        "In $tests/$, only the public API",
+        "In $src/$, all private items",
+        "In $tests/$, any private item",
+        "In $benches/$, only the public API"
+      ],
+      "zanimljivost": "Each file in $tests/$ is compiled as a separate crate. Shared helpers go in $tests/common/mod.rs$.",
+      "rec": "integracija"
+    },
+    {
+      "lekcija": 10,
+      "tezina": 3,
+      "pitanje": "Can unit tests call private functions?",
+      "odgovori": [
+        "Yes – via $use super::*$",
+        "No – never",
+        "Only with $unsafe$",
+        "Only in integration tests"
+      ],
+      "zanimljivost": "Some languages forbid testing private functions; Rust allows it because the test module is a child module.",
+      "rec": "tajna"
+    },
+    {
+      "lekcija": 10,
+      "tezina": 2,
+      "pitanje": "What does a test returning $Result<(), String>$ allow?",
+      "odgovori": [
+        "Using $?$ inside the test",
+        "Using $#[should_panic]$",
+        "Skipping all the $assert!$ macros",
+        "Running only on Linux"
+      ],
+      "zanimljivost": "Such a test fails when it returns $Err$. It can't be combined with $#[should_panic]$.",
+      "rec": "ishod"
+    },
+    {
+      "lekcija": 10,
+      "tezina": 2,
+      "pitanje": "Why do binary projects keep most logic in $src/lib.rs$?",
+      "odgovori": [
+        "Integration tests can't import $main.rs$",
+        "$main.rs$ can't have functions",
+        "Libraries compile faster",
+        "Cargo needs at least one library crate per package"
+      ],
+      "zanimljivost": "A thin $main.rs$ that calls the library is the pattern the Book uses for its $minigrep$ project.",
+      "rec": "aplikacija"
+    },
+    {
+      "lekcija": 11,
+      "tezina": 1,
+      "pitanje": "Which is a closure that adds one?",
+      "odgovori": [
+        "$|x| x + 1$",
+        "$fn(x) => x + 1$",
+        "$x -> x + 1$",
+        "$lambda x: x + 1$"
+      ],
+      "zanimljivost": "Closures can capture variables from their environment – that's what separates them from ordinary functions.",
+      "rec": "zatvaranje"
+    },
+    {
+      "vrsta": "spoji",
+      "lekcija": 11,
+      "tezina": 2,
+      "pitanje": "Match each closure trait or keyword with what it allows",
+      "parovi": [
+        [
+          "$FnOnce$",
+          "Called once, may move out"
+        ],
+        [
+          "$FnMut$",
+          "May change captured values"
+        ],
+        [
+          "$Fn$",
+          "Only reads captured values"
+        ],
+        [
+          "$move$",
+          "Takes ownership of captures"
+        ]
+      ],
+      "zanimljivost": "Every closure implements $FnOnce$. A closure that's $Fn$ is also $FnMut$ and $FnOnce$.",
+      "rec": "hvatanje"
+    },
+    {
+      "lekcija": 11,
+      "tezina": 2,
+      "pitanje": "Why do closures passed to $thread::spawn$ usually need $move$?",
+      "odgovori": [
+        "The thread may outlive the variables",
+        "Threads can't read memory",
+        "It makes the closure faster",
+        "$spawn$ requires $Copy$ types"
+      ],
+      "zanimljivost": "Without $move$, the closure would borrow from a stack frame that could disappear before the thread finishes.",
+      "rec": "pomeranje"
+    },
+    {
+      "lekcija": 11,
+      "tezina": 1,
+      "pitanje": "What does $v.iter().map(|x| x + 1);$ do on its own?",
+      "odgovori": [
+        "Nothing – iterators are lazy",
+        "Adds 1 to every element of $v$ in place",
+        "Creates a new vector",
+        "Panics if $v$ is empty"
+      ],
+      "zanimljivost": "The compiler even warns: “unused $Map$ that must be used – iterators are lazy and do nothing unless consumed”.",
+      "rec": "lenjost"
+    },
+    {
+      "vrsta": "spoji",
+      "lekcija": 11,
+      "tezina": 2,
+      "pitanje": "Match each method with what the iterator yields",
+      "parovi": [
+        [
+          "$iter()$",
+          "$&T$"
+        ],
+        [
+          "$iter_mut()$",
+          "$&mut T$"
+        ],
+        [
+          "$into_iter()$",
+          "$T$, by value"
+        ],
+        [
+          "$chars()$",
+          "$char$ values"
+        ]
+      ],
+      "zanimljivost": "$for x in &v$ calls $iter()$, and $for x in v$ calls $into_iter()$ and consumes the vector.",
+      "rec": "iterator"
+    },
+    {
+      "lekcija": 11,
+      "tezina": 1,
+      "pitanje": "Which method must you implement for the $Iterator$ trait?",
+      "odgovori": [
+        "$next$",
+        "$iter$",
+        "$collect$",
+        "$for_each$"
+      ],
+      "zanimljivost": "All the dozens of other methods ($map$, $filter$, $zip$…) have default implementations built on $next$.",
+      "rec": "sledeći"
+    },
+    {
+      "lekcija": 11,
+      "tezina": 1,
+      "pitanje": "What is the $::<>$ syntax in $collect::<Vec<_>>()$ called?",
+      "odgovori": [
+        "Turbofish",
+        "Spaceship",
+        "Diamond",
+        "Fat arrow"
+      ],
+      "zanimljivost": "The name was coined by Anna Harren in 2015. The Rust parser's test suite has a test called “bastion of the turbofish”.",
+      "rec": "riba"
+    },
+    {
+      "lekcija": 11,
+      "tezina": 3,
+      "pitanje": "How does iterator code compare to a hand-written loop in speed?",
+      "odgovori": [
+        "About the same – zero-cost",
+        "Much slower – closure calls",
+        "Slower in debug and release",
+        "Faster only on $nightly$"
+      ],
+      "zanimljivost": "In the Book's benchmark the iterator version was even slightly faster; the compiler unrolls loops and removes bounds checks.",
+      "rec": "brzina"
+    },
+    {
+      "lekcija": 11,
+      "tezina": 2,
+      "pitanje": "After $let total: i32 = it.sum();$, can you use $it$ again?",
+      "odgovori": [
+        "No – $sum$ takes ownership",
+        "Yes – it is reset",
+        "Yes – it is cloned",
+        "Only if it was declared mutable"
+      ],
+      "zanimljivost": "Methods that call $next$ until the end are called consuming adapters.",
+      "rec": "zbir"
+    },
+    {
+      "lekcija": 11,
+      "tezina": 2,
+      "pitanje": "What is $(1..4).map(|x| x * x).sum::<i32>()$?",
+      "odgovori": [
+        "14",
+        "30",
+        "9",
+        "16"
+      ],
+      "zanimljivost": "$1..4$ excludes the upper bound: 1 + 4 + 9 = 14. With $1..=4$ the result would be 30.",
+      "rec": "kvadrat"
+    },
+    {
+      "lekcija": 11,
+      "tezina": 3,
+      "pitanje": "What happens here?",
+      "odgovori": [
+        "Type error on the second call",
+        "It works and returns $5$ the second time",
+        "The closure is generic",
+        "It panics at run time"
+      ],
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "let c = |x| x;\nlet s = c(String::from(\"a\"));\nlet n = c(5);"
+      },
+      "zanimljivost": "A closure's parameter types are inferred from its first use and then fixed. Closures are not generic.",
+      "rec": "zaključak"
+    },
+    {
+      "lekcija": 12,
+      "tezina": 1,
+      "pitanje": "Where does $Box<T>$ store its value?",
+      "odgovori": [
+        "On the heap",
+        "On the stack",
+        "In a CPU register",
+        "In static memory"
+      ],
+      "zanimljivost": "The box itself is just a pointer on the stack. When it is dropped, the value on the heap is freed too.",
+      "rec": "kutija"
+    },
+    {
+      "lekcija": 12,
+      "tezina": 2,
+      "pitanje": "Why does $enum List { Cons(i32, Box<List>), Nil }$ need $Box$?",
+      "odgovori": [
+        "Otherwise the size would be infinite",
+        "To make the list mutable",
+        "Enums can't hold integers",
+        "So it can be shared"
+      ],
+      "zanimljivost": "A $Box$ has a known size (one pointer), which breaks the infinite recursion in the type's size.",
+      "rec": "rekurzija"
+    },
+    {
+      "lekcija": 12,
+      "tezina": 1,
+      "pitanje": "What is $Rc<T>$?",
+      "odgovori": [
+        "Shared ownership, one thread",
+        "Shared ownership, many threads",
+        "A mutable heap pointer",
+        "A weak, non-owning pointer"
+      ],
+      "zanimljivost": "Rc stands for Reference Counted. For sharing across threads use $Arc<T>$.",
+      "rec": "brojač"
+    },
+    {
+      "lekcija": 12,
+      "tezina": 2,
+      "pitanje": "What does $Rc::clone(&a)$ do?",
+      "odgovori": [
+        "Increments a counter",
+        "Deep-copies the data",
+        "Moves the data",
+        "Creates a weak pointer"
+      ],
+      "zanimljivost": "The Book recommends $Rc::clone(&a)$ over $a.clone()$ so cheap clones are visually distinct from expensive ones.",
+      "rec": "uvećanje"
+    },
+    {
+      "lekcija": 12,
+      "tezina": 2,
+      "pitanje": "When does $RefCell<T>$ check the borrowing rules?",
+      "odgovori": [
+        "At run time – panics if broken",
+        "At compile time, like ordinary references",
+        "Never – it is $unsafe$",
+        "Only in debug builds"
+      ],
+      "zanimljivost": "That's interior mutability: you can mutate through $&RefCell<T>$, but $borrow_mut$ twice at once panics.",
+      "rec": "ćelija"
+    },
+    {
+      "lekcija": 12,
+      "tezina": 3,
+      "pitanje": "What can a cycle of $Rc$ pointers cause, and what's the fix?",
+      "odgovori": [
+        "A memory leak – use $Weak<T>$",
+        "A deadlock – use $Mutex$",
+        "A panic – use $RefCell$",
+        "A double free – use $Box$ instead"
+      ],
+      "zanimljivost": "In a cycle the strong count never drops to zero. A tree typically uses $Rc$ from parent to child and $Weak$ from child to parent.",
+      "rec": "ciklus"
+    },
+    {
+      "lekcija": 12,
+      "tezina": 2,
+      "pitanje": "What lets you pass $&String$ where $&str$ is expected?",
+      "odgovori": [
+        "Deref coercion",
+        "Implicit cloning",
+        "Type erasure",
+        "Auto-boxing"
+      ],
+      "zanimljivost": "The compiler inserts as many $deref$ calls as needed at compile time – no run-time cost.",
+      "rec": "dereferenca"
+    },
+    {
+      "lekcija": 12,
+      "tezina": 2,
+      "pitanje": "How do you drop a value before the end of its scope?",
+      "odgovori": [
+        "$std::mem::drop(x)$",
+        "$x.drop()$",
+        "$delete x$",
+        "$x = null$"
+      ],
+      "zanimljivost": "Calling the $Drop::drop$ method directly is forbidden, because Rust would call it again at the end of scope (a double free).",
+      "rec": "brisanje"
+    },
+    {
+      "lekcija": 12,
+      "tezina": 2,
+      "pitanje": "What does $Rc<RefCell<T>>$ give you?",
+      "odgovori": [
+        "Many owners that can mutate",
+        "Thread-safe shared state across threads",
+        "A value that can't change",
+        "A non-owning reference"
+      ],
+      "zanimljivost": "In the Book's mock-object example this lets tests record messages through a shared reference.",
+      "rec": "zajedništvo"
+    },
+    {
+      "vrsta": "spoji",
+      "lekcija": 12,
+      "tezina": 2,
+      "pitanje": "Match each smart pointer with its role",
+      "parovi": [
+        [
+          "$Box<T>$",
+          "Single owner, heap allocation"
+        ],
+        [
+          "$Rc<T>$",
+          "Shared owners, one thread"
+        ],
+        [
+          "$RefCell<T>$",
+          "Borrow checks at run time"
+        ],
+        [
+          "$Weak<T>$",
+          "Doesn't keep the value alive"
+        ]
+      ],
+      "zanimljivost": "To use a $Weak$, call $upgrade()$ – it returns $Option<Rc<T>>$, since the value might be gone.",
+      "rec": "pametni"
+    },
+    {
+      "lekcija": 12,
+      "tezina": 3,
+      "pitanje": "When is the value inside an $Rc$ dropped?",
+      "odgovori": [
+        "When the strong count hits 0",
+        "When both counts hit 0",
+        "When the weak count hits 0",
+        "When the program exits"
+      ],
+      "zanimljivost": "Weak references don't keep the value alive. (The allocation itself stays until the weak count also reaches 0.)",
+      "rec": "jačina"
+    },
+    {
+      "lekcija": 13,
+      "tezina": 1,
+      "pitanje": "What does $.join()$ on a $JoinHandle$ do?",
+      "odgovori": [
+        "Waits for the thread to finish",
+        "Starts the thread",
+        "Kills the thread",
+        "Merges the thread into the main thread"
+      ],
+      "zanimljivost": "Rust threads are OS threads (1:1 model), not green threads.",
+      "rec": "nit"
+    },
+    {
+      "lekcija": 13,
+      "tezina": 2,
+      "pitanje": "What happens to spawned threads when $main$ finishes?",
+      "odgovori": [
+        "They are shut down",
+        "They keep running",
+        "$main$ waits for them",
+        "They become daemons"
+      ],
+      "zanimljivost": "That's why the Book's first example sometimes prints only part of the output from the spawned thread.",
+      "rec": "završetak"
+    },
+    {
+      "lekcija": 13,
+      "tezina": 1,
+      "pitanje": "What does $mpsc$ stand for?",
+      "odgovori": [
+        "Multiple producer, single consumer",
+        "Message passing over a shared channel",
+        "Multi-process synchronized call",
+        "Main process, sub-children"
+      ],
+      "zanimljivost": "You clone the transmitter ($tx$) for several producers, but there's only one receiver ($rx$).",
+      "rec": "kanal"
+    },
+    {
+      "lekcija": 13,
+      "tezina": 2,
+      "pitanje": "What happens to a value after $tx.send(val)$?",
+      "odgovori": [
+        "The receiver now owns it",
+        "It is copied for both sides",
+        "It is borrowed until received",
+        "It is dropped immediately"
+      ],
+      "zanimljivost": "If you try to use $val$ after sending, the compiler stops you – the receiving thread might already be changing it.",
+      "rec": "slanje"
+    },
+    {
+      "lekcija": 13,
+      "tezina": 1,
+      "pitanje": "How is a $Mutex$ unlocked in Rust?",
+      "odgovori": [
+        "Automatically, when the guard drops",
+        "By calling $unlock()$",
+        "After a timeout",
+        "Only when the thread that locked it exits"
+      ],
+      "zanimljivost": "$lock()$ returns a $MutexGuard$. You can't forget to unlock – but you can hold the guard too long.",
+      "rec": "brava"
+    },
+    {
+      "lekcija": 13,
+      "tezina": 3,
+      "pitanje": "Why share a $Mutex$ between threads with $Arc$ and not $Rc$?",
+      "odgovori": [
+        "$Rc$'s count isn't atomic",
+        "$Rc$ can't hold a $Mutex$",
+        "$Arc$ copies the data",
+        "$Rc$ is slower than $Arc$"
+      ],
+      "zanimljivost": "$Rc$ doesn't implement $Send$, so the compiler won't even let you move it into a thread. Atomics cost a little, so $Rc$ stays for single-threaded code.",
+      "rec": "atomski"
+    },
+    {
+      "lekcija": 13,
+      "tezina": 3,
+      "pitanje": "What does it mean that a type is $Sync$?",
+      "odgovori": [
+        "Its $&T$ can be sent to other threads",
+        "It must be locked to use",
+        "It runs on one thread only",
+        "It can be cloned atomically"
+      ],
+      "zanimljivost": "$Send$: ownership can move to another thread. $Sync$: sharing $&T$ between threads is safe. $Rc$ is neither; $Cell$ is $Send$ but not $Sync$.",
+      "rec": "usklađenost"
+    },
+    {
+      "lekcija": 13,
+      "tezina": 3,
+      "pitanje": "What do scoped threads ($thread::scope$, Rust 1.63) allow?",
+      "odgovori": [
+        "Borrowing local variables",
+        "Running without an OS",
+        "Spawning an unlimited number of threads",
+        "Skipping $Send$ checks"
+      ],
+      "zanimljivost": "All threads in the scope are joined before $scope$ returns, so borrowing from the stack is safe.",
+      "rec": "okvir"
+    },
+    {
+      "lekcija": 13,
+      "tezina": 2,
+      "pitanje": "Can safe Rust code still deadlock?",
+      "odgovori": [
+        "Yes – it's not prevented",
+        "No – the compiler stops it",
+        "Only with $unsafe$ code",
+        "Only on Windows"
+      ],
+      "zanimljivost": "Rust prevents data races, but not logic errors like two threads locking two mutexes in opposite order.",
+      "rec": "zastoj"
+    },
+    {
+      "lekcija": 13,
+      "tezina": 2,
+      "pitanje": "Implementing $Send$ or $Sync$ by hand requires…",
+      "odgovori": [
+        "$unsafe impl$",
+        "A derive macro",
+        "Nightly Rust",
+        "A special feature flag"
+      ],
+      "zanimljivost": "They are auto traits: a type made only of $Send$ parts is automatically $Send$.",
+      "rec": "garancija"
+    },
+    {
+      "vrsta": "spoji",
+      "lekcija": 13,
+      "tezina": 2,
+      "pitanje": "Match each tool with its job",
+      "parovi": [
+        [
+          "$Mutex<T>$",
+          "One thread at a time"
+        ],
+        [
+          "$Arc<T>$",
+          "Atomic shared ownership"
+        ],
+        [
+          "$mpsc::channel$",
+          "Sending messages"
+        ],
+        [
+          "$JoinHandle$",
+          "Waiting for a thread"
+        ]
+      ],
+      "zanimljivost": "Go's motto, quoted in the Book: “Do not communicate by sharing memory; share memory by communicating.”",
+      "rec": "razmena"
+    },
+    {
+      "lekcija": 14,
+      "tezina": 1,
+      "pitanje": "What does calling an $async fn$ return?",
+      "odgovori": [
+        "A future",
+        "A new thread",
+        "A $Result$",
+        "The finished value"
+      ],
+      "zanimljivost": "The body hasn't even started yet – the future is just a description of work to be done.",
+      "rec": "obećanje"
+    },
+    {
+      "lekcija": 14,
+      "tezina": 2,
+      "pitanje": "What happens to a future that is never awaited or polled?",
+      "odgovori": [
+        "Nothing – it never runs",
+        "It runs in the background",
+        "It runs when dropped",
+        "The program panics"
+      ],
+      "zanimljivost": "Futures are lazy, like iterators. The compiler warns about unused futures.",
+      "rec": "mirovanje"
+    },
+    {
+      "lekcija": 14,
+      "tezina": 2,
+      "pitanje": "What does Rust's standard library provide for running futures?",
+      "odgovori": [
+        "No runtime – use a crate",
+        "A built-in thread pool",
+        "A single global executor in $std::task$",
+        "A runtime only on Linux"
+      ],
+      "zanimljivost": "Popular runtimes are $tokio$, $smol$ and $async-std$. The Book uses its own helper crate, $trpl$.",
+      "rec": "okruženje"
+    },
+    {
+      "lekcija": 14,
+      "tezina": 1,
+      "pitanje": "How is “await” written in Rust?",
+      "odgovori": [
+        "$fut.await$",
+        "$await fut$",
+        "$await(fut)$",
+        "$fut.await()$"
+      ],
+      "zanimljivost": "The postfix form makes chaining easy: $get(url).await?.text().await?$.",
+      "rec": "čekanje"
+    },
+    {
+      "vrsta": "spoji",
+      "lekcija": 14,
+      "tezina": 2,
+      "pitanje": "Match each async tool with what it does",
+      "parovi": [
+        [
+          "$join$",
+          "Wait for all futures"
+        ],
+        [
+          "$select$ / $race$",
+          "First one to finish wins"
+        ],
+        [
+          "$spawn$",
+          "Run as a separate task"
+        ],
+        [
+          "$sleep(…).await$",
+          "Pause the task only"
+        ]
+      ],
+      "zanimljivost": "Unlike $thread::sleep$, an async sleep doesn't block the whole thread – other tasks keep running.",
+      "rec": "nadmetanje"
+    },
+    {
+      "lekcija": 14,
+      "tezina": 3,
+      "pitanje": "Why do some futures need to be pinned ($Pin$)?",
+      "odgovori": [
+        "They may point into themselves",
+        "They always need to stay on the heap",
+        "To make them thread-safe",
+        "To run them in parallel"
+      ],
+      "zanimljivost": "An $async$ block can borrow its own local variables across $.await$; moving it would break those internal pointers.",
+      "rec": "čioda"
+    },
+    {
+      "lekcija": 14,
+      "tezina": 2,
+      "pitanje": "How does the Book distinguish concurrency from parallelism?",
+      "odgovori": [
+        "Switching tasks vs. running at once",
+        "Threads vs. processes",
+        "Async vs. sync code",
+        "One CPU core vs. a GPU"
+      ],
+      "zanimljivost": "One person switching between tasks is concurrency; a team working on tasks simultaneously is parallelism.",
+      "rec": "paralelizam"
+    },
+    {
+      "lekcija": 14,
+      "tezina": 2,
+      "pitanje": "What does $std::thread::sleep$ inside an async task do?",
+      "odgovori": [
+        "Blocks the whole executor thread",
+        "Pauses only that task",
+        "Is a compile error",
+        "Is automatically turned into an $.await$"
+      ],
+      "zanimljivost": "Long blocking work belongs in $spawn_blocking$ or on a separate thread.",
+      "rec": "blokada"
+    },
+    {
+      "lekcija": 14,
+      "tezina": 1,
+      "pitanje": "What is a stream in async Rust?",
+      "odgovori": [
+        "An async iterator",
+        "A network socket wrapper",
+        "A thread pool",
+        "A byte buffer"
+      ],
+      "zanimljivost": "The $Stream$ trait isn't in the standard library yet; it lives in crates like $futures$ and $tokio-stream$.",
+      "rec": "tok"
+    },
+    {
+      "lekcija": 14,
+      "tezina": 3,
+      "pitanje": "How does an executor drive a future forward?",
+      "odgovori": [
+        "By calling $poll$ until it's $Ready$",
+        "By running it on a new thread",
+        "Through a callback after each line of code",
+        "Through OS signals"
+      ],
+      "zanimljivost": "$poll$ returns $Poll::Ready(value)$ or $Poll::Pending$; in the latter case the future arranges to be woken later.",
+      "rec": "prozivka"
+    },
+    {
+      "lekcija": 14,
+      "tezina": 2,
+      "pitanje": "Since which Rust version can traits contain $async fn$?",
+      "odgovori": [
+        "1.75",
+        "1.39",
+        "1.0",
+        "2.0"
+      ],
+      "zanimljivost": "$async/await$ itself arrived in 1.39 (2019); $async fn$ in traits took until the end of 2023.",
+      "rec": "verzija"
+    },
+    {
+      "lekcija": 15,
+      "tezina": 1,
+      "pitanje": "Can a Rust struct inherit fields from another struct?",
+      "odgovori": [
+        "No",
+        "Yes, with $extends$",
+        "Yes, with $impl$",
+        "Only with $#[derive]$"
+      ],
+      "zanimljivost": "Instead of inheritance Rust uses composition and traits. The Book argues that inheritance often shares more code than needed.",
+      "rec": "nasleđe"
+    },
+    {
+      "lekcija": 15,
+      "tezina": 1,
+      "pitanje": "What is $Box<dyn Draw>$?",
+      "odgovori": [
+        "A trait object",
+        "A generic parameter",
+        "A macro call",
+        "A tuple struct"
+      ],
+      "zanimljivost": "It allows a $Vec$ to hold different types – buttons and text boxes – as long as all implement $Draw$.",
+      "rec": "objekat"
+    },
+    {
+      "lekcija": 15,
+      "tezina": 2,
+      "pitanje": "Which method makes a trait unusable as $dyn Trait$?",
+      "odgovori": [
+        "One that is generic",
+        "One taking $&self$",
+        "One returning $String$",
+        "One with a default body"
+      ],
+      "zanimljivost": "Methods returning $Self$ or having type parameters break dyn compatibility (formerly “object safety”), since the vtable can't know the concrete type.",
+      "rec": "bezbednost"
+    },
+    {
+      "lekcija": 15,
+      "tezina": 2,
+      "pitanje": "What is a cost of dynamic dispatch?",
+      "odgovori": [
+        "No inlining, a vtable lookup",
+        "Extra copies of the code",
+        "Longer compile times",
+        "Heap allocation on every call"
+      ],
+      "zanimljivost": "Generics produce faster but larger code; trait objects produce smaller but slightly slower code.",
+      "rec": "poziv"
+    },
+    {
+      "lekcija": 15,
+      "tezina": 2,
+      "pitanje": "How does the Book's $AveragedCollection$ show encapsulation?",
+      "odgovori": [
+        "Private fields keep the average in sync",
+        "It inherits from $Vec$",
+        "It uses a global variable",
+        "All fields are public"
+      ],
+      "zanimljivost": "Since $list$ and $average$ are private, users can't change one without the other.",
+      "rec": "kapsula"
+    },
+    {
+      "lekcija": 15,
+      "tezina": 3,
+      "pitanje": "In the blog post state pattern, why does $request_review$ take $self: Box<Self>$?",
+      "odgovori": [
+        "It consumes the old state",
+        "Boxed methods are faster to call",
+        "To allow inheritance",
+        "To avoid using $dyn$"
+      ],
+      "zanimljivost": "Taking ownership of the box makes the old state unusable – each transition returns a brand-new state object.",
+      "rec": "stanje"
+    },
+    {
+      "lekcija": 15,
+      "tezina": 2,
+      "pitanje": "What does the Book suggest as a more “Rusty” alternative to the state pattern?",
+      "odgovori": [
+        "Each state is a separate type",
+        "One big $match$ in $main$",
+        "Global boolean flags for each of the states",
+        "Inheritance through macros"
+      ],
+      "zanimljivost": "With $DraftPost$ and $PendingReviewPost$, trying to publish a draft is a compile error, not a run-time bug.",
+      "rec": "nacrt"
+    },
+    {
+      "vrsta": "uljez",
+      "lekcija": 15,
+      "tezina": 2,
+      "pitanje": "Which is NOT a way to achieve polymorphism in Rust?",
+      "odgovori": [
+        "Class inheritance",
+        "Generics with trait bounds",
+        "Trait objects ($dyn$)",
+        "Enums with $match$"
+      ],
+      "objasnjenje": "Rust has no classes and no inheritance; the other three are all common ways to write code that works with many types.",
+      "zanimljivost": "Enums are the best fit when the set of variants is closed; trait objects when other crates should add new types.",
+      "rec": "oblik"
+    },
+    {
+      "lekcija": 15,
+      "tezina": 3,
+      "pitanje": "How big is $&dyn Trait$ on a 64-bit machine?",
+      "odgovori": [
+        "16 bytes",
+        "8 bytes",
+        "4 bytes",
+        "24 bytes"
+      ],
+      "zanimljivost": "It's a fat pointer: one pointer to the data and one to the vtable (methods, size, alignment, destructor).",
+      "rec": "tabela"
+    },
+    {
+      "lekcija": 15,
+      "tezina": 1,
+      "pitanje": "What does Rust offer in place of inherited method implementations?",
+      "odgovori": [
+        "Default methods in traits",
+        "Abstract base classes",
+        "Global helper functions",
+        "Copying shared code with macros"
+      ],
+      "zanimljivost": "A type can implement many traits, so it can pick up default behavior from several sources at once.",
+      "rec": "šema"
+    },
+    {
+      "vrsta": "uljez",
+      "lekcija": 16,
+      "tezina": 2,
+      "pitanje": "Which of these is NOT one of $unsafe$'s “superpowers”?",
+      "odgovori": [
+        "Turning off the borrow checker",
+        "Dereferencing a raw pointer",
+        "Calling an $unsafe$ function",
+        "Mutating a $static mut$"
+      ],
+      "objasnjenje": "Inside $unsafe$ references are still borrow-checked; you just get five extra abilities (also: $unsafe$ traits and $union$ fields).",
+      "zanimljivost": "Keeping $unsafe$ blocks small makes it much easier to find a memory bug: you know where to look.",
+      "rec": "moć"
+    },
+    {
+      "lekcija": 16,
+      "tezina": 2,
+      "pitanje": "Which raw pointer operation requires $unsafe$?",
+      "odgovori": [
+        "Dereferencing it",
+        "Creating it",
+        "Comparing it",
+        "Printing its address"
+      ],
+      "zanimljivost": "$&raw const x$ or $&x as *const i32$ is safe – a pointer that is never read can't hurt anyone.",
+      "rec": "sirov"
+    },
+    {
+      "lekcija": 16,
+      "tezina": 2,
+      "pitanje": "Why does $Iterator$ use an associated type ($type Item$) instead of a generic $Iterator<T>$?",
+      "odgovori": [
+        "One implementation per type",
+        "Associated types are faster to compile",
+        "Generics can't be in traits",
+        "It allows inheritance"
+      ],
+      "zanimljivost": "With $Iterator<T>$ a type could implement it several times and every $next()$ call would need a type annotation.",
+      "rec": "pridruženi"
+    },
+    {
+      "lekcija": 16,
+      "tezina": 2,
+      "pitanje": "How do you call $baby_name$ from trait $Animal$ when $Dog$ has its own one too?",
+      "odgovori": [
+        "$<Dog as Animal>::baby_name()$",
+        "$Dog::Animal::baby_name()$",
+        "$Animal.baby_name(Dog)$",
+        "$Dog.super.baby_name()$"
+      ],
+      "zanimljivost": "This is fully qualified syntax. It's needed for associated functions without $self$, where the compiler can't infer the type.",
+      "rec": "nejasnoća"
+    },
+    {
+      "lekcija": 16,
+      "tezina": 2,
+      "pitanje": "What is the newtype pattern commonly used for?",
+      "odgovori": [
+        "Getting around the orphan rule",
+        "Making types bigger",
+        "Running code faster",
+        "Disabling type checks for a wrapped value"
+      ],
+      "zanimljivost": "$struct Wrapper(Vec<String>);$ is local, so you may implement $Display$ for it. The wrapper costs nothing at run time.",
+      "rec": "obloga"
+    },
+    {
+      "lekcija": 16,
+      "tezina": 2,
+      "pitanje": "What does the never type $!$ describe?",
+      "odgovori": [
+        "A computation that never returns",
+        "A value that is always zero or empty",
+        "A boolean negation",
+        "An unknown error"
+      ],
+      "zanimljivost": "$panic!$, $continue$, $loop$ without $break$ and $std::process::exit$ all have type $!$, which can coerce to any type.",
+      "rec": "nikad"
+    },
+    {
+      "lekcija": 16,
+      "tezina": 1,
+      "pitanje": "What does $type Kilometers = i32;$ create?",
+      "odgovori": [
+        "An alias – the same type",
+        "A new distinct type",
+        "A constant named $Kilometers$",
+        "A newtype wrapper"
+      ],
+      "zanimljivost": "You can add $Kilometers$ and plain $i32$ freely. For type safety you'd need a newtype instead.",
+      "rec": "sinonim"
+    },
+    {
+      "lekcija": 16,
+      "tezina": 3,
+      "pitanje": "What does $?Sized$ in $fn f<T: ?Sized>(t: &T)$ mean?",
+      "odgovori": [
+        "$T$ may be a dynamically sized type",
+        "$T$ must be zero-sized",
+        "$T$ size is checked at run time",
+        "$T$ must live on the heap"
+      ],
+      "zanimljivost": "Generics get an implicit $Sized$ bound. $?Sized$ relaxes it so $T$ can be $str$ or $[u8]$ behind a reference.",
+      "rec": "veličina"
+    },
+    {
+      "lekcija": 16,
+      "tezina": 2,
+      "pitanje": "What can you pass where an $fn(i32) -> i32$ parameter is expected?",
+      "odgovori": [
+        "A function or non-capturing closure",
+        "Only a boxed closure like $Box<dyn Fn>$",
+        "Any closure at all",
+        "Only a method"
+      ],
+      "zanimljivost": "$fn$ (lowercase) is a type, not a trait. Function pointers implement all three closure traits.",
+      "rec": "pokazivač"
+    },
+    {
+      "vrsta": "spoji",
+      "lekcija": 16,
+      "tezina": 2,
+      "pitanje": "Match each kind of macro with an example",
+      "parovi": [
+        [
+          "Declarative",
+          "$macro_rules!$"
+        ],
+        [
+          "Custom derive",
+          "$#[derive(Serialize)]$"
+        ],
+        [
+          "Attribute-like",
+          "$#[route(GET, \"/\")]$"
+        ],
+        [
+          "Function-like",
+          "$sql!(SELECT * FROM t)$"
+        ]
+      ],
+      "zanimljivost": "Macros run at compile time and can take a variable number of arguments – something functions can't.",
+      "rec": "makro"
+    },
+    {
+      "lekcija": 16,
+      "tezina": 3,
+      "pitanje": "How do you make $+$ work for your own $Point$ type?",
+      "odgovori": [
+        "Implement $std::ops::Add$",
+        "Define $fn +(…)$",
+        "Write a $macro_rules!$ named $+$",
+        "It isn't possible"
+      ],
+      "zanimljivost": "Only operators listed in $std::ops$ can be overloaded – you can't invent new operators.",
+      "rec": "sabiranje"
+    },
+    {
+      "lekcija": 16,
+      "tezina": 3,
+      "pitanje": "What does $trait OutlinePrint: fmt::Display$ mean?",
+      "odgovori": [
+        "Implementors must also be $Display$",
+        "It inherits all of $Display$'s method code",
+        "It replaces $Display$",
+        "It makes $Display$ private"
+      ],
+      "zanimljivost": "$Display$ is a supertrait, so methods of $OutlinePrint$ may call $to_string()$.",
+      "rec": "nadređeni"
+    },
+    {
+      "lekcija": 17,
+      "tezina": 1,
+      "pitanje": "Where do the bytes of a string literal live?",
+      "odgovori": [
+        "In static memory, in the binary",
+        "On the heap",
+        "On the stack",
+        "In CPU registers"
+      ],
+      "zanimljivost": "Static memory is loaded together with the program and lives for its whole run – hence the $'static$ lifetime of literals.",
+      "rec": "memorija"
+    },
+    {
+      "lekcija": 17,
+      "tezina": 2,
+      "pitanje": "What does $Box::leak$ give you?",
+      "odgovori": [
+        "A $&'static mut T$",
+        "A raw pointer to free later",
+        "A clone of the value",
+        "A $Weak<T>$ reference"
+      ],
+      "zanimljivost": "Leaking is safe in Rust. It's handy for data created at startup that must live until the program exits.",
+      "rec": "curenje"
+    },
+    {
+      "lekcija": 17,
+      "tezina": 3,
+      "pitanje": "With respect to $T$, the type $&'a mut T$ is…",
+      "odgovori": [
+        "Invariant",
+        "Covariant",
+        "Contravariant",
+        "Bivariant"
+      ],
+      "zanimljivost": "If $&mut$ were covariant, you could store a short-lived reference where a $'static$ one is expected – a classic memory bug.",
+      "rec": "varijansa"
+    },
+    {
+      "lekcija": 17,
+      "tezina": 3,
+      "pitanje": "Which of these types is contravariant in $T$?",
+      "odgovori": [
+        "$fn(T)$",
+        "$&T$",
+        "$Box<T>$",
+        "$Vec<T>$"
+      ],
+      "zanimljivost": "A function that accepts any $&'a str$ is more useful than one that requires $&'static str$ – the subtyping goes “the other way”.",
+      "rec": "obrnuto"
+    },
+    {
+      "lekcija": 17,
+      "tezina": 2,
+      "pitanje": "What is the only legal way to mutate data behind a shared reference?",
+      "odgovori": [
+        "Through $UnsafeCell$",
+        "With a raw pointer cast",
+        "With $mem::transmute$",
+        "With a $static mut$"
+      ],
+      "zanimljivost": "$Cell$, $RefCell$, $Mutex$ and the atomics are all built on top of $UnsafeCell$.",
+      "rec": "unutrašnjost"
+    },
+    {
+      "lekcija": 17,
+      "tezina": 2,
+      "pitanje": "How does Gjengset describe a lifetime?",
+      "odgovori": [
+        "A region of code where a reference is valid",
+        "A number of seconds",
+        "The number of stack frames a value survives",
+        "A counter in the heap"
+      ],
+      "zanimljivost": "A lifetime can have “holes”: a borrow can be invalid for a while and then become valid again.",
+      "rec": "oblast"
+    },
+    {
+      "lekcija": 17,
+      "tezina": 2,
+      "pitanje": "In which order are local variables dropped?",
+      "odgovori": [
+        "Reverse order of declaration",
+        "The same order as declaration",
+        "Alphabetical order",
+        "Order of last use"
+      ],
+      "zanimljivost": "Struct fields and tuple elements are the opposite – they're dropped in source order.",
+      "rec": "uništavanje"
+    },
+    {
+      "lekcija": 17,
+      "tezina": 3,
+      "pitanje": "How can you move a value out from behind a $&mut T$?",
+      "odgovori": [
+        "Swap something in, e.g. $mem::take$",
+        "Just use $*r$",
+        "Call $r.clone()$ and drop the original",
+        "Cast it to $Box<T>$"
+      ],
+      "zanimljivost": "$mem::take$ leaves $Default::default()$ behind, $mem::replace$ leaves a value you choose. The owner must never see an empty place.",
+      "rec": "zamena"
+    },
+    {
+      "lekcija": 17,
+      "tezina": 2,
+      "pitanje": "Which of these types implements $Copy$?",
+      "odgovori": [
+        "$&T$",
+        "$&mut T$",
+        "$Box<T>$",
+        "$String$"
+      ],
+      "zanimljivost": "Shared references can be freely copied; an exclusive reference must stay unique, so it can only be moved or reborrowed.",
+      "rec": "deljenje"
+    },
+    {
+      "lekcija": 17,
+      "tezina": 2,
+      "pitanje": "How does a $static$ item differ from a $const$?",
+      "odgovori": [
+        "$static$ has one fixed address",
+        "$const$ can be mutable",
+        "$static$ is evaluated at run time",
+        "$const$ lives on the heap"
+      ],
+      "zanimljivost": "A $const$ is copied into every place it is used, so taking its address twice can give two different pointers.",
+      "rec": "adresa"
+    },
+    {
+      "lekcija": 18,
+      "tezina": 3,
+      "pitanje": "What is the size of this struct?",
+      "odgovori": [
+        "12 bytes",
+        "6 bytes",
+        "8 bytes",
+        "16 bytes"
+      ],
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "#[repr(C)]\nstruct Foo {\n    a: u8,\n    b: u32,\n    c: u8,\n}"
+      },
+      "zanimljivost": "With C layout, fields stay in order: $a$ (1) + 3 padding + $b$ (4) + $c$ (1) + 3 padding so the size is a multiple of the alignment 4.",
+      "rec": "poravnanje"
+    },
+    {
+      "lekcija": 18,
+      "tezina": 3,
+      "pitanje": "Without $#[repr(C)]$, how big would the same $a: u8, b: u32, c: u8$ struct be?",
+      "odgovori": [
+        "8 bytes – fields get reordered",
+        "12 bytes, like C",
+        "6 bytes, no padding",
+        "It varies at run time"
+      ],
+      "zanimljivost": "The default Rust layout makes no promises about field order, so the compiler can place $b$ first and pack $a$ and $c$ together.",
+      "rec": "preuređenje"
+    },
+    {
+      "lekcija": 18,
+      "tezina": 2,
+      "pitanje": "What does $#[repr(transparent)]$ guarantee?",
+      "odgovori": [
+        "Same layout as its single field",
+        "No padding at all",
+        "Fields stay in source order, like $repr(C)$",
+        "The type is zero-sized"
+      ],
+      "zanimljivost": "It allows safely casting between a newtype and the wrapped type, also across FFI.",
+      "rec": "providnost"
+    },
+    {
+      "lekcija": 18,
+      "tezina": 2,
+      "pitanje": "What is the risk of $#[repr(packed)]$?",
+      "odgovori": [
+        "Unaligned field access",
+        "Bigger memory usage",
+        "Slower compile times",
+        "Fields get reordered by the compiler"
+      ],
+      "zanimljivost": "Taking a reference to an unaligned field is undefined behavior, so the compiler forbids it in packed structs.",
+      "rec": "pakovanje"
+    },
+    {
+      "lekcija": 18,
+      "tezina": 2,
+      "pitanje": "What is $size_of::<Option<Box<i32>>>()$ on a 64-bit target?",
+      "odgovori": [
+        "8",
+        "16",
+        "9",
+        "12"
+      ],
+      "zanimljivost": "The niche optimization: a $Box$ can never be null, so $None$ is stored as the null pointer – no extra tag byte needed.",
+      "rec": "niša"
+    },
+    {
+      "vrsta": "uljez",
+      "lekcija": 18,
+      "tezina": 2,
+      "pitanje": "Which of these is NOT a wide (fat) pointer?",
+      "odgovori": [
+        "$&u64$",
+        "$&[u8]$",
+        "$&str$",
+        "$&dyn Debug$"
+      ],
+      "objasnjenje": "$&u64$ is just an address. Slices carry a length and trait objects a vtable pointer, so those are two words.",
+      "zanimljivost": "The extra word is what lets $len()$ on a slice and method calls on $dyn$ work without looking anything up.",
+      "rec": "širina"
+    },
+    {
+      "lekcija": 18,
+      "tezina": 2,
+      "pitanje": "What is a downside of static dispatch with generics?",
+      "odgovori": [
+        "A copy of the code per type",
+        "Slower calls at run time through a vtable",
+        "No inlining possible",
+        "Values must be boxed"
+      ],
+      "zanimljivost": "Gjengset suggests a trick: a generic outer function converting to a concrete type and calling a non-generic inner one.",
+      "rec": "umnožavanje"
+    },
+    {
+      "lekcija": 18,
+      "tezina": 3,
+      "pitanje": "How does $trait Foo<T>$ differ from a trait with $type T;$?",
+      "odgovori": [
+        "Generic: several impls per type",
+        "Associated: faster at run time",
+        "Only generic traits can be $dyn$",
+        "There is no real difference"
+      ],
+      "zanimljivost": "With a generic trait, the same type can implement $Foo<i32>$ and $Foo<String>$. Associated types make inference easier.",
+      "rec": "višestruko"
+    },
+    {
+      "lekcija": 18,
+      "tezina": 3,
+      "pitanje": "Is $impl From<MyType> for Vec<i32>$ allowed in your crate?",
+      "odgovori": [
+        "Yes – $MyType$ is local",
+        "No – $Vec$ is foreign",
+        "No – $From$ is foreign",
+        "Only with $unsafe impl$"
+      ],
+      "zanimljivost": "The orphan rule lets you implement a foreign trait for a foreign type if a local type appears as a trait parameter in the right position.",
+      "rec": "dozvoljeno"
+    },
+    {
+      "lekcija": 18,
+      "tezina": 2,
+      "pitanje": "What kind of type is $impl Trait$ in a return position?",
+      "odgovori": [
+        "An existential type",
+        "A dynamic type",
+        "A union type",
+        "A type-erased trait object"
+      ],
+      "zanimljivost": "The concrete type exists and the compiler knows it; the caller only knows it implements the trait.",
+      "rec": "postojanje"
+    },
+    {
+      "lekcija": 18,
+      "tezina": 2,
+      "pitanje": "What is $size_of::<()>()$?",
+      "odgovori": [
+        "0",
+        "1",
+        "8",
+        "It doesn't compile"
+      ],
+      "zanimljivost": "Zero-sized types are common: $()$, unit structs, $PhantomData<T>$. A $HashSet<T>$ is in fact a $HashMap<T, ()>$.",
+      "rec": "nula"
+    },
+    {
+      "lekcija": 18,
+      "tezina": 3,
+      "pitanje": "How can a trait keep a generic method and still be usable as $dyn Trait$?",
+      "odgovori": [
+        "Add $where Self: Sized$",
+        "Mark it $#[inline]$",
+        "Make it $async$",
+        "Give the method a default body"
+      ],
+      "zanimljivost": "Such a method is left out of the vtable – you just can't call it on a trait object.",
+      "rec": "izuzetak"
+    },
+    {
+      "vrsta": "uljez",
+      "lekcija": 19,
+      "tezina": 2,
+      "pitanje": "Which is NOT one of Gjengset's four principles for interfaces?",
+      "odgovori": [
+        "Minimal",
+        "Unsurprising",
+        "Flexible",
+        "Obvious"
+      ],
+      "objasnjenje": "The four are: unsurprising, flexible, obvious and constrained.",
+      "zanimljivost": "“Constrained” is about thinking ahead: everything you expose becomes a promise you must keep.",
+      "rec": "načelo"
+    },
+    {
+      "vrsta": "spoji",
+      "lekcija": 19,
+      "tezina": 2,
+      "pitanje": "Match each naming convention with its meaning",
+      "parovi": [
+        [
+          "$as_…$",
+          "Cheap borrowed view"
+        ],
+        [
+          "$to_…$",
+          "Expensive, new owned value"
+        ],
+        [
+          "$into_…$",
+          "Consumes $self$"
+        ],
+        [
+          "$…_mut$",
+          "Mutable variant"
+        ]
+      ],
+      "zanimljivost": "Following these conventions means users can guess what your methods do without reading the docs.",
+      "rec": "imenovanje"
+    },
+    {
+      "lekcija": 19,
+      "tezina": 2,
+      "pitanje": "Why should a library implement $Debug$, $Clone$, $Default$… even if it doesn't need them?",
+      "odgovori": [
+        "Users can't add them (orphan rule)",
+        "The compiler requires it for public types",
+        "It makes code faster",
+        "It shortens build times"
+      ],
+      "zanimljivost": "A user can't write $impl Debug for YourType$ in their crate, so a missing derive forces awkward wrappers.",
+      "rec": "ljubaznost"
+    },
+    {
+      "lekcija": 19,
+      "tezina": 3,
+      "pitanje": "Why is adding a blanket implementation to a public trait usually a breaking change?",
+      "odgovori": [
+        "It may conflict with users' impls",
+        "It changes the trait's name",
+        "It removes old methods",
+        "It needs a new edition"
+      ],
+      "zanimljivost": "Even adding an ordinary trait impl can break code if method names become ambiguous.",
+      "rec": "izmena"
+    },
+    {
+      "lekcija": 19,
+      "tezina": 2,
+      "pitanje": "What does $#[non_exhaustive]$ on a public enum do?",
+      "odgovori": [
+        "Users must add a $_$ arm",
+        "Forbids adding new variants later",
+        "Makes variants private",
+        "Hides it from the docs"
+      ],
+      "zanimljivost": "It lets you add variants later in a minor version. On structs it prevents users from constructing them with literal syntax.",
+      "rec": "budućnost"
+    },
+    {
+      "lekcija": 19,
+      "tezina": 3,
+      "pitanje": "What is a sealed trait?",
+      "odgovori": [
+        "One that other crates can't implement",
+        "One that can't have methods",
+        "One that can't be $dyn$",
+        "One whose methods are all $unsafe$ to call"
+      ],
+      "zanimljivost": "The trick: the trait has a supertrait in a private module, which outsiders can't name.",
+      "rec": "pečat"
+    },
+    {
+      "lekcija": 19,
+      "tezina": 2,
+      "pitanje": "Why take $impl AsRef<Path>$ instead of $&Path$?",
+      "odgovori": [
+        "Callers may pass $&str$, $String$…",
+        "It's faster at run time",
+        "It avoids generics",
+        "$&Path$ can't be borrowed across threads"
+      ],
+      "zanimljivost": "That's why $File::open(\"x.txt\")$ works with a plain string literal.",
+      "rec": "elastičnost"
+    },
+    {
+      "lekcija": 19,
+      "tezina": 2,
+      "pitanje": "What does a typestate API like $Rocket<Grounded>$ / $Rocket<Launched>$ achieve?",
+      "odgovori": [
+        "Invalid calls fail to compile",
+        "States are checked at run time",
+        "Uses less heap memory",
+        "Avoids all generics"
+      ],
+      "zanimljivost": "The state parameter is usually a zero-sized $PhantomData$, so it costs nothing at run time.",
+      "rec": "lansiranje"
+    },
+    {
+      "lekcija": 19,
+      "tezina": 1,
+      "pitanje": "What does $#[must_use]$ do?",
+      "odgovori": [
+        "Warns if the return value is ignored",
+        "Forces callers to use $unsafe$",
+        "Panics if the value is dropped",
+        "Makes the function const"
+      ],
+      "zanimljivost": "$Result$ and all iterator adapters are marked $#[must_use]$.",
+      "rec": "upozorenje"
+    },
+    {
+      "lekcija": 19,
+      "tezina": 3,
+      "pitanje": "Why can re-exposing a dependency's type in your public API be risky?",
+      "odgovori": [
+        "Its major bump becomes yours",
+        "It makes the compiled crate larger",
+        "It can't be documented",
+        "It disables optimizations"
+      ],
+      "zanimljivost": "If users get a $Bytes$ from your crate and $bytes$ releases 2.0, upgrading it breaks your users too.",
+      "rec": "zavisnost"
+    },
+    {
+      "lekcija": 19,
+      "tezina": 2,
+      "pitanje": "What happens to code examples in $///$ doc comments?",
+      "odgovori": [
+        "$cargo test$ compiles and runs them",
+        "They are only syntax-highlighted in HTML",
+        "They are compiled but never run",
+        "They are removed on publish"
+      ],
+      "zanimljivost": "Lines starting with $#$ are hidden in the rendered docs but still compiled – handy for setup code.",
+      "rec": "primer"
+    },
+    {
+      "lekcija": 20,
+      "tezina": 2,
+      "pitanje": "Which two kinds of error representation does Gjengset compare?",
+      "odgovori": [
+        "Enumerated and opaque",
+        "Checked and unchecked",
+        "Fatal and non-fatal",
+        "Static and dynamic"
+      ],
+      "zanimljivost": "Enumerated: an enum the caller can match on. Opaque: one type (like a $Box<dyn Error>$) with a message.",
+      "rec": "vrsta"
+    },
+    {
+      "lekcija": 20,
+      "tezina": 1,
+      "pitanje": "Which traits must a type implement to be $std::error::Error$?",
+      "odgovori": [
+        "$Debug$ and $Display$",
+        "$Clone$ and $Debug$",
+        "$Display$ and $Send$",
+        "$Copy$ and $Debug$"
+      ],
+      "zanimljivost": "$Error$ itself has no required methods – just these two supertraits.",
+      "rec": "zahtev"
+    },
+    {
+      "lekcija": 20,
+      "tezina": 3,
+      "pitanje": "What is $Error::source()$ for?",
+      "odgovori": [
+        "Getting the underlying cause",
+        "Finding the file and line of the error",
+        "Converting to a $String$",
+        "Printing a backtrace"
+      ],
+      "zanimljivost": "Following $source()$ repeatedly gives a chain of errors – e.g. “config failed” ← “read failed” ← “permission denied”.",
+      "rec": "uzrok"
+    },
+    {
+      "lekcija": 20,
+      "tezina": 3,
+      "pitanje": "Why should opaque errors usually be $Send + Sync$?",
+      "odgovori": [
+        "So they can cross threads",
+        "To make them smaller",
+        "To print them faster",
+        "So $?$ can convert them"
+      ],
+      "zanimljivost": "Errors are often returned from a thread pool or an async task running on another thread.",
+      "rec": "prenosivost"
+    },
+    {
+      "lekcija": 20,
+      "tezina": 2,
+      "pitanje": "How does $?$ convert one error type into another?",
+      "odgovori": [
+        "With $From::from$",
+        "With $Into::into$ only",
+        "With $as$ casting",
+        "With $Clone::clone$"
+      ],
+      "zanimljivost": "Implement $From<io::Error> for MyError$ and $?$ works on I/O results in your functions.",
+      "rec": "pretvaranje"
+    },
+    {
+      "vrsta": "spoji",
+      "lekcija": 20,
+      "tezina": 2,
+      "pitanje": "Match each crate with its typical use",
+      "parovi": [
+        [
+          "$thiserror$",
+          "Enumerated errors in libraries"
+        ],
+        [
+          "$anyhow$",
+          "Opaque errors in applications"
+        ],
+        [
+          "$Box<dyn Error>$",
+          "Opaque, standard library only"
+        ],
+        [
+          "$panic!$",
+          "Bugs, not expected failures"
+        ]
+      ],
+      "zanimljivost": "Both crates were written by David Tolnay, who also wrote $serde$, $syn$ and $quote$.",
+      "rec": "biranje"
+    },
+    {
+      "lekcija": 20,
+      "tezina": 3,
+      "pitanje": "Why should an error type be $'static$?",
+      "odgovori": [
+        "So callers can downcast it",
+        "So it lives in the binary",
+        "So it can be $Copy$",
+        "So it can be a constant"
+      ],
+      "zanimljivost": "Downcasting ($downcast_ref::<io::Error>()$) is built on $Any$, which only works for $'static$ types.",
+      "rec": "proba"
+    },
+    {
+      "lekcija": 20,
+      "tezina": 2,
+      "pitanje": "Rust's API guidelines say error messages ($Display$) should be…",
+      "odgovori": [
+        "Lowercase, no trailing period",
+        "Uppercase with an exclamation",
+        "Always include a backtrace",
+        "Write them as full paragraphs"
+      ],
+      "zanimljivost": "Messages are often chained together (“failed to read config: no such file”), so short lowercase fragments read best.",
+      "rec": "stil"
+    },
+    {
+      "lekcija": 20,
+      "tezina": 2,
+      "pitanje": "A lookup simply finds nothing. What is the idiomatic return?",
+      "odgovori": [
+        "$None$ from an $Option$",
+        "An $Err$ with a “not found” message",
+        "A $panic!$",
+        "A $Result$ with $()$"
+      ],
+      "zanimljivost": "“Not found” is often a normal outcome, not an error – e.g. $HashMap::get$ returns $Option$.",
+      "rec": "odsustvo"
+    },
+    {
+      "lekcija": 20,
+      "tezina": 3,
+      "pitanje": "How do you use $?$ on an $Option$ in a function returning $Result$?",
+      "odgovori": [
+        "Convert it with $.ok_or(err)?$",
+        "It works directly",
+        "Wrap it in $Box::new$",
+        "It's impossible without $match$ in Rust"
+      ],
+      "zanimljivost": "$ok_or_else$ builds the error lazily. The opposite direction is $.ok()?$.",
+      "rec": "mešanje"
+    },
+    {
+      "lekcija": 20,
+      "tezina": 2,
+      "pitanje": "What does $JoinHandle::join$ return if the thread panicked?",
+      "odgovori": [
+        "An $Err$ with the panic payload",
+        "$Ok(())$ as usual",
+        "It panics too",
+        "It blocks forever, waiting for the thread"
+      ],
+      "zanimljivost": "A panic in one thread doesn't bring down the whole program – unless it's the main thread, or $panic = 'abort'$ is set.",
+      "rec": "otpornost"
+    },
+    {
+      "lekcija": 21,
+      "tezina": 2,
+      "pitanje": "Cargo features should be…",
+      "odgovori": [
+        "Additive",
+        "Mutually exclusive",
+        "Enabled by default",
+        "Limited to one crate"
+      ],
+      "zanimljivost": "Enabling a feature should only add things, never remove or change behavior that others rely on.",
+      "rec": "dodavanje"
+    },
+    {
+      "lekcija": 21,
+      "tezina": 2,
+      "pitanje": "What does Cargo create for an optional dependency?",
+      "odgovori": [
+        "A feature you can enable",
+        "A separate workspace",
+        "A build script",
+        "A new binary"
+      ],
+      "zanimljivost": "The $dep:name$ syntax (Rust 1.60) lets you hide that implicit feature and expose a nicer name.",
+      "rec": "opcija"
+    },
+    {
+      "lekcija": 21,
+      "tezina": 3,
+      "pitanje": "What is feature unification?",
+      "odgovori": [
+        "Each crate gets the union of all requests",
+        "Each dependent gets its own separately built copy",
+        "Features merge into one",
+        "Default features are removed"
+      ],
+      "zanimljivost": "If two crates in the dependency graph enable different features of $tokio$, it's built once with both.",
+      "rec": "ujedinjenje"
+    },
+    {
+      "lekcija": 21,
+      "tezina": 2,
+      "pitanje": "What is the $[patch]$ section of $Cargo.toml$ for?",
+      "odgovori": [
+        "Overriding a dependency's source",
+        "Applying $.diff$ files to the source code",
+        "Updating Rust itself",
+        "Fixing compiler warnings"
+      ],
+      "zanimljivost": "Handy for testing a fix in a dependency (e.g. from a git branch) before it's released.",
+      "rec": "zakrpa"
+    },
+    {
+      "lekcija": 21,
+      "tezina": 2,
+      "pitanje": "What does the $rust-version$ field in $Cargo.toml$ declare?",
+      "odgovori": [
+        "The minimum supported Rust version",
+        "The exact required version",
+        "The edition being used",
+        "The newest release the crate was tested on"
+      ],
+      "zanimljivost": "MSRV is a promise to users on older compilers. Since Rust 1.84 the resolver can prefer dependency versions compatible with it.",
+      "rec": "minimum"
+    },
+    {
+      "lekcija": 21,
+      "tezina": 1,
+      "pitanje": "What does $#[cfg(target_os = \"linux\")]$ do?",
+      "odgovori": [
+        "Compiles the item only on Linux",
+        "Checks the OS at run time",
+        "Warns on other systems",
+        "Links Linux libraries"
+      ],
+      "zanimljivost": "$cfg!(…)$ (the macro) evaluates to a $bool$ instead – but both branches must compile everywhere.",
+      "rec": "platforma"
+    },
+    {
+      "lekcija": 21,
+      "tezina": 3,
+      "pitanje": "What do $lto = true$ and $codegen-units = 1$ trade?",
+      "odgovori": [
+        "Slower builds for faster code",
+        "Faster builds for smaller code",
+        "Safety for speed",
+        "Debug info for speed"
+      ],
+      "zanimljivost": "With more codegen units the compiler works in parallel but sees less of the program at once, missing some optimizations.",
+      "rec": "povezivanje"
+    },
+    {
+      "lekcija": 21,
+      "tezina": 2,
+      "pitanje": "In $Cargo.toml$, what does $serde = \"1.0\"$ allow?",
+      "odgovori": [
+        "Any 1.x version from 1.0.0",
+        "Exactly version 1.0.0",
+        "Any version at all",
+        "Only the 1.0.x patch releases"
+      ],
+      "zanimljivost": "It's a caret requirement ($^1.0$): updates that semver promises are compatible. $=1.0.0$ pins an exact version.",
+      "rec": "raspon"
+    },
+    {
+      "lekcija": 21,
+      "tezina": 2,
+      "pitanje": "How can you optimize dependencies while your own crate stays unoptimized in dev builds?",
+      "odgovori": [
+        "A profile override for other packages",
+        "Build everything twice with different flags",
+        "Vendor all dependencies",
+        "Use $--release$ only for tests"
+      ],
+      "zanimljivost": "$[profile.dev.package.\"*\"] opt-level = 3$ – the dependencies rarely change, so they're compiled once.",
+      "rec": "profil"
+    },
+    {
+      "lekcija": 21,
+      "tezina": 3,
+      "pitanje": "What can a $build.rs$ script do?",
+      "odgovori": [
+        "Generate code and configure linking",
+        "Replace the compiler",
+        "Run after the tests finish to clean up",
+        "Publish the crate"
+      ],
+      "zanimljivost": "It prints instructions like $cargo:rerun-if-changed=…$ so Cargo knows when to run it again.",
+      "rec": "skripta"
+    },
+    {
+      "lekcija": 21,
+      "tezina": 2,
+      "pitanje": "Why are mutually exclusive features discouraged?",
+      "odgovori": [
+        "Another crate may enable both",
+        "Cargo forbids them",
+        "They break $cargo doc$",
+        "They slow down linking"
+      ],
+      "zanimljivost": "Because of feature unification you can't control what others in the dependency graph turn on.",
+      "rec": "isključivost"
+    },
+    {
+      "lekcija": 22,
+      "tezina": 2,
+      "pitanje": "What does $harness = false$ on a test target do?",
+      "odgovori": [
+        "You provide your own $main$",
+        "Tests run without any extra threads",
+        "Tests can't fail anymore",
+        "Only doc tests run"
+      ],
+      "zanimljivost": "Benchmark frameworks like $criterion$ use this to replace the built-in libtest harness.",
+      "rec": "postolje"
+    },
+    {
+      "lekcija": 22,
+      "tezina": 3,
+      "pitanje": "Can integration tests use code behind $#[cfg(test)]$ in your library?",
+      "odgovori": [
+        "No – the library is built without it",
+        "Yes – $cfg(test)$ is set for all test targets",
+        "Only with $pub(crate)$",
+        "Only in debug builds"
+      ],
+      "zanimljivost": "$cfg(test)$ is set only when compiling the crate's own unit tests. Test helpers for others can go behind a feature instead.",
+      "rec": "vidljivost"
+    },
+    {
+      "vrsta": "spoji",
+      "lekcija": 22,
+      "tezina": 2,
+      "pitanje": "Match each doc test annotation with its effect",
+      "parovi": [
+        [
+          "$no_run$",
+          "Compiled but not run"
+        ],
+        [
+          "$ignore$",
+          "Neither compiled nor run"
+        ],
+        [
+          "$should_panic$",
+          "Must panic to pass"
+        ],
+        [
+          "$compile_fail$",
+          "Must fail to compile"
+        ]
+      ],
+      "zanimljivost": "$compile_fail$ is a cheap way to check that misuse of your API is rejected by the type system.",
+      "rec": "anotacija"
+    },
+    {
+      "lekcija": 22,
+      "tezina": 2,
+      "pitanje": "What is Miri?",
+      "odgovori": [
+        "An interpreter that detects UB",
+        "A code formatter",
+        "A fuzzing engine",
+        "A benchmarking and profiling library"
+      ],
+      "zanimljivost": "Run with $cargo +nightly miri test$. It catches uninitialized reads, invalid pointers and aliasing violations.",
+      "rec": "tumač"
+    },
+    {
+      "lekcija": 22,
+      "tezina": 2,
+      "pitanje": "What does the $loom$ crate do?",
+      "odgovori": [
+        "Tries every thread interleaving",
+        "Speeds up threads",
+        "Draws dependency graphs",
+        "Measures memory usage"
+      ],
+      "zanimljivost": "A loom (a weaving machine) weaves threads – it explores possible executions systematically, not just randomly.",
+      "rec": "razboj"
+    },
+    {
+      "lekcija": 22,
+      "tezina": 1,
+      "pitanje": "What is fuzzing?",
+      "odgovori": [
+        "Feeding random inputs to find crashes",
+        "Formatting source code automatically on save",
+        "Removing unused imports",
+        "Comparing two builds"
+      ],
+      "zanimljivost": "$cargo-fuzz$ uses LLVM's libFuzzer, which watches code coverage and mutates inputs that reach new branches.",
+      "rec": "nasumično"
+    },
+    {
+      "lekcija": 22,
+      "tezina": 2,
+      "pitanje": "What do $proptest$ and $quickcheck$ do when they find a failing input?",
+      "odgovori": [
+        "Shrink it to a minimal example",
+        "Retry until it passes",
+        "Ignore it next time",
+        "Save it as a new benchmark case"
+      ],
+      "zanimljivost": "Instead of a 1000-element vector that fails, you get the smallest one that still fails.",
+      "rec": "svojstvo"
+    },
+    {
+      "lekcija": 22,
+      "tezina": 2,
+      "pitanje": "Why do benchmarks use $std::hint::black_box$?",
+      "odgovori": [
+        "To stop the optimizer removing work",
+        "To hide the benchmark's output from the user",
+        "To measure only the heap",
+        "To run on a GPU"
+      ],
+      "zanimljivost": "If a result is never used, the compiler may delete the whole computation – and you'd benchmark nothing.",
+      "rec": "merenje"
+    },
+    {
+      "lekcija": 22,
+      "tezina": 2,
+      "pitanje": "Without reflection-based mocking, how are dependencies usually mocked in Rust?",
+      "odgovori": [
+        "Make code generic over a trait",
+        "Patch functions at run time",
+        "Use $unsafe$ pointer swaps",
+        "Rewrite the binary"
+      ],
+      "zanimljivost": "Crates like $mockall$ generate the test implementations of such traits.",
+      "rec": "imitacija"
+    },
+    {
+      "lekcija": 22,
+      "tezina": 3,
+      "pitanje": "Why would you write a doc test with $compile_fail$ for a typestate API?",
+      "odgovori": [
+        "To prove misuse is rejected",
+        "To speed up the whole test suite",
+        "To hide the example",
+        "To silence a warning"
+      ],
+      "zanimljivost": "A plain test can only check what does compile – this checks what must not.",
+      "rec": "neuspeh"
+    },
+    {
+      "lekcija": 23,
+      "tezina": 3,
+      "pitanje": "What does hygiene mean for $macro_rules!$ macros?",
+      "odgovori": [
+        "Macro locals don't clash with yours",
+        "It formats the code the macro produces",
+        "It removes unused code",
+        "It forbids $unsafe$"
+      ],
+      "zanimljivost": "A variable declared inside a macro can't accidentally shadow or capture a variable at the call site.",
+      "rec": "higijena"
+    },
+    {
+      "vrsta": "spoji",
+      "lekcija": 23,
+      "tezina": 2,
+      "pitanje": "Match each fragment specifier with what it matches",
+      "parovi": [
+        [
+          "$expr$",
+          "An expression"
+        ],
+        [
+          "$ident$",
+          "An identifier"
+        ],
+        [
+          "$ty$",
+          "A type"
+        ],
+        [
+          "$tt$",
+          "A single token tree"
+        ]
+      ],
+      "zanimljivost": "$tt$ is the most flexible – it matches almost anything, which makes it the building block of advanced macros.",
+      "rec": "fragment"
+    },
+    {
+      "lekcija": 23,
+      "tezina": 2,
+      "pitanje": "In a $macro_rules!$ pattern, what does the repetition shown mean?",
+      "odgovori": [
+        "Zero or more, separated by commas",
+        "Exactly one expression",
+        "One or more, no separator",
+        "An optional trailing comma"
+      ],
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "( $( $x:expr ),* ) => { … }"
+      },
+      "zanimljivost": "$+$ means one or more, $?$ means zero or one.",
+      "rec": "ponavljanje"
+    },
+    {
+      "lekcija": 23,
+      "tezina": 2,
+      "pitanje": "Where must a procedural macro be defined?",
+      "odgovori": [
+        "In a separate $proc-macro$ crate",
+        "In any module of the crate that uses it",
+        "In $build.rs$",
+        "In the $main$ function"
+      ],
+      "zanimljivost": "The compiler loads the macro crate as a plugin and runs it while compiling your crate.",
+      "rec": "odvojeno"
+    },
+    {
+      "lekcija": 23,
+      "tezina": 2,
+      "pitanje": "What does a procedural macro receive and return?",
+      "odgovori": [
+        "A $TokenStream$",
+        "A $String$",
+        "An AST node from $rustc$",
+        "A file path"
+      ],
+      "zanimljivost": "Working with raw tokens keeps the compiler's internal syntax tree private, so it can change between versions.",
+      "rec": "žeton"
+    },
+    {
+      "vrsta": "spoji",
+      "lekcija": 23,
+      "tezina": 2,
+      "pitanje": "Match each crate with its role in proc macros",
+      "parovi": [
+        [
+          "$syn$",
+          "Parses tokens into syntax"
+        ],
+        [
+          "$quote$",
+          "Generates tokens from code"
+        ],
+        [
+          "$proc-macro2$",
+          "Token types outside macros"
+        ]
+      ],
+      "zanimljivost": "$syn$ is one of the most downloaded crates on crates.io, because so many crates' derives depend on it.",
+      "rec": "sintaksa"
+    },
+    {
+      "lekcija": 23,
+      "tezina": 2,
+      "pitanje": "What does $#[macro_export]$ do?",
+      "odgovori": [
+        "Puts the macro at the crate root",
+        "Hides the macro from other crates' users",
+        "Turns it into a function",
+        "Makes it a proc macro"
+      ],
+      "zanimljivost": "That's why exported macros are used as $mycrate::my_macro!$, no matter which module defined them.",
+      "rec": "izvoz"
+    },
+    {
+      "lekcija": 23,
+      "tezina": 1,
+      "pitanje": "Which tool shows the code after macros have expanded?",
+      "odgovori": [
+        "$cargo expand$",
+        "$cargo macro$",
+        "$cargo tree$",
+        "$cargo fix$"
+      ],
+      "zanimljivost": "It's a separate tool ($cargo install cargo-expand$) and uses a nightly compiler feature under the hood.",
+      "rec": "proširenje"
+    },
+    {
+      "lekcija": 23,
+      "tezina": 3,
+      "pitanje": "Why prefer a declarative macro over a procedural one when either works?",
+      "odgovori": [
+        "Proc macros slow compilation",
+        "Declarative ones are newer",
+        "Proc macros need $unsafe$",
+        "Declarative ones run at run time"
+      ],
+      "zanimljivost": "Proc macros pull in $syn$ and friends, which must be compiled first – often the slowest part of a clean build.",
+      "rec": "kompilacija"
+    },
+    {
+      "lekcija": 23,
+      "tezina": 2,
+      "pitanje": "What is the default recursion limit for macro expansion?",
+      "odgovori": [
+        "128",
+        "16",
+        "1024",
+        "Unlimited"
+      ],
+      "zanimljivost": "Recursive macros (e.g. tt-munchers) can hit it; $#![recursion_limit = \"256\"]$ raises it.",
+      "rec": "dubina"
+    },
+    {
+      "lekcija": 24,
+      "tezina": 2,
+      "pitanje": "What does $Future::poll$ return?",
+      "odgovori": [
+        "$Ready(value)$ or $Pending$",
+        "$Some$ or $None$",
+        "$Done(value)$ or $Waiting(waker)$",
+        "$true$ or $false$"
+      ],
+      "zanimljivost": "A future that returns $Pending$ promises it has arranged to be woken – otherwise it might never be polled again.",
+      "rec": "spremnost"
+    },
+    {
+      "lekcija": 24,
+      "tezina": 2,
+      "pitanje": "What is the $Waker$ in $Context$ for?",
+      "odgovori": [
+        "Telling the executor to poll again",
+        "Waking up a sleeping OS thread directly",
+        "Timing out a future",
+        "Cancelling the future"
+      ],
+      "zanimljivost": "An I/O reactor stores the waker and calls $wake()$ when, for example, data arrives on a socket.",
+      "rec": "budilnik"
+    },
+    {
+      "lekcija": 24,
+      "tezina": 3,
+      "pitanje": "What does the compiler turn an $async fn$ into?",
+      "odgovori": [
+        "A state machine (an enum)",
+        "A separate thread",
+        "A callback chain",
+        "A coroutine running on its own stack"
+      ],
+      "zanimljivost": "Each $.await$ point is a state; local variables that live across it become fields of that state.",
+      "rec": "automat"
+    },
+    {
+      "lekcija": 24,
+      "tezina": 2,
+      "pitanje": "What does it mean that most types are $Unpin$?",
+      "odgovori": [
+        "Pinning has no effect on them",
+        "They can't be pinned",
+        "They live on the heap",
+        "They're never moved"
+      ],
+      "zanimljivost": "Only types that may contain self-references (like compiler-generated futures) are $!Unpin$.",
+      "rec": "sidro"
+    },
+    {
+      "lekcija": 24,
+      "tezina": 2,
+      "pitanje": "What does the reactor (I/O driver) in an async runtime do?",
+      "odgovori": [
+        "Waits on OS events like epoll",
+        "Allocates memory for all the futures",
+        "Compiles $async$ blocks",
+        "Runs CPU-heavy work"
+      ],
+      "zanimljivost": "The executor decides which task to poll next; the reactor tells it which tasks are ready.",
+      "rec": "reaktor"
+    },
+    {
+      "lekcija": 24,
+      "tezina": 3,
+      "pitanje": "Why does $tokio::spawn$ require a $Send + 'static$ future?",
+      "odgovori": [
+        "The task may move between threads",
+        "All futures must live in the binary",
+        "To avoid any allocation",
+        "So it runs exactly once"
+      ],
+      "zanimljivost": "A multi-threaded runtime steals tasks between worker threads to balance the load.",
+      "rec": "zadatak"
+    },
+    {
+      "lekcija": 24,
+      "tezina": 3,
+      "pitanje": "What goes wrong if a $std::sync::MutexGuard$ is held across $.await$?",
+      "odgovori": [
+        "The future isn't $Send$; can deadlock",
+        "The guard is unlocked automatically at each $.await$",
+        "It becomes an async lock",
+        "Nothing at all"
+      ],
+      "zanimljivost": "Either drop the guard before awaiting or use an async-aware mutex like $tokio::sync::Mutex$.",
+      "rec": "katanac"
+    },
+    {
+      "lekcija": 24,
+      "tezina": 2,
+      "pitanje": "How do you cancel a future in Rust?",
+      "odgovori": [
+        "Drop it",
+        "Call $cancel()$ on it",
+        "Send it a signal",
+        "Poll it with $None$"
+      ],
+      "zanimljivost": "Code must be “cancellation safe”: a future can be dropped at any $.await$, e.g. when it loses a $select!$.",
+      "rec": "otkazivanje"
+    },
+    {
+      "lekcija": 24,
+      "tezina": 3,
+      "pitanje": "Why does a recursive $async fn$ need boxing?",
+      "odgovori": [
+        "Its future would be infinitely large",
+        "It runs on several threads",
+        "Recursion is forbidden",
+        "It needs a $'static$ lifetime"
+      ],
+      "zanimljivost": "Since Rust 1.77, a recursive call is allowed when the inner future is behind $Box::pin$.",
+      "rec": "rekurzija"
+    },
+    {
+      "lekcija": 24,
+      "tezina": 2,
+      "pitanje": "What happens if one async task runs a long CPU loop without awaiting?",
+      "odgovori": [
+        "Others on that thread starve",
+        "The runtime preempts it after a time slice",
+        "It is moved to the GPU",
+        "The compiler rejects it"
+      ],
+      "zanimljivost": "Async scheduling is cooperative: a task yields only at $.await$. Tokio even adds a “budget” to force occasional yields.",
+      "rec": "saradnja"
+    },
+    {
+      "vrsta": "spoji",
+      "lekcija": 24,
+      "tezina": 2,
+      "pitanje": "Match each async building block with its role",
+      "parovi": [
+        [
+          "$Poll::Ready$",
+          "The value is available"
+        ],
+        [
+          "$Poll::Pending$",
+          "Try again after a wake"
+        ],
+        [
+          "$Waker$",
+          "Signals the executor"
+        ],
+        [
+          "$Pin$",
+          "A promise not to move"
+        ]
+      ],
+      "zanimljivost": "With these four pieces you could write a tiny executor yourself – a classic exercise from the book.",
+      "rec": "signal"
+    },
+    {
+      "lekcija": 25,
+      "tezina": 2,
+      "pitanje": "What does marking a function $unsafe fn$ signal?",
+      "odgovori": [
+        "Callers must uphold its conditions",
+        "It runs without any bounds or borrow checks",
+        "It may not return",
+        "It's only for FFI"
+      ],
+      "zanimljivost": "An $unsafe$ block says “I checked”; an $unsafe fn$ says “you must check”. Since the 2024 edition, a lint asks for explicit $unsafe$ blocks inside it too.",
+      "rec": "ugovor"
+    },
+    {
+      "lekcija": 25,
+      "tezina": 2,
+      "pitanje": "What should a $// SAFETY:$ comment explain?",
+      "odgovori": [
+        "Why the $unsafe$ code is sound",
+        "Who wrote the code",
+        "How much faster it is than safe code",
+        "Which tests cover it"
+      ],
+      "zanimljivost": "Clippy's $undocumented_unsafe_blocks$ lint can enforce that every $unsafe$ block has one.",
+      "rec": "napomena"
+    },
+    {
+      "vrsta": "uljez",
+      "lekcija": 25,
+      "tezina": 3,
+      "pitanje": "Which of these is NOT undefined behavior?",
+      "odgovori": [
+        "Leaking memory with $mem::forget$",
+        "Two live $&mut$ to one value",
+        "A $bool$ with byte value 2",
+        "Reading uninitialized memory"
+      ],
+      "objasnjenje": "Leaking is merely wasteful, not UB – $mem::forget$ is a safe function. The other three break the compiler's assumptions.",
+      "zanimljivost": "The compiler optimizes as if UB never happens, so UB can “travel backward” and break code that ran before it.",
+      "rec": "ponašanje"
+    },
+    {
+      "lekcija": 25,
+      "tezina": 2,
+      "pitanje": "What type should you use for memory that's not initialized yet?",
+      "odgovori": [
+        "$MaybeUninit<T>$",
+        "$Option<T>$",
+        "$mem::zeroed$",
+        "$Cell<T>$"
+      ],
+      "zanimljivost": "The old $mem::uninitialized$ is deprecated – it was UB for almost every type.",
+      "rec": "prazno"
+    },
+    {
+      "lekcija": 25,
+      "tezina": 3,
+      "pitanje": "Why is creating a $bool$ from byte 2 immediate UB, while invalid UTF-8 in a $str$ isn't instantly UB?",
+      "odgovori": [
+        "Validity vs. safety invariants",
+        "$bool$ lives on the stack",
+        "$str$ contents are checked at run time",
+        "UTF-8 errors are ignored"
+      ],
+      "zanimljivost": "The compiler relies on validity invariants (it may use the spare bit patterns of $bool$), while UTF-8 is a library promise that breaks only when something relies on it.",
+      "rec": "valjanost"
+    },
+    {
+      "lekcija": 25,
+      "tezina": 2,
+      "pitanje": "When is a safe API wrapping $unsafe$ code called sound?",
+      "odgovori": [
+        "No safe use of it can cause UB",
+        "It has 100% test coverage",
+        "It never panics",
+        "Miri hasn't complained about it yet"
+      ],
+      "zanimljivost": "Soundness is about all possible callers, not just the ones you wrote.",
+      "rec": "ispravnost"
+    },
+    {
+      "lekcija": 25,
+      "tezina": 2,
+      "pitanje": "Which of these traits requires $unsafe impl$?",
+      "odgovori": [
+        "$Send$",
+        "$Clone$",
+        "$Debug$",
+        "$Iterator$"
+      ],
+      "zanimljivost": "Unsafe traits are ones where a wrong implementation can break memory safety elsewhere – $Send$, $Sync$, $GlobalAlloc$.",
+      "rec": "poverenje"
+    },
+    {
+      "lekcija": 25,
+      "tezina": 3,
+      "pitanje": "Why would a raw-pointer collection hold a $PhantomData<T>$ field?",
+      "odgovori": [
+        "To say it owns a $T$",
+        "To make it smaller",
+        "To force it onto the heap",
+        "To disable $Drop$"
+      ],
+      "zanimljivost": "It affects variance, auto traits and the drop check, which all look at fields – and a raw pointer alone says too little.",
+      "rec": "fantom"
+    },
+    {
+      "lekcija": 25,
+      "tezina": 3,
+      "pitanje": "What does $NonNull<T>$ add over $*mut T$?",
+      "odgovori": [
+        "It is never null",
+        "It is always aligned",
+        "It is always initialized",
+        "It is reference counted"
+      ],
+      "zanimljivost": "It's also covariant, and its niche lets $Option<NonNull<T>>$ be the size of a single pointer.",
+      "rec": "zaštita"
+    },
+    {
+      "lekcija": 25,
+      "tezina": 2,
+      "pitanje": "What must unsafe code consider about panics?",
+      "odgovori": [
+        "Invariants must hold if one occurs",
+        "Panics can't happen inside $unsafe$ blocks",
+        "Panics free all memory",
+        "Panics are always UB"
+      ],
+      "zanimljivost": "Example: calling $set_len$ before the elements are written – if a panic happens in between, $Drop$ sees garbage.",
+      "rec": "doslednost"
+    },
+    {
+      "vrsta": "spoji",
+      "lekcija": 26,
+      "tezina": 3,
+      "pitanje": "Match each memory ordering with its guarantee",
+      "parovi": [
+        [
+          "$Relaxed$",
+          "Atomicity only"
+        ],
+        [
+          "$Acquire$",
+          "Later accesses stay after the load"
+        ],
+        [
+          "$Release$",
+          "Earlier accesses stay before the store"
+        ],
+        [
+          "$SeqCst$",
+          "One total order for all"
+        ]
+      ],
+      "zanimljivost": "Rust's orderings come from the C++20 memory model. $Acquire$ and $Release$ come in pairs, like opening and closing a gate.",
+      "rec": "redosled"
+    },
+    {
+      "lekcija": 26,
+      "tezina": 2,
+      "pitanje": "What does $AtomicUsize::fetch_add$ return?",
+      "odgovori": [
+        "The previous value",
+        "The new value",
+        "Nothing – $()$",
+        "$true$ if it succeeded"
+      ],
+      "zanimljivost": "The whole read-modify-write is one indivisible step, so two threads can't both read the same old value.",
+      "rec": "prethodni"
+    },
+    {
+      "lekcija": 26,
+      "tezina": 3,
+      "pitanje": "What does $compare_exchange(current, new, …)$ return when the value isn't $current$?",
+      "odgovori": [
+        "$Err$ with the actual value",
+        "$Ok$ with the actual value",
+        "It retries automatically",
+        "It always panics"
+      ],
+      "zanimljivost": "This is the basis of lock-free algorithms: read, compute, try to swap, and retry if someone else got there first.",
+      "rec": "očekivano"
+    },
+    {
+      "lekcija": 26,
+      "tezina": 2,
+      "pitanje": "In the actor model, how do actors share state?",
+      "odgovori": [
+        "They don't – they send messages",
+        "Through a global $Mutex$",
+        "Through $static mut$",
+        "By passing $&mut$ references to each other"
+      ],
+      "zanimljivost": "Each actor owns its state and processes one message at a time, so it needs no locks inside.",
+      "rec": "glumac"
+    },
+    {
+      "lekcija": 26,
+      "tezina": 3,
+      "pitanje": "What is false sharing?",
+      "odgovori": [
+        "Two atomics on one cache line",
+        "A data race in safe code",
+        "Cloning an $Arc$ too often in a hot loop",
+        "A deadlock on two mutexes"
+      ],
+      "zanimljivost": "Cores keep stealing the same cache line from each other. $crossbeam$'s $CachePadded$ puts values on separate lines.",
+      "rec": "linija"
+    },
+    {
+      "lekcija": 26,
+      "tezina": 1,
+      "pitanje": "Which crate turns $.iter()$ into a parallel $.par_iter()$?",
+      "odgovori": [
+        "$rayon$",
+        "$tokio$",
+        "$crossbeam$",
+        "$parking_lot$"
+      ],
+      "zanimljivost": "Rayon uses work stealing: idle threads take jobs from busy ones, so the work spreads evenly.",
+      "rec": "paralelno"
+    },
+    {
+      "lekcija": 26,
+      "tezina": 3,
+      "pitanje": "Which orderings does a simple spinlock typically use?",
+      "odgovori": [
+        "$Acquire$ to lock, $Release$ to unlock",
+        "$Relaxed$ for both",
+        "$SeqCst$ to lock only",
+        "$Release$ to lock, $Acquire$ to unlock"
+      ],
+      "zanimljivost": "Spinlocks waste CPU while waiting; for most code a real $Mutex$, which puts threads to sleep, is better.",
+      "rec": "okretanje"
+    },
+    {
+      "lekcija": 26,
+      "tezina": 2,
+      "pitanje": "Why can't you just increment a $static mut$ counter from several threads?",
+      "odgovori": [
+        "It's a data race – UB",
+        "Statics are read-only",
+        "It is slower than atomics",
+        "Threads can't see statics"
+      ],
+      "zanimljivost": "Since the 2024 edition even creating a reference to a $static mut$ is an error by default.",
+      "rec": "brojanje"
+    },
+    {
+      "lekcija": 26,
+      "tezina": 2,
+      "pitanje": "What does $OnceLock$ provide?",
+      "odgovori": [
+        "Thread-safe one-time initialization",
+        "A lock that never blocks",
+        "A mutex that only a single thread can use",
+        "A counter that resets"
+      ],
+      "zanimljivost": "Stabilized in Rust 1.70; $LazyLock$ (1.80) made the popular $lazy_static$ and $once_cell$ crates mostly unnecessary.",
+      "rec": "jednom"
+    },
+    {
+      "lekcija": 26,
+      "tezina": 2,
+      "pitanje": "Why must code waiting on a $Condvar$ check its condition in a loop?",
+      "odgovori": [
+        "Spurious wakeups can happen",
+        "$wait$ never returns",
+        "The lock is lost",
+        "It's required by the compiler"
+      ],
+      "zanimljivost": "The OS may wake a thread even though nobody called $notify$, so the condition must be rechecked.",
+      "rec": "buđenje"
+    },
+    {
+      "lekcija": 27,
+      "tezina": 1,
+      "pitanje": "What does $extern \"C\"$ on a function specify?",
+      "odgovori": [
+        "The C calling convention",
+        "The C standard library",
+        "A C++ class method",
+        "Compiling with a C compiler"
+      ],
+      "zanimljivost": "Rust's own calling convention is unspecified and can change between compiler versions.",
+      "rec": "konvencija"
+    },
+    {
+      "lekcija": 27,
+      "tezina": 2,
+      "pitanje": "Why add $#[no_mangle]$ to an exported function?",
+      "odgovori": [
+        "To keep its symbol name as is",
+        "To make it run faster",
+        "To make it safe to call",
+        "To skip type checking"
+      ],
+      "zanimljivost": "Rust normally mangles names (adds hashes) so different crates and versions don't collide. Since 2024 it's written $#[unsafe(no_mangle)]$.",
+      "rec": "simbol"
+    },
+    {
+      "vrsta": "spoji",
+      "lekcija": 27,
+      "tezina": 2,
+      "pitanje": "Match each tool with its direction",
+      "parovi": [
+        [
+          "$bindgen$",
+          "C headers → Rust"
+        ],
+        [
+          "$cbindgen$",
+          "Rust → C headers"
+        ],
+        [
+          "$cxx$",
+          "Safe Rust ↔ C++ bridge"
+        ]
+      ],
+      "zanimljivost": "$bindgen$ uses libclang to parse headers, so it understands macros and complex types well.",
+      "rec": "vezivanje"
+    },
+    {
+      "lekcija": 27,
+      "tezina": 2,
+      "pitanje": "Which attribute should a struct passed to C have?",
+      "odgovori": [
+        "$#[repr(C)]$",
+        "$#[repr(Rust)]$",
+        "$#[derive(C)]$",
+        "$#[inline]$"
+      ],
+      "zanimljivost": "Without it Rust may reorder fields and C would read the wrong bytes.",
+      "rec": "raspored"
+    },
+    {
+      "lekcija": 27,
+      "tezina": 2,
+      "pitanje": "Why can't you pass a $&str$ where C expects a $char*$ string?",
+      "odgovori": [
+        "It isn't nul-terminated",
+        "It's always UTF-16",
+        "It's too long for C",
+        "It can't be borrowed across the boundary"
+      ],
+      "zanimljivost": "$CString$ owns a nul-terminated buffer; $CStr$ borrows one. Since 1.77 you can write literals like $c\"hello\"$.",
+      "rec": "završnica"
+    },
+    {
+      "lekcija": 27,
+      "tezina": 2,
+      "pitanje": "Calling a function declared in an $extern$ block is…",
+      "odgovori": [
+        "Unsafe",
+        "Always safe",
+        "Forbidden in Rust",
+        "Only for $no_std$"
+      ],
+      "zanimljivost": "The compiler can't check what foreign code does. Since 2024 you can write $unsafe extern$ and mark checked functions $safe$.",
+      "rec": "spoljašnje"
+    },
+    {
+      "lekcija": 27,
+      "tezina": 3,
+      "pitanje": "What happens since Rust 1.81 when a panic tries to unwind out of an $extern \"C\"$ function?",
+      "odgovori": [
+        "The process aborts",
+        "C catches it",
+        "It is silently ignored",
+        "It turns into $errno$"
+      ],
+      "zanimljivost": "Unwinding into C used to be UB. If you really want it to cross the boundary, use the $\"C-unwind\"$ ABI.",
+      "rec": "prelaz"
+    },
+    {
+      "lekcija": 27,
+      "tezina": 3,
+      "pitanje": "How is a C type with hidden fields usually represented in Rust?",
+      "odgovori": [
+        "An opaque struct you only point to",
+        "A $Vec<u8>$ copy of all of its fields",
+        "A Rust enum",
+        "A $String$"
+      ],
+      "zanimljivost": "A common trick: $#[repr(C)] struct Handle { _private: [u8; 0] }$ plus a marker so it isn't $Send$ by accident.",
+      "rec": "skriveno"
+    },
+    {
+      "lekcija": 27,
+      "tezina": 2,
+      "pitanje": "How does C code usually pass state to a Rust callback?",
+      "odgovori": [
+        "Through a $void*$ user-data pointer",
+        "Through global variables",
+        "Through environment variables",
+        "It can't – callbacks are stateless"
+      ],
+      "zanimljivost": "Rust passes a pointer to its closure as $*mut c_void$ and a small $extern \"C\"$ trampoline casts it back.",
+      "rec": "kontekst"
+    },
+    {
+      "lekcija": 27,
+      "tezina": 2,
+      "pitanje": "What is the convention behind crates named $foo-sys$?",
+      "odgovori": [
+        "Raw bindings; $foo$ is the safe wrapper",
+        "System-only builds",
+        "Crates for Windows",
+        "Deprecated old versions kept for compatibility"
+      ],
+      "zanimljivost": "Only one crate in a build may link a given native library ($links = \"foo\"$), so splitting raw bindings out avoids conflicts.",
+      "rec": "omotač"
+    },
+    {
+      "lekcija": 27,
+      "tezina": 2,
+      "pitanje": "How does a build script tell Cargo to link a native library?",
+      "odgovori": [
+        "Printing $cargo:rustc-link-lib=…$",
+        "Editing $Cargo.lock$",
+        "Setting $PATH$",
+        "Calling $rustc$ directly"
+      ],
+      "zanimljivost": "$pkg-config$ and $cc$ crates help find and build C libraries from $build.rs$.",
+      "rec": "povezivač"
+    },
+    {
+      "lekcija": 28,
+      "tezina": 1,
+      "pitanje": "What remains available with $#![no_std]$?",
+      "odgovori": [
+        "The $core$ library",
+        "Threads and files, but no heap",
+        "The full $std$",
+        "Nothing at all"
+      ],
+      "zanimljivost": "$core$ has no allocation and no OS: $Option$, iterators, slices, formatting traits, atomics…",
+      "rec": "jezgro"
+    },
+    {
+      "lekcija": 28,
+      "tezina": 2,
+      "pitanje": "What does the $alloc$ crate add to a $no_std$ program?",
+      "odgovori": [
+        "$Box$, $Vec$, $String$…",
+        "Threads and channels",
+        "Files and sockets",
+        "A garbage collector for the heap"
+      ],
+      "zanimljivost": "You must also provide a $#[global_allocator]$ so it knows where to get memory.",
+      "rec": "alokator"
+    },
+    {
+      "lekcija": 28,
+      "tezina": 2,
+      "pitanje": "What must a $no_std$ binary define that $std$ normally provides?",
+      "odgovori": [
+        "A $#[panic_handler]$",
+        "A $main$ thread",
+        "A $Drop$ implementation for $i32$",
+        "An I/O reactor"
+      ],
+      "zanimljivost": "On a microcontroller the handler might blink an LED, write to a serial port, or just loop forever.",
+      "rec": "rukovalac"
+    },
+    {
+      "lekcija": 28,
+      "tezina": 2,
+      "pitanje": "How do you choose the heap allocator for a whole program?",
+      "odgovori": [
+        "A $#[global_allocator]$ static",
+        "An environment variable",
+        "A field in $Cargo.toml$",
+        "A call in $main$"
+      ],
+      "zanimljivost": "This also works with $std$ – e.g. to switch to $jemalloc$ or $mimalloc$.",
+      "rec": "dodela"
+    },
+    {
+      "vrsta": "uljez",
+      "lekcija": 28,
+      "tezina": 2,
+      "pitanje": "Which of these is NOT available in $core$ alone?",
+      "odgovori": [
+        "$Vec<T>$",
+        "$Option<T>$",
+        "$Result<T, E>$",
+        "$Iterator$"
+      ],
+      "objasnjenje": "$Vec$ needs heap allocation, so it lives in $alloc$ (and is re-exported by $std$).",
+      "zanimljivost": "The same $Option$ you use in $std$ is literally $core::option::Option$ re-exported.",
+      "rec": "osnova"
+    },
+    {
+      "lekcija": 28,
+      "tezina": 2,
+      "pitanje": "On embedded targets, what does $#![no_main]$ allow?",
+      "odgovori": [
+        "A custom entry point",
+        "Running without a CPU",
+        "Skipping compilation",
+        "Using threads"
+      ],
+      "zanimljivost": "Crates like $cortex-m-rt$ provide an $#[entry]$ attribute and set up the reset vector.",
+      "rec": "ulaz"
+    },
+    {
+      "lekcija": 28,
+      "tezina": 3,
+      "pitanje": "Why use $read_volatile$/$write_volatile$ for memory-mapped hardware registers?",
+      "odgovori": [
+        "So accesses aren't optimized away",
+        "To make them atomic",
+        "To make them faster",
+        "To lock the hardware while writing to it"
+      ],
+      "zanimljivost": "Writing the same value twice to a register can matter to the hardware, even if the optimizer sees it as redundant.",
+      "rec": "registar"
+    },
+    {
+      "lekcija": 28,
+      "tezina": 2,
+      "pitanje": "What's a common pattern for libraries that work with or without $std$?",
+      "odgovori": [
+        "A $std$ feature with $cfg_attr$",
+        "Two separate crates",
+        "Copying $std$ into the crate",
+        "A $build.rs$ that detects the OS"
+      ],
+      "zanimljivost": "$#![cfg_attr(not(feature = \"std\"), no_std)]$ – $std$ is usually enabled by default.",
+      "rec": "prekidač"
+    },
+    {
+      "lekcija": 28,
+      "tezina": 3,
+      "pitanje": "Can you use $format!$ without an allocator?",
+      "odgovori": [
+        "No – but $write!$ into a buffer works",
+        "Yes – it formats into a buffer on the stack",
+        "Yes – it's in $core$",
+        "Only in debug builds"
+      ],
+      "zanimljivost": "$format!$ returns a $String$. $core::fmt::Write$ lets you format into a fixed-size buffer.",
+      "rec": "bafer"
+    },
+    {
+      "lekcija": 29,
+      "tezina": 2,
+      "pitanje": "Clippy, Rust's linter, is named after…",
+      "odgovori": [
+        "A paper clip",
+        "A hair clipper",
+        "A film clip",
+        "A clipboard app"
+      ],
+      "zanimljivost": "It's named after the paper-clip assistant from old versions of Microsoft Office.",
+      "rec": "spajalica"
+    },
+    {
+      "vrsta": "spoji",
+      "lekcija": 29,
+      "tezina": 1,
+      "pitanje": "Match each tool with its job",
+      "parovi": [
+        [
+          "$clippy$",
+          "Lints for common mistakes"
+        ],
+        [
+          "$rustfmt$",
+          "Standard code formatting"
+        ],
+        [
+          "$miri$",
+          "Detects undefined behavior"
+        ],
+        [
+          "$rustup$",
+          "Manages toolchains"
+        ]
+      ],
+      "zanimljivost": "All four ship as rustup components: $rustup component add clippy$.",
+      "rec": "alat"
+    },
+    {
+      "lekcija": 29,
+      "tezina": 2,
+      "pitanje": "What do $cargo-audit$ and $cargo-deny$ check?",
+      "odgovori": [
+        "Known vulnerabilities in dependencies",
+        "Code formatting against the style guide",
+        "Test coverage",
+        "Compile times"
+      ],
+      "zanimljivost": "They use the RustSec advisory database. $cargo-deny$ can also check licenses and duplicate versions.",
+      "rec": "ranjivost"
+    },
+    {
+      "lekcija": 29,
+      "tezina": 1,
+      "pitanje": "How often is a new stable Rust released?",
+      "odgovori": [
+        "Every 6 weeks",
+        "Every 2 weeks",
+        "Every 6 months",
+        "Once a year"
+      ],
+      "zanimljivost": "The “train” model: nightly → beta → stable. Features ready in time catch the next train.",
+      "rec": "izdanje"
+    },
+    {
+      "lekcija": 29,
+      "tezina": 1,
+      "pitanje": "Which Rust editions exist so far?",
+      "odgovori": [
+        "2015, 2018, 2021, 2024",
+        "2015, 2017, 2020, 2023",
+        "1.0, 2.0, 3.0",
+        "2016, 2019, 2022"
+      ],
+      "zanimljivost": "Crates of different editions work together in the same build – editions only change how one crate is parsed.",
+      "rec": "edicija"
+    },
+    {
+      "lekcija": 29,
+      "tezina": 1,
+      "pitanje": "What is needed to use $#![feature(…)]$?",
+      "odgovori": [
+        "A nightly compiler",
+        "A paid license",
+        "An $unsafe$ block",
+        "The 2024 edition"
+      ],
+      "zanimljivost": "Unstable features can change or disappear, which is why stable Rust doesn't allow them.",
+      "rec": "eksperiment"
+    },
+    {
+      "lekcija": 29,
+      "tezina": 1,
+      "pitanje": "How are big changes to Rust proposed and discussed?",
+      "odgovori": [
+        "Through the RFC process",
+        "By a single maintainer who decides alone",
+        "Through yearly votes",
+        "Only at conferences"
+      ],
+      "zanimljivost": "RFC stands for “Request for Comments”; the process is public on GitHub in $rust-lang/rfcs$.",
+      "rec": "predlog"
+    },
+    {
+      "lekcija": 29,
+      "tezina": 2,
+      "pitanje": "What does docs.rs do?",
+      "odgovori": [
+        "Builds docs for every crate release",
+        "Hosts the Rust Book only",
+        "Tests every crate on all supported platforms",
+        "Mirrors crates.io downloads"
+      ],
+      "zanimljivost": "Every published version gets its own permanent documentation page.",
+      "rec": "biblioteka"
+    },
+    {
+      "lekcija": 29,
+      "tezina": 1,
+      "pitanje": "Since Cargo 1.62, which command adds a dependency to $Cargo.toml$?",
+      "odgovori": [
+        "$cargo add$",
+        "$cargo get$",
+        "$cargo install$",
+        "$cargo use$"
+      ],
+      "zanimljivost": "It used to be part of the $cargo-edit$ plugin. $cargo install$ is different – it installs binaries.",
+      "rec": "dodatak"
+    },
+    {
+      "lekcija": 29,
+      "tezina": 3,
+      "pitanje": "What is Crater?",
+      "odgovori": [
+        "A tool that test-builds all public crates",
+        "A service that mirrors the crates.io registry",
+        "A Rust game engine",
+        "A code coverage tool"
+      ],
+      "zanimljivost": "Before a release, the Rust team can build and test essentially every crate on crates.io with the old and new compiler.",
+      "rec": "krater"
+    }
+  ]
+}

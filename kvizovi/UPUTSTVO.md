@@ -87,6 +87,8 @@ Za teme van školskog gradiva: kategorija je kviz bez pitanja sa `"kategorija": 
 
 Primer: `kvizovi/eksperimenti-tla` – pitanja po poglavljima knjige Leslija Lamporta „Specifying Systems“ (besplatna, `izvori/knjige/tla/`, nije u git-u), sa `"celina": "Cela knjiga"` i `"jezik": "en"` – pitanja su na engleskom, a `rec` (krug „Najduža reč“) ostaje srpski. Kôd u tekstu ide između `$…$` (`mat()` u `public/app.js` – važi i za zanimljivost, objašnjenje i parove), a duži isečak kao medij `kod`.
 
+Drugi primer: `kvizovi/eksperimenti-rust` (🦀, `"celina": "Sve oblasti"`) – lekcije su glavne oblasti jezika, a polje `tema` u lekciji ih grupiše u lobiju po knjizi (srednji nivo: „The Rust Programming Language“, napredni: „Rust for Rustaceans“). Pazi: unutar `$…$` obrasci `{a|b}`, `_{…}` i `^{…}` postaju razlomak/indeks/stepen, a znak `$` iz makroa (`$x:expr`) kvari granice – takav kôd ide u medij `kod`.
+
 ## Mediji (`"mediji": {...}`)
 
 | vrsta | primer | napomena |
