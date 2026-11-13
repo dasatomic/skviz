@@ -1275,7 +1275,7 @@
       "rec": "faktorijel"
     },
     {
-      "tezina": 2,
+      "tezina": 3,
       "pitanje": "Koliko je 1 + 2 + 3 + … + 100?",
       "odgovori": [
         "5050",
@@ -1284,11 +1284,12 @@
         "1000"
       ],
       "zanimljivost": "Mali Gaus je to izračunao za nekoliko sekundi: spojio je 1 + 100, 2 + 99, … – 50 parova po 101 = 5050.",
+      "rec": "zbir",
+      "autor": "Miroslav Antonić",
       "medijiOdgovora": {
         "vrsta": "svg",
         "kod": "<svg viewBox=\"0 0 320 120\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" fill=\"none\" stroke-linejoin=\"round\"><g fill=\"currentColor\" stroke=\"none\" font-size=\"14\" text-anchor=\"middle\"><text x=\"160\" y=\"25\">1 + 2 + 3 + … + 98 + 99 + 100</text></g><path d=\"M40 32 Q160 90 280 32 M62 32 Q160 75 258 32 M84 32 Q160 60 236 32\" stroke=\"#e84118\" stroke-width=\"1.5\"/><text x=\"160\" y=\"90\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\" >svaki par daje 101</text><text x=\"160\" y=\"112\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\" font-weight=\"bold\">50 parova · 101 = 5050</text></svg>"
-      },
-      "rec": "zbir"
+      }
     },
     {
       "tezina": 2,
