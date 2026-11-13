@@ -495,7 +495,6 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | razred5-istorija | caj-lun.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Cai_Lun) |
 | razred5-istorija | posejdon.jpg | —DerHexer (Talk) | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Poseidon) |
 | razred5-biologija | nautilus.jpg | Hans Hillewaert | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Chambered_nautilus) |
-| razred5-biologija | luci.jpg | 120 | CC BY 2.5 | [izvor](https://en.wikipedia.org/wiki/Lucy_(hominid)) |
 | razred5-biologija | mamut.jpg | Lou.gruber | Public domain | [izvor](https://en.wikipedia.org/wiki/Woolly_mammoth) |
 | razred5-biologija | kuksonija.jpg | Jonathan Chen | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Cooksonia) |
 | razred5-biologija | ruso.jpg | Maurice Quentin de La Tour (Life time: 1788) | Public domain | [izvor](https://en.wikipedia.org/wiki/Jean-Jacques_Rousseau) |
@@ -569,7 +568,6 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | razred5-biologija | crni-dazdevnjak.jpg | Ekki3 | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Alpine_salamander) |
 | razred5-biologija | dudov-svilac.jpg | Oakenking at en.wikipedia | CC BY-SA 2.5 | [izvor](https://en.wikipedia.org/wiki/Bombyx_mori) |
 | razred5-biologija | pijavica.jpg | (c) Георгий Виноградов (Georgy Vinogradov), some rights reserved (CC BY) | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Hirudo_medicinalis) |
-| razred5-biologija | zemelvajs.jpg | József Borsos / Albert Doctor | Public domain | [izvor](https://en.wikipedia.org/wiki/Ignaz_Semmelweis) |
 | razred5-biologija | tartuf.jpg | moi-même | Public domain | [izvor](https://en.wikipedia.org/wiki/Truffle) |
 | razred5-geografija | behajmov-globus.jpg | Martin Behaim / Georg Glockendon | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Behaim_Globe) |
 | razred5-geografija | vavilonska-karta.jpg | Osama Shukir Muhammed Amin FRCP(Glasg) | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Babylonian_Map_of_the_World) |
