@@ -80,6 +80,15 @@ async function ucitajKviz(id) {
   kvizId = id;
   return kviz;
 }
+// pitanja koja su igrači prijavili kao pogrešna (nerešena) – /api/prijave
+let prijave = [];
+async function ucitajPrijave() {
+  try { prijave = await (await fetch('/api/prijave', { cache: 'no-store' })).json(); } catch { prijave = []; }
+  if (!Array.isArray(prijave)) prijave = [];
+}
+const prijavaZa = (paket, tekst) => prijave.find((x) => x.paket === paket && x.tekst === tekst);
+const natpisPrijava = (n) => `${n} ${n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 'prijave' : 'prijava'}`;
+
 const kvizPo = (id) => kvizovi.find((k) => k.id === id);
 const nazivLekcije = (l) => (typeof l === 'string' ? l : l?.naziv || '');
 
@@ -124,10 +133,31 @@ function ekranPocetna() {
     </div>
     <div class="kartica"><h3>Izaberi predmet</h3><div class="kvizovi u-kvizovi">${kartice.map((q) => `
       <button class="kviz" data-h="${q.h}"><div class="ik">${q.ikona}</div><div class="nz">${esc(q.naziv)}</div><div class="br">${q.broj} pitanja${q.razredi ? ' · po razredima' : ''}</div></button>`).join('')}</div></div>
+    ${karticaPrijava()}
     <div class="kartica" id="moji-predlozi" hidden></div>`;
+  $$('[data-prijava]').forEach((b) => (b.onclick = () => otvoriPrijavu(prijave[+b.dataset.prijava])));
   $('#autor').oninput = (e) => ls.set('autor', e.target.value.trim());
   $$('[data-h]').forEach((b) => (b.onclick = () => idi(b.dataset.h)));
   mojiPredlozi();
+}
+
+function karticaPrijava() {
+  if (!prijave.length) return '';
+  return `<div class="kartica"><h3>⚠️ Prijavljena pitanja</h3>
+    <p class="sitno">Igrači su tokom igre označili ova pitanja kao pogrešna. Klikni na pitanje, proveri ga i, ako treba, predloži ispravku.</p>
+    <ul class="u-prijave">${prijave.map((x, i) => `<li data-prijava="${i}" class="${x.nema ? 'nema' : ''}">
+      <span class="u-broj-prijava" title="${natpisPrijava(x.broj)}">${x.broj}</span>
+      <span class="naslov">${mat(x.tekst)}<br><span class="sitno">${esc(x.kviz)}${x.lekcija ? ` · ${x.lekcija}. ${esc(x.nazivLekcije || 'lekcija')}` : ''} · tačan odgovor: ${mat(x.odgovor)}
+        ${x.izmenjeno || x.nema ? ' · <b>već izmenjeno</b>' : ''}</span></span></li>`).join('')}</ul></div>`;
+}
+
+// prijava → isto pitanje u kviz.json (po tekstu; redni broj u id-ju je samo rezerva)
+async function otvoriPrijavu(x) {
+  if (!x || !kvizPo(x.paket)) return poruka('Ovaj kviz se ne menja preko urednika');
+  const K = await ucitajKviz(x.paket);
+  let i = (K.pitanja || []).findIndex((p) => p.pitanje === x.tekst);
+  if (i < 0) { poruka('Pitanje je u međuvremenu izmenjeno – otvaram spisak'); return idi({ paket: x.paket, lekcija: x.lekcija }); }
+  idi({ paket: x.paket, lekcija: x.lekcija, pitanje: i });
 }
 
 async function mojiPredlozi() {
@@ -220,7 +250,7 @@ async function ekranSpisak(a) {
     $('#redovi').innerHTML = vidljiva.length ? vidljiva.map(({ p, i }) => `<tr class="red-pitanja" data-i="${i}">
       <td class="br">${i + 1}</td>${lekcije.length ? `<td class="br">${p.lekcija || ''}</td>` : ''}
       <td class="zv">${zvezdice(p.tezina)}</td>
-      <td>${IKONE_VRSTA[p.vrsta] ? IKONE_VRSTA[p.vrsta] + ' ' : ''}${mat(p.pitanje)}</td>
+      <td>${prijavaZa(a.paket, p.pitanje) ? `<span class="u-prijavljeno" title="${natpisPrijava(prijavaZa(a.paket, p.pitanje).broj)} da je pogrešno">⚠️ ${prijavaZa(a.paket, p.pitanje).broj}</span> ` : ''}${IKONE_VRSTA[p.vrsta] ? IKONE_VRSTA[p.vrsta] + ' ' : ''}${mat(p.pitanje)}</td>
       <td class="tacan">${p.vrsta === 'spoji' ? `<span class="sitno">${p.parovi?.length || 0} para</span>` : (p.vrsta === 'uljez' ? 'uljez: ' : '') + mat(p.odgovori?.[0] || '')}</td>
       <td class="autor">${esc(p.autor || '')}</td></tr>`).join('')
       : `<tr><td colspan="6" class="u-prazno">Nema pitanja${q ? ' za ovu pretragu' : ''}.</td></tr>`;
@@ -579,7 +609,11 @@ async function crtaj() {
   zatvoriProzor();
   const a = citajAdresu();
   try {
-    if (a.paket && a.pitanje !== null) await ekranIzmena(a);
+    if (a.paket && a.pitanje !== null) {
+      await ekranIzmena(a);
+      const x = a.pitanje !== 'novo' && kviz?.pitanja?.[+a.pitanje] && prijavaZa(a.paket, kviz.pitanja[+a.pitanje].pitanje);
+      if (x) glavni.insertAdjacentHTML('afterbegin', `<div class="u-upozorenje">⚠️ Igrači su ovo pitanje prijavili kao pogrešno (${natpisPrijava(x.broj)}). Proveri pitanje i odgovore i, ako nešto ne valja, predloži ispravku.</div>`);
+    }
     else if (a.paket) await ekranSpisak(a);
     else if (a.oblast) ekranOblast(a.oblast);
     else ekranPocetna();
@@ -591,6 +625,6 @@ async function crtaj() {
 }
 
 (async () => {
-  try { await ucitajKvizove(); } catch { glavni.innerHTML = '<div class="u-prazno">Server ne odgovara. Osveži stranicu.</div>'; return; }
+  try { await Promise.all([ucitajKvizove(), ucitajPrijave()]); } catch { glavni.innerHTML = '<div class="u-prazno">Server ne odgovara. Osveži stranicu.</div>'; return; }
   crtaj();
 })();

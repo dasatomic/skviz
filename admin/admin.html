@@ -92,6 +92,12 @@
   .trakaRed { display: grid; grid-template-columns: minmax(110px, 38%) 1fr auto; gap: 10px; align-items: center; padding: 5px 0; font-size: 14px; }
   .trakaRed .ime { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .trakaRed .vr { font-size: 13px; color: var(--tekst-2); white-space: nowrap; }
+  .prijava { padding: 10px 0; border-bottom: 1px solid var(--mreza); display: grid; grid-template-columns: auto 1fr auto; gap: 12px; align-items: start; }
+  .prijava:last-child { border-bottom: 0; }
+  .prijava .koliko { font-size: 20px; font-weight: 650; min-width: 2ch; text-align: right; line-height: 1.2; }
+  .prijava .tekst { font-weight: 550; }
+  .prijava .odg { font-size: 14px; color: var(--tekst-2); margin-top: 2px; }
+  .prijava .oznaka { font-size: 12px; padding: 0 6px; border-radius: 99px; border: 1px solid var(--ivica); margin-left: 4px; }
   .prazno { color: var(--tekst-3); font-size: 14px; padding: 8px 0; }
   .skrol { overflow-x: auto; }
   .napomena { font-size: 13px; color: var(--tekst-2); margin-top: 8px; }
@@ -141,6 +147,11 @@
       </table></div>
       <div class="sitno" id="uzivoSobeVise"></div>
     </div>
+  </div>
+
+  <h2>Prijavljena pitanja <span class="sitno" id="prijaveBroj"></span></h2>
+  <div class="kartica">
+    <div id="prijave"><div class="prazno">Učitavanje…</div></div>
   </div>
 
   <h2>Istorija
@@ -397,6 +408,36 @@ function stubici(kontejner, stavke, { naziv, oznakaSaveta, svakaOznaka = 1 }) {
   el('line', { x1: M.l, x2: sirina - M.r, y1: y(0), y2: y(0), stroke: 'var(--tekst-3)', 'stroke-width': 1 }, svg);
 }
 
+// ───────── prijavljena pitanja ─────────
+async function ucitajPrijave() {
+  const r = await fetch('/api/admin/prijave').catch(() => null);
+  if (!r) return;
+  if (r.status === 401) return prikaziPrijavu();
+  const d = await r.json();
+  const fPun = new Intl.DateTimeFormat('sr-Latn', { day: 'numeric', month: 'numeric', hour: '2-digit', minute: '2-digit' });
+  $('prijaveBroj').textContent = d.prijave.length ? `${d.prijave.length} nerešenih` : '';
+  if (!d.istorija) return ($('prijave').innerHTML = '<div class="prazno">Prijave se ne čuvaju: server radi bez <code>node:sqlite</code>.</div>');
+  $('prijave').innerHTML = d.prijave.length ? d.prijave.map((x) => `<div class="prijava">
+      <div class="koliko" title="broj igrača koji su prijavili">${x.broj}</div>
+      <div>
+        <div class="tekst">${esc(x.tekst)}</div>
+        <div class="odg">✓ ${esc(x.odgovor)}</div>
+        <div class="sitno">${esc(x.kviz)}${x.lekcija ? ` · lekcija ${x.lekcija}${x.nazivLekcije ? ': ' + esc(x.nazivLekcije) : ''}` : ''} · <span class="kod">${esc(x.pitanje_id)}</span>
+          · ${x.broj > 1 ? `prvi put ${fPun.format(x.prva)}, poslednji ` : ''}${fPun.format(x.poslednja)}
+          ${x.izmenjeno ? '<span class="oznaka">u međuvremenu izmenjeno</span>' : ''}${x.nema ? '<span class="oznaka">više ne postoji</span>' : ''}</div>
+      </div>
+      <button type="button" data-resi="${esc(x.pitanje_id)}">Rešeno</button>
+    </div>`).join('') : '<div class="prazno">Nema prijavljenih pitanja.</div>';
+}
+$('prijave').addEventListener('click', async (e) => {
+  const b = e.target.closest('[data-resi]');
+  if (!b) return;
+  b.disabled = true;
+  const r = await fetch('/api/admin/prijave/resi', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ pitanje: b.dataset.resi }) }).catch(() => null);
+  if (r?.status === 401) return prikaziPrijavu();
+  ucitajPrijave();
+});
+
 // ───────── istorija ─────────
 let istorija = null;
 const DANI_U_NEDELJI = ['ned', 'pon', 'uto', 'sre', 'čet', 'pet', 'sub'];
@@ -481,8 +522,9 @@ async function pokreni() {
   istorija = await r.json();
   $('istorijaOsvezeno').textContent = 'osveženo ' + new Date().toLocaleTimeString('sr-Latn', { hour: '2-digit', minute: '2-digit' });
   crtajIstoriju();
+  ucitajPrijave();
   clearInterval(tajmerIstorije);
-  tajmerIstorije = setInterval(ucitajIstoriju, 5 * 60e3);
+  tajmerIstorije = setInterval(() => { ucitajIstoriju(); ucitajPrijave(); }, 5 * 60e3);
 }
 pokreni();
 </script>

@@ -325,6 +325,7 @@ function kontakt() {
 }
 
 // ───────────────────────── meni ─────────────────────────
+const prijavljena = new Set(); // pitanja koja je ovaj telefon već prijavio (u ovoj sesiji)
 function meniDugme() {
   if ($('.meni-dugme')) return;
   const b = document.createElement('button');
@@ -338,6 +339,16 @@ function meniDugme() {
     const stavke = [[Zvuk.tiho ? '🔊 Uključi zvuk' : '🔇 Isključi zvuk', () => (Zvuk.tiho = !Zvuk.tiho)]];
     if (jaDomacin() && V.faza !== 'lobi') stavke.push(['⏹ Prekini igru (nazad u sobu)', () => confirm('Prekinuti igru?') && akcija('lobi')]);
     if (jaDomacin() && V.faza === 'pitanje') stavke.push(['⏭ Završi pitanje sad', () => akcija('dalje', { faza: V.faza })]);
+    // pitanje koje se upravo vidi: tiho se beleži za /admin, igra ide dalje
+    if (!EKRAN && V?.pitanje && (V.faza === 'pitanje' || V.faza === 'otkrivanje')) {
+      const P = V.pitanje, kljuc = `${V.kod}|${P.rb}|${P.tekst}`;
+      if (prijavljena.has(kljuc)) stavke.push(['✓ Pitanje je prijavljeno', () => {}]);
+      else stavke.push(['⚠️ Prijavi pogrešno pitanje', () => {
+        prijavljena.add(kljuc);
+        poruka('Zabeleženo, hvala ✓');
+        fetch('/api/akcija', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ tip: 'prijavi', igrac: ja.id, soba: V.kod, rb: P.rb }) }).catch(() => {});
+      }]);
+    }
     if (!EKRAN) stavke.push(['🚪 Izađi iz sobe', async () => { if (!confirm('Izaći iz sobe?')) return; await akcija('izadji'); prekiniVezu(); V = null; ls.set('soba', ''); pocetna(); }]);
     stavke.forEach(([t, f]) => { const x = document.createElement('button'); x.textContent = t; x.onclick = () => { m.remove(); f(); }; m.appendChild(x); });
     document.body.appendChild(m);

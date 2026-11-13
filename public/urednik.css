@@ -104,3 +104,12 @@ details.u-napredno summary { cursor: pointer; font-weight: 800; color: var(--bla
   .u-izmena { grid-template-columns: 1fr; }
   .u-pregled-okvir { position: static; }
 }
+
+/* prijavljena pitanja (igrači su ih u igri označili kao pogrešna) */
+.u-prijave { list-style: none; padding: 0; margin: 0; }
+.u-prijave li { display: flex; gap: 12px; align-items: flex-start; padding: 10px 6px; border-bottom: 1px solid #ffffff12; cursor: pointer; border-radius: 8px; }
+.u-prijave li:hover { background: #3b3590; }
+.u-prijave li.nema { opacity: .6; }
+.u-prijave .naslov { flex: 1; }
+.u-broj-prijava { min-width: 2em; text-align: center; font-weight: 800; color: #ffbe76; background: #ffbe7622; border-radius: 99px; padding: 2px 8px; }
+.u-prijavljeno { color: #ffbe76; font-weight: 700; white-space: nowrap; }

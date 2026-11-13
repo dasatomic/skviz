@@ -79,6 +79,7 @@ const LIMIT_SOBA = +process.env.LIMIT_SOBA || 20; // novih soba po minutu po adr
 const LIMIT_NEMA = +process.env.LIMIT_NEMA || 120; // pogrešnih kodova soba po minutu po adresi
 const LIMIT_PREDLOGA = +process.env.LIMIT_PREDLOGA || 10; // predloga (pull request-ova) po satu po adresi
 const LIMIT_PREDLOGA_DAN = +process.env.LIMIT_PREDLOGA_DAN || 100; // ukupno predloga dnevno (zaštita od zloupotrebe)
+const LIMIT_PRIJAVA_PITANJA = +process.env.LIMIT_PRIJAVA_PITANJA || 30; // prijava pogrešnih pitanja po satu po adresi
 const LIMIT_STANJA = +process.env.LIMIT_STANJA || 20; // provera stanja predloga („Moji predlozi“) po minutu po adresi
 function novKod() {
   const A = 'ABCDEFGHJKLMNPRSTUVZ';
@@ -285,6 +286,12 @@ async function obradi(req, res) {
   if (p === '/api/info') return kraj(res, 200, { adrese: process.env.NODE_ENV === 'production' ? [] : lanAdrese(), port: PORT, reci: brojReci });
 
   // ───── urednik pitanja: predlozi izmena → pull request na GitHub-u (lib/predlozi.js) ─────
+  // prijavljena pitanja za urednik – javno: samo pitanje i broj prijava (bez soba i igrača)
+  if (p === '/api/prijave') {
+    kvizovi.ucitajSve();
+    return kraj(res, 200, telemetrija.prijave().prijave.map(({ pitanje_id, paket, lekcija, broj, poslednja, tekst, odgovor, kviz, nazivLekcije, izmenjeno, nema }) =>
+      ({ id: pitanje_id, paket, lekcija, broj, poslednja, tekst, odgovor, kviz, nazivLekcije, izmenjeno, nema })));
+  }
   if (p === '/api/predlog/info') return kraj(res, 200, { ukljuceno: predlozi.ukljuceno(), repo: predlozi.REPO });
   if (p === '/api/predlog' && req.method === 'POST') {
     const b = await citajTelo(req);
@@ -343,6 +350,13 @@ async function obradi(req, res) {
       case 'izadji':
         soba.izbaci(id);
         break;
+      case 'prijavi': {
+        // „Prijavi pogrešno pitanje“: tiho se beleži za /admin, igra ide dalje; igrač uvek dobije „ok“
+        const rb = Number(b.rb);
+        const p = soba.faza !== 'lobi' && soba.igraci.has(id) && Number.isInteger(rb) ? soba.pitanja[rb - 1] : null;
+        if (p && !previse(req, 'prijavi', LIMIT_PRIJAVA_PITANJA, 3600e3)) telemetrija.prijavi(soba, p, id);
+        return kraj(res, 200, { ok: true });
+      }
       default:
         if (!domacin) return kraj(res, 403, { greska: 'Samo vođa igre ovo može' });
         if (b.tip === 'podesavanja') soba.postavi(b.podesavanja || {});
@@ -388,6 +402,11 @@ async function admin(req, res, p, url) {
   }
   if (!jeAdmin(req)) return kraj(res, 401, { greska: 'Potrebna je prijava' });
   if (p === '/api/admin/istorija') return kraj(res, 200, telemetrija.istorija(url.searchParams.get('dana') || 14));
+  if (p === '/api/admin/prijave') return kraj(res, 200, telemetrija.prijave());
+  if (p === '/api/admin/prijave/resi' && req.method === 'POST') {
+    const b = await citajTelo(req);
+    return kraj(res, 200, { reseno: telemetrija.resiPrijavu(b.pitanje) });
+  }
   if (p === '/api/admin/uzivo') {
     // presek svih soba na svake 2 s, dok je stranica otvorena
     res.writeHead(200, { 'Content-Type': 'text/event-stream', 'Cache-Control': 'no-cache', Connection: 'keep-alive', 'X-Accel-Buffering': 'no' });
