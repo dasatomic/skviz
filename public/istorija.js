@@ -316,6 +316,50 @@
       linije: [{ l: 'golgotaKosovo', boja: '#ffeb3b', strelica: true, debljina: 5 }, { l: 'golgotaCG', boja: '#ffeb3b', strelica: true, debljina: 5 }, { l: 'golgotaMore', boja: '#8fc6ff', isprekidana: true, debljina: 4 }],
       natpisi: [{ lon: 19.92, lat: 39.45, t: 'Krf', vel: 'm' }, { lon: 18.9, lat: 41.0, t: 'Jadransko more', more: true, vel: 'm' }],
     },
+    // ───── XX vek (8. razred): granice su približne – crtaju se po današnjim državama ─────
+    // Evropa posle Prvog svetskog rata (Versajski poredak, oko 1923)
+    'evropa-1923': {
+      kutija: [-11, 34, 45, 62],
+      slojevi: [{ d: ['ESP', 'PRT', 'CHE', 'NLD', 'DNK', 'NOR', 'SWE', 'GRC', 'BEL', 'LUX', 'IRL'], boja: B.neu },
+        { d: ['FRA'], boja: B.fra, kljuc: 'francuska' }, { d: ['GBR'], boja: B.gb, kljuc: 'britanija' }, { d: ['ITA'], boja: B.ita, kljuc: 'italija' },
+        { d: ['RUS', 'UKR', 'BLR', 'GEO', 'ARM', 'AZE', 'KAZ'], boja: '#b23a3a', kljuc: 'sssr', natpis: 'SSSR', na: [38, 55] },
+        { d: ['TUR'], boja: B.osm2, kljuc: 'turska', natpis: 'Turska', vel: 'm', na: [33, 39] }, { d: ['DEU'], boja: B.nem, kljuc: 'nemacka', natpis: 'Nemačka', vel: 'm', na: [10.2, 51.2] },
+        { d: ['POL', 'CZE', 'SVK', 'AUT', 'HUN', 'LTU', 'LVA', 'EST', 'FIN'], boja: '#e6913a', kljuc: 'nove' },
+        { d: ['ROU', 'MDA'], boja: '#d6b84a', kljuc: 'rumunija' }, { d: ['BGR'], boja: B.bug, kljuc: 'bugarska' }, { d: ['ALB'], boja: B.alb },
+        { d: ['SVN', 'HRV', 'BIH', 'SRB', 'MNE', 'MKD'], boja: B.srb, kljuc: 'shs', natpis: 'Kr. SHS', vel: 'm', na: [19.0, 44.0] }],
+      natpisi: [{ lon: 19.5, lat: 52.2, t: 'Poljska', vel: 'm' }, { lon: 15.4, lat: 49.6, t: 'ČSR', vel: 'm' }, { lon: 2.5, lat: 46.8, t: 'Francuska', vel: 'm' }],
+      legenda: [['#e6913a', 'nove države posle 1918.'], [B.srb, 'Kraljevina SHS'], ['#b23a3a', 'Sovjetska Rusija / SSSR'], [B.nem, 'Nemačka (poražena)']],
+    },
+    // Evropa na vrhuncu moći Osovine (1942)
+    'evropa-1942': {
+      kutija: [-11, 34, 45, 66],
+      slojevi: [{ d: ['ESP', 'PRT', 'CHE', 'SWE', 'TUR', 'IRL'], boja: B.neu, kljuc: 'neutralne' },
+        { d: ['GBR'], boja: B.gb, kljuc: 'britanija', natpis: 'V. Britanija', vel: 'm', na: [-1.8, 52.7] }, { d: ['RUS', 'GEO', 'ARM', 'AZE', 'KAZ'], boja: '#b23a3a', kljuc: 'sssr', natpis: 'SSSR', na: [42, 57] },
+        { d: ['DEU', 'AUT', 'CZE', 'POL', 'FRA', 'NLD', 'BEL', 'LUX', 'DNK', 'NOR', 'GRC', 'SRB', 'UKR', 'BLR', 'LTU', 'LVA', 'EST', 'MNE', 'SVN'], boja: '#4a4a4a', kljuc: 'nemacka' },
+        { d: ['ITA', 'ALB'], boja: '#6b8e23', kljuc: 'italija' }, { d: ['HUN', 'ROU', 'MDA', 'BGR', 'SVK', 'HRV', 'BIH', 'FIN', 'MKD'], boja: '#8d7b68', kljuc: 'saveznici-osovine' }],
+      legenda: [['#4a4a4a', 'Nemačka i okupirane zemlje'], ['#6b8e23', 'Italija'], ['#8d7b68', 'saveznici Osovine'], [B.gb, 'Britanija'], ['#b23a3a', 'SSSR'], [B.neu, 'neutralne']],
+    },
+    // Hladni rat u Evropi (oko 1955–1989)
+    'hladni-rat': {
+      kutija: [-25, 34, 45, 68],
+      slojevi: [{ d: ['ESP', 'CHE', 'SWE', 'FIN', 'IRL', 'AUT'], boja: B.neu, kljuc: 'neutralne' },
+        { d: ['GBR', 'FRA', 'ITA', 'BEL', 'NLD', 'LUX', 'NOR', 'DNK', 'ISL', 'PRT', 'GRC', 'TUR', 'DEU'], boja: '#2f6fb3', kljuc: 'nato' },
+        { d: ['RUS', 'UKR', 'BLR', 'LTU', 'LVA', 'EST', 'MDA', 'GEO', 'ARM', 'AZE', 'KAZ', 'POL', 'CZE', 'SVK', 'HUN', 'ROU', 'BGR'], boja: '#c0392b', kljuc: 'vu' },
+        { r: [[[10.9, 54.0], [10.75, 53.6], [11.15, 53.2], [10.8, 52.85], [10.95, 52.35], [10.6, 51.95], [10.15, 51.45], [9.95, 51.2], [10.2, 50.6], [10.65, 50.35], [11.3, 50.45], [11.95, 50.35], [12.3, 50.2], [13.3, 50.6], [14.3, 50.9], [14.8, 50.85], [15.0, 51.15], [14.6, 51.6], [14.75, 52.1], [14.55, 52.6], [14.3, 53.3], [14.2, 53.9], [13.8, 54.6], [12.4, 54.45], [11.3, 54.15]]], boja: '#c0392b', kljuc: 'ddr' },
+        { d: ['ALB'], boja: '#8d6e63', kljuc: 'albanija' }, { d: ['SVN', 'HRV', 'BIH', 'SRB', 'MNE', 'MKD'], boja: '#e6a23c', kljuc: 'jugoslavija' }],
+      linije: [{ tacke: [[10.9, 54.0], [10.8, 52.85], [10.2, 50.6], [12.3, 50.2], [13.6, 48.8], [16.9, 48.6], [17.1, 48.0], [16.5, 46.5], [16.2, 46.4]], boja: '#ffeb3b', debljina: 5, isprekidana: true }],
+      legenda: [['#2f6fb3', 'NATO'], ['#c0392b', 'Varšavski ugovor'], ['#e6a23c', 'Jugoslavija (nesvrstana)'], [B.neu, 'neutralne'], ['#ffeb3b', '„gvozdena zavesa“']],
+    },
+    // Socijalistička Jugoslavija: šest republika i dve pokrajine (1945–1991)
+    'sfrj': {
+      kutija: [13.2, 40.7, 23.2, 46.95],
+      slojevi: [{ d: ['ITA', 'AUT', 'HUN', 'ROU', 'BGR', 'GRC', 'ALB'], boja: B.neu },
+        { d: ['SVN'], boja: '#4fa3d9', kljuc: 'slovenija', natpis: 'Slovenija', vel: 'm', na: [14.8, 46.1] }, { d: ['HRV'], boja: '#e57373', kljuc: 'hrvatska', natpis: 'Hrvatska', vel: 'm', na: [15.6, 45.4] },
+        { d: ['BIH'], boja: '#81c784', kljuc: 'bih', natpis: 'BiH', vel: 'm', na: [17.8, 44.1] }, { d: ['SRB'], boja: '#3d7fd9', kljuc: 'srbija', natpis: 'Srbija', vel: 'm', na: [20.9, 43.9] },
+        { o: 'vojvodina', boja: '#86b5ef', kljuc: 'vojvodina', natpis: 'Vojvodina', vel: 'm' },
+        { r: [[[20.05, 42.55], [20.3, 42.85], [20.55, 43.2], [20.85, 43.25], [21.2, 43.05], [21.6, 42.7], [21.78, 42.35], [21.55, 42.25], [21.0, 42.2], [20.6, 41.88], [20.52, 42.2], [20.25, 42.35]]], boja: '#86b5ef', kljuc: 'kosovo', natpis: 'KiM', vel: 'm', na: [20.9, 42.6] },
+        { d: ['MNE'], boja: '#20a88f', kljuc: 'cg', natpis: 'CG', vel: 'm', na: [19.25, 42.75] }, { d: ['MKD'], boja: '#ffb74d', kljuc: 'makedonija', natpis: 'Makedonija', vel: 'm', na: [21.7, 41.6] }],
+    },
   };
 
   const podaci = { oblasti, linije, karte, boje: B };

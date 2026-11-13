@@ -141,6 +141,11 @@
         "Francuskom revolucijom"
       ],
       "zanimljivost": "Neki istoričari početak savremenog doba vezuju i za 1914. ili za Oktobarsku revoluciju 1917.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/razred7-istorija/slike/primirje.jpg",
+        "opis": "Potpisivanje primirja 11. novembra 1918."
+      },
       "rec": "savremeno"
     },
     {
@@ -154,6 +159,29 @@
         "Samo 21. vek"
       ],
       "zanimljivost": "To je najkraći, ali najbolje dokumentovan period istorije.",
+      "medijiOdgovora": {
+        "vrsta": "lenta",
+        "od": 1900,
+        "do": 2030,
+        "dogadjaji": [
+          {
+            "g": 1918,
+            "t": "Kraj Prvog svetskog rata"
+          },
+          {
+            "g": 2026,
+            "t": "Danas"
+          }
+        ],
+        "periodi": [
+          {
+            "od": 1918,
+            "do": 2026,
+            "t": "savremena istorija",
+            "boja": "#00b894"
+          }
+        ]
+      },
       "rec": "period"
     },
     {
@@ -167,6 +195,25 @@
         "Prestanak trgovine"
       ],
       "zanimljivost": "Za manje od 70 godina čovečanstvo je od prvog leta avionom (1903) stiglo do Meseca (1969).",
+      "medijiOdgovora": {
+        "vrsta": "lenta",
+        "od": 1900,
+        "do": 1975,
+        "dogadjaji": [
+          {
+            "g": 1903,
+            "t": "Prvi let avionom"
+          },
+          {
+            "g": 1957,
+            "t": "Sputnjik"
+          },
+          {
+            "g": 1969,
+            "t": "Čovek na Mesecu"
+          }
+        ]
+      },
       "rec": "tehnologija"
     },
     {
@@ -180,6 +227,11 @@
         "Podela sveta na dva suprotstavljena bloka predvođena SAD i SSSR-om"
       ],
       "zanimljivost": "Internet je jedan od najvažnijih pokretača globalizacije.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/kablovi.png",
+        "opis": "Podmorski kablovi povezuju kontinente"
+      },
       "rec": "svet"
     },
     {
@@ -193,6 +245,43 @@
         "Krimski i Balkanski"
       ],
       "zanimljivost": "U Drugom svetskom ratu poginulo je, prema procenama, 70–85 miliona ljudi.",
+      "medijiOdgovora": {
+        "vrsta": "lenta",
+        "od": 1910,
+        "do": 1950,
+        "dogadjaji": [
+          {
+            "g": 1914,
+            "t": "Početak I rata"
+          },
+          {
+            "g": 1918,
+            "t": "Kraj I rata"
+          },
+          {
+            "g": 1939,
+            "t": "Početak II rata"
+          },
+          {
+            "g": 1945,
+            "t": "Kraj II rata"
+          }
+        ],
+        "periodi": [
+          {
+            "od": 1914,
+            "do": 1918,
+            "t": "I",
+            "boja": "#e17055"
+          },
+          {
+            "od": 1939,
+            "do": 1945,
+            "t": "II",
+            "boja": "#d63031"
+          }
+        ]
+      },
       "rec": "ratovi"
     },
     {
@@ -206,6 +295,10 @@
         "Dugi rat Rima i Kartagine za prevlast nad zapadnim Sredozemljem"
       ],
       "zanimljivost": "Naziv se pripisuje američkom novinaru Valteru Lipmanu.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "karta": "hladni-rat"
+      },
       "rec": "hladni"
     },
     {
@@ -237,6 +330,11 @@
         "Rat za kolonije"
       ],
       "zanimljivost": "Samo 1960. godine nezavisnost je steklo 17 afričkih država – „Godina Afrike“.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/svetska-istorija/slike/gandi.jpg",
+        "opis": "Mahatma Gandi – vođa borbe za nezavisnost Indije"
+      },
       "rec": "kolonije"
     },
     {
@@ -250,6 +348,11 @@
         "Štamparija"
       ],
       "zanimljivost": "Svetsku mrežu (WWW) osmislio je Tim Berners-Li 1989. u CERN-u.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/razred8-istorija/slike/berners-li.jpg",
+        "opis": "Tim Berners-Li, tvorac svetske mreže (WWW)"
+      },
       "rec": "internet"
     },
     {
@@ -281,6 +384,11 @@
         "Vlast bez vlade"
       ],
       "zanimljivost": "Primeri totalitarnih režima 20. veka su nacistička Nemačka i Staljinov SSSR.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/staljin.jpg",
+        "opis": "Staljin – vođa totalitarnog SSSR-a"
+      },
       "rec": "kontrola"
     },
     {
@@ -294,6 +402,34 @@
         "Oko 100 miliona i 1 milijarda"
       ],
       "zanimljivost": "Stanovništvo sveta je u 20. veku poraslo gotovo četiri puta.",
+      "medijiOdgovora": {
+        "vrsta": "biologija",
+        "scena": "stubici",
+        "naslov": "~Stanovništvo sveta",
+        "jedinica": "~mlrd.",
+        "stavke": [
+          {
+            "o": "1900.",
+            "v": 1.6,
+            "e": "👥"
+          },
+          {
+            "o": "1950.",
+            "v": 2.5,
+            "e": "👥"
+          },
+          {
+            "o": "2000.",
+            "v": 6.1,
+            "e": "👥"
+          },
+          {
+            "o": "2025.",
+            "v": 8.2,
+            "e": "👥"
+          }
+        ]
+      },
       "rec": "ljudi"
     },
     {
@@ -307,6 +443,11 @@
         "Nisu smele da rade"
       ],
       "zanimljivost": "Prva zemlja koja je ženama dala pravo glasa bio je Novi Zeland 1893.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/sufrazetkinje.png",
+        "opis": "Sufražetkinje – borkinje za pravo glasa žena"
+      },
       "rec": "žene"
     },
     {
@@ -320,6 +461,10 @@
         "Vrsta umetnosti koja se razvila u Parizu početkom 20. veka"
       ],
       "zanimljivost": "Glavne ideologije 20. veka bile su liberalizam, komunizam i fašizam.",
+      "medijiOdgovora": {
+        "vrsta": "citat",
+        "tekst": "liberalizam · komunizam · fašizam"
+      },
       "rec": "ideologija"
     },
     {
@@ -333,6 +478,11 @@
         "Kubanska kriza"
       ],
       "zanimljivost": "Berlinski zid je pao 1989, a SSSR se raspao krajem 1991.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/zastava-sssr.png",
+        "opis": "Zastava SSSR-a spuštena je sa Kremlja 25. decembra 1991."
+      },
       "rec": "sssr"
     },
     {
@@ -346,6 +496,11 @@
         "Samo kamene ploče sa natpisima uklesanim na trgovima gradova"
       ],
       "zanimljivost": "Prvi film braće Limijer prikazan je 1895. u Parizu.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/razred7-istorija/slike/limijer.jpg",
+        "opis": "Braća Limijer, pioniri filma"
+      },
       "rec": "film"
     },
     {
@@ -359,6 +514,11 @@
         "Zbog loše štampe"
       ],
       "zanimljivost": "Za vreme ratova vlade su često cenzurisale vesti.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/razred7-istorija/slike/politika-1904.jpg",
+        "opis": "Prvi broj „Politike“ (1904)"
+      },
       "rec": "propaganda"
     },
     {
@@ -372,6 +532,11 @@
         "Reklama za hranu"
       ],
       "zanimljivost": "U Drugom svetskom ratu sve strane su koristile plakate, radio i filmove za propagandu.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/propaganda.jpg",
+        "opis": "Propagandni plakat"
+      },
       "rec": "plakat"
     },
     {
@@ -385,6 +550,10 @@
         "Pesme koje se pevaju na slavljima, bez ikakve veze sa prošlošću"
       ],
       "zanimljivost": "Razgovor sa bakama i dekama o njihovom detinjstvu takođe je usmena istorija.",
+      "medijiOdgovora": {
+        "vrsta": "emodzi",
+        "tekst": "👵 🗣️ 👦"
+      },
       "rec": "svedočenje"
     },
     {
@@ -416,6 +585,11 @@
         "Muzej savremene umetnosti"
       ],
       "zanimljivost": "Kinoteka u Beogradu jedna je od najvećih filmskih arhiva u Evropi.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/kinoteka.jpg",
+        "opis": "Jugoslovenska kinoteka u Beogradu"
+      },
       "rec": "kinoteka"
     },
     {
@@ -429,6 +603,11 @@
         "Galerija sa slikama starih majstora"
       ],
       "zanimljivost": "Arhiv Jugoslavije u Beogradu čuva dokumente od 1918. do raspada Jugoslavije.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/arhiv-jugoslavije.jpg",
+        "opis": "Arhiv Jugoslavije u Beogradu"
+      },
       "rec": "arhiv"
     },
     {
@@ -442,6 +621,11 @@
         "Pišu ih istoričari"
       ],
       "zanimljivost": "Čerčil je, za svoju istoriju Drugog svetskog rata, dobio Nobelovu nagradu za književnost.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/svetska-istorija/slike/cercil.jpg",
+        "opis": "Vinston Čerčil – napisao je i sopstvenu istoriju rata"
+      },
       "rec": "memoari"
     },
     {
@@ -455,6 +639,11 @@
         "Arhiv u kome se čuvaju stari dokumenti i zapisnici države"
       ],
       "zanimljivost": "U totalitarnim državama cenzura je bila sveprisutna.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/spaljivanje-knjiga.jpg",
+        "opis": "Nacisti spaljuju knjige 1933."
+      },
       "rec": "cenzura"
     },
     {
@@ -468,6 +657,11 @@
         "Papirus"
       ],
       "zanimljivost": "Fotografije sa fronta Prvog svetskog rata prvi put su svetu pokazale strahote rata.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/majka-migrantkinja.jpg",
+        "opis": "„Majka migrantkinja“ (1936)"
+      },
       "rec": "fotografija"
     },
     {
@@ -481,6 +675,30 @@
         "Filmovi i dokumentarne emisije o istoriji na televiziji"
       ],
       "zanimljivost": "Popis stanovništva daje jasnu sliku društva u određenom trenutku.",
+      "medijiOdgovora": {
+        "vrsta": "biologija",
+        "scena": "stubici",
+        "naslov": "~Gubici u Prvom svetskom ratu (% stanovnika)",
+        "jedinica": "%",
+        "stavke": [
+          {
+            "o": "~Srbija",
+            "v": 16
+          },
+          {
+            "o": "~Francuska",
+            "v": 4.3
+          },
+          {
+            "o": "~Nemačka",
+            "v": 3.8
+          },
+          {
+            "o": "~Britanija",
+            "v": 2.2
+          }
+        ]
+      },
       "rec": "popis"
     },
     {
@@ -494,6 +712,10 @@
         "Koliko danas košta na aukciji kod kolekcionara"
       ],
       "zanimljivost": "Ovaj postupak zove se kritika izvora.",
+      "medijiOdgovora": {
+        "vrsta": "citat",
+        "tekst": "Ko? · Kada? · Zašto? · Za koga?"
+      },
       "rec": "kritika"
     },
     {
@@ -507,6 +729,10 @@
         "Vesti koje se emituju na radiju, za razliku od onih u štampi i na TV"
       ],
       "zanimljivost": "Proveravanje izvora je danas važnije nego ikad.",
+      "medijiOdgovora": {
+        "vrsta": "emodzi",
+        "tekst": "📰 ❓ 🔍 ✅"
+      },
       "rec": "vest"
     },
     {
@@ -520,6 +746,11 @@
         "Samo u školama, u kabinetima istorije i školskim bibliotekama"
       ],
       "zanimljivost": "„Politika“ izlazi od 1904. – najstariji je dnevni list na Balkanu koji i danas izlazi.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/razred7-istorija/slike/narodna-biblioteka.jpg",
+        "opis": "Narodna biblioteka Srbije"
+      },
       "rec": "politika"
     },
     {
@@ -533,6 +764,11 @@
         "Predmet iz prošlosti izložen u muzeju ili arhivu"
       ],
       "zanimljivost": "Radio je bio glavni medij u Drugom svetskom ratu – ljudi su potajno slušali strane stanice.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/radio-mikrofon.jpg",
+        "opis": "Stari radio-mikrofon"
+      },
       "rec": "radio"
     },
     {
@@ -546,6 +782,11 @@
         "Pad Berlinskog zida"
       ],
       "zanimljivost": "Po julijanskom kalendaru dogodila se u oktobru, a po gregorijanskom 7. novembra.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/zimski-dvorac.jpg",
+        "opis": "Zimski dvorac u Petrogradu"
+      },
       "rec": "oktobar"
     },
     {
@@ -577,6 +818,11 @@
         "Obrenovići"
       ],
       "zanimljivost": "Car Nikolaj II i njegova porodica ubijeni su 1918. u Jekaterinburgu.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/nikolaj.jpg",
+        "opis": "Car Nikolaj II"
+      },
       "rec": "romanovi"
     },
     {
@@ -590,6 +836,11 @@
         "Povratak cara Nikolaja II na presto uz podršku seljaka i vojske"
       ],
       "zanimljivost": "Mnogi „beli“ izbeglice našli su utočište u Kraljevini SHS.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/crveni-beli.jpg",
+        "opis": "Ruski građanski rat"
+      },
       "rec": "građanski"
     },
     {
@@ -603,6 +854,11 @@
         "Turska"
       ],
       "zanimljivost": "SSSR je bio najveća država sveta po površini.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/zastava-sssr.png",
+        "opis": "Zastava SSSR-a"
+      },
       "rec": "sssr"
     },
     {
@@ -616,6 +872,11 @@
         "Ujedinjenje Nemačke"
       ],
       "zanimljivost": "Car Vilhelm II pobegao je u Holandiju.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/novembarska.jpg",
+        "opis": "Revolucionari u Berlinu, novembar 1918."
+      },
       "rec": "vilhelm"
     },
     {
@@ -629,6 +890,11 @@
         "Savezna republika"
       ],
       "zanimljivost": "Ime je dobila po gradu Vajmaru gde je usvojen njen ustav.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/vajmar.png",
+        "opis": "Grb Vajmarske republike"
+      },
       "rec": "vajmar"
     },
     {
@@ -642,6 +908,11 @@
         "Generali koji su vodili rusku vojsku u ratu"
       ],
       "zanimljivost": "Reč sovjet na ruskom znači „savet“.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/petrogradski-sovjet.jpg",
+        "opis": "Sednica Petrogradskog sovjeta 1917."
+      },
       "rec": "savet"
     },
     {
@@ -673,6 +944,11 @@
         "Francuska"
       ],
       "zanimljivost": "Mađarska sovjetska republika trajala je samo oko 133 dana.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/bela-kun.png",
+        "opis": "Bela Kun"
+      },
       "rec": "kun"
     },
     {
@@ -686,6 +962,11 @@
         "Vrsta vojske sastavljene samo od dobrovoljaca iz fabrika i sela cele Rusije"
       ],
       "zanimljivost": "Posledica je bila velika glad 1921–1922.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/glad-1921.jpg",
+        "opis": "Glad u Rusiji 1921."
+      },
       "rec": "glad"
     },
     {
@@ -699,6 +980,11 @@
         "Pariskim mirom"
       ],
       "zanimljivost": "Rusija je tim mirom izgubila velike teritorije, uključujući Ukrajinu i baltičke zemlje.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/brest-litovsk.jpg",
+        "opis": "Potpisivanje mira u Brest-Litovsku"
+      },
       "rec": "brest"
     },
     {
@@ -712,6 +998,11 @@
         "„Sve za naciju“"
       ],
       "zanimljivost": "Obećanje mira bilo je posebno privlačno vojnicima umornim od rata.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/lenjin.jpg",
+        "opis": "Lenjin"
+      },
       "rec": "hleb"
     },
     {
@@ -779,6 +1070,13 @@
         "Ništa"
       ],
       "zanimljivost": "Mnogi Nemci su smatrali mir poniženjem – to su kasnije iskoristili nacisti.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "karta": "evropa-1923",
+        "istakni": [
+          "nemacka"
+        ]
+      },
       "rec": "odšteta"
     },
     {
@@ -792,6 +1090,11 @@
         "Evropska unija (EU)"
       ],
       "zanimljivost": "SAD, čiji je predsednik Vilson predložio Ligu, nikada joj nisu pristupile.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/liga-naroda.png",
+        "opis": "Zasedanje Lige naroda u Ženevi"
+      },
       "rec": "liga"
     },
     {
@@ -805,6 +1108,14 @@
         "Rusija"
       ],
       "zanimljivost": "Raspad Austrougarske potpuno je promenio kartu srednje Evrope.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "karta": "evropa-1923",
+        "istakni": [
+          "nove",
+          "shs"
+        ]
+      },
       "rec": "raspad"
     },
     {
@@ -836,6 +1147,11 @@
         "Ukidanje Amerike"
       ],
       "zanimljivost": "Vilson je za to dobio Nobelovu nagradu za mir 1919.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/vilson.jpg",
+        "opis": "Vudro Vilson"
+      },
       "rec": "narodi"
     },
     {
@@ -867,6 +1183,11 @@
         "Ništa se nije promenilo – sultan je vladao istim teritorijama"
       ],
       "zanimljivost": "Osnivač moderne Turske je Mustafa Kemal Ataturk.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/ataturk.jpg",
+        "opis": "Mustafa Kemal Ataturk"
+      },
       "rec": "turska"
     },
     {
@@ -880,6 +1201,27 @@
         "Trijanonskim"
       ],
       "zanimljivost": "Bugarska je izgubila Caribrod, Bosiljgrad i Strumicu.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "balkan",
+        "tacke": [
+          {
+            "lon": 22.78,
+            "lat": 43,
+            "oznaka": "Caribrod"
+          },
+          {
+            "lon": 22.47,
+            "lat": 42.49,
+            "oznaka": "Bosiljgrad"
+          },
+          {
+            "lon": 22.64,
+            "lat": 41.44,
+            "oznaka": "Strumica"
+          }
+        ]
+      },
       "rec": "nej"
     },
     {
@@ -893,6 +1235,11 @@
         "Brest-litovskim"
       ],
       "zanimljivost": "Mađarska je izgubila oko dve trećine teritorije – Vojvodina je pripala Kraljevini SHS.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/trijanon.jpg",
+        "opis": "Potpisivanje Trijanonskog mira 1920."
+      },
       "rec": "trijanon"
     },
     {
@@ -906,6 +1253,11 @@
         "Mirovni ugovor kojim se završava rat i određuju granice"
       ],
       "zanimljivost": "Nemačka je poslednju ratu odštete za Prvi svetski rat isplatila tek 2010. godine.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/hiperinflacija.jpg",
+        "opis": "Nemačka 1923: novac je gubio vrednost"
+      },
       "rec": "odšteta"
     },
     {
@@ -918,6 +1270,11 @@
       ],
       "tezina": 2,
       "zanimljivost": "Prvi svetski rat se zvao „Veliki rat“. Uz vojnike, stradali su i milioni civila – a odmah posle rata usledila je pandemija španskog gripa, koja je odnela još više života.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/verden-kosturnica.jpg",
+        "opis": "Kosturnica Duomon kod Verdena"
+      },
       "rec": "rat",
       "lekcija": 4
     },
@@ -932,6 +1289,23 @@
         "Ljubljana (Lajbah)"
       ],
       "zanimljivost": "Italijanski pesnik D'Anuncio je 1919. sa dobrovoljcima zauzeo Rijeku.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "evropa",
+        "kutija": [
+          12,
+          43.5,
+          16.5,
+          46.5
+        ],
+        "tacke": [
+          {
+            "lon": 14.44,
+            "lat": 45.33,
+            "oznaka": "Rijeka"
+          }
+        ]
+      },
       "rec": "rijeka"
     },
     {
@@ -945,6 +1319,10 @@
         "Vojni savez Francuske, Britanije i Rusije stvoren u Versaju pre Prvog svetskog rata"
       ],
       "zanimljivost": "Mnoge nove granice ostavile su nezadovoljne manjine – izvor budućih sukoba.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "karta": "evropa-1923"
+      },
       "rec": "poredak"
     },
     {
@@ -958,6 +1336,11 @@
         "Brest-litovskim"
       ],
       "zanimljivost": "Ugovor je potpisan u dvorcu Sen-Žermen kod Pariza. Austriji je zabranjeno da se ujedini sa Nemačkom, a od nekadašnjeg velikog carstva ostala je mala republika.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/sen-zermen.jpg",
+        "opis": "Dvorac Sen-Žermen kod Pariza"
+      },
       "rec": "austrija"
     },
     {
@@ -989,6 +1372,11 @@
         "Kraj industrije"
       ],
       "zanimljivost": "U SAD je 1933. bez posla bio svaki četvrti radnik.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/velika-depresija.jpg",
+        "opis": "Nezaposleni u redu za hranu, SAD"
+      },
       "rec": "posao"
     },
     {
@@ -1020,6 +1408,11 @@
         "Filmski festival u Kanu"
       ],
       "zanimljivost": "Prvi dugometražni zvučni film, „Pevač džeza“, prikazan je 1927.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/pevac-dzeza.jpg",
+        "opis": "„Pevač džeza“ (1927)"
+      },
       "rec": "film"
     },
     {
@@ -1051,6 +1444,11 @@
         "Mobilni telefon"
       ],
       "zanimljivost": "Radio Beograd počeo je da emituje program 1929. godine.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/radio.jpg",
+        "opis": "Radio-aparat"
+      },
       "rec": "radio"
     },
     {
@@ -1064,6 +1462,11 @@
         "Rimske toge i sandale na ulicama velikih gradova"
       ],
       "zanimljivost": "Džez muzika i ples čarlston obeležili su to doba.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/flaper.jpg",
+        "opis": "Moda dvadesetih godina"
+      },
       "rec": "džez"
     },
     {
@@ -1167,6 +1570,11 @@
         "Pozorišne predstave koje su se igrale isključivo za cara i njegovu porodicu"
       ],
       "zanimljivost": "Fudbal je između dva rata postao najpopularniji sport u Evropi.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/mundijal-1930.jpg",
+        "opis": "Prvo Svetsko prvenstvo u fudbalu, 1930."
+      },
       "rec": "masovna"
     },
     {
@@ -1180,6 +1588,17 @@
         "1966. u Engleskoj"
       ],
       "zanimljivost": "Reprezentacija Kraljevine Jugoslavije stigla je do polufinala!",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "j-amerika",
+        "tacke": [
+          {
+            "lon": -56.16,
+            "lat": -34.9,
+            "oznaka": "Montevideo"
+          }
+        ]
+      },
       "rec": "fudbal"
     },
     {
@@ -1193,6 +1612,11 @@
         "Ikonopis po pravilima vizantijskih slikara iz manastira"
       ],
       "zanimljivost": "Salvador Dali je najpoznatiji nadrealista – „topljeni satovi“.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/umetnost/slike/dali-satovi.jpg",
+        "opis": "Salvador Dali – „Postojanost pamćenja“"
+      },
       "rec": "nadrealizam"
     },
     {
@@ -1206,6 +1630,11 @@
         "Josif Staljin"
       ],
       "zanimljivost": "Musolini je preuzeo vlast posle „Marša na Rim“ 1922.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/musolini.jpg",
+        "opis": "Benito Musolini"
+      },
       "rec": "musolini"
     },
     {
@@ -1219,6 +1648,11 @@
         "Ernest Rem"
       ],
       "zanimljivost": "Hitler je postao kancelar 30. januara 1933.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/hitler.jpg",
+        "opis": "Adolf Hitler"
+      },
       "rec": "hitler"
     },
     {
@@ -1232,6 +1666,11 @@
         "Sportski pokret koji je organizovao olimpijske igre u Berlinu 1936. godine"
       ],
       "zanimljivost": "Nacisti su verovali u „superiornost arijevske rase“ – lažnu i zločinačku ideju.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/nirnberski-skup.jpg",
+        "opis": "Nacistički skup u Nirnbergu"
+      },
       "rec": "nacizam"
     },
     {
@@ -1245,6 +1684,29 @@
         "Sveto rimsko carstvo"
       ],
       "zanimljivost": "Hitler je govorio da će rajh trajati hiljadu godina – trajao je 12.",
+      "medijiOdgovora": {
+        "vrsta": "lenta",
+        "od": 1930,
+        "do": 1950,
+        "dogadjaji": [
+          {
+            "g": 1933,
+            "t": "Hitler kancelar"
+          },
+          {
+            "g": 1945,
+            "t": "Kraj rata"
+          }
+        ],
+        "periodi": [
+          {
+            "od": 1933,
+            "do": 1945,
+            "t": "12 godina",
+            "boja": "#4a4a4a"
+          }
+        ]
+      },
       "rec": "rajh"
     },
     {
@@ -1258,6 +1720,11 @@
         "Mirovni ugovori Nemačke sa susedima o novim granicama u Evropi"
       ],
       "zanimljivost": "To je bio korak ka Holokaustu.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/zuta-zvezda.jpg",
+        "opis": "Žuta zvezda koju su Jevreji morali da nose"
+      },
       "rec": "zakoni"
     },
     {
@@ -1289,6 +1756,11 @@
         "SA, jurišni odredi stranke"
       ],
       "zanimljivost": "SS je bila paravojna organizacija koja je kasnije upravljala logorima.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/gestapo.jpg",
+        "opis": "Sedište Gestapoa u Berlinu"
+      },
       "rec": "gestapo"
     },
     {
@@ -1302,6 +1774,11 @@
         "Krin"
       ],
       "zanimljivost": "Svastika je drevni simbol iz Azije čije je značenje nacizam izopačio.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/svastika.png",
+        "opis": "Svastika je drevni simbol sreće u Aziji"
+      },
       "rec": "svastika"
     },
     {
@@ -1315,6 +1792,10 @@
         "Monarhija sa ustavom u kojoj kralj deli vlast sa izabranom skupštinom"
       ],
       "zanimljivost": "Reč dolazi od latinskog fasces – snop pruća, simbol vlasti u starom Rimu.",
+      "medijiOdgovora": {
+        "vrsta": "citat",
+        "tekst": "fasces – snop pruća sa sekirom, rimski simbol vlasti; po njemu je fašizam dobio ime"
+      },
       "rec": "fašizam"
     },
     {
@@ -1328,6 +1809,11 @@
         "Uvedena je demokratija"
       ],
       "zanimljivost": "Za samo nekoliko meseci zabranjene su sve stranke osim nacističke.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/rajhstag.jpg",
+        "opis": "Rajhstag – zgrada nemačkog parlamenta"
+      },
       "rec": "diktatura"
     },
     {
@@ -1359,6 +1845,11 @@
         "„Propast Zapada“ od Špenglera"
       ],
       "zanimljivost": "Knjigu je napisao u zatvoru posle neuspelog puča 1923.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/landsberg.jpg",
+        "opis": "Zatvor Landsberg"
+      },
       "rec": "borba"
     },
     {
@@ -1390,6 +1881,11 @@
         "Pravni sistem"
       ],
       "zanimljivost": "Antisemitizam je bio u srži nacističke ideologije.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/zuta-zvezda.jpg",
+        "opis": "Žuta zvezda – znak kojim su nacisti obeležavali Jevreje"
+      },
       "rec": "mržnja"
     },
     {
@@ -1403,6 +1899,11 @@
         "Ruski revolucionari"
       ],
       "zanimljivost": "Hitlerovi „smeđokošuljaši“ (SA) bili su njihov nemački pandan.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/mars-na-rim.jpg",
+        "opis": "Marš na Rim, 1922."
+      },
       "rec": "košulja"
     },
     {
@@ -1434,6 +1935,11 @@
         "Vraćanje cara"
       ],
       "zanimljivost": "Kolektivizacija je izazvala strašnu glad, posebno u Ukrajini 1932–1933.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/kolhoz.jpg",
+        "opis": "Kolhoz – sovjetsko kolektivno gazdinstvo"
+      },
       "rec": "kolhoz"
     },
     {
@@ -1447,6 +1953,11 @@
         "Vojni savezi"
       ],
       "zanimljivost": "SSSR je za kratko vreme postao industrijska sila, ali uz ogromne žrtve.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/magnitogorsk.jpg",
+        "opis": "Magnitogorsk – grad podignut u petoletkama"
+      },
       "rec": "petoletka"
     },
     {
@@ -1460,6 +1971,11 @@
         "Prvi slobodni izbori u SSSR-u na kojima je učestvovalo više stranaka i kandidata"
       ],
       "zanimljivost": "Stotine hiljada ljudi je pogubljeno, a milioni poslati u logore.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/velika-cistka.jpg",
+        "opis": "Velike čistke"
+      },
       "rec": "čistke"
     },
     {
@@ -1473,6 +1989,11 @@
         "Pozorište u Moskvi u kome su igrane predstave o revoluciji"
       ],
       "zanimljivost": "Pisac Aleksandar Solženjicin opisao je život u Gulagu u delu „Arhipelag Gulag“.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/gulag.png",
+        "opis": "Logor Gulaga"
+      },
       "rec": "gulag"
     },
     {
@@ -1486,6 +2007,11 @@
         "Narodna monarhistička stranka"
       ],
       "zanimljivost": "SSSR je bio jednopartijska država.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/kremlj.jpg",
+        "opis": "Kremlj u Moskvi"
+      },
       "rec": "partija"
     },
     {
@@ -1499,6 +2025,11 @@
         "Hladni rat – sukob sa Amerikom i Zapadom bez otvorenog oružanog rata"
       ],
       "zanimljivost": "NEP je ukinut kada je Staljin pokrenuo kolektivizaciju.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/nep.png",
+        "opis": "Grb SSSR-a"
+      },
       "rec": "nep"
     },
     {
@@ -1512,6 +2043,11 @@
         "Muzej"
       ],
       "zanimljivost": "Gradovi su dobijali Staljinovo ime – npr. Staljingrad.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/staljin.jpg",
+        "opis": "Staljin"
+      },
       "rec": "kult"
     },
     {
@@ -1525,6 +2061,11 @@
         "Minsk"
       ],
       "zanimljivost": "Boljševici su prestonicu iz Petrograda preselili u Moskvu 1918.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/crveni-trg.jpg",
+        "opis": "Crveni trg u Moskvi"
+      },
       "rec": "moskva"
     },
     {
@@ -1538,6 +2079,11 @@
         "Ukrajina je postala nezavisna"
       ],
       "zanimljivost": "Holodomor na ukrajinskom znači „ubijanje glađu“.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/holodomor.jpg",
+        "opis": "Spomenik žrtvama Holodomora u Kijevu"
+      },
       "rec": "glad"
     },
     {
@@ -1551,6 +2097,11 @@
         "Smanjenje vojske i prodaja oružja zemljama Zapada"
       ],
       "zanimljivost": "Na Uralu i u Sibiru niknuli su potpuno novi industrijski gradovi.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/dnjeproges.jpg",
+        "opis": "Hidroelektrana na Dnjepru – ponos prve petoletke"
+      },
       "rec": "industrija"
     },
     {
@@ -1564,6 +2115,11 @@
         "Postojala je za strance"
       ],
       "zanimljivost": "I čuvene fotografije su retuširane da bi se „izbrisali“ pali u nemilost.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/retus.jpg",
+        "opis": "Retuširana fotografija: čovek koji je „pao u nemilost“ izbrisan je sa slike"
+      },
       "rec": "cenzura"
     },
     {
@@ -1577,12 +2133,17 @@
         "MI6"
       ],
       "zanimljivost": "Kasnije se iz nje razvio KGB.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/lubjanka.jpg",
+        "opis": "Zgrada Lubjanka u Moskvi"
+      },
       "rec": "nkvd"
     },
     {
       "lekcija": 7,
       "tezina": 2,
-      "pitanje": "Šta je bio Kominterna?",
+      "pitanje": "Šta je bila Kominterna?",
       "odgovori": [
         "Međunarodna organizacija komunističkih partija pod vođstvom Moskve",
         "Fudbalski savez komunističkih zemalja koji je organizovao takmičenja",
@@ -1590,6 +2151,11 @@
         "Vojni savez socijalističkih zemalja, kasnije nazvan Varšavski ugovor"
       ],
       "zanimljivost": "Komunistička partija Jugoslavije bila je članica Kominterne.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/kominterna.png",
+        "opis": "Plakat Kominterne"
+      },
       "rec": "kominterna"
     },
     {
@@ -1621,6 +2187,11 @@
         "Francuska"
       ],
       "zanimljivost": "Etiopski car Hajle Selasije uzalud je tražio pomoć od Lige naroda.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/hajle-selasije.jpg",
+        "opis": "Car Hajle Selasije"
+      },
       "rec": "etiopija"
     },
     {
@@ -1652,6 +2223,20 @@
         "Savez sa SSSR-om"
       ],
       "zanimljivost": "Hitler je bio rodom iz Austrije.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "evropa",
+        "kutija": [
+          4,
+          45,
+          20,
+          55.5
+        ],
+        "istakni": [
+          "DEU",
+          "AUT"
+        ]
+      },
       "rec": "anšlus"
     },
     {
@@ -1683,6 +2268,11 @@
         "Izolacija SAD"
       ],
       "zanimljivost": "Čerčil je kritikovao ovu politiku od samog početka.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/minhen.jpg",
+        "opis": "Minhenski sporazum 1938."
+      },
       "rec": "popuštanje"
     },
     {
@@ -1696,6 +2286,11 @@
         "Ugovor o trgovini nafte i žita između Nemačke i SAD potpisan neposredno pred rat"
       ],
       "zanimljivost": "Tajni protokol podelio je Poljsku i baltičke zemlje.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/ribentrop-molotov.jpg",
+        "opis": "Potpisivanje pakta Ribentrop–Molotov u Moskvi"
+      },
       "rec": "pakt"
     },
     {
@@ -1709,6 +2304,26 @@
         "Rusija"
       ],
       "zanimljivost": "Japan je potom napustio Ligu naroda.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "azija",
+        "kutija": [
+          100,
+          20,
+          150,
+          55
+        ],
+        "istakni": [
+          "JPN"
+        ],
+        "tacke": [
+          {
+            "lon": 126.5,
+            "lat": 45.8,
+            "oznaka": "Mandžurija"
+          }
+        ]
+      },
       "rec": "japan"
     },
     {
@@ -1722,6 +2337,11 @@
         "Imala je previše članica, pa nikada nisu mogle da se dogovore"
       ],
       "zanimljivost": "Nemačka, Japan i Italija su jednostavno napustili Ligu.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/palata-naroda.jpg",
+        "opis": "Palata naroda u Ženevi, sedište Lige naroda"
+      },
       "rec": "liga"
     },
     {
@@ -1735,6 +2355,14 @@
         "Balkanski savez"
       ],
       "zanimljivost": "Naziv potiče od Musolinijeve izjave o „osovini Rim–Berlin“.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "karta": "evropa-1942",
+        "istakni": [
+          "nemacka",
+          "italija"
+        ]
+      },
       "rec": "osovina"
     },
     {
@@ -1748,6 +2376,10 @@
         "Posle izbora u Nemačkoj 1935."
       ],
       "zanimljivost": "Time je pokazano da Minhenski sporazum nije zaustavio Hitlera.",
+      "medijiOdgovora": {
+        "vrsta": "citat",
+        "tekst": "Mart 1939: Nemačka vojska ulazi u Prag – Minhenski sporazum nije zaustavio Hitlera"
+      },
       "rec": "praga"
     },
     {
@@ -1779,6 +2411,11 @@
         "Hitler"
       ],
       "zanimljivost": "Franko je vladao Španijom do svoje smrti 1975.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/franko.jpg",
+        "opis": "Fransisko Franko"
+      },
       "rec": "franko"
     },
     {
@@ -1792,6 +2429,27 @@
         "Sovjetski savez"
       ],
       "zanimljivost": "Cilj joj je bio da spreči obnovu Habzburga i mađarski revizionizam.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "evropa",
+        "kutija": [
+          11,
+          40,
+          31,
+          52
+        ],
+        "istakni": [
+          "CZE",
+          "SVK",
+          "ROU",
+          "SVN",
+          "HRV",
+          "BIH",
+          "SRB",
+          "MNE",
+          "MKD"
+        ]
+      },
       "rec": "antanta"
     },
     {
@@ -1805,6 +2463,27 @@
         "Savez Albanije i Italije"
       ],
       "zanimljivost": "Iste godine u Marselju je ubijen kralj Aleksandar.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "evropa",
+        "kutija": [
+          12,
+          34,
+          45,
+          49
+        ],
+        "istakni": [
+          "SVN",
+          "HRV",
+          "BIH",
+          "SRB",
+          "MNE",
+          "MKD",
+          "GRC",
+          "ROU",
+          "TUR"
+        ]
+      },
       "rec": "balkan"
     },
     {
@@ -1818,6 +2497,13 @@
         "Bugarsku"
       ],
       "zanimljivost": "Kralj Zogu je pobegao u inostranstvo.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "balkan",
+        "istakni": [
+          "ALB"
+        ]
+      },
       "rec": "albanija"
     },
     {
@@ -1831,6 +2517,19 @@
         "29. novembra 1943."
       ],
       "zanimljivost": "Ujedinjenje je proglasio regent Aleksandar Karađorđević u Beogradu.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "karta": "evropa-1923",
+        "kutija": [
+          12,
+          40,
+          26,
+          48
+        ],
+        "istakni": [
+          "shs"
+        ]
+      },
       "rec": "ujedinjenje"
     },
     {
@@ -1844,6 +2543,11 @@
         "Niška deklaracija samo"
       ],
       "zanimljivost": "Deklaraciju su potpisali Nikola Pašić i Ante Trumbić na Krfu.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/trumbic.jpg",
+        "opis": "Ante Trumbić"
+      },
       "rec": "krf"
     },
     {
@@ -1857,6 +2561,11 @@
         "Banka koja je davala zajmove srpskoj vladi za vojsku tokom rata u izbeglištvu"
       ],
       "zanimljivost": "Odbor je vodio Ante Trumbić.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/jugoslovenski-odbor.jpg",
+        "opis": "Jugoslovenski odbor"
+      },
       "rec": "odbor"
     },
     {
@@ -1870,6 +2579,11 @@
         "Banovina Hrvatska"
       ],
       "zanimljivost": "Ova kratkotrajna država trajala je samo oko mesec dana.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/drzava-shs.png",
+        "opis": "Država Slovenaca, Hrvata i Srba (1918)"
+      },
       "rec": "država"
     },
     {
@@ -1883,6 +2597,28 @@
         "Slovenija i Istra do Jadranskog mora"
       ],
       "zanimljivost": "Dan ranije, 24. novembra, Srem se odlukom skupštine u Rumi prisajedinio Srbiji.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "srbija",
+        "kutija": [
+          18.8,
+          44.6,
+          23,
+          46.3
+        ],
+        "tacke": [
+          {
+            "lon": 19.84,
+            "lat": 45.25,
+            "oznaka": "Novi Sad"
+          },
+          {
+            "lon": 19.82,
+            "lat": 45.02,
+            "oznaka": "Ruma"
+          }
+        ]
+      },
       "rec": "vojvodina"
     },
     {
@@ -1896,6 +2632,20 @@
         "Makedonija"
       ],
       "zanimljivost": "Kralj Nikola I Petrović je tada svrgnut.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "balkan",
+        "istakni": [
+          "MNE"
+        ],
+        "tacke": [
+          {
+            "lon": 19.26,
+            "lat": 42.44,
+            "oznaka": "Podgorica"
+          }
+        ]
+      },
       "rec": "podgorica"
     },
     {
@@ -1927,6 +2677,10 @@
         "Svi su želeli republiku"
       ],
       "zanimljivost": "Ova razlika obeležila je ceo međuratni period.",
+      "medijiOdgovora": {
+        "vrsta": "citat",
+        "tekst": "Beograd: centralizam ⟷ Zagreb: federalizam"
+      },
       "rec": "centralizam"
     },
     {
@@ -1940,6 +2694,11 @@
         "Sarajevo"
       ],
       "zanimljivost": "Beograd je posle rata bio teško razoren.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/geografija/slike/beogradska-tvrdjava.jpg",
+        "opis": "Beograd"
+      },
       "rec": "beograd"
     },
     {
@@ -1953,6 +2712,17 @@
         "Novi ustav Kraljevine Srbije kojim je uvedeno opšte pravo glasa za sve građane, pa i žene"
       ],
       "zanimljivost": "Doneta je u Nišu, gde je vlada bila tokom rata.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "srbija",
+        "tacke": [
+          {
+            "lon": 21.9,
+            "lat": 43.32,
+            "oznaka": "Niš"
+          }
+        ]
+      },
       "rec": "niš"
     },
     {
@@ -1984,6 +2754,10 @@
         "Politička partija seljaka koja je pobedila na prvim izborima u Kraljevini SHS 1920. godine"
       ],
       "zanimljivost": "Haos krajem 1918. ubrzao je ujedinjenje sa Srbijom.",
+      "medijiOdgovora": {
+        "vrsta": "citat",
+        "tekst": "„Zeleni kadar“ – po šumi, u kojoj su se krili"
+      },
       "rec": "kadar"
     },
     {
@@ -1997,6 +2771,33 @@
         "Rumunija"
       ],
       "zanimljivost": "Rapalskim ugovorom 1920. Italija je dobila Istru i Zadar.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "evropa",
+        "kutija": [
+          12,
+          42,
+          20,
+          47
+        ],
+        "tacke": [
+          {
+            "lon": 13.78,
+            "lat": 45.65,
+            "oznaka": "Trst"
+          },
+          {
+            "lon": 14.44,
+            "lat": 45.33,
+            "oznaka": "Rijeka"
+          },
+          {
+            "lon": 15.23,
+            "lat": 44.12,
+            "oznaka": "Zadar"
+          }
+        ]
+      },
       "rec": "italija"
     },
     {
@@ -2010,6 +2811,10 @@
         "Samo hrvatska, jer je prestonica bila u Zagrebu, a ne u Beogradu"
       ],
       "zanimljivost": "Mnogi narodi, poput Makedonaca, Crnogoraca i Muslimana, nisu bili priznati u nazivu države.",
+      "medijiOdgovora": {
+        "vrsta": "citat",
+        "tekst": "Srbi · Hrvati · Slovenci · Makedonci · Crnogorci · Muslimani · Nemci · Mađari · Albanci…"
+      },
       "rec": "narodi"
     },
     {
@@ -2023,6 +2828,11 @@
         "Polovina svih muškaraca i žena u celoj Srbiji"
       ],
       "zanimljivost": "Srbija je u odnosu na broj stanovnika imala među najvećim gubicima u ratu.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/razred7-istorija/slike/golgota.jpg",
+        "opis": "Albanska golgota"
+      },
       "rec": "gubici"
     },
     {
@@ -2036,6 +2846,11 @@
         "Septembarski ustav"
       ],
       "zanimljivost": "Donet je na Vidovdan, 28. juna 1921.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/vidovdanski-ustav.jpg",
+        "opis": "Vidovdanski ustav (1921)"
+      },
       "rec": "vidovdan"
     },
     {
@@ -2067,6 +2882,11 @@
         "Kralj je abdicirao"
       ],
       "zanimljivost": "Ovaj zločin produbio je krizu i doveo do diktature 1929.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/radic.jpg",
+        "opis": "Stjepan Radić"
+      },
       "rec": "atentat"
     },
     {
@@ -2116,6 +2936,10 @@
         "Na pokrajine"
       ],
       "zanimljivost": "Podela na oblasti zanemarila je istorijske pokrajine.",
+      "medijiOdgovora": {
+        "vrsta": "citat",
+        "tekst": "33 oblasti – svaka sa najviše 800.000 stanovnika"
+      },
       "rec": "oblasti"
     },
     {
@@ -2129,6 +2953,26 @@
         "HSS"
       ],
       "zanimljivost": "Komunisti su zatim prešli u ilegalu.",
+      "medijiOdgovora": {
+        "vrsta": "lenta",
+        "od": 1918,
+        "do": 1930,
+        "dogadjaji": [
+          {
+            "g": 1920,
+            "t": "Obznana",
+            "ist": true
+          },
+          {
+            "g": 1921,
+            "t": "Vidovdanski ustav"
+          },
+          {
+            "g": 1929,
+            "t": "Diktatura"
+          }
+        ]
+      },
       "rec": "obznana"
     },
     {
@@ -2142,6 +2986,11 @@
         "Federacija"
       ],
       "zanimljivost": "Kralj je imao velika ovlašćenja i po ustavu.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/razred7-istorija/slike/regent-aleksandar.jpg",
+        "opis": "Regent, kasnije kralj Aleksandar"
+      },
       "rec": "monarhija"
     },
     {
@@ -2155,6 +3004,11 @@
         "Rudarstvo samo"
       ],
       "zanimljivost": "Oko 75% stanovnika živelo je od poljoprivrede.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/razred7-istorija/slike/srpsko-selo.jpg",
+        "opis": "Selo – tu je živela većina stanovnika"
+      },
       "rec": "seljaci"
     },
     {
@@ -2168,6 +3022,10 @@
         "Prodaja državne zemlje stranim kompanijama radi izgradnje fabrika i rudnika"
       ],
       "zanimljivost": "Mnogi dobrovoljci iz Prvog svetskog rata dobili su zemlju u Vojvodini.",
+      "medijiOdgovora": {
+        "vrsta": "citat",
+        "tekst": "Zemlja veleposednika → seljacima i ratnim dobrovoljcima"
+      },
       "rec": "reforma"
     },
     {
@@ -2181,6 +3039,11 @@
         "Epidemija kuge koja je pogodila veliki deo stanovništva"
       ],
       "zanimljivost": "Hrvatska seljačka stranka je dugo bojkotovala skupštinu.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/macek.jpg",
+        "opis": "Vladko Maček, Radićev naslednik"
+      },
       "rec": "pitanje"
     },
     {
@@ -2194,6 +3057,11 @@
         "Evro"
       ],
       "zanimljivost": "Dinar je bio i valuta Kraljevine Srbije.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/dinar-shs.jpg",
+        "opis": "Novčanica dinara iz Kraljevine"
+      },
       "rec": "dinar"
     },
     {
@@ -2207,6 +3075,11 @@
         "Milan Stojadinović"
       ],
       "zanimljivost": "Savez Radića i Pribićevića zvao se Seljačko-demokratska koalicija.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/pribicevic.jpg",
+        "opis": "Svetozar Pribićević"
+      },
       "rec": "pribićević"
     },
     {
@@ -2220,6 +3093,10 @@
         "Komunisti koji su se vratili iz Rusije posle rata i osnovali partiju"
       ],
       "zanimljivost": "Mnogi su bili iz Austrougarske – i borili su se protiv sopstvene države.",
+      "medijiOdgovora": {
+        "vrsta": "citat",
+        "tekst": "Ratni dobrovoljci dobili su zemlju, najviše u Vojvodini"
+      },
       "rec": "dobrovoljac"
     },
     {
@@ -2233,6 +3110,10 @@
         "Visoka industrija"
       ],
       "zanimljivost": "Oko polovine stanovnika bilo je nepismeno.",
+      "medijiOdgovora": {
+        "vrsta": "citat",
+        "tekst": "Oko polovine stanovnika nije znalo da čita i piše"
+      },
       "rec": "nepismenost"
     },
     {
@@ -2246,6 +3127,11 @@
         "27. marta 1941."
       ],
       "zanimljivost": "Zbog datuma, ova vlast se zove „Šestojanuarska diktatura“.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/srpska-istorija/slike/kralj-aleksandar.jpg",
+        "opis": "Kralj Aleksandar I"
+      },
       "rec": "diktatura"
     },
     {
@@ -2259,6 +3145,11 @@
         "FNRJ"
       ],
       "zanimljivost": "Ime Jugoslavija znači „zemlja Južnih Slovena“.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/banovine.png",
+        "opis": "Kraljevina Jugoslavija podeljena na banovine"
+      },
       "rec": "jugoslavija"
     },
     {
@@ -2290,6 +3181,23 @@
         "U Zagrebu, 1928."
       ],
       "zanimljivost": "Atentat su izvršili pripadnici ustaške i makedonske VMRO organizacije; snimljen je filmskom kamerom.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "evropa",
+        "kutija": [
+          -2,
+          40,
+          12,
+          47
+        ],
+        "tacke": [
+          {
+            "lon": 5.37,
+            "lat": 43.3,
+            "oznaka": "Marselj"
+          }
+        ]
+      },
       "rec": "marselj"
     },
     {
@@ -2321,6 +3229,11 @@
         "Novi ustav"
       ],
       "zanimljivost": "Sporazum je pokušaj rešavanja „hrvatskog pitanja“ pred rat.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/banovina-hrvatska.png",
+        "opis": "Banovina Hrvatska"
+      },
       "rec": "banovina"
     },
     {
@@ -2334,6 +3247,11 @@
         "29. novembra 1943."
       ],
       "zanimljivost": "Pristupanje je potpisano u Beču.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/27-mart.jpg",
+        "opis": "Beograd, 27. mart 1941."
+      },
       "rec": "pakt"
     },
     {
@@ -2383,6 +3301,26 @@
         "Ustav FNRJ"
       ],
       "zanimljivost": "Ustav je „dat“ od strane kralja, bez izglasavanja u skupštini.",
+      "medijiOdgovora": {
+        "vrsta": "lenta",
+        "od": 1918,
+        "do": 1941,
+        "dogadjaji": [
+          {
+            "g": 1921,
+            "t": "Vidovdanski ustav"
+          },
+          {
+            "g": 1929,
+            "t": "Diktatura"
+          },
+          {
+            "g": 1931,
+            "t": "Septembarski ustav",
+            "ist": true
+          }
+        ]
+      },
       "rec": "ustav"
     },
     {
@@ -2396,6 +3334,11 @@
         "Dušan Simović"
       ],
       "zanimljivost": "Stojadinović je pokušavao da Jugoslaviju zadrži van rata kroz privredne veze.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/stojadinovic.jpg",
+        "opis": "Milan Stojadinović"
+      },
       "rec": "premijer"
     },
     {
@@ -2409,6 +3352,26 @@
         "Zbog zemljotresa koji je razorio Beograd i doveo zemlju do gladi i siromaštva"
       ],
       "zanimljivost": "Kralj je zabranio političke stranke sa nacionalnim imenom.",
+      "medijiOdgovora": {
+        "vrsta": "lenta",
+        "od": 1918,
+        "do": 1935,
+        "dogadjaji": [
+          {
+            "g": 1928,
+            "t": "Pucanj u Skupštini"
+          },
+          {
+            "g": 1929,
+            "t": "Diktatura",
+            "ist": true
+          },
+          {
+            "g": 1934,
+            "t": "Atentat u Marselju"
+          }
+        ]
+      },
       "rec": "kriza"
     },
     {
@@ -2422,6 +3385,11 @@
         "Narodna odbrana"
       ],
       "zanimljivost": "Ustaše su organizovale i ubistvo kralja Aleksandra u Marselju.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/pavelic.jpg",
+        "opis": "Ante Pavelić"
+      },
       "rec": "ustaše"
     },
     {
@@ -2435,6 +3403,11 @@
         "„Ovo je kraj“"
       ],
       "zanimljivost": "Istoričari smatraju da je ova rečenica verovatno izmišljena posle atentata.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/atentat-marselj.jpg",
+        "opis": "Atentat u Marselju 1934."
+      },
       "rec": "jugoslavija"
     },
     {
@@ -2448,6 +3421,11 @@
         "Milan Nedić"
       ],
       "zanimljivost": "Simović je postao predsednik nove vlade.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/simovic.jpg",
+        "opis": "General Dušan Simović"
+      },
       "rec": "simović"
     },
     {
@@ -2533,6 +3511,11 @@
         "Rikše"
       ],
       "zanimljivost": "Aeroput, prva jugoslovenska avio-kompanija, osnovana je 1927.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/aeroput.jpg",
+        "opis": "Avion jugoslovenske kompanije Aeroput"
+      },
       "rec": "avion"
     },
     {
@@ -2546,6 +3529,11 @@
         "Oksford"
       ],
       "zanimljivost": "Pored beogradskog, univerziteti su postojali i u Zagrebu i Ljubljani.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/razred7-istorija/slike/kapetan-misino.jpg",
+        "opis": "Kapetan-Mišino zdanje"
+      },
       "rec": "univerzitet"
     },
     {
@@ -2559,6 +3547,10 @@
         "Bejzbol"
       ],
       "zanimljivost": "Jugoslavija je na prvom Svetskom prvenstvu 1930. stigla do polufinala.",
+      "medijiOdgovora": {
+        "vrsta": "emodzi",
+        "tekst": "⚽"
+      },
       "rec": "fudbal"
     },
     {
@@ -2590,6 +3582,26 @@
         "Bile su vojnici"
       ],
       "zanimljivost": "Žene su u Jugoslaviji dobile pravo glasa tek 1945.",
+      "medijiOdgovora": {
+        "vrsta": "lenta",
+        "od": 1890,
+        "do": 1950,
+        "dogadjaji": [
+          {
+            "g": 1893,
+            "t": "Novi Zeland"
+          },
+          {
+            "g": 1918,
+            "t": "V. Britanija"
+          },
+          {
+            "g": 1945,
+            "t": "Jugoslavija",
+            "ist": true
+          }
+        ]
+      },
       "rec": "žene"
     },
     {
@@ -2621,6 +3633,10 @@
         "Turizam"
       ],
       "zanimljivost": "Seljaci su često bili prezaduženi.",
+      "medijiOdgovora": {
+        "vrsta": "citat",
+        "tekst": "Oko tri četvrtine stanovnika živelo je od zemljoradnje"
+      },
       "rec": "seljak"
     },
     {
@@ -2634,6 +3650,11 @@
         "Renesansa (obnova antičke umetnosti u Italiji)"
       ],
       "zanimljivost": "Beogradska grupa nadrealista bila je jedna od najaktivnijih u Evropi.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/marko-ristic.jpg",
+        "opis": "Marko Ristić, beogradski nadrealista"
+      },
       "rec": "nadrealizam"
     },
     {
@@ -2647,6 +3668,11 @@
         "1918."
       ],
       "zanimljivost": "Osnivač je bio Vladislav Ribnikar.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/razred7-istorija/slike/politika-1904.jpg",
+        "opis": "Prvi broj „Politike“"
+      },
       "rec": "politika"
     },
     {
@@ -2660,6 +3686,10 @@
         "Pismeni su bili samo kraljevi"
       ],
       "zanimljivost": "Na selu je nepismenost bila znatno veća nego u gradu.",
+      "medijiOdgovora": {
+        "vrsta": "citat",
+        "tekst": "Na selu je nepismenost bila mnogo veća nego u gradu"
+      },
       "rec": "pismenost"
     },
     {
@@ -2690,6 +3720,11 @@
       ],
       "tezina": 2,
       "zanimljivost": "Prvih meseci na zapadu se skoro nije ratovalo – taj period su nazvali „čudni rat“. Pravi napad Nemačke na Francusku počeo je tek u maju 1940.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/poljska-1939.jpg",
+        "opis": "Napad na Poljsku, septembar 1939."
+      },
       "rec": "britanija",
       "lekcija": 13
     },
@@ -2704,6 +3739,11 @@
         "Gerilski rat – iznenadni napadi malih grupa iz šuma"
       ],
       "zanimljivost": "Francuska je pala za samo oko šest nedelja 1940.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/blickrig.jpg",
+        "opis": "Nemački tenkovi 1940."
+      },
       "rec": "blickrig"
     },
     {
@@ -2771,6 +3811,11 @@
         "7. decembra 1941, istog dana kad i Perl Harbor"
       ],
       "zanimljivost": "Bio je to najveći kopneni napad u istoriji.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/barbarosa.jpg",
+        "opis": "Operacija „Barbarosa“, jun 1941."
+      },
       "rec": "barbarosa"
     },
     {
@@ -2802,6 +3847,11 @@
         "Turska"
       ],
       "zanimljivost": "Grčko „Ne!“ (Ohi) Musoliniju i danas se slavi 28. oktobra.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/ohi.jpg",
+        "opis": "Grčka slavi „Dan Ohi“"
+      },
       "rec": "grčka"
     },
     {
@@ -2815,6 +3865,11 @@
         "1942."
       ],
       "zanimljivost": "Hitler je primirje potpisao u istom vagonu u kom je Nemačka potpisala primirje 1918.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/kompjenj.png",
+        "opis": "Primirje u Kompjenju 1940."
+      },
       "rec": "vagon"
     },
     {
@@ -2828,6 +3883,11 @@
         "Do Londona"
       ],
       "zanimljivost": "Rana i oštra zima pomogla je odbrani – nemački vojnici nisu imali zimsku opremu.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/bitka-moskva.jpg",
+        "opis": "Odbrana Moskve, 1941."
+      },
       "rec": "moskva"
     },
     {
@@ -2859,6 +3919,20 @@
         "Sve"
       ],
       "zanimljivost": "Švedska je ostala neutralna tokom celog rata.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "evropa",
+        "kutija": [
+          0,
+          53,
+          32,
+          71
+        ],
+        "istakni": [
+          "DNK",
+          "NOR"
+        ]
+      },
       "rec": "norveška"
     },
     {
@@ -2872,6 +3946,11 @@
         "Montgomeri"
       ],
       "zanimljivost": "Romela je u Africi zaustavio britanski general Montgomeri kod El Alamejna.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/romel.jpg",
+        "opis": "Ervin Romel"
+      },
       "rec": "romel"
     },
     {
@@ -2903,6 +3982,11 @@
         "Pariska komuna"
       ],
       "zanimljivost": "Vlada maršala Petena imala je sedište u banjskom gradiću Višiju, jer je Pariz bio pod nemačkom okupacijom. Protiv nje se iz Londona borio Šarl de Gol.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/peten.jpg",
+        "opis": "Maršal Filip Peten"
+      },
       "rec": "viši"
     },
     {
@@ -2952,6 +4036,11 @@
         "Bitka na Atlantiku"
       ],
       "zanimljivost": "Japan je izgubio četiri nosača aviona.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/midvej.jpg",
+        "opis": "Bitka kod Midveja"
+      },
       "rec": "midvej"
     },
     {
@@ -2965,6 +4054,11 @@
         "Bitka kod Moskve"
       ],
       "zanimljivost": "U bici je učestvovalo i do 6.000 tenkova.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/kursk.jpg",
+        "opis": "Bitka kod Kurska"
+      },
       "rec": "kursk"
     },
     {
@@ -2978,6 +4072,11 @@
         "Liga naroda"
       ],
       "zanimljivost": "Izraz „Ujedinjene nacije“ prvi put je upotrebljen 1942. za ovaj savez.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/saveznici.jpg",
+        "opis": "Plakat Saveznika"
+      },
       "rec": "saveznici"
     },
     {
@@ -3027,6 +4126,11 @@
         "Vojni plan Nemačke"
       ],
       "zanimljivost": "SSSR je kroz Lend-lis dobio stotine hiljada kamiona i hiljade aviona.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/lend-lis.png",
+        "opis": "Pomoć po programu Lend-lis"
+      },
       "rec": "pomoć"
     },
     {
@@ -3040,6 +4144,23 @@
         "U Norveškoj, kod luke Narvik na severu"
       ],
       "zanimljivost": "Musolini je svrgnut jula 1943.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "evropa",
+        "kutija": [
+          8,
+          35,
+          20,
+          44
+        ],
+        "tacke": [
+          {
+            "lon": 14,
+            "lat": 37.5,
+            "oznaka": "Sicilija"
+          }
+        ]
+      },
       "rec": "sicilija"
     },
     {
@@ -3053,6 +4174,11 @@
         "SAD su se borile na strani Osovine"
       ],
       "zanimljivost": "Američke fabrike su tokom rata proizvele oko 300.000 aviona.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/b-17.jpg",
+        "opis": "Američki bombarder B-17"
+      },
       "rec": "industrija"
     },
     {
@@ -3066,6 +4192,24 @@
         "Bitka u Jugoslaviji"
       ],
       "zanimljivost": "Čerčil je rekao: „Ovo nije kraj… ali je možda kraj početka.“",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "afrika",
+        "kutija": [
+          18,
+          25,
+          36,
+          35
+        ],
+        "tacke": [
+          {
+            "lon": 28.95,
+            "lat": 30.83,
+            "oznaka": "El Alamejn",
+            "znak": "⚔️"
+          }
+        ]
+      },
       "rec": "alamejn"
     },
     {
@@ -3079,6 +4223,11 @@
         "Mirovni ugovor sa Japanom potpisan posle bitke kod Midveja"
       ],
       "zanimljivost": "Na njemu se kasnije zasnovala i povelja UN.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/atlantska-povelja.jpg",
+        "opis": "Ruzvelt i Čerčil, 1941."
+      },
       "rec": "čarter"
     },
     {
@@ -3110,6 +4259,11 @@
         "Francuska"
       ],
       "zanimljivost": "Procenjuje se da je SSSR izgubio oko 27 miliona ljudi.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/vecna-vatra.jpg",
+        "opis": "Grob neznanog junaka u Moskvi"
+      },
       "rec": "gubici"
     },
     {
@@ -3123,6 +4277,11 @@
         "Ruski tenkisti koji su se probijali kroz nemačke linije u bici kod Kurska 1943. godine"
       ],
       "zanimljivost": "Reč kamikaze znači „božanski vetar“.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/kamikaze.jpg",
+        "opis": "Napad kamikaza"
+      },
       "rec": "kamikaze"
     },
     {
@@ -3154,6 +4313,11 @@
         "2. septembra 1945."
       ],
       "zanimljivost": "U Rusiji i Srbiji Dan pobede slavi se 9. maja.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/kapitulacija-nemacke.jpg",
+        "opis": "Potpisivanje kapitulacije Nemačke"
+      },
       "rec": "predaja"
     },
     {
@@ -3185,6 +4349,11 @@
         "1946."
       ],
       "zanimljivost": "Kapitulacija je potpisana na američkom brodu „Misuri“ u Tokijskom zalivu.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/misuri.jpg",
+        "opis": "Kapitulacija Japana na brodu „Misuri“"
+      },
       "rec": "kraj"
     },
     {
@@ -3216,6 +4385,11 @@
         "Francuzi"
       ],
       "zanimljivost": "Fotografija vojnika koji podiže sovjetsku zastavu na Rajhstagu postala je simbol pobede.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/rajhstag-zastava.jpg",
+        "opis": "Zastava nad Rajhstagom, 1945."
+      },
       "rec": "berlin"
     },
     {
@@ -3229,6 +4403,11 @@
         "Pogubljen je u Nirnbergu"
       ],
       "zanimljivost": "Hitler se ubio 30. aprila 1945.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/firerbunker.jpg",
+        "opis": "Ulaz u Hitlerov bunker"
+      },
       "rec": "bunker"
     },
     {
@@ -3260,6 +4439,11 @@
         "Pad Berlina i predaja nemačke vojske Crvenoj armiji"
       ],
       "zanimljivost": "Zove se i „Bitka kod izbočine“.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/ardeni.jpg",
+        "opis": "Američki vojnici u Ardenima, zima 1944."
+      },
       "rec": "ardeni"
     },
     {
@@ -3291,6 +4475,11 @@
         "Umro je od starosti u zatvoru, posle suđenja u Nirnbergu"
       ],
       "zanimljivost": "Musolini je ubijen 28. aprila 1945, dva dana pre Hitlerove smrti.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/musolini.jpg",
+        "opis": "Musolini"
+      },
       "rec": "musolini"
     },
     {
@@ -3322,6 +4511,11 @@
         "Oko 500 miliona"
       ],
       "zanimljivost": "To je najsmrtonosniji sukob u ljudskoj istoriji.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/drezden.jpg",
+        "opis": "Razoreni Drezden"
+      },
       "rec": "žrtve"
     },
     {
@@ -3335,6 +4529,11 @@
         "4. jul"
       ],
       "zanimljivost": "9. maj se obeležava i kao Dan Evrope.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/dan-pobede.jpg",
+        "opis": "Proslava Dana pobede"
+      },
       "rec": "pobeda"
     },
     {
@@ -3366,6 +4565,11 @@
         "Vojna operacija Saveznika za oslobođenje Francuske iskrcavanjem u Normandiji 1944."
       ],
       "zanimljivost": "Reč šoa na hebrejskom znači „katastrofa“.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/auscvic.jpg",
+        "opis": "Aušvic"
+      },
       "rec": "holokaust"
     },
     {
@@ -3397,6 +4601,11 @@
         "11. novembra"
       ],
       "zanimljivost": "Tog dana 1945. oslobođen je Aušvic.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/auscvic.jpg",
+        "opis": "Aušvic je oslobođen 27. januara 1945."
+      },
       "rec": "sećanje"
     },
     {
@@ -3410,6 +4619,11 @@
         "Jevrejski vođe koji su posle rata osnovali državu Izrael 1948."
       ],
       "zanimljivost": "Među njima ima više od 130 ljudi iz Srbije.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/jad-vasem.png",
+        "opis": "Jad Vašem u Jerusalimu"
+      },
       "rec": "pravednici"
     },
     {
@@ -3423,6 +4637,11 @@
         "Nikoga drugog – progoni su bili usmereni isključivo na jedan narod"
       ],
       "zanimljivost": "Genocid nad Romima Romi nazivaju Porajmos.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/porajmos.jpg",
+        "opis": "Spomenik romskim žrtvama u Berlinu"
+      },
       "rec": "romi"
     },
     {
@@ -3436,6 +4655,11 @@
         "Prirodna katastrofa"
       ],
       "zanimljivost": "Pojam je 1944. smislio pravnik Rafael Lemkin.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/lemkin.jpg",
+        "opis": "Rafael Lemkin"
+      },
       "rec": "genocid"
     },
     {
@@ -3467,6 +4691,11 @@
         "Bolnice za ranjenike na frontu u kojima su lekari lečili vojnike i civile"
       ],
       "zanimljivost": "Varšavski geto podigao je ustanak 1943.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/varsavski-geto.jpg",
+        "opis": "Varšavski geto"
+      },
       "rec": "geto"
     },
     {
@@ -3480,6 +4709,11 @@
         "Plan napada na Britaniju"
       ],
       "zanimljivost": "Plan je razrađen na Vanzejskoj konferenciji januara 1942.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/vanzej.jpg",
+        "opis": "Vila na jezeru Vanze kod Berlina"
+      },
       "rec": "vanzee"
     },
     {
@@ -3493,6 +4727,11 @@
         "Samo oduzimanje knjiga i umetničkih dela iz muzeja i biblioteka"
       ],
       "zanimljivost": "Nacistički plan „Generalplan Ost“ predviđao je raseljavanje i uništenje miliona ljudi.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/lenjingrad.jpg",
+        "opis": "Opsada Lenjingrada"
+      },
       "rec": "istok"
     },
     {
@@ -3505,6 +4744,11 @@
       ],
       "tezina": 3,
       "zanimljivost": "Konferencija je održana u jednoj vili kod Berlina i trajala je samo oko 90 minuta. Zapisnik sa nje je jedan od najvažnijih dokaza o planiranju Holokausta.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/vanzej.jpg",
+        "opis": "Vila na jezeru Vanze kod Berlina"
+      },
       "rec": "vanzej",
       "lekcija": 16
     },
@@ -3519,6 +4763,10 @@
         "Britanska bitka"
       ],
       "zanimljivost": "SSSR je tek 1990. priznao odgovornost.",
+      "medijiOdgovora": {
+        "vrsta": "citat",
+        "tekst": "Oko 22.000 poljskih oficira, policajaca i intelektualaca streljano je 1940."
+      },
       "rec": "katin"
     },
     {
@@ -3550,6 +4798,10 @@
         "Zbog brojnih filmova i serija koje se danas snimaju o tom periodu"
       ],
       "zanimljivost": "Poruka „Nikad više“ urezana je na mnogim spomenicima žrtvama.",
+      "medijiOdgovora": {
+        "vrsta": "citat",
+        "tekst": "„Nikad više!“"
+      },
       "rec": "nikad"
     },
     {
@@ -3562,6 +4814,11 @@
       ],
       "tezina": 2,
       "zanimljivost": "Međunarodni krivični tribunal za bivšu Jugoslaviju radio je od 1993. do 2017. Pred njim se sudilo pripadnicima svih strana u ratovima.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/hag-tribunal.png",
+        "opis": "Zgrada Haškog tribunala"
+      },
       "rec": "tribunal",
       "lekcija": 16
     },
@@ -3576,6 +4833,11 @@
         "27. marta 1941."
       ],
       "zanimljivost": "Rat je počeo bombardovanjem Beograda bez objave rata.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/srpska-istorija/slike/bombardovanje-1941.jpg",
+        "opis": "Beograd posle bombardovanja 6. aprila 1941."
+      },
       "rec": "april"
     },
     {
@@ -3589,6 +4851,10 @@
         "Jedan dan"
       ],
       "zanimljivost": "Kapitulacija jugoslovenske vojske potpisana je 17. aprila 1941.",
+      "medijiOdgovora": {
+        "vrsta": "citat",
+        "tekst": "6. april – 17. april 1941: rat od 11 dana"
+      },
       "rec": "predaja"
     },
     {
@@ -3602,6 +4868,11 @@
         "Samo most preko Save, koji su Nemci kasnije obnovili"
       ],
       "zanimljivost": "U Narodnoj biblioteci izgorelo je oko 1.400 starih rukopisa.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/razred7-istorija/slike/narodna-biblioteka.jpg",
+        "opis": "Narodna biblioteka Srbije"
+      },
       "rec": "biblioteka"
     },
     {
@@ -3615,6 +4886,11 @@
         "Kraljevina Srbija"
       ],
       "zanimljivost": "Na čelu NDH bio je Ante Pavelić sa ustaškim pokretom.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/pavelic.jpg",
+        "opis": "Ante Pavelić"
+      },
       "rec": "ndh"
     },
     {
@@ -3628,6 +4904,10 @@
         "Britanija"
       ],
       "zanimljivost": "Nemci su postavili i domaću kolaboracionističku vladu.",
+      "medijiOdgovora": {
+        "vrsta": "citat",
+        "tekst": "Nemačka vojna uprava, uz domaću vladu Milana Nedića"
+      },
       "rec": "okupacija"
     },
     {
@@ -3641,6 +4921,11 @@
         "U Berlin"
       ],
       "zanimljivost": "Vlada je iz Londona održavala vezu sa zemljom preko radija.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/petar-drugi.jpg",
+        "opis": "Kralj Petar II"
+      },
       "rec": "london"
     },
     {
@@ -3654,6 +4939,16 @@
         "SSSR i SAD"
       ],
       "zanimljivost": "Jugoslavija je bila potpuno rasparčana.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "karta": "evropa-1942",
+        "kutija": [
+          13,
+          40,
+          24,
+          47
+        ]
+      },
       "rec": "podela"
     },
     {
@@ -3667,6 +4962,18 @@
         "Skoplje"
       ],
       "zanimljivost": "Nemačka akcija nosila je naziv „Operacija Kazna“.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "balkan",
+        "tacke": [
+          {
+            "lon": 20.46,
+            "lat": 44.82,
+            "oznaka": "Beograd",
+            "znak": "💥"
+          }
+        ]
+      },
       "rec": "beograd"
     },
     {
@@ -3680,6 +4987,10 @@
         "Imala je previše oružja, pa vojnici nisu znali kako da ga koriste u boju"
       ],
       "zanimljivost": "Mnoge jedinice su se raspale pre nego što su stigle do fronta.",
+      "medijiOdgovora": {
+        "vrsta": "citat",
+        "tekst": "Napad sa svih strana: iz Nemačke, Austrije, Mađarske, Rumunije, Bugarske i Albanije"
+      },
       "rec": "poraz"
     },
     {
@@ -3693,6 +5004,26 @@
         "Dalmaciju i ostrva u Jadranskom moru do Splita"
       ],
       "zanimljivost": "Bugarska okupaciona vlast sprovodila je bugarizaciju stanovništva.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "balkan",
+        "istakni": [
+          "BGR",
+          "MKD"
+        ],
+        "tacke": [
+          {
+            "lon": 21.9,
+            "lat": 43.32,
+            "oznaka": "Niš"
+          },
+          {
+            "lon": 21.9,
+            "lat": 42.55,
+            "oznaka": "Vranje"
+          }
+        ]
+      },
       "rec": "bugarska"
     },
     {
@@ -3706,6 +5037,26 @@
         "Šumadija"
       ],
       "zanimljivost": "Banat je bio pod nemačkom upravom, preko lokalnih Nemaca – folksdojčera.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "srbija",
+        "kutija": [
+          18.6,
+          44.6,
+          23.2,
+          46.3
+        ],
+        "istakni": [
+          "HUN"
+        ],
+        "tacke": [
+          {
+            "lon": 19.5,
+            "lat": 45.6,
+            "oznaka": "Bačka"
+          }
+        ]
+      },
       "rec": "bačka"
     },
     {
@@ -3719,6 +5070,10 @@
         "Ujedinjenje"
       ],
       "zanimljivost": "Za mnoge građane počele su četiri godine okupacije, rata i stradanja.",
+      "medijiOdgovora": {
+        "vrsta": "citat",
+        "tekst": "6–17. april 1941: rat od 11 dana – pa četiri godine okupacije"
+      },
       "rec": "okupacija"
     },
     {
@@ -3732,6 +5087,11 @@
         "Dušan Simović"
       ],
       "zanimljivost": "Ova vlada se zvala Vlada narodnog spasa.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/nedic.jpg",
+        "opis": "Milan Nedić"
+      },
       "rec": "nedić"
     },
     {
@@ -3745,6 +5105,11 @@
         "Ustanak naroda u Beogradu protiv okupatora odmah po ulasku nemačke vojske"
       ],
       "zanimljivost": "Hitler je bio besan zbog puča i odlučio da „uništi Jugoslaviju kao državu“.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/srpska-istorija/slike/bombardovanje-1941.jpg",
+        "opis": "Razrušeni Beograd, april 1941."
+      },
       "rec": "kazna"
     },
     {
@@ -3758,6 +5123,21 @@
         "Banat, Bačka i Baranja sve do granice sa Mađarskom i Rumunijom"
       ],
       "zanimljivost": "Kosovo i Metohija su većim delom pripojeni „Velikoj Albaniji“ pod italijanskom kontrolom.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "balkan",
+        "istakni": [
+          "ALB",
+          "MNE"
+        ],
+        "tacke": [
+          {
+            "lon": 21.16,
+            "lat": 42.66,
+            "oznaka": "Kosovo"
+          }
+        ]
+      },
       "rec": "italija"
     },
     {
@@ -3807,6 +5187,22 @@
         "Grad u Crnoj Gori"
       ],
       "zanimljivost": "Trajala je oko dva meseca, do nemačke ofanzive krajem novembra 1941.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "srbija",
+        "tacke": [
+          {
+            "lon": 19.84,
+            "lat": 43.86,
+            "oznaka": "Užice"
+          },
+          {
+            "lon": 20.35,
+            "lat": 43.89,
+            "oznaka": "Čačak"
+          }
+        ]
+      },
       "rec": "užice"
     },
     {
@@ -3837,7 +5233,12 @@
         "Kažnjavani su samo vojnici i oficiri zarobljeni u borbi, a civili nikada nisu dirani",
         "Kažnjavali su novčano"
       ],
-      "zanimljivost": "Pored Kragujevca, velika stradanja pretrpeo je i Kraljevo.",
+      "zanimljivost": "Pored Kragujevca, velika stradanja pretrpelo je i Kraljevo.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/prekinuti-let.jpg",
+        "opis": "Spomenik „Prekinuti let“ u Šumaricama"
+      },
       "rec": "odmazda"
     },
     {
@@ -3851,6 +5252,10 @@
         "Ujedinili su se 1945. u jedinstvenu vojsku pod komandom kralja Petra II"
       ],
       "zanimljivost": "Sukob partizana i četnika obeležio je rat na prostoru Jugoslavije.",
+      "medijiOdgovora": {
+        "vrsta": "citat",
+        "tekst": "1941: zajedno kod Užica → kasnije: građanski rat"
+      },
       "rec": "sukob"
     },
     {
@@ -3864,6 +5269,11 @@
         "Bitka na Sutjesci"
       ],
       "zanimljivost": "Piloti su evakuisani avionima sa improvizovane piste kod sela Pranjani.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/srpska-istorija/slike/halijard.jpg",
+        "opis": "Pranjani, septembar 1944."
+      },
       "rec": "pranjani"
     },
     {
@@ -3895,6 +5305,10 @@
         "Muzej"
       ],
       "zanimljivost": "Kroz logor Banjica prošlo je desetine hiljada zatvorenika.",
+      "medijiOdgovora": {
+        "vrsta": "citat",
+        "tekst": "Kroz logor Banjica prošlo je oko 23.000 zatvorenika"
+      },
       "rec": "banjica"
     },
     {
@@ -3926,6 +5340,10 @@
         "Gerilski rat"
       ],
       "zanimljivost": "Kolaboracionisti su postojali u svim okupiranim zemljama Evrope.",
+      "medijiOdgovora": {
+        "vrsta": "citat",
+        "tekst": "collaborare (lat.) = „raditi zajedno“"
+      },
       "rec": "saradnja"
     },
     {
@@ -3939,6 +5357,11 @@
         "Ruska zaštitna grupa (ruski emigranti)"
       ],
       "zanimljivost": "Ljotićev pokret ZBOR bio je otvoreno profašistički.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/ljotic.jpg",
+        "opis": "Dimitrije Ljotić"
+      },
       "rec": "ljotić"
     },
     {
@@ -3952,6 +5375,11 @@
         "Nisu se mešali i nisu slali nikakvu pomoć ni jednoj ni drugoj strani"
       ],
       "zanimljivost": "Britanska vojna misija bila je kod oba pokreta, a 1944. je povučena iz Ravnogorskog pokreta.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/maklin.jpg",
+        "opis": "Ficroj Maklin, šef britanske misije kod partizana"
+      },
       "rec": "misija"
     },
     {
@@ -3965,6 +5393,11 @@
         "Pomorska bitka"
       ],
       "zanimljivost": "Desetine hiljada stanovnika Kozare završilo je u logorima.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/kozara.jpg",
+        "opis": "Spomenik na Kozari"
+      },
       "rec": "kozara"
     },
     {
@@ -3978,6 +5411,11 @@
         "Sportski klubovi"
       ],
       "zanimljivost": "U Jugoslaviji su delovala dva velika pokreta otpora.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/sutjeska.jpg",
+        "opis": "Spomenik na Tjentištu (Sutjeska)"
+      },
       "rec": "otpor"
     },
     {
@@ -3991,6 +5429,11 @@
         "1. decembra 1918."
       ],
       "zanimljivost": "Beograd su oslobodili partizani zajedno sa Crvenom armijom.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/srpska-istorija/slike/beograd-1944.jpg",
+        "opis": "Oslobođeni Beograd, oktobar 1944."
+      },
       "rec": "beograd"
     },
     {
@@ -4004,6 +5447,11 @@
         "Francuska vojska"
       ],
       "zanimljivost": "U Beogradu postoji Groblje oslobodilaca Beograda.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/groblje-oslobodilaca.jpg",
+        "opis": "Groblje oslobodilaca Beograda"
+      },
       "rec": "crvena"
     },
     {
@@ -4017,6 +5465,24 @@
         "Front u Grčkoj, na planinama kod granice sa Albanijom, gde su Grci zaustavili vojsku Italije"
       ],
       "zanimljivost": "Na Sremskom frontu poginulo je mnogo mladih, slabo obučenih regruta.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "srbija",
+        "kutija": [
+          18.6,
+          44.6,
+          21,
+          45.6
+        ],
+        "tacke": [
+          {
+            "lon": 19.4,
+            "lat": 45,
+            "oznaka": "Sremski front",
+            "znak": "⚔️"
+          }
+        ]
+      },
       "rec": "srem"
     },
     {
@@ -4030,6 +5496,10 @@
         "SRJ"
       ],
       "zanimljivost": "Tog dana Ustavotvorna skupština je ukinula monarhiju.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "karta": "sfrj"
+      },
       "rec": "fnrj"
     },
     {
@@ -4043,6 +5513,10 @@
         "Ostala je ista"
       ],
       "zanimljivost": "Kralj Petar II se nikada nije vratio u zemlju.",
+      "medijiOdgovora": {
+        "vrsta": "citat",
+        "tekst": "29. novembar 1945: Jugoslavija postaje republika"
+      },
       "rec": "republika"
     },
     {
@@ -4056,6 +5530,11 @@
         "Ugovor sa Italijom o granici u Istri i statusu grada Trsta posle rata"
       ],
       "zanimljivost": "Sporazumom je formirana zajednička vlada 1945.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/subasic.jpg",
+        "opis": "Ivan Šubašić"
+      },
       "rec": "šubašić"
     },
     {
@@ -4069,6 +5548,10 @@
         "Referendum o EU"
       ],
       "zanimljivost": "Narodni front pod vođstvom KPJ dobio je preko 90% glasova.",
+      "medijiOdgovora": {
+        "vrsta": "citat",
+        "tekst": "Glasalo se gumenim kuglicama – kutija opozicije zvala se „ćorava kutija“"
+      },
       "rec": "front"
     },
     {
@@ -4100,6 +5583,11 @@
         "Postao je ministar"
       ],
       "zanimljivost": "Sud u Srbiji je 2015. rehabilitovao Mihailovića, poništivši presudu iz 1946.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/draza.jpg",
+        "opis": "Dragoljub Draža Mihailović"
+      },
       "rec": "mihailović"
     },
     {
@@ -4113,6 +5601,10 @@
         "Ništa se nije promenilo – zadržani su višepartijski sistem i sve ranije stranke"
       ],
       "zanimljivost": "Narod je stradao i u posleratnim represijama i likvidacijama.",
+      "medijiOdgovora": {
+        "vrsta": "citat",
+        "tekst": "Posle 1945: jedna partija umesto više stranaka"
+      },
       "rec": "represija"
     },
     {
@@ -4126,6 +5618,24 @@
         "1941."
       ],
       "zanimljivost": "Poslednje borbe u Jugoslaviji vođene su i posle 9. maja 1945.",
+      "medijiOdgovora": {
+        "vrsta": "lenta",
+        "od": 1944,
+        "do": 1946,
+        "dogadjaji": [
+          {
+            "g": 1944.8,
+            "t": "Oslobođenje Beograda",
+            "n": "okt. 1944."
+          },
+          {
+            "g": 1945.37,
+            "t": "Kraj rata",
+            "ist": true,
+            "n": "maj 1945."
+          }
+        ]
+      },
       "rec": "kraj"
     },
     {
@@ -4139,6 +5649,11 @@
         "HSS"
       ],
       "zanimljivost": "KPJ je 1952. promenila ime u Savez komunista Jugoslavije.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/tito.jpg",
+        "opis": "Josip Broz Tito"
+      },
       "rec": "kpj"
     },
     {
@@ -4170,6 +5685,10 @@
         "33 oblasti"
       ],
       "zanimljivost": "Republike su bile Srbija, Hrvatska, Slovenija, BiH, Crna Gora i Makedonija.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "karta": "sfrj"
+      },
       "rec": "republike"
     },
     {
@@ -4183,6 +5702,14 @@
         "Raška i Timočka krajina"
       ],
       "zanimljivost": "Autonomija pokrajina posebno je proširena ustavom iz 1974.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "karta": "sfrj",
+        "istakni": [
+          "vojvodina",
+          "kosovo"
+        ]
+      },
       "rec": "pokrajine"
     },
     {
@@ -4214,6 +5741,11 @@
         "Samo nad vojnicima"
       ],
       "zanimljivost": "Ustaški režim sprovodio je ubijanja, proterivanja i prisilna prevođenja Srba u katoličanstvo.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/kameni-cvet.jpg",
+        "opis": "„Kameni cvet“ u Jasenovcu"
+      },
       "rec": "genocid"
     },
     {
@@ -4227,6 +5759,10 @@
         "Poplava"
       ],
       "zanimljivost": "Mnoge žrtve bačene su pod led Dunava.",
+      "medijiOdgovora": {
+        "vrsta": "citat",
+        "tekst": "Žrtve racije bacane su kroz rupe u ledu Dunava"
+      },
       "rec": "racija"
     },
     {
@@ -4240,6 +5776,11 @@
         "Švedski diplomata Rul Valenberg"
       ],
       "zanimljivost": "Akcija Diane Budisavljević je prikazana u filmu „Dnevnik Diane Budisavljević“ (2019).",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/diana.jpg",
+        "opis": "Diana Budisavljević"
+      },
       "rec": "diana"
     },
     {
@@ -4253,6 +5794,11 @@
         "Vojna kasarna savezničke vojske u Nišu u kojoj su bili smešteni britanski i američki vojnici 1944."
       ],
       "zanimljivost": "Pri proboju 12. februara 1942. pobeglo je oko 100 zatvorenika.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/srpska-istorija/slike/crveni-krst.jpg",
+        "opis": "Logor Crveni krst u Nišu"
+      },
       "rec": "niš"
     },
     {
@@ -4266,6 +5812,22 @@
         "U Novom Sadu"
       ],
       "zanimljivost": "Ovi logori su bili namenjeni deci – mnoga su umrla od gladi i bolesti.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "balkan",
+        "tacke": [
+          {
+            "lon": 15.65,
+            "lat": 45.67,
+            "oznaka": "Jastrebarsko"
+          },
+          {
+            "lon": 16.37,
+            "lat": 45.48,
+            "oznaka": "Sisak"
+          }
+        ]
+      },
       "rec": "deca"
     },
     {
@@ -4279,12 +5841,17 @@
         "Krađe i provale u kuće koje se dešavaju za vreme prirodnih nepogoda"
       ],
       "zanimljivost": "Ovaj pojam je uveden u Nirnbergu posle rata.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/nirnberg.jpg",
+        "opis": "Nirnberško suđenje"
+      },
       "rec": "zločin"
     },
     {
       "lekcija": 20,
       "tezina": 2,
-      "pitanje": "Šta je bila Jajinci?",
+      "pitanje": "Šta su bili Jajinci?",
       "odgovori": [
         "Mesto streljanja hiljada zatvorenika iz Banjice i Sajmišta kod Beograda",
         "Velika bitka partizana i nemačke vojske kod Beograda u jesen 1944. godine",
@@ -4292,6 +5859,11 @@
         "Ime logora u Nemačkoj u koji su odvođeni zarobljenici iz Srbije tokom rata"
       ],
       "zanimljivost": "Na mestu streljanja danas je spomen-park.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/jajinci.jpg",
+        "opis": "Spomen-park Jajinci"
+      },
       "rec": "jajinci"
     },
     {
@@ -4305,6 +5877,11 @@
         "Stradalo je nekoliko desetina ljudi, a ostali su preživeli rat u Srbiji"
       ],
       "zanimljivost": "Nemački okupatori su Srbiju 1942. proglasili „očišćenom od Jevreja“ – jednom od prvih u Evropi.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/sajmiste.jpg",
+        "opis": "Sajmište"
+      },
       "rec": "jevreji"
     },
     {
@@ -4336,6 +5913,11 @@
         "Zbog državnih praznika, kada se ne ide u školu i na posao taj dan"
       ],
       "zanimljivost": "Mnoge škole posećuju spomen-parkove i muzeje stradanja.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/srpska-istorija/slike/kadinjaca.jpg",
+        "opis": "Spomenik na Kadinjači"
+      },
       "rec": "pamćenje"
     },
     {
@@ -4349,6 +5931,10 @@
         "Samo Britanci"
       ],
       "zanimljivost": "Udžbenik ističe „višestrano nasilje“ – i u građanskom ratu stradali su nevini.",
+      "medijiOdgovora": {
+        "vrsta": "citat",
+        "tekst": "Višestrano nasilje: stradali su nevini sa svih strana"
+      },
       "rec": "nasilje"
     },
     {
@@ -4372,7 +5958,7 @@
     {
       "lekcija": 20,
       "tezina": 2,
-      "pitanje": "Šta je Šumarice?",
+      "pitanje": "Šta su Šumarice?",
       "odgovori": [
         "Spomen-park u Kragujevcu posvećen žrtvama streljanja 1941.",
         "Zaštićena šuma na Kopaoniku sa najstarijim stablima bukve u Srbiji",
@@ -4398,6 +5984,10 @@
         "Oko 10 miliona"
       ],
       "zanimljivost": "Precizan broj žrtava i danas je predmet istraživanja istoričara.",
+      "medijiOdgovora": {
+        "vrsta": "citat",
+        "tekst": "Oko milion stradalih – otprilike svaki šesnaesti stanovnik"
+      },
       "rec": "žrtve"
     },
     {
@@ -4411,6 +6001,14 @@
         "Nemačka i Italija"
       ],
       "zanimljivost": "Supersile se nikada nisu direktno sukobile – borile su se preko drugih zemalja.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "svet",
+        "istakni": [
+          "USA",
+          "RUS"
+        ]
+      },
       "rec": "supersile"
     },
     {
@@ -4424,6 +6022,10 @@
         "Josip Broz Tito u Beogradu"
       ],
       "zanimljivost": "Čerčil je to rekao u govoru u Fultonu, u SAD.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "karta": "hladni-rat"
+      },
       "rec": "zavesa"
     },
     {
@@ -4455,6 +6057,13 @@
         "Trojni pakt"
       ],
       "zanimljivost": "NATO je osnovan u Vašingtonu sa 12 članica.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "karta": "hladni-rat",
+        "istakni": [
+          "nato"
+        ]
+      },
       "rec": "nato"
     },
     {
@@ -4468,6 +6077,14 @@
         "Antanta"
       ],
       "zanimljivost": "Savez je raspušten 1991.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "karta": "hladni-rat",
+        "istakni": [
+          "vu",
+          "ddr"
+        ]
+      },
       "rec": "varšava"
     },
     {
@@ -4499,6 +6116,11 @@
         "Plan američkog napada na Koreju koji je na kraju odbijen u Kongresu"
       ],
       "zanimljivost": "Prve su pomoć dobile Grčka i Turska.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/truman.jpg",
+        "opis": "Hari Truman"
+      },
       "rec": "truman"
     },
     {
@@ -4512,6 +6134,11 @@
         "1939."
       ],
       "zanimljivost": "Počela je trka u nuklearnom naoružanju.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/rds1.jpg",
+        "opis": "Prva sovjetska atomska bomba"
+      },
       "rec": "bomba"
     },
     {
@@ -4525,6 +6152,26 @@
         "Nije bila podeljena – ostala je jedinstvena pod upravom Saveznika"
       ],
       "zanimljivost": "Nemačka je ponovo ujedinjena 3. oktobra 1990.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "karta": "hladni-rat",
+        "kutija": [
+          4,
+          46,
+          19,
+          56
+        ],
+        "istakni": [
+          "ddr"
+        ],
+        "tacke": [
+          {
+            "lon": 13.4,
+            "lat": 52.52,
+            "oznaka": "Berlin"
+          }
+        ]
+      },
       "rec": "nemačka"
     },
     {
@@ -4538,6 +6185,11 @@
         "Sportsko takmičenje vojski NATO-a i Varšavskog ugovora svake godine"
       ],
       "zanimljivost": "Na vrhuncu, sve nuklearno oružje sveta moglo je više puta da uništi čovečanstvo.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/car-bomba.png",
+        "opis": "Probna eksplozija atomske bombe"
+      },
       "rec": "naoružanje"
     },
     {
@@ -4551,6 +6203,14 @@
         "Nesvrstane zemlje koje nisu pripadale nijednom bloku"
       ],
       "zanimljivost": "Poljska, Čehoslovačka, Mađarska, Rumunija, Bugarska, DR Nemačka i Albanija (do 1961).",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "karta": "hladni-rat",
+        "istakni": [
+          "vu",
+          "ddr"
+        ]
+      },
       "rec": "blok"
     },
     {
@@ -4564,6 +6224,10 @@
         "Jer je bio veoma kratak i brzo se ohladio posle nekoliko meseci"
       ],
       "zanimljivost": "Ipak, bilo je mnogo „toplih“ ratova u Koreji, Vijetnamu i drugde.",
+      "medijiOdgovora": {
+        "vrsta": "citat",
+        "tekst": "„Topli“ ratovi Hladnog rata: Koreja, Vijetnam, Avganistan…"
+      },
       "rec": "hladni"
     },
     {
@@ -4577,6 +6241,11 @@
         "Mosad"
       ],
       "zanimljivost": "Američka obaveštajna služba je CIA.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/lubjanka.jpg",
+        "opis": "Lubjanka – sedište KGB-a"
+      },
       "rec": "kgb"
     },
     {
@@ -4590,6 +6259,11 @@
         "Liga naroda, osnovana posle Prvog svetskog rata u Ženevi"
       ],
       "zanimljivost": "Iz Kominforma je 1948. isključena KPJ.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/tito.jpg",
+        "opis": "Tito – KPJ je 1948. isključena iz Kominforma"
+      },
       "rec": "kominform"
     },
     {
@@ -4603,6 +6277,10 @@
         "Samo jezik – na Zapadu se govorio engleski, a na Istoku ruski u baš svim državama"
       ],
       "zanimljivost": "Hladni rat je bio i sukob ideologija.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "karta": "hladni-rat"
+      },
       "rec": "ideologija"
     },
     {
@@ -4616,6 +6294,20 @@
         "Šestodnevni rat"
       ],
       "zanimljivost": "Koreja je i danas podeljena na Severnu i Južnu.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "azija",
+        "kutija": [
+          118,
+          32,
+          134,
+          44
+        ],
+        "istakni": [
+          "PRK",
+          "KOR"
+        ]
+      },
       "rec": "koreja"
     },
     {
@@ -4647,6 +6339,11 @@
         "Južni Vijetnam"
       ],
       "zanimljivost": "Rat se završio 1975. padom Sajgona.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/pad-sajgona.webp",
+        "opis": "Pad Sajgona, 1975."
+      },
       "rec": "vijetnam"
     },
     {
@@ -4696,6 +6393,11 @@
         "Evropska ekonomska zajednica, preteča današnje EU"
       ],
       "zanimljivost": "Prva konferencija nesvrstanih održana je u Beogradu 1961.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/nesvrstani.png",
+        "opis": "Pokret nesvrstanih"
+      },
       "rec": "nesvrstani"
     },
     {
@@ -4744,6 +6446,29 @@
       ],
       "tezina": 3,
       "zanimljivost": "Te godine su nezavisnost stekle, između ostalih, Nigerija, Kongo, Senegal i Madagaskar. Mnoge granice u Africi su i danas prave linije koje su povukle kolonijalne sile.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "afrika",
+        "istakni": [
+          "NGA",
+          "COD",
+          "SEN",
+          "MDG",
+          "CMR",
+          "TCD",
+          "MLI",
+          "NER",
+          "CIV",
+          "BFA",
+          "TGO",
+          "BEN",
+          "GAB",
+          "COG",
+          "CAF",
+          "MRT",
+          "SOM"
+        ]
+      },
       "rec": "afrika",
       "lekcija": 22
     },
@@ -4794,6 +6519,11 @@
         "Kubanska kriza"
       ],
       "zanimljivost": "Sukob na Bliskom istoku traje u raznim oblicima do danas.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/ben-gurion.jpg",
+        "opis": "Proglašenje Izraela 1948."
+      },
       "rec": "izrael"
     },
     {
@@ -4843,6 +6573,19 @@
         "Rat na Kubi"
       ],
       "zanimljivost": "Rat je oslabio SSSR i doprineo njegovom slomu.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "azija",
+        "kutija": [
+          55,
+          25,
+          80,
+          42
+        ],
+        "istakni": [
+          "AFG"
+        ]
+      },
       "rec": "avganistan"
     },
     {
@@ -4852,7 +6595,7 @@
       "odgovori": [
         "Rokenrol",
         "Barok",
-        "Gregorijanski pojanje",
+        "Gregorijansko pojanje",
         "Opera samo"
       ],
       "zanimljivost": "Elvis Prisli je nazvan „kraljem rokenrola“.",
@@ -4928,6 +6671,11 @@
         "Sportisti koji su osvojili mnogo medalja na olimpijadi 1964."
       ],
       "zanimljivost": "Parola „Vodite ljubav, a ne rat“ bila je protiv Vijetnamskog rata.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/vudstok.jpg",
+        "opis": "Festival Vudstok, 1969."
+      },
       "rec": "hipi"
     },
     {
@@ -4941,6 +6689,11 @@
         "Internet"
       ],
       "zanimljivost": "Prvi program Televizije Beograd emitovan je 1958.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/televizor.jpg",
+        "opis": "Stari televizor"
+      },
       "rec": "televizor"
     },
     {
@@ -4954,6 +6707,11 @@
         "Svemirski let na koji su poslati najbolji studenti iz Evrope"
       ],
       "zanimljivost": "U Beogradu su studenti juna 1968. protestovali protiv socijalnih nejednakosti.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/studenti-1968.jpg",
+        "opis": "Studenti u Beogradu, jun 1968."
+      },
       "rec": "protest"
     },
     {
@@ -4985,6 +6743,11 @@
         "Verski pokret"
       ],
       "zanimljivost": "Druga polovina 20. veka donela je ženama mnoga nova prava i zanimanja.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/bovoar.jpg",
+        "opis": "Simon de Bovoar"
+      },
       "rec": "prava"
     },
     {
@@ -4998,6 +6761,11 @@
         "Vojna država"
       ],
       "zanimljivost": "U zapadnim zemljama posle rata nastali su prvi veliki tržni centri.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/trzni-centar.jpg",
+        "opis": "Tržni centar"
+      },
       "rec": "potrošnja"
     },
     {
@@ -5011,6 +6779,11 @@
         "„Prohujalo sa vihorom“"
       ],
       "zanimljivost": "Prvi deo „Ratova zvezda“ izašao je 1977.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/ratovi-zvezda.jpg",
+        "opis": "„Ratovi zvezda“ (1977)"
+      },
       "rec": "zvezde"
     },
     {
@@ -5024,6 +6797,11 @@
         "Pokret za povratak kolonija i obnovu starih evropskih carstava"
       ],
       "zanimljivost": "Prvi „Dan planete Zemlje“ obeležen je 1970. godine.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/dan-planete.png",
+        "opis": "Dan planete Zemlje"
+      },
       "rec": "ekologija"
     },
     {
@@ -5037,6 +6815,11 @@
         "Nije bilo škola"
       ],
       "zanimljivost": "Ljudi su često čekali u dugim redovima za osnovne namirnice.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/trabant.jpg",
+        "opis": "Trabant – automobil iz Istočne Nemačke"
+      },
       "rec": "red"
     },
     {
@@ -5050,6 +6833,11 @@
         "Fonograf"
       ],
       "zanimljivost": "Sletanje na Mesec 1969. uživo je gledalo oko 600 miliona ljudi.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/svetska-istorija/slike/apolo-11.jpg",
+        "opis": "Apolo 11"
+      },
       "rec": "prenos"
     },
     {
@@ -5171,6 +6959,11 @@
         "1961."
       ],
       "zanimljivost": "Taj dan je državni praznik Nemačke.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/ujedinjenje-nemacke.jpg",
+        "opis": "Proslava ujedinjenja Nemačke"
+      },
       "rec": "ujedinjenje"
     },
     {
@@ -5184,6 +6977,11 @@
         "Ustanak u Mađarskoj 1956"
       ],
       "zanimljivost": "Vođa revolucije, pisac Vaclav Havel, postao je predsednik.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/havel.jpg",
+        "opis": "Vaclav Havel"
+      },
       "rec": "havel"
     },
     {
@@ -5197,6 +6995,29 @@
         "1961."
       ],
       "zanimljivost": "Nastalo je 15 nezavisnih država.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "evropa",
+        "kutija": [
+          20,
+          38,
+          60,
+          62
+        ],
+        "istakni": [
+          "RUS",
+          "UKR",
+          "BLR",
+          "LTU",
+          "LVA",
+          "EST",
+          "MDA",
+          "GEO",
+          "ARM",
+          "AZE",
+          "KAZ"
+        ]
+      },
       "rec": "raspad"
     },
     {
@@ -5210,6 +7031,11 @@
         "Čehoslovačka"
       ],
       "zanimljivost": "Rumunski diktator Čaušesku pogubljen je decembra 1989.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/causesku.jpg",
+        "opis": "Nikolaje Čaušesku"
+      },
       "rec": "rumunija"
     },
     {
@@ -5223,6 +7049,11 @@
         "Sportski savez koji je organizovao Evropsko prvenstvo u fudbalu"
       ],
       "zanimljivost": "Iz nje je 1993. nastala Evropska unija.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/rimski-ugovori.jpg",
+        "opis": "Potpisivanje Rimskih ugovora 1957."
+      },
       "rec": "evropa"
     },
     {
@@ -5236,6 +7067,11 @@
         "Ugovor o raspadu SSSR-a i nastanku nezavisnih država na njegovoj teritoriji"
       ],
       "zanimljivost": "Potpisale su ga 35 država, uključujući SAD, SSSR i Jugoslaviju.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/helsinki-1975.jpg",
+        "opis": "Konferencija u Helsinkiju 1975."
+      },
       "rec": "helsinki"
     },
     {
@@ -5249,6 +7085,11 @@
         "Korejski rat"
       ],
       "zanimljivost": "Hiljade Berlinaca su te noći slavile na zidu.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/svetska-istorija/slike/berlinski-zid.jpg",
+        "opis": "Pad Berlinskog zida, 1989."
+      },
       "rec": "simbol"
     },
     {
@@ -5280,6 +7121,11 @@
         "Milion"
       ],
       "zanimljivost": "Mnogi su ipak uspeli da pobegnu – tunelima, balonima i skrivenim u automobilima.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/cekpoint-carli.jpg",
+        "opis": "Prelaz „Čekpoint Čarli“ u Berlinu"
+      },
       "rec": "bekstvo"
     },
     {
@@ -5293,6 +7139,11 @@
         "Josif Staljin"
       ],
       "zanimljivost": "Posle gušenja „Praškog proleća“ nastala je „Brežnjevljeva doktrina“: SSSR je sebi dao pravo da vojno interveniše u svakoj socijalističkoj zemlji koja bi pokušala da se udalji od Moskve.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/breznjev.jpg",
+        "opis": "Leonid Brežnjev"
+      },
       "rec": "brežnjev"
     },
     {
@@ -5306,6 +7157,11 @@
         "1991."
       ],
       "zanimljivost": "Rezolucija Informbiroa isključila je KPJ iz zajednice komunističkih partija.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/staljin.jpg",
+        "opis": "Staljin"
+      },
       "rec": "informbiro"
     },
     {
@@ -5337,6 +7193,11 @@
         "Savezna Republika Jugoslavija (SRJ), zajednica Srbije i Crne Gore"
       ],
       "zanimljivost": "Ime je promenjeno ustavom iz 1963.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/grb-sfrj.png",
+        "opis": "Grb SFRJ"
+      },
       "rec": "sfrj"
     },
     {
@@ -5350,6 +7211,11 @@
         "Potpuna izolacija"
       ],
       "zanimljivost": "Jugoslovenski pasoš omogućavao je putovanja i na Istok i na Zapad.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/nesvrstani.png",
+        "opis": "Pokret nesvrstanih"
+      },
       "rec": "blokovi"
     },
     {
@@ -5363,6 +7229,11 @@
         "1974."
       ],
       "zanimljivost": "Sahranjen je u Kući cveća u Beogradu.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/kuca-cveca.jpg",
+        "opis": "Kuća cveća"
+      },
       "rec": "tito"
     },
     {
@@ -5376,6 +7247,11 @@
         "Proglašenje Socijalističke Federativne Republike Jugoslavije"
       ],
       "zanimljivost": "Posle plenuma je oslabljena centralna vlast.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/rankovic.jpg",
+        "opis": "Aleksandar Ranković"
+      },
       "rec": "ranković"
     },
     {
@@ -5389,6 +7265,23 @@
         "Spor sa Mađarskom oko plovidbe Dunavom i granice u Bačkoj"
       ],
       "zanimljivost": "Spor je rešen 1954, a Trst je pripao Italiji.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "evropa",
+        "kutija": [
+          12.5,
+          45,
+          15,
+          46.5
+        ],
+        "tacke": [
+          {
+            "lon": 13.78,
+            "lat": 45.65,
+            "oznaka": "Trst"
+          }
+        ]
+      },
       "rec": "trst"
     },
     {
@@ -5402,6 +7295,11 @@
         "Milovan Đilas"
       ],
       "zanimljivost": "Posle Titove smrti uvedeno je kolektivno Predsedništvo.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/tito.jpg",
+        "opis": "Josip Broz Tito"
+      },
       "rec": "predsednik"
     },
     {
@@ -5415,6 +7313,14 @@
         "Ustav iz 1963."
       ],
       "zanimljivost": "Pokrajine Vojvodina i Kosovo dobile su gotovo jednaka prava kao republike.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "karta": "sfrj",
+        "istakni": [
+          "vojvodina",
+          "kosovo"
+        ]
+      },
       "rec": "ustav"
     },
     {
@@ -5428,6 +7334,11 @@
         "Pisac bez veze sa politikom, poznat po romanima o životu na selu u Crnoj Gori"
       ],
       "zanimljivost": "Zbog svojih knjiga, poput „Nove klase“, Đilas je godinama bio u zatvoru.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/djilas.jpg",
+        "opis": "Milovan Đilas"
+      },
       "rec": "đilas"
     },
     {
@@ -5441,6 +7352,11 @@
         "Džakarti"
       ],
       "zanimljivost": "Na konferenciji su učestvovale 25 zemalja.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/nesvrstani-1961.png",
+        "opis": "Prva konferencija nesvrstanih, Beograd 1961."
+      },
       "rec": "beograd"
     },
     {
@@ -5454,6 +7370,10 @@
         "Samo oružje iz Kine"
       ],
       "zanimljivost": "Zapad je želeo da Jugoslavija ostane nezavisna od SSSR-a.",
+      "medijiOdgovora": {
+        "vrsta": "citat",
+        "tekst": "Posle 1948: pomoć Zapada u hrani, novcu i oružju"
+      },
       "rec": "pomoć"
     },
     {
@@ -5467,6 +7387,11 @@
         "Muzički festival u Zagrebu na kome su nastupali najpoznatiji rok bendovi Jugoslavije"
       ],
       "zanimljivost": "Posle toga smenjena su i „liberalna“ rukovodstva u Srbiji 1972.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/savka.jpg",
+        "opis": "Savka Dabčević-Kučar"
+      },
       "rec": "proleće"
     },
     {
@@ -5498,6 +7423,11 @@
         "Školski izlet"
       ],
       "zanimljivost": "Dan mladosti 25. maja slavljen je sletovima na stadionu JNA.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/stafeta.jpg",
+        "opis": "Štafeta mladosti"
+      },
       "rec": "štafeta"
     },
     {
@@ -5511,6 +7441,10 @@
         "Kolektivizacija"
       ],
       "zanimljivost": "Samoupravljanje je uvedeno 1950.",
+      "medijiOdgovora": {
+        "vrsta": "citat",
+        "tekst": "„Fabrike radnicima!“ – parola iz 1950."
+      },
       "rec": "radnici"
     },
     {
@@ -5542,6 +7476,11 @@
         "Nije postojao – rokenrol se slušao isključivo sa radija i ploča donetih iz inostranstva"
       ],
       "zanimljivost": "Novi talas iz Beograda, Zagreba i Ljubljane bio je poznat i van zemlje.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/bijelo-dugme.png",
+        "opis": "Bijelo dugme"
+      },
       "rec": "dugme"
     },
     {
@@ -5555,6 +7494,10 @@
         "Formulu 1 1960"
       ],
       "zanimljivost": "Maskota igara bio je vučić Vučko.",
+      "medijiOdgovora": {
+        "vrsta": "citat",
+        "tekst": "Vučko – maskota Zimskih olimpijskih igara u Sarajevu 1984."
+      },
       "rec": "sarajevo"
     },
     {
@@ -5568,6 +7511,10 @@
         "Američki fudbal i hokej na ledu"
       ],
       "zanimljivost": "Košarkaši Jugoslavije bili su svetski prvaci više puta.",
+      "medijiOdgovora": {
+        "vrsta": "emodzi",
+        "tekst": "🏀 🤽 🤾 🏐"
+      },
       "rec": "košarka"
     },
     {
@@ -5581,6 +7528,11 @@
         "Takmičenja"
       ],
       "zanimljivost": "Autoput „Bratstvo i jedinstvo“ delom su gradile omladinske radne brigade.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/radne-akcije.jpg",
+        "opis": "Omladinska radna akcija"
+      },
       "rec": "akcija"
     },
     {
@@ -5594,6 +7546,11 @@
         "Mogli su da putuju samo u Albaniju i Grčku, uz posebnu dozvolu"
       ],
       "zanimljivost": "Mnogi su odlazili na rad u Nemačku kao „gastarbajteri“.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/pasos.jpg",
+        "opis": "Jugoslovenski pasoš"
+      },
       "rec": "pasoš"
     },
     {
@@ -5607,6 +7564,11 @@
         "Političar, predsednik vlade Bosne i Hercegovine"
       ],
       "zanimljivost": "Za film „Otac na službenom putu“ dobio je Zlatnu palmu 1985.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/kusturica.jpg",
+        "opis": "Emir Kusturica"
+      },
       "rec": "kusturica"
     },
     {
@@ -5620,6 +7582,11 @@
         "7. jul"
       ],
       "zanimljivost": "Proslavljao se kao sećanje na Drugo zasedanje AVNOJ-a.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/avnoj.jpg",
+        "opis": "Drugo zasedanje AVNOJ-a u Jajcu"
+      },
       "rec": "praznik"
     },
     {
@@ -5633,6 +7600,11 @@
         "Fabrika automobila u Kragujevcu posle rata"
       ],
       "zanimljivost": "Tako se zvao i autoput Ljubljana–Zagreb–Beograd–Skoplje.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/autoput.png",
+        "opis": "Autoput „Bratstvo i jedinstvo“"
+      },
       "rec": "bratstvo"
     },
     {
@@ -5646,6 +7618,11 @@
         "Egzit na Petrovaradinskoj tvrđavi"
       ],
       "zanimljivost": "Takmičenje je 1990. zato održano u Zagrebu.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/riva.jpg",
+        "opis": "Grupa „Riva“"
+      },
       "rec": "evrovizija"
     },
     {
@@ -5659,6 +7636,10 @@
         "Previše novca"
       ],
       "zanimljivost": "Uvedene su i restrikcije struje i goriva – vožnja „par-nepar“.",
+      "medijiOdgovora": {
+        "vrsta": "citat",
+        "tekst": "Inflacija 1989: više od 1.000% godišnje"
+      },
       "rec": "inflacija"
     },
     {
@@ -5672,6 +7653,11 @@
         "Šrek"
       ],
       "zanimljivost": "„Surogat“ Dušana Vukotića bio je prvi strani crtani film nagrađen Oskarom.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/surogat.jpg",
+        "opis": "„Surogat“ Dušana Vukotića"
+      },
       "rec": "oskar"
     },
     {
@@ -5685,6 +7671,11 @@
         "Vojnici"
       ],
       "zanimljivost": "Pioniri su nosili plave kape „titovke“ i crvene marame.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/pioniri.png",
+        "opis": "Pioniri"
+      },
       "rec": "pioniri"
     },
     {
@@ -5698,6 +7689,11 @@
         "Školske priredbe za Novu godinu"
       ],
       "zanimljivost": "Na sletu je učestvovalo i po nekoliko hiljada mladih istovremeno.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/slet.jpg",
+        "opis": "Slet za Dan mladosti"
+      },
       "rec": "slet"
     },
     {
@@ -5711,6 +7707,26 @@
         "1980."
       ],
       "zanimljivost": "Socijalistička Jugoslavija nestala je 1991–1992.",
+      "medijiOdgovora": {
+        "vrsta": "lenta",
+        "od": 1978,
+        "do": 1995,
+        "dogadjaji": [
+          {
+            "g": 1980,
+            "t": "Smrt Tita"
+          },
+          {
+            "g": 1991,
+            "t": "Raspad SFRJ",
+            "ist": true
+          },
+          {
+            "g": 1992,
+            "t": "SRJ"
+          }
+        ]
+      },
       "rec": "raspad"
     },
     {
@@ -5724,6 +7740,14 @@
         "4. maja 1980."
       ],
       "zanimljivost": "U Sloveniji je usledio kratki „desetodnevni rat“.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "balkan",
+        "istakni": [
+          "SVN",
+          "HRV"
+        ]
+      },
       "rec": "nezavisnost"
     },
     {
@@ -5737,6 +7761,11 @@
         "Izbor kralja"
       ],
       "zanimljivost": "Slovenačka, a zatim i hrvatska delegacija napustile su kongres.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/14-kongres.jpg",
+        "opis": "Četrnaesti kongres SKJ"
+      },
       "rec": "kongres"
     },
     {
@@ -5750,6 +7779,10 @@
         "Monarhisti"
       ],
       "zanimljivost": "U Hrvatskoj je pobedio HDZ, u Sloveniji DEMOS, a u Srbiji SPS.",
+      "medijiOdgovora": {
+        "vrsta": "citat",
+        "tekst": "Hrvatska: HDZ · Slovenija: DEMOS · Srbija: SPS"
+      },
       "rec": "izbori"
     },
     {
@@ -5763,6 +7796,14 @@
         "Državna zajednica"
       ],
       "zanimljivost": "SRJ je 2003. preimenovana u Državnu zajednicu Srbija i Crna Gora.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "balkan",
+        "istakni": [
+          "SRB",
+          "MNE"
+        ]
+      },
       "rec": "srj"
     },
     {
@@ -5776,6 +7817,11 @@
         "Boris Tadić"
       ],
       "zanimljivost": "Milošević je kasnije bio i predsednik SRJ.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/milosevic.jpg",
+        "opis": "Slobodan Milošević"
+      },
       "rec": "milošević"
     },
     {
@@ -5789,6 +7835,14 @@
         "Nijedna"
       ],
       "zanimljivost": "Makedonija se odvojila mirno.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "balkan",
+        "istakni": [
+          "MKD",
+          "BIH"
+        ]
+      },
       "rec": "republike"
     },
     {
@@ -5802,6 +7856,10 @@
         "Izbor novog kralja iz dinastije Karađorđević na velikom saboru u Beogradu"
       ],
       "zanimljivost": "Ovi događaji pojačali su nepoverenje među republikama.",
+      "medijiOdgovora": {
+        "vrsta": "citat",
+        "tekst": "„Događanje naroda“: mitinzi u Novom Sadu, Titogradu i Beogradu, 1988–1989."
+      },
       "rec": "mitinzi"
     },
     {
@@ -5815,6 +7873,10 @@
         "Ništa"
       ],
       "zanimljivost": "Posle Titove smrti nije bilo snažne zajedničke vlasti.",
+      "medijiOdgovora": {
+        "vrsta": "citat",
+        "tekst": "ekonomska kriza + nacionalizam + slabljenje zajedničke vlasti"
+      },
       "rec": "uzroci"
     },
     {
@@ -5828,6 +7890,10 @@
         "2000."
       ],
       "zanimljivost": "U Srbiji su održani decembra 1990.",
+      "medijiOdgovora": {
+        "vrsta": "citat",
+        "tekst": "Prethodni višestranački izbori održani su 1938!"
+      },
       "rec": "izbori"
     },
     {
@@ -5841,6 +7907,11 @@
         "Policija"
       ],
       "zanimljivost": "JNA je bila jedna od najjačih vojski Evrope tog vremena.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/jna.png",
+        "opis": "Znak JNA"
+      },
       "rec": "jna"
     },
     {
@@ -5854,6 +7925,11 @@
         "Vojska"
       ],
       "zanimljivost": "Komisija je zaključila da je SFRJ „u procesu raspada“.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/badinter.jpg",
+        "opis": "Rober Badinter"
+      },
       "rec": "komisija"
     },
     {
@@ -5867,6 +7943,19 @@
         "1995."
       ],
       "zanimljivost": "Hrvatska je postala članica 2013.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "evropa",
+        "kutija": [
+          10,
+          43,
+          20,
+          48.5
+        ],
+        "istakni": [
+          "SVN"
+        ]
+      },
       "rec": "slovenija"
     },
     {
@@ -5880,6 +7969,11 @@
         "Školske priredbe povodom Dana Republike"
       ],
       "zanimljivost": "Na Gazimestanu je 1989. održan veliki skup povodom 600 godina Kosovske bitke.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/srpska-istorija/slike/gazimestan.jpg",
+        "opis": "Gazimestan"
+      },
       "rec": "miting"
     },
     {
@@ -5893,6 +7987,13 @@
         "Bosna i Hercegovina"
       ],
       "zanimljivost": "Referendum u Makedoniji održan je 8. septembra 1991, a JNA se povukla mirno, posle dogovora, početkom 1992. Slovenija je, za razliku od nje, imala desetodnevni rat.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "balkan",
+        "istakni": [
+          "MKD"
+        ]
+      },
       "rec": "referendum"
     },
     {
@@ -5906,6 +8007,13 @@
         "U Crnoj Gori"
       ],
       "zanimljivost": "Posle Brionske deklaracije JNA se povukla iz Slovenije.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "balkan",
+        "istakni": [
+          "SVN"
+        ]
+      },
       "rec": "slovenija"
     },
     {
@@ -5937,6 +8045,11 @@
         "2000."
       ],
       "zanimljivost": "Sporazum je dogovoren u Dejtonu u SAD, a potpisan u Parizu decembra 1995.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/dejton.jpg",
+        "opis": "Potpisivanje Dejtonskog sporazuma u Parizu"
+      },
       "rec": "dejton"
     },
     {
@@ -5950,6 +8063,10 @@
         "Bombardovanje Beograda i drugih gradova Srbije od strane NATO-a tokom tog leta"
       ],
       "zanimljivost": "To je bio najveći egzodus stanovništva u ratovima 1990-ih.",
+      "medijiOdgovora": {
+        "vrsta": "citat",
+        "tekst": "Za samo nekoliko dana oko 200.000 Srba napustilo je Krajinu"
+      },
       "rec": "oluja"
     },
     {
@@ -5963,6 +8080,17 @@
         "Izbori u Hrvatskoj na kojima je pobedila Hrvatska demokratska zajednica"
       ],
       "zanimljivost": "Usledilo je proterivanje srpskog stanovništva iz Zapadne Slavonije.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "balkan",
+        "tacke": [
+          {
+            "lon": 17,
+            "lat": 45.3,
+            "oznaka": "Zapadna Slavonija"
+          }
+        ]
+      },
       "rec": "bljesak"
     },
     {
@@ -5976,6 +8104,11 @@
         "Nije bilo opsade"
       ],
       "zanimljivost": "Bila je to najduža opsada nekog grada u modernoj istoriji Evrope.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/opsada-sarajeva.jpg",
+        "opis": "Sarajevo pod opsadom"
+      },
       "rec": "sarajevo"
     },
     {
@@ -5989,6 +8122,11 @@
         "Fudbaler"
       ],
       "zanimljivost": "Srđan je 1993. stao u odbranu sugrađanina Alena Glavovića i preminuo od zadobijenih udaraca.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/srdjan-aleksic.jpg",
+        "opis": "Srđan Aleksić"
+      },
       "rec": "srđan"
     },
     {
@@ -6020,6 +8158,17 @@
         "Pariskim mirom, kojim su Rusija i Amerika podelile uticaj na Balkanu posle tog rata"
       ],
       "zanimljivost": "Rezolucija 1244 i danas važi i potvrđuje Kosovo i Metohiju kao deo SRJ, odnosno Srbije.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "balkan",
+        "tacke": [
+          {
+            "lon": 21.71,
+            "lat": 42.13,
+            "oznaka": "Kumanovo"
+          }
+        ]
+      },
       "rec": "rezolucija"
     },
     {
@@ -6033,6 +8182,11 @@
         "Ponovno ujedinjenje svih republika u jednu zajedničku državu do kraja decenije"
       ],
       "zanimljivost": "Srbija je postala zemlja sa najvećim brojem izbeglica u Evropi.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/vukovar.jpg",
+        "opis": "Razoreni Vukovar"
+      },
       "rec": "izbeglice"
     },
     {
@@ -6046,6 +8200,11 @@
         "Pesma o dvoje mladih koja je na Evroviziji predstavljala Jugoslaviju 1989. godine"
       ],
       "zanimljivost": "Fotografija njih dvoje postala je jedan od simbola besmisla rata.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/vrbanja.jpg",
+        "opis": "Most Vrbanja u Sarajevu"
+      },
       "rec": "admira"
     },
     {
@@ -6059,6 +8218,10 @@
         "Samo za hranu"
       ],
       "zanimljivost": "Sankcije su obuhvatale i sport – reprezentacija je izbačena sa Evropskog prvenstva 1992.",
+      "medijiOdgovora": {
+        "vrsta": "citat",
+        "tekst": "Jugoslavija je izbačena sa Evropskog prvenstva 1992 – a Danska, koja je ušla umesto nje, postala je prvak!"
+      },
       "rec": "sankcije"
     },
     {
@@ -6072,6 +8235,10 @@
         "Školska ekskurzija u drugu zemlju na nekoliko dana"
       ],
       "zanimljivost": "Mnoge izbegle porodice i danas žive u Srbiji.",
+      "medijiOdgovora": {
+        "vrsta": "emodzi",
+        "tekst": "🏠 ➡️ 🚶‍♀️ 🚶"
+      },
       "rec": "izbeglica"
     },
     {
@@ -6085,6 +8252,11 @@
         "Samo Crveni krst, bez ikakvih vojnih snaga"
       ],
       "zanimljivost": "Rezolucija 1244 je predviđala i povratak dela srpskih snaga, što nije sprovedeno.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/kfor.png",
+        "opis": "Vojnici KFOR-a"
+      },
       "rec": "kfor"
     },
     {
@@ -6098,6 +8270,11 @@
         "Boris Tadić (predsednik Srbije)"
       ],
       "zanimljivost": "Sporazum su potpisali i Alija Izetbegović i Franjo Tuđman.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/dejton.jpg",
+        "opis": "Dejtonski sporazum"
+      },
       "rec": "potpis"
     },
     {
@@ -6111,6 +8288,11 @@
         "Banka koja štampa evro i daje zajmove svim državama sveta"
       ],
       "zanimljivost": "EU je nastala Mastrihtskim ugovorom 1993.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/zastava-eu.png",
+        "opis": "Zastava Evropske unije"
+      },
       "rec": "unija"
     },
     {
@@ -6124,6 +8306,11 @@
         "Uvođenje evra"
       ],
       "zanimljivost": "U napadima je poginulo skoro 3.000 ljudi.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/11-septembar.jpg",
+        "opis": "Njujork, 11. septembar 2001."
+      },
       "rec": "teroristi"
     },
     {
@@ -6154,6 +8341,11 @@
       ],
       "tezina": 3,
       "zanimljivost": "Svetska trgovinska organizacija (STO) osnovana je 1995. kao naslednik GATT-a. Danas ima preko 160 članica.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/vto.png",
+        "opis": "Sedište Svetske trgovinske organizacije u Ženevi"
+      },
       "rec": "trgovina",
       "lekcija": 29
     },
@@ -6168,6 +8360,11 @@
         "Indija"
       ],
       "zanimljivost": "Kina je postala „fabrika sveta“.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/sangaj.jpg",
+        "opis": "Šangaj"
+      },
       "rec": "kina"
     },
     {
@@ -6199,6 +8396,14 @@
         "Rat SAD i saveznika u Avganistanu protiv talibana posle napada 11. septembra"
       ],
       "zanimljivost": "Rat je prvi put prikazivan uživo na televiziji.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "bliski-istok",
+        "istakni": [
+          "KWT",
+          "IRQ"
+        ]
+      },
       "rec": "zaliv"
     },
     {
@@ -6212,6 +8417,11 @@
         "300"
       ],
       "zanimljivost": "Južni Sudan je postao 193. članica 2011.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/un.jpg",
+        "opis": "Sedište UN u Njujorku"
+      },
       "rec": "članice"
     },
     {
@@ -6225,6 +8435,11 @@
         "Svetska ekonomska kriza koja je počela u SAD i proširila se svetom"
       ],
       "zanimljivost": "Pariski sporazum o klimi potpisan je 2015.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/glecer.jpg",
+        "opis": "Lednik koji se topi"
+      },
       "rec": "klima"
     },
     {
@@ -6256,6 +8471,11 @@
         "Kriza u Rimu"
       ],
       "zanimljivost": "Kriza je počela slomom tržišta nekretnina i banaka.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/leman.jpg",
+        "opis": "Banka „Leman braders“, čiji je slom 2008. pokrenuo krizu"
+      },
       "rec": "kriza"
     },
     {
@@ -6269,6 +8489,13 @@
         "2004."
       ],
       "zanimljivost": "Odluka je doneta na referendumu 2016 – „Bregzit“.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "evropa",
+        "istakni": [
+          "GBR"
+        ]
+      },
       "rec": "bregzit"
     },
     {
@@ -6282,6 +8509,10 @@
         "Vojni savezi zemalja koje su se udružile radi zajedničke odbrane"
       ],
       "zanimljivost": "Fejsbuk je osnovan 2004. godine.",
+      "medijiOdgovora": {
+        "vrsta": "emodzi",
+        "tekst": "📱 💬 👍"
+      },
       "rec": "mreže"
     },
     {
@@ -6295,6 +8526,11 @@
         "Telegraf"
       ],
       "zanimljivost": "Broj korisnika interneta premašio je 5 milijardi.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/arpanet.png",
+        "opis": "Mapa ARPANET-a, pretka interneta"
+      },
       "rec": "internet"
     },
     {
@@ -6308,6 +8544,19 @@
         "2008."
       ],
       "zanimljivost": "Rat je izazvao najveću izbegličku krizu u Evropi posle Drugog svetskog rata.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "evropa",
+        "kutija": [
+          20,
+          43,
+          42,
+          54
+        ],
+        "istakni": [
+          "UKR"
+        ]
+      },
       "rec": "ukrajina"
     },
     {
@@ -6357,6 +8606,13 @@
         "2003."
       ],
       "zanimljivost": "Odluka je doneta na referendumu maja 2006.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "balkan",
+        "istakni": [
+          "MNE"
+        ]
+      },
       "rec": "crnagora"
     },
     {
@@ -6370,6 +8626,11 @@
         "Rast plata"
       ],
       "zanimljivost": "Štampana je novčanica od 500 milijardi dinara.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/500-milijardi.jpg",
+        "opis": "Novčanica od 500 milijardi dinara (1993)"
+      },
       "rec": "inflacija"
     },
     {
@@ -6383,6 +8644,11 @@
         "Sportski događaj – evropsko prvenstvo u košarci održano u Beogradu"
       ],
       "zanimljivost": "Spaljeno je ili oštećeno više desetina pravoslavnih crkava i manastira.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/pogrom-2004.jpg",
+        "opis": "Spaljena crkva na Kosovu, 2004."
+      },
       "rec": "pogrom"
     },
     {
@@ -6396,6 +8662,13 @@
         "Pristupila je NATO-u"
       ],
       "zanimljivost": "Mnoge države sveta, uključujući pet članica EU, takođe ne priznaju nezavisnost Kosova.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "balkan",
+        "istakni": [
+          "SRB"
+        ]
+      },
       "rec": "kosovo"
     },
     {
@@ -6409,6 +8682,26 @@
         "2020."
       ],
       "zanimljivost": "Pregovori o članstvu otvoreni su 2014.",
+      "medijiOdgovora": {
+        "vrsta": "lenta",
+        "od": 2000,
+        "do": 2030,
+        "dogadjaji": [
+          {
+            "g": 2009,
+            "t": "Zahtev za članstvo"
+          },
+          {
+            "g": 2012,
+            "t": "Status kandidata",
+            "ist": true
+          },
+          {
+            "g": 2014,
+            "t": "Početak pregovora"
+          }
+        ]
+      },
       "rec": "kandidat"
     },
     {
@@ -6422,6 +8715,14 @@
         "Kraljevina Jugoslavija"
       ],
       "zanimljivost": "Posle crnogorskog referenduma, Srbija je postala samostalna država.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "balkan",
+        "istakni": [
+          "SRB",
+          "MNE"
+        ]
+      },
       "rec": "zajednica"
     },
     {
@@ -6435,6 +8736,10 @@
         "Rat"
       ],
       "zanimljivost": "Tranzicija je obuhvatila i privatizaciju državnih preduzeća.",
+      "medijiOdgovora": {
+        "vrsta": "citat",
+        "tekst": "državna svojina → privatizacija · jedna partija → više stranaka"
+      },
       "rec": "tranzicija"
     },
     {
@@ -6448,6 +8753,11 @@
         "Sporazum o sportu kojim je Kosovo primljeno u UEFA i FIFA posle dugih pregovora"
       ],
       "zanimljivost": "Sporazum je predviđao i Zajednicu srpskih opština.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/berlemon.jpg",
+        "opis": "Zgrada Evropske komisije u Briselu"
+      },
       "rec": "brisel"
     },
     {
@@ -6479,6 +8789,11 @@
         "Tomislav Nikolić"
       ],
       "zanimljivost": "Koštunica je kasnije bio i predsednik Vlade Srbije.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/kostunica.jpg",
+        "opis": "Vojislav Koštunica"
+      },
       "rec": "koštunica"
     },
     {
@@ -6492,6 +8807,10 @@
         "Više turista, jer su strani gosti dolazili u velikom broju"
       ],
       "zanimljivost": "Mnogi mladi obrazovani ljudi tada su napustili zemlju.",
+      "medijiOdgovora": {
+        "vrsta": "citat",
+        "tekst": "Benzin se kupovao u flašama pored puta, a plata je trajala nekoliko dana"
+      },
       "rec": "nestašica"
     },
     {
@@ -6505,6 +8824,11 @@
         "Ustav iz 1990. još važi"
       ],
       "zanimljivost": "Ustav iz 2006. usvojen je na referendumu.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/skupstina.jpg",
+        "opis": "Dom Narodne skupštine Srbije"
+      },
       "rec": "ustav"
     },
     {

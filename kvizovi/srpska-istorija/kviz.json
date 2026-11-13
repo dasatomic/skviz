@@ -3,7 +3,7 @@
   "ikona": "🦅",
   "boja": "#c0392b",
   "opis": "Od Lepenskog Vira i Nemanjića, preko ustanaka, do Velikog rata",
-  "redosled": 20,
+  "redosled": 21,
   "pitanja": [
     {
       "tezina": 1,
@@ -67,7 +67,7 @@
         "Kralj Milutin",
         "Despot Stefan"
       ],
-      "zanimljivost": "Dušan je krunisan za cara 1346. u Skoplju, a Dušanov zakonik donet je 1349. U njegovo vreme Srbija je bila najveća država na Balkanu – od Dunava do Peloponeza.",
+      "zanimljivost": "Dušan je krunisan za cara 1346. u Skoplju, a Dušanov zakonik donet je 1349. U njegovo vreme Srbija je bila najveća država na Balkanu – od Dunava do Korintskog zaliva.",
       "rec": "dušan"
     },
     {
@@ -357,7 +357,7 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Ko je bio komandant u Kolubarskoj bici 1914?",
+      "pitanje": "Koji komandant Prve armije je svojom odlukom o povlačenju i protivnapadu presudno doprineo pobedi u Kolubarskoj bici 1914?",
       "mediji": {
         "vrsta": "slika",
         "src": "slike/misic.jpg"
@@ -368,7 +368,7 @@
         "Stepa Stepanović",
         "Petar Bojović"
       ],
-      "zanimljivost": "Mišić je doneo hrabru odluku da se vojska povuče i odmori, a zatim izveo snažan protivnapad. Austrougarska vojska je potpuno poražena, a Beograd oslobođen 15. decembra 1914. Za tu pobedu Mišić je dobio čin vojvode.",
+      "zanimljivost": "Mišić je doneo hrabru odluku da se vojska povuče i odmori, a zatim izveo snažan protivnapad. Austrougarska vojska je potpuno poražena, a Beograd oslobođen 15. decembra 1914. Za tu pobedu Mišić je dobio čin vojvode. Vrhovnom komandom je i tada rukovodio vojvoda Putnik.",
       "rec": "mišić"
     },
     {
@@ -411,7 +411,7 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Ova hrabra žena je najodlikovanija žena-ratnik u istoriji ratovanja. Ko je ona?",
+      "pitanje": "Ova hrabra žena je jedna od najodlikovanijih žena-ratnika u istoriji ratovanja. Ko je ona?",
       "mediji": {
         "vrsta": "slika",
         "src": "slike/milunka.jpg"
@@ -467,6 +467,18 @@
         "Kraljevina Srbija"
       ],
       "zanimljivost": "Država je 1929. preimenovana u Kraljevinu Jugoslaviju. Prvi kralj bio je Petar I, a stvarno je vladao regent, njegov sin Aleksandar.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "balkan",
+        "istakni": [
+          "SVN",
+          "HRV",
+          "BIH",
+          "SRB",
+          "MNE",
+          "MKD"
+        ]
+      },
       "rec": "jugoslavija"
     },
     {
@@ -592,7 +604,7 @@
         "Sveti Sava",
         "Jovan Sterija Popović"
       ],
-      "zanimljivost": "Dositej je proputovao pola Evrope i govorio desetak jezika. Osnovao je Veliku školu u Beogradu 1808. Napisao je pesmu „Vostani Serbije“, a sahranjen je ispred Saborne crkve u Beogradu.",
+      "zanimljivost": "Dositej je proputovao pola Evrope i govorio desetak jezika. Na njegov predlog osnovana je Velika škola u Beogradu 1808. Napisao je pesmu „Vostani Serbije“, a sahranjen je ispred Saborne crkve u Beogradu.",
       "rec": "obradović"
     },
     {
@@ -720,6 +732,11 @@
         "1914."
       ],
       "zanimljivost": "Desetak dana pre toga, 27. marta, Beograđani su demonstrirali uz poklič „Bolje rat nego pakt, bolje grob nego rob“. U napadu je izgorela i Narodna biblioteka Srbije sa neprocenjivim srednjovekovnim rukopisima.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/bombardovanje-1941.jpg",
+        "opis": "Beograd posle nemačkog bombardovanja, aprila 1941."
+      },
       "rec": "napad"
     },
     {
@@ -751,12 +768,56 @@
         "Zakonopravilo",
         "Žitije Svetog Simeona"
       ],
-      "zanimljivost": "Miroslavljevo jevanđelje nastalo je oko 1180. i ukrašeno je sa preko 300 minijatura u boji i zlatu. Nalazi se na UNESCO listi „Pamćenje sveta“. Čuva se u Narodnom muzeju u Beogradu.",
+      "zanimljivost": "Miroslavljevo jevanđelje nastalo je oko 1180. i ukrašeno je sa oko 300 minijatura u boji i zlatu. Nalazi se na UNESCO listi „Pamćenje sveta“. Čuva se u Narodnom muzeju u Beogradu.",
       "rec": "jevanđelje"
     },
     {
       "tezina": 3,
       "pitanje": "Kada je prvi voz prošao prugom od Beograda do Niša?",
+      "mediji": {
+        "vrsta": "mapa",
+        "karta": "srbija-1878",
+        "linije": [
+          {
+            "tacke": [
+              [
+                20.46,
+                44.82
+              ],
+              [
+                20.93,
+                44.37
+              ],
+              [
+                21.25,
+                44.02
+              ],
+              [
+                21.47,
+                43.6
+              ],
+              [
+                21.9,
+                43.32
+              ]
+            ],
+            "boja": "#2d3436",
+            "debljina": 6
+          }
+        ],
+        "tacke": [
+          {
+            "lon": 20.46,
+            "lat": 44.82,
+            "oznaka": "Beograd"
+          },
+          {
+            "lon": 21.9,
+            "lat": 43.32,
+            "oznaka": "Niš"
+          }
+        ]
+      },
       "odgovori": [
         "1884.",
         "1804.",
@@ -892,6 +953,17 @@
     {
       "tezina": 2,
       "pitanje": "Kako se zove operacija iz 1944. godine u kojoj su Srbi kod Pranjana spasli oko 500 savezničkih (uglavnom američkih) pilota?",
+      "mediji": {
+        "vrsta": "mapa",
+        "oblast": "srbija",
+        "tacke": [
+          {
+            "lon": 20.2,
+            "lat": 44,
+            "oznaka": "Pranjani"
+          }
+        ]
+      },
       "odgovori": [
         "Operacija Halijard",
         "Operacija Barbarosa",
@@ -899,6 +971,11 @@
         "Operacija Oluja"
       ],
       "zanimljivost": "Piloti oborenih bombardera skrivali su se po seoskim kućama, a meštani su ručno napravili poljski aerodrom sa koga su ih avioni odvezli u Italiju. To je jedna od najvećih akcija spasavanja pilota u Drugom svetskom ratu.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/halijard.jpg",
+        "opis": "Pranjani, septembar 1944: američki oficiri među meštanima"
+      },
       "rec": "halijard"
     },
     {
@@ -1014,7 +1091,7 @@
         "Kraljica Natalija",
         "Kraljica Draga"
       ],
-      "zanimljivost": "Prema predanju, kneginja Ljubica je jednom uhvatila konja koji je bežao sa bojnog polja i vratila borce u boj. Njen konak u Beogradu je danas muzej. Kneginja Milica je bila supruga kneza Lazara.",
+      "zanimljivost": "Prema predanju, kneginja Ljubica je u boju na Ljubiću 1815. zaustavila ustanike koji su se povlačili i vratila ih u borbu. Njen konak u Beogradu je danas muzej. Kneginja Milica je bila supruga kneza Lazara.",
       "rec": "ljubica"
     },
     {
@@ -1268,6 +1345,11 @@
         "Kotromanići"
       ],
       "zanimljivost": "Knez Lazar i njegov sin despot Stefan bili su iz ove porodice. Posle Stefana, vlast je prešla na Brankoviće, njegove rođake.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/srpska-istorija/slike/despot-stefan.jpg",
+        "opis": "Despot Stefan Lazarević, freska iz Manasije"
+      },
       "rec": "lazarević"
     },
     {
@@ -1398,6 +1480,11 @@
         "Milica"
       ],
       "zanimljivost": "Olivera je otišla u Bajazitov harem da bi zaštitila Srbiju. Sultanija Mara, ćerka Đurđa Brankovića, kasnije se udala za sultana Murata II.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/olivera.jpg",
+        "opis": "Olivera i sultan Bajazit – gravura iz XIX veka"
+      },
       "rec": "olivera"
     },
     {
@@ -1436,6 +1523,11 @@
     {
       "tezina": 2,
       "pitanje": "Koliko je dugo trajala Kosovska bitka?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "/kvizovi/srpska-istorija/slike/kosovski-boj.jpg",
+        "opis": "Kosovski boj, slika Adama Stefanovića"
+      },
       "odgovori": [
         "Samo jedan dan",
         "Sedam dana",
@@ -1448,18 +1540,47 @@
     {
       "tezina": 2,
       "pitanje": "Kako se zvala ustanička vlada u Prvom srpskom ustanku?",
+      "mediji": {
+        "vrsta": "lenta",
+        "od": 1800,
+        "do": 1815,
+        "dogadjaji": [
+          {
+            "g": 1804,
+            "t": "Prvi ustanak"
+          },
+          {
+            "g": 1805,
+            "t": "?",
+            "ist": true
+          },
+          {
+            "g": 1808,
+            "t": "Velika škola"
+          },
+          {
+            "g": 1813,
+            "t": "Slom ustanka"
+          }
+        ]
+      },
       "odgovori": [
         "Praviteljstvujušči sovjet",
         "Narodna skupština",
         "Senat",
         "Državni savet"
       ],
-      "zanimljivost": "Osnovan je 1805, na predlog Bože Grujovića i Dositeja Obradovića. Bio je preteča današnje srpske vlade.",
+      "zanimljivost": "Osnovan je 1805, na predlog Bože Grujovića i prote Mateje Nenadovića. Bio je preteča današnje srpske vlade.",
       "rec": "sovjet"
     },
     {
       "tezina": 2,
       "pitanje": "Kako je završio Karađorđe 1817. godine?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "/kvizovi/srpska-istorija/slike/karadjordje.jpg",
+        "opis": "Karađorđe"
+      },
       "odgovori": [
         "Ubijen je po naređenju kneza Miloša",
         "Umro je od starosti na svom imanju u Topoli",
@@ -1467,6 +1588,17 @@
         "Otišao je u Rusiju i tamo ostao do kraja života"
       ],
       "zanimljivost": "Ubistvo Karađorđa izazvalo je vekovni sukob dinastija Karađorđević i Obrenović, koje su se smenjivale na vlasti.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "srbija",
+        "tacke": [
+          {
+            "lon": 21,
+            "lat": 44.33,
+            "oznaka": "Radovanjski lug"
+          }
+        ]
+      },
       "rec": "karađorđe"
     },
     {
@@ -1479,6 +1611,11 @@
         "„Srpski glasnik“"
       ],
       "zanimljivost": "Prve srpske novine izlazile su još u Beču 1791, ali „Novine srbske“ su prve u Srbiji. Kasnije su prerasle u „Službeni glasnik“.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/novine-srbske.jpg",
+        "opis": "„Novine srbske“"
+      },
       "rec": "novina"
     },
     {
@@ -1585,7 +1722,7 @@
         "Rodosu",
         "Korčuli"
       ],
-      "zanimljivost": "Na Krfu je postojala i srpska Narodna skupština u izgnanstvu. U krfskom pozorištu i danas postoji spomen-soba posvećena srpskim vojnicima.",
+      "zanimljivost": "Na Krfu je postojala i srpska Narodna skupština u izgnanstvu. Danas na Krfu postoji muzej „Srpska kuća“, posvećen srpskim vojnicima.",
       "rec": "krf"
     },
     {
@@ -1640,6 +1777,23 @@
     {
       "tezina": 2,
       "pitanje": "Koja čuvena pesma iz Prvog svetskog rata je nastala na Krfu i govori o čežnji za domovinom?",
+      "mediji": {
+        "vrsta": "mapa",
+        "oblast": "evropa",
+        "kutija": [
+          17,
+          37,
+          24,
+          42.5
+        ],
+        "tacke": [
+          {
+            "lon": 19.92,
+            "lat": 39.62,
+            "oznaka": "Krf"
+          }
+        ]
+      },
       "odgovori": [
         "„Tamo daleko“",
         "„Marš na Drinu“",
@@ -1647,6 +1801,11 @@
         "„Bože pravde“"
       ],
       "zanimljivost": "„Tamo daleko“ je postala simbol tuge srpskih vojnika za otadžbinom. Peva se i danas, a često se izvodi uz gusle ili harmoniku.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/razred7-istorija/slike/vido.jpg",
+        "opis": "Ostrvo Vido kod Krfa"
+      },
       "rec": "pesma"
     },
     {
@@ -1659,6 +1818,11 @@
         "„Kreće se lađa francuska“"
       ],
       "zanimljivost": "Marš je komponovao Stanislav Binički u čast pobede na Ceru. Film „Marš na Drinu“ snimljen je 1964.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/binicki.jpg",
+        "opis": "Stanislav Binički"
+      },
       "rec": "drina"
     },
     {
@@ -1714,6 +1878,11 @@
     {
       "tezina": 2,
       "pitanje": "Kog datuma je oslobođen Beograd u Drugom svetskom ratu?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/beograd-1944.jpg",
+        "opis": "Borbe za oslobođenje Beograda, oktobar 1944."
+      },
       "odgovori": [
         "20. oktobra 1944.",
         "9. maja 1945.",
@@ -1832,7 +2001,7 @@
     },
     {
       "tezina": 3,
-      "pitanje": "Kako se zvala oblast u Ugarskoj gde su Srbi u 18. i 19. veku imali privilegije i crkvenu samoupravu?",
+      "pitanje": "Kako se danas zove oblast severno od Save i Dunava u kojoj su Srbi u Habzburškoj monarhiji imali privilegije i crkvenu samoupravu?",
       "odgovori": [
         "Vojvodina",
         "Krajina",
@@ -1889,11 +2058,53 @@
         "1945."
       ],
       "zanimljivost": "Sretenjski ustav 1835. je ukinuo feudalizam, pa su seljaci postali slobodni vlasnici zemlje. To je bilo veoma rano u poređenju sa većim delom Evrope.",
+      "medijiOdgovora": {
+        "vrsta": "lenta",
+        "od": 1800,
+        "do": 1840,
+        "dogadjaji": [
+          {
+            "g": 1804,
+            "t": "Prvi ustanak"
+          },
+          {
+            "g": 1815,
+            "t": "Drugi ustanak"
+          },
+          {
+            "g": 1830,
+            "t": "Autonomija"
+          },
+          {
+            "g": 1835,
+            "t": "Ukinut feudalizam",
+            "ist": true
+          }
+        ]
+      },
       "rec": "vlasnica"
     },
     {
       "tezina": 3,
       "pitanje": "Ko je bio vođa Topličkog ustanka 1917, jedinog ustanka u okupiranoj Evropi tokom Prvog svetskog rata?",
+      "mediji": {
+        "vrsta": "mapa",
+        "oblast": "srbija",
+        "tacke": [
+          {
+            "lon": 21.59,
+            "lat": 43.23,
+            "oznaka": "Prokuplje",
+            "znak": "⚔️"
+          },
+          {
+            "lon": 21.27,
+            "lat": 43.14,
+            "oznaka": "Kuršumlija",
+            "znak": "⚔️"
+          }
+        ]
+      },
       "odgovori": [
         "Kosta Vojinović i Kosta Pećanac",
         "Vojvoda Živojin Mišić (komandant)",
@@ -1937,7 +2148,7 @@
     },
     {
       "tezina": 3,
-      "pitanje": "Koja Engleskinja je bila jedina žena-oficir u srpskoj vojsci u Prvom svetskom ratu?",
+      "pitanje": "Koja Engleskinja je u Prvom svetskom ratu kao bolničarka došla u Srbiju, a postala oficir srpske vojske?",
       "mediji": {
         "vrsta": "slika",
         "src": "slike/flora-sends.jpg"
@@ -2041,6 +2252,14 @@
         "2003."
       ],
       "zanimljivost": "Crna Gora je na referendumu u maju 2006. izglasala nezavisnost, pa je Srbija proglašena za pravnog naslednika državne zajednice.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "balkan",
+        "istakni": [
+          "SRB",
+          "MNE"
+        ]
+      },
       "rec": "nezavisnost"
     },
     {
@@ -2203,6 +2422,11 @@
         "„Zona Zamfirova“"
       ],
       "zanimljivost": "Prvi srpski igrani film o vođi Prvog ustanka dugo se smatrao izgubljenim, a pronađen je 2003. u filmskom arhivu u Beču.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/karadjordje-film.jpg",
+        "opis": "Kadar iz filma „Karađorđe“ (1911)"
+      },
       "rec": "film"
     },
     {
@@ -2270,6 +2494,11 @@
     {
       "tezina": 1,
       "pitanje": "Koji je bio pravi posao Karađorđa pre ustanka?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "/kvizovi/srpska-istorija/slike/karadjordje.jpg",
+        "opis": "Karađorđe"
+      },
       "odgovori": [
         "Trgovac svinjama",
         "Pravoslavni sveštenik",
@@ -2393,6 +2622,11 @@
         "Smederevo"
       ],
       "zanimljivost": "Posle oslobođenja Beograda 1806–1807, on je postao sedište ustaničke vlasti. Posle sloma ustanka 1813, Turci su se vratili.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/razred7-istorija/slike/beograd-1800.jpg",
+        "opis": "Beograd sa tvrđavom početkom XIX veka"
+      },
       "rec": "beograd"
     },
     {
@@ -2670,6 +2904,37 @@
       "vrsta": "spoji",
       "tezina": 2,
       "pitanje": "Spoji vladara sa njegovom prestonicom",
+      "mediji": {
+        "vrsta": "mapa",
+        "oblast": "srbija",
+        "tacke": [
+          {
+            "lon": 21.33,
+            "lat": 43.58,
+            "oznaka": "Kruševac"
+          },
+          {
+            "lon": 20.46,
+            "lat": 44.82,
+            "oznaka": "Beograd"
+          },
+          {
+            "lon": 20.93,
+            "lat": 44.66,
+            "oznaka": "Smederevo"
+          },
+          {
+            "lon": 20.68,
+            "lat": 44.25,
+            "oznaka": "Topola"
+          },
+          {
+            "lon": 20.91,
+            "lat": 44.01,
+            "oznaka": "Kragujevac"
+          }
+        ]
+      },
       "parovi": [
         [
           "Knez Lazar",
@@ -2722,6 +2987,33 @@
         ]
       ],
       "zanimljivost": "Između Maričke i Kosovske bitke prošlo je samo 18 godina, a između Kosovske i Cerske – više od pet vekova.",
+      "medijiOdgovora": {
+        "vrsta": "lenta",
+        "od": 1350,
+        "do": 1950,
+        "dogadjaji": [
+          {
+            "g": 1371,
+            "t": "Marička bitka"
+          },
+          {
+            "g": 1389,
+            "t": "Kosovska bitka"
+          },
+          {
+            "g": 1806,
+            "t": "Mišar"
+          },
+          {
+            "g": 1912,
+            "t": "Kumanovo"
+          },
+          {
+            "g": 1914,
+            "t": "Cer"
+          }
+        ]
+      },
       "rec": "bitka"
     },
     {
@@ -2811,6 +3103,26 @@
       ],
       "objasnjenje": "Kosovska bitka je vođena 1389. godine.",
       "zanimljivost": "Cerska bitka (avgust 1914) bila je prva saveznička pobeda u Prvom svetskom ratu.",
+      "medijiOdgovora": {
+        "vrsta": "lenta",
+        "od": 1350,
+        "do": 1950,
+        "dogadjaji": [
+          {
+            "g": 1389,
+            "t": "Kosovska bitka",
+            "ist": true
+          },
+          {
+            "g": 1914,
+            "t": "Cer i Kolubara"
+          },
+          {
+            "g": 1918,
+            "t": "Solunski front"
+          }
+        ]
+      },
       "rec": "pobeda"
     }
   ]

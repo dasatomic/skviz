@@ -707,7 +707,9 @@ function prikaziLentu(k, m) {
   const od = m.od, dok = m.do, W = 1000, P = 70;
   const X = (g) => P + ((g - od) / (dok - od)) * (W - 2 * P);
   const raspon = dok - od;
-  const korak = [1, 2, 5, 10, 20, 25, 50, 100].find((s) => raspon / s <= 10) || 100;
+  const korak = [1, 2, 5, 10, 20, 25, 50, 100, 200, 250, 500, 1000, 2000].find((s) => raspon / s <= (od < 0 ? 4 : 10)) || 5000;
+  // godine pre nove ere: „500. p. n. e.“ (oznaka na osi i podrazumevani natpis događaja)
+  const godina = (g) => (g < 0 ? `${-Math.floor(g)}. p. n. e.` : `${Math.floor(g)}.`);
   const prelomi = (t) => {
     const reci = String(t).split(' '), red = [];
     for (const r of reci) { if (red.length && (red[red.length - 1] + ' ' + r).length <= 14) red[red.length - 1] += ' ' + r; else red.push(r); }
@@ -733,7 +735,7 @@ function prikaziLentu(k, m) {
   }
   for (let g = Math.ceil(od / korak) * korak; g <= dok; g += korak) {
     s += `<line x1="${X(g)}" y1="${Y0 - 8}" x2="${X(g)}" y2="${Y0 + 8}" class="crtica"/>`;
-    if (!ev.some((e) => Math.abs(e.x - X(g)) < 40)) s += `<text x="${X(g)}" y="${Y0 + (dole ? -22 : 40)}" text-anchor="middle" class="god-osa">${g}.</text>`;
+    if (g !== 0 && !ev.some((e) => Math.abs(e.x - X(g)) < 40)) s += `<text x="${X(g)}" y="${Y0 + (dole ? -22 : 40)}" text-anchor="middle" class="god-osa">${godina(g)}</text>`;
   }
   ev.forEach((e, j) => {
     const gor = e.nivo > 0, n = Math.abs(e.nivo);
@@ -741,7 +743,7 @@ function prikaziLentu(k, m) {
     const yStub = gor ? yTekst + 33 * e.redovi.length + 10 : yTekst - 30;
     s += `<g class="dog${e.ist ? ' ist' : ''}" style="animation-delay:${0.2 + j * 0.25}s">`;
     s += `<line x1="${e.x}" y1="${Y0}" x2="${e.tx}" y2="${yStub}" class="stub"/><circle cx="${e.x}" cy="${Y0}" r="11" class="tackaL"/>`;
-    s += `<text x="${e.tx}" y="${yTekst}" text-anchor="middle" class="god">${esc(e.n || Math.floor(e.g) + '.')}</text>`;
+    s += `<text x="${e.tx}" y="${yTekst}" text-anchor="middle" class="god">${esc(e.n || godina(e.g))}</text>`;
     e.redovi.forEach((r, ri) => (s += `<text x="${e.tx}" y="${yTekst + 33 * (ri + 1)}" text-anchor="middle" class="opis${r === '?' ? ' upit' : ''}">${esc(r)}</text>`));
     s += '</g>';
   });

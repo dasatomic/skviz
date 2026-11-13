@@ -8,141 +8,109 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 
 - biologija/doli.jpg – https://en.wikipedia.org/wiki/Dolly_(sheep)
 - opsta-kultura/nobel-medalja.jpg – https://en.wikipedia.org/wiki/Nobel_Prize
-- razred5-biologija/bivol.jpg – https://en.wikipedia.org/wiki/Water_buffalo
-- razred5-biologija/krpelj.jpg – https://en.wikipedia.org/wiki/Ixodes_ricinus
-- razred5-biologija/poskok.jpg – https://en.wikipedia.org/wiki/Vipera_ammodytes
-- razred5-biologija/belka-strelka.jpg – https://en.wikipedia.org/wiki/Belka_and_Strelka
-- razred5-biologija/sekvoja.jpg – https://en.wikipedia.org/wiki/Sequoia_sempervirens
-- razred5-biologija/litops.jpg – https://en.wikipedia.org/wiki/Lithops
-- razred5-biologija/morski-konjic.jpg – https://en.wikipedia.org/wiki/Seahorse
-- razred5-biologija/besmrtna-meduza.jpg – https://en.wikipedia.org/wiki/Turritopsis_dohrnii
-- razred5-biologija/tisa.jpg – https://en.wikipedia.org/wiki/Taxus_baccata
-- razred5-biologija/visibaba.jpg – https://en.wikipedia.org/wiki/Galanthus_nivalis
-- razred5-biologija/roda.jpg – https://en.wikipedia.org/wiki/White_stork
-- razred5-biologija/darvinove-zebe.jpg – https://en.wikipedia.org/wiki/Darwin's_finches
-- razred5-biologija/bigl.png – https://en.wikipedia.org/wiki/HMS_Beagle
-- razred5-biologija/vidra.jpg – https://en.wikipedia.org/wiki/Eurasian_otter
-- razred5-biologija/crni-dazdevnjak.jpg – https://en.wikipedia.org/wiki/Alpine_salamander
-- razred5-biologija/dudov-svilac.jpg – https://en.wikipedia.org/wiki/Bombyx_mori
-- razred5-biologija/pijavica.jpg – https://en.wikipedia.org/wiki/Hirudo_medicinalis
-- razred5-biologija/zemelvajs.jpg – https://en.wikipedia.org/wiki/Ignaz_Semmelweis
-- razred5-biologija/tartuf.jpg – https://en.wikipedia.org/wiki/Truffle
-- razred5-geografija/behajmov-globus.jpg – https://en.wikipedia.org/wiki/Behaim_Globe
-- razred5-geografija/vavilonska-karta.jpg – https://en.wikipedia.org/wiki/Babylonian_Map_of_the_World
-- razred5-geografija/cvijic.jpg – https://en.wikipedia.org/wiki/Jovan_Cviji%C4%87
-- razred5-geografija/farnezeov-atlas.jpg – https://en.wikipedia.org/wiki/Farnese_Atlas
-- razred5-geografija/mlecni-put.jpg – https://en.wikipedia.org/wiki/Milky_Way
-- razred5-geografija/habl.jpg – https://en.wikipedia.org/wiki/Hubble_Space_Telescope
-- razred5-geografija/perseidi.jpg – https://en.wikipedia.org/wiki/Perseids
-- razred5-geografija/halej.jpg – https://en.wikipedia.org/wiki/Halley's_Comet
-- razred5-geografija/hoba.jpg – https://en.wikipedia.org/wiki/Hoba_meteorite
-- razred5-geografija/ceres.jpg – https://en.wikipedia.org/wiki/Ceres_(dwarf_planet)
-- razred5-geografija/andromeda.jpg – https://en.wikipedia.org/wiki/Andromeda_Galaxy
-- razred5-geografija/gagarin.jpg – https://en.wikipedia.org/wiki/Yuri_Gagarin
-- razred5-geografija/pomracenje-sunca.jpg – https://en.wikipedia.org/wiki/Solar_eclipse
-- razred5-geografija/otisak-cizme.jpg – https://commons.wikimedia.org/wiki/File%3AApollo_11_bootprint.jpg
-- razred5-geografija/pomracenje-meseca.jpg – https://en.wikipedia.org/wiki/Lunar_eclipse
-- razred5-geografija/mene.jpg – https://en.wikipedia.org/wiki/Lunar_phase
-- razred5-geografija/vasko-da-gama.jpg – https://en.wikipedia.org/wiki/Vasco_da_Gama
-- razred5-geografija/amundsen-skot.jpg – https://en.wikipedia.org/wiki/Amundsen%E2%80%93Scott_South_Pole_Station
-- razred5-geografija/panamska-prevlaka.png – https://en.wikipedia.org/wiki/Isthmus_of_Panama
-- razred5-geografija/gradja-zemlje.png – https://en.wikipedia.org/wiki/Internal_structure_of_Earth
-- razred5-geografija/kolska.jpg – https://en.wikipedia.org/wiki/Kola_Superdeep_Borehole
-- razred7-istorija/podela-kine.jpg – https://commons.wikimedia.org/wiki/File%3AChina%20imperialism%20cartoon.jpg
-- razred7-istorija/gobino.jpg – https://en.wikipedia.org/wiki/Arthur_de_Gobineau
-- razred7-istorija/viktorija.jpg – https://en.wikipedia.org/wiki/Queen_Victoria
-- razred7-istorija/havaji.jpg – https://en.wikipedia.org/wiki/Newlands_Resolution
-- razred7-istorija/zulu.jpg – https://en.wikipedia.org/wiki/Zulu_people
-- razred7-istorija/leopold-ii.jpg – https://en.wikipedia.org/wiki/Leopold_II_of_Belgium
-- razred7-istorija/vojnici-unije.jpg – https://commons.wikimedia.org/wiki/File%3ASoldiers%20in%20camp%20-%20NARA%20-%20524842.jpg
-- razred7-istorija/vucic.jpg – https://en.wikipedia.org/wiki/Toma_Vu%C4%8Di%C4%87_Peri%C5%A1i%C4%87
-- razred7-istorija/garasanin.jpg – https://en.wikipedia.org/wiki/Ilija_Gara%C5%A1anin
-- razred7-istorija/aleksandar-karadjordjevic.jpg – https://en.wikipedia.org/wiki/Alexander_Kara%C4%91or%C4%91evi%C4%87%2C_Prince_of_Serbia
-- razred7-istorija/sterija.jpg – https://en.wikipedia.org/wiki/Jovan_Sterija_Popovi%C4%87
-- razred7-istorija/sanu.jpg – https://en.wikipedia.org/wiki/Serbian_Academy_of_Sciences_and_Arts
-- razred7-istorija/licej.jpg – https://en.wikipedia.org/wiki/Precursors_to_the_University_of_Belgrade
-- razred7-istorija/hadzic.jpg – https://commons.wikimedia.org/wiki/File%3ANovak%20Radoni%C4%87%20-%20Jovan%20Had%C5%BEi%C4%87%2C%20GMS.png
-- razred7-istorija/mihailo.jpg – https://en.wikipedia.org/wiki/Mihailo_Obrenovi%C4%87%2C_Prince_of_Serbia
-- razred7-istorija/cukur-cesma.jpg – https://en.wikipedia.org/wiki/%C4%8Cukur_Fountain
-- razred7-istorija/narodno-pozoriste.jpg – https://en.wikipedia.org/wiki/National_Theatre_in_Belgrade
-- razred7-istorija/milos-star.jpg – https://commons.wikimedia.org/wiki/File%3A%C4%90ura%20Jak%C5%A1i%C4%87%20-%20Knez%20Milo%C5%A1%20Obrenovi%C4%87%2C%201859%2C%20deo%20kolekcije%20manastira%20Vra%C4%87ev%C5%A1nica.jpg
-- razred7-istorija/spomenik-mihailo.jpg – https://commons.wikimedia.org/wiki/File%3ASpomenik%20knezu%20Mihailu%2C%20Beograd%2001.jpg
-- razred7-istorija/ubistvo-mihaila.jpg – https://commons.wikimedia.org/wiki/File%3AVinzenz%20Katzler%20-%20Assassination%20of%20Michael%20III%20Obrenovic%2C%201868.jpg
-- razred7-istorija/milan.jpg – https://en.wikipedia.org/wiki/Milan_I_of_Serbia
-- razred7-istorija/ristic.jpg – https://en.wikipedia.org/wiki/Jovan_Risti%C4%87
-- razred7-istorija/prevoz-ranjenika.jpg – https://en.wikipedia.org/wiki/Serbian%E2%80%93Ottoman_Wars_(1876%E2%80%931878)
-- razred7-istorija/berlinski-kongres.jpg – https://en.wikipedia.org/wiki/Congress_of_Berlin
-- razred7-istorija/pasic.jpg – https://en.wikipedia.org/wiki/Nikola_Pa%C5%A1i%C4%87
-- razred7-istorija/natalija.jpg – https://en.wikipedia.org/wiki/Natalie_of_Serbia
-- razred7-istorija/aleksandar-obrenovic.jpg – https://en.wikipedia.org/wiki/Alexander_I_of_Serbia
-- razred7-istorija/draga.jpg – https://en.wikipedia.org/wiki/Draga_Ma%C5%A1in
-- razred7-istorija/apis.jpg – https://en.wikipedia.org/wiki/Dragutin_Dimitrijevi%C4%87
-- razred7-istorija/petar-i-karadjordjevic.jpg – https://en.wikipedia.org/wiki/Peter_I_of_Serbia
-- razred7-istorija/aneksija.jpg – https://en.wikipedia.org/wiki/Bosnian_Crisis
-- razred7-istorija/nikolaj-ii.jpg – https://en.wikipedia.org/wiki/Nicholas_II
-- razred7-istorija/cusima.jpg – https://en.wikipedia.org/wiki/Battle_of_Tsushima
-- razred7-istorija/dirizabl.jpg – https://en.wikipedia.org/wiki/Italo-Turkish_War
-- razred7-istorija/drednot.jpg – https://en.wikipedia.org/wiki/HMS_Dreadnought_(1906)
-- razred7-istorija/antanta-plakat.jpg – https://en.wikipedia.org/wiki/Triple_Entente
-- razred7-istorija/kapetan-misino.jpg – https://en.wikipedia.org/wiki/Captain_Mi%C5%A1a_Mansion
-- razred7-istorija/cvijic.jpg – https://en.wikipedia.org/wiki/Jovan_Cviji%C4%87
-- razred7-istorija/nadezda.jpg – https://en.wikipedia.org/wiki/Nade%C5%BEda_Petrovi%C4%87
-- razred7-istorija/rudnik-uglja.jpg – https://en.wikipedia.org/wiki/Coal_mining
-- razred7-istorija/simens.jpg – https://en.wikipedia.org/wiki/Werner_von_Siemens
-- razred8-biologija/pijavica.jpg – https://en.wikipedia.org/wiki/Hirudo_medicinalis
-- razred8-biologija/bigl.png – https://en.wikipedia.org/wiki/HMS_Beagle
-- razred8-biologija/poskok.jpg – https://en.wikipedia.org/wiki/Vipera_ammodytes
-- razred8-istorija/nikolaj.jpg – https://en.wikipedia.org/wiki/Nicholas_II
-- razred8-istorija/pasic.jpg – https://en.wikipedia.org/wiki/Nikola_Pa%C5%A1i%C4%87
+- razred5-istorija/nebra.jpg – https://en.wikipedia.org/wiki/Nebra_sky_disc
+- razred5-istorija/natron.jpg – https://en.wikipedia.org/wiki/Natron
+- razred5-istorija/fenicansko-pismo.png – https://commons.wikimedia.org/wiki/File%3APhoenician%20alphabet.svg
+- razred5-istorija/grcki-alfabet.jpg – https://en.wikipedia.org/wiki/Dipylon_inscription
+- razred5-istorija/probus.jpg – https://en.wikipedia.org/wiki/Probus_(emperor)
+- razred5-istorija/etrurski-sarkofag.jpg – https://en.wikipedia.org/wiki/Sarcophagus_of_the_Spouses
+- razred6-biologija/vezal.jpg – https://en.wikipedia.org/wiki/Andreas_Vesalius
+- razred6-biologija/levenhukov-mikroskop.jpg – https://commons.wikimedia.org/wiki/File%3AR%C3%A9plica%20del%20microscopio%20de%20Leeuwenhoek.jpg
+- razred6-biologija/virhov.jpg – https://en.wikipedia.org/wiki/Rudolf_Virchow
+- razred6-biologija/elektronski-mikroskop.jpg – https://en.wikipedia.org/wiki/Electron_microscope
+- razred6-biologija/kvasac.jpg – https://en.wikipedia.org/wiki/Saccharomyces_cerevisiae
+- razred6-biologija/cijanobakterije.jpg – https://en.wikipedia.org/wiki/Cyanobacteria
+- razred6-biologija/gonijum.jpg – https://en.wikipedia.org/wiki/Gonium
+- razred6-biologija/sundjer.jpg – https://en.wikipedia.org/wiki/Sponge
+- razred6-biologija/irukandzi.jpg – https://en.wikipedia.org/wiki/Irukandji_jellyfish
+- razred6-biologija/muhara.jpg – https://en.wikipedia.org/wiki/Amanita_muscaria
+- razred6-biologija/vrganj.jpg – https://en.wikipedia.org/wiki/Boletus_edulis
+- razred6-biologija/reisi.jpg – https://en.wikipedia.org/wiki/Lingzhi_(mushroom)
+- razred6-biologija/medna-gljiva.jpg – https://en.wikipedia.org/wiki/Armillaria_ostoyae
+- razred6-biologija/garka.jpg – https://en.wikipedia.org/wiki/Corn_smut
+- razred6-biologija/rokfor.jpg – https://en.wikipedia.org/wiki/Roquefort
+- razred6-biologija/monilija.jpg – https://en.wikipedia.org/wiki/Monilinia_fructigena
+- razred6-biologija/vilina-kosica.jpg – https://en.wikipedia.org/wiki/Cuscuta
+- razred6-biologija/amfioksus.jpg – https://en.wikipedia.org/wiki/Lancelet
+- razred6-biologija/skoljka-ming.jpg – https://en.wikipedia.org/wiki/Ming_(clam)
+- razred6-biologija/vodeni-pauk.jpg – https://en.wikipedia.org/wiki/Diving_bell_spider
+- razred6-biologija/skocimis.jpg – https://en.wikipedia.org/wiki/Jerboa
+- razred6-biologija/losos.jpg – https://en.wikipedia.org/wiki/Salmon_run
+- razred6-biologija/mlecika.jpg – https://en.wikipedia.org/wiki/Euphorbia_canariensis
+- razred6-biologija/cuvarkuca.jpg – https://en.wikipedia.org/wiki/Sempervivum_tectorum
+- razred6-biologija/rak-samac.jpg – https://commons.wikimedia.org/wiki/File%3ACangrejo%20ermita%C3%B1o%20(Dardanus%20gemmatus)%20con%20an%C3%A9monas%20(Calliactis%20polypus)%2C%20mar%20Rojo%2C%20Egipto%2C%202023-04-16%2C%20DD%2064.jpg
+- razred6-biologija/riba-pilot.jpg – https://en.wikipedia.org/wiki/Pilot_fish
+- razred6-biologija/nocna-frajla.jpg – https://en.wikipedia.org/wiki/Mirabilis_jalapa
+- razred6-biologija/tekunica.jpg – https://en.wikipedia.org/wiki/European_ground_squirrel
+- razred6-biologija/puh.jpg – https://en.wikipedia.org/wiki/Glis_(genus)
+- razred6-biologija/kukuvija.jpg – https://en.wikipedia.org/wiki/Western_barn_owl
+- razred6-biologija/crna-roda.jpg – https://en.wikipedia.org/wiki/Black_stork
+- razred6-biologija/kecige.jpg – https://en.wikipedia.org/wiki/Sterlet
+- razred6-biologija/apolon.jpg – https://en.wikipedia.org/wiki/Apollo_(butterfly)
+- razred6-biologija/azijska-bubamara.jpg – https://en.wikipedia.org/wiki/Harmonia_axyridis
+- razred8-biologija/tekunica.jpg – https://en.wikipedia.org/wiki/European_ground_squirrel
+- razred8-istorija/peti-oktobar.jpg – https://en.wikipedia.org/wiki/Overthrow_of_Slobodan_Milo%C5%A1evi%C4%87
+- razred8-istorija/djindjic.jpg – https://en.wikipedia.org/wiki/Zoran_%C4%90in%C4%91i%C4%87
+- razred8-istorija/zastava-srbije.png – https://en.wikipedia.org/wiki/Flag_of_Serbia
+- razred8-istorija/valensa.jpg – https://en.wikipedia.org/wiki/Lech_Wa%C5%82%C4%99sa
+- razred8-istorija/banovine.png – https://commons.wikimedia.org/wiki/File%3ABanovine%20Kraljevine%20Jugoslavije%201929%E2%80%931939.svg
+- razred8-istorija/avnoj.jpg – https://commons.wikimedia.org/wiki/File%3ATito%20govori%20delegatima%20AVNOJ-a%2C%20Jajce%201943.jpg
+- razred8-istorija/kameni-cvet.jpg – https://commons.wikimedia.org/wiki/File%3AKZ-Jasenovac-Denkmal-Seitenansicht.JPG
+- razred8-istorija/generalstab.jpg – https://commons.wikimedia.org/wiki/File%3AGeneral%C5%A1tab-1%20Beograd.jpg
+- razred8-istorija/marsalov-plan.jpg – https://commons.wikimedia.org/wiki/File%3AMarshall%20Plan%20poster%20(cropped).JPG
+- razred8-istorija/nirnberg.jpg – https://commons.wikimedia.org/wiki/File%3ADefendants%20in%20the%20dock%20at%20nuremberg%20trials.jpg
+- razred8-istorija/kablovi.png – https://en.wikipedia.org/wiki/Submarine_communications_cable
+- razred8-istorija/sufrazetkinje.png – https://en.wikipedia.org/wiki/Suffragette
+- razred8-istorija/propaganda.jpg – https://en.wikipedia.org/wiki/Propaganda
+- razred8-istorija/kinoteka.jpg – https://en.wikipedia.org/wiki/Yugoslav_Film_Archive
+- razred8-istorija/arhiv-jugoslavije.jpg – https://en.wikipedia.org/wiki/Archives_of_Yugoslavia
+- razred8-istorija/crveni-beli.jpg – https://en.wikipedia.org/wiki/Russian_Civil_War
+- razred8-istorija/novembarska.jpg – https://en.wikipedia.org/wiki/German_revolution_of_1918%E2%80%931919
+- razred8-istorija/vajmar.png – https://en.wikipedia.org/wiki/Weimar_National_Assembly
+- razred8-istorija/petrogradski-sovjet.jpg – https://en.wikipedia.org/wiki/Petrograd_Soviet
+- razred8-istorija/bela-kun.png – https://en.wikipedia.org/wiki/B%C3%A9la_Kun
+- razred8-istorija/glad-1921.jpg – https://en.wikipedia.org/wiki/Russian_famine_of_1921%E2%80%931922
+- razred8-istorija/brest-litovsk.jpg – https://en.wikipedia.org/wiki/Treaty_of_Brest-Litovsk
+- razred8-istorija/liga-naroda.png – https://en.wikipedia.org/wiki/League_of_Nations
+- razred8-istorija/vilson.jpg – https://en.wikipedia.org/wiki/Woodrow_Wilson
+- razred8-istorija/ataturk.jpg – https://en.wikipedia.org/wiki/Mustafa_Kemal_Atat%C3%BCrk
+- razred8-istorija/trijanon.jpg – https://en.wikipedia.org/wiki/Treaty_of_Trianon
+- razred8-istorija/verden-kosturnica.jpg – https://en.wikipedia.org/wiki/Douaumont_Ossuary
+- razred8-istorija/sen-zermen.jpg – https://en.wikipedia.org/wiki/Ch%C3%A2teau_de_Saint-Germain-en-Laye
+- razred8-istorija/velika-depresija.jpg – https://en.wikipedia.org/wiki/Great_Depression
+- razred8-istorija/pevac-dzeza.jpg – https://en.wikipedia.org/wiki/The_Jazz_Singer
+- razred8-istorija/radio.jpg – https://en.wikipedia.org/wiki/Radio_receiver
+- razred8-istorija/flaper.jpg – https://en.wikipedia.org/wiki/Flapper
+- razred8-istorija/mundijal-1930.jpg – https://en.wikipedia.org/wiki/1930_FIFA_World_Cup
+- razred8-istorija/musolini.jpg – https://en.wikipedia.org/wiki/Benito_Mussolini
+- razred8-istorija/hitler.jpg – https://en.wikipedia.org/wiki/Adolf_Hitler
+- razred8-istorija/nirnberski-skup.jpg – https://en.wikipedia.org/wiki/Nuremberg_rallies
+- razred8-istorija/zuta-zvezda.jpg – https://en.wikipedia.org/wiki/Yellow_badge
+- razred8-istorija/gestapo.jpg – https://en.wikipedia.org/wiki/Gestapo
+- razred8-istorija/svastika.png – https://en.wikipedia.org/wiki/Swastika
+- razred8-istorija/rajhstag.jpg – https://en.wikipedia.org/wiki/Reichstag_building
+- razred8-istorija/diana.jpg – https://en.wikipedia.org/wiki/Diana_Budisavljevi%C4%87
+- razred8-istorija/rds1.jpg – https://en.wikipedia.org/wiki/RDS-1
+- razred8-istorija/car-bomba.png – https://en.wikipedia.org/wiki/Tsar_Bomba
+- razred8-istorija/ratovi-zvezda.jpg – https://en.wikipedia.org/wiki/Star_Wars_(film)
+- razred8-istorija/rimski-ugovori.jpg – https://en.wikipedia.org/wiki/Treaty_of_Rome
+- razred8-istorija/14-kongres.jpg – https://en.wikipedia.org/wiki/14th_Congress_of_the_League_of_Communists_of_Yugoslavia
+- razred8-istorija/aeroput.jpg – https://sr.wikipedia.org/wiki/%D0%90%D0%B5%D1%80%D0%BE%D0%BF%D1%83%D1%82
+- razred8-istorija/marko-ristic.jpg – https://sr.wikipedia.org/wiki/%D0%9C%D0%B0%D1%80%D0%BA%D0%BE_%D0%A0%D0%B8%D1%81%D1%82%D0%B8%D1%9B
+- razred8-istorija/maklin.jpg – https://sr.wikipedia.org/wiki/%D0%A4%D0%B8%D1%86%D1%80%D0%BE%D1%98_%D0%9C%D0%B0%D0%BA%D0%BB%D0%B5%D1%98%D0%BD
+- razred8-istorija/riva.jpg – https://sr.wikipedia.org/wiki/%D0%A0%D0%B8%D0%B2%D0%B0_(%D0%BC%D1%83%D0%B7%D0%B8%D1%87%D0%BA%D0%B0_%D0%B3%D1%80%D1%83%D0%BF%D0%B0)
+- razred8-istorija/surogat.jpg – https://sr.wikipedia.org/wiki/Surogat_(film)
+- razred8-istorija/srdjan-aleksic.jpg – https://sr.wikipedia.org/wiki/%D0%A1%D1%80%D1%92%D0%B0%D0%BD_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B8%D1%9B
 - sport-opste/vaterpolo.jpg – https://en.wikipedia.org/wiki/Serbia_men's_national_water_polo_team
 - sport-opste/avgusta.png – https://en.wikipedia.org/wiki/Augusta_National_Golf_Club
-- srpska-istorija/cvijic.jpg – https://en.wikipedia.org/wiki/Jovan_Cviji%C4%87
-- srpska-istorija/petar-prvi.jpg – https://en.wikipedia.org/wiki/Peter_I_of_Serbia
-- srpska-istorija/garasanin.jpg – https://en.wikipedia.org/wiki/Ilija_Gara%C5%A1anin
-- srpska-istorija/knez-mihailo.jpg – https://en.wikipedia.org/wiki/Mihailo_Obrenovi%C4%87%2C_Prince_of_Serbia
-- srpska-istorija/kralj-milan.jpg – https://en.wikipedia.org/wiki/Milan_I_of_Serbia
-- srpska-istorija/berlinski-kongres.jpg – https://en.wikipedia.org/wiki/Congress_of_Berlin
-- srpska-istorija/sanu.jpg – https://en.wikipedia.org/wiki/Serbian_Academy_of_Sciences_and_Arts
-- srpska-istorija/draga.jpg – https://en.wikipedia.org/wiki/Draga_Ma%C5%A1in
-- srpska-istorija/aleksandar-obrenovic.jpg – https://en.wikipedia.org/wiki/Alexander_I_of_Serbia
 - srpska-istorija/matica.jpg – https://en.wikipedia.org/wiki/Matica_srpska
-- srpski-jezik/sterija.jpg – https://en.wikipedia.org/wiki/Jovan_Sterija_Popovi%C4%87
 - srpski-jezik/antic.jpg – https://en.wikipedia.org/wiki/Mika_Anti%C4%87
-- svetska-istorija/gagarin.jpg – https://en.wikipedia.org/wiki/Yuri_Gagarin
-- svetska-istorija/kraljica-viktorija.jpg – https://en.wikipedia.org/wiki/Queen_Victoria
-- svetska-istorija/bigl.jpg – https://en.wikipedia.org/wiki/HMS_Beagle
 - svetska-istorija/drzic.jpg – https://en.wikipedia.org/wiki/Marin_Dr%C5%BEi%C4%87
-- umetnost/nadezda-petrovic.jpg – https://en.wikipedia.org/wiki/Nade%C5%BEda_Petrovi%C4%87
-- umetnost/david.jpg – https://en.wikipedia.org/wiki/David_(Michelangelo)
-- umetnost/lokvanji.jpg – https://en.wikipedia.org/wiki/Water_Lilies_(Monet_series)
-- umetnost/poljubac.jpg – https://en.wikipedia.org/wiki/The_Kiss_(Klimt)
-- umetnost/kelnska-katedrala.jpg – https://en.wikipedia.org/wiki/Cologne_Cathedral
-- umetnost/narodna-skupstina.jpg – https://en.wikipedia.org/wiki/House_of_the_National_Assembly%2C_Belgrade
-- umetnost/palata-albanija.jpg – https://en.wikipedia.org/wiki/Palace_Albanija
-- umetnost/atinska-skola.jpg – https://en.wikipedia.org/wiki/The_School_of_Athens
-- umetnost/mlekarica.jpg – https://en.wikipedia.org/wiki/The_Milkmaid_(Vermeer)
-- umetnost/treci-maj.jpg – https://en.wikipedia.org/wiki/The_Third_of_May_1808
-- umetnost/venera-miloska.jpg – https://en.wikipedia.org/wiki/Venus_de_Milo
-- umetnost/mislilac.jpg – https://en.wikipedia.org/wiki/The_Thinker
-- umetnost/kuca-batljo.jpg – https://en.wikipedia.org/wiki/Casa_Batll%C3%B3
-- umetnost/panteon.jpg – https://en.wikipedia.org/wiki/Pantheon%2C_Rome
-- umetnost/firentinska-katedrala.jpg – https://en.wikipedia.org/wiki/Florence_Cathedral
-- umetnost/grand-zat.jpg – https://en.wikipedia.org/wiki/A_Sunday_Afternoon_on_the_Island_of_La_Grande_Jatte
-- umetnost/vilendorf.jpg – https://en.wikipedia.org/wiki/Venus_of_Willendorf
-- umetnost/veliki-talas.jpg – https://en.wikipedia.org/wiki/The_Great_Wave_off_Kanagawa
-- umetnost/americka-gotika.jpg – https://en.wikipedia.org/wiki/American_Gothic
-- umetnost/laokon.jpg – https://en.wikipedia.org/wiki/Laoco%C3%B6n_and_His_Sons
-- umetnost/lovci-u-snegu.jpg – https://en.wikipedia.org/wiki/The_Hunters_in_the_Snow
-- umetnost/vavilonska-kula.jpg – https://en.wikipedia.org/wiki/The_Tower_of_Babel_(Bruegel)
-- umetnost/vrt-uzivanja.jpg – https://en.wikipedia.org/wiki/The_Garden_of_Earthly_Delights
-- umetnost/las-meninas.jpg – https://en.wikipedia.org/wiki/Las_Meninas
-- umetnost/splav-meduze.jpg – https://en.wikipedia.org/wiki/The_Raft_of_the_Medusa
 - umetnost/sloboda-predvodi.jpg – https://en.wikipedia.org/wiki/Liberty_Leading_the_People
 - umetnost/dorucak-na-travi.jpg – https://en.wikipedia.org/wiki/Le_D%C3%A9jeuner_sur_l'herbe
 - umetnost/bal-mulen.jpg – https://en.wikipedia.org/wiki/Bal_du_moulin_de_la_Galette
 - umetnost/terasa-kafea.jpg – https://en.wikipedia.org/wiki/Caf%C3%A9_Terrace_at_Night
 - umetnost/sikstinska-madona.jpg – https://en.wikipedia.org/wiki/Sistine_Madonna
-- umetnost/kapetan-misino.jpg – https://en.wikipedia.org/wiki/Captain_Mi%C5%A1a_Mansion
 - umetnost/alhambra.jpg – https://en.wikipedia.org/wiki/Alhambra
 - umetnost/angkor-vat.jpg – https://en.wikipedia.org/wiki/Angkor_Wat
 - umetnost/nojsvanstajn.jpg – https://en.wikipedia.org/wiki/Neuschwanstein_Castle
@@ -154,6 +122,30 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 - umetnost/nike.jpg – https://en.wikipedia.org/wiki/Winged_Victory_of_Samothrace
 - umetnost/mondrijan.jpg – https://commons.wikimedia.org/wiki/File%3APiet%20Mondriaan%2C%201930%20-%20Mondrian%20Composition%20II%20in%20Red%2C%20Blue%2C%20and%20Yellow.jpg
 - umetnost/fallingwater.jpg – https://en.wikipedia.org/wiki/Fallingwater
+- umetnost/pijeta.jpg – https://en.wikipedia.org/wiki/Piet%C3%A0_(Michelangelo)
+- umetnost/vg-autoportret.jpg – https://en.wikipedia.org/wiki/Vincent_van_Gogh
+- umetnost/vg-uvo.jpg – https://en.wikipedia.org/wiki/Self-Portrait_with_Bandaged_Ear
+- umetnost/santa-marija.jpg – https://en.wikipedia.org/wiki/Santa_Maria_delle_Grazie%2C_Milan
+- umetnost/sikstina.jpg – https://en.wikipedia.org/wiki/Sistine_Chapel_ceiling
+- umetnost/rijksmuzej.jpg – https://en.wikipedia.org/wiki/Rijksmuseum
+- umetnost/mone.jpg – https://en.wikipedia.org/wiki/Claude_Monet
+- umetnost/predic.jpg – https://en.wikipedia.org/wiki/Uro%C5%A1_Predi%C4%87
+- umetnost/mikelandjelo.jpg – https://en.wikipedia.org/wiki/Michelangelo
+- umetnost/mala-balerina.jpg – https://en.wikipedia.org/wiki/Little_Dancer_of_Fourteen_Years
+- umetnost/klimt.jpg – https://en.wikipedia.org/wiki/Gustav_Klimt
+- umetnost/mondrijan-foto.jpg – https://en.wikipedia.org/wiki/Piet_Mondrian
+- umetnost/rafael.jpg – https://en.wikipedia.org/wiki/Raphael
+- umetnost/goja.jpg – https://en.wikipedia.org/wiki/Francisco_Goya
+- umetnost/hokusai.jpg – https://en.wikipedia.org/wiki/Hokusai
+- umetnost/bazilika-petar.jpg – https://en.wikipedia.org/wiki/St._Peter's_Basilica
+- umetnost/milena.jpg – https://en.wikipedia.org/wiki/Milena_Pavlovi%C4%87-Barili
+- umetnost/pejzaz.jpg – https://en.wikipedia.org/wiki/The_Hay_Wain
+- umetnost/direr.jpg – https://en.wikipedia.org/wiki/Self-Portrait_(D%C3%BCrer%2C_Munich)
+- umetnost/mrtva-priroda.jpg – https://en.wikipedia.org/wiki/Still_life
+- umetnost/zec.jpg – https://en.wikipedia.org/wiki/Young_Hare
+- umetnost/leonardo.jpg – https://en.wikipedia.org/wiki/Portrait_of_a_Man_in_Red_Chalk
+- umetnost/dali.jpg – https://en.wikipedia.org/wiki/Salvador_Dal%C3%AD
+- umetnost/matis-sesir.jpg – https://en.wikipedia.org/wiki/Woman_with_a_Hat
 - umetnost/vorhol-merilin.jpg – https://en.wikipedia.org/wiki/Marilyn_Diptych
 - umetnost/polok-ritam.jpg – https://en.wikipedia.org/wiki/Autumn_Rhythm_(Number_30)
 - umetnost/polok-plavi.jpg – https://en.wikipedia.org/wiki/Blue_Poles
@@ -540,11 +532,11 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | opsta-kultura | andjeoski.jpg | Rich Childs | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Angel_Falls) |
 | opsta-kultura | tesla.jpg | Napoleon Sarony | Public domain | [izvor](https://en.wikipedia.org/wiki/Nikola_Tesla) |
 | opsta-kultura | gejts.jpg | Bogdan Hoyaux / European Union | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Bill_Gates) |
-| opsta-kultura | berners-li.jpg | Summit | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Tim_Berners-Lee) |
+| razred8-istorija | berners-li.jpg | Summit | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Tim_Berners-Lee) |
 | opsta-kultura | big-ben.jpg | Christian David | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Big_Ben) |
 | opsta-kultura | paelja.jpg | Jan Harenburg | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Paella) |
 | opsta-kultura | kakao.jpg | Photo by Medicaster. | Public domain | [izvor](https://en.wikipedia.org/wiki/Cocoa_bean) |
-| opsta-kultura | caj-lun.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Cai_Lun) |
+| razred5-istorija | caj-lun.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Cai_Lun) |
 | opsta-kultura | plovdiv.jpg | MrPanyGoff | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Roman_theatre_of_Philippopolis) |
 | opsta-kultura | dekart.jpg | After Frans Hals | Public domain | [izvor](https://en.wikipedia.org/wiki/Ren%C3%A9_Descartes) |
 | opsta-kultura | zastava-sad.png | Uploaded by Dbenbenn; edited by users such as Zscout370, Jacobolus, Indolences,  | Public domain | [izvor](https://commons.wikimedia.org/wiki/File%3AFlag%20of%20the%20United%20States.svg) |
@@ -552,7 +544,7 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | opsta-kultura | kjoto.jpg | Nacaru | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Kinkaku-ji) |
 | opsta-kultura | rozeta.jpg | Hans Hillewaert | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Rosetta_Stone) |
 | opsta-kultura | olimp.jpg | kallerna | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Mount_Olympus) |
-| opsta-kultura | posejdon.jpg | —DerHexer (Talk) | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Poseidon) |
+| razred5-istorija | posejdon.jpg | —DerHexer (Talk) | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Poseidon) |
 | opsta-kultura | herakle.jpg | Glycon of Athens (copy), Lysippos (original type) | CC BY 2.5 | [izvor](https://en.wikipedia.org/wiki/Heracles) |
 | opsta-kultura | ikar.jpg | After Pieter Brueghel the Elder | Public domain | [izvor](https://en.wikipedia.org/wiki/Landscape_with_the_Fall_of_Icarus) |
 | opsta-kultura | knosos.png | Eric Gaba (Sting) | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Knossos) |
@@ -616,53 +608,53 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | razred5-biologija | velebilje.jpg | Joan Simon from Barcelona, España | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Atropa_bella-donna) |
 | razred5-biologija | bukovaca.jpg | voir ci-dessous / see below | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Pleurotus_ostreatus) |
 | razred5-biologija | zova.jpg | Willow | CC BY 2.5 | [izvor](https://en.wikipedia.org/wiki/Sambucus_nigra) |
-| razred5-biologija | bivol.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Water_buffalo) |
-| razred5-biologija | krpelj.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Ixodes_ricinus) |
-| razred5-biologija | poskok.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Vipera_ammodytes) |
-| razred5-biologija | belka-strelka.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Belka_and_Strelka) |
-| razred5-biologija | sekvoja.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Sequoia_sempervirens) |
+| razred5-biologija | bivol.jpg | Alexander Vasenin | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Water_buffalo) |
+| razred5-biologija | krpelj.jpg | W.alter | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Ixodes_ricinus) |
+| razred5-biologija | poskok.jpg | Holger Krisp | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Vipera_ammodytes) |
+| razred5-biologija | belka-strelka.jpg | Teknoraver | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Belka_and_Strelka) |
+| razred5-biologija | sekvoja.jpg | Acroterion | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Sequoia_sempervirens) |
 | razred5-biologija | plavi-kit.jpg | NOAA Photo Library | Public domain | [izvor](https://en.wikipedia.org/wiki/Blue_whale) |
-| razred5-biologija | litops.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Lithops) |
+| razred5-biologija | litops.jpg | yellowcloud | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Lithops) |
 | razred5-biologija | gepard.jpg | AfricanConservation | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Cheetah) |
 | razred5-biologija | sivi-soko.jpg | Mykola Swarnyk | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Peregrine_falcon) |
 | razred5-biologija | hidra.jpg | Flatters & Co. (photograph) | Public domain | [izvor](https://en.wikipedia.org/wiki/Hydra_(genus)) |
-| razred5-biologija | morski-konjic.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Seahorse) |
-| razred5-biologija | besmrtna-meduza.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Turritopsis_dohrnii) |
-| razred5-biologija | tisa.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Taxus_baccata) |
+| razred5-biologija | morski-konjic.jpg | Hans Hillewaert | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Seahorse) |
+| razred5-biologija | besmrtna-meduza.jpg | Bachware | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Turritopsis_dohrnii) |
+| razred5-biologija | tisa.jpg | Didier Descouens | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Taxus_baccata) |
 | razred5-biologija | grenlandska-ajkula.jpg | NOAA Okeanos Explorer Program | Public domain | [izvor](https://en.wikipedia.org/wiki/Greenland_shark) |
 | razred5-biologija | trst.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Trieste_(bathyscaphe)) |
-| razred5-biologija | visibaba.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Galanthus_nivalis) |
-| razred5-biologija | roda.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/White_stork) |
-| razred5-biologija | darvinove-zebe.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Darwin's_finches) |
-| razred5-biologija | bigl.png | ? | ? | [izvor](https://en.wikipedia.org/wiki/HMS_Beagle) |
-| razred5-biologija | vidra.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Eurasian_otter) |
-| razred5-biologija | crni-dazdevnjak.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Alpine_salamander) |
-| razred5-biologija | dudov-svilac.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Bombyx_mori) |
-| razred5-biologija | pijavica.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Hirudo_medicinalis) |
-| razred5-biologija | zemelvajs.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Ignaz_Semmelweis) |
-| razred5-biologija | tartuf.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Truffle) |
-| razred5-geografija | behajmov-globus.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Behaim_Globe) |
-| razred5-geografija | vavilonska-karta.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Babylonian_Map_of_the_World) |
-| razred5-geografija | cvijic.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Jovan_Cviji%C4%87) |
-| razred5-geografija | farnezeov-atlas.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Farnese_Atlas) |
-| razred5-geografija | mlecni-put.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Milky_Way) |
-| razred5-geografija | habl.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Hubble_Space_Telescope) |
-| razred5-geografija | perseidi.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Perseids) |
-| razred5-geografija | halej.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Halley's_Comet) |
-| razred5-geografija | hoba.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Hoba_meteorite) |
-| razred5-geografija | ceres.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Ceres_(dwarf_planet)) |
-| razred5-geografija | andromeda.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Andromeda_Galaxy) |
-| razred5-geografija | gagarin.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Yuri_Gagarin) |
-| razred5-geografija | pomracenje-sunca.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Solar_eclipse) |
-| razred5-geografija | otisak-cizme.jpg | ? | ? | [izvor](https://commons.wikimedia.org/wiki/File%3AApollo_11_bootprint.jpg) |
-| razred5-geografija | pomracenje-meseca.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Lunar_eclipse) |
-| razred5-geografija | mene.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Lunar_phase) |
-| razred5-geografija | vasko-da-gama.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Vasco_da_Gama) |
-| razred5-geografija | amundsen-skot.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Amundsen%E2%80%93Scott_South_Pole_Station) |
-| razred5-geografija | panamska-prevlaka.png | ? | ? | [izvor](https://en.wikipedia.org/wiki/Isthmus_of_Panama) |
+| razred5-biologija | visibaba.jpg | — | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Galanthus_nivalis) |
+| razred5-biologija | roda.jpg | Charles J. Sharp | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/White_stork) |
+| razred5-biologija | darvinove-zebe.jpg | John Gould (14.Sep.1804 - 3.Feb.1881) | Public domain | [izvor](https://en.wikipedia.org/wiki/Darwin's_finches) |
+| razred5-biologija | bigl.png | R. T. Pritchett | Public domain | [izvor](https://en.wikipedia.org/wiki/HMS_Beagle) |
+| razred5-biologija | vidra.jpg | Bernard Landgraf | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Eurasian_otter) |
+| razred5-biologija | crni-dazdevnjak.jpg | Ekki3 | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Alpine_salamander) |
+| razred5-biologija | dudov-svilac.jpg | Oakenking at en.wikipedia | CC BY-SA 2.5 | [izvor](https://en.wikipedia.org/wiki/Bombyx_mori) |
+| razred5-biologija | pijavica.jpg | (c) Георгий Виноградов (Georgy Vinogradov), some rights reserved (CC BY) | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Hirudo_medicinalis) |
+| razred5-biologija | zemelvajs.jpg | József Borsos / Albert Doctor | Public domain | [izvor](https://en.wikipedia.org/wiki/Ignaz_Semmelweis) |
+| razred5-biologija | tartuf.jpg | moi-même | Public domain | [izvor](https://en.wikipedia.org/wiki/Truffle) |
+| razred5-geografija | behajmov-globus.jpg | Martin Behaim / Georg Glockendon | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Behaim_Globe) |
+| razred5-geografija | vavilonska-karta.jpg | Osama Shukir Muhammed Amin FRCP(Glasg) | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Babylonian_Map_of_the_World) |
+| razred5-geografija | cvijic.jpg | Milan Jovanović | Public domain | [izvor](https://en.wikipedia.org/wiki/Jovan_Cviji%C4%87) |
+| razred5-geografija | farnezeov-atlas.jpg | Gabriel Seah | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Farnese_Atlas) |
+| razred5-geografija | mlecni-put.jpg | ESO/Y. Beletsky | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Milky_Way) |
+| razred5-geografija | habl.jpg | NASA | Public domain | [izvor](https://en.wikipedia.org/wiki/Hubble_Space_Telescope) |
+| razred5-geografija | perseidi.jpg | Jim Vajda from Oxford, Ohio, USA | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Perseids) |
+| razred5-geografija | halej.jpg | NASA/W. Liller | Public domain | [izvor](https://en.wikipedia.org/wiki/Halley's_Comet) |
+| razred5-geografija | hoba.jpg | Sergio Conti from Montevecchia (LC), Italia | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Hoba_meteorite) |
+| razred5-geografija | ceres.jpg | Justin Cowart | Public domain | [izvor](https://en.wikipedia.org/wiki/Ceres_(dwarf_planet)) |
+| razred5-geografija | andromeda.jpg | Lviatour | CC BY-SA 2.5 | [izvor](https://en.wikipedia.org/wiki/Andromeda_Galaxy) |
+| razred5-geografija | gagarin.jpg | Александр Моклецов / СовИнформБюро | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Yuri_Gagarin) |
+| razred5-geografija | pomracenje-sunca.jpg | Luc Viatour | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Solar_eclipse) |
+| razred5-geografija | otisak-cizme.jpg | NASA / Buzz Aldrin | Public domain | [izvor](https://commons.wikimedia.org/wiki/File%3AApollo_11_bootprint.jpg) |
+| razred5-geografija | pomracenje-meseca.jpg | Robert Jay GaBany | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Lunar_eclipse) |
+| razred5-geografija | mene.jpg | Andonee | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Lunar_phase) |
+| razred5-geografija | vasko-da-gama.jpg | Sailko | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Vasco_da_Gama) |
+| razred5-geografija | amundsen-skot.jpg | Christopher Michel | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Amundsen%E2%80%93Scott_South_Pole_Station) |
+| razred5-geografija | panamska-prevlaka.png | — | Public domain | [izvor](https://en.wikipedia.org/wiki/Isthmus_of_Panama) |
 | razred5-geografija | fukoovo-klatno.jpg | Rémih | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Foucault_pendulum) |
-| razred5-geografija | gradja-zemlje.png | ? | ? | [izvor](https://en.wikipedia.org/wiki/Internal_structure_of_Earth) |
-| razred5-geografija | kolska.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Kola_Superdeep_Borehole) |
+| razred5-geografija | gradja-zemlje.png | CharlesC | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Internal_structure_of_Earth) |
+| razred5-geografija | kolska.jpg | Andre Belozeroff | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Kola_Superdeep_Borehole) |
 | razred5-geografija | geotermalna.jpg | Gretar Ívarsson – Edited by Fir0002 | Public domain | [izvor](https://en.wikipedia.org/wiki/Nesjavellir_Geothermal_Power_Station) |
 | razred5-geografija | vrnjacka-banja.jpg | Katarina Z | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Vrnja%C4%8Dka_Banja) |
 | razred5-geografija | pangea.png | Scotese, Christopher R.; Vérard, Christian; Burgener, Landon; Elling, Reece P.;  | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Pangaea) |
@@ -815,42 +807,148 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | razred5-istorija | atila.jpg | Eugène Delacroix | Public domain | [izvor](https://commons.wikimedia.org/wiki/File%3AEugene%20Ferdinand%20Victor%20Delacroix%20Attila%20fragment%20(cropped).jpg) |
 | razred5-istorija | senat.jpg | Cesare Maccari | Public domain | [izvor](https://commons.wikimedia.org/wiki/File%3ACicero%20Denounces%20Catiline%20in%20the%20Roman%20Senate%20by%20Cesare%20Maccari.png) |
 | razred5-istorija | hadrijanov-zid.jpg | Benjamin Smith | CC BY-SA 4.0 | [izvor](https://commons.wikimedia.org/wiki/File%3AHadrian's%20Wall%20on%20Housesteads%20Crags%20-%2006.jpg) |
-| razred6-biologija | vezal.jpg | Jan van Calcar | Public domain | [izvor](https://en.wikipedia.org/wiki/Andreas_Vesalius) |
+| razred5-istorija | arhiv-srbije.jpg | Gmihail at Serbian Wikipedia | CC BY-SA 3.0 rs | [izvor](https://en.wikipedia.org/wiki/State_Archives_of_Serbia) |
+| razred5-istorija | tukidid.jpg | user:shakko | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Thucydides) |
+| razred5-istorija | klio.jpg | Sailko | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Clio) |
+| razred5-istorija | grgur13.jpg | Attributed to Bartolomeo Passarotti | Public domain | [izvor](https://en.wikipedia.org/wiki/Pope_Gregory_XIII) |
+| razred5-istorija | egipatski-kalendar.jpg | Ad Meskens | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Ancient_Egyptian_calendar) |
+| razred5-istorija | narodna-biblioteka.jpg | Nikola Smolenski | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/National_Library_of_Serbia) |
+| razred5-istorija | anastas-jovanovic.jpg | Anastas Jovanović | Public domain | [izvor](https://en.wikipedia.org/wiki/Anastas_Jovanovi%C4%87) |
+| razred5-istorija | hronika.jpg | — | Public domain | [izvor](https://en.wikipedia.org/wiki/Radziwi%C5%82%C5%82_Chronicle) |
+| razred5-istorija | vatra.jpg | Charles Robert Knight | Public domain | [izvor](https://en.wikipedia.org/wiki/Control_of_fire_by_early_humans) |
+| razred5-istorija | altamira.jpg | Museo de Altamira y D. Rodríguez | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Cave_of_Altamira) |
+| razred5-istorija | sakupljaci.jpg | Pierre Barrère | Public domain | [izvor](https://en.wikipedia.org/wiki/Hunter-gatherer) |
+| razred5-istorija | kremen.jpg | Otis Crandell | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Flint) |
+| razred5-istorija | bakar.jpg | Native_Copper_Macro_Digon3.jpg: “Jonathan Zander (Digon3)" derivative work: Mate | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Copper) |
+| razred5-istorija | catalhujuk.jpg | Murat Özsoy 1958 | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/%C3%87atalh%C3%B6y%C3%BCk) |
+| razred5-istorija | starcevo-posuda.png | WikiEditor2004 | CC0 | [izvor](https://en.wikipedia.org/wiki/Star%C4%8Devo_culture) |
+| razred5-istorija | bronza.png | User:Want | CC BY-SA 3.0 cz | [izvor](https://en.wikipedia.org/wiki/Bronze_Age) |
+| razred5-istorija | gvozdeno-doba.jpg | — | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Iron_Age) |
+| razred5-istorija | emer.jpg | — | Public domain | [izvor](https://en.wikipedia.org/wiki/Emmer) |
+| razred5-istorija | kuca-neolit.jpg | Dr. John F. Burka | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Neolithic_architecture) |
+| razred5-istorija | vincanski-znaci.png | Nikola Smolenski | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Vin%C4%8Da_symbols) |
+| razred5-istorija | keltski-novac.jpg | PHGCOM | Public domain | [izvor](https://en.wikipedia.org/wiki/Celtic_coinage) |
+| razred5-istorija | jecam.jpg | Cliff from Arlington, Virginia, USA | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Barley) |
+| razred5-istorija | persepolis.jpg | Laurens R. Krol | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Persepolis) |
+| razred5-istorija | asurbanipal.jpg | Gary Todd | CC0 | [izvor](https://en.wikipedia.org/wiki/Library_of_Ashurbanipal) |
+| razred5-istorija | sirijus.png | Canis_major_constellation_map.png: Torsten Bronger. derivative work: Kxx (talk) | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Sirius) |
+| razred5-istorija | rajndov-papirus.jpg | unknown (c. 2000 B.C) | Public domain | [izvor](https://en.wikipedia.org/wiki/Rhind_Mathematical_Papyrus) |
+| razred5-istorija | plimpton.jpg | photo author unknown | Public domain | [izvor](https://en.wikipedia.org/wiki/Plimpton_322) |
+| razred5-istorija | mumija.jpg | Alyssa Bivins | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Mummy) |
+| razred5-istorija | ebers.jpg | PEbers_c41.jpg: Einsamer Schütze derivative work: Photohound (talk) | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Ebers_Papyrus) |
+| razred5-istorija | kanopske-posude.jpg | Daderot | Public domain | [izvor](https://en.wikipedia.org/wiki/Canopic_jar) |
+| razred5-istorija | anubis.png | Jeff Dahl | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Anubis) |
+| razred5-istorija | egipatski-seljaci.jpg | Painter of the burial chamber of Sennedjem | Public domain | [izvor](https://en.wikipedia.org/wiki/Ancient_Egyptian_agriculture) |
+| razred5-istorija | menora.jpg | ariely | Public domain | [izvor](https://en.wikipedia.org/wiki/Temple_menorah) |
+| razred5-istorija | karnak.jpg | René Hourdry | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Karnak) |
+| razred5-istorija | robovi-rim.jpg | Dennis G. Jarvis | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Slavery_in_ancient_Rome) |
+| razred5-istorija | kiklopski-zid.jpg | Berthold Werner | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Cyclopean_masonry) |
+| razred5-istorija | linear-a.png | Evans, Arthur, Sir (1851-1941) | Public domain | [izvor](https://en.wikipedia.org/wiki/Linear_A) |
+| razred5-istorija | dedal.jpg | Dosseman | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Daedalus) |
+| razred5-istorija | odisej.jpg | Jastrow | Public domain | [izvor](https://en.wikipedia.org/wiki/Odysseus) |
+| razred5-istorija | pisistrat.jpg | Statens Museum for Kunst via Europeana website | CC0 | [izvor](https://en.wikipedia.org/wiki/Pisistratus) |
+| razred5-istorija | sparta.png | T8612 | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Sparta) |
+| razred5-istorija | pniks.jpg | Tomisti | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Pnyx) |
+| razred5-istorija | klisten.jpg | Unknown authorUnknown author | Attribution | [izvor](https://en.wikipedia.org/wiki/Cleisthenes) |
+| razred5-istorija | spartanska-mladez.jpg | Edgar Degas | Public domain | [izvor](https://en.wikipedia.org/wiki/Young_Spartans_Exercising) |
+| razred5-istorija | solon.jpg | Sailko | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Solon) |
+| razred5-istorija | lisandar.jpg | 19th century lithograph, unknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Lysander) |
+| razred5-istorija | kuga-atina.jpg | Michiel Sweerts | Public domain | [izvor](https://en.wikipedia.org/wiki/Plague_of_Athens) |
+| razred5-istorija | kserks.jpg | Darafsh | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Xerxes_I) |
+| razred5-istorija | temistokle.png | Evald Hansen | Public domain | [izvor](https://en.wikipedia.org/wiki/Themistocles) |
+| razred5-istorija | filip2.jpg | Richard Mortel from Riyadh, Saudi Arabia | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Philip_II_of_Macedon) |
+| razred5-istorija | gordijev-cvor.jpg | Livio Retti (* 30. November 1692 in Laino; † 2. Januar 1751 in Ludwigsburg), | Public domain | [izvor](https://en.wikipedia.org/wiki/Gordian_Knot) |
+| razred5-istorija | hermes.jpg | — | Public domain | [izvor](https://en.wikipedia.org/wiki/Hermes) |
+| razred5-istorija | hefest.jpg | Foundry Painter (name vase) | Public domain | [izvor](https://en.wikipedia.org/wiki/Hephaestus) |
+| razred5-istorija | apolon.jpg | Livioandronico2013 | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Apollo_Belvedere) |
+| razred5-istorija | had.jpg | Template:Peintre Codrus | CC BY 2.5 | [izvor](https://en.wikipedia.org/wiki/Hades) |
+| razred5-istorija | euklid.jpg | Jusepe de Ribera (Spanish / Italian, 1591 - 1652) (1591 - 1652) – artist (Spanis | Public domain | [izvor](https://en.wikipedia.org/wiki/Euclid) |
+| razred5-istorija | maske.jpg | Photo: Andreas Praefcke | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Mask) |
+| razred5-istorija | sofokle.jpg | user:shakko | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Sophocles) |
+| razred5-istorija | aristarh.png | Claudio Camozzi | Public domain | [izvor](https://en.wikipedia.org/wiki/Aristarchus_of_Samos) |
+| razred5-istorija | eratosten.png | — | Public domain | [izvor](https://en.wikipedia.org/wiki/Eratosthenes) |
+| razred5-istorija | koine.jpg | — | Public domain | [izvor](https://en.wikipedia.org/wiki/Codex_Sinaiticus) |
+| razred5-istorija | ptolomej.jpg | Justus van Gent / Pedro Berruguete | Public domain | [izvor](https://en.wikipedia.org/wiki/Ptolemy) |
+| razred5-istorija | aleksandrijska-biblioteka.jpg | O. Von Corven | Public domain | [izvor](https://en.wikipedia.org/wiki/Library_of_Alexandria) |
+| razred5-istorija | svitak.jpg | University of Arizona (C) copyright © 2006. Arizona Board of Regents. Uploaded b | Public domain | [izvor](https://en.wikipedia.org/wiki/Scroll) |
+| razred5-istorija | hiparh.jpg | William Henry Smyth | Public domain | [izvor](https://en.wikipedia.org/wiki/Hipparchus) |
+| razred5-istorija | eneja.jpg | Unknown author. | Public domain | [izvor](https://en.wikipedia.org/wiki/Aeneas) |
+| razred5-istorija | tarkvinije.jpg | Published by Guillaume Rouille (1518?-1589) | Public domain | [izvor](https://en.wikipedia.org/wiki/Lucius_Tarquinius_Superbus) |
+| razred5-istorija | etrurci.png | NormanEinstein | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Etruscan_civilization) |
+| razred5-istorija | latinski.jpg | Wknight94 | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Latin) |
+| razred5-istorija | spqr.png | Ssolbergj | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/SPQR) |
+| razred5-istorija | sedam-brezuljaka.png | Renata3 | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Seven_hills_of_Rome) |
+| razred5-istorija | legionar.jpg | Photo taken by user Caliga10's wife. | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Legionary) |
+| razred5-istorija | spartak.jpg | Carole Raddato from FRANKFURT, Germany | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Spartacus) |
+| razred5-istorija | toga.jpg | Marie-Lan Nguyen | Public domain | [izvor](https://en.wikipedia.org/wiki/Toga) |
+| razred5-istorija | legija.png | User:Andrein | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Roman_legion) |
+| razred5-istorija | kaligula.jpg | Sergey Sosnovskiy from Saint-Petersburg, Russia | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Caligula) |
+| razred5-istorija | pretorijanci.jpg | Sunappu-shashin | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Praetorian_Guard) |
+| razred5-istorija | rimsko-carstvo.png | Tataryn | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Roman_Empire) |
+| razred5-istorija | jupiter.jpg | Jean-Pol GRANDMONT | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Jupiter_(god)) |
+| razred5-istorija | mars.jpg | Unknown artistUnknown artist | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Mars_(mythology)) |
+| razred5-istorija | vergilije.jpg | Boyd Dwyer | Public domain | [izvor](https://en.wikipedia.org/wiki/Virgil) |
+| razred5-istorija | justinijanov-zakonik.jpg | IusRomanum | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Corpus_Juris_Civilis) |
+| razred5-istorija | rimski-natpis.jpg | Jeremy Keith from Brighton & Hove, United Kingdom | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Roman_square_capitals) |
+| razred5-istorija | ovidije.jpg | Lucasaw | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Ovid) |
+| razred5-istorija | vestalke.jpg | Rabax63 | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Vestal_Virgin) |
+| razred5-istorija | neptun.jpg | Asram at French Wikipedia | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Neptune_(mythology)) |
+| razred5-istorija | vitlejem.jpg | Neil Ward | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Church_of_the_Nativity) |
+| razred5-istorija | katakombe.jpg | David Macchi | Public domain | [izvor](https://en.wikipedia.org/wiki/Catacombs_of_Rome) |
+| razred5-istorija | teodosije.jpg | www.livius.org | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Theodosius_I) |
+| razred5-istorija | biblija.jpg | NYC Wanderer (Kevin Eng) | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Bible) |
+| razred5-istorija | apostol-pavle.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Paul_the_Apostle) |
+| razred5-istorija | jerusalim.jpg | askii | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Jerusalem) |
+| razred5-istorija | vandali.jpg | Karl Bryullov | Public domain | [izvor](https://en.wikipedia.org/wiki/Sack_of_Rome_(455)) |
+| razred5-istorija | odoakar.png | British Museum (photo) | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Odoacer) |
+| razred5-istorija | romul-avgustul.jpg | ANS | CC0 | [izvor](https://en.wikipedia.org/wiki/Romulus_Augustulus) |
+| razred5-istorija | alarik.jpg | Allan Stewart | Public domain | [izvor](https://en.wikipedia.org/wiki/Alaric_I) |
+| razred5-istorija | huni.png | Slovenski Volk | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Huns) |
+| razred5-istorija | hlodovik.jpg | Pethrus (talk) | Public domain | [izvor](https://en.wikipedia.org/wiki/Clovis_I) |
+| razred5-istorija | seoba-naroda.png | User:MapMaster | CC BY-SA 2.5 | [izvor](https://en.wikipedia.org/wiki/Migration_Period) |
+| razred5-istorija | guslar.jpg | — | CC BY-SA 3.0 | [izvor](https://commons.wikimedia.org/wiki/File%3AFilip%20Visnjic%20guslar.jpg) |
+| razred5-istorija | nebra.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Nebra_sky_disc) |
+| razred5-istorija | natron.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Natron) |
+| razred5-istorija | fenicansko-pismo.png | ? | ? | [izvor](https://commons.wikimedia.org/wiki/File%3APhoenician%20alphabet.svg) |
+| razred5-istorija | grcki-alfabet.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Dipylon_inscription) |
+| razred5-istorija | probus.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Probus_(emperor)) |
+| razred5-istorija | etrurski-sarkofag.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Sarcophagus_of_the_Spouses) |
+| razred6-biologija | vezal.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Andreas_Vesalius) |
 | razred6-biologija | lasko.jpg | EU | Public domain | [izvor](https://en.wikipedia.org/wiki/Lascaux) |
-| razred6-biologija | levenhukov-mikroskop.jpg | Moira Costa, Fotografia:Teresa Llordés | CC BY-SA 4.0 | [izvor](https://commons.wikimedia.org/wiki/File%3AR%C3%A9plica%20del%20microscopio%20de%20Leeuwenhoek.jpg) |
-| razred6-biologija | virhov.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Rudolf_Virchow) |
-| razred6-biologija | elektronski-mikroskop.jpg | Alice im Miniland | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Electron_microscope) |
-| razred6-biologija | kvasac.jpg | Mogana Das Murtey and Patchamuthu Ramasamy | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Saccharomyces_cerevisiae) |
-| razred6-biologija | cijanobakterije.jpg | Willem van Aken, CSIRO | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Cyanobacteria) |
+| razred6-biologija | levenhukov-mikroskop.jpg | ? | ? | [izvor](https://commons.wikimedia.org/wiki/File%3AR%C3%A9plica%20del%20microscopio%20de%20Leeuwenhoek.jpg) |
+| razred6-biologija | virhov.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Rudolf_Virchow) |
+| razred6-biologija | elektronski-mikroskop.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Electron_microscope) |
+| razred6-biologija | kvasac.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Saccharomyces_cerevisiae) |
+| razred6-biologija | cijanobakterije.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Cyanobacteria) |
 | razred6-biologija | jeloustoun-izvor.jpg | Carsten Steger | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Grand_Prismatic_Spring) |
-| razred6-biologija | gonijum.jpg | Environmental Protection Agency | Public domain | [izvor](https://en.wikipedia.org/wiki/Gonium) |
-| razred6-biologija | sundjer.jpg | Twilight Zone Expedition Team 2007, NOAA-OE | Public domain | [izvor](https://en.wikipedia.org/wiki/Sponge) |
-| razred6-biologija | irukandzi.jpg | GondwanaGirl 04:29, 6 January 2009 (UTC) | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Irukandji_jellyfish) |
-| razred6-biologija | muhara.jpg | Kieran Roy Powell | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Amanita_muscaria) |
-| razred6-biologija | vrganj.jpg | ReddishClover | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Boletus_edulis) |
-| razred6-biologija | reisi.jpg | This image was created by user TecheOldFox (Techieoldfox) at Mushroom Observer,  | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Lingzhi_(mushroom)) |
-| razred6-biologija | medna-gljiva.jpg | W.J.Pilsak (Walter J. Pilsak, Waldsassen) at de.wikipedia | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Armillaria_ostoyae) |
-| razred6-biologija | garka.jpg | Jamain | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Corn_smut) |
-| razred6-biologija | rokfor.jpg | Thesupermat | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Roquefort) |
-| razred6-biologija | monilija.jpg | Jerzy Opioła | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Monilinia_fructigena) |
-| razred6-biologija | vilina-kosica.jpg | No machine-readable author provided. Bogdan assumed (based on copyright claims). | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Cuscuta) |
-| razred6-biologija | amfioksus.jpg | Hans Hillewaert | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Lancelet) |
-| razred6-biologija | skoljka-ming.jpg | Alan D Wanamaker Jr1, Jan Heinemeier • James D Scourse • Christopher A Richardso | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Ming_(clam)) |
-| razred6-biologija | vodeni-pauk.jpg | Norbert Schuller Baupi | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Diving_bell_spider) |
-| razred6-biologija | skocimis.jpg | Marius Burger | CC0 | [izvor](https://en.wikipedia.org/wiki/Jerboa) |
-| razred6-biologija | losos.jpg | This image is copyrighted by Dmitry Azovtsev. I, the copyright holder of this wo | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Salmon_run) |
-| razred6-biologija | mlecika.jpg | Cayambe | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Euphorbia_canariensis) |
-| razred6-biologija | cuvarkuca.jpg | — | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Sempervivum_tectorum) |
-| razred6-biologija | rak-samac.jpg | Diego Delso | CC BY-SA 4.0 | [izvor](https://commons.wikimedia.org/wiki/File%3ACangrejo%20ermita%C3%B1o%20(Dardanus%20gemmatus)%20con%20an%C3%A9monas%20(Calliactis%20polypus)%2C%20mar%20Rojo%2C%20Egipto%2C%202023-04-16%2C%20DD%2064.jpg) |
-| razred6-biologija | riba-pilot.jpg | Raju Saravanan | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Pilot_fish) |
-| razred6-biologija | nocna-frajla.jpg | Khalid Mahmood at English Wikipedia | Public domain | [izvor](https://en.wikipedia.org/wiki/Mirabilis_jalapa) |
-| razred6-biologija | tekunica.jpg | Charles J. Sharp | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/European_ground_squirrel) |
-| razred6-biologija | puh.jpg | Svíčková | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Glis_(genus)) |
-| razred6-biologija | kukuvija.jpg | Steven Ward | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Western_barn_owl) |
-| razred6-biologija | crna-roda.jpg | Chris Eason | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Black_stork) |
-| razred6-biologija | kecige.jpg | Karelj | Public domain | [izvor](https://en.wikipedia.org/wiki/Sterlet) |
-| razred6-biologija | apolon.jpg | Hinox | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Apollo_(butterfly)) |
-| razred6-biologija | azijska-bubamara.jpg | — | Attribution | [izvor](https://en.wikipedia.org/wiki/Harmonia_axyridis) |
+| razred6-biologija | gonijum.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Gonium) |
+| razred6-biologija | sundjer.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Sponge) |
+| razred6-biologija | irukandzi.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Irukandji_jellyfish) |
+| razred6-biologija | muhara.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Amanita_muscaria) |
+| razred6-biologija | vrganj.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Boletus_edulis) |
+| razred6-biologija | reisi.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Lingzhi_(mushroom)) |
+| razred6-biologija | medna-gljiva.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Armillaria_ostoyae) |
+| razred6-biologija | garka.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Corn_smut) |
+| razred6-biologija | rokfor.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Roquefort) |
+| razred6-biologija | monilija.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Monilinia_fructigena) |
+| razred6-biologija | vilina-kosica.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Cuscuta) |
+| razred6-biologija | amfioksus.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Lancelet) |
+| razred6-biologija | skoljka-ming.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Ming_(clam)) |
+| razred6-biologija | vodeni-pauk.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Diving_bell_spider) |
+| razred6-biologija | skocimis.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Jerboa) |
+| razred6-biologija | losos.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Salmon_run) |
+| razred6-biologija | mlecika.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Euphorbia_canariensis) |
+| razred6-biologija | cuvarkuca.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Sempervivum_tectorum) |
+| razred6-biologija | rak-samac.jpg | ? | ? | [izvor](https://commons.wikimedia.org/wiki/File%3ACangrejo%20ermita%C3%B1o%20(Dardanus%20gemmatus)%20con%20an%C3%A9monas%20(Calliactis%20polypus)%2C%20mar%20Rojo%2C%20Egipto%2C%202023-04-16%2C%20DD%2064.jpg) |
+| razred6-biologija | riba-pilot.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Pilot_fish) |
+| razred6-biologija | nocna-frajla.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Mirabilis_jalapa) |
+| razred6-biologija | tekunica.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/European_ground_squirrel) |
+| razred6-biologija | puh.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Glis_(genus)) |
+| razred6-biologija | kukuvija.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Western_barn_owl) |
+| razred6-biologija | crna-roda.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Black_stork) |
+| razred6-biologija | kecige.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Sterlet) |
+| razred6-biologija | apolon.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Apollo_(butterfly)) |
+| razred6-biologija | azijska-bubamara.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Harmonia_axyridis) |
 | razred6-biologija | cvetanje-vode.jpg | Jesse Allen and Robert Simmon | Public domain | [izvor](https://en.wikipedia.org/wiki/Algal_bloom) |
 | razred6-biologija | teozinte.jpg | Original version: Image:Corncobs.jpg - Edit by User:Waugsberg (overexposed part  | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Zea_(plant)) |
 | razred6-biologija | doga.jpg | Lilly M | CC BY-SA 2.5 | [izvor](https://en.wikipedia.org/wiki/Great_Dane) |
@@ -1100,51 +1198,51 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | razred7-istorija | getisburg.jpg | Thure de Thulstrup / Adam Cuerden | Public domain | [izvor](https://en.wikipedia.org/wiki/Battle_of_Gettysburg) |
 | razred7-istorija | plantaza.jpg | O. Pierre Havens | Public domain | [izvor](https://commons.wikimedia.org/wiki/File%3AFamily%20of%20African%20American%20picking%20cotton%20in%20Georgia%2C%20circa%201880.jpg) |
 | razred7-istorija | ricmond.jpg | Andrew J. Russell | Public domain | [izvor](https://commons.wikimedia.org/wiki/File%3ARichmond%20Virginia%20damage2.jpg) |
-| razred7-istorija | podela-kine.jpg | ? | ? | [izvor](https://commons.wikimedia.org/wiki/File%3AChina%20imperialism%20cartoon.jpg) |
+| razred7-istorija | podela-kine.jpg | Henri Meyer | Public domain | [izvor](https://commons.wikimedia.org/wiki/File%3AChina%20imperialism%20cartoon.jpg) |
 | razred7-istorija | darvin.jpg | Charles_Darwin_seated.jpg: Henry Maull (1829–1914) and John Fox (1832–1907) (Mau | Public domain | [izvor](https://en.wikipedia.org/wiki/Charles_Darwin) |
-| razred7-istorija | gobino.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Arthur_de_Gobineau) |
-| razred7-istorija | viktorija.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Queen_Victoria) |
-| razred7-istorija | havaji.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Newlands_Resolution) |
-| razred7-istorija | zulu.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Zulu_people) |
-| razred7-istorija | leopold-ii.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Leopold_II_of_Belgium) |
-| razred7-istorija | vojnici-unije.jpg | ? | ? | [izvor](https://commons.wikimedia.org/wiki/File%3ASoldiers%20in%20camp%20-%20NARA%20-%20524842.jpg) |
-| razred7-istorija | vucic.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Toma_Vu%C4%8Di%C4%87_Peri%C5%A1i%C4%87) |
-| razred7-istorija | garasanin.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Ilija_Gara%C5%A1anin) |
-| razred7-istorija | aleksandar-karadjordjevic.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Alexander_Kara%C4%91or%C4%91evi%C4%87%2C_Prince_of_Serbia) |
-| razred7-istorija | sterija.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Jovan_Sterija_Popovi%C4%87) |
-| razred7-istorija | sanu.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Serbian_Academy_of_Sciences_and_Arts) |
-| razred7-istorija | licej.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Precursors_to_the_University_of_Belgrade) |
-| razred7-istorija | hadzic.jpg | ? | ? | [izvor](https://commons.wikimedia.org/wiki/File%3ANovak%20Radoni%C4%87%20-%20Jovan%20Had%C5%BEi%C4%87%2C%20GMS.png) |
-| razred7-istorija | mihailo.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Mihailo_Obrenovi%C4%87%2C_Prince_of_Serbia) |
-| razred7-istorija | cukur-cesma.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/%C4%8Cukur_Fountain) |
-| razred7-istorija | narodno-pozoriste.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/National_Theatre_in_Belgrade) |
-| razred7-istorija | milos-star.jpg | ? | ? | [izvor](https://commons.wikimedia.org/wiki/File%3A%C4%90ura%20Jak%C5%A1i%C4%87%20-%20Knez%20Milo%C5%A1%20Obrenovi%C4%87%2C%201859%2C%20deo%20kolekcije%20manastira%20Vra%C4%87ev%C5%A1nica.jpg) |
-| razred7-istorija | spomenik-mihailo.jpg | ? | ? | [izvor](https://commons.wikimedia.org/wiki/File%3ASpomenik%20knezu%20Mihailu%2C%20Beograd%2001.jpg) |
+| razred7-istorija | gobino.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Arthur_de_Gobineau) |
+| razred7-istorija | viktorija.jpg | Alexander Bassano | Public domain | [izvor](https://en.wikipedia.org/wiki/Queen_Victoria) |
+| razred7-istorija | havaji.jpg | Frank Davey | Public domain | [izvor](https://en.wikipedia.org/wiki/Newlands_Resolution) |
+| razred7-istorija | zulu.jpg | South African Tourism from South Africa | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Zulu_people) |
+| razred7-istorija | leopold-ii.jpg | Alexander Bassano | Public domain | [izvor](https://en.wikipedia.org/wiki/Leopold_II_of_Belgium) |
+| razred7-istorija | vojnici-unije.jpg | Mathew Benjamin Brady | Public domain | [izvor](https://commons.wikimedia.org/wiki/File%3ASoldiers%20in%20camp%20-%20NARA%20-%20524842.jpg) |
+| razred7-istorija | vucic.jpg | Jovan Popović (1810-1864) | Public domain | [izvor](https://en.wikipedia.org/wiki/Toma_Vu%C4%8Di%C4%87_Peri%C5%A1i%C4%87) |
+| razred7-istorija | garasanin.jpg | Stojanović/Karastoyanov, Anastas Nikolov | Public domain | [izvor](https://en.wikipedia.org/wiki/Ilija_Gara%C5%A1anin) |
+| razred7-istorija | aleksandar-karadjordjevic.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Alexander_Kara%C4%91or%C4%91evi%C4%87%2C_Prince_of_Serbia) |
+| razred7-istorija | sterija.jpg | Jovan Popović (painter) | Public domain | [izvor](https://en.wikipedia.org/wiki/Jovan_Sterija_Popovi%C4%87) |
+| razred7-istorija | sanu.jpg | en:User:LukaP at en.wikipedia | Public domain | [izvor](https://en.wikipedia.org/wiki/Serbian_Academy_of_Sciences_and_Arts) |
+| razred7-istorija | licej.jpg | Snežana Negovanović | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Precursors_to_the_University_of_Belgrade) |
+| razred7-istorija | hadzic.jpg | Novak Radonić (Serbian Cyrillic: Новак Радонић; Mol, 31 March 1826 – Sremska Kam | Public domain | [izvor](https://commons.wikimedia.org/wiki/File%3ANovak%20Radoni%C4%87%20-%20Jovan%20Had%C5%BEi%C4%87%2C%20GMS.png) |
+| razred7-istorija | mihailo.jpg | Johann Böss | Public domain | [izvor](https://en.wikipedia.org/wiki/Mihailo_Obrenovi%C4%87%2C_Prince_of_Serbia) |
+| razred7-istorija | cukur-cesma.jpg | Снежана Неговановић | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/%C4%8Cukur_Fountain) |
+| razred7-istorija | narodno-pozoriste.jpg | Vanja Kovac | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/National_Theatre_in_Belgrade) |
+| razred7-istorija | milos-star.jpg | Đura Jakšić | Public domain | [izvor](https://commons.wikimedia.org/wiki/File%3A%C4%90ura%20Jak%C5%A1i%C4%87%20-%20Knez%20Milo%C5%A1%20Obrenovi%C4%87%2C%201859%2C%20deo%20kolekcije%20manastira%20Vra%C4%87ev%C5%A1nica.jpg) |
+| razred7-istorija | spomenik-mihailo.jpg | ZoranCvetkovic | CC BY-SA 3.0 | [izvor](https://commons.wikimedia.org/wiki/File%3ASpomenik%20knezu%20Mihailu%2C%20Beograd%2001.jpg) |
 | razred7-istorija | predaja-kljuceva.jpg | Oliver Bunic | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Belgrade_Fortress) |
-| razred7-istorija | ubistvo-mihaila.jpg | ? | ? | [izvor](https://commons.wikimedia.org/wiki/File%3AVinzenz%20Katzler%20-%20Assassination%20of%20Michael%20III%20Obrenovic%2C%201868.jpg) |
-| razred7-istorija | milan.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Milan_I_of_Serbia) |
-| razred7-istorija | ristic.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Jovan_Risti%C4%87) |
+| razred7-istorija | ubistvo-mihaila.jpg | Vinzenz Katzler | Public domain | [izvor](https://commons.wikimedia.org/wiki/File%3AVinzenz%20Katzler%20-%20Assassination%20of%20Michael%20III%20Obrenovic%2C%201868.jpg) |
+| razred7-istorija | milan.jpg | Josef Löwy | Public domain | [izvor](https://en.wikipedia.org/wiki/Milan_I_of_Serbia) |
+| razred7-istorija | ristic.jpg | — | Public domain | [izvor](https://en.wikipedia.org/wiki/Jovan_Risti%C4%87) |
 | razred7-istorija | jenko.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Davorin_Jenko) |
-| razred7-istorija | prevoz-ranjenika.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Serbian%E2%80%93Ottoman_Wars_(1876%E2%80%931878)) |
-| razred7-istorija | berlinski-kongres.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Congress_of_Berlin) |
-| razred7-istorija | pasic.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Nikola_Pa%C5%A1i%C4%87) |
-| razred7-istorija | natalija.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Natalie_of_Serbia) |
+| razred7-istorija | prevoz-ranjenika.jpg | Gravira Bajarski | Public domain | [izvor](https://en.wikipedia.org/wiki/Serbian%E2%80%93Ottoman_Wars_(1876%E2%80%931878)) |
+| razred7-istorija | berlinski-kongres.jpg | Anton von Werner | Public domain | [izvor](https://en.wikipedia.org/wiki/Congress_of_Berlin) |
+| razred7-istorija | pasic.jpg | unknown | Public domain | [izvor](https://en.wikipedia.org/wiki/Nikola_Pa%C5%A1i%C4%87) |
+| razred7-istorija | natalija.jpg | Muzej rudničko-takovskog kraja u Gornjem Milanovcu | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Natalie_of_Serbia) |
 | razred7-istorija | krusedol.jpg | K.Svensson | CC0 | [izvor](https://en.wikipedia.org/wiki/Kru%C5%A1edol_Monastery) |
-| razred7-istorija | aleksandar-obrenovic.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Alexander_I_of_Serbia) |
-| razred7-istorija | draga.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Draga_Ma%C5%A1in) |
-| razred7-istorija | apis.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Dragutin_Dimitrijevi%C4%87) |
-| razred7-istorija | petar-i-karadjordjevic.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Peter_I_of_Serbia) |
-| razred7-istorija | aneksija.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Bosnian_Crisis) |
-| razred7-istorija | nikolaj-ii.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Nicholas_II) |
-| razred7-istorija | cusima.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Battle_of_Tsushima) |
-| razred7-istorija | dirizabl.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Italo-Turkish_War) |
-| razred7-istorija | drednot.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/HMS_Dreadnought_(1906)) |
-| razred7-istorija | antanta-plakat.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Triple_Entente) |
-| razred7-istorija | kapetan-misino.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Captain_Mi%C5%A1a_Mansion) |
-| razred7-istorija | cvijic.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Jovan_Cviji%C4%87) |
-| razred7-istorija | nadezda.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Nade%C5%BEda_Petrovi%C4%87) |
-| razred7-istorija | rudnik-uglja.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Coal_mining) |
-| razred7-istorija | simens.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Werner_von_Siemens) |
+| razred7-istorija | aleksandar-obrenovic.jpg | Mijatovic, Cedomilj, 1842-1932 | Public domain | [izvor](https://en.wikipedia.org/wiki/Alexander_I_of_Serbia) |
+| razred7-istorija | draga.jpg | — | Public domain | [izvor](https://en.wikipedia.org/wiki/Draga_Ma%C5%A1in) |
+| razred7-istorija | apis.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Dragutin_Dimitrijevi%C4%87) |
+| razred7-istorija | petar-i-karadjordjevic.jpg | Milan Jovanović | Public domain | [izvor](https://en.wikipedia.org/wiki/Peter_I_of_Serbia) |
+| razred7-istorija | aneksija.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Bosnian_Crisis) |
+| razred7-istorija | nikolaj-ii.jpg | Unknown author (originally uploaded to Wikimedia Commons on 22 August 2012 by Pe | Public domain | [izvor](https://en.wikipedia.org/wiki/Nicholas_II) |
+| razred7-istorija | cusima.jpg | Tōjō Shōtarō | Public domain | [izvor](https://en.wikipedia.org/wiki/Battle_of_Tsushima) |
+| razred7-istorija | dirizabl.jpg | File:Turkish prisoners Rhodes 1912.jpg: L'Illustrazione italiana, 16 June 1912.  | Public domain | [izvor](https://en.wikipedia.org/wiki/Italo-Turkish_War) |
+| razred7-istorija | drednot.jpg | Adam Cuerden | Public domain | [izvor](https://en.wikipedia.org/wiki/HMS_Dreadnought_(1906)) |
+| razred7-istorija | antanta-plakat.jpg | historicair (French original) Fluteflute & User:Bibi Saint-Pol (English translat | CC BY-SA 2.5 | [izvor](https://en.wikipedia.org/wiki/Triple_Entente) |
+| razred7-istorija | kapetan-misino.jpg | Jorge Láscar from Melbourne, Australia | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Captain_Mi%C5%A1a_Mansion) |
+| razred7-istorija | cvijic.jpg | Milan Jovanović | Public domain | [izvor](https://en.wikipedia.org/wiki/Jovan_Cviji%C4%87) |
+| razred7-istorija | nadezda.jpg | AnonymousUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Nade%C5%BEda_Petrovi%C4%87) |
+| razred7-istorija | rudnik-uglja.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Coal_mining) |
+| razred7-istorija | simens.jpg | Photograph | Public domain | [izvor](https://en.wikipedia.org/wiki/Werner_von_Siemens) |
 | razred7-istorija | edison.jpg | Louis Bachrach, Bachrach Studios, restored by Michel Vuijlsteke | Public domain | [izvor](https://en.wikipedia.org/wiki/Thomas_Edison) |
 | razred7-istorija | nijagara.jpg | Saffron Blaze | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Niagara_Falls) |
 | razred7-istorija | bel.jpg | Unknown authorUnknown author | CC0 | [izvor](https://en.wikipedia.org/wiki/Alexander_Graham_Bell) |
@@ -1198,7 +1296,7 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | razred8-biologija | krokodil.jpg | Dewet | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Nile_crocodile) |
 | razred8-biologija | tardigrad.png | Schokraie E, Warnken U, Hotz-Wagenblatt A, Grohme MA, Hengherr S, et al. (2012) | CC BY 2.5 | [izvor](https://en.wikipedia.org/wiki/Tardigrade) |
 | razred8-biologija | eritrociti.jpg | BruceBlaus. When using this image in external sources it can be cited as: Blause | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Red_blood_cell) |
-| razred8-biologija | pijavica.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Hirudo_medicinalis) |
+| razred8-biologija | pijavica.jpg | (c) Георгий Виноградов (Georgy Vinogradov), some rights reserved (CC BY) | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Hirudo_medicinalis) |
 | razred8-biologija | trilobit.jpg | PaleoNeolitic (montage creator) | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Trilobite) |
 | razred8-biologija | stromatoliti.jpg | Didier Descouens | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Stromatolite) |
 | razred8-biologija | ginko.jpg | EecherplazGinkgo06.jpg: Cayambe derivative work: Ginkgotree (talk) | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Ginkgo_biloba) |
@@ -1207,7 +1305,7 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | razred8-biologija | rinija.jpg | Griensteidl | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Rhynia) |
 | razred8-biologija | celakant.png | Bruce A.S. Henderson | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Coelacanth) |
 | razred8-biologija | darvin.jpg | Charles_Darwin_seated.jpg: Henry Maull (1829–1914) and John Fox (1832–1907) (Mau | Public domain | [izvor](https://en.wikipedia.org/wiki/Charles_Darwin) |
-| razred8-biologija | bigl.png | ? | ? | [izvor](https://en.wikipedia.org/wiki/HMS_Beagle) |
+| razred8-biologija | bigl.png | R. T. Pritchett | Public domain | [izvor](https://en.wikipedia.org/wiki/HMS_Beagle) |
 | razred8-biologija | liger.jpg | Hkandy | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Liger) |
 | razred8-biologija | aksolotl.jpg | LoKiLeCh | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Axolotl) |
 | razred8-biologija | luci.jpg | 120 | CC BY 2.5 | [izvor](https://en.wikipedia.org/wiki/Lucy_(hominid)) |
@@ -1218,9 +1316,9 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | razred8-biologija | ramonda.jpg | Sir Wolf | Public domain | [izvor](https://en.wikipedia.org/wiki/Ramonda_serbica) |
 | razred8-biologija | omorika.jpg | mikepirie | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Picea_omorika) |
 | razred8-biologija | droplja.jpg | Andrej Chudý from Slovakia | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Great_bustard) |
-| razred8-biologija | poskok.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Vipera_ammodytes) |
+| razred8-biologija | poskok.jpg | Holger Krisp | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Vipera_ammodytes) |
 | razred8-biologija | dabar.jpg | Per Harald Olsen | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Eurasian_beaver) |
-| razred8-biologija | tekunica.jpg | Charles J. Sharp | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/European_ground_squirrel) |
+| razred8-biologija | tekunica.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/European_ground_squirrel) |
 | razred8-biologija | hloroza.jpg | User:Royalbroil | CC BY-SA 2.5 | [izvor](https://en.wikipedia.org/wiki/Chlorosis) |
 | razred8-biologija | saguaro.jpg | WClarke | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Saguaro) |
 | razred8-biologija | morska-kornjaca.jpg | Charles J. Sharp | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Green_sea_turtle) |
@@ -1262,12 +1360,12 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | razred8-biologija | albino-aligator.jpg | Brocken Inaglory | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Albinism) |
 | razred8-istorija | un.jpg | Kidfly182 | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Headquarters_of_the_United_Nations) |
 | razred8-istorija | lenjin.jpg | Unknown, presumably official | Public domain | [izvor](https://en.wikipedia.org/wiki/Vladimir_Lenin) |
-| razred8-istorija | nikolaj.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Nicholas_II) |
+| razred8-istorija | nikolaj.jpg | Unknown author (originally uploaded to Wikimedia Commons on 22 August 2012 by Pe | Public domain | [izvor](https://en.wikipedia.org/wiki/Nicholas_II) |
 | razred8-istorija | zimski-dvorac.jpg | Godot13 | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Winter_Palace) |
 | razred8-istorija | trocki.jpg | Rijksmuseum | CC0 | [izvor](https://en.wikipedia.org/wiki/Leon_Trotsky) |
 | razred8-istorija | versaj-1919.jpg | William Orpen | Public domain | [izvor](https://en.wikipedia.org/wiki/The_Signing_of_Peace_in_the_Hall_of_Mirrors) |
 | razred8-istorija | velika-cetvorka.jpg | Edward N. Jackson (US Army Signal Corps) | Public domain | [izvor](https://en.wikipedia.org/wiki/Big_Four_(World_War_I)) |
-| razred8-istorija | pasic.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Nikola_Pa%C5%A1i%C4%87) |
+| razred8-istorija | pasic.jpg | unknown | Public domain | [izvor](https://en.wikipedia.org/wiki/Nikola_Pa%C5%A1i%C4%87) |
 | razred8-istorija | majka-migrantkinja.jpg | Dorothea Lange | Public domain | [izvor](https://en.wikipedia.org/wiki/Migrant_Mother) |
 | razred8-istorija | ruzvelt.jpg | Leon Perskie | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Franklin_D._Roosevelt) |
 | razred8-istorija | caplin.jpg | Strauss-Peyton Studio | Public domain | [izvor](https://en.wikipedia.org/wiki/Charlie_Chaplin) |
@@ -1328,16 +1426,178 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | razred8-istorija | evro.jpg | Bericht | CC0 | [izvor](https://en.wikipedia.org/wiki/Euro_banknotes) |
 | razred8-istorija | korona.jpg | NIAID-RML (https://www.niaid.nih.gov/ & https://www.niaid.nih.gov/about/rocky-mo | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/SARS-CoV-2) |
 | razred8-istorija | obama.jpg | Official White House Photo by Pete Souza | Public domain | [izvor](https://en.wikipedia.org/wiki/Barack_Obama) |
-| razred8-istorija | peti-oktobar.jpg | WagingNonViolence/Viktor Sekularac | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Overthrow_of_Slobodan_Milo%C5%A1evi%C4%87) |
-| razred8-istorija | djindjic.jpg | — | No restrictions | [izvor](https://en.wikipedia.org/wiki/Zoran_%C4%90in%C4%91i%C4%87) |
-| razred8-istorija | zastava-srbije.png | See File history below for details. | Public domain | [izvor](https://en.wikipedia.org/wiki/Flag_of_Serbia) |
-| razred8-istorija | valensa.jpg | Taiwan Presidential Office | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Lech_Wa%C5%82%C4%99sa) |
-| razred8-istorija | banovine.png | NordNordWest | CC BY-SA 3.0 de | [izvor](https://commons.wikimedia.org/wiki/File%3ABanovine%20Kraljevine%20Jugoslavije%201929%E2%80%931939.svg) |
-| razred8-istorija | avnoj.jpg | Unknown authorUnknown author | Public domain | [izvor](https://commons.wikimedia.org/wiki/File%3ATito%20govori%20delegatima%20AVNOJ-a%2C%20Jajce%201943.jpg) |
-| razred8-istorija | kameni-cvet.jpg | Bern Bartsch | CC BY-SA 3.0 | [izvor](https://commons.wikimedia.org/wiki/File%3AKZ-Jasenovac-Denkmal-Seitenansicht.JPG) |
-| razred8-istorija | generalstab.jpg | Stebunik | CC BY 4.0 | [izvor](https://commons.wikimedia.org/wiki/File%3AGeneral%C5%A1tab-1%20Beograd.jpg) |
-| razred8-istorija | marsalov-plan.jpg | Ies Spreekmeester | Public domain | [izvor](https://commons.wikimedia.org/wiki/File%3AMarshall%20Plan%20poster%20(cropped).JPG) |
-| razred8-istorija | nirnberg.jpg | Raymond D’Addario | Public domain | [izvor](https://commons.wikimedia.org/wiki/File%3ADefendants%20in%20the%20dock%20at%20nuremberg%20trials.jpg) |
+| razred8-istorija | peti-oktobar.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Overthrow_of_Slobodan_Milo%C5%A1evi%C4%87) |
+| razred8-istorija | djindjic.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Zoran_%C4%90in%C4%91i%C4%87) |
+| razred8-istorija | zastava-srbije.png | ? | ? | [izvor](https://en.wikipedia.org/wiki/Flag_of_Serbia) |
+| razred8-istorija | valensa.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Lech_Wa%C5%82%C4%99sa) |
+| razred8-istorija | banovine.png | ? | ? | [izvor](https://commons.wikimedia.org/wiki/File%3ABanovine%20Kraljevine%20Jugoslavije%201929%E2%80%931939.svg) |
+| razred8-istorija | avnoj.jpg | ? | ? | [izvor](https://commons.wikimedia.org/wiki/File%3ATito%20govori%20delegatima%20AVNOJ-a%2C%20Jajce%201943.jpg) |
+| razred8-istorija | kameni-cvet.jpg | ? | ? | [izvor](https://commons.wikimedia.org/wiki/File%3AKZ-Jasenovac-Denkmal-Seitenansicht.JPG) |
+| razred8-istorija | generalstab.jpg | ? | ? | [izvor](https://commons.wikimedia.org/wiki/File%3AGeneral%C5%A1tab-1%20Beograd.jpg) |
+| razred8-istorija | marsalov-plan.jpg | ? | ? | [izvor](https://commons.wikimedia.org/wiki/File%3AMarshall%20Plan%20poster%20(cropped).JPG) |
+| razred8-istorija | nirnberg.jpg | ? | ? | [izvor](https://commons.wikimedia.org/wiki/File%3ADefendants%20in%20the%20dock%20at%20nuremberg%20trials.jpg) |
+| razred8-istorija | kablovi.png | ? | ? | [izvor](https://en.wikipedia.org/wiki/Submarine_communications_cable) |
+| razred8-istorija | sufrazetkinje.png | ? | ? | [izvor](https://en.wikipedia.org/wiki/Suffragette) |
+| razred8-istorija | propaganda.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Propaganda) |
+| razred8-istorija | kinoteka.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Yugoslav_Film_Archive) |
+| razred8-istorija | arhiv-jugoslavije.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Archives_of_Yugoslavia) |
+| razred8-istorija | crveni-beli.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Russian_Civil_War) |
+| razred8-istorija | novembarska.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/German_revolution_of_1918%E2%80%931919) |
+| razred8-istorija | vajmar.png | ? | ? | [izvor](https://en.wikipedia.org/wiki/Weimar_National_Assembly) |
+| razred8-istorija | petrogradski-sovjet.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Petrograd_Soviet) |
+| razred8-istorija | bela-kun.png | ? | ? | [izvor](https://en.wikipedia.org/wiki/B%C3%A9la_Kun) |
+| razred8-istorija | glad-1921.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Russian_famine_of_1921%E2%80%931922) |
+| razred8-istorija | brest-litovsk.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Treaty_of_Brest-Litovsk) |
+| razred8-istorija | liga-naroda.png | ? | ? | [izvor](https://en.wikipedia.org/wiki/League_of_Nations) |
+| razred8-istorija | vilson.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Woodrow_Wilson) |
+| razred8-istorija | ataturk.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Mustafa_Kemal_Atat%C3%BCrk) |
+| razred8-istorija | trijanon.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Treaty_of_Trianon) |
+| razred8-istorija | verden-kosturnica.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Douaumont_Ossuary) |
+| razred8-istorija | sen-zermen.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Ch%C3%A2teau_de_Saint-Germain-en-Laye) |
+| razred8-istorija | velika-depresija.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Great_Depression) |
+| razred8-istorija | pevac-dzeza.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/The_Jazz_Singer) |
+| razred8-istorija | radio.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Radio_receiver) |
+| razred8-istorija | flaper.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Flapper) |
+| razred8-istorija | mundijal-1930.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/1930_FIFA_World_Cup) |
+| razred8-istorija | musolini.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Benito_Mussolini) |
+| razred8-istorija | hitler.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Adolf_Hitler) |
+| razred8-istorija | nirnberski-skup.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Nuremberg_rallies) |
+| razred8-istorija | zuta-zvezda.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Yellow_badge) |
+| razred8-istorija | gestapo.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Gestapo) |
+| razred8-istorija | svastika.png | ? | ? | [izvor](https://en.wikipedia.org/wiki/Swastika) |
+| razred8-istorija | rajhstag.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Reichstag_building) |
+| razred8-istorija | landsberg.jpg | Carsten Steger | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Landsberg_Prison) |
+| razred8-istorija | mars-na-rim.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/March_on_Rome) |
+| razred8-istorija | kolhoz.jpg | Неизвестный художник (не указан в выходных данных плаката; отсутствует авторская | Public domain | [izvor](https://en.wikipedia.org/wiki/Kolkhoz) |
+| razred8-istorija | magnitogorsk.jpg | Hellmaster_ru | Public domain | [izvor](https://en.wikipedia.org/wiki/Magnitogorsk) |
+| razred8-istorija | velika-cistka.jpg | Ukrainian American Youth Association | Public domain | [izvor](https://en.wikipedia.org/wiki/Great_Purge) |
+| razred8-istorija | gulag.png | Antonu | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Gulag) |
+| razred8-istorija | kremlj.jpg | Pavel Kazachkov from Moscow, Russia | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Kremlin) |
+| razred8-istorija | nep.png | C records | Public domain | [izvor](https://en.wikipedia.org/wiki/New_Economic_Policy) |
+| razred8-istorija | crveni-trg.jpg | mos.ru | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Red_Square) |
+| razred8-istorija | holodomor.jpg | Alexander Wienerberger | Public domain | [izvor](https://en.wikipedia.org/wiki/Holodomor) |
+| razred8-istorija | dnjeproges.jpg | Anatoliy Volkov | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Dnieper_Hydroelectric_Station) |
+| razred8-istorija | retus.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Censorship_of_images_in_the_Soviet_Union) |
+| razred8-istorija | lubjanka.jpg | A.Savin | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Lubyanka_Building) |
+| razred8-istorija | kominterna.png | Thespoondragon | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Communist_International) |
+| razred8-istorija | hajle-selasije.jpg | unknown; according to [1] and [2] an official portrait of which b/w copies were  | Public domain | [izvor](https://en.wikipedia.org/wiki/Haile_Selassie) |
+| razred8-istorija | ribentrop-molotov.jpg | Template:Helmut Laux | CC BY-SA 3.0 de | [izvor](https://en.wikipedia.org/wiki/Molotov%E2%80%93Ribbentrop_Pact) |
+| razred8-istorija | palata-naroda.jpg | Credits to Mourad Ben Abdallah / Wikimedia Commons | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Palace_of_Nations) |
+| razred8-istorija | prag-1939.png | German government | Public domain | [izvor](https://en.wikipedia.org/wiki/Occupation_of_Czechoslovakia_(1938%E2%80%931945)) |
+| razred8-istorija | franko.jpg | Unknown authorUnknown author | CC0 | [izvor](https://en.wikipedia.org/wiki/Francisco_Franco) |
+| razred8-istorija | trumbic.jpg | Arthur W. Page | Public domain | [izvor](https://en.wikipedia.org/wiki/Ante_Trumbi%C4%87) |
+| razred8-istorija | jugoslovenski-odbor.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Yugoslav_Committee) |
+| razred8-istorija | drzava-shs.png | Orlovic: I drew this flag in photoshop, on the base of another version on the in | Public domain | [izvor](https://en.wikipedia.org/wiki/State_of_Slovenes%2C_Croats_and_Serbs) |
+| razred8-istorija | macek.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Vladko_Ma%C4%8Dek) |
+| razred8-istorija | dinar-shs.jpg | An-d | Public domain | [izvor](https://en.wikipedia.org/wiki/Yugoslav_dinar) |
+| razred8-istorija | pribicevic.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Svetozar_Pribi%C4%87evi%C4%87) |
+| razred8-istorija | banovina-hrvatska.png | Ex13 | Public domain | [izvor](https://en.wikipedia.org/wiki/Banovina_of_Croatia) |
+| razred8-istorija | stojadinovic.jpg | — | Public domain | [izvor](https://en.wikipedia.org/wiki/Milan_Stojadinovi%C4%87) |
+| razred8-istorija | pavelic.jpg | Willy Pragher | CC BY 3.0 de | [izvor](https://en.wikipedia.org/wiki/Ante_Paveli%C4%87) |
+| razred8-istorija | atentat-marselj.jpg | http://sr.wikipedia.org/wiki/%D0%9A%D0%BE%D1%80%D0%B8%D1%81%D0%BD%D0%B8%D0%BA:Dj | Public domain | [izvor](https://en.wikipedia.org/wiki/Alexander_I_of_Yugoslavia) |
+| razred8-istorija | simovic.jpg | Unknown authorUnknown author | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Du%C5%A1an_Simovi%C4%87) |
+| razred8-istorija | blickrig.jpg | Dieck | CC BY-SA 3.0 de | [izvor](https://en.wikipedia.org/wiki/Blitzkrieg) |
+| razred8-istorija | barbarosa.jpg | Bundesarchiv, Bild 146-1974-099-19 / Kempe / CC-BY-SA 3.0 Samaryi Guraryi / Сама | CC0 | [izvor](https://en.wikipedia.org/wiki/Operation_Barbarossa) |
+| razred8-istorija | ohi.jpg | Tigroinikos | CC BY 2.5 | [izvor](https://en.wikipedia.org/wiki/Ohi_Day) |
+| razred8-istorija | kompjenj.png | Frank Capra (film) | Public domain | [izvor](https://en.wikipedia.org/wiki/Armistice_of_22_June_1940) |
+| razred8-istorija | bitka-moskva.jpg | Knorring / Олег Кнорринг | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Battle_of_Moscow) |
+| razred8-istorija | romel.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Erwin_Rommel) |
+| razred8-istorija | peten.jpg | Imprimerie Draeger à Montrouge en région parisienne | Public domain | [izvor](https://en.wikipedia.org/wiki/Philippe_P%C3%A9tain) |
+| razred8-istorija | midvej.jpg | USN, photographed from USS Pensacola (CA-24) | Public domain | [izvor](https://en.wikipedia.org/wiki/Battle_of_Midway) |
+| razred8-istorija | kursk.jpg | — | Public domain | [izvor](https://en.wikipedia.org/wiki/Battle_of_Kursk) |
+| razred8-istorija | saveznici.jpg | United States Office of War Information, poster by Leslie Ragan Restored by: Bam | Public domain | [izvor](https://en.wikipedia.org/wiki/Allies_of_World_War_II) |
+| razred8-istorija | lend-lis.png | U.S. Government | Public domain | [izvor](https://en.wikipedia.org/wiki/Lend-Lease) |
+| razred8-istorija | b-17.jpg | Airwolfhound | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Boeing_B-17_Flying_Fortress) |
+| razred8-istorija | atlantska-povelja.jpg | Leslie Cornish Priest | Public domain | [izvor](https://en.wikipedia.org/wiki/Atlantic_Charter) |
+| razred8-istorija | vecna-vatra.jpg | Severin.stalder | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Tomb_of_the_Unknown_Soldier_(Moscow)) |
+| razred8-istorija | kamikaze.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/USS_Bunker_Hill_(CV-17)) |
+| razred8-istorija | kapitulacija-nemacke.jpg | Adam Cuerden | Public domain | [izvor](https://en.wikipedia.org/wiki/German_Instrument_of_Surrender) |
+| razred8-istorija | misuri.jpg | Army Signal Corps photographer LT. Stephen E. Korpanty; restored by Adam Cuerden | Public domain | [izvor](https://en.wikipedia.org/wiki/Surrender_of_Japan) |
+| razred8-istorija | rajhstag-zastava.jpg | Yevgeny Khaldei / Adam Cuerden | Public domain | [izvor](https://en.wikipedia.org/wiki/Raising_a_Flag_over_the_Reichstag) |
+| razred8-istorija | firerbunker.jpg | Unknown authorUnknown author | CC BY-SA 3.0 de | [izvor](https://en.wikipedia.org/wiki/F%C3%BChrerbunker) |
+| razred8-istorija | ardeni.jpg | U.S. Army | Public domain | [izvor](https://en.wikipedia.org/wiki/Battle_of_the_Bulge) |
+| razred8-istorija | dan-pobede.jpg | ITAR-TASS | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Victory_Day_(9_May)) |
+| razred8-istorija | jad-vasem.png | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Yad_Vashem) |
+| razred8-istorija | porajmos.jpg | Unknown authorUnknown author | CC BY-SA 3.0 de | [izvor](https://en.wikipedia.org/wiki/Romani_Holocaust) |
+| razred8-istorija | lemkin.jpg | Center for Jewish History, NYC | No restrictions | [izvor](https://en.wikipedia.org/wiki/Raphael_Lemkin) |
+| razred8-istorija | varsavski-geto.jpg | Ludwig Knobloch | CC BY-SA 3.0 de | [izvor](https://en.wikipedia.org/wiki/Warsaw_Ghetto) |
+| razred8-istorija | vanzej.jpg | A.Savin | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Wannsee_Conference) |
+| razred8-istorija | katinj.jpg | unknown, probably Polish Red Cross delegation | Public domain | [izvor](https://en.wikipedia.org/wiki/Katyn_massacre) |
+| razred8-istorija | hag-tribunal.png | Popadius | Public domain | [izvor](https://en.wikipedia.org/wiki/International_Criminal_Tribunal_for_the_former_Yugoslavia) |
+| razred8-istorija | okupirana-srbija.png | German government | Public domain | [izvor](https://en.wikipedia.org/wiki/Territory_of_the_Military_Commander_in_Serbia) |
+| razred8-istorija | podela-jugoslavije.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/World_War_II_in_Yugoslavia) |
+| razred8-istorija | aprilski-rat.jpg | Maps Department of the U.S. Military Academy, West Point. | Public domain | [izvor](https://en.wikipedia.org/wiki/Invasion_of_Yugoslavia) |
+| razred8-istorija | nedic.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Milan_Nedi%C4%87) |
+| razred8-istorija | banjica.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Banjica_concentration_camp) |
+| razred8-istorija | ljotic.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Dimitrije_Ljoti%C4%87) |
+| razred8-istorija | kozara.jpg | The original uploader was Meteodub at Croatian Wikipedia. | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Kozara) |
+| razred8-istorija | subasic.jpg | SFR Yugoslavia | Public domain | [izvor](https://en.wikipedia.org/wiki/Ivan_%C5%A0uba%C5%A1i%C4%87) |
+| razred8-istorija | racija.jpg | Unknown author. | Public domain | [izvor](https://en.wikipedia.org/wiki/Novi_Sad_raid) |
+| razred8-istorija | diana.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Diana_Budisavljevi%C4%87) |
+| razred8-istorija | rds1.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/RDS-1) |
+| razred8-istorija | car-bomba.png | ? | ? | [izvor](https://en.wikipedia.org/wiki/Tsar_Bomba) |
+| razred8-istorija | pad-sajgona.webp | Hubert van Es | Public domain | [izvor](https://en.wikipedia.org/wiki/Fall_of_Saigon) |
+| razred8-istorija | ben-gurion.jpg | Rudi Weissenstein | Public domain | [izvor](https://en.wikipedia.org/wiki/Israeli_Declaration_of_Independence) |
+| razred8-istorija | vudstok.jpg | Arnold Skolnick | Public domain | [izvor](https://en.wikipedia.org/wiki/Woodstock) |
+| razred8-istorija | televizor.jpg | Klaus Nahr from Germany | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Television_set) |
+| razred8-istorija | studenti-1968.jpg | Stevan Kragujević | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/1968_student_demonstrations_in_Yugoslavia) |
+| razred8-istorija | bovoar.jpg | Moshe Milner | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Simone_de_Beauvoir) |
+| razred8-istorija | trzni-centar.jpg | Farragutful | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Shopping_mall) |
+| razred8-istorija | ratovi-zvezda.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Star_Wars_(film)) |
+| razred8-istorija | dan-planete.png | John McConnell (flag designer)NASA (Earth photograph)SiBr4 (flag image) | Public domain | [izvor](https://en.wikipedia.org/wiki/Earth_Day) |
+| razred8-istorija | ujedinjenje-nemacke.jpg | Unknown photographer, Reproduction by Lear 21 at English Wikipedia. | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/German_reunification) |
+| razred8-istorija | havel.jpg | Kingkongphoto & www.celebrity-photos.com from Laurel Maryland, USA | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/V%C3%A1clav_Havel) |
+| razred8-istorija | causesku.jpg | Unknown authorUnknown author | Attribution | [izvor](https://en.wikipedia.org/wiki/Nicolae_Ceau%C8%99escu) |
+| razred8-istorija | rimski-ugovori.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Treaty_of_Rome) |
+| razred8-istorija | helsinki-1975.jpg | Rabax63 | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Helsinki_Accords) |
+| razred8-istorija | cekpoint-carli.jpg | Roger Wollstadt | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Checkpoint_Charlie) |
+| razred8-istorija | breznjev.jpg | Vladimir Musaelyan | CC0 | [izvor](https://en.wikipedia.org/wiki/Leonid_Brezhnev) |
+| razred8-istorija | grb-sfrj.png | Đorđe Andrejević-Kun | Public domain | [izvor](https://en.wikipedia.org/wiki/Emblem_of_Yugoslavia) |
+| razred8-istorija | rankovic.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Aleksandar_Rankovi%C4%87) |
+| razred8-istorija | djilas.jpg | Stevan Kragujević | CC BY-SA 3.0 rs | [izvor](https://en.wikipedia.org/wiki/Milovan_Djilas) |
+| razred8-istorija | nesvrstani-1961.png | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/1st_Summit_of_the_Non-Aligned_Movement) |
+| razred8-istorija | savka.jpg | The original uploader was Hns at Croatian Wikipedia. | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Savka_Dab%C4%8Devi%C4%87-Ku%C4%8Dar) |
+| razred8-istorija | stafeta.jpg | Pinki at Serbian Wikipedia | Public domain | [izvor](https://en.wikipedia.org/wiki/Relay_of_Youth) |
+| razred8-istorija | bijelo-dugme.png | Jalapeño | Public domain | [izvor](https://en.wikipedia.org/wiki/Bijelo_Dugme) |
+| razred8-istorija | radne-akcije.jpg | Goldfinger at Serbian Wikipedia | Public domain | [izvor](https://en.wikipedia.org/wiki/Youth_work_actions) |
+| razred8-istorija | pasos.jpg | Raso mk | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Yugoslav_passport) |
+| razred8-istorija | kusturica.jpg | Пресс-служба Президента Российской Федерации | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Emir_Kusturica) |
+| razred8-istorija | autoput.png | SFR_Yugoslavia_autoput_pl.svg: User:PM/pl:Wikipedysta:P derivative work: NNW (ta | Public domain | [izvor](https://en.wikipedia.org/wiki/Brotherhood_and_Unity_Highway) |
+| razred8-istorija | pioniri.png | Ericmetro | Public domain | [izvor](https://en.wikipedia.org/wiki/Union_of_Pioneers_of_Yugoslavia) |
+| razred8-istorija | slet.jpg | Andrey Butko | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Youth_Day) |
+| razred8-istorija | 14-kongres.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/14th_Congress_of_the_League_of_Communists_of_Yugoslavia) |
+| razred8-istorija | milosevic.jpg | Stevan Kragujević | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Slobodan_Milo%C5%A1evi%C4%87) |
+| razred8-istorija | jna.png | Originally byApiya (talk), overhauled by User:Ericmetro. | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Yugoslav_People's_Army) |
+| razred8-istorija | badinter.jpg | European Parliament Multimedia Centre | European Parliament | [izvor](https://en.wikipedia.org/wiki/Robert_Badinter) |
+| razred8-istorija | dejton.jpg | U.S. Air Force/Staff Sgt. Brian Schlumbohm | Public domain | [izvor](https://en.wikipedia.org/wiki/Dayton_Agreement) |
+| razred8-istorija | oluja.jpg | CIA, from "Balkan Battlegrounds", 2003 | Public domain | [izvor](https://en.wikipedia.org/wiki/Operation_Storm) |
+| razred8-istorija | opsada-sarajeva.jpg | Photo: Mikhail Evstafiev | CC0 | [izvor](https://en.wikipedia.org/wiki/Siege_of_Sarajevo) |
+| razred8-istorija | vrbanja.jpg | Jennifer Boyer from Fredrick, Maryland, USA | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Suada_and_Olga_bridge) |
+| razred8-istorija | kfor.png | Madboy74. | Public domain | [izvor](https://en.wikipedia.org/wiki/Kosovo_Force) |
+| razred8-istorija | zastava-eu.png | User:Verdy p, User:-xfi-, User:Paddu, User:Nightstallion, User:Funakoshi, User:J | Public domain | [izvor](https://en.wikipedia.org/wiki/Flag_of_Europe) |
+| razred8-istorija | 11-septembar.jpg | Flickr user Michael Foran | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/September_11_attacks) |
+| razred8-istorija | vto.png | BlankMap-World6.svg: Happenstance et al / derivative work: Danlaycock | Public domain | [izvor](https://en.wikipedia.org/wiki/World_Trade_Organization) |
+| razred8-istorija | sangaj.jpg | xiquinhosilva | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Shanghai) |
+| razred8-istorija | glecer.jpg | July 7th, 1909 by Ulysses Sherman Grant, USGS photo library, public domain 2 Aug | Public domain | [izvor](https://en.wikipedia.org/wiki/Retreat_of_glaciers_since_1850) |
+| razred8-istorija | leman.jpg | David Shankbone | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Lehman_Brothers) |
+| razred8-istorija | arpanet.png | ARPANET | Public domain | [izvor](https://en.wikipedia.org/wiki/ARPANET) |
+| razred8-istorija | 500-milijardi.jpg | National Bank of Yugoslavia | Public domain | [izvor](https://en.wikipedia.org/wiki/Hyperinflation_in_Serbia_and_Montenegro) |
+| razred8-istorija | pogrom-2004.jpg | Dozetdarko at Serbian Wikipedia | CC BY-SA 3.0 rs | [izvor](https://en.wikipedia.org/wiki/2004_unrest_in_Kosovo) |
+| razred8-istorija | berlemon.jpg | EmDee | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Berlaymont_building) |
+| razred8-istorija | kostunica.jpg | European People's Party | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Vojislav_Ko%C5%A1tunica) |
+| razred8-istorija | skupstina.jpg | Boris Dimitrov | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/House_of_the_National_Assembly%2C_Belgrade) |
+| razred8-istorija | radio-mikrofon.jpg | Holger.Ellgaard | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Microphone) |
+| razred8-istorija | vidovdanski-ustav.jpg | official document | Public domain | [izvor](https://sr.wikipedia.org/wiki/%D0%A3%D1%81%D1%82%D0%B0%D0%B2_%D0%9A%D1%80%D0%B0%D1%99%D0%B5%D0%B2%D0%B8%D0%BD%D0%B5_%D0%A1%D1%80%D0%B1%D0%B0%2C_%D0%A5%D1%80%D0%B2%D0%B0%D1%82%D0%B0_%D0%B8_%D0%A1%D0%BB%D0%BE%D0%B2%D0%B5%D0%BD%D0%B0%D1%86%D0%B0) |
+| razred8-istorija | aeroput.jpg | ? | ? | [izvor](https://sr.wikipedia.org/wiki/%D0%90%D0%B5%D1%80%D0%BE%D0%BF%D1%83%D1%82) |
+| razred8-istorija | marko-ristic.jpg | ? | ? | [izvor](https://sr.wikipedia.org/wiki/%D0%9C%D0%B0%D1%80%D0%BA%D0%BE_%D0%A0%D0%B8%D1%81%D1%82%D0%B8%D1%9B) |
+| razred8-istorija | maklin.jpg | ? | ? | [izvor](https://sr.wikipedia.org/wiki/%D0%A4%D0%B8%D1%86%D1%80%D0%BE%D1%98_%D0%9C%D0%B0%D0%BA%D0%BB%D0%B5%D1%98%D0%BD) |
+| razred8-istorija | groblje-oslobodilaca.jpg | Andrija12345678 | CC BY-SA 4.0 | [izvor](https://sr.wikipedia.org/wiki/%D0%93%D1%80%D0%BE%D0%B1%D1%99%D0%B5_%D0%BE%D1%81%D0%BB%D0%BE%D0%B1%D0%BE%D0%B4%D0%B8%D0%BB%D0%B0%D1%86%D0%B0_%D0%91%D0%B5%D0%BE%D0%B3%D1%80%D0%B0%D0%B4%D0%B0_1944.) |
+| razred8-istorija | jajinci.jpg | Snežana Negovanović | CC BY-SA 3.0 | [izvor](https://sr.wikipedia.org/wiki/%D0%A1%D0%BF%D0%BE%D0%BC%D0%B5%D0%BD-%D0%BF%D0%B0%D1%80%D0%BA_%D0%88%D0%B0%D1%98%D0%B8%D0%BD%D1%86%D0%B8) |
+| razred8-istorija | trabant.jpg | Damian B Oh | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Trabant_601) |
+| razred8-istorija | riva.jpg | ? | ? | [izvor](https://sr.wikipedia.org/wiki/%D0%A0%D0%B8%D0%B2%D0%B0_(%D0%BC%D1%83%D0%B7%D0%B8%D1%87%D0%BA%D0%B0_%D0%B3%D1%80%D1%83%D0%BF%D0%B0)) |
+| razred8-istorija | surogat.jpg | ? | ? | [izvor](https://sr.wikipedia.org/wiki/Surogat_(film)) |
+| razred8-istorija | mitinzi.png | PANONIAN and Ijanderson977 | Public domain | [izvor](https://sr.wikipedia.org/wiki/%D0%90%D0%BD%D1%82%D0%B8%D0%B1%D0%B8%D1%80%D0%BE%D0%BA%D1%80%D0%B0%D1%82%D1%81%D0%BA%D0%B0_%D1%80%D0%B5%D0%B2%D0%BE%D0%BB%D1%83%D1%86%D0%B8%D1%98%D0%B0) |
+| razred8-istorija | srdjan-aleksic.jpg | ? | ? | [izvor](https://sr.wikipedia.org/wiki/%D0%A1%D1%80%D1%92%D0%B0%D0%BD_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B8%D1%9B) |
 | sport-fudbal | pele.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Pel%C3%A9) |
 | sport-fudbal | trofej-ls.jpg | David Flores | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/European_Champion_Clubs'_Cup) |
 | sport-fudbal | luis-enrike.jpg | Lluís from Sabadell (Barcelona), España | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Luis_Enrique) |
@@ -1453,8 +1713,8 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | srpska-istorija | dusan.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Stefan_Du%C5%A1an) |
 | srpska-istorija | lazar.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Lazar_of_Serbia) |
 | srpska-istorija | despot-stefan.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Stefan_Lazarevi%C4%87) |
-| srpska-istorija | cvijic.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Jovan_Cviji%C4%87) |
-| srpska-istorija | petar-prvi.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Peter_I_of_Serbia) |
+| srpska-istorija | cvijic.jpg | Milan Jovanović | Public domain | [izvor](https://en.wikipedia.org/wiki/Jovan_Cviji%C4%87) |
+| srpska-istorija | petar-prvi.jpg | Milan Jovanović | Public domain | [izvor](https://en.wikipedia.org/wiki/Peter_I_of_Serbia) |
 | srpska-istorija | milunka.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Milunka_Savi%C4%87) |
 | srpska-istorija | misic.jpg | — | Public domain | [izvor](https://en.wikipedia.org/wiki/%C5%BDivojin_Mi%C5%A1i%C4%87) |
 | srpska-istorija | putnik.jpg | Brock1990 | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Radomir_Putnik) |
@@ -1473,13 +1733,13 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | srpska-istorija | elsi-inglis.jpg | Balfour, Lady Francis | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Elsie_Inglis) |
 | srpska-istorija | flora-sends.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Flora_Sandes) |
 | srpska-istorija | hajduk-veljko.jpg | Uroš Knežević | Public domain | [izvor](https://en.wikipedia.org/wiki/Hajduk_Veljko) |
-| srpska-istorija | garasanin.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Ilija_Gara%C5%A1anin) |
+| srpska-istorija | garasanin.jpg | Stojanović/Karastoyanov, Anastas Nikolov | Public domain | [izvor](https://en.wikipedia.org/wiki/Ilija_Gara%C5%A1anin) |
 | srpska-istorija | kneginja-ljubica.jpg | AnonymousUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Ljubica_Vukomanovi%C4%87) |
 | srpska-istorija | stepa.jpg | — | Public domain | [izvor](https://en.wikipedia.org/wiki/Stepa_Stepanovi%C4%87) |
 | srpska-istorija | bojovic.jpg | — | Public domain | [izvor](https://en.wikipedia.org/wiki/Petar_Bojovi%C4%87) |
 | srpska-istorija | kralj-aleksandar.jpg | http://sr.wikipedia.org/wiki/%D0%9A%D0%BE%D1%80%D0%B8%D1%81%D0%BD%D0%B8%D0%BA:Dj | Public domain | [izvor](https://en.wikipedia.org/wiki/Alexander_I_of_Yugoslavia) |
-| srpska-istorija | knez-mihailo.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Mihailo_Obrenovi%C4%87%2C_Prince_of_Serbia) |
-| srpska-istorija | kralj-milan.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Milan_I_of_Serbia) |
+| srpska-istorija | knez-mihailo.jpg | Johann Böss | Public domain | [izvor](https://en.wikipedia.org/wiki/Mihailo_Obrenovi%C4%87%2C_Prince_of_Serbia) |
+| srpska-istorija | kralj-milan.jpg | Josef Löwy | Public domain | [izvor](https://en.wikipedia.org/wiki/Milan_I_of_Serbia) |
 | srpska-istorija | novo-brdo.jpg | Arben Llapashtica | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Novo_Brdo_Fortress) |
 | srpska-istorija | niska-tvrdjava.jpg | J tomic m | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Ni%C5%A1_Fortress) |
 | srpska-istorija | stari-ras.jpg | Саша Стефановић!!! (talk) The original uploader was Kolossus at English Wikipedi | Public domain | [izvor](https://en.wikipedia.org/wiki/Stari_Ras) |
@@ -1494,7 +1754,7 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | srpska-istorija | milutin.jpg | Unknown Serbian painter | Public domain | [izvor](https://en.wikipedia.org/wiki/Stefan_Milutin) |
 | srpska-istorija | smederevska-tvrdjava.jpg | Duja | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Smederevo_Fortress) |
 | srpska-istorija | kosovski-boj.jpg | Adam Stefanović | Public domain | [izvor](https://en.wikipedia.org/wiki/Battle_of_Kosovo) |
-| srpska-istorija | berlinski-kongres.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Congress_of_Berlin) |
+| srpska-istorija | berlinski-kongres.jpg | Anton von Werner | Public domain | [izvor](https://en.wikipedia.org/wiki/Congress_of_Berlin) |
 | srpska-istorija | knez-mihailova.jpg | DKjellby | CC0 | [izvor](https://en.wikipedia.org/wiki/Knez_Mihailova_Street) |
 | srpska-istorija | cele-kula.jpg | martijnmunneke | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Skull_Tower) |
 | srpska-istorija | prvovencani.jpg | Unknown | CC0 | [izvor](https://en.wikipedia.org/wiki/Stefan_the_First-Crowned) |
@@ -1502,15 +1762,15 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | srpska-istorija | dusanov-zakonik.jpg | Vukašin of Serbia | Public domain | [izvor](https://en.wikipedia.org/wiki/Du%C5%A1an's_Code) |
 | srpska-istorija | dragutin.jpg | — | Public domain | [izvor](https://en.wikipedia.org/wiki/Stefan_Dragutin) |
 | srpska-istorija | jelena-anzujska.jpg | Unknow Serbian Orthodox afresco painter | CC0 | [izvor](https://en.wikipedia.org/wiki/Saint_Helen_of_Serbia) |
-| srpska-istorija | sanu.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Serbian_Academy_of_Sciences_and_Arts) |
+| srpska-istorija | sanu.jpg | en:User:LukaP at en.wikipedia | Public domain | [izvor](https://en.wikipedia.org/wiki/Serbian_Academy_of_Sciences_and_Arts) |
 | srpska-istorija | albanska-golgota.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Great_Retreat_(Serbia)) |
 | srpska-istorija | simonida.jpg | RunnerTrees | CC0 | [izvor](https://en.wikipedia.org/wiki/Simonida) |
 | srpska-istorija | karlovci.jpg | Ванилица | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Karlovci_Gymnasium) |
 | srpska-istorija | gavrilovic.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Dragutin_Gavrilovi%C4%87) |
 | srpska-istorija | ram.jpg | Milica Buha | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Ram_Fortress) |
-| srpska-istorija | draga.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Draga_Ma%C5%A1in) |
+| srpska-istorija | draga.jpg | — | Public domain | [izvor](https://en.wikipedia.org/wiki/Draga_Ma%C5%A1in) |
 | srpska-istorija | nikola-prvi.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Nicholas_I_of_Montenegro) |
-| srpska-istorija | aleksandar-obrenovic.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Alexander_I_of_Serbia) |
+| srpska-istorija | aleksandar-obrenovic.jpg | Mijatovic, Cedomilj, 1842-1932 | Public domain | [izvor](https://en.wikipedia.org/wiki/Alexander_I_of_Serbia) |
 | srpska-istorija | ljeviska.jpg | Geoastra | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Our_Lady_of_Ljevi%C5%A1) |
 | srpska-istorija | momcilo.jpg | Unknown authorUnknown author | Public domain | [izvor](https://commons.wikimedia.org/wiki/File%3AMomcilo%20Gavric%201918.jpg) |
 | srpska-istorija | pohvala.jpg | Nun Jefimija | Public domain | [izvor](https://commons.wikimedia.org/wiki/File%3APohvala%20knezu%20Lazaru.jpg) |
@@ -1518,6 +1778,13 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | srpska-istorija | matica.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Matica_srpska) |
 | srpska-istorija | crveni-krst.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Crveni_Krst_concentration_camp) |
 | srpska-istorija | kadinjaca.jpg | Ванилица | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Kadinja%C4%8Da) |
+| srpska-istorija | halijard.jpg | Aleksandar Simić | CC BY-SA 4.0 | [izvor](https://commons.wikimedia.org/wiki/File%3APranjani%20Ceremony%20September%206%201944.jpg) |
+| srpska-istorija | olivera.jpg | Peter Johann Nepomuk Geiger | Public domain | [izvor](https://en.wikipedia.org/wiki/Olivera_Lazarevi%C4%87) |
+| srpska-istorija | novine-srbske.jpg | ХЕРАЛДИКА СССС | Public domain | [izvor](https://sr.wikipedia.org/wiki/%D0%9D%D0%BE%D0%B2%D0%B8%D0%BD%D0%B5_%D1%81%D1%80%D0%B1%D1%81%D0%BA%D0%B5) |
+| srpska-istorija | binicki.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Stanislav_Bini%C4%8Dki) |
+| srpska-istorija | beograd-1944.jpg | Yevgeny Khaldei | Public domain | [izvor](https://en.wikipedia.org/wiki/Belgrade_offensive) |
+| srpska-istorija | bombardovanje-1941.jpg | Unknown authorUnknown author | CC BY-SA 3.0 de | [izvor](https://commons.wikimedia.org/wiki/File%3ABundesarchiv%20Bild%20141-1005%2C%20Belgrad%2C%20Zerst%C3%B6rungen.jpg) |
+| srpska-istorija | karadjordje-film.jpg | Unknown authorUnknown author | Public domain | [izvor](https://commons.wikimedia.org/wiki/File%3AKara%C4%91or%C4%91e%2C%201911%20film.jpg) |
 | srpski-jezik | vuk.jpg | J.B.Rotfmayer | Public domain | [izvor](https://en.wikipedia.org/wiki/Vuk_Karad%C5%BEi%C4%87) |
 | srpski-jezik | dositej.png | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Dositej_Obradovi%C4%87) |
 | srpski-jezik | desanka.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Desanka_Maksimovi%C4%87) |
@@ -1526,7 +1793,7 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | srpski-jezik | nusic.jpg | Milan Jovanović (1863-1944) | Public domain | [izvor](https://en.wikipedia.org/wiki/Branislav_Nu%C5%A1i%C4%87) |
 | srpski-jezik | copic.jpg | Stevan Kragujević | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Branko_%C4%86opi%C4%87) |
 | srpski-jezik | salute.jpg | This Photo was taken by Wolfgang Moroder. Feel free to use my photos, but please | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Santa_Maria_della_Salute) |
-| srpski-jezik | sterija.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Jovan_Sterija_Popovi%C4%87) |
+| srpski-jezik | sterija.jpg | Jovan Popović (painter) | Public domain | [izvor](https://en.wikipedia.org/wiki/Jovan_Sterija_Popovi%C4%87) |
 | srpski-jezik | sremac.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Stevan_Sremac) |
 | srpski-jezik | radicevic.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Branko_Radi%C4%8Devi%C4%87) |
 | srpski-jezik | crnjanski.jpg | Unknown authorUnknown author | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Milo%C5%A1_Crnjanski) |
@@ -1566,7 +1833,7 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | svetska-istorija | lincoln.jpg | Alexander Gardner | Public domain | [izvor](https://en.wikipedia.org/wiki/Abraham_Lincoln) |
 | svetska-istorija | gandi.jpg | Elliott & Fry | Public domain | [izvor](https://en.wikipedia.org/wiki/Mahatma_Gandhi) |
 | svetska-istorija | mandela.jpg | Kingkongphoto & www.celebrity-photos.com from Laurel | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Nelson_Mandela) |
-| svetska-istorija | gagarin.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Yuri_Gagarin) |
+| svetska-istorija | gagarin.jpg | Александр Моклецов / СовИнформБюро | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Yuri_Gagarin) |
 | svetska-istorija | armstrong.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Neil_Armstrong) |
 | svetska-istorija | bastilja.jpg | Unidentified painter | Public domain | [izvor](https://en.wikipedia.org/wiki/Storming_of_the_Bastille) |
 | svetska-istorija | gutenberg.jpg | Kenneth C. Zirkel | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Johannes_Gutenberg) |
@@ -1604,7 +1871,7 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | svetska-istorija | abu-simbel.jpg | youssef_alam | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Abu_Simbel) |
 | svetska-istorija | nefertiti.jpg | Philip Pikart | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Nefertiti_Bust) |
 | svetska-istorija | marko-aurelije.jpg | Merulana | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Equestrian_statue_of_Marcus_Aurelius) |
-| svetska-istorija | kraljica-viktorija.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Queen_Victoria) |
+| svetska-istorija | kraljica-viktorija.jpg | Alexander Bassano | Public domain | [izvor](https://en.wikipedia.org/wiki/Queen_Victoria) |
 | svetska-istorija | petar-veliki.jpg | Attributed to Jean-Marc Nattier | Public domain | [izvor](https://en.wikipedia.org/wiki/Peter_the_Great) |
 | svetska-istorija | katarina-velika.jpg | After Alexander Roslin | Public domain | [izvor](https://en.wikipedia.org/wiki/Catherine_the_Great) |
 | svetska-istorija | bolivar.jpg | Luis Enrique Toro Moreno (1897-1933) | Public domain | [izvor](https://en.wikipedia.org/wiki/Sim%C3%B3n_Bol%C3%ADvar) |
@@ -1634,7 +1901,7 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | svetska-istorija | sulejman.jpg | Circle of Titian | Public domain | [izvor](https://en.wikipedia.org/wiki/Suleiman_the_Magnificent) |
 | svetska-istorija | becki-kongres.jpg | Alexander Altenhof | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Congress_of_Vienna) |
 | svetska-istorija | lajka.jpg | Музей космонавтики / Главархив Москвы | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Laika) |
-| svetska-istorija | bigl.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/HMS_Beagle) |
+| svetska-istorija | bigl.jpg | R. T. Pritchett | Public domain | [izvor](https://en.wikipedia.org/wiki/HMS_Beagle) |
 | svetska-istorija | ford-t.jpg | ModelTMitch | Public domain | [izvor](https://en.wikipedia.org/wiki/Ford_Model_T) |
 | svetska-istorija | bitka-bec.jpg | Anonymer, zeitgenössischer Maler | Public domain | [izvor](https://en.wikipedia.org/wiki/Battle_of_Vienna) |
 | svetska-istorija | drzic.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Marin_Dr%C5%BEi%C4%87) |
@@ -1679,42 +1946,42 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | umetnost | zevsov-kip.jpg | Quatremère de Quincy | Public domain | [izvor](https://en.wikipedia.org/wiki/Statue_of_Zeus_at_Olympia) |
 | umetnost | mauzolej.jpg | Jona Lendering | CC0 | [izvor](https://en.wikipedia.org/wiki/Mausoleum_at_Halicarnassus) |
 | umetnost | notr-dam.jpg | Ali Sabbagh | CC0 | [izvor](https://en.wikipedia.org/wiki/Notre-Dame_de_Paris) |
-| umetnost | nadezda-petrovic.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Nade%C5%BEda_Petrovi%C4%87) |
+| umetnost | nadezda-petrovic.jpg | AnonymousUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Nade%C5%BEda_Petrovi%C4%87) |
 | umetnost | paja-jovanovic.jpg | Milan Jovanović (1863–1944) | Public domain | [izvor](https://en.wikipedia.org/wiki/Pavle_Paja_Jovanovi%C4%87) |
 | umetnost | gernika-zgrada.jpg | Naotake Murayama | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Guggenheim_Museum_Bilbao) |
 | umetnost | ajfelova-kula.jpg | Benh LIEU SONG | Public domain | [izvor](https://commons.wikimedia.org/wiki/File%3ATour%20Eiffel%20Wikimedia%20Commons.jpg) |
-| umetnost | david.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/David_(Michelangelo)) |
-| umetnost | lokvanji.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Water_Lilies_(Monet_series)) |
-| umetnost | poljubac.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/The_Kiss_(Klimt)) |
+| umetnost | david.jpg | Jörg Bittner Unna | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/David_(Michelangelo)) |
+| umetnost | lokvanji.jpg | Claude Monet | Public domain | [izvor](https://en.wikipedia.org/wiki/Water_Lilies_(Monet_series)) |
+| umetnost | poljubac.jpg | Gustav Klimt | Public domain | [izvor](https://en.wikipedia.org/wiki/The_Kiss_(Klimt)) |
 | umetnost | djura-jaksic.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/%C4%90ura_Jak%C5%A1i%C4%87) |
-| umetnost | kelnska-katedrala.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Cologne_Cathedral) |
+| umetnost | kelnska-katedrala.jpg | Raimond Spekking | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Cologne_Cathedral) |
 | umetnost | subotica-gradska-kuca.jpg | Sunce Niš | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Subotica_City_Hall) |
-| umetnost | narodna-skupstina.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/House_of_the_National_Assembly%2C_Belgrade) |
-| umetnost | palata-albanija.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Palace_Albanija) |
-| umetnost | atinska-skola.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/The_School_of_Athens) |
-| umetnost | mlekarica.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/The_Milkmaid_(Vermeer)) |
-| umetnost | treci-maj.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/The_Third_of_May_1808) |
-| umetnost | venera-miloska.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Venus_de_Milo) |
-| umetnost | mislilac.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/The_Thinker) |
-| umetnost | kuca-batljo.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Casa_Batll%C3%B3) |
-| umetnost | panteon.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Pantheon%2C_Rome) |
-| umetnost | firentinska-katedrala.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Florence_Cathedral) |
-| umetnost | grand-zat.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/A_Sunday_Afternoon_on_the_Island_of_La_Grande_Jatte) |
-| umetnost | vilendorf.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Venus_of_Willendorf) |
-| umetnost | veliki-talas.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/The_Great_Wave_off_Kanagawa) |
-| umetnost | americka-gotika.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/American_Gothic) |
-| umetnost | laokon.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Laoco%C3%B6n_and_His_Sons) |
-| umetnost | lovci-u-snegu.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/The_Hunters_in_the_Snow) |
-| umetnost | vavilonska-kula.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/The_Tower_of_Babel_(Bruegel)) |
-| umetnost | vrt-uzivanja.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/The_Garden_of_Earthly_Delights) |
-| umetnost | las-meninas.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Las_Meninas) |
-| umetnost | splav-meduze.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/The_Raft_of_the_Medusa) |
+| umetnost | narodna-skupstina.jpg | Boris Dimitrov | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/House_of_the_National_Assembly%2C_Belgrade) |
+| umetnost | palata-albanija.jpg | Vladimir Babic | Public domain | [izvor](https://en.wikipedia.org/wiki/Palace_Albanija) |
+| umetnost | atinska-skola.jpg | Raphael | Public domain | [izvor](https://en.wikipedia.org/wiki/The_School_of_Athens) |
+| umetnost | mlekarica.jpg | Johannes Vermeer | Public domain | [izvor](https://en.wikipedia.org/wiki/The_Milkmaid_(Vermeer)) |
+| umetnost | treci-maj.jpg | El_Tres_de_Mayo,_by_Francisco_de_Goya,_from_Prado_in_Google_Earth.jpg: Francisco | Public domain | [izvor](https://en.wikipedia.org/wiki/The_Third_of_May_1808) |
+| umetnost | venera-miloska.jpg | Livioandronico2013 | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Venus_de_Milo) |
+| umetnost | mislilac.jpg | Kaisching | Public domain | [izvor](https://en.wikipedia.org/wiki/The_Thinker) |
+| umetnost | kuca-batljo.jpg | ChristianSchd | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Casa_Batll%C3%B3) |
+| umetnost | panteon.jpg | NikonZ7II | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Pantheon%2C_Rome) |
+| umetnost | firentinska-katedrala.jpg | Gary Campbell-Hall | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Florence_Cathedral) |
+| umetnost | grand-zat.jpg | Georges Seurat | Public domain | [izvor](https://en.wikipedia.org/wiki/A_Sunday_Afternoon_on_the_Island_of_La_Grande_Jatte) |
+| umetnost | vilendorf.jpg | User:MatthiasKabel | CC BY 2.5 | [izvor](https://en.wikipedia.org/wiki/Venus_of_Willendorf) |
+| umetnost | veliki-talas.jpg | Katsushika Hokusai | Public domain | [izvor](https://en.wikipedia.org/wiki/The_Great_Wave_off_Kanagawa) |
+| umetnost | americka-gotika.jpg | Grant Wood | Public domain | [izvor](https://en.wikipedia.org/wiki/American_Gothic) |
+| umetnost | laokon.jpg | Wilfredor | CC0 | [izvor](https://en.wikipedia.org/wiki/Laoco%C3%B6n_and_His_Sons) |
+| umetnost | lovci-u-snegu.jpg | Pieter Brueghel the Elder | Public domain | [izvor](https://en.wikipedia.org/wiki/The_Hunters_in_the_Snow) |
+| umetnost | vavilonska-kula.jpg | Pieter Brueghel the Elder | Public domain | [izvor](https://en.wikipedia.org/wiki/The_Tower_of_Babel_(Bruegel)) |
+| umetnost | vrt-uzivanja.jpg | Hieronymus Bosch | Public domain | [izvor](https://en.wikipedia.org/wiki/The_Garden_of_Earthly_Delights) |
+| umetnost | las-meninas.jpg | Diego Velázquez | Public domain | [izvor](https://en.wikipedia.org/wiki/Las_Meninas) |
+| umetnost | splav-meduze.jpg | Théodore Géricault | Public domain | [izvor](https://en.wikipedia.org/wiki/The_Raft_of_the_Medusa) |
 | umetnost | sloboda-predvodi.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Liberty_Leading_the_People) |
 | umetnost | dorucak-na-travi.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Le_D%C3%A9jeuner_sur_l'herbe) |
 | umetnost | bal-mulen.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Bal_du_moulin_de_la_Galette) |
 | umetnost | terasa-kafea.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Caf%C3%A9_Terrace_at_Night) |
 | umetnost | sikstinska-madona.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Sistine_Madonna) |
-| umetnost | kapetan-misino.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Captain_Mi%C5%A1a_Mansion) |
+| umetnost | kapetan-misino.jpg | Jorge Láscar from Melbourne, Australia | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Captain_Mi%C5%A1a_Mansion) |
 | umetnost | alhambra.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Alhambra) |
 | umetnost | angkor-vat.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Angkor_Wat) |
 | umetnost | nojsvanstajn.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Neuschwanstein_Castle) |
@@ -1728,31 +1995,31 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | umetnost | vasilije-blazeni.jpg | Tsy1980 | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Saint_Basil's_Cathedral) |
 | umetnost | mondrijan.jpg | ? | ? | [izvor](https://commons.wikimedia.org/wiki/File%3APiet%20Mondriaan%2C%201930%20-%20Mondrian%20Composition%20II%20in%20Red%2C%20Blue%2C%20and%20Yellow.jpg) |
 | umetnost | fallingwater.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Fallingwater) |
-| umetnost | pijeta.jpg | original file by Stanislav Traykov | CC BY 2.5 | [izvor](https://en.wikipedia.org/wiki/Piet%C3%A0_(Michelangelo)) |
-| umetnost | vg-autoportret.jpg | Vincent van Gogh | Public domain | [izvor](https://en.wikipedia.org/wiki/Vincent_van_Gogh) |
-| umetnost | vg-uvo.jpg | Vincent van Gogh | Public domain | [izvor](https://en.wikipedia.org/wiki/Self-Portrait_with_Bandaged_Ear) |
-| umetnost | santa-marija.jpg | Marcin Białek | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Santa_Maria_delle_Grazie%2C_Milan) |
-| umetnost | sikstina.jpg | Antoine Taveneaux | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Sistine_Chapel_ceiling) |
-| umetnost | rijksmuzej.jpg | Trougnouf (Benoit Brummer) | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Rijksmuseum) |
-| umetnost | mone.jpg | Nadar | Public domain | [izvor](https://en.wikipedia.org/wiki/Claude_Monet) |
-| umetnost | predic.jpg | The original uploader was Бошко at Serbian Wikipedia. | CC BY 3.0 rs | [izvor](https://en.wikipedia.org/wiki/Uro%C5%A1_Predi%C4%87) |
-| umetnost | mikelandjelo.jpg | Attributed to Daniele da Volterra | Public domain | [izvor](https://en.wikipedia.org/wiki/Michelangelo) |
-| umetnost | mala-balerina.jpg | Edgar Degas | CC0 | [izvor](https://en.wikipedia.org/wiki/Little_Dancer_of_Fourteen_Years) |
-| umetnost | klimt.jpg | Josef Anton Trčka | Public domain | [izvor](https://en.wikipedia.org/wiki/Gustav_Klimt) |
-| umetnost | mondrijan-foto.jpg | AnonymousUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Piet_Mondrian) |
-| umetnost | rafael.jpg | Raphael | Public domain | [izvor](https://en.wikipedia.org/wiki/Raphael) |
-| umetnost | goja.jpg | Vicente López Portaña | Public domain | [izvor](https://en.wikipedia.org/wiki/Francisco_Goya) |
-| umetnost | hokusai.jpg | missing name | CC0 | [izvor](https://en.wikipedia.org/wiki/Hokusai) |
-| umetnost | bazilika-petar.jpg | Alvesgaspar | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/St._Peter's_Basilica) |
-| umetnost | milena.jpg | Fondacija Milenin dom – Galerija Milene Pavlović-Barili | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Milena_Pavlovi%C4%87-Barili) |
+| umetnost | pijeta.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Piet%C3%A0_(Michelangelo)) |
+| umetnost | vg-autoportret.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Vincent_van_Gogh) |
+| umetnost | vg-uvo.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Self-Portrait_with_Bandaged_Ear) |
+| umetnost | santa-marija.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Santa_Maria_delle_Grazie%2C_Milan) |
+| umetnost | sikstina.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Sistine_Chapel_ceiling) |
+| umetnost | rijksmuzej.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Rijksmuseum) |
+| umetnost | mone.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Claude_Monet) |
+| umetnost | predic.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Uro%C5%A1_Predi%C4%87) |
+| umetnost | mikelandjelo.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Michelangelo) |
+| umetnost | mala-balerina.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Little_Dancer_of_Fourteen_Years) |
+| umetnost | klimt.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Gustav_Klimt) |
+| umetnost | mondrijan-foto.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Piet_Mondrian) |
+| umetnost | rafael.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Raphael) |
+| umetnost | goja.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Francisco_Goya) |
+| umetnost | hokusai.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Hokusai) |
+| umetnost | bazilika-petar.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/St._Peter's_Basilica) |
+| umetnost | milena.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Milena_Pavlovi%C4%87-Barili) |
 | umetnost | mozaik.jpg | Petar Milošević | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Justinian_I) |
-| umetnost | pejzaz.jpg | John Constable | Public domain | [izvor](https://en.wikipedia.org/wiki/The_Hay_Wain) |
-| umetnost | direr.jpg | Albrecht Dürer | Public domain | [izvor](https://en.wikipedia.org/wiki/Self-Portrait_(D%C3%BCrer%2C_Munich)) |
-| umetnost | mrtva-priroda.jpg | Juan Sánchez Cotán | Public domain | [izvor](https://en.wikipedia.org/wiki/Still_life) |
-| umetnost | zec.jpg | Albrecht Dürer | Public domain | [izvor](https://en.wikipedia.org/wiki/Young_Hare) |
-| umetnost | leonardo.jpg | Leonardo da Vinci | Public domain | [izvor](https://en.wikipedia.org/wiki/Portrait_of_a_Man_in_Red_Chalk) |
-| umetnost | dali.jpg | Van Vechten, Carl, 1880-1964. | Public domain | [izvor](https://en.wikipedia.org/wiki/Salvador_Dal%C3%AD) |
-| umetnost | matis-sesir.jpg | Henri Matisse | Public domain | [izvor](https://en.wikipedia.org/wiki/Woman_with_a_Hat) |
+| umetnost | pejzaz.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/The_Hay_Wain) |
+| umetnost | direr.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Self-Portrait_(D%C3%BCrer%2C_Munich)) |
+| umetnost | mrtva-priroda.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Still_life) |
+| umetnost | zec.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Young_Hare) |
+| umetnost | leonardo.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Portrait_of_a_Man_in_Red_Chalk) |
+| umetnost | dali.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Salvador_Dal%C3%AD) |
+| umetnost | matis-sesir.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Woman_with_a_Hat) |
 | umetnost | frida.jpg | Guillermo Kahlo | Public domain | [izvor](https://en.wikipedia.org/wiki/Frida_Kahlo) |
 | umetnost | ufici.jpg | Arek N. | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Uffizi) |
 | umetnost | ermitaz.jpg | GAlexandrova | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Hermitage_Museum) |
