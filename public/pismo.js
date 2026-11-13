@@ -56,6 +56,8 @@
     'centum mille passus septem omnis cellula carpe diem mens sana corpore sano perpetuum mobile ' +
     // poreklo gramatičkih termina (Gramatika 7): lat. potentia, imperare…, grč. sýntagma, nem. Fußnote
     'potentia imperare congruentia particula copula reportare plagiarius citare aisthesis sýntagma onomatopoiía fußnote fuß ' +
+    // sport: nazivi timova i takmičenja, nadimci („Heat“, „Final Four“, „Adriatic Basketball Association“)
+    'heat suns joker djoker lakes adriatic basketball association four allez gallus ' +
     // muzičke oznake (italijanski)
     'allegro adagio crescendo decrescendo fortissimo pianissimo ff pp mf mp ' +
     // engleske službene reči (ne postoje u srpskom)
@@ -73,7 +75,7 @@
   // deo teksta (ceo tekst, navod, zagrada) koji je u celini strani naziv: sve reči su strane ili pišu velikim slovom,
   // a bar jedna je strana – „Ace of Base“, „(Elder Kettle)“, „(E.T. phone home)“; u takvom nazivu malim slovom smeju
   // i strane rečce – (Back to the Future), (La vita è bella), (Kimi no Na wa), (Hachi: A Dog's Tale)
-  const RECCE_NAZIVA = new Set(['to', 'no', 'il', 'la', 'le', 'un', 'di', 'd', 's', 'de', 'du', 'del', 'der', 'von', 'van', 'san', 'vita', 'in', 'a', 'ue', 'ka']);
+  const RECCE_NAZIVA = new Set(['to', 'no', 'il', 'la', 'le', 'un', 'di', 'd', 's', 'de', 'du', 'del', 'der', 'von', 'van', 'san', 'vita', 'in', 'a', 'ue', 'ka', 'll']);
   function straniNaziv(deo) {
     const reci = deo.match(/[A-Za-zČĆŽŠĐčćžšđ]+/g);
     if (!reci || !reci.some(strana)) return false;

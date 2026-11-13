@@ -1,0 +1,991 @@
+{
+  "naziv": "Srpski sport danas",
+  "ikona": "🇷🇸",
+  "boja": "#c6363c",
+  "opis": "Đoković, Jokić, vaterpolisti, odbojkašice, Orlovi i naši olimpijci",
+  "redosled": 62,
+  "oblast": "sport",
+  "pitanja": [
+    {
+      "tezina": 2,
+      "pitanje": "Na kom turniru je Novak Đoković 2008. osvojio svoj prvi grend slem?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/djokovic-mlad.jpg",
+        "zamagljeno": true
+      },
+      "odgovori": [
+        "Australijan open",
+        "Rolan Garos",
+        "Vimbldon",
+        "US open"
+      ],
+      "zanimljivost": "U finalu u Melburnu Novak je imao samo 20 godina. Australijan open je kasnije osvojio rekordnih 10 puta – nijedan teniser nije osvojio neki grend slem više puta, osim Nadala na Rolan Garosu (14).",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "australija",
+        "tacke": [
+          {
+            "lat": -37.81,
+            "lon": 144.96,
+            "oznaka": "Melburn",
+            "znak": "🎾"
+          }
+        ]
+      },
+      "rec": "melburn"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Đoković je 2025. osvojio 100. titulu u karijeri. Na kom turniru?",
+      "odgovori": [
+        "U Ženevi",
+        "U Majamiju",
+        "U Beogradu",
+        "U Monte Karlu"
+      ],
+      "zanimljivost": "Pre njega su 100 titula imali samo Džimi Konors (109) i Rodžer Federer (103). Svoju 99. titulu Novak je osvojio na Olimpijskim igrama u Parizu 2024.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "evropa",
+        "tacke": [
+          {
+            "lat": 46.2,
+            "lon": 6.14,
+            "oznaka": "Ženeva",
+            "znak": "🏆"
+          }
+        ]
+      },
+      "rec": "ženeva"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Đoković je rekorder završnog turnira sezone (ATP finale) sa 7 titula. U kom gradu se ovaj turnir igra od 2021?",
+      "mediji": {
+        "vrsta": "lenta",
+        "od": 2008,
+        "do": 2023,
+        "dogadjaji": [
+          {
+            "g": 2008,
+            "t": "Šangaj"
+          },
+          {
+            "g": 2012,
+            "t": "London"
+          },
+          {
+            "g": 2013,
+            "t": "London"
+          },
+          {
+            "g": 2014,
+            "t": "London"
+          },
+          {
+            "g": 2015,
+            "t": "London"
+          },
+          {
+            "g": 2022,
+            "t": "?",
+            "ist": true
+          },
+          {
+            "g": 2023,
+            "t": "?",
+            "ist": true
+          }
+        ]
+      },
+      "odgovori": [
+        "U Torinu",
+        "U Londonu",
+        "U Šangaju",
+        "U Parizu"
+      ],
+      "zanimljivost": "Na završni turnir idu samo osmorica najboljih tenisera godine. Pre Torina igrao se u Londonu (2009–2020), u dvorani O2. Rodžer Federer ima 6 titula.",
+      "rec": "torino"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koji mladi srpski teniser je 2023. pobedio na turniru najboljih tenisera do 21 godine (Next Gen ATP finale)?",
+      "odgovori": [
+        "Hamad Međedović",
+        "Miomir Kecmanović",
+        "Laslo Đere",
+        "Dušan Lajović"
+      ],
+      "zanimljivost": "Hamad je rođen u Novom Pazaru 2003. i kao dečak je trenirao u Teniskom centru Novaka Đokovića. U finalu u Džedi pobedio je Francuza Artura Filsa.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/medjedovic.jpg",
+        "opis": "Hamad Međedović"
+      },
+      "rec": "hamad"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Nenad Zimonjić bio je prvi teniser sveta – u kojoj vrsti igre?",
+      "odgovori": [
+        "U dublu (igra u paru)",
+        "U singlu (jedan na jedan)",
+        "U tenisu na pesku",
+        "U stonom tenisu"
+      ],
+      "zanimljivost": "Zimonjić je osvajao grend slem titule i u muškom i u mešovitom dublu. Bio je član tima Srbije koji je 2010. osvojio Dejvis kup, a kasnije i kapiten reprezentacije.",
+      "rec": "dubl"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "U kom gradu je rođena Monika Seleš, koja je sa 16 godina osvojila Rolan Garos?",
+      "odgovori": [
+        "U Novom Sadu",
+        "U Beogradu",
+        "U Subotici",
+        "U Zrenjaninu"
+      ],
+      "zanimljivost": "Seleš je osvojila 9 grend slemova i 1991. postala prva na svetu sa samo 17 godina. Bila je poznata po udarcima sa obe ruke i glasnom uzviku pri svakom udarcu.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "srbija",
+        "tacke": [
+          {
+            "lat": 45.26,
+            "lon": 19.84,
+            "oznaka": "Novi Sad",
+            "znak": "🎾"
+          }
+        ]
+      },
+      "rec": "novisad"
+    },
+    {
+      "vrsta": "uljez",
+      "tezina": 2,
+      "pitanje": "Ko od njih NIJE osvojio olimpijsko zlato?",
+      "odgovori": [
+        "Ana Ivanović",
+        "Novak Đoković",
+        "Milica Mandić",
+        "Jovana Preković"
+      ],
+      "objasnjenje": "Ana Ivanović je bila prva teniserka sveta i osvajačica Rolan Garosa, ali nije osvojila olimpijsku medalju. Đoković je zlato osvojio u Parizu 2024, Mandić u Londonu 2012. i Tokiju 2020, a Preković u Tokiju 2020.",
+      "zanimljivost": "Milica Mandić je prvo zlato osvojila u Londonu 2012. sa 20 godina, a drugo u Tokiju – devet godina kasnije.",
+      "rec": "zlato"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koju medalju su košarkaši Srbije osvojili na Olimpijskim igrama u Parizu 2024?",
+      "mediji": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\"><rect x=\"4\" y=\"4\" width=\"312\" height=\"142\" rx=\"14\" fill=\"#111\" stroke=\"#555\" stroke-width=\"3\"/><text x=\"160\" y=\"30\" font-size=\"15\" text-anchor=\"middle\" fill=\"#dfe6e9\">Pariz 2024. – za 3. mesto</text><rect x=\"20\" y=\"42\" width=\"110\" height=\"70\" rx=\"6\" fill=\"#000\"/><rect x=\"190\" y=\"42\" width=\"110\" height=\"70\" rx=\"6\" fill=\"#000\"/><text x=\"75\" y=\"98\" font-size=\"58\" font-weight=\"800\" text-anchor=\"middle\" fill=\"#ffb142\" font-family=\"monospace\">93</text><text x=\"245\" y=\"98\" font-size=\"58\" font-weight=\"800\" text-anchor=\"middle\" fill=\"#ffb142\" font-family=\"monospace\">83</text><text x=\"160\" y=\"92\" font-size=\"40\" text-anchor=\"middle\" fill=\"#ffb142\">:</text><text data-lat x=\"75\" y=\"134\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#fff\">SRB</text><text data-lat x=\"245\" y=\"134\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#fff\">GER</text><text x=\"160\" y=\"134\" font-size=\"16\" text-anchor=\"middle\" fill=\"#55efc4\">kraj</text></svg>"
+      },
+      "odgovori": [
+        "Bronzanu",
+        "Zlatnu",
+        "Srebrnu",
+        "Nisu osvojili medalju"
+      ],
+      "zanimljivost": "U utakmici za treće mesto Srbija je pobedila Nemačku. U Riju 2016. košarkaši su osvojili srebro, a izgubili su finale od SAD.",
+      "medijiOdgovora": {
+        "vrsta": "emodzi",
+        "tekst": "🥉🏀🇷🇸"
+      },
+      "rec": "bronza"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "U polufinalu OI 2024. Srbija je vodila protiv SAD i 17 poena. Ko je u finišu doneo pobedu Amerikancima sa 36 poena?",
+      "mediji": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\"><rect x=\"4\" y=\"4\" width=\"312\" height=\"142\" rx=\"14\" fill=\"#111\" stroke=\"#555\" stroke-width=\"3\"/><text x=\"160\" y=\"30\" font-size=\"15\" text-anchor=\"middle\" fill=\"#dfe6e9\">Pariz 2024. – polufinale</text><rect x=\"20\" y=\"42\" width=\"110\" height=\"70\" rx=\"6\" fill=\"#000\"/><rect x=\"190\" y=\"42\" width=\"110\" height=\"70\" rx=\"6\" fill=\"#000\"/><text x=\"75\" y=\"98\" font-size=\"58\" font-weight=\"800\" text-anchor=\"middle\" fill=\"#ffb142\" font-family=\"monospace\">95</text><text x=\"245\" y=\"98\" font-size=\"58\" font-weight=\"800\" text-anchor=\"middle\" fill=\"#ffb142\" font-family=\"monospace\">91</text><text x=\"160\" y=\"92\" font-size=\"40\" text-anchor=\"middle\" fill=\"#ffb142\">:</text><text data-lat x=\"75\" y=\"134\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#fff\">USA</text><text data-lat x=\"245\" y=\"134\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#fff\">SRB</text><text x=\"160\" y=\"134\" font-size=\"16\" text-anchor=\"middle\" fill=\"#55efc4\">kraj</text></svg>"
+      },
+      "odgovori": [
+        "Stefen Kari",
+        "Lebron Džejms",
+        "Kevin Durant",
+        "Džoel Embid"
+      ],
+      "zanimljivost": "Kari je pogodio 9 trojki, a SAD su pobedile 95:91. U grupi su SAD pobedile Srbiju mnogo lakše – 110:84.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/kari.jpg",
+        "opis": "Stefen Kari"
+      },
+      "rec": "kari"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Od koga je Srbija izgubila finale Svetskog prvenstva u košarci 2023. u Manili?",
+      "odgovori": [
+        "Od Nemačke",
+        "Od SAD",
+        "Od Kanade",
+        "Od Letonije"
+      ],
+      "zanimljivost": "Srbija je igrala bez Jokića, a ipak stigla do finala, u kom je izgubila 77:83. Selektor je bio Svetislav Pešić – koji je 1993. kao trener osvojio Evrobasket sa Nemačkom.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "azija",
+        "tacke": [
+          {
+            "lat": 14.6,
+            "lon": 120.98,
+            "oznaka": "Manila",
+            "znak": "🏀"
+          }
+        ]
+      },
+      "rec": "manila"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Gde je Jugoslavija 2002. postala prvak sveta u košarci – i usput pobedila SAD sa NBA zvezdama?",
+      "odgovori": [
+        "U Indijanapolisu (SAD)",
+        "U Atini (Grčka)",
+        "U Torontu (Kanada)",
+        "U Madridu (Španija)"
+      ],
+      "zanimljivost": "Bio je to prvi poraz američke reprezentacije sa NBA igračima na velikom takmičenju – i to kod kuće! U finalu je Jugoslavija posle produžetka pobedila Argentinu.",
+      "medijiOdgovora": {
+        "vrsta": "lenta",
+        "od": 1970,
+        "do": 2002,
+        "dogadjaji": [
+          {
+            "g": 1970,
+            "t": "Ljubljana"
+          },
+          {
+            "g": 1978,
+            "t": "Manila"
+          },
+          {
+            "g": 1990,
+            "t": "Buenos Ajres"
+          },
+          {
+            "g": 1998,
+            "t": "Atina"
+          },
+          {
+            "g": 2002,
+            "t": "?",
+            "ist": true
+          }
+        ]
+      },
+      "rec": "indijana"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliko puta su košarkašice Srbije bile prvakinje Evrope (zaključno sa 2025)?",
+      "mediji": {
+        "vrsta": "lenta",
+        "od": 2014,
+        "do": 2022,
+        "dogadjaji": [
+          {
+            "g": 2015,
+            "t": "?"
+          },
+          {
+            "g": 2016,
+            "t": "Rio"
+          },
+          {
+            "g": 2021,
+            "t": "?"
+          }
+        ]
+      },
+      "odgovori": [
+        "Dva puta",
+        "Nijednom",
+        "Jednom",
+        "Tri puta"
+      ],
+      "zanimljivost": "Prvakinje Evrope su postale 2015. i 2021, a 2016. u Riju su osvojile olimpijsku bronzu. Ana Dabović je bila jedna od najboljih igračica obe zlatne generacije.",
+      "rec": "košarkašica"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koju medalju je muška basket reprezentacija Srbije (3 na 3) osvojila na OI u Tokiju 2020?",
+      "mediji": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox=\"-6 -6 312 292\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\"><rect x=\"0\" y=\"0\" width=\"300\" height=\"280\" fill=\"#d9a066\"/><line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"280\" stroke=\"#c48a52\" stroke-width=\"1\"/><line x1=\"20\" y1=\"0\" x2=\"20\" y2=\"280\" stroke=\"#c48a52\" stroke-width=\"1\"/><line x1=\"40\" y1=\"0\" x2=\"40\" y2=\"280\" stroke=\"#c48a52\" stroke-width=\"1\"/><line x1=\"60\" y1=\"0\" x2=\"60\" y2=\"280\" stroke=\"#c48a52\" stroke-width=\"1\"/><line x1=\"80\" y1=\"0\" x2=\"80\" y2=\"280\" stroke=\"#c48a52\" stroke-width=\"1\"/><line x1=\"100\" y1=\"0\" x2=\"100\" y2=\"280\" stroke=\"#c48a52\" stroke-width=\"1\"/><line x1=\"120\" y1=\"0\" x2=\"120\" y2=\"280\" stroke=\"#c48a52\" stroke-width=\"1\"/><line x1=\"140\" y1=\"0\" x2=\"140\" y2=\"280\" stroke=\"#c48a52\" stroke-width=\"1\"/><line x1=\"160\" y1=\"0\" x2=\"160\" y2=\"280\" stroke=\"#c48a52\" stroke-width=\"1\"/><line x1=\"180\" y1=\"0\" x2=\"180\" y2=\"280\" stroke=\"#c48a52\" stroke-width=\"1\"/><line x1=\"200\" y1=\"0\" x2=\"200\" y2=\"280\" stroke=\"#c48a52\" stroke-width=\"1\"/><line x1=\"220\" y1=\"0\" x2=\"220\" y2=\"280\" stroke=\"#c48a52\" stroke-width=\"1\"/><line x1=\"240\" y1=\"0\" x2=\"240\" y2=\"280\" stroke=\"#c48a52\" stroke-width=\"1\"/><line x1=\"260\" y1=\"0\" x2=\"260\" y2=\"280\" stroke=\"#c48a52\" stroke-width=\"1\"/><line x1=\"280\" y1=\"0\" x2=\"280\" y2=\"280\" stroke=\"#c48a52\" stroke-width=\"1\"/><rect x=\"0\" y=\"0\" width=\"300\" height=\"280\" fill=\"none\" stroke=\"#fff\" stroke-width=\"3\"/><rect x=\"101\" y=\"0\" width=\"98\" height=\"116\" fill=\"#b5651d\" fill-opacity=\"0.55\" stroke=\"#fff\" stroke-width=\"2.5\"/><line x1=\"101\" y1=\"116\" x2=\"199\" y2=\"116\" stroke=\"#fff\" stroke-width=\"2.5\"/><path d=\"M114 116 A36 36 0 0 0 186 116\" fill=\"none\" stroke=\"#fff\" stroke-width=\"2.5\"/><path d=\"M114 116 A36 36 0 0 1 186 116\" fill=\"none\" stroke=\"#fff\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><path d=\"M18 0 L18 59.8 A135 135 0 0 0 282 59.8 L282 0\" fill=\"none\" fill-opacity=\".25\" stroke=\"#fff\" stroke-width=\"2.5\"/><path d=\"M125 31.5 A25 25 0 0 0 175 31.5\" fill=\"none\" stroke=\"#fff\" stroke-width=\"2.5\"/><path d=\"M114 280 A36 36 0 0 1 186 280\" fill=\"none\" fill-opacity=\".5\" stroke=\"#fff\" stroke-width=\"2.5\"/><line x1=\"132\" y1=\"24\" x2=\"168\" y2=\"24\" stroke=\"#fff\" stroke-width=\"4\"/><circle cx=\"150\" cy=\"31.5\" r=\"9\" fill=\"none\" stroke=\"#ff7f50\" stroke-width=\"3\"/><circle cx=\"90\" cy=\"150\" r=\"10\" fill=\"#c6363c\" stroke=\"#fff\" stroke-width=\"2\"/><circle cx=\"210\" cy=\"150\" r=\"10\" fill=\"#c6363c\" stroke=\"#fff\" stroke-width=\"2\"/><circle cx=\"150\" cy=\"220\" r=\"10\" fill=\"#c6363c\" stroke=\"#fff\" stroke-width=\"2\"/><circle cx=\"120\" cy=\"80\" r=\"10\" fill=\"#0c4076\" stroke=\"#fff\" stroke-width=\"2\"/><circle cx=\"180\" cy=\"80\" r=\"10\" fill=\"#0c4076\" stroke=\"#fff\" stroke-width=\"2\"/><circle cx=\"150\" cy=\"130\" r=\"10\" fill=\"#0c4076\" stroke=\"#fff\" stroke-width=\"2\"/></svg>"
+      },
+      "odgovori": [
+        "Bronzanu",
+        "Zlatnu",
+        "Srebrnu",
+        "Bez medalje"
+      ],
+      "zanimljivost": "Basket 3x3 je tada prvi put bio na Olimpijskim igrama. Srbija je u ovom sportu najuspešnija zemlja sveta – više puta je bila svetski prvak, a Dušan Domović Bulut je jedna od najvećih zvezda basketa.",
+      "rec": "basket"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Do koliko poena se igra basket 3x3 – ko ih prvi postigne, odmah pobeđuje?",
+      "mediji": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\"><rect x=\"4\" y=\"4\" width=\"312\" height=\"142\" rx=\"14\" fill=\"#111\" stroke=\"#555\" stroke-width=\"3\"/><text x=\"160\" y=\"30\" font-size=\"15\" text-anchor=\"middle\" fill=\"#dfe6e9\">Basket 3x3</text><rect x=\"20\" y=\"42\" width=\"110\" height=\"70\" rx=\"6\" fill=\"#000\"/><rect x=\"190\" y=\"42\" width=\"110\" height=\"70\" rx=\"6\" fill=\"#000\"/><text x=\"75\" y=\"98\" font-size=\"58\" font-weight=\"800\" text-anchor=\"middle\" fill=\"#ffb142\" font-family=\"monospace\">19</text><text x=\"245\" y=\"98\" font-size=\"58\" font-weight=\"800\" text-anchor=\"middle\" fill=\"#ffb142\" font-family=\"monospace\">14</text><text x=\"160\" y=\"92\" font-size=\"40\" text-anchor=\"middle\" fill=\"#ffb142\">:</text><text data-lat x=\"75\" y=\"134\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#fff\">SRB</text><text data-lat x=\"245\" y=\"134\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#fff\">NED</text><text x=\"160\" y=\"134\" font-size=\"16\" text-anchor=\"middle\" fill=\"#55efc4\">7:42</text></svg>"
+      },
+      "odgovori": [
+        "21",
+        "11",
+        "15",
+        "30"
+      ],
+      "zanimljivost": "Ako nijedna ekipa ne stigne do 21, pobeđuje ona koja vodi posle 10 minuta. Koš unutar luka vredi 1 poen, a iza luka 2 – a za napad ima samo 12 sekundi.",
+      "rec": "luk"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Ko je bio kapiten košarkaša Srbije na Olimpijskim igrama 2024?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/bogdanovic.jpg",
+        "zamagljeno": true
+      },
+      "odgovori": [
+        "Bogdan Bogdanović",
+        "Nikola Jokić",
+        "Vasilije Micić",
+        "Nikola Jović"
+      ],
+      "zanimljivost": "Bogdanović je bek-šuter, poznat po hladnokrvnim šutevima u završnicama. U NBA je igrao za Sakramento, Atlantu i Los Anđeles Kliperse.",
+      "rec": "kapiten"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kako se zove večiti derbi?",
+      "mediji": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox=\"-10 -6 440 236\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\"><g transform=\"translate(0 0)\"><defs><clipPath id=\"dres1\"><path d=\"M40 10 L70 4 Q100 22 130 4 L160 10 L196 46 L172 74 L156 62 L156 196 L44 196 L44 62 L28 74 L4 46 Z\"/></clipPath></defs><path d=\"M40 10 L70 4 Q100 22 130 4 L160 10 L196 46 L172 74 L156 62 L156 196 L44 196 L44 62 L28 74 L4 46 Z\" fill=\"#e30613\"/><g clip-path=\"url(#dres1)\"><rect x=\"-26\" y=\"0\" width=\"26\" height=\"200\" fill=\"#ffffff\"/><rect x=\"26\" y=\"0\" width=\"26\" height=\"200\" fill=\"#ffffff\"/><rect x=\"78\" y=\"0\" width=\"26\" height=\"200\" fill=\"#ffffff\"/><rect x=\"130\" y=\"0\" width=\"26\" height=\"200\" fill=\"#ffffff\"/><rect x=\"182\" y=\"0\" width=\"26\" height=\"200\" fill=\"#ffffff\"/></g><path d=\"M70 4 Q100 22 130 4\" fill=\"none\" stroke=\"#fff\" stroke-width=\"6\"/><path d=\"M40 10 L70 4 Q100 22 130 4 L160 10 L196 46 L172 74 L156 62 L156 196 L44 196 L44 62 L28 74 L4 46 Z\" fill=\"none\" stroke=\"#0b1826\" stroke-opacity=\".5\" stroke-width=\"3\"/></g><g transform=\"translate(220 0)\"><defs><clipPath id=\"dres2\"><path d=\"M40 10 L70 4 Q100 22 130 4 L160 10 L196 46 L172 74 L156 62 L156 196 L44 196 L44 62 L28 74 L4 46 Z\"/></clipPath></defs><path d=\"M40 10 L70 4 Q100 22 130 4 L160 10 L196 46 L172 74 L156 62 L156 196 L44 196 L44 62 L28 74 L4 46 Z\" fill=\"#111111\"/><g clip-path=\"url(#dres2)\"><rect x=\"-26\" y=\"0\" width=\"26\" height=\"200\" fill=\"#ffffff\"/><rect x=\"26\" y=\"0\" width=\"26\" height=\"200\" fill=\"#ffffff\"/><rect x=\"78\" y=\"0\" width=\"26\" height=\"200\" fill=\"#ffffff\"/><rect x=\"130\" y=\"0\" width=\"26\" height=\"200\" fill=\"#ffffff\"/><rect x=\"182\" y=\"0\" width=\"26\" height=\"200\" fill=\"#ffffff\"/></g><path d=\"M70 4 Q100 22 130 4\" fill=\"none\" stroke=\"#fff\" stroke-width=\"6\"/><path d=\"M40 10 L70 4 Q100 22 130 4 L160 10 L196 46 L172 74 L156 62 L156 196 L44 196 L44 62 L28 74 L4 46 Z\" fill=\"none\" stroke=\"#0b1826\" stroke-opacity=\".5\" stroke-width=\"3\"/></g></svg>"
+      },
+      "odgovori": [
+        "Utakmica Zvezde i Partizana",
+        "Utakmica Srbije i Hrvatske",
+        "Finale Kupa Srbije",
+        "Utakmica Vojvodine i Zvezde"
+      ],
+      "zanimljivost": "Prvi večiti derbi odigran je 1947. godine. Derbi igraju i košarkaši, vaterpolisti, odbojkaši i rukometaši ova dva kluba – i uvek je to najvažnija utakmica sezone.",
+      "rec": "derbi"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Čiji je ovo dres?",
+      "mediji": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox=\"-10 -6 220 210\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\"><g transform=\"translate(0 0)\"><defs><clipPath id=\"dres3\"><path d=\"M40 10 L70 4 Q100 22 130 4 L160 10 L196 46 L172 74 L156 62 L156 196 L44 196 L44 62 L28 74 L4 46 Z\"/></clipPath></defs><path d=\"M40 10 L70 4 Q100 22 130 4 L160 10 L196 46 L172 74 L156 62 L156 196 L44 196 L44 62 L28 74 L4 46 Z\" fill=\"#e30613\"/><g clip-path=\"url(#dres3)\"><rect x=\"-26\" y=\"0\" width=\"26\" height=\"200\" fill=\"#ffffff\"/><rect x=\"26\" y=\"0\" width=\"26\" height=\"200\" fill=\"#ffffff\"/><rect x=\"78\" y=\"0\" width=\"26\" height=\"200\" fill=\"#ffffff\"/><rect x=\"130\" y=\"0\" width=\"26\" height=\"200\" fill=\"#ffffff\"/><rect x=\"182\" y=\"0\" width=\"26\" height=\"200\" fill=\"#ffffff\"/></g><path d=\"M70 4 Q100 22 130 4\" fill=\"none\" stroke=\"#fff\" stroke-width=\"6\"/><path d=\"M40 10 L70 4 Q100 22 130 4 L160 10 L196 46 L172 74 L156 62 L156 196 L44 196 L44 62 L28 74 L4 46 Z\" fill=\"none\" stroke=\"#0b1826\" stroke-opacity=\".5\" stroke-width=\"3\"/><text x=\"100\" y=\"135\" font-size=\"70\" font-weight=\"800\" text-anchor=\"middle\" fill=\"#0b1826\" stroke=\"#0008\" stroke-width=\"1.5\">10</text></g></svg>"
+      },
+      "odgovori": [
+        "Crvene zvezde",
+        "Partizana",
+        "Vojvodine",
+        "Radničkog iz Niša"
+      ],
+      "zanimljivost": "Zvezda je jedini klub iz Srbije koji je bio prvak Evrope (1991) i sveta (1991, u Tokiju protiv Kolo-Kola). Klub je osnovan 1945. godine.",
+      "rec": "zvezda"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Čiji je ovo dres?",
+      "mediji": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox=\"-10 -6 220 210\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\"><g transform=\"translate(0 0)\"><defs><clipPath id=\"dres4\"><path d=\"M40 10 L70 4 Q100 22 130 4 L160 10 L196 46 L172 74 L156 62 L156 196 L44 196 L44 62 L28 74 L4 46 Z\"/></clipPath></defs><path d=\"M40 10 L70 4 Q100 22 130 4 L160 10 L196 46 L172 74 L156 62 L156 196 L44 196 L44 62 L28 74 L4 46 Z\" fill=\"#111111\"/><g clip-path=\"url(#dres4)\"><rect x=\"-26\" y=\"0\" width=\"26\" height=\"200\" fill=\"#ffffff\"/><rect x=\"26\" y=\"0\" width=\"26\" height=\"200\" fill=\"#ffffff\"/><rect x=\"78\" y=\"0\" width=\"26\" height=\"200\" fill=\"#ffffff\"/><rect x=\"130\" y=\"0\" width=\"26\" height=\"200\" fill=\"#ffffff\"/><rect x=\"182\" y=\"0\" width=\"26\" height=\"200\" fill=\"#ffffff\"/></g><path d=\"M70 4 Q100 22 130 4\" fill=\"none\" stroke=\"#fff\" stroke-width=\"6\"/><path d=\"M40 10 L70 4 Q100 22 130 4 L160 10 L196 46 L172 74 L156 62 L156 196 L44 196 L44 62 L28 74 L4 46 Z\" fill=\"none\" stroke=\"#0b1826\" stroke-opacity=\".5\" stroke-width=\"3\"/><text x=\"100\" y=\"135\" font-size=\"70\" font-weight=\"800\" text-anchor=\"middle\" fill=\"#e30613\" stroke=\"#0008\" stroke-width=\"1.5\">9</text></g></svg>"
+      },
+      "odgovori": [
+        "Partizana",
+        "Crvene zvezde",
+        "Čukaričkog",
+        "Vojvodine"
+      ],
+      "zanimljivost": "Partizan je osnovan 1945. kao klub Jugoslovenske armije. Partizanovi navijači zovu se „Grobari“, a klub se zove i „crno-beli“.",
+      "rec": "partizan"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se popularno zove stadion Partizana?",
+      "odgovori": [
+        "JNA",
+        "Marakana",
+        "Karađorđe",
+        "Čair"
+      ],
+      "zanimljivost": "Stadion je izgrađen 1951. za Jugoslovensku narodnu armiju (JNA), pa ga tako zovu i danas. „Karađorđe“ je stadion Vojvodine u Novom Sadu, a „Čair“ stadion Radničkog u Nišu.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/stadion-partizana.jpg",
+        "opis": "Stadion Partizana"
+      },
+      "rec": "stadion"
+    },
+    {
+      "vrsta": "spoji",
+      "tezina": 2,
+      "pitanje": "Spoji klub sa nadimkom njegovih navijača",
+      "parovi": [
+        [
+          "Crvena zvezda",
+          "Delije"
+        ],
+        [
+          "Partizan",
+          "Grobari"
+        ],
+        [
+          "Vojvodina",
+          "Firma"
+        ],
+        [
+          "Radnički Niš",
+          "Meraklije"
+        ]
+      ],
+      "zanimljivost": "Grobari su nadimak dobili po crno-belim bojama, koje podsećaju na odeću grobara. Meraklije su ljudi koji vole da uživaju u životu – „merak“ je stara reč za zadovoljstvo.",
+      "rec": "navijač"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kako zovu fudbalsku reprezentaciju Srbije?",
+      "mediji": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox=\"-10 -6 220 210\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\"><g transform=\"translate(0 0)\"><defs><clipPath id=\"dres5\"><path d=\"M40 10 L70 4 Q100 22 130 4 L160 10 L196 46 L172 74 L156 62 L156 196 L44 196 L44 62 L28 74 L4 46 Z\"/></clipPath></defs><path d=\"M40 10 L70 4 Q100 22 130 4 L160 10 L196 46 L172 74 L156 62 L156 196 L44 196 L44 62 L28 74 L4 46 Z\" fill=\"#c6363c\"/><g clip-path=\"url(#dres5)\"></g><path d=\"M70 4 Q100 22 130 4\" fill=\"none\" stroke=\"#0c4076\" stroke-width=\"6\"/><path d=\"M40 10 L70 4 Q100 22 130 4 L160 10 L196 46 L172 74 L156 62 L156 196 L44 196 L44 62 L28 74 L4 46 Z\" fill=\"none\" stroke=\"#0b1826\" stroke-opacity=\".5\" stroke-width=\"3\"/><text x=\"100\" y=\"135\" font-size=\"70\" font-weight=\"800\" text-anchor=\"middle\" fill=\"#fff\" stroke=\"#0008\" stroke-width=\"1.5\">9</text></g></svg>"
+      },
+      "odgovori": [
+        "Orlovi",
+        "Vukovi",
+        "Lavovi",
+        "Sokolovi"
+      ],
+      "zanimljivost": "Dvoglavi orao je na grbu Srbije još od srednjeg veka. „Orlovi“ igraju u crvenim dresovima, plavim šortsevima i belim čarapama – kao boje zastave.",
+      "medijiOdgovora": {
+        "vrsta": "emodzi",
+        "tekst": "🦅🦅"
+      },
+      "rec": "orlovi"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Ko je najbolji strelac u istoriji fudbalske reprezentacije Srbije?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/mitrovic.jpg",
+        "zamagljeno": true
+      },
+      "odgovori": [
+        "Aleksandar Mitrović",
+        "Stjepan Bobek",
+        "Savo Milošević",
+        "Dušan Vlahović"
+      ],
+      "zanimljivost": "Mitrović je oborio rekord Stjepana Bobeka (38 golova), star više od 60 godina, i nastavio da daje golove. U Fulamu je 2022. postavio i rekord engleske druge lige – 43 gola u sezoni.",
+      "rec": "mitrović"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "U koji italijanski klub je Dušan Vlahović prešao 2022. iz Fiorentine?",
+      "odgovori": [
+        "U Juventus",
+        "U Milan",
+        "U Inter",
+        "U Romu"
+      ],
+      "zanimljivost": "Vlahović je sa 21 godinom u jednoj kalendarskoj godini (2021) dao 33 gola u italijanskoj ligi – izjednačio je rekord Kristijana Ronalda. Juventus nosi crno-bele pruge, kao i Partizan, gde je Dušan ponikao.",
+      "medijiOdgovora": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox=\"-10 -6 220 210\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\"><g transform=\"translate(0 0)\"><defs><clipPath id=\"dres6\"><path d=\"M40 10 L70 4 Q100 22 130 4 L160 10 L196 46 L172 74 L156 62 L156 196 L44 196 L44 62 L28 74 L4 46 Z\"/></clipPath></defs><path d=\"M40 10 L70 4 Q100 22 130 4 L160 10 L196 46 L172 74 L156 62 L156 196 L44 196 L44 62 L28 74 L4 46 Z\" fill=\"#111\"/><g clip-path=\"url(#dres6)\"><rect x=\"-16\" y=\"0\" width=\"16\" height=\"200\" fill=\"#fff\"/><rect x=\"16\" y=\"0\" width=\"16\" height=\"200\" fill=\"#fff\"/><rect x=\"48\" y=\"0\" width=\"16\" height=\"200\" fill=\"#fff\"/><rect x=\"80\" y=\"0\" width=\"16\" height=\"200\" fill=\"#fff\"/><rect x=\"112\" y=\"0\" width=\"16\" height=\"200\" fill=\"#fff\"/><rect x=\"144\" y=\"0\" width=\"16\" height=\"200\" fill=\"#fff\"/><rect x=\"176\" y=\"0\" width=\"16\" height=\"200\" fill=\"#fff\"/><rect x=\"208\" y=\"0\" width=\"16\" height=\"200\" fill=\"#fff\"/></g><path d=\"M70 4 Q100 22 130 4\" fill=\"none\" stroke=\"#fff\" stroke-width=\"6\"/><path d=\"M40 10 L70 4 Q100 22 130 4 L160 10 L196 46 L172 74 L156 62 L156 196 L44 196 L44 62 L28 74 L4 46 Z\" fill=\"none\" stroke=\"#0b1826\" stroke-opacity=\".5\" stroke-width=\"3\"/><text x=\"100\" y=\"68\" font-size=\"17\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#d4af37\" stroke=\"#0006\" stroke-width=\"0.6\">VLAHOVIĆ</text><text x=\"100\" y=\"150\" font-size=\"70\" font-weight=\"800\" text-anchor=\"middle\" fill=\"#d4af37\" stroke=\"#0008\" stroke-width=\"1.5\">9</text></g></svg>"
+      },
+      "rec": "juventus"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "U kojoj zemlji je rođen Sergej Milinković-Savić, vezista reprezentacije Srbije?",
+      "odgovori": [
+        "U Španiji",
+        "U Austriji",
+        "U Italiji",
+        "U Nemačkoj"
+      ],
+      "zanimljivost": "Rođen je u Ljeidi, gde je njegov otac igrao fudbal. Mlađi brat Vanja je golman. Sergej je dugo igrao za Lacio, a od 2023. igra u Saudijskoj Arabiji.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "evropa",
+        "tacke": [
+          {
+            "lat": 41.62,
+            "lon": 0.62,
+            "oznaka": "Ljeida"
+          }
+        ]
+      },
+      "rec": "sergej"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Ko je u 95. minutu glavom dao gol Sloveniji za 1:1 na Evropskom prvenstvu 2024?",
+      "mediji": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\"><rect x=\"4\" y=\"4\" width=\"312\" height=\"142\" rx=\"14\" fill=\"#111\" stroke=\"#555\" stroke-width=\"3\"/><text x=\"160\" y=\"30\" font-size=\"15\" text-anchor=\"middle\" fill=\"#dfe6e9\">Minhen, 20. jun 2024.</text><rect x=\"20\" y=\"42\" width=\"110\" height=\"70\" rx=\"6\" fill=\"#000\"/><rect x=\"190\" y=\"42\" width=\"110\" height=\"70\" rx=\"6\" fill=\"#000\"/><text x=\"75\" y=\"98\" font-size=\"58\" font-weight=\"800\" text-anchor=\"middle\" fill=\"#ffb142\" font-family=\"monospace\">1</text><text x=\"245\" y=\"98\" font-size=\"58\" font-weight=\"800\" text-anchor=\"middle\" fill=\"#ffb142\" font-family=\"monospace\">0</text><text x=\"160\" y=\"92\" font-size=\"40\" text-anchor=\"middle\" fill=\"#ffb142\">:</text><text data-lat x=\"75\" y=\"134\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#fff\">SVN</text><text data-lat x=\"245\" y=\"134\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#fff\">SRB</text><text x=\"160\" y=\"134\" font-size=\"16\" text-anchor=\"middle\" fill=\"#55efc4\">90+5′</text></svg>"
+      },
+      "odgovori": [
+        "Luka Jović",
+        "Aleksandar Mitrović",
+        "Dušan Vlahović",
+        "Strahinja Pavlović"
+      ],
+      "zanimljivost": "Bio je to jedini gol Srbije na EURO 2024 i prvi gol Srbije na nekom Evropskom prvenstvu kao samostalne države. Srbija je ispala u grupi sa Engleskom, Danskom i Slovenijom.",
+      "rec": "jović"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Gde je mlada reprezentacija Srbije (do 20 godina) 2015. postala prvak sveta?",
+      "mediji": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\"><rect x=\"4\" y=\"4\" width=\"312\" height=\"142\" rx=\"14\" fill=\"#111\" stroke=\"#555\" stroke-width=\"3\"/><text x=\"160\" y=\"30\" font-size=\"15\" text-anchor=\"middle\" fill=\"#dfe6e9\">Okland, 20. jun 2015.</text><rect x=\"20\" y=\"42\" width=\"110\" height=\"70\" rx=\"6\" fill=\"#000\"/><rect x=\"190\" y=\"42\" width=\"110\" height=\"70\" rx=\"6\" fill=\"#000\"/><text x=\"75\" y=\"98\" font-size=\"58\" font-weight=\"800\" text-anchor=\"middle\" fill=\"#ffb142\" font-family=\"monospace\">1</text><text x=\"245\" y=\"98\" font-size=\"58\" font-weight=\"800\" text-anchor=\"middle\" fill=\"#ffb142\" font-family=\"monospace\">2</text><text x=\"160\" y=\"92\" font-size=\"40\" text-anchor=\"middle\" fill=\"#ffb142\">:</text><text data-lat x=\"75\" y=\"134\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#fff\">BRA</text><text data-lat x=\"245\" y=\"134\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#fff\">SRB</text><text x=\"160\" y=\"134\" font-size=\"16\" text-anchor=\"middle\" fill=\"#55efc4\">120′</text></svg>"
+      },
+      "odgovori": [
+        "Na Novom Zelandu",
+        "U Kolumbiji",
+        "U Turskoj",
+        "U Južnoj Koreji"
+      ],
+      "zanimljivost": "U finalu u Oklandu Srbija je pobedila Brazil 2:1 u produžetku – pobedonosni gol dao je Nemanja Maksimović u 118. minutu. Selektor je bio Veljko Paunović, Sergej Milinković-Savić je dobio „Srebrnu loptu“ kao drugi najbolji igrač prvenstva, a Predrag Rajković nagradu za najboljeg golmana.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "australija",
+        "tacke": [
+          {
+            "lat": -36.85,
+            "lon": 174.76,
+            "oznaka": "Okland",
+            "znak": "🏆"
+          }
+        ]
+      },
+      "rec": "zeland"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Ko je bio kapiten fudbalske reprezentacije Srbije na Evropskom prvenstvu 2024?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/tadic.jpg",
+        "zamagljeno": true
+      },
+      "odgovori": [
+        "Dušan Tadić",
+        "Aleksandar Mitrović",
+        "Sergej Milinković-Savić",
+        "Nemanja Gudelj"
+      ],
+      "zanimljivost": "Tadić je sa Ajaksom 2019. stigao do polufinala Lige šampiona, usput pobedivši Real Madrid 4:1 u Madridu – i sam je dao jedan gol.",
+      "rec": "tadić"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koji igrač Engleske je dao jedini gol u pobedi nad Srbijom na EURO 2024?",
+      "mediji": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\"><rect x=\"4\" y=\"4\" width=\"312\" height=\"142\" rx=\"14\" fill=\"#111\" stroke=\"#555\" stroke-width=\"3\"/><text x=\"160\" y=\"30\" font-size=\"15\" text-anchor=\"middle\" fill=\"#dfe6e9\">Gelzenkirhen, 16. jun 2024.</text><rect x=\"20\" y=\"42\" width=\"110\" height=\"70\" rx=\"6\" fill=\"#000\"/><rect x=\"190\" y=\"42\" width=\"110\" height=\"70\" rx=\"6\" fill=\"#000\"/><text x=\"75\" y=\"98\" font-size=\"58\" font-weight=\"800\" text-anchor=\"middle\" fill=\"#ffb142\" font-family=\"monospace\">0</text><text x=\"245\" y=\"98\" font-size=\"58\" font-weight=\"800\" text-anchor=\"middle\" fill=\"#ffb142\" font-family=\"monospace\">1</text><text x=\"160\" y=\"92\" font-size=\"40\" text-anchor=\"middle\" fill=\"#ffb142\">:</text><text data-lat x=\"75\" y=\"134\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#fff\">SRB</text><text data-lat x=\"245\" y=\"134\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#fff\">ENG</text><text x=\"160\" y=\"134\" font-size=\"16\" text-anchor=\"middle\" fill=\"#55efc4\">kraj</text></svg>"
+      },
+      "odgovori": [
+        "Džud Belingem",
+        "Hari Kejn",
+        "Bukajo Saka",
+        "Fil Foden"
+      ],
+      "zanimljivost": "Belingem je pogodio glavom u 13. minutu u Gelzenkirhenu. Tada je imao samo 20 godina, a već je bio najbolji igrač Real Madrida u sezoni 2023/24.",
+      "rec": "belingem"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koga su vaterpolisti Srbije pobedili u finalu Olimpijskih igara u Parizu 2024?",
+      "mediji": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\"><rect x=\"4\" y=\"4\" width=\"312\" height=\"142\" rx=\"14\" fill=\"#111\" stroke=\"#555\" stroke-width=\"3\"/><text x=\"160\" y=\"30\" font-size=\"15\" text-anchor=\"middle\" fill=\"#dfe6e9\">Pariz, 11. avgust 2024.</text><rect x=\"20\" y=\"42\" width=\"110\" height=\"70\" rx=\"6\" fill=\"#000\"/><rect x=\"190\" y=\"42\" width=\"110\" height=\"70\" rx=\"6\" fill=\"#000\"/><text x=\"75\" y=\"98\" font-size=\"58\" font-weight=\"800\" text-anchor=\"middle\" fill=\"#ffb142\" font-family=\"monospace\">13</text><text x=\"245\" y=\"98\" font-size=\"58\" font-weight=\"800\" text-anchor=\"middle\" fill=\"#ffb142\" font-family=\"monospace\">11</text><text x=\"160\" y=\"92\" font-size=\"40\" text-anchor=\"middle\" fill=\"#ffb142\">:</text><text data-lat x=\"75\" y=\"134\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#fff\">SRB</text><text data-lat x=\"245\" y=\"134\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#fff\">???</text><text x=\"160\" y=\"134\" font-size=\"16\" text-anchor=\"middle\" fill=\"#55efc4\">finale</text></svg>"
+      },
+      "odgovori": [
+        "Hrvatsku",
+        "Mađarsku",
+        "Italiju",
+        "Španiju"
+      ],
+      "zanimljivost": "Srbija je pobedila 13:11 i osvojila treće olimpijsko zlato zaredom (2016, 2020, 2024). Pre nje su tri zlata zaredom u vaterpolu imale samo Velika Britanija (početkom 20. veka) i Mađarska.",
+      "medijiOdgovora": {
+        "vrsta": "emodzi",
+        "tekst": "🤽‍♂️ 🥇🥇🥇"
+      },
+      "rec": "vaterpolo"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kakav nadimak ima vaterpolo reprezentacija Srbije?",
+      "odgovori": [
+        "Delfini",
+        "Ajkule",
+        "Orlovi",
+        "Kitovi"
+      ],
+      "zanimljivost": "Delfin je, kao i dobar vaterpolista, odličan plivač i može da „iskoči“ visoko iznad vode. Kapiten zlatne generacije bio je Filip Filipović, poznat po moćnom šutu levom rukom.",
+      "medijiOdgovora": {
+        "vrsta": "emodzi",
+        "tekst": "🐬🤽‍♂️🥇"
+      },
+      "rec": "delfin"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koja odbojkašica je bila najbolji igrač Svetskih prvenstava 2018. i 2022, kad je Srbija bila prvak?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/boskovic.jpg",
+        "zamagljeno": true
+      },
+      "odgovori": [
+        "Tijana Bošković",
+        "Maja Ognjenović",
+        "Brankica Mihajlović",
+        "Bianka Buša"
+      ],
+      "zanimljivost": "Tijana je visoka 1,93 m i igra na poziciji korektora – to je igrač koji najviše napada i daje najviše poena. Važi za jedan od najjačih smečeva u svetu odbojke.",
+      "rec": "tijana"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Ko je bio selektor odbojkašica Srbije kad su dva puta postale prvakinje sveta (2018, 2022)?",
+      "odgovori": [
+        "Zoran Terzić",
+        "Igor Kolaković",
+        "Dejan Savić",
+        "Svetislav Pešić"
+      ],
+      "zanimljivost": "Terzić je reprezentaciju vodio skoro 20 godina i osvojio sve – svetsko i evropsko zlato i olimpijsku medalju (srebro u Riju 2016, bronza u Tokiju 2020).",
+      "rec": "selektor"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koju titulu su odbojkaši Srbije osvojili 2019. u Parizu, pobedivši Sloveniju?",
+      "mediji": {
+        "vrsta": "mapa",
+        "oblast": "evropa",
+        "tacke": [
+          {
+            "lat": 48.86,
+            "lon": 2.35,
+            "oznaka": "Pariz 2019.",
+            "znak": "🏐"
+          }
+        ]
+      },
+      "odgovori": [
+        "Prvaci Evrope",
+        "Prvaci sveta",
+        "Olimpijski šampioni",
+        "Pobednici Lige nacija"
+      ],
+      "zanimljivost": "Bila je to druga evropska titula za odbojkaše Srbije, posle 2011. Iste 2019. i odbojkašice su postale prvakinje Evrope – Srbija je tada imala oba šampiona!",
+      "rec": "odbojka"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je „libero“ u odbojci?",
+      "mediji": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox=\"0 0 320 170\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\"><rect x=\"10\" y=\"10\" width=\"300\" height=\"150\" fill=\"#e17055\"/><rect x=\"10\" y=\"10\" width=\"300\" height=\"150\" fill=\"none\" stroke=\"#fff\" stroke-width=\"3\"/><line x1=\"160\" y1=\"4\" x2=\"160\" y2=\"166\" stroke=\"#fff\" stroke-width=\"5\"/><line x1=\"110\" y1=\"10\" x2=\"110\" y2=\"160\" stroke=\"#fff\" stroke-width=\"2\"/><line x1=\"210\" y1=\"10\" x2=\"210\" y2=\"160\" stroke=\"#fff\" stroke-width=\"2\"/><g stroke=\"#fff\" stroke-width=\"2\"><circle cx=\"135\" cy=\"40\" r=\"11\" fill=\"#c6363c\"/><circle cx=\"135\" cy=\"85\" r=\"11\" fill=\"#c6363c\"/><circle cx=\"135\" cy=\"130\" r=\"11\" fill=\"#c6363c\"/><circle cx=\"60\" cy=\"40\" r=\"11\" fill=\"#c6363c\"/><circle cx=\"60\" cy=\"130\" r=\"11\" fill=\"#c6363c\"/><circle cx=\"60\" cy=\"85\" r=\"13\" fill=\"#fdcb6e\"/></g><text x=\"60\" y=\"90\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"#0b1826\">?</text></svg>"
+      },
+      "odgovori": [
+        "Igrač u odbrani u dresu druge boje",
+        "Igrač koji najviše servira i smečira",
+        "Igrač koji sme da igra samo na mreži",
+        "Rezervni igrač koji ulazi za kapitena"
+      ],
+      "zanimljivost": "Libero ne sme da servira, smečira iznad mreže ni da bude kapiten, ali može neograničeno da ulazi i izlazi. Na italijanskom „libero“ znači „slobodan“.",
+      "rec": "libero"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koju medalju su rukometašice Srbije osvojile na Svetskom prvenstvu 2013. u Beogradu?",
+      "odgovori": [
+        "Srebrnu",
+        "Zlatnu",
+        "Bronzanu",
+        "Nisu osvojile medalju"
+      ],
+      "zanimljivost": "Finale u Beogradskoj areni gledalo je oko 19.000 navijača, a Srbija je izgubila od Brazila 22:20. Bio je to prvi svetski naslov Brazila u rukometu.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/arena.jpg",
+        "opis": "Beogradska arena"
+      },
+      "rec": "rukomet"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Gde je Ivana Vuleta (ranije Španović) 2022. postala svetska prvakinja u skoku udalj u dvorani?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/vuleta.jpg",
+        "zamagljeno": true
+      },
+      "odgovori": [
+        "U Beogradu",
+        "U Glazgovu",
+        "U Birmingemu",
+        "U Nanđingu"
+      ],
+      "zanimljivost": "Ivana je skočila 7,06 m – najduži skok na svetu te godine u dvorani – pred svojim navijačima u Beogradskoj areni. Na Evropskim prvenstvima u dvorani pobeđivala je više puta.",
+      "rec": "udalj"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koji švedski skakač motkom je u martu 2022. u Beogradu oborio svetski rekord?",
+      "odgovori": [
+        "Armand Duplantis",
+        "Renaud Lavilenije",
+        "Sergej Bubka",
+        "Sem Kendriks"
+      ],
+      "zanimljivost": "Duplantis, zvani „Mondo“, preskočio je 6,20 m na Svetskom prvenstvu u dvorani. Od tada je svetski rekord popravio još mnogo puta – svaki put za samo jedan centimetar.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/duplantis.jpg",
+        "opis": "Armand Duplantis"
+      },
+      "rec": "motka"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koju medalju su Zorana Arunović i Damir Mikec osvojili na OI u Parizu 2024. (vazdušni pištolj, mešoviti parovi)?",
+      "odgovori": [
+        "Zlatnu",
+        "Srebrnu",
+        "Bronzanu",
+        "Bez medalje"
+      ],
+      "zanimljivost": "U finalu su pobedili par iz Turske. Turski strelac Jusuf Dikeč postao je slavan na internetu jer je gađao opušteno – sa rukom u džepu i bez posebnih naočara i slušalica.",
+      "medijiOdgovora": {
+        "vrsta": "emodzi",
+        "tekst": "🎯🇷🇸🥇"
+      },
+      "rec": "pištolj"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "U kom sportu je Davor Štefanek 2016. u Riju osvojio olimpijsko zlato?",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "🤼"
+      },
+      "odgovori": [
+        "U rvanju (grčko-rimski stil)",
+        "U džudou",
+        "U boksu",
+        "U dizanju tegova"
+      ],
+      "zanimljivost": "U grčko-rimskom stilu zabranjeno je hvatanje protivnika ispod pojasa i korišćenje nogu za obaranje. Štefanek je iz Subotice, a bio je i svetski prvak 2014.",
+      "rec": "rvanje"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Nemanja Majdov je 2017. postao svetski prvak – u kom sportu?",
+      "odgovori": [
+        "U džudou",
+        "U karateu",
+        "U tekvondou",
+        "U boksu"
+      ],
+      "zanimljivost": "„Džudo“ na japanskom znači „nežni put“: protivnik se pobeđuje korišćenjem njegove sopstvene snage. Majdov je bio prvi Srbin svetski prvak u džudou.",
+      "medijiOdgovora": {
+        "vrsta": "emodzi",
+        "tekst": "🥋🇯🇵"
+      },
+      "rec": "džudo"
+    },
+    {
+      "vrsta": "spoji",
+      "tezina": 1,
+      "pitanje": "Spoji sportistu sa sportom",
+      "parovi": [
+        [
+          "Novak Đoković",
+          "Tenis"
+        ],
+        [
+          "Nikola Jokić",
+          "Košarka"
+        ],
+        [
+          "Tijana Bošković",
+          "Odbojka"
+        ],
+        [
+          "Milica Mandić",
+          "Tekvondo"
+        ],
+        [
+          "Ivana Vuleta",
+          "Skok udalj"
+        ]
+      ],
+      "zanimljivost": "Svi oni su bili najbolji na svetu u svom sportu – Đoković i Jokić kao najbolji igrači, Bošković i Vuleta kao svetske prvakinje, a Mandić kao dvostruka olimpijska šampionka.",
+      "rec": "sportista"
+    },
+    {
+      "vrsta": "spoji",
+      "tezina": 2,
+      "pitanje": "Spoji sportistu sa sportom",
+      "parovi": [
+        [
+          "Filip Filipović",
+          "Vaterpolo"
+        ],
+        [
+          "Davor Štefanek",
+          "Rvanje"
+        ],
+        [
+          "Zorana Arunović",
+          "Streljaštvo"
+        ],
+        [
+          "Nemanja Majdov",
+          "Džudo"
+        ],
+        [
+          "Jovana Preković",
+          "Karate"
+        ]
+      ],
+      "zanimljivost": "Karate je na Olimpijskim igrama bio samo jednom – u Tokiju 2020, gde je Jovana Preković osvojila zlato. U Parizu 2024. karate više nije bio olimpijski sport.",
+      "rec": "sport"
+    },
+    {
+      "vrsta": "spoji",
+      "tezina": 3,
+      "pitanje": "Spoji reprezentaciju Srbije sa medaljom osvojenom u Riju 2016",
+      "parovi": [
+        [
+          "Vaterpolisti",
+          "Zlato"
+        ],
+        [
+          "Košarkaši",
+          "Srebro"
+        ],
+        [
+          "Košarkašice",
+          "Bronza"
+        ]
+      ],
+      "zanimljivost": "U Riju su srebro osvojile i odbojkašice, a jedino zlato u pojedinačnim sportovima doneo je rvač Davor Štefanek. Ivana Španović je tada osvojila bronzu u skoku udalj.",
+      "rec": "medalja"
+    },
+    {
+      "vrsta": "uljez",
+      "tezina": 1,
+      "pitanje": "Ko od njih NIJE košarkaš?",
+      "odgovori": [
+        "Tijana Bošković",
+        "Nikola Jokić",
+        "Bogdan Bogdanović",
+        "Miloš Teodosić"
+      ],
+      "objasnjenje": "Tijana Bošković je odbojkašica, a Jokić, Bogdanović i Teodosić su košarkaši reprezentacije Srbije.",
+      "zanimljivost": "Jokić, Bogdanović i Teodosić su zajedno igrali na Olimpijskim igrama u Riju 2016, gde je Srbija osvojila srebro.",
+      "rec": "košarkaš"
+    },
+    {
+      "vrsta": "uljez",
+      "tezina": 3,
+      "pitanje": "U kom od ovih sportova Srbija NIJE osvojila zlato na OI u Parizu 2024?",
+      "odgovori": [
+        "Košarka",
+        "Tenis",
+        "Vaterpolo",
+        "Streljaštvo"
+      ],
+      "objasnjenje": "Košarkaši su osvojili bronzu. Zlato su doneli Novak Đoković (tenis), vaterpolisti i strelci Zorana Arunović i Damir Mikec.",
+      "zanimljivost": "Srbija je u Parizu osvojila tri zlatne medalje – isto koliko i u Tokiju 2020.",
+      "rec": "pariz"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliko je zlatnih medalja Srbija osvojila na Olimpijskim igrama u Tokiju 2020?",
+      "mediji": {
+        "vrsta": "mapa",
+        "oblast": "azija",
+        "tacke": [
+          {
+            "lat": 35.68,
+            "lon": 139.69,
+            "oznaka": "Tokio",
+            "znak": "🏅"
+          }
+        ]
+      },
+      "odgovori": [
+        "3",
+        "1",
+        "5",
+        "2"
+      ],
+      "zanimljivost": "Zlato su osvojili vaterpolisti, tekvondistkinja Milica Mandić i karatistkinja Jovana Preković. Ukupno je Srbija u Tokiju imala 9 medalja – najviše u svojoj istoriji.",
+      "rec": "tokio"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kakav nadimak ima Novak Đoković u Srbiji?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/djokovic-mlad.jpg",
+        "zamagljeno": true
+      },
+      "odgovori": [
+        "Nole",
+        "Đoka",
+        "Novi",
+        "Žoki"
+      ],
+      "zanimljivost": "U svetu ga zovu i „Djoker“ (Džoker) – isto kao Nikolu Jokića u Americi! Novak je počeo da igra tenis sa četiri godine, na Kopaoniku, gde su njegovi roditelji imali restoran.",
+      "rec": "nole"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kako navijači zovu stadion Crvene zvezde, najveći stadion u Srbiji?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/marakana.jpg"
+      },
+      "odgovori": [
+        "Marakana",
+        "Kamp Nou",
+        "Arena",
+        "Koloseum"
+      ],
+      "zanimljivost": "Nadimak je dobio po čuvenom stadionu Marakana u Riju. Na njemu su igrana finala Kupa šampiona 1973. i Evropskog prvenstva 1976, a danas nosi ime Rajka Mitića, legendarnog kapitena Zvezde.",
+      "rec": "marakana"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koji sport igra Novak Đoković?",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "🎾 🏆 🇷🇸"
+      },
+      "odgovori": [
+        "Tenis",
+        "Stoni tenis",
+        "Badminton",
+        "Skvoš"
+      ],
+      "zanimljivost": "Novak je proveo rekordne 428 nedelje kao prvi teniser sveta i osvojio 24 grend slem titule. Pored srpskog, govori engleski, francuski, nemački i italijanski.",
+      "rec": "tenis"
+    }
+  ]
+}
