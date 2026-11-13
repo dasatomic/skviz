@@ -776,10 +776,54 @@ function prikaziTekst(k, m) {
 }
 
 // izvorni kôd (npr. TLA+ specifikacija): monospace, poravnat levo, uvek latinicom (.kod je u NE_DIRAJ)
-function prikaziKod(k, m) {
-  const d = document.createElement('pre');
-  d.className = 'kod';
-  d.textContent = m.tekst || '';
+// Prikaz u stilu „Carbon“: tamni prozor sa tri tačkice i bojenjem sintakse (Rust ili TLA+, `m.jezik` ili pogađanje).
+const KOD_JEZICI = {
+  rust: {
+    kljucne: /^(as|async|await|break|const|continue|crate|dyn|else|enum|extern|fn|for|if|impl|in|let|loop|match|mod|move|mut|pub|ref|return|self|Self|static|struct|super|trait|type|unsafe|use|where|while|true|false)$/,
+    tipovi: /^([A-Z][A-Za-z0-9_]*|i8|i16|i32|i64|i128|isize|u8|u16|u32|u64|u128|usize|f32|f64|bool|char|str)$/,
+    komentar: /^\/\/[^\n]*/,
+    niska: /^(b?"(?:\\.|[^"\\])*"|b?'(?:\\.|[^'\\])'|'[a-z_][a-z0-9_]*)/,
+  },
+  tla: {
+    kljucne: /^(MODULE|EXTENDS|CONSTANT|CONSTANTS|VARIABLE|VARIABLES|ASSUME|THEOREM|LET|IN|IF|THEN|ELSE|CASE|OTHER|CHOOSE|EXCEPT|UNCHANGED|ENABLED|SUBSET|UNION|DOMAIN|INSTANCE|WITH|LOCAL|RECURSIVE|WF_|SF_|TRUE|FALSE|BOOLEAN)$/,
+    tipovi: /^(Nat|Int|Real|Seq|Len|Append|Head|Tail|Cardinality)$/,
+    komentar: /^(\\\*[^\n]*|\(\*[\s\S]*?\*\))/,
+    niska: /^"(?:\\.|[^"\\])*"/,
+    op: /^(\\[A-Za-z]+|[∧∨¬≜∈∉⊆⊂∪∩↦→←⇒≡□◇≠≤≥×∀∃′⟨⟩#]+)/, // \in, \A, \cup…, unicode simboli
+  },
+};
+function bojiKod(tekst, jezik) {
+  const J = KOD_JEZICI[jezik] || KOD_JEZICI.rust;
+  const out = [];
+  const span = (kl, s) => out.push(`<span class="k-${kl}">${esc(s)}</span>`);
+  let t = tekst, m;
+  while (t) {
+    if ((m = t.match(J.komentar))) span('kom', m[0]);
+    else if (J.op && (m = t.match(J.op))) span('op', m[0]);
+    else if ((m = t.match(J.niska))) span('niz', m[0]);
+    else if ((m = t.match(/^\d[\d_]*(\.\d+)?([iuf](8|16|32|64|128|size))?/))) span('br', m[0]);
+    else if ((m = t.match(/^[A-Za-z_][A-Za-z0-9_]*!?/))) {
+      const r = m[0], dalje = t.slice(r.length);
+      if (r.endsWith('!')) span('makro', r);
+      else if (J.kljucne.test(r)) span('klj', r);
+      else if (J.tipovi.test(r)) span('tip', r);
+      else if (/^\s*\(/.test(dalje)) span('fn', r);
+      else out.push(esc(r));
+    } else if ((m = t.match(/^(::|->|=>|==|\/\\|\\\/|\[\]|<>|~>|'|[&*?<>=!+\-|%^~]+)/))) span('op', m[0]);
+    else { m = [t[0]]; out.push(esc(t[0])); }
+    t = t.slice(m[0].length);
+  }
+  return out.join('');
+}
+function pogodiJezik(tekst) {
+  return (/MODULE|VARIABLES?\b|\/\\|\\\/|==/.test(tekst) && !/\bfn\b|\blet\b/.test(tekst) ? 'tla' : 'rust');
+}
+function prikaziKod(k, m, auto, paket, kod) {
+  const tekst = m.tekst || '';
+  const jezik = KOD_JEZICI[m.jezik] ? m.jezik : KOD_JEZICI[kod] ? kod : pogodiJezik(tekst);
+  const d = document.createElement('div');
+  d.className = 'kod-prozor';
+  d.innerHTML = `<div class="kod-traka"><i></i><i></i><i></i><span>${jezik === 'tla' ? 'TLA⁺' : 'Rust'}</span></div><pre class="kod">${bojiKod(tekst, jezik)}</pre>`;
   k.appendChild(d);
   return () => {};
 }
@@ -896,14 +940,14 @@ const PRIKAZI = {
 };
 
 // glavna funkcija: vraća funkciju za čišćenje
-function prikaziMedij(kontejner, m, { auto = false, paket = '' } = {}) {
+function prikaziMedij(kontejner, m, { auto = false, paket = '', kod = null } = {}) {
   if (!m) return () => {};
   const f = Object.hasOwn(PRIKAZI, m.vrsta) ? PRIKAZI[m.vrsta] : null;
   if (!f) return () => {};
   kontejner.classList.add('medij', 'medij-' + m.vrsta);
   let ciscenje = () => {};
   try {
-    const r = f(kontejner, m, auto, paket);
+    const r = f(kontejner, m, auto, paket, kod);
     if (r && r.then) r.then((c) => (ciscenje = c || ciscenje)).catch((e) => console.error(e));
     else if (typeof r === 'function') ciscenje = r;
   } catch (e) { console.error(e); }
@@ -911,5 +955,5 @@ function prikaziMedij(kontejner, m, { auto = false, paket = '' } = {}) {
   return () => ciscenje();
 }
 
-window.Mediji = { prikaziMedij, Zvuk, MOLEKULI };
+window.Mediji = { prikaziMedij, Zvuk, MOLEKULI, bojiKod };
 })();

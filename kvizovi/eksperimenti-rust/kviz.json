@@ -7,6 +7,7 @@
   "oblast": "eksperimenti",
   "uOpstem": false,
   "jezik": "en",
+  "kod": "rust",
   "celina": "Sve oblasti",
   "lekcije": [
     {
@@ -238,7 +239,7 @@
     {
       "lekcija": 1,
       "tezina": 2,
-      "pitanje": "What happens with $let n = if c { 5 } else { \"six\" };$?",
+      "pitanje": "What happens when you compile this?",
       "odgovori": [
         "Compile error: types differ",
         "$n$ is \"six\" when $c$ is false",
@@ -246,7 +247,11 @@
         "It panics at run time"
       ],
       "zanimljivost": "$if$ is an expression, and every variable must have exactly one type known at compile time, so both branches must agree.",
-      "rec": "uslov"
+      "rec": "uslov",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "let c = true;\nlet n = if c { 5 } else { \"six\" };"
+      }
     },
     {
       "vrsta": "spoji",
@@ -301,6 +306,40 @@
       "rec": "torka"
     },
     {
+      "lekcija": 1,
+      "tezina": 1,
+      "pitanje": "What does this print?",
+      "odgovori": [
+        "12, then 6",
+        "12, then 12",
+        "6, then 6",
+        "Compile error: $x$ is immutable"
+      ],
+      "zanimljivost": "Each $let$ creates a brand-new variable that shadows the old one. The inner $x$ disappears at the closing brace, so the outer $x$ (6) is visible again. Shadowing can even change the type: $let s = s.len();$ is fine.",
+      "rec": "senka",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "let x = 5;\nlet x = x + 1;\n{\n    let x = x * 2;\n    println!(\"{x}\");\n}\nprintln!(\"{x}\");"
+      }
+    },
+    {
+      "lekcija": 1,
+      "tezina": 2,
+      "pitanje": "What does this print?",
+      "odgovori": [
+        "4",
+        "260",
+        "255",
+        "It panics: overflow"
+      ],
+      "zanimljivost": "$wrapping_add$ wraps around modulo 256, so 260 becomes 4. Plain $+$ would panic in a debug build and wrap in release; $checked_add$ returns $None$ and $saturating_add$ stops at 255.",
+      "rec": "prelivanje",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "let x: u8 = 250;\nprintln!(\"{}\", x.wrapping_add(10));"
+      }
+    },
+    {
       "lekcija": 2,
       "tezina": 1,
       "pitanje": "How many owners can a value have at one time?",
@@ -316,7 +355,7 @@
     {
       "lekcija": 2,
       "tezina": 2,
-      "pitanje": "After $let s1 = String::from(\"hi\"); let s2 = s1;$ what happens when you use $s1$?",
+      "pitanje": "What happens on the last line?",
       "odgovori": [
         "Compile error: value moved",
         "It prints \"hi\"",
@@ -324,7 +363,11 @@
         "It panics at run time"
       ],
       "zanimljivost": "Copying only the pointer would make two owners free the same memory (a double free). Rust instead moves ownership and invalidates $s1$.",
-      "rec": "premeštanje"
+      "rec": "premeštanje",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "let s1 = String::from(\"hi\");\nlet s2 = s1;\nprintln!(\"{s1}\");"
+      }
     },
     {
       "lekcija": 2,
@@ -480,6 +523,40 @@
       "rec": "gomila"
     },
     {
+      "lekcija": 2,
+      "tezina": 1,
+      "pitanje": "What happens on the last line?",
+      "odgovori": [
+        "Compile error: $s$ was moved",
+        "It prints \"hi\"",
+        "It prints an empty line",
+        "It panics at run time"
+      ],
+      "zanimljivost": "Passing a $String$ by value moves it into the function, which drops it at its end. Pass $&s$ instead to only borrow it, or call $s.clone()$ if the function really needs its own copy.",
+      "rec": "vlasnik",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "fn take(s: String) {}\n\nlet s = String::from(\"hi\");\ntake(s);\nprintln!(\"{s}\");"
+      }
+    },
+    {
+      "lekcija": 2,
+      "tezina": 2,
+      "pitanje": "Does this compile, and what does it print?",
+      "odgovori": [
+        "Yes – it prints $5 5 x x$",
+        "No – $a$ was moved into $b$",
+        "No – $s$ was moved into $t$",
+        "Yes – it prints $5 x$"
+      ],
+      "zanimljivost": "$i32$ implements $Copy$, so $let b = a;$ copies the bits and $a$ stays usable. $String$ owns heap memory and isn't $Copy$ – without $.clone()$ the second line would move it.",
+      "rec": "kopija",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "let a = 5;\nlet b = a;\nlet s = String::from(\"x\");\nlet t = s.clone();\nprintln!(\"{a} {b} {s} {t}\");"
+      }
+    },
+    {
       "lekcija": 3,
       "tezina": 1,
       "pitanje": "When does the shorthand $User { email, username }$ work?",
@@ -495,7 +572,7 @@
     {
       "lekcija": 3,
       "tezina": 2,
-      "pitanje": "After $let u2 = User { email: e, ..u1 };$ where $username$ is a $String$, what about $u1$?",
+      "pitanje": "$username$ is a $String$. What about $u1$ after this?",
       "odgovori": [
         "It can't be used as a whole anymore",
         "It is unchanged and fully usable",
@@ -503,7 +580,11 @@
         "It is always a compile error"
       ],
       "zanimljivost": "Struct update syntax moves the remaining fields. $u1.email$ is still usable, but $u1$ as a whole is not, because $username$ moved.",
-      "rec": "struktura"
+      "rec": "struktura",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "let u2 = User {\n    email: e,\n    ..u1\n};"
+      }
     },
     {
       "lekcija": 3,
@@ -634,6 +715,40 @@
       ],
       "zanimljivost": "Methods taking $self$ are rare; they typically turn the value into something else, like $String::into_bytes$.",
       "rec": "instanca"
+    },
+    {
+      "lekcija": 3,
+      "tezina": 1,
+      "pitanje": "Why doesn't this compile?",
+      "odgovori": [
+        "$c$ isn't declared $mut$",
+        "$inc$ must return $Self$",
+        "$n$ must be public",
+        "Methods can't change fields"
+      ],
+      "zanimljivost": "Calling $c.inc()$ auto-borrows $&mut c$, which needs a mutable binding: $let mut c = …$. Mutability in Rust belongs to the binding, not to individual fields of a struct.",
+      "rec": "metoda",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "struct Counter { n: u32 }\n\nimpl Counter {\n    fn inc(&mut self) { self.n += 1; }\n}\n\nlet c = Counter { n: 0 };\nc.inc();"
+      }
+    },
+    {
+      "lekcija": 3,
+      "tezina": 2,
+      "pitanje": "What does this print?",
+      "odgovori": [
+        "$P(1, 2)$",
+        "$(1, 2)$",
+        "$P { 0: 1, 1: 2 }$",
+        "Compile error: no $Display$"
+      ],
+      "zanimljivost": "$#[derive(Debug)]$ writes the formatting code for you. With ${:#?}$ you get a pretty, multi-line version – handy for big nested structs.",
+      "rec": "torka",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "#[derive(Debug)]\nstruct P(i32, i32);\n\nprintln!(\"{:?}\", P(1, 2));"
+      }
     },
     {
       "lekcija": 4,
@@ -809,6 +924,40 @@
       "rec": "poklapanje"
     },
     {
+      "lekcija": 4,
+      "tezina": 2,
+      "pitanje": "What is $s$?",
+      "odgovori": [
+        "$\"odd\"$",
+        "$\"medium\"$",
+        "$\"other\"$",
+        "Compile error: arms overlap"
+      ],
+      "zanimljivost": "Arms are tried top to bottom. 7 is outside $3..=6$, so the match guard $if x % 2 == 1$ decides. The compiler can't reason about guards, which is why the $_$ arm is still required.",
+      "rec": "uzorak",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "let n = 7;\nlet s = match n {\n    1 | 2 => \"small\",\n    3..=6 => \"medium\",\n    x if x % 2 == 1 => \"odd\",\n    _ => \"other\",\n};"
+      }
+    },
+    {
+      "lekcija": 4,
+      "tezina": 1,
+      "pitanje": "What is $b$?",
+      "odgovori": [
+        "10",
+        "0",
+        "$None$",
+        "It panics"
+      ],
+      "zanimljivost": "$map$ on $None$ does nothing and stays $None$, so $unwrap_or$ gives the fallback. If computing the fallback is expensive, $unwrap_or_else(|| …)$ only runs it when needed.",
+      "rec": "opcija",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "let a: Option<i32> = None;\nlet b = a.map(|x| x * 2).unwrap_or(10);"
+      }
+    },
+    {
       "lekcija": 5,
       "tezina": 1,
       "pitanje": "What is a crate?",
@@ -978,6 +1127,23 @@
       "rec": "uputstvo"
     },
     {
+      "lekcija": 5,
+      "tezina": 2,
+      "pitanje": "Why doesn't this compile outside module $shop$?",
+      "odgovori": [
+        "Field $price$ is private",
+        "$Item$ isn't public",
+        "$mod$ needs a file",
+        "$into$ can't make a $String$"
+      ],
+      "zanimljivost": "A $pub struct$ doesn't make its fields public – each one needs its own $pub$. With a private field, outsiders can only build the struct through a function like $Item::new$, which keeps invariants safe.",
+      "rec": "modul",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "mod shop {\n    pub struct Item {\n        pub name: String,\n        price: u32,\n    }\n}\n\nlet i = shop::Item { name: \"pen\".into(), price: 3 };"
+      }
+    },
+    {
       "lekcija": 6,
       "tezina": 1,
       "pitanje": "Which macro creates a $Vec$ with given elements?",
@@ -1062,7 +1228,7 @@
     {
       "lekcija": 6,
       "tezina": 2,
-      "pitanje": "What does $*map.entry(word).or_insert(0) += 1;$ do?",
+      "pitanje": "What does this loop compute?",
       "odgovori": [
         "Counts how often each word occurs",
         "Resets every count to zero",
@@ -1070,7 +1236,11 @@
         "Removes words seen twice"
       ],
       "zanimljivost": "$or_insert$ returns $&mut V$ to the existing or newly inserted value – a classic word counter in one line.",
-      "rec": "rečnik"
+      "rec": "rečnik",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "let mut map = HashMap::new();\nfor word in text.split_whitespace() {\n    *map.entry(word).or_insert(0) += 1;\n}"
+      }
     },
     {
       "lekcija": 6,
@@ -1151,6 +1321,40 @@
       ],
       "zanimljivost": "The Book's example: 18 bytes, 6 Unicode scalar values, but 4 letters (grapheme clusters) as a reader would count them.",
       "rec": "slovo"
+    },
+    {
+      "lekcija": 6,
+      "tezina": 1,
+      "pitanje": "Why doesn't this compile?",
+      "odgovori": [
+        "$push$ needs $&mut v$ while $first$ lives",
+        "$v[0]$ returns a copy",
+        "Vectors can't grow",
+        "$vec!$ makes it immutable"
+      ],
+      "zanimljivost": "$push$ may reallocate the buffer and move every element, which would leave $first$ pointing at freed memory. In C++ this is the classic „iterator invalidation“ bug; Rust rejects it at compile time.",
+      "rec": "vektor",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "let mut v = vec![1, 2, 3];\nlet first = &v[0];\nv.push(4);\nprintln!(\"{first}\");"
+      }
+    },
+    {
+      "lekcija": 6,
+      "tezina": 2,
+      "pitanje": "What does this print?",
+      "odgovori": [
+        "12",
+        "6",
+        "7",
+        "24"
+      ],
+      "zanimljivost": "$len$ counts bytes, not letters. Each Cyrillic letter takes 2 bytes in UTF-8, so 6 letters are 12 bytes. $s.chars().count()$ gives 6. That's also why $s[0]$ doesn't compile.",
+      "rec": "bajt",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "let s = String::from(\"здраво\");\nprintln!(\"{}\", s.len());"
+      }
     },
     {
       "lekcija": 7,
@@ -1322,6 +1526,23 @@
       "rec": "provera"
     },
     {
+      "lekcija": 7,
+      "tezina": 2,
+      "pitanje": "What do $parse(\" 21 \")$ and $parse(\"x\")$ return?",
+      "odgovori": [
+        "$Ok(42)$ and an $Err$",
+        "$Ok(42)$ and a panic",
+        "$Ok(21)$ and $Ok(0)$",
+        "Two $Err$ values"
+      ],
+      "zanimljivost": "$?$ returns the error early from the function instead of panicking. It also calls $From::from$ on the error, so one function can bubble up several error types into one.",
+      "rec": "greška",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "fn parse(s: &str) -> Result<i32, ParseIntError> {\n    let n: i32 = s.trim().parse()?;\n    Ok(n * 2)\n}"
+      }
+    },
+    {
       "lekcija": 8,
       "tezina": 1,
       "pitanje": "What is a trait?",
@@ -1484,7 +1705,7 @@
     {
       "lekcija": 8,
       "tezina": 2,
-      "pitanje": "With $struct Point<T> { x: T, y: T }$, what is $Point { x: 5, y: 4.0 }$?",
+      "pitanje": "What does the compiler say about $p$?",
       "odgovori": [
         "A type mismatch error",
         "$T$ inferred as $f64$",
@@ -1492,7 +1713,28 @@
         "A $Point<Any>$"
       ],
       "zanimljivost": "Both fields share one $T$. For different types, declare $Point<T, U>$.",
-      "rec": "mešavina"
+      "rec": "mešavina",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "struct Point<T> {\n    x: T,\n    y: T,\n}\n\nlet p = Point { x: 5, y: 4.0 };"
+      }
+    },
+    {
+      "lekcija": 8,
+      "tezina": 1,
+      "pitanje": "What does this print?",
+      "odgovori": [
+        "$Hi, Ana!$",
+        "Compile error: $greet$ missing",
+        "$Hi, !$",
+        "$Ana$"
+      ],
+      "zanimljivost": "$greet$ has a default body, so implementors only have to write $name$. A default method may call required ones – a pattern similar to the „template method“ from OOP.",
+      "rec": "osobina",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "trait Hello {\n    fn name(&self) -> String;\n    fn greet(&self) -> String {\n        format!(\"Hi, {}!\", self.name())\n    }\n}\n\nstruct Ana;\nimpl Hello for Ana {\n    fn name(&self) -> String { \"Ana\".into() }\n}\n\nprintln!(\"{}\", Ana.greet());"
+      }
     },
     {
       "lekcija": 9,
@@ -1655,6 +1897,23 @@
       "rec": "oznaka"
     },
     {
+      "lekcija": 9,
+      "tezina": 1,
+      "pitanje": "Why doesn't this compile?",
+      "odgovori": [
+        "$x$ doesn't live long enough",
+        "$r$ has no type",
+        "$r$ must be $mut$",
+        "$5$ isn't a reference"
+      ],
+      "zanimljivost": "The borrow checker compares scopes: $x$ dies at the closing brace while $r$ is used after it. A reference must never outlive what it points to – that's what lifetimes describe.",
+      "rec": "trajanje",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "let r;\n{\n    let x = 5;\n    r = &x;\n}\nprintln!(\"{r}\");"
+      }
+    },
+    {
       "lekcija": 10,
       "tezina": 1,
       "pitanje": "Which attribute marks a function as a test?",
@@ -1796,6 +2055,23 @@
       ],
       "zanimljivost": "A thin $main.rs$ that calls the library is the pattern the Book uses for its $minigrep$ project.",
       "rec": "aplikacija"
+    },
+    {
+      "lekcija": 10,
+      "tezina": 2,
+      "pitanje": "How do you run this test?",
+      "odgovori": [
+        "$cargo test -- --ignored$",
+        "$cargo test --all$",
+        "$cargo test slow --force$",
+        "It can never run"
+      ],
+      "zanimljivost": "Arguments after $--$ go to the test binary, not to Cargo. $-- --include-ignored$ runs both normal and ignored tests in one go.",
+      "rec": "test",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "#[cfg(test)]\nmod tests {\n    #[test]\n    #[ignore]\n    fn slow() {\n        // takes 10 minutes\n    }\n}"
+      }
     },
     {
       "lekcija": 11,
@@ -1971,6 +2247,40 @@
       "rec": "zaključak"
     },
     {
+      "lekcija": 11,
+      "tezina": 2,
+      "pitanje": "What does this print?",
+      "odgovori": [
+        "Nothing",
+        "$1 2 3$",
+        "$3 2 1$",
+        "Only $1$"
+      ],
+      "zanimljivost": "Iterator adapters are lazy: $map$ only builds a new iterator, and nothing calls $next$ on it. The compiler warns „unused $Map$ that must be used“. Use a $for$ loop or $for_each$ for side effects.",
+      "rec": "iterator",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "let v = vec![1, 2, 3];\nv.iter().map(|x| println!(\"{x}\"));"
+      }
+    },
+    {
+      "lekcija": 11,
+      "tezina": 2,
+      "pitanje": "What happens on the last line?",
+      "odgovori": [
+        "Compile error: $v$ moved into $f$",
+        "It prints 3 twice",
+        "It prints 3 and 0",
+        "It panics: $v$ is empty"
+      ],
+      "zanimljivost": "$move$ forces the closure to take ownership of everything it uses, even if it only needs a reference. That's essential for threads – the closure may outlive the current function.",
+      "rec": "zatvaranje",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "let v = vec![1, 2, 3];\nlet f = move || v.len();\nprintln!(\"{}\", f());\nprintln!(\"{}\", v.len());"
+      }
+    },
+    {
       "lekcija": 12,
       "tezina": 1,
       "pitanje": "Where does $Box<T>$ store its value?",
@@ -1986,7 +2296,7 @@
     {
       "lekcija": 12,
       "tezina": 2,
-      "pitanje": "Why does $enum List { Cons(i32, Box<List>), Nil }$ need $Box$?",
+      "pitanje": "Why does this recursive type need $Box$?",
       "odgovori": [
         "Otherwise the size would be infinite",
         "To make the list mutable",
@@ -1994,7 +2304,11 @@
         "So it can be shared"
       ],
       "zanimljivost": "A $Box$ has a known size (one pointer), which breaks the infinite recursion in the type's size.",
-      "rec": "rekurzija"
+      "rec": "rekurzija",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "enum List {\n    Cons(i32, Box<List>),\n    Nil,\n}"
+      }
     },
     {
       "lekcija": 12,
@@ -2125,6 +2439,40 @@
       ],
       "zanimljivost": "Weak references don't keep the value alive. (The allocation itself stays until the weak count also reaches 0.)",
       "rec": "jačina"
+    },
+    {
+      "lekcija": 12,
+      "tezina": 2,
+      "pitanje": "What does this print?",
+      "odgovori": [
+        "2",
+        "3",
+        "1",
+        "0"
+      ],
+      "zanimljivost": "Each $Rc::clone$ only increments a counter – the 5 itself isn't copied. When $c$ goes out of scope the count drops back. The value is freed when it reaches 0.",
+      "rec": "brojač",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "let a = Rc::new(5);\nlet b = Rc::clone(&a);\n{\n    let c = Rc::clone(&a);\n}\nprintln!(\"{}\", Rc::strong_count(&a));"
+      }
+    },
+    {
+      "lekcija": 12,
+      "tezina": 3,
+      "pitanje": "What happens here?",
+      "odgovori": [
+        "It compiles, then panics at run time",
+        "Compile error: two $&mut$",
+        "$r2$ waits until $r1$ is dropped",
+        "$r2$ gets a copy of the vector"
+      ],
+      "zanimljivost": "$RefCell$ moves the borrowing rules from compile time to run time. $try_borrow_mut$ returns a $Result$ instead of panicking, if you want to handle it.",
+      "rec": "pozajmica",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "let c = RefCell::new(vec![1]);\nlet r1 = c.borrow_mut();\nlet r2 = c.borrow_mut();"
+      }
     },
     {
       "lekcija": 13,
@@ -2283,6 +2631,23 @@
       "rec": "razmena"
     },
     {
+      "lekcija": 13,
+      "tezina": 1,
+      "pitanje": "Why doesn't this compile?",
+      "odgovori": [
+        "The thread might outlive $v$",
+        "$println!$ isn't thread-safe",
+        "$Vec$ can't be printed",
+        "$join$ is missing $await$"
+      ],
+      "zanimljivost": "The compiler can't know the thread finishes before $v$ is dropped, so it asks for $move ||$. Scoped threads ($thread::scope$) are the other fix – they're guaranteed to end inside the scope.",
+      "rec": "nit",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "let v = vec![1, 2, 3];\nlet h = thread::spawn(|| {\n    println!(\"{:?}\", v);\n});\nh.join().unwrap();"
+      }
+    },
+    {
       "lekcija": 14,
       "tezina": 1,
       "pitanje": "What does calling an $async fn$ return?",
@@ -2439,6 +2804,23 @@
       "rec": "verzija"
     },
     {
+      "lekcija": 14,
+      "tezina": 2,
+      "pitanje": "What does this program print?",
+      "odgovori": [
+        "Only $world$",
+        "$hello$, then $world$",
+        "$world$, then $hello$",
+        "Compile error: no $await$"
+      ],
+      "zanimljivost": "Calling an $async fn$ only creates a future – none of its code runs until something polls it. Without a runtime (Tokio, smol…) or $.await$ the future is just dropped.",
+      "rec": "budućnost",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "async fn hello() {\n    println!(\"hello\");\n}\n\nfn main() {\n    let f = hello();\n    println!(\"world\");\n}"
+      }
+    },
+    {
       "lekcija": 15,
       "tezina": 1,
       "pitanje": "Can a Rust struct inherit fields from another struct?",
@@ -2569,6 +2951,23 @@
       ],
       "zanimljivost": "A type can implement many traits, so it can pick up default behavior from several sources at once.",
       "rec": "šema"
+    },
+    {
+      "lekcija": 15,
+      "tezina": 3,
+      "pitanje": "Why can't you write $Box<dyn Dup>$?",
+      "odgovori": [
+        "$dup$ returns an unknown $Self$",
+        "Traits can't take $&self$",
+        "$Box$ needs a lifetime",
+        "$Dup$ has no default method"
+      ],
+      "zanimljivost": "A trait object hides the concrete type, so a method returning $Self$ can't be called through it. Adding $where Self: Sized$ to $dup$ excludes just that method and makes the trait „dyn compatible“ again.",
+      "rec": "objekat",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "trait Dup {\n    fn dup(&self) -> Self;\n}"
+      }
     },
     {
       "vrsta": "uljez",
@@ -2742,6 +3141,23 @@
       "rec": "nadređeni"
     },
     {
+      "lekcija": 16,
+      "tezina": 1,
+      "pitanje": "What does this print?",
+      "odgovori": [
+        "15",
+        "Compile error: $Km$ ≠ $i32$",
+        "5",
+        "$Km(15)$"
+      ],
+      "zanimljivost": "$type$ only gives another name – $Km$ and $i32$ are the same type. For real protection against mixing units use a newtype: $struct Km(i32);$.",
+      "rec": "alias",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "type Km = i32;\n\nlet d: Km = 5;\nlet x: i32 = 10;\nprintln!(\"{}\", d + x);"
+      }
+    },
+    {
       "lekcija": 17,
       "tezina": 1,
       "pitanje": "Where do the bytes of a string literal live?",
@@ -2870,6 +3286,23 @@
       ],
       "zanimljivost": "A $const$ is copied into every place it is used, so taking its address twice can give two different pointers.",
       "rec": "adresa"
+    },
+    {
+      "lekcija": 17,
+      "tezina": 2,
+      "pitanje": "Does this compile?",
+      "odgovori": [
+        "Yes – $r$ isn't used after $x = 2$",
+        "No – $x$ is borrowed by $r$",
+        "No – $r$ must be $&mut$",
+        "Yes – but it prints 2 twice"
+      ],
+      "zanimljivost": "Thanks to non-lexical lifetimes (NLL, 2018), a borrow ends at its last use, not at the end of the block. Add $println!(\"{r}\")$ at the end and it stops compiling.",
+      "rec": "domet",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "let mut x = 1;\nlet r = &x;\nprintln!(\"{r}\");\nx = 2;\nprintln!(\"{x}\");"
+      }
     },
     {
       "lekcija": 18,
@@ -3034,6 +3467,23 @@
       "rec": "izuzetak"
     },
     {
+      "lekcija": 18,
+      "tezina": 3,
+      "pitanje": "What are $size_of::<A>()$ and $size_of::<B>()$?",
+      "odgovori": [
+        "8 and 12",
+        "12 and 12",
+        "6 and 6",
+        "8 and 8"
+      ],
+      "zanimljivost": "In practice Rust reorders $A$ as $u32, u8, u8$ plus 2 bytes of padding. $repr(C)$ keeps the written order: 3 bytes after $a$ so that $b$ is aligned to 4, and 3 more at the end.",
+      "rec": "poravnanje",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "struct A { a: u8, b: u32, c: u8 }\n\n#[repr(C)]\nstruct B { a: u8, b: u32, c: u8 }"
+      }
+    },
+    {
       "vrsta": "uljez",
       "lekcija": 19,
       "tezina": 2,
@@ -3192,6 +3642,23 @@
       "rec": "primer"
     },
     {
+      "lekcija": 19,
+      "tezina": 2,
+      "pitanje": "Why take $impl Into<String>$ here?",
+      "odgovori": [
+        "Callers can pass $&str$ or $String$",
+        "It makes the function $async$",
+        "It avoids heap allocation",
+        "So $s$ can be borrowed"
+      ],
+      "zanimljivost": "A $String$ argument is moved in without copying, and a $&str$ is converted only when needed. The cost: a generic function is compiled once per type it's used with.",
+      "rec": "interfejs",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "fn shout(s: impl Into<String>) -> String {\n    let mut s = s.into();\n    s.push('!');\n    s\n}\n\nshout(\"hi\");\nshout(String::from(\"yo\"));"
+      }
+    },
+    {
       "lekcija": 20,
       "tezina": 2,
       "pitanje": "Which two kinds of error representation does Gjengset compare?",
@@ -3348,6 +3815,23 @@
       "rec": "otpornost"
     },
     {
+      "lekcija": 20,
+      "tezina": 2,
+      "pitanje": "Why does $?$ work on both lines?",
+      "odgovori": [
+        "$From$ boxes each error into $dyn Error$",
+        "Both errors are $io::Error$",
+        "$?$ ignores the error type",
+        "$main$ handles them later"
+      ],
+      "zanimljivost": "There's a blanket $impl From<E: Error> for Box<dyn Error>$. Libraries usually prefer their own error enum (often via $thiserror$), while applications like $anyhow::Error$.",
+      "rec": "konverzija",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "fn run() -> Result<(), Box<dyn Error>> {\n    let n: i32 = \"x\".parse()?;\n    let f = File::open(\"a.txt\")?;\n    Ok(())\n}"
+      }
+    },
+    {
       "lekcija": 21,
       "tezina": 2,
       "pitanje": "Cargo features should be…",
@@ -3491,6 +3975,23 @@
       "rec": "isključivost"
     },
     {
+      "lekcija": 21,
+      "tezina": 2,
+      "pitanje": "How does a user of this crate turn $json$ off?",
+      "odgovori": [
+        "$default-features = false$",
+        "$features = [\"-json\"]$",
+        "$json = false$",
+        "It can't be turned off"
+      ],
+      "zanimljivost": "Features are additive: Cargo unifies them across the whole dependency graph, so another crate can switch $json$ back on. That's why features should never remove functionality.",
+      "rec": "opcija",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "[features]\ndefault = [\"json\"]\njson = [\"dep:serde_json\"]"
+      }
+    },
+    {
       "lekcija": 22,
       "tezina": 2,
       "pitanje": "What does $harness = false$ on a test target do?",
@@ -3632,6 +4133,23 @@
       ],
       "zanimljivost": "A plain test can only check what does compile – this checks what must not.",
       "rec": "neuspeh"
+    },
+    {
+      "lekcija": 22,
+      "tezina": 1,
+      "pitanje": "What runs the code in this comment?",
+      "odgovori": [
+        "$cargo test$, as a doctest",
+        "Nothing – it's just a comment",
+        "$cargo doc$ only",
+        "$rustc$ on every build"
+      ],
+      "zanimljivost": "Doc examples are compiled and run as tests, so documentation can't silently go stale. Lines starting with $# $ are hidden in the docs but still run.",
+      "rec": "primer",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "/// ```\n/// assert_eq!(mylib::double(2), 4);\n/// ```\npub fn double(x: i32) -> i32 {\n    x * 2\n}"
+      }
     },
     {
       "lekcija": 23,
@@ -3790,6 +4308,23 @@
       "rec": "dubina"
     },
     {
+      "lekcija": 23,
+      "tezina": 2,
+      "pitanje": "What does this print?",
+      "odgovori": [
+        "9",
+        "5",
+        "7",
+        "Compile error"
+      ],
+      "zanimljivost": "An $expr$ fragment is substituted as one parsed unit, as if wrapped in parentheses: $(2 + 1) * (2 + 1)$. The same C macro would give $2 + 1 * 2 + 1 = 5$.",
+      "rec": "makro",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "macro_rules! sq {\n    ($x:expr) => { $x * $x };\n}\n\nprintln!(\"{}\", sq!(2 + 1));"
+      }
+    },
+    {
       "lekcija": 24,
       "tezina": 2,
       "pitanje": "What does $Future::poll$ return?",
@@ -3946,6 +4481,23 @@
       "rec": "signal"
     },
     {
+      "lekcija": 24,
+      "tezina": 2,
+      "pitanje": "About how long does this take?",
+      "odgovori": [
+        "About 1 second",
+        "About 2 seconds",
+        "Almost zero time",
+        "It never finishes"
+      ],
+      "zanimljivost": "$join!$ polls both futures in the same task, so their waiting overlaps. Writing $a.await; b.await;$ instead would take 2 seconds – the second future only starts after the first.",
+      "rec": "čekanje",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "// each one awaits a 1-second async sleep\nlet a = sleep_then(1, \"a\");\nlet b = sleep_then(1, \"b\");\n\nlet (x, y) = join!(a, b);"
+      }
+    },
+    {
       "lekcija": 25,
       "tezina": 2,
       "pitanje": "What does marking a function $unsafe fn$ signal?",
@@ -4076,6 +4628,23 @@
       ],
       "zanimljivost": "Example: calling $set_len$ before the elements are written – if a panic happens in between, $Drop$ sees garbage.",
       "rec": "doslednost"
+    },
+    {
+      "lekcija": 25,
+      "tezina": 2,
+      "pitanje": "Which operation actually requires $unsafe$?",
+      "odgovori": [
+        "Dereferencing $p$",
+        "Creating the raw pointer",
+        "The cast with $as$",
+        "Printing $x$"
+      ],
+      "zanimljivost": "Making a raw pointer is safe – it's just a number. Only reading or writing through it is dangerous, because the compiler can't check that it points to valid memory. This prints 6.",
+      "rec": "pokazivač",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "let mut x = 5;\nlet p = &mut x as *mut i32;\nunsafe {\n    *p += 1;\n}\nprintln!(\"{x}\");"
+      }
     },
     {
       "vrsta": "spoji",
@@ -4219,6 +4788,23 @@
       ],
       "zanimljivost": "The OS may wake a thread even though nobody called $notify$, so the condition must be rechecked.",
       "rec": "buđenje"
+    },
+    {
+      "lekcija": 26,
+      "tezina": 3,
+      "pitanje": "Does this compile, and what does it print?",
+      "odgovori": [
+        "Yes – $[1, 2, 3, 4]$",
+        "No – $v$ needs a $Mutex$",
+        "No – closure needs $move$",
+        "Yes – $[1, 2, 3]$"
+      ],
+      "zanimljivost": "A scope joins all its threads before returning, so they may borrow local data – even mutably, as long as only one thread does. Scoped threads came to the standard library in Rust 1.63.",
+      "rec": "opseg",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "let mut v = vec![1, 2, 3];\nthread::scope(|s| {\n    s.spawn(|| v.push(4));\n});\nprintln!(\"{:?}\", v);"
+      }
     },
     {
       "lekcija": 27,
@@ -4373,6 +4959,23 @@
       "rec": "povezivač"
     },
     {
+      "lekcija": 27,
+      "tezina": 2,
+      "pitanje": "Why is the call wrapped in $unsafe$?",
+      "odgovori": [
+        "Rust can't check foreign code",
+        "$abs$ may return a pointer",
+        "$-3$ isn't a valid $i32$",
+        "$main$ can't call C"
+      ],
+      "zanimljivost": "The compiler trusts the declared signature blindly – a wrong type there is undefined behaviour. Since the 2024 edition the block itself is $unsafe extern$; a function you know is harmless can be declared $safe fn$ and called without $unsafe$.",
+      "rec": "granica",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "unsafe extern \"C\" {\n    fn abs(x: i32) -> i32;\n}\n\nfn main() {\n    let y = unsafe { abs(-3) };\n}"
+      }
+    },
+    {
       "lekcija": 28,
       "tezina": 1,
       "pitanje": "What remains available with $#![no_std]$?",
@@ -4490,6 +5093,23 @@
       ],
       "zanimljivost": "$format!$ returns a $String$. $core::fmt::Write$ lets you format into a fixed-size buffer.",
       "rec": "bafer"
+    },
+    {
+      "lekcija": 28,
+      "tezina": 2,
+      "pitanje": "Why must a $no_std$ binary write this function?",
+      "odgovori": [
+        "Normally $std$ provides it",
+        "$core$ forbids $loop$",
+        "To print the panic message",
+        "It runs before $main$"
+      ],
+      "zanimljivost": "Without an operating system there's nobody to print a message and exit, so you decide: loop forever, reset the chip, blink an LED… The $!$ return type means the function never returns.",
+      "rec": "jezgro",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "#![no_std]\n#![no_main]\n\nuse core::panic::PanicInfo;\n\n#[panic_handler]\nfn panic(_: &PanicInfo) -> ! {\n    loop {}\n}"
+      }
     },
     {
       "lekcija": 29,
@@ -4633,6 +5253,23 @@
       ],
       "zanimljivost": "Before a release, the Rust team can build and test essentially every crate on crates.io with the old and new compiler.",
       "rec": "krater"
+    },
+    {
+      "lekcija": 29,
+      "tezina": 1,
+      "pitanje": "Which versions may Cargo choose for this dependency?",
+      "odgovori": [
+        "From 1.0.150 up to (not incl.) 2.0",
+        "Exactly 1.0.150",
+        "Any version at all",
+        "Only 1.0.x patches"
+      ],
+      "zanimljivost": "A bare version is a caret requirement ($^1.0.150$): anything semver-compatible. Use $=1.0.150$ to pin it exactly – $Cargo.lock$ already pins it for applications.",
+      "rec": "verzija",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "[dependencies]\nserde = \"1.0.150\""
+      }
     }
   ]
 }

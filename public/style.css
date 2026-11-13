@@ -441,3 +441,18 @@ a.dugme { display: block; text-align: center; text-decoration: none; box-sizing:
 #o-igri ul, #o-igri ol { padding-left: 1.3em; }
 #o-igri a { color: var(--blago); }
 body.ekran #o-igri { display: none; }
+
+/* medij „kod“ u stilu Carbon: tamni prozor, bojenje sintakse (public/mediji.js → bojiKod) */
+.kod-prozor { background: #1e2030; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,.35); overflow: hidden; text-align: left; margin: 4px auto; max-width: 100%; }
+.kod-traka { display: flex; align-items: center; gap: 7px; padding: 10px 14px 4px; }
+.kod-traka i { width: 11px; height: 11px; border-radius: 50%; background: #ff5f56; }
+.kod-traka i:nth-child(2) { background: #ffbd2e; }
+.kod-traka i:nth-child(3) { background: #27c93f; }
+.kod-traka span { margin-left: auto; font-size: .7em; color: #7f86a8; font-family: ui-monospace, monospace; }
+.kod-prozor .kod { color: #c8d3f5; padding: 8px 16px 16px; }
+.k-klj { color: #c099ff; } .k-tip { color: #ffc777; } .k-fn { color: #82aaff; } .k-makro { color: #86e1fc; }
+.k-niz { color: #c3e88d; } .k-br { color: #ff966c; } .k-op { color: #89ddff; } .k-kom { color: #636da6; font-style: italic; }
+/* kôd u redu teksta (kvizovi sa "kod": "rust" | "tla") – iste boje kao Carbon prozor */
+.kod-uz { font: 600 .88em/1.25 ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; color: #c8d3f5; background: #1e2030;
+  border: 1px solid #ffffff1a; border-radius: 6px; padding: .08em .38em; white-space: pre-wrap; overflow-wrap: anywhere; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+.pitanje-tekst .kod-uz { font-weight: 600; }

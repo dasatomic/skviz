@@ -7,6 +7,7 @@
   "oblast": "eksperimenti",
   "uOpstem": false,
   "jezik": "en",
+  "kod": "tla",
   "celina": "Cela knjiga",
   "lekcije": [
     {
@@ -325,6 +326,23 @@
       "rec": "tablica"
     },
     {
+      "lekcija": 1,
+      "tezina": 1,
+      "pitanje": "What is the value of $Q$?",
+      "odgovori": [
+        "$TRUE$",
+        "$FALSE$",
+        "It is undefined",
+        "An error"
+      ],
+      "zanimljivost": "An implication with a false premise is always true – „if pigs fly, then 1 = 2“ is a true statement. Only $TRUE => FALSE$ is false.",
+      "rec": "implikacija",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "F == FALSE\nG == FALSE\nQ == F => G"
+      }
+    },
+    {
       "lekcija": 2,
       "tezina": 1,
       "pitanje": "What is a „behavior“ of a system in TLA+?",
@@ -554,6 +572,23 @@
       "rec": "bomba"
     },
     {
+      "lekcija": 2,
+      "tezina": 1,
+      "pitanje": "If $hr = 12$ in the current state, what is $hr$ in the next state?",
+      "odgovori": [
+        "1",
+        "13",
+        "12",
+        "0"
+      ],
+      "zanimljivost": "$#$ is the ASCII way to type ≠. The prime ($hr'$) means „the value of $hr$ in the next state“ – the whole formula relates two states, so it's an action, not an assignment.",
+      "rec": "sat",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "HCnxt == hr' = IF hr # 12 THEN hr + 1\n                         ELSE 1"
+      }
+    },
+    {
       "lekcija": 3,
       "tezina": 1,
       "pitanje": "Which protocol does the asynchronous interface of Chapter 3 use?",
@@ -779,6 +814,23 @@
       "rec": "modul"
     },
     {
+      "lekcija": 3,
+      "tezina": 2,
+      "pitanje": "In this action, what does $@$ stand for?",
+      "odgovori": [
+        "The old value of $chan.rdy$",
+        "The new value of $chan.val$",
+        "The whole record $chan$",
+        "The argument $d$"
+      ],
+      "zanimljivost": "Inside $EXCEPT$, $@$ means the field's current value, so $!.rdy = 1 - @$ flips the bit between 0 and 1. It saves repeating long paths like $chan.rdy$.",
+      "rec": "kanal",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "Send(d) ==\n  /\\ chan.rdy = chan.ack\n  /\\ chan' = [chan EXCEPT !.val = d,\n                          !.rdy = 1 - @]"
+      }
+    },
+    {
       "lekcija": 4,
       "tezina": 1,
       "pitanje": "What does FIFO stand for?",
@@ -1000,6 +1052,23 @@
       "rec": "ime"
     },
     {
+      "lekcija": 4,
+      "tezina": 1,
+      "pitanje": "Where does the received value end up?",
+      "odgovori": [
+        "At the end of the queue $q$",
+        "At the front of the queue $q$",
+        "Directly in $out$",
+        "It replaces the whole $q$"
+      ],
+      "zanimljivost": "$InChan!Rcv$ uses the $Rcv$ action from an instantiated $Channel$ module. The FIFO adds at the tail with $Append$ and sends from the head with $Head(q)$, then keeps $Tail(q)$.",
+      "rec": "red",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "BufRcv == /\\ InChan!Rcv\n          /\\ q' = Append(q, in.val)\n          /\\ UNCHANGED out"
+      }
+    },
+    {
       "lekcija": 5,
       "tezina": 1,
       "pitanje": "How is the value of function $f$ at $x$ written in TLA+?",
@@ -1206,6 +1275,23 @@
       ],
       "zanimljivost": "In the cache example $omem$ is $vmem$ – the memory as it will be once all writes in the queue have been performed.",
       "rec": "profinjenje"
+    },
+    {
+      "lekcija": 5,
+      "tezina": 2,
+      "pitanje": "What is $g[2] + g[3]$?",
+      "odgovori": [
+        "9",
+        "13",
+        "4",
+        "0"
+      ],
+      "zanimljivost": "$f$ is the function 1↦1, 2↦4, 3↦9 and $g$ equals $f$ except that 2 maps to 0. The memory interface uses exactly this idiom to change one processor's entry: $ctl' = [ctl EXCEPT ![p] = \"busy\"]$.",
+      "rec": "funkcija",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "f == [p \\in {1, 2, 3} |-> p * p]\ng == [f EXCEPT ![2] = 0]"
+      }
     },
     {
       "lekcija": 6,
@@ -1416,6 +1502,40 @@
       "rec": "deljenje"
     },
     {
+      "lekcija": 6,
+      "tezina": 1,
+      "pitanje": "What set is $U$?",
+      "odgovori": [
+        "${20, 30}$",
+        "${10, 20, 30}$",
+        "${2, 3}$",
+        "${20, 30, 40}$"
+      ],
+      "zanimljivost": "$T$ uses „selection“ – keep the elements that satisfy a condition. $U$ uses „replacement“ – apply an expression to every element. Together they cover most set comprehensions you'll ever need.",
+      "rec": "skup",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "S == {1, 2, 3}\nT == {x \\in S : x > 1}\nU == {x * 10 : x \\in T}"
+      }
+    },
+    {
+      "lekcija": 6,
+      "tezina": 2,
+      "pitanje": "What does this $LET$ do?",
+      "odgovori": [
+        "Defines $d$ only inside $Next$",
+        "Declares a new variable $d$",
+        "Assigns $hr + 1$ to $hr$",
+        "Adds a constant to the module"
+      ],
+      "zanimljivost": "A $LET$ definition is local and is just an abbreviation – it has no state of its own. It's the TLA+ way to name a subexpression and avoid writing it twice.",
+      "rec": "definicija",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "Next == LET d == hr + 1\n        IN  hr' = IF d > 12 THEN 1 ELSE d"
+      }
+    },
+    {
       "lekcija": 7,
       "tezina": 1,
       "pitanje": "According to Lamport, what is the purpose of writing a specification?",
@@ -1624,6 +1744,23 @@
       "objasnjenje": "The other three are headings from „Some Further Hints“. Lamport, on the contrary, wants specs to be as simple as possible.",
       "zanimljivost": "Other hints include „A type invariant is not an assumption“, „Move quantification to the outside“ and „Prime only what you mean to prime“.",
       "rec": "savet"
+    },
+    {
+      "lekcija": 7,
+      "tezina": 2,
+      "pitanje": "What does this theorem claim?",
+      "odgovori": [
+        "$TypeOK$ holds in every reachable state",
+        "TLC must check it first",
+        "$x$ and $q$ never change",
+        "$Spec$ can only take $Nat$ inputs"
+      ],
+      "zanimljivost": "TLA+ is untyped, so a type invariant is just an ordinary formula. Lamport advises writing it early – TLC checking it catches many mistakes long before the interesting properties.",
+      "rec": "invarijanta",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "TypeOK == /\\ x \\in Nat\n          /\\ q \\in Seq(Msg)\n\nTHEOREM Spec => []TypeOK"
+      }
     },
     {
       "lekcija": 8,
@@ -1847,6 +1984,23 @@
       "rec": "negacija"
     },
     {
+      "lekcija": 8,
+      "tezina": 2,
+      "pitanje": "What does adding $WF_vars(Next)$ guarantee?",
+      "odgovori": [
+        "$Next$ can't stay enabled forever without a step",
+        "$Next$ happens in every step",
+        "Nothing bad ever happens",
+        "The system eventually halts"
+      ],
+      "zanimljivost": "Without fairness, a behavior may stutter forever, so the clock could simply stop. Weak fairness rules that out; strong fairness ($SF$) also covers actions that are only enabled again and again.",
+      "rec": "pravednost",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "Spec == /\\ Init\n        /\\ [][Next]_vars\n        /\\ WF_vars(Next)"
+      }
+    },
+    {
       "lekcija": 9,
       "tezina": 1,
       "pitanje": "What is the variable that represents real time in TLA+ specifications called?",
@@ -2053,6 +2207,23 @@
       ],
       "zanimljivost": "It's provable that $RTBound$ formulas on subactions alone suffice – but that, Lamport says, is of theoretical interest only.",
       "rec": "teorija"
+    },
+    {
+      "lekcija": 9,
+      "tezina": 3,
+      "pitanje": "What does $RTBound(A, v, 2, 5)$ say about action $A$?",
+      "odgovori": [
+        "Not before 2 s enabled, and by 5 s",
+        "It happens every 2 to 5 steps",
+        "It waits 2 s, then repeats 5 times",
+        "$v$ changes between 2 and 5 s"
+      ],
+      "zanimljivost": "Time in TLA+ is just a variable $now$ that changes in its own steps. $RTBound$ adds a timer per action, so real-time properties are ordinary safety formulas.",
+      "rec": "vreme",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "RTBound(A, v, D, E) ==\n  \\* A must be enabled for at least D seconds\n  \\* before it happens, and at most E"
+      }
     },
     {
       "lekcija": 10,
@@ -2274,6 +2445,23 @@
       ],
       "zanimljivost": "Chapter 10 describes the same components as separate specs combined by conjunction – but Lamport says that's usually not worth doing.",
       "rec": "disjunkt"
+    },
+    {
+      "lekcija": 10,
+      "tezina": 1,
+      "pitanje": "How does TLA+ compose these two components?",
+      "odgovori": [
+        "As the conjunction of their specs",
+        "By running them one after the other",
+        "With a special $PARALLEL$ operator",
+        "By renaming all variables"
+      ],
+      "zanimljivost": "Composition is conjunction: a behavior of the whole system must satisfy both components' specs at once. The hard part is making sure each component only changes its own variables.",
+      "rec": "kompozicija",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "Spec == SpecA /\\ SpecB"
+      }
     },
     {
       "lekcija": 11,
@@ -2711,6 +2899,23 @@
       "rec": "provera"
     },
     {
+      "lekcija": 12,
+      "tezina": 3,
+      "pitanje": "How does the parser read $A$?",
+      "odgovori": [
+        "$(x = 1 ∧ y = 2) ∨ z = 3$",
+        "$x = 1 ∧ (y = 2 ∨ z = 3)$",
+        "$x = 1 ∧ y = 2 ∧ z = 3$",
+        "A syntax error"
+      ],
+      "zanimljivost": "In bulleted lists, indentation matters: the $\\/$ starts to the left of the $/\\$ column, so it ends the conjunction list. Aligned bullets let you skip almost all parentheses.",
+      "rec": "uvlačenje",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "A == /\\ x = 1\n     /\\ y = 2\n   \\/ z = 3"
+      }
+    },
+    {
       "lekcija": 13,
       "tezina": 1,
       "pitanje": "What is the TLATeX program for?",
@@ -2917,6 +3122,23 @@
       ],
       "zanimljivost": "It's one of the few tips the book calls „all you probably need to know“ about TLATeX.",
       "rec": "komanda"
+    },
+    {
+      "lekcija": 13,
+      "tezina": 1,
+      "pitanje": "How does TLATeX typeset $#$ in this line?",
+      "odgovori": [
+        "As $≠$",
+        "As $#$",
+        "As a comment mark",
+        "As $=$"
+      ],
+      "zanimljivost": "TLATeX turns ASCII into mathematical symbols: $/\\$ becomes ∧, $\\in$ ∈, $==$ ≜. The output is what you see in the book and in the papers.",
+      "rec": "simbol",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "Next == x # 0 /\\ y' \\in S"
+      }
     },
     {
       "lekcija": 14,
@@ -3144,6 +3366,23 @@
       "rec": "širina"
     },
     {
+      "lekcija": 14,
+      "tezina": 2,
+      "pitanje": "What else does this TLC configuration file need?",
+      "odgovori": [
+        "A value for $N$, e.g. $N = 3$",
+        "A $THEOREM$ line",
+        "$EXTENDS TLC$",
+        "Nothing – it's complete"
+      ],
+      "zanimljivost": "TLC can only explore finite models, so every constant needs a concrete value. Assignments like $N = 3$ or sets of model values like ${p1, p2}$ are how a general spec becomes something checkable.",
+      "rec": "model",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "\\* module has: CONSTANT N\nINIT Init\nNEXT Next\nINVARIANT TypeOK"
+      }
+    },
+    {
       "lekcija": 15,
       "tezina": 1,
       "pitanje": "How does a module begin in ASCII TLA+?",
@@ -3365,6 +3604,23 @@
       "rec": "znak"
     },
     {
+      "lekcija": 15,
+      "tezina": 1,
+      "pitanje": "What is $t[2]$?",
+      "odgovori": [
+        "$\"b\"$",
+        "$\"a\"$",
+        "$\"c\"$",
+        "An error"
+      ],
+      "zanimljivost": "A tuple is a function whose domain is $1..n$, so indexing starts at 1, not 0. $<<…>>$ is typed by hand and TLATeX shows it as ⟨…⟩.",
+      "rec": "torka",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "t == <<\"a\", \"b\", \"c\">>"
+      }
+    },
+    {
       "lekcija": 16,
       "tezina": 1,
       "pitanje": "What is the set $BOOLEAN$ in TLA+?",
@@ -3580,6 +3836,40 @@
       ],
       "zanimljivost": "The chapter briefly explains every operator with pointers to the longer explanations in Part I, plus a formal semantics for those who need it.",
       "rec": "priručnik"
+    },
+    {
+      "lekcija": 16,
+      "tezina": 3,
+      "pitanje": "What is $x$?",
+      "odgovori": [
+        "Some unspecified value",
+        "${}$ – the empty set",
+        "$FALSE$",
+        "A run-time error"
+      ],
+      "zanimljivost": "$CHOOSE$ is deterministic but unspecified: when no element qualifies, the result is some fixed value nobody knows. TLC reports an error if it has to evaluate such a $CHOOSE$.",
+      "rec": "izbor",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "x == CHOOSE n \\in {1, 2, 3} : n > 5"
+      }
+    },
+    {
+      "lekcija": 16,
+      "tezina": 2,
+      "pitanje": "What is $DOMAIN r$?",
+      "odgovori": [
+        "${\"name\", \"age\"}$",
+        "${\"Ana\", 12}$",
+        "$Nat$",
+        "${1, 2}$"
+      ],
+      "zanimljivost": "A record is just a function from strings (field names) to values. So $r.age$ is shorthand for $r[\"age\"]$, and $DOMAIN$ gives the set of field names.",
+      "rec": "zapis",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "r == [name |-> \"Ana\", age |-> 12]"
+      }
     },
     {
       "lekcija": 17,
@@ -3803,6 +4093,23 @@
       "rec": "konstanta"
     },
     {
+      "lekcija": 17,
+      "tezina": 2,
+      "pitanje": "Which formula is $[A]_x$ shorthand for?",
+      "odgovori": [
+        "$A ∨ (x' = x)$",
+        "$A ∧ (x' = x)$",
+        "$A ⇒ (x' = x)$",
+        "$□A$"
+      ],
+      "zanimljivost": "The square brackets allow a stuttering step where $x$ stays the same. That makes specs stuttering-invariant – a spec of an hour clock stays valid when a minute hand is added.",
+      "rec": "korak",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "Next == [A]_x"
+      }
+    },
+    {
       "lekcija": 18,
       "tezina": 1,
       "pitanje": "What are Lamport's two reasons for using standard modules?",
@@ -4024,6 +4331,23 @@
       "objasnjenje": "$RealTime$ is standard, but it's described in Chapter 9 on real time. The other three are in Chapter 18.",
       "zanimljivost": "Chapter 18 also covers the number modules $Naturals$, $Integers$, $Reals$, plus $Peano$ and $ProtoReals$.",
       "rec": "modul"
+    },
+    {
+      "lekcija": 18,
+      "tezina": 1,
+      "pitanje": "What is $Append(Tail(s), Head(s))$?",
+      "odgovori": [
+        "$<<\"b\", \"c\", \"a\">>$",
+        "$<<\"a\", \"b\", \"c\", \"a\">>$",
+        "$<<\"c\", \"b\", \"a\">>$",
+        "$<<\"b\", \"c\">>$"
+      ],
+      "zanimljivost": "It rotates the sequence by one place. The $Sequences$ module also gives $Len$, $SubSeq$, $SelectSeq$ and $\\o$ for concatenation – all written in TLA+ itself.",
+      "rec": "niz",
+      "mediji": {
+        "vrsta": "kod",
+        "tekst": "EXTENDS Sequences\n\ns == <<\"a\", \"b\", \"c\">>"
+      }
     }
   ]
 }

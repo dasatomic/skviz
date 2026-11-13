@@ -29,7 +29,7 @@ const sacuvajJa = () => { if (!EKRAN) ls.set('ja', ja); };
 // ───── pismo: ćirilica (podrazumevano) ili latinica – važi za ceo prikaz ─────
 // Kod i podaci ostaju na latinici; ceo ekran (tekst čvorovi, placeholder/title) se preslovljava u hodu.
 let PISMO = ls.get('pismo', 'cirilica') === 'latinica' ? 'latinica' : 'cirilica';
-const NE_DIRAJ = 'script,style,textarea,input,[data-lat],[lang="en"],.formula,.formula-mala,.kod-sobe,.adresa,.mat,.kod';
+const NE_DIRAJ = 'script,style,textarea,input,[data-lat],[lang="en"],.formula,.formula-mala,.kod-sobe,.adresa,.mat,.kod,.kod-prozor,.kod-uz';
 const tr = (t) => (PISMO === 'cirilica' ? window.Pismo.uCirilicu(t) : String(t)); // pravila u pismo.js
 function prevedi(koren) {
   if (PISMO !== 'cirilica') return;
@@ -80,7 +80,13 @@ const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '
 // sadržaj kviza na stranom jeziku ("jezik": "en", npr. TLA+) ide u <span lang> – ne preslovljava se u ćirilicu
 const strano = (html, jezik = V?.pitanje?.jezik) => (jezik ? `<span lang="${esc(jezik)}">${html}</span>` : html);
 function mat(t) {
-  return strano(matTekst(t));
+  return strano(V?.pitanje?.kod ? kodTekst(t, V.pitanje.kod) : matTekst(t));
+}
+// kviz o programiranju ("kod": "rust" | "tla"): $…$ je kôd u redu teksta – obojen, monospace, bez matematičkih zamena
+function kodTekst(t, jezik) {
+  return String(t ?? '').split(/\$([^$]+)\$/).map((deo, i) => (i % 2
+    ? `<code class="kod-uz">${Mediji.bojiKod(deo, jezik)}</code>`
+    : esc(deo).replace(/\n/g, '<br>'))).join('');
 }
 function matTekst(t) {
   return esc(t).replace(/\$([^$]+)\$/g, (_, m) => {
@@ -677,7 +683,7 @@ function otkrivanjePitanja(P, naslov) {
 // medij uz zanimljivost (npr. fotografija onoga što je bio tačan odgovor) – crta se tek pri otkrivanju
 function prikaziMedijOdgovora(P) {
   const k = $('#medij-odgovora');
-  if (k && P.medijiOdgovora) ciscenje.push(prikaziMedij(k, P.medijiOdgovora, { auto: true, paket: P.paket }));
+  if (k && P.medijiOdgovora) ciscenje.push(prikaziMedij(k, P.medijiOdgovora, { auto: true, paket: P.paket, kod: P.kod }));
 }
 
 // ───── rešenje zadatka korak po korak: crtež prati korak (novi elementi se pojavljuju, delovi se ističu) ─────
@@ -734,7 +740,7 @@ function ekranPitanje(nov, staro) {
       <div id="medij"></div>
       <div class="odgovori" id="odgovori">${P.odgovori.map((o, i) => `<button class="odg" data-i="${i}" data-slovo="${slovaOdg()[i]}">${mat(o)}<span class="glasovi"></span><span class="procenat"></span></button>`).join('')}</div>
       <div id="ispod"></div>`;
-    if (P.mediji) ciscenje.push(prikaziMedij($('#medij'), P.mediji, { auto: true, paket: P.paket }));
+    if (P.mediji) ciscenje.push(prikaziMedij($('#medij'), P.mediji, { auto: true, paket: P.paket, kod: P.kod }));
     else $('#medij').remove();
     if (P.odgovori.every((o) => o.length < 18) && !EKRAN) $('#odgovori').classList.add('dvokolonski');
     app.querySelectorAll('.odg').forEach((b) => (b.onclick = () => {
@@ -802,7 +808,7 @@ function ekranSpoji(nov, staro) {
         <div class="kolona">${P.desno.map((t, j) => `<button class="spoj desno" data-j="${j}" style="animation-delay:${0.05 * j + 0.1}s">${mat(t)}</button>`).join('')}</div>
       </div>
       <div id="ispod"></div>`;
-    if (P.mediji) ciscenje.push(prikaziMedij($('#medij'), P.mediji, { auto: true, paket: P.paket }));
+    if (P.mediji) ciscenje.push(prikaziMedij($('#medij'), P.mediji, { auto: true, paket: P.paket, kod: P.kod }));
     else $('#medij').remove();
     const moze = () => !EKRAN && V.faza === 'pitanje' && V.mojOdgovor === null;
     app.querySelectorAll('.spoj.levo').forEach((b) => (b.onclick = () => {

@@ -32,6 +32,8 @@ function poruka(t, ms = 2600) {
 
 // tekst sa matematikom ($…$), kao u igri
 function mat(t) {
+  // kviz o programiranju ("kod": "rust" | "tla"): $…$ je obojen kôd, kao u igri
+  if (kviz?.kod) return String(t ?? '').split(/\$([^$]+)\$/).map((d, i) => (i % 2 ? `<code class="kod-uz">${window.Mediji.bojiKod(d, kviz.kod)}</code>` : esc(d).replace(/\n/g, '<br>'))).join('');
   return esc(t).replace(/\$([^$]+)\$/g, (_, m) => `<span class="mat">${m}</span>`).replace(/\n/g, '<br>');
 }
 
@@ -489,7 +491,7 @@ function osveziPregled(odmah = false) {
       const m = document.createElement('div');
       m.id = 'pv-medij';
       mesto.replaceWith(m);
-      try { ciscenjeMedija = prikaziMedij(m, P.mediji, { auto: false, paket: kvizId }); } catch { m.innerHTML = '<div class="u-prazno">Prikaz nije ispravan.</div>'; }
+      try { ciscenjeMedija = prikaziMedij(m, P.mediji, { auto: false, paket: kvizId, kod: kviz?.kod }); } catch { m.innerHTML = '<div class="u-prazno">Prikaz nije ispravan.</div>'; }
     } else mesto.remove();
     poslednjiMedij = medijKljuc;
   }
