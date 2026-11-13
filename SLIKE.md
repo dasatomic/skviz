@@ -7,7 +7,6 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 ## ⚠ Proveriti ručno
 
 - biologija/doli.jpg – https://en.wikipedia.org/wiki/Dolly_(sheep)
-- opsta-kultura/nobel-medalja.jpg – https://en.wikipedia.org/wiki/Nobel_Prize
 - razred5-istorija/nebra.jpg – https://en.wikipedia.org/wiki/Nebra_sky_disc
 - razred5-istorija/natron.jpg – https://en.wikipedia.org/wiki/Natron
 - razred5-istorija/fenicansko-pismo.png – https://commons.wikimedia.org/wiki/File%3APhoenician%20alphabet.svg
@@ -492,70 +491,9 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | muzicko | milenkovic.jpg | Stefansmigic | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Stefan_Milenkovich) |
 | muzicko | gitara.jpg | User:Martin Möller | CC BY-SA 2.0 de | [izvor](https://en.wikipedia.org/wiki/Classical_guitar) |
 | muzicko | saksofon.jpg | Jonathanischoice | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Saxophone) |
-| opsta-kultura | gutenberg.jpg | NYC Wanderer (Kevin Eng) | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Gutenberg_Bible) |
-| opsta-kultura | dinar.jpg | Ablohm | Public domain | [izvor](https://en.wikipedia.org/wiki/Serbian_dinar) |
-| opsta-kultura | slava.jpg | Petar Milošević | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Slava_(tradition)) |
-| opsta-kultura | badnjak.jpg | Lazar | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Badnjak_(Serbian)) |
-| opsta-kultura | edison.jpg | Louis Bachrach, Bachrach Studios, restored by Michel Vuijlsteke | Public domain | [izvor](https://en.wikipedia.org/wiki/Thomas_Edison) |
-| opsta-kultura | bel.jpg | Unknown authorUnknown author | CC0 | [izvor](https://en.wikipedia.org/wiki/Alexander_Graham_Bell) |
-| opsta-kultura | pica.jpg | Bex Walton from London, England | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Pizza_Margherita) |
-| opsta-kultura | ajvar.jpg | Off-shell | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Ajvar) |
-| opsta-kultura | egziperi.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Antoine_de_Saint-Exup%C3%A9ry) |
-| opsta-kultura | sekspir.jpg | Attributed to John Taylor | Public domain | [izvor](https://en.wikipedia.org/wiki/William_Shakespeare) |
-| opsta-kultura | slon.jpg | Giles Laurent | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/African_bush_elephant) |
-| opsta-kultura | seizmogram.jpg | Z22 | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Seismogram) |
-| opsta-kultura | delfin.jpg | NASA | Public domain | [izvor](https://en.wikipedia.org/wiki/Common_bottlenose_dolphin) |
-| opsta-kultura | cezar.jpg | Ángel M. Felicísimo from Mérida, España | Public domain | [izvor](https://en.wikipedia.org/wiki/Julius_Caesar) |
-| opsta-kultura | menhetn.jpg | Dllu | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Manhattan) |
-| opsta-kultura | pisanice.jpg | Ikonact | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Easter_egg) |
-| opsta-kultura | djikdji.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Jikji) |
-| opsta-kultura | luvr.jpg | Benh LIEU SONG (Flickr) | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Louvre) |
-| opsta-kultura | stokholm-vecnica.jpg | ArildV | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Stockholm_City_Hall) |
-| opsta-kultura | olimpijski-krugovi.png | Original author: Pierre de Coubertin (1863-1937) | Public domain | [izvor](https://commons.wikimedia.org/wiki/File%3AOlympic%20rings%20without%20rims.svg) |
-| opsta-kultura | kajmak.jpg | E4024 | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Kaymak) |
-| opsta-kultura | sah.jpg | Alan Light | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Chess) |
-| opsta-kultura | opanci.jpg | Original uploader was Bjankuloski06 at mk.wikipedia | Public domain | [izvor](https://en.wikipedia.org/wiki/Opanak) |
-| opsta-kultura | sajkaca.jpg | Boris Dimitrov | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/%C5%A0ajka%C4%8Da) |
-| opsta-kultura | hleb-i-so.jpg | Olli Niemitalo | CC0 | [izvor](https://en.wikipedia.org/wiki/Bread_and_salt) |
-| opsta-kultura | cesnica.jpg | Ivana Sokolović | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/%C4%8Cesnica) |
-| opsta-kultura | horacije.jpg | Unknown | Public domain | [izvor](https://en.wikipedia.org/wiki/Horace) |
-| opsta-kultura | heraklit.jpg | RoyFokker | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Heraclitus) |
-| opsta-kultura | sokrat.jpg | Copy of Lysippos (?) | Public domain | [izvor](https://en.wikipedia.org/wiki/Socrates) |
-| opsta-kultura | defo.jpg | UnknownUnknown , style of Sir Godfrey Kneller | Public domain | [izvor](https://en.wikipedia.org/wiki/Daniel_Defoe) |
-| opsta-kultura | vern.jpg | Étienne Carjat / Adam Cuerden | Public domain | [izvor](https://en.wikipedia.org/wiki/Jules_Verne) |
-| opsta-kultura | dima.jpg | Nadar | Public domain | [izvor](https://en.wikipedia.org/wiki/Alexandre_Dumas) |
-| opsta-kultura | servantes.jpg | Attributed to Juan de Jáuregui | Public domain | [izvor](https://en.wikipedia.org/wiki/Miguel_de_Cervantes) |
-| opsta-kultura | dante.jpg | Wolfgang Sauber | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Dante_Alighieri) |
-| opsta-kultura | tven.jpg | A.F. Bradley, New York | Public domain | [izvor](https://en.wikipedia.org/wiki/Mark_Twain) |
-| opsta-kultura | dikens.jpg | Jeremiah Gurney | Public domain | [izvor](https://en.wikipedia.org/wiki/Charles_Dickens) |
-| opsta-kultura | rouling.jpg | Daniel Ogren | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/J._K._Rowling) |
-| opsta-kultura | andjeoski.jpg | Rich Childs | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Angel_Falls) |
-| opsta-kultura | tesla.jpg | Napoleon Sarony | Public domain | [izvor](https://en.wikipedia.org/wiki/Nikola_Tesla) |
-| opsta-kultura | gejts.jpg | Bogdan Hoyaux / European Union | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Bill_Gates) |
 | razred8-istorija | berners-li.jpg | Summit | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Tim_Berners-Lee) |
-| opsta-kultura | big-ben.jpg | Christian David | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Big_Ben) |
-| opsta-kultura | paelja.jpg | Jan Harenburg | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Paella) |
-| opsta-kultura | kakao.jpg | Photo by Medicaster. | Public domain | [izvor](https://en.wikipedia.org/wiki/Cocoa_bean) |
 | razred5-istorija | caj-lun.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Cai_Lun) |
-| opsta-kultura | plovdiv.jpg | MrPanyGoff | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Roman_theatre_of_Philippopolis) |
-| opsta-kultura | dekart.jpg | After Frans Hals | Public domain | [izvor](https://en.wikipedia.org/wiki/Ren%C3%A9_Descartes) |
-| opsta-kultura | zastava-sad.png | Uploaded by Dbenbenn; edited by users such as Zscout370, Jacobolus, Indolences,  | Public domain | [izvor](https://commons.wikimedia.org/wiki/File%3AFlag%20of%20the%20United%20States.svg) |
-| opsta-kultura | zastava-svajcarske.png | Original: Unknown Vector: User:Marc Mongenet Credits: User:-xfi- User:Zscout370 | Public domain | [izvor](https://commons.wikimedia.org/wiki/File%3AFlag%20of%20Switzerland.svg) |
-| opsta-kultura | kjoto.jpg | Nacaru | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Kinkaku-ji) |
-| opsta-kultura | rozeta.jpg | Hans Hillewaert | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Rosetta_Stone) |
-| opsta-kultura | olimp.jpg | kallerna | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Mount_Olympus) |
 | razred5-istorija | posejdon.jpg | —DerHexer (Talk) | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Poseidon) |
-| opsta-kultura | herakle.jpg | Glycon of Athens (copy), Lysippos (original type) | CC BY 2.5 | [izvor](https://en.wikipedia.org/wiki/Heracles) |
-| opsta-kultura | ikar.jpg | After Pieter Brueghel the Elder | Public domain | [izvor](https://en.wikipedia.org/wiki/Landscape_with_the_Fall_of_Icarus) |
-| opsta-kultura | knosos.png | Eric Gaba (Sting) | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Knossos) |
-| opsta-kultura | origami.jpg | Laitche | Public domain | [izvor](https://en.wikipedia.org/wiki/Origami) |
-| opsta-kultura | un.jpg | Kidfly182 | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Headquarters_of_the_United_Nations) |
-| opsta-kultura | brisel.jpg | EmDee | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Berlaymont_building) |
-| opsta-kultura | kengur.jpg | fir0002 flagstaffotos [at] gmail.com Canon 20D + Canon 70-200mm f/2.8 L | GFDL 1.2 | [izvor](https://en.wikipedia.org/wiki/Red_kangaroo) |
-| opsta-kultura | beograd.jpg | DKjellby | CC0 | [izvor](https://en.wikipedia.org/wiki/Belgrade) |
-| opsta-kultura | arhipelag.jpg | Hydrographica. Changed file format from GIF to PNG by Lidingo | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Stockholm_Archipelago) |
-| opsta-kultura | bolonja.jpg | Vectorized by User:Nandhp | Public domain | [izvor](https://en.wikipedia.org/wiki/University_of_Bologna) |
-| opsta-kultura | nobel-medalja.jpg | ? | ? | [izvor](https://en.wikipedia.org/wiki/Nobel_Prize) |
 | razred5-biologija | nautilus.jpg | Hans Hillewaert | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Chambered_nautilus) |
 | razred5-biologija | luci.jpg | 120 | CC BY 2.5 | [izvor](https://en.wikipedia.org/wiki/Lucy_(hominid)) |
 | razred5-biologija | mamut.jpg | Lou.gruber | Public domain | [izvor](https://en.wikipedia.org/wiki/Woolly_mammoth) |

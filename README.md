@@ -30,7 +30,7 @@ TV ili računar može biti veliki ekran za sve: otvori `/ekran` i upiši kod sob
 
 ## Oblasti
 
-Matematika, fizika, hemija, biologija, srpska istorija, svetska istorija, manastiri Srbije, geografija, srpski jezik i književnost, muzička kultura, slikarstvo i arhitektura, sport, opšta kultura, zabava (filmovi, serije, igrice).
+Matematika, fizika, hemija, biologija, srpska istorija, svetska istorija, manastiri Srbije, geografija, srpski jezik i književnost, muzička kultura, slikarstvo i arhitektura, sport, zabava (filmovi, serije, igrice).
 
 Novi kvizovi se dodaju kao folder u `kvizovi/` – vidi [kvizovi/UPUTSTVO.md](kvizovi/UPUTSTVO.md). Provera: `npm run proveri`.
 
