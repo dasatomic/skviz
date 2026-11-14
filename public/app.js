@@ -236,10 +236,12 @@ function crtaj(staro) {
   if (f === 'pitanje' || f === 'otkrivanje') kljuc = 'p' + V.pitanje.rb + V.krug;
   if (f === 'reci' || f === 'reci-otkrivanje') kljuc = 'r' + V.reci.rb + V.krug;
   if (f === 'slovo' || f === 'slovo-otkrivanje') kljuc = 's' + V.slovo.rb + V.krug;
+  if (f === 'raptori' || f === 'raptori-otkrivanje') kljuc = 'x' + V.raptori.rb + V.krug;
   const nov = kljuc !== kljucEkrana;
   if (nov) { ocisti(); kljucEkrana = kljuc; app.innerHTML = ''; window.scrollTo(0, 0); }
   ({ lobi: ekranLobi, uvod: ekranUvod, pitanje: ekranPitanje, otkrivanje: ekranPitanje, tabela: ekranTabela,
-    reci: ekranReci, 'reci-otkrivanje': ekranReci, slovo: ekranSlovo, 'slovo-otkrivanje': ekranSlovo, kraj: ekranKraj }[f] || ekranLobi)(nov, staro);
+    reci: ekranReci, 'reci-otkrivanje': ekranReci, slovo: ekranSlovo, 'slovo-otkrivanje': ekranSlovo,
+    raptori: ekranRaptori, 'raptori-otkrivanje': ekranRaptori, kraj: ekranKraj }[f] || ekranLobi)(nov, staro);
   meniDugme();
 }
 
@@ -577,16 +579,16 @@ function podesavanja() {
   const html = `
     ${izborRazredaHTML(P)}
     <div class="kartica"><h3>Podešavanja</h3>
-      ${V.zadaci ? `<div class="podesavanje"><span>Broj zadataka</span>${opcija('brojZadataka', [1, 3, 5, 10])}</div>
+      <div class="podesavanje"><span>Krugovi</span>${opcija('krugovi', ['oba', 'pitanja', 'reci'], ['Oba', V.zadaci ? 'Zadaci' : 'Pitanja', 'Bonus'])}</div>
+      ${V.zadaci && P.krugovi !== 'reci' ? `<div class="podesavanje"><span>Broj zadataka</span>${opcija('brojZadataka', [1, 3, 5, 10])}</div>
       <div class="podesavanje"><span>Minuta po zadatku</span>${opcija('vremeZadatka', [120, 180, 300, 480, 600, 900], ['2', '3', '5', '8', '10', '15'])}</div>
-      <div class="sitno">Zadaci se rešavaju na papiru; posle svakog sledi detaljno rešenje korak po korak.</div>` : `
-      <div class="podesavanje"><span>Krugovi</span>${opcija('krugovi', ['oba', 'pitanja', 'reci'], ['Oba', 'Pitanja', 'Bonus'])}</div>
-      ${P.krugovi !== 'reci' ? `<div class="podesavanje"><span>Broj pitanja</span>${opcija('brojPitanja', [5, 10, 15, 20, 25])}</div>
+      <div class="sitno">Zadaci se rešavaju na papiru; posle svakog sledi detaljno rešenje korak po korak.</div>` : ''}
+      ${!V.zadaci && P.krugovi !== 'reci' ? `<div class="podesavanje"><span>Broj pitanja</span>${opcija('brojPitanja', [5, 10, 15, 20, 25])}</div>
       <div class="podesavanje"><span>Sekundi za pitanje</span>${opcija('vreme', [10, 15, 20, 30, 45])}</div>` : ''}
-      ${P.krugovi !== 'pitanja' ? `<div class="sitno bonus-opis">${IKONA_BONUSA[V.bonus] || '🎲'} ${opisBonusa(V.bonus, P.brojReci)}</div>
+      ${P.krugovi !== 'pitanja' ? `<div class="sitno bonus-opis">${IKONA_BONUSA[V.bonus] || '🎲'} ${opisBonusa(V.bonus, P.brojReci, V.bonusi)}</div>
       <div class="podesavanje"><span>Bonus runde</span>${opcija('brojReci', [1, 2, 3, 5, 10, 15], ['1', '2', '3', '5', '10', '15'])}</div>
       <div class="podesavanje"><span>Sekundi po rundi</span>${opcija('vremeReci', [45, 60, 75, 90, 120])}</div>
-      ` : ''}`}
+      ` : ''}
       <div class="podesavanje"><span>Pismo</span>${opcija('pismo', ['cirilica', 'latinica'], ['Ćirilica', '<span data-lat>Latinica</span>'])}</div>
       <label class="podesavanje ucestvujem"><span>Učestvujem u igri<small class="sitno">Isključi ako samo prikazuješ kviz (npr. nastavnik na velikom ekranu) – tada ne odgovaraš, a igru vodiš ti.</small></span>
         <input type="checkbox" id="igram" ${V.gledam ? '' : 'checked'}></label>
@@ -624,13 +626,16 @@ async function slavni() {
 }
 
 // opis bonus igara u lobiju; više rundi se deli na krugove različitih igara (Soba.planBonusa)
-function opisBonusa(v, n) {
+function opisBonusa(v, n, lista) {
   if (v === 'nasumicno') {
     const k = Math.min(n, 5);
     return k === 1 ? 'Bonus krug: <b>iznenađenje – najduža reč ili igra „Na slovo…“</b>' : `Bonus: <b>iznenađenje – ${k} ${k < 5 ? 'različite igre' : 'različitih igara'}</b> (najduža reč i igre „Na slovo…“)`;
   }
-  if (v !== 'reci' && NAZIV_BONUSA[v]) return n === 1 ? `Bonus krug: <b>${esc(NAZIV_BONUSA[v])}</b>` : `Bonus: <b>${esc(NAZIV_BONUSA[v])}</b>, pa <b>Najduža reč</b>`;
-  return 'Bonus krug: <b>Najduža reč</b>';
+  // igre predmeta redom (Soba.planBonusa): koliko rundi, toliko različitih igara
+  const igre = (lista?.length ? lista : [v, 'reci']).filter((x, i, a) => NAZIV_BONUSA[x] && a.indexOf(x) === i).slice(0, Math.max(1, n));
+  if (!igre.length) return 'Bonus krug: <b>Najduža reč</b>';
+  const imena = igre.map((x) => `<b>${esc(NAZIV_BONUSA[x])}</b>`);
+  return imena.length === 1 ? `Bonus krug: ${imena[0]}` : `Bonus: ${imena.slice(0, -1).join(', ')} pa ${imena[imena.length - 1]}`;
 }
 
 // ───────────────────────── uvod kruga ─────────────────────────
@@ -640,13 +645,14 @@ function ekranUvod(nov) {
   const pitanja = u.vrsta === 'pitanja';
   const kv = opisIzbora(V.podesavanja.kviz);
   if (u.vrsta === 'slovo' && u.bonus) return uvodSlova(u);
+  if (u.vrsta === 'raptori') return uvodRaptora(u);
   app.innerHTML = `<div class="uvod">
     <div class="veliki">${pitanja ? kv?.ikona || '❓' : '🔤'}</div>
     <div class="sitno">Krug ${u.broj}${pitanja && kv?.podnaslov ? ' · ' + esc(kv.podnaslov) : pitanja ? '' : ' · bonus'}</div>
     <h1>${pitanja ? esc(kv?.naziv || 'Pitanja') : 'Najduža reč'}</h1>
     <p>${pitanja && V.zadaci ? `${u.brojPitanja} ${u.brojPitanja === 1 ? 'zadatak' : u.brojPitanja < 5 ? 'zadatka' : 'zadataka'}, po ${Math.round(V.podesavanja.vremeZadatka / 60)} min. Pripremi papir i olovku! Tačan odgovor donosi poene (brže rešenje malo više), a posle svakog zadatka sledi detaljno rešenje korak po korak.`
       : pitanja ? `${u.brojPitanja} pitanja sa 4 ponuđena odgovora. Brži tačan odgovor donosi više poena, teška pitanja vrede ×1,5, a niz tačnih odgovora daje bonus!`
-      : `${u.brojReci === 1 ? '12 slova' : `${u.brojReci}× po 12 slova`}. Složi što dužu reč u osnovnom obliku (imenica u jednini, glagol u infinitivu…) – važe i imena, npr. Venera ili Beograd. 100 poena po slovu, bonus za najdužu!${V.krugovi.includes('pitanja') ? ' U slovima se krije i jedan pojam iz prethodnih pitanja – ko ga pronađe, dobija +200.' : ''}`}</p>
+      : `${u.brojReci === 1 ? '12 slova' : `${u.brojReci}× po 12 slova`}. Složi što dužu reč u osnovnom obliku (imenica u jednini, glagol u infinitivu…) – važe i imena, npr. Venera ili Beograd. 100 poena po slovu, bonus za najdužu!${V.krugovi.includes('pitanja') && !V.zadaci ? ' U slovima se krije i jedan pojam iz prethodnih pitanja – ko ga pronađe, dobija +200.' : ''}`}</p>
   </div>`;
   Zvuk.efekat('bubanj');
   dugmeDalje('Kreni! ➜');
@@ -1106,8 +1112,8 @@ function osveziSlaganje() {
 }
 
 // ───────────────────────── bonus „Na slovo…“ ─────────────────────────
-const IKONA_BONUSA = { reci: '🔤', geografija: '🌍', nauka: '🧑‍🔬', istorija: '👑', sport: '🏅' };
-const NAZIV_BONUSA = { reci: 'Najduža reč', geografija: 'Zanimljiva geografija', nauka: 'Naučnici – matematičari i fizičari', istorija: 'Istorijske ličnosti', sport: 'Sportisti' };
+const IKONA_BONUSA = { reci: '🔤', geografija: '🌍', nauka: '🧑‍🔬', istorija: '👑', sport: '🏅', raptori: '🦖' };
+const NAZIV_BONUSA = { reci: 'Najduža reč', geografija: 'Zanimljiva geografija', nauka: 'Naučnici – matematičari i fizičari', istorija: 'Istorijske ličnosti', sport: 'Sportisti', raptori: 'Beži od raptora!' };
 // nazivi iz Wikidate stižu ćirilicom; u latinici se preslovljavaju (i velika slova: Љубљана → Ljubljana)
 const naziv = (t) => (PISMO === 'cirilica' ? String(t ?? '') : [...String(t ?? '')].map((c) => {
   const l = LAT[c.toLowerCase()];
@@ -1220,6 +1226,119 @@ function licnostHTML(p) {
       ${p.info?.length ? `<div class="sitno">${esc(naziv(p.info.join(' · ')))}</div>` : ''}
       <div class="licnost-dno">${ko.length ? `<span class="ko">${ko.slice(0, 8).map((x) => esc(x.avatar)).join('')}${ko.length > 8 ? ` +${ko.length - 8}` : ''}</span>` : ''}
         ${p.clanak ? `<a href="${vikiLink(p.clanak)}" target="_blank" rel="noopener">Vikipedija ↗</a>` : ''}</div></div></div>`;
+}
+
+// ───────────────────────── bonus „Beži od raptora!“ (public/raptori.js) ─────────────────────────
+function uvodRaptora(u) {
+  app.innerHTML = `<div class="uvod">
+    <div class="veliki">🦖</div>
+    <div class="sitno">Krug ${u.broj} · bonus${u.brojReci > 1 ? ` · ${u.brojReci} runde` : ''}</div>
+    <h1>Beži od raptora!</h1>
+    <p>Stojiš u geometrijskom telu, a u temenima vrebaju raptori – brži od tebe (ti trčiš najviše ${Raptori.V_COVEKA_KMH} km/h).
+      Raptori uvek jure <b>pravo ka tebi</b>. Povuci strelicu od sebe: <b>pravac</b> je smer bega, a <b>dužina</b> brzina.
+      Pobeći se ne može – ali ko najduže izdrži, pobeđuje! 100 poena po sekundi, +300 za najduže, +200 za savršen beg.</p>
+  </div>`;
+  Zvuk.efekat('bubanj');
+  dugmeDalje('Kreni! ➜');
+}
+
+let rapScena = null; // crtež tekuće runde (Raptori.scena)
+let mojBeg = null;   // Promise moje animacije – otkrivanje čeka da se završi
+let begRadi = false; // moja animacija je u toku
+function ekranRaptori(nov, staro) {
+  const X = V.raptori;
+  const otkriveno = V.faza === 'raptori-otkrivanje';
+  const ja_ = igrac(V.ja);
+  const igram = !TV && !!ja_;
+  if (nov) {
+    const o = Raptori.opis(X.sc);
+    app.innerHTML = `
+      <div class="traka"><span class="znacka">🦖 Beži od raptora!${X.ukupno > 1 ? ` · ${X.rb}/${X.ukupno}` : ''}</span><span class="razmak"></span><span class="sekunde"></span></div>
+      <div class="tajmer"><i></i></div>
+      <div class="raptori-opis"><b>${esc(o.oblik)}</b><span>🦖 ${esc(o.raptori)}</span><span>🏃 ${esc(o.covek)}</span></div>
+      <div class="raptori-polje" id="rap-polje"></div>
+      <div id="rap-uputstvo"></div>
+      <div id="sredina"></div>`;
+    mojBeg = null; begRadi = false;
+    rapScena = Raptori.scena($('#rap-polje'), X.sc, { boja: ja_?.boja || '#74b9ff', avatar: ja_?.avatar, premalo: () => poruka('Povuci strelicu dalje od čoveka ↗') });
+    const sc = rapScena;
+    ciscenje.push(() => { sc.unisti(); if (rapScena === sc) rapScena = null; });
+    if (!otkriveno) tajmer(X.pocetak, X.trajanje);
+    if (!otkriveno && igram) {
+      const beg = (ugao, jacina, saljem) => {
+        Zvuk.efekat('klik');
+        $('#rap-uputstvo').innerHTML = '';
+        if (saljem) akcija('beg', { ugao, jacina });
+        const kljuc = kljucEkrana;
+        begRadi = true;
+        mojBeg = sc.pusti([{ ugao, jacina, boja: ja_.boja, avatar: ja_.avatar, glavna: true }]).then(() => {
+          begRadi = false;
+          if (kljuc === kljucEkrana && V.faza === 'raptori') ekranRaptori(false);
+        });
+        if (kljuc === kljucEkrana) ekranRaptori(false);
+      };
+      if (X.moj) beg(X.moj.ugao, X.moj.jacina, false); // ponovo otvoren telefon – pokaži moj beg još jednom
+      else {
+        $('#rap-uputstvo').innerHTML = '<div class="sitno centar rap-uputstvo">👆 Povuci od čoveka u pravcu bega – što duža strelica, to brže trčiš. Pusti i beži!</div>';
+        sc.vuci((u, j) => beg(u, j, true));
+      }
+    }
+    if (!otkriveno && !igram) $('#rap-uputstvo').innerHTML = '<div class="sitno centar rap-uputstvo">Svako na svom telefonu bira pravac i brzinu bega…</div>';
+  }
+  if (!otkriveno) {
+    const moj = X.moj;
+    const izabrao = igram && (moj || begRadi);
+    const html = `${izabrao ? `<div class="rezultat ${begRadi ? '' : 'dobro'} raptori-rezultat">${begRadi || !moj ? '🏃 Bežiš…' : `🦖 Izdržao si ${Raptori.broj(moj.t)} s`}</div>` : ''}
+      ${koJeOdgovorio(X.predali, 'pobeglo')}
+      ${izabrao && !begRadi ? '<div class="cekanje">Čekamo ostale<span class="tackice"></span></div>' : ''}`;
+    if ($('#sredina').dataset.h !== html) { $('#sredina').innerHTML = html; $('#sredina').dataset.h = html; }
+    // vođa može da završi rundu kad je sam izabrao (ili ne igra); otkrivanje na telefonu ionako čeka kraj animacije
+    if (jaDomacin() && (!igram || moj)) dugmeDalje('Završi rundu ➜'); else donjaTraka('');
+    return;
+  }
+  if (nov || staro?.faza !== 'raptori-otkrivanje') otkrivanjeRaptora();
+}
+
+async function otkrivanjeRaptora() {
+  const kljuc = kljucEkrana;
+  clearInterval(tikTajmer);
+  $('.tajmer i').style.transform = 'scaleX(0)';
+  $('.sekunde').textContent = '';
+  $('#rap-uputstvo').innerHTML = '';
+  delete $('#sredina').dataset.h;
+  donjaTraka('');
+  if (begRadi) { $('#sredina').innerHTML = '<div class="cekanje">Svi su uhvaćeni… rezultati stižu<span class="tackice"></span></div>'; await mojBeg; }
+  if (kljuc !== kljucEkrana || !rapScena) return;
+  const X = V.raptori, nb = X.sc.najbolje;
+  const igrali = V.igraci.filter((x) => X.izbori[x.id]).sort((a, b) => X.izbori[b.id].t - X.izbori[a.id].t);
+  const moj = V.dobitak[V.ja];
+  if (moj && !TV) {
+    Zvuk.efekat(moj.t ? 'tacno' : 'netacno');
+    if (moj.oznaka?.includes('Najduže') || moj.oznaka?.includes('Savršen')) konfete(80);
+  }
+  const zlatni = { ...nb, boja: '#ffd166', avatar: '⭐', glavna: true };
+  const sviBegovi = () => igrali.map((x, i) => ({ ...X.izbori[x.id], boja: x.boja, avatar: x.avatar, glavna: i === 0 }));
+  $('#sredina').innerHTML = `
+    ${moj && !TV ? `<div class="rezultat ${moj.t ? 'dobro' : 'lose'}">${moj.t ? `🦖 ${Raptori.broj(moj.t)} s · +${moj.poeni + moj.bonus}${moj.oznaka ? ' · ' + esc(moj.oznaka) : ''}` : 'Nisi izabrao pravac 😕'}</div>` : ''}
+    <div class="rap-dugmad">${igrali.length > 1 || (igrali.length && TV) ? '<button class="dugme" id="rap-svi">↻ Svi begovi</button>' : ''}<button class="dugme zuto" id="rap-naj">⭐ Najbolji beg</button></div>
+    ${igrali.length ? `<div class="kartica"><div class="lista-poena">${skratiListu(igrali, (x, i) => {
+      const d = V.dobitak[x.id] || {};
+      return `<div class="st ${x.id === V.ja ? 'ja' : ''}" style="animation-delay:${0.15 * Math.min(i, 8)}s">${mesto(i)}<span style="font-size:1.4em">${esc(x.avatar)}</span><div style="min-width:0"><b>${esc(x.ime)}</b>
+        <div class="sitno">${Raptori.strelica(X.izbori[x.id].ugao)} ${Math.round(X.izbori[x.id].jacina * Raptori.V_COVEKA_KMH)} km/h · <b>${Raptori.broj(X.izbori[x.id].t)} s</b></div></div>
+        <span class="p"><span class="plus">+${d.poeni + d.bonus}</span>${d.oznaka ? `<div class="sitno">${esc(d.oznaka)}</div>` : ''}</span></div>`;
+    })}</div></div>` : ''}
+    <div class="kartica raptori-objasnjenje"><h3>⭐ Najbolji beg: ${Raptori.strelica(nb.ugao)} ${Math.round(nb.jacina * Raptori.V_COVEKA_KMH)} km/h · ${Raptori.broj(nb.t)} s</h3>
+      ${Raptori.objasni(X.sc).map((r) => `<p>${esc(r)}</p>`).join('')}</div>`;
+  const sc = rapScena;
+  const pusti = (lista) => { sc.najbolje(null); return sc.pusti(lista).then(() => { if (sc === rapScena) sc.najbolje(nb); }); };
+  $('#rap-naj').onclick = () => { Zvuk.efekat('klik'); pusti([zlatni]); };
+  if ($('#rap-svi')) $('#rap-svi').onclick = () => { Zvuk.efekat('klik'); pusti(sviBegovi()); };
+  dugmeDalje(X.rb === X.ukupno ? 'Rang lista 🏆' : 'Sledeći raptori ➜');
+  // svi begovi zajedno (pobednik vodi raptore), pa zlatna putanja najboljeg; sam igrač je svoj beg već video
+  const vecVideo = igrali.length === 1 && igrali[0].id === V.ja && !TV;
+  if (igrali.length && !vecVideo) await pusti(sviBegovi());
+  else if (!igrali.length) await pusti([zlatni]);
+  else sc.najbolje(nb);
 }
 
 // ───────────────────────── kraj ─────────────────────────
