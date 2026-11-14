@@ -430,24 +430,6 @@
     },
     {
       "lekcija": 1,
-      "tezina": 3,
-      "pitanje": "Prve kopnene biljke, poput kuksonije, imale su samo jedan od ovih organa. Koji?",
-      "odgovori": [
-        "Stablo",
-        "Koren",
-        "List",
-        "Cvet"
-      ],
-      "zanimljivost": "Kuksonija je živela pre oko 430 miliona godina u vlažnim, močvarnim predelima. Imala je samo tanke, račvaste stabljike sa kesicama spora na vrhovima.",
-      "rec": "stablo",
-      "medijiOdgovora": {
-        "vrsta": "slika",
-        "src": "slike/kuksonija.jpg",
-        "opis": "Fosil kuksonije"
-      }
-    },
-    {
-      "lekcija": 1,
       "tezina": 2,
       "pitanje": "Čime se bavi veterina?",
       "odgovori": [
@@ -958,7 +940,7 @@
         "Plamen"
       ],
       "zanimljivost": "Plamen se kreće, „diše“ kiseonik i „raste“ – zato je naučnicima bio odličan primer da jedna osobina sama nije dovoljna da nešto proglasimo živim.",
-      "rec": "gljiva",
+      "rec": "koral",
       "autor": "ivona tomic"
     },
     {
@@ -1160,7 +1142,7 @@
       "pitanje": "Šta je osnovna jedinica građe i funkcije svih živih bića?",
       "odgovori": [
         "Ćelija",
-        "Dnk molekul",
+        "DNK molekul",
         "Tkivo",
         "Organ"
       ],
@@ -1183,8 +1165,8 @@
         "Citoplazma",
         "DNK molekul"
       ],
-      "zanimljivost": "Svaka ćelija ima membranu, citoplazmu, ribozome i nasledni materijal. Ribozomi su sićušne „fabrike“ u kojima se prave belančevine. Prokariotske ćelije nemaju prave ćelijske organele",
-      "rec": "kost",
+      "zanimljivost": "Svaka ćelija ima membranu, citoplazmu, ribozome i nasledni materijal (DNK). Prokariotske ćelije, kao što su bakterije, nemaju prave organele obavijene membranom – ni jedro, ni mitohondrije, ni hloroplaste.",
+      "rec": "organela",
       "autor": "ivona tomic"
     },
     {
@@ -1222,7 +1204,7 @@
     {
       "lekcija": 4,
       "tezina": 2,
-      "pitanje": "Koji deo ćelije je odgovoran za upravljanje svim procesima u njoj i sadrži nasledni materijal-DNK?",
+      "pitanje": "Koji deo ćelije je odgovoran za upravljanje svim procesima u njoj i sadrži nasledni materijal – DNK?",
       "odgovori": [
         "Jedro",
         "Citoplazma",
@@ -1447,7 +1429,7 @@
     {
       "lekcija": 4,
       "tezina": 2,
-      "pitanje": "Kako se zove deo biljne ćelije koji se nalazi sa spoljašnje strane ćelijske membranu a na slici je označen znakom pitanja?",
+      "pitanje": "Kako se zove deo biljne ćelije koji se nalazi sa spoljašnje strane ćelijske membrane, a na slici je označen znakom pitanja?",
       "odgovori": [
         "Ćelijski zid",
         "Ćelijska membrana",
@@ -1467,7 +1449,7 @@
     {
       "lekcija": 4,
       "tezina": 2,
-      "pitanje": "Kako se zove deo bakterije koji ima ulogu u kretanju a označen znakom pitanja?",
+      "pitanje": "Kako se zove deo bakterije koji ima ulogu u kretanju, a označen je znakom pitanja?",
       "odgovori": [
         "Bič",
         "Treplja",
@@ -1848,13 +1830,13 @@
       "tezina": 3,
       "pitanje": "Koja grupa jednoćelijskih organizama bez jedra je otkrivena tek sedamdesetih godina 20. veka, u vrelim izvorima?",
       "odgovori": [
-        "Prastare bakterije-arheje",
-        "Prave bakterije-eubakterije",
+        "Prastare bakterije – arheje",
+        "Prave bakterije – eubakterije",
         "Protisti",
         "Gljive"
       ],
-      "zanimljivost": "Arhee liče na bakterije, ali su po hemiji sasvim drugačije. Žive u vrelim i slanim izvorima, močvarama, okeanima, pa i u crevima čoveka.",
-      "rec": "arhee",
+      "zanimljivost": "Arheje liče na bakterije, ali su po hemiji sasvim drugačije. Žive u vrelim i slanim izvorima, močvarama, okeanima, pa i u crevima čoveka.",
+      "rec": "arheje",
       "autor": "ivona tomic"
     },
     {
@@ -1965,8 +1947,8 @@
         "Gljivama",
         "Bakterijama"
       ],
-      "zanimljivost": "Protisti su „šareno“ carstvo – u njega spadaju i alge, i papučica, i ameba.",
-      "rec": "protisti",
+      "zanimljivost": "Sunđeri su najjednostavnije životinje – nemaju prava tkiva ni organe i ceo život provedu pričvršćeni za podlogu. Ipak su životinje, jer se hrane gotovom hranom koju procede iz vode.",
+      "rec": "sunđer",
       "autor": "ivona tomic"
     },
     {
@@ -3626,7 +3608,7 @@
       "tezina": 2,
       "pitanje": "Kako se pokreću biljke ako su pričvršćene za tlo?",
       "odgovori": [
-        "Izduživanjem ili pomeranjem delove tela (npr. listova, cvetova)",
+        "Izduživanjem ili pomeranjem delova tela (npr. listova, cvetova)",
         "Hodaju polako na svom korenju kroz meku i vlažnu zemlju",
         "Ne pomeraju nijedan deo tela, nikada u svom životu",
         "Lete kroz vazduh noseći se na vetru sa listovima"
@@ -4127,7 +4109,7 @@
     {
       "lekcija": 12,
       "tezina": 3,
-      "pitanje": "Koje životinje je sisar koji polaže jaja?",
+      "pitanje": "Koja životinja je sisar koji polaže jaja?",
       "odgovori": [
         "Kljunar",
         "Kit",
@@ -6189,7 +6171,7 @@
       "odgovori": [
         "U jedru",
         "U ćelijskom zidu",
-        "U citolazmi",
+        "U citoplazmi",
         "U ćelijskoj membrani"
       ],
       "zanimljivost": "Kada bi se DNK iz jedne ćelije čoveka razvukla, bila bi duga oko 2 metra – a smeštena je u jedro manje od stotog dela milimetra.",
