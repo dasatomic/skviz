@@ -11,3 +11,5 @@
 # sobe sačuvane pri gašenju starog servera – novi server ih vraća
 /podaci/sobe.json
 /podaci/*.tmp
+# keš slika ličnosti iz bonus runde (lib/slike-bonus.js)
+/podaci/bonus-slike

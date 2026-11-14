@@ -226,10 +226,11 @@ function crtaj(staro) {
   let kljuc = f;
   if (f === 'pitanje' || f === 'otkrivanje') kljuc = 'p' + V.pitanje.rb + V.krug;
   if (f === 'reci' || f === 'reci-otkrivanje') kljuc = 'r' + V.reci.rb + V.krug;
+  if (f === 'slovo' || f === 'slovo-otkrivanje') kljuc = 's' + V.slovo.rb + V.krug;
   const nov = kljuc !== kljucEkrana;
   if (nov) { ocisti(); kljucEkrana = kljuc; app.innerHTML = ''; window.scrollTo(0, 0); }
   ({ lobi: ekranLobi, uvod: ekranUvod, pitanje: ekranPitanje, otkrivanje: ekranPitanje, tabela: ekranTabela,
-    reci: ekranReci, 'reci-otkrivanje': ekranReci, kraj: ekranKraj }[f] || ekranLobi)(nov, staro);
+    reci: ekranReci, 'reci-otkrivanje': ekranReci, slovo: ekranSlovo, 'slovo-otkrivanje': ekranSlovo, kraj: ekranKraj }[f] || ekranLobi)(nov, staro);
   meniDugme();
 }
 
@@ -569,11 +570,12 @@ function podesavanja() {
       ${V.zadaci ? `<div class="podesavanje"><span>Broj zadataka</span>${opcija('brojZadataka', [1, 3, 5, 10])}</div>
       <div class="podesavanje"><span>Minuta po zadatku</span>${opcija('vremeZadatka', [120, 180, 300, 480, 600, 900], ['2', '3', '5', '8', '10', '15'])}</div>
       <div class="sitno">Zadaci se rešavaju na papiru; posle svakog sledi detaljno rešenje korak po korak.</div>` : `
-      <div class="podesavanje"><span>Krugovi</span>${opcija('krugovi', ['oba', 'pitanja', 'reci'], ['Oba', 'Pitanja', 'Reči'])}</div>
+      <div class="podesavanje"><span>Krugovi</span>${opcija('krugovi', ['oba', 'pitanja', 'reci'], ['Oba', 'Pitanja', 'Bonus'])}</div>
       ${P.krugovi !== 'reci' ? `<div class="podesavanje"><span>Broj pitanja</span>${opcija('brojPitanja', [5, 10, 15, 20, 25])}</div>
       <div class="podesavanje"><span>Sekundi za pitanje</span>${opcija('vreme', [10, 15, 20, 30, 45])}</div>` : ''}
-      ${P.krugovi !== 'pitanja' ? `<div class="podesavanje"><span>Krug „Najduža reč“</span>${opcija('brojReci', [1, 3, 5, 10, 15], ['1', '3', '5', '10', '15'])}</div>
-      <div class="podesavanje"><span>Sekundi za reč</span>${opcija('vremeReci', [45, 60, 75, 90, 120])}</div>
+      ${P.krugovi !== 'pitanja' ? `<div class="sitno bonus-opis">${IKONA_BONUSA[V.bonus] || '🎲'} ${opisBonusa(V.bonus, P.brojReci)}</div>
+      <div class="podesavanje"><span>Bonus runde</span>${opcija('brojReci', [1, 2, 3, 5, 10, 15], ['1', '2', '3', '5', '10', '15'])}</div>
+      <div class="podesavanje"><span>Sekundi po rundi</span>${opcija('vremeReci', [45, 60, 75, 90, 120])}</div>
       ` : ''}`}
       <div class="podesavanje"><span>Pismo</span>${opcija('pismo', ['cirilica', 'latinica'], ['Ćirilica', '<span data-lat>Latinica</span>'])}</div>
     </div>`;
@@ -606,19 +608,48 @@ async function slavni() {
     <td>🥇 ${p.pobede}<div class="sitno">rekord ${p.rekord || 0}</div></td></tr>`).join('')}</table>`;
 }
 
+// opis bonus igara u lobiju; više rundi se deli na krugove različitih igara (Soba.planBonusa)
+function opisBonusa(v, n) {
+  if (v === 'nasumicno') {
+    const k = Math.min(n, 5);
+    return k === 1 ? 'Bonus krug: <b>iznenađenje – najduža reč ili igra „Na slovo…“</b>' : `Bonus: <b>iznenađenje – ${k} ${k < 5 ? 'različite igre' : 'različitih igara'}</b> (najduža reč i igre „Na slovo…“)`;
+  }
+  if (v !== 'reci' && NAZIV_BONUSA[v]) return n === 1 ? `Bonus krug: <b>${esc(NAZIV_BONUSA[v])}</b>` : `Bonus: <b>${esc(NAZIV_BONUSA[v])}</b>, pa <b>Najduža reč</b>`;
+  return 'Bonus krug: <b>Najduža reč</b>';
+}
+
 // ───────────────────────── uvod kruga ─────────────────────────
 function ekranUvod(nov) {
   if (!nov) return;
   const u = V.uvod;
   const pitanja = u.vrsta === 'pitanja';
   const kv = opisIzbora(V.podesavanja.kviz);
+  if (u.vrsta === 'slovo' && u.bonus) return uvodSlova(u);
   app.innerHTML = `<div class="uvod">
     <div class="veliki">${pitanja ? kv?.ikona || '❓' : '🔤'}</div>
-    <div class="sitno">Krug ${u.broj}${pitanja && kv?.podnaslov ? ' · ' + esc(kv.podnaslov) : ''}</div>
+    <div class="sitno">Krug ${u.broj}${pitanja && kv?.podnaslov ? ' · ' + esc(kv.podnaslov) : pitanja ? '' : ' · bonus'}</div>
     <h1>${pitanja ? esc(kv?.naziv || 'Pitanja') : 'Najduža reč'}</h1>
     <p>${pitanja && V.zadaci ? `${u.brojPitanja} ${u.brojPitanja === 1 ? 'zadatak' : u.brojPitanja < 5 ? 'zadatka' : 'zadataka'}, po ${Math.round(V.podesavanja.vremeZadatka / 60)} min. Pripremi papir i olovku! Tačan odgovor donosi poene (brže rešenje malo više), a posle svakog zadatka sledi detaljno rešenje korak po korak.`
       : pitanja ? `${u.brojPitanja} pitanja sa 4 ponuđena odgovora. Brži tačan odgovor donosi više poena, teška pitanja vrede ×1,5, a niz tačnih odgovora daje bonus!`
       : `${u.brojReci === 1 ? '12 slova' : `${u.brojReci}× po 12 slova`}. Složi što dužu reč u osnovnom obliku (imenica u jednini, glagol u infinitivu…) – važe i imena, npr. Venera ili Beograd. 100 poena po slovu, bonus za najdužu!${V.krugovi.includes('pitanja') ? ' U slovima se krije i jedan pojam iz prethodnih pitanja – ko ga pronađe, dobija +200.' : ''}`}</p>
+  </div>`;
+  Zvuk.efekat('bubanj');
+  dugmeDalje('Kreni! ➜');
+}
+
+// uvod bonus kruga „Na slovo…“
+function uvodSlova(u) {
+  const B = u.bonus;
+  const kat = B.kategorije.map((k) => `${k.ikona} ${esc(k.naziv)}`).join(' · ');
+  const licnosti = B.kategorije.some((k) => k.licnosti);
+  app.innerHTML = `<div class="uvod">
+    <div class="veliki">${IKONA_BONUSA[B.vrsta] || '🔠'}</div>
+    <div class="sitno">Krug ${u.broj} · bonus</div>
+    <h1>${esc(B.naziv)}</h1>
+    <div class="kategorije-slova uvod-kat">${kat}</div>
+    <p>${u.brojReci === 1 ? 'Dobićete jedno slovo' : `${u.brojReci} runde, svaka sa novim slovom`} – napiši što više pojmova koji počinju tim slovom${B.kategorije.length > 1 ? ' (iz bilo koje kategorije)' : ''}.
+      Važe latinica i ćirilica, a sitne slovne greške se praštaju.${licnosti ? ' Za ličnosti važi prezime ili ime po kome je poznata (Pupin, Pitagora) – možeš napisati i puno ime.' : ''}
+      100 poena po pojmu, +50 za pojam koga se niko drugi nije setio, +300 za najviše pojmova!</p>
   </div>`;
   Zvuk.efekat('bubanj');
   dugmeDalje('Kreni! ➜');
@@ -1057,6 +1088,123 @@ function osveziSlaganje() {
   if (!el) return;
   el.innerHTML = slozeno.length ? slozeno.map((i) => `<span>${slovo(V.reci.slova[i])}</span>`).join('') : '<span class="prazno">dodiruj slova da složiš reč</span>';
   app.querySelectorAll('.slovo').forEach((b) => b.classList.toggle('iskorisceno', slozeno.includes(+b.dataset.i)));
+}
+
+// ───────────────────────── bonus „Na slovo…“ ─────────────────────────
+const IKONA_BONUSA = { reci: '🔤', geografija: '🌍', nauka: '🧑‍🔬', istorija: '👑', sport: '🏅' };
+const NAZIV_BONUSA = { reci: 'Najduža reč', geografija: 'Zanimljiva geografija', nauka: 'Naučnici – matematičari i fizičari', istorija: 'Istorijske ličnosti', sport: 'Sportisti' };
+// nazivi iz Wikidate stižu ćirilicom; u latinici se preslovljavaju (i velika slova: Љубљана → Ljubljana)
+const naziv = (t) => (PISMO === 'cirilica' ? String(t ?? '') : [...String(t ?? '')].map((c) => {
+  const l = LAT[c.toLowerCase()];
+  return l === undefined ? c : c === c.toLowerCase() ? l : l[0].toUpperCase() + l.slice(1);
+}).join(''));
+const velikoSlovo = (c) => naziv(c.toUpperCase());
+const vikiLink = (clanak) => `https://sr.wikipedia.org/${PISMO === 'latinica' ? 'sr-el' : 'wiki'}/${encodeURIComponent(clanak)}`;
+
+function ekranSlovo(nov, staro) {
+  const S = V.slovo;
+  const otkriveno = V.faza === 'slovo-otkrivanje';
+  const kat = S.kategorije || [];
+  if (nov) {
+    app.innerHTML = `
+      <div class="traka"><span class="znacka">${IKONA_BONUSA[S.vrsta] || '🔠'} ${esc(S.naziv)}${S.ukupno > 1 ? ` · ${S.rb}/${S.ukupno}` : ''}</span><span class="razmak"></span><span class="sekunde"></span></div>
+      <div class="tajmer"><i></i></div>
+      <div class="na-slovo"><div class="veliko-slovo">${esc(velikoSlovo(S.slovo))}</div>
+        <div class="kategorije-slova">${kat.map((k) => `<span class="kat-slova" data-k="${k.id}">${k.ikona} ${esc(k.naziv)}<b></b></span>`).join('')}</div></div>
+      <div id="sredina"></div>`;
+    if (!otkriveno) tajmer(S.pocetak, S.trajanje);
+    if (!EKRAN && !otkriveno) {
+      $('#sredina').innerHTML = `
+        <form class="unos-pojma" id="unos-forma" autocomplete="off">
+          <input id="unos" type="text" maxlength="60" autocomplete="off" autocorrect="off" autocapitalize="words" spellcheck="false" enterkeyhint="send"
+            placeholder="${esc(tr(`Pojam na slovo ${velikoSlovo(S.slovo)}…`))}">
+          <button class="dugme zeleno" type="submit">✓</button></form>
+        <div class="pokusaji" id="pokusaji"></div>
+        <div class="kartica moji-pojmovi" id="moji"></div>`;
+      const ulaz = $('#unos');
+      $('#unos-forma').onsubmit = async (e) => {
+        e.preventDefault();
+        const t = ulaz.value.trim();
+        if (!t) return;
+        ulaz.value = '';
+        ulaz.focus();
+        const r = await akcija('pojam', { tekst: t });
+        Zvuk.efekat(r.ok ? 'tacno' : 'netacno');
+      };
+      setTimeout(() => ulaz.focus(), 300);
+    }
+  }
+  if (!otkriveno) {
+    const moji = S.moji || [];
+    app.querySelectorAll('.kat-slova').forEach((el) => {
+      const n = EKRAN ? 0 : moji.filter((m) => m.kat === el.dataset.k).length;
+      $('b', el).textContent = n ? ' ' + n : '';
+    });
+    if (!EKRAN) {
+      $('#pokusaji').innerHTML = (S.pokusaji || []).slice(0, 3).map((p) => `<div class="pokusaj ${p.ok ? 'ok' : 'ne'}"><span>${esc(p.unos)}</span><small>${esc(p.poruka)}</small></div>`).join('');
+      $('#moji').innerHTML = moji.length
+        ? `<div class="sitno">Tvoji pojmovi (${moji.length}):</div><div class="cipovi">${[...moji].reverse().map((m) => `<span class="cip">${kat.length > 1 ? (kat.find((k) => k.id === m.kat)?.ikona || '') + ' ' : ''}${esc(naziv(m.ime))}${m.kao ? ` <small>(${esc(naziv(m.kao))})</small>` : ''}</span>`).join('')}</div>`
+        : '<div class="sitno centar">Još nemaš nijedan pojam – kucaj i pritisni ✓</div>';
+      const gotov = S.gotovi.includes(V.ja);
+      const d = donjaTraka(gotov ? '<div class="cekanje">Čekamo ostale<span class="tackice"></span></div>' : '<button class="dugme zuto" id="gotov">Gotov sam ✋</button>');
+      if (!gotov) $('#gotov', d).onclick = () => { if (!moji.length && !confirm('Još nemaš nijedan pojam. Završiti?')) return; akcija('gotov'); };
+    } else {
+      const ukupno = Object.values(S.brojevi || {}).reduce((a, b) => a + b, 0);
+      $('#sredina').innerHTML = `${mnogo() ? koJeOdgovorio(S.gotovi, 'završilo')
+        : `<div class="igraci">${V.igraci.map((x) => avatarHTML(x, `<span class="kvacica">${S.brojevi?.[x.id] || 0}</span>`)).join('')}</div>`}
+        <div class="cekanje">${ukupno ? `Već ${ukupno} ${ukupno % 10 === 1 && ukupno % 100 !== 11 ? 'pojam' : 'pojmova'}` : 'Smišljamo pojmove'}<span class="tackice"></span></div>`;
+    }
+    return;
+  }
+  if (nov || staro?.faza !== 'slovo-otkrivanje') {
+    clearInterval(tikTajmer);
+    $('.tajmer i').style.transform = 'scaleX(0)';
+    $('.sekunde').textContent = '';
+    const R = S.rezultat || [];
+    const moj = V.dobitak[V.ja];
+    if (moj && !EKRAN) {
+      Zvuk.efekat(moj.broj ? 'tacno' : 'netacno');
+      if (moj.oznaka?.startsWith('Najviše')) konfete(80);
+    }
+    // pojmovi svakog igrača (iz rezultata po kategorijama)
+    const njegovi = (id) => R.flatMap((k) => k.navedeni.filter((n) => n.ko.includes(id)).map((n) => ({ ...n, jedini: n.ko.length === 1 && V.igraci.length > 1 })));
+    const redosled = [...V.igraci].sort((a, b) => (V.dobitak[b.id]?.broj || 0) - (V.dobitak[a.id]?.broj || 0));
+    const naSlovo = esc(velikoSlovo(S.slovo));
+    $('#sredina').innerHTML = `
+      ${moj && !EKRAN ? `<div class="rezultat ${moj.broj ? 'dobro' : 'lose'}">${moj.broj ? `+${moj.poeni + moj.bonus}${moj.oznaka ? ' · ' + esc(moj.oznaka) : ''}` : 'Bez pojmova 😕'}</div>` : ''}
+      <div class="kartica"><div class="lista-poena">${skratiListu(redosled, (x, i) => {
+        const d = V.dobitak[x.id] || {};
+        const l = njegovi(x.id);
+        return `<div class="st ${x.id === V.ja ? 'ja' : ''}" style="animation-delay:${0.15 * Math.min(i, 8)}s">${mesto(i)}<span style="font-size:1.4em">${esc(x.avatar)}</span><div style="min-width:0"><b>${esc(x.ime)}</b>
+          <div class="cipovi mali">${l.map((n) => `<span class="cip ${n.jedini ? 'jedini' : ''}">${kat.length > 1 ? (kat.find((k) => k.id === n.kat)?.ikona || '') + ' ' : ''}${esc(naziv(n.ime))}</span>`).join('') || '<span class="sitno">—</span>'}</div></div>
+          <span class="p">${d.broj ? `<span class="plus">+${d.poeni + d.bonus}</span>` : ''}${d.oznaka ? `<div class="sitno">${esc(d.oznaka)}</div>` : ''}</span></div>`;
+      })}</div>${V.igraci.length > 1 ? '<div class="sitno" style="margin-top:6px"><span class="cip jedini">zlatno</span> = niko drugi se nije setio (+50)</div>' : ''}</div>
+      ${R.map((r) => {
+        const k = kat.find((x) => x.id === r.id) || {};
+        const naslov = `<h3>${k.ikona || ''} ${esc(k.naziv || '')} na ${naSlovo}</h3>`;
+        if (k.licnosti) {
+          return `<div class="kartica">${naslov}
+            ${r.navedeni.length ? `<div class="licnosti">${r.navedeni.map((p) => licnostHTML(p)).join('')}</div>` : '<div class="sitno">Niko nije naveo nijednu ličnost.</div>'}
+            ${r.predlozi.length ? `<div class="sitno mogli">Mogli ste i:</div><div class="licnosti">${r.predlozi.map((p) => licnostHTML(p)).join('')}</div>` : ''}</div>`;
+        }
+        return `<div class="kartica">${naslov}
+          ${r.navedeni.length ? `<div class="cipovi">${r.navedeni.map((p) => `<span class="cip ${p.ko.length === 1 && V.igraci.length > 1 ? 'jedini' : ''}" title="${esc(naziv([p.opis, ...p.info].filter(Boolean).join(' · ')))}">${esc(naziv(p.ime))}${p.ko.length > 1 ? ` <small>×${p.ko.length}</small>` : ''}</span>`).join('')}</div>` : '<div class="sitno">Niko se nije setio nijednog.</div>'}
+          ${r.predlozi.length ? `<div class="sitno mogli">Mogli ste i:</div><div class="predlozi">${r.predlozi.map((p) => `<div><b>${esc(naziv(p.ime))}</b> <span class="sitno">${esc(naziv(p.info.join(' · ') || p.opis))}</span></div>`).join('')}</div>` : ''}</div>`;
+      }).join('')}`;
+  }
+  dugmeDalje(S.rb === S.ukupno ? 'Rang lista 🏆' : 'Sledeće slovo ➜');
+}
+
+// kartica ličnosti na kraju runde: slika, godine, opis, podaci i ko ju je naveo
+function licnostHTML(p) {
+  const ko = (p.ko || []).map((id) => igrac(id)).filter(Boolean);
+  return `<div class="licnost">
+    <div class="licnost-slika">${p.slika ? `<img src="${esc(p.slika)}" alt="" loading="lazy" onerror="this.remove()">` : ''}</div>
+    <div class="licnost-tekst"><b>${esc(naziv(p.ime))}</b>${p.godine ? ` <span class="sitno">(${esc(naziv(p.godine))})</span>` : ''}
+      ${p.opis ? `<div class="opis">${esc(naziv(p.opis))}</div>` : ''}
+      ${p.info?.length ? `<div class="sitno">${esc(naziv(p.info.join(' · ')))}</div>` : ''}
+      <div class="licnost-dno">${ko.length ? `<span class="ko">${ko.slice(0, 8).map((x) => esc(x.avatar)).join('')}${ko.length > 8 ? ` +${ko.length - 8}` : ''}</span>` : ''}
+        ${p.clanak ? `<a href="${vikiLink(p.clanak)}" target="_blank" rel="noopener">Vikipedija ↗</a>` : ''}</div></div></div>`;
 }
 
 // ───────────────────────── kraj ─────────────────────────

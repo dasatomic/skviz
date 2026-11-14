@@ -14,6 +14,8 @@ const Soba = require('./lib/soba');
 const predlozi = require('./lib/predlozi');
 const telemetrija = require('./lib/telemetrija');
 const upisi = require('./lib/upis');
+const bonus = require('./lib/bonus');
+const slikeBonus = require('./lib/slike-bonus');
 
 const PORT = +process.env.PORT || 3000;
 const JAVNO = path.join(__dirname, 'public');
@@ -39,6 +41,7 @@ const brojReci = recnik.ucitaj();
 
 const sobe = new Map(); // kod -> Soba
 Soba.zabelezi = telemetrija.dogadjaj;
+Soba.pripremiSliku = (q) => slikeBonus.pripremi(q).catch(() => {});
 telemetrija.pokreni(sobe);
 const tokovi = new Map(); // kod -> Set<{res, id}>
 
@@ -280,6 +283,8 @@ async function obradi(req, res) {
     return kraj(res, 200, { ...telemetrija.presek(sobe).ukupno, format: Soba.FORMAT, pokrenut: POKRENUT, vraceno: vraceno.sobe });
   }
   if (p === '/api/kvizovi') { kvizovi.ucitajSve(); return kraj(res, 200, kvizovi.spisak()); }
+  // slika ličnosti iz bonus runde (preuzima se sa Wikimedia Commons jednom i čuva u podaci/bonus-slike/)
+  if (p === '/api/slika-bonus') return slikeBonus.posalji(res, url.searchParams.get('q') || '');
   // na javnom serveru (production) porodična statistika se ne izlaže strancima
   if (p === '/api/statistika') return kraj(res, 200, process.env.NODE_ENV === 'production' && !process.env.JAVNA_STATISTIKA ? { igraci: {}, igre: [] } : statistika.citaj());
   // adrese računara trebaju samo u kućnoj mreži (lobi ih ispisuje za telefone); javni server ih ne otkriva
@@ -344,6 +349,8 @@ async function obradi(req, res) {
         break;
       case 'rec':
         return kraj(res, 200, soba.posaljiRec(id, b.indeksi) || { ok: false, poruka: 'Ne može sad' });
+      case 'pojam':
+        return kraj(res, 200, soba.posaljiPojam(id, b.tekst) || { ok: false, poruka: 'Ne može sad' });
       case 'gotov':
         soba.gotovSaRecima(id);
         break;
@@ -495,4 +502,7 @@ server.listen(PORT, '0.0.0.0', () => {
   for (const a of lanAdrese()) console.log(`     http://${a}:${PORT}`);
   console.log(`  Na ovom računaru:  http://localhost:${PORT}`);
   console.log('  TV / veliki ekran: dodaj  /ekran  na adresu\n');
+  // rečnici za bonus „Na slovo…“ (podaci/bonus/*.json, ~1 s) se učitavaju tek kad server već prima zahteve – da restart
+  // pri deploy-u ne traje duže nego što telefoni ponavljaju akcije (soba vraćena usred runde ih učita sama, pri prvoj upotrebi)
+  setTimeout(() => console.log(`  ${bonus.ucitaj()} pojmova za bonus „Na slovo…“`), 50);
 });

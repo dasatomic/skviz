@@ -210,7 +210,7 @@
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
 const broj = (n) => (n == null ? '–' : Number(n).toLocaleString('sr-Latn'));
-const FAZE = { lobi: 'Lobi', uvod: 'Uvod', pitanje: 'Pitanje', otkrivanje: 'Otkrivanje', tabela: 'Tabela', reci: 'Reči', 'reci-otkrivanje': 'Reči – otkrivanje', kraj: 'Kraj' };
+const FAZE = { lobi: 'Lobi', uvod: 'Uvod', pitanje: 'Pitanje', otkrivanje: 'Otkrivanje', tabela: 'Tabela', reci: 'Reči', 'reci-otkrivanje': 'Reči – otkrivanje', slovo: 'Na slovo', 'slovo-otkrivanje': 'Na slovo – otkrivanje', kraj: 'Kraj' };
 
 function trajanje(ms) {
   if (ms == null || ms < 0) return '';

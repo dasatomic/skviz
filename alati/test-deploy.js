@@ -269,8 +269,9 @@ async function odigrajDoKraja(s, ms = 120000) {
     if (Date.now() > kraj) throw new Error(`soba ${s.kod} nije stigla do kraja (faza ${V.faza})`);
     if (V.faza === 'pitanje') {
       for (const ig of s.igraci) if (ig.V?.faza === 'pitanje' && ig.V.mojOdgovor === null) await ig.akcija('odgovor', { izbor: odgovorZa(ig.V) });
-    } else if (V.faza === 'reci') {
-      for (const ig of s.igraci) if (!V.reci.gotovi.includes(ig.V?.ja)) await ig.akcija('gotov');
+    } else if (V.faza === 'reci' || V.faza === 'slovo') {
+      const runda = V.faza === 'reci' ? V.reci : V.slovo;
+      for (const ig of s.igraci) if (!runda.gotovi.includes(ig.V?.ja)) await ig.akcija('gotov');
     } else if (V.faza === 'lobi') await s.vodja.akcija('pokreni');
     else await s.vodja.akcija('dalje', { faza: V.faza });
     await s.vodja.cekaj((v) => v.verzija > V.verzija, 15000, `promena u fazi ${V.faza}`);
@@ -283,6 +284,7 @@ const sazetak = (V) => ({
   pitanje: V.pitanje && { rb: V.pitanje.rb, tekst: V.pitanje.tekst, odgovori: V.pitanje.odgovori || V.pitanje.levo, tacan: V.pitanje.tacan },
   odgovorili: V.odgovorili, dobitak: V.dobitak,
   reci: V.reci && { slova: V.reci.slova, rb: V.reci.rb, moji: V.reci.moji },
+  slovo: V.slovo && { slovo: V.slovo.slovo, rb: V.slovo.rb, moji: V.slovo.moji, pokusaji: V.slovo.pokusaji, brojevi: V.slovo.brojevi },
 });
 
 // ───── test ─────
@@ -307,11 +309,18 @@ async function test() {
   const A = await napraviSobu(['Ana', 'Bora', 'Cica'], { brojPitanja: 5, vreme: 60, krugovi: 'oba', brojReci: 1 });
   await pokreni(A);
   await odgovori(A.igraci[0]); await odgovori(A.igraci[1]);
-  // B: krug reči, jedna reč već poslata
-  const Bs = await napraviSobu(['Dule', 'Ema'], { krugovi: 'reci', brojReci: 3, vremeReci: 90 });
+  // B: krug reči, jedna reč već poslata (biologija – bonus je uvek „Najduža reč“; „Opšte znanje“ ga bira nasumično)
+  const Bs = await napraviSobu(['Dule', 'Ema'], { kviz: 'biologija', krugovi: 'reci', brojReci: 3, vremeReci: 90 });
   await pokreni(Bs);
   await Bs.igraci[0].akcija('rec', { indeksi: [0, 1, 2] });
   await Bs.igraci[0].cekaj((V) => V.reci.moji.length === 1, 5000, 'reč primljena');
+  // F: bonus „Na slovo…“ (geografija), jedan pojam već poslat – samo ako stara verzija ima tu igru (inače je to krug reči)
+  const F = await napraviSobu(['Mika', 'Nina'], { kviz: 'oblast:geografija', krugovi: 'reci', brojReci: 3, vremeReci: 90 });
+  await pokreni(F);
+  if (F.vodja.V.faza === 'slovo') {
+    await F.igraci[1].akcija('pojam', { tekst: 'Beograd' });
+    await F.igraci[1].cekaj((V) => V.slovo.pokusaji.length === 1, 5000, 'pojam primljen');
+  }
   // C: lobi sa podešavanjima
   const C = await napraviSobu(['Fića', 'Gaga'], { brojPitanja: 10, vreme: 30, krugovi: 'pitanja', pismo: 'latinica' });
   // D: otkrivanje drugog pitanja (poeni, tačan odgovor, raspodela)
@@ -338,7 +347,7 @@ async function test() {
     provera((await br.stanje()).nacin === 'sse', 'pregledač je na SSE vezi');
   } else log('  (bez pravog pregledača – nema chromiuma ili je zadato --bez-pregledaca)');
 
-  const sobe = [['A (pitanje)', A], ['B (krug reči)', Bs], ['C (lobi)', C], ['D (otkrivanje)', D], ...(E ? [['E (pregledač)', E]] : [])];
+  const sobe = [['A (pitanje)', A], ['B (krug reči)', Bs], [F.vodja.V.faza === 'slovo' ? 'F (na slovo)' : 'F (krug reči, geografija)', F], ['C (lobi)', C], ['D (otkrivanje)', D], ...(E ? [['E (pregledač)', E]] : [])];
   const telefoni = sobe.flatMap(([, s]) => s.igraci);
   const pre = new Map(sobe.map(([, s]) => [s, { sazetak: sazetak(s.vodja.V), V: s.vodja.V, moji: s.igraci.map((ig) => ig.V.reci?.moji || null), ja: s.igraci.map((ig) => ig.V.ja) }]));
   const klijentPre = A.vodja.V.klijent;
@@ -412,7 +421,7 @@ async function test() {
     provera(isto(sad, poredi), `${ime}: stanje sobe je isto kao pre deploy-a`, isto(sad, poredi) ? '' : `\n      pre:   ${JSON.stringify(poredi).slice(0, 400)}\n      posle: ${JSON.stringify(sad).slice(0, 400)}`);
     provera(isto(s.igraci.map((ig) => ig.V.ja), p.ja), `${ime}: telefoni su prepoznati kao isti igrači (javni id)`);
     provera(isto(s.igraci.map((ig) => ig.V.reci?.moji || null), p.moji), `${ime}: svaki igrač vidi svoje poslate reči`);
-    if (['pitanje', 'reci'].includes(p.V.faza) && s !== A) {
+    if (['pitanje', 'reci', 'slovo'].includes(p.V.faza) && s !== A) {
       // preostalo vreme: koliko je bilo pre, minus vreme koje je server RADIO (pauza se ne računa)
       const ocekivano = p.V.rokDo - p.V.sada - (V.sada - p.V.sada - stajao);
       const stvarno = V.rokDo - V.sada;

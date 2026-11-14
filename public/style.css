@@ -456,3 +456,33 @@ body.ekran #o-igri { display: none; }
 .kod-uz { font: 600 .88em/1.25 ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; color: #c8d3f5; background: #1e2030;
   border: 1px solid #ffffff1a; border-radius: 6px; padding: .08em .38em; white-space: pre-wrap; overflow-wrap: anywhere; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
 .pitanje-tekst .kod-uz { font-weight: 600; }
+
+/* ───── bonus „Na slovo…“ (zanimljiva geografija, naučnici, istorijske ličnosti, sportisti) ───── */
+.na-slovo { text-align: center; margin: 6px 0 2px; }
+.veliko-slovo { font-family: var(--uslovno); font-size: 5.2em; font-weight: 800; line-height: 1.05; color: var(--istaknuto); text-shadow: 0 0 24px #ffc93c55; animation: uskok .6s; }
+.kategorije-slova { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; margin-top: 4px; }
+.kat-slova { background: var(--polje); border-radius: 999px; padding: 4px 11px; font-size: .9em; white-space: nowrap; }
+.kat-slova b { color: var(--istaknuto); }
+.uvod-kat { margin: 10px 0; font-size: 1.05em; }
+.bonus-opis { margin: 4px 0 8px; }
+.unos-pojma { display: flex; gap: 8px; margin: 12px 0 0; }
+.unos-pojma input { flex: 1; min-width: 0; font-size: 1.2em; padding: 12px 14px; border-radius: 14px; border: 2px solid #5cc8ff66; background: #000; color: #fff; outline: none; }
+.unos-pojma input:focus { border-color: #5cc8ff; }
+.unos-pojma .dugme { width: auto; flex: 0 0 auto; padding: 0 22px; margin: 0; }
+.cipovi { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 6px; }
+.cip { background: var(--kartica2); padding: 3px 10px; border-radius: 999px; font-size: .92em; animation: mehur .3s backwards; }
+.cip small { opacity: .7; }
+.cip.jedini { background: #5c4600; color: var(--istaknuto); }
+.cipovi.mali { margin-top: 3px; } .cipovi.mali .cip { font-size: .78em; padding: 1px 8px; }
+.mogli { margin-top: 12px; }
+.predlozi > div { padding: 3px 0; line-height: 1.35; }
+.licnosti { display: grid; gap: 10px; margin-top: 8px; }
+@media (min-width: 640px) { .licnosti { grid-template-columns: 1fr 1fr; } }
+.licnost { display: flex; gap: 12px; background: var(--kartica2); border-radius: 14px; padding: 10px; animation: mehur .4s backwards; }
+.licnost-slika { position: relative; flex: 0 0 84px; height: 108px; border-radius: 10px; background: var(--polje); overflow: hidden; display: flex; align-items: center; justify-content: center; }
+.licnost-slika::before { content: '👤'; font-size: 2.4em; opacity: .35; }
+.licnost-slika img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; }
+.licnost-tekst { min-width: 0; line-height: 1.35; }
+.licnost .opis { font-size: .92em; margin: 3px 0; }
+.licnost-dno { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-top: 5px; }
+.licnost-dno a { color: var(--akcent2); font-size: .85em; text-decoration: none; margin-left: auto; }
