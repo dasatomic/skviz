@@ -596,24 +596,62 @@ async function geo() {
   if (!geoPodaci) geoPodaci = await (await fetch('/geo/svet.json')).json();
   return geoPodaci;
 }
+// prirodni oblici (alati/gradi-prirodu.js): predeli, mora, jezera i dodatne reke – učitavaju se tek kad zatrebaju
+let prirodaPodaci = null;
+async function priroda() {
+  if (!prirodaPodaci) prirodaPodaci = fetch('/geo/priroda.json').then((r) => r.json()).catch(() => ({}));
+  return prirodaPodaci;
+}
 const OBLASTI = {
   svet: [-170, -58, 180, 80], evropa: [-25, 34, 45, 71], balkan: [13, 39, 30, 47.5], srbija: [18.6, 41.75, 23.2, 46.3],
   afrika: [-20, -36, 53, 38], azija: [25, -11, 150, 75], 'j-amerika': [-85, -57, -32, 14], 's-amerika': [-170, 5, -50, 75],
   australija: [110, -48, 180, -8], 'bliski-istok': [25, 12, 63, 43],
+  // regije (Geografija 7)
+  'juzna-evropa': [-10.5, 34.5, 30, 47.5], 'srednja-evropa': [4, 44.5, 25, 55.5], 'zapadna-evropa': [-11, 41.5, 10, 59.5],
+  'severna-evropa': [-25, 53.5, 33, 71.5], 'istocna-evropa': [20, 41, 62, 70], 'sfrj': [13, 40.6, 23.2, 46.9],
+  'jugozapadna-azija': [25, 11, 75, 44], 'juzna-azija': [60, 5, 98, 37.5], 'jugoistocna-azija': [91, -11.5, 142, 28.5],
+  'istocna-azija': [72, 17, 147, 54], 'centralna-azija': [45, 34.5, 88, 56], 'severna-afrika': [-18, 14, 40, 38], 'podsaharska-afrika': [-18, -36, 52, 18],
+  'srednja-amerika': [-118, 6, -59, 33], 'okeanija': [110, -48, 205, 22], 'novi-zeland': [165.5, -47.5, 179, -34],
 };
+// polarne oblasti: azimutna ekvidistantna projekcija oko pola (r = ugaono rastojanje od pola)
+const POLARNE = { arktik: { pol: 1, do: 33 }, antarktik: { pol: -1, do: 32 } };
 async function prikaziMapu(k, m) {
   const D = await geo();
   const I = window.IstorijskeKarte || { oblasti: {}, linije: {}, karte: {} };
   const karta = m.karta ? I.karte[m.karta] || {} : null;
-  const kutija = m.kutija || (!m.oblast && karta?.kutija) || OBLASTI[m.oblast || 'evropa'];
-  const [x0, y0, x1, y1] = kutija;
+  const trebaPriroda = m.predeli || m.mora || m.jezera || (m.reke || []).some((r) => !D.reke[r]);
+  const N = trebaPriroda ? await priroda() : {};
+  const polar = POLARNE[m.oblast];
+  const kutija = m.kutija || (!m.oblast && karta?.kutija) || OBLASTI[m.oblast] || OBLASTI.evropa;
+  const [x0, y0, x1, y1] = polar ? [-180, -90, 180, 90] : kutija;
   const kos = Math.cos((((y0 + y1) / 2) * Math.PI) / 180);
-  const W = 1000, H = Math.round((1000 * (y1 - y0)) / ((x1 - x0) * kos));
-  const px = (lon, lat) => [((lon - x0) / (x1 - x0)) * W, ((y1 - lat) / (y1 - y0)) * H];
-  const putanja = (prsten) => 'M' + prsten.map(([a, b]) => px(a, b).map((v) => v.toFixed(1)).join(',')).join('L') + 'Z';
+  const W = 1000, H = polar ? 1000 : Math.round((1000 * (y1 - y0)) / ((x1 - x0) * kos));
+  // okvir preko 180. meridijana (Okeanija): zapadne dužine se nastavljaju iza 180°
+  const L = x1 > 180 ? (a) => (a < 0 ? a + 360 : a) : (a) => a;
+  const px = polar
+    ? (lon, lat) => {
+      const r = ((90 - polar.pol * lat) / polar.do) * 500, a = (lon * Math.PI) / 180;
+      return [500 + r * Math.sin(a), 500 + polar.pol * r * Math.cos(a)];
+    }
+    : (lon, lat) => [((L(lon) - x0) / (x1 - x0)) * W, ((y1 - lat) / (y1 - y0)) * H];
+  const uOkviru = polar ? (a, b) => (90 - polar.pol * b) < polar.do + 15 : (a, b) => L(a) > x0 - 15 && L(a) < x1 + 15 && b > y0 - 15 && b < y1 + 15;
+  // u polarnoj projekciji: bez tačke na samom polu (inače linija iz centra) i sa zgusnutim dugim ivicama (paralele su lukovi)
+  const gusto = (pr) => {
+    if (!polar) return pr;
+    const o = [];
+    pr.forEach(([a, b], i) => {
+      if (polar.pol * b > 89.5) return;
+      const p = o[o.length - 1];
+      if (p && i && Math.abs(a - p[0]) < 180) { const n = Math.min(60, Math.floor(Math.max(Math.abs(a - p[0]), Math.abs(b - p[1])) / 2)); for (let j = 1; j < n; j++) o.push([p[0] + ((a - p[0]) * j) / n, p[1] + ((b - p[1]) * j) / n]); }
+      o.push([a, b]);
+    });
+    return o;
+  };
+  const putanja = (prsten) => 'M' + gusto(prsten).map(([a, b]) => px(a, b).map((v) => v.toFixed(1)).join(',')).join('L') + 'Z';
   const linija = (l) => 'M' + l.map(([a, b]) => px(a, b).map((v) => v.toFixed(1)).join(',')).join('L');
   const istakni = new Set(m.istakni || (m.silueta ? [m.silueta] : []));
-  let svg = `<svg viewBox="0 0 ${W} ${H}" class="mapa" xmlns="http://www.w3.org/2000/svg"><rect width="${W}" height="${H}" fill="var(--more)"/>`;
+  // unutrašnji <svg> seče sve što izlazi iz okvira (kad je mapa niža od širine ekrana, spoljni se proširi)
+  let svg = `<svg viewBox="0 0 ${W} ${H}" class="mapa" xmlns="http://www.w3.org/2000/svg"><svg width="${W}" height="${H}"><rect width="${W}" height="${H}" fill="var(--more)"/>`;
   if (m.silueta) {
     // samo obris države, bez suseda – uvećano
     // samo glavno kopno i obližnja ostrva (bez prekomorskih teritorija, npr. Francuske Gvajane)
@@ -636,12 +674,24 @@ async function prikaziMapu(k, m) {
   }
   // istorijska karta (public/istorija.js): savremene granice se ne crtaju, preko kopna idu slojevi
   // (države/oblasti iz tog doba), linije (fronte, pohodi) i natpisi
+  const natpis = (n) => {
+    const [x, y] = px(n.lon, n.lat);
+    const vel = n.vel === 'm' ? 24 : n.vel === 'v' ? 40 : 30;
+    return `<text x="${x.toFixed(1)}" y="${(y + vel / 3).toFixed(1)}" class="nat${n.more ? ' more' : ''}" style="font-size:${vel}px${n.boja ? ';fill:' + esc(n.boja) : ''}" text-anchor="middle">${esc(n.t)}</text>`;
+  };
   const slojevi = [...(karta?.slojevi || []), ...(m.slojevi || [])];
   const istorijska = !!(karta || slojevi.length);
+  // prirodni oblici: istaknuti (treperi) su oni iz `istakni`, a ako nijedan nije naveden – svi navedeni
+  const prirodno = (lista) => { const l = lista || []; const ima = l.some((x) => istakni.has(x)); return l.map((x) => [x, ima ? istakni.has(x) : true]); };
+  const vidi = (rings) => rings.some((r) => r.some(([a, b]) => uOkviru(a, b)));
+  for (const [ime, ist] of prirodno(m.mora)) {
+    const r = (N.mora || {})[ime] || [];
+    if (vidi(r)) svg += `<path d="${r.map(putanja).join('')}" class="mor${ist ? ' ist' : ''}"/>`;
+  }
   const kopno = [];
   for (const [kod, rings] of Object.entries(D.drzave)) {
     const ist = istakni.has(kod);
-    const vidljivo = rings.some((r) => r.some(([a, b]) => a > x0 - 15 && a < x1 + 15 && b > y0 - 15 && b < y1 + 15));
+    const vidljivo = rings.some((r) => r.some(([a, b]) => uOkviru(a, b)));
     if (!vidljivo) continue;
     const d = rings.map(putanja).join('');
     kopno.push(d);
@@ -672,22 +722,32 @@ async function prikaziMapu(k, m) {
       }
     }
     svg += '</g>';
-    const linije = [...(karta?.linije || []), ...(m.linije || [])];
-    linije.forEach((l, i) => {
-      const tt = typeof l.l === 'string' ? I.linije[l.l] || [] : l.tacke || [];
-      if (tt.length < 2) return;
-      const boja = esc(l.boja || '#ff4757'), mid = `${id}s${i}`;
-      if (l.strelica) svg += `<marker id="${mid}" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse"><path d="M0,0L10,5L0,10Z" fill="${boja}"/></marker>`;
-      svg += `<path d="${linija(tt)}" pathLength="1" class="lin${l.isprekidana ? ' isp' : ' crtaj'}" style="stroke:${boja};stroke-width:${l.debljina || 4}px;animation-delay:${(l.kasni || 0) + 0.3}s"${l.strelica ? ` marker-end="url(#${mid})"` : ''}/>`;
-      if (l.natpis) { const [a, b] = l.na || tt[Math.floor(tt.length / 2)]; nat.push({ lon: a, lat: b, t: l.natpis, vel: 'm', boja: l.boja }); }
-    });
-    for (const n of [...nat, ...(karta?.natpisi || []), ...(m.natpisi || [])]) {
-      const [x, y] = px(n.lon, n.lat);
-      const vel = n.vel === 'm' ? 24 : n.vel === 'v' ? 40 : 30;
-      svg += `<text x="${x.toFixed(1)}" y="${(y + vel / 3).toFixed(1)}" class="nat${n.more ? ' more' : ''}" style="font-size:${vel}px${n.boja ? ';fill:' + esc(n.boja) : ''}" text-anchor="middle">${esc(n.t)}</text>`;
-    }
+    for (const n of [...nat, ...(karta?.natpisi || [])]) svg += natpis(n);
   }
-  for (const r of [...(karta?.reke || []), ...(m.reke || [])]) for (const l of D.reke[r] || []) svg += `<path d="${linija(l)}" class="reka${istorijska ? ' tiha' : ''}"/>`;
+  // predeli (planine, pustinje, poluostrva…) i jezera preko kopna
+  for (const [ime, ist] of prirodno(m.predeli)) {
+    const r = (N.predeli || {})[ime] || [];
+    if (vidi(r)) svg += `<path d="${r.map(putanja).join('')}" class="pred${ist ? ' ist' : ''}"/>`;
+  }
+  for (const [ime, ist] of prirodno(m.jezera)) {
+    const r = (N.jezera || {})[ime] || [];
+    if (vidi(r)) svg += `<path d="${r.map(putanja).join('')}" class="jez${ist ? ' ist' : ''}"/>`;
+  }
+  for (const r of [...(karta?.reke || []), ...(m.reke || [])]) for (const l of D.reke[r] || (N.reke || {})[r] || []) svg += `<path d="${linija(l)}" class="reka${istorijska ? ' tiha' : ''}"/>`;
+  // linije: pohodi, fronte, putovanja (iz istorijske karte ili sopstvene `tacke`)
+  const lid = 'lin' + Math.random().toString(36).slice(2, 8), natLin = [];
+  const linije = [...(karta?.linije || []), ...(m.linije || [])];
+  linije.forEach((l, i) => {
+    const tt = typeof l.l === 'string' ? I.linije[l.l] || [] : l.tacke || [];
+    if (tt.length < 2) return;
+    const boja = esc(l.boja || '#ff4757'), mid = `${lid}s${i}`;
+    if (l.strelica) svg += `<marker id="${mid}" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse"><path d="M0,0L10,5L0,10Z" fill="${boja}"/></marker>`;
+    svg += `<path d="${linija(tt)}" pathLength="1" class="lin${l.isprekidana ? ' isp' : ' crtaj'}" style="stroke:${boja};stroke-width:${l.debljina || 4}px;animation-delay:${(l.kasni || 0) + 0.3}s"${l.strelica ? ` marker-end="url(#${mid})"` : ''}/>`;
+    if (l.natpis) { const [a, b] = l.na || tt[Math.floor(tt.length / 2)]; natLin.push({ lon: a, lat: b, t: l.natpis, vel: 'm', boja: l.boja }); }
+  });
+  for (const n of natLin) svg += natpis(n);
+  if (polar) { const [, y] = px(0, polar.pol * 66.56); svg += `<circle cx="500" cy="500" r="${Math.abs(y - 500).toFixed(1)}" class="polarni"/>`; }
+  for (const n of m.natpisi || []) svg += natpis(n);
   for (const t of m.tacke || []) {
     const [x, y] = px(t.lon, t.lat);
     if (t.znak) svg += `<g class="pin znak"><text x="${x}" y="${y + 14}" text-anchor="middle" font-size="40">${esc(t.znak)}</text>`;
@@ -696,7 +756,7 @@ async function prikaziMapu(k, m) {
     svg += '</g>';
   }
   const leg = m.legenda ?? karta?.legenda;
-  k.insertAdjacentHTML('beforeend', svg + '</svg>' + (leg && leg.length ? `<div class="legenda">${leg.map(([b, t]) => `<span><i style="background:${esc(b)}"></i>${esc(t)}</span>`).join('')}</div>` : ''));
+  k.insertAdjacentHTML('beforeend', svg + '</svg></svg>' + (leg && leg.length ? `<div class="legenda">${leg.map(([b, t]) => `<span><i style="background:${esc(b)}"></i>${esc(t)}</span>`).join('')}</div>` : ''));
   return () => {};
 }
 

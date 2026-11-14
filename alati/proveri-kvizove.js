@@ -9,6 +9,11 @@ const VRSTE = ['slika', 'svg', 'melodija', 'morze', 'molekul', 'telo', 'atom', '
 const SCENE = require('../public/fizika.js').SCENE;
 const BIO_SCENE = require('../public/biologija.js').SCENE;
 const ISTORIJA = require('../public/istorija.js');
+const SVET = require('../public/geo/svet.json');
+const PRIRODA = require('../public/geo/priroda.json');
+const MAPE = ['svet', 'evropa', 'balkan', 'srbija', 'afrika', 'azija', 'j-amerika', 's-amerika', 'australija', 'bliski-istok', 'juzna-evropa', 'srednja-evropa',
+  'zapadna-evropa', 'severna-evropa', 'istocna-evropa', 'sfrj', 'jugozapadna-azija', 'juzna-azija', 'jugoistocna-azija', 'istocna-azija', 'centralna-azija',
+  'severna-afrika', 'podsaharska-afrika', 'srednja-amerika', 'okeanija', 'novi-zeland', 'arktik', 'antarktik'];
 const MOLEKULI = ['voda', 'ugljen-dioksid', 'metan', 'amonijak', 'kiseonik', 'azot', 'vodonik', 'ozon', 'hlorovodonik', 'vodonik-peroksid', 'etanol', 'benzen', 'sumporna-kiselina', 'so', 'dijamant', 'glukoza'];
 
 let greske = 0, upozorenja = 0, ukupno = 0;
@@ -107,6 +112,12 @@ for (const dir of fs.readdirSync(KOREN).sort()) {
         if (m.vrsta === 'mapa' && m.karta && !ISTORIJA.karte[m.karta]) g(oz, 'nepoznata istorijska karta ' + m.karta + ' (postoje: ' + Object.keys(ISTORIJA.karte).join(', ') + ')');
         if (m.vrsta === 'mapa') for (const s of m.slojevi || []) if (typeof s.o === 'string' && !ISTORIJA.oblasti[s.o]) g(oz, 'nepoznata istorijska oblast ' + s.o);
         if (m.vrsta === 'mapa') for (const l of m.linije || []) if (typeof l.l === 'string' && !ISTORIJA.linije[l.l]) g(oz, 'nepoznata istorijska linija ' + l.l);
+        if (m.vrsta === 'mapa') {
+          if (m.oblast && !MAPE.includes(m.oblast)) g(oz, 'nepoznata oblast mape ' + m.oblast);
+          for (const r of m.reke || []) if (!SVET.reke[r] && !PRIRODA.reke[r]) g(oz, 'nepoznata reka ' + r);
+          for (const v of ['predeli', 'mora', 'jezera']) for (const x of m[v] || []) if (!PRIRODA[v][x]) g(oz, `nepoznat naziv u "${v}": ${x} (alati/gradi-prirodu.js)`);
+          for (const x of m.istakni || []) if (!m.karta && !SVET.drzave[x] && !['predeli', 'mora', 'jezera'].some((v) => (m[v] || []).includes(x))) g(oz, 'istakni: nepoznata država/oblik ' + x);
+        }
         if (m.vrsta === 'lenta' && (typeof m.od !== 'number' || typeof m.do !== 'number' || !(m.od < m.do) || !Array.isArray(m.dogadjaji) || m.dogadjaji.some((d) => typeof d.g !== 'number' || d.g < m.od || d.g > m.do || !d.t)))
           g(oz, 'lenta: potrebni su „od“ < „do“ i „dogadjaji“ [{g, t}] sa godinama unutar raspona');
         if (m.vrsta === 'melodija' && !/^[A-HR#b0-9+/.\s]+$/.test(m.note || '')) g(oz, 'neispravan zapis nota');
