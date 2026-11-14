@@ -115,6 +115,10 @@ label.sitno, .kartica > label { color: var(--akcent2); font-weight: 500; }
 .lekcija.izabran > span:last-child { background: var(--akcent); }
 .podesavanje { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 9px 0; border-bottom: 1px solid var(--linija); }
 .podesavanje:last-of-type { border-bottom: 0; }
+/* „Učestvujem u igri“ (vidi samo vođa) – isključen = vođa samo prikazuje igru, kao TV ekran */
+.podesavanje.ucestvujem { border-top: 1px solid var(--linija); cursor: pointer; }
+.podesavanje.ucestvujem small { display: block; margin-top: 2px; line-height: 1.3; }
+.podesavanje.ucestvujem input { width: 24px; height: 24px; flex: none; accent-color: var(--akcent); cursor: pointer; }
 .izbor { display: flex; gap: 4px; flex-wrap: wrap; justify-content: flex-end; }
 .izbor button { background: var(--polje); padding: 7px 12px; border-radius: 999px; font-weight: 500; font-size: .9em; transition: background .15s; }
 .izbor button.izabran { background: var(--akcent); color: #fff; }

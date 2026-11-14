@@ -334,6 +334,7 @@ async function obradi(req, res) {
       sobe.set(kod, s);
       if (b.pismo === 'latinica') s.podesavanja.pismo = 'latinica';
       s.dodajIgraca(id, b.ime, b.avatar);
+      if (b.gledam === true) s.postaviGledanje(id, true); // vođa samo prikazuje igru (npr. nastavnik na velikom ekranu)
       s.zabelezi('soba-nova');
       return kraj(res, 200, { kod });
     }
@@ -367,7 +368,9 @@ async function obradi(req, res) {
       default:
         if (!domacin) return kraj(res, 403, { greska: 'Samo vođa igre ovo može' });
         if (b.tip === 'podesavanja') soba.postavi(b.podesavanja || {});
+        else if (b.tip === 'gledam') soba.postaviGledanje(id, b.da === true);
         else if (b.tip === 'pokreni') {
+          if (soba.faza === 'lobi' && !soba.takmicari().length) return kraj(res, 409, { greska: 'Još nema igrača – sačekaj da uđu ili uključi „Učestvujem u igri“.' });
           kvizovi.ucitajSve(); // pokupi nove kvizove bez restartovanja servera
           if (!soba.pokreni()) return kraj(res, 409, { greska: 'Za ovaj izbor nema pitanja. Izaberi drugi kviz.' });
         } else if (b.tip === 'dalje') soba.dalje(typeof b.faza === 'string' ? b.faza : undefined);

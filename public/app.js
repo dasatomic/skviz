@@ -5,6 +5,14 @@ const $ = (s, el = document) => el.querySelector(s);
 const app = $('#app');
 const EKRAN = location.pathname.startsWith('/ekran');
 if (EKRAN) document.body.classList.add('ekran');
+// TV = prikaz za veliki ekran: /ekran, ili vođa koji ne učestvuje u igri (V.gledam – npr. nastavnik pokazuje kviz)
+let TV = EKRAN;
+function postaviTV(da) {
+  if (TV === da) return;
+  TV = da;
+  document.body.classList.toggle('ekran', da);
+  kljucEkrana = ''; // drugačiji prikaz – ekran se crta iznova
+}
 
 const AVATARI = ['🦉', '🦊', '🐼', '🐯', '🦁', '🐸', '🐙', '🦄', '🐧', '🐨', '🐵', '🐶', '🐱', '🐰', '🦖', '🐢', '🦋', '🐝', '🦈', '🐳', '🌻', '🚀', '⚽', '🎸', '👑', '🧙', '🦸', '🤖', '👽', '🍕', '🌈', '⭐'];
 const LAT = { а: 'a', б: 'b', в: 'v', г: 'g', д: 'd', ђ: 'đ', е: 'e', ж: 'ž', з: 'z', и: 'i', ј: 'j', к: 'k', л: 'l', љ: 'lj', м: 'm', н: 'n', њ: 'nj', о: 'o', п: 'p', р: 'r', с: 's', т: 't', ћ: 'ć', у: 'u', ф: 'f', х: 'h', ц: 'c', ч: 'č', џ: 'dž', ш: 'š' };
@@ -154,7 +162,8 @@ function primi(v) {
   const staro = V;
   V = v;
   if (v.podesavanja?.pismo && v.podesavanja.pismo !== PISMO) { postaviPismo(v.podesavanja.pismo, false); kljucEkrana = ''; }
-  if (!EKRAN && !v.igraci.some((x) => x.id === v.ja)) {
+  postaviTV(EKRAN || !!v.gledam);
+  if (!EKRAN && !v.gledam && !v.igraci.some((x) => x.id === v.ja)) {
     // izbačen ili soba nova – vrati na početak
     if (staro) { prekiniVezu(); V = null; ls.set('soba', ''); poruka('Nisi više u sobi'); pocetna(); return; }
   }
@@ -238,6 +247,7 @@ function crtaj(staro) {
 let linkIskoriscen = false; // kod sobe iz adrese (/ekran?soba=ABCD) koristi se samo jednom – inače mrtva soba vrti u krug
 function pocetna() {
   ocisti();
+  postaviTV(EKRAN);
   kljucEkrana = '';
   $('.meni-dugme')?.remove();
   const qs = new URLSearchParams(location.search);
@@ -295,7 +305,7 @@ function pocetna() {
   };
   $('#nova').onclick = async () => {
     if (!proveri()) return;
-    const r = await akcija('nova-soba', { ime: ja.ime, avatar: ja.avatar, pismo: PISMO });
+    const r = await akcija('nova-soba', { ime: ja.ime, avatar: ja.avatar, pismo: PISMO, gledam: ja.gledam === true });
     if (r.kod) povezi(r.kod);
   };
   $('#udji').onclick = async () => {
@@ -365,7 +375,7 @@ function donjaTraka(html) {
 }
 
 function dugmeDalje(natpis = 'Dalje ➜') {
-  if (!jaDomacin()) { donjaTraka(EKRAN ? '' : '<div class="cekanje">Vođa igre nastavlja<span class="tackice"></span></div>'); return; }
+  if (!jaDomacin()) { donjaTraka(TV ? '' : '<div class="cekanje">Vođa igre nastavlja<span class="tackice"></span></div>'); return; }
   const d = donjaTraka(`<button class="dugme zuto" id="dalje">${natpis}</button>`);
   $('#dalje', d).onclick = () => { Zvuk.efekat('klik'); akcija('dalje', { faza: V.faza }); };
 }
@@ -381,7 +391,7 @@ const mnogo = () => V.igraci.length > MALO;
 
 // ko je već odgovorio / predao (spisak id-jeva)
 function koJeOdgovorio(spisak, rec = 'odgovorilo') {
-  if (V.igraci.length <= 1 && !EKRAN) return '';
+  if (V.igraci.length <= 1 && !TV) return '';
   if (!mnogo()) return `<div class="igraci">${V.igraci.map((x) => avatarHTML(x, spisak.includes(x.id) ? '<span class="kvacica">✓</span>' : '')).join('')}</div>`;
   const n = V.igraci.filter((x) => spisak.includes(x.id)).length;
   const cekamo = V.igraci.filter((x) => !spisak.includes(x.id) && x.povezan);
@@ -391,7 +401,7 @@ function koJeOdgovorio(spisak, rec = 'odgovorilo') {
 }
 
 // u sažetom prikazu: prvih `limit` redova + moj red (ako nisam među njima) + „i još N“
-function skratiListu(lista, red, limit = EKRAN ? 10 : 5) {
+function skratiListu(lista, red, limit = TV ? 10 : 5) {
   if (!mnogo() || lista.length <= limit + 1) return lista.map(red).join('');
   const moj = lista.findIndex((x) => x.id === V.ja);
   let html = lista.slice(0, limit).map(red).join('');
@@ -578,6 +588,8 @@ function podesavanja() {
       <div class="podesavanje"><span>Sekundi po rundi</span>${opcija('vremeReci', [45, 60, 75, 90, 120])}</div>
       ` : ''}`}
       <div class="podesavanje"><span>Pismo</span>${opcija('pismo', ['cirilica', 'latinica'], ['Ćirilica', '<span data-lat>Latinica</span>'])}</div>
+      <label class="podesavanje ucestvujem"><span>Učestvujem u igri<small class="sitno">Isključi ako samo prikazuješ kviz (npr. nastavnik na velikom ekranu) – tada ne odgovaraš, a igru vodiš ti.</small></span>
+        <input type="checkbox" id="igram" ${V.gledam ? '' : 'checked'}></label>
     </div>`;
   if (k.dataset.h !== html) {
     k.innerHTML = html;
@@ -591,8 +603,11 @@ function podesavanja() {
       Zvuk.efekat('klik');
       akcija('podesavanja', { podesavanja: { [b.parentNode.dataset.p]: b.dataset.v } });
     }));
+    // izbor se pamti na uređaju – nastavnik ga ne menja pri svakoj novoj sobi
+    $('#igram', k).onchange = (e) => { Zvuk.efekat('klik'); ja.gledam = !e.target.checked; sacuvajJa(); akcija('gledam', { da: ja.gledam }); };
   }
-  const d = donjaTraka(`<button class="dugme zeleno" id="start">▶ Pokreni igru${V.igraci.length === 1 ? ' (sam)' : ''}</button>`);
+  if (!V.igraci.length) { donjaTraka('<div class="cekanje">Čeka se da igrači uđu u sobu<span class="tackice"></span></div>'); return; }
+  const d = donjaTraka(`<button class="dugme zeleno" id="start">▶ Pokreni igru${V.igraci.length === 1 && !V.gledam ? ' (sam)' : ''}</button>`);
   $('#start', d).onclick = () => { Zvuk.otkljucaj(); Zvuk.efekat('fanfare'); akcija('pokreni'); };
 }
 
@@ -694,7 +709,7 @@ function zaglavljePitanja(P) {
 function otkrivanjePitanja(P, naslov) {
   const moj = V.dobitak[V.ja];
   let rez = '';
-  if (moj && !EKRAN) {
+  if (moj && !TV) {
     if (moj.tacno) {
       rez = `<div class="rezultat dobro">${P.vrsta === 'spoji' ? 'Sve tačno!' : 'Tačno!'} +${moj.poeni}</div>${moj.bonus ? `<div class="bonus">🔥 Niz od ${moj.niz} tačnih: +${moj.bonus}</div>` : ''}`;
       Zvuk.efekat('tacno');
@@ -706,10 +721,10 @@ function otkrivanjePitanja(P, naslov) {
       rez = `<div class="rezultat lose">${moj.bez ? 'Vreme je isteklo ⏰' : 'Netačno 😕'}</div>`;
       Zvuk.efekat('netacno');
     }
-  } else if (EKRAN) Zvuk.efekat('tacno');
+  } else if (TV) Zvuk.efekat('tacno');
   const tacniLista = V.igraci.filter((x) => V.dobitak[x.id]?.tacno).sort((a, b) => V.dobitak[a.id].ms - V.dobitak[b.id].ms);
   const brzi = tacniLista[0];
-  const poeni = V.igraci.length > 1 || EKRAN ? `<div class="kartica"><div class="lista-poena">${skratiListu([...V.igraci].sort((a, b) => b.poeni - a.poeni), (x, i) => {
+  const poeni = V.igraci.length > 1 || TV ? `<div class="kartica"><div class="lista-poena">${skratiListu([...V.igraci].sort((a, b) => b.poeni - a.poeni), (x, i) => {
     const d = V.dobitak[x.id] || {};
     return `<div class="st ${x.id === V.ja ? 'ja' : ''}" style="animation-delay:${0.1 * Math.min(i, 8)}s">${mesto(i)}<span style="font-size:1.4em">${esc(x.avatar)}</span><b>${esc(x.ime)}</b>
       ${d.poeni > 0 ? `<span class="plus">+${d.poeni + (d.bonus || 0)}</span>${d.od ? ` <span class="sitno">${d.pogodjeno}/${d.od}</span>` : ''}${x === brzi && tacniLista.length > 1 ? ' ⚡' : ''}` : '<span class="sitno">—</span>'}<span class="p">${x.poeni}</span></div>`;
@@ -786,7 +801,7 @@ function pokreniResenje(P) {
   $('#kr-sve').onclick = () => { vidljivo = R.length - 1; prikazi(); };
   app.querySelectorAll('.koraci li').forEach((li) => (li.onclick = () => { if (!li.classList.contains('skriven')) idi(+li.dataset.k); }));
   // veliki ekran sam prolazi kroz korake
-  if (EKRAN) {
+  if (TV) {
     const t = setInterval(() => { if (tek < R.length - 1) idi(tek + 1); else clearInterval(t); }, 7000);
     ciscenje.push(() => clearInterval(t));
   }
@@ -804,9 +819,9 @@ function ekranPitanje(nov, staro) {
       <div id="ispod"></div>`;
     if (P.mediji) ciscenje.push(prikaziMedij($('#medij'), P.mediji, { auto: true, paket: P.paket, kod: P.kod }));
     else $('#medij').remove();
-    if (P.odgovori.every((o) => o.length < 18) && !EKRAN) $('#odgovori').classList.add('dvokolonski');
+    if (P.odgovori.every((o) => o.length < 18) && !TV) $('#odgovori').classList.add('dvokolonski');
     app.querySelectorAll('.odg').forEach((b) => (b.onclick = () => {
-      if (EKRAN || V.faza !== 'pitanje' || V.mojOdgovor !== null) return;
+      if (TV || V.faza !== 'pitanje' || V.mojOdgovor !== null) return;
       Zvuk.efekat('klik');
       V.mojOdgovor = +b.dataset.i;
       ekranPitanje(false);
@@ -825,7 +840,7 @@ function ekranPitanje(nov, staro) {
 
   if (!otkriveno) {
     ispod.innerHTML = `${V.mojOdgovor !== null ? '<div class="cekanje">Odgovor zaključan 🔒 čekamo ostale<span class="tackice"></span></div>'
-      : P.zadatak && !EKRAN ? '<div class="sitno centar">✏️ Reši zadatak na papiru, pa izaberi odgovor.</div>' : ''}
+      : P.zadatak && !TV ? '<div class="sitno centar">✏️ Reši zadatak na papiru, pa izaberi odgovor.</div>' : ''}
       ${koJeOdgovorio(V.odgovorili)}`;
     donjaTraka('');
     return;
@@ -847,7 +862,7 @@ function ekranPitanje(nov, staro) {
     ispod.innerHTML = otkrivanjePitanja(P, naslov);
     prikaziMedijOdgovora(P);
     if (P.resenje) pokreniResenje(P);
-    if (!EKRAN) setTimeout(() => $('.zanimljivost')?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 900);
+    if (!TV) setTimeout(() => $('.zanimljivost')?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 900);
   }
   dugmeDalje(P.rb === P.ukupno ? 'Rang lista 🏆' : 'Sledeće pitanje ➜');
 }
@@ -872,7 +887,7 @@ function ekranSpoji(nov, staro) {
       <div id="ispod"></div>`;
     if (P.mediji) ciscenje.push(prikaziMedij($('#medij'), P.mediji, { auto: true, paket: P.paket, kod: P.kod }));
     else $('#medij').remove();
-    const moze = () => !EKRAN && V.faza === 'pitanje' && V.mojOdgovor === null;
+    const moze = () => !TV && V.faza === 'pitanje' && V.mojOdgovor === null;
     app.querySelectorAll('.spoj.levo').forEach((b) => (b.onclick = () => {
       if (!moze()) return;
       const i = +b.dataset.i;
@@ -919,9 +934,9 @@ function ekranSpoji(nov, staro) {
   if (!otkriveno) {
     const spremno = spajanje.parovi.every((x) => x !== null);
     ispod.innerHTML = `${V.mojOdgovor !== null ? '<div class="cekanje">Parovi poslati 🔒 čekamo ostale<span class="tackice"></span></div>'
-      : EKRAN ? '' : `<div class="sitno centar">${spremno ? 'Sve je spojeno – proveri pa pošalji.' : 'Dodirni pojam levo, pa njegov par desno.'}</div>`}
+      : TV ? '' : `<div class="sitno centar">${spremno ? 'Sve je spojeno – proveri pa pošalji.' : 'Dodirni pojam levo, pa njegov par desno.'}</div>`}
       ${koJeOdgovorio(V.odgovorili)}`;
-    if (!EKRAN && V.mojOdgovor === null && spremno) {
+    if (!TV && V.mojOdgovor === null && spremno) {
       const d = donjaTraka('<button class="dugme zeleno" id="posalji-parove">Pošalji parove ✓</button>');
       $('#posalji-parove', d).onclick = () => {
         if (V.mojOdgovor !== null) return;
@@ -941,14 +956,14 @@ function ekranSpoji(nov, staro) {
     const odgovorilo = Object.keys(V.izbori).length || 1;
     const resenje = P.levo.map((l, i) => {
       const moj = Array.isArray(V.mojOdgovor) ? V.mojOdgovor[i] : null;
-      const znak = moj === null || EKRAN ? '' : moj === P.tacan[i] ? '✅' : '❌';
+      const znak = moj === null || TV ? '' : moj === P.tacan[i] ? '✅' : '❌';
       return `<div class="par-resenje" style="animation-delay:${0.12 * i}s"><span class="boja" style="background:${BOJE_PAROVA[i]}"></span>
         <span class="tekst"><b>${mat(l)}</b> <span class="strelica">→</span> ${mat(P.desno[P.tacan[i]])}</span>
         <span class="sitno">${Math.round((100 * V.raspodela[i]) / odgovorilo)}%</span>${znak ? `<span>${znak}</span>` : ''}</div>`;
     }).join('');
     ispod.innerHTML = otkrivanjePitanja(P, `<h3>🔗 Tačni parovi</h3>${resenje}`);
     prikaziMedijOdgovora(P);
-    if (!EKRAN) setTimeout(() => $('.zanimljivost')?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 900);
+    if (!TV) setTimeout(() => $('.zanimljivost')?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 900);
   }
   dugmeDalje(P.rb === P.ukupno ? 'Rang lista 🏆' : 'Sledeće pitanje ➜');
 }
@@ -1013,7 +1028,7 @@ function ekranReci(nov, staro) {
       ${R.imaPojam && !otkriveno ? '<div class="pojam-savet">💡 U ovim slovima krije se jedan pojam iz kviza – pronađi ga za +200!</div>' : ''}
       <div id="sredina"></div>`;
     if (!otkriveno) tajmer(R.pocetak, R.trajanje);
-    if (!EKRAN && !otkriveno) {
+    if (!TV && !otkriveno) {
       $('#sredina').innerHTML = `
         <div class="slaganje" id="slaganje"></div>
         <div class="red" style="margin-top:10px">
@@ -1042,7 +1057,7 @@ function ekranReci(nov, staro) {
     }
   }
   if (!otkriveno) {
-    if (!EKRAN) {
+    if (!TV) {
       $('#najbolja').textContent = R.mojaNajbolja ? `${rec(R.mojaNajbolja)} (${[...R.mojaNajbolja].length})` : '—';
       $('#pokusaji').innerHTML = R.moji.map((p) => `<div class="pokusaj ${p.ok ? 'ok' : 'ne'}"><span>${esc(rec(p.rec))}</span><small>${esc(p.poruka)}</small></div>`).join('');
       const gotov = R.gotovi.includes(V.ja);
@@ -1062,12 +1077,12 @@ function ekranReci(nov, staro) {
     const N = R.najbolje;
     const redosled = [...V.igraci].sort((a, b) => [...(V.dobitak[b.id]?.rec || '')].length - [...(V.dobitak[a.id]?.rec || '')].length);
     const moj = V.dobitak[V.ja];
-    if (moj && !EKRAN) {
+    if (moj && !TV) {
       if (moj.rec) Zvuk.efekat('tacno'); else Zvuk.efekat('netacno');
       if (moj.oznaka === 'Savršeno!') konfete(80);
     }
     $('#sredina').innerHTML = `
-      ${moj && !EKRAN ? `<div class="rezultat ${moj.rec ? 'dobro' : 'lose'}">${moj.rec ? `+${moj.poeni + moj.bonus}${moj.oznaka ? ' · ' + moj.oznaka : ''}` : 'Bez reči 😕'}</div>` : ''}
+      ${moj && !TV ? `<div class="rezultat ${moj.rec ? 'dobro' : 'lose'}">${moj.rec ? `+${moj.poeni + moj.bonus}${moj.oznaka ? ' · ' + moj.oznaka : ''}` : 'Bez reči 😕'}</div>` : ''}
       <div class="kartica"><div class="lista-poena">${skratiListu(redosled, (x, i) => {
         const d = V.dobitak[x.id] || {};
         return `<div class="st ${x.id === V.ja ? 'ja' : ''}" style="animation-delay:${0.15 * Math.min(i, 8)}s">${mesto(i)}<span style="font-size:1.4em">${esc(x.avatar)}</span><div><b>${esc(x.ime)}</b><div class="najbolja-rec" style="font-size:1.15em">${d.rec ? esc(rec(d.rec)) + ` <span class="sitno">(${[...d.rec].length})</span>` : '<span class="sitno">—</span>'}</div></div>
@@ -1113,7 +1128,7 @@ function ekranSlovo(nov, staro) {
         <div class="kategorije-slova">${kat.map((k) => `<span class="kat-slova" data-k="${k.id}">${k.ikona} ${esc(k.naziv)}<b></b></span>`).join('')}</div></div>
       <div id="sredina"></div>`;
     if (!otkriveno) tajmer(S.pocetak, S.trajanje);
-    if (!EKRAN && !otkriveno) {
+    if (!TV && !otkriveno) {
       $('#sredina').innerHTML = `
         <form class="unos-pojma" id="unos-forma" autocomplete="off">
           <input id="unos" type="text" maxlength="60" autocomplete="off" autocorrect="off" autocapitalize="words" spellcheck="false" enterkeyhint="send"
@@ -1137,10 +1152,10 @@ function ekranSlovo(nov, staro) {
   if (!otkriveno) {
     const moji = S.moji || [];
     app.querySelectorAll('.kat-slova').forEach((el) => {
-      const n = EKRAN ? 0 : moji.filter((m) => m.kat === el.dataset.k).length;
+      const n = TV ? 0 : moji.filter((m) => m.kat === el.dataset.k).length;
       $('b', el).textContent = n ? ' ' + n : '';
     });
-    if (!EKRAN) {
+    if (!TV) {
       $('#pokusaji').innerHTML = (S.pokusaji || []).slice(0, 3).map((p) => `<div class="pokusaj ${p.ok ? 'ok' : 'ne'}"><span>${esc(p.unos)}</span><small>${esc(p.poruka)}</small></div>`).join('');
       $('#moji').innerHTML = moji.length
         ? `<div class="sitno">Tvoji pojmovi (${moji.length}):</div><div class="cipovi">${[...moji].reverse().map((m) => `<span class="cip">${kat.length > 1 ? (kat.find((k) => k.id === m.kat)?.ikona || '') + ' ' : ''}${esc(naziv(m.ime))}${m.kao ? ` <small>(${esc(naziv(m.kao))})</small>` : ''}</span>`).join('')}</div>`
@@ -1162,7 +1177,7 @@ function ekranSlovo(nov, staro) {
     $('.sekunde').textContent = '';
     const R = S.rezultat || [];
     const moj = V.dobitak[V.ja];
-    if (moj && !EKRAN) {
+    if (moj && !TV) {
       Zvuk.efekat(moj.broj ? 'tacno' : 'netacno');
       if (moj.oznaka?.startsWith('Najviše')) konfete(80);
     }
@@ -1171,7 +1186,7 @@ function ekranSlovo(nov, staro) {
     const redosled = [...V.igraci].sort((a, b) => (V.dobitak[b.id]?.broj || 0) - (V.dobitak[a.id]?.broj || 0));
     const naSlovo = esc(velikoSlovo(S.slovo));
     $('#sredina').innerHTML = `
-      ${moj && !EKRAN ? `<div class="rezultat ${moj.broj ? 'dobro' : 'lose'}">${moj.broj ? `+${moj.poeni + moj.bonus}${moj.oznaka ? ' · ' + esc(moj.oznaka) : ''}` : 'Bez pojmova 😕'}</div>` : ''}
+      ${moj && !TV ? `<div class="rezultat ${moj.broj ? 'dobro' : 'lose'}">${moj.broj ? `+${moj.poeni + moj.bonus}${moj.oznaka ? ' · ' + esc(moj.oznaka) : ''}` : 'Bez pojmova 😕'}</div>` : ''}
       <div class="kartica"><div class="lista-poena">${skratiListu(redosled, (x, i) => {
         const d = V.dobitak[x.id] || {};
         const l = njegovi(x.id);
@@ -1215,7 +1230,7 @@ function ekranKraj(nov) {
     const stub = (x, m) => x ? `<div class="stub m${m}"><div class="lice">${esc(x.avatar)}</div><div class="ime">${esc(x.ime)}</div><div class="poeni">${x.poeni}</div><div class="blok">${m}</div></div>` : '<div class="stub"></div>';
     app.innerHTML = `<h1 class="centar" style="animation:uskok .8s">${R.length > 1 ? '🎉 Pobednik!' : '🎉 Kraj igre!'}</h1>
       <div class="podijum">${stub(p2, 2)}${stub(p1, 1)}${stub(p3, 3)}</div>
-      ${R.length > 3 ? `<div class="kartica"><div class="lista-poena">${skratiListu(R.slice(3), (x, i) => `<div class="st ${x.id === V.ja ? 'ja' : ''}"><b>${i + 4}.</b> ${esc(x.avatar)} ${esc(x.ime)}<span class="p">${x.poeni}</span></div>`, EKRAN ? 12 : 7)}</div></div>` : ''}
+      ${R.length > 3 ? `<div class="kartica"><div class="lista-poena">${skratiListu(R.slice(3), (x, i) => `<div class="st ${x.id === V.ja ? 'ja' : ''}"><b>${i + 4}.</b> ${esc(x.avatar)} ${esc(x.ime)}<span class="p">${x.poeni}</span></div>`, TV ? 12 : 7)}</div></div>` : ''}
       <div class="kartica centar sitno">Rezultati su upisani u porodičnu tablu slavnih 🏆</div>`;
     Zvuk.efekat('bubanj');
     setTimeout(() => { Zvuk.efekat('fanfare'); konfete(200); }, 2000);
@@ -1224,7 +1239,7 @@ function ekranKraj(nov) {
   if (jaDomacin()) {
     const d = donjaTraka('<button class="dugme zuto" id="opet">🔁 Nova igra</button>');
     $('#opet', d).onclick = () => akcija('lobi');
-  } else donjaTraka(EKRAN ? '' : '<div class="cekanje">Vođa može da pokrene novu igru</div>');
+  } else donjaTraka(TV ? '' : '<div class="cekanje">Vođa može da pokrene novu igru</div>');
 }
 
 // ───────────────────────── konfete ─────────────────────────
