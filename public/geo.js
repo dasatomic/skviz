@@ -175,9 +175,10 @@
       if (e.mreza) {
         const [a, b, c, d] = e.mreza;
         const [ox, oy] = P(Math.min(Math.max(0, a), b), Math.min(Math.max(0, c), d));
-        const k = e.podela || 1;
+        // podela: razmak linija mreže (ili [po x, po y] – za grafike sa različitim razmerama osa)
+        const [k, ky] = Array.isArray(e.podela) ? e.podela : [e.podela || 1, e.podela || 1];
         for (let x = Math.ceil(a / k) * k; x <= b + 1e-9; x += k) { const [X, Y1] = P(x, c), [, Y2] = P(x, d); const nula = Math.abs(x) < 1e-9; dno += `<line x1="${f(X)}" y1="${f(Y1)}" x2="${f(X)}" y2="${f(Y2)}" class="mreza${nula ? ' osa' : ''}"/>`; if (!nula && e.brojevi !== 0) dno += `<text x="${f(X)}" y="${f(oy + 15)}" class="broj" data-lat>${broj(x)}</text>`; }
-        for (let y = Math.ceil(c / k) * k; y <= d + 1e-9; y += k) { const [X1, Y] = P(a, y), [X2] = P(b, y); const nula = Math.abs(y) < 1e-9; dno += `<line x1="${f(X1)}" y1="${f(Y)}" x2="${f(X2)}" y2="${f(Y)}" class="mreza${nula ? ' osa' : ''}"/>`; if (!nula && e.brojevi !== 0) dno += `<text x="${f(ox - 9)}" y="${f(Y + 5)}" class="broj" data-lat>${broj(y)}</text>`; }
+        for (let y = Math.ceil(c / ky) * ky; y <= d + 1e-9; y += ky) { const [X1, Y] = P(a, y), [X2] = P(b, y); const nula = Math.abs(y) < 1e-9; dno += `<line x1="${f(X1)}" y1="${f(Y)}" x2="${f(X2)}" y2="${f(Y)}" class="mreza${nula ? ' osa' : ''}"/>`; if (!nula && e.brojevi !== 0) dno += `<text x="${f(ox - 9)}" y="${f(Y + 5)}" class="broj" data-lat>${broj(y)}</text>`; }
         if (e.brojevi !== 0) dno += `<text x="${f(ox - 9)}" y="${f(oy + 15)}" class="broj" data-lat>0</text>`;
         if (e.ose) {
           const [X2] = P(b, 0), [, Y2] = P(0, d);

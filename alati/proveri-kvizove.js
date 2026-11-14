@@ -57,7 +57,14 @@ for (const dir of fs.readdirSync(KOREN).sort()) {
       if (!Array.isArray(p.resenje) || !p.resenje.length || p.resenje.some((x) => !x || typeof x.t !== 'string' || !x.t.trim())) g(oz, 'zadatak mora imati „resenje“: [{ "t": "korak" }, …]');
       for (const tekst of [p.pitanje, ...(p.odgovori || []), ...(p.resenje || []).map((x) => x?.t || '')])
         if (((tekst || '').match(/\$/g) || []).length % 2) g(oz, 'neuparen znak $ u: ' + tekst);
-      const crtezi = [p.mediji, ...(p.resenje || []).map((x) => x?.crtez)].filter((m) => m && m.vrsta === 'geo');
+      // osnovni crtež rešenja (gradi se korak po korak): „resenjeCrtez“ ili geo crtež pitanja
+      const osnova = p.resenjeCrtez || (p.mediji?.vrsta === 'geo' ? p.mediji : null);
+      if (p.resenjeCrtez && p.resenjeCrtez.vrsta !== 'geo') g(oz, '„resenjeCrtez“ mora biti geo crtež');
+      for (const x of p.resenje || []) if (x?.crtez) {
+        if (x.crtez.vrsta === 'fizika' && !SCENE.includes(x.crtez.scena)) g(oz, 'rešenje: nepoznata fizička scena ' + x.crtez.scena);
+        else if (!VRSTE.includes(x.crtez.vrsta)) g(oz, 'rešenje: nepoznata vrsta crteža ' + x.crtez.vrsta);
+      }
+      const crtezi = [p.mediji, p.resenjeCrtez, ...(p.resenje || []).map((x) => x?.crtez)].filter((m) => m && m.vrsta === 'geo');
       for (const m of crtezi) {
         const T = m.t || {};
         const imena = (x) => (Array.isArray(x) ? x : String(x).match(/[A-Z][0-9₀-₉']*|[a-z][0-9]*/g) || []);
@@ -67,7 +74,7 @@ for (const dir of fs.readdirSync(KOREN).sort()) {
           if (e.k > (p.resenje || []).length) g(oz, `crtež: element se pojavljuje u koraku ${e.k}, a rešenje ima ${(p.resenje || []).length} koraka`);
         }
         const idjevi = new Set((m.e || []).map((e) => e.id).filter(Boolean));
-        if (m === p.mediji) for (const x of p.resenje || []) for (const id of x.i || []) if (!idjevi.has(id)) g(oz, `rešenje ističe nepoznat element „${id}“`);
+        if (m === osnova) for (const x of p.resenje || []) if (!x.crtez) for (const id of x.i || []) if (!idjevi.has(id)) g(oz, `rešenje ističe nepoznat element „${id}“`);
       }
     } else if (!p.zanimljivost) u(oz, 'nema zanimljivosti');
     if (k.zadaci && p.rec === undefined) {} else if (p.rec !== undefined) {

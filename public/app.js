@@ -317,8 +317,8 @@ function kontakt() {
       <p>Pitanja, predlozi i greške – javi nam se na Discord ili Telegram kanalu:</p>
       <a class="dugme zuto siroko" data-lat href="https://discord.gg/9sMYvbGZAr" target="_blank" rel="noopener">💬 Discord</a>
       <div class="sitno" style="margin-top:10px" data-lat>discord.gg/9sMYvbGZAr</div>
-      <a class="dugme zuto siroko" style="margin-top:16px" data-lat href="https://t.me/+IU6wxwSuSDVkYTk0" target="_blank" rel="noopener">✈️ Telegram</a>
-      <div class="sitno" style="margin-top:10px" data-lat>t.me/+IU6wxwSuSDVkYTk0</div>
+      <a class="dugme zuto siroko" style="margin-top:16px" data-lat href="https://t.me/skvizskviz" target="_blank" rel="noopener">✈️ Telegram</a>
+      <div class="sitno" style="margin-top:10px" data-lat>t.me/skvizskviz</div>
     </div>
     <div class="centar"><button class="dugme" id="nazad">⬅ Nazad</button></div>`;
   $('#nazad').onclick = () => pocetna();
@@ -698,9 +698,13 @@ function prikaziMedijOdgovora(P) {
 }
 
 // ───── rešenje zadatka korak po korak: crtež prati korak (novi elementi se pojavljuju, delovi se ističu) ─────
+// Osnovni crtež rešenja je „resenjeCrtez“ (ili geo crtež iz pitanja) i gradi se korak po korak; korak može imati
+// i svoj „crtez“: geo crtež ili bilo koji drugi medij (npr. animirana fizička scena).
+const crtezResenja = (P) => P.resenjeCrtez || (P.mediji?.vrsta === 'geo' ? P.mediji : null);
+
 function resenjeHTML(P) {
   const R = P.resenje;
-  const crtez = P.mediji?.vrsta === 'geo' || R.some((k) => k.crtez);
+  const crtez = crtezResenja(P) || R.some((k) => k.crtez);
   return `<div class="kartica resenje"><h3>📝 Rešenje</h3>
     ${crtez ? '<div class="medij medij-svg resenje-crtez" id="resenje-crtez"></div>' : ''}
     <ol class="koraci">${R.map((k, i) => `<li data-k="${i}">${mat(k.t)}</li>`).join('')}</ol>
@@ -713,6 +717,10 @@ function pokreniResenje(P) {
   const R = P.resenje;
   let tek = 0, vidljivo = 0;
   const crtez = $('#resenje-crtez');
+  const osnova = crtezResenja(P);
+  // animirani medij koraka (npr. fizička scena) se ne pokreće iznova dok se korak ne promeni
+  let tekuci = null, gasi = () => {};
+  ciscenje.push(() => gasi());
   const prikazi = () => {
     app.querySelectorAll('.koraci li').forEach((li, i) => {
       li.classList.toggle('skriven', i > vidljivo);
@@ -720,9 +728,21 @@ function pokreniResenje(P) {
     });
     if (crtez) {
       const k = R[tek];
-      const m = k.crtez || (P.mediji?.vrsta === 'geo' ? P.mediji : null);
+      const m = k.crtez || osnova;
       crtez.style.display = m ? '' : 'none';
-      if (m) crtez.innerHTML = window.Geo.crtajGeo(m, { korak: k.crtez ? 99 : tek + 1, istakni: k.i || [], prevod: tr });
+      if (m && m.vrsta !== 'geo') {
+        if (m !== tekuci) {
+          gasi();
+          crtez.innerHTML = '';
+          const d = document.createElement('div');
+          crtez.appendChild(d);
+          gasi = prikaziMedij(d, m, { auto: true, paket: P.paket, kod: P.kod });
+          tekuci = m;
+        }
+      } else {
+        gasi(); gasi = () => {}; tekuci = null;
+        if (m) crtez.innerHTML = window.Geo.crtajGeo(m, { korak: k.crtez ? 99 : tek + 1, istakni: k.i || [], prevod: tr });
+      }
     }
     $('#kr-br').textContent = `${tek + 1} / ${R.length}`;
     $('#kr-pre').disabled = tek === 0;

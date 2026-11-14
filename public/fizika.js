@@ -219,6 +219,8 @@
   // Svaka scena dobija (svg, parametri) i vraća { kadar(t, novo), trajanje, pauza } – kadar crta trenutak t (s).
   const SCENE = {
     // Kretanje po stazi. tela: [{e:'🚗', v:20, a:0, x0:0, o:'20 m/s', staza:'~led', podloga:'led|pesak|trava|asfalt|sneg'}],
+    // faze (umesto v/a – kretanje u delovima): [{t:2, v:90, o:'90 km/h'}, {t:1, v:60}, {t:3, a:-20}] – t trajanje, v brzina na početku
+    // dela (ako je nema, nastavlja se), a ubrzanje u tom delu, o natpis tela za vreme tog dela; posle poslednjeg dela telo stoji.
     // duzina (m), jedinica, podeok, tempo (fizičkih jedinica vremena po s animacije), jedVreme ('s' | 'h' | 'min'), trag (vreme između otisaka), vektor, sat.
     kretanje(s, m) {
       const tela = niz(m.tela).slice(0, 4);
@@ -228,6 +230,24 @@
       vel(s, W, H);
       const X0 = 22, X1 = W - 22, px = (x) => X0 + (x / L) * (X1 - X0);
       const kin = tela.map((b) => {
+        if (niz(b.faze).length) {
+          // delovi kretanja: početak (t0, x0, v0) i ubrzanje svakog dela
+          const del = [];
+          let t0 = 0, x0 = br(b.x0, 0), v0 = 0;
+          for (const f of niz(b.faze)) {
+            const tf = Math.max(0, br(f.t, 1)), a = br(f.a, 0);
+            v0 = f.v !== undefined ? br(f.v, v0) : v0;
+            del.push({ t0, x0, v0, a, tf, o: f.o });
+            x0 += v0 * tf + (a * tf * tf) / 2; v0 += a * tf; t0 += tf;
+          }
+          const kraj = t0, deo = (t) => del.find((d) => t < d.t0 + d.tf) || null;
+          return {
+            x: (t) => { const d = deo(t); if (!d) return x0; const u = t - d.t0; return d.x0 + d.v0 * u + (d.a * u * u) / 2; },
+            v: (t) => { const d = deo(t); return d ? d.v0 + d.a * (t - d.t0) : 0; },
+            o: (t) => { const d = deo(Math.min(t, kraj - 1e-9)); return d?.o; },
+            tz: kraj,
+          };
+        }
         const v = br(b.v, 0), a = br(b.a, 0), x0 = br(b.x0, 0);
         const tz = a && v * a < 0 ? -v / a : Infinity;
         return { x: (t) => { const u = Math.min(t, tz); return x0 + v * u + (a * u * u) / 2; }, v: (t) => (t >= tz ? 0 : v + a * t), tz };
@@ -258,7 +278,7 @@
         const g = el(s, 'g');
         const lik = b.e ? emo(g, b.e, 28) : null;
         if (!b.e) kr(g, 0, 0, 10, { fill: boja(b.b, BOJE[i]) });
-        const nat = b.o ? tx(s, 0, y - 42, b.o, { v: 11, b: boja(b.b, C.bela) }) : null;
+        const nat = b.o || niz(b.faze).some((f) => f.o) ? tx(s, 0, y - 42, b.o || '', { v: 11, b: boja(b.b, C.bela) }) : null;
         const vek = m.vektor ? strelica(s, boja(b.b, BOJE[i]), 2.5) : null;
         return { b, y, g, lik, nat, vek, sled: 0 };
       });
@@ -280,6 +300,7 @@
             const X = px(ogr(x, -0.04 * L, 1.04 * L));
             poz(d.g, X, d.y - 14, d.lik ? (smer > 0) !== !!d.b.okreni : false);
             if (d.nat) at(d.nat, { x: X });
+            if (d.nat && kin[i].o) { const o = kin[i].o(tf); if (o) postaviTekst(d.nat, o); }
             if (d.vek) { if (vidi) d.vek.set(X, d.y - 32, X + (v / vmax) * 46, d.y - 32); else d.vek.g.style.display = 'none'; }
             while (korak && d.sled * korak <= tf + 1e-9 && d.sled * korak <= T) {
               const xs = kin[i].x(d.sled * korak);
@@ -2346,6 +2367,155 @@
       return {
         trajanje: zr.length * 1.6 + 2.4, pauza: 1.2,
         kadar(t) { zr.forEach((o) => o.z.set((t - o.t0) / (o.k >= 1 ? 3.2 : 1.4))); },
+      };
+    },
+
+    // Kalorimetar (količina toplote). tip 'grejanje': posuda (m: natpis mase, tecnost, e: emodži umesto vode – npr. '🧱'),
+    // t1 → t2 (°C), Q (natpis uz traku energije), sat: natpis vremena (npr. '5 min'), skrij: true (konačna temperatura je „?“).
+    // tip 'mesanje': tela [{m:'1 kg', t:80, o:'~topla'}, {m:'3 kg', t:20, o:'~hladna'}] (m – i broj za nivo vode: mb;
+    // c – specifični toplotni kapacitet, ako tela nisu od iste supstance),
+    // tk (temperatura smeše), skrij: true (temperatura smeše je „?“; telo sa skrij: true ima nepoznatu početnu temperaturu).
+    // Voda se presipa u srednju posudu i temperature se izjednače.
+    kalorimetar(s, m) {
+      const W = 320, H = 220, v = m.tip || 'grejanje';
+      vel(s, W, H);
+      const boja = (c) => { const u = ogr((c - 0) / 100, 0, 1); return `rgb(${Math.round(46 + 184 * u)},${Math.round(134 - 77 * u)},${Math.round(222 - 152 * u)})`; };
+      const st = (c) => (Number.isFinite(c) ? `${bf(c, 1)} °C` : '? °C');
+      // mali termometar: vraća set(c, natpis)
+      const term = (x, y, h, od = 0, dok = 100) => {
+        el(s, 'rect', { x: x - 5, y, width: 10, height: h, rx: 5, fill: 'rgba(255,255,255,.08)', stroke: C.siva, 'stroke-width': 1.5 });
+        kr(s, x, y + h + 6, 8, { fill: '#e63946', stroke: C.siva, 'stroke-width': 1.5 });
+        const stub = el(s, 'rect', { x: x - 2.5, y, width: 5, height: 0, fill: '#e63946' });
+        const nat = tx(s, x, y - 10, '', { v: 12, b: C.zuta });
+        return (c, n) => { const yy = y + h - ogr((c - od) / (dok - od), 0, 1) * (h - 4); at(stub, { y: yy, height: y + h + 2 - yy }); postaviTekst(nat, n); };
+      };
+      if (v === 'mesanje') {
+        const tela = niz(m.tela).slice(0, 2);
+        while (tela.length < 2) tela.push({ m: '1 kg', t: tela.length ? 20 : 80 });
+        const tk = br(m.tk, 50), mase = tela.map((t) => br(t.mb, br(String(t.m ?? '').replace(',', '.').match(/[\d.]+/)?.[0], 1)));
+        const ukupno = mase[0] + mase[1], hMax = 70;
+        const pos = [{ x: 18 }, { x: 236 }];
+        const voda = pos.map((p, i) => {
+          sud(s, p.x, 70, 66, 90);
+          const r = el(s, 'rect', { x: p.x + 2, y: 0, width: 62, height: 0, fill: boja(br(tela[i].t, 20)), opacity: 0.8 });
+          tx(s, p.x + 33, 176, tela[i].m ?? '', { v: 12 });
+          if (tela[i].o) tx(s, p.x + 33, 192, tela[i].o, { v: 11, b: C.siva });
+          return r;
+        });
+        const tm = pos.map((p) => term(p.x + 33, 22, 40));
+        // srednja posuda
+        sud(s, 110, 100, 100, 100);
+        const sred = el(s, 'rect', { x: 112, y: 0, width: 96, height: 0, fill: boja(tk), opacity: 0.8 });
+        const mlaz = [el(s, 'line', { stroke: boja(br(tela[0].t, 80)), 'stroke-width': 5, 'stroke-linecap': 'round', opacity: 0 }), el(s, 'line', { stroke: boja(br(tela[1].t, 20)), 'stroke-width': 5, 'stroke-linecap': 'round', opacity: 0 })];
+        const tS = term(160, 34, 52);
+        return {
+          trajanje: 7, pauza: 2.5,
+          kadar(t) {
+            const u = glatko((t - 1) / 2.4), w = glatko((t - 3.6) / 2.4);
+            voda.forEach((r, i) => { const h = (mase[i] / ukupno) * hMax * 1.4 * (1 - u); at(r, { y: 158 - h, height: h }); });
+            mlaz.forEach((l, i) => {
+              const x1 = i ? 236 : 84, x2 = i ? 196 : 124;
+              at(l, { x1, y1: 72, x2, y2: 196 - u * 60, opacity: u > 0.02 && u < 0.98 ? 0.9 : 0 });
+            });
+            const hs = u * 90;
+            const cc = tela.map((x) => br(x.c, 1)), ts = (mase[0] * cc[0] * br(tela[0].t, 80) + mase[1] * cc[1] * br(tela[1].t, 20)) / (mase[0] * cc[0] + mase[1] * cc[1]);
+            const c = u > 0 ? ts + (tk - ts) * w : tk;
+            at(sred, { y: 198 - hs, height: hs, fill: boja(c) });
+            tm.forEach((f, i) => f(br(tela[i].t, 20), tela[i].skrij ? '? °C' : st(br(tela[i].t, 20))));
+            if (u <= 0.01) tS(0, '');
+            else tS(c, m.skrij && w > 0.98 ? '? °C' : m.skrij ? '' : st(c));
+          },
+        };
+      }
+      // grejanje
+      const t1 = br(m.t1, 20), t2 = br(m.t2, 80);
+      const od = Math.min(0, t1 - 10), dok = Math.max(100, t2 + 10);
+      sud(s, 90, 70, 110, 100);
+      const vod = el(s, 'rect', { x: 92, y: 86, width: 106, height: 82, fill: boja(t1), opacity: 0.8 });
+      if (m.e) { vod.setAttribute('opacity', 0); poz(emo(s, m.e, 54), 145, 132); }
+      if (m.m) tx(s, 145, 60, m.m, { v: 13 });
+      if (m.tecnost) tx(s, 145, 186, m.tecnost, { v: 11, b: C.siva });
+      el(s, 'rect', { x: 84, y: 172, width: 122, height: 8, rx: 2, fill: C.tamna });
+      // hlađenje (t2 < t1): bez plamena, toplota odlazi u vazduh
+      const plamen = t2 < t1 ? [] : [110, 145, 180].map(() => emo(s, '🔥', 20));
+      if (t2 < t1) [110, 145, 180].forEach((x, i) => poz(emo(s, '💨', 18), x, 52 - (i % 2) * 6));
+      const tm = term(236, 50, 110, od, dok);
+      const tr = trake(s, 286, 190, 150, [{ o: 'Q', b: C.narandz }]);
+      const nq = m.Q ? tx(s, 293, 24, m.Q, { v: 12, b: C.narandz }) : null;
+      const sat = m.sat ? tx(s, 10, 14, '', { a: 'start', v: 12, b: C.zuta }) : null;
+      return {
+        trajanje: 6, pauza: 2.5,
+        kadar(t) {
+          const u = glatko(t / 5.5), c = t1 + (t2 - t1) * u;
+          at(vod, { fill: boja(c) });
+          plamen.forEach((p, i) => poz(p, [110, 145, 180][i], 198 + Math.sin(t * 9 + i) * 1.5, false, 0, 0.9 + 0.12 * Math.sin(t * 7 + i * 2)));
+          tm(c, m.skrij && u > 0.02 ? (u > 0.99 ? '? °C' : '') : st(c));
+          tr.set([u]);
+          if (nq) nq.style.display = u > 0.99 ? '' : 'none';
+          if (sat) postaviTekst(sat, u > 0.99 ? `t = ${m.sat}` : '');
+        },
+      };
+    },
+
+    // Dizanje tereta (rad i snaga). tip 'kran' (dizalica): visina (m), e ('📦'), o (natpis tereta, npr. '200 kg'),
+    // sile: true (F nagore, Fg nadole), F / Fg (natpisi), vreme (s – za sat), sat: true (prikazuje vreme), brzina (natpis).
+    // tip 'stepenice': e ('🧍'), visina, stepenika (broj), vreme, sat, o.
+    dizanje(s, m) {
+      const W = 320, H = 230, v = m.tip || 'kran';
+      vel(s, W, H);
+      const h = br(m.visina, 10), T = br(m.vreme, 5), yTlo = H - 16;
+      lin(s, 6, yTlo, W - 6, yTlo, C.tlo, 3);
+      const sc = 160 / h;
+      // lenjir sa metrima
+      const xr = v === 'kran' ? 270 : 26;
+      lin(s, xr, yTlo, xr, yTlo - h * sc, C.siva, 1.5);
+      const kor = [1, 2, 5, 10, 20, 50, 100].find((k) => h / k <= 5) || 200;
+      for (let i = 0; i * kor <= h + 1e-9; i++) { const y = yTlo - i * kor * sc; lin(s, xr - 4, y, xr + 4, y, C.siva, 1.5); tx(s, xr + (v === 'kran' ? 8 : -8), y, `${i * kor} m`, { a: v === 'kran' ? 'start' : 'end', v: 10, b: C.siva }); }
+      if (h % kor) { const y = yTlo - h * sc; lin(s, xr - 6, y, xr + 6, y, C.zuta, 2); tx(s, xr + (v === 'kran' ? 8 : -8), y, `${bf(h, 2)} m`, { a: v === 'kran' ? 'start' : 'end', v: 11, b: C.zuta }); }
+      const sat = m.sat ? tx(s, W - 8, 12, '', { a: 'end', v: 12, b: C.zuta }) : null;
+      if (v === 'stepenice') {
+        const n = Math.max(3, Math.min(14, br(m.stepenika, 8))), dx = 200 / n, dy = (h * sc) / n;
+        let d = `M40,${yTlo}`;
+        for (let i = 0; i < n; i++) d += ` L${f2(40 + i * dx)},${f2(yTlo - (i + 1) * dy)} L${f2(40 + (i + 1) * dx)},${f2(yTlo - (i + 1) * dy)}`;
+        d += ` L${f2(40 + n * dx)},${yTlo}`;
+        put(s, d + ' Z', { stroke: C.siva, 'stroke-width': 2, fill: 'rgba(255,255,255,.06)' });
+        const cov = emo(s, m.e || '🧍', 30);
+        const nat = m.o ? tx(s, 0, 0, m.o, { v: 12, b: C.zuta }) : null;
+        return {
+          trajanje: 5.5, pauza: 2,
+          kadar(t) {
+            const u = ogr(t / 5, 0, 1), k = u * n, i = Math.floor(Math.min(k, n - 1e-9)), fr = k - i;
+            const x = 40 + (i + fr) * dx, y = yTlo - (i + glatko(Math.min(1, fr * 2.2))) * dy;
+            poz(cov, x + dx / 2, y - 16);
+            if (nat) at(nat, { x: x + dx / 2, y: y - 40 });
+            if (sat) postaviTekst(sat, `t = ${bf(u * T, 1)} s`);
+          },
+        };
+      }
+      // dizalica
+      const xm = 70, xk = 200, yv = 16;
+      lin(s, xm, yTlo, xm, yv, C.narandz, 6);
+      lin(s, xm - 20, yv, xk + 10, yv, C.narandz, 5);
+      for (let x = xm; x < xk; x += 16) lin(s, x, yv, x + 8, yv + 8, C.narandz, 1.5);
+      el(s, 'rect', { x: xm - 24, y: yTlo - 30, width: 30, height: 30, fill: C.tamna, rx: 3 });
+      kr(s, xk, yv + 4, 5, { fill: C.siva });
+      const uze = lin(s, xk, yv + 4, xk, yTlo - 30, C.siva, 1.8);
+      const teret = emo(s, m.e || '📦', 34);
+      const nat = m.o ? tx(s, 0, 0, m.o, { v: 12 }) : null;
+      const fF = m.sile ? strelica(s, C.zelena, 3) : null, fG = m.sile ? strelica(s, C.crvena, 3) : null;
+      const nF = m.sile ? tx(s, 0, 0, m.F || 'F', { v: 12, b: C.zelena, a: 'start' }) : null, nG = m.sile ? tx(s, 0, 0, m.Fg || 'Fg', { v: 12, b: C.crvena, a: 'start' }) : null;
+      const nb = m.brzina ? tx(s, 130, 40, m.brzina, { v: 12, b: C.zuta }) : null;
+      return {
+        trajanje: 5.5, pauza: 2,
+        kadar(t) {
+          const u = ogr((t - 0.3) / 4.8, 0, 1), y = yTlo - 18 - u * h * sc;
+          poz(teret, xk, y);
+          at(uze, { y2: y - 17 });
+          if (nat) at(nat, { x: xk - 44, y });
+          if (fF) { fF.set(xk + 26, y, xk + 26, y - 46); fG.set(xk + 26, y + 4, xk + 26, y + 50); at(nF, { x: xk + 32, y: y - 38 }); at(nG, { x: xk + 32, y: y + 40 }); }
+          if (sat) postaviTekst(sat, `t = ${bf(u * T, 1)} s`);
+          if (nb) nb.style.display = u > 0 && u < 1 ? '' : 'none';
+        },
       };
     },
 
