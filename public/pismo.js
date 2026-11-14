@@ -142,6 +142,8 @@
     if (tok === tok.toUpperCase() && RIMSKI.test(tok)) {
       if (tok.length >= 2) return true;
       if (/^[A-ZČĆŽŠĐ][a-zčćžšđ]+$/.test(preRec) && /[a-zčćžšđ]\s$/.test(pre) && !/^vitamin/i.test(preRec)) return true;
+      // „futur I“ (gramatika): vreme, ne ime
+      if (/^futur/i.test(preRec) && /[a-zčćžšđ]\s$/.test(pre)) return true;
     }
     if (SKRACENICE.has(tok)) return true;
     // hemijski simboli u tekstu o elementima
