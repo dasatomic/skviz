@@ -32702,7 +32702,7 @@
       "rec": "kombinacija"
     },
     {
-      "tezina": 1,
+      "tezina": 3,
       "pitanje": "Katanac ima šifru od tri cifre (0–9, cifre mogu da se ponavljaju). Koliko ima različitih šifara?",
       "odgovori": [
         "1.000",
@@ -32711,7 +32711,8 @@
         "999"
       ],
       "zanimljivost": "Svaka od 3 cifre ima 10 mogućnosti: 10 · 10 · 10 = 1.000 (od 000 do 999). Kad se cifre ne bi ponavljale, bilo bi 10 · 9 · 8 = 720.",
-      "rec": "šifra"
+      "rec": "šifra",
+      "autor": "Miroslav Antonić"
     },
     {
       "tezina": 3,
