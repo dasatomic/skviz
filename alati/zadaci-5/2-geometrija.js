@@ -1,5 +1,5 @@
 // Tema 2: Osnovni pojmovi geometrije (lekcije 2.1–2.8)
-module.exports = ({ L, Z, K, G, O, bez, r, proveri, naKrugu, pravilni, krug, papir, luk, skokovi }) => {
+module.exports = ({ L, Z, K, G, R, O, bez, r, proveri, naKrugu, pravilni, krug, papir, luk, skokovi }) => {
   const sveDuzi = (imena) => { const d = []; for (let i = 0; i < imena.length; i++) for (let j = i + 1; j < imena.length; j++) d.push(imena[i] + imena[j]); return d; };
   // prava kroz dve tačke, produžena preko krajeva (pomoćne tačke bez imena)
   const prava = (t, A, B, ime, x = {}, prod = 0.6) => {
@@ -353,13 +353,13 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, naKrugu, pravilni, krug, pap
     ['u krugu, ali ne na kružnici', 'na kružnici', 'van kruga', 'u centru kruga'],
     [K('Tačke kružnice su tačno $5 cm$ od centra. $OA = 4 cm < 5 cm$.'),
      K('Zato je $A$ unutar kruga (pripada krugu), ali ne i kružnici.', ['a'])],
-    G({ O: [0, 0, 225], A: [4, 0, 90] }, [{ kr: 'O', r: 5, pun: 1 }, { d: 'OA', o: '4 cm', b: 1 }, { tacka: 'A', id: 'a', k: 0 }, { tacka: 'O' }], { velicina: 180 }));
+    R(G({ O: [0, 0, 225], A: [4, 0, 90] }, [{ kr: 'O', r: 5, pun: 1 }, { d: 'OA', o: '4 cm', b: 1 }, { tacka: 'A', id: 'a', k: 0 }, { tacka: 'O' }], { velicina: 180 })));
 
-  Z(2, 'Kružnice $K_{1}(O, 2 cm)$ i $K_{2}(O, 3 cm)$ imaju isti centar. Šta je presek ove dve kružnice?',
-    ['prazan skup', 'tačka $O$', 'kružnica $K_{1}$', 'dve tačke'],
-    [K('Svaka tačka kružnice $K_{1}$ je $2 cm$ od $O$, a svaka tačka $K_{2}$ je $3 cm$ od $O$.'),
+  Z(2, 'Kružnice $k_{1}(O, 2 cm)$ i $k_{2}(O, 3 cm)$ imaju isti centar. Šta je presek ove dve kružnice?',
+    ['prazan skup', 'tačka $O$', 'kružnica $k_{1}$', 'dve tačke'],
+    [K('Svaka tačka kružnice $k_{1}$ je $2 cm$ od $O$, a svaka tačka $k_{2}$ je $3 cm$ od $O$.'),
      K('Nijedna tačka ne može biti istovremeno na $2$ i na $3 cm$ od $O$: presek je prazan. (Presek krugova bi bio ceo manji krug.)')],
-    G({ O: [0, 0] }, [{ kr: 'O', r: 2, b: 0 }, { kr: 'O', r: 3, b: 1 }, { tacka: 'O' }], { velicina: 160 }));
+    R(G({ O: [0, 0] }, [{ kr: 'O', r: 2, b: 0 }, { kr: 'O', r: 3, b: 1 }, { tacka: 'O' }], { velicina: 160 })));
 
   Z(2, 'Na kružnici su označene tri tačke $A$, $B$, $C$. Koliko lukova (sa krajevima u ovim tačkama) one određuju?',
     ['$6$', '$3$', '$9$', '$4$'],
@@ -371,14 +371,14 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, naKrugu, pravilni, krug, pap
     ['$8 cm$', '$2 cm$', '$15 cm$', '$4 cm$'],
     [K('Dodirna tačka je na duži koja spaja centre.', ['t']),
      K('$O_{1}O_{2} = 3 + 5 = 8 cm$. (Da se dodiruju iznutra, bilo bi $5 − 3 = 2 cm$.)')],
-    G({ P: [0, 0], Q: [8, 0], T: [3, 0, 90] }, [{ kr: 'P', r: 3, b: 0 }, { kr: 'Q', r: 5, b: 1 }, { d: 'PQ', b: 3, isp: 1 }, { tacka: 'T', id: 't', k: 0 }, { tx: 'O₁', at: [0, -0.6] }, { tx: 'O₂', at: [8, -0.6] }], { bezImena: ['P', 'Q'], velicina: 220 }));
+    R(G({ P: [0, 0], Q: [8, 0], T: [3, 0, 90] }, [{ kr: 'P', r: 3, b: 0 }, { kr: 'Q', r: 5, b: 1 }, { d: 'PQ', b: 3, isp: 1 }, { tacka: 'T', id: 't', k: 0 }, { tx: 'O₁', at: [0, -0.6] }, { tx: 'O₂', at: [8, -0.6] }], { bezImena: ['P', 'Q'], velicina: 220 })));
 
   Z(2, 'Rastojanje centra kruga od prave $p$ je $3 cm$, a poluprečnik je $4 cm$. Koliko zajedničkih tačaka imaju prava i kružnica?',
     ['$2$', '$1$', '$0$', '$4$'],
     [K('Upoređujemo rastojanje $d = 3 cm$ sa poluprečnikom $r = 4 cm$.'),
      K('$d < r$: prava ulazi u krug – to je sečica, sa $2$ zajedničke tačke. ($d = r$: tangenta, $1$ tačka; $d > r$: $0$.)', ['p']),
      K('Pomeranjem prave vidimo sva tri slučaja.', [], G({ O: [0, 0] }, [{ kr: 'O', r: 4, b: 4 }, { lin: [[-6, -5], [6, -5]], b: 1, pomeri: [0, 8], trajanje: 3, ponovi: 1 }, { tacka: 'O' }], { bezImena: ['O'], velicina: 180 }))],
-    G({ O: [0, 0], N: [0, -3, 270], p1: [-6, -3], p2: [6, -3] }, [{ kr: 'O', r: 4, b: 4 }, { d: 'p1p2', b: 1, id: 'p' }, { d: 'ON', o: '3 cm', isp: 1 }, { tacka: 'O' }], { bezImena: ['O', 'N', 'p1', 'p2'], velicina: 180 }));
+    R(G({ O: [0, 0], N: [0, -3, 270], p1: [-6, -3], p2: [6, -3] }, [{ kr: 'O', r: 4, b: 4 }, { d: 'p1p2', b: 1, id: 'p' }, { d: 'ON', o: '3 cm', isp: 1 }, { tacka: 'O' }], { bezImena: ['O', 'N', 'p1', 'p2'], velicina: 180 })));
 
   Z(3, 'Tri kružnice poluprečnika $2 cm$, $3 cm$ i $4 cm$ dodiruju se spolja, svaka sa svakom. Koliki je obim trougla čija su temena njihovi centri?',
     ['$18 cm$', '$9 cm$', '$24 cm$', '$12 cm$'],
@@ -440,7 +440,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, naKrugu, pravilni, krug, pap
      K('$E$, $K$ i $T$ okrenuti naglavačke izgledaju drugačije.')],
     G({ S: [1, 1.5] }, [{ lin: [[0, 0], [0, 3], [2, 0], [2, 3]], b: 1, debljina: 6, okreni: 180, oko: 'S', k: 1, id: 'n', ponovi: 1 }, { tacka: 'S', k: 1 }], { bezImena: ['S'], velicina: 100 }));
 
-  Z(2, 'Na kružnici $K(O, r)$ data je tetiva $AB$, a $CD$ je njena centralno simetrična slika u odnosu na $O$. Kakav je četvorougao $ABCD$?',
+  Z(2, 'Na kružnici $k(O, r)$ data je tetiva $AB$, a $CD$ je njena centralno simetrična slika u odnosu na $O$. Kakav je četvorougao $ABCD$?',
     ['pravougaonik', 'trapez koji nije pravougaonik', 'deltoid', 'trougao'],
     [K('$C$ je slika tačke $A$, a $D$ slika tačke $B$: dijagonale $AC$ i $BD$ su prečnici.', ['d']),
      K('Dijagonale su jednake (obe su prečnici) i polove se u $O$ – takav četvorougao je pravougaonik.', ['p'])],
@@ -511,7 +511,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, naKrugu, pravilni, krug, pap
      K('Zajedno čine pravougaonik $8 cm × 3 cm$: $O = 2 · (8 + 3) = 22 cm$.')],
     G({ A: [0, 0], B: [4, 0], C: [4, 3], D: [0, 3] }, [{ p: 'ABCD' }, { d: 'AB', o: '4 cm' }, { d: 'BC', o: '3 cm' }, { p: 'ABCD', b: 1, pomeri: [4, 0], k: 1, id: 'sl', gusto: 1 }], { velicina: 200 }));
 
-  Z(2, 'Kružnica $K(O, r)$ translira se za vektor čija je dužina jednaka $r$. Koliko zajedničkih tačaka imaju kružnica i njena slika?',
+  Z(2, 'Kružnica $k(O, r)$ translira se za vektor čija je dužina jednaka $r$. Koliko zajedničkih tačaka imaju kružnica i njena slika?',
     ['$2$', '$1$', '$0$', 'beskonačno mnogo'],
     [K('Centar slike $O\'$ je na rastojanju $r$ od $O$ – leži na prvoj kružnici.', ['c']),
      K('Rastojanje centara ($r$) je manje od zbira poluprečnika ($2r$), a veće od nule: kružnice se seku u $2$ tačke.')],

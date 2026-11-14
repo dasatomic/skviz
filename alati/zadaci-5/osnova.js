@@ -65,9 +65,12 @@ let lek = 0;
 const G = (t, e, x = {}) => ({ vrsta: 'geo', t, e: e.flat(), ...x });
 const K = (t, i, crtez) => ({ t, ...(i && i.length ? { i } : {}), ...(crtez ? { crtez } : {}) });
 // Z(težina, pitanje, odgovori [prvi tačan], rešenje [koraci], crtež uz pitanje)
+// Crtež umotan u R(…) vidi se tek u rešenju – kad bi uz pitanje odao odgovor (tačka „očigledno“ u krugu, prava „vidno“ seče…).
+const R = (crtez) => ({ samoResenje: crtez });
 const Z = (tezina, pitanje, odgovori, resenje, mediji) => {
   if (new Set(odgovori).size !== 4) throw new Error('Odgovori moraju biti 4 različita: ' + pitanje);
-  zadaci.push({ lekcija: lek, tezina, pitanje, odgovori, ...(mediji ? { mediji } : {}), resenje });
+  const crtez = mediji && mediji.samoResenje ? { resenjeCrtez: mediji.samoResenje } : mediji ? { mediji } : {};
+  zadaci.push({ lekcija: lek, tezina, pitanje, odgovori, ...crtez, resenje });
 };
 const L = (naziv) => { lek = lekcije.findIndex((l) => l.naziv === naziv) + 1; if (!lek) throw new Error(naziv); };
 // provera računa u alatu: ako ne važi, gradnja puca (da greška ne bi stigla do dece)
@@ -189,6 +192,6 @@ function tackice(n, uRedu, { razmak = 0.8 } = {}) {
 const papir = (x0, x1, y0, y1) => ({ mreza: [x0, x1, y0, y1], brojevi: 0 });
 
 module.exports = {
-  lekcije, zadaci, G, K, Z, L, proveri, r, naKrugu, pravilni, stubici, kruzni, kocke,
+  lekcije, zadaci, G, K, Z, R, L, proveri, r, naKrugu, pravilni, stubici, kruzni, kocke,
   nzd, nzs, skrati, isti, dec, O, bez, luk, traka, pica, skok, skokovi, krug, venn, upisi, sat, uglomer, sto, tackice, papir,
 };

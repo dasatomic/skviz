@@ -29229,7 +29229,7 @@
     "van kruga",
     "u centru kruga"
    ],
-   "mediji": {
+   "resenjeCrtez": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -29280,14 +29280,14 @@
   {
    "lekcija": 14,
    "tezina": 2,
-   "pitanje": "Kružnice $K_{1}(O, 2 cm)$ i $K_{2}(O, 3 cm)$ imaju isti centar. Šta je presek ove dve kružnice?",
+   "pitanje": "Kružnice $k_{1}(O, 2 cm)$ i $k_{2}(O, 3 cm)$ imaju isti centar. Šta je presek ove dve kružnice?",
    "odgovori": [
     "prazan skup",
     "tačka $O$",
-    "kružnica $K_{1}$",
+    "kružnica $k_{1}$",
     "dve tačke"
    ],
-   "mediji": {
+   "resenjeCrtez": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -29314,7 +29314,7 @@
    },
    "resenje": [
     {
-     "t": "Svaka tačka kružnice $K_{1}$ je $2 cm$ od $O$, a svaka tačka $K_{2}$ je $3 cm$ od $O$."
+     "t": "Svaka tačka kružnice $k_{1}$ je $2 cm$ od $O$, a svaka tačka $k_{2}$ je $3 cm$ od $O$."
     },
     {
      "t": "Nijedna tačka ne može biti istovremeno na $2$ i na $3 cm$ od $O$: presek je prazan. (Presek krugova bi bio ceo manji krug.)"
@@ -29411,7 +29411,7 @@
     "$15 cm$",
     "$4 cm$"
    ],
-   "mediji": {
+   "resenjeCrtez": {
     "vrsta": "geo",
     "t": {
      "P": [
@@ -29492,7 +29492,7 @@
     "$0$",
     "$4$"
    ],
-   "mediji": {
+   "resenjeCrtez": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -32008,7 +32008,7 @@
   {
    "lekcija": 15,
    "tezina": 2,
-   "pitanje": "Na kružnici $K(O, r)$ data je tetiva $AB$, a $CD$ je njena centralno simetrična slika u odnosu na $O$. Kakav je četvorougao $ABCD$?",
+   "pitanje": "Na kružnici $k(O, r)$ data je tetiva $AB$, a $CD$ je njena centralno simetrična slika u odnosu na $O$. Kakav je četvorougao $ABCD$?",
    "odgovori": [
     "pravougaonik",
     "trapez koji nije pravougaonik",
@@ -33031,7 +33031,7 @@
   {
    "lekcija": 16,
    "tezina": 2,
-   "pitanje": "Kružnica $K(O, r)$ translira se za vektor čija je dužina jednaka $r$. Koliko zajedničkih tačaka imaju kružnica i njena slika?",
+   "pitanje": "Kružnica $k(O, r)$ translira se za vektor čija je dužina jednaka $r$. Koliko zajedničkih tačaka imaju kružnica i njena slika?",
    "odgovori": [
     "$2$",
     "$1$",
