@@ -765,7 +765,7 @@
     },
     {
       "tezina": 1,
-      "pitanje": "Koliko iznosi zbir uglova u četvorouglu?",
+      "pitanje": "Koliko iznosi zbir unutrašnjih uglova u četvorouglu?",
       "odgovori": [
         "360°",
         "180°",
@@ -773,11 +773,12 @@
         "270°"
       ],
       "zanimljivost": "Svaki četvorougao može da se dijagonalom podeli na dva trougla: 2 · 180° = 360°.",
+      "rec": "četvorougao",
+      "autor": "Miroslav Antonić",
       "medijiOdgovora": {
         "vrsta": "svg",
         "kod": "<svg viewBox=\"0 0 220 140\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" fill=\"none\" stroke-linejoin=\"round\"><path d=\"M20 120 L190 110 L160 20 L50 30 Z\" stroke=\"#3867d6\" stroke-width=\"2.5\"/><line x1=\"20\" y1=\"120\" x2=\"160\" y2=\"20\" stroke=\"#e84118\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><text x=\"110\" y=\"138\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\" >2 trougla · 180° = 360°</text></svg>"
-      },
-      "rec": "četvorougao"
+      }
     },
     {
       "tezina": 1,
