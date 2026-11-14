@@ -596,7 +596,7 @@
       "pitanje": "Ovaj prosvetitelj bio je prvi ministar prosvete (popečitelj) u Srbiji. Ko je on?",
       "mediji": {
         "vrsta": "slika",
-        "src": "slike/dositej.jpg"
+        "src": "slike/dositej.png"
       },
       "odgovori": [
         "Dositej Obradović",
@@ -3124,6 +3124,4155 @@
         ]
       },
       "rec": "pobeda"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako su se zvali odmetnuti janičarski zapovednici koji su 1801. ubili beogradskog vezira i preuzeli vlast u ovom pašaluku?",
+      "mediji": {
+        "vrsta": "mapa",
+        "karta": "srbija-1833",
+        "istakni": [
+          "pasaluk"
+        ],
+        "tacke": [
+          {
+            "lat": 44.82,
+            "lon": 20.46,
+            "oznaka": "Beograd"
+          }
+        ],
+        "legenda": [
+          [
+            "#3d7fd9",
+            "Beogradski pašaluk"
+          ],
+          [
+            "#c0504d",
+            "Osmansko carstvo"
+          ],
+          [
+            "#c99a2e",
+            "Habzburška monarhija"
+          ]
+        ]
+      },
+      "odgovori": [
+        "Dahije",
+        "Spahije",
+        "Kadije",
+        "Beglerbezi"
+      ],
+      "zanimljivost": "Bile su četvorica: Kučuk-Alija, Aganlija, Mula-Jusuf i Mehmed-aga Fočić. Ubili su Hadži Mustafa-pašu, koga su Srbi zvali „srpska majka“ jer je bio blag prema raji. Čak je i sultan smatrao dahije odmetnicima – zato su ustanici u početku tvrdili da se bune protiv dahija, a ne protiv cara.",
+      "medijiOdgovora": {
+        "vrsta": "lenta",
+        "od": 1790,
+        "do": 1806,
+        "dogadjaji": [
+          {
+            "g": 1791,
+            "t": "Svištovski mir"
+          },
+          {
+            "g": 1793,
+            "t": "Hadži Mustafa-paša"
+          },
+          {
+            "g": 1801,
+            "t": "dahije ubijaju vezira",
+            "ist": true
+          },
+          {
+            "g": 1804,
+            "t": "Seča knezova"
+          },
+          {
+            "g": 1804,
+            "t": "Orašac",
+            "n": "feb. 1804."
+          }
+        ]
+      },
+      "rec": "dahije"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koji je događaj s početka 1804. godine, prikazan na ovom crtežu, bio neposredan povod za Prvi srpski ustanak?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/seca-knezova.jpg"
+      },
+      "odgovori": [
+        "Seča knezova",
+        "Pad Smedereva",
+        "Boj na Čegru",
+        "Kočina krajina"
+      ],
+      "zanimljivost": "Dahije su ubile više desetina uglednih srpskih knezova i sveštenika, jer su se bojale pobune. Među njima su bili valjevski knez Aleksa Nenadović i Ilija Birčanin. Postigle su suprotno: narod je shvatio da nikome nema sigurnosti i za samo nekoliko nedelja podigao ustanak.",
+      "medijiOdgovora": {
+        "vrsta": "lenta",
+        "od": 1801,
+        "do": 1805,
+        "dogadjaji": [
+          {
+            "g": 1801.5,
+            "t": "dahije na vlasti",
+            "n": "1801."
+          },
+          {
+            "g": 1804.05,
+            "t": "Seča knezova",
+            "n": "jan. 1804.",
+            "ist": true
+          },
+          {
+            "g": 1804.12,
+            "t": "Zbor u Orašcu",
+            "n": "feb. 1804."
+          },
+          {
+            "g": 1804.6,
+            "t": "pogubljenje dahija",
+            "n": "avg. 1804."
+          }
+        ]
+      },
+      "rec": "knez"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Prema predanju, na zboru u Orašcu vođstvo je prvo ponuđeno jednom čuvenom hajduku, ali je on odbio, jer „narod neće verovati hajduku“. Ko je to bio?",
+      "mediji": {
+        "vrsta": "mapa",
+        "karta": "srbija-1833",
+        "tacke": [
+          {
+            "lat": 44.33,
+            "lon": 20.6,
+            "oznaka": "Orašac",
+            "znak": "🔥"
+          }
+        ],
+        "kutija": [
+          19.3,
+          43.4,
+          22.2,
+          45.2
+        ],
+        "bezNatpisa": true,
+        "legenda": []
+      },
+      "odgovori": [
+        "Stanoje Glavaš",
+        "Hajduk Veljko",
+        "Stevan Sinđelić",
+        "Vasa Čarapić"
+      ],
+      "zanimljivost": "Glavaš je predložio Karađorđa, koji je bio ugledan i imao vojničko iskustvo iz austrijske vojske. Odbio je i knez Teodosije Marićević. Glavaš je kasnije bio jedan od najhrabrijih vojvoda, a Turci su ga ubili na prevaru 1815.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/glavas.jpg",
+        "opis": "Stanoje Glavaš"
+      },
+      "rec": "glavaš"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Na koje ostrvo na Dunavu, označeno na mapi, su 1804. pobegle dahije, gde su ih stigli ustanici i pogubili ih?",
+      "mediji": {
+        "vrsta": "mapa",
+        "karta": "srbija-1833",
+        "tacke": [
+          {
+            "lat": 44.72,
+            "lon": 22.46
+          }
+        ],
+        "kutija": [
+          20,
+          43.9,
+          23.3,
+          45.3
+        ],
+        "legenda": []
+      },
+      "odgovori": [
+        "Ada Kale",
+        "Veliko ratno ostrvo",
+        "Ada Ciganlija",
+        "Krčedinska ada"
+      ],
+      "zanimljivost": "Dahije je pogubio vojvoda Milenko Stojković, uz pristanak turskog vezira, jer je i sultan želeo da ih se reši. Ada Kale je bila utvrđeno ostrvo kod Oršave, sa džamijom i bazarom. Potopljeno je 1970. kada je izgrađena hidrocentrala Đerdap.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/ada-kale.jpg",
+        "opis": "Ada Kale na staroj gravuri"
+      },
+      "rec": "ada"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Posle koje bitke 1805. godine ustanak više nije bio samo borba protiv dahija, već otvoren rat protiv sultanove vojske?",
+      "mediji": {
+        "vrsta": "mapa",
+        "karta": "srbija-1833",
+        "tacke": [
+          {
+            "lat": 43.93,
+            "lon": 21.4,
+            "znak": "⚔️"
+          }
+        ],
+        "linije": [
+          {
+            "tacke": [
+              [
+                21.9,
+                43.32
+              ],
+              [
+                21.75,
+                43.55
+              ],
+              [
+                21.5,
+                43.8
+              ],
+              [
+                21.42,
+                43.92
+              ]
+            ],
+            "boja": "#c0504d",
+            "strelica": true,
+            "natpis": "Hafiz-paša"
+          }
+        ],
+        "kutija": [
+          19.3,
+          42.9,
+          23,
+          45.2
+        ]
+      },
+      "odgovori": [
+        "Bitke na Ivankovcu",
+        "Boja na Mišaru",
+        "Bitke na Čegru",
+        "Boja na Ljubiću"
+      ],
+      "zanimljivost": "Na Ivankovcu kod Ćuprije ustanici su porazili carsku vojsku niškog Hafiz-paše. Time je ustanak postao rat protiv samog Osmanskog carstva, pa su Srbi počeli da traže pomoć od Rusije.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/ivankovac.jpg",
+        "opis": "Plan bitke na Ivankovcu (1805)"
+      },
+      "rec": "ivankovac"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koji boj iz 1806, kod Šapca, prikazuje ova slika?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/misar.jpg"
+      },
+      "odgovori": [
+        "Boj na Mišaru",
+        "Bitka na Ivankovcu",
+        "Boj na Deligradu",
+        "Bitka na Čegru"
+      ],
+      "zanimljivost": "Na Mišaru je Karađorđe pobedio vojsku koja je stigla iz Bosne. Konjica Luke Lazarevića je u odlučnom trenutku udarila Turcima s boka. Bitku je opevao Filip Višnjić, a u pesmi dva gavrana donose vest ljubi poginulog Kulin-kapetana.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "karta": "srbija-1833",
+        "tacke": [
+          {
+            "lat": 44.72,
+            "lon": 19.66,
+            "oznaka": "Mišar",
+            "znak": "⚔️"
+          }
+        ],
+        "linije": [
+          {
+            "tacke": [
+              [
+                19.1,
+                44.4
+              ],
+              [
+                19.3,
+                44.6
+              ],
+              [
+                19.6,
+                44.7
+              ]
+            ],
+            "boja": "#c0504d",
+            "strelica": true,
+            "natpis": "iz Bosne"
+          }
+        ],
+        "kutija": [
+          18.7,
+          43.9,
+          21.2,
+          45.3
+        ]
+      },
+      "rec": "mišar"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koji ustanički vojvoda je 1806. u šančevima na Deligradu zaustavio veliku tursku vojsku skadarskog paše?",
+      "mediji": {
+        "vrsta": "mapa",
+        "karta": "srbija-1833",
+        "tacke": [
+          {
+            "lat": 43.6,
+            "lon": 21.6,
+            "oznaka": "Deligrad",
+            "znak": "⚔️"
+          }
+        ],
+        "linije": [
+          {
+            "tacke": [
+              [
+                21.9,
+                43.1
+              ],
+              [
+                21.85,
+                43.35
+              ],
+              [
+                21.68,
+                43.55
+              ]
+            ],
+            "boja": "#c0504d",
+            "strelica": true
+          }
+        ],
+        "kutija": [
+          19.8,
+          42.8,
+          23,
+          44.8
+        ]
+      },
+      "odgovori": [
+        "Petar Dobrnjac",
+        "Milenko Stojković",
+        "Jakov Nenadović",
+        "Luka Lazarević"
+      ],
+      "zanimljivost": "Deligrad, između Aleksinca i Ražnja, bio je ključ odbrane doline Morave. Ibrahim-paša Skadarski nedeljama je napadao utvrđeni logor, ali nije uspeo da prodre u Srbiju, pa je pristao na primirje.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/dobrnjac.jpg",
+        "opis": "Petar Dobrnjac"
+      },
+      "rec": "deligrad"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji vojvoda je smrtno ranjen kod Stambol-kapije, kada su ustanici krajem 1806. upali u beogradsku varoš?",
+      "mediji": {
+        "vrsta": "mapa",
+        "karta": "srbija-1833",
+        "tacke": [
+          {
+            "lat": 44.82,
+            "lon": 20.46,
+            "oznaka": "Beograd",
+            "znak": "⚔️"
+          }
+        ],
+        "linije": [
+          {
+            "tacke": [
+              [
+                20.6,
+                44.55
+              ],
+              [
+                20.52,
+                44.72
+              ],
+              [
+                20.47,
+                44.8
+              ]
+            ],
+            "boja": "#3d7fd9",
+            "strelica": true,
+            "natpis": "ustanici"
+          }
+        ],
+        "kutija": [
+          19.6,
+          44.2,
+          21.3,
+          45.1
+        ]
+      },
+      "odgovori": [
+        "Vasa Čarapić",
+        "Hajduk Veljko",
+        "Stanoje Glavaš",
+        "Milan Obrenović"
+      ],
+      "zanimljivost": "Čarapić je sa svojim ljudima jurišao na Stambol-kapiju i tu poginuo. Beogradska varoš je zauzeta krajem 1806, a turska posada u tvrđavi predala se početkom 1807. Po Vasi Čarapiću danas se zove ulica u centru Beograda.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/vasa-carapic.jpg",
+        "opis": "Vasa Čarapić"
+      },
+      "rec": "čarapić"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Kako se zove mirovni sporazum iz 1806. koji su ustanici na kraju odbili, jer im je Rusija obećala pomoć?",
+      "mediji": {
+        "vrsta": "lenta",
+        "od": 1804,
+        "do": 1813,
+        "dogadjaji": [
+          {
+            "g": 1804,
+            "t": "ustanak"
+          },
+          {
+            "g": 1805,
+            "t": "Ivankovac"
+          },
+          {
+            "g": 1806,
+            "t": "?",
+            "ist": true
+          },
+          {
+            "g": 1807,
+            "t": "savez sa Rusijom"
+          },
+          {
+            "g": 1812,
+            "t": "Bukureštanski mir"
+          }
+        ]
+      },
+      "odgovori": [
+        "Ičkov mir",
+        "Bukureštanski mir",
+        "Svištovski mir",
+        "Jedrenski mir"
+      ],
+      "zanimljivost": "Mir je ispregovarao Petar Ičko, rodom iz Makedonije, iskusni trgovac i diplomata. Srbija bi dobila široku samoupravu, ali je Rusija upravo zaratila sa Turskom i ponudila savez, pa su ustanici nastavili rat. Ičko je kasnije umro – verovatno otrovan.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/petar-icko.jpg",
+        "opis": "Petar Ičko"
+      },
+      "rec": "ičko"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji sveštenik i ustanički vojvoda je bio prvi predsednik Praviteljstvujuščeg sovjeta i napisao čuvene „Memoare“ o ustanku?",
+      "odgovori": [
+        "Prota Mateja Nenadović",
+        "Hadži-Ruvim",
+        "Prota Atanasije",
+        "Hadži Đera"
+      ],
+      "zanimljivost": "Prota Mateja bio je sin kneza Alekse Nenadovića, ubijenog u Seči knezova. Kao diplomata putovao je u Rusiju da traži pomoć. Njegovi „Memoari“, pisani živim narodnim jezikom, i danas su jedan od najvažnijih izvora o ustanku.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/mateja-nenadovic.jpg",
+        "opis": "Prota Mateja Nenadović"
+      },
+      "rec": "prota"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kakvu je titulu nosio Karađorđe kao vrhovni vođa ustanka?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/karadjordje.jpg"
+      },
+      "odgovori": [
+        "Vožd",
+        "Despot",
+        "Kralj",
+        "Ban"
+      ],
+      "zanimljivost": "„Vožd“ je stara reč za vođu. Skupština ga je 1808. proglasila za „vrhovnog nasledstvenog voždа“, što znači da je vlast trebalo da pređe na njegove potomke. Od njegovog unuka Petra potiču kraljevi Karađorđevići.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/karadjordjeva-zvezda.jpg",
+        "opis": "Orden Karađorđeve zvezde (ustanovljen 1904)"
+      },
+      "rec": "vožd"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "U kom ratu je Karađorđe, kao austrijski dobrovoljac (frajkor), stekao vojničko iskustvo pre ustanka?",
+      "mediji": {
+        "vrsta": "lenta",
+        "od": 1780,
+        "do": 1810,
+        "dogadjaji": [
+          {
+            "g": 1788,
+            "t": "?",
+            "ist": true
+          },
+          {
+            "g": 1791,
+            "t": "Svištovski mir"
+          },
+          {
+            "g": 1801,
+            "t": "dahije"
+          },
+          {
+            "g": 1804,
+            "t": "Prvi ustanak"
+          }
+        ],
+        "periodi": [
+          {
+            "od": 1788,
+            "do": 1791,
+            "t": "rat",
+            "boja": "#c99a2e"
+          }
+        ]
+      },
+      "odgovori": [
+        "U Kočinoj krajini (1788–1791)",
+        "U Krimskom ratu (1853–1856)",
+        "U Napoleonovim ratovima (1805)",
+        "U Bečkom ratu (1683–1699)"
+      ],
+      "zanimljivost": "Kočina krajina je deo Austrijsko-turskog rata, nazvan po kapetanu Koči Anđelkoviću, koji je sa srpskim dobrovoljcima oslobodio deo Šumadije i Pomoravlja. Kada su Austrijanci sklopili mir, Srbi su ostali sami – to iskustvo je ustanike naučilo da ne veruju lako obećanjima velikih sila.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/koca-andjelkovic.jpg",
+        "opis": "Koča Anđelković"
+      },
+      "rec": "frajkor"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Ko je napisao pesmu „Vostani Serbije“, kojom je pozdravio ustanak?",
+      "mediji": {
+        "vrsta": "citat",
+        "tekst": "„Vostani Serbije! Davno si zaspala, u mraku ležala…“"
+      },
+      "odgovori": [
+        "Dositej Obradović",
+        "Vuk Karadžić",
+        "Filip Višnjić",
+        "Jovan Sterija Popović"
+      ],
+      "zanimljivost": "Dositej je pesmu napisao 1804. u Trstu, čim je čuo za ustanak. Kasnije je i sam došao u Srbiju, osnovao Veliku školu (1808) i postao prvi ministar prosvete. Sahranjen je ispred Saborne crkve u Beogradu, pored Vuka Karadžića.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/dositej.png",
+        "opis": "Dositej Obradović"
+      },
+      "rec": "dositej"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Ko je ovaj slepi guslar, koji je opevao „Početak bune protiv dahija“ i „Boj na Mišaru“?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/visnjic.jpg"
+      },
+      "odgovori": [
+        "Filip Višnjić",
+        "Tešan Podrugović",
+        "Starac Milija",
+        "Starac Raško"
+      ],
+      "zanimljivost": "Višnjić je oslepeo kao dete od boginja. Sa guslama je obilazio ustaničke logore i hrabrio borce. Vuk Karadžić je zapisao njegove pesme i smatrao ga jednim od najboljih narodnih pevača.",
+      "medijiOdgovora": {
+        "vrsta": "citat",
+        "tekst": "„Bože mili! Čuda velikoga! / Kad se šćaše po zemlji Srbiji / po Srbiji zemlji da prevrne / i da druga postane sudija…“"
+      },
+      "rec": "gusle"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kod kog grada je 1809. vođena bitka na Čegru, u kojoj je Stevan Sinđelić poginuo dižući u vazduh barutni magacin?",
+      "mediji": {
+        "vrsta": "mapa",
+        "karta": "srbija-1833",
+        "tacke": [
+          {
+            "lat": 43.36,
+            "lon": 21.95,
+            "znak": "💥"
+          }
+        ],
+        "linije": [
+          {
+            "tacke": [
+              [
+                21.37,
+                43.93
+              ],
+              [
+                21.6,
+                43.65
+              ],
+              [
+                21.88,
+                43.42
+              ]
+            ],
+            "boja": "#3d7fd9",
+            "strelica": true,
+            "natpis": "srpska vojska"
+          }
+        ],
+        "kutija": [
+          19.6,
+          42.6,
+          23.3,
+          44.6
+        ]
+      },
+      "odgovori": [
+        "Niša",
+        "Negotina",
+        "Kruševca",
+        "Šapca"
+      ],
+      "zanimljivost": "Srpska vojska je krenula da oslobodi Niš, ali je napad propao. Sinđelić je, opkoljen u šancu, pucao u bure baruta i poginuo zajedno sa napadačima. Od lobanja palih Srba Turci su sazidali Ćele-kulu, koja i danas stoji u Nišu.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/cegar.jpg",
+        "opis": "Boj na Čegru"
+      },
+      "rec": "čegar"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako je 1813. poginuo Hajduk Veljko, branilac Negotina?",
+      "mediji": {
+        "vrsta": "mapa",
+        "karta": "srbija-1833",
+        "tacke": [
+          {
+            "lat": 44.23,
+            "lon": 22.53,
+            "oznaka": "Negotin",
+            "znak": "💥"
+          }
+        ],
+        "linije": [
+          {
+            "tacke": [
+              [
+                22.9,
+                43.99
+              ],
+              [
+                22.7,
+                44.1
+              ],
+              [
+                22.57,
+                44.2
+              ]
+            ],
+            "boja": "#c0504d",
+            "strelica": true,
+            "natpis": "iz Vidina"
+          }
+        ],
+        "kutija": [
+          21.2,
+          43.6,
+          23.3,
+          44.9
+        ]
+      },
+      "odgovori": [
+        "Pogodilo ga je topovsko đule",
+        "Ubijen je u dvoboju",
+        "Udavio se u Dunavu",
+        "Umro je od kuge"
+      ],
+      "zanimljivost": "Veljko je danima obilazio šančeve i hrabrio branioce, iako je opsada trajala sedmicama. Kada je đule ubilo Veljka, branioci su izdržali još malo, pa se povukli. Negotin je pao, a ubrzo je slomljen i ceo ustanak.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/hajduk-veljko.jpg",
+        "opis": "Hajduk Veljko Petrović"
+      },
+      "rec": "veljko"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Kojim mirom Rusije i Turske iz 1812. je Srbima obećana samouprava (u čuvenom članu 8)?",
+      "mediji": {
+        "vrsta": "lenta",
+        "od": 1804,
+        "do": 1815,
+        "dogadjaji": [
+          {
+            "g": 1804,
+            "t": "početak ustanka"
+          },
+          {
+            "g": 1807,
+            "t": "savez sa Rusijom"
+          },
+          {
+            "g": 1812.4,
+            "t": "?",
+            "n": "maj 1812.",
+            "ist": true
+          },
+          {
+            "g": 1812.5,
+            "t": "Napoleon napada Rusiju",
+            "n": "jun 1812."
+          },
+          {
+            "g": 1813.7,
+            "t": "slom ustanka",
+            "n": "1813."
+          }
+        ]
+      },
+      "odgovori": [
+        "Bukureštanskim mirom",
+        "Londonskim mirom",
+        "Berlinskim mirom",
+        "Jedrenskim mirom"
+      ],
+      "zanimljivost": "Rusija je žurila da sklopi mir, jer je Napoleon spremao napad na nju. Obećanje je bilo nejasno, a ruska vojska se povukla – Srbi su ostali sami. Turci su sledeće godine napali i ugušili ustanak. Pazi: postoji i Bukureštanski mir iz 1913, posle Drugog balkanskog rata!",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/bukurest-1812.png",
+        "opis": "Ruske granice posle mira 1812"
+      },
+      "rec": "mir"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Pogledaj kako se kreću turske vojske na karti. Koje godine je ovim napadom sa tri strane slomljen Prvi srpski ustanak?",
+      "mediji": {
+        "vrsta": "mapa",
+        "karta": "srbija-1833",
+        "tacke": [
+          {
+            "lat": 44.82,
+            "lon": 20.46,
+            "oznaka": "Beograd"
+          }
+        ],
+        "linije": [
+          {
+            "tacke": [
+              [
+                19.1,
+                44.2
+              ],
+              [
+                19.4,
+                44.4
+              ],
+              [
+                19.8,
+                44.6
+              ],
+              [
+                20.3,
+                44.75
+              ]
+            ],
+            "boja": "#c0504d",
+            "strelica": true,
+            "natpis": "iz Bosne"
+          },
+          {
+            "tacke": [
+              [
+                21.9,
+                43.32
+              ],
+              [
+                21.6,
+                43.75
+              ],
+              [
+                21.25,
+                44.1
+              ],
+              [
+                20.75,
+                44.55
+              ]
+            ],
+            "boja": "#c0504d",
+            "strelica": true,
+            "kasni": 0.8,
+            "natpis": "iz Niša"
+          },
+          {
+            "tacke": [
+              [
+                22.9,
+                43.99
+              ],
+              [
+                22.55,
+                44.2
+              ],
+              [
+                22.1,
+                44.45
+              ]
+            ],
+            "boja": "#c0504d",
+            "strelica": true,
+            "kasni": 1.6,
+            "natpis": "iz Vidina"
+          }
+        ],
+        "legenda": [
+          [
+            "#3d7fd9",
+            "Beogradski pašaluk"
+          ],
+          [
+            "#86b5ef",
+            "oslobođeno van pašaluka (približno)"
+          ]
+        ]
+      },
+      "odgovori": [
+        "1813.",
+        "1809.",
+        "1815.",
+        "1806."
+      ],
+      "zanimljivost": "Turske vojske su krenule iz Bosne (preko Drine), iz Niša (dolinom Morave) i iz Vidina (na Krajinu). Karađorđe i većina vođa prešli su u Austriju, a Turci su ponovo zauzeli Beograd. Narod se našao u strašnoj odmazdi, ali je ideja slobodne Srbije preživela.",
+      "medijiOdgovora": {
+        "vrsta": "lenta",
+        "od": 1804,
+        "do": 1815,
+        "dogadjaji": [
+          {
+            "g": 1804,
+            "t": "Orašac"
+          },
+          {
+            "g": 1806,
+            "t": "Mišar"
+          },
+          {
+            "g": 1809,
+            "t": "Čegar"
+          },
+          {
+            "g": 1812,
+            "t": "Bukureštanski mir"
+          },
+          {
+            "g": 1813,
+            "t": "slom ustanka",
+            "ist": true
+          },
+          {
+            "g": 1815,
+            "t": "Drugi ustanak"
+          }
+        ],
+        "periodi": [
+          {
+            "od": 1804,
+            "do": 1813,
+            "t": "Prvi srpski ustanak",
+            "boja": "#3d7fd9"
+          }
+        ]
+      },
+      "rec": "slom"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Od čega su ustanici pravili čuvene topove „trešnjevke“?",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "🌳🍒 ➕ ⛓️ = 💥"
+      },
+      "odgovori": [
+        "Od izdubljenih stabala trešnje",
+        "Od crkvenih zvona",
+        "Od turskih topova",
+        "Od gvozdenih plugova"
+      ],
+      "zanimljivost": "Kada nisu imali dovoljno pravih topova, ustanici su dubili deblo trešnje i obavijali ga gvozdenim obručima. Takav top mogao je da ispali samo nekoliko hitaca, ali je plašio neprijatelja i rušio palisade. Kasnije su topove nabavljali iz Austrije i Rusije i livali sopstvene.",
+      "rec": "trešnja"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koja je velika sila od 1807. pomagala srpske ustanike vojskom, novcem i oružjem?",
+      "odgovori": [
+        "Rusija",
+        "Francuska",
+        "Engleska",
+        "Austrija"
+      ],
+      "zanimljivost": "Ruske trupe borile su se zajedno sa Srbima, a u Beogradu je bio ruski predstavnik Rodofinikin. Ali Rusija je vodila i ratove sa Napoleonom, pa je 1812. morala da se povuče sa Balkana.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "karta": "evropa-1812",
+        "legenda": []
+      },
+      "rec": "rusija"
+    },
+    {
+      "vrsta": "uljez",
+      "tezina": 1,
+      "pitanje": "Koji događaj NIJE iz Prvog srpskog ustanka?",
+      "odgovori": [
+        "Boj na Ljubiću",
+        "Boj na Mišaru",
+        "Bitka na Ivankovcu",
+        "Bitka na Čegru"
+      ],
+      "objasnjenje": "Boj na Ljubiću (1815) je iz Drugog srpskog ustanka; ostale tri bitke su iz Prvog.",
+      "zanimljivost": "Na Ljubiću se ratovalo 1815, u Drugom ustanku – tamo je poginuo Tanasko Rajić. Mišar (1806), Ivankovac (1805) i Čegar (1809) su bitke Prvog ustanka.",
+      "medijiOdgovora": {
+        "vrsta": "lenta",
+        "od": 1804,
+        "do": 1816,
+        "dogadjaji": [
+          {
+            "g": 1805,
+            "t": "Ivankovac"
+          },
+          {
+            "g": 1806,
+            "t": "Mišar"
+          },
+          {
+            "g": 1809,
+            "t": "Čegar"
+          },
+          {
+            "g": 1815,
+            "t": "Ljubić",
+            "ist": true
+          }
+        ],
+        "periodi": [
+          {
+            "od": 1804,
+            "do": 1813,
+            "t": "Prvi ustanak",
+            "boja": "#3d7fd9"
+          },
+          {
+            "od": 1815,
+            "do": 1815.6,
+            "t": "Drugi",
+            "boja": "#20a88f"
+          }
+        ]
+      },
+      "rec": "ljubić"
+    },
+    {
+      "vrsta": "spoji",
+      "tezina": 2,
+      "pitanje": "Spoji ustaničkog junaka sa mestom gde je proslavljen",
+      "parovi": [
+        [
+          "Hajduk Veljko",
+          "Negotin"
+        ],
+        [
+          "Stevan Sinđelić",
+          "Čegar"
+        ],
+        [
+          "Vasa Čarapić",
+          "Stambol-kapija"
+        ],
+        [
+          "Petar Dobrnjac",
+          "Deligrad"
+        ]
+      ],
+      "zanimljivost": "Sva četvorica imaju ulice u Beogradu, a Hajduk Veljko i Sinđelić i spomenike u gradovima koje su branili – Negotinu i Nišu.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "karta": "srbija-1833",
+        "tacke": [
+          {
+            "lat": 44.23,
+            "lon": 22.53,
+            "oznaka": "Negotin",
+            "znak": "⚔️"
+          },
+          {
+            "lat": 43.36,
+            "lon": 21.95,
+            "oznaka": "Čegar",
+            "znak": "⚔️"
+          },
+          {
+            "lat": 44.82,
+            "lon": 20.46,
+            "oznaka": "Beograd",
+            "znak": "⚔️"
+          },
+          {
+            "lat": 43.6,
+            "lon": 21.6,
+            "oznaka": "Deligrad",
+            "znak": "⚔️"
+          }
+        ]
+      },
+      "rec": "junak"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kako su se zvali Srbi koji su se pre ustanka odmetali u šume i napadali turske nasilnike?",
+      "mediji": {
+        "vrsta": "citat",
+        "tekst": "„Đurđevdan – hajdučki sastanak, Mitrovdan – hajdučki rastanak“"
+      },
+      "odgovori": [
+        "Hajduci",
+        "Uskoci",
+        "Frajkori",
+        "Krdžalije"
+      ],
+      "zanimljivost": "Hajduci su leto provodili u šumi, a zimu kod jataka – ljudi koji su ih skrivali i hranili. Krdžalije su, naprotiv, bile turske razbojničke čete, a uskoci prebezi koji su se borili iz Austrije i Venecije. Mnogi ustanički vojvode, kao Glavaš i Veljko, bili su hajduci.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/hajduk-veljko.jpg",
+        "opis": "Hajduk Veljko"
+      },
+      "rec": "hajduk"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Pogledaj lentu: koliko je godina trajao Prvi srpski ustanak?",
+      "mediji": {
+        "vrsta": "lenta",
+        "od": 1800,
+        "do": 1820,
+        "dogadjaji": [
+          {
+            "g": 1804,
+            "t": "Orašac"
+          },
+          {
+            "g": 1813,
+            "t": "slom"
+          },
+          {
+            "g": 1815,
+            "t": "Takovo"
+          }
+        ],
+        "periodi": [
+          {
+            "od": 1804,
+            "do": 1813,
+            "t": "?",
+            "boja": "#3d7fd9"
+          }
+        ]
+      },
+      "odgovori": [
+        "Oko devet godina",
+        "Oko tri godine",
+        "Oko petnaest godina",
+        "Oko jedne godine"
+      ],
+      "zanimljivost": "Ustanak je trajao od 1804. do 1813. Za to vreme Srbija je imala svoju vladu (Sovjet), vojsku, sudove i Veliku školu – bila je prava država, iako je nijedna sila nije priznala.",
+      "medijiOdgovora": {
+        "vrsta": "lenta",
+        "od": 1800,
+        "do": 1820,
+        "dogadjaji": [
+          {
+            "g": 1804,
+            "t": "Orašac"
+          },
+          {
+            "g": 1808,
+            "t": "Velika škola"
+          },
+          {
+            "g": 1813,
+            "t": "slom"
+          },
+          {
+            "g": 1815,
+            "t": "Takovo"
+          }
+        ],
+        "periodi": [
+          {
+            "od": 1804,
+            "do": 1813,
+            "t": "Prvi ustanak – 9 godina",
+            "boja": "#3d7fd9"
+          },
+          {
+            "od": 1815,
+            "do": 1815.6,
+            "t": "",
+            "boja": "#20a88f"
+          }
+        ]
+      },
+      "rec": "ustanak"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zove mesto u Orašcu gde je na Sretenje 1804. održan zbor na kome je Karađorđe izabran za vođu ustanka?",
+      "mediji": {
+        "vrsta": "mapa",
+        "karta": "srbija-1833",
+        "tacke": [
+          {
+            "lat": 44.33,
+            "lon": 20.6,
+            "oznaka": "Orašac",
+            "znak": "🔥"
+          },
+          {
+            "lat": 44.82,
+            "lon": 20.46,
+            "oznaka": "Beograd"
+          }
+        ],
+        "kutija": [
+          19.6,
+          43.8,
+          21.4,
+          45
+        ],
+        "legenda": []
+      },
+      "odgovori": [
+        "Marićevića jaruga",
+        "Radovanjski lug",
+        "Takovski grm",
+        "Crni vrh"
+      ],
+      "zanimljivost": "Jaruga je dubok, šumom zaklonjen jarak, pa su se ustanici tu mogli okupiti daleko od turskih očiju. Nazvana je po porodici Marić (Marićević). Danas je to spomen-kompleks „Orašac“, a Sretenje (15. februar) je Dan državnosti Srbije.",
+      "rec": "jaruga"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zove pobuna koja je izbila 1814, između dva ustanka, a koju Miloš Obrenović nije podržao?",
+      "mediji": {
+        "vrsta": "lenta",
+        "od": 1812,
+        "do": 1816,
+        "dogadjaji": [
+          {
+            "g": 1813.7,
+            "t": "slom Prvog ustanka",
+            "n": "1813."
+          },
+          {
+            "g": 1814.7,
+            "t": "?",
+            "n": "jesen 1814.",
+            "ist": true
+          },
+          {
+            "g": 1815.3,
+            "t": "Takovo",
+            "n": "1815."
+          }
+        ]
+      },
+      "odgovori": [
+        "Hadži-Prodanova buna",
+        "Takovski ustanak",
+        "Timočka buna",
+        "Kočina krajina"
+      ],
+      "zanimljivost": "Hadži Prodan Gligorijević digao je bunu u okolini Trnave kod Čačka, ali je ona brzo ugušena. Miloš je procenio da je prerano i nije joj se pridružio. Posle bune usledila je strašna odmazda, pa je narod već sledeće godine bio spreman za novi ustanak.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/hadzi-prodan.jpg",
+        "opis": "Hadži Prodan Gligorijević"
+      },
+      "rec": "buna"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Na koji praznik 1815. je u Takovu podignut Drugi srpski ustanak, prikazan na slici Paje Jovanovića?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/takovski-ustanak.jpg"
+      },
+      "odgovori": [
+        "Na Cveti",
+        "Na Vidovdan",
+        "Na Sretenje",
+        "Na Božić"
+      ],
+      "zanimljivost": "Miloš se pojavio pred narodom ispred crkve u Takovu, u svečanom odelu, i razvio zastavu. Paja Jovanović je ovu sliku naslikao 1894. Danas je Takovo deo opštine Gornji Milanovac, a Prvi ustanak počeo je na Sretenje 1804.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "karta": "srbija-1833",
+        "tacke": [
+          {
+            "lat": 44.03,
+            "lon": 20.36,
+            "oznaka": "Takovo",
+            "znak": "🚩"
+          },
+          {
+            "lat": 44.33,
+            "lon": 20.6,
+            "oznaka": "Orašac",
+            "znak": "🔥"
+          }
+        ],
+        "kutija": [
+          19.3,
+          43.5,
+          21.8,
+          45
+        ],
+        "legenda": []
+      },
+      "rec": "cveti"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Ko je, prema predanju, rekao narodu u Takovu: „Evo mene, evo vas, eto vam rata s Turcima!“?",
+      "mediji": {
+        "vrsta": "citat",
+        "tekst": "„Evo mene, evo vas, eto vam rata s Turcima!“"
+      },
+      "odgovori": [
+        "Miloš Obrenović",
+        "Karađorđe Petrović",
+        "Hajduk Veljko",
+        "Prota Mateja Nenadović"
+      ],
+      "zanimljivost": "Miloš je bio vojvoda u Prvom ustanku, ali 1813. nije pobegao preko granice – ostao je sa narodom i od Turaka dobio zvanje obor-kneza. Zato je 1815. bio jedini ugledni vođa u zemlji koji je mogao da povede ustanak.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/milos-obrenovic.jpg",
+        "opis": "Knez Miloš Obrenović"
+      },
+      "rec": "miloš"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Kako se zvao Miloš Obrenović pre nego što je uzeo prezime Obrenović?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/milos-star.jpg"
+      },
+      "odgovori": [
+        "Miloš Teodorović",
+        "Miloš Petrović",
+        "Miloš Nenadović",
+        "Miloš Lazarević"
+      ],
+      "zanimljivost": "Milošev otac bio je Teša (Teodor). Majka Višnja je iz prvog braka sa Obrenom imala sina Milana, poznatog vojvodu Prvog ustanka. Miloš je toliko poštovao starijeg polubrata da je uzeo njegovo prezime – Obrenović.",
+      "rec": "obrenović"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji je junak, prikazan na slici, poginuo 1815. u boju na Ljubiću kod Čačka braneći srpske topove?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/tanasko-rajic.jpg"
+      },
+      "odgovori": [
+        "Tanasko Rajić",
+        "Stevan Sinđelić",
+        "Vasa Čarapić",
+        "Hajduk Veljko"
+      ],
+      "zanimljivost": "Rajić je bio barjaktar i topčija. Kada su Turci upali u šanac, nije hteo da napusti topove i borio se do smrti. U istom boju poginuo je i turski zapovednik Imšir-paša. Spomenik Tanasku Rajiću stoji na Ljubiću.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "karta": "srbija-1833",
+        "tacke": [
+          {
+            "lat": 43.89,
+            "lon": 20.36,
+            "oznaka": "Ljubić",
+            "znak": "⚔️"
+          },
+          {
+            "lat": 44.66,
+            "lon": 20.2,
+            "oznaka": "Palež",
+            "znak": "⚔️"
+          },
+          {
+            "lat": 44.62,
+            "lon": 21.19,
+            "oznaka": "Požarevac",
+            "znak": "⚔️"
+          },
+          {
+            "lat": 44.8,
+            "lon": 19.53,
+            "oznaka": "Dublje",
+            "znak": "⚔️"
+          }
+        ],
+        "kutija": [
+          19,
+          43.4,
+          21.9,
+          45.1
+        ],
+        "legenda": []
+      },
+      "rec": "top"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Sa kojim turskim pašom je Miloš 1815. postigao usmeni sporazum, koji je Srbima dao prvu samoupravu?",
+      "odgovori": [
+        "Marašli Ali-pašom",
+        "Hafiz-pašom",
+        "Ibrahim-pašom Skadarskim",
+        "Kučuk-Alijom"
+      ],
+      "zanimljivost": "Po dogovoru, Srbi su sami skupljali porez, a u svakoj nahiji su pored turskog muselima sedeli i srpski knezovi. Sporazum nije bio zapisan, ali je bio početak srpske autonomije. Miloš je borbu nastavio diplomatijom – i poklonima turskim velikodostojnicima.",
+      "medijiOdgovora": {
+        "vrsta": "lenta",
+        "od": 1813,
+        "do": 1835,
+        "dogadjaji": [
+          {
+            "g": 1815.3,
+            "t": "Takovo",
+            "n": "1815."
+          },
+          {
+            "g": 1815.8,
+            "t": "?",
+            "ist": true,
+            "n": "1815."
+          },
+          {
+            "g": 1817,
+            "t": "Miloš knez"
+          },
+          {
+            "g": 1830,
+            "t": "hatišerif"
+          },
+          {
+            "g": 1833,
+            "t": "šest nahija"
+          }
+        ]
+      },
+      "rec": "paša"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Zašto su Turci 1815. relativno brzo popustili Srbima u Drugom ustanku?",
+      "mediji": {
+        "vrsta": "lenta",
+        "od": 1812,
+        "do": 1817,
+        "dogadjaji": [
+          {
+            "g": 1812.5,
+            "t": "Napoleon u Rusiji",
+            "n": "1812."
+          },
+          {
+            "g": 1815.3,
+            "t": "Takovo",
+            "n": "1815."
+          },
+          {
+            "g": 1815.47,
+            "t": "Vaterlo",
+            "ist": true,
+            "n": "jun 1815."
+          },
+          {
+            "g": 1815.9,
+            "t": "sporazum",
+            "n": "1815."
+          }
+        ]
+      },
+      "odgovori": [
+        "Rusija je, posle pobede nad Napoleonom, mogla da ih pritisne",
+        "Sultan je bio teško bolestan i nije mogao da vlada",
+        "Austrija je objavila rat Osmanskom carstvu",
+        "Turska vojska je bila zauzeta u Egiptu"
+      ],
+      "zanimljivost": "Napoleon je konačno poražen kod Vaterloa u junu 1815. Rusija, jedna od pobednica, sada je imala slobodne ruke na Balkanu. Turci nisu želeli novi rat sa Rusijom, pa su pristali na pregovore sa Milošem.",
+      "rec": "napoleon"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koje godine je Narodna skupština proglasila Miloša Obrenovića za naslednog kneza – iste godine kada je ubijen Karađorđe?",
+      "mediji": {
+        "vrsta": "lenta",
+        "od": 1810,
+        "do": 1840,
+        "dogadjaji": [
+          {
+            "g": 1813,
+            "t": "slom ustanka"
+          },
+          {
+            "g": 1815,
+            "t": "Takovo"
+          },
+          {
+            "g": 1817,
+            "t": "?",
+            "ist": true
+          },
+          {
+            "g": 1830,
+            "t": "hatišerif"
+          },
+          {
+            "g": 1835,
+            "t": "Sretenjski ustav"
+          }
+        ]
+      },
+      "odgovori": [
+        "1817.",
+        "1804.",
+        "1830.",
+        "1839."
+      ],
+      "zanimljivost": "Karađorđe se tajno vratio iz Rusije u leto 1817. da pripremi novi ustanak. Miloš se bojao da će to dovesti do turske odmazde (i da će izgubiti vlast), pa je naredio da se vožd ubije. Tako je počelo dugo neprijateljstvo dinastija Karađorđević i Obrenović.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/karadjordje.jpg",
+        "opis": "Karađorđe – ubijen 1817. u Radovanjskom lugu"
+      },
+      "rec": "knez"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Kojim ugovorom Rusije i Turske iz 1826. je Turska ponovo obećala da će ispuniti obaveze prema Srbiji?",
+      "odgovori": [
+        "Akermanskom konvencijom",
+        "Bečkim kongresom",
+        "Pariskim mirom",
+        "Ičkovim mirom"
+      ],
+      "zanimljivost": "Konvencija je sklopljena u tvrđavi Akerman kod ušća Dnjestra (danas Bilhorod-Dnjistrovskij u Ukrajini). Turska ju je odugovlačila, pa je tek posle novog poraza od Rusije (Jedrenski mir 1829) izdala hatišerife 1830. i 1833.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/akerman.jpg",
+        "opis": "Tvrđava Akerman, gde je 1826. potpisana konvencija"
+      },
+      "rec": "akerman"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Ovo je tugra – potpis sultana Mahmuda II, kojim je počinjao svaki hatišerif. Koliko nahija je pripojeno Srbiji hatišerifom iz 1833?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/hatiserif.gif"
+      },
+      "odgovori": [
+        "Šest",
+        "Dve",
+        "Deset",
+        "Četiri"
+      ],
+      "zanimljivost": "To su krajevi oslobođeni u Prvom ustanku, a izgubljeni 1813: Krajina, Crna Reka, Paraćin, Kruševac, Stari Vlah i Jadar sa Rađevinom. Granice Kneževine Srbije su tada određene i ostale iste do 1878.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "karta": "srbija-1833",
+        "istakni": [
+          "srbija1833"
+        ]
+      },
+      "rec": "nahija"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "U kom delu Beograda je ovaj konak kneza Miloša, danas muzej?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/milos-konak.jpg"
+      },
+      "odgovori": [
+        "U Topčideru",
+        "Na Kalemegdanu",
+        "Na Dedinju",
+        "U Zemunu"
+      ],
+      "zanimljivost": "Konak je sagrađen 1831–1834. Ispred njega raste platan star preko 150 godina, jedan od najvećih u Evropi. Knez Miloš je ovde proveo poslednje godine i umro 1860. Konak je danas deo Istorijskog muzeja Srbije.",
+      "rec": "konak"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koja tvrdnja o knezu Milošu Obrenoviću je TAČNA?",
+      "odgovori": [
+        "Nije znao da čita i piše",
+        "Završio je studije u Beču",
+        "Bio je sveštenik pre ustanka",
+        "Rođen je u Beogradu"
+      ],
+      "zanimljivost": "Miloš je bio nepismen, ali izuzetno pametan i lukav. Pisma je diktirao pisarima. Uprkos tome, stvorio je kneževinu, otvarao škole i doveo u Srbiju obrazovane ljude iz Vojvodine.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/milos-obrenovic.jpg",
+        "opis": "Knez Miloš Obrenović"
+      },
+      "rec": "miloš"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Prema predanju, Miloš je ustanak u Takovu podigao ispod drveta zvanog „grm“. Koje je to drvo?",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "🌳🚩⚔️"
+      },
+      "odgovori": [
+        "Hrast",
+        "Lipa",
+        "Bor",
+        "Bukva"
+      ],
+      "zanimljivost": "„Grm“ je stari naziv za hrast. Pod velikim drvećem kod crkve narod se okupljao na zborove i sabore. Hrast je i danas simbol na grbovima i ordenima, a Takovski krst je bio orden Obrenovića.",
+      "rec": "hrast"
+    },
+    {
+      "vrsta": "spoji",
+      "tezina": 3,
+      "pitanje": "Spoji dokument sa godinom kada je donet",
+      "parovi": [
+        [
+          "Bukureštanski mir (član 8)",
+          "1812."
+        ],
+        [
+          "Akermanska konvencija",
+          "1826."
+        ],
+        [
+          "Prvi hatišerif",
+          "1830."
+        ],
+        [
+          "Sretenjski ustav",
+          "1835."
+        ]
+      ],
+      "zanimljivost": "Za samo 23 godine Srbija je od ugušenog ustanka postala autonomna kneževina sa sopstvenim ustavom – jednim od najliberalnijih u Evropi tog doba.",
+      "medijiOdgovora": {
+        "vrsta": "lenta",
+        "od": 1810,
+        "do": 1840,
+        "dogadjaji": [
+          {
+            "g": 1812,
+            "t": "Bukurešt"
+          },
+          {
+            "g": 1826,
+            "t": "Akerman"
+          },
+          {
+            "g": 1829,
+            "t": "Jedrene"
+          },
+          {
+            "g": 1830,
+            "t": "hatišerif"
+          },
+          {
+            "g": 1835,
+            "t": "ustav"
+          }
+        ]
+      },
+      "rec": "ustav"
+    },
+    {
+      "vrsta": "uljez",
+      "tezina": 1,
+      "pitanje": "Koja država NIJE bila članica Balkanskog saveza koji je 1912. zaratio protiv Osmanskog carstva?",
+      "odgovori": [
+        "Rumunija",
+        "Srbija",
+        "Bugarska",
+        "Grčka"
+      ],
+      "objasnjenje": "Rumunija nije bila u Balkanskom savezu; Srbija, Bugarska, Grčka (i Crna Gora) jesu.",
+      "zanimljivost": "Savez su činile Srbija, Bugarska, Grčka i Crna Gora. Cilj je bio da se Turci konačno isteraju sa Balkana. Rumunija je ostala po strani, ali je u Drugom balkanskom ratu 1913. napala Bugarsku.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "karta": "balkan-1912",
+        "istakni": [
+          "srbija",
+          "cg",
+          "bugarska",
+          "grcka"
+        ]
+      },
+      "rec": "savez"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koja je država prva objavila rat Turskoj, 8. oktobra 1912, i tako započela Prvi balkanski rat?",
+      "mediji": {
+        "vrsta": "lenta",
+        "od": 1912.7,
+        "do": 1913.5,
+        "dogadjaji": [
+          {
+            "g": 1912.77,
+            "t": "?",
+            "n": "8. okt.",
+            "ist": true
+          },
+          {
+            "g": 1912.8,
+            "t": "ostali saveznici",
+            "n": "18. okt."
+          },
+          {
+            "g": 1912.81,
+            "t": "Kumanovo",
+            "n": "23. okt."
+          },
+          {
+            "g": 1913.41,
+            "t": "Londonski mir",
+            "n": "30. maj"
+          }
+        ]
+      },
+      "odgovori": [
+        "Crna Gora",
+        "Srbija",
+        "Bugarska",
+        "Grčka"
+      ],
+      "zanimljivost": "Crna Gora, najmanja članica saveza, prva je zaratila, a deset dana kasnije pridružile su joj se Srbija, Bugarska i Grčka. Rat je objavio kralj Nikola I Petrović, koji je vladao od 1860 – prvo kao knez, a od 1910. kao kralj.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/nikola-prvi.jpg",
+        "opis": "Kralj Nikola I Petrović"
+      },
+      "rec": "gora"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koja srpska armija, pod komandom prestolonaslednika Aleksandra, je odnela pobedu u Kumanovskoj bici 1912?",
+      "mediji": {
+        "vrsta": "mapa",
+        "karta": "balkan-1912",
+        "kutija": [
+          20.3,
+          41.6,
+          23,
+          43
+        ],
+        "tacke": [
+          {
+            "lat": 42.13,
+            "lon": 21.71,
+            "oznaka": "Kumanovo",
+            "znak": "⚔️"
+          },
+          {
+            "lat": 42,
+            "lon": 21.43,
+            "oznaka": "Skoplje"
+          }
+        ],
+        "linije": [
+          {
+            "tacke": [
+              [
+                21.9,
+                42.55
+              ],
+              [
+                21.8,
+                42.35
+              ],
+              [
+                21.73,
+                42.18
+              ]
+            ],
+            "boja": "#3d7fd9",
+            "strelica": true,
+            "natpis": "Prva armija"
+          },
+          {
+            "tacke": [
+              [
+                22.3,
+                42.25
+              ],
+              [
+                22.05,
+                42.2
+              ],
+              [
+                21.8,
+                42.15
+              ]
+            ],
+            "boja": "#3d7fd9",
+            "strelica": true,
+            "kasni": 0.6,
+            "natpis": "Druga"
+          },
+          {
+            "tacke": [
+              [
+                21.43,
+                42
+              ],
+              [
+                21.6,
+                42.08
+              ]
+            ],
+            "boja": "#c0504d",
+            "strelica": true,
+            "kasni": 1.2
+          }
+        ],
+        "legenda": [
+          [
+            "#3d7fd9",
+            "srpska vojska"
+          ],
+          [
+            "#c0504d",
+            "turska Vardarska armija"
+          ]
+        ]
+      },
+      "odgovori": [
+        "Prva armija",
+        "Druga armija",
+        "Treća armija",
+        "Dunavska divizija"
+      ],
+      "zanimljivost": "Načelnik štaba Prve armije bio je Petar Bojović. Pobeda kod Kumanova (23–24. oktobra) otvorila je put ka Skoplju, gde je srpska vojska ušla nekoliko dana kasnije. Narod je ovu bitku doživeo kao „osvetu za Kosovo“.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/kumanovo.jpg",
+        "opis": "Kumanovska bitka – plan operacija"
+      },
+      "rec": "kumanovo"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kod kog grada, označenog na mapi, je srpska vojska u novembru 1912. konačno porazila tursku Vardarsku armiju?",
+      "mediji": {
+        "vrsta": "mapa",
+        "karta": "balkan-1912",
+        "kutija": [
+          18.8,
+          40.5,
+          23.6,
+          43.6
+        ],
+        "tacke": [
+          {
+            "lat": 41.03,
+            "lon": 21.33
+          }
+        ],
+        "bezNatpisa": true,
+        "legenda": []
+      },
+      "odgovori": [
+        "Bitolja",
+        "Ohrida",
+        "Prilepa",
+        "Štipa"
+      ],
+      "zanimljivost": "Bitoljska bitka (16–19. novembra) bila je najveća bitka Prvog balkanskog rata na jugu. Posle nje turska vojska u Makedoniji prestala je da postoji. Srpski vojnici su jurišali preko nabujale reke Crne i na strmi vis Oblakovo, a pobeda je otvorila put ka Ohridu.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/bitolj.png",
+        "opis": "Bitoljska bitka 16–19. novembra 1912"
+      },
+      "rec": "bitolj"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Prati strelicu na mapi: do kog grada na Jadranskom moru je srpska vojska stigla 1912, posle teškog marša preko albanskih planina?",
+      "mediji": {
+        "vrsta": "mapa",
+        "karta": "balkan-1912",
+        "kutija": [
+          18.8,
+          40.5,
+          23.6,
+          43.6
+        ],
+        "tacke": [
+          {
+            "lat": 41.32,
+            "lon": 19.45
+          }
+        ],
+        "bezNatpisa": true,
+        "legenda": [],
+        "linije": [
+          {
+            "tacke": [
+              [
+                20.74,
+                42.21
+              ],
+              [
+                20.42,
+                42.08
+              ],
+              [
+                20,
+                41.95
+              ],
+              [
+                19.64,
+                41.78
+              ],
+              [
+                19.5,
+                41.55
+              ],
+              [
+                19.47,
+                41.36
+              ]
+            ],
+            "boja": "#3d7fd9",
+            "strelica": true,
+            "debljina": 5
+          }
+        ]
+      },
+      "odgovori": [
+        "Drača",
+        "Bara",
+        "Ulcinja",
+        "Valone"
+      ],
+      "zanimljivost": "Srpske jedinice su krenule iz Prizrena i u zimu prešle bespuća severne Albanije. U Drač su ušle krajem novembra 1912. Srbija je tako prvi put posle srednjeg veka izašla na more – ali samo nakratko, jer su Austrougarska i Italija zahtevale da se povuče.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "karta": "balkan-1913",
+        "istakni": [
+          "albanija"
+        ],
+        "tacke": [
+          {
+            "lat": 41.32,
+            "lon": 19.45,
+            "oznaka": "Drač",
+            "znak": "⚓"
+          }
+        ],
+        "kutija": [
+          18.8,
+          40.5,
+          23.6,
+          43.6
+        ]
+      },
+      "rec": "drač"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji grad, označen na mapi, je crnogorska vojska uz pomoć Srbije zauzela 1913, posle duge opsade – ali je morala da ga napusti pod pritiskom velikih sila?",
+      "mediji": {
+        "vrsta": "mapa",
+        "karta": "crna-gora",
+        "tacke": [
+          {
+            "lat": 42.07,
+            "lon": 19.51
+          }
+        ],
+        "legenda": [],
+        "kutija": [
+          18.4,
+          41.5,
+          20.9,
+          43.4
+        ]
+      },
+      "odgovori": [
+        "Skadar",
+        "Drač",
+        "Prizren",
+        "Bar"
+      ],
+      "zanimljivost": "Opsada je trajala skoro šest meseci, a branilac Esad-paša Toptani predao je grad u aprilu 1913. Velike sile su odlučile da Skadar pripadne novoj državi Albaniji i poslale ratne brodove pred crnogorsku obalu, pa je kralj Nikola morao da popusti.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/esad-pasa.jpg",
+        "opis": "Esad-paša Toptani, branilac Skadra"
+      },
+      "rec": "skadar"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kojim mirovnim ugovorom, potpisanim u maju 1913, je završen Prvi balkanski rat?",
+      "mediji": {
+        "vrsta": "lenta",
+        "od": 1912.7,
+        "do": 1913.7,
+        "dogadjaji": [
+          {
+            "g": 1912.77,
+            "t": "početak rata",
+            "n": "okt. 1912."
+          },
+          {
+            "g": 1912.92,
+            "t": "Bitolj",
+            "n": "nov. 1912."
+          },
+          {
+            "g": 1913.3,
+            "t": "Skadar",
+            "n": "apr. 1913."
+          },
+          {
+            "g": 1913.41,
+            "t": "?",
+            "n": "maj 1913.",
+            "ist": true
+          },
+          {
+            "g": 1913.49,
+            "t": "Bregalnica",
+            "n": "jun 1913."
+          }
+        ]
+      },
+      "odgovori": [
+        "Londonskim mirom",
+        "Bukureštanskim mirom",
+        "Berlinskim mirom",
+        "Versajskim mirom"
+      ],
+      "zanimljivost": "Mir je potpisan u Londonu, uz posredovanje velikih sila. Turska je izgubila skoro sve u Evropi – sve zapadno od linije Enos–Midija, blizu Carigrada. Ali saveznici se nisu dogovorili kako da podele osvojenu Makedoniju, pa je već za mesec dana izbio novi rat.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/londonski-mir.jpg",
+        "opis": "Mirovna konferencija u Londonu"
+      },
+      "rec": "london"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koja nova država, istaknuta na mapi, je stvorena 1912–1913. odlukom velikih sila – delom i zato da Srbija ne bi izašla na more?",
+      "mediji": {
+        "vrsta": "mapa",
+        "karta": "balkan-1913",
+        "istakni": [
+          "albanija"
+        ],
+        "sakrij": [
+          "albanija"
+        ],
+        "kutija": [
+          17.5,
+          39,
+          24.5,
+          44.5
+        ]
+      },
+      "odgovori": [
+        "Albanija",
+        "Makedonija",
+        "Bugarska",
+        "Kosovo"
+      ],
+      "zanimljivost": "Albanci su proglasili nezavisnost u Valoni 28. novembra 1912, a velike sile su je priznale 1913. Najviše su je podržale Austrougarska i Italija, koje nisu želele jaku Srbiju na Jadranu. Prvi vladar Albanije bio je nemački knez Vilhelm od Vida.",
+      "rec": "albanija"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "U kojoj bici, u noći između 29. i 30. juna 1913, je srpska vojska odbila iznenadni napad bugarske vojske?",
+      "mediji": {
+        "vrsta": "mapa",
+        "karta": "balkan-1912",
+        "kutija": [
+          20.6,
+          41,
+          23.6,
+          42.7
+        ],
+        "tacke": [
+          {
+            "lat": 41.74,
+            "lon": 22.2,
+            "znak": "⚔️"
+          },
+          {
+            "lat": 42,
+            "lon": 21.43,
+            "oznaka": "Skoplje"
+          }
+        ],
+        "bezNatpisa": true,
+        "legenda": [],
+        "linije": [
+          {
+            "tacke": [
+              [
+                23,
+                41.95
+              ],
+              [
+                22.65,
+                41.85
+              ],
+              [
+                22.3,
+                41.78
+              ]
+            ],
+            "boja": "#8e6bd1",
+            "strelica": true,
+            "natpis": "noćni napad"
+          }
+        ]
+      },
+      "odgovori": [
+        "Bregalničkoj",
+        "Kumanovskoj",
+        "Cerskoj",
+        "Kolubarskoj"
+      ],
+      "zanimljivost": "Bugarska je napala bivše saveznike bez objave rata, jer je smatrala da joj pripada skoro cela Makedonija. Na reci Bregalnici, kod Štipa i Kočana, srpska vojska je posle teških borbi odbila napad. Tako je počeo Drugi balkanski rat.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/bregalnica.jpg",
+        "opis": "Bregalnička bitka – plan"
+      },
+      "rec": "bregalnica"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kojim mirom je u avgustu 1913. okončan Drugi balkanski rat?",
+      "mediji": {
+        "vrsta": "lenta",
+        "od": 1913.4,
+        "do": 1913.7,
+        "dogadjaji": [
+          {
+            "g": 1913.49,
+            "t": "Bregalnica",
+            "n": "30. jun"
+          },
+          {
+            "g": 1913.53,
+            "t": "Rumunija napada",
+            "n": "10. jul"
+          },
+          {
+            "g": 1913.58,
+            "t": "primirje",
+            "n": "31. jul"
+          },
+          {
+            "g": 1913.61,
+            "t": "?",
+            "n": "10. avg.",
+            "ist": true
+          }
+        ]
+      },
+      "odgovori": [
+        "Bukureštanskim mirom",
+        "Londonskim mirom",
+        "Sanstefanskim mirom",
+        "Pariskim mirom"
+      ],
+      "zanimljivost": "Bugarska je izgubila skoro sve što je osvojila: Srbija je zadržala Vardarsku Makedoniju, Grčka Egejsku sa Solunom, a Rumunija je dobila južnu Dobrudžu. Isti grad, Bukurešt, dao je ime i miru iz 1812, koji je Srbima obećao samoupravu!",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/bukurest-1913.jpg",
+        "opis": "Granice posle Bukureštanskog mira 1913"
+      },
+      "rec": "bukurešt"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Prati strelice: koja država, koja se nije borila u Prvom balkanskom ratu, je 1913. napala Bugarsku sa severa?",
+      "mediji": {
+        "vrsta": "mapa",
+        "karta": "balkan-1912",
+        "linije": [
+          {
+            "tacke": [
+              [
+                25.5,
+                44.3
+              ],
+              [
+                24.5,
+                43.6
+              ],
+              [
+                23.6,
+                42.9
+              ]
+            ],
+            "boja": "#e6913a",
+            "strelica": true,
+            "debljina": 6
+          },
+          {
+            "tacke": [
+              [
+                21.9,
+                42
+              ],
+              [
+                22.4,
+                41.9
+              ]
+            ],
+            "boja": "#3d7fd9",
+            "strelica": true,
+            "kasni": 0.6
+          },
+          {
+            "tacke": [
+              [
+                23,
+                40.8
+              ],
+              [
+                23.3,
+                41.3
+              ]
+            ],
+            "boja": "#e07fb4",
+            "strelica": true,
+            "kasni": 1
+          },
+          {
+            "tacke": [
+              [
+                27.5,
+                41.4
+              ],
+              [
+                26.6,
+                41.7
+              ]
+            ],
+            "boja": "#c0504d",
+            "strelica": true,
+            "kasni": 1.4
+          }
+        ],
+        "legenda": []
+      },
+      "odgovori": [
+        "Rumunija",
+        "Austrougarska",
+        "Rusija",
+        "Grčka"
+      ],
+      "zanimljivost": "Bugarska je u Drugom balkanskom ratu ratovala protiv svih suseda odjednom: Srbije, Crne Gore, Grčke, Rumunije, pa i Turske, koja je iskoristila priliku i vratila Jedrene. Rumunska vojska je stigla skoro do Sofije, bez ijedne veće bitke.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "karta": "balkan-1913",
+        "istakni": [
+          "bugarska",
+          "dobrudza"
+        ]
+      },
+      "rec": "rumunija"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Pogledaj lentu. Koje godine je srpska vojska oslobodila Kosovo – posle više od pet vekova turske vlasti?",
+      "mediji": {
+        "vrsta": "lenta",
+        "od": 1350,
+        "do": 1950,
+        "dogadjaji": [
+          {
+            "g": 1389,
+            "t": "Kosovska bitka"
+          },
+          {
+            "g": 1459,
+            "t": "pad Smedereva"
+          },
+          {
+            "g": 1804,
+            "t": "Prvi ustanak"
+          },
+          {
+            "g": 1878,
+            "t": "nezavisnost"
+          },
+          {
+            "g": 1912,
+            "t": "?",
+            "ist": true
+          }
+        ]
+      },
+      "odgovori": [
+        "1912.",
+        "1878.",
+        "1918.",
+        "1804."
+      ],
+      "zanimljivost": "Prištinu je 22. oktobra 1912. oslobodila Treća armija generala Božidara Jankovića. Prema sećanjima učesnika, mnogi vojnici su, prolazeći kroz Kosovo polje, skidali kape i ljubili zemlju, a pred Gazimestanom se služio parastos kosovskim junacima iz 1389.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "karta": "balkan-1913",
+        "tacke": [
+          {
+            "lat": 42.66,
+            "lon": 21.16,
+            "oznaka": "Priština"
+          },
+          {
+            "lat": 42.71,
+            "lon": 21.12,
+            "oznaka": "Gazimestan",
+            "znak": "🕯️"
+          }
+        ],
+        "kutija": [
+          19.8,
+          41.8,
+          22.4,
+          43.4
+        ],
+        "legenda": []
+      },
+      "rec": "kosovo"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koja oblast, istaknuta na mapi, razdvajala je Srbiju i Crnu Goru, sve dok je 1912. nisu podelile?",
+      "mediji": {
+        "vrsta": "mapa",
+        "karta": "srbija-1878",
+        "istakni": [
+          "sandzak"
+        ],
+        "bezNatpisa": true
+      },
+      "odgovori": [
+        "Novopazarski sandžak (Raška)",
+        "Stara Hercegovina (Gacko)",
+        "Kosovski vilajet (Priština)",
+        "Severna Albanija (Skadar)"
+      ],
+      "zanimljivost": "Posle Berlinskog kongresa 1878. u Sandžaku su bile i austrougarske posade, upravo da bi Srbija i Crna Gora ostale razdvojene. Austrougarska ih je povukla 1908, posle aneksije Bosne. U Prvom balkanskom ratu srpska i crnogorska vojska su se tu susrele i dobile zajedničku granicu.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "karta": "crna-gora-1913",
+        "istakni": [
+          "cg1913"
+        ]
+      },
+      "rec": "sandžak"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Pogledaj Srbiju na mapi posle balkanskih ratova. Kako se promenila njena površina?",
+      "mediji": {
+        "vrsta": "mapa",
+        "karta": "balkan-1913",
+        "istakni": [
+          "srbija"
+        ]
+      },
+      "odgovori": [
+        "Skoro se udvostručila",
+        "Povećala se za desetinu",
+        "Ostala je ista",
+        "Smanjila se za trećinu"
+      ],
+      "zanimljivost": "Srbija je imala oko 48.000 km², a posle 1913. oko 87.000 km². Dobila je Kosovo, Metohiju (deo), Rašku i Vardarsku Makedoniju. Broj stanovnika porastao je sa oko 2,9 na 4,4 miliona.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "karta": "balkan-1912",
+        "istakni": [
+          "srbija"
+        ]
+      },
+      "rec": "granica"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Opsadi kog grada, istaknutog na mapi, je 1913. pomogla srpska Druga armija Stepe Stepanovića, iako su ih Bugari ubrzo potom napali?",
+      "mediji": {
+        "vrsta": "mapa",
+        "karta": "balkan-1912",
+        "tacke": [
+          {
+            "lat": 41.68,
+            "lon": 26.56
+          }
+        ],
+        "linije": [
+          {
+            "tacke": [
+              [
+                21.9,
+                43.32
+              ],
+              [
+                23.32,
+                42.7
+              ],
+              [
+                24.75,
+                42.15
+              ],
+              [
+                26.3,
+                41.75
+              ]
+            ],
+            "boja": "#3d7fd9",
+            "strelica": true,
+            "isprekidana": true,
+            "natpis": "železnicom"
+          }
+        ],
+        "legenda": []
+      },
+      "odgovori": [
+        "Jedrenu",
+        "Carigradu",
+        "Solunu",
+        "Skadru"
+      ],
+      "zanimljivost": "Jedrene (Adrijanopolj) je bilo najjače tursko utvrđenje u Evropi. Srpski topovi i pešaci su pomogli bugarskoj vojsci, a grad je pao u martu 1913. Samo nekoliko meseci kasnije, u Drugom balkanskom ratu, Turci su ga vratili – i Jedrene je i danas u Turskoj.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/jedrene.png",
+        "opis": "Opsada Jedrena 1913"
+      },
+      "rec": "jedrene"
+    },
+    {
+      "vrsta": "uljez",
+      "tezina": 1,
+      "pitanje": "Koji grad NIJE oslobodila srpska vojska u Prvom balkanskom ratu?",
+      "odgovori": [
+        "Solun",
+        "Skoplje",
+        "Priština",
+        "Bitolj"
+      ],
+      "objasnjenje": "Solun su zauzeli Grci; Skoplje, Prištinu i Bitolj oslobodila je srpska vojska.",
+      "zanimljivost": "Solun su 8. novembra 1912. zauzeli Grci – samo dan pre nego što su stigli Bugari. Zbog Soluna je rasla netrpeljivost između saveznika. Za Srbiju je Solun ipak postao važan: preko njegove luke stizala joj je pomoć u Prvom svetskom ratu.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "karta": "balkan-1913",
+        "tacke": [
+          {
+            "lat": 40.64,
+            "lon": 22.94,
+            "oznaka": "Solun"
+          },
+          {
+            "lat": 42,
+            "lon": 21.43,
+            "oznaka": "Skoplje"
+          },
+          {
+            "lat": 42.66,
+            "lon": 21.16,
+            "oznaka": "Priština"
+          },
+          {
+            "lat": 41.03,
+            "lon": 21.33,
+            "oznaka": "Bitolj"
+          }
+        ],
+        "kutija": [
+          19.5,
+          40,
+          24.5,
+          43.4
+        ]
+      },
+      "rec": "solun"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koja srpska slikarka je u balkanskim ratovima bila dobrovoljna bolničarka, a umrla je od tifusa 1915. u Valjevu?",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "🎨 ➕ 🩺 ➕ 🪖"
+      },
+      "odgovori": [
+        "Nadežda Petrović",
+        "Beta Vukanović",
+        "Milena Pavlović Barili",
+        "Katarina Ivanović"
+      ],
+      "zanimljivost": "Nadežda Petrović je najvažnija srpska slikarka impresionizma i fovizma. Za požrtvovanost u ratovima bila je odlikovana. Njen lik je bio na novčanici od 200 dinara, a u Čačku se održava likovna izložba „Memorijal Nadežde Petrović“.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/nadezda.jpg",
+        "opis": "Nadežda Petrović"
+      },
+      "rec": "slikarka"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji grad, označen na mapi, sedište stare Pećke patrijaršije, je 1912. oslobodila crnogorska vojska?",
+      "mediji": {
+        "vrsta": "mapa",
+        "karta": "balkan-1912",
+        "tacke": [
+          {
+            "lat": 42.66,
+            "lon": 20.29
+          }
+        ],
+        "kutija": [
+          18.4,
+          41.5,
+          21.6,
+          43.6
+        ],
+        "bezNatpisa": true,
+        "legenda": []
+      },
+      "odgovori": [
+        "Peć",
+        "Prizren",
+        "Prištinu",
+        "Đakovicu"
+      ],
+      "zanimljivost": "Posle balkanskih ratova Peć i Đakovica pripale su Crnoj Gori, a Prizren i Priština Srbiji. Pećka patrijaršija je bila sedište srpskih patrijaraha od 14. veka, a crkve u njoj su danas pod zaštitom UNESKA.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "karta": "crna-gora-1913",
+        "istakni": [
+          "cg1913"
+        ],
+        "tacke": [
+          {
+            "lat": 42.66,
+            "lon": 20.29,
+            "oznaka": "Peć"
+          }
+        ]
+      },
+      "rec": "peć"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koja velika sila se najoštrije protivila tome da Srbija 1912. dobije izlaz na Jadransko more?",
+      "odgovori": [
+        "Austrougarska",
+        "Rusija",
+        "Francuska",
+        "Velika Britanija"
+      ],
+      "zanimljivost": "Austrougarska je pretila ratom i mobilisala vojsku, a podržavala ju je Italija. Rusija nije bila spremna za veliki rat, pa je savetovala Srbiji da popusti. Srbija se povukla iz Drača 1913, a napetost između Beograda i Beča nastavila je da raste – sve do 1914.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "karta": "balkan-1913",
+        "kutija": [
+          13,
+          39,
+          24.5,
+          47.5
+        ],
+        "istakni": [
+          "austrougarska"
+        ],
+        "tacke": [
+          {
+            "lat": 41.32,
+            "lon": 19.45,
+            "oznaka": "Drač",
+            "znak": "⚓"
+          }
+        ]
+      },
+      "rec": "more"
+    },
+    {
+      "vrsta": "spoji",
+      "tezina": 2,
+      "pitanje": "Spoji bitku sa ratom u kome je vođena",
+      "parovi": [
+        [
+          "Boj na Mišaru",
+          "Prvi srpski ustanak"
+        ],
+        [
+          "Boj na Ljubiću",
+          "Drugi srpski ustanak"
+        ],
+        [
+          "Kumanovska bitka",
+          "Prvi balkanski rat"
+        ],
+        [
+          "Bregalnička bitka",
+          "Drugi balkanski rat"
+        ],
+        [
+          "Cerska bitka",
+          "Prvi svetski rat"
+        ]
+      ],
+      "zanimljivost": "Od Mišara do Cera prošlo je 108 godina, a obe bitke su vođene nedaleko od Šapca – srpska vojska je dva puta pobedila na skoro istom mestu!",
+      "medijiOdgovora": {
+        "vrsta": "lenta",
+        "od": 1800,
+        "do": 1920,
+        "dogadjaji": [
+          {
+            "g": 1806,
+            "t": "Mišar"
+          },
+          {
+            "g": 1815,
+            "t": "Ljubić"
+          },
+          {
+            "g": 1912,
+            "t": "Kumanovo"
+          },
+          {
+            "g": 1913,
+            "t": "Bregalnica"
+          },
+          {
+            "g": 1914,
+            "t": "Cer"
+          }
+        ]
+      },
+      "rec": "rat"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Kako se zvala turska armija koju je srpska vojska porazila kod Kumanova 1912?",
+      "odgovori": [
+        "Vardarska armija",
+        "Rumelijska armija",
+        "Dunavska armija",
+        "Anadolska armija"
+      ],
+      "zanimljivost": "Vardarskom armijom komandovao je Zeki-paša. Turci su očekivali Srbe na drugom mestu i sami krenuli u napad, pa je bitka počela neočekivano – iz susreta. Ime je dobila po reci Vardar, koja teče kroz Skoplje i uliva se u more kod Soluna.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "karta": "balkan-1912",
+        "kutija": [
+          20.3,
+          40.4,
+          23.6,
+          42.8
+        ],
+        "reke": [],
+        "tacke": [
+          {
+            "lat": 42.13,
+            "lon": 21.71,
+            "oznaka": "Kumanovo",
+            "znak": "⚔️"
+          },
+          {
+            "lat": 42,
+            "lon": 21.43,
+            "oznaka": "Skoplje"
+          },
+          {
+            "lat": 40.64,
+            "lon": 22.94,
+            "oznaka": "Solun"
+          }
+        ],
+        "legenda": []
+      },
+      "rec": "vardar"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Oko koje oblasti su se Srbija i Bugarska sukobile 1913, u Drugom balkanskom ratu?",
+      "mediji": {
+        "vrsta": "mapa",
+        "karta": "balkan-1912",
+        "kutija": [
+          20,
+          40.3,
+          24.6,
+          43
+        ],
+        "tacke": [
+          {
+            "lat": 42,
+            "lon": 21.43,
+            "oznaka": "Skoplje"
+          },
+          {
+            "lat": 41.03,
+            "lon": 21.33,
+            "oznaka": "Bitolj"
+          },
+          {
+            "lat": 41.74,
+            "lon": 22.2,
+            "oznaka": "Štip"
+          },
+          {
+            "lat": 40.64,
+            "lon": 22.94,
+            "oznaka": "Solun"
+          }
+        ],
+        "bezNatpisa": true,
+        "legenda": []
+      },
+      "odgovori": [
+        "Makedonije",
+        "Dobrudže",
+        "Trakije",
+        "Bosne"
+      ],
+      "zanimljivost": "Pre rata su se Srbija i Bugarska dogovorile kako da podele Makedoniju, ali je srpska vojska morala da ustupi Drač i Albaniju, pa je tražila veći deo Makedonije. Bugarska nije pristala i napala je. Posle rata Vardarska Makedonija je pripala Srbiji.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "karta": "balkan-1913",
+        "istakni": [
+          "srbija",
+          "bugarska"
+        ]
+      },
+      "rec": "makedonija"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koja srpska armija, pod komandom generala Božidara Jankovića, je 1912. oslobodila Prištinu i Prizren?",
+      "mediji": {
+        "vrsta": "mapa",
+        "karta": "balkan-1912",
+        "kutija": [
+          19.6,
+          41.8,
+          22.5,
+          43.6
+        ],
+        "tacke": [
+          {
+            "lat": 42.66,
+            "lon": 21.16,
+            "oznaka": "Priština"
+          },
+          {
+            "lat": 42.21,
+            "lon": 20.74,
+            "oznaka": "Prizren"
+          }
+        ],
+        "legenda": [],
+        "linije": [
+          {
+            "tacke": [
+              [
+                21.45,
+                43.15
+              ],
+              [
+                21.3,
+                42.9
+              ],
+              [
+                21.16,
+                42.68
+              ],
+              [
+                20.95,
+                42.45
+              ],
+              [
+                20.76,
+                42.23
+              ]
+            ],
+            "boja": "#3d7fd9",
+            "strelica": true
+          }
+        ]
+      },
+      "odgovori": [
+        "Treća armija",
+        "Prva armija",
+        "Druga armija",
+        "Ibarska vojska"
+      ],
+      "zanimljivost": "Treća armija je krenula iz Toplice preko Kosova i u Prizren ušla krajem oktobra 1912. Odatle je deo vojske krenuo preko Albanije na more. Ibarska vojska je u to vreme oslobađala Rašku, a Prva armija je bila kod Kumanova.",
+      "rec": "armija"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je od evropskog dela Osmanskog carstva ostalo Turskoj posle balkanskih ratova?",
+      "odgovori": [
+        "Samo istočna Trakija sa Carigradom",
+        "Cela Makedonija i Albanija",
+        "Bosna i Hercegovina",
+        "Kosovo i Sandžak"
+      ],
+      "zanimljivost": "Turci su na Balkanu vladali skoro 500 godina, a posle 1913. ostao im je samo mali deo oko Carigrada (Istanbula) i Jedrena. Tako je i danas – evropski deo Turske zauzima samo oko 3% njene površine.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "karta": "balkan-1913",
+        "istakni": [
+          "osmanlije"
+        ]
+      },
+      "rec": "trakija"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Ovaj vladar je 1913. odobrio napad na bivše saveznike, Srbiju i Grčku. Ko je on?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/ferdinand.jpg"
+      },
+      "odgovori": [
+        "Bugarski car Ferdinand",
+        "Rumunski kralj Karol",
+        "Turski sultan Mehmed V",
+        "Grčki kralj Konstantin"
+      ],
+      "zanimljivost": "Ferdinand je bio nemački knez koga su Bugari izabrali za kneza 1887, a 1908. se proglasio za cara. Sanjao je da uđe u Carigrad kao novi vizantijski car. Posle dva izgubljena rata (1913. i 1918) abdicirao je u korist sina Borisa.",
+      "rec": "car"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koliko je otprilike trajao Drugi balkanski rat?",
+      "mediji": {
+        "vrsta": "lenta",
+        "od": 1913.4,
+        "do": 1913.7,
+        "dogadjaji": [
+          {
+            "g": 1913.49,
+            "t": "napad Bugarske",
+            "n": "30. jun"
+          },
+          {
+            "g": 1913.5,
+            "t": "Bregalnica",
+            "n": "jul"
+          },
+          {
+            "g": 1913.58,
+            "t": "primirje",
+            "n": "31. jul"
+          },
+          {
+            "g": 1913.61,
+            "t": "Bukureštanski mir",
+            "n": "10. avg."
+          }
+        ]
+      },
+      "odgovori": [
+        "Oko mesec dana",
+        "Oko godinu dana",
+        "Oko tri godine",
+        "Samo tri dana"
+      ],
+      "zanimljivost": "Počeo je bugarskim napadom krajem juna 1913, a primirje je potpisano krajem jula. Za to kratko vreme Bugarska je izgubila skoro sve što je dobila u Prvom balkanskom ratu.",
+      "rec": "mesec"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koji pesnik, autor pesme „Na Gazimestanu“, je 1912. kao dobrovoljac stupio u četnički odred i učestvovao u oslobođenju Kosova?",
+      "mediji": {
+        "vrsta": "mapa",
+        "karta": "balkan-1913",
+        "tacke": [
+          {
+            "lat": 42.71,
+            "lon": 21.12,
+            "oznaka": "Gazimestan",
+            "znak": "🕯️"
+          }
+        ],
+        "kutija": [
+          19.8,
+          41.8,
+          22.4,
+          43.4
+        ],
+        "legenda": []
+      },
+      "odgovori": [
+        "Milan Rakić",
+        "Jovan Dučić",
+        "Aleksa Šantić",
+        "Vladislav Petković Dis"
+      ],
+      "zanimljivost": "Rakić je bio diplomata, ali je u rat otišao kao običan dobrovoljac. U pesmi „Na Gazimestanu“ pesnik razgovara sa kosovskim junacima iz 1389. Dis je poginuo 1917. kada je brod na kome je putovao potopila nemačka podmornica.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/rakic.jpg",
+        "opis": "Milan Rakić"
+      },
+      "rec": "rakić"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kojoj revolucionarnoj organizaciji mladih iz Bosne i Hercegovine je pripadao Gavrilo Princip?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/mlada-bosna.jpg",
+        "opis": "Grupa mladih iz Bosne, 1914"
+      },
+      "odgovori": [
+        "Mladoj Bosni",
+        "Narodnoj odbrani",
+        "Crnoj ruci",
+        "Ujedinjenoj omladini"
+      ],
+      "zanimljivost": "Mladobosanci su bili đaci i studenti – Srbi, Hrvati i Bosanci – koji su želeli oslobođenje od Austrougarske. Princip je imao samo 19 godina, pa po zakonu nije mogao da bude osuđen na smrt; dobio je 20 godina robije i umro u zatvoru Terezin 1918. od tuberkuloze.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/princip-sud.jpg",
+        "opis": "Gavrilo Princip na suđenju"
+      },
+      "rec": "mladi"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Austrougarska je posle atentata Srbiji uputila ultimatum. Koji zahtev Srbija NIJE prihvatila?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/ultimatum.jpg",
+        "opis": "Prva strana ultimatuma, 23. jul 1914"
+      },
+      "odgovori": [
+        "Da austrijski organi vode istragu u Srbiji",
+        "Da zabrani listove koji napadaju Austriju",
+        "Da raspusti udruženje Narodna odbrana",
+        "Da uhapsi osumnjičene za atentat"
+      ],
+      "zanimljivost": "Srbija je imala samo 48 sati da odgovori. Prihvatila je skoro sve, a odbila samo zahtev koji bi narušio njen suverenitet. Čak je i nemački car Vilhelm II rekao da je odgovor „velika moralna pobeda za Beč“ i da više nema razloga za rat – ali Austrougarska je ipak zaratila.",
+      "medijiOdgovora": {
+        "vrsta": "lenta",
+        "od": 1914.45,
+        "do": 1914.62,
+        "dogadjaji": [
+          {
+            "g": 1914.49,
+            "t": "Sarajevski atentat",
+            "n": "28. jun"
+          },
+          {
+            "g": 1914.56,
+            "t": "ultimatum",
+            "n": "23. jul"
+          },
+          {
+            "g": 1914.565,
+            "t": "odgovor Srbije",
+            "n": "25. jul"
+          },
+          {
+            "g": 1914.575,
+            "t": "objava rata",
+            "n": "28. jul",
+            "ist": true
+          }
+        ]
+      },
+      "rec": "ultimatum"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Na neobičan način je Austrougarska 28. jula 1914. objavila rat Srbiji – prvi put u istoriji. Kako?",
+      "mediji": {
+        "vrsta": "morze",
+        "tekst": "RAT"
+      },
+      "odgovori": [
+        "Telegramom",
+        "Preko radija",
+        "Pismom koje je doneo kurir",
+        "Telefonom"
+      ],
+      "zanimljivost": "Telegram je stigao u Niš, gde je bila vlada, jer je Beograd bio na samoj granici. Predsednik vlade Nikola Pašić najpre je pomislio da je u pitanju podvala. Bila je to prva objava rata u istoriji poslata telegramom.",
+      "medijiOdgovora": {
+        "vrsta": "lenta",
+        "od": 1914.45,
+        "do": 1914.62,
+        "dogadjaji": [
+          {
+            "g": 1914.49,
+            "t": "Sarajevo",
+            "n": "28. jun"
+          },
+          {
+            "g": 1914.56,
+            "t": "ultimatum",
+            "n": "23. jul"
+          },
+          {
+            "g": 1914.575,
+            "t": "telegram",
+            "n": "28. jul",
+            "ist": true
+          },
+          {
+            "g": 1914.585,
+            "t": "Rusija mobiliše",
+            "n": "30. jul"
+          },
+          {
+            "g": 1914.59,
+            "t": "Nemačka ratuje",
+            "n": "1. avg."
+          }
+        ]
+      },
+      "rec": "telegram"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Odakle su ispaljene prve granate Prvog svetskog rata na Beograd, u noći 28/29. jula 1914?",
+      "mediji": {
+        "vrsta": "mapa",
+        "karta": "balkan-1913",
+        "kutija": [
+          20.1,
+          44.6,
+          20.8,
+          45
+        ],
+        "tacke": [
+          {
+            "lat": 44.82,
+            "lon": 20.46,
+            "oznaka": "Beograd",
+            "znak": "💥"
+          }
+        ],
+        "legenda": [],
+        "linije": [
+          {
+            "tacke": [
+              [
+                20.38,
+                44.9
+              ],
+              [
+                20.44,
+                44.84
+              ]
+            ],
+            "boja": "#c99a2e",
+            "strelica": true
+          },
+          {
+            "tacke": [
+              [
+                20.62,
+                44.86
+              ],
+              [
+                20.5,
+                44.83
+              ]
+            ],
+            "boja": "#c99a2e",
+            "strelica": true,
+            "kasni": 0.5
+          }
+        ]
+      },
+      "odgovori": [
+        "Sa rečnih monitora na Dunavu i Savi",
+        "Iz aviona nad Kalemegdanom",
+        "Iz tvrđave u Smederevu",
+        "Sa vrha planine Avale"
+      ],
+      "zanimljivost": "Monitori su bili mali oklopni rečni brodovi sa topovima. Prvi je zapucao monitor „Bodrog“. Srpski branioci su na Savskom mostu, koji su sami digli u vazduh, odbili prvi pokušaj prelaska. Beograd je bio prva prestonica koja je bombardovana u ovom ratu.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/monitor-bodrog.jpg",
+        "opis": "Monitor „Bodrog“"
+      },
+      "rec": "monitor"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koji austrougarski general je 1914. komandovao napadima na Srbiju i doživeo poraze na Ceru i Kolubari?",
+      "odgovori": [
+        "Oskar Poćorek",
+        "Konrad fon Hecendorf",
+        "August fon Makenzen",
+        "Svetozar Borojević"
+      ],
+      "zanimljivost": "Poćorek je bio i guverner Bosne – sedeo je u istom automobilu sa Francom Ferdinandom kada je ubijen. Želeo je da Beograd osvoji za godišnjicu vladavine cara Franje Josifa, 2. decembra – i uspeo je, ali samo na 13 dana. Posle poraza na Kolubari smenjen je.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/potiorek.jpg",
+        "opis": "General Oskar Poćorek"
+      },
+      "rec": "poraz"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Prati strelice: preko koje reke, prikazane na mapi, je austrougarska vojska u avgustu 1914. najvećim delom upala u Srbiju?",
+      "mediji": {
+        "vrsta": "mapa",
+        "karta": "balkan-1913",
+        "kutija": [
+          18.6,
+          43.7,
+          21.5,
+          45.3
+        ],
+        "reke": [
+          "Drina"
+        ],
+        "tacke": [
+          {
+            "lat": 44.6,
+            "lon": 19.47,
+            "oznaka": "Cer",
+            "znak": "⚔️"
+          }
+        ],
+        "legenda": [],
+        "linije": [
+          {
+            "tacke": [
+              [
+                18.9,
+                44.55
+              ],
+              [
+                19.15,
+                44.53
+              ],
+              [
+                19.35,
+                44.55
+              ]
+            ],
+            "boja": "#c99a2e",
+            "strelica": true,
+            "debljina": 6
+          },
+          {
+            "tacke": [
+              [
+                18.85,
+                44.3
+              ],
+              [
+                19.08,
+                44.38
+              ],
+              [
+                19.25,
+                44.45
+              ]
+            ],
+            "boja": "#c99a2e",
+            "strelica": true,
+            "debljina": 6,
+            "kasni": 0.4
+          },
+          {
+            "tacke": [
+              [
+                19.7,
+                45
+              ],
+              [
+                19.69,
+                44.78
+              ]
+            ],
+            "boja": "#c99a2e",
+            "strelica": true,
+            "debljina": 6,
+            "kasni": 0.8
+          },
+          {
+            "tacke": [
+              [
+                19.95,
+                44.3
+              ],
+              [
+                19.7,
+                44.5
+              ],
+              [
+                19.52,
+                44.58
+              ]
+            ],
+            "boja": "#3d7fd9",
+            "strelica": true,
+            "debljina": 6,
+            "kasni": 1.4,
+            "natpis": "Stepa"
+          }
+        ]
+      },
+      "odgovori": [
+        "Drine",
+        "Morave",
+        "Tise",
+        "Timoka"
+      ],
+      "zanimljivost": "Glavnina je prešla Drinu kod Loznice i Zvornika, a druga grupa Savu kod Šapca. Srpska vojska je na planini Ceru, u noćnoj bici 15/16. avgusta, iznenadila neprijatelja i do 24. avgusta ga vratila preko reke. Bila je to prva saveznička pobeda u ratu.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/cer.jpg",
+        "opis": "Plan Cerske bitke (avgust 1914)"
+      },
+      "rec": "drina"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta je presudno pomoglo srpskoj vojsci da u Kolubarskoj bici krene u protivnapad, decembra 1914?",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "🚂📦💣 → 🪖"
+      },
+      "odgovori": [
+        "Stigla je artiljerijska municija preko Soluna",
+        "Rusija je poslala tri armije u Srbiju",
+        "Austrougarska je pristala na primirje",
+        "Bugarska je napala Austrougarsku"
+      ],
+      "zanimljivost": "Srpski topovi su danima ćutali bez granata, a vojnici su bili iscrpljeni. Kada je municija iz Francuske stigla vozom preko Soluna, a vojska se odmorila posle Mišićevog povlačenja, protivnapad od 3. decembra potpuno je iznenadio neprijatelja. Beograd je oslobođen 15. decembra.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "karta": "balkan-1913",
+        "kutija": [
+          19,
+          40.3,
+          23.5,
+          45
+        ],
+        "legenda": [],
+        "tacke": [
+          {
+            "lat": 40.64,
+            "lon": 22.94,
+            "oznaka": "Solun"
+          },
+          {
+            "lat": 44.27,
+            "lon": 19.89,
+            "oznaka": "Valjevo"
+          }
+        ],
+        "linije": [
+          {
+            "tacke": [
+              [
+                22.94,
+                40.64
+              ],
+              [
+                22,
+                41.6
+              ],
+              [
+                21.43,
+                42
+              ],
+              [
+                21.9,
+                42.55
+              ],
+              [
+                21.9,
+                43.32
+              ],
+              [
+                21.3,
+                43.9
+              ],
+              [
+                20.9,
+                44
+              ],
+              [
+                20.3,
+                44.25
+              ]
+            ],
+            "boja": "#e6913a",
+            "strelica": true,
+            "isprekidana": true,
+            "natpis": "pruga Solun–Niš"
+          }
+        ]
+      },
+      "rec": "municija"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako su nazvani đaci i studenti koji su kao mladi podoficiri, posle kratke obuke, stigli na front u Kolubarskoj bici?",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "🎓📚 → 🪖⭐"
+      },
+      "odgovori": [
+        "1.300 kaplara",
+        "Gvozdeni puk",
+        "Đački bataljon 1941",
+        "Solunski dobrovoljci"
+      ],
+      "zanimljivost": "Obučavani su u Skoplju, a na front su stigli kada je vojsci najviše trebalo starešina. Mnogi od njih su poginuli, a mnogi preživeli su kasnije postali poznati profesori, lekari i naučnici. Spomenik im stoji na Rajcu, na Suvoboru.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/kaplari.jpg",
+        "opis": "Spomenik 1.300 kaplara"
+      },
+      "rec": "kaplar"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koja zarazna bolest je 1915. odnela više od 100.000 života u Srbiji, među njima i trećinu srpskih lekara?",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "🦠🌡️🏥"
+      },
+      "odgovori": [
+        "Pegavi tifus",
+        "Španski grip",
+        "Kuga",
+        "Kolera"
+      ],
+      "zanimljivost": "Pegavi tifus prenose vaške, a u prepunim bolnicama i među zarobljenicima širio se munjevito. U pomoć su stigle lekarske misije iz Britanije, Rusije, Francuske i Amerike – među njima i škotska lekarka Elsi Inglis. Bolest je pobeđena tek kada su uvedene parne sušnice za odeću.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/elsi-inglis.jpg",
+        "opis": "Elsi Inglis"
+      },
+      "rec": "tifus"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Ovaj nemački feldmaršal je u oktobru 1915. predvodio novu, veliku ofanzivu na Srbiju. Ko je on?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/makenzen.jpg"
+      },
+      "odgovori": [
+        "August fon Makenzen",
+        "Paul fon Hindenburg",
+        "Erih Ludendorf",
+        "Oskar Poćorek"
+      ],
+      "zanimljivost": "Makenzen je na Srbiju krenuo sa nemačkim i austrougarskim armijama, uz stotine topova. Poštovao je hrabrost protivnika: u Beogradu je naredio da se palim srpskim braniocima podigne spomenik sa natpisom na nemačkom „Ovde počivaju srpski junaci“.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "karta": "balkan-1913",
+        "kutija": [
+          18.6,
+          42,
+          23.5,
+          45.5
+        ],
+        "tacke": [
+          {
+            "lat": 44.82,
+            "lon": 20.46,
+            "oznaka": "Beograd",
+            "znak": "💥"
+          }
+        ],
+        "legenda": [],
+        "linije": [
+          {
+            "tacke": [
+              [
+                20.3,
+                45.2
+              ],
+              [
+                20.45,
+                44.85
+              ],
+              [
+                20.5,
+                44.4
+              ]
+            ],
+            "boja": "#6d6d6d",
+            "strelica": true,
+            "debljina": 6
+          },
+          {
+            "tacke": [
+              [
+                21.2,
+                45
+              ],
+              [
+                21.1,
+                44.7
+              ],
+              [
+                21,
+                44.3
+              ]
+            ],
+            "boja": "#c99a2e",
+            "strelica": true,
+            "debljina": 6,
+            "kasni": 0.4
+          }
+        ]
+      },
+      "rec": "feldmaršal"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Prati strelice na mapi: koja država je u oktobru 1915. napala Srbiju s leđa, sa istoka?",
+      "mediji": {
+        "vrsta": "mapa",
+        "karta": "balkan-1913",
+        "kutija": [
+          18.6,
+          41.2,
+          24,
+          45.5
+        ],
+        "bezNatpisa": true,
+        "legenda": [],
+        "linije": [
+          {
+            "tacke": [
+              [
+                20.4,
+                45.2
+              ],
+              [
+                20.5,
+                44.6
+              ],
+              [
+                20.7,
+                44.1
+              ]
+            ],
+            "boja": "#6d6d6d",
+            "strelica": true,
+            "debljina": 6
+          },
+          {
+            "tacke": [
+              [
+                19,
+                44
+              ],
+              [
+                19.6,
+                43.9
+              ]
+            ],
+            "boja": "#c99a2e",
+            "strelica": true,
+            "debljina": 5,
+            "kasni": 0.3
+          },
+          {
+            "tacke": [
+              [
+                22.9,
+                43.9
+              ],
+              [
+                22.3,
+                43.9
+              ]
+            ],
+            "boja": "#8e6bd1",
+            "strelica": true,
+            "debljina": 6,
+            "kasni": 0.8
+          },
+          {
+            "tacke": [
+              [
+                22.7,
+                43.3
+              ],
+              [
+                22.1,
+                43.3
+              ]
+            ],
+            "boja": "#8e6bd1",
+            "strelica": true,
+            "debljina": 6,
+            "kasni": 1
+          },
+          {
+            "tacke": [
+              [
+                22.9,
+                42.3
+              ],
+              [
+                22.2,
+                42.2
+              ]
+            ],
+            "boja": "#8e6bd1",
+            "strelica": true,
+            "debljina": 6,
+            "kasni": 1.2
+          }
+        ]
+      },
+      "odgovori": [
+        "Bugarska",
+        "Rumunija",
+        "Grčka",
+        "Rusija"
+      ],
+      "zanimljivost": "Bugarska je ušla u rat na strani Centralnih sila, jer joj je obećana Makedonija. Njena vojska je presekla prugu prema Solunu, pa saveznička pomoć nije mogla da stigne. Srbija se našla u obruču sa tri strane i vojska je morala da se povuče ka Kosovu i Albaniji.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "karta": "albanska-golgota",
+        "legenda": []
+      },
+      "rec": "obruč"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kog bolesnog vojvodu, načelnika Vrhovne komande, su vojnici u zimu 1915. nosili u nosiljci preko albanskih planina?",
+      "mediji": {
+        "vrsta": "mapa",
+        "karta": "albanska-golgota",
+        "legenda": []
+      },
+      "odgovori": [
+        "Radomira Putnika",
+        "Živojina Mišića",
+        "Stepu Stepanovića",
+        "Petra Bojovića"
+      ],
+      "zanimljivost": "Putnik je bolovao od teške bolesti pluća (emfizema) i jedva je disao na hladnoći. Posle povlačenja je smenjen i otišao na lečenje u Francusku, gde je umro 1917. u Nici. Posmrtni ostaci su mu preneti u Beograd 1926.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/putnik.jpg",
+        "opis": "Vojvoda Radomir Putnik"
+      },
+      "rec": "nosiljka"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Ko je napisao pesmu „Plava grobnica“, posvećenu srpskim vojnicima sahranjenim u moru kod Krfa?",
+      "mediji": {
+        "vrsta": "citat",
+        "tekst": "„Stojte, galije carske! Sputajte krme moćne, / gazite tiho!…“"
+      },
+      "odgovori": [
+        "Milutin Bojić",
+        "Milan Rakić",
+        "Jovan Dučić",
+        "Vladislav Petković Dis"
+      ],
+      "zanimljivost": "Bojić je pesmu napisao 1917, sa samo 25 godina. Iste godine umro je od bolesti u Solunu i sahranjen je na srpskom vojničkom groblju Zejtinlik. Na ostrvu Vido umrlo je više hiljada iscrpljenih vojnika, a mnogi su spušteni u more.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/bojic.jpg",
+        "opis": "Milutin Bojić"
+      },
+      "rec": "grobnica"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Prati strelicu na karti Solunskog fronta: na kom delu planine Kožuf je 15. septembra 1918. počeo proboj?",
+      "mediji": {
+        "vrsta": "mapa",
+        "karta": "solunski-front",
+        "tacke": [
+          {
+            "lat": 41.1,
+            "lon": 21.95,
+            "znak": "💥"
+          }
+        ],
+        "linije": [
+          {
+            "l": "proboj1918",
+            "boja": "#3d7fd9",
+            "strelica": true,
+            "debljina": 5,
+            "kasni": 0.8
+          }
+        ]
+      },
+      "odgovori": [
+        "Na Dobrom polju",
+        "Na Kajmakčalanu",
+        "Na Kozjaku",
+        "Na Ovčem polju"
+      ],
+      "zanimljivost": "Srpski i francuski vojnici napali su posle celodnevne artiljerijske vatre i za samo nekoliko sati zauzeli utvrđene bugarske položaje na vrhovima preko 1.700 m. Kroz otvor u frontu jurnule su srpske armije – Prva Petra Bojovića i Druga Stepe Stepanovića.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/dobro-polje.png",
+        "opis": "Položaji na Dobrom polju"
+      },
+      "rec": "proboj"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koji francuski general je komandovao savezničkim armijama na Solunskom frontu u vreme proboja 1918?",
+      "mediji": {
+        "vrsta": "mapa",
+        "karta": "solunski-front",
+        "legenda": []
+      },
+      "odgovori": [
+        "Franše d’Epere",
+        "Ferdinand Foš",
+        "Moris Saraj",
+        "Filip Peten"
+      ],
+      "zanimljivost": "Luj Franše d’Epere je verovao srpskim komandantima i prihvatio plan da se napadne baš na najvišim planinama, gde neprijatelj to najmanje očekuje. Po njemu se zove bulevar u Beogradu, a dobio je i počasni čin vojvode srpske vojske.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/franse-depere.jpg",
+        "opis": "Luj Franše d’Epere"
+      },
+      "rec": "general"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Srpska vojska je probila front 15. septembra, a Beograd oslobodila 1. novembra 1918. Za koliko dana je prešla taj put od oko 600 km?",
+      "mediji": {
+        "vrsta": "mapa",
+        "karta": "solunski-front",
+        "linije": [
+          {
+            "l": "proboj1918",
+            "boja": "#3d7fd9",
+            "strelica": true,
+            "debljina": 6,
+            "natpis": ""
+          }
+        ],
+        "natpisi": [
+          {
+            "lon": 22.3,
+            "lat": 41,
+            "t": "15. sep.",
+            "vel": "m"
+          },
+          {
+            "lon": 20.46,
+            "lat": 44.95,
+            "t": "1. nov.",
+            "vel": "m"
+          }
+        ]
+      },
+      "odgovori": [
+        "Oko 45 dana",
+        "Oko 10 dana",
+        "Oko 100 dana",
+        "Oko 200 dana"
+      ],
+      "zanimljivost": "Pešadija je prelazila i po 40–50 km dnevno, često brže od sopstvene komore i konjice. Bilo je to jedno od najbržih napredovanja pešadije u celom ratu.",
+      "medijiOdgovora": {
+        "vrsta": "lenta",
+        "od": 1918.65,
+        "do": 1918.87,
+        "dogadjaji": [
+          {
+            "g": 1918.705,
+            "t": "proboj",
+            "n": "15. sep."
+          },
+          {
+            "g": 1918.745,
+            "t": "Bugarska kapitulira",
+            "n": "29. sep."
+          },
+          {
+            "g": 1918.79,
+            "t": "Niš",
+            "n": "12. okt."
+          },
+          {
+            "g": 1918.835,
+            "t": "Beograd",
+            "n": "1. nov.",
+            "ist": true
+          }
+        ]
+      },
+      "rec": "beograd"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koja država Centralnih sila je, posle proboja Solunskog fronta, prva kapitulirala – već krajem septembra 1918?",
+      "odgovori": [
+        "Bugarska",
+        "Austrougarska",
+        "Nemačka",
+        "Osmansko carstvo"
+      ],
+      "zanimljivost": "Bugarska je potpisala primirje u Solunu 29. septembra 1918. Posle nje su redom odustale Turska (30. oktobra), Austrougarska (3. novembra) i Nemačka (11. novembra). Proboj na Balkanu tako je ubrzao kraj celog rata.",
+      "medijiOdgovora": {
+        "vrsta": "lenta",
+        "od": 1918.7,
+        "do": 1918.9,
+        "dogadjaji": [
+          {
+            "g": 1918.745,
+            "t": "Bugarska",
+            "n": "29. sep.",
+            "ist": true
+          },
+          {
+            "g": 1918.83,
+            "t": "Turska",
+            "n": "30. okt."
+          },
+          {
+            "g": 1918.84,
+            "t": "Austrougarska",
+            "n": "3. nov."
+          },
+          {
+            "g": 1918.86,
+            "t": "Nemačka",
+            "n": "11. nov."
+          }
+        ]
+      },
+      "rec": "primirje"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koliki je deo svog stanovništva Srbija izgubila u Prvom svetskom ratu, prema čestim procenama?",
+      "mediji": {
+        "vrsta": "emodzi",
+        "tekst": "🧍🧍🧍🕯️"
+      },
+      "odgovori": [
+        "Oko četvrtine",
+        "Oko stotog dela",
+        "Oko dve trećine",
+        "Oko polovine"
+      ],
+      "zanimljivost": "Procene se kreću oko 1,1–1,3 miliona ljudi od oko 4,5 miliona – vojnika i civila, od borbi, bolesti, gladi i u logorima. Stradalo je više od polovine odraslih muškaraca. Srazmerno broju stanovnika, nijedna zemlja nije izgubila više.",
+      "rec": "žrtva"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zove ovaj cvet koji, kad se osuši, može ponovo da oživi – simbol sećanja na Prvi svetski rat u Srbiji?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/ramonda.jpg"
+      },
+      "odgovori": [
+        "Natalijina ramonda",
+        "Pančićeva omorika",
+        "Srpska divlja ruža",
+        "Planinska lincura"
+      ],
+      "zanimljivost": "Ramondu je otkrio Josif Pančić kod Niša i nazvao je po kraljici Nataliji Obrenović. Raste i na planinama Solunskog fronta. Kao feniks, može potpuno da se osuši i ponovo oživi posle kiše – zato je izabrana za simbol naroda koji je preživeo Albansku golgotu. Nosi se na reveru na Dan primirja, 11. novembra.",
+      "rec": "ramonda"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Čije srce počiva u urni u kapeli na vrhu Kajmakčalana, prema želji tog čoveka?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/kajmakcalan.jpg",
+        "opis": "Kapela na vrhu Kajmakčalana"
+      },
+      "odgovori": [
+        "Arčibalda Rajsa",
+        "Živojina Mišića",
+        "Kralja Petra I",
+        "Milutina Bojića"
+      ],
+      "zanimljivost": "Rajs, švajcarski kriminolog, istraživao je zločine nad srpskim narodom i ostao da živi u Srbiji. U oporuci je tražio da mu se srce sahrani na Kajmakčalanu, među srpskim vojnicima. Na kapeli Svetog Ilije su i imena vojnika poginulih 1916. u borbama za vrh visok 2.521 m.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/rajs.jpg",
+        "opis": "Arčibald Rajs"
+      },
+      "rec": "srce"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koji srpski puk je u balkanskim ratovima i Prvom svetskom ratu dobio nadimak „Gvozdeni puk“?",
+      "odgovori": [
+        "Drugi pešadijski puk „Knjaz Mihailo“",
+        "Kraljeva garda iz Beograda",
+        "Prvi konjički puk „Obilić“",
+        "Dunavska divizija iz Smedereva"
+      ],
+      "zanimljivost": "Drugi puk je bio u skoro svim velikim bitkama: Kumanovo, Bregalnica, Cer, Kolubara, Kajmakčalan, proboj Solunskog fronta. Puk je u ratovima više puta gotovo potpuno izginuo i ponovo popunjavan, a njegova zastava je odlikovana Karađorđevom zvezdom.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/gvozdeni-puk.jpg",
+        "opis": "Štab Drugog puka na Solunskom frontu"
+      },
+      "rec": "puk"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji dokument, prikazan na slici, su 1917. potpisali srpska vlada i Jugoslovenski odbor, dogovarajući zajedničku državu?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/krfska.jpg"
+      },
+      "odgovori": [
+        "Krfsku deklaraciju",
+        "Nišku deklaraciju",
+        "Londonski ugovor",
+        "Ženevsku deklaraciju"
+      ],
+      "zanimljivost": "Deklaraciju su potpisali Nikola Pašić i Ante Trumbić, vođa Jugoslovenskog odbora koji je okupljao Hrvate, Slovence i Srbe iz Austrougarske. Predviđeno je da država bude kraljevina sa dinastijom Karađorđević, sa ravnopravnim pismima – ćirilicom i latinicom.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/trumbic.jpg",
+        "opis": "Ante Trumbić"
+      },
+      "rec": "krf"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zove srpsko vojničko groblje u Solunu, prikazano na slici, gde počiva više od 5.000 srpskih vojnika?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/zejtinlik.jpg"
+      },
+      "odgovori": [
+        "Zejtinlik",
+        "Kajmakčalan",
+        "Kalemegdan",
+        "Vido"
+      ],
+      "zanimljivost": "Ime znači „maslinjak“. Groblje je decenijama čuvao Đorđe Mihailović, bivši solunski borac, a posle njega njegov sin i unuk. Tu je sahranjen i pesnik Milutin Bojić, a na susednim parcelama i francuski, britanski, italijanski i ruski vojnici.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "balkan",
+        "tacke": [
+          {
+            "lat": 40.65,
+            "lon": 22.92,
+            "oznaka": "Solun"
+          }
+        ]
+      },
+      "rec": "groblje"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koji datum se u Srbiji obeležava kao Dan primirja u Prvom svetskom ratu?",
+      "mediji": {
+        "vrsta": "lenta",
+        "od": 1918.6,
+        "do": 1919,
+        "dogadjaji": [
+          {
+            "g": 1918.705,
+            "t": "proboj",
+            "n": "15. sep."
+          },
+          {
+            "g": 1918.835,
+            "t": "Beograd",
+            "n": "1. nov."
+          },
+          {
+            "g": 1918.86,
+            "t": "kraj rata",
+            "n": "?",
+            "ist": true
+          },
+          {
+            "g": 1918.92,
+            "t": "ujedinjenje",
+            "n": "1. dec."
+          }
+        ]
+      },
+      "odgovori": [
+        "11. novembar",
+        "15. septembar",
+        "1. decembar",
+        "28. jun"
+      ],
+      "zanimljivost": "Primirje između saveznika i Nemačke potpisano je u železničkom vagonu u šumi kod Kompjenja 11. novembra 1918, u 11 sati. U Srbiji je to neradni dan od 2012, a simbol praznika je Natalijina ramonda.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/ramonda.jpg",
+        "opis": "Natalijina ramonda – simbol Dana primirja"
+      },
+      "rec": "primirje"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Na kom spomeniku na Kalemegdanu piše: „Volimo Francusku kao što je ona volela nas“?",
+      "mediji": {
+        "vrsta": "citat",
+        "tekst": "„Volimo Francusku kao što je ona volela nas“"
+      },
+      "odgovori": [
+        "Na Spomeniku zahvalnosti Francuskoj",
+        "Na spomeniku Pobedniku",
+        "Na Spomeniku Neznanom junaku",
+        "Na spomeniku Despotu Stefanu"
+      ],
+      "zanimljivost": "Spomenik je izvajao Ivan Meštrović, a otkriven je 1930. Francuska je Srbiji pomogla oružjem, lekarima, a hiljade srpskih đaka školovalo se u Francuskoj tokom rata. Beograd je 1920. odlikovan francuskom Legijom časti.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/spomenik-francuskoj.jpg",
+        "opis": "Spomenik zahvalnosti Francuskoj, Kalemegdan"
+      },
+      "rec": "francuska"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Na kojoj planini je Mišićeva Prva armija krenula u odlučujući protivnapad u Kolubarskoj bici, decembra 1914?",
+      "mediji": {
+        "vrsta": "mapa",
+        "karta": "balkan-1913",
+        "kutija": [
+          18.6,
+          43.7,
+          21.5,
+          45.3
+        ],
+        "tacke": [
+          {
+            "lat": 44.13,
+            "lon": 20.2,
+            "znak": "⚔️"
+          },
+          {
+            "lat": 44.27,
+            "lon": 19.89,
+            "oznaka": "Valjevo"
+          },
+          {
+            "lat": 44.82,
+            "lon": 20.46,
+            "oznaka": "Beograd"
+          }
+        ],
+        "legenda": [],
+        "linije": [
+          {
+            "tacke": [
+              [
+                20.22,
+                44.08
+              ],
+              [
+                20.1,
+                44.2
+              ],
+              [
+                19.95,
+                44.27
+              ]
+            ],
+            "boja": "#3d7fd9",
+            "strelica": true,
+            "debljina": 6
+          }
+        ]
+      },
+      "odgovori": [
+        "Na Suvoboru",
+        "Na Ceru",
+        "Na Rudniku",
+        "Na Kopaoniku"
+      ],
+      "zanimljivost": "Zato se Kolubarska bitka zove i Suvoborska. Mišić je, protivno mišljenju Vrhovne komande, povukao armiju sa Suvobora da se odmori i popuni. Neprijatelj je pomislio da su Srbi slomljeni i krenuo napred raštrkan – a onda je 3. decembra usledio silovit napad sa visova Suvobora i Rajca.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/kolubara.jpg",
+        "opis": "Plan Kolubarske bitke"
+      },
+      "rec": "suvobor"
+    },
+    {
+      "vrsta": "uljez",
+      "tezina": 2,
+      "pitanje": "Koja država NIJE bila na strani Centralnih sila u Prvom svetskom ratu?",
+      "odgovori": [
+        "Italija",
+        "Nemačka",
+        "Bugarska",
+        "Osmansko carstvo"
+      ],
+      "objasnjenje": "Italija se 1915. borila na strani Antante; Nemačka, Bugarska i Osmansko carstvo bili su Centralne sile.",
+      "zanimljivost": "Italija je pre rata bila u savezu sa Nemačkom i Austrougarskom, ali je 1915. prešla na stranu Antante, jer joj je obećan deo austrijskih zemalja na Jadranu. Centralne sile su bile Nemačka, Austrougarska, Osmansko carstvo i Bugarska.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "karta": "evropa-1914"
+      },
+      "rec": "italija"
+    },
+    {
+      "vrsta": "spoji",
+      "tezina": 2,
+      "pitanje": "Spoji ličnost iz Prvog svetskog rata sa onim po čemu je zapamćena",
+      "parovi": [
+        [
+          "Stepa Stepanović",
+          "Cerska bitka"
+        ],
+        [
+          "Živojin Mišić",
+          "Kolubarska bitka"
+        ],
+        [
+          "Dragutin Gavrilović",
+          "Odbrana Beograda 1915."
+        ],
+        [
+          "Arčibald Rajs",
+          "Istraživanje zločina"
+        ],
+        [
+          "Milutin Bojić",
+          "„Plava grobnica“"
+        ]
+      ],
+      "zanimljivost": "Major Gavrilović je u odbrani Beograda teško ranjen, ali je preživeo rat. Njegov govor „Vojnici, junaci!“ i danas se uči napamet.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/stepa.jpg",
+        "opis": "Vojvoda Stepa Stepanović"
+      },
+      "rec": "vojvoda"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "U kom gradu u severnoj Africi su se lečili ranjeni srpski vojnici, a tamo su radile i srpske škole?",
+      "mediji": {
+        "vrsta": "mapa",
+        "oblast": "evropa",
+        "kutija": [
+          5,
+          34,
+          26,
+          46
+        ],
+        "tacke": [
+          {
+            "lat": 37.27,
+            "lon": 9.87
+          },
+          {
+            "lat": 39.62,
+            "lon": 19.92,
+            "oznaka": "Krf"
+          },
+          {
+            "lat": 40.64,
+            "lon": 22.94,
+            "oznaka": "Solun"
+          }
+        ]
+      },
+      "odgovori": [
+        "U Bizerti (Tunis)",
+        "U Aleksandriji (Egipat)",
+        "U Oranu (Alžir)",
+        "U Tripoliju (Libija)"
+      ],
+      "zanimljivost": "Francuska je u svojoj luci Bizerti otvorila bolnice za srpske ranjenike i bolesne sa Krfa i Solunskog fronta. Tamo su radile i srpske škole za decu i mlade vojnike. U Bizerti i danas postoji srpsko vojničko groblje.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/bizerta.jpg",
+        "opis": "Bizerta danas"
+      },
+      "rec": "bizerta"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Ko je od 1914. vladao Srbijom kao regent, jer je stari kralj Petar I bio bolestan?",
+      "odgovori": [
+        "Prestolonaslednik Aleksandar",
+        "Princ Đorđe Karađorđević",
+        "Knez Pavle Karađorđević",
+        "Vojvoda Radomir Putnik"
+      ],
+      "zanimljivost": "Kralj Petar je predao vlast sinu Aleksandru u junu 1914, samo dve nedelje pre Sarajevskog atentata. Aleksandar je bio i vrhovni komandant vojske. Stariji brat Đorđe se odrekao prestola 1909, a Aleksandar je kralj postao 1921.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/kralj-aleksandar.jpg",
+        "opis": "Aleksandar Karađorđević"
+      },
+      "rec": "regent"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Koji srpski naučnik iz Amerike je tokom rata bio počasni konzul Srbije u Njujorku i skupljao pomoć za srpski narod?",
+      "odgovori": [
+        "Mihajlo Pupin",
+        "Nikola Tesla",
+        "Milutin Milanković",
+        "Jovan Cvijić"
+      ],
+      "zanimljivost": "Pupin je, kao profesor Univerziteta Kolumbija i pronalazač, imao veliki ugled u Americi. Organizovao je dobrovoljce i humanitarnu pomoć, a na mirovnoj konferenciji u Parizu 1919. uverio je američkog predsednika Vilsona da Srbiji pripadnu delovi Banata i Baranje.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/pupin.jpg",
+        "opis": "Mihajlo Pupin"
+      },
+      "rec": "pupin"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kako se u narodu nazivaju srpski borci koji su prošli Albansku golgotu i borili se na Solunskom frontu?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/golgota.jpg",
+        "opis": "Povlačenje srpske vojske kroz Albaniju, 1915."
+      },
+      "odgovori": [
+        "Solunci",
+        "Krajišnici",
+        "Ustanici",
+        "Partizani"
+      ],
+      "zanimljivost": "Solunci su posle rata bili veoma poštovani, a mnogi dobrovoljci dobili su zemlju u Vojvodini i na Kosovu. Ko je prešao Albaniju, dobio je medalju „Albanska spomenica“. Izraz „solunac“ i danas znači čoveka velike hrabrosti i izdržljivosti.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "karta": "solunski-front"
+      },
+      "rec": "solunac"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Na teritoriji koje države se nalazio Solunski front, a ona je tek 1917. ušla u rat na strani saveznika?",
+      "mediji": {
+        "vrsta": "mapa",
+        "karta": "solunski-front",
+        "bezNatpisa": true
+      },
+      "odgovori": [
+        "Grčke",
+        "Rumunije",
+        "Italije",
+        "Albanije"
+      ],
+      "zanimljivost": "Grčka je bila podeljena: kralj Konstantin je bio naklonjen Nemačkoj, a premijer Venizelos saveznicima. Tek kada je kralj abdicirao 1917, Grčka je zvanično ušla u rat. Grčke divizije su učestvovale i u završnom proboju 1918.",
+      "rec": "grčka"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koji se od ovih događaja iz Prvog svetskog rata odigrao POSLEDNJI?",
+      "odgovori": [
+        "Proboj Solunskog fronta",
+        "Bitka na Kajmakčalanu",
+        "Kolubarska bitka",
+        "Albanska golgota"
+      ],
+      "zanimljivost": "Redom: Kolubarska bitka (1914), Albanska golgota (1915), Kajmakčalan (1916) i proboj Solunskog fronta (1918). Između Kajmakčalana i proboja front se skoro dve godine nije pomerao – vojnici su živeli u rovovima i zemunicama.",
+      "medijiOdgovora": {
+        "vrsta": "lenta",
+        "od": 1914,
+        "do": 1919,
+        "dogadjaji": [
+          {
+            "g": 1914.6,
+            "t": "Cer",
+            "n": "1914."
+          },
+          {
+            "g": 1914.92,
+            "t": "Kolubara",
+            "n": "1914."
+          },
+          {
+            "g": 1915.9,
+            "t": "Albanija",
+            "n": "1915."
+          },
+          {
+            "g": 1916.7,
+            "t": "Kajmakčalan",
+            "n": "1916."
+          },
+          {
+            "g": 1918.7,
+            "t": "proboj",
+            "ist": true,
+            "n": "1918."
+          }
+        ],
+        "periodi": [
+          {
+            "od": 1914.55,
+            "do": 1918.86,
+            "t": "Prvi svetski rat",
+            "boja": "#c0504d"
+          }
+        ]
+      },
+      "rec": "redom"
     }
   ]
 }
