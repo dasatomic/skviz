@@ -463,16 +463,18 @@ function grupaOblasti(o) {
   return { oblast: o, glavni, clanovi, podkategorije, naziv: glavni.razred ? glavni.naziv.replace(/^\d+\. razred · /, '') : glavni.naziv, ikona: glavni.ikona, boja: glavni.boja, broj: clanovi.reduce((s, x) => s + x.broj, 0), zadaci: clanovi.every((x) => x.zadaci) };
 }
 const brojTema = (n) => `${n} ${n % 10 === 1 && n % 100 !== 11 ? 'tema' : [2, 3, 4].includes(n % 10) && ![12, 13, 14].includes(n % 100) ? 'teme' : 'tema'}`;
+const brojLekcija = (n) => `${n} ${n % 10 === 1 && n % 100 !== 11 ? 'lekcija' : n % 10 >= 2 && n % 10 <= 4 && !(n % 100 >= 12 && n % 100 <= 14) ? 'lekcije' : 'lekcija'}`;
 // natpis za ceo kviz sa lekcijama: „Cela godina“ (razredi) ili sopstveni ("celina": "Cela knjiga")
 const celina = (k) => k.celina || 'Cela godina';
 
-// rastavlja izbor na delove: { oblast, paket, lekcija }
+// rastavlja izbor na delove: { oblast, paket, lekcije (lista rednih brojeva) }
 function rastaviIzbor(id) {
   id = String(id || 'opste');
-  if (id.startsWith('oblast:')) return { oblast: id.slice(7) };
+  if (id.startsWith('oblast:')) return { oblast: id.slice(7), lekcije: [] };
   const [pid, lek] = id.split('#');
   const k = kvizPo(pid);
-  return { oblast: k?.oblast || null, paket: k || null, lekcija: lek ? +lek : null };
+  const lekcije = lek ? lek.split(',').map((x) => +x).filter((n) => Number.isInteger(n) && n > 0) : [];
+  return { oblast: k?.oblast || null, paket: k || null, lekcije };
 }
 
 function opisIzbora(id) {
@@ -480,7 +482,10 @@ function opisIzbora(id) {
   if (id === 'opste' || (!r.oblast && !r.paket)) return kvizPo('opste') || { naziv: 'Opšte znanje', ikona: '🌍' };
   if (!r.paket) { const g = grupaOblasti(r.oblast); return { naziv: g.naziv, podnaslov: g.podkategorije.length ? 'sve teme' : 'svi razredi', ikona: g.ikona, boja: g.boja }; }
   const k = r.paket;
-  if (r.lekcija) return { naziv: k.lekcije[r.lekcija - 1]?.naziv || k.naziv, podnaslov: k.naziv, ikona: k.ikona, boja: k.boja, jezik: k.jezik };
+  if (r.lekcije.length) {
+    if (r.lekcije.length === 1) return { naziv: k.lekcije[r.lekcije[0] - 1]?.naziv || k.naziv, podnaslov: k.naziv, ikona: k.ikona, boja: k.boja, jezik: k.jezik };
+    return { naziv: brojLekcija(r.lekcije.length), podnaslov: k.naziv, ikona: k.ikona, boja: k.boja, jezik: k.jezik };
+  }
   return { naziv: k.naziv, podnaslov: k.razred || (k.celina && k.lekcije.length) ? celina(k).toLowerCase() : '', ikona: k.ikona, boja: k.boja };
 }
 
@@ -488,7 +493,7 @@ function opisIzbora(id) {
 function maksPitanja(P) {
   if (P.kviz === 'opste') return kvizPo('opste')?.broj || 25;
   const r = rastaviIzbor(P.kviz);
-  if (r.lekcija) return r.paket?.lekcije?.[r.lekcija - 1]?.broj || r.paket?.broj || 25;
+  if (r.lekcije.length) return r.lekcije.reduce((s, n) => s + (r.paket?.lekcije?.[n - 1]?.broj || 0), 0) || r.paket?.broj || 25;
   if (r.paket) return r.paket?.broj || 25;
   if (r.oblast) return grupaOblasti(r.oblast).broj || 25;
   return 25;
@@ -548,13 +553,15 @@ function izborKvizaHTML(P) {
   </div>`;
 }
 
-// spisak lekcija izabranog kviza: „Cela godina“ (ili `celina`) + lekcije, grupisane po temama
-function lekcijeHTML(k, lekcija) {
+// spisak lekcija izabranog kviza: „Cela godina“ (ili `celina`) + lekcije sa kućicama za više izbora
+function lekcijeHTML(k, lekcije) {
+  const izabrane = new Set(lekcije);
   let tema = null;
-  let html = `<div class="lekcije"><button class="lekcija ${!lekcija ? 'izabran' : ''}" data-k="${k.id}"><b>📚 ${esc(celina(k))}</b><span>${k.broj}</span></button>`;
+  let html = `<div class="lekcije"><button class="lekcija ${izabrane.size ? '' : 'izabran'}" data-k="${k.id}"><b>📚 ${esc(celina(k))}</b><span>${k.broj}</span></button>`;
   k.lekcije.forEach((l, i) => {
     if (l.tema && l.tema !== tema) { tema = l.tema; html += `<div class="tema">${strano(esc(tema), k.jezik)}</div>`; }
-    html += `<button class="lekcija ${lekcija === i + 1 ? 'izabran' : ''}" data-k="${k.id}#${i + 1}" ${l.broj ? '' : 'disabled'}><span class="rb">${i + 1}.</span> ${strano(esc(l.naziv), k.jezik)}<span>${l.broj}</span></button>`;
+    const n = i + 1;
+    html += `<label class="lekcija ${izabrane.has(n) ? 'izabran' : ''}"><input type="checkbox" data-lekcija="${n}" ${izabrane.has(n) ? 'checked' : ''} ${l.broj ? '' : 'disabled'}><span class="rb">${n}.</span> <span class="l-naziv">${strano(esc(l.naziv), k.jezik)}</span><span>${l.broj}</span></label>`;
   });
   return html + '</div>';
 }
@@ -572,7 +579,7 @@ function izborRazredaHTML(P) {
     html += `<div class="kartica"><h3>Tema</h3><div class="izbor razredi">
       <button data-k="oblast:${g.oblast}" class="${!r.paket ? 'izabran' : ''}">Sve teme</button>
       ${g.podkategorije.map((k) => `<button data-k="${k.id}" class="${r.paket === k ? 'izabran' : ''}">${k.ikona} ${esc(k.naziv)}</button>`).join('')}</div>`;
-    if (r.paket?.lekcije.length) html += lekcijeHTML(r.paket, r.lekcija);
+    if (r.paket?.lekcije.length) html += lekcijeHTML(r.paket, r.lekcije);
     return html + '</div>';
   }
   if (!g.clanovi.some((x) => x.razred)) return html;
@@ -583,7 +590,7 @@ function izborRazredaHTML(P) {
       const k = g.clanovi.find((x) => x.razred === n);
       return `<button ${k ? `data-k="${k.id}"` : 'disabled title="Još nema pitanja za ovaj razred"'} class="${raz === n ? 'izabran' : ''}">${n}.</button>`;
     }).join('')}</div>`;
-  if (raz && r.paket.lekcije.length) html += lekcijeHTML(r.paket, r.lekcija);
+  if (raz && r.paket.lekcije.length) html += lekcijeHTML(r.paket, r.lekcije);
   return html + '</div>';
 }
 
@@ -649,6 +656,12 @@ function podesavanja() {
     k.querySelectorAll('[data-k]').forEach((b) => (b.onclick = () => {
       Zvuk.efekat('klik');
       promeniKviz(b.dataset.k);
+    }));
+    k.querySelectorAll('input[data-lekcija]').forEach((cb) => (cb.onchange = () => {
+      Zvuk.efekat('klik');
+      const pid = k.querySelector('.lekcija[data-k]')?.dataset.k;
+      const izabrane = [...k.querySelectorAll('input[data-lekcija]:checked')].map((x) => +x.dataset.lekcija).sort((a, b) => a - b);
+      if (pid) promeniKviz(izabrane.length ? `${pid}#${izabrane.join(',')}` : pid);
     }));
     $('#promeni-predmet', k).onclick = () => { Zvuk.efekat('klik'); korakLobija = 'predmet'; podesavanja(); osveziKvizove().then(() => korakLobija === 'predmet' && V?.faza === 'lobi' && $('#podesavanja') && podesavanja()); };
     k.querySelectorAll('.izbor[data-p] button').forEach((b) => (b.onclick = () => {
