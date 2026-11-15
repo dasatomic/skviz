@@ -529,3 +529,33 @@ body.ekran .raptori-opis { font-size: 1.05em; }
 .trojka-objasnjenje h3 { margin: 14px 0 0; font-size: 1.02em; }
 .trojka-objasnjenje h3:first-child { margin-top: 0; }
 .trojka-objasnjenje .razlomak { font-size: .8em; }
+
+/* ───── bonus „Elementi – cena i opasnost“ (public/hemija.js) ───── */
+.hemija-zadatak { margin: 12px 0; }
+.hemija-zadatak h3 { margin: 4px 0 2px; font-family: var(--uslovno); letter-spacing: .02em; }
+.elementi { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; margin-top: 8px; }
+@media (max-width: 420px) { .elementi { grid-template-columns: repeat(4, 1fr); } }
+.elem { position: relative; display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 10px 4px 8px;
+  background: var(--kartica2); border: 1px solid #ffffff14; border-radius: 12px; color: var(--tekst);
+  transition: transform .12s, border-color .12s, background .12s; animation: mehur .3s backwards; }
+.elem:hover { transform: translateY(-1px); }
+.elem:active { transform: scale(.95); }
+.elem.izabran { background: linear-gradient(180deg, #2fbf5b 0%, #1f9d4b 100%); border-color: #5ce68a; box-shadow: 0 0 14px #2fbf5b88; }
+.elem-simbol { font-family: var(--uslovno); font-size: 1.25em; font-weight: 800; letter-spacing: .02em; }
+.elem.izabran .elem-simbol { color: #fff; }
+.elem-ime { font-size: .82em; line-height: 1.05; text-align: center; }
+.elem-z { position: absolute; top: 5px; right: 7px; font-size: .68em; opacity: .55; font-variant-numeric: tabular-nums; }
+.elem.izabran .elem-z { opacity: .85; }
+.elem-opt { display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 10px 4px 8px;
+  background: var(--polje); border: 1px solid #ffc93c55; border-radius: 12px; }
+.elem-opt b { color: var(--istaknuto); font-family: var(--uslovno); font-size: 1.2em; }
+.elem-opt span { font-size: .82em; text-align: center; }
+.elem-opt small { font-size: .72em; color: var(--blago); text-align: center; line-height: 1.2; }
+.elementi-opt { grid-template-columns: repeat(3, 1fr); }
+.hemija-moj { padding: 10px 14px; }
+.hemija-moj-red { display: flex; align-items: baseline; gap: 8px; padding: 3px 0; }
+.hemija-moj-red span:first-child { min-width: 9em; }
+.hemija-moj-red b { margin-left: auto; font-variant-numeric: tabular-nums; }
+.hemija-objasnjenje h3 { color: var(--istaknuto); margin: 2px 0 6px; }
+.hemija-objasnjenje p { margin: 6px 0 0; line-height: 1.45; }
+body.ekran .elementi { grid-template-columns: repeat(5, 1fr); }

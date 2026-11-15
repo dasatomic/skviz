@@ -177,7 +177,7 @@ let otisak = { do: 0, v: '' };
 function verzijaKlijenta() {
   if (Date.now() < otisak.do || (otisak.v && PRODUKCIJA)) return otisak.v;
   const h = crypto.createHash('md5');
-  for (const f of ['index.html', 'app.js', 'geo.js', 'fizika.js', 'biologija.js', 'istorija.js', 'mediji.js', 'pismo.js', 'raptori.js', 'trojka.js', 'style.css']) {
+  for (const f of ['index.html', 'app.js', 'geo.js', 'fizika.js', 'biologija.js', 'istorija.js', 'mediji.js', 'pismo.js', 'raptori.js', 'trojka.js', 'hemija.js', 'style.css']) {
     try {
       if (PRODUKCIJA) h.update(fs.readFileSync(path.join(JAVNO, f)));
       else { const st = fs.statSync(path.join(JAVNO, f)); h.update(st.size.toString(36) + st.mtimeMs.toString(36)); }
@@ -354,6 +354,8 @@ async function obradi(req, res) {
         return kraj(res, 200, soba.posaljiSut(id, b.sila, b.ugao) || { ok: false, poruka: 'Ne može sad' });
       case 'beg':
         return kraj(res, 200, soba.posaljiBeg(id, b.ugao, b.jacina) || { ok: false, poruka: 'Ne može sad' });
+      case 'hemija':
+        return kraj(res, 200, soba.posaljiHemiju(id, b.izbor) || { ok: false, poruka: 'Ne može sad' });
       case 'pojam':
         return kraj(res, 200, soba.posaljiPojam(id, b.tekst) || { ok: false, poruka: 'Ne može sad' });
       case 'gotov':

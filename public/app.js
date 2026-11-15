@@ -238,11 +238,13 @@ function crtaj(staro) {
   if (f === 'slovo' || f === 'slovo-otkrivanje') kljuc = 's' + V.slovo.rb + V.krug;
   if (f === 'raptori' || f === 'raptori-otkrivanje') kljuc = 'x' + V.raptori.rb + V.krug;
   if (f === 'trojka' || f === 'trojka-otkrivanje') kljuc = 't' + V.trojka.rb + V.krug;
+  if (f === 'hemija' || f === 'hemija-otkrivanje') kljuc = 'h' + V.hemija.rb + V.krug;
   const nov = kljuc !== kljucEkrana;
   if (nov) { ocisti(); kljucEkrana = kljuc; app.innerHTML = ''; window.scrollTo(0, 0); }
   ({ lobi: ekranLobi, uvod: ekranUvod, pitanje: ekranPitanje, otkrivanje: ekranPitanje, tabela: ekranTabela,
     reci: ekranReci, 'reci-otkrivanje': ekranReci, slovo: ekranSlovo, 'slovo-otkrivanje': ekranSlovo,
-    raptori: ekranRaptori, 'raptori-otkrivanje': ekranRaptori, trojka: ekranTrojka, 'trojka-otkrivanje': ekranTrojka, kraj: ekranKraj }[f] || ekranLobi)(nov, staro);
+    raptori: ekranRaptori, 'raptori-otkrivanje': ekranRaptori, trojka: ekranTrojka, 'trojka-otkrivanje': ekranTrojka,
+    hemija: ekranHemija, 'hemija-otkrivanje': ekranHemija, kraj: ekranKraj }[f] || ekranLobi)(nov, staro);
   meniDugme();
 }
 
@@ -648,6 +650,7 @@ function ekranUvod(nov) {
   if (u.vrsta === 'slovo' && u.bonus) return uvodSlova(u);
   if (u.vrsta === 'raptori') return uvodRaptora(u);
   if (u.vrsta === 'trojka') return uvodTrojke(u);
+  if (u.vrsta === 'hemija') return uvodHemija(u);
   app.innerHTML = `<div class="uvod">
     <div class="veliki">${pitanja ? kv?.ikona || '❓' : '🔤'}</div>
     <div class="sitno">Krug ${u.broj}${pitanja && kv?.podnaslov ? ' · ' + esc(kv.podnaslov) : pitanja ? '' : ' · bonus'}</div>
@@ -1114,8 +1117,8 @@ function osveziSlaganje() {
 }
 
 // ───────────────────────── bonus „Na slovo…“ ─────────────────────────
-const IKONA_BONUSA = { reci: '🔤', geografija: '🌍', nauka: '🧑‍🔬', istorija: '👑', sport: '🏅', raptori: '🦖', trojka: '🏀', 'raptori|trojka': '🎲' };
-const NAZIV_BONUSA = { reci: 'Najduža reč', geografija: 'Zanimljiva geografija', nauka: 'Naučnici – matematičari i fizičari', istorija: 'Istorijske ličnosti', sport: 'Sportisti', raptori: 'Beži od raptora!', trojka: 'Trojka!', 'raptori|trojka': 'Beži od raptora! ili Trojka!' };
+const IKONA_BONUSA = { reci: '🔤', geografija: '🌍', nauka: '🧑‍🔬', istorija: '👑', sport: '🏅', raptori: '🦖', trojka: '🏀', hemija: '⚗️', 'raptori|trojka': '🎲' };
+const NAZIV_BONUSA = { reci: 'Najduža reč', geografija: 'Zanimljiva geografija', nauka: 'Naučnici – matematičari i fizičari', istorija: 'Istorijske ličnosti', sport: 'Sportisti', raptori: 'Beži od raptora!', trojka: 'Trojka!', hemija: 'Elementi – cena i opasnost', 'raptori|trojka': 'Beži od raptora! ili Trojka!' };
 // nazivi iz Wikidate stižu ćirilicom; u latinici se preslovljavaju (i velika slova: Љубљана → Ljubljana)
 const naziv = (t) => (PISMO === 'cirilica' ? String(t ?? '') : [...String(t ?? '')].map((c) => {
   const l = LAT[c.toLowerCase()];
@@ -1357,6 +1360,20 @@ function uvodTrojke(u) {
   dugmeDalje('Kreni! ➜');
 }
 
+// ───────────────────────── bonus „Elementi – cena i opasnost“ (public/hemija.js) ─────────────────────────
+function uvodHemija(u) {
+  app.innerHTML = `<div class="uvod">
+    <div class="veliki">⚗️</div>
+    <div class="sitno">Krug ${u.broj} · bonus${u.brojReci > 1 ? ` · ${u.brojReci} runde` : ''}</div>
+    <h1>Elementi – cena i opasnost</h1>
+    <p>Dva zadatka iz periodnog sistema. <b>1)</b> Među 10 elemenata izaberi <b>3 najskuplja po gramu</b> (cene su okvirne).
+       <b>2)</b> Među 8 elemenata izaberi <b>3 najradioaktivnija</b> – radioaktivniji znači <b>kraće poluvreme raspada</b>.
+       Svaki zadatak vredi do 500 poena, srazmerno tome koliko si blizu najboljem izboru.</p>
+  </div>`;
+  Zvuk.efekat('bubanj');
+  dugmeDalje('Kreni! ➜');
+}
+
 let trScena = null; // crtež tekuće runde (Trojka.scena)
 let mojSut = null;  // Promise mog leta – otkrivanje čeka da se završi
 let sutLeti = false;
@@ -1497,6 +1514,140 @@ async function otkrivanjeTrojke() {
   if (igrali.length && !vecVideo) await pusti(sviSutevi());
   else await pusti([zlatni]);
   if (kljuc === kljucEkrana && sc === trScena) { sileUkljucene = true; sc.sile(true); $('#tr-sile')?.classList.add('zuto'); }
+}
+
+let hemijaIzbor = { vrednost: [], radio: [] };
+const NASLOV_HEMIJE = { vrednost: '💰 Najskuplji po gramu', radio: '☢️ Najradioaktivniji' };
+const UPUTSTVO_HEMIJE = { vrednost: 'Izaberi 3 najskuplja elementa', radio: 'Izaberi 3 najradioaktivnija' };
+
+function hemijaElementiHTML(zadatak, sc) {
+  const izbor = hemijaIzbor[zadatak];
+  return sc.elementi.map((e) => {
+    const izabran = izbor.includes(e.simbol);
+    return `<button class="elem ${izabran ? 'izabran' : ''}" data-z="${zadatak}" data-simbol="${esc(e.simbol)}" ${izabran ? 'aria-pressed="true"' : ''}>
+      <b class="elem-simbol" data-lat>${esc(e.simbol)}</b>
+      <span class="elem-ime">${esc(e.ime)}</span>
+      <small class="elem-z">${e.z}</small>
+    </button>`;
+  }).join('');
+}
+
+function hemijaPanel(zadatak) {
+  const sc = V.hemija[zadatak];
+  return `<div class="hemija-zadatak">
+    <h3>${NASLOV_HEMIJE[zadatak]}</h3>
+    <div class="sitno centar">${UPUTSTVO_HEMIJE[zadatak]} (${hemijaIzbor[zadatak].length}/${sc.brojBira})</div>
+    <div class="elementi">${hemijaElementiHTML(zadatak, sc)}</div>
+  </div>`;
+}
+
+function veziHemiju() {
+  if (TV || V.hemija.moj) return;
+  app.querySelectorAll('.elem').forEach((b) => {
+    b.onclick = () => {
+      const z = b.dataset.z;
+      const s = b.dataset.simbol;
+      const i = hemijaIzbor[z].indexOf(s);
+      if (i >= 0) hemijaIzbor[z].splice(i, 1);
+      else if (hemijaIzbor[z].length < 3) hemijaIzbor[z].push(s);
+      else { poruka('Najviše 3 elementa'); return; }
+      Zvuk.efekat('klik');
+      b.classList.toggle('izabran', i < 0);
+      osveziHemija();
+    };
+  });
+}
+
+function osveziHemija() {
+  if (!V || V.faza !== 'hemija') return;
+  const X = V.hemija;
+  const p = $('#hemija-polje');
+  if (p) { p.innerHTML = hemijaPanel('vrednost') + hemijaPanel('radio'); veziHemiju(); }
+  const s = $('#sredina');
+  if (!s) return;
+  if (!TV && !X.moj) {
+    const gotovo = hemijaIzbor.vrednost.length === 3 && hemijaIzbor.radio.length === 3;
+    const h = gotovo
+      ? '<button class="dugme zeleno siroko" id="hemija-potvrdi">Potvrdi izbor ✓</button>'
+      : `<div class="sitno centar">Izaberi po 3 elementa u oba zadatka (${hemijaIzbor.vrednost.length}/3 i ${hemijaIzbor.radio.length}/3)</div>`;
+    if (s.dataset.h !== h) { s.innerHTML = h; s.dataset.h = h; }
+    if (gotovo) $('#hemija-potvrdi').onclick = () => { Zvuk.efekat('tacno'); akcija('hemija', { izbor: { vrednost: hemijaIzbor.vrednost, radio: hemijaIzbor.radio } }); };
+  } else if (X.moj) {
+    const h = '<div class="cekanje">Čekamo ostale<span class="tackice"></span></div>';
+    if (s.dataset.h !== h) { s.innerHTML = h; s.dataset.h = h; }
+  } else {
+    const h = koJeOdgovorio(X.predali, 'izabralo');
+    if (s.dataset.h !== h) { s.innerHTML = h; s.dataset.h = h; }
+  }
+}
+
+function ekranHemija(nov, staro) {
+  const X = V.hemija;
+  const otkriveno = V.faza === 'hemija-otkrivanje';
+  const igram = !TV && !!igrac(V.ja);
+  if (nov) {
+    hemijaIzbor = X.moj ? { vrednost: [...X.moj.vrednost], radio: [...X.moj.radio] } : { vrednost: [], radio: [] };
+    app.innerHTML = `
+      <div class="traka"><span class="znacka">⚗️ Elementi – cena i opasnost${X.ukupno > 1 ? ` · ${X.rb}/${X.ukupno}` : ''}</span><span class="razmak"></span><span class="sekunde"></span></div>
+      <div class="tajmer"><i></i></div>
+      <div id="hemija-polje"></div>
+      <div id="sredina"></div>`;
+    if (!otkriveno) tajmer(X.pocetak, X.trajanje);
+    if (!otkriveno) osveziHemija();
+  }
+  if (!otkriveno) {
+    if (!nov) osveziHemija();
+    if (!igram && !TV) donjaTraka('');
+    return;
+  }
+  if (nov || staro?.faza !== 'hemija-otkrivanje') otkrivanjeHemija();
+}
+
+async function otkrivanjeHemija() {
+  clearInterval(tikTajmer);
+  $('.tajmer i').style.transform = 'scaleX(0)';
+  $('.sekunde').textContent = '';
+  delete $('#sredina').dataset.h;
+  const X = V.hemija;
+  const po = (zadatak) => new Map(X[zadatak].elementi.map((e) => [e.simbol, e]));
+  const poV = po('vrednost'), poR = po('radio');
+  const moj = V.dobitak[V.ja];
+  if (moj && !TV) {
+    Zvuk.efekat(moj.bez ? 'netacno' : 'tacno');
+    if (moj.oznaka?.includes('Savršeno') || moj.oznaka?.includes('Najbolje')) konfete(80);
+  }
+  const igrali = V.igraci.filter((x) => X.izbori[x.id]).sort((a, b) => ((V.dobitak[b.id]?.poeni || 0) + (V.dobitak[b.id]?.bonus || 0)) - ((V.dobitak[a.id]?.poeni || 0) + (V.dobitak[a.id]?.bonus || 0)));
+  const chip = (lista, poMapa, ikona) => lista.length
+    ? lista.map((s) => { const e = poMapa.get(s); return `<span class="cip">${ikona} ${esc(e?.ime || s)}${e?.cena != null ? ` <small>${Hemija.cena(e.cena)} €/g</small>` : ''}${e?.radio != null ? ` <small>${e.poluvreme}</small>` : ''}</span>`; }).join('')
+    : '<span class="sitno">—</span>';
+  const optimalni = (zadatak, sc) => {
+    const mapa = po(zadatak);
+    return sc.optimalno.map((s) => {
+      const e = mapa.get(s);
+      const v = zadatak === 'vrednost' ? `${Hemija.cena(e.cena)} €/g` : `${Hemija.opisAktivnosti(e)} · ${e.poluvreme}`;
+      return `<div class="elem-opt"><b data-lat>${esc(e.simbol)}</b><span>${esc(e.ime)}</span><small>${esc(v)}</small></div>`;
+    }).join('');
+  };
+  $('#sredina').innerHTML = `
+    ${moj && !TV ? `<div class="rezultat ${moj.bez ? 'lose' : 'dobro'}">${moj.bez ? 'Nisi izabrao elemente 😕' : `+${moj.poeni + moj.bonus}${moj.oznaka ? ' · ' + esc(moj.oznaka) : ''}`}</div>` : ''}
+    ${moj && !TV && !moj.bez ? `<div class="kartica hemija-moj">
+      <div class="hemija-moj-red"><span>💰 Vrednost</span><b>+${moj.vrednost.poeni} / 500</b><span class="sitno">${Math.round(moj.vrednost.udeo * 100)}% najboljeg</span></div>
+      <div class="hemija-moj-red"><span>☢️ Radioaktivnost</span><b>+${moj.radio.poeni} / 500</b><span class="sitno">${Math.round(moj.radio.udeo * 100)}% najboljeg</span></div>
+    </div>` : ''}
+    ${igrali.length ? `<div class="kartica"><div class="lista-poena">${skratiListu(igrali, (x, i) => {
+      const d = V.dobitak[x.id] || {};
+      const iz = X.izbori[x.id];
+      return `<div class="st ${x.id === V.ja ? 'ja' : ''}" style="animation-delay:${0.15 * Math.min(i, 8)}s">${mesto(i)}<span style="font-size:1.4em">${esc(x.avatar)}</span><div style="min-width:0"><b>${esc(x.ime)}</b>
+        <div class="cipovi mali">${chip(iz?.vrednost || [], poV, '💰')}${chip(iz?.radio || [], poR, '☢️')}</div></div>
+        <span class="p"><span class="plus">+${(d.poeni || 0) + (d.bonus || 0)}</span>${d.oznaka ? `<div class="sitno">${esc(d.oznaka)}</div>` : ''}</span></div>`;
+    })}</div></div>` : '<div class="kartica sitno">Niko nije izabrao elemente.</div>'}
+    <div class="kartica hemija-objasnjenje"><h3>💰 Najskuplji po gramu</h3>
+      <div class="elementi elementi-opt">${optimalni('vrednost', X.vrednost)}</div>
+      ${Hemija.objasniVrednost(X.vrednost).map((r) => `<p>${esc(r)}</p>`).join('')}</div>
+    <div class="kartica hemija-objasnjenje"><h3>☢️ Najradioaktivniji</h3>
+      <div class="elementi elementi-opt">${optimalni('radio', X.radio)}</div>
+      ${Hemija.objasniRadio(X.radio).map((r) => `<p>${esc(r)}</p>`).join('')}</div>`;
+  dugmeDalje(X.rb === X.ukupno ? 'Rang lista 🏆' : 'Sledeća berza ➜');
 }
 
 // ───────────────────────── kraj ─────────────────────────
