@@ -29,7 +29,7 @@
   // Ovde ne smeju reči koje postoje i u srpskom (love, star, let, me, on, king…).
   const STRANE = new Set((
     // video-igre
-    'minecraft cuphead mugman chalice fortnite terraria creeper enderman ender end nether netherit redstone villagers notch ' +
+    'minecraft cuphead mugman chalice fortnite gta terraria creeper enderman ender end nether netherit redstone villagers notch ' +
     'pac bulbasaur nintendo jumpman fandango life counter doom undertale elden baldur gate tomb raider uncharted redemption ' +
     'corrupted duke invaders sports football rocket silksong megalovania black hedgehog sight funcom projekt valve larian ' +
     'drum bass hal ibm bucks minecoins cake lie imdb ' +
@@ -58,6 +58,8 @@
     'potentia imperare congruentia particula copula reportare plagiarius citare aisthesis sýntagma onomatopoiía fußnote fuß ' +
     // sport: nazivi timova i takmičenja, nadimci („Heat“, „Final Four“, „Adriatic Basketball Association“)
     'heat suns joker djoker lakes adriatic basketball association four allez gallus ' +
+    // igre, serije, filmovi, likovi i ličnosti u izvornom obliku (dopuna)
+    'pubg rockstar electronic activision ubisoft sega mojang rovio theft need speed free fire scarface bellic johnson michael borderland patrick krabs amphibia friends seinfeld narcos dark sherlock luther broadchurch ketchum brock oak dragon vegeta piccolo garfield spider batman minnie donald pluto luigi toad peach rosalina zuckerberg tajiri north east south habitat hunting insects population precipitation parasites overharvesting moesia kampf nitrogen ' +
     // muzičke oznake (italijanski)
     'allegro adagio crescendo decrescendo fortissimo pianissimo ff pp mf mp ' +
     // engleske službene reči (ne postoje u srpskom)
@@ -75,7 +77,7 @@
   // deo teksta (ceo tekst, navod, zagrada) koji je u celini strani naziv: sve reči su strane ili pišu velikim slovom,
   // a bar jedna je strana – „Ace of Base“, „(Elder Kettle)“, „(E.T. phone home)“; u takvom nazivu malim slovom smeju
   // i strane rečce – (Back to the Future), (La vita è bella), (Kimi no Na wa), (Hachi: A Dog's Tale)
-  const RECCE_NAZIVA = new Set(['to', 'no', 'il', 'la', 'le', 'un', 'di', 'd', 's', 'de', 'du', 'del', 'der', 'von', 'van', 'san', 'vita', 'in', 'a', 'ue', 'ka', 'll']);
+  const RECCE_NAZIVA = new Set(['to', 'no', 'il', 'la', 'le', 'un', 'di', 'd', 's', 'de', 'du', 'del', 'der', 'von', 'van', 'san', 'vita', 'in', 'a', 'ue', 'ka', 'll', 'for']);
   function straniNaziv(deo) {
     const reci = deo.match(/[A-Za-zČĆŽŠĐčćžšđ]+/g);
     if (!reci || !reci.some(strana)) return false;
@@ -144,6 +146,8 @@
       if (/^[A-ZČĆŽŠĐ][a-zčćžšđ]+$/.test(preRec) && /[a-zčćžšđ]\s$/.test(pre) && !/^vitamin/i.test(preRec)) return true;
       // „futur I“ (gramatika): vreme, ne ime
       if (/^futur/i.test(preRec) && /[a-zčćžšđ]\s$/.test(pre)) return true;
+      // verzija uz skraćenicu: GTA V (prethodna reč je sva velikim slovima)
+      if (/^[A-ZČĆŽŠĐ]{2,}$/.test(preRec) && /[A-ZČĆŽŠĐ]\s$/.test(pre)) return true;
     }
     if (SKRACENICE.has(tok)) return true;
     // hemijski simboli u tekstu o elementima
