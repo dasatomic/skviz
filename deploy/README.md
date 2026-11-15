@@ -36,7 +36,7 @@ Ostale opcije: `--stara/--nova <commit|grana|radni>`, `--pauza <ms>`, `--bez-pre
 - Javni id igrača se izvodi ključem iz `podaci/kljuc-id` (pravi se jednom), pa novi server prepoznaje iste telefone.
 - Telefoni se sami ponovo povežu (i posle 502 od Caddy-ja), a akcije poslate dok server ne radi ponavljaju (~4 s).
   Ako je promenjen klijent (`public/`), stranica se osveži i vrati u istu sobu (TV ekran preko `/ekran?soba=KOD`).
-- `deploy/izuzeci-rsync.txt`: šta rsync ne šalje i ne briše (statistika, telemetrija, ključ, sačuvane sobe).
+- `deploy/izuzeci-rsync.txt`: šta rsync ne šalje i ne briše (telemetrija, ključ, sačuvane sobe).
 - Pauza za igrače: oko 1 s (koliko se novi server pokreće).
 
 ## Promena formata stanja sobe
@@ -73,7 +73,7 @@ Kad su se menjala samo pitanja (`kvizovi/`), objavi ih bez prekidanja soba u tok
    prekida sobe (`2`), nastavlja samo kad niko nije u sobi, uz `--kad-niko-ne-igra` ili `PREKINI_SOBE=1`.
    `BEZ_TESTA=1` preskače test – samo u nuždi.
 4. Pošalje kod na server u `/opt/gric-kviz` (`rsync --checksum --delay-updates`, izuzeci iz `deploy/izuzeci-rsync.txt`:
-   ne dira statistiku, istoriju odigranih pitanja, telemetriju, ključ id-jeva ni sačuvane sobe).
+   ne dira istoriju odigranih pitanja, telemetriju, ključ id-jeva ni sačuvane sobe).
 5. Uskladi podešavanje Caddy-ja sa `deploy/caddy.sh` (dira ga samo ako se razlikuje; staro sačuva kao `/etc/caddy/Caddyfile.pre-<vreme>`).
 6. Zapiše commit u `.objavljeno` (i lokalno u `refs/skviz/objavljeno`, za ručni test), restartuje servis `gric-kviz`
    (sobe se sačuvaju i vrate) i proveri da igra odgovara.

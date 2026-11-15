@@ -126,10 +126,6 @@ label.sitno, .kartica > label { color: var(--akcent2); font-weight: 500; }
 .izbor { display: flex; gap: 4px; flex-wrap: wrap; justify-content: flex-end; }
 .izbor button { background: var(--polje); padding: 7px 12px; border-radius: 999px; font-weight: 500; font-size: .9em; transition: background .15s; }
 .izbor button.izabran { background: var(--akcent); color: #fff; }
-.slavni { width: 100%; border-collapse: collapse; font-size: .92em; }
-.slavni td { padding: 8px 4px; border-bottom: 1px solid var(--linija); }
-.slavni tr:last-child td { border-bottom: 0; }
-.slavni td:last-child { text-align: right; font-weight: 700; }
 
 /* gornja traka igre = zaglavlje Telegram razgovora */
 .traka { display: flex; align-items: center; gap: 6px; margin: calc(-1 * max(14px, env(safe-area-inset-top))) -14px 10px; padding: max(10px, env(safe-area-inset-top)) 58px 10px 14px;

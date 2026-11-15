@@ -118,7 +118,7 @@ else
   fi
 fi
 
-# --delay-updates: izmenjene datoteke se zamene tek na kraju prenosa; izuzeci (statistika, ključ id-jeva, sačuvane
+# --delay-updates: izmenjene datoteke se zamene tek na kraju prenosa; izuzeci (ključ id-jeva, sačuvane
 # sobe…) se ne šalju i ne brišu – isti spisak koristi i lokalni test
 # --checksum: git archive svim fajlovima daje vreme commita, pa bi fajl iste veličine iz commita napravljenog u istoj
 # sekundi (amend) rsync preskočio kao „isti“
