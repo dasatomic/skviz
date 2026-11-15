@@ -274,6 +274,8 @@ async function odigrajDoKraja(s, ms = 120000) {
       for (const ig of s.igraci) if (!runda.gotovi.includes(ig.V?.ja)) await ig.akcija('gotov');
     } else if (V.faza === 'raptori') {
       for (const ig of s.igraci) if (!V.raptori.predali.includes(ig.V?.ja)) await ig.akcija('beg', { ugao: 1, jacina: 1 });
+    } else if (V.faza === 'trojka') {
+      for (const ig of s.igraci) if (!V.trojka.predali.includes(ig.V?.ja)) await ig.akcija('sut', { sila: 50, ugao: 50 });
     } else if (V.faza === 'lobi') await s.vodja.akcija('pokreni');
     else await s.vodja.akcija('dalje', { faza: V.faza });
     await s.vodja.cekaj((v) => v.verzija > V.verzija, 15000, `promena u fazi ${V.faza}`);

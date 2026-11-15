@@ -511,3 +511,21 @@ body.ekran #o-igri { display: none; }
 .raptori-objasnjenje h3 { color: var(--istaknuto); }
 .raptori-objasnjenje p { margin: 6px 0 0; line-height: 1.45; }
 body.ekran .raptori-opis { font-size: 1.05em; }
+
+/* ───── bonus „Trojka!“ (public/trojka.js) ───── */
+.trojka-polje { background: #0b1424; }
+.trojka-platno { display: block; width: 100%; }
+.trojka-platno.vuci { touch-action: none; cursor: crosshair; }
+.trojka-opis span { white-space: nowrap; }
+.trojka-kontrole { margin-top: 10px; display: flex; flex-direction: column; gap: 8px; align-items: stretch; }
+.trojka-kontrole .rap-uputstvo { margin: 0 0 2px; }
+.tr-red { display: grid; grid-template-columns: 4.6em 1fr 1fr 5.2em 1fr 1fr; gap: 6px; align-items: center; }
+.tr-oznaka { font-size: .9em; color: var(--blago); }
+.tr-red b { text-align: center; font-size: 1.15em; font-variant-numeric: tabular-nums; }
+.tr-korak { padding: 9px 0; border-radius: 10px; border: 1px solid #ffffff22; background: #ffffff12; color: var(--tekst); font: inherit; font-weight: 700; touch-action: manipulation; user-select: none; -webkit-user-select: none; }
+.tr-korak:active { background: #ffffff30; }
+#tr-sut { margin-top: 4px; }
+#tr-sut:disabled { opacity: .45; }
+.trojka-objasnjenje h3 { margin: 14px 0 0; font-size: 1.02em; }
+.trojka-objasnjenje h3:first-child { margin-top: 0; }
+.trojka-objasnjenje .razlomak { font-size: .8em; }

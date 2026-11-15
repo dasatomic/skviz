@@ -237,11 +237,12 @@ function crtaj(staro) {
   if (f === 'reci' || f === 'reci-otkrivanje') kljuc = 'r' + V.reci.rb + V.krug;
   if (f === 'slovo' || f === 'slovo-otkrivanje') kljuc = 's' + V.slovo.rb + V.krug;
   if (f === 'raptori' || f === 'raptori-otkrivanje') kljuc = 'x' + V.raptori.rb + V.krug;
+  if (f === 'trojka' || f === 'trojka-otkrivanje') kljuc = 't' + V.trojka.rb + V.krug;
   const nov = kljuc !== kljucEkrana;
   if (nov) { ocisti(); kljucEkrana = kljuc; app.innerHTML = ''; window.scrollTo(0, 0); }
   ({ lobi: ekranLobi, uvod: ekranUvod, pitanje: ekranPitanje, otkrivanje: ekranPitanje, tabela: ekranTabela,
     reci: ekranReci, 'reci-otkrivanje': ekranReci, slovo: ekranSlovo, 'slovo-otkrivanje': ekranSlovo,
-    raptori: ekranRaptori, 'raptori-otkrivanje': ekranRaptori, kraj: ekranKraj }[f] || ekranLobi)(nov, staro);
+    raptori: ekranRaptori, 'raptori-otkrivanje': ekranRaptori, trojka: ekranTrojka, 'trojka-otkrivanje': ekranTrojka, kraj: ekranKraj }[f] || ekranLobi)(nov, staro);
   meniDugme();
 }
 
@@ -646,6 +647,7 @@ function ekranUvod(nov) {
   const kv = opisIzbora(V.podesavanja.kviz);
   if (u.vrsta === 'slovo' && u.bonus) return uvodSlova(u);
   if (u.vrsta === 'raptori') return uvodRaptora(u);
+  if (u.vrsta === 'trojka') return uvodTrojke(u);
   app.innerHTML = `<div class="uvod">
     <div class="veliki">${pitanja ? kv?.ikona || '❓' : '🔤'}</div>
     <div class="sitno">Krug ${u.broj}${pitanja && kv?.podnaslov ? ' · ' + esc(kv.podnaslov) : pitanja ? '' : ' · bonus'}</div>
@@ -1112,8 +1114,8 @@ function osveziSlaganje() {
 }
 
 // ───────────────────────── bonus „Na slovo…“ ─────────────────────────
-const IKONA_BONUSA = { reci: '🔤', geografija: '🌍', nauka: '🧑‍🔬', istorija: '👑', sport: '🏅', raptori: '🦖' };
-const NAZIV_BONUSA = { reci: 'Najduža reč', geografija: 'Zanimljiva geografija', nauka: 'Naučnici – matematičari i fizičari', istorija: 'Istorijske ličnosti', sport: 'Sportisti', raptori: 'Beži od raptora!' };
+const IKONA_BONUSA = { reci: '🔤', geografija: '🌍', nauka: '🧑‍🔬', istorija: '👑', sport: '🏅', raptori: '🦖', trojka: '🏀' };
+const NAZIV_BONUSA = { reci: 'Najduža reč', geografija: 'Zanimljiva geografija', nauka: 'Naučnici – matematičari i fizičari', istorija: 'Istorijske ličnosti', sport: 'Sportisti', raptori: 'Beži od raptora!', trojka: 'Trojka!' };
 // nazivi iz Wikidate stižu ćirilicom; u latinici se preslovljavaju (i velika slova: Љубљана → Ljubljana)
 const naziv = (t) => (PISMO === 'cirilica' ? String(t ?? '') : [...String(t ?? '')].map((c) => {
   const l = LAT[c.toLowerCase()];
@@ -1339,6 +1341,162 @@ async function otkrivanjeRaptora() {
   if (igrali.length && !vecVideo) await pusti(sviBegovi());
   else if (!igrali.length) await pusti([zlatni]);
   else sc.najbolje(nb);
+}
+
+// ───────────────────────── bonus „Trojka!“ (public/trojka.js) ─────────────────────────
+function uvodTrojke(u) {
+  app.innerHTML = `<div class="uvod">
+    <div class="veliki">🏀</div>
+    <div class="sitno">Krug ${u.broj} · bonus${u.brojReci > 1 ? ` · ${u.brojReci} runde` : ''}</div>
+    <h1>Trojka!</h1>
+    <p>Šutiraš za tri poena – ponekad i na Mesecu ili Marsu! Povuci strelicu od lopte: <b>pravac</b> je ugao izbačaja, a <b>dužina</b> sila
+      kojom ruke guraju loptu (u njutnima). Doteraj je dugmićima i šutni. Ko zna fiziku, može da izračuna tačan šut: ${matTekst('$F·Δt = m·v_{0}$')} i parabola.
+      Koš 500 poena, čist koš +200, a promašaj blizu obruča donosi do 200.</p>
+  </div>`;
+  Zvuk.efekat('bubanj');
+  dugmeDalje('Kreni! ➜');
+}
+
+let trScena = null; // crtež tekuće runde (Trojka.scena)
+let mojSut = null;  // Promise mog leta – otkrivanje čeka da se završi
+let sutLeti = false;
+function ekranTrojka(nov, staro) {
+  const X = V.trojka;
+  const otkriveno = V.faza === 'trojka-otkrivanje';
+  const ja_ = igrac(V.ja);
+  const igram = !TV && !!ja_;
+  if (nov) {
+    const o = Trojka.opis(X.sc);
+    app.innerHTML = `
+      <div class="traka"><span class="znacka">🏀 Trojka!${X.ukupno > 1 ? ` · ${X.rb}/${X.ukupno}` : ''}</span><span class="razmak"></span><span class="sekunde"></span></div>
+      <div class="tajmer"><i></i></div>
+      <div class="raptori-opis trojka-opis"><b>${esc(o.mesto)}</b><span>${esc(o.planeta)}</span><span>${esc(o.lopta)}</span><span>${esc(o.visina)}</span></div>
+      <div class="raptori-polje trojka-polje" id="tr-polje"></div>
+      <div id="tr-kontrole"></div>
+      <div id="sredina"></div>`;
+    mojSut = null; sutLeti = false;
+    trScena = Trojka.scena($('#tr-polje'), X.sc, { boja: ja_?.boja || '#74b9ff', avatar: ja_?.avatar, tr,
+      dodir: (v) => Zvuk.efekat('klik'), kos: () => { Zvuk.efekat('tacno'); }, promasaj: () => {} });
+    const sc = trScena;
+    ciscenje.push(() => { sc.unisti(); if (trScena === sc) trScena = null; });
+    if (!otkriveno) tajmer(X.pocetak, X.trajanje);
+    if (!otkriveno && igram) {
+      const sutni = (sila, ugao, saljem) => {
+        $('#tr-kontrole').innerHTML = '';
+        if (saljem) akcija('sut', { sila, ugao });
+        const kljuc = kljucEkrana;
+        sutLeti = true;
+        mojSut = sc.pusti([{ sila, ugao, boja: ja_.boja, avatar: ja_.avatar, glavna: true }]).then(() => {
+          sutLeti = false;
+          if (kljuc === kljucEkrana && V.faza === 'trojka') ekranTrojka(false);
+        });
+        if (kljuc === kljucEkrana) ekranTrojka(false);
+      };
+      if (X.moj) sutni(X.moj.sila, X.moj.ugao, false); // ponovo otvoren telefon – pokaži moj šut još jednom
+      else kontroleTrojke(sc, sutni);
+    }
+    if (!otkriveno && !igram) $('#tr-kontrole').innerHTML = '<div class="sitno centar rap-uputstvo">Svako na svom telefonu nišani i šutira…</div>';
+  }
+  if (!otkriveno) {
+    const moj = X.moj;
+    const izabrao = igram && (moj || sutLeti);
+    const html = `${izabrao ? `<div class="rezultat raptori-rezultat">${sutLeti || !moj ? '🏀 Lopta leti…' : '✅ Šutirao si!'}</div>` : ''}
+      ${koJeOdgovorio(X.predali, 'šutiralo')}
+      ${izabrao && !sutLeti ? '<div class="cekanje">Čekamo ostale<span class="tackice"></span></div>' : ''}`;
+    if ($('#sredina').dataset.h !== html) { $('#sredina').innerHTML = html; $('#sredina').dataset.h = html; }
+    if (jaDomacin() && (!igram || moj)) dugmeDalje('Završi rundu ➜'); else donjaTraka('');
+    return;
+  }
+  if (nov || staro?.faza !== 'trojka-otkrivanje') otkrivanjeTrojke();
+}
+
+// sila i ugao: povlačenje na platnu (grubo) + dugmići (fino), pa „Šutni!“
+function kontroleTrojke(sc, sutni) {
+  const k = $('#tr-kontrole');
+  let izbor = null;
+  const dugme = (vr, d, t) => `<button class="tr-korak" data-v="${vr}" data-d="${d}">${t}</button>`;
+  k.innerHTML = `<div class="kartica trojka-kontrole">
+      <div class="sitno centar rap-uputstvo">👆 Povuci od lopte: pravac = ugao, dužina = sila. Pa doteraj i šutni!</div>
+      <div class="tr-red"><span class="tr-oznaka">Sila <i>F</i></span>${dugme('sila', -1, '−1')}${dugme('sila', -0.1, '−0,1')}<b id="tr-sila">—</b>${dugme('sila', 0.1, '+0,1')}${dugme('sila', 1, '+1')}</div>
+      <div class="tr-red"><span class="tr-oznaka">Ugao <i>α</i></span>${dugme('ugao', -1, '−1°')}${dugme('ugao', -0.5, '−½°')}<b id="tr-ugao">—</b>${dugme('ugao', 0.5, '+½°')}${dugme('ugao', 1, '+1°')}</div>
+      <button class="dugme zuto" id="tr-sut" disabled>🏀 Šutni!</button>
+    </div>`;
+  const osvezi = () => {
+    $('#tr-sila').textContent = izbor ? `${Trojka.n1(izbor.sila)} N` : '—';
+    $('#tr-ugao').textContent = izbor ? `${Trojka.n1(izbor.ugao)}°` : '—';
+    $('#tr-sut').disabled = !izbor;
+  };
+  sc.nisani((sila, ugao) => { izbor = { sila, ugao }; osvezi(); });
+  const korak = (b) => {
+    izbor ||= { sila: 50, ugao: 50 };
+    const [sila, ugao] = Trojka.sredi(izbor.sila + (b.dataset.v === 'sila' ? +b.dataset.d : 0), izbor.ugao + (b.dataset.v === 'ugao' ? +b.dataset.d : 0));
+    izbor = { sila, ugao };
+    sc.postavi(sila, ugao);
+    osvezi();
+  };
+  k.querySelectorAll('.tr-korak').forEach((b) => {
+    let t1, t2;
+    const stani = () => { clearTimeout(t1); clearInterval(t2); };
+    b.addEventListener('pointerdown', (e) => {
+      e.preventDefault();
+      korak(b);
+      t1 = setTimeout(() => { t2 = setInterval(() => korak(b), 70); }, 400); // držanje = brzo menjanje
+    });
+    for (const d of ['pointerup', 'pointerleave', 'pointercancel']) b.addEventListener(d, stani);
+    ciscenje.push(stani);
+  });
+  $('#tr-sut').onclick = () => {
+    if (!izbor) return;
+    Zvuk.efekat('klik');
+    try { navigator.vibrate?.(30); } catch {}
+    sutni(izbor.sila, izbor.ugao, true);
+  };
+}
+
+async function otkrivanjeTrojke() {
+  const kljuc = kljucEkrana;
+  clearInterval(tikTajmer);
+  $('.tajmer i').style.transform = 'scaleX(0)';
+  $('.sekunde').textContent = '';
+  $('#tr-kontrole').innerHTML = '';
+  delete $('#sredina').dataset.h;
+  donjaTraka('');
+  if (sutLeti) { $('#sredina').innerHTML = '<div class="cekanje">Sve lopte su pale… rezultati stižu<span class="tackice"></span></div>'; await mojSut; }
+  if (kljuc !== kljucEkrana || !trScena) return;
+  const X = V.trojka, nb = X.sc.najbolje;
+  const red = (x) => { const d = V.dobitak[x.id] || {}; return (d.kos ? 10 : 0) + (d.cisto ? 1 : 0) - (d.blizu ?? 99) / 100; };
+  const igrali = V.igraci.filter((x) => X.sutevi[x.id]).sort((a, b) => red(b) - red(a));
+  const moj = V.dobitak[V.ja];
+  if (moj && !TV) {
+    Zvuk.efekat(moj.kos ? 'tacno' : 'netacno');
+    if (moj.kos) konfete(moj.cisto ? 120 : 70);
+  }
+  const ishod = (d) => d.bez ? 'Nije šutirao' : d.kos ? (d.cisto ? '🎯 Čist koš!' : '🏀 Koš!') : `Promašaj · ${Math.round(d.blizu * 100)} cm od obruča`;
+  const zlatni = { sila: nb.sila, ugao: nb.ugao, boja: '#ffd166', avatar: '⭐', glavna: true };
+  const sviSutevi = () => igrali.map((x, i) => ({ ...X.sutevi[x.id], boja: x.boja, avatar: x.avatar, glavna: i === 0 }));
+  const mojSutPodaci = X.sutevi[V.ja];
+  $('#sredina').innerHTML = `
+    ${moj && !TV ? `<div class="rezultat ${moj.kos ? 'dobro' : 'lose'}">${moj.bez ? 'Nisi šutirao 😕' : `${ishod(moj)} · +${moj.poeni + moj.bonus}${moj.oznaka ? ' · ' + esc(moj.oznaka) : ''}`}</div>` : ''}
+    <div class="rap-dugmad">${igrali.length > 1 || (igrali.length && TV) ? '<button class="dugme" id="tr-svi">↻ Svi šutevi</button>' : ''}<button class="dugme zuto" id="tr-naj">⭐ Idealan šut</button><button class="dugme" id="tr-sile">🧲 Sile</button></div>
+    ${igrali.length ? `<div class="kartica"><div class="lista-poena">${skratiListu(igrali, (x, i) => {
+      const d = V.dobitak[x.id] || {}, o = X.sutevi[x.id];
+      return `<div class="st ${x.id === V.ja ? 'ja' : ''}" style="animation-delay:${0.15 * Math.min(i, 8)}s">${mesto(i)}<span style="font-size:1.4em">${esc(x.avatar)}</span><div style="min-width:0"><b>${esc(x.ime)}</b>
+        <div class="sitno">${Trojka.n1(o.sila)} N · ${Trojka.n1(o.ugao)}° · <b>${ishod(d)}</b></div></div>
+        <span class="p"><span class="plus">+${d.poeni + d.bonus}</span>${d.oznaka ? `<div class="sitno">${esc(d.oznaka)}</div>` : ''}</span></div>`;
+    })}</div></div>` : ''}
+    <div class="kartica raptori-objasnjenje trojka-objasnjenje">
+      ${Trojka.objasni(X.sc, TV ? null : mojSutPodaci).map((p) => `<h3>${esc(p.naslov)}</h3><p>${matTekst(p.tekst)}</p>`).join('')}</div>`;
+  const sc = trScena;
+  let sileUkljucene = false;
+  const pusti = (lista) => { sc.najbolje(null); sc.sile(false); return sc.pusti(lista).then(() => { if (sc === trScena) { sc.najbolje(nb); sc.sile(sileUkljucene); } }); };
+  $('#tr-naj').onclick = () => { Zvuk.efekat('klik'); pusti([zlatni]); };
+  $('#tr-sile').onclick = () => { Zvuk.efekat('klik'); sileUkljucene = !sileUkljucene; sc.najbolje(nb); sc.sile(sileUkljucene); $('#tr-sile').classList.toggle('zuto', sileUkljucene); };
+  if ($('#tr-svi')) $('#tr-svi').onclick = () => { Zvuk.efekat('klik'); pusti(sviSutevi()); };
+  dugmeDalje(X.rb === X.ukupno ? 'Rang lista 🏆' : 'Sledeći šut ➜');
+  const vecVideo = igrali.length === 1 && igrali[0].id === V.ja && !TV;
+  if (igrali.length && !vecVideo) await pusti(sviSutevi());
+  else await pusti([zlatni]);
+  if (kljuc === kljucEkrana && sc === trScena) { sileUkljucene = true; sc.sile(true); $('#tr-sile')?.classList.add('zuto'); }
 }
 
 // ───────────────────────── kraj ─────────────────────────
