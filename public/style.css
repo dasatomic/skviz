@@ -559,3 +559,15 @@ body.ekran .raptori-opis { font-size: 1.05em; }
 .hemija-objasnjenje h3 { color: var(--istaknuto); margin: 2px 0 6px; }
 .hemija-objasnjenje p { margin: 6px 0 0; line-height: 1.45; }
 body.ekran .elementi { grid-template-columns: repeat(5, 1fr); }
+
+/* ───── bonus „Pronađi grad na karti“ (public/karta.js) ───── */
+.karta-pitanje { text-align: center; font-size: 1.1em; margin: 8px 0 4px; }
+.karta-pitanje b { color: var(--istaknuto); font-family: var(--uslovno); font-size: 1.3em; }
+.karta-polje { position: relative; border-radius: var(--radijus); overflow: hidden; box-shadow: 0 6px 28px #0008, inset 0 0 0 1px #ffffff14; background: var(--more); animation: ulaz .5s; }
+.karta-svg { display: block; width: 100%; }
+.mapa.karta-svg { max-height: none; touch-action: none; cursor: crosshair; }
+.karta-uputstvo { margin: 8px 0 2px; }
+.karta-rezultat { font-size: 1.4em; }
+.karta-objasnjenje h3 { color: var(--istaknuto); }
+.karta-objasnjenje p { margin: 6px 0 0; line-height: 1.45; }
+body.ekran .karta-pitanje { font-size: 1.35em; }

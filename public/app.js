@@ -239,12 +239,13 @@ function crtaj(staro) {
   if (f === 'raptori' || f === 'raptori-otkrivanje') kljuc = 'x' + V.raptori.rb + V.krug;
   if (f === 'trojka' || f === 'trojka-otkrivanje') kljuc = 't' + V.trojka.rb + V.krug;
   if (f === 'hemija' || f === 'hemija-otkrivanje') kljuc = 'h' + V.hemija.rb + V.krug;
+  if (f === 'karta' || f === 'karta-otkrivanje') kljuc = 'k' + V.karta.rb + V.krug;
   const nov = kljuc !== kljucEkrana;
   if (nov) { ocisti(); kljucEkrana = kljuc; app.innerHTML = ''; window.scrollTo(0, 0); }
   ({ lobi: ekranLobi, uvod: ekranUvod, pitanje: ekranPitanje, otkrivanje: ekranPitanje, tabela: ekranTabela,
     reci: ekranReci, 'reci-otkrivanje': ekranReci, slovo: ekranSlovo, 'slovo-otkrivanje': ekranSlovo,
     raptori: ekranRaptori, 'raptori-otkrivanje': ekranRaptori, trojka: ekranTrojka, 'trojka-otkrivanje': ekranTrojka,
-    hemija: ekranHemija, 'hemija-otkrivanje': ekranHemija, kraj: ekranKraj }[f] || ekranLobi)(nov, staro);
+    hemija: ekranHemija, 'hemija-otkrivanje': ekranHemija, karta: ekranKarta, 'karta-otkrivanje': ekranKarta, kraj: ekranKraj }[f] || ekranLobi)(nov, staro);
   meniDugme();
 }
 
@@ -680,6 +681,7 @@ function ekranUvod(nov) {
   if (u.vrsta === 'raptori') return uvodRaptora(u);
   if (u.vrsta === 'trojka') return uvodTrojke(u);
   if (u.vrsta === 'hemija') return uvodHemija(u);
+  if (u.vrsta === 'karta') return uvodKarte(u);
   app.innerHTML = `<div class="uvod">
     <div class="veliki">${pitanja ? kv?.ikona || '❓' : '🔤'}</div>
     <div class="sitno">Krug ${u.broj}${pitanja && kv?.podnaslov ? ' · ' + esc(kv.podnaslov) : pitanja ? '' : ' · bonus'}</div>
@@ -1146,8 +1148,8 @@ function osveziSlaganje() {
 }
 
 // ───────────────────────── bonus „Na slovo…“ ─────────────────────────
-const IKONA_BONUSA = { reci: '🔤', geografija: '🌍', nauka: '🧑‍🔬', istorija: '👑', sport: '🏅', raptori: '🦖', trojka: '🏀', hemija: '⚗️', 'raptori|trojka': '🎲' };
-const NAZIV_BONUSA = { reci: 'Najduža reč', geografija: 'Zanimljiva geografija', nauka: 'Naučnici – matematičari i fizičari', istorija: 'Istorijske ličnosti', sport: 'Sportisti', raptori: 'Beži od raptora!', trojka: 'Trojka!', hemija: 'Elementi – cena i opasnost', 'raptori|trojka': 'Beži od raptora! ili Trojka!' };
+const IKONA_BONUSA = { reci: '🔤', geografija: '🌍', nauka: '🧑‍🔬', istorija: '👑', sport: '🏅', raptori: '🦖', trojka: '🏀', hemija: '⚗️', karta: '🗺️', 'raptori|trojka': '🎲' };
+const NAZIV_BONUSA = { reci: 'Najduža reč', geografija: 'Zanimljiva geografija', nauka: 'Naučnici – matematičari i fizičari', istorija: 'Istorijske ličnosti', sport: 'Sportisti', raptori: 'Beži od raptora!', trojka: 'Trojka!', hemija: 'Elementi – cena i opasnost', karta: 'Pronađi grad na karti', 'raptori|trojka': 'Beži od raptora! ili Trojka!' };
 // nazivi iz Wikidate stižu ćirilicom; u latinici se preslovljavaju (i velika slova: Љубљана → Ljubljana)
 const naziv = (t) => (PISMO === 'cirilica' ? String(t ?? '') : [...String(t ?? '')].map((c) => {
   const l = LAT[c.toLowerCase()];
@@ -1398,6 +1400,19 @@ function uvodHemija(u) {
     <p>Dva zadatka iz periodnog sistema. <b>1)</b> Među 10 elemenata izaberi <b>3 najskuplja po gramu</b> (cene su okvirne).
        <b>2)</b> Među 8 elemenata izaberi <b>3 najradioaktivnija</b> – radioaktivniji znači <b>kraće poluvreme raspada</b>.
        Svaki zadatak vredi do 500 poena, srazmerno tome koliko si blizu najboljem izboru.</p>
+  </div>`;
+  Zvuk.efekat('bubanj');
+  dugmeDalje('Kreni! ➜');
+}
+
+function uvodKarte(u) {
+  const regije = Object.keys(Karta.REGIONI).map((id) => Karta.REGIONI[id]);
+  app.innerHTML = `<div class="uvod">
+    <div class="veliki">🗺️</div>
+    <div class="sitno">Krug ${u.broj} · bonus${u.brojReci > 1 ? ` · ${u.brojReci} runde` : ''}</div>
+    <h1>Pronađi grad na karti</h1>
+    <p>Otvoriće se karta – ${regije.map((r) => `${r.ikona} ${esc(r.naziv)}`).join(', ')} – a ti <b>dodirni mesto</b> gde misliš da je zadati grad.
+      Što si bliže, to više poena (do 500), pogodak „u sam centar“ +200, a najbliži među igračima +300. Tačna lokacija se otkriva na kraju.</p>
   </div>`;
   Zvuk.efekat('bubanj');
   dugmeDalje('Kreni! ➜');
@@ -1677,6 +1692,106 @@ async function otkrivanjeHemija() {
       <div class="elementi elementi-opt">${optimalni('radio', X.radio)}</div>
       ${Hemija.objasniRadio(X.radio).map((r) => `<p>${esc(r)}</p>`).join('')}</div>`;
   dugmeDalje(X.rb === X.ukupno ? 'Rang lista 🏆' : 'Sledeća berza ➜');
+}
+
+// ───────────────────────── bonus „Pronađi grad na karti“ (public/karta.js) ─────────────────────────
+let kartaScena = null; // crtež tekuće karte (Karta.scena)
+let kartaScenaP = null; // Promise scene – izbor i otkrivanje dele isti crtež
+function scenaKarte() {
+  if (!kartaScenaP) {
+    const kontejner = $('#karta-polje');
+    if (!kontejner) return Promise.resolve(null);
+    kartaScenaP = Karta.scena(kontejner, V.karta.oblast).then((sc) => {
+      ciscenje.push(() => { sc.unisti(); if (kartaScena === sc) kartaScena = null; });
+      kartaScena = sc;
+      return sc;
+    });
+  }
+  return kartaScenaP;
+}
+function ekranKarta(nov, staro) {
+  const X = V.karta;
+  const otkriveno = V.faza === 'karta-otkrivanje';
+  const ja_ = igrac(V.ja);
+  const igram = !TV && !!ja_;
+  if (nov) {
+    kartaScena = null;
+    kartaScenaP = null;
+    app.innerHTML = `
+      <div class="traka"><span class="znacka">🗺️ Pronađi grad${X.ukupno > 1 ? ` · ${X.rb}/${X.ukupno}` : ''}</span><span class="razmak"></span><span class="sekunde"></span></div>
+      <div class="tajmer"><i></i></div>
+      ${otkriveno ? '' : `<div class="karta-pitanje">Pronađi: <b>${esc(X.grad)}</b></div>`}
+      <div class="karta-polje" id="karta-polje"></div>
+      <div id="karta-uputstvo"></div>
+      <div id="sredina"></div>`;
+    if (!otkriveno) tajmer(X.pocetak, X.trajanje);
+  }
+  if (!otkriveno) {
+    if (nov) postaviKartu(igram);
+    const moj = X.moj;
+    const izabrao = igram && !!moj;
+    if (!igram && nov) $('#karta-uputstvo').innerHTML = '<div class="sitno centar karta-uputstvo">Svako na svom telefonu traži grad…</div>';
+    const html = `${izabrao ? '<div class="rezultat dobro karta-rezultat">📍 Izabrao si – čekamo ostale<span class="tackice"></span></div>' : ''}
+      ${koJeOdgovorio(X.predali, 'pogodilo')}`;
+    if ($('#sredina')?.dataset.h !== html) { $('#sredina').innerHTML = html; $('#sredina').dataset.h = html; }
+    if (jaDomacin() && (!igram || moj)) dugmeDalje('Završi rundu ➜'); else donjaTraka('');
+    return;
+  }
+  if (nov || staro?.faza !== 'karta-otkrivanje') otkrivanjeKarte();
+}
+
+async function postaviKartu(igram) {
+  const X = V.karta;
+  const kljuc = kljucEkrana;
+  const sc = await scenaKarte();
+  if (!sc || kljucEkrana !== kljuc) { sc?.unisti?.(); return; }
+  const ja_ = igrac(V.ja);
+  if (igram && !X.moj) {
+    $('#karta-uputstvo').innerHTML = '<div class="sitno centar karta-uputstvo">👆 Dodirni mesto na karti gde misliš da je grad</div>';
+    let poslao = false;
+    sc.klik((lon, lat) => {
+      if (poslao || V.faza !== 'karta' || V.karta?.moj) return;
+      poslao = true;
+      Zvuk.efekat('klik');
+      akcija('grad', { lon, lat });
+      sc.pin(lon, lat, ja_.boja, esc(ja_.ime));
+      $('#karta-uputstvo').innerHTML = '';
+    });
+  }
+  if (X.moj) sc.pin(X.moj.lon, X.moj.lat, ja_?.boja, esc(ja_?.ime || ''));
+}
+
+async function otkrivanjeKarte() {
+  const kljuc = kljucEkrana;
+  clearInterval(tikTajmer);
+  $('.tajmer i').style.transform = 'scaleX(0)';
+  $('.sekunde').textContent = '';
+  $('#karta-uputstvo').innerHTML = '';
+  delete $('#sredina').dataset.h;
+  donjaTraka('');
+  const X = V.karta;
+  const sc = await scenaKarte();
+  if (!sc || kljucEkrana !== kljuc) { sc?.unisti?.(); return; }
+  sc.ocistiP();
+  sc.pin(X.grad.lon, X.grad.lat, '#ffd166', esc(X.grad.ime), true);
+  const igrali = V.igraci.filter((x) => X.izbori[x.id]).sort((a, b) => (X.izbori[a.id].d || 0) - (X.izbori[b.id].d || 0));
+  for (const x of igrali) sc.pin(X.izbori[x.id].lon, X.izbori[x.id].lat, x.boja, esc(x.avatar));
+  const moj = V.dobitak[V.ja];
+  if (moj && !TV) {
+    Zvuk.efekat(moj.bez || !moj.poeni ? 'netacno' : 'tacno');
+    if (moj.oznaka?.includes('Najbliže') || moj.oznaka?.includes('centru')) konfete(80);
+  }
+  $('#sredina').innerHTML = `
+    ${moj && !TV ? `<div class="rezultat ${moj.bez ? 'lose' : 'dobro'}">${moj.bez ? 'Nisi pogodio 😕' : `📍 ${Karta.km(moj.d)} od grada · +${moj.poeni + moj.bonus}${moj.oznaka ? ' · ' + esc(moj.oznaka) : ''}`}</div>` : ''}
+    ${igrali.length ? `<div class="kartica"><div class="lista-poena">${skratiListu(igrali, (x, i) => {
+      const d = V.dobitak[x.id] || {};
+      return `<div class="st ${x.id === V.ja ? 'ja' : ''}" style="animation-delay:${0.15 * Math.min(i, 8)}s">${mesto(i)}<span style="font-size:1.4em">${esc(x.avatar)}</span><div style="min-width:0"><b>${esc(x.ime)}</b>
+        <div class="sitno">📍 ${Karta.km(X.izbori[x.id]?.d || 0)} od grada</div></div>
+        <span class="p"><span class="plus">+${(d.poeni || 0) + (d.bonus || 0)}</span>${d.oznaka ? `<div class="sitno">${esc(d.oznaka)}</div>` : ''}</span></div>`;
+    })}</div></div>` : '<div class="kartica sitno">Niko nije pogodio.</div>'}
+    <div class="kartica karta-objasnjenje"><h3>📍 ${esc(X.grad.ime)}</h3>
+      <p>Zlatna tačka je tačna lokacija. Tvoji i tuđi izbori su obojeni bojom igrača.</p></div>`;
+  dugmeDalje(X.rb === X.ukupno ? 'Rang lista 🏆' : 'Sledeći grad ➜');
 }
 
 // ───────────────────────── kraj ─────────────────────────
