@@ -2305,7 +2305,7 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | zabava | barton.jpg | Harald Krichel | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Tim_Burton) |
 | zabava | violoncelo.png | Georg Feitscher | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Cello) |
 | zabava | po.jpg | Unknown authorUnknown author; Restored by Yann Forget and Adam Cuerden | Public domain | [izvor](https://en.wikipedia.org/wiki/Edgar_Allan_Poe) |
-| zabava | snezna-sova.jpg | Chuck Homler d/b/a Focus On Wildlife | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Snowy_owl) |
+| zabava | snezna-sova.jpg | Petr Kratochvil | CC0 | [izvor](https://commons.wikimedia.org/wiki/File:Snowy_Owl_Portrait.jpg) |
 | zabava | mandragora.jpg | H. Zell | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Mandragora_officinarum) |
 | zabava | rouling.jpg | Daniel Ogren | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/J._K._Rowling) |
 | zabava | tolkin.jpg | Unknown photo studio commissioned by Tolkien's students 1925/6 (private communic | Public domain | [izvor](https://en.wikipedia.org/wiki/J._R._R._Tolkien) |
