@@ -95,13 +95,15 @@ label.sitno, .kartica > label { color: var(--akcent2); font-weight: 500; }
 .igrac.odsutan { opacity: .4; }
 .igrac .kruna { position: absolute; top: -12px; font-size: 1.1em; }
 .igrac .kvacica { position: absolute; right: 6px; top: 38px; background: var(--dobro); border: 2px solid var(--kartica); border-radius: 50%; width: 22px; height: 22px; display: grid; place-items: center; font-size: .7em; animation: uskok .3s; }
-.kvizovi { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 8px; }
+.kvizovi { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
 .kviz { background: var(--polje); border-radius: 12px; padding: 10px; text-align: left; border: 2px solid transparent; transition: background .15s; }
 .kviz:hover { background: #2c3a4b; }
 .kviz.izabran { border-color: var(--akcent); background: var(--kartica2); }
-.kviz .ik { font-size: 1.8em; }
+.kviz .ik { width: 44px; height: 44px; border-radius: 50%; background: var(--kartica2); display: grid; place-items: center; font-size: 1.5em; margin-bottom: 8px; }
 .kviz .nz { font-weight: 500; line-height: 1.2; }
 .kviz .br { font-size: .8em; color: var(--blago); }
+.odeljak { color: var(--akcent2); font-weight: 700; text-transform: uppercase; letter-spacing: .08em; font-size: .78em; margin: 16px 2px 6px; }
+.predmeti { display: flex; flex-direction: column; gap: 12px; }
 .izbor.razredi { justify-content: flex-start; margin-bottom: 8px; }
 .izbor button:disabled, .lekcija:disabled { opacity: .35; }
 /* lekcije = Telegram spisak razgovora */

@@ -423,18 +423,12 @@ async function ekranLobi(nov) {
   if (nov) {
     // spisak kvizova se osvežava pri svakom ulasku u lobi – pitanja objavljena bez restarta servera vidi svaka nova soba
     await osveziKvizove();
-    let info = { adrese: [location.hostname], port: location.port };
-    try { const i = await (await fetch('/api/info')).json(); if (Array.isArray(i.adrese)) info = i; } catch {}
     // dok smo čekali server, igra je možda krenula ili smo izašli iz sobe
     if (!V || V.faza !== 'lobi' || kljucEkrana !== 'lobi') return;
-    // preko tunela (javna adresa) prikaži nju, a u kućnoj mreži IP adresu računara
-    const lokalno = /^(localhost|127\.|\d+\.\d+\.\d+\.\d+$)/.test(location.hostname);
-    const adresa = lokalno ? `http://${info.adrese[0] || location.hostname}:${info.port}` : location.origin;
     app.innerHTML = `
       <h1 class="naslov-igre mali"><img class="logo" src="/logo.svg" alt="Сквиз"></h1>
       <div class="kartica centar">
         <div class="sitno">Kod sobe</div><div class="kod-sobe">${V.kod}</div>
-        <div class="adresa">${adresa}/?soba=${V.kod}</div>
         <div class="igraci" id="igraci"></div><div class="sitno" id="broj-igraca"></div>
       </div>
       <div id="podesavanja"></div>
@@ -514,6 +508,10 @@ const promeniKviz = (id) => {
   akcija('podesavanja', { podesavanja: p });
 };
 
+function karticaHTML(q) {
+  return `<button class="kviz ${q.izabran ? 'izabran' : ''}" data-k="${q.id}"><div class="ik">${q.ikona}</div><div class="nz">${esc(q.naziv)}</div><div class="br">${q.broj} ${q.zadaci ? 'zadataka' : 'pitanja'}${q.razredi ? ' · po razredima' : ''}${q.teme ? ' · ' + brojTema(q.teme) : ''}</div></button>`;
+}
+
 function izborKvizaHTML(P) {
   const r = rastaviIzbor(P.kviz);
   // kartice: obični kvizovi + jedna kartica po oblasti (opšti kviz i razredi zajedno)
@@ -526,8 +524,28 @@ function izborKvizaHTML(P) {
     const g = grupaOblasti(q.oblast);
     kartice.push({ id: 'oblast:' + q.oblast, naziv: g.naziv, ikona: g.ikona, broj: g.broj, izabran: r.oblast === q.oblast, razredi: g.clanovi.some((x) => x.razred), teme: g.podkategorije.length, zadaci: g.zadaci });
   }
-  return `<div class="kartica"><h3>Izaberi predmet</h3><div class="kvizovi">${kartice.map((q) => `
-    <button class="kviz ${q.izabran ? 'izabran' : ''}" data-k="${q.id}"><div class="ik">${q.ikona}</div><div class="nz">${esc(q.naziv)}</div><div class="br">${q.broj} ${q.zadaci ? 'zadataka' : 'pitanja'}${q.razredi ? ' · po razredima' : ''}${q.teme ? ' · ' + brojTema(q.teme) : ''}</div></button>`).join('')}</div></div>`;
+  const po = (id) => kartice.find((k) => k.id === id);
+  const niz = (ids) => ids.map(po).filter(Boolean).map(karticaHTML).join('');
+  const odeljak = (naziv) => `<div class="odeljak">${naziv}</div>`;
+  // „Predmeti“: po redu po dve ili tri kartice; „Dodatno“: Eksperimenti
+  const predmeti = [
+    ['matematika', 'oblast:matematika-zadaci'],
+    ['srpski-jezik', 'oblast:srpski-gramatika'],
+    ['oblast:biologija', 'oblast:istorija', 'oblast:geografija'],
+    ['oblast:fizika', 'oblast:fizika-zadaci', 'oblast:hemija'],
+  ];
+  const dodatno = ['oblast:eksperimenti'];
+  const predmetiIds = predmeti.flat();
+  // „Kultura“: Opšte znanje + sve ostale oblasti (bilo koja nova oblast automatski završava ovde)
+  const kultura = kartice.map((k) => k.id).filter((id) => !predmetiIds.includes(id) && !dodatno.includes(id));
+  return `<div class="kartica">
+    ${odeljak('Predmeti')}
+    <div class="predmeti">${predmeti.map((ids) => `<div class="kvizovi">${niz(ids)}</div>`).join('')}</div>
+    ${odeljak('Kultura')}
+    <div class="kvizovi">${niz(kultura)}</div>
+    ${odeljak('Dodatno')}
+    <div class="kvizovi">${niz(dodatno)}</div>
+  </div>`;
 }
 
 // spisak lekcija izabranog kviza: „Cela godina“ (ili `celina`) + lekcije, grupisane po temama
