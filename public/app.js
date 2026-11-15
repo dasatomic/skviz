@@ -489,6 +489,30 @@ function opisIzbora(id) {
   return { naziv: k.naziv, podnaslov: k.razred || (k.celina && k.lekcije.length) ? celina(k).toLowerCase() : '', ikona: k.ikona, boja: k.boja };
 }
 
+// koliko najviše pitanja ima izabrani izvor (za opcije „Broj pitanja“)
+function maksPitanja(P) {
+  if (P.kviz === 'opste') return kvizPo('opste')?.broj || 25;
+  const r = rastaviIzbor(P.kviz);
+  if (r.lekcija) return r.paket?.lekcije?.[r.lekcija - 1]?.broj || r.paket?.broj || 25;
+  if (r.paket) return r.paket?.broj || 25;
+  if (r.oblast) return grupaOblasti(r.oblast).broj || 25;
+  return 25;
+}
+// opcije za „Broj pitanja“: standardni koraci do maksimuma; ako izvor ima manje od 25 pitanja, dodaj „N (sva)“
+function brojPitanjaOpcije(maks) {
+  if (!maks || maks >= 25) return { vrednosti: [5, 10, 15, 20, 25], natpisi: ['5', '10', '15', '20', '25'] };
+  const std = [5, 10, 15, 20].filter((v) => v <= maks);
+  if (std[std.length - 1] !== maks) std.push(maks);
+  return { vrednosti: std, natpisi: std.map((v) => (v === maks ? `${v} (sva)` : String(v))) };
+}
+// promena kviza: „Broj pitanja“ van standardnih opcija (izbor „sva“ na malom izvoru) vraćamo na 15,
+// da novi izvor uvek ima ispravno istaknutu opciju
+const promeniKviz = (id) => {
+  const p = { kviz: id };
+  if (![5, 10, 15, 20, 25].includes(V.podesavanja.brojPitanja)) p.brojPitanja = 15;
+  akcija('podesavanja', { podesavanja: p });
+};
+
 function izborKvizaHTML(P) {
   const r = rastaviIzbor(P.kviz);
   // kartice: obični kvizovi + jedna kartica po oblasti (opšti kviz i razredi zajedno)
@@ -571,7 +595,7 @@ function podesavanja() {
         korakLobija = 'podesavanja';
         // isti predmet kao do sada – zadrži već izabran razred/lekciju
         const isti = id.startsWith('oblast:') && rastaviIzbor(P.kviz).oblast === id.slice(7);
-        if (!isti && id !== P.kviz) akcija('podesavanja', { podesavanja: { kviz: id } });
+        if (!isti && id !== P.kviz) promeniKviz(id);
         podesavanja();
         window.scrollTo({ top: $('#podesavanja').offsetTop - 10, behavior: 'smooth' });
       }));
@@ -579,6 +603,10 @@ function podesavanja() {
     donjaTraka('<div class="cekanje">Izaberi predmet ☝️</div>');
     return;
   }
+  const maks = maksPitanja(P);
+  const bpo = brojPitanjaOpcije(maks);
+  const izabranoBr = Math.min(P.brojPitanja, maks);
+  const brojReciOpcije = P.krugovi === 'reci' ? [1, 2, 3, 5, 10, 15] : [0, 1, 2, 3, 5, 10, 15];
   const html = `
     ${izborRazredaHTML(P)}
     <div class="kartica"><h3>Podešavanja</h3>
@@ -586,10 +614,10 @@ function podesavanja() {
       ${V.zadaci && P.krugovi !== 'reci' ? `<div class="podesavanje"><span>Broj zadataka</span>${opcija('brojZadataka', [1, 3, 5, 10])}</div>
       <div class="podesavanje"><span>Minuta po zadatku</span>${opcija('vremeZadatka', [120, 180, 300, 480, 600, 900], ['2', '3', '5', '8', '10', '15'])}</div>
       <div class="sitno">Zadaci se rešavaju na papiru; posle svakog sledi detaljno rešenje korak po korak.</div>` : ''}
-      ${!V.zadaci && P.krugovi !== 'reci' ? `<div class="podesavanje"><span>Broj pitanja</span>${opcija('brojPitanja', [5, 10, 15, 20, 25])}</div>
+      ${!V.zadaci && P.krugovi !== 'reci' ? `<div class="podesavanje"><span>Broj pitanja</span><div class="izbor" data-p="brojPitanja">${bpo.vrednosti.map((v, i) => `<button data-v="${v}" class="${String(izabranoBr) === String(v) ? 'izabran' : ''}">${bpo.natpisi[i]}</button>`).join('')}</div></div>
       <div class="podesavanje"><span>Sekundi za pitanje</span>${opcija('vreme', [10, 15, 20, 30, 45])}</div>` : ''}
-      ${P.krugovi !== 'pitanja' ? `<div class="sitno bonus-opis">${IKONA_BONUSA[V.bonus] || '🎲'} ${opisBonusa(V.bonus, P.brojReci, V.bonusi)}</div>
-      <div class="podesavanje"><span>Bonus runde</span>${opcija('brojReci', [1, 2, 3, 5, 10, 15], ['1', '2', '3', '5', '10', '15'])}</div>
+      ${P.krugovi !== 'pitanja' ? `<div class="sitno bonus-opis">${P.brojReci ? (IKONA_BONUSA[V.bonus] || '🎲') + ' ' : ''}${opisBonusa(V.bonus, P.brojReci, V.bonusi)}</div>
+      <div class="podesavanje"><span>Bonus runde</span>${opcija('brojReci', brojReciOpcije)}</div>
       <div class="podesavanje"><span>Sekundi po rundi</span>${opcija('vremeReci', [45, 60, 75, 90, 120])}</div>
       ` : ''}
       <div class="podesavanje"><span>Pismo</span>${opcija('pismo', ['cirilica', 'latinica'], ['Ćirilica', '<span data-lat>Latinica</span>'])}</div>
@@ -601,7 +629,7 @@ function podesavanja() {
     k.dataset.h = html;
     k.querySelectorAll('[data-k]').forEach((b) => (b.onclick = () => {
       Zvuk.efekat('klik');
-      akcija('podesavanja', { podesavanja: { kviz: b.dataset.k } });
+      promeniKviz(b.dataset.k);
     }));
     $('#promeni-predmet', k).onclick = () => { Zvuk.efekat('klik'); korakLobija = 'predmet'; podesavanja(); osveziKvizove().then(() => korakLobija === 'predmet' && V?.faza === 'lobi' && $('#podesavanja') && podesavanja()); };
     k.querySelectorAll('.izbor[data-p] button').forEach((b) => (b.onclick = () => {
@@ -630,6 +658,7 @@ async function slavni() {
 
 // opis bonus igara u lobiju; više rundi se deli na krugove različitih igara (Soba.planBonusa)
 function opisBonusa(v, n, lista) {
+  if (!n) return 'Bez bonus krugova';
   if (v === 'nasumicno') {
     const k = Math.min(n, 5);
     return k === 1 ? 'Bonus krug: <b>iznenađenje – najduža reč ili igra „Na slovo…“</b>' : `Bonus: <b>iznenađenje – ${k} ${k < 5 ? 'različite igre' : 'različitih igara'}</b> (najduža reč i igre „Na slovo…“)`;
