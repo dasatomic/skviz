@@ -467,3 +467,92 @@ class MrezaKocke(ThreeDScene):
         self.wait(3)
         self.stop_ambient_camera_rotation()
         self.wait(0.5)
+
+
+class TalesProporcije(Scene):
+    """Talesova teorema: paralelne prave seku krake ugla na proporcionalne duži."""
+    def construct(self):
+        O = np.array([-2.5, -1.3, 0])
+        u = 28 * DEGREES
+        A = O + 3.2 * np.array([np.cos(u), np.sin(u), 0])
+        B = O + 6.4 * np.array([np.cos(u), np.sin(u), 0])
+        C = O + 2.0 * np.array([1, 0, 0])
+        D = O + 4.0 * np.array([1, 0, 0])
+        krak1 = Line(O, B + 0.5 * np.array([np.cos(u), np.sin(u), 0])).set_stroke(WHITE, 2)
+        krak2 = Line(O, D + 0.5 * RIGHT).set_stroke(WHITE, 2)
+        self.play(Create(krak1), Create(krak2))
+        self.add(Dot(O, radius=0.07))
+        self.play(Create(Line(A, C).set_stroke(PLAVA, 3)), Create(Line(B, D).set_stroke(ROZE, 3)))
+        for p, n in [(A, "A"), (B, "B"), (C, "C"), (D, "D"), (O, "O")]:
+            self.add(T(n, 24, ZUTA).next_to(p, p - O + 0.25 * np.array([0.2, 0.2, 0])))
+        self.play(Write(T("4 : 6 = 3 : 4,5", 32, ZUTA).move_to([1.6, 1.5, 0])))
+        self.wait(3)
+
+
+class SlicniTrouglovi(Scene):
+    """Slični trouglovi: uvećanje čuva uglove, a stranice su proporcionalne."""
+    def construct(self):
+        mali = Polygon([-2.6, -1.4, 0], [-0.6, -1.4, 0], [-0.6, 0.6, 0]).set_fill(PLAVA, 0.5).set_stroke(WHITE, 2)
+        veliki = Polygon([0.4, -1.4, 0], [4.4, -1.4, 0], [0.4, 2.6, 0]).set_fill(ROZE, 0.5).set_stroke(WHITE, 2)
+        self.play(Create(mali))
+        self.play(Transform(mali.copy(), veliki), run_time=1.6)
+        self.add(veliki)
+        self.play(Write(T("3 : 4 : 5", 28, ZUTA).move_to([-1.6, -1.9, 0])),
+                  Write(T("6 : 8 : 10", 28, ZUTA).move_to([2.4, -1.9, 0])))
+        self.play(Write(T("stranice ×2, uglovi isti", 26).move_to([0.9, 1.6, 0])))
+        self.wait(3)
+
+
+class LinearnaFunkcija(Scene):
+    """Grafik linearne funkcije y = kx + n: nagib k i odsečak n."""
+    def construct(self):
+        ax = Axes(x_range=[-3, 5, 1], y_range=[-2, 5, 1], x_length=5.2, y_length=3.6,
+                  axis_config={"color": GRAY, "include_numbers": False}).move_to([0.2, -0.2, 0])
+        self.play(Create(ax))
+        n = 1
+        k = 1.2
+        prava = Line(ax.c2p(-2.4, k * -2.4 + n), ax.c2p(4.4, k * 4.4 + n)).set_stroke(PLAVA, 4)
+        self.play(Create(prava))
+        # odsečak na y-osi
+        N = Dot(ax.c2p(0, n), radius=0.08, color=ZUTA)
+        self.play(FadeIn(N))
+        self.add(T("n", 26, ZUTA).next_to(ax.c2p(0, n), LEFT))
+        # trougao nagiba: udesno 1, nagore k
+        p1, p2, p3 = ax.c2p(1, n), ax.c2p(1, n + k), ax.c2p(2, n + k)
+        tr = VGroup(Line(p1, p2), Line(p2, p3)).set_stroke(ROZE, 3)
+        self.play(Create(tr))
+        self.add(T("1", 22, ZUTA).next_to(Line(p1, ax.c2p(2, n)), DOWN, buff=0.1))
+        self.add(T("k", 22, ZUTA).next_to(Line(p1, p2), LEFT, buff=0.05))
+        self.play(Write(T("y = kx + n", 34, ZUTA).move_to([0.2, 1.9, 0])))
+        self.wait(3)
+
+
+class SistemGraficki(Scene):
+    """Rešenje sistema = tačka preseka dve prave."""
+    def construct(self):
+        ax = Axes(x_range=[-3, 4, 1], y_range=[-3, 4, 1], x_length=5.2, y_length=5.2,
+                  axis_config={"color": GRAY}).move_to([0, -0.1, 0])
+        self.play(Create(ax))
+        p1 = Line(ax.c2p(-2.6, 0.8 * -2.6 + 1), ax.c2p(3.4, 0.8 * 3.4 + 1)).set_stroke(PLAVA, 4)
+        p2 = Line(ax.c2p(-2.6, -1.5 * -2.6 + 5), ax.c2p(3.4, -1.5 * 3.4 + 5)).set_stroke(ROZE, 4)
+        self.play(Create(p1), Create(p2))
+        S = Dot(ax.c2p(1.739, 2.391), radius=0.09, color=ZUTA)
+        self.play(FadeIn(S))
+        self.add(T("(x, y)", 28, ZUTA).next_to(S, UP))
+        self.play(Write(T("presek = rešenje", 28).move_to([0.2, 1.8, 0])))
+        self.wait(3)
+
+
+class MrezaValjka(Scene):
+    """Mreža valjka: omotač je pravougaonik širine 2rπ, osnove su krugovi."""
+    def construct(self):
+        r, H = 1.0, 2.2
+        # omotač (pravougaonik) + dve osnove
+        om = Rectangle(width=2 * PI * r * 0.55, height=H).set_fill(PLAVA, 0.5).set_stroke(WHITE, 2).move_to([0.2, 0.1, 0])
+        k1 = Circle(r * 0.55).set_fill(ROZE, 0.5).set_stroke(WHITE, 2).move_to([-2.6, 1.2, 0])
+        k2 = Circle(r * 0.55).set_fill(ROZE, 0.5).set_stroke(WHITE, 2).move_to([-2.6, -1.0, 0])
+        self.play(Create(om), Create(k1), Create(k2))
+        self.add(T("2rπ", 26, ZUTA).next_to(om, UP, buff=0.1))
+        self.add(T("H", 26, ZUTA).next_to(om, RIGHT, buff=0.1))
+        self.play(Write(T("M = 2rπH", 32, ZUTA).move_to([2.2, -1.6, 0])))
+        self.wait(3)
