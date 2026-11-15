@@ -27,7 +27,7 @@ sudo ufw allow 3000/tcp
    - **Na slovo…** (geografija, fizika i matematika, istorija, sport): zadato je slovo, a igrači kucaju što više pojmova na to slovo – država, grad, reka i planina („zanimljiva geografija“), matematičari i fizičari, istorijske ličnosti ili sportisti. Važe latinica i ćirilica, sitne slovne greške (Cacak, Mihailo Pupin) i strani oblici imena (Euler = Ojler), a ne važi pogrešno ime (Marko Pupin). Rečnici su iz Wikidate (`podaci/bonus/`, gradi ih `node alati/gradi-bonus.js`); na kraju runde se vide slike i podaci o navedenim ličnostima i šta se još moglo navesti.
    - **Najduža reč** (ostali predmeti): od 12 slova složi najdužu srpsku reč u osnovnom obliku (važe i imena – Venera, Beograd – i pojmovi iz kvizova). Reči proverava Hunspell rečnik srpskog jezika (~190.000 osnovnih reči); za promenjen oblik („kućama“) igra kaže koja je osnovna reč, a na kraju se vidi i najduža moguća reč.
    - U „Opštem znanju“ bonus je iznenađenje: najduža reč ili jedna od igara „Na slovo…“.
-7. **Proglašenje pobednika** na podijumu; rezultati se upisuju u porodičnu tablu slavnih.
+7. **Proglašenje pobednika** na podijumu.
 
 TV ili računar može biti veliki ekran za sve: otvori `/ekran` i upiši kod sobe.
 
@@ -45,8 +45,6 @@ Potreban je samo Node.js 18 ili noviji – nema `npm install`.
 npm start            # pokreće server na portu 3000
 npm run proveri      # proverava sve kvizove (format, duplikate, slike)
 ```
-
-Statistika igrača čuva se lokalno u `podaci/statistika.json` (nije deo repozitorijuma).
 
 ## Doprinos
 

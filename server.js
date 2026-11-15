@@ -9,7 +9,6 @@ const crypto = require('crypto');
 
 const kvizovi = require('./lib/kvizovi');
 const recnik = require('./lib/recnik');
-const statistika = require('./lib/statistika');
 const Soba = require('./lib/soba');
 const predlozi = require('./lib/predlozi');
 const telemetrija = require('./lib/telemetrija');
@@ -285,8 +284,6 @@ async function obradi(req, res) {
   if (p === '/api/kvizovi') { kvizovi.ucitajSve(); return kraj(res, 200, kvizovi.spisak()); }
   // slika ličnosti iz bonus runde (preuzima se sa Wikimedia Commons jednom i čuva u podaci/bonus-slike/)
   if (p === '/api/slika-bonus') return slikeBonus.posalji(res, url.searchParams.get('q') || '');
-  // na javnom serveru (production) porodična statistika se ne izlaže strancima
-  if (p === '/api/statistika') return kraj(res, 200, process.env.NODE_ENV === 'production' && !process.env.JAVNA_STATISTIKA ? { igraci: {}, igre: [] } : statistika.citaj());
   // adrese računara trebaju samo u kućnoj mreži (lobi ih ispisuje za telefone); javni server ih ne otkriva
   if (p === '/api/info') return kraj(res, 200, { adrese: process.env.NODE_ENV === 'production' ? [] : lanAdrese(), port: PORT, reci: brojReci });
 

@@ -292,16 +292,6 @@ function pocetna() {
     app.querySelectorAll('.avatari button').forEach((x) => x.classList.toggle('izabran', x === b));
     Zvuk.efekat('klik');
   }));
-  // poznati igrači (porodična statistika) – stižu naknadno, da početni ekran ne čeka server
-  fetch('/api/statistika').then((r) => r.json()).then((st) => {
-    const poznati = Object.values(st.igraci || {}).filter((p) => p && typeof p.ime === 'string');
-    if (!poznati.length || !ime.isConnected || $('.cipovi')) return;
-    ime.insertAdjacentHTML('afterend', `<div class="cipovi">${poznati.map((p) => `<button class="cip" data-ime="${esc(p.ime)}" data-av="${esc(p.avatar)}">${esc(p.avatar)} ${esc(p.ime)}</button>`).join('')}</div>`);
-    app.querySelectorAll('.cip').forEach((b) => (b.onclick = () => {
-      ime.value = b.dataset.ime; ja.avatar = b.dataset.av;
-      app.querySelectorAll('.avatari button').forEach((x) => x.classList.toggle('izabran', x.dataset.a === ja.avatar));
-    }));
-  }).catch(() => {});
   const proveri = () => {
     Zvuk.otkljucaj();
     ja.ime = ime.value.trim();
@@ -431,9 +421,7 @@ async function ekranLobi(nov) {
         <div class="sitno">Kod sobe</div><div class="kod-sobe">${V.kod}</div>
         <div class="igraci" id="igraci"></div><div class="sitno" id="broj-igraca"></div>
       </div>
-      <div id="podesavanja"></div>
-      <div class="kartica" id="slavni"></div>`;
-    slavni();
+      <div id="podesavanja"></div>`;
   }
   if (!$('#igraci')) return; // prvo crtanje još čeka /api/kvizovi – ono će prikazati i ovu izmenu
   $('#igraci').classList.toggle('gusto', mnogo());
@@ -674,18 +662,6 @@ function podesavanja() {
   if (!V.igraci.length) { donjaTraka('<div class="cekanje">Čeka se da igrači uđu u sobu<span class="tackice"></span></div>'); return; }
   const d = donjaTraka(`<button class="dugme zeleno" id="start">▶ Pokreni igru${V.igraci.length === 1 && !V.gledam ? ' (sam)' : ''}</button>`);
   $('#start', d).onclick = () => { Zvuk.otkljucaj(); Zvuk.efekat('fanfare'); akcija('pokreni'); };
-}
-
-async function slavni() {
-  let s;
-  try { s = await (await fetch('/api/statistika')).json(); } catch { return; }
-  const lista = Object.values(s.igraci || {}).sort((a, b) => b.pobede - a.pobede || b.poeni - a.poeni);
-  const el = $('#slavni');
-  if (!el) return;
-  if (!lista.length) { el.innerHTML = '<h3>🏆 Porodična tabla slavnih</h3><div class="sitno">Ovde će se upisivati pobede, rekordi i najduže reči.</div>'; return; }
-  el.innerHTML = `<h3>🏆 Porodična tabla slavnih</h3><table class="slavni">${lista.slice(0, 10).map((p) => `<tr>
-    <td>${esc(p.avatar)} <b>${esc(p.ime)}</b><div class="sitno">${p.igre} igara · ${p.odgovorenih ? Math.round((100 * p.tacnih) / p.odgovorenih) : 0}% tačno${p.najduzaRec ? ' · reč: ' + esc(rec(p.najduzaRec)).toUpperCase() : ''}</div></td>
-    <td>🥇 ${p.pobede}<div class="sitno">rekord ${p.rekord || 0}</div></td></tr>`).join('')}</table>`;
 }
 
 // opis bonus igara u lobiju; više rundi se deli na krugove različitih igara (Soba.planBonusa)
@@ -1833,8 +1809,7 @@ function ekranKraj(nov) {
     const stub = (x, m) => x ? `<div class="stub m${m}"><div class="lice">${esc(x.avatar)}</div><div class="ime">${esc(x.ime)}</div><div class="poeni">${x.poeni}</div><div class="blok">${m}</div></div>` : '<div class="stub"></div>';
     app.innerHTML = `<h1 class="centar" style="animation:uskok .8s">${R.length > 1 ? '🎉 Pobednik!' : '🎉 Kraj igre!'}</h1>
       <div class="podijum">${stub(p2, 2)}${stub(p1, 1)}${stub(p3, 3)}</div>
-      ${R.length > 3 ? `<div class="kartica"><div class="lista-poena">${skratiListu(R.slice(3), (x, i) => `<div class="st ${x.id === V.ja ? 'ja' : ''}"><b>${i + 4}.</b> ${esc(x.avatar)} ${esc(x.ime)}<span class="p">${x.poeni}</span></div>`, TV ? 12 : 7)}</div></div>` : ''}
-      <div class="kartica centar sitno">Rezultati su upisani u porodičnu tablu slavnih 🏆</div>`;
+      ${R.length > 3 ? `<div class="kartica"><div class="lista-poena">${skratiListu(R.slice(3), (x, i) => `<div class="st ${x.id === V.ja ? 'ja' : ''}"><b>${i + 4}.</b> ${esc(x.avatar)} ${esc(x.ime)}<span class="p">${x.poeni}</span></div>`, TV ? 12 : 7)}</div></div>` : ''}`;
     Zvuk.efekat('bubanj');
     setTimeout(() => { Zvuk.efekat('fanfare'); konfete(200); }, 2000);
     setTimeout(() => konfete(120), 3500);
