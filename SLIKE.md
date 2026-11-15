@@ -1513,7 +1513,6 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | razred8-biologija | poskok.jpg | Holger Krisp | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Vipera_ammodytes) |
 | razred8-biologija | dabar.jpg | Per Harald Olsen | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Eurasian_beaver) |
 | razred8-biologija | tekunica.jpg | Charles J. Sharp | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/European_ground_squirrel) |
-| razred8-biologija | hloroza.jpg | User:Royalbroil | CC BY-SA 2.5 | [izvor](https://en.wikipedia.org/wiki/Chlorosis) |
 | razred8-biologija | saguaro.jpg | WClarke | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Saguaro) |
 | razred8-biologija | morska-kornjaca.jpg | Charles J. Sharp | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Green_sea_turtle) |
 | razred8-biologija | duzica.jpg | Rapidreflex | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Iris_(anatomy)) |
