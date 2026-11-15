@@ -315,7 +315,7 @@
       "odgovori": [
         "Na zakonima fizike",
         "Na pravilima gramatike",
-        "Na zakonima biologije samo",
+        "Na zakonima biologije",
         "Na pravilima saobraćaja"
       ],
       "zanimljivost": "Frižider, mikrotalasna, televizor i telefon – sve je to primenjena fizika.",
@@ -329,7 +329,7 @@
         "Rendgen",
         "Termometar",
         "Stetoskop",
-        "Toplomer"
+        "Mikroskop"
       ],
       "zanimljivost": "Rendgensko zračenje je otkrio Vilhelm Rendgen 1895, a prva rendgenska slika bila je šaka njegove žene sa prstenom.",
       "rec": "rendgen"
@@ -415,7 +415,7 @@
     {
       "lekcija": 2,
       "tezina": 3,
-      "pitanje": "Ko je otkrio da se pomoću elektromagnetnih talasa mogu slati poruke bez žica (radio), uz Teslu i Markonija?",
+      "pitanje": "Radio šalje poruke bez žica pomoću elektromagnetnih talasa. Šta je tačno o otkriću tih talasa?",
       "odgovori": [
         "Hajnrih Herc je prvi dokazao postojanje tih talasa",
         "Isak Njutn je prvi poslao poruku preko talasa svetlosti",
@@ -682,7 +682,7 @@
         "Dinamometar",
         "Hronometar"
       ],
-      "zanimljivost": "Prvi termometar sa tečnošću napravio je Galilej – zvao se termoskop.",
+      "zanimljivost": "Preteču termometra, termoskop, napravio je Galilej krajem 16. veka – pokazivao je da li je toplije ili hladnije, ali nije imao skalu.",
       "rec": "termometar"
     },
     {
@@ -1118,7 +1118,7 @@
         "Kružno kretanje, pun krug oko tačke vešanja",
         "Nema kretanja – klatno stoji na jednom mestu"
       ],
-      "zanimljivost": "Galilej je primetio da klatno uvek isto dugo zaljulja, posmatrajući luster u katedrali u Pizi.",
+      "zanimljivost": "Galilej je, posmatrajući luster u katedrali u Pizi, primetio da jedan zamah klatna uvek traje isto, bio zamah veliki ili mali.",
       "rec": "klatno",
       "medijiOdgovora": {
         "vrsta": "fizika",
@@ -1614,7 +1614,7 @@
       "tezina": 1,
       "pitanje": "Ko je brži – trkač koji 100 m istrči za 10 s ili biciklista koji vozi 36 km/h?",
       "odgovori": [
-        "Isti su – oba imaju 10 m/s",
+        "Jednako su brzi – 10 m/s",
         "Trkač",
         "Biciklista",
         "Ne može se uporediti"
@@ -1654,7 +1654,7 @@
         "Samo 10 sekundi, ako se ne zaustavlja",
         "Tačno 1 sekundu, jer je metar kratak"
       ],
-      "zanimljivost": "Najsporiji sisar, lenjivac, kreće se tek nešto brže – oko 0,25 km/h.",
+      "zanimljivost": "Najsporiji sisar, lenjivac, po drveću se kreće oko 4 metra u minutu – i to je oko 70 puta brže od ovog puža.",
       "rec": "puž"
     },
     {
@@ -1956,8 +1956,8 @@
       "odgovori": [
         "Lopta koja se kotrlja i zaustavlja",
         "Pokretna traka stalne brzine",
-        "Kazaljka sata",
-        "Satelit na stalnoj brzini"
+        "Pokretne stepenice u radu",
+        "Voz na pravoj pruzi, stalno 80 km/h"
       ],
       "zanimljivost": "Lopta se usporava zbog trenja i otpora vazduha.",
       "rec": "lopta",
@@ -2054,7 +2054,7 @@
         "84 km/h",
         "10 km/h"
       ],
-      "zanimljivost": "Rekord u maratonu je nešto ispod 2 sata i 1 minuta – vrhunski maratonci trče oko 21 km/h čitava 42 km.",
+      "zanimljivost": "Najbolji maratonci sveta zaista trče maraton za oko 2 sata – drže oko 21 km/h čitava 42 kilometra.",
       "rec": "maraton"
     },
     {
@@ -2067,7 +2067,7 @@
         "Pređeni put",
         "Količinu goriva"
       ],
-      "zanimljivost": "Kilometar-sat (odometar) pored brzinomera pokazuje ukupno pređeni put.",
+      "zanimljivost": "Brojač kilometara (odometar) pored brzinomera pokazuje ukupno pređeni put.",
       "rec": "brzinomer"
     },
     {
@@ -2901,7 +2901,7 @@
         "Magnetna privlačnost",
         "Električno privlačenje kose"
       ],
-      "zanimljivost": "Pri sudaru dva bilijarska kugla deluju jedna na drugu dodirom – samo delić sekunde.",
+      "zanimljivost": "Pri sudaru dve bilijarske kugle deluju jedna na drugu dodirom – samo delić sekunde.",
       "rec": "dodir"
     },
     {
@@ -3003,7 +3003,7 @@
     {
       "lekcija": 10,
       "tezina": 1,
-      "pitanje": "Šta je istezanje opruge primer dejstva sile?",
+      "pitanje": "Istezanje opruge je primer kog dejstva sile?",
       "odgovori": [
         "Promene oblika tela",
         "Promene boje",
@@ -3112,9 +3112,9 @@
     {
       "lekcija": 11,
       "tezina": 2,
-      "pitanje": "Na kom nebeskom telu je sila teže najjača?",
+      "pitanje": "Na kom od ovih nebeskih tela je sila teže najjača?",
       "odgovori": [
-        "Na Suncu (od navedenih)",
+        "Na Suncu, jer ima najveću masu",
         "Na Mesecu, jer je najbliži",
         "Na Marsu, jer je crven i vreo",
         "Na Zemlji, jer je najveća planeta"
@@ -3462,7 +3462,7 @@
       "tezina": 3,
       "pitanje": "Zašto se posle hoda po tepihu ponekad „strujimo“ kad dodirnemo kvaku?",
       "odgovori": [
-        "Telo se naelektrisalo trenjem pa se pražni",
+        "Telo se naelektrisalo trenjem pa se prazni",
         "Kvaka je magnetna, pa privlači gvožđe iz naše krvi",
         "Tepih je jak magnet koji nas namagnetiše dok hodamo",
         "Zbog gravitacije"
@@ -3886,7 +3886,7 @@
     {
       "lekcija": 14,
       "tezina": 3,
-      "pitanje": "Kako se zove razlika između trenja i sile trenja?",
+      "pitanje": "U čemu je razlika između trenja i sile trenja?",
       "odgovori": [
         "Trenje je pojava, a sila trenja je veličina koja je brojno opisuje",
         "Nema razlike – trenje i sila trenja su potpuno isti pojmovi u fizici i u životu",
@@ -4041,10 +4041,10 @@
     {
       "lekcija": 14,
       "tezina": 2,
-      "pitanje": "Zašto pantalone i patike imaju dezen (šare) na đonu?",
+      "pitanje": "Zašto patike i čizme imaju šare (dezen) na đonu?",
       "odgovori": [
         "Da bi povećale trenje i sprečile klizanje",
-        "Zbog lepote samo, da bi obuća bila modernija i lepša",
+        "Samo zbog lepote, da bi obuća bila modernija",
         "Da bi bile lakše",
         "Da bi brže trčali po vodi"
       ],
@@ -4080,7 +4080,7 @@
     {
       "lekcija": 14,
       "tezina": 2,
-      "pitanje": "Šta je „vodeni klizač“ (akvaplaning) kod automobila?",
+      "pitanje": "Šta je akvaplaning („vodeni klin“) kod automobila?",
       "odgovori": [
         "Kada sloj vode smanji trenje pa auto klizi",
         "Kada auto pliva u reci posle velike poplave i odlazi niz vodu",
@@ -4511,7 +4511,7 @@
       "pitanje": "Šta je svetlosna godina?",
       "odgovori": [
         "Rastojanje koje svetlost pređe za godinu dana",
-        "Vreme od godinu dana u svemiru, merena satom na raketi",
+        "Vreme od godinu dana u svemiru, mereno satom na raketi",
         "Jedinica za sjaj zvezde, odnosno koliko jako ona svetli",
         "Starost zvezde od njenog nastanka do danas, u godinama"
       ],
@@ -4668,8 +4668,8 @@
       "odgovori": [
         "Vreme jednog okretanja Zemlje oko svoje ose",
         "Vreme jednog obilaska oko Sunca",
-        "Vreme između dva punog meseca",
-        "Vreme od izlaska do zalaska Sunca uvek"
+        "Vreme između dva puna meseca",
+        "Vreme od izlaska do zalaska Sunca"
       ],
       "zanimljivost": "Nekada su dani bili kraći: pre 400 miliona godina dan je trajao oko 22 sata.",
       "rec": "dan"
@@ -4694,10 +4694,10 @@
       "odgovori": [
         "Merio je koliko vode iscuri iz posude",
         "Mobilnim telefonom",
-        "Brojanjem do sto u sebi samo",
+        "Brojanjem u sebi do sto",
         "Sunčanim satom noću"
       ],
-      "zanimljivost": "Galilej je merio i sopstvenim pulsom – tako je otkrio da klatno uvek jednako dugo zaljulja.",
+      "zanimljivost": "Galilej je vreme merio i sopstvenim pulsom – tako je otkrio da zamah klatna uvek traje jednako dugo.",
       "rec": "voda"
     },
     {
@@ -5026,7 +5026,7 @@
         "Boja tela koju primećujemo kada ga osvetlimo",
         "Temperatura tela koja se meri termometrom"
       ],
-      "zanimljivost": "Mera inertnosti je masa. Zato je teško i pokrenuti i zaustaviti tešku kolica.",
+      "zanimljivost": "Mera inertnosti je masa. Zato je teško i pokrenuti i zaustaviti teška kolica.",
       "rec": "inercija"
     },
     {
@@ -5177,9 +5177,9 @@
     {
       "lekcija": 19,
       "tezina": 1,
-      "pitanje": "Šta pokazuje kockica na papiru koji naglo izvučemo ispod nje?",
+      "pitanje": "Šta se dešava sa kockicom kada naglo izvučemo papir ispod nje?",
       "odgovori": [
-        "Kockica ostaje zbog inercije",
+        "Kockica ostaje na mestu zbog inercije",
         "Kockica poleti zajedno sa papirom u stranu",
         "Kockica nestane",
         "Kockica se okrene"
@@ -5355,7 +5355,7 @@
     {
       "lekcija": 20,
       "tezina": 2,
-      "pitanje": "Kakav je teg?",
+      "pitanje": "Šta je teg?",
       "odgovori": [
         "Telo tačno poznate mase koje se koristi pri merenju",
         "Opruga poznate krutosti koja se koristi za merenje sile",
@@ -5381,7 +5381,7 @@
     {
       "lekcija": 20,
       "tezina": 3,
-      "pitanje": "Kako se zove vaga koja masu meri preko istezanja opruge, a šta ona zapravo meri?",
+      "pitanje": "Koja vaga radi preko istezanja opruge i šta ona zapravo meri?",
       "odgovori": [
         "Vaga sa oprugom – meri težinu, a skala je podešena u kilogramima",
         "Terazije – meri masu poređenjem sa tegovima na drugom tasu iste vage",
@@ -5601,7 +5601,7 @@
         "Ulje se ne meša jer je toplo",
         "Ulje je čvrsto"
       ],
-      "zanimljivost": "Kada se tanker naftom izlije, nafta se širi po površini mora i ugrožava ptice i ribe.",
+      "zanimljivost": "Kada se iz tankera izlije nafta, ona se širi po površini mora i ugrožava ptice i ribe.",
       "rec": "ulje"
     },
     {
@@ -5957,7 +5957,7 @@
       "odgovori": [
         "Da smanje pritisak na ramena",
         "Da ranac bude teži, čvršći i otporniji",
-        "Zbog mode samo",
+        "Samo zbog mode",
         "Da brže trčimo"
       ],
       "zanimljivost": "Preporučuje se da ranac ne bude teži od 10–15% mase deteta.",
@@ -6091,7 +6091,7 @@
       "rec": "ronilac"
     },
     {
-      "pitanje": "U kom moru bi ronilac na istoj dubini osetio malo veći pritisak – u slanom ili u slatkom jezeru?",
+      "pitanje": "Gde bi ronilac na istoj dubini osetio malo veći pritisak – u slanom moru ili u slatkom jezeru?",
       "odgovori": [
         "U slanom moru, jer je gušće",
         "U slatkom jezeru, jer je ređe",
@@ -6226,7 +6226,7 @@
     {
       "lekcija": 23,
       "tezina": 1,
-      "pitanje": "Zašto nas „žmare“ uši kad zaronimo duboko u bazen?",
+      "pitanje": "Zašto nas zabole uši kad zaronimo duboko u bazen?",
       "odgovori": [
         "Pritisak vode na bubnu opnu raste sa dubinom",
         "Voda je hladna, pa se uši skupljaju od hladnoće",
@@ -6534,7 +6534,7 @@
     {
       "lekcija": 24,
       "tezina": 2,
-      "pitanje": "Zašto nam „pucaju“ uši u avionu ili liftu brze zgrade?",
+      "pitanje": "Zašto nam „pucaju“ uši u avionu ili u brzom liftu visoke zgrade?",
       "odgovori": [
         "Pritisak spolja se brzo menja, a u uhu ostaje isti",
         "Zbog buke motora koja snažno pritiska bubnu opnu u uhu",

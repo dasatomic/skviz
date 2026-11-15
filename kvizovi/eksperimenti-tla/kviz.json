@@ -505,7 +505,7 @@
     {
       "lekcija": 2,
       "tezina": 1,
-      "pitanje": "Which standard module does the clock specification $EXTEND$ to use + and ..?",
+      "pitanje": "Which standard module does the clock specification extend (with $EXTENDS$) to use + and ..?",
       "odgovori": [
         "$Naturals$",
         "$Sequences$",
@@ -2083,7 +2083,7 @@
       "tezina": 3,
       "pitanje": "What does $RTBound(A, v, δ, ε)$ assert?",
       "odgovori": [
-        "A step may come after δ, must before ε enabled",
+        "A needs δ of being enabled; must occur by ε",
         "A happens exactly every δ to ε units of time",
         "A takes at least δ and at most ε time units",
         "A must start before δ and finish before ε"
@@ -2213,7 +2213,7 @@
       "tezina": 3,
       "pitanje": "What does $RTBound(A, v, 2, 5)$ say about action $A$?",
       "odgovori": [
-        "Not before 2 s enabled, and by 5 s",
+        "After ≥ 2 s enabled, and within 5 s",
         "It happens every 2 to 5 steps",
         "It waits 2 s, then repeats 5 times",
         "$v$ changes between 2 and 5 s"
@@ -4019,7 +4019,7 @@
       "tezina": 3,
       "pitanje": "Why is $∃ x : e$ (temporal, bold ∃) illegal when e is an action?",
       "odgovori": [
-        "Allowed only for e of any level except 2",
+        "The rule allows e of any level except 2",
         "Temporal ∃ applies only to constants",
         "∃ can't be combined with a prime",
         "Actions can't have hidden variables"

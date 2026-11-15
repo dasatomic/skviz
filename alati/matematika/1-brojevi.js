@@ -124,7 +124,7 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, pr, polja, kuglica }) => {
     'ostatak');
 
   S(2, 'Spoji broj sa brojem njegovih delilaca', [['7', '2 delioca'], ['9', '3 delioca'], ['8', '4 delioca'], ['12', '6 delilaca']],
-    '9 ima delioce 1, 3 i 9; 8 ima 1, 2, 4 i 8; a 12 čak 1, 2, 3, 4, 6 i 12. Brojevi sa mnogo delilaca, poput 12 i 60, zgodni su za deljenje – zato sat ima 12 sati, a sat 60 minuta.',
+    '9 ima delioce 1, 3 i 9; 8 ima 1, 2, 4 i 8; a 12 čak 1, 2, 3, 4, 6 i 12. Brojevi sa mnogo delilaca, poput 12 i 60, zgodni su za deljenje – zato brojčanik ima 12 sati, a sat 60 minuta.',
     'delilac', { autor: 'Miroslav Antonić' });
 
   U(2, 'Koji od ovih brojeva NIJE prost?', ['51', '53', '59', '61'],
