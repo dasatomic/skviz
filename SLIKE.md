@@ -805,6 +805,16 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | razred6-biologija | darvin.jpg | Charles_Darwin_seated.jpg: Henry Maull (1829–1914) and John Fox (1832–1907) (Mau | Public domain | [izvor](https://en.wikipedia.org/wiki/Charles_Darwin) |
 | razred6-biologija | okapi.jpg | Daniel Jolivet | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Okapi) |
 | razred6-biologija | pasteur.jpg | Paul Nadar | Public domain | [izvor](https://en.wikipedia.org/wiki/Louis_Pasteur) |
+| razred6-istorija | alarik.jpg | Allan Stewart | Public domain | [izvor](https://en.wikipedia.org/wiki/Alaric_I) |
+| razred6-istorija | atila.jpg | Eugène Delacroix | Public domain | [izvor](https://commons.wikimedia.org/wiki/File%3AEugene%20Ferdinand%20Victor%20Delacroix%20Attila%20fragment%20(cropped).jpg) |
+| razred6-istorija | biblija.jpg | NYC Wanderer (Kevin Eng) | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Bible) |
+| razred6-istorija | hlodovik.jpg | Pethrus (talk) | Public domain | [izvor](https://en.wikipedia.org/wiki/Clovis_I) |
+| razred6-istorija | jerusalim.jpg | askii | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Jerusalem) |
+| razred6-istorija | justinijanov-zakonik.jpg | IusRomanum | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Corpus_Juris_Civilis) |
+| razred6-istorija | konstantin.jpg | Merulana | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Constantine_the_Great) |
+| razred6-istorija | ravena.jpg | Commonists | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Basilica_of_San_Vitale) |
+| razred6-istorija | teodosije.jpg | www.livius.org | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Theodosius_I) |
+| razred6-istorija | vandali.jpg | Karl Bryullov | Public domain | [izvor](https://en.wikipedia.org/wiki/Sack_of_Rome_(455)) |
 | razred7-biologija | vocna-musica.jpg | Sanjay Acharya | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Drosophila_melanogaster) |
 | razred7-biologija | grasak.jpg | Rasbak | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Pea) |
 | razred7-biologija | hortenzija.jpg | belvedere04 | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Hydrangea_macrophylla) |
