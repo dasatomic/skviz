@@ -2,7 +2,7 @@
   "naziv": "Zabava: filmovi, serije i igrice",
   "ikona": "🎬",
   "boja": "#e17055",
-  "opis": "Wednesday, Hari Poter, Gospodar prstenova, Stranger Things, Lukas i Spilberg, Dizni, Piksar i Ghibli, KPop Demon Hunters, Minecraft, legendarne igre (Zelda, Grim Fandango, Red Alert, Portal…), filmovi sa IMDb liste najboljih i domaći filmovi (Ko to tamo peva, Munje!, Kad porastem biću kengur, Leto kada sam naučila da letim)",
+  "opis": "Wednesday, Hari Poter, Gospodar prstenova, Stranger Things, nove serije (Squid Game, Sunđer Bob, Gravity Falls, Prijatelji, Štreberi, Kuća od papira, Dark, Šerlok, Pokemon, Zmajeva kugla, Mandalorijanac), stripovi (Alan Ford, Zagor, Asteriks, superheroji…), Lukas i Spilberg, Dizni, Piksar i Ghibli, KPop Demon Hunters, Minecraft, legendarne igre (Zelda, GTA, Fortnite, Grim Fandango, Red Alert, Portal…), filmovi sa IMDb liste najboljih i domaći filmovi (Ko to tamo peva, Munje!, Kad porastem biću kengur, Leto kada sam naučila da letim)",
   "redosled": 70,
   "pitanja": [
     {
@@ -100,7 +100,12 @@
         "Persi Džekson (Percy Jackson)"
       ],
       "zanimljivost": "Ožiljak u obliku munje Hari je dobio kao beba, kada ga je Voldemor napao. Prvu knjigu je odbilo 12 izdavača, dok je nije prihvatio Blumsberi – i to zato što se osmogodišnjoj ćerki urednika jako dopala!",
-      "rec": "poter"
+      "rec": "poter",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/harry-potter-poster.jpg",
+        "opis": "Poster filma „Hari Poter i kamen mudrosti“"
+      }
     },
     {
       "tezina": 1,
@@ -117,7 +122,12 @@
         "src": "slike/alnvik.jpg",
         "opis": "Zamak Alnvik u Engleskoj – u njemu su snimane scene Hogvortsa u prvim filmovima"
       },
-      "rec": "hogvorts"
+      "rec": "hogvorts",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/harry-potter-poster.jpg",
+        "opis": "Poster filma „Hari Poter i kamen mudrosti“"
+      }
     },
     {
       "tezina": 2,
@@ -203,7 +213,12 @@
         "Vilou (Willow)"
       ],
       "zanimljivost": "Prsten mora da se baci u vatru Planine Usuda, vulkana u Mordoru – jedino mesto gde može biti uništen. Hobiti 🦶 su poznati po velikim, maljavim stopalima – i ne nose cipele!",
-      "rec": "prsten"
+      "rec": "prsten",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/lotr-poster.jpg",
+        "opis": "Poster filma „Gospodar prstenova: Družina prstena“"
+      }
     },
     {
       "tezina": 1,
@@ -220,6 +235,11 @@
         "vrsta": "slika",
         "src": "slike/tolkin.jpg",
         "opis": "Dž. R. R. Tolkin"
+      },
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/lotr-poster.jpg",
+        "opis": "Poster filma „Gospodar prstenova: Družina prstena“"
       }
     },
     {
@@ -346,7 +366,12 @@
         "Osvetnici (The Avengers)"
       ],
       "zanimljivost": "Svetlosni mač ⚔️, roboti R2-D2 i C-3PO 🤖🤖 i čuvena rečenica „Ja sam tvoj otac“ 👨‍👦 – sve iz „Ratova zvezda“ (Star Wars). Prvi film izašao je 1977. i niko nije verovao da će uspeti.",
-      "rec": "džedaj"
+      "rec": "džedaj",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/star-wars-poster.jpg",
+        "opis": "Poster filma „Ratovi zvezda“"
+      }
     },
     {
       "tezina": 1,
@@ -358,7 +383,12 @@
         "Imperator Palpatin"
       ],
       "zanimljivost": "Na snimanju, glumac koji je nosio Vejderovo odelo izgovarao je laž: „Obi-Van je ubio tvog oca“ – pravu rečenicu „Ja sam tvoj otac“ znalo je samo nekoliko ljudi, da se tajna ne bi otkrila pre premijere.",
-      "rec": "vejder"
+      "rec": "vejder",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/star-wars-poster.jpg",
+        "opis": "Poster filma „Ratovi zvezda“"
+      }
     },
     {
       "tezina": 2,
@@ -489,7 +519,12 @@
         "Pac-Man"
       ],
       "zanimljivost": "Glavni junaci Cuphead i Mugman imaju glave u obliku šoljica ☕🥤. Igra izgleda kao crtani film iz 1930-ih – svaki kadar je ručno nacrtan, a pozadine su naslikane akvarelom.",
-      "rec": "kaphed"
+      "rec": "kaphed",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/cuphead-poster.png",
+        "opis": "Poster igre „Cuphead“"
+      }
     },
     {
       "tezina": 2,
@@ -541,7 +576,12 @@
         "Vajana (Moana)"
       ],
       "zanimljivost": "Sneško Olaf ⛄ i irvas Sven 🦌 su Anini i Elzini drugari. Film je inspirisan bajkom „Snežna kraljica“ danskog pisca Hansa Kristijana Andersena.",
-      "rec": "kraljevstvo"
+      "rec": "kraljevstvo",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/frozen-poster.jpg",
+        "opis": "Poster filma „Zaleđeno kraljevstvo“"
+      }
     },
     {
       "tezina": 1,
@@ -1041,6 +1081,11 @@
         "vrsta": "slika",
         "src": "slike/lukas.jpg",
         "opis": "Džordž Lukas"
+      },
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/star-wars-poster.jpg",
+        "opis": "Poster filma „Ratovi zvezda“"
       }
     },
     {
@@ -1330,8 +1375,8 @@
       "zanimljivost": "Mario se prvi put pojavio 1981. u igri „Donkey Kong“, pod imenom „Jumpman“ – skakač.",
       "medijiOdgovora": {
         "vrsta": "slika",
-        "src": "slike/mijamoto.jpg",
-        "opis": "Šigeru Mijamoto, tvorac Marija i Zelde"
+        "src": "slike/mario-poster.png",
+        "opis": "Mario"
       },
       "rec": "mario"
     },
@@ -1357,7 +1402,12 @@
         "„Potraga za Nemom“ (Finding Nemo)"
       ],
       "zanimljivost": "„Priču o igračkama“ (Toy Story) je napravio Piksar. Za renderovanje filma bilo je potrebno oko 800.000 sati rada računara.",
-      "rec": "igračka"
+      "rec": "igračka",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/toy-story-poster.jpg",
+        "opis": "Poster filma „Priča o igračkama“"
+      }
     },
     {
       "tezina": 1,
@@ -1374,7 +1424,12 @@
         "Nala"
       ],
       "zanimljivost": "„Simba“ na svahiliju znači „lav“. Mnogi likovi imaju svahili imena – „Rafiki“ znači prijatelj, a „Pumba“ nesmotren.",
-      "rec": "simba"
+      "rec": "simba",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/lion-king-poster.jpg",
+        "opis": "Poster filma „Kralj lavova“"
+      }
     },
     {
       "tezina": 1,
@@ -1473,7 +1528,12 @@
         "Hari Poter i Kamen mudrosti (Harry Potter and the Philosopher's Stone)"
       ],
       "zanimljivost": "Vafli 🧇 su omiljena hrana Eleven (Jedanaest), a 🙃 označava „Naopaki svet“. Serija je toliko podigla prodaju vafla „Ego“ da je proizvođač napravio posebnu reklamu u stilu osamdesetih.",
-      "rec": "vafli"
+      "rec": "vafli",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/stranger-things-poster.png",
+        "opis": "Poster serije „Stranger Things“"
+      }
     },
     {
       "tezina": 1,
@@ -1485,7 +1545,12 @@
         "Deri, Mejn"
       ],
       "zanimljivost": "Hokins ne postoji, ali je serija uglavnom snimana u američkoj saveznoj državi Džordžiji, a ne u Indijani.",
-      "rec": "hokins"
+      "rec": "hokins",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/stranger-things-poster.png",
+        "opis": "Poster serije „Stranger Things“"
+      }
     },
     {
       "tezina": 1,
@@ -1806,7 +1871,12 @@
         "King Kong"
       ],
       "zanimljivost": "U filmu dinosaurusi su napravljeni od DNK iz krvi koju je pre više desetina miliona godina popio komarac – komarac se zatim zarobio u ćilibaru.",
-      "rec": "dinosaurus"
+      "rec": "dinosaurus",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/jurski-park-poster.jpg",
+        "opis": "Poster filma „Jurski park“"
+      }
     },
     {
       "tezina": 1,
@@ -1822,7 +1892,12 @@
         "Ljudi u crnom (Men in Black)"
       ],
       "zanimljivost": "Čuvena rečenica „E.T. zove kući“ (E.T. phone home) jedna je od najpoznatijih u istoriji filma.",
-      "rec": "vanzemaljac"
+      "rec": "vanzemaljac",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/et-poster.jpg",
+        "opis": "Poster filma „E.T. vanzemaljac“"
+      }
     },
     {
       "tezina": 1,
@@ -1934,6 +2009,11 @@
         "vrsta": "slika",
         "src": "slike/cilibar.jpg",
         "opis": "Pravi insekti zarobljeni u ćilibaru, iz Meksika"
+      },
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/jurski-park-poster.jpg",
+        "opis": "Poster filma „Jurski park“"
       }
     },
     {
@@ -2017,8 +2097,8 @@
       "zanimljivost": "Film prati Oskara Šindlera, koji je u Drugom svetskom ratu spasao oko 1.200 Jevreja. Spilberg je odbio honorar za ovaj film.",
       "medijiOdgovora": {
         "vrsta": "slika",
-        "src": "slike/sindler.jpg",
-        "opis": "Pravi Oskar Šindler, koji je spasao oko 1.200 Jevreja"
+        "src": "slike/sindler-poster.jpg",
+        "opis": "Poster filma „Šindlerova lista“"
       },
       "rec": "kaput"
     },
@@ -2250,7 +2330,12 @@
         "Grid"
       ],
       "zanimljivost": "Film je pun junaka iz igrica i filmova osamdesetih – pojavljuju se i T. reks iz „Jurskog parka“ (Jurassic Park) i automobil DeLorean iz „Povratka u budućnost“ (Back to the Future).",
-      "rec": "igrica"
+      "rec": "igrica",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/igrac-broj-1-poster.png",
+        "opis": "Poster filma „Igrač broj 1“"
+      }
     },
     {
       "tezina": 2,
@@ -2300,7 +2385,12 @@
         "Princeza Mononoke (Mononoke-hime)"
       ],
       "zanimljivost": "U čuvenoj sceni na autobuskoj stanici devojčica Sacuki pozajmi Totoru kišobran, a on joj zauzvrat pokloni paketić semenki. Pravi autobus tada ne dolazi – dolazi Mačkobus!",
-      "rec": "komšija"
+      "rec": "komšija",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/totoro-poster.jpg",
+        "opis": "Poster filma „Moj komšija Totoro“"
+      }
     },
     {
       "tezina": 1,
@@ -2432,7 +2522,12 @@
         "Čudovišta iz ormana (Monsters, Inc.)"
       ],
       "zanimljivost": "„Do neba“ (Up) je 2009. bio prvi animirani film kojim je otvoren filmski festival u Kanu. Kuću u vazduh podiže više od 10.000 balona.",
-      "rec": "baloni"
+      "rec": "baloni",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/up-poster.jpg",
+        "opis": "Poster filma „Do neba“"
+      }
     },
     {
       "tezina": 1,
@@ -2775,6 +2870,11 @@
         "vrsta": "slika",
         "src": "slike/dan-mrtvih.jpg",
         "opis": "Katrina – lik sa meksičkog Dana mrtvih"
+      },
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/grim-fandango-poster.jpg",
+        "opis": "Poster igre „Grim Fandango“"
       }
     },
     {
@@ -2792,6 +2892,11 @@
         "vrsta": "slika",
         "src": "slike/dzenova-cen.jpg",
         "opis": "Dženova Čen, autor igre „Journey“"
+      },
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/journey-poster.png",
+        "opis": "Poster igre „Journey“"
       }
     },
     {
@@ -2848,6 +2953,11 @@
         "vrsta": "slika",
         "src": "slike/mijamoto.jpg",
         "opis": "Šigeru Mijamoto, tvorac Zelde i Marija"
+      },
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/zelda-poster.jpg",
+        "opis": "Poster igre „The Legend of Zelda“"
       }
     },
     {
@@ -2865,6 +2975,11 @@
         "vrsta": "slika",
         "src": "slike/sapkovski.jpg",
         "opis": "Andžej Sapkovski"
+      },
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/witcher-poster.jpg",
+        "opis": "Poster igre „The Witcher 3“"
       }
     },
     {
@@ -2882,6 +2997,11 @@
         "vrsta": "slika",
         "src": "slike/kauboj.jpg",
         "opis": "Kauboji na slici Čarlsa Rasela (1897)"
+      },
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/rdr2-poster.jpg",
+        "opis": "Poster igre „Red Dead Redemption 2“"
       }
     },
     {
@@ -2899,6 +3019,11 @@
         "vrsta": "slika",
         "src": "slike/kordiceps.png",
         "opis": "Prava gljivica kordiceps na mravu"
+      },
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/last-of-us-poster.jpg",
+        "opis": "Poster igre „The Last of Us“"
       }
     },
     {
@@ -2916,6 +3041,11 @@
         "vrsta": "slika",
         "src": "slike/svarcvald-torta.jpg",
         "opis": "Švarcvald torta"
+      },
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/portal-poster.jpg",
+        "opis": "Poster igre „Portal“"
       }
     },
     {
@@ -2933,6 +3063,11 @@
         "vrsta": "slika",
         "src": "slike/pajser.jpg",
         "opis": "Pajser – Frimanovo čuveno oružje"
+      },
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/half-life-poster.jpg",
+        "opis": "Poster igre „Half-Life“"
       }
     },
     {
@@ -2945,7 +3080,12 @@
         "Kao igra za profesionalna takmičenja u Koreji"
       ],
       "zanimljivost": "Napravila su ga dvojica entuzijasta, Min Le i Džes Klif, u slobodno vreme. Valve je posle kupio prava i zaposlio ih, a „Counter-Strike 2“ se i danas igra na velikim turnirima.",
-      "rec": "mod"
+      "rec": "mod",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/counter-strike-poster.jpg",
+        "opis": "Poster igre „Counter-Strike“"
+      }
     },
     {
       "tezina": 1,
@@ -2962,6 +3102,11 @@
         "vrsta": "slika",
         "src": "slike/ivatani.jpg",
         "opis": "Toru Ivatani, tvorac Pac-Mana"
+      },
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/pac-man-poster.png",
+        "opis": "Poster igre „Pac-Man“"
       }
     },
     {
@@ -2979,6 +3124,11 @@
         "vrsta": "slika",
         "src": "slike/jez.jpg",
         "opis": "Evropski jež"
+      },
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/sonic-poster.jpg",
+        "opis": "Poster igre „Sonic the Hedgehog“"
       }
     },
     {
@@ -2996,6 +3146,11 @@
         "vrsta": "slika",
         "src": "slike/karmak.jpg",
         "opis": "Džon Karmak, programer igre „Doom“"
+      },
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/doom-poster.jpg",
+        "opis": "Poster igre „Doom“"
       }
     },
     {
@@ -3008,7 +3163,12 @@
         "„Second Life“"
       ],
       "zanimljivost": "Bolest je trebalo da ostane u jednoj tamnici, ali su je ljubimci igrača preneli u gradove. Epidemiolozi su posle pisali radove o tome kako se ljudi ponašaju tokom epidemije – neki su bežali, a neki namerno širili zarazu.",
-      "rec": "zaraza"
+      "rec": "zaraza",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/wow-poster.png",
+        "opis": "Poster igre „World of Warcraft“"
+      }
     },
     {
       "tezina": 2,
@@ -3044,6 +3204,11 @@
         "vrsta": "slika",
         "src": "slike/vil-rajt.jpg",
         "opis": "Vil Rajt, tvorac igre „The Sims“"
+      },
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/sims-poster.png",
+        "opis": "Poster igre „The Sims“"
       }
     },
     {
@@ -3068,7 +3233,12 @@
         "Roboti"
       ],
       "zanimljivost": "Igru je napravio australijski studio Team Cherry od samo tri čoveka. Nastavak „Silksong“ čekao se više od šest godina – kad je izašao u septembru 2025, prodavnice igara su se zagušile od navale.",
-      "rec": "insekt"
+      "rec": "insekt",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/hollow-knight-poster.jpg",
+        "opis": "Poster igre „Hollow Knight“"
+      }
     },
     {
       "tezina": 2,
@@ -3080,7 +3250,12 @@
         "Više od 300 ljudi"
       ],
       "zanimljivost": "Erik Barone je sam programirao, crtao, pisao priču i komponovao muziku – oko četiri i po godine. Igra je prodata u više od 40 miliona primeraka.",
-      "rec": "farma"
+      "rec": "farma",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/stardew-poster.png",
+        "opis": "Poster igre „Stardew Valley“"
+      }
     },
     {
       "tezina": 2,
@@ -3097,6 +3272,11 @@
         "vrsta": "slika",
         "src": "slike/dzordz-martin.jpg",
         "opis": "Džordž R. R. Martin"
+      },
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/elden-ring-poster.jpg",
+        "opis": "Poster igre „Elden Ring“"
       }
     },
     {
@@ -3114,6 +3294,11 @@
         "vrsta": "slika",
         "src": "slike/kocke.jpg",
         "opis": "Kockice za „Tamnice i zmajeve“"
+      },
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/baldurs-poster.jpg",
+        "opis": "Poster igre „Baldur's Gate 3“"
       }
     },
     {
@@ -3126,7 +3311,12 @@
         "Simoleoni"
       ],
       "zanimljivost": "Skoro sve igre u Robloksu prave sami igrači – neki su postali milioneri. „V-Bucks“ su novac u Fortnajtu, a simoleoni u igri „The Sims“.",
-      "rec": "novac"
+      "rec": "novac",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/roblox-poster.svg",
+        "opis": "Logo igre „Roblox“"
+      }
     },
     {
       "tezina": 3,
@@ -3143,6 +3333,11 @@
         "vrsta": "slika",
         "src": "slike/ron-gilbert.jpg",
         "opis": "Ron Gilbert, tvorac „Monkey Islanda“"
+      },
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/monkey-island-poster.jpg",
+        "opis": "Poster igre „The Secret of Monkey Island“"
       }
     },
     {
@@ -3160,6 +3355,11 @@
         "vrsta": "slika",
         "src": "slike/mekner.jpg",
         "opis": "Džordan Mekner"
+      },
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/prince-persia-poster.jpg",
+        "opis": "Poster igre „Prince of Persia“"
       }
     },
     {
@@ -3259,8 +3459,8 @@
       "rec": "zatvor",
       "medijiOdgovora": {
         "vrsta": "slika",
-        "src": "slike/sosenk.jpg",
-        "opis": "Stari zatvor u Ohaju gde je film sniman"
+        "src": "slike/shawshank-poster.jpg",
+        "opis": "Poster filma „Iskupljenje u Šošenku“"
       }
     },
     {
@@ -3278,6 +3478,11 @@
         "vrsta": "slika",
         "src": "slike/brando.png",
         "opis": "Marlon Brando"
+      },
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/kum-poster.jpg",
+        "opis": "Poster filma „Kum“"
       }
     },
     {
@@ -3295,6 +3500,11 @@
         "vrsta": "slika",
         "src": "slike/ledzer.jpg",
         "opis": "Hit Ledžer"
+      },
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/mracni-vitez-poster.jpg",
+        "opis": "Poster filma „Mračni vitez“"
       }
     },
     {
@@ -3312,6 +3522,11 @@
         "vrsta": "slika",
         "src": "slike/fonda.jpg",
         "opis": "Henri Fonda"
+      },
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/12-gnevnih-poster.jpg",
+        "opis": "Poster filma „12 gnevnih ljudi“"
       }
     },
     {
@@ -3329,6 +3544,11 @@
         "vrsta": "slika",
         "src": "slike/tarantino.jpg",
         "opis": "Kventin Tarantino"
+      },
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/pakleni-sund-poster.jpg",
+        "opis": "Poster filma „Pakleni šund“"
       }
     },
     {
@@ -3346,6 +3566,11 @@
         "vrsta": "slika",
         "src": "slike/henks.jpg",
         "opis": "Tom Henks"
+      },
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/forest-gamp-poster.jpg",
+        "opis": "Poster filma „Forest Gamp“"
       }
     },
     {
@@ -3363,6 +3588,11 @@
         "vrsta": "slika",
         "src": "slike/cigra.jpg",
         "opis": "Čigra"
+      },
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/pocetak-poster.jpg",
+        "opis": "Poster filma „Početak“"
       }
     },
     {
@@ -3380,6 +3610,11 @@
         "vrsta": "slika",
         "src": "slike/rivs.jpg",
         "opis": "Kijanu Rivs, Neo"
+      },
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/matriks-poster.png",
+        "opis": "Poster filma „Matriks“"
       }
     },
     {
@@ -3397,6 +3632,11 @@
         "vrsta": "slika",
         "src": "slike/crna-rupa.jpg",
         "opis": "Prava fotografija crne rupe (2019)"
+      },
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/interstelar-poster.jpg",
+        "opis": "Poster filma „Interstelar“"
       }
     },
     {
@@ -3414,6 +3654,11 @@
         "vrsta": "slika",
         "src": "slike/hickok.jpg",
         "opis": "Alfred Hičkok"
+      },
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/psiho-poster.jpg",
+        "opis": "Poster filma „Psiho“"
       }
     },
     {
@@ -3431,6 +3676,11 @@
         "vrsta": "slika",
         "src": "slike/bogart.jpg",
         "opis": "Hamfri Bogart, Rik iz „Kazablanke“"
+      },
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/kazablanka-poster.jpg",
+        "opis": "Poster filma „Kazablanka“"
       }
     },
     {
@@ -3488,6 +3738,11 @@
         "vrsta": "slika",
         "src": "slike/delorean.jpg",
         "opis": "DeLorean DMC-12"
+      },
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/povratak-buducnost-poster.jpg",
+        "opis": "Poster filma „Povratak u budućnost“"
       }
     },
     {
@@ -3505,6 +3760,11 @@
         "vrsta": "slika",
         "src": "slike/krou.jpg",
         "opis": "Rasel Krou"
+      },
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/gladijator-poster.png",
+        "opis": "Poster filma „Gladijator“"
       }
     },
     {
@@ -3522,6 +3782,11 @@
         "vrsta": "slika",
         "src": "slike/svarceneger.jpg",
         "opis": "Arnold Švarceneger"
+      },
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/terminator-2-poster.png",
+        "opis": "Poster filma „Terminator 2“"
       }
     },
     {
@@ -3539,6 +3804,11 @@
         "vrsta": "slika",
         "src": "slike/dauni.jpg",
         "opis": "Robert Dauni Džunior"
+      },
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/osvetnici-kraj-poster.jpg",
+        "opis": "Poster filma „Osvetnici: Kraj igre“"
       }
     },
     {
@@ -3551,7 +3821,12 @@
         "Majls O'Hara"
       ],
       "zanimljivost": "Na početku je Majls animiran sa upola manje sličica u sekundi, pa se kreće malo nespretno – a kako postaje sigurniji Spajdermen, pokreti mu postaju glatkiji. Film je dobio Oskara.",
-      "rec": "pauk"
+      "rec": "pauk",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/spajder-vers-poster.png",
+        "opis": "Poster filma „Spajdermen: Novi svet“"
+      }
     },
     {
       "tezina": 3,
@@ -3568,6 +3843,11 @@
         "vrsta": "slika",
         "src": "slike/bong.jpg",
         "opis": "Bong Džun-ho"
+      },
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/parazit-poster.png",
+        "opis": "Poster filma „Parazit“"
       }
     },
     {
@@ -3585,6 +3865,11 @@
         "vrsta": "slika",
         "src": "slike/benjini.jpg",
         "opis": "Roberto Benjini"
+      },
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/zivot-je-lep-poster.jpg",
+        "opis": "Poster filma „Život je lep“"
       }
     },
     {
@@ -3619,6 +3904,11 @@
         "vrsta": "slika",
         "src": "slike/kjubrik.jpg",
         "opis": "Stenli Kjubrik, reditelj"
+      },
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/2001-poster.png",
+        "opis": "Poster filma „2001: Odiseja u svemiru“"
       }
     },
     {
@@ -3636,6 +3926,11 @@
         "vrsta": "slika",
         "src": "slike/vels.jpg",
         "opis": "Orson Vels"
+      },
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/gradjanin-kejn-poster.jpg",
+        "opis": "Poster filma „Građanin Kejn“"
       }
     },
     {
@@ -3675,6 +3970,11 @@
         "vrsta": "slika",
         "src": "slike/triniti.jpg",
         "opis": "Pravi test „Triniti“, 16. jul 1945."
+      },
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/openhajmer-poster.jpg",
+        "opis": "Poster filma „Openhajmer“"
       }
     },
     {
@@ -3709,6 +4009,11 @@
         "vrsta": "slika",
         "src": "slike/kometa.jpg",
         "opis": "Prava kometa Hejl-Bop (1997)"
+      },
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/tvoje-ime-poster.png",
+        "opis": "Poster filma „Tvoje ime“"
       }
     },
     {
@@ -3726,6 +4031,11 @@
         "vrsta": "slika",
         "src": "slike/vitmen.jpg",
         "opis": "Volt Vitmen"
+      },
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/drustvo-mrtvih-poster.png",
+        "opis": "Poster filma „Društvo mrtvih pesnika“"
       }
     },
     {
@@ -4034,6 +4344,785 @@
       ],
       "zanimljivost": "Žika Pavlović je glavni junak serijala komedija o „Žikinoj dinastiji“ iz osamdesetih, a Tirke je fudbaler iz filma „Montevideo, Bog te video!“.",
       "rec": "glumac"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "U kojoj južnokorejskoj seriji se igrači u zelenim trenerkama takmiče u dečjim igrama za ogroman novac – ali ko izgubi, umire?",
+      "odgovori": [
+        "Igra lignje (Squid Game)",
+        "Alisa u pograničnom svetu (Alice in Borderland)",
+        "Slatka kuća (Sweet Home)",
+        "Kuća od papira (Money Heist)"
+      ],
+      "zanimljivost": "Seriju je Hvang Dong-hjuk pisao više od deset godina, a studiji su je u početku odbijali jer im je delovala previše čudno. „Crveno svetlo, zeleno svetlo“ je prava dečja igra, a ogromna lutka je napravljena posebno za snimanje.",
+      "rec": "lignja",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/squid-game-poster.png",
+        "opis": "Poster serije „Igra lignje“"
+      }
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kako se zove morska životinja koja živi u ananasu na dnu mora i radi kao kuvar u restoranu „Kod rakuna“?",
+      "odgovori": [
+        "Sunđer Bob (SpongeBob SquarePants)",
+        "Patrik (Patrick Star)",
+        "Lignjoslav (Squidward)",
+        "Gospodin Kraba (Mr. Krabs)"
+      ],
+      "zanimljivost": "Sunđer Bob je morski sunđer – ali u crtanom filmu izgleda kao kuhinjski sunđer. Serija se emituje od 1999. godine i jedna je od najduže prikazivanih animiranih serija na svetu.",
+      "rec": "sundjer",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/sundjer-bob-poster.png",
+        "opis": "Sunđer Bob i Patrik"
+      }
+    },
+    {
+      "tezina": 2,
+      "pitanje": "U kojoj animiranoj seriji blizanci Diper i Mejbel provode leto kod pra-ujaka Stena u misterioznom gradiću?",
+      "odgovori": [
+        "Graviti Fols (Gravity Falls)",
+        "Rik i Morti (Rick and Morty)",
+        "Fineas i Ferb (Phineas and Ferb)",
+        "Amfibija (Amphibia)"
+      ],
+      "zanimljivost": "Tvorac Aleks Herš je seriju smislio po uspomenama na letovanja kod rodbine. Fanovi su godinama tražili skrivene šifre u svakoj epizodi – autor ih je namerno ostavljao.",
+      "rec": "blizanci",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/gravity-falls-poster.png",
+        "opis": "Poster serije „Graviti Fols“"
+      }
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kako se zove serija o šestoro prijatelja u Njujorku, čiji se omiljeni kafić zove „Central Perk“?",
+      "odgovori": [
+        "Prijatelji (Friends)",
+        "Kako sam upoznao vašu majku (How I Met Your Mother)",
+        "Sajnfeld (Seinfeld)",
+        "Štreberi (The Big Bang Theory)"
+      ],
+      "zanimljivost": "Špica sa fontanom snimljena je u studiju u Los Anđelesu, a ne u Njujorku. Poslednju epizodu 2004. godine gledalo je preko 50 miliona Amerikanaca.",
+      "rec": "kafic",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/prijatelji-poster.svg",
+        "opis": "Poster serije „Prijatelji“"
+      }
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koja serija prati četvoricu naučnika i njihovu komšinicu Peni, a glavni junak Šeldon je teorijski fizičar?",
+      "odgovori": [
+        "Štreberi (The Big Bang Theory)",
+        "Silikonska dolina (Silicon Valley)",
+        "IT gomila (The IT Crowd)",
+        "Zajednica (Community)"
+      ],
+      "zanimljivost": "Lik Šeldona je toliko zavoleo publiku da je dobio svoju seriju „Mladi Šeldon“ (Young Sheldon). Glumac Džim Parsons je za ulogu Šeldona dobio četiri Emija.",
+      "rec": "naucnik",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/big-bang-poster.png",
+        "opis": "Poster serije „Štreberi“"
+      }
+    },
+    {
+      "tezina": 2,
+      "pitanje": "U kojoj španskoj seriji lopovi u crvenim kombinezonima i maskama Dalija okupiraju Kraljevsku kovnicu novca?",
+      "odgovori": [
+        "Kuća od papira (La casa de papel / Money Heist)",
+        "Narkosi (Narcos)",
+        "U koži zločinca (Breaking Bad)",
+        "Piki Blajndersi (Peaky Blinders)"
+      ],
+      "zanimljivost": "Plan pljačke smišlja tajanstveni „Profesor“. Pesma „Bella ciao“, koju lopovi pevaju, stara je italijanska partizanska pesma i posle serije je ponovo postala hit širom sveta.",
+      "rec": "pljacka",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/kuca-od-papira-poster.jpg",
+        "opis": "Poster serije „Kuća od papira“"
+      }
+    },
+    {
+      "tezina": 3,
+      "pitanje": "U kojoj nemačkoj seriji deca nestaju u gradiću Vinden, a sve povezuje pećina sa vremenskim tunelom?",
+      "odgovori": [
+        "Dark",
+        "Strančer Tings (Stranger Things)",
+        "1899",
+        "Mračna materija (Dark Matter)"
+      ],
+      "zanimljivost": "Priča prati četiri porodice kroz više generacija – iste ličnosti se pojavljuju kao deca, roditelji i starci. Reditelj je prvo hteo da seriju nazove po gradiću, ali je ime „Dark“ (Mrak) bolje opisalo priču.",
+      "rec": "pecina"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koja serija premešta Šerloka Holmsa u današnji London, gde rešava zločine uz mobilni telefon i blog doktora Votsona?",
+      "odgovori": [
+        "Šerlok (Sherlock)",
+        "Elementarno (Elementary)",
+        "Luter (Luther)",
+        "Brojdčerč (Broadchurch)"
+      ],
+      "zanimljivost": "Glumac Benedikt Kamberbač je pre serije bio skoro nepoznat. Serija je toliko popularna da je povećala broj turista koji posećuju adresu Bejker strit 221B u Londonu.",
+      "rec": "detektiv",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/serlok-poster.jpg",
+        "opis": "Poster serije „Šerlok“"
+      }
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kako se zove dečak koji sa Pikačuom putuje svetom i sakuplja bedževe u svetu Pokemona?",
+      "odgovori": [
+        "Eš Kečum (Ash Ketchum)",
+        "Geri Ouk (Gary Oak)",
+        "Brok (Brock)",
+        "Profesor Ouk (Professor Oak)"
+      ],
+      "zanimljivost": "Eš je u japanskom originalu Satoši – po Satošiju Tadžiriju, tvorcu Pokemona. Posle više od 25 godina i preko 1.200 epizoda, Eš je 2023. konačno postao svetski šampion.",
+      "rec": "pikacu",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/pokemon-poster.png",
+        "opis": "Eš i Pikaču"
+      }
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koji junak animea „Zmajeva kugla“ (Dragon Ball) skuplja sedam čarobnih kugli da prizove zmaja koji ispunjava želju?",
+      "odgovori": [
+        "Goku",
+        "Vegita (Vegeta)",
+        "Pikolo (Piccolo)",
+        "Gohan"
+      ],
+      "zanimljivost": "Autor Akira Torijama je junaka delom zasnovao na kineskoj legendi o kralju majmuna. „Zmajeva kugla“ je jedan od najuticajnijih animea svih vremena.",
+      "rec": "zmaj",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/dragon-ball-poster.png",
+        "opis": "Goku iz serije „Zmajeva kugla“"
+      }
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Ko je Din Džarin, glavni junak serije „Mandalorijanac“ (The Mandalorian)?",
+      "odgovori": [
+        "Lovac na ucenjene glave",
+        "Pilot svemirskog krstarice",
+        "Džedaj-učenik",
+        "Car Imperije"
+      ],
+      "zanimljivost": "Mandalorijanac nikad ne skida svoj oklop i šlem – to mu je deo zakona („Put Mandalora“). Šlem mu daje i glumac Pedru Paskalu posebnu čuvenost, iako mu se lice retko vidi.",
+      "rec": "lovac"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koji italijanski strip, decenijama omiljen i u Srbiji, prati grupu tajnih agenata iz cvećare u Njujorku?",
+      "odgovori": [
+        "Alan Ford",
+        "Zagor",
+        "Asteriks (Astérix)",
+        "Teks Viler (Tex Willer)"
+      ],
+      "zanimljivost": "Strip su 1969. osmislili scenarista Maks Bunker i crtač Magnus. U bivšoj Jugoslaviji je postao toliko popularan da se rečenice iz njega i danas citiraju – na primer „Halo, Bing!“ i „Kupatilo!“.",
+      "rec": "alanford",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/alan-ford.jpg",
+        "opis": "Grupa TNT iz stripa „Alan Ford“"
+      }
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zove vođa tajne Grupe TNT u stripu „Alan Ford“?",
+      "odgovori": [
+        "Broj Jedan",
+        "Bob Rok",
+        "Grunf",
+        "Alan Ford"
+      ],
+      "zanimljivost": "Broj Jedan je star, ćelav i stalno mrzovoljan, a agente šalje u opasne misije iz svoje cvećare. Njegovo pravo ime se u stripu skoro nikad ne pominje.",
+      "rec": "vodja",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/alan-ford.jpg",
+        "opis": "Alan Ford i Grupa TNT"
+      }
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kako se zove krupni prijatelj Asteriksa (Astérix), koji je kao mali upao u kotao sa čarobnim napitkom?",
+      "odgovori": [
+        "Obeliks (Obélix)",
+        "Talični Tom (Lucky Luke)",
+        "Tintin",
+        "Zagor"
+      ],
+      "zanimljivost": "Asteriks (Astérix) i Obeliks (Obélix) su mali Gali koji se u 1. veku pre nove ere opiru Rimljanima – čarobni napitak im daje nadljudsku snagu. Strip su stvorili Rene Gosinji i Alber Uderzo.",
+      "rec": "napitak",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/asteriks.png",
+        "opis": "Asteriks i Obeliks"
+      }
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koje su boje mala šumska stvorenja Štrumpfovi (The Smurfs)?",
+      "odgovori": [
+        "Plava",
+        "Zelena",
+        "Crvena",
+        "Žuta"
+      ],
+      "zanimljivost": "Štrumpfove je stvorio belgijski crtač Pejo (Peyo). Zli čarobnjak Gargamel stalno pokušava da ih uhvati – a njegov mačak Azrijel jedva čeka da ih pojede.",
+      "rec": "strumpf",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/strumpfovi.png",
+        "opis": "Štrumpfovi"
+      }
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koja je omiljena hrana debelog narandžastog mačka Garfilda (Garfield)?",
+      "odgovori": [
+        "Lazanje",
+        "Pica",
+        "Riba",
+        "Sir"
+      ],
+      "zanimljivost": "Garfild (Garfield) mrzi ponedeljak i voli da spava po ceo dan. Strip Džima Dejvisa izlazi od 1978. godine i drži svetski rekord kao najšire objavljivan strip.",
+      "rec": "macka",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/garfild.png",
+        "opis": "Garfild"
+      }
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kako je Piter Parker dobio svoje paukove moći?",
+      "odgovori": [
+        "Ujeo ga je radioaktivni pauk",
+        "Popio je čarobni napitak",
+        "Rođen je sa njima",
+        "Dobio ih je od naučnika koji ga je operisao"
+      ],
+      "zanimljivost": "Spajdermena (Spider-Man) su 1962. stvorili Stan Li i Stiv Ditko. Stan Li je rekao da su mu u izdavačkoj kući govorili da niko neće voleti junaka-pauka – a danas je Spajdermen (Spider-Man) jedan od najpoznatijih likova na svetu.",
+      "rec": "pauk",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/spajdermen-strip.png",
+        "opis": "Spajdermen"
+      }
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koja životinja je inspirisala Brusa Vejna da postane Betmen (Batman)?",
+      "odgovori": [
+        "Slepi miš",
+        "Sova",
+        "Gavran",
+        "Mačka"
+      ],
+      "zanimljivost": "Kao dečak, Brus Vejn se uplašio slepih miševa koji su uleteli u njegovu kuću – kasnije je od tog straha napravio svoj znak. Betmen (Batman) nema supermoći, nego se oslanja na vežbanje, tehniku i pamet.",
+      "rec": "betmen",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/betmen-strip.jpg",
+        "opis": "Betmen"
+      }
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Sa koje planete dolazi Supermen (Superman), poslednji preživeli sa nje?",
+      "odgovori": [
+        "Kripton",
+        "Mars",
+        "Venera",
+        "Saturn"
+      ],
+      "zanimljivost": "Roditelji su ga kao bebu poslali u raketi na Zemlju, neposredno pre nego što je Kripton eksplodirao. Na Zemlji ga je usvojio bračni par Kent i dao mu ime Klark.",
+      "rec": "supermen",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/supermen-strip.png",
+        "opis": "Supermen"
+      }
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kako se zove junak stripa koji živi u šumi Darkvud i sekirom brani slabe od zlikovaca?",
+      "odgovori": [
+        "Zagor",
+        "Teks Viler (Tex Willer)",
+        "Alan Ford",
+        "Talični Tom (Lucky Luke)"
+      ],
+      "zanimljivost": "Zagora su stvorili Serđo Boneli i Galjeno Feri 1961. godine. U Srbiji i Italiji je jedan od najdugovečnijih i najomiljenijih stripova – Zagor izlazi i danas.",
+      "rec": "sekira",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/zagor.jpg",
+        "opis": "Zagor"
+      }
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zove čuveni junak kaubojskih stripova koji se bori protiv zlikovaca na Divljem zapadu?",
+      "odgovori": [
+        "Teks Viler (Tex Willer)",
+        "Zagor",
+        "Alan Ford",
+        "Talični Tom (Lucky Luke)"
+      ],
+      "zanimljivost": "Teksa Vilera su 1948. stvorili Đan Luiđi Boneli i Aurelio Galepini. Strip izlazi i danas – Teks je jedan od najdugovečnijih junaka stripova na svetu.",
+      "rec": "kauboj",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/teks-viler.jpg",
+        "opis": "Teks Viler"
+      }
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kako se zove beli pas, verni pratilac novinara Tintina?",
+      "odgovori": [
+        "Milu (Snowy)",
+        "Pluton",
+        "Skoči",
+        "Reks"
+      ],
+      "zanimljivost": "Tintina je stvorio belgijski crtač Erže (Hergé) 1929. godine. Milu je foksterijer koji Tintina redovno spasava iz nevolja – iako i sam često upada u njih.",
+      "rec": "pas",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/tintin.png",
+        "opis": "Tintin i Milu"
+      }
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Šta mornar Popaj (Popeye) pojede da bi dobio ogromnu snagu i spasao Olivu?",
+      "odgovori": [
+        "Spanać",
+        "Kupus",
+        "Pasulj",
+        "Šargarepu"
+      ],
+      "zanimljivost": "Popaj (Popeye) se prvi put pojavio 1929. u stripu, a kasnije i u crtanim filmovima. Zahvaljujući njemu, prodaja spanaća u Americi je porasla za trećinu!",
+      "rec": "spanac",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/popaj.png",
+        "opis": "Popaj"
+      }
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kako se zove Mikijeva devojka, koja nosi tačkastu mašnu?",
+      "odgovori": [
+        "Mini Maus (Minnie Mouse)",
+        "Paja Patak (Donald Duck)",
+        "Šilja (Goofy)",
+        "Pluton (Pluto)"
+      ],
+      "zanimljivost": "Mini Maus (Minnie Mouse) se prvi put pojavila 1928. godine, u istom crtanom filmu kao i Miki. U početku joj je glas davala ista osoba kao i Mikiju – Volt Dizni.",
+      "rec": "mis",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/mini-maus.png",
+        "opis": "Miki i Mini Maus"
+      }
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kako se zove igra u kojoj 100 igrača iskače iz letećeg autobusa na ostrvo i bori se dok ne ostane samo jedan?",
+      "odgovori": [
+        "Fortnite (Fortnite Battle Royale)",
+        "Pabg (PUBG)",
+        "Ejpeks ledžends (Apex Legends)",
+        "Fri fajer (Free Fire)"
+      ],
+      "zanimljivost": "Fortnite je prvobitno bio igra o odbrani od zombija, a „battle royale“ način igre je dodat kasnije – i postao je toliko popularan da su u njemu svirali koncerte zvezde poput Ariane Grande i Trevisa Skota.",
+      "rec": "ostrvo",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/fortnite-poster.svg",
+        "opis": "Poster igre „Fortnite“"
+      }
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kako se zove igra u kojoj posada svemirskog broda obavlja zadatke, a među njima se krije „impostor“ koji ih ubija?",
+      "odgovori": [
+        "Among Us",
+        "Fol gajs (Fall Guys)",
+        "Roket liga (Rocket League)",
+        "Roblox"
+      ],
+      "zanimljivost": "Igra je izašla 2018. godine, ali je tek 2020. postala svetski hit – dve godine kasnije! Tada su je otkrili strimeri, pa su je igrali milioni tokom izolacije.",
+      "rec": "impostor",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/among-us-poster.jpg",
+        "opis": "Posada u igri „Among Us“"
+      }
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kako se zove Marijev mlađi brat, koji nosi zelenu kapu?",
+      "odgovori": [
+        "Luidži (Luigi)",
+        "Vario (Wario)",
+        "Donki Kong",
+        "Toud (Toad)"
+      ],
+      "zanimljivost": "Luidži je nastao 1983. godine u igri „Mario Bros.“, a ime je dobio po piceriji blizu kancelarije kompanije Nintendo – „Mario i Luidži“ je bilo ime picerije.",
+      "rec": "brat",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/mario-poster.png",
+        "opis": "Mario i Luidži"
+      }
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koju princezu Mario najčešće spasava iz zamka kralja Bausera?",
+      "odgovori": [
+        "Princezu Breskvu (Princess Peach)",
+        "Princezu Zeldu",
+        "Princezu Dejzi (Daisy)",
+        "Princezu Rozalinu (Rosalina)"
+      ],
+      "zanimljivost": "Princeza Breskva se prvi put pojavila 1985. godine u igri „Super Mario Bros.“ – tada su je zvali samo „Princeza“ i bila je jedna od prvih junakinja u video-igrama.",
+      "rec": "breskva",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/mario-poster.png",
+        "opis": "Mario i princeza Breskva"
+      }
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zove švedski programer koji je sam napravio Minecraft?",
+      "odgovori": [
+        "Markus Persson, zvani Notch",
+        "Mark Zakerberg (Mark Zuckerberg)",
+        "Gejb Njuel (Gabe Newell)",
+        "Šigeru Mijamoto"
+      ],
+      "zanimljivost": "Notch je Minecraft napravio u slobodno vreme, a 2014. ga je prodao Majkrosoftu za 2,5 milijarde dolara. Posle prodaje se posvetio drugim stvarima i životu u Monaku.",
+      "rec": "notch",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/notch.jpg",
+        "opis": "Markus Persson, Notch"
+      }
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zove izmišljeni grad u igri „GTA V“, nastao po uzoru na Los Anđeles?",
+      "odgovori": [
+        "Los Santos",
+        "Vajs Siti (Vice City)",
+        "Liberti Siti (Liberty City)",
+        "San Andreas"
+      ],
+      "zanimljivost": "„GTA V“ (Grand Theft Auto V) je izašla 2013. godine i postala jedna od najprodavanijih igara svih vremena – prodata je u više od 200 miliona primeraka.",
+      "rec": "grad",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/gta-v-poster.png",
+        "opis": "Poster igre „GTA V“"
+      }
+    },
+    {
+      "tezina": 1,
+      "pitanje": "U kojoj igri Mario i njegovi prijatelji voze kartinge i gađaju se kornjačinim oklopima i bananama?",
+      "odgovori": [
+        "Mario Kart",
+        "Formula 1",
+        "Roket liga (Rocket League)",
+        "Nid for spid (Need for Speed)"
+      ],
+      "zanimljivost": "Prva „Mario Kart“ igra izašla je 1992. godine za konzolu Super Nintendo. Serijal je jedan od najprodavanijih u istoriji – ukupno je prodat u više od 160 miliona primeraka.",
+      "rec": "karting",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/mario-kart-poster.jpg",
+        "opis": "Poster igre „Mario Kart“"
+      }
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koja igra se igra izbacivanjem ljutitih ptica praćkom na zelene svinje koje su im ukrale jaja?",
+      "odgovori": [
+        "Angry Birds (Ljute ptice)",
+        "Flapi Berd (Flappy Bird)",
+        "Kasi kuku (Cut the Rope)",
+        "Bed Pigis (Bad Piggies)"
+      ],
+      "zanimljivost": "Igru je napravila finska kompanija Rovio, a zamisao je nastala od skice ljutitih crvenih ptica. „Angry Birds“ je bila jedna od prvih igara koja je postala svetski hit na pametnim telefonima.",
+      "rec": "ptica",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/angry-birds-poster.png",
+        "opis": "Ljute ptice"
+      }
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kako se zove princeza kraljevstva Hajrul koju Link spasava u serijalu „The Legend of Zelda“?",
+      "odgovori": [
+        "Zelda",
+        "Link",
+        "Impa",
+        "Midna"
+      ],
+      "zanimljivost": "Iako se serijal zove po njoj, glavni junak kojim upravljaš je Link – zato se mnogi zbune i misle da se on zove Zelda. Princeza Zelda često ima i mudrost i magične moći.",
+      "rec": "zelda",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/zelda-poster.jpg",
+        "opis": "Link i princeza Zelda"
+      }
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koja igra okuplja Marija, Pikačua, Linka i druge Nintendo junake u jednoj borilačkoj areni?",
+      "odgovori": [
+        "Super Smash Bros",
+        "Mario Party",
+        "Mario Kart",
+        "Fortnite"
+      ],
+      "zanimljivost": "Ideju je dobio Masahero Sakurai, koji je želeo da napravi borilačku igru za početnike. Danas se na turnirima „Super Smash Bros“ okupljaju neki od najboljih igrača na svetu.",
+      "rec": "arena",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/smash-bros-poster.jpg",
+        "opis": "Poster igre „Super Smash Bros“"
+      }
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Iz koje zemlje je Aleksej Pažitnov, programer koji je 1984. izmislio „Tetris“?",
+      "odgovori": [
+        "Rusija (tada Sovjetski Savez)",
+        "Japan",
+        "Sjedinjene Američke Države",
+        "Kina"
+      ],
+      "zanimljivost": "Pažitnov je Tetris napravio na računaru u moskovskom institutu, u slobodno vreme. Naziv je skovao od grčke reči „tetra“ (četiri) i svog omiljenog sporta – tenisa.",
+      "rec": "rusija",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/tetromino.png",
+        "opis": "Tetromino figure iz Tetrisa"
+      }
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Po čemu je poseban Roblox, platforma sa milionima igara?",
+      "odgovori": [
+        "Skoro sve igre u njemu prave sami igrači",
+        "Mora da se plati mesečna pretplata",
+        "Može da se igra samo u parovima",
+        "Nema zvuk ni muziku"
+      ],
+      "zanimljivost": "Roblox je nastao 2006. godine, a danas ga igra više od 70 miliona ljudi dnevno. Neki mladi autori su od svojih igara unutar Robloksa zaradili milione dolara.",
+      "rec": "kreator",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/roblox-poster.svg",
+        "opis": "Poster igre „Roblox“"
+      }
+    },
+    {
+      "tezina": 3,
+      "pitanje": "Ko je stvorio Pokemone, inspirisan skupljanjem insekata u detinjstvu?",
+      "odgovori": [
+        "Satoši Tadžiri (Satoshi Tajiri)",
+        "Šigeru Mijamoto",
+        "Hajao Mijazaki",
+        "Gunpej Jokoj (Gunpei Yokoi)"
+      ],
+      "zanimljivost": "Tadžiri je kao dečak skupljao insekte i želeo da današnja deca osete isto uzbuđenje sakupljanja – zato je smislio „džepna čudovišta“. Prve Pokemon igre izašle su 1996. godine za konzolu Game Boy.",
+      "rec": "pokemon",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/pokemon-poster.png",
+        "opis": "Pokemoni"
+      }
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koja kompanija pravi serijal „Grand Theft Auto“ (GTA)?",
+      "odgovori": [
+        "Rokstar gejms (Rockstar Games)",
+        "Elektronik arts (Electronic Arts)",
+        "Ubisoft",
+        "Aktivizn (Activision)"
+      ],
+      "zanimljivost": "Rockstar je poznat po neverovatnoj pažnji prema detaljima – gradovi u GTA izgledaju kao pravi, sa radijem, reklamama i „živim“ ulicama. GTA V je jedna od najskupljih igara ikada napravljenih.",
+      "rec": "rockstar",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/gta-v-poster.png",
+        "opis": "Poster igre „GTA V“"
+      }
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Šta na engleskom znači naziv „Grand Theft Auto“?",
+      "odgovori": [
+        "Velika krađa automobila",
+        "Velika auto-trka",
+        "Veliki grad automobila",
+        "Velika policijska potera"
+      ],
+      "zanimljivost": "U Americi je „grand theft auto“ pravi pravni naziv za tešku krađu vozila. U igri se, naravno, krađa automobila pretvara u najzabavniji deo avanture.",
+      "rec": "kradja"
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Kako se zove glavni junak igre „GTA: San Andreas“, koga svi zovu nadimkom CJ?",
+      "odgovori": [
+        "Karl Džonson (Carl Johnson)",
+        "Tomi Verseti (Tommy Vercetti)",
+        "Niko Belić (Niko Bellic)",
+        "Majkl de Santa (Michael De Santa)"
+      ],
+      "zanimljivost": "CJ se vraća u Los Santos posle smrti majke i polako preuzima ulice grada. Igra iz 2004. godine mnogi i danas smatraju jednom od najboljih GTA igara.",
+      "rec": "nadimak",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/gta-san-andreas-poster.jpg",
+        "opis": "Poster igre „GTA: San Andreas“"
+      }
+    },
+    {
+      "tezina": 1,
+      "pitanje": "U kojoj deceniji se dešava „GTA: Vajs Siti“ (GTA: Vice City), u gradu po uzoru na Majami?",
+      "odgovori": [
+        "1980-ih",
+        "1960-ih",
+        "1990-ih",
+        "2000-ih"
+      ],
+      "zanimljivost": "Grad Vajs Siti (Vice City) pun je pastelnih odela, neonskih svetala i sintisajzerske muzike osamdesetih. Priča je delom inspirisana filmom „Lice sa ožiljkom“ (Scarface).",
+      "rec": "decenija",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/gta-vice-city-poster.jpg",
+        "opis": "Poster igre „GTA: Vice City“"
+      }
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zovu tri glavna junaka koje smenjuješ u „GTA V“?",
+      "odgovori": [
+        "Majkl, Frenklin i Trevor",
+        "Karl, Tomi i Niko",
+        "Klod, Toni i Viktor",
+        "Džoni, Luis i Huang"
+      ],
+      "zanimljivost": "Majkl je bivši pljačkaš banaka, Frenklin mladić koji „oduzima“ kola, a Trevor nepredvidivi buntovnik. Po prvi put u serijalu, među njima se prebacuješ u toku misije.",
+      "rec": "trojica",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/gta-v-poster.png",
+        "opis": "Majkl, Frenklin i Trevor"
+      }
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Šta znači kada u GTA napraviš previše nereda i „dobiješ“ pet zvezdica?",
+      "odgovori": [
+        "Policija i vojska kreću u poteru za tobom",
+        "Dobijaš pet novih misija",
+        "Otključavaš pet brzih automobila",
+        "Igra se završava posle pet minuta"
+      ],
+      "zanimljivost": "Što više zvezdica, to jača potera – na najvišem nivou za tobom idu policijska kola, helikopteri, pa čak i vojska. Zvezdice polako nestaju ako se dovoljno dugo kriješ.",
+      "rec": "zvezdica"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zove izmišljena država u „GTA V“, po uzoru na južnu Kaliforniju?",
+      "odgovori": [
+        "San Andreas",
+        "Liberti Siti (Liberty City)",
+        "Vajs Siti (Vice City)",
+        "Karčer Siti (Carcer City)"
+      ],
+      "zanimljivost": "U državi San Andreas nalaze se grad Los Santos, pustinja, planine i plaže. Ime se prvi put pojavilo još u igri „GTA: San Andreas“ iz 2004. godine.",
+      "rec": "drzava",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/gta-v-poster.png",
+        "opis": "Grad Los Santos iz „GTA V“"
+      }
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koja GTA igra iz 2001. godine je prvi put prikazala grad u punom 3D, a junak je bio nema čovek po imenu Klod?",
+      "odgovori": [
+        "GTA III",
+        "GTA: Vajs Siti (GTA: Vice City)",
+        "GTA: San Andreas",
+        "GTA IV"
+      ],
+      "zanimljivost": "Pre „GTA III“ serijal se igrao iz pogleda odozgo. „GTA III“ je promenila ceo žanr otvorenog sveta i postala uzor mnogim kasnijim igrama.",
+      "rec": "grad",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/gta-iii-poster.jpg",
+        "opis": "Poster igre „GTA III“"
+      }
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Kako se zove glavni junak „GTA: Vajs Siti“ (GTA: Vice City), bivši zatvorenik koji gradi kriminalno carstvo?",
+      "odgovori": [
+        "Tomi Verseti (Tommy Vercetti)",
+        "Karl Džonson (Carl Johnson)",
+        "Niko Belić (Niko Bellic)",
+        "Majkl de Santa (Michael De Santa)"
+      ],
+      "zanimljivost": "Tomija je 2002. glasom i pojavom oživeo glumac Rej Liota. Priča o usponu kriminalca u gradu sunca podseća na filmove o Majamiju osamdesetih.",
+      "rec": "carstvo",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/gta-vice-city-poster.jpg",
+        "opis": "Tomi Verseti iz „GTA: Vajs Siti“ (Vice City)"
+      }
+    },
+    {
+      "tezina": 2,
+      "pitanje": "U kojoj GTA igri je glavni junak Niko Belić (Niko Bellic), doseljenik koji govori srpski?",
+      "odgovori": [
+        "GTA IV",
+        "GTA III",
+        "GTA V",
+        "GTA: San Andreas"
+      ],
+      "zanimljivost": "Niko Belić dolazi u Liberti Siti, grad po uzoru na Njujork, bežeći od prošlosti. U igri se može čuti i srpski jezik, a Niko je jedan od najomiljenijih junaka serijala.",
+      "rec": "doseljenik",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/gta-iv-poster.jpg",
+        "opis": "Poster igre „GTA IV“"
+      }
     }
   ]
 }
