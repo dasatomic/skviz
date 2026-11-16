@@ -521,8 +521,9 @@
     "tacke": [
      {
       "lat": 51.48,
-      "lon": 0.0,
-      "oznaka": "Grinič"
+      "lon": 0,
+      "oznaka": "Grinič",
+      "tajna": true
      }
     ]
    }
@@ -1360,7 +1361,8 @@
      {
       "lat": 13.76,
       "lon": 100.5,
-      "oznaka": "Bangkok"
+      "oznaka": "Bangkok",
+      "tajna": true
      }
     ]
    }
@@ -1541,7 +1543,7 @@
   {
    "lekcija": 6,
    "tezina": 2,
-   "pitanje": "Kojom bojom se na kartama prikazuju nižiji predeli do 200 m nadmorske visine?",
+   "pitanje": "Kojom bojom se na kartama prikazuju niži predeli do 200 m nadmorske visine?",
    "odgovori": [
     "Zelenom",
     "Braon",
@@ -2160,7 +2162,8 @@
      {
       "lat": 32.5,
       "lon": 44.4,
-      "oznaka": "Vavilon"
+      "oznaka": "Vavilon",
+      "tajna": true
      }
     ]
    }
@@ -2431,7 +2434,8 @@
      {
       "lat": 43.73,
       "lon": 7.42,
-      "oznaka": "Monako"
+      "oznaka": "Monako",
+      "tajna": true
      }
     ]
    }
@@ -2455,7 +2459,8 @@
      {
       "lat": 47.9,
       "lon": 106.9,
-      "oznaka": "Mongolija"
+      "oznaka": "Mongolija",
+      "tajna": true
      }
     ]
    }
@@ -2522,7 +2527,8 @@
      {
       "lat": -14.63,
       "lon": -69.44,
-      "oznaka": "La Rinkonada"
+      "oznaka": "La Rinkonada",
+      "tajna": true
      }
     ]
    }
@@ -2546,7 +2552,8 @@
      {
       "lat": 31.86,
       "lon": 35.46,
-      "oznaka": "Jerihon"
+      "oznaka": "Jerihon",
+      "tajna": true
      }
     ]
    }
@@ -3573,7 +3580,8 @@
      {
       "lat": 31.86,
       "lon": 35.46,
-      "oznaka": "Jerihon"
+      "oznaka": "Jerihon",
+      "tajna": true
      }
     ]
    }
@@ -3597,7 +3605,8 @@
      {
       "lat": 35.3,
       "lon": 25.16,
-      "oznaka": "Knosos"
+      "oznaka": "Knosos",
+      "tajna": true
      }
     ]
    }
@@ -3634,7 +3643,8 @@
      {
       "lat": 44.55,
       "lon": 22.03,
-      "oznaka": "Lepenski Vir"
+      "oznaka": "Lepenski Vir",
+      "tajna": true
      }
     ]
    }
@@ -3658,7 +3668,8 @@
      {
       "lat": 44.76,
       "lon": 20.62,
-      "oznaka": "Vinča"
+      "oznaka": "Vinča",
+      "tajna": true
      }
     ]
    }
@@ -3786,7 +3797,8 @@
      {
       "lat": 82.5,
       "lon": -62.3,
-      "oznaka": "Alert"
+      "oznaka": "Alert",
+      "tajna": true
      }
     ]
    }
@@ -3810,7 +3822,8 @@
      {
       "lat": -54.93,
       "lon": -67.61,
-      "oznaka": "Puerto Vilijams"
+      "oznaka": "Puerto Vilijams",
+      "tajna": true
      }
     ]
    }
@@ -3851,7 +3864,7 @@
      },
      {
       "lat": 40.71,
-      "lon": -74.0,
+      "lon": -74,
       "oznaka": "Njujork"
      }
     ]
@@ -3954,7 +3967,8 @@
      {
       "lat": 44.66,
       "lon": 20.93,
-      "oznaka": "Smederevo"
+      "oznaka": "Smederevo",
+      "tajna": true
      },
      {
       "lat": 43.32,
@@ -4140,7 +4154,8 @@
      {
       "lat": 44.01,
       "lon": 20.91,
-      "oznaka": "Kragujevac"
+      "oznaka": "Kragujevac",
+      "tajna": true
      }
     ]
    }
@@ -4188,7 +4203,8 @@
      {
       "lat": 43.62,
       "lon": 20.89,
-      "oznaka": "Vrnjačka Banja"
+      "oznaka": "Vrnjačka Banja",
+      "tajna": true
      }
     ]
    }
@@ -4212,7 +4228,8 @@
      {
       "lat": 44.82,
       "lon": 20.46,
-      "oznaka": "Beograd"
+      "oznaka": "Beograd",
+      "tajna": true
      }
     ]
    }
@@ -4249,7 +4266,8 @@
      {
       "lat": 44.08,
       "lon": 10.1,
-      "oznaka": "Karara"
+      "oznaka": "Karara",
+      "tajna": true
      }
     ]
    }
@@ -4427,7 +4445,8 @@
      {
       "lat": 47.07,
       "lon": 15.44,
-      "oznaka": "Grac"
+      "oznaka": "Grac",
+      "tajna": true
      }
     ]
    }
@@ -4464,7 +4483,8 @@
      {
       "lat": 44.44,
       "lon": 20.7,
-      "oznaka": "Mladenovac"
+      "oznaka": "Mladenovac",
+      "tajna": true
      }
     ]
    }
@@ -4651,7 +4671,8 @@
      {
       "lat": 52.08,
       "lon": 4.31,
-      "oznaka": "Randstad"
+      "oznaka": "Randstad",
+      "tajna": true
      }
     ]
    }
@@ -5089,7 +5110,8 @@
      {
       "lat": 43.25,
       "lon": 22.83,
-      "oznaka": "Gostuša"
+      "oznaka": "Gostuša",
+      "tajna": true
      }
     ]
    }
@@ -5152,12 +5174,14 @@
      {
       "lat": 43.68,
       "lon": 19.88,
-      "oznaka": "Sirogojno"
+      "oznaka": "Sirogojno",
+      "tajna": true
      },
      {
       "lat": 43.79,
       "lon": 19.5,
-      "oznaka": "Mokra Gora"
+      "oznaka": "Mokra Gora",
+      "tajna": true
      }
     ]
    }
@@ -6123,7 +6147,8 @@
      {
       "lat": -0.6,
       "lon": -90.4,
-      "oznaka": "Galapagos"
+      "oznaka": "Galapagos",
+      "tajna": true
      }
     ]
    }
@@ -6743,7 +6768,8 @@
      {
       "lat": 46.06,
       "lon": 14.5,
-      "oznaka": "Ljubljana"
+      "oznaka": "Ljubljana",
+      "tajna": true
      }
     ]
    }
@@ -7032,7 +7058,8 @@
      {
       "lat": 41.9,
       "lon": 12.45,
-      "oznaka": "Vatikan"
+      "oznaka": "Vatikan",
+      "tajna": true
      }
     ]
    }
@@ -7398,7 +7425,8 @@
      {
       "lat": 43.3,
       "lon": 22.7,
-      "oznaka": "Stara planina"
+      "oznaka": "Stara planina",
+      "tajna": true
      }
     ]
    }
@@ -7731,7 +7759,8 @@
      {
       "lat": 38.9,
       "lon": -77.04,
-      "oznaka": "Vašington"
+      "oznaka": "Vašington",
+      "tajna": true
      }
     ]
    }
@@ -7920,7 +7949,8 @@
      {
       "lat": 41.9,
       "lon": 12.45,
-      "oznaka": "Vatikan"
+      "oznaka": "Vatikan",
+      "tajna": true
      }
     ]
    }
@@ -8602,8 +8632,8 @@
     "oblast": "juzna-azija",
     "tacke": [
      {
-      "lat": 34.0,
-      "lon": 76.0,
+      "lat": 34,
+      "lon": 76,
       "oznaka": "Kašmir"
      }
     ]
@@ -8692,9 +8722,10 @@
     "oblast": "s-amerika",
     "tacke": [
      {
-      "lat": 64.0,
-      "lon": -40.0,
-      "oznaka": "Grenland"
+      "lat": 64,
+      "lon": -40,
+      "oznaka": "Grenland",
+      "tajna": true
      }
     ]
    }
@@ -8718,7 +8749,8 @@
      {
       "lat": 36.14,
       "lon": -5.35,
-      "oznaka": "Gibraltar"
+      "oznaka": "Gibraltar",
+      "tajna": true
      }
     ]
    }
@@ -8859,7 +8891,8 @@
      {
       "lat": 40.75,
       "lon": -73.97,
-      "oznaka": "Njujork"
+      "oznaka": "Njujork",
+      "tajna": true
      }
     ]
    }
@@ -8935,7 +8968,8 @@
      {
       "lat": 50.85,
       "lon": 4.35,
-      "oznaka": "Brisel"
+      "oznaka": "Brisel",
+      "tajna": true
      }
     ]
    }
@@ -9362,9 +9396,10 @@
     "oblast": "evropa",
     "tacke": [
      {
-      "lat": 36.0,
+      "lat": 36,
       "lon": -5.61,
-      "oznaka": "Rt Maroki"
+      "oznaka": "Rt Maroki",
+      "tajna": true
      }
     ]
    }
@@ -9412,7 +9447,8 @@
      {
       "lat": 38.78,
       "lon": -9.5,
-      "oznaka": "Rt Roka"
+      "oznaka": "Rt Roka",
+      "tajna": true
      }
     ]
    }
@@ -9434,9 +9470,10 @@
     "oblast": "evropa",
     "tacke": [
      {
-      "lat": 60.0,
-      "lon": 60.0,
-      "oznaka": "Ural"
+      "lat": 60,
+      "lon": 60,
+      "oznaka": "Ural",
+      "tajna": true
      }
     ]
    }
@@ -9786,7 +9823,8 @@
      {
       "lat": 37.75,
       "lon": 14.99,
-      "oznaka": "Etna"
+      "oznaka": "Etna",
+      "tajna": true
      }
     ]
    }
@@ -10110,7 +10148,8 @@
      {
       "lat": 43.73,
       "lon": 7.42,
-      "oznaka": "Monako"
+      "oznaka": "Monako",
+      "tajna": true
      }
     ]
    }

@@ -311,7 +311,8 @@
      {
       "lat": 44.32,
       "lon": 20.55,
-      "oznaka": "Orašac"
+      "oznaka": "Orašac",
+      "tajna": true
      }
     ]
    },
@@ -1739,25 +1740,25 @@
    "tezina": 1,
    "pitanje": "Na koje tri velike morfološke oblasti delimo reljef Srbije?",
    "odgovori": [
-    "Nižijsku, obode nižija i planinsko-kotlinsku",
+    "Nižijsku, obode nizija i planinsko-kotlinsku",
     "Severnu, srednju i južnu",
     "Nisku, srednju i visoku",
     "Ravnu, brdsku i morsku"
    ],
-   "zanimljivost": "Obodi nižija su prelazna zona između nižija i planina.",
+   "zanimljivost": "Obodi nizija su prelazna zona između nizija i planina.",
    "rec": "reljef"
   },
   {
    "lekcija": 8,
    "tezina": 1,
-   "pitanje": "Koje dve nižije pripadaju nižijskoj morfološkoj oblasti Srbije?",
+   "pitanje": "Koje dve nizije pripadaju nizijskoj morfološkoj oblasti Srbije?",
    "odgovori": [
     "Panonska i Pontijska (Vlaška)",
     "Panonska i Pelagonijska",
     "Vlaška i Padska",
     "Panonska i Tracinska"
    ],
-   "zanimljivost": "Pontijska nižija se naziva i Vlaška nižija.",
+   "zanimljivost": "Pontijska nizija se naziva i Vlaška nizija.",
    "rec": "nizija",
    "mediji": {
     "vrsta": "mapa",
@@ -1808,7 +1809,8 @@
      {
       "lat": 45.12,
       "lon": 21.3,
-      "oznaka": "Vršačke pl."
+      "oznaka": "Vršačke pl.",
+      "tajna": true
      }
     ]
    }
@@ -1845,7 +1847,7 @@
   {
    "lekcija": 8,
    "tezina": 2,
-   "pitanje": "Koji od navedenih predela NIJE deo Panonske nižije južno od Save i Dunava?",
+   "pitanje": "Koji od navedenih predela NIJE deo Panonske nizije južno od Save i Dunava?",
    "odgovori": [
     "Pešter",
     "Mačva",
@@ -1865,29 +1867,30 @@
     "Na ušću Tise u Dunav",
     "Na ušću Drine u Savu"
    ],
-   "zanimljivost": "Najniža tačka je u Pontijskoj nižiji, na 28 m nadmorske visine.",
+   "zanimljivost": "Najniža tačka je u Pontijskoj niziji, na 28 m nadmorske visine.",
    "rec": "timok"
   },
   {
    "lekcija": 8,
    "tezina": 2,
-   "pitanje": "Koja regija zauzima centralni i najveći deo oboda Panonske nižije?",
+   "pitanje": "Koja oblast na južnom obodu Panonske nizije leži između Kolubare i Velike Morave?",
    "odgovori": [
     "Šumadija",
     "Mačva",
     "Braničevo",
     "Pocerina"
    ],
-   "zanimljivost": "Šumadija je omeđena Savom, Dunavom, Velikom i Zapadnom Moravom i Kolubarom.",
+   "zanimljivost": "Ime je dobila po gustim hrastovim šumama koje su je nekada prekrivale – putnici iz 19. veka pisali su da se kroz nju danima putuje pod krošnjama.",
    "rec": "sumadija",
    "mediji": {
     "vrsta": "mapa",
     "oblast": "srbija",
     "tacke": [
      {
-      "lat": 44.0,
+      "lat": 44,
       "lon": 20.6,
-      "oznaka": "Šumadija"
+      "oznaka": "Šumadija",
+      "tajna": true
      }
     ]
    }
@@ -1977,7 +1980,8 @@
      {
       "lat": 43.33,
       "lon": 20.28,
-      "oznaka": "Golija"
+      "oznaka": "Golija",
+      "tajna": true
      }
     ]
    }
@@ -2014,7 +2018,8 @@
      {
       "lat": 43.35,
       "lon": 22.7,
-      "oznaka": "Stara planina"
+      "oznaka": "Stara planina",
+      "tajna": true
      }
     ]
    }
@@ -2062,7 +2067,8 @@
      {
       "lat": 43.05,
       "lon": 20.05,
-      "oznaka": "Pešter"
+      "oznaka": "Pešter",
+      "tajna": true
      }
     ]
    }
@@ -2086,17 +2092,20 @@
      {
       "lat": 44.69,
       "lon": 20.51,
-      "oznaka": "Avala"
+      "oznaka": "Avala",
+      "tajna": true
      },
      {
       "lat": 44.46,
       "lon": 20.56,
-      "oznaka": "Kosmaj"
+      "oznaka": "Kosmaj",
+      "tajna": true
      },
      {
       "lat": 44.13,
       "lon": 20.53,
-      "oznaka": "Rudnik"
+      "oznaka": "Rudnik",
+      "tajna": true
      }
     ]
    }
@@ -2148,8 +2157,8 @@
    "tezina": 2,
    "pitanje": "Koji deo Srbije je najugroženiji klizištima?",
    "odgovori": [
-    "Obod Panonske nižije",
-    "Panonska nižija",
+    "Obod Panonske nizije",
+    "Panonska nizija",
     "Pešterska visoravan",
     "Dolina Timoka"
    ],
@@ -2238,7 +2247,8 @@
      {
       "lat": 43.93,
       "lon": 19.45,
-      "oznaka": "Drina"
+      "oznaka": "Drina",
+      "tajna": true
      }
     ]
    }
@@ -2402,7 +2412,8 @@
      {
       "lat": 44.5,
       "lon": 22.25,
-      "oznaka": "Miroč"
+      "oznaka": "Miroč",
+      "tajna": true
      }
     ]
    }
@@ -2479,7 +2490,7 @@
    "odgovori": [
     "Ne, glacijalni oblici su fosilni",
     "Da, na najvišim planinama",
-    "Da, u Panonskoj nižiji",
+    "Da, u Panonskoj niziji",
     "Da, u pećinama"
    ],
    "zanimljivost": "Ledenici su nestali pre oko 10.000 godina.",
@@ -2556,7 +2567,8 @@
      {
       "lat": 44.88,
       "lon": 21.1,
-      "oznaka": "Deliblatska peščara"
+      "oznaka": "Deliblatska peščara",
+      "tajna": true
      }
     ]
    }
@@ -2680,7 +2692,7 @@
   {
    "lekcija": 10,
    "tezina": 3,
-   "pitanje": "Koje tri manje peščare postoje u Pontijskoj nižiji?",
+   "pitanje": "Koje tri manje peščare postoje u Pontijskoj niziji?",
    "odgovori": [
     "Kladovska, Negotinska i Radujevačka",
     "Ramsko-zatonjska, Gradištanska i Požeženska",
@@ -2748,7 +2760,8 @@
      {
       "lat": 42.91,
       "lon": 22.05,
-      "oznaka": "Grdelica"
+      "oznaka": "Grdelica",
+      "tajna": true
      }
     ]
    }
@@ -3007,7 +3020,8 @@
      {
       "lat": 44.37,
       "lon": 20.96,
-      "oznaka": "Smed. Palanka"
+      "oznaka": "Smed. Palanka",
+      "tajna": true
      }
     ]
    }
@@ -3136,7 +3150,8 @@
      {
       "lat": 45.83,
       "lon": 20.47,
-      "oznaka": "severni Banat"
+      "oznaka": "severni Banat",
+      "tajna": true
      }
     ]
    }
@@ -3160,7 +3175,8 @@
      {
       "lat": 42.58,
       "lon": 20.1,
-      "oznaka": "Prokletije"
+      "oznaka": "Prokletije",
+      "tajna": true
      }
     ]
    }
@@ -3248,7 +3264,7 @@
    "tezina": 1,
    "pitanje": "Koji deo Srbije obuhvata kontinentalna klimatska oblast?",
    "odgovori": [
-    "Panonsku i Pontijsku nižiju sa obodima",
+    "Panonsku i Pontijsku niziju sa obodima",
     "Planinsko-kotlinsku oblast",
     "Samo južnu Srbiju",
     "Samo Šumadiju"
@@ -3535,7 +3551,7 @@
    "odgovori": [
     "Južno od Save i Dunava",
     "U Vojvodini",
-    "U Panonskoj nižiji",
+    "U Panonskoj niziji",
     "U Banatu"
    ],
    "zanimljivost": "Tamo izdanska voda izbija na površinu u vidu izvora.",
@@ -4016,12 +4032,14 @@
      {
       "lat": 42.93,
       "lon": 20.05,
-      "oznaka": "Hajla"
+      "oznaka": "Hajla",
+      "tajna": true
      },
      {
       "lat": 43.72,
       "lon": 20.69,
-      "oznaka": "Kraljevo"
+      "oznaka": "Kraljevo",
+      "tajna": true
      }
     ]
    }
@@ -4106,7 +4124,8 @@
      {
       "lat": 46.08,
       "lon": 19.76,
-      "oznaka": "Palić"
+      "oznaka": "Palić",
+      "tajna": true
      }
     ]
    }
@@ -4131,7 +4150,7 @@
    "odgovori": [
     "U cirkovima Šar-planine i Prokletija",
     "U Vojvodini",
-    "U Panonskoj nižiji",
+    "U Panonskoj niziji",
     "U Negotinskoj krajini"
    ],
    "zanimljivost": "Sva su nastala erozijom, pa su cirkna jezera.",
@@ -4143,12 +4162,14 @@
      {
       "lat": 42.17,
       "lon": 20.9,
-      "oznaka": "Šar-planina"
+      "oznaka": "Šar-planina",
+      "tajna": true
      },
      {
       "lat": 42.58,
       "lon": 20.1,
-      "oznaka": "Prokletije"
+      "oznaka": "Prokletije",
+      "tajna": true
      }
     ]
    }
@@ -4309,7 +4330,8 @@
      {
       "lat": 42.95,
       "lon": 20.55,
-      "oznaka": "Gazivode"
+      "oznaka": "Gazivode",
+      "tajna": true
      }
     ]
    }
@@ -4333,7 +4355,8 @@
      {
       "lat": 44.76,
       "lon": 19.69,
-      "oznaka": "Obedska bara"
+      "oznaka": "Obedska bara",
+      "tajna": true
      }
     ]
    }
@@ -4628,7 +4651,8 @@
      {
       "lat": 45.25,
       "lon": 19.84,
-      "oznaka": "Vojvodina"
+      "oznaka": "Vojvodina",
+      "tajna": true
      }
     ]
    }
@@ -5120,7 +5144,8 @@
      {
       "lat": 42.8,
       "lon": 22.4,
-      "oznaka": "Crna Trava"
+      "oznaka": "Crna Trava",
+      "tajna": true
      }
     ]
    }
@@ -5144,7 +5169,8 @@
      {
       "lat": 44.8,
       "lon": 20.47,
-      "oznaka": "Vračar"
+      "oznaka": "Vračar",
+      "tajna": true
      }
     ]
    }
@@ -5167,7 +5193,7 @@
    "tezina": 2,
    "pitanje": "U kojim delovima Srbije živi najviše stanovnika?",
    "odgovori": [
-    "U nižijama, kotlinama i gradovima",
+    "U nizijama, kotlinama i gradovima",
     "Na visokim planinama",
     "U pustinjama",
     "U močvarama"
@@ -5581,7 +5607,7 @@
      },
      {
       "lat": 43.27,
-      "lon": 20.0,
+      "lon": 20,
       "oznaka": "Sjenica"
      }
     ]
@@ -5606,17 +5632,20 @@
      {
       "lat": 42.31,
       "lon": 21.65,
-      "oznaka": "Preševo"
+      "oznaka": "Preševo",
+      "tajna": true
      },
      {
       "lat": 42.46,
       "lon": 21.77,
-      "oznaka": "Bujanovac"
+      "oznaka": "Bujanovac",
+      "tajna": true
      },
      {
       "lat": 42.84,
       "lon": 21.58,
-      "oznaka": "Medveđa"
+      "oznaka": "Medveđa",
+      "tajna": true
      }
     ]
    }
@@ -5640,12 +5669,14 @@
      {
       "lat": 43.01,
       "lon": 22.78,
-      "oznaka": "Dimitrovgrad"
+      "oznaka": "Dimitrovgrad",
+      "tajna": true
      },
      {
       "lat": 42.5,
       "lon": 22.47,
-      "oznaka": "Bosilegrad"
+      "oznaka": "Bosilegrad",
+      "tajna": true
      }
     ]
    }
@@ -5770,7 +5801,7 @@
     "tacke": [
      {
       "lat": 43.3,
-      "lon": 22.0,
+      "lon": 22,
       "oznaka": "Sićevačka klisura"
      }
     ]
@@ -6121,7 +6152,8 @@
      {
       "lat": 44.46,
       "lon": 19.29,
-      "oznaka": "Tršić"
+      "oznaka": "Tršić",
+      "tajna": true
      }
     ]
    }
@@ -6197,7 +6229,8 @@
      {
       "lat": 44.82,
       "lon": 20.46,
-      "oznaka": "Beograd"
+      "oznaka": "Beograd",
+      "tajna": true
      }
     ]
    }
@@ -6264,7 +6297,7 @@
     "Drine u Savu",
     "Morave u Dunav"
    ],
-   "zanimljivost": "Beograd je na dodiru Panonske nižije i Balkanskog poluostrva.",
+   "zanimljivost": "Beograd je na dodiru Panonske nizije i Balkanskog poluostrva.",
    "rec": "beograd",
    "mediji": {
     "vrsta": "mapa",
@@ -6929,7 +6962,8 @@
      {
       "lat": 43.53,
       "lon": 20.22,
-      "oznaka": "Ivanjica"
+      "oznaka": "Ivanjica",
+      "tajna": true
      }
     ]
    }
@@ -6990,7 +7024,8 @@
      {
       "lat": 43.75,
       "lon": 20.1,
-      "oznaka": "Arilje"
+      "oznaka": "Arilje",
+      "tajna": true
      }
     ]
    }
@@ -7014,12 +7049,14 @@
      {
       "lat": 46.1,
       "lon": 19.67,
-      "oznaka": "Subotica"
+      "oznaka": "Subotica",
+      "tajna": true
      },
      {
       "lat": 45.15,
       "lon": 19.71,
-      "oznaka": "Fruška gora"
+      "oznaka": "Fruška gora",
+      "tajna": true
      }
     ]
    }
@@ -7150,7 +7187,8 @@
      {
       "lat": 44.43,
       "lon": 21.94,
-      "oznaka": "Majdanpek"
+      "oznaka": "Majdanpek",
+      "tajna": true
      }
     ]
    }
@@ -7200,7 +7238,8 @@
      {
       "lat": 44.66,
       "lon": 20.93,
-      "oznaka": "Smederevo"
+      "oznaka": "Smederevo",
+      "tajna": true
      }
     ]
    }
@@ -7276,7 +7315,8 @@
      {
       "lat": 44.01,
       "lon": 20.92,
-      "oznaka": "Kragujevac"
+      "oznaka": "Kragujevac",
+      "tajna": true
      }
     ]
    }
@@ -7300,12 +7340,14 @@
      {
       "lat": 44.27,
       "lon": 19.88,
-      "oznaka": "Valjevo"
+      "oznaka": "Valjevo",
+      "tajna": true
      },
      {
       "lat": 45.77,
       "lon": 19.11,
-      "oznaka": "Sombor"
+      "oznaka": "Sombor",
+      "tajna": true
      }
     ]
    }
@@ -7655,7 +7697,8 @@
      {
       "lat": 43.9,
       "lon": 22.28,
-      "oznaka": "Zaječar"
+      "oznaka": "Zaječar",
+      "tajna": true
      }
     ]
    }
@@ -7716,7 +7759,8 @@
      {
       "lat": 44.82,
       "lon": 20.46,
-      "oznaka": "Beograd"
+      "oznaka": "Beograd",
+      "tajna": true
      }
     ]
    }
@@ -8117,7 +8161,8 @@
      {
       "lat": 45.15,
       "lon": 19.71,
-      "oznaka": "Fruška gora"
+      "oznaka": "Fruška gora",
+      "tajna": true
      }
     ]
    }
@@ -8141,7 +8186,8 @@
      {
       "lat": 44.57,
       "lon": 22.05,
-      "oznaka": "Đerdap"
+      "oznaka": "Đerdap",
+      "tajna": true
      }
     ]
    }
@@ -8189,7 +8235,8 @@
      {
       "lat": 43.29,
       "lon": 20.81,
-      "oznaka": "Kopaonik"
+      "oznaka": "Kopaonik",
+      "tajna": true
      }
     ]
    }
@@ -8447,7 +8494,8 @@
      {
       "lat": 43.9,
       "lon": 22.28,
-      "oznaka": "Zaječar"
+      "oznaka": "Zaječar",
+      "tajna": true
      }
     ]
    }
@@ -8471,12 +8519,14 @@
      {
       "lat": 43.97,
       "lon": 19.57,
-      "oznaka": "Bajina Bašta"
+      "oznaka": "Bajina Bašta",
+      "tajna": true
      },
      {
       "lat": 43.39,
       "lon": 19.65,
-      "oznaka": "Prijepolje"
+      "oznaka": "Prijepolje",
+      "tajna": true
      }
     ]
    }
@@ -8578,7 +8628,7 @@
    "pitanje": "Koja podela Srbije je administrativna?",
    "odgovori": [
     "Naseljena mesta, opštine, Gradovi, okruzi i pokrajine",
-    "Samo na planine i nižije",
+    "Samo na planine i nizije",
     "Samo na gradove i sela",
     "Na klimatske oblasti"
    ],

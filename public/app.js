@@ -936,6 +936,11 @@ function ekranPitanje(nov, staro) {
     });
     const naslov = P.vrsta === 'uljez' ? `<h3>🕵️ Uljez je: ${mat(P.odgovori[P.tacan])}</h3>` : `<h3>✅ ${mat(P.odgovori[P.tacan])}</h3>`;
     ispod.innerHTML = otkrivanjePitanja(P, naslov);
+    // mapa čiji su natpisi bili skriveni (tačke sa "tajna") – sada se crta sa imenima
+    if (!nov && P.mediji?.tacke?.some((t) => t.tajna) && $('#medij')) {
+      $('#medij').innerHTML = '';
+      ciscenje.push(prikaziMedij($('#medij'), P.mediji, { auto: true, paket: P.paket, kod: P.kod }));
+    }
     prikaziMedijOdgovora(P);
     if (P.resenje) pokreniResenje(P);
     if (!TV) setTimeout(() => $('.zanimljivost')?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 900);

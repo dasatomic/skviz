@@ -91,6 +91,15 @@ for (const dir of fs.readdirSync(KOREN).sort()) {
     const kljuc = (p.pitanje || '').toLowerCase().replace(/\W+/g, ' ').trim() + '|' + (p.odgovori || p.parovi || [])[0];
     if (svaPitanja.has(kljuc)) u(oz, 'isto pitanje postoji i u ' + svaPitanja.get(kljuc));
     svaPitanja.set(kljuc, oz);
+    // natpis tačke na mapi uz pitanje koji sadrži tačan odgovor → treba "tajna": true (ime se vidi tek pri otkrivanju)
+    if (p.odgovori && p.vrsta !== 'uljez' && Array.isArray(p.mediji?.tacke)) {
+      const n = (s) => String(s).toLowerCase().replace(/đ/g, 'dj').normalize('NFD').replace(/[̀-ͯ]/g, '');
+      const koren = (w) => w.slice(0, Math.max(4, w.length - 2));
+      const q = n(p.pitanje), ostali = p.odgovori.slice(1).map(n).join(' ');
+      const reci = n(p.odgovori[0]).split(/[^a-z0-9]+/).filter((w) => w.length >= 4 && !q.includes(koren(w)) && !ostali.includes(koren(w)));
+      for (const t of p.mediji.tacke) if (t.oznaka && !t.tajna && reci.some((w) => n(t.oznaka).includes(koren(w))))
+        u(oz, `natpis „${t.oznaka}“ na mapi odaje odgovor – dodaj tački "tajna": true`);
+    }
     for (const [polje, m] of [['mediji', p.mediji], ['medijiOdgovora', p.medijiOdgovora]]) {
       if (m !== undefined && (!m || typeof m !== 'object' || Array.isArray(m))) g(oz, `„${polje}“ mora biti objekat sa poljem „vrsta“`);
       else if (m) {
