@@ -104,6 +104,12 @@ label.sitno, .kartica > label { color: var(--akcent2); font-weight: 500; }
 .kviz .br { font-size: .8em; color: var(--blago); }
 .odeljak { color: var(--akcent2); font-weight: 700; text-transform: uppercase; letter-spacing: .08em; font-size: .78em; margin: 16px 2px 6px; }
 .predmeti { display: flex; flex-direction: column; gap: 12px; }
+/* telefon: izbor predmeta u dve kolone, karte tačno jedna ispod druge */
+@media (max-width: 639px) {
+  .kvizovi { grid-template-columns: repeat(2, 1fr); }
+  .predmeti { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  .predmeti .kvizovi { display: contents; }
+}
 .izbor.razredi { justify-content: flex-start; margin-bottom: 8px; }
 .izbor button:disabled, .lekcija:disabled, .lekcija:has(input:disabled) { opacity: .35; }
 /* lekcije = Telegram spisak razgovora */
