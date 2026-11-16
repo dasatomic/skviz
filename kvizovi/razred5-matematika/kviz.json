@@ -212,7 +212,7 @@
    "pitanje": "Koje svojstvo kaže da sabirci mogu da zamene mesta, a zbir ostaje isti?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "$a+b=b+a$"
+    "tekst": "a + b = b + a"
    },
    "odgovori": [
     "Komutativnost sabiranja",
@@ -229,7 +229,7 @@
    "pitanje": "Koje svojstvo omogućava da sabiraš u parovima, kako ti je lakše: $(a+b)+c=a+(b+c)$?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "$(a+b)+c=a+(b+c)$"
+    "tekst": "(a + b) + c = a + (b + c)"
    },
    "odgovori": [
     "Asocijativnost sabiranja",
@@ -285,7 +285,7 @@
    "pitanje": "Koje svojstvo povezuje množenje i sabiranje: $a \\cdot (b+c) = a \\cdot b + a \\cdot c$?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "$a\\cdot(b+c)=a\\cdot b+a\\cdot c$"
+    "tekst": "a · (b + c) = a · b + a · c"
    },
    "odgovori": [
     "Distributivnost",
@@ -315,7 +315,7 @@
    "pitanje": "Zašto deljenje nulom nije dozvoljeno?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "$a:0$ nije definisano"
+    "tekst": "a:0 nije definisano"
    },
    "odgovori": [
     "Nijedan broj ne daje smislen rezultat",
@@ -371,7 +371,7 @@
    "pitanje": "Kako proveravaš deljenje sa ostatkom $23 = 4 \\cdot 5 + 3$?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "$a=b\\cdot q+r$"
+    "tekst": "a = b · q + r"
    },
    "odgovori": [
     "Delilac puta količnik plus ostatak daje deljenik",
@@ -594,7 +594,7 @@
    "pitanje": "Broj 0 je sadržalac svakog prirodnog broja. Zašto?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "$n\\cdot 0=0$"
+    "tekst": "n · 0 = 0"
    },
    "odgovori": [
     "Jer je $0 = n \\cdot 0$ za svako $n$",
@@ -959,7 +959,7 @@
    "pitanje": "Po kojoj cifri prepoznaješ da je broj deljiv sa 2?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "parne cifre: $0,2,4,6,8$"
+    "tekst": "parne cifre: 0,2,4,6,8"
    },
    "odgovori": [
     "Po cifri jedinica – mora biti parna",
@@ -1210,7 +1210,7 @@
    "pitanje": "Koja oznaka znači da element pripada skupu?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "$2 \\in A$"
+    "tekst": "2 ∈ A"
    },
    "odgovori": [
     "$\\in$",
@@ -1227,7 +1227,7 @@
    "pitanje": "Kako se zove skup koji nema nijedan element?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "$\\varnothing = \\{\\}$"
+    "tekst": "∅ = {}"
    },
    "odgovori": [
     "Prazan skup",
@@ -1244,7 +1244,7 @@
    "pitanje": "Kojim slovom označavamo skup prirodnih brojeva?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "$\\mathbb{N}=\\{1,2,3,4,\\dots\\}$"
+    "tekst": "ℕ = {1,2,3,4,…}"
    },
    "odgovori": [
     "$\\mathbb{N}$",
@@ -1261,7 +1261,7 @@
    "pitanje": "Kojim slovom označavamo skup prirodnih brojeva zajedno sa nulom?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "$\\mathbb{N}_0=\\{0,1,2,3,\\dots\\}$"
+    "tekst": "ℕ₀ = {0,1,2,3,…}"
    },
    "odgovori": [
     "$\\mathbb{N}_0$",
@@ -1319,7 +1319,7 @@
    "pitanje": "Koja skupovna operacija spaja SVE elemente dva skupa?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "$A\\cup B$"
+    "tekst": "A∪ B"
    },
    "odgovori": [
     "Unija",
@@ -1336,7 +1336,7 @@
    "pitanje": "Koja skupovna operacija daje samo ZAJEDNIČKE elemente?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "$A\\cap B$"
+    "tekst": "A∩ B"
    },
    "odgovori": [
     "Presek",
@@ -2165,7 +2165,7 @@
    "pitanje": "Ako je $A=\\{1,2,3\\}$ i $B=\\{3,4\\}$, kolika je razlika $A \\setminus B$?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "$A\\setminus B$"
+    "tekst": "A∖ B"
    },
    "odgovori": [
     "$\\{1,2\\}$",
@@ -3203,7 +3203,7 @@
    "pitanje": "Kako se zovu prave u ravni koje nemaju nijednu zajedničku tačku?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "$a \\parallel b$"
+    "tekst": "a ∥ b"
    },
    "odgovori": [
     "Paralelne prave",
@@ -3220,7 +3220,7 @@
    "pitanje": "Kako se zovu prave koje se seku pod pravim uglom (90°)?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "$a \\perp b$"
+    "tekst": "a ⊥ b"
    },
    "odgovori": [
     "Normalne (upravne) prave",
@@ -3601,7 +3601,7 @@
    "pitanje": "Kako se zove duž koja prolazi kroz centar i spaja dve tačke kružnice?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "$d=2r$"
+    "tekst": "d = 2r"
    },
    "odgovori": [
     "Prečnik",
@@ -3894,8 +3894,42 @@
    "tezina": 3,
    "pitanje": "Kojom strelicom se označava vektor?",
    "mediji": {
-    "vrsta": "formula",
-    "tekst": "$\\vec{AB}$"
+    "vrsta": "geo",
+    "t": {
+     "A": [
+      0,
+      0
+     ],
+     "B": [
+      4,
+      0
+     ]
+    },
+    "e": [
+     {
+      "d": "AB",
+      "b": 1,
+      "str": 1,
+      "debljina": 4
+     },
+     {
+      "tx": "A",
+      "at": [
+       0,
+       -0.5
+      ],
+      "vel": 15
+     },
+     {
+      "tx": "B",
+      "at": [
+       4,
+       -0.5
+      ],
+      "vel": 15
+     }
+    ],
+    "velicina": 260
    },
    "odgovori": [
     "Iznad slova, na primer $\\vec{AB}$",
@@ -4029,7 +4063,7 @@
    "pitanje": "Kako glasi rastavljanje broja 12 na proste činioce?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "$12=2\\cdot2\\cdot3$"
+    "tekst": "12 = 2 · 2 · 3"
    },
    "odgovori": [
     "$2 \\cdot 2 \\cdot 3$",
@@ -4046,7 +4080,7 @@
    "pitanje": "Kako glasi rastavljanje broja 18 na proste činioce?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "$18=2\\cdot3\\cdot3$"
+    "tekst": "18 = 2 · 3 · 3"
    },
    "odgovori": [
     "$2 \\cdot 3 \\cdot 3$",
@@ -4063,7 +4097,7 @@
    "pitanje": "Kako glasi rastavljanje broja 30 na proste činioce?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "$30=2\\cdot3\\cdot5$"
+    "tekst": "30 = 2 · 3 · 5"
    },
    "odgovori": [
     "$2 \\cdot 3 \\cdot 5$",
@@ -4080,7 +4114,7 @@
    "pitanje": "Koji su prosti činioci broja 20?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "$20=2\\cdot2\\cdot5$"
+    "tekst": "20 = 2 · 2 · 5"
    },
    "odgovori": [
     "$2 \\cdot 2 \\cdot 5$",
@@ -4110,7 +4144,7 @@
    "pitanje": "Broj 24 rastavljen na proste činioce glasi…",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "$24=2\\cdot2\\cdot2\\cdot3$"
+    "tekst": "24 = 2 · 2 · 2 · 3"
    },
    "odgovori": [
     "$2 \\cdot 2 \\cdot 2 \\cdot 3$",
@@ -4283,7 +4317,7 @@
    "pitanje": "Koja veza povezuje NZD i NZS dva broja $a$ i $b$?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "$NZD\\cdot NZS=a\\cdot b$"
+    "tekst": "NZD · NZS = a · b"
    },
    "odgovori": [
     "$NZD \\cdot NZS = a \\cdot b$",
@@ -5062,19 +5096,6 @@
   },
   {
    "lekcija": 22,
-   "tezina": 1,
-   "pitanje": "Od koje tačke počinje brojevna poluprava?",
-   "odgovori": [
-    "Od 0",
-    "Od 1",
-    "Od −1",
-    "Od bilo kog broja"
-   ],
-   "zanimljivost": "Brojevna poluprava počinje u tački 0 i proteže se udesno, u beskonačnost. Na nju ređamo brojeve od najmanjeg ka najvećem.",
-   "rec": "poluprava"
-  },
-  {
-   "lekcija": 22,
    "tezina": 2,
    "pitanje": "Kako se na polupravoj predstavlja $\\frac{3}{4}$?",
    "mediji": {
@@ -5158,12 +5179,60 @@
    "rec": "razlomak"
   },
   {
+   "lekcija": 22,
+   "tezina": 2,
+   "pitanje": "Koji broj odgovara POČETNOJ tački brojevne poluprave?",
+   "mediji": {
+    "vrsta": "geo",
+    "t": {
+     "O": [
+      0,
+      0
+     ]
+    },
+    "e": [
+     {
+      "osa": [
+       0,
+       3
+      ],
+      "podela": 0.5,
+      "svaki": 2
+     },
+     {
+      "tacka": "O",
+      "b": 1
+     },
+     {
+      "tx": "O",
+      "at": [
+       0,
+       0.55
+      ],
+      "vel": 15
+     }
+    ],
+    "bezImena": [
+     "O"
+    ],
+    "velicina": 320
+   },
+   "odgovori": [
+    "0",
+    "1",
+    "−1",
+    "Zavisi od toga ko crta"
+   ],
+   "zanimljivost": "Početna tačka (ishodište O) po dogovoru dobija broj 0. Udesno se zatim ređaju 1, 2, 3…, a razlomci leže na jediničnim dužima između celih brojeva.",
+   "rec": "poluprava"
+  },
+  {
    "lekcija": 23,
    "tezina": 1,
    "pitanje": "Šta znači PROŠIRITI razlomak?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "$\\frac{1}{2}=\\frac{1\\cdot3}{2\\cdot3}=\\frac{3}{6}$"
+    "tekst": "1/2 = (1 · 3)/(2 · 3) = 3/6"
    },
    "odgovori": [
     "Pomnožiti brojilac i imenilac istim brojem",
@@ -5180,7 +5249,7 @@
    "pitanje": "Šta znači SKRATITI razlomak?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "$\\frac{6}{8}=\\frac{6:2}{8:2}=\\frac{3}{4}$"
+    "tekst": "6/8 = (6:2)/(8:2) = 3/4"
    },
    "odgovori": [
     "Podeliti brojilac i imenilac istim brojem",
@@ -5301,7 +5370,7 @@
    "pitanje": "Kako decimalno zapisuješ razlomak $\\frac{1}{10}$?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "$\\frac{1}{10}=0,\\!1$"
+    "tekst": "1/10 = 0,1"
    },
    "odgovori": [
     "$0,\\!1$",
@@ -5318,7 +5387,7 @@
    "pitanje": "Kako decimalno zapisuješ razlomak $\\frac{7}{10}$?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "$\\frac{7}{10}=0,\\!7$"
+    "tekst": "7/10 = 0,7"
    },
    "odgovori": [
     "$0,\\!7$",
@@ -5335,7 +5404,7 @@
    "pitanje": "Kako decimalno zapisuješ razlomak $\\frac{3}{100}$?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "$\\frac{3}{100}=0,\\!03$"
+    "tekst": "3/100 = 0,03"
    },
    "odgovori": [
     "$0,\\!03$",
@@ -5508,7 +5577,7 @@
    "pitanje": "Kako se označava ugao sa temenom O i kracima kroz A i B?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "$\\angle AOB$"
+    "tekst": "∠ AOB"
    },
    "odgovori": [
     "$\\angle AOB$",
@@ -6089,7 +6158,7 @@
    "pitanje": "Kako sabiraš razlomke sa ISTIM imeniocem?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "$\\frac{a}{c}+\\frac{b}{c}=\\frac{a+b}{c}$"
+    "tekst": "a/c + b/c = (a + b)/c"
    },
    "odgovori": [
     "Sabereš brojioce, a imenilac ostaje isti",
@@ -6370,7 +6439,7 @@
    "pitanje": "Kako pravilno potpisuješ decimalne brojeve pri sabiranju?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "$0,\\!3+0,\\!4=0,\\!7$"
+    "tekst": "0,3 + 0,4 = 0,7"
    },
    "odgovori": [
     "Zarez ispod zareza",
@@ -6452,7 +6521,7 @@
    "pitanje": "U izrazu $6 + 4 \\cdot 3$, šta računaš prvo?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "$6+4\\cdot3=6+12=18$"
+    "tekst": "6 + 4 · 3 = 6 + 12 = 18"
    },
    "odgovori": [
     "Množenje $4\\cdot3$",
@@ -6482,7 +6551,7 @@
    "pitanje": "Koliko je $8 : 2 \\cdot (2+2)$?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "$8:2\\cdot(2+2)=16$"
+    "tekst": "8:2 · (2 + 2) = 16"
    },
    "odgovori": [
     "16",
@@ -6525,7 +6594,7 @@
    "pitanje": "Kako nalaziš nepoznati sabirak?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "$x+3=7 \\Rightarrow x=7-3=4$"
+    "tekst": "x + 3 = 7 ⇒ x = 7 − 3 = 4"
    },
    "odgovori": [
     "Od zbira oduzmeš poznati sabirak",
@@ -6581,7 +6650,7 @@
    "pitanje": "Šta je nejednačina?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "$x<5$"
+    "tekst": "x<5"
    },
    "odgovori": [
     "Nejednakost u kojoj je nepoznat broj označen slovom",
@@ -6650,7 +6719,7 @@
    "pitanje": "Kako množiš dva razlomka?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "$\\frac{a}{b}\\cdot\\frac{c}{d}=\\frac{a\\cdot c}{b\\cdot d}$"
+    "tekst": "a/b · c/d = (a · c)/(b · d)"
    },
    "odgovori": [
     "Brojilac sa brojiocem, imenilac sa imeniocem",
@@ -6823,7 +6892,7 @@
    "pitanje": "Kako deliš razlomke?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "$\\frac{a}{b}:\\frac{c}{d}=\\frac{a}{b}\\cdot\\frac{d}{c}$"
+    "tekst": "a/b:c/d = a/b · d/c"
    },
    "odgovori": [
     "Pomnožiš prvi razlomak recipročnom vrednošću drugog",
@@ -6879,7 +6948,7 @@
    "pitanje": "Kako deliš decimalni broj decimalnim?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "$1,\\!5:0,\\!5=3$"
+    "tekst": "1,5:0,5 = 3"
    },
    "odgovori": [
     "Proširiš oba broja tako da delilac postane ceo broj",
@@ -6948,7 +7017,7 @@
    "pitanje": "U izrazu $2 + 3 \\cdot 4$, šta računaš prvo?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "$2+3\\cdot4=14$"
+    "tekst": "2 + 3 · 4 = 14"
    },
    "odgovori": [
     "Množenje $3\\cdot4$",
@@ -6991,7 +7060,7 @@
    "pitanje": "Koliko je $(2+3)\\cdot 4$?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "$(2+3)\\cdot4=20$"
+    "tekst": "(2 + 3) · 4 = 20"
    },
    "odgovori": [
     "20",
@@ -7021,7 +7090,7 @@
    "pitanje": "Kako nalaziš nepoznati činilac u jednačini $x \\cdot 3 = 12$?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "$x\\cdot3=12 \\Rightarrow x=4$"
+    "tekst": "x · 3 = 12 ⇒ x = 4"
    },
    "odgovori": [
     "Proizvod podeliš poznatim činiocem",
@@ -7571,7 +7640,7 @@
    "pitanje": "Šta znači 1 procenat (1%)?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "$1\\%=\\frac{1}{100}$"
+    "tekst": "1% = 1/100"
    },
    "odgovori": [
     "Stoti deo celine",
