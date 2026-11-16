@@ -220,7 +220,7 @@
     "Distributivnost",
     "Tranzitivnost"
    ],
-   "zanimljivost": "Komutativnost znači „razmena“: $a+b=b+a$. Isto važi i za množenje: $a \\cdot b = b \\cdot a$. Oduzimanje i deljenje ovo svojstvo nemaju!",
+   "zanimljivost": "Komutativnost znači „razmena“: $a+b=b+a$. Isto važi i za množenje: $a · b = b · a$. Oduzimanje i deljenje ovo svojstvo nemaju!",
    "rec": "zamena"
   },
   {
@@ -263,7 +263,7 @@
    "pitanje": "Koji broj je neutralan za množenje (ne menja broj kad se njime pomnoži)?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "a · 1 = a"
+    "tekst": "a·1 = a"
    },
    "odgovori": [
     "1",
@@ -271,7 +271,7 @@
     "2",
     "10"
    ],
-   "zanimljivost": "Jedinica je neutralna za množenje: $a \\cdot 1 = a$. Svaki broj pomnožen jedinicom ostaje isti.",
+   "zanimljivost": "Jedinica je neutralna za množenje: $a · 1 = a$. Svaki broj pomnožen jedinicom ostaje isti.",
    "rec": "jedinica"
   },
   {
@@ -294,10 +294,10 @@
   {
    "lekcija": 1,
    "tezina": 2,
-   "pitanje": "Koje svojstvo povezuje množenje i sabiranje: $a \\cdot (b+c) = a \\cdot b + a \\cdot c$?",
+   "pitanje": "Koje svojstvo povezuje množenje i sabiranje: $a · (b+c) = a · b + a · c$?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "a · (b + c) = a · b + a · c"
+    "tekst": "a·(b + c) = a· b + a· c"
    },
    "odgovori": [
     "Distributivnost",
@@ -305,7 +305,7 @@
     "Asocijativnost",
     "Idempotencija"
    ],
-   "zanimljivost": "Distributivnost znači „razdeljivanje“: množenje se raspodeljuje na svaki sabirak u zagradi. Zato je $7 \\cdot 12 = 7\\cdot10 + 7\\cdot2 = 70+14=84$.",
+   "zanimljivost": "Distributivnost znači „razdeljivanje“: množenje se raspodeljuje na svaki sabirak u zagradi. Zato je $7 · 12 = 7·10 + 7·2 = 70+14=84$.",
    "rec": "raspodela"
   },
   {
@@ -314,7 +314,7 @@
    "pitanje": "Šta se dešava kad bilo koji broj pomnožiš nulom?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "a · 0 = 0"
+    "tekst": "a·0 = 0"
    },
    "odgovori": [
     "Rezultat je uvek 0",
@@ -322,7 +322,7 @@
     "Rezultat je isti broj",
     "Ne može se izračunati"
    ],
-   "zanimljivost": "Množenje nulom „uništava“ sve: $a \\cdot 0 = 0$. Zato se nula zove i „upijajući element“ za množenje.",
+   "zanimljivost": "Množenje nulom „uništava“ sve: $a · 0 = 0$. Zato se nula zove i „upijajući element“ za množenje.",
    "rec": "množenje"
   },
   {
@@ -339,7 +339,7 @@
     "Rezultat je uvek 1",
     "Rezultat je beskonačno velik"
    ],
-   "zanimljivost": "Da je $10:0=x$, moralo bi da važi $x \\cdot 0 = 10$ – a svaki broj puta nula daje nulu. Zato deljenje nulom nema rešenje; kažemo da nije definisano.",
+   "zanimljivost": "Da je $10:0=x$, moralo bi da važi $x · 0 = 10$ – a svaki broj puta nula daje nulu. Zato deljenje nulom nema rešenje; kažemo da nije definisano.",
    "rec": "deljenje"
   },
   {
@@ -597,10 +597,10 @@
   {
    "lekcija": 2,
    "tezina": 2,
-   "pitanje": "Kako proveravaš deljenje sa ostatkom $23 = 4 \\cdot 5 + 3$?",
+   "pitanje": "Kako proveravaš deljenje sa ostatkom $23 = 4 · 5 + 3$?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "a = b · q + r"
+    "tekst": "a = b· q + r"
    },
    "odgovori": [
     "Delilac puta količnik plus ostatak daje deljenik",
@@ -608,7 +608,7 @@
     "Količnik plus ostatak daje delilac",
     "Ostatak puta količnik daje deljenik"
    ],
-   "zanimljivost": "Provera je uvek: $deljenik = delilac \\cdot količnik + ostatak$. Ovde: $23 = 4\\cdot5 + 3$. Ako ovo važi, deljenje je tačno.",
+   "zanimljivost": "Provera je uvek: $deljenik = delilac · količnik + ostatak$. Ovde: $23 = 4·5 + 3$. Ako ovo važi, deljenje je tačno.",
    "rec": "provera"
   },
   {
@@ -736,7 +736,7 @@
     "1",
     "0"
    ],
-   "zanimljivost": "Od 14 kružića u redovima po 4 dobiju se 3 puna reda ($12$) i ostaju još $2$ kružića – to je ostatak: $14=4\\cdot3+2$.",
+   "zanimljivost": "Od 14 kružića u redovima po 4 dobiju se 3 puna reda ($12$) i ostaju još $2$ kružića – to je ostatak: $14=4·3+2$.",
    "rec": "ostatak"
   },
   {
@@ -894,7 +894,7 @@
    "pitanje": "Kako se zove broj kojim se dati broj deli bez ostatka?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "24 = 6 · 4"
+    "tekst": "24 = 6·4"
    },
    "odgovori": [
     "Delilac (činilac)",
@@ -902,7 +902,7 @@
     "Količnik",
     "Ostatak"
    ],
-   "zanimljivost": "Ako $6$ deli $24$ bez ostatka, onda je $6$ delilac (činilac) broja $24$. Činioci su brojevi čijim množenjem nastaje dati broj: $6\\cdot4=24$.",
+   "zanimljivost": "Ako $6$ deli $24$ bez ostatka, onda je $6$ delilac (činilac) broja $24$. Činioci su brojevi čijim množenjem nastaje dati broj: $6·4=24$.",
    "rec": "delilac"
   },
   {
@@ -1250,7 +1250,7 @@
     "Prost broj",
     "Neparan broj"
    ],
-   "zanimljivost": "Sadržalac (višekratnik) broja $6$ je svaki broj koji se dobija množenjem: $6, 12, 18, 24, 30, \\dots$ Ima ih beskonačno mnogo.",
+   "zanimljivost": "Sadržalac (višekratnik) broja $6$ je svaki broj koji se dobija množenjem: $6, 12, 18, 24, 30, …$ Ima ih beskonačno mnogo.",
    "rec": "sadržalac"
   },
   {
@@ -1676,7 +1676,7 @@
     "Prost činilac",
     "Neutralan broj"
    ],
-   "zanimljivost": "$40 = 8 \\cdot 5$, pa je $40$ sadržalac broja $8$. Istovremeno je $8$ delilac broja $40$. Delilac i sadržalac su dve strane iste priče.",
+   "zanimljivost": "$40 = 8 · 5$, pa je $40$ sadržalac broja $8$. Istovremeno je $8$ delilac broja $40$. Delilac i sadržalac su dve strane iste priče.",
    "rec": "sadržalac"
   },
   {
@@ -1702,15 +1702,15 @@
    "pitanje": "Broj 0 je sadržalac svakog prirodnog broja. Zašto?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "n · 0 = 0"
+    "tekst": "n·0 = 0"
    },
    "odgovori": [
-    "Jer je $0 = n \\cdot 0$ za svako $n$",
+    "Jer je $0 = n · 0$ za svako $n$",
     "Jer se 0 deli svim brojevima",
     "Jer je 0 najmanji broj",
     "0 nije sadržalac nikog broja"
    ],
-   "zanimljivost": "Za svaki prirodan broj $n$ važi $n \\cdot 0 = 0$, pa je $0$ sadržalac svakog broja. Zato je 0 i deljiva svim brojevima (osim deljenja nulom).",
+   "zanimljivost": "Za svaki prirodan broj $n$ važi $n · 0 = 0$, pa je $0$ sadržalac svakog broja. Zato je 0 i deljiva svim brojevima (osim deljenja nulom).",
    "rec": "nula"
   },
   {
@@ -2058,7 +2058,7 @@
     "29",
     "31"
    ],
-   "zanimljivost": "Skok po 3 pogađa samo sadržaoce broja 3, a to su brojevi deljivi sa 3. Od ponuđenih je to $27 = 3\\cdot9$.",
+   "zanimljivost": "Skok po 3 pogađa samo sadržaoce broja 3, a to su brojevi deljivi sa 3. Od ponuđenih je to $27 = 3·9$.",
    "rec": "sadržalac"
   },
   {
@@ -2120,7 +2120,7 @@
     "1.238",
     "1.232"
    ],
-   "zanimljivost": "Broj je deljiv sa 5 ako se završava cifrom 0 ili 5. Broj $1\\,235$ se završava sa 5, pa je deljiv sa 5.",
+   "zanimljivost": "Broj je deljiv sa 5 ako se završava cifrom 0 ili 5. Broj $1.235$ se završava sa 5, pa je deljiv sa 5.",
    "rec": "deljivost"
   },
   {
@@ -2129,7 +2129,7 @@
    "pitanje": "Broj deljiv sa 10 mora da se završava…",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "10 = 2 · 5"
+    "tekst": "10 = 2·5"
    },
    "odgovori": [
     "cifrom 0",
@@ -2137,7 +2137,7 @@
     "parnom cifrom",
     "cifrom 1"
    ],
-   "zanimljivost": "Deljivost sa 10 traži poslednju cifru 0, jer je $10=2\\cdot5$ – broj mora istovremeno biti deljiv sa 2 i sa 5.",
+   "zanimljivost": "Deljivost sa 10 traži poslednju cifru 0, jer je $10=2·5$ – broj mora istovremeno biti deljiv sa 2 i sa 5.",
    "rec": "deset"
   },
   {
@@ -2272,7 +2272,7 @@
     "1.002",
     "1.010"
    ],
-   "zanimljivost": "Deljivost sa 10 povlači deljivost sa 2 i sa 5. Od ponuđenih, $1\\,000$ i $1\\,010$ se završavaju nulom, ali prvi odgovor je tačan izbor za sva tri uslova.",
+   "zanimljivost": "Deljivost sa 10 povlači deljivost sa 2 i sa 5. Od ponuđenih, $1.000$ i $1.010$ se završavaju nulom, ali prvi odgovor je tačan izbor za sva tri uslova.",
    "rec": "deset"
   },
   {
@@ -2362,7 +2362,7 @@
     "1.022",
     "1.026"
    ],
-   "zanimljivost": "Gledamo poslednje dve cifre: $24$ je deljivo sa 4 ($24=4\\cdot6$), pa je i ceo broj $1\\,024$ deljiv sa 4.",
+   "zanimljivost": "Gledamo poslednje dve cifre: $24$ je deljivo sa 4 ($24=4·6$), pa je i ceo broj $1.024$ deljiv sa 4.",
    "rec": "deljivost"
   },
   {
@@ -2426,7 +2426,7 @@
     "samo na 00",
     "5 ili 0"
    ],
-   "zanimljivost": "Četiri moguća završetka: $00, 25, 50$ i $75$. Na primer, $3\\,175$ se završava sa $75$, pa je deljiv sa 25.",
+   "zanimljivost": "Četiri moguća završetka: $00, 25, 50$ i $75$. Na primer, $3.175$ se završava sa $75$, pa je deljiv sa 25.",
    "rec": "deljivost"
   },
   {
@@ -2471,7 +2471,7 @@
     "4.085",
     "4.055"
    ],
-   "zanimljivost": "Broj $4\\,075$ se završava sa $75$, a to je jedan od dozvoljenih završetaka za deljivost sa 25 ($00,25,50,75$).",
+   "zanimljivost": "Broj $4.075$ se završava sa $75$, a to je jedan od dozvoljenih završetaka za deljivost sa 25 ($00,25,50,75$).",
    "rec": "deljivost"
   },
   {
@@ -2561,7 +2561,7 @@
     "2.304",
     "2.350"
    ],
-   "zanimljivost": "Deljiv sa 4: gledamo poslednje dve cifre. Deljiv sa 25: završetak $00,25,50,75$. Završetak $00$ (broj $2\\,300$) zadovoljava oba uslova.",
+   "zanimljivost": "Deljiv sa 4: gledamo poslednje dve cifre. Deljiv sa 25: završetak $00,25,50,75$. Završetak $00$ (broj $2.300$) zadovoljava oba uslova.",
    "rec": "deljivost"
   },
   {
@@ -2815,7 +2815,7 @@
     "3.187",
     "3.185"
    ],
-   "zanimljivost": "Za $3\\,186$: zbir cifara je $3+1+8+6=18$, a $18$ je deljivo sa 9, pa je i ceo broj deljiv sa 9.",
+   "zanimljivost": "Za $3.186$: zbir cifara je $3+1+8+6=18$, a $18$ je deljivo sa 9, pa je i ceo broj deljiv sa 9.",
    "rec": "deljivost"
   },
   {
@@ -2911,7 +2911,7 @@
     "Da, jer se završava sa 4",
     "Ne, jer se završava sa 4"
    ],
-   "zanimljivost": "Zbir cifara je $1+2+3+4=10$, a $10$ nije deljivo sa 3, pa ni $1\\,234$ nije deljivo sa 3. Paran broj nije automatski deljiv sa 3!",
+   "zanimljivost": "Zbir cifara je $1+2+3+4=10$, a $10$ nije deljivo sa 3, pa ni $1.234$ nije deljivo sa 3. Paran broj nije automatski deljiv sa 3!",
    "rec": "deljivost"
   },
   {
@@ -2920,7 +2920,7 @@
    "pitanje": "Ako je broj deljiv sa 9, on je uvek deljiv i sa…",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "9 = 3 · 3"
+    "tekst": "9 = 3·3"
    },
    "odgovori": [
     "3",
@@ -2928,7 +2928,7 @@
     "2",
     "5"
    ],
-   "zanimljivost": "Svaki broj deljiv sa 9 deljiv je i sa 3, jer je $9=3\\cdot3$. Obrnuto ne važi: $12$ je deljivo sa 3, ali ne i sa 9.",
+   "zanimljivost": "Svaki broj deljiv sa 9 deljiv je i sa 3, jer je $9=3·3$. Obrnuto ne važi: $12$ je deljivo sa 3, ali ne i sa 9.",
    "rec": "deljivost"
   },
   {
@@ -3008,7 +3008,7 @@
     "4",
     "5"
    ],
-   "zanimljivost": "Zbir cifara je $5+\\star+1=6+\\star$. Da bi bio deljiv sa 3, zvezdica može biti $0, 3, 6$ ili $9$. Od ponuđenih, to je 3: $531$, a $5+3+1=9$.",
+   "zanimljivost": "Zbir cifara je $5+★+1=6+★$. Da bi bio deljiv sa 3, zvezdica može biti $0, 3, 6$ ili $9$. Od ponuđenih, to je 3: $531$, a $5+3+1=9$.",
    "rec": "deljivost"
   },
   {
@@ -3037,12 +3037,12 @@
     "tekst": "2 ∈ A"
    },
    "odgovori": [
-    "$\\in$",
+    "$∈$",
     "$=$",
     "$>$",
-    "$\\notin$"
+    "$∉$"
    ],
-   "zanimljivost": "Oznaka $\\in$ čitamo „pripada“: $2 \\in A$ znači da je 2 element skupa $A$. Precrtana oznaka $\\notin$ znači „ne pripada“.",
+   "zanimljivost": "Oznaka $∈$ čitamo „pripada“: $2 ∈ A$ znači da je 2 element skupa $A$. Precrtana oznaka $∉$ znači „ne pripada“.",
    "rec": "pripada"
   },
   {
@@ -3059,7 +3059,7 @@
     "Pun skup",
     "Neparan skup"
    ],
-   "zanimljivost": "Prazan skup označavamo sa $\\varnothing$ ili $\\{\\}$. On nema nijedan element, ali je i dalje skup – kao prazna kutija.",
+   "zanimljivost": "Prazan skup označavamo sa $∅$ ili $\\{\\}$. On nema nijedan element, ali je i dalje skup – kao prazna kutija.",
    "rec": "prazan"
   },
   {
@@ -3071,12 +3071,12 @@
     "tekst": "ℕ = {1,2,3,4,…}"
    },
    "odgovori": [
-    "$\\mathbb{N}$",
-    "$\\mathbb{Z}$",
-    "$\\mathbb{Q}$",
-    "$\\mathbb{R}$"
+    "$ℕ$",
+    "$ℤ$",
+    "$ℚ$",
+    "$ℝ$"
    ],
-   "zanimljivost": "Prirodni brojevi su brojevi za brojanje: $1,2,3,4,\\dots$ Označavamo ih sa $\\mathbb{N}$ (od engleskog „natural“).",
+   "zanimljivost": "Prirodni brojevi su brojevi za brojanje: $1,2,3,4,…$ Označavamo ih sa $ℕ$ (od engleskog „natural“).",
    "rec": "prirodan"
   },
   {
@@ -3088,21 +3088,21 @@
     "tekst": "ℕ₀ = {0,1,2,3,…}"
    },
    "odgovori": [
-    "$\\mathbb{N}_0$",
-    "$\\mathbb{N}$",
-    "$\\mathbb{Z}$",
-    "$\\varnothing$"
+    "$ℕ₀$",
+    "$ℕ$",
+    "$ℤ$",
+    "$∅$"
    ],
-   "zanimljivost": "Skup $\\mathbb{N}_0$ dobijamo kad prirodnim brojevima dodamo nulu: $0,1,2,3,\\dots$ Donja nula u oznaci upravo to i govori.",
+   "zanimljivost": "Skup $ℕ₀$ dobijamo kad prirodnim brojevima dodamo nulu: $0,1,2,3,…$ Donja nula u oznaci upravo to i govori.",
    "rec": "prirodan"
   },
   {
    "lekcija": 7,
    "tezina": 2,
-   "pitanje": "Da li su $\\varnothing$ i $\\{0\\}$ isto?",
+   "pitanje": "Da li su $∅$ i $\\{0\\}$ isto?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "∅\\neq{0}"
+    "tekst": "∅≠{0}"
    },
    "odgovori": [
     "Ne – prazan skup i skup sa jednim elementom 0",
@@ -3110,7 +3110,7 @@
     "Da – oba imaju po jedan element",
     "Ne – oba su puna"
    ],
-   "zanimljivost": "$\\varnothing$ nema nijedan element, a $\\{0\\}$ ima jedan element – broj 0. To je razlika kao između prazne kutije i kutije u kojoj je jedna nula.",
+   "zanimljivost": "$∅$ nema nijedan element, a $\\{0\\}$ ima jedan element – broj 0. To je razlika kao između prazne kutije i kutije u kojoj je jedna nula.",
    "rec": "prazan"
   },
   {
@@ -3244,7 +3244,7 @@
     "Razlika",
     "Množenje"
    ],
-   "zanimljivost": "Unija $A \\cup B$ sadrži sve elemente koji su u $A$, u $B$ ili u oba. Zajednički elementi se ne dupliraju.",
+   "zanimljivost": "Unija $A ∪ B$ sadrži sve elemente koji su u $A$, u $B$ ili u oba. Zajednički elementi se ne dupliraju.",
    "rec": "unija"
   },
   {
@@ -3261,7 +3261,7 @@
     "Razlika",
     "Sabiranje"
    ],
-   "zanimljivost": "Presek $A \\cap B$ sadrži elemente koji su i u $A$ i u $B$. Ako zajedničkih elemenata nema, presek je prazan skup.",
+   "zanimljivost": "Presek $A ∩ B$ sadrži elemente koji su i u $A$ i u $B$. Ako zajedničkih elemenata nema, presek je prazan skup.",
    "rec": "presek"
   },
   {
@@ -4047,13 +4047,13 @@
     "Razlika A i B",
     "Samo skup A"
    ],
-   "zanimljivost": "Obojen je „listić“ gde se krugovi preklapaju – to je presek $A\\cap B$, deo koji pripada i skupu A i skupu B.",
+   "zanimljivost": "Obojen je „listić“ gde se krugovi preklapaju – to je presek $A∩ B$, deo koji pripada i skupu A i skupu B.",
    "rec": "presek"
   },
   {
    "lekcija": 8,
    "tezina": 2,
-   "pitanje": "Ako je $A=\\{1,2,3\\}$ i $B=\\{3,4\\}$, koliki je presek $A \\cap B$?",
+   "pitanje": "Ako je $A=\\{1,2,3\\}$ i $B=\\{3,4\\}$, koliki je presek $A ∩ B$?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -4866,13 +4866,13 @@
     "$\\{1,2\\}$",
     "$\\{4\\}$"
    ],
-   "zanimljivost": "Jedini element koji je u oba skupa je 3, pa je $A\\cap B=\\{3\\}$. Presek traži ono što je zajedničko.",
+   "zanimljivost": "Jedini element koji je u oba skupa je 3, pa je $A∩ B=\\{3\\}$. Presek traži ono što je zajedničko.",
    "rec": "presek"
   },
   {
    "lekcija": 8,
    "tezina": 2,
-   "pitanje": "Ako je $A=\\{1,2,3\\}$ i $B=\\{3,4\\}$, kolika je unija $A \\cup B$?",
+   "pitanje": "Ako je $A=\\{1,2,3\\}$ i $B=\\{3,4\\}$, kolika je unija $A ∪ B$?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -6298,7 +6298,7 @@
   {
    "lekcija": 8,
    "tezina": 2,
-   "pitanje": "Ako je $A=\\{1,2,3\\}$ i $B=\\{3,4\\}$, kolika je razlika $A \\setminus B$?",
+   "pitanje": "Ako je $A=\\{1,2,3\\}$ i $B=\\{3,4\\}$, kolika je razlika $A ∖ B$?",
    "mediji": {
     "vrsta": "formula",
     "tekst": "A∖ B"
@@ -6309,7 +6309,7 @@
     "$\\{1,2,3,4\\}$",
     "$\\{4\\}$"
    ],
-   "zanimljivost": "Razlika $A\\setminus B$ sadrži elemente koji su u $A$, a nisu u $B$: to su $1$ i $2$. Uklanjamo sve što pripada skupu $B$.",
+   "zanimljivost": "Razlika $A∖ B$ sadrži elemente koji su u $A$, a nisu u $B$: to su $1$ i $2$. Uklanjamo sve što pripada skupu $B$.",
    "rec": "razlika"
   },
   {
@@ -6368,7 +6368,7 @@
     "jednak većem skupu",
     "ne postoji"
    ],
-   "zanimljivost": "Kad nema zajedničkih elemenata, presek je prazan skup $\\varnothing$. Takvi skupovi se zovu disjunktni – ne seku se.",
+   "zanimljivost": "Kad nema zajedničkih elemenata, presek je prazan skup $∅$. Takvi skupovi se zovu disjunktni – ne seku se.",
    "rec": "presek"
   },
   {
@@ -6378,15 +6378,15 @@
    "pitanje": "Spoji operaciju sa rezultatom za $A=\\{1,2,3\\}$ i $B=\\{3,4\\}$.",
    "parovi": [
     [
-     "$A \\cap B$",
+     "$A ∩ B$",
      "$\\{3\\}$"
     ],
     [
-     "$A \\cup B$",
+     "$A ∪ B$",
      "$\\{1,2,3,4\\}$"
     ],
     [
-     "$A \\setminus B$",
+     "$A ∖ B$",
      "$\\{1,2\\}$"
     ]
    ],
@@ -7267,12 +7267,12 @@
     "velicina": 260
    },
    "odgovori": [
-    "Razlika $A \\setminus B$",
-    "Presek $A \\cap B$",
-    "Unija $A \\cup B$",
+    "Razlika $A ∖ B$",
+    "Presek $A ∩ B$",
+    "Unija $A ∪ B$",
     "Prazan skup"
    ],
-   "zanimljivost": "Obojen je samo deo kruga A van kruga B – to su elementi koji pripadaju A, ali ne pripadaju B, dakle razlika $A\\setminus B$.",
+   "zanimljivost": "Obojen je samo deo kruga A van kruga B – to su elementi koji pripadaju A, ali ne pripadaju B, dakle razlika $A∖ B$.",
    "rec": "razlika"
   },
   {
@@ -7722,7 +7722,7 @@
     "Ukštene prave",
     "Krive prave"
    ],
-   "zanimljivost": "Paralelne prave se nikada ne seku, koliko god ih produžavali. Primer su šine na pruzi. Označavamo ih $a \\parallel b$.",
+   "zanimljivost": "Paralelne prave se nikada ne seku, koliko god ih produžavali. Primer su šine na pruzi. Označavamo ih $a ∥ b$.",
    "rec": "paralelne"
   },
   {
@@ -7793,7 +7793,7 @@
     "Mimoilazne prave",
     "Podudarne prave"
    ],
-   "zanimljivost": "Normalne prave seku se pod uglom od $90°$. Označavamo ih $a \\perp b$. Ivice kvadrata su uzajamno normalne.",
+   "zanimljivost": "Normalne prave seku se pod uglom od $90°$. Označavamo ih $a ⊥ b$. Ivice kvadrata su uzajamno normalne.",
    "rec": "normalne"
   },
   {
@@ -7979,12 +7979,12 @@
     "tekst": "a ∥ b"
    },
    "odgovori": [
-    "$\\parallel$",
-    "$\\perp$",
+    "$∥$",
+    "$⊥$",
     "$=$",
-    "$\\angle$"
+    "$∠$"
    ],
-   "zanimljivost": "Znak $\\parallel$ čitamo „paralelno sa“: $a\\parallel b$. Znak $\\perp$ znači „normalno na“.",
+   "zanimljivost": "Znak $∥$ čitamo „paralelno sa“: $a∥ b$. Znak $⊥$ znači „normalno na“.",
    "rec": "paralelne"
   },
   {
@@ -10311,7 +10311,7 @@
     "Broj koji ima jednog delioca",
     "Broj koji je paran"
    ],
-   "zanimljivost": "Prost broj ima tačno dva delioca: jedinicu i samog sebe. Primeri: $2, 3, 5, 7, 11, 13, \\dots$",
+   "zanimljivost": "Prost broj ima tačno dva delioca: jedinicu i samog sebe. Primeri: $2, 3, 5, 7, 11, 13, …$",
    "rec": "prost"
   },
   {
@@ -11281,7 +11281,7 @@
     "21",
     "27"
    ],
-   "zanimljivost": "Broj $17$ ima delioce samo $1$ i $17$. Ostali su složeni: $15=3\\cdot5$, $21=3\\cdot7$, $27=3\\cdot9$.",
+   "zanimljivost": "Broj $17$ ima delioce samo $1$ i $17$. Ostali su složeni: $15=3·5$, $21=3·7$, $27=3·9$.",
    "rec": "prost"
   },
   {
@@ -11478,7 +11478,7 @@
     "Više od 2",
     "Nijedan"
    ],
-   "zanimljivost": "Prost broj ima tačno dva delioca: 1 i samog sebe. Zato se ne može zapisati kao proizvod dva manja broja (osim $1 \\cdot$ on sam).",
+   "zanimljivost": "Prost broj ima tačno dva delioca: 1 i samog sebe. Zato se ne može zapisati kao proizvod dva manja broja (osim $1 ·$ on sam).",
    "rec": "delilac"
   },
   {
@@ -11571,7 +11571,7 @@
     "Podeliti ga sa 2",
     "Napisati ga rimskim ciframa"
    ],
-   "zanimljivost": "Rastavljanje na proste činioce: broj zapišemo kao proizvod samih prostih brojeva. Na primer, $12 = 2 \\cdot 2 \\cdot 3$.",
+   "zanimljivost": "Rastavljanje na proste činioce: broj zapišemo kao proizvod samih prostih brojeva. Na primer, $12 = 2 · 2 · 3$.",
    "rec": "činilac"
   },
   {
@@ -11659,12 +11659,12 @@
     "velicina": 240
    },
    "odgovori": [
-    "$2 \\cdot 2 \\cdot 3$",
-    "$3 \\cdot 4$",
-    "$2 \\cdot 6$",
-    "$1 \\cdot 12$"
+    "$2 · 2 · 3$",
+    "$3 · 4$",
+    "$2 · 6$",
+    "$1 · 12$"
    ],
-   "zanimljivost": "$12 = 2\\cdot2\\cdot3$. Svi činioci su prosti brojevi. Zapis $3\\cdot4$ nije do kraja, jer je 4 složen broj.",
+   "zanimljivost": "$12 = 2·2·3$. Svi činioci su prosti brojevi. Zapis $3·4$ nije do kraja, jer je 4 složen broj.",
    "rec": "činilac"
   },
   {
@@ -11752,12 +11752,12 @@
     "velicina": 240
    },
    "odgovori": [
-    "$2 \\cdot 3 \\cdot 3$",
-    "$2 \\cdot 9$",
-    "$3 \\cdot 6$",
-    "$2 \\cdot 2 \\cdot 3$"
+    "$2 · 3 · 3$",
+    "$2 · 9$",
+    "$3 · 6$",
+    "$2 · 2 · 3$"
    ],
-   "zanimljivost": "$18 = 2\\cdot3\\cdot3$. Prvo podelimo sa 2, dobijemo 9, a $9=3\\cdot3$.",
+   "zanimljivost": "$18 = 2·3·3$. Prvo podelimo sa 2, dobijemo 9, a $9=3·3$.",
    "rec": "činilac"
   },
   {
@@ -11845,12 +11845,12 @@
     "velicina": 240
    },
    "odgovori": [
-    "$2 \\cdot 3 \\cdot 5$",
-    "$5 \\cdot 6$",
-    "$2 \\cdot 15$",
-    "$3 \\cdot 10$"
+    "$2 · 3 · 5$",
+    "$5 · 6$",
+    "$2 · 15$",
+    "$3 · 10$"
    ],
-   "zanimljivost": "$30 = 2\\cdot3\\cdot5$ – tri različita prosta činioca. Broj 30 je proizvod prva tri prosta broja posle 1.",
+   "zanimljivost": "$30 = 2·3·5$ – tri različita prosta činioca. Broj 30 je proizvod prva tri prosta broja posle 1.",
    "rec": "činilac"
   },
   {
@@ -11938,18 +11938,18 @@
     "velicina": 240
    },
    "odgovori": [
-    "$2 \\cdot 2 \\cdot 5$",
-    "$4 \\cdot 5$",
-    "$2 \\cdot 10$",
-    "$1 \\cdot 20$"
+    "$2 · 2 · 5$",
+    "$4 · 5$",
+    "$2 · 10$",
+    "$1 · 20$"
    ],
-   "zanimljivost": "$20 = 2\\cdot2\\cdot5$. Broj 4 se mora dalje rastaviti na $2\\cdot2$, jer 4 nije prost.",
+   "zanimljivost": "$20 = 2·2·5$. Broj 4 se mora dalje rastaviti na $2·2$, jer 4 nije prost.",
    "rec": "činilac"
   },
   {
    "lekcija": 18,
    "tezina": 2,
-   "pitanje": "Da li je zapis $2 \\cdot 3 \\cdot 7$ rastavljanje na proste činioce?",
+   "pitanje": "Da li je zapis $2 · 3 · 7$ rastavljanje na proste činioce?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -12152,12 +12152,12 @@
     "velicina": 240
    },
    "odgovori": [
-    "$2 \\cdot 2 \\cdot 2 \\cdot 3$",
-    "$2 \\cdot 2 \\cdot 6$",
-    "$3 \\cdot 8$",
-    "$4 \\cdot 6$"
+    "$2 · 2 · 2 · 3$",
+    "$2 · 2 · 6$",
+    "$3 · 8$",
+    "$4 · 6$"
    ],
-   "zanimljivost": "$24 = 2\\cdot2\\cdot2\\cdot3$ (tri dvojke i jedna trojka). To kraće pišemo kao $2^3 \\cdot 3$.",
+   "zanimljivost": "$24 = 2·2·2·3$ (tri dvojke i jedna trojka). To kraće pišemo kao $2^3 · 3$.",
    "rec": "činilac"
   },
   {
@@ -18098,7 +18098,7 @@
     "8",
     "9"
    ],
-   "zanimljivost": "Rastavljanjem: $24=2\\cdot2\\cdot2\\cdot3$, $36=2\\cdot2\\cdot3\\cdot3$. Zajedničko je $2\\cdot2\\cdot3=12$.",
+   "zanimljivost": "Rastavljanjem: $24=2·2·2·3$, $36=2·2·3·3$. Zajedničko je $2·2·3=12$.",
    "rec": "delilac"
   },
   {
@@ -18950,7 +18950,7 @@
     "6",
     "4"
    ],
-   "zanimljivost": "Sadržaoci broja 4: $4, 8, 12, \\dots$; broja 6: $6, 12, 18, \\dots$. Prvi zajednički je 12.",
+   "zanimljivost": "Sadržaoci broja 4: $4, 8, 12, …$; broja 6: $6, 12, 18, …$. Prvi zajednički je 12.",
    "rec": "sadržalac"
   },
   {
@@ -19922,7 +19922,7 @@
     "5",
     "7"
    ],
-   "zanimljivost": "Pošto su 5 i 7 uzajamno prosti, NZS je njihov proizvod: $5\\cdot7=35$.",
+   "zanimljivost": "Pošto su 5 i 7 uzajamno prosti, NZS je njihov proizvod: $5·7=35$.",
    "rec": "sadržalac"
   },
   {
@@ -20504,7 +20504,7 @@
     "12",
     "16"
    ],
-   "zanimljivost": "Sadržaoci broja 6: $6, 12, 18, 24, \\dots$; broja 8: $8, 16, 24, \\dots$. Prvi zajednički je 24.",
+   "zanimljivost": "Sadržaoci broja 6: $6, 12, 18, 24, …$; broja 8: $8, 16, 24, …$. Prvi zajednički je 24.",
    "rec": "sadržalac"
   },
   {
@@ -20930,7 +20930,7 @@
     "12",
     "96"
    ],
-   "zanimljivost": "Iz veze $NZD\\cdot NZS = a\\cdot b$: $4 \\cdot NZS = 8\\cdot12 = 96$, pa je $NZS = 96:4 = 24$.",
+   "zanimljivost": "Iz veze $NZD· NZS = a· b$: $4 · NZS = 8·12 = 96$, pa je $NZS = 96:4 = 24$.",
    "rec": "sadržalac"
   },
   {
@@ -20939,15 +20939,15 @@
    "pitanje": "Koja veza povezuje NZD i NZS dva broja $a$ i $b$?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "NZD · NZS = a · b"
+    "tekst": "NZD· NZS = a· b"
    },
    "odgovori": [
-    "$NZD \\cdot NZS = a \\cdot b$",
+    "$NZD · NZS = a · b$",
     "$NZD + NZS = a + b$",
     "$NZD = NZS$",
-    "$NZS - NZD = a \\cdot b$"
+    "$NZS - NZD = a · b$"
    ],
-   "zanimljivost": "Zlatno pravilo: proizvod NZD i NZS jednak je proizvodu samih brojeva. Na primer, za 12 i 18: $6 \\cdot 36 = 12 \\cdot 18 = 216$.",
+   "zanimljivost": "Zlatno pravilo: proizvod NZD i NZS jednak je proizvodu samih brojeva. Na primer, za 12 i 18: $6 · 36 = 12 · 18 = 216$.",
    "rec": "proizvod"
   },
   {
@@ -21603,7 +21603,7 @@
     "Koliko je velik brojilac",
     "Koliko celina imamo"
    ],
-   "zanimljivost": "Imenilac (donji broj) govori na koliko jednakih delova smo podelili celinu. U razlomku $\\frac{3}{4}$ imenilac je 4.",
+   "zanimljivost": "Imenilac (donji broj) govori na koliko jednakih delova smo podelili celinu. U razlomku ${3|4}$ imenilac je 4.",
    "rec": "imenilac"
   },
   {
@@ -21833,7 +21833,7 @@
     "Koliko celina imamo",
     "Veličinu imenioca"
    ],
-   "zanimljivost": "Brojilac (gornji broj) govori koliko delova uzimamo. U razlomku $\\frac{3}{4}$ uzimamo 3 od 4 jednaka dela.",
+   "zanimljivost": "Brojilac (gornji broj) govori koliko delova uzimamo. U razlomku ${3|4}$ uzimamo 3 od 4 jednaka dela.",
    "rec": "brojilac"
   },
   {
@@ -22316,12 +22316,12 @@
     "velicina": 320
    },
    "odgovori": [
-    "$\\frac{3}{8}$",
-    "$\\frac{5}{8}$",
-    "$\\frac{3}{5}$",
-    "$\\frac{8}{3}$"
+    "${3|8}$",
+    "${5|8}$",
+    "${3|5}$",
+    "${8|3}$"
    ],
-   "zanimljivost": "Traka je podeljena na 8 jednakih delova, a obojena su 3. Zato je prikazan razlomak $\\frac{3}{8}$: brojilac 3, imenilac 8.",
+   "zanimljivost": "Traka je podeljena na 8 jednakih delova, a obojena su 3. Zato je prikazan razlomak ${3|8}$: brojilac 3, imenilac 8.",
    "rec": "razlomak"
   },
   {
@@ -22626,12 +22626,12 @@
     "velicina": 260
    },
    "odgovori": [
-    "$\\frac{2}{6}$",
-    "$\\frac{4}{6}$",
-    "$\\frac{2}{4}$",
-    "$\\frac{1}{3}$"
+    "${2|6}$",
+    "${4|6}$",
+    "${2|4}$",
+    "${1|3}$"
    ],
-   "zanimljivost": "Krug je podeljen na 6 jednakih isečaka, a obojena su 2. Prikazan je razlomak $\\frac{2}{6}$ (dve šestine).",
+   "zanimljivost": "Krug je podeljen na 6 jednakih isečaka, a obojena su 2. Prikazan je razlomak ${2|6}$ (dve šestine).",
    "rec": "razlomak"
   },
   {
@@ -22792,18 +22792,18 @@
     "velicina": 320
    },
    "odgovori": [
-    "$\\frac{5}{6}$",
-    "$\\frac{1}{6}$",
-    "$\\frac{5}{7}$",
-    "$\\frac{6}{5}$"
+    "${5|6}$",
+    "${1|6}$",
+    "${5|7}$",
+    "${6|5}$"
    ],
-   "zanimljivost": "Traka je podeljena na 6 delova, obojeno je 5, pa je to $\\frac{5}{6}$ – samo jedan deo fali do cele.",
+   "zanimljivost": "Traka je podeljena na 6 delova, obojeno je 5, pa je to ${5|6}$ – samo jedan deo fali do cele.",
    "rec": "razlomak"
   },
   {
    "lekcija": 22,
    "tezina": 1,
-   "pitanje": "Gde se na brojevnoj polupravoj nalazi razlomak $\\frac{1}{2}$?",
+   "pitanje": "Gde se na brojevnoj polupravoj nalazi razlomak ${1|2}$?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -22856,13 +22856,13 @@
     "Na samom kraju (u 1)",
     "Desno od 1"
    ],
-   "zanimljivost": "Razlomak $\\frac{1}{2}$ je na polovini duži od 0 do 1. Brojevna poluprava počinje u 0 i ide udesno.",
+   "zanimljivost": "Razlomak ${1|2}$ je na polovini duži od 0 do 1. Brojevna poluprava počinje u 0 i ide udesno.",
    "rec": "razlomak"
   },
   {
    "lekcija": 22,
    "tezina": 2,
-   "pitanje": "Kako se na polupravoj predstavlja $\\frac{3}{4}$?",
+   "pitanje": "Kako se na polupravoj predstavlja ${3|4}$?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -22967,18 +22967,18 @@
     "velicina": 320
    },
    "odgovori": [
-    "$\\frac{3}{5}$",
-    "$\\frac{5}{3}$",
-    "$\\frac{2}{5}$",
-    "$\\frac{3}{4}$"
+    "${3|5}$",
+    "${5|3}$",
+    "${2|5}$",
+    "${3|4}$"
    ],
-   "zanimljivost": "Podela na 5 delova daje imenilac 5, a treći podeljak daje brojilac 3 – dakle $\\frac{3}{5}$.",
+   "zanimljivost": "Podela na 5 delova daje imenilac 5, a treći podeljak daje brojilac 3 – dakle ${3|5}$.",
    "rec": "razlomak"
   },
   {
    "lekcija": 22,
    "tezina": 2,
-   "pitanje": "Šta je veće na brojevnoj polupravoj: $\\frac{1}{2}$ ili $\\frac{1}{4}$?",
+   "pitanje": "Šta je veće na brojevnoj polupravoj: ${1|2}$ ili ${1|4}$?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -23049,12 +23049,12 @@
     "velicina": 320
    },
    "odgovori": [
-    "$\\frac{1}{2}$ – nalazi se desno",
-    "$\\frac{1}{4}$ – nalazi se desno",
+    "${1|2}$ – nalazi se desno",
+    "${1|4}$ – nalazi se desno",
     "Jednaki su",
     "Ne može se uporediti"
    ],
-   "zanimljivost": "Na brojevnoj pravoj, broj koji je više udesno je veći. Polovina je desno od četvrtine, pa je $\\frac{1}{2} > \\frac{1}{4}$.",
+   "zanimljivost": "Na brojevnoj pravoj, broj koji je više udesno je veći. Polovina je desno od četvrtine, pa je ${1|2} > {1|4}$.",
    "rec": "razlomak"
   },
   {
@@ -23332,7 +23332,7 @@
     "Sabrati im isti broj",
     "Samo povećati brojilac"
    ],
-   "zanimljivost": "Proširivanje: brojilac i imenilac pomnožimo istim brojem (različitim od nule). Vrednost razlomka se ne menja: $\\frac{1}{2}=\\frac{3}{6}$.",
+   "zanimljivost": "Proširivanje: brojilac i imenilac pomnožimo istim brojem (različitim od nule). Vrednost razlomka se ne menja: ${1|2}={3|6}$.",
    "rec": "proširivanje"
   },
   {
@@ -23654,13 +23654,13 @@
     "Oduzeti im isti broj",
     "Samo smanjiti imenilac"
    ],
-   "zanimljivost": "Skraćivanje: brojilac i imenilac podelimo istim brojem. Vrednost ostaje ista: $\\frac{6}{8}=\\frac{3}{4}$ (podelili smo sa 2).",
+   "zanimljivost": "Skraćivanje: brojilac i imenilac podelimo istim brojem. Vrednost ostaje ista: ${6|8}={3|4}$ (podelili smo sa 2).",
    "rec": "skraćivanje"
   },
   {
    "lekcija": 23,
    "tezina": 1,
-   "pitanje": "Proširi razlomak $\\frac{1}{2}$ brojem 3. Šta dobijaš?",
+   "pitanje": "Proširi razlomak ${1|2}$ brojem 3. Šta dobijaš?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -23879,18 +23879,18 @@
     "velicina": 320
    },
    "odgovori": [
-    "$\\frac{3}{6}$",
-    "$\\frac{2}{3}$",
-    "$\\frac{4}{6}$",
-    "$\\frac{1}{6}$"
+    "${3|6}$",
+    "${2|3}$",
+    "${4|6}$",
+    "${1|6}$"
    ],
-   "zanimljivost": "Množimo i brojilac i imenilac sa 3: $\\frac{1\\cdot3}{2\\cdot3}=\\frac{3}{6}$. Razlomak je isti, samo je zapisan sitnijim delovima.",
+   "zanimljivost": "Množimo i brojilac i imenilac sa 3: ${1·3|2·3}={3|6}$. Razlomak je isti, samo je zapisan sitnijim delovima.",
    "rec": "proširivanje"
   },
   {
    "lekcija": 23,
    "tezina": 1,
-   "pitanje": "Skrati razlomak $\\frac{6}{8}$. Šta dobijaš?",
+   "pitanje": "Skrati razlomak ${6|8}$. Šta dobijaš?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -24201,18 +24201,18 @@
     "velicina": 320
    },
    "odgovori": [
-    "$\\frac{3}{4}$",
-    "$\\frac{2}{3}$",
-    "$\\frac{6}{4}$",
-    "$\\frac{4}{3}$"
+    "${3|4}$",
+    "${2|3}$",
+    "${6|4}$",
+    "${4|3}$"
    ],
-   "zanimljivost": "Oba broja delimo sa 2: $\\frac{6:2}{8:2}=\\frac{3}{4}$. Razlomak $\\frac{3}{4}$ se ne može dalje skratiti – to je najprostiji oblik.",
+   "zanimljivost": "Oba broja delimo sa 2: ${6:2|8:2}={3|4}$. Razlomak ${3|4}$ se ne može dalje skratiti – to je najprostiji oblik.",
    "rec": "skraćivanje"
   },
   {
    "lekcija": 23,
    "tezina": 2,
-   "pitanje": "Koji razlomak je veći: $\\frac{3}{4}$ ili $\\frac{1}{4}$?",
+   "pitanje": "Koji razlomak je veći: ${3|4}$ ili ${1|4}$?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -24431,18 +24431,18 @@
     "velicina": 320
    },
    "odgovori": [
-    "$\\frac{3}{4}$",
-    "$\\frac{1}{4}$",
+    "${3|4}$",
+    "${1|4}$",
     "Jednaki su",
     "Ne može se uporediti"
    ],
-   "zanimljivost": "Kad su imenioci isti, veći je razlomak sa većim brojiocem: 3 dela je više od 1 dela, pa je $\\frac{3}{4} > \\frac{1}{4}$.",
+   "zanimljivost": "Kad su imenioci isti, veći je razlomak sa većim brojiocem: 3 dela je više od 1 dela, pa je ${3|4} > {1|4}$.",
    "rec": "upoređivanje"
   },
   {
    "lekcija": 23,
    "tezina": 2,
-   "pitanje": "Koji razlomak je veći: $\\frac{1}{2}$ ili $\\frac{1}{3}$?",
+   "pitanje": "Koji razlomak je veći: ${1|2}$ ili ${1|3}$?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -24592,12 +24592,12 @@
     "velicina": 320
    },
    "odgovori": [
-    "$\\frac{1}{2}$",
-    "$\\frac{1}{3}$",
+    "${1|2}$",
+    "${1|3}$",
     "Jednaki su",
     "Ne može se uporediti"
    ],
-   "zanimljivost": "Kad su brojioci isti, veći je razlomak sa MANJIM imeniocem: polovina je veći deo od trećine, pa je $\\frac{1}{2} > \\frac{1}{3}$.",
+   "zanimljivost": "Kad su brojioci isti, veći je razlomak sa MANJIM imeniocem: polovina je veći deo od trećine, pa je ${1|2} > {1|3}$.",
    "rec": "upoređivanje"
   },
   {
@@ -24607,20 +24607,20 @@
    "pitanje": "Spoji razlomak sa decimalnim zapisom.",
    "parovi": [
     [
-     "$\\frac{1}{10}$",
-     "$0,\\!1$"
+     "${1|10}$",
+     "$0,1$"
     ],
     [
-     "$\\frac{3}{100}$",
-     "$0,\\!03$"
+     "${3|100}$",
+     "$0,03$"
     ],
     [
-     "$\\frac{1}{2}$",
-     "$0,\\!5$"
+     "${1|2}$",
+     "$0,5$"
     ],
     [
-     "$\\frac{7}{10}$",
-     "$0,\\!7$"
+     "${7|10}$",
+     "$0,7$"
     ]
    ],
    "zanimljivost": "Decimalni zapis je samo drugi način da zapišemo razlomak sa imeniocem 10, 100, 1000…",
@@ -24629,7 +24629,7 @@
   {
    "lekcija": 23,
    "tezina": 3,
-   "pitanje": "Šta je veće: $\\frac{2}{3}$ ili $\\frac{3}{5}$?",
+   "pitanje": "Šta je veće: ${2|3}$ ili ${3|5}$?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -24848,12 +24848,12 @@
     "velicina": 320
    },
    "odgovori": [
-    "$\\frac{2}{3}$",
-    "$\\frac{3}{5}$",
+    "${2|3}$",
+    "${3|5}$",
     "Jednaki su",
     "Ne može se uporediti"
    ],
-   "zanimljivost": "Svedemo na zajednički imenilac: $\\frac{2}{3}=\\frac{10}{15}$, a $\\frac{3}{5}=\\frac{9}{15}$. Pošto je $10 > 9$, veći je $\\frac{2}{3}$.",
+   "zanimljivost": "Svedemo na zajednički imenilac: ${2|3}={10|15}$, a ${3|5}={9|15}$. Pošto je $10 > 9$, veći je ${2|3}$.",
    "rec": "upoređivanje"
   },
   {
@@ -27190,13 +27190,13 @@
     "Prost zapis",
     "Slovni zapis"
    ],
-   "zanimljivost": "Decimalni zapis koristi zarez: $\\frac{1}{10}=0,\\!1$. Cifre desno od zareza zovu se decimale.",
+   "zanimljivost": "Decimalni zapis koristi zarez: ${1|10}=0,1$. Cifre desno od zareza zovu se decimale.",
    "rec": "decimala"
   },
   {
    "lekcija": 24,
    "tezina": 1,
-   "pitanje": "Kako decimalno zapisuješ razlomak $\\frac{1}{10}$?",
+   "pitanje": "Kako decimalno zapisuješ razlomak ${1|10}$?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -27452,18 +27452,18 @@
     "velicina": 320
    },
    "odgovori": [
-    "$0,\\!1$",
-    "$1,\\!0$",
-    "$0,\\!01$",
+    "$0,1$",
+    "$1,0$",
+    "$0,01$",
     "$10$"
    ],
-   "zanimljivost": "$\\frac{1}{10}$ je jedna desetina, a to je $0,\\!1$ – prvo mesto desno od zareza su desetinke.",
+   "zanimljivost": "${1|10}$ je jedna desetina, a to je $0,1$ – prvo mesto desno od zareza su desetinke.",
    "rec": "decimala"
   },
   {
    "lekcija": 24,
    "tezina": 1,
-   "pitanje": "Kako decimalno zapisuješ razlomak $\\frac{7}{10}$?",
+   "pitanje": "Kako decimalno zapisuješ razlomak ${7|10}$?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -27719,18 +27719,18 @@
     "velicina": 320
    },
    "odgovori": [
-    "$0,\\!7$",
-    "$7,\\!0$",
-    "$0,\\!07$",
-    "$0,\\!007$"
+    "$0,7$",
+    "$7,0$",
+    "$0,07$",
+    "$0,007$"
    ],
-   "zanimljivost": "Sedam desetina = $0,\\!7$. Cifra 7 je na prvom decimalnom mestu – mestu desetinki.",
+   "zanimljivost": "Sedam desetina = $0,7$. Cifra 7 je na prvom decimalnom mestu – mestu desetinki.",
    "rec": "decimala"
   },
   {
    "lekcija": 24,
    "tezina": 2,
-   "pitanje": "Kako decimalno zapisuješ razlomak $\\frac{3}{100}$?",
+   "pitanje": "Kako decimalno zapisuješ razlomak ${3|100}$?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -30056,18 +30056,18 @@
     "velicina": 260
    },
    "odgovori": [
-    "$0,\\!03$",
-    "$0,\\!3$",
-    "$3,\\!0$",
-    "$0,\\!003$"
+    "$0,03$",
+    "$0,3$",
+    "$3,0$",
+    "$0,003$"
    ],
-   "zanimljivost": "Tri stotinke = $0,\\!03$. Stotinke su na drugom decimalnom mestu, pa 3 mora da stigne tamo – zato ispred ide nula.",
+   "zanimljivost": "Tri stotinke = $0,03$. Stotinke su na drugom decimalnom mestu, pa 3 mora da stigne tamo – zato ispred ide nula.",
    "rec": "decimala"
   },
   {
    "lekcija": 24,
    "tezina": 2,
-   "pitanje": "Koji razlomak je zapisan kao $0,\\!5$?",
+   "pitanje": "Koji razlomak je zapisan kao $0,5$?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -30323,18 +30323,18 @@
     "velicina": 320
    },
    "odgovori": [
-    "$\\frac{5}{10}=\\frac{1}{2}$",
-    "$\\frac{5}{100}$",
-    "$\\frac{1}{5}$",
-    "$\\frac{5}{1000}$"
+    "${5|10}={1|2}$",
+    "${5|100}$",
+    "${1|5}$",
+    "${5|1000}$"
    ],
-   "zanimljivost": "$0,\\!5$ je pet desetina: $\\frac{5}{10}$, a to se skrati na $\\frac{1}{2}$. Polovina i $0,\\!5$ su isti broj.",
+   "zanimljivost": "$0,5$ je pet desetina: ${5|10}$, a to se skrati na ${1|2}$. Polovina i $0,5$ su isti broj.",
    "rec": "decimala"
   },
   {
    "lekcija": 24,
    "tezina": 2,
-   "pitanje": "U broju $0,\\!37$, koja je cifra desetinki, a koja stotinki?",
+   "pitanje": "U broju $0,37$, koja je cifra desetinki, a koja stotinki?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -32674,13 +32674,13 @@
     "Obe su desetinke",
     "Obe su stotinke"
    ],
-   "zanimljivost": "Prvo decimalno mesto su desetinke (3), drugo su stotinke (7): $0,\\!37 = \\frac{3}{10}+\\frac{7}{100}$.",
+   "zanimljivost": "Prvo decimalno mesto su desetinke (3), drugo su stotinke (7): $0,37 = {3|10}+{7|100}$.",
    "rec": "decimala"
   },
   {
    "lekcija": 24,
    "tezina": 3,
-   "pitanje": "Koliko decimalnih mesta ima broj $0,\\!075$?",
+   "pitanje": "Koliko decimalnih mesta ima broj $0,075$?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -32725,7 +32725,7 @@
   {
    "lekcija": 25,
    "tezina": 1,
-   "pitanje": "Šta je veće: $0,\\!5$ ili $0,\\!45$?",
+   "pitanje": "Šta je veće: $0,5$ ili $0,45$?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -37360,18 +37360,18 @@
     "velicina": 320
    },
    "odgovori": [
-    "$0,\\!5$",
-    "$0,\\!45$",
+    "$0,5$",
+    "$0,45$",
     "Jednaki su",
     "Ne može se uporediti"
    ],
-   "zanimljivost": "Dopišemo nulu da imaju isti broj decimala: $0,\\!50$ i $0,\\!45$. Pošto je $50 > 45$, veći je $0,\\!5$.",
+   "zanimljivost": "Dopišemo nulu da imaju isti broj decimala: $0,50$ i $0,45$. Pošto je $50 > 45$, veći je $0,5$.",
    "rec": "decimala"
   },
   {
    "lekcija": 25,
    "tezina": 2,
-   "pitanje": "Zaokrugli broj $3,\\!78$ na jednu decimalu.",
+   "pitanje": "Zaokrugli broj $3,78$ na jednu decimalu.",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -37427,18 +37427,18 @@
     "velicina": 320
    },
    "odgovori": [
-    "$3,\\!8$",
-    "$3,\\!7$",
-    "$3,\\!78$",
+    "$3,8$",
+    "$3,7$",
+    "$3,78$",
     "$4$"
    ],
-   "zanimljivost": "Gledamo cifru iza prve decimale: to je 8, a 8 je veće ili jednako 5, pa prvu decimalu povećavamo: $3,\\!8$.",
+   "zanimljivost": "Gledamo cifru iza prve decimale: to je 8, a 8 je veće ili jednako 5, pa prvu decimalu povećavamo: $3,8$.",
    "rec": "približno"
   },
   {
    "lekcija": 25,
    "tezina": 2,
-   "pitanje": "Zaokrugli broj $2,\\!34$ na jednu decimalu.",
+   "pitanje": "Zaokrugli broj $2,34$ na jednu decimalu.",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -37494,18 +37494,18 @@
     "velicina": 320
    },
    "odgovori": [
-    "$2,\\!3$",
-    "$2,\\!4$",
-    "$2,\\!34$",
+    "$2,3$",
+    "$2,4$",
+    "$2,34$",
     "$2$"
    ],
-   "zanimljivost": "Cifra iza prve decimale je 4, a 4 je manje od 5, pa prva decimala ostaje ista: $2,\\!3$.",
+   "zanimljivost": "Cifra iza prve decimale je 4, a 4 je manje od 5, pa prva decimala ostaje ista: $2,3$.",
    "rec": "približno"
   },
   {
    "lekcija": 25,
    "tezina": 2,
-   "pitanje": "Zaokrugli broj $6,\\!5$ na ceo broj.",
+   "pitanje": "Zaokrugli broj $6,5$ na ceo broj.",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -37566,13 +37566,13 @@
     "6,5",
     "10"
    ],
-   "zanimljivost": "Cifra iza zareza je 5, pa broj zaokrugljujemo naviše: $6,\\!5 \\approx 7$.",
+   "zanimljivost": "Cifra iza zareza je 5, pa broj zaokrugljujemo naviše: $6,5 ≈ 7$.",
    "rec": "približno"
   },
   {
    "lekcija": 25,
    "tezina": 3,
-   "pitanje": "Poređaj od najmanjeg ka najvećem: $0,\\!7$, $0,\\!17$, $0,\\!07$.",
+   "pitanje": "Poređaj od najmanjeg ka najvećem: $0,7$, $0,17$, $0,07$.",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -37666,18 +37666,18 @@
     "velicina": 320
    },
    "odgovori": [
-    "$0,\\!07 < 0,\\!17 < 0,\\!7$",
-    "$0,\\!7 < 0,\\!17 < 0,\\!07$",
-    "$0,\\!17 < 0,\\!07 < 0,\\!7$",
+    "$0,07 < 0,17 < 0,7$",
+    "$0,7 < 0,17 < 0,07$",
+    "$0,17 < 0,07 < 0,7$",
     "Svi su jednaki"
    ],
-   "zanimljivost": "Upišemo iste brojeve decimala: $0,\\!70$, $0,\\!17$, $0,\\!07$. Redom od najmanjeg: $0,\\!07$, pa $0,\\!17$, pa $0,\\!70$.",
+   "zanimljivost": "Upišemo iste brojeve decimala: $0,70$, $0,17$, $0,07$. Redom od najmanjeg: $0,07$, pa $0,17$, pa $0,70$.",
    "rec": "decimala"
   },
   {
    "lekcija": 25,
    "tezina": 3,
-   "pitanje": "U broju $12,\\!347$, koja cifra je na mestu stotinki?",
+   "pitanje": "U broju $12,347$, koja cifra je na mestu stotinki?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -37759,6 +37759,16 @@
     },
     "e": [
      {
+      "d": "AB",
+      "b": 0,
+      "debljina": 3
+     },
+     {
+      "d": "AC",
+      "b": 0,
+      "debljina": 3
+     },
+     {
       "u": "BAC",
       "b": 0
      }
@@ -37796,6 +37806,16 @@
     },
     "e": [
      {
+      "d": "AB",
+      "b": 0,
+      "debljina": 3
+     },
+     {
+      "d": "AC",
+      "b": 0,
+      "debljina": 3
+     },
+     {
       "u": "BAC",
       "b": 0
      },
@@ -37812,7 +37832,7 @@
     "Stranica",
     "Centar"
    ],
-   "zanimljivost": "Teme je tačka iz koje polaze oba kraka ugla. Ugao $\\angle AOB$ ima teme u tački O.",
+   "zanimljivost": "Teme je tačka iz koje polaze oba kraka ugla. Ugao $∠ AOB$ ima teme u tački O.",
    "rec": "teme"
   },
   {
@@ -37836,6 +37856,16 @@
      ]
     },
     "e": [
+     {
+      "d": "AB",
+      "b": 0,
+      "debljina": 3
+     },
+     {
+      "d": "AC",
+      "b": 0,
+      "debljina": 3
+     },
      {
       "u": "BAC",
       "b": 0
@@ -37874,6 +37904,16 @@
     },
     "e": [
      {
+      "d": "AB",
+      "b": 0,
+      "debljina": 3
+     },
+     {
+      "d": "AC",
+      "b": 0,
+      "debljina": 3
+     },
+     {
       "u": "BAC",
       "b": 0,
       "o": "α"
@@ -37882,12 +37922,12 @@
     "velicina": 240
    },
    "odgovori": [
-    "$\\angle AOB$",
+    "$∠ AOB$",
     "$AB$",
     "$\\vec{AB}$",
     "$O + A + B$"
    ],
-   "zanimljivost": "Ugao označavamo sa $\\angle AOB$ (teme u sredini) ili grčkim slovom, na primer $\\alpha$.",
+   "zanimljivost": "Ugao označavamo sa $∠ AOB$ (teme u sredini) ili grčkim slovom, na primer $α$.",
    "rec": "ugao"
   },
   {
@@ -37990,6 +38030,26 @@
     },
     "e": [
      {
+      "d": "AB",
+      "b": 1,
+      "debljina": 3
+     },
+     {
+      "d": "AC",
+      "b": 1,
+      "debljina": 3
+     },
+     {
+      "d": "DE",
+      "b": 1,
+      "debljina": 3
+     },
+     {
+      "d": "DF",
+      "b": 1,
+      "debljina": 3
+     },
+     {
       "u": "BAC",
       "b": 1
      },
@@ -38038,6 +38098,16 @@
      ]
     },
     "e": [
+     {
+      "d": "AB",
+      "b": 1,
+      "debljina": 3
+     },
+     {
+      "d": "AC",
+      "b": 1,
+      "debljina": 3
+     },
      {
       "u": "BAC",
       "b": 1
@@ -38649,6 +38719,21 @@
     },
     "e": [
      {
+      "d": "OA",
+      "b": 0,
+      "debljina": 3
+     },
+     {
+      "d": "OB",
+      "b": 0,
+      "debljina": 3
+     },
+     {
+      "d": "OC",
+      "b": 0,
+      "debljina": 3
+     },
+     {
       "u": "AOB",
       "b": 1,
       "o": "40°"
@@ -38733,6 +38818,21 @@
     },
     "e": [
      {
+      "d": "OA",
+      "b": 0,
+      "debljina": 3
+     },
+     {
+      "d": "OB",
+      "b": 0,
+      "debljina": 3
+     },
+     {
+      "d": "OC",
+      "b": 0,
+      "debljina": 3
+     },
+     {
       "u": "AOB",
       "b": 1,
       "o": "30°"
@@ -38750,6 +38850,9 @@
       ],
       "vel": 15
      }
+    ],
+    "bezImena": [
+     "O"
     ],
     "velicina": 260
    },
@@ -38787,6 +38890,21 @@
      ]
     },
     "e": [
+     {
+      "d": "OA",
+      "b": 0,
+      "debljina": 3
+     },
+     {
+      "d": "OB",
+      "b": 0,
+      "debljina": 3
+     },
+     {
+      "d": "OC",
+      "b": 0,
+      "debljina": 3
+     },
      {
       "u": "AOC",
       "b": 4
@@ -38842,6 +38960,21 @@
     },
     "e": [
      {
+      "d": "OA",
+      "b": 0,
+      "debljina": 3
+     },
+     {
+      "d": "OB",
+      "b": 0,
+      "debljina": 3
+     },
+     {
+      "d": "OC",
+      "b": 0,
+      "debljina": 3
+     },
+     {
       "u": "AOC",
       "b": 4
      },
@@ -38895,6 +39028,16 @@
     },
     "e": [
      {
+      "d": "AB",
+      "b": 0,
+      "debljina": 3
+     },
+     {
+      "d": "AC",
+      "b": 0,
+      "debljina": 3
+     },
+     {
       "u": "BAC",
       "b": 0,
       "o": "45°"
@@ -38932,6 +39075,16 @@
      ]
     },
     "e": [
+     {
+      "d": "AB",
+      "b": 0,
+      "debljina": 3
+     },
+     {
+      "d": "AC",
+      "b": 0,
+      "debljina": 3
+     },
      {
       "u": "BAC",
       "b": 0
@@ -38973,6 +39126,16 @@
     },
     "e": [
      {
+      "d": "AB",
+      "b": 0,
+      "debljina": 3
+     },
+     {
+      "d": "AC",
+      "b": 0,
+      "debljina": 3
+     },
+     {
       "u": "BAC",
       "b": 0,
       "o": "135°"
@@ -39010,6 +39173,16 @@
      ]
     },
     "e": [
+     {
+      "d": "AB",
+      "b": 0,
+      "debljina": 3
+     },
+     {
+      "d": "AC",
+      "b": 0,
+      "debljina": 3
+     },
      {
       "u": "BAC",
       "b": 0,
@@ -39095,6 +39268,16 @@
      ]
     },
     "e": [
+     {
+      "d": "AB",
+      "b": 0,
+      "debljina": 3
+     },
+     {
+      "d": "AC",
+      "b": 0,
+      "debljina": 3
+     },
      {
       "u": "BAC",
       "b": 0
@@ -39756,6 +39939,16 @@
     },
     "e": [
      {
+      "d": "AB",
+      "b": 0,
+      "debljina": 3
+     },
+     {
+      "d": "AC",
+      "b": 0,
+      "debljina": 3
+     },
+     {
       "u": "BAC",
       "b": 0
      },
@@ -39840,6 +40033,16 @@
     },
     "e": [
      {
+      "d": "AB",
+      "b": 0,
+      "debljina": 3
+     },
+     {
+      "d": "AC",
+      "b": 0,
+      "debljina": 3
+     },
+     {
       "u": "BAC",
       "b": 0,
       "o": "180°"
@@ -39877,6 +40080,16 @@
      ]
     },
     "e": [
+     {
+      "d": "AB",
+      "b": 0,
+      "debljina": 3
+     },
+     {
+      "d": "AC",
+      "b": 0,
+      "debljina": 3
+     },
      {
       "u": "BAC",
       "b": 0,
@@ -39916,6 +40129,16 @@
     },
     "e": [
      {
+      "d": "AB",
+      "b": 0,
+      "debljina": 3
+     },
+     {
+      "d": "AC",
+      "b": 0,
+      "debljina": 3
+     },
+     {
       "u": "BAC",
       "b": 0,
       "o": "80°"
@@ -39953,6 +40176,16 @@
      ]
     },
     "e": [
+     {
+      "d": "AB",
+      "b": 0,
+      "debljina": 3
+     },
+     {
+      "d": "AC",
+      "b": 0,
+      "debljina": 3
+     },
      {
       "u": "BAC",
       "b": 0,
@@ -40834,13 +41067,13 @@
     "Pomnožiš brojioce",
     "Oduzmeš imenioce"
    ],
-   "zanimljivost": "Kad su imenioci isti, samo sabereš brojioce: $\\frac{1}{5}+\\frac{2}{5}=\\frac{3}{5}$. Imenilac se ne menja.",
+   "zanimljivost": "Kad su imenioci isti, samo sabereš brojioce: ${1|5}+{2|5}={3|5}$. Imenilac se ne menja.",
    "rec": "sabiranje"
   },
   {
    "lekcija": 32,
    "tezina": 1,
-   "pitanje": "Koliko je $\\frac{1}{5} + \\frac{2}{5}$?",
+   "pitanje": "Koliko je ${1|5} + {2|5}$?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -41229,18 +41462,18 @@
     "velicina": 320
    },
    "odgovori": [
-    "$\\frac{3}{5}$",
-    "$\\frac{3}{10}$",
-    "$\\frac{2}{5}$",
-    "$\\frac{5}{5}$"
+    "${3|5}$",
+    "${3|10}$",
+    "${2|5}$",
+    "${5|5}$"
    ],
-   "zanimljivost": "Isti imenilac, pa sabiramo brojioce: $1+2=3$, a imenilac ostaje 5. Rezultat je $\\frac{3}{5}$.",
+   "zanimljivost": "Isti imenilac, pa sabiramo brojioce: $1+2=3$, a imenilac ostaje 5. Rezultat je ${3|5}$.",
    "rec": "sabiranje"
   },
   {
    "lekcija": 32,
    "tezina": 1,
-   "pitanje": "Koliko je $\\frac{3}{7} - \\frac{1}{7}$?",
+   "pitanje": "Koliko je ${3|7} - {1|7}$?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -41767,12 +42000,12 @@
     "velicina": 320
    },
    "odgovori": [
-    "$\\frac{2}{7}$",
-    "$\\frac{4}{7}$",
-    "$\\frac{2}{14}$",
-    "$\\frac{3}{7}$"
+    "${2|7}$",
+    "${4|7}$",
+    "${2|14}$",
+    "${3|7}$"
    ],
-   "zanimljivost": "Oduzimamo brojioce: $3-1=2$, imenilac ostaje 7. Rezultat je $\\frac{2}{7}$.",
+   "zanimljivost": "Oduzimamo brojioce: $3-1=2$, imenilac ostaje 7. Rezultat je ${2|7}$.",
    "rec": "oduzimanje"
   },
   {
@@ -42247,7 +42480,7 @@
   {
    "lekcija": 32,
    "tezina": 2,
-   "pitanje": "Koji je zajednički imenilac za $\\frac{1}{2}$ i $\\frac{1}{3}$?",
+   "pitanje": "Koji je zajednički imenilac za ${1|2}$ i ${1|3}$?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -42660,13 +42893,13 @@
     "2",
     "3"
    ],
-   "zanimljivost": "Najmanji zajednički sadržalac brojeva 2 i 3 je 6. Zato $\\frac{1}{2}=\\frac{3}{6}$, a $\\frac{1}{3}=\\frac{2}{6}$.",
+   "zanimljivost": "Najmanji zajednički sadržalac brojeva 2 i 3 je 6. Zato ${1|2}={3|6}$, a ${1|3}={2|6}$.",
    "rec": "imenilac"
   },
   {
    "lekcija": 32,
    "tezina": 3,
-   "pitanje": "Koliko je $\\frac{1}{2} + \\frac{1}{4}$?",
+   "pitanje": "Koliko je ${1|2} + {1|4}$?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -42867,12 +43100,12 @@
     "velicina": 320
    },
    "odgovori": [
-    "$\\frac{3}{4}$",
-    "$\\frac{2}{6}$",
-    "$\\frac{1}{4}$",
-    "$\\frac{2}{4}$"
+    "${3|4}$",
+    "${2|6}$",
+    "${1|4}$",
+    "${2|4}$"
    ],
-   "zanimljivost": "$\\frac{1}{2}=\\frac{2}{4}$, pa je $\\frac{2}{4}+\\frac{1}{4}=\\frac{3}{4}$. Polovina i četvrtina zajedno su tri četvrtine.",
+   "zanimljivost": "${1|2}={2|4}$, pa je ${2|4}+{1|4}={3|4}$. Polovina i četvrtina zajedno su tri četvrtine.",
    "rec": "sabiranje"
   },
   {
@@ -42895,7 +43128,7 @@
   {
    "lekcija": 33,
    "tezina": 1,
-   "pitanje": "Koliko je $0,\\!3 + 0,\\!4$?",
+   "pitanje": "Koliko je $0,3 + 0,4$?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -43629,18 +43862,18 @@
     "velicina": 320
    },
    "odgovori": [
-    "$0,\\!7$",
-    "$0,\\!07$",
-    "$0,\\!34$",
+    "$0,7$",
+    "$0,07$",
+    "$0,34$",
     "$7$"
    ],
-   "zanimljivost": "Tri desetinke plus četiri desetinke je sedam desetinki: $0,\\!3+0,\\!4=0,\\!7$.",
+   "zanimljivost": "Tri desetinke plus četiri desetinke je sedam desetinki: $0,3+0,4=0,7$.",
    "rec": "sabiranje"
   },
   {
    "lekcija": 33,
    "tezina": 2,
-   "pitanje": "Koliko je $0,\\!8 - 0,\\!25$?",
+   "pitanje": "Koliko je $0,8 - 0,25$?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -45966,12 +46199,12 @@
     "velicina": 260
    },
    "odgovori": [
-    "$0,\\!55$",
-    "$0,\\!5$",
-    "$0,\\!65$",
-    "$0,\\!75$"
+    "$0,55$",
+    "$0,5$",
+    "$0,65$",
+    "$0,75$"
    ],
-   "zanimljivost": "Dopišemo nulu: $0,\\!80 - 0,\\!25 = 0,\\!55$. Zarez ostaje na istom mestu.",
+   "zanimljivost": "Dopišemo nulu: $0,80 - 0,25 = 0,55$. Zarez ostaje na istom mestu.",
    "rec": "oduzimanje"
   },
   {
@@ -48547,13 +48780,13 @@
     "Da bi zarez nestao",
     "Nule se nikad ne dopisuju"
    ],
-   "zanimljivost": "Dopisivanjem nula na kraju decimalnog broja ne menja se njegova vrednost, a lakše je oduzimati: $0,\\!8=0,\\!80$.",
+   "zanimljivost": "Dopisivanjem nula na kraju decimalnog broja ne menja se njegova vrednost, a lakše je oduzimati: $0,8=0,80$.",
    "rec": "decimala"
   },
   {
    "lekcija": 33,
    "tezina": 3,
-   "pitanje": "Koliko je $1 - 0,\\!37$?",
+   "pitanje": "Koliko je $1 - 0,37$?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -50879,12 +51112,12 @@
     "velicina": 260
    },
    "odgovori": [
-    "$0,\\!63$",
-    "$0,\\!73$",
-    "$0,\\!37$",
-    "$1,\\!37$"
+    "$0,63$",
+    "$0,73$",
+    "$0,37$",
+    "$1,37$"
    ],
-   "zanimljivost": "Zapišemo $1$ kao $1,\\!00$, pa oduzmemo: $1,\\!00-0,\\!37=0,\\!63$.",
+   "zanimljivost": "Zapišemo $1$ kao $1,00$, pa oduzmemo: $1,00-0,37=0,63$.",
    "rec": "oduzimanje"
   },
   {
@@ -50893,7 +51126,7 @@
    "pitanje": "U brojevnom izrazu, šta se računa PRVO?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "(2 + 3) · 4 = 20"
+    "tekst": "(2 + 3)·4 = 20"
    },
    "odgovori": [
     "Operacije u zagradama",
@@ -50907,18 +51140,18 @@
   {
    "lekcija": 34,
    "tezina": 2,
-   "pitanje": "U izrazu $6 + 4 \\cdot 3$, šta računaš prvo?",
+   "pitanje": "U izrazu $6 + 4 · 3$, šta računaš prvo?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "6 + 4 · 3 = 6 + 12 = 18"
+    "tekst": "6 + 4·3 = 6 + 12 = 18"
    },
    "odgovori": [
-    "Množenje $4\\cdot3$",
+    "Množenje $4·3$",
     "Sabiranje $6+4$",
     "Zagrade",
     "Oduzimanje"
    ],
-   "zanimljivost": "Množenje ima prednost nad sabiranjem: $6+4\\cdot3=6+12=18$.",
+   "zanimljivost": "Množenje ima prednost nad sabiranjem: $6+4·3=6+12=18$.",
    "rec": "redosled"
   },
   {
@@ -51291,16 +51524,16 @@
     "Samo distributivnost",
     "Nijedno"
    ],
-   "zanimljivost": "Sabiranje razlomaka je komutativno i asocijativno, kao i sabiranje prirodnih brojeva: $\\frac{a}{b}+\\frac{c}{d}=\\frac{c}{d}+\\frac{a}{b}$.",
+   "zanimljivost": "Sabiranje razlomaka je komutativno i asocijativno, kao i sabiranje prirodnih brojeva: ${a|b}+{c|d}={c|d}+{a|b}$.",
    "rec": "svojstvo"
   },
   {
    "lekcija": 34,
    "tezina": 3,
-   "pitanje": "Koliko je $8 : 2 \\cdot (2+2)$?",
+   "pitanje": "Koliko je $8 : 2 · (2+2)$?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "8:2 · (2 + 2) = 16"
+    "tekst": "8:2·(2 + 2) = 16"
    },
    "odgovori": [
     "16",
@@ -51308,7 +51541,7 @@
     "8",
     "4"
    ],
-   "zanimljivost": "Prvo zagrada: $2+2=4$, pa redom sleva nadesno: $8:2=4$, pa $4\\cdot4=16$. Deljenje i množenje su istog reda – idemo redom.",
+   "zanimljivost": "Prvo zagrada: $2+2=4$, pa redom sleva nadesno: $8:2=4$, pa $4·4=16$. Deljenje i množenje su istog reda – idemo redom.",
    "rec": "redosled"
   },
   {
@@ -51317,7 +51550,7 @@
    "pitanje": "Kako se zove izraz sastavljen od brojeva i znakova računskih operacija?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "3 + 4 · 2 = 11"
+    "tekst": "3 + 4·2 = 11"
    },
    "odgovori": [
     "Brojevni izraz",
@@ -51325,7 +51558,7 @@
     "Nejednačina",
     "Formula"
    ],
-   "zanimljivost": "Brojevni izraz sadrži brojeve i znakove operacija, na primer $3+4\\cdot2$. Kad dodamo znak jednakosti i nepoznatu, dobijamo jednačinu.",
+   "zanimljivost": "Brojevni izraz sadrži brojeve i znakove operacija, na primer $3+4·2$. Kad dodamo znak jednakosti i nepoznatu, dobijamo jednačinu.",
    "rec": "izraz"
   },
   {
@@ -51441,7 +51674,7 @@
   {
    "lekcija": 35,
    "tezina": 3,
-   "pitanje": "Koji broj je rešenje jednačine $x + \\frac{1}{2} = 1$?",
+   "pitanje": "Koji broj je rešenje jednačine $x + {1|2} = 1$?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -51568,12 +51801,12 @@
     "velicina": 320
    },
    "odgovori": [
-    "$\\frac{1}{2}$",
-    "$\\frac{3}{2}$",
+    "${1|2}$",
+    "${3|2}$",
     "$1$",
-    "$\\frac{1}{4}$"
+    "${1|4}$"
    ],
-   "zanimljivost": "$x = 1 - \\frac{1}{2} = \\frac{1}{2}$. Polovina plus polovina daje celo.",
+   "zanimljivost": "$x = 1 - {1|2} = {1|2}$. Polovina plus polovina daje celo.",
    "rec": "jednačina"
   },
   {
@@ -51590,7 +51823,7 @@
     "Brojevni izraz",
     "Pravilo za crtanje"
    ],
-   "zanimljivost": "Nejednačina koristi znakove $>$, $<$, $\\ge$ ili $\\le$. Rešenje je obično čitav skup brojeva, ne samo jedan broj.",
+   "zanimljivost": "Nejednačina koristi znakove $>$, $<$, $≥$ ili $≤$. Rešenje je obično čitav skup brojeva, ne samo jedan broj.",
    "rec": "nejednačina"
   },
   {
@@ -51718,7 +51951,7 @@
     "jednaki 5",
     "veći ili jednaki 5"
    ],
-   "zanimljivost": "Nejednačinu $x<5$ zadovoljavaju svi brojevi manji od 5: $4, 3, 2, \\dots$ ali ne i sam broj 5.",
+   "zanimljivost": "Nejednačinu $x<5$ zadovoljavaju svi brojevi manji od 5: $4, 3, 2, …$ ali ne i sam broj 5.",
    "rec": "nejednačina"
   },
   {
@@ -51797,12 +52030,12 @@
     "velicina": 300
    },
    "odgovori": [
-    "$x \\le 7$",
+    "$x ≤ 7$",
     "$x < 7$",
-    "$x \\ge 7$",
+    "$x ≥ 7$",
     "$x = 7$"
    ],
-   "zanimljivost": "Znak $\\le$ znači „manje ili jednako“, pa $x \\le 7$ uključuje i sam broj 7.",
+   "zanimljivost": "Znak $≤$ znači „manje ili jednako“, pa $x ≤ 7$ uključuje i sam broj 7.",
    "rec": "nejednačina"
   },
   {
@@ -51811,7 +52044,7 @@
    "pitanje": "Kako množiš dva razlomka?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "a/b · c/d = (a · c)/(b · d)"
+    "tekst": "a/b·c/d = (a· c)/(b· d)"
    },
    "odgovori": [
     "Brojilac sa brojiocem, imenilac sa imeniocem",
@@ -51819,13 +52052,13 @@
     "Pomnožiš unakrsno pa sabereš",
     "Oduzmeš imenioce"
    ],
-   "zanimljivost": "Množenje razlomaka: $\\frac{a}{b}\\cdot\\frac{c}{d}=\\frac{a\\cdot c}{b\\cdot d}$. Brojioci se množe međusobno, imenioci takođe.",
+   "zanimljivost": "Množenje razlomaka: ${a|b}·{c|d}={a· c|b· d}$. Brojioci se množe međusobno, imenioci takođe.",
    "rec": "množenje"
   },
   {
    "lekcija": 37,
    "tezina": 1,
-   "pitanje": "Koliko je $\\frac{1}{2} \\cdot \\frac{1}{3}$?",
+   "pitanje": "Koliko je ${1|2} · {1|3}$?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -51980,18 +52213,18 @@
     "velicina": 240
    },
    "odgovori": [
-    "$\\frac{1}{6}$",
-    "$\\frac{2}{5}$",
-    "$\\frac{1}{5}$",
-    "$\\frac{3}{2}$"
+    "${1|6}$",
+    "${2|5}$",
+    "${1|5}$",
+    "${3|2}$"
    ],
-   "zanimljivost": "Množimo brojioce: $1\\cdot1=1$, i imenioce: $2\\cdot3=6$. Polovina trećine je šestina.",
+   "zanimljivost": "Množimo brojioce: $1·1=1$, i imenioce: $2·3=6$. Polovina trećine je šestina.",
    "rec": "množenje"
   },
   {
    "lekcija": 37,
    "tezina": 2,
-   "pitanje": "Koliko je $\\frac{2}{3} \\cdot \\frac{3}{4}$?",
+   "pitanje": "Koliko je ${2|3} · {3|4}$?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -52284,21 +52517,21 @@
     "velicina": 240
    },
    "odgovori": [
-    "$\\frac{1}{2}$",
-    "$\\frac{6}{7}$",
-    "$\\frac{5}{12}$",
-    "$\\frac{1}{3}$"
+    "${1|2}$",
+    "${6|7}$",
+    "${5|12}$",
+    "${1|3}$"
    ],
-   "zanimljivost": "$\\frac{2}{3}\\cdot\\frac{3}{4}=\\frac{6}{12}$, a to se skrati na $\\frac{1}{2}$. Pre množenja možeš skratiti 3 sa 3 i 2 sa 4.",
+   "zanimljivost": "${2|3}·{3|4}={6|12}$, a to se skrati na ${1|2}$. Pre množenja možeš skratiti 3 sa 3 i 2 sa 4.",
    "rec": "množenje"
   },
   {
    "lekcija": 37,
    "tezina": 2,
-   "pitanje": "Kako množiš razlomak celim brojem, na primer $2 \\cdot \\frac{3}{5}$?",
+   "pitanje": "Kako množiš razlomak celim brojem, na primer $2 · {3|5}$?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "2 · 3/5 = (2 · 3)/5 = 6/5"
+    "tekst": "2·3/5 = (2·3)/5 = 6/5"
    },
    "odgovori": [
     "Celi broj pomnožiš samo brojiocem",
@@ -52306,13 +52539,13 @@
     "Dodaš celi broj imeniocu",
     "Oduzmeš celi broj"
    ],
-   "zanimljivost": "Celi broj napišemo kao $\\frac{2}{1}$, pa množimo: $\\frac{2}{1}\\cdot\\frac{3}{5}=\\frac{6}{5}$. Dakle, samo se brojilac množi.",
+   "zanimljivost": "Celi broj napišemo kao ${2|1}$, pa množimo: ${2|1}·{3|5}={6|5}$. Dakle, samo se brojilac množi.",
    "rec": "množenje"
   },
   {
    "lekcija": 37,
    "tezina": 3,
-   "pitanje": "Koliko je $2 \\cdot \\frac{3}{5}$?",
+   "pitanje": "Koliko je $2 · {3|5}$?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -52568,12 +52801,12 @@
     "velicina": 320
    },
    "odgovori": [
-    "$\\frac{6}{5}$",
-    "$\\frac{5}{5}$",
-    "$\\frac{6}{10}$",
-    "$\\frac{3}{5}$"
+    "${6|5}$",
+    "${5|5}$",
+    "${6|10}$",
+    "${3|5}$"
    ],
-   "zanimljivost": "$2\\cdot\\frac{3}{5}=\\frac{6}{5}$. To je više od jedne celine: $\\frac{6}{5}=1\\frac{1}{5}$.",
+   "zanimljivost": "$2·{3|5}={6|5}$. To je više od jedne celine: ${6|5}=1{1|5}$.",
    "rec": "množenje"
   },
   {
@@ -52582,7 +52815,7 @@
    "pitanje": "Kako množiš decimalne brojeve?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "0,2 · 0,3 = 0,06"
+    "tekst": "0,2·0,3 = 0,06"
    },
    "odgovori": [
     "Pomnožiš ih kao cele brojeve, pa izbrojiš decimalna mesta",
@@ -52596,7 +52829,7 @@
   {
    "lekcija": 38,
    "tezina": 1,
-   "pitanje": "Koliko je $0,\\!2 \\cdot 0,\\!3$?",
+   "pitanje": "Koliko je $0,2 · 0,3$?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -54922,18 +55155,18 @@
     "velicina": 260
    },
    "odgovori": [
-    "$0,\\!06$",
-    "$0,\\!6$",
-    "$0,\\!5$",
+    "$0,06$",
+    "$0,6$",
+    "$0,5$",
     "$6$"
    ],
-   "zanimljivost": "Pomnožimo $2\\cdot3=6$. Oba činioca imaju po jednu decimalu, ukupno dve, pa rezultat ima dve decimale: $0,\\!06$.",
+   "zanimljivost": "Pomnožimo $2·3=6$. Oba činioca imaju po jednu decimalu, ukupno dve, pa rezultat ima dve decimale: $0,06$.",
    "rec": "množenje"
   },
   {
    "lekcija": 38,
    "tezina": 2,
-   "pitanje": "Koliko je $0,\\!5 \\cdot 4$?",
+   "pitanje": "Koliko je $0,5 · 4$?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -55143,20 +55376,20 @@
    },
    "odgovori": [
     "$2$",
-    "$0,\\!2$",
-    "$0,\\!20$",
+    "$0,2$",
+    "$0,20$",
     "$20$"
    ],
-   "zanimljivost": "$0,\\!5\\cdot4=2$. Polovina puta 4 je 2 cela. Možeš i ovako: $5\\cdot4=20$, pa jedna decimala → $2,\\!0=2$.",
+   "zanimljivost": "$0,5·4=2$. Polovina puta 4 je 2 cela. Možeš i ovako: $5·4=20$, pa jedna decimala → $2,0=2$.",
    "rec": "množenje"
   },
   {
    "lekcija": 38,
    "tezina": 2,
-   "pitanje": "Koliko decimalnih mesta ima proizvod $0,\\!12 \\cdot 0,\\!3$?",
+   "pitanje": "Koliko decimalnih mesta ima proizvod $0,12 · 0,3$?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "0,12 · 0,3 = 0,036"
+    "tekst": "0,12·0,3 = 0,036"
    },
    "odgovori": [
     "3",
@@ -55164,7 +55397,7 @@
     "1",
     "4"
    ],
-   "zanimljivost": "Prvi činilac ima 2 decimale, drugi 1 – ukupno 3. Zato proizvod $0,\\!036$ ima 3 decimalna mesta.",
+   "zanimljivost": "Prvi činilac ima 2 decimale, drugi 1 – ukupno 3. Zato proizvod $0,036$ ima 3 decimalna mesta.",
    "rec": "decimala"
   },
   {
@@ -55223,13 +55456,13 @@
     "Ostaje na mestu",
     "Nestaje uvek"
    ],
-   "zanimljivost": "Množenje sa 10 pomera zarez za jedno mesto udesno: $0,\\!7\\cdot10=7$. Svaka nula u dekadnoj jedinici pomera zarez za jedno mesto.",
+   "zanimljivost": "Množenje sa 10 pomera zarez za jedno mesto udesno: $0,7·10=7$. Svaka nula u dekadnoj jedinici pomera zarez za jedno mesto.",
    "rec": "decimala"
   },
   {
    "lekcija": 38,
    "tezina": 3,
-   "pitanje": "Koliko je $0,\\!7 \\cdot 10$?",
+   "pitanje": "Koliko je $0,7 · 10$?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -55278,11 +55511,11 @@
    },
    "odgovori": [
     "7",
-    "$0,\\!07$",
+    "$0,07$",
     "$70$",
-    "$0,\\!7$"
+    "$0,7$"
    ],
-   "zanimljivost": "Množenje sa 10 pomera zarez udesno: $0,\\!7 \\to 7$.",
+   "zanimljivost": "Množenje sa 10 pomera zarez udesno: $0,7 → 7$.",
    "rec": "decimala"
   },
   {
@@ -55291,7 +55524,7 @@
    "pitanje": "Šta je recipročna vrednost broja?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "a · 1/a = 1"
+    "tekst": "a·1/a = 1"
    },
    "odgovori": [
     "Broj koji pomnožen datim brojem daje 1",
@@ -55299,24 +55532,24 @@
     "Suprotan broj",
     "Kvadrat broja"
    ],
-   "zanimljivost": "Recipročna vrednost broja $a$ je $\\frac{1}{a}$, jer je $a\\cdot\\frac{1}{a}=1$. Na primer, recipročno od 5 je $\\frac{1}{5}$.",
+   "zanimljivost": "Recipročna vrednost broja $a$ je ${1|a}$, jer je $a·{1|a}=1$. Na primer, recipročno od 5 je ${1|5}$.",
    "rec": "recipročan"
   },
   {
    "lekcija": 39,
    "tezina": 1,
-   "pitanje": "Koja je recipročna vrednost razlomka $\\frac{2}{3}$?",
+   "pitanje": "Koja je recipročna vrednost razlomka ${2|3}$?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "2/3\\to3/2"
+    "tekst": "2/3→3/2"
    },
    "odgovori": [
-    "$\\frac{3}{2}$",
-    "$\\frac{2}{3}$",
-    "$\\frac{1}{3}$",
-    "$\\frac{3}{1}$"
+    "${3|2}$",
+    "${2|3}$",
+    "${1|3}$",
+    "${3|1}$"
    ],
-   "zanimljivost": "Recipročnu vrednost razlomka dobijemo zamenom brojioca i imenioca: $\\frac{2}{3} \\to \\frac{3}{2}$.",
+   "zanimljivost": "Recipročnu vrednost razlomka dobijemo zamenom brojioca i imenioca: ${2|3} → {3|2}$.",
    "rec": "recipročan"
   },
   {
@@ -55325,7 +55558,7 @@
    "pitanje": "Kako deliš razlomke?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "a/b:c/d = a/b · d/c"
+    "tekst": "a/b:c/d = a/b·d/c"
    },
    "odgovori": [
     "Pomnožiš prvi razlomak recipročnom vrednošću drugog",
@@ -55333,13 +55566,13 @@
     "Oduzmeš razlomke",
     "Sabereš razlomke"
    ],
-   "zanimljivost": "Deljenje razlomaka pretvaramo u množenje: $\\frac{a}{b}:\\frac{c}{d}=\\frac{a}{b}\\cdot\\frac{d}{c}$. Delilac se „obrne“.",
+   "zanimljivost": "Deljenje razlomaka pretvaramo u množenje: ${a|b}:{c|d}={a|b}·{d|c}$. Delilac se „obrne“.",
    "rec": "deljenje"
   },
   {
    "lekcija": 39,
    "tezina": 2,
-   "pitanje": "Koliko je $\\frac{1}{2} : \\frac{1}{4}$?",
+   "pitanje": "Koliko je ${1|2} : {1|4}$?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -55605,11 +55838,11 @@
    },
    "odgovori": [
     "2",
-    "$\\frac{1}{8}$",
-    "$\\frac{1}{2}$",
+    "${1|8}$",
+    "${1|2}$",
     "$4$"
    ],
-   "zanimljivost": "$\\frac{1}{2}:\\frac{1}{4}=\\frac{1}{2}\\cdot\\frac{4}{1}=\\frac{4}{2}=2$. U polovini se nalaze dve četvrtine.",
+   "zanimljivost": "${1|2}:{1|4}={1|2}·{4|1}={4|2}=2$. U polovini se nalaze dve četvrtine.",
    "rec": "deljenje"
   },
   {
@@ -55618,15 +55851,15 @@
    "pitanje": "Koja je recipročna vrednost broja 5?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "5\\to1/5"
+    "tekst": "5→1/5"
    },
    "odgovori": [
-    "$\\frac{1}{5}$",
+    "${1|5}$",
     "$5$",
-    "$\\frac{5}{1}$",
+    "${5|1}$",
     "$0$"
    ],
-   "zanimljivost": "Recipročno od 5 je $\\frac{1}{5}$, jer je $5\\cdot\\frac{1}{5}=1$. Svaki broj (osim nule) ima recipročnu vrednost.",
+   "zanimljivost": "Recipročno od 5 je ${1|5}$, jer je $5·{1|5}=1$. Svaki broj (osim nule) ima recipročnu vrednost.",
    "rec": "recipročan"
   },
   {
@@ -55643,7 +55876,7 @@
     "Jer je nula paran broj",
     "Nula ima recipročnu vrednost"
    ],
-   "zanimljivost": "Recipročno od 0 bi bilo $\\frac{1}{0}$, a deljenje nulom nije dozvoljeno. Nijedan broj pomnožen nulom ne daje 1.",
+   "zanimljivost": "Recipročno od 0 bi bilo ${1|0}$, a deljenje nulom nije dozvoljeno. Nijedan broj pomnožen nulom ne daje 1.",
    "rec": "recipročan"
   },
   {
@@ -55660,13 +55893,13 @@
     "Pomnožiš decimale",
     "Zanemariš zareze i podeliš"
    ],
-   "zanimljivost": "Da bi podelio, na primer, $1,\\!5:0,\\!5$, proširiš oba broja sa 10: $15:5=3$. Delilac mora postati ceo broj.",
+   "zanimljivost": "Da bi podelio, na primer, $1,5:0,5$, proširiš oba broja sa 10: $15:5=3$. Delilac mora postati ceo broj.",
    "rec": "deljenje"
   },
   {
    "lekcija": 40,
    "tezina": 1,
-   "pitanje": "Koliko je $1,\\!5 : 0,\\!5$?",
+   "pitanje": "Koliko je $1,5 : 0,5$?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -55700,11 +55933,11 @@
    },
    "odgovori": [
     "3",
-    "$0,\\!3$",
+    "$0,3$",
     "$30$",
-    "$0,\\!03$"
+    "$0,03$"
    ],
-   "zanimljivost": "Proširimo oba broja sa 10: $15:5=3$. U $1,\\!5$ ima tri polovine.",
+   "zanimljivost": "Proširimo oba broja sa 10: $15:5=3$. U $1,5$ ima tri polovine.",
    "rec": "deljenje"
   },
   {
@@ -55713,7 +55946,7 @@
    "pitanje": "Deljenje broja sa 0,1 isto je što i…",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "3:0,1 = 3 · 10 = 30"
+    "tekst": "3:0,1 = 3·10 = 30"
    },
    "odgovori": [
     "množenje sa 10",
@@ -55721,7 +55954,7 @@
     "deljenje sa 10",
     "oduzimanje 0,1"
    ],
-   "zanimljivost": "Deljenje sa $0,\\!1$ znači „koliko desetinki staje u broj“ – to je isto kao množenje sa 10: $3:0,\\!1=30$.",
+   "zanimljivost": "Deljenje sa $0,1$ znači „koliko desetinki staje u broj“ – to je isto kao množenje sa 10: $3:0,1=30$.",
    "rec": "deljenje"
   },
   {
@@ -55780,13 +56013,13 @@
     "Ostaje na mestu",
     "Nestaje"
    ],
-   "zanimljivost": "Deljenje sa 10 pomera zarez ulevo: $0,\\!7:10=0,\\!07$. Svaka nula pomera zarez za jedno mesto ulevo.",
+   "zanimljivost": "Deljenje sa 10 pomera zarez ulevo: $0,7:10=0,07$. Svaka nula pomera zarez za jedno mesto ulevo.",
    "rec": "decimala"
   },
   {
    "lekcija": 40,
    "tezina": 3,
-   "pitanje": "Koliko je $0,\\!7 : 10$?",
+   "pitanje": "Koliko je $0,7 : 10$?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -55834,38 +56067,38 @@
     "velicina": 300
    },
    "odgovori": [
-    "$0,\\!07$",
+    "$0,07$",
     "$7$",
     "$70$",
-    "$0,\\!7$"
+    "$0,7$"
    ],
-   "zanimljivost": "Deljenje sa 10 pomera zarez ulevo: $0,\\!7 \\to 0,\\!07$.",
+   "zanimljivost": "Deljenje sa 10 pomera zarez ulevo: $0,7 → 0,07$.",
    "rec": "decimala"
   },
   {
    "lekcija": 41,
    "tezina": 1,
-   "pitanje": "U izrazu $2 + 3 \\cdot 4$, šta računaš prvo?",
+   "pitanje": "U izrazu $2 + 3 · 4$, šta računaš prvo?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "2 + 3 · 4 = 14"
+    "tekst": "2 + 3·4 = 14"
    },
    "odgovori": [
-    "Množenje $3\\cdot4$",
+    "Množenje $3·4$",
     "Sabiranje $2+3$",
     "Sve redom sleva",
     "Oduzimanje"
    ],
-   "zanimljivost": "Množenje ima prednost: $2+3\\cdot4=2+12=14$.",
+   "zanimljivost": "Množenje ima prednost: $2+3·4=2+12=14$.",
    "rec": "redosled"
   },
   {
    "lekcija": 41,
    "tezina": 2,
-   "pitanje": "Koje svojstvo koristiš kad računaš $7 \\cdot 12 = 7\\cdot10 + 7\\cdot2$?",
+   "pitanje": "Koje svojstvo koristiš kad računaš $7 · 12 = 7·10 + 7·2$?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "a · (b + c) = a · b + a · c"
+    "tekst": "a·(b + c) = a· b + a· c"
    },
    "odgovori": [
     "Distributivnost",
@@ -55873,7 +56106,7 @@
     "Asocijativnost",
     "Zatvorenost"
    ],
-   "zanimljivost": "Distributivnost razlaže množenje na sabirke: $a\\cdot(b+c)=a\\cdot b+a\\cdot c$. Tako je lakše množiti „okrugle“ brojeve.",
+   "zanimljivost": "Distributivnost razlaže množenje na sabirke: $a·(b+c)=a· b+a· c$. Tako je lakše množiti „okrugle“ brojeve.",
    "rec": "raspodela"
   },
   {
@@ -55882,7 +56115,7 @@
    "pitanje": "Množenje i deljenje su međusobno…",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "6 · 4 = 24 \\Leftrightarrow 24:4 = 6"
+    "tekst": "6·4 = 24 ⇔ 24:4 = 6"
    },
    "odgovori": [
     "obrnute (inverzne) operacije",
@@ -55890,16 +56123,16 @@
     "nezavisne operacije",
     "uvek jednake"
    ],
-   "zanimljivost": "Množenje i deljenje su obrnute operacije: ako je $6\\cdot4=24$, onda je $24:4=6$. Jedna „poništava“ drugu.",
+   "zanimljivost": "Množenje i deljenje su obrnute operacije: ako je $6·4=24$, onda je $24:4=6$. Jedna „poništava“ drugu.",
    "rec": "množenje"
   },
   {
    "lekcija": 41,
    "tezina": 3,
-   "pitanje": "Koliko je $(2+3)\\cdot 4$?",
+   "pitanje": "Koliko je $(2+3)· 4$?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "(2 + 3) · 4 = 20"
+    "tekst": "(2 + 3)·4 = 20"
    },
    "odgovori": [
     "20",
@@ -55907,16 +56140,16 @@
     "10",
     "18"
    ],
-   "zanimljivost": "Prvo zagrada: $2+3=5$, pa $5\\cdot4=20$. Zagrade menjaju redosled računanja!",
+   "zanimljivost": "Prvo zagrada: $2+3=5$, pa $5·4=20$. Zagrade menjaju redosled računanja!",
    "rec": "redosled"
   },
   {
    "lekcija": 41,
    "tezina": 3,
-   "pitanje": "Kako se zove svojstvo po kome je $a\\cdot b = b\\cdot a$?",
+   "pitanje": "Kako se zove svojstvo po kome je $a· b = b· a$?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "a · b = b · a"
+    "tekst": "a· b = b· a"
    },
    "odgovori": [
     "Komutativnost množenja",
@@ -55924,16 +56157,16 @@
     "Distributivnost",
     "Neutralnost"
    ],
-   "zanimljivost": "Komutativnost množenja: činioci mogu da zamene mesta, proizvod ostaje isti. Na primer, $3\\cdot4=4\\cdot3$.",
+   "zanimljivost": "Komutativnost množenja: činioci mogu da zamene mesta, proizvod ostaje isti. Na primer, $3·4=4·3$.",
    "rec": "zamena"
   },
   {
    "lekcija": 42,
    "tezina": 1,
-   "pitanje": "Kako nalaziš nepoznati činilac u jednačini $x \\cdot 3 = 12$?",
+   "pitanje": "Kako nalaziš nepoznati činilac u jednačini $x · 3 = 12$?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "x · 3 = 12 ⇒ x = 4"
+    "tekst": "x·3 = 12 ⇒ x = 4"
    },
    "odgovori": [
     "Proizvod podeliš poznatim činiocem",
@@ -55947,7 +56180,7 @@
   {
    "lekcija": 42,
    "tezina": 2,
-   "pitanje": "Koji broj je rešenje jednačine $x \\cdot 3 = 12$?",
+   "pitanje": "Koji broj je rešenje jednačine $x · 3 = 12$?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -56000,7 +56233,7 @@
     "12",
     "36"
    ],
-   "zanimljivost": "$x = 12:3 = 4$. Provera: $4\\cdot3=12$ – tačno!",
+   "zanimljivost": "$x = 12:3 = 4$. Provera: $4·3=12$ – tačno!",
    "rec": "jednačina"
   },
   {
@@ -56017,13 +56250,13 @@
     "4",
     "9"
    ],
-   "zanimljivost": "Nepoznati deljenik nalazimo množenjem: $x = 5\\cdot4 = 20$.",
+   "zanimljivost": "Nepoznati deljenik nalazimo množenjem: $x = 5·4 = 20$.",
    "rec": "jednačina"
   },
   {
    "lekcija": 42,
    "tezina": 3,
-   "pitanje": "Koji broj je rešenje jednačine $\\frac{1}{2} \\cdot x = 3$?",
+   "pitanje": "Koji broj je rešenje jednačine ${1|2} · x = 3$?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -56187,11 +56420,11 @@
    },
    "odgovori": [
     "6",
-    "$\\frac{3}{2}$",
-    "$\\frac{1}{6}$",
+    "${3|2}$",
+    "${1|6}$",
     "3"
    ],
-   "zanimljivost": "Polovina nepoznatog broja je 3, pa je ceo broj duplo veći: $x = 3 \\cdot 2 = 6$.",
+   "zanimljivost": "Polovina nepoznatog broja je 3, pa je ceo broj duplo veći: $x = 3 · 2 = 6$.",
    "rec": "jednačina"
   },
   {
@@ -56217,15 +56450,15 @@
    "pitanje": "Koji znak koristimo za „veće ili jednako“?",
    "mediji": {
     "vrsta": "formula",
-    "tekst": "x\\ge3"
+    "tekst": "x≥3"
    },
    "odgovori": [
-    "$\\ge$",
+    "$≥$",
     "$>$",
     "$<$",
     "$=$"
    ],
-   "zanimljivost": "Znak $\\ge$ čitamo „veće ili jednako“: $x \\ge 3$ znači da je $x$ veće od 3 ili baš 3.",
+   "zanimljivost": "Znak $≥$ čitamo „veće ili jednako“: $x ≥ 3$ znači da je $x$ veće od 3 ili baš 3.",
    "rec": "znak"
   },
   {
@@ -56294,13 +56527,13 @@
     "6",
     "10"
    ],
-   "zanimljivost": "Za $x=4$: $2\\cdot4=8$, a $8<10$ – tačno. Za $x=5$ dobili bismo $10$, a 10 nije manje od 10.",
+   "zanimljivost": "Za $x=4$: $2·4=8$, a $8<10$ – tačno. Za $x=5$ dobili bismo $10$, a 10 nije manje od 10.",
    "rec": "nejednačina"
   },
   {
    "lekcija": 43,
    "tezina": 2,
-   "pitanje": "Nejednačina $x \\cdot 2 \\le 8$ znači da je $x$…",
+   "pitanje": "Nejednačina $x · 2 ≤ 8$ znači da je $x$…",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -56361,7 +56594,7 @@
     "jednako 8",
     "veće ili jednako 4"
    ],
-   "zanimljivost": "Podelimo obe strane sa 2: $x \\le 4$. Rešenja su svi brojevi manji ili jednaki 4.",
+   "zanimljivost": "Podelimo obe strane sa 2: $x ≤ 4$. Rešenja su svi brojevi manji ili jednaki 4.",
    "rec": "nejednačina"
   },
   {
@@ -56430,7 +56663,7 @@
     "5",
     "10"
    ],
-   "zanimljivost": "Za $x=3$: $3\\cdot3=9$, a 9 nije veće od 9. Svi brojevi veći od 3 zadovoljavaju nejednačinu.",
+   "zanimljivost": "Za $x=3$: $3·3=9$, a 9 nije veće od 9. Svi brojevi veći od 3 zadovoljavaju nejednačinu.",
    "rec": "nejednačina"
   },
   {
@@ -57535,6 +57768,16 @@
     },
     "e": [
      {
+      "d": "OA",
+      "b": 0,
+      "debljina": 3
+     },
+     {
+      "d": "OB",
+      "b": 0,
+      "debljina": 3
+     },
+     {
       "u": "AOB",
       "b": 1
      },
@@ -57589,6 +57832,16 @@
     },
     "e": [
      {
+      "d": "OA",
+      "b": 0,
+      "debljina": 3
+     },
+     {
+      "d": "OB",
+      "b": 0,
+      "debljina": 3
+     },
+     {
       "u": "AOB",
       "b": 1
      },
@@ -57642,6 +57895,16 @@
      ]
     },
     "e": [
+     {
+      "d": "OA",
+      "b": 0,
+      "debljina": 3
+     },
+     {
+      "d": "OB",
+      "b": 0,
+      "debljina": 3
+     },
      {
       "u": "AOB",
       "b": 1
@@ -57701,6 +57964,16 @@
     },
     "e": [
      {
+      "d": "OA",
+      "b": 0,
+      "debljina": 3
+     },
+     {
+      "d": "OB",
+      "b": 0,
+      "debljina": 3
+     },
+     {
       "u": "AOB",
       "b": 1
      },
@@ -57757,6 +58030,16 @@
      ]
     },
     "e": [
+     {
+      "d": "OA",
+      "b": 0,
+      "debljina": 3
+     },
+     {
+      "d": "OB",
+      "b": 0,
+      "debljina": 3
+     },
      {
       "u": "AOB",
       "b": 1
@@ -60121,7 +60404,7 @@
     "Polovinu celine",
     "Celu celinu"
    ],
-   "zanimljivost": "Procenat znači „od sto“: $1\\% = \\frac{1}{100} = 0,\\!01$. Znak % podseća na razlomak sa 100.",
+   "zanimljivost": "Procenat znači „od sto“: $1% = {1|100} = 0,01$. Znak % podseća na razlomak sa 100.",
    "rec": "procenat"
   },
   {
@@ -62453,12 +62736,12 @@
     "velicina": 260
    },
    "odgovori": [
-    "$\\frac{1}{2}$",
-    "$\\frac{1}{5}$",
-    "$\\frac{1}{4}$",
-    "$\\frac{1}{10}$"
+    "${1|2}$",
+    "${1|5}$",
+    "${1|4}$",
+    "${1|10}$"
    ],
-   "zanimljivost": "$50\\% = \\frac{50}{100} = \\frac{1}{2}$. Polovina celine je 50%.",
+   "zanimljivost": "$50% = {50|100} = {1|2}$. Polovina celine je 50%.",
    "rec": "procenat"
   },
   {
@@ -64790,12 +65073,12 @@
     "velicina": 260
    },
    "odgovori": [
-    "$\\frac{1}{4}$",
-    "$\\frac{1}{2}$",
-    "$\\frac{1}{5}$",
-    "$\\frac{1}{3}$"
+    "${1|4}$",
+    "${1|2}$",
+    "${1|5}$",
+    "${1|3}$"
    ],
-   "zanimljivost": "$25\\% = \\frac{25}{100} = \\frac{1}{4}$. Četvrtina celine je 25%.",
+   "zanimljivost": "$25% = {25|100} = {1|4}$. Četvrtina celine je 25%.",
    "rec": "procenat"
   },
   {
@@ -67222,7 +67505,7 @@
     "150",
     "250"
    ],
-   "zanimljivost": "$50\\%$ je polovina, a polovina od 200 je 100. Dakle, $50\\% \\cdot 200 = 100$.",
+   "zanimljivost": "$50%$ je polovina, a polovina od 200 je 100. Dakle, $50% · 200 = 100$.",
    "rec": "procenat"
   },
   {
@@ -67312,7 +67595,7 @@
     "40",
     "60"
    ],
-   "zanimljivost": "$25\\%$ je četvrtina, a četvrtina od 80 je 20.",
+   "zanimljivost": "$25%$ je četvrtina, a četvrtina od 80 je 20.",
    "rec": "procenat"
   },
   {
@@ -69651,11 +69934,11 @@
    "parovi": [
     [
      "50%",
-     "$\\frac{1}{2}$"
+     "${1|2}$"
     ],
     [
      "25%",
-     "$\\frac{1}{4}$"
+     "${1|4}$"
     ],
     [
      "100%",
@@ -69663,7 +69946,7 @@
     ],
     [
      "1%",
-     "$\\frac{1}{100}$"
+     "${1|100}$"
     ]
    ],
    "zanimljivost": "Procenat je razlomak sa imeniocem 100: 50% je polovina, 25% četvrtina, a 100% cela.",
@@ -74331,7 +74614,7 @@
     "0",
     "100"
    ],
-   "zanimljivost": "Prvo $10\\%$ od 100 je 10. Zatim $10\\%$ od 10 je 1. Dakle, rezultat je 1.",
+   "zanimljivost": "Prvo $10%$ od 100 je 10. Zatim $10%$ od 10 je 1. Dakle, rezultat je 1.",
    "rec": "procenat"
   },
   {
@@ -74423,7 +74706,7 @@
     "Njihov proizvod",
     "Njihova razlika"
    ],
-   "zanimljivost": "Razmera je odnos dve veličine, zapisuje se kao $a:b$ ili $\\frac{a}{b}$. Govori koliko puta je jedna veličina veća od druge.",
+   "zanimljivost": "Razmera je odnos dve veličine, zapisuje se kao $a:b$ ili ${a|b}$. Govori koliko puta je jedna veličina veća od druge.",
    "rec": "razmera"
   },
   {
@@ -75099,7 +75382,7 @@
     "5, 6 i 7",
     "2, 5 i 8"
    ],
-   "zanimljivost": "Ako je sredina tri broja 5, njihov zbir je $3\\cdot5=15$. Brojevi $4+5+6=15$ – to su tri uzastopna broja.",
+   "zanimljivost": "Ako je sredina tri broja 5, njihov zbir je $3·5=15$. Brojevi $4+5+6=15$ – to su tri uzastopna broja.",
    "rec": "sredina"
   }
  ]

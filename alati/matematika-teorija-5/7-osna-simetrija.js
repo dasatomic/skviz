@@ -44,7 +44,7 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, pravilni, O, bez }) => {
   // simetrala ugla
   const simetralaUgla = (stepen = 60, { pu = false, o = '' } = {}) => {
     const t = { O: [0, 0], A: [4, 0], B: naKrugu([0, 0], 4, stepen), p: naKrugu([0, 0], 4, stepen / 2) };
-    const e = [{ u: 'AOB', b: 1 }, { d: 'Op', b: 2, str: 1, debljina: 3 }];
+    const e = [{ d: 'OA', b: 0, debljina: 3 }, { d: 'OB', b: 0, debljina: 3 }, { u: 'AOB', b: 1 }, { d: 'Op', b: 2, str: 1, debljina: 3 }];
     if (pu) e.push({ pu: 'AOB' });
     if (o) e.push({ u: 'AOp', b: 2, o });
     return G(t, e, { ...bez, velicina: 260 });
@@ -142,7 +142,7 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, pravilni, O, bez }) => {
   Q(2, 'Šta važi za svaku tačku na simetrali ugla?',
     ['Jednako je udaljena od oba kraka', 'Bliža je jednom kraku', 'Nalazi se na temenu', 'Ne može se odrediti'],
     'Simetrala ugla je skup tačaka koje su podjednako udaljene od oba kraka ugla. Zato je ona osa simetrije ugla.', 'simetrala',
-    { mediji: G({ O: [0, 0], A: [4, 0], B: naKrugu([0, 0], 4, 60), p: naKrugu([0, 0], 4, 30), P: naKrugu([0, 0], 3, 30) }, [{ u: 'AOB', b: 1 }, { d: 'Op', b: 2, str: 1, debljina: 3 }, { tacka: 'P', b: 1 }], { ...bez, velicina: 260 }) });
+    { mediji: G({ O: [0, 0], A: [4, 0], B: naKrugu([0, 0], 4, 60), p: naKrugu([0, 0], 4, 30), P: naKrugu([0, 0], 3, 30) }, [{ d: 'OA', b: 0, debljina: 3 }, { d: 'OB', b: 0, debljina: 3 }, { u: 'AOB', b: 1 }, { d: 'Op', b: 2, str: 1, debljina: 3 }, { tacka: 'P', b: 1 }], { ...bez, velicina: 260 }) });
   Q(2, 'Simetrala pravog ugla (90°) deli ga na dva ugla od…',
     ['45°', '30°', '60°', '90°'],
     'Polovina od 90° je 45°. Svaki od dva dela je oštar ugao od 45°.', 'simetrala',
@@ -154,6 +154,6 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, pravilni, O, bez }) => {
   Q(2, 'Kako se na slici zove poluprava koja deli ugao AOB na dva jednaka dela?',
     ['Simetrala ugla', 'Simetrala duži', 'Transverzala', 'Tangenta'],
     'Poluprava OP polazi iz temena O i deli ugao AOB na dva jednaka dela – to je simetrala ugla.', 'simetrala',
-    { mediji: G({ O: [0, 0], A: [4, 0], B: naKrugu([0, 0], 4, 50), P: naKrugu([0, 0], 4, 25) }, [{ u: 'AOB', b: 1 }, { d: 'OP', b: 2, str: 1 }, { tx: 'O', at: [0, -0.45], vel: 15 }], { bezImena: ['O'], velicina: 260 }) });
+    { mediji: G({ O: [0, 0], A: [4, 0], B: naKrugu([0, 0], 4, 50), P: naKrugu([0, 0], 4, 25) }, [{ d: 'OA', b: 0, debljina: 3 }, { d: 'OB', b: 0, debljina: 3 }, { u: 'AOB', b: 1 }, { d: 'OP', b: 2, str: 1 }, { tx: 'O', at: [0, -0.45], vel: 15 }], { bezImena: ['O'], velicina: 260 }) });
 
 };
