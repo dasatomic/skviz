@@ -188,6 +188,7 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, pravilni, krug, luk, O, bez, papi
     { mediji: G({ A: [0, 0], B: [1.6, 0], C: [0.6, 1.6], "A'": [3, 1.2], "B'": [4.6, 1.2], "C'": [3.6, 2.8] }, [{ p: 'ABC', b: 0 }, { p: "A'B'C'", b: 1 }, { d: "AA'", b: 2, str: 1, isp: 1 }], { velicina: 280 }) });
   Q(3, 'Kojom strelicom se označava vektor?',
     ['Iznad slova, na primer $\\vec{AB}$', 'Ispod slova', 'Pored broja', 'Nema oznaku'],
-    'Vektor označavamo strelicom iznad slova: $\\vec{AB}$ ili $\\vec{v}$. Strelica pokazuje da je smer važan.', 'vektor', { mediji: { vrsta: 'formula', tekst: '$\\vec{AB}$' } });
+    'Vektor označavamo strelicom iznad slova: $\\vec{AB}$ ili $\\vec{v}$. Strelica pokazuje da je smer važan.', 'vektor',
+    { mediji: G({ A: [0, 0], B: [4, 0] }, [{ d: 'AB', b: 1, str: 1, debljina: 4 }, { tx: 'A', at: [0, -0.5], vel: 15 }, { tx: 'B', at: [4, -0.5], vel: 15 }], { velicina: 260 }) });
 
 };

@@ -43,9 +43,10 @@ module.exports = ({ L, Q, U, S, G, r, traka, pica, osa, O, bez, dec }) => {
   Q(2, 'Šta je veće na brojevnoj polupravoj: $\\frac{1}{2}$ ili $\\frac{1}{4}$?',
     ['$\\frac{1}{2}$ – nalazi se desno', '$\\frac{1}{4}$ – nalazi se desno', 'Jednaki su', 'Ne može se uporediti'],
     'Na brojevnoj pravoj, broj koji je više udesno je veći. Polovina je desno od četvrtine, pa je $\\frac{1}{2} > \\frac{1}{4}$.', 'razlomak');
-  Q(1, 'Od koje tačke počinje brojevna poluprava?',
-    ['Od 0', 'Od 1', 'Od −1', 'Od bilo kog broja'],
-    'Brojevna poluprava počinje u tački 0 i proteže se udesno, u beskonačnost. Na nju ređamo brojeve od najmanjeg ka najvećem.', 'poluprava');
+  Q(2, 'Koji broj odgovara POČETNOJ tački brojevne poluprave?',
+    ['0', '1', '−1', 'Zavisi od toga ko crta'],
+    'Početna tačka (ishodište O) po dogovoru dobija broj 0. Udesno se zatim ređaju 1, 2, 3…, a razlomci leže na jediničnim dužima između celih brojeva.', 'poluprava',
+    { mediji: G({ O: [0, 0] }, [{ osa: [0, 3], podela: 0.5, svaki: 2 }, { tacka: 'O', b: 1 }, { tx: 'O', at: [0, 0.55], vel: 15 }], { ...bez, velicina: 320 }) });
 
   // ── 23. proširivanje, skraćivanje, upoređivanje ──
   L('Proširivanje, skraćivanje i upoređivanje razlomaka');

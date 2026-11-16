@@ -45,6 +45,29 @@ function S(tezina, pitanje, parovi, zanimljivost, rec, x = {}) {
   dodaj({ vrsta: 'spoji', tezina, pitanje, ...(x.mediji ? { mediji: x.mediji } : {}), parovi, zanimljivost, rec });
 }
 
+// Medij „formula“ klijent prikazuje kao običan tekst (.formula) – ne prolazi kroz matematički
+// renderer kao tekst pitanja. Zato se LaTeX iz $…$ ovde pretvara u Unicode znakove (bez $).
+function srediFormulu(t) {
+  let s = String(t).replace(/\$/g, '');
+  // razlomak \frac{X}{Y} → X/Y (složeni brojilac/imenilac u zagradama)
+  s = s.replace(/\\frac\{([^{}]*)\}\{([^{}]*)\}/g, (_, a, b) => {
+    const slozen = (x) => /[+\-:·\\\s]/.test(x);
+    return (slozen(a) ? `(${a})` : a) + '/' + (slozen(b) ? `(${b})` : b);
+  });
+  s = s.replace(/\\cdot/g, ' · ');
+  s = s.replace(/\\in/g, '∈').replace(/\\varnothing/g, '∅');
+  s = s.replace(/\\mathbb\{N\}/g, 'ℕ');
+  s = s.replace(/\\cup/g, '∪').replace(/\\cap/g, '∩').replace(/\\setminus/g, '∖');
+  s = s.replace(/\\parallel/g, '∥').replace(/\\perp/g, '⊥');
+  s = s.replace(/\\angle/g, '∠').replace(/\\Rightarrow/g, '⇒').replace(/\\dots/g, '…');
+  s = s.replace(/\\vec\{([^{}]*)\}/g, '$1');
+  s = s.replace(/\\\{/g, '{').replace(/\\\}/g, '}').replace(/\\%/g, '%');
+  s = s.replace(/\\!/g, '');
+  s = s.replace(/_\{?0\}?/g, '₀');
+  s = s.replace(/\s*([+=])\s*/g, ' $1 ').replace(/\s*-\s*/g, ' − ');
+  return s.replace(/\s+/g, ' ').trim();
+}
+
 const O = {
   ...A,
   pitanja, L, Q, U, S, proveri,
@@ -54,6 +77,7 @@ for (const f of fs.readdirSync(path.join(__dirname, 'matematika-teorija-5')).fil
   require(path.join(__dirname, 'matematika-teorija-5', f))(O);
 }
 pitanja.sort((a, b) => a.lekcija - b.lekcija || a.tezina - b.tezina);
+for (const p of pitanja) if (p.mediji?.vrsta === 'formula') p.mediji.tekst = srediFormulu(p.mediji.tekst);
 
 if (process.argv.includes('--suvo')) {
   const po = {};
