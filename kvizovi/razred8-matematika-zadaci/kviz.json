@@ -6753,6 +6753,33 @@
   },
   {
    "lekcija": 30,
+   "tezina": 3,
+   "pitanje": "Za svaki konveksni poliedar važi Ojlerova formula $T − I + S = 2$ (temena − ivice + strane). Koliko temena ima prizma sa $12$ ivica i $6$ strana?",
+   "odgovori": [
+    "8",
+    "6",
+    "10",
+    "12"
+   ],
+   "resenje": [
+    {
+     "t": "$T − 12 + 6 = 2$, pa je $T = 8$ temena."
+    },
+    {
+     "t": "To je četvorostrana prizma: $8$ temena, $12$ ivica, $6$ strana."
+    },
+    {
+     "t": "Ojlerovu formulu možeš proveriti na modelu od kartona – izbroj temena, ivice i strane!",
+     "crtez": {
+      "vrsta": "telo",
+      "oblik": "prizma4",
+      "opis": "Temena − ivice + strane = 2"
+     }
+    }
+   ]
+  },
+  {
+   "lekcija": 30,
    "tezina": 1,
    "pitanje": "Bočne strane prave prizme su:",
    "odgovori": [
@@ -7647,6 +7674,649 @@
     },
     {
      "t": "Površina bi bila $6 · 81 = 486 cm²$."
+    },
+    {
+     "t": "Zapreminu kocke možemo zamisliti i kao kockice od $1 cm³$: $9$ redova × $9$ kolona × $9$ slojeva.",
+     "crtez": {
+      "vrsta": "telo",
+      "oblik": "kocka",
+      "opis": "Zapremina kocke: a · a · a"
+     }
+    }
+   ]
+  },
+  {
+   "lekcija": 35,
+   "tezina": 1,
+   "pitanje": "Kvadar se sastoji od $24$ kockice ivice $1 cm$, raspoređene kao $2 × 3 × 4$. Kolika mu je zapremina?",
+   "odgovori": [
+    "$24 cm³$",
+    "$9 cm³$",
+    "$48 cm³$",
+    "$12 cm³$"
+   ],
+   "mediji": {
+    "vrsta": "geo",
+    "t": {
+     "O": [
+      0,
+      0
+     ]
+    },
+    "e": [
+     {
+      "lin": [
+       [
+        0,
+        4
+       ],
+       [
+        0.87,
+        4.5
+       ],
+       [
+        0,
+        5
+       ],
+       [
+        -0.87,
+        4.5
+       ]
+      ],
+      "zatv": 1,
+      "b": 0,
+      "gusto": 1
+     },
+     {
+      "lin": [
+       [
+        -0.87,
+        4.5
+       ],
+       [
+        0,
+        5
+       ],
+       [
+        -0.87,
+        5.5
+       ],
+       [
+        -1.74,
+        5
+       ]
+      ],
+      "zatv": 1,
+      "b": 0,
+      "gusto": 1
+     },
+     {
+      "lin": [
+       [
+        -1.74,
+        5
+       ],
+       [
+        -0.87,
+        5.5
+       ],
+       [
+        -1.74,
+        6
+       ],
+       [
+        -2.61,
+        5.5
+       ]
+      ],
+      "zatv": 1,
+      "b": 0,
+      "gusto": 1
+     },
+     {
+      "lin": [
+       [
+        0.87,
+        4.5
+       ],
+       [
+        1.74,
+        5
+       ],
+       [
+        0.87,
+        5.5
+       ],
+       [
+        0,
+        5
+       ]
+      ],
+      "zatv": 1,
+      "b": 0,
+      "gusto": 1
+     },
+     {
+      "lin": [
+       [
+        0,
+        5
+       ],
+       [
+        0.87,
+        5.5
+       ],
+       [
+        0,
+        6
+       ],
+       [
+        -0.87,
+        5.5
+       ]
+      ],
+      "zatv": 1,
+      "b": 0,
+      "gusto": 1
+     },
+     {
+      "lin": [
+       [
+        -0.87,
+        5.5
+       ],
+       [
+        0,
+        6
+       ],
+       [
+        -0.87,
+        6.5
+       ],
+       [
+        -1.74,
+        6
+       ]
+      ],
+      "zatv": 1,
+      "b": 0,
+      "gusto": 1
+     },
+     {
+      "lin": [
+       [
+        0,
+        0
+       ],
+       [
+        0.87,
+        0.5
+       ],
+       [
+        0.87,
+        1.5
+       ],
+       [
+        0,
+        1
+       ]
+      ],
+      "zatv": 1,
+      "b": 4,
+      "gusto": 0
+     },
+     {
+      "lin": [
+       [
+        0,
+        1
+       ],
+       [
+        0.87,
+        1.5
+       ],
+       [
+        0.87,
+        2.5
+       ],
+       [
+        0,
+        2
+       ]
+      ],
+      "zatv": 1,
+      "b": 4,
+      "gusto": 0
+     },
+     {
+      "lin": [
+       [
+        0,
+        2
+       ],
+       [
+        0.87,
+        2.5
+       ],
+       [
+        0.87,
+        3.5
+       ],
+       [
+        0,
+        3
+       ]
+      ],
+      "zatv": 1,
+      "b": 4,
+      "gusto": 0
+     },
+     {
+      "lin": [
+       [
+        0,
+        3
+       ],
+       [
+        0.87,
+        3.5
+       ],
+       [
+        0.87,
+        4.5
+       ],
+       [
+        0,
+        4
+       ]
+      ],
+      "zatv": 1,
+      "b": 4,
+      "gusto": 0
+     },
+     {
+      "lin": [
+       [
+        0.87,
+        0.5
+       ],
+       [
+        1.74,
+        1
+       ],
+       [
+        1.74,
+        2
+       ],
+       [
+        0.87,
+        1.5
+       ]
+      ],
+      "zatv": 1,
+      "b": 4,
+      "gusto": 0
+     },
+     {
+      "lin": [
+       [
+        0.87,
+        1.5
+       ],
+       [
+        1.74,
+        2
+       ],
+       [
+        1.74,
+        3
+       ],
+       [
+        0.87,
+        2.5
+       ]
+      ],
+      "zatv": 1,
+      "b": 4,
+      "gusto": 0
+     },
+     {
+      "lin": [
+       [
+        0.87,
+        2.5
+       ],
+       [
+        1.74,
+        3
+       ],
+       [
+        1.74,
+        4
+       ],
+       [
+        0.87,
+        3.5
+       ]
+      ],
+      "zatv": 1,
+      "b": 4,
+      "gusto": 0
+     },
+     {
+      "lin": [
+       [
+        0.87,
+        3.5
+       ],
+       [
+        1.74,
+        4
+       ],
+       [
+        1.74,
+        5
+       ],
+       [
+        0.87,
+        4.5
+       ]
+      ],
+      "zatv": 1,
+      "b": 4,
+      "gusto": 0
+     },
+     {
+      "lin": [
+       [
+        0,
+        0
+       ],
+       [
+        -0.87,
+        0.5
+       ],
+       [
+        -0.87,
+        1.5
+       ],
+       [
+        0,
+        1
+       ]
+      ],
+      "zatv": 1,
+      "b": 2,
+      "gusto": 0
+     },
+     {
+      "lin": [
+       [
+        0,
+        1
+       ],
+       [
+        -0.87,
+        1.5
+       ],
+       [
+        -0.87,
+        2.5
+       ],
+       [
+        0,
+        2
+       ]
+      ],
+      "zatv": 1,
+      "b": 2,
+      "gusto": 0
+     },
+     {
+      "lin": [
+       [
+        0,
+        2
+       ],
+       [
+        -0.87,
+        2.5
+       ],
+       [
+        -0.87,
+        3.5
+       ],
+       [
+        0,
+        3
+       ]
+      ],
+      "zatv": 1,
+      "b": 2,
+      "gusto": 0
+     },
+     {
+      "lin": [
+       [
+        0,
+        3
+       ],
+       [
+        -0.87,
+        3.5
+       ],
+       [
+        -0.87,
+        4.5
+       ],
+       [
+        0,
+        4
+       ]
+      ],
+      "zatv": 1,
+      "b": 2,
+      "gusto": 0
+     },
+     {
+      "lin": [
+       [
+        -0.87,
+        0.5
+       ],
+       [
+        -1.74,
+        1
+       ],
+       [
+        -1.74,
+        2
+       ],
+       [
+        -0.87,
+        1.5
+       ]
+      ],
+      "zatv": 1,
+      "b": 2,
+      "gusto": 0
+     },
+     {
+      "lin": [
+       [
+        -0.87,
+        1.5
+       ],
+       [
+        -1.74,
+        2
+       ],
+       [
+        -1.74,
+        3
+       ],
+       [
+        -0.87,
+        2.5
+       ]
+      ],
+      "zatv": 1,
+      "b": 2,
+      "gusto": 0
+     },
+     {
+      "lin": [
+       [
+        -0.87,
+        2.5
+       ],
+       [
+        -1.74,
+        3
+       ],
+       [
+        -1.74,
+        4
+       ],
+       [
+        -0.87,
+        3.5
+       ]
+      ],
+      "zatv": 1,
+      "b": 2,
+      "gusto": 0
+     },
+     {
+      "lin": [
+       [
+        -0.87,
+        3.5
+       ],
+       [
+        -1.74,
+        4
+       ],
+       [
+        -1.74,
+        5
+       ],
+       [
+        -0.87,
+        4.5
+       ]
+      ],
+      "zatv": 1,
+      "b": 2,
+      "gusto": 0
+     },
+     {
+      "lin": [
+       [
+        -1.74,
+        1
+       ],
+       [
+        -2.61,
+        1.5
+       ],
+       [
+        -2.61,
+        2.5
+       ],
+       [
+        -1.74,
+        2
+       ]
+      ],
+      "zatv": 1,
+      "b": 2,
+      "gusto": 0
+     },
+     {
+      "lin": [
+       [
+        -1.74,
+        2
+       ],
+       [
+        -2.61,
+        2.5
+       ],
+       [
+        -2.61,
+        3.5
+       ],
+       [
+        -1.74,
+        3
+       ]
+      ],
+      "zatv": 1,
+      "b": 2,
+      "gusto": 0
+     },
+     {
+      "lin": [
+       [
+        -1.74,
+        3
+       ],
+       [
+        -2.61,
+        3.5
+       ],
+       [
+        -2.61,
+        4.5
+       ],
+       [
+        -1.74,
+        4
+       ]
+      ],
+      "zatv": 1,
+      "b": 2,
+      "gusto": 0
+     },
+     {
+      "lin": [
+       [
+        -1.74,
+        4
+       ],
+       [
+        -2.61,
+        4.5
+       ],
+       [
+        -2.61,
+        5.5
+       ],
+       [
+        -1.74,
+        5
+       ]
+      ],
+      "zatv": 1,
+      "b": 2,
+      "gusto": 0
+     }
+    ],
+    "bezImena": [
+     "O"
+    ],
+    "velicina": 220
+   },
+   "resenje": [
+    {
+     "t": "Broj kockica ivice $1 cm$ jednak je zapremini u $cm³$."
+    },
+    {
+     "t": "Kvadar se sastoji od $2 · 3 · 4 = 24$ kockice."
+    },
+    {
+     "t": "Zapremina kvadra je proizvod tri dimenzije: $V = a · b · c$."
     }
    ]
   },
@@ -7799,7 +8469,12 @@
    ],
    "resenje": [
     {
-     "t": "$V = B · H = 12 · 10 = 120 cm³$."
+     "t": "$V = B · H = 12 · 10 = 120 cm³$.",
+     "crtez": {
+      "vrsta": "telo",
+      "oblik": "prizma3",
+      "opis": "Zapremina prizme = osnova × visina"
+     }
     }
    ]
   },
@@ -7837,7 +8512,12 @@
      "t": "$V = B · H = 24√{3} · 10 = 240√{3} cm³ ≈ 415,7 cm³$."
     },
     {
-     "t": "Zapremina se dobija množenjem osnove i visine."
+     "t": "Zapremina se dobija množenjem osnove i visine.",
+     "crtez": {
+      "vrsta": "telo",
+      "oblik": "prizma6",
+      "opis": "Šestougaona osnova puta visina"
+     }
     }
    ]
   },
@@ -8251,6 +8931,33 @@
     },
     {
      "t": "Petostrana piramida ima $1$ osnovu + $5$ bočnih = $6$ strana."
+    }
+   ]
+  },
+  {
+   "lekcija": 38,
+   "tezina": 3,
+   "pitanje": "Za svaki konveksni poliedar važi Ojlerova formula $T − I + S = 2$. Četvorostrana piramida ima $5$ temena i $8$ ivica. Koliko ima strana?",
+   "odgovori": [
+    "5",
+    "4",
+    "6",
+    "3"
+   ],
+   "resenje": [
+    {
+     "t": "$5 − 8 + S = 2$, pa je $S = 5$ strana."
+    },
+    {
+     "t": "Provera: $1$ osnova (kvadrat) + $4$ bočna trougla = $5$ strana."
+    },
+    {
+     "t": "Ojlerovu formulu možeš proveriti na modelu piramide od kartona.",
+     "crtez": {
+      "vrsta": "telo",
+      "oblik": "piramida4",
+      "opis": "Temena − ivice + strane = 2"
+     }
     }
    ]
   },
@@ -8947,7 +9654,12 @@
      "t": "$B = 6² = 36 cm²$."
     },
     {
-     "t": "$V = {36 · 8|3} = 96 cm³$."
+     "t": "$V = {36 · 8|3} = 96 cm³$.",
+     "crtez": {
+      "vrsta": "telo",
+      "oblik": "piramida4",
+      "opis": "Zapremina piramide = osnova × visina / 3"
+     }
     }
    ]
   },
@@ -9078,7 +9790,12 @@
    ],
    "resenje": [
     {
-     "t": "$V = {B · H|3} = {9√{3} · 9|3} = 27√{3} cm³ ≈ 46,8 cm³$."
+     "t": "$V = {B · H|3} = {9√{3} · 9|3} = 27√{3} cm³ ≈ 46,8 cm³$.",
+     "crtez": {
+      "vrsta": "telo",
+      "oblik": "piramida3",
+      "opis": "Trostrana osnova"
+     }
     }
    ]
   },
@@ -9094,7 +9811,12 @@
    ],
    "resenje": [
     {
-     "t": "$V = {B · H|3} = {24√{3} · 12|3} = 96√{3} cm³ ≈ 166,3 cm³$."
+     "t": "$V = {B · H|3} = {24√{3} · 12|3} = 96√{3} cm³ ≈ 166,3 cm³$.",
+     "crtez": {
+      "vrsta": "telo",
+      "oblik": "piramida6",
+      "opis": "Šestougaona osnova"
+     }
     }
    ]
   },
@@ -10092,7 +10814,57 @@
      "t": "To je horizontalna prava paralelna $x$-osi."
     },
     {
-     "t": "Ovde je $k = 0$, $n = 3$."
+     "t": "Ovde je $k = 0$, $n = 3$.",
+     "crtez": {
+      "vrsta": "geo",
+      "t": {
+       "O": [
+        0,
+        0
+       ],
+       "N": [
+        0,
+        3
+       ]
+      },
+      "e": [
+       {
+        "mreza": [
+         -4.6,
+         4.6,
+         -0.6,
+         3.6
+        ],
+        "ose": [
+         "x",
+         "y"
+        ],
+        "podela": 1
+       },
+       {
+        "lin": [
+         [
+          -4,
+          3
+         ],
+         [
+          4,
+          3
+         ]
+        ],
+        "b": 1,
+        "id": "p"
+       },
+       {
+        "tacka": "N",
+        "b": 3
+       }
+      ],
+      "bezImena": [
+       "O"
+      ],
+      "velicina": 270
+     }
     }
    ]
   },
@@ -10357,7 +11129,57 @@
      "t": "$x − 2 > 0$, pa je $x > 2$."
     },
     {
-     "t": "Nula je $x = 2$; desno od nule funkcija je pozitivna (jer $k = 1 > 0$)."
+     "t": "Nula je $x = 2$; desno od nule funkcija je pozitivna (jer $k = 1 > 0$).",
+     "crtez": {
+      "vrsta": "geo",
+      "t": {
+       "O": [
+        0,
+        0
+       ],
+       "N": [
+        0,
+        -2
+       ]
+      },
+      "e": [
+       {
+        "mreza": [
+         -2.6,
+         5.6,
+         -4.6,
+         3.6
+        ],
+        "ose": [
+         "x",
+         "y"
+        ],
+        "podela": 1
+       },
+       {
+        "lin": [
+         [
+          -2,
+          -4
+         ],
+         [
+          5,
+          3
+         ]
+        ],
+        "b": 1,
+        "id": "p"
+       },
+       {
+        "tacka": "N",
+        "b": 3
+       }
+      ],
+      "bezImena": [
+       "O"
+      ],
+      "velicina": 270
+     }
     }
    ]
   },
@@ -10379,7 +11201,57 @@
      "t": "Kako je $k = −2 < 0$, funkcija opada: desno od nule (za $x > 4$) je negativna."
     },
     {
-     "t": "Provera: $x = 5$ → $−10 + 8 = −2 < 0$ ✓."
+     "t": "Provera: $x = 5$ → $−10 + 8 = −2 < 0$ ✓.",
+     "crtez": {
+      "vrsta": "geo",
+      "t": {
+       "O": [
+        0,
+        0
+       ],
+       "N": [
+        0,
+        8
+       ]
+      },
+      "e": [
+       {
+        "mreza": [
+         -1.6,
+         6.6,
+         -4.6,
+         10.6
+        ],
+        "ose": [
+         "x",
+         "y"
+        ],
+        "podela": 2
+       },
+       {
+        "lin": [
+         [
+          -1,
+          10
+         ],
+         [
+          6,
+          -4
+         ]
+        ],
+        "b": 1,
+        "id": "p"
+       },
+       {
+        "tacka": "N",
+        "b": 3
+       }
+      ],
+      "bezImena": [
+       "O"
+      ],
+      "velicina": 270
+     }
     }
    ]
   },
@@ -11997,7 +12869,72 @@
    ],
    "resenje": [
     {
-     "t": "$−x + 4 = x$, pa je $2x = 4$ i $x = 2$, $y = 2$."
+     "t": "$−x + 4 = x$, pa je $2x = 4$ i $x = 2$, $y = 2$.",
+     "crtez": {
+      "vrsta": "geo",
+      "t": {
+       "O": [
+        0,
+        0
+       ],
+       "S": [
+        2,
+        2
+       ]
+      },
+      "e": [
+       {
+        "mreza": [
+         -1.5,
+         3.5,
+         -1.5,
+         3.5
+        ],
+        "ose": [
+         "x",
+         "y"
+        ],
+        "podela": 1
+       },
+       {
+        "lin": [
+         [
+          -1.5,
+          5.5
+         ],
+         [
+          3.5,
+          0.5
+         ]
+        ],
+        "b": 1,
+        "id": "p1"
+       },
+       {
+        "lin": [
+         [
+          -1.5,
+          -1.5
+         ],
+         [
+          3.5,
+          3.5
+         ]
+        ],
+        "b": 2,
+        "id": "p2"
+       },
+       {
+        "tacka": "S",
+        "b": 3,
+        "k": 1
+       }
+      ],
+      "bezImena": [
+       "O"
+      ],
+      "velicina": 270
+     }
     }
    ]
   },
@@ -12013,7 +12950,72 @@
    ],
    "resenje": [
     {
-     "t": "$x = −x + 6$, pa je $2x = 6$ i $x = 3$, $y = 3$."
+     "t": "$x = −x + 6$, pa je $2x = 6$ i $x = 3$, $y = 3$.",
+     "crtez": {
+      "vrsta": "geo",
+      "t": {
+       "O": [
+        0,
+        0
+       ],
+       "S": [
+        3,
+        3
+       ]
+      },
+      "e": [
+       {
+        "mreza": [
+         -1.5,
+         4.5,
+         -1.5,
+         4.5
+        ],
+        "ose": [
+         "x",
+         "y"
+        ],
+        "podela": 1
+       },
+       {
+        "lin": [
+         [
+          -1.5,
+          -1.5
+         ],
+         [
+          4.5,
+          4.5
+         ]
+        ],
+        "b": 1,
+        "id": "p1"
+       },
+       {
+        "lin": [
+         [
+          -1.5,
+          7.5
+         ],
+         [
+          4.5,
+          1.5
+         ]
+        ],
+        "b": 2,
+        "id": "p2"
+       },
+       {
+        "tacka": "S",
+        "b": 3,
+        "k": 1
+       }
+      ],
+      "bezImena": [
+       "O"
+      ],
+      "velicina": 270
+     }
     }
    ]
   },
@@ -12029,7 +13031,72 @@
    ],
    "resenje": [
     {
-     "t": "$2x − 1 = x + 1$, pa je $x = 2$ i $y = 3$."
+     "t": "$2x − 1 = x + 1$, pa je $x = 2$ i $y = 3$.",
+     "crtez": {
+      "vrsta": "geo",
+      "t": {
+       "O": [
+        0,
+        0
+       ],
+       "S": [
+        2,
+        3
+       ]
+      },
+      "e": [
+       {
+        "mreza": [
+         -1.5,
+         3.5,
+         -1.5,
+         4.5
+        ],
+        "ose": [
+         "x",
+         "y"
+        ],
+        "podela": 1
+       },
+       {
+        "lin": [
+         [
+          -1.5,
+          -4
+         ],
+         [
+          3.5,
+          6
+         ]
+        ],
+        "b": 1,
+        "id": "p1"
+       },
+       {
+        "lin": [
+         [
+          -1.5,
+          -0.5
+         ],
+         [
+          3.5,
+          4.5
+         ]
+        ],
+        "b": 2,
+        "id": "p2"
+       },
+       {
+        "tacka": "S",
+        "b": 3,
+        "k": 1
+       }
+      ],
+      "bezImena": [
+       "O"
+      ],
+      "velicina": 270
+     }
     }
    ]
   },
@@ -12115,6 +13182,127 @@
     },
     {
      "t": "$y = 2 · 2 − 2 = 2$. Provera: $3(2 + 2) = 12$ i $2 · 2 + 8 = 12$ ✓; $2 · 2 − 2 = 2$ ✓."
+    }
+   ]
+  },
+  {
+   "lekcija": 58,
+   "tezina": 3,
+   "pitanje": "Reši sistem $5x + 4y = 11$ i $2x + 3y = 10$ metodom smene (koeficijenti nisu ni suprotni ni jednaki).",
+   "odgovori": [
+    "$x = −1, y = 4$",
+    "$x = 1, y = −4$",
+    "$x = −1, y = −4$",
+    "$x = 1, y = 4$"
+   ],
+   "resenje": [
+    {
+     "t": "Iz druge jednačine izrazimo $x$: $2x = 10 − 3y$, pa je $x = {10 − 3y|2}$."
+    },
+    {
+     "t": "Uvrstimo u prvu: $5 · {10 − 3y|2} + 4y = 11$."
+    },
+    {
+     "t": "Pomnožimo sa $2$: $5(10 − 3y) + 8y = 22$, tj. $50 − 15y + 8y = 22$."
+    },
+    {
+     "t": "$−7y = −28$, pa je $y = 4$."
+    },
+    {
+     "t": "$x = {10 − 3 · 4|2} = {−2|2} = −1$. Rešenje: $(−1, 4)$."
+    },
+    {
+     "t": "Geometrijski, to je tačka preseka pravih $y = {11 − 5x|4}$ i $y = {10 − 2x|3}$:",
+     "crtez": {
+      "vrsta": "geo",
+      "t": {
+       "O": [
+        0,
+        0
+       ],
+       "S": [
+        -1,
+        4
+       ]
+      },
+      "e": [
+       {
+        "mreza": [
+         -2.5,
+         1.5,
+         -1.5,
+         5.5
+        ],
+        "ose": [
+         "x",
+         "y"
+        ],
+        "podela": 1
+       },
+       {
+        "lin": [
+         [
+          -2.5,
+          5.875
+         ],
+         [
+          1.5,
+          0.875
+         ]
+        ],
+        "b": 1,
+        "id": "p1"
+       },
+       {
+        "lin": [
+         [
+          -2.5,
+          5
+         ],
+         [
+          1.5,
+          2.333
+         ]
+        ],
+        "b": 2,
+        "id": "p2"
+       },
+       {
+        "tacka": "S",
+        "b": 3,
+        "k": 2
+       }
+      ],
+      "bezImena": [
+       "O"
+      ],
+      "velicina": 270
+     }
+    }
+   ]
+  },
+  {
+   "lekcija": 58,
+   "tezina": 3,
+   "pitanje": "Isti sistem $5x + 4y = 11$ i $2x + 3y = 10$ reši sada metodom suprotnih koeficijenata.",
+   "odgovori": [
+    "$x = −1, y = 4$",
+    "$x = 1, y = 4$",
+    "$x = −1, y = −4$",
+    "$x = 1, y = −4$"
+   ],
+   "resenje": [
+    {
+     "t": "Pomnožimo prvu sa $2$, a drugu sa $5$: $10x + 8y = 22$ i $10x + 15y = 50$."
+    },
+    {
+     "t": "Oduzmemo prvu od druge: $7y = 28$, pa je $y = 4$."
+    },
+    {
+     "t": "Uvrstimo u $10x + 8y = 22$: $10x + 32 = 22$, pa je $10x = −10$ i $x = −1$."
+    },
+    {
+     "t": "Provera: $5·(−1) + 4·4 = 11$ ✓ i $2·(−1) + 3·4 = 10$ ✓. Isti rezultat kao metodom smene!"
     }
    ]
   },

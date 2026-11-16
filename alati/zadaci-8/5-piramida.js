@@ -33,6 +33,12 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, telo }) => {
     [K('Ako je $n$-tostrana, ima $2n$ ivica: $2n = 10$, pa je $n = 5$.'),
      K('Petostrana piramida ima $1$ osnovu + $5$ bočnih = $6$ strana.')]);
 
+  Z(3, 'Za svaki konveksni poliedar važi Ojlerova formula $T − I + S = 2$. Četvorostrana piramida ima $5$ temena i $8$ ivica. Koliko ima strana?',
+    ['5', '4', '6', '3'],
+    [K('$5 − 8 + S = 2$, pa je $S = 5$ strana.'),
+     K('Provera: $1$ osnova (kvadrat) + $4$ bočna trougla = $5$ strana.'),
+     K('Ojlerovu formulu možeš proveriti na modelu piramide od kartona.', [], telo('piramida4', { opis: 'Temena − ivice + strane = 2' }))]);
+
   // ════════════════ 5.2 Mreža piramide ════════════════
   L('Mreža piramide');
 
@@ -114,7 +120,7 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, telo }) => {
   Z(2, 'Pravilna četvorostrana piramida ima osnovnu ivicu $6 cm$ i visinu $8 cm$. Kolika joj je zapremina?',
     ['$96 cm³$', '$288 cm³$', '$144 cm³$', '$48 cm³$'],
     [K('$B = 6² = 36 cm²$.'),
-     K('$V = {36 · 8|3} = 96 cm³$.')]);
+     K('$V = {36 · 8|3} = 96 cm³$.', [], telo('piramida4', { opis: 'Zapremina piramide = osnova × visina / 3' }))]);
 
   Z(3, 'Zapremina piramide je $100 cm³$, a površina osnove $25 cm²$. Kolika joj je visina?',
     ['$12 cm$', '$4 cm$', '$75 cm$', '$25 cm$'],
@@ -126,11 +132,11 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, telo }) => {
 
   Z(2, 'Pravilna trostrana piramida ima osnovnu ivicu $6 cm$ i visinu $9 cm$. Površina osnove je $9√{3} cm²$. Kolika je zapremina?',
     ['$27√{3} cm³$', '$81√{3} cm³$', '$27 cm³$', '$54√{3} cm³$'],
-    [K('$V = {B · H|3} = {9√{3} · 9|3} = 27√{3} cm³ ≈ 46,8 cm³$.')]);
+    [K('$V = {B · H|3} = {9√{3} · 9|3} = 27√{3} cm³ ≈ 46,8 cm³$.', [], telo('piramida3', { opis: 'Trostrana osnova' }))]);
 
   Z(2, 'Pravilna šestostrana piramida ima osnovu površine $24√{3} cm²$ i visinu $12 cm$. Kolika je zapremina?',
     ['$96√{3} cm³$', '$288√{3} cm³$', '$96 cm³$', '$32√{3} cm³$'],
-    [K('$V = {B · H|3} = {24√{3} · 12|3} = 96√{3} cm³ ≈ 166,3 cm³$.')]);
+    [K('$V = {B · H|3} = {24√{3} · 12|3} = 96√{3} cm³ ≈ 166,3 cm³$.', [], telo('piramida6', { opis: 'Šestougaona osnova' }))]);
 
   Z(3, 'Keopsova piramida je približno pravilna četvorostrana piramida osnovne ivice $230 m$ i visine $146 m$. Kolika joj je približna zapremina?',
     ['$2,57$ miliona $m³$', '$7,7$ miliona $m³$', '$1,1$ milion $m³$', '$3,4$ miliona $m³$'],
