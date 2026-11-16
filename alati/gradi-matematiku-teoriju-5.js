@@ -20,6 +20,11 @@ const proveri = (uslov, opis) => { if (!uslov) throw new Error('Netačan račun:
 
 function dodaj(p) {
   if (!lek) throw new Error('Pitanje pre nego što je izabrana lekcija (L): ' + p.pitanje);
+  p.pitanje = srediMatematiku(p.pitanje);
+  if (p.odgovori) p.odgovori = p.odgovori.map(srediMatematiku);
+  if (p.zanimljivost) p.zanimljivost = srediMatematiku(p.zanimljivost);
+  if (p.objasnjenje) p.objasnjenje = srediMatematiku(p.objasnjenje);
+  if (p.parovi) p.parovi = p.parovi.map((x) => x.map(srediMatematiku));
   if (p.vrsta === 'spoji') {
     if (new Set(p.parovi.map((x) => x[0].trim().toLowerCase())).size !== p.parovi.length) throw new Error('spoji: ponovljeni levi pojmovi: ' + p.pitanje);
     if (new Set(p.parovi.map((x) => x[1].trim().toLowerCase())).size !== p.parovi.length) throw new Error('spoji: ponovljeni desni pojmovi: ' + p.pitanje);
@@ -45,6 +50,42 @@ function S(tezina, pitanje, parovi, zanimljivost, rec, x = {}) {
   dodaj({ vrsta: 'spoji', tezina, pitanje, ...(x.mediji ? { mediji: x.mediji } : {}), parovi, zanimljivost, rec });
 }
 
+// Zajedničke LaTeX → Unicode zamene: sve komande koje klijent NE ume sam da prikaže
+// pretvaramo u odgovarajući znak, da se nigde ne vidi sirovo „\cdot“, „\frac“…
+function unicodeLaTeX(s) {
+  return s
+    .replace(/\\notin/g, '∉')
+    .replace(/\\in/g, '∈')
+    .replace(/\\varnothing/g, '∅')
+    .replace(/\\mathbb\{N\}/g, 'ℕ')
+    .replace(/\\mathbb\{Z\}/g, 'ℤ')
+    .replace(/\\mathbb\{Q\}/g, 'ℚ')
+    .replace(/\\mathbb\{R\}/g, 'ℝ')
+    .replace(/\\cup/g, '∪')
+    .replace(/\\cap/g, '∩')
+    .replace(/\\setminus/g, '∖')
+    .replace(/\\parallel/g, '∥')
+    .replace(/\\perp/g, '⊥')
+    .replace(/\\angle/g, '∠')
+    .replace(/\\Rightarrow/g, '⇒')
+    .replace(/\\Leftrightarrow/g, '⇔')
+    .replace(/\\dots/g, '…')
+    .replace(/\\neq/g, '≠')
+    .replace(/\\ne/g, '≠')
+    .replace(/\\ge/g, '≥')
+    .replace(/\\le/g, '≤')
+    .replace(/\\times/g, '×')
+    .replace(/\\cdot/g, '·')
+    .replace(/\\to/g, '→')
+    .replace(/\\star/g, '★')
+    .replace(/\\approx/g, '≈')
+    .replace(/\\alpha/g, 'α')
+    .replace(/\\%/g, '%')
+    .replace(/\\!/g, '')
+    .replace(/\\,/g, '.')
+    .replace(/_\{?0\}?/g, '₀');
+}
+
 // Medij „formula“ klijent prikazuje kao običan tekst (.formula) – ne prolazi kroz matematički
 // renderer kao tekst pitanja. Zato se LaTeX iz $…$ ovde pretvara u Unicode znakove (bez $).
 function srediFormulu(t) {
@@ -54,18 +95,20 @@ function srediFormulu(t) {
     const slozen = (x) => /[+\-:·\\\s]/.test(x);
     return (slozen(a) ? `(${a})` : a) + '/' + (slozen(b) ? `(${b})` : b);
   });
-  s = s.replace(/\\cdot/g, ' · ');
-  s = s.replace(/\\in/g, '∈').replace(/\\varnothing/g, '∅');
-  s = s.replace(/\\mathbb\{N\}/g, 'ℕ');
-  s = s.replace(/\\cup/g, '∪').replace(/\\cap/g, '∩').replace(/\\setminus/g, '∖');
-  s = s.replace(/\\parallel/g, '∥').replace(/\\perp/g, '⊥');
-  s = s.replace(/\\angle/g, '∠').replace(/\\Rightarrow/g, '⇒').replace(/\\dots/g, '…');
+  s = unicodeLaTeX(s);
   s = s.replace(/\\vec\{([^{}]*)\}/g, '$1');
-  s = s.replace(/\\\{/g, '{').replace(/\\\}/g, '}').replace(/\\%/g, '%');
-  s = s.replace(/\\!/g, '');
-  s = s.replace(/_\{?0\}?/g, '₀');
+  s = s.replace(/\\\{/g, '{').replace(/\\\}/g, '}');
   s = s.replace(/\s*([+=])\s*/g, ' $1 ').replace(/\s*-\s*/g, ' − ');
   return s.replace(/\s+/g, ' ').trim();
+}
+
+// Tekst pitanja/odgovora/zanimljivosti prolazi kroz matTekst (public/app.js), koji ume:
+// \vec{}, √{}, ^{}, _{}, {a|b}, \|, \{, \}. Zato njih ostavljamo, a sav ostali LaTeX
+// pretvaramo u Unicode (razlomak \frac{X}{Y} → {X|Y}, što matTekst crta kao razlomak).
+function srediMatematiku(t) {
+  let s = String(t);
+  s = s.replace(/\\frac\{([^{}]*)\}\{([^{}]*)\}/g, '{$1|$2}');
+  return unicodeLaTeX(s);
 }
 
 const O = {

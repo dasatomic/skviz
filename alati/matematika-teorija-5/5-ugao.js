@@ -4,7 +4,11 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, uglomer, O, bez }) => {
   // ugao sa temenom A, krakovima AB (udesno) i AC pod datim stepenom
   const ugao = (stepen, { o = '', pu = false, b = 0, teme = false } = {}) => {
     const t = { A: [0, 0], B: [4, 0], C: naKrugu([0, 0], 4, stepen) };
-    const e = [{ u: 'BAC', b, ...(o ? { o } : {}) }];
+    const e = [
+      { d: 'AB', b, debljina: 3 },
+      { d: 'AC', b, debljina: 3 },
+      { u: 'BAC', b, ...(o ? { o } : {}) },
+    ];
     if (pu) e.push({ pu: 'BAC' });
     if (teme) e.push({ tacka: 'A', b: 1 });
     return G(t, e, { velicina: 240 });
@@ -55,11 +59,11 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, uglomer, O, bez }) => {
   Q(2, 'Kada su dva ugla jednaka?',
     ['Kada se mogu potpuno preklopiti', 'Kada imaju isto teme', 'Kada su oštri', 'Kada su naslikana istom bojom'],
     'Dva ugla su jednaka ako im je „razmak“ krakova isti – mogu se preklopiti jedan preko drugog. Veličina ugla ne zavisi od dužine krakova.', 'jednakost',
-    { mediji: G({ A: [-4, 0], B: [-1, 0], C: naKrugu([-4, 0], 3, 50), D: [1, 0], E: [4, 0], F: naKrugu([1, 0], 3, 50) }, [{ u: 'BAC', b: 1 }, { u: 'EDF', b: 1 }], { velicina: 280 }) });
+    { mediji: G({ A: [-4, 0], B: [-1, 0], C: naKrugu([-4, 0], 3, 50), D: [1, 0], E: [4, 0], F: naKrugu([1, 0], 3, 50) }, [{ d: 'AB', b: 1, debljina: 3 }, { d: 'AC', b: 1, debljina: 3 }, { d: 'DE', b: 1, debljina: 3 }, { d: 'DF', b: 1, debljina: 3 }, { u: 'BAC', b: 1 }, { u: 'EDF', b: 1 }], { velicina: 280 }) });
   Q(3, 'Šta se dešava sa uglom ako mu krake produžiš?',
     ['Ugao ostaje isti', 'Ugao se povećava', 'Ugao se smanjuje', 'Ugao postaje prav'],
     'Dužina krakova ne utiče na veličinu ugla – bitan je samo razmak između krakova. Produženi kraci čine isti ugao.', 'ugao',
-    { mediji: G({ A: [0, 0], B: [4, 0], C: naKrugu([0, 0], 4, 50), "B'": [-2, 0], "C'": naKrugu([0, 0], 2.5, 230) }, [{ u: 'BAC', b: 1 }, { d: "B'A", b: 4, isp: 1 }, { d: "AC'", b: 4, isp: 1 }], { velicina: 260 }) });
+    { mediji: G({ A: [0, 0], B: [4, 0], C: naKrugu([0, 0], 4, 50), "B'": [-2, 0], "C'": naKrugu([0, 0], 2.5, 230) }, [{ d: 'AB', b: 1, debljina: 3 }, { d: 'AC', b: 1, debljina: 3 }, { u: 'BAC', b: 1 }, { d: "B'A", b: 4, isp: 1 }, { d: "AC'", b: 4, isp: 1 }], { velicina: 260 }) });
 
   // ── 27. prenošenje i nadovezivanje uglova ──
   L('Prenošenje i nadovezivanje uglova');
@@ -70,19 +74,19 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, uglomer, O, bez }) => {
   Q(1, 'Šta znači NADOVEZATI uglove?',
     ['Postaviti jedan ugao uz drugi, krak do kraka', 'Postaviti ih jedan preko drugog', 'Nacrtati ih daleko', 'Sabrati im temena'],
     'Nadovezivanje: jedan krak drugog ugla postavimo na krak prvog, tako da se uglovi nastave jedan na drugi. Njihove veličine se tada sabiraju.', 'ugao',
-    { mediji: G({ O: [0, 0], A: [4, 0], B: naKrugu([0, 0], 4, 40), C: naKrugu([0, 0], 4, 75) }, [{ u: 'AOB', b: 1, o: '40°' }, { u: 'BOC', b: 2, o: '35°' }, { tx: 'O', at: [0, -0.5], vel: 15 }], { bezImena: ['O'], velicina: 260 }) });
+    { mediji: G({ O: [0, 0], A: [4, 0], B: naKrugu([0, 0], 4, 40), C: naKrugu([0, 0], 4, 75) }, [{ d: 'OA', b: 0, debljina: 3 }, { d: 'OB', b: 0, debljina: 3 }, { d: 'OC', b: 0, debljina: 3 }, { u: 'AOB', b: 1, o: '40°' }, { u: 'BOC', b: 2, o: '35°' }, { tx: 'O', at: [0, -0.5], vel: 15 }], { bezImena: ['O'], velicina: 260 }) });
   Q(2, 'Nadovežeš ugao od 30° na ugao od 40°. Koliki je zbirni ugao?',
     ['70°', '60°', '80°', '10°'],
     'Nadovezivanjem se uglovi sabiraju: $30° + 40° = 70°$.', 'ugao',
-    { mediji: G({ O: [0, 0], A: [4, 0], B: naKrugu([0, 0], 4, 30), C: naKrugu([0, 0], 4, 70) }, [{ u: 'AOB', b: 1, o: '30°' }, { u: 'BOC', b: 2, o: '40°' }, { tx: 'O', at: [0, -0.5], vel: 15 }], { velicina: 260 }) });
+    { mediji: G({ O: [0, 0], A: [4, 0], B: naKrugu([0, 0], 4, 30), C: naKrugu([0, 0], 4, 70) }, [{ d: 'OA', b: 0, debljina: 3 }, { d: 'OB', b: 0, debljina: 3 }, { d: 'OC', b: 0, debljina: 3 }, { u: 'AOB', b: 1, o: '30°' }, { u: 'BOC', b: 2, o: '40°' }, { tx: 'O', at: [0, -0.5], vel: 15 }], { ...bez, velicina: 260 }) });
   Q(2, 'Ugao od 80° podeljen je na dva dela. Jedan deo ima 30°, koliki je drugi?',
     ['50°', '60°', '40°', '110°'],
     'Delovi se dopunjuju do celog ugla: $80° - 30° = 50°$.', 'ugao',
-    { mediji: G({ O: [0, 0], A: [4, 0], B: naKrugu([0, 0], 4, 30), C: naKrugu([0, 0], 4, 80) }, [{ u: 'AOC', b: 4 }, { u: 'AOB', b: 1, o: '30°' }, { u: 'BOC', b: 2, o: '50°' }], { ...bez, velicina: 260 }) });
+    { mediji: G({ O: [0, 0], A: [4, 0], B: naKrugu([0, 0], 4, 30), C: naKrugu([0, 0], 4, 80) }, [{ d: 'OA', b: 0, debljina: 3 }, { d: 'OB', b: 0, debljina: 3 }, { d: 'OC', b: 0, debljina: 3 }, { u: 'AOC', b: 4 }, { u: 'AOB', b: 1, o: '30°' }, { u: 'BOC', b: 2, o: '50°' }], { ...bez, velicina: 260 }) });
   Q(3, 'Dva jednaka ugla nadovezana daju ugao od 90°. Koliki je svaki?',
     ['45°', '30°', '60°', '90°'],
     'Ako su jednaki i zajedno daju 90°, svaki je polovina: $90° : 2 = 45°$. To je polovina pravog ugla.', 'ugao',
-    { mediji: G({ O: [0, 0], A: [4, 0], B: naKrugu([0, 0], 4, 45), C: naKrugu([0, 0], 4, 90) }, [{ u: 'AOC', b: 4 }, { u: 'AOB', b: 1, o: '45°' }, { u: 'BOC', b: 2, o: '45°' }, { pu: 'AOC' }], { ...bez, velicina: 260 }) });
+    { mediji: G({ O: [0, 0], A: [4, 0], B: naKrugu([0, 0], 4, 45), C: naKrugu([0, 0], 4, 90) }, [{ d: 'OA', b: 0, debljina: 3 }, { d: 'OB', b: 0, debljina: 3 }, { d: 'OC', b: 0, debljina: 3 }, { u: 'AOC', b: 4 }, { u: 'AOB', b: 1, o: '45°' }, { u: 'BOC', b: 2, o: '45°' }, { pu: 'AOC' }], { ...bez, velicina: 260 }) });
 
   S(1, 'Spoji vrstu ugla sa brojem stepeni.',
     [['Prav', '90°'], ['Opružen', '180°'], ['Pun', '360°'], ['Oštar', 'manji od 90°']],
