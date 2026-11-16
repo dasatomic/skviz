@@ -1,5 +1,5 @@
 // Prizma — 8. razred: pojam, dijagonale, mreža, površina i zapremina.
-module.exports = ({ L, Z, G, K, proveri, r, S3, telo, A }) => {
+module.exports = ({ L, Z, G, K, proveri, r, S3, telo, A, kocke }) => {
 
   // ════════════════ 4.1 Pojam, vrste i elementi prizme ════════════════
   L('Pojam, vrste i elementi prizme');
@@ -33,6 +33,12 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, telo, A }) => {
     [K('Ako prizma ima $8$ strana, to je $8 − 2 = 6$ bočnih, pa je osnova šestougao ($n = 6$).'),
      K('Broj ivica: $3n = 3 · 6 = 18$.'),
      K('Provera: $2$ osnove po $6$ + $6$ bočnih = $12 + 6 = 18$ ✓')]);
+
+  Z(3, 'Za svaki konveksni poliedar važi Ojlerova formula $T − I + S = 2$ (temena − ivice + strane). Koliko temena ima prizma sa $12$ ivica i $6$ strana?',
+    ['8', '6', '10', '12'],
+    [K('$T − 12 + 6 = 2$, pa je $T = 8$ temena.'),
+     K('To je četvorostrana prizma: $8$ temena, $12$ ivica, $6$ strana.'),
+     K('Ojlerovu formulu možeš proveriti na modelu od kartona – izbroj temena, ivice i strane!', [], telo('prizma4', { opis: 'Temena − ivice + strane = 2' }))]);
 
   // ════════════════ 4.2 Dijagonale prizme i dijagonalni presek ════════════════
   L('Dijagonale prizme i dijagonalni presek');
@@ -162,7 +168,15 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, telo, A }) => {
   Z(1, 'Kolika je zapremina kocke ivice $9 cm$?',
     ['$729 cm³$', '$81 cm³$', '$243 cm³$', '$27 cm³$'],
     [K('$V = a³ = 9³ = 729 cm³$.'),
-     K('Površina bi bila $6 · 81 = 486 cm²$.')]);
+     K('Površina bi bila $6 · 81 = 486 cm²$.'),
+     K('Zapreminu kocke možemo zamisliti i kao kockice od $1 cm³$: $9$ redova × $9$ kolona × $9$ slojeva.', [], telo('kocka', { opis: 'Zapremina kocke: a · a · a' }))]);
+
+  Z(1, 'Kvadar se sastoji od $24$ kockice ivice $1 cm$, raspoređene kao $2 × 3 × 4$. Kolika mu je zapremina?',
+    ['$24 cm³$', '$9 cm³$', '$48 cm³$', '$12 cm³$'],
+    [K('Broj kockica ivice $1 cm$ jednak je zapremini u $cm³$.'),
+     K('Kvadar se sastoji od $2 · 3 · 4 = 24$ kockice.'),
+     K('Zapremina kvadra je proizvod tri dimenzije: $V = a · b · c$.')],
+    kocke(2, 3, 4));
 
   Z(2, 'Kvadar ima dimenzije $5 cm$, $4 cm$ i $10 cm$. Kolika mu je zapremina?',
     ['$200 cm³$', '$100 cm³$', '$20 cm³$', '$50 cm³$'],
@@ -184,7 +198,7 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, telo, A }) => {
 
   Z(1, 'Prava trostrana prizma ima osnovu površine $12 cm²$ i visinu $10 cm$. Kolika joj je zapremina?',
     ['$120 cm³$', '$40 cm³$', '$60 cm³$', '$1,2 cm³$'],
-    [K('$V = B · H = 12 · 10 = 120 cm³$.')]);
+    [K('$V = B · H = 12 · 10 = 120 cm³$.', [], telo('prizma3', { opis: 'Zapremina prizme = osnova × visina' }))]);
 
   Z(2, 'Osnova prave prizme je pravougli trougao sa katetama $6 cm$ i $8 cm$, a visina prizme je $15 cm$. Kolika je zapremina?',
     ['$360 cm³$', '$240 cm³$', '$720 cm³$', '$180 cm³$'],
@@ -194,7 +208,7 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, telo, A }) => {
   Z(2, 'Pravilna šestostrana prizma ima ivicu osnove $4 cm$, visinu $10 cm$, a površina njene osnove je $24√{3} cm²$. Kolika je zapremina?',
     ['$240√{3} cm³$', '$240 cm³$', '$96√{3} cm³$', '$120√{3} cm³$'],
     [K('$V = B · H = 24√{3} · 10 = 240√{3} cm³ ≈ 415,7 cm³$.'),
-     K('Zapremina se dobija množenjem osnove i visine.')]);
+     K('Zapremina se dobija množenjem osnove i visine.', [], telo('prizma6', { opis: 'Šestougaona osnova puta visina' }))]);
 
   Z(3, 'Kolika je površina osnove pravilne šestostrane prizme ivice $a$, ako se šestougao sastoji od $6$ jednakostraničnih trouglova?',
     ['$B = {3a²√{3}|2}$', '$B = 6a²$', '$B = 3a²$', '$B = {a²√{3}|4}$'],

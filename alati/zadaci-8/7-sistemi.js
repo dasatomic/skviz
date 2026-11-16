@@ -127,6 +127,22 @@ module.exports = ({ L, Z, G, K, proveri, r, dvePrave, grafik, A }) => {
      K('$x + 6x − 6 = 8$, pa je $7x = 14$ i $x = 2$.'),
      K('$y = 2 · 2 − 2 = 2$. Provera: $3(2 + 2) = 12$ i $2 · 2 + 8 = 12$ ✓; $2 · 2 − 2 = 2$ ✓.')]);
 
+  Z(3, 'Reši sistem $5x + 4y = 11$ i $2x + 3y = 10$ metodom smene (koeficijenti nisu ni suprotni ni jednaki).',
+    ['$x = −1, y = 4$', '$x = 1, y = −4$', '$x = −1, y = −4$', '$x = 1, y = 4$'],
+    [K('Iz druge jednačine izrazimo $x$: $2x = 10 − 3y$, pa je $x = {10 − 3y|2}$.'),
+     K('Uvrstimo u prvu: $5 · {10 − 3y|2} + 4y = 11$.'),
+     K('Pomnožimo sa $2$: $5(10 − 3y) + 8y = 22$, tj. $50 − 15y + 8y = 22$.'),
+     K('$−7y = −28$, pa je $y = 4$.'),
+     K('$x = {10 − 3 · 4|2} = {−2|2} = −1$. Rešenje: $(−1, 4)$.'),
+     K('Geometrijski, to je tačka preseka pravih $y = {11 − 5x|4}$ i $y = {10 − 2x|3}$:', [], dvePrave(-5 / 4, 11 / 4, -2 / 3, 10 / 3, { podela: 1, kS: 2 }))]);
+
+  Z(3, 'Isti sistem $5x + 4y = 11$ i $2x + 3y = 10$ reši sada metodom suprotnih koeficijenata.',
+    ['$x = −1, y = 4$', '$x = 1, y = 4$', '$x = −1, y = −4$', '$x = 1, y = −4$'],
+    [K('Pomnožimo prvu sa $2$, a drugu sa $5$: $10x + 8y = 22$ i $10x + 15y = 50$.'),
+     K('Oduzmemo prvu od druge: $7y = 28$, pa je $y = 4$.'),
+     K('Uvrstimo u $10x + 8y = 22$: $10x + 32 = 22$, pa je $10x = −10$ i $x = −1$.'),
+     K('Provera: $5·(−1) + 4·4 = 11$ ✓ i $2·(−1) + 3·4 = 10$ ✓. Isti rezultat kao metodom smene!')]);
+
   // ════════════════ 7.7 Primena sistema ════════════════
   L('Primena sistema linearnih jednačina');
 
@@ -264,13 +280,13 @@ module.exports = ({ L, Z, G, K, proveri, r, dvePrave, grafik, A }) => {
     [K('$x + 2 = 2x$, pa je $x = 2$ i $y = 4$.')]);
   Z(2, 'Prave $y = −x + 4$ i $y = x$ seku se u tački:',
     ['(2, 2)', '(4, 0)', '(2, 4)', '(0, 4)'],
-    [K('$−x + 4 = x$, pa je $2x = 4$ i $x = 2$, $y = 2$.')]);
+    [K('$−x + 4 = x$, pa je $2x = 4$ i $x = 2$, $y = 2$.', [], dvePrave(-1, 4, 1, 0, { podela: 1 }))]);
   Z(3, 'Sistem $y = x$ i $y = −x + 6$ ima rešenje:',
     ['(3, 3)', '(2, 4)', '(4, 2)', '(1, 5)'],
-    [K('$x = −x + 6$, pa je $2x = 6$ i $x = 3$, $y = 3$.')]);
+    [K('$x = −x + 6$, pa je $2x = 6$ i $x = 3$, $y = 3$.', [], dvePrave(1, 0, -1, 6, { podela: 1 }))]);
   Z(3, 'Prave $y = 2x − 1$ i $y = x + 1$ seku se u tački:',
     ['(2, 3)', '(3, 5)', '(1, 2)', '(2, 1)'],
-    [K('$2x − 1 = x + 1$, pa je $x = 2$ i $y = 3$.')]);
+    [K('$2x − 1 = x + 1$, pa je $x = 2$ i $y = 3$.', [], dvePrave(2, -1, 1, 1, { podela: 1 }))]);
   Z(2, 'Sistem $y = x + 1$ i $y = x − 1$…',
     ['nema rešenja (prave su paralelne)', 'ima rešenje (0, 1)', 'ima rešenje (1, 0)', 'ima beskonačno mnogo rešenja'],
     [K('Obe prave imaju $k = 1$ – paralelne su.'),

@@ -104,7 +104,7 @@ module.exports = ({ L, Z, G, K, proveri, r, grafik, prava, A }) => {
     ['horizontalna prava', 'vertikalna prava', 'kosa prava', 'parabola'],
     [K('$y = 3$ znači da je $y$ uvek $3$, bez obzira na $x$.'),
      K('To je horizontalna prava paralelna $x$-osi.'),
-     K('Ovde je $k = 0$, $n = 3$.')]);
+     K('Ovde je $k = 0$, $n = 3$.', [], grafik(0, 3, { nagib: false, podela: 1 }))]);
 
   Z(2, 'Koje dve funkcije imaju paralelne grafike?',
     ['$y = 2x + 1$ i $y = 2x − 3$', '$y = 2x + 1$ i $y = −2x + 1$', '$y = x + 1$ i $y = 2x + 1$', '$y = 2x$ i $y = 2$'],
@@ -133,13 +133,13 @@ module.exports = ({ L, Z, G, K, proveri, r, grafik, prava, A }) => {
   Z(2, 'Za koje $x$ je funkcija $y = x − 2$ pozitivna?',
     ['$x > 2$', '$x < 2$', '$x > 0$', '$x < 0$'],
     [K('$x − 2 > 0$, pa je $x > 2$.'),
-     K('Nula je $x = 2$; desno od nule funkcija je pozitivna (jer $k = 1 > 0$).')]);
+     K('Nula je $x = 2$; desno od nule funkcija je pozitivna (jer $k = 1 > 0$).', [], grafik(1, -2, { od: -2, do: 5, podela: 1 }))]);
 
   Z(3, 'Funkcija $y = −2x + 8$ je negativna za…',
     ['$x > 4$', '$x < 4$', '$x > −4$', '$x < −4$'],
     [K('Nula: $−2x + 8 = 0$, pa je $x = 4$.'),
      K('Kako je $k = −2 < 0$, funkcija opada: desno od nule (za $x > 4$) je negativna.'),
-     K('Provera: $x = 5$ → $−10 + 8 = −2 < 0$ ✓.')]);
+     K('Provera: $x = 5$ → $−10 + 8 = −2 < 0$ ✓.', [], grafik(-2, 8, { od: -1, do: 6, podela: 2 }))]);
 
   // ════════════════ 6.7 Rast i opadanje linearne funkcije ════════════════
   L('Rast i opadanje linearne funkcije');
