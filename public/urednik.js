@@ -34,7 +34,7 @@ function poruka(t, ms = 2600) {
 function mat(t) {
   // kviz o programiranju ("kod": "rust" | "tla"): $…$ je obojen kôd, kao u igri
   if (kviz?.kod) return String(t ?? '').split(/\$([^$]+)\$/).map((d, i) => (i % 2 ? `<code class="kod-uz">${window.Mediji.bojiKod(d, kviz.kod)}</code>` : esc(d).replace(/\n/g, '<br>'))).join('');
-  return esc(t).replace(/\$([^$]+)\$/g, (_, m) => `<span class="mat">${m}</span>`).replace(/\n/g, '<br>');
+  return window.Mediji.matTekst(t);
 }
 
 // ───── adresa (hash): #paket=razred5-biologija&lekcija=3&pitanje=12 | pitanje=novo | #oblast=biologija ─────

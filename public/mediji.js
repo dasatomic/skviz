@@ -854,6 +854,21 @@ const KOD_JEZICI = {
     op: /^(\\[A-Za-z]+|[∧∨¬≜∈∉⊆⊂∪∩↦→←⇒≡□◇≠≤≥×∀∃′⟨⟩#]+)/, // \in, \A, \cup…, unicode simboli
   },
 };
+// tekst sa matematikom ($…$) – zajedničko za igru (app.js) i urednik (urednik.js), opis oznaka je u app.js
+function matTekst(t) {
+  return esc(t).replace(/\$([^$]+)\$/g, (_, m) => {
+    let x = m.replace(/\\\|/g, '\u0001').replace(/\\\{/g, '\u0002').replace(/\\\}/g, '\u0003'), pre;
+    do {
+      pre = x;
+      x = x.replace(/√\{([^{}]*)\}/g, '√<span class="pod-korenom">$1</span>').replace(/\\vec\{([^{}]*)\}/g, '<span class="vektor">$1</span>')
+        .replace(/\^\{([^{}|]*)\}/g, '<sup>$1</sup>').replace(/_\{([^{}|]*)\}/g, '<sub>$1</sub>')
+        .replace(/\{([^{}|]*)\|([^{}|]*)\}/g, '<span class="razlomak"><span>$1</span><span>$2</span></span>');
+    } while (x !== pre);
+    x = x.replace(/\u0001/g, '|').replace(/\u0002/g, '{').replace(/\u0003/g, '}');
+    return `<span class="mat">${x}</span>`;
+  }).replace(/\n/g, '<br>');
+}
+
 function bojiKod(tekst, jezik) {
   const J = KOD_JEZICI[jezik] || KOD_JEZICI.rust;
   const out = [];
@@ -1013,9 +1028,9 @@ function prikaziMedij(kontejner, m, { auto = false, paket = '', kod = null } = {
     if (r && r.then) r.then((c) => (ciscenje = c || ciscenje)).catch((e) => console.error(e));
     else if (typeof r === 'function') ciscenje = r;
   } catch (e) { console.error(e); }
-  if (m.opis) kontejner.insertAdjacentHTML('beforeend', `<div class="medij-opis">${esc(m.opis)}</div>`);
+  if (m.opis) kontejner.insertAdjacentHTML('beforeend', `<div class="medij-opis">${matTekst(m.opis)}</div>`);
   return () => ciscenje();
 }
 
-window.Mediji = { prikaziMedij, Zvuk, MOLEKULI, bojiKod };
+window.Mediji = { prikaziMedij, Zvuk, MOLEKULI, bojiKod, matTekst };
 })();

@@ -190,7 +190,7 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, telo, A, kocke }) => {
 
   Z(3, 'Kocka ima zapreminu $125 cm³$. Kolika je njena ivica?',
     ['$5 cm$', '$25 cm$', '$12,5 cm$', '$5√{5} cm$'],
-    [K('$a³ = 125$, pa je $a = √[3]{125} = 5 cm$ (jer je $5³ = 125$).'),
+    [K('$a³ = 125$, pa je $a = ∛125 = 5 cm$ (jer je $5³ = 125$).'),
      K('Površina te kocke je $6 · 25 = 150 cm²$.')]);
 
   // ════════════════ 4.7 Zapremina trostrane i šestostrane prizme ════════════════

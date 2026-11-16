@@ -191,7 +191,7 @@ module.exports = ({ L, Z, G, K, proveri, r, grafik, prava, A }) => {
 
   Z(2, 'Prava prolazi kroz tačke $(1, 2)$ i $(3, 6)$. Koliki joj je koeficijent pravca?',
     ['2', '3', '${1|2}$', '4'],
-    [K('$k = {y_2 − y_1|x_2 − x_1} = {6 − 2|3 − 1} = {4|2} = 2$.')]);
+    [K('$k = {y_{2} − y_{1}|x_{2} − x_{1}} = {6 − 2|3 − 1} = {4|2} = 2$.')]);
 
   Z(3, 'Prava prolazi kroz $(0, 3)$ i $(2, 5)$. Gde seče $x$-osu?',
     ['U $x = −3$', 'U $x = 3$', 'U $x = −1,5$', 'U $x = 1,5$'],

@@ -253,7 +253,7 @@ module.exports = ({ L, Z, G, K, proveri, r, telo, A }) => {
     ['$2 : 3$', '$1 : 2$', '$1 : 3$', '$3 : 4$'],
     [K('Lopta ima poluprečnik $r$ (jer je visina valjka $2r$).'),
      K('$V_{lopte} = {4r³π|3}$, $V_{valjka} = r²π · 2r = 2r³π$.'),
-     K('Odnos: ${{4r³π|3}|{2r³π}} = {4|3} · {1|2} = {2|3} = 2 : 3$.')]);
+     K('Odnos: ${{4r³π|3}|2r³π} = {4|3} · {1|2} = {2|3} = 2 : 3$.')]);
 
   Z(3, 'Lopta poluprečnika $5 cm$ upisana je u valjak. Kolika je zapremina valjka? (Uzmi $π ≈ 3,14$.)',
     ['$785 cm³$', '$523,3 cm³$', '$1570 cm³$', '$392,5 cm³$'],

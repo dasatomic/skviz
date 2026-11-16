@@ -66,23 +66,23 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, telo }) => {
     [K('Piramida ima jednu osnovu, pa je $P = B + M$ (osnova + omotač).'),
      K('Omotač je zbir površina svih bočnih trouglova.')]);
 
-  Z(2, 'Pravilna četvorostrana piramida ima osnovnu ivicu $a = 6 cm$ i apotemu $h_a = 5 cm$. Kolika je površina omotača?',
+  Z(2, 'Pravilna četvorostrana piramida ima osnovnu ivicu $a = 6 cm$ i apotemu $h_{a} = 5 cm$. Kolika je površina omotača?',
     ['$60 cm²$', '$120 cm²$', '$30 cm²$', '$150 cm²$'],
-    [K('Omotač su $4$ podudarna trougla, svaki površine ${a · h_a|2}$.'),
+    [K('Omotač su $4$ podudarna trougla, svaki površine ${a · h_{a}|2}$.'),
      K('Jedan trougao: ${6 · 5|2} = 15 cm²$; sva četiri: $4 · 15 = 60 cm²$.'),
-     K('Moglo bi se i $M = {O · h_a|2} = {24 · 5|2} = 60 cm²$.')]);
+     K('Moglo bi se i $M = {O · h_{a}|2} = {24 · 5|2} = 60 cm²$.')]);
 
   Z(2, 'Pravilna četvorostrana piramida ima osnovnu ivicu $8 cm$ i apotemu $5 cm$. Kolika joj je površina?',
     ['$144 cm²$', '$64 cm²$', '$80 cm²$', '$184 cm²$'],
     [K('$B = a² = 8² = 64 cm²$.'),
-     K('Omotač: $M = {O · h_a|2} = {4 · 8 · 5|2} = 80 cm²$.'),
+     K('Omotač: $M = {O · h_{a}|2} = {4 · 8 · 5|2} = 80 cm²$.'),
      K('$P = B + M = 64 + 80 = 144 cm²$.')]);
 
   Z(3, 'Pravilna trostrana piramida ima osnovnu ivicu $6 cm$, a visina bočne strane (apotema) je $10 cm$. Kolika je površina omotača?',
     ['$90 cm²$', '$180 cm²$', '$60 cm²$', '$30 cm²$'],
     [K('Omotač čine $3$ trougla osnovice $6 cm$ i visine $10 cm$.'),
      K('Jedan: ${6 · 10|2} = 30 cm²$; tri: $3 · 30 = 90 cm²$.'),
-     K('Ili $M = {O · h_a|2} = {18 · 10|2} = 90 cm²$.')]);
+     K('Ili $M = {O · h_{a}|2} = {18 · 10|2} = 90 cm²$.')]);
 
   // ════════════════ 5.4 Površina pravilne trostrane i šestostrane piramide ════════════════
   L('Površina pravilne trostrane i pravilne šestostrane piramide');
@@ -93,16 +93,16 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, telo }) => {
      K('Pravilna trostrana piramida ima jednakostranični trougao u osnovi.'),
      K('Sve bočne ivice su joj jednake.')]);
 
-  Z(2, 'Pravilna trostrana piramida ima osnovnu ivicu $a = 12 cm$ i apotemu $h_a = 8 cm$. Kolika joj je površina? (Površina jednakostraničnog trougla stranice $a$ je ${a²√{3}|4}$.)',
+  Z(2, 'Pravilna trostrana piramida ima osnovnu ivicu $a = 12 cm$ i apotemu $h_{a} = 8 cm$. Kolika joj je površina? (Površina jednakostraničnog trougla stranice $a$ je ${a²√{3}|4}$.)',
     ['$36√{3} + 144 cm²$', '$36√{3} + 48 cm²$', '$48√{3} + 144 cm²$', '$72√{3} + 144 cm²$'],
     [K('Osnova: $B = {12²√{3}|4} = {144√{3}|4} = 36√{3} cm²$.'),
-     K('Omotač: $M = {O · h_a|2} = {3 · 12 · 8|2} = 144 cm²$.'),
+     K('Omotač: $M = {O · h_{a}|2} = {3 · 12 · 8|2} = 144 cm²$.'),
      K('$P = 36√{3} + 144 cm² ≈ 206,4 cm²$.')]);
 
   Z(3, 'Pravilna šestostrana piramida ima osnovnu ivicu $4 cm$ i apotemu $10 cm$. Kolika je površina omotača?',
     ['$120 cm²$', '$240 cm²$', '$60 cm²$', '$80 cm²$'],
     [K('Obim osnove: $O = 6 · 4 = 24 cm$.'),
-     K('$M = {O · h_a|2} = {24 · 10|2} = 120 cm²$.'),
+     K('$M = {O · h_{a}|2} = {24 · 10|2} = 120 cm²$.'),
      K('Omotač čini $6$ trouglova $4 × 10$.', [], telo('piramida6', { opis: 'Šest bočnih trouglova' }))]);
 
   // ════════════════ 5.5 Zapremina piramide ════════════════
@@ -201,7 +201,7 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, telo }) => {
     [K('$P = B + M$ (osnova + omotač).')]);
   Z(2, 'Pravilna četvorostrana piramida ima osnovnu ivicu $10 cm$ i apotemu $12 cm$. Koliki je omotač?',
     ['$240 cm²$', '$120 cm²$', '$480 cm²$', '$60 cm²$'],
-    [K('$O = 4 · 10 = 40 cm$; $M = {O · h_a|2} = {40 · 12|2} = 240 cm²$.')]);
+    [K('$O = 4 · 10 = 40 cm$; $M = {O · h_{a}|2} = {40 · 12|2} = 240 cm²$.')]);
   Z(3, 'Pravilna četvorostrana piramida ima osnovnu ivicu $5 cm$ i apotemu $8 cm$. Kolika joj je površina?',
     ['$105 cm²$', '$65 cm²$', '$40 cm²$', '$120 cm²$'],
     [K('$B = 25 cm²$; $M = {20 · 8|2} = 80 cm²$.'),
@@ -234,7 +234,7 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, telo }) => {
     [K('$O = 48 cm$; $M = {48 · 6|2} = 144 cm²$.')]);
   Z(3, 'Pravilna trostrana piramida ima osnovnu ivicu $4 cm$, apotemu $6 cm$, a površina osnove joj je $4√{3} cm²$. Kolika joj je površina?',
     ['$36 + 4√{3} cm²$', '$36 + 8√{3} cm²$', '$12 + 4√{3} cm²$', '$24 + 4√{3} cm²$'],
-    [K('$M = {O · h_a|2} = {12 · 6|2} = 36 cm²$.'),
+    [K('$M = {O · h_{a}|2} = {12 · 6|2} = 36 cm²$.'),
      K('$P = B + M = 36 + 4√{3} cm²$.')]);
   Z(3, 'Kod pravilne piramide važi:',
     ['sve bočne ivice su jednake', 'sve ivice osnove su različite', 'bočne ivice su jednake visini', 'osnova je uvek kvadrat'],

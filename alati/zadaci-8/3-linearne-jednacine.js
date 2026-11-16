@@ -163,13 +163,13 @@ module.exports = ({ L, Z, G, K, proveri }) => {
      K('Pazi: $x = 0$ je takođe rešenje polazne jednačine, ali ga ovde isključujemo uslovom.'),
      K('Pod datim uslovom, rešenje je $4$.')]);
 
-  Z(3, 'Reši jednačinu ${2|{x + 1}} = 1$ (uz uslov $x ≠ −1$).',
+  Z(3, 'Reši jednačinu ${2|x + 1} = 1$ (uz uslov $x ≠ −1$).',
     ['1', '2', '−1', '0'],
     [K('Množimo sa $x + 1$: $2 = x + 1$.'),
      K('$x = 1$.'),
      K('Provera: ${2|2} = 1$ ✓')]);
 
-  Z(3, 'Reši jednačinu ${x + 2|{x − 3}} = 2$ (uz uslov $x ≠ 3$).',
+  Z(3, 'Reši jednačinu ${x + 2|x − 3} = 2$ (uz uslov $x ≠ 3$).',
     ['8', '6', '4', '10'],
     [K('Množimo sa $x − 3$: $x + 2 = 2(x − 3)$.'),
      K('$x + 2 = 2x − 6$, pa je $x = 8$.'),

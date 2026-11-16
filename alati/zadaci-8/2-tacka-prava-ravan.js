@@ -18,13 +18,13 @@ module.exports = ({ L, Z, G, K, telo }) => {
   Z(2, 'Koliko najviše pravih može proći kroz $4$ tačke u istoj ravni, ako nikoje tri nisu kolinearne?',
     ['6', '4', '12', '8'],
     [K('Prava je određena parom tačaka; tražimo broj parova od $4$ tačke.'),
-     K('$C_4^2 = {4 · 3|2} = 6$ pravih.'),
+     K('$C_{4}^{2} = {4 · 3|2} = 6$ pravih.'),
      K('To su stranice i dijagonale četvorougla: $4$ stranice + $2$ dijagonale = $6$.')]);
 
   Z(3, 'Koliko najviše preseka može imati $5$ pravih u ravni, ako nikoje dve nisu paralelne i nikoje tri se ne seku u istoj tački?',
     ['10', '5', '15', '20'],
     [K('Svake dve prave daju po jedan presek: broj parova od $5$ pravih.'),
-     K('$C_5^2 = {5 · 4|2} = 10$ preseka.'),
+     K('$C_{5}^{2} = {5 · 4|2} = 10$ preseka.'),
      K('Proveri crtanjem za $3$ prave: $3$ preseka; za $4$: $6$; za $5$: $10$.')]);
 
   // ════════════════ 2.2 Odnos tačke, prave i ravni; određenost ravni ════════════════
@@ -210,7 +210,7 @@ module.exports = ({ L, Z, G, K, telo }) => {
     [K('Svaki par tačaka daje po jednu pravu: $3$ prave (stranice trougla).')]);
   Z(3, 'Koliko najviše pravih može proći kroz $5$ tačaka, ako nikoje tri nisu kolinearne?',
     ['10', '5', '20', '15'],
-    [K('$C_5^2 = {5 · 4|2} = 10$ pravih.')]);
+    [K('$C_{5}^{2} = {5 · 4|2} = 10$ pravih.')]);
   Z(2, 'Tačke koje leže na istoj pravoj su:',
     ['kolinearne', 'paralelne', 'normalne', 'simetrične'],
     [K('Kolinearne tačke pripadaju istoj pravoj.')]);

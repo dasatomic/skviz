@@ -149,10 +149,10 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, rad, naKrugu, telo, A }) => {
      K('I obratno: odnos obima sličnih trouglova jednak je koeficijentu sličnosti.'),
      K('Animacija sličnosti – uvećanje čuva uglove:', [], A('slicni-trouglovi', 'Stranice se uvećavaju, uglovi ostaju isti'))]);
 
-  Z(1, 'Trouglovi $ABC$ i $A_1B_1C_1$ su slični, pri čemu je $AB$ odgovara $A_1B_1$. Ako je $AB = 8 cm$, $A_1B_1 = 4 cm$ i $BC = 6 cm$, kolika je stranica $B_1C_1$?',
+  Z(1, 'Trouglovi $ABC$ i $A_{1}B_{1}C_{1}$ su slični, pri čemu $AB$ odgovara $A_{1}B_{1}$. Ako je $AB = 8 cm$, $A_{1}B_{1} = 4 cm$ i $BC = 6 cm$, kolika je stranica $B_{1}C_{1}$?',
     ['$3 cm$', '$12 cm$', '$4 cm$', '$2 cm$'],
     [K('Koeficijent sličnosti (veći prema manjem) je $k = {8|4} = 2$; manji prema većem je ${1|2}$.'),
-     K('$B_1C_1$ odgovara $BC$, pa je $B_1C_1 = {BC|2} = {6|2} = 3 cm$.'),
+     K('$B_{1}C_{1}$ odgovara $BC$, pa je $B_{1}C_{1} = {BC|2} = {6|2} = 3 cm$.'),
      K('Provera: ${8|4} = {6|3} = 2$ ✓')]);
 
   Z(2, 'Slični trouglovi imaju obime $24 cm$ i $36 cm$. Ako je najduža stranica manjeg $8 cm$, kolika je najduža stranica većeg?',
@@ -361,10 +361,10 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, rad, naKrugu, telo, A }) => {
   Z(2, 'Dva trougla su slična sa koeficijentom $3$. Obim manjeg je $10 cm$. Koliki je obim većeg?',
     ['$30 cm$', '$13 cm$', '$40 cm$', '$20 cm$'],
     [K('Obim većeg je $3$ puta veći: $3 · 10 = 30 cm$.')]);
-  Z(2, 'Trouglovi su slični: $AB = 12 cm$ odgovara $A_1B_1 = 6 cm$, a $BC = 8 cm$. Kolika je stranica $B_1C_1$?',
+  Z(2, 'Trouglovi su slični: $AB = 12 cm$ odgovara $A_{1}B_{1} = 6 cm$, a $BC = 8 cm$. Kolika je stranica $B_{1}C_{1}$?',
     ['$4 cm$', '$16 cm$', '$6 cm$', '$3 cm$'],
     [K('Koeficijent (manji prema većem): ${6|12} = {1|2}$.'),
-     K('$B_1C_1 = {1|2} · 8 = 4 cm$.')]);
+     K('$B_{1}C_{1} = {1|2} · 8 = 4 cm$.')]);
   Z(3, 'Koeficijent sličnosti dva trougla je $2$. Odnos njihovih površina je:',
     ['$4 : 1$', '$2 : 1$', '$1 : 2$', '$8 : 1$'],
     [K('Površine se odnose kao kvadrat koeficijenta: $2² = 4$, dakle $4 : 1$.')]);

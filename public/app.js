@@ -96,19 +96,7 @@ function kodTekst(t, jezik) {
     ? `<code class="kod-uz">${Mediji.bojiKod(deo, jezik)}</code>`
     : esc(deo).replace(/\n/g, '<br>'))).join('');
 }
-function matTekst(t) {
-  return esc(t).replace(/\$([^$]+)\$/g, (_, m) => {
-    let x = m.replace(/\\\|/g, '\u0001').replace(/\\\{/g, '\u0002').replace(/\\\}/g, '\u0003'), pre;
-    do {
-      pre = x;
-      x = x.replace(/√\{([^{}]*)\}/g, '√<span class="pod-korenom">$1</span>').replace(/\\vec\{([^{}]*)\}/g, '<span class="vektor">$1</span>')
-        .replace(/\^\{([^{}|]*)\}/g, '<sup>$1</sup>').replace(/_\{([^{}|]*)\}/g, '<sub>$1</sub>')
-        .replace(/\{([^{}|]*)\|([^{}|]*)\}/g, '<span class="razlomak"><span>$1</span><span>$2</span></span>');
-    } while (x !== pre);
-    x = x.replace(/\u0001/g, '|').replace(/\u0002/g, '{').replace(/\u0003/g, '}');
-    return `<span class="mat">${x}</span>`;
-  }).replace(/\n/g, '<br>');
-}
+const matTekst = (t) => Mediji.matTekst(t);
 const slovo = (c) => (PISMO === 'cirilica' ? c : LAT[c] ?? c);
 const rec = (r) => [...(r || '')].map(slovo).join('');
 const igrac = (id) => V?.igraci.find((x) => x.id === id);
