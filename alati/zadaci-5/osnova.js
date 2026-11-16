@@ -191,7 +191,71 @@ function tackice(n, uRedu, { razmak = 0.8 } = {}) {
 // koordinatna mreža kao „karirani papir“ (bez brojeva)
 const papir = (x0, x1, y0, y1) => ({ mreza: [x0, x1, y0, y1], brojevi: 0 });
 
+// ── dodatni crteži za teoriju 5. razreda ──
+// faktorizaciono drvo: koren = [broj, levo, desno]; levo/desno su broj ili podstablo (npr. [12, 2, [6, 2, 3]])
+function stabloCinioca(koren, { x = 0, y = 0, dx = 1.9, dy = 1.7 } = {}) {
+  const t = {};
+  const e = [];
+  let id = 0;
+  function cvor(v, cx, cy, b) {
+    const ime = 'n' + (id++);
+    t[ime] = [cx, cy];
+    e.push({ tx: String(v), at: [cx, cy + 0.3], vel: 20, ...(b !== undefined ? { b } : {}) });
+    return ime;
+  }
+  function grana(node, cx, cy) {
+    if (Array.isArray(node)) {
+      const [v, l, r] = node;
+      const me = cvor(v, cx, cy, 0);
+      const li = grana(l, cx - dx, cy - dy);
+      const ri = grana(r, cx + dx, cy - dy);
+      e.push({ d: `${me}${li}`, b: 4, debljina: 2 });
+      e.push({ d: `${me}${ri}`, b: 4, debljina: 2 });
+      return me;
+    }
+    return cvor(node, cx, cy, 1); // prost činilac je obojen
+  }
+  grana(koren, x, y);
+  return G({ ...O }, e, { ...bez, velicina: 240 });
+}
+// Eratostenovo sito: brojevi 1..n u mreži, prosti obojeni
+function sito(n, { x0 = 0, y0 = 0, a = 1.15, kolona = 8 } = {}) {
+  const e = [];
+  const prost = (x) => { if (x < 2) return false; for (let i = 2; i * i <= x; i++) if (x % i === 0) return false; return true; };
+  for (let i = 1; i <= n; i++) {
+    const x = x0 + ((i - 1) % kolona) * a;
+    const y = y0 - Math.floor((i - 1) / kolona) * a;
+    const obojen = prost(i) ? { b: 1 } : i === 1 ? { b: 5 } : {};
+    e.push({ tx: String(i), at: [x, y], vel: 16, ...obojen });
+  }
+  return e;
+}
+// delioci broja (za crteže uz NZD)
+function delioci(n) { const d = []; for (let i = 1; i <= n; i++) if (n % i === 0) d.push(i); return d; }
+// Venov dijagram delilaca dva broja (zajednički u preseku) – vizuelno objašnjenje NZD
+function vennDelilaca(a, b) {
+  const da = delioci(a), db = delioci(b);
+  const zaj = da.filter((x) => db.includes(x));
+  const sa = da.filter((x) => !db.includes(x));
+  const sb = db.filter((x) => !da.includes(x));
+  const v = venn({ imena: [String(a), String(b)], presek: true });
+  const e = [...v.e,
+    ...upisi(sa, v.mesta.A, { vel: 14 }),
+    ...upisi(sb, v.mesta.B, { vel: 14 }),
+    ...upisi(zaj, v.mesta.AB, { vel: 14, b: 1 })];
+  return G(O, e, { ...bez, velicina: 260 });
+}
+// brojevna prava sa dva niza skokova (vizuelni NZS): gore skokovi po a, dole po b
+function pravaNZS(a, b, doN) {
+  const svaki = doN > 15 ? Math.ceil(doN / 10) : 1;
+  const e = [{ osa: [0, doN], podela: 1, svaki }];
+  e.push(...skokovi(0, a, Math.floor(doN / a), { boja: 1, kasni: 0.3, razmak: 0.6 }));
+  e.push(...skokovi(0, b, Math.floor(doN / b), { boja: 2, ispod: true, kasni: 0.5, razmak: 0.6 }));
+  return G(O, e, { ...bez, velicina: 320 });
+}
+
 module.exports = {
   lekcije, zadaci, G, K, Z, R, L, proveri, r, naKrugu, pravilni, stubici, kruzni, kocke,
   nzd, nzs, skrati, isti, dec, O, bez, luk, traka, pica, skok, skokovi, krug, venn, upisi, sat, uglomer, sto, tackice, papir,
+  stabloCinioca, sito, delioci, vennDelilaca, pravaNZS,
 };
