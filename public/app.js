@@ -46,7 +46,7 @@ const _confirm = window.confirm.bind(window);
 window.confirm = (t) => _confirm(tr(t));
 function postaviPismo(p, crtajPonovo = true) {
   p = p === 'latinica' ? 'latinica' : 'cirilica';
-  document.title = p === 'cirilica' ? 'Сквиз – породични квиз знања | Skviz kviz' : 'Skviz – porodični kviz znanja | Сквиз';
+  document.title = p === 'cirilica' ? 'Сквиз – школски квиз знања | Skviz kviz' : 'Skviz – školski kviz znanja | Сквиз';
   if (p === PISMO) return;
   PISMO = p;
   ls.set('pismo', p);
@@ -210,7 +210,7 @@ async function pocetna() {
   try { poznati = Object.values((await (await fetch('/api/statistika')).json()).igraci || {}); } catch {}
   app.innerHTML = `
     <h1 class="naslov-igre"><img class="logo" src="/logo.svg" alt="Сквиз"></h1>
-    <div class="podnaslov">Porodični kviz znanja 🦉</div>
+    <div class="podnaslov">Školski kviz znanja 🦉</div>
     <div class="izbor pismo-izbor">${['cirilica', 'latinica'].map((p) => `<button data-pismo="${p}" class="${PISMO === p ? 'izabran' : ''}" ${p === 'latinica' ? 'data-lat' : ''}>${p === 'cirilica' ? 'Ćirilica' : 'Latinica'}</button>`).join('')}</div>
     <div class="kartica">
       <label class="sitno">Kako se zoveš?</label>
