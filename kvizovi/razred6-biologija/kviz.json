@@ -201,7 +201,7 @@
     {
       "lekcija": 1,
       "tezina": 2,
-      "pitanje": "Kako se zove grana biologije koja proučava kako rade organi i organizmi?",
+      "pitanje": "Kako se zove grana biologije koja proučava fizičke i hemijske procese u živim organizmima?",
       "odgovori": [
         "Fiziologija",
         "Anatomija",
@@ -209,20 +209,8 @@
         "Paleontologija"
       ],
       "zanimljivost": "Ivan Pavlov je za proučavanje fiziologije varenja dobio Nobelovu nagradu 1904. – poznat je i po ogledima sa psima i zvoncetom.",
-      "rec": "fiziologija"
-    },
-    {
-      "lekcija": 1,
-      "tezina": 1,
-      "pitanje": "Koje su četiri osnovne životne sredine?",
-      "odgovori": [
-        "Voda, kopno, zemljište i drugi organizmi",
-        "Samo voda i kopno, jer zemljište nije prava sredina",
-        "Grad, selo, šuma i livada sa obradivim njivama",
-        "Leto, jesen, zima i proleće"
-      ],
-      "zanimljivost": "Za parazite, kao što je pantljičara, životna sredina je telo drugog organizma – domaćina.",
-      "rec": "sredina"
+      "rec": "fiziologija",
+      "autor": "ivona tomic"
     },
     {
       "lekcija": 1,
@@ -234,8 +222,9 @@
         "Za proizvođače",
         "Za ptice selice"
       ],
-      "zanimljivost": "U crevima čoveka živi više od hiljadu vrsta bakterija – većina nam koristi.",
-      "rec": "parazit"
+      "zanimljivost": "U crevima čoveka živi više od hiljadu vrsta bakterija – većina nisu paraziti, korisne su nam.",
+      "rec": "parazit",
+      "autor": "ivona tomic"
     },
     {
       "lekcija": 1,
@@ -305,7 +294,7 @@
     {
       "lekcija": 1,
       "tezina": 1,
-      "pitanje": "Koja sredina je najbogatija kiseonikom?",
+      "pitanje": "Koja od navedenih sredina je najbogatija kiseonikom?",
       "odgovori": [
         "Kopnena (vazduh)",
         "Duboko more",
@@ -313,7 +302,8 @@
         "Zemljište"
       ],
       "zanimljivost": "U vazduhu ima oko 21% kiseonika, a u vodi ga je rastvoreno i do 30 puta manje.",
-      "rec": "vazduh"
+      "rec": "vazduh",
+      "autor": "ivona tomic"
     },
     {
       "lekcija": 1,
@@ -333,13 +323,14 @@
       "tezina": 3,
       "pitanje": "Koja je osobina zemljišta kao životne sredine?",
       "odgovori": [
-        "Malo svetlosti, a stalnija temperatura i vlažnost",
+        "Malo svetlosti, a stabilnija temperatura i vlažnost",
         "Stalno jaka svetlost tokom celog dana, i leti i zimi",
         "Najveće kolebanje temperature od svih životnih sredina",
         "Nema vazduha"
       ],
       "zanimljivost": "Već na pola metra dubine razlike između dana i noći se gotovo i ne osećaju.",
-      "rec": "zemljište"
+      "rec": "zemljište",
+      "autor": "ivona tomic"
     },
     {
       "lekcija": 1,
@@ -379,24 +370,6 @@
       ],
       "zanimljivost": "Danas se u školama umesto disekcije sve češće koriste modeli i interaktivni 3D programi – tako nijedna životinja ne mora da strada zbog časa. Disekcija čoveka se radi u medicini, na primer da se utvrdi uzrok smrti.",
       "rec": "disekcija"
-    },
-    {
-      "lekcija": 1,
-      "tezina": 3,
-      "pitanje": "Ko je u 16. veku, proučavajući tela umrlih, opisao i nacrtao građu ljudskog tela u sedam knjiga?",
-      "odgovori": [
-        "Andreas Vezal",
-        "Robert Huk",
-        "Gregor Mendel",
-        "Luj Paster"
-      ],
-      "zanimljivost": "Vezalova knjiga „O građi ljudskog tela“ (1543) ispravila je mnoge greške koje su se više od 1.300 godina prepisivale od antičkog lekara Galena – Galen je secirao majmune i svinje, a ne ljude.",
-      "rec": "anatomija",
-      "medijiOdgovora": {
-        "vrsta": "slika",
-        "src": "slike/vezal.jpg",
-        "opis": "Andreas Vezal"
-      }
     },
     {
       "lekcija": 1,
@@ -661,19 +634,6 @@
     {
       "lekcija": 2,
       "tezina": 2,
-      "pitanje": "Šta je Levenhuk po zanimanju bio?",
-      "odgovori": [
-        "Trgovac tkaninama",
-        "Lekar u Amsterdamu",
-        "Holandski kralj",
-        "Mornar na brodu"
-      ],
-      "zanimljivost": "Trgovci tkaninama koristili su lupe da pregledaju kvalitet niti – tako se Levenhuk zainteresovao za sočiva.",
-      "rec": "tkanina"
-    },
-    {
-      "lekcija": 2,
-      "tezina": 2,
       "pitanje": "Ko je otkrio jedro u biljnoj ćeliji 1831. godine?",
       "odgovori": [
         "Robert Braun",
@@ -702,13 +662,14 @@
       "tezina": 3,
       "pitanje": "Šta je Huk zapravo video u kori plute?",
       "odgovori": [
-        "Prazne zidove mrtvih ćelija",
+        "Ćelijske zidove mrtvih ćelija",
         "Žive ćelije sa jedrom i jedarcetom",
         "Bakterije koje plivaju u vodi",
         "Zelene hloroplaste u citoplazmi"
       ],
       "zanimljivost": "Pluta je mrtvo tkivo, pa je Huk video samo „kutijice“ ćelijskih zidova, bez sadržaja.",
-      "rec": "pluta"
+      "rec": "pluta",
+      "autor": "ivona tomic"
     },
     {
       "lekcija": 2,
@@ -1585,7 +1546,7 @@
       "tezina": 2,
       "pitanje": "Kako se zove označena krupna organela koja zauzima najveći deo odrasle biljne ćelije?",
       "odgovori": [
-        "Vakuola sa ćelijskim sokom",
+        "Vakuola sa vodenim rastvorom",
         "Jedro sa jedarcetom u sredini",
         "Hloroplast (zeleni)",
         "Mitohondrija (proizvodi energiju)"
@@ -1597,7 +1558,8 @@
         "scena": "celija",
         "tip": "biljna",
         "istakni": "vakuola"
-      }
+      },
+      "autor": "ivona tomic"
     },
     {
       "lekcija": 5,
@@ -1707,11 +1669,12 @@
       "odgovori": [
         "Od hitina",
         "Od celuloze",
-        "Od drveta",
+        "Od skroba",
         "Od kalcijuma"
       ],
       "zanimljivost": "Hitin gradi i oklop insekata i rakova – još jedan dokaz da su gljive bliže životinjama nego biljkama.",
-      "rec": "hitin"
+      "rec": "hitin",
+      "autor": "ivona tomic"
     },
     {
       "lekcija": 5,
@@ -1983,24 +1946,6 @@
     },
     {
       "lekcija": 6,
-      "tezina": 2,
-      "pitanje": "Koji protist izaziva malariju i prenosi ga komarac?",
-      "odgovori": [
-        "Plazmodijum",
-        "Ameba",
-        "Euglena",
-        "Papučica"
-      ],
-      "zanimljivost": "Malarija je i danas jedna od najsmrtonosnijih bolesti – svake godine ubije stotine hiljada ljudi, uglavnom dece u Africi.",
-      "rec": "malarija",
-      "medijiOdgovora": {
-        "vrsta": "slika",
-        "src": "slike/anofeles.jpg",
-        "opis": "Malarični komarac (anofeles)"
-      }
-    },
-    {
-      "lekcija": 6,
       "tezina": 1,
       "pitanje": "Gde žive papučice?",
       "odgovori": [
@@ -2136,13 +2081,14 @@
       "tezina": 1,
       "pitanje": "Zašto bakterije zovemo „čistači prirode“?",
       "odgovori": [
-        "Razlažu uginule organizme i otpad",
+        "Razlažu uginule organizme",
         "Upijaju sav prljav vazduh iz grada",
         "Čiste zube krupnim životinjama",
         "Spiraju kamenje u rekama"
       ],
       "zanimljivost": "Neke bakterije razlažu čak i naftu i plastiku – naučnici ih koriste za čišćenje izlivene nafte u moru.",
-      "rec": "čistač"
+      "rec": "čistač",
+      "autor": "ivona tomic"
     },
     {
       "lekcija": 6,
@@ -2281,29 +2227,17 @@
     },
     {
       "lekcija": 7,
-      "tezina": 3,
-      "pitanje": "Koja „sluzava gljiva“ (protist) živi kao pojedinačne ćelije, ali se pri nestašici hrane okupi u jedan organizam koji puzi?",
-      "odgovori": [
-        "Diktiostelijum",
-        "Pivski kvasac",
-        "Euglena",
-        "Volvoks"
-      ],
-      "zanimljivost": "Hiljade amebastih ćelija se spoje u „puža“ koji traži svetlije mesto i stvara spore.",
-      "rec": "sluz"
-    },
-    {
-      "lekcija": 7,
       "tezina": 2,
       "pitanje": "Zašto se smatra da su prvi višećelijski organizmi nastali od kolonija?",
       "odgovori": [
-        "Ćelije u koloniji počele su da dele poslove i zavise jedna od druge",
+        "Ćelije u koloniji počele su da dele poslove i da zavise jedna od druge",
         "Ćelije su se slučajno zalepile jedna za drugu i ostale tako spojene zauvek",
         "Nastali su od kamena i minerala na dnu toplog i plitkog prvobitnog okeana",
         "Nastali su odjednom, potpuno gotovi, bez ikakvih prelaznih oblika između"
       ],
       "zanimljivost": "Najstariji poznati višećelijski organizmi stari su oko 600 miliona godina i liče na meke diskove i listove.",
-      "rec": "organizam"
+      "rec": "organizam",
+      "autor": "ivona tomic"
     },
     {
       "lekcija": 7,
@@ -2347,24 +2281,6 @@
         "vrsta": "biologija",
         "scena": "protist",
         "tip": "volvoks"
-      }
-    },
-    {
-      "lekcija": 7,
-      "tezina": 2,
-      "pitanje": "Kako se zove zelena alga koja gradi kolonije u obliku pločice od 16 ćelija?",
-      "odgovori": [
-        "Gonijum",
-        "Euglena",
-        "Plazmodijum",
-        "Papučica"
-      ],
-      "zanimljivost": "Gonijum, pandorina i volvoks često se prikazuju kao „stepenice“ od jednostavnih ka složenim kolonijama.",
-      "rec": "gonijum",
-      "medijiOdgovora": {
-        "vrsta": "slika",
-        "src": "slike/gonijum.jpg",
-        "opis": "Gonijum – kolonija od 16 ćelija"
       }
     },
     {
@@ -2421,13 +2337,14 @@
       "tezina": 2,
       "pitanje": "Kako se zove pojava kada jednoćelijski organizmi žive povezani, a delovi kolonije počnu da se razlikuju?",
       "odgovori": [
-        "Diferencijacija ćelija",
+        "Diferencijacija (specijalizacija ćelija)",
         "Fotosinteza (stvaranje hrane)",
         "Fosilizacija (pretvaranje u kamen)",
         "Hibernacija (zimski san ćelija)"
       ],
       "zanimljivost": "I tvoje telo je nastalo diferencijacijom – od jedne ćelije nastali su mišići, kosti, nervi i koža.",
-      "rec": "razlike"
+      "rec": "razlike",
+      "autor": "ivona tomic"
     },
     {
       "lekcija": 7,
@@ -2500,19 +2417,6 @@
     },
     {
       "lekcija": 7,
-      "tezina": 3,
-      "pitanje": "Kako se cijanobakterije povezuju u koloniju?",
-      "odgovori": [
-        "Sluzavim omotačem na površini",
-        "Nastavcima citoplazme, kao hifama",
-        "Lepkom od smole drveća",
-        "Nitima od svile, kao pauci"
-      ],
-      "zanimljivost": "Sluzavi omotač ih štiti od isušivanja, hladnoće i toplote. Neke kolonije cijanobakterija narastu kao zelene loptice ili kožaste kore na kamenu.",
-      "rec": "sluz"
-    },
-    {
-      "lekcija": 7,
       "tezina": 2,
       "pitanje": "Kakve su jedinke u koloniji koju gradi mali broj ćelija?",
       "odgovori": [
@@ -2556,12 +2460,13 @@
       "pitanje": "Koje su četiri vrste tkiva kod životinja?",
       "odgovori": [
         "Pokrovno, vezivno, mišićno i nervno",
-        "Kožno, krvno, kostno i vodeno",
+        "Kožno, krvno, koštano i vodeno",
         "Zeleno, crveno, plavo i belo",
-        "Biljno, gljivično, životinjsko i bakterijsko"
+        "Fotosintetičko, provodno i mehaničko"
       ],
       "zanimljivost": "Krv se ubraja u vezivno tkivo – tečno vezivno tkivo.",
-      "rec": "tkivo"
+      "rec": "tkivo",
+      "autor": "ivona tomic"
     },
     {
       "lekcija": 8,
@@ -2716,25 +2621,13 @@
       "pitanje": "Šta kod biljaka čini koren, stablo i list?",
       "odgovori": [
         "Vegetativne organe",
-        "Generativne organe",
+        "Reproduktivne organe",
         "Tkiva",
         "Ćelije"
       ],
       "zanimljivost": "Vegetativni organi služe ishrani i rastu, a cvet, plod i seme razmnožavanju.",
-      "rec": "vegetativno"
-    },
-    {
-      "lekcija": 8,
-      "tezina": 3,
-      "pitanje": "Šta se dešava sa ćelijama višećelijskog organizma kada se odvoje od njega?",
-      "odgovori": [
-        "Ne mogu dugo da prežive same",
-        "Nastave da žive kao slobodne amebe",
-        "Postanu nova kolonija",
-        "Pretvore se u bakterije"
-      ],
-      "zanimljivost": "Ćelije višećelijskih organizama su specijalizovane i zavise od drugih. Ipak, neke mogu da se gaje u laboratoriji, u posebnoj hranljivoj tečnosti – tako se ispituju novi lekovi.",
-      "rec": "ćelija"
+      "rec": "vegetativno",
+      "autor": "ivona tomic"
     },
     {
       "lekcija": 8,
@@ -2768,12 +2661,13 @@
           "Stvaraju mokraću"
         ],
         [
-          "Jetra",
-          "Luči žuč"
+          "Srce",
+          "Pumpa krv"
         ]
       ],
       "zanimljivost": "Jetra je najveća žlezda u telu – teška je oko 1,5 kg i može ponovo da izraste i kad joj se odstrani veći deo.",
-      "rec": "organ"
+      "rec": "organ",
+      "autor": "ivona tomic"
     },
     {
       "lekcija": 8,
@@ -3388,24 +3282,6 @@
     },
     {
       "lekcija": 10,
-      "tezina": 2,
-      "pitanje": "Kakvi su plemeniti siri, poput rokfora?",
-      "odgovori": [
-        "Siri u kojima rastu posebne jestive plesni",
-        "Siri u koje se dodaju med i suvo voće pre zrenja",
-        "Siri koji se prave bez mleka, od biljnih ulja i brašna",
-        "Siri od soje"
-      ],
-      "zanimljivost": "Rokfor zri u pećinama u Francuskoj, gde plesan Penicillium roqueforti daje plavo-zelene žilice.",
-      "rec": "sir",
-      "medijiOdgovora": {
-        "vrsta": "slika",
-        "src": "slike/rokfor.jpg",
-        "opis": "Rokfor – sir sa plemenitom plesni"
-      }
-    },
-    {
-      "lekcija": 10,
       "tezina": 3,
       "pitanje": "Kako gljive učestvuju u kruženju materija u prirodi?",
       "odgovori": [
@@ -3429,19 +3305,6 @@
       ],
       "zanimljivost": "Gljivice kože vole toplo i vlažno, pa se prenose na bazenima i u svlačionicama. Zato je važno nositi papuče i dobro brisati stopala.",
       "rec": "gljivica"
-    },
-    {
-      "lekcija": 10,
-      "tezina": 2,
-      "pitanje": "Šta je mikoza?",
-      "odgovori": [
-        "Bolest koju izazivaju gljive",
-        "Vrsta jestive šumske pečurke iz bukovih šuma",
-        "Nauka o kvascu i pivu u industriji",
-        "Lek koji se pravi od plesni i gljiva"
-      ],
-      "zanimljivost": "Atletsko stopalo – svrab između prstiju – najčešća je gljivična infekcija kože.",
-      "rec": "mikoza"
     },
     {
       "lekcija": 10,
@@ -3560,8 +3423,8 @@
           "Prvi antibiotik"
         ],
         [
-          "Plemenita plesan",
-          "Rokfor i gorgonzola"
+          "Zelena pupavka",
+          "Otrovna pečurka"
         ],
         [
           "Bukovača",
@@ -3569,7 +3432,8 @@
         ]
       ],
       "zanimljivost": "Čovek koristi gljive hiljadama godina, iako je tek u 19. veku shvatio da su kvasci i plesni živa bića.",
-      "rec": "plesan"
+      "rec": "plesan",
+      "autor": "ivona tomic"
     },
     {
       "lekcija": 10,
@@ -3578,11 +3442,12 @@
       "odgovori": [
         "U stelji ima mnogo vlage i ostataka",
         "U šumi ima najviše sunčeve svetlosti",
-        "U šumi nema životinja koje jedu pečurke",
+        "U šumi nema životinja koje se hrane pečurkama",
         "Drveće im svakog dana daje vodu iz lišća"
       ],
       "zanimljivost": "Mnoge šumske pečurke žive u zajednici (mikorizi) sa drvećem – zato se vrganj najčešće nalazi pored hrasta, bukve i smrče.",
-      "rec": "šuma"
+      "rec": "šuma",
+      "autor": "ivona tomic"
     },
     {
       "lekcija": 11,
@@ -3950,13 +3815,14 @@
       "tezina": 1,
       "pitanje": "Zašto se golosemenice tako zovu?",
       "odgovori": [
-        "Seme im nije zatvoreno u plodu",
+        "Seme im nije zaštićeno plodovim omotačem",
         "Zimi nemaju nijedan jedini list",
         "Nemaju koren, nego samo rizoide",
         "Seme im je bez ikakve ljuske"
       ],
       "zanimljivost": "Seme četinara nalazi se na ljuspama šišarki. Najpoznatije golosemenice su četinari – bor, jela, smrča i omorika.",
-      "rec": "šišarka"
+      "rec": "šišarka",
+      "autor": "ivona tomic"
     },
     {
       "lekcija": 11,
@@ -3973,24 +3839,6 @@
       "mediji": {
         "vrsta": "slika",
         "src": "slike/omorika.jpg"
-      }
-    },
-    {
-      "lekcija": 11,
-      "tezina": 3,
-      "pitanje": "Koja biljka nema ni list ni koren i živi kao parazit, obmotana oko drugih biljaka?",
-      "odgovori": [
-        "Vilina kosica",
-        "Bršljan",
-        "Mahovina",
-        "Lokvanj"
-      ],
-      "zanimljivost": "Klijanac viline kosice ima samo nekoliko dana da „nanjuši“ biljku domaćina i obmota se oko nje – inače ugine.",
-      "rec": "kosica",
-      "medijiOdgovora": {
-        "vrsta": "slika",
-        "src": "slike/vilina-kosica.jpg",
-        "opis": "Vilina kosica"
       }
     },
     {
@@ -4467,15 +4315,16 @@
     {
       "lekcija": 13,
       "tezina": 2,
-      "pitanje": "Kako se zove početni deo tankog creva, u koji se ulivaju kanali jetre i pankreasa?",
+      "pitanje": "Kako se zove deo creva, u koji se ulivaju kanali jetre i pankreasa?",
       "odgovori": [
-        "Dvanaestopalačno crevo",
+        "Dvanaestopalačno crevo (početni deo tankog creva)",
         "Slepo crevo (na početku debelog)",
         "Debelo crevo (na kraju varenja)",
         "Jednjak (cev od usta do želuca)"
       ],
       "zanimljivost": "Ime je dobilo jer je dugo otprilike koliko širina dvanaest prstiju. Kroz zidove tankog creva hranljive materije prelaze u krv.",
-      "rec": "crevo"
+      "rec": "crevo",
+      "autor": "ivona tomic"
     },
     {
       "lekcija": 13,
@@ -4701,19 +4550,6 @@
     },
     {
       "lekcija": 13,
-      "tezina": 2,
-      "pitanje": "Koliko hrane dnevno može da pojede odrastao slon?",
-      "odgovori": [
-        "Od 100 do 300 kg",
-        "Oko 1 kg",
-        "Oko 10 kg",
-        "Oko 3 tone"
-      ],
-      "zanimljivost": "Slon iskoristi samo oko polovinu hranljivih supstanci iz hrane. Ostatak izbaci sa izmetom, kojim se hrane mnogi insekti i gljive, a iz njega klija i seme.",
-      "rec": "slon"
-    },
-    {
-      "lekcija": 13,
       "tezina": 1,
       "pitanje": "Gde počinje varenje hrane kod čoveka?",
       "odgovori": [
@@ -4914,7 +4750,7 @@
     {
       "lekcija": 14,
       "tezina": 2,
-      "pitanje": "Kako ptice dišu efikasnije od sisara?",
+      "pitanje": "Zašto ptice dišu efikasnije od sisara?",
       "odgovori": [
         "Imaju vazdušne kese pa vazduh kroz pluća prolazi u jednom smeru",
         "Imaju i škrge i pluća, pa uzimaju kiseonik iz vazduha i iz vode u letu",
@@ -4923,6 +4759,7 @@
       ],
       "zanimljivost": "Zbog ovog sistema guske mogu da preleću i Himalaje, na visini od skoro 8 km.",
       "rec": "guska",
+      "autor": "ivona tomic",
       "medijiOdgovora": {
         "vrsta": "biologija",
         "scena": "disanje",
@@ -4995,24 +4832,6 @@
       ],
       "zanimljivost": "Vrhunski sportisti pri naporu udahnu i preko 150 litara vazduha u minuti.",
       "rec": "trčanje"
-    },
-    {
-      "lekcija": 14,
-      "tezina": 3,
-      "pitanje": "Kako vodeni pauk diše pod vodom?",
-      "odgovori": [
-        "Nosi vazduh u „zvonu“ od svile koje napravi pod vodom",
-        "Ima škrge kao riba, pa uzima kiseonik iz vode oko sebe direktno",
-        "Ne diše",
-        "Diše kroz noge"
-      ],
-      "zanimljivost": "Vodeni pauk (srebrenjak) jedini je pauk koji ceo život provodi pod vodom.",
-      "rec": "zvono",
-      "medijiOdgovora": {
-        "vrsta": "slika",
-        "src": "slike/vodeni-pauk.jpg",
-        "opis": "Vodeni pauk (srebrenjak)"
-      }
     },
     {
       "lekcija": 14,
@@ -5126,7 +4945,7 @@
       "lekcija": 14,
       "tezina": 1,
       "vrsta": "uljez",
-      "pitanje": "Ko NE diše plućima?",
+      "pitanje": "Ko ne razmenjuje gasove preko pluća?",
       "odgovori": [
         "Šaran",
         "Gušter",
@@ -5135,7 +4954,8 @@
       ],
       "objasnjenje": "Šaran je riba i diše škrgama. Gušter, golub i delfin dišu plućima – i delfin mora da izroni da bi udahnuo vazduh.",
       "zanimljivost": "Kit ulješura može da zadrži dah i više od sat vremena dok roni u velike dubine.",
-      "rec": "delfin"
+      "rec": "delfin",
+      "autor": "ivona tomic"
     },
     {
       "lekcija": 15,
@@ -5886,19 +5706,6 @@
       ],
       "zanimljivost": "Neke vrste guštera sastoje se samo od ženki koje se razmnožavaju partenogenezom.",
       "rec": "ženka"
-    },
-    {
-      "lekcija": 17,
-      "tezina": 1,
-      "pitanje": "Kako se zove razvoj mladunca u telu majke kod sisara?",
-      "odgovori": [
-        "Živorodnost (bremenitost)",
-        "Polaganje jaja u gnezdo od trave",
-        "Pupljenje (isto kao kod hidre)",
-        "Metamorfoza (preobražaj mladunca)"
-      ],
-      "zanimljivost": "Kengur se rodi veličine pčele i dalje se razvija u majčinoj torbi.",
-      "rec": "kengur"
     },
     {
       "lekcija": 17,
@@ -6829,7 +6636,7 @@
     {
       "lekcija": 20,
       "tezina": 2,
-      "pitanje": "Šta je grabljivost (predatorstvo)?",
+      "pitanje": "Šta je predatorstvo?",
       "odgovori": [
         "Odnos u kojem jedna životinja lovi i jede drugu",
         "Zajednički život dve vrste na korist obe, kao kod lišaja",
@@ -6838,6 +6645,7 @@
       ],
       "zanimljivost": "Brojnost zečeva i risova u Kanadi menja se u talasima – kad ima više zečeva, raste i broj risova.",
       "rec": "grabljivac",
+      "autor": "ivona tomic",
       "medijiOdgovora": {
         "vrsta": "biologija",
         "scena": "krive",
