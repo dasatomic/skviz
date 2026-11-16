@@ -96,6 +96,14 @@
   .prijava:last-child { border-bottom: 0; }
   .prijava .koliko { font-size: 20px; font-weight: 650; min-width: 2ch; text-align: right; line-height: 1.2; }
   .prijava .tekst { font-weight: 550; }
+  /* matematika u tekstu prijave ($…$ → Mediji.matTekst), isto kao u style.css igre */
+  .mat { white-space: nowrap; font-variant-numeric: lining-nums; }
+  .mat sup, .mat sub { font-size: .7em; line-height: 0; }
+  .mat .pod-korenom { border-top: 2px solid currentColor; padding: 0 1px; margin-left: 1px; }
+  .mat .vektor { display: inline-block; position: relative; padding-top: .35em; line-height: 1; }
+  .mat .vektor::before { content: "→"; position: absolute; top: -.2em; left: 0; right: 0; text-align: center; font-size: .75em; }
+  .mat .razlomak { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: .85em; line-height: 1.15; margin: 0 2px; }
+  .mat .razlomak > span:first-child { border-bottom: 1.5px solid currentColor; padding: 0 2px; }
   .prijava .odg { font-size: 14px; color: var(--tekst-2); margin-top: 2px; }
   .prijava .oznaka { font-size: 12px; padding: 0 6px; border-radius: 99px; border: 1px solid var(--ivica); margin-left: 4px; }
   .prazno { color: var(--tekst-3); font-size: 14px; padding: 8px 0; }
@@ -205,7 +213,10 @@
   </div>
 </main>
 
+<script src="/mediji.js"></script>
 <script>
+// tekst pitanja sa matematikom ($…$), kao u igri; rezerva ako mediji.js nije učitan
+const matTekst = (t) => (window.Mediji?.matTekst ? window.Mediji.matTekst(t) : esc(t));
 'use strict';
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
@@ -420,8 +431,8 @@ async function ucitajPrijave() {
   $('prijave').innerHTML = d.prijave.length ? d.prijave.map((x) => `<div class="prijava">
       <div class="koliko" title="broj igrača koji su prijavili">${x.broj}</div>
       <div>
-        <div class="tekst">${esc(x.tekst)}</div>
-        <div class="odg">✓ ${esc(x.odgovor)}</div>
+        <div class="tekst">${matTekst(x.tekst)}</div>
+        <div class="odg">✓ ${matTekst(x.odgovor)}</div>
         <div class="sitno">${esc(x.kviz)}${x.lekcija ? ` · lekcija ${x.lekcija}${x.nazivLekcije ? ': ' + esc(x.nazivLekcije) : ''}` : ''} · <span class="kod">${esc(x.pitanje_id)}</span>
           · ${x.broj > 1 ? `prvi put ${fPun.format(x.prva)}, poslednji ` : ''}${fPun.format(x.poslednja)}
           ${x.izmenjeno ? '<span class="oznaka">u međuvremenu izmenjeno</span>' : ''}${x.nema ? '<span class="oznaka">više ne postoji</span>' : ''}</div>
