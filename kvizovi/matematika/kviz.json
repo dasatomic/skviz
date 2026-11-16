@@ -4,6 +4,7 @@
   "boja": "#0984e3",
   "opis": "Brojevi, geometrija, 3D tela i mozgalice",
   "redosled": 10,
+  "oblast": "matematika",
   "pitanja": [
     {
       "tezina": 1,
@@ -312,18 +313,6 @@
       "rec": "niz"
     },
     {
-      "tezina": 1,
-      "pitanje": "Koliko je 25% od 80?",
-      "odgovori": [
-        "20",
-        "25",
-        "16",
-        "40"
-      ],
-      "zanimljivost": "25% je isto što i četvrtina. Lep trik: x% od y je isto što i y% od x. Zato je 8% od 50 isto što i 50% od 8 = 4!",
-      "rec": "procenat"
-    },
-    {
       "tezina": 2,
       "pitanje": "Kvadrat ima obim 36 cm. Kolika mu je površina?",
       "odgovori": [
@@ -370,18 +359,6 @@
       ],
       "zanimljivost": "2³ = 8, a 3² = 9. Jedini različiti prirodni brojevi za koje je aᵇ = bᵃ su 2 i 4: 2⁴ = 4² = 16.",
       "rec": "stepen"
-    },
-    {
-      "tezina": 1,
-      "pitanje": "Koliko stepeni ima prav ugao?",
-      "odgovori": [
-        "90°",
-        "180°",
-        "45°",
-        "60°"
-      ],
-      "zanimljivost": "Podela kruga na 360 stepeni potiče od starih Vavilonaca, koji su računali u šezdesetičnom sistemu – odatle nam i 60 minuta u satu i 60 sekundi u minutu.",
-      "rec": "ugao"
     },
     {
       "tezina": 2,
@@ -693,18 +670,6 @@
     },
     {
       "tezina": 1,
-      "pitanje": "Koliko centimetara ima jedan metar?",
-      "odgovori": [
-        "100",
-        "10",
-        "1000",
-        "60"
-      ],
-      "zanimljivost": "„Centi“ znači stoti deo (od latinskog centum – sto), a „mili“ hiljaditi. Zato 1 m = 100 cm = 1000 mm.",
-      "rec": "metar"
-    },
-    {
-      "tezina": 1,
       "pitanje": "Koliko je 9 · 6?",
       "odgovori": [
         "54",
@@ -827,22 +792,6 @@
       ],
       "zanimljivost": "„Kilo“ znači hiljadu. Kilogram je do 2019. bio definisan stvarnim metalnim valjkom koji se čuvao u Parizu!",
       "rec": "gram"
-    },
-    {
-      "tezina": 1,
-      "pitanje": "Koliko osa simetrije ima kvadrat?",
-      "odgovori": [
-        "4",
-        "2",
-        "1",
-        "8"
-      ],
-      "zanimljivost": "Dve ose idu kroz sredine naspramnih stranica, a dve kroz dijagonale. Krug ima beskonačno mnogo osa simetrije.",
-      "medijiOdgovora": {
-        "vrsta": "svg",
-        "kod": "<svg viewBox=\"0 0 160 160\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" fill=\"none\" stroke-linejoin=\"round\"><rect x=\"30\" y=\"30\" width=\"100\" height=\"100\" stroke=\"#3867d6\" stroke-width=\"2.5\"/><g stroke=\"#e84118\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"><line x1=\"80\" y1=\"15\" x2=\"80\" y2=\"145\"/><line x1=\"15\" y1=\"80\" x2=\"145\" y2=\"80\"/><line x1=\"20\" y1=\"20\" x2=\"140\" y2=\"140\"/><line x1=\"140\" y1=\"20\" x2=\"20\" y2=\"140\"/></g></svg>"
-      },
-      "rec": "kvadrat"
     },
     {
       "tezina": 1,
@@ -18744,18 +18693,6 @@
       "rec": "vektor"
     },
     {
-      "tezina": 1,
-      "pitanje": "Koliko pravih prolazi kroz dve različite tačke?",
-      "odgovori": [
-        "Tačno jedna",
-        "Tačno dve",
-        "Beskonačno mnogo",
-        "Nijedna"
-      ],
-      "zanimljivost": "Ovo je jedna od Euklidovih aksioma – tvrdnji koje se ne dokazuju, već prihvataju. Kroz JEDNU tačku, međutim, prolazi beskonačno mnogo pravih.",
-      "rec": "prava"
-    },
-    {
       "tezina": 2,
       "pitanje": "Date su 4 tačke, od kojih nikoje tri nisu na istoj pravoj. Koliko različitih pravih one određuju?",
       "mediji": {
@@ -32702,7 +32639,7 @@
       "rec": "kombinacija"
     },
     {
-      "tezina": 3,
+      "tezina": 1,
       "pitanje": "Katanac ima šifru od tri cifre (0–9, cifre mogu da se ponavljaju). Koliko ima različitih šifara?",
       "odgovori": [
         "1.000",
@@ -32711,8 +32648,7 @@
         "999"
       ],
       "zanimljivost": "Svaka od 3 cifre ima 10 mogućnosti: 10 · 10 · 10 = 1.000 (od 000 do 999). Kad se cifre ne bi ponavljale, bilo bi 10 · 9 · 8 = 720.",
-      "rec": "šifra",
-      "autor": "Miroslav Antonić"
+      "rec": "šifra"
     },
     {
       "tezina": 3,
