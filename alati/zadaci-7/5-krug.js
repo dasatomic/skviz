@@ -137,7 +137,7 @@ module.exports = ({ L, Z, K, G, r, S3, proveri, pravilni, naKrugu }) => {
     ['$55°$', '$35°$', '$145°$', '$45°$'],
     [K('Ugao kod $C$ je periferijski nad prečnikom: $∠C = 90°$.', ['uc']),
      K('$∠B = 180° − 90° − 35° = 55°$')],
-    G({ O: [0, 0, -90], A: kp(180), B: kp(0), C: kp(110) },
+    G({ O: [0, 0, -90], A: kp(180), B: kp(0), C: kp(70) },
       [{ kr: 'O', r: 5, b: 4 }, { p: 'ABC', b: 0 }, { u: 'CAB', o: '35°', r: 34 }, { pu: 'ACB', id: 'uc', k: 1 }, { u: 'ABC', o: '?', b: 3, r: 26 }, { tacka: 'O' }], { velicina: 240 }));
 
   Z(3, 'Tačke $A$, $B$ i $C$ dele kružnicu na tri luka čije su dužine u razmeri $2 : 3 : 4$. Koliki je najveći ugao trougla $ABC$?',

@@ -5,11 +5,13 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, rad, naKrugu, telo, A }) => {
   // Talesova teorema: dve prave a i b seku krake ugla sa temenom O; duži na jednom kraku su
   // proporcionalne dužima na drugom. Crtamo ugao sa tačkama A,B na levom kraku i C,D na desnom.
   function tales(OA, AB, OC, CD, { oa = String(OA), ab = String(AB), oc = String(OC), cd = String(CD) } = {}) {
-    // levi krak ide duž x-ose udesno, desni krak nagore-desno
+    // levi krak ide duž x-ose udesno, desni krak nagore-desno (nagib 0,4; tačke su na pravom rastojanju od O)
     const A = [OA, 0], B = [OA + AB, 0];
-    const C = [OC, 0.4 * OC], D = [OC + CD, 0.4 * (OC + CD)];
+    const u = [1 / Math.sqrt(1.16), 0.4 / Math.sqrt(1.16)];
+    const C = [OC * u[0], OC * u[1]], D = [(OC + CD) * u[0], (OC + CD) * u[1]];
+    const kraj = OC + CD + 0.8;
     return G({ O: [0, 0], A, B, C, D },
-      [{ lin: [[0, 0], [OA + AB + 1, 0]], b: 5, str: 1 }, { lin: [[0, 0], [OC + CD + 0.8, 0.4 * (OC + CD + 0.8)]], b: 5, str: 1 },
+      [{ lin: [[0, 0], [OA + AB + 1, 0]], b: 5, str: 1 }, { lin: [[0, 0], [kraj * u[0], kraj * u[1]]], b: 5, str: 1 },
        { d: 'AC', b: 1 }, { d: 'BD', b: 2 }, { d: 'OA', o: oa, na: 0.35 }, { d: 'AB', o: ab, na: 0.65 }, { d: 'OC', o: oc, na: 0.3 }, { d: 'CD', o: cd, na: 0.75 },
        { tacka: 'ABCD', b: 4 }, { tx: 'O', at: [-0.25, -0.3] }], { bezImena: ['O'], velicina: 300 });
   }
@@ -82,7 +84,7 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, rad, naKrugu, telo, A }) => {
     [K('Kad je $DE \\| AB$, po Talesovoj teoremi važi ${CD|DA} = {CE|EB}$.', ['de']),
      K('${8|4} = {10|EB}$, pa je $EB = {4 · 10|8} = 5 cm$.'),
      K('$BC = CE + EB = 10 + 5 = 15 cm$.', ['bc'])],
-    G({ A: [0, 0], B: [10, 0], C: [5, 8], D: [3.33, 5.33], E: [6.67, 5.33] },
+    G({ A: [-8.944, 0], B: [12.689, 0], C: [0, 8], D: [-5.963, 2.667], E: [8.459, 2.667] },
       [{ p: 'ABC', b: 0 }, { d: 'DE', b: 1, id: 'de' }, { d: 'CD', o: '8 cm' }, { d: 'DA', o: '4 cm' }, { d: 'CE', o: '10 cm' }, { d: 'EB', b: 3, id: 'eb' }, { d: 'BC', id: 'bc', b: 3 }], { velicina: 280 }));
 
   Z(2, 'Na krake ugla sa temenom $O$ nanete su tačke: na jedan krak $A$ i $B$ ($OA = 3 cm$, $AB = 5 cm$), a na drugi $C$ i $D$ tako da je $AC \\| BD$. Ako je $OC = 4,5 cm$, koliko je $OD$?',
@@ -229,7 +231,7 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, rad, naKrugu, telo, A }) => {
 
   // Euklidove teoreme: visina na hipotenuzu deli je na odsečke p i q
   const euklid = (c, p, q, h) => G({ A: [0, 0], B: [c, 0], C: [p, h], D: [p, 0, 90] },
-    [{ p: 'ABC', b: 0 }, { p: 'ADC', b: 1 }, { p: 'DBC', b: 2 }, { pu: 'ACB' }, { pu: 'ADC' }, { pu: 'DBC' },
+    [{ p: 'ABC', b: 0 }, { p: 'ADC', b: 1 }, { p: 'DBC', b: 2 }, { pu: 'ACB' }, { pu: 'ADC' }, { pu: 'BDC' },
      { d: 'CD', o: 'h', isp: 1, b: 3 }, { d: 'AD', o: String(p) }, { d: 'DB', o: String(q) }, { d: 'AB', o: 'c', na: 0.8 }]);
 
   Z(1, 'Visina na hipotenuzu deli je na odsečke $p = 4 cm$ i $q = 9 cm$. Kolika je visina?',

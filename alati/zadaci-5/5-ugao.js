@@ -102,15 +102,15 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, naKrugu, sat, uglomer, pica,
 
   {
     // uglovi trougla „otkinu se“ i slože kod temena C
-    const t = { A: [0, 0], B: [6, 0], C: [2, 3.5], E: [3, 5.25], F: [0, 5.25] };
+    const t = { A: [0, 0], B: [6, 0], C: [3.554, 4.236], E: [5.331, 6.354], F: [2.331, 6.354] };
     Z(2, 'Dva ugla trougla su $50°$ i $60°$. Ako „otkinemo“ sva tri ugla i nadovežemo ih, dobijamo opružen ugao. Koliki je treći ugao?',
       ['$70°$', '$110°$', '$80°$', '$60°$'],
       [K('Kroz $C$ povučemo pravu paralelnu sa $AB$ i translacijom prenesemo uglove kod $A$ i $B$ do temena $C$.', ['tr']),
        K('Ta dva ugla i ugao unakrsni uglu kod $C$ zajedno čine opružen ugao: zbir uglova trougla je $180°$.'),
        K('$180° − 50° − 60° = 70°$.')],
       G(t, [{ p: 'ABC', b: 4, prazno: 1 }, { u: 'BAC', o: '50°', b: 0 }, { u: 'CBA', o: '60°', b: 1 }, { u: 'ACB', o: '?', b: 2 },
-        { lin: [[-2, 3.5], [6, 3.5]], b: 3, isp: 1, k: 1, id: 'tr' }, { d: 'CE', isp: 1, k: 1 }, { d: 'CF', isp: 1, k: 1 },
-        { u: 'BAC', b: 0, k: 1, pomeri: [2, 3.5] }, { u: 'CBA', b: 1, k: 1, pomeri: [-4, 3.5] }, { u: 'ECF', b: 2, k: 1 }],
+        { lin: [[-2, 4.236], [6, 4.236]], b: 3, isp: 1, k: 1, id: 'tr' }, { d: 'CE', isp: 1, k: 1 }, { d: 'CF', isp: 1, k: 1 },
+        { u: 'BAC', b: 0, k: 1, pomeri: [3.554, 4.236] }, { u: 'CBA', b: 1, k: 1, pomeri: [-2.446, 4.236] }, { u: 'ECF', b: 2, k: 1 }],
         { bezImena: ['A', 'B', 'C', 'E', 'F'], velicina: 200 }));
   }
 
