@@ -154,10 +154,6 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, S3, rad, naKrugu, pravilni 
     'Gleda se samo jedno teme: $A(1, 1)$ je prešlo u $A′(4, 3)$ – to je 3 polja udesno i 2 nagore. Pri translaciji se sve tačke pomere za isti vektor, pa lik ostaje isti i isto okrenut.',
     'vektor', { mediji: G({ A: [1, 1], B: [3, 1], C: [1, 3], "A'": [4, 3], "B'": [6, 3], "C'": [4, 5] }, [{ mreza: [0, 7, 0, 6], brojevi: 0 }, { p: 'ABC', b: 0 }, { p: "A'B'C'", b: 1 }], { velicina: 230 }) });
 
-  Q(1, 'Koliko pravih prolazi kroz dve različite tačke?', ['Tačno jedna', 'Tačno dve', 'Beskonačno mnogo', 'Nijedna'],
-    'Ovo je jedna od Euklidovih aksioma – tvrdnji koje se ne dokazuju, već prihvataju. Kroz JEDNU tačku, međutim, prolazi beskonačno mnogo pravih.',
-    'prava');
-
   {
     const t = { A: [0, 0], B: [5, 0.5], C: [4, 4], D: [0.5, 3.5] };
     Q(2, 'Date su 4 tačke, od kojih nikoje tri nisu na istoj pravoj. Koliko različitih pravih one određuju?', ['6', '4', '8', '12'],
