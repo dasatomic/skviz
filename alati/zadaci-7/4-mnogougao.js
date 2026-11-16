@@ -108,7 +108,7 @@ module.exports = ({ L, Z, K, G, r, S3, proveri, pravilni, ime, naKrugu }) => {
     [K('Zbir uglova petougla: $(5 − 2) · 180° = 540°$.'),
      K('$100° + 110° + 120° + 95° = 425°$'),
      K('Peti ugao: $540° − 425° = 115°$.', ['x'])],
-    G({ A: [0, 0], B: [6, 0], C: [7.6, 4.2], D: [3.4, 7.2], E: [-1.4, 4.4] },
+    G({ A: [0, 0], B: [6, 0], C: [7.71, 4.698], D: [3.178, 6.811], E: [-0.72, 4.081] },
       [{ p: 'ABCDE' }, { u: 'EAB', o: '100°' }, { u: 'ABC', o: '110°' }, { u: 'BCD', o: '95°' }, { u: 'CDE', o: '120°' }, { u: 'DEA', o: 'x', id: 'x', b: 1 }], { bezImena: ['A', 'B', 'C', 'D', 'E'] }));
 
   Z(2, 'Spoljašnji ugao pravilnog mnogougla je $24°$. Koliko stranica ima mnogougao?',
@@ -120,7 +120,7 @@ module.exports = ({ L, Z, K, G, r, S3, proveri, pravilni, ime, naKrugu }) => {
     ['$105°$', '$75°$', '$95°$', '$85°$'],
     [K('Zbir uglova četvorougla: $360°$. Četvrti ugao: $360° − 80° − 95° − 110° = 75°$.', ['u4']),
      K('Spoljašnji ugao je njegov naporedni: $180° − 75° = 105°$.', ['sp'])],
-    G({ A: [0, 0], B: [7, 0], C: [6.37, 3.6], D: [1.42, 5.31], e: [-2, 0] },
+    G({ A: [0, 0], B: [7, 0], C: [6.305, 3.939], D: [1.292, 4.823], e: [-2, 0] },
       [{ p: 'ABCD' }, { u: 'DAB', o: '75°', id: 'u4', k: 1 }, { u: 'ABC', o: '80°' }, { u: 'BCD', o: '110°' }, { u: 'CDA', o: '95°' }, { d: 'Ae', isp: 1 }, { u: 'eAD', id: 'sp', b: 1, k: 2, r: 30 }], { bezImena: ['A', 'B', 'C', 'D'] }));
   {
     // uglovi nacrtanog četvorougla (provera da crtež odgovara tekstu)
