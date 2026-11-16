@@ -521,11 +521,13 @@ function izborKvizaHTML(P) {
   const niz = (ids) => ids.map(po).filter(Boolean).map(karticaHTML).join('');
   const odeljak = (naziv) => `<div class="odeljak">${naziv}</div>`;
   // „Predmeti“: po redu po dve ili tri kartice; „Dodatno“: Eksperimenti
+  // Parovi (matematika + zadaci, srpski + gramatika, fizika + zadaci) moraju da ostanu
+  // jedan pored drugog i u dve kolone na telefonu – zato parovi idu prvo, pa samostalne oblasti.
   const predmeti = [
     ['matematika', 'oblast:matematika-zadaci'],
     ['srpski-jezik', 'oblast:srpski-gramatika'],
-    ['oblast:biologija', 'oblast:istorija', 'oblast:geografija'],
     ['oblast:fizika', 'oblast:fizika-zadaci', 'oblast:hemija'],
+    ['oblast:biologija', 'oblast:istorija', 'oblast:geografija'],
   ];
   const dodatno = ['oblast:eksperimenti'];
   const predmetiIds = predmeti.flat();
