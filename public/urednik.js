@@ -15,7 +15,7 @@ const TEZINE = { 1: 'Lako', 2: 'Srednje', 3: 'Teško' };
 const VRSTE = { izbor: 'Obično pitanje', uljez: 'Izbaci uljeza', spoji: 'Spoj pojmove' };
 const IKONE_VRSTA = { uljez: '🕵️', spoji: '🔗' };
 
-let kvizovi = [];       // iz /api/kvizovi (bez „Opšte znanje“ i bez matematičkih zadataka)
+let kvizovi = [];       // iz /api/kvizovi (bez „Opšte znanje“; uključeni su i zadaci)
 let ukljuceno = false;  // da li server može da otvara pull request-ove
 let kviz = null;        // učitan kviz.json izabranog paketa
 let kvizId = null;
@@ -69,7 +69,7 @@ async function ucitajKvizove() {
     fetch('/api/kvizovi').then((r) => r.json()),
     fetch('/api/predlog/info').then((r) => r.json()).catch(() => ({})),
   ]);
-  kvizovi = lista.filter((k) => k.id !== 'opste' && !k.zadaci);
+  kvizovi = lista.filter((k) => k.id !== 'opste');
   ukljuceno = !!info.ukljuceno;
 }
 async function ucitajKviz(id) {
@@ -97,7 +97,7 @@ function grupaOblasti(o) {
   // kategorija (kviz sa "kategorija": true, bez pitanja) okuplja podkategorije iste oblasti – npr. „Eksperimenti“ → TLA+
   const g = clanovi.find((x) => x.kategorija) || clanovi.find((x) => !x.razred) || clanovi[0] || {};
   const podkategorije = g.kategorija ? clanovi.filter((x) => x !== g && !x.razred) : [];
-  return { oblast: o, clanovi, podkategorije, naziv: g.razred ? g.naziv.replace(/^\d+\. razred · /, '') : g.naziv, ikona: g.ikona, broj: clanovi.reduce((s, x) => s + x.broj, 0) };
+  return { oblast: o, clanovi, podkategorije, naziv: g.razred ? g.naziv.replace(/^\d+\. razred · /, '') : g.naziv, ikona: g.ikona, broj: clanovi.reduce((s, x) => s + x.broj, 0), zadaci: clanovi.every((x) => x.zadaci) };
 }
 
 // ───── 1) početna: autor, izbor predmeta, moji predlozi ─────
@@ -105,14 +105,14 @@ function ekranPocetna() {
   const kartice = [];
   const vidjene = new Set();
   for (const q of kvizovi) {
-    if (!q.oblast) { kartice.push({ h: adresa({ paket: q.id }), naziv: q.naziv, ikona: q.ikona, broj: q.broj }); continue; }
+    if (!q.oblast) { kartice.push({ h: adresa({ paket: q.id }), naziv: q.naziv, ikona: q.ikona, broj: q.broj, zadaci: q.zadaci }); continue; }
     if (vidjene.has(q.oblast)) continue;
     vidjene.add(q.oblast);
     const g = grupaOblasti(q.oblast);
     const razredi = g.clanovi.some((x) => x.razred);
     // oblast (ili kategorija) sa jednim kvizom odmah vodi na njega
     const jedini = g.podkategorije.length === 1 ? g.podkategorije[0] : !g.podkategorije.length && g.clanovi.length === 1 ? g.clanovi[0] : null;
-    kartice.push({ h: jedini ? adresa({ paket: jedini.id }) : adresa({ oblast: q.oblast }), naziv: g.naziv, ikona: g.ikona, broj: g.broj, razredi });
+    kartice.push({ h: jedini ? adresa({ paket: jedini.id }) : adresa({ oblast: q.oblast }), naziv: g.naziv, ikona: g.ikona, broj: g.broj, razredi, zadaci: g.zadaci });
   }
   glavni.innerHTML = `
     <div class="u-uvod">
@@ -132,7 +132,7 @@ function ekranPocetna() {
         <span class="pomoc">Upisuje se uz pitanja koja predložiš (samo radi evidencije – ne prikazuje se u igri). Pamti se na ovom računaru.</span></label>
     </div>
     <div class="kartica"><h3>Izaberi predmet</h3><div class="kvizovi u-kvizovi">${kartice.map((q) => `
-      <button class="kviz" data-h="${q.h}"><div class="ik">${q.ikona}</div><div class="nz">${esc(q.naziv)}</div><div class="br">${q.broj} pitanja${q.razredi ? ' · po razredima' : ''}</div></button>`).join('')}</div></div>
+      <button class="kviz" data-h="${q.h}"><div class="ik">${q.ikona}</div><div class="nz">${esc(q.naziv)}</div><div class="br">${q.broj} ${q.zadaci ? 'zadataka' : 'pitanja'}${q.razredi ? ' · po razredima' : ''}</div></button>`).join('')}</div></div>
     ${karticaPrijava()}
     <div class="kartica" id="moji-predlozi" hidden></div>`;
   $$('[data-prijava]').forEach((b) => (b.onclick = () => otvoriPrijavu(prijave[+b.dataset.prijava])));
@@ -230,9 +230,9 @@ async function ekranSpisak(a) {
   glavni.innerHTML = `${zaglavljePredmeta(info.oblast, a.paket)}
     <div class="kartica">
       <div class="u-alati">
-        <h3 style="margin:0">${esc(K.naziv)}</h3><span class="sitno">${pitanja.length} pitanja</span>
+        <h3 style="margin:0">${esc(K.naziv)}</h3><span class="sitno">${pitanja.length} ${info.zadaci ? 'zadataka' : 'pitanja'}</span>
         <span class="razmak"></span>
-        <button class="dugme zeleno" id="novo">＋ Dodaj novo pitanje</button>
+        ${info.zadaci ? '<span class="sitno">Zadaci se generišu alatom – ovde možeš da ispraviš postojeći ili predložiš brisanje.</span>' : '<button class="dugme zeleno" id="novo">＋ Dodaj novo pitanje</button>'}
       </div>
       <div class="u-alati">
         ${lekcije.length ? `<select id="lekcija"><option value="">Sve lekcije</option>${lekcije.map((l, i) =>
@@ -240,13 +240,13 @@ async function ekranSpisak(a) {
         <input class="u-pretraga" id="pretraga" placeholder="🔍 Traži u pitanjima i odgovorima…" value="${esc(pretraga)}">
         <span class="sitno" id="broj-nadjenih"></span>
       </div>
-      <table class="u-tabela"><thead><tr><th>#</th>${lekcije.length ? '<th>Lekcija</th>' : ''}<th>Težina</th><th>Pitanje</th><th>Tačan odgovor</th><th>Autor</th></tr></thead>
+      <table class="u-tabela"><thead><tr><th>#</th>${lekcije.length ? '<th>Lekcija</th>' : ''}<th>Težina</th><th>${info.zadaci ? 'Zadatak' : 'Pitanje'}</th><th>Tačan odgovor</th><th>Autor</th></tr></thead>
         <tbody id="redovi"></tbody></table>
     </div>`;
   const crtajRedove = () => {
     const q = normalizuj($('#pretraga').value.trim());
     const lek = a.lekcija;
-    const vidljiva = pitanja.filter(({ p }) => (!lek || p.lekcija === lek) && (!q || normalizuj([p.pitanje, ...(p.odgovori || []), ...(p.parovi || []).flat(), p.autor].join(' ')).includes(q)));
+    const vidljiva = pitanja.filter(({ p }) => (!lek || p.lekcija === lek) && (!q || normalizuj([p.pitanje, ...(p.odgovori || []), ...(p.parovi || []).flat(), ...(p.resenje || []).map((k) => k.t), p.autor].join(' ')).includes(q)));
     $('#broj-nadjenih').textContent = q || lek ? `prikazano ${vidljiva.length}` : '';
     $('#redovi').innerHTML = vidljiva.length ? vidljiva.map(({ p, i }) => `<tr class="red-pitanja" data-i="${i}">
       <td class="br">${i + 1}</td>${lekcije.length ? `<td class="br">${p.lekcija || ''}</td>` : ''}
@@ -254,12 +254,12 @@ async function ekranSpisak(a) {
       <td>${prijavaZa(a.paket, p.pitanje) ? `<span class="u-prijavljeno" title="${natpisPrijava(prijavaZa(a.paket, p.pitanje).broj)} da je pogrešno">⚠️ ${prijavaZa(a.paket, p.pitanje).broj}</span> ` : ''}${IKONE_VRSTA[p.vrsta] ? IKONE_VRSTA[p.vrsta] + ' ' : ''}${mat(p.pitanje)}</td>
       <td class="tacan">${p.vrsta === 'spoji' ? `<span class="sitno">${p.parovi?.length || 0} para</span>` : (p.vrsta === 'uljez' ? 'uljez: ' : '') + mat(p.odgovori?.[0] || '')}</td>
       <td class="autor">${esc(p.autor || '')}</td></tr>`).join('')
-      : `<tr><td colspan="6" class="u-prazno">Nema pitanja${q ? ' za ovu pretragu' : ''}.</td></tr>`;
+      : `<tr><td colspan="6" class="u-prazno">Nema ${info.zadaci ? 'zadataka' : 'pitanja'}${q ? ' za ovu pretragu' : ''}.</td></tr>`;
     $$('#redovi tr[data-i]').forEach((tr) => (tr.onclick = () => idi({ paket: a.paket, lekcija: a.lekcija, pitanje: tr.dataset.i })));
   };
   $('#pretraga').oninput = (e) => { ls.set('pretraga-' + a.paket, e.target.value); crtajRedove(); };
   if ($('#lekcija')) $('#lekcija').onchange = (e) => idi({ paket: a.paket, lekcija: e.target.value });
-  $('#novo').onclick = () => idi({ paket: a.paket, lekcija: a.lekcija, pitanje: 'novo' });
+  if ($('#novo')) $('#novo').onclick = () => idi({ paket: a.paket, lekcija: a.lekcija, pitanje: 'novo' });
   $$('[data-h]').forEach((b) => (b.onclick = () => idi(b.dataset.h)));
   crtajRedove();
 }
@@ -268,7 +268,7 @@ async function ekranSpisak(a) {
 let F = null; // stanje forme: { vrsta, tezina, lekcija, pitanje, odgovori[4], parovi[[l,d]], objasnjenje, zanimljivost, rec, mediji }
 
 function izPitanja(p) {
-  return {
+  const f = {
     vrsta: p.vrsta === 'uljez' || p.vrsta === 'spoji' ? p.vrsta : 'izbor',
     tezina: p.tezina || 2,
     lekcija: p.lekcija || null,
@@ -280,10 +280,21 @@ function izPitanja(p) {
     rec: p.rec || '',
     mediji: p.mediji || null,
   };
+  // zadaci nemaju zanimljivost/ključnu reč, već rešenje korak po korak; crteži se čuvaju nepromenjeni
+  if (kviz?.zadaci) f.resenje = (p.resenje || []).map((k) => ({ ...k, t: k.t || '' }));
+  return f;
 }
 
 // ono što se šalje serveru (server ponovo proverava i sastavlja konačan oblik)
 function zaSlanje() {
+  if (kviz?.zadaci) return {
+    tezina: F.tezina,
+    lekcija: F.lekcija || undefined,
+    pitanje: F.pitanje,
+    odgovori: F.odgovori,
+    resenje: F.resenje,
+    mediji: F.mediji || undefined,
+  };
   return {
     vrsta: F.vrsta,
     tezina: F.tezina,
@@ -305,9 +316,10 @@ const DOZVOLJENA = /^([a-zčćžšđ]|[а-шђјљњћџ])+$/;
 function proveri() {
   const g = [], u = [];
   const lek = kviz.lekcije || [];
+  const zadatak = !!kviz.zadaci;
   if (lek.length && !F.lekcija) g.push('Izaberi lekciju.');
   if (!F.pitanje.trim()) g.push('Upiši tekst pitanja.');
-  if (F.vrsta === 'spoji') {
+  if (!zadatak && F.vrsta === 'spoji') {
     const P = F.parovi.filter((x) => x[0].trim() || x[1].trim());
     if (P.length < 3) g.push('„Spoj pojmove“ mora imati bar 3 para.');
     if (P.some((x) => !x[0].trim() || !x[1].trim())) g.push('Svaki par mora imati popunjena oba pojma.');
@@ -319,6 +331,11 @@ function proveri() {
     const d = F.odgovori.map((x) => x.trim().length);
     if (F.vrsta === 'izbor' && d[0] > 12 && d[0] > 1.4 * Math.max(d[1], d[2], d[3]))
       u.push('Tačan odgovor je primetno duži od netačnih – igrači bi mogli da ga pogode po dužini. Probaj da ga skratiš ili da produžiš netačne.');
+  }
+  if (zadatak) {
+    if (!Array.isArray(F.resenje) || !F.resenje.length) g.push('Rešenje zadatka mora imati bar jedan korak.');
+    else if (F.resenje.some((k) => !String(k.t || '').trim())) g.push('Svaki korak rešenja mora imati tekst.');
+    return { g, u };
   }
   if (F.vrsta === 'uljez' && !F.objasnjenje.trim()) g.push('Napiši objašnjenje: zašto je baš to uljez.');
   if (!F.zanimljivost.trim()) g.push('Napiši zanimljivost („Da li si znao?“).');
@@ -340,7 +357,9 @@ async function ekranIzmena(a) {
   const info = kvizPo(a.paket);
   if (!info) return ekranSpisak(a);
   await ucitajKviz(a.paket);
+  const zadatak = !!kviz.zadaci;
   const novo = a.pitanje === 'novo';
+  if (zadatak && novo) { poruka('Zadaci se ne dodaju preko urednika – možeš da ispraviš postojeći zadatak.'); return idi({ paket: a.paket, lekcija: a.lekcija }); }
   const indeks = novo ? null : +a.pitanje;
   const original = novo ? null : kviz.pitanja?.[indeks];
   if (!novo && !original) { poruka('Pitanje nije pronađeno'); return idi({ paket: a.paket, lekcija: a.lekcija }); }
@@ -354,18 +373,18 @@ async function ekranIzmena(a) {
       <span class="sitno">${esc(info.ikona)} ${esc(kviz.naziv)}</span></div>
     <div class="u-izmena">
       <div class="kartica">
-        <h2>${novo ? '＋ Novo pitanje' : `✏️ Izmena pitanja #${indeks + 1}`}</h2>
+        <h2>${novo ? '＋ Novo pitanje' : zadatak ? `✏️ Izmena zadatka #${indeks + 1}` : `✏️ Izmena pitanja #${indeks + 1}`}</h2>
         ${original?.autor ? `<p class="sitno">Dosadašnji autor: ${esc(original.autor)}</p>` : ''}
-        ${polje('Vrsta pitanja', radio('vrsta', VRSTE, F.vrsta), '„Izbaci uljeza“: među 4 pojma jedan ne pripada ostalima. „Spoj pojmove“: igrač spaja parove (3–5).')}
+        ${zadatak ? '' : polje('Vrsta pitanja', radio('vrsta', VRSTE, F.vrsta), '„Izbaci uljeza“: među 4 pojma jedan ne pripada ostalima. „Spoj pojmove“: igrač spaja parove (3–5).')}
         ${lekcije.length ? polje('Lekcija', `<select id="f-lekcija"><option value="">— izaberi lekciju —</option>${lekcije.map((l, i) =>
           `<option value="${i + 1}" ${F.lekcija === i + 1 ? 'selected' : ''}>${i + 1}. ${esc(nazivLekcije(l))}</option>`).join('')}</select>`) : ''}
         ${polje('Težina', radio('tezina', TEZINE, F.tezina), 'Teška pitanja nose 1,5 puta više poena. Dobra mešavina: oko trećine lakih, malo više srednjih i četvrtina teških.')}
-        ${polje('Pitanje', '<textarea id="f-pitanje" rows="2" maxlength="600"></textarea>', 'Piši svojim rečima – ne prepisuj rečenice iz udžbenika.')}
+        ${polje(zadatak ? 'Tekst zadatka' : 'Pitanje', '<textarea id="f-pitanje" rows="2" maxlength="600"></textarea>', zadatak ? 'Matematiku piši između $…$, npr. $x² = 9$.' : 'Piši svojim rečima – ne prepisuj rečenice iz udžbenika.')}
         <div id="f-odgovori"></div>
-        ${polje('Zanimljivost („💡 Da li si znao?“)', '<textarea id="f-zanimljivost" rows="3" maxlength="1200"></textarea>',
+        ${zadatak ? '' : polje('Zanimljivost („💡 Da li si znao?“)', '<textarea id="f-zanimljivost" rows="3" maxlength="1200"></textarea>',
           'Prikazuje se posle odgovora. Neka bude nešto <b>neočigledno</b> što proširuje znanje – ne ponavljanje tačnog odgovora.')}
-        <div id="f-objasnjenje-mesto"></div>
-        ${polje('Ključna reč', '<input id="f-rec" maxlength="20" style="max-width:260px">',
+        ${zadatak ? '<div class="u-sekcija" id="f-resenje"></div>' : '<div id="f-objasnjenje-mesto"></div>'}
+        ${zadatak ? '' : polje('Ključna reč', '<input id="f-rec" maxlength="20" style="max-width:260px">',
           'Jedna reč (3–11 slova, najbolje 5–8) vezana za pitanje, npr. za „Ko je izumeo gromobran?“ → <i>gromobran</i>. U krugu „Najduža reč“ igrači pokušavaju da je slože od ponuđenih slova.', 'p-rec')}
         <div class="u-sekcija" id="f-medij"></div>
         <div class="u-sekcija">
@@ -380,29 +399,28 @@ async function ekranIzmena(a) {
           ${ukljuceno ? '' : '<span class="sitno">Slanje predloga nije podešeno na ovom serveru.</span>'}
         </div>
         ${novo ? '' : `<div class="u-akcije u-druge-akcije">
-          <span class="sitno">Ne želiš da menjaš pitanje?</span>
-          <button class="u-mini" id="komentar" title="Primedba ili pitanje za urednika – pitanje ostaje kakvo jeste">💬 Ostavi komentar</button>
-          <button class="u-mini u-opasno" id="brisanje" title="Predlog da se pitanje izbaci iz igre">🗑 Predloži brisanje</button>
+          <span class="sitno">Ne želiš da menjaš ${zadatak ? 'zadatak' : 'pitanje'}?</span>
+          <button class="u-mini" id="komentar" title="Primedba ili pitanje za urednika – ${zadatak ? 'zadatak' : 'pitanje'} ostaje kakvo jeste">💬 Ostavi komentar</button>
+          <button class="u-mini u-opasno" id="brisanje" title="Predlog da se ${zadatak ? 'zadatak' : 'pitanje'} izbaci iz igre">🗑 Predloži brisanje</button>
         </div>`}
       </div>
       <div class="u-pregled-okvir">
         <h3>👁 Pregled <span class="razmak"></span>${radio('pismo', { cirilica: 'Ćirilica', latinica: 'Latinica' }, ls.get('pismo', 'cirilica'))}</h3>
         <div class="u-pregled" id="pregled"></div>
-        <p class="napomena sitno centar">Ovako pitanje izgleda na telefonu posle odgovora. U igri se odgovori mešaju.</p>
+        <p class="napomena sitno centar">Ovako ${zadatak ? 'zadatak' : 'pitanje'} izgleda na telefonu posle odgovora. U igri se odgovori mešaju.</p>
       </div>
     </div>`;
 
   $('#f-pitanje').value = F.pitanje;
-  $('#f-zanimljivost').value = F.zanimljivost;
-  $('#f-rec').value = F.rec;
+  if ($('#f-zanimljivost')) $('#f-zanimljivost').value = F.zanimljivost;
+  if ($('#f-rec')) $('#f-rec').value = F.rec;
   crtajOdgovore();
-  crtajObjasnjenje();
-  crtajMedij(original?.mediji);
+  if (zadatak) { crtajResenje(); crtajMedijZadatak(original); } else { crtajObjasnjenje(); crtajMedij(original?.mediji); }
 
   const promena = () => { izmenjeno = true; osveziPregled(); };
   $('#f-pitanje').oninput = (e) => { F.pitanje = e.target.value; promena(); };
-  $('#f-zanimljivost').oninput = (e) => { F.zanimljivost = e.target.value; promena(); };
-  $('#f-rec').oninput = (e) => { F.rec = e.target.value.trim(); promena(); };
+  if ($('#f-zanimljivost')) $('#f-zanimljivost').oninput = (e) => { F.zanimljivost = e.target.value; promena(); };
+  if ($('#f-rec')) $('#f-rec').oninput = (e) => { F.rec = e.target.value.trim(); promena(); };
   if ($('#f-lekcija')) $('#f-lekcija').onchange = (e) => { F.lekcija = e.target.value ? +e.target.value : null; promena(); };
   $('#f-autor').oninput = (e) => ls.set('autor', e.target.value.trim());
   $$('.u-radio[data-r]').forEach((g) => $$('button', g).forEach((b) => (b.onclick = () => {
@@ -461,6 +479,33 @@ function crtajObjasnjenje() {
   $('#f-objasnjenje').oninput = (e) => { F.objasnjenje = e.target.value; izmenjeno = true; osveziPregled(); };
 }
 
+// Rešenje zadatka korak po korak: menja se samo tekst, crtež/istaknuti delovi ostaju iz originala
+function crtajResenje() {
+  const el = $('#f-resenje');
+  const koraci = F.resenje || [];
+  el.innerHTML = `<span class="natpis" style="font-weight:800">Rešenje korak po korak</span>
+    ${koraci.map((k, i) => `<div class="u-resenje-korak">
+      <span class="oznaka">${i + 1}.</span>
+      <textarea data-k="${i}" rows="2" maxlength="800" placeholder="Tekst koraka (matematika između $…$)"></textarea>
+      ${k.crtez ? '<span class="sitno">🎨 Ovaj korak ima crtež – crtež se ne menja kroz urednik.</span>' : ''}
+    </div>`).join('')}
+    <span class="pomoc">Ispravljaj samo tekst koraka. Crteži i animacije uz zadatak/rešenje ostaju kakvi jesu.</span>`;
+  $$('textarea[data-k]', el).forEach((t) => {
+    t.value = koraci[+t.dataset.k].t || '';
+    t.oninput = () => { koraci[+t.dataset.k].t = t.value; izmenjeno = true; osveziPregled(); };
+  });
+}
+
+// Zadaci: vizuelizacije (crtež uz pitanje, crtež/animacija koraka) se ne menjaju kroz urednik – samo obaveštavamo da postoje
+function crtajMedijZadatak(p) {
+  const el = $('#f-medij');
+  const ima = !!(p?.mediji || p?.resenjeCrtez || p?.resenje?.some((k) => k.crtez));
+  el.innerHTML = `<span class="natpis" style="font-weight:800">Vizuelizacije</span>
+    <p class="sitno">${ima
+      ? 'Ovaj zadatak ima crtež(e) ili animaciju uz pitanje/rešenje. Oni se <b>ne menjaju</b> kroz urednik – ostaju kakvi jesu.'
+      : 'Ovaj zadatak nema crteže ni animacije.'}</p>`;
+}
+
 // medij (slika, mapa, 3D, melodija…): može da se zadrži ili ukloni; za iskusne – izmena kao JSON
 function crtajMedij(stari) {
   const el = $('#f-medij');
@@ -499,6 +544,7 @@ function osveziPregled(odmah = false) {
   if (!odmah) { pregledTajmer = setTimeout(() => osveziPregled(true), 150); return; }
   const el = $('#pregled');
   if (!el) return;
+  const zadatak = !!kviz.zadaci;
   const { g, u } = proveri();
   $('#f-greske').innerHTML = u.length ? `<div class="u-upozorenje">${u.map(esc).join('<br>')}</div>` : '';
   $('#p-rec')?.classList.toggle('greska', g.some((x) => x.startsWith('Ključna')));
@@ -515,16 +561,19 @@ function osveziPregled(odmah = false) {
   const medijKljuc = JSON.stringify(P.mediji || null) + kvizId;
   const zadrziMedij = medijKljuc === poslednjiMedij && $('#pv-medij', el);
   const stariMedij = zadrziMedij ? $('#pv-medij', el) : null;
+  const ispod = zadatak
+    ? `<div class="kartica resenje">${naslov}<h3>📝 Rešenje</h3><ol class="koraci">${(P.resenje || []).map((k) => `<li>${mat(k.t) || '<span style="opacity:.4">…</span>'}</li>`).join('')}</ol></div>`
+    : `<div class="kartica zanimljivost">${naslov}${P.objasnjenje.trim() ? `<p>${esc(P.objasnjenje)}</p>` : ''}
+      <h3 style="margin-top:12px">💡 Da li si znao?</h3><div>${esc(P.zanimljivost) || '<span style="opacity:.4">…</span>'}</div></div>`;
   el.innerHTML = `
     <div class="traka"><span class="znacka">1/10</span>${kviz.ikona ? `<span class="znacka" style="background:${esc(kviz.boja || '#6c5ce7')}">${kviz.ikona} ${esc(kviz.naziv)}</span>` : ''}
       <span class="znacka tezina">${zv}${P.tezina === 3 ? ' ×1,5' : ''}</span></div>
     ${P.vrsta !== 'izbor' ? `<div class="vrsta-pitanja">${P.vrsta === 'uljez' ? '🕵️ Izbaci uljeza' : '🔗 Spoj pojmove'}</div>` : ''}
-    <div class="pitanje-tekst">${mat(P.pitanje) || '<span style="opacity:.4">Tekst pitanja…</span>'}</div>
+    <div class="pitanje-tekst">${mat(P.pitanje) || `<span style="opacity:.4">${zadatak ? 'Tekst zadatka…' : 'Tekst pitanja…'}</span>`}</div>
     <div id="pv-medij-mesto"></div>
     ${telo}
-    <div class="kartica zanimljivost">${naslov}${P.objasnjenje.trim() ? `<p>${esc(P.objasnjenje)}</p>` : ''}
-      <h3 style="margin-top:12px">💡 Da li si znao?</h3><div>${esc(P.zanimljivost) || '<span style="opacity:.4">…</span>'}</div></div>
-    ${P.rec ? `<p class="sitno centar">Ključna reč: <b>${esc(P.rec.toUpperCase())}</b></p>` : ''}`;
+    ${ispod}
+    ${!zadatak && P.rec ? `<p class="sitno centar">Ključna reč: <b>${esc(P.rec.toUpperCase())}</b></p>` : ''}`;
   // medij se ne crta ponovo pri svakom slovu (3D prikazi, melodije…)
   const mesto = $('#pv-medij-mesto', el);
   if (stariMedij) mesto.replaceWith(stariMedij);
@@ -569,7 +618,7 @@ function potvrdi(a, original) {
     return;
   }
   prozor(`<h2>📨 Slanje predloga</h2>
-    <p>${original ? 'Predlažeš izmenu pitanja' : 'Predlažeš novo pitanje'} u kvizu <b>${esc(kviz.naziv)}</b>:</p>
+    <p>${original ? (kviz.zadaci ? 'Predlažeš izmenu zadatka' : 'Predlažeš izmenu pitanja') : 'Predlažeš novo pitanje'} u kvizu <b>${esc(kviz.naziv)}</b>:</p>
     <p class="kartica" style="margin:8px 0">${mat(F.pitanje)}</p>
     ${u.length ? `<div class="u-upozorenje">${u.map(esc).join('<br>')}</div>` : ''}
     <label class="u-potvrda"><input type="checkbox" id="tacno"> Proverio/la sam da su sve činjenice tačne (pitanja igraju i deca).</label>

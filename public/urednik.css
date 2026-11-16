@@ -28,6 +28,10 @@ body.urednik { font-size: 16px; }
 .u-dobro { color: #55efc4; font-size: .85em; }
 
 .u-odgovor { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+.u-resenje-korak { display: flex; gap: 8px; align-items: flex-start; margin-bottom: 8px; }
+.u-resenje-korak .oznaka { flex: 0 0 2em; font-weight: 800; color: var(--blago); padding-top: 9px; text-align: right; }
+.u-resenje-korak textarea { flex: 1; }
+.u-resenje-korak .sitno { flex: 0 0 220px; padding-top: 9px; }
 .u-odgovor .oznaka { flex: 0 0 150px; font-weight: 800; font-size: .9em; padding: 9px 10px; border-radius: 10px; text-align: center; }
 .u-odgovor .oznaka.tacan { background: #00876a; }
 .u-odgovor .oznaka.netacan { background: #4b4794; }
