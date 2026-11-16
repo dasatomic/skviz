@@ -1072,7 +1072,7 @@
       "odgovori": [
         "Kod ravnomernog kretanja",
         "Kod ubrzanog kretanja",
-        "Nikada",
+        "Samo na startu, kada telo kreće iz mirovanja",
         "Kod kočenja"
       ],
       "zanimljivost": "Tempomat u automobilu pokušava da zadrži stalnu trenutnu brzinu.",
@@ -1990,7 +1990,7 @@
         "Voda deluje na veslo napred i pokreće čamac",
         "Da bi ohladio vodu oko čamca dok vesla po suncu",
         "Da bi uplašio ribe i oslobodio put ispred čamca",
-        "Bez razloga"
+        "Da napravi talase koji guraju čamac napred"
       ],
       "zanimljivost": "Veslački osmerac dostiže brzinu i preko 20 km/h.",
       "rec": "veslo"
@@ -3879,7 +3879,7 @@
         "Kada je njegova gustina veća od gustine tečnosti",
         "Kada je malo i lako, pa ga voda ne može da drži",
         "Kada je okruglog oblika, pa se lako kotrlja ka dnu",
-        "Nikad"
+        "Kada je njegova gustina manja od gustine tečnosti"
       ],
       "zanimljivost": "Ekser tone, ali brod od istog gvožđa pluta – važna je ukupna gustina, sa vazduhom unutra.",
       "rec": "tonjenje",
@@ -3962,7 +3962,7 @@
         "Oko 90%",
         "Oko 10%",
         "Oko 50%",
-        "Ništa"
+        "Oko 1%"
       ],
       "zanimljivost": "Otuda izraz „vrh ledenog brega“ – većina se ne vidi, a to je bilo kobno za „Titanik“.",
       "rec": "santa",
@@ -5102,7 +5102,7 @@
         "Uglavnom se skuplja",
         "Širi se",
         "Raste mu masa",
-        "Ništa"
+        "Smanjuje mu se masa"
       ],
       "zanimljivost": "Kovači stavljaju vreo metalni obruč na drveni točak – hlađenjem se obruč skupi i čvrsto stegne.",
       "rec": "hlađenje"
@@ -5128,7 +5128,7 @@
         "Da se šine mogu pomerati pri širenju i skupljanju",
         "Da budu jeftiniji, jer se manje čelika troši za izradu šina",
         "Da se lakše odvrnu kada radnici menjaju stare i oštećene šine",
-        "Bez razloga"
+        "Da bi kišnica lakše oticala kroz rupe"
       ],
       "zanimljivost": "Na brzim prugama danas se šine zavaruju u duge trake, ali se prethodno zategnu da izdrže promene temperature.",
       "rec": "šine"
@@ -5141,7 +5141,7 @@
         "Vazduh u gumi se dodatno širi i pritisak raste",
         "Guma postaje teža od vrelog vazduha, pa se brže troši na asfaltu",
         "Guma se skuplja na vrućini, pa vazduh brže izlazi kroz ventil",
-        "Nema veze"
+        "Vreo vazduh lakše izlazi kroz ventil, pa pritisak opada"
       ],
       "zanimljivost": "Pritisak u gumama se proverava kada su „hladne“, pre vožnje.",
       "rec": "guma"
@@ -5848,7 +5848,7 @@
         "Toplije se hladi, a hladnije zagreva dok se temperature ne izjednače",
         "Oba tela se zagrevaju, jer trenje pri dodiru stvara dodatnu toplotu u njima",
         "Oba se hlade",
-        "Ništa"
+        "Toplije telo se još više zagreva"
       ],
       "zanimljivost": "Ovo stanje se zove toplotna ravnoteža – tako radi i termometar.",
       "rec": "ravnoteža"
