@@ -31,7 +31,7 @@ Z(2, 'Dva biciklista istovremeno krenu sa raskrsnice dva puta koji se seku pod p
   [K('Za $1,5 h$ prvi pređe $16 · 1,5 = 24 km$, a drugi $12 · 1,5 = 18 km$.', ['rb', 'rp']),
    K('Putevi su normalni, pa je njihovo rastojanje hipotenuza: $d² = 24² + 18² = 576 + 324 = 900$.', ['d']),
    K('$d = √{900} = 30 km$. (Opet $3, 4, 5$ – ovog puta puta $6$.)', ['d'])],
-  G({ R: [0, 0], B: [24, 0], P: [0, 18] }, [{ pu: 'BRP' }, { d: 'RB', o: '24 km', id: 'rb' }, { d: 'RP', o: '18 km', id: 'rp' }, { d: 'BP', o: 'd', id: 'd', isp: 1, b: 3 }, { tx: '🚲', at: [25.5, 1.8] }, { tx: '🚲', at: [1.8, 19.5] }]));
+  G({ R: [0, 0], B: [24, 0], P: [0, 18] }, [{ pu: 'BRP' }, { d: 'RB', o: '24 km', id: 'rb', k: 1 }, { d: 'RP', o: '18 km', id: 'rp', k: 1 }, { d: 'BP', o: 'd', id: 'd', isp: 1, b: 3 }, { tx: '🚲', at: [25.5, 1.8] }, { tx: '🚲', at: [1.8, 19.5] }]));
 
 Z(2, 'Površina pravouglog trougla je $30 cm²$, a jedna kateta je $5 cm$. Kolika je hipotenuza?',
   ['$13 cm$', '$12 cm$', '$17 cm$', '$15 cm$'],
@@ -102,7 +102,7 @@ Z(1, 'Stranice trougla su $9 cm$, $40 cm$ i $41 cm$. Šta je tačno?',
 Z(2, 'Koja od ovih trojki brojeva NIJE Pitagorina trojka?',
   ['$16, 30, 35$', '$12, 35, 37$', '$11, 60, 61$', '$15, 36, 39$'],
   [K('Pitagorina trojka su tri prirodna broja za koje važi $a² + b² = c²$.'),
-   K('$12² + 35² = 144 + 1225 = 1369 = 37²$ ✓\n$11² + 60² = 121 + 3600 = 3721 = 61²$ ✓\n$15² + 36² = 225 + 1296 = 1521 = 39²$ ✓'),
+   K('Ostale trojke jesu Pitagorine: $12² + 35² = 37²$, $11² + 60² = 61²$ i $15² + 36² = 39²$ (sve ✓).'),
    K('$16² + 30² = 256 + 900 = 1156 = 34²$, a ne $35² = 1225$. Prava trojka je $16, 30, 34$ – to je $8, 15, 17$ puta $2$. Stranica od $35$ je predugačka: ugao naspram nje bio bi tup.', [],
      G({ C: [0, 0], A: [30, 0], B: [0, 16], D: [-1.15, 15.96] }, [{ p: 'ABC', b: 2 }, { pu: 'ACB' }, { d: 'CA', o: '30' }, { d: 'AB', o: '34', b: 2 }, { p: 'ADC', b: 1, prazno: 1, isp: 1 }, { d: 'AD', o: '35', b: 1 }], { bezImena: ['A', 'B', 'C', 'D'] }))]);
 
@@ -152,7 +152,7 @@ Z(2, 'U trouglu $ABC$ je $|AB| = 17 cm$, $|BC| = 8 cm$ i $|AC| = 15 cm$. Koliki 
      G({ C: [0, 0], A: [15, 0], B: [0, 8] }, [{ p: 'ABC' }, { pu: 'ACB', b: 3 }, { d: 'CA', o: '15 cm' }, { d: 'CB', o: '8 cm' }, { d: 'AB', o: '17 cm' }]))]);
 
 Z(3, 'Stolar pravi ram od dve letve dužine $40 cm$ i $30 cm$, spojene u temenu $A$. Da proveri ugao, izmerio je rastojanje slobodnih krajeva: $49 cm$. Šta zaključuje?',
-  ['Ugao je manji od $90°$', 'Ugao je tačno $90°$', 'Ugao je veći od $90°$', 'Ne može ništa da zaključi'],
+  ['Ugao je manji od $90°$', 'Ugao je tačno $90°$', 'Ugao je veći od $90°$', 'Ugao je oko $60°$'],
   [K('Da je ugao prav, rastojanje krajeva bi bilo hipotenuza: $√{30² + 40²} = √{2500} = 50 cm$.'),
    K('Izmereno je $49 cm$: $49² = 2401 < 2500 = 30² + 40²$.', ['bd']),
    K('Kad je kvadrat naspramne stranice manji od zbira kvadrata druge dve, ugao je oštar (manji od $90°$). Letve treba malo razmaknuti, dok rastojanje ne bude tačno $50 cm$.', ['ugao'])],
@@ -557,7 +557,7 @@ Z(2, 'Na brojevnoj pravoj nacrtan je kvadrat stranice $1$ između tačaka $1$ i 
   [K('Dijagonala kvadrata stranice $1$: $d² = 1² + 1² = 2$, $d = √{2}$.', ['ac']),
    K('Luk prenosi dijagonalu na pravu počevši od tačke $1$: $T = 1 + √{2} ≈ 2,41$.', ['luk'])],
   G({ A: [1, 0], B: [2, 0], C: [2, 1], D: [1, 1], T: [2.414, 0, -60] },
-    [{ osa: [-1, 4] }, { p: 'ABCD', b: 1 }, { d: 'AC', b: 3, id: 'ac' }, { l: 'A', r: 1.414, od: 0, do: 45, b: 3, id: 'luk' }, { tacka: 'T', b: 3 }], { bezImena: ['A', 'B', 'C', 'D'] }));
+    [{ osa: [-1, 4] }, { p: 'ABCD', b: 1 }, { d: 'AC', b: 3, id: 'ac' }, { l: 'A', r: 1.414, od: 0, do: 45, b: 3, id: 'luk', k: 2 }, { tacka: 'T', b: 3, k: 2 }], { bezImena: ['A', 'B', 'C', 'D'] }));
 
 Z(2, 'Treba nacrtati kvadrat površine $29 cm²$. Kolike treba da budu katete pravouglog trougla čija je hipotenuza stranica tog kvadrata?',
   ['5 cm i 2 cm', '4 cm i 3 cm', '3 cm i 2 cm', '4 cm i 2 cm'],
@@ -571,7 +571,7 @@ Z(3, 'Treba konstruisati kvadrat površine $15 cm²$. Koji pravougli trougao daj
   ['Hipotenuza 4 cm, kateta 1 cm', 'Hipotenuza 5 cm, kateta 2 cm', 'Katete 3 cm i 2 cm', 'Katete 4 cm i 1 cm'],
   [K('Stranica treba da bude $√{15}$. Zbir dva kvadrata ($1, 4, 9$) ne može dati $15$.'),
    K('Ali razlika može: $15 = 16 − 1 = 4² − 1²$. Tada je $√{15}$ kateta trougla sa hipotenuzom $4 cm$ i katetom $1 cm$. (Ostali trouglovi daju $√{21}$, $√{13}$ i $√{17}$.)'),
-   K('Konstrukcija: kateta $1 cm$, u njenom kraju normala, pa luk poluprečnika $4 cm$ iz drugog kraja – druga kateta je $√{15} ≈ 3,87 cm$.', [],
+   K('Konstrukcija: kateta $1 cm$, u njenom kraju normala, pa luk poluprečnika $4 cm$ iz početka katete – druga kateta je $√{15} ≈ 3,87 cm$.', [],
      G({ C: [0, 0], A: [1, 0], B: [0, 3.873] },
        [{ p: 'ABC', b: 1 }, { pu: 'ACB' }, { d: 'CA', o: '1' }, { d: 'AB', o: '4' }, { d: 'CB', o: '√15', b: 3 }, { l: 'A', r: 4, od: 95, do: 115, b: 3 }], { bezImena: ['A', 'B', 'C'] }))]);
 
@@ -647,9 +647,9 @@ Z(2, 'Tačka $P$ leži na $x$-osi i jednako je udaljena od tačaka $A(0, 4)$ i $
   [K('Neka je $P(x, 0)$. Tada je $PA² = x² + 4²$ (trougao $OPA$).', ['pa']),
    K('$PB = 8 − x$, jer su $P$ i $B$ obe na $x$-osi.', ['pb']),
    K('$x² + 16 = (8 − x)² = 64 − 16x + x²$, pa je $16x = 48$ i $x = 3$.'),
-   K('Provera: $PA = √{9 + 16} = 5$ i $PB = 8 − 3 = 5$ ✓ ($P(4, 0)$ je središte $OB$, ali to nije dovoljno.)', ['pa', 'pb'])],
+   K('Provera: $PA = √{9 + 16} = 5$ i $PB = 8 − 3 = 5$ ✓.', ['pa', 'pb'])],
   G({ O: [0, 0, 225], A: [0, 4], B: [8, 0, -60], P: [3, 0, -90] },
-    [{ mreza: [-1, 9, -1, 5], ose: ['x', 'y'] }, { tacka: 'ABP', b: 3 }, { d: 'PA', b: 1, id: 'pa' }, { d: 'PB', b: 2, id: 'pb' }, { p: 'OPA', b: 1, k: 1, prazno: 0 }], { velicina: 280 }));
+    [{ mreza: [-1, 9, -1, 5], ose: ['x', 'y'] }, { tacka: 'A', b: 3 }, { tacka: 'B', b: 3 }, { tacka: 'P', b: 3, k: 1 }, { d: 'PA', b: 1, id: 'pa', k: 1 }, { d: 'PB', b: 2, id: 'pb', k: 1 }, { p: 'OPA', b: 1, k: 1, prazno: 0 }], { velicina: 280 }));
 
 Z(2, 'Kakav je trougao sa temenima $A(1, 1)$, $B(5, 1)$ i $C(3, 5)$?',
   ['jednakokraki', 'jednakostranični', 'pravougli', 'raznostranični'],
@@ -682,6 +682,6 @@ Z(3, 'Rastojanje tačaka $A(2, y)$ i $B(5, 1)$ jednako je $5$. Koliko može biti
    K('Vertikalna kateta: $√{5² − 3²} = √{16} = 4$. Tačka $A$ je $4$ iznad ili $4$ ispod ordinate tačke $B$.', ['a1', 'a2']),
    K('$y = 1 + 4 = 5$ ili $y = 1 − 4 = −3$. Obe tačke $A₁(2, 5)$ i $A₂(2, −3)$ su na rastojanju $5$ od $B$ (trojka $3, 4, 5$).')],
   G({ B: [5, 1, 0], 'A₁': [2, 5, 135], 'A₂': [2, -3, 225], E: [2, 1], O: [0, 0] },
-    [{ mreza: [-1, 7, -4, 6], ose: ['x', 'y'] }, { kr: 'B', r: 5, b: 4, isp: 1 }, { d: 'A₁A₂', isp: 1, b: 5 }, { tacka: 'B', b: 3 },
+    [{ mreza: [-1, 7, -4, 6], ose: ['x', 'y'] }, { kr: 'B', r: 5, b: 4, isp: 1 }, { d: 'A₁A₂', isp: 1, b: 5, k: 3 }, { tacka: 'B', b: 3 },
      { p: 'EBA₁', b: 1, id: 'a1', k: 2 }, { p: 'EBA₂', b: 2, id: 'a2', k: 2 }, { tacka: 'A₁A₂', b: 1, k: 3 }], { bezImena: ['O', 'E'], velicina: 260 }));
 };

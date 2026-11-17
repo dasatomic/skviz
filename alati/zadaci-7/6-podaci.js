@@ -82,7 +82,7 @@ module.exports = ({ L, Z, K, G, r, proveri, stubici, kruzni }) => {
     kruzni([['25 %', 25], ['', 75]]));
 
   Z(3, 'Anketari su na izlazu sa bazena pitali ljude koliko često plivaju i zaključili da „$80 %$ građana pliva svake nedelje“. U čemu je greška?',
-    ['uzorak nije reprezentativan – na bazenu su uglavnom plivači', 'premalo je ispitanika – mora ih biti tačno $100$', 'procenat je pogrešno izračunat', 'plivanje se ne može ispitivati anketom'],
+    ['uzorak nije reprezentativan – na bazenu su uglavnom plivači', 'premalo je ispitanika, pa rezultat nije tačan', 'procenat je pogrešno izračunat', 'plivanje se ne može ispitivati anketom'],
     [K('Ljudi na bazenu češće plivaju od proseka – uzorak je pristrasan.'),
      K('Zaključak o svim građanima traži uzorak koji predstavlja sve građane (npr. slučajno izabrane ljude na raznim mestima).')]);
 
@@ -224,7 +224,7 @@ module.exports = ({ L, Z, K, G, r, proveri, stubici, kruzni }) => {
     for (let y = 90; y <= 96; y += 2) e.push({ tx: String(y), at: [-0.6, (y - 90) - 0.1] }, { lin: [[0, y - 90], [5, y - 90]], b: 5, debljina: 0.6, isp: 1 });
     vr.forEach(([v, n], i) => { const x = 0.8 + i * 2.2; e.push({ lin: [[x, 0], [x + 1.4, 0], [x + 1.4, v - 90], [x, v - 90]], zatv: 1, gusto: 1, b: i, id: 's' + i }, { tx: '~' + (i ? 'firma B' : 'firma A'), at: [x + 0.7, -0.6] }); });
     Z(2, 'Na dijagramu stub firme B izgleda tri puta viši od stuba firme A. Koliko puta je zarada firme B zaista veća?',
-      ['oko $1,04$ puta (samo $4 %$)', 'tačno $3$ puta', '$2$ puta', '$1,5$ puta'],
+      ['oko $1,04$ puta', '$3$ puta', '$2$ puta', '$1,5$ puta'],
       [K('Pogledaj osu: ne počinje od $0$, nego od $90$! Firma A ima $92$, a firma B $96$.'),
        K('${96|92} ≈ 1,04$ – zarada je veća samo za oko $4 %$.'),
        K('Odsečena osa „uvećava“ male razlike – na to treba paziti kod dijagrama u reklamama i vestima.')],

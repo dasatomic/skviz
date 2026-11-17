@@ -101,9 +101,9 @@
       },
       "odgovori": [
         "Četvorostrana piramida",
-        "Tetraedar",
-        "Kupa",
-        "Trostrana prizma"
+        "Trostrana piramida",
+        "Četvorostrana prizma",
+        "Šestostrana piramida"
       ],
       "zanimljivost": "Keopsova piramida u Egiptu je pravilna četvorostrana piramida visoka oko 139 m (prvobitno 146 m). Skoro 3.800 godina bila je najviša građevina na svetu!",
       "rec": "piramida"
@@ -233,7 +233,7 @@
         "64",
         "48"
       ],
-      "zanimljivost": "Trik za pamćenje: 5, 6, 7, 8 → 56 = 7 · 8. Ovo je jedan od proizvoda u tablici množenja koji ljudi najčešće pogrešno pamte.",
+      "zanimljivost": "Trik: 7 · 8 = 7 · 10 − 7 · 2 = 70 − 14 = 56. Proizvodi sa 7 i 8 su među onima koje deca najčešće pogrešno pamte.",
       "rec": "množenje"
     },
     {
@@ -346,16 +346,16 @@
     },
     {
       "tezina": 3,
-      "pitanje": "Šta je veće: 2³ ili 3²?",
+      "pitanje": "Koliko je 3² − 2³?",
       "mediji": {
         "vrsta": "formula",
-        "tekst": "2³  ?  3²"
+        "tekst": "3² − 2³ = ?"
       },
       "odgovori": [
-        "3²",
-        "2³",
-        "Jednaki su",
-        "Ne može da se uporedi"
+        "1",
+        "−1",
+        "5",
+        "17"
       ],
       "zanimljivost": "2³ = 8, a 3² = 9. Jedini različiti prirodni brojevi za koje je aᵇ = bᵃ su 2 i 4: 2⁴ = 4² = 16.",
       "rec": "stepen"
@@ -385,7 +385,7 @@
         "12 cm",
         "9 cm"
       ],
-      "zanimljivost": "Pitagorina teorema: 6² + 8² = 36 + 64 = 100 = 10². Stari Egipćani su pravili prave uglove pomoću užeta sa 12 čvorova, savijenog u trougao 3–4–5.",
+      "zanimljivost": "Pitagorina teorema: 6² + 8² = 36 + 64 = 100 = 10². Priča se da su stari Egipćani pravili prave uglove pomoću užeta sa 12 čvorova, savijenog u trougao 3–4–5.",
       "rec": "hipotenuza",
       "mediji": {
         "vrsta": "svg",
@@ -495,7 +495,7 @@
         "0",
         "1",
         "−1",
-        "Svaki paran broj"
+        "2"
       ],
       "zanimljivost": "Nulu kao broj razvili su indijski matematičari; Brahmagupta je u 7. veku dao pravila računanja sa njom. Nulom se ne sme deliti – takav račun nema smisla.",
       "rec": "nula"
@@ -521,7 +521,7 @@
         "1 dinar",
         "55 dinara"
       ],
-      "zanimljivost": "Ako je loptica 5, palica je 105, a zajedno 110 ✔. Odgovor „10“ prvi padne na pamet, ali tada bi palica bila 110 i ukupno 120. Ovu mozgalicu pogreši i većina studenata!",
+      "zanimljivost": "Ako je loptica 5, palica je 105, a zajedno 110 ✔. Odgovor „10“ prvi padne na pamet, ali tada bi palica bila 110 i ukupno 120. Ovu mozgalicu pogreši veliki broj ljudi, pa i studenti!",
       "rec": "loptica"
     },
     {
@@ -759,12 +759,12 @@
     },
     {
       "tezina": 1,
-      "pitanje": "Šta je veće: 0,5 ili 0,45?",
+      "pitanje": "Koji je najveći od ovih brojeva?",
       "odgovori": [
         "0,5",
         "0,45",
-        "Jednaki su",
-        "Ne može da se uporedi"
+        "0,405",
+        "0,054"
       ],
       "zanimljivost": "0,5 = 0,50, a 50 stotih je više od 45 stotih. Česta greška je misliti da je „duži“ decimalni broj veći.",
       "rec": "decimala"
@@ -983,12 +983,12 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Šta je veće: 3/7 ili 4/9?",
+      "pitanje": "Koji je najveći od ovih razlomaka?",
       "odgovori": [
         "4/9",
         "3/7",
-        "Jednaki su",
-        "Ne može se uporediti"
+        "1/3",
+        "2/5"
       ],
       "zanimljivost": "Svedemo na isti imenilac: 3/7 = 27/63, a 4/9 = 28/63. Razlika je samo 1/63!",
       "rec": "razlomak"
@@ -1170,7 +1170,7 @@
         "24",
         "10"
       ],
-      "zanimljivost": "Kazaljke se poklapaju na otprilike svakih 65,45 minuta, a ne na svakih sat vremena. Zato između 11 i 1 nema poklapanja osim tačno u 12.",
+      "zanimljivost": "Kazaljke se poklapaju na svakih 65,45 minuta (12 sati : 11), a ne na svaki sat. Jedanaesto poklapanje je tačno u 12 sati, kad se brojanje ponavlja.",
       "rec": "kazaljka"
     },
     {
@@ -1621,12 +1621,12 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Kvadrat i pravougaonik imaju isti obim 20 cm. Pravougaonik ima stranice 8 i 2 cm. Čija je površina veća?",
+      "pitanje": "Kvadrat i pravougaonik imaju isti obim 20 cm. Pravougaonik ima stranice 8 cm i 2 cm. Kolika je površina kvadrata?",
       "odgovori": [
-        "Kvadrata",
-        "Pravougaonika",
-        "Iste su",
-        "Ne može se izračunati"
+        "25 cm²",
+        "16 cm²",
+        "20 cm²",
+        "100 cm²"
       ],
       "zanimljivost": "Kvadrat sa obimom 20 ima stranicu 5 i površinu 25. Od svih pravougaonika sa istim obimom, kvadrat ima najveću površinu.",
       "rec": "kvadrat"
@@ -1672,9 +1672,9 @@
       "pitanje": "Novčić je pao „pismo“ 5 puta zaredom. Kolika je verovatnoća da šesti put padne „glava“?",
       "odgovori": [
         "1/2",
-        "Veća od 1/2",
-        "Manja od 1/2",
-        "Sigurno će pasti glava"
+        "1/32",
+        "1/64",
+        "1/6"
       ],
       "zanimljivost": "Novčić „nema pamćenje“. Verovanje da je glava „na redu“ zove se kockarska zabluda – zbog nje su ljudi gubili bogatstva u kockarnicama.",
       "rec": "novčić"
@@ -1698,7 +1698,7 @@
         "1",
         "0",
         "2",
-        "Nije definisano"
+        "4"
       ],
       "zanimljivost": "Svaki broj različit od nule na nultom stepenu je 1. To mora da važi da bi pravilo 2ⁿ : 2ⁿ = 2⁰ = 1 bilo tačno.",
       "rec": "stepen"
@@ -1709,7 +1709,7 @@
       "odgovori": [
         "0,01",
         "−100",
-        "−20",
+        "0,001",
         "0,1"
       ],
       "zanimljivost": "Negativan izložilac znači recipročnu vrednost: 10⁻² = 1/10² = 1/100.",
@@ -1766,7 +1766,7 @@
         "250"
       ],
       "zanimljivost": "Deliti sa 0,5 je isto što i množiti sa 2. Ovo je čuvena zamka: mnogi kažu 25!",
-      "rec": "zamka"
+      "rec": "deljenje"
     },
     {
       "tezina": 3,
@@ -3526,7 +3526,7 @@
         "$2^{2} · 3 · 5$",
         "$2 · 3 · 10$",
         "$2^{3} · 3 · 5$",
-        "$4 · 3 · 5$"
+        "$2 · 3^{2} · 5$"
       ],
       "zanimljivost": "Svaki prirodan broj veći od 1 rastavlja se na proste činioce na samo jedan način (do na redosled) – to je osnovni stav aritmetike. Drvo može da krene i od 60 = 4 · 15 ili 60 = 2 · 30, ali na kraju uvek ostaju isti listovi: 2, 2, 3 i 5.",
       "medijiOdgovora": {
@@ -9934,7 +9934,7 @@
         "Tačno 1",
         "Malo manje od 1",
         "0,99",
-        "Ne može se izračunati"
+        "Tačno 0,999"
       ],
       "zanimljivost": "Pošto je ${1|3}$ = 0,333…, kad se pomnoži sa 3: ${3|3}$ = 0,999…, a ${3|3}$ = 1. Između 0,999… i 1 ne postoji nijedan broj, pa su to dva zapisa istog broja.",
       "medijiOdgovora": {
@@ -13119,7 +13119,7 @@
         "Beskonačan periodičan",
         "Konačan",
         "Beskonačan neperiodičan",
-        "Nema decimalni zapis"
+        "Konačan, sa šest decimala"
       ],
       "zanimljivost": "${1|7}$ = 0,142857 142857… – grupa od 6 cifara se ponavlja. Svaki razlomak ima ili konačan ili periodičan zapis; beskonačan NEPERIODIČAN zapis imaju samo iracionalni brojevi.",
       "rec": "period"
@@ -14446,14 +14446,14 @@
     },
     {
       "tezina": 3,
-      "pitanje": "Koji broj je veći: $2^{100}$ ili $10^{30}$?",
+      "pitanje": "Koliko je otprilike $2^{100}$?",
       "odgovori": [
-        "$2^{100}$",
         "$10^{30}$",
-        "Jednaki su",
-        "Ne može se odrediti"
+        "$10^{20}$",
+        "$10^{40}$",
+        "$10^{25}$"
       ],
-      "zanimljivost": "Trik: $2^{10} = 1.024$, što je malo više od $10^{3}$. Zato je $2^{100} = (2^{10})^{10}$ malo više od $(10^{3})^{10} = 10^{30}$. Računarski „kilo“ od 1.024 potiče baš odavde.",
+      "zanimljivost": "Trik: $2^{10} = 1.024$, što je malo više od $10^{3}$. Zato je $2^{100} = (2^{10})^{10}$ malo više od $(10^{3})^{10} = 10^{30}$. Računarski „kilo“ od 1.024 zato je tako blizu hiljade.",
       "rec": "stepen"
     },
     {
@@ -14679,7 +14679,7 @@
         "225"
       ],
       "objasnjenje": "$144 = 12^{2}$, $196 = 14^{2}$, $225 = 15^{2}$, a 200 je između $14^{2}$ i $15^{2}$.",
-      "zanimljivost": "Kvadrat celog broja nikad se ne završava cifrom 2, 3, 7 ili 8, a ako se završava nulama – mora ih biti paran broj. Broj 200 ima dve nule, ali 2 nije kvadrat.",
+      "zanimljivost": "Kvadrat celog broja nikad se ne završava cifrom 2, 3, 7 ili 8, a ako se završava nulama – mora ih biti paran broj. Broj 200 je 2 · 10², a 2 nije kvadrat, pa ni 200 nije.",
       "rec": "kvadrat"
     },
     {
@@ -17743,7 +17743,7 @@
         "Oštrougli jednakokraki"
       ],
       "objasnjenje": "Dva prava ugla već daju 180°, pa za treći ugao ne ostaje ništa – kraci bi bili paralelni i nikad se ne bi sreli.",
-      "zanimljivost": "Na površini lopte ovo je moguće! Trougao sa temenom na Severnom polu i dva temena na ekvatoru ima dva prava ugla (i ne samo dva).",
+      "zanimljivost": "Na površini lopte ovo je moguće! Trougao sa temenom na Severnom polu i dva temena na ekvatoru ima tri prava ugla.",
       "rec": "trougao"
     },
     {
@@ -19618,7 +19618,7 @@
         "Jedna od 40 cm",
         "Dve od 25 cm",
         "Isto je",
-        "Zavisi od debljine testa"
+        "Jedna od 35 cm"
       ],
       "zanimljivost": "Površina raste sa kvadratom: $20^{2} = 400$, a $2 · 12,5^{2} = 312,5$ (puta π). Jedna velika pica ima oko 28% više nego dve srednje!",
       "rec": "pica"
@@ -22467,7 +22467,7 @@
         "4",
         "6"
       ],
-      "zanimljivost": "Nova kocka ima 2 · 2 · 2 = 8 starih kocaka. Zato su velike životinje „teške“: slon duplo viši od nekog drugog bio bi oko 8 puta teži.",
+      "zanimljivost": "Nova kocka ima 2 · 2 · 2 = 8 starih kocaka. Zato su velike životinje mnogo teže: kad bi sve dužine bile dva puta veće, masa bi porasla oko 8 puta.",
       "medijiOdgovora": {
         "vrsta": "geo",
         "t": {
@@ -23531,7 +23531,7 @@
           "Zarubljena kupa"
         ]
       ],
-      "zanimljivost": "Tela koja nastaju okretanjem zovu se obrtna tela – lončar na grnčarskom kolu pravi baš takva tela. Kupa nastaje i okretanjem jednakokrakog trougla oko visine.",
+      "zanimljivost": "Tela koja nastaju okretanjem zovu se obrtna tela – lončar na grnčarskom kolu pravi baš takva tela. Dvostruka kupa nastaje okretanjem jednakokrakog trougla oko visine.",
       "rec": "obrtno"
     },
     {
@@ -33078,7 +33078,7 @@
         "Medijana",
         "Aritmetička sredina",
         "Najveća plata",
-        "Zbir svih plata"
+        "Raspon plata"
       ],
       "zanimljivost": "Prosek šest plata je oko 208.000 dinara – a niko osim direktora nema ni približno toliko! Medijana (srednja vrednost po veličini) je 50.000 i ne „vuče“ je jedna ogromna vrednost.",
       "rec": "medijana"

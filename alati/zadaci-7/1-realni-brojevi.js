@@ -85,9 +85,9 @@ module.exports = ({ L, Z, K, G, r, proveri, kocke, prava }) => {
     ['$9$ puta', '$3$ puta', '$6$ puta', '$27$ puta'],
     [K('Ako je stranica bila $a$, sada je $3a$.'),
      K('Nova površina: $(3a)² = 3a · 3a = 9a²$.'),
-     K('Na slici: u veliki kvadrat staje tačno $3 · 3 = 9$ malih kvadrata. Površina se poveća $9$ puta.', ['mali'])],
+     K('Na slici: u veliki kvadrat staje tačno $3 · 3 = 9$ malih kvadrata. Površina se poveća $9$ puta.', ['mali'], kvMreza(3, '3a'))],
     G({ A: [0, 0], B: [3, 0], C: [3, 3], D: [0, 3], e: [1, 0], f: [1, 1], g: [0, 1] },
-      [{ mreza: [0, 3, 0, 3], brojevi: 0 }, { p: 'ABCD', b: 0, prazno: 1 }, { p: 'Aefg', b: 1, gusto: 1, id: 'mali', o: 'a' }, { d: 'AB', o: '3a' }], { bezImena: ['A', 'B', 'C', 'D'], velicina: 220 }));
+      [{ p: 'ABCD', b: 0, prazno: 1 }, { p: 'Aefg', b: 1, gusto: 1, id: 'mali', o: 'a' }, { d: 'AB', o: '3a' }], { bezImena: ['A', 'B', 'C', 'D'], velicina: 220 }));
 
   Z(3, 'Dati su brojevi $a = 0,5²$, $b = (−0,7)²$ i $c = −0,6²$. Kako su poređani?',
     ['$c < a < b$', '$a < b < c$', '$c < b < a$', '$a < c < b$'],
@@ -103,7 +103,7 @@ module.exports = ({ L, Z, K, G, r, proveri, kocke, prava }) => {
      K('${9|4} − {1|4} = {8|4} = 2$'),
      K('Na slici: iz kvadrata stranice $1{1|2}$ izrežemo kvadrat stranice ${1|2}$. Ostatak su dva pravougaonika: $1 · 1{1|2} = 1{1|2}$ i ${1|2} · 1 = {1|2}$, ukupno $2$.', ['ost1', 'ost2', 'iz'])],
     G({ A: [0, 0], B: [1.5, 0], C: [1.5, 1.5], D: [0, 1.5], e: [1, 1], f: [1.5, 1], g: [1, 1.5], h: [1, 0] },
-      [{ p: 'ABCD', prazno: 1 }, { p: 'efCg', b: 1, gusto: 1, id: 'iz', o: '¼' }, { p: 'AhgD', b: 2, id: 'ost1', k: 3 }, { p: 'hBfe', b: 4, id: 'ost2', k: 3 }, { d: 'AB', o: '1½' }, { d: 'fC', o: '½' }],
+      [{ p: 'ABCD', prazno: 1 }, { p: 'efCg', b: 1, gusto: 1, id: 'iz' }, { p: 'AhgD', b: 2, id: 'ost1', k: 3 }, { p: 'hBfe', b: 4, id: 'ost2', k: 3 }, { d: 'AB', o: '1½' }, { d: 'fC', o: '½' }],
       { bezImena: ['A', 'B', 'C', 'D'], velicina: 220 }));
 
   Z(3, 'Oko kvadratne bašte stranice $12 m$ napravljena je staza širine $1 m$ (sa spoljne strane). Kolika je površina staze?',
@@ -179,7 +179,7 @@ module.exports = ({ L, Z, K, G, r, proveri, kocke, prava }) => {
       { bezImena: ['A', 'B', 'C', 'D', 'E', 'F', 'H', 'I'] }));
 
   Z(1, 'Rešenje jednačine $x² = 0$ je:',
-    ['samo $x = 0$', '$x = 0$ ili $x = 1$', 'nema rešenja', 'svaki realan broj'],
+    ['$x = 0$', '$x = 1$ ili $x = −1$', '$x = 0$ ili $x = 1$', 'nema rešenja'],
     [K('Proizvod $x · x$ je nula samo ako je $x = 0$.'),
      K('Za $a > 0$ jednačina $x² = a$ ima dva rešenja, za $a = 0$ jedno ($x = 0$), a za $a < 0$ nijedno.')]);
 
@@ -295,7 +295,7 @@ module.exports = ({ L, Z, K, G, r, proveri, kocke, prava }) => {
       [{ osa: [-1, 4] }, { p: 'OABD', b: 0 }, { d: 'OB', b: 3, id: 'dij' }, { l: 'O', r: 3.162, od: 0, do: 18.4, b: 3, id: 'luk', k: 3 }, { tacka: 'M', b: 1 }], { bezImena: ['O', 'A', 'B', 'D'] }));
 
   Z(2, 'Koje tvrđenje je tačno?',
-    ['Zbir racionalnog i iracionalnog broja je uvek iracionalan', 'Proizvod dva iracionalna broja je uvek iracionalan', 'Zbir dva iracionalna broja je uvek iracionalan', 'Kvadrat iracionalnog broja je uvek iracionalan'],
+    ['Zbir racionalnog i iracionalnog je uvek iracionalan', 'Proizvod dva iracionalna broja je uvek iracionalan', 'Zbir dva iracionalna broja je uvek iracionalan', 'Kvadrat iracionalnog broja je uvek iracionalan'],
     [K('Proizvod: $√{2} · √{2} = 2$ – racionalan, pa druga tvrdnja ne važi.'),
      K('Zbir: $√{2} + (−√{2}) = 0$ – racionalan. Kvadrat: $(√{3})² = 3$ – racionalan.'),
      K('Kad bi $q + i$ (racionalan + iracionalan) bio racionalan broj $s$, onda bi $i = s − q$ bio racionalan (razlika racionalnih) – kontradikcija. Zato je prva tvrdnja tačna.')]);
@@ -348,7 +348,7 @@ module.exports = ({ L, Z, K, G, r, proveri, kocke, prava }) => {
     ['$1$', '$0,9$', '$1,(1)$', '$0,99$'],
     [K('$0,(3) = {1|3}$ i $0,(6) = {2|3}$.'),
      K('${1|3} + {2|3} = {3|3} = 1$'),
-     K('Zanimljivo: sabiranjem cifara dobijamo $0,999…$, što je baš jednako $1$.')]);
+     K('Zanimljivo: cifre se sabiraju kao $3 + 6 = 9$, pa je zbir $0,(9) = 0,999…$, što je baš jednako $1$.')]);
 
   Z(2, 'Koji razlomak je jednak broju $0,(45)$?',
     ['${5|11}$', '${9|20}$', '${4|9}$', '${5|9}$'],
@@ -381,9 +381,9 @@ module.exports = ({ L, Z, K, G, r, proveri, kocke, prava }) => {
      K('$x = {15|90} = {1|6}$. Provera: $1 : 6 = 0,1666…$ ✓')]);
 
   Z(3, 'Koji od ovih brojeva je iracionalan?',
-    ['$0,1010010001…$ (broj nula između jedinica stalno raste)', '$0,(10)$', '$0,1010$', '${10|99}$'],
+    ['$0,1010010001…$', '$0,(10)$', '$0,1010$', '${101|99}$'],
     [K('$0,1010$ je konačan decimalni broj – racionalan (${101|1000}$).'),
-     K('$0,(10) = 0,101010…$ je periodičan, pa je racionalan: baš je jednak ${10|99}$.'),
+     K('$0,(10) = 0,101010…$ je periodičan, pa je racionalan: jednak je ${10|99}$. Između jedinica je redom $1, 2, 3, …$ nula – to je broj koji nije periodičan.'),
      K('U broju $0,1010010001…$ nijedan niz cifara se ne ponavlja zauvek (nule se stalno produžavaju), pa zapis nije ni konačan ni periodičan – broj je iracionalan.')]);
 
   Z(3, 'Koliko cifara ima period decimalnog zapisa broja ${1|13}$?',
@@ -493,7 +493,7 @@ module.exports = ({ L, Z, K, G, r, proveri, kocke, prava }) => {
      K('$5 + 12 = 17$')]);
 
   Z(2, 'Koji je broj veći: $2√{7}$ ili $3√{3}$?',
-    ['$2√{7}$', '$3√{3}$', 'jednaki su', 'ne može se odrediti bez kalkulatora'],
+    ['$2√{7}$', '$3√{3}$', 'jednaki su', '$3√{3}$, jer je koeficijent veći'],
     [K('Unesemo činioce pod koren: $2√{7} = √{4 · 7} = √{28}$, a $3√{3} = √{9 · 3} = √{27}$.'),
      K('$28 > 27$, pa je $√{28} > √{27}$, tj. $2√{7} > 3√{3}$.')]);
 
@@ -600,9 +600,9 @@ module.exports = ({ L, Z, K, G, r, proveri, kocke, prava }) => {
   Z(1, 'Uglovi trougla su u razmeri $1 : 2 : 3$. Koliki je najveći ugao?',
     ['$90°$', '$60°$', '$120°$', '$108°$'],
     [K('Zbir uglova trougla je $180°$, a delova ima $1 + 2 + 3 = 6$.'),
-     K('Jedan deo: $180° : 6 = 30°$. Uglovi su $30°$, $60°$ i $90°$.', ['u1', 'u2', 'u3']),
-     K('Najveći ugao je $90°$ – trougao je pravougli.')],
-    G({ A: [0, 0], B: [6, 0], C: [1.5, 2.598] }, [{ p: 'ABC' }, { u: 'BAC', o: 'α', id: 'u2', r: 26 }, { u: 'CBA', o: 'β', id: 'u1', r: 40 }, { u: 'ACB', o: 'γ', id: 'u3', r: 18 }]));
+     K('Jedan deo: $180° : 6 = 30°$. Uglovi su $30°$, $60°$ i $90°$.', ['u1', 'u2', 'u3'],
+       G({ A: [0, 0], B: [6, 0], C: [1.5, 2.598] }, [{ p: 'ABC' }, { u: 'BAC', o: 'α', id: 'u2', r: 26 }, { u: 'CBA', o: 'β', id: 'u1', r: 40 }, { u: 'ACB', o: 'γ', id: 'u3', r: 18 }])),
+     K('Najveći ugao je $90°$ – trougao je pravougli.')]);
 
   Z(1, 'Razmera $12 : 18 : 30$ zapisana skraćeno je:',
     ['$2 : 3 : 5$', '$4 : 6 : 15$', '$1 : 2 : 3$', '$6 : 9 : 10$'],

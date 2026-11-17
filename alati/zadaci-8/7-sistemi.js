@@ -9,11 +9,11 @@ module.exports = ({ L, Z, G, K, proveri, r, dvePrave, grafik, A }) => {
     [K('Rešenje je par brojeva $(x, y)$ koji zadovoljava OBE jednačine istovremeno.'),
      K('Geometrijski, to je tačka preseka dve prave.')]);
 
-  Z(1, 'Da li je par $(2, 1)$ rešenje sistema $x + y = 3$ i $2x − y = 3$?',
-    ['Da', 'Ne', 'Samo prve jednačine', 'Samo druge jednačine'],
+  Z(1, 'Koji par je rešenje sistema $x + y = 3$ i $2x − y = 3$?',
+    ['(2, 1)', '(1, 2)', '(3, 0)', '(0, 3)'],
     [K('Prva: $2 + 1 = 3$ ✓'),
      K('Druga: $2 · 2 − 1 = 3$ ✓'),
-     K('Obe su zadovoljene, pa je $(2, 1)$ rešenje.')]);
+     K('Obe su zadovoljene, pa je $(2, 1)$ rešenje. Ostali parovi ne zadovoljavaju drugu jednačinu.')]);
 
   Z(2, 'Koji par je rešenje sistema $x + y = 5$ i $x − y = 1$?',
     ['(3, 2)', '(2, 3)', '(4, 1)', '(1, 4)'],
@@ -172,12 +172,12 @@ module.exports = ({ L, Z, G, K, proveri, r, dvePrave, grafik, A }) => {
   // ════════════ dopuna do 10 po lekciji ════════════
 
   L('Pojam sistema linearnih jednačina sa dve nepoznate');
-  Z(1, 'Da li je par $(1, 2)$ rešenje sistema $x + y = 3$ i $x − y = −1$?',
-    ['Da', 'Ne', 'Samo prve', 'Samo druge'],
+  Z(1, 'Koji par je rešenje sistema $x + y = 3$ i $x − y = −1$?',
+    ['(1, 2)', '(2, 1)', '(3, 0)', '(0, 3)'],
     [K('Prva: $1 + 2 = 3$ ✓; druga: $1 − 2 = −1$ ✓'),
      K('Obe su zadovoljene, pa je $(1, 2)$ rešenje.')]);
-  Z(1, 'Da li je par $(2, 2)$ rešenje sistema $x + y = 4$ i $2x − y = 2$?',
-    ['Da', 'Ne', 'Samo prve', 'Samo druge'],
+  Z(1, 'Koji par je rešenje sistema $x + y = 4$ i $2x − y = 2$?',
+    ['(2, 2)', '(3, 1)', '(1, 3)', '(4, 0)'],
     [K('$2 + 2 = 4$ ✓ i $4 − 2 = 2$ ✓')]);
   Z(2, 'Koji par je rešenje sistema $x + y = 4$ i $x − y = 0$?',
     ['(2, 2)', '(4, 0)', '(0, 4)', '(1, 3)'],
@@ -188,10 +188,10 @@ module.exports = ({ L, Z, G, K, proveri, r, dvePrave, grafik, A }) => {
   Z(2, 'Rešenje sistema dve jednačine sa dve nepoznate je:',
     ['par (x, y) koji zadovoljava obe', 'samo vrednost x', 'samo vrednost y', 'bilo koji broj'],
     [K('Rešenje je uređeni par koji zadovoljava obe jednačine.')]);
-  Z(2, 'Da li je par $(0, 0)$ rešenje sistema $x + y = 0$ i $x − y = 0$?',
-    ['Da', 'Ne', 'Samo prve', 'Samo druge'],
+  Z(2, 'Koji par je rešenje sistema $x + y = 0$ i $x − y = 0$?',
+    ['(0, 0)', '(1, 1)', '(0, 1)', '(−1, 1)'],
     [K('$0 + 0 = 0$ ✓ i $0 − 0 = 0$ ✓')]);
-  Z(2, 'Koji par je rešenje sistema $x = 2$ i $y = 3$?',
+  Z(1, 'Koji par je rešenje sistema $x = 2$ i $y = 3$?',
     ['(2, 3)', '(3, 2)', '(2, 2)', '(3, 3)'],
     [K('Direktno: $x = 2$, $y = 3$, pa je rešenje $(2, 3)$.')]);
 
@@ -292,7 +292,7 @@ module.exports = ({ L, Z, G, K, proveri, r, dvePrave, grafik, A }) => {
     [K('Obe prave imaju $k = 1$ – paralelne su.'),
      K('Paralelne prave se ne seku, pa nema rešenja.')]);
   Z(3, 'Sistem $y = 2x + 1$ i $2y = 4x + 2$…',
-    ['ima beskonačno mnogo rešenja', 'nema rešenja', 'ima jedno rešenje', 'ima rešenje (0, 1)'],
+    ['ima beskonačno mnogo rešenja', 'nema rešenja', 'ima jedno rešenje', 'ima rešenje (1, 0)'],
     [K('Druga jednačina podeljena sa $2$ daje $y = 2x + 1$ – ista prava.'),
      K('Prave se poklapaju – beskonačno mnogo rešenja.')]);
 

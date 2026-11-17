@@ -106,7 +106,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, naKrugu, sat, uglomer, pica,
     Z(2, 'Dva ugla trougla su $50°$ i $60°$. Ako „otkinemo“ sva tri ugla i nadovežemo ih, dobijamo opružen ugao. Koliki je treći ugao?',
       ['$70°$', '$110°$', '$80°$', '$60°$'],
       [K('Kroz $C$ povučemo pravu paralelnu sa $AB$ i translacijom prenesemo uglove kod $A$ i $B$ do temena $C$.', ['tr']),
-       K('Ta dva ugla i ugao unakrsni uglu kod $C$ zajedno čine opružen ugao: zbir uglova trougla je $180°$.'),
+       K('Ta dva ugla i ugao kod $C$ zajedno čine opružen ugao: zbir uglova trougla je $180°$.'),
        K('$180° − 50° − 60° = 70°$.')],
       G(t, [{ p: 'ABC', b: 4, prazno: 1 }, { u: 'BAC', o: '50°', b: 0 }, { u: 'CBA', o: '60°', b: 1 }, { u: 'ACB', o: '?', b: 2 },
         { lin: [[-2, 4.236], [6, 4.236]], b: 3, isp: 1, k: 1, id: 'tr' }, { d: 'CE', isp: 1, k: 1 }, { d: 'CF', isp: 1, k: 1 },
@@ -182,7 +182,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, naKrugu, sat, uglomer, pica,
      K('Veći: $75° + 30° = 105°$.')]);
 
   Z(2, 'Kakav ugao zaklapaju kazaljke sata u $4$ sata?',
-    ['tup ($120°$)', 'oštar ($40°$)', 'prav', 'tup ($100°$)'],
+    ['tup ($120°$)', 'oštar ($60°$)', 'prav', 'opružen ($180°$)'],
     [K('Između dva susedna broja na satu je $360° : 12 = 30°$.'),
      K('Kad je tačno četiri sata, kazaljke dele $4$ takva dela: $4 · 30° = 120°$ – tup ugao.', ['ug'])],
     satUgao(4, 0));
@@ -198,7 +198,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, naKrugu, sat, uglomer, pica,
      K('Zato je $β > 90°$, a manji je od $180°$ – tup ugao.')]);
 
   Z(3, 'Ugao je $5$ puta manji od svog uporednog ugla. Kakav je ugao koji je za $40°$ veći od njega?',
-    ['oštar ($70°$)', 'prav', 'tup ($110°$)', 'oštar ($30°$)'],
+    ['oštar ($70°$)', 'prav', 'tup ($110°$)', 'opružen ($180°$)'],
     [K('$x + 5x = 180°$, pa je $x = 30°$.'),
      K('$30° + 40° = 70°$ – oštar ugao.')]);
 
@@ -335,7 +335,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, naKrugu, sat, uglomer, pica,
     const t = { P: v.P, Q: v.Q, C: v.C, D: v.D, A: [4, 2], B: [v.Q[0] + 3, -1], a1: [-3, 2], a2: [5, 2], b1: [-3, -1], b2: [5, -1] };
     Z(1, 'Prave $a$ i $b$ su paralelne, a seče ih prava $c$. Ugao kod prave $a$ je $70°$. Koliki je njemu saglasan ugao kod prave $b$?',
       ['$70°$', '$110°$', '$20°$', '$140°$'],
-      [K('Translacijom za vektor $\\vec{PQ}$ prava $a$ prelazi u $b$, a $c$ ostaje na sebi.'),
+      [K('Paralelnim pomeranjem (translacijom) prava $a$ prelazi u $b$, a $c$ ostaje na sebi.'),
        K('Ugao „klizi“ duž transverzale i poklopi se sa saglasnim uglom – saglasni uglovi su jednaki: $70°$.', ['s'])],
       G(t, [{ d: 'a1a2', b: 0 }, { d: 'b1b2', b: 0 }, { d: 'CD', b: 1 }, { u: 'APC', o: '70°', b: 3, r: 26 }, { u: 'APC', b: 2, r: 26, pomeri: v.pom, k: 2, id: 's' }, { tx: 'a', at: [5.3, 2] }, { tx: 'b', at: [5.3, -1] }, { tx: 'c', at: [v.C[0] + 0.3, v.C[1]] }], { bezImena: ['P', 'Q', 'A', 'B', 'C', 'D', 'a1', 'a2', 'b1', 'b2'], velicina: 220 }));
   }
@@ -345,7 +345,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, naKrugu, sat, uglomer, pica,
     Z(1, 'Na slici je $a ∥ b$. Ugao kod $P$ je $55°$. Koliki je naizmenični ugao kod $Q$?',
       ['$55°$', '$125°$', '$35°$', '$110°$'],
       [K('Naizmenični uglovi su između paralelnih pravih, sa raznih strana transverzale.'),
-       K('Ugao kod $P$ je unakrsni sa uglom iznad prave $a$ (desno od $c$), a taj je saglasan sa uglom kod $Q$.', ['s']),
+       K('Ugao kod $P$ (između $a$ i transverzale, levo) i ugao kod $Q$ (između $b$ i transverzale, desno) su naizmenični uglovi između paralelnih pravih.', ['s']),
        K('Svi su jednaki: naizmenični ugao je $55°$.', ['n'])],
       G(t, [{ d: 'a1a2', b: 0 }, { d: 'b1b2', b: 0 }, { d: 'CD', b: 1 }, { u: 'a1PQ', o: '55°', b: 3, r: 26 }, { u: 'APC', b: 5, r: 26, k: 2, id: 's' }, { u: 'BQP', b: 2, r: 26, id: 'n', k: 3, o: '?' }, { tx: 'a', at: [5.3, 2] }, { tx: 'b', at: [5.3, -1] }], { bezImena: ['A', 'B', 'C', 'D', 'a1', 'a2', 'b1', 'b2'], velicina: 220 }));
   }
@@ -376,7 +376,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, naKrugu, sat, uglomer, pica,
     G({ O: [0, 0], A: [3, 0], B: naKrugu([0, 0], 3, 37) }, [{ d: 'OA' }, { d: 'OB' }, { u: 'AOB', o: '37°', b: 0 }, { d: 'OA', b: 1, pomeri: [4, 2], k: 1 }, { d: 'OB', b: 1, pomeri: [4, 2], k: 1 }, { u: 'AOB', b: 1, pomeri: [4, 2], k: 1, id: 't' }], { bezImena: ['A', 'B'], velicina: 200 }));
 
   Z(2, 'Prave $a$ i $b$ seče prava $c$, i naizmenični uglovi su jednaki. Šta važi za $a$ i $b$?',
-    ['paralelne su', 'normalne su', 'seku se', 'ne može se zaključiti'],
+    ['paralelne su', 'normalne su', 'seku se', '$a$ je normalna na $b$'],
     [K('Kad bi se $a$ i $b$ sekle, sa transverzalom bi gradile trougao, a tada naizmenični uglovi ne bi mogli biti jednaki.'),
      K('Jednaki naizmenični (ili saglasni) uglovi znače da su prave paralelne.')]);
 
@@ -394,9 +394,9 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, naKrugu, sat, uglomer, pica,
         { bezImena: ['X', 'Y', 'm1', 'm2', 'a1', 'b1'], velicina: 220 });
     })());
 
-  Z(3, 'Suprotni uglovi na transverzali paralelnih pravih odnose se kao $2 : 3$. Koliki je veći?',
+  Z(3, 'Unutrašnji uglovi sa iste strane transverzale paralelnih pravih odnose se kao $2 : 3$. Koliki je veći?',
     ['$108°$', '$72°$', '$120°$', '$90°$'],
-    [K('Suprotni uglovi imaju zbir $180°$; to je $2 + 3 = 5$ delova.'),
+    [K('Ti uglovi imaju zbir $180°$; to je $2 + 3 = 5$ delova.'),
      K('Jedan deo: $36°$. Veći: $3 · 36° = 108°$.')]);
 
   // ════════════════ dopune ════════════════

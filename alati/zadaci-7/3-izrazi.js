@@ -51,12 +51,12 @@ module.exports = ({ L, Z, K, G, r, proveri, kocke }) => {
   Z(1, 'Koliko je $0,1³$?',
     ['$0,001$', '$0,3$', '$0,01$', '$0,0001$'],
     [K('$0,1³ = 0,1 · 0,1 · 0,1$.'),
-     K('$1 · 1 · 1 = 1$, a ukupno ima $1 + 1 + 1 = 3$ decimale: $0,001$.')]);
+     K('Cifre: $1 · 1 · 1 = 1$, a decimala ima $1 + 1 + 1 = 3$, pa je $0,1³ = 0,001$.')]);
 
   Z(2, 'Koliko je $(−{1|2})³$?',
     ['$−{1|8}$', '${1|8}$', '$−{1|6}$', '$−{3|2}$'],
     [K('$(−{1|2})³ = (−{1|2}) · (−{1|2}) · (−{1|2})$.'),
-     K('Tri negativna činioca daju negativan proizvod (neparan izložilac čuva znak).'),
+     K('Tri negativna činioca daju negativan proizvod: kad je izložilac neparan, znak osnove ostaje.'),
      K('$−{1 · 1 · 1|2 · 2 · 2} = −{1|8}$')]);
 
   Z(2, 'Koliko je $(−1)^{2025} + (−1)^{2026}$?',
@@ -69,7 +69,7 @@ module.exports = ({ L, Z, K, G, r, proveri, kocke }) => {
     ['$17$', '$0$', '$−17$', '$1$'],
     [K('$3⁴ = 3 · 3 · 3 · 3 = 81$'),
      K('$4³ = 4 · 4 · 4 = 64$'),
-     K('$81 − 64 = 17$. Zamena osnove i izložioca menja rezultat!')]);
+     K('$81 − 64 = 17$. Pazi: $3⁴ = 81$, a $4³ = 64$ – osnova i izložilac nisu zamenljivi.')]);
 
   Z(2, 'Jedna bakterija se deli na dve svakih $20$ minuta. Koliko bakterija nastane od jedne posle $3$ sata?',
     ['$512$', '$18$', '$256$', '$1024$'],
@@ -113,8 +113,7 @@ module.exports = ({ L, Z, K, G, r, proveri, kocke }) => {
   Z(1, 'Ivica kocke se udvostruči. Koliko puta se poveća njena zapremina?',
     ['$8$ puta', '$2$ puta', '$4$ puta', '$6$ puta'],
     [K('Nova zapremina: $(2a)³ = 2³ · a³ = 8a³$ – stepen proizvoda je proizvod stepena.'),
-     K('Na slici: u kocku dvostruke ivice staje $2 · 2 · 2 = 8$ prvobitnih kocki.')],
-    kocke(2));
+     K('Na slici: u kocku dvostruke ivice staje $2 · 2 · 2 = 8$ prvobitnih kocki.', [], kocke(2))]);
 
   Z(2, 'Koliko je $(2a²b)³$?',
     ['$8a⁶b³$', '$6a⁶b³$', '$8a⁵b³$', '$2a⁶b³$'],
@@ -139,7 +138,7 @@ module.exports = ({ L, Z, K, G, r, proveri, kocke }) => {
      K('Ostaje $1 · {4|3} = {4|3}$.')]);
 
   Z(3, 'Koji je broj veći: $2^{30}$ ili $3^{20}$?',
-    ['$3^{20}$', '$2^{30}$', 'jednaki su', 'ne može se odrediti bez računara'],
+    ['$3^{20}$', '$2^{30}$', 'jednaki su', '$6^{10}$'],
     [K('Svedemo na isti izložilac $10$: $2^{30} = (2³)^{10} = 8^{10}$.'),
      K('$3^{20} = (3²)^{10} = 9^{10}$.'),
      K('$9 > 8$, pa je $9^{10} > 8^{10}$, tj. $3^{20} > 2^{30}$.')]);
@@ -217,7 +216,7 @@ module.exports = ({ L, Z, K, G, r, proveri, kocke }) => {
      K('$10⁸ : 10^{−3} = 10^{8 − (−3)} = 10^{11}$ – deljenje negativnim izložiocem povećava izložilac.'),
      K('Rezultat: $3 · 10^{11}$.')]);
 
-  Z(3, 'Svetlost prelazi $3 · 10⁵ km$ u sekundi. Rastojanje do Meseca je oko $3,84 · 10⁵ km$. Koliko svetlosti treba da stigne od Meseca do Zemlje?',
+  Z(3, 'Svetlost prelazi $3 · 10⁵ km$ u sekundi. Rastojanje do Meseca je oko $3,84 · 10⁵ km$. Koliko vremena treba svetlosti da stigne od Meseca do Zemlje?',
     ['oko $1,28 s$', 'oko $0,78 s$', 'oko $12,8 s$', 'oko $1,28 min$'],
     [K('Vreme = put : brzina $= {3,84 · 10⁵|3 · 10⁵} s$.'),
      K('Stepeni $10⁵$ se skrate: $3,84 : 3 = 1,28$.'),
@@ -264,7 +263,7 @@ module.exports = ({ L, Z, K, G, r, proveri, kocke }) => {
     [[0, 1], [2.5, 2], [6, 3]].forEach(([x0, n]) => {
       for (let i = 0; i <= n; i++) sib(x0 + i, 0, x0 + i, 1);
       for (let i = 0; i < n; i++) { sib(x0 + i, 0, x0 + i + 1, 0); sib(x0 + i, 1, x0 + i + 1, 1); }
-      e.push({ tx: String(3 * n + 1), at: [x0 + n / 2, -0.55] });
+      e.push({ tx: String(3 * n + 1), at: [x0 + n / 2, -0.55], k: 1 });
     });
     Z(2, 'Od šibica se slaže niz kvadrata u jednom redu (kao na slici). Koliko šibica treba za $20$ kvadrata?',
       ['$61$', '$80$', '$60$', '$81$'],

@@ -1,5 +1,5 @@
 // Tema 8: Razlomci – treći deo: procenti, razmera, aritmetička sredina (lekcije 8.1–8.2)
-module.exports = ({ L, Z, K, G, O, bez, r, proveri, sto, traka, stubici, kruzni }) => {
+module.exports = ({ L, Z, K, G, R, O, bez, r, proveri, sto, traka, stubici, kruzni }) => {
   const g = (e, vel = 200) => G(O, e, { ...bez, velicina: vel });
   const jed = (a, b) => Math.abs(a - b) < 1e-9;
   // stubičasti dijagram sa isprekidanom linijom proseka (pojavljuje se u koraku k)
@@ -29,7 +29,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, sto, traka, stubici, kruzni 
     ['$75 %$', '$34 %$', '$0,75 %$', '$43 %$'],
     [K('Proširimo do stotih delova: ${3|4} = {75|100}$.'),
      K('$= 75 %$.', ['s'])],
-    g(sto(75, { k: 2, id: 's' }), 170));
+    R(g(sto(75, { k: 2, id: 's' }), 170)));
 
   Z(2, 'Patike koštaju $2 400$ dinara, a na sniženju su $15 %$ jeftinije. Kolika je nova cena?',
     ['$2 040$ din', '$360$ din', '$2 385$ din', '$2 760$ din'],
@@ -73,7 +73,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, sto, traka, stubici, kruzni 
   L('Razmera; aritmetička sredina');
 
   Z(1, 'Skrati razmeru $12 : 18$.',
-    ['$2 : 3$', '$3 : 2$', '$6 : 9$', '$4 : 6$'],
+    ['$2 : 3$', '$3 : 2$', '$6 : 8$', '$12 : 9$'],
     [K('$NZD(12, 18) = 6$.'),
      K('$12 : 18 = 2 : 3$ (kao razlomak ${12|18} = {2|3}$).')]);
 

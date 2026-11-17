@@ -105,7 +105,7 @@
       "odgovori": [
         "Promena brzine u jedinici vremena",
         "Pređeni put u jedinici vremena (metri u sekundi)",
-        "Masa tela koje se kreće veoma brzo",
+        "Brzina koju telo ima u trenutku kada počne da se kreće",
         "Ukupno vreme kretanja tela"
       ],
       "zanimljivost": "Ubrzanje pokazuje koliko se „brzo menja brzina“ – i pri kočenju i pri ubrzavanju.",
@@ -151,7 +151,7 @@
       ],
       "zanimljivost": "20 m/s je 72 km/h – ovakav automobil bi od 0 do 100 km/h ubrzao za oko 7 sekundi.",
       "rec": "automobil",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "fizika",
         "scena": "grafik",
         "x": "t (s)",
@@ -184,7 +184,7 @@
         "Sila koja deluje na telo",
         "Boja tela koje se kreće",
         "Oblik putanje po kojoj ide",
-        "Ništa – brzina se menja sama"
+        "Sama masa tela, bez delovanja drugih tela"
       ],
       "zanimljivost": "Bez sile telo zadržava svoju brzinu – to je Prvi Njutnov zakon.",
       "rec": "sila"
@@ -256,7 +256,7 @@
       ],
       "zanimljivost": "Kočnice na mokrom putu daju mnogo manje usporenje – zato biciklisti po kiši voze sporije.",
       "rec": "bicikl",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "fizika",
         "scena": "grafik",
         "x": "t (s)",
@@ -345,8 +345,8 @@
       "odgovori": [
         "Suprotno od smera kretanja",
         "U istom smeru kretanja tela",
-        "Uvek naviše, ka nebu i oblacima iznad",
-        "Nema strelice kad telo usporava"
+        "Uvek naviše, bez obzira na smer kretanja",
+        "Strelica ima smer kretanja, ali je duža"
       ],
       "zanimljivost": "Ubrzanje je vektor – ima pravac i smer, kao i sila.",
       "rec": "smer"
@@ -387,7 +387,7 @@
         "Oko 25 m/s²",
         "Oko 1 m/s²"
       ],
-      "zanimljivost": "To je ubrzanje kakvo imaju najjači sportski automobili.",
+      "zanimljivost": "To je ubrzanje kakvo imaju dobri sportski automobili.",
       "rec": "gepard"
     },
     {
@@ -414,7 +414,7 @@
         "0,67 N"
       ],
       "zanimljivost": "Jedan njutn je sila koja telu mase 1 kg daje ubrzanje 1 m/s².",
-      "rec": "računanje"
+      "rec": "sila"
     },
     {
       "lekcija": 2,
@@ -487,7 +487,7 @@
     {
       "lekcija": 2,
       "tezina": 3,
-      "pitanje": "Sila 50 N deluje na kolica mase 25 kg. Koliko je ubrzanje?",
+      "pitanje": "Na kolica mase 25 kg deluje rezultujuća sila 50 N. Koliko je ubrzanje?",
       "odgovori": [
         "2 m/s²",
         "1.250 m/s²",
@@ -529,7 +529,7 @@
       "pitanje": "Zašto je teže pogurati pun ormar nego prazan?",
       "odgovori": [
         "Veća masa – za isto ubrzanje treba veća sila",
-        "Pun ormar je manji, pa ga je teže uhvatiti i gurati",
+        "Pun ormar ima manje trenje o pod",
         "Prazan ormar ima veće trenje, pa ga je lakše gurati",
         "Isto je – masa ne utiče na to koliko je teško gurati"
       ],
@@ -544,7 +544,7 @@
         "Jedna sila koja ima isto dejstvo kao više sila zajedno",
         "Najveća od svih sila koje istovremeno deluju na telo",
         "Sila trenja koja se uvek suprotstavlja kretanju tela",
-        "Sila koja ostaje kada telo prestane da se kreće"
+        "Sila koja nastaje kada se dva tela sudare"
       ],
       "zanimljivost": "U Drugom Njutnovom zakonu F je uvek rezultujuća sila na telo.",
       "rec": "rezultanta"
@@ -583,7 +583,7 @@
         "Loptica, jer ima manju masu",
         "Kugla, jer je teža i jača",
         "Isto, jer je sila ista za obe",
-        "Nijedna"
+        "Ni jedna, jer se obe odbijaju od poda"
       ],
       "zanimljivost": "Pri udarcu reketom teniska loptica dobija brzinu i preko 200 km/h.",
       "rec": "tenis",
@@ -727,7 +727,7 @@
         "5 m"
       ],
       "zanimljivost": "s = 2 · 5² / 2 = 25 m.",
-      "rec": "računanje",
+      "rec": "put",
       "medijiOdgovora": {
         "vrsta": "fizika",
         "scena": "grafik",
@@ -892,7 +892,7 @@
         "Usporeno kretanje",
         "Kružno kretanje voza"
       ],
-      "zanimljivost": "Voz „Soko“ Beograd–Novi Sad dostiže brzinu do 200 km/h.",
+      "zanimljivost": "Vozovi za velike brzine ubrzavaju mnogo minuta pre nego što dostignu najveću brzinu.",
       "rec": "voz"
     },
     {
@@ -1016,15 +1016,15 @@
     {
       "lekcija": 4,
       "tezina": 1,
-      "pitanje": "Koju brzinu vozač vidi na brzinomeru dok vozi?",
+      "pitanje": "Šta pokazuje brojač kilometara (odometar) u automobilu?",
       "odgovori": [
+        "Ukupan pređeni put",
         "Trenutnu brzinu",
-        "Srednju brzinu za ceo put",
-        "Ubrzanje",
-        "Pređeni put"
+        "Srednju brzinu",
+        "Ubrzanje"
       ],
-      "zanimljivost": "Kod policijskog „sekcijskog“ merenja računa se srednja brzina između dve kamere.",
-      "rec": "brzinomer"
+      "zanimljivost": "Odometar se obično nalazi pored brzinomera i broji obrtaje točka.",
+      "rec": "odometar"
     },
     {
       "lekcija": 4,
@@ -1047,7 +1047,7 @@
         "Kao polovina krajnje brzine",
         "Kao krajnja brzina",
         "Kao dvostruka krajnja brzina",
-        "Kao ubrzanje puta vreme na kvadrat"
+        "Kao četvrtina krajnje brzine"
       ],
       "zanimljivost": "Ako telo ubrza od 0 do 20 m/s ravnomerno, srednja brzina je 10 m/s.",
       "rec": "polovina"
@@ -1060,7 +1060,7 @@
         "8 m/s",
         "9 m/s",
         "4,5 m/s",
-        "450 m/s"
+        "16 m/s"
       ],
       "zanimljivost": "Srednja brzina se ne računa iz brzine na cilju, već kao ceo put kroz celo vreme.",
       "rec": "trkač"
@@ -1107,7 +1107,7 @@
     {
       "lekcija": 4,
       "tezina": 3,
-      "pitanje": "Lopta padne sa visine i za 2 s dostigne brzinu 20 m/s. Kolika je srednja brzina u tom vremenu?",
+      "pitanje": "Lopta slobodno padne iz mirovanja i za 2 s dostigne brzinu 20 m/s. Kolika je srednja brzina u tom vremenu?",
       "odgovori": [
         "10 m/s",
         "20 m/s",
@@ -1138,7 +1138,7 @@
         "Promenljivo",
         "Ravnomerno",
         "Mirovanje",
-        "Nijedno"
+        "Kružno ravnomerno"
       ],
       "zanimljivost": "Kretanje kroz gradsku gužvu je tipično promenljivo kretanje.",
       "rec": "gužva"
@@ -1190,7 +1190,7 @@
         "Po nagibu tangente na krivu u tom trenutku",
         "Po visini grafika u tom trenutku, izraženoj u metrima",
         "Po ukupnoj dužini krive od početka do kraja kretanja",
-        "Nikako – iz grafika s(t) se brzina uopšte ne može odrediti"
+        "Po površini ispod krive do te tačke"
       ],
       "zanimljivost": "Ovu ideju su razradili Njutn i Lajbnic – i tako je nastao diferencijalni račun.",
       "rec": "tangenta"
@@ -1320,7 +1320,7 @@
       "odgovori": [
         "Pređeni put",
         "Ubrzanje",
-        "Masu",
+        "Vreme",
         "Silu"
       ],
       "zanimljivost": "Kod ubrzanog kretanja iz mirovanja to je površina trougla: v·t/2.",
@@ -1566,7 +1566,7 @@
         "Da se pregledno prikaže kako se veličine menjaju",
         "Za ukras udžbenika, da bi bio šareniji, zanimljiviji i lepši",
         "Za merenje mase tela pomoću linija nacrtanih na milimetarskom papiru",
-        "Ne služe ničemu"
+        "Služe samo za zamenu tabela, ne za računanje"
       ],
       "zanimljivost": "Na grafiku je lako uočiti i greške merenja – tačka koja „iskače“ iz niza.",
       "rec": "pregled"
@@ -1677,7 +1677,7 @@
         "12 m/s²"
       ],
       "zanimljivost": "a = (10 − 2) / 4 = 2 m/s².",
-      "rec": "računanje",
+      "rec": "ubrzanje",
       "mediji": {
         "vrsta": "fizika",
         "scena": "grafik",
@@ -1714,7 +1714,7 @@
         "Vertikalna linija, jer se telo zaustavlja u jednom jedinom trenutku"
       ],
       "zanimljivost": "Horizontalni deo na kraju znači da telo stoji.",
-      "rec": "zaustavljanje",
+      "rec": "usporenje",
       "medijiOdgovora": {
         "vrsta": "fizika",
         "scena": "grafik",
@@ -1836,10 +1836,10 @@
       "tezina": 2,
       "pitanje": "Na kom principu leti raketa?",
       "odgovori": [
-        "Gasovi izlaze unazad, a raketa ide napred (akcija i reakcija)",
+        "Gasovi izlaze unazad, a raketa ide napred",
         "Gasovi iz rakete se odguruju od vazduha iza nje, pa je vazduh gura napred",
         "Leti zbog velikih krila koja su skrivena u telu rakete i otvaraju se pri poletanju",
-        "Zbog jakog magneta u vrhu rakete koji se odbija od Zemljinog magnetnog polja"
+        "Zbog toplog vazduha koji se diže ispod rakete"
       ],
       "zanimljivost": "Raketa leti i u praznom svemiru – ne treba joj vazduh da se „odgurne“.",
       "rec": "raketa",
@@ -1856,7 +1856,7 @@
       "odgovori": [
         "Zbog reakcije – metak ide napred, a puška unazad",
         "Zbog težine – puška postaje teža kada metak krene",
-        "Zbog zvuka – talas pucnja odgurne pušku nazad u rame",
+        "Zbog toga što se kundak zagreje od barutnog gasa",
         "Zbog vetra – vazduh koji izlazi iz cevi gura kundak"
       ],
       "zanimljivost": "Masa puške je mnogo veća od mase metka, pa je njena brzina unazad mnogo manja.",
@@ -1869,8 +1869,8 @@
       "odgovori": [
         "Ne, jer deluju na različita tela",
         "Da, uvek se potpuno poništavaju na svakom mestu",
-        "Samo na Zemlji, a u svemiru se ne poništavaju",
-        "Samo kod magneta"
+        "Da, ali samo kad tela miruju",
+        "Da, ali samo kad su sile iste jačine"
       ],
       "zanimljivost": "Zato se konj i kola ipak kreću – konj vuče kola, a kola konja, ali konj se odupire o tlo.",
       "rec": "tela"
@@ -1907,7 +1907,7 @@
       "pitanje": "Kako hodamo?",
       "odgovori": [
         "Stopalom guramo tlo unazad, a tlo gura nas napred",
-        "Gravitacija nas gura napred svakim korakom koji napravimo",
+        "Noge samo pomeramo, a tlo nema udela u kretanju",
         "Vazduh nas gura napred kada pomeramo ruke dok hodamo",
         "Stopalom guramo tlo napred, a ono nas vuče za sobom"
       ],
@@ -1920,8 +1920,8 @@
       "pitanje": "Zašto balon koji pustimo da se izduva leti po sobi?",
       "odgovori": [
         "Vazduh izlazi u jednom smeru, a balon ide u suprotnom",
-        "Zbog gravitacije koja privlači gumu balona naizmenično ka podu i zidovima",
-        "Zbog magnetizma gume, koja se odbija od metalnih predmeta u sobi oko nas",
+        "Zbog vetra koji ulazi u sobu kroz otvor balona",
+        "Zbog pritiska vazduha koji se širi samo na jednu stranu balona",
         "Zbog toplote vazduha iz pluća koji se diže uvis i nosi balon po celoj sobi"
       ],
       "zanimljivost": "Ovo je najjednostavniji „raketni motor“ koji možeš napraviti kod kuće.",
@@ -1951,8 +1951,8 @@
       "pitanje": "Šta se dešava kada dva klizača, jedan teži i jedan lakši, odgurnu jedan drugog?",
       "odgovori": [
         "Oba se kreću u suprotnim smerovima, lakši brže",
-        "Samo se lakši klizač pomera, a teži ostaje na mestu",
-        "Samo se teži klizač pomera, jer je jači i ima veću silu",
+        "Lakši klizač se pomera, a teži ostaje na mestu",
+        "Teži klizač se pomera, jer je jači i ima veću silu",
         "Nijedan se ne pomera, jer se njihove sile međusobno poništavaju"
       ],
       "zanimljivost": "Sila na oba je ista, ali lakši klizač dobija veće ubrzanje.",
@@ -1989,7 +1989,7 @@
       "odgovori": [
         "Voda deluje na veslo napred i pokreće čamac",
         "Da veslo smanji otpor vode ispred čamca",
-        "Da vazduh iza čamca gura čamac napred",
+        "Da veslo bude što dalje od čamca, pa da ne smeta",
         "Da napravi talase koji guraju čamac napred"
       ],
       "zanimljivost": "Veslački osmerac dostiže brzinu i preko 20 km/h.",
@@ -2066,7 +2066,7 @@
       "odgovori": [
         "Bez otpora vazduha sva tela padaju jednako brzo",
         "Teža tela uvek padaju mnogo brže od lakših tela, čak i u vakuumu",
-        "Laka tela, kao pero, uopšte ne padaju na zemlju",
+        "Lakša tela ostaju u vazduhu duže, jer ih vazduh nosi",
         "Tela padaju ravnomerno, istom brzinom od početka"
       ],
       "zanimljivost": "Astronaut Dejvid Skot je 1971. na Mesecu pustio čekić i pero – pali su istovremeno.",
@@ -2197,7 +2197,7 @@
         "Na Zemlji",
         "Na Mesecu",
         "Isto je",
-        "Na Mesecu nema teže"
+        "Zavisi od veličine tela"
       ],
       "zanimljivost": "Na Mesecu je ubrzanje teže oko 1,6 m/s².",
       "rec": "mesec"
@@ -2209,7 +2209,7 @@
       "odgovori": [
         "Otpor vazduha postane jednak sili teže",
         "Gravitacija prestane da deluje na velikoj visini",
-        "Postane lakši jer izgubi deo mase u vazduhu",
+        "Padobran se napuni vazduhom, pa mu se masa smanji",
         "Vetar ga drži i ne dozvoljava mu da brže pada"
       ],
       "zanimljivost": "Bez otvorenog padobrana ta „granična brzina“ je oko 200 km/h, a sa padobranom oko 20 km/h.",
@@ -2277,7 +2277,7 @@
       "pitanje": "Kako se može izmeriti ubrzanje Zemljine teže?",
       "odgovori": [
         "Merenjem vremena padanja sa poznate visine ili klatnom",
-        "Vagom – izmeri se težina tela i podeli sa masom zapisanom na pakovanju",
+        "Vagom – izmeri se masa tela u kilogramima",
         "Termometrom – ubrzanje Zemljine teže zavisi samo od temperature vazduha",
         "Barometrom – iz vazdušnog pritiska na mestu gde se meri"
       ],
@@ -2419,7 +2419,7 @@
     {
       "lekcija": 8,
       "tezina": 1,
-      "pitanje": "Koja sila deluje na loptu tokom celog leta naviše i naniže?",
+      "pitanje": "Koja sila deluje na loptu tokom celog leta naviše i naniže (bez otpora vazduha)?",
       "odgovori": [
         "Sila teže",
         "Sila ruke",
@@ -2437,7 +2437,7 @@
         "Jednako",
         "Penjanje duže",
         "Spuštanje duže",
-        "Ne može se reći"
+        "Zavisi od jačine bacanja"
       ],
       "zanimljivost": "Ova simetrija važi i za kosi hitac – lopta u fudbalu leti po luku sličnom na obe strane.",
       "rec": "simetrija"
@@ -2485,7 +2485,7 @@
         "Ista",
         "Osam puta"
       ],
-      "zanimljivost": "Visina zavisi od kvadrata brzine – zato skakači u vis toliko vežbaju zalet.",
+      "zanimljivost": "Visina zavisi od kvadrata brzine, pa mala razlika u brzini odskoka daje veliku razliku u visini.",
       "rec": "kvadrat"
     },
     {
@@ -2534,7 +2534,7 @@
         "Voda je bačena naviše i ukoso, a teža je vraća naniže",
         "Zbog vetra koji uvek duva i savija tanak mlaz vode u luk",
         "Zbog pritiska vazduha koji pritiska mlaz odozgo naniže",
-        "Voda je laka, pa je mlaz brzo izgubi snagu i stane"
+        "Voda se pri letu sama zaledi i padne"
       ],
       "zanimljivost": "Najviši vodoskok na svetu, u Džedi, izbacuje vodu do visine oko 300 m.",
       "rec": "vodoskok"
@@ -2578,8 +2578,8 @@
       "odgovori": [
         "Oni i stanica zajedno slobodno padaju oko Zemlje",
         "Tamo uopšte nema gravitacije, jer je stanica daleko od Zemlje",
-        "Stanica je jak magnet koji privlači astronaute ka zidovima",
-        "Vazduh u stanici je gušći, pa ih drži kao voda"
+        "Gravitacija se u stanici poništava magnetima",
+        "Astronauti su lakši od vazduha u stanici"
       ],
       "zanimljivost": "Stanica kruži brzinom od oko 28.000 km/h i obiđe Zemlju za 90 minuta.",
       "rec": "stanica",
@@ -2599,8 +2599,8 @@
         "Dok ležimo u krevetu i spavamo",
         "Dok stojimo u liftu koji miruje"
       ],
-      "zanimljivost": "„Stomak u grlu“ na ljuljašci je osećaj delimičnog bestežinskog stanja.",
-      "rec": "tobogan"
+      "zanimljivost": "Osećaj „stomak u grlu“ na vrhu tobogan-voza je delimično bestežinsko stanje.",
+      "rec": "trambulina"
     },
     {
       "lekcija": 9,
@@ -2647,9 +2647,9 @@
       "pitanje": "Zašto je astronautima potrebno svakodnevno vežbanje?",
       "odgovori": [
         "Bez opterećenja slabe mišići i kosti",
-        "Da bi se zagrejali, jer je u stanici hladno",
-        "Da bi brže rasli i bili viši kad se vrate",
-        "Da bi ih snimale kamere za televiziju i internet"
+        "Da bi se mišići brže razvijali bez napora",
+        "Da bi se smanjio pritisak u glavi",
+        "Da bi se navikli na jaču težinu u kabini"
       ],
       "zanimljivost": "Posle šest meseci u svemiru astronauti po povratku moraju ponovo da uče da hodaju stabilno.",
       "rec": "vežbanje"
@@ -2661,7 +2661,7 @@
       "odgovori": [
         "Plamen je okrugao i plav",
         "Plamen je kao na Zemlji",
-        "Ne može da gori",
+        "Dim se diže naviše kao i na Zemlji",
         "Plamen je duži"
       ],
       "zanimljivost": "Na Zemlji topao vazduh struji naviše i izdužuje plamen – u bestežinskom stanju toga nema.",
@@ -2675,9 +2675,9 @@
         "Postane loptasta i lebdi",
         "Pada naniže, kao i na Zemlji",
         "Ispari odmah, jer nema vazduha",
-        "Zaledi se"
+        "Raspadne se na sitne kapljice bez oblika"
       ],
-      "zanimljivost": "Površinski napon „steže“ vodu u loptu – astronauti tako pijuckaju vodu iz vazduha.",
+      "zanimljivost": "Površinski napon „steže“ vodu u loptu – zato astronauti piju iz zatvorenih kesica sa slamkom.",
       "rec": "kap"
     },
     {
@@ -2688,7 +2688,7 @@
         "Telo slobodno pada, pa unutrašnji organi ne pritiskaju jedni druge",
         "Voda u bazenu odbija vazduh, pa telo pada sporije nego što bi palo na kopnu",
         "Vazduh je ispod skakača gušći nego iznad njega, pa ga nosi naviše dok pada",
-        "Ne oseća – bestežinsko stanje postoji samo u svemiru, daleko od Zemljine teže"
+        "Oseća, ali samo pri udaru o vodu, a ne u padu"
       ],
       "zanimljivost": "Isto se dešava i u trenutku kada lift naglo krene naniže.",
       "rec": "skok"
@@ -2808,7 +2808,7 @@
         "100 N"
       ],
       "zanimljivost": "Sila trenja: Ftr = μ · N, gde je N sila kojom telo pritiska podlogu.",
-      "rec": "računanje",
+      "rec": "trenje",
       "mediji": {
         "vrsta": "formula",
         "tekst": "Fₜᵣ = μ · N"
@@ -2820,11 +2820,11 @@
       "pitanje": "Zašto saonice lako klize po snegu?",
       "odgovori": [
         "Trenje između glatkih saonica i snega je malo",
-        "Sneg je lepljiv, pa vuče saonice napred niz brdo",
+        "Sneg je lepljiv, pa vuče saonice nazad",
         "Saonice su teške, pa svojom težinom probijaju sneg",
-        "Sneg ih gura napred jer se topi ispod saonica"
+        "Sneg ih gura napred jer se ledi ispod saonica"
       ],
-      "zanimljivost": "Ispod klizaljke se stvara tanak sloj vode koji dodatno smanjuje trenje.",
+      "zanimljivost": "Na niskim temperaturama sneg je suv i sitan, pa je trenje manje nego na mokrom snegu.",
       "rec": "sanke"
     },
     {
@@ -2887,7 +2887,7 @@
       "odgovori": [
         "Da veliki otpor vazduha smanji brzinu padanja",
         "Da bi ga vetar odneo tačno do mesta sletanja",
-        "Zbog hladnoće, jer padobran zadržava toplotu tela",
+        "Da bi lakše dolazio do mesta na kome sleće",
         "Da smanji silu teže koja deluje na njega"
       ],
       "zanimljivost": "Rekordni skok sa 39 km visine (2012) bio je toliko visok da je skakač u slobodnom padu probio brzinu zvuka.",
@@ -2904,7 +2904,7 @@
       "pitanje": "Zašto je za brzu vožnju autom potrebno mnogo više goriva?",
       "odgovori": [
         "Otpor vazduha raste otprilike sa kvadratom brzine",
-        "Gume se brže troše na asfaltu, pa motor mora jače da radi",
+        "Motor brže troši ulje, pa mora da se dopunjava",
         "Sila teže na automobil raste kada on brže vozi",
         "Trenje kotrljanja točkova raste sa kvadratom brzine"
       ],
@@ -2915,7 +2915,7 @@
       "pitanje": "Zašto kočenje traje mnogo duže kada je put zaleđen?",
       "odgovori": [
         "Trenje između guma i leda je veoma malo",
-        "Led povećava masu automobila",
+        "Led smanjuje masu automobila, pa ga kočnice slabije drže",
         "Na ledu je gravitacija slabija",
         "Kočnice ne rade na hladnoći"
       ],
@@ -2923,7 +2923,7 @@
       "zanimljivost": "Na ledu put kočenja može biti i do deset puta duži nego na suvom asfaltu. Zato se zimi vozi sporije i koriste zimske gume.",
       "rec": "led",
       "lekcija": 10,
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "fizika",
         "scena": "kretanje",
         "duzina": 60,
@@ -2953,8 +2953,8 @@
       "odgovori": [
         "Pri hodanju, kočenju i držanju predmeta",
         "Samo u motorima automobila i drugih mašina",
-        "Nigde – trenje je uvek štetno i treba ga ukloniti",
-        "Samo u svemiru"
+        "Samo na ledu, gde ga treba smanjiti",
+        "Samo kad je podloga mokra"
       ],
       "zanimljivost": "Violinisti mažu gudalo kolofonijumom – baš da bi povećali trenje sa žicom.",
       "rec": "gudalo"
@@ -3113,9 +3113,9 @@
       "pitanje": "Kada je telo u ravnoteži?",
       "odgovori": [
         "Kada je rezultujuća sila (i moment) na njega jednaka nuli",
-        "Kada je veoma teško, pa ga ništa ne može pomeriti sa mesta na kojem stoji",
+        "Kada je njegova težina jednaka nuli",
         "Kada se kreće ubrzano, jer ga tada sile stalno guraju u istom smeru napred",
-        "Kada nema mase, pa na njega uopšte ne deluje sila Zemljine teže ni trenje"
+        "Kada se kreće stalnom brzinom, a sile su različite"
       ],
       "zanimljivost": "Telo u ravnoteži može i da se kreće – stalnom brzinom po pravoj liniji.",
       "rec": "ravnoteža"
@@ -3167,7 +3167,7 @@
         "Telo se posle malog pomeranja još više udalji od prvobitnog položaja",
         "Telo se posle malog pomeranja samo vrati u prvobitni položaj, kao klatno",
         "Telo ostane gde je",
-        "Telo nema težište"
+        "Telo se vrati samo ako je teže od oslonca"
       ],
       "zanimljivost": "Olovka koja stoji na vrhu primer je labilne ravnoteže.",
       "rec": "labilna"
@@ -3178,7 +3178,7 @@
       "pitanje": "Zašto hodač po žici nosi dugu motku?",
       "odgovori": [
         "Da lakše održi ravnotežu",
-        "Da bi njome odgurnuo vetar",
+        "Da bi motkom merio dubinu ispod žice",
         "Da bi se odmorio na sredini",
         "Zbog lepote i utiska publike"
       ],
@@ -3235,7 +3235,7 @@
         "Da težište tela i torbe ostane iznad oslonca (stopala)",
         "Zbog bola u ramenu koji nas tera da se iskrivimo na drugu stranu",
         "Zbog otpora vazduha koji torba stvara dok hodamo po ulici",
-        "Bez razloga – to je samo navika koju stičemo još kao deca"
+        "Da bi torba bila bliže telu i ne bi se njihala"
       ],
       "zanimljivost": "Zato je zdravije nositi ranac na oba ramena.",
       "rec": "torba"
@@ -3243,9 +3243,9 @@
     {
       "lekcija": 11,
       "tezina": 2,
-      "pitanje": "Šta je oslonac?",
+      "pitanje": "Šta je površina oslonca tela?",
       "odgovori": [
-        "Mesto gde telo dodiruje podlogu i oslanja se",
+        "Deo podloge na kome telo stoji ili leži",
         "Težište – tačka u kojoj deluje sila teže na telo",
         "Najviši vrh tela, na koji pada svetlost odozgo",
         "Sila trenja koja zaustavlja telo dok se kreće po podlozi"
@@ -3306,11 +3306,11 @@
       "pitanje": "Zašto se krivi toranj u Pizi ne ruši?",
       "odgovori": [
         "Vertikala iz njegovog težišta pada unutar osnove",
-        "Drže ga čelične sajle koje su zakačene za susedne zgrade",
-        "Ima magnet u temelju koji ga privlači uspravno ka zemlji",
+        "Pod njim je zamrznuto tlo, pa se ne pomera",
+        "Ima opruge u temelju koje ga drže uspravno",
         "Vetar ga stalno pridržava sa nagnute strane"
       ],
-      "zanimljivost": "Inženjeri su krajem 20. veka uklonili zemlju ispod jedne strane i smanjili nagib za oko 40 cm.",
+      "zanimljivost": "Inženjeri su krajem 20. veka uklonili zemlju ispod jedne strane i smanjili nagib za nekoliko desetina centimetara.",
       "rec": "piza"
     },
     {
@@ -3321,7 +3321,7 @@
         "Površina oslonca je manja",
         "Telo je tada mnogo teže nego inače",
         "Težište tela je tada mnogo niže",
-        "Nema nikakve razlike u tome"
+        "Teže je samo za decu"
       ],
       "zanimljivost": "Flamingosi spavaju na jednoj nozi – njihovo telo je tako građeno da im to štedi energiju.",
       "rec": "flamingo"
@@ -3416,7 +3416,7 @@
       "odgovori": [
         "Duži krak daje veći moment uz manju silu",
         "Duža drška smanjuje trenje u navojima šrafa",
-        "Duža drška povećava silu teže na ključ",
+        "Duža drška ključa lakše se drži u ruci",
         "Duži krak daje manji moment, pa je šraf sigurniji"
       ],
       "zanimljivost": "Ponekad majstori na ključ stave cev – produže krak i lakše odviju zarđali šraf.",
@@ -3431,7 +3431,7 @@
         "Bilo gde – masa je ista"
       ],
       "tezina": 1,
-      "zanimljivost": "Kod jednakih masa ravnoteža je kada su i krakovi jednaki. Teže dete mora da sedne bliže osloncu.",
+      "zanimljivost": "Kod jednakih masa ravnoteža je kada su i krakovi jednaki. Ako je jedno dete teže, mora da sedne bliže osloncu.",
       "rec": "klackalica",
       "lekcija": 12,
       "medijiOdgovora": {
@@ -3519,7 +3519,7 @@
         "0,025 N·m"
       ],
       "zanimljivost": "Moment se meri u njutn-metrima.",
-      "rec": "računanje"
+      "rec": "moment"
     },
     {
       "lekcija": 12,
@@ -3568,7 +3568,7 @@
         "Veći prečnik volana (duži krak)",
         "Manji volan sa kraćim krakom sile",
         "Teži volan od metala i prirodne kože",
-        "Nema razlike – svi volani su isti"
+        "Tanji volan sa glatkom površinom"
       ],
       "zanimljivost": "Stari kamioni bez servo-volana imali su ogromne volane.",
       "rec": "volan"
@@ -3636,7 +3636,7 @@
         "200 N",
         "0,2 N"
       ],
-      "zanimljivost": "2 dm³ vode ima masu 2 kg, a težinu 20 N.",
+      "zanimljivost": "Ako bi isto telo bilo potopljeno u živu (gustine 13.600 kg/m³), potisak bi bio 13,6 puta veći.",
       "rec": "računanje"
     },
     {
@@ -3647,7 +3647,7 @@
         "Morska voda ima veću gustinu, pa je potisak veći",
         "More je toplije od reke, pa se telo opusti i lakše pliva",
         "Reka je dublja od mora, pa telo lakše tone u reci nego u moru",
-        "Nema razlike – plivanje je isto teško u slanoj i u slatkoj vodi"
+        "Plivanje je teže u moru zbog većeg talasa"
       ],
       "zanimljivost": "Brodovi koji plove iz reke u more malo „izrone“ – zato na trupu imaju oznake gaza za različite vode.",
       "rec": "more"
@@ -3712,8 +3712,8 @@
       "pitanje": "Zašto se kamen u vodi čini lakšim?",
       "odgovori": [
         "Na njega deluje sila potiska",
-        "Postane manji u vodi",
-        "Gubi masu dok je u vodi",
+        "Voda ga delimično rastvara, pa je lakši",
+        "Voda mu smanjuje zapreminu zbog pritiska",
         "Voda ga hladi, pa se on skuplja i smanjuje"
       ],
       "zanimljivost": "Ronioci zato nose olovne pojaseve – da ih potisak ne izbaci na površinu.",
@@ -3732,7 +3732,7 @@
       "pitanje": "Kako podmornica zaranja i izranja?",
       "odgovori": [
         "Puni i prazni rezervoare vodom, pa menja svoju težinu",
-        "Menja boju svog trupa, pa je voda gura ka površini ili ka dnu",
+        "Menja oblik trupa, pa voda lakše struji oko njega",
         "Uključi jak magnet koji je privlači ka dnu mora",
         "Okreće propeler naviše ili naniže, isto kao helikopter u vazduhu"
       ],
@@ -3771,16 +3771,16 @@
       "odgovori": [
         "Tečnost koju telo potiskuje zauzimajući njeno mesto",
         "Tečnost koja ispari iz suda kada se on zagreje na šporetu",
-        "Tečnost koja je zatvorena u flaši i ne može nikako da izađe",
-        "Tečnost koja teče iz česme kada se slavina potpuno odvrne"
+        "Tečnost koja ostane u sudu posle izlivanja",
+        "Tečnost koja pri mešanju ispadne iz posude"
       ],
       "zanimljivost": "Brod od 10.000 tona istiskuje 10.000 tona vode.",
-      "rec": "istiskivanje"
+      "rec": "istisnuta"
     },
     {
       "lekcija": 13,
       "tezina": 3,
-      "pitanje": "Koliko je potisak na telo u vodi u odnosu na isto telo u ulju (manje gustine)?",
+      "pitanje": "Gde je sila potiska veća – na telo potopljeno u vodu ili na isto telo potopljeno u ulje manje gustine?",
       "odgovori": [
         "Veći je u vodi",
         "Veći je u ulju",
@@ -3809,9 +3809,9 @@
       "pitanje": "Zašto ljudi lakše plutaju kada udahnu duboko?",
       "odgovori": [
         "Vazduh u plućima povećava zapreminu tela, pa i potisak",
-        "Postanu teži od vazduha u plućima, pa ih voda jače gura gore",
+        "Pluća se tada stegnu i telo postane gušće",
         "Voda oko njih postane gušća zbog toplog daha koji izdahnu u nju",
-        "Ne plutaju lakše – udisanje vazduha uopšte ne utiče na plutanje"
+        "Duboki udah smanjuje zapreminu tela, pa tone lakše"
       ],
       "zanimljivost": "Kada izdahnemo, većina ljudi polako tone.",
       "rec": "udah"
@@ -3822,8 +3822,8 @@
       "pitanje": "Kada telo pliva na površini tečnosti?",
       "odgovori": [
         "Kada mu je gustina manja od gustine tečnosti",
-        "Kada je veoma teško i ima mnogo veliku masu u odnosu na vodu",
-        "Kada je po veličini veće od suda u kome je tečnost",
+        "Kada je njegova masa manja od mase tečnosti u sudu",
+        "Kada je veoma veliko, pa ne može da potone u tečnosti",
         "Kada mu je gustina veća od gustine tečnosti"
       ],
       "zanimljivost": "Drvo, led i pluta plivaju na vodi.",
@@ -3857,8 +3857,8 @@
       "pitanje": "Kada telo tone?",
       "odgovori": [
         "Kada je njegova gustina veća od gustine tečnosti",
-        "Kada je malo i lako, pa ga voda ne može da drži",
-        "Kada je okruglog oblika, pa se lako kotrlja ka dnu",
+        "Kada je njegova masa veća od mase vode u sudu",
+        "Kada je njegova zapremina veća od zapremine vode",
         "Kada je njegova gustina manja od gustine tečnosti"
       ],
       "zanimljivost": "Ekser tone, ali brod od istog gvožđa pluta – važna je ukupna gustina, sa vazduhom unutra.",
@@ -3893,7 +3893,7 @@
       "odgovori": [
         "Kada su gustine tela i tečnosti jednake",
         "Kada je telo mnogo veće od suda sa tečnošću",
-        "Kada je tečnost veoma hladna, skoro zaleđena",
+        "Kada telo ima tačno polovinu gustine tečnosti",
         "Nikad – svako telo ili tone ili izranja na površinu"
       ],
       "zanimljivost": "Ribe podešavaju gustinu tela ribljim mehurom i lebde na željenoj dubini.",
@@ -3928,8 +3928,8 @@
       "odgovori": [
         "Brod je šupalj i istiskuje mnogo vode, pa mu je prosečna gustina manja od vode",
         "Brod je napravljen od posebne vrste čelika koji je lakši od vode i zato ne tone",
-        "Brod je lakši od eksera jer ima mnogo manje čelika po kilogramu svoje ukupne mase",
-        "Ekser je magnetan, pa ga Zemljino magnetno polje snažno vuče na dno mora ili reke"
+        "Ekser je od drugačijeg čelika koji je teži od vode",
+        "Brod ima premaz koji ga čini lakšim od vode"
       ],
       "zanimljivost": "Najveći brodovi teže preko 400.000 tona – a ipak plove.",
       "rec": "brod"
@@ -3967,7 +3967,7 @@
       "odgovori": [
         "Slana voda ima veću gustinu od jajeta",
         "Jaje upije so kroz ljusku, pa postane lakše",
-        "Jaje postane lakše od soli koja se rastvori",
+        "Jaje se zagreje od soli i postane lakše",
         "Ne pluta – jaje uvek tone, i u slanoj vodi"
       ],
       "zanimljivost": "Ovaj ogled je lako izvesti u kuhinji – dovoljno je nekoliko kašika soli u čaši vode.",
@@ -4032,7 +4032,7 @@
         "Topao vazduh je ređi od hladnog, pa je potisak veći od težine balona",
         "Ima mali motor ispod korpe koji okreće elisu i diže ceo balon naviše ka nebu",
         "Vetar ga podiže, a topao vazduh služi samo da balon ostane naduvan tokom leta",
-        "Zbog magneta u korpi koji se odbija od Zemljinog magnetnog polja ispod balona"
+        "Zato što se topli vazduh u balonu širi i gura balon naniže"
       ],
       "zanimljivost": "Prvi let ljudi balonom izveden je 1783. u Parizu – balonom braće Mongolfje.",
       "rec": "mongolfje"
@@ -4057,8 +4057,8 @@
       "odgovori": [
         "Ima malu gustinu i veliku zapreminu, pa daje veliki potisak",
         "Napravljen je od teške gume koja sama pliva bez obzira na gustinu",
-        "Ima mali ugrađeni motor koji ga stalno gura naviše ka površini vode",
-        "Zbog jarke boje ga voda odbija i ne dozvoljava mu da potone ispod"
+        "Ima tanku kožu koja upija vodu i tako lebdi",
+        "Zbog toga što se pojas puni vazduhom iz pluća"
       ],
       "zanimljivost": "Moderni prsluci za spasavanje okreću onesvešćenu osobu licem naviše.",
       "rec": "pojas"
@@ -4094,7 +4094,7 @@
       "odgovori": [
         "Helijum je mnogo ređi od vazduha",
         "Helijum je mnogo teži od vazduha oko nas",
-        "Helijum svetli u mraku i noću pokazuje put",
+        "Helijum ubrzava rast gasa, pa se balon brže puni",
         "Helijum je najjeftiniji gas na svetu"
       ],
       "zanimljivost": "Ranije su punjeni vodonikom, koji je zapaljiv – nesreća „Hindenburga“ 1937. okončala je to doba.",
@@ -4108,7 +4108,7 @@
         "Puni riblji mehur gasom i smanjuje svoju gustinu",
         "Pliva samo perajima, snažno mašući repom i perajima naviše",
         "Isprazni stomak, pa postane lakša od vode oko sebe",
-        "Promeni boju krljušti, pa je voda gura ka površini"
+        "Promeni boju krljušti da bi je voda lakše nosila"
       ],
       "zanimljivost": "Ajkule nemaju riblji mehur – zato moraju stalno da plivaju ili tonu.",
       "rec": "mehur"
@@ -4163,7 +4163,7 @@
         "46 J"
       ],
       "zanimljivost": "1 J je otprilike rad potreban da se jabuka podigne 1 metar.",
-      "rec": "računanje"
+      "rec": "rad"
     },
     {
       "lekcija": 15,
@@ -4240,7 +4240,7 @@
         "5.010 J",
         "2.000 J"
       ],
-      "zanimljivost": "Za isti posao čoveku bi trebali sati nošenja – mašine štede vreme, ali ne i rad.",
+      "zanimljivost": "Dizalica ne smanjuje rad – ona samo rasporedi isti rad na duže vreme ili manju silu.",
       "rec": "dizalica"
     },
     {
@@ -4264,7 +4264,7 @@
         "Pozitivan",
         "Negativan",
         "Nula",
-        "Uvek beskonačan"
+        "Zavisi od mase tela, a ne od visine"
       ],
       "zanimljivost": "Sila teže i pomeranje imaju isti smer pa je rad pozitivan.",
       "rec": "pad"
@@ -4290,7 +4290,7 @@
         "Ista jedinica – džul",
         "Nemaju ništa zajedničko",
         "Ista oznaka – F",
-        "Isto merilo vremena"
+        "Ista jedinica – njutn"
       ],
       "zanimljivost": "Rad je način na koji se energija prenosi sa tela na telo.",
       "rec": "energija"
@@ -4394,7 +4394,7 @@
         "Knjiga na polici",
         "Lopta na podu",
         "Auto u garaži na zemlji",
-        "Kamen na dnu jame (u odnosu na dno)"
+        "Balon koji stoji na podu sobe"
       ],
       "zanimljivost": "Kada knjiga padne, potencijalna energija prelazi u kinetičku.",
       "rec": "polica"
@@ -4432,8 +4432,8 @@
       "odgovori": [
         "Da, npr. avion u letu",
         "Ne, nikada – samo jednu od te dve",
-        "Samo u svemiru, daleko od Zemlje",
-        "Samo na Mesecu, gde je teža manja"
+        "Samo ako miruje na visini, bez brzine",
+        "Samo kada se kreće po ravnoj podlozi"
       ],
       "zanimljivost": "Zbir kinetičke i potencijalne energije zove se ukupna mehanička energija.",
       "rec": "avion"
@@ -4484,7 +4484,7 @@
       "odgovori": [
         "Ima veliku kinetičku energiju koja se pri udarcu predaje ekseru",
         "Težak je i dok miruje, pa je za zakucavanje važna samo njegova masa",
-        "Ima mali magnet u glavi koji privlači i uvlači ekser u drvo",
+        "Pri zamahu se ekser sam zagreje i omekša",
         "Zbog trenja između glave čekića i eksera, koje gura ekser naniže"
       ],
       "zanimljivost": "Malj za zabijanje stubova podiže se visoko – potencijalna energija prelazi u kinetičku.",
@@ -4528,7 +4528,7 @@
       "odgovori": [
         "Potencijalna i kinetička energija se naizmenično pretvaraju jedna u drugu",
         "Energija odmah nestaje kad se klatno pusti, pa se ono kreće samo po inerciji",
-        "Samo raste",
+        "Raste pri penjanju, a opada pri spuštanju",
         "Ostaje samo kinetička"
       ],
       "zanimljivost": "Klatno se postepeno zaustavlja zbog otpora vazduha i trenja u osloncu.",
@@ -4580,7 +4580,7 @@
         "Pretvara se u toplotu zbog trenja",
         "Nestaje bez ikakvog traga i potpuno se gubi",
         "Povećava se zbog kočenja i trenja točka",
-        "Pretvara se u masu kočnice, koja postaje teža"
+        "Pretvara se u električnu energiju u točku"
       ],
       "zanimljivost": "Neki električni automobili pri kočenju vraćaju energiju u bateriju – regenerativno kočenje.",
       "rec": "toplota"
@@ -4617,9 +4617,9 @@
       "pitanje": "Zašto lopta pri svakom odskoku dostiže manju visinu?",
       "odgovori": [
         "Deo energije prelazi u toplotu i zvuk",
-        "Gravitacija raste svaki put kad lopta udari",
-        "Lopta postaje teža posle svakog odskoka",
-        "Zemlja je upija kao sunđer pri svakom udaru"
+        "Lopta se pri svakom udarcu malo ohladi",
+        "Vazduh je gušći na visini odskoka",
+        "Zemlja upija vazduh oko lopte"
       ],
       "zanimljivost": "Zvuk udarca lopte o pod je takođe deo energije koji lopta „gubi“.",
       "rec": "odskok",
@@ -4637,7 +4637,7 @@
         "Ukupna energija se održava – samo prelazi iz oblika u oblik",
         "Uvek se smanji, jer se deo energije nepovratno izgubi i nestane",
         "Uvek se poveća, jer svaka pojava u prirodi stvara novu energiju",
-        "Nestaje noću kada nema Sunca, a ujutru se ponovo stvara iz svetlosti"
+        "Zavisi od doba dana i godišnjeg vremena"
       ],
       "zanimljivost": "Zakon održanja energije jedan je od najvažnijih zakona fizike – važi od atoma do galaksija.",
       "rec": "zakon"
@@ -4648,9 +4648,9 @@
       "pitanje": "Zašto je nemoguća mašina „perpetuum mobile“ (večiti motor)?",
       "odgovori": [
         "Ne može davati rad bez dovođenja energije",
-        "Previše je skupa za pravljenje u fabrikama",
-        "Zabranjena je zakonom u većini zemalja sveta",
-        "Bila bi preteška, pa ne bi mogla da se pomeri"
+        "Trenje bi je uvek zaustavljalo odmah",
+        "Nema dovoljno dobrih materijala za nju",
+        "Sila teže je preslaba da je pokrene"
       ],
       "zanimljivost": "Patentni zavodi mnogih zemalja odbijaju prijave za „večite motore“ bez razmatranja.",
       "rec": "perpetuum"
@@ -4676,7 +4676,7 @@
         "Kinetička energija zaleta → elastična energija motke → potencijalna energija skakača",
         "Potencijalna energija skakača → kinetička energija motke → toplota u vazduhu i u pesku",
         "Elastična energija motke → zvučna energija udarca → kinetička energija skakača u letu",
-        "Energija se ne prenosi – skakač samo snagom ruku podiže telo uz motku do vrha letvice"
+        "Energija se pretvara samo u toplotu u motki"
       ],
       "zanimljivost": "Armand Duplantis je rekord u skoku sa motkom pomerio iznad 6,2 m.",
       "rec": "motka"
@@ -4702,7 +4702,7 @@
         "Kinetička opada, a potencijalna raste",
         "Obe energije rastu dok strela ide gore",
         "Obe energije opadaju zbog otpora vazduha",
-        "Ništa – energija strele je stalno ista"
+        "Samo kinetička raste, a potencijalna opada"
       ],
       "zanimljivost": "Najviša tačka – tu je kinetička energija najmanja.",
       "rec": "strela"
@@ -4715,7 +4715,7 @@
         "U kinetičku energiju i toplotu",
         "U svetlost koju telo slabo zrači",
         "U masu, pa telo posle trčanja postaje teže",
-        "Ni u šta – energija hrane nestaje"
+        "U električnu energiju u mišićima"
       ],
       "zanimljivost": "Pri trčanju telo se zagreva – zato se znojimo.",
       "rec": "hrana"
@@ -4804,9 +4804,9 @@
       "pitanje": "Šta znači da sijalica ima snagu 10 W?",
       "odgovori": [
         "Svake sekunde troši 10 J električne energije",
-        "Teška je 10 kg zajedno sa grlom i staklenim balonom",
-        "Svetli tačno 10 sati pre nego što potpuno pregori",
-        "Ima 10 žica"
+        "Troši 10 kJ energije svake sekunde",
+        "Ima napon od 10 volti",
+        "Svetli 10 puta jače od obične sijalice"
       ],
       "zanimljivost": "LED sijalica od 10 W svetli kao stara od 60–75 W.",
       "rec": "sijalica"
@@ -4844,8 +4844,8 @@
       "odgovori": [
         "Manje energije se gubi na toplotu",
         "Teži su, pa imaju mnogo veću snagu",
-        "Brži su, pa troše manje vremena na put",
-        "Nemaju struju"
+        "Imaju veći broj obrtaja, pa rade brže",
+        "Ne koriste nikakvu energiju"
       ],
       "zanimljivost": "Električni motori imaju koeficijent i preko 90%.",
       "rec": "motor"
@@ -4895,7 +4895,7 @@
       "pitanje": "Gde se gubi energija u automobilskom motoru?",
       "odgovori": [
         "Uglavnom kao toplota (izduvni gasovi, hladnjak)",
-        "Pretvara se u masu, pa automobil postaje teži",
+        "Pretvara se u električnu energiju u akumulatoru",
         "Nestaje bez traga, jer se energija stalno troši i gubi",
         "Ne gubi se – sva energija goriva ide samo u kretanje auta"
       ],
@@ -4923,7 +4923,7 @@
         "Šire se",
         "Skupljaju se",
         "Ne menjaju se",
-        "Nestaju"
+        "Dobijaju novu masu"
       ],
       "zanimljivost": "Ajfelov toranj je leti viši za oko 15 cm nego zimi – zbog toplotnog širenja gvožđa.",
       "rec": "širenje",
@@ -4941,7 +4941,7 @@
         "Da bi se metal mogao širiti leti bez oštećenja",
         "Da bi gradnja bila jeftinija, jer se troši manje čelika",
         "Da bi kišnica oticala sa mosta i ne bi stvarala bare",
-        "Zbog lepšeg zvuka točkova voza dok prelaze preko šina"
+        "Da bi se spojevi lakše rastavljali pri održavanju"
       ],
       "zanimljivost": "„Tak-tak“ zvuk vožnje vozom potiče od tih razmaka između šina.",
       "rec": "dilatacija",
@@ -4957,7 +4957,7 @@
       "pitanje": "Zašto se telefonske i električne žice leti više ugibaju?",
       "odgovori": [
         "Leti se šire i produže",
-        "Leti su teže zbog prašine",
+        "Leti žice gube napon i zato se ugibaju",
         "Zbog ptica koje sede na njima",
         "Zbog vetra koji ih vuče dole"
       ],
@@ -5030,7 +5030,7 @@
         "Voda se pri mržnjenju širi i može da razbije flašu",
         "Voda u flaši ispari od hladnoće, pa se plastična flaša skupi",
         "Flaša se otopi",
-        "Ništa se ne desi"
+        "Flaša se skupi i postane mekša od vode"
       ],
       "zanimljivost": "Led ima oko 9% veću zapreminu od vode iz koje je nastao.",
       "rec": "led"
@@ -5068,8 +5068,8 @@
       "odgovori": [
         "Unutrašnji deo se brzo širi, a spoljašnji ne stiže, pa nastaju naprezanja",
         "Vrela voda je teža od hladne, pa svojom težinom pritisne dno čaše i probije ga",
-        "Staklo se topi",
-        "Zbog pare"
+        "Staklo se omekša i izgubi čvrstoću",
+        "Zbog pare koja pritiska dno čaše"
       ],
       "zanimljivost": "Vatrostalno staklo slabo se širi pri zagrevanju – zato ne puca u rerni.",
       "rec": "staklo"
@@ -5119,7 +5119,7 @@
       "pitanje": "Zašto ne treba pumpati gume do maksimuma po velikoj vrućini?",
       "odgovori": [
         "Vazduh u gumi se dodatno širi i pritisak raste",
-        "Guma postaje teža od vrelog vazduha, pa se brže troši na asfaltu",
+        "Guma se topi i menja oblik na vrućini",
         "Guma se skuplja na vrućini, pa vazduh brže izlazi kroz ventil",
         "Vreo vazduh lakše izlazi kroz ventil, pa pritisak opada"
       ],
@@ -5132,7 +5132,7 @@
       "pitanje": "Šta je toplotno širenje?",
       "odgovori": [
         "Povećanje dimenzija tela pri zagrevanju",
-        "Smanjenje mase tela pri jakom zagrevanju",
+        "Smanjenje zapremine tela pri zagrevanju",
         "Promena boje tela pri veoma jakom zagrevanju",
         "Topljenje tela kada se zagreje do tačke ključanja"
       ],
@@ -5295,7 +5295,7 @@
         "–27 °C"
       ],
       "zanimljivost": "Prijatna sobna temperatura je oko 293–298 K.",
-      "rec": "računanje",
+      "rec": "temperatura",
       "medijiOdgovora": {
         "vrsta": "fizika",
         "scena": "termometar",
@@ -5321,8 +5321,8 @@
       "odgovori": [
         "Koliko se brzo u proseku kreću čestice tela",
         "Količinu toplote koju telo sadrži u sebi i oslobađa",
-        "Masu tela izraženu u kilogramima ili gramima",
-        "Gustinu tela, odnosno koliko je ono teško po komadu"
+        "Koliko čestica ima u telu, bez obzira na brzinu",
+        "Koliko se telo širi kad se zagreje"
       ],
       "zanimljivost": "Što se čestice brže kreću, telo je toplije.",
       "rec": "čestice",
@@ -5407,7 +5407,7 @@
         "Živa je otrovna ako se termometar razbije",
         "Pokazuje pogrešno, za nekoliko stepeni više",
         "Preskup je za običnu porodicu i domaćinstvo",
-        "Pretežak je, pa se lako ispusti iz ruke i polomi"
+        "Ne može da meri temperaturu iznad 40 °C"
       ],
       "zanimljivost": "Od 2009. živini termometri u Evropskoj uniji uglavnom su zabranjeni za prodaju.",
       "rec": "živa"
@@ -5433,7 +5433,7 @@
         "Lord Kelvin (Vilijam Tomson)",
         "Anders Celzijus",
         "Danijel Farenhajt",
-        "Isak Njutn"
+        "Džejms Džul"
       ],
       "zanimljivost": "Kelvin je dobio plemićku titulu i ime po reci Kelvin u Glazgovu.",
       "rec": "kelvin"
@@ -5495,7 +5495,7 @@
         "Čestice se brže kreću",
         "Topla voda je gušća",
         "Topla voda je lepljiva",
-        "Nema razlike"
+        "Razlika je samo u boji vode"
       ],
       "zanimljivost": "Kesica čaja zato brže oboji toplu nego hladnu vodu.",
       "rec": "čaj",
@@ -5622,7 +5622,7 @@
         "Zbog kretanja i mešanja čestica (difuzije)",
         "Zbog vetra koji uvek duva kroz otvorene prozore",
         "Zbog gravitacije koja vuče miris naniže, ka podu",
-        "Zbog svetlosti koja nosi čestice mirisa kroz sobu"
+        "Zbog toplote koja podiže miris uz zidove"
       ],
       "zanimljivost": "Pas može da nanjuši pojedinačne molekule mirisa u koncentracijama hiljadama puta manjim nego čovek.",
       "rec": "parfem",
@@ -5642,7 +5642,7 @@
         "Tri atoma kiseonika",
         "Atom ugljenika i kiseonika"
       ],
-      "zanimljivost": "U jednoj čaši vode ima više molekula nego čaša vode u svim okeanima.",
+      "zanimljivost": "U jednoj čaši vode ima više molekula nego što ima čaša vode u svim okeanima sveta.",
       "rec": "voda"
     },
     {
@@ -5652,7 +5652,7 @@
       "odgovori": [
         "Kreću se brže",
         "Usporavaju",
-        "Nestaju",
+        "Menjaju broj, pa ih ima više",
         "Postaju veće"
       ],
       "zanimljivost": "Kada se kreću dovoljno brzo, čvrsto telo se topi.",
@@ -5720,8 +5720,8 @@
       "odgovori": [
         "Da, ali vrlo sporo",
         "Ne, nikada",
-        "Samo u ledu",
-        "Samo u gvožđu"
+        "Samo u tečnostima i gasovima",
+        "Samo kad se telo zagreje do topljenja"
       ],
       "zanimljivost": "Ploče zlata i olova, čvrsto pritisnute nekoliko godina, primetno se izmešaju u tankom sloju na dodiru.",
       "rec": "sporo"
@@ -5730,8 +5730,8 @@
       "pitanje": "Zašto se balon na suncu nadme jače nego u hladovini?",
       "odgovori": [
         "Molekuli vazduha u njemu se brže kreću i jače udaraju u zidove",
-        "Sunce uduvava vazduh u balon",
-        "Balon na suncu postaje lakši",
+        "Sunce dodaje novi vazduh u balon, pa se povećava",
+        "Gas u balonu se na suncu skuplja",
         "Guma se na suncu skuplja"
       ],
       "tezina": 2,
@@ -5774,7 +5774,7 @@
       "pitanje": "Na koja dva načina se može promeniti unutrašnja energija tela?",
       "odgovori": [
         "Vršenjem rada i razmenom toplote",
-        "Samo bojenjem tela u tamnu ili crnu boju",
+        "Samo promenom boje, bez rada i toplote",
         "Samo pomeranjem tela sa jednog mesta na drugo",
         "Ne može se menjati ni na koji način uopšte"
       ],
@@ -5788,7 +5788,7 @@
       "odgovori": [
         "Energija koja prelazi sa toplijeg na hladnije telo",
         "Isto što i temperatura tela izražena u stepenima Celzijusa",
-        "Vrsta goriva",
+        "Količina čestica u telu",
         "Brzina čestica"
       ],
       "zanimljivost": "Toplota uvek sama prelazi sa toplijeg na hladnije telo, nikad obrnuto.",
@@ -5800,8 +5800,8 @@
       "pitanje": "Koja je razlika između temperature i toplote?",
       "odgovori": [
         "Temperatura pokazuje zagrejanost, a toplota je prenesena energija",
-        "Nema razlike – temperatura i toplota su dva naziva za istu veličinu i mere se isto",
-        "Toplota se meri termometrom u stepenima, a temperatura u džulima na vagi",
+        "Nema razlike, jer su temperatura i toplota dva naziva za istu veličinu",
+        "Toplota se meri termometrom u stepenima, a temperatura u džulima",
         "Temperatura se meri u džulima, a toplota u stepenima Celzijusa ili kelvinima"
       ],
       "zanimljivost": "Varnica od 1.000 °C ne opeče jer nosi malo energije, a kada puna vode od 60 °C može da opeče.",
@@ -5853,8 +5853,8 @@
       "odgovori": [
         "Metali dobro provode toplotu",
         "Kašika je veoma tanka i lagana",
-        "Čaj je slan, pa brzo greje metal",
-        "Nema razloga – to se samo tako čini"
+        "Čaj ima mnogo šećera koji greje metal",
+        "Metal sam po sebi stvara toplotu"
       ],
       "zanimljivost": "Drvene i plastične drške na šerpama postavljaju se jer slabo provode toplotu.",
       "rec": "kašika",
@@ -5881,8 +5881,8 @@
       "odgovori": [
         "Slabo provodi toplotu",
         "Odlično provodi toplotu",
-        "Težak je",
-        "Gust je"
+        "Brzo se zagreva, pa odmah predaje toplotu",
+        "Gust je, pa ne propušta toplotu"
       ],
       "zanimljivost": "Duple prozore i vunene džempere čini toplim upravo zarobljeni vazduh.",
       "rec": "izolator"
@@ -5895,7 +5895,7 @@
         "Strujanjem – topla voda se diže, a hladna spušta",
         "Samo zračenjem – plamen šporeta zrači toplotu kroz dno šerpe",
         "Ne prenosi se – zagreva se samo voda na samom dnu šerpe",
-        "Kroz poklopac"
+        "Provođenjem kroz vazduh iznad vode"
       ],
       "zanimljivost": "Isto strujanje u atmosferi stvara vetrove i oblake.",
       "rec": "strujanje",
@@ -5912,7 +5912,7 @@
       "odgovori": [
         "Voda ima veliki specifični toplotni kapacitet",
         "Voda je teža od peska pa je potrebno više energije",
-        "Pesak je mokar, pa se mnogo teže zagreje od vode",
+        "Pesak je veći i zauzima više prostora",
         "Nije potrebno više – pesak i voda se zagreju isto"
       ],
       "zanimljivost": "Zato je pesak na plaži vreo, a more prijatno – i zato more ublažava klimu primorja.",
@@ -5938,8 +5938,8 @@
       "odgovori": [
         "Vakuum između zidova sprečava provođenje i strujanje, a sjajni zid zračenje",
         "Ima mali grejač u dnu koji se puni toplotom ruku, pa održava piće toplim i nekoliko sati",
-        "Ima sloj leda između zidova koji ne dozvoljava toploti da izađe iz boce ni posle par sati",
-        "Debelom plastikom"
+        "Ima dupli zid od stakla ispunjen uljem, koji ne dozvoljava provođenje toplote",
+        "Ima debeo sloj plastike koji potpuno zaustavlja i provođenje i zračenje toplote"
       ],
       "zanimljivost": "Termos je izumeo škotski naučnik Džejms Djuar 1892, za čuvanje hladnih tečnih gasova.",
       "rec": "termos"
@@ -5952,7 +5952,7 @@
         "Slabo provode toplotu i zadržavaju toplotu ruke",
         "Greju same od sebe, jer vuna proizvodi toplotu",
         "Zbog tamne boje vune koja upija sunčevu svetlost",
-        "Zbog mode"
+        "Da bi se lakše prihvatale rukavice od kože"
       ],
       "zanimljivost": "Rukavice ne „greju“ – one samo usporavaju da toplota tela izađe napolje.",
       "rec": "rukavice"
@@ -5964,7 +5964,7 @@
       "odgovori": [
         "Rad sile se pretvara u unutrašnju energiju gasa",
         "Zbog trenja ruke o ručku pumpe dok pumpamo gume bicikla",
-        "Zbog sunca koje greje pumpu dok pumpamo bicikl napolju",
+        "Zbog toga što se vazduh u pumpi meša sa hladnijim vazduhom",
         "Ne zagreva se"
       ],
       "zanimljivost": "Dizel motor radi bez svećice – vazduh se sabije toliko da se zagreje i zapali gorivo.",

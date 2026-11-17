@@ -313,7 +313,7 @@
         "Kolubara"
       ],
       "zanimljivost": "Na mapi su Južna i Velika Morava. Velika Morava nastaje spajanjem Južne i Zapadne Morave kod Stalaća, a uliva se u Dunav kod Smedereva. Zajedno sa Zapadnom Moravom duga je oko 500 km – to je najduža reka koja cela teče kroz Srbiju.",
-      "rec": "velik"
+      "rec": "morava"
     },
     {
       "tezina": 1,
@@ -507,7 +507,7 @@
         "Vranje",
         "Negotin"
       ],
-      "zanimljivost": "Pirot je poznat po ćilimima sa šarama koje imaju svoja imena i značenja, i po pirotskom kačkavalju. Iznad grada je Stara planina, sa najvišim vrhom Srbije van Kosova – Midžorom (2.169 m).",
+      "zanimljivost": "Pirot je poznat po ćilimima sa šarama koje imaju svoja imena i značenja, i po pirotskom kačkavalju. Iznad grada je Stara planina, a na njoj je Midžor (2.169 m), njen najviši vrh.",
       "rec": "pirot",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -517,7 +517,7 @@
     },
     {
       "tezina": 1,
-      "pitanje": "Koji je najviši vrh sveta?",
+      "pitanje": "Koji je ovo najviši vrh sveta?",
       "mediji": {
         "vrsta": "slika",
         "src": "slike/everest.jpg"
@@ -576,7 +576,7 @@
         "Lim",
         "Ibar"
       ],
-      "zanimljivost": "Meandri Uvca su toliko savijeni da se reka gotovo vraća u isto mesto. To je stanište beloglavih supova, a u blizini je i Ledena pećina.",
+      "zanimljivost": "Meandri Uvca su toliko savijeni da se reka gotovo vraća u isto mesto. To je stanište beloglavih supova.",
       "rec": "uvac"
     },
     {
@@ -592,7 +592,7 @@
         "Rajačke pivnice",
         "Zlatar"
       ],
-      "zanimljivost": "Đavolja varoš na Radan planini ima preko 200 figura visokih do 15 m. Kamene kape štite zemlju ispod od kiše. Pored su i dva izvora jako kisele vode – „Đavolja voda“ i „Crveno vrelo“.",
+      "zanimljivost": "Đavolja varoš na Radan planini ima preko 200 figura visokih do 15 m. Kamene kape štite zemlju ispod od kiše. Pored su i dva kisela izvora – „Đavolja voda“ i „Crveno vrelo“.",
       "rec": "varoš"
     },
     {
@@ -613,7 +613,7 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Kako se zove najveća klisura u Evropi, kroz koju Dunav prolazi između Srbije i Rumunije?",
+      "pitanje": "Kako se zove ova najveća klisura u Evropi, kroz koju Dunav prolazi između Srbije i Rumunije?",
       "mediji": {
         "vrsta": "slika",
         "src": "slike/djerdap.jpg"
@@ -629,11 +629,7 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Na kom kontinentu se nalazi ova čuvena crvena stena koju domoroci smatraju svetom?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/uluru.jpg"
-      },
+      "pitanje": "Na kom kontinentu se nalazi Uluru, crvena stena koju domoroci smatraju svetom?",
       "odgovori": [
         "Australija",
         "Afrika",
@@ -641,15 +637,15 @@
         "Azija"
       ],
       "zanimljivost": "Uluru menja boju tokom dana – pri zalasku Sunca postaje jarko crven. Najveći deo stene je ispod zemlje, kao santa leda. Penjanje na nju je zabranjeno od 2019.",
-      "rec": "australija"
+      "rec": "australija",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/uluru.jpg"
+      }
     },
     {
       "tezina": 1,
-      "pitanje": "U kojoj zemlji se nalazi ova sveta planina-vulkan?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/fudzi.jpg"
-      },
+      "pitanje": "U kojoj zemlji se nalazi Fudži, sveta planina-vulkan?",
       "odgovori": [
         "Japan",
         "Kina",
@@ -657,7 +653,11 @@
         "Južna Koreja"
       ],
       "zanimljivost": "Fudži je visok 3.776 m i poslednji put je eruptirao 1707. Za vedrog dana vidi se iz Tokija, udaljenog oko 100 km.",
-      "rec": "japan"
+      "rec": "japan",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/fudzi.jpg"
+      }
     },
     {
       "tezina": 3,
@@ -935,7 +935,7 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Koja je najveća pustinja na svetu?",
+      "pitanje": "Koja je najveća pustinja na svetu, ako se računaju i hladne?",
       "odgovori": [
         "Antarktik",
         "Sahara",
@@ -949,23 +949,6 @@
         "opis": "Antarktik – godišnje padne manje padavina nego u Sahari"
       },
       "rec": "antarktik"
-    },
-    {
-      "tezina": 2,
-      "pitanje": "Koji je najviši vrh Srbije?",
-      "odgovori": [
-        "Đeravica (Prokletije)",
-        "Pančićev vrh (Kopaonik)",
-        "Midžor (Stara planina)",
-        "Rtanj"
-      ],
-      "zanimljivost": "Đeravica je visoka 2.656 m. Pančićev vrh na Kopaoniku (2.017 m) dobio je ime po botaničaru Josifu Pančiću, koji je, po njegovoj želji, tu i sahranjen u mauzoleju.",
-      "rec": "đeravica",
-      "medijiOdgovora": {
-        "vrsta": "slika",
-        "src": "slike/djeravica.jpg",
-        "opis": "Đeravica na Prokletijama"
-      }
     },
     {
       "tezina": 3,
@@ -995,25 +978,6 @@
       ],
       "zanimljivost": "Afrika, Azija, Evropa, Severna Amerika, Južna Amerika, Australija i Antarktik. Na Olimpijskim krugovima je 5 krugova, jer se Amerike računaju kao jedna, a Antarktik se ne računa.",
       "rec": "afrika"
-    },
-    {
-      "tezina": 3,
-      "pitanje": "Sa koliko država se graniči Srbija?",
-      "mediji": {
-        "vrsta": "mapa",
-        "oblast": "balkan",
-        "istakni": [
-          "SRB"
-        ]
-      },
-      "odgovori": [
-        "8",
-        "6",
-        "7",
-        "9"
-      ],
-      "zanimljivost": "Srbija se graniči sa Mađarskom, Rumunijom, Bugarskom, Severnom Makedonijom, Albanijom, Crnom Gorom, BiH i Hrvatskom. Najduža granica je sa Rumunijom – veliki deo ide Dunavom kroz Đerdap.",
-      "rec": "srbija"
     },
     {
       "tezina": 2,
@@ -1317,7 +1281,7 @@
         "Rusija",
         "Grenland"
       ],
-      "zanimljivost": "Kanada je druga najveća država na svetu. Ima najdužu obalu na svetu i više jezera nego sve ostale zemlje zajedno.",
+      "zanimljivost": "Kanada je druga najveća država na svetu. Ima najdužu obalu na svetu i oko 60% svih jezera na Zemlji (računajući jezera veća od 0,1 km²).",
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/morejn.jpg",
@@ -1564,7 +1528,7 @@
         "vrsta": "mapa",
         "silueta": "GBR"
       },
-      "rec": "velik"
+      "rec": "britanija"
     },
     {
       "tezina": 2,
@@ -1623,7 +1587,7 @@
         "src": "slike/cicen-ica.jpg",
         "opis": "Čičen Ica – piramida Maja u Meksiku"
       },
-      "rec": "kaktus",
+      "rec": "tenočtitlan",
       "mediji": {
         "vrsta": "mapa",
         "silueta": "MEX"
@@ -1757,7 +1721,7 @@
           "Po"
         ]
       },
-      "rec": "reka"
+      "rec": "nizija"
     },
     {
       "tezina": 2,
@@ -2018,7 +1982,7 @@
         "Hamburg",
         "Frankfurt"
       ],
-      "zanimljivost": "Berlin je od 1961. do 1989. bio podeljen zidom. Ima i više mostova od Venecije – oko hiljadu!",
+      "zanimljivost": "Berlin je od 1961. do 1989. bio podeljen zidom. Ima više od 1.000 mostova, mnogo više nego Venecija.",
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/brandenburska.jpg",
@@ -2368,7 +2332,7 @@
         "Japanski rov"
       ],
       "zanimljivost": "Najdublja tačka, Čelendžer, duboka je oko 11 km. Do nje su ljudi stigli samo nekoliko puta – prvi put 1960, a 2012. se sam spustio i reditelj Džejms Kameron.",
-      "rec": "tačka",
+      "rec": "čelendžer",
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/batiskaf-trst.jpg",
@@ -2676,7 +2640,7 @@
         "Potpeć",
         "Rajkova pećina"
       ],
-      "zanimljivost": "Resavska pećina je stara oko 80 miliona godina, a otkrivena je tek 1962. Temperatura u njoj je cele godine oko 7 °C.",
+      "zanimljivost": "Resavska pećina je stara oko 45 miliona godina, a otkrivena je tek 1962. Temperatura u njoj je cele godine oko 7 °C.",
       "rec": "pećina",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -2702,38 +2666,28 @@
       }
     },
     {
-      "tezina": 3,
-      "pitanje": "Koje je najveće veštačko jezero u Srbiji?",
+      "tezina": 2,
+      "pitanje": "Uz koju reku leži Novi Sad?",
       "odgovori": [
-        "Đerdapsko jezero",
-        "Vlasinsko jezero",
-        "Zlatarsko jezero",
-        "Perućac"
+        "Dunav",
+        "Sava",
+        "Tisa",
+        "Begej"
       ],
-      "zanimljivost": "Đerdapsko jezero nastalo je izgradnjom brane Đerdap 1972. Vlasinsko jezero ima „plovna ostrva“ od tresetne mahovine.",
-      "rec": "jezero",
-      "medijiOdgovora": {
-        "vrsta": "slika",
-        "src": "slike/djerdap-brana.jpg",
-        "opis": "Brana i hidroelektrana Đerdap I"
-      }
+      "zanimljivost": "Novi Sad leži na desnoj obali Dunava (gledano niz tok), a Petrovaradin, sa čuvenom tvrđavom, na levoj.",
+      "rec": "dunav"
     },
     {
       "tezina": 3,
-      "pitanje": "Gde se nalazi „Đavolja varoš“?",
+      "pitanje": "Koji je najviši vrh Vojvodine?",
       "odgovori": [
-        "Na planini Radan kod Kuršumlije",
-        "Na Fruškoj gori, kod grada Iriga",
-        "Na Kopaoniku, kod skijališta Brzeće",
-        "Na planini Tari, kod Bajine Bašte"
+        "Vršački breg (Vršačke planine)",
+        "Crveni čot (Fruška gora)",
+        "Midžor (Stara planina)",
+        "Zlatibor"
       ],
-      "zanimljivost": "U prirodi Đavolja varoš ima preko 200 zemljanih figura sa kamenim kapama. Bila je i kandidat na svetskom izboru za Sedam novih čuda prirode.",
-      "rec": "planina",
-      "medijiOdgovora": {
-        "vrsta": "slika",
-        "src": "slike/djavolja-varos.jpg",
-        "opis": "Đavolja varoš"
-      }
+      "zanimljivost": "Vršačke planine su niske gromadne planine, nastale kao ostrva u Panonskom moru – kao i Fruška gora.",
+      "rec": "vršac"
     }
   ]
 }

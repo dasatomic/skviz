@@ -15,7 +15,7 @@ module.exports = ({ L, Z, G, K, proveri, r, grafik, prava, A }) => {
      K('Uređeni par $(3, 7)$ pripada grafiku funkcije.')]);
 
   Z(2, 'Koja zavisnost jeste funkcija po $x$?',
-    ['$y = x + 1$', '$y² = x$', '$x² + y² = 1$', '$x = y²$'],
+    ['$y = x + 1$', '$y² = x$', '$x² + y² = 1$', '$|y| = x$'],
     [K('U $y = x + 1$ svakom $x$ odgovara tačno jedno $y$.'),
      K('Kod $y² = x$ (tj. $x = y²$), za $x = 4$ imamo $y = 2$ i $y = −2$ – dva rešenja, pa to nije funkcija.'),
      K('Kružnica $x² + y² = 1$ takođe nije grafik funkcije.')]);
@@ -212,7 +212,7 @@ module.exports = ({ L, Z, G, K, proveri, r, grafik, prava, A }) => {
     ['3', '2', '5', '0'],
     [K('$f(0) = 2 · 0 + 3 = 3$.')]);
   Z(2, 'Koja zavisnost jeste funkcija po $x$?',
-    ['$y = 2x$', '$y² = x$', '$x = y²$', '$x² + y² = 4$'],
+    ['$y = 2x$', '$y² = x$', '$|y| = x$', '$x² + y² = 4$'],
     [K('U $y = 2x$ svakom $x$ odgovara tačno jedno $y$.'),
      K('Kod $y² = x$ (tj. $x = y²$) i kružnice $x² + y² = 4$ nekom $x$ odgovara više vrednosti $y$.')]);
   Z(2, 'Funkcija je data sa $f(x) = x²$. Koliko je $f(3)$?',
@@ -272,7 +272,7 @@ module.exports = ({ L, Z, G, K, proveri, r, grafik, prava, A }) => {
   Z(3, 'Račun za struju: fiksna pretplata $500$ dinara plus $15$ dinara po kWh. Koja funkcija daje račun?',
     ['$y = 15x + 500$', '$y = 500x + 15$', '$y = 515x$', '$y = 15x$'],
     [K('$y = 15x + 500$.')]);
-  Z(3, 'Iz bazena sa $100$ litara ističe $2$ litra vode u minuti. Funkcija količine vode je:',
+  Z(3, 'Iz bazena sa $100$ litara ističe $2$ litra vode u minutu. Funkcija količine vode je:',
     ['$y = −2x + 100$', '$y = 2x + 100$', '$y = 100x − 2$', '$y = 2x$'],
     [K('Voda ističe, pa je koeficijent negativan: $−2$.'),
      K('Početnih $100$ litara je odsečak: $y = −2x + 100$.')]);
@@ -281,10 +281,10 @@ module.exports = ({ L, Z, G, K, proveri, r, grafik, prava, A }) => {
   Z(1, 'Grafik funkcije $y = 2x + 1$ prolazi kroz tačke:',
     ['(0, 1) i (1, 3)', '(0, 2) i (1, 3)', '(0, 1) i (1, 2)', '(0, 0) i (1, 3)'],
     [K('Za $x = 0$: $y = 1$ → $(0, 1)$; za $x = 1$: $y = 3$ → $(1, 3)$.')]);
-  Z(2, 'Da li tačka $(3, 1)$ pripada grafiku $y = x − 2$?',
-    ['Da', 'Ne', 'Ne može se odrediti', 'Samo ako je x celo'],
-    [K('$3 − 2 = 1$ ✓'),
-     K('Tačka $(3, 1)$ pripada grafiku.')]);
+  Z(2, 'Koja tačka pripada grafiku $y = x − 2$?',
+    ['$(3, 1)$', '$(3, 2)$', '$(1, 3)$', '$(2, 1)$'],
+    [K('Za $x = 3$: $y = 3 − 2 = 1$, pa tačka $(3, 1)$ pripada grafiku.'),
+     K('Ostale: $(3, 2)$ → $1 ≠ 2$; $(1, 3)$ → $−1 ≠ 3$; $(2, 1)$ → $0 ≠ 1$.')]);
   Z(2, 'Gde grafik $y = −x + 1$ seče $y$-osu?',
     ['U (0, 1)', 'U (1, 0)', 'U (0, −1)', 'U (−1, 0)'],
     [K('Za $x = 0$: $y = 1$, pa je presek $(0, 1)$.')]);
@@ -294,7 +294,7 @@ module.exports = ({ L, Z, G, K, proveri, r, grafik, prava, A }) => {
   Z(2, 'Grafik funkcije $y = 4$ je:',
     ['horizontalna prava', 'vertikalna prava', 'kosa prava', 'parabola'],
     [K('$y$ je uvek $4$, pa je grafik horizontalna prava na visini $4$.')]);
-  Z(3, 'Za crtanje grafika linearne funkcije dovoljno je:',
+  Z(1, 'Za crtanje grafika linearne funkcije dovoljno je:',
     ['dve tačke', 'jedna tačka', 'tri tačke', 'nula'],
     [K('Prava je određena sa dve tačke, pa su dve tačke dovoljne.')]);
 
@@ -374,7 +374,7 @@ module.exports = ({ L, Z, G, K, proveri, r, grafik, prava, A }) => {
     ['$y = x + 1$', '$y = x − 1$', '$y = −x + 1$', '$y = −x − 1$'],
     [K('$−y = −x − 1$, pa je $y = x + 1$.')]);
   Z(3, 'Napiši u opštem obliku pravu $y = 2x + 3$.',
-    ['$2x − y + 3 = 0$', '$2x + y + 3 = 0$', '$2x − y − 3 = 0$', '$y − 2x − 3 = 0$'],
+    ['$2x − y + 3 = 0$', '$2x + y + 3 = 0$', '$2x − y − 3 = 0$', '$2x + y − 3 = 0$'],
     [K('Prebacimo sve na jednu stranu: $2x − y + 3 = 0$.')]);
   Z(3, 'Napiši u opštem obliku pravu $y = −x + 5$.',
     ['$x + y − 5 = 0$', '$x − y + 5 = 0$', '$x + y + 5 = 0$', '$−x + y − 5 = 0$'],
@@ -386,7 +386,7 @@ module.exports = ({ L, Z, G, K, proveri, r, grafik, prava, A }) => {
     ['$y = 2x − 3$', '$y = 2x + 3$', '$y = −2x + 3$', '$y = 4x − 6$'],
     [K('$−2y = −4x + 6$, pa je $y = 2x − 3$.')]);
   Z(2, 'Koja jednačina je u opštem obliku?',
-    ['$2x − y + 1 = 0$', '$y = 2x + 1$', '$y = 2x − 1$', '$2x − y = 1$'],
+    ['$2x − y + 1 = 0$', '$y = 2x + 1$', '$y = 2x − 1$', '$2x = y² + 1$'],
     [K('Opšti oblik je $ax + by + c = 0$: to je $2x − y + 1 = 0$.')]);
 
   L('Čitanje grafika linearne funkcije');

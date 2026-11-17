@@ -151,9 +151,9 @@
       "pitanje": "Šta proučava geografija?",
       "odgovori": [
         "Zemlju, njene prirodne pojave i život ljudi na njoj",
-        "Samo planete, zvezde, komete i druga nebeska tela u svemiru",
-        "Samo istoriju država, njihove ratove i vladare kroz vekove",
-        "Samo stene, minerale i rude u Zemljinoj unutrašnjosti"
+        "Planete, zvezde, komete i druga nebeska tela u svemiru",
+        "Istoriju država, njihove ratove i vladare kroz vekove",
+        "Stene, minerale i rude u Zemljinoj unutrašnjosti"
       ],
       "zanimljivost": "Geografija znači „opisivanje Zemlje“. Deli se na fizičku (reljef, klima, vode) i društvenu geografiju (stanovništvo, naselja, privreda).",
       "rec": "geografija"
@@ -208,7 +208,7 @@
       "pitanje": "Kako je Eratosten izmerio obim Zemlje?",
       "odgovori": [
         "Upoređivanjem senki u podne u dva grada udaljena poznatim rastojanjem",
-        "Obišao je celu Zemlju peške i brojao korake od polaska do povratka u Egipat",
+        "Računao je obim Zemlje iz brzine broda na moru",
         "Pomoću sunčevog sata koji je pokazivao različito vreme na kopnu i na moru",
         "Merio je konopcem dužinu obale Sredozemnog mora"
       ],
@@ -291,7 +291,7 @@
         "Plan",
         "Atlas",
         "Globus",
-        "Legenda"
+        "Maketa"
       ],
       "tezina": 1,
       "zanimljivost": "Na planu se vide i pojedine zgrade i ulice. Planovi gradova imaju razmeru, na primer, 1:10.000, a karte cele države mnogo sitniju.",
@@ -304,9 +304,9 @@
       "pitanje": "Koja strana karte je uobičajeno okrenuta ka severu?",
       "odgovori": [
         "Gornja ivica karte je sever",
-        "Donja ivica karte je uvek sever",
+        "Donja ivica karte je sever",
         "Leva ivica karte je sever",
-        "Desna ivica karte je uvek sever"
+        "Desna ivica karte je sever"
       ],
       "zanimljivost": "Arapski kartografi su u srednjem veku crtali karte sa jugom na vrhu.",
       "rec": "sever"
@@ -445,7 +445,7 @@
         "Bobi, Lesi i Reks",
         "Laki, Žuća i Šarko"
       ],
-      "zanimljivost": "Lajka je 1957. bila prvo živo biće u orbiti, ali se nije vratila. Belka i Strelka su 1960. provele dan u svemiru i vratile se žive – jedna od Strelkinih kuca kasnije je poklonjena američkom predsedniku Kenediju!",
+      "zanimljivost": "Lajka je 1957. bila prvo živo biće u orbiti, ali se nije vratila. Belka i Strelka su 1960. provele dan u svemiru i vratile se žive – jedno od Strelkinih štenaca kasnije je poklonjeno deci američkog predsednika Kenedija!",
       "rec": "pas"
     },
     {
@@ -863,7 +863,7 @@
         "Zemlja",
         "Merkur"
       ],
-      "zanimljivost": "Olimp je visok oko 22 km – oko dva i po puta viši od Mont Everesta, a širok je skoro kao cela Srbija.",
+      "zanimljivost": "Olimp je visok oko 22 km – oko dva i po puta viši od Mont Everesta, a širok je oko 600 km.",
       "rec": "olimp",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -953,7 +953,7 @@
         "Mlad mesec, prva četvrt, pun mesec, poslednja četvrt",
         "Jutro, podne, veče i ponoć, kada je Mesec na različitim mestima neba",
         "Proleće, leto, jesen, zima",
-        "Srp, polumesec, uštap i pomračenje"
+        "Srp, polumesec, kolut i pomračenje"
       ],
       "zanimljivost": "Mene nastaju jer vidimo različit deo osvetljene polovine Meseca.",
       "rec": "mene",
@@ -1032,15 +1032,15 @@
     },
     {
       "lekcija": 4,
-      "tezina": 3,
+      "tezina": 1,
       "pitanje": "Kako Mesec utiče na Zemlju?",
       "odgovori": [
         "Izaziva plimu i oseku",
         "Određuje godišnja doba",
         "Greje Zemlju",
-        "Nema uticaj"
+        "Usporava vetrove u atmosferi"
       ],
-      "zanimljivost": "Mesec i stabilizuje nagib Zemljine ose, pa klima ostaje relativno stabilna.",
+      "zanimljivost": "Mesec stabilizuje nagib Zemljine ose, pa klima ostaje relativno stabilna.",
       "rec": "plima"
     },
     {
@@ -1074,7 +1074,7 @@
       "tezina": 3,
       "pitanje": "Kako nastaje pomračenje Meseca?",
       "odgovori": [
-        "Zemlja zakloni Sunce i baci senku na Mesec",
+        "Zemlja se nađe između Sunca i Meseca i baci senku na Mesec",
         "Mesec uđe u senku Sunca koja pada na njega iz svemira",
         "Veliki tamni oblak zakloni Mesec za vreme jake oluje",
         "Mesec se okrene tamnom stranom ka Zemlji"
@@ -1649,7 +1649,7 @@
         "Oko 1.670 km/h",
         "Oko 100 km/h",
         "Oko 30 km/h",
-        "Ne kreću se"
+        "Oko 500 km/h"
       ],
       "zanimljivost": "Mi u Srbiji „jurimo“ oko 1.200 km/h, a ljudi blizu polova skoro stoje u mestu. Ne osećamo kretanje jer se zajedno sa nama kreće i vazduh i sve oko nas.",
       "rec": "brzina"
@@ -1709,7 +1709,7 @@
     {
       "lekcija": 7,
       "tezina": 2,
-      "pitanje": "Koliko vremenskih (časovnih) zona ima Zemlja?",
+      "pitanje": "Na koliko se osnovnih časovnih zona Zemlja deli po dužini (svakih 15°)?",
       "odgovori": [
         "24",
         "12",
@@ -2019,7 +2019,7 @@
         "Noć sa punim Mesecom"
       ],
       "tezina": 2,
-      "zanimljivost": "Na samim polovima polarna noć traje oko šest meseci. Na severu Norveške traje nekoliko nedelja oko Božića.",
+      "zanimljivost": "Na samim polovima polarna noć traje oko šest meseci. Na severu Norveške polarna noć traje i po nekoliko nedelja, pa i više od mesec dana.",
       "rec": "noć",
       "lekcija": 8
     },
@@ -2517,7 +2517,7 @@
       "pitanje": "Koje dokaze je Vegener imao za pomeranje kontinenata?",
       "odgovori": [
         "Isti fosili i stene na kontinentima koje danas deli okean",
-        "Satelitske snimke koji su pokazivali kako se kontinenti pomeraju",
+        "Satelitske snimke koje su pokazivale kako se kontinenti pomeraju",
         "GPS merenja koja su tačno pokazala koliko se Amerika udaljava",
         "Nije imao dokaza – sve je pogodio samo gledajući oblik kontinenata"
       ],
@@ -2619,7 +2619,7 @@
         "Kablar",
         "Avala"
       ],
-      "zanimljivost": "U Srbiji danas nema aktivnih vulkana, ali tragovi davne vulkanske aktivnosti postoje u Šumadiji, na Kopaoniku, Kosovu i u istočnoj Srbiji. Proučavao ih je i Jovan Cvijić.",
+      "zanimljivost": "U Srbiji danas nema aktivnih vulkana, ali tragovi davne vulkanske aktivnosti postoje u Šumadiji, na Kopaoniku i u istočnoj Srbiji. Proučavao ih je i Jovan Cvijić.",
       "rec": "ostrvica",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -2704,21 +2704,16 @@
     },
     {
       "lekcija": 11,
-      "tezina": 2,
-      "pitanje": "Kojim instrumentom se beleže zemljotresi?",
+      "tezina": 3,
+      "pitanje": "Koji seizmički talasi se najbrže šire kroz Zemlju?",
       "odgovori": [
-        "Seizmografom",
-        "Barometrom",
-        "Termometrom",
-        "Kompasom"
+        "Primarni (P) talasi",
+        "Sekundarni (S) talasi",
+        "Površinski talasi",
+        "Talasi plime i oseke"
       ],
-      "zanimljivost": "Prvi „seizmoskop“ napravio je kineski naučnik Džang Heng još 132. godine – zmajevi su ispuštali kuglice.",
-      "rec": "seizmograf",
-      "medijiOdgovora": {
-        "vrsta": "slika",
-        "src": "slike/seizmograf.jpg",
-        "opis": "Zapis seizmografa"
-      }
+      "zanimljivost": "Prvi na seizmografu stižu P talasi, zatim S talasi, a površinski talasi su najsporiji – ali najrazorniji po zgradama na površini.",
+      "rec": "primarni"
     },
     {
       "lekcija": 11,
@@ -3121,7 +3116,7 @@
         "Himalajima, preko velikih planinskih venaca Azije",
         "Andima"
       ],
-      "zanimljivost": "Najviši vrh centralne Srbije je Midžor na Staroj planini (2.169 m).",
+      "zanimljivost": "Najviši vrh Stare planine je Midžor (2.169 m).",
       "rec": "dinaridi"
     },
     {
@@ -3158,7 +3153,7 @@
     {
       "lekcija": 13,
       "tezina": 2,
-      "pitanje": "Koji je najviši planinski venac Evrope?",
+      "pitanje": "Koji je najviši planinski venac u zapadnoj i srednjoj Evropi?",
       "odgovori": [
         "Alpi (Mont Blan)",
         "Karpati (u Rumuniji)",
@@ -3387,7 +3382,7 @@
         "Ugašeni vulkani prekriveni peskom",
         "Peskovita ostrva u toplom Sredozemnom moru"
       ],
-      "zanimljivost": "Najviše peščane dine u Sahari visoke su i preko 400 m.",
+      "zanimljivost": "Najviše peščane dine na svetu, u Namibu, dostižu i preko 300 m.",
       "rec": "dina",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -3418,7 +3413,7 @@
         "Vrsta veoma tvrde stene koja nastaje ispod lednika",
         "Vrsta biljke koja raste visoko na ledenim planinama"
       ],
-      "zanimljivost": "U Srbiji ima tragova lednika na Šar-planini i Prokletijama – ledničkih jezera i morena.",
+      "zanimljivost": "U Srbiji ima tragova lednika na Šar-planini – ledničkih jezera i morena.",
       "rec": "morena",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -3498,7 +3493,7 @@
       "tezina": 1,
       "pitanje": "Šta oblikuje reljef u pustinjama?",
       "odgovori": [
-        "Najviše vetar",
+        "Vetar",
         "Lednici",
         "More",
         "Reke"
@@ -3562,7 +3557,7 @@
       "odgovori": [
         "Pojačava eroziju i klizišta",
         "Smanjuje eroziju i odronjavanje",
-        "Nema nikakvog uticaja na reljef",
+        "Stvara nova jezera u udolinama",
         "Pravi planine"
       ],
       "zanimljivost": "Koren drveća „drži“ zemlju na padinama.",
@@ -3649,7 +3644,7 @@
       "pitanje": "Zašto su kamenolomi problem za prirodu?",
       "odgovori": [
         "Trajno uništavaju delove reljefa i staništa",
-        "Nisu nikakav problem, jer se kamen brzo ponovo stvori",
+        "Povećavaju količinu peska na plažama",
         "Pomažu biljkama",
         "Stvaraju planine"
       ],
@@ -3700,7 +3695,7 @@
       "pitanje": "Kakva je veza gradnje brana i reljefa?",
       "odgovori": [
         "Brane potapaju doline i stvaraju veštačka jezera",
-        "Nema veze – brane se grade samo na ravnim mestima",
+        "Brane se grade samo na ravnim mestima, gde reka ne teče",
         "Brane prave nove planine od zemlje koja se iskopa",
         "Isušuju more"
       ],
@@ -3857,7 +3852,7 @@
         "U termosferi, gde leti i Međunarodna svemirska stanica",
         "Na samo oko 100 m visine, odmah iznad krovova zgrada"
       ],
-      "zanimljivost": "Tamo ima malo oblaka i turbulencija, a ređi vazduh štedi gorivo.",
+      "zanimljivost": "Tamo je malo oblaka i vremenskih nepogoda, a ređi vazduh smanjuje otpor i štedi gorivo.",
       "rec": "avion"
     },
     {
@@ -3886,7 +3881,7 @@
         "Za disanje živih bića",
         "Za stvaranje kiše i snega",
         "Za vetar koji duva po Zemlji",
-        "Ničemu – kiseonik je samo višak u vazduhu"
+        "Za stvaranje sunčeve svetlosti u atmosferi"
       ],
       "zanimljivost": "Skoro sav kiseonik u vazduhu nastao je fotosintezom.",
       "rec": "kiseonik"
@@ -3984,7 +3979,7 @@
         "Monsun",
         "Pasat"
       ],
-      "zanimljivost": "Anticiklon je područje visokog pritiska i donosi stabilno, suvo vreme. Vetar uvek duva iz anticiklona prema ciklonu – sa višeg ka nižem pritisku.",
+      "zanimljivost": "Anticiklon je područje visokog pritiska i donosi stabilno, suvo vreme. Vetar po pravilu duva iz anticiklona prema ciklonu – sa višeg ka nižem pritisku.",
       "rec": "ciklon"
     },
     {
@@ -4115,7 +4110,7 @@
       "pitanje": "Gde je izmerena najviša temperatura vazduha na Zemlji?",
       "odgovori": [
         "U Dolini smrti u SAD (56,7 °C)",
-        "U Sahari, u pustinji Libije (58 °C)",
+        "U Sahari, u pustinji Alžira (52 °C)",
         "U Australiji, u pustinji Simpson",
         "U Srbiji, u Smederevskoj Palanci"
       ],
@@ -4220,7 +4215,7 @@
         "Ne utiče – klima zavisi samo od geografske širine mesta",
         "Donosi uvek sneg"
       ],
-      "zanimljivost": "Zato je na Jadranu zimi toplije nego u Beogradu na istoj geografskoj širini.",
+      "zanimljivost": "Zato je na Jadranu zimi toplije nego u Beogradu na približno istoj geografskoj širini.",
       "rec": "more"
     },
     {
@@ -4503,7 +4498,7 @@
       "odgovori": [
         "Upijaju ugljen-dioksid i stvaraju kiseonik, ublažavaju temperaturu",
         "Zagrevaju vazduh, jer drveće stalno oslobađa toplotu dok raste i diše",
-        "Nemaju nikakav uticaj na klimu, jer klimu određuju samo Sunce i okeani",
+        "Utiču samo na vodu u zemlji, a ne na vazduh",
         "Stvaraju smog, jer drveće noću ispušta mnogo dima i ugljen-dioksida u vazduh"
       ],
       "zanimljivost": "Amazonsku prašumu zovu „plućima planete“, iako skoro sav kiseonik koji proizvede ona sama i potroši. Njena prava vrednost je što čuva ogromne količine ugljenika i hladi vazduh isparavanjem.",
@@ -4581,7 +4576,7 @@
       "odgovori": [
         "Led odbija sunčevu svetlost, a tamno more je upija",
         "Led greje vazduh iznad polova kada se topi pod suncem",
-        "Ne ubrzava",
+        "Topljenje hladi more ispod leda",
         "Led stvara oblake"
       ],
       "zanimljivost": "Ovo je primer „povratne sprege“ – jedna promena pojačava samu sebe.",
@@ -4742,7 +4737,7 @@
         "Egejsko more",
         "Baltičko more"
       ],
-      "zanimljivost": "Kroz Dunav, vode iz Srbije stižu u Crno more.",
+      "zanimljivost": "Jadran je u proseku dubok oko 240 m, a najdublji je u južnom delu.",
       "rec": "jadransko"
     },
     {
@@ -4864,7 +4859,7 @@
         "Dnevno podizanje i spuštanje nivoa mora i okeana",
         "Udari podvodnih vulkana o obalu"
       ],
-      "zanimljivost": "Najviši izmereni talas izazvan vetrom bio je visok oko 30 m.",
+      "zanimljivost": "Olujni talasi na otvorenom okeanu mogu biti visoki i preko 15 m.",
       "rec": "talas"
     },
     {
@@ -4932,7 +4927,7 @@
         "Kako morske struje nose predmete preko okeana",
         "Da je voda u Tihom okeanu slatka, a ne slana kao u Atlantiku",
         "Da na otvorenom okeanu nema talasa, već samo uz same obale",
-        "Ništa posebno – patkica je samo potonula posle par dana na moru"
+        "Da u okeanu nema struja, pa predmeti ostaju na mestu"
       ],
       "zanimljivost": "Hiljade gumenih igračaka iz kontejnera godinama su izbacivane na obale tri okeana.",
       "rec": "patkica",
@@ -4994,7 +4989,7 @@
         "Plava, jer voda upija crvenu, a rasipa plavu svetlost",
         "Zelena, uvek zbog algi i drugih biljaka koje žive u vodi",
         "Bela, jer odbija svu sunčevu svetlost koja padne na nju",
-        "Nema boju"
+        "Crna, jer voda upija svu svetlost"
       ],
       "zanimljivost": "Zelena boja ponekad potiče od planktona, a smeđa od mulja koji donose reke.",
       "rec": "boja"
@@ -5079,7 +5074,7 @@
         "Morski izvori slane vode na samoj obali mora",
         "Izvori nafte"
       ],
-      "zanimljivost": "Banje Srbije – Vrnjačka, Niška, Sokobanja – nastale su oko termalnih izvora.",
+      "zanimljivost": "Banje Srbije – Vrnjačka, Niška i Vranjska – nastale su oko termalnih izvora.",
       "rec": "termalni"
     },
     {
@@ -5155,7 +5150,7 @@
         "Deo otekne, deo ispari, a deo upije zemlja i postane podzemna voda",
         "Sva ispari odmah čim padne, jer je tlo uvek toplije od vazduha iznad njega",
         "Sva otekne potocima i rekama u more, a zemlja ne upije nijednu kap vode",
-        "Nestane"
+        "Pretvori se u sneg u letnjem vazduhu"
       ],
       "zanimljivost": "Na asfaltu voda ne može da se upije – zato su gradovi skloni poplavama.",
       "rec": "kiša"
@@ -5210,7 +5205,7 @@
       "pitanje": "Šta je pijaća voda?",
       "odgovori": [
         "Voda bezbedna za piće, bez štetnih materija i mikroorganizama",
-        "Svaka voda",
+        "Voda iz reke, bez ikakve obrade",
         "Morska voda iz koje je uklonjena samo so, pa je postala malo manje slana",
         "Kišnica sakupljena sa krova, koja je uvek čista jer pada pravo iz oblaka"
       ],
@@ -5296,7 +5291,7 @@
         "Proticaj"
       ],
       "tezina": 3,
-      "zanimljivost": "Kroz Srbiju prolazi razvođe između slivova Crnog, Jadranskog i Egejskog mora. Kod Uroševca reka Nerodimka se račva – jedan krak odlazi ka Crnom, a drugi ka Egejskom moru. To je retka pojava, koja se zove bifurkacija.",
+      "zanimljivost": "Vode s jedne strane razvođa teku ka jednom moru, a s druge strane ka drugom.",
       "rec": "razvođe",
       "lekcija": 23
     },
@@ -5419,7 +5414,7 @@
         "Leva je zapadna, a desna istočna",
         "Nema pravila – svako bira sam"
       ],
-      "zanimljivost": "Novi Beograd je na levoj obali Save, a Stari grad na desnoj.",
+      "zanimljivost": "Sava je desna, a Tisa leva pritoka Dunava.",
       "rec": "obala"
     },
     {
@@ -5484,7 +5479,7 @@
         "Santa leda u moru",
         "Sneg na vrhu planine"
       ],
-      "zanimljivost": "Lednici su za vreme ledenih doba prekrivali veliki deo Evrope. Tragove njihovog rada vidimo i na Prokletijama i Šar-planini.",
+      "zanimljivost": "Lednici su za vreme ledenih doba prekrivali veliki deo Evrope. Tragove njihovog rada vidimo i na Šar-planini.",
       "rec": "lednik"
     },
     {
@@ -5510,7 +5505,7 @@
         "Pregrađivanjem reke velikom betonskom branom",
         "Od kiše koja se skupi na ravnici posle oluje"
       ],
-      "zanimljivost": "Na Šar-planini i Prokletijama ima više desetina ledničkih jezera.",
+      "zanimljivost": "Na Šar-planini ima mnogo ledničkih jezera.",
       "rec": "lednik"
     },
     {
@@ -5647,7 +5642,7 @@
         "More koje je ostalo od nekadašnjeg Panonskog mora u jugoistočnoj Srbiji",
         "Bara u Vojvodini"
       ],
-      "zanimljivost": "Vlasinsko jezero je najviše veliko veštačko jezero u Srbiji.",
+      "zanimljivost": "Vlasinsko jezero je jedno od najviših veštačkih jezera u Srbiji.",
       "rec": "vlasina",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -5696,7 +5691,7 @@
         "Palić",
         "Srebrno"
       ],
-      "zanimljivost": "Ohridsko jezero je staro najmanje 1,3 miliona godina.",
+      "zanimljivost": "Ohridsko jezero je staro oko 1,3 miliona godina.",
       "rec": "ohrid",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -5732,7 +5727,7 @@
         "Gradnjom česmi i bunara na izvorima u visokim planinama",
         "Pevanjem"
       ],
-      "zanimljivost": "U svetu se oko polovine otpadnih voda iz domaćinstava ispusti u reke i mora bez dovoljnog prečišćavanja.",
+      "zanimljivost": "Velika većina otpadnih voda na svetu ispusti se u reke i mora bez dovoljnog prečišćavanja.",
       "rec": "zagađenje"
     },
     {
@@ -5772,7 +5767,7 @@
       "pitanje": "Kako brane utiču na reke?",
       "odgovori": [
         "Stvaraju jezera, menjaju tok i prepreka su ribama",
-        "Ne utiču – reke teku potpuno isto i pre i posle brane",
+        "Ubrzavaju reku, pa nosi više peska",
         "Čiste vodu od mulja, pa je reka posle brane bistrija",
         "Povećavaju brzinu reke"
       ],
@@ -5922,7 +5917,7 @@
         "Reke je nose do mora",
         "Nastaje u moru",
         "Donose je ptice",
-        "Ne nalazi se"
+        "Kiša je spere sa oblaka"
       ],
       "zanimljivost": "Veliki deo plastike u okeanima unet je rekama.",
       "rec": "reka"
@@ -6300,14 +6295,14 @@
     {
       "lekcija": 27,
       "tezina": 3,
-      "pitanje": "Koja zaštićena biljka iz Srbije je simbol Dana primirja (11. novembar)?",
+      "pitanje": "Koja zaštićena biljka iz Srbije može da „oživi“ posle isušivanja?",
       "odgovori": [
         "Natalijina ramonda",
-        "Crvena ruža (simbol ljubavi)",
-        "Lala (cvet iz Holandije)",
-        "Suncokret"
+        "Pančićeva omorika",
+        "Suncokret",
+        "Divlji kesten"
       ],
-      "zanimljivost": "Ramonda „oživi“ posle isušivanja – simbol obnove srpske vojske posle Albanske golgote.",
+      "zanimljivost": "Ramonda „oživi“ posle potpunog isušivanja – kad dobije vodu, listovi ponovo zazelene.",
       "rec": "ramonda",
       "medijiOdgovora": {
         "vrsta": "slika",

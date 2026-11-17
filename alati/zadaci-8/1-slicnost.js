@@ -58,7 +58,7 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, rad, naKrugu, telo, A }) => {
      K('Zapamti: $100 000 cm = 1 km$, pa je $200 000 cm = 2 km$; onda je $7,5 · 2 = 15 km$.')]);
 
   Z(3, 'Duži $a$ i $b$ odnose se kao $4 : 7$, a duži $b$ i $c$ kao $7 : 2$. Koliko se odnose $a$ i $c$?',
-    ['$2 : 1$', '$4 : 2$', '$7 : 4$', '$4 : 7$'],
+    ['$2 : 1$', '$7 : 2$', '$7 : 4$', '$4 : 7$'],
     [K('Iz $a : b = 4 : 7$ i $b : c = 7 : 2$ sledi da je $b$ „most“: u obe razmere je $7$ delova.'),
      K('$a = 4$ dela, $b = 7$ delova, $c = 2$ dela, pa je $a : c = 4 : 2 = 2 : 1$.'),
      K('Ili algebarski: ${a|b} · {b|c} = {a|c} = {4|7} · {7|2} = {4|2} = 2$.')]);
@@ -73,7 +73,7 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, rad, naKrugu, telo, A }) => {
      K('Provera razmera: ${4|6} = {2|3}$ i ${6|9} = {2|3}$ ✓', [], tales(4, 6, 6, 9)),
      K('Animacija Talesove teoreme:', [], A('tales-proporcije', 'Paralelne prave seku krake ugla na proporcionalne duži'))]);
 
-  Z(1, 'Paralelne prave seku krake ugla i na jednom kraku odsecaju duži $5 cm$ i $3 cm$. Ako je na drugom kraku prva (kraća) duž $7,5 cm$, kolika je druga?',
+  Z(1, 'Paralelne prave seku krake ugla i na jednom kraku odsecaju duži $5 cm$ i $3 cm$. Na drugom kraku duž koja odgovara duži $5 cm$ duga je $7,5 cm$. Kolika je duž koja odgovara duži $3 cm$?',
     ['$4,5 cm$', '$5 cm$', '$12,5 cm$', '$3 cm$'],
     [K('Po Talesovoj teoremi odgovarajuće duži su proporcionalne: ${5|3} = {7,5|x}$.'),
      K('$x = {3 · 7,5|5} = {22,5|5} = 4,5 cm$.'),
@@ -109,14 +109,14 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, rad, naKrugu, telo, A }) => {
   // ════════════════ 1.3 Primena Talesove teoreme u konstrukcijama ════════════════
   L('Primena Talesove teoreme u konstrukcijama');
 
-  Z(1, 'Duž dugu $10 cm$ treba podeliti na $4$ jednaka dela. Koju dužinu nanesemo na pomoćni zrak?',
-    ['Bilo koju, $4$ puta', 'Tačno $10 cm$, $4$ puta', 'Tačno $2,5 cm$', 'Duž mora biti celobrojna'],
-    [K('Na pomoćni zrak iz jednog kraja duži nanesemo proizvoljnu (ali uvek istu!) duž četiri puta.'),
-     K('Poslednju tačku spojimo sa drugim krajem duži, pa kroz ostale tačke povučemo paralelne prave.'),
-     K('Po Talesovoj teoremi one dele datu duž na $4$ jednaka dela. (Svaki deo bi bio $2,5 cm$, ali ga ne merimo – konstruišemo.)')]);
+  Z(1, 'Duž dugu $10 cm$ treba podeliti na $4$ jednaka dela Talesovom konstrukcijom. Koliko i kakvih duži nanosimo na pomoćni zrak?',
+    ['Četiri jednake duži', 'Jednu duž od $2,5 cm$', 'Dve duži od $5 cm$', 'Pet jednakih duži'],
+    [K('Na pomoćni zrak iz jednog kraja date duži nanesemo četiri jednake duži – njihova dužina može biti proizvoljna.'),
+     K('Poslednju tačku spojimo sa drugim krajem date duži, pa kroz ostale tačke povučemo paralelne prave.'),
+     K('Po Talesovoj teoremi one dele datu duž na $4$ jednaka dela. Pomoćnih duži mora biti onoliko koliko i delova.')]);
 
   Z(2, 'Duž dugu $9 cm$ treba podeliti u razmeri $2 : 3$. Na pomoćni zrak nanesemo $5$ jednakih duži. Koju tačku na zraku spajamo sa krajem date duži?',
-    ['Petu (poslednju)', 'Treću', 'Drugu', 'Prvu'],
+    ['Petu', 'Treću', 'Drugu', 'Prvu'],
     [K('Pošto je $2 + 3 = 5$, na pomoćni zrak nanosimo $5$ jednakih duži.'),
      K('Kraj date duži spajamo sa petom (poslednjom) tačkom na zraku.'),
      K('Kroz drugu tačku (posle $2$ nanete duži) povučemo paralelu – ona deli datu duž u razmeri $2 : 3$.')]);
@@ -134,10 +134,10 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, rad, naKrugu, telo, A }) => {
      K('Konstrukcija: na krake ugla nanesemo $a$ i $b$ na jedan, a $c$ na drugi krak; spojimo krajeve $a$ i $c$, pa paralelu kroz kraj duži $b$.')]);
 
   Z(3, 'Duž od $7 cm$ podeljena je tačkom $M$ u razmeri $3 : 4$. Koliko je $M$ udaljeno od bližeg kraja?',
-    ['$3 cm$', '$4 cm$', '$3,5 cm$', '$2,3 cm$'],
+    ['$3 cm$', '$4 cm$', '$3,5 cm$', '$1 cm$'],
     [K('$3 + 4 = 7$ jednakih delova; cela duž je $7 cm$, pa je jedan deo tačno $1 cm$.'),
-     K('Bliži kraj je onaj od koga se broji razmera – od njega je $3$ dela, tj. $3 cm$.'),
-     K('Drugi deo je $4 cm$; provera $3 + 4 = 7$ ✓.')]);
+     K('Od jednog kraja tačka $M$ je udaljena $3$ dela, a od drugog $4$ dela. Bliži je kraj od kog je $3$ dela, pa je odgovor $3 cm$.'),
+     K('Provera: $3 + 4 = 7$ ✓.')]);
 
   // ════════════════ 1.4 Sličnost trouglova ════════════════
   L('Sličnost trouglova');
@@ -189,13 +189,13 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, rad, naKrugu, telo, A }) => {
      K('Stav UU: dva ugla jednog trougla jednaka su dvama uglovima drugog (dovoljna su dva ugla – treći se sam poklopi).')]);
 
   Z(1, 'Trouglovi imaju stranice $3, 4, 5$ i $6, 8, 10$. Po kom stavu su slični?',
-    ['SSS', 'SUS', 'UU', 'Nisu slični'],
+    ['SSS', 'SUS', 'UU', 'SSU'],
     [K('Uporedimo odnose: ${6|3} = 2$, ${8|4} = 2$, ${10|5} = 2$ – svi su jednaki.'),
      K('Sve tri stranice su proporcionalne, pa su trouglovi slični po stavu SSS.'),
      K('To je čuvena Pitagorina trojka $3, 4, 5$ uvećana $2$ puta.')]);
 
   Z(2, 'Trouglovi $ABC$ i $DEF$ imaju $AB = 9 cm$, $AC = 6 cm$, $DE = 3 cm$, $DF = 2 cm$ i $∠A = ∠D = 50°$. Po kom stavu su slični?',
-    ['SUS', 'SSS', 'UU', 'Ne mogu se uporediti'],
+    ['SUS', 'SSS', 'UU', 'SSU'],
     [K('Date su po dve stranice i ugao između njih.'),
      K('${AB|DE} = {9|3} = 3$ i ${AC|DF} = {6|2} = 3$ – proporcionalne su, a zahvaćeni uglovi su jednaki.'),
      K('To je stav SUS (dve stranice i zahvaćeni ugao).')]);
@@ -207,7 +207,7 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, rad, naKrugu, telo, A }) => {
      K('Oba trougla imaju uglove $40°, 60°, 80°$, pa su slični po stavu UU.')]);
 
   Z(2, 'Dva pravougla trougla imaju po jedan oštar ugao od $35°$. Šta sigurno važi?',
-    ['Slični su', 'Podudarni su', 'Imaju jednake hipotenuze', 'Ništa ne možemo reći'],
+    ['Slični su', 'Podudarni su', 'Imaju jednake hipotenuze', 'Imaju jednake katete'],
     [K('Oba trougla imaju prav ugao ($90°$) i ugao od $35°$ – to su dva jednaka ugla.'),
      K('Po stavu UU trouglovi su slični.'),
      K('Podudarnost bi tražila još i jednaku bar jednu stranicu – nju ovde ne znamo.')]);
@@ -223,7 +223,7 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, rad, naKrugu, telo, A }) => {
     [K('Kako je $DE \\| BC$, trouglovi $ADE$ i $ABC$ su slični (stav UU – zajednički ugao $A$ i jednaki uglovi uz paralelu).', ['de']),
      K('Koeficijent sličnosti (mali prema velikom): $k = {AD|AB} = {4|12} = {1|3}$.'),
      K('$DE = k · BC = {1|3} · 10 = {10|3} cm ≈ 3,33 cm$.')],
-    G({ A: [0, 0], B: [12, 0], C: [4, 8], D: [4, 0], E: [1.33, 2.67] },
+    G({ A: [0, 0], B: [12, 0], C: [4.5, 6.614], D: [4, 0], E: [1.5, 2.205] },
       [{ p: 'ABC', b: 0 }, { p: 'ADE', b: 1 }, { d: 'BC', b: 3 }, { d: 'DE', b: 3, id: 'de' }, { d: 'AD', o: '4 cm' }, { d: 'AB', o: '12 cm' }], { velicina: 260 }));
 
   // ════════════════ 1.6 Primena sličnosti na pravougli trougao ════════════════
@@ -258,7 +258,7 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, rad, naKrugu, telo, A }) => {
      K('$c = p + q = 9 + 16 = 25 cm$.'),
      K('Katete bi bile $a² = c · p = 225$ → $a = 15 cm$ i $b² = c · q = 400$ → $b = 20 cm$.')],
     G({ A: [0, 0], B: [25, 0], C: [9, 12], D: [9, 0, 90] },
-      [{ p: 'ABC', b: 0 }, { p: 'DBC', b: 2 }, { pu: 'ACB' }, { pu: 'ADC' }, { d: 'CD', o: '12', isp: 1, b: 3, id: 'h' }, { d: 'AD', o: '9' }, { d: 'DB', o: '16' }]));
+      [{ p: 'ABC', b: 0 }, { p: 'DBC', b: 2 }, { pu: 'ACB' }, { pu: 'ADC' }, { d: 'CD', o: '12', isp: 1, b: 3, id: 'h' }, { d: 'AD', o: '9' }, { d: 'DB' }]));
 
   Z(3, 'U pravouglom trouglu je kateta $a = 12 cm$, a njena projekcija na hipotenuzu je $p = 7,2 cm$. Kolika je površina trougla?',
     ['$96 cm²$', '$86,4 cm²$', '$54 cm²$', '$60 cm²$'],
@@ -266,13 +266,12 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, rad, naKrugu, telo, A }) => {
      K('Drugi odsečak: $q = c − p = 20 − 7,2 = 12,8 cm$; kateta $b² = c · q = 20 · 12,8 = 256$, pa je $b = 16 cm$.'),
      K('$P = {a · b|2} = {12 · 16|2} = 96 cm²$. Provera Pitagorinom teoremom: $12² + 16² = 144 + 256 = 400 = 20²$ ✓.')],
     G({ A: [0, 0], B: [20, 0], C: [7.2, 9.6], D: [7.2, 0, 90] },
-      [{ p: 'ABC', b: 0 }, { pu: 'ACB' }, { pu: 'ADC' }, { d: 'CD', o: 'h', isp: 1 }, { d: 'AD', o: '7,2' }, { d: 'DB', o: '12,8' }]));
+      [{ p: 'ABC', b: 0 }, { pu: 'ACB' }, { pu: 'ADC' }, { d: 'CD', o: 'h', isp: 1 }, { d: 'AD', o: '7,2' }, { d: 'DB' }]));
 
-  Z(3, 'U pravouglom trouglu visina na hipotenuzu je $h = 4,8 cm$, a hipotenuza $c = 10 cm$. Koliki su odsečci hipotenuze?',
-    ['$3,6 cm$ i $6,4 cm$', '$4 cm$ i $6 cm$', '$2 cm$ i $8 cm$', '$4,8 cm$ i $5,2 cm$'],
-    [K('$h² = p · q$, a $p + q = c = 10$. Dakle $p · q = 4,8² = 23,04$ i $p + q = 10$.'),
-     K('Rešenja jednačine $x² − 10x + 23,04 = 0$ su $3,6$ i $6,4$.'),
-     K('Provera: $3,6 · 6,4 = 23,04$ i $3,6 + 6,4 = 10$ ✓. Katete su $6 cm$ i $8 cm$.')]);
+  Z(3, 'U pravouglom trouglu odsečci hipotenuze na koje visina deli hipotenuzu su $2 cm$ i $8 cm$. Kolika je visina?',
+    ['$4 cm$', '$5 cm$', '$3 cm$', '$16 cm$'],
+    [K('Hipotenuza je $c = 2 + 8 = 10 cm$. Po Euklidovoj teoremi $h² = p · q = 2 · 8 = 16$, pa je $h = 4 cm$.', ['h']),
+     K('Provera: katete su $a = √{c · p} = √{20}$ i $b = √{c · q} = √{80}$, a $20 + 80 = 100 = 10²$ ✓.')]);
 
   // ════════════════ 1.7 Primena sličnosti ════════════════
   L('Primena sličnosti');
@@ -340,7 +339,7 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, rad, naKrugu, telo, A }) => {
 
   L('Primena Talesove teoreme u konstrukcijama');
   Z(2, 'Da bismo duž podelili na $5$ jednakih delova, na pomoćni zrak nanosimo:',
-    ['5 jednakih duži', '5 proizvoljnih duži', 'jednu duž', 'duž cele dužine'],
+    ['5 jednakih duži', '5 duži različite dužine', 'jednu duž', 'duž cele dužine'],
     [K('Nanosimo $5$ jednakih (proizvoljnih) duži na pomoćni zrak.')]);
   Z(3, 'Duž treba podeliti u razmeri $3 : 5$. Na pomoćni zrak nanosimo $8$ jednakih duži. Koju tačku spajamo sa krajem date duži?',
     ['Osmu', 'Petu', 'Treću', 'Prvu'],
@@ -377,10 +376,10 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, rad, naKrugu, telo, A }) => {
     ['dva jednaka ugla', 'dve proporcionalne stranice', 'tri jednake stranice', 'jedan jednak ugao'],
     [K('Dovoljna su dva jednaka ugla – treći se sam poklopi.')]);
   Z(2, 'Trouglovi imaju stranice $2, 3, 4$ i $4, 6, 8$. Po kom stavu su slični?',
-    ['SSS', 'SUS', 'UU', 'Nisu slični'],
+    ['SSS', 'SUS', 'UU', 'SSU'],
     [K('${4|2} = {6|3} = {8|4} = 2$ – sve stranice proporcionalne, stav SSS.')]);
   Z(3, 'Trouglovi imaju stranice $3, 4, 5$ i $6, 8, 12$. Jesu li slični?',
-    ['Ne', 'Da, po SSS', 'Da, po SUS', 'Da, po UU'],
+    ['Da, po SSS', 'Da, po SUS', 'Da, po UU', 'Ne, jer $12 : 5 ≠ 2$'],
     [K('${6|3} = 2$, ${8|4} = 2$, ali ${12|5} = 2,4 ≠ 2$.'),
      K('Stranice nisu proporcionalne – nisu slični.')]);
 

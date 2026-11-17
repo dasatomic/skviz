@@ -68,7 +68,7 @@ module.exports = ({ L, Z, K, G, R, O, bez, r, proveri, naKrugu, pravilni, krug, 
     Z(3, 'Dato je $5$ tačaka od kojih nikoje tri nisu na jednoj pravoj. Koliko trouglova imaju temena u tim tačkama?',
       ['$10$', '$5$', '$60$', '$15$'],
       [K('Trougao je određen izborom $3$ tačke od $5$.'),
-       K('Isto je kao izabrati $2$ tačke koje NISU temena – a parova ima koliko i duži: $10$.'),
+       K('Svaki izbor $3$ tačke od $5$ ostavlja $2$ tačke van trougla, a takvih parova ima $10$.'),
        K('Dakle trouglova ima $10$.')],
       G(t, e, { velicina: 200 }));
   }
@@ -96,13 +96,13 @@ module.exports = ({ L, Z, K, G, R, O, bez, r, proveri, naKrugu, pravilni, krug, 
   L('Odnosi pravih u ravni');
 
   Z(1, 'Prave $a$ i $b$ su paralelne, a prava $c$ seče pravu $a$. Šta važi za prave $c$ i $b$?',
-    ['$c$ seče i $b$', '$c$ je paralelna sa $b$', '$c$ i $b$ se poklapaju', 'ne može se odrediti'],
+    ['$c$ seče i $b$', '$c$ je paralelna sa $b$', '$c$ i $b$ se poklapaju', '$c$ je normalna na $b$'],
     [K('Kad bi $c$ bila paralelna sa $b$, kroz presečnu tačku $c$ i $a$ prolazile bi dve različite paralele sa $b$ – to je nemoguće.'),
      K('Zato $c$ seče i pravu $b$.', ['c'])],
     G({ a1: [-4, 1.5], a2: [4, 1.5], b1: [-4, -1.5], b2: [4, -1.5], c1: [-2, 3.5], c2: [2.5, -3.5] }, [{ d: 'a1a2', b: 0 }, { d: 'b1b2', b: 0 }, { d: 'c1c2', b: 1, id: 'c', crtaj: 1 }, { tx: 'a', at: [4.4, 1.5] }, { tx: 'b', at: [4.4, -1.5] }, { tx: 'c', at: [2.8, -3.6] }], { bezImena: ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'], velicina: 200 }));
 
   Z(1, 'Prave $a$ i $b$ su normalne, a prave $b$ i $c$ su takođe normalne. Kakve su prave $a$ i $c$?',
-    ['paralelne', 'normalne', 'seku se pod uglom od $45°$', 'ne može se odrediti'],
+    ['paralelne', 'normalne', 'seku se pod uglom od $45°$', 'poklapaju se'],
     [K('Obe prave $a$ i $c$ su normalne na istu pravu $b$.'),
      K('Dve prave normalne na istu pravu su paralelne: $a ∥ c$.', ['a', 'c'])],
     G({ b1: [-4, 0], b2: [4, 0], a1: [-2, -3], a2: [-2, 3], c1: [2, -3], c2: [2, 3], P: [-2, 0], Q: [2, 0], X: [4, 0], Y: [2, 3] }, [{ d: 'b1b2', b: 1 }, { d: 'a1a2', b: 0, id: 'a' }, { d: 'c1c2', b: 2, id: 'c' }, { pu: 'XPa2' }, { pu: 'XQY' }, { tx: 'a', at: [-2.4, 3] }, { tx: 'b', at: [4.3, 0.3] }, { tx: 'c', at: [2.4, 3] }], { bezImena: ['P', 'Q', 'X', 'Y', 'a1', 'a2', 'b1', 'b2', 'c1', 'c2'], velicina: 200 }));
@@ -144,11 +144,11 @@ module.exports = ({ L, Z, K, G, R, O, bez, r, proveri, naKrugu, pravilni, krug, 
      K('Na pravoj $c$ su obe tačke: $2 + 2 = 4$ poluprave. Ukupno $2 + 2 + 4 = 8$.')],
     G({ M: [0, 2, 135], N: [2, -2, 315], a1: [-4, 2], a2: [5, 2], b1: [-4, -2], b2: [5, -2], c1: [-1, 4], c2: [3, -4] }, [{ d: 'a1a2', b: 0 }, { d: 'b1b2', b: 0 }, { d: 'c1c2', b: 1 }, { tacka: 'MN' }, { tx: 'a', at: [5.3, 2] }, { tx: 'b', at: [5.3, -2] }, { tx: 'c', at: [3.3, -4] }], { bezImena: ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'], velicina: 200 }));
 
-  Z(3, 'Tri prave su međusobno paralelne, a još dve prave se seku i nisu paralelne ni sa jednom od njih. Koliko ukupno ima presečnih tačaka?',
+  Z(3, 'Tri prave su međusobno paralelne, a još dve prave, koje nisu paralelne ni sa jednom od njih, seku se u tački koja ne pripada nijednoj od paralelnih. Koliko ukupno ima presečnih tačaka?',
     ['$7$', '$6$', '$10$', '$5$'],
     [K('Paralelne prave se međusobno ne seku.'),
      K('Svaka od $2$ „kose“ prave seče svaku od $3$ paralelne: $2 · 3 = 6$ tačaka.'),
-     K('I dve kose prave se seku međusobno: još $1$. Ukupno $7$ (ako se ne seku baš na nekoj od paralela).')],
+     K('I dve kose prave se seku međusobno: još $1$. Ukupno $7$.')],
     G({ O: [0, 0] }, [{ lin: [[-5, 2], [5, 2]], b: 0 }, { lin: [[-5, 0], [5, 0]], b: 0 }, { lin: [[-5, -2], [5, -2]], b: 0 }, { lin: [[-4, -3.5], [3, 3.5]], b: 1, crtaj: 1 }, { lin: [[4, -3.5], [-1.5, 3.5]], b: 2, crtaj: 1, kasni: 1 }], { ...bez, velicina: 200 }));
 
   // ════════════════ 2.3 Merenje dužine ════════════════
@@ -313,7 +313,7 @@ module.exports = ({ L, Z, K, G, R, O, bez, r, proveri, naKrugu, pravilni, krug, 
      K('$5 · 2 : 2 = 5$ tačaka samopresecanja – temena unutrašnjeg petougla.', ['p'])],
     (() => { const t = pravilni(5, 4, [0, 0], 90); const u = {}; [126, 54, -18, -90, -162].forEach((a, i) => (u['PQRST'[i]] = naKrugu([0, 0], 1.53, a))); return G({ ...t, ...u }, [{ lin: ['A', 'C', 'E', 'B', 'D', 'A'].map((n) => t[n]), b: 0, crtaj: 1, trajanje: 2.5 }, { tacka: 'PQRST', id: 'p', k: 2 }], { bezImena: ['A', 'B', 'C', 'D', 'E', 'P', 'Q', 'R', 'S', 'T'], velicina: 180 }); })());
 
-  Z(2, 'Četiri jednaka kvadrata obima $36 cm$ složena su u niz, jedan do drugog. Koliki je obim dobijenog pravougaonika?',
+  Z(2, 'Četiri jednaka kvadrata, svaki obima $36 cm$, složena su u niz, jedan do drugog. Koliki je obim dobijenog pravougaonika?',
     ['$90 cm$', '$144 cm$', '$72 cm$', '$108 cm$'],
     [K('Stranica jednog kvadrata: $36 : 4 = 9 cm$.'),
      K('Pravougaonik ima stranice $4 · 9 = 36 cm$ i $9 cm$.', ['k2', 'k3', 'k4']),
@@ -361,10 +361,10 @@ module.exports = ({ L, Z, K, G, R, O, bez, r, proveri, naKrugu, pravilni, krug, 
      K('Nijedna tačka ne može biti istovremeno na $2$ i na $3 cm$ od $O$: presek je prazan. (Presek krugova bi bio ceo manji krug.)')],
     R(G({ O: [0, 0] }, [{ kr: 'O', r: 2, b: 0 }, { kr: 'O', r: 3, b: 1 }, { tacka: 'O' }], { velicina: 160 })));
 
-  Z(2, 'Na kružnici su označene tri tačke $A$, $B$, $C$. Koliko lukova (sa krajevima u ovim tačkama) one određuju?',
-    ['$6$', '$3$', '$9$', '$4$'],
-    [K('Svaki par tačaka deli kružnicu na dva luka – kraći i duži.'),
-     K('Parova je $3$ ($AB$, $BC$, $CA$), pa lukova ima $3 · 2 = 6$.', ['l'])],
+  Z(2, 'Na kružnici su označene tri tačke $A$, $B$, $C$. Tri tačke dele kružnicu na lukove. Koliko ima lukova čiji su krajevi u ovim tačkama i koji ne sadrže treću tačku?',
+    ['$3$', '$6$', '$9$', '$4$'],
+    [K('Tri tačke dele kružnicu na tri luka – između svake dve susedne tačke.'),
+     K('Parova je $3$ ($AB$, $BC$, $CA$), a svaki par određuje jedan luk bez treće tačke: ukupno $3$. (Da su se brojali i lukovi koji prolaze kroz treću tačku, bilo bi ih $6$.)', ['l'])],
     G({ O: [0, 0], A: [3, 0], B: naKrugu([0, 0], 3, 110), C: naKrugu([0, 0], 3, 220) }, [{ kr: 'O', r: 3, b: 4 }, { tacka: 'ABC' }, { l: 'O', r: 3.5, od: 0, do: 110, b: 1, crtaj: 1, str: 1, k: 2, id: 'l' }, { l: 'O', r: 3.9, od: 110, do: 360, b: 2, crtaj: 1, str: 1, k: 2, id: 'l', kasni: 1.2 }], { bezImena: ['O'], velicina: 180 }));
 
   Z(2, 'Dve kružnice poluprečnika $3 cm$ i $5 cm$ dodiruju se spolja. Koliko su udaljeni njihovi centri?',

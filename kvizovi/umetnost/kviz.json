@@ -72,9 +72,9 @@
       },
       "odgovori": [
         "Devojka sa bisernom minđušom",
-        "Mona Liza",
+        "Devojka sa crvenim šeširom",
         "Mlekarica",
-        "Dama sa lepezom"
+        "Žena koja čita pismo"
       ],
       "zanimljivost": "Ova slika se zove i „Mona Liza severa“. Ne zna se ko je devojka – možda nije ni bila stvarna osoba, već zamišljeno lice (tzv. „troni“).",
       "rec": "vermer"
@@ -340,10 +340,10 @@
       "odgovori": [
         "Kolos sa Rodosa",
         "Zevsov kip u Olimpiji",
-        "Kip slobode",
+        "Apolonov kip na Delosu",
         "Atena Partenos"
       ],
-      "zanimljivost": "Kolos je bio visok oko 33 m – skoro kao Kip slobode bez postolja. Srušio ga je zemljotres posle samo 54 godine. Slika gde stoji raskrečen iznad ulaza u luku je izmišljena – to ne bi bilo moguće izgraditi.",
+      "zanimljivost": "Kolos je bio visok oko 33 m – kao zgrada od desetak spratova. Srušio ga je zemljotres posle samo 54 godine. Slika gde stoji raskrečen iznad ulaza u luku je izmišljena – to ne bi bilo moguće izgraditi.",
       "rec": "kolos",
       "medijiOdgovora": {
         "vrsta": "mapa",
@@ -403,11 +403,11 @@
       }
     },
     {
-      "tezina": 2,
+      "tezina": 1,
       "pitanje": "Koje svetsko čudo starog sveta je vodilo brodove svetlom vatre u luku Aleksandrije?",
       "mediji": {
         "vrsta": "slika",
-        "src": "slike/svetionik-aleksandrija.jpg",
+        "src": "slike/svetionik-aleksandrija.png",
         "opis": "Rekonstrukcija"
       },
       "odgovori": [
@@ -486,7 +486,7 @@
       },
       "odgovori": [
         "Fidija",
-        "Mikelanđelo",
+        "Poliklet",
         "Praksitel",
         "Miron"
       ],
@@ -639,16 +639,16 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Koja je ovo piramida Maja u Meksiku?",
+      "pitanje": "U kom gradu Maja, u Meksiku, stoji ova piramida?",
       "mediji": {
         "vrsta": "slika",
         "src": "slike/cicen-ica.jpg"
       },
       "odgovori": [
         "Čičen Ica",
-        "Keopsova piramida",
-        "Maču Pikču",
-        "Tikal"
+        "Tikal",
+        "Palenke",
+        "Teotivakan"
       ],
       "zanimljivost": "Piramida Kukulkan ima 365 stepenika – koliko dana u godini. Na prolećnu i jesenju ravnodnevnicu senka na stepeništu izgleda kao zmija koja silazi niz piramidu!",
       "rec": "maje",
@@ -797,7 +797,7 @@
       "pitanje": "Koja je ovo kula, završena 1889. za Svetsku izložbu?",
       "mediji": {
         "vrsta": "slika",
-        "src": "slike/ajfelova-kula.png"
+        "src": "slike/ajfelova-kula.jpg"
       },
       "odgovori": [
         "Ajfelova kula",
@@ -1186,13 +1186,13 @@
       }
     },
     {
-      "tezina": 3,
+      "tezina": 1,
       "pitanje": "U kom muzeju se čuva Mona Liza?",
       "odgovori": [
         "Luvr u Parizu",
         "Ufici u Firenci",
         "Prado u Madridu",
-        "Britanski muzej"
+        "Britanski muzej u Londonu"
       ],
       "zanimljivost": "Mona Liza je iza neprobojnog stakla jer su je napadali – kamenom, šoljom, pa čak i tortom. Slika je mala, samo oko 77 × 53 cm, pa se mnogi posetioci iznenade.",
       "medijiOdgovora": {
@@ -1303,7 +1303,7 @@
       "tezina": 1,
       "pitanje": "Koja boja nastaje mešanjem crvene i bele?",
       "odgovori": [
-        "Roze (ružičasta)",
+        "Ružičasta",
         "Ljubičasta",
         "Narandžasta",
         "Braon"
@@ -1361,7 +1361,7 @@
         "Salvador Dali",
         "Klod Mone"
       ],
-      "zanimljivost": "Van Gog je to uradio 1888, posle svađe sa prijateljem Polom Gogenom. Za života je prodao vrlo malo slika, a danas su među najskupljima na svetu.",
+      "zanimljivost": "Van Gog je to uradio u decembru 1888. u Arlu, posle svađe sa prijateljem Polom Gogenom. Ubrzo posle toga naslikao je dva autoportreta sa zavijenim uhom.",
       "rec": "uvo",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -1668,10 +1668,6 @@
     {
       "tezina": 2,
       "pitanje": "Koji srpski slikar je bio i pesnik, autor slike „Devojka u plavom“?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/djura-jaksic.jpg"
-      },
       "odgovori": [
         "Đura Jakšić",
         "Uroš Predić",
@@ -1679,7 +1675,12 @@
         "Stevan Aleksić"
       ],
       "zanimljivost": "Đura Jakšić je slikao u stilu romantizma, sa dramatičnim svetlom. Bio je i učitelj u mnogim srpskim selima.",
-      "rec": "jakšić"
+      "rec": "jakšić",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/djura-jaksic.jpg",
+        "opis": "Đura Jakšić"
+      }
     },
     {
       "pitanje": "Ko je izvajao konjanički spomenik knezu Mihailu na Trgu republike u Beogradu?",
@@ -1710,7 +1711,7 @@
         "Toma Rosandić",
         "Sreten Stojanović"
       ],
-      "zanimljivost": "„Pobednik“ je visok oko 14 m sa postoljem. Postavljen je 1928, za desetu godišnjicu proboja Solunskog fronta.",
+      "zanimljivost": "Sam kip je visok oko 4 m, a stoji na stubu visokom oko 14 m. Postavljen je 1928, za desetu godišnjicu proboja Solunskog fronta.",
       "rec": "meštrović"
     },
     {
@@ -1733,10 +1734,10 @@
       "tezina": 1,
       "pitanje": "Šta je vitraž?",
       "odgovori": [
-        "Prozor od obojenog stakla koje stvara sliku",
-        "Vrsta krova od crepa u boji na starim crkvama",
-        "Ukrašeni stub u hramu, od obojenog mermera i zlata",
-        "Fresko-slika"
+        "Prozor od obojenog stakla koje čini sliku",
+        "Krov od crepa u boji na starim crkvama",
+        "Ukrašeni stub od obojenog mermera",
+        "Slika na drvenoj ploči sa zlatom"
       ],
       "zanimljivost": "Vitraži katedrale Šartr su čuveni po plavoj boji. Svetlost koja prolazi kroz njih stvara šarene mrlje po podu crkve.",
       "rec": "vitraž",
@@ -1750,7 +1751,7 @@
       "tezina": 2,
       "pitanje": "Koji stil arhitekture je obeležio Rim i Grčku – sa stubovima, trouglastim zabatima i simetrijom?",
       "odgovori": [
-        "Klasični (antički)",
+        "Klasični stil",
         "Gotika",
         "Barok",
         "Secesija"
@@ -1771,12 +1772,12 @@
         "src": "slike/subotica-gradska-kuca.jpg"
       },
       "odgovori": [
-        "Secesija (art nuvo)",
+        "Secesija",
         "Gotika",
         "Barok",
         "Romanika"
       ],
-      "zanimljivost": "Secesija voli zakrivljene linije i biljne ukrase. Subotica je jedan od najlepših primera secesije u Evropi.",
+      "zanimljivost": "Secesija (art nuvo) voli zakrivljene linije i biljne ukrase. Subotica je jedan od najlepših primera secesije u Evropi.",
       "rec": "secesija"
     },
     {
@@ -1816,10 +1817,10 @@
       "tezina": 2,
       "pitanje": "Kako se zove čuvena beogradska zgrada u obliku kapije, sa dve kule spojene mostom i kružnim restoranom?",
       "odgovori": [
-        "Zapadna kapija Beograda (Geneks kula)",
-        "Beograđanka (Palata „Beograd“ u centru)",
-        "Palata Albanija na Terazijama u Beogradu",
-        "Kula Ušće pored Brankovog mosta u Beogradu"
+        "Geneks kula",
+        "Beograđanka",
+        "Palata Albanija",
+        "Ušće kula"
       ],
       "zanimljivost": "Geneks kulu je projektovao Mihajlo Mitrović 1977. Smatra se jednim od najlepših primera brutalizma u svetu.",
       "rec": "geneks",
@@ -1867,9 +1868,9 @@
       "pitanje": "Koja arhitektkinja, rođena u Bagdadu, projektovala je zgrade zakrivljenih, „tečnih“ oblika?",
       "odgovori": [
         "Zaha Hadid",
-        "Frida Kalo",
-        "Marina Abramović",
-        "Milena Pavlović Barili"
+        "Kazujo Sedžima",
+        "Lina Bo Bardi",
+        "Ajlin Grej"
       ],
       "zanimljivost": "Zaha Hadid je prva žena koja je dobila Prickerovu nagradu – „Nobela za arhitekturu“ (2004).",
       "rec": "hadid",
@@ -1968,7 +1969,7 @@
         "El Greko",
         "Pablo Pikaso"
       ],
-      "zanimljivost": "Goja je u kasnim godinama ogluveo i slikao mračne „Crne slike“ direktno na zidovima svoje kuće.",
+      "zanimljivost": "Goja je ogluveo posle teške bolesti, sa 46 godina. U starosti je slikao mračne „Crne slike“ direktno na zidovima svoje kuće.",
       "rec": "goja",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -2024,16 +2025,16 @@
         "Slikanje na drvenim pločama u pravoslavnoj crkvi"
       ],
       "zanimljivost": "Žorž Sera je slikao tačkicama koje se u oku posmatrača „mešaju“ u boje – kao pikseli na ekranu, ali 100 godina ranije!",
-      "rec": "poentilizam"
+      "rec": "puantilizam"
     },
     {
       "tezina": 3,
       "pitanje": "Šta je „kolaž“?",
       "odgovori": [
-        "Slika napravljena lepljenjem papira, tkanine i drugih materijala",
-        "Slika nacrtana ugljenom na papiru, bez ikakve upotrebe boja i četkica",
-        "Skulptura od leda",
-        "Vrsta freske"
+        "Slika od nalepljenog papira, tkanine i drugih materijala",
+        "Crtež ugljenom na papiru, bez ikakvih boja",
+        "Slika urezana u drvo, pa odštampana",
+        "Slika bojama na mokrom krečnom malteru"
       ],
       "zanimljivost": "Kolaž su u umetnost uveli Pikaso i Brak oko 1912. Reč dolazi od francuske reči za lepak.",
       "rec": "kolaž"
@@ -2048,8 +2049,8 @@
       "odgovori": [
         "Vilendorfska Venera",
         "Miloska Venera",
-        "Botičelijeva Venera",
-        "Venera iz Vinče"
+        "Venera iz Dolnji Vjestonjica",
+        "Venera iz Lespiga"
       ],
       "zanimljivost": "Figura je visoka samo 11 cm. Verovatno je bila simbol plodnosti. I Vinčanska kultura kod Beograda ostavila je hiljade glinenih figurina.",
       "rec": "venera",
@@ -2070,12 +2071,12 @@
       }
     },
     {
-      "tezina": 3,
+      "tezina": 2,
       "pitanje": "Kako se zove čuvena glinena figurina iz mlađeg kamenog doba, nađena kod Beograda, sa velikim očima?",
       "odgovori": [
-        "Vinčanska figurina (Vinčanska dama)",
+        "Vinčanska dama",
         "Vilendorfska Venera",
-        "Ribolika skulptura iz Lepenskog Vira",
+        "Praroditeljka iz Lepenskog Vira",
         "Venera Miloska"
       ],
       "zanimljivost": "Vinčanska kultura je stara oko 7.000 godina. Ljudi iz Vinče su topili bakar – među prvima u Evropi.",
@@ -2087,7 +2088,7 @@
       }
     },
     {
-      "tezina": 3,
+      "tezina": 2,
       "pitanje": "Koja skulptura bez ruku je izložena u Luvru?",
       "mediji": {
         "vrsta": "slika",
@@ -2118,7 +2119,7 @@
       }
     },
     {
-      "tezina": 3,
+      "tezina": 2,
       "pitanje": "Ko je izvajao „Mislioca“?",
       "mediji": {
         "vrsta": "slika",
@@ -2346,7 +2347,7 @@
         "Đura Jakšić",
         "Stevan Todorović"
       ],
-      "zanimljivost": "Predić je naslikao preko 1.000 portreta. Živeo je skromno u Beogradu i slikao do duboke starosti – umro je u 96. godini.",
+      "zanimljivost": "Predić je naslikao stotine portreta. Živeo je skromno u Beogradu i slikao do duboke starosti – umro je u 96. godini.",
       "rec": "predić"
     },
     {
@@ -2426,7 +2427,7 @@
         "Nike sa Samotrake",
         "Venera Miloska",
         "Atina Partenos",
-        "Krilati anđeo iz Delfa"
+        "Krilata pobeda iz Brešije"
       ],
       "zanimljivost": "Statua je pronađena 1863. na grčkom ostrvu Samotraki, razbijena na mnogo komada. Glava nikada nije pronađena, a desna šaka nađena je tek 1950.",
       "rec": "pobeda"
@@ -2457,7 +2458,7 @@
       "odgovori": [
         "Piter Brojgel Stariji",
         "Peter Paul Rubens",
-        "Jan van Ajk iz Genta",
+        "Jan van Ajk",
         "Hijeronim Boš"
       ],
       "zanimljivost": "Slika je deo serije o godišnjim dobima. Brojgel je voleo da slika obične ljude – seljake, lovce i decu koja se klizaju.",
@@ -2537,8 +2538,8 @@
       "odgovori": [
         "Sloboda predvodi narod",
         "Pad Bastilje",
-        "Marseljeza",
-        "Pariska komuna"
+        "Zakletva u dvorani za igru loptom",
+        "Marseljeza"
       ],
       "zanimljivost": "Slika prikazuje revoluciju u Parizu 1830. Žena sa trobojkom je simbol slobode i podseća na Marijanu, simbol Francuske.",
       "rec": "sloboda"

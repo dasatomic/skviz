@@ -35,7 +35,7 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, S3, rad, naKrugu, pravilni,
     'površina', { medijiOdgovora: G({ O: [1, 1], P: [6, 2] }, [{ kr: 'O', r: 1, b: 0, pun: 1 }, { kr: 'P', r: 2, b: 1, pun: 1 }, { tx: 'r', at: [1, -0.5] }, { tx: '2r', at: [6, -0.5] }, { tx: '× 4', at: [3.3, 3.2], b: 3 }], { bezImena: ['O', 'P'], velicina: 220 }) });
 
   proveri(20 * 20 > 2 * 12.5 * 12.5, 'pice');
-  Q(3, 'Šta je više pice: jedna prečnika 40 cm ili dve prečnika 25 cm?', ['Jedna od 40 cm', 'Dve od 25 cm', 'Isto je', 'Zavisi od debljine testa'],
+  Q(3, 'Šta je više pice: jedna prečnika 40 cm ili dve prečnika 25 cm?', ['Jedna od 40 cm', 'Dve od 25 cm', 'Isto je', 'Jedna od 35 cm'],
     'Površina raste sa kvadratom: $20^{2} = 400$, a $2 · 12,5^{2} = 312,5$ (puta π). Jedna velika pica ima oko 28% više nego dve srednje!',
     'pica', { mediji: G({ O: [0, 0], P: [6.8, 1.5], R: [6.8, -1.5] }, [{ kr: 'O', r: 4, b: 3, pun: 1 }, { kr: 'P', r: 2.5 * 0.6, b: 1, pun: 1 }, { kr: 'R', r: 2.5 * 0.6, b: 1, pun: 1 }, { tx: '40 cm', at: [0, 0] }, { tx: '25 cm', at: [6.8, 1.5] }, { tx: '25 cm', at: [6.8, -1.5] }], { bezImena: ['O', 'P', 'R'], velicina: 260 }) });
 

@@ -43,7 +43,7 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, uglomer, O, bez }) => {
   Q(1, 'Kako se zove zajednička početna tačka krakova ugla?',
     ['Teme', 'Krak', 'Stranica', 'Centar'],
     'Teme je tačka iz koje polaze oba kraka ugla. Ugao $\\angle AOB$ ima teme u tački O.', 'teme',
-    { mediji: ugao(60, { teme: true }) });
+    { medijiOdgovora: ugao(60, { teme: true }) });
   Q(1, 'Kako se zovu poluprave koje čine ugao?',
     ['Kraci', 'Temena', 'Stranice', 'Dijagonale'],
     'Kraci su dve poluprave koje polaze iz temena. Ugao je „razmak“ između njih.', 'krak',
@@ -55,7 +55,7 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, uglomer, O, bez }) => {
   Q(2, 'Šta je CENTRALNI ugao?',
     ['Ugao čije je teme u centru kružnice', 'Ugao na vrhu trougla', 'Ugao od 90°', 'Ugao veći od 180°'],
     'Centralni ugao ima teme u centru kružnice, a kraci su mu poluprečnici. Njegovi kraci na kružnici odsecaju luk.', 'ugao',
-    { mediji: G({ O: [0, 0], A: naKrugu([0, 0], 3, 25), B: naKrugu([0, 0], 3, 115) }, [{ kr: 'O', r: 3, b: 1 }, { is: 'O', r: 3, od: 25, do: 115, b: 1 }, { d: 'OA', b: 0, debljina: 2 }, { d: 'OB', b: 0, debljina: 2 }, { tx: 'O', at: [0, -0.5], vel: 14 }], { bezImena: ['O'], velicina: 260 }) });
+    { medijiOdgovora: G({ O: [0, 0], A: naKrugu([0, 0], 3, 25), B: naKrugu([0, 0], 3, 115) }, [{ kr: 'O', r: 3, b: 1 }, { is: 'O', r: 3, od: 25, do: 115, b: 1 }, { d: 'OA', b: 0, debljina: 2 }, { d: 'OB', b: 0, debljina: 2 }, { tx: 'O', at: [0, -0.5], vel: 14 }], { bezImena: ['O'], velicina: 260 }) });
   Q(2, 'Kada su dva ugla jednaka?',
     ['Kada se mogu potpuno preklopiti', 'Kada imaju isto teme', 'Kada su oštri', 'Kada su naslikana istom bojom'],
     'Dva ugla su jednaka ako im je „razmak“ krakova isti – mogu se preklopiti jedan preko drugog. Veličina ugla ne zavisi od dužine krakova.', 'jednakost',
@@ -70,11 +70,11 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, uglomer, O, bez }) => {
   Q(1, 'Kojim priborom najlakše prenosiš (meriš) ugao?',
     ['Uglomerom', 'Lenjirom', 'Šestarom', 'Trouglom'],
     'Uglomer je polukrug sa podelom u stepenima – njime merimo i prenosimo uglove. Šestar i lenjir takođe mogu, ali sporije.', 'uglomer',
-    { mediji: G(O, uglomer(), { ...bez, velicina: 260 }) });
+    { medijiOdgovora: G(O, uglomer(), { ...bez, velicina: 260 }) });
   Q(1, 'Šta znači NADOVEZATI uglove?',
     ['Postaviti jedan ugao uz drugi, krak do kraka', 'Postaviti ih jedan preko drugog', 'Nacrtati ih daleko', 'Sabrati im temena'],
     'Nadovezivanje: jedan krak drugog ugla postavimo na krak prvog, tako da se uglovi nastave jedan na drugi. Njihove veličine se tada sabiraju.', 'ugao',
-    { mediji: G({ O: [0, 0], A: [4, 0], B: naKrugu([0, 0], 4, 40), C: naKrugu([0, 0], 4, 75) }, [{ d: 'OA', b: 0, debljina: 3 }, { d: 'OB', b: 0, debljina: 3 }, { d: 'OC', b: 0, debljina: 3 }, { u: 'AOB', b: 1, o: '40°' }, { u: 'BOC', b: 2, o: '35°' }, { tx: 'O', at: [0, -0.5], vel: 15 }], { bezImena: ['O'], velicina: 260 }) });
+    { medijiOdgovora: G({ O: [0, 0], A: [4, 0], B: naKrugu([0, 0], 4, 40), C: naKrugu([0, 0], 4, 75) }, [{ d: 'OA', b: 0, debljina: 3 }, { d: 'OB', b: 0, debljina: 3 }, { d: 'OC', b: 0, debljina: 3 }, { u: 'AOB', b: 1, o: '40°' }, { u: 'BOC', b: 2, o: '35°' }, { tx: 'O', at: [0, -0.5], vel: 15 }], { bezImena: ['O'], velicina: 260 }) });
   Q(2, 'Nadovežeš ugao od 30° na ugao od 40°. Koliki je zbirni ugao?',
     ['70°', '60°', '80°', '10°'],
     'Nadovezivanjem se uglovi sabiraju: $30° + 40° = 70°$.', 'ugao',
@@ -82,11 +82,11 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, uglomer, O, bez }) => {
   Q(2, 'Ugao od 80° podeljen je na dva dela. Jedan deo ima 30°, koliki je drugi?',
     ['50°', '60°', '40°', '110°'],
     'Delovi se dopunjuju do celog ugla: $80° - 30° = 50°$.', 'ugao',
-    { mediji: G({ O: [0, 0], A: [4, 0], B: naKrugu([0, 0], 4, 30), C: naKrugu([0, 0], 4, 80) }, [{ d: 'OA', b: 0, debljina: 3 }, { d: 'OB', b: 0, debljina: 3 }, { d: 'OC', b: 0, debljina: 3 }, { u: 'AOC', b: 4 }, { u: 'AOB', b: 1, o: '30°' }, { u: 'BOC', b: 2, o: '50°' }], { ...bez, velicina: 260 }) });
+    { mediji: G({ O: [0, 0], A: [4, 0], B: naKrugu([0, 0], 4, 30), C: naKrugu([0, 0], 4, 80) }, [{ d: 'OA', b: 0, debljina: 3 }, { d: 'OB', b: 0, debljina: 3 }, { d: 'OC', b: 0, debljina: 3 }, { u: 'AOC', b: 4 }, { u: 'AOB', b: 1, o: '30°' }, { u: 'BOC', b: 2, o: '?' }], { ...bez, velicina: 260 }) });
   Q(3, 'Dva jednaka ugla nadovezana daju ugao od 90°. Koliki je svaki?',
     ['45°', '30°', '60°', '90°'],
     'Ako su jednaki i zajedno daju 90°, svaki je polovina: $90° : 2 = 45°$. To je polovina pravog ugla.', 'ugao',
-    { mediji: G({ O: [0, 0], A: [4, 0], B: naKrugu([0, 0], 4, 45), C: naKrugu([0, 0], 4, 90) }, [{ d: 'OA', b: 0, debljina: 3 }, { d: 'OB', b: 0, debljina: 3 }, { d: 'OC', b: 0, debljina: 3 }, { u: 'AOC', b: 4 }, { u: 'AOB', b: 1, o: '45°' }, { u: 'BOC', b: 2, o: '45°' }, { pu: 'AOC' }], { ...bez, velicina: 260 }) });
+    { mediji: G({ O: [0, 0], A: [4, 0], B: naKrugu([0, 0], 4, 45), C: naKrugu([0, 0], 4, 90) }, [{ d: 'OA', b: 0, debljina: 3 }, { d: 'OB', b: 0, debljina: 3 }, { d: 'OC', b: 0, debljina: 3 }, { u: 'AOC', b: 4 }, { u: 'AOB', b: 1, o: '?' }, { u: 'BOC', b: 2, o: '?' }, { pu: 'AOC' }], { ...bez, velicina: 260 }) });
 
   S(1, 'Spoji vrstu ugla sa brojem stepeni.',
     [['Prav', '90°'], ['Opružen', '180°'], ['Pun', '360°'], ['Oštar', 'manji od 90°']],
@@ -101,7 +101,7 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, uglomer, O, bez }) => {
   Q(1, 'Kako se zove ugao od tačno 90°?',
     ['Prav ugao', 'Oštar ugao', 'Tup ugao', 'Pun ugao'],
     'Prav ugao ima tačno 90°. Označavamo ga malim kvadratićem u temenu. Ivice kvadrata zaklapaju prave uglove.', 'prav',
-    { mediji: ugao(90, { pu: true }) });
+    { medijiOdgovora: ugao(90, { pu: true }) });
   Q(1, 'Kako se zove ugao veći od 90°, a manji od 180°?',
     ['Tup ugao', 'Oštar ugao', 'Prav ugao', 'Opružen ugao'],
     'Tup ugao je veći od pravog, a manji od opruženog. „Tup“ znači da je široko otvoren, bez oštrog vrha.', 'tup',
@@ -113,11 +113,11 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, uglomer, O, bez }) => {
   Q(2, 'Koliko stepeni ima PUN ugao?',
     ['360°', '180°', '90°', '270°'],
     'Pun ugao ima 360° – to je ceo krug. Krak se obiđe ceo krug i vrati na početak.', 'pun',
-    { mediji: G({ O: [0, 0], A: [3, 0] }, [{ kr: 'O', r: 3, b: 1, pun: 1, gusto: 1 }, { tx: '360°', at: [0, 0.3], vel: 16 }], { ...bez, velicina: 240 }) });
+    { mediji: G({ O: [0, 0], A: [3, 0] }, [{ kr: 'O', r: 3, b: 1, pun: 1, gusto: 1 }], { ...bez, velicina: 240 }), medijiOdgovora: G({ O: [0, 0], A: [3, 0] }, [{ kr: 'O', r: 3, b: 1, pun: 1, gusto: 1 }, { tx: '360°', at: [0, 0.3], vel: 16 }], { ...bez, velicina: 240 }) });
   Q(2, 'Koji ugao je prikazan na slici?',
-    ['Prav ugao (90°)', 'Oštar ugao', 'Tup ugao', 'Opružen ugao'],
-    'Krak je uspravan u odnosu na drugi, a kvadratić u temenu označava prav ugao od 90°.', 'prav',
-    { mediji: ugao(90, { pu: true }) });
+    ['Tup ugao', 'Oštar ugao', 'Prav ugao', 'Opružen ugao'],
+    'Krak je otvoren više od pravog ugla, a manje od opruženog – to je tup ugao (između 90° i 180°).', 'tup',
+    { mediji: ugao(125) });
   Q(3, 'Ugao veći od 180°, a manji od 360° zove se…',
     ['Nekonveksan (udubljen) ugao', 'Tup ugao', 'Oštar ugao', 'Prav ugao'],
     'Nekonveksan ugao je „udubljen“ – veći od opruženog, a manji od punog. Primer je ugao od 270° (tri četvrtine kruga).', 'nekonveksan',
@@ -136,23 +136,20 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, uglomer, O, bez }) => {
   Q(1, 'Koliko minuta ima jedan stepen?',
     ['60', '100', '10', '360'],
     'Jedan stepen deli se na 60 minuta ($60\'$), a jedan minut na 60 sekundi ($60"$). Isto kao kod sata!', 'minut',
-    { mediji: G({ O: [0, 0] }, [{ osa: [0, 1], podela: 0.1, svaki: 10 }, { tx: '1° = 60′', at: [0.5, 0.7], vel: 15 }], { ...bez, velicina: 300 }) });
+    { medijiOdgovora: G({ O: [0, 0] }, [{ osa: [0, 1], podela: 0.1, svaki: 10 }, { tx: '1° = 60′', at: [0.5, 0.7], vel: 15 }], { ...bez, velicina: 300 }) });
   Q(2, 'Koliko stepeni ima opružen ugao?',
     ['180°', '90°', '360°', '45°'],
     'Opružen ugao ima 180° – pola punog kruga. Dva prava ugla zajedno daju opružen ugao.', 'stepen',
-    { mediji: ugao(180, { o: '180°' }) });
+    { medijiOdgovora: ugao(180, { o: '180°' }) });
   Q(2, 'Koliko je $30° + 45°$?',
     ['75°', '60°', '70°', '80°'],
-    'Uglovi se sabiraju kao brojevi: $30° + 45° = 75°$.', 'stepen',
-    { mediji: ugao(75, { o: '75°' }) });
+    'Uglovi se sabiraju kao brojevi: $30° + 45° = 75°$.', 'stepen');
   Q(2, 'Koliko je $120° - 40°$?',
     ['80°', '70°', '90°', '60°'],
-    'Oduzimanje uglova: $120° - 40° = 80°$.', 'stepen',
-    { mediji: ugao(80, { o: '80°' }) });
+    'Oduzimanje uglova: $120° - 40° = 80°$.', 'stepen');
   Q(3, 'Koliko stepeni ima ugao koji je polovina pravog ugla?',
     ['45°', '30°', '60°', '90°'],
-    'Polovina pravog ugla: $90° : 2 = 45°$. Taj ugao je oštar.', 'stepen',
-    { mediji: ugao(45, { o: '45°' }) });
+    'Polovina pravog ugla: $90° : 2 = 45°$. Taj ugao je oštar.', 'stepen');
 
   // ── 30. ugao između dve prave; unakrsni uglovi ──
   L('Ugao između dve prave; unakrsni uglovi');
@@ -163,11 +160,11 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, uglomer, O, bez }) => {
   Q(1, 'Kako se zovu uglovi koji su jedan NASPRAM drugog pri preseku dve prave?',
     ['Unakrsni uglovi', 'Uporedni uglovi', 'Saglasni uglovi', 'Naizmenični uglovi'],
     'Unakrsni uglovi se nalaze „preko puta“ presečne tačke – kraci jednog su produžeci krakova drugog.', 'unakrsni',
-    { mediji: unakrsni({ alfa: true }) });
+    { medijiOdgovora: unakrsni({ alfa: true }) });
   Q(2, 'Šta važi za unakrsne uglove?',
     ['Oni su jednaki', 'Oni su komplementni', 'Njihov zbir je 180°', 'Oni su oštri'],
     'Unakrsni uglovi su uvek jednaki. Ako jedan ima 70°, njemu unakrsni ugao takođe ima 70°.', 'unakrsni',
-    { mediji: unakrsni({ alfa: true }) });
+    { medijiOdgovora: unakrsni({ alfa: true }) });
   Q(2, 'Dva susedna ugla koja se dopunjuju do opruženog (180°) zovu se…',
     ['Uporedni (suplementni) uglovi', 'Unakrsni uglovi', 'Komplementni uglovi', 'Prav uglovi'],
     'Uporedni uglovi imaju zajednički krak, a ostala dva kraka čine pravu. Njihov zbir je uvek 180°.', 'uporedan',
@@ -175,11 +172,11 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, uglomer, O, bez }) => {
   Q(2, 'Ako jedan unakrsni ugao ima 55°, koliki je njemu unakrsni ugao?',
     ['55°', '125°', '35°', '90°'],
     'Unakrsni uglovi su jednaki, pa i drugi ima 55°. Ugao uporedan sa njima imao bi $180° - 55° = 125°$.', 'unakrsni',
-    { mediji: unakrsni({ alfa: true, polu: 27.5, o: '55°' }) });
+    { medijiOdgovora: unakrsni({ alfa: true, polu: 27.5, o: '55°' }) });
   Q(3, 'Pri preseku dve prave, jedan ugao ima 120°. Koliki je njemu UPOREDAN ugao?',
     ['60°', '120°', '30°', '90°'],
     'Uporedni uglovi se dopunjuju do 180°: $180° - 120° = 60°$. Unakrsni ugao bi bio 120° (jednak polaznom).', 'uporedan',
-    { mediji: unakrsni({ uporedni: true, polu: 30, o1: '120°', o2: '60°' }) });
+    { medijiOdgovora: unakrsni({ uporedni: true, polu: 30, o1: '120°', o2: '60°' }) });
 
   // ── 31. transverzala ──
   L('Uglovi na transverzali');
@@ -190,7 +187,7 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, uglomer, O, bez }) => {
   Q(1, 'Uglovi koji su sa iste strane transverzale i na istim mestima uz paralele zovu se…',
     ['Saglasni uglovi', 'Unakrsni uglovi', 'Uporedni uglovi', 'Komplementni uglovi'],
     'Saglasni uglovi su na istim „položajima“ u odnosu na transverzalu – jedan gore levo, drugi dole levo, na primer.', 'saglasni',
-    { mediji: transverzala({ par: 'saglasni' }) });
+    { medijiOdgovora: transverzala({ par: 'saglasni' }) });
   Q(2, 'Šta važi za saglasne uglove na paralelnim pravama?',
     ['Oni su jednaki', 'Njihov zbir je 90°', 'Njihov zbir je 180°', 'Oni su uvek oštri'],
     'Kad transverzala seče paralelne prave, saglasni uglovi su jednaki. To je osnova mnogih dokaza u geometriji.', 'saglasni',
@@ -198,7 +195,7 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, uglomer, O, bez }) => {
   Q(2, 'Uglovi na suprotnim stranama transverzale, između paralelnih pravih, zovu se…',
     ['Naizmenični uglovi', 'Saglasni uglovi', 'Unakrsni uglovi', 'Prav uglovi'],
     'Naizmenični uglovi su „u cik-cak“ položaju: jedan iznad, drugi ispod, sa suprotnih strana transverzale.', 'naizmeničan',
-    { mediji: transverzala({ par: 'naizmenicni' }) });
+    { medijiOdgovora: transverzala({ par: 'naizmenicni' }) });
   Q(2, 'Šta važi za naizmenične uglove na paralelnim pravama?',
     ['Oni su jednaki', 'Njihov zbir je 180°', 'Njihov zbir je 90°', 'Oni su uvek tupi'],
     'Naizmenični uglovi na paralelnim pravama su jednaki. Zajedno sa saglasnim uglovima, to su najvažnija svojstva transverzale.', 'naizmeničan',
@@ -206,6 +203,6 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, uglomer, O, bez }) => {
   Q(3, 'Na paralelnim pravama presecanim transverzalom, jedan ugao ima 70°. Koliki je njemu saglasan ugao?',
     ['70°', '110°', '20°', '90°'],
     'Saglasni uglovi su jednaki, pa i njemu saglasan ugao ima 70°. Uporedan ugao sa njim imao bi $180°-70°=110°$.', 'saglasni',
-    { mediji: transverzala({ par: 'saglasni', ug: 70, o: '70°' }) });
+    { mediji: transverzala({ par: 'saglasni' }) });
 
 };

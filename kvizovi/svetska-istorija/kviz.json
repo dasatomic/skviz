@@ -64,7 +64,7 @@
         "Kristifor Kolumbo",
         "Vasko da Gama",
         "Ferdinand Magelan",
-        "Ameriko Vespuči"
+        "Amerigo Vespuči"
       ],
       "zanimljivost": "Kolumbo je do kraja života verovao da je stigao u Aziju, zato su domoroci nazvani „Indijancima“. Amerika je dobila ime po Amerigu Vespučiju, koji je shvatio da je to novi kontinent.",
       "rec": "kolumbo"
@@ -300,10 +300,6 @@
     {
       "tezina": 2,
       "pitanje": "Ko je izumeo štampariju sa pokretnim slovima u Evropi oko 1450?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/gutenberg.jpg"
-      },
       "odgovori": [
         "Johan Gutenberg",
         "Leonardo da Vinči",
@@ -311,7 +307,12 @@
         "Džejms Vat"
       ],
       "zanimljivost": "Gutenbergova Biblija je prva velika knjiga štampana pokretnim slovima. Pre toga su knjige prepisivane ručno, pa je za jednu knjigu trebalo i godinu dana. Danas postoji 49 sačuvanih primeraka njegove Biblije.",
-      "rec": "gutenberg"
+      "rec": "gutenberg",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/gutenberg.jpg",
+        "opis": "Johan Gutenberg"
+      }
     },
     {
       "tezina": 2,
@@ -388,7 +389,7 @@
         "Sparti",
         "Delfima"
       ],
-      "zanimljivost": "Prve zabeležene igre bile su 776. pre n. e. Pobednici su dobijali venac od maslinovih grančica. Za vreme igara bio je proglašen mir, da bi sportisti mogli bezbedno da putuju.",
+      "zanimljivost": "Pobednici su dobijali samo venac od maslinovih grančica, ali su ih kod kuće dočekivali kao heroje. Za vreme igara bio je proglašen sveti mir, da bi sportisti i gledaoci mogli bezbedno da putuju.",
       "rec": "olimpija",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -400,12 +401,12 @@
       "tezina": 2,
       "pitanje": "Koji je grad bio prestonica Vizantijskog carstva?",
       "odgovori": [
-        "Konstantinopolj (Carigrad)",
+        "Konstantinopolj",
         "Rim",
         "Atina",
         "Aleksandrija"
       ],
-      "zanimljivost": "Konstantinopolj je osnovao car Konstantin, rođen u Nišu. Grad su Turci osvojili 1453, a danas je to Istanbul. Vizantija je trajala oko 1.000 godina posle pada Zapadnog rimskog carstva.",
+      "zanimljivost": "Car Konstantin, rođen u Nišu, proglasio je staru grčku koloniju Vizantion novom prestonicom 330. godine. Turci su grad osvojili 1453, a danas je to Istanbul. Istočno carstvo je trajalo skoro 1.000 godina posle pada Zapadnog.",
       "rec": "carigrad",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -417,12 +418,12 @@
       "tezina": 2,
       "pitanje": "Ko je bio prvi rimski car?",
       "odgovori": [
-        "Avgust (Oktavijan)",
+        "Avgust",
         "Julije Cezar",
         "Neron",
         "Konstantin Veliki"
       ],
-      "zanimljivost": "Julije Cezar nikada nije bio car – bio je diktator. Mesec avgust nazvan je po Avgustu, a jul po Juliju Cezaru.",
+      "zanimljivost": "Pre nego što je dobio titulu Avgust („uzvišeni“), zvao se Oktavijan. Julije Cezar nikada nije bio car – bio je diktator. Mesec avgust nazvan je po Avgustu, a jul po Juliju Cezaru.",
       "rec": "avgust",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -487,18 +488,14 @@
         "Ćin Ši Huang",
         "Kublaj-kan",
         "Džingis-kan",
-        "Konfučije"
+        "Car Kangsi"
       ],
       "zanimljivost": "Glinenu (terakota) vojsku su 1974. slučajno otkrili seljaci kopajući bunar. Ima preko 8.000 vojnika i svaki ima drugačije lice!",
-      "rec": "zid"
+      "rec": "terakota"
     },
     {
       "tezina": 3,
       "pitanje": "Koji je mongolski vođa stvorio najveće kopneno carstvo u istoriji?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/dzingis-kan.jpg"
-      },
       "odgovori": [
         "Džingis-kan",
         "Atila",
@@ -506,7 +503,12 @@
         "Kublaj-kan"
       ],
       "zanimljivost": "Mongolsko carstvo se u 13. veku prostiralo od Koreje do Ugarske. Džingis-kan je uveo poštanski sistem jahača koji su mogli da pređu i 300 km dnevno menjajući konje.",
-      "rec": "džingis"
+      "rec": "džingis",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/dzingis-kan.jpg",
+        "opis": "Džingis-kan"
+      }
     },
     {
       "tezina": 2,
@@ -517,7 +519,7 @@
         "Prosvetiteljstvo",
         "Romantizam"
       ],
-      "zanimljivost": "Renesansa znači „preporod“, a počela je u Firenci. Leonardo da Vinči je bio pravi renesansni čovek: slikar, vajar, inženjer, anatom i pronalazač – crtao je letelice i padobran 400 godina pre njihove izrade.",
+      "zanimljivost": "Renesansa znači „preporod“, a počela je u Firenci. Leonardo da Vinči je bio pravi renesansni čovek: slikar, vajar, inženjer, anatom i pronalazač – nacrtao je padobran više od 300 godina pre nego što je neko zaista skočio padobranom.",
       "rec": "renesansa",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -526,7 +528,7 @@
       }
     },
     {
-      "tezina": 3,
+      "tezina": 2,
       "pitanje": "Koji brod je potonuo 1912. na svom prvom putovanju?",
       "odgovori": [
         "Titanik",
@@ -573,10 +575,6 @@
     {
       "tezina": 1,
       "pitanje": "Ko je prvi predsednik Sjedinjenih Američkih Država?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/vasington.jpg"
-      },
       "odgovori": [
         "Džordž Vašington",
         "Abraham Linkoln",
@@ -584,10 +582,15 @@
         "Bendžamin Frenklin"
       ],
       "zanimljivost": "Glavni grad SAD nosi njegovo ime, kao i jedna savezna država. Vašington je jedini predsednik koji nikada nije živeo u Beloj kući – ona je završena tek posle njegove smrti.",
-      "rec": "vašington"
+      "rec": "vašington",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/vasington.jpg",
+        "opis": "Džordž Vašington"
+      }
     },
     {
-      "tezina": 3,
+      "tezina": 2,
       "pitanje": "Koja je zemlja prva poslala veštački satelit u svemir (Sputnjik, 1957)?",
       "mediji": {
         "vrsta": "slika",
@@ -610,8 +613,8 @@
         "src": "slike/magna-karta.jpg"
       },
       "odgovori": [
-        "Velika povelja slobode (Magna karta)",
-        "Deklaracija o nezavisnosti",
+        "Magna karta",
+        "Deklaracija o pravima",
         "Dušanov zakonik",
         "Hamurabijev zakonik"
       ],
@@ -701,10 +704,10 @@
       "tezina": 3,
       "pitanje": "Šta je Dubrovnik prvi u svetu uveo 1377. godine, da bi se zaštitio od kuge?",
       "odgovori": [
-        "Karantin – obaveznu izolaciju pridošlica",
-        "Vakcinaciju protiv velikih boginja za svu decu i odrasle u gradu",
-        "Bolnicu za decu",
-        "Pranje ruku sapunom pre jela i posle povratka sa pijace"
+        "Karantin za pridošlice",
+        "Vakcinaciju protiv boginja",
+        "Prvu bolnicu za decu",
+        "Gradsku kanalizaciju"
       ],
       "zanimljivost": "Brodovi i putnici iz zaraženih krajeva morali su da provedu 30 dana na obližnjim ostrvima pre ulaska u grad. Kasnije je period produžen na 40 dana – „quaranta giorni“, odakle i reč karantin.",
       "rec": "karantin"
@@ -737,12 +740,12 @@
       "tezina": 2,
       "pitanje": "Šta neprekidno radi od 1317. godine u dubrovačkom franjevačkom samostanu Male braće?",
       "odgovori": [
-        "Apoteka – jedna od najstarijih u Evropi",
-        "Bolnica za mornare i trgovce",
-        "Banka u kojoj se čuvalo zlato i srebro",
-        "Škola za učenje čitanja i pisanja"
+        "Apoteka",
+        "Bolnica za mornare",
+        "Banka dubrovačke vlastele",
+        "Škola za pisare"
       ],
-      "zanimljivost": "Apoteka Male braće i danas prodaje lekove i kreme, u istom samostanu na početku glavne ulice, Straduna.",
+      "zanimljivost": "To je jedna od najstarijih apoteka u Evropi koja radi bez prekida. I danas prodaje lekove i kreme, u istom samostanu na početku glavne ulice, Straduna.",
       "rec": "apoteka"
     },
     {
@@ -765,29 +768,30 @@
         "src": "slike/stradun.jpg"
       },
       "odgovori": [
-        "Stradun (Placa)",
+        "Stradun",
         "Korzo",
         "Riva",
         "Ilica"
       ],
-      "zanimljivost": "Stradun je dug oko 300 m i popločan kamenom uglačanim od koraka vekovima. Na njegovom kraju je Orlandov stub – simbol slobode grada.",
+      "zanimljivost": "Stradun, koji Dubrovčani zovu i Placa, dug je oko 300 m i popločan kamenom uglačanim od koraka vekovima. Na njegovom kraju je Orlandov stub – simbol slobode grada.",
       "rec": "stradun"
     },
     {
       "tezina": 3,
       "pitanje": "Koji naučnik iz Dubrovnika, rođen 1711, bio je jezuita, astronom i matematičar, a po njemu je nazvan i krater na Mesecu?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/boskovic.jpg"
-      },
       "odgovori": [
         "Ruđer Bošković",
         "Marin Držić",
         "Ivan Gundulić",
-        "Nikola Tesla"
+        "Marin Getaldić"
       ],
       "zanimljivost": "Bošković je izneo jednu od prvih teorija o građi materije od tačkastih čestica i sila među njima. Radio je u Rimu, Parizu i Milanu i bio član Kraljevskog društva u Londonu.",
-      "rec": "bošković"
+      "rec": "bošković",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/boskovic.jpg",
+        "opis": "Ruđer Bošković"
+      }
     },
     {
       "tezina": 2,
@@ -820,15 +824,15 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Koju je ulogu Dubrovnik imao u poznatoj TV seriji „Igra prestola“?",
+      "pitanje": "Koji grad je Dubrovnik „glumio“ u TV seriji „Igra prestola“?",
       "odgovori": [
-        "Glumio je Kraljevu Luku, prestonicu Sedam kraljevstava",
-        "Bio je Zid na severu, koji čuva kraljevstvo od Belih šetača",
-        "Glumio je ostrvo zmajeva, na kome je rođena Deneris Targarjen",
-        "Nije se pojavio u seriji, već samo u filmu „Ratovi zvezda“"
+        "Kraljevu Luku",
+        "Zimovrel",
+        "Zmajev Kamen",
+        "Starigrad"
       ],
-      "zanimljivost": "Posle serije broj turista je toliko porastao da je grad morao da ograniči broj posetilaca sa kruzera. Tvrđava Lovrijenac je bila Crvena tvrđava.",
-      "rec": "glumac"
+      "zanimljivost": "Tvrđava Lovrijenac i zidine snimane su kao delovi prestonice Sedam kraljevstava. Posle serije broj turista je toliko porastao da je grad morao da ograniči broj posetilaca sa kruzera.",
+      "rec": "prestol"
     },
     {
       "tezina": 3,
@@ -852,9 +856,9 @@
       "pitanje": "Kako je Dubrovačka republika sačuvala nezavisnost pred moćnim Osmanskim carstvom?",
       "odgovori": [
         "Plaćala je danak i vešto pregovarala",
-        "Imala je najjaču flotu na svetu",
-        "Bila je deo Venecije",
-        "Sagradila je zid do Carigrada"
+        "Imala je jaku vojsku i flotu",
+        "Bila je pod vlašću Venecije",
+        "Pobedila je Turke u velikoj bici"
       ],
       "zanimljivost": "Dubrovački diplomati su bili čuveni po veštini, a njihovi trgovci su imali privilegije širom Osmanskog carstva. Tako je mala republika opstala vekovima okružena velikim silama.",
       "rec": "danak"
@@ -986,10 +990,10 @@
         "Santa Marija, Pinta i Ninja",
         "Mejflauer, Bigl i Endevor",
         "Viktorija, Trinidad i Konsepsion",
-        "Titanik, Olimpik i Britanik"
+        "San Gabrijel, San Rafael i Berio"
       ],
       "tezina": 2,
-      "zanimljivost": "Santa Marija se na Božić 1492. nasukala kod ostrva Hispaniola, pa se Kolumbo kući vratio na Ninji. Viktorija je bila brod Magelanove ekspedicije koji je jedini oplovio Zemlju.",
+      "zanimljivost": "Santa Marija se na Božić 1492. nasukala kod ostrva Hispaniola, pa se Kolumbo kući vratio na Ninji. Viktorija je bila brod Magelanove ekspedicije koji je jedini oplovio Zemlju, a San Gabrijel je bio brod Vaska da Game.",
       "rec": "brod",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -1016,18 +1020,18 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Koja je drevna civilizacija napravila prvi poznati zakonik uklesan u kamen?",
+      "pitanje": "U kojoj drevnoj državi je nastao čuveni zakonik uklesan u kameni stub, sa načelom „oko za oko, zub za zub“?",
       "mediji": {
         "vrsta": "slika",
         "src": "slike/hamurabi.jpg"
       },
       "odgovori": [
-        "Vavilonci (Hamurabijev zakonik)",
-        "Rimljani (Zakonik dvanaest tablica)",
-        "Grci",
-        "Kinezi"
+        "Vavilonu",
+        "Rimu",
+        "Grčkoj",
+        "Egiptu"
       ],
-      "zanimljivost": "Hamurabijev zakonik ima 282 zakona. Sadrži i načelo „oko za oko, zub za zub“ – kazna je trebalo da bude jednaka šteti.",
+      "zanimljivost": "To je Hamurabijev zakonik (oko 1750. pre n. e.) sa 282 zakona. Kazna je trebalo da odgovara šteti, ali je zavisila i od toga da li je oštećeni bio rob, slobodan čovek ili plemić.",
       "rec": "zakonik"
     },
     {
@@ -1152,9 +1156,9 @@
       "tezina": 2,
       "pitanje": "Kada se smatra da je počeo srednji vek?",
       "odgovori": [
-        "476. godine, padom Zapadnog rimskog carstva",
-        "1492. godine, otkrićem Amerike i Kolumbovim putovanjem",
-        "Nulte godine, rođenjem Hrista i početkom nove ere",
+        "476, padom Zapadnog Rima",
+        "1492, otkrićem Amerike",
+        "Prve godine nove ere",
         "1453, padom Carigrada"
       ],
       "zanimljivost": "Srednji vek je trajao oko 1.000 godina, do pada Carigrada 1453. ili otkrića Amerike 1492, zavisno od istoričara.",
@@ -1197,10 +1201,10 @@
       "tezina": 2,
       "pitanje": "Šta su bili krstaški ratovi?",
       "odgovori": [
-        "Pohodi evropskih vitezova ka Svetoj zemlji (11–13. vek)",
-        "Ratovi između Rima i Kartagine za vlast nad Sredozemljem",
-        "Ratovi Vikinga",
-        "Ratovi u Kini"
+        "Pohodi evropskih vitezova ka Svetoj zemlji",
+        "Ratovi Rima i Kartagine za Sredozemlje",
+        "Pohodi Vikinga na Englesku i Francusku",
+        "Ratovi Mongola protiv Kine i Persije"
       ],
       "zanimljivost": "Prvi krstaški rat je počeo 1096, a krstaši su 1099. osvojili Jerusalim. U Četvrtom krstaškom ratu 1204. krstaši su opljačkali hrišćanski Carigrad.",
       "medijiOdgovora": {
@@ -1233,7 +1237,7 @@
       "odgovori": [
         "Marko Polo",
         "Kristifor Kolumbo",
-        "Ameriko Vespuči",
+        "Amerigo Vespuči",
         "Vasko da Gama"
       ],
       "zanimljivost": "Marko Polo je proveo oko 17 godina na dvoru Kublaj-kana. Knjigu o putovanju izdiktirao je u zatvoru, posle bitke između Venecije i Đenove.",
@@ -1298,10 +1302,6 @@
     {
       "tezina": 2,
       "pitanje": "Ko je pokrenuo reformaciju, istakavši 95 teza 1517?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/luter.jpg"
-      },
       "odgovori": [
         "Martin Luter",
         "Jan Hus",
@@ -1309,7 +1309,12 @@
         "Erazmo Roterdamski"
       ],
       "zanimljivost": "Luter je preveo Bibliju na nemački, a Gutenbergova štamparija je pomogla da se njegove ideje brzo šire Evropom.",
-      "rec": "luter"
+      "rec": "luter",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/luter.jpg",
+        "opis": "Martin Luter"
+      }
     },
     {
       "tezina": 2,
@@ -1346,14 +1351,14 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Ko je pogubljen giljotinom 1793. tokom Francuske revolucije?",
+      "pitanje": "Koji francuski kralj je pogubljen giljotinom 1793, tokom Francuske revolucije?",
       "odgovori": [
-        "Kralj Luj XVI i kraljica Marija Antoaneta",
-        "Napoleon Bonaparta, francuski car i vojskovođa",
-        "Luj XIV, „Kralj Sunce“ koji je sagradio Versaj",
-        "Samo Maksimilijan Robespjer, vođa jakobinaca"
+        "Luj XVI",
+        "Luj XIV",
+        "Luj XV",
+        "Karlo X"
       ],
-      "zanimljivost": "Marija Antoaneta nikada nije rekla „Ako nemaju hleba, neka jedu kolače“ – to je izmišljena priča. Robespjer je i sam pogubljen 1794.",
+      "zanimljivost": "Iste godine pogubljena je i njegova žena, kraljica Marija Antoaneta – koja nikada nije rekla „Ako nemaju hleba, neka jedu kolače“. Robespjer, koji je mnoge poslao na giljotinu, i sam je pogubljen 1794.",
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/marija-antoaneta.jpg",
@@ -1404,10 +1409,6 @@
     {
       "tezina": 2,
       "pitanje": "Ko je sa svojim „crvenokošuljašima“ predvodio borbu za ujedinjenje Italije u 19. veku?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/garibaldi.jpg"
-      },
       "odgovori": [
         "Đuzepe Garibaldi",
         "Benito Musolini",
@@ -1415,23 +1416,29 @@
         "Napoleon"
       ],
       "zanimljivost": "Ujedinjenje Italije završeno je 1870. Garibaldi se smatra „herojem dva sveta“ jer se borio i u Južnoj Americi.",
-      "rec": "garibaldi"
+      "rec": "garibaldi",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/garibaldi.jpg",
+        "opis": "Đuzepe Garibaldi"
+      }
     },
     {
       "tezina": 2,
       "pitanje": "Ko je ujedinio Nemačku 1871?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/bizmark.jpg"
-      },
       "odgovori": [
         "Oto fon Bizmark",
         "Kajzer Vilhelm II",
         "Fridrih Veliki",
-        "Hitler"
+        "Klemens fon Meternih"
       ],
       "zanimljivost": "Bizmarka su zvali „Gvozdeni kancelar“. Nemačko carstvo je proglašeno u Dvorani ogledala u Versaju.",
-      "rec": "bizmark"
+      "rec": "bizmark",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/bizmark.jpg",
+        "opis": "Oto fon Bizmark"
+      }
     },
     {
       "tezina": 2,
@@ -1471,12 +1478,12 @@
       "tezina": 2,
       "pitanje": "Šta je bio hladni rat?",
       "odgovori": [
-        "Sukob SAD i SSSR-a bez direktnog oružanog rata, 1947–1991",
-        "Rat na Severnom polu između Kanade i Rusije oko ledenih ostrva",
-        "Rat koji je vođen samo zimi, kada se reke i jezera zalede i postanu put",
-        "Rat na Antarktiku između zemalja koje su htele da osvoje led i pingvine"
+        "Sukob SAD i SSSR-a bez otvorenog rata",
+        "Rat Finske i SSSR-a u zimu 1939.",
+        "Rat Kine i Indije na Himalajima",
+        "Opsada Lenjingrada u Drugom svetskom ratu"
       ],
-      "zanimljivost": "U hladnom ratu suparnici su se nadmetali u naoružanju, svemirskoj trci i uticaju. Završio se raspadom Sovjetskog Saveza 1991.",
+      "zanimljivost": "Hladni rat je trajao od kraja 1940-ih do 1991. Suparnici su se nadmetali u naoružanju, svemirskoj trci i uticaju u svetu, a završio se raspadom Sovjetskog Saveza.",
       "rec": "hladni"
     },
     {
@@ -1527,43 +1534,45 @@
     {
       "tezina": 2,
       "pitanje": "Ko je 1903. izveo prvi kontrolisani let avionom sa motorom?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/brace-rajt.jpg"
-      },
       "odgovori": [
         "Braća Rajt",
         "Braća Limijer",
-        "Leonardo da Vinči",
+        "Alberto Santos-Dimon",
         "Čarls Lindberg"
       ],
       "zanimljivost": "Prvi let je trajao samo 12 sekundi i bio dug 37 metara – kraće od raspona krila današnjeg velikog putničkog aviona!",
-      "rec": "avion"
+      "rec": "avion",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/brace-rajt.jpg",
+        "opis": "Braća Orvil i Vilbur Rajt"
+      }
     },
     {
       "tezina": 2,
       "pitanje": "Ko je prvi preleteo Atlantik sam, bez zaustavljanja, 1927?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/lindberg.jpg"
-      },
       "odgovori": [
         "Čarls Lindberg",
         "Amelija Erhart",
         "Braća Rajt",
-        "Jurij Gagarin"
+        "Rolan Garos"
       ],
       "zanimljivost": "Lindberg je leteo 33,5 sata od Njujorka do Pariza u avionu „Duh Sent Luisa“. Amelija Erhart je to isto prva uradila kao žena, 1932.",
-      "rec": "okean"
+      "rec": "okean",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/lindberg.jpg",
+        "opis": "Čarls Lindberg"
+      }
     },
     {
       "tezina": 3,
       "pitanje": "Koja civilizacija je u dolini Inda gradila planske gradove sa kanalizacijom, kao Mohendžo-Daro?",
       "odgovori": [
-        "Harapska civilizacija",
-        "Asteci",
-        "Feničani",
-        "Kelti"
+        "Harapska",
+        "Sumerska",
+        "Persijska",
+        "Feničanska"
       ],
       "zanimljivost": "Pre oko 4.500 godina ovi gradovi su imali ulice pod pravim uglom i kupatila u kućama. Njihovo pismo ni danas nije odgonetnuto.",
       "rec": "ind",
@@ -1605,27 +1614,28 @@
     {
       "tezina": 3,
       "pitanje": "Koji kineski filozof je učio o poštovanju starijih, porodici i redu u društvu?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/konfucije.jpg"
-      },
       "odgovori": [
         "Konfučije",
         "Lao Ce",
-        "Buda (Sidarta Gautama)",
+        "Mo Ce",
         "Sun Cu"
       ],
       "zanimljivost": "Konfučijeve misli zapisali su njegovi učenici u knjizi „Razgovori“. Njegove ideje su vekovima oblikovale kinesko društvo.",
-      "rec": "konfučije"
+      "rec": "konfučije",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/konfucije.jpg",
+        "opis": "Konfučije"
+      }
     },
     {
       "tezina": 3,
       "pitanje": "Šta je bio „Put svile“?",
       "odgovori": [
-        "Mreža trgovačkih puteva između Kine i Evrope",
-        "Put kojim su se kretali krstaši",
-        "Rimski put kroz Alpe",
-        "Morski put oko Afrike"
+        "Trgovački putevi od Kine do Evrope",
+        "Put kojim su krstaši išli u Jerusalim",
+        "Rimski put preko Alpa do Galije",
+        "Morski put oko Afrike do Indije"
       ],
       "zanimljivost": "Osim svile, putem su putovali začini, papir, barut, ali i ideje i religije – nažalost, i kuga.",
       "medijiOdgovora": {
@@ -1662,10 +1672,6 @@
     {
       "tezina": 3,
       "pitanje": "Koji vizantijski car je podigao Aja Sofiju i izdao zbornik rimskog prava?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/justinijan.jpg"
-      },
       "odgovori": [
         "Justinijan I",
         "Konstantin Veliki",
@@ -1673,23 +1679,29 @@
         "Vasilije II"
       ],
       "zanimljivost": "Justinijan je rođen na jugu današnje Srbije, a blizu rodnog mesta podigao je grad Justinijanu Primu – Caričin grad kod Lebana. Njegov zbornik rimskog prava, „Korpus juris civilis“, osnova je pravnih sistema mnogih evropskih zemalja.",
-      "rec": "justinijan"
+      "rec": "justinijan",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/justinijan.jpg",
+        "opis": "Justinijan I"
+      }
     },
     {
       "tezina": 3,
       "pitanje": "Koji osmanski sultan je 1453. osvojio Carigrad?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/mehmed.jpg"
-      },
       "odgovori": [
-        "Mehmed II Osvajač",
-        "Sulejman Veličanstveni",
-        "Murat I",
+        "Mehmed II",
+        "Sulejman I",
+        "Murat II",
         "Bajazit I"
       ],
       "zanimljivost": "Mehmed je imao samo 21 godinu. Topovi su probili bedeme koji su vekovima izgledali neosvojivo. Grad je postao prestonica Osmanskog carstva.",
-      "rec": "osvajač"
+      "rec": "osvajač",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/mehmed.jpg",
+        "opis": "Mehmed II Osvajač"
+      }
     },
     {
       "tezina": 3,
@@ -1744,10 +1756,10 @@
       "tezina": 3,
       "pitanje": "Šta je bio Bečki kongres (1814–1815)?",
       "odgovori": [
-        "Skup evropskih sila koji je posle Napoleona uredio Evropu",
-        "Veliki muzički festival na kome su svirali Mocart, Betoven i Hajdn",
-        "Osnivanje Ujedinjenih nacija",
-        "Krunisanje austrijskog cara"
+        "Skup sila koji je uredio Evropu posle Napoleona",
+        "Mirovni skup posle Prvog svetskog rata",
+        "Sabor na kome je stvorena Austrougarska",
+        "Skup na kome su sile podelile Afriku"
       ],
       "zanimljivost": "Kongres je bio poznat po balovima, pa su govorili: „Kongres pleše, ali ne napreduje.“",
       "rec": "kongres",
@@ -1760,10 +1772,6 @@
     {
       "tezina": 3,
       "pitanje": "Koji američki predsednik je ubijen u Dalasu 1963?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/kenedi.jpg"
-      },
       "odgovori": [
         "Džon F. Kenedi",
         "Abraham Linkoln",
@@ -1771,15 +1779,16 @@
         "Frenklin Ruzvelt"
       ],
       "zanimljivost": "Kenedi je pokrenuo program „Apolo“ rečima: „Odlučili smo da idemo na Mesec.“ San se ostvario 1969, šest godina posle njegove smrti.",
-      "rec": "kenedi"
+      "rec": "kenedi",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/kenedi.jpg",
+        "opis": "Džon F. Kenedi"
+      }
     },
     {
       "tezina": 3,
       "pitanje": "Ko je bio prvi čovek koji je stigao na Južni pol (1911)?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/amundsen.jpg"
-      },
       "odgovori": [
         "Roald Amundsen",
         "Robert Skot",
@@ -1787,7 +1796,12 @@
         "Edmund Hilari"
       ],
       "zanimljivost": "Norvežanin Amundsen je koristio pse i krzna kao Inuiti. Britanac Skot je stigao 34 dana kasnije i nastradao sa celim timom na povratku.",
-      "rec": "amundsen"
+      "rec": "amundsen",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/amundsen.jpg",
+        "opis": "Roald Amundsen"
+      }
     },
     {
       "tezina": 3,
@@ -1804,18 +1818,19 @@
     {
       "tezina": 3,
       "pitanje": "Ko je napisao „Dnevnik“ dok se skrivala od nacista u Amsterdamu?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/ana-frank.jpg"
-      },
       "odgovori": [
         "Ana Frank",
         "Marija Kiri",
         "Rozalind Frenklin",
-        "Elizabeta II"
+        "Sofi Šol"
       ],
       "zanimljivost": "Ana Frank je imala 13 godina kada je počela da piše. Umrla je u logoru 1945. Njen dnevnik je preveden na preko 70 jezika.",
-      "rec": "dnevnik"
+      "rec": "dnevnik",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/ana-frank.jpg",
+        "opis": "Ana Frank"
+      }
     },
     {
       "pitanje": "Koja životinja je 1957. prva obletela Zemlju u orbiti?",
@@ -1890,8 +1905,8 @@
       "odgovori": [
         "Kusko",
         "Lima",
-        "Kito",
-        "Tenočtitlan"
+        "Bogota",
+        "La Paz"
       ],
       "tezina": 3,
       "zanimljivost": "Inke su zidove gradile od kamenih blokova uklopljenih tako precizno, bez maltera, da ni oštrica noža ne može da uđe između njih. Španci su na tim zidovima kasnije podizali svoje crkve – i mnoge su se srušile u zemljotresima, a inkaški zidovi nisu.",
@@ -1913,7 +1928,7 @@
         "Hauard Karter",
         "Žan-Fransoa Šampolion",
         "Hajnrih Šliman",
-        "Indijana Džons"
+        "Ogist Marijet"
       ],
       "zanimljivost": "Ulaz u grobnicu bio je zatrpan i zato su je pljačkaši propustili. Šliman je, s druge strane, iskopao Troju.",
       "rec": "tutankamon"
@@ -1921,18 +1936,19 @@
     {
       "tezina": 3,
       "pitanje": "Ko je pronašao ostatke Troje u 19. veku?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/sliman.jpg"
-      },
       "odgovori": [
         "Hajnrih Šliman",
         "Hauard Karter",
         "Artur Evans",
-        "Herodot"
+        "Flinders Pitri"
       ],
       "zanimljivost": "Šliman je bio bogati trgovac koji je od detinjstva verovao da Homerova Troja zaista postoji. Pronašao ju je u Turskoj 1870-ih.",
-      "rec": "troja"
+      "rec": "troja",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/sliman.jpg",
+        "opis": "Hajnrih Šliman"
+      }
     },
     {
       "tezina": 3,
@@ -2014,7 +2030,7 @@
         "src": "slike/kraljica-viktorija.jpg"
       },
       "odgovori": [
-        "Kraljica Viktorija",
+        "Viktorija",
         "Elizabeta I",
         "Ana Stjuart",
         "Marija Tjudor"
@@ -2051,7 +2067,7 @@
         "Aleksandar I",
         "Nikolaj II"
       ],
-      "zanimljivost": "Petar Veliki je bio visok preko dva metra. Putovao je inkognito po Evropi i čak radio kao tesar u holandskom brodogradilištu.",
+      "zanimljivost": "Petar Veliki je bio visok preko dva metra. Uveo je i porez na brade, da bi naterao plemiće da se briju po evropskoj modi.",
       "rec": "brod"
     },
     {

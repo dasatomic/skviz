@@ -533,7 +533,7 @@
         "Molekul ima dva atoma vodonika",
         "Dva molekula vode u jednoj kapi",
         "Dva atoma kiseonika u molekulu vode",
-        "Voda ključa na 2 °C na vrhu planine"
+        "Voda ima dva stanja, tečno i čvrsto"
       ],
       "zanimljivost": "Mali broj ispod i desno od simbola zove se indeks. Broj ispred formule (koeficijent) pokazuje broj molekula: 2H₂O su dva molekula vode.",
       "rec": "molekul",
@@ -614,7 +614,7 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Kakva je smeša kada se njeni sastojci ne vide golim okom?",
+      "pitanje": "Kakva je smeša kada su njeni sastojci jednako raspoređeni u svakom delu?",
       "odgovori": [
         "Homogena",
         "Heterogena",
@@ -1059,14 +1059,14 @@
     {
       "lekcija": 1,
       "tezina": 1,
-      "pitanje": "Koja nauka proučava građu i osobine materije na nivou atoma i molekula?",
-      "rec": "hemija",
-      "zanimljivost": "Astronomija proučava nebeska tela, lingvistika jezike, a arheologija ostatke prošlosti.",
+      "pitanje": "Zašto je hemija važna za medicinu?",
+      "rec": "lekovi",
+      "zanimljivost": "Pre nego što lek ode u apoteku, hemičari proveravaju koliko aktivne supstance u njemu ima.",
       "odgovori": [
-        "Hemija",
-        "Astronomija",
-        "Lingvistika",
-        "Arheologija"
+        "Omogućava pravljenje i proveru lekova",
+        "Proučava kretanje krvi kroz srce i krvne sudove",
+        "Određuje koliko dugo čovek može da živi",
+        "Leči bolesti bez ikakvih lekova"
       ]
     },
     {
@@ -1074,7 +1074,7 @@
       "tezina": 1,
       "pitanje": "Hemija nam pomaže da razumemo zašto…",
       "rec": "kolac",
-      "zanimljivost": "Kamen u vodi i smena godišnjih doba objašnjava fizika, a kolač i rđu – hemija.",
+      "zanimljivost": "Kamen u vodi i smena godišnjih doba objašnjavaju fizika i astronomija, a kolač i rđu – hemija.",
       "odgovori": [
         "kolač naraste uz kvasac",
         "Sunce izlazi na istoku",
@@ -1133,9 +1133,9 @@
       "zanimljivost": "Jedinjenje se može hemijski razložiti na elemente, ali element na prostije supstance – ne može.",
       "odgovori": [
         "Element je od atoma jedne vrste, a jedinjenje od dve ili više različitih",
-        "Element je uvek gas, a jedinjenje uvek tečnost",
-        "Element ima više atoma od jedinjenja",
-        "Jedinjenje ne može da se razloži ni na koji način"
+        "Element je uvek gas na sobnoj temperaturi, a jedinjenje je uvek tečnost",
+        "Element ima više atoma od jedinjenja, jer su mu čestice sitnije i brojnije",
+        "Jedinjenje ne može da se razloži ni na koji način, za razliku od elementa"
       ]
     },
     {
@@ -1246,9 +1246,9 @@
       "zanimljivost": "Jedinjenje ima stalan sastav i formulu (npr. H₂O), a smeša nema.",
       "odgovori": [
         "Ima sastav koji se može napisati hemijskom formulom",
-        "Uvek se sastoji od atoma iste vrste",
-        "Ne može se razložiti na elemente",
-        "To je isto što i smeša"
+        "Uvek se sastoji samo od atoma jedne vrste, bez obzira na uslove",
+        "Ne može se razložiti na elemente ni hemijskim putem",
+        "To je isto što i smeša, samo sa stalnim sastavom"
       ]
     },
     {
@@ -1600,7 +1600,7 @@
       "tezina": 1,
       "pitanje": "Kako se zove fizičko svojstvo koje pokazuje da li supstanca provodi električnu struju?",
       "rec": "struja",
-      "zanimljivost": "Metali dobro provode struju, a staklo, plastika i guma ne provode – zato se od njih prave izolatori.",
+      "zanimljivost": "Metali dobro provode struju, a staklo, plastika i guma su izolatori.",
       "odgovori": [
         "Električna provodljivost",
         "Gustina",
@@ -1637,14 +1637,14 @@
     {
       "lekcija": 5,
       "tezina": 1,
-      "pitanje": "Kojim instrumentom se meri temperatura?",
-      "rec": "termometar",
-      "zanimljivost": "Temperatura se meri u stepenima Celzijusa (°C).",
+      "pitanje": "Koliko kelvina (K) odgovara temperaturi od 0 °C?",
+      "rec": "kelvin",
+      "zanimljivost": "Apsolutna nula je 0 K, a to je oko −273 °C – najniža moguća temperatura.",
       "odgovori": [
-        "Termometrom",
-        "Vagom",
-        "Menzurom",
-        "Lenjirom"
+        "273 K",
+        "0 K",
+        "100 K",
+        "373 K"
       ]
     },
     {
@@ -1839,7 +1839,7 @@
         "Nastaje nova supstanca sa novim svojstvima",
         "Supstanca samo promeni oblik",
         "Supstanca samo promeni agregatno stanje",
-        "Ništa se ne menja"
+        "Menja se samo zapremina supstance"
       ]
     },
     {
@@ -2427,14 +2427,14 @@
     {
       "lekcija": 9,
       "tezina": 3,
-      "pitanje": "Šta su izotopi?",
-      "rec": "izotop",
-      "zanimljivost": "Izotopi imaju isti broj protona, a različit broj neutrona.",
+      "pitanje": "Koliko protona ima ugljenik-14?",
+      "rec": "ugljenik",
+      "zanimljivost": "Ugljenik-14 se koristi za određivanje starosti arheoloških nalaza.",
       "odgovori": [
-        "Atomi istog elementa sa različitim brojem neutrona",
-        "Atomi različitih elemenata sa istom masom",
-        "Molekuli sa više atoma",
-        "Atomi sa različitim brojem protona"
+        "6",
+        "8",
+        "14",
+        "2"
       ]
     },
     {
@@ -3058,14 +3058,14 @@
     {
       "lekcija": 12,
       "tezina": 1,
-      "pitanje": "Koji plemeniti gas je najzastupljeniji u vazduhu?",
-      "rec": "argon",
-      "zanimljivost": "Argon čini skoro 1 % vazduha – mnogo više od ostalih plemenitih gasova zajedno.",
+      "pitanje": "Koliko elektrona ima u spoljašnjem nivou atoma helijuma?",
+      "rec": "helijum",
+      "zanimljivost": "Helijum ima samo jedan energetski nivo, pa su oba njegova elektrona u spoljašnjem nivou.",
       "odgovori": [
-        "Argon",
-        "Neon",
-        "Helijum",
-        "Kripton"
+        "2",
+        "8",
+        "1",
+        "0"
       ]
     },
     {
@@ -3213,7 +3213,7 @@
     {
       "lekcija": 13,
       "tezina": 2,
-      "pitanje": "Koji je ovo molekul? (Okreni ga prstom!)",
+      "pitanje": "Koji je ovo molekul savijenog oblika? (Okreni ga prstom!)",
       "rec": "voda",
       "zanimljivost": "Molekul vode je savijen – dva vodonika su pod uglom od oko 104,5°.",
       "odgovori": [
@@ -3249,9 +3249,9 @@
       "zanimljivost": "Atomi „teže“ popunjenom spoljašnjem nivou – obično sa 8 elektrona (oktet).",
       "odgovori": [
         "Da popune spoljašnji nivo i postanu stabilni",
-        "Da izgube sve elektrone",
-        "Da povećaju masu",
-        "Da promene boju"
+        "Da izgube sve elektrone i tako postanu stabilni joni",
+        "Da povećaju masu atoma i tako se lakše spoje",
+        "Da promene boju i tako privuku druge atome"
       ]
     },
     {
@@ -3377,7 +3377,7 @@
         "Kuhinjska so",
         "Šećer"
       ],
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "molekul",
         "ime": "dijamant",
         "legenda": false
@@ -3391,9 +3391,9 @@
       "zanimljivost": "Zbog jake atomske rešetke dijamant je najtvrđi prirodni materijal.",
       "odgovori": [
         "Svi atomi su povezani jakim kovalentnim vezama",
-        "Molekuli su mu teški",
-        "Joni mu se privlače",
-        "Elektroni mu slobodno teku"
+        "Molekuli su mu veoma teški i gusto zbijeni",
+        "Joni u njemu jako privlače elektrone iz vazduha",
+        "Elektroni mu slobodno teku kroz celu strukturu"
       ]
     },
     {
@@ -3404,9 +3404,9 @@
       "zanimljivost": "Pri smrzavanju molekuli vode se poređaju tako da led ima manju gustinu.",
       "odgovori": [
         "Led ima manju gustinu od tečne vode",
-        "Led je teži od vode",
-        "Led je topliji",
-        "Led nema masu"
+        "Led je teži od vode, pa zato i potone na dno",
+        "Led je topliji od vode, pa zato ostaje na površini",
+        "Led nema masu, pa ne može da potone ni da pluta"
       ],
       "medijiOdgovora": {
         "vrsta": "molekul",
@@ -3503,9 +3503,9 @@
       "zanimljivost": "I grafit i dijamant su čist ugljenik, ali su atomi drugačije povezani.",
       "odgovori": [
         "U grafitu su slojevi koji klize, a u dijamantu je čvrsta mreža",
-        "Grafit ima jone, a dijamant molekule",
-        "Grafit je metal, a dijamant nemetal",
-        "Nema razlike – isti su"
+        "Grafit ima jone, a dijamant molekule, pa se zato razlikuju po tvrdoći",
+        "Grafit je metal, a dijamant nemetal, pa grafit bolje provodi toplotu",
+        "Nema razlike, jer su i grafit i dijamant isti kristal ugljenika"
       ]
     },
     {
@@ -3516,9 +3516,9 @@
       "zanimljivost": "Mina olovke je grafit pomešan sa glinom.",
       "odgovori": [
         "Ugljenik koji ostavlja trag (u olovci)",
-        "Metal za nakit",
-        "Vrsta soli",
-        "Tečni gas"
+        "Metal za nakit, sličan srebru i zlatu, ali mekši",
+        "Vrsta soli koja se koristi u kuhinji i medicini",
+        "Tečni metal koji se koristi u termometrima"
       ]
     },
     {
@@ -3650,7 +3650,7 @@
         "Kiseonik (O₂)",
         "Metan (CH₄)"
       ],
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "molekul",
         "ime": "so",
         "legenda": false
@@ -3746,7 +3746,7 @@
         "H₂O₂",
         "HO"
       ],
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "molekul",
         "ime": "voda",
         "legenda": false
@@ -3768,20 +3768,15 @@
     {
       "lekcija": 16,
       "tezina": 1,
-      "pitanje": "Koja je hemijska formula kuhinjske soli?",
-      "rec": "hlorid",
-      "zanimljivost": "Natrijum je jednovalentan, a hlor jednovalentan – zato je formula NaCl.",
+      "pitanje": "Koja je hemijska formula natrijum-oksida?",
+      "rec": "natrijum",
+      "zanimljivost": "Natrijum je jednovalentan, a kiseonik dvovalentan, pa su potrebna dva atoma natrijuma za jedan atom kiseonika.",
       "odgovori": [
-        "NaCl",
-        "Na₂Cl",
-        "NaCl₂",
-        "NaCl₃"
-      ],
-      "mediji": {
-        "vrsta": "molekul",
-        "ime": "so",
-        "legenda": false
-      }
+        "Na₂O",
+        "NaO",
+        "NaO₂",
+        "Na₂O₃"
+      ]
     },
     {
       "lekcija": 16,
@@ -3795,7 +3790,7 @@
         "Karbid",
         "Karbonat"
       ],
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "molekul",
         "ime": "ugljen-dioksid",
         "legenda": false
@@ -3881,7 +3876,7 @@
         "Azot",
         "Ozon"
       ],
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "molekul",
         "ime": "kiseonik",
         "legenda": false
@@ -3966,12 +3961,12 @@
       "tezina": 2,
       "pitanje": "Po čemu se razlikuju homogena i heterogena smeša?",
       "rec": "smeša",
-      "zanimljivost": "Kod homogene smeše sastojci su ravnomerno raspoređeni, pa se ne vide.",
+      "zanimljivost": "Kod homogene smeše sastojci su ravnomerno raspoređeni, pa je smeša ujednačena.",
       "odgovori": [
-        "U homogenoj se sastojci ne vide golim okom",
-        "Heterogena je uvek tečna",
-        "Homogena ima veću masu",
-        "Nema razlike"
+        "U homogenoj su sastojci ravnomerno raspoređeni u svakom delu",
+        "Heterogena je uvek tečna, a homogena čvrsta",
+        "Homogena smeša ima veću masu od heterogene",
+        "Nema razlike, jer obe smeše imaju iste sastojke"
       ]
     },
     {
@@ -4008,9 +4003,9 @@
       "zanimljivost": "Pesak u vodi je suspenzija – čestice se vremenom istalože.",
       "odgovori": [
         "Heterogena smeša čvrste supstance i tečnosti",
-        "Homogena smeša dva gasa",
-        "Čista supstanca",
-        "Vrsta jedinjenja"
+        "Homogena smeša dva gasa u istom odnosu masa",
+        "Čista supstanca od jednog elementa, bez primesa",
+        "Vrsta jedinjenja u kome se atomi međusobno privlače"
       ]
     },
     {
@@ -4047,9 +4042,9 @@
       "zanimljivost": "So se u morskoj vodi ne vidi golim okom, pa je smeša homogena.",
       "odgovori": [
         "Homogena – so je ravnomerno rastvorena",
-        "Heterogena – so se vidi",
-        "Nije smeša",
-        "Čista je supstanca"
+        "Heterogena – so se vidi na dnu posude kao talog",
+        "Nije smeša, nego jedinjenje soli i vode",
+        "Čista je supstanca, jer ima stalan sastav"
       ]
     },
     {
@@ -4086,9 +4081,9 @@
       "zanimljivost": "Dim je heterogena smeša sitnih čvrstih čestica u vazduhu.",
       "odgovori": [
         "Dim (čvrste čestice u gasu)",
-        "Vazduh",
-        "Slana voda",
-        "Sirće"
+        "Vazduh, koji je ravnomeran gas bez vidljivih delova",
+        "Slana voda, u kojoj so ne vidimo golim okom",
+        "Sirće, rastvor sirćetne kiseline u vodi"
       ]
     },
     {
@@ -4125,9 +4120,9 @@
       "zanimljivost": "Rastvor je homogena smeša – rastvorena supstanca se ne vidi.",
       "odgovori": [
         "Homogena smeša rastvarača i rastvorene supstance",
-        "Heterogena smeša",
-        "Čista supstanca",
-        "Samo tečnost bez primesa"
+        "Heterogena smeša čvrstih i tečnih delova",
+        "Čista supstanca koja ima stalan sastav",
+        "Samo tečnost bez primesa, kao destilovana voda"
       ]
     },
     {
@@ -4151,9 +4146,9 @@
       "zanimljivost": "Rastvorljivost se menja sa temperaturom.",
       "odgovori": [
         "Masa supstance koja se može rastvoriti u datoj količini vode",
-        "Brzina mešanja",
-        "Temperatura ključanja",
-        "Masa rastvarača"
+        "Brzina mešanja rastvora na datoj temperaturi",
+        "Temperatura na kojoj supstanca ključa u vodi",
+        "Masa rastvarača koja je potrebna za rastvaranje"
       ]
     },
     {
@@ -4203,9 +4198,9 @@
       "zanimljivost": "Ribe dišu kiseonik rastvoren u vodi – zato je važan u akvarijumu.",
       "odgovori": [
         "Da, na primer kiseonik (ribe ga dišu)",
-        "Ne, nikad",
-        "Samo ugljen-dioksid",
-        "Samo vodonik"
+        "Ne, gasovi ne mogu da se mešaju sa tečnostima",
+        "Samo ugljen-dioksid, i to samo u vrućoj vodi",
+        "Samo vodonik, jer je najlakši gas u prirodi"
       ]
     },
     {
@@ -4230,7 +4225,7 @@
       "odgovori": [
         "Višak supstance se izdvaja u kristalima",
         "Rastvor postaje gušći i bistriji",
-        "Ništa se ne dešava",
+        "Rastvor se pretvara u čvrsto telo bez kristala",
         "Rastvor proključa"
       ]
     },
@@ -4255,9 +4250,9 @@
       "zanimljivost": "Gasovi se bolje rastvaraju u hladnoj vodi.",
       "odgovori": [
         "Topla voda sadrži manje rastvorenog kiseonika",
-        "Topla voda ima više soli",
-        "Topla voda je gušća",
-        "Ribe ne vole toplotu"
+        "Topla voda ima više soli, pa se ribe guše od soli",
+        "Topla voda je gušća, pa se ribe teško kreću kroz nju",
+        "Ribe ne vole toplotu, pa se u njoj guše od stresa"
       ]
     },
     {
@@ -4293,14 +4288,14 @@
     {
       "lekcija": 19,
       "tezina": 2,
-      "pitanje": "Koliko azota ima u vazduhu?",
-      "rec": "azot",
-      "zanimljivost": "Azot je najzastupljeniji gas u vazduhu – oko 78%.",
+      "pitanje": "Koji gas je u vazduhu zastupljen oko 0,04%?",
+      "rec": "dioksid",
+      "zanimljivost": "Iako ga ima malo, ugljen-dioksid je važan za fotosintezu i utiče na temperaturu Zemlje.",
       "odgovori": [
-        "Oko 78%",
-        "Oko 21%",
-        "Oko 1%",
-        "Oko 99%"
+        "Ugljen-dioksid",
+        "Argon",
+        "Kiseonik",
+        "Azot"
       ],
       "medijiOdgovora": {
         "vrsta": "molekul",
@@ -4319,7 +4314,7 @@
         "O₂",
         "NaCl"
       ],
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "molekul",
         "ime": "voda",
         "legenda": false
@@ -4333,9 +4328,9 @@
       "zanimljivost": "Zbog toga se u prirodi retko nalazi potpuno čista voda.",
       "odgovori": [
         "Rastvara više supstanci od drugih tečnosti",
-        "Rastvara samo so",
-        "Ne rastvara ništa",
-        "Najskuplja je tečnost"
+        "Rastvara samo so i druge soli, a ništa drugo",
+        "Ne rastvara ništa, jer je previše čista",
+        "Najskuplja je tečnost u prirodi, zbog retkosti"
       ]
     },
     {
@@ -4471,9 +4466,9 @@
       "zanimljivost": "Molekul vode je lakši od molekula azota i kiseonika, pa vlažan vazduh ima manju gustinu.",
       "odgovori": [
         "Vodena para je lakša od azota i kiseonika",
-        "Vodena para je teža",
-        "Vlaga povećava gustinu",
-        "Vlažan vazduh je teži"
+        "Vodena para je teža od azota, pa vlažan vazduh tone",
+        "Vlaga povećava gustinu vazduha, pa se on sabija",
+        "Vlažan vazduh je teži jer sadrži više kiseonika"
       ]
     },
     {
@@ -4488,7 +4483,7 @@
         "Masa supstance puta zapremina",
         "Masa rastvarača podeljena masom supstance"
       ],
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "formula",
         "tekst": "udeo = masa supstance ÷ masa smeše"
       }
@@ -4618,9 +4613,9 @@
       "zanimljivost": "Masa rastvora = masa rastvorene supstance + masa rastvarača.",
       "odgovori": [
         "Zbir mase supstance i mase rastvarača",
-        "Samo masa supstance",
-        "Samo masa vode",
-        "Masa posude"
+        "Samo masa rastvorene supstance, bez vode",
+        "Samo masa vode u kojoj je supstanca rastvorena",
+        "Masa posude u kojoj se rastvor čuva"
       ]
     },
     {
@@ -4657,9 +4652,9 @@
       "zanimljivost": "Udeo je deo celine, a deo nikad nije veći od celine.",
       "odgovori": [
         "Masa supstance ne može biti veća od mase smeše",
-        "Zato što je to dogovor",
-        "Može biti veći",
-        "Zavisi od temperature"
+        "Zato što je tako dogovorio svaki hemičar na svetu",
+        "Može biti veći ako se smeša zagreje do ključanja",
+        "Zavisi od temperature i pritiska u laboratoriji"
       ]
     },
     {
@@ -4722,9 +4717,9 @@
       "zanimljivost": "Isparavanjem vode šećer se izdvaja u obliku kristala.",
       "odgovori": [
         "Kristalizacijom (isparavanjem vode)",
-        "Filtriranjem",
-        "Magnetom",
-        "Dekantovanjem"
+        "Filtriranjem kroz papir sa malim porama",
+        "Magnetom koji privuče šećer iz rastvora",
+        "Dekantovanjem, odlivanjem bistre tečnosti"
       ]
     },
     {
@@ -4774,9 +4769,9 @@
       "zanimljivost": "Posle taloženja, bistra voda se pažljivo odlije – dekantovanje.",
       "odgovori": [
         "Pesak se istaloži na dno, pa se voda odlije",
-        "Pesak ispari",
-        "Voda se smrzne",
-        "Pesak se rastvori"
+        "Pesak ispari na suncu, pa ostane samo voda",
+        "Voda se smrzne i pliva na površini peska",
+        "Pesak se rastvori u vodi i postane bistar"
       ]
     },
     {
@@ -4813,9 +4808,9 @@
       "zanimljivost": "Pri hemijskoj reakciji nastaju nove supstance sa novim svojstvima.",
       "odgovori": [
         "Proces u kome od reaktanata nastaju proizvodi",
-        "Promena oblika tela",
-        "Promena agregatnog stanja",
-        "Mešanje dve tečnosti"
+        "Promena oblika tela, kao kad se savije žica",
+        "Promena agregatnog stanja, kao topljenje leda",
+        "Mešanje dve tečnosti koje se ne mešaju"
       ]
     },
     {
@@ -4906,9 +4901,9 @@
       "zanimljivost": "Kad se iz rastvora izdvoji nerastvorna čvrsta supstanca, kažemo da je pao talog.",
       "odgovori": [
         "Čvrsta supstanca koja se izdvaja iz rastvora",
-        "Gas koji izlazi",
-        "Tečnost koja ispari",
-        "Boja rastvora"
+        "Gas koji izlazi iz rastvora kao mehurići",
+        "Tečnost koja ispari iz otvorene posude",
+        "Boja rastvora koja se menja pri hlađenju"
       ]
     },
     {
@@ -5023,9 +5018,9 @@
       "zanimljivost": "Izjednačavanjem poštujemo zakon o održanju mase.",
       "odgovori": [
         "Da broj atoma svakog elementa bude isti sa obe strane",
-        "Da bi lepše izgledala",
-        "Da bi se promenila masa",
-        "Da bi se promenile formule"
+        "Da bi jednačina lepše izgledala na papiru",
+        "Da bi se promenila masa supstanci u reakciji",
+        "Da bi se promenile formule supstanci u reakciji"
       ]
     },
     {
@@ -5075,9 +5070,9 @@
       "zanimljivost": "Levo su reaktanti, desno proizvod, a strelica znači „nastaje“.",
       "odgovori": [
         "Ugljenik reaguje sa kiseonikom i daje ugljen-dioksid",
-        "Ugljenik se rastvara u vodi",
-        "Kiseonik gori u ugljeniku",
-        "Ugljen-dioksid se raspada"
+        "Ugljenik se rastvara u vodi i nastaje ugljena kiselina",
+        "Kiseonik gori u ugljeniku i stvara plamen",
+        "Ugljen-dioksid se raspada na ugljenik i kiseonik"
       ]
     },
     {
@@ -5122,14 +5117,14 @@
     {
       "lekcija": 23,
       "tezina": 3,
-      "pitanje": "Kako glasi izjednačena jednačina nastanka vode od vodonika i kiseonika?",
-      "rec": "jednačina",
-      "zanimljivost": "Dva molekula vodonika i jedan molekul kiseonika daju dva molekula vode.",
+      "pitanje": "Koja je pravilno izjednačena jednačina gorenja magnezijuma u kiseoniku?",
+      "rec": "magnezijum",
+      "zanimljivost": "Magnezijum gori jarkim belim plamenom, a nastali magnezijum-oksid je beli prah.",
       "odgovori": [
-        "2H₂ + O₂ → 2H₂O",
-        "H₂ + O₂ → H₂O",
-        "H₂ + O → H₂O",
-        "H + O → H₂O"
+        "2Mg + O₂ → 2MgO",
+        "Mg + O₂ → MgO",
+        "2Mg + 2O₂ → 2MgO",
+        "Mg + O₂ → 2MgO"
       ]
     },
     {
@@ -5165,10 +5160,10 @@
       "rec": "atomska",
       "zanimljivost": "Atom je presitan za grame, pa koristimo jedinicu atomske mase (u).",
       "odgovori": [
-        "U jedinicama atomske mase (u)",
-        "U gramima",
-        "U litrima",
-        "U molovima"
+        "U jedinicama atomske mase",
+        "U gramima po kubnom centimetru",
+        "U litrima, kao zapremina tečnosti",
+        "U molovima, jer se mase broje po molu"
       ]
     },
     {
@@ -5179,9 +5174,9 @@
       "zanimljivost": "Jedinica atomske mase definiše se preko atoma ugljenika-12.",
       "odgovori": [
         "Dvanaestina mase atoma ugljenika-12",
-        "Masa atoma vodonika",
-        "Masa protona",
-        "Masa elektrona"
+        "Masa atoma vodonika, najlakšeg elementa",
+        "Masa protona u jezgru ugljenika",
+        "Masa elektrona koji kruži oko jezgra"
       ]
     },
     {
@@ -5295,10 +5290,10 @@
       "rec": "atomska",
       "zanimljivost": "Ar pokazuje koliko je puta atom teži od jedinice atomske mase.",
       "odgovori": [
-        "Masa njegovog atoma izražena u jedinicama atomske mase",
-        "Broj protona u jezgru",
-        "Broj neutrona",
-        "Zapremina atoma"
+        "Masa atoma elementa u jedinicama atomske mase",
+        "Broj protona u jezgru, koji određuje element",
+        "Broj neutrona u jezgru atoma kiseonika",
+        "Zapremina atoma izražena u kubnim metrima"
       ]
     },
     {
@@ -5322,9 +5317,9 @@
       "zanimljivost": "Relativne mase su brojevi koji pokazuju odnos prema jedinici atomske mase.",
       "odgovori": [
         "Ne, to su neimenovani brojevi",
-        "Da, gram",
-        "Da, mol",
-        "Da, litar"
+        "Da, gram po molu, kao i kod svih masa",
+        "Da, mol, jer se mase računaju po molu",
+        "Da, litar, kao i kod zapremine gasa"
       ]
     },
     {
@@ -5373,14 +5368,14 @@
     {
       "lekcija": 25,
       "tezina": 1,
-      "pitanje": "Kolika je relativna atomska masa vodonika?",
-      "rec": "vodonik",
-      "zanimljivost": "Vodonik ima najmanju Ar – približno 1.",
+      "pitanje": "Kolika je relativna atomska masa natrijuma (približno)?",
+      "rec": "natrijum",
+      "zanimljivost": "Natrijum je teži od kiseonika, ali je ipak mnogo lakši od gvožđa.",
       "odgovori": [
-        "1",
-        "2",
-        "16",
-        "12"
+        "23",
+        "11",
+        "12",
+        "16"
       ]
     },
     {
@@ -5619,9 +5614,9 @@
       "zanimljivost": "M(H₂O) = 18 g/mol, a Mr(H₂O) = 18 – isti broj, ali molarna masa ima jedinicu.",
       "odgovori": [
         "Isti su broj, ali M ima jedinicu g/mol",
-        "M je uvek duplo veći",
-        "M je uvek upola manji",
-        "Nisu povezani"
+        "M je uvek duplo veći od Mr, jer je u gramima",
+        "M je uvek upola manji, jer se deli sa dva",
+        "Nisu povezani, jer se jedna meri u gramima"
       ]
     },
     {
@@ -5679,7 +5674,7 @@
         "n = m − M",
         "n = m + M"
       ],
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "formula",
         "tekst": "n = m / M"
       }
@@ -5713,7 +5708,7 @@
     {
       "lekcija": 26,
       "tezina": 2,
-      "pitanje": "Kolika je masa jednog mola kuhinjske soli (M = 58,5 g/mol)?",
+      "pitanje": "Kolika je masa jednog mola kuhinjske soli?",
       "rec": "hlorid",
       "zanimljivost": "Jedan mol NaCl ima masu 58,5 grama.",
       "odgovori": [
@@ -5787,7 +5782,7 @@
         "Masa elementa puta zapremina",
         "Zbir masa svih elemenata"
       ],
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "formula",
         "tekst": "udeo = masa elementa ÷ Mr jedinjenja"
       }
@@ -5956,9 +5951,9 @@
       "zanimljivost": "Jednačina nam daje odnose u kojima supstance reaguju.",
       "odgovori": [
         "Odnosi masa reaktanata i proizvoda",
-        "Boja supstanci",
-        "Temperatura vazduha",
-        "Gustina metala"
+        "Boja supstanci posle reakcije u epruveti",
+        "Temperatura vazduha u laboratoriji tokom reakcije",
+        "Gustina metala koji se koristi u reakciji"
       ]
     },
     {
@@ -5992,7 +5987,7 @@
       "tezina": 3,
       "pitanje": "Koliko grama vode nastaje iz 4 g vodonika i dovoljno kiseonika?",
       "rec": "voda",
-      "zanimljivost": "Odnos vodonika i vode je 2 : 36, pa 4 g vodonika daje 36 g vode.",
+      "zanimljivost": "Iz 2 g vodonika nastaje 18 g vode, pa iz 4 g vodonika nastaje 36 g vode.",
       "odgovori": [
         "36 g",
         "18 g",
@@ -6142,9 +6137,9 @@
       "zanimljivost": "Cink i hlorovodonična kiselina daju vodonik i cink-hlorid.",
       "odgovori": [
         "Reakcijom metala (npr. cinka) sa kiselinom",
-        "Zagrevanjem vode",
-        "Filtriranjem vazduha",
-        "Mlevenjem metala"
+        "Zagrevanjem vode do ključanja u epruveti",
+        "Filtriranjem vazduha kroz vatu i papir",
+        "Mlevenjem metala u avanu sa tučkom"
       ]
     },
     {
@@ -6168,9 +6163,9 @@
       "zanimljivost": "Smeša vodonika i vazduha pri paljenju glasno „pucketa“ ili eksplodira.",
       "odgovori": [
         "Zapaljiv je i sa vazduhom eksplodira",
-        "Otrovan je",
-        "Nema masu",
-        "Rastvara metale"
+        "Otrovan je i jako nagriza kožu i oči",
+        "Nema masu, pa je lebdi u vazduhu",
+        "Rastvara metale i tako stvara rđu"
       ]
     },
     {
@@ -6194,9 +6189,9 @@
       "zanimljivost": "Prisustvo vodonika prepoznaje se po karakterističnom prasku.",
       "odgovori": [
         "Zapaljena šibica izazove karakterističan „pucanj“",
-        "Voda promeni boju",
-        "Supstanca zamiriše",
-        "Ništa se ne vidi"
+        "Voda promeni boju kad se doda u epruvetu",
+        "Supstanca zamiriše na trulež ili kiselinu",
+        "Ništa se ne vidi, pa je epruveta prazna"
       ]
     },
     {
@@ -6259,9 +6254,9 @@
       "zanimljivost": "Automobil na vodonik iz auspuha ispušta samo vodu.",
       "odgovori": [
         "U gorivnim ćelijama automobila",
-        "U sijalicama",
-        "U frižiderima",
-        "U bojama"
+        "U sijalicama, za jače osvetljenje lampi",
+        "U frižiderima, za hlađenje hrane zimi",
+        "U bojama, za sjaj i boju na zidovima"
       ]
     },
     {
@@ -6457,27 +6452,27 @@
     {
       "lekcija": 30,
       "tezina": 3,
-      "pitanje": "Koji gas nastaje zagrevanjem kalijum-permanganata?",
-      "rec": "kiseonik",
-      "zanimljivost": "Kalijum-permanganat (hipermangan) zagrevanjem oslobađa kiseonik.",
+      "pitanje": "Koji gas nastaje u šampanjcu i gaziranoj vodi?",
+      "rec": "mehurići",
+      "zanimljivost": "Mehurići u gaziranoj vodi su ugljen-dioksid, koji pri otvaranju boce izlazi iz rastvora.",
       "odgovori": [
+        "Ugljen-dioksid",
         "Kiseonik",
-        "Vodonik",
-        "Hlor",
-        "Azot"
+        "Azot",
+        "Vodonik"
       ]
     },
     {
       "lekcija": 30,
       "tezina": 2,
-      "pitanje": "Koji gas udišemo iz vazduha?",
-      "rec": "kiseonik",
-      "zanimljivost": "Iako je azota više u vazduhu, za disanje nam je neophodan kiseonik.",
+      "pitanje": "Koji proces u živim bićima troši kiseonik i oslobađa ugljen-dioksid?",
+      "rec": "disanje",
+      "zanimljivost": "Fotosinteza radi obrnuto – biljke troše ugljen-dioksid i oslobađaju kiseonik.",
       "odgovori": [
-        "Kiseonik",
-        "Azot",
-        "Ugljen-dioksid",
-        "Vodonik"
+        "Disanje",
+        "Fotosinteza",
+        "Vrenje",
+        "Filtriranje"
       ]
     },
     {
@@ -6606,9 +6601,9 @@
       "zanimljivost": "Plavi lakmus-papir u kiselini pocrveni.",
       "odgovori": [
         "Lakmus (plavi papir pocrveni)",
-        "Termometar",
-        "Menzura",
-        "Vaga"
+        "Termometar, jer menja boju kad se zagreje",
+        "Menzura, jer pokazuje nivo kiseline u njoj",
+        "Vaga, jer se teži kiselina teže meri"
       ]
     },
     {
@@ -6835,14 +6830,14 @@
     {
       "lekcija": 32,
       "tezina": 1,
-      "pitanje": "Koji pH ima čista (destilovana) voda?",
-      "rec": "voda",
-      "zanimljivost": "Čista voda je neutralna – pH 7.",
+      "pitanje": "Koja od navedenih tečnosti ima najniži pH?",
+      "rec": "kiselina",
+      "zanimljivost": "Što je pH manji, to je rastvor kiseliji.",
       "odgovori": [
-        "7",
-        "0",
-        "14",
-        "1"
+        "Sumporna kiselina u akumulatoru",
+        "Limunov sok",
+        "Čista voda",
+        "Rastvor sode bikarbone"
       ]
     },
     {
@@ -6902,7 +6897,7 @@
       "tezina": 2,
       "pitanje": "Kako se zove reakcija kiseline i baze?",
       "rec": "neutralan",
-      "zanimljivost": "Pri neutralizaciji rastvor postaje neutralan (pH 7).",
+      "zanimljivost": "Ako su kiselina i baza u odnosu koji se potpuno poništi, rastvor postaje neutralan (pH 7).",
       "odgovori": [
         "Neutralizacija",
         "Oksidacija",
@@ -6931,9 +6926,9 @@
       "zanimljivost": "Soli su jedinjenja metala i kiselinskog ostatka (npr. NaCl).",
       "odgovori": [
         "Jedinjenje metala i kiselinskog ostatka",
-        "Svaka čvrsta supstanca",
-        "Samo kuhinjska so",
-        "Tečnost slanog ukusa"
+        "Svaka čvrsta supstanca koja se rastvara u vodi",
+        "Samo kuhinjska so, i to samo ona iz mora",
+        "Tečnost slanog ukusa koja se dobija iz mora"
       ]
     },
     {
@@ -6975,9 +6970,9 @@
       "zanimljivost": "Lekovi protiv gorušice su baze koje neutrališu želudačnu kiselinu.",
       "odgovori": [
         "Da neutrališe višak kiseline u želucu",
-        "Da ohladi želudac",
-        "Da doda još kiseline",
-        "Da promeni boju hrane"
+        "Da ohladi želudac posle obilnog jela",
+        "Da doda još kiseline, pa se bolje vari hrana",
+        "Da promeni boju hrane koju jedemo"
       ]
     },
     {
@@ -7183,9 +7178,9 @@
       "zanimljivost": "U prvom koraku se voda ostavi da se krupne čestice istalože, pa se filtrira.",
       "odgovori": [
         "Fizičkim postupcima – taloženjem i filtriranjem",
-        "Kuvanjem vode",
-        "Dodavanjem soli",
-        "Zamrzavanjem"
+        "Kuvanjem vode dok se sve nečistoće ne rastope",
+        "Dodavanjem soli koja vezuje pesak za dno",
+        "Zamrzavanjem vode na minus deset stepeni"
       ]
     },
     {
@@ -7208,10 +7203,10 @@
       "rec": "voda",
       "zanimljivost": "Od sve vode na Zemlji, samo je mali deo slatka i dostupna za piće.",
       "odgovori": [
-        "Samo oko 3% vode na Zemlji je slatka, i to neravnomerno raspoređena",
-        "Vode ima beskonačno",
+        "Samo oko 3% vode na Zemlji je slatka",
+        "Vode ima beskonačno, pa je nikad neće nedostajati",
         "Slana voda se ne može piti samo zato što je hladna",
-        "Voda se ne može zagaditi"
+        "Voda se ne može zagaditi, jer se sama očisti"
       ]
     },
     {
@@ -7222,9 +7217,9 @@
       "zanimljivost": "Destilovana voda je čista H₂O bez minerala, a pijaća voda sadrži rastvorene mineralne soli.",
       "odgovori": [
         "Destilovana voda nema rastvorenih minerala",
-        "Pijaća voda nema minerala",
-        "Destilovana voda je slana",
-        "Nema razlike"
+        "Pijaća voda nema minerala, pa je zato bolja",
+        "Destilovana voda je slana, jer sadrži soli",
+        "Nema razlike, jer obe sadrže iste minerale"
       ]
     },
     {
@@ -7235,9 +7230,9 @@
       "zanimljivost": "Dodavanjem rastvarača ista količina supstance se rasporedi u više rastvora, pa udeo opadne.",
       "odgovori": [
         "Smanjuje se – rastvor se razblažuje",
-        "Povećava se",
-        "Ostaje isti",
-        "Postaje 100%"
+        "Povećava se, jer voda dodaje supstancu",
+        "Ostaje isti, jer se voda ne računa",
+        "Postaje 100%, jer se sva voda pretvara u supstancu"
       ]
     },
     {
@@ -7248,9 +7243,9 @@
       "zanimljivost": "Isparavanjem rastvarača raste udeo rastvorene supstance u rastvoru.",
       "odgovori": [
         "Povećava se – rastvor se koncentruje",
-        "Smanjuje se",
-        "Ostaje isti",
-        "Postaje 0%"
+        "Smanjuje se, jer voda odlazi iz rastvora",
+        "Ostaje isti, jer se voda samo preseli",
+        "Postaje 0%, jer nema više rastvarača"
       ]
     },
     {
@@ -7261,9 +7256,9 @@
       "zanimljivost": "Koncentrovanje se postiže dodavanjem supstance ili isparavanjem rastvarača.",
       "odgovori": [
         "Povećati maseni udeo rastvorene supstance",
-        "Dodati još vode",
-        "Ohladiti rastvor",
-        "Promeniti boju rastvora"
+        "Dodati još vode da se rastvor razblaži",
+        "Ohladiti rastvor da se supstanca izdvoji",
+        "Promeniti boju rastvora dodavanjem boje"
       ]
     },
     {

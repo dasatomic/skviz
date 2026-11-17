@@ -60,7 +60,7 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, pr, polja, kuglica }) => {
     grana([0, 4], [-2, 2]); grana([0, 4], [2, 2]); grana([-2, 2], [-3, 0]); grana([-2, 2], [-1, 0]); grana([2, 2], [1, 0]); grana([2, 2], [3, 0]);
     cvor('60', 0, 4); cvor('6', -2, 2); cvor('10', 2, 2); cvor('2', -3, 0, 2); cvor('3', -1, 0, 2); cvor('2', 1, 0, 2); cvor('5', 3, 0, 2);
     proveri(2 * 2 * 3 * 5 === 60, '60');
-    Q(2, 'Kako se broj 60 rastavlja na proste činioce?', ['$2^{2} · 3 · 5$', '$2 · 3 · 10$', '$2^{3} · 3 · 5$', '$4 · 3 · 5$'],
+    Q(2, 'Kako se broj 60 rastavlja na proste činioce?', ['$2^{2} · 3 · 5$', '$2 · 3 · 10$', '$2^{3} · 3 · 5$', '$2 · 3^{2} · 5$'],
       'Svaki prirodan broj veći od 1 rastavlja se na proste činioce na samo jedan način (do na redosled) – to je osnovni stav aritmetike. Drvo može da krene i od 60 = 4 · 15 ili 60 = 2 · 30, ali na kraju uvek ostaju isti listovi: 2, 2, 3 i 5.',
       'činilac', { medijiOdgovora: G({ O: [0, 0] }, e, { bezImena: ['O'], velicina: 240 }) });
   }

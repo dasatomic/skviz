@@ -149,14 +149,14 @@
   {
    "lekcija": 1,
    "tezina": 1,
-   "pitanje": "Šta je prema udžbeniku jezik?",
+   "pitanje": "Čemu služi jezik?",
    "odgovori": [
-    "Organizovan sistem gramatičkih i pravopisnih pravila",
-    "Skup svih reči koje su zapisane u rečniku",
-    "Spisak svih slova koja čine azbuku jezika",
-    "Skup svih rečenica izgovorenih na času"
+    "Sporazumevanju među ljudima",
+    "Ukrašavanju knjiga",
+    "Pravljenju rečnika",
+    "Merenju vremena"
    ],
-   "zanimljivost": "Jezik služi za sporazumevanje – govorom i pisanjem. Dobro ga poznaje onaj ko zna kako se glasovi spajaju u reči, a reči u rečenice.",
+   "zanimljivost": "Jezik se stalno menja: reči nastaju, nestaju i menjaju značenje, pa rečnici nikad nisu gotovi.",
    "rec": "jezik"
   },
   {
@@ -405,7 +405,7 @@
     "Mnoštvo bića ili predmeta u zbiru",
     "Materiju od koje se nešto pravi"
    ],
-   "zanimljivost": "Sreća, hrabrost, mudrost, mrak, duga – ne možeš ih dodirnuti, nego ih zamišljaš ili osećaš.",
+   "zanimljivost": "Sreća, hrabrost, mudrost, mrak, ljubav – ne možeš ih dodirnuti, nego ih zamišljaš ili osećaš.",
    "rec": "misaona"
   },
   {
@@ -543,15 +543,15 @@
   {
    "lekcija": 3,
    "tezina": 1,
-   "pitanje": "Koliko padeža ima srpski jezik?",
+   "pitanje": "Koji padež je „Ana“ u rečenici „Ana čita knjigu“?",
    "odgovori": [
-    "Sedam",
-    "Pet",
-    "Šest",
-    "Osam"
+    "Nominativ",
+    "Genitiv",
+    "Dativ",
+    "Vokativ"
    ],
-   "zanimljivost": "Mnogi evropski jezici (engleski, francuski, italijanski) nemaju padežne nastavke, već koriste predloge i red reči. U srpskom se značenje vidi na kraju reči.",
-   "rec": "padež"
+   "zanimljivost": "Ana je subjekat, a subjekat stoji u nominativu. Vokativ služi za obraćanje: „Ana, čitaj!“",
+   "rec": "nominativ"
   },
   {
    "lekcija": 3,
@@ -1483,15 +1483,15 @@
   {
    "lekcija": 7,
    "tezina": 3,
-   "pitanje": "Koje reči se pišu velikim slovom u nazivu „Fudbalski klub Crvena zvezda“?",
+   "pitanje": "Koji naziv je pravilno napisan?",
    "odgovori": [
-    "Fudbalski i Crvena",
-    "Sve četiri reči",
-    "Crvena i Zvezda",
-    "Samo Fudbalski"
+    "Narodna biblioteka Srbije",
+    "Narodna biblioteka Srbija",
+    "Narodna biblioteka Srbiji",
+    "Narodna biblioteka Srbiju"
    ],
-   "zanimljivost": "Ime kluba je „Crvena zvezda“ – prva reč ima veliko slovo, ostale po pravilu malo. Isto: Fudbalski klub Partizan.",
-   "rec": "klub"
+   "zanimljivost": "Vlastito ime Srbija u genitivu piše se velikim slovom: „Narodna biblioteka Srbije“. Ostale reči u nazivu ustanove pišu se malim slovom.",
+   "rec": "biblioteka"
   },
   {
    "lekcija": 7,
@@ -1721,7 +1721,7 @@
   {
    "lekcija": 8,
    "tezina": 3,
-   "pitanje": "Kako se naziva pridev kao književnoumetnički pojam (na primer „bijelo lice“)?",
+   "pitanje": "Kako se naziva pridev kao književnoumetnički pojam (na primer „belo lice“)?",
    "odgovori": [
     "Epitet",
     "Metafora",
@@ -1804,7 +1804,7 @@
     "Pozitiv, komparativ, superlativ",
     "Pozitiv, negativ, superlativ",
     "Komparativ, superlativ, elativ",
-    "Pozitiv, deminutiv, augmentativ"
+    "Komparativ, superlativ, vokativ"
    ],
    "zanimljivost": "Pozitiv je osobina pojma (skupa knjiga), komparativ izraženija osobina (skuplja), a superlativ najizraženija (najskuplja).",
    "rec": "komparacija"
@@ -1988,7 +1988,7 @@
     "težji",
     "težeji"
    ],
-   "zanimljivost": "Tvrđi, teži, mlađi, kraći – u komparativu se glas menja (jotovanje), pa pridev ne dobija običan nastavak -iji.",
+   "zanimljivost": "U komparativu se glas menja: tvrd → tvrđi, mlad → mlađi (jotovanje), težak → teži (k prelazi u ž), pa pridev ne dobija običan nastavak -iji.",
    "rec": "komparativ"
   },
   {
@@ -2219,7 +2219,7 @@
    "odgovori": [
     "Otputovao sam na more.",
     "Ja sam otputovao na more.",
-    "Ja otputovao na more.",
+    "Ja sam, eto, otputovao.",
     "Evo ja sam otputovao."
    ],
    "zanimljivost": "U srpskom se iz oblika glagola vidi ko je vršilac radnje, pa lična zamenica u službi subjekta najčešće nije potrebna.",
@@ -2691,7 +2691,7 @@
    "odgovori": [
     "Ne kazuje lice, vreme ni način radnje",
     "Ne postoji u pisanom jeziku nijedne vrste",
-    "Ne menja se po padežima ni po rodovima",
+    "Uvek se piše pod navodnicima",
     "Koristi se samo u poeziji i pesmama"
    ],
    "zanimljivost": "Lični oblici (prezent, perfekat, futur) kazuju lice i broj i mogu biti predikat. Infinitiv sam ne može biti predikat, ali može biti njegov deo: „Moram učiti.“",
@@ -2791,14 +2791,14 @@
   {
    "lekcija": 13,
    "tezina": 3,
-   "pitanje": "Koji pomoćni glagol nema infinitiv i upotrebljava se samo u prezentu?",
+   "pitanje": "Koji pomoćni glagol nema infinitiv?",
    "odgovori": [
     "jesam",
     "biti",
     "hteti",
     "moći"
    ],
-   "zanimljivost": "Glagol jesam ima duže (naglašene) i kraće (nenaglašene) oblike. Glagol hteti isto, a „biti“ ima samo duge, naglašene oblike.",
+   "zanimljivost": "Jesam nema infinitiv. Ima duže (naglašene) i kraće (nenaglašene) oblike, kao i hteti (hoću – ću). Biti ima samo duge, naglašene oblike.",
    "rec": "jesam"
   },
   {
@@ -2928,7 +2928,7 @@
     "Perfekat u trećem licu množine",
     "Perfekat povratnih glagola"
    ],
-   "zanimljivost": "Krnji perfekat daje živost: „Gonio Ero lonce na kobili, pa ga pitali…“ (narodna pitalica) ili „Oštar mraz spalio zeleno lišće“ (Vojislav Ilić).",
+   "zanimljivost": "Krnji perfekat daje živost pripovedanju: „Ušao u kuću, sve pregledao, pa izašao.“",
    "rec": "krnji"
   },
   {
@@ -3025,15 +3025,15 @@
   {
    "lekcija": 14,
    "tezina": 2,
-   "pitanje": "Koji zapis futura je pravilan?",
+   "pitanje": "Kako se pravilno piše upitna veza „da li“?",
    "odgovori": [
-    "pisaću",
-    "pisati ću",
-    "pisa ću",
-    "pisatiću"
+    "Odvojeno: da li",
+    "Spojeno: dali",
+    "Sa crticom: da-li",
+    "Sa zapetom: da, li"
    ],
-   "zanimljivost": "Kod glagola na -ti i -sti pomoćni glagol hteti stoji uvek ispred infinitiva (ću pisati) ili se piše spojeno (pisaću). Pogrešno: „pisati ću“.",
-   "rec": "futur"
+   "zanimljivost": "Upitna veza „da li“ piše se odvojeno. Rečca „li“ ovde pravi pitanje.",
+   "rec": "rečca"
   },
   {
    "lekcija": 14,
@@ -3330,14 +3330,14 @@
   {
    "lekcija": 16,
    "tezina": 1,
-   "pitanje": "Šta određuje broj predikatskih rečenica?",
+   "pitanje": "Šta je predikatska rečenica?",
    "odgovori": [
-    "Broj predikata",
-    "Broj subjekata",
-    "Broj zapeta",
-    "Broj imenica"
+    "Rečenica koja ima predikat (glagol u ličnom obliku)",
+    "Rečenica koja se sastoji samo od imenica",
+    "Rečenica bez glagola koja izražava osećanje",
+    "Rečenica koja se završava upitnikom"
    ],
-   "zanimljivost": "Rečenica sa jednim predikatom je predikatska rečenica: „Sanjam.“ „Mara doručkuje.“ „Ivan nosi loptu.“",
+   "zanimljivost": "Predikatska rečenica ima glagolski predikat: „Sanjam.“, „Mara doručkuje.“ Rečenice bez predikata, npr. „Lepo!“ ili „Požar!“, su komunikativne.",
    "rec": "predikat"
   },
   {
@@ -3658,16 +3658,16 @@
   },
   {
    "lekcija": 17,
-   "tezina": 3,
-   "pitanje": "Koju službu ima reč „danima“ u rečenici „Učim danima“?",
+   "tezina": 2,
+   "pitanje": "Koju službu u rečenici ima „kod kuće“ u rečenici „Radim kod kuće“?",
    "odgovori": [
-    "Priloška odredba za meru",
-    "Priloška odredba za vreme",
     "Priloška odredba za mesto",
+    "Priloška odredba za vreme",
+    "Priloška odredba za način",
     "Atribut"
    ],
-   "zanimljivost": "Pitanje je KOLIKO DUGO učim – danima (mera). Kad bi bilo „Učim subotom“, pitanje je KADA učim, pa je to vreme.",
-   "rec": "mera"
+   "zanimljivost": "Pitanje je GDE radim? – kod kuće.",
+   "rec": "mesto"
   },
   {
    "lekcija": 17,
@@ -3744,7 +3744,7 @@
     "Podizanje glasa",
     "Šapat"
    ],
-   "zanimljivost": "Duža pauza odgovara tački. U pisanju, bez znakova interpunkcije i razmaka tekst bi se pretvorio u jednu dugu reč – kao nekad, kad se zbog nedostatka materijala pisalo bez razmaka.",
+   "zanimljivost": "Duža pauza odgovara tački. Tekst bez znakova i razmaka, kao u starim rukopisima, bio bi mnogo teži za čitanje.",
    "rec": "pauza"
   },
   {
@@ -3887,7 +3887,7 @@
     "Kod naslova književnih dela",
     "Kod direktnog govora u romanu",
     "Kod dijaloga u priči",
-    "Kod izgovorene replike u drami"
+    "Kod replike junaka u pripovetki"
    ],
    "zanimljivost": "Naslov mora biti pod navodnicima: roman „Agi i Ema“.",
    "rec": "crta"
@@ -3947,14 +3947,14 @@
   {
    "lekcija": 19,
    "tezina": 1,
-   "pitanje": "Na kom slogu višesložne reči akcenat NE može stajati?",
+   "pitanje": "Koja reč ima akcenat na drugom slogu?",
    "odgovori": [
-    "Na poslednjem",
-    "Na prvom",
-    "Na drugom",
-    "Na pretposlednjem"
+    "zanimljiv",
+    "dvorac",
+    "čokolada",
+    "knjiga"
    ],
-   "zanimljivost": "U reči sa dva ili više slogova akcenat može biti na bilo kom slogu osim poslednjeg.",
+   "zanimljivost": "U reči „dvorac“ akcenat je na prvom slogu, u „čokolada“ na trećem, a u „zanimljiv“ na drugom.",
    "rec": "slog"
   },
   {
@@ -4025,14 +4025,14 @@
   {
    "lekcija": 19,
    "tezina": 1,
-   "pitanje": "Kakav je ton upitne rečenice „Ko dolazi danas?“",
+   "pitanje": "Kakav je ton obaveštajne rečenice „Danas dolaze Višnja i Filip.“?",
    "odgovori": [
-    "Uzlazni",
     "Silazni",
-    "Isti kao kod obaveštenja",
-    "Šapat"
+    "Uzlazni",
+    "Ravan, bez promene",
+    "Naizmenično uzlazni i silazni"
    ],
-   "zanimljivost": "Kad pitamo, ton raste. Kad obaveštavamo („Danas dolaze Višnja i Filip.“), ton pada – silazni je.",
+   "zanimljivost": "Obaveštenje se završava silaznim tonom, a pitanje bez upitne reči („Dolaziš li?“) uzlaznim.",
    "rec": "ton"
   },
   {
@@ -4196,7 +4196,7 @@
   {
    "lekcija": 20,
    "tezina": 2,
-   "pitanje": "Koji naziv se koristi za opisivanje (drugo ime)?",
+   "pitanje": "Kako se u književnosti zove opisivanje ljudi, mesta i predmeta?",
    "odgovori": [
     "Deskripcija",
     "Naracija",
@@ -4404,27 +4404,27 @@
   {
    "lekcija": 21,
    "tezina": 1,
-   "pitanje": "Šta su antonimi?",
+   "pitanje": "Šta su homonimi?",
    "odgovori": [
+    "Reči istog oblika, a različitog značenja",
     "Reči suprotnog značenja",
     "Reči istog značenja",
-    "Reči stranog porekla",
-    "Reči iz narodnog govora"
+    "Reči stranog porekla"
    ],
-   "zanimljivost": "Primeri: bogatstvo – siromaštvo, bela – crna, proširiti – suziti, levo – desno.",
-   "rec": "antonim"
+   "zanimljivost": "Primeri: kosa (na glavi) i kosa (za košenje).",
+   "rec": "homonim"
   },
   {
    "lekcija": 21,
    "tezina": 2,
-   "pitanje": "Koji je antonim reči „poštenje“?",
+   "pitanje": "Koji je antonim reči „hrabar“?",
    "odgovori": [
-    "nepoštenje",
-    "pravda",
-    "iskrenost",
-    "nesreća"
+    "plašljiv",
+    "pametan",
+    "vredan",
+    "jak"
    ],
-   "zanimljivost": "Antonim se može dobiti i dodavanjem „ne“: iskren – neiskren, poštenje – nepoštenje. „Ne“ se uz imenice i prideve piše spojeno.",
+   "zanimljivost": "Antonim nastaje i dodavanjem „ne“ (iskren – neiskren), ali „hrabar“ i „plašljiv“ su dve različite reči suprotnog značenja.",
    "rec": "antonim"
   },
   {

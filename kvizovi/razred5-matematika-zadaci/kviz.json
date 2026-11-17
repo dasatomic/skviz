@@ -1668,7 +1668,7 @@
   {
    "lekcija": 2,
    "tezina": 1,
-   "pitanje": "$23$ kolača treba rasporediti na tacne po $5$. Koliko tacni će biti puno i koliko kolača ostaje?",
+   "pitanje": "$23$ kolača treba rasporediti na tacne po $5$. Koliko će se punih tacni dobiti i koliko kolača ostaje?",
    "odgovori": [
     "$4$ tacne, ostaje $3$",
     "$5$ tacni, ostaje $2$",
@@ -7683,7 +7683,7 @@
   {
    "lekcija": 3,
    "tezina": 1,
-   "pitanje": "Koji je treći po veličini sadržalac broja $17$?",
+   "pitanje": "Koji je treći najmanji pozitivan sadržalac broja $17$?",
    "odgovori": [
     "$51$",
     "$34$",
@@ -7968,7 +7968,7 @@
   {
    "lekcija": 3,
    "tezina": 2,
-   "pitanje": "Površina pravougaonika je $18 cm²$, a dužine stranica (u $cm$) su prirodni brojevi. Koliko ima različitih takvih pravougaonika?",
+   "pitanje": "Površina pravougaonika je $18 cm²$, a dužine stranica (u $cm$) su prirodni brojevi. Koliko ima različitih takvih pravougaonika (pravougaonik okrenut za $90°$ ne broji se kao novi)?",
    "odgovori": [
     "$3$",
     "$6$",
@@ -9629,7 +9629,7 @@
     "jeste, jer je $34$ deljiv sa $17$",
     "nije, jer $51$ nije deljiv sa $17$",
     "jeste, ali samo zato što je $51$ neparan",
-    "ne može se znati bez računanja proizvoda"
+    "nije, jer je proizvod paran"
    ],
    "resenje": [
     {
@@ -9667,7 +9667,7 @@
     "$b$ je sigurno deljiv sa $7$",
     "$b$ sigurno nije deljiv sa $7$",
     "$b$ je deljiv sa $7$ samo ako je paran",
-    "ne može se odrediti"
+    "$b$ je sigurno deljiv sa $14$"
    ],
    "resenje": [
     {
@@ -10076,7 +10076,7 @@
     "$425$, $730$ i $975$",
     "$975$ i $880$"
    ],
-   "mediji": {
+   "resenjeCrtez": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -12565,10 +12565,10 @@
      "t": "Obim kvadrata je $4a$ – mora biti deljiv sa $4$."
     },
     {
-     "t": "$96 : 4 = 24$ ✓; $98$, $21$ i $46$ nisu deljivi sa $4$."
+     "t": "$196 : 4 = 49$ ✓; $198$, $121$ i $146$ nisu deljivi sa $4$."
     },
     {
-     "t": "$196 : 4 = 49$, pa je stranica $49 cm$."
+     "t": "Stranica je $49 cm$."
     }
    ]
   },
@@ -12623,7 +12623,7 @@
     "$54$",
     "$50$"
    ],
-   "mediji": {
+   "resenjeCrtez": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -13482,7 +13482,7 @@
    "odgovori": [
     "$123$ i $126$",
     "samo $126$",
-    "$123$, $126$ i $129$",
+    "$123$, $125$ i $126$",
     "$124$ i $127$"
    ],
    "mediji": {
@@ -13883,9 +13883,9 @@
    "pitanje": "Zašto broj $10^{n}$ (npr. $100$, $1 000$) uvek daje ostatak $1$ pri deljenju sa $9$?",
    "odgovori": [
     "jer je $10^{n} − 1 = 99…9$ deljiv sa $9$",
-    "jer je $10$ deljiv sa $9$",
-    "jer je zbir cifara $0$",
-    "jer je $10^{n}$ paran"
+    "jer je $10^{n}$ deljivo sa $9$ bez ostatka",
+    "jer je zbir cifara broja $10^{n}$ jednak nuli",
+    "jer je $10^{n}$ paran, a parni brojevi daju ostatak $1$"
    ],
    "resenje": [
     {
@@ -14696,7 +14696,7 @@
     "$A = B$",
     "nijedan nije podskup drugog"
    ],
-   "mediji": {
+   "resenjeCrtez": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -15729,7 +15729,7 @@
     "$\\{1, 2\\}$",
     "$\\{5, 7, 9\\}$"
    ],
-   "mediji": {
+   "resenjeCrtez": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -16574,7 +16574,7 @@
     "$1$",
     "$2$"
    ],
-   "mediji": {
+   "resenjeCrtez": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -18010,7 +18010,7 @@
     "$\\{6\\}$",
     "$\\{2, 3, 4, 8, 9\\}$"
    ],
-   "mediji": {
+   "resenjeCrtez": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -18937,14 +18937,14 @@
   {
    "lekcija": 8,
    "tezina": 2,
-   "pitanje": "Na Venovom dijagramu su prikazani skupovi $A$ i $B$. Koliko elemenata ima $B \\ A$?",
+   "pitanje": "Skupovi su $A = \\{2, 4, 6, 8, 12\\}$ i $B = \\{3, 6, 10, 12, 15\\}$. Koliko elemenata ima $B \\ A$?",
    "odgovori": [
     "$3$",
     "$2$",
     "$5$",
     "$4$"
    ],
-   "mediji": {
+   "resenjeCrtez": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -19892,7 +19892,7 @@
     "$3$",
     "$8$"
    ],
-   "mediji": {
+   "resenjeCrtez": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -20525,7 +20525,7 @@
     "$\\{6, 12\\}$",
     "$\\{2, 3, 6, 12, 18\\}$"
    ],
-   "mediji": {
+   "resenjeCrtez": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -22212,7 +22212,7 @@
     "$7$",
     "$1$"
    ],
-   "mediji": {
+   "resenjeCrtez": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -24285,7 +24285,7 @@
      "t": "Trougao je određen izborom $3$ tačke od $5$."
     },
     {
-     "t": "Isto je kao izabrati $2$ tačke koje NISU temena – a parova ima koliko i duži: $10$."
+     "t": "Svaki izbor $3$ tačke od $5$ ostavlja $2$ tačke van trougla, a takvih parova ima $10$."
     },
     {
      "t": "Dakle trouglova ima $10$."
@@ -24690,7 +24690,7 @@
     "$c$ seče i $b$",
     "$c$ je paralelna sa $b$",
     "$c$ i $b$ se poklapaju",
-    "ne može se odrediti"
+    "$c$ je normalna na $b$"
    ],
    "mediji": {
     "vrsta": "geo",
@@ -24787,7 +24787,7 @@
     "paralelne",
     "normalne",
     "seku se pod uglom od $45°$",
-    "ne može se odrediti"
+    "poklapaju se"
    ],
    "mediji": {
     "vrsta": "geo",
@@ -25596,7 +25596,7 @@
   {
    "lekcija": 10,
    "tezina": 3,
-   "pitanje": "Tri prave su međusobno paralelne, a još dve prave se seku i nisu paralelne ni sa jednom od njih. Koliko ukupno ima presečnih tačaka?",
+   "pitanje": "Tri prave su međusobno paralelne, a još dve prave, koje nisu paralelne ni sa jednom od njih, seku se u tački koja ne pripada nijednoj od paralelnih. Koliko ukupno ima presečnih tačaka?",
    "odgovori": [
     "$7$",
     "$6$",
@@ -25694,7 +25694,7 @@
      "t": "Svaka od $2$ „kose“ prave seče svaku od $3$ paralelne: $2 · 3 = 6$ tačaka."
     },
     {
-     "t": "I dve kose prave se seku međusobno: još $1$. Ukupno $7$ (ako se ne seku baš na nekoj od paralela)."
+     "t": "I dve kose prave se seku međusobno: još $1$. Ukupno $7$."
     }
    ]
   },
@@ -28649,7 +28649,7 @@
   {
    "lekcija": 13,
    "tezina": 2,
-   "pitanje": "Četiri jednaka kvadrata obima $36 cm$ složena su u niz, jedan do drugog. Koliki je obim dobijenog pravougaonika?",
+   "pitanje": "Četiri jednaka kvadrata, svaki obima $36 cm$, složena su u niz, jedan do drugog. Koliki je obim dobijenog pravougaonika?",
    "odgovori": [
     "$90 cm$",
     "$144 cm$",
@@ -29327,10 +29327,10 @@
   {
    "lekcija": 14,
    "tezina": 2,
-   "pitanje": "Na kružnici su označene tri tačke $A$, $B$, $C$. Koliko lukova (sa krajevima u ovim tačkama) one određuju?",
+   "pitanje": "Na kružnici su označene tri tačke $A$, $B$, $C$. Tri tačke dele kružnicu na lukove. Koliko ima lukova čiji su krajevi u ovim tačkama i koji ne sadrže treću tačku?",
    "odgovori": [
-    "$6$",
     "$3$",
+    "$6$",
     "$9$",
     "$4$"
    ],
@@ -29394,10 +29394,10 @@
    },
    "resenje": [
     {
-     "t": "Svaki par tačaka deli kružnicu na dva luka – kraći i duži."
+     "t": "Tri tačke dele kružnicu na tri luka – između svake dve susedne tačke."
     },
     {
-     "t": "Parova je $3$ ($AB$, $BC$, $CA$), pa lukova ima $3 · 2 = 6$.",
+     "t": "Parova je $3$ ($AB$, $BC$, $CA$), a svaki par određuje jedan luk bez treće tačke: ukupno $3$. (Da su se brojali i lukovi koji prolaze kroz treću tačku, bilo bi ih $6$.)",
      "i": [
       "l"
      ]
@@ -35688,19 +35688,19 @@
   {
    "lekcija": 18,
    "tezina": 1,
-   "pitanje": "Snežana je $91$ salvetu podelila drugaricama, svakoj jednako (više od jedne, a ima više od jedne drugarice). Koliko salveta je dobila svaka?",
+   "pitanje": "Snežana je $91$ salvetu podelila drugaricama, svakoj jednako, više od $10$ salveta, a drugarica je bilo više od jedne. Koliko salveta je dobila svaka?",
    "odgovori": [
-    "$7$ ili $13$",
-    "samo $7$",
-    "samo $13$",
-    "$91$"
+    "$13$",
+    "$7$",
+    "$91$",
+    "$26$"
    ],
    "resenje": [
     {
-     "t": "Broj drugarica i broj salveta po drugarici su činioci broja $91$, oba veća od $1$."
+     "t": "Broj drugarica i broj salveta po drugarici su činioci broja $91$, a oba su veća od $1$."
     },
     {
-     "t": "$91 = 7 · 13$ – i $7$ i $13$ su prosti. Dakle: $7$ drugarica po $13$ salveta, ili $13$ drugarica po $7$."
+     "t": "$91 = 7 · 13$. Ako su salvete po drugarici više od $10$, to je $13$ salveta (a drugarica ima $7$). Druga mogućnost, $13$ drugarica po $7$ salveta, otpada."
     }
    ]
   },
@@ -38471,22 +38471,22 @@
   {
    "lekcija": 20,
    "tezina": 3,
-   "pitanje": "Koji je najmanji prirodan broj koji pri deljenju sa $16$ i sa $24$ daje ostatak $3$?",
+   "pitanje": "Koji je najmanji trocifreni prirodan broj koji pri deljenju sa $16$ i sa $24$ daje ostatak $3$?",
    "odgovori": [
+    "$147$",
     "$51$",
-    "$48$",
-    "$387$",
-    "$27$"
+    "$99$",
+    "$387$"
    ],
    "resenje": [
     {
-     "t": "Broj umanjen za $3$ je deljiv i sa $16$ i sa $24$ – sadržalac je $NZS(16, 24)$."
+     "t": "Broj umanjen za $3$ je deljiv i sa $16$ i sa $24$, pa je sadržalac $NZS(16, 24) = 48$."
     },
     {
-     "t": "$NZS(16, 24) = 48$, pa je traženi broj $48 + 3 = 51$."
+     "t": "Brojevi $3$, $51$ i $99$ nisu trocifreni, pa je traženi broj $48 · 3 + 3 = 147$."
     },
     {
-     "t": "Provera: $51 = 16 · 3 + 3 = 24 · 2 + 3$ ✓"
+     "t": "Provera: $147 = 16 · 9 + 3 = 24 · 6 + 3$ ✓"
     }
    ]
   },
@@ -41175,7 +41175,7 @@
     "$17$",
     "$12$"
    ],
-   "mediji": {
+   "resenjeCrtez": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -44814,7 +44814,7 @@
   {
    "lekcija": 22,
    "tezina": 3,
-   "pitanje": "Na polupravoj podeljenoj na šestine, koliko podeoka ima između tačaka ${1|2}$ i ${5|3}$?",
+   "pitanje": "Na polupravoj podeljenoj na šestine, za koliko šestina je tačka ${5|3}$ dalja od tačke ${1|2}$?",
    "odgovori": [
     "$7$",
     "$4$",
@@ -47968,7 +47968,7 @@
     "drugi",
     "prvi",
     "jednako su uradili",
-    "ne može se odrediti"
+    "prvi, za ${1|24}$ posla"
    ],
    "resenje": [
     {
@@ -48244,7 +48244,7 @@
     "${75|10}$",
     "${1|75}$"
    ],
-   "mediji": {
+   "resenjeCrtez": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -51069,7 +51069,7 @@
     "$7,2$",
     "$0,7$"
    ],
-   "mediji": {
+   "resenjeCrtez": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -54482,7 +54482,7 @@
    ],
    "resenje": [
     {
-     "t": "To su $3,41; 3,42; …; 3,49$ (bez $3,40$ i $3,50$ – oni imaju jednu decimalu, a i granice nisu uključene)."
+     "t": "To su $3,41; 3,42; …; 3,49$ (bez $3,40$ i $3,50$, jer granice nisu uključene)."
     },
     {
      "t": "Ukupno $9$ brojeva."
@@ -59652,7 +59652,7 @@
      ]
     },
     {
-     "t": "Ta dva ugla i ugao unakrsni uglu kod $C$ zajedno čine opružen ugao: zbir uglova trougla je $180°$."
+     "t": "Ta dva ugla i ugao kod $C$ zajedno čine opružen ugao: zbir uglova trougla je $180°$."
     },
     {
      "t": "$180° − 50° − 60° = 70°$."
@@ -60693,9 +60693,9 @@
    "pitanje": "Kakav ugao zaklapaju kazaljke sata u $4$ sata?",
    "odgovori": [
     "tup ($120°$)",
-    "oštar ($40°$)",
+    "oštar ($60°$)",
     "prav",
-    "tup ($100°$)"
+    "opružen ($180°$)"
    ],
    "mediji": {
     "vrsta": "geo",
@@ -62104,7 +62104,7 @@
     "oštar ($70°$)",
     "prav",
     "tup ($110°$)",
-    "oštar ($30°$)"
+    "opružen ($180°$)"
    ],
    "resenje": [
     {
@@ -67450,7 +67450,7 @@
    },
    "resenje": [
     {
-     "t": "Translacijom za vektor $\\vec{PQ}$ prava $a$ prelazi u $b$, a $c$ ostaje na sebi."
+     "t": "Paralelnim pomeranjem (translacijom) prava $a$ prelazi u $b$, a $c$ ostaje na sebi."
     },
     {
      "t": "Ugao „klizi“ duž transverzale i poklopi se sa saglasnim uglom – saglasni uglovi su jednaki: $70°$.",
@@ -67580,7 +67580,7 @@
      "t": "Naizmenični uglovi su između paralelnih pravih, sa raznih strana transverzale."
     },
     {
-     "t": "Ugao kod $P$ je unakrsni sa uglom iznad prave $a$ (desno od $c$), a taj je saglasan sa uglom kod $Q$.",
+     "t": "Ugao kod $P$ (između $a$ i transverzale, levo) i ugao kod $Q$ (između $b$ i transverzale, desno) su naizmenični uglovi između paralelnih pravih.",
      "i": [
       "s"
      ]
@@ -67839,7 +67839,7 @@
     "paralelne su",
     "normalne su",
     "seku se",
-    "ne može se zaključiti"
+    "$a$ je normalna na $b$"
    ],
    "resenje": [
     {
@@ -67991,7 +67991,7 @@
   {
    "lekcija": 31,
    "tezina": 3,
-   "pitanje": "Suprotni uglovi na transverzali paralelnih pravih odnose se kao $2 : 3$. Koliki je veći?",
+   "pitanje": "Unutrašnji uglovi sa iste strane transverzale paralelnih pravih odnose se kao $2 : 3$. Koliki je veći?",
    "odgovori": [
     "$108°$",
     "$72°$",
@@ -68000,7 +68000,7 @@
    ],
    "resenje": [
     {
-     "t": "Suprotni uglovi imaju zbir $180°$; to je $2 + 3 = 5$ delova."
+     "t": "Ti uglovi imaju zbir $180°$; to je $2 + 3 = 5$ delova."
     },
     {
      "t": "Jedan deo: $36°$. Veći: $3 · 36° = 108°$."
@@ -75171,7 +75171,7 @@
   {
    "lekcija": 36,
    "tezina": 2,
-   "pitanje": "Lift nosi najviše $300 kg$, a u njemu je već $236,5 kg$. Koliko najviše može da ima još jedna osoba?",
+   "pitanje": "Lift nosi najviše $300 kg$, a u njemu je već $236,5 kg$. Koliko najviše može da teži još jedna osoba?",
    "odgovori": [
     "$63,5 kg$",
     "$64,5 kg$",
@@ -80181,7 +80181,7 @@
     "${1|10}$",
     "$7$"
    ],
-   "mediji": {
+   "resenjeCrtez": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -80695,7 +80695,7 @@
    "odgovori": [
     "${1|12}$",
     "${25|3}$",
-    "${50|6}$",
+    "${1|60}$",
     "${1|2}$"
    ],
    "resenje": [
@@ -80791,7 +80791,7 @@
     "$1$",
     "$0$",
     "${1|2}$",
-    "nijedan"
+    "$-1$"
    ],
    "resenje": [
     {
@@ -81209,7 +81209,7 @@
     "$x = {3|4}$",
     "$x = {27|64}$",
     "$x = {4|3}$",
-    "$x = {12|16}$"
+    "$x = {16|9}$"
    ],
    "mediji": {
     "vrsta": "geo",
@@ -81698,7 +81698,7 @@
     "$x = 8$",
     "$x = {9|2}$",
     "$x = {1|8}$",
-    "$x = 4{1|2}$"
+    "$x = 2{1|4}$"
    ],
    "resenje": [
     {
@@ -82853,7 +82853,7 @@
     "u samu sebe",
     "u tačku sa druge strane ose",
     "ne preslikava se",
-    "u presek ose i normale"
+    "u tačku van ose, na istoj normali"
    ],
    "resenje": [
     {
@@ -87983,7 +87983,7 @@
     "$5 cm$",
     "$10 cm$",
     "$2 cm 5 mm$",
-    "ne može se odrediti"
+    "$3 cm$"
    ],
    "mediji": {
     "vrsta": "geo",
@@ -88233,7 +88233,7 @@
     "$4 cm$",
     "$8 cm$",
     "$2 cm$",
-    "ne može se odrediti"
+    "$6 cm$"
    ],
    "mediji": {
     "vrsta": "geo",
@@ -88779,7 +88779,7 @@
     "$3 cm$",
     "$6 cm$",
     "$1 cm 5 mm$",
-    "ne može se odrediti"
+    "$4 cm$"
    ],
    "mediji": {
     "vrsta": "geo",
@@ -88913,7 +88913,7 @@
     "prav ($90°$)",
     "oštar ($45°$)",
     "opružen",
-    "zavisi od uglova"
+    "tup ($120°$)"
    ],
    "mediji": {
     "vrsta": "geo",
@@ -91990,7 +91990,7 @@
     "$0,75 %$",
     "$43 %$"
    ],
-   "mediji": {
+   "resenjeCrtez": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -94848,8 +94848,8 @@
    "odgovori": [
     "$2 : 3$",
     "$3 : 2$",
-    "$6 : 9$",
-    "$4 : 6$"
+    "$6 : 8$",
+    "$12 : 9$"
    ],
    "resenje": [
     {

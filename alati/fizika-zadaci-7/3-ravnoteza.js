@@ -75,7 +75,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera }) => {
     { crtez: G([{ lin: [[-2, 4], [2, 4]], b: 4, debljina: 4 }, { lin: [[0, 4], [0, 1]], b: 5, debljina: 2 }, T('💡', 0, 0.4, { vel: 40 }), F(0.7, 0.3, 0, -2, { o: 'Q = 20 N', b: 1 }), F(0.7, 1.2, 0, 2, { o: 'T = 20 N', b: 2, k: 1, id: 'n' })], { velicina: 180 }) });
 
   proveri((30 * g) / 2, 150);
-  Z(2, 'Dete mase $30 kg$ sedi na ljuljašci koja visi o dva uspravna lanca. Kolika sila zateže svaki lanac? ($g = 10 m/s^{2}$)',
+  Z(2, 'Dete mase $30 kg$ sedi u sredini ljuljaške koja visi o dva uspravna lanca. Kolika sila zateže svaki lanac? ($g = 10 m/s^{2}$)',
     ['$150 N$', '$300 N$', '$30 N$', '$15 N$'],
     [K('Težina deteta: $Q = 30 kg · 10 m/s^{2} = 300 N$.'),
      K('Dva lanca zajedno drže $300 N$; ako je dete na sredini, svaki drži pola: $150 N$.', ['l'])],
@@ -215,10 +215,10 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera }) => {
      K('$ρ = 750 kg/m^{3}$ (otprilike kao benzin).')],
     S('tecnost', { tip: 'dinamometar', F1: 10, F2: 7, tecnost: '~tečnost ?' }));
 
-  Z(1, 'Isto jaje potopimo jednom u običnu, a jednom u slanu vodu (gušću). Gde je sila potiska na potopljeno jaje veća?',
+  Z(1, 'Isto jaje držimo potpuno pod vodom: jednom u običnoj, a jednom u slanoj vodi (gušćoj). U kojoj je sila potiska na jaje veća?',
     ['U slanoj vodi', 'U običnoj vodi', 'Isto je u obe', 'Potisak ne zavisi od tečnosti'],
     [K('$F_{p} = ρ g V$: zapremina jajeta je ista, a slana voda ima veću gustinu.'),
-     K('Zato je potisak veći u slanoj vodi – jaje u dovoljno slanoj vodi čak ispliva.', [], S('tecnost', { tip: 'plivanje', tela: [{ ro: 1080, e: '🥚', b: 3 }], ro: 1100, tecnost: '~slana voda', sile: true }))]);
+     K('Zato je potisak veći u slanoj vodi. (Jaje koje tone u običnoj vodi u dovoljno slanoj vodi čak ispliva.)', [], S('tecnost', { tip: 'plivanje', tela: [{ ro: 1080, e: '🥚', b: 3 }], ro: 1100, tecnost: '~slana voda', sile: true }))]);
 
   proveri(1000 * g * 0.002, 20);
   Z(2, 'Lopta zapremine $4 dm^{3}$ pluta tako da je tačno polovina pod vodom. Kolika je sila potiska? ($g = 10 m/s^{2}$)',

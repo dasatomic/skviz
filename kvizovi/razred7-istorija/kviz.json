@@ -308,7 +308,7 @@
       ],
       "zanimljivost": "Reč „revolucija“ znači veliku, naglu i sveobuhvatnu promenu – ona može biti tehnička, politička, društvena…",
       "rec": "revolucija",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/pad-bastilje.jpg",
         "opis": "Zauzimanje Bastilje, 1789."
@@ -344,7 +344,7 @@
       ],
       "zanimljivost": "Naziv „lepa epoha“ (fr. la belle époque) nastao je u Francuskoj, tek posle Prvog svetskog rata – iz nostalgije za mirnim vremenima.",
       "rec": "epoha",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/pariz-1900.jpg",
         "opis": "Svetska izložba u Parizu 1900."
@@ -375,7 +375,7 @@
       ],
       "zanimljivost": "Mendeljejev je u svom sistemu ostavio prazna mesta za elemente koji tada još nisu bili otkriveni – i tačno predvideo njihove osobine.",
       "rec": "nauka",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/mendeljejev.jpg",
         "opis": "Dmitrij Mendeljejev"
@@ -425,9 +425,9 @@
         "Braća Rajt",
         "Braća Limijer",
         "Braća Grim",
-        "Braća Monglfje"
+        "Braća Montgolfije"
       ],
-      "zanimljivost": "Prvi let je trajao samo 12 sekundi i bio je kraći od 40 metara – kraći od raspona krila današnjih putničkih aviona.",
+      "zanimljivost": "Prvi let je trajao 12 sekundi i pređen je put od oko 37 metara – manje od dužine jednog Boinga 737.",
       "rec": "avion",
       "mediji": {
         "vrsta": "slika",
@@ -437,17 +437,17 @@
     },
     {
       "lekcija": 1,
-      "tezina": 3,
+      "tezina": 2,
       "pitanje": "Henri Besemer je osmislio postupak za bržu i jeftiniju proizvodnju čega?",
       "odgovori": [
         "Čelika",
+        "Bakra",
         "Stakla",
-        "Papira",
-        "Gume"
+        "Papira"
       ],
       "zanimljivost": "Pre Besemera čelik je bio skup, a posle njega su od čelika mogle da se prave šine, mostovi i brodovi.",
       "rec": "čelik",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/besemer-konvertor.jpg",
         "opis": "Besemerov konvertor"
@@ -467,11 +467,6 @@
       "objasnjenje": "Klod Mone je bio francuski slikar, jedan od osnivača impresionizma, a Tolstoj, Dostojevski i Man su pisci.",
       "zanimljivost": "Ime impresionizma potiče od Moneove slike „Impresija, izlazak sunca“ – kritičar je to mislio kao podsmeh.",
       "rec": "pisac",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/tolstoj.jpg",
-        "opis": "Lav Tolstoj"
-      },
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/mone-impresija.jpg",
@@ -502,9 +497,9 @@
       "pitanje": "Zašto istoričar mora biti oprezan kad koristi novine, dnevnike i memoare kao izvore?",
       "odgovori": [
         "Često su subjektivni i pristrasni",
-        "Pisani su na mrtvim jezicima",
-        "U njima nikada nema tačnih datuma",
-        "Uvek su potpuno izmišljeni od strane pisaca"
+        "Pisani su na stranim jezicima",
+        "Nastali su pre pojave štampe",
+        "Ne mogu se čuvati duže od veka"
       ],
       "zanimljivost": "Dva lista suprotnih političkih stavova mogu o istom događaju pisati potpuno različito – zato se izvori uvek upoređuju.",
       "rec": "novine",
@@ -526,7 +521,7 @@
       ],
       "zanimljivost": "Fotografije Džejmsa Robertsona i Rodžera Fentona nastale su 1855. – aparati su tada bili toliko spori da nisu mogli da snime borbu, samo prizore posle nje.",
       "rec": "fotograf",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/robertson-krim.jpg",
         "opis": "Fotografija Džejmsa Robertsona, 1855."
@@ -560,7 +555,7 @@
         "Od srebra iz Novog Brda",
         "Od gvožđa sa Smederevske tvrđave"
       ],
-      "zanimljivost": "To je jedina sačuvana kruna nekog srpskog vladara u našoj zemlji – čuva se u Istorijskom muzeju Srbije.",
+      "zanimljivost": "Bronza je potekla sa ručke Karađorđevog topa – tako je ustanički simbol ušao u krunu kralja. Čuva se u Istorijskom muzeju Srbije.",
       "rec": "kruna",
       "mediji": {
         "vrsta": "slika",
@@ -629,7 +624,7 @@
       ],
       "zanimljivost": "Prve mašine za predenje i tkanje mogle su da zamene desetine ručnih radnika – a jedan od izumitelja nazvao je svoju predilicu „Dženi“.",
       "rec": "tekstil",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/fabrika-tkanje.jpg",
         "opis": "Mašine za predenje u fabrici"
@@ -647,7 +642,7 @@
       ],
       "zanimljivost": "Zato su prve fabrike građene pored brzih reka – kao Kromford u Engleskoj (1771), jedna od prvih pravih fabrika na svetu.",
       "rec": "voda",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/kromford.jpg",
         "opis": "Kromford, Engleska – fabrika iz 1771."
@@ -656,7 +651,7 @@
     {
       "lekcija": 2,
       "tezina": 1,
-      "pitanje": "Ko je 1769. konstruisao parnu mašinu koja je pokrenula Industrijsku revoluciju?",
+      "pitanje": "Ko je 1769. patentirao usavršenu parnu mašinu koja je pokrenula Industrijsku revoluciju?",
       "odgovori": [
         "Džejms Vat",
         "Džordž Stivenson",
@@ -683,7 +678,7 @@
       ],
       "zanimljivost": "Para nastala ključanjem vode širi se i gura klip – a klip pokreće točak. Tako je ljudska i konjska snaga zamenjena mašinom.",
       "rec": "para",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/parna-animacija.gif",
         "opis": "Parna mašina u radu"
@@ -719,7 +714,7 @@
       ],
       "zanimljivost": "Stivenson je bio sin siromašnog rudara i naučio je da čita tek sa 18 godina.",
       "rec": "lokomotiva",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/raketa.jpg",
         "opis": "Lokomotiva „Raketa“ (1829)"
@@ -745,16 +740,6 @@
           50,
           2.5,
           56.5
-        ],
-        "tacke": [
-          {
-            "lon": -1.31,
-            "lat": 54.57
-          },
-          {
-            "lon": -1.55,
-            "lat": 54.52
-          }
         ]
       }
     },
@@ -765,7 +750,7 @@
       "odgovori": [
         "Oko 48 km/h",
         "Oko 16 km/h",
-        "Oko 120 km/h",
+        "Oko 80 km/h",
         "Oko 5 km/h"
       ],
       "zanimljivost": "Trku je gledalo 10.000–15.000 ljudi; od pet lokomotiva samo je „Raketa“ završila trku. Mnogi do tada nisu videli ništa brže od konja u galopu.",
@@ -806,7 +791,7 @@
       ],
       "zanimljivost": "Radnici su živeli samo od nadnice koju im plaća vlasnik fabrike – nisu posedovali ni zemlju ni alat.",
       "rec": "radnik",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/strajk.jpg",
         "opis": "Robert Keler, „Štrajk“ (1886)"
@@ -836,9 +821,9 @@
       "pitanje": "Zašto su vlasnici fabrika rado zapošljavali decu i žene?",
       "odgovori": [
         "Plaćali su ih mnogo manje",
-        "Bili su jači od muškaraca",
-        "Tražio je to zakon",
-        "Imali su više škole"
+        "Bili su spretniji u radu na mašinama",
+        "Zakon je to tražio za sve radnike",
+        "Nisu tražili nadoknadu za povrede"
       ],
       "zanimljivost": "Deca su radila i u rudnicima, jer su mogla da se provuku kroz uske hodnike. Prvi zakoni o zaštiti dece doneti su u Engleskoj 1833.",
       "rec": "dete",
@@ -976,7 +961,7 @@
     {
       "lekcija": 3,
       "tezina": 1,
-      "pitanje": "Koliko je britanskih kolonija na istočnoj obali Severne Amerike stvorilo SAD? (Pomoć: prebroj pruge na zastavi)",
+      "pitanje": "Koliko je britanskih kolonija na istočnoj obali Severne Amerike stvorilo SAD?",
       "odgovori": [
         "13",
         "50",
@@ -985,11 +970,6 @@
       ],
       "zanimljivost": "I danas zastava SAD ima 13 pruga – za prvobitne kolonije, a broj zvezdica (sada 50) raste sa svakom novom saveznom državom.",
       "rec": "kolonija",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/zastava-1777.png",
-        "opis": "Jedna od prvih zastava SAD"
-      },
       "medijiOdgovora": {
         "vrsta": "mapa",
         "karta": "kolonije-13"
@@ -1184,7 +1164,7 @@
       ],
       "zanimljivost": "Grad Vašington tada nije ni postojao – izgrađen je kao nova prestonica tek oko 1800.",
       "rec": "grad",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/dvorana-nezavisnosti.jpg",
         "opis": "Zgrada u kojoj je proglašena nezavisnost"
@@ -1237,7 +1217,7 @@
       ],
       "zanimljivost": "Na slici on prelazi zaleđenu reku Delaver u božićnoj noći 1776. i iznenadnim napadom odnosi važnu pobedu.",
       "rec": "general",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/delaver.jpg",
         "opis": "Prelazak preko reke Delaver (slika iz 1851)"
@@ -1251,7 +1231,7 @@
         "Francuska",
         "Rusija",
         "Austrija",
-        "Holandija"
+        "Portugalija"
       ],
       "zanimljivost": "Mladi francuski plemić markiz de Lafajet postao je general u Vašingtonovoj vojsci – Amerikanci ga i danas slave kao heroja.",
       "rec": "francuska",
@@ -1301,10 +1281,10 @@
       "tezina": 3,
       "pitanje": "Kojim ugovorom je Velika Britanija 1783. priznala nezavisnost SAD?",
       "odgovori": [
-        "Mirom u Versaju (Parizu)",
-        "Mirom u Beču",
-        "Mirom u Londonu",
-        "Mirom u Bostonu i Njujorku"
+        "Versajskim mirom",
+        "Bečkim mirom",
+        "Londonskim mirom",
+        "Bostonskim mirom"
       ],
       "zanimljivost": "Nova država se odmah prostirala do reke Misisipi – skoro dvostruko više od starih 13 kolonija.",
       "rec": "mir",
@@ -1352,7 +1332,7 @@
       ],
       "zanimljivost": "Podela vlasti na tri grane trebalo je da spreči da iko postane previše moćan – jedna grana kontroliše drugu.",
       "rec": "vlast",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/kapitol.jpg",
         "opis": "Kapitol, Vašington"
@@ -1444,7 +1424,7 @@
       ],
       "zanimljivost": "Treći stalež bili su svi ostali – od siromašnih seljaka do bogatih bankara. Činio je čak 98% stanovništva.",
       "rec": "stalež",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/karikatura-stalezi.jpg",
         "opis": "Karikatura iz 1789."
@@ -1462,7 +1442,7 @@
       ],
       "zanimljivost": "Na karikaturi seljak na leđima nosi sveštenika i plemića – tako je narod video nepravednu podelu tereta.",
       "rec": "porez",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/karikatura-stalezi.jpg",
         "opis": "Karikatura iz 1789."
@@ -1497,7 +1477,7 @@
       ],
       "zanimljivost": "Prosvetitelji su verovali da će razum osloboditi ljude neznanja i sujeverja, kao što svetlost rasteruje mrak – otud i naziv.",
       "rec": "razum",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/volter.jpg",
         "opis": "Jedan od najpoznatijih prosvetitelja"
@@ -1509,13 +1489,13 @@
       "pitanje": "Ko su predvodili rad na čuvenoj Enciklopediji?",
       "odgovori": [
         "Žan Dalamber i Deni Didro",
-        "Volter i Žan Žak Ruso",
+        "Rišelje i Mazarin",
         "Monteskje i Lafajet",
         "Robespjer i Danton"
       ],
       "zanimljivost": "Puni naziv dela bio je „Enciklopedija ili obrazloženi rečnik nauka, umetnosti i zanata“ – imala je 28 tomova i preko 70.000 članaka.",
       "rec": "didro",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/enciklopedija.jpg",
         "opis": "Naslovna strana Enciklopedije"
@@ -1534,12 +1514,7 @@
       ],
       "objasnjenje": "Luj XVI je bio apsolutistički kralj Francuske, čiju su vlast prosvetitelji upravo kritikovali.",
       "zanimljivost": "Monteskje je osmislio podelu vlasti na zakonodavnu, izvršnu i sudsku – ideju koju koriste skoro sve današnje države.",
-      "rec": "filozof",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/rusoe.jpg",
-        "opis": "Žan Žak Ruso"
-      }
+      "rec": "filozof"
     },
     {
       "lekcija": 4,
@@ -1565,11 +1540,11 @@
       "pitanje": "Zašto je francuska državna kasa pred revoluciju bila prazna?",
       "odgovori": [
         "Zbog loše politike i pomoći američkim kolonijama",
-        "Zbog kuge koja je pomorila mnogo seljaka i zanatlija",
+        "Zbog gubitka kolonija u Indiji",
         "Zato što je zlato poslato u Rusiju",
-        "Zbog gradnje Ajfelove kule"
+        "Zbog velike gladi i epidemije kuge"
       ],
-      "zanimljivost": "Javni dug Francuske bio je 4,5 milijardi livri, od čega je Američki rat za nezavisnost koštao čak dve milijarde.",
+      "zanimljivost": "Javni dug Francuske bio je ogroman, a troškovi rata za nezavisnost SAD samo su ga dodatno uvećali.",
       "rec": "dug",
       "mediji": {
         "vrsta": "slika",
@@ -1607,7 +1582,7 @@
       ],
       "zanimljivost": "Nekoliko dana kasnije, zaključani ispred sale, zakleli su se u dvorani za igru loptom da se neće razići dok ne donesu ustav.",
       "rec": "zakletva",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/zakletva-loptom.jpg",
         "opis": "Žak Luj David, „Zakletva u dvorani za igru loptom“"
@@ -1704,10 +1679,6 @@
       ],
       "zanimljivost": "Njen treći član kaže da izvor vlasti može biti samo narod – a ne Bog ili kralj.",
       "rec": "prava",
-      "mediji": {
-        "vrsta": "citat",
-        "tekst": "„Ljudi se rađaju i ostaju slobodni i jednaki u pravima.“"
-      },
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/deklaracija-prava.jpg",
@@ -1738,13 +1709,13 @@
       "pitanje": "Kako su se zvali radikalni revolucionari koji su tražili republiku i obračun sa kraljem i plemstvom?",
       "odgovori": [
         "Jakobinci",
-        "Žirondinci",
+        "Feuillanti",
         "Rojalisti",
         "Hugenoti"
       ],
       "zanimljivost": "Ime su dobili po manastiru Svetog Jakova u Parizu, gde su se sastajali.",
       "rec": "jakobinac",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/robespjer.jpg",
         "opis": "Vođa radikalnih revolucionara"
@@ -1780,11 +1751,6 @@
       ],
       "zanimljivost": "Na kraju je i sam Robespjer uhapšen i pogubljen 1794 – revolucija je „pojela svoju decu“.",
       "rec": "strahovlada",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/hapsenje-robespjera.jpg",
-        "opis": "Hapšenje vođe jakobinaca (1794)"
-      },
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/robespjer.jpg",
@@ -1801,7 +1767,7 @@
         "Oko 1,7 miliona",
         "Oko 170.000"
       ],
-      "zanimljivost": "Još oko 10.000 ljudi umrlo je u zatvorima ne dočekavši suđenje.",
+      "zanimljivost": "Pogubljeni su najviše na giljotini, ali su mnogi umrli i u zatvorima, bez suđenja.",
       "rec": "teror",
       "mediji": {
         "vrsta": "slika",
@@ -1858,7 +1824,7 @@
         "Napoleonovim preuzimanjem vlasti 1799.",
         "Padom Bastilje 1789.",
         "Pogubljenjem kralja Luja XVI 1793.",
-        "Bitkom kod Vaterloa i Bečkim kongresom 1815."
+        "Bitkom kod Vaterloa 1815."
       ],
       "zanimljivost": "Napoleon je izveo državni udar 9. novembra 1799. i proglasio se prvim konzulom.",
       "rec": "napoleon",
@@ -1893,10 +1859,10 @@
       "tezina": 1,
       "pitanje": "Koja je najvažnija trajna posledica Francuske revolucije?",
       "odgovori": [
-        "Načelo jednakosti građana i narod kao izvor vlasti",
-        "Jačanje vlasti plemstva i sveštenstva u celoj Evropi",
-        "Povratak kmetstva",
-        "Širenje apsolutizma u Evropi"
+        "Jednakost građana i narod kao izvor vlasti",
+        "Jačanje vlasti plemstva i sveštenstva",
+        "Obnova feudalnih privilegija plemstva",
+        "Širenje apsolutizma po celoj Evropi"
       ],
       "zanimljivost": "Zato se kaže da razvoj modernog društva počinje Francuskom revolucijom. Njen poklič „Sloboda, jednakost, bratstvo“ i danas je moto Francuske.",
       "rec": "jednakost",
@@ -1925,13 +1891,6 @@
           38,
           16,
           46
-        ],
-        "tacke": [
-          {
-            "lon": 8.74,
-            "lat": 41.92,
-            "oznaka": "?"
-          }
         ]
       },
       "medijiOdgovora": {
@@ -1952,7 +1911,7 @@
       ],
       "zanimljivost": "Postao je general sa samo 24 godine. Kada je izbila revolucija, bio je poručnik od 19 godina.",
       "rec": "general",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/napoleon-tulon.jpg"
       }
@@ -1969,7 +1928,7 @@
       ],
       "zanimljivost": "Sa vojskom su išli i naučnici – njihov vojnik je pronašao Kamen iz Rozete, zahvaljujući kojem su kasnije odgonetnuti egipatski hijeroglifi.",
       "rec": "egipat",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/napoleon-piramide.jpg",
         "opis": "Napoleonova vojska u bici kod piramida"
@@ -2046,7 +2005,7 @@
       ],
       "zanimljivost": "Papa Pije VII, koji je trebalo da ga kruniše, postao je samo posmatrač – što je shvaćeno kao veliko poniženje.",
       "rec": "kruna",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/krunisanje-napoleona.jpg",
         "opis": "Žak Luj David, „Krunisanje“"
@@ -2057,10 +2016,10 @@
       "tezina": 2,
       "pitanje": "Šta je potvrdio Napoleonov Građanski zakonik (1804)?",
       "odgovori": [
-        "Tekovine revolucije: jednakost i ukidanje feudalizma",
+        "Tekovine revolucije – jednakost pred zakonom",
         "Povlastice plemstva i sveštenstva",
         "Ponovno uvođenje kmetstva na selu",
-        "Pravo kralja da vlada bez ustava i bez skupštine"
+        "Pravo kralja da vlada bez ustava i skupštine"
       ],
       "zanimljivost": "Napoleonov zakonik je bio uzor za zakone mnogih država Evrope i Latinske Amerike, a u Francuskoj važi i danas.",
       "rec": "zakonik",
@@ -2082,7 +2041,7 @@
       ],
       "zanimljivost": "Napoleon je kasnije pokušao da je pobedi trgovinom – kontinentalnom blokadom.",
       "rec": "mornarica",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "mapa",
         "karta": "evropa-1812",
         "istakni": [
@@ -2216,10 +2175,10 @@
       "tezina": 1,
       "pitanje": "Kako su Rusi pobedili Napoleonovu vojsku 1812?",
       "odgovori": [
-        "Povlačili su se, uništavali sve iza sebe, a dočekala ga je zima",
-        "Pobedili su ga u velikoj pomorskoj bici na Crnom moru kod Odese",
+        "Povlačili su se, a zima je uništila vojsku",
+        "Pobedili su ga u pomorskoj bici kod Odese",
         "Napali su Pariz dok je on bio u Moskvi",
-        "Podmitili su njegove generale"
+        "Podmitili su njegove generale i vojsku"
       ],
       "zanimljivost": "Napoleon je ušao u Moskvu, ali je grad izgoreo, a car nije hteo da pregovara. Od pola miliona vojnika vratilo se samo oko 50.000.",
       "rec": "zima",
@@ -2294,13 +2253,6 @@
           38,
           16,
           46
-        ],
-        "tacke": [
-          {
-            "lon": 10.25,
-            "lat": 42.78,
-            "oznaka": "?"
-          }
         ]
       }
     },
@@ -2359,13 +2311,6 @@
           -25,
           25,
           10
-        ],
-        "tacke": [
-          {
-            "lon": -5.72,
-            "lat": -15.95,
-            "oznaka": "?"
-          }
         ]
       },
       "medijiOdgovora": {
@@ -2417,7 +2362,7 @@
       "pitanje": "Spoji bitku sa godinom",
       "parovi": [
         [
-          "Trafalgar i Austerlic",
+          "Trafalgar",
           "1805."
         ],
         [
@@ -2469,7 +2414,7 @@
         "Brak sa više žena",
         "Brak samo uz dozvolu kralja"
       ],
-      "zanimljivost": "Zakon je predviđao sedam razloga za razvod i jednako pravo za ženu i muškarca. Napoleonov zakonik je to kasnije suzio na tri razloga.",
+      "zanimljivost": "Zakon je predviđao razloge za razvod i jednaka prava muža i žene; Napoleonov zakonik je kasnije razvod znatno otežao.",
       "rec": "razvod",
       "mediji": {
         "vrsta": "lenta",
@@ -2580,7 +2525,7 @@
       ],
       "zanimljivost": "Bogati su mogli da priušte i luksuz kao što su limuni, pomorandže i čokolada – i jeli su iz porcelana, a siromašni iz drvenog posuđa.",
       "rec": "krompir",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/jedaci-krompira.jpg"
       }
@@ -2590,10 +2535,10 @@
       "tezina": 2,
       "pitanje": "Šta je, prema propisima, bilo zabranjeno hrišćanima u Osmanskom carstvu?",
       "odgovori": [
-        "Raskošna slavlja, odeća i kuće više od muslimanskih",
+        "Raskošna odeća i kuće viših od muslimanskih",
         "Da obrađuju svoju zemlju",
         "Da imaju više od dvoje dece",
-        "Da govore svojim jezikom kod kuće i na pijaci u gradu"
+        "Da govore svojim jezikom u crkvi"
       ],
       "zanimljivost": "Strogo se pazilo da hrišćanin ni po čemu ne bude iznad muslimana – danas bismo to nazvali diskriminacijom.",
       "rec": "kuća",
@@ -2613,7 +2558,7 @@
         "Pirinač",
         "Krompir"
       ],
-      "zanimljivost": "Pšenični hleb i meso bili su na trpezi samo za praznike. Seljaci su, po Rankeu, kupovali jedino so – sve ostalo su sami proizvodili.",
+      "zanimljivost": "Pšenični hleb i meso bili su na trpezi samo za praznike, a kukuruz je od XVII veka bio osnovna žitarica.",
       "rec": "proja",
       "mediji": {
         "vrsta": "slika",
@@ -2673,7 +2618,7 @@
       ],
       "zanimljivost": "Monah Gerasim Zelić opisao je 1774. sobicu u kojoj su bili muž, žena, dvoje dece, krava, svinja i pas.",
       "rec": "zemunica",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/zemunica.jpg"
       }
@@ -2690,7 +2635,7 @@
       ],
       "zanimljivost": "Romantizam je nastao kao odgovor na hladnu racionalnost prosvetitelja – i snažno je podsticao patriotizam.",
       "rec": "romantizam",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/fridrih-lutalica.jpg",
         "opis": "Kaspar David Fridrih, „Lutalica iznad mora magle“"
@@ -2706,7 +2651,7 @@
         "Jovan Sterija Popović",
         "Radoje Domanović"
       ],
-      "zanimljivost": "Pored Branka, najvažniji srpski romantičari su Vuk Karadžić i Petar Petrović Njegoš.",
+      "zanimljivost": "Pored Branka, najvažniji srpski romantičari su Petar II Petrović Njegoš i Đura Jakšić.",
       "rec": "pesnik",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -2757,7 +2702,7 @@
       ],
       "zanimljivost": "Šopen je skoro sve pisao za klavir. Šubert je bio Austrijanac, List Mađar, a Čajkovski Rus.",
       "rec": "klavir",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/sopen.jpg",
         "opis": "Kompozitor romantizma"
@@ -2775,7 +2720,7 @@
       ],
       "zanimljivost": "Slika je izazvala veliko saosećanje u Evropi za grčku borbu protiv Osmanlija. Delakroa je naslikao i čuvenu „Slobodu koja predvodi narod“.",
       "rec": "slikar",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/hios.jpg",
         "opis": "Pokolj na Hiosu (1824)"
@@ -2839,14 +2784,6 @@
             "g": 1922,
             "t": "Kraj carstva"
           }
-        ],
-        "periodi": [
-          {
-            "od": 1768,
-            "do": 1918,
-            "t": "Istočno pitanje",
-            "boja": "#c0504d"
-          }
         ]
       }
     },
@@ -2864,11 +2801,7 @@
       "rec": "carstvo",
       "mediji": {
         "vrsta": "mapa",
-        "karta": "osmansko-carstvo",
-        "istakni": [
-          "rusija",
-          "habzburzi"
-        ]
+        "karta": "osmansko-carstvo"
       }
     },
     {
@@ -2918,11 +2851,6 @@
       ],
       "zanimljivost": "Bosfor je na najužem mestu širok samo oko 700 metara – preko njega danas vode tri mosta između Evrope i Azije.",
       "rec": "bosfor",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/bosfor.jpg",
-        "opis": "Moreuz pored Carigrada"
-      },
       "medijiOdgovora": {
         "vrsta": "mapa",
         "oblast": "evropa",
@@ -2976,7 +2904,7 @@
       ],
       "zanimljivost": "Rusiji je zabranjeno da drži ratnu flotu na Crnom moru.",
       "rec": "pariz",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/pariski-kongres-1856.jpg",
         "opis": "Mirovni kongres 1856."
@@ -2992,7 +2920,7 @@
         "Prelazak carstva u hrišćanstvo",
         "Predaju Carigrada i moreuza Rusiji"
       ],
-      "zanimljivost": "Mnoga obećanja bila su suprotna šerijatu (verskom zakonu), pa nikada nisu zaživela u praksi.",
+      "zanimljivost": "Mnoga obećanja bila su suprotna šerijatu (verskom zakonu), pa su se u praksi sporo sprovodila.",
       "rec": "reforma",
       "mediji": {
         "vrsta": "slika",
@@ -3010,9 +2938,9 @@
         "Mehmed II Osvajač",
         "Murat I"
       ],
-      "zanimljivost": "Mahmud II je govorio i francuski. Janičare je ukinuo 1826. u krvavom obračunu, posle čega je uveo modernu vojsku.",
+      "zanimljivost": "Janičare je ukinuo 1826. u krvavom obračunu, posle čega je uveo modernu vojsku.",
       "rec": "janičar",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/mahmud-ii.jpg",
         "opis": "Sultan u evropskom odelu"
@@ -3030,7 +2958,7 @@
       ],
       "zanimljivost": "Za grčku nezavisnost borili su se i dobrovoljci iz cele Evrope – među njima i pesnik Bajron.",
       "rec": "grčka",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/grcka-revolucija.jpg",
         "opis": "Grčki ustanak 1821."
@@ -3047,34 +2975,7 @@
         "Autonomiju 1815, nezavisnost 1830."
       ],
       "zanimljivost": "Autonomija znači određeni stepen samostalnosti – Srbija je imala svog kneza, ali je i dalje plaćala danak sultanu.",
-      "rec": "autonomija",
-      "mediji": {
-        "vrsta": "lenta",
-        "od": 1800,
-        "do": 1915,
-        "dogadjaji": [
-          {
-            "g": 1804,
-            "t": "Prvi ustanak"
-          },
-          {
-            "g": 1830,
-            "t": "?",
-            "ist": true,
-            "n": "?"
-          },
-          {
-            "g": 1878,
-            "t": "?",
-            "ist": true,
-            "n": "?"
-          },
-          {
-            "g": 1912,
-            "t": "Balkanski rat"
-          }
-        ]
-      }
+      "rec": "autonomija"
     },
     {
       "lekcija": 7,
@@ -3107,14 +3008,7 @@
       "rec": "nevesinje",
       "mediji": {
         "vrsta": "mapa",
-        "oblast": "balkan",
-        "tacke": [
-          {
-            "lon": 18.12,
-            "lat": 43.26,
-            "oznaka": "?"
-          }
-        ]
+        "oblast": "balkan"
       }
     },
     {
@@ -3225,34 +3119,19 @@
       "tezina": 1,
       "pitanje": "Koja osmanska upravna jedinica, sa najviše Srba, postala je kolevka moderne srpske države?",
       "odgovori": [
-        "Smederevski sandžak (Beogradski pašaluk)",
+        "Smederevski sandžak",
         "Bosanski pašaluk",
         "Vidinski pašaluk",
-        "Skadarski sandžak i Zeta u Crnoj Gori"
+        "Skadarski sandžak"
       ],
       "zanimljivost": "Sedište sandžaka bilo je prvo u Smederevu, a zatim u Beogradu – otud oba imena.",
       "rec": "pašaluk",
       "mediji": {
         "vrsta": "mapa",
         "karta": "srbija-1833",
-        "istakni": [
-          "pasaluk"
-        ],
+        "legenda": [],
         "sakrij": [
           "vlaska"
-        ],
-        "legenda": [],
-        "tacke": [
-          {
-            "lon": 20.46,
-            "lat": 44.82,
-            "oznaka": "Beograd"
-          },
-          {
-            "lon": 20.93,
-            "lat": 44.66,
-            "oznaka": "Smederevo"
-          }
         ]
       }
     },
@@ -3280,21 +3159,16 @@
     },
     {
       "lekcija": 8,
-      "tezina": 3,
-      "pitanje": "Koliko je stanovnika imao Beogradski pašaluk početkom XIX veka?",
+      "tezina": 1,
+      "pitanje": "Koja reka odvaja Beograd od Zemuna?",
       "odgovori": [
-        "Oko 400.000",
-        "Oko 40.000",
-        "Oko 4 miliona",
-        "Oko 1,5 miliona"
+        "Sava",
+        "Morava",
+        "Drina",
+        "Tisa"
       ],
-      "zanimljivost": "Srbi su činili oko četiri petine stanovništva.",
-      "rec": "stanovnik",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/beograd-1800.jpg",
-        "opis": "Beograd u ratu 1789."
-      }
+      "zanimljivost": "Ušće Save u Dunav kod Beograda nekad je bilo granica između Austrije (Zemun) i Turske (Beograd).",
+      "rec": "sava"
     },
     {
       "lekcija": 8,
@@ -3308,7 +3182,7 @@
         "Negotin"
       ],
       "objasnjenje": "Kragujevac je bio u pašaluku, a Niš, Kruševac i Negotin su bili izvan njega – Kruševac i Negotin su pripojeni Srbiji tek 1833, a Niš 1878.",
-      "zanimljivost": "I Loznica, Zaječar, Vranje, Pirot i Prokupalj bili su van Smederevskog sandžaka.",
+      "zanimljivost": "I Vranje, Pirot i Prokupalj bili su van Smederevskog sandžaka.",
       "rec": "kragujevac",
       "medijiOdgovora": {
         "vrsta": "mapa",
@@ -3384,7 +3258,7 @@
         "Karađorđeva buna",
         "Velika seoba"
       ],
-      "zanimljivost": "Koča Anđelković je bio trgovac stokom; Turci su ga zarobili i pogubili 1788.",
+      "zanimljivost": "Koča Anđelković je bio trgovac stokom i hajduk, a poginuo je u ratu 1788.",
       "rec": "koča",
       "mediji": {
         "vrsta": "slika",
@@ -3454,14 +3328,14 @@
       "tezina": 2,
       "pitanje": "Koja prava su Srbi dobili uz knežinsku samoupravu?",
       "odgovori": [
-        "Trgovinu, gradnju crkava i narodnu vojsku",
+        "Trgovinu, gradnju crkava i škola",
         "Sopstvenog kralja, zastavu, grb i himnu",
         "Potpunu nezavisnost od sultana",
         "Pravo da ne plaćaju nikakav porez"
       ],
       "zanimljivost": "Mnogi Srbi su se obogatili izvozeći svinje i drugu stoku preko Save i Dunava u Austriju.",
       "rec": "trgovina",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/svinjar.jpg",
         "opis": "Svinje su bile glavni srpski izvoz"
@@ -3586,7 +3460,7 @@
       "odgovori": [
         "Pećka patrijaršija",
         "Karlovačka mitropolija",
-        "Žička arhiepiskopija",
+        "Smederevska mitropolija",
         "Ohridska arhiepiskopija"
       ],
       "zanimljivost": "Pećka patrijaršija je obnovljena tek 1920, posle Prvog svetskog rata.",
@@ -3653,9 +3527,9 @@
         "Ministar Ilija Garašanin",
         "Vuk Stefanović Karadžić, reformator jezika"
       ],
-      "zanimljivost": "Sima Igumanov je bio bogat trgovac iz Prizrena koji je svu svoju imovinu ostavio za školovanje srpske dece.",
+      "zanimljivost": "Sima Igumanov je bio bogat trgovac iz Prizrena koji je veliki deo imovine ostavio za školovanje srpske dece.",
       "rec": "dobrotvor",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/sima-igumanov.jpg"
       }
@@ -3666,9 +3540,9 @@
       "pitanje": "Koja oblast je označena na karti – pogranični pojas Habzburške monarhije prema Osmanlijama, gde je živeo veliki deo Srba?",
       "odgovori": [
         "Vojna krajina",
-        "Banovina Hrvatska",
+        "Bosanski pašaluk",
         "Beogradski pašaluk",
-        "Dalmacija"
+        "Erdelj"
       ],
       "zanimljivost": "Krajina se protezala od Jadranskog mora do granice Vlaške – hiljadu kilometara utvrđene granice.",
       "rec": "krajina",
@@ -3691,7 +3565,7 @@
         "Pravo da ne služe vojsku",
         "Sopstvenu državu"
       ],
-      "zanimljivost": "Vojna služba im je omogućavala i napredovanje – do kraja XVIII veka u austrijskoj vojsci ima i Srba sa činom generala.",
+      "zanimljivost": "Krajišnici su bili vojnici od rođenja: muškarci iz krajine bili su dužni da služe granicu.",
       "rec": "granica",
       "mediji": {
         "vrsta": "slika",
@@ -3711,7 +3585,7 @@
       ],
       "zanimljivost": "Kmetovima je najviše smetalo što im je feudalac bio i sudija – a feudalci su stalno pritiskali dvor da ukine Krajinu i krajišnike pretvori u kmetove.",
       "rec": "kmet",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/kmetovi.jpg",
         "opis": "Seljaci na feudalnom posedu"
@@ -3740,10 +3614,10 @@
       "tezina": 3,
       "pitanje": "Kuda su se Srbi masovno iselili kada je Marija Terezija ukinula krajišnički status u Pomorišju i Potisju?",
       "odgovori": [
-        "U Banat i u Rusiju",
+        "U Rusiju",
         "U Ameriku",
         "U Italiju",
-        "U Beogradski pašaluk"
+        "U Francusku"
       ],
       "zanimljivost": "U Rusiji su osnovali oblasti Nova Serbija i Slavenoserbija (današnja Ukrajina) – mnogi njihovi potomci postali su ruski generali.",
       "rec": "seoba",
@@ -3883,7 +3757,7 @@
         "Kragujevačka gimnazija",
         "Prva beogradska gimnazija"
       ],
-      "zanimljivost": "U njenoj zgradi sniman je film „Lajanje na zvezde“. Gimnazija i danas radi i jedna je od najuglednijih škola u zemlji.",
+      "zanimljivost": "Najstarija srpska srednja škola, i danas radi u Sremskim Karlovcima.",
       "rec": "gimnazija",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -3901,7 +3775,7 @@
         "Narodni muzej",
         "Vukova zadužbina"
       ],
-      "zanimljivost": "Matica je kasnije preseljena u Novi Sad, a njen „Letopis“ je najstariji književni časopis na svetu koji i danas izlazi.",
+      "zanimljivost": "Matica je kasnije preseljena u Novi Sad, a njen „Letopis“ je među najstarijim časopisima koji i danas izlaze.",
       "rec": "matica",
       "mediji": {
         "vrsta": "mapa",
@@ -3917,11 +3791,6 @@
             "lon": 19.04,
             "lat": 47.5,
             "oznaka": "Pešta"
-          },
-          {
-            "lon": 19.84,
-            "lat": 45.25,
-            "oznaka": "Novi Sad"
           }
         ]
       },
@@ -3939,9 +3808,9 @@
         "Novine serbske",
         "Politika",
         "Srpske novine",
-        "Srbski dnevnik"
+        "Narodne novine"
       ],
-      "zanimljivost": "Pokrenuli su ih Dimitrije Davidović i Dimitrije Frušić. Davidović je kasnije pisao Sretenjski ustav.",
+      "zanimljivost": "Pokrenuo ih je Dimitrije Davidović, koji je kasnije napisao Sretenjski ustav.",
       "rec": "novine",
       "mediji": {
         "vrsta": "slika",
@@ -4031,9 +3900,9 @@
         "U Pećkoj patrijaršiji na Kosovu",
         "U Novom Sadu"
       ],
-      "zanimljivost": "Zato se zvala Karlovačka mitropolija. Mitropoliti su birani na crkveno-narodnim saborima.",
+      "zanimljivost": "Sedište se zvalo Karlovačka mitropolija, a mitropoliti su birani na crkveno-narodnim saborima.",
       "rec": "mitropolija",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/karlovci.jpg",
         "opis": "Grad sa sedištem mitropolije"
@@ -4049,9 +3918,9 @@
         "Josif Rajačić",
         "Pavle Nenadović"
       ],
-      "zanimljivost": "Stratimirović je bio mitropolit punih 46 godina (1790–1836) i potajno je pomagao ustaničku Srbiju.",
+      "zanimljivost": "Stratimirović je bio mitropolit punih 46 godina (1790–1836).",
       "rec": "mitropolit",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/stratimirovic.jpg"
       }
@@ -4086,7 +3955,7 @@
       ],
       "zanimljivost": "Knjigu je na srpski preveo Stojan Novaković (1864). Ranke je mnoge podatke dobio od Vuka Karadžića.",
       "rec": "ranke",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/ranke.jpg"
       }
@@ -4097,9 +3966,9 @@
       "pitanje": "Zašto se događaji 1804–1835. nazivaju revolucijom, a ne samo ustankom?",
       "odgovori": [
         "Jer je uz oslobađanje ukinut i feudalizam",
-        "Jer su Srbi pogubili turskog sultana u Carigradu",
-        "Jer je počela industrijska proizvodnja",
-        "Jer je Srbija postala republika"
+        "Jer je Srbija tada proglašena republikom",
+        "Jer je narod tada dobio pravo glasa",
+        "Jer su ustanici zauzeli Carigrad"
       ],
       "zanimljivost": "Srpska revolucija počinje Prvim ustankom 1804, a završava se ukidanjem feudalnih odnosa 1835.",
       "rec": "revolucija",
@@ -4122,7 +3991,7 @@
           },
           {
             "g": 1835,
-            "t": "Kraj feudalizma"
+            "t": "Sretenjski ustav"
           }
         ],
         "periodi": [
@@ -4153,13 +4022,6 @@
         "legenda": [],
         "sakrij": [
           "vlaska"
-        ],
-        "tacke": [
-          {
-            "lon": 20.6,
-            "lat": 44.33,
-            "oznaka": "?"
-          }
         ]
       },
       "medijiOdgovora": {
@@ -4225,7 +4087,7 @@
         "Hadži Mustafa-paša",
         "Sulejman-paša"
       ],
-      "zanimljivost": "Sultan je tako pokazao da je protiv dahija – Srbi su u prvoj fazi tvrdili da se bore samo protiv dahija, a ne protiv sultana.",
+      "zanimljivost": "Srbi su u prvoj fazi ustanka tvrdili da se bore samo protiv dahija, a ne protiv sultana.",
       "rec": "paša",
       "mediji": {
         "vrsta": "slika",
@@ -4243,7 +4105,7 @@
         "Bitka na Čegru",
         "Bitka na Ljubiću"
       ],
-      "zanimljivost": "Pobedom kod Ćuprije nad Hafiz-pašom buna protiv dahija postala je borba za oslobođenje od osmanske vlasti.",
+      "zanimljivost": "Bitka je vođena kod Ivankovca, blizu Ćuprije; Hafiz-paša je ranjen i kasnije je umro.",
       "rec": "ivankovac",
       "mediji": {
         "vrsta": "mapa",
@@ -4251,14 +4113,6 @@
         "legenda": [],
         "sakrij": [
           "vlaska"
-        ],
-        "tacke": [
-          {
-            "lon": 21.35,
-            "lat": 43.95,
-            "oznaka": "?",
-            "znak": "⚔️"
-          }
         ]
       }
     },
@@ -4280,14 +4134,6 @@
         "legenda": [],
         "sakrij": [
           "vlaska"
-        ],
-        "tacke": [
-          {
-            "lon": 19.72,
-            "lat": 44.72,
-            "oznaka": "Mišar",
-            "znak": "⚔️"
-          }
         ]
       },
       "medijiOdgovora": {
@@ -4308,7 +4154,7 @@
       ],
       "zanimljivost": "Petar Ičko je bio trgovac i diplomata. Srbi su ipak odbacili Ičkov mir jer je izbio rusko-turski rat i nadali su se više.",
       "rec": "ičko",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/petar-icko.jpg"
       }
@@ -4355,7 +4201,7 @@
       "odgovori": [
         "Stevan Sinđelić",
         "Hajduk Veljko Petrović",
-        "Vasa Čarapić",
+        "Milenko Stojković",
         "Janko Katić"
       ],
       "zanimljivost": "Od lobanja palih Srba Turci su sazidali Ćele-kulu u Nišu – u nju je bilo uzidano 952 glave.",
@@ -4394,7 +4240,7 @@
       ],
       "zanimljivost": "Lamartin, francuski pesnik, video je kulu 1833. i zapisao: „Neka Srbi sačuvaju ovaj spomenik – on će naučiti njihovu decu šta vredi nezavisnost“.",
       "rec": "kula",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/cele-kula.jpg",
         "opis": "Spomenik u Nišu"
@@ -4478,7 +4324,7 @@
       "mediji": {
         "vrsta": "slika",
         "src": "slike/karadjordje.jpg",
-        "opis": "Vođa Prvog srpskog ustanka"
+        "opis": "Karađorđe"
       }
     },
     {
@@ -4491,7 +4337,7 @@
         "Državni savet",
         "Skupština kneževa i vojvoda"
       ],
-      "zanimljivost": "Imala je šest ministara, koji su se tada zvali popečitelji. Prvi popečitelj prosvete bio je Dositej Obradović.",
+      "zanimljivost": "Njeni članovi su se zvali popečitelji. Prvi popečitelj prosvete bio je Dositej Obradović.",
       "rec": "sovjet",
       "mediji": {
         "vrsta": "slika",
@@ -4502,14 +4348,14 @@
     {
       "lekcija": 10,
       "tezina": 3,
-      "pitanje": "Ko je osnovao Veliku školu u Beogradu 1808?",
+      "pitanje": "Koje godine je osnovana Velika škola u Beogradu?",
       "odgovori": [
-        "Ivan Jugović",
-        "Dositej Obradović",
-        "Vuk Karadžić",
-        "Prota Mateja Nenadović"
+        "1808.",
+        "1804.",
+        "1815.",
+        "1830."
       ],
-      "zanimljivost": "U Velikoj školi učenici su se pripremali za državnu službu. Jedan od njenih đaka bio je i Vuk Karadžić.",
+      "zanimljivost": "Škola je bila začetak visokog obrazovanja u Srbiji i radila je u Beogradu.",
       "rec": "škola",
       "mediji": {
         "vrsta": "slika",
@@ -4609,7 +4455,7 @@
         "U Topoli",
         "U Kragujevcu"
       ],
-      "zanimljivost": "Čuvena slika Paje Jovanovića „Takovski ustanak“ prikazuje Miloša sa zastavom ispred okupljenog naroda.",
+      "zanimljivost": "Paja Jovanović je posvetio čuvenu sliku „Takovski ustanak“, a Takovo je ostalo simbol Drugog ustanka.",
       "rec": "takovo",
       "mediji": {
         "vrsta": "mapa",
@@ -4617,13 +4463,6 @@
         "legenda": [],
         "sakrij": [
           "vlaska"
-        ],
-        "tacke": [
-          {
-            "lon": 20.46,
-            "lat": 44.03,
-            "oznaka": "?"
-          }
         ]
       },
       "medijiOdgovora": {
@@ -4644,11 +4483,6 @@
       ],
       "zanimljivost": "Miloš je kao dečak čuvao stoku, a prezime je uzeo po polubratu Milanu Obrenoviću, uglednom trgovcu.",
       "rec": "obrenović",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/takovski-ustanak.jpg",
-        "opis": "Ustanak 1815."
-      },
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/milos.jpg",
@@ -4683,7 +4517,7 @@
         "Vodio se izvan Srbije, u Bosni",
         "Vodila ga je i finansirala Rusija"
       ],
-      "zanimljivost": "Ratne operacije vodile su se samo oko četiri meseca i samo u granicama pašaluka – Miloš je od početka računao na diplomatiju.",
+      "zanimljivost": "Miloš je od početka računao na diplomatiju, a ratnih sukoba bilo je znatno manje nego 1804–1813.",
       "rec": "ustanak",
       "mediji": {
         "vrsta": "lenta",
@@ -4734,9 +4568,9 @@
         "Na Ljubiću",
         "Na Avali",
         "Na Rudniku",
-        "Na Suvoboru"
+        "Na Kosmaju"
       ],
-      "zanimljivost": "Borba za Čačak trajala je više od mesec dana; grad je zauzet krajem maja 1815.",
+      "zanimljivost": "Čačak je zauzet posle duge borbe, a Ljubić je bio ključna tačka odbrane.",
       "rec": "ljubić",
       "mediji": {
         "vrsta": "mapa",
@@ -4752,24 +4586,6 @@
             "oznaka": "Ljubić",
             "znak": "⚔️",
             "tajna": true
-          },
-          {
-            "lon": 20.15,
-            "lat": 44.65,
-            "oznaka": "Palež",
-            "znak": "⚔️"
-          },
-          {
-            "lon": 21.19,
-            "lat": 44.62,
-            "oznaka": "Požarevac",
-            "znak": "⚔️"
-          },
-          {
-            "lon": 19.55,
-            "lat": 44.73,
-            "oznaka": "Dublje",
-            "znak": "⚔️"
           }
         ]
       }
@@ -4782,42 +4598,14 @@
         "Tanasko Rajić",
         "Stevan Sinđelić",
         "Hajduk Veljko",
-        "Vasa Čarapić"
+        "Hadži-Prodan Gligorijević"
       ],
       "zanimljivost": "Rekao je: „Ja, braćo, ovih topova ostaviti neću… Ja hoću kod njih da umrem.“ Turci u Čačku isprva nisu verovali da Srbi uopšte imaju topove.",
       "rec": "top",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/tanasko-rajic.jpg",
         "opis": "Junak sa Ljubića"
-      }
-    },
-    {
-      "lekcija": 11,
-      "tezina": 3,
-      "pitanje": "Šta su Turci uradili kod Valjeva kad su čuli da Miloš dolazi sa topovima?",
-      "odgovori": [
-        "Napustili su grad bez borbe",
-        "Predali su svoje topove",
-        "Pozvali su pomoć iz Bosne i pobedili",
-        "Spalili su grad"
-      ],
-      "zanimljivost": "Ustanici su imali samo dva topa: jedan zaplenjen u Paležu i jedan pronađen u šumi, sakriven posle propasti Prvog ustanka.",
-      "rec": "valjevo",
-      "mediji": {
-        "vrsta": "mapa",
-        "karta": "srbija-1833",
-        "legenda": [],
-        "sakrij": [
-          "vlaska"
-        ],
-        "tacke": [
-          {
-            "lon": 19.89,
-            "lat": 44.27,
-            "oznaka": "Valjevo"
-          }
-        ]
       }
     },
     {
@@ -4838,14 +4626,6 @@
         "legenda": [],
         "sakrij": [
           "vlaska"
-        ],
-        "tacke": [
-          {
-            "lon": 19.55,
-            "lat": 44.73,
-            "oznaka": "?",
-            "znak": "⚔️"
-          }
         ]
       }
     },
@@ -4900,7 +4680,7 @@
         "U Takovu",
         "U Carigradu, kod sultana"
       ],
-      "zanimljivost": "Sporazum je bio samo usmen – Porta (turska vlada) ga nikad nije zvanično potvrdila, ali je Srbija posle 10 godina stradanja ušla u mir.",
+      "zanimljivost": "Belica je mesto kod Ćuprije, gde je 1815. dogovoren kraj Drugog srpskog ustanka.",
       "rec": "belica",
       "mediji": {
         "vrsta": "mapa",
@@ -4908,13 +4688,6 @@
         "legenda": [],
         "sakrij": [
           "vlaska"
-        ],
-        "tacke": [
-          {
-            "lon": 21.37,
-            "lat": 43.93,
-            "oznaka": "?"
-          }
         ]
       }
     },
@@ -4928,7 +4701,7 @@
         "Sopstvenu vojsku od 100.000 ljudi",
         "Pravo da isteraju sve Turke iz Srbije bez odobrenja"
       ],
-      "zanimljivost": "Osnovana je i Narodna kancelarija – najviše srpsko upravno i sudsko telo.",
+      "zanimljivost": "Miloš je tako dobio pravo da upravlja Srbijom, uz danak koji je plaćao sultanu.",
       "rec": "porez",
       "mediji": {
         "vrsta": "slika",
@@ -4946,18 +4719,13 @@
         "Iz Vidina",
         "Iz Skoplja"
       ],
-      "zanimljivost": "Druga turska vojska došla je od Niša, pod Marašli Ali-pašom. Huršid-paša je tražio da Srbi polože oružje – zato pregovori s njim nisu uspeli.",
+      "zanimljivost": "Druga turska vojska došla je od Niša, pod Marašli Ali-pašom.",
       "rec": "vojska",
       "mediji": {
         "vrsta": "mapa",
         "karta": "srbija-1833",
         "legenda": [],
         "tacke": [
-          {
-            "lon": 17.67,
-            "lat": 44.23,
-            "oznaka": "Travnik"
-          },
           {
             "lon": 21.9,
             "lat": 43.32,
@@ -4992,30 +4760,7 @@
         ]
       ],
       "zanimljivost": "Oba ustanka su počela praznikom: Prvi na Sretenje, Drugi na Cveti.",
-      "rec": "zbor",
-      "mediji": {
-        "vrsta": "lenta",
-        "od": 1800,
-        "do": 1820,
-        "dogadjaji": [
-          {
-            "g": 1804,
-            "t": "Orašac"
-          },
-          {
-            "g": 1813,
-            "t": "Slom ustanka"
-          },
-          {
-            "g": 1814,
-            "t": "Buna"
-          },
-          {
-            "g": 1815,
-            "t": "Takovo"
-          }
-        ]
-      }
+      "rec": "zbor"
     },
     {
       "lekcija": 12,
@@ -5040,57 +4785,16 @@
       "tezina": 3,
       "pitanje": "Šta znači „plaćanje danka odsekom“, koje je Miloš uporno tražio?",
       "odgovori": [
-        "Svi porezi se spajaju u jednu sumu koju plaća država",
+        "Svi porezi spojeni u jednu godišnju sumu",
         "Svako plaća porez samo jednom u životu",
-        "Porez se plaća u žitu i stoci umesto u zlatnom novcu",
+        "Porez se plaća u žitu i stoci",
         "Porez plaćaju samo trgovci"
       ],
       "zanimljivost": "Tako bi seljaci prestali da plaćaju porez direktno sultanu i spahijama – sve bi išlo preko srpske države.",
       "rec": "danak",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "citat",
         "tekst": "sve obaveze → 1 suma → godišnje"
-      }
-    },
-    {
-      "lekcija": 12,
-      "tezina": 2,
-      "pitanje": "Na koju tačku kog mira su se Srbi pozivali u pregovorima za autonomiju?",
-      "odgovori": [
-        "Na 8. tačku Bukureškog mira (1812)",
-        "Na 1. tačku Pariskog mira (1856)",
-        "Na odredbe Svištovskog mira (1791)",
-        "Na Ičkov mir (1806)"
-      ],
-      "zanimljivost": "Rusija je 1812. u Bukureštu zahtevala od Osmanlija da Srbima daju autonomiju – i kasnije je pritiskala da se obećanje ispuni.",
-      "rec": "bukurešt",
-      "mediji": {
-        "vrsta": "lenta",
-        "od": 1810,
-        "do": 1840,
-        "dogadjaji": [
-          {
-            "g": 1812,
-            "t": "?",
-            "ist": true
-          },
-          {
-            "g": 1815,
-            "t": "Belica"
-          },
-          {
-            "g": 1830,
-            "t": "Hatišerif"
-          },
-          {
-            "g": 1833,
-            "t": "Hatišerif"
-          },
-          {
-            "g": 1835,
-            "t": "Sretenjski ustav"
-          }
-        ]
       }
     },
     {
@@ -5105,7 +4809,7 @@
       ],
       "zanimljivost": "Istovremeno je Miloš dobio berat – sultanov ukaz kojim mu se priznaje nasledna kneževska titula.",
       "rec": "hatišerif",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/hatiserif.gif",
         "opis": "Tugra – potpis sultana Mahmuda II"
@@ -5116,7 +4820,7 @@
       "tezina": 2,
       "pitanje": "Šta je značila autonomija Srbije po hatišerifu iz 1830?",
       "odgovori": [
-        "Srbi priznaju sultana, a on se ne meša u njihove stvari",
+        "Srbija plaća danak sultanu, a upravlja se sama",
         "Srbija postaje potpuno nezavisna kraljevina sa svojim kraljem",
         "Srbija postaje deo Ruskog carstva",
         "Srbijom upravlja beogradski vezir"
@@ -5197,7 +4901,7 @@
         "Pravo na sopstvenog kralja",
         "Izlaz na Jadransko more kod Bara i Ulcinja"
       ],
-      "zanimljivost": "Godišnji danak određen je na 2.300.000 turskih groša – tako je stvoren osnov za ukidanje feudalizma.",
+      "zanimljivost": "Spahije su posle toga počele da napuštaju Srbiju, što je pripremilo ukidanje feudalizma.",
       "rec": "nahija",
       "mediji": {
         "vrsta": "mapa",
@@ -5262,7 +4966,7 @@
         "Kao ustavni monarh",
         "Preko izabranog parlamenta"
       ],
-      "zanimljivost": "Vuk Karadžić je opisao Miloševu samovolju u rukopisu koji je zapečatio „do godine 1900“ – i zaista je otvoren tek tada.",
+      "zanimljivost": "Miloš je posle 1830. vladao bez ustava, a prvi srpski ustav dobijen je tek 1835.",
       "rec": "samovlašće",
       "mediji": {
         "vrsta": "slika",
@@ -5317,13 +5021,8 @@
         "Hadži-Prodanova buna (1814)",
         "Topolska buna (1877)"
       ],
-      "zanimljivost": "Predvodio ju je Mileta Radojković, a podršku su dali i mitropolit i – Miloševa supruga, kneginja Ljubica!",
-      "rec": "mileta",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/ljubica.jpg",
-        "opis": "Kneginja Ljubica"
-      }
+      "zanimljivost": "Predvodio ju je Mileta Radojković, a Miloš je posle nje morao da prihvati ustav.",
+      "rec": "mileta"
     },
     {
       "lekcija": 12,
@@ -5335,7 +5034,7 @@
         "Vidovdanski ustav",
         "Namesnički ustav"
       ],
-      "zanimljivost": "Ime je dobio po skupštini održanoj oko Sretenja. Bio je toliko liberalan da su ga Rusija, Austrija i Turska odmah osporile.",
+      "zanimljivost": "Ime je dobio po skupštini održanoj oko Sretenja (15. februara 1835).",
       "rec": "ustav",
       "mediji": {
         "vrsta": "lenta",
@@ -5381,7 +5080,7 @@
         "Ilija Garašanin",
         "Jovan Sterija Popović"
       ],
-      "zanimljivost": "Davidović je bio kneževski sekretar i prvi urednik „Novina srbskih“ (1834).",
+      "zanimljivost": "Davidović je bio kneževski sekretar i jedan od pokretača prvih srpskih novina.",
       "rec": "pisar",
       "mediji": {
         "vrsta": "slika",
@@ -5399,7 +5098,7 @@
         "Gradsku, seosku i plemićku",
         "Sultanovu, vezirovu i kneževu"
       ],
-      "zanimljivost": "Ustav je garantovao i jednakost pred zakonom: niko nije smeo da bude u zatvoru više od tri dana a da ne sazna za šta je optužen.",
+      "zanimljivost": "Sretenjski ustav je bio prvi srpski ustav u modernoj istoriji.",
       "rec": "vlast",
       "mediji": {
         "vrsta": "citat",
@@ -5416,9 +5115,9 @@
         "Bio je napisan na turskom jeziku za Turke u Srbiji",
         "Uveo je islam kao državnu veru"
       ],
-      "zanimljivost": "Najviše je ograničio kneza: članove Državnog saveta birao je knez, ali doživotno – pa ih nije mogao smeniti.",
+      "zanimljivost": "Turski ustav je donet pod pritiskom Porte, a Srbi su ga smatrali nametnutim.",
       "rec": "savet",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/hatiserif.gif",
         "opis": "Tugra – potpis sultana"
@@ -5518,9 +5217,9 @@
           "1838."
         ]
       ],
-      "zanimljivost": "Početkom 1836. Srbija je imala 72 škole sa oko 2.500 učenika.",
+      "zanimljivost": "Srbija je u prvim decenijama posle 1830. brzo širila mrežu škola.",
       "rec": "kultura",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/narodna-biblioteka.jpg",
         "opis": "Narodna biblioteka Srbije"
@@ -5541,9 +5240,6 @@
       "mediji": {
         "vrsta": "mapa",
         "karta": "crna-gora",
-        "istakni": [
-          "cg1859"
-        ],
         "legenda": [],
         "tacke": [
           {
@@ -5754,7 +5450,7 @@
         "Nikola Petrović",
         "Mirko Petrović"
       ],
-      "zanimljivost": "Bio je sinovac Petra I i postao vladika sa samo 17 godina. Bio je visok preko dva metra.",
+      "zanimljivost": "Bio je sinovac Petra I i postao vladika sa samo 17 godina.",
       "rec": "rade",
       "mediji": {
         "vrsta": "slika",
@@ -5795,7 +5491,7 @@
         "Spahije",
         "Hajduci i uskoci"
       ],
-      "zanimljivost": "Osnovao je i Praviteljstvujušči senat (preteču vlade), gvardiju, štampariju i prvu osnovnu školu na Cetinju.",
+      "zanimljivost": "Osnovao je i Praviteljstvujušči senat (preteču vlade), štampariju i prvu osnovnu školu na Cetinju.",
       "rec": "perjanik",
       "mediji": {
         "vrsta": "slika",
@@ -5830,9 +5526,9 @@
         "Zakonik opšti crnogorski i brdski",
         "Turski ustav"
       ],
-      "zanimljivost": "Prvi član glasi: „Svaki Crnogorac i Brđanin jednak je pred sudom“ – ali je istovremeno knjaz proglašen neprikosnovenim.",
+      "zanimljivost": "Zakonik je bio jedan od prvih pisanih zakona Crne Gore u modernom smislu.",
       "rec": "zakon",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "citat",
         "tekst": "„Svaki Crnogorac i Brđanin jednak je pred sudom.“"
       }
@@ -5852,15 +5548,7 @@
       "mediji": {
         "vrsta": "mapa",
         "karta": "crna-gora",
-        "legenda": [],
-        "tacke": [
-          {
-            "lon": 18.67,
-            "lat": 42.66,
-            "oznaka": "?",
-            "znak": "⚔️"
-          }
-        ]
+        "legenda": []
       },
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -5880,7 +5568,7 @@
       ],
       "zanimljivost": "Ubio ga je Todor Kadić iz porodične osvete. Pošto Danilo nije imao sina, nasledio ga je sinovac Nikola Petrović.",
       "rec": "kotor",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/kotor.jpg"
       }
@@ -5930,32 +5618,6 @@
           {
             "g": 1858,
             "t": "Grahovac"
-          }
-        ],
-        "periodi": [
-          {
-            "od": 1784,
-            "do": 1830,
-            "t": "Petar I",
-            "boja": "#20a88f"
-          },
-          {
-            "od": 1830,
-            "do": 1851,
-            "t": "Petar II",
-            "boja": "#3d7fd9"
-          },
-          {
-            "od": 1851,
-            "do": 1860,
-            "t": "",
-            "boja": "#c99a2e"
-          },
-          {
-            "od": 1860,
-            "do": 1870,
-            "t": "",
-            "boja": "#8e6bd1"
           }
         ]
       }
@@ -6093,7 +5755,7 @@
       ],
       "zanimljivost": "Prva je zapravo izbila na Siciliji, u januaru 1848, ali nije imala snagu da pokrene druge.",
       "rec": "pariz",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/pariz-1848.jpg",
         "opis": "Pariz, februar 1848."
@@ -6129,7 +5791,7 @@
       ],
       "zanimljivost": "Bio je sinovac (bratanac) velikog Napoleona. Kao dete je proteran iz Francuske i dvaput je pokušao da preuzme vlast pre 1848.",
       "rec": "predsednik",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/napoleon-iii.jpg",
         "opis": "Predsednik, kasnije car"
@@ -6145,7 +5807,7 @@
         "Ujedinio Nemačku",
         "Ukinuo pravo glasa ženama"
       ],
-      "zanimljivost": "Tako je počelo Drugo francusko carstvo. U predizbornoj kampanji nijednom nije pomenuo carstvo – govorio je samo o republici.",
+      "zanimljivost": "Tako je počelo Drugo francusko carstvo, koje je trajalo do 1870.",
       "rec": "carstvo",
       "mediji": {
         "vrsta": "lenta",
@@ -6188,7 +5850,7 @@
       ],
       "zanimljivost": "Ukinuto je i ropstvo u francuskim kolonijama i uvedena sloboda štampe.",
       "rec": "glas",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/glasanje-1848.jpg",
         "opis": "Prvi izbori sa opštim pravom glasa"
@@ -6227,9 +5889,6 @@
       "mediji": {
         "vrsta": "mapa",
         "karta": "italija",
-        "istakni": [
-          "pijemont"
-        ],
         "sakrij": [
           "pijemont"
         ],
@@ -6290,7 +5949,7 @@
       ],
       "zanimljivost": "Mađari su tražili gotovo nezavisnost od Beča, uz pripajanje Hrvatske, Erdelja i Vojne krajine – a jezik i prava drugih naroda nisu priznavali.",
       "rec": "mađari",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/kosut.jpg",
         "opis": "Vođa mađarske revolucije"
@@ -6308,7 +5967,7 @@
       ],
       "zanimljivost": "Rusija je to uradila kao članica Svete alijanse – saveza osnovanog posle Bečkog kongresa baš radi gušenja revolucija.",
       "rec": "alijansa",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/vilagos.jpg",
         "opis": "Predaja mađarske vojske 1849."
@@ -6348,12 +6007,12 @@
       "odgovori": [
         "Josif Rajačić",
         "Stefan Stratimirović",
-        "Arsenije III Čarnojević",
+        "Dositej Obradović",
         "Pavle Nenadović"
       ],
       "zanimljivost": "Rajačić je bio karlovački mitropolit od 1842. Za vojvodu je izabran pukovnik Stevan Šupljikac.",
       "rec": "patrijarh",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/rajacic.jpg",
         "opis": "Patrijarh 1848."
@@ -6369,7 +6028,7 @@
         "Pripajanje Vojvodine Srbiji",
         "Pokrajinu sa centrom u Novom Sadu"
       ],
-      "zanimljivost": "Bilo je manje od traženog, bez Vojne krajine, sa centrom u Temišvaru i carem kao vojvodom – Srbi su bili tek treći po brojnosti. Ukinuto je već 1860.",
+      "zanimljivost": "Bilo je manje od traženog, bez Vojne krajine, sa centrom u Temišvaru i carem kao vojvodom.",
       "rec": "temišvar",
       "mediji": {
         "vrsta": "lenta",
@@ -6403,7 +6062,7 @@
         "Vuka Karadžića",
         "Save Tekelije"
       ],
-      "zanimljivost": "Piščević je kao austrijski oficir, nezadovoljan reformama Marije Terezije, prešao u Rusiju – kao mnogi Srbi tada.",
+      "zanimljivost": "Piščević je bio austrijski oficir, a njegovi memoari su važan izvor o Srbima u XVIII veku.",
       "rec": "seobe",
       "mediji": {
         "vrsta": "slika",
@@ -6463,9 +6122,6 @@
       "mediji": {
         "vrsta": "mapa",
         "karta": "italija",
-        "istakni": [
-          "pijemont"
-        ],
         "sakrij": [
           "pijemont"
         ],
@@ -6483,17 +6139,7 @@
         "Velika Britanija"
       ],
       "zanimljivost": "Austrija nije htela da se odrekne Lombardije i Venecije, koje je dobila na Bečkom kongresu.",
-      "rec": "austrija",
-      "mediji": {
-        "vrsta": "mapa",
-        "karta": "italija",
-        "istakni": [
-          "austrija",
-          "lombardija",
-          "venecija"
-        ],
-        "legenda": []
-      }
+      "rec": "austrija"
     },
     {
       "lekcija": 15,
@@ -6669,7 +6315,7 @@
       "odgovori": [
         "Francuska vojska",
         "Austrijska vojska",
-        "Španska flota",
+        "Engleska mornarica",
         "Švajcarska garda"
       ],
       "zanimljivost": "Kad je Pruska 1870. srušila francusko carstvo, francuska vojska je otišla – i italijanska vojska je ušla u Rim. Rim je od 1871. prestonica Italije.",
@@ -6695,7 +6341,7 @@
       ],
       "zanimljivost": "Vatikan je najmanja država na svetu – površine manje od pola kvadratnog kilometra.",
       "rec": "vatikan",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/vatikan.jpg",
         "opis": "Trg Svetog Petra"
@@ -6754,11 +6400,7 @@
       "rec": "pruska",
       "mediji": {
         "vrsta": "mapa",
-        "karta": "nemacka",
-        "istakni": [
-          "pruska",
-          "austrija"
-        ]
+        "karta": "nemacka"
       }
     },
     {
@@ -6775,10 +6417,7 @@
       "rec": "savez",
       "mediji": {
         "vrsta": "mapa",
-        "karta": "nemacka",
-        "istakni": [
-          "sever"
-        ]
+        "karta": "nemacka"
       }
     },
     {
@@ -6811,7 +6450,7 @@
       ],
       "zanimljivost": "Bio je to najveći poraz u dotadašnjoj francuskoj istoriji. Posle toga je proglašena Treća francuska republika.",
       "rec": "sedan",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/sedan.jpg",
         "opis": "Napoleon III u bici 1870."
@@ -6829,7 +6468,7 @@
       ],
       "zanimljivost": "Bilo je to namerno poniženje Francuske – u Dvorani ogledala, u dvorcu francuskih kraljeva.",
       "rec": "versaj",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/proglasenje-carstva.jpg",
         "opis": "Proglašenje carstva, 18. januar 1871."
@@ -6850,9 +6489,6 @@
       "mediji": {
         "vrsta": "mapa",
         "karta": "nemacka",
-        "istakni": [
-          "alzas"
-        ],
         "legenda": []
       }
     },
@@ -6868,7 +6504,7 @@
       ],
       "zanimljivost": "Drugo nemačko carstvo (Rajh) trajalo je do kraja Prvog svetskog rata 1918.",
       "rec": "car",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/proglasenje-carstva.jpg",
         "opis": "Dvorana ogledala, Versaj"
@@ -6916,7 +6552,7 @@
       ],
       "zanimljivost": "U Južnoj Karolini robovi su sredinom XIX veka činili skoro 60% stanovništva.",
       "rec": "pamuk",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/plantaza.jpg",
         "opis": "Branje pamuka na jugu SAD (oko 1880)"
@@ -6933,12 +6569,7 @@
         "Federalizam"
       ],
       "zanimljivost": "Abolicionisti su, kršeći zakon, pomagali robovima da pobegnu na Sever tajnom mrežom skrivenih kuća – „podzemnom železnicom“.",
-      "rec": "ropstvo",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/cica-toma.jpg",
-        "opis": "Naslovna strana romana iz 1852."
-      }
+      "rec": "ropstvo"
     },
     {
       "lekcija": 16,
@@ -6950,7 +6581,7 @@
         "Prohujalo sa vihorom",
         "Mobi Dik"
       ],
-      "zanimljivost": "Prve godine prodato je 300.000 primeraka. Linkoln je navodno rekao autorki: „Dakle, vi ste ta mala žena koja je napisala knjigu zbog koje je počeo ovaj veliki rat!“",
+      "zanimljivost": "Knjiga je za nekoliko godina prodata u stotinama hiljada primeraka, a Linkoln je navodno rekao autorki: „Dakle, vi ste ta mala žena koja je napisala knjigu zbog koje je počeo ovaj veliki rat!“",
       "rec": "koliba",
       "mediji": {
         "vrsta": "slika",
@@ -7062,41 +6693,14 @@
         "1914–1918."
       ],
       "zanimljivost": "Rat je počeo napadom južnjaka na tvrđavu Samter u aprilu 1861.",
-      "rec": "rat",
-      "mediji": {
-        "vrsta": "lenta",
-        "od": 1855,
-        "do": 1870,
-        "dogadjaji": [
-          {
-            "g": 1860,
-            "t": "Linkoln izabran"
-          },
-          {
-            "g": 1861,
-            "t": "?",
-            "ist": true,
-            "n": "?"
-          },
-          {
-            "g": 1863,
-            "t": "Getisburg"
-          },
-          {
-            "g": 1865,
-            "t": "?",
-            "ist": true,
-            "n": "?"
-          }
-        ]
-      }
+      "rec": "rat"
     },
     {
       "lekcija": 16,
       "tezina": 2,
       "pitanje": "Koja prednost je Severu pomogla da pobedi?",
       "odgovori": [
-        "Više ljudi, jača industrija i cela mornarica",
+        "Više ljudi, jača industrija i mornarica",
         "Bolji generali, više konja i saveznici iz Evrope",
         "Pomoć Francuske i Britanije",
         "Planinski teren"
@@ -7141,21 +6745,7 @@
       "mediji": {
         "vrsta": "mapa",
         "karta": "gradjanski-rat",
-        "legenda": [],
-        "tacke": [
-          {
-            "lon": -77.23,
-            "lat": 39.83,
-            "oznaka": "?",
-            "znak": "⚔️"
-          },
-          {
-            "lon": -90.88,
-            "lat": 32.35,
-            "oznaka": "Viksburg",
-            "znak": "⚔️"
-          }
-        ]
+        "legenda": []
       },
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -7219,7 +6809,7 @@
     {
       "lekcija": 16,
       "tezina": 3,
-      "pitanje": "Šta je pisao jedan južnjački vojnik o zatišjima između bitaka?",
+      "pitanje": "Šta su vojnici obe strane često radili u zatišjima između bitaka?",
       "odgovori": [
         "Razmenjivali su duvan, kafu i novine",
         "Nikada nisu prestajali da pucaju",
@@ -7281,7 +6871,7 @@
       ],
       "zanimljivost": "Pred Prvi svetski rat samo su Etiopija i Liberija u Africi ostale nezavisne.",
       "rec": "afrika",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "mapa",
         "karta": "afrika-1914"
       }
@@ -7306,17 +6896,17 @@
     },
     {
       "lekcija": 17,
-      "tezina": 3,
+      "tezina": 2,
       "pitanje": "Koja teorija je pogrešno preneta na odnose među ljudima da bi se opravdao kolonijalizam i rasizam?",
       "odgovori": [
         "Darvinova teorija evolucije",
-        "Njutnov zakon gravitacije",
-        "Ajnštajnova teorija relativnosti",
-        "Mendeljejev periodni sistem"
+        "Lamarkova teorija nasleđa",
+        "Malthusova teorija stanovništva",
+        "Marksova teorija klasne borbe"
       ],
       "zanimljivost": "Darvin je govorio o prirodi, a ne o ljudskim društvima – „socijalni darvinizam“ je zloupotreba nauke.",
       "rec": "darvin",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/darvin.jpg",
         "opis": "Čarls Darvin"
@@ -7332,9 +6922,9 @@
         "Žan Žaka Rusoa",
         "Fridriha Engelsa"
       ],
-      "zanimljivost": "Njegove teorije su kasnije prihvaćene u nacističkoj Nemačkoj, gde su korišćene i u nastavi. Nauka je dokazala da „rase“ ne određuju sposobnosti.",
+      "zanimljivost": "Njegove ideje su kasnije zloupotrebljavali rasistički pokreti, uključujući nacističke. Nauka je dokazala da „rase“ ne određuju sposobnosti.",
       "rec": "rasizam",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/gobino.jpg",
         "opis": "Francuski pisac XIX veka"
@@ -7355,9 +6945,6 @@
       "mediji": {
         "vrsta": "mapa",
         "karta": "svet-1914",
-        "istakni": [
-          "britanija"
-        ],
         "legenda": []
       }
     },
@@ -7415,9 +7002,6 @@
       "mediji": {
         "vrsta": "mapa",
         "karta": "afrika-1914",
-        "istakni": [
-          "francuska"
-        ],
         "legenda": []
       }
     },
@@ -7459,16 +7043,13 @@
         "Kasno je postala država, pa je imala malo kolonija",
         "Izgubila je sve kolonije u ratu sa Francuskom 1870.",
         "Njeni građani su hteli da se isele",
-        "Nemačka nije imala nijednu fabriku"
+        "Nemačka je morala da plaća veliki danak Francuskoj"
       ],
       "zanimljivost": "U tom nezadovoljstvu leži jedan od korena Prvog svetskog rata.",
       "rec": "nemačka",
       "mediji": {
         "vrsta": "mapa",
         "karta": "afrika-1914",
-        "istakni": [
-          "nemacka"
-        ],
         "legenda": []
       }
     },
@@ -7487,9 +7068,6 @@
       "mediji": {
         "vrsta": "mapa",
         "karta": "afrika-1914",
-        "istakni": [
-          "nemacka"
-        ],
         "legenda": []
       }
     },
@@ -7505,7 +7083,7 @@
       ],
       "zanimljivost": "Filipini su osvojeni u kratkom ratu protiv Španije 1898; tada su SAD dobile i Portoriko i Guam.",
       "rec": "havaji",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/havaji.jpg"
       }
@@ -7522,7 +7100,7 @@
       ],
       "zanimljivost": "Bila je to bitka kod Isandlvane – ipak, Britanci su kasnije pokorili Zulu kraljevstvo.",
       "rec": "zulu",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/zulu.jpg"
       }
@@ -7542,9 +7120,6 @@
       "mediji": {
         "vrsta": "mapa",
         "karta": "afrika-1914",
-        "istakni": [
-          "belgija"
-        ],
         "legenda": []
       },
       "medijiOdgovora": {
@@ -7556,7 +7131,7 @@
     {
       "lekcija": 17,
       "tezina": 3,
-      "pitanje": "Na kom ostrvu je britanska kolonizacija zbrisala celo starosedelačko stanovništvo?",
+      "pitanje": "Na kom ostrvu je britanska kolonizacija gotovo potpuno istrebila starosedeoce?",
       "odgovori": [
         "Na Tasmaniji",
         "Na Madagaskaru",
@@ -7567,20 +7142,13 @@
       "rec": "ostrvo",
       "mediji": {
         "vrsta": "mapa",
-        "oblast": "australija",
-        "tacke": [
-          {
-            "lon": 146.6,
-            "lat": -42,
-            "oznaka": "?"
-          }
-        ]
+        "oblast": "australija"
       }
     },
     {
       "lekcija": 18,
       "tezina": 1,
-      "pitanje": "Kako se zvala politička grupa koja je ograničavala samovolju kneza Miloša i tvrdila da samo „brani ustav“ od kneza?",
+      "pitanje": "Kako se zvala politička grupa koja je ograničavala samovolju kneza Mihaila i tvrdila da samo „brani ustav“ od kneza?",
       "odgovori": [
         "Ustavobranitelji",
         "Liberali",
@@ -7606,7 +7174,7 @@
         "Avram Petronijević",
         "Ilija Garašanin"
       ],
-      "objasnjenje": "Knez Mihailo je bio njihov protivnik – ustavobranitelji su ga oborili 1842. Vučić, Petronijević i Garašanini (otac i sin) bili su njihovi prvaci.",
+      "objasnjenje": "Knez Mihailo je bio njihov protivnik – ustavobranitelji su ga oborili 1842. Vučić, Petronijević i Garašanin bili su njihovi prvaci.",
       "zanimljivost": "Ustavobranitelji su vladali Srbijom od 1842. do 1858. – taj period se zove „doba ustavobranitelja“.",
       "rec": "vođa",
       "mediji": {
@@ -7627,7 +7195,7 @@
       ],
       "zanimljivost": "Narod je tako dobio privatna, ali ne i politička prava – knez se savetovao samo sa činovnicima, ne sa narodom.",
       "rec": "savet",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "citat",
         "tekst": "KNEZ ⟷ DRŽAVNI SAVET"
       }
@@ -7642,58 +7210,8 @@
         "Aleksandar Karađorđević",
         "Toma Vučić Perišić"
       ],
-      "zanimljivost": "Milan Obrenović II je bio teško bolestan i nije ni znao da je postao knez. Posle njega je došao mlađi brat Mihailo.",
-      "rec": "milan",
-      "mediji": {
-        "vrsta": "lenta",
-        "od": 1835,
-        "do": 1862,
-        "dogadjaji": [
-          {
-            "g": 1839,
-            "t": "Milan"
-          },
-          {
-            "g": 1839.6,
-            "t": "Mihailo",
-            "n": "1839."
-          },
-          {
-            "g": 1842,
-            "t": "Vučićeva buna"
-          },
-          {
-            "g": 1858,
-            "t": "Svetoandrejska skupština"
-          }
-        ],
-        "periodi": [
-          {
-            "od": 1815,
-            "do": 1839,
-            "t": "Miloš",
-            "boja": "#c0504d"
-          },
-          {
-            "od": 1839.5,
-            "do": 1842,
-            "t": "",
-            "boja": "#c0504d"
-          },
-          {
-            "od": 1842,
-            "do": 1858,
-            "t": "Aleksandar",
-            "boja": "#3d7fd9"
-          },
-          {
-            "od": 1858,
-            "do": 1860,
-            "t": "",
-            "boja": "#c0504d"
-          }
-        ]
-      }
+      "zanimljivost": "Milan Obrenović je ubrzo umro, a posle njega je došao mlađi brat Mihailo.",
+      "rec": "milan"
     },
     {
       "lekcija": 18,
@@ -7705,12 +7223,12 @@
         "Đakovom bunom",
         "Tenkinom zaverom"
       ],
-      "zanimljivost": "Bunu je podržavala i Porta. Posle zauzimanja Kragujevca Mihailo je pobegao u Austriju.",
+      "zanimljivost": "Posle zauzimanja Kragujevca Mihailo je pobegao u Austriju.",
       "rec": "buna",
       "mediji": {
         "vrsta": "slika",
         "src": "slike/vucic.jpg",
-        "opis": "Vođa bune"
+        "opis": "Toma Vučić Perišić"
       }
     },
     {
@@ -7723,7 +7241,7 @@
         "Petra Karađorđevića",
         "Jevrema Obrenovića, Miloševog brata"
       ],
-      "zanimljivost": "Bio je sin vožda Karađorđa. Pošto je izabran, poništeno je pravo naslednosti kneževske titule koje je imao Miloš.",
+      "zanimljivost": "Bio je sin vožda Karađorđa.",
       "rec": "aleksandar",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -7851,7 +7369,7 @@
       ],
       "zanimljivost": "Mnogi učeni Srbi iz Habzburške monarhije („prečani“) dolazili su u Srbiju kao profesori, lekari i činovnici.",
       "rec": "sterija",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/sterija.jpg"
       }
@@ -7896,7 +7414,7 @@
       "odgovori": [
         "Društva srpske slovesnosti",
         "Matice srpske",
-        "Srpskog učenog društva Karlovaca",
+        "Društva za pomoć siromašnima",
         "Narodne biblioteke"
       ],
       "zanimljivost": "Društvo srpske slovesnosti postalo je Srpsko učeno društvo (1864), a zatim Srpska kraljevska akademija (1886).",
@@ -7952,9 +7470,9 @@
         "Kolonije",
         "Fabrike oružja i baruta"
       ],
-      "zanimljivost": "Otvoreno je oko 300 osnovnih škola za dečake i 13 za devojčice, a 1857. učiteljske plate su udvostručene.",
+      "zanimljivost": "Za vreme ustavobranitelja otvoren je veliki broj osnovnih škola.",
       "rec": "škola",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/licej.jpg",
         "opis": "Konak kneginje Ljubice, gde je radio Licej"
@@ -7970,7 +7488,7 @@
         "Prepustio je vlast Savetu",
         "Vladao je uz pomoć ruskog cara"
       ],
-      "zanimljivost": "Činovnicima je ukinuo titule „blagorodni“ i „visokoblagorodni“ i pravo da nose raskošne uniforme.",
+      "zanimljivost": "Posle povratka Miloš je 1860. umro, a presto je pripao Mihailu.",
       "rec": "miloš",
       "mediji": {
         "vrsta": "slika",
@@ -8083,7 +7601,7 @@
         "Zakon o železnici",
         "Zakon o slobodi štampe i govora"
       ],
-      "zanimljivost": "Narodna vojska je trebalo da ima 50.000–90.000 ljudi – za tadašnju Srbiju ogroman broj.",
+      "zanimljivost": "Zakon je uveo narodnu vojsku umesto stare i slabe vojske.",
       "rec": "vojska",
       "mediji": {
         "vrsta": "slika",
@@ -8099,11 +7617,11 @@
         "Incident na Čukur-česmi",
         "Tenkina zavera",
         "Seča knezova",
-        "Bombardovanje sa Kalemegdana"
+        "Pobuna u Topčideru"
       ],
-      "zanimljivost": "Turci su iz tvrđave tukli varoš topovima i ubili desetine građana. Česma i danas postoji na Dorćolu, sa spomenikom dečaku sa krčagom.",
+      "zanimljivost": "Turci su iz tvrđave tukli varoš topovima i ubili mnoge građane. Česma i danas postoji na Dorćolu.",
       "rec": "česma",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/cukur-cesma.jpg",
         "opis": "Spomenik na mestu incidenta"
@@ -8137,26 +7655,6 @@
             "lat": 43.86,
             "oznaka": "Užice",
             "tajna": true
-          },
-          {
-            "lon": 20.46,
-            "lat": 44.82,
-            "oznaka": "Beograd"
-          },
-          {
-            "lon": 20.93,
-            "lat": 44.66,
-            "oznaka": "Smederevo"
-          },
-          {
-            "lon": 22.61,
-            "lat": 44.61,
-            "oznaka": "Kladovo"
-          },
-          {
-            "lon": 19.69,
-            "lat": 44.75,
-            "oznaka": "Šabac"
           }
         ]
       }
@@ -8186,10 +7684,10 @@
       "odgovori": [
         "Crnu Goru, Rumuniju i Grčku",
         "Austriju, Rusiju i Prusku",
-        "Bugarsku, Albaniju i Bosnu",
+        "Mađarsku, Italiju i Češku",
         "Francusku i Englesku"
       ],
-      "zanimljivost": "Sporazum Srbije i Crne Gore iz 1866. predviđao je i ujedinjenje dve države pod knezom Mihailom.",
+      "zanimljivost": "Srbija i Crna Gora su 1866. potpisale sporazum o savezu protiv Turske.",
       "rec": "savez",
       "mediji": {
         "vrsta": "mapa",
@@ -8329,26 +7827,6 @@
             "g": 1868,
             "t": "Atentat"
           }
-        ],
-        "periodi": [
-          {
-            "od": 1839.5,
-            "do": 1842,
-            "t": "",
-            "boja": "#c0504d"
-          },
-          {
-            "od": 1842,
-            "do": 1858,
-            "t": "Karađorđević",
-            "boja": "#3d7fd9"
-          },
-          {
-            "od": 1858,
-            "do": 1868,
-            "t": "Obrenovići",
-            "boja": "#c0504d"
-          }
         ]
       }
     },
@@ -8382,7 +7860,7 @@
       ],
       "zanimljivost": "Namesnici su bili Jovan Ristić, general Milivoje Petrović Blaznavac i Jovan Gavrilović.",
       "rec": "namesnik",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/ristic.jpg",
         "opis": "Jovan Ristić, jedan od namesnika"
@@ -8437,7 +7915,7 @@
       ],
       "zanimljivost": "Knez je mogao i da raspusti skupštinu, a u slučaju opasnosti i sam da izdaje zakone.",
       "rec": "vlada",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "citat",
         "tekst": "vlada → skupština + knez → zakon"
       }
@@ -8471,32 +7949,7 @@
         "1912."
       ],
       "zanimljivost": "Srbija i Crna Gora su prvo slale pomoć ustanicima u Hercegovini, a u junu 1876. sklopile su savez i ušle u rat.",
-      "rec": "rat",
-      "mediji": {
-        "vrsta": "lenta",
-        "od": 1874,
-        "do": 1880,
-        "dogadjaji": [
-          {
-            "g": 1875.5,
-            "t": "Nevesinjska puška"
-          },
-          {
-            "g": 1876.5,
-            "t": "?",
-            "ist": true,
-            "n": "?"
-          },
-          {
-            "g": 1877.9,
-            "t": "Drugi rat"
-          },
-          {
-            "g": 1878.5,
-            "t": "Berlinski kongres"
-          }
-        ]
-      }
+      "rec": "rat"
     },
     {
       "lekcija": 20,
@@ -8565,14 +8018,12 @@
       "mediji": {
         "vrsta": "mapa",
         "karta": "srbija-1878",
-        "istakni": [
-          "okruzi"
-        ],
         "tacke": [
           {
             "lon": 21.9,
             "lat": 43.32,
-            "oznaka": "Niš"
+            "oznaka": "Niš",
+            "tajna": true
           },
           {
             "lon": 22.59,
@@ -8613,9 +8064,6 @@
         "sakrij": [
           "bugarska"
         ],
-        "istakni": [
-          "bugarska"
-        ],
         "legenda": []
       }
     },
@@ -8647,14 +8095,11 @@
         "Kosovo i Makedoniju",
         "Izlaz na Jadransko more i luku Bar"
       ],
-      "zanimljivost": "Dan nezavisnosti se slavio 2. jula – po starom (julijanskom) kalendaru to je bio 20. jun, kako piše u kneževom ukazu.",
+      "zanimljivost": "Srbija je posle kongresa dobila i priznanje velikih sila kao nezavisna država.",
       "rec": "nezavisnost",
       "mediji": {
         "vrsta": "mapa",
-        "karta": "srbija-1878",
-        "istakni": [
-          "okruzi"
-        ]
+        "karta": "srbija-1878"
       }
     },
     {
@@ -8671,10 +8116,7 @@
       "rec": "okupacija",
       "mediji": {
         "vrsta": "mapa",
-        "karta": "balkan-1878",
-        "istakni": [
-          "bih"
-        ]
+        "karta": "balkan-1878"
       }
     },
     {
@@ -8691,11 +8133,7 @@
       "rec": "rumelija",
       "mediji": {
         "vrsta": "mapa",
-        "karta": "balkan-1878",
-        "istakni": [
-          "bugarska",
-          "rumelija"
-        ]
+        "karta": "balkan-1878"
       }
     },
     {
@@ -8710,7 +8148,7 @@
       ],
       "zanimljivost": "Zauzvrat je Austrougarskoj morala da učini više ustupaka – najpoznatija je Tajna konvencija iz 1881.",
       "rec": "austrija",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/franc-jozef.jpg",
         "opis": "Car Franc Josif"
@@ -8719,7 +8157,7 @@
     {
       "lekcija": 20,
       "tezina": 3,
-      "pitanje": "Kako su nazivali prvu generaciju srpskih intelektualaca školovanih u inostranstvu?",
+      "pitanje": "Kako su nazivani srpski intelektualci školovani u Parizu u XIX veku?",
       "odgovori": [
         "„Parizlije“",
         "„Bečlije“",
@@ -8728,7 +8166,7 @@
       ],
       "zanimljivost": "Među njima je bio i pravnik Jevrem Grujić. Pošto nije bilo dovoljno domaćih škola, mnogi su studirali u Parizu – a odatle su doneli liberalne ideje.",
       "rec": "pariz",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/pariz-1900.jpg",
         "opis": "Pariz – grad u kome su studirali"
@@ -8746,7 +8184,7 @@
       ],
       "zanimljivost": "Osnovno obrazovanje u Srbiji postalo je obavezno tek 1883.",
       "rec": "seljak",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/srpsko-selo.jpg",
         "opis": "Selo u Srbiji"
@@ -8773,14 +8211,14 @@
     {
       "lekcija": 21,
       "tezina": 3,
-      "pitanje": "Koji političar je upozoravao da „narod srpski u duši više mrzi Nemce nego Turke“ i protivio se savezu sa Austrougarskom?",
+      "pitanje": "Koji srpski političar je bio predsednik vlade u vreme Prvog svetskog rata?",
       "odgovori": [
         "Nikola Pašić",
         "Milutin Garašanin",
         "Jovan Ristić",
         "Stojan Novaković"
       ],
-      "zanimljivost": "Pašić je kasnije bio najvažniji srpski političar – predsednik vlade i tokom Prvog svetskog rata.",
+      "zanimljivost": "Pašić je bio jedan od osnivača Narodne radikalne stranke.",
       "rec": "pašić",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -8883,7 +8321,7 @@
       ],
       "zanimljivost": "Napredna stranka je bila „dvorska“ – podržavala je Obrenoviće i Austrougarsku, ali je imala malo birača.",
       "rec": "radikal",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/pasic.jpg",
         "opis": "Nikola Pašić"
@@ -8904,19 +8342,7 @@
       "mediji": {
         "vrsta": "mapa",
         "karta": "srbija-1878",
-        "legenda": [],
-        "tacke": [
-          {
-            "lon": 22.28,
-            "lat": 43.9,
-            "oznaka": "Zaječar"
-          },
-          {
-            "lon": 22.26,
-            "lat": 43.57,
-            "oznaka": "Knjaževac"
-          }
-        ]
+        "legenda": []
       }
     },
     {
@@ -8933,11 +8359,7 @@
       "rec": "bugarska",
       "mediji": {
         "vrsta": "mapa",
-        "karta": "balkan-1878",
-        "istakni": [
-          "bugarska",
-          "rumelija"
-        ]
+        "karta": "balkan-1878"
       }
     },
     {
@@ -8964,12 +8386,6 @@
         ],
         "tacke": [
           {
-            "lon": 23.04,
-            "lat": 42.85,
-            "oznaka": "?",
-            "znak": "⚔️"
-          },
-          {
             "lon": 22.59,
             "lat": 43.15,
             "oznaka": "Pirot"
@@ -8987,9 +8403,9 @@
         "Ukinuta je Narodna skupština",
         "Kralj je dobio neograničenu vlast nad svim"
       ],
-      "zanimljivost": "Ustav su doneli zajedno radikali, liberali i naprednjaci. Kralju se toliko suzila vlast da je sledeće godine abdicirao.",
+      "zanimljivost": "Kralj Milan je posle ovog ustava 1889. abdicirao.",
       "rec": "parlament",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "citat",
         "tekst": "skupština → kontroliše → vladu"
       }
@@ -9022,9 +8438,9 @@
         "U Vraćevšnici",
         "U Beču"
       ],
-      "zanimljivost": "Umro je u Beču 1901. U Krušedolu su sahranjeni i kneginja Ljubica i patrijarh Arsenije IV.",
+      "zanimljivost": "Umro je u Beču 1901, a sahranjen je u Krušedolu.",
       "rec": "krušedol",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/krusedol.jpg",
         "opis": "Manastir na Fruškoj gori"
@@ -9097,7 +8513,7 @@
       ],
       "zanimljivost": "Draga nije bila plemićkog porekla, bila je desetak godina starija od kralja i nije mogla da rodi naslednika. Brak su osuđivali i kraljevi roditelji.",
       "rec": "draga",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/draga.jpg"
       }
@@ -9108,7 +8524,7 @@
       "pitanje": "Kako se zvalo tajno udruženje koje su 1911. osnovali oficiri – učesnici Majskog prevrata iz 1903?",
       "odgovori": [
         "Crna ruka",
-        "Bela ruka",
+        "Crvena ruka",
         "Mlada Bosna",
         "Narodna odbrana"
       ],
@@ -9130,7 +8546,7 @@
         "Kralj je pobegao u Beč",
         "Srbija je napala Austrougarsku i zauzela Zemun"
       ],
-      "zanimljivost": "Na presto je doveden Petar Karađorđević. Događaj je prikazan u TV seriji „Kraj dinastije Obrenović“ (1995).",
+      "zanimljivost": "Na presto je doveden Petar Karađorđević.",
       "rec": "prevrat",
       "mediji": {
         "vrsta": "lenta",
@@ -9210,10 +8626,6 @@
       "mediji": {
         "vrsta": "mapa",
         "karta": "evropa-1914",
-        "istakni": [
-          "nemacka",
-          "austrougarska"
-        ],
         "legenda": []
       }
     },
@@ -9232,11 +8644,6 @@
       "mediji": {
         "vrsta": "mapa",
         "karta": "evropa-1914",
-        "istakni": [
-          "nemacka",
-          "austrougarska",
-          "italija"
-        ],
         "legenda": []
       }
     },
@@ -9255,10 +8662,6 @@
       "mediji": {
         "vrsta": "mapa",
         "karta": "evropa-1914",
-        "istakni": [
-          "antanta",
-          "rusija"
-        ],
         "legenda": []
       }
     },
@@ -9273,34 +8676,7 @@
         "Rusija–Nemačka 1890, pa Britanija 1900."
       ],
       "zanimljivost": "Antanta je nastala kao odgovor na sve jaču Nemačku i Trojni savez.",
-      "rec": "sporazum",
-      "mediji": {
-        "vrsta": "lenta",
-        "od": 1875,
-        "do": 1915,
-        "dogadjaji": [
-          {
-            "g": 1879,
-            "t": "Dvojni savez"
-          },
-          {
-            "g": 1882,
-            "t": "Trojni savez"
-          },
-          {
-            "g": 1895,
-            "t": "Francuska i Rusija"
-          },
-          {
-            "g": 1904,
-            "t": "Francuska i Britanija"
-          },
-          {
-            "g": 1907,
-            "t": "Britanija i Rusija"
-          }
-        ]
-      }
+      "rec": "sporazum"
     },
     {
       "lekcija": 22,
@@ -9312,7 +8688,7 @@
         "Italije i Turske",
         "Španije i Portugalije"
       ],
-      "zanimljivost": "U drugoj krizi Nemačka je poslala topovnjaču „Panter“ u marokansku luku Agadir – o tome je pisala i beogradska „Politika“.",
+      "zanimljivost": "U drugoj krizi Nemačka je poslala topovnjaču „Panter“ u marokansku luku Agadir.",
       "rec": "maroko",
       "mediji": {
         "vrsta": "mapa",
@@ -9347,10 +8723,7 @@
       "rec": "aneksija",
       "mediji": {
         "vrsta": "mapa",
-        "karta": "balkan-1878",
-        "istakni": [
-          "bih"
-        ]
+        "karta": "balkan-1878"
       },
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -9402,7 +8775,7 @@
       ],
       "zanimljivost": "U Beogradu su bile ogromne demonstracije, uz pozive na rat. Kriza je dodatno zaoštrila odnose Srbije i Austrougarske.",
       "rec": "kriza",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/nikolaj-ii.jpg",
         "opis": "Ruski car Nikolaj II"
@@ -9437,29 +8810,7 @@
         "Mongolije"
       ],
       "zanimljivost": "Mandžurija je severoistočni deo Kine. Posle rata najveći deo je došao pod japansku upravu.",
-      "rec": "mandžurija",
-      "mediji": {
-        "vrsta": "mapa",
-        "oblast": "azija",
-        "kutija": [
-          110,
-          30,
-          145,
-          55
-        ],
-        "tacke": [
-          {
-            "lon": 125,
-            "lat": 45,
-            "oznaka": "?"
-          },
-          {
-            "lon": 121.26,
-            "lat": 38.81,
-            "oznaka": "Port Artur"
-          }
-        ]
-      }
+      "rec": "mandžurija"
     },
     {
       "lekcija": 22,
@@ -9500,7 +8851,7 @@
       ],
       "zanimljivost": "Italijanski pilot je 1. novembra 1911. bacio četiri granate iz aviona na turske položaje kod Tripolija. Korišćeni su i dirižabli.",
       "rec": "avion",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/dirizabl.jpg",
         "opis": "Prizori iz Italijansko-turskog rata"
@@ -9518,7 +8869,7 @@
       ],
       "zanimljivost": "Britanija i Nemačka su se utrkivale u gradnji ogromnih bojnih brodova – „drednota“.",
       "rec": "oružje",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/drednot.jpg",
         "opis": "Bojni brod „Drednot“ (1906)"
@@ -9538,11 +8889,7 @@
       "rec": "solun",
       "mediji": {
         "vrsta": "mapa",
-        "karta": "balkan-1878",
-        "istakni": [
-          "austrougarska",
-          "bih"
-        ]
+        "karta": "balkan-1878"
       }
     },
     {
@@ -9557,28 +8904,10 @@
       ],
       "zanimljivost": "Tokom Prvog svetskog rata Centralnim silama su se pridružili Osmansko carstvo (1914) i Bugarska (1915), a Italija je prešla na stranu Antante.",
       "rec": "centar",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/antanta-plakat.jpg",
         "opis": "Savezi u Evropi 1914. (karta na engleskom)"
-      }
-    },
-    {
-      "lekcija": 23,
-      "tezina": 3,
-      "pitanje": "Koja je velika sila prekinula odnose sa Srbijom 1903–1906. tražeći da se kazne zaverenici iz Majskog prevrata?",
-      "odgovori": [
-        "Velika Britanija",
-        "Rusija",
-        "Austrougarska",
-        "Kraljevina Italija"
-      ],
-      "zanimljivost": "Spor je nazvan „zavereničko pitanje“ i rešen je 1906, kada je nekoliko oficira penzionisano.",
-      "rec": "zaverenik",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/petar-i-karadjordjevic.jpg",
-        "opis": "Kralj Petar I"
       }
     },
     {
@@ -9591,7 +8920,7 @@
         "Petar Karađorđević",
         "Petar Pećanac"
       ],
-      "zanimljivost": "Po njemu je grad Mrkonjić Grad u Bosni dobio ime. Pre toga se borio i u francuskoj vojsci u ratu sa Pruskom 1870.",
+      "zanimljivost": "Pre toga se borio u francuskoj vojsci u ratu sa Pruskom 1870.",
       "rec": "mrkonjić",
       "mediji": {
         "vrsta": "slika",
@@ -9658,7 +8987,7 @@
       ],
       "zanimljivost": "Zorka je umrla 1890, pre nego što je Petar postao kralj. Njihov sin Aleksandar postao je kralj Jugoslavije.",
       "rec": "zorka",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/knez-nikola.jpg"
       }
@@ -9675,7 +9004,7 @@
       ],
       "zanimljivost": "Austrougarska je zatvorila granicu za srpsku stoku – a Srbija je pronašla nova tržišta i izgradila fabrike za preradu mesa. Srbija je pobedila!",
       "rec": "carina",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/svinjar.jpg",
         "opis": "Glavni srpski izvozni proizvod"
@@ -9764,12 +9093,6 @@
             "t": "Velika škola"
           },
           {
-            "g": 1883,
-            "t": "?",
-            "ist": true,
-            "n": "?"
-          },
-          {
             "g": 1905,
             "t": "Univerzitet"
           }
@@ -9782,8 +9105,8 @@
       "pitanje": "Kada je osnovan Univerzitet u Beogradu?",
       "odgovori": [
         "1905.",
-        "1808.",
-        "1863.",
+        "1880.",
+        "1914.",
         "1945."
       ],
       "zanimljivost": "Nastao je od Velike škole. Univerzitet i danas radi u Kapetan-Mišinom zdanju, koje je kapetan Miša Anastasijević poklonio „otadžbini“.",
@@ -9817,7 +9140,7 @@
           "Lingvistika"
         ]
       ],
-      "zanimljivost": "Mika Alas je bio i strastveni ribar (otud nadimak) i violinista – i patentirao je nekoliko izuma.",
+      "zanimljivost": "Mihailo Petrović Alas je bio i izumitelj – konstruisao je računske mašine.",
       "rec": "nauka",
       "mediji": {
         "vrsta": "slika",
@@ -9855,7 +9178,7 @@
         "„Srpske novine“",
         "„Pravda“"
       ],
-      "zanimljivost": "Krajem 1909. u Beogradu je izlazilo čak 79 listova – a novine su se prvi put prodavale na ulici.",
+      "zanimljivost": "Politika je jedan od najstarijih dnevnih listova u Evropi koji i danas izlazi.",
       "rec": "politika",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -9896,7 +9219,7 @@
       ],
       "zanimljivost": "Prosečna zarada je bila 250 franaka. Srbija je napredovala, ali je i dalje bila ispod evropskog proseka.",
       "rec": "zarada",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "citat",
         "tekst": "Srbija 250 : Nemačka ≈ 1.000 franaka"
       }
@@ -9945,7 +9268,7 @@
         "Struja iz nuklearki",
         "Drvo"
       ],
-      "zanimljivost": "Ceo svet je 1910. proizveo samo 42 miliona tona nafte, a sama Britanija oko 280 miliona tona uglja.",
+      "zanimljivost": "Britanija je 1910. proizvodila oko 270 miliona tona uglja.",
       "rec": "ugalj",
       "mediji": {
         "vrsta": "slika",
@@ -10003,7 +9326,7 @@
         "Na Temzi",
         "Na Misisipiju"
       ],
-      "zanimljivost": "Struja je prvo isporučena gradu Bafalo, 40-ak km dalje. Od 12 patenata korišćenih u elektrani, čak 9 je bilo Teslinih.",
+      "zanimljivost": "Struja je prvo stigla do grada Bafalo, nekoliko desetina kilometara dalje.",
       "rec": "nijagara",
       "mediji": {
         "vrsta": "slika",
@@ -10040,7 +9363,7 @@
       ],
       "zanimljivost": "Dizel je misteriozno nestao sa broda na putu za London 1913.",
       "rec": "motor",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/dizel.jpg"
       }
@@ -10057,7 +9380,7 @@
       ],
       "zanimljivost": "Henri Ford je govorio da kupac može da dobije auto „u bilo kojoj boji – samo da je crna“.",
       "rec": "automobil",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/ford-t.jpg",
         "opis": "Automobil iz 1910."
@@ -10073,9 +9396,9 @@
         "Plavi voz",
         "Glacier ekspres"
       ],
-      "zanimljivost": "Bio je to prvi evropski transkontinentalni voz. Prolazio je i kroz Beograd. Agata Kristi je o njemu napisala čuveni roman.",
+      "zanimljivost": "Prolazio je i kroz Beograd. Agata Kristi je o njemu napisala čuveni roman.",
       "rec": "voz",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/orijent-ekspres.jpg",
         "opis": "Vagon čuvenog voza"
@@ -10093,7 +9416,7 @@
       ],
       "zanimljivost": "Let je trajao 36,5 minuta. Samo šest godina ranije braća Rajt su leteli 12 sekundi.",
       "rec": "kanal",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/blerio.jpg",
         "opis": "Avion iz 1909."
@@ -10141,12 +9464,7 @@
         ]
       ],
       "zanimljivost": "Marija Kiri je jedina osoba koja je dobila Nobelovu nagradu iz dve različite nauke – fizike i hemije.",
-      "rec": "otkriće",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/rendgen-snimak.jpg",
-        "opis": "Prvi rendgenski snimak (1895)"
-      }
+      "rec": "otkriće"
     },
     {
       "lekcija": 24,
@@ -10160,7 +9478,7 @@
       ],
       "zanimljivost": "Impresionisti su slikali predmete kako ih doživljavaju u trenutku – svetlost, boju, utisak – a ne kako „zaista izgledaju“.",
       "rec": "impresija",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/mone-impresija.jpg",
         "opis": "Klod Mone (1872)"
@@ -10177,11 +9495,7 @@
         "Barok"
       ],
       "zanimljivost": "Naziv je nastao od latinske reči cubus – kocka.",
-      "rec": "kocka",
-      "mediji": {
-        "vrsta": "telo",
-        "oblik": "kocka"
-      }
+      "rec": "kocka"
     },
     {
       "lekcija": 24,
@@ -10193,7 +9507,7 @@
         "Braća Grim",
         "Tomas Alva Edison"
       ],
-      "zanimljivost": "Prikazano je deset filmova, nijedan duži od 50 sekundi. Već 1896. film je prikazan i u Beogradu, u kafani „Zlatni krst“ – uz kralja Aleksandra.",
+      "zanimljivost": "Prikazano je deset filmova, nijedan duži od 50 sekundi.",
       "rec": "film",
       "mediji": {
         "vrsta": "slika",
@@ -10215,10 +9529,7 @@
       "rec": "glas",
       "mediji": {
         "vrsta": "mapa",
-        "oblast": "svet",
-        "istakni": [
-          "NZL"
-        ]
+        "oblast": "svet"
       }
     },
     {
@@ -10233,7 +9544,7 @@
       ],
       "zanimljivost": "Najvažniji mislioci socijalizma bili su Karl Marks i Fridrih Engels.",
       "rec": "radnik",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/marks.jpg",
         "opis": "Karl Marks"
@@ -10289,7 +9600,7 @@
         "Na njoj je prvi put prikazan avion",
         "Održana je bez ijedne strane zemlje"
       ],
-      "zanimljivost": "Na Olimpijskim igrama 1900. prvi put su učestvovale žene. Srbija je imala svoj paviljon u srpsko-vizantijskom stilu.",
+      "zanimljivost": "Na Olimpijskim igrama 1900. prvi put su učestvovale žene.",
       "rec": "izložba",
       "mediji": {
         "vrsta": "slika",
@@ -10356,24 +9667,6 @@
     {
       "lekcija": 25,
       "tezina": 3,
-      "pitanje": "Na koje dve stranke se 1884. podelila Miletićeva Srpska narodna slobodoumna stranka?",
-      "odgovori": [
-        "Liberalnu i Radikalnu",
-        "Naprednu i Socijalističku",
-        "Konzervativnu i Seljačku",
-        "Mađarsku i Srpsku"
-      ],
-      "zanimljivost": "Podela je oslabila srpski nacionalni pokret u Ugarskoj – vlasti su to rado koristile.",
-      "rec": "radikal",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/miletic-spomenik.jpg",
-        "opis": "Spomenik Svetozaru Miletiću u Novom Sadu"
-      }
-    },
-    {
-      "lekcija": 25,
-      "tezina": 3,
       "pitanje": "Koji savez srpskih i hrvatskih stranaka je od 1905. vladao Hrvatskom i Slavonijom do Prvog svetskog rata?",
       "odgovori": [
         "Hrvatsko-srpska koalicija",
@@ -10411,18 +9704,6 @@
           41.8,
           20,
           45.5
-        ],
-        "tacke": [
-          {
-            "lon": 16.2,
-            "lat": 44.04,
-            "oznaka": "Knin"
-          },
-          {
-            "lon": 18.69,
-            "lat": 42.42,
-            "oznaka": "Boka"
-          }
         ]
       }
     },
@@ -10437,12 +9718,7 @@
         "Ruskog sinoda u Petrogradu"
       ],
       "zanimljivost": "Tako su odvojene od Karlovačke mitropolije – da bi se Srbi u Dalmaciji lakše odvojili od ostatka naroda.",
-      "rec": "eparhija",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/karlovci.jpg",
-        "opis": "Sremski Karlovci, sedište mitropolije"
-      }
+      "rec": "eparhija"
     },
     {
       "lekcija": 25,
@@ -10456,7 +9732,7 @@
       ],
       "zanimljivost": "Kalaj je ranije bio austrougarski konzul u Beogradu. Zabranjivao je nacionalna imena, škole i ćirilicu – a ideju nisu prihvatili ni Srbi ni Hrvati.",
       "rec": "kalaj",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/kalaj.jpg"
       }
@@ -10548,7 +9824,7 @@
         "Mladu Bosnu",
         "Srpsku naprednu stranku"
       ],
-      "zanimljivost": "Već sledeće godine osmanske vlasti su zabranile sve neturske političke organizacije.",
+      "zanimljivost": "U Skoplju su se srpski i bugarski pokreti tada takmičili za uticaj.",
       "rec": "skoplje",
       "mediji": {
         "vrsta": "mapa",
@@ -10569,7 +9845,7 @@
       "odgovori": [
         "Pokušaj da se svi narodi stope u jednu osmansku naciju",
         "Prelazak svih stanovnika u islam",
-        "Gradnja otomana (sofa) u kućama",
+        "Gradnja džamija po celoj Evropi",
         "Iseljavanje Turaka iz Evrope"
       ],
       "zanimljivost": "Ideji su se suprotstavili i hrišćani i muslimani – niko nije hteo da se odrekne svog identiteta.",
@@ -10605,7 +9881,7 @@
       "pitanje": "Kako su se Srbi u Habzburškoj monarhiji najviše odupirali pritiscima?",
       "odgovori": [
         "Crkveno-kulturnim radom i strankama",
-        "Oružanim ustancima svake godine",
+        "Štrajkovima i demonstracijama u Beču",
         "Iseljavanjem u Ameriku",
         "Prelaskom u katoličanstvo"
       ],
@@ -10616,6 +9892,19 @@
         "src": "slike/karlovacka-gimnazija.jpg",
         "opis": "Karlovačka gimnazija"
       }
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Koji srpski pisac je u romanu „Seobe“ opisao život Srba u Habzburškoj monarhiji?",
+      "odgovori": [
+        "Miloš Crnjanski",
+        "Ivo Andrić",
+        "Branislav Nušić",
+        "Meša Selimović"
+      ],
+      "zanimljivost": "Roman „Seobe“ objavljen je 1929. i smatra se jednim od najvažnijih srpskih romana o seobama i Srbima u XVIII veku.",
+      "rec": "crnjanski",
+      "lekcija": 25
     },
     {
       "lekcija": 26,
@@ -10711,52 +10000,6 @@
     },
     {
       "lekcija": 26,
-      "tezina": 2,
-      "pitanje": "Koji gradovi su pripali Crnoj Gori u Velikoj istočnoj krizi 1877–1878?",
-      "odgovori": [
-        "Nikšić, Podgorica, Bar i Ulcinj",
-        "Kotor, Budva i Herceg Novi",
-        "Skadar i Drač",
-        "Pljevlja i Bijelo Polje"
-      ],
-      "zanimljivost": "Ulcinj je Crnoj Gori konačno predat 1880. Tako je Crna Gora dobila izlaz na more.",
-      "rec": "more",
-      "mediji": {
-        "vrsta": "mapa",
-        "karta": "crna-gora",
-        "istakni": [
-          "cg1878"
-        ],
-        "legenda": [],
-        "tacke": [
-          {
-            "lon": 18.95,
-            "lat": 42.77,
-            "oznaka": "Nikšić",
-            "tajna": true
-          },
-          {
-            "lon": 19.26,
-            "lat": 42.44,
-            "oznaka": "Podgorica",
-            "tajna": true
-          },
-          {
-            "lon": 19.1,
-            "lat": 42.1,
-            "oznaka": "Bar"
-          },
-          {
-            "lon": 19.21,
-            "lat": 41.93,
-            "oznaka": "Ulcinj",
-            "tajna": true
-          }
-        ]
-      }
-    },
-    {
-      "lekcija": 26,
       "tezina": 1,
       "pitanje": "Kada je Crna Gora dobila međunarodno priznatu nezavisnost?",
       "odgovori": [
@@ -10780,11 +10023,11 @@
         "Zbog suparništva dinastija Petrovića i Obrenovića",
         "Zbog spora oko Kosova i Metohije",
         "Zato što je Crna Gora napala Srbiju",
-        "Zbog različite vere"
+        "Zbog spora oko granice u Sandžaku"
       ],
       "zanimljivost": "Pitanje je bilo: koja dinastija bi vladala ujedinjenom srpskom državom?",
       "rec": "dinastija",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/milan.jpg"
       }
@@ -10797,7 +10040,7 @@
         "Kralj Petar I Karađorđević",
         "Kralj Aleksandar Obrenović",
         "Ruski car Nikolaj II",
-        "Italijanski kralj"
+        "Kralj Milan Obrenović"
       ],
       "zanimljivost": "Petar je bio oženjen Nikolinom ćerkom Zorkom. Druga ćerka, Jelena, postala je italijanska kraljica.",
       "rec": "zet",
@@ -10936,7 +10179,7 @@
       "mediji": {
         "vrsta": "slika",
         "src": "slike/zastava-cg.png",
-        "opis": "Zastava Kraljevine Crne Gore"
+        "opis": "Zastava Crne Gore"
       }
     },
     {
@@ -10960,16 +10203,16 @@
     {
       "lekcija": 26,
       "tezina": 3,
-      "pitanje": "Koja je bila prva srednja škola u Crnoj Gori (1869)?",
+      "pitanje": "Koja je 1869. na Cetinju otvorena kao prva srednja škola za devojčice?",
       "odgovori": [
+        "Djevojački institut",
         "Cetinjska bogoslovija",
         "Nikšićka gimnazija",
-        "Podgorička tehnička škola",
-        "Barski licej"
+        "Podgorička tehnička škola"
       ],
-      "zanimljivost": "Iste godine je, novcem ruske carice Marije, otvoren Djevojački institut – prva srednja škola za devojčice.",
+      "zanimljivost": "Osnovan je uz pomoć ruske carice, a u njemu su se školovale devojke iz cele Crne Gore.",
       "rec": "bogoslovija",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/cetinje-institut.jpg",
         "opis": "Cetinje krajem XIX veka"
@@ -10992,6 +10235,19 @@
         "src": "slike/cetinje-institut.jpg",
         "opis": "Cetinje"
       }
+    },
+    {
+      "tezina": 1,
+      "pitanje": "Koja je bila prestonica Crne Gore u XIX veku?",
+      "odgovori": [
+        "Cetinje",
+        "Podgorica",
+        "Nikšić",
+        "Bar"
+      ],
+      "zanimljivost": "Na Cetinju je bio dvor vladike, a kasnije kneza i kralja Nikole; grad je i danas prestonica kulture i istorije Crne Gore.",
+      "rec": "cetinje",
+      "lekcija": 26
     },
     {
       "lekcija": 27,

@@ -299,7 +299,7 @@
       "tezina": 3,
       "pitanje": "Šta je rezonancija?",
       "odgovori": [
-        "Naglo povećanje amplitude kada spoljašnja sila deluje sa sopstvenom frekvencijom tela",
+        "Naglo povećanje amplitude kad spoljašnja sila ima sopstvenu frekvenciju tela",
         "Smanjenje oscilacija tela zbog trenja i otpora vazduha dok se telo ne zaustavi potpuno",
         "Vrsta talasa koji se prostire samo kroz čvrsta tela, kao što su metal, kamen, led i drvo",
         "Odbijanje zvuka od velike prepreke, pa ga čujemo ponovo posle kratkog vremena (to je eho)"
@@ -313,9 +313,9 @@
       "pitanje": "Šta je Fukoovo klatno dokazalo 1851. godine?",
       "odgovori": [
         "Da se Zemlja okreće oko svoje ose",
-        "Da je Zemlja ravna ploča, a nikako okrugla",
-        "Da Mesec ne postoji, već je to odraz",
-        "Da gravitacija nestaje na velikoj visini"
+        "Da Sunce kruži oko nepomične Zemlje",
+        "Da je Zemlja spljoštena na polovima",
+        "Da gravitacija zavisi od mase klatna"
       ],
       "zanimljivost": "Ravan oscilovanja Fukoovog klatna polako se zakreće – zapravo se pod njim okreće Zemlja.",
       "rec": "fuko"
@@ -365,9 +365,9 @@
       "pitanje": "Kakve pokrete prave srce i pluća dok rade?",
       "odgovori": [
         "Ritmične, periodične pokrete",
-        "Nikakve, jer ne pomeraju telo",
-        "Samo nasumične pokrete bez reda",
-        "Samo kada spavamo, a danju ne"
+        "Pravolinijske pokrete u jednom smeru",
+        "Kružne pokrete, kao vrh kad se vrti",
+        "Pokrete koji traju samo u prvim godinama života"
       ],
       "zanimljivost": "Puls od 60 otkucaja u minuti odgovara frekvenciji od 1 Hz.",
       "rec": "srce"
@@ -380,7 +380,7 @@
         "U ravnotežnom (najnižem) položaju",
         "U krajnjim položajima, gde se zaustavi",
         "Uvek istu, u svakoj tački putanje",
-        "Nigde – brzina klatna je stalno nula"
+        "Na sredini između ravnoteže i krajnjeg položaja"
       ],
       "zanimljivost": "U krajnjim položajima klatno se za trenutak zaustavi.",
       "rec": "brzina",
@@ -400,7 +400,7 @@
         "U krajnjim (najvišim) položajima",
         "U najnižem položaju, kada prolazi kroz sredinu",
         "Svuda istu, u svakom položaju tokom njihanja",
-        "Nema je uopšte, jer klatno stalno osciluje"
+        "Samo pri prvom zamahu, a kasnije se gubi"
       ],
       "zanimljivost": "Tu je kinetička energija nula, a sva energija je potencijalna.",
       "rec": "položaj",
@@ -420,7 +420,7 @@
         "Ukupna mehanička energija ostaje ista",
         "Raste malo sa svakim novim zamahom klatna",
         "Potpuno nestaje posle nekoliko zamaha klatna",
-        "Pretvara se u masu tega koji visi na klatnu"
+        "Polovina se pretvara u zvuk, a polovina ostaje"
       ],
       "zanimljivost": "Kinetička i potencijalna energija se neprekidno pretvaraju jedna u drugu.",
       "rec": "održanje",
@@ -438,9 +438,9 @@
       "pitanje": "Kakva energija se pretvara pri oscilovanju tega na opruzi?",
       "odgovori": [
         "Kinetička i elastična potencijalna energija",
-        "Samo toplotna energija zbog trenja opruge o vazduh",
-        "Samo svetlosna",
-        "Električna"
+        "Samo toplotna, zbog trenja o vazduh",
+        "Samo gravitaciona potencijalna energija",
+        "Hemijska energija sabijene opruge"
       ],
       "zanimljivost": "Mehanički satovi „žive“ od energije sabijene opruge, koju predaju klatnu ili nemiru.",
       "rec": "opruga",
@@ -457,9 +457,9 @@
       "pitanje": "Zašto ljuljaška bez guranja postepeno staje?",
       "odgovori": [
         "Energija se troši na savladavanje otpora vazduha i trenja",
-        "Gravitacija postepeno nestane posle nekoliko zamaha ljuljaške",
-        "Lanci se skrate",
-        "Zemlja se zaustavi"
+        "Lanci se polako skraćuju od stalnog ljuljanja",
+        "Teg postepeno gubi masu dok se ljulja",
+        "Zemljina teža slabi kod svakog zamaha"
       ],
       "zanimljivost": "Izgubljena mehanička energija prelazi u toplotu – vrlo malo zagreje vazduh i lance.",
       "rec": "trenje",
@@ -477,9 +477,9 @@
       "pitanje": "Kako dete samo „pumpa“ ljuljašku?",
       "odgovori": [
         "Pomeranjem tela u pravom trenutku dodaje energiju",
-        "Ne može – ljuljašku uvek mora da gura neko drugi spolja",
-        "Vikanjem",
-        "Zatvaranjem očiju"
+        "Čvršćim držanjem lanaca smanjuje trenje",
+        "Većom masom tela, jer teži teret se duže ljulja",
+        "Samo pri bržem zamahu, bez obzira na položaj"
       ],
       "zanimljivost": "Dodavanje energije u ritmu oscilacija je oblik rezonancije.",
       "rec": "ljuljaška"
@@ -529,9 +529,9 @@
       "pitanje": "Kako se zove uređaj koji štiti neboder od ljuljanja pri vetru?",
       "odgovori": [
         "Prigušivač (teško klatno ili masa na vrhu)",
-        "Gromobran (štap koji odvodi munju u zemlju)",
+        "Dilatacijski spoj (rupa u zidu za širenje od toplote)",
         "Lift sa tegom (protivteg u šahtu cele zgrade)",
-        "Antena na vrhu (koja seče jak vetar na delove)"
+        "Zaštitna mreža oko fasade (hvata komadiće stakla)"
       ],
       "zanimljivost": "Neboder Tajpej 101 ima na vrhu kuglu od 660 tona koja se ljulja suprotno zgradi.",
       "rec": "prigušivač"
@@ -542,9 +542,9 @@
       "pitanje": "Šta pokreće klatno zidnog sata da ne stane?",
       "odgovori": [
         "Opruga ili teg koji predaju energiju",
-        "Ništa, klatno osciluje večno samo od sebe",
-        "Sunčeva svetlost koja pada kroz prozor sobe",
-        "Vetar koji ulazi kroz otvore na kućištu sata"
+        "Toplota iz prostorije koja širi metal klatna",
+        "Magnetno polje Zemlje koje privlači klatno",
+        "Pritisak vazduha u kućištu sata"
       ],
       "zanimljivost": "Klatno od oko 1 m ima poluperiod (zamah) od oko 1 s – takva klatna nazivaju se „sekundna“.",
       "rec": "teg"
@@ -619,7 +619,7 @@
         "Elastičnu potencijalnu energiju",
         "Kinetičku energiju kretanja žice",
         "Toplotnu energiju zagrejane žice",
-        "Nuklearnu"
+        "Električnu energiju iz utičnice"
       ],
       "zanimljivost": "Kada žicu pustimo, njena energija prelazi u oscilacije, a deo u zvuk koji čujemo.",
       "rec": "žica"
@@ -750,7 +750,7 @@
         "Talasi zemljotresa koji se šire kroz Zemlju",
         "Veliki morski talasi koje stvaraju vetar i oluja",
         "Zvuk muzike koji se prenosi kroz tlo i zidove kuće",
-        "Svetlost"
+        "Talasi koji nastaju pri udaru groma u tlo"
       ],
       "zanimljivost": "Postoje P-talasi (brži, longitudinalni) i S-talasi (sporiji, transverzalni).",
       "rec": "seizmički"
@@ -776,9 +776,9 @@
         "Najviša i najniža tačka talasa",
         "Početak i kraj talasa",
         "Brzina i masa",
-        "Isto"
+        "Dužina i širina talasa"
       ],
-      "zanimljivost": "Visina od dolje do brega dvostruka je amplituda.",
+      "zanimljivost": "Rastojanje od dolje do brega dvostruko je veće od amplitude.",
       "rec": "breg",
       "medijiOdgovora": {
         "vrsta": "fizika",
@@ -795,7 +795,7 @@
         "Kružni",
         "Pravougaoni",
         "Trouglasti",
-        "Nikakvi"
+        "Samo pravolinijski, kao zraci svetlosti"
       ],
       "zanimljivost": "Kad bacimo dva kamena, talasi se seku i „pojačavaju ili slabe“ – to je interferencija.",
       "rec": "krug",
@@ -813,7 +813,7 @@
         "Savijaju se iza prepreke (difrakcija)",
         "Potpuno nestaju iza prepreke sa otvorom",
         "Ubrzavaju kroz otvor i postaju sve jači",
-        "Pretvaraju se u svetlost kada prođu otvor"
+        "Skreću u stranu i ostaju zarobljeni u otvoru"
       ],
       "zanimljivost": "Zato čujemo razgovor iza ugla, iako ne vidimo ljude koji pričaju.",
       "rec": "difrakcija"
@@ -841,7 +841,7 @@
         "0,5 s",
         "2 s"
       ],
-      "zanimljivost": "Struja u našim utičnicama menja smer sa frekvencijom 50 Hz.",
+      "zanimljivost": "Struja u utičnicama ima frekvenciju 50 Hz – menja smer 100 puta u sekundi.",
       "rec": "period"
     },
     {
@@ -880,7 +880,7 @@
         "U vakuumu",
         "U vodi"
       ],
-      "zanimljivost": "U čeliku zvuk putuje oko 5.000 m/s – zato su Indijanci prislanjali uvo na šine da čuju voz.",
+      "zanimljivost": "U čeliku zvuk putuje oko 5.000 m/s, pa se voz koji dolazi najpre čuje kroz šine.",
       "rec": "čelik"
     },
     {
@@ -904,7 +904,7 @@
         "Zvuk frekvencije iznad 20.000 Hz",
         "Veoma glasan zvuk koji oštećuje sluh",
         "Zvuk ispod 20 Hz koji čuju slonovi",
-        "Zvuk koji se prostire samo kroz svemir"
+        "Zvuk koji se čuje samo pod vodom"
       ],
       "zanimljivost": "Slepi miševi i delfini koriste ultrazvuk za eholokaciju, a lekari za preglede.",
       "rec": "ultrazvuk"
@@ -916,7 +916,7 @@
       "odgovori": [
         "Zvuk frekvencije ispod 20 Hz",
         "Zvuk iznad 20.000 Hz",
-        "Tišina",
+        "Zvuk frekvencije između 20 Hz i 200 Hz",
         "Odjek"
       ],
       "zanimljivost": "Slonovi komuniciraju infrazvukom na udaljenostima i do 10 km.",
@@ -1015,7 +1015,7 @@
         "Zvuk odbijen od prepreke koji čujemo odvojeno",
         "Najjači zvuk koji ljudsko uho može da čuje bez bola",
         "Infrazvuk koji nastaje pri zemljotresu i koji čuju slonovi",
-        "Muzika"
+        "Zvuk koji nastaje pri trenju dva tela"
       ],
       "zanimljivost": "Da bismo čuli odvojen odjek, prepreka mora biti udaljena bar oko 17 m.",
       "rec": "eho",
@@ -1045,8 +1045,8 @@
       "odgovori": [
         "Ne",
         "Da",
-        "Samo glasan zvuk",
-        "Samo noću"
+        "Samo ako je zvuk jako visok",
+        "Samo kroz čvrsta tela"
       ],
       "zanimljivost": "U ogledu sa zvoncetom pod staklenim zvonom, zvonce se sve slabije čuje kako se izvlači vazduh.",
       "rec": "vakuum"
@@ -1088,9 +1088,9 @@
       "pitanje": "Koliki je nivo buke koji već posle dužeg vremena oštećuje sluh?",
       "odgovori": [
         "Iznad oko 85 dB",
-        "Iznad 10 dB",
-        "Iznad 30 dB",
-        "Bilo koji zvuk"
+        "Iznad oko 10 dB",
+        "Iznad oko 60 dB",
+        "Iznad oko 30 dB"
       ],
       "zanimljivost": "Slušalice na najjačem tonu mogu dati i preko 100 dB.",
       "rec": "buka"
@@ -1114,9 +1114,9 @@
       "pitanje": "Kako se svetlost prostire u homogenoj sredini?",
       "odgovori": [
         "Pravolinijski",
-        "U krug",
-        "Cik-cak",
-        "Ne prostire se"
+        "U krug, oko izvora",
+        "Cik-cak, kao munja",
+        "Zakrivljeno, po luku"
       ],
       "zanimljivost": "Zato predmeti bacaju oštru senku – svetlost ne „skreće“ iza ugla.",
       "rec": "prava",
@@ -1134,7 +1134,7 @@
         "Neprovidno telo zaustavlja svetlost, pa iza njega ostaje neosvetljen prostor",
         "Svetlost se odbija od neprovidnog tela i vraća nazad, pa iza tela ostaje tamna mrlja",
         "Svetlost se prelama oko ivica tela i skreće u stranu, pa iza njega nastaje tamna oblast",
-        "Senka svetli slabom svetlošću koju telo samo emituje, pa nam izgleda tamnije od okoline"
+        "Svetlost se pretvara u toplotu čim udari o predmet, pa nema svetla iza"
       ],
       "zanimljivost": "Senka je duža ujutru i uveče, kada je Sunce nisko.",
       "rec": "senka",
@@ -1151,8 +1151,8 @@
       "odgovori": [
         "Delimično osvetljen prostor oko senke, kod velikog izvora svetlosti",
         "Najtamniji deo senke, u koji ne dospeva nijedan zrak svetlosti iz izvora",
-        "Odraz predmeta u ogledalu koji je upola tamniji od samog tog predmeta",
-        "Svetlost Meseca"
+        "Oblast u kojoj se svetlost savija oko ivica predmeta",
+        "Prostor u kom svetlost dolazi samo odbijena od zidova"
       ],
       "zanimljivost": "Kod pomračenja Sunca ljudi u polusenci vide delimično pomračenje.",
       "rec": "polusenka",
@@ -1200,8 +1200,8 @@
       "pitanje": "Šta je svetlosni zrak?",
       "odgovori": [
         "Linija koja pokazuje pravac prostiranja svetlosti",
-        "Deo sunčeve svetlosti koji prolazi kroz prozor sobe",
-        "Vrsta lampe koja daje uzan i veoma jak snop svetlosti",
+        "Brzina kojom svetlost putuje kroz vazduh",
+        "Vrsta sijalice koja daje mnogo toplote",
         "Senka koju neprozirno telo baca kad ga obasja Sunce"
       ],
       "zanimljivost": "Laserski snop je najbliži „pravom“ svetlosnom zraku.",
@@ -1232,7 +1232,7 @@
         "Zraci se ukrštaju u malom otvoru jer se prostiru pravolinijski",
         "Zbog prelamanja svetlosti u vazduhu unutar komore, koji je gušći od spoljnog",
         "Zbog ogledala na zadnjem zidu komore koje odbija svetlost i obrće sve likove",
-        "Zbog boje unutrašnjih zidova – crna boja obrće svetlost koja pada na nju"
+        "Zato što oko obrće svaki lik pre nego što ga vidimo"
       ],
       "zanimljivost": "Isto se dešava u našem oku – lik na mrežnjači je obrnut, a mozak ga „ispravi“.",
       "rec": "obrnut",
@@ -1281,9 +1281,9 @@
         "Odbijaju svetlost koja dolazi u naše oko",
         "Sami svetle slabom svetlošću koju ne primećujemo",
         "Zbog toplote koju zrače, a oko je oseća kao svetlost",
-        "Zbog zvuka koji odbijaju, a mozak ga pretvara u sliku"
+        "Oko sama šalje zrake ka predmetu, pa ga vidi"
       ],
-      "zanimljivost": "U potpunom mraku ne vidimo ništa – bez svetlosti nema vida.",
+      "zanimljivost": "Mesec ne svetli sam, ali nam se čini svetliji od mnogih zvezda jer je blizu.",
       "rec": "odbijanje"
     },
     {
@@ -1296,7 +1296,7 @@
         "Za brzinu",
         "Za jačinu svetlosti"
       ],
-      "zanimljivost": "Svetlosna godina je oko 9.500 milijardi kilometara.",
+      "zanimljivost": "Svetlosna godina je oko 9.460 milijardi kilometara.",
       "rec": "godina"
     },
     {
@@ -1346,7 +1346,7 @@
         "Upadni ugao jednak je odbojnom uglu",
         "Svetlost se uvek odbija nazad",
         "Upadni ugao je dvostruko veći",
-        "Svetlost se ne odbija"
+        "Odbojni ugao je uvek veći od upadnog"
       ],
       "zanimljivost": "Bilijarska kugla se od ivice stola odbija po istom pravilu.",
       "rec": "ugao",
@@ -1465,8 +1465,8 @@
       "odgovori": [
         "Dva ravna ogledala (ili prizme) odbijaju svetlost",
         "Prelamanje svetlosti kroz jedno veliko i debelo sočivo",
-        "Zvuk koji se odbija od unutrašnjih zidova cevi periskopa",
-        "Jak magnet koji usmerava svetlost kroz dugačku metalnu cev"
+        "Dva sočiva koja skupljaju svetlost u jednu tačku",
+        "Lampa u cevi koja osvetljava put ispred broda"
       ],
       "zanimljivost": "Podmornice periskopom osmatraju površinu dok su pod vodom.",
       "rec": "periskop",
@@ -1484,7 +1484,7 @@
         "Da odbijenom svetlošću vide šta je iza njih",
         "Za ukras, da automobil lepše izgleda spolja",
         "Da sprečavaju da sunce zaslepi vozača spreda",
-        "Za radio, jer se u njima nalazi skrivena antena"
+        "Da pokazuju pritisak u gumama"
       ],
       "zanimljivost": "Bočni retrovizori često su blago ispupčeni – vide širi prostor, ali predmeti izgledaju dalje nego što jesu.",
       "rec": "retrovizor"
@@ -1497,7 +1497,7 @@
         "Leva i desna",
         "Gore i dole",
         "Nijedna",
-        "Sve strane odjednom"
+        "Samo ispred i iza"
       ],
       "zanimljivost": "Kada podigneš desnu ruku, lik u ogledalu podiže svoju „levu“.",
       "rec": "simetrija"
@@ -1510,7 +1510,7 @@
         "Kada pada normalno na ogledalo",
         "Kada pada pod 45°",
         "Kada pada tangencijalno na ogledalo",
-        "Kada je ogledalo krivo"
+        "Kada je ogledalo zakrivljeno kao ispupčeno"
       ],
       "zanimljivost": "Reflektori na biciklima i saobraćajnim znacima vraćaju svetlost ka izvoru iz bilo kog ugla.",
       "rec": "reflektor"
@@ -1523,7 +1523,7 @@
         "Ogledala usmeravaju sunčevu svetlost na jedno mesto",
         "Ne koristi se – solarne elektrane rade samo pomoću panela",
         "Za hlađenje – ogledala odbijaju sunce da se paneli ne pregreju",
-        "Za zvuk"
+        "Za merenje brzine vetra pomoću odbijene svetlosti"
       ],
       "zanimljivost": "U nekim solarnim elektranama hiljade ogledala greju toranj do više stotina stepeni.",
       "rec": "solarna"
@@ -1537,7 +1537,7 @@
         "8 m od sebe"
       ],
       "tezina": 2,
-      "zanimljivost": "Lik je iza ogledala isto toliko koliko si ti ispred njega – 2 m. Zato je od tebe udaljen ukupno 4 m.",
+      "zanimljivost": "Ako se približiš ogledalu za 1 m, tvoj lik se približi tebi za 2 m.",
       "rec": "ogledalo",
       "lekcija": 6,
       "mediji": {
@@ -1589,7 +1589,7 @@
         "Ogledalo čija je sjajna površina udubljena kao unutrašnjost kašike",
         "Ravno ogledalo koje je postavljeno u udubljenje zida, kao u kupatilu ili liftu",
         "Ispupčeno ogledalo kakvo se postavlja na raskrsnicama i u velikim prodavnicama",
-        "Ogledalo bez stakla"
+        "Ogledalo sa dve sjajne strane, jedna udubljena, druga ispupčena"
       ],
       "zanimljivost": "U kašici vidiš svoj lik naopako – ona je kao malo udubljeno ogledalo.",
       "rec": "kašika"
@@ -1653,7 +1653,7 @@
         "Rastojanje od ogledala do žiže",
         "Prečnik celog ogledala u centimetrima",
         "Visina predmeta koji stoji ispred ogledala",
-        "Rastojanje od ogledala do samog Sunca"
+        "Rastojanje od ogledala do centra krivine"
       ],
       "zanimljivost": "Žižna daljina sfernog ogledala jednaka je polovini poluprečnika krivine.",
       "rec": "žiža",
@@ -1762,7 +1762,7 @@
         "Ispupčeno",
         "Udubljeno",
         "Ravno",
-        "Nije ogledalo"
+        "Ogledalo sa dve ravne strane"
       ],
       "zanimljivost": "Unutrašnja strana kašike je udubljeno ogledalo – lik je obrnut.",
       "rec": "kašika"
@@ -1791,12 +1791,12 @@
       "tezina": 2,
       "pitanje": "Gde se u medicini koristi udubljeno ogledalo?",
       "odgovori": [
-        "Stomatolog i lekar za uvo-grlo-nos ga koriste za osvetljavanje i uvećanje",
+        "Lekar za uvo-grlo-nos ga stavlja na čelo da osvetli i uveća pregled grla i uva",
         "Na rendgenu – za usmeravanje X-zraka kroz telo ka ploči na kojoj nastaje snimak",
-        "U termometru – udubljeno staklo uvećava stub žive da bi se lakše očitala temperatura",
-        "Nigde – u medicini se koriste samo ravna ogledala, a udubljena su samo u teleskopima"
+        "Za merenje pritiska krvi, u sfigmomanometru, da se očita stub žive",
+        "Zubar ga koristi za ravan pregled zuba, bez ikakvog uvećanja"
       ],
-      "zanimljivost": "Stomatološko ogledalce je malo i okruglo – često ravno ili blago udubljeno.",
+      "zanimljivost": "Stomatološko ogledalce je obično ravno, pa zubar ne vidi uvećanu sliku zuba.",
       "rec": "stomatolog"
     },
     {
@@ -1859,7 +1859,7 @@
         "Manja",
         "Veća",
         "Ista",
-        "Svetlost ne prolazi kroz vodu"
+        "Zavisi od dubine vode"
       ],
       "zanimljivost": "U vodi svetlost putuje oko 225.000 km/s, a u dijamantu oko 124.000 km/s.",
       "rec": "voda"
@@ -1911,7 +1911,7 @@
         "Broj koji pokazuje koliko je puta brzina svetlosti u vakuumu veća nego u datoj sredini",
         "Ugao pod kojim se svetlost odbija od površine – uvek je jednak upadnom uglu svetlosnog zraka",
         "Broj koji pokazuje boju svetlosti, tj. talasnu dužinu, i zavisi samo od izvora svetlosti",
-        "Jačina svetlosti"
+        "Odnos dužine upadnog i prelomljenog zraka u sredini"
       ],
       "zanimljivost": "Dijamant ima veliki indeks prelamanja (oko 2,4) – zato toliko „blista“.",
       "rec": "indeks"
@@ -1937,7 +1937,7 @@
         "Pomoću nazubljenog točka i ogledala udaljenog nekoliko kilometara",
         "Pomoću pomračenja Jupiterovih meseca, posmatranih teleskopom sa Zemlje",
         "Pomoću laserskog zraka odbijenog od ogledala koje su astronauti ostavili na Mesecu",
-        "Satom"
+        "Pomoću zvučnog signala koji je odjekivao od planine"
       ],
       "zanimljivost": "Rezultat mu je bio oko 313.000 km/s – vrlo blizu prave vrednosti.",
       "rec": "fizo"
@@ -1988,8 +1988,8 @@
       "odgovori": [
         "Tanka staklena nit kroz koju svetlost putuje odbijajući se, za prenos podataka",
         "Bakarna žica izuzetno male debljine kroz koju električna struja prenosi telefonske razgovore",
-        "Vrsta sijalice",
-        "Ogledalo"
+        "Vrsta antene za prijem radio-talasa",
+        "Staklena cev punjena vodom za hlađenje"
       ],
       "zanimljivost": "Internet između kontinenata ide kroz optičke kablove po dnu okeana.",
       "rec": "vlakno"
@@ -2000,8 +2000,8 @@
       "pitanje": "Zašto astronomi mere udaljenosti u svetlosnim godinama?",
       "odgovori": [
         "Rastojanja su ogromna, kilometri bi bili nepraktični",
-        "Zbog navike starih astronoma koji su tako merili vekovima",
-        "Zato što je lakše meriti godine nego kilometre ili metre",
+        "Zato što se vreme meri tačnije nego rastojanje",
+        "Jer svetlost za jednu godinu pređe celu galaksiju",
         "Zbog boje zvezda, koja zavisi od toga koliko su stare"
       ],
       "zanimljivost": "Najbliža velika galaksija, Andromeda, udaljena je oko 2,5 miliona svetlosnih godina.",
@@ -2097,7 +2097,7 @@
         "Lik nastao prelamanjem svetlosti kroz slojeve vazduha različite temperature",
         "Halucinacija koja se javlja kod ljudi od žeđi i umora dok dugo hodaju kroz pustinju",
         "Duga koja nastaje kad se svetlost razloži u kapljicama vode posle letnje kiše na nebu",
-        "Odbijanje od ogledala"
+        "Senka koja se pomera kad vetar dune pesak"
       ],
       "zanimljivost": "Leti na vrelom asfaltu vidimo „baru vode“ koje nema – to je odraz neba.",
       "rec": "fatamorgana"
@@ -2108,9 +2108,9 @@
       "pitanje": "Zašto bazen izgleda plići nego što jeste?",
       "odgovori": [
         "Zbog prelamanja svetlosti na površini vode",
-        "Zbog plave boje pločica koje izgledaju bliže oku",
-        "Zbog hlora u vodi koji sabija sliku dna bazena",
-        "Zbog odbijanja"
+        "Zbog toga što voda ima manju gustinu od vazduha",
+        "Zbog svetla koje se odbija od dna bazena",
+        "Zbog veće temperature vode u bazenu"
       ],
       "zanimljivost": "Bazen dubok 2 m izgleda kao da je dubok oko 1,5 m.",
       "rec": "bazen"
@@ -2143,8 +2143,8 @@
       "odgovori": [
         "Prava pod pravim uglom na graničnu površinu",
         "Svetlosni zrak koji pada na ogledalo",
-        "Ravno ogledalo postavljeno potpuno uspravno",
-        "Senka koju baca predmet iza sebe"
+        "Prava koja dodiruje površinu u tački upada",
+        "Ugao između zraka i površine vode"
       ],
       "zanimljivost": "Uglovi u optici se uvek mere od normale, a ne od površine.",
       "rec": "normala",
@@ -2175,7 +2175,7 @@
       "pitanje": "Zašto Sunce na zalasku izgleda spljošteno?",
       "odgovori": [
         "Svetlost donjeg dela više se prelama u atmosferi",
-        "Sunce je zaista spljošteno, ali se to vidi samo uveče",
+        "Sunce se pri zalasku zaista skuplja zbog hlađenja",
         "Zbog oblaka koji pokrivaju donji i gornji deo Sunca",
         "Zbog brzine kojom se Zemlja okreće oko svoje ose"
       ],
@@ -2190,7 +2190,7 @@
         "Izgleda kao da je prelomljena",
         "Postaje mnogo veća i deblja nego što jeste",
         "Nestaje potpuno i uopšte se ne vidi u vodi",
-        "Menja boju u plavu ili zelenu kao voda"
+        "Pliva na površini i ne tone, zbog vazduha u sebi"
       ],
       "zanimljivost": "Pojava se zove prividni lom – ali olovka je, naravno, cela.",
       "rec": "olovka",
@@ -2210,7 +2210,7 @@
         "Optički gušća",
         "Optički ređa",
         "Vakuum",
-        "Prazna"
+        "Sredina koja svetlost samo upija"
       ],
       "zanimljivost": "Voda je optički gušća od vazduha, a staklo od vode.",
       "rec": "gušća"
@@ -2257,7 +2257,7 @@
         "Smanjuje se",
         "Povećava se",
         "Ne menja se",
-        "Postaje nula"
+        "Raste dvostruko, kao i frekvencija"
       ],
       "zanimljivost": "Upravo promena brzine izaziva skretanje zraka.",
       "rec": "brzina"
@@ -2268,9 +2268,9 @@
       "pitanje": "Šta se dešava sa belom svetlošću kada prođe kroz prizmu?",
       "odgovori": [
         "Razlaže se na boje (spektar)",
-        "Postaje crvena kao zalazak sunca",
+        "Ostaje bela, samo malo skrene u stranu",
         "Potpuno nestaje u staklu prizme",
-        "Postaje jača"
+        "Menja se u tamnu sivu svetlost"
       ],
       "zanimljivost": "Njutn je 1666. prvi pokazao da je bela svetlost mešavina svih boja.",
       "rec": "spektar",
@@ -2381,7 +2381,7 @@
         "Druga, slabija duga sa obrnutim redosledom boja",
         "Dve potpuno iste duge, jedna pored druge na istom delu neba",
         "Odraz duge u mirnoj vodi jezera koje se nalazi ispod nje",
-        "Ne postoji"
+        "Duga koja je uvek crvena, bez ostalih boja"
       ],
       "zanimljivost": "Druga duga nastaje sa dva odbijanja u kapi – zato je bleđa i obrnuta.",
       "rec": "dvostruka"
@@ -2418,7 +2418,7 @@
       "pitanje": "Zašto zalazak sunca ima crveno-narandžaste boje?",
       "odgovori": [
         "Svetlost prelazi dug put kroz atmosferu, pa se plava rasprši",
-        "Sunce se uveče ohladi pa svetli crvenom bojom kao užareno gvožđe koje se hladi",
+        "Sunce uveče zrači manje toplote, pa menja boju kao lampa",
         "Zbog oblaka koji uvek uveče zaklone plavu svetlost i propuštaju samo crvenu",
         "Zbog mora i okeana koji uveče odbijaju crvenu boju vode nazad ka nebu i oblacima"
       ],
@@ -2458,7 +2458,7 @@
       "odgovori": [
         "Nevidljivo zračenje iza ljubičastog dela spektra",
         "Crvena svetlost koju vidimo na samom kraju duge posle kiše",
-        "Zvuk",
+        "Zračenje koje se koristi samo za radio-veze",
         "Infracrveno"
       ],
       "zanimljivost": "UV zračenje izaziva preplanulost, ali i opekotine – zato koristimo kremu sa zaštitnim faktorom.",
@@ -2498,7 +2498,7 @@
         "Tanje u sredini nego na ivicama",
         "Deblje u sredini",
         "Ravno sa obe strane",
-        "Uvek okruglo kao lopta"
+        "Potpuno ravno, ali sa jedne strane ispupčeno"
       ],
       "zanimljivost": "Rasipna sočiva nose kratkovide osobe.",
       "rec": "rasipno",
@@ -2517,7 +2517,7 @@
         "Tačka u kojoj se seku zraci paralelni optičkoj osi posle prelamanja",
         "Centar sočiva kroz koji zraci prolaze bez ikakvog skretanja i prelamanja",
         "Ivica sočiva na kojoj se zraci najjače prelamaju i razlažu na boje duge",
-        "Mesto gde stoji predmet"
+        "Tačka u kojoj nastaje lik na zidu, uvek na istom mestu"
       ],
       "zanimljivost": "Kod rasipnog sočiva žiža je imaginarna – u njoj se seku produžeci zraka.",
       "rec": "žiža",
@@ -2619,7 +2619,7 @@
         "Tačka kroz koju zrak prolazi bez skretanja",
         "Žiža sočiva, tačka gde se seku svi prelomljeni zraci",
         "Ivica sočiva, gde je ono najtanje i najoštrije",
-        "Najdeblji deo sočiva, koji je uvek isto što i žiža"
+        "Središte krivine sočiva, koje je uvek na površini"
       ],
       "zanimljivost": "Zrak kroz optički centar je jedan od tri karakteristična zraka za konstrukciju lika.",
       "rec": "centar",
@@ -2656,8 +2656,8 @@
       "odgovori": [
         "Sa sabirnim sočivima",
         "Sa rasipnim sočivima",
-        "Sa ravnim staklima",
-        "Bez sočiva"
+        "Sa ogledalima koja odbijaju svetlost",
+        "Sa prizmama koje skreću sliku u stranu"
       ],
       "zanimljivost": "Plus (+) dioptrija znači sabirno, a minus (−) rasipno sočivo.",
       "rec": "plus"
@@ -2669,8 +2669,8 @@
       "odgovori": [
         "U naočarima, fotoaparatima, mikroskopima i teleskopima",
         "Samo u igračkama i lupama za decu koja istražuju prirodu",
-        "U frižideru, za hlađenje vazduha usmeravanjem svetlosti",
-        "U zvučnicima, gde usmeravaju zvuk ka slušaocima u sobi"
+        "U sušilicama za kosu, za usmeravanje toplog vazduha",
+        "U slušalicama, za usmeravanje zvuka u uho"
       ],
       "zanimljivost": "Prve naočare pojavile su se u Italiji krajem 13. veka.",
       "rec": "naočare"
@@ -2685,7 +2685,7 @@
         "0,25 dioptrije",
         "40 dioptrija"
       ],
-      "zanimljivost": "ω = 1/0,25 m = 4 m⁻¹ = 4 dioptrije.",
+      "zanimljivost": "D = 1 / 0,25 m = 4 m⁻¹ = 4 dioptrije.",
       "rec": "računanje"
     },
     {
@@ -2714,7 +2714,7 @@
       "odgovori": [
         "Ponaša se kao malo sabirno sočivo",
         "Hladi list i štiti ga od jakog letnjeg sunca",
-        "Ništa – kap se samo ispari sa lista za par minuta",
+        "Vezuje se za list i sprečava disanje lista",
         "Odbija svetlost kao ravno ogledalo"
       ],
       "zanimljivost": "Popularno verovanje da kapi zalivanja „spaljuju“ listove uglavnom ne važi – kap retko skupi dovoljno svetlosti.",
@@ -2741,7 +2741,7 @@
         "Množenjem uvećanja objektiva i okulara",
         "Sabiranjem uvećanja objektiva i uvećanja okulara",
         "Deljenjem uvećanja objektiva sa uvećanjem okulara",
-        "Oduzimanjem"
+        "Samo uvećanjem okulara, objektiv služi za osvetljenje"
       ],
       "zanimljivost": "Okular 10× i objektiv 40× daju uvećanje 400×.",
       "rec": "uvećanje"
@@ -2767,7 +2767,7 @@
         "Refraktor koristi sočiva, a reflektor ogledala",
         "Refraktor koristi ogledala, a reflektor koristi sočiva",
         "Nema razlike – to su dva naziva za isti teleskop",
-        "Reflektor je za zvuk"
+        "Refraktor je samo za Sunce, a reflektor za noć"
       ],
       "zanimljivost": "Najveći teleskopi danas su reflektori – ogledala mogu biti mnogo veća od sočiva.",
       "rec": "reflektor"
@@ -2837,7 +2837,7 @@
       "odgovori": [
         "Uređaj koji daje uvećan realan lik na platnu",
         "Uređaj koji umanjuje sliku za mali ekran telefona",
-        "Ogledalo",
+        "Lampa koja osvetljava platno",
         "Kamera za snimanje"
       ],
       "zanimljivost": "Prvi bioskopski projektor napravila su braća Limijer 1895. u Parizu.",
@@ -2869,8 +2869,8 @@
       "odgovori": [
         "Na fotoaparat",
         "Na mikrofon",
-        "Na termometar",
-        "Na sat"
+        "Na zvučnik",
+        "Na kompas"
       ],
       "zanimljivost": "Zenica je kao otvor objektiva, a mrežnjača kao senzor.",
       "rec": "kamera"
@@ -2896,7 +2896,7 @@
         "Veći objektiv skuplja više svetlosti i vidi slabije i dalje objekte",
         "Da budu teži i stabilniji, pa ih vetar ne može pomeriti dok snimaju nebo",
         "Da bi se kroz njih istovremeno moglo gledati više ljudi iz cele opservatorije",
-        "Da ih ne ukradu"
+        "Da bi slika bila obojena, a ne crno-bela"
       ],
       "zanimljivost": "Ekstremno veliki teleskop u Čileu imaće ogledalo prečnika 39 m.",
       "rec": "ogledalo"
@@ -2998,7 +2998,7 @@
       "pitanje": "Zašto je atom u celini neutralan?",
       "odgovori": [
         "Ima jednak broj protona i elektrona",
-        "Nema nijednu česticu u sebi, prazan je",
+        "Ima jednak broj neutrona i elektrona",
         "Ima samo neutrone u svom jezgru, bez ostalog",
         "Uvek je pozitivno naelektrisan, ali slabo"
       ],
@@ -3011,9 +3011,9 @@
       "pitanje": "Kako se tela naelektrišu?",
       "odgovori": [
         "Trljanjem, dodirom ili uticajem (indukcijom)",
-        "Samo hlađenjem na veoma niskoj temperaturi, ispod nule",
-        "Samo bojenjem posebnom metalnom bojom koja sadrži struju",
-        "Ne mogu se naelektrisati ni na koji način, ni u laboratoriji"
+        "Samo zagrevanjem, jer toplota izbacuje elektrone iz tela",
+        "Samo povezivanjem sa jakim magnetom bez dodira",
+        "Samo pod vodom, jer voda skuplja naelektrisanje"
       ],
       "zanimljivost": "Najčešće se naelektrisanje vidi zimi, kada je vazduh suv.",
       "rec": "trljanje"
@@ -3090,7 +3090,7 @@
         "Spajaju se",
         "Ne reaguju jedno na drugo"
       ],
-      "zanimljivost": "Istoimena naelektrisanja se odbijaju, raznoimena privlače.",
+      "zanimljivost": "Isto pravilo važi i za magnetne polove – dva severna se odbijaju.",
       "rec": "odbijanje",
       "medijiOdgovora": {
         "vrsta": "fizika",
@@ -3117,9 +3117,9 @@
       "pitanje": "Šta je uzemljenje?",
       "odgovori": [
         "Povezivanje uređaja sa zemljom da bi naelektrisanje bezbedno oteklo",
-        "Zakopavanje starih uređaja u zemlju posle upotrebe, da ne bi zagađivali",
-        "Hlađenje uređaja posebnom tečnošću koja odvodi toplotu u zemlju ispod kuće",
-        "Bojenje žica"
+        "Zakopavanje uređaja u zemlju radi zaštite od vlage",
+        "Hlađenje uređaja vodom koja odvodi toplotu u zemlju",
+        "Spajanje dva provodnika bez izolacije"
       ],
       "zanimljivost": "Treći, „zaštitni“ kontakt u šuko utičnici služi upravo uzemljenju.",
       "rec": "uzemljenje"
@@ -3186,10 +3186,10 @@
       "tezina": 3,
       "pitanje": "Ako se oba naelektrisanja udvostruče, a rastojanje ostane isto, sila je…",
       "odgovori": [
-        "četiri puta veća",
-        "dva puta veća",
-        "ista",
-        "četiri puta manja"
+        "Četiri puta veća",
+        "Dva puta veća",
+        "Ista",
+        "Četiri puta manja"
       ],
       "zanimljivost": "Sila je srazmerna proizvodu naelektrisanja.",
       "rec": "proizvod"
@@ -3215,7 +3215,7 @@
         "Vlasi dobiju isto naelektrisanje i odbijaju se",
         "Kosa je mokra od znoja, pa se vlasi lepe za češalj",
         "Zbog vetra koji češalj stvara dok se brzo pokreće",
-        "Zbog magneta"
+        "Zato što se kosa grejala od češlja"
       ],
       "zanimljivost": "Isto se dešava kada dodirneš kuglu Van de Grafovog generatora – kosa se digne.",
       "rec": "kosa"
@@ -3291,9 +3291,9 @@
       "pitanje": "Zašto pre ulaska u auto zimi dodirnemo metal ključem?",
       "odgovori": [
         "Da se naelektrisanje isprazni preko ključa, a ne kroz prst",
-        "Da otključamo vrata pre nego što se ključ zaledi od hladnoće",
-        "Da zagrejemo ruku, jer je metalni ključ topliji od karoserije",
-        "Da proverimo da li je brava zamrznuta"
+        "Da se ključ zagreje od ruke pre nego što otvorimo bravu",
+        "Da sprečimo da se bravica zaledi od vlage",
+        "Da proverimo da li je karoserija pod naponom"
       ],
       "zanimljivost": "Varnica koja „peče“ prst bezopasna je, ali neprijatna.",
       "rec": "ključ"
@@ -3318,14 +3318,14 @@
       "odgovori": [
         "Naelektrisan balon indukcijom privlači naelektrisanje suprotnog znaka u zidu",
         "Zid je zbog gvozdene armature u betonu magnet koji privlači naelektrisan gumeni balon",
-        "Balon je lepljiv",
-        "Zbog vazduha"
+        "Zato što je balon napunjen vodom",
+        "Zbog pritiska vazduha u balonu, kao usisivač"
       ],
       "zanimljivost": "Balon može da visi na zidu i više sati ako je vazduh suv.",
       "rec": "balon"
     },
     {
-      "pitanje": "Šta se dešava sa listićima elektroskopa kada mu priđemo naelektrisanim štapom?",
+      "pitanje": "Šta se dešava sa listićima neutralnog elektroskopa kada mu bez dodira priđemo naelektrisanim štapom?",
       "odgovori": [
         "Razmaknu se",
         "Skupe se i dodirnu",
@@ -3350,7 +3350,7 @@
         "Prostor oko naelektrisanog tela u kojem deluje električna sila",
         "Polje sa električnim žicama i stubovima kroz koje struja ide do grada",
         "Prostor oko magneta u kojem gvozdeni predmeti osećaju privlačnu silu",
-        "Livada"
+        "Prostor između dva ogledala u kojem se svetlost odbija"
       ],
       "zanimljivost": "Polje se ne vidi, ali se može prikazati linijama sila.",
       "rec": "polje",
@@ -3413,8 +3413,8 @@
       "odgovori": [
         "Potencijalna energija jediničnog naelektrisanja u nekoj tački polja",
         "Jačina električne struje u nekoj tački provodnika, izražena u amperima",
-        "Masa naelektrisanja",
-        "Brzina elektrona"
+        "Količina naelektrisanja koja prođe kroz provodnik za sekundu",
+        "Sila kojom polje deluje na jedinično naelektrisanje"
       ],
       "zanimljivost": "Slično kao što voda teče sa višeg nivoa na niži, naelektrisanje „teče“ sa višeg na niži potencijal.",
       "rec": "potencijal"
@@ -3427,7 +3427,7 @@
         "Uređaj koji skladišti naelektrisanje i električnu energiju",
         "Baterija za punjenje telefona koja struju dobija iz sunčeve svetlosti",
         "Posebna sijalica koja svetli tek kada se kroz nju propusti jak napon",
-        "Magnet"
+        "Otpornik koji smanjuje struju u kolu"
       ],
       "zanimljivost": "Blic fotoaparata koristi kondenzator koji se puni pa naglo isprazni.",
       "rec": "kondenzator"
@@ -3451,9 +3451,9 @@
       "pitanje": "Šta je potrebno da bi se naelektrisanje kretalo kroz provodnik?",
       "odgovori": [
         "Napon (razlika potencijala)",
-        "Hladnoća koja ubrzava elektrone u žici",
+        "Visoka temperatura žice koja isteruje elektrone",
         "Jak magnet postavljen pored provodnika",
-        "Svetlost"
+        "Veća dužina žice, jer elektroni tad lakše prolaze"
       ],
       "zanimljivost": "Bez napona slobodni elektroni u metalu kreću se samo haotično.",
       "rec": "napon"
@@ -3466,7 +3466,7 @@
         "Metalni oklop u koji ne prodire spoljašnje električno polje",
         "Kavez za ptice od bakra koji je Faradej koristio za oglede",
         "Vrsta jakog magneta u obliku kaveza napravljenog od gvozdene žice",
-        "Baterija"
+        "Vrsta kondenzatora sa dvostrukim slojem metala"
       ],
       "zanimljivost": "Automobil štiti putnike od udara groma jer radi kao Faradejev kavez.",
       "rec": "faradej"
@@ -3490,7 +3490,7 @@
       "pitanje": "Zašto mikrotalasna ima metalnu mrežicu na vratima?",
       "odgovori": [
         "Radi kao Faradejev kavez i ne propušta talase",
-        "Za ukras, da bi mikrotalasna rerna lepše izgledala",
+        "Da bi se spoljašnjost rerne brže zagrevala",
         "Za hlađenje, da bi vazduh izlazio iz rerne",
         "Za lakše otvaranje i zatvaranje vrata rerne"
       ],
@@ -3596,7 +3596,7 @@
         "Munja najčešće udara u visoke predmete",
         "Drvo može pasti na čoveka zbog jake kiše i vetra",
         "Zbog lišća",
-        "Nema opasnosti"
+        "Pod drvetom se stvaraju jači vetrovi"
       ],
       "zanimljivost": "Najbezbednije je u zgradi ili automobilu, daleko od visokih predmeta i vode.",
       "rec": "drvo"
@@ -3660,8 +3660,8 @@
       "odgovori": [
         "Trenje prenosi elektrone",
         "Zbog vlage iz vazduha u sobi",
-        "Zbog toplote tela posle trčanja",
-        "Zbog magneta"
+        "Zato što vlaga iz tela pojačava naelektrisanje",
+        "Zbog pritiska vazduha pri skidanju odeće"
       ],
       "zanimljivost": "Ponekad se u mraku vide i sitne varnice – mini-munje!",
       "rec": "džemper"
@@ -3713,7 +3713,7 @@
         "Metalni trup provodi struju po površini (Faradejev kavez)",
         "Munja nikada ne može da udari avion, jer leti brže od nje i od oblaka",
         "Avioni imaju veliki gromobran na vrhu repa koji odvodi munju u zemlju",
-        "Zbog brzine"
+        "Zato što pilot može da skrene pre nego što munja udari"
       ],
       "zanimljivost": "Svaki putnički avion pogodi munja otprilike jednom godišnje – bez posledica po putnike.",
       "rec": "avion"
@@ -3726,7 +3726,7 @@
         "Sloj atmosfere sa naelektrisanim česticama koji odbija radio-talase",
         "Sloj oblaka u kome nastaju kiša i sneg, najbliži površini Zemlje i ljudima",
         "Ozonski omotač",
-        "Morsko dno"
+        "Donji deo zemljine kore ispod pustinje"
       ],
       "zanimljivost": "Zahvaljujući odbijanju od jonosfere, radio-amateri mogu razgovarati preko celog sveta.",
       "rec": "jonosfera"
@@ -3814,8 +3814,8 @@
       "odgovori": [
         "Od pozitivnog ka negativnom polu izvora (spolja)",
         "Od negativnog ka pozitivnom polu izvora, kroz spoljašnji deo kola",
-        "U krug, bez ikakvog smera, jer se elektroni kreću u svim pravcima",
-        "Nema smera – struja ide istovremeno na obe strane od izvora struje"
+        "Naizmenično, menja smer svake sekunde",
+        "Zavisi od toga koji je potrošač u kolu"
       ],
       "zanimljivost": "Elektroni se zapravo kreću suprotno – smer je dogovoren pre nego što je elektron otkriven.",
       "rec": "smer",
@@ -3950,12 +3950,12 @@
     {
       "lekcija": 17,
       "tezina": 3,
-      "pitanje": "Ko je otkrio da žablji krak trza na dodir dva metala, što je dovelo do baterije?",
+      "pitanje": "Ko je prvi primetio da žablji krak trza kad se dodirne dvema različitim metalima?",
       "odgovori": [
         "Luiđi Galvani",
         "Alesandro Volta",
         "Majkl Faradej (Engleska)",
-        "Andre-Mari Amper"
+        "Majkl Faradej"
       ],
       "zanimljivost": "Galvani je mislio da je to „životinjski elektricitet“, a Volta je pokazao da je izvor u metalima.",
       "rec": "galvani"
@@ -3968,7 +3968,7 @@
         "Zatvoren put kroz koji teče struja",
         "Okrugla žica bez ikakvog prekidača i izvora",
         "Baterija bez žica",
-        "Prekidač"
+        "Put kroz koji teče samo napon bez struje"
       ],
       "zanimljivost": "Ako je kolo prekinuto bilo gde, struja ne teče i sijalica ne svetli.",
       "rec": "kolo",
@@ -4069,7 +4069,7 @@
         "Zatvara i otvara strujno kolo",
         "Pojačava jačinu struje u celom kolu",
         "Meri napon između dva kraja žice",
-        "Pravi struju kada se pritisne prstom"
+        "Smanjuje napon kad se pritisne"
       ],
       "zanimljivost": "Prekidač za svetlo u sobi zapravo samo spaja ili razdvaja žice.",
       "rec": "prekidač",
@@ -4093,7 +4093,7 @@
         "Uređaj koji prekida kolo kada je struja prevelika",
         "Prekidač za svetlo koji pali i gasi sijalicu u sobi",
         "Baterija koja daje rezervnu struju kada nestane napona",
-        "Sijalica"
+        "Prekidač koji se sam uključuje kad se napon vrati"
       ],
       "zanimljivost": "Osigurači štite instalaciju od pregrevanja i požara.",
       "rec": "osigurač"
@@ -4131,8 +4131,8 @@
       "odgovori": [
         "Instrument koji može da meri napon, struju i otpor",
         "Instrument koji može da meri temperaturu, vlažnost i pritisak",
-        "Instrument koji istovremeno meri brzinu, put i vreme kretanja",
-        "Sat"
+        "Instrument koji meri jačinu zvuka i visinu tona",
+        "Merač koji meri samo temperaturu žice"
       ],
       "zanimljivost": "Električari multimetrom proveravaju i da li je žica pod naponom.",
       "rec": "multimetar"
@@ -4153,14 +4153,14 @@
     {
       "lekcija": 18,
       "tezina": 2,
-      "pitanje": "Šta se dešava ako pregori jedna sijalica u nizu redno vezanih lampica za jelku?",
+      "pitanje": "Šta se dešava ako pregori jedna sijalica u običnom nizu redno vezanih lampica za jelku?",
       "odgovori": [
         "Sve se ugase",
         "Ostale svetle jače",
         "Preostale nastave da svetle kao i pre",
         "Samo susedne se ugase"
       ],
-      "zanimljivost": "Moderne lampice imaju zaštitu – pregorela sijalica ne prekida ceo niz.",
+      "zanimljivost": "Kod modernih lanaca lampica ugrađen je šant (mali provodnik) koji premosti pregorelu sijalicu.",
       "rec": "jelka",
       "medijiOdgovora": {
         "vrsta": "fizika",
@@ -4188,7 +4188,7 @@
         "Ima mali otpor, pa bi nastao kratak spoj",
         "Pokvario bi se od previsokog napona baterije",
         "Pokazao bi nulu, jer u kolu nema nijednog potrošača",
-        "Može slobodno"
+        "Pokazao bi previsok napon i prekinuo kolo"
       ],
       "zanimljivost": "Zato ampermetar uvek mora biti u kolu sa potrošačem.",
       "rec": "zaštita"
@@ -4225,7 +4225,7 @@
       "pitanje": "Šta tvrdi Omov zakon?",
       "odgovori": [
         "Jačina struje srazmerna je naponu, a obrnuto srazmerna otporu",
-        "Jačina struje je uvek jednaka naponu, bez obzira na otpor provodnika",
+        "Jačina struje srazmerna je otporu, a obrnuto srazmerna naponu",
         "Otpor ne postoji u bakarnim žicama, pa struja teče potpuno slobodno",
         "Napon je uvek nula u zatvorenom kolu, a struja zavisi samo od baterije"
       ],
@@ -4265,8 +4265,8 @@
       "odgovori": [
         "Od materijala, dužine i debljine",
         "Samo od boje plastične izolacije oko žice",
-        "Samo od mase žice u gramima",
-        "Ne zavisi ni od čega, uvek je isti"
+        "Samo od temperature, materijal nije važan",
+        "Samo od napona koji je priključen na žicu"
       ],
       "zanimljivost": "Duža i tanja žica ima veći otpor.",
       "rec": "žica"
@@ -4277,7 +4277,7 @@
       "pitanje": "Zašto su električni kablovi od bakra?",
       "odgovori": [
         "Bakar ima mali otpor i nije skup kao srebro",
-        "Bakar je lep i sjajan, pa se kablovi bolje vide",
+        "Bakar je tvrd i ne puca kad se savije",
         "Bakar je magnetan, pa privlači struju u žicu",
         "Bakar je izolator"
       ],
@@ -4291,8 +4291,8 @@
       "odgovori": [
         "Raste sa temperaturom",
         "Opada sa porastom temperature",
-        "Ne menja se uopšte nikada",
-        "Postaje nula na sobnoj temperaturi"
+        "Zavisi samo od boje žice, a ne od temperature",
+        "Opada na vrlo visokim temperaturama, pa je manji"
       ],
       "zanimljivost": "Neki materijali na veoma niskim temperaturama potpuno gube otpor – to je superprovodljivost.",
       "rec": "temperatura"
@@ -4342,8 +4342,8 @@
       "pitanje": "Zašto se električna grejalica zagreva?",
       "odgovori": [
         "Struja prolazi kroz žicu velikog otpora i zagreva je",
-        "Ima malu vatru unutar kućišta koja greje vazduh oko nje",
-        "Zbog magneta koji se okreće i trenjem zagreva kućište",
+        "Struja prolazi kroz vazduh u kućištu i trenjem ga greje",
+        "Zato što se kućište trlja o vazduh pri radu",
         "Ne zagreva se – samo izbacuje topao vazduh iz svoje cevi"
       ],
       "zanimljivost": "Žice grejača su od legure (npr. nikl-hrom) koja ima veliki otpor i ne oksidiše lako.",
@@ -4383,7 +4383,7 @@
         "Smanjuje otpor tela, pa kroz telo teče veća struja",
         "Povećava otpor tela, pa kroz telo teče mnogo jača struja",
         "Nema razlike – suva i mokra koža imaju potpuno isti otpor",
-        "Hladi struju"
+        "Štiti od struje, jer voda odvodi naelektrisanje"
       ],
       "zanimljivost": "Suva koža ima otpor i desetinama puta veći od mokre.",
       "rec": "koža"
@@ -4601,7 +4601,7 @@
         "Smanjuje se",
         "Povećava se",
         "Ne menja se",
-        "Postaje beskonačan"
+        "Raste ako je novi otpornik veći od ostalih"
       ],
       "zanimljivost": "Paralelna veza je kao više traka na autoputu – lakše se prolazi.",
       "rec": "smanjenje"
@@ -4612,8 +4612,8 @@
       "pitanje": "Zašto se uključivanjem previše uređaja u jedan produžni kabl izbaci osigurač?",
       "odgovori": [
         "Ukupni otpor se smanji, a ukupna struja poveća",
-        "Napon u kablu padne na nulu, pa se uređaji ugase",
-        "Uređaji se „svađaju“ oko struje, pa jedan preuzme sve",
+        "Napon u kablu opada, pa uređaji slabije rade",
+        "Ukupni otpor poraste, pa struja padne",
         "Kabl je prekratak za toliko uređaja, pa se pregreje"
       ],
       "zanimljivost": "Preopterećen produžni kabl može da se pregreje i izazove požar.",
@@ -4622,15 +4622,15 @@
     {
       "lekcija": 20,
       "tezina": 3,
-      "pitanje": "Kako je u stvarnosti vezana većina lampica za jelku danas?",
+      "pitanje": "Kako se vezuju lampice u lancu za jelku da pregorela sijalica ne ugasi ceo lanac?",
       "odgovori": [
-        "U grupama, kombinovano redno i paralelno",
+        "Paralelno, svaka lampica ima svoj put za struju",
         "Sve redno, jedna za drugom u jednom dugom nizu",
-        "Sve paralelno pojedinačno",
-        "Nisu vezane"
+        "Samo jedna lampica prima struju, ostale su na zalihi",
+        "Lampice nisu vezane, svaka ima svoj izvor"
       ],
-      "zanimljivost": "Kombinovana (mešovita) veza omogućava niske napone na lampicama i otpornost na kvar.",
-      "rec": "mešovito"
+      "zanimljivost": "Kod LED lanaca za jelku često postoji šant koji premošćuje pregorelu diodu.",
+      "rec": "paralelno"
     },
     {
       "lekcija": 20,
@@ -4714,8 +4714,8 @@
       "odgovori": [
         "Gašenjem jedne ugasile bi se sve, a i napon bi se delio",
         "Zato što je redno vezivanje mnogo skuplje i troši više bakarnih žica",
-        "Zbog zakona",
-        "Može i redno bez razlike"
+        "Zato što redno vezane sijalice jače svetle",
+        "Zato što redno vezane sijalice ne mogu da svetle na struji iz mreže"
       ],
       "zanimljivost": "Svaka sijalica u kući dobija punih 230 V.",
       "rec": "sijalice",
@@ -4746,7 +4746,7 @@
         "Veći otpornik",
         "Manji",
         "Isti su",
-        "Zavisi od boje"
+        "Zavisi od materijala žice"
       ],
       "zanimljivost": "Struja je ista, pa je napon srazmeran otporu (U = I·R).",
       "rec": "veći"
@@ -4836,7 +4836,7 @@
       "odgovori": [
         "Veći deo energije pretvaraju u svetlost, a manje u toplotu",
         "Svetle mnogo slabije od običnih sijalica, pa zato troše i manje struje",
-        "Rade bez struje, jer svetlost dobijaju od dnevne svetlosti koju upiju danju",
+        "Rade samo na baterije, pa ne troše struju iz mreže",
         "Kraće rade – uključuju se samo na kratko pa ukupno potroše manje energije"
       ],
       "zanimljivost": "Stara sijalica sa užarenom niti pretvara u svetlost samo oko 5% energije.",
@@ -4888,8 +4888,8 @@
       "odgovori": [
         "Za istu snagu manja je struja, pa su manji gubici na toplotu",
         "Da bi struja brže putovala kroz žice, pa stigla do grada za manje vremena",
-        "Zbog ptica, jer visok napon tera ptice da ne sleću na žice dalekovoda",
-        "Da bi žice bolje svetlele noću, pa ih piloti aviona lakše vide sa visine"
+        "Da bi se žice bolje hladile vetrom",
+        "Da bi se smanjilo naelektrisanje oblaka"
       ],
       "zanimljivost": "Transformatori podižu napon za prenos, a zatim ga spuštaju na 230 V za kuće.",
       "rec": "dalekovod"
@@ -4941,7 +4941,7 @@
         "Velika struja zagreje tanku žicu osigurača i ona se istopi",
         "Zbog jakog magnetnog polja koje struja stvara oko osigurača",
         "Zbog previsokog napona koji probija izolaciju i pali kućište",
-        "Zbog svetlosti iskre koja nastaje kad se uključi neki uređaj"
+        "Zato što osigurač gubi otpor pri visokom naponu"
       ],
       "zanimljivost": "Moderni automatski osigurači se ne tope – „iskoče“ i mogu se ponovo uključiti.",
       "rec": "topljenje"
@@ -5005,7 +5005,7 @@
       "odgovori": [
         "Kada se gas jonizuje, npr. u fluorescentnoj cevi ili munji",
         "Nikada – gas je uvek izolator i ne može da provodi električnu struju",
-        "Uvek lako",
+        "Kroz gas struja teče samo pri veoma niskom naponu",
         "Samo kroz čist kiseonik"
       ],
       "zanimljivost": "Neonske reklame svetle jer struja prolazi kroz razređen neon.",
@@ -5096,8 +5096,8 @@
       "odgovori": [
         "Voda provodi struju munje na velike udaljenosti",
         "Voda je tokom oluje veoma hladna, pa telo može da dobije grč",
-        "Ribe tokom grmljavine postaju nemirne i ujedaju kupače",
-        "Nema opasnosti"
+        "Vetar tada prevrće čamce i kupače pod vodom",
+        "Voda kad je hladna jače privlači munju"
       ],
       "zanimljivost": "Munja koja udari u vodu širi se po površini desetinama metara.",
       "rec": "reka"
@@ -5109,8 +5109,8 @@
       "odgovori": [
         "Struja kroz živine pare stvara UV zračenje, koje premaz pretvara u vidljivu svetlost",
         "Struja zagreva tanku užarenu nit od volframa koja zatim svetli belom svetlošću u cevi",
-        "U cevi gori gas iz plinske mreže, a staklo propušta samo jedan deo svetlosti tog plamena",
-        "Jak magnet u cevi pokreće elektrone u krug, pa oni zbog brzog kretanja počinju da sijaju"
+        "Struja zagreva živu u tečnom stanju, koja tada sija plavo",
+        "Elektroni udaraju u staklo koje samo sija kao TV ekran"
       ],
       "zanimljivost": "Zato se fluorescentne cevi ne smeju razbijati – sadrže malo žive.",
       "rec": "cev"
@@ -5135,8 +5135,8 @@
       "odgovori": [
         "Da, dobro, jer sadrži mnogo rastvorenih soli",
         "Ne, morska voda je izolator kao i destilovana voda",
-        "Samo noću, kada je hladnija i kada nema talasa",
-        "Samo leti"
+        "Samo kad je hladna, ispod 10 °C",
+        "Samo kad je uzburkana talasima"
       ],
       "zanimljivost": "Električne ribe i ajkule koriste provodljivost vode da otkriju plen.",
       "rec": "more"
@@ -5161,8 +5161,8 @@
       "odgovori": [
         "Prirodni magnetni mineral (kamen)",
         "Vrsta legure gvožđa, nikla i kobalta",
-        "Plastični magnet za vrata od frižidera",
-        "Vrsta baterije sa magnetima"
+        "Vrsta čelika koji se koristi u mostovima",
+        "Vrsta gvozdene rude bez magnetnih svojstava"
       ],
       "zanimljivost": "Prema legendi, ime potiče od pastira Magnesa čiji su se gvozdeni ekseri na obući zalepili za stenu.",
       "rec": "magnetit"
@@ -5193,7 +5193,7 @@
         "Blizu geografskog severnog pola",
         "Tačno na Južnom geografskom polu",
         "Na ekvatoru, u sredini Atlantika",
-        "U Srbiji, blizu planine Kopaonik"
+        "U Sahari, blizu ekvatora"
       ],
       "zanimljivost": "Zato severni pol igle kompasa pokazuje na geografski sever.",
       "rec": "pol",
@@ -5242,7 +5242,7 @@
         "Zemljino magnetno polje",
         "Ozonski omotač",
         "Oblaci",
-        "Mesec"
+        "Vodena para u gornjim slojevima vazduha"
       ],
       "zanimljivost": "Polarna svetlost nastaje kada te čestice uđu u atmosferu blizu polova.",
       "rec": "zaštita"
@@ -5255,7 +5255,7 @@
         "Da, sporo se pomeraju, a kroz istoriju su se i obrtali",
         "Nikada – polovi su uvek na istom mestu od nastanka Zemlje do danas",
         "Svakog dana se pomeraju za po nekoliko stotina kilometara ka ekvatoru",
-        "Samo zimi, kada se led na polovima širi i pomera Zemljinu osu rotacije"
+        "Samo u dubokim vulkanskim erupcijama"
       ],
       "zanimljivost": "Poslednje obrtanje polova desilo se pre oko 780.000 godina – tragovi su ostali u stenama.",
       "rec": "obrtanje"
@@ -5351,7 +5351,7 @@
         "Snimanje unutrašnjosti tela pomoću jakog magnetnog polja i radio-talasa",
         "Snimanje kostiju pomoću rendgenskih zraka koji prolaze kroz meko tkivo tela",
         "Snimanje unutrašnjih organa pomoću zvučnih talasa koje uho ne može da čuje",
-        "Termometar"
+        "Snimanje srca pomoću elektroda na prsima"
       ],
       "zanimljivost": "Pre ulaska u MR moraju se skinuti svi metalni predmeti – polje je hiljadama puta jače od Zemljinog.",
       "rec": "magnet"
@@ -5417,7 +5417,7 @@
       "odgovori": [
         "Većom strujom, većim brojem navojaka i gvozdenim jezgrom",
         "Bojenjem žice kalema posebnim lakom koji jača magnetno polje kalema",
-        "Samo hlađenjem kalema u frižideru, jer je hladan kalem uvek jači magnet",
+        "Smanjenjem broja navojaka, jer se tako sabija polje",
         "Smanjenjem struje kroz kalem, jer slabija struja stvara jače magnetno polje"
       ],
       "zanimljivost": "Najjači elektromagneti koriste superprovodne kalemove hlađene tečnim helijumom.",
@@ -5430,10 +5430,10 @@
       "odgovori": [
         "U zvonu, zvučniku, relejima i električnim motorima",
         "U živinom termometru, za pomeranje stuba žive gore-dole",
-        "U metalnom lenjiru, da bi se lepio za tablu dok se crta",
-        "U olovci"
+        "U kompasu, da bi igla uvek pokazivala sever",
+        "U staklenoj lampi, za pojačavanje svetlosti"
       ],
-      "zanimljivost": "Kućno zvonce radi tako što elektromagnet stalno privlači i pušta čekić.",
+      "zanimljivost": "Kućno zvonce radi tako što elektromagnet privlači čekić koji udari u zvono, pa se ciklus ponavlja.",
       "rec": "zvono"
     },
     {
@@ -5558,7 +5558,7 @@
         "Uređaj koji menja napon naizmenične struje",
         "Baterija koja pretvara jednosmernu struju u naizmeničnu",
         "Prekidač koji naizmenično pali i gasi struju u mreži",
-        "Motor"
+        "Uređaj koji pretvara svetlost u struju"
       ],
       "zanimljivost": "Punjač telefona sadrži mali transformator ili elektroniku koja spušta 230 V na oko 5 V.",
       "rec": "napon"
@@ -5613,7 +5613,7 @@
       "pitanje": "Šta određuje smer sile na provodnik u magnetnom polju?",
       "odgovori": [
         "Smer struje i smer magnetnog polja",
-        "Samo boja izolacije oko žice",
+        "Samo dužina žice, bez obzira na smer struje",
         "Samo debljina bakarne žice u celom kolu",
         "Temperatura žice i vazduha koji je oko nje"
       ],
@@ -5641,7 +5641,7 @@
         "Struja kroz kalem u polju magneta pokreće membranu koja stvara zvuk",
         "Svetlost iz sijalice u kućištu zagreva vazduh koji zatim treperi i stvara zvuk",
         "Toplota žice širi kućište zvučnika, pa ono pucketa u ritmu električne muzike",
-        "Vodom"
+        "Pritiskom vazduha koji pokreće kazaljku na skali"
       ],
       "zanimljivost": "Mikrofon radi obrnuto – zvuk pomera membranu i stvara struju.",
       "rec": "zvučnik"
@@ -5678,8 +5678,8 @@
       "pitanje": "Kako se može promeniti smer okretanja motora jednosmerne struje?",
       "odgovori": [
         "Promenom smera struje ili polova magneta",
-        "Bojenjem žica kalema u suprotnu boju od prvobitne",
-        "Hlađenjem magneta u frižideru neposredno pre rada",
+        "Povećanjem napona, jer se tada motor okreće unazad",
+        "Smanjenjem broja navojaka u kalemu",
         "Ne može – smer okretanja motora je uvek isti"
       ],
       "zanimljivost": "Električni automobili tako „idu unazad“ bez posebnog menjača.",
@@ -5887,8 +5887,8 @@
       "odgovori": [
         "Dž. Dž. Tomson",
         "Ernest Raderford",
-        "Nils Bor (Danska)",
-        "Džejms Čedvik (Engleska)"
+        "Nils Bor",
+        "Džejms Čedvik"
       ],
       "zanimljivost": "Tomson je zamislio atom kao „puding sa suvim grožđem“ – elektroni utisnuti u pozitivnu masu.",
       "rec": "tomson"
@@ -5901,7 +5901,7 @@
         "Gotovo potpuno – skoro sva masa je u sićušnom jezgru",
         "Uopšte nije prazan – čestice su gusto zbijene jedna uz drugu kao zrna peska",
         "Pola je prazno, a pola atoma zauzimaju jezgro i elektroni jedni do drugih",
-        "Atom je pun vode, a jezgro i elektroni plivaju u njoj kao ribe u akvarijumu"
+        "Atom je pun vazduha pod pritiskom, kao balon"
       ],
       "zanimljivost": "Kada bi se iz svih atoma ljudi izbacio „prazan prostor“, celo čovečanstvo stalo bi u zapreminu kocke šećera.",
       "rec": "praznina",
@@ -6036,7 +6036,7 @@
         "Snop brzih elektrona (ili pozitrona) iz jezgra",
         "Jezgra helijuma (dva protona i dva neutrona) iz jezgra",
         "Svetlost visoke energije koju zrače užarena tela i Sunce",
-        "Zvuk koji nastaje pri raspadu jezgara, ali ga uho ne čuje"
+        "Talas koji nastaje kad se jezgro hladi"
       ],
       "zanimljivost": "Beta zračenje zaustavlja tanka aluminijumska ploča.",
       "rec": "beta"
@@ -6061,8 +6061,8 @@
       "odgovori": [
         "Vreme za koje se raspadne polovina jezgara radioaktivnog uzorka",
         "Vreme za koje se raspadnu baš sva jezgra radioaktivnog uzorka u sudu",
-        "Vreme koje protekne od nastanka uzorka do njegove velike eksplozije",
-        "Starost atoma"
+        "Vreme u kome se uzorak zagreje na polovinu temperature",
+        "Vreme za koje se uzorak potpuno ohladi do sobne temperature"
       ],
       "zanimljivost": "Ugljenik-14 ima vreme poluraspada oko 5.730 godina – na tome se zasniva datiranje arheoloških nalaza.",
       "rec": "poluraspad",
@@ -6150,9 +6150,9 @@
       "pitanje": "Šta se dešava sa elementom kada mu jezgro emituje alfa-česticu?",
       "odgovori": [
         "Pretvara se u drugi element",
-        "Ostaje potpuno isti element kao i ranije",
+        "Dobija novi elektron i postaje jon",
         "Nestaje",
-        "Postaje magnet"
+        "Postaje magnet, jer se jezgro poravna"
       ],
       "zanimljivost": "Alhemičari su sanjali o pretvaranju elemenata – radioaktivnost to radi spontano.",
       "rec": "pretvaranje"
@@ -6191,7 +6191,7 @@
         "Radioaktivni gas koji izlazi iz tla i može se nakupljati u podrumima",
         "Vrsta lakog metala koji se koristi za pravljenje aviona i delova raketa",
         "Lek za plućne bolesti koji se udiše u banjama i lečilištima širom sveta",
-        "Vrsta svetlosti"
+        "Vrsta vode koja se koristi u banjama"
       ],
       "zanimljivost": "Redovno provetravanje podruma smanjuje količinu radona.",
       "rec": "radon"
@@ -6202,9 +6202,9 @@
       "pitanje": "Zašto je radioaktivno zračenje opasno za živa bića?",
       "odgovori": [
         "Oštećuje ćelije i DNK",
-        "Hladi telo i snižava temperaturu",
-        "Hrani ćelije",
-        "Nije opasno"
+        "Samo privremeno menja boju kože, bez trajnih posledica",
+        "Hladi unutrašnje organe i menja njihov rad",
+        "Samo kratkotrajno jača imunitet, bez posledica"
       ],
       "zanimljivost": "Zbog toga radnici sa izvorima zračenja nose dozimetre.",
       "rec": "opasnost"
@@ -6215,9 +6215,9 @@
       "pitanje": "Kako se koristi zračenje u medicini?",
       "odgovori": [
         "Za lečenje raka (zračna terapija) i dijagnostiku",
-        "Za hlađenje bolesnika sa veoma visokom temperaturom",
+        "Za merenje krvnog pritiska kroz zrak i ekran",
         "Za pravljenje vitamina D u koži bolesnika u bolnici",
-        "Ne koristi se"
+        "Samo za pojačanje zvuka u slušnom aparatu"
       ],
       "zanimljivost": "Zračenje se usmerava na tumor iz više pravaca da bi zdravo tkivo što manje stradalo.",
       "rec": "terapija"
@@ -6267,11 +6267,11 @@
       "pitanje": "Kako se zaštititi od zračenja?",
       "odgovori": [
         "Udaljenost, kraće izlaganje i zaklon (olovo, beton)",
-        "Debela vunena odeća, šal i kapa navučena preko glave i ušiju",
-        "Sunčane naočare",
-        "Nije moguće"
+        "Debela vunena odeća, koja upija radioaktivnost",
+        "Sunčane naočare, jer štite oči od zračenja",
+        "Nošenje olovnog kišobrana"
       ],
-      "zanimljivost": "Tri pravila zaštite su: vreme, rastojanje, zaklon.",
+      "zanimljivost": "Najveći deo prirodne doze dolazi od radona iz tla i stena, a ne od nuklearnih elektrana.",
       "rec": "zaštita",
       "medijiOdgovora": {
         "vrsta": "fizika",
@@ -6300,7 +6300,7 @@
         "Ozračivanjem se uništavaju bakterije i paraziti",
         "Hrana postaje radioaktivna, pa se duže čuva u frižideru",
         "Hladi se zračenjem, isto kao u zamrzivaču, bez struje",
-        "Ne koristi se"
+        "Samo za hranu u svemirskim letelicama"
       ],
       "zanimljivost": "Ozračena hrana nije radioaktivna, kao što ni ti ne postaješ radioaktivan posle rendgenskog snimka.",
       "rec": "hrana"
@@ -6331,7 +6331,7 @@
         "Mala količina radioaktivnog izotopa koja pokazuje kako radi neki organ",
         "Vrsta flastera koji se lepi na kožu i meri temperaturu i otkucaje srca bolesnika",
         "Tanka igla koja se uvodi u venu da bi lekar video kako krv teče kroz telo i organe",
-        "Lek protiv bolova"
+        "Vrsta kontrasta koji se pije samo pre rendgena zuba"
       ],
       "zanimljivost": "Scintigrafija štitne žlezde koristi izotop tehnecijuma ili joda.",
       "rec": "izotop"
@@ -6394,8 +6394,8 @@
       "pitanje": "Zašto piloti i stjuardese tokom godine prime nešto veću dozu zračenja od ljudi na zemlji?",
       "odgovori": [
         "Na velikoj visini ih atmosfera manje štiti od kosmičkog zračenja",
-        "Zbog radara u kabini, koji stalno šalje jake talase kroz avion",
-        "Zbog mlaznih motora, koji tokom leta ispuštaju radioaktivne gasove",
+        "Zbog stalnog pritiska vazduha u kabini koji sabija ćelije",
+        "Zbog elektronike u avionu, koja zrači jače od zemaljske",
         "Zbog mobilnih telefona putnika, koji u avionu rade punom snagom"
       ],
       "zanimljivost": "Kosmičko zračenje čine čestice velike energije iz svemira. Na 10 km visine njegova doza je i stotinak puta veća nego na nivou mora, ali je jedan let i dalje bezbedan.",
@@ -6460,9 +6460,9 @@
       "tezina": 3,
       "pitanje": "Ko je otkrio fisiju uranijuma 1938. godine?",
       "odgovori": [
-        "Oto Han i Fric Štrasman (uz objašnjenje Lize Majtner)",
+        "Oto Han i Fric Štrasman",
         "Albert Ajnštajn i Nils Bor tokom zajedničkog rada u Berlinu i Kopenhagenu",
-        "Ernest Raderford i Džejms Čedvik u laboratoriji u Kembridžu (Engleska)",
+        "Ernest Raderford i Džejms Čedvik u laboratoriji u Kembridžu",
         "Marija i Pjer Kiri, koji su prethodno otkrili polonijum i radijum u Parizu"
       ],
       "zanimljivost": "Hemijski element meitnerijum nosi ime po Lizi Majtner.",
@@ -6545,8 +6545,8 @@
       "odgovori": [
         "Potrebne su temperature od više miliona stepeni i držanje plazme",
         "Nema dovoljno goriva, jer je vodonik na Zemlji izuzetno redak i skup za vađenje",
-        "Zabranjena je",
-        "Previše je jednostavna"
+        "Ne može da se kontroliše, jer se uvek pretvori u bombu",
+        "Vodonik ne može da se zagreje iznad sobne temperature"
       ],
       "zanimljivost": "Međunarodni projekat ITER u Francuskoj gradi eksperimentalni fuzioni reaktor.",
       "rec": "iter"
@@ -6571,7 +6571,7 @@
       "odgovori": [
         "Radioaktivni materijal koji se mora bezbedno čuvati veoma dugo",
         "Ugljen-dioksid koji se izbacuje kroz visoke dimnjake i greje atmosferu",
-        "Obična topla voda koja se posle hlađenja reaktora vraća pravo u reku",
+        "Gasovi koji se zadržavaju u tornjevima za hlađenje",
         "Pepeo"
       ],
       "zanimljivost": "Neki izotopi u otpadu ostaju opasni hiljadama godina.",
@@ -6580,12 +6580,12 @@
     {
       "lekcija": 29,
       "tezina": 1,
-      "pitanje": "Šta nuklearne elektrane NE ispuštaju u velikoj meri tokom rada?",
+      "pitanje": "Šta nuklearne elektrane tokom rada ne ispuštaju u vazduh u velikim količinama?",
       "odgovori": [
         "Ugljen-dioksid",
-        "Toplotu u reke i jezera",
-        "Vodenu paru kroz tornjeve",
-        "Električnu struju u mrežu"
+        "Vodenu paru iz rashladnih tornjeva",
+        "Toplotu u vazduh, kroz rashladne tornjeve",
+        "Dim i čađ iz dimnjaka"
       ],
       "zanimljivost": "Para iz velikih rashladnih tornjeva je samo vodena para.",
       "rec": "para"
@@ -6611,7 +6611,7 @@
         "Deuterijum i tricijum",
         "Samo procijum (obični vodonik)",
         "Uranijum-235 i plutonijum",
-        "Helijum-4 i helijum-3"
+        "Ugljenik-12 i kiseonik-16"
       ],
       "zanimljivost": "Deuterijuma ima u morskoj vodi – u jednoj litri dovoljno za energiju 300 litara benzina, kada bi fuzija bila praktična.",
       "rec": "deuterijum",
@@ -6631,7 +6631,7 @@
         "Samo svemir – kretanje planeta, zvezda i galaksija i sam nastanak celog svemira",
         "Samo kvarkove"
       ],
-      "zanimljivost": "Klasična fizika (Njutn, Maksvel) savršeno opisuje kretanje lopte, ali ne i elektrona u atomu.",
+      "zanimljivost": "Klasična fizika (Njutn, Maksvel) vrlo dobro opisuje kretanje lopte, ali ne i elektrona u atomu.",
       "rec": "klasična"
     },
     {

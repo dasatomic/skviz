@@ -55,7 +55,7 @@ module.exports = ({ L, Z, K, G, r, S3, proveri, pravilni, ime, naKrugu }) => {
      K('$= {108|2} = 54$. ($66$ je broj svih duži između temena – i stranica i dijagonala.)')]);
 
   Z(2, 'Koji mnogougao ima isto toliko dijagonala koliko i stranica?',
-    ['petougao', 'šestougao', 'četvorougao', 'takav ne postoji'],
+    ['petougao', 'šestougao', 'četvorougao', 'osmougao'],
     [K('${n(n − 3)|2} = n$, pa je (za $n ≠ 0$) $n − 3 = 2$.'),
      K('$n = 5$: petougao ima $5$ stranica i $5$ dijagonala.')]);
 

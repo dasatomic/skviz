@@ -138,7 +138,7 @@
         "An axiom",
         "An invariant"
       ],
-      "zanimljivost": "You can check a tautology with a truth table – and Lamport suggests letting a computer do it: the TLC model checker can verify propositional tautologies too.",
+      "zanimljivost": "You can check a tautology with a truth table, and computers can do this too: TLA+ tools evaluate such a formula over all combinations of BOOLEAN values.",
       "rec": "tautologija"
     },
     {
@@ -188,7 +188,7 @@
         "One",
         "Two",
         "Three",
-        "None – the notation is invalid"
+        "Four"
       ],
       "zanimljivost": "A set is completely determined by its elements: order and repetition don't matter. The book doesn't even define a set – the set and the relation ∈ are taken as undefined concepts.",
       "rec": "skup"
@@ -274,12 +274,12 @@
     {
       "lekcija": 1,
       "tezina": 2,
-      "pitanje": "Why does the book recommend bounded quantification ($∀ x ∈ S : F$) over unbounded ($∀ x : F$)?",
+      "pitanje": "Why do TLA+ specifications prefer bounded quantification ($∀ x ∈ S : F$) to unbounded ones ($∀ x : F$)?",
       "odgovori": [
-        "It's easier for people and tools",
+        "Because TLC can enumerate the set S and evaluate the formula",
         "Unbounded quantifiers don't exist in TLA+",
         "Unbounded quantifiers are always false",
-        "Bounded ones are faster to compute by hand"
+        "Unbounded quantifiers can only range over numbers"
       ],
       "zanimljivost": "Both kinds exist and are related by $(∀ x ∈ S : F) ≡ (∀ x : (x ∈ S) ⇒ F)$. For ∃ the corresponding rule uses ∧ instead of ⇒.",
       "rec": "granica"
@@ -294,7 +294,7 @@
         "A global variable",
         "A primed variable"
       ],
-      "zanimljivost": "Lamport finds the term a bit misleading: a bound variable doesn't really occur in the formula, since renaming it doesn't change the formula's meaning.",
+      "zanimljivost": "A bound variable can be renamed without changing the meaning: $∃ m ∈ Nat : m + 1 > m$ says exactly the same thing. Its name is only a placeholder.",
       "rec": "vezana"
     },
     {
@@ -410,12 +410,12 @@
     {
       "lekcija": 2,
       "tezina": 2,
-      "pitanje": "Why does Lamport say it's a mistake to take „an action is executed“ literally?",
+      "pitanje": "What does it mean to say that the action $HCnxt$ was executed?",
       "odgovori": [
-        "An action is a formula, and formulas aren't executed",
-        "Only the TLC model checker executes actions",
-        "An action is executed only once it is proved",
-        "Actions always execute in parallel, not in sequence"
+        "A step occurred that satisfies $HCnxt$",
+        "The model checker evaluated $HCnxt$ in the initial state",
+        "Every variable was assigned its primed value",
+        "The state was proved reachable before the action ran"
       ],
       "zanimljivost": "We say „$HCnxt$ was executed“ when a step satisfying $HCnxt$ occurs – but that is just a convenient way of speaking.",
       "rec": "formula"
@@ -538,7 +538,7 @@
         "$hr$ increases in every step",
         "$HCini$ is the only action"
       ],
-      "zanimljivost": "It's a type-correctness theorem. Logicians would call the formula „valid“ and reserve „theorem“ for formulas that are provably valid.",
+      "zanimljivost": "The theorem only asserts that hr keeps its type. TLC can check it as an invariant, and it can also be proved from the definitions of HCini and HCnxt.",
       "rec": "teorema",
       "mediji": {
         "vrsta": "kod",
@@ -568,7 +568,7 @@
         "Only the third",
         "None of them"
       ],
-      "zanimljivost": "77.2 ≠ 12, so $hr' = hr + 1$ is allowed. The whole behavior still doesn't satisfy $HC$ – Lamport jokes that $hr = -2$ could be the state after a bomb fell on the clock.",
+      "zanimljivost": "The step from 11 to 77.2 satisfies neither HCnxt nor stuttering, so no behavior containing it is a behavior of HC. The step from 77.2 to 78.2 is an HCnxt step, since 77.2 ≠ 12.",
       "rec": "bomba"
     },
     {
@@ -583,7 +583,7 @@
       ],
       "zanimljivost": "$#$ is the ASCII way to type ≠. The prime ($hr'$) means „the value of $hr$ in the next state“ – the whole formula relates two states, so it's an action, not an assignment.",
       "rec": "sat",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "kod",
         "tekst": "HCnxt == hr' = IF hr # 12 THEN hr + 1\n                         ELSE 1"
       }
@@ -611,7 +611,7 @@
         "$in$, $out$, $clk$",
         "$msg$, $req$, $ok$"
       ],
-      "zanimljivost": "The variables represent voltages on wires. Lamport chose to let $val$ and $rdy$ change in the same step – even though voltages on different wires never change at exactly the same instant.",
+      "zanimljivost": "The variables stand for voltages on wires. In the book's Send, val and rdy change in one step – a simplification, since real wires never change at exactly the same instant.",
       "rec": "žica"
     },
     {
@@ -624,7 +624,7 @@
         "Learning the syntax of TLA+",
         "Configuring the model checker"
       ],
-      "zanimljivost": "„I can teach you TLA+, but I don't know how to teach you about abstraction“ – according to Lamport, that skill is learned only through experience.",
+      "zanimljivost": "Abstraction means deciding which details to leave out. Lamport's advice on writing specifications comes later, in Chapter 7.",
       "rec": "apstrakcija"
     },
     {
@@ -637,7 +637,7 @@
         "When $ack = 1$",
         "In every state"
       ],
-      "zanimljivost": "Lamport recommends starting an action's definition with its enabling condition, since that is usually the first question a reader asks.",
+      "zanimljivost": "Starting an action's definition with its enabling condition is natural, since a reader's first question is when the action can happen.",
       "rec": "uslov"
     },
     {
@@ -702,7 +702,7 @@
         "The whole new record",
         "The number of record fields"
       ],
-      "zanimljivost": "The ! stands for the new record that EXCEPT builds from $chan$, and @ for the old value of the field being changed. So $1 - @$ „flips“ the bit.",
+      "zanimljivost": "The ! stands for the record being changed (here chan), and @ for the current value of the field being replaced. So 1 - @ flips the bit. This is the EXCEPT syntax for updating one field.",
       "rec": "zapis",
       "mediji": {
         "vrsta": "kod",
@@ -745,7 +745,7 @@
         "$∃ v ∈ S : ∃ w ∈ T : A$",
         "$∀ v ∈ S : v ∈ T$"
       ],
-      "zanimljivost": "Redeclaring a name inside its own scope is forbidden. Programming languages usually allow it, but Lamport says it leads to confusion and errors.",
+      "zanimljivost": "Redeclaring a name inside its own scope is forbidden. Many programming languages allow such shadowing, but in TLA+ it is illegal.",
       "rec": "opseg"
     },
     {
@@ -758,7 +758,7 @@
         "$chan.ack$ may only be used with a prime",
         "Each conjunct must be on its own line"
       ],
-      "zanimljivost": "$Send(-5) ∧ (chan.ack = 1)$ is fine. $Send$ alone is, in Lamport's words, „nonsyntactic nonsense“, like $a + * b +$.",
+      "zanimljivost": "Send(-5) ∧ (chan.ack = 1) is fine. Plain Send is an operator with an argument, not a value, so it cannot be used as a conjunct on its own.",
       "rec": "operator"
     },
     {
@@ -781,7 +781,7 @@
         ],
         [
           "Invariant",
-          "Predicate true in every state"
+          "Predicate true in every reachable state"
         ]
       ],
       "zanimljivost": "These four notions run through the whole book – everything built later rests on them.",
@@ -794,41 +794,37 @@
       "odgovori": [
         "The protocol is the same whatever the data",
         "Variables cannot have sets as values",
-        "TLA+ does not support 32-bit numbers",
+        "Each message must carry its own type",
         "Constants are checked faster than variables"
       ],
-      "zanimljivost": "With no restriction, the sender could send 37, then −15, then the whole set $Nat$. The parameter $Data$ is a compromise between „anything“ and „only 32-bit numbers“.",
+      "zanimljivost": "With no restriction, the sender could send 37, then −15, or even a whole set of values. The parameter $Data$ is a compromise between „anything“ and „only 32-bit numbers“.",
       "rec": "podatak"
     },
     {
       "lekcija": 3,
       "tezina": 2,
-      "pitanje": "Since a symbol must be defined before it is used, how can a spec be read „top-down“?",
+      "pitanje": "What does TLA+ require about the order of definitions in a module?",
       "odgovori": [
-        "With comments and by splitting it into modules",
-        "By writing the definitions in reverse order",
-        "With a $FORWARD$ keyword before the definition",
-        "You can't – it has to be read bottom-up"
+        "A symbol must be defined before it is used",
+        "Definitions may appear in any order",
+        "Definitions must be sorted alphabetically",
+        "Theorems must come before definitions"
       ],
-      "zanimljivost": "The book's example: $HourClock$ can be split into $HCVar$, $HCActions$ and $HCSpec$, and the reader told in which order to read them.",
+      "zanimljivost": "Because of this rule, long specs are easier to read with comments that explain the order, so the reader knows where to look next.",
       "rec": "modul"
     },
     {
       "lekcija": 3,
       "tezina": 2,
-      "pitanje": "In this action, what does $@$ stand for?",
+      "pitanje": "In the channel spec, which field does the action $Rcv$ change?",
       "odgovori": [
-        "The old value of $chan.rdy$",
-        "The new value of $chan.val$",
-        "The whole record $chan$",
-        "The argument $d$"
+        "$ack$",
+        "$val$ and $rdy$ together",
+        "$rdy$",
+        "The whole record $chan$"
       ],
-      "zanimljivost": "Inside $EXCEPT$, $@$ means the field's current value, so $!.rdy = 1 - @$ flips the bit between 0 and 1. It saves repeating long paths like $chan.rdy$.",
-      "rec": "kanal",
-      "mediji": {
-        "vrsta": "kod",
-        "tekst": "Send(d) ==\n  /\\ chan.rdy = chan.ack\n  /\\ chan' = [chan EXCEPT !.val = d,\n                          !.rdy = 1 - @]"
-      }
+      "zanimljivost": "Rcv sets $chan' = [chan EXCEPT !.ack = 1 - @]$, so the value and the ready bit keep their old values. Only the acknowledgment flips.",
+      "rec": "polje"
     },
     {
       "lekcija": 4,
@@ -887,10 +883,10 @@
       "tezina": 2,
       "pitanje": "What does the variable $q$ represent in module $InnerFIFO$?",
       "odgovori": [
-        "Messages sent but not yet received",
+        "Messages the buffer has received but not yet sent on out",
         "The number of messages sent so far",
         "The last message that was received",
-        "The queue of waiting senders"
+        "The queue of senders waiting to send"
       ],
       "zanimljivost": "Initially $q = ⟨⟩$ – the empty sequence, the one and only 0-tuple.",
       "rec": "poruka"
@@ -970,7 +966,7 @@
         "Creating several processes",
         "Importing standard modules"
       ],
-      "zanimljivost": "Lamport says you can use this idiom without fully understanding it – and in most applications there's no need to hide variables at all; just note in a comment which ones are internal.",
+      "zanimljivost": "Hiding is needed when a module is used as a building block. For a single spec it is often enough to note in a comment which variables are internal.",
       "rec": "idiom"
     },
     {
@@ -996,7 +992,7 @@
         "Variable $q$ is declared as a constant",
         "After N messages the buffer is emptied"
       ],
-      "zanimljivost": "Instead of copying the module, Lamport writes $Next ∧ (BufRcv ⇒ (Len(q) < N))$ – „the step is a Next step, and if it's a BufRcv step there is still room“.",
+      "zanimljivost": "Instead of copying the module, the bounded version adds a condition: $Next ∧ (BufRcv ⇒ (Len(q) < N))$. Every BufRcv step must find room in the queue.",
       "rec": "granica"
     },
     {
@@ -1004,12 +1000,12 @@
       "tezina": 3,
       "pitanje": "Why would it be wrong to write $ASSUME q ∈ Seq(Message)$?",
       "odgovori": [
-        "Some states have a $q$ that isn't a sequence",
-        "$ASSUME$ may not contain the operator $Seq$",
-        "$Seq(Message)$ is an infinite set",
-        "$q$ is an internal, hidden variable"
+        "Because $q$ is a variable, and $ASSUME$ can only constrain constants",
+        "Because $ASSUME$ may not contain the operator $Seq$",
+        "Because $Seq$ is defined only for finite sets",
+        "Because $ASSUME$ must come before $VARIABLE$"
       ],
-      "zanimljivost": "$ASSUME$ is only for assumptions about constants, e.g. $ASSUME (N ∈ Nat) ∧ (N > 0)$. A state is an arbitrary assignment, so there is a state with $q = √−17$ – assuming otherwise is a contradiction.",
+      "zanimljivost": "$ASSUME$ is for assumptions about constants, e.g. $ASSUME (N ∈ Nat) ∧ (N > 0)$. The value of $q$ is arbitrary in each state, so such a claim would be about all states – that is what an invariant is for.",
       "rec": "uslov"
     },
     {
@@ -1022,7 +1018,7 @@
         "TLC checks that it is a set",
         "$CONSTANT$ declares only sets"
       ],
-      "zanimljivost": "TLA+ is based on Zermelo–Fraenkel set theory. Even the number 3 is formally a set – we just don't know its elements, so whether $2 ∈ 3$ is unspecified.",
+      "zanimljivost": "TLA+ is based on Zermelo–Fraenkel set theory, so even the number 3 is formally a set. TLA+ says nothing about its elements, so a fact like $2 ∈ 3$ cannot be used.",
       "rec": "skup"
     },
     {
@@ -1030,10 +1026,10 @@
       "tezina": 2,
       "pitanje": "What is a spec that describes correct behavior of both the system and its environment called?",
       "odgovori": [
-        "Closed (complete-system)",
-        "Open (contract)",
-        "Internal (hidden)",
-        "Abstract (high-level)"
+        "Closed",
+        "Open",
+        "Internal",
+        "Abstract"
       ],
       "zanimljivost": "Writing $Next ≜ SysNext ∨ EnvNext$ helps the reader but has no formal significance: if a behavior violates Spec, nothing says whether the system or the environment is to blame.",
       "rec": "okruženje"
@@ -1063,7 +1059,7 @@
       ],
       "zanimljivost": "$InChan!Rcv$ uses the $Rcv$ action from an instantiated $Channel$ module. The FIFO adds at the tail with $Append$ and sends from the head with $Head(q)$, then keeps $Tail(q)$.",
       "rec": "red",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "kod",
         "tekst": "BufRcv == /\\ InChan!Rcv\n          /\\ q' = Append(q, in.val)\n          /\\ UNCHANGED out"
       }
@@ -1104,7 +1100,7 @@
         "An action that increments n by one",
         "A recursive definition of addition"
       ],
-      "zanimljivost": "It looks like a lambda expression, but Lamport stresses that lambda expressions are not quite the same as the ordinary mathematical functions TLA+ uses.",
+      "zanimljivost": "The brackets $[n ∈ S ↦ e]$ define a function with domain $S$. The domain is part of the value: $[n ∈ Nat ↦ n + 1]$ and $[n ∈ Int ↦ n + 1]$ are different functions, even though they agree on $Nat$.",
       "rec": "sledbenik"
     },
     {
@@ -1149,14 +1145,14 @@
     {
       "lekcija": 5,
       "tezina": 3,
-      "pitanje": "Are $A × B × C$ and $A × (B × C)$ the same set?",
+      "pitanje": "Which tuple is an element of $A × (B × C)$?",
       "odgovori": [
-        "No – the second contains pairs",
-        "Yes – the Cartesian product is associative",
-        "Yes, but only when the sets are finite",
-        "No – the first set is always larger"
+        "$⟨a, ⟨b, c⟩⟩$",
+        "$⟨a, b, c⟩$",
+        "$⟨⟨a, b⟩, c⟩$",
+        "$⟨a, b⟩$"
       ],
-      "zanimljivost": "Elements of the first are triples $⟨a, b, c⟩$, of the second pairs $⟨a, ⟨b, c⟩⟩$. A function of several arguments has a set of tuples as domain: $f[5, 3, 1]$ abbreviates $f[⟨5, 3, 1⟩]$.",
+      "zanimljivost": "In TLA+, $A × B × C$ and $A × (B × C)$ are different sets: the first has triples $⟨a, b, c⟩$, the second pairs $⟨a, ⟨b, c⟩⟩$. Mathematicians identify them, TLA+ does not. A function of several arguments has a set of tuples as its domain: $f[5, 3, 1]$ abbreviates $f[⟨5, 3, 1⟩]$.",
       "rec": "proizvod"
     },
     {
@@ -1169,7 +1165,7 @@
         "$RECURSIVE fact ≜ n * fact[n-1]$",
         "$fact(n) ≜ n * fact(n-1)$"
       ],
-      "zanimljivost": "In the second form $fact$ is used before it is defined, so it is illegal. The form $f[x ∈ S] ≜ e$ exists precisely for recursive functions – the book defines Ackermann's function the same way.",
+      "zanimljivost": "The second form is illegal because $fact$ is used before it is defined. The form $f[x ∈ S] ≜ e$ exists precisely so that a function can refer to itself.",
       "rec": "faktorijel"
     },
     {
@@ -1182,7 +1178,7 @@
         "Cached",
         "Atomic per address"
       ],
-      "zanimljivost": "Each request goes through three steps, $Req(p)$, $Do(p)$ and $Rsp(p)$, while $ctl[p]$ goes through $\"rdy\"$, $\"busy\"$ and $\"done\"$. Weaker memories are described in Chapter 11.",
+      "zanimljivost": "Each request goes through $Req(p)$, $Do(p)$ and $Rsp(p)$, while $ctl[p]$ goes through \"rdy\", \"busy\" and \"done\". The operation takes effect at one point in between.",
       "rec": "memorija"
     },
     {
@@ -1192,7 +1188,7 @@
       "odgovori": [
         "$CHOOSE v : v ∉ Val$",
         "$NoVal ∈ Val$",
-        "As a constant $CONSTANT NoVal$",
+        "As a variable $NoVal$ of the memory state",
         "As the empty string \"\""
       ],
       "zanimljivost": "We don't know what $NoVal$ is – only that it isn't a memory value. Lamport advises avoiding parameters whenever possible, so he defines it instead of declaring it.",
@@ -1200,16 +1196,16 @@
     },
     {
       "lekcija": 5,
-      "tezina": 3,
-      "pitanje": "Why is $Send$ in $MemoryInterface$ a constant operator with four arguments, $Send(p, d, miOld, miNew)$?",
+      "tezina": 2,
+      "pitanje": "What does $ctl' = [ctl EXCEPT ![p] = \"busy\"]$ do to the other entries of $ctl$?",
       "odgovori": [
-        "TLA+ has no action parameters",
-        "So that it can be used in $ASSUME$",
-        "Because TLC checks constants faster",
-        "To avoid $EXTENDS Naturals$"
+        "They keep their values; only $ctl[p]$ changes",
+        "They all become \"busy\"",
+        "They are all reset to \"rdy\"",
+        "They are removed from the function"
       ],
-      "zanimljivost": "Parameters in TLA+ are only constants and variables. So the old and new interface states are passed as arguments: $Send(p, d, memInt, memInt')$.",
-      "rec": "interfejs"
+      "zanimljivost": "EXCEPT copies the function and changes only the listed points. That is why the memory interface can update one processor's entry without mentioning the others.",
+      "rec": "izmena"
     },
     {
       "lekcija": 5,
@@ -1244,7 +1240,7 @@
       "odgovori": [
         "An inductive invariant",
         "A type invariant",
-        "A strong invariant",
+        "A stuttering invariant",
         "A temporal invariant"
       ],
       "zanimljivost": "$Coherence$ is an invariant of the cache spec but not an inductive one: there is a state where it holds and one $MemQRd$ step breaks it. That state just can't be reached.",
@@ -1269,7 +1265,7 @@
       "pitanje": "What is the tuple of state functions $⟨omem, octl, obuf⟩$ that „plays“ the hidden variables in an implementation proof called?",
       "odgovori": [
         "A refinement mapping",
-        "A simulation relation",
+        "A stuttering step",
         "An abstract invariant",
         "A module instance"
       ],
@@ -1324,12 +1320,12 @@
       "tezina": 2,
       "pitanje": "Which of these does NOT describe the set of odd natural numbers?",
       "odgovori": [
-        "${n ∈ Nat : 2 * n + 1}$",
+        "${n ∈ Nat : n % 2 = 0}$",
         "${n ∈ Nat : n % 2 = 1}$",
         "${2 * n + 1 : n ∈ Nat}$",
         "${n ∈ Nat : (n + 1) % 2 = 0}$"
       ],
-      "zanimljivost": "${x ∈ S : p}$ selects the elements satisfying condition $p$, while ${e : x ∈ S}$ collects the values of $e$. In the first expression a number follows the colon instead of a condition – that's nonsense.",
+      "zanimljivost": "${x ∈ S : p}$ keeps the elements of $S$ that satisfy $p$, while ${e : x ∈ S}$ collects the values of $e$. The trap is the last set: $n + 1$ is even exactly when $n$ is odd, so it does describe the odd numbers.",
       "rec": "neparan"
     },
     {
@@ -1355,7 +1351,7 @@
         "Sets in TLA+ must be finite",
         "∈ must not be used recursively"
       ],
-      "zanimljivost": "A collection is too big if you can assign a different member of it to every set. So even „all sequences of length 2“ isn't a set: $SMap(S) ≜ ⟨1, S⟩$.",
+      "zanimljivost": "TLA+ only allows ${x ∈ S : p}$ for a set $S$ that already exists, so the collection of all sets (and Russell's set of all sets that are not members of themselves) never becomes a set, as in ordinary set theory.",
       "rec": "paradoks"
     },
     {
@@ -1368,7 +1364,7 @@
         "Yes, and it equals zero",
         "No – dividing by a string is a syntax error"
       ],
-      "zanimljivost": "Lamport says $3/\"abc\"$ is no sillier than 3/0, and mathematicians write such expressions all the time, e.g. in $∀ x ∈ Real : (x ≠ 0) ⇒ (x * (3/x) = 3)$ for $x = 0$.",
+      "zanimljivost": "Division by a string is as meaningless as division by zero: the expression is legal, but its value is unspecified, so nobody can rely on it.",
       "rec": "besmislica"
     },
     {
@@ -1459,7 +1455,7 @@
         "Functions take less memory in TLC",
         "An operator could only read memory, never change it"
       ],
-      "zanimljivost": "When no such reason forces the choice, it's a matter of taste – Lamport says he usually prefers operators.",
+      "zanimljivost": "When no such reason forces the choice, it is a matter of taste.",
       "rec": "promenljiva"
     },
     {
@@ -1485,7 +1481,7 @@
         "Yes, but only inside actions",
         "No – it always returns the smallest element"
       ],
-      "zanimljivost": "Logicians call it Hilbert's ε. If an expression equals 42 today, it will equal 42 a million years from now – so $x' = CHOOSE n : n ∈ Nat$ allows only one behavior.",
+      "zanimljivost": "Logicians call it Hilbert's ε. For the same arguments CHOOSE always gives the same value, so $x' = CHOOSE n : n ∈ Nat$ allows exactly one next value.",
       "rec": "izbor"
     },
     {
@@ -1558,7 +1554,7 @@
         "User-interface errors",
         "Memory leaks"
       ],
-      "zanimljivost": "Errors that arise from the interaction of asynchronous components. Lamport is blunt: if that's not where your effort should go, you probably shouldn't be using TLA+.",
+      "zanimljivost": "The errors come from the interaction of asynchronous components, which is where TLA+ shines. If that is not where your effort should go, a spec may not be the right tool.",
       "rec": "proces"
     },
     {
@@ -1579,10 +1575,10 @@
       "tezina": 2,
       "pitanje": "What is usually the advantage of a coarser-grained specification over a finer-grained one?",
       "odgovori": [
-        "It is simpler",
+        "It is simpler to understand",
         "It describes the real system more accurately",
-        "It reveals more errors",
-        "It has more possible behaviors"
+        "It reveals more errors during checking",
+        "It allows more possible behaviors"
       ],
       "zanimljivost": "The finer-grained spec describes the system more faithfully but is more complicated. The coarser one may hide important details – there is no simple rule for choosing.",
       "rec": "korak"
@@ -1597,7 +1593,7 @@
         "Two consecutive steps – an A step, then a B step",
         "A step that is either an A step or a B step"
       ],
-      "zanimljivost": "The „·“ operator rarely appears in a real spec. Lamport says: if you're tempted to use it, there is probably a better way to write the specification.",
+      "zanimljivost": "The · operator rarely appears in a real spec, but it helps to reason about how actions compose.",
       "rec": "kompozicija"
     },
     {
@@ -1673,7 +1669,7 @@
         "No – so messages get a type field",
         "Yes – a number and a string always differ",
         "Yes, but only with $EXTENDS Naturals$",
-        "No – $1 = \"a\"$ is always true"
+        "Yes – the operator ≠ is defined for every pair of values"
       ],
       "zanimljivost": "Advice: „Don't assume values that look different are unequal.“ The records $[type ↦ \"Nat\", value ↦ 1]$ and $[type ↦ \"String\", value ↦ \"a\"]$ are certainly different.",
       "rec": "string"
@@ -1741,25 +1737,25 @@
         "Don't be too abstract",
         "Write comments as comments"
       ],
-      "objasnjenje": "The other three are headings from „Some Further Hints“. Lamport, on the contrary, wants specs to be as simple as possible.",
+      "objasnjenje": "The other three are advice from the chapter. Lamport recommends the opposite: keep the number of variables small.",
       "zanimljivost": "Other hints include „A type invariant is not an assumption“, „Move quantification to the outside“ and „Prime only what you mean to prime“.",
       "rec": "savet"
     },
     {
       "lekcija": 7,
       "tezina": 2,
-      "pitanje": "What does this theorem claim?",
+      "pitanje": "What does the theorem $Spec ⇒ □TypeOK$ claim?",
       "odgovori": [
         "$TypeOK$ holds in every reachable state",
-        "TLC must check it first",
-        "$x$ and $q$ never change",
-        "$Spec$ can only take $Nat$ inputs"
+        "$TypeOK$ holds in every state, reachable or not",
+        "$TypeOK$ holds only in the initial state",
+        "$x$ and $q$ never change"
       ],
       "zanimljivost": "TLA+ is untyped, so a type invariant is just an ordinary formula. Lamport advises writing it early – TLC checking it catches many mistakes long before the interesting properties.",
       "rec": "invarijanta",
       "mediji": {
         "vrsta": "kod",
-        "tekst": "TypeOK == /\\ x \\in Nat\n          /\\ q \\in Seq(Msg)\n\nTHEOREM Spec => []TypeOK"
+        "tekst": "TypeOK == /\\ x \\in Nat\n          /\\ q \\in Seq(Msg)"
       }
     },
     {
@@ -1837,7 +1833,7 @@
         "The formula holds in every state of every behavior",
         "The formula forbids stuttering steps entirely"
       ],
-      "zanimljivost": "That's why $□(x' = x + 1)$ is not a legal TLA formula – one step that leaves $x$ unchanged makes it false. $□[x' = x + 1]_x$ is fine.",
+      "zanimljivost": "That is why $□(x' = x + 1)$ is not legal TLA+: a prime may appear only inside an action, and a step that leaves $x$ unchanged would break the formula. $□[x' = x + 1]_x$ is the legal form, since it allows stuttering.",
       "rec": "mucanje"
     },
     {
@@ -1871,8 +1867,8 @@
       "tezina": 2,
       "pitanje": "What does weak fairness $WF_v(A)$ require?",
       "odgovori": [
-        "If A stays enabled, an A step occurs",
-        "If A is ever enabled, an A step eventually occurs",
+        "If A stays enabled from some point on, an A step eventually occurs",
+        "If A is enabled infinitely often, an A step eventually occurs",
         "An A step occurs in every second step",
         "An A step never occurs twice in a row"
       ],
@@ -1889,7 +1885,7 @@
         "A must occur exactly once in the behavior",
         "It applies to all actions at once, weak to one"
       ],
-      "zanimljivost": "Lamport distinguishes „continuously“ (without interruption) – weak – from „continually“ (repeatedly, possibly with interruptions) – strong fairness.",
+      "zanimljivost": "Weak fairness covers an action that stays enabled continuously from some point on. Strong fairness also covers an action that is enabled again and again, with interruptions.",
       "rec": "prekid"
     },
     {
@@ -1900,7 +1896,7 @@
         "Weak",
         "Strong",
         "Both",
-        "Neither – it isn't needed then"
+        "Neither"
       ],
       "zanimljivost": "Strong fairness is harder to implement and less often needed. For the channel they're equivalent for $Rcv$, since an enabled $Rcv$ can be disabled only by a $Rcv$ step.",
       "rec": "slaba"
@@ -1941,7 +1937,7 @@
         "They are equally important",
         "It depends only on the number of variables"
       ],
-      "zanimljivost": "Liveness is usually less than five percent of a spec and is easy to write, but when looking for errors most of the effort should go into the safety part.",
+      "zanimljivost": "Liveness is usually a small part of a spec and is easy to write. When looking for errors, most of the effort should go into the safety part.",
       "rec": "korist"
     },
     {
@@ -1967,7 +1963,7 @@
         "TLC can't check conjunctions",
         "It breaks invariance under stuttering"
       ],
-      "zanimljivost": "The section is titled „Temporal Logic Considered Confusing“. The basic form is $∃ v : Init ∧ □[Next]_vars ∧ Liveness$ – and most specs should have exactly that form.",
+      "zanimljivost": "The basic form is $∃ v : Init ∧ □[Next]_v ∧ Liveness$, and most specs should have exactly that form.",
       "rec": "oblik"
     },
     {
@@ -1988,10 +1984,10 @@
       "tezina": 2,
       "pitanje": "What does adding $WF_vars(Next)$ guarantee?",
       "odgovori": [
-        "$Next$ can't stay enabled forever without a step",
-        "$Next$ happens in every step",
-        "Nothing bad ever happens",
-        "The system eventually halts"
+        "Next can't stay enabled forever without a step",
+        "Next happens at every single step of the behavior",
+        "Nothing bad ever happens in any behavior",
+        "The system eventually stops and never moves again"
       ],
       "zanimljivost": "Without fairness, a behavior may stutter forever, so the clock could simply stop. Weak fairness rules that out; strong fairness ($SF$) also covers actions that are only enabled again and again.",
       "rec": "pravednost",
@@ -2010,7 +2006,7 @@
         "$clock$",
         "$time$"
       ],
-      "zanimljivost": "Scientists traditionally use $t$, but Lamport prefers $now$. Its value is a real number – e.g. seconds since 00:00 UT on 1 January 2000.",
+      "zanimljivost": "The value is a real number, not an integer count of ticks, so time can advance by arbitrary amounts between steps.",
       "rec": "vreme"
     },
     {
@@ -2122,12 +2118,12 @@
       "tezina": 3,
       "pitanje": "What is a „Zeno specification“?",
       "odgovori": [
-        "One in which NZ rules out some finite behaviors",
-        "Any specification that uses the variable $now$",
+        "A specification that allows Zeno behaviors",
+        "A specification that uses the variable $now$",
         "A specification with no real numbers",
-        "A specification that allows Zeno behaviors"
+        "A specification in which $NZ$ rules out finite behaviors"
       ],
-      "zanimljivost": "A spec is non-Zeno iff it is machine closed (together with NZ). Extreme example: require the clock to wait at least δ but tick before ε < δ – then it can never tick.",
+      "zanimljivost": "$NZ$ rules out Zeno behaviors by requiring time to grow without bound. A specification that still allows Zeno behaviors lets time pile up in a finite interval, which no real clock does.",
       "rec": "paradoks"
     },
     {
@@ -2137,10 +2133,10 @@
       "odgovori": [
         "Not a subaction, so time can't pass 3600 s",
         "The bounds 0 and 3600 are given in reverse order",
-        "$hr$ in the clock spec may never become negative",
+        "$hr$ is a constant in the clock spec",
         "$RTnow$ forbids any change at all to $hr$"
       ],
-      "zanimljivost": "The clock never goes backward, so time must stay below 3600 s, while NZ demands it grow without bound. Bounds on subactions of Next don't cause such problems.",
+      "zanimljivost": "The formula demands that the step $hr' = hr − 1$ occur within 3600 s, but the clock can never take that step. So time cannot pass 3600 s, while real time must keep going.",
       "rec": "sukob"
     },
     {
@@ -2153,33 +2149,33 @@
         "A specification of both hardware and software",
         "A specification with both safety and liveness"
       ],
-      "zanimljivost": "Examples are aircraft positions in air traffic control or the parameters of a nuclear reactor. Their evolution is described with the $Integrate$ operator, which solves differential equations.",
+      "zanimljivost": "Examples are aircraft positions in air traffic control and the parameters of a nuclear reactor, whose change is described by mathematical equations.",
       "rec": "hibrid"
     },
     {
       "lekcija": 9,
       "tezina": 3,
-      "pitanje": "How does Lamport rate hybrid system specifications in the book?",
+      "pitanje": "Which of these is a hybrid-system example rather than a real-time one?",
       "odgovori": [
-        "So far of only academic interest",
-        "The most common kind of spec in industry",
-        "TLA+ cannot express them",
-        "They replace all real-time specifications"
+        "Aircraft positions in air traffic control",
+        "A clock that must tick within 3600 ± ρ seconds",
+        "A reply that must come within 5 seconds of a request",
+        "A buffer that must send within 2 seconds"
       ],
-      "zanimljivost": "Still, he adds: if you can describe the evolution mathematically, you can specify it in TLA+ – even if it takes a partial differential equation.",
-      "rec": "fizika"
+      "zanimljivost": "Hybrid systems mix discrete steps with quantities that change continuously, such as position or temperature. Real-time specifications only add deadlines to discrete steps.",
+      "rec": "avion"
     },
     {
       "lekcija": 9,
       "tezina": 2,
-      "pitanje": "Why, according to Lamport, are real-time specifications rare?",
+      "pitanje": "Why are real-time specifications used less often than untimed ones?",
       "odgovori": [
-        "Specs describe what a system does, not how long",
-        "TLA+ has supported them only recently",
-        "Real numbers can't be checked",
-        "Real time can't be formally described at all"
+        "Most requirements don't need deadlines; an eventual response is enough",
+        "TLA+ has supported them only in recent versions",
+        "Clocks drift too much to be specified",
+        "Deadlines make specs impossible to check"
       ],
-      "zanimljivost": "Lamport suspects people don't build systems with complicated real-time constraints because they are too hard to get right.",
+      "zanimljivost": "Real-time requirements are harder to state and to get right, so they are used where a deadline really matters.",
       "rec": "trajanje"
     },
     {
@@ -2205,7 +2201,7 @@
         "Possible only for finite sets of states",
         "Possible only without hidden variables"
       ],
-      "zanimljivost": "It's provable that $RTBound$ formulas on subactions alone suffice – but that, Lamport says, is of theoretical interest only.",
+      "zanimljivost": "It can be proved that RTBound on subactions is enough, but that result is mostly of theoretical interest.",
       "rec": "teorija"
     },
     {
@@ -2220,7 +2216,7 @@
       ],
       "zanimljivost": "Time in TLA+ is just a variable $now$ that changes in its own steps. $RTBound$ adds a timer per action, so real-time properties are ordinary safety formulas.",
       "rec": "vreme",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "kod",
         "tekst": "RTBound(A, v, D, E) ==\n  \\* A must be enabled for at least D seconds\n  \\* before it happens, and at most E"
       }
@@ -2243,10 +2239,10 @@
       "tezina": 2,
       "pitanje": "What kind of spec is $TwoClocks$, the conjunction of two independent clock specs?",
       "odgovori": [
-        "It allows both clocks to tick in one step",
-        "It forbids both clocks ticking in one step",
-        "It forces the clocks to always tick together",
-        "It isn't a legal TLA formula"
+        "A noninterleaving spec: both clocks may tick in one step",
+        "An interleaving spec: only one clock ticks per step",
+        "A spec that forces both clocks to tick together",
+        "Not a legal TLA+ formula"
       ],
       "zanimljivost": "Its next-state action has the disjunct $HCN(x) ∧ HCN(y)$ – both displays advancing at once. Lamport calls such specs noninterleaving.",
       "rec": "dva"
@@ -2261,7 +2257,7 @@
         "All components act in the same step",
         "The components share all variables"
       ],
-      "zanimljivost": "„Interleaving“ is a standard term, while for the other kinds of composition, Lamport says, there is no common terminology.",
+      "zanimljivost": "In an interleaving spec every step belongs to one component, so steps of different components are never combined. Interleaving is the standard term; the other kinds of composition are described by their properties.",
       "rec": "preplitanje"
     },
     {
@@ -2280,15 +2276,15 @@
     {
       "lekcija": 10,
       "tezina": 3,
-      "pitanje": "Why must we sometimes still write an interleaving specification?",
+      "pitanje": "Two components with disjoint state take turns, one step at a time. Which expression describes the next-state action?",
       "odgovori": [
-        "Noninterleaving won't implement interleaving",
-        "The TLC model checker only handles interleaving",
-        "Noninterleaving specs aren't machine closed",
-        "Noninterleaving specs forbid stuttering"
+        "$A ∨ B$",
+        "$A ∧ B$",
+        "$A ⇒ B$",
+        "$A ≡ B$"
       ],
-      "zanimljivost": "A noninterleaving spec allows simultaneous steps that the higher-level interleaving spec forbids. Easy to fix – by conjoining an interleaving assumption.",
-      "rec": "ostvarenje"
+      "zanimljivost": "A disjunction means every step is a step of one component, which is exactly an interleaving. A conjunction would force both components to act in the same step.",
+      "rec": "disjunkcija"
     },
     {
       "vrsta": "spoji",
@@ -2417,7 +2413,7 @@
         "Composition of two clocks",
         "A monolithic specification"
       ],
-      "zanimljivost": "Disjoint-state compositions are generally straightforward. Composition doesn't change the specification – the choice is ultimately a matter of taste.",
+      "zanimljivost": "Disjoint-state compositions are generally straightforward. The trouble comes when several components change the same variables.",
       "rec": "pažnja"
     },
     {
@@ -2425,7 +2421,7 @@
       "tezina": 3,
       "pitanje": "If every component is machine closed, is their composition too?",
       "odgovori": [
-        "Not always – but with interleaving, usually",
+        "Not always – a joint-action composition may fail",
         "Yes, always, since fairness carries over to the whole",
         "Never",
         "Only if there are no hidden variables"
@@ -2439,9 +2435,9 @@
       "pitanje": "How were components such as the FIFO's sender, buffer and receiver represented in earlier chapters?",
       "odgovori": [
         "As separate disjuncts of the next-state action",
-        "As separate modules running in parallel",
-        "As separate constants",
-        "As separate theorems"
+        "As separate modules, each running in parallel",
+        "As separate constants of the spec's module",
+        "As separate theorems proved about the whole system"
       ],
       "zanimljivost": "Chapter 10 describes the same components as separate specs combined by conjunction – but Lamport says that's usually not worth doing.",
       "rec": "disjunkt"
@@ -2449,7 +2445,7 @@
     {
       "lekcija": 10,
       "tezina": 1,
-      "pitanje": "How does TLA+ compose these two components?",
+      "pitanje": "How does TLA+ compose two components with specs $SpecA$ and $SpecB$?",
       "odgovori": [
         "As the conjunction of their specs",
         "By running them one after the other",
@@ -2458,7 +2454,7 @@
       ],
       "zanimljivost": "Composition is conjunction: a behavior of the whole system must satisfy both components' specs at once. The hard part is making sure each component only changes its own variables.",
       "rec": "kompozicija",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "kod",
         "tekst": "Spec == SpecA /\\ SpecB"
       }
@@ -2495,9 +2491,9 @@
       "pitanje": "How does module $Graphs$ represent a graph G as a single value?",
       "odgovori": [
         "As a record with fields $node$ and $edge$",
-        "As an ordered pair $⟨N, E⟩$",
-        "As a function from nodes to sets of neighbors",
-        "As an adjacency matrix"
+        "As a single set of edge pairs",
+        "As a tuple of its edges only",
+        "As a string listing its node names"
       ],
       "zanimljivost": "A mathematician would write the pair ⟨N, E⟩, but $G.node$ is clearer than $G[1]$. An undirected graph is a directed one that has the reverse of every edge.",
       "rec": "graf"
@@ -2560,9 +2556,9 @@
       "pitanje": "How does module $BNFGrammars$ represent a grammar?",
       "odgovori": [
         "As a function from strings to languages",
-        "As a set of rules of the form $left ::= right$",
+        "As a set of states and transitions",
         "As a parse tree",
-        "As a finite automaton"
+        "As a regular expression"
       ],
       "zanimljivost": "A nonterminal means the language it generates: $G[\"expr\"]$ is the whole expression language. For strings that aren't nonterminals the value is the empty set.",
       "rec": "jezik"
@@ -2624,7 +2620,7 @@
       "tezina": 3,
       "pitanje": "Two processors each write their own value to the same address and then read their own value forever. Why is this disallowed?",
       "odgovori": [
-        "Neither sees the other's write – memory is for that",
+        "No single order of all operations explains the reads",
         "Two writes to the same address aren't allowed at all",
         "Reading the same address can't repeat forever",
         "Each processor must read other processors' addresses"
@@ -2647,16 +2643,16 @@
     },
     {
       "lekcija": 11,
-      "tezina": 1,
-      "pitanje": "Which memory from the book is easiest to implement with a single central memory?",
+      "tezina": 2,
+      "pitanje": "In the serial memory, what does each read return?",
       "odgovori": [
-        "Linearizable",
-        "Sequentially consistent",
-        "Serial",
-        "None of them"
+        "The most recent write before it in one total order of all operations",
+        "The last write by the same processor only",
+        "Whatever was written last in real time",
+        "A value chosen at random among all writes"
       ],
-      "zanimljivost": "A direct implementation of the serial memory would keep queues of all operations and search for possible total orders – impractical, but easy in theory.",
-      "rec": "centralna"
+      "zanimljivost": "A direct implementation would have to search for such a total order, which is impractical, although the serial memory is easy to state.",
+      "rec": "serijski"
     },
     {
       "lekcija": 11,
@@ -2674,12 +2670,12 @@
     {
       "lekcija": 11,
       "tezina": 2,
-      "pitanje": "What does Lamport say about high-level and low-level specifications?",
+      "pitanje": "Where does Chapter 11 draw the line between high-level and low-level specifications?",
       "odgovori": [
-        "High-level (what's correct) are subtler",
-        "Low-level ones are always much harder to write",
-        "High-level ones can't be checked by any tool",
-        "The distinction is completely precise"
+        "It is a matter of perspective",
+        "At the first refinement step, always",
+        "Exactly where TLC starts checking",
+        "Wherever the module ends"
       ],
       "zanimljivost": "Example: the linearizable memory of Chapter 5 is high-level, the write-through cache low-level. Where the line falls is, however, a matter of perspective.",
       "rec": "nivo"
@@ -2707,7 +2703,7 @@
         "Python",
         "OCaml"
       ],
-      "zanimljivost": "It's run with a command like $java tlasany.SANY$. It was written by Jean-Charles Grégoire and David Jefferson.",
+      "zanimljivost": "SANY is a Java program, so it runs wherever a Java runtime is installed.",
       "rec": "java"
     },
     {
@@ -2717,24 +2713,24 @@
       "odgovori": [
         "$M.tla$",
         "$M.spec$",
-        "$module-M.txt$",
-        "Anything – the name is on the first line"
+        "$M.tlaplus$",
+        "$module-M.txt$"
       ],
-      "zanimljivost": "Each module (except submodules) must be in its own file. The $.tla$ extension may be omitted when running the tool.",
+      "zanimljivost": "Each module (except submodules) must be in its own file.",
       "rec": "fajl"
     },
     {
-      "lekcija": 12,
-      "tezina": 2,
-      "pitanje": "What does the analyzer's $-s$ option do?",
+      "lekcija": 15,
+      "tezina": 1,
+      "pitanje": "What is the ASCII form of the existential quantifier ∃ in TLA+?",
       "odgovori": [
-        "Checks syntax only, not semantic errors",
-        "Runs the check silently, with no messages",
-        "Checks only semantic errors, not syntax errors",
-        "Saves the result to a file"
+        "$\\E$",
+        "$\\exists$",
+        "$EXISTS$",
+        "$@E$"
       ],
-      "zanimljivost": "The $-d$ option enters debugging mode after the check, where you can see e.g. where the analyzer thinks a name is defined.",
-      "rec": "opcija"
+      "zanimljivost": "The universal quantifier is typed as $\\A$. Both use a backslash, as do most other Unicode symbols in ASCII TLA+.",
+      "rec": "simbol"
     },
     {
       "vrsta": "spoji",
@@ -2841,7 +2837,7 @@
         "LaTeX",
         "None"
       ],
-      "zanimljivost": "Today all three tools (SANY, TLC and TLATeX) come together, e.g. in the TLA+ Toolbox or the VS Code extension.",
+      "zanimljivost": "Today SANY and TLC come together in the TLA+ Toolbox and in the VS Code extension.",
       "rec": "alat"
     },
     {
@@ -2854,7 +2850,7 @@
         "It skipped the whole definition of $Req$",
         "It added the colon by itself"
       ],
-      "zanimljivost": "An expression $∃ req ∈ p : …$, where p is a Boolean, is silly but legal – so the analyzer can't report the error right away.",
+      "zanimljivost": "Without the colon, the analyzer reads the ∧ lines as part of the set expression after ∈. That is silly, but the grammar allows it, so the error shows up only later.",
       "rec": "izraz"
     },
     {
@@ -2951,7 +2947,7 @@
         "An HTML page",
         "A Word document"
       ],
-      "zanimljivost": "TLATeX has options to then call a program that turns the $dvi$ into PostScript or PDF; the default is $dvips$.",
+      "zanimljivost": "TLATeX can then call another program to turn the dvi file into PostScript or PDF.",
       "rec": "izlaz"
     },
     {
@@ -2990,7 +2986,7 @@
         "Counts the definitions in the module",
         "Numbers the pages"
       ],
-      "zanimljivost": "The $-help$ option lists all options, and $-info$ prints most of what is in Chapter 13.",
+      "zanimljivost": "The -help option lists all options.",
       "rec": "margina"
     },
     {
@@ -3003,7 +2999,7 @@
         "Anything from 6 to 72",
         "Only 10 and 12 points"
       ],
-      "zanimljivost": "The default is 10 points. The book's example: $java tlatex.TLA -ptSize 12 -shade MySpec$.",
+      "zanimljivost": "The default is 10 points.",
       "rec": "veličina"
     },
     {
@@ -3011,10 +3007,10 @@
       "tezina": 2,
       "pitanje": "Does TLATeX check that a specification is syntactically correct?",
       "odgovori": [
-        "No, but it reports an illegal lexeme like „;“",
+        "No – it only typesets; checking is the job of SANY",
         "Yes, just like the Syntactic Analyzer",
-        "Yes, and refuses to typeset an incorrect module",
-        "No, and it never reports any errors"
+        "Yes, and it refuses to typeset an incorrect module",
+        "Yes, but only for comments"
       ],
       "zanimljivost": "Checking is the job of the Syntactic Analyzer from Chapter 12. TLATeX only cares about appearance.",
       "rec": "leksema"
@@ -3025,9 +3021,9 @@
       "pitanje": "How does TLATeX treat alignment in its input?",
       "odgovori": [
         "Keeps the input's alignment (e.g. of ∧ and $=$)",
-        "Aligns everything to the left margin",
-        "Ignores all spaces",
-        "Aligns only comments"
+        "Aligns everything to the left margin in the output",
+        "Ignores all spaces and line breaks in the input",
+        "Aligns only the comments and leaves the rest"
       ],
       "zanimljivost": "Extra spaces show up in the output too – but no space and one space between symbols are treated the same.",
       "rec": "razmak"
@@ -3091,7 +3087,7 @@
         ],
         [
           "$f.aux$",
-          "Auxiliary file of no interest"
+          "Cross-reference information for LaTeX"
         ]
       ],
       "zanimljivost": "In the $.log$ file, „overfull hbox“ means a spec line is too wide, and „underfull hbox“ that LaTeX found no good line breaks in a comment paragraph.",
@@ -3120,7 +3116,7 @@
         "Nothing – TLATeX finds LaTeX by itself",
         "Use the $-nops$ option"
       ],
-      "zanimljivost": "It's one of the few tips the book calls „all you probably need to know“ about TLATeX.",
+      "zanimljivost": "TLATeX runs the LaTeX command it is told to use. If your installation calls it differently, name it with the option.",
       "rec": "komanda"
     },
     {
@@ -3130,7 +3126,7 @@
       "odgovori": [
         "As $≠$",
         "As $#$",
-        "As a comment mark",
+        "Deleted, since it starts a comment",
         "As $=$"
       ],
       "zanimljivost": "TLATeX turns ASCII into mathematical symbols: $/\\$ becomes ∧, $\\in$ ∈, $==$ ≜. The output is what you see in the book and in the papers.",
@@ -3150,7 +3146,7 @@
         "Donald Knuth",
         "Edsger Dijkstra"
       ],
-      "zanimljivost": "He was helped by Leslie Lamport, Mark Hayden and Mark Tuttle. The book describes TLC Version 2, which was still being implemented at the time of writing.",
+      "zanimljivost": "TLC was built by Yuan Yu together with Panagiotis Manolios and Leslie Lamport.",
       "rec": "autor"
     },
     {
@@ -3258,7 +3254,7 @@
         "The state's sequence number in the search",
         "The specification author's signature"
       ],
-      "zanimljivost": "The graph stores fingerprints, not states. Two different states can, rarely, get the same fingerprint (a collision) – so TLC finally prints an estimate of the probability that one occurred.",
+      "zanimljivost": "TLC stores fingerprints, not whole states. Two different states can, rarely, get the same fingerprint (a collision), so TLC prints an estimate of the probability that one occurred.",
       "rec": "otisak"
     },
     {
@@ -3271,7 +3267,7 @@
         "2ⁿ",
         "n²"
       ],
-      "zanimljivost": "The set of permutations comes from $Permutations(Proc)$ in module TLC. Checking temporal properties under symmetry is risky – Lamport says do it only if you understand exactly what TLC is doing.",
+      "zanimljivost": "The set of permutations comes from $Permutations(Proc)$ in module TLC. Checking temporal properties under symmetry needs care about what TLC actually checks.",
       "rec": "simetrija"
     },
     {
@@ -3362,13 +3358,13 @@
         "At random",
         "Alphabetically by variable name"
       ],
-      "zanimljivost": "So the error trace it reports is usually as short as possible. The book says TLC found about 700 distinct states per second for the alternating bit protocol on a 600 MHz workstation.",
+      "zanimljivost": "So the error trace TLC reports is usually as short as possible.",
       "rec": "širina"
     },
     {
       "lekcija": 14,
       "tezina": 2,
-      "pitanje": "What else does this TLC configuration file need?",
+      "pitanje": "The module declares $CONSTANT N$. What else does this TLC configuration file need?",
       "odgovori": [
         "A value for $N$, e.g. $N = 3$",
         "A $THEOREM$ line",
@@ -3379,7 +3375,7 @@
       "rec": "model",
       "mediji": {
         "vrsta": "kod",
-        "tekst": "\\* module has: CONSTANT N\nINIT Init\nNEXT Next\nINVARIANT TypeOK"
+        "tekst": "INIT Init\nNEXT Next\nINVARIANT TypeOK"
       }
     },
     {
@@ -3426,7 +3422,7 @@
       "tezina": 2,
       "pitanje": "Which characters may a name (Name) contain in TLA+?",
       "odgovori": [
-        "Letters, digits and _, with a letter",
+        "Letters, digits and _, starting with a letter",
         "Letters only",
         "Letters, digits, _ and -",
         "Any characters except spaces and tabs"
@@ -3492,11 +3488,11 @@
       "pitanje": "How does TLA+ parse $a - b - c$?",
       "odgovori": [
         "$(a - b) - c$",
-        "$a - (b - c)$",
-        "As an error – parentheses are needed",
-        "It depends on the values of a, b and c"
+        "$a - (b - c)$, since minus groups to the right",
+        "An error, since minus cannot be chained without parentheses",
+        "It depends on the values of $a$, $b$ and $c$"
       ],
-      "zanimljivost": "Minus is left-associative. No TLA+ operator is right-associative.",
+      "zanimljivost": "Minus is left-associative, so $a - b - c$ means $(a - b) - c$.",
       "rec": "minus"
     },
     {
@@ -3509,7 +3505,7 @@
         "The prime marking the new state",
         "Comments written as $(* … *)$"
       ],
-      "zanimljivost": "Indentation is otherwise ignored, except in ∧ and ∨ lists. These lists are robust: even an alignment off by one space usually doesn't change the meaning.",
+      "zanimljivost": "Indentation is otherwise ignored. In ∧ and ∨ lists it groups the parts, so parentheses can usually be left out.",
       "rec": "lista"
     },
     {
@@ -3567,15 +3563,15 @@
     {
       "lekcija": 15,
       "tezina": 2,
-      "pitanje": "How does the book distinguish the „syntax“ of computer scientists and of mathematicians?",
+      "pitanje": "Which question about a spec is NOT answered by its syntax (Chapter 15)?",
       "odgovori": [
-        "To a mathematician $⟨a, a⟩$ is legal only if a is defined",
-        "Mathematicians don't recognize syntax at all",
-        "For computer scientists syntax also includes type checking",
-        "There is no difference"
+        "Whether every name used has been defined",
+        "Whether the parentheses are balanced",
+        "Where a bulleted ∧ list ends",
+        "Which operator binds more tightly"
       ],
-      "zanimljivost": "The chapter describes syntax in the computer scientist's sense; the „semantic“ part (whether a name is defined) is covered in Chapters 16 and 17.",
-      "rec": "smisao"
+      "zanimljivost": "The syntax of Chapter 15 covers the form of expressions. Whether names are defined belongs to the semantic rules of Chapters 16 and 17.",
+      "rec": "sintaksa"
     },
     {
       "lekcija": 15,
@@ -3600,25 +3596,21 @@
         "Only a version with real math symbols",
         "One version for each natural language"
       ],
-      "zanimljivost": "Lamport says another version might allow an expression like $Ω[å]$ – the basic syntax would be the same, only lexemes and allowed names would differ. (Newer tools do accept Unicode symbols.)",
+      "zanimljivost": "A Unicode version would keep the same grammar with different lexemes. Newer tools do accept Unicode symbols.",
       "rec": "znak"
     },
     {
       "lekcija": 15,
       "tezina": 1,
-      "pitanje": "What is $t[2]$?",
+      "pitanje": "If $t == <<\"a\", \"b\", \"c\">>$, what is $t[2]$?",
       "odgovori": [
         "$\"b\"$",
         "$\"a\"$",
         "$\"c\"$",
         "An error"
       ],
-      "zanimljivost": "A tuple is a function whose domain is $1..n$, so indexing starts at 1, not 0. $<<…>>$ is typed by hand and TLATeX shows it as ⟨…⟩.",
-      "rec": "torka",
-      "mediji": {
-        "vrsta": "kod",
-        "tekst": "t == <<\"a\", \"b\", \"c\">>"
-      }
+      "zanimljivost": "A tuple is a function whose domain is $1 .. n$, so indexing starts at 1, not 0. $<<…>>$ is typed by hand and TLATeX shows it as ⟨…⟩.",
+      "rec": "torka"
     },
     {
       "lekcija": 16,
@@ -3652,11 +3644,11 @@
       "pitanje": "What do we know about $CHOOSE x : P(x)$ when no x satisfies P?",
       "odgovori": [
         "It equals $CHOOSE x : FALSE$ – fixed but unknown",
-        "It equals the empty set",
-        "It is a syntax error",
-        "It is chosen at random on each evaluation"
+        "It equals the empty set, so it can be tested",
+        "It is a syntax error that TLC reports at once",
+        "It is picked at random on each evaluation"
       ],
-      "zanimljivost": "That's why one can prove $1/0 = 2/0$ – „a bit disquieting“, says Lamport. If that bothers you, the book offers an operator $Choice$ instead.",
+      "zanimljivost": "That is why one can prove $1/0 = 2/0$, which some find disquieting. TLA+ accepts it because the value is fixed, though unknown.",
       "rec": "izbor"
     },
     {
@@ -3730,7 +3722,7 @@
         "With a table of 26 records",
         "With a recursive function over the alphabet"
       ],
-      "zanimljivost": "So $Ascii(\"a\"[1]) = 97$ and $Ascii(\"z\"[1]) = 122$. Lamport credits Georges Gonthier with this clever use of CHOOSE.",
+      "zanimljivost": "So $Ascii(\"a\"[1]) = 97$ and $Ascii(\"z\"[1]) = 122$, as in the real ASCII table. The same CHOOSE trick works for any finite list of symbols.",
       "rec": "slovo"
     },
     {
@@ -3839,37 +3831,29 @@
     },
     {
       "lekcija": 16,
-      "tezina": 3,
-      "pitanje": "What is $x$?",
+      "tezina": 1,
+      "pitanje": "What is $x$ if $x == IF 2 \\in {} THEN 1 ELSE 2$?",
       "odgovori": [
-        "Some unspecified value",
-        "${}$ – the empty set",
-        "$FALSE$",
-        "A run-time error"
+        "2",
+        "1",
+        "The empty set",
+        "FALSE"
       ],
-      "zanimljivost": "$CHOOSE$ is deterministic but unspecified: when no element qualifies, the result is some fixed value nobody knows. TLC reports an error if it has to evaluate such a $CHOOSE$.",
-      "rec": "izbor",
-      "mediji": {
-        "vrsta": "kod",
-        "tekst": "x == CHOOSE n \\in {1, 2, 3} : n > 5"
-      }
+      "zanimljivost": "Since the empty set has no elements, $2 ∈ {}$ is FALSE, so the result is 2.",
+      "rec": "uslov"
     },
     {
       "lekcija": 16,
       "tezina": 2,
-      "pitanje": "What is $DOMAIN r$?",
+      "pitanje": "For $r == [name |-> \"Ana\", age |-> 12]$, what is $DOMAIN r$?",
       "odgovori": [
-        "${\"name\", \"age\"}$",
-        "${\"Ana\", 12}$",
-        "$Nat$",
-        "${1, 2}$"
+        "${\"name\", \"age\"}$ – the field names",
+        "${\"Ana\", 12}$ – the values",
+        "$Nat$ – all natural numbers",
+        "${1, 2}$ – the positions"
       ],
       "zanimljivost": "A record is just a function from strings (field names) to values. So $r.age$ is shorthand for $r[\"age\"]$, and $DOMAIN$ gives the set of field names.",
-      "rec": "zapis",
-      "mediji": {
-        "vrsta": "kod",
-        "tekst": "r == [name |-> \"Ana\", age |-> 12]"
-      }
+      "rec": "zapis"
     },
     {
       "lekcija": 17,
@@ -3983,7 +3967,7 @@
         "$F(x)$, if $F(x, y) ≜ x + y$",
         "$F(x, y)$, if $F(x, y) ≜ x + y$",
         "$x + 1$, if x is a declared variable",
-        "$G ≜ 0$, if G isn't defined yet"
+        "$y'$, if $y$ is a declared variable"
       ],
       "zanimljivost": "The book gives other examples too: $(x' + 1)'$, $x + 1$ when $x$ is neither defined nor declared, and redefining an already defined name.",
       "rec": "arnost"
@@ -3991,14 +3975,14 @@
     {
       "lekcija": 17,
       "tezina": 3,
-      "pitanje": "What does the book say about an expression's level-correctness with respect to declared identifiers?",
+      "pitanje": "Does an expression's legality depend on whether an identifier is a constant or a variable?",
       "odgovori": [
-        "It doesn't depend on c being a constant",
-        "It depends only on the levels of all constants",
-        "Variables always make an expression illegal",
-        "It is checked only when TLC runs"
+        "No – only the expression's level depends on it",
+        "Yes – variables make an expression illegal",
+        "Yes – constants may not be primed",
+        "Yes – level-correctness is checked only when TLC runs"
       ],
-      "zanimljivost": "The level of the expression may of course depend on that, but whether it's legal at all does not.",
+      "zanimljivost": "Legality is decided by the grammar and the level rules, not by what an identifier is. The level of an expression depends on its parts, and that is where constants and variables matter.",
       "rec": "pravilo"
     },
     {
@@ -4060,7 +4044,7 @@
       "odgovori": [
         "As λ expressions, e.g. $λ x, y : x ∪ {z, y}$",
         "As functions with finite domains",
-        "As sets of ordered (argument, value) pairs",
+        "As text strings containing the operator's definition",
         "As separate modules"
       ],
       "zanimljivost": "λ expressions aren't part of the book's TLA+ – Lamport uses them only to explain meaning. (The later TLA+2 did add $LAMBDA$ to the language.)",
@@ -4069,15 +4053,15 @@
     {
       "lekcija": 17,
       "tezina": 1,
-      "pitanje": "How does Lamport recommend reading Chapter 17?",
+      "pitanje": "What is the main purpose of Chapter 17?",
       "odgovori": [
-        "In its entirety",
-        "Only the section on levels",
-        "As a dictionary, as needed",
-        "Not at all – it's only for tools"
+        "To state exactly what a module means",
+        "To teach the ASCII syntax",
+        "To show how to typeset specs with TLATeX",
+        "To explain how TLC runs a model"
       ],
-      "zanimljivost": "To make it more readable, he often uses examples instead of formal definitions.",
-      "rec": "čitanje"
+      "zanimljivost": "Chapter 17 gives the precise meaning of expressions and modules. It leans on examples to stay readable.",
+      "rec": "smisao"
     },
     {
       "lekcija": 17,
@@ -4112,12 +4096,12 @@
     {
       "lekcija": 18,
       "tezina": 1,
-      "pitanje": "What are Lamport's two reasons for using standard modules?",
+      "pitanje": "Why do specs use standard modules instead of defining everything themselves?",
       "odgovori": [
-        "Readability, and tools know them",
-        "Speed and lower memory use",
-        "They're mandatory; TLA+ won't work without them",
-        "Copyright protection and code licenses"
+        "Readers and tools know what their operators mean",
+        "They make every spec shorter",
+        "They are mandatory; TLA+ won't work without them",
+        "Copyright on the definitions requires it"
       ],
       "zanimljivost": "TLC has efficient built-in implementations of some standard modules, and a theorem prover may have special decision procedures for standard operators.",
       "rec": "standard"
@@ -4181,7 +4165,7 @@
       "odgovori": [
         "As a function into the positive integers",
         "As a sequence of elements",
-        "As a set of ⟨element, number of copies⟩ pairs",
+        "As a set of distinct elements only",
         "As a record with a field $count$"
       ],
       "zanimljivost": "An element e is in bag B iff it is in B's domain, and B[e] is its number of copies. Hence $BagToSet(B) ≜ DOMAIN B$.",
@@ -4199,7 +4183,7 @@
         ],
         [
           "$SubBag$",
-          "$SUBSET$"
+          "⊆"
         ],
         [
           "$BagUnion$",
@@ -4236,7 +4220,7 @@
         "$Reals$",
         "$Peano$"
       ],
-      "zanimljivost": "$Integers$ extends $Naturals$, and $Reals$ extends $Integers$, adding the set $Real$ and ordinary division /.",
+      "zanimljivost": "The module defines the set $Int$ together with unary minus. Ordinary division $/$ and the set $Real$ come in module Reals.",
       "rec": "ceo"
     },
     {
@@ -4275,7 +4259,7 @@
         "$Unbounded$",
         "$Epsilon$"
       ],
-      "zanimljivost": "It satisfies $∀ r ∈ Real : -Infinity < r < Infinity$ and $-(-Infinity) = Infinity$. It's used e.g. in $RTBound$ when there is no upper bound.",
+      "zanimljivost": "It satisfies $∀ r ∈ Real : -Infinity < r < Infinity$ and $-(-Infinity) = Infinity$.",
       "rec": "beskraj"
     },
     {

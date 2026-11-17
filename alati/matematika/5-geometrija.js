@@ -66,7 +66,7 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, S3, rad, naKrugu, pravilni 
 
   U(2, 'Koji trougao NE MOŽE da postoji?', ['Sa dva prava ugla', 'Pravougli jednakokraki', 'Tupougli raznostranični', 'Oštrougli jednakokraki'],
     'Dva prava ugla već daju 180°, pa za treći ugao ne ostaje ništa – kraci bi bili paralelni i nikad se ne bi sreli.',
-    'Na površini lopte ovo je moguće! Trougao sa temenom na Severnom polu i dva temena na ekvatoru ima dva prava ugla (i ne samo dva).',
+    'Na površini lopte ovo je moguće! Trougao sa temenom na Severnom polu i dva temena na ekvatoru ima tri prava ugla.',
     'trougao');
 
   Q(2, 'Od kojih duži NE MOŽE da se napravi trougao?', ['3, 4 i 8 cm', '5, 5 i 9 cm', '4, 5 i 6 cm', '2, 3 i 4 cm'],

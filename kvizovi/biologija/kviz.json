@@ -114,7 +114,7 @@
         "Planinski jaglac",
         "Ljubičica"
       ],
-      "zanimljivost": "Natalijina ramonda, njena rođaka nazvana po kraljici Nataliji Obrenović, simbol je Dana primirja u Prvom svetskom ratu – jer i ona „vaskrsava“, kao što se i Srbija podigla posle rata.",
+      "zanimljivost": "Natalijina ramonda, njena rođaka, nazvana je po kraljici Nataliji Obrenović – i ona se posle suše ponovo oživi kad dobije vode.",
       "rec": "ramonda"
     },
     {
@@ -122,7 +122,7 @@
       "pitanje": "Ova sićušna životinja preživljava u svemiru, na −200 °C i bez vode decenijama. Šta je ovo?",
       "mediji": {
         "vrsta": "slika",
-        "src": "slike/tardigrad.jpg"
+        "src": "slike/tardigrad.png"
       },
       "odgovori": [
         "Tardigrad (vodeni medved)",
@@ -174,7 +174,7 @@
       },
       "odgovori": [
         "Pangolin",
-        "Armadilo (pasavac)",
+        "Dugong (morska krava)",
         "Jež (sa bodljama)",
         "Mravojed (dugog jezika)"
       ],
@@ -218,7 +218,7 @@
       "pitanje": "Ova slepa pećinska životinja bele kože može da živi preko 100 godina i da ne jede godinama. Šta je ovo?",
       "mediji": {
         "vrsta": "slika",
-        "src": "slike/covecja-ribica.jpg"
+        "src": "slike/covecja-ribica.png"
       },
       "odgovori": [
         "Čovečja ribica",
@@ -248,10 +248,6 @@
     {
       "tezina": 1,
       "pitanje": "Ko je napisao knjigu „Postanak vrsta“ i objasnio evoluciju prirodnom selekcijom?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/darvin.jpg"
-      },
       "odgovori": [
         "Čarls Darvin",
         "Gregor Mendel",
@@ -259,7 +255,11 @@
         "Karl Line"
       ],
       "zanimljivost": "Darvin je ideju razvijao posle petogodišnjeg putovanja brodom „Bigl“, posmatrajući zebe sa Galapagoskih ostrva čiji su se kljunovi razlikovali od ostrva do ostrva.",
-      "rec": "darvin"
+      "rec": "darvin",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/darvin.jpg"
+      }
     },
     {
       "tezina": 2,
@@ -369,7 +369,7 @@
         "Fermentacija",
         "Oprašivanje"
       ],
-      "zanimljivost": "Fotosinteza se odvija u hloroplastima, a zelena boja dolazi od hlorofila. Morske alge proizvode najmanje polovinu kiseonika na Zemlji – više nego sve šume!",
+      "zanimljivost": "Fotosinteza se odvija u hloroplastima, a zelena boja dolazi od hlorofila. Sitne alge u okeanima (fitoplankton) proizvode oko polovine kiseonika na Zemlji – više nego sve šume zajedno!",
       "medijiOdgovora": {
         "vrsta": "biologija",
         "scena": "fotosinteza"
@@ -644,7 +644,7 @@
     },
     {
       "tezina": 1,
-      "pitanje": "Šta jedu biljojedi?",
+      "pitanje": "Šta jedu krave, zečevi i jeleni?",
       "odgovori": [
         "Biljke",
         "Meso",
@@ -699,7 +699,7 @@
         "Meso drugih životinja",
         "Insekte, crve i puževe"
       ],
-      "zanimljivost": "Panda dnevno pojede i do 15 kg bambusa i jede oko 12 sati dnevno. Iako jede biljke, njen probavni sistem je kao kod mesojeda, pa slabo vari bambus.",
+      "zanimljivost": "Panda dnevno pojede od 12 do 38 kg bambusa i jede oko 12 sati dnevno. Iako jede biljke, njen probavni sistem je kao kod mesojeda, pa slabo vari bambus.",
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/panda.jpg",
@@ -745,7 +745,7 @@
         "Gušter",
         "Jež"
       ],
-      "zanimljivost": "Kućica puža raste zajedno sa njim. Vinogradarski puž može da živi i preko 10 godina i zimu prespava zatvorivši kućicu poklopcem.",
+      "zanimljivost": "Kućica puža raste zajedno sa njim. Vinogradarski puž može da živi nekoliko godina i zimu prespava zatvorivši kućicu poklopcem.",
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/puz.jpg",
@@ -1109,12 +1109,6 @@
     {
       "tezina": 2,
       "pitanje": "Koji deo mozga upravlja ravnotežom i koordinacijom pokreta?",
-      "mediji": {
-        "vrsta": "biologija",
-        "scena": "mozak",
-        "istakni": "mali",
-        "natpisi": false
-      },
       "odgovori": [
         "Mali mozak",
         "Veliki mozak",
@@ -1186,7 +1180,7 @@
         "Zamenjuju krv"
       ],
       "zanimljivost": "Prvu vakcinu je napravio Edvard Džener 1796, protiv velikih boginja, koristeći kravlje boginje. Reč „vakcina“ dolazi od latinske reči za kravu – vacca!",
-      "rec": "sistem"
+      "rec": "vakcina"
     },
     {
       "tezina": 2,
@@ -1359,7 +1353,7 @@
       "rec": "kiseonik"
     },
     {
-      "pitanje": "Koja je ovo krupna ptica, jedna od najtežih letećih ptica na svetu, koja živi u ravnicama severnog Banata?",
+      "pitanje": "Koja je ovo krupna ptica, jedna od najtežih letećih ptica na svetu, koja živi u ravnicama Banata?",
       "odgovori": [
         "Velika droplja",
         "Siva čaplja",
@@ -1367,7 +1361,7 @@
         "Crni ždral"
       ],
       "tezina": 3,
-      "zanimljivost": "Mužjak velike droplje može biti težak i 15 kg. U Srbiji je ostalo samo nekoliko desetina ovih ptica, u rezervatu kod Mokrina, gde ih štite od uznemiravanja i oranja u vreme gnežđenja.",
+      "zanimljivost": "Mužjak velike droplje može biti težak i 15 kg. U Srbiji je ostalo samo nekoliko desetina ovih ptica, u zaštićenim područjima, gde ih štite od uznemiravanja i oranja u vreme gnežđenja.",
       "rec": "droplja",
       "mediji": {
         "vrsta": "slika",
@@ -1457,11 +1451,6 @@
     {
       "tezina": 2,
       "pitanje": "Kako se zove muški deo cveta u kome nastaje polen?",
-      "mediji": {
-        "vrsta": "biologija",
-        "scena": "cvet",
-        "istakni": "prasnik"
-      },
       "odgovori": [
         "Prašnik",
         "Tučak",
@@ -1469,7 +1458,12 @@
         "Čašica"
       ],
       "zanimljivost": "Tučak je ženski deo cveta, u kome se nalazi plodnik sa semenim zametcima. Iz plodnika posle oprašivanja nastaje plod.",
-      "rec": "prašnik"
+      "rec": "prašnik",
+      "medijiOdgovora": {
+        "vrsta": "biologija",
+        "scena": "cvet",
+        "istakni": "prasnik"
+      }
     },
     {
       "tezina": 2,
@@ -1733,7 +1727,7 @@
         "Živi svuda na svetu, na svim kontinentima i ostrvima",
         "Seli se svake godine u toplije krajeve na jugu"
       ],
-      "zanimljivost": "Na Madagaskaru je oko 90% vrsta endemsko. Kod nas su endemi, na primer, Pančićeva omorika i Pančićev skakavac.",
+      "zanimljivost": "Na Madagaskaru je oko 90% vrsta endemsko. Kod nas je endem, na primer, Pančićeva omorika.",
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/omorika.jpg",
@@ -1936,7 +1930,7 @@
         ]
       ],
       "rec": "mladunče",
-      "zanimljivost": "Mladunče kengura je po rođenju dugačko svega oko 2 cm i odmah se uvlači u majčin tobolac, gde raste sledećih nekoliko meseci."
+      "zanimljivost": "Ždrebe može da stoji i hoda već nekoliko sati posle rođenja, da bi moglo da prati krdo."
     },
     {
       "vrsta": "spoji",
@@ -2481,7 +2475,7 @@
         ]
       ],
       "rec": "genetika",
-      "zanimljivost": "Čovek ima 46 hromozoma, šimpanza 48, a jedna vrsta paprati čak oko 1.400 – broj hromozoma ne govori koliko je organizam složen."
+      "zanimljivost": "Čovek ima 46 hromozoma, šimpanza 48, a neke paprati preko 1.000 – broj hromozoma ne govori koliko je organizam složen."
     },
     {
       "vrsta": "spoji",
@@ -2527,7 +2521,7 @@
         ],
         [
           "Velika droplja",
-          "Ravnice Banata kod Mokrina"
+          "Ravnice Banata"
         ],
         [
           "Natalijina ramonda",

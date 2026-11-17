@@ -25,7 +25,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, naKrugu, pravilni, krug, pap
     G({ A: [0, 0], N: [3, 0, 315], B: [6, 0], s1: [3, -2], s2: [3, 2] }, [osa({}, 's1', 's2'), { tacka: 'A' }, { d: 'AN', o: '3 cm', b: 0 }, { d: 'NB', b: 1, k: 2, id: 'd' }, { tacka: 'A', b: 1, odrazi: 's1s2', k: 1 }, { tx: "A'", at: [6, 0.6], k: 1 }], { bezImena: ['s1', 's2', 'B', 'N'], velicina: 200 }));
 
   Z(1, 'Gde se preslikava tačka koja leži na osi simetrije?',
-    ['u samu sebe', 'u tačku sa druge strane ose', 'ne preslikava se', 'u presek ose i normale'],
+    ['u samu sebe', 'u tačku sa druge strane ose', 'ne preslikava se', 'u tačku van ose, na istoj normali'],
     [K('Rastojanje tačke od ose je $0$, pa je i slika na rastojanju $0$ – na istom mestu.'),
      K('Tačke ose su nepokretne (fiksne) pri osnoj simetriji.')]);
 
@@ -140,7 +140,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, naKrugu, pravilni, krug, pap
   L('Simetrala duži i konstrukcija normale');
 
   Z(1, 'Tačka $M$ je na simetrali duži $AB$ i $MA = 5 cm$. Koliko je $MB$?',
-    ['$5 cm$', '$10 cm$', '$2 cm 5 mm$', 'ne može se odrediti'],
+    ['$5 cm$', '$10 cm$', '$2 cm 5 mm$', '$3 cm$'],
     [K('Svaka tačka simetrale duži jednako je udaljena od krajeva duži.'),
      K('$MB = MA = 5 cm$.', ['mb'])],
     G({ A: [-3, 0], B: [3, 0], M: [0, 3], s1: [0, -1.5], s2: [0, 4] }, [{ d: 'AB', b: 0 }, osa({}, 's1', 's2'), { d: 'MA', o: '5 cm', b: 2 }, { d: 'MB', b: 1, id: 'mb', k: 2, crtaj: 1 }, { tacka: 'M' }], { bezImena: ['s1', 's2'], velicina: 200 }));
@@ -158,7 +158,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, naKrugu, pravilni, krug, pap
     G({ A: [-3, 0], B: [3, 0] }, [{ d: 'AB', b: 0 }, { l: 'A', r: 4, od: -60, do: 60, b: 1, crtaj: 1, k: 1, id: 'l' }, { l: 'B', r: 4, od: 120, do: 240, b: 1, crtaj: 1, kasni: 1, k: 1, id: 'l' }, { lin: [[0, -3], [0, 3]], b: 3, isp: 1, k: 1 }, { l: 'A', r: 2, od: -60, do: 60, b: 5, crtaj: 1, k: 2 }, { l: 'B', r: 2, od: 120, do: 240, b: 5, crtaj: 1, kasni: 1, k: 2 }], { velicina: 200 }));
 
   Z(2, 'Tačka $M$ je na simetrali duži $AB$ i na simetrali duži $BC$ (u trouglu $ABC$), a $MA = 4 cm$. Koliko je $MC$?',
-    ['$4 cm$', '$8 cm$', '$2 cm$', 'ne može se odrediti'],
+    ['$4 cm$', '$8 cm$', '$2 cm$', '$6 cm$'],
     [K('$M$ je na simetrali $AB$: $MA = MB = 4 cm$.'),
      K('$M$ je na simetrali $BC$: $MB = MC = 4 cm$. (Krug sa centrom $M$ prolazi kroz sva tri temena.)', ['k'])],
     (() => { const t = { A: [-3, -1], B: [3, -1], C: [1, 3] }; const M = [0, 0]; proveri(Math.abs(Math.hypot(1 - M[0], 3 - M[1]) - Math.hypot(-3 - M[0], -1 - M[1])) < 1e-9, 'centar opisanog'); return G({ ...t, M }, [{ p: 'ABC', b: 0 }, { tacka: 'M' }, { d: 'MA', b: 2 }, { d: 'MC', b: 1, k: 2 }, { kr: 'M', kroz: 'A', b: 3, k: 2, id: 'k', crtaj: 1 }], { velicina: 200 }); })());
@@ -208,7 +208,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, naKrugu, pravilni, krug, pap
     G({ O: [0, 0], A: [4, 0], B: naKrugu([0, 0], 4, 70), S: naKrugu([0, 0], 4.5, 35) }, [{ d: 'OA' }, { d: 'OB' }, { u: 'AOB', o: '70°', b: 0, r: 50 }, { d: 'OS', b: 3, isp: 1, k: 1, crtaj: 1 }, { u: 'AOS', b: 1, id: 'u', k: 2, r: 30 }, { u: 'SOB', b: 2, id: 'u', k: 2, r: 34 }], { bezImena: ['S'], velicina: 200 }));
 
   Z(1, 'Tačka $M$ je na simetrali ugla i udaljena je $3 cm$ od jednog kraka. Koliko je udaljena od drugog kraka?',
-    ['$3 cm$', '$6 cm$', '$1 cm 5 mm$', 'ne može se odrediti'],
+    ['$3 cm$', '$6 cm$', '$1 cm 5 mm$', '$4 cm$'],
     [K('Simetrala ugla je osa simetrije ugla: presavijanjem po njoj kraci se poklapaju.'),
      K('Zato je svaka tačka simetrale jednako udaljena od oba kraka: $3 cm$.', ['f'])],
     (() => {
@@ -228,7 +228,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, naKrugu, pravilni, krug, pap
      K('Simetrala zaklapa prav ugao sa kracima – normalna je na pravu koju oni čine.')]);
 
   Z(2, 'Kakav ugao zaklapaju simetrale dva uporedna ugla?',
-    ['prav ($90°$)', 'oštar ($45°$)', 'opružen', 'zavisi od uglova'],
+    ['prav ($90°$)', 'oštar ($45°$)', 'opružen', 'tup ($120°$)'],
     [K('Uporedni uglovi: $α + β = 180°$. Simetrale uzimaju polovine: ${α|2} + {β|2}$.'),
      K('$= {180°|2} = 90°$ – uvek prav ugao!', ['u'])],
     (() => {

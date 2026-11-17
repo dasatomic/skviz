@@ -90,10 +90,6 @@
     {
       "tezina": 1,
       "pitanje": "Ko je predvodio srpsku vojsku u Kosovskoj bici?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/lazar.jpg"
-      },
       "odgovori": [
         "Knez Lazar",
         "Car Dušan",
@@ -101,7 +97,11 @@
         "Vuk Branković"
       ],
       "zanimljivost": "Lazar je podigao manastir Ravanicu, gde su posle bitke prenete njegove mošti. Tokom seoba one su putovale sve do Fruške gore, a u Ravanicu su vraćene 1989, posle 300 godina.",
-      "rec": "lazar"
+      "rec": "lazar",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/lazar.jpg"
+      }
     },
     {
       "tezina": 2,
@@ -358,10 +358,6 @@
     {
       "tezina": 2,
       "pitanje": "Koji komandant Prve armije je svojom odlukom o povlačenju i protivnapadu presudno doprineo pobedi u Kolubarskoj bici 1914?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/misic.jpg"
-      },
       "odgovori": [
         "Živojin Mišić",
         "Radomir Putnik",
@@ -369,7 +365,11 @@
         "Petar Bojović"
       ],
       "zanimljivost": "Mišić je doneo hrabru odluku da se vojska povuče i odmori, a zatim izveo snažan protivnapad. Austrougarska vojska je potpuno poražena, a Beograd oslobođen 15. decembra 1914. Za tu pobedu Mišić je dobio čin vojvode. Vrhovnom komandom je i tada rukovodio vojvoda Putnik.",
-      "rec": "mišić"
+      "rec": "mišić",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/misic.jpg"
+      }
     },
     {
       "tezina": 3,
@@ -419,10 +419,10 @@
       "odgovori": [
         "Milunka Savić",
         "Nadežda Petrović",
-        "Flora Sends",
+        "Kneginja Milica",
         "Kneginja Ljubica"
       ],
-      "zanimljivost": "Milunka je u rat otišla umesto brata, prerušena u muškarca. Otkrili su je tek kada je ranjena. Dobila je, između ostalog, francusku Legiju časti i dva puta Karađorđevu zvezdu sa mačevima.",
+      "zanimljivost": "Milunka je u rat otišla umesto brata, prerušena u muškarca. Otkrili su je tek kada je ranjena. Dobila je, između ostalog, francusku Legiju časti i Karađorđevu zvezdu sa mačevima.",
       "rec": "milunka"
     },
     {
@@ -484,10 +484,6 @@
     {
       "tezina": 2,
       "pitanje": "Ovo naselje na Dunavu, staro oko 9.000 godina, poznato je po skulpturama „ribolikih“ ljudi. Koje je to nalazište?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/lepenski-vir.jpg"
-      },
       "odgovori": [
         "Lepenski Vir",
         "Vinča",
@@ -495,15 +491,15 @@
         "Gamzigrad"
       ],
       "zanimljivost": "Lepenski Vir u Đerdapu otkriven je 1960-ih. Kuće su imale osnovu trapeza, kao isečci kruga. Zbog izgradnje hidroelektrane „Đerdap“ celo nalazište je premešteno na viši teren!",
-      "rec": "lepenski"
+      "rec": "lepenski",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/lepenski-vir.jpg"
+      }
     },
     {
       "tezina": 3,
       "pitanje": "Ova carska palata kod Zaječara podignuta je za rimskog cara Galerija i nazvana po njegovoj majci. Kako se zove?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/romulijana.jpg"
-      },
       "odgovori": [
         "Feliks Romulijana",
         "Sirmijum (Sremska Mitrovica)",
@@ -511,7 +507,11 @@
         "Singidunum (Beograd)"
       ],
       "zanimljivost": "Feliks Romulijana (Gamzigrad) je pod zaštitom UNESCO-a. Na teritoriji današnje Srbije rođeno je oko 17 rimskih careva – više nego bilo gde van Italije!",
-      "rec": "romulijana"
+      "rec": "romulijana",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/romulijana.jpg"
+      }
     },
     {
       "tezina": 2,
@@ -636,7 +636,7 @@
         "Branko Radičević",
         "Đura Jakšić"
       ],
-      "zanimljivost": "Njegoš je bio visok skoro dva metra i odličan strelac. „Gorski vijenac“ objavio je 1847 – iste godine kada su izašle i Vukov prevod „Novog zavjeta“ i Pesme Branka Radičevića, pa se ta godina smatra pobedom Vukove reforme.",
+      "zanimljivost": "Njegoš je bio odličan strelac. „Gorski vijenac“ objavio je 1847 – iste godine kada su izašle i Vukov prevod „Novog zavjeta“ i Pesme Branka Radičevića, pa se ta godina smatra pobedom Vukove reforme.",
       "rec": "njegoš"
     },
     {
@@ -659,10 +659,6 @@
     {
       "tezina": 3,
       "pitanje": "„Glavu dajem, Krajinu ne dajem“ – ko je to rekao braneći Negotin 1813?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/hajduk-veljko.jpg"
-      },
       "odgovori": [
         "Hajduk Veljko Petrović",
         "Stevan Sinđelić",
@@ -670,7 +666,11 @@
         "Vojvoda Mišić"
       ],
       "zanimljivost": "Hajduk Veljko je poginuo od topovske kugle na bedemima Negotina. Bio je poznat po hrabrosti, ali i po veselom duhu – voleo je pesmu i kolo.",
-      "rec": "veljko"
+      "rec": "veljko",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/hajduk-veljko.jpg"
+      }
     },
     {
       "tezina": 2,
@@ -692,18 +692,18 @@
     {
       "tezina": 3,
       "pitanje": "Koji srpski knez je 1867. godine izborio da turska vojska napusti gradove u Srbiji, uključujući Beograd?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/knez-mihailo.jpg"
-      },
       "odgovori": [
         "Knez Mihailo Obrenović",
         "Knez Miloš Obrenović",
         "Knez Aleksandar Karađorđević",
         "Kralj Milan"
       ],
-      "zanimljivost": "Knez Mihailo je ubijen 1868. u Košutnjaku. Njegov spomenik na konju stoji na Trgu Republike u Beogradu – ruka pokazuje ka jugu, prema krajevima koji su još bili pod Turcima. Kod spomenika „kod konja“ se Beograđani često sastaju.",
-      "rec": "mihailo"
+      "zanimljivost": "Knez Mihailo je ubijen 1868. u Košutnjaku. Njegov spomenik na konju stoji na Trgu Republike u Beogradu, a Beograđani se kod njega često sastaju.",
+      "rec": "mihailo",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/knez-mihailo.jpg"
+      }
     },
     {
       "tezina": 1,
@@ -742,10 +742,6 @@
     {
       "tezina": 3,
       "pitanje": "Koja je prva štampana knjiga kod Južnih Slovena, štampana ćirilicom 1494?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/oktoih.jpg"
-      },
       "odgovori": [
         "Oktoih prvoglasnik",
         "Miroslavljevo jevanđelje",
@@ -753,15 +749,15 @@
         "Srpski rječnik"
       ],
       "zanimljivost": "Oktoih je štampan u štampariji Crnojevića na Cetinju, samo četrdesetak godina posle Gutenbergove Biblije. Miroslavljevo jevanđelje (oko 1180) je mnogo starije, ali je rukopis, a ne štampana knjiga.",
-      "rec": "oktoih"
+      "rec": "oktoih",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/oktoih.jpg"
+      }
     },
     {
       "tezina": 2,
       "pitanje": "Koji je najstariji sačuvani srpski ćirilični rukopis, pisan krajem 12. veka za humskog kneza, Nemanjinog brata?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/miroslavljevo.jpg"
-      },
       "odgovori": [
         "Miroslavljevo jevanđelje",
         "Vukanovo jevanđelje",
@@ -769,7 +765,11 @@
         "Žitije Svetog Simeona"
       ],
       "zanimljivost": "Miroslavljevo jevanđelje nastalo je oko 1180. i ukrašeno je sa oko 300 minijatura u boji i zlatu. Nalazi se na UNESCO listi „Pamćenje sveta“. Čuva se u Narodnom muzeju u Beogradu.",
-      "rec": "jevanđelje"
+      "rec": "jevanđelje",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/miroslavljevo.jpg"
+      }
     },
     {
       "tezina": 3,
@@ -998,10 +998,6 @@
     {
       "tezina": 3,
       "pitanje": "Koji srpski kralj iz dinastije Nemanjića je podigao najviše crkava i manastira, uključujući Gračanicu?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/milutin.jpg"
-      },
       "odgovori": [
         "Kralj Milutin",
         "Kralj Dragutin",
@@ -1009,7 +1005,11 @@
         "Car Uroš"
       ],
       "zanimljivost": "Za kralja Milutina se govorilo da je podigao onoliko zadužbina koliko je godina vladao – oko 40. Pored Gračanice, to su i Kraljeva crkva u Studenici i crkva Bogorodice Ljeviške u Prizrenu.",
-      "rec": "milutin"
+      "rec": "milutin",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/milutin.jpg"
+      }
     },
     {
       "tezina": 2,
@@ -1031,10 +1031,6 @@
     {
       "tezina": 3,
       "pitanje": "Ko je bio prvi kralj moderne Srbije, proglašene za kraljevinu 1882?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/kralj-milan.jpg"
-      },
       "odgovori": [
         "Milan Obrenović",
         "Petar I Karađorđević",
@@ -1042,7 +1038,11 @@
         "Miloš Obrenović"
       ],
       "zanimljivost": "Milan je prvo bio knez, a 1882. se proglasio kraljem. Njegov sin Aleksandar Obrenović je ubijen 1903. u Majskom prevratu, kada je na presto došao Petar I Karađorđević.",
-      "rec": "kralj"
+      "rec": "kralj",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/kralj-milan.jpg"
+      }
     },
     {
       "tezina": 1,
@@ -1081,10 +1081,6 @@
     {
       "tezina": 2,
       "pitanje": "Koja kneginja je bila supruga kneza Miloša Obrenovića, poznata po hrabrosti i mudrosti?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/kneginja-ljubica.jpg"
-      },
       "odgovori": [
         "Kneginja Ljubica",
         "Kneginja Milica",
@@ -1092,15 +1088,15 @@
         "Kraljica Draga"
       ],
       "zanimljivost": "Prema predanju, kneginja Ljubica je u boju na Ljubiću 1815. zaustavila ustanike koji su se povlačili i vratila ih u borbu. Njen konak u Beogradu je danas muzej. Kneginja Milica je bila supruga kneza Lazara.",
-      "rec": "ljubica"
+      "rec": "ljubica",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/kneginja-ljubica.jpg"
+      }
     },
     {
       "tezina": 3,
       "pitanje": "Ko je bio komandant srpske vojske u Cerskoj bici 1914?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/stepa.jpg"
-      },
       "odgovori": [
         "Stepa Stepanović",
         "Živojin Mišić",
@@ -1108,13 +1104,17 @@
         "Radomir Putnik"
       ],
       "zanimljivost": "Za ovu pobedu Stepa Stepanović je dobio čin vojvode. Srbija je imala ukupno četiri vojvode u Prvom svetskom ratu: Putnika, Stepanovića, Mišića i Bojovića.",
-      "rec": "stepanović"
+      "rec": "stepanović",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/stepa.jpg"
+      }
     },
     {
       "tezina": 3,
       "pitanje": "Gde se nalazi Gazimestan – spomenik bici iz 1389?",
       "odgovori": [
-        "Na Kosovu polju, kod Prištine",
+        "Na Kosovu polju",
         "Na Kopaoniku, kod Suvog rudišta",
         "Na Rudniku, iznad Gornjeg Milanovca",
         "Na Fruškoj gori, kod manastira Vrdnik"
@@ -1130,26 +1130,22 @@
     {
       "tezina": 2,
       "pitanje": "Ko je prema narodnim pesmama ubio sultana Murata u Kosovskoj bici?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/uros-predic-milos.jpg"
-      },
       "odgovori": [
         "Miloš Obilić",
         "Kraljević Marko",
         "Vuk Branković",
         "Boško Jugović"
       ],
-      "zanimljivost": "Narodne pesme Vuka Brankovića predstavljaju kao izdajnika, ali istoričari smatraju da je on ostao da se bori i posle bitke. Narodna pesma nije uvek isto što i istorija!",
-      "rec": "obilić"
+      "zanimljivost": "Narodne pesme Vuka Brankovića predstavljaju kao izdajnika, a istoričari različito tumače njegovo ponašanje u bici. Narodna pesma nije uvek isto što i istorija!",
+      "rec": "obilić",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/uros-predic-milos.jpg"
+      }
     },
     {
       "tezina": 3,
       "pitanje": "Koji srpski kralj je 1330. pobedio Bugare u bici kod Velbužda?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/stefan-decanski.jpg"
-      },
       "odgovori": [
         "Stefan Dečanski",
         "Car Dušan",
@@ -1157,7 +1153,11 @@
         "Stefan Nemanja"
       ],
       "zanimljivost": "Stefan Dečanski je u mladosti bio oslepljen po naredbi oca, kralja Milutina. Podigao je manastir Visoki Dečani. U bici kod Velbužda (danas Ćustendil) istakao se njegov sin, kasniji car Dušan.",
-      "rec": "dečanski"
+      "rec": "dečanski",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/stefan-decanski.jpg"
+      }
     },
     {
       "tezina": 1,
@@ -1287,7 +1287,7 @@
     },
     {
       "tezina": 1,
-      "pitanje": "Kojim pismom je pisano Miroslavljevo jevanđelje, najstarija sačuvana srpska knjiga?",
+      "pitanje": "Kojim pismom su pisani najstariji sačuvani srpski rukopisi?",
       "odgovori": [
         "Ćirilicom",
         "Latinicom",
@@ -1305,18 +1305,18 @@
     {
       "tezina": 1,
       "pitanje": "Ko je ubijen u Sarajevu 28. juna 1914, što je bio povod za Prvi svetski rat?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/franc-ferdinand.jpg"
-      },
       "odgovori": [
         "Austrougarski prestolonaslednik Franc Ferdinand",
-        "Srpski kralj Petar I Karađorđević, u poseti Sarajevu",
+        "Srpski prestolonaslednik Aleksandar Karađorđević",
         "Car Nikolaj II",
         "Knez Mihailo"
       ],
       "zanimljivost": "Atentat je izvršio Gavrilo Princip, pripadnik pokreta Mlada Bosna. Austrougarska je mesec dana kasnije objavila rat Srbiji.",
-      "rec": "ferdinand"
+      "rec": "ferdinand",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/franc-ferdinand.jpg"
+      }
     },
     {
       "pitanje": "Koji političar, vođa Narodne radikalne stranke, bio je predsednik srpske vlade tokom Prvog svetskog rata?",
@@ -1445,7 +1445,7 @@
         "Stefan Radoslav"
       ],
       "tezina": 3,
-      "zanimljivost": "Dragutin je i posle toga vladao severnim delom države, sa Beogradom, koji je dobio od ugarskog kralja – tako je on bio prvi srpski vladar koji je držao Beograd. Pred smrt se zamonašio kao Teoktist.",
+      "zanimljivost": "Dragutin je dobio Beograd od ugarskog kralja, a pred smrt se zamonašio kao Teoktist.",
       "rec": "sabor",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -1457,13 +1457,13 @@
       "tezina": 2,
       "pitanje": "Ko je bila Jelena Anžujska?",
       "odgovori": [
-        "Kraljica, supruga kralja Uroša I, koja je osnivala škole za devojke",
-        "Kraljica Ugarske koja je ratovala protiv Srbije i zauzela Beograd i Mačvu",
+        "Kraljica, supruga kralja Uroša I, rođena u Francuskoj",
+        "Kraljica Ugarske, koja je zauzela Beograd i Mačvu",
         "Žena kneza Lazara, koja je posle Kosovskog boja upravljala Srbijom sa sinom",
         "Monahinja i pesnikinja"
       ],
-      "zanimljivost": "Jelena Anžujska je, kako piše njen biograf, osnovala prvu školu za devojčice u srednjovekovnoj Srbiji. Njena zadužbina je manastir Gradac. Prema predanju, zbog nje je zasađena Dolina jorgovana uz Ibar.",
-      "rec": "simonida",
+      "zanimljivost": "Jelena je bila katolkinja, a njena zadužbina Gradac građena je u raškom stilu sa uticajem gotike.",
+      "rec": "jelena",
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/jelena-anzujska.jpg",
@@ -1496,7 +1496,7 @@
         "Despot Stefan",
         "Vuk Branković"
       ],
-      "zanimljivost": "U narodnim pesmama Marko je najveći junak, a u stvarnosti je bio vazal Turaka. Pesme kažu da je živeo 300 godina!",
+      "zanimljivost": "U narodnim pesmama Marko je najveći junak, a u stvarnosti je bio vazal Turaka. Poginuo je na Rovinama 1395. godine.",
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/kraljevic-marko.jpg",
@@ -1507,18 +1507,18 @@
     {
       "tezina": 2,
       "pitanje": "Kako se zovu srednjovekovni kameni nadgrobni spomenici u Bosni, Hercegovini i susednim oblastima, upisani na UNESCO listu?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/stecak.jpg"
-      },
       "odgovori": [
         "Stećci",
         "Menhiri",
-        "Moai",
+        "Kurgani",
         "Obelisci"
       ],
       "zanimljivost": "Stećci se nalaze u BiH, Srbiji, Crnoj Gori i Hrvatskoj. Od 2016. su na UNESCO listi svetske baštine.",
-      "rec": "stećak"
+      "rec": "stećak",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/stecak.jpg"
+      }
     },
     {
       "tezina": 2,
@@ -1530,9 +1530,9 @@
       },
       "odgovori": [
         "Samo jedan dan",
-        "Sedam dana",
+        "Oko dve nedelje",
         "Tri meseca",
-        "Godinu dana"
+        "Oko godinu dana"
       ],
       "zanimljivost": "Bitka se odigrala 28. juna (15. juna po starom kalendaru) 1389. Pobednik nije bio jasan – i Lazar i Murat su poginuli.",
       "rec": "bitka"
@@ -1610,7 +1610,7 @@
         "„Večernje novosti“",
         "„Srpski glasnik“"
       ],
-      "zanimljivost": "Prve srpske novine izlazile su još u Beču 1791, ali „Novine srbske“ su prve u Srbiji. Kasnije su prerasle u „Službeni glasnik“.",
+      "zanimljivost": "Prve srpske novine izlazile su još u Beču 1791, ali „Novine srbske“ su prve u Srbiji.",
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/novine-srbske.jpg",
@@ -1641,8 +1641,8 @@
       "odgovori": [
         "Grupa srpskih trgovaca i intelektualaca u Pešti 1826.",
         "Vuk Stefanović Karadžić u Beogradu, posle Drugog srpskog ustanka",
-        "Kralj Milan Obrenović, kada je Srbija postala kraljevina 1882.",
-        "Sveti Sava, kao deo prve srpske škole u manastiru Studenica"
+        "Društvo srpske slovesnosti u Beogradu 1841.",
+        "Srpska kraljevska akademija u Beogradu 1886."
       ],
       "zanimljivost": "Matica srpska je 1864. prešla u Novi Sad. Izdaje i „Letopis Matice srpske“ – najstariji književni časopis koji još izlazi u svetu.",
       "medijiOdgovora": {
@@ -1722,7 +1722,7 @@
         "Rodosu",
         "Korčuli"
       ],
-      "zanimljivost": "Na Krfu je postojala i srpska Narodna skupština u izgnanstvu. Danas na Krfu postoji muzej „Srpska kuća“, posvećen srpskim vojnicima.",
+      "zanimljivost": "Na Krfu je postojala i srpska Narodna skupština u izgnanstvu.",
       "rec": "krf"
     },
     {
@@ -1744,18 +1744,18 @@
     {
       "tezina": 2,
       "pitanje": "Koji je srpski vojskovođa komandovao Prvom armijom pri proboju Solunskog fronta?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/bojovic.jpg"
-      },
       "odgovori": [
         "Petar Bojović",
         "Živojin Mišić",
         "Radomir Putnik",
         "Stepa Stepanović"
       ],
-      "zanimljivost": "Bojović je bio četvrti srpski vojvoda. Mišić je u to vreme bio načelnik Vrhovne komande.",
-      "rec": "bojović"
+      "zanimljivost": "Bojović je bio četvrti srpski vojvoda, posle Putnika, Stepanovića i Mišića.",
+      "rec": "bojović",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/bojovic.jpg"
+      }
     },
     {
       "pitanje": "Koji grad je 1914–1915. bio sedište srpske vlade i Narodne skupštine – „ratna prestonica“?",
@@ -1766,7 +1766,7 @@
         "Valjevo"
       ],
       "tezina": 2,
-      "zanimljivost": "U Nišu je Narodna skupština u decembru 1914. donela Nišku deklaraciju, kojom je kao ratni cilj proglašeno oslobođenje i ujedinjenje Srba, Hrvata i Slovenaca. Vrhovna komanda bila je u Kragujevcu.",
+      "zanimljivost": "U Nišu je Narodna skupština u decembru 1914. donela Nišku deklaraciju, kojom je kao ratni cilj proglašeno oslobođenje i ujedinjenje Srba, Hrvata i Slovenaca.",
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/niska-tvrdjava.jpg",
@@ -1855,7 +1855,7 @@
         "U Sarajevu",
         "U Parizu"
       ],
-      "zanimljivost": "Atentat je bio jedan od prvih snimljenih filmskom kamerom. Kralja su zvali „Ujedinitelj“, jer je predvodio stvaranje zajedničke države.",
+      "zanimljivost": "Atentat u Marselju izveo je makedonski revolucionar Vlado Černozemski, a ubijen je i francuski ministar spoljnih poslova Luj Bartu. Kralja su zvali „Ujedinitelj“, jer je predvodio stvaranje zajedničke države.",
       "rec": "marselj"
     },
     {
@@ -1911,7 +1911,7 @@
         "Smederevo",
         "Ram"
       ],
-      "zanimljivost": "Zaviša Crni je bio jedan od najslavnijih vitezova Evrope tog vremena – u Poljskoj i danas postoji izreka „osloniti se kao na Zavišu“, što znači potpuno se pouzdati u nekoga.",
+      "zanimljivost": "Zaviša Crni je bio jedan od najslavnijih vitezova Evrope tog vremena – Golubac je bio važna dunavska tvrđava na granici sa Osmanlijama.",
       "rec": "golubac"
     },
     {
@@ -1933,7 +1933,7 @@
     },
     {
       "tezina": 3,
-      "pitanje": "Ko je napisao Žitije Svetog Simeona koje je deo Studeničkog tipika?",
+      "pitanje": "Ko je napisao Žitije Svetog Simeona (Stefana Nemanje)?",
       "odgovori": [
         "Sveti Sava",
         "Teodosije",
@@ -1974,7 +1974,7 @@
         "Konstantin Veliki",
         "Manuel Komnin"
       ],
-      "zanimljivost": "Simonida je bila udata sa samo oko pet godina. Njen portret iz Gračanice opevao je Milan Rakić u pesmi „Simonida“, o freski kojoj su oči iskopane.",
+      "zanimljivost": "Simonida se udala za Milutina kao veoma mlada devojka. Njen portret iz Gračanice opevao je Milan Rakić u pesmi „Simonida“, o freski kojoj su oči iskopane.",
       "rec": "paleolog",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -2035,10 +2035,6 @@
     {
       "tezina": 3,
       "pitanje": "Ko je autor „Načertanija“ (1844), tajnog programa spoljne politike Srbije?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/garasanin.jpg"
-      },
       "odgovori": [
         "Ilija Garašanin",
         "Knez Miloš Obrenović",
@@ -2046,7 +2042,11 @@
         "Dositej Obradović"
       ],
       "zanimljivost": "„Načertanije“ je bio tajni program za oslobođenje i ujedinjenje Srba i drugih južnih Slovena. Garašanin je bio jedan od najvažnijih srpskih državnika 19. veka.",
-      "rec": "garašanin"
+      "rec": "garašanin",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/garasanin.jpg"
+      }
     },
     {
       "tezina": 3,
@@ -2133,10 +2133,6 @@
     {
       "tezina": 3,
       "pitanje": "Koja Škotkinja je bila lekarka koja je osnovala bolnice u Srbiji tokom Prvog svetskog rata?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/elsi-inglis.jpg"
-      },
       "odgovori": [
         "Elsi Inglis",
         "Florens Najtingejl",
@@ -2144,23 +2140,27 @@
         "Marija Kiri"
       ],
       "zanimljivost": "Doktorka Elsi Inglis je umrla 1917, a srpski narod je i danas pamti. Flora Sends je, s druge strane, bila Engleskinja koja je postala oficir srpske vojske.",
-      "rec": "inglis"
+      "rec": "inglis",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/elsi-inglis.jpg"
+      }
     },
     {
       "tezina": 3,
       "pitanje": "Koja Engleskinja je u Prvom svetskom ratu kao bolničarka došla u Srbiju, a postala oficir srpske vojske?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/flora-sends.jpg"
-      },
       "odgovori": [
         "Flora Sends",
         "Elsi Inglis",
-        "Mejbel Grujić",
-        "Kristina Mur"
+        "Florens Najtingejl",
+        "Edit Kavel"
       ],
       "zanimljivost": "Flora Sends je u Srbiju došla kao bolničarka, a postala kapetan srpske vojske. Posle rata se udala za ruskog oficira i živela u Beogradu.",
-      "rec": "sends"
+      "rec": "sends",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/flora-sends.jpg"
+      }
     },
     {
       "tezina": 3,
@@ -2282,18 +2282,18 @@
     {
       "tezina": 3,
       "pitanje": "Kako se zvao srednjovekovni rudnik srebra koji je u 15. veku bio jedan od najvećih u Evropi?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/novo-brdo.jpg"
-      },
       "odgovori": [
         "Novo Brdo",
         "Rudnik",
         "Kopaonik",
-        "Trepča"
+        "Majdanpek"
       ],
       "zanimljivost": "U Novom Brdu je kovan srpski novac, a radili su i saski rudari. Despot Stefan je za rudnike doneo „Zakon o rudnicima“ 1412.",
-      "rec": "rudnik"
+      "rec": "rudnik",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/novo-brdo.jpg"
+      }
     },
     {
       "tezina": 3,
@@ -2315,18 +2315,18 @@
     {
       "tezina": 3,
       "pitanje": "Koja je srednjovekovna srpska tvrđava na stenama iznad Ibra, u blizini Kraljeva?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/maglic.jpg"
-      },
       "odgovori": [
         "Maglič",
         "Golubac",
         "Ram",
         "Smederevo"
       ],
-      "zanimljivost": "Maglič je verovatno podignut u 13. veku. Ime je dobio po magli koja se često diže iz klisure Ibra.",
-      "rec": "maglič"
+      "zanimljivost": "Maglič je verovatno podignut u 13. veku, a ostaci tvrđave i danas stoje na strmim stenama iznad reke.",
+      "rec": "maglič",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/maglic.jpg"
+      }
     },
     {
       "pitanje": "Koju tvrđavu na Dunavu, kod Velikog Gradišta, podigli su Turci krajem 15. veka kao jednu od prvih građenih za topove?",
@@ -2334,10 +2334,10 @@
         "Ram",
         "Golubac",
         "Fetislam",
-        "Smederevo"
+        "Kula Nebojša"
       ],
       "tezina": 3,
-      "zanimljivost": "Ram ima pet kula i niske, debele zidove, kakvi su bili potrebni da izdrže topovska đulad. Obnovljen je 2019. i otvoren za posetioce.",
+      "zanimljivost": "Ram ima pet kula i niske, debele zidove, kakvi su bili potrebni da izdrže topovska đulad.",
       "rec": "tvrđava",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -2382,10 +2382,6 @@
     {
       "tezina": 2,
       "pitanje": "Koji spomenik na Avali je posvećen poginulim borcima Prvog svetskog rata?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/neznani-junak.jpg"
-      },
       "odgovori": [
         "Spomenik Neznanom junaku",
         "Pobednik",
@@ -2393,7 +2389,11 @@
         "Spomenik knezu Mihailu"
       ],
       "zanimljivost": "Spomenik je delo Ivana Meštrovića, završen 1938. Avala ima i televizijski toranj, srušen 1999. i obnovljen 2010.",
-      "rec": "avala"
+      "rec": "avala",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/neznani-junak.jpg"
+      }
     },
     {
       "tezina": 3,
@@ -2404,7 +2404,7 @@
         "Kruševska republika",
         "Topolska republika"
       ],
-      "zanimljivost": "Užička republika je bila oslobođena teritorija u jesen 1941. U trezoru banke u Užicu bila je fabrika oružja, koja je eksplodirala u novembru 1941.",
+      "zanimljivost": "Užička republika je bila oslobođena teritorija u jesen 1941. Ugušena je krajem novembra 1941.",
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/kadinjaca.jpg",
@@ -2438,7 +2438,7 @@
         "Milan Obrenović"
       ],
       "tezina": 3,
-      "zanimljivost": "Hatišerif je bio sultanov ukaz. Njime je Srbija dobila unutrašnju samoupravu, a Turci su smeli da žive samo u gradovima sa tvrđavama. Već sledeće godine u Beogradu je proradila prva štamparija u Kneževini.",
+      "zanimljivost": "Hatišerif je bio sultanov ukaz. Njime je Srbija dobila unutrašnju samoupravu, a Turci su smeli da žive samo u gradovima sa tvrđavama.",
       "medijiOdgovora": {
         "vrsta": "lenta",
         "od": 1800,
@@ -2505,7 +2505,7 @@
         "Seoski kovač i potkivač",
         "Učitelj u seoskoj školi"
       ],
-      "zanimljivost": "Trgovina svinjama sa Austrijom bila je glavni izvor bogatstva Srbije tog vremena. Veliki deo ustaničkih starešina bili su upravo trgovci.",
+      "zanimljivost": "Trgovina svinjama sa Austrijom bila je glavni izvor bogatstva Srbije tog vremena.",
       "rec": "trgovac"
     },
     {
@@ -2806,10 +2806,6 @@
     {
       "tezina": 2,
       "pitanje": "Koji srednjovekovni grad, prvo središte države Nemanjića, danas je ruševina iznad Novog Pazara?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/stari-ras.jpg"
-      },
       "odgovori": [
         "Ras",
         "Prizren",
@@ -2817,23 +2813,27 @@
         "Kruševac"
       ],
       "zanimljivost": "Po Rasu je država dobila ime Raška. Ruševine Starog Rasa sa Sopoćanima su na Uneskovoj listi svetske baštine.",
-      "rec": "ruševina"
+      "rec": "ruševina",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/stari-ras.jpg"
+      }
     },
     {
       "tezina": 3,
       "pitanje": "Ovaj rimski grad i vojni logor kod Kostolca bio je glavni grad provincije Gornje Mezije. Kako se zove?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/viminacijum.jpg"
-      },
       "odgovori": [
         "Viminacijum",
         "Singidunum",
         "Naisus",
         "Sirmijum"
       ],
-      "zanimljivost": "U Viminacijumu su pronađene hiljade grobova, ostaci amfiteatra i skelet mamuta star preko milion godina.",
-      "rec": "logor"
+      "zanimljivost": "U Viminacijumu su pronađene hiljade grobova, ostaci amfiteatra i ostaci amfiteatra i brojne nekropole.",
+      "rec": "logor",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/viminacijum.jpg"
+      }
     },
     {
       "tezina": 3,
@@ -2871,7 +2871,7 @@
       "pitanje": "Kako se zvala prva srpska pesnikinja, monahinja koja je zlatnim koncem izvezla „Pohvalu knezu Lazaru“?",
       "odgovori": [
         "Jefimija",
-        "Jevgenija",
+        "Mara",
         "Olivera",
         "Jelena Balšić"
       ],
@@ -2887,10 +2887,6 @@
     {
       "tezina": 2,
       "pitanje": "Koji despot je podigao Smederevsku tvrđavu za samo nekoliko godina?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/djuradj.jpg"
-      },
       "odgovori": [
         "Đurađ Branković",
         "Stefan Lazarević",
@@ -2898,13 +2894,41 @@
         "Vuk Branković"
       ],
       "zanimljivost": "Narod je zbog teškog rada na gradnji tvrđave „Prokletom Jerinom“ nazvao Đurđevu suprugu Jerinu Kantakuzinu.",
-      "rec": "despot"
+      "rec": "despot",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/djuradj.jpg"
+      }
     },
     {
       "vrsta": "spoji",
       "tezina": 2,
       "pitanje": "Spoji vladara sa njegovom prestonicom",
-      "mediji": {
+      "parovi": [
+        [
+          "Knez Lazar",
+          "Kruševac"
+        ],
+        [
+          "Despot Stefan Lazarević",
+          "Beograd"
+        ],
+        [
+          "Despot Đurađ Branković",
+          "Smederevo"
+        ],
+        [
+          "Karađorđe",
+          "Topola"
+        ],
+        [
+          "Knez Miloš",
+          "Kragujevac"
+        ]
+      ],
+      "zanimljivost": "Beograd je postao srpska prestonica početkom 15. veka, za vreme despota Stefana, koji ga je obnovio i ukrasio.",
+      "rec": "prestonica",
+      "medijiOdgovora": {
         "vrsta": "mapa",
         "oblast": "srbija",
         "tacke": [
@@ -2934,31 +2958,7 @@
             "oznaka": "Kragujevac"
           }
         ]
-      },
-      "parovi": [
-        [
-          "Knez Lazar",
-          "Kruševac"
-        ],
-        [
-          "Despot Stefan Lazarević",
-          "Beograd"
-        ],
-        [
-          "Despot Đurađ Branković",
-          "Smederevo"
-        ],
-        [
-          "Karađorđe",
-          "Topola"
-        ],
-        [
-          "Knez Miloš",
-          "Kragujevac"
-        ]
-      ],
-      "zanimljivost": "Beograd je postao srpska prestonica početkom 15. veka, za vreme despota Stefana, koji ga je obnovio i ukrasio.",
-      "rec": "prestonica"
+      }
     },
     {
       "vrsta": "spoji",
@@ -3026,7 +3026,7 @@
         "Kralj Milutin",
         "Car Dušan"
       ],
-      "objasnjenje": "Knez Lazar Hrebeljanović nije bio Nemanjić, mada je njegova supruga Milica bila iz pobočne loze Nemanjića.",
+      "objasnjenje": "Knez Lazar Hrebeljanović nije bio iz dinastije Nemanjića, nego iz drugog roda.",
       "zanimljivost": "Nemanjići su vladali Srbijom skoro dva veka – od Stefana Nemanje (1166) do cara Uroša (1371).",
       "medijiOdgovora": {
         "vrsta": "lenta",
@@ -3197,10 +3197,6 @@
     {
       "tezina": 1,
       "pitanje": "Koji je događaj s početka 1804. godine, prikazan na ovom crtežu, bio neposredan povod za Prvi srpski ustanak?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/seca-knezova.jpg"
-      },
       "odgovori": [
         "Seča knezova",
         "Pad Smedereva",
@@ -3209,32 +3205,8 @@
       ],
       "zanimljivost": "Dahije su ubile više desetina uglednih srpskih knezova i sveštenika, jer su se bojale pobune. Među njima su bili valjevski knez Aleksa Nenadović i Ilija Birčanin. Postigle su suprotno: narod je shvatio da nikome nema sigurnosti i za samo nekoliko nedelja podigao ustanak.",
       "medijiOdgovora": {
-        "vrsta": "lenta",
-        "od": 1801,
-        "do": 1805,
-        "dogadjaji": [
-          {
-            "g": 1801.5,
-            "t": "dahije na vlasti",
-            "n": "1801."
-          },
-          {
-            "g": 1804.05,
-            "t": "Seča knezova",
-            "n": "jan. 1804.",
-            "ist": true
-          },
-          {
-            "g": 1804.12,
-            "t": "Zbor u Orašcu",
-            "n": "feb. 1804."
-          },
-          {
-            "g": 1804.6,
-            "t": "pogubljenje dahija",
-            "n": "avg. 1804."
-          }
-        ]
+        "vrsta": "slika",
+        "src": "slike/seca-knezova.jpg"
       },
       "rec": "knez"
     },
@@ -3301,7 +3273,7 @@
         "Ada Ciganlija",
         "Krčedinska ada"
       ],
-      "zanimljivost": "Dahije je pogubio vojvoda Milenko Stojković, uz pristanak turskog vezira, jer je i sultan želeo da ih se reši. Ada Kale je bila utvrđeno ostrvo kod Oršave, sa džamijom i bazarom. Potopljeno je 1970. kada je izgrađena hidrocentrala Đerdap.",
+      "zanimljivost": "Ada Kale je bila utvrđeno ostrvo kod Oršave, sa džamijom i bazarom. Potopljeno je 1970. kada je izgrađena hidrocentrala Đerdap.",
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/ada-kale.jpg",
@@ -3371,10 +3343,6 @@
     {
       "tezina": 1,
       "pitanje": "Koji boj iz 1806, kod Šapca, prikazuje ova slika?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/misar.jpg"
-      },
       "odgovori": [
         "Boj na Mišaru",
         "Bitka na Ivankovcu",
@@ -3383,43 +3351,8 @@
       ],
       "zanimljivost": "Na Mišaru je Karađorđe pobedio vojsku koja je stigla iz Bosne. Konjica Luke Lazarevića je u odlučnom trenutku udarila Turcima s boka. Bitku je opevao Filip Višnjić, a u pesmi dva gavrana donose vest ljubi poginulog Kulin-kapetana.",
       "medijiOdgovora": {
-        "vrsta": "mapa",
-        "karta": "srbija-1833",
-        "tacke": [
-          {
-            "lat": 44.72,
-            "lon": 19.66,
-            "oznaka": "Mišar",
-            "znak": "⚔️"
-          }
-        ],
-        "linije": [
-          {
-            "tacke": [
-              [
-                19.1,
-                44.4
-              ],
-              [
-                19.3,
-                44.6
-              ],
-              [
-                19.6,
-                44.7
-              ]
-            ],
-            "boja": "#c0504d",
-            "strelica": true,
-            "natpis": "iz Bosne"
-          }
-        ],
-        "kutija": [
-          18.7,
-          43.9,
-          21.2,
-          45.3
-        ]
+        "vrsta": "slika",
+        "src": "slike/misar.jpg"
       },
       "rec": "mišar"
     },
@@ -3571,7 +3504,7 @@
         "Svištovski mir",
         "Jedrenski mir"
       ],
-      "zanimljivost": "Mir je ispregovarao Petar Ičko, rodom iz Makedonije, iskusni trgovac i diplomata. Srbija bi dobila široku samoupravu, ali je Rusija upravo zaratila sa Turskom i ponudila savez, pa su ustanici nastavili rat. Ičko je kasnije umro – verovatno otrovan.",
+      "zanimljivost": "Mir je ispregovarao Petar Ičko, rodom iz Makedonije, iskusni trgovac i diplomata. Srbija bi dobila široku samoupravu, ali je Rusija upravo zaratila sa Turskom i ponudila savez, pa su ustanici nastavili rat.",
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/petar-icko.jpg",
@@ -3679,7 +3612,7 @@
         "Filip Višnjić",
         "Jovan Sterija Popović"
       ],
-      "zanimljivost": "Dositej je pesmu napisao 1804. u Trstu, čim je čuo za ustanak. Kasnije je i sam došao u Srbiju, osnovao Veliku školu (1808) i postao prvi ministar prosvete. Sahranjen je ispred Saborne crkve u Beogradu, pored Vuka Karadžića.",
+      "zanimljivost": "Dositej je pesmu napisao 1804, čim je čuo za ustanak. Kasnije je i sam došao u Srbiju, osnovao Veliku školu (1808) i postao prvi ministar prosvete. Sahranjen je ispred Saborne crkve u Beogradu, pored Vuka Karadžića.",
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/dositej.png",
@@ -4011,10 +3944,6 @@
     {
       "tezina": 2,
       "pitanje": "Od čega su ustanici pravili čuvene topove „trešnjevke“?",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🌳🍒 ➕ ⛓️ = 💥"
-      },
       "odgovori": [
         "Od izdubljenih stabala trešnje",
         "Od crkvenih zvona",
@@ -4022,7 +3951,11 @@
         "Od gvozdenih plugova"
       ],
       "zanimljivost": "Kada nisu imali dovoljno pravih topova, ustanici su dubili deblo trešnje i obavijali ga gvozdenim obručima. Takav top mogao je da ispali samo nekoliko hitaca, ali je plašio neprijatelja i rušio palisade. Kasnije su topove nabavljali iz Austrije i Rusije i livali sopstvene.",
-      "rec": "trešnja"
+      "rec": "trešnja",
+      "medijiOdgovora": {
+        "vrsta": "emodzi",
+        "tekst": "🌳🍒 ➕ ⛓️ = 💥"
+      }
     },
     {
       "tezina": 1,
@@ -4115,7 +4048,7 @@
           "Deligrad"
         ]
       ],
-      "zanimljivost": "Sva četvorica imaju ulice u Beogradu, a Hajduk Veljko i Sinđelić i spomenike u gradovima koje su branili – Negotinu i Nišu.",
+      "zanimljivost": "Hajduk Veljko i Stevan Sinđelić imaju spomenike u gradovima koje su branili – Negotinu i Nišu.",
       "medijiOdgovora": {
         "vrsta": "mapa",
         "karta": "srbija-1833",
@@ -4151,10 +4084,6 @@
     {
       "tezina": 1,
       "pitanje": "Kako su se zvali Srbi koji su se pre ustanka odmetali u šume i napadali turske nasilnike?",
-      "mediji": {
-        "vrsta": "citat",
-        "tekst": "„Đurđevdan – hajdučki sastanak, Mitrovdan – hajdučki rastanak“"
-      },
       "odgovori": [
         "Hajduci",
         "Uskoci",
@@ -4163,9 +4092,8 @@
       ],
       "zanimljivost": "Hajduci su leto provodili u šumi, a zimu kod jataka – ljudi koji su ih skrivali i hranili. Krdžalije su, naprotiv, bile turske razbojničke čete, a uskoci prebezi koji su se borili iz Austrije i Venecije. Mnogi ustanički vojvode, kao Glavaš i Veljko, bili su hajduci.",
       "medijiOdgovora": {
-        "vrsta": "slika",
-        "src": "slike/hajduk-veljko.jpg",
-        "opis": "Hajduk Veljko"
+        "vrsta": "citat",
+        "tekst": "„Đurđevdan – hajdučki sastanak, Mitrovdan – hajdučki rastanak“"
       },
       "rec": "hajduk"
     },
@@ -4831,8 +4759,7 @@
               ]
             ],
             "boja": "#3d7fd9",
-            "strelica": true,
-            "natpis": "Prva armija"
+            "strelica": true
           },
           {
             "tacke": [
@@ -4851,8 +4778,7 @@
             ],
             "boja": "#3d7fd9",
             "strelica": true,
-            "kasni": 0.6,
-            "natpis": "Druga"
+            "kasni": 0.6
           },
           {
             "tacke": [
@@ -4887,7 +4813,7 @@
         "Treća armija",
         "Dunavska divizija"
       ],
-      "zanimljivost": "Načelnik štaba Prve armije bio je Petar Bojović. Pobeda kod Kumanova (23–24. oktobra) otvorila je put ka Skoplju, gde je srpska vojska ušla nekoliko dana kasnije. Narod je ovu bitku doživeo kao „osvetu za Kosovo“.",
+      "zanimljivost": "Pobeda kod Kumanova (23–24. oktobra) otvorila je put ka Skoplju, gde je srpska vojska ušla nekoliko dana kasnije. Narod je ovu bitku doživeo kao „osvetu za Kosovo“.",
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/kumanovo.jpg",
@@ -5121,7 +5047,7 @@
         "Albanija",
         "Makedonija",
         "Bugarska",
-        "Kosovo"
+        "Bosna"
       ],
       "zanimljivost": "Albanci su proglasili nezavisnost u Valoni 28. novembra 1912, a velike sile su je priznale 1913. Najviše su je podržale Austrougarska i Italija, koje nisu želele jaku Srbiju na Jadranu. Prvi vladar Albanije bio je nemački knez Vilhelm od Vida.",
       "rec": "albanija"
@@ -5589,7 +5515,7 @@
         "Prištinu",
         "Đakovicu"
       ],
-      "zanimljivost": "Posle balkanskih ratova Peć i Đakovica pripale su Crnoj Gori, a Prizren i Priština Srbiji. Pećka patrijaršija je bila sedište srpskih patrijaraha od 14. veka, a crkve u njoj su danas pod zaštitom UNESKA.",
+      "zanimljivost": "Posle balkanskih ratova Peć i Đakovica pripale su Crnoj Gori, a Prizren i Priština Srbiji. Pećka patrijaršija je bila sedište srpskih patrijaraha od 14. veka, a crkve u njoj su danas pod zaštitom UNESCO-a.",
       "medijiOdgovora": {
         "vrsta": "mapa",
         "karta": "crna-gora-1913",
@@ -6154,7 +6080,7 @@
         "Oskar Poćorek",
         "Konrad fon Hecendorf",
         "August fon Makenzen",
-        "Svetozar Borojević"
+        "Artur fon Arz"
       ],
       "zanimljivost": "Poćorek je bio i guverner Bosne – sedeo je u istom automobilu sa Francom Ferdinandom kada je ubijen. Želeo je da Beograd osvoji za godišnjicu vladavine cara Franje Josifa, 2. decembra – i uspeo je, ali samo na 13 dana. Posle poraza na Kolubari smenjen je.",
       "medijiOdgovora": {
@@ -6816,7 +6742,7 @@
         "Oko dve trećine",
         "Oko polovine"
       ],
-      "zanimljivost": "Procene se kreću oko 1,1–1,3 miliona ljudi od oko 4,5 miliona – vojnika i civila, od borbi, bolesti, gladi i u logorima. Stradalo je više od polovine odraslih muškaraca. Srazmerno broju stanovnika, nijedna zemlja nije izgubila više.",
+      "zanimljivost": "Procene se kreću oko 1,1–1,3 miliona ljudi od oko 4,5 miliona – vojnika i civila, od borbi, bolesti, gladi i u logorima. Srazmerno broju stanovnika, to je jedan od najvećih gubitaka u ratu.",
       "rec": "žrtva"
     },
     {
@@ -6832,7 +6758,7 @@
         "Srpska divlja ruža",
         "Planinska lincura"
       ],
-      "zanimljivost": "Ramondu je otkrio Josif Pančić kod Niša i nazvao je po kraljici Nataliji Obrenović. Raste i na planinama Solunskog fronta. Kao feniks, može potpuno da se osuši i ponovo oživi posle kiše – zato je izabrana za simbol naroda koji je preživeo Albansku golgotu. Nosi se na reveru na Dan primirja, 11. novembra.",
+      "zanimljivost": "Ramondu je otkrio Josif Pančić kod Niša i nazvao je po kraljici Nataliji Obrenović. Raste i na planinama Solunskog fronta. Kao feniks, može potpuno da se osuši i ponovo oživi posle kiše. Nosi se na reveru na Dan primirja, 11. novembra.",
       "rec": "ramonda"
     },
     {
@@ -6876,11 +6802,7 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Koji dokument, prikazan na slici, su 1917. potpisali srpska vlada i Jugoslovenski odbor, dogovarajući zajedničku državu?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/krfska.jpg"
-      },
+      "pitanje": "Koji dokument su 1917. potpisali srpska vlada i Jugoslovenski odbor, dogovarajući zajedničku državu?",
       "odgovori": [
         "Krfsku deklaraciju",
         "Nišku deklaraciju",
@@ -6890,8 +6812,7 @@
       "zanimljivost": "Deklaraciju su potpisali Nikola Pašić i Ante Trumbić, vođa Jugoslovenskog odbora koji je okupljao Hrvate, Slovence i Srbe iz Austrougarske. Predviđeno je da država bude kraljevina sa dinastijom Karađorđević, sa ravnopravnim pismima – ćirilicom i latinicom.",
       "medijiOdgovora": {
         "vrsta": "slika",
-        "src": "slike/trumbic.jpg",
-        "opis": "Ante Trumbić"
+        "src": "slike/krfska.jpg"
       },
       "rec": "krf"
     },
@@ -6908,7 +6829,7 @@
         "Kalemegdan",
         "Vido"
       ],
-      "zanimljivost": "Ime znači „maslinjak“. Groblje su skoro ceo vek čuvale tri generacije porodice Mihailović: solunski borac Savo, njegov sin Đuro i unuk Đorđe. Tu je sahranjen i pesnik Milutin Bojić, a na susednim parcelama i francuski, britanski, italijanski i ruski vojnici.",
+      "zanimljivost": "Ime znači „maslinjak“. Tu je sahranjen i pesnik Milutin Bojić, a na susednim parcelama i francuski, britanski, italijanski i ruski vojnici.",
       "medijiOdgovora": {
         "vrsta": "mapa",
         "oblast": "balkan",
@@ -6959,7 +6880,7 @@
         "1. decembar",
         "28. jun"
       ],
-      "zanimljivost": "Primirje između saveznika i Nemačke potpisano je u železničkom vagonu u šumi kod Kompjenja 11. novembra 1918, u 11 sati. U Srbiji je to neradni dan od 2012, a simbol praznika je Natalijina ramonda.",
+      "zanimljivost": "Primirje između saveznika i Nemačke potpisano je u železničkom vagonu u šumi kod Kompjenja 11. novembra 1918, u 11 sati. Simbol praznika je Natalijina ramonda.",
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/ramonda.jpg",
@@ -7137,7 +7058,7 @@
       },
       "odgovori": [
         "U Bizerti (Tunis)",
-        "U Aleksandriji (Egipat)",
+        "U Kazablanki (Maroko)",
         "U Oranu (Alžir)",
         "U Tripoliju (Libija)"
       ],

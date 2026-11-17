@@ -210,10 +210,6 @@
    "lekcija": 1,
    "tezina": 1,
    "pitanje": "Koje svojstvo kaže da sabirci mogu da zamene mesta, a zbir ostaje isti?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "a + b = b + a"
-   },
    "odgovori": [
     "Komutativnost sabiranja",
     "Asocijativnost sabiranja",
@@ -221,16 +217,16 @@
     "Tranzitivnost"
    ],
    "zanimljivost": "Komutativnost znači „razmena“: $a+b=b+a$. Isto važi i za množenje: $a · b = b · a$. Oduzimanje i deljenje ovo svojstvo nemaju!",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$a+b=b+a$"
+   },
    "rec": "zamena"
   },
   {
    "lekcija": 1,
    "tezina": 1,
    "pitanje": "Koje svojstvo omogućava da sabiraš u parovima, kako ti je lakše: $(a+b)+c=a+(b+c)$?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "(a + b) + c = a + (b + c)"
-   },
    "odgovori": [
     "Asocijativnost sabiranja",
     "Komutativnost sabiranja",
@@ -238,6 +234,10 @@
     "Zatvorenost"
    ],
    "zanimljivost": "Asocijativnost znači „udruživanje“ – zagrade se mogu pomerati. Zahvaljujući njoj možeš prvo sabrati $357+643=1000$, pa tek onda dodati $589$.",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$(a+b)+c=a+(b+c)$"
+   },
    "rec": "udruživanje"
   },
   {
@@ -248,7 +248,7 @@
     "0",
     "1",
     "10",
-    "Ne postoji"
+    "5"
    ],
    "zanimljivost": "Nula je neutralna za sabiranje: $a+0=a$. Zato se nula i zove „neutral“. Za množenje je neutralan broj 1.",
    "medijiOdgovora": {
@@ -282,7 +282,7 @@
     "0",
     "7",
     "1",
-    "Ne može se podeliti"
+    "0,7"
    ],
    "zanimljivost": "Nula podeljena bilo čim (osim nulom) je uvek nula: nemaš ništa, pa na koliko god delova da podeliš, svaki deo je prazan.",
    "medijiOdgovora": {
@@ -295,10 +295,6 @@
    "lekcija": 1,
    "tezina": 2,
    "pitanje": "Koje svojstvo povezuje množenje i sabiranje: $a · (b+c) = a · b + a · c$?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "a·(b + c) = a· b + a· c"
-   },
    "odgovori": [
     "Distributivnost",
     "Komutativnost",
@@ -306,6 +302,10 @@
     "Idempotencija"
    ],
    "zanimljivost": "Distributivnost znači „razdeljivanje“: množenje se raspodeljuje na svaki sabirak u zagradi. Zato je $7 · 12 = 7·10 + 7·2 = 70+14=84$.",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$a\\cdot(b+c)=a\\cdot b+a\\cdot c$"
+   },
    "rec": "raspodela"
   },
   {
@@ -316,7 +316,7 @@
     "Rezultat je uvek 0",
     "Rezultat je 1",
     "Rezultat je isti broj",
-    "Ne može se izračunati"
+    "Rezultat zavisi od broja"
    ],
    "zanimljivost": "Množenje nulom „uništava“ sve: $a · 0 = 0$. Zato se nula zove i „upijajući element“ za množenje.",
    "medijiOdgovora": {
@@ -329,10 +329,6 @@
    "lekcija": 1,
    "tezina": 2,
    "pitanje": "Zašto deljenje nulom nije dozvoljeno?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "a:0 nije definisano"
-   },
    "odgovori": [
     "Nijedan broj ne daje smislen rezultat",
     "Rezultat je uvek 0",
@@ -340,6 +336,10 @@
     "Rezultat je beskonačno velik"
    ],
    "zanimljivost": "Da je $10:0=x$, moralo bi da važi $x · 0 = 10$ – a svaki broj puta nula daje nulu. Zato deljenje nulom nema rešenje; kažemo da nije definisano.",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$a:0$ nije definisano"
+   },
    "rec": "deljenje"
   },
   {
@@ -363,7 +363,14 @@
    "lekcija": 2,
    "tezina": 1,
    "pitanje": "Pri deljenju sa ostatkom, kakav mora biti ostatak u odnosu na delilac?",
-   "mediji": {
+   "odgovori": [
+    "Manji od delioca",
+    "Veći od delioca",
+    "Jednak deliocu",
+    "Uvek paran"
+   ],
+   "zanimljivost": "Ostatak je uvek manji od delioca. Kad bi bio jednak ili veći, mogli bismo još jednom da podelimo. Pri deljenju sa 7 ostatak može biti samo $0,1,2,3,4,5$ ili $6$.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -475,20 +482,20 @@
     ],
     "velicina": 300
    },
-   "odgovori": [
-    "Manji od delioca",
-    "Veći od delioca",
-    "Jednak deliocu",
-    "Uvek paran"
-   ],
-   "zanimljivost": "Ostatak je uvek manji od delioca. Kad bi bio jednak ili veći, mogli bismo još jednom da podelimo. Pri deljenju sa 7 ostatak može biti samo $0,1,2,3,4,5$ ili $6$.",
    "rec": "ostatak"
   },
   {
    "lekcija": 2,
    "tezina": 1,
    "pitanje": "Koji je najveći mogući ostatak pri deljenju sa 6?",
-   "mediji": {
+   "odgovori": [
+    "5",
+    "6",
+    "7",
+    "10"
+   ],
+   "zanimljivost": "Ostatak mora biti manji od delioca, dakle najviše $6-1=5$. Kad bi ostatak bio 6, deljenje ne bi bilo do kraja.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -585,13 +592,6 @@
     ],
     "velicina": 300
    },
-   "odgovori": [
-    "5",
-    "6",
-    "7",
-    "10"
-   ],
-   "zanimljivost": "Ostatak mora biti manji od delioca, dakle najviše $6-1=5$. Kad bi ostatak bio 6, deljenje ne bi bilo do kraja.",
    "rec": "ostatak"
   },
   {
@@ -599,10 +599,10 @@
    "tezina": 2,
    "pitanje": "Kako proveravaš deljenje sa ostatkom $23 = 4 · 5 + 3$?",
    "odgovori": [
-    "Delilac puta količnik plus ostatak daje deljenik",
-    "Delilac puta ostatak daje količnik",
-    "Količnik plus ostatak daje delilac",
-    "Ostatak puta količnik daje deljenik"
+    "Delilac · količnik + ostatak = deljenik",
+    "Delilac · ostatak + količnik = deljenik",
+    "Količnik · ostatak + delilac = deljenik",
+    "Deljenik · količnik + ostatak = delilac"
    ],
    "zanimljivost": "Provera je uvek: $deljenik = delilac · količnik + ostatak$. Ovde: $23 = 4·5 + 3$. Ako ovo važi, deljenje je tačno.",
    "medijiOdgovora": {
@@ -615,7 +615,14 @@
    "lekcija": 2,
    "tezina": 2,
    "pitanje": "Kružići su poređani u redove po 4. Koliki je ostatak pri deljenju $14:4$?",
-   "mediji": {
+   "odgovori": [
+    "2",
+    "3",
+    "1",
+    "0"
+   ],
+   "zanimljivost": "Od 14 kružića u redovima po 4 dobiju se 3 puna reda ($12$) i ostaju još $2$ kružića – to je ostatak: $14=4·3+2$.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -730,20 +737,20 @@
     ],
     "velicina": 300
    },
-   "odgovori": [
-    "2",
-    "3",
-    "1",
-    "0"
-   ],
-   "zanimljivost": "Od 14 kružića u redovima po 4 dobiju se 3 puna reda ($12$) i ostaju još $2$ kružića – to je ostatak: $14=4·3+2$.",
    "rec": "ostatak"
   },
   {
    "lekcija": 2,
    "tezina": 2,
    "pitanje": "Pri deljenju sa 5, koji od ovih brojeva NE može biti ostatak?",
-   "mediji": {
+   "odgovori": [
+    "5",
+    "0",
+    "2",
+    "4"
+   ],
+   "zanimljivost": "Ostatak pri deljenju sa 5 može biti samo $0,1,2,3$ ili $4$ – uvek manji od 5. Broj 5 bi značio da deljenje nije završeno.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -811,20 +818,20 @@
     ],
     "velicina": 300
    },
-   "odgovori": [
-    "5",
-    "0",
-    "2",
-    "4"
-   ],
-   "zanimljivost": "Ostatak pri deljenju sa 5 može biti samo $0,1,2,3$ ili $4$ – uvek manji od 5. Broj 5 bi značio da deljenje nije završeno.",
    "rec": "ostatak"
   },
   {
    "lekcija": 2,
    "tezina": 3,
    "pitanje": "Ako je delilac 9, a ostatak 7, koji je najmanji broj koji treba dodati deljeniku da bi deljenje bilo bez ostatka?",
-   "mediji": {
+   "odgovori": [
+    "2",
+    "1",
+    "7",
+    "9"
+   ],
+   "zanimljivost": "Do delioca (9) fali još $9-7=2$. Kad ostatak povećaš za 2, on postaje 9 – što znači još jedan ceo deo i ostatak 0.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -879,23 +886,12 @@
     ],
     "velicina": 300
    },
-   "odgovori": [
-    "2",
-    "1",
-    "7",
-    "9"
-   ],
-   "zanimljivost": "Do delioca (9) fali još $9-7=2$. Kad ostatak povećaš za 2, on postaje 9 – što znači još jedan ceo deo i ostatak 0.",
    "rec": "ostatak"
   },
   {
    "lekcija": 3,
    "tezina": 1,
    "pitanje": "Kako se zove broj kojim se dati broj deli bez ostatka?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "24 = 6·4"
-   },
    "odgovori": [
     "Delilac (činilac)",
     "Sadržalac",
@@ -903,13 +899,24 @@
     "Ostatak"
    ],
    "zanimljivost": "Ako $6$ deli $24$ bez ostatka, onda je $6$ delilac (činilac) broja $24$. Činioci su brojevi čijim množenjem nastaje dati broj: $6·4=24$.",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$24=6\\cdot4$"
+   },
    "rec": "delilac"
   },
   {
    "lekcija": 3,
    "tezina": 1,
    "pitanje": "Kako se zove broj koji je deljiv datim brojem?",
-   "mediji": {
+   "odgovori": [
+    "Sadržalac",
+    "Delilac",
+    "Prost broj",
+    "Neparan broj"
+   ],
+   "zanimljivost": "Sadržalac (višekratnik) broja $6$ je svaki broj koji se dobija množenjem: $6, 12, 18, 24, 30, …$ Ima ih beskonačno mnogo.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -1244,13 +1251,6 @@
     ],
     "velicina": 320
    },
-   "odgovori": [
-    "Sadržalac",
-    "Delilac",
-    "Prost broj",
-    "Neparan broj"
-   ],
-   "zanimljivost": "Sadržalac (višekratnik) broja $6$ je svaki broj koji se dobija množenjem: $6, 12, 18, 24, 30, …$ Ima ih beskonačno mnogo.",
    "rec": "sadržalac"
   },
   {
@@ -1700,10 +1700,6 @@
    "lekcija": 3,
    "tezina": 2,
    "pitanje": "Broj 0 je sadržalac svakog prirodnog broja. Zašto?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "n·0 = 0"
-   },
    "odgovori": [
     "Jer je $0 = n · 0$ za svako $n$",
     "Jer je $0 + n = n$ za svako $n$",
@@ -1711,6 +1707,10 @@
     "Jer je 0 paran broj"
    ],
    "zanimljivost": "Za svaki prirodan broj $n$ važi $n · 0 = 0$, pa je $0$ sadržalac svakog broja. Zato je 0 i deljiva svim brojevima (osim deljenja nulom).",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$n\\cdot0=0$"
+   },
    "rec": "nula"
   },
   {
@@ -2143,11 +2143,11 @@
   {
    "lekcija": 4,
    "tezina": 2,
-   "pitanje": "Koliko nula na kraju mora imati broj da bi bio deljiv sa 100?",
+   "pitanje": "Koliko najmanje nula na kraju mora imati broj da bi bio deljiv sa 100?",
    "odgovori": [
-    "Bar dve nule",
-    "Bar jednu nulu",
-    "Bar tri nule",
+    "Dve nule",
+    "Jednu nulu",
+    "Tri nule",
     "Četiri nule"
    ],
    "zanimljivost": "Dekadne jedinice: deljivost sa 10 traži jednu nulu, sa 100 dve nule, sa 1000 tri nule, i tako dalje.",
@@ -2822,7 +2822,14 @@
    "lekcija": 6,
    "tezina": 2,
    "pitanje": "Da li je broj 1.234 deljiv sa 3?",
-   "mediji": {
+   "odgovori": [
+    "Ne, jer je zbir cifara 10",
+    "Da, jer je paran",
+    "Da, jer se završava sa 4",
+    "Ne, jer se završava sa 4"
+   ],
+   "zanimljivost": "Zbir cifara je $1+2+3+4=10$, a $10$ nije deljivo sa 3, pa ni $1.234$ nije deljivo sa 3. Paran broj nije automatski deljiv sa 3!",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -2905,13 +2912,6 @@
     ],
     "velicina": 280
    },
-   "odgovori": [
-    "Ne, jer je zbir cifara 10",
-    "Da, jer je paran",
-    "Da, jer se završava sa 4",
-    "Ne, jer se završava sa 4"
-   ],
-   "zanimljivost": "Zbir cifara je $1+2+3+4=10$, a $10$ nije deljivo sa 3, pa ni $1.234$ nije deljivo sa 3. Paran broj nije automatski deljiv sa 3!",
    "rec": "deljivost"
   },
   {
@@ -3015,10 +3015,6 @@
    "lekcija": 7,
    "tezina": 1,
    "pitanje": "Kako se zove zbirka objekata koji čine jednu celinu?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "A = {1,2,3}"
-   },
    "odgovori": [
     "Skup",
     "Broj",
@@ -3026,6 +3022,10 @@
     "Jednačina"
    ],
    "zanimljivost": "Skup je osnovni pojam: objekte skupa zovemo elementima. Skup se zapisuje vitičastim zagradama, na primer $A=\\{1,2,3\\}$.",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$A=\\{1,2,3\\}$"
+   },
    "rec": "skup"
   },
   {
@@ -3049,10 +3049,6 @@
    "lekcija": 7,
    "tezina": 1,
    "pitanje": "Kako se zove skup koji nema nijedan element?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "∅ = {}"
-   },
    "odgovori": [
     "Prazan skup",
     "Nula skup",
@@ -3060,6 +3056,10 @@
     "Neparan skup"
    ],
    "zanimljivost": "Prazan skup označavamo sa $∅$ ili $\\{\\}$. On nema nijedan element, ali je i dalje skup – kao prazna kutija.",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$\\varnothing = \\{\\}$"
+   },
    "rec": "prazan"
   },
   {
@@ -6365,7 +6365,7 @@
     "prazan skup",
     "jednak uniji",
     "jednak većem skupu",
-    "ne postoji"
+    "$\\{0\\}$"
    ],
    "zanimljivost": "Kad nema zajedničkih elemenata, presek je prazan skup $∅$. Takvi skupovi se zovu disjunktni – ne seku se.",
    "rec": "presek"
@@ -7278,7 +7278,14 @@
    "lekcija": 9,
    "tezina": 1,
    "pitanje": "Koji geometrijski objekat nema ni dužinu, ni širinu, ni debljinu?",
-   "mediji": {
+   "odgovori": [
+    "Tačka",
+    "Duž",
+    "Prava",
+    "Ravan"
+   ],
+   "zanimljivost": "Tačka je najmanji geometrijski objekat – označavamo je velikim slovom, na primer $A$. Ona samo pokazuje položaj.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "A": [
@@ -7294,20 +7301,20 @@
     ],
     "velicina": 160
    },
-   "odgovori": [
-    "Tačka",
-    "Duž",
-    "Prava",
-    "Ravan"
-   ],
-   "zanimljivost": "Tačka je najmanji geometrijski objekat – označavamo je velikim slovom, na primer $A$. Ona samo pokazuje položaj.",
    "rec": "tačka"
   },
   {
    "lekcija": 9,
    "tezina": 1,
    "pitanje": "Šta se proteže beskonačno u oba smera?",
-   "mediji": {
+   "odgovori": [
+    "Prava",
+    "Duž",
+    "Poluprava",
+    "Tačka"
+   ],
+   "zanimljivost": "Prava nema ni početak ni kraj. Označavamo je malim slovom ($p$, $q$…) ili preko dve tačke: prava $AB$.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "A": [
@@ -7347,20 +7354,20 @@
     ],
     "velicina": 300
    },
-   "odgovori": [
-    "Prava",
-    "Duž",
-    "Poluprava",
-    "Tačka"
-   ],
-   "zanimljivost": "Prava nema ni početak ni kraj. Označavamo je malim slovom ($p$, $q$…) ili preko dve tačke: prava $AB$.",
    "rec": "prava"
   },
   {
    "lekcija": 9,
    "tezina": 1,
    "pitanje": "Kako se zove deo prave koji ima početnu tačku i proteže se beskonačno u jednom smeru?",
-   "mediji": {
+   "odgovori": [
+    "Poluprava",
+    "Duž",
+    "Prava",
+    "Krug"
+   ],
+   "zanimljivost": "Poluprava ima jedan kraj (početnu tačku), a u drugom smeru ide beskonačno. Kao zrak svetlosti iz lampe.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "A": [
@@ -7386,20 +7393,20 @@
     ],
     "velicina": 260
    },
-   "odgovori": [
-    "Poluprava",
-    "Duž",
-    "Prava",
-    "Krug"
-   ],
-   "zanimljivost": "Poluprava ima jedan kraj (početnu tačku), a u drugom smeru ide beskonačno. Kao zrak svetlosti iz lampe.",
    "rec": "poluprava"
   },
   {
    "lekcija": 9,
    "tezina": 1,
    "pitanje": "Kako se zove deo prave između dve tačke (ima i početak i kraj)?",
-   "mediji": {
+   "odgovori": [
+    "Duž",
+    "Prava",
+    "Poluprava",
+    "Tačka"
+   ],
+   "zanimljivost": "Duž je najkraći put između dve tačke. Njene krajnje tačke su početak i kraj duži, a označavamo je $AB$.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "A": [
@@ -7428,13 +7435,6 @@
     ],
     "velicina": 260
    },
-   "odgovori": [
-    "Duž",
-    "Prava",
-    "Poluprava",
-    "Tačka"
-   ],
-   "zanimljivost": "Duž je najkraći put između dve tačke. Njene krajnje tačke su početak i kraj duži, a označavamo je $AB$.",
    "rec": "duž"
   },
   {
@@ -7533,7 +7533,14 @@
    "lekcija": 9,
    "tezina": 2,
    "pitanje": "Koliko tačaka sadrži jedna duž?",
-   "mediji": {
+   "odgovori": [
+    "Beskonačno mnogo",
+    "Samo dve",
+    "Tačno tri",
+    "Nijednu"
+   ],
+   "zanimljivost": "Duž ima dva kraja, ali između njih leži beskonačno mnogo tačaka. Zato se i najkraća duž sastoji od beskonačno mnogo tačaka.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "A": [
@@ -7590,20 +7597,20 @@
     ],
     "velicina": 260
    },
-   "odgovori": [
-    "Beskonačno mnogo",
-    "Samo dve",
-    "Tačno tri",
-    "Nijednu"
-   ],
-   "zanimljivost": "Duž ima dva kraja, ali između njih leži beskonačno mnogo tačaka. Zato se i najkraća duž sastoji od beskonačno mnogo tačaka.",
    "rec": "duž"
   },
   {
    "lekcija": 9,
    "tezina": 3,
    "pitanje": "Tri tačke A, B i C NE leže na istoj pravoj. Koliko duži one određuju?",
-   "mediji": {
+   "odgovori": [
+    "3",
+    "1",
+    "2",
+    "6"
+   ],
+   "zanimljivost": "Svake dve tačke određuju jednu duž: $AB$, $BC$ i $CA$ – ukupno 3 duži. One čine trougao.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "A": [
@@ -7650,20 +7657,20 @@
     ],
     "velicina": 260
    },
-   "odgovori": [
-    "3",
-    "1",
-    "2",
-    "6"
-   ],
-   "zanimljivost": "Svake dve tačke određuju jednu duž: $AB$, $BC$ i $CA$ – ukupno 3 duži. One čine trougao.",
    "rec": "duž"
   },
   {
    "lekcija": 10,
    "tezina": 1,
    "pitanje": "Kako se zovu prave u ravni koje nemaju nijednu zajedničku tačku?",
-   "mediji": {
+   "odgovori": [
+    "Paralelne prave",
+    "Normalne prave",
+    "Ukrštene prave",
+    "Krive prave"
+   ],
+   "zanimljivost": "Paralelne prave se nikada ne seku, koliko god ih produžavali. Primer su šine na pruzi. Označavamo ih $a ∥ b$.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "A": [
@@ -7715,20 +7722,20 @@
     ],
     "velicina": 280
    },
-   "odgovori": [
-    "Paralelne prave",
-    "Normalne prave",
-    "Ukrštene prave",
-    "Krive prave"
-   ],
-   "zanimljivost": "Paralelne prave se nikada ne seku, koliko god ih produžavali. Primer su šine na pruzi. Označavamo ih $a ∥ b$.",
    "rec": "paralelne"
   },
   {
    "lekcija": 10,
    "tezina": 1,
    "pitanje": "Kako se zovu prave koje se seku pod pravim uglom (90°)?",
-   "mediji": {
+   "odgovori": [
+    "Normalne (upravne) prave",
+    "Paralelne prave",
+    "Mimoilazne prave",
+    "Podudarne prave"
+   ],
+   "zanimljivost": "Normalne prave seku se pod uglom od $90°$. Označavamo ih $a ⊥ b$. Ivice kvadrata su uzajamno normalne.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "A": [
@@ -7786,20 +7793,20 @@
     ],
     "velicina": 280
    },
-   "odgovori": [
-    "Normalne (upravne) prave",
-    "Paralelne prave",
-    "Mimoilazne prave",
-    "Podudarne prave"
-   ],
-   "zanimljivost": "Normalne prave seku se pod uglom od $90°$. Označavamo ih $a ⊥ b$. Ivice kvadrata su uzajamno normalne.",
    "rec": "normalne"
   },
   {
    "lekcija": 10,
    "tezina": 2,
    "pitanje": "Koliko zajedničkih tačaka najviše mogu imati dve različite prave u ravni?",
-   "mediji": {
+   "odgovori": [
+    "Jednu",
+    "Dve",
+    "Tri",
+    "Beskonačno mnogo"
+   ],
+   "zanimljivost": "Dve različite prave se ili seku u jednoj tački ili su paralelne (nula zajedničkih tačaka). Više od jedne zajedničke tačke imale bi samo kad bi se poklapale.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "A": [
@@ -7833,13 +7840,6 @@
     ],
     "velicina": 260
    },
-   "odgovori": [
-    "Jednu",
-    "Dve",
-    "Tri",
-    "Beskonačno mnogo"
-   ],
-   "zanimljivost": "Dve različite prave se ili seku u jednoj tački ili su paralelne (nula zajedničkih tačaka). Više od jedne zajedničke tačke imale bi samo kad bi se poklapale.",
    "rec": "presek"
   },
   {
@@ -8241,7 +8241,14 @@
    "lekcija": 12,
    "tezina": 1,
    "pitanje": "Kojim priborom prenosiš dužinu duži na drugo mesto?",
-   "mediji": {
+   "odgovori": [
+    "Šestarom",
+    "Lenjirom i olovkom",
+    "Uglomerom",
+    "Trouglom"
+   ],
+   "zanimljivost": "Šestarom „uhvatiš“ dužinu duži i preneseš je. Lenjir služi samo za povlačenje pravih linija, a uglomer za uglove.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "A": [
@@ -8310,13 +8317,6 @@
     ],
     "velicina": 260
    },
-   "odgovori": [
-    "Šestarom",
-    "Lenjirom i olovkom",
-    "Uglomerom",
-    "Trouglom"
-   ],
-   "zanimljivost": "Šestarom „uhvatiš“ dužinu duži i preneseš je. Lenjir služi samo za povlačenje pravih linija, a uglomer za uglove.",
    "rec": "šestar"
   },
   {
@@ -8599,45 +8599,6 @@
    "lekcija": 13,
    "tezina": 1,
    "pitanje": "Šta je mnogougao?",
-   "mediji": {
-    "vrsta": "geo",
-    "t": {
-     "O": [
-      0,
-      0
-     ],
-     "A": [
-      -1.763,
-      -2.427
-     ],
-     "B": [
-      1.763,
-      -2.427
-     ],
-     "C": [
-      2.853,
-      0.927
-     ],
-     "D": [
-      0,
-      3
-     ],
-     "E": [
-      -2.853,
-      0.927
-     ]
-    },
-    "e": [
-     {
-      "p": "ABCDE",
-      "b": 0
-     }
-    ],
-    "bezImena": [
-     "O"
-    ],
-    "velicina": 240
-   },
    "odgovori": [
     "Zatvorena izlomljena linija",
     "Otvorena izlomljena linija",
@@ -8645,13 +8606,7 @@
     "Kružna linija"
    ],
    "zanimljivost": "Mnogougao nastaje kad se izlomljena linija zatvori – kraj se spoji sa početkom. Primeri: trougao, kvadrat, petougao.",
-   "rec": "mnogougao"
-  },
-  {
-   "lekcija": 13,
-   "tezina": 1,
-   "pitanje": "Koliko stranica ima petougao?",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -8690,6 +8645,12 @@
     ],
     "velicina": 240
    },
+   "rec": "mnogougao"
+  },
+  {
+   "lekcija": 13,
+   "tezina": 1,
+   "pitanje": "Koliko stranica ima petougao?",
    "odgovori": [
     "5",
     "6",
@@ -8697,13 +8658,59 @@
     "7"
    ],
    "zanimljivost": "Petougao ima 5 stranica (peta = pet). Svaka stranica je duž koja spaja dva susedna temena.",
+   "medijiOdgovora": {
+    "vrsta": "geo",
+    "t": {
+     "O": [
+      0,
+      0
+     ],
+     "A": [
+      -1.763,
+      -2.427
+     ],
+     "B": [
+      1.763,
+      -2.427
+     ],
+     "C": [
+      2.853,
+      0.927
+     ],
+     "D": [
+      0,
+      3
+     ],
+     "E": [
+      -2.853,
+      0.927
+     ]
+    },
+    "e": [
+     {
+      "p": "ABCDE",
+      "b": 0
+     }
+    ],
+    "bezImena": [
+     "O"
+    ],
+    "velicina": 240
+   },
    "rec": "petougao"
   },
   {
    "lekcija": 13,
    "tezina": 1,
    "pitanje": "Kako se zove mnogougao sa 6 stranica?",
-   "mediji": {
+   "odgovori": [
+    "Šestougao",
+    "Petougao",
+    "Sedmougao",
+    "Osmougao"
+   ],
+   "zanimljivost": "Šestougao ima 6 stranica i 6 temena. Saće u košnici sastoji se od pravilnih šestouglova.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -8746,20 +8753,20 @@
     ],
     "velicina": 240
    },
-   "odgovori": [
-    "Šestougao",
-    "Petougao",
-    "Sedmougao",
-    "Osmougao"
-   ],
-   "zanimljivost": "Šestougao ima 6 stranica i 6 temena. Saće u košnici sastoji se od pravilnih šestouglova.",
    "rec": "šestougao"
   },
   {
    "lekcija": 13,
    "tezina": 2,
    "pitanje": "Kako se zove mnogougao kome su sve stranice i svi uglovi jednaki?",
-   "mediji": {
+   "odgovori": [
+    "Pravilan mnogougao",
+    "Nepravilan mnogougao",
+    "Konveksan mnogougao",
+    "Pravougaonik"
+   ],
+   "zanimljivost": "Pravilan mnogougao ima sve stranice jednake i sve uglove jednake. Primeri: jednakostranični trougao, kvadrat, pravilni šestougao.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -8808,20 +8815,20 @@
     ],
     "velicina": 240
    },
-   "odgovori": [
-    "Pravilan mnogougao",
-    "Nepravilan mnogougao",
-    "Konveksan mnogougao",
-    "Pravougaonik"
-   ],
-   "zanimljivost": "Pravilan mnogougao ima sve stranice jednake i sve uglove jednake. Primeri: jednakostranični trougao, kvadrat, pravilni šestougao.",
    "rec": "pravilan"
   },
   {
    "lekcija": 13,
    "tezina": 2,
    "pitanje": "Kako se zove duž koja spaja dva nesusedna temena mnogougla?",
-   "mediji": {
+   "odgovori": [
+    "Dijagonala",
+    "Stranica",
+    "Visina",
+    "Poluprečnik"
+   ],
+   "zanimljivost": "Dijagonala spaja dva temena koja nisu susedna. Kvadrat ima 2 dijagonale, petougao 5, a šestougao 9.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -8866,20 +8873,20 @@
     ],
     "velicina": 240
    },
-   "odgovori": [
-    "Dijagonala",
-    "Stranica",
-    "Visina",
-    "Poluprečnik"
-   ],
-   "zanimljivost": "Dijagonala spaja dva temena koja nisu susedna. Kvadrat ima 2 dijagonale, petougao 5, a šestougao 9.",
    "rec": "dijagonala"
   },
   {
    "lekcija": 13,
    "tezina": 2,
    "pitanje": "Šta su temena mnogougla?",
-   "mediji": {
+   "odgovori": [
+    "Tačke u kojima se spajaju stranice",
+    "Sredine stranica",
+    "Duži koje spajaju tačke",
+    "Uglovi mnogougla"
+   ],
+   "zanimljivost": "Temena su tačke u kojima se sustiču dve susedne stranice. Mnogougao ima isto toliko temena koliko i stranica.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "A": [
@@ -8931,13 +8938,6 @@
     ],
     "velicina": 240
    },
-   "odgovori": [
-    "Tačke u kojima se spajaju stranice",
-    "Sredine stranica",
-    "Duži koje spajaju tačke",
-    "Uglovi mnogougla"
-   ],
-   "zanimljivost": "Temena su tačke u kojima se sustiču dve susedne stranice. Mnogougao ima isto toliko temena koliko i stranica.",
    "rec": "teme"
   },
   {
@@ -9011,10 +9011,6 @@
      "O": [
       0,
       0
-     ],
-     "A": [
-      3,
-      0
      ]
     },
     "e": [
@@ -9022,12 +9018,6 @@
       "kr": "O",
       "r": 3,
       "b": 1
-     },
-     {
-      "d": "OA",
-      "b": 1,
-      "debljina": 3,
-      "o": "r"
      },
      {
       "tx": "O",
@@ -9056,7 +9046,14 @@
    "lekcija": 14,
    "tezina": 1,
    "pitanje": "Kako se zove duž koja spaja centar kružnice sa bilo kojom tačkom na kružnici?",
-   "mediji": {
+   "odgovori": [
+    "Poluprečnik",
+    "Prečnik",
+    "Tetiva",
+    "Tangenta"
+   ],
+   "zanimljivost": "Poluprečnik (radijus) je duž od centra do kružnice. Označavamo ga sa $r$. Svi poluprečnici jedne kružnice su jednaki.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -9094,20 +9091,20 @@
     ],
     "velicina": 260
    },
-   "odgovori": [
-    "Poluprečnik",
-    "Prečnik",
-    "Tetiva",
-    "Tangenta"
-   ],
-   "zanimljivost": "Poluprečnik (radijus) je duž od centra do kružnice. Označavamo ga sa $r$. Svi poluprečnici jedne kružnice su jednaki.",
    "rec": "poluprečnik"
   },
   {
    "lekcija": 14,
    "tezina": 1,
    "pitanje": "Kako se zove duž koja prolazi kroz centar i spaja dve tačke kružnice?",
-   "mediji": {
+   "odgovori": [
+    "Prečnik",
+    "Poluprečnik",
+    "Tetiva",
+    "Sečica"
+   ],
+   "zanimljivost": "Prečnik (dijametar) je najduža tetiva. Dva puta je duži od poluprečnika: $d = 2r$.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -9149,20 +9146,20 @@
     ],
     "velicina": 260
    },
-   "odgovori": [
-    "Prečnik",
-    "Poluprečnik",
-    "Tetiva",
-    "Sečica"
-   ],
-   "zanimljivost": "Prečnik (dijametar) je najduža tetiva. Dva puta je duži od poluprečnika: $d = 2r$.",
    "rec": "prečnik"
   },
   {
    "lekcija": 14,
    "tezina": 2,
    "pitanje": "Kako se zove prava koja dodiruje kružnicu u tačno jednoj tački?",
-   "mediji": {
+   "odgovori": [
+    "Tangenta",
+    "Sečica",
+    "Tetiva",
+    "Simetrala"
+   ],
+   "zanimljivost": "Tangenta dodiruje kružnicu u jednoj tački (dodirna tačka). Ona je normalna na poluprečnik u toj tački.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -9206,20 +9203,20 @@
     ],
     "velicina": 260
    },
-   "odgovori": [
-    "Tangenta",
-    "Sečica",
-    "Tetiva",
-    "Simetrala"
-   ],
-   "zanimljivost": "Tangenta dodiruje kružnicu u jednoj tački (dodirna tačka). Ona je normalna na poluprečnik u toj tački.",
    "rec": "tangenta"
   },
   {
    "lekcija": 14,
    "tezina": 2,
    "pitanje": "Kako se zove prava koja seče kružnicu u dve tačke?",
-   "mediji": {
+   "odgovori": [
+    "Sečica",
+    "Tangenta",
+    "Tetiva",
+    "Paralela"
+   ],
+   "zanimljivost": "Sečica prolazi kroz kružnicu i seče je u dve tačke. Deo sečice unutar kružnice zove se tetiva.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -9252,13 +9249,6 @@
     ],
     "velicina": 260
    },
-   "odgovori": [
-    "Sečica",
-    "Tangenta",
-    "Tetiva",
-    "Paralela"
-   ],
-   "zanimljivost": "Sečica prolazi kroz kružnicu i seče je u dve tačke. Deo sečice unutar kružnice zove se tetiva.",
    "rec": "sečica"
   },
   {
@@ -9374,6 +9364,33 @@
      "O": [
       0,
       0
+     ]
+    },
+    "e": [
+     {
+      "kr": "O",
+      "r": 3,
+      "b": 1
+     }
+    ],
+    "bezImena": [
+     "O"
+    ],
+    "velicina": 260
+   },
+   "odgovori": [
+    "Tetiva",
+    "Prečnik",
+    "Poluprečnik",
+    "Tangenta"
+   ],
+   "zanimljivost": "Tetiva spaja bilo koje dve tačke kružnice. Prečnik je posebna tetiva – ona koja prolazi kroz centar i najduža je.",
+   "medijiOdgovora": {
+    "vrsta": "geo",
+    "t": {
+     "O": [
+      0,
+      0
      ],
      "A": [
       -2.4,
@@ -9401,13 +9418,6 @@
     ],
     "velicina": 260
    },
-   "odgovori": [
-    "Tetiva",
-    "Prečnik",
-    "Poluprečnik",
-    "Tangenta"
-   ],
-   "zanimljivost": "Tetiva spaja bilo koje dve tačke kružnice. Prečnik je posebna tetiva – ona koja prolazi kroz centar i najduža je.",
    "rec": "tetiva"
   },
   {
@@ -9679,7 +9689,14 @@
    "lekcija": 16,
    "tezina": 1,
    "pitanje": "Šta je vektor?",
-   "mediji": {
+   "odgovori": [
+    "Usmerena duž",
+    "Obična duž",
+    "Tačka",
+    "Prava"
+   ],
+   "zanimljivost": "Vektor je duž kojoj je važan i smer – zato ga crtamo sa strelicom. Njime opisujemo pomeranje (translaciju).",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "A": [
@@ -9701,13 +9718,6 @@
     ],
     "velicina": 240
    },
-   "odgovori": [
-    "Usmerena duž",
-    "Obična duž",
-    "Tačka",
-    "Prava"
-   ],
-   "zanimljivost": "Vektor je duž kojoj je važan i smer – zato ga crtamo sa strelicom. Njime opisujemo pomeranje (translaciju).",
    "rec": "vektor"
   },
   {
@@ -9759,7 +9769,14 @@
    "lekcija": 16,
    "tezina": 1,
    "pitanje": "Kako se zove pomeranje figure duž vektora?",
-   "mediji": {
+   "odgovori": [
+    "Translacija",
+    "Rotacija",
+    "Simetrija",
+    "Merenje"
+   ],
+   "zanimljivost": "Translacija je klizanje figure bez okretanja – svaka tačka figure pomeri se za isti vektor. Figura ostaje ista, samo promeni mesto.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "A": [
@@ -9795,13 +9812,6 @@
     ],
     "velicina": 240
    },
-   "odgovori": [
-    "Translacija",
-    "Rotacija",
-    "Simetrija",
-    "Merenje"
-   ],
-   "zanimljivost": "Translacija je klizanje figure bez okretanja – svaka tačka figure pomeri se za isti vektor. Figura ostaje ista, samo promeni mesto.",
    "rec": "translacija"
   },
   {
@@ -9857,7 +9867,14 @@
    "lekcija": 16,
    "tezina": 2,
    "pitanje": "Pri translaciji trougla za neki vektor, šta se dešava sa dužinama stranica?",
-   "mediji": {
+   "odgovori": [
+    "Ostaju iste",
+    "Povećaju se",
+    "Smanje se",
+    "Zavisi od vektora"
+   ],
+   "zanimljivost": "Translacija ne menja ni oblik ni veličinu figure – samo je pomera. Zato su dužine stranica i uglovi posle translacije isti.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "A": [
@@ -9903,20 +9920,20 @@
     ],
     "velicina": 280
    },
-   "odgovori": [
-    "Ostaju iste",
-    "Povećaju se",
-    "Smanje se",
-    "Zavisi od vektora"
-   ],
-   "zanimljivost": "Translacija ne menja ni oblik ni veličinu figure – samo je pomera. Zato su dužine stranica i uglovi posle translacije isti.",
    "rec": "translacija"
   },
   {
    "lekcija": 16,
    "tezina": 3,
    "pitanje": "Gde se piše strelica u oznaci vektora?",
-   "mediji": {
+   "odgovori": [
+    "Iznad slova",
+    "Ispod slova",
+    "Ispred slova",
+    "Između slova"
+   ],
+   "zanimljivost": "Vektor označavamo strelicom iznad slova: $\\vec{AB}$ ili $\\vec{v}$. Strelica pokazuje da je smer važan.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "A": [
@@ -9954,20 +9971,20 @@
     ],
     "velicina": 260
    },
-   "odgovori": [
-    "Iznad slova",
-    "Ispod slova",
-    "Ispred slova",
-    "Između slova"
-   ],
-   "zanimljivost": "Vektor označavamo strelicom iznad slova: $\\vec{AB}$ ili $\\vec{v}$. Strelica pokazuje da je smer važan.",
    "rec": "vektor"
   },
   {
    "lekcija": 17,
    "tezina": 1,
    "pitanje": "Koji broj je PROST?",
-   "mediji": {
+   "odgovori": [
+    "Broj koji ima tačno dva delioca",
+    "Broj koji ima više od dva delioca",
+    "Broj koji ima jednog delioca",
+    "Broj koji je paran"
+   ],
+   "zanimljivost": "Prost broj ima tačno dva delioca: jedinicu i samog sebe. Primeri: $2, 3, 5, 7, 11, 13, …$",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -10184,20 +10201,20 @@
     ],
     "velicina": 280
    },
-   "odgovori": [
-    "Broj koji ima tačno dva delioca",
-    "Broj koji ima više od dva delioca",
-    "Broj koji ima jednog delioca",
-    "Broj koji je paran"
-   ],
-   "zanimljivost": "Prost broj ima tačno dva delioca: jedinicu i samog sebe. Primeri: $2, 3, 5, 7, 11, 13, …$",
    "rec": "prost"
   },
   {
    "lekcija": 17,
    "tezina": 1,
    "pitanje": "Koji je najmanji prost broj?",
-   "mediji": {
+   "odgovori": [
+    "2",
+    "1",
+    "3",
+    "0"
+   ],
+   "zanimljivost": "Najmanji prost broj je 2. Broj 1 nije prost jer ima samo jednog delioca (sebe samog).",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -10314,20 +10331,20 @@
     ],
     "velicina": 260
    },
-   "odgovori": [
-    "2",
-    "1",
-    "3",
-    "0"
-   ],
-   "zanimljivost": "Najmanji prost broj je 2. Broj 1 nije prost jer ima samo jednog delioca (sebe samog).",
    "rec": "prost"
   },
   {
    "lekcija": 17,
    "tezina": 1,
    "pitanje": "Koji je jedini PARAN prost broj?",
-   "mediji": {
+   "odgovori": [
+    "2",
+    "4",
+    "6",
+    "8"
+   ],
+   "zanimljivost": "Jedini paran prost broj je 2. Svi ostali parni brojevi deljivi su sa 2, pa imaju bar tri delioca (1, 2 i sebe).",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -10477,13 +10494,6 @@
     ],
     "velicina": 280
    },
-   "odgovori": [
-    "2",
-    "4",
-    "6",
-    "8"
-   ],
-   "zanimljivost": "Jedini paran prost broj je 2. Svi ostali parni brojevi deljivi su sa 2, pa imaju bar tri delioca (1, 2 i sebe).",
    "rec": "prost"
   },
   {
@@ -10786,7 +10796,14 @@
    "lekcija": 17,
    "tezina": 2,
    "pitanje": "Šta je SLOŽEN broj?",
-   "mediji": {
+   "odgovori": [
+    "Broj koji ima više od dva delioca",
+    "Broj sa tačno dva delioca",
+    "Broj sa jednim deliocem",
+    "Neparan broj"
+   ],
+   "zanimljivost": "Složen broj ima više od dva delioca. Na primer, $12$ ima delioce $1, 2, 3, 4, 6, 12$ – ukupno 6 delilaca.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -10866,20 +10883,20 @@
     ],
     "velicina": 240
    },
-   "odgovori": [
-    "Broj koji ima više od dva delioca",
-    "Broj sa tačno dva delioca",
-    "Broj sa jednim deliocem",
-    "Neparan broj"
-   ],
-   "zanimljivost": "Složen broj ima više od dva delioca. Na primer, $12$ ima delioce $1, 2, 3, 4, 6, 12$ – ukupno 6 delilaca.",
    "rec": "složen"
   },
   {
    "lekcija": 17,
    "tezina": 2,
    "pitanje": "Koji broj nije ni prost ni složen?",
-   "mediji": {
+   "odgovori": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "zanimljivost": "Broj 1 ima samo jednog delioca (sebe), pa nije ni prost (treba mu dva delioca) ni složen (treba mu više od dva).",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "A": [
@@ -10900,20 +10917,20 @@
     ],
     "velicina": 140
    },
-   "odgovori": [
-    "1",
-    "2",
-    "3",
-    "4"
-   ],
-   "zanimljivost": "Broj 1 ima samo jednog delioca (sebe), pa nije ni prost (treba mu dva delioca) ni složen (treba mu više od dva).",
    "rec": "jedinica"
   },
   {
    "lekcija": 17,
    "tezina": 2,
    "pitanje": "Koji od ovih brojeva je prost?",
-   "mediji": {
+   "odgovori": [
+    "17",
+    "15",
+    "21",
+    "27"
+   ],
+   "zanimljivost": "Broj $17$ ima delioce samo $1$ i $17$. Ostali su složeni: $15=3·5$, $21=3·7$, $27=3·9$.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -11154,20 +11171,20 @@
     ],
     "velicina": 280
    },
-   "odgovori": [
-    "17",
-    "15",
-    "21",
-    "27"
-   ],
-   "zanimljivost": "Broj $17$ ima delioce samo $1$ i $17$. Ostali su složeni: $15=3·5$, $21=3·7$, $27=3·9$.",
    "rec": "prost"
   },
   {
    "lekcija": 17,
    "tezina": 3,
    "pitanje": "Koliko delilaca ima prost broj?",
-   "mediji": {
+   "odgovori": [
+    "Tačno 2",
+    "Tačno 1",
+    "Više od 2",
+    "Nijedan"
+   ],
+   "zanimljivost": "Prost broj ima tačno dva delioca: 1 i samog sebe. Zato se ne može zapisati kao proizvod dva manja broja (osim $1 ·$ on sam).",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -11351,99 +11368,12 @@
     ],
     "velicina": 280
    },
-   "odgovori": [
-    "Tačno 2",
-    "Tačno 1",
-    "Više od 2",
-    "Nijedan"
-   ],
-   "zanimljivost": "Prost broj ima tačno dva delioca: 1 i samog sebe. Zato se ne može zapisati kao proizvod dva manja broja (osim $1 ·$ on sam).",
    "rec": "delilac"
   },
   {
    "lekcija": 18,
    "tezina": 1,
    "pitanje": "Šta znači rastaviti broj na proste činioce?",
-   "mediji": {
-    "vrsta": "geo",
-    "t": {
-     "O": [
-      0,
-      0
-     ]
-    },
-    "e": [
-     {
-      "tx": "12",
-      "at": [
-       0,
-       0.3
-      ],
-      "vel": 20,
-      "b": 0
-     },
-     {
-      "tx": "2",
-      "at": [
-       -1.9,
-       -1.4
-      ],
-      "vel": 20,
-      "b": 1
-     },
-     {
-      "tx": "6",
-      "at": [
-       1.9,
-       -1.4
-      ],
-      "vel": 20,
-      "b": 0
-     },
-     {
-      "tx": "2",
-      "at": [
-       0,
-       -3.1
-      ],
-      "vel": 20,
-      "b": 1
-     },
-     {
-      "tx": "3",
-      "at": [
-       3.8,
-       -3.1
-      ],
-      "vel": 20,
-      "b": 1
-     },
-     {
-      "d": "n2n3",
-      "b": 4,
-      "debljina": 2
-     },
-     {
-      "d": "n2n4",
-      "b": 4,
-      "debljina": 2
-     },
-     {
-      "d": "n0n1",
-      "b": 4,
-      "debljina": 2
-     },
-     {
-      "d": "n0n2",
-      "b": 4,
-      "debljina": 2
-     }
-    ],
-    "bezImena": [
-     "O"
-    ],
-    "velicina": 240
-   },
    "odgovori": [
     "Zapisati ga kao proizvod prostih brojeva",
     "Zapisati ga kao zbir prostih brojeva",
@@ -11451,13 +11381,7 @@
     "Napisati ga rimskim ciframa"
    ],
    "zanimljivost": "Rastavljanje na proste činioce: broj zapišemo kao proizvod samih prostih brojeva. Na primer, $12 = 2 · 2 · 3$.",
-   "rec": "činilac"
-  },
-  {
-   "lekcija": 18,
-   "tezina": 1,
-   "pitanje": "Kako glasi rastavljanje broja 12 na proste činioce?",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -11537,6 +11461,12 @@
     ],
     "velicina": 240
    },
+   "rec": "činilac"
+  },
+  {
+   "lekcija": 18,
+   "tezina": 1,
+   "pitanje": "Kako glasi rastavljanje broja 12 na proste činioce?",
    "odgovori": [
     "$2 · 2 · 3$",
     "$3 · 4$",
@@ -11544,13 +11474,100 @@
     "$1 · 12$"
    ],
    "zanimljivost": "$12 = 2·2·3$. Svi činioci su prosti brojevi. Zapis $3·4$ nije do kraja, jer je 4 složen broj.",
+   "medijiOdgovora": {
+    "vrsta": "geo",
+    "t": {
+     "O": [
+      0,
+      0
+     ]
+    },
+    "e": [
+     {
+      "tx": "12",
+      "at": [
+       0,
+       0.3
+      ],
+      "vel": 20,
+      "b": 0
+     },
+     {
+      "tx": "2",
+      "at": [
+       -1.9,
+       -1.4
+      ],
+      "vel": 20,
+      "b": 1
+     },
+     {
+      "tx": "6",
+      "at": [
+       1.9,
+       -1.4
+      ],
+      "vel": 20,
+      "b": 0
+     },
+     {
+      "tx": "2",
+      "at": [
+       0,
+       -3.1
+      ],
+      "vel": 20,
+      "b": 1
+     },
+     {
+      "tx": "3",
+      "at": [
+       3.8,
+       -3.1
+      ],
+      "vel": 20,
+      "b": 1
+     },
+     {
+      "d": "n2n3",
+      "b": 4,
+      "debljina": 2
+     },
+     {
+      "d": "n2n4",
+      "b": 4,
+      "debljina": 2
+     },
+     {
+      "d": "n0n1",
+      "b": 4,
+      "debljina": 2
+     },
+     {
+      "d": "n0n2",
+      "b": 4,
+      "debljina": 2
+     }
+    ],
+    "bezImena": [
+     "O"
+    ],
+    "velicina": 240
+   },
    "rec": "činilac"
   },
   {
    "lekcija": 18,
    "tezina": 1,
    "pitanje": "Kako glasi rastavljanje broja 18 na proste činioce?",
-   "mediji": {
+   "odgovori": [
+    "$2 · 3 · 3$",
+    "$2 · 9$",
+    "$3 · 6$",
+    "$2 · 2 · 3$"
+   ],
+   "zanimljivost": "$18 = 2·3·3$. Prvo podelimo sa 2, dobijemo 9, a $9=3·3$.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -11630,20 +11647,20 @@
     ],
     "velicina": 240
    },
-   "odgovori": [
-    "$2 · 3 · 3$",
-    "$2 · 9$",
-    "$3 · 6$",
-    "$2 · 2 · 3$"
-   ],
-   "zanimljivost": "$18 = 2·3·3$. Prvo podelimo sa 2, dobijemo 9, a $9=3·3$.",
    "rec": "činilac"
   },
   {
    "lekcija": 18,
    "tezina": 2,
    "pitanje": "Kako glasi rastavljanje broja 30 na proste činioce?",
-   "mediji": {
+   "odgovori": [
+    "$2 · 3 · 5$",
+    "$5 · 6$",
+    "$2 · 15$",
+    "$3 · 10$"
+   ],
+   "zanimljivost": "$30 = 2·3·5$ – tri različita prosta činioca. Broj 30 je proizvod prva tri prosta broja posle 1.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -11723,20 +11740,20 @@
     ],
     "velicina": 240
    },
-   "odgovori": [
-    "$2 · 3 · 5$",
-    "$5 · 6$",
-    "$2 · 15$",
-    "$3 · 10$"
-   ],
-   "zanimljivost": "$30 = 2·3·5$ – tri različita prosta činioca. Broj 30 je proizvod prva tri prosta broja posle 1.",
    "rec": "činilac"
   },
   {
    "lekcija": 18,
    "tezina": 2,
    "pitanje": "Koji su prosti činioci broja 20?",
-   "mediji": {
+   "odgovori": [
+    "$2 · 2 · 5$",
+    "$4 · 5$",
+    "$2 · 10$",
+    "$1 · 20$"
+   ],
+   "zanimljivost": "$20 = 2·2·5$. Broj 4 se mora dalje rastaviti na $2·2$, jer 4 nije prost.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -11816,20 +11833,20 @@
     ],
     "velicina": 240
    },
-   "odgovori": [
-    "$2 · 2 · 5$",
-    "$4 · 5$",
-    "$2 · 10$",
-    "$1 · 20$"
-   ],
-   "zanimljivost": "$20 = 2·2·5$. Broj 4 se mora dalje rastaviti na $2·2$, jer 4 nije prost.",
    "rec": "činilac"
   },
   {
    "lekcija": 18,
    "tezina": 2,
    "pitanje": "Da li je zapis $2 · 3 · 7$ rastavljanje na proste činioce?",
-   "mediji": {
+   "odgovori": [
+    "Da, svi činioci su prosti",
+    "Ne, jer je 2 složen",
+    "Ne, jer je 7 složen",
+    "Ne, jer je 3 složen"
+   ],
+   "zanimljivost": "Svi činioci – 2, 3 i 7 – su prosti brojevi, pa je ovo ispravno rastavljanje. Proizvod je $42$.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -11909,20 +11926,20 @@
     ],
     "velicina": 240
    },
-   "odgovori": [
-    "Da, svi činioci su prosti",
-    "Ne, jer je 2 složen",
-    "Ne, jer je 7 složen",
-    "Ne, jer nema dovoljno činilaca"
-   ],
-   "zanimljivost": "Svi činioci – 2, 3 i 7 – su prosti brojevi, pa je ovo ispravno rastavljanje. Proizvod je $42$.",
    "rec": "činilac"
   },
   {
    "lekcija": 18,
    "tezina": 3,
    "pitanje": "Broj 24 rastavljen na proste činioce glasi…",
-   "mediji": {
+   "odgovori": [
+    "$2 · 2 · 2 · 3$",
+    "$2 · 2 · 6$",
+    "$3 · 8$",
+    "$4 · 6$"
+   ],
+   "zanimljivost": "$24 = 2·2·2·3$ (tri dvojke i jedna trojka). To kraće pišemo kao $2^{3} · 3$.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -12030,860 +12047,12 @@
     ],
     "velicina": 240
    },
-   "odgovori": [
-    "$2 · 2 · 2 · 3$",
-    "$2 · 2 · 6$",
-    "$3 · 8$",
-    "$4 · 6$"
-   ],
-   "zanimljivost": "$24 = 2·2·2·3$ (tri dvojke i jedna trojka). To kraće pišemo kao $2^{3} · 3$.",
    "rec": "činilac"
   },
   {
    "lekcija": 19,
    "tezina": 1,
    "pitanje": "Šta je najveći zajednički delilac (NZD) dva broja?",
-   "mediji": {
-    "vrsta": "geo",
-    "t": {
-     "O": [
-      0,
-      0
-     ]
-    },
-    "e": [
-     {
-      "lin": [
-       [
-        0,
-        -2.538
-       ],
-       [
-        0.207,
-        -2.394
-       ],
-       [
-        0.402,
-        -2.234
-       ],
-       [
-        0.582,
-        -2.058
-       ],
-       [
-        0.747,
-        -1.868
-       ],
-       [
-        0.896,
-        -1.664
-       ],
-       [
-        1.027,
-        -1.449
-       ],
-       [
-        1.139,
-        -1.224
-       ],
-       [
-        1.232,
-        -0.989
-       ],
-       [
-        1.305,
-        -0.748
-       ],
-       [
-        1.358,
-        -0.502
-       ],
-       [
-        1.389,
-        -0.252
-       ],
-       [
-        1.4,
-        0
-       ],
-       [
-        1.389,
-        0.252
-       ],
-       [
-        1.358,
-        0.502
-       ],
-       [
-        1.305,
-        0.748
-       ],
-       [
-        1.232,
-        0.989
-       ],
-       [
-        1.139,
-        1.224
-       ],
-       [
-        1.027,
-        1.449
-       ],
-       [
-        0.896,
-        1.664
-       ],
-       [
-        0.747,
-        1.868
-       ],
-       [
-        0.582,
-        2.058
-       ],
-       [
-        0.402,
-        2.234
-       ],
-       [
-        0.207,
-        2.394
-       ],
-       [
-        0,
-        2.538
-       ],
-       [
-        0,
-        2.538
-       ],
-       [
-        -0.207,
-        2.394
-       ],
-       [
-        -0.402,
-        2.234
-       ],
-       [
-        -0.582,
-        2.058
-       ],
-       [
-        -0.747,
-        1.868
-       ],
-       [
-        -0.896,
-        1.664
-       ],
-       [
-        -1.027,
-        1.449
-       ],
-       [
-        -1.139,
-        1.224
-       ],
-       [
-        -1.232,
-        0.989
-       ],
-       [
-        -1.305,
-        0.748
-       ],
-       [
-        -1.358,
-        0.502
-       ],
-       [
-        -1.389,
-        0.252
-       ],
-       [
-        -1.4,
-        0
-       ],
-       [
-        -1.389,
-        -0.252
-       ],
-       [
-        -1.358,
-        -0.502
-       ],
-       [
-        -1.305,
-        -0.748
-       ],
-       [
-        -1.232,
-        -0.989
-       ],
-       [
-        -1.139,
-        -1.224
-       ],
-       [
-        -1.027,
-        -1.449
-       ],
-       [
-        -0.896,
-        -1.664
-       ],
-       [
-        -0.747,
-        -1.868
-       ],
-       [
-        -0.582,
-        -2.058
-       ],
-       [
-        -0.402,
-        -2.234
-       ],
-       [
-        -0.207,
-        -2.394
-       ],
-       [
-        0,
-        -2.538
-       ]
-      ],
-      "zatv": 1,
-      "b": 2,
-      "gusto": 1,
-      "id": "presek"
-     },
-     {
-      "lin": [
-       [
-        1.4,
-        0
-       ],
-       [
-        1.386,
-        0.294
-       ],
-       [
-        1.342,
-        0.585
-       ],
-       [
-        1.271,
-        0.871
-       ],
-       [
-        1.172,
-        1.148
-       ],
-       [
-        1.046,
-        1.414
-       ],
-       [
-        0.894,
-        1.667
-       ],
-       [
-        0.719,
-        1.903
-       ],
-       [
-        0.521,
-        2.121
-       ],
-       [
-        0.303,
-        2.319
-       ],
-       [
-        0.067,
-        2.494
-       ],
-       [
-        -0.186,
-        2.646
-       ],
-       [
-        -0.452,
-        2.772
-       ],
-       [
-        -0.729,
-        2.871
-       ],
-       [
-        -1.015,
-        2.942
-       ],
-       [
-        -1.306,
-        2.986
-       ],
-       [
-        -1.6,
-        3
-       ],
-       [
-        -1.894,
-        2.986
-       ],
-       [
-        -2.185,
-        2.942
-       ],
-       [
-        -2.471,
-        2.871
-       ],
-       [
-        -2.748,
-        2.772
-       ],
-       [
-        -3.014,
-        2.646
-       ],
-       [
-        -3.267,
-        2.494
-       ],
-       [
-        -3.503,
-        2.319
-       ],
-       [
-        -3.721,
-        2.121
-       ],
-       [
-        -3.919,
-        1.903
-       ],
-       [
-        -4.094,
-        1.667
-       ],
-       [
-        -4.246,
-        1.414
-       ],
-       [
-        -4.372,
-        1.148
-       ],
-       [
-        -4.471,
-        0.871
-       ],
-       [
-        -4.542,
-        0.585
-       ],
-       [
-        -4.586,
-        0.294
-       ],
-       [
-        -4.6,
-        0
-       ],
-       [
-        -4.586,
-        -0.294
-       ],
-       [
-        -4.542,
-        -0.585
-       ],
-       [
-        -4.471,
-        -0.871
-       ],
-       [
-        -4.372,
-        -1.148
-       ],
-       [
-        -4.246,
-        -1.414
-       ],
-       [
-        -4.094,
-        -1.667
-       ],
-       [
-        -3.919,
-        -1.903
-       ],
-       [
-        -3.721,
-        -2.121
-       ],
-       [
-        -3.503,
-        -2.319
-       ],
-       [
-        -3.267,
-        -2.494
-       ],
-       [
-        -3.014,
-        -2.646
-       ],
-       [
-        -2.748,
-        -2.772
-       ],
-       [
-        -2.471,
-        -2.871
-       ],
-       [
-        -2.185,
-        -2.942
-       ],
-       [
-        -1.894,
-        -2.986
-       ],
-       [
-        -1.6,
-        -3
-       ],
-       [
-        -1.306,
-        -2.986
-       ],
-       [
-        -1.015,
-        -2.942
-       ],
-       [
-        -0.729,
-        -2.871
-       ],
-       [
-        -0.452,
-        -2.772
-       ],
-       [
-        -0.186,
-        -2.646
-       ],
-       [
-        0.067,
-        -2.494
-       ],
-       [
-        0.303,
-        -2.319
-       ],
-       [
-        0.521,
-        -2.121
-       ],
-       [
-        0.719,
-        -1.903
-       ],
-       [
-        0.894,
-        -1.667
-       ],
-       [
-        1.046,
-        -1.414
-       ],
-       [
-        1.172,
-        -1.148
-       ],
-       [
-        1.271,
-        -0.871
-       ],
-       [
-        1.342,
-        -0.585
-       ],
-       [
-        1.386,
-        -0.294
-       ],
-       [
-        1.4,
-        0
-       ]
-      ],
-      "zatv": 1,
-      "b": 0,
-      "prazno": 1
-     },
-     {
-      "lin": [
-       [
-        4.6,
-        0
-       ],
-       [
-        4.586,
-        0.294
-       ],
-       [
-        4.542,
-        0.585
-       ],
-       [
-        4.471,
-        0.871
-       ],
-       [
-        4.372,
-        1.148
-       ],
-       [
-        4.246,
-        1.414
-       ],
-       [
-        4.094,
-        1.667
-       ],
-       [
-        3.919,
-        1.903
-       ],
-       [
-        3.721,
-        2.121
-       ],
-       [
-        3.503,
-        2.319
-       ],
-       [
-        3.267,
-        2.494
-       ],
-       [
-        3.014,
-        2.646
-       ],
-       [
-        2.748,
-        2.772
-       ],
-       [
-        2.471,
-        2.871
-       ],
-       [
-        2.185,
-        2.942
-       ],
-       [
-        1.894,
-        2.986
-       ],
-       [
-        1.6,
-        3
-       ],
-       [
-        1.306,
-        2.986
-       ],
-       [
-        1.015,
-        2.942
-       ],
-       [
-        0.729,
-        2.871
-       ],
-       [
-        0.452,
-        2.772
-       ],
-       [
-        0.186,
-        2.646
-       ],
-       [
-        -0.067,
-        2.494
-       ],
-       [
-        -0.303,
-        2.319
-       ],
-       [
-        -0.521,
-        2.121
-       ],
-       [
-        -0.719,
-        1.903
-       ],
-       [
-        -0.894,
-        1.667
-       ],
-       [
-        -1.046,
-        1.414
-       ],
-       [
-        -1.172,
-        1.148
-       ],
-       [
-        -1.271,
-        0.871
-       ],
-       [
-        -1.342,
-        0.585
-       ],
-       [
-        -1.386,
-        0.294
-       ],
-       [
-        -1.4,
-        0
-       ],
-       [
-        -1.386,
-        -0.294
-       ],
-       [
-        -1.342,
-        -0.585
-       ],
-       [
-        -1.271,
-        -0.871
-       ],
-       [
-        -1.172,
-        -1.148
-       ],
-       [
-        -1.046,
-        -1.414
-       ],
-       [
-        -0.894,
-        -1.667
-       ],
-       [
-        -0.719,
-        -1.903
-       ],
-       [
-        -0.521,
-        -2.121
-       ],
-       [
-        -0.303,
-        -2.319
-       ],
-       [
-        -0.067,
-        -2.494
-       ],
-       [
-        0.186,
-        -2.646
-       ],
-       [
-        0.452,
-        -2.772
-       ],
-       [
-        0.729,
-        -2.871
-       ],
-       [
-        1.015,
-        -2.942
-       ],
-       [
-        1.306,
-        -2.986
-       ],
-       [
-        1.6,
-        -3
-       ],
-       [
-        1.894,
-        -2.986
-       ],
-       [
-        2.185,
-        -2.942
-       ],
-       [
-        2.471,
-        -2.871
-       ],
-       [
-        2.748,
-        -2.772
-       ],
-       [
-        3.014,
-        -2.646
-       ],
-       [
-        3.267,
-        -2.494
-       ],
-       [
-        3.503,
-        -2.319
-       ],
-       [
-        3.721,
-        -2.121
-       ],
-       [
-        3.919,
-        -1.903
-       ],
-       [
-        4.094,
-        -1.667
-       ],
-       [
-        4.246,
-        -1.414
-       ],
-       [
-        4.372,
-        -1.148
-       ],
-       [
-        4.471,
-        -0.871
-       ],
-       [
-        4.542,
-        -0.585
-       ],
-       [
-        4.586,
-        -0.294
-       ],
-       [
-        4.6,
-        0
-       ]
-      ],
-      "zatv": 1,
-      "b": 5,
-      "prazno": 1
-     },
-     {
-      "tx": "12",
-      "at": [
-       -3.85,
-       2.8499999999999996
-      ],
-      "vel": 20
-     },
-     {
-      "tx": "18",
-      "at": [
-       3.85,
-       2.8499999999999996
-      ],
-      "vel": 20
-     },
-     {
-      "tx": "4",
-      "at": [
-       -3.13,
-       0
-      ],
-      "vel": 14
-     },
-     {
-      "tx": "12",
-      "at": [
-       -2.23,
-       0
-      ],
-      "vel": 14
-     },
-     {
-      "tx": "9",
-      "at": [
-       2.23,
-       0
-      ],
-      "vel": 14
-     },
-     {
-      "tx": "18",
-      "at": [
-       3.13,
-       0
-      ],
-      "vel": 14
-     },
-     {
-      "tx": "1",
-      "at": [
-       -0.45,
-       0.375
-      ],
-      "vel": 14,
-      "b": 1
-     },
-     {
-      "tx": "2",
-      "at": [
-       0.45,
-       0.375
-      ],
-      "vel": 14,
-      "b": 1
-     },
-     {
-      "tx": "3",
-      "at": [
-       -0.45,
-       -0.375
-      ],
-      "vel": 14,
-      "b": 1
-     },
-     {
-      "tx": "6",
-      "at": [
-       0.45,
-       -0.375
-      ],
-      "vel": 14,
-      "b": 1
-     }
-    ],
-    "bezImena": [
-     "O"
-    ],
-    "velicina": 260
-   },
    "odgovori": [
     "Najveći broj koji deli oba broja",
     "Najmanji broj deljiv sa oba",
@@ -12891,13 +12060,7 @@
     "Zbir ta dva broja"
    ],
    "zanimljivost": "NZD je najveći broj kojim su oba data broja deljiva bez ostatka. Na primer, NZD(12, 18) je 6.",
-   "rec": "delilac"
-  },
-  {
-   "lekcija": 19,
-   "tezina": 1,
-   "pitanje": "Koliki je NZD brojeva 12 i 18?",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -13738,6 +12901,12 @@
     ],
     "velicina": 260
    },
+   "rec": "delilac"
+  },
+  {
+   "lekcija": 19,
+   "tezina": 1,
+   "pitanje": "Koliki je NZD brojeva 12 i 18?",
    "odgovori": [
     "6",
     "4",
@@ -13745,13 +12914,861 @@
     "9"
    ],
    "zanimljivost": "Delitelji broja 12: $1,2,3,4,6,12$; broja 18: $1,2,3,6,9,18$. Najveći zajednički je 6.",
+   "medijiOdgovora": {
+    "vrsta": "geo",
+    "t": {
+     "O": [
+      0,
+      0
+     ]
+    },
+    "e": [
+     {
+      "lin": [
+       [
+        0,
+        -2.538
+       ],
+       [
+        0.207,
+        -2.394
+       ],
+       [
+        0.402,
+        -2.234
+       ],
+       [
+        0.582,
+        -2.058
+       ],
+       [
+        0.747,
+        -1.868
+       ],
+       [
+        0.896,
+        -1.664
+       ],
+       [
+        1.027,
+        -1.449
+       ],
+       [
+        1.139,
+        -1.224
+       ],
+       [
+        1.232,
+        -0.989
+       ],
+       [
+        1.305,
+        -0.748
+       ],
+       [
+        1.358,
+        -0.502
+       ],
+       [
+        1.389,
+        -0.252
+       ],
+       [
+        1.4,
+        0
+       ],
+       [
+        1.389,
+        0.252
+       ],
+       [
+        1.358,
+        0.502
+       ],
+       [
+        1.305,
+        0.748
+       ],
+       [
+        1.232,
+        0.989
+       ],
+       [
+        1.139,
+        1.224
+       ],
+       [
+        1.027,
+        1.449
+       ],
+       [
+        0.896,
+        1.664
+       ],
+       [
+        0.747,
+        1.868
+       ],
+       [
+        0.582,
+        2.058
+       ],
+       [
+        0.402,
+        2.234
+       ],
+       [
+        0.207,
+        2.394
+       ],
+       [
+        0,
+        2.538
+       ],
+       [
+        0,
+        2.538
+       ],
+       [
+        -0.207,
+        2.394
+       ],
+       [
+        -0.402,
+        2.234
+       ],
+       [
+        -0.582,
+        2.058
+       ],
+       [
+        -0.747,
+        1.868
+       ],
+       [
+        -0.896,
+        1.664
+       ],
+       [
+        -1.027,
+        1.449
+       ],
+       [
+        -1.139,
+        1.224
+       ],
+       [
+        -1.232,
+        0.989
+       ],
+       [
+        -1.305,
+        0.748
+       ],
+       [
+        -1.358,
+        0.502
+       ],
+       [
+        -1.389,
+        0.252
+       ],
+       [
+        -1.4,
+        0
+       ],
+       [
+        -1.389,
+        -0.252
+       ],
+       [
+        -1.358,
+        -0.502
+       ],
+       [
+        -1.305,
+        -0.748
+       ],
+       [
+        -1.232,
+        -0.989
+       ],
+       [
+        -1.139,
+        -1.224
+       ],
+       [
+        -1.027,
+        -1.449
+       ],
+       [
+        -0.896,
+        -1.664
+       ],
+       [
+        -0.747,
+        -1.868
+       ],
+       [
+        -0.582,
+        -2.058
+       ],
+       [
+        -0.402,
+        -2.234
+       ],
+       [
+        -0.207,
+        -2.394
+       ],
+       [
+        0,
+        -2.538
+       ]
+      ],
+      "zatv": 1,
+      "b": 2,
+      "gusto": 1,
+      "id": "presek"
+     },
+     {
+      "lin": [
+       [
+        1.4,
+        0
+       ],
+       [
+        1.386,
+        0.294
+       ],
+       [
+        1.342,
+        0.585
+       ],
+       [
+        1.271,
+        0.871
+       ],
+       [
+        1.172,
+        1.148
+       ],
+       [
+        1.046,
+        1.414
+       ],
+       [
+        0.894,
+        1.667
+       ],
+       [
+        0.719,
+        1.903
+       ],
+       [
+        0.521,
+        2.121
+       ],
+       [
+        0.303,
+        2.319
+       ],
+       [
+        0.067,
+        2.494
+       ],
+       [
+        -0.186,
+        2.646
+       ],
+       [
+        -0.452,
+        2.772
+       ],
+       [
+        -0.729,
+        2.871
+       ],
+       [
+        -1.015,
+        2.942
+       ],
+       [
+        -1.306,
+        2.986
+       ],
+       [
+        -1.6,
+        3
+       ],
+       [
+        -1.894,
+        2.986
+       ],
+       [
+        -2.185,
+        2.942
+       ],
+       [
+        -2.471,
+        2.871
+       ],
+       [
+        -2.748,
+        2.772
+       ],
+       [
+        -3.014,
+        2.646
+       ],
+       [
+        -3.267,
+        2.494
+       ],
+       [
+        -3.503,
+        2.319
+       ],
+       [
+        -3.721,
+        2.121
+       ],
+       [
+        -3.919,
+        1.903
+       ],
+       [
+        -4.094,
+        1.667
+       ],
+       [
+        -4.246,
+        1.414
+       ],
+       [
+        -4.372,
+        1.148
+       ],
+       [
+        -4.471,
+        0.871
+       ],
+       [
+        -4.542,
+        0.585
+       ],
+       [
+        -4.586,
+        0.294
+       ],
+       [
+        -4.6,
+        0
+       ],
+       [
+        -4.586,
+        -0.294
+       ],
+       [
+        -4.542,
+        -0.585
+       ],
+       [
+        -4.471,
+        -0.871
+       ],
+       [
+        -4.372,
+        -1.148
+       ],
+       [
+        -4.246,
+        -1.414
+       ],
+       [
+        -4.094,
+        -1.667
+       ],
+       [
+        -3.919,
+        -1.903
+       ],
+       [
+        -3.721,
+        -2.121
+       ],
+       [
+        -3.503,
+        -2.319
+       ],
+       [
+        -3.267,
+        -2.494
+       ],
+       [
+        -3.014,
+        -2.646
+       ],
+       [
+        -2.748,
+        -2.772
+       ],
+       [
+        -2.471,
+        -2.871
+       ],
+       [
+        -2.185,
+        -2.942
+       ],
+       [
+        -1.894,
+        -2.986
+       ],
+       [
+        -1.6,
+        -3
+       ],
+       [
+        -1.306,
+        -2.986
+       ],
+       [
+        -1.015,
+        -2.942
+       ],
+       [
+        -0.729,
+        -2.871
+       ],
+       [
+        -0.452,
+        -2.772
+       ],
+       [
+        -0.186,
+        -2.646
+       ],
+       [
+        0.067,
+        -2.494
+       ],
+       [
+        0.303,
+        -2.319
+       ],
+       [
+        0.521,
+        -2.121
+       ],
+       [
+        0.719,
+        -1.903
+       ],
+       [
+        0.894,
+        -1.667
+       ],
+       [
+        1.046,
+        -1.414
+       ],
+       [
+        1.172,
+        -1.148
+       ],
+       [
+        1.271,
+        -0.871
+       ],
+       [
+        1.342,
+        -0.585
+       ],
+       [
+        1.386,
+        -0.294
+       ],
+       [
+        1.4,
+        0
+       ]
+      ],
+      "zatv": 1,
+      "b": 0,
+      "prazno": 1
+     },
+     {
+      "lin": [
+       [
+        4.6,
+        0
+       ],
+       [
+        4.586,
+        0.294
+       ],
+       [
+        4.542,
+        0.585
+       ],
+       [
+        4.471,
+        0.871
+       ],
+       [
+        4.372,
+        1.148
+       ],
+       [
+        4.246,
+        1.414
+       ],
+       [
+        4.094,
+        1.667
+       ],
+       [
+        3.919,
+        1.903
+       ],
+       [
+        3.721,
+        2.121
+       ],
+       [
+        3.503,
+        2.319
+       ],
+       [
+        3.267,
+        2.494
+       ],
+       [
+        3.014,
+        2.646
+       ],
+       [
+        2.748,
+        2.772
+       ],
+       [
+        2.471,
+        2.871
+       ],
+       [
+        2.185,
+        2.942
+       ],
+       [
+        1.894,
+        2.986
+       ],
+       [
+        1.6,
+        3
+       ],
+       [
+        1.306,
+        2.986
+       ],
+       [
+        1.015,
+        2.942
+       ],
+       [
+        0.729,
+        2.871
+       ],
+       [
+        0.452,
+        2.772
+       ],
+       [
+        0.186,
+        2.646
+       ],
+       [
+        -0.067,
+        2.494
+       ],
+       [
+        -0.303,
+        2.319
+       ],
+       [
+        -0.521,
+        2.121
+       ],
+       [
+        -0.719,
+        1.903
+       ],
+       [
+        -0.894,
+        1.667
+       ],
+       [
+        -1.046,
+        1.414
+       ],
+       [
+        -1.172,
+        1.148
+       ],
+       [
+        -1.271,
+        0.871
+       ],
+       [
+        -1.342,
+        0.585
+       ],
+       [
+        -1.386,
+        0.294
+       ],
+       [
+        -1.4,
+        0
+       ],
+       [
+        -1.386,
+        -0.294
+       ],
+       [
+        -1.342,
+        -0.585
+       ],
+       [
+        -1.271,
+        -0.871
+       ],
+       [
+        -1.172,
+        -1.148
+       ],
+       [
+        -1.046,
+        -1.414
+       ],
+       [
+        -0.894,
+        -1.667
+       ],
+       [
+        -0.719,
+        -1.903
+       ],
+       [
+        -0.521,
+        -2.121
+       ],
+       [
+        -0.303,
+        -2.319
+       ],
+       [
+        -0.067,
+        -2.494
+       ],
+       [
+        0.186,
+        -2.646
+       ],
+       [
+        0.452,
+        -2.772
+       ],
+       [
+        0.729,
+        -2.871
+       ],
+       [
+        1.015,
+        -2.942
+       ],
+       [
+        1.306,
+        -2.986
+       ],
+       [
+        1.6,
+        -3
+       ],
+       [
+        1.894,
+        -2.986
+       ],
+       [
+        2.185,
+        -2.942
+       ],
+       [
+        2.471,
+        -2.871
+       ],
+       [
+        2.748,
+        -2.772
+       ],
+       [
+        3.014,
+        -2.646
+       ],
+       [
+        3.267,
+        -2.494
+       ],
+       [
+        3.503,
+        -2.319
+       ],
+       [
+        3.721,
+        -2.121
+       ],
+       [
+        3.919,
+        -1.903
+       ],
+       [
+        4.094,
+        -1.667
+       ],
+       [
+        4.246,
+        -1.414
+       ],
+       [
+        4.372,
+        -1.148
+       ],
+       [
+        4.471,
+        -0.871
+       ],
+       [
+        4.542,
+        -0.585
+       ],
+       [
+        4.586,
+        -0.294
+       ],
+       [
+        4.6,
+        0
+       ]
+      ],
+      "zatv": 1,
+      "b": 5,
+      "prazno": 1
+     },
+     {
+      "tx": "12",
+      "at": [
+       -3.85,
+       2.8499999999999996
+      ],
+      "vel": 20
+     },
+     {
+      "tx": "18",
+      "at": [
+       3.85,
+       2.8499999999999996
+      ],
+      "vel": 20
+     },
+     {
+      "tx": "4",
+      "at": [
+       -3.13,
+       0
+      ],
+      "vel": 14
+     },
+     {
+      "tx": "12",
+      "at": [
+       -2.23,
+       0
+      ],
+      "vel": 14
+     },
+     {
+      "tx": "9",
+      "at": [
+       2.23,
+       0
+      ],
+      "vel": 14
+     },
+     {
+      "tx": "18",
+      "at": [
+       3.13,
+       0
+      ],
+      "vel": 14
+     },
+     {
+      "tx": "1",
+      "at": [
+       -0.45,
+       0.375
+      ],
+      "vel": 14,
+      "b": 1
+     },
+     {
+      "tx": "2",
+      "at": [
+       0.45,
+       0.375
+      ],
+      "vel": 14,
+      "b": 1
+     },
+     {
+      "tx": "3",
+      "at": [
+       -0.45,
+       -0.375
+      ],
+      "vel": 14,
+      "b": 1
+     },
+     {
+      "tx": "6",
+      "at": [
+       0.45,
+       -0.375
+      ],
+      "vel": 14,
+      "b": 1
+     }
+    ],
+    "bezImena": [
+     "O"
+    ],
+    "velicina": 260
+   },
    "rec": "delilac"
   },
   {
    "lekcija": 19,
    "tezina": 2,
    "pitanje": "Koliki je NZD brojeva 8 i 12?",
-   "mediji": {
+   "odgovori": [
+    "4",
+    "2",
+    "6",
+    "8"
+   ],
+   "zanimljivost": "Delitelji broja 8: $1,2,4,8$; broja 12: $1,2,3,4,6,12$. Najveći zajednički je 4.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -14583,20 +14600,20 @@
     ],
     "velicina": 260
    },
-   "odgovori": [
-    "4",
-    "2",
-    "6",
-    "8"
-   ],
-   "zanimljivost": "Delitelji broja 8: $1,2,4,8$; broja 12: $1,2,3,4,6,12$. Najveći zajednički je 4.",
    "rec": "delilac"
   },
   {
    "lekcija": 19,
    "tezina": 2,
    "pitanje": "Koliki je NZD brojeva 7 i 11?",
-   "mediji": {
+   "odgovori": [
+    "1",
+    "7",
+    "11",
+    "77"
+   ],
+   "zanimljivost": "Brojevi 7 i 11 su prosti i nemaju zajedničkih delilaca osim 1, pa je NZD(7, 11) = 1.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -15394,20 +15411,20 @@
     ],
     "velicina": 260
    },
-   "odgovori": [
-    "1",
-    "7",
-    "11",
-    "77"
-   ],
-   "zanimljivost": "Brojevi 7 i 11 su prosti i nemaju zajedničkih delilaca osim 1, pa je NZD(7, 11) = 1.",
    "rec": "delilac"
   },
   {
    "lekcija": 19,
    "tezina": 2,
    "pitanje": "Kako se zovu brojevi čiji je NZD jednak 1?",
-   "mediji": {
+   "odgovori": [
+    "Uzajamno prosti",
+    "Složeni brojevi",
+    "Parni brojevi",
+    "Sadržaoci"
+   ],
+   "zanimljivost": "Kad dva broja nemaju nijedan zajednički delilac osim 1, kažemo da su uzajamno prosti. Na primer, 8 i 15 su uzajamno prosti.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -16237,20 +16254,20 @@
     ],
     "velicina": 260
    },
-   "odgovori": [
-    "Uzajamno prosti",
-    "Složeni brojevi",
-    "Parni brojevi",
-    "Sadržaoci"
-   ],
-   "zanimljivost": "Kad dva broja nemaju nijedan zajednički delilac osim 1, kažemo da su uzajamno prosti. Na primer, 8 i 15 su uzajamno prosti.",
    "rec": "prost"
   },
   {
    "lekcija": 19,
    "tezina": 2,
    "pitanje": "Čemu služi Euklidov algoritam?",
-   "mediji": {
+   "odgovori": [
+    "Za nalaženje NZD dva broja",
+    "Za nalaženje NZS",
+    "Za sabiranje",
+    "Za rastavljanje na cifre"
+   ],
+   "zanimljivost": "Euklidov algoritam brzo nalazi NZD uzastopnim deljenjem sa ostatkom. Star je preko 2000 godina, a i dalje se koristi.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -17091,20 +17108,20 @@
     ],
     "velicina": 260
    },
-   "odgovori": [
-    "Za nalaženje NZD dva broja",
-    "Za nalaženje NZS",
-    "Za sabiranje",
-    "Za rastavljanje na cifre"
-   ],
-   "zanimljivost": "Euklidov algoritam brzo nalazi NZD uzastopnim deljenjem sa ostatkom. Star je preko 2000 godina i i dalje se koristi.",
    "rec": "euklid"
   },
   {
    "lekcija": 19,
    "tezina": 3,
    "pitanje": "Koliki je NZD brojeva 24 i 36?",
-   "mediji": {
+   "odgovori": [
+    "12",
+    "6",
+    "8",
+    "9"
+   ],
+   "zanimljivost": "Rastavljanjem: $24=2·2·2·3$, $36=2·2·3·3$. Zajedničko je $2·2·3=12$.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -17971,432 +17988,12 @@
     ],
     "velicina": 260
    },
-   "odgovori": [
-    "12",
-    "6",
-    "8",
-    "9"
-   ],
-   "zanimljivost": "Rastavljanjem: $24=2·2·2·3$, $36=2·2·3·3$. Zajedničko je $2·2·3=12$.",
    "rec": "delilac"
   },
   {
    "lekcija": 20,
    "tezina": 1,
    "pitanje": "Šta je najmanji zajednički sadržalac (NZS) dva broja?",
-   "mediji": {
-    "vrsta": "geo",
-    "t": {
-     "O": [
-      0,
-      0
-     ]
-    },
-    "e": [
-     {
-      "osa": [
-       0,
-       13
-      ],
-      "podela": 1,
-      "svaki": 1
-     },
-     {
-      "lin": [
-       [
-        0,
-        0
-       ],
-       [
-        0.25,
-        0.316
-       ],
-       [
-        0.5,
-        0.591
-       ],
-       [
-        0.75,
-        0.823
-       ],
-       [
-        1,
-        1.013
-       ],
-       [
-        1.25,
-        1.16
-       ],
-       [
-        1.5,
-        1.266
-       ],
-       [
-        1.75,
-        1.329
-       ],
-       [
-        2,
-        1.35
-       ],
-       [
-        2.25,
-        1.329
-       ],
-       [
-        2.5,
-        1.266
-       ],
-       [
-        2.75,
-        1.16
-       ],
-       [
-        3,
-        1.013
-       ],
-       [
-        3.25,
-        0.823
-       ],
-       [
-        3.5,
-        0.591
-       ],
-       [
-        3.75,
-        0.316
-       ],
-       [
-        4,
-        0
-       ]
-      ],
-      "str": 1,
-      "crtaj": 1,
-      "b": 1,
-      "debljina": 2.5,
-      "kasni": 0.3,
-      "trajanje": 0.9
-     },
-     {
-      "lin": [
-       [
-        4,
-        0
-       ],
-       [
-        4.25,
-        0.316
-       ],
-       [
-        4.5,
-        0.591
-       ],
-       [
-        4.75,
-        0.823
-       ],
-       [
-        5,
-        1.013
-       ],
-       [
-        5.25,
-        1.16
-       ],
-       [
-        5.5,
-        1.266
-       ],
-       [
-        5.75,
-        1.329
-       ],
-       [
-        6,
-        1.35
-       ],
-       [
-        6.25,
-        1.329
-       ],
-       [
-        6.5,
-        1.266
-       ],
-       [
-        6.75,
-        1.16
-       ],
-       [
-        7,
-        1.013
-       ],
-       [
-        7.25,
-        0.823
-       ],
-       [
-        7.5,
-        0.591
-       ],
-       [
-        7.75,
-        0.316
-       ],
-       [
-        8,
-        0
-       ]
-      ],
-      "str": 1,
-      "crtaj": 1,
-      "b": 1,
-      "debljina": 2.5,
-      "kasni": 0.8999999999999999,
-      "trajanje": 0.9
-     },
-     {
-      "lin": [
-       [
-        8,
-        0
-       ],
-       [
-        8.25,
-        0.316
-       ],
-       [
-        8.5,
-        0.591
-       ],
-       [
-        8.75,
-        0.823
-       ],
-       [
-        9,
-        1.013
-       ],
-       [
-        9.25,
-        1.16
-       ],
-       [
-        9.5,
-        1.266
-       ],
-       [
-        9.75,
-        1.329
-       ],
-       [
-        10,
-        1.35
-       ],
-       [
-        10.25,
-        1.329
-       ],
-       [
-        10.5,
-        1.266
-       ],
-       [
-        10.75,
-        1.16
-       ],
-       [
-        11,
-        1.013
-       ],
-       [
-        11.25,
-        0.823
-       ],
-       [
-        11.5,
-        0.591
-       ],
-       [
-        11.75,
-        0.316
-       ],
-       [
-        12,
-        0
-       ]
-      ],
-      "str": 1,
-      "crtaj": 1,
-      "b": 1,
-      "debljina": 2.5,
-      "kasni": 1.5,
-      "trajanje": 0.9
-     },
-     {
-      "lin": [
-       [
-        0,
-        0
-       ],
-       [
-        0.375,
-        -0.375
-       ],
-       [
-        0.75,
-        -0.7
-       ],
-       [
-        1.125,
-        -0.975
-       ],
-       [
-        1.5,
-        -1.2
-       ],
-       [
-        1.875,
-        -1.375
-       ],
-       [
-        2.25,
-        -1.5
-       ],
-       [
-        2.625,
-        -1.575
-       ],
-       [
-        3,
-        -1.6
-       ],
-       [
-        3.375,
-        -1.575
-       ],
-       [
-        3.75,
-        -1.5
-       ],
-       [
-        4.125,
-        -1.375
-       ],
-       [
-        4.5,
-        -1.2
-       ],
-       [
-        4.875,
-        -0.975
-       ],
-       [
-        5.25,
-        -0.7
-       ],
-       [
-        5.625,
-        -0.375
-       ],
-       [
-        6,
-        0
-       ]
-      ],
-      "str": 1,
-      "crtaj": 1,
-      "b": 2,
-      "debljina": 2.5,
-      "kasni": 0.5,
-      "trajanje": 0.9
-     },
-     {
-      "lin": [
-       [
-        6,
-        0
-       ],
-       [
-        6.375,
-        -0.375
-       ],
-       [
-        6.75,
-        -0.7
-       ],
-       [
-        7.125,
-        -0.975
-       ],
-       [
-        7.5,
-        -1.2
-       ],
-       [
-        7.875,
-        -1.375
-       ],
-       [
-        8.25,
-        -1.5
-       ],
-       [
-        8.625,
-        -1.575
-       ],
-       [
-        9,
-        -1.6
-       ],
-       [
-        9.375,
-        -1.575
-       ],
-       [
-        9.75,
-        -1.5
-       ],
-       [
-        10.125,
-        -1.375
-       ],
-       [
-        10.5,
-        -1.2
-       ],
-       [
-        10.875,
-        -0.975
-       ],
-       [
-        11.25,
-        -0.7
-       ],
-       [
-        11.625,
-        -0.375
-       ],
-       [
-        12,
-        0
-       ]
-      ],
-      "str": 1,
-      "crtaj": 1,
-      "b": 2,
-      "debljina": 2.5,
-      "kasni": 1.1,
-      "trajanje": 0.9
-     }
-    ],
-    "bezImena": [
-     "O"
-    ],
-    "velicina": 320
-   },
    "odgovori": [
     "Najmanji broj deljiv sa oba broja",
     "Najveći broj koji deli oba",
@@ -18404,13 +18001,7 @@
     "Razlika ta dva broja"
    ],
    "zanimljivost": "NZS je najmanji broj koji je sadržalac (višekratnik) oba data broja. Na primer, NZS(4, 6) je 12.",
-   "rec": "sadržalac"
-  },
-  {
-   "lekcija": 20,
-   "tezina": 1,
-   "pitanje": "Koliki je NZS brojeva 4 i 6?",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -18823,6 +18414,12 @@
     ],
     "velicina": 320
    },
+   "rec": "sadržalac"
+  },
+  {
+   "lekcija": 20,
+   "tezina": 1,
+   "pitanje": "Koliki je NZS brojeva 4 i 6?",
    "odgovori": [
     "12",
     "24",
@@ -18830,13 +18427,433 @@
     "4"
    ],
    "zanimljivost": "Sadržaoci broja 4: $4, 8, 12, …$; broja 6: $6, 12, 18, …$. Prvi zajednički je 12.",
+   "medijiOdgovora": {
+    "vrsta": "geo",
+    "t": {
+     "O": [
+      0,
+      0
+     ]
+    },
+    "e": [
+     {
+      "osa": [
+       0,
+       13
+      ],
+      "podela": 1,
+      "svaki": 1
+     },
+     {
+      "lin": [
+       [
+        0,
+        0
+       ],
+       [
+        0.25,
+        0.316
+       ],
+       [
+        0.5,
+        0.591
+       ],
+       [
+        0.75,
+        0.823
+       ],
+       [
+        1,
+        1.013
+       ],
+       [
+        1.25,
+        1.16
+       ],
+       [
+        1.5,
+        1.266
+       ],
+       [
+        1.75,
+        1.329
+       ],
+       [
+        2,
+        1.35
+       ],
+       [
+        2.25,
+        1.329
+       ],
+       [
+        2.5,
+        1.266
+       ],
+       [
+        2.75,
+        1.16
+       ],
+       [
+        3,
+        1.013
+       ],
+       [
+        3.25,
+        0.823
+       ],
+       [
+        3.5,
+        0.591
+       ],
+       [
+        3.75,
+        0.316
+       ],
+       [
+        4,
+        0
+       ]
+      ],
+      "str": 1,
+      "crtaj": 1,
+      "b": 1,
+      "debljina": 2.5,
+      "kasni": 0.3,
+      "trajanje": 0.9
+     },
+     {
+      "lin": [
+       [
+        4,
+        0
+       ],
+       [
+        4.25,
+        0.316
+       ],
+       [
+        4.5,
+        0.591
+       ],
+       [
+        4.75,
+        0.823
+       ],
+       [
+        5,
+        1.013
+       ],
+       [
+        5.25,
+        1.16
+       ],
+       [
+        5.5,
+        1.266
+       ],
+       [
+        5.75,
+        1.329
+       ],
+       [
+        6,
+        1.35
+       ],
+       [
+        6.25,
+        1.329
+       ],
+       [
+        6.5,
+        1.266
+       ],
+       [
+        6.75,
+        1.16
+       ],
+       [
+        7,
+        1.013
+       ],
+       [
+        7.25,
+        0.823
+       ],
+       [
+        7.5,
+        0.591
+       ],
+       [
+        7.75,
+        0.316
+       ],
+       [
+        8,
+        0
+       ]
+      ],
+      "str": 1,
+      "crtaj": 1,
+      "b": 1,
+      "debljina": 2.5,
+      "kasni": 0.8999999999999999,
+      "trajanje": 0.9
+     },
+     {
+      "lin": [
+       [
+        8,
+        0
+       ],
+       [
+        8.25,
+        0.316
+       ],
+       [
+        8.5,
+        0.591
+       ],
+       [
+        8.75,
+        0.823
+       ],
+       [
+        9,
+        1.013
+       ],
+       [
+        9.25,
+        1.16
+       ],
+       [
+        9.5,
+        1.266
+       ],
+       [
+        9.75,
+        1.329
+       ],
+       [
+        10,
+        1.35
+       ],
+       [
+        10.25,
+        1.329
+       ],
+       [
+        10.5,
+        1.266
+       ],
+       [
+        10.75,
+        1.16
+       ],
+       [
+        11,
+        1.013
+       ],
+       [
+        11.25,
+        0.823
+       ],
+       [
+        11.5,
+        0.591
+       ],
+       [
+        11.75,
+        0.316
+       ],
+       [
+        12,
+        0
+       ]
+      ],
+      "str": 1,
+      "crtaj": 1,
+      "b": 1,
+      "debljina": 2.5,
+      "kasni": 1.5,
+      "trajanje": 0.9
+     },
+     {
+      "lin": [
+       [
+        0,
+        0
+       ],
+       [
+        0.375,
+        -0.375
+       ],
+       [
+        0.75,
+        -0.7
+       ],
+       [
+        1.125,
+        -0.975
+       ],
+       [
+        1.5,
+        -1.2
+       ],
+       [
+        1.875,
+        -1.375
+       ],
+       [
+        2.25,
+        -1.5
+       ],
+       [
+        2.625,
+        -1.575
+       ],
+       [
+        3,
+        -1.6
+       ],
+       [
+        3.375,
+        -1.575
+       ],
+       [
+        3.75,
+        -1.5
+       ],
+       [
+        4.125,
+        -1.375
+       ],
+       [
+        4.5,
+        -1.2
+       ],
+       [
+        4.875,
+        -0.975
+       ],
+       [
+        5.25,
+        -0.7
+       ],
+       [
+        5.625,
+        -0.375
+       ],
+       [
+        6,
+        0
+       ]
+      ],
+      "str": 1,
+      "crtaj": 1,
+      "b": 2,
+      "debljina": 2.5,
+      "kasni": 0.5,
+      "trajanje": 0.9
+     },
+     {
+      "lin": [
+       [
+        6,
+        0
+       ],
+       [
+        6.375,
+        -0.375
+       ],
+       [
+        6.75,
+        -0.7
+       ],
+       [
+        7.125,
+        -0.975
+       ],
+       [
+        7.5,
+        -1.2
+       ],
+       [
+        7.875,
+        -1.375
+       ],
+       [
+        8.25,
+        -1.5
+       ],
+       [
+        8.625,
+        -1.575
+       ],
+       [
+        9,
+        -1.6
+       ],
+       [
+        9.375,
+        -1.575
+       ],
+       [
+        9.75,
+        -1.5
+       ],
+       [
+        10.125,
+        -1.375
+       ],
+       [
+        10.5,
+        -1.2
+       ],
+       [
+        10.875,
+        -0.975
+       ],
+       [
+        11.25,
+        -0.7
+       ],
+       [
+        11.625,
+        -0.375
+       ],
+       [
+        12,
+        0
+       ]
+      ],
+      "str": 1,
+      "crtaj": 1,
+      "b": 2,
+      "debljina": 2.5,
+      "kasni": 1.1,
+      "trajanje": 0.9
+     }
+    ],
+    "bezImena": [
+     "O"
+    ],
+    "velicina": 320
+   },
    "rec": "sadržalac"
   },
   {
    "lekcija": 20,
    "tezina": 2,
    "pitanje": "Koliki je NZS brojeva 5 i 7?",
-   "mediji": {
+   "odgovori": [
+    "35",
+    "12",
+    "5",
+    "7"
+   ],
+   "zanimljivost": "Pošto su 5 i 7 uzajamno prosti, NZS je njihov proizvod: $5·7=35$.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -19795,20 +19812,20 @@
     ],
     "velicina": 320
    },
-   "odgovori": [
-    "35",
-    "12",
-    "5",
-    "7"
-   ],
-   "zanimljivost": "Pošto su 5 i 7 uzajamno prosti, NZS je njihov proizvod: $5·7=35$.",
    "rec": "sadržalac"
   },
   {
    "lekcija": 20,
    "tezina": 2,
    "pitanje": "Koliki je NZS brojeva 6 i 8?",
-   "mediji": {
+   "odgovori": [
+    "24",
+    "48",
+    "12",
+    "16"
+   ],
+   "zanimljivost": "Sadržaoci broja 6: $6, 12, 18, 24, …$; broja 8: $8, 16, 24, …$. Prvi zajednički je 24.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -20377,20 +20394,20 @@
     ],
     "velicina": 320
    },
-   "odgovori": [
-    "24",
-    "48",
-    "12",
-    "16"
-   ],
-   "zanimljivost": "Sadržaoci broja 6: $6, 12, 18, 24, …$; broja 8: $8, 16, 24, …$. Prvi zajednički je 24.",
    "rec": "sadržalac"
   },
   {
    "lekcija": 20,
    "tezina": 2,
    "pitanje": "Ako je NZD(8, 12) = 4, koliki je NZS(8, 12)?",
-   "mediji": {
+   "odgovori": [
+    "24",
+    "16",
+    "12",
+    "96"
+   ],
+   "zanimljivost": "Iz veze $NZD· NZS = a· b$: $4 · NZS = 8·12 = 96$, pa je $NZS = 96:4 = 24$.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -20803,23 +20820,12 @@
     ],
     "velicina": 320
    },
-   "odgovori": [
-    "24",
-    "16",
-    "12",
-    "96"
-   ],
-   "zanimljivost": "Iz veze $NZD· NZS = a· b$: $4 · NZS = 8·12 = 96$, pa je $NZS = 96:4 = 24$.",
    "rec": "sadržalac"
   },
   {
    "lekcija": 20,
    "tezina": 3,
    "pitanje": "Koja veza povezuje NZD i NZS dva broja $a$ i $b$?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "NZD· NZS = a· b"
-   },
    "odgovori": [
     "$NZD · NZS = a · b$",
     "$NZD + NZS = a + b$",
@@ -20827,13 +20833,24 @@
     "$NZS - NZD = a · b$"
    ],
    "zanimljivost": "Zlatno pravilo: proizvod NZD i NZS jednak je proizvodu samih brojeva. Na primer, za 12 i 18: $6 · 36 = 12 · 18 = 216$.",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$NZD\\cdot NZS=a\\cdot b$"
+   },
    "rec": "proizvod"
   },
   {
    "lekcija": 20,
    "tezina": 3,
    "pitanje": "Dva zvona zvone istovremeno. Prvo zvoni na svakih 4 minuta, drugo na svakih 6 minuta. Posle koliko minuta će ponovo zvoniti zajedno?",
-   "mediji": {
+   "odgovori": [
+    "12 minuta",
+    "24 minuta",
+    "6 minuta",
+    "10 minuta"
+   ],
+   "zanimljivost": "Tražimo najmanji zajednički sadržalac brojeva 4 i 6, a to je 12. Posle 12 minuta oba zvona zvone u istom trenutku.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -21246,13 +21263,6 @@
     ],
     "velicina": 320
    },
-   "odgovori": [
-    "12 minuta",
-    "24 minuta",
-    "6 minuta",
-    "10 minuta"
-   ],
-   "zanimljivost": "Tražimo najmanji zajednički sadržalac brojeva 4 i 6, a to je 12. Posle 12 minuta oba zvona zvone u istom trenutku.",
    "rec": "sadržalac"
   },
   {
@@ -21719,131 +21729,6 @@
    "lekcija": 21,
    "tezina": 1,
    "pitanje": "Kako se zove broj IZNAD razlomačke crte?",
-   "mediji": {
-    "vrsta": "geo",
-    "t": {
-     "O": [
-      0,
-      0
-     ]
-    },
-    "e": [
-     {
-      "lin": [
-       [
-        0,
-        0
-       ],
-       [
-        2,
-        0
-       ],
-       [
-        2,
-        1.2
-       ],
-       [
-        0,
-        1.2
-       ]
-      ],
-      "zatv": 1,
-      "b": 1,
-      "gusto": 1
-     },
-     {
-      "lin": [
-       [
-        2,
-        0
-       ],
-       [
-        4,
-        0
-       ],
-       [
-        4,
-        1.2
-       ],
-       [
-        2,
-        1.2
-       ]
-      ],
-      "zatv": 1,
-      "b": 1,
-      "gusto": 1
-     },
-     {
-      "lin": [
-       [
-        4,
-        0
-       ],
-       [
-        6,
-        0
-       ],
-       [
-        6,
-        1.2
-       ],
-       [
-        4,
-        1.2
-       ]
-      ],
-      "zatv": 1,
-      "b": 1,
-      "gusto": 1
-     },
-     {
-      "lin": [
-       [
-        6,
-        0
-       ],
-       [
-        8,
-        0
-       ],
-       [
-        8,
-        1.2
-       ],
-       [
-        6,
-        1.2
-       ]
-      ],
-      "zatv": 1,
-      "b": 4,
-      "prazno": 1
-     },
-     {
-      "tx": "brojilac",
-      "at": [
-       2,
-       1.9
-      ],
-      "vel": 14,
-      "b": 1
-     },
-     {
-      "tx": "imenilac",
-      "at": [
-       2,
-       -0.4
-      ],
-      "vel": 14,
-      "b": 2
-     }
-    ],
-    "bezImena": [
-     "O"
-    ],
-    "velicina": 320
-   },
    "odgovori": [
     "Brojilac",
     "Imenilac",
@@ -21851,13 +21736,7 @@
     "Delilac"
    ],
    "zanimljivost": "Brojilac je gornji broj – on „broji“ koliko delova uzimamo. Ispod crte je imenilac koji „imenuje“ na koliko delova je podeljeno.",
-   "rec": "brojilac"
-  },
-  {
-   "lekcija": 21,
-   "tezina": 1,
-   "pitanje": "Kako se zove broj ISPOD razlomačke crte?",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -21982,6 +21861,12 @@
     ],
     "velicina": 320
    },
+   "rec": "brojilac"
+  },
+  {
+   "lekcija": 21,
+   "tezina": 1,
+   "pitanje": "Kako se zove broj ISPOD razlomačke crte?",
    "odgovori": [
     "Imenilac",
     "Brojilac",
@@ -21989,6 +21874,131 @@
     "Ostatak"
    ],
    "zanimljivost": "Imenilac je donji broj – on daje ime delovima (polovine, trećine, četvrtine…). Imenilac nikada nije nula.",
+   "medijiOdgovora": {
+    "vrsta": "geo",
+    "t": {
+     "O": [
+      0,
+      0
+     ]
+    },
+    "e": [
+     {
+      "lin": [
+       [
+        0,
+        0
+       ],
+       [
+        2,
+        0
+       ],
+       [
+        2,
+        1.2
+       ],
+       [
+        0,
+        1.2
+       ]
+      ],
+      "zatv": 1,
+      "b": 1,
+      "gusto": 1
+     },
+     {
+      "lin": [
+       [
+        2,
+        0
+       ],
+       [
+        4,
+        0
+       ],
+       [
+        4,
+        1.2
+       ],
+       [
+        2,
+        1.2
+       ]
+      ],
+      "zatv": 1,
+      "b": 1,
+      "gusto": 1
+     },
+     {
+      "lin": [
+       [
+        4,
+        0
+       ],
+       [
+        6,
+        0
+       ],
+       [
+        6,
+        1.2
+       ],
+       [
+        4,
+        1.2
+       ]
+      ],
+      "zatv": 1,
+      "b": 1,
+      "gusto": 1
+     },
+     {
+      "lin": [
+       [
+        6,
+        0
+       ],
+       [
+        8,
+        0
+       ],
+       [
+        8,
+        1.2
+       ],
+       [
+        6,
+        1.2
+       ]
+      ],
+      "zatv": 1,
+      "b": 4,
+      "prazno": 1
+     },
+     {
+      "tx": "brojilac",
+      "at": [
+       2,
+       1.9
+      ],
+      "vel": 14,
+      "b": 1
+     },
+     {
+      "tx": "imenilac",
+      "at": [
+       2,
+       -0.4
+      ],
+      "vel": 14,
+      "b": 2
+     }
+    ],
+    "bezImena": [
+     "O"
+    ],
+    "velicina": 320
+   },
    "rec": "imenilac"
   },
   {
@@ -22508,7 +22518,7 @@
     "${2|6}$",
     "${4|6}$",
     "${2|4}$",
-    "${1|3}$"
+    "${2|5}$"
    ],
    "zanimljivost": "Krug je podeljen na 6 jednakih isečaka, a obojena su 2. Prikazan je razlomak ${2|6}$ (dve šestine).",
    "rec": "razlomak"
@@ -22683,7 +22693,14 @@
    "lekcija": 22,
    "tezina": 1,
    "pitanje": "Gde se na brojevnoj polupravoj nalazi razlomak ${1|2}$?",
-   "mediji": {
+   "odgovori": [
+    "Tačno na polovini između 0 i 1",
+    "Na samom početku (u 0)",
+    "Na samom kraju (u 1)",
+    "Desno od 1"
+   ],
+   "zanimljivost": "Razlomak ${1|2}$ je na polovini duži od 0 do 1. Brojevna poluprava počinje u 0 i ide udesno.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -22729,20 +22746,20 @@
     ],
     "velicina": 320
    },
-   "odgovori": [
-    "Tačno na polovini između 0 i 1",
-    "Na samom početku (u 0)",
-    "Na samom kraju (u 1)",
-    "Desno od 1"
-   ],
-   "zanimljivost": "Razlomak ${1|2}$ je na polovini duži od 0 do 1. Brojevna poluprava počinje u 0 i ide udesno.",
    "rec": "razlomak"
   },
   {
    "lekcija": 22,
    "tezina": 2,
    "pitanje": "Kako se na polupravoj predstavlja ${3|4}$?",
-   "mediji": {
+   "odgovori": [
+    "Duž od 0 do 1 podeliš na 4 dela i uzmeš 3. podeljak",
+    "Podeliš na 3 dela i uzmeš 4.",
+    "Staviš tačku na 1",
+    "Staviš tačku na 0"
+   ],
+   "zanimljivost": "Imenilac 4 kaže: podeli duž od 0 do 1 na 4 jednaka dela. Brojilac 3 kaže: stani na trećem podeljku.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -22787,20 +22804,20 @@
     ],
     "velicina": 320
    },
-   "odgovori": [
-    "Duž od 0 do 1 podeliš na 4 dela i uzmeš 3. podeljak",
-    "Podeliš na 3 dela i uzmeš 4.",
-    "Staviš tačku na 1",
-    "Staviš tačku na 0"
-   ],
-   "zanimljivost": "Imenilac 4 kaže: podeli duž od 0 do 1 na 4 jednaka dela. Brojilac 3 kaže: stani na trećem podeljku.",
    "rec": "razlomak"
   },
   {
    "lekcija": 22,
    "tezina": 2,
    "pitanje": "Tačka je na trećem podeljku duži od 0 do 1, podeljene na 5 jednakih delova. Koji je to razlomak?",
-   "mediji": {
+   "odgovori": [
+    "${3|5}$",
+    "${5|3}$",
+    "${2|5}$",
+    "${3|4}$"
+   ],
+   "zanimljivost": "Podela na 5 delova daje imenilac 5, a treći podeljak daje brojilac 3 – dakle ${3|5}$.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -22845,20 +22862,20 @@
     ],
     "velicina": 320
    },
-   "odgovori": [
-    "${3|5}$",
-    "${5|3}$",
-    "${2|5}$",
-    "${3|4}$"
-   ],
-   "zanimljivost": "Podela na 5 delova daje imenilac 5, a treći podeljak daje brojilac 3 – dakle ${3|5}$.",
    "rec": "razlomak"
   },
   {
    "lekcija": 22,
    "tezina": 2,
    "pitanje": "Šta je veće na brojevnoj polupravoj: ${1|2}$ ili ${1|4}$?",
-   "mediji": {
+   "odgovori": [
+    "${1|2}$ – nalazi se desno",
+    "${1|4}$ – nalazi se desno",
+    "Jednaki su",
+    "Ne može se uporediti"
+   ],
+   "zanimljivost": "Na brojevnoj pravoj, broj koji je više udesno je veći. Polovina je desno od četvrtine, pa je ${1|2} > {1|4}$.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -22927,13 +22944,6 @@
     ],
     "velicina": 320
    },
-   "odgovori": [
-    "${1|2}$ – nalazi se desno",
-    "${1|4}$ – nalazi se desno",
-    "Jednaki su",
-    "Ne može se uporediti"
-   ],
-   "zanimljivost": "Na brojevnoj pravoj, broj koji je više udesno je veći. Polovina je desno od četvrtine, pa je ${1|2} > {1|4}$.",
    "rec": "razlomak"
   },
   {
@@ -22979,7 +22989,7 @@
     "0",
     "1",
     "−1",
-    "Zavisi od toga ko crta"
+    "2"
    ],
    "zanimljivost": "Početna tačka (ishodište O) po dogovoru dobija broj 0. Udesno se zatim ređaju 1, 2, 3…, a razlomci leže na jediničnim dužima između celih brojeva.",
    "rec": "poluprava"
@@ -22988,223 +22998,6 @@
    "lekcija": 23,
    "tezina": 1,
    "pitanje": "Šta znači PROŠIRITI razlomak?",
-   "mediji": {
-    "vrsta": "geo",
-    "t": {
-     "O": [
-      0,
-      0
-     ]
-    },
-    "e": [
-     {
-      "lin": [
-       [
-        0,
-        0
-       ],
-       [
-        4,
-        0
-       ],
-       [
-        4,
-        1.2
-       ],
-       [
-        0,
-        1.2
-       ]
-      ],
-      "zatv": 1,
-      "b": 1,
-      "gusto": 1
-     },
-     {
-      "lin": [
-       [
-        4,
-        0
-       ],
-       [
-        8,
-        0
-       ],
-       [
-        8,
-        1.2
-       ],
-       [
-        4,
-        1.2
-       ]
-      ],
-      "zatv": 1,
-      "b": 4,
-      "prazno": 1
-     },
-     {
-      "lin": [
-       [
-        0,
-        -2
-       ],
-       [
-        1.333,
-        -2
-       ],
-       [
-        1.333,
-        -0.8
-       ],
-       [
-        0,
-        -0.8
-       ]
-      ],
-      "zatv": 1,
-      "b": 2,
-      "gusto": 1
-     },
-     {
-      "lin": [
-       [
-        1.333,
-        -2
-       ],
-       [
-        2.667,
-        -2
-       ],
-       [
-        2.667,
-        -0.8
-       ],
-       [
-        1.333,
-        -0.8
-       ]
-      ],
-      "zatv": 1,
-      "b": 2,
-      "gusto": 1
-     },
-     {
-      "lin": [
-       [
-        2.667,
-        -2
-       ],
-       [
-        4,
-        -2
-       ],
-       [
-        4,
-        -0.8
-       ],
-       [
-        2.667,
-        -0.8
-       ]
-      ],
-      "zatv": 1,
-      "b": 2,
-      "gusto": 1
-     },
-     {
-      "lin": [
-       [
-        4,
-        -2
-       ],
-       [
-        5.333,
-        -2
-       ],
-       [
-        5.333,
-        -0.8
-       ],
-       [
-        4,
-        -0.8
-       ]
-      ],
-      "zatv": 1,
-      "b": 4,
-      "prazno": 1
-     },
-     {
-      "lin": [
-       [
-        5.333,
-        -2
-       ],
-       [
-        6.667,
-        -2
-       ],
-       [
-        6.667,
-        -0.8
-       ],
-       [
-        5.333,
-        -0.8
-       ]
-      ],
-      "zatv": 1,
-      "b": 4,
-      "prazno": 1
-     },
-     {
-      "lin": [
-       [
-        6.667,
-        -2
-       ],
-       [
-        8,
-        -2
-       ],
-       [
-        8,
-        -0.8
-       ],
-       [
-        6.667,
-        -0.8
-       ]
-      ],
-      "zatv": 1,
-      "b": 4,
-      "prazno": 1
-     },
-     {
-      "tx": "1/2",
-      "at": [
-       9.5,
-       0.6
-      ],
-      "vel": 16,
-      "b": 1
-     },
-     {
-      "tx": "3/6",
-      "at": [
-       9.5,
-       -1.7
-      ],
-      "vel": 16,
-      "b": 2
-     }
-    ],
-    "bezImena": [
-     "O"
-    ],
-    "velicina": 320
-   },
    "odgovori": [
     "Pomnožiti brojilac i imenilac istim brojem",
     "Podeliti brojilac i imenilac istim brojem",
@@ -23212,335 +23005,7 @@
     "Samo povećati brojilac"
    ],
    "zanimljivost": "Proširivanje: brojilac i imenilac pomnožimo istim brojem (različitim od nule). Vrednost razlomka se ne menja: ${1|2}={3|6}$.",
-   "rec": "proširivanje"
-  },
-  {
-   "lekcija": 23,
-   "tezina": 1,
-   "pitanje": "Šta znači SKRATITI razlomak?",
-   "mediji": {
-    "vrsta": "geo",
-    "t": {
-     "O": [
-      0,
-      0
-     ]
-    },
-    "e": [
-     {
-      "lin": [
-       [
-        0,
-        0
-       ],
-       [
-        1,
-        0
-       ],
-       [
-        1,
-        1.2
-       ],
-       [
-        0,
-        1.2
-       ]
-      ],
-      "zatv": 1,
-      "b": 1,
-      "gusto": 1
-     },
-     {
-      "lin": [
-       [
-        1,
-        0
-       ],
-       [
-        2,
-        0
-       ],
-       [
-        2,
-        1.2
-       ],
-       [
-        1,
-        1.2
-       ]
-      ],
-      "zatv": 1,
-      "b": 1,
-      "gusto": 1
-     },
-     {
-      "lin": [
-       [
-        2,
-        0
-       ],
-       [
-        3,
-        0
-       ],
-       [
-        3,
-        1.2
-       ],
-       [
-        2,
-        1.2
-       ]
-      ],
-      "zatv": 1,
-      "b": 1,
-      "gusto": 1
-     },
-     {
-      "lin": [
-       [
-        3,
-        0
-       ],
-       [
-        4,
-        0
-       ],
-       [
-        4,
-        1.2
-       ],
-       [
-        3,
-        1.2
-       ]
-      ],
-      "zatv": 1,
-      "b": 1,
-      "gusto": 1
-     },
-     {
-      "lin": [
-       [
-        4,
-        0
-       ],
-       [
-        5,
-        0
-       ],
-       [
-        5,
-        1.2
-       ],
-       [
-        4,
-        1.2
-       ]
-      ],
-      "zatv": 1,
-      "b": 1,
-      "gusto": 1
-     },
-     {
-      "lin": [
-       [
-        5,
-        0
-       ],
-       [
-        6,
-        0
-       ],
-       [
-        6,
-        1.2
-       ],
-       [
-        5,
-        1.2
-       ]
-      ],
-      "zatv": 1,
-      "b": 1,
-      "gusto": 1
-     },
-     {
-      "lin": [
-       [
-        6,
-        0
-       ],
-       [
-        7,
-        0
-       ],
-       [
-        7,
-        1.2
-       ],
-       [
-        6,
-        1.2
-       ]
-      ],
-      "zatv": 1,
-      "b": 4,
-      "prazno": 1
-     },
-     {
-      "lin": [
-       [
-        7,
-        0
-       ],
-       [
-        8,
-        0
-       ],
-       [
-        8,
-        1.2
-       ],
-       [
-        7,
-        1.2
-       ]
-      ],
-      "zatv": 1,
-      "b": 4,
-      "prazno": 1
-     },
-     {
-      "lin": [
-       [
-        0,
-        -2
-       ],
-       [
-        2,
-        -2
-       ],
-       [
-        2,
-        -0.8
-       ],
-       [
-        0,
-        -0.8
-       ]
-      ],
-      "zatv": 1,
-      "b": 2,
-      "gusto": 1
-     },
-     {
-      "lin": [
-       [
-        2,
-        -2
-       ],
-       [
-        4,
-        -2
-       ],
-       [
-        4,
-        -0.8
-       ],
-       [
-        2,
-        -0.8
-       ]
-      ],
-      "zatv": 1,
-      "b": 2,
-      "gusto": 1
-     },
-     {
-      "lin": [
-       [
-        4,
-        -2
-       ],
-       [
-        6,
-        -2
-       ],
-       [
-        6,
-        -0.8
-       ],
-       [
-        4,
-        -0.8
-       ]
-      ],
-      "zatv": 1,
-      "b": 2,
-      "gusto": 1
-     },
-     {
-      "lin": [
-       [
-        6,
-        -2
-       ],
-       [
-        8,
-        -2
-       ],
-       [
-        8,
-        -0.8
-       ],
-       [
-        6,
-        -0.8
-       ]
-      ],
-      "zatv": 1,
-      "b": 4,
-      "prazno": 1
-     },
-     {
-      "tx": "6/8",
-      "at": [
-       9.5,
-       0.6
-      ],
-      "vel": 16,
-      "b": 1
-     },
-     {
-      "tx": "3/4",
-      "at": [
-       9.5,
-       -1.7
-      ],
-      "vel": 16,
-      "b": 2
-     }
-    ],
-    "bezImena": [
-     "O"
-    ],
-    "velicina": 320
-   },
-   "odgovori": [
-    "Podeliti brojilac i imenilac istim brojem",
-    "Pomnožiti brojilac i imenilac istim brojem",
-    "Oduzeti im isti broj",
-    "Samo smanjiti imenilac"
-   ],
-   "zanimljivost": "Skraćivanje: brojilac i imenilac podelimo istim brojem. Vrednost ostaje ista: ${6|8}={3|4}$ (podelili smo sa 2).",
-   "rec": "skraćivanje"
-  },
-  {
-   "lekcija": 23,
-   "tezina": 1,
-   "pitanje": "Proširi razlomak ${1|2}$ brojem 3. Šta dobijaš?",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -23757,20 +23222,20 @@
     ],
     "velicina": 320
    },
-   "odgovori": [
-    "${3|6}$",
-    "${2|3}$",
-    "${4|6}$",
-    "${1|6}$"
-   ],
-   "zanimljivost": "Množimo i brojilac i imenilac sa 3: ${1·3|2·3}={3|6}$. Razlomak je isti, samo je zapisan sitnijim delovima.",
    "rec": "proširivanje"
   },
   {
    "lekcija": 23,
    "tezina": 1,
-   "pitanje": "Skrati razlomak ${6|8}$. Šta dobijaš?",
-   "mediji": {
+   "pitanje": "Šta znači SKRATITI razlomak?",
+   "odgovori": [
+    "Podeliti brojilac i imenilac istim brojem",
+    "Pomnožiti brojilac i imenilac istim brojem",
+    "Oduzeti im isti broj",
+    "Samo smanjiti imenilac"
+   ],
+   "zanimljivost": "Skraćivanje: brojilac i imenilac podelimo istim brojem. Vrednost ostaje ista: ${6|8}={3|4}$ (podelili smo sa 2).",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -24079,6 +23544,242 @@
     ],
     "velicina": 320
    },
+   "rec": "skraćivanje"
+  },
+  {
+   "lekcija": 23,
+   "tezina": 1,
+   "pitanje": "Proširi razlomak ${1|2}$ brojem 3. Šta dobijaš?",
+   "odgovori": [
+    "${3|6}$",
+    "${2|3}$",
+    "${4|6}$",
+    "${1|6}$"
+   ],
+   "zanimljivost": "Množimo i brojilac i imenilac sa 3: ${1·3|2·3}={3|6}$. Razlomak je isti, samo je zapisan sitnijim delovima.",
+   "medijiOdgovora": {
+    "vrsta": "geo",
+    "t": {
+     "O": [
+      0,
+      0
+     ]
+    },
+    "e": [
+     {
+      "lin": [
+       [
+        0,
+        0
+       ],
+       [
+        4,
+        0
+       ],
+       [
+        4,
+        1.2
+       ],
+       [
+        0,
+        1.2
+       ]
+      ],
+      "zatv": 1,
+      "b": 1,
+      "gusto": 1
+     },
+     {
+      "lin": [
+       [
+        4,
+        0
+       ],
+       [
+        8,
+        0
+       ],
+       [
+        8,
+        1.2
+       ],
+       [
+        4,
+        1.2
+       ]
+      ],
+      "zatv": 1,
+      "b": 4,
+      "prazno": 1
+     },
+     {
+      "lin": [
+       [
+        0,
+        -2
+       ],
+       [
+        1.333,
+        -2
+       ],
+       [
+        1.333,
+        -0.8
+       ],
+       [
+        0,
+        -0.8
+       ]
+      ],
+      "zatv": 1,
+      "b": 2,
+      "gusto": 1
+     },
+     {
+      "lin": [
+       [
+        1.333,
+        -2
+       ],
+       [
+        2.667,
+        -2
+       ],
+       [
+        2.667,
+        -0.8
+       ],
+       [
+        1.333,
+        -0.8
+       ]
+      ],
+      "zatv": 1,
+      "b": 2,
+      "gusto": 1
+     },
+     {
+      "lin": [
+       [
+        2.667,
+        -2
+       ],
+       [
+        4,
+        -2
+       ],
+       [
+        4,
+        -0.8
+       ],
+       [
+        2.667,
+        -0.8
+       ]
+      ],
+      "zatv": 1,
+      "b": 2,
+      "gusto": 1
+     },
+     {
+      "lin": [
+       [
+        4,
+        -2
+       ],
+       [
+        5.333,
+        -2
+       ],
+       [
+        5.333,
+        -0.8
+       ],
+       [
+        4,
+        -0.8
+       ]
+      ],
+      "zatv": 1,
+      "b": 4,
+      "prazno": 1
+     },
+     {
+      "lin": [
+       [
+        5.333,
+        -2
+       ],
+       [
+        6.667,
+        -2
+       ],
+       [
+        6.667,
+        -0.8
+       ],
+       [
+        5.333,
+        -0.8
+       ]
+      ],
+      "zatv": 1,
+      "b": 4,
+      "prazno": 1
+     },
+     {
+      "lin": [
+       [
+        6.667,
+        -2
+       ],
+       [
+        8,
+        -2
+       ],
+       [
+        8,
+        -0.8
+       ],
+       [
+        6.667,
+        -0.8
+       ]
+      ],
+      "zatv": 1,
+      "b": 4,
+      "prazno": 1
+     },
+     {
+      "tx": "1/2",
+      "at": [
+       9.5,
+       0.6
+      ],
+      "vel": 16,
+      "b": 1
+     },
+     {
+      "tx": "3/6",
+      "at": [
+       9.5,
+       -1.7
+      ],
+      "vel": 16,
+      "b": 2
+     }
+    ],
+    "bezImena": [
+     "O"
+    ],
+    "velicina": 320
+   },
+   "rec": "proširivanje"
+  },
+  {
+   "lekcija": 23,
+   "tezina": 1,
+   "pitanje": "Skrati razlomak ${6|8}$. Šta dobijaš?",
    "odgovori": [
     "${3|4}$",
     "${2|3}$",
@@ -24086,13 +23787,329 @@
     "${4|3}$"
    ],
    "zanimljivost": "Oba broja delimo sa 2: ${6:2|8:2}={3|4}$. Razlomak ${3|4}$ se ne može dalje skratiti – to je najprostiji oblik.",
+   "medijiOdgovora": {
+    "vrsta": "geo",
+    "t": {
+     "O": [
+      0,
+      0
+     ]
+    },
+    "e": [
+     {
+      "lin": [
+       [
+        0,
+        0
+       ],
+       [
+        1,
+        0
+       ],
+       [
+        1,
+        1.2
+       ],
+       [
+        0,
+        1.2
+       ]
+      ],
+      "zatv": 1,
+      "b": 1,
+      "gusto": 1
+     },
+     {
+      "lin": [
+       [
+        1,
+        0
+       ],
+       [
+        2,
+        0
+       ],
+       [
+        2,
+        1.2
+       ],
+       [
+        1,
+        1.2
+       ]
+      ],
+      "zatv": 1,
+      "b": 1,
+      "gusto": 1
+     },
+     {
+      "lin": [
+       [
+        2,
+        0
+       ],
+       [
+        3,
+        0
+       ],
+       [
+        3,
+        1.2
+       ],
+       [
+        2,
+        1.2
+       ]
+      ],
+      "zatv": 1,
+      "b": 1,
+      "gusto": 1
+     },
+     {
+      "lin": [
+       [
+        3,
+        0
+       ],
+       [
+        4,
+        0
+       ],
+       [
+        4,
+        1.2
+       ],
+       [
+        3,
+        1.2
+       ]
+      ],
+      "zatv": 1,
+      "b": 1,
+      "gusto": 1
+     },
+     {
+      "lin": [
+       [
+        4,
+        0
+       ],
+       [
+        5,
+        0
+       ],
+       [
+        5,
+        1.2
+       ],
+       [
+        4,
+        1.2
+       ]
+      ],
+      "zatv": 1,
+      "b": 1,
+      "gusto": 1
+     },
+     {
+      "lin": [
+       [
+        5,
+        0
+       ],
+       [
+        6,
+        0
+       ],
+       [
+        6,
+        1.2
+       ],
+       [
+        5,
+        1.2
+       ]
+      ],
+      "zatv": 1,
+      "b": 1,
+      "gusto": 1
+     },
+     {
+      "lin": [
+       [
+        6,
+        0
+       ],
+       [
+        7,
+        0
+       ],
+       [
+        7,
+        1.2
+       ],
+       [
+        6,
+        1.2
+       ]
+      ],
+      "zatv": 1,
+      "b": 4,
+      "prazno": 1
+     },
+     {
+      "lin": [
+       [
+        7,
+        0
+       ],
+       [
+        8,
+        0
+       ],
+       [
+        8,
+        1.2
+       ],
+       [
+        7,
+        1.2
+       ]
+      ],
+      "zatv": 1,
+      "b": 4,
+      "prazno": 1
+     },
+     {
+      "lin": [
+       [
+        0,
+        -2
+       ],
+       [
+        2,
+        -2
+       ],
+       [
+        2,
+        -0.8
+       ],
+       [
+        0,
+        -0.8
+       ]
+      ],
+      "zatv": 1,
+      "b": 2,
+      "gusto": 1
+     },
+     {
+      "lin": [
+       [
+        2,
+        -2
+       ],
+       [
+        4,
+        -2
+       ],
+       [
+        4,
+        -0.8
+       ],
+       [
+        2,
+        -0.8
+       ]
+      ],
+      "zatv": 1,
+      "b": 2,
+      "gusto": 1
+     },
+     {
+      "lin": [
+       [
+        4,
+        -2
+       ],
+       [
+        6,
+        -2
+       ],
+       [
+        6,
+        -0.8
+       ],
+       [
+        4,
+        -0.8
+       ]
+      ],
+      "zatv": 1,
+      "b": 2,
+      "gusto": 1
+     },
+     {
+      "lin": [
+       [
+        6,
+        -2
+       ],
+       [
+        8,
+        -2
+       ],
+       [
+        8,
+        -0.8
+       ],
+       [
+        6,
+        -0.8
+       ]
+      ],
+      "zatv": 1,
+      "b": 4,
+      "prazno": 1
+     },
+     {
+      "tx": "6/8",
+      "at": [
+       9.5,
+       0.6
+      ],
+      "vel": 16,
+      "b": 1
+     },
+     {
+      "tx": "3/4",
+      "at": [
+       9.5,
+       -1.7
+      ],
+      "vel": 16,
+      "b": 2
+     }
+    ],
+    "bezImena": [
+     "O"
+    ],
+    "velicina": 320
+   },
    "rec": "skraćivanje"
   },
   {
    "lekcija": 23,
    "tezina": 2,
    "pitanje": "Koji razlomak je veći: ${3|4}$ ili ${1|4}$?",
-   "mediji": {
+   "odgovori": [
+    "${3|4}$",
+    "${1|4}$",
+    "Jednaki su",
+    "Ne može se uporediti"
+   ],
+   "zanimljivost": "Kad su imenioci isti, veći je razlomak sa većim brojiocem: 3 dela je više od 1 dela, pa je ${3|4} > {1|4}$.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -24309,20 +24326,20 @@
     ],
     "velicina": 320
    },
-   "odgovori": [
-    "${3|4}$",
-    "${1|4}$",
-    "Jednaki su",
-    "Ne može se uporediti"
-   ],
-   "zanimljivost": "Kad su imenioci isti, veći je razlomak sa većim brojiocem: 3 dela je više od 1 dela, pa je ${3|4} > {1|4}$.",
    "rec": "upoređivanje"
   },
   {
    "lekcija": 23,
    "tezina": 2,
    "pitanje": "Koji razlomak je veći: ${1|2}$ ili ${1|3}$?",
-   "mediji": {
+   "odgovori": [
+    "${1|2}$",
+    "${1|3}$",
+    "Jednaki su",
+    "Ne može se uporediti"
+   ],
+   "zanimljivost": "Kad su brojioci isti, veći je razlomak sa MANJIM imeniocem: polovina je veći deo od trećine, pa je ${1|2} > {1|3}$.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -24470,13 +24487,6 @@
     ],
     "velicina": 320
    },
-   "odgovori": [
-    "${1|2}$",
-    "${1|3}$",
-    "Jednaki su",
-    "Ne može se uporediti"
-   ],
-   "zanimljivost": "Kad su brojioci isti, veći je razlomak sa MANJIM imeniocem: polovina je veći deo od trećine, pa je ${1|2} > {1|3}$.",
    "rec": "upoređivanje"
   },
   {
@@ -24509,7 +24519,14 @@
    "lekcija": 23,
    "tezina": 3,
    "pitanje": "Šta je veće: ${2|3}$ ili ${3|5}$?",
-   "mediji": {
+   "odgovori": [
+    "${2|3}$",
+    "${3|5}$",
+    "Jednaki su",
+    "Ne može se uporediti"
+   ],
+   "zanimljivost": "Svedemo na zajednički imenilac: ${2|3}={10|15}$, a ${3|5}={9|15}$. Pošto je $10 > 9$, veći je ${2|3}$.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -24726,13 +24743,6 @@
     ],
     "velicina": 320
    },
-   "odgovori": [
-    "${2|3}$",
-    "${3|5}$",
-    "Jednaki su",
-    "Ne može se uporediti"
-   ],
-   "zanimljivost": "Svedemo na zajednički imenilac: ${2|3}={10|15}$, a ${3|5}={9|15}$. Pošto je $10 > 9$, veći je ${2|3}$.",
    "rec": "upoređivanje"
   },
   {
@@ -27076,7 +27086,14 @@
    "lekcija": 24,
    "tezina": 1,
    "pitanje": "Kako decimalno zapisuješ razlomak ${1|10}$?",
-   "mediji": {
+   "odgovori": [
+    "$0,1$",
+    "$1,0$",
+    "$0,01$",
+    "$10$"
+   ],
+   "zanimljivost": "${1|10}$ je jedna desetina, a to je $0,1$ – prvo mesto desno od zareza su desetinke.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -27330,20 +27347,20 @@
     ],
     "velicina": 320
    },
-   "odgovori": [
-    "$0,1$",
-    "$1,0$",
-    "$0,01$",
-    "$10$"
-   ],
-   "zanimljivost": "${1|10}$ je jedna desetina, a to je $0,1$ – prvo mesto desno od zareza su desetinke.",
    "rec": "decimala"
   },
   {
    "lekcija": 24,
    "tezina": 1,
    "pitanje": "Kako decimalno zapisuješ razlomak ${7|10}$?",
-   "mediji": {
+   "odgovori": [
+    "$0,7$",
+    "$7,0$",
+    "$0,07$",
+    "$0,007$"
+   ],
+   "zanimljivost": "Sedam desetina = $0,7$. Cifra 7 je na prvom decimalnom mestu – mestu desetinki.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -27597,20 +27614,20 @@
     ],
     "velicina": 320
    },
-   "odgovori": [
-    "$0,7$",
-    "$7,0$",
-    "$0,07$",
-    "$0,007$"
-   ],
-   "zanimljivost": "Sedam desetina = $0,7$. Cifra 7 je na prvom decimalnom mestu – mestu desetinki.",
    "rec": "decimala"
   },
   {
    "lekcija": 24,
    "tezina": 2,
    "pitanje": "Kako decimalno zapisuješ razlomak ${3|100}$?",
-   "mediji": {
+   "odgovori": [
+    "$0,03$",
+    "$0,3$",
+    "$3,0$",
+    "$0,003$"
+   ],
+   "zanimljivost": "Tri stotinke = $0,03$. Stotinke su na drugom decimalnom mestu, pa 3 mora da stigne tamo – zato ispred ide nula.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -29934,20 +29951,20 @@
     ],
     "velicina": 260
    },
-   "odgovori": [
-    "$0,03$",
-    "$0,3$",
-    "$3,0$",
-    "$0,003$"
-   ],
-   "zanimljivost": "Tri stotinke = $0,03$. Stotinke su na drugom decimalnom mestu, pa 3 mora da stigne tamo – zato ispred ide nula.",
    "rec": "decimala"
   },
   {
    "lekcija": 24,
    "tezina": 2,
    "pitanje": "Koji razlomak je zapisan kao $0,5$?",
-   "mediji": {
+   "odgovori": [
+    "${5|10}={1|2}$",
+    "${5|100}$",
+    "${1|5}$",
+    "${5|1000}$"
+   ],
+   "zanimljivost": "$0,5$ je pet desetina: ${5|10}$, a to se skrati na ${1|2}$. Polovina i $0,5$ su isti broj.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -30201,20 +30218,20 @@
     ],
     "velicina": 320
    },
-   "odgovori": [
-    "${5|10}={1|2}$",
-    "${5|100}$",
-    "${1|5}$",
-    "${5|1000}$"
-   ],
-   "zanimljivost": "$0,5$ je pet desetina: ${5|10}$, a to se skrati na ${1|2}$. Polovina i $0,5$ su isti broj.",
    "rec": "decimala"
   },
   {
    "lekcija": 24,
    "tezina": 2,
    "pitanje": "U broju $0,37$, koja je cifra desetinki, a koja stotinki?",
-   "mediji": {
+   "odgovori": [
+    "Desetinke 3, stotinke 7",
+    "Desetinke 7, stotinke 3",
+    "Obe su desetinke",
+    "Obe su stotinke"
+   ],
+   "zanimljivost": "Prvo decimalno mesto su desetinke (3), drugo su stotinke (7): $0,37 = {3|10}+{7|100}$.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -32547,20 +32564,20 @@
     ],
     "velicina": 260
    },
-   "odgovori": [
-    "Desetinke 3, stotinke 7",
-    "Desetinke 7, stotinke 3",
-    "Obe su desetinke",
-    "Obe su stotinke"
-   ],
-   "zanimljivost": "Prvo decimalno mesto su desetinke (3), drugo su stotinke (7): $0,37 = {3|10}+{7|100}$.",
    "rec": "decimala"
   },
   {
    "lekcija": 24,
    "tezina": 3,
    "pitanje": "Koliko decimalnih mesta ima broj $0,075$?",
-   "mediji": {
+   "odgovori": [
+    "3",
+    "2",
+    "4",
+    "1"
+   ],
+   "zanimljivost": "Decimale su sve cifre desno od zareza: 0, 7 i 5 – ukupno 3 decimalna mesta (hiljaditinke).",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -32592,20 +32609,20 @@
     ],
     "velicina": 300
    },
-   "odgovori": [
-    "3",
-    "2",
-    "4",
-    "1"
-   ],
-   "zanimljivost": "Decimale su sve cifre desno od zareza: 0, 7 i 5 – ukupno 3 decimalna mesta (hiljaditinke).",
    "rec": "decimala"
   },
   {
    "lekcija": 25,
    "tezina": 1,
    "pitanje": "Šta je veće: $0,5$ ili $0,45$?",
-   "mediji": {
+   "odgovori": [
+    "$0,5$",
+    "$0,45$",
+    "Jednaki su",
+    "Ne može se uporediti"
+   ],
+   "zanimljivost": "Dopišemo nulu da imaju isti broj decimala: $0,50$ i $0,45$. Pošto je $50 > 45$, veći je $0,5$.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -37238,20 +37255,20 @@
     ],
     "velicina": 320
    },
-   "odgovori": [
-    "$0,5$",
-    "$0,45$",
-    "Jednaki su",
-    "Ne može se uporediti"
-   ],
-   "zanimljivost": "Dopišemo nulu da imaju isti broj decimala: $0,50$ i $0,45$. Pošto je $50 > 45$, veći je $0,5$.",
    "rec": "decimala"
   },
   {
    "lekcija": 25,
    "tezina": 2,
    "pitanje": "Zaokrugli broj $3,78$ na jednu decimalu.",
-   "mediji": {
+   "odgovori": [
+    "$3,8$",
+    "$3,7$",
+    "$3,78$",
+    "$4$"
+   ],
+   "zanimljivost": "Gledamo cifru iza prve decimale: to je 8, a 8 je veće ili jednako 5, pa prvu decimalu povećavamo: $3,8$.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -37305,20 +37322,20 @@
     ],
     "velicina": 320
    },
-   "odgovori": [
-    "$3,8$",
-    "$3,7$",
-    "$3,78$",
-    "$4$"
-   ],
-   "zanimljivost": "Gledamo cifru iza prve decimale: to je 8, a 8 je veće ili jednako 5, pa prvu decimalu povećavamo: $3,8$.",
    "rec": "približno"
   },
   {
    "lekcija": 25,
    "tezina": 2,
    "pitanje": "Zaokrugli broj $2,34$ na jednu decimalu.",
-   "mediji": {
+   "odgovori": [
+    "$2,3$",
+    "$2,4$",
+    "$2,34$",
+    "$2$"
+   ],
+   "zanimljivost": "Cifra iza prve decimale je 4, a 4 je manje od 5, pa prva decimala ostaje ista: $2,3$.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -37372,20 +37389,20 @@
     ],
     "velicina": 320
    },
-   "odgovori": [
-    "$2,3$",
-    "$2,4$",
-    "$2,34$",
-    "$2$"
-   ],
-   "zanimljivost": "Cifra iza prve decimale je 4, a 4 je manje od 5, pa prva decimala ostaje ista: $2,3$.",
    "rec": "približno"
   },
   {
    "lekcija": 25,
    "tezina": 2,
    "pitanje": "Zaokrugli broj $6,5$ na ceo broj.",
-   "mediji": {
+   "odgovori": [
+    "7",
+    "6",
+    "6,5",
+    "10"
+   ],
+   "zanimljivost": "Cifra iza zareza je 5, pa broj zaokrugljujemo naviše: $6,5 ≈ 7$.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -37439,20 +37456,20 @@
     ],
     "velicina": 300
    },
-   "odgovori": [
-    "7",
-    "6",
-    "6,5",
-    "10"
-   ],
-   "zanimljivost": "Cifra iza zareza je 5, pa broj zaokrugljujemo naviše: $6,5 ≈ 7$.",
    "rec": "približno"
   },
   {
    "lekcija": 25,
    "tezina": 3,
    "pitanje": "Poređaj od najmanjeg ka najvećem: $0,7$, $0,17$, $0,07$.",
-   "mediji": {
+   "odgovori": [
+    "$0,07 < 0,17 < 0,7$",
+    "$0,7 < 0,17 < 0,07$",
+    "$0,17 < 0,07 < 0,7$",
+    "Svi su jednaki"
+   ],
+   "zanimljivost": "Upišemo iste brojeve decimala: $0,70$, $0,17$, $0,07$. Redom od najmanjeg: $0,07$, pa $0,17$, pa $0,70$.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -37544,20 +37561,20 @@
     ],
     "velicina": 320
    },
-   "odgovori": [
-    "$0,07 < 0,17 < 0,7$",
-    "$0,7 < 0,17 < 0,07$",
-    "$0,17 < 0,07 < 0,7$",
-    "Svi su jednaki"
-   ],
-   "zanimljivost": "Upišemo iste brojeve decimala: $0,70$, $0,17$, $0,07$. Redom od najmanjeg: $0,07$, pa $0,17$, pa $0,70$.",
    "rec": "decimala"
   },
   {
    "lekcija": 25,
    "tezina": 3,
    "pitanje": "U broju $12,347$, koja cifra je na mestu stotinki?",
-   "mediji": {
+   "odgovori": [
+    "4",
+    "3",
+    "7",
+    "2"
+   ],
+   "zanimljivost": "Decimale redom: 3 su desetinke, 4 su stotinke, 7 su hiljaditinke. Dakle, stotinke su cifra 4.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -37607,13 +37624,6 @@
     ],
     "velicina": 300
    },
-   "odgovori": [
-    "4",
-    "3",
-    "7",
-    "2"
-   ],
-   "zanimljivost": "Decimale redom: 3 su desetinke, 4 su stotinke, 7 su hiljaditinke. Dakle, stotinke su cifra 4.",
    "rec": "decimala"
   },
   {
@@ -37667,7 +37677,14 @@
    "lekcija": 26,
    "tezina": 1,
    "pitanje": "Kako se zove zajednička početna tačka krakova ugla?",
-   "mediji": {
+   "odgovori": [
+    "Teme",
+    "Krak",
+    "Stranica",
+    "Centar"
+   ],
+   "zanimljivost": "Teme je tačka iz koje polaze oba kraka ugla. Ugao $∠ AOB$ ima teme u tački O.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "A": [
@@ -37705,13 +37722,6 @@
     ],
     "velicina": 240
    },
-   "odgovori": [
-    "Teme",
-    "Krak",
-    "Stranica",
-    "Centar"
-   ],
-   "zanimljivost": "Teme je tačka iz koje polaze oba kraka ugla. Ugao $∠ AOB$ ima teme u tački O.",
    "rec": "teme"
   },
   {
@@ -37813,7 +37823,14 @@
    "lekcija": 26,
    "tezina": 2,
    "pitanje": "Šta je CENTRALNI ugao?",
-   "mediji": {
+   "odgovori": [
+    "Ugao čije je teme u centru kružnice",
+    "Ugao na vrhu trougla",
+    "Ugao od 90°",
+    "Ugao veći od 180°"
+   ],
+   "zanimljivost": "Centralni ugao ima teme u centru kružnice, a kraci su mu poluprečnici. Njegovi kraci na kružnici odsecaju luk.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -37866,13 +37883,6 @@
     ],
     "velicina": 260
    },
-   "odgovori": [
-    "Ugao čije je teme u centru kružnice",
-    "Ugao na vrhu trougla",
-    "Ugao od 90°",
-    "Ugao veći od 180°"
-   ],
-   "zanimljivost": "Centralni ugao ima teme u centru kružnice, a kraci su mu poluprečnici. Njegovi kraci na kružnici odsecaju luk.",
    "rec": "ugao"
   },
   {
@@ -38017,7 +38027,14 @@
    "lekcija": 27,
    "tezina": 1,
    "pitanje": "Kojim priborom najlakše prenosiš (meriš) ugao?",
-   "mediji": {
+   "odgovori": [
+    "Uglomerom",
+    "Lenjirom",
+    "Šestarom",
+    "Trouglom"
+   ],
+   "zanimljivost": "Uglomer je polukrug sa podelom u stepenima – njime merimo i prenosimo uglove. Šestar i lenjir takođe mogu, ali sporije.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -38563,20 +38580,20 @@
     ],
     "velicina": 260
    },
-   "odgovori": [
-    "Uglomerom",
-    "Lenjirom",
-    "Šestarom",
-    "Trouglom"
-   ],
-   "zanimljivost": "Uglomer je polukrug sa podelom u stepenima – njime merimo i prenosimo uglove. Šestar i lenjir takođe mogu, ali sporije.",
    "rec": "uglomer"
   },
   {
    "lekcija": 27,
    "tezina": 1,
    "pitanje": "Šta znači NADOVEZATI uglove?",
-   "mediji": {
+   "odgovori": [
+    "Postaviti jedan ugao uz drugi, krak do kraka",
+    "Postaviti ih jedan preko drugog",
+    "Nacrtati ih daleko",
+    "Sabrati im temena"
+   ],
+   "zanimljivost": "Nadovezivanje: jedan krak drugog ugla postavimo na krak prvog, tako da se uglovi nastave jedan na drugi. Njihove veličine se tada sabiraju.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -38636,13 +38653,6 @@
     ],
     "velicina": 260
    },
-   "odgovori": [
-    "Postaviti jedan ugao uz drugi, krak do kraka",
-    "Postaviti ih jedan preko drugog",
-    "Nacrtati ih daleko",
-    "Sabrati im temena"
-   ],
-   "zanimljivost": "Nadovezivanje: jedan krak drugog ugla postavimo na krak prvog, tako da se uglovi nastave jedan na drugi. Njihove veličine se tada sabiraju.",
    "rec": "ugao"
   },
   {
@@ -38796,7 +38806,7 @@
      {
       "u": "BOC",
       "b": 2,
-      "o": "50°"
+      "o": "?"
      }
     ],
     "bezImena": [
@@ -38860,12 +38870,12 @@
      {
       "u": "AOB",
       "b": 1,
-      "o": "45°"
+      "o": "?"
      },
      {
       "u": "BOC",
       "b": 2,
-      "o": "45°"
+      "o": "?"
      },
      {
       "pu": "AOC"
@@ -38937,7 +38947,14 @@
    "lekcija": 28,
    "tezina": 1,
    "pitanje": "Kako se zove ugao od tačno 90°?",
-   "mediji": {
+   "odgovori": [
+    "Prav ugao",
+    "Oštar ugao",
+    "Tup ugao",
+    "Pun ugao"
+   ],
+   "zanimljivost": "Prav ugao ima tačno 90°. Označavamo ga malim kvadratićem u temenu. Ivice kvadrata zaklapaju prave uglove.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "A": [
@@ -38974,13 +38991,6 @@
     ],
     "velicina": 240
    },
-   "odgovori": [
-    "Prav ugao",
-    "Oštar ugao",
-    "Tup ugao",
-    "Pun ugao"
-   ],
-   "zanimljivost": "Prav ugao ima tačno 90°. Označavamo ga malim kvadratićem u temenu. Ivice kvadrata zaklapaju prave uglove.",
    "rec": "prav"
   },
   {
@@ -39102,6 +39112,39 @@
       "b": 1,
       "pun": 1,
       "gusto": 1
+     }
+    ],
+    "bezImena": [
+     "O"
+    ],
+    "velicina": 240
+   },
+   "odgovori": [
+    "360°",
+    "180°",
+    "90°",
+    "270°"
+   ],
+   "zanimljivost": "Pun ugao ima 360° – to je ceo krug. Krak se obiđe ceo krug i vrati na početak.",
+   "medijiOdgovora": {
+    "vrsta": "geo",
+    "t": {
+     "O": [
+      0,
+      0
+     ],
+     "A": [
+      3,
+      0
+     ]
+    },
+    "e": [
+     {
+      "kr": "O",
+      "r": 3,
+      "b": 1,
+      "pun": 1,
+      "gusto": 1
      },
      {
       "tx": "360°",
@@ -39117,13 +39160,6 @@
     ],
     "velicina": 240
    },
-   "odgovori": [
-    "360°",
-    "180°",
-    "90°",
-    "270°"
-   ],
-   "zanimljivost": "Pun ugao ima 360° – to je ceo krug. Krak se obiđe ceo krug i vrati na početak.",
    "rec": "pun"
   },
   {
@@ -39142,8 +39178,8 @@
       0
      ],
      "C": [
-      0,
-      4
+      -2.294,
+      3.277
      ]
     },
     "e": [
@@ -39160,21 +39196,18 @@
      {
       "u": "BAC",
       "b": 0
-     },
-     {
-      "pu": "BAC"
      }
     ],
     "velicina": 240
    },
    "odgovori": [
-    "Prav ugao (90°)",
-    "Oštar ugao",
     "Tup ugao",
+    "Oštar ugao",
+    "Prav ugao",
     "Opružen ugao"
    ],
-   "zanimljivost": "Krak je uspravan u odnosu na drugi, a kvadratić u temenu označava prav ugao od 90°.",
-   "rec": "prav"
+   "zanimljivost": "Krak je otvoren više od pravog ugla, a manje od opruženog – to je tup ugao (između 90° i 180°).",
+   "rec": "tup"
   },
   {
    "lekcija": 28,
@@ -39850,7 +39883,14 @@
    "lekcija": 29,
    "tezina": 1,
    "pitanje": "Koliko minuta ima jedan stepen?",
-   "mediji": {
+   "odgovori": [
+    "60",
+    "100",
+    "10",
+    "360"
+   ],
+   "zanimljivost": "Jedan stepen deli se na 60 minuta ($60'$), a jedan minut na 60 sekundi ($60\"$). Isto kao kod sata!",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -39881,20 +39921,20 @@
     ],
     "velicina": 300
    },
-   "odgovori": [
-    "60",
-    "100",
-    "10",
-    "360"
-   ],
-   "zanimljivost": "Jedan stepen deli se na 60 minuta ($60'$), a jedan minut na 60 sekundi ($60\"$). Isto kao kod sata!",
    "rec": "minut"
   },
   {
    "lekcija": 29,
    "tezina": 2,
    "pitanje": "Koliko stepeni ima opružen ugao?",
-   "mediji": {
+   "odgovori": [
+    "180°",
+    "90°",
+    "360°",
+    "45°"
+   ],
+   "zanimljivost": "Opružen ugao ima 180° – pola punog kruga. Dva prava ugla zajedno daju opružen ugao.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "A": [
@@ -39929,54 +39969,12 @@
     ],
     "velicina": 240
    },
-   "odgovori": [
-    "180°",
-    "90°",
-    "360°",
-    "45°"
-   ],
-   "zanimljivost": "Opružen ugao ima 180° – pola punog kruga. Dva prava ugla zajedno daju opružen ugao.",
    "rec": "stepen"
   },
   {
    "lekcija": 29,
    "tezina": 2,
    "pitanje": "Koliko je $30° + 45°$?",
-   "mediji": {
-    "vrsta": "geo",
-    "t": {
-     "A": [
-      0,
-      0
-     ],
-     "B": [
-      4,
-      0
-     ],
-     "C": [
-      1.035,
-      3.864
-     ]
-    },
-    "e": [
-     {
-      "d": "AB",
-      "b": 0,
-      "debljina": 3
-     },
-     {
-      "d": "AC",
-      "b": 0,
-      "debljina": 3
-     },
-     {
-      "u": "BAC",
-      "b": 0,
-      "o": "75°"
-     }
-    ],
-    "velicina": 240
-   },
    "odgovori": [
     "75°",
     "60°",
@@ -39990,41 +39988,6 @@
    "lekcija": 29,
    "tezina": 2,
    "pitanje": "Koliko je $120° - 40°$?",
-   "mediji": {
-    "vrsta": "geo",
-    "t": {
-     "A": [
-      0,
-      0
-     ],
-     "B": [
-      4,
-      0
-     ],
-     "C": [
-      0.695,
-      3.939
-     ]
-    },
-    "e": [
-     {
-      "d": "AB",
-      "b": 0,
-      "debljina": 3
-     },
-     {
-      "d": "AC",
-      "b": 0,
-      "debljina": 3
-     },
-     {
-      "u": "BAC",
-      "b": 0,
-      "o": "80°"
-     }
-    ],
-    "velicina": 240
-   },
    "odgovori": [
     "80°",
     "70°",
@@ -40038,41 +40001,6 @@
    "lekcija": 29,
    "tezina": 3,
    "pitanje": "Koliko stepeni ima ugao koji je polovina pravog ugla?",
-   "mediji": {
-    "vrsta": "geo",
-    "t": {
-     "A": [
-      0,
-      0
-     ],
-     "B": [
-      4,
-      0
-     ],
-     "C": [
-      2.828,
-      2.828
-     ]
-    },
-    "e": [
-     {
-      "d": "AB",
-      "b": 0,
-      "debljina": 3
-     },
-     {
-      "d": "AC",
-      "b": 0,
-      "debljina": 3
-     },
-     {
-      "u": "BAC",
-      "b": 0,
-      "o": "45°"
-     }
-    ],
-    "velicina": 240
-   },
    "odgovori": [
     "45°",
     "30°",
@@ -40140,57 +40068,6 @@
    "lekcija": 30,
    "tezina": 1,
    "pitanje": "Kako se zovu uglovi koji su jedan NASPRAM drugog pri preseku dve prave?",
-   "mediji": {
-    "vrsta": "geo",
-    "t": {
-     "A": [
-      -3,
-      -1.3989229744649958
-     ],
-     "B": [
-      3,
-      1.3989229744649958
-     ],
-     "C": [
-      -3,
-      1.3989229744649958
-     ],
-     "D": [
-      3,
-      -1.3989229744649958
-     ],
-     "O": [
-      0,
-      0
-     ]
-    },
-    "e": [
-     {
-      "d": "AB",
-      "b": 1,
-      "debljina": 3
-     },
-     {
-      "d": "CD",
-      "b": 2,
-      "debljina": 3
-     },
-     {
-      "u": "AOC",
-      "b": 1,
-      "o": "α"
-     },
-     {
-      "u": "BOD",
-      "b": 1,
-      "o": "α"
-     }
-    ],
-    "bezImena": [
-     "O"
-    ],
-    "velicina": 260
-   },
    "odgovori": [
     "Unakrsni uglovi",
     "Uporedni uglovi",
@@ -40198,13 +40075,7 @@
     "Naizmenični uglovi"
    ],
    "zanimljivost": "Unakrsni uglovi se nalaze „preko puta“ presečne tačke – kraci jednog su produžeci krakova drugog.",
-   "rec": "unakrsni"
-  },
-  {
-   "lekcija": 30,
-   "tezina": 2,
-   "pitanje": "Šta važi za unakrsne uglove?",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "A": [
@@ -40255,6 +40126,12 @@
     ],
     "velicina": 260
    },
+   "rec": "unakrsni"
+  },
+  {
+   "lekcija": 30,
+   "tezina": 2,
+   "pitanje": "Šta važi za unakrsne uglove?",
    "odgovori": [
     "Oni su jednaki",
     "Oni su komplementni",
@@ -40262,6 +40139,57 @@
     "Oni su oštri"
    ],
    "zanimljivost": "Unakrsni uglovi su uvek jednaki. Ako jedan ima 70°, njemu unakrsni ugao takođe ima 70°.",
+   "medijiOdgovora": {
+    "vrsta": "geo",
+    "t": {
+     "A": [
+      -3,
+      -1.3989229744649958
+     ],
+     "B": [
+      3,
+      1.3989229744649958
+     ],
+     "C": [
+      -3,
+      1.3989229744649958
+     ],
+     "D": [
+      3,
+      -1.3989229744649958
+     ],
+     "O": [
+      0,
+      0
+     ]
+    },
+    "e": [
+     {
+      "d": "AB",
+      "b": 1,
+      "debljina": 3
+     },
+     {
+      "d": "CD",
+      "b": 2,
+      "debljina": 3
+     },
+     {
+      "u": "AOC",
+      "b": 1,
+      "o": "α"
+     },
+     {
+      "u": "BOD",
+      "b": 1,
+      "o": "α"
+     }
+    ],
+    "bezImena": [
+     "O"
+    ],
+    "velicina": 260
+   },
    "rec": "unakrsni"
   },
   {
@@ -40332,7 +40260,14 @@
    "lekcija": 30,
    "tezina": 2,
    "pitanje": "Ako jedan unakrsni ugao ima 55°, koliki je njemu unakrsni ugao?",
-   "mediji": {
+   "odgovori": [
+    "55°",
+    "125°",
+    "35°",
+    "90°"
+   ],
+   "zanimljivost": "Unakrsni uglovi su jednaki, pa i drugi ima 55°. Ugao uporedan sa njima imao bi $180° - 55° = 125°$.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "A": [
@@ -40383,20 +40318,20 @@
     ],
     "velicina": 260
    },
-   "odgovori": [
-    "55°",
-    "125°",
-    "35°",
-    "90°"
-   ],
-   "zanimljivost": "Unakrsni uglovi su jednaki, pa i drugi ima 55°. Ugao uporedan sa njima imao bi $180° - 55° = 125°$.",
    "rec": "unakrsni"
   },
   {
    "lekcija": 30,
    "tezina": 3,
    "pitanje": "Pri preseku dve prave, jedan ugao ima 120°. Koliki je njemu UPOREDAN ugao?",
-   "mediji": {
+   "odgovori": [
+    "60°",
+    "120°",
+    "30°",
+    "90°"
+   ],
+   "zanimljivost": "Uporedni uglovi se dopunjuju do 180°: $180° - 120° = 60°$. Unakrsni ugao bi bio 120° (jednak polaznom).",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "A": [
@@ -40447,13 +40382,6 @@
     ],
     "velicina": 260
    },
-   "odgovori": [
-    "60°",
-    "120°",
-    "30°",
-    "90°"
-   ],
-   "zanimljivost": "Uporedni uglovi se dopunjuju do 180°: $180° - 120° = 60°$. Unakrsni ugao bi bio 120° (jednak polaznom).",
    "rec": "uporedan"
   },
   {
@@ -40531,7 +40459,14 @@
    "lekcija": 31,
    "tezina": 1,
    "pitanje": "Uglovi koji su sa iste strane transverzale i na istim mestima uz paralele zovu se…",
-   "mediji": {
+   "odgovori": [
+    "Saglasni uglovi",
+    "Unakrsni uglovi",
+    "Uporedni uglovi",
+    "Komplementni uglovi"
+   ],
+   "zanimljivost": "Saglasni uglovi su na istim „položajima“ u odnosu na transverzalu – jedan gore levo, drugi dole levo, na primer.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "A": [
@@ -40599,13 +40534,6 @@
     ],
     "velicina": 300
    },
-   "odgovori": [
-    "Saglasni uglovi",
-    "Unakrsni uglovi",
-    "Uporedni uglovi",
-    "Komplementni uglovi"
-   ],
-   "zanimljivost": "Saglasni uglovi su na istim „položajima“ u odnosu na transverzalu – jedan gore levo, drugi dole levo, na primer.",
    "rec": "saglasni"
   },
   {
@@ -40693,7 +40621,14 @@
    "lekcija": 31,
    "tezina": 2,
    "pitanje": "Uglovi na suprotnim stranama transverzale, između paralelnih pravih, zovu se…",
-   "mediji": {
+   "odgovori": [
+    "Naizmenični uglovi",
+    "Saglasni uglovi",
+    "Unakrsni uglovi",
+    "Prav uglovi"
+   ],
+   "zanimljivost": "Naizmenični uglovi su „u cik-cak“ položaju: jedan iznad, drugi ispod, sa suprotnih strana transverzale.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "A": [
@@ -40761,13 +40696,6 @@
     ],
     "velicina": 300
    },
-   "odgovori": [
-    "Naizmenični uglovi",
-    "Saglasni uglovi",
-    "Unakrsni uglovi",
-    "Prav uglovi"
-   ],
-   "zanimljivost": "Naizmenični uglovi su „u cik-cak“ položaju: jedan iznad, drugi ispod, sa suprotnih strana transverzale.",
    "rec": "naizmeničan"
   },
   {
@@ -40876,18 +40804,18 @@
      ],
      "E": [
       -1.5,
-      -4.121216129181932
+      -2.598076211353315
      ],
      "F": [
       1.5,
-      4.121216129181932
+      2.598076211353315
      ],
      "P": [
-      0.5459553513993036,
+      0.8660254037844389,
       1.5
      ],
      "Q": [
-      -0.5459553513993036,
+      -0.8660254037844389,
       -1.5
      ]
     },
@@ -40910,12 +40838,12 @@
      {
       "u": "FPB",
       "b": 1,
-      "o": "70°"
+      "o": "α"
      },
      {
       "u": "FQD",
       "b": 1,
-      "o": "70°"
+      "o": "α"
      }
     ],
     "bezImena": [
@@ -40936,10 +40864,6 @@
    "lekcija": 32,
    "tezina": 1,
    "pitanje": "Kako sabiraš razlomke sa ISTIM imeniocem?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "a/c + b/c = (a + b)/c"
-   },
    "odgovori": [
     "Sabereš brojioce, a imenilac ostaje isti",
     "Sabereš i brojioce i imenioce",
@@ -40947,13 +40871,24 @@
     "Oduzmeš imenioce"
    ],
    "zanimljivost": "Kad su imenioci isti, samo sabereš brojioce: ${1|5}+{2|5}={3|5}$. Imenilac se ne menja.",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$\\frac{a}{c}+\\frac{b}{c}=\\frac{a+b}{c}$"
+   },
    "rec": "sabiranje"
   },
   {
    "lekcija": 32,
    "tezina": 1,
    "pitanje": "Koliko je ${1|5} + {2|5}$?",
-   "mediji": {
+   "odgovori": [
+    "${3|5}$",
+    "${3|10}$",
+    "${2|5}$",
+    "${5|5}$"
+   ],
+   "zanimljivost": "Isti imenilac, pa sabiramo brojioce: $1+2=3$, a imenilac ostaje 5. Rezultat je ${3|5}$.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -41340,20 +41275,20 @@
     ],
     "velicina": 320
    },
-   "odgovori": [
-    "${3|5}$",
-    "${3|10}$",
-    "${2|5}$",
-    "${5|5}$"
-   ],
-   "zanimljivost": "Isti imenilac, pa sabiramo brojioce: $1+2=3$, a imenilac ostaje 5. Rezultat je ${3|5}$.",
    "rec": "sabiranje"
   },
   {
    "lekcija": 32,
    "tezina": 1,
    "pitanje": "Koliko je ${3|7} - {1|7}$?",
-   "mediji": {
+   "odgovori": [
+    "${2|7}$",
+    "${4|7}$",
+    "${2|14}$",
+    "${3|7}$"
+   ],
+   "zanimljivost": "Oduzimamo brojioce: $3-1=2$, imenilac ostaje 7. Rezultat je ${2|7}$.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -41878,20 +41813,20 @@
     ],
     "velicina": 320
    },
-   "odgovori": [
-    "${2|7}$",
-    "${4|7}$",
-    "${2|14}$",
-    "${3|7}$"
-   ],
-   "zanimljivost": "Oduzimamo brojioce: $3-1=2$, imenilac ostaje 7. Rezultat je ${2|7}$.",
    "rec": "oduzimanje"
   },
   {
    "lekcija": 32,
    "tezina": 2,
    "pitanje": "Šta prvo moraš da uradiš da bi sabrao razlomke sa RAZLIČITIM imeniocima?",
-   "mediji": {
+   "odgovori": [
+    "Svedeš ih na zajednički imenilac",
+    "Sabereš imenioce",
+    "Pomnožiš brojioce",
+    "Oduzmeš imenioce"
+   ],
+   "zanimljivost": "Razlomci sa različitim imeniocima prvo se prošire tako da imaju isti imenilac (najbolje NZS), pa se tek onda saberu.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -42347,20 +42282,20 @@
     ],
     "velicina": 320
    },
-   "odgovori": [
-    "Svedeš ih na zajednički imenilac",
-    "Sabereš imenioce",
-    "Pomnožiš brojioce",
-    "Oduzmeš imenioce"
-   ],
-   "zanimljivost": "Razlomci sa različitim imeniocima prvo se prošire tako da imaju isti imenilac (najbolje NZS), pa se tek onda saberu.",
    "rec": "imenilac"
   },
   {
    "lekcija": 32,
    "tezina": 2,
    "pitanje": "Koji je zajednički imenilac za ${1|2}$ i ${1|3}$?",
-   "mediji": {
+   "odgovori": [
+    "6",
+    "5",
+    "2",
+    "3"
+   ],
+   "zanimljivost": "Najmanji zajednički sadržalac brojeva 2 i 3 je 6. Zato ${1|2}={3|6}$, a ${1|3}={2|6}$.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -42766,13 +42701,6 @@
     ],
     "velicina": 320
    },
-   "odgovori": [
-    "6",
-    "5",
-    "2",
-    "3"
-   ],
-   "zanimljivost": "Najmanji zajednički sadržalac brojeva 2 i 3 je 6. Zato ${1|2}={3|6}$, a ${1|3}={2|6}$.",
    "rec": "imenilac"
   },
   {
@@ -42991,10 +42919,6 @@
    "lekcija": 33,
    "tezina": 1,
    "pitanje": "Kako pravilno potpisuješ decimalne brojeve pri sabiranju?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "0,3 + 0,4 = 0,7"
-   },
    "odgovori": [
     "Zarez ispod zareza",
     "Prvi broj ispod drugog",
@@ -43002,13 +42926,24 @@
     "Cifru ispod cifre sleva"
    ],
    "zanimljivost": "Pri potpisivanju decimalnih brojeva, decimalni zarezi moraju biti tačno jedan ispod drugog – tako se saberu desetinke sa desetinkama, stotinke sa stotinkama…",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$0,\\!3+0,\\!4=0,\\!7$"
+   },
    "rec": "decimala"
   },
   {
    "lekcija": 33,
    "tezina": 1,
    "pitanje": "Koliko je $0,3 + 0,4$?",
-   "mediji": {
+   "odgovori": [
+    "$0,7$",
+    "$0,07$",
+    "$0,34$",
+    "$7$"
+   ],
+   "zanimljivost": "Tri desetinke plus četiri desetinke je sedam desetinki: $0,3+0,4=0,7$.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -43740,20 +43675,20 @@
     ],
     "velicina": 320
    },
-   "odgovori": [
-    "$0,7$",
-    "$0,07$",
-    "$0,34$",
-    "$7$"
-   ],
-   "zanimljivost": "Tri desetinke plus četiri desetinke je sedam desetinki: $0,3+0,4=0,7$.",
    "rec": "sabiranje"
   },
   {
    "lekcija": 33,
    "tezina": 2,
    "pitanje": "Koliko je $0,8 - 0,25$?",
-   "mediji": {
+   "odgovori": [
+    "$0,55$",
+    "$0,5$",
+    "$0,65$",
+    "$0,75$"
+   ],
+   "zanimljivost": "Dopišemo nulu: $0,80 - 0,25 = 0,55$. Zarez ostaje na istom mestu.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -46077,20 +46012,20 @@
     ],
     "velicina": 260
    },
-   "odgovori": [
-    "$0,55$",
-    "$0,5$",
-    "$0,65$",
-    "$0,75$"
-   ],
-   "zanimljivost": "Dopišemo nulu: $0,80 - 0,25 = 0,55$. Zarez ostaje na istom mestu.",
    "rec": "oduzimanje"
   },
   {
    "lekcija": 33,
    "tezina": 2,
    "pitanje": "Zašto pri oduzimanju decimala ponekad dopisujemo nule?",
-   "mediji": {
+   "odgovori": [
+    "Da bi brojevi imali isti broj decimala",
+    "Da bi broj bio veći",
+    "Da bi zarez nestao",
+    "Nule se nikad ne dopisuju"
+   ],
+   "zanimljivost": "Dopisivanjem nula na kraju decimalnog broja ne menja se njegova vrednost, a lakše je oduzimati: $0,8=0,80$.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -48653,20 +48588,20 @@
     ],
     "velicina": 320
    },
-   "odgovori": [
-    "Da bi brojevi imali isti broj decimala",
-    "Da bi broj bio veći",
-    "Da bi zarez nestao",
-    "Nule se nikad ne dopisuju"
-   ],
-   "zanimljivost": "Dopisivanjem nula na kraju decimalnog broja ne menja se njegova vrednost, a lakše je oduzimati: $0,8=0,80$.",
    "rec": "decimala"
   },
   {
    "lekcija": 33,
    "tezina": 3,
    "pitanje": "Koliko je $1 - 0,37$?",
-   "mediji": {
+   "odgovori": [
+    "$0,63$",
+    "$0,73$",
+    "$0,37$",
+    "$1,37$"
+   ],
+   "zanimljivost": "Zapišemo $1$ kao $1,00$, pa oduzmemo: $1,00-0,37=0,63$.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -50990,23 +50925,12 @@
     ],
     "velicina": 260
    },
-   "odgovori": [
-    "$0,63$",
-    "$0,73$",
-    "$0,37$",
-    "$1,37$"
-   ],
-   "zanimljivost": "Zapišemo $1$ kao $1,00$, pa oduzmemo: $1,00-0,37=0,63$.",
    "rec": "oduzimanje"
   },
   {
    "lekcija": 34,
    "tezina": 1,
    "pitanje": "U brojevnom izrazu, šta se računa PRVO?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "(2 + 3)·4 = 20"
-   },
    "odgovori": [
     "Operacije u zagradama",
     "Sabiranje i oduzimanje",
@@ -51014,16 +50938,16 @@
     "Sleva nadesno uvek"
    ],
    "zanimljivost": "Prvo se računa ono što je u zagradama, zatim množenje i deljenje, pa tek onda sabiranje i oduzimanje.",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$(2+3)\\cdot4=20$"
+   },
    "rec": "zagrada"
   },
   {
    "lekcija": 34,
    "tezina": 2,
    "pitanje": "U izrazu $6 + 4 · 3$, šta računaš prvo?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "6 + 4·3 = 6 + 12 = 18"
-   },
    "odgovori": [
     "Množenje $4·3$",
     "Sabiranje $6+4$",
@@ -51031,6 +50955,10 @@
     "Oduzimanje"
    ],
    "zanimljivost": "Množenje ima prednost nad sabiranjem: $6+4·3=6+12=18$.",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$6+4\\cdot3=6+12=18$"
+   },
    "rec": "redosled"
   },
   {
@@ -51409,18 +51337,18 @@
   {
    "lekcija": 34,
    "tezina": 3,
-   "pitanje": "Koliko je $8 : 2 · (2+2)$?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "8:2·(2 + 2) = 16"
-   },
+   "pitanje": "Koliko je $12 - 3 · 2 + 4$?",
    "odgovori": [
-    "16",
-    "1",
-    "8",
-    "4"
+    "10",
+    "22",
+    "18",
+    "6"
    ],
-   "zanimljivost": "Prvo zagrada: $2+2=4$, pa redom sleva nadesno: $8:2=4$, pa $4·4=16$. Deljenje i množenje su istog reda – idemo redom.",
+   "zanimljivost": "Prvo množenje: $3·2=6$, pa $12-6=6$, pa $6+4=10$. Računanje redom sleva nadesno daje 22, a to je greška – množenje ide pre sabiranja i oduzimanja.",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$12-3\\cdot2+4=10$"
+   },
    "rec": "redosled"
   },
   {
@@ -51461,10 +51389,6 @@
    "lekcija": 35,
    "tezina": 1,
    "pitanje": "Kako nalaziš nepoznati sabirak?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "x + 3 = 7 ⇒ x = 7 − 3 = 4"
-   },
    "odgovori": [
     "Od zbira oduzmeš poznati sabirak",
     "Zbiru dodaš poznati sabirak",
@@ -51472,13 +51396,24 @@
     "Podeliš zbir sabirkom"
    ],
    "zanimljivost": "Ako je $x + 3 = 7$, onda je $x = 7 - 3 = 4$. Nepoznati sabirak je zbir minus poznati sabirak.",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$x+3=7 \\Rightarrow x=7-3=4$"
+   },
    "rec": "jednačina"
   },
   {
    "lekcija": 35,
    "tezina": 2,
    "pitanje": "Koji broj je rešenje jednačine $x + 3 = 7$?",
-   "mediji": {
+   "odgovori": [
+    "4",
+    "3",
+    "7",
+    "10"
+   ],
+   "zanimljivost": "$x = 7 - 3 = 4$. Provera: $4 + 3 = 7$ – tačno!",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -51524,23 +51459,12 @@
     ],
     "velicina": 300
    },
-   "odgovori": [
-    "4",
-    "3",
-    "7",
-    "10"
-   ],
-   "zanimljivost": "$x = 7 - 3 = 4$. Provera: $4 + 3 = 7$ – tačno!",
    "rec": "jednačina"
   },
   {
    "lekcija": 35,
    "tezina": 2,
    "pitanje": "Kako nalaziš nepoznati umanjenik u jednačini $x - 5 = 9$?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "x − 5 = 9 ⇒ x = 14"
-   },
    "odgovori": [
     "Sabereš razliku i umanjilac",
     "Oduzmeš razliku od umanjioca",
@@ -51548,13 +51472,24 @@
     "Pomnožiš razliku i umanjilac"
    ],
    "zanimljivost": "Umanjenik je broj od kog oduzimamo. Nalazimo ga tako što razliku saberemo sa umanjiocem: $x = 9 + 5 = 14$.",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$x-5=9 \\Rightarrow x=14$"
+   },
    "rec": "jednačina"
   },
   {
    "lekcija": 35,
    "tezina": 3,
    "pitanje": "Koji broj je rešenje jednačine $x + {1|2} = 1$?",
-   "mediji": {
+   "odgovori": [
+    "${1|2}$",
+    "${3|2}$",
+    "$1$",
+    "${1|4}$"
+   ],
+   "zanimljivost": "$x = 1 - {1|2} = {1|2}$. Polovina plus polovina daje celo.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -51679,13 +51614,6 @@
     ],
     "velicina": 320
    },
-   "odgovori": [
-    "${1|2}$",
-    "${3|2}$",
-    "$1$",
-    "${1|4}$"
-   ],
-   "zanimljivost": "$x = 1 - {1|2} = {1|2}$. Polovina plus polovina daje celo.",
    "rec": "jednačina"
   },
   {
@@ -51768,7 +51696,14 @@
    "lekcija": 36,
    "tezina": 2,
    "pitanje": "Rešenja nejednačine $x < 5$ su svi brojevi…",
-   "mediji": {
+   "odgovori": [
+    "manji od 5",
+    "veći od 5",
+    "jednaki 5",
+    "veći ili jednaki 5"
+   ],
+   "zanimljivost": "Nejednačinu $x<5$ zadovoljavaju svi brojevi manji od 5: $4, 3, 2, …$ ali ne i sam broj 5.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -51824,23 +51759,12 @@
     ],
     "velicina": 300
    },
-   "odgovori": [
-    "manji od 5",
-    "veći od 5",
-    "jednaki 5",
-    "veći ili jednaki 5"
-   ],
-   "zanimljivost": "Nejednačinu $x<5$ zadovoljavaju svi brojevi manji od 5: $4, 3, 2, …$ ali ne i sam broj 5.",
    "rec": "nejednačina"
   },
   {
    "lekcija": 36,
    "tezina": 2,
    "pitanje": "Koji broj zadovoljava nejednačinu $x + 2 > 5$?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "x + 2>5 ⇒ x>3"
-   },
    "odgovori": [
     "4",
     "3",
@@ -51848,13 +51772,24 @@
     "1"
    ],
    "zanimljivost": "$4+2=6$, a $6>5$ – tačno. Broj 3 bi dao $3+2=5$, a to nije veće od 5.",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$x+2>5 \\Rightarrow x>3$"
+   },
    "rec": "nejednačina"
   },
   {
    "lekcija": 36,
    "tezina": 3,
    "pitanje": "Koja nejednačina opisuje: „broj x je manji ili jednak 7“?",
-   "mediji": {
+   "odgovori": [
+    "$x ≤ 7$",
+    "$x < 7$",
+    "$x ≥ 7$",
+    "$x = 7$"
+   ],
+   "zanimljivost": "Znak $≤$ znači „manje ili jednako“, pa $x ≤ 7$ uključuje i sam broj 7.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -51908,23 +51843,12 @@
     ],
     "velicina": 300
    },
-   "odgovori": [
-    "$x ≤ 7$",
-    "$x < 7$",
-    "$x ≥ 7$",
-    "$x = 7$"
-   ],
-   "zanimljivost": "Znak $≤$ znači „manje ili jednako“, pa $x ≤ 7$ uključuje i sam broj 7.",
    "rec": "nejednačina"
   },
   {
    "lekcija": 37,
    "tezina": 1,
    "pitanje": "Kako množiš dva razlomka?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "a/b·c/d = (a· c)/(b· d)"
-   },
    "odgovori": [
     "Brojilac sa brojiocem, imenilac sa imeniocem",
     "Sabereš brojioce i imenioce",
@@ -51932,165 +51856,16 @@
     "Oduzmeš imenioce"
    ],
    "zanimljivost": "Množenje razlomaka: ${a|b}·{c|d}={a· c|b· d}$. Brojioci se množe međusobno, imenioci takođe.",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$\\frac{a}{b}\\cdot\\frac{c}{d}=\\frac{a\\cdot c}{b\\cdot d}$"
+   },
    "rec": "množenje"
   },
   {
    "lekcija": 37,
    "tezina": 1,
    "pitanje": "Koliko je ${1|2} · {1|3}$?",
-   "mediji": {
-    "vrsta": "geo",
-    "t": {
-     "O": [
-      0,
-      0
-     ]
-    },
-    "e": [
-     {
-      "lin": [
-       [
-        0,
-        0
-       ],
-       [
-        2,
-        0
-       ],
-       [
-        2,
-        2
-       ],
-       [
-        0,
-        2
-       ]
-      ],
-      "zatv": 1,
-      "b": 1,
-      "gusto": 1
-     },
-     {
-      "lin": [
-       [
-        2,
-        0
-       ],
-       [
-        4,
-        0
-       ],
-       [
-        4,
-        2
-       ],
-       [
-        2,
-        2
-       ]
-      ],
-      "zatv": 1,
-      "b": 4,
-      "prazno": 1
-     },
-     {
-      "lin": [
-       [
-        4,
-        0
-       ],
-       [
-        6,
-        0
-       ],
-       [
-        6,
-        2
-       ],
-       [
-        4,
-        2
-       ]
-      ],
-      "zatv": 1,
-      "b": 4,
-      "prazno": 1
-     },
-     {
-      "lin": [
-       [
-        0,
-        2
-       ],
-       [
-        2,
-        2
-       ],
-       [
-        2,
-        4
-       ],
-       [
-        0,
-        4
-       ]
-      ],
-      "zatv": 1,
-      "b": 4,
-      "prazno": 1
-     },
-     {
-      "lin": [
-       [
-        2,
-        2
-       ],
-       [
-        4,
-        2
-       ],
-       [
-        4,
-        4
-       ],
-       [
-        2,
-        4
-       ]
-      ],
-      "zatv": 1,
-      "b": 4,
-      "prazno": 1
-     },
-     {
-      "lin": [
-       [
-        4,
-        2
-       ],
-       [
-        6,
-        2
-       ],
-       [
-        6,
-        4
-       ],
-       [
-        4,
-        4
-       ]
-      ],
-      "zatv": 1,
-      "b": 4,
-      "prazno": 1
-     }
-    ],
-    "bezImena": [
-     "O"
-    ],
-    "velicina": 240
-   },
    "odgovori": [
     "${1|6}$",
     "${2|5}$",
@@ -52098,13 +51873,173 @@
     "${3|2}$"
    ],
    "zanimljivost": "Množimo brojioce: $1·1=1$, i imenioce: $2·3=6$. Polovina trećine je šestina.",
+   "medijiOdgovora": {
+    "vrsta": "geo",
+    "t": {
+     "O": [
+      0,
+      0
+     ]
+    },
+    "e": [
+     {
+      "lin": [
+       [
+        0,
+        0
+       ],
+       [
+        2,
+        0
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        0,
+        2
+       ]
+      ],
+      "zatv": 1,
+      "b": 1,
+      "gusto": 1
+     },
+     {
+      "lin": [
+       [
+        2,
+        0
+       ],
+       [
+        4,
+        0
+       ],
+       [
+        4,
+        2
+       ],
+       [
+        2,
+        2
+       ]
+      ],
+      "zatv": 1,
+      "b": 4,
+      "prazno": 1
+     },
+     {
+      "lin": [
+       [
+        4,
+        0
+       ],
+       [
+        6,
+        0
+       ],
+       [
+        6,
+        2
+       ],
+       [
+        4,
+        2
+       ]
+      ],
+      "zatv": 1,
+      "b": 4,
+      "prazno": 1
+     },
+     {
+      "lin": [
+       [
+        0,
+        2
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        0,
+        4
+       ]
+      ],
+      "zatv": 1,
+      "b": 4,
+      "prazno": 1
+     },
+     {
+      "lin": [
+       [
+        2,
+        2
+       ],
+       [
+        4,
+        2
+       ],
+       [
+        4,
+        4
+       ],
+       [
+        2,
+        4
+       ]
+      ],
+      "zatv": 1,
+      "b": 4,
+      "prazno": 1
+     },
+     {
+      "lin": [
+       [
+        4,
+        2
+       ],
+       [
+        6,
+        2
+       ],
+       [
+        6,
+        4
+       ],
+       [
+        4,
+        4
+       ]
+      ],
+      "zatv": 1,
+      "b": 4,
+      "prazno": 1
+     }
+    ],
+    "bezImena": [
+     "O"
+    ],
+    "velicina": 240
+   },
    "rec": "množenje"
   },
   {
    "lekcija": 37,
    "tezina": 2,
    "pitanje": "Koliko je ${2|3} · {3|4}$?",
-   "mediji": {
+   "odgovori": [
+    "${1|2}$",
+    "${6|7}$",
+    "${5|12}$",
+    "${1|3}$"
+   ],
+   "zanimljivost": "${2|3}·{3|4}={6|12}$, a to se skrati na ${1|2}$. Pre množenja možeš skratiti 3 sa 3 i 2 sa 4.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -52395,23 +52330,12 @@
     ],
     "velicina": 240
    },
-   "odgovori": [
-    "${1|2}$",
-    "${6|7}$",
-    "${5|12}$",
-    "${1|3}$"
-   ],
-   "zanimljivost": "${2|3}·{3|4}={6|12}$, a to se skrati na ${1|2}$. Pre množenja možeš skratiti 3 sa 3 i 2 sa 4.",
    "rec": "množenje"
   },
   {
    "lekcija": 37,
    "tezina": 2,
    "pitanje": "Kako množiš razlomak celim brojem, na primer $2 · {3|5}$?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "2·3/5 = (2·3)/5 = 6/5"
-   },
    "odgovori": [
     "Celi broj pomnožiš samo brojiocem",
     "Celi broj pomnožiš i brojiocem i imeniocem",
@@ -52419,13 +52343,24 @@
     "Oduzmeš celi broj"
    ],
    "zanimljivost": "Celi broj napišemo kao ${2|1}$, pa množimo: ${2|1}·{3|5}={6|5}$. Dakle, samo se brojilac množi.",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$2\\cdot\\frac{3}{5}=\\frac{2\\cdot3}{5}=\\frac{6}{5}$"
+   },
    "rec": "množenje"
   },
   {
    "lekcija": 37,
    "tezina": 3,
    "pitanje": "Koliko je $2 · {3|5}$?",
-   "mediji": {
+   "odgovori": [
+    "${6|5}$",
+    "${5|5}$",
+    "${6|10}$",
+    "${3|5}$"
+   ],
+   "zanimljivost": "$2·{3|5}={6|5}$. To je više od jedne celine: ${6|5}=1{1|5}$.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -52679,23 +52614,12 @@
     ],
     "velicina": 320
    },
-   "odgovori": [
-    "${6|5}$",
-    "${5|5}$",
-    "${6|10}$",
-    "${3|5}$"
-   ],
-   "zanimljivost": "$2·{3|5}={6|5}$. To je više od jedne celine: ${6|5}=1{1|5}$.",
    "rec": "množenje"
   },
   {
    "lekcija": 38,
    "tezina": 1,
    "pitanje": "Kako množiš decimalne brojeve?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "0,2·0,3 = 0,06"
-   },
    "odgovori": [
     "Pomnožiš ih kao cele brojeve, pa izbrojiš decimalna mesta",
     "Pomnožiš samo cele delove",
@@ -52703,13 +52627,24 @@
     "Poravnaš zareze pa pomnožiš"
    ],
    "zanimljivost": "Prvo zanemariš zareze i pomnožiš kao cele brojeve. Zatim u rezultatu odvojiš onoliko decimala koliko ih imaju oba činioca zajedno.",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$0,\\!2\\cdot0,\\!3=0,\\!06$"
+   },
    "rec": "množenje"
   },
   {
    "lekcija": 38,
    "tezina": 1,
    "pitanje": "Koliko je $0,2 · 0,3$?",
-   "mediji": {
+   "odgovori": [
+    "$0,06$",
+    "$0,6$",
+    "$0,5$",
+    "$6$"
+   ],
+   "zanimljivost": "Pomnožimo $2·3=6$. Oba činioca imaju po jednu decimalu, ukupno dve, pa rezultat ima dve decimale: $0,06$.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -55033,20 +54968,20 @@
     ],
     "velicina": 260
    },
-   "odgovori": [
-    "$0,06$",
-    "$0,6$",
-    "$0,5$",
-    "$6$"
-   ],
-   "zanimljivost": "Pomnožimo $2·3=6$. Oba činioca imaju po jednu decimalu, ukupno dve, pa rezultat ima dve decimale: $0,06$.",
    "rec": "množenje"
   },
   {
    "lekcija": 38,
    "tezina": 2,
    "pitanje": "Koliko je $0,5 · 4$?",
-   "mediji": {
+   "odgovori": [
+    "$2$",
+    "$0,2$",
+    "$0,02$",
+    "$20$"
+   ],
+   "zanimljivost": "$0,5·4=2$. Polovina puta 4 je 2 cela. Možeš i ovako: $5·4=20$, pa jedna decimala → $2,0=2$.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -55253,23 +55188,12 @@
     ],
     "velicina": 320
    },
-   "odgovori": [
-    "$2$",
-    "$0,2$",
-    "$0,02$",
-    "$20$"
-   ],
-   "zanimljivost": "$0,5·4=2$. Polovina puta 4 je 2 cela. Možeš i ovako: $5·4=20$, pa jedna decimala → $2,0=2$.",
    "rec": "množenje"
   },
   {
    "lekcija": 38,
    "tezina": 2,
    "pitanje": "Koliko decimalnih mesta ima proizvod $0,12 · 0,3$?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "0,12·0,3 = 0,036"
-   },
    "odgovori": [
     "3",
     "2",
@@ -55277,13 +55201,24 @@
     "4"
    ],
    "zanimljivost": "Prvi činilac ima 2 decimale, drugi 1 – ukupno 3. Zato proizvod $0,036$ ima 3 decimalna mesta.",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$0,\\!12\\cdot0,\\!3=0,\\!036$"
+   },
    "rec": "decimala"
   },
   {
    "lekcija": 38,
    "tezina": 2,
    "pitanje": "Šta se dešava sa decimalnim zarezom kad broj množiš sa 10?",
-   "mediji": {
+   "odgovori": [
+    "Pomera se za jedno mesto udesno",
+    "Pomera se za jedno mesto ulevo",
+    "Ostaje na mestu",
+    "Nestaje uvek"
+   ],
+   "zanimljivost": "Množenje sa 10 pomera zarez za jedno mesto udesno: $0,7·10=7$. Svaka nula u dekadnoj jedinici pomera zarez za jedno mesto.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -55329,20 +55264,20 @@
     ],
     "velicina": 300
    },
-   "odgovori": [
-    "Pomera se za jedno mesto udesno",
-    "Pomera se za jedno mesto ulevo",
-    "Ostaje na mestu",
-    "Nestaje uvek"
-   ],
-   "zanimljivost": "Množenje sa 10 pomera zarez za jedno mesto udesno: $0,7·10=7$. Svaka nula u dekadnoj jedinici pomera zarez za jedno mesto.",
    "rec": "decimala"
   },
   {
    "lekcija": 38,
    "tezina": 3,
    "pitanje": "Koliko je $0,7 · 10$?",
-   "mediji": {
+   "odgovori": [
+    "7",
+    "$0,07$",
+    "$70$",
+    "$0,7$"
+   ],
+   "zanimljivost": "Množenje sa 10 pomera zarez udesno: $0,7 → 7$.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -55388,23 +55323,12 @@
     ],
     "velicina": 300
    },
-   "odgovori": [
-    "7",
-    "$0,07$",
-    "$70$",
-    "$0,7$"
-   ],
-   "zanimljivost": "Množenje sa 10 pomera zarez udesno: $0,7 → 7$.",
    "rec": "decimala"
   },
   {
    "lekcija": 39,
    "tezina": 1,
    "pitanje": "Šta je recipročna vrednost broja?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "a·1/a = 1"
-   },
    "odgovori": [
     "Broj koji pomnožen datim brojem daje 1",
     "Broj koji sabran sa datim daje 1",
@@ -55412,16 +55336,16 @@
     "Kvadrat broja"
    ],
    "zanimljivost": "Recipročna vrednost broja $a$ je ${1|a}$, jer je $a·{1|a}=1$. Na primer, recipročno od 5 je ${1|5}$.",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$a\\cdot\\frac{1}{a}=1$"
+   },
    "rec": "recipročan"
   },
   {
    "lekcija": 39,
    "tezina": 1,
    "pitanje": "Koja je recipročna vrednost razlomka ${2|3}$?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "2/3→3/2"
-   },
    "odgovori": [
     "${3|2}$",
     "${2|3}$",
@@ -55429,16 +55353,16 @@
     "${3|1}$"
    ],
    "zanimljivost": "Recipročnu vrednost razlomka dobijemo zamenom brojioca i imenioca: ${2|3} → {3|2}$.",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$\\frac{2}{3}\\to\\frac{3}{2}$"
+   },
    "rec": "recipročan"
   },
   {
    "lekcija": 39,
    "tezina": 1,
    "pitanje": "Kako deliš razlomke?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "a/b:c/d = a/b·d/c"
-   },
    "odgovori": [
     "Pomnožiš prvi razlomak recipročnom vrednošću drugog",
     "Podeliš brojioce i imenioce",
@@ -55446,13 +55370,24 @@
     "Sabereš razlomke"
    ],
    "zanimljivost": "Deljenje razlomaka pretvaramo u množenje: ${a|b}:{c|d}={a|b}·{d|c}$. Delilac se „obrne“.",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$\\frac{a}{b}:\\frac{c}{d}=\\frac{a}{b}\\cdot\\frac{d}{c}$"
+   },
    "rec": "deljenje"
   },
   {
    "lekcija": 39,
    "tezina": 2,
    "pitanje": "Koliko je ${1|2} : {1|4}$?",
-   "mediji": {
+   "odgovori": [
+    "2",
+    "${1|8}$",
+    "${1|2}$",
+    "$4$"
+   ],
+   "zanimljivost": "${1|2}:{1|4}={1|2}·{4|1}={4|2}=2$. U polovini se nalaze dve četvrtine.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -55715,23 +55650,12 @@
     ],
     "velicina": 320
    },
-   "odgovori": [
-    "2",
-    "${1|8}$",
-    "${1|2}$",
-    "$4$"
-   ],
-   "zanimljivost": "${1|2}:{1|4}={1|2}·{4|1}={4|2}=2$. U polovini se nalaze dve četvrtine.",
    "rec": "deljenje"
   },
   {
    "lekcija": 39,
    "tezina": 2,
    "pitanje": "Koja je recipročna vrednost broja 5?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "5→1/5"
-   },
    "odgovori": [
     "${1|5}$",
     "$5$",
@@ -55739,16 +55663,16 @@
     "$0$"
    ],
    "zanimljivost": "Recipročno od 5 je ${1|5}$, jer je $5·{1|5}=1$. Svaki broj (osim nule) ima recipročnu vrednost.",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$5\\to\\frac{1}{5}$"
+   },
    "rec": "recipročan"
   },
   {
    "lekcija": 39,
    "tezina": 3,
    "pitanje": "Zašto nula NEMA recipročnu vrednost?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "1/0 nije definisano"
-   },
    "odgovori": [
     "Jer bi traženi broj množio nulom i dobio 1, što je nemoguće",
     "Jer je nula premala",
@@ -55756,16 +55680,16 @@
     "Nula ima recipročnu vrednost"
    ],
    "zanimljivost": "Recipročno od 0 bi bilo ${1|0}$, a deljenje nulom nije dozvoljeno. Nijedan broj pomnožen nulom ne daje 1.",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$\\frac{1}{0}$ nije definisano"
+   },
    "rec": "recipročan"
   },
   {
    "lekcija": 40,
    "tezina": 1,
    "pitanje": "Kako deliš decimalni broj decimalnim?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "1,5:0,5 = 3"
-   },
    "odgovori": [
     "Proširiš oba broja tako da delilac postane ceo broj",
     "Podeliš samo cele delove",
@@ -55773,13 +55697,24 @@
     "Zanemariš zareze i podeliš"
    ],
    "zanimljivost": "Da bi podelio, na primer, $1,5:0,5$, proširiš oba broja sa 10: $15:5=3$. Delilac mora postati ceo broj.",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$1,\\!5:0,\\!5=3$"
+   },
    "rec": "deljenje"
   },
   {
    "lekcija": 40,
    "tezina": 1,
    "pitanje": "Koliko je $1,5 : 0,5$?",
-   "mediji": {
+   "odgovori": [
+    "3",
+    "$0,3$",
+    "$30$",
+    "$0,03$"
+   ],
+   "zanimljivost": "Proširimo oba broja sa 10: $15:5=3$. U $1,5$ ima tri polovine.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -55810,23 +55745,12 @@
     ],
     "velicina": 300
    },
-   "odgovori": [
-    "3",
-    "$0,3$",
-    "$30$",
-    "$0,03$"
-   ],
-   "zanimljivost": "Proširimo oba broja sa 10: $15:5=3$. U $1,5$ ima tri polovine.",
    "rec": "deljenje"
   },
   {
    "lekcija": 40,
    "tezina": 2,
    "pitanje": "Deljenje broja sa 0,1 isto je što i…",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "3:0,1 = 3·10 = 30"
-   },
    "odgovori": [
     "množenje sa 10",
     "množenje sa 0,1",
@@ -55834,6 +55758,10 @@
     "oduzimanje 0,1"
    ],
    "zanimljivost": "Deljenje sa $0,1$ znači „koliko desetinki staje u broj“ – to je isto kao množenje sa 10: $3:0,1=30$.",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$3:0,\\!1=3\\cdot10=30$"
+   },
    "rec": "deljenje"
   },
   {
@@ -55899,7 +55827,14 @@
    "lekcija": 40,
    "tezina": 3,
    "pitanje": "Koliko je $0,7 : 10$?",
-   "mediji": {
+   "odgovori": [
+    "$0,07$",
+    "$7$",
+    "$70$",
+    "$0,7$"
+   ],
+   "zanimljivost": "Deljenje sa 10 pomera zarez ulevo: $0,7 → 0,07$.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -55945,23 +55880,12 @@
     ],
     "velicina": 300
    },
-   "odgovori": [
-    "$0,07$",
-    "$7$",
-    "$70$",
-    "$0,7$"
-   ],
-   "zanimljivost": "Deljenje sa 10 pomera zarez ulevo: $0,7 → 0,07$.",
    "rec": "decimala"
   },
   {
    "lekcija": 41,
    "tezina": 1,
    "pitanje": "U izrazu $2 + 3 · 4$, šta računaš prvo?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "2 + 3·4 = 14"
-   },
    "odgovori": [
     "Množenje $3·4$",
     "Sabiranje $2+3$",
@@ -55969,16 +55893,16 @@
     "Oduzimanje"
    ],
    "zanimljivost": "Množenje ima prednost: $2+3·4=2+12=14$.",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$2+3\\cdot4=14$"
+   },
    "rec": "redosled"
   },
   {
    "lekcija": 41,
    "tezina": 2,
    "pitanje": "Koje svojstvo koristiš kad računaš $7 · 12 = 7·10 + 7·2$?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "a·(b + c) = a· b + a· c"
-   },
    "odgovori": [
     "Distributivnost",
     "Komutativnost",
@@ -55986,16 +55910,16 @@
     "Zatvorenost"
    ],
    "zanimljivost": "Distributivnost razlaže množenje na sabirke: $a·(b+c)=a· b+a· c$. Tako je lakše množiti „okrugle“ brojeve.",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$a\\cdot(b+c)=a\\cdot b+a\\cdot c$"
+   },
    "rec": "raspodela"
   },
   {
    "lekcija": 41,
    "tezina": 2,
    "pitanje": "Množenje i deljenje su međusobno…",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "6·4 = 24 ⇔ 24:4 = 6"
-   },
    "odgovori": [
     "obrnute (inverzne) operacije",
     "iste operacije",
@@ -56003,16 +55927,16 @@
     "uvek jednake"
    ],
    "zanimljivost": "Množenje i deljenje su obrnute operacije: ako je $6·4=24$, onda je $24:4=6$. Jedna „poništava“ drugu.",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$6\\cdot4=24 \\Leftrightarrow 24:4=6$"
+   },
    "rec": "množenje"
   },
   {
    "lekcija": 41,
    "tezina": 3,
    "pitanje": "Koliko je $(2+3)· 4$?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "(2 + 3)·4 = 20"
-   },
    "odgovori": [
     "20",
     "14",
@@ -56020,16 +55944,16 @@
     "18"
    ],
    "zanimljivost": "Prvo zagrada: $2+3=5$, pa $5·4=20$. Zagrade menjaju redosled računanja!",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$(2+3)\\cdot4=20$"
+   },
    "rec": "redosled"
   },
   {
    "lekcija": 41,
    "tezina": 3,
    "pitanje": "Kako se zove svojstvo po kome je $a· b = b· a$?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "a· b = b· a"
-   },
    "odgovori": [
     "Komutativnost množenja",
     "Asocijativnost množenja",
@@ -56037,16 +55961,16 @@
     "Neutralnost"
    ],
    "zanimljivost": "Komutativnost množenja: činioci mogu da zamene mesta, proizvod ostaje isti. Na primer, $3·4=4·3$.",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$a\\cdot b=b\\cdot a$"
+   },
    "rec": "zamena"
   },
   {
    "lekcija": 42,
    "tezina": 1,
    "pitanje": "Kako nalaziš nepoznati činilac u jednačini $x · 3 = 12$?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "x·3 = 12 ⇒ x = 4"
-   },
    "odgovori": [
     "Proizvod podeliš poznatim činiocem",
     "Proizvodu dodaš poznati činilac",
@@ -56054,13 +55978,24 @@
     "Oduzmeš činilac od proizvoda"
    ],
    "zanimljivost": "Nepoznati činilac nalazimo deljenjem: $x = 12:3 = 4$.",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$x\\cdot3=12 \\Rightarrow x=4$"
+   },
    "rec": "jednačina"
   },
   {
    "lekcija": 42,
    "tezina": 2,
    "pitanje": "Koji broj je rešenje jednačine $x · 3 = 12$?",
-   "mediji": {
+   "odgovori": [
+    "4",
+    "3",
+    "12",
+    "36"
+   ],
+   "zanimljivost": "$x = 12:3 = 4$. Provera: $4·3=12$ – tačno!",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -56106,23 +56041,12 @@
     ],
     "velicina": 300
    },
-   "odgovori": [
-    "4",
-    "3",
-    "12",
-    "36"
-   ],
-   "zanimljivost": "$x = 12:3 = 4$. Provera: $4·3=12$ – tačno!",
    "rec": "jednačina"
   },
   {
    "lekcija": 42,
    "tezina": 2,
    "pitanje": "Koji broj je rešenje jednačine $x : 4 = 5$?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "x:4 = 5 ⇒ x = 20"
-   },
    "odgovori": [
     "20",
     "5",
@@ -56130,6 +56054,10 @@
     "9"
    ],
    "zanimljivost": "Nepoznati deljenik nalazimo množenjem: $x = 5·4 = 20$.",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$x:4=5 \\Rightarrow x=20$"
+   },
    "rec": "jednačina"
   },
   {
@@ -56310,10 +56238,6 @@
    "lekcija": 42,
    "tezina": 3,
    "pitanje": "Kako nalaziš nepoznati delilac u jednačini $12 : x = 4$?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "12:x = 4 ⇒ x = 3"
-   },
    "odgovori": [
     "Deljenik podeliš količnikom",
     "Količnik pomnožiš deljenikom",
@@ -56321,6 +56245,10 @@
     "Oduzmeš količnik od deljenika"
    ],
    "zanimljivost": "Nepoznati delilac: $x = 12:4 = 3$. Provera: $12:3=4$.",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$12:x=4 \\Rightarrow x=3$"
+   },
    "rec": "jednačina"
   },
   {
@@ -56344,7 +56272,14 @@
    "lekcija": 43,
    "tezina": 2,
    "pitanje": "Koji broj zadovoljava nejednačinu $2x < 10$?",
-   "mediji": {
+   "odgovori": [
+    "4",
+    "5",
+    "6",
+    "10"
+   ],
+   "zanimljivost": "Za $x=4$: $2·4=8$, a $8<10$ – tačno. Za $x=5$ dobili bismo $10$, a 10 nije manje od 10.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -56400,20 +56335,20 @@
     ],
     "velicina": 300
    },
-   "odgovori": [
-    "4",
-    "5",
-    "6",
-    "10"
-   ],
-   "zanimljivost": "Za $x=4$: $2·4=8$, a $8<10$ – tačno. Za $x=5$ dobili bismo $10$, a 10 nije manje od 10.",
    "rec": "nejednačina"
   },
   {
    "lekcija": 43,
    "tezina": 2,
    "pitanje": "Nejednačina $x · 2 ≤ 8$ znači da je $x$…",
-   "mediji": {
+   "odgovori": [
+    "manje ili jednako 4",
+    "veće od 4",
+    "jednako 8",
+    "veće ili jednako 4"
+   ],
+   "zanimljivost": "Podelimo obe strane sa 2: $x ≤ 4$. Rešenja su svi brojevi manji ili jednaki 4.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -56467,20 +56402,20 @@
     ],
     "velicina": 300
    },
-   "odgovori": [
-    "manje ili jednako 4",
-    "veće od 4",
-    "jednako 8",
-    "veće ili jednako 4"
-   ],
-   "zanimljivost": "Podelimo obe strane sa 2: $x ≤ 4$. Rešenja su svi brojevi manji ili jednaki 4.",
    "rec": "nejednačina"
   },
   {
    "lekcija": 43,
    "tezina": 3,
    "pitanje": "Koji broj NE zadovoljava nejednačinu $3x > 9$?",
-   "mediji": {
+   "odgovori": [
+    "3",
+    "4",
+    "5",
+    "10"
+   ],
+   "zanimljivost": "Za $x=3$: $3·3=9$, a 9 nije veće od 9. Svi brojevi veći od 3 zadovoljavaju nejednačinu.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -56536,23 +56471,12 @@
     ],
     "velicina": 300
    },
-   "odgovori": [
-    "3",
-    "4",
-    "5",
-    "10"
-   ],
-   "zanimljivost": "Za $x=3$: $3·3=9$, a 9 nije veće od 9. Svi brojevi veći od 3 zadovoljavaju nejednačinu.",
    "rec": "nejednačina"
   },
   {
    "lekcija": 43,
    "tezina": 3,
    "pitanje": "Ako obe strane nejednačine pomnožiš POZITIVNIM brojem, znak nejednakosti…",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "x<5 ⇒ 2x<10"
-   },
    "odgovori": [
     "ostaje isti",
     "se okreće",
@@ -56560,6 +56484,10 @@
     "postaje jednakost"
    ],
    "zanimljivost": "Množenje pozitivnim brojem ne menja smer nejednakosti: iz $x<5$ sledi $2x<10$. (Kod negativnih brojeva znak bi se okrenuo.)",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$x<5 \\Rightarrow 2x<10$"
+   },
    "rec": "nejednačina"
   },
   {
@@ -56629,7 +56557,14 @@
    "lekcija": 44,
    "tezina": 1,
    "pitanje": "Kako se zove prava preko koje se figura preslikava?",
-   "mediji": {
+   "odgovori": [
+    "Osa simetrije",
+    "Krak",
+    "Simetrala",
+    "Tangenta"
+   ],
+   "zanimljivost": "Osa simetrije je prava koja „prepolovi“ preslikavanje – figura se ogleda u njoj kao u ogledalu.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "A": [
@@ -56679,13 +56614,6 @@
     ],
     "velicina": 280
    },
-   "odgovori": [
-    "Osa simetrije",
-    "Krak",
-    "Simetrala",
-    "Tangenta"
-   ],
-   "zanimljivost": "Osa simetrije je prava koja „prepolovi“ preslikavanje – figura se ogleda u njoj kao u ogledalu.",
    "rec": "osa"
   },
   {
@@ -56744,7 +56672,14 @@
    "lekcija": 44,
    "tezina": 2,
    "pitanje": "Tačka A i njena slika A′ su osnosimetrične. Šta je osa simetrije za duž AA′?",
-   "mediji": {
+   "odgovori": [
+    "Simetrala duži AA′ (normalna u središtu)",
+    "Sama duž AA′",
+    "Poluprava AA′",
+    "Kružnica kroz A i A′"
+   ],
+   "zanimljivost": "Osa simetrije stoji normalno na duž $AA'$ i prolazi kroz njeno središte – zato se i zove simetrala duži.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "A": [
@@ -56794,13 +56729,6 @@
     ],
     "velicina": 280
    },
-   "odgovori": [
-    "Simetrala duži AA′ (normalna u središtu)",
-    "Sama duž AA′",
-    "Poluprava AA′",
-    "Kružnica kroz A i A′"
-   ],
-   "zanimljivost": "Osa simetrije stoji normalno na duž $AA'$ i prolazi kroz njeno središte – zato se i zove simetrala duži.",
    "rec": "osa"
   },
   {
@@ -56909,7 +56837,14 @@
    "lekcija": 45,
    "tezina": 1,
    "pitanje": "Koliko osa simetrije ima kvadrat?",
-   "mediji": {
+   "odgovori": [
+    "4",
+    "2",
+    "1",
+    "3"
+   ],
+   "zanimljivost": "Kvadrat ima 4 ose: dve kroz sredine naspramnih stranica i dve kroz dijagonale.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "A": [
@@ -56973,20 +56908,20 @@
     ],
     "velicina": 260
    },
-   "odgovori": [
-    "4",
-    "2",
-    "1",
-    "3"
-   ],
-   "zanimljivost": "Kvadrat ima 4 ose: dve kroz sredine naspramnih stranica i dve kroz dijagonale.",
    "rec": "kvadrat"
   },
   {
    "lekcija": 45,
    "tezina": 1,
    "pitanje": "Koliko osa simetrije ima krug?",
-   "mediji": {
+   "odgovori": [
+    "Beskonačno mnogo",
+    "2",
+    "4",
+    "Nijednu"
+   ],
+   "zanimljivost": "Krug ima beskonačno mnogo osa simetrije – svaka prava kroz centar deli ga na dve jednake polovine.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -57071,20 +57006,20 @@
     ],
     "velicina": 260
    },
-   "odgovori": [
-    "Beskonačno mnogo",
-    "2",
-    "4",
-    "Nijednu"
-   ],
-   "zanimljivost": "Krug ima beskonačno mnogo osa simetrije – svaka prava kroz centar deli ga na dve jednake polovine.",
    "rec": "krug"
   },
   {
    "lekcija": 45,
    "tezina": 2,
    "pitanje": "Koliko osa simetrije ima jednakostranični trougao?",
-   "mediji": {
+   "odgovori": [
+    "3",
+    "1",
+    "2",
+    "6"
+   ],
+   "zanimljivost": "Jednakostranični trougao ima 3 ose simetrije – svaka ide iz temena u središte naspramne stranice.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -57139,20 +57074,20 @@
     ],
     "velicina": 260
    },
-   "odgovori": [
-    "3",
-    "1",
-    "2",
-    "6"
-   ],
-   "zanimljivost": "Jednakostranični trougao ima 3 ose simetrije – svaka ide iz temena u središte naspramne stranice.",
    "rec": "trougao"
   },
   {
    "lekcija": 45,
    "tezina": 2,
    "pitanje": "Koliko osa simetrije ima pravougaonik (koji nije kvadrat)?",
-   "mediji": {
+   "odgovori": [
+    "2",
+    "4",
+    "1",
+    "Nijednu"
+   ],
+   "zanimljivost": "Pravougaonik ima 2 ose – kroz sredine naspramnih stranica. Dijagonale mu NISU ose simetrije (osim kod kvadrata).",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "A": [
@@ -57206,20 +57141,20 @@
     ],
     "velicina": 280
    },
-   "odgovori": [
-    "2",
-    "4",
-    "1",
-    "Nijednu"
-   ],
-   "zanimljivost": "Pravougaonik ima 2 ose – kroz sredine naspramnih stranica. Dijagonale mu NISU ose simetrije (osim kod kvadrata).",
    "rec": "simetrija"
   },
   {
    "lekcija": 45,
    "tezina": 2,
    "pitanje": "Koliko osa simetrije ima jednakokraki trougao?",
-   "mediji": {
+   "odgovori": [
+    "1",
+    "2",
+    "3",
+    "Nijednu"
+   ],
+   "zanimljivost": "Jednakokraki trougao ima tačno jednu osu simetrije – visinu koja pada na osnovicu i deli je na dva jednaka dela.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "A": [
@@ -57256,13 +57191,6 @@
     ],
     "velicina": 260
    },
-   "odgovori": [
-    "1",
-    "2",
-    "3",
-    "Nijednu"
-   ],
-   "zanimljivost": "Jednakokraki trougao ima tačno jednu osu simetrije – visinu koja pada na osnovicu i deli je na dva jednaka dela.",
    "rec": "trougao"
   },
   {
@@ -57306,7 +57234,14 @@
    "lekcija": 46,
    "tezina": 1,
    "pitanje": "Šta je simetrala duži?",
-   "mediji": {
+   "odgovori": [
+    "Prava normalna na duž u njenom središtu",
+    "Prava paralelna sa duži",
+    "Poluprava kroz kraj duži",
+    "Duž jednaka datoj duži"
+   ],
+   "zanimljivost": "Simetrala duži je prava koja duž seče pod pravim uglom i to tačno na polovini. Deli duž na dva jednaka dela.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "A": [
@@ -57347,13 +57282,6 @@
     ],
     "velicina": 280
    },
-   "odgovori": [
-    "Prava normalna na duž u njenom središtu",
-    "Prava paralelna sa duži",
-    "Poluprava kroz kraj duži",
-    "Duž jednaka datoj duži"
-   ],
-   "zanimljivost": "Simetrala duži je prava koja duž seče pod pravim uglom i to tačno na polovini. Deli duž na dva jednaka dela.",
    "rec": "simetrala"
   },
   {
@@ -57427,7 +57355,14 @@
    "lekcija": 46,
    "tezina": 2,
    "pitanje": "Čime konstruišeš simetralu duži?",
-   "mediji": {
+   "odgovori": [
+    "Šestarom i lenjirom",
+    "Samo lenjirom",
+    "Uglomerom",
+    "Samo šestarom, bez lenjira"
+   ],
+   "zanimljivost": "Iz oba kraja duži šestarom opišemo lukove istog poluprečnika; njihove presečne tačke spoje se lenjirom – to je simetrala.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "A": [
@@ -57496,13 +57431,6 @@
     ],
     "velicina": 260
    },
-   "odgovori": [
-    "Šestarom i lenjirom",
-    "Samo lenjirom",
-    "Uglomerom",
-    "Samo šestarom, bez lenjira"
-   ],
-   "zanimljivost": "Iz oba kraja duži šestarom opišemo lukove istog poluprečnika; njihove presečne tačke spoje se lenjirom – to je simetrala.",
    "rec": "šestar"
   },
   {
@@ -57575,7 +57503,14 @@
    "lekcija": 46,
    "tezina": 3,
    "pitanje": "Simetrala duži deli duž na…",
-   "mediji": {
+   "odgovori": [
+    "dva jednaka dela",
+    "tri jednaka dela",
+    "dva dela 1:2",
+    "četiri jednaka dela"
+   ],
+   "zanimljivost": "Simetrala prolazi kroz središte duži, pa je deli na dva podudarna dela. Zato se i zove simetrala (symmetria = razmera).",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "A": [
@@ -57612,13 +57547,6 @@
     ],
     "velicina": 280
    },
-   "odgovori": [
-    "dva jednaka dela",
-    "tri jednaka dela",
-    "dva dela 1:2",
-    "četiri jednaka dela"
-   ],
-   "zanimljivost": "Simetrala prolazi kroz središte duži, pa je deli na dva podudarna dela. Zato se i zove simetrala (symmetria = razmera).",
    "rec": "simetrala"
   },
   {
@@ -57800,7 +57728,7 @@
      {
       "u": "AOp",
       "b": 2,
-      "o": "45°"
+      "o": "?"
      }
     ],
     "bezImena": [
@@ -57932,7 +57860,7 @@
      {
       "u": "AOp",
       "b": 2,
-      "o": "30°"
+      "o": "?"
      }
     ],
     "bezImena": [
@@ -60290,7 +60218,14 @@
    "lekcija": 48,
    "tezina": 1,
    "pitanje": "Koji razlomak odgovara procentu 50%?",
-   "mediji": {
+   "odgovori": [
+    "${1|2}$",
+    "${1|5}$",
+    "${1|4}$",
+    "${1|10}$"
+   ],
+   "zanimljivost": "$50% = {50|100} = {1|2}$. Polovina celine je 50%.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -62614,20 +62549,20 @@
     ],
     "velicina": 260
    },
-   "odgovori": [
-    "${1|2}$",
-    "${1|5}$",
-    "${1|4}$",
-    "${1|10}$"
-   ],
-   "zanimljivost": "$50% = {50|100} = {1|2}$. Polovina celine je 50%.",
    "rec": "procenat"
   },
   {
    "lekcija": 48,
    "tezina": 1,
    "pitanje": "Koji razlomak odgovara procentu 25%?",
-   "mediji": {
+   "odgovori": [
+    "${1|4}$",
+    "${1|2}$",
+    "${1|5}$",
+    "${1|3}$"
+   ],
+   "zanimljivost": "$25% = {25|100} = {1|4}$. Četvrtina celine je 25%.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -64951,20 +64886,20 @@
     ],
     "velicina": 260
    },
-   "odgovori": [
-    "${1|4}$",
-    "${1|2}$",
-    "${1|5}$",
-    "${1|3}$"
-   ],
-   "zanimljivost": "$25% = {25|100} = {1|4}$. Četvrtina celine je 25%.",
    "rec": "procenat"
   },
   {
    "lekcija": 48,
    "tezina": 1,
    "pitanje": "Koliko procenata ima CELA (ceo objekat)?",
-   "mediji": {
+   "odgovori": [
+    "100%",
+    "50%",
+    "10%",
+    "1000%"
+   ],
+   "zanimljivost": "Cela celina uvek ima 100%. Ako pojedeš celu čokoladu, pojeo si 100% čokolade.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -67288,20 +67223,20 @@
     ],
     "velicina": 260
    },
-   "odgovori": [
-    "100%",
-    "50%",
-    "10%",
-    "1000%"
-   ],
-   "zanimljivost": "Cela celina uvek ima 100%. Ako pojedeš celu čokoladu, pojeo si 100% čokolade.",
    "rec": "procenat"
   },
   {
    "lekcija": 48,
    "tezina": 2,
    "pitanje": "Koliko je 50% od 200?",
-   "mediji": {
+   "odgovori": [
+    "100",
+    "50",
+    "150",
+    "250"
+   ],
+   "zanimljivost": "$50%$ je polovina, a polovina od 200 je 100. Dakle, $50% · 200 = 100$.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -67378,20 +67313,20 @@
     ],
     "velicina": 320
    },
-   "odgovori": [
-    "100",
-    "50",
-    "150",
-    "250"
-   ],
-   "zanimljivost": "$50%$ je polovina, a polovina od 200 je 100. Dakle, $50% · 200 = 100$.",
    "rec": "procenat"
   },
   {
    "lekcija": 48,
    "tezina": 2,
    "pitanje": "Koliko je 25% od 80?",
-   "mediji": {
+   "odgovori": [
+    "20",
+    "25",
+    "40",
+    "60"
+   ],
+   "zanimljivost": "$25%$ je četvrtina, a četvrtina od 80 je 20.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -67468,13 +67403,6 @@
     ],
     "velicina": 320
    },
-   "odgovori": [
-    "20",
-    "25",
-    "40",
-    "60"
-   ],
-   "zanimljivost": "$25%$ je četvrtina, a četvrtina od 80 je 20.",
    "rec": "procenat"
   },
   {
@@ -74592,7 +74520,14 @@
    "lekcija": 49,
    "tezina": 1,
    "pitanje": "Šta znači razmera na karti 1 : 100.000?",
-   "mediji": {
+   "odgovori": [
+    "1 cm na karti je 100.000 cm u prirodi",
+    "1 cm na karti je 100.000 km",
+    "Karta je velika 100.000 cm",
+    "1 cm u prirodi je 100.000 cm na karti"
+   ],
+   "zanimljivost": "Razmera 1:100.000 znači da 1 cm na karti odgovara 100.000 cm (to je 1 km) u stvarnosti. Karta je umanjena.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -74631,110 +74566,12 @@
     ],
     "velicina": 320
    },
-   "odgovori": [
-    "1 cm na karti je 100.000 cm u prirodi",
-    "1 cm na karti je 100.000 km",
-    "Karta je velika 100.000 cm",
-    "1 cm u prirodi je 100.000 cm na karti"
-   ],
-   "zanimljivost": "Razmera 1:100.000 znači da 1 cm na karti odgovara 100.000 cm (to je 1 km) u stvarnosti. Karta je umanjena.",
    "rec": "razmera"
   },
   {
    "lekcija": 49,
    "tezina": 1,
    "pitanje": "Kolika je aritmetička sredina brojeva 4 i 6?",
-   "mediji": {
-    "vrsta": "geo",
-    "t": {
-     "O": [
-      0,
-      0
-     ]
-    },
-    "e": [
-     {
-      "osa": [
-       0,
-       7
-      ],
-      "podela": 1,
-      "svaki": 1
-     },
-     {
-      "lin": [
-       [
-        4,
-        -0.06
-       ],
-       [
-        4,
-        0.06
-       ]
-      ],
-      "b": 1,
-      "debljina": 4
-     },
-     {
-      "lin": [
-       [
-        6,
-        -0.06
-       ],
-       [
-        6,
-        0.06
-       ]
-      ],
-      "b": 2,
-      "debljina": 4
-     },
-     {
-      "lin": [
-       [
-        5,
-        -0.08
-       ],
-       [
-        5,
-        0.08
-       ]
-      ],
-      "b": 0,
-      "debljina": 4
-     },
-     {
-      "tx": "4",
-      "at": [
-       4,
-       0.3
-      ],
-      "vel": 14,
-      "b": 1
-     },
-     {
-      "tx": "6",
-      "at": [
-       6,
-       0.3
-      ],
-      "vel": 14,
-      "b": 2
-     },
-     {
-      "tx": "5",
-      "at": [
-       5,
-       0.6
-      ],
-      "vel": 15
-     }
-    ],
-    "bezImena": [
-     "O"
-    ],
-    "velicina": 300
-   },
    "odgovori": [
     "5",
     "10",
@@ -74742,13 +74579,7 @@
     "24"
    ],
    "zanimljivost": "Zbir je $4+6=10$, a sabiraka ima 2, pa je sredina $10:2=5$.",
-   "rec": "sredina"
-  },
-  {
-   "lekcija": 49,
-   "tezina": 2,
-   "pitanje": "Šta je aritmetička sredina nekoliko brojeva?",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -74839,6 +74670,12 @@
     ],
     "velicina": 300
    },
+   "rec": "sredina"
+  },
+  {
+   "lekcija": 49,
+   "tezina": 2,
+   "pitanje": "Šta je aritmetička sredina nekoliko brojeva?",
    "odgovori": [
     "Zbir brojeva podeljen njihovim brojem",
     "Najveći od tih brojeva",
@@ -74846,13 +74683,111 @@
     "Srednji po veličini broj"
    ],
    "zanimljivost": "Aritmetička sredina (prosek) se dobija kad zbir svih brojeva podelimo brojem sabiraka. „Sve saberi pa podeli.“",
+   "medijiOdgovora": {
+    "vrsta": "geo",
+    "t": {
+     "O": [
+      0,
+      0
+     ]
+    },
+    "e": [
+     {
+      "osa": [
+       0,
+       7
+      ],
+      "podela": 1,
+      "svaki": 1
+     },
+     {
+      "lin": [
+       [
+        4,
+        -0.06
+       ],
+       [
+        4,
+        0.06
+       ]
+      ],
+      "b": 1,
+      "debljina": 4
+     },
+     {
+      "lin": [
+       [
+        6,
+        -0.06
+       ],
+       [
+        6,
+        0.06
+       ]
+      ],
+      "b": 2,
+      "debljina": 4
+     },
+     {
+      "lin": [
+       [
+        5,
+        -0.08
+       ],
+       [
+        5,
+        0.08
+       ]
+      ],
+      "b": 0,
+      "debljina": 4
+     },
+     {
+      "tx": "4",
+      "at": [
+       4,
+       0.3
+      ],
+      "vel": 14,
+      "b": 1
+     },
+     {
+      "tx": "6",
+      "at": [
+       6,
+       0.3
+      ],
+      "vel": 14,
+      "b": 2
+     },
+     {
+      "tx": "5",
+      "at": [
+       5,
+       0.6
+      ],
+      "vel": 15
+     }
+    ],
+    "bezImena": [
+     "O"
+    ],
+    "velicina": 300
+   },
    "rec": "sredina"
   },
   {
    "lekcija": 49,
    "tezina": 2,
    "pitanje": "Kolika je aritmetička sredina brojeva 2, 4 i 9?",
-   "mediji": {
+   "odgovori": [
+    "5",
+    "15",
+    "3",
+    "6"
+   ],
+   "zanimljivost": "Zbir je $2+4+9=15$, a sabiraka ima 3, pa je sredina $15:3=5$.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -74966,20 +74901,20 @@
     ],
     "velicina": 320
    },
-   "odgovori": [
-    "5",
-    "15",
-    "3",
-    "6"
-   ],
-   "zanimljivost": "Zbir je $2+4+9=15$, a sabiraka ima 3, pa je sredina $15:3=5$.",
    "rec": "sredina"
   },
   {
    "lekcija": 49,
    "tezina": 2,
    "pitanje": "Šta znači razmera 2 : 1?",
-   "mediji": {
+   "odgovori": [
+    "Prva veličina je dva puta veća od druge",
+    "Druga veličina je dva puta veća",
+    "Obe su jednake",
+    "Prva je upola manja"
+   ],
+   "zanimljivost": "Razmera 2:1 znači da je prva veličina dvostruko veća od druge. Na primer, uvećani crtež 2:1 je dvaput veći od stvarnog.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -75058,20 +74993,20 @@
     ],
     "velicina": 280
    },
-   "odgovori": [
-    "Prva veličina je dva puta veća od druge",
-    "Druga veličina je dva puta veća",
-    "Obe su jednake",
-    "Prva je upola manja"
-   ],
-   "zanimljivost": "Razmera 2:1 znači da je prva veličina dvostruko veća od druge. Na primer, uvećani crtež 2:1 je dvaput veći od stvarnog.",
    "rec": "razmera"
   },
   {
    "lekcija": 49,
    "tezina": 3,
    "pitanje": "Ana ima 10, a Marko 20 klikera. Kolika je razmera Aninih i Markovih klikera?",
-   "mediji": {
+   "odgovori": [
+    "1 : 2",
+    "2 : 1",
+    "1 : 3",
+    "3 : 1"
+   ],
+   "zanimljivost": "Odnos je $10:20$, a to se skrati na $1:2$. Marko ima dvaput više klikera od Ane.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -75150,20 +75085,20 @@
     ],
     "velicina": 280
    },
-   "odgovori": [
-    "1 : 2",
-    "2 : 1",
-    "1 : 3",
-    "3 : 1"
-   ],
-   "zanimljivost": "Odnos je $10:20$, a to se skrati na $1:2$. Marko ima dvaput više klikera od Ane.",
    "rec": "razmera"
   },
   {
    "lekcija": 49,
    "tezina": 3,
    "pitanje": "Aritmetička sredina tri uzastopna broja je 5. Koji su to brojevi?",
-   "mediji": {
+   "odgovori": [
+    "4, 5 i 6",
+    "3, 4 i 5",
+    "5, 6 i 7",
+    "2, 5 i 8"
+   ],
+   "zanimljivost": "Ako je sredina tri broja 5, njihov zbir je $3·5=15$. Brojevi $4+5+6=15$ – to su tri uzastopna broja.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -75255,13 +75190,6 @@
     ],
     "velicina": 300
    },
-   "odgovori": [
-    "4, 5 i 6",
-    "3, 4 i 5",
-    "5, 6 i 7",
-    "2, 5 i 8"
-   ],
-   "zanimljivost": "Ako je sredina tri broja 5, njihov zbir je $3·5=15$. Brojevi $4+5+6=15$ – to su tri uzastopna broja.",
    "rec": "sredina"
   }
  ]

@@ -59,7 +59,7 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, pravilni, O, bez }) => {
   Q(1, 'Kako se zove prava preko koje se figura preslikava?',
     ['Osa simetrije', 'Krak', 'Simetrala', 'Tangenta'],
     'Osa simetrije je prava koja „prepolovi“ preslikavanje – figura se ogleda u njoj kao u ogledalu.', 'osa',
-    { mediji: ogledalo() });
+    { medijiOdgovora: ogledalo() });
   Q(2, 'Osna simetrija je isto što i…',
     ['presavijanje papira po osi', 'klizanje figure', 'okretanje za 90°', 'smanjivanje figure'],
     'Kad presaviješ papir po osi, tačke sa jedne strane padnu tačno na tačke sa druge strane. To je osna simetrija.', 'simetrija',
@@ -67,7 +67,7 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, pravilni, O, bez }) => {
   Q(2, 'Tačka A i njena slika A′ su osnosimetrične. Šta je osa simetrije za duž AA′?',
     ['Simetrala duži AA′ (normalna u središtu)', 'Sama duž AA′', 'Poluprava AA′', 'Kružnica kroz A i A′'],
     'Osa simetrije stoji normalno na duž $AA\'$ i prolazi kroz njeno središte – zato se i zove simetrala duži.', 'osa',
-    { mediji: ogledalo() });
+    { medijiOdgovora: ogledalo() });
   Q(3, 'Na slici se trougao presavija preko isprekidane prave. Kako se zove ta prava?',
     ['Osa simetrije', 'Stranica trougla', 'Simetrala ugla', 'Dijagonala'],
     'Isprekidana prava je osa simetrije: presavijanjem preko nje trougao se preslika u svoj odraz sa druge strane.', 'osa',
@@ -88,19 +88,19 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, pravilni, O, bez }) => {
   Q(1, 'Koliko osa simetrije ima kvadrat?',
     ['4', '2', '1', '3'],
     'Kvadrat ima 4 ose: dve kroz sredine naspramnih stranica i dve kroz dijagonale.', 'kvadrat',
-    { mediji: kvadratOse() });
+    { medijiOdgovora: kvadratOse() });
   Q(1, 'Koliko osa simetrije ima krug?',
     ['Beskonačno mnogo', '2', '4', 'Nijednu'],
     'Krug ima beskonačno mnogo osa simetrije – svaka prava kroz centar deli ga na dve jednake polovine.', 'krug',
-    { mediji: krugOse() });
+    { medijiOdgovora: krugOse() });
   Q(2, 'Koliko osa simetrije ima jednakostranični trougao?',
     ['3', '1', '2', '6'],
     'Jednakostranični trougao ima 3 ose simetrije – svaka ide iz temena u središte naspramne stranice.', 'trougao',
-    { mediji: oseTrougla() });
+    { medijiOdgovora: oseTrougla() });
   Q(2, 'Koliko osa simetrije ima pravougaonik (koji nije kvadrat)?',
     ['2', '4', '1', 'Nijednu'],
     'Pravougaonik ima 2 ose – kroz sredine naspramnih stranica. Dijagonale mu NISU ose simetrije (osim kod kvadrata).', 'simetrija',
-    { mediji: pravougaonikOse() });
+    { medijiOdgovora: pravougaonikOse() });
   Q(3, 'Koja od ovih figura NIJE osnosimetrična?',
     ['Raznostrani trougao', 'Kvadrat', 'Krug', 'Jednakokraki trougao'],
     'Raznostrani trougao (sve stranice različite) nema nijednu osu simetrije. Kvadrat, krug i jednakokraki trougao imaju.', 'simetrija',
@@ -108,14 +108,14 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, pravilni, O, bez }) => {
   Q(2, 'Koliko osa simetrije ima jednakokraki trougao?',
     ['1', '2', '3', 'Nijednu'],
     'Jednakokraki trougao ima tačno jednu osu simetrije – visinu koja pada na osnovicu i deli je na dva jednaka dela.', 'trougao',
-    { mediji: jednakokraki() });
+    { medijiOdgovora: jednakokraki() });
 
   // ── 46. simetrala duži ──
   L('Simetrala duži i konstrukcija normale');
   Q(1, 'Šta je simetrala duži?',
     ['Prava normalna na duž u njenom središtu', 'Prava paralelna sa duži', 'Poluprava kroz kraj duži', 'Duž jednaka datoj duži'],
     'Simetrala duži je prava koja duž seče pod pravim uglom i to tačno na polovini. Deli duž na dva jednaka dela.', 'simetrala',
-    { mediji: simetralaDuzi() });
+    { medijiOdgovora: simetralaDuzi() });
   Q(2, 'Šta važi za svaku tačku na simetrali duži?',
     ['Jednako je udaljena od oba kraja duži', 'Bliža je jednom kraju', 'Nalazi se na duži', 'Ne može se odrediti'],
     'Simetrala duži je skup svih tačaka koje su podjednako udaljene od krajeva duži. Zato je ona i osa simetrije te duži.', 'simetrala',
@@ -123,11 +123,11 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, pravilni, O, bez }) => {
   Q(2, 'Čime konstruišeš simetralu duži?',
     ['Šestarom i lenjirom', 'Samo lenjirom', 'Uglomerom', 'Samo šestarom, bez lenjira'],
     'Iz oba kraja duži šestarom opišemo lukove istog poluprečnika; njihove presečne tačke spoje se lenjirom – to je simetrala.', 'šestar',
-    { mediji: G({ A: [-2, 0], B: [2, 0], M: [0, 1.5], N: [0, -1.5] }, [{ d: 'AB', b: 0, debljina: 3 }, { l: 'A', r: 2.5, od: 10, do: 85, b: 3 }, { l: 'A', r: 2.5, od: 275, do: 350, b: 3 }, { l: 'B', r: 2.5, od: 95, do: 170, b: 3 }, { l: 'B', r: 2.5, od: 190, do: 265, b: 3 }, { tacka: 'M', b: 1 }, { tacka: 'N', b: 1 }], { bezImena: ['M', 'N'], velicina: 260 }) });
+    { medijiOdgovora: G({ A: [-2, 0], B: [2, 0], M: [0, 1.5], N: [0, -1.5] }, [{ d: 'AB', b: 0, debljina: 3 }, { l: 'A', r: 2.5, od: 10, do: 85, b: 3 }, { l: 'A', r: 2.5, od: 275, do: 350, b: 3 }, { l: 'B', r: 2.5, od: 95, do: 170, b: 3 }, { l: 'B', r: 2.5, od: 190, do: 265, b: 3 }, { tacka: 'M', b: 1 }, { tacka: 'N', b: 1 }], { bezImena: ['M', 'N'], velicina: 260 }) });
   Q(3, 'Simetrala duži deli duž na…',
     ['dva jednaka dela', 'tri jednaka dela', 'dva dela 1:2', 'četiri jednaka dela'],
     'Simetrala prolazi kroz središte duži, pa je deli na dva podudarna dela. Zato se i zove simetrala (symmetria = razmera).', 'simetrala',
-    { mediji: G({ A: [-3, 0], B: [3, 0], s: [0, 0] }, [{ d: 'AB', b: 0, debljina: 3 }, { tacka: 's', b: 1 }, { tx: 'S', at: [0, -0.5], vel: 14 }], { velicina: 280 }) });
+    { medijiOdgovora: G({ A: [-3, 0], B: [3, 0], s: [0, 0] }, [{ d: 'AB', b: 0, debljina: 3 }, { tacka: 's', b: 1 }, { tx: 'S', at: [0, -0.5], vel: 14 }], { velicina: 280 }) });
   Q(2, 'Na slici je prava normalna na duž AB u njenoj sredini. Kako se zove ta prava?',
     ['Simetrala duži AB', 'Paralela duži AB', 'Simetrala ugla', 'Dijagonala'],
     'Prava koja stoji normalno na duž i prolazi kroz njenu sredinu je simetrala duži. Tačka S je središte duži.', 'simetrala',
@@ -146,11 +146,11 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, pravilni, O, bez }) => {
   Q(2, 'Simetrala pravog ugla (90°) deli ga na dva ugla od…',
     ['45°', '30°', '60°', '90°'],
     'Polovina od 90° je 45°. Svaki od dva dela je oštar ugao od 45°.', 'simetrala',
-    { mediji: simetralaUgla(90, { pu: true, o: '45°' }) });
+    { mediji: simetralaUgla(90, { pu: true, o: '?' }) });
   Q(3, 'Simetrala ugla od 60° deli ga na dva ugla od…',
     ['30°', '20°', '40°', '60°'],
     'Polovina od 60° je 30°. Simetrala uvek deli ugao na dva JEDNAKA dela.', 'simetrala',
-    { mediji: simetralaUgla(60, { o: '30°' }) });
+    { mediji: simetralaUgla(60, { o: '?' }) });
   Q(2, 'Kako se na slici zove poluprava koja deli ugao AOB na dva jednaka dela?',
     ['Simetrala ugla', 'Simetrala duži', 'Transverzala', 'Tangenta'],
     'Poluprava OP polazi iz temena O i deli ugao AOB na dva jednaka dela – to je simetrala ugla.', 'simetrala',

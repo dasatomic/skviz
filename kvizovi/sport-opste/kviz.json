@@ -35,7 +35,7 @@
         "Bogdan Bogdanović",
         "Boban Marjanović"
       ],
-      "zanimljivost": "Jokić je izabran tek kao 41. na draftu 2014 – njegovo ime je objavljeno dok je na TV-u išla reklama, pa ga skoro niko nije video! Kasnije je tri puta bio MVP lige (2021, 2022, 2024). Obožava konje i trke dvoprega.",
+      "zanimljivost": "Jokić je izabran tek kao 41. na draftu 2014, što pokazuje koliko i skauti mogu da pogreše. Obožava konje i trke dvoprega.",
       "rec": "jokić"
     },
     {
@@ -83,10 +83,10 @@
       "tezina": 3,
       "pitanje": "Na Evropskom prvenstvu 1976. u Beogradu, Čehoslovak Antonjin Panenka dao je penal na neobičan način. Kako?",
       "odgovori": [
-        "Lagano „lobovao“ loptu u sredinu gola",
-        "Udario petom",
-        "Šutnuo dva puta",
-        "Šutnuo levom nogom sa centra"
+        "Lagano prebacio loptu u sredinu gola",
+        "Šutnuo petom, okrenut leđima golu",
+        "Odbio loptu od stative u gol",
+        "Šutnuo iz zaleta sa pola terena"
       ],
       "zanimljivost": "Golman je skočio u stranu, a lopta je polako ušla u sredinu. Taj šut je u Beogradu doneo titulu Čehoslovačkoj, a danas se takav penal u celom svetu zove „Panenka“.",
       "medijiOdgovora": {
@@ -98,20 +98,15 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Koja ženska reprezentacija Srbije je dva puta zaredom postala prvak sveta (2018. i 2022)?",
+      "pitanje": "Iz koje zemlje potiče džudo?",
       "odgovori": [
-        "Odbojkaška",
-        "Košarkaška",
-        "Rukometna",
-        "Vaterpolo"
+        "Iz Japana",
+        "Iz Kine",
+        "Iz Koreje",
+        "Iz Tajlanda"
       ],
-      "zanimljivost": "Najbolja igračica obe pobede bila je Tijana Bošković. Odbojka je izmišljena 1895. u Americi kao blaža igra od košarke, za starije ljude.",
-      "medijiOdgovora": {
-        "vrsta": "slika",
-        "src": "slike/boskovic.jpg",
-        "opis": "Tijana Bošković, najbolja igračica oba svetska prvenstva"
-      },
-      "rec": "odbojka"
+      "zanimljivost": "Džudo je 1882. osmislio Džigoro Kano, od starih borilačkih veština samuraja. Ime znači „nežan put“ – cilj je iskoristiti snagu protivnika protiv njega samog. Na Olimpijskim igrama je od Tokija 1964.",
+      "rec": "džudo"
     },
     {
       "tezina": 1,
@@ -221,7 +216,7 @@
       "pitanje": "Ko je izmislio košarku 1891. godine?",
       "odgovori": [
         "Džejms Nejsmit",
-        "Majkl Džordan",
+        "Volter Kemp",
         "Pjer de Kuberten",
         "Vilijam Morgan"
       ],
@@ -280,23 +275,16 @@
       "rec": "nula"
     },
     {
-      "tezina": 2,
-      "pitanje": "Koja je zemlja osvojila Svetsko prvenstvo u fudbalu 2022. u Kataru?",
+      "tezina": 1,
+      "pitanje": "U kom sportu se igra „Super boul“, najgledanija utakmica u SAD?",
       "odgovori": [
-        "Argentina",
-        "Francuska",
-        "Brazil",
-        "Hrvatska"
+        "U američkom fudbalu",
+        "U bejzbolu",
+        "U hokeju na ledu",
+        "U košarci"
       ],
-      "zanimljivost": "Finale protiv Francuske završeno je 3:3, a Argentina je pobedila na penale. Lionel Mesi je tako, u petom pokušaju, konačno osvojio titulu prvaka sveta.",
-      "medijiOdgovora": {
-        "vrsta": "mapa",
-        "oblast": "j-amerika",
-        "istakni": [
-          "ARG"
-        ]
-      },
-      "rec": "argentina"
+      "zanimljivost": "Super boul je finale američke NFL lige. Reklame koje se puštaju u njegovoj pauzi najskuplje su na televiziji – nekoliko miliona dolara za samo 30 sekundi.",
+      "rec": "finale"
     },
     {
       "tezina": 3,
@@ -307,7 +295,7 @@
         "Ispala u grupi",
         "Nije učestvovala"
       ],
-      "zanimljivost": "Do Urugvaja se putovalo brodom skoro tri nedelje. Na prvenstvu je učestvovalo samo 13 ekipa, od toga samo 4 iz Evrope.",
+      "zanimljivost": "Do Urugvaja se putovalo brodom više od dve nedelje. Na prvenstvu je učestvovalo samo 13 ekipa, od toga samo 4 iz Evrope.",
       "rec": "fudbal"
     },
     {
@@ -340,15 +328,15 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Koliko traje jedna četvrtina u FIBA košarci (i u Evroligi)?",
+      "pitanje": "Koliko je dugačak jedan krug atletske staze na stadionu?",
       "odgovori": [
-        "10 minuta",
-        "12 minuta",
-        "15 minuta",
-        "20 minuta"
+        "400 m",
+        "300 m",
+        "500 m",
+        "200 m"
       ],
-      "zanimljivost": "U NBA ligi četvrtina traje 12 minuta. Kada igrač postigne koš iza linije od 6,75 m, dobija 3 poena.",
-      "rec": "košarka"
+      "zanimljivost": "Trka na 400 m je tačno jedan krug. Trkači ne startuju u istoj liniji, već „stepenasto“ – spoljne staze su duže, pa bi inače trkač u unutrašnjoj stazi imao prednost.",
+      "rec": "staza"
     },
     {
       "tezina": 3,
@@ -368,21 +356,16 @@
       "rec": "mandić"
     },
     {
-      "tezina": 2,
-      "pitanje": "U kojoj atletskoj disciplini se takmiči Ivana Španović?",
+      "tezina": 3,
+      "pitanje": "Koliko je teška kugla koju bacaju atletičari (muškarci)?",
       "odgovori": [
-        "Skok udalj",
-        "Skok uvis",
-        "Trka na 400 m",
-        "Bacanje kugle"
+        "7,26 kg",
+        "5,50 kg",
+        "10,00 kg",
+        "3,50 kg"
       ],
-      "zanimljivost": "Ivana je 2022. u Beogradu postala svetska prvakinja u dvorani, skokom od 7,06 m. Osvojila je i olimpijsku bronzu u Riju 2016.",
-      "medijiOdgovora": {
-        "vrsta": "slika",
-        "src": "slike/spanovic.jpg",
-        "opis": "Ivana Španović"
-      },
-      "rec": "skok"
+      "zanimljivost": "To je tačno 16 engleskih funti, a atletičarke bacaju kuglu od 4 kg. Svetski rekord Amerikanca Rajana Krausera je preko 23 m – duže od dva autobusa jedan iza drugog!",
+      "rec": "kugla"
     },
     {
       "tezina": 3,
@@ -451,7 +434,7 @@
         "Dve",
         "Pet"
       ],
-      "zanimljivost": "Jokić je bio MVP 2021, 2022. i 2024. Godine 2023. je sa Denverom osvojio titulu i bio MVP finala. Poznat je po neverovatnim dodavanjima – on je centar koji igra kao plejmejker.",
+      "zanimljivost": "Godine 2023. je sa Denverom osvojio NBA titulu i bio najkorisniji igrač finala. Poznat je po neverovatnim dodavanjima – on je centar koji igra kao plejmejker.",
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/jokic.jpg",
@@ -505,10 +488,10 @@
       "tezina": 2,
       "pitanje": "Ko je bila Mirjana Šegrt?",
       "odgovori": [
-        "Plivačica iz Dubrovnika, osvajačica tri evropske srebrne medalje 1970",
-        "Teniserka, pobednica Vimbldona i Rolan Garosa u šezdesetim godinama veka",
-        "Atletičarka, evropska i svetska prvakinja u skoku uvis tokom sedamdesetih",
-        "Košarkašica, olimpijska šampionka"
+        "Plivačica, evropska vicešampionka",
+        "Teniserka, finalistkinja Vimbldona",
+        "Atletičarka, prvakinja u skoku uvis",
+        "Košarkašica, olimpijska vicešampionka"
       ],
       "zanimljivost": "Mirjana Šegrt (rođena 1950. u Dubrovniku) bila je jedna od najboljih jugoslovenskih plivačica. Na Evropskom prvenstvu 1970. u Barseloni osvojila je tri srebra – na 100 m i 200 m slobodno i na 200 m delfin.",
       "rec": "plivanje"
@@ -568,7 +551,7 @@
         "Tenis",
         "Odbojka",
         "Badminton",
-        "Rukomet"
+        "Stoni tenis"
       ],
       "zanimljivost": "Badminton se igra lopticom sa perjem – „perjanicom“. Perjanica je najbrži „projektil“ u sportovima sa reketom: posle udarca leti i preko 400 km/h!",
       "rec": "tenis"
@@ -589,7 +572,7 @@
       "tezina": 1,
       "pitanje": "Šta je „gol“ u fudbalu?",
       "odgovori": [
-        "Kada lopta cela pređe gol-liniju između stativa",
+        "Kada lopta cela pređe gol-liniju ispod prečke",
         "Kada lopta dodirne prečku ili stativu gola",
         "Kada igrač dodirne loptu rukom u svom šesnaestercu",
         "Kada lopta izađe sa terena preko bočne ili gol-linije"
@@ -685,10 +668,10 @@
       "tezina": 2,
       "pitanje": "Šta je ofsajd u fudbalu?",
       "odgovori": [
-        "Kada je napadač bliže golu od pretposlednjeg protivnika u trenutku dodavanja",
-        "Kada lopta u celosti pređe bočnu ili gol-liniju i izađe van terena za igru i loptu",
-        "Kada igrač namerno dodirne loptu rukom u svom kaznenom prostoru, pa se dosudi penal",
-        "Kada golman izađe iz kaznenog prostora sa loptom u rukama tokom igre i nastavi da trči"
+        "Kad je napadač pri dodavanju iza pretposlednjeg protivnika",
+        "Kad lopta celom zapreminom pređe bočnu liniju terena",
+        "Kad igrač namerno igra rukom u svom šesnaestercu",
+        "Kad golman sa loptom u rukama izađe iz šesnaesterca"
       ],
       "zanimljivost": "Ofsajd sprečava da napadači stalno „čekaju“ ispred protivničkog gola. To je pravilo koje i odrasli često pogrešno razumeju!",
       "medijiOdgovora": {
@@ -716,7 +699,7 @@
         "Australijan open, Rolan Garos, Vimbldon i US open",
         "Vimbldon, Dejvis kup, Olimpijske igre i Mastersi",
         "Rolan Garos, Madrid, Rim i Pariz",
-        "Samo Vimbldon"
+        "Vimbldon, US open, Mastersi i Dejvis kup"
       ],
       "zanimljivost": "Grend slem turniri se igraju na tri podloge: tvrdoj (Australija i SAD), šljaci (Pariz) i travi (London).",
       "medijiOdgovora": {
@@ -792,17 +775,17 @@
         "5",
         "6"
       ],
-      "zanimljivost": "Kraul (slobodno), leđno, prsno i delfin. U mešovitom stilu (štafeti) plivači redom koriste sva četiri.",
+      "zanimljivost": "Kraul (slobodno), leđno, prsno i delfin. U disciplini „mešovito“ – pojedinačno i u štafeti – plivaju se sva četiri, svaki na jednoj deonici.",
       "rec": "plivanje"
     },
     {
       "tezina": 2,
       "pitanje": "Koji je najbrži stil plivanja?",
       "odgovori": [
-        "Kraul (slobodni stil)",
-        "Prsno (takozvani žablji stil)",
-        "Leđno (plivanje na leđima)",
-        "Delfin (takozvani leptir stil)"
+        "Kraul",
+        "Prsno",
+        "Leđno",
+        "Delfin"
       ],
       "zanimljivost": "U trkama „slobodnim stilom“ plivači mogu da plivaju kako hoće, ali svi plivaju kraul jer je najbrži.",
       "rec": "kraul"
@@ -876,7 +859,7 @@
         "Mesi",
         "Ronaldo"
       ],
-      "zanimljivost": "Pele je postigao preko 1.000 golova u karijeri. Prvo Svetsko prvenstvo je osvojio sa samo 17 godina, 1958.",
+      "zanimljivost": "Pravo ime mu je Edson Arantes do Nasimento. Pele je postigao preko 1.000 golova u karijeri, a jedini je fudbaler sa tri titule svetskog prvaka.",
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/pele.jpg",
@@ -902,21 +885,16 @@
       "rec": "mesi"
     },
     {
-      "tezina": 2,
-      "pitanje": "Koji košarkaš je osvojio 6 NBA titula sa Čikago Bulsima?",
+      "tezina": 1,
+      "pitanje": "U kom sportu se takmičio čuveni Muhamed Ali?",
       "odgovori": [
-        "Majkl Džordan",
-        "Lebron Džejms",
-        "Kobi Brajant",
-        "Medžik Džonson"
+        "U boksu",
+        "U rvanju",
+        "U karateu",
+        "U džudou"
       ],
-      "zanimljivost": "Džordan je u srednjoj školi bio isključen iz prvog tima. Kasnije je to opisivao kao motivaciju da postane najbolji.",
-      "medijiOdgovora": {
-        "vrsta": "slika",
-        "src": "slike/dzordan.jpg",
-        "opis": "Majkl Džordan"
-      },
-      "rec": "džordan"
+      "zanimljivost": "Pravo ime mu je bilo Kasijus Klej, a sa 18 godina postao je olimpijski šampion u Rimu 1960. Čuvena je njegova rečenica: „Lebdi kao leptir, ubodi kao pčela.“",
+      "rec": "boks"
     },
     {
       "tezina": 2,
@@ -937,14 +915,14 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Koji srpski košarkaš je bio poznat po šutu i igrao za Sakramento Kingse?",
+      "pitanje": "Koji srpski košarkaš, čuveni šuter Sakramento Kingsa, postao je NBA šampion 2011. sa Dalasom?",
       "odgovori": [
         "Peđa Stojaković",
         "Vlade Divac",
-        "Bogdan Bogdanović",
-        "Vasilije Micić"
+        "Nenad Krstić",
+        "Vladimir Radmanović"
       ],
-      "zanimljivost": "Stojaković je dva puta pobedio na NBA takmičenju u šutiranju trojki. Sa Dalasom je 2011. osvojio NBA titulu.",
+      "zanimljivost": "Stojaković je dva puta zaredom (2002. i 2003) pobedio na NBA takmičenju u šutiranju trojki. Rođen je u Požegi, u Hrvatskoj, a karijeru je počeo u Crvenoj zvezdi.",
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/stojakovic.jpg",
@@ -961,7 +939,7 @@
         "Dušan Ivković",
         "Saša Đorđević"
       ],
-      "zanimljivost": "Željko Obradović je prvake Evrope vodio sa Partizanom, Badalonom, Realom, Panatinaikosom (pet puta) i Fenerbahčeom. Prvu titulu, sa Partizanom 1992, osvojio je u prvoj trenerskoj sezoni!",
+      "zanimljivost": "Željko Obradović je prvake Evrope vodio sa Partizanom, Badalonom, Realom, Panatinaikosom (pet puta) i Fenerbahčeom. Najviše titula osvojio je baš sa grčkim klubom.",
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/obradovic.jpg",
@@ -971,15 +949,15 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Koji košarkaški klub je postao prvak Evrope 1992. godine, igrajući domaće utakmice u Španiji?",
+      "pitanje": "Koja zemlja je bila domaćin Zimskih olimpijskih igara 2026?",
       "odgovori": [
-        "Partizan",
-        "Crvena zvezda",
-        "Budućnost",
-        "Cibona"
+        "Italija",
+        "Francuska",
+        "Švajcarska",
+        "Austrija"
       ],
-      "zanimljivost": "Zbog sankcija Partizan je domaće utakmice igrao u Fuenlabradi kod Madrida. Pobedu u finalu donela je čuvena trojka Aleksandra Đorđevića u poslednjoj sekundi.",
-      "rec": "partizan"
+      "zanimljivost": "Igre su održane u Milanu i Kortini d’Ampeco – prvi put da Zimske igre zvanično nose imena dva grada. Italija je ranije bila domaćin 1956. (Kortina) i 2006. (Torino).",
+      "rec": "italija"
     },
     {
       "pitanje": "Koji srpski plivač je na OI u Pekingu 2008. izgubio zlato od Majkla Felpsa za samo jednu stotinku sekunde (100 m delfin)?",
@@ -987,7 +965,7 @@
         "Milorad Čavić",
         "Velimir Stjepanović",
         "Andrej Barna",
-        "Nemanja Majdov"
+        "Ivan Lenđer"
       ],
       "tezina": 3,
       "zanimljivost": "Čavić je do cilja doplivao prvi, ali je Felps jače udario u ploču i zaustavio vreme stotinku ranije. Snimci iz brze kamere potvrdili su rezultat – Čavić je osvojio srebro, a godinu dana kasnije postao svetski prvak na 50 m delfin.",
@@ -1000,12 +978,12 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Koliko poena je „ejs“ u tenisu?",
+      "pitanje": "Šta je „ejs“ u tenisu?",
       "odgovori": [
-        "Jedan poen – servis koji protivnik ne dodirne",
-        "Ceo gem odjednom, bez obzira na trenutni rezultat",
-        "Dva poena, jer je servis bio veoma jak",
-        "Ništa – samo pohvala"
+        "Servis koji protivnik ne dodirne",
+        "Servis koji okrzne mrežu",
+        "Dve greške na servisu zaredom",
+        "Poen osvojen volejom kod mreže"
       ],
       "zanimljivost": "Najbrži izmereni servis prelazi 260 km/h. Džon Isner ima rekord od preko 14.000 ejseva u karijeri.",
       "rec": "servis"
@@ -1016,8 +994,8 @@
       "odgovori": [
         "Fozberi flop",
         "Makaze",
-        "Straddle",
-        "Skok udalj"
+        "Ventralni stil",
+        "Istočni valjak"
       ],
       "zanimljivost": "Dik Fozberi je ovim stilom 1968. osvojio olimpijsko zlato. Do tada su svi skakali licem ka letvici, a danas skoro svi skaču leđima.",
       "medijiOdgovora": {
@@ -1048,7 +1026,7 @@
       "tezina": 2,
       "pitanje": "Koja je zemlja domaćin Olimpijskih igara 2024?",
       "odgovori": [
-        "Francuska (Pariz)",
+        "Francuska",
         "Japan",
         "SAD",
         "Velika Britanija"
@@ -1077,12 +1055,12 @@
       "pitanje": "Koliko je dug polumaraton?",
       "odgovori": [
         "21,0975 km",
-        "25 km",
         "20 km",
-        "15 km"
+        "25 km",
+        "19,5 km"
       ],
       "tezina": 2,
-      "zanimljivost": "Polumaraton je tačno pola maratona. Beogradski maraton, koji se trči od 1988, ima i trku na polumaratonskoj stazi, u kojoj učestvuje mnogo više trkača nego u celom maratonu.",
+      "zanimljivost": "Polumaraton je najomiljenija duga trka rekreativaca – mnogi njime počnu pre nego što se odvaže na ceo maraton. Najbolji trkači ga istrče za manje od sat vremena!",
       "rec": "trka"
     },
     {
@@ -1170,7 +1148,7 @@
         "Tri pobede zaredom u istom takmičenju za jedan klub"
       ],
       "zanimljivost": "Izraz potiče iz kriketa: igrač koji bi oborio tri vratnice zaredom dobijao je novi šešir (hat).",
-      "rec": "hetrik"
+      "rec": "gol"
     },
     {
       "tezina": 3,
@@ -1239,7 +1217,7 @@
         "Ivana Španović",
         "Tijana Bošković"
       ],
-      "zanimljivost": "Karate je na Olimpijskim igrama bio samo u Tokiju 2020. Jovana Preković je u finalu pobedila Kineskinju Jin Siaojan.",
+      "zanimljivost": "Do 2024. karate je na Olimpijskim igrama bio samo u Tokiju 2020. Jovana Preković je u finalu pobedila Kineskinju Jin Siaojan.",
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/prekovic.jpg",
@@ -1253,7 +1231,7 @@
       "odgovori": [
         "Jasna Šekarić",
         "Ivana Maksimović",
-        "Bobana Velićković",
+        "Bobana Veličković",
         "Zorana Arunović"
       ],
       "zanimljivost": "Jasna Šekarić je jedna od najuspešnijih streljačica u istoriji – nastupala je na sedam Olimpijskih igara!",
@@ -1266,14 +1244,14 @@
     },
     {
       "tezina": 3,
-      "pitanje": "Koliko je Đoković osvojio titula na Australijan openu?",
+      "pitanje": "Koliko je Đoković osvojio titula na Australijan openu do 2026?",
       "odgovori": [
         "10",
         "7",
         "5",
         "14"
       ],
-      "zanimljivost": "Australijan open je Novakov najuspešniji turnir. Rafael Nadal ima rekordnih 14 titula na Rolan Garosu.",
+      "zanimljivost": "Australijan open je prvi grend slem sezone, igra se u Melburnu na tvrdoj podlozi, a Novak je na njemu osvojio najviše titula.",
       "rec": "grend"
     },
     {
@@ -1295,14 +1273,14 @@
     },
     {
       "tezina": 3,
-      "pitanje": "Koja zemlja je izmislila rukomet u modernom obliku?",
+      "pitanje": "Koja skandinavska zemlja je 1898. napisala prva pravila modernog rukometa?",
       "odgovori": [
-        "Danska (i Nemačka)",
-        "Srbija (Jugoslavija)",
-        "Francuska (Pariz i Lion)",
-        "Brazil (Rio de Žaneiro)"
+        "Danska",
+        "Švedska",
+        "Norveška",
+        "Finska"
       ],
-      "zanimljivost": "Pravila su postavljena krajem 19. i početkom 20. veka. Francuska i Danska su danas među najjačim rukometnim zemljama.",
+      "zanimljivost": "Pravila su postavljena krajem 19. i početkom 20. veka. Na terenu dužine 40 m i širine 20 m igraju se dva tima od po sedam igrača.",
       "rec": "rukomet"
     },
     {
@@ -1314,7 +1292,7 @@
         "Španija",
         "Litvanija"
       ],
-      "zanimljivost": "Jugoslavija (SFRJ i SR Jugoslavija) bila je prvak 1970, 1978, 1990, 1998. i 2002. Srbija je osvojila srebro 2014. i 2023.",
+      "zanimljivost": "Svetsko prvenstvo u košarci se od 2019. igra sa 32 reprezentacije, a na njemu igraju i profesionalci iz NBA lige.",
       "rec": "košarka"
     },
     {
@@ -1356,7 +1334,7 @@
       "pitanje": "Koji atletičar je prvi istrčao maraton ispod 2 sata (2019, neslužbeno)?",
       "odgovori": [
         "Elijud Kipčoge",
-        "Jusein Bolt",
+        "Kenenisa Bekele",
         "Mo Fara",
         "Abebe Bikila"
       ],
@@ -1387,7 +1365,7 @@
     },
     {
       "tezina": 3,
-      "pitanje": "Koja gimnastičarka ima najviše medalja na Svetskim prvenstvima u istoriji?",
+      "pitanje": "Koja gimnastičarka ima najviše medalja na Svetskim prvenstvima u istoriji (do 2025)?",
       "odgovori": [
         "Simon Bajls",
         "Nadja Komaneči",

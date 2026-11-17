@@ -971,12 +971,12 @@
   {
    "lekcija": 1,
    "tezina": 3,
-   "pitanje": "Gepard za $2 s$ iz mirovanja dostigne brzinu $72 km/h$. Koliko je njegovo srednje ubrzanje? (Uporedi ga sa ubrzanjem slobodnog pada $g ≈ 10 m/s^{2}$.)",
+   "pitanje": "Gepard za $2 s$ iz mirovanja dostigne brzinu $72 km/h$. Koliko je njegovo srednje ubrzanje?",
    "odgovori": [
-    "$10 m/s^{2}$ – kao $g$",
-    "$36 m/s^{2}$ – više od $g$",
-    "$20 m/s^{2}$ – dvaput više od $g$",
-    "$5 m/s^{2}$ – pola od $g$"
+    "$10 m/s^{2}$",
+    "$36 m/s^{2}$",
+    "$20 m/s^{2}$",
+    "$5 m/s^{2}$"
    ],
    "mediji": {
     "vrsta": "fizika",
@@ -2955,8 +2955,10 @@
     ],
     "duzina": 300,
     "podeok": 50,
+    "natpisi": 99,
     "vektor": true,
-    "tempo": 4
+    "tempo": 4,
+    "sat": false
    },
    "resenje": [
     {
@@ -3104,7 +3106,7 @@
      ]
     },
     {
-     "t": "Pazi: tada ga A još nije stigao – B je do tada prešao više puta (to se vidi kao površina ispod grafika).",
+     "t": "Pazi: u tom trenutku A još nije stigao B – B je prešao $72 m$, a A samo $36 m$ (površine ispod grafika).",
      "i": [
       "pa",
       "pb"
@@ -3461,7 +3463,7 @@
      ]
     },
     {
-     "t": "Za $2 s$ pre trenutka $2 s$ brzina je bila manja za $2 s · 3 m/s^{2} = 6 m/s$."
+     "t": "Od trenutka $0 s$ do $2 s$ brzina se poveća za $2 s · 3 m/s^{2} = 6 m/s$."
     },
     {
      "t": "$v_{0} = 7 m/s − 6 m/s = 1 m/s$.",
@@ -11680,7 +11682,7 @@
   {
    "lekcija": 10,
    "tezina": 2,
-   "pitanje": "Dete mase $30 kg$ sedi na ljuljašci koja visi o dva uspravna lanca. Kolika sila zateže svaki lanac? ($g = 10 m/s^{2}$)",
+   "pitanje": "Dete mase $30 kg$ sedi u sredini ljuljaške koja visi o dva uspravna lanca. Kolika sila zateže svaki lanac? ($g = 10 m/s^{2}$)",
    "odgovori": [
     "$150 N$",
     "$300 N$",
@@ -13177,7 +13179,7 @@
   {
    "lekcija": 12,
    "tezina": 1,
-   "pitanje": "Isto jaje potopimo jednom u običnu, a jednom u slanu vodu (gušću). Gde je sila potiska na potopljeno jaje veća?",
+   "pitanje": "Isto jaje držimo potpuno pod vodom: jednom u običnoj, a jednom u slanoj vodi (gušćoj). U kojoj je sila potiska na jaje veća?",
    "odgovori": [
     "U slanoj vodi",
     "U običnoj vodi",
@@ -13189,7 +13191,7 @@
      "t": "$F_{p} = ρ g V$: zapremina jajeta je ista, a slana voda ima veću gustinu."
     },
     {
-     "t": "Zato je potisak veći u slanoj vodi – jaje u dovoljno slanoj vodi čak ispliva.",
+     "t": "Zato je potisak veći u slanoj vodi. (Jaje koje tone u običnoj vodi u dovoljno slanoj vodi čak ispliva.)",
      "crtez": {
       "vrsta": "fizika",
       "scena": "tecnost",
@@ -18059,13 +18061,7 @@
      "K"
     ],
     "od": -10,
-    "do": 30,
-    "tacke": [
-     {
-      "c": 4,
-      "o": "~najveća gustina"
-     }
-    ]
+    "do": 30
    },
    "resenje": [
     {
@@ -18277,7 +18273,6 @@
     "scena": "kalorimetar",
     "tip": "grejanje",
     "m": "0,5 kg",
-    "e": "🔩",
     "t1": 20,
     "t2": 60,
     "Q": "9,2 kJ",
@@ -19102,7 +19097,7 @@
     "Toplota prelazi sa čaja na šolju dok im se temperature ne izjednače",
     "Hladnoća prelazi sa šolje na čaj",
     "Toplota prelazi sa šolje na čaj",
-    "Ništa – svako telo zadržava svoju temperaturu"
+    "Toplota naizmenično prelazi sa čaja na šolju i obrnuto"
    ],
    "resenje": [
     {

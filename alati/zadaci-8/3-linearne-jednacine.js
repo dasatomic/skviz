@@ -15,10 +15,10 @@ module.exports = ({ L, Z, G, K, proveri }) => {
     [K('Nepoznatu nalazimo deljenjem: $x = {21|3} = 7$.'),
      K('Provera: $3 · 7 = 21$ ✓')]);
 
-  Z(2, 'Da li je broj $−3$ rešenje jednačine $2x − 1 = −7$?',
-    ['Da', 'Ne', 'Ne može se odrediti', 'Samo ako je x pozitivno'],
-    [K('Uvrstimo $x = −3$: $2 · (−3) − 1 = −6 − 1 = −7$.'),
-     K('Leva strana je jednaka desnoj, pa $−3$ jeste rešenje.')]);
+  Z(2, 'Koji broj je rešenje jednačine $2x − 1 = −7$?',
+    ['$−3$', '$3$', '$−4$', '$−6$'],
+    [K('Dodamo $1$: $2x = −6$, pa je $x = −3$.'),
+     K('Provera: $2 · (−3) − 1 = −6 − 1 = −7$ ✓')]);
 
   Z(2, 'Jednačina $x + 3 = x + 7$…',
     ['nema rešenja', 'ima tačno jedno rešenje', 'ima beskonačno mnogo rešenja', 'ima rešenje 4'],
@@ -66,7 +66,7 @@ module.exports = ({ L, Z, G, K, proveri }) => {
      K('Isto važi za oduzimanje, množenje i deljenje obe strane istim brojem različitim od nule.')]);
 
   Z(2, 'Koju operaciju NE smemo da primenimo na jednačinu da bi ostala ekvivalentna?',
-    ['Množenje obe strane nulom', 'Dodavanje istog broja', 'Oduzimanje istog broja', 'Deljenje istim brojem (≠ 0)'],
+    ['Množenje obe strane nulom', 'Dodavanje istog broja', 'Oduzimanje istog broja', 'Deljenje istim brojem'],
     [K('Množenje obe strane nulom daje $0 = 0$, što je uvek tačno – izgubimo informaciju o rešenju.'),
      K('Zato je množenje nulom zabranjena transformacija.'),
      K('Deljenje nulom je takođe nemoguće.')]);
@@ -78,7 +78,7 @@ module.exports = ({ L, Z, G, K, proveri }) => {
      K('Deljenje obe strane istim brojem (različitim od nule) je ekvivalentna transformacija.')]);
 
   Z(3, 'Kojom transformacijom se iz $x − 5 = 2$ dobija $x = 7$?',
-    ['Dodavanjem 5 obema stranama', 'Oduzimanjem 5', 'Množenjem sa 5', 'Deljenjem sa 5'],
+    ['Dodavanjem 5', 'Oduzimanjem 5', 'Množenjem sa 5', 'Deljenjem sa 5'],
     [K('$x − 5 + 5 = 2 + 5$'),
      K('$x = 7$'),
      K('„Prebacivanje“ broja na drugu stranu sa promenom znaka je isto što i dodavanje/oduzimanje obema stranama.')]);
@@ -157,11 +157,11 @@ module.exports = ({ L, Z, G, K, proveri }) => {
      K('$x = 0$, a uslov $x ≠ 2$ je zadovoljen.'),
      K('Rešenje: $x = 0$.')]);
 
-  Z(2, 'Reši jednačinu $x² = 4x$ tako što je svedeš na linearnu (podeli sa $x$, uz uslov $x ≠ 0$).',
-    ['4', '0', '−4', '2'],
-    [K('Delimo sa $x$ (uz $x ≠ 0$): $x = 4$.'),
-     K('Pazi: $x = 0$ je takođe rešenje polazne jednačine, ali ga ovde isključujemo uslovom.'),
-     K('Pod datim uslovom, rešenje je $4$.')]);
+  Z(2, 'Jednačina $x² = 5x$ ima dva rešenja. Jedno je $x = 0$. Koje je drugo?',
+    ['5', '−5', '1', '10'],
+    [K('Delimo sa $x$ (uz $x ≠ 0$): $x = 5$.'),
+     K('Ili: $x² − 5x = 0$, tj. $x(x − 5) = 0$, pa je $x = 0$ ili $x = 5$.'),
+     K('Provera: $5² = 25 = 5 · 5$ ✓')]);
 
   Z(3, 'Reši jednačinu ${2|x + 1} = 1$ (uz uslov $x ≠ −1$).',
     ['1', '2', '−1', '0'],
@@ -262,10 +262,10 @@ module.exports = ({ L, Z, G, K, proveri }) => {
     [K('Stroga nejednakost $x > 3$ važi za sve brojeve veće od $3$ (broj $3$ ne pripada rešenju).'),
      K('Da je pisalo $x ≥ 3$, tada bi i $3$ bilo rešenje.')]);
 
-  Z(2, 'Da li je broj $−2$ rešenje nejednačine $2x + 1 < 0$?',
-    ['Da', 'Ne', 'Ne može se odrediti', 'Samo ako je x celo'],
+  Z(2, 'Koji broj je rešenje nejednačine $2x + 1 < 0$?',
+    ['$−2$', '$0$', '$1$', '$2$'],
     [K('Uvrstimo: $2 · (−2) + 1 = −4 + 1 = −3 < 0$ ✓'),
-     K('Dakle $−2$ jeste rešenje.')]);
+     K('Za $0$, $1$ i $2$ leva strana je $1$, $3$ ili $5$ – pozitivna, pa nisu rešenja.')]);
 
   Z(3, 'Skup rešenja nejednačine $x ≤ 5$ na brojevnoj pravoj predstavlja se…',
     ['zrakom ulevo sa punom tačkom na 5', 'zrakom udesno sa praznom tačkom', 'samo tačkom 5', 'celom brojevnom pravom'],
@@ -350,8 +350,8 @@ module.exports = ({ L, Z, G, K, proveri }) => {
 
   Z(2, 'Za prevoz više od $120$ učenika koriste se autobusi koji primaju po $45$ učenika. Koliko najmanje autobusa treba?',
     ['3', '2', '4', '5'],
-    [K('Tražimo najmanji ceo broj $n$ takav da je $45n ≥ 120$.'),
-     K('$n ≥ {120|45} = 2,67$, pa je najmanji ceo broj $3$.'),
+    [K('Tražimo najmanji ceo broj $n$ takav da je $45n > 120$.'),
+     K('$n > {120|45} = 2,67$, pa je najmanji ceo broj $3$.'),
      K('Provera: $3 · 45 = 135 ≥ 120$ ✓; $2$ autobusa ($90$) nije dovoljno.')]);
 
   Z(2, 'Milan ima $500$ dinara. Sveška košta $60$ dinara, a olovka $35$. Ako kupi jednu svesku, koliko najviše olovaka može da kupi?',
@@ -367,7 +367,7 @@ module.exports = ({ L, Z, G, K, proveri }) => {
      K('Dužina mora biti i pozitivna, pa je $0 < a < 17 cm$.')]);
 
   Z(3, 'Za koje prirodne brojeve $n$ važi da je zbir broja i njegove polovine manji od $9$?',
-    ['$n < 6$, tj. $1,2,3,4,5$', '$n < 9$', '$n < 4$', '$n > 6$'],
+    ['$n < 6$', '$n < 9$', '$n < 4$', '$n > 6$'],
     [K('$n + {n|2} < 9$, tj. ${3n|2} < 9$.'),
      K('$3n < 18$, pa je $n < 6$.'),
      K('Prirodni brojevi manji od $6$ su $1, 2, 3, 4, 5$.')]);
@@ -383,14 +383,14 @@ module.exports = ({ L, Z, G, K, proveri }) => {
     ['8', '2', '6', '4'],
     [K('Množimo sa $2$: $x = 8$.'),
      K('Provera: ${8|2} = 4$ ✓')]);
-  Z(2, 'Da li je broj $5$ rešenje jednačine $3x − 1 = 14$?',
-    ['Da', 'Ne', 'Ne može se odrediti', 'Samo ako je x paran'],
-    [K('Uvrstimo $x = 5$: $3 · 5 − 1 = 15 − 1 = 14$.'),
-     K('Leva strana je jednaka desnoj, pa $5$ jeste rešenje.')]);
-  Z(2, 'Da li je broj $0$ rešenje jednačine $x + 2 = 2$?',
-    ['Da', 'Ne', 'Ne može se odrediti', 'Samo ako je x negativan'],
-    [K('$0 + 2 = 2$ ✓'),
-     K('Nula je rešenje.')]);
+  Z(2, 'Koji broj je rešenje jednačine $3x − 1 = 14$?',
+    ['$5$', '$4$', '$15$', '$3$'],
+    [K('Dodamo $1$: $3x = 15$, pa je $x = 5$.'),
+     K('Provera: $3 · 5 − 1 = 15 − 1 = 14$ ✓')]);
+  Z(2, 'Koji broj je rešenje jednačine $x + 2 = 2$?',
+    ['$0$', '$2$', '$4$', '$−2$'],
+    [K('Oduzmemo $2$: $x = 2 − 2 = 0$.'),
+     K('Provera: $0 + 2 = 2$ ✓')]);
   Z(2, 'Koji broj je rešenje jednačine $7 = x + 2$?',
     ['5', '9', '−5', '2'],
     [K('$x = 7 − 2 = 5$.'),
@@ -506,10 +506,10 @@ module.exports = ({ L, Z, G, K, proveri }) => {
     ['1', '2', '−1', '0'],
     [K('$2x = x + 1$'),
      K('$x = 1$.')]);
-  Z(3, 'Reši jednačinu $x² = 3x$ tako što je svedeš na linearnu (podeli sa $x$, uz uslov $x ≠ 0$).',
-    ['3', '0', '−3', '1'],
-    [K('Delimo sa $x$ (uz $x ≠ 0$): $x = 3$.'),
-     K('Pod datim uslovom rešenje je $3$.')]);
+  Z(3, 'Jednačina $x² = 9x$ ima dva rešenja. Jedno je $x = 0$. Koje je drugo?',
+    ['9', '−9', '3', '18'],
+    [K('Delimo sa $x$ (uz $x ≠ 0$): $x = 9$.'),
+     K('Ili: $x(x − 9) = 0$, pa je $x = 0$ ili $x = 9$.')]);
   Z(3, 'Reši jednačinu ${x − 2|x + 3} = {1|2}$ (uz uslov $x ≠ −3$).',
     ['7', '5', '3', '6'],
     [K('$2(x − 2) = x + 3$'),
@@ -598,12 +598,12 @@ module.exports = ({ L, Z, G, K, proveri }) => {
   Z(1, 'Koji brojevi su rešenja nejednačine $x < 2$?',
     ['Svi brojevi manji od 2', 'Samo broj 2', 'Svi brojevi veći od 2', 'Brojevi 2 i manji'],
     [K('Stroga nejednakost $x < 2$: svi brojevi manji od $2$, a $2$ nije rešenje.')]);
-  Z(2, 'Da li je broj $3$ rešenje nejednačine $x ≥ 3$?',
-    ['Da', 'Ne', 'Ne može se odrediti', 'Samo ako je x veće od 3'],
-    [K('$3 ≥ 3$ je tačno, pa $3$ jeste rešenje.')]);
-  Z(2, 'Da li je broj $−1$ rešenje nejednačine $x > 0$?',
-    ['Ne', 'Da', 'Ne može se odrediti', 'Samo ako je x celo'],
-    [K('$−1 > 0$ je netačno, pa $−1$ nije rešenje.')]);
+  Z(2, 'Koji broj je rešenje nejednačine $x ≥ 3$?',
+    ['$3$', '$2$', '$−4$', '$1$'],
+    [K('$3 ≥ 3$ je tačno, pa $3$ jeste rešenje; ostali brojevi nisu veći ili jednaki $3$.')]);
+  Z(2, 'Koji broj je rešenje nejednačine $x > 0$?',
+    ['$2$', '$0$', '$−1$', '$−5$'],
+    [K('Od ponuđenih, samo je $2 > 0$ tačno; $0$ nije veće od $0$, a $−1$ i $−5$ su negativni.')]);
   Z(3, 'Skup rešenja nejednačine $x ≥ 4$ na brojevnoj pravoj predstavlja se…',
     ['zrakom udesno sa punom tačkom na 4', 'zrakom ulevo sa punom tačkom', 'zrakom udesno sa praznom tačkom', 'samo tačkom 4'],
     [K('$x ≥ 4$: svi brojevi veći ili jednaki $4$ – zrak udesno.'),
@@ -695,7 +695,7 @@ module.exports = ({ L, Z, G, K, proveri }) => {
     [K('$2(a + 10) < 60$, pa je $a + 10 < 30$.'),
      K('$a < 20 cm$.')]);
   Z(3, 'Za koje prirodne brojeve $n$ važi da je $n + {n|2} < 12$?',
-    ['$n < 8$, tj. $1, 2, …, 7$', '$n < 12$', '$n < 6$', '$n < 10$'],
+    ['$n < 8$', '$n < 12$', '$n < 6$', '$n < 10$'],
     [K('${3n|2} < 12$, pa je $3n < 24$ i $n < 8$.'),
      K('Prirodni brojevi manji od $8$ su $1, 2, …, 7$.')]);
   Z(3, 'Za priredbu je potrebno obezbediti bar $90$ mesta. Jedan sto prima $8$ osoba. Koliko najmanje stolova treba?',

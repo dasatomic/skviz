@@ -502,7 +502,7 @@
    "pitanje": "Duži $a$ i $b$ odnose se kao $4 : 7$, a duži $b$ i $c$ kao $7 : 2$. Koliko se odnose $a$ i $c$?",
    "odgovori": [
     "$2 : 1$",
-    "$4 : 2$",
+    "$7 : 2$",
     "$7 : 4$",
     "$4 : 7$"
    ],
@@ -704,7 +704,7 @@
   {
    "lekcija": 2,
    "tezina": 1,
-   "pitanje": "Paralelne prave seku krake ugla i na jednom kraku odsecaju duži $5 cm$ i $3 cm$. Ako je na drugom kraku prva (kraća) duž $7,5 cm$, kolika je druga?",
+   "pitanje": "Paralelne prave seku krake ugla i na jednom kraku odsecaju duži $5 cm$ i $3 cm$. Na drugom kraku duž koja odgovara duži $5 cm$ duga je $7,5 cm$. Kolika je duž koja odgovara duži $3 cm$?",
    "odgovori": [
     "$4,5 cm$",
     "$5 cm$",
@@ -1253,22 +1253,22 @@
   {
    "lekcija": 3,
    "tezina": 1,
-   "pitanje": "Duž dugu $10 cm$ treba podeliti na $4$ jednaka dela. Koju dužinu nanesemo na pomoćni zrak?",
+   "pitanje": "Duž dugu $10 cm$ treba podeliti na $4$ jednaka dela Talesovom konstrukcijom. Koliko i kakvih duži nanosimo na pomoćni zrak?",
    "odgovori": [
-    "Bilo koju, $4$ puta",
-    "Tačno $10 cm$, $4$ puta",
-    "Tačno $2,5 cm$",
-    "Duž mora biti celobrojna"
+    "Četiri jednake duži",
+    "Jednu duž od $2,5 cm$",
+    "Dve duži od $5 cm$",
+    "Pet jednakih duži"
    ],
    "resenje": [
     {
-     "t": "Na pomoćni zrak iz jednog kraja duži nanesemo proizvoljnu (ali uvek istu!) duž četiri puta."
+     "t": "Na pomoćni zrak iz jednog kraja date duži nanesemo četiri jednake duži – njihova dužina može biti proizvoljna."
     },
     {
-     "t": "Poslednju tačku spojimo sa drugim krajem duži, pa kroz ostale tačke povučemo paralelne prave."
+     "t": "Poslednju tačku spojimo sa drugim krajem date duži, pa kroz ostale tačke povučemo paralelne prave."
     },
     {
-     "t": "Po Talesovoj teoremi one dele datu duž na $4$ jednaka dela. (Svaki deo bi bio $2,5 cm$, ali ga ne merimo – konstruišemo.)"
+     "t": "Po Talesovoj teoremi one dele datu duž na $4$ jednaka dela. Pomoćnih duži mora biti onoliko koliko i delova."
     }
    ]
   },
@@ -1277,7 +1277,7 @@
    "tezina": 2,
    "pitanje": "Duž dugu $9 cm$ treba podeliti u razmeri $2 : 3$. Na pomoćni zrak nanesemo $5$ jednakih duži. Koju tačku na zraku spajamo sa krajem date duži?",
    "odgovori": [
-    "Petu (poslednju)",
+    "Petu",
     "Treću",
     "Drugu",
     "Prvu"
@@ -1346,17 +1346,17 @@
     "$3 cm$",
     "$4 cm$",
     "$3,5 cm$",
-    "$2,3 cm$"
+    "$1 cm$"
    ],
    "resenje": [
     {
      "t": "$3 + 4 = 7$ jednakih delova; cela duž je $7 cm$, pa je jedan deo tačno $1 cm$."
     },
     {
-     "t": "Bliži kraj je onaj od koga se broji razmera – od njega je $3$ dela, tj. $3 cm$."
+     "t": "Od jednog kraja tačka $M$ je udaljena $3$ dela, a od drugog $4$ dela. Bliži je kraj od kog je $3$ dela, pa je odgovor $3 cm$."
     },
     {
-     "t": "Drugi deo je $4 cm$; provera $3 + 4 = 7$ ✓."
+     "t": "Provera: $3 + 4 = 7$ ✓."
     }
    ]
   },
@@ -1366,7 +1366,7 @@
    "pitanje": "Da bismo duž podelili na $5$ jednakih delova, na pomoćni zrak nanosimo:",
    "odgovori": [
     "5 jednakih duži",
-    "5 proizvoljnih duži",
+    "5 duži različite dužine",
     "jednu duž",
     "duž cele dužine"
    ],
@@ -1683,7 +1683,7 @@
     "SSS",
     "SUS",
     "UU",
-    "Nisu slični"
+    "SSU"
    ],
    "resenje": [
     {
@@ -1705,7 +1705,7 @@
     "SUS",
     "SSS",
     "UU",
-    "Ne mogu se uporediti"
+    "SSU"
    ],
    "resenje": [
     {
@@ -1749,7 +1749,7 @@
     "Slični su",
     "Podudarni su",
     "Imaju jednake hipotenuze",
-    "Ništa ne možemo reći"
+    "Imaju jednake katete"
    ],
    "resenje": [
     {
@@ -1807,16 +1807,16 @@
       0
      ],
      "C": [
-      4,
-      8
+      4.5,
+      6.614
      ],
      "D": [
       4,
       0
      ],
      "E": [
-      1.33,
-      2.67
+      1.5,
+      2.205
      ]
     },
     "e": [
@@ -1887,7 +1887,7 @@
     "SSS",
     "SUS",
     "UU",
-    "Nisu slični"
+    "SSU"
    ],
    "resenje": [
     {
@@ -1900,10 +1900,10 @@
    "tezina": 3,
    "pitanje": "Trouglovi imaju stranice $3, 4, 5$ i $6, 8, 12$. Jesu li slični?",
    "odgovori": [
-    "Ne",
     "Da, po SSS",
     "Da, po SUS",
-    "Da, po UU"
+    "Da, po UU",
+    "Ne, jer $12 : 5 ≠ 2$"
    ],
    "resenje": [
     {
@@ -2105,8 +2105,7 @@
       "o": "9"
      },
      {
-      "d": "DB",
-      "o": "16"
+      "d": "DB"
      }
     ]
    },
@@ -2177,8 +2176,7 @@
       "o": "7,2"
      },
      {
-      "d": "DB",
-      "o": "12,8"
+      "d": "DB"
      }
     ]
    },
@@ -2197,22 +2195,22 @@
   {
    "lekcija": 6,
    "tezina": 3,
-   "pitanje": "U pravouglom trouglu visina na hipotenuzu je $h = 4,8 cm$, a hipotenuza $c = 10 cm$. Koliki su odsečci hipotenuze?",
+   "pitanje": "U pravouglom trouglu odsečci hipotenuze na koje visina deli hipotenuzu su $2 cm$ i $8 cm$. Kolika je visina?",
    "odgovori": [
-    "$3,6 cm$ i $6,4 cm$",
-    "$4 cm$ i $6 cm$",
-    "$2 cm$ i $8 cm$",
-    "$4,8 cm$ i $5,2 cm$"
+    "$4 cm$",
+    "$5 cm$",
+    "$3 cm$",
+    "$16 cm$"
    ],
    "resenje": [
     {
-     "t": "$h² = p · q$, a $p + q = c = 10$. Dakle $p · q = 4,8² = 23,04$ i $p + q = 10$."
+     "t": "Hipotenuza je $c = 2 + 8 = 10 cm$. Po Euklidovoj teoremi $h² = p · q = 2 · 8 = 16$, pa je $h = 4 cm$.",
+     "i": [
+      "h"
+     ]
     },
     {
-     "t": "Rešenja jednačine $x² − 10x + 23,04 = 0$ su $3,6$ i $6,4$."
-    },
-    {
-     "t": "Provera: $3,6 · 6,4 = 23,04$ i $3,6 + 6,4 = 10$ ✓. Katete su $6 cm$ i $8 cm$."
+     "t": "Provera: katete su $a = √{c · p} = √{20}$ i $b = √{c · q} = √{80}$, a $20 + 80 = 100 = 10²$ ✓."
     }
    ]
   },
@@ -2517,7 +2515,7 @@
   {
    "lekcija": 8,
    "tezina": 2,
-   "pitanje": "Koliko najviše pravih može proći kroz $4$ tačke u istoj ravni, ako nikoje tri nisu kolinearne?",
+   "pitanje": "Koliko najviše pravih određuju $4$ tačke u istoj ravni, ako nikoje tri nisu na istoj pravoj?",
    "odgovori": [
     "6",
     "4",
@@ -2609,7 +2607,7 @@
   {
    "lekcija": 8,
    "tezina": 3,
-   "pitanje": "Koliko najviše pravih može proći kroz $3$ nekolinearne tačke?",
+   "pitanje": "Koliko najviše pravih određuju $3$ nekolinearne tačke?",
    "odgovori": [
     "3",
     "1",
@@ -2625,7 +2623,7 @@
   {
    "lekcija": 8,
    "tezina": 3,
-   "pitanje": "Koliko najviše pravih može proći kroz $5$ tačaka, ako nikoje tri nisu kolinearne?",
+   "pitanje": "Koliko najviše pravih određuje $5$ tačaka, ako nikoje tri nisu kolinearne?",
    "odgovori": [
     "10",
     "5",
@@ -2887,7 +2885,7 @@
     "Paralelne su",
     "Seku se",
     "Mimoilazne su",
-    "Podudaraju se"
+    "Normalne su"
    ],
    "resenje": [
     {
@@ -2901,7 +2899,7 @@
   {
    "lekcija": 10,
    "tezina": 3,
-   "pitanje": "Kroz tačku $A$ van prave $p$ može se povući…",
+   "pitanje": "Kroz tačku $A$ van prave $p$, u istoj ravni sa njom, može se povući…",
    "odgovori": [
     "tačno jedna paralela sa $p$",
     "beskonačno mnogo paralela sa $p$",
@@ -2971,16 +2969,16 @@
   {
    "lekcija": 10,
    "tezina": 2,
-   "pitanje": "Ako je $a \\| b$ i $b \\| c$, onda je:",
+   "pitanje": "Ako je $a \\| b$ i $b$ normalna na $c$, onda je:",
    "odgovori": [
+    "$a$ normalna na $c$",
     "$a \\| c$",
-    "$a$ normalno na $c$",
     "$a$ i $c$ se seku",
     "$a$ i $c$ se poklapaju"
    ],
    "resenje": [
     {
-     "t": "Paralelnost je tranzitivna: $a \\| b$ i $b \\| c$ daju $a \\| c$."
+     "t": "Prava $a$ ima pravac prave $b$, a $b$ je normalna na $c$, pa je i $a$ normalna na $c$."
     }
    ]
   },
@@ -3003,16 +3001,16 @@
   {
    "lekcija": 10,
    "tezina": 2,
-   "pitanje": "Koliko zajedničkih tačaka imaju dve prave koje se seku?",
+   "pitanje": "Koliko najviše preseka mogu imati $3$ prave u ravni, ako nikoje dve nisu paralelne i nikoje tri nisu u istoj tački?",
    "odgovori": [
-    "Jednu",
-    "Nijednu",
-    "Dve",
-    "Beskonačno mnogo"
+    "3",
+    "2",
+    "6",
+    "9"
    ],
    "resenje": [
     {
-     "t": "Prave koje se seku imaju tačno jednu zajedničku tačku."
+     "t": "Svake dve prave daju po jedan presek: $C_{3}^{2} = {3 · 2|2} = 3$."
     }
    ]
   },
@@ -3060,7 +3058,7 @@
   {
    "lekcija": 11,
    "tezina": 2,
-   "pitanje": "Na kocki, ivica $AB$ i ivica $EH$ (koje ne leže u istoj ravni) su…",
+   "pitanje": "Na kocki, ivica $AB$ i ivica $EH$ su…",
    "odgovori": [
     "mimoilazne",
     "paralelne",
@@ -3138,16 +3136,16 @@
   {
    "lekcija": 11,
    "tezina": 2,
-   "pitanje": "Mimoilazne prave imaju zajedničkih tačaka:",
+   "pitanje": "Koliko ivica kocke je paralelno sa ivicom $AB$ (ne računajući nju samu)?",
    "odgovori": [
-    "nijednu",
-    "jednu",
-    "dve",
-    "beskonačno mnogo"
+    "3",
+    "4",
+    "2",
+    "6"
    ],
    "resenje": [
     {
-     "t": "Mimoilazne prave se ne seku, pa nemaju zajedničkih tačaka."
+     "t": "Kocka ima po $4$ ivice u svakom od tri pravca; od njih $3$ su paralelne sa $AB$."
     }
    ]
   },
@@ -3195,7 +3193,7 @@
    ],
    "resenje": [
     {
-     "t": "Bočna ivica kvadra je mimoilazna sa $4$ ivice naspramne osnove."
+     "t": "Bočna ivica je mimoilazna sa dve ivice donje osnove i sa dve ivice gornje osnove koje je ne dodiruju."
     }
    ]
   },
@@ -3229,7 +3227,7 @@
     "dve prave u ravni koje se seku",
     "jednu pravu u ravni",
     "sve prave osim jedne",
-    "bilo koju pravu u ravni"
+    "dve paralelne prave u ravni"
    ],
    "resenje": [
     {
@@ -3427,22 +3425,19 @@
   {
    "lekcija": 13,
    "tezina": 3,
-   "pitanje": "Pod i plafon sobe su paralelne ravni. Rastojanje između njih je $2,7 m$. Koliko je rastojanje od poda do tačke na plafonu?",
+   "pitanje": "Pod i plafon sobe su paralelne ravni na rastojanju $2,7 m$. Lampa visi $1,2 m$ ispod plafona. Koliko je lampa udaljena od poda?",
    "odgovori": [
-    "$2,7 m$",
-    "Zavisi od tačke",
-    "$5,4 m$",
-    "$1,35 m$"
+    "$1,5 m$",
+    "$3,9 m$",
+    "$1,2 m$",
+    "$2,7 m$"
    ],
    "resenje": [
     {
-     "t": "Rastojanje između paralelnih ravni je isto u svakoj tački."
+     "t": "Rastojanje između paralelnih ravni je isto u svakoj tački: svaka tačka plafona je na $2,7 m$ od poda."
     },
     {
-     "t": "Sve tačke plafona su na $2,7 m$ od poda."
-    },
-    {
-     "t": "Zato se visina sobe meri bilo gde."
+     "t": "Lampa je $1,2 m$ ispod plafona, pa je od poda udaljena $2,7 − 1,2 = 1,5 m$."
     }
    ]
   },
@@ -3513,16 +3508,16 @@
   {
    "lekcija": 13,
    "tezina": 2,
-   "pitanje": "Zid i plafon sobe seku se po:",
+   "pitanje": "Koliko zajedničkih tačaka imaju dve ravni koje se seku?",
    "odgovori": [
-    "pravoj",
-    "tački",
-    "duži",
-    "krugu"
+    "Beskonačno mnogo",
+    "Jednu",
+    "Dve",
+    "Nijednu"
    ],
    "resenje": [
     {
-     "t": "Zid i plafon su ravni koje se seku duž spoja – prave."
+     "t": "Dve ravni koje se seku imaju zajedničku pravu, a na pravoj ima beskonačno mnogo tačaka."
     }
    ]
   },
@@ -3544,7 +3539,7 @@
   },
   {
    "lekcija": 13,
-   "tezina": 3,
+   "tezina": 1,
    "pitanje": "Pod i plafon sobe su:",
    "odgovori": [
     "paralelne ravni",
@@ -3585,9 +3580,9 @@
    "tezina": 2,
    "pitanje": "Normalna projekcija kose duži na ravan je…",
    "odgovori": [
-    "duž (ili tačka)",
-    "uvek tačka",
-    "uvek duž jednake dužine",
+    "duž",
+    "tačka",
+    "duž jednake dužine",
     "prava"
    ],
    "resenje": [
@@ -3795,7 +3790,7 @@
      "t": "U pravouglom trouglu koji čine duž, projekcija i normala: projekcija je nalegla kateta ugla od $30°$."
     },
     {
-     "t": "Trougao sa uglom od $30°$ je polovina jednakostraničnog trougla: kateta naspram $30°$ je pola hipotenuze, a druga kateta je $5√{3}$ puta veća od nje."
+     "t": "Trougao sa uglom od $30°$ je polovina jednakostraničnog trougla: kateta naspram $30°$ je pola hipotenuze, a druga kateta je $√{3}$ puta duža od nje."
     },
     {
      "t": "Hipotenuza je $10 cm$, pa je kraća kateta (normalna na ravan) $5 cm$, a projekcija (duža kateta) je $5√{3} cm ≈ 8,66 cm$."
@@ -3964,19 +3959,19 @@
   {
    "lekcija": 16,
    "tezina": 2,
-   "pitanje": "Da li je broj $−3$ rešenje jednačine $2x − 1 = −7$?",
+   "pitanje": "Koji broj je rešenje jednačine $2x − 1 = −7$?",
    "odgovori": [
-    "Da",
-    "Ne",
-    "Ne može se odrediti",
-    "Samo ako je x pozitivno"
+    "$−3$",
+    "$3$",
+    "$−4$",
+    "$−6$"
    ],
    "resenje": [
     {
-     "t": "Uvrstimo $x = −3$: $2 · (−3) − 1 = −6 − 1 = −7$."
+     "t": "Dodamo $1$: $2x = −6$, pa je $x = −3$."
     },
     {
-     "t": "Leva strana je jednaka desnoj, pa $−3$ jeste rešenje."
+     "t": "Provera: $2 · (−3) − 1 = −6 − 1 = −7$ ✓"
     }
    ]
   },
@@ -4062,38 +4057,38 @@
   {
    "lekcija": 16,
    "tezina": 2,
-   "pitanje": "Da li je broj $5$ rešenje jednačine $3x − 1 = 14$?",
+   "pitanje": "Koji broj je rešenje jednačine $3x − 1 = 14$?",
    "odgovori": [
-    "Da",
-    "Ne",
-    "Ne može se odrediti",
-    "Samo ako je x paran"
+    "$5$",
+    "$4$",
+    "$15$",
+    "$3$"
    ],
    "resenje": [
     {
-     "t": "Uvrstimo $x = 5$: $3 · 5 − 1 = 15 − 1 = 14$."
+     "t": "Dodamo $1$: $3x = 15$, pa je $x = 5$."
     },
     {
-     "t": "Leva strana je jednaka desnoj, pa $5$ jeste rešenje."
+     "t": "Provera: $3 · 5 − 1 = 15 − 1 = 14$ ✓"
     }
    ]
   },
   {
    "lekcija": 16,
    "tezina": 2,
-   "pitanje": "Da li je broj $0$ rešenje jednačine $x + 2 = 2$?",
+   "pitanje": "Koji broj je rešenje jednačine $x + 2 = 2$?",
    "odgovori": [
-    "Da",
-    "Ne",
-    "Ne može se odrediti",
-    "Samo ako je x negativan"
+    "$0$",
+    "$2$",
+    "$4$",
+    "$−2$"
    ],
    "resenje": [
     {
-     "t": "$0 + 2 = 2$ ✓"
+     "t": "Oduzmemo $2$: $x = 2 − 2 = 0$."
     },
     {
-     "t": "Nula je rešenje."
+     "t": "Provera: $0 + 2 = 2$ ✓"
     }
    ]
   },
@@ -4339,7 +4334,7 @@
     "Množenje obe strane nulom",
     "Dodavanje istog broja",
     "Oduzimanje istog broja",
-    "Deljenje istim brojem (≠ 0)"
+    "Deljenje istim brojem"
    ],
    "resenje": [
     {
@@ -4380,7 +4375,7 @@
    "tezina": 3,
    "pitanje": "Kojom transformacijom se iz $x − 5 = 2$ dobija $x = 7$?",
    "odgovori": [
-    "Dodavanjem 5 obema stranama",
+    "Dodavanjem 5",
     "Oduzimanjem 5",
     "Množenjem sa 5",
     "Deljenjem sa 5"
@@ -4937,22 +4932,22 @@
   {
    "lekcija": 21,
    "tezina": 2,
-   "pitanje": "Reši jednačinu $x² = 4x$ tako što je svedeš na linearnu (podeli sa $x$, uz uslov $x ≠ 0$).",
+   "pitanje": "Jednačina $x² = 5x$ ima dva rešenja. Jedno je $x = 0$. Koje je drugo?",
    "odgovori": [
-    "4",
-    "0",
-    "−4",
-    "2"
+    "5",
+    "−5",
+    "1",
+    "10"
    ],
    "resenje": [
     {
-     "t": "Delimo sa $x$ (uz $x ≠ 0$): $x = 4$."
+     "t": "Delimo sa $x$ (uz $x ≠ 0$): $x = 5$."
     },
     {
-     "t": "Pazi: $x = 0$ je takođe rešenje polazne jednačine, ali ga ovde isključujemo uslovom."
+     "t": "Ili: $x² − 5x = 0$, tj. $x(x − 5) = 0$, pa je $x = 0$ ili $x = 5$."
     },
     {
-     "t": "Pod datim uslovom, rešenje je $4$."
+     "t": "Provera: $5² = 25 = 5 · 5$ ✓"
     }
    ]
   },
@@ -5079,19 +5074,19 @@
   {
    "lekcija": 21,
    "tezina": 3,
-   "pitanje": "Reši jednačinu $x² = 3x$ tako što je svedeš na linearnu (podeli sa $x$, uz uslov $x ≠ 0$).",
+   "pitanje": "Jednačina $x² = 9x$ ima dva rešenja. Jedno je $x = 0$. Koje je drugo?",
    "odgovori": [
+    "9",
+    "−9",
     "3",
-    "0",
-    "−3",
-    "1"
+    "18"
    ],
    "resenje": [
     {
-     "t": "Delimo sa $x$ (uz $x ≠ 0$): $x = 3$."
+     "t": "Delimo sa $x$ (uz $x ≠ 0$): $x = 9$."
     },
     {
-     "t": "Pod datim uslovom rešenje je $3$."
+     "t": "Ili: $x(x − 9) = 0$, pa je $x = 0$ ili $x = 9$."
     }
    ]
   },
@@ -5737,19 +5732,19 @@
   {
    "lekcija": 25,
    "tezina": 2,
-   "pitanje": "Da li je broj $−2$ rešenje nejednačine $2x + 1 < 0$?",
+   "pitanje": "Koji broj je rešenje nejednačine $2x + 1 < 0$?",
    "odgovori": [
-    "Da",
-    "Ne",
-    "Ne može se odrediti",
-    "Samo ako je x celo"
+    "$−2$",
+    "$0$",
+    "$1$",
+    "$2$"
    ],
    "resenje": [
     {
      "t": "Uvrstimo: $2 · (−2) + 1 = −4 + 1 = −3 < 0$ ✓"
     },
     {
-     "t": "Dakle $−2$ jeste rešenje."
+     "t": "Za $0$, $1$ i $2$ leva strana je $1$, $3$ ili $5$ – pozitivna, pa nisu rešenja."
     }
    ]
   },
@@ -5807,32 +5802,32 @@
   {
    "lekcija": 25,
    "tezina": 2,
-   "pitanje": "Da li je broj $3$ rešenje nejednačine $x ≥ 3$?",
+   "pitanje": "Koji broj je rešenje nejednačine $x ≥ 3$?",
    "odgovori": [
-    "Da",
-    "Ne",
-    "Ne može se odrediti",
-    "Samo ako je x veće od 3"
+    "$3$",
+    "$2$",
+    "$−4$",
+    "$1$"
    ],
    "resenje": [
     {
-     "t": "$3 ≥ 3$ je tačno, pa $3$ jeste rešenje."
+     "t": "$3 ≥ 3$ je tačno, pa $3$ jeste rešenje; ostali brojevi nisu veći ili jednaki $3$."
     }
    ]
   },
   {
    "lekcija": 25,
    "tezina": 2,
-   "pitanje": "Da li je broj $−1$ rešenje nejednačine $x > 0$?",
+   "pitanje": "Koji broj je rešenje nejednačine $x > 0$?",
    "odgovori": [
-    "Ne",
-    "Da",
-    "Ne može se odrediti",
-    "Samo ako je x celo"
+    "$2$",
+    "$0$",
+    "$−1$",
+    "$−5$"
    ],
    "resenje": [
     {
-     "t": "$−1 > 0$ je netačno, pa $−1$ nije rešenje."
+     "t": "Od ponuđenih, samo je $2 > 0$ tačno; $0$ nije veće od $0$, a $−1$ i $−5$ su negativni."
     }
    ]
   },
@@ -6441,10 +6436,10 @@
    ],
    "resenje": [
     {
-     "t": "Tražimo najmanji ceo broj $n$ takav da je $45n ≥ 120$."
+     "t": "Tražimo najmanji ceo broj $n$ takav da je $45n > 120$."
     },
     {
-     "t": "$n ≥ {120|45} = 2,67$, pa je najmanji ceo broj $3$."
+     "t": "$n > {120|45} = 2,67$, pa je najmanji ceo broj $3$."
     },
     {
      "t": "Provera: $3 · 45 = 135 ≥ 120$ ✓; $2$ autobusa ($90$) nije dovoljno."
@@ -6500,7 +6495,7 @@
    "tezina": 3,
    "pitanje": "Za koje prirodne brojeve $n$ važi da je zbir broja i njegove polovine manji od $9$?",
    "odgovori": [
-    "$n < 6$, tj. $1,2,3,4,5$",
+    "$n < 6$",
     "$n < 9$",
     "$n < 4$",
     "$n > 6$"
@@ -6579,7 +6574,7 @@
    "tezina": 3,
    "pitanje": "Za koje prirodne brojeve $n$ važi da je $n + {n|2} < 12$?",
    "odgovori": [
-    "$n < 8$, tj. $1, 2, …, 7$",
+    "$n < 8$",
     "$n < 12$",
     "$n < 6$",
     "$n < 10$"
@@ -6636,7 +6631,7 @@
    "tezina": 1,
    "pitanje": "Prizma je telo koje ima dve podudarne paralelne osnove i…",
    "odgovori": [
-    "bočne strane pravougaonike",
+    "bočne strane paralelograme",
     "bočne strane trouglove",
     "jednu osnovu",
     "bočne strane krugove"
@@ -6914,7 +6909,7 @@
      "t": "$D² = 9 + 16 + 144 = 169$, pa je $D = 13 cm$."
     },
     {
-     "t": "To je trojka $3, 4, 12 → 13$.",
+     "t": "Brže: $√{3² + 4²} = 5$, pa je $D = √{5² + 12²} = 13 cm$.",
      "crtez": {
       "vrsta": "telo",
       "oblik": "kvadar",
@@ -7053,16 +7048,16 @@
   {
    "lekcija": 31,
    "tezina": 3,
-   "pitanje": "Telesna dijagonala kocke ivice $a$ je:",
+   "pitanje": "Kvadar ima ivice $2 cm$, $6 cm$ i $9 cm$. Kolika mu je dijagonala?",
    "odgovori": [
-    "$a√{3}$",
-    "$a√{2}$",
-    "$2a$",
-    "$3a$"
+    "$11 cm$",
+    "$7 cm$",
+    "$13 cm$",
+    "$15 cm$"
    ],
    "resenje": [
     {
-     "t": "$D = √{a² + a² + a²} = a√{3}$."
+     "t": "$D² = 4 + 36 + 81 = 121$, pa je $D = 11 cm$."
     }
    ]
   },
@@ -7150,7 +7145,7 @@
     "Ne",
     "Da",
     "Da, ako su kvadrati jednaki",
-    "Samo ako su obojeni"
+    "Samo ako je raspored u obliku krsta"
    ],
    "resenje": [
     {
@@ -7172,7 +7167,7 @@
     "6 pravougaonika",
     "6 kvadrata",
     "4 pravougaonika",
-    "2 kvadrata i 4 pravougaonika"
+    "3 kvadrata i 3 trougla"
    ],
    "resenje": [
     {
@@ -7183,16 +7178,16 @@
   {
    "lekcija": 32,
    "tezina": 2,
-   "pitanje": "Mreža trostrane prizme sastoji se od:",
+   "pitanje": "Koliko pravougaonika ima omotač petostrane prave prizme?",
    "odgovori": [
-    "2 trougla i 3 pravougaonika",
-    "3 trougla",
-    "2 trougla i 2 pravougaonika",
-    "6 trouglova"
+    "5",
+    "10",
+    "4",
+    "7"
    ],
    "resenje": [
     {
-     "t": "Dve trouglaste osnove + tri bočna pravougaonika."
+     "t": "Omotač čine bočne strane – one su pravougaonici, po jedan za svaku od $5$ bočnih strana."
     }
    ]
   },
@@ -7688,635 +7683,635 @@
   {
    "lekcija": 35,
    "tezina": 1,
-   "pitanje": "Kvadar se sastoji od $24$ kockice ivice $1 cm$, raspoređene kao $2 × 3 × 4$. Kolika mu je zapremina?",
+   "pitanje": "Koliko kockica ivice $1 cm$ staje u kvadar dimenzija $2 cm × 3 cm × 4 cm$?",
    "odgovori": [
-    "$24 cm³$",
-    "$9 cm³$",
-    "$48 cm³$",
-    "$12 cm³$"
+    "$24$",
+    "$9$",
+    "$48$",
+    "$12$"
    ],
-   "mediji": {
-    "vrsta": "geo",
-    "t": {
-     "O": [
-      0,
-      0
-     ]
-    },
-    "e": [
-     {
-      "lin": [
-       [
-        0,
-        4
-       ],
-       [
-        0.87,
-        4.5
-       ],
-       [
-        0,
-        5
-       ],
-       [
-        -0.87,
-        4.5
-       ]
-      ],
-      "zatv": 1,
-      "b": 0,
-      "gusto": 1
-     },
-     {
-      "lin": [
-       [
-        -0.87,
-        4.5
-       ],
-       [
-        0,
-        5
-       ],
-       [
-        -0.87,
-        5.5
-       ],
-       [
-        -1.74,
-        5
-       ]
-      ],
-      "zatv": 1,
-      "b": 0,
-      "gusto": 1
-     },
-     {
-      "lin": [
-       [
-        -1.74,
-        5
-       ],
-       [
-        -0.87,
-        5.5
-       ],
-       [
-        -1.74,
-        6
-       ],
-       [
-        -2.61,
-        5.5
-       ]
-      ],
-      "zatv": 1,
-      "b": 0,
-      "gusto": 1
-     },
-     {
-      "lin": [
-       [
-        0.87,
-        4.5
-       ],
-       [
-        1.74,
-        5
-       ],
-       [
-        0.87,
-        5.5
-       ],
-       [
-        0,
-        5
-       ]
-      ],
-      "zatv": 1,
-      "b": 0,
-      "gusto": 1
-     },
-     {
-      "lin": [
-       [
-        0,
-        5
-       ],
-       [
-        0.87,
-        5.5
-       ],
-       [
-        0,
-        6
-       ],
-       [
-        -0.87,
-        5.5
-       ]
-      ],
-      "zatv": 1,
-      "b": 0,
-      "gusto": 1
-     },
-     {
-      "lin": [
-       [
-        -0.87,
-        5.5
-       ],
-       [
-        0,
-        6
-       ],
-       [
-        -0.87,
-        6.5
-       ],
-       [
-        -1.74,
-        6
-       ]
-      ],
-      "zatv": 1,
-      "b": 0,
-      "gusto": 1
-     },
-     {
-      "lin": [
-       [
-        0,
-        0
-       ],
-       [
-        0.87,
-        0.5
-       ],
-       [
-        0.87,
-        1.5
-       ],
-       [
-        0,
-        1
-       ]
-      ],
-      "zatv": 1,
-      "b": 4,
-      "gusto": 0
-     },
-     {
-      "lin": [
-       [
-        0,
-        1
-       ],
-       [
-        0.87,
-        1.5
-       ],
-       [
-        0.87,
-        2.5
-       ],
-       [
-        0,
-        2
-       ]
-      ],
-      "zatv": 1,
-      "b": 4,
-      "gusto": 0
-     },
-     {
-      "lin": [
-       [
-        0,
-        2
-       ],
-       [
-        0.87,
-        2.5
-       ],
-       [
-        0.87,
-        3.5
-       ],
-       [
-        0,
-        3
-       ]
-      ],
-      "zatv": 1,
-      "b": 4,
-      "gusto": 0
-     },
-     {
-      "lin": [
-       [
-        0,
-        3
-       ],
-       [
-        0.87,
-        3.5
-       ],
-       [
-        0.87,
-        4.5
-       ],
-       [
-        0,
-        4
-       ]
-      ],
-      "zatv": 1,
-      "b": 4,
-      "gusto": 0
-     },
-     {
-      "lin": [
-       [
-        0.87,
-        0.5
-       ],
-       [
-        1.74,
-        1
-       ],
-       [
-        1.74,
-        2
-       ],
-       [
-        0.87,
-        1.5
-       ]
-      ],
-      "zatv": 1,
-      "b": 4,
-      "gusto": 0
-     },
-     {
-      "lin": [
-       [
-        0.87,
-        1.5
-       ],
-       [
-        1.74,
-        2
-       ],
-       [
-        1.74,
-        3
-       ],
-       [
-        0.87,
-        2.5
-       ]
-      ],
-      "zatv": 1,
-      "b": 4,
-      "gusto": 0
-     },
-     {
-      "lin": [
-       [
-        0.87,
-        2.5
-       ],
-       [
-        1.74,
-        3
-       ],
-       [
-        1.74,
-        4
-       ],
-       [
-        0.87,
-        3.5
-       ]
-      ],
-      "zatv": 1,
-      "b": 4,
-      "gusto": 0
-     },
-     {
-      "lin": [
-       [
-        0.87,
-        3.5
-       ],
-       [
-        1.74,
-        4
-       ],
-       [
-        1.74,
-        5
-       ],
-       [
-        0.87,
-        4.5
-       ]
-      ],
-      "zatv": 1,
-      "b": 4,
-      "gusto": 0
-     },
-     {
-      "lin": [
-       [
-        0,
-        0
-       ],
-       [
-        -0.87,
-        0.5
-       ],
-       [
-        -0.87,
-        1.5
-       ],
-       [
-        0,
-        1
-       ]
-      ],
-      "zatv": 1,
-      "b": 2,
-      "gusto": 0
-     },
-     {
-      "lin": [
-       [
-        0,
-        1
-       ],
-       [
-        -0.87,
-        1.5
-       ],
-       [
-        -0.87,
-        2.5
-       ],
-       [
-        0,
-        2
-       ]
-      ],
-      "zatv": 1,
-      "b": 2,
-      "gusto": 0
-     },
-     {
-      "lin": [
-       [
-        0,
-        2
-       ],
-       [
-        -0.87,
-        2.5
-       ],
-       [
-        -0.87,
-        3.5
-       ],
-       [
-        0,
-        3
-       ]
-      ],
-      "zatv": 1,
-      "b": 2,
-      "gusto": 0
-     },
-     {
-      "lin": [
-       [
-        0,
-        3
-       ],
-       [
-        -0.87,
-        3.5
-       ],
-       [
-        -0.87,
-        4.5
-       ],
-       [
-        0,
-        4
-       ]
-      ],
-      "zatv": 1,
-      "b": 2,
-      "gusto": 0
-     },
-     {
-      "lin": [
-       [
-        -0.87,
-        0.5
-       ],
-       [
-        -1.74,
-        1
-       ],
-       [
-        -1.74,
-        2
-       ],
-       [
-        -0.87,
-        1.5
-       ]
-      ],
-      "zatv": 1,
-      "b": 2,
-      "gusto": 0
-     },
-     {
-      "lin": [
-       [
-        -0.87,
-        1.5
-       ],
-       [
-        -1.74,
-        2
-       ],
-       [
-        -1.74,
-        3
-       ],
-       [
-        -0.87,
-        2.5
-       ]
-      ],
-      "zatv": 1,
-      "b": 2,
-      "gusto": 0
-     },
-     {
-      "lin": [
-       [
-        -0.87,
-        2.5
-       ],
-       [
-        -1.74,
-        3
-       ],
-       [
-        -1.74,
-        4
-       ],
-       [
-        -0.87,
-        3.5
-       ]
-      ],
-      "zatv": 1,
-      "b": 2,
-      "gusto": 0
-     },
-     {
-      "lin": [
-       [
-        -0.87,
-        3.5
-       ],
-       [
-        -1.74,
-        4
-       ],
-       [
-        -1.74,
-        5
-       ],
-       [
-        -0.87,
-        4.5
-       ]
-      ],
-      "zatv": 1,
-      "b": 2,
-      "gusto": 0
-     },
-     {
-      "lin": [
-       [
-        -1.74,
-        1
-       ],
-       [
-        -2.61,
-        1.5
-       ],
-       [
-        -2.61,
-        2.5
-       ],
-       [
-        -1.74,
-        2
-       ]
-      ],
-      "zatv": 1,
-      "b": 2,
-      "gusto": 0
-     },
-     {
-      "lin": [
-       [
-        -1.74,
-        2
-       ],
-       [
-        -2.61,
-        2.5
-       ],
-       [
-        -2.61,
-        3.5
-       ],
-       [
-        -1.74,
-        3
-       ]
-      ],
-      "zatv": 1,
-      "b": 2,
-      "gusto": 0
-     },
-     {
-      "lin": [
-       [
-        -1.74,
-        3
-       ],
-       [
-        -2.61,
-        3.5
-       ],
-       [
-        -2.61,
-        4.5
-       ],
-       [
-        -1.74,
-        4
-       ]
-      ],
-      "zatv": 1,
-      "b": 2,
-      "gusto": 0
-     },
-     {
-      "lin": [
-       [
-        -1.74,
-        4
-       ],
-       [
-        -2.61,
-        4.5
-       ],
-       [
-        -2.61,
-        5.5
-       ],
-       [
-        -1.74,
-        5
-       ]
-      ],
-      "zatv": 1,
-      "b": 2,
-      "gusto": 0
-     }
-    ],
-    "bezImena": [
-     "O"
-    ],
-    "velicina": 220
-   },
    "resenje": [
     {
-     "t": "Broj kockica ivice $1 cm$ jednak je zapremini u $cm³$."
+     "t": "Broj kockica ivice $1 cm$ jednak je zapremini kvadra u $cm³$."
     },
     {
-     "t": "Kvadar se sastoji od $2 · 3 · 4 = 24$ kockice."
+     "t": "$V = 2 · 3 · 4 = 24 cm³$, pa staje $24$ kockice."
     },
     {
-     "t": "Zapremina kvadra je proizvod tri dimenzije: $V = a · b · c$."
+     "t": "Slaganje kockica:",
+     "crtez": {
+      "vrsta": "geo",
+      "t": {
+       "O": [
+        0,
+        0
+       ]
+      },
+      "e": [
+       {
+        "lin": [
+         [
+          0,
+          4
+         ],
+         [
+          0.87,
+          4.5
+         ],
+         [
+          0,
+          5
+         ],
+         [
+          -0.87,
+          4.5
+         ]
+        ],
+        "zatv": 1,
+        "b": 0,
+        "gusto": 1
+       },
+       {
+        "lin": [
+         [
+          -0.87,
+          4.5
+         ],
+         [
+          0,
+          5
+         ],
+         [
+          -0.87,
+          5.5
+         ],
+         [
+          -1.74,
+          5
+         ]
+        ],
+        "zatv": 1,
+        "b": 0,
+        "gusto": 1
+       },
+       {
+        "lin": [
+         [
+          -1.74,
+          5
+         ],
+         [
+          -0.87,
+          5.5
+         ],
+         [
+          -1.74,
+          6
+         ],
+         [
+          -2.61,
+          5.5
+         ]
+        ],
+        "zatv": 1,
+        "b": 0,
+        "gusto": 1
+       },
+       {
+        "lin": [
+         [
+          0.87,
+          4.5
+         ],
+         [
+          1.74,
+          5
+         ],
+         [
+          0.87,
+          5.5
+         ],
+         [
+          0,
+          5
+         ]
+        ],
+        "zatv": 1,
+        "b": 0,
+        "gusto": 1
+       },
+       {
+        "lin": [
+         [
+          0,
+          5
+         ],
+         [
+          0.87,
+          5.5
+         ],
+         [
+          0,
+          6
+         ],
+         [
+          -0.87,
+          5.5
+         ]
+        ],
+        "zatv": 1,
+        "b": 0,
+        "gusto": 1
+       },
+       {
+        "lin": [
+         [
+          -0.87,
+          5.5
+         ],
+         [
+          0,
+          6
+         ],
+         [
+          -0.87,
+          6.5
+         ],
+         [
+          -1.74,
+          6
+         ]
+        ],
+        "zatv": 1,
+        "b": 0,
+        "gusto": 1
+       },
+       {
+        "lin": [
+         [
+          0,
+          0
+         ],
+         [
+          0.87,
+          0.5
+         ],
+         [
+          0.87,
+          1.5
+         ],
+         [
+          0,
+          1
+         ]
+        ],
+        "zatv": 1,
+        "b": 4,
+        "gusto": 0
+       },
+       {
+        "lin": [
+         [
+          0,
+          1
+         ],
+         [
+          0.87,
+          1.5
+         ],
+         [
+          0.87,
+          2.5
+         ],
+         [
+          0,
+          2
+         ]
+        ],
+        "zatv": 1,
+        "b": 4,
+        "gusto": 0
+       },
+       {
+        "lin": [
+         [
+          0,
+          2
+         ],
+         [
+          0.87,
+          2.5
+         ],
+         [
+          0.87,
+          3.5
+         ],
+         [
+          0,
+          3
+         ]
+        ],
+        "zatv": 1,
+        "b": 4,
+        "gusto": 0
+       },
+       {
+        "lin": [
+         [
+          0,
+          3
+         ],
+         [
+          0.87,
+          3.5
+         ],
+         [
+          0.87,
+          4.5
+         ],
+         [
+          0,
+          4
+         ]
+        ],
+        "zatv": 1,
+        "b": 4,
+        "gusto": 0
+       },
+       {
+        "lin": [
+         [
+          0.87,
+          0.5
+         ],
+         [
+          1.74,
+          1
+         ],
+         [
+          1.74,
+          2
+         ],
+         [
+          0.87,
+          1.5
+         ]
+        ],
+        "zatv": 1,
+        "b": 4,
+        "gusto": 0
+       },
+       {
+        "lin": [
+         [
+          0.87,
+          1.5
+         ],
+         [
+          1.74,
+          2
+         ],
+         [
+          1.74,
+          3
+         ],
+         [
+          0.87,
+          2.5
+         ]
+        ],
+        "zatv": 1,
+        "b": 4,
+        "gusto": 0
+       },
+       {
+        "lin": [
+         [
+          0.87,
+          2.5
+         ],
+         [
+          1.74,
+          3
+         ],
+         [
+          1.74,
+          4
+         ],
+         [
+          0.87,
+          3.5
+         ]
+        ],
+        "zatv": 1,
+        "b": 4,
+        "gusto": 0
+       },
+       {
+        "lin": [
+         [
+          0.87,
+          3.5
+         ],
+         [
+          1.74,
+          4
+         ],
+         [
+          1.74,
+          5
+         ],
+         [
+          0.87,
+          4.5
+         ]
+        ],
+        "zatv": 1,
+        "b": 4,
+        "gusto": 0
+       },
+       {
+        "lin": [
+         [
+          0,
+          0
+         ],
+         [
+          -0.87,
+          0.5
+         ],
+         [
+          -0.87,
+          1.5
+         ],
+         [
+          0,
+          1
+         ]
+        ],
+        "zatv": 1,
+        "b": 2,
+        "gusto": 0
+       },
+       {
+        "lin": [
+         [
+          0,
+          1
+         ],
+         [
+          -0.87,
+          1.5
+         ],
+         [
+          -0.87,
+          2.5
+         ],
+         [
+          0,
+          2
+         ]
+        ],
+        "zatv": 1,
+        "b": 2,
+        "gusto": 0
+       },
+       {
+        "lin": [
+         [
+          0,
+          2
+         ],
+         [
+          -0.87,
+          2.5
+         ],
+         [
+          -0.87,
+          3.5
+         ],
+         [
+          0,
+          3
+         ]
+        ],
+        "zatv": 1,
+        "b": 2,
+        "gusto": 0
+       },
+       {
+        "lin": [
+         [
+          0,
+          3
+         ],
+         [
+          -0.87,
+          3.5
+         ],
+         [
+          -0.87,
+          4.5
+         ],
+         [
+          0,
+          4
+         ]
+        ],
+        "zatv": 1,
+        "b": 2,
+        "gusto": 0
+       },
+       {
+        "lin": [
+         [
+          -0.87,
+          0.5
+         ],
+         [
+          -1.74,
+          1
+         ],
+         [
+          -1.74,
+          2
+         ],
+         [
+          -0.87,
+          1.5
+         ]
+        ],
+        "zatv": 1,
+        "b": 2,
+        "gusto": 0
+       },
+       {
+        "lin": [
+         [
+          -0.87,
+          1.5
+         ],
+         [
+          -1.74,
+          2
+         ],
+         [
+          -1.74,
+          3
+         ],
+         [
+          -0.87,
+          2.5
+         ]
+        ],
+        "zatv": 1,
+        "b": 2,
+        "gusto": 0
+       },
+       {
+        "lin": [
+         [
+          -0.87,
+          2.5
+         ],
+         [
+          -1.74,
+          3
+         ],
+         [
+          -1.74,
+          4
+         ],
+         [
+          -0.87,
+          3.5
+         ]
+        ],
+        "zatv": 1,
+        "b": 2,
+        "gusto": 0
+       },
+       {
+        "lin": [
+         [
+          -0.87,
+          3.5
+         ],
+         [
+          -1.74,
+          4
+         ],
+         [
+          -1.74,
+          5
+         ],
+         [
+          -0.87,
+          4.5
+         ]
+        ],
+        "zatv": 1,
+        "b": 2,
+        "gusto": 0
+       },
+       {
+        "lin": [
+         [
+          -1.74,
+          1
+         ],
+         [
+          -2.61,
+          1.5
+         ],
+         [
+          -2.61,
+          2.5
+         ],
+         [
+          -1.74,
+          2
+         ]
+        ],
+        "zatv": 1,
+        "b": 2,
+        "gusto": 0
+       },
+       {
+        "lin": [
+         [
+          -1.74,
+          2
+         ],
+         [
+          -2.61,
+          2.5
+         ],
+         [
+          -2.61,
+          3.5
+         ],
+         [
+          -1.74,
+          3
+         ]
+        ],
+        "zatv": 1,
+        "b": 2,
+        "gusto": 0
+       },
+       {
+        "lin": [
+         [
+          -1.74,
+          3
+         ],
+         [
+          -2.61,
+          3.5
+         ],
+         [
+          -2.61,
+          4.5
+         ],
+         [
+          -1.74,
+          4
+         ]
+        ],
+        "zatv": 1,
+        "b": 2,
+        "gusto": 0
+       },
+       {
+        "lin": [
+         [
+          -1.74,
+          4
+         ],
+         [
+          -2.61,
+          4.5
+         ],
+         [
+          -2.61,
+          5.5
+         ],
+         [
+          -1.74,
+          5
+         ]
+        ],
+        "zatv": 1,
+        "b": 2,
+        "gusto": 0
+       }
+      ],
+      "bezImena": [
+       "O"
+      ],
+      "velicina": 220
+     }
     }
    ]
   },
@@ -8749,7 +8744,7 @@
    ],
    "resenje": [
     {
-     "t": "$V = 2³ = 8 dm³ = 8$ litara (jer je $1,dm³ = 1$ litar)."
+     "t": "$V = 2³ = 8 dm³ = 8$ litara (jer je $1 dm³ = 1$ litar)."
     }
    ]
   },
@@ -10006,7 +10001,7 @@
     "$y = x + 1$",
     "$y² = x$",
     "$x² + y² = 1$",
-    "$x = y²$"
+    "$|y| = x$"
    ],
    "resenje": [
     {
@@ -10097,7 +10092,7 @@
    "odgovori": [
     "$y = 2x$",
     "$y² = x$",
-    "$x = y²$",
+    "$|y| = x$",
     "$x² + y² = 4$"
    ],
    "resenje": [
@@ -10599,7 +10594,7 @@
   {
    "lekcija": 46,
    "tezina": 3,
-   "pitanje": "Iz bazena sa $100$ litara ističe $2$ litra vode u minuti. Funkcija količine vode je:",
+   "pitanje": "Iz bazena sa $100$ litara ističe $2$ litra vode u minutu. Funkcija količine vode je:",
    "odgovori": [
     "$y = −2x + 100$",
     "$y = 2x + 100$",
@@ -10716,19 +10711,19 @@
   {
    "lekcija": 47,
    "tezina": 2,
-   "pitanje": "Da li tačka $(3, 1)$ pripada grafiku $y = x − 2$?",
+   "pitanje": "Koja tačka pripada grafiku $y = x − 2$?",
    "odgovori": [
-    "Da",
-    "Ne",
-    "Ne može se odrediti",
-    "Samo ako je x celo"
+    "$(3, 1)$",
+    "$(3, 2)$",
+    "$(1, 3)$",
+    "$(2, 1)$"
    ],
    "resenje": [
     {
-     "t": "$3 − 2 = 1$ ✓"
+     "t": "Za $x = 3$: $y = 3 − 2 = 1$, pa tačka $(3, 1)$ pripada grafiku."
     },
     {
-     "t": "Tačka $(3, 1)$ pripada grafiku."
+     "t": "Ostale: $(3, 2)$ → $1 ≠ 2$; $(1, 3)$ → $−1 ≠ 3$; $(2, 1)$ → $0 ≠ 1$."
     }
    ]
   },
@@ -10782,7 +10777,7 @@
   },
   {
    "lekcija": 47,
-   "tezina": 3,
+   "tezina": 1,
    "pitanje": "Za crtanje grafika linearne funkcije dovoljno je:",
    "odgovori": [
     "dve tačke",
@@ -10952,7 +10947,7 @@
     "na y-osi, u (0, 3)",
     "u (1, 5)",
     "u (0, 0)",
-    "u (−1, 1)"
+    "nikad"
    ],
    "resenje": [
     {
@@ -11626,7 +11621,7 @@
     "$2x − y + 3 = 0$",
     "$2x + y + 3 = 0$",
     "$2x − y − 3 = 0$",
-    "$y − 2x − 3 = 0$"
+    "$2x + y − 3 = 0$"
    ],
    "resenje": [
     {
@@ -11690,7 +11685,7 @@
     "$2x − y + 1 = 0$",
     "$y = 2x + 1$",
     "$y = 2x − 1$",
-    "$2x − y = 1$"
+    "$2x = y² + 1$"
    ],
    "resenje": [
     {
@@ -11901,12 +11896,12 @@
   {
    "lekcija": 53,
    "tezina": 1,
-   "pitanje": "Da li je par $(2, 1)$ rešenje sistema $x + y = 3$ i $2x − y = 3$?",
+   "pitanje": "Koji par je rešenje sistema $x + y = 3$ i $2x − y = 3$?",
    "odgovori": [
-    "Da",
-    "Ne",
-    "Samo prve jednačine",
-    "Samo druge jednačine"
+    "(2, 1)",
+    "(1, 2)",
+    "(3, 0)",
+    "(0, 3)"
    ],
    "resenje": [
     {
@@ -11916,7 +11911,7 @@
      "t": "Druga: $2 · 2 − 1 = 3$ ✓"
     },
     {
-     "t": "Obe su zadovoljene, pa je $(2, 1)$ rešenje."
+     "t": "Obe su zadovoljene, pa je $(2, 1)$ rešenje. Ostali parovi ne zadovoljavaju drugu jednačinu."
     }
    ]
   },
@@ -12007,12 +12002,12 @@
   {
    "lekcija": 53,
    "tezina": 1,
-   "pitanje": "Da li je par $(1, 2)$ rešenje sistema $x + y = 3$ i $x − y = −1$?",
+   "pitanje": "Koji par je rešenje sistema $x + y = 3$ i $x − y = −1$?",
    "odgovori": [
-    "Da",
-    "Ne",
-    "Samo prve",
-    "Samo druge"
+    "(1, 2)",
+    "(2, 1)",
+    "(3, 0)",
+    "(0, 3)"
    ],
    "resenje": [
     {
@@ -12026,12 +12021,12 @@
   {
    "lekcija": 53,
    "tezina": 1,
-   "pitanje": "Da li je par $(2, 2)$ rešenje sistema $x + y = 4$ i $2x − y = 2$?",
+   "pitanje": "Koji par je rešenje sistema $x + y = 4$ i $2x − y = 2$?",
    "odgovori": [
-    "Da",
-    "Ne",
-    "Samo prve",
-    "Samo druge"
+    "(2, 2)",
+    "(3, 1)",
+    "(1, 3)",
+    "(4, 0)"
    ],
    "resenje": [
     {
@@ -12090,12 +12085,12 @@
   {
    "lekcija": 53,
    "tezina": 2,
-   "pitanje": "Da li je par $(0, 0)$ rešenje sistema $x + y = 0$ i $x − y = 0$?",
+   "pitanje": "Koji par je rešenje sistema $x + y = 0$ i $x − y = 0$?",
    "odgovori": [
-    "Da",
-    "Ne",
-    "Samo prve",
-    "Samo druge"
+    "(0, 0)",
+    "(1, 1)",
+    "(0, 1)",
+    "(−1, 1)"
    ],
    "resenje": [
     {
@@ -12105,7 +12100,7 @@
   },
   {
    "lekcija": 53,
-   "tezina": 2,
+   "tezina": 1,
    "pitanje": "Koji par je rešenje sistema $x = 2$ i $y = 3$?",
    "odgovori": [
     "(2, 3)",
@@ -13127,7 +13122,7 @@
     "ima beskonačno mnogo rešenja",
     "nema rešenja",
     "ima jedno rešenje",
-    "ima rešenje (0, 1)"
+    "ima rešenje (1, 0)"
    ],
    "resenje": [
     {
@@ -13968,32 +13963,38 @@
   {
    "lekcija": 61,
    "tezina": 3,
-   "pitanje": "Ravan dodiruje omotač valjka duž jedne izvodnice. Presek je:",
+   "pitanje": "Ravan dodiruje omotač valjka duž jedne izvodnice. Presek ravni i valjka je:",
    "odgovori": [
-    "pravougaonik (stranica 2r × H)",
+    "duž (izvodnica)",
     "krug",
     "elipsa",
-    "duž"
+    "pravougaonik"
    ],
    "resenje": [
     {
-     "t": "Ravan kroz izvodnicu i osu (ili paralelna osi kroz izvodnicu) seče valjak po pravougaoniku."
+     "t": "Ravan dodiruje valjak samo duž izvodnice, pa je presek jedna duž – ta izvodnica."
+    },
+    {
+     "t": "Ravan kroz osu seče valjak po pravougaoniku, a ravan paralelna osnovama po krugu."
     }
    ]
   },
   {
    "lekcija": 61,
    "tezina": 3,
-   "pitanje": "Valjak ima visinu $10 cm$, a njegov osni presek je kvadrat. Koliki je poluprečnik osnove?",
+   "pitanje": "Osni presek valjka je kvadrat površine $64 cm²$. Koliki je poluprečnik osnove?",
    "odgovori": [
-    "$5 cm$",
-    "$10 cm$",
-    "$20 cm$",
-    "$2,5 cm$"
+    "$4 cm$",
+    "$8 cm$",
+    "$2 cm$",
+    "$16 cm$"
    ],
    "resenje": [
     {
-     "t": "Kvadrat: $2r = H = 10$, pa je $r = 5 cm$."
+     "t": "Stranica kvadrata je $√{64} = 8 cm$, pa je $2r = H = 8 cm$."
+    },
+    {
+     "t": "$r = 4 cm$."
     }
    ]
   },
@@ -14069,7 +14070,7 @@
    "odgovori": [
     "$188,4 cm²$",
     "$131,9 cm²$",
-    "$188,4 + 18,84 cm²$",
+    "$160,1 cm²$",
     "$94,2 cm²$"
    ],
    "resenje": [
@@ -14273,7 +14274,7 @@
    ],
    "resenje": [
     {
-     "t": "$V = 100π · 3 = 300π cm³ ≈ 942 cm³$."
+     "t": "$V = 100π · 3 = 300π cm³ ≈ 942,5 cm³$."
     }
    ]
   },
@@ -14302,7 +14303,7 @@
    "pitanje": "Valjak ima zapreminu $120π cm³$ i visinu $10 cm$. Koliki je poluprečnik osnove?",
    "odgovori": [
     "$2√{3} cm$",
-    "$√{12} cm$",
+    "$√{6} cm$",
     "$4 cm$",
     "$6 cm$"
    ],
@@ -14343,7 +14344,7 @@
    ],
    "resenje": [
     {
-     "t": "$r = 3 cm$; $V = 9π · 9 = 81π cm³ ≈ 254,3 cm³$."
+     "t": "$r = 3 cm$; $V = 9π · 9 = 81π cm³ ≈ 254,5 cm³$."
     }
    ]
   },
@@ -14638,7 +14639,7 @@
    "pitanje": "Kupa ima $r = 4 cm$ i $H = 6 cm$. Kolika joj je izvodnica?",
    "odgovori": [
     "$2√{13} cm$",
-    "$√{52} cm$",
+    "$√{30} cm$",
     "$10 cm$",
     "$2√{5} cm$"
    ],
@@ -14699,16 +14700,19 @@
   {
    "lekcija": 65,
    "tezina": 3,
-   "pitanje": "Ravan koja seče kupu koso (ne kroz vrh, ne paralelno osnovi) daje:",
+   "pitanje": "Kupa ima poluprečnik osnove $6 cm$ i visinu $8 cm$. Ravan paralelna osnovi, na polovini visine, seče kupu po krugu poluprečnika:",
    "odgovori": [
-    "elipsu",
-    "krug",
-    "trougao",
-    "pravougaonik"
+    "$3 cm$",
+    "$4 cm$",
+    "$6 cm$",
+    "$2 cm$"
    ],
    "resenje": [
     {
-     "t": "Kosi presek kupe je elipsa (ili parabola/hiperbola u posebnim slučajevima)."
+     "t": "Na polovini visine presek je sličan osnovi sa koeficijentom ${1|2}$, jer se visine i poluprečnici menjaju srazmerno."
+    },
+    {
+     "t": "Poluprečnik je ${6|2} = 3 cm$."
     }
    ]
   },
@@ -14764,7 +14768,7 @@
    "pitanje": "Kupa ima $r = 5 cm$ i izvodnicu $s = 13 cm$. Koliki joj je omotač? (Uzmi $π ≈ 3,14$.)",
    "odgovori": [
     "$204,1 cm²$",
-    "$65π cm²$",
+    "$130π cm²$",
     "$204,1π cm²$",
     "$102,05 cm²$"
    ],
@@ -14773,7 +14777,7 @@
      "t": "$M = rπs = 5 · 3,14 · 13$."
     },
     {
-     "t": "$M = 204,1 cm²$ (tj. $65π cm²$)."
+     "t": "$M = 65π cm² ≈ 204,1 cm²$ (za $π ≈ 3,14$)."
     }
    ]
   },
@@ -14843,7 +14847,7 @@
    ],
    "resenje": [
     {
-     "t": "$M = rπs = 6 · π · 10 = 60π cm² ≈ 188,4 cm²$."
+     "t": "$M = rπs = 6 · π · 10 = 60π cm² ≈ 188,5 cm²$."
     }
    ]
   },
@@ -15002,7 +15006,7 @@
    "odgovori": [
     "$5√{2} cm$",
     "$5 cm$",
-    "$√{50} cm$",
+    "$√{40} cm$",
     "$10 cm$"
    ],
    "resenje": [
@@ -15042,7 +15046,7 @@
    ],
    "resenje": [
     {
-     "t": "$r = 5 cm$; $V = {25π · 9|3} = 75π cm³ ≈ 235,5 cm³$."
+     "t": "$r = 5 cm$; $V = {25π · 9|3} = 75π cm³ ≈ 235,6 cm³$."
     }
    ]
   },
@@ -15074,7 +15078,7 @@
    ],
    "resenje": [
     {
-     "t": "$V = {81π · 4|3} = 108π cm³ ≈ 339,1 cm³$."
+     "t": "$V = {81π · 4|3} = 108π cm³ ≈ 339,3 cm³$."
     }
    ]
   },
@@ -15260,11 +15264,11 @@
     "krug",
     "elipsa",
     "pravougaonik",
-    "tačka"
+    "duž"
    ],
    "resenje": [
     {
-     "t": "Svaka ravan koja seče loptu seče je po krugu."
+     "t": "Svaka ravan koja seče loptu daje presek u obliku kruga."
     },
     {
      "t": "Ako ravan prolazi kroz centar, dobijamo veliki krug (poluprečnika $r$)."
@@ -15319,7 +15323,7 @@
    "odgovori": [
     "krug manji od velikog kruga",
     "veliki krug",
-    "tačku",
+    "duž",
     "elipsu"
    ],
    "resenje": [
@@ -15499,7 +15503,7 @@
     "$5 cm$",
     "$10 cm$",
     "$25 cm$",
-    "$√{25} cm$"
+    "$√{50} cm$"
    ],
    "resenje": [
     {
@@ -15592,7 +15596,7 @@
    ],
    "resenje": [
     {
-     "t": "$P = 4 · 81π = 324π cm² ≈ 1017,4 cm²$."
+     "t": "$P = 4 · 81π = 324π cm² ≈ 1017,9 cm²$."
     }
    ]
   },
@@ -15652,7 +15656,7 @@
      "t": "$V_{lopte} = {4r³π|3}$, $V_{valjka} = r²π · 2r = 2r³π$."
     },
     {
-     "t": "Odnos: ${{4r³π|3}|2r³π} = {4|3} · {1|2} = {2|3} = 2 : 3$."
+     "t": "Odnos: ${4r³π|3} : 2r³π = {4|3} · {1|2} = {2|3} = 2 : 3$."
     }
    ]
   },
@@ -15741,7 +15745,7 @@
    ],
    "resenje": [
     {
-     "t": "$r = 5 cm$; $V = {4 · 125π|3} = {500π|3} cm³ ≈ 523,3 cm³$."
+     "t": "$r = 5 cm$; $V = {4 · 125π|3} = {500π|3} cm³ ≈ 523,6 cm³$."
     }
    ]
   },

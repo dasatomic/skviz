@@ -303,7 +303,7 @@
     "Sastav i kretanje vazduha u atmosferi",
     "Živi svet i njegovo rasprostiranje"
    ],
-   "zanimljivost": "Ona se prva razvila u okviru društvene geografije, jer čovek najviše menja prostor.",
+   "zanimljivost": "Broj stanovnika se menja rođenjem, smrću i seobama, pa se podaci o njemu stalno ažuriraju.",
    "rec": "ljudi"
   },
   {
@@ -325,9 +325,9 @@
    "pitanje": "Šta proučava politička geografija?",
    "odgovori": [
     "Države, granice i uređenja",
-    "Čisto prirodne odlike jednog prostora",
-    "Samo raspored rudnika i šuma",
-    "Isključivo klimatske pojaseve države"
+    "Prirodne odlike jednog prostora",
+    "Raspored rudnika i šuma",
+    "Klimatske pojaseve države"
    ],
    "zanimljivost": "Ona povezuje geografiju sa znanjima o državi i društvu.",
    "rec": "drzava"
@@ -365,8 +365,8 @@
    "pitanje": "Kakva je geografija bila u prvim fazama svog razvoja?",
    "odgovori": [
     "Opisna ili zemljopisna nauka",
-    "Isključivo matematička nauka",
-    "Samo kartografska disciplina",
+    "Matematička nauka u potpunosti",
+    "Kartografska disciplina",
     "Laboratorijska eksperimentalna nauka"
    ],
    "zanimljivost": "Prvi geografi su putovali i opisivali krajeve koje su posećivali.",
@@ -374,16 +374,16 @@
   },
   {
    "lekcija": 1,
-   "tezina": 3,
-   "pitanje": "Koja disciplina se PRVA razvila u okviru društvene geografije?",
+   "tezina": 2,
+   "pitanje": "Od kojih reči potiče naziv geografija?",
    "odgovori": [
-    "Geografija stanovništva",
-    "Politička geografija",
-    "Turistička geografija",
-    "Urbana geografija"
+    "Od grčkih reči „ge“ (Zemlja) i „graphein“ (opisivati)",
+    "Od starogrčkih reči „hydor“ (voda) i „logos“ (nauka)",
+    "Od latinskih reči „terra“ (zemlja) i „mare“ (more)",
+    "Od nemačkih reči „Erde“ (zemlja) i „Kunde“ (nauka)"
    ],
-   "zanimljivost": "Čovek i društvo najjače utiču na razvoj i promene geografskog prostora.",
-   "rec": "prva"
+   "zanimljivost": "Prvi geografi su zato pre svega opisivali zemlju, pa je ime ostalo do danas.",
+   "rec": "zemlja"
   },
   {
    "lekcija": 1,
@@ -396,17 +396,17 @@
     "Od 20. do 21. veka"
    ],
    "zanimljivost": "Tada započinju detaljnija istraživanja nepoznatih predela i širi se znanje o Zemlji.",
-   "rec": "otkrica"
+   "rec": "otkrice"
   },
   {
    "lekcija": 1,
    "tezina": 2,
    "pitanje": "Šta je privreda?",
    "odgovori": [
-    "Proizvodnja i usluge",
-    "Samo poljoprivredna proizvodnja u selu",
-    "Isključivo rad u rudnicima i šumama",
-    "Nauka o poreklu i seobama naroda"
+    "Proizvodnja dobara i pružanje usluga",
+    "Pravila kojima se uređuje država",
+    "Nauka o poreklu i seobama naroda",
+    "Mreža naselja i puteva u kraju"
    ],
    "zanimljivost": "Privreda obuhvata poljoprivredu, industriju, saobraćaj, trgovinu, turizam i druge delatnosti.",
    "rec": "privreda"
@@ -498,8 +498,8 @@
    "odgovori": [
     "Paralele (uporednici)",
     "Meridijani (podnevci)",
-    "Tropi",
-    "Polutarnici"
+    "Izobare",
+    "Izohipse"
    ],
    "zanimljivost": "One su međusobno paralelne i različitih dužina.",
    "rec": "paralela"
@@ -532,14 +532,14 @@
   {
    "lekcija": 2,
    "tezina": 2,
-   "pitanje": "Koliko ima meridijana na čitavoj Zemlji?",
+   "pitanje": "Koliko stepeni geografske dužine ima od Griniča do 180. meridijana (istočno ili zapadno)?",
    "odgovori": [
-    "360 (po 180 na svakoj polulopti)",
-    "180 (po 90 na svakoj polulopti)",
-    "90 (samo na severnoj)",
-    "24 (kao časovnih zona)"
+    "180°",
+    "90°",
+    "360°",
+    "45°"
    ],
-   "zanimljivost": "Meridijani dele Zemlju na istočnu i zapadnu poluloptu.",
+   "zanimljivost": "Na 180. meridijanu je međunarodna datumska granica, na kojoj se menja datum.",
    "rec": "broj"
   },
   {
@@ -571,12 +571,12 @@
   {
    "lekcija": 2,
    "tezina": 2,
-   "pitanje": "Koliko ima paralela na čitavoj Zemlji?",
+   "pitanje": "Koliko stepeni geografske širine ima od ekvatora do severnog pola?",
    "odgovori": [
-    "180 (po 90 na svakoj polulopti)",
-    "360 (po 180 na svakoj polulopti)",
-    "90 (samo na južnoj)",
-    "24"
+    "90°",
+    "180°",
+    "45°",
+    "360°"
    ],
    "zanimljivost": "Paralele su različitih dužina – od ekvatora ka polovima se skraćuju.",
    "rec": "uporednici"
@@ -609,7 +609,7 @@
   },
   {
    "lekcija": 2,
-   "tezina": 3,
+   "tezina": 2,
    "pitanje": "Po čemu se meridijani razlikuju od paralela?",
    "odgovori": [
     "Meridijani spajaju polove",
@@ -617,7 +617,7 @@
     "Meridijani su horizontalni, a paralele vertikalne",
     "Nema nikakve razlike među njima"
    ],
-   "zanimljivost": "Zbog toga se meridijani zovu podnevci, a paralele uporednici.",
+   "zanimljivost": "Meridijani se zovu podnevci jer je na istom meridijanu isto podne, a paralele uporednici jer su međusobno paralelne.",
    "rec": "razlika"
   },
   {
@@ -640,10 +640,10 @@
    "tezina": 3,
    "pitanje": "Šta je kartografska mreža?",
    "odgovori": [
-    "Mreža na karti",
-    "Mreža puteva ucrtana na auto-karti",
-    "Mreža reka i kanala na karti",
-    "Mreža dalekovoda u nekoj državi"
+    "Meridijani i paralele nacrtani na karti",
+    "Mreža puteva i naselja ucrtana na karti",
+    "Mreža reka i kanala ucrtana na karti",
+    "Mreža dalekovoda i stubova na karti"
    ],
    "zanimljivost": "Geografska mreža je na globusu, a kartografska na karti.",
    "rec": "karta"
@@ -824,7 +824,7 @@
     "Srednjoevropskoj (središnji meridijan 15° IGD)",
     "Zapadnoevropskoj (oko Griniča)",
     "Istočnoevropskoj (središnji meridijan 30° IGD)",
-    "Nijednoj navedenoj"
+    "Jugozapadnoj Aziji (središnji meridijan 45° IGD)"
    ],
    "zanimljivost": "U istočnoevropskoj zoni su, na primer, Bugarska, Rumunija i Ukrajina.",
    "rec": "srbija",
@@ -871,8 +871,8 @@
    "pitanje": "Kako se izražava tačna geografska širina i dužina nekog mesta?",
    "odgovori": [
     "U stepenima, minutima i sekundama",
-    "Samo u celim metrima nadmorske visine",
-    "Samo u kilometrima i miljama",
+    "U metrima nadmorske visine",
+    "U kilometrima i miljama",
     "U procentima i promilima"
    ],
    "zanimljivost": "Jedan stepen ima 60 minuta, a jedan minut 60 sekundi.",
@@ -960,11 +960,11 @@
    "pitanje": "Na čemu su ljudi u prošlosti crtali prve karte?",
    "odgovori": [
     "Na koži, glini i papirusu",
-    "Samo na papiru, olovkom i perom",
-    "Samo na platnu, kistom i bojom",
-    "Isključivo na staklu i metalu"
+    "Na pergamentu i drvenim daskama",
+    "Na papiru od pamuka i kartonu",
+    "Na platnu, kistom i uljanim bojama"
    ],
-   "zanimljivost": "Jedan od najstarijih kartografskih prikaza je Majkopska vaza, stara oko 5 000 godina.",
+   "zanimljivost": "Prve karte često nisu bile samo crteži, nego i putokazi za trgovce i vojnike.",
    "rec": "podloga"
   },
   {
@@ -1007,40 +1007,40 @@
   {
    "lekcija": 4,
    "tezina": 2,
-   "pitanje": "Ko je prvi primenio projekcije da bi sfernu površinu Zemlje prikazao na karti?",
+   "pitanje": "Ko je u 2. veku napisao „Geografiju“, u kojoj su opisane projekcije za prikazivanje Zemlje na karti?",
    "odgovori": [
     "Ptolomej",
-    "Eratosten",
     "Merkator",
-    "Hiparh"
+    "Kristifor Kolumbo",
+    "Abraham Ortelijus"
    ],
-   "zanimljivost": "Ptolomejeva karta potiče iz 2. veka.",
+   "zanimljivost": "Ptolomejevo delo je u Evropi bilo vodeći priručnik kartografa do novog veka.",
    "rec": "ptolomej"
   },
   {
    "lekcija": 4,
    "tezina": 3,
-   "pitanje": "Ko je objavio prvu veliku zbirku karata – atlas pod nazivom „Prikaz sveta“?",
+   "pitanje": "Ko je objavio atlas „Theatrum Orbis Terrarum“ (1570), koji se smatra prvim modernim atlasom?",
    "odgovori": [
     "Abraham Ortelijus",
     "Gerhard Merkator",
     "Kristifor Kolumbo",
     "Ptolomej"
    ],
-   "zanimljivost": "Objavio ga je 1570. godine u Antverpenu.",
+   "zanimljivost": "Naziv atlas dolazi od Atlasa, titana iz grčke mitologije koji drži nebo na ramenima.",
    "rec": "ortelijus"
   },
   {
    "lekcija": 4,
    "tezina": 3,
-   "pitanje": "Ko se smatra tvorcem moderne kartografije?",
+   "pitanje": "Ko je 1569. godine objavio svetsku kartu sa projekcijom koja se i danas koristi za pomorske karte?",
    "odgovori": [
     "Gerhard Merkator",
     "Abraham Ortelijus",
     "Eratosten",
     "Ptolomej"
    ],
-   "zanimljivost": "Merkator je konstruisao poznatu projekciju za navigacijske karte.",
+   "zanimljivost": "Na toj projekciji prave linije odgovaraju stalnom kursu broda, ali se kopna na visokim geografskim širinama vide mnogo većim nego što jesu.",
    "rec": "merkator"
   },
   {
@@ -1076,7 +1076,7 @@
    "odgovori": [
     "Sistem za analizu i prikaz podataka",
     "Sistem za merenje dubine mora i okeana",
-    "Program isključivo za pisanje tekstova",
+    "Program za pisanje i uređivanje tekstova",
     "Mreža meteoroloških stanica na planinama"
    ],
    "zanimljivost": "GIS je savremen računarski sistem koji mnogo pomaže kartografima.",
@@ -1088,7 +1088,7 @@
    "pitanje": "Kako se zove najpoznatiji program koji prikazuje Zemlju na osnovu satelitskih snimaka?",
    "odgovori": [
     "Gugl Zemlja (Google Earth)",
-    "Gugl mape i njihov prikaz ulica",
+    "Gugl kalendar i podsetnici za sastanke",
     "Vikipedija, internet enciklopedija",
     "Gugl prevodilac i rečnik stranih reči"
    ],
@@ -1119,15 +1119,15 @@
     ],
     [
      "Ptolomej",
-     "Prva primena projekcija"
+     "Geografija sa projekcijama i koordinatama"
     ],
     [
      "Ortelijus",
-     "Prvi atlas „Prikaz sveta“"
+     "Prvi moderni atlas (1570)"
     ],
     [
      "Merkator",
-     "Navigacijska projekcija"
+     "Navigacijska projekcija (1569)"
     ]
    ],
    "zanimljivost": "Svi su doprineli razvoju kartografije kroz istoriju.",
@@ -1227,9 +1227,9 @@
    "pitanje": "Kako se prikazuje brojčani razmer?",
    "odgovori": [
     "U vidu brojnog odnosa, npr. 1 : 25 000",
-    "U vidu kružnog dijagrama sa brojevima",
-    "U vidu stubića i kolona na grafikonu",
-    "Samo rečima, bez ikakvih brojeva i cifara"
+    "U vidu procenta površine, npr. 4 %",
+    "U vidu stepeni geografske širine",
+    "Kao tekstualni opis u legendi karte"
    ],
    "zanimljivost": "Pored brojčanog postoji i grafički razmer – razmernik.",
    "rec": "brojni"
@@ -1284,7 +1284,7 @@
     "Vrednosti meridijana i paralela",
     "Nazivi svih država i gradova na karti",
     "Legenda i podaci o izdavaču karte",
-    "Samo naslov i naziv karte"
+    "Naslov i naziv karte"
    ],
    "zanimljivost": "Okvir uokviruje sadržaj karte i najčešće je pravougaonik.",
    "rec": "okvir"
@@ -1295,9 +1295,9 @@
    "pitanje": "Šta su geografski elementi karte?",
    "odgovori": [
     "Objekti prikazani na karti",
-    "Samo matematički simboli i brojevi",
-    "Samo boje i nijanse na karti",
-    "Isključivo naziv karte i njena legenda"
+    "Simboli za razmer i kartografsku mrežu",
+    "Boje i nijanse koje označavaju visine",
+    "Naziv karte, legenda i podaci o izradi"
    ],
    "zanimljivost": "Mogu biti fizičko-geografski (planine, reke, jezera) i društveno-geografski (naselja, putevi, granice).",
    "rec": "objekti"
@@ -1345,13 +1345,13 @@
   },
   {
    "lekcija": 5,
-   "tezina": 1,
-   "pitanje": "Koji je najduži toponim na svetu – pun naziv jednog glavnog grada?",
+   "tezina": 2,
+   "pitanje": "Koji glavni grad ima najduže zvanično ime na svetu?",
    "odgovori": [
-    "Pun naziv Bangkoka, glavnog grada Tajlanda",
-    "Pun naziv Beograda, glavnog grada Srbije",
-    "Pun naziv Moskve, glavnog grada Rusije",
-    "Pun naziv Pariza, glavnog grada Francuske"
+    "Bangkok (Tajland)",
+    "Beograd (Srbija)",
+    "Moskva (Rusija)",
+    "Pariz (Francuska)"
    ],
    "zanimljivost": "Ime Bangkoka ima preko 160 slova i znači „grad anđela“.",
    "rec": "bangkok",
@@ -1374,7 +1374,7 @@
    "pitanje": "Šta prikazuje dubinska i visinska skala boja u legendi?",
    "odgovori": [
     "Visine i dubine bojama",
-    "Samo boje zastava pojedinih država",
+    "Boje zastava pojedinih država",
     "Godišnja doba prikazana na karti",
     "Broj stanovnika gradova na karti"
    ],
@@ -1391,8 +1391,8 @@
      "Razmer"
     ],
     [
-     "Geografski element",
-     "Reka"
+     "Društveno-geografski element",
+     "Naselje"
     ],
     [
      "Dopunski element",
@@ -1410,14 +1410,14 @@
   {
    "lekcija": 5,
    "tezina": 3,
-   "pitanje": "Kako se na karti prepoznaje rastojanje između dva mesta kad nema razmernika?",
+   "pitanje": "Kako se rastojanje između dva mesta na karti pretvara u stvarno rastojanje?",
    "odgovori": [
-    "Lenjirom i razmerom",
-    "Pogodi se odoka, bez ikakvog merenja",
-    "Prebroje se meridijani i paralele na karti",
-    "Pogleda se samo legenda i naslov karte"
+    "Izmeri se lenjirom, pa se preračuna razmerom",
+    "Prebroje se meridijani i paralele između njih",
+    "Izmeri se šestarom, pa se doda visina reljefa",
+    "Pogodi se odoka po veličini države"
    ],
-   "zanimljivost": "Rastojanje na karti se meri lenjirom ili šestarom, a zatim preračunava pomoću razmera.",
+   "zanimljivost": "Ako put nije prava linija, rastojanje se meri po krivini, npr. koncem koji se pruža duž puta.",
    "rec": "merenje"
   },
   {
@@ -1426,7 +1426,7 @@
    "pitanje": "Čemu služe kartografski znaci?",
    "odgovori": [
     "Prikaz objekata na karti",
-    "Samo ukrašavaju i ulepšavaju kartu",
+    "Ukrašavaju i ulepšavaju kartu",
     "Određuju razmer i veličinu karte",
     "Obeležavaju autora i izdavača karte"
    ],
@@ -1454,7 +1454,7 @@
     "Linijski znaci",
     "Konturni znaci",
     "Vanrazmerni znaci",
-    "Samo boje"
+    "Tačkasti znaci"
    ],
    "zanimljivost": "Linijski znaci se koriste za objekte koji se pružaju u vidu linija.",
    "rec": "linija"
@@ -1467,7 +1467,7 @@
     "Konturni znaci",
     "Linijski znaci",
     "Vanrazmerni znaci",
-    "Samo šrafe"
+    "Šrafirani znaci"
    ],
    "zanimljivost": "Konturni znaci prikazuju objekte koji se mogu prikazati u razmeru karte.",
    "rec": "kontura"
@@ -1480,7 +1480,7 @@
     "Vanrazmerni znaci",
     "Linijski znaci",
     "Konturni znaci",
-    "Samo izohipse"
+    "Izohipse"
    ],
    "zanimljivost": "Vanrazmerni znaci su slikoviti i ne mogu se prikazati u razmeru karte.",
    "rec": "znak"
@@ -1518,7 +1518,7 @@
    "odgovori": [
     "Što su bliže, teren je strmiji",
     "Što su bliže, teren je blaži",
-    "Rastojanje nema nikakav značaj",
+    "Pokazuje koliko je oblast velika",
     "Što su dalje, teren je viši"
    ],
    "zanimljivost": "Na blažim terenima izohipse su međusobno udaljenije.",
@@ -1551,7 +1551,7 @@
     "Plavom",
     "Crvenom"
    ],
-   "zanimljivost": "Plava je za vode, žuta i narandžasta za 200–500 m, a braon preko 500 m.",
+   "zanimljivost": "Plava je za vode; žuta i narandžasta za srednje visine, a braon za najviše predele.",
    "rec": "zeleno"
   },
   {
@@ -1586,7 +1586,7 @@
    "pitanje": "Šta je metoda boja?",
    "odgovori": [
     "Reljef se prikazuje bojama i nijansama",
-    "Reljef se prikazuje isključivo crticama",
+    "Reljef se prikazuje crticama i šrafama",
     "Reljef se prikazuje senkama i svetlošću",
     "Reljef se prikazuje slikama i fotografijama"
    ],
@@ -1651,9 +1651,9 @@
    "pitanje": "Šta prikazuju opštegeografske karte?",
    "odgovori": [
     "Prirodne i društvene elemente",
-    "Samo jedan element, na primer klimu",
-    "Samo državne granice i prestonice",
-    "Isključivo turističke znamenitosti i banje"
+    "Jedan element, na primer klimu",
+    "Državne granice i prestonice",
+    "Turističke znamenitosti i banje"
    ],
    "zanimljivost": "Na njima su prikazani reljef, reke, naselja, saobraćajnice, rudnici...",
    "rec": "opste"
@@ -1665,8 +1665,8 @@
    "odgovori": [
     "Jedan ili dva elementa",
     "Sve elemente istovremeno, podjednako",
-    "Samo svet kao celinu, bez detalja",
-    "Isključivo gradove i njihove ulice"
+    "Svet kao celinu, bez detalja",
+    "Gradove i njihove ulice"
    ],
    "zanimljivost": "Tematske karte su, na primer, klimatske, saobraćajne, turističke ili političke.",
    "rec": "tematska"
@@ -1677,9 +1677,9 @@
    "pitanje": "Koje karte pripadaju tematskim kartama?",
    "odgovori": [
     "Klimatske i turističke",
-    "Samo zidne karte sveta i kontinenata",
-    "Samo planovi gradova i naselja",
-    "Samo topografske karte manjih oblasti"
+    "Zidne karte sveta i kontinenata",
+    "Planovi gradova i naselja",
+    "Topografske karte manjih oblasti"
    ],
    "zanimljivost": "Svaka od njih prikazuje samo jedan ili dva elementa.",
    "rec": "karte"
@@ -1690,9 +1690,9 @@
    "pitanje": "Na koje tri grupe se karte dele prema veličini razmera?",
    "odgovori": [
     "Krupnog, srednjeg i sitnog razmera",
-    "Na male, srednje i velike",
     "Na planske, zidne i atlasne",
-    "Na kopnene, morske i vazdušne"
+    "Na kopnene, morske i vazdušne",
+    "Na fizičke, političke i tematske"
    ],
    "zanimljivost": "Razmer određuje kolika teritorija može da se prikaže.",
    "rec": "razmer"
@@ -1758,7 +1758,7 @@
    "odgovori": [
     "Kartama srednjeg razmera",
     "Planovima",
-    "Topografskim kartama",
+    "Krupnorazmernim kartama",
     "Sitnorazmernim kartama"
    ],
    "zanimljivost": "Karte srednjeg razmera su od 1 : 200 000 do 1 : 1 000 000.",
@@ -1785,7 +1785,7 @@
     "Karta klimatskih zona Evrope",
     "Fizičko-geografska karta sveta",
     "Opšta karta Afrike",
-    "Zidna karta reljefa i naselja"
+    "Opšta karta Srbije sa reljefom, rekama i naseljima"
    ],
    "zanimljivost": "Klimatska karta prikazuje samo jedan element – klimu.",
    "rec": "klima",
@@ -1850,7 +1850,7 @@
   },
   {
    "lekcija": 7,
-   "tezina": 3,
+   "tezina": 1,
    "pitanje": "Čemu služi razmer karte u praktičnoj upotrebi?",
    "odgovori": [
     "Za računanje rastojanja",
@@ -1905,9 +1905,9 @@
    "tezina": 1,
    "pitanje": "Kako se pravilno orijentiše karta pomoću kompasa?",
    "odgovori": [
-    "Iglom kompasa prema severu",
-    "Karta se okrene naopako i poravna",
-    "Kompas se stavi u džep ili ranac",
+    "Karta se okrene tako da njen sever prati iglu kompasa",
+    "Karta se okrene naopako, pa se poravna sa suncem",
+    "Kompas se postavi tako da igla pokazuje na zapad",
     "Karta se savije na pola i stavi na sto"
    ],
    "zanimljivost": "Pravac severa na karti mora da se poklopi sa pravcem severa u prirodi.",
@@ -1932,9 +1932,9 @@
    "pitanje": "Koje su sporedne strane sveta?",
    "odgovori": [
     "SI, SZ, JI i JZ",
-    "Samo sever i jug, bez ostalih strana",
-    "Samo istok i zapad, bez ostalih strana",
-    "Sever, jug, istok i zapad kao glavne strane"
+    "Sever, jug, istok i zapad",
+    "Severoistok i jugozapad",
+    "Istok, sever i jugozapad"
    ],
    "zanimljivost": "Obeležavaju se sa NE, NW, SE i SW.",
    "rec": "sporedne"
@@ -1944,7 +1944,7 @@
    "tezina": 3,
    "pitanje": "Šta je GPS?",
    "odgovori": [
-    "Satelitski uređaj za položaj",
+    "Sistem satelita za određivanje položaja",
     "Vrsta kompasa sa magnetnom iglom",
     "Karta sveta u školskom atlasu",
     "Meteorološki satelit za prognozu"
@@ -1988,7 +1988,7 @@
     "Doda se nadmorska visina",
     "Oduzme se dužina reke"
    ],
-   "zanimljivost": "Na primer: 4,6 cm × 17 500 000 = 80 500 000 cm = 805 km.",
+   "zanimljivost": "Razmer se koristi kao množilac: 1 cm na karti razmera 1 : 1 000 000 znači 10 km u prirodi.",
    "rec": "racun"
   },
   {
@@ -2010,9 +2010,9 @@
    "pitanje": "Kako se danas najlakše orijentišeš pomoću telefona?",
    "odgovori": [
     "GPS-om u telefonu",
-    "Telefon ne može da pomogne u orijentaciji",
-    "Samo pozivom prijatelja",
-    "Samo gledanjem u ekran bez signala"
+    "Pozivom prijatelja koji poznaje kraj",
+    "Fotografisanjem ulice i pamćenjem slike",
+    "Merenjem vremena pomoću sata"
    ],
    "zanimljivost": "Većina telefona ima GPS koji određuje lokaciju pomoću signala sa satelita.",
    "rec": "telefon"
@@ -2025,10 +2025,10 @@
     "Toplota vazduha",
     "Položaj Sunca",
     "Zvezde noću",
-    "Mahovina na drveću"
+    "Kompas"
    ],
-   "objasnjenje": "Temperatura ne pokazuje strane sveta, dok Sunce, zvezde i mahovina mogu pomoći.",
-   "zanimljivost": "Strane sveta se u prirodi mogu odrediti Suncem, zvezdama i drugim znacima, ali ne i temperaturom.",
+   "objasnjenje": "Temperatura ne pokazuje strane sveta, dok Sunce, zvezde i kompas mogu pomoći.",
+   "zanimljivost": "Strane sveta se u prirodi mogu odrediti Suncem, zvezdama i kompasom, ali ne i temperaturom.",
    "rec": "pojava",
    "vrsta": "uljez"
   },
@@ -2077,11 +2077,11 @@
    "pitanje": "Šta je stanovništvo?",
    "odgovori": [
     "Ljudi na nekoj teritoriji",
-    "Samo ljudi zaposleni u državi",
-    "Samo građani jednog grada",
+    "Ljudi zaposleni u državi",
+    "Građani jednog grada",
     "Sve biljke i životinje jednog kraja"
    ],
-   "zanimljivost": "Stanovništvo je najvažniji element svake države.",
+   "zanimljivost": "Stanovništvo je jedan od tri osnovna elementa države, uz teritoriju i vlast.",
    "rec": "ljudi"
   },
   {
@@ -2094,7 +2094,7 @@
     "Geologija",
     "Ekologija"
    ],
-   "zanimljivost": "Naziv potiče od grčkih reči „demos“ (narod) i „graphein“ (pisati, opisivati).",
+   "zanimljivost": "Naziv demografija kao nauku uveo je Ašil Gijar (Achille Guillard) 1855. godine.",
    "rec": "demografija"
   },
   {
@@ -2102,13 +2102,13 @@
    "tezina": 1,
    "pitanje": "Od kojih grčkih reči je nastao naziv demografija?",
    "odgovori": [
-    "Narod i pisanje",
+    "Demos (narod) i graphein (pisati)",
     "Geo (zemlja) i graphein (pisati)",
     "Demos (narod) i polis (grad)",
     "Graphein (pisati) i logos (nauka)"
    ],
    "zanimljivost": "Demografija doslovno znači „opisivanje naroda“.",
-   "rec": "reci"
+   "rec": "narod"
   },
   {
    "lekcija": 9,
@@ -2133,7 +2133,7 @@
     "Na sedam godina",
     "Svake godine"
    ],
-   "zanimljivost": "Kanada popis sprovodi na pet, a Francuska na sedam godina.",
+   "zanimljivost": "Kanada popisuje stanovništvo na svakih pet godina.",
    "rec": "period",
    "mediji": {
     "vrsta": "mapa",
@@ -2142,54 +2142,42 @@
   },
   {
    "lekcija": 9,
-   "tezina": 3,
-   "pitanje": "Gde je obavljen prvi popis na svetu i kada?",
+   "tezina": 1,
+   "pitanje": "Zašto se popis stanovništva ponavlja u pravilnim razmacima?",
    "odgovori": [
-    "U Vavilonu, oko 3800. p.n.e.",
-    "U Rimu, u 1. veku",
-    "U Atini, u 5. veku pre nove ere",
-    "U Parizu, u 18. veku"
+    "Da se prate promene broja i strukture stanovništva",
+    "Da se menjaju granice između država",
+    "Da se broj ljudi pribroji broju kuća",
+    "Da se odredi vreme svake sezone"
    ],
-   "zanimljivost": "Prvi popis je popisivao samo muško stanovništvo, jer su samo muškarci išli u vojsku.",
-   "rec": "vavilon",
-   "mediji": {
-    "vrsta": "mapa",
-    "oblast": "bliski-istok",
-    "tacke": [
-     {
-      "lat": 32.5,
-      "lon": 44.4,
-      "oznaka": "Vavilon",
-      "tajna": true
-     }
-    ]
-   }
+   "zanimljivost": "U Srbiji se popis održava na svakih deset godina.",
+   "rec": "promene"
   },
   {
    "lekcija": 9,
    "tezina": 2,
-   "pitanje": "Ko je popisivan u prvom popisu u Vavilonu?",
+   "pitanje": "Šta je domaćinstvo u popisu stanovništva?",
    "odgovori": [
-    "Samo muško stanovništvo",
-    "Samo deca mlađa od sedam godina",
-    "Samo žene i devojčice",
-    "Samo trgovci i zanatlije"
+    "Zajednica ljudi koji žive zajedno i zajedno troše",
+    "Svi stanovnici jedne ulice",
+    "Jedna kuća ili stan bez stanara",
+    "Broj dece u jednoj porodici"
    ],
-   "zanimljivost": "Muškarci su popisivani jer su samo oni išli u vojsku i plaćali porez.",
-   "rec": "muskarci"
+   "zanimljivost": "U popisu se broje domaćinstva i stanovi, pa se iz toga računa i prosečna veličina domaćinstva.",
+   "rec": "domacinstvo"
   },
   {
    "lekcija": 9,
-   "tezina": 2,
-   "pitanje": "Kada se u Evropi sprovode prvi popisi?",
+   "tezina": 1,
+   "pitanje": "Koja ustanova u Srbiji sprovodi popis stanovništva?",
    "odgovori": [
-    "Krajem 18. i početkom 19. veka",
-    "U 5. veku, u doba seobe naroda",
-    "U 15. veku, u doba velikih otkrića",
-    "Tek u 21. veku, pojavom računara"
+    "Republički zavod za statistiku",
+    "Narodna banka Srbije",
+    "Ministarstvo prosvete i nauke",
+    "Zavod za zaštitu prirode"
    ],
-   "zanimljivost": "U tom periodu organizovan je i prvi popis u Srbiji.",
-   "rec": "evropa"
+   "zanimljivost": "Popis se u Srbiji sprovodi svakih deset godina, a podaci služe za planiranje škola, bolnica i puteva.",
+   "rec": "statistika"
   },
   {
    "lekcija": 9,
@@ -2201,7 +2189,7 @@
     "2016.",
     "2019."
    ],
-   "zanimljivost": "Popis je bio planiran za 2021, ali je zbog pandemije kovida pomeren na jesen 2022. Tada je u Srbiji (bez Kosova i Metohije) popisano oko 6,6 miliona stanovnika.",
+   "zanimljivost": "Popis je bio planiran za 2021, ali je zbog pandemije kovida pomeren na jesen 2022.",
    "rec": "srbija"
   },
   {
@@ -2210,9 +2198,9 @@
    "pitanje": "Koje podatke obezbeđuje popis stanovništva?",
    "odgovori": [
     "Starost, pol i obrazovanje",
-    "Samo broj kuća i stanova u državi",
-    "Samo broj automobila po domaćinstvu",
-    "Samo imena ulica i trgova u gradu"
+    "Broj kuća i stanova u državi",
+    "Broj automobila po domaćinstvu",
+    "Imena ulica i trgova u gradu"
    ],
    "zanimljivost": "Prikupljeni podaci su osnova većine demografskih istraživanja.",
    "rec": "podaci"
@@ -2236,9 +2224,9 @@
    "pitanje": "Sa kojim naukama je demografija povezana?",
    "odgovori": [
     "Biologija, ekonomija, statistika",
-    "Samo sa geologijom i njenim granama",
-    "Samo sa hemijom i fizičkom hemijom",
-    "Ni sa jednom drugom naukom"
+    "Geologija i njene grane",
+    "Hemija i fizička hemija",
+    "Astronomija i kosmologija"
    ],
    "zanimljivost": "Zato demografija koristi znanja iz mnogih oblasti.",
    "rec": "nauke"
@@ -2467,7 +2455,7 @@
    "tezina": 2,
    "pitanje": "Kolika je gustina naseljenosti u Srbiji?",
    "odgovori": [
-    "Oko 90 st/km²",
+    "Oko 75 st/km²",
     "Oko 18 st/km²",
     "Oko 250 st/km²",
     "Oko 5 st/km²"
@@ -2502,7 +2490,7 @@
     "Raspored po udaljenosti od mora",
     "Raspored po kontinentima i državama"
    ],
-   "zanimljivost": "Više od polovine svetske populacije živi ispod 200 m nadmorske visine.",
+   "zanimljivost": "Stalna naselja postoje i na oko 5 000 m nadmorske visine, u Andima i na Tibetu.",
    "rec": "vertikalna"
   },
   {
@@ -2592,7 +2580,7 @@
     "Broj dece u jednoj porodici"
    ],
    "zanimljivost": "Može biti pozitivan (više rođenih) ili negativan (više umrlih).",
-   "rec": "priraštaj",
+   "rec": "prirastaj",
    "medijiOdgovora": {
     "vrsta": "formula",
     "tekst": "natalitet − mortalitet = prirodni priraštaj"
@@ -2765,7 +2753,7 @@
     "Zbog nedostatka pijaće vode",
     "Zbog loše ishrane i gladi"
    ],
-   "zanimljivost": "Tamo gde je mnogo starih ljudi, više je i umrlih.",
+   "zanimljivost": "Japan, Italija i Nemačka spadaju među države sa najstarijim stanovništvom.",
    "rec": "starost"
   },
   {
@@ -2948,7 +2936,7 @@
     "2015. godine",
     "1990. godine",
     "2001. godine",
-    "2022. godine"
+    "2008. godine"
    ],
    "zanimljivost": "Rat u Siriji, progoni i siromaštvo bili su glavni razlozi.",
    "rec": "kriza"
@@ -2972,9 +2960,9 @@
    "pitanje": "Koje poslove obavljaju sezonski migranti?",
    "odgovori": [
     "Berbu i građevinske radove",
-    "Samo kancelarijske poslove u gradu",
-    "Samo školske zadatke i učenje",
-    "Samo ribolov na rekama i moru"
+    "Kancelarijske poslove u gradu",
+    "Školske zadatke i učenje",
+    "Ribolov na rekama i moru"
    ],
    "zanimljivost": "Sezonske migracije se odvijaju u određenom delu godine.",
    "rec": "sezona"
@@ -3052,7 +3040,7 @@
     "Polna, starosna i rasna struktura",
     "Etnička, jezička i verska",
     "Obrazovna i ekonomska",
-    "Samo rasna"
+    "Jezička i obrazovna"
    ],
    "zanimljivost": "Biološke strukture su povezane sa prirodnim karakteristikama.",
    "rec": "bioloske"
@@ -3108,7 +3096,7 @@
    ],
    "zanimljivost": "Na horizontalnoj osi je broj po polu, a na vertikalnoj starost.",
    "rec": "piramida",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "svg",
     "kod": "<svg viewBox=\"0 0 420 220\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"420\" height=\"220\" rx=\"12\" fill=\"#fdfaf3\"/><line x1=\"210\" y1=\"20\" x2=\"210\" y2=\"200\" stroke=\"#555\"/><path d=\"M210 200 L90 200 L130 120 L210 120 Z\" fill=\"#2e86de\" opacity=\"0.7\"/><path d=\"M210 200 L330 200 L290 120 L210 120 Z\" fill=\"#e67e22\" opacity=\"0.7\"/><text x=\"150\" y=\"215\" font-size=\"12\" fill=\"#555\">muško</text><text x=\"260\" y=\"215\" font-size=\"12\" fill=\"#555\">žensko</text></svg>"
    }
@@ -3134,7 +3122,7 @@
     "Mulati",
     "Mestici",
     "Zambosi",
-    "Kreoli"
+    "Gvarani"
    ],
    "zanimljivost": "Mestici su potomci belaca i Indijanaca, a zambosi potomci crnaca i Indijanaca.",
    "rec": "mulati"
@@ -3179,7 +3167,7 @@
     "Oko 500",
     "Tačno 1 000"
    ],
-   "zanimljivost": "Polovinu tih jezika koriste grupe manje od 10 000 ljudi.",
+   "zanimljivost": "Mnogi od tih jezika imaju manje od 10 000 govornika.",
    "rec": "jezici"
   },
   {
@@ -3194,7 +3182,7 @@
    ],
    "zanimljivost": "Hrišćana ima oko 2,3 milijarde, a muslimana oko 2 milijarde. Hrišćanstvo se deli na katoličku, pravoslavnu i protestantsku crkvu.",
    "rec": "religija",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "svet",
     "istakni": [
@@ -3209,7 +3197,7 @@
   {
    "lekcija": 13,
    "tezina": 3,
-   "pitanje": "Koja je najstarija od glavnih svetskih religija?",
+   "pitanje": "Koja je od ovih religija najstarija?",
    "odgovori": [
     "Hinduizam",
     "Islam",
@@ -3303,9 +3291,9 @@
    "pitanje": "Šta je uzrok brzog porasta svetske populacije?",
    "odgovori": [
     "Visok natalitet i medicina",
-    "Samo ratovi i oružani sukobi",
-    "Samo seobe i migracije",
-    "Samo glad i siromaštvo"
+    "Ratovi i oružani sukobi",
+    "Seobe i migracije",
+    "Glad i siromaštvo"
    ],
    "zanimljivost": "Napredak medicine i zdravstvenih usluga produžio je životni vek.",
    "rec": "uzroci"
@@ -3344,7 +3332,7 @@
     "U Francuskoj, Belgiji, Holandiji i Luksemburgu",
     "U Švajcarskoj, Austriji, Danskoj i Malti"
    ],
-   "zanimljivost": "Procenjuje se smanjenje od oko 15% tokom narednih decenija.",
+   "zanimljivost": "Mnoge zemlje Istočne i Južne Evrope već beleže smanjenje broja stanovnika.",
    "rec": "pad",
    "medijiOdgovora": {
     "vrsta": "mapa",
@@ -3373,15 +3361,15 @@
   {
    "lekcija": 14,
    "tezina": 3,
-   "pitanje": "Kako se zove generacija rođena posle Drugog svetskog rata?",
+   "pitanje": "Kako se zove generacija rođena između 1997. i 2012. godine?",
    "odgovori": [
+    "Generacija Z",
     "Bebi-bum generacija",
     "Izgubljena generacija",
-    "Generacija Z",
     "Tiha generacija"
    ],
-   "zanimljivost": "Rođeni su u prve dve decenije posle rata.",
-   "rec": "bebibum"
+   "zanimljivost": "Generacija Z je prva koja je odrasla uz internet i pametne telefone.",
+   "rec": "generacija"
   },
   {
    "lekcija": 14,
@@ -3389,9 +3377,9 @@
    "pitanje": "Koja dostignuća obeležavaju savremeno doba?",
    "odgovori": [
     "Tehnologija, medicina, robotika",
-    "Samo pismo i štampa knjiga",
-    "Samo točak i plug",
-    "Samo para i železnica"
+    "Pismo i štampa knjiga",
+    "Točak i plug",
+    "Parni motor i železnica"
    ],
    "zanimljivost": "Ta dostignuća su promenila svakodnevni život.",
    "rec": "tehnologija"
@@ -3427,10 +3415,10 @@
    "tezina": 2,
    "pitanje": "Koliko će ljudi, prema proceni UN, živeti na Zemlji 2050. godine?",
    "odgovori": [
-    "Oko 10 milijardi",
+    "Oko 9,7 milijardi",
     "Oko 8 milijardi",
-    "Oko 5 milijardi",
-    "Oko 15 milijardi"
+    "Oko 11 milijardi",
+    "Oko 5 milijardi"
    ],
    "zanimljivost": "Rast se usporava – UN procenjuju da će broj ljudi dostići vrhunac od nešto više od 10 milijardi u drugoj polovini 21. veka.",
    "rec": "prognoza"
@@ -3495,8 +3483,8 @@
    "pitanje": "Šta su naselja?",
    "odgovori": [
     "Mesta stalnog boravka ljudi",
-    "Samo veliki gradovi i prestonice",
-    "Samo kuće na selu i salaši",
+    "Veliki gradovi i prestonice",
+    "Kuće na selu i salaši",
     "Napuštena polja i šume"
    ],
    "zanimljivost": "Naselja imaju svoje ime i teritoriju.",
@@ -3521,9 +3509,9 @@
    "pitanje": "U dolinama kojih velikih reka su nastala prva naselja?",
    "odgovori": [
     "Nil, Tigar, Eufrat, Ind",
-    "Samo Dunava i njegovih pritoka",
-    "Samo Volge i njenih pritoka",
-    "Samo Amazona i njegovih pritoka"
+    "Dunav, Sava, Drava, Tisa",
+    "Volga, Don, Ural, Oka",
+    "Amazon, Orinoko, Paraná, Rio Negro"
    ],
    "zanimljivost": "Blizina vode je bila presudna za život i zemljoradnju.",
    "rec": "reke",
@@ -3586,14 +3574,14 @@
   {
    "lekcija": 15,
    "tezina": 3,
-   "pitanje": "Koje naselje se smatra najstarijim gradskim naseljem u Evropi?",
+   "pitanje": "Koje naselje je bilo središte minojske kulture na ostrvu Kritu?",
    "odgovori": [
     "Knosos",
-    "Rim",
-    "Pariz",
-    "Beograd"
+    "Mikena",
+    "Troja",
+    "Delfi"
    ],
-   "zanimljivost": "Knosos je bio središte minojske kulture na Kritu.",
+   "zanimljivost": "Kraljevska palata u Knososu imala je složene hodnike, pa su je mnogi povezivali sa grčkim mitom o Minotauru.",
    "rec": "knosos",
    "mediji": {
     "vrsta": "mapa",
@@ -3649,12 +3637,12 @@
   {
    "lekcija": 15,
    "tezina": 2,
-   "pitanje": "Koje je jedno od prvih gradskih naselja u Evropi, kod Beograda?",
+   "pitanje": "Koje naselje kod Beograda je dalo ime čitavoj neolitskoj kulturi?",
    "odgovori": [
     "Vinča",
     "Lepenski Vir",
-    "Jerihon",
-    "Knosos"
+    "Gomolava",
+    "Smederevo"
    ],
    "zanimljivost": "Naselje na lokalitetu Belo brdo u Vinči postojalo je pre više od 7 000 godina; po njemu je cela vinčanska kultura dobila ime.",
    "rec": "vinca",
@@ -3747,7 +3735,7 @@
     ],
     [
      "Knosos",
-     "Najstariji grad u Evropi"
+     "Središte minojske kulture na Kritu"
     ],
     [
      "Lepenski Vir",
@@ -3755,7 +3743,7 @@
     ],
     [
      "Vinča",
-     "Prvo gradsko naselje u Evropi"
+     "Neolitsko naselje kod Beograda"
     ]
    ],
    "zanimljivost": "Sva ova naselja su nastala u davnoj prošlosti.",
@@ -3831,9 +3819,9 @@
    "pitanje": "Koji su fizičko-geografski faktori koji utiču na položaj naselja?",
    "odgovori": [
     "Reljef, klima, voda",
-    "Samo saobraćajnice i putevi",
-    "Samo trgovina i zanatstvo",
-    "Samo kultura i obrazovanje"
+    "Saobraćajnice i putevi",
+    "Trgovina i zanatstvo",
+    "Kultura i obrazovanje"
    ],
    "zanimljivost": "Zato se najviše naselja nalazi uz obale, reke i plodne nizije.",
    "rec": "faktori"
@@ -3857,12 +3845,14 @@
      {
       "lat": 35.68,
       "lon": 139.69,
-      "oznaka": "Tokio"
+      "oznaka": "Tokio",
+      "tajna": true
      },
      {
       "lat": 40.71,
       "lon": -74,
-      "oznaka": "Njujork"
+      "oznaka": "Njujork",
+      "tajna": true
      }
     ]
    }
@@ -3890,7 +3880,7 @@
     "Jurte",
     "Iglo"
    ],
-   "zanimljivost": "Zemunice se nalaze u brdsko-stenovitim predelima.",
+   "zanimljivost": "Zemlja u kojoj su ukopane štiti od hladnoće i vetra.",
    "rec": "zemunica"
   },
   {
@@ -3929,7 +3919,7 @@
     "Koliba",
     "Sojenica"
    ],
-   "zanimljivost": "Iglo grade Inuiti (Eskimi) u severnim polarnim predelima.",
+   "zanimljivost": "Iglo grade Inuiti na severu Kanade i Grenlanda.",
    "rec": "iglo"
   },
   {
@@ -4044,7 +4034,7 @@
     "Na stara i nova",
     "Na primorska i kontinentalna"
    ],
-   "zanimljivost": "Velika seoska naselja imaju preko 2 000 stanovnika.",
+   "zanimljivost": "Granica između sela i grada nije svuda ista; zavisi od države i običaja.",
    "rec": "podela"
   },
   {
@@ -4053,7 +4043,7 @@
    "pitanje": "Kako se prema veličini dele seoska naselja?",
    "odgovori": [
     "Mala, srednja i velika",
-    "Samo na mala i velika sela",
+    "Na mala i velika sela",
     "Na gradska i prigradska naselja",
     "Na nizijska i planinska sela"
    ],
@@ -4117,8 +4107,8 @@
    "odgovori": [
     "Polifunkcionalna (imaju više funkcija)",
     "Monofunkcionalna (imaju jednu funkciju)",
-    "Nemaju nijednu funkciju",
-    "Samo trgovačka naselja"
+    "Bez ijedne funkcije",
+    "Trgovačka i ribarska naselja"
    ],
    "zanimljivost": "Gradovi imaju industrijsku, saobraćajnu, trgovačku, kulturnu i druge funkcije.",
    "rec": "grad"
@@ -4131,7 +4121,7 @@
     "Kragujevac",
     "Vrnjačka Banja",
     "Subotica",
-    "Niš"
+    "Novi Pazar"
    ],
    "zanimljivost": "Kragujevac ima velike fabrike i industrijska postrojenja.",
    "rec": "kragujevac",
@@ -4226,14 +4216,14 @@
   {
    "lekcija": 17,
    "tezina": 2,
-   "pitanje": "Koji je od navedenih gradova, sa svojom okolinom, najveći po broju stanovnika?",
+   "pitanje": "Koji je od navedenih gradova imao najviše stanovnika 1990. godine?",
    "odgovori": [
     "Tokio",
     "London",
     "Pariz",
     "Moskva"
    ],
-   "zanimljivost": "Tokio sa okolinom ima više od 30 miliona stanovnika i decenijama je važio za najveći grad sveta; po novijim procenama UN prestigle su ga Džakarta i Daka.",
+   "zanimljivost": "Tokio sa okolinom bio je najveći grad sveta decenijama; po proceni UN-a za 2025. prvo mesto ima Džakarta.",
    "rec": "tokio"
   },
   {
@@ -4267,9 +4257,9 @@
    "pitanje": "Kako se zovu naselja sa više funkcija od kojih jedna dominira?",
    "odgovori": [
     "Centri",
-    "Sela",
     "Zaseoci",
-    "Katuni"
+    "Katuni",
+    "Pimnice"
    ],
    "zanimljivost": "Mogu biti industrijski, rudarski, saobraćajni, trgovački, turistički ili kulturni centri.",
    "rec": "centar"
@@ -4410,8 +4400,8 @@
    "odgovori": [
     "Naselja koja štede energiju",
     "Naselja bez struje i vode",
-    "Naselja samo za bogate",
-    "Napuštena sela i zaselci"
+    "Naselja za bogate porodice",
+    "Napuštena sela i zaseoci"
    ],
    "zanimljivost": "Koriste obnovljive izvore energije i imaju mnogo zelenih površina.",
    "rec": "pametna"
@@ -4426,7 +4416,7 @@
     "Trastevere u Rimu (Italija)",
     "Monmartr u Parizu (Francuska)"
    ],
-   "zanimljivost": "Kombinuje solarnu energiju sa energijom iz obližnjeg postrojenja.",
+   "zanimljivost": "Naselje je izgrađeno na nekadašnjem pivarskom zemljištu, sa mnogo zelenih površina.",
    "rec": "rajninghaus",
    "mediji": {
     "vrsta": "mapa",
@@ -4447,7 +4437,7 @@
    "pitanje": "Šta su mešovita naselja?",
    "odgovori": [
     "Prelazne forme između gradova i sela",
-    "Naselja sa samo jednom funkcijom",
+    "Naselja sa jednom funkcijom",
     "Privremena stočarska naselja",
     "Napuštena sela i zaseoci"
    ],
@@ -4459,25 +4449,13 @@
    "tezina": 3,
    "pitanje": "Koje naselje je nekada bilo selo, a danas je deo Beograda?",
    "odgovori": [
-    "Mladenovac",
-    "Subotica",
-    "Niš",
-    "Kragujevac"
+    "Resnik",
+    "Sirogojno",
+    "Gostuša",
+    "Mokra Gora"
    ],
-   "zanimljivost": "Mladenovac je primer sela koje je vremenom postalo deo grada.",
-   "rec": "mladenovac",
-   "mediji": {
-    "vrsta": "mapa",
-    "oblast": "srbija",
-    "tacke": [
-     {
-      "lat": 44.44,
-      "lon": 20.7,
-      "oznaka": "Mladenovac",
-      "tajna": true
-     }
-    ]
-   }
+   "zanimljivost": "Resnik je primer sela koje je vremenom postalo deo grada.",
+   "rec": "resnik"
   },
   {
    "lekcija": 18,
@@ -4510,9 +4488,9 @@
    "tezina": 2,
    "pitanje": "Šta je infrastruktura?",
    "odgovori": [
-    "Objekti za rad naselja",
-    "Samo putevi i mostovi",
-    "Samo zgrade i soliteri",
+    "Objekti i mreže koje omogućavaju rad naselja",
+    "Putevi i mostovi",
+    "Zgrade i soliteri",
     "Broj stanovnika u naselju"
    ],
    "zanimljivost": "Infrastrukturu čine saobraćajnice, vodovod, struja i drugo.",
@@ -4617,8 +4595,8 @@
    "pitanje": "Šta su aglomeracije?",
    "odgovori": [
     "Grad sa okolnim naseljima",
-    "Samo glavni gradovi i prestonice",
-    "Napuštena sela i zaselci",
+    "Glavni gradovi i prestonice",
+    "Napuštena sela i zaseoci",
     "Vrste fabrika i postrojenja"
    ],
    "zanimljivost": "Aglomeracija je prva faza širenja grada.",
@@ -4634,7 +4612,7 @@
     "Preseljenjem ljudi na selo",
     "Gašenjem fabrika i rudnika"
    ],
-   "zanimljivost": "Najpoznatije konurbacije u Evropi su Rur i Randstad.",
+   "zanimljivost": "Reč konurbacija dolazi od latinskih reči „con“ (zajedno) i „urbs“ (grad).",
    "rec": "konurbacija"
   },
   {
@@ -4656,7 +4634,8 @@
      {
       "lat": 51.43,
       "lon": 6.76,
-      "oznaka": "Rur"
+      "oznaka": "Rur",
+      "tajna": true
      },
      {
       "lat": 52.08,
@@ -4677,7 +4656,7 @@
     "Hag",
     "Utreht"
    ],
-   "zanimljivost": "Roterdam se nalazi u Holandiji i najveća je evropska luka.",
+   "zanimljivost": "Luka u Roterdamu je važno čvorište za brodove iz cele Evrope.",
    "rec": "roterdam"
   },
   {
@@ -4712,7 +4691,8 @@
      {
       "lat": 35.68,
       "lon": 139.69,
-      "oznaka": "Tokio"
+      "oznaka": "Tokio",
+      "tajna": true
      }
     ]
    }
@@ -4735,12 +4715,12 @@
    "tezina": 3,
    "pitanje": "Šta je psevdourbanizacija (lažna urbanizacija)?",
    "odgovori": [
-    "Neplanska naselja",
+    "Rast gradova bez privrednog razvoja i sa neplanskim naseljima",
     "Planirana izgradnja gradova",
     "Razvoj pametnih naselja",
     "Širenje zelenih površina"
    ],
-   "zanimljivost": "U tim naseljima nema struje, vode ni kanalizacije.",
+   "zanimljivost": "U takvim naseljima često nedostaje struje, vode i kanalizacije.",
    "rec": "pseudo"
   },
   {
@@ -4749,7 +4729,7 @@
    "pitanje": "Kako se zovu sirotinjske četvrti u Južnoj Americi?",
    "odgovori": [
     "Favele",
-    "Slamovi",
+    "Gecekondu",
     "Katuni",
     "Zaseoci"
    ],
@@ -4770,12 +4750,12 @@
   {
    "lekcija": 19,
    "tezina": 2,
-   "pitanje": "Šta izaziva depopulacija sela usled urbanizacije?",
+   "pitanje": "Koja je posledica depopulacije sela usled urbanizacije?",
    "odgovori": [
-    "Praznjenje sela",
-    "Povećanje broja farmera na selu",
-    "Veću proizvodnju hrane u selu",
-    "Manje gradova i varoši"
+    "Sela ostaju bez mladih ljudi",
+    "Sela dobijaju mnogo novih mladih stanovnika",
+    "Veća proizvodnja hrane u selu",
+    "Sela se pune doseljenicima iz gradova"
    ],
    "zanimljivost": "U gradove se sele uglavnom mladi, pa sela stare.",
    "rec": "odliv"
@@ -4812,9 +4792,9 @@
    "pitanje": "Šta podrazumeva unutrašnja struktura grada?",
    "odgovori": [
     "Raspored zona i funkcija",
-    "Samo broj ulica u gradu",
-    "Samo boje zgrada i fasada",
-    "Samo parkove i šetališta"
+    "Broj ulica u gradu",
+    "Boje zgrada i fasada",
+    "Parkovi i šetališta"
    ],
    "zanimljivost": "Struktura grada objašnjava kako je grad organizovan.",
    "rec": "struktura"
@@ -4824,10 +4804,10 @@
    "tezina": 1,
    "pitanje": "Koje su gradske zone?",
    "odgovori": [
-    "Poslovna, stambena, industrijska",
-    "Samo poslovna i stambena zona",
-    "Samo industrijska zona",
-    "Samo zelene površine i parkovi"
+    "Poslovna, stambena, industrijska, kulturna i zelene površine",
+    "Poslovna i stambena",
+    "Industrijska i zelene površine",
+    "Kulturna i saobraćajna"
    ],
    "zanimljivost": "Svaka zona ima svoju namenu.",
    "rec": "zone"
@@ -4890,9 +4870,9 @@
    "pitanje": "Šta je gradska infrastruktura?",
    "odgovori": [
     "Saobraćajnice, vodovod, struja",
-    "Samo parkovi i zelenilo",
-    "Samo zgrade i soliteri",
-    "Samo putevi i mostovi"
+    "Parkovi i zelenilo",
+    "Zgrade i soliteri",
+    "Putevi i mostovi"
    ],
    "zanimljivost": "Zove se simbolično „kičma“ ili „krvotok“ urbanog života.",
    "rec": "sistem"
@@ -4916,9 +4896,9 @@
    "pitanje": "Koja preduzeća su zadužena za funkcionisanje infrastrukture?",
    "odgovori": [
     "Javna komunalna preduzeća (JKP)",
-    "Samo banke i pošte",
-    "Samo škole i vrtići",
-    "Samo pozorišta i muzeji"
+    "Banke i pošte",
+    "Škole i vrtići",
+    "Pozorišta i muzeji"
    ],
    "zanimljivost": "To su, na primer, „Gradsko zelenilo“ i „Gradska čistoća“.",
    "rec": "jkp"
@@ -4929,9 +4909,9 @@
    "pitanje": "Koji su problemi života u gradu?",
    "odgovori": [
     "Zagađenje, buka, gužve",
-    "Samo lepo vreme i sunce",
-    "Samo praznici i raspusti",
-    "Samo tišina i mir"
+    "Lepo vreme i sunce",
+    "Praznike i raspuste",
+    "Tišinu i mir"
    ],
    "zanimljivost": "Zbog toga se gradovi sve više uređuju kao pametna naselja.",
    "rec": "problemi"
@@ -5006,15 +4986,15 @@
   {
    "lekcija": 20,
    "tezina": 1,
-   "pitanje": "Kako se zove gradska zona u kojoj se nalaze fabrike i industrijski objekti?",
+   "pitanje": "Kako se zove gradska zona sa parkovima, šetalištima i zelenim površinama?",
    "odgovori": [
+    "Zelena zona",
     "Industrijska zona",
     "Poslovna zona",
-    "Stambena zona",
     "Kulturna zona"
    ],
-   "zanimljivost": "Industrijska zona se obično nalazi van grada ili na periferiji.",
-   "rec": "industrija"
+   "zanimljivost": "Javne zelene površine ulepšavaju grad i poboljšavaju kvalitet vazduha.",
+   "rec": "zelena"
   },
   {
    "lekcija": 21,
@@ -5116,7 +5096,7 @@
     "Vrsta saobraćaja i prevoza",
     "Način navodnjavanja njiva"
    ],
-   "zanimljivost": "Koristila se za gradnju kuća u kamenom selu Gostuša.",
+   "zanimljivost": "Ovakav način zidanja ne koristi malter, pa se kamen slaže ručno, komad po komad.",
    "rec": "suvozidica"
   },
   {
@@ -5135,15 +5115,15 @@
   {
    "lekcija": 21,
    "tezina": 3,
-   "pitanje": "Koje selo je nekada bilo selo, a danas je deo Beograda (opština Rakovica)?",
+   "pitanje": "Šta je etno-selo?",
    "odgovori": [
-    "Resnik",
-    "Sirogojno",
-    "Gostuša",
-    "Mokra Gora"
+    "Selo koje čuva tradicionalni način života i ima turističku funkciju",
+    "Selo bez stanovnika",
+    "Veliki grad sa muzejima",
+    "Selo sa velikom industrijom"
    ],
-   "zanimljivost": "Slikala ga je Nadežda Petrović 1904. godine.",
-   "rec": "resnik"
+   "zanimljivost": "Mnoga etno-sela su sačuvala kuće, zanate i običaje iz prošlosti.",
+   "rec": "etnoselo"
   },
   {
    "lekcija": 21,
@@ -5151,9 +5131,9 @@
    "pitanje": "Koja su poznata etno-sela u Srbiji?",
    "odgovori": [
     "Sirogojno, Mokra Gora i Gostuša",
-    "Samo Beograd i njegova okolina",
-    "Samo Niš i njegova okolina",
-    "Samo Novi Sad i njegova okolina"
+    "Beograd, Niš i Novi Sad",
+    "Bor, Kragujevac i Subotica",
+    "Vrnjačka Banja, Zlatibor i Kopaonik"
    ],
    "zanimljivost": "Etno-sela su prešla na turističku funkciju.",
    "rec": "etnosela",
@@ -5179,15 +5159,15 @@
   {
    "lekcija": 21,
    "tezina": 2,
-   "pitanje": "Koja sela su postala banjski turistički centri?",
+   "pitanje": "Koje selo na padinama Kopaonika ima banju sa termalnim izvorima?",
    "odgovori": [
-    "Gornja Trepča i Lukovo",
-    "Smederevo i Niš",
-    "Bor i Kragujevac",
-    "Subotica i Novi Sad"
+    "Lukovo (Lukovska banja)",
+    "Sirogojno",
+    "Resnik",
+    "Mokra Gora"
    ],
-   "zanimljivost": "Poznata su Atomska banja i Lukovska banja.",
-   "rec": "banje"
+   "zanimljivost": "Lukovska banja se nalazi na padinama Kopaonika, a ima više termalnih izvora.",
+   "rec": "lukovo"
   },
   {
    "lekcija": 21,
@@ -5260,9 +5240,9 @@
    "pitanje": "Šta je privreda?",
    "odgovori": [
     "Proizvodnja dobara i usluga",
-    "Samo poljoprivreda i stočarstvo",
-    "Samo trgovina i zanatstvo",
-    "Samo fabrike i rudnici"
+    "Poljoprivreda i stočarstvo",
+    "Trgovina i zanatstvo",
+    "Fabrike i rudnici"
    ],
    "zanimljivost": "Privreda zadovoljava različite ljudske potrebe.",
    "rec": "privreda"
@@ -5311,7 +5291,7 @@
    "tezina": 1,
    "pitanje": "Šta obuhvata sekundarni sektor?",
    "odgovori": [
-    "Rudarstvo i industrija",
+    "Rudarstvo, industriju i građevinarstvo",
     "Poljoprivredu i stočarstvo",
     "Turizam i ugostiteljstvo",
     "Zdravstvo i prosvetu"
@@ -5327,7 +5307,7 @@
     "Saobraćaj, trgovina, turizam",
     "Poljoprivredu i stočarstvo",
     "Rudarstvo i metalurgiju",
-    "Vojsku i policiju"
+    "Ribarstvo i lov"
    ],
    "zanimljivost": "Tercijarni sektor čine uslužne delatnosti.",
    "rec": "tercijarni"
@@ -5342,7 +5322,7 @@
     "Industriju i rudarstvo",
     "Trgovinu i turizam"
    ],
-   "zanimljivost": "Kvartarni sektor obezbeđuje funkcionisanje države.",
+   "zanimljivost": "Kvartarni sektor se odnosi na znanje, informacije i inovacije.",
    "rec": "kvartarni"
   },
   {
@@ -5352,8 +5332,8 @@
    "odgovori": [
     "Vetar, Sunce, voda",
     "Ugalj, gas, nafta i rude metala",
-    "Samo nafta i njeni derivati",
-    "Samo ugalj i drvo"
+    "Nafta i njeni derivati",
+    "Ugalj i gvozdena ruda"
    ],
    "zanimljivost": "Obnovljiva bogatstva se stalno obnavljaju.",
    "rec": "obnovljiva"
@@ -5369,7 +5349,7 @@
     "Biljke i životinje"
    ],
    "zanimljivost": "Neobnovljiva bogatstva se troše i ne mogu se brzo obnoviti.",
-   "rec": "neobnovljiva"
+   "rec": "ugalj"
   },
   {
    "lekcija": 22,
@@ -5377,9 +5357,9 @@
    "pitanje": "Koji su prirodni faktori razvoja privrede?",
    "odgovori": [
     "Reljef, klima, vode, tlo",
-    "Samo broj stanovnika i gustina",
-    "Samo politička stabilnost države",
-    "Samo tehnologija i inovacije"
+    "Broj stanovnika i gustina",
+    "Politička stabilnost države",
+    "Tehnologija i inovacije"
    ],
    "zanimljivost": "Prirodni faktori čine prirodnu sredinu.",
    "rec": "faktori"
@@ -5390,9 +5370,9 @@
    "pitanje": "Koji su društveni faktori razvoja privrede?",
    "odgovori": [
     "Demografski i tehnološki",
-    "Samo reljef i nadmorska visina",
-    "Samo klima i padavine",
-    "Samo vode i rečna mreža"
+    "Reljef i nadmorska visina",
+    "Klima i padavine",
+    "Vode i rečna mreža"
    ],
    "zanimljivost": "Društveni faktori menjaju prirodnu sredinu.",
    "rec": "drustveni"
@@ -5402,10 +5382,10 @@
    "tezina": 3,
    "pitanje": "Šta je geografska sredina?",
    "odgovori": [
-    "Priroda koju je čovek izmenio",
+    "Prostor sa prirodnim uslovima i uticajem čoveka",
     "Potpuno netaknuta i divlja priroda",
-    "Samo gradski i urbani prostor",
-    "Samo morska obala i plaže"
+    "Gradski i urbani prostor",
+    "Morska obala i plaže"
    ],
    "zanimljivost": "Čovek svojim radom stalno menja prirodu oko sebe.",
    "rec": "sredina"
@@ -5422,7 +5402,7 @@
    ],
    "zanimljivost": "Kina proizvodi pšenicu, pirinač, krompir, paradajz i druge useve.",
    "rec": "kina",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "azija",
     "istakni": [
@@ -5477,9 +5457,9 @@
    "pitanje": "Šta je poljoprivreda?",
    "odgovori": [
     "Obrada zemljišta i uzgoj",
-    "Samo ribolov na morima i rekama",
-    "Samo šumarstvo i seča drva",
-    "Samo rudarstvo i vađenje ruda"
+    "Ribolov na morima i rekama",
+    "Šumarstvo i seča drva",
+    "Rudarstvo i vađenje ruda"
    ],
    "zanimljivost": "Poljoprivreda obezbeđuje hranu i sirovine za industriju.",
    "rec": "zemlja"
@@ -5502,13 +5482,13 @@
    "tezina": 1,
    "pitanje": "Šta obuhvata zemljoradnja?",
    "odgovori": [
-    "Ratarstvo i voćarstvo",
-    "Samo stočarstvo i gajenje stoke",
-    "Samo ribolov i lov divljači",
-    "Samo šumarstvo i seča drva"
+    "Ratarstvo, voćarstvo i povrtarstvo",
+    "Stočarstvo i gajenje stoke",
+    "Ribolov i lov divljači",
+    "Šumarstvo i seča drva"
    ],
    "zanimljivost": "Zemljoradnja podrazumeva obradu zemljišta i gajenje biljaka.",
-   "rec": "zemljoradnja"
+   "rec": "oranica"
   },
   {
    "lekcija": 23,
@@ -5516,9 +5496,9 @@
    "pitanje": "Šta obuhvata stočarstvo?",
    "odgovori": [
     "Govedarstvo, ovčarstvo, pčelarstvo",
-    "Samo voćarstvo i vinogradarstvo",
-    "Samo ratarstvo i povrtarstvo",
-    "Samo cvećarstvo i ukrasne biljke"
+    "Voćarstvo i vinogradarstvo",
+    "Ratarstvo i povrtarstvo",
+    "Cvećarstvo i ukrasne biljke"
    ],
    "zanimljivost": "Stočarstvo obuhvata gajenje domaćih životinja.",
    "rec": "stocarstvo"
@@ -5533,13 +5513,13 @@
     "U srednjem veku, posle Rimljana",
     "Pre 100 godina, u 20. veku"
    ],
-   "zanimljivost": "Nomadska plemena su počela da uzgajaju pšenicu, ječam i druge kulture.",
+   "zanimljivost": "Prvi zemljoradnici su gajili pšenicu, ječam i druge biljke, a pripitomljavali su i životinje.",
    "rec": "istorija"
   },
   {
    "lekcija": 23,
    "tezina": 3,
-   "pitanje": "Koje voće je danas prvo u svetu po količini useva?",
+   "pitanje": "Koje voće se u svetu najviše proizvodi, ne računajući lubenice i dinje?",
    "odgovori": [
     "Banane",
     "Jabuke",
@@ -5567,8 +5547,8 @@
    "odgovori": [
     "Žitarice i uljarice",
     "Tropske kulture i palme",
-    "Samo irvasi i severni jeleni",
-    "Samo vinova loza i masline"
+    "Irvasi i severni jeleni",
+    "Vinova loza i masline"
    ],
    "zanimljivost": "U ravnicama su najpovoljniji uslovi za ratarstvo.",
    "rec": "ratarstvo"
@@ -5581,7 +5561,7 @@
     "Manioka, banane, kafa",
     "Pšenica i ječam i raž i ovas",
     "Krompir i raž i ovas i ječam",
-    "Samo borovnice i brusnice i maline"
+    "Borovnice, brusnice i maline"
    ],
    "zanimljivost": "Visoke temperature pogoduju tropskim kulturama.",
    "rec": "tropske"
@@ -5605,9 +5585,9 @@
    "pitanje": "Koje agrotehničke mere povećavaju prinose?",
    "odgovori": [
     "Melioracija i mehanizacija",
-    "Samo zalivanje i đubrenje",
-    "Samo ručno branje i okopavanje",
-    "Samo đubrenje i seča korova"
+    "Zalivanje i đubrenje",
+    "Ručno branje i okopavanje",
+    "Đubrenje i seča korova"
    ],
    "zanimljivost": "Savremene mere su dostupnije u razvijenim državama.",
    "rec": "mere"
@@ -5619,8 +5599,8 @@
    "odgovori": [
     "Ekstenzivna poljoprivreda",
     "Intenzivna poljoprivreda",
-    "Organska poljoprivreda",
-    "Ekološka poljoprivreda"
+    "Plantažna poljoprivreda",
+    "Industrijska poljoprivreda"
    ],
    "zanimljivost": "Ekstenzivna poljoprivreda zavisi od prirodnih uslova i malo ulaže.",
    "rec": "ekstenzivna"
@@ -5633,7 +5613,7 @@
     "Intenzivna poljoprivreda",
     "Ekstenzivna poljoprivreda",
     "Nomadska poljoprivreda",
-    "Samo pčelarstvo"
+    "Pčelarstvo"
    ],
    "zanimljivost": "Intenzivna poljoprivreda može negativno uticati na okolinu.",
    "rec": "intenzivna"
@@ -5648,30 +5628,32 @@
     "Ekstenzivna poljoprivreda",
     "Industrijska poljoprivreda"
    ],
-   "zanimljivost": "Koristi prirodno đubrivo i obnovljive izvore energije.",
+   "zanimljivost": "Koristi stajsko đubrivo i kompost, a biljke štiti prirodnim sredstvima.",
    "rec": "organska"
   },
   {
    "lekcija": 23,
    "tezina": 3,
-   "pitanje": "U kojim državama je razvijena organska poljoprivreda?",
+   "pitanje": "Koja evropska država ima među najvećim udelom organske poljoprivrede u ukupnim poljoprivrednim površinama?",
    "odgovori": [
-    "Holandija, Danska i Slovenija",
+    "Austrija",
     "Niger i Čad",
     "Mongolija i Kazahstan",
     "Grenland i Island"
    ],
-   "zanimljivost": "To su visoko razvijene evropske države.",
+   "zanimljivost": "Austrija ima jedan od najvećih udela organske poljoprivrede u Evropskoj uniji.",
    "rec": "drzave",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "evropa",
     "istakni": [
-     "NLD",
-     "DNK",
-     "SVN"
+     "AUT"
     ]
-   }
+   },
+   "__mv": [
+    "mediji",
+    "medijiOdgovora"
+   ]
   },
   {
    "lekcija": 23,
@@ -5719,10 +5701,10 @@
    "tezina": 1,
    "pitanje": "Šta je industrija?",
    "odgovori": [
-    "Mašinska prerada sirovina",
-    "Samo trgovina i ugostiteljstvo",
-    "Samo poljoprivreda i stočarstvo",
-    "Samo saobraćaj i prevoz"
+    "Prerada sirovina u proizvode u fabrikama",
+    "Trgovina i ugostiteljstvo",
+    "Poljoprivreda i stočarstvo",
+    "Saobraćaj i prevoz"
    ],
    "zanimljivost": "Industrijska proizvodnja se odvija u fabrikama.",
    "rec": "industrija"
@@ -5824,7 +5806,8 @@
      {
       "lat": 37.39,
       "lon": -122.08,
-      "oznaka": "Silicijumska dolina"
+      "oznaka": "Silicijumska dolina",
+      "tajna": true
      }
     ]
    }
@@ -5839,7 +5822,7 @@
     "Proces migracija i seoba",
     "Proces kolonizacije i osvajanja"
    ],
-   "zanimljivost": "Roboti će u budućnosti zameniti oko 20 miliona radnih mesta.",
+   "zanimljivost": "Mnogi poslovi u proizvodnji danas se obavljaju robotima, a ne ljudskim rukama.",
    "rec": "robot"
   },
   {
@@ -5884,22 +5867,26 @@
   {
    "lekcija": 24,
    "tezina": 2,
-   "pitanje": "Koja država je primer dobre prakse u reciklažnoj i zelenoj industriji?",
+   "pitanje": "Koja od navedenih država je poznata po preradi otpada u energiju za daljinsko grejanje?",
    "odgovori": [
     "Danska",
     "Niger",
     "Mongolija",
     "Čad"
    ],
-   "zanimljivost": "Danska godišnje preradi oko 44 000 tona iskorišćenih guma.",
+   "zanimljivost": "Kopenhagen ima postrojenje za spaljivanje otpada koje grije grad, a na njegovom krovu je i staza za skijanje.",
    "rec": "danska",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "evropa",
     "istakni": [
      "DNK"
     ]
-   }
+   },
+   "__mv": [
+    "mediji",
+    "medijiOdgovora"
+   ]
   },
   {
    "lekcija": 24,
@@ -5907,8 +5894,8 @@
    "pitanje": "Kako industrija utiče na životnu sredinu?",
    "odgovori": [
     "Stvara otpad i zagađenje",
-    "Samo čisti vazduh i vodu",
-    "Samo pošumljava i ozelenjava",
+    "Čisti vazduh i vodu",
+    "Pošumljava i ozelenjava",
     "Nema nikakav uticaj na okolinu"
    ],
    "zanimljivost": "Zato se razvijaju reciklažna i zelena industrija.",
@@ -5946,9 +5933,9 @@
    "pitanje": "Šta je saobraćaj?",
    "odgovori": [
     "Prevoz ljudi i robe",
-    "Samo vožnja bicikla i pešačenje",
-    "Samo letenje avionom i helikopterom",
-    "Samo trgovina i razmena robe"
+    "Vožnja bicikla i pešačenje",
+    "Letenje avionom i helikopterom",
+    "Trgovina i razmena robe"
    ],
    "zanimljivost": "Saobraćaj koristi razna prevozna sredstva.",
    "rec": "saobracaj"
@@ -5959,9 +5946,9 @@
    "pitanje": "Na koje se vrste deli saobraćaj prema sredini u kojoj se odvija?",
    "odgovori": [
     "Kopneni, vodni, vazdušni",
-    "Samo kopneni i vodni saobraćaj",
-    "Samo vazdušni saobraćaj",
-    "Samo telekomunikacioni saobraćaj"
+    "Kopneni i vodni",
+    "Vazdušni",
+    "Telekomunikacioni"
    ],
    "zanimljivost": "Svaka vrsta ima svoja sredstva i infrastrukturu.",
    "rec": "vrste"
@@ -6028,7 +6015,7 @@
     "Vodni saobraćaj",
     "Železnički"
    ],
-   "zanimljivost": "Kosmički saobraćaj koristi satelite i spejs šatlove.",
+   "zanimljivost": "Kosmički saobraćaj koristi satelite i svemirske letelice.",
    "rec": "kosmicki"
   },
   {
@@ -6037,9 +6024,9 @@
    "pitanje": "Šta je turizam?",
    "odgovori": [
     "Putovanje radi odmora i upoznavanja",
-    "Samo put na posao i u školu",
-    "Samo selidba u drugi grad",
-    "Samo trgovina i kupovina"
+    "Put na posao i u školu",
+    "Selidba u drugi grad",
+    "Trgovina i kupovina"
    ],
    "zanimljivost": "Turizam je jedna od najbrže rastućih delatnosti.",
    "rec": "turizam"
@@ -6050,9 +6037,9 @@
    "pitanje": "Koje vrste turističkih vrednosti postoje?",
    "odgovori": [
     "Prirodne i antropogene",
-    "Samo prirodne",
-    "Samo antropogene",
-    "Ni jedna"
+    "Ljudske i životinjske",
+    "Morske i kopnene",
+    "Stare i nove"
    ],
    "zanimljivost": "Prirodne su planine i plaže, a antropogene spomenici i manifestacije.",
    "rec": "vrednosti"
@@ -6076,13 +6063,13 @@
    "pitanje": "Koje države su vodeće turističke destinacije sveta?",
    "odgovori": [
     "Francuska, Španija, SAD, Turska i Italija",
-    "Samo Srbija i njena banja i planine",
-    "Samo Mongolija i njene stepe i pustinje",
-    "Samo Čad i njegove pustinje i oaze"
+    "Srbija i njena banja i planine",
+    "Mongolija i njene stepe i pustinje",
+    "Čad i njegove pustinje i oaze"
    ],
    "zanimljivost": "Francuska je najposećenija turistička destinacija.",
    "rec": "destinacije",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "svet",
     "istakni": [
@@ -6092,7 +6079,11 @@
      "TUR",
      "ITA"
     ]
-   }
+   },
+   "__mv": [
+    "mediji",
+    "medijiOdgovora"
+   ]
   },
   {
    "lekcija": 25,
@@ -6124,7 +6115,7 @@
    "pitanje": "Na kom ostrvu je broj turista ograničen radi zaštite prirode?",
    "odgovori": [
     "Galapagos",
-    "Island",
+    "Kipar",
     "Krit",
     "Sicilija"
    ],
@@ -6149,9 +6140,9 @@
    "pitanje": "Šta su smeštajni objekti u turizmu?",
    "odgovori": [
     "Hoteli, moteli, apartmani",
-    "Samo putevi i autoputevi",
-    "Samo aerodromi i luke",
-    "Samo luke i pristaništa"
+    "Putevi i autoputevi",
+    "Aerodromi i luke",
+    "Luke i pristaništa"
    ],
    "zanimljivost": "U njima borave turisti tokom putovanja.",
    "rec": "smestaj"
@@ -6214,9 +6205,9 @@
    "pitanje": "Koje su vanprivredne delatnosti?",
    "odgovori": [
     "Zdravstvo, prosveta, vojska",
-    "Samo poljoprivreda i stočarstvo",
-    "Samo industrija i rudarstvo",
-    "Samo trgovina i turizam"
+    "Poljoprivreda i stočarstvo",
+    "Industrija i rudarstvo",
+    "Trgovina i turizam"
    ],
    "zanimljivost": "Sve su od javnog značaja.",
    "rec": "delatnosti"
@@ -6253,9 +6244,9 @@
    "pitanje": "Čime se bavi nauka?",
    "odgovori": [
     "Proučavanjem sveta",
-    "Samo lečenjem ljudi",
-    "Samo trgovinom i prodajom",
-    "Samo prevozom i saobraćajem"
+    "Lečenjem ljudi",
+    "Trgovinom i prodajom",
+    "Prevozom i saobraćajem"
    ],
    "zanimljivost": "Nauka se bavi istraživačkim radom.",
    "rec": "nauka"
@@ -6319,8 +6310,8 @@
    "odgovori": [
     "Veći stepen ekonomske razvijenosti države",
     "Manju razvijenost države i privrede",
-    "Samo veći broj sela i zaselaka",
-    "Samo više fabrika i rudnika"
+    "Veći broj sela i zaselaka",
+    "Više fabrika i rudnika"
    ],
    "zanimljivost": "U razvijenim državama sve više ljudi radi u uslugama.",
    "rec": "razvijenost"
@@ -6331,9 +6322,9 @@
    "pitanje": "Ko finansira vanprivredne delatnosti?",
    "odgovori": [
     "Država",
-    "Samo banke",
-    "Samo turisti",
-    "Samo fabrike"
+    "Banke",
+    "Turisti",
+    "Fabrike"
    ],
    "zanimljivost": "Zato što su od javnog značaja.",
    "rec": "drzava"
@@ -6410,7 +6401,7 @@
    "tezina": 1,
    "pitanje": "Na koje tri grupe se države dele prema razvijenosti privrede?",
    "odgovori": [
-    "Nerazvijene, srednje, razvijene",
+    "Nerazvijene, srednje razvijene i visoko razvijene",
     "Na velike, srednje i male države",
     "Na prijateljske i neprijateljske države",
     "Na stare i nove države"
@@ -6448,8 +6439,8 @@
    "odgovori": [
     "Tercijarni i kvartarni sektor",
     "Primarni sektor i poljoprivreda",
-    "Samo lov i sakupljanje",
-    "Samo ribolov i stočarstvo"
+    "Lov i sakupljanje",
+    "Ribolov i stočarstvo"
    ],
    "zanimljivost": "Industrija im je izuzetno razvijena, a rade visokoobrazovani ljudi.",
    "rec": "razvijene",
@@ -6472,8 +6463,8 @@
    "pitanje": "Koje države pripadaju visoko razvijenim?",
    "odgovori": [
     "SAD, Nemačka, Japan",
-    "Samo afričke i azijske države",
-    "Samo države Južne Amerike",
+    "Afričke i azijske države",
+    "Države Južne Amerike",
     "Niger i Čad"
    ],
    "zanimljivost": "To su države Severne Amerike, Zapadne i Severne Evrope, Australija i Japan.",
@@ -6499,7 +6490,7 @@
    "odgovori": [
     "Britanija i Francuska",
     "Srbija i Hrvatska",
-    "Kina i Japan",
+    "Švajcarska i Austrija",
     "Kanada i Australija"
    ],
    "zanimljivost": "Imale su kolonije u Africi, Aziji i Južnoj Americi.",
@@ -6521,16 +6512,16 @@
   {
    "lekcija": 27,
    "tezina": 2,
-   "pitanje": "Koje države imaju najveći BDP po glavi stanovnika?",
+   "pitanje": "Kakve države obično imaju najveći BDP po glavi stanovnika?",
    "odgovori": [
-    "Razvijene sa malo ljudi",
+    "Razvijene sa malo stanovnika",
     "Velike države sa mnogo ljudi",
     "Nerazvijene i siromašne države",
     "Države bez izlaza na more"
    ],
    "zanimljivost": "Kad se veliki dohodak podeli sa malo ljudi, BDP po glavi je visok.",
    "rec": "luksemburg",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "evropa",
     "tacke": [
@@ -6540,7 +6531,11 @@
       "oznaka": "Luksemburg"
      }
     ]
-   }
+   },
+   "__mv": [
+    "mediji",
+    "medijiOdgovora"
+   ]
   },
   {
    "lekcija": 27,
@@ -6548,9 +6543,9 @@
    "pitanje": "Koji faktori utiču na razlike u razvijenosti država?",
    "odgovori": [
     "Položaj, resursi, prošlost i obrazovanje",
-    "Samo boja zastave i državnog grba",
-    "Samo broj reka i planina i jezera",
-    "Samo klima i padavine i temperature"
+    "Boja zastave i državnog grba",
+    "Broj reka, planina i jezera",
+    "Klima, padavine i temperature"
    ],
    "zanimljivost": "Svi ovi faktori oblikuju privredni razvoj.",
    "rec": "faktori"
@@ -6565,7 +6560,7 @@
     "Niger i Čad",
     "Japan i Australija"
    ],
-   "zanimljivost": "Većina država u svetu pripada ovoj grupi.",
+   "zanimljivost": "Mnoge države Istočne Evrope i Latinske Amerike pripadaju ovoj grupi.",
    "rec": "srednje"
   },
   {
@@ -6586,7 +6581,7 @@
    "tezina": 2,
    "pitanje": "Gde se nalazi najveći broj nerazvijenih država?",
    "odgovori": [
-    "U Africi i Južnoj Americi",
+    "U Africi i Aziji",
     "U zapadnoj i severnoj Evropi",
     "U Severnoj i Južnoj Americi",
     "U Australiji i Okeaniji"
@@ -6625,10 +6620,6 @@
     [
      "Visoko razvijene",
      "Tercijarni i kvartarni sektor"
-    ],
-    [
-     "Multinacionalne kompanije",
-     "Posluju u više država"
     ]
    ],
    "zanimljivost": "Razvijenost države zavisi od dominantnih delatnosti.",
@@ -6654,8 +6645,8 @@
    "pitanje": "Kako se zove međuzavisnost životne sredine, društva i privrede?",
    "odgovori": [
     "Trougao održivosti",
-    "Krug privrede",
-    "Kvadrat razvoja",
+    "Krug razvoja",
+    "Kvadrat privrede",
     "Lanac proizvodnje"
    ],
    "zanimljivost": "Ta tri elementa čine osnovu održivog razvoja.",
@@ -6680,9 +6671,9 @@
    "pitanje": "Šta su mere zaštite životne sredine?",
    "odgovori": [
     "Postupci koji čuvaju prirodu",
-    "Samo sadnja cveća i drveća",
-    "Samo gradnja puteva i mostova",
-    "Samo lov i ribolov"
+    "Širenje deponija",
+    "Gradnja puteva i mostova",
+    "Lov i ribolov"
    ],
    "zanimljivost": "U mere spadaju reciklaža, pošumljavanje i zaštita prirode.",
    "rec": "mere"
@@ -6695,7 +6686,7 @@
     "Sunce, vetar i voda",
     "Ugalj i nafta",
     "Gas i rude metala",
-    "Samo drvo i biomasa"
+    "Uran i ugalj"
    ],
    "zanimljivost": "Obnovljivi izvori se stalno obnavljaju i ne zagađuju okolinu.",
    "rec": "izvori"
@@ -6724,7 +6715,7 @@
     "Paljenje trave i strnjike"
    ],
    "zanimljivost": "Šume prečišćavaju vazduh i sprečavaju eroziju zemljišta.",
-   "rec": "posumljavanje"
+   "rec": "sadnja"
   },
   {
    "lekcija": 28,
@@ -6749,7 +6740,7 @@
     "Moskva",
     "London"
    ],
-   "zanimljivost": "Kroz centar Ljubljane saobraćaju samo električna vozila.",
+   "zanimljivost": "Ljubljana je 2016. dobila priznanje Zelene prestonice Evrope, a centar joj je pretežno pešačka zona.",
    "rec": "ljubljana",
    "mediji": {
     "vrsta": "mapa",
@@ -6774,7 +6765,7 @@
     "UNESCO",
     "NATO"
    ],
-   "zanimljivost": "U Srbiji deluje kao „WWF Adria Serbia“.",
+   "zanimljivost": "Panda na njenom logotipu je jedan od najpoznatijih zaštitnih znakova u svetu.",
    "rec": "priroda"
   },
   {
@@ -6793,11 +6784,11 @@
   {
    "lekcija": 28,
    "tezina": 2,
-   "pitanje": "Šta izaziva gomilanje štetnih gasova u atmosferi?",
+   "pitanje": "Šta je posledica gomilanja štetnih gasova u atmosferi?",
    "odgovori": [
     "Efekat staklene bašte i klimatske promene",
-    "Samo lepše vreme i više sunca i toplote",
-    "Samo više kiše i snega i padavina",
+    "Lepše vreme i više sunca",
+    "Više kiše i snega",
     "Nema nikakve posledice za ljude"
    ],
    "zanimljivost": "To dovodi do porasta temperature i otapanja lednika.",
@@ -6850,7 +6841,7 @@
     ],
     [
      "Biomasa",
-     "Komposter"
+     "Biogasno postrojenje"
     ]
    ],
    "zanimljivost": "Obnovljivi izvori energije ne zagađuju životnu sredinu.",
@@ -6863,9 +6854,9 @@
    "pitanje": "Šta je država?",
    "odgovori": [
     "Ljudi, teritorija i vlast",
-    "Samo glavni grad i prestonica",
-    "Samo vojska i policija",
-    "Samo teritorija i granice"
+    "Glavni grad i prestonica",
+    "Vojska i policija",
+    "Teritorija i granice"
    ],
    "zanimljivost": "Državu čine ljudi, teritorija i vlast.",
    "rec": "drzava"
@@ -6873,15 +6864,15 @@
   {
    "lekcija": 29,
    "tezina": 1,
-   "pitanje": "Koji su glavni elementi države?",
+   "pitanje": "Koji organ u državi donosi zakone?",
    "odgovori": [
-    "Stanovništvo, teritorija, vlast",
-    "Samo zastava i grb države",
-    "Samo jezik i vera naroda",
-    "Samo vojska i policija"
+    "Skupština (parlament)",
+    "Vlada",
+    "Sud",
+    "Vojni štab"
    ],
-   "zanimljivost": "Sva tri elementa su neophodna za postojanje države.",
-   "rec": "elementi"
+   "zanimljivost": "U parlamentu se zakoni predlažu, raspravljaju i glasaju.",
+   "rec": "zakoni"
   },
   {
    "lekcija": 29,
@@ -6928,16 +6919,16 @@
   },
   {
    "lekcija": 29,
-   "tezina": 3,
-   "pitanje": "Koja je najstarija poznata civilizacija i prva država, nastala oko 3500. g. p.n.e.?",
+   "tezina": 2,
+   "pitanje": "Koji faraon je sagradio Keopsovu piramidu?",
    "odgovori": [
-    "Sumer",
-    "Egipat",
-    "Rim",
-    "Grčka"
+    "Keops",
+    "Tutankamon",
+    "Ramzes II",
+    "Hamurabi"
    ],
-   "zanimljivost": "Sumer je nastao u Mesopotamiji, u dolini Tigra i Eufrata.",
-   "rec": "sumer"
+   "zanimljivost": "Keopsova piramida je bila najviša građevina na svetu oko 3 800 godina.",
+   "rec": "keops"
   },
   {
    "lekcija": 29,
@@ -6951,13 +6942,17 @@
    ],
    "zanimljivost": "Egipat je poznat po piramidama.",
    "rec": "nil",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "afrika",
     "reke": [
      "Nil"
     ]
-   }
+   },
+   "__mv": [
+    "mediji",
+    "medijiOdgovora"
+   ]
   },
   {
    "lekcija": 29,
@@ -6995,13 +6990,17 @@
    ],
    "zanimljivost": "To su velike reke istočne Azije.",
    "rec": "kina",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "azija",
     "reke": [
      "Jangce"
     ]
-   }
+   },
+   "__mv": [
+    "mediji",
+    "medijiOdgovora"
+   ]
   },
   {
    "lekcija": 29,
@@ -7019,12 +7018,12 @@
   {
    "lekcija": 29,
    "tezina": 2,
-   "pitanje": "Kako država stiče međunarodno priznanje?",
+   "pitanje": "Kako država dobija međunarodno priznanje?",
    "odgovori": [
-    "Članstvom u Ujedinjenim nacijama",
-    "Samo proglašenjem nezavisnosti",
-    "Samo imenom i grbom",
-    "Samo grbom i zastavom"
+    "Priznanjem drugih država",
+    "Proglašenjem nezavisnosti",
+    "Imenom i grbom",
+    "Zastavom i himnom"
    ],
    "zanimljivost": "Danas u svetu postoji 193 priznate države.",
    "rec": "priznanje"
@@ -7032,14 +7031,14 @@
   {
    "lekcija": 29,
    "tezina": 3,
-   "pitanje": "Koja je najmanja nezavisna država na svetu?",
+   "pitanje": "U kom gradu se nalazi Vatikan?",
    "odgovori": [
-    "Vatikan (44 hektara)",
-    "Monako i San Marino",
-    "San Marino i Lihtenštajn",
-    "Lihtenštajn i Monako"
+    "Rim",
+    "Milano",
+    "Venecija",
+    "Firenca"
    ],
-   "zanimljivost": "Vatikan se nalazi u Rimu i sedište je pape.",
+   "zanimljivost": "Vatikan je najmanja nezavisna država i sedište katoličke crkve i pape.",
    "rec": "vatikan",
    "mediji": {
     "vrsta": "mapa",
@@ -7059,10 +7058,10 @@
    "tezina": 2,
    "pitanje": "Kada započinje razvoj modernih država?",
    "odgovori": [
-    "Posle Drugog svetskog rata",
+    "Posle Vestfalskog mira 1648. godine",
     "U srednjem veku, posle Rima",
     "U 15. veku, u doba otkrića",
-    "U 18. veku, posle revolucija"
+    "Pre nove ere, u antičkim gradovima"
    ],
    "zanimljivost": "Tada nastaju mnoge današnje države.",
    "rec": "moderne"
@@ -7077,7 +7076,7 @@
     "250",
     "50"
    ],
-   "zanimljivost": "Sve su članice Ujedinjenih nacija.",
+   "zanimljivost": "Većina je članica Ujedinjenih nacija; Vatikan i Palestina imaju status posmatrača.",
    "rec": "broj"
   },
   {
@@ -7112,9 +7111,9 @@
    "pitanje": "Šta je geografski položaj države?",
    "odgovori": [
     "Položaj prema okruženju",
-    "Samo njena površina i veličina",
-    "Samo broj stanovnika države",
-    "Samo oblik zastave i grba"
+    "Površina i veličina države",
+    "Broj stanovnika države",
+    "Oblik zastave i grba"
    ],
    "zanimljivost": "Geografski položaj obuhvata više vrsta položaja.",
    "rec": "polozaj"
@@ -7127,7 +7126,7 @@
     "Holandija i Mađarska",
     "Austrija i Norveška",
     "Švajcarska i Nepal",
-    "Francuska i Srbija"
+    "Grčka i Švedska"
    ],
    "zanimljivost": "Nizijske države imaju pretežno ravan reljef.",
    "rec": "nizijske"
@@ -7139,8 +7138,8 @@
    "odgovori": [
     "Švajcarska i Nepal",
     "Holandija i Mađarska",
-    "Grčka i Poljska",
-    "Češka i Slovačka"
+    "Danska i Belgija",
+    "Poljska i Litvanija"
    ],
    "zanimljivost": "U njima preovlađuju visoke planine.",
    "rec": "nepal"
@@ -7157,7 +7156,7 @@
    ],
    "zanimljivost": "Kontinentalne države nemaju izlaz na more.",
    "rec": "more",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "evropa",
     "istakni": [
@@ -7166,7 +7165,11 @@
      "CZE",
      "AUT"
     ]
-   }
+   },
+   "__mv": [
+    "mediji",
+    "medijiOdgovora"
+   ]
   },
   {
    "lekcija": 30,
@@ -7180,13 +7183,17 @@
    ],
    "zanimljivost": "Francuska je primorska država sa lukama i važnim saobraćajnicama.",
    "rec": "francuska",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "evropa",
     "istakni": [
      "FRA"
     ]
-   }
+   },
+   "__mv": [
+    "mediji",
+    "medijiOdgovora"
+   ]
   },
   {
    "lekcija": 30,
@@ -7200,13 +7207,17 @@
    ],
    "zanimljivost": "Čad je na severu Afrike, bez izlaza na more i okružen nerazvijenim državama.",
    "rec": "cad",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "afrika",
     "istakni": [
      "TCD"
     ]
-   }
+   },
+   "__mv": [
+    "mediji",
+    "medijiOdgovora"
+   ]
   },
   {
    "lekcija": 30,
@@ -7214,7 +7225,7 @@
    "pitanje": "Na koje se grupe države dele prema veličini teritorije?",
    "odgovori": [
     "Velike, srednje, male, patuljaste",
-    "Samo na velike i male države",
+    "Na velike i male države",
     "Na bogate i siromašne države",
     "Na gradske i seoske države"
    ],
@@ -7227,19 +7238,23 @@
    "pitanje": "Koja je najveća država na svetu po površini?",
    "odgovori": [
     "Ruska Federacija",
-    "Kanada i Kina",
-    "Kina i SAD",
-    "SAD i Kanada"
+    "Kanada",
+    "Kina",
+    "SAD"
    ],
    "zanimljivost": "Rusija se prostire kroz Evropu i Aziju.",
    "rec": "rusija",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "svet",
     "istakni": [
      "RUS"
     ]
-   }
+   },
+   "__mv": [
+    "mediji",
+    "medijiOdgovora"
+   ]
   },
   {
    "lekcija": 30,
@@ -7279,13 +7294,17 @@
    ],
    "zanimljivost": "Izdužene su i Norveška i Vijetnam.",
    "rec": "cile",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "j-amerika",
     "istakni": [
      "CHL"
     ]
-   }
+   },
+   "__mv": [
+    "mediji",
+    "medijiOdgovora"
+   ]
   },
   {
    "lekcija": 30,
@@ -7299,13 +7318,17 @@
    ],
    "zanimljivost": "Indonezija se sastoji od velikog broja ostrva.",
    "rec": "indonezija",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "azija",
     "istakni": [
      "IDN"
     ]
-   }
+   },
+   "__mv": [
+    "mediji",
+    "medijiOdgovora"
+   ]
   },
   {
    "lekcija": 30,
@@ -7317,7 +7340,7 @@
     "Vrsta granice i prelaza",
     "Vrsta glavnog grada"
    ],
-   "zanimljivost": "Primeri su Monako, San Marino, Vatikan i Lesoto.",
+   "zanimljivost": "Primeri su San Marino i Vatikan u Italiji i Lesoto u Južnoj Africi.",
    "rec": "enklava"
   },
   {
@@ -7433,13 +7456,17 @@
    ],
    "zanimljivost": "Drina je prirodna granica između Srbije i BiH.",
    "rec": "drina",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "srbija",
     "reke": [
      "Drina"
     ]
-   }
+   },
+   "__mv": [
+    "mediji",
+    "medijiOdgovora"
+   ]
   },
   {
    "lekcija": 31,
@@ -7470,12 +7497,12 @@
   {
    "lekcija": 31,
    "tezina": 3,
-   "pitanje": "Koliko procenata granica u Africi je veštačko?",
+   "pitanje": "Kakve su granice u Africi uglavnom?",
    "odgovori": [
-    "Preko 40%",
-    "Manje od 5%",
-    "Tačno 100%",
-    "Nijedna"
+    "Uglavnom veštačke, ucrtane kolonijalnim ugovorima",
+    "Uglavnom prirodne, po rekama i planinama",
+    "Sve veštačke, bez ijedne prirodne",
+    "Sve prirodne, bez ijedne veštačke"
    ],
    "zanimljivost": "Veštačke granice često prate prave linije meridijana i uporednika.",
    "rec": "afrika"
@@ -7490,15 +7517,19 @@
     "SAD",
     "Brazil"
    ],
-   "zanimljivost": "Najkraću kopnenu granicu ima Gibraltar (1,53 km).",
+   "zanimljivost": "Vatikan ima kopnenu granicu dugu oko 3 km, i to samo sa Italijom.",
    "rec": "kina",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "azija",
     "istakni": [
      "CHN"
     ]
-   }
+   },
+   "__mv": [
+    "mediji",
+    "medijiOdgovora"
+   ]
   },
   {
    "lekcija": 31,
@@ -7562,7 +7593,7 @@
     "Kontrolna funkcija",
     "Kontaktna funkcija"
    ],
-   "zanimljivost": "Vojsku štiti granicu kao odbrambenu liniju.",
+   "zanimljivost": "Vojska čuva granicu kao odbrambenu liniju.",
    "rec": "vojna"
   },
   {
@@ -7571,9 +7602,9 @@
    "pitanje": "Kako se danas regulišu problemi oko granica?",
    "odgovori": [
     "Međunarodnim ugovorima",
-    "Samo ratovima",
-    "Samo silom",
-    "Samo slučajno"
+    "Ratovima",
+    "Silom",
+    "Slučajno"
    ],
    "zanimljivost": "Dobrosusedski odnosi pomažu da granice ostanu nepromenjene.",
    "rec": "ugovori"
@@ -7683,14 +7714,14 @@
   {
    "lekcija": 32,
    "tezina": 3,
-   "pitanje": "Kako se nekada zvao glavni grad Crne Gore?",
+   "pitanje": "Kako se od 1946. do 1992. zvao glavni grad Crne Gore?",
    "odgovori": [
     "Titograd",
-    "Podgorica",
     "Cetinje",
-    "Nikšić"
+    "Nikšić",
+    "Bar"
    ],
-   "zanimljivost": "Titograd je ime dobio po Josipu Brozu Titu, a danas je to Podgorica.",
+   "zanimljivost": "Ime je dobio po Josipu Brozu Titu, a od 1992. grad se ponovo zove Podgorica.",
    "rec": "titograd"
   },
   {
@@ -7703,7 +7734,7 @@
     "Stari i novi tip",
     "Gradski i seoski tip"
    ],
-   "zanimljivost": "Evropski tip je i kulturni centar, a američki samo administrativni.",
+   "zanimljivost": "Američki tip je često planski izgrađen samo za vlast i administraciju.",
    "rec": "tipovi"
   },
   {
@@ -7725,7 +7756,8 @@
      {
       "lat": 48.2,
       "lon": 16.37,
-      "oznaka": "Beč"
+      "oznaka": "Beč",
+      "tajna": true
      }
     ]
    }
@@ -7736,9 +7768,9 @@
    "pitanje": "Koji grad pripada američkom tipu glavnog grada?",
    "odgovori": [
     "Vašington",
-    "Beč i Pariz i Rim",
-    "Pariz i Rim i Atina",
-    "Rim i Atina i Beč"
+    "Beč",
+    "Pariz",
+    "Rim"
    ],
    "zanimljivost": "Američki tip ima samo političku i administrativnu funkciju.",
    "rec": "vasington",
@@ -7761,19 +7793,23 @@
    "pitanje": "Koja država ima tri glavna grada?",
    "odgovori": [
     "Južnoafrička Republika",
-    "Francuska i Italija",
-    "Italija i Nemačka",
-    "Nemačka i Francuska"
+    "Francuska",
+    "Nemačka",
+    "Švajcarska"
    ],
    "zanimljivost": "Pretorija, Kejptaun i Blumfontejn su tri glavna grada JAR.",
    "rec": "jar",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "afrika",
     "istakni": [
      "ZAF"
     ]
-   }
+   },
+   "__mv": [
+    "mediji",
+    "medijiOdgovora"
+   ]
   },
   {
    "lekcija": 32,
@@ -7781,9 +7817,9 @@
    "pitanje": "Koja država nezvanično ima dva glavna grada?",
    "odgovori": [
     "Holandija",
-    "Belgija i Španija",
-    "Španija i Grčka",
-    "Grčka i Belgija"
+    "Belgija",
+    "Španija",
+    "Grčka"
    ],
    "zanimljivost": "U Hagu su vlada i kralj, a u Amsterdamu se polaže zakletva.",
    "rec": "holandija"
@@ -7807,9 +7843,9 @@
    "pitanje": "Šta se nalazi u glavnom gradu?",
    "odgovori": [
     "Sedišta vlasti i ambasade",
-    "Samo fabrike i rudnici",
-    "Samo luke i aerodromi",
-    "Samo aerodromi i pruge"
+    "Fabrike i rudnici",
+    "Luke i aerodromi",
+    "Aerodromi i pruge"
    ],
    "zanimljivost": "Glavni grad je simbol i centar države.",
    "rec": "sadrzaj"
@@ -7874,7 +7910,7 @@
    "pitanje": "Koji su osnovni oblici vladavine?",
    "odgovori": [
     "Monarhija i republika",
-    "Kraljevina i carstvo",
+    "Federacija i konfederacija",
     "Demokratija i diktatura",
     "Savez i unija"
    ],
@@ -7899,10 +7935,10 @@
    "tezina": 1,
    "pitanje": "Koje titule može imati monarh?",
    "odgovori": [
-    "Kralj, car, knez, vojvoda, emir ili sultan",
-    "Samo kralj i kraljica i prestolonaslednik",
-    "Samo car i carica i njihovi naslednici",
-    "Samo predsednik i premijer i ministar"
+    "Kralj, car, emir ili sultan",
+    "Kralj, kraljica i prestolonaslednik",
+    "Car, carica i njihovi naslednici",
+    "Predsednik, premijer i ministar"
    ],
    "zanimljivost": "Od titule zavisi naziv države (kraljevina, carstvo...).",
    "rec": "titule"
@@ -7970,13 +8006,17 @@
    ],
    "zanimljivost": "Japan je carstvo sa najstarijom naslednom monarhijom.",
    "rec": "japan",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "istocna-azija",
     "istakni": [
      "JPN"
     ]
-   }
+   },
+   "__mv": [
+    "mediji",
+    "medijiOdgovora"
+   ]
   },
   {
    "lekcija": 33,
@@ -8009,16 +8049,16 @@
    "tezina": 2,
    "pitanje": "Koja država je parlamentarna republika?",
    "odgovori": [
-    "Srbija",
+    "Nemačka",
     "SAD",
     "Belorusija",
     "Vatikan"
    ],
-   "zanimljivost": "U parlamentarnoj republici predsednik ima više simboličnu ulogu.",
-   "rec": "srbija",
+   "zanimljivost": "U parlamentarnoj republici vladu bira parlament, a predsednik ima pretežno simboličnu ulogu.",
+   "rec": "nemacka",
    "mediji": {
     "vrsta": "mapa",
-    "oblast": "srbija"
+    "oblast": "evropa"
    }
   },
   {
@@ -8027,19 +8067,23 @@
    "pitanje": "Koja država je predsednička republika?",
    "odgovori": [
     "SAD",
-    "Srbija",
     "Nemačka",
-    "Austrija"
+    "Austrija",
+    "Vatikan"
    ],
    "zanimljivost": "U predsedničkoj republici predsednik ima većinu vlasti.",
    "rec": "sad",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "s-amerika",
     "istakni": [
      "USA"
     ]
-   }
+   },
+   "__mv": [
+    "mediji",
+    "medijiOdgovora"
+   ]
   },
   {
    "lekcija": 33,
@@ -8049,11 +8093,11 @@
     "Britanija, Švedska, Danska",
     "SAD i Brazil",
     "Srbija i Hrvatska",
-    "Kina i Japan"
+    "Kina i Rusija"
    ],
    "zanimljivost": "U njima vlast pripada parlamentu i vladi, a monarh je simbol.",
    "rec": "monarhije",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "evropa",
     "istakni": [
@@ -8065,7 +8109,11 @@
      "DNK",
      "ESP"
     ]
-   }
+   },
+   "__mv": [
+    "mediji",
+    "medijiOdgovora"
+   ]
   },
   {
    "lekcija": 33,
@@ -8157,7 +8205,7 @@
     "Trgovinski rat",
     "Morski rat"
    ],
-   "zanimljivost": "To je bio rat bez oružja, nadmetanje u vojsci i nauci.",
+   "zanimljivost": "Sukob je trajao do raspada SSSR-a 1991, bez direktnog oružanog sukoba velikih sila.",
    "rec": "hladni"
   },
   {
@@ -8183,7 +8231,7 @@
     "1945. godine",
     "2000. godine"
    ],
-   "zanimljivost": "Godinu dana kasnije Nemačka se ujedinila.",
+   "zanimljivost": "Zid je pao 9. novembra 1989. godine.",
    "rec": "zid"
   },
   {
@@ -8209,7 +8257,7 @@
     "U Parizu 1919.",
     "U Moskvi 1955."
    ],
-   "zanimljivost": "Osnivači su bili SFRJ, Egipat i Indija.",
+   "zanimljivost": "Među osnivačima su bili Tito (Jugoslavija), Naser (Egipat) i Nehru (Indija).",
    "rec": "nesvrstani"
   },
   {
@@ -8222,7 +8270,7 @@
     "7",
     "27"
    ],
-   "zanimljivost": "Od toga sedam u Evropi i osam u Aziji.",
+   "zanimljivost": "Među tim državama je i Rusija, koja je naslednica SSSR-a.",
    "rec": "sssr"
   },
   {
@@ -8250,10 +8298,14 @@
    ],
    "zanimljivost": "To su bile Slovenija, Hrvatska, BiH, Makedonija, Crna Gora i Srbija.",
    "rec": "sfrj",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "sfrj"
-   }
+   },
+   "__mv": [
+    "mediji",
+    "medijiOdgovora"
+   ]
   },
   {
    "lekcija": 34,
@@ -8284,14 +8336,14 @@
   {
    "lekcija": 34,
    "tezina": 3,
-   "pitanje": "Koja dva srpska naučnika su imala značajnu ulogu na Versajskoj konferenciji 1919?",
+   "pitanje": "Koji srpski geograf je učestvovao u radu Mirovne konferencije u Parizu 1919?",
    "odgovori": [
-    "Jovan Cvijić i Mihajlo Pupin",
-    "Nikola Tesla i Ruđer Bošković",
-    "Vuk Karadžić i Dositej Obradović",
-    "Ivo Andrić i Miloš Crnjanski"
+    "Jovan Cvijić",
+    "Mihajlo Pupin",
+    "Nikola Tesla",
+    "Milutin Milanković"
    ],
-   "zanimljivost": "Uticali su na određivanje granica Kraljevine SHS.",
+   "zanimljivost": "Cvijić je bio u srpskoj delegaciji i pomagao da se odrede granice nove države.",
    "rec": "cvijic"
   },
   {
@@ -8319,7 +8371,7 @@
    "zanimljivost": "Ovi događaji su oblikovali političku kartu Evrope.",
    "rec": "dogadjaji",
    "vrsta": "spoji",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "lenta",
     "od": 1940,
     "do": 2000,
@@ -8342,7 +8394,11 @@
       "t": "Raspad SSSR-a"
      }
     ]
-   }
+   },
+   "__mv": [
+    "mediji",
+    "medijiOdgovora"
+   ]
   },
   {
    "lekcija": 35,
@@ -8375,7 +8431,7 @@
    "tezina": 3,
    "pitanje": "Koliko je afričkih država bilo nezavisno pre Drugog svetskog rata?",
    "odgovori": [
-    "Samo 4",
+    "4",
     "Sve 54",
     "Nijedna",
     "10"
@@ -8388,12 +8444,12 @@
    "tezina": 3,
    "pitanje": "Koja godina je nazvana „Buđenje Afrike“?",
    "odgovori": [
-    "1960. (17 država steklo nezavisnost)",
-    "1945. godine posle završetka rata",
-    "1991. godine raspadom države SSSR",
-    "2000. godine početkom novog veka"
+    "1960. godine",
+    "1945. godine",
+    "1991. godine",
+    "2000. godine"
    ],
-   "zanimljivost": "Te godine je mnogo afričkih država postalo nezavisno.",
+   "zanimljivost": "Te godine su u Africi nezavisnost stekle 17 država.",
    "rec": "budjenje"
   },
   {
@@ -8418,12 +8474,12 @@
    "tezina": 3,
    "pitanje": "Koje države Južne Azije su stekle nezavisnost od Velike Britanije?",
    "odgovori": [
-    "Indija, Pakistan, Bangladeš i Šri Lanka",
+    "Indija, Pakistan i Šri Lanka",
     "Kina i Japan i Koreja i Mongolija",
     "Turska i Iran i Irak i Sirija",
     "Indonezija i Malezija i Tajland"
    ],
-   "zanimljivost": "To su bile britanske kolonije.",
+   "zanimljivost": "Bangladeš je 1971. stekao nezavisnost od Pakistana; ranije je bio deo Britanske Indije.",
    "rec": "azija"
   },
   {
@@ -8444,12 +8500,12 @@
    "tezina": 3,
    "pitanje": "Koliko država je nastalo raspadom SSSR-a u Centralnoj Aziji?",
    "odgovori": [
-    "8",
+    "5",
     "7",
-    "15",
-    "5"
+    "8",
+    "15"
    ],
-   "zanimljivost": "To su Jermenija, Azerbejdžan, Gruzija, Kazahstan, Kirgistan, Turkmenistan, Uzbekistan i Tadžikistan.",
+   "zanimljivost": "To su Kazahstan, Kirgistan, Tadžikistan, Turkmenistan i Uzbekistan.",
    "rec": "centralna"
   },
   {
@@ -8485,8 +8541,8 @@
    "odgovori": [
     "Britanija, Francuska, Španija",
     "Srbija i Hrvatska i BiH",
-    "Kina i Japan i Koreja",
-    "SAD i Kanada i Meksiko"
+    "Kina, Koreja i Mongolija",
+    "Meksiko, Čile i Argentina"
    ],
    "zanimljivost": "One su imale kolonije na drugim kontinentima.",
    "rec": "sile"
@@ -8516,14 +8572,18 @@
    ],
    "zanimljivost": "Severna i Južna Koreja su dve nezavisne države.",
    "rec": "koreja",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "istocna-azija",
     "istakni": [
      "KOR",
      "PRK"
     ]
-   }
+   },
+   "__mv": [
+    "mediji",
+    "medijiOdgovora"
+   ]
   },
   {
    "lekcija": 35,
@@ -8615,7 +8675,7 @@
     "Rusije i SAD",
     "Egipta i Libije"
    ],
-   "zanimljivost": "Spor traje od 1947. godine i najstariji je nerešeni međunarodni spor.",
+   "zanimljivost": "Spor traje od 1947. godine, kad su Indija i Pakistan postali nezavisni.",
    "rec": "kasmir",
    "mediji": {
     "vrsta": "mapa",
@@ -8644,33 +8704,29 @@
   },
   {
    "lekcija": 36,
-   "tezina": 1,
-   "pitanje": "Šta predstavlja Kosovo i Metohija prema Ustavu Srbije i Rezoluciji 1244?",
+   "tezina": 2,
+   "pitanje": "Koja ostrva u Atlantskom okeanu su 1982. bila uzrok rata između Argentine i Velike Britanije?",
    "odgovori": [
-    "Sastavni deo Srbije",
-    "Nezavisnu državu",
-    "Deo Albanije",
-    "Deo Crne Gore"
+    "Foklandska ostrva",
+    "Kanarska ostrva",
+    "Bahamska ostrva",
+    "Azorska ostrva"
    ],
-   "zanimljivost": "Kosovo i Metohija nije međunarodno priznata država.",
-   "rec": "kosovo",
-   "mediji": {
-    "vrsta": "mapa",
-    "oblast": "srbija"
-   }
+   "zanimljivost": "Argentina ta ostrva naziva Malvinska. Rat je trajao od aprila do juna 1982. godine.",
+   "rec": "foklandska"
   },
   {
    "lekcija": 36,
-   "tezina": 3,
-   "pitanje": "Koja misija UN upravlja Kosovom i Metohijom prema Rezoluciji 1244?",
+   "tezina": 2,
+   "pitanje": "Između kojih država se vodi spor oko Kurilskih ostrva?",
    "odgovori": [
-    "UNMIK",
-    "UNICEF",
-    "UNESCO",
-    "NATO"
+    "Japana i Rusije",
+    "Kine i Vijetnama",
+    "Indije i Pakistana",
+    "Japana i Kine"
    ],
-   "zanimljivost": "UNMIK je Privremena administrativna misija UN na Kosovu i Metohiji.",
-   "rec": "unmik"
+   "zanimljivost": "Japan tvrdi da su četiri južna ostrva Kurilskog lanca njegova, a pod ruskom upravom su od 1945. godine.",
+   "rec": "kurilska"
   },
   {
    "lekcija": 36,
@@ -8682,9 +8738,9 @@
     "Između Kine i Japana",
     "Između Rusije i SAD"
    ],
-   "zanimljivost": "Spor postoji od 1947. godine, kad je Palestina stekla nezavisnost od VB.",
+   "zanimljivost": "Spor se vodi od 1948. godine, kad je Izrael proglasio nezavisnost od britanskog mandata.",
    "rec": "izrael",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "bliski-istok",
     "istakni": [
@@ -8693,17 +8749,21 @@
      "SYR",
      "EGY"
     ]
-   }
+   },
+   "__mv": [
+    "mediji",
+    "medijiOdgovora"
+   ]
   },
   {
    "lekcija": 36,
    "tezina": 3,
-   "pitanje": "Koja teritorija je pod upravom Danske kao zavisna teritorija?",
+   "pitanje": "Koje je najveće ostrvo na svetu koje pripada Danskoj?",
    "odgovori": [
     "Grenland",
-    "Gibraltar",
-    "Hongkong",
-    "Francuska Gvajana"
+    "Sicilija",
+    "Kipar",
+    "Farska ostrva"
    ],
    "zanimljivost": "Grenland i Farska ostrva su pod upravom Danske.",
    "rec": "grenland",
@@ -8730,7 +8790,7 @@
     "Hongkong",
     "Francuska Gvajana"
    ],
-   "zanimljivost": "Gibraltar ima najkraću kopnenu granicu na svetu.",
+   "zanimljivost": "Gibraltar na kopnu graniči samo sa Španijom, a poznat je i po stenovitoj hridi koja se uzdiže nad gradom.",
    "rec": "gibraltar",
    "mediji": {
     "vrsta": "mapa",
@@ -8764,9 +8824,9 @@
    "pitanje": "Kako se mogu rešiti teritorijalni sporovi?",
    "odgovori": [
     "Pregovorima, sporazumima ili referendumom",
-    "Samo ratom i sukobima i borbom",
-    "Samo silom i pritiskom i pretnjom",
-    "Samo slučajno i sticajem okolnosti"
+    "Ratom i sukobima",
+    "Silom i pritiskom",
+    "Slučajno i sticajem okolnosti"
    ],
    "zanimljivost": "Dobrosusedski odnosi su važni za mir.",
    "rec": "resenje"
@@ -8812,16 +8872,16 @@
   },
   {
    "lekcija": 36,
-   "tezina": 1,
-   "pitanje": "Kako se zove celovitost i očuvanje teritorije države i nepovredivost njenih granica?",
+   "tezina": 2,
+   "pitanje": "Kako se zove pravo naroda da samostalno odlučuje o svom političkom statusu?",
    "odgovori": [
-    "Teritorijalni integritet",
-    "Suverenitet",
-    "Regionalizacija",
-    "Kolonizacija"
+    "Pravo na samoopredeljenje",
+    "Pravo na državljanstvo",
+    "Pravo na slobodu kretanja",
+    "Pravo na zaštitu mora"
    ],
-   "zanimljivost": "Uspostavlja se međunarodnim ugovorima.",
-   "rec": "celovitost"
+   "zanimljivost": "Ovo pravo je osnova za većinu nezavisnih država nastalih posle Drugog svetskog rata.",
+   "rec": "narod"
   },
   {
    "lekcija": 37,
@@ -8942,14 +9002,14 @@
   {
    "lekcija": 37,
    "tezina": 2,
-   "pitanje": "Gde je sedište Evropske unije?",
+   "pitanje": "U kom gradu je sedište Evropske komisije?",
    "odgovori": [
-    "U Briselu",
-    "U Njujorku",
-    "U Parizu",
-    "U Beču"
+    "Brisel",
+    "Pariz",
+    "Beč",
+    "Berlin"
    ],
-   "zanimljivost": "Brisel je glavni grad Belgije.",
+   "zanimljivost": "Brisel je i sedište NATO-a.",
    "rec": "brisel",
    "mediji": {
     "vrsta": "mapa",
@@ -8967,7 +9027,7 @@
   {
    "lekcija": 37,
    "tezina": 3,
-   "pitanje": "Od koje godine je evro zajednička valuta EU?",
+   "pitanje": "Od koje godine se evro koristi kao gotovi novac (novčanice i kovanice)?",
    "odgovori": [
     "Od 2002. godine",
     "Od 1993. godine",
@@ -8982,10 +9042,10 @@
    "tezina": 2,
    "pitanje": "Šta je Šengenska zona?",
    "odgovori": [
-    "Područje bez granica",
+    "Područje bez graničnih kontrola među članicama",
     "Vrsta valute i novca i kovanica",
     "Vojni savez i pakt i odbrana",
-    "Vrsta ugovora i sporazuma i ugovora"
+    "Vrsta ugovora i sporazuma"
    ],
    "zanimljivost": "U Šengenskoj zoni nema granične kontrole među državama.",
    "rec": "sengen"
@@ -9013,22 +9073,22 @@
     "EU",
     "MMF"
    ],
-   "zanimljivost": "NATO je osnovan 1949. godine sa sedištem u Briselu.",
+   "zanimljivost": "NATO je osnovan 1949. godine u Vašingtonu.",
    "rec": "nato"
   },
   {
    "lekcija": 37,
    "tezina": 3,
-   "pitanje": "Koje države su kandidati za članstvo u EU?",
+   "pitanje": "Koja od ovih država je kandidat za članstvo u EU?",
    "odgovori": [
-    "Srbija, Crna Gora, Turska",
-    "SAD i Kanada",
-    "Kina i Japan",
-    "Brazil i Argentina"
+    "Srbija",
+    "SAD",
+    "Kina",
+    "Japan"
    ],
    "zanimljivost": "Kandidati moraju da usklade svoje zakone sa zakonima EU.",
    "rec": "kandidati",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "evropa",
     "istakni": [
@@ -9038,7 +9098,11 @@
      "ALB",
      "TUR"
     ]
-   }
+   },
+   "__mv": [
+    "mediji",
+    "medijiOdgovora"
+   ]
   },
   {
    "lekcija": 37,
@@ -9085,9 +9149,9 @@
    "pitanje": "Šta je geografska regija?",
    "odgovori": [
     "Celina koja se razlikuje od susednih",
-    "Samo jedna država ili kraljevina",
-    "Samo jedan grad ili varoš",
-    "Samo jedno ostrvo ili poluostrvo"
+    "Jedna država ili kraljevina",
+    "Jedan grad ili varoš",
+    "Jedno ostrvo ili poluostrvo"
    ],
    "zanimljivost": "Regija se razlikuje po jednom ili više elemenata prostora.",
    "rec": "pojam"
@@ -9098,9 +9162,9 @@
    "pitanje": "Koje karakteristike čine svaku regiju?",
    "odgovori": [
     "Prirodno-geografske i društveno-geografske",
-    "Samo klimatske i vremenske prilike",
-    "Samo privredne i ekonomske odlike",
-    "Samo istorijske i kulturne znamenitosti"
+    "Klimatske i vremenske prilike",
+    "Privredne i ekonomske odlike",
+    "Istorijske i kulturne znamenitosti"
    ],
    "zanimljivost": "Prirodne čine reljef, klima i vode, a društvene ljudi, naselja i privreda.",
    "rec": "odlike"
@@ -9124,9 +9188,9 @@
    "pitanje": "Šta proučava regionalna geografija?",
    "odgovori": [
     "Regije na Zemlji",
-    "Samo planete i njihova kretanja",
-    "Samo mora i okeane",
-    "Samo gradove i varoši"
+    "Planete i njihova kretanja",
+    "Mora i okeane",
+    "Gradove i varoši"
    ],
    "zanimljivost": "Njen zadatak je da izdvoji i prouči regije.",
    "rec": "regionalna"
@@ -9143,7 +9207,7 @@
    ],
    "zanimljivost": "Alpska regija je primer prirodne regije.",
    "rec": "alpi",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "evropa",
     "predeli": [
@@ -9152,7 +9216,11 @@
     "istakni": [
      "Alpi"
     ]
-   }
+   },
+   "__mv": [
+    "mediji",
+    "medijiOdgovora"
+   ]
   },
   {
    "lekcija": 38,
@@ -9166,7 +9234,7 @@
    ],
    "zanimljivost": "Panonska nizija se prostire kroz više država.",
    "rec": "panonska",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "evropa",
     "predeli": [
@@ -9175,7 +9243,11 @@
     "istakni": [
      "Panonska nizija"
     ]
-   }
+   },
+   "__mv": [
+    "mediji",
+    "medijiOdgovora"
+   ]
   },
   {
    "lekcija": 38,
@@ -9197,19 +9269,15 @@
   {
    "lekcija": 38,
    "tezina": 2,
-   "pitanje": "Na koliko regija je podeljena Srbija radi ravnomernijeg razvoja?",
+   "pitanje": "Kako se zove regija Evrope koju čine Belgija, Holandija i Luksemburg?",
    "odgovori": [
-    "Na pet",
-    "Na dve",
-    "Na deset",
-    "Na tri"
+    "Benelux",
+    "Iberija",
+    "Balkan",
+    "Kavkaz"
    ],
-   "zanimljivost": "To su Beograd, Vojvodina, Šumadija sa Zapadnom Srbijom, Istočna i Južna Srbija, i Kosovo i Metohija.",
-   "rec": "srbija",
-   "mediji": {
-    "vrsta": "mapa",
-    "oblast": "srbija"
-   }
+   "zanimljivost": "Naziv je skraćenica od početnih slova država: Belgija, Nizozemska (Holandija) i Luksemburg.",
+   "rec": "regija"
   },
   {
    "lekcija": 38,
@@ -9217,9 +9285,9 @@
    "pitanje": "Koje su prirodno-geografske karakteristike regije?",
    "odgovori": [
     "Reljef, klima, vode, tlo",
-    "Samo naselja i gradove",
-    "Samo privredu i industriju",
-    "Samo jezike i narode"
+    "Naselja i gradove",
+    "Privredu i industriju",
+    "Jezike i narode"
    ],
    "zanimljivost": "Prirodne karakteristike čine osnovu svake regije.",
    "rec": "prirodne"
@@ -9230,9 +9298,9 @@
    "pitanje": "Koje su društveno-geografske karakteristike regije?",
    "odgovori": [
     "Stanovništvo, naselja, privreda",
-    "Samo reljef i planine",
-    "Samo klimu i padavine",
-    "Samo vode i reke"
+    "Reljef i planine",
+    "Klimu i padavine",
+    "Vode i reke"
    ],
    "zanimljivost": "Društvene karakteristike čine ljudi i njihove aktivnosti.",
    "rec": "drustvene"
@@ -9256,8 +9324,8 @@
    "pitanje": "Čemu služi poznavanje geografskih regija?",
    "odgovori": [
     "Za planiranje razvoja",
-    "Samo za crtanje karata",
-    "Samo za turizam i putovanja",
+    "Za crtanje karata",
+    "Za turizam i putovanja",
     "Ničemu posebnom"
    ],
    "zanimljivost": "Poznavanje regija pomaže u svim vrstama planiranja.",
@@ -9314,7 +9382,7 @@
     "Afrika",
     "Južna Amerika"
    ],
-   "zanimljivost": "Evropa ima površinu od 10,4 miliona km².",
+   "zanimljivost": "Evropa je mali kontinent, ali po broju država i jezika izuzetno raznolik.",
    "rec": "evropa"
   },
   {
@@ -9322,10 +9390,10 @@
    "tezina": 1,
    "pitanje": "Kolika je površina Evrope?",
    "odgovori": [
-    "10,4 miliona km²",
-    "30 miliona km²",
-    "54 miliona km²",
-    "1 milion km²"
+    "Oko 10 miliona km²",
+    "Oko 30 miliona km²",
+    "Oko 54 miliona km²",
+    "Oko 1 milion km²"
    ],
    "zanimljivost": "Evropa je mali kontinent, ali veoma razvijen.",
    "rec": "povrsina"
@@ -9453,7 +9521,7 @@
     "Severni rt (Nordkap) u Norveškoj",
     "Rt Maroki u Španiji"
    ],
-   "zanimljivost": "Nalazi se na oko 66° istočne geografske dužine.",
+   "zanimljivost": "Nalazi se na oko 60° istočne geografske dužine.",
    "rec": "ural",
    "mediji": {
     "vrsta": "mapa",
@@ -9487,9 +9555,9 @@
    "pitanje": "Šta čini istočnu granicu Evrope prema Aziji?",
    "odgovori": [
     "Ural, Kavkaz, Crno more i Bosfor",
-    "Samo reka Dunav i njene pritoke",
-    "Samo Alpi i njihovi masivi",
-    "Samo Rajna i njene doline"
+    "Reka Dunav i njene pritoke",
+    "Alpi i njihovi masivi",
+    "Rajna i njene doline"
    ],
    "zanimljivost": "To je duga granica kroz više prirodnih objekata.",
    "rec": "granica"
@@ -9500,13 +9568,13 @@
    "pitanje": "Koje države se prostiru i u Evropi i u Aziji?",
    "odgovori": [
     "Rusija, Kazahstan, Turska",
-    "Samo Rusija i njena teritorija",
-    "Samo Turska i njena teritorija",
-    "Francuska i Nemačka"
+    "Brazil, Argentina, Čile",
+    "Francuska i Nemačka",
+    "Srbija i Hrvatska"
    ],
    "zanimljivost": "Njihove teritorije leže na oba kontinenta.",
    "rec": "drzave",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "svet",
     "istakni": [
@@ -9516,7 +9584,11 @@
      "GEO",
      "TUR"
     ]
-   }
+   },
+   "__mv": [
+    "mediji",
+    "medijiOdgovora"
+   ]
   },
   {
    "lekcija": 39,
@@ -9536,7 +9608,7 @@
    "tezina": 2,
    "pitanje": "Preko kojih mora i kanala je Evropa povezana sa Indijskim i Tihim okeanom?",
    "odgovori": [
-    "Sredozemno more i Suecki kanal",
+    "Sredozemno more i Sueski kanal",
     "Preko Baltičkog mora i njegovih zaliva",
     "Preko Severnog mora i njegovih luka",
     "Preko Crnog mora i Bosfora"
@@ -9608,7 +9680,7 @@
    ],
    "zanimljivost": "Na jugu su Pirinejsko, Apeninsko i Balkansko.",
    "rec": "poluostrva",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "severna-evropa",
     "predeli": [
@@ -9619,7 +9691,11 @@
     "istakni": [
      "Skandinavsko poluostrvo"
     ]
-   }
+   },
+   "__mv": [
+    "mediji",
+    "medijiOdgovora"
+   ]
   },
   {
    "lekcija": 40,
@@ -9639,14 +9715,14 @@
    "tezina": 1,
    "pitanje": "Koja su najveća ostrva u Sredozemnom moru?",
    "odgovori": [
-    "Sicilija, Sardinija, Krit",
+    "Sicilija, Sardinija, Kipar",
     "Velika Britanija i Irska",
     "Island i Farska ostrva",
     "Farska ostrva i Šetlandska"
    ],
    "zanimljivost": "U Atlantiku su Velika Britanija, Irska i Island.",
    "rec": "ostrva",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "juzna-evropa",
     "predeli": [
@@ -9658,7 +9734,11 @@
     "istakni": [
      "Sicilija"
     ]
-   }
+   },
+   "__mv": [
+    "mediji",
+    "medijiOdgovora"
+   ]
   },
   {
    "lekcija": 40,
@@ -9689,14 +9769,14 @@
   {
    "lekcija": 40,
    "tezina": 3,
-   "pitanje": "Koji su najveći evropski zalivi?",
+   "pitanje": "Koji zalivi se nalaze na severu Evrope?",
    "odgovori": [
-    "Botnički, Finski, Biskajski",
-    "Samo Jadranski i Jonski zaliv",
-    "Samo Jonski i Egejski zaliv",
-    "Samo Egejski i Tirenski zaliv"
+    "Botnički i Finski",
+    "Jadranski i Jonski",
+    "Biskajski i Lionski",
+    "Egejski i Tirenski"
    ],
-   "zanimljivost": "Botnički i Finski su na severu, Biskajski na zapadu.",
+   "zanimljivost": "Botnički zaliv deli Švedsku i Finsku, a Finski zaliv Finsku i Estoniju.",
    "rec": "zalivi"
   },
   {
@@ -9735,7 +9815,7 @@
     "Oko 2 000 m",
     "Oko 100 m"
    ],
-   "zanimljivost": "Zato je Evropa najniži kontinent.",
+   "zanimljivost": "Najveći deo Evrope čine nizije, a planine su uglavnom na obodu.",
    "rec": "visina"
   },
   {
@@ -9754,14 +9834,14 @@
   {
    "lekcija": 40,
    "tezina": 2,
-   "pitanje": "Koliko površine Evrope zauzimaju nizije?",
+   "pitanje": "Koja je najveća nizija u Evropi?",
    "odgovori": [
-    "Oko 60%",
-    "Oko 10%",
-    "Oko 90%",
-    "Oko 30%"
+    "Istočnoevropska nizija",
+    "Panonska nizija",
+    "Padska nizija",
+    "Severnonemačka nizija"
    ],
-   "zanimljivost": "Najveća je Istočnoevropska nizija.",
+   "zanimljivost": "Prostire se od Poljske do Urala.",
    "rec": "nizije"
   },
   {
@@ -9770,13 +9850,13 @@
    "pitanje": "Koje planine su nabrane (venačne)?",
    "odgovori": [
     "Alpi, Karpati, Kavkaz",
-    "Skandinavske i Peninske planine",
-    "Ardeni i Vogezi",
-    "Ural i Sudeti"
+    "Ruske ravnice i Panonska nizija",
+    "Vulkani Islanda i Azora",
+    "Pustinje Kaspijske nizije"
    ],
    "zanimljivost": "Nabrane planine su najviši delovi Evrope.",
    "rec": "venacne",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "evropa",
     "predeli": [
@@ -9789,7 +9869,11 @@
     "istakni": [
      "Alpi"
     ]
-   }
+   },
+   "__mv": [
+    "mediji",
+    "medijiOdgovora"
+   ]
   },
   {
    "lekcija": 40,
@@ -9915,7 +9999,7 @@
    "tezina": 1,
    "pitanje": "Gde je zastupljena planinska klima?",
    "odgovori": [
-    "U planinama iznad 800 m",
+    "U visokim planinama",
     "Uz obale mora i okeana",
     "U nizijama i ravnicama",
     "U polarnim i ledenim predelima"
@@ -9928,10 +10012,10 @@
    "tezina": 3,
    "pitanje": "Kojim slivovima pripadaju reke Evrope?",
    "odgovori": [
-    "Slivovima pet mora i okeana",
-    "Samo slivu Atlantskog okeana",
-    "Samo slivu Crnog mora",
-    "Samo slivu Kaspijskog jezera"
+    "Slivovima više mora i okeana",
+    "Slivu Atlantskog okeana",
+    "Slivu Crnog mora",
+    "Slivu Kaspijskog jezera"
    ],
    "zanimljivost": "Evropa ima gustu rečnu mrežu.",
    "rec": "slivovi"
@@ -9941,20 +10025,24 @@
    "tezina": 3,
    "pitanje": "Koja je najduža reka Evrope?",
    "odgovori": [
-    "Volga (3 688 km)",
+    "Volga (oko 3 500 km)",
     "Dunav i njegove pritoke",
     "Rajna i njene pritoke",
     "Loara i njene pritoke"
    ],
    "zanimljivost": "Volga se uliva u Kaspijsko jezero.",
    "rec": "volga",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "evropa",
     "reke": [
      "Volga"
     ]
-   }
+   },
+   "__mv": [
+    "mediji",
+    "medijiOdgovora"
+   ]
   },
   {
    "lekcija": 41,
@@ -9968,13 +10056,17 @@
    ],
    "zanimljivost": "Rajna pripada slivu Atlantskog okeana.",
    "rec": "rajna",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "evropa",
     "reke": [
      "Rajna"
     ]
-   }
+   },
+   "__mv": [
+    "mediji",
+    "medijiOdgovora"
+   ]
   },
   {
    "lekcija": 41,
@@ -9994,10 +10086,10 @@
    "tezina": 2,
    "pitanje": "Gde ima najviše jezera u Evropi?",
    "odgovori": [
-    "U Alpima i oko Baltika",
-    "Samo u pustinjama i stepama",
-    "Samo na Islandu i Grenlandu",
-    "Samo u Rusiji i Ukrajini"
+    "U severnoj Evropi (Finska, Švedska)",
+    "U pustinjama i stepama",
+    "Na Islandu i Grenlandu",
+    "U Rusiji i Ukrajini"
    ],
    "zanimljivost": "Tamo su najveća i najbrojnija jezera.",
    "rec": "jezera"
@@ -10111,7 +10203,7 @@
    "tezina": 1,
    "pitanje": "Koja je prosečna gustina naseljenosti Evrope?",
    "odgovori": [
-    "Oko 34 st/km²",
+    "Oko 70 st/km²",
     "Oko 100 st/km²",
     "Oko 5 st/km²",
     "Oko 500 st/km²"
@@ -10124,10 +10216,10 @@
    "tezina": 1,
    "pitanje": "Koja evropska država ima najveću gustinu naseljenosti?",
    "odgovori": [
-    "Monako (18 713 st/km²)",
-    "Island i Norveška i Finska",
-    "Norveška i Finska i Švedska",
-    "Finska i Švedska i Danska"
+    "Monako",
+    "Island",
+    "Norveška",
+    "Finska"
    ],
    "zanimljivost": "Monako je patuljasta država na obali Sredozemnog mora.",
    "rec": "monako",
@@ -10167,8 +10259,8 @@
     "Veoma negativan i nizak",
     "Uvek pozitivan i rastući"
    ],
-   "zanimljivost": "Stope nataliteta i mortaliteta su oko 11‰.",
-   "rec": "priraštaj"
+   "zanimljivost": "Evropa ima natalitet oko 9‰, a mortalitet oko 11‰.",
+   "rec": "prirastaj"
   },
   {
    "lekcija": 42,
@@ -10180,7 +10272,7 @@
     "Nemačka i Francuska",
     "Norveška i Švedska"
    ],
-   "zanimljivost": "Najniži natalitet imaju Bugarska, Litvanija i Ukrajina.",
+   "zanimljivost": "Među najnižim stopama nataliteta u Evropi su Italija i Malta.",
    "rec": "natalitet"
   },
   {
@@ -10281,15 +10373,15 @@
   {
    "lekcija": 42,
    "tezina": 2,
-   "pitanje": "Koja su bila prva dva milionska grada u Evropi?",
+   "pitanje": "Koji je prvi grad u Evropi koji je dostigao milion stanovnika?",
    "odgovori": [
-    "London i Pariz",
-    "Rim i Atina",
-    "Moskva i Berlin",
-    "Beč i Prag"
+    "London",
+    "Pariz",
+    "Rim",
+    "Beč"
    ],
-   "zanimljivost": "Početkom 19. veka to su bili jedini milionski gradovi.",
-   "rec": "milionski"
+   "zanimljivost": "London je to dostigao početkom 19. veka.",
+   "rec": "london"
   },
   {
    "lekcija": 42,
@@ -10337,8 +10429,8 @@
    "odgovori": [
     "Razvijena i raznovrsna",
     "Slabo razvijena",
-    "Samo poljoprivredna",
-    "Samo rudarska"
+    "Poljoprivredna",
+    "Rudarska"
    ],
    "zanimljivost": "Najveći deo aktivnog stanovništva radi u tercijarnom i kvartarnom sektoru.",
    "rec": "privreda"
@@ -10355,7 +10447,7 @@
    ],
    "zanimljivost": "To su države Zapadne, Severne i delom Srednje Evrope.",
    "rec": "razvijene",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "evropa",
     "istakni": [
@@ -10365,7 +10457,11 @@
      "NLD",
      "ITA"
     ]
-   }
+   },
+   "__mv": [
+    "mediji",
+    "medijiOdgovora"
+   ]
   },
   {
    "lekcija": 43,
@@ -10386,9 +10482,9 @@
    "pitanje": "Koje su najrazvijenije industrije u Evropi?",
    "odgovori": [
     "Automobilska, mašinska i elektroindustrija",
-    "Samo prehrambena i tekstilna industrija",
-    "Samo tekstilna i drvna industrija",
-    "Samo drvna i duvanska industrija"
+    "Prehrambena i tekstilna industrija",
+    "Tekstilna i drvna industrija",
+    "Drvna i duvanska industrija"
    ],
    "zanimljivost": "U njima je najviše zaposlenih i najveći prihodi.",
    "rec": "grane"
@@ -10398,18 +10494,18 @@
    "tezina": 2,
    "pitanje": "Koje su nemačke automobilske marke?",
    "odgovori": [
-    "Folksvagen, BMV, Opel",
+    "Folksvagen, BMW, Opel",
     "Fijat, Ferari i Alfa Romeo",
     "Reno, Pežo i Sitroen",
     "Tojota i Honda"
    ],
-   "zanimljivost": "Nemačku zovu „motorom privrednog razvoja Evrope“.",
+   "zanimljivost": "Nemačka ima jednu od najjačih automobilskih industrija na svetu.",
    "rec": "nemacka"
   },
   {
    "lekcija": 43,
    "tezina": 2,
-   "pitanje": "Koja je najveća svetska kompanija iz oblasti elektronike, sa sedištem u Nemačkoj?",
+   "pitanje": "Koja je jedna od najvećih kompanija za elektroniku i elektrotehniku sa sedištem u Nemačkoj?",
    "odgovori": [
     "Simens",
     "Filips",
@@ -10435,15 +10531,15 @@
   {
    "lekcija": 43,
    "tezina": 3,
-   "pitanje": "Koje evropske države prednjače u korišćenju obnovljivih izvora energije?",
+   "pitanje": "Iz kog izvora Norveška dobija skoro svu svoju električnu energiju?",
    "odgovori": [
-    "Alpske i severne države",
-    "Samo južne i primorske države",
-    "Samo istočne i kontinentalne države",
-    "Samo planinske i alpske države"
+    "Hidroelektrane",
+    "Nuklearne elektrane",
+    "Termoelektrane na ugalj",
+    "Gasne elektrane"
    ],
-   "zanimljivost": "Obnovljivi izvori se sve više koriste, ali još ne dovoljno.",
-   "rec": "obnovljivi"
+   "zanimljivost": "Norveška proizvodi najveći deo struje u hidroelektranama, zahvaljujući brzim rekama i jezerima.",
+   "rec": "hidro"
   },
   {
    "lekcija": 43,
@@ -10490,13 +10586,13 @@
    "pitanje": "Koje su najprivlačnije turističke regije Evrope?",
    "odgovori": [
     "Sredozemlje, Alpi i gradovi",
-    "Samo pustinje i stepe",
-    "Samo polarni predeli i tundre",
-    "Samo močvare i bare"
+    "Pustinje i stepe",
+    "Polarni predeli i tundre",
+    "Močvare i bare"
    ],
    "zanimljivost": "London, Pariz i Rim su među najposećenijim gradovima.",
    "rec": "turizam",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "evropa",
     "istakni": [
@@ -10505,7 +10601,11 @@
      "ITA",
      "GRC"
     ]
-   }
+   },
+   "__mv": [
+    "mediji",
+    "medijiOdgovora"
+   ]
   },
   {
    "lekcija": 43,
@@ -10514,8 +10614,8 @@
    "odgovori": [
     "Uz Atlantik i Severno more",
     "U unutrašnjosti kontinenta",
-    "Samo u Alpima i na jezerima",
-    "Samo na Baltiku i njegovim zalivima"
+    "U pustinjama i stepama",
+    "U polarnim ledenim predelima"
    ],
    "zanimljivost": "Tamo su bogata ribolovna područja.",
    "rec": "ribolov"
@@ -10556,7 +10656,7 @@
     "Moldaviju",
     "Albaniju"
    ],
-   "zanimljivost": "Nemačka ima više od pet miliona registrovanih preduzeća.",
+   "zanimljivost": "Nemačka je jedna od najvećih izvoznica na svetu.",
    "rec": "motor"
   },
   {
@@ -10584,7 +10684,7 @@
    ],
    "zanimljivost": "Severna Evropa je poznata po fjordovima.",
    "rec": "severna",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "severna-evropa",
     "istakni": [
@@ -10594,7 +10694,11 @@
      "FIN",
      "ISL"
     ]
-   }
+   },
+   "__mv": [
+    "mediji",
+    "medijiOdgovora"
+   ]
   },
   {
    "lekcija": 44,
@@ -10621,7 +10725,7 @@
    ],
    "zanimljivost": "Srednja Evropa obuhvata centralni deo kontinenta.",
    "rec": "srednja",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "srednja-evropa",
     "istakni": [
@@ -10635,7 +10739,11 @@
      "CHE",
      "LIE"
     ]
-   }
+   },
+   "__mv": [
+    "mediji",
+    "medijiOdgovora"
+   ]
   },
   {
    "lekcija": 44,
@@ -10649,7 +10757,7 @@
    ],
    "zanimljivost": "Zapadna Evropa je široko otvorena prema Atlantiku.",
    "rec": "zapadna",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "zapadna-evropa",
     "istakni": [
@@ -10661,7 +10769,11 @@
      "LUX",
      "MCO"
     ]
-   }
+   },
+   "__mv": [
+    "mediji",
+    "medijiOdgovora"
+   ]
   },
   {
    "lekcija": 44,
@@ -10675,7 +10787,7 @@
    ],
    "zanimljivost": "Na njima su države poput Španije, Italije i Grčke.",
    "rec": "jug",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "juzna-evropa",
     "predeli": [
@@ -10686,7 +10798,11 @@
     "istakni": [
      "Balkansko poluostrvo"
     ]
-   }
+   },
+   "__mv": [
+    "mediji",
+    "medijiOdgovora"
+   ]
   },
   {
    "lekcija": 44,
@@ -10698,7 +10814,7 @@
     "Francuska i Nemačka i Poljska",
     "Rusija i Ukrajina i Belorusija"
    ],
-   "zanimljivost": "Južnoj Evropi pripada i manji deo Turske.",
+   "zanimljivost": "U južnoj Evropi su i Hrvatska, Bosna i Hercegovina i Crna Gora.",
    "rec": "juzna"
   },
   {
@@ -10726,7 +10842,7 @@
    ],
    "zanimljivost": "U Istočnoj Evropi žive pretežno slovenski narodi.",
    "rec": "drzave",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "istocna-evropa",
     "istakni": [
@@ -10738,7 +10854,11 @@
      "UKR",
      "RUS"
     ]
-   }
+   },
+   "__mv": [
+    "mediji",
+    "medijiOdgovora"
+   ]
   },
   {
    "lekcija": 44,

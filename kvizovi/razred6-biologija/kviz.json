@@ -231,7 +231,7 @@
       "tezina": 2,
       "pitanje": "Zašto u vodi organizmi lakše nose teško telo nego na kopnu?",
       "odgovori": [
-        "Voda ih potiskuje naviše (sila potiska)",
+        "Voda ih podiže silom potiska",
         "Voda je lakša od vazduha oko nas",
         "U vodi uopšte nema gravitacije",
         "Ribe i kitovi nemaju svoju masu"
@@ -244,10 +244,10 @@
       "tezina": 2,
       "pitanje": "Šta je zajedničko vodenoj, kopnenoj i zemljišnoj sredini?",
       "odgovori": [
-        "U svima žive organizmi prilagođeni njihovim uslovima",
-        "U svima je ista temperatura tokom cele godine, i leti i zimi isto",
-        "U svima je isto osvetljenje",
-        "U svima ima isto vode"
+        "Organizmi su prilagođeni uslovima",
+        "Ista temperatura tokom cele godine",
+        "Isto osvetljenje tokom celog dana",
+        "Iste količine kiseonika u svakoj"
       ],
       "zanimljivost": "Neke životinje menjaju sredinu tokom života: vilinski konjic je larva u vodi, a odrasla jedinka u vazduhu.",
       "rec": "uslovi"
@@ -259,8 +259,8 @@
       "odgovori": [
         "Voda se sporo zagreva i sporo hladi",
         "Voda uopšte ne prima toplotu od Sunca, već je odbija",
-        "U vodi stalno pada kiša, pa se ona stalno hladi",
-        "Zbog ribe koja svojim plivanjem greje vodu oko sebe"
+        "Voda je mnogo gušća od vazduha i ne propušta toplotu",
+        "Zato što je voda uvek hladnija od vazduha"
       ],
       "zanimljivost": "Zato i zimi na dnu dubokog jezera voda ima oko 4 °C, a ribe tamo mirno prezimljuju.",
       "rec": "temperatura"
@@ -296,7 +296,7 @@
       "tezina": 1,
       "pitanje": "Koja od navedenih sredina je najbogatija kiseonikom?",
       "odgovori": [
-        "Kopnena (vazduh)",
+        "Vazduh iznad kopna",
         "Duboko more",
         "Dno bare",
         "Zemljište"
@@ -505,7 +505,7 @@
         "Čarls Darvin",
         "Teodor Švan"
       ],
-      "zanimljivost": "Hukove komorice u pluti podsetile su ga na sobice monaha – „ćelije“. Svoja posmatranja objavio je 1665. u knjizi „Mikrografija“. Pluta je zapravo mrtva kora drveta.",
+      "zanimljivost": "Hukove komorice u pluti podsetile su ga na sobice monaha – „ćelije“. Pluta je zapravo mrtva kora drveta, pa je Huk video samo prazne zidove ćelija.",
       "rec": "huk"
     },
     {
@@ -527,9 +527,9 @@
       "pitanje": "Koliko puta je uveličavao jednostavni mikroskop Antoni van Levenhuka?",
       "odgovori": [
         "Oko 270 puta",
-        "Oko 2 puta",
-        "Oko 10.000 puta",
-        "Oko milion puta"
+        "Oko 27 puta",
+        "Oko 2.700 puta",
+        "Oko 1.000 puta"
       ],
       "zanimljivost": "Levenhuk je sam brusio sočiva veličine zrna peska i nikome nije otkrio tajnu kako ih pravi.",
       "rec": "levenhuk",
@@ -564,10 +564,6 @@
       ],
       "zanimljivost": "Virhovljeva latinska rečenica „Omnis cellula e cellula“ znači „svaka ćelija od ćelije“.",
       "rec": "virhov",
-      "mediji": {
-        "vrsta": "formula",
-        "tekst": "Omnis cellula e cellula"
-      },
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/virhov.jpg",
@@ -579,10 +575,10 @@
       "tezina": 2,
       "pitanje": "Šta tvrdi ćelijska teorija?",
       "odgovori": [
-        "Sva živa bića su građena od ćelija, a ćelije nastaju od ćelija",
-        "Ćelije nastaju iz prašine, vode i vazduha kada su uslovi povoljni",
-        "Samo biljke imaju ćelije, a životinje i ljudi su građeni od tkiva",
-        "Ćelije su nežive, a život nastaje tek kada se mnogo njih spoji"
+        "Živa bića su građena od ćelija",
+        "Ćelije nastaju iz vode i vazduha",
+        "Samo biljke imaju prave ćelije",
+        "Ćelije su građene samo od minerala"
       ],
       "zanimljivost": "Ćelijska teorija se smatra jednim od najvažnijih otkrića 19. veka u biologiji.",
       "rec": "teorija"
@@ -605,10 +601,10 @@
       "tezina": 2,
       "pitanje": "Kako je mikroskop dobio ime?",
       "odgovori": [
-        "Od grčkih reči mikros (mali) i skopein (gledati)",
-        "Po pronalazaču, holandskom naučniku po imenu Mikroskop",
-        "Od latinske reči za staklo, jer ima staklena sočiva u sebi",
-        "Od imena malog italijanskog grada u kome je prvi put izumljen"
+        "Od grčkih reči za „mali“ i „gledati“",
+        "Po holandskom izumitelju Mikroskopu",
+        "Od latinske reči za staklo (vitrum)",
+        "Po gradu Mikroskopu u Italiji"
       ],
       "zanimljivost": "Isti završetak „skop“ imaju i teleskop i periskop.",
       "rec": "mikroskop"
@@ -726,33 +722,28 @@
     {
       "lekcija": 2,
       "tezina": 2,
-      "pitanje": "Šta elektronski mikroskop koristi umesto svetlosti?",
+      "pitanje": "Koja je glavna prednost elektronskog mikroskopa u odnosu na svetlosni?",
       "odgovori": [
-        "Snop elektrona",
-        "Zvučne talase",
-        "Rendgenske zrake",
-        "Magnetnu tečnost"
+        "Mnogo veće uvećanje i rezolucija",
+        "Jeftiniji je i ne traži struju",
+        "Može da se nosi u džepu",
+        "Vidi žive ćelije u prirodnim bojama"
       ],
-      "zanimljivost": "Zato su prave slike iz elektronskog mikroskopa crno-bele – boje koje vidiš na takvim fotografijama naknadno su dodate na računaru.",
-      "rec": "elektron"
+      "zanimljivost": "Prave slike iz elektronskog mikroskopa su crno-bele – boje koje vidimo na takvim fotografijama naknadno se dodaju na računaru.",
+      "rec": "rezolucija"
     },
     {
       "lekcija": 2,
       "tezina": 2,
-      "pitanje": "Na slici je crtež iz knjige „Mikrografija“ iz 1665. godine. Šta je na njemu prikazano?",
+      "pitanje": "Koja je najmanja jedinica građe koja sama može da živi?",
       "odgovori": [
-        "Komorice (ćelije) u pluti",
-        "Crvena krvna zrnca",
-        "Bakterije iz kapi barske vode",
-        "Kristali kuhinjske soli"
+        "Ćelija",
+        "Molekul",
+        "Tkivo",
+        "Organ"
       ],
-      "zanimljivost": "Robert Huk je crtež napravio gledajući tanak listić plute kroz mikroskop koji je sam usavršio. Komorice su ga podsetile na sobe monaha – ćelije, i tako je ćelija dobila ime.",
-      "rec": "pluta",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/huk-pluta.jpg",
-        "opis": "Crtež iz „Mikrografije“ (1665)"
-      }
+      "zanimljivost": "Virusi su manji od ćelija i nisu građeni od ćelija – razmnožavaju se samo u tuđim ćelijama.",
+      "rec": "ćelija"
     },
     {
       "lekcija": 3,
@@ -794,7 +785,7 @@
         "Za promenu objektiva",
         "Za pomeranje stočića levo-desno"
       ],
-      "zanimljivost": "Veliki zavrtanj služi za grubo podešavanje, a mali za fino. Pri radu se uvek počinje sa najmanjim uvećanjem pa se postepeno prelazi na veće.",
+      "zanimljivost": "Mali zavrtanj pomera sočivo za delić milimetra, pa i mali pomeraj menja oštrinu slike.",
       "rec": "zavrtanj",
       "mediji": {
         "vrsta": "biologija",
@@ -870,9 +861,9 @@
       "pitanje": "Zašto preparat za svetlosni mikroskop mora biti veoma tanak?",
       "odgovori": [
         "Da bi kroz njega prošla svetlost",
-        "Da bi bio lakši za nošenje i čuvanje",
-        "Da se ne bi osušio na toplom svetlu lampe",
-        "Da bi bio jeftiniji, jer se troši manje stakla"
+        "Da bi se brže osušio na vazduhu",
+        "Da bi se lakše čuvao u kutiji",
+        "Da bi zauzeo manje mesta na stočiću"
       ],
       "zanimljivost": "Zato se tkiva za mikroskop seku na listiće tanke nekoliko hiljaditih delova milimetra.",
       "rec": "preparat"
@@ -884,8 +875,8 @@
       "odgovori": [
         "Najmanjim uvećanjem",
         "Najvećim uvećanjem",
-        "Bez svetla",
-        "Ugašenim mikroskopom"
+        "Pokrovnim staklom bez preparata",
+        "Bez kondenzora i blende"
       ],
       "zanimljivost": "Pri malom uvećanju lakše pronađemo predmet, a onda ga „približavamo“ većim objektivima.",
       "rec": "uvećanje"
@@ -930,10 +921,10 @@
       "tezina": 2,
       "pitanje": "Šta se dodaje preparatu da bi se delovi ćelije bolje videli?",
       "odgovori": [
-        "Boja (npr. jod ili metilensko plavo)",
-        "Šećer u prahu ili med da se ćelija nahrani",
-        "Kuhinjska so da se preparat duže sačuva",
-        "Ulje za kuvanje da bi preparat bio sjajniji"
+        "Boja, na primer jod",
+        "Šećer, da se ćelija nahrani",
+        "Kuhinjska so, da se duže čuva",
+        "Voda, da se ćelije raširu"
       ],
       "zanimljivost": "Jod boji skrob u plavo-ljubičasto – tako se u krompiru vide zrnca skroba.",
       "rec": "boja"
@@ -967,15 +958,15 @@
     {
       "lekcija": 3,
       "tezina": 2,
-      "pitanje": "Čemu služi kondenzor?",
+      "pitanje": "Čemu služi blenda na mikroskopu?",
       "odgovori": [
-        "Sakuplja svetlost i usmerava je na preparat",
-        "Uvećava sliku preparata deset, sto ili hiljadu puta",
+        "Reguliše količinu svetlosti na preparatu",
+        "Uvećava sliku deset, sto ili hiljadu puta",
         "Drži preparat čvrsto na stočiću mikroskopa",
-        "Menja objektive okretanjem revolvera mikroskopa"
+        "Menja objektive okretanjem revolvera"
       ],
-      "zanimljivost": "Sa blendom ispod kondenzora reguliše se koliko svetlosti prolazi – previše svetlosti „ispere“ sliku.",
-      "rec": "kondenzor"
+      "zanimljivost": "Kad je blenda previše zatvorena, slika je tamna i kontrastna; kad je previše otvorena, sve izgleda bledo i „isprano“.",
+      "rec": "blenda"
     },
     {
       "lekcija": 3,
@@ -1017,7 +1008,7 @@
         "Fosilni preparat",
         "Suvi preparat"
       ],
-      "zanimljivost": "Trajni preparati se boje i zatapaju posebnom smolom ispod pokrovnog stakla, pa mogu da se koriste i stotinu godina.",
+      "zanimljivost": "Trajni preparati se boje i zatapaju posebnom smolom ispod pokrovnog stakla, pa se čuvaju decenijama.",
       "rec": "preparat"
     },
     {
@@ -1027,8 +1018,8 @@
       "odgovori": [
         "Oko 45°",
         "Oko 90°",
-        "Oko 5°",
-        "Oko 180°"
+        "Oko 20°",
+        "Oko 60°"
       ],
       "zanimljivost": "Kad se staklo spušta ukoso, vazduh izlazi ispred njega, pa ispod ne ostaju mehurići – pod mikroskopom bi izgledali kao velike tamne kugle i zbunjivali posmatrača.",
       "rec": "staklo"
@@ -1181,7 +1172,7 @@
         "Zamrzavanjem jajeta, pa se ljuska sama ljušti kad se otopi",
         "Potapanjem u slanu vodu na nekoliko sati dok ljuska ne omekša"
       ],
-      "zanimljivost": "Jaje je zapravo jedna ogromna ćelija! Sirće rastvara krečnu ljusku, a ostane samo tanka opna – ćelijska membrana koja drži unutrašnjost.",
+      "zanimljivost": "Jaje je zapravo jedna ogromna ćelija! Sirće rastvara krečnu ljusku, a ispod nje ostane tanka opna koja drži unutrašnjost.",
       "rec": "jaje"
     },
     {
@@ -1297,15 +1288,15 @@
     {
       "lekcija": 4,
       "tezina": 3,
-      "pitanje": "Koja organela u ćeliji bi mogla da se uporedi sa „reciklažnim centrom“?",
+      "pitanje": "Koja ćelijska organela učestvuje u deobi ćelije i stvara niti deobnog vretena?",
       "odgovori": [
-        "Lizozom",
+        "Centrozom",
         "Ribozom",
-        "Hloroplast",
-        "Jedarce"
+        "Vakuola",
+        "Hloroplast"
       ],
-      "zanimljivost": "Japanski naučnik Jošinori Osumi dobio je 2016. Nobelovu nagradu za otkrivanje kako ćelija „reciklira“ svoje delove.",
-      "rec": "reciklaža"
+      "zanimljivost": "Centrozomi se udvostručuju pre deobe ćelije, pa dva pola deobnog vretena nastaju kao dva suprotna „motora“ za razdvajanje hromozoma.",
+      "rec": "centrozom"
     },
     {
       "lekcija": 4,
@@ -1384,9 +1375,9 @@
       "tezina": 2,
       "pitanje": "Koliko jedara ima ćelija?",
       "odgovori": [
-        "Najčešće jedno, ponekad i više",
+        "Obično jedno, a ponekad više",
         "Uvek tačno dva, jedno do drugog",
-        "Nijedno – jedro imaju samo bakterije",
+        "Nijedno, jedro imaju samo bakterije",
         "Uvek više stotina malih jedara"
       ],
       "zanimljivost": "Ćelije skeletnih mišića nastaju spajanjem više ćelija i imaju stotine jedara, a zrela crvena krvna zrnca sisara nemaju nijedno.",
@@ -1459,10 +1450,10 @@
       "tezina": 2,
       "pitanje": "Gde se kod bakterija nalazi DNK?",
       "odgovori": [
-        "Slobodno u citoplazmi, jer nemaju jedro",
-        "U jedru, isto kao i kod svih ostalih ćelija",
-        "U mitohondrijama, gde nastaje energija ćelije",
-        "U ćelijskom zidu, koji je čuva od oštećenja"
+        "Slobodno u citoplazmi",
+        "U jedru, kao kod svih ćelija",
+        "U mitohondrijama, gde nastaje energija",
+        "U ćelijskom zidu, koji je čuva"
       ],
       "zanimljivost": "Organizmi bez jedra zovu se prokariotski (bakterije i arheje), a oni sa jedrom eukariotski (protisti, gljive, biljke i životinje).",
       "rec": "bakterija",
@@ -1495,7 +1486,7 @@
         "Za razmnožavanje",
         "Za fotosintezu"
       ],
-      "zanimljivost": "Mnoge bakterije imaju i ćelijski zid i sluzavu kapsulu koji ih štite od povreda, isušivanja, pa i od nekih virusa.",
+      "zanimljivost": "Mnoge bakterije imaju i ćelijski zid i sluzavu kapsulu koji ih štite od povreda i isušivanja.",
       "rec": "bič",
       "mediji": {
         "vrsta": "biologija",
@@ -1514,7 +1505,7 @@
         "Od kreča",
         "Od belančevina"
       ],
-      "zanimljivost": "Od celuloze čovek pravi papir. Ćelijski zid gljiva je od druge materije – hitina, koja gradi i oklop insekata i rakova.",
+      "zanimljivost": "Od celuloze čovek pravi papir, a u biljci ona daje čvrstinu stablu. Zato je drvo tako čvrsto.",
       "rec": "celuloza",
       "mediji": {
         "vrsta": "biologija",
@@ -1546,10 +1537,10 @@
       "tezina": 2,
       "pitanje": "Kako se zove označena krupna organela koja zauzima najveći deo odrasle biljne ćelije?",
       "odgovori": [
-        "Vakuola sa vodenim rastvorom",
-        "Jedro sa jedarcetom u sredini",
-        "Hloroplast (zeleni)",
-        "Mitohondrija (proizvodi energiju)"
+        "Vakuola",
+        "Jedro",
+        "Hloroplast",
+        "Mitohondrija"
       ],
       "zanimljivost": "Mlade biljne ćelije imaju više malih vakuola, koje se tokom rasta spajaju u jednu veliku. Vakuola daje čvrstinu ćeliji i čuva i odbrambene materije.",
       "rec": "vakuola",
@@ -1564,7 +1555,7 @@
     {
       "lekcija": 5,
       "tezina": 3,
-      "pitanje": "Koja materija u vakuolama paprike izaziva ljutinu?",
+      "pitanje": "Koja materija u paprici izaziva ljutinu?",
       "odgovori": [
         "Kapsaicin",
         "Hlorofil",
@@ -1629,10 +1620,10 @@
       "tezina": 2,
       "pitanje": "Kakvog je oblika nervne ćelije?",
       "odgovori": [
-        "Sa jednim dugačkim i više kratkih produžetaka",
-        "Okrugla i ulegnuta u sredini",
+        "Razgranata, sa dugim produžetkom",
+        "Okrugla, ulegnuta u sredini",
         "Pločasta, kao crep",
-        "Jajasta, sa bičem koji prenosi informacije"
+        "Jajasta, sa bičem za kretanje"
       ],
       "zanimljivost": "Nervne ćelije koje idu od kičmene moždine do palca na nozi duge su i preko jednog metra.",
       "rec": "neuron",
@@ -1648,7 +1639,7 @@
         "Da bi pravile hranu za telo pomoću svetlosti i vode",
         "Da bi se lakše delile na dve nove ćelije"
       ],
-      "zanimljivost": "Najveći mišić u telu je sedalni mišić, a najmanji je u uhu – stapedius, kraći od 2 mm.",
+      "zanimljivost": "Najveći mišić u telu je veliki sedalni mišić u zadnjici, a najmanji je u srednjem uhu – stapedijus.",
       "rec": "mišić"
     },
     {
@@ -1656,7 +1647,7 @@
       "tezina": 2,
       "pitanje": "Šta je zajedničko eukariotskim ćelijama?",
       "odgovori": [
-        "Imaju jedro sa jedrovom membranom",
+        "Pravo jedro, okruženo membranom",
         "Imaju hloroplaste za fotosintezu",
         "Imaju čvrst ćelijski zid od celuloze",
         "Imaju dug bič kojim plivaju kroz vodu"
@@ -1801,7 +1792,7 @@
         "Spore",
         "Kapsule",
         "Vakuole",
-        "Ciste"
+        "Pipci"
       ],
       "zanimljivost": "U sporama bakterije miruju i ne razmnožavaju se, a mogu tako da prežive godinama dok uslovi ne postanu povoljni.",
       "rec": "spora"
@@ -2096,16 +2087,16 @@
     {
       "lekcija": 6,
       "tezina": 3,
-      "pitanje": "Koja organela je najuočljivija u ćeliji pekarskog kvasca pod mikroskopom?",
+      "pitanje": "Koji organizam je prvi među organizmima sa jedrom čiji je ceo nasledni materijal pročitan (1996)?",
       "odgovori": [
-        "Vakuola",
-        "Hloroplast",
-        "Bič",
-        "Ćelijska usta"
+        "Pekarski kvasac",
+        "Papučica",
+        "Ameba",
+        "Euglena"
       ],
-      "zanimljivost": "Pekarski kvasac je i jedan od najvažnijih organizama u nauci – bio je prvi organizam sa jedrom čiji je ceo nasledni materijal pročitan (1996).",
+      "zanimljivost": "Kvasac je i danas jedan od najčešće proučavanih organizama u biologiji – na njemu se uči o deobi ćelije i nasleđu.",
       "rec": "kvasac",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/kvasac.jpg",
         "opis": "Ćelije pekarskog kvasca (uvećano)"
@@ -2204,16 +2195,16 @@
     },
     {
       "lekcija": 7,
-      "tezina": 1,
-      "pitanje": "Šta pomaže papučici da se kreće kroz vodu?",
+      "tezina": 3,
+      "pitanje": "Koja je glavna odlika papučice po građi?",
       "odgovori": [
-        "Mnoštvo sitnih treplji",
-        "Jedan dugačak bič",
-        "Lažne nožice sa strane",
-        "Peraja od hitina"
+        "Ima dva jedra: veliko i malo",
+        "Ima samo jedno jedro",
+        "Nema jedro, samo DNK u citoplazmi",
+        "Ima hloroplaste za fotosintezu"
       ],
-      "zanimljivost": "Treplje se pomeraju usklađeno, kao vesla na galiji, pa papučica pliva i okreće se oko svoje ose. Ameba se kreće lažnim nožicama, a euglena bičem.",
-      "rec": "treplje"
+      "zanimljivost": "Veliko jedro upravlja svakodnevnim radom ćelije, a malo se koristi pri polnom razmnožavanju (konjugaciji).",
+      "rec": "jedra"
     },
     {
       "lekcija": 7,
@@ -2338,7 +2329,7 @@
     {
       "lekcija": 7,
       "tezina": 2,
-      "pitanje": "Kako se zove pojava kada jednoćelijski organizmi žive povezani, a delovi kolonije počnu da se razlikuju?",
+      "pitanje": "Kako se zove pojava kada se ćelije povezane u koloniju počnu razlikovati po obliku i poslu?",
       "odgovori": [
         "Diferencijacija (specijalizacija ćelija)",
         "Fotosinteza (stvaranje hrane)",
@@ -2365,21 +2356,15 @@
     {
       "lekcija": 7,
       "tezina": 2,
-      "pitanje": "Kolika je kolonija volvoksa?",
+      "pitanje": "Kako se volvoks vidi u vodi bez mikroskopa?",
       "odgovori": [
-        "Loptica prečnika oko 1 mm",
-        "Zrnce od 0,01 mm",
-        "Kao jabuka",
-        "Kao velika lopta za plažu"
+        "Kao zelena tačkica",
+        "Kao providna sluzava kugla",
+        "Kao crni prah na dnu",
+        "Nikako, samo pod mikroskopom"
       ],
-      "zanimljivost": "Volvoks se vidi golim okom kao zelena tačkica u vodi. Kolonija ima od 500 do 50.000 ćelija, a svaka od njih ima po dva biča.",
-      "rec": "volvoks",
-      "mediji": {
-        "vrsta": "biologija",
-        "scena": "protist",
-        "tip": "volvoks",
-        "natpisi": false
-      }
+      "zanimljivost": "Svaka ćelija kolonije ima po dva biča, pa se cela loptica koordinisano kreće ka svetlosti.",
+      "rec": "tačkica"
     },
     {
       "lekcija": 7,
@@ -2467,7 +2452,7 @@
         "Zeleno, crveno, plavo i belo",
         "Fotosintetičko, provodno i mehaničko"
       ],
-      "zanimljivost": "Krv se ubraja u vezivno tkivo – tečno vezivno tkivo.",
+      "zanimljivost": "Ova četiri tkiva grade sve organe životinja – od kože do mozga.",
       "rec": "tkivo",
       "autor": "ivona tomic"
     },
@@ -2516,7 +2501,7 @@
       "pitanje": "Koja biljna tkiva provode vodu i hranljive materije?",
       "odgovori": [
         "Ksilem i floem",
-        "Pokorično tkivo – epiderm lista i stabla",
+        "Pokrovno tkivo – epiderm lista i stabla",
         "Pluta (mrtve ćelije kore drveta)",
         "Tvorno tkivo na vrhovima korena i stabla"
       ],
@@ -2546,7 +2531,7 @@
         "Masno tkivo, koje popunjava pukotinu u kosti posle preloma",
         "Pokrovno tkivo kože, koje obavija kost i lepi njene delove"
       ],
-      "zanimljivost": "Kostur se potpuno „obnovi“ otprilike svakih 10 godina – stalno se razgrađuje i gradi.",
+      "zanimljivost": "Kosti se stalno razgrađuju i ponovo grade – kod odraslih se veliki deo kostiju obnovi za oko 10 godina.",
       "rec": "kost"
     },
     {
@@ -2637,13 +2622,13 @@
       "tezina": 3,
       "pitanje": "Koji višećelijski organizmi NEMAJU tkiva ni organe?",
       "odgovori": [
-        "Višećelijske alge i gljive",
+        "Gljive",
         "Biljke cvetnice i četinari",
         "Ptice, sisari i gmizavci",
         "Insekti, pauci i rakovi"
       ],
       "zanimljivost": "Pečurka izgleda složeno, ali je cela izgrađena od isprepletanih končastih ćelija – hifa, bez pravih tkiva.",
-      "rec": "alga"
+      "rec": "gljiva"
     },
     {
       "lekcija": 8,
@@ -2682,7 +2667,7 @@
         "U lobanji",
         "U karlici"
       ],
-      "zanimljivost": "Grudnu duplju štite rebra, grudna kost i kičma – kao koštani kavez. Ispod dijafragme je trbušna duplja sa želucem, jetrom i crevima.",
+      "zanimljivost": "Grudnu duplju štite rebra, grudna kost i kičma – kao koštani kavez.",
       "rec": "duplja"
     },
     {
@@ -2766,7 +2751,7 @@
         "Vlakna",
         "Hromozomi"
       ],
-      "zanimljivost": "Hife se granaju i prepliću u mrežu koja se zove micelijum. Pečurka koju beremo samo je plodonosno telo – pravi organizam je micelijum u zemlji.",
+      "zanimljivost": "Hife se granaju i prepliću u gustu mrežu. Pečurka koju beremo samo je plodno telo – pravi organizam je skriven u zemlji.",
       "rec": "hifa",
       "mediji": {
         "vrsta": "biologija",
@@ -2785,7 +2770,7 @@
         "Sekvoja iz Kalifornije (drvo)",
         "Veliki koralni greben u Australiji"
       ],
-      "zanimljivost": "Medna gljiva je parazit koji izaziva sušenje drveća u planinama. Njena starost se procenjuje na više od 2.500 godina!",
+      "zanimljivost": "Medna gljiva je parazit koji izaziva sušenje drveća u planinama. Procenjuje se da je stara nekoliko hiljada godina!",
       "rec": "gljiva",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -2822,7 +2807,7 @@
         "U micelijumu, duboko u zemlji ispod pečurke",
         "Na vrhu šešira, na glatkoj i sjajnoj površini"
       ],
-      "zanimljivost": "Ako šešir pečurke staviš na papir preko noći, spore će ostaviti šaru – „otisak spora“. Po boji tog otiska gljivari raspoznaju vrste.",
+      "zanimljivost": "Mnoge pečurke se po boji spora razlikuju – bele, roze, smeđe ili crne, pa gljivari po tome prepoznaju vrste.",
       "rec": "pečurka"
     },
     {
@@ -2830,8 +2815,8 @@
       "tezina": 2,
       "pitanje": "Zašto su gljive dugo svrstavane u biljke, a danas su posebno carstvo?",
       "odgovori": [
-        "Liče na biljke spolja, ali nemaju hloroplaste i hrane se kao životinje",
-        "Zato što imaju lišće i stablo, pa su ih stari naučnici svrstali u zelene biljke",
+        "Liče na biljke, ali nemaju hloroplaste i sami ne prave hranu",
+        "Liče na biljke spolja, ali se hrane biljkama",
         "Zato što vrše fotosintezu na svetlu, iako to rade mnogo sporije od biljaka",
         "Zato što imaju cvet iz koga nastaju semenke, isto kao biljke cvetnice"
       ],
@@ -2880,7 +2865,7 @@
         "Delovi kojima gljiva upija vodu",
         "Ostaci omotača mlade pečurke"
       ],
-      "zanimljivost": "Ako šešir pečurke ostaviš preko noći na papiru, dobićeš „otisak spora“ – šaru po kojoj se vrste razlikuju.",
+      "zanimljivost": "Listići nose milione spora, koje vetar raznosi dalje od pečurke.",
       "rec": "listići",
       "mediji": {
         "vrsta": "biologija",
@@ -3016,7 +3001,7 @@
         "Zadebljalo korenje vinove loze",
         "Sitan planinski krompir"
       ],
-      "zanimljivost": "Tartufe traže posebno obučeni psi, a nekada su to radile i svinje. Beli tartuf je među najskupljim namirnicama na svetu – raste i u Srbiji.",
+      "zanimljivost": "Tartufe traže posebno obučeni psi, a nekada su to radile i svinje. Beli tartuf je među najskupljim namirnicama na svetu, a najpoznatiji dolazi iz Italije.",
       "rec": "tartuf",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -3047,9 +3032,9 @@
       "pitanje": "Koliko je do sada opisano vrsta gljiva?",
       "odgovori": [
         "Preko 100.000",
-        "Oko 500",
-        "Tačno 1.000",
-        "Oko 50"
+        "Oko 10.000",
+        "Oko 1.000",
+        "Preko 1.000.000"
       ],
       "zanimljivost": "Svake godine naučnici opišu još oko 2.000 novih vrsta gljiva – mnoge od njih žive skrivene u zemljištu i drvetu.",
       "rec": "gljiva"
@@ -3166,10 +3151,10 @@
       "tezina": 2,
       "pitanje": "Šta se dešava u ogledu sa kvascem, toplom vodom i šećerom u flašici sa balonom na grliću?",
       "odgovori": [
-        "Balon se naduva od ugljen-dioksida koji kvasac oslobađa",
-        "Balon pukne od kiseonika koji kvasac snažno izbacuje iz flašice",
-        "Ništa se ne desi – kvasac je mrtav i ne može da razlaže šećer",
-        "Voda u flašici proključa od toplote koju oslobađa kvasac u njoj"
+        "Balon se naduva od ugljen-dioksida",
+        "Balon pukne od kiseonika koji kvasac izbacuje",
+        "Ništa se ne desi – kvasac je mrtav i ne razlaže šećer",
+        "Voda u flašici proključa od toplote kvasca"
       ],
       "zanimljivost": "Bez šećera balon se jedva pomeri, a sa više šećera najviše se naduva. Tako se dokazuje da kvasac diše i razlaže šećer.",
       "rec": "kvasac"
@@ -3293,7 +3278,7 @@
         "Stvaraju vodu koja zatim slobodno kruži kroz celu prirodu",
         "Ne učestvuju – gljive samo uzimaju, a ništa ne vraćaju"
       ],
-      "zanimljivost": "Samo gljive mogu efikasno da razgrade lignin – čvrstu materiju drveta.",
+      "zanimljivost": "Gljive najefikasnije razgrađuju lignin – čvrstu materiju drveta.",
       "rec": "razlaganje"
     },
     {
@@ -3475,7 +3460,7 @@
         "Provodni snopići",
         "Hife"
       ],
-      "zanimljivost": "Korenske dlačice ogromno povećavaju površinu korena. Često je površina korena višestruko veća od površine svih nadzemnih delova biljke!",
+      "zanimljivost": "Korenske dlačice ogromno povećavaju površinu korena, pa biljka kroz nju upija mnogo više vode i soli.",
       "rec": "dlačica",
       "medijiOdgovora": {
         "vrsta": "biologija",
@@ -3492,7 +3477,7 @@
         "Osovinski bez zadebljanja",
         "Vazdušni"
       ],
-      "zanimljivost": "U zadebljalom korenu biljka čuva hranljive materije. Cvekla, rotkvica i repa imaju repast koren, a većina trava žiličast – mnogo sličnih tankih žila.",
+      "zanimljivost": "U zadebljalom korenu biljka čuva hranljive materije. Cvekla i repa imaju zadebljao koren, a većina trava žiličast – mnogo sličnih tankih žila.",
       "rec": "šargarepa"
     },
     {
@@ -3605,9 +3590,9 @@
       "pitanje": "Koliko otprilike ima ugljen-dioksida u vazduhu?",
       "odgovori": [
         "Oko 0,04%",
+        "Oko 0,4%",
         "Oko 21%",
-        "Oko 78%",
-        "Oko 50%"
+        "Oko 78%"
       ],
       "zanimljivost": "Iako ga ima tako malo, od ugljen-dioksida biljke fotosintezom prave sav šećer, skrob i drvo. Kiseonika u vazduhu ima oko 21%, a azota oko 78%.",
       "rec": "vazduh"
@@ -3788,7 +3773,7 @@
       "pitanje": "Šta imaju papratnice, a nemaju mahovine?",
       "odgovori": [
         "Pravi koren",
-        "Listiće",
+        "Seme",
         "Hlorofil",
         "Spore"
       ],
@@ -3854,7 +3839,7 @@
         "Pozajmljivanju novca ratarima za setvu",
         "Gajenju retkog cveća u velikom stakleniku"
       ],
-      "zanimljivost": "Najveća banka semena je na ostrvu Svalbard, duboko u zaleđenoj steni. Institut za kukuruz „Zemun Polje“ ima jednu od deset najvećih zbirki semena kukuruza na svetu.",
+      "zanimljivost": "Najveća banka semena je na ostrvu Svalbard u Norveškoj, u zaleđenoj planinskoj steni, kao zaštita za slučaj katastrofe.",
       "rec": "seme",
       "mediji": {
         "vrsta": "slika",
@@ -3937,7 +3922,7 @@
       "tezina": 2,
       "pitanje": "Koji sistem organa upravlja radom svih ostalih?",
       "odgovori": [
-        "Nervni sistem (uz žlezde)",
+        "Nervni sistem",
         "Sistem organa za varenje",
         "Sistem organa za cirkulaciju",
         "Skeletni i mišićni sistem"
@@ -4380,7 +4365,7 @@
       ],
       "zanimljivost": "Žarne ćelije izbacuju sićušnu otrovnu „harpunu“ za samo nekoliko milionitih delova sekunde.",
       "rec": "hidra",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/hidra.jpg",
         "opis": "Hidra"
@@ -4453,7 +4438,7 @@
         "Fotosintezom",
         "Jedu samo lišće i cvetove biljaka, a mušice hvataju samo za igru"
       ],
-      "zanimljivost": "Paukova svila je, za istu debljinu, jača od čelika.",
+      "zanimljivost": "Paukova svila je, po težini, jača od čelika.",
       "rec": "pauk"
     },
     {
@@ -4571,7 +4556,7 @@
     {
       "lekcija": 13,
       "tezina": 2,
-      "pitanje": "Kako se zove označeni najduži organ za varenje, u kom se varenje završava?",
+      "pitanje": "Kako se zove označeni najduži deo creva, u kom se hranljive materije najvećim delom upijaju u krv?",
       "odgovori": [
         "Tanko crevo",
         "Debelo crevo",
@@ -4755,7 +4740,7 @@
       "tezina": 2,
       "pitanje": "Zašto ptice dišu efikasnije od sisara?",
       "odgovori": [
-        "Imaju vazdušne kese pa vazduh kroz pluća prolazi u jednom smeru",
+        "Vazduh kroz pluća prolazi u jednom smeru",
         "Imaju i škrge i pluća, pa uzimaju kiseonik iz vazduha i iz vode u letu",
         "Dišu i kožom, kao žabe",
         "U letu dišu ređe, pa štede vazduh"
@@ -4957,7 +4942,7 @@
       ],
       "objasnjenje": "Šaran je riba i diše škrgama. Gušter, golub i delfin dišu plućima – i delfin mora da izroni da bi udahnuo vazduh.",
       "zanimljivost": "Kit ulješura može da zadrži dah i više od sat vremena dok roni u velike dubine.",
-      "rec": "delfin",
+      "rec": "šaran",
       "autor": "ivona tomic"
     },
     {
@@ -5430,7 +5415,7 @@
         "Bubrežne vene",
         "Bubrežne arterije"
       ],
-      "zanimljivost": "Bubreg ima oko milion sićušnih filtera – nefrona.",
+      "zanimljivost": "Mokraćovodi su dugački oko 25–30 cm i rade bez pomoći – mokraću potiskuju talasastim pokretima mišića zida.",
       "rec": "mokraćovod",
       "mediji": {
         "vrsta": "biologija",
@@ -5633,11 +5618,11 @@
       "pitanje": "Kako se razmnožavaju morske zvezde osim polno?",
       "odgovori": [
         "Regeneracijom – iz dela tela izraste nova jedinka",
-        "Pupljenjem – na telu izraste mala zvezda i otpadne od roditelja",
-        "Sporama",
-        "Ne mogu drugačije"
+        "Sporama, kao gljive",
+        "Ne mogu drugačije",
+        "Jajima koja se leže u vodi"
       ],
-      "zanimljivost": "Hidre mogu da se razmnožavaju i pupljenjem i polno. Organizmi koji imaju i muške i ženske polne organe zovu se hermafroditi.",
+      "zanimljivost": "Hidre se razmnožavaju i pupljenjem i polno – primer da jedna vrsta koristi oba načina.",
       "rec": "obnova",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -5770,7 +5755,7 @@
     {
       "lekcija": 17,
       "tezina": 3,
-      "pitanje": "Mleko kog sisara je gusto i masno skoro kao jogurt, pa mladunče dnevno dobije i do 90 kg?",
+      "pitanje": "Čije mleko je toliko masno da mladunče za dan poraste i do 90 kg?",
       "odgovori": [
         "Plavog kita",
         "Slona",
@@ -5875,11 +5860,11 @@
         ],
         [
           "Muškatla",
-          "Pelcer"
+          "Reznica (sečenica)"
         ]
       ],
       "zanimljivost": "Biljke nastale vegetativno imaju potpuno iste gene kao roditelj – zato se lepe sorte voća i cveća razmnožavaju baš ovako.",
-      "rec": "pelcer"
+      "rec": "reznica"
     },
     {
       "lekcija": 17,
@@ -5897,7 +5882,7 @@
     {
       "lekcija": 17,
       "tezina": 3,
-      "pitanje": "Koja se od ovih životinja razmnožava i pupljenjem i polno, a pritom je dvopolna (hermafrodit)?",
+      "pitanje": "Koja se od ovih životinja razmnožava i pupljenjem i polno?",
       "odgovori": [
         "Hidra",
         "Žaba",
@@ -6044,13 +6029,13 @@
       "tezina": 3,
       "pitanje": "Koji činilac sredine najviše ograničava život u dubokom moru?",
       "odgovori": [
-        "Svetlost (i velik pritisak)",
+        "Nedostatak svetlosti",
         "Jak vetar iznad same površine mora",
         "Previše kiseonika u velikoj dubini",
         "Previše hrane na samom dnu mora"
       ],
       "zanimljivost": "Na dnu Marijanske brazde pritisak je oko 1.000 puta veći nego na površini.",
-      "rec": "pritisak"
+      "rec": "svetlost"
     },
     {
       "lekcija": 18,
@@ -6120,15 +6105,15 @@
     {
       "lekcija": 18,
       "tezina": 3,
-      "pitanje": "Kako se zovu vodeni organizmi koji aktivno plivaju, kao ribe, lignje i delfini?",
+      "pitanje": "Kako se zovu sitne alge i biljni organizmi koji lebde u vodi i fotosintetišu?",
       "odgovori": [
-        "Nekton",
-        "Plankton",
+        "Fitoplankton",
+        "Zooplankton",
         "Bentos",
         "Edafon"
       ],
-      "zanimljivost": "Plankton lebdi i nose ga struje, bentos živi na dnu, a nekton pliva sam, nezavisno od struja. Isti organizam može da promeni grupu – larve mnogih riba su deo planktona.",
-      "rec": "nekton"
+      "zanimljivost": "Fitoplankton daje oko polovine kiseonika koji se stvara na Zemlji.",
+      "rec": "plankton"
     },
     {
       "lekcija": 18,
@@ -6231,7 +6216,7 @@
       "tezina": 3,
       "pitanje": "Šta je Dušanov zakonik u 14. veku zabranio da bi se šume obnovile?",
       "odgovori": [
-        "Naseljavanje krčevina (iskrčenih šuma)",
+        "Naseljavanje iskrčenih šuma",
         "Lov na medvede i vukove u carskoj šumi",
         "Pecanje u rekama tokom leta",
         "Gradnju vodenica na potocima"
@@ -6286,15 +6271,15 @@
     {
       "lekcija": 19,
       "tezina": 2,
-      "pitanje": "Šta je vremenska organizacija biocenoze?",
+      "pitanje": "Šta je prostorna organizacija biocenoze?",
       "odgovori": [
-        "Članovi zajednice aktivni su u različito doba dana i godine",
-        "Starost drveća u šumi, merena brojem godova u debelim stablima",
-        "Brzina rasta biljaka u proleće i leto, kada ima mnogo više svetla",
-        "Broj godina postojanja šume od trenutka kada je posađeno prvo drvo"
+        "Raspored organizama u prostoru (u vodi, na tlu, u visini)",
+        "Broj godina postojanja šume",
+        "Brzina širenja biljaka vetrom",
+        "Broj vrsta koje žive u jednoj zajednici"
       ],
-      "zanimljivost": "Sova buljina je noćna ptica grabljivica, a suri orao dnevna – mogu da žive u istoj šumi, a da jedna drugoj ne smetaju. Zimi krzno nekih sisara postaje gušće.",
-      "rec": "ritam"
+      "zanimljivost": "U jezeru plankton lebdi u vodi, nekton pliva, a bentos živi na dnu – i to je prostorni raspored.",
+      "rec": "prostor"
     },
     {
       "lekcija": 19,
@@ -6428,7 +6413,7 @@
         "Mrtva zajednica",
         "Gradska zajednica"
       ],
-      "zanimljivost": "Lišajevi i mahovine su prvi pioniri na steni – oni stvaraju prvi tanki sloj zemlje.",
+      "zanimljivost": "Na golom mestu razvoj počinje od nekoliko vrsta, pa se tokom desetina i stotina godina zajednica sve više razvija.",
       "rec": "pionir"
     },
     {
@@ -6509,7 +6494,7 @@
         "Šume",
         "Pustinje",
         "Njive",
-        "Parkirališta"
+        "Tundre"
       ],
       "zanimljivost": "U jednoj staroj hrastovoj šumi može da živi više hiljada vrsta – od gljiva i insekata do sova i jelena.",
       "rec": "šuma"
@@ -6620,7 +6605,7 @@
         "Takmičenje dve vrste za istu hranu, vodu i svetlost",
         "Život na domaćinu bez ubijanja, ali uz štetu po njega"
       ],
-      "zanimljivost": "Brojnost zečeva i risova u Kanadi menja se u talasima – kad ima više zečeva, raste i broj risova.",
+      "zanimljivost": "Predatorstvo oblikuje i same plenove: sporije i bolesne jedinke češće budu uhvaćene, pa grabljivac pomaže da populacija ostane zdrava.",
       "rec": "grabljivac",
       "autor": "ivona tomic",
       "medijiOdgovora": {
@@ -6813,7 +6798,7 @@
     {
       "lekcija": 20,
       "tezina": 3,
-      "pitanje": "Kakav je odnos između lišajeve gljive i alge?",
+      "pitanje": "Kakav je odnos između gljive i alge u lišaju?",
       "odgovori": [
         "Simbioza – obe imaju korist",
         "Grabljivost (gljiva jede algu)",
@@ -6923,7 +6908,7 @@
         "Čuvaju plen od drugih grabljivaca",
         "Ne pomažu mu ni na koji način"
       ],
-      "zanimljivost": "Zato se kaže da su vukovi „lekari šume“: kada su vukovi vraćeni u nacionalni park Jeloustoun, krda jelena su postala zdravija, a šume su se obnovile.",
+      "zanimljivost": "Zato se vukovi nazivaju „lekari šume“. Posle vraćanja vukova u nacionalni park Jeloustoun smatra se da su krda jelena postala zdravija, ali je uticaj i danas predmet istraživanja.",
       "rec": "vuk"
     },
     {
@@ -6988,7 +6973,7 @@
         "Životinje – insekti, ptice i sisari",
         "Isključivo vetar, nikad životinje",
         "Isključivo voda iz obližnjih reka i potoka",
-        "Niko – biljke to rade same"
+        "Samo kiša koja spira cvetove"
       ],
       "zanimljivost": "Veverice zakopavaju žir i lešnike za zimu i zaborave mnoge – iz njih izrastu nova stabla.",
       "rec": "veverica"
@@ -7036,15 +7021,15 @@
     {
       "lekcija": 21,
       "tezina": 2,
-      "pitanje": "Kako se zovu uticaji drugih živih bića na organizam – na primer grabljivaca, parazita ili konkurenata?",
+      "pitanje": "Kako se zovu biljke koje rastu na staništima sa umerenom vlagom?",
       "odgovori": [
-        "Biotički činioci",
-        "Abiotički činioci",
-        "Klimatski činioci",
-        "Fizički činioci"
+        "Mezofite",
+        "Hidrofite",
+        "Kserofite",
+        "Halofite"
       ],
-      "zanimljivost": "Abiotički su neživi uslovi, kao temperatura i svetlost. Biotički činioci mogu biti i korisni – na primer oprašivači za biljke.",
-      "rec": "biotički"
+      "zanimljivost": "Većina biljaka na našim livadama i u šumama su mezofite – ni previše vlažne ni suve sredine.",
+      "rec": "mezofita"
     },
     {
       "lekcija": 21,
@@ -7108,7 +7093,7 @@
         "Heliofite",
         "Halofite"
       ],
-      "zanimljivost": "Lokvanj ima vazdušne šupljine u listovima i dršci pa pluta na vodi.",
+      "zanimljivost": "Hidrofite su prilagođene životu u vodi ili na njenoj površini – korenje im je slabo razvijeno ili ga nemaju.",
       "rec": "hidrofita",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -7254,15 +7239,15 @@
     {
       "lekcija": 21,
       "tezina": 2,
-      "pitanje": "Koja biljka otvara cvetove uveče i mirisom privlači noćne leptire?",
+      "pitanje": "Šta je fotoperiodizam?",
       "odgovori": [
-        "Noćna frajla",
-        "Prkos",
-        "Suncokret",
-        "Maslačak"
+        "Reagovanje biljke na dužinu dana",
+        "Kretanje biljke za suncem",
+        "Pretvaranje svetlosti u toplotu",
+        "Mirisanje cveća noću"
       ],
-      "zanimljivost": "Prkos, obrnuto, zatvara cvetove u sumrak i po oblačnom vremenu – obe biljke reaguju na jačinu svetlosti.",
-      "rec": "frajla",
+      "zanimljivost": "Dugodnevne biljke cvetaju kad su dani duži, a kratkodnevne u jesen, kad su noći duge.",
+      "rec": "fotoperiod",
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/nocna-frajla.jpg",
@@ -7310,7 +7295,7 @@
         "Količina padavina",
         "Vrsta zagađenja vode"
       ],
-      "zanimljivost": "Srbija je po raznovrsnosti biljaka, životinja i gljiva među vodećim zemljama u Evropi – zahvaljujući planinama, rekama, ravnicama i klisurama na malom prostoru. Dan zaštite biodiverziteta je 22. maj.",
+      "zanimljivost": "Srbija je na relativno malom prostoru bogata raznovrsnošću biljaka, životinja i gljiva – zahvaljujući planinama, rekama, ravnicama i klisurama. Dan zaštite biodiverziteta je 22. maj.",
       "rec": "vrsta"
     },
     {
@@ -7323,7 +7308,7 @@
         "Bela roda",
         "Suri orao"
       ],
-      "zanimljivost": "Kada je zaštita počela 1990. godine, na Uvcu je bilo samo 7 parova, a danas tamo živi nekoliko stotina supova.",
+      "zanimljivost": "Pre zaštite na Uvcu je ostalo svega nekoliko parova supova, a danas tamo živi više stotina ptica.",
       "rec": "sup",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -7426,7 +7411,7 @@
         "Isto poreklo – sve tri životinje su nastale od istog pretka pre sto godina",
         "Isti način razmnožavanja – sve tri polažu jaja na dnu mora ili na obali"
       ],
-      "zanimljivost": "Slični uslovi sredine dovode do sličnih prilagođenosti kod nesrodnih bića. Rovac (insekt) i krtica (sisar) takođe imaju istu – „rijuću“ – životnu formu.",
+      "zanimljivost": "Slični uslovi sredine dovode do sličnih prilagođenosti kod nesrodnih bića. Rovac (insekt) i krtica (sisar) takođe imaju istu – „kopačku“ – životnu formu.",
       "rec": "forma"
     },
     {
@@ -7452,7 +7437,7 @@
         "Imaju iste cvetove i isto seme",
         "Čovek ih je ukrstio u vrtovima"
       ],
-      "zanimljivost": "Ova pojava – da nesrodne vrste postanu slične – zove se konvergencija.",
+      "zanimljivost": "Slične osobine nastaju nezavisno kod nesrodnih vrsta, jer ih oblikuje ista sredina.",
       "rec": "sličnost",
       "mediji": {
         "vrsta": "slika",
@@ -7471,7 +7456,7 @@
         "Samo gljive koje rastu na drveću"
       ],
       "zanimljivost": "Na visokim planinama drveće je patuljasto i polegnuto, kao bor krivulj.",
-      "rec": "krivulj"
+      "rec": "oblik"
     },
     {
       "lekcija": 22,
@@ -7572,12 +7557,12 @@
     {
       "lekcija": 22,
       "tezina": 2,
-      "pitanje": "Šta je zajedničko listu lokvanja i listu kaktusa?",
+      "pitanje": "Kako se lokvanj drži na površini vode?",
       "odgovori": [
-        "Ništa – prilagođeni su potpuno drugačijim uslovima",
-        "Oba su trnovita i štite biljku od životinja koje je jedu",
-        "Oba plutaju po površini vode",
-        "Oba čuvaju vodu u debelom tkivu"
+        "Ima vazdušne šupljine u listovima i dršci",
+        "Ima trnje koje ga drži za dno",
+        "Korenje ga vezuje za pesak na dnu",
+        "Listovi su mu voštani i teški"
       ],
       "zanimljivost": "Lokvanj ima stome na gornjoj strani lista, jer donja leži na vodi.",
       "rec": "lokvanj"
@@ -7629,7 +7614,7 @@
       "parovi": [
         [
           "Evropska krtica",
-          "Rijuća forma"
+          "Kopačka forma"
         ],
         [
           "Jelen lopatar",
@@ -7644,7 +7629,7 @@
           "Plivajuća forma"
         ]
       ],
-      "zanimljivost": "Rovac je insekt, ali po načinu života spada u istu, rijuću formu kao krtica – ima prednje noge kao lopatice.",
+      "zanimljivost": "Rovac je insekt, ali po načinu života spada u istu, kopačku formu kao krtica – ima prednje noge kao lopatice.",
       "rec": "forma",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -7657,7 +7642,7 @@
       "tezina": 2,
       "pitanje": "Koja adaptacija omogućava patkama da plivaju i rone?",
       "odgovori": [
-        "Plovne kožice i perje koje se ne kvasi",
+        "Plovne kožice i perje koje odbija vodu",
         "Duge, tanke noge za gaženje kroz blato",
         "Jak kljun za kopanje zemlje",
         "Kandže za penjanje po drveću"
@@ -7750,7 +7735,7 @@
         "23",
         "64"
       ],
-      "zanimljivost": "Čovek ima 46 hromozoma, a šimpanza 48. Naš drugi hromozom nastao je spajanjem dva hromozoma koja majmuni i danas imaju odvojeno.",
+      "zanimljivost": "Ljudski drugi hromozom nastao je spajanjem dva hromozoma koja šimpanze i danas imaju odvojeno.",
       "rec": "hromozom"
     },
     {
@@ -7769,7 +7754,7 @@
     {
       "lekcija": 23,
       "tezina": 2,
-      "pitanje": "Koja vrsta ćelijske deobe nam omogućava da posekotina na prstu zaraste bez ožiljka?",
+      "pitanje": "Koja vrsta ćelijske deobe omogućava da se posekotina na prstu zaleči novim ćelijama?",
       "odgovori": [
         "Deoba telesnih ćelija",
         "Deoba polnih ćelija",
@@ -7815,7 +7800,7 @@
         "92",
         "1"
       ],
-      "zanimljivost": "Kada se spoje dve polne ćelije sa po 23 hromozoma, nastaje zigot sa 46.",
+      "zanimljivost": "Kada se spoje dve polne ćelije, nastaje zigot sa punim brojem hromozoma.",
       "rec": "polna"
     },
     {
@@ -7909,7 +7894,7 @@
     {
       "lekcija": 23,
       "tezina": 2,
-      "pitanje": "Kako se zove molekul koji gradi gene i ima oblik dvostruke spirale?",
+      "pitanje": "Kako se zove molekul u kome su zapisani geni?",
       "odgovori": [
         "DNK",
         "Glukoza",
@@ -7918,7 +7903,7 @@
       ],
       "zanimljivost": "Ako bi se slova genetskog koda jednog čoveka štampala u knjigama, bilo bi ih oko 200 debelih tomova.",
       "rec": "spirala",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "dnk"
       }
     },
@@ -7983,7 +7968,7 @@
       ],
       "zanimljivost": "Jedan čovek može da napravi polne ćelije sa više od 8 miliona različitih kombinacija hromozoma – a mešaju se i delovi samih hromozoma.",
       "rec": "kombinacija",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "biologija",
         "scena": "hromozomi",
         "tip": "polna"
@@ -8264,7 +8249,7 @@
       ],
       "zanimljivost": "Šare na jagodicama prstiju formiraju se pre rođenja i zavise i od položaja bebe i pritisaka u materici – zato su jedinstvene i koriste se u kriminalistici.",
       "rec": "otisak",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/otisak-prsta.jpg",
         "opis": "Otisak prsta"
@@ -8280,7 +8265,7 @@
         "Sve mutacije u telu",
         "Nijedna"
       ],
-      "zanimljivost": "Mutacija u ćeliji kože može da napravi mladež, ali je deca ne nasleđuju – za potomke su važne samo promene u jajnim ćelijama i spermatozoidima.",
+      "zanimljivost": "Mutacija u ćeliji kože može da dovede do tumora, ali je deca ne nasleđuju – za potomke su važne samo promene u jajnim ćelijama i spermatozoidima.",
       "rec": "mutacija"
     },
     {
@@ -8402,7 +8387,7 @@
       "tezina": 2,
       "pitanje": "Zašto bakterije postaju otporne na antibiotike?",
       "odgovori": [
-        "Preživljavaju otporne bakterije i one se razmnožavaju",
+        "Preživljavaju otporne bakterije, koje se zatim razmnožavaju",
         "Bakterije uče iz iskustva, pa zapamte kako da izbegnu antibiotik",
         "Antibiotici ih jačaju, pa svaka sledeća bakterija postane jača",
         "To nije moguće – antibiotik uvek ubije sve bakterije bez izuzetka"
@@ -8565,7 +8550,7 @@
         "Polnom",
         "Slučajnom"
       ],
-      "zanimljivost": "Darvin je i sam gajio golubove. Primetio je da su odgajivači od jedne divlje vrste, golubice pećinarke, za nekoliko vekova stvorili rase koje izgledaju potpuno različito.",
+      "zanimljivost": "Darvin je i sam gajio golubove. Primetio je da su odgajivači od jednog divljeg goluba, pećinskog goluba, za nekoliko vekova stvorili rase koje izgledaju potpuno različito.",
       "rec": "golub"
     },
     {
@@ -8880,7 +8865,7 @@
         "Planina nastala od nagomilanih ostataka školjki",
         "Vrsta bakterije koja živi duboko u stenama i pećinama"
       ],
-      "zanimljivost": "Kod Kostolca je 2009. nađen skoro ceo skelet mamuta, koji je dobio ime Vika.",
+      "zanimljivost": "Fosili nam pokazuju kako su izgledali organizmi koji su odavno nestali – i kako su se menjali tokom miliona godina.",
       "rec": "fosil"
     },
     {
@@ -8891,7 +8876,7 @@
         "Gotove materije iz okoline (prvobitne „supe“)",
         "Biljke i alge koje su već postojale u prvobitnom okeanu",
         "Meso drugih životinja koje su lovili u prvobitnom moru",
-        "Ništa – dobijali su energiju samo od toplote vulkana"
+        "Ugalj i naftu iz zemljine kore"
       ],
       "zanimljivost": "Ideja o „prvobitnoj supi“ potiče od Oparina i Holdejna iz 1920-ih.",
       "rec": "supa"
@@ -9149,7 +9134,7 @@
     {
       "lekcija": 27,
       "tezina": 3,
-      "pitanje": "Koji domen čine prokarioti često iz ekstremnih sredina – vrelih izvora, slanih jezera?",
+      "pitanje": "Koji domen, različit od bakterija, čine prokarioti iz ekstremnih sredina – vrelih izvora i slanih jezera?",
       "odgovori": [
         "Arheje",
         "Eukarije",
@@ -9453,8 +9438,8 @@
       "odgovori": [
         "Kapljičnim putem kroz vazduh",
         "Hranom i pićem kupljenim u prodavnici",
-        "Ujedom insekta",
-        "Ne prenose se"
+        "Ujedom komarca",
+        "Samo preko kućnih ljubimaca"
       ],
       "zanimljivost": "Jedno kijanje može da izbaci i hiljade sitnih kapljica.",
       "rec": "kijanje",
@@ -9528,7 +9513,7 @@
     {
       "lekcija": 28,
       "tezina": 1,
-      "pitanje": "Šta je najbolji način da sprečimo širenje bolesti?",
+      "pitanje": "Koji je jednostavan način da sprečimo širenje bolesti?",
       "odgovori": [
         "Redovno pranje ruku",
         "Deljenje čaša sa drugima",
@@ -9626,7 +9611,7 @@
         "Streptokok",
         "Vibrio kolere"
       ],
-      "zanimljivost": "Za tuberkulozu je nekada dovoljan i jedan jedini Kohov bacil, a da bi se dobila salmoneloza, potrebno je uneti više hiljada bakterija.",
+      "zanimljivost": "Za tuberkulozu može biti dovoljno veoma malo bacila, dok salmonela obično zahteva više hiljada bakterija da bi izazvala bolest.",
       "rec": "bacil"
     },
     {
@@ -9655,7 +9640,7 @@
         "Kuga je naglo smanjila broj stanovnika",
         "Broj stanovnika se odjednom udvostručio",
         "Mnogo ljudi se preselilo u Ameriku",
-        "Ništa posebno se nije desilo"
+        "Veliki zemljotres je uništio većinu gradova"
       ],
       "zanimljivost": "Crna smrt (1347–1351) odnela je, prema procenama, između trećine i polovine stanovnika Evrope. Trebalo je više od 150 godina da se broj stanovnika vrati.",
       "rec": "kuga",
@@ -9783,7 +9768,7 @@
         "Telo prestaje da stvara bela krvna zrnca",
         "Nije opasno ako se piju kratko"
       ],
-      "zanimljivost": "Lekar može da uradi antibiogram – uzorak sa bakterijama stavi u Petrijevu šolju sa kružićima raznih antibiotika i vidi oko kog nastaje najveća „prazna“ površina.",
+      "zanimljivost": "Bakterije koje prežive lek brzo se umnožavaju kad nema konkurencije – zato prvo mesto zauzimaju otporne.",
       "rec": "antibiotik"
     },
     {
@@ -10050,7 +10035,7 @@
     {
       "lekcija": 29,
       "tezina": 3,
-      "pitanje": "Šta je Fleming otkrio 1921. godine, kada je slučajno kinuo u Petrijevu šolju sa bakterijama?",
+      "pitanje": "Šta je Fleming otkrio 1921. godine, kada je slučajno kihnuo u Petrijevu šolju sa bakterijama?",
       "odgovori": [
         "Lizozim – enzim koji razgrađuje bakterije",
         "Penicilin – lek iz zelene plesni",
@@ -10163,7 +10148,7 @@
       "tezina": 2,
       "pitanje": "Na kojim mestima se krpelj najčešće zakači za kožu?",
       "odgovori": [
-        "Gde je koža tanka i nežna",
+        "Na vratu, iza ušiju i u preponama",
         "Na dlanovima i tabanima",
         "Na noktima ruku i nogu",
         "Na kolenima i laktovima"
@@ -10283,14 +10268,14 @@
     {
       "lekcija": 30,
       "tezina": 1,
-      "pitanje": "Šta treba raditi ako imaš psa, da se ne bi zarazio psećom pantljičarom?",
+      "pitanje": "Šta treba raditi ako imaš psa, da se pseća pantljičara ne prenese na tebe?",
       "odgovori": [
         "Voditi ga kod veterinara i prati ruke",
         "Kupati ga samo jednom godišnje",
         "Hraniti ga isključivo sirovim mesom",
         "Puštati ga da nam liže lice i ruke"
       ],
-      "zanimljivost": "Pseća pantljičara živi u crevima psa, lisice ili vuka, a njena jaja izlaze izmetom – zato se izmet pasa uvek kupi sa ulice i iz parka.",
+      "zanimljivost": "Pseća pantljičara živi u crevima psa, lisice ili vuka, a njena jaja izlaze izmetom – zato izmet pasa uvek treba pokupiti sa ulice i iz parka.",
       "rec": "pas"
     },
     {
@@ -10362,7 +10347,7 @@
         "Drugi",
         "Prvi",
         "Treći",
-        "Peti"
+        "Četvrti"
       ],
       "zanimljivost": "Kod opekotine prvog stepena koža samo pocrveni, kod drugog stepena nastaju plikovi, a kod trećeg su oštećeni i dublji slojevi kože – takve opekotine leči samo lekar.",
       "rec": "plik",
@@ -10458,7 +10443,7 @@
         "Dati joj vruć čaj i umotati je u ćebe",
         "Naterati je da trči da se razdrma"
       ],
-      "zanimljivost": "Ako osoba izgubi svest, odmah se zove hitna pomoć (194), a onesvešćena osoba se okrene na bok da se ne bi ugušila.",
+      "zanimljivost": "Ako osoba izgubi svest, odmah se zove hitna pomoć, a onesvešćena osoba se okrene na bok da se ne bi ugušila.",
       "rec": "senka"
     },
     {
@@ -10503,7 +10488,7 @@
     {
       "lekcija": 31,
       "tezina": 1,
-      "pitanje": "Koji je ovo insekt, čiji je ubod naročito bolan?",
+      "pitanje": "Koji je ovo insekt – najveća evropska osa?",
       "odgovori": [
         "Stršljen",
         "Medonosna pčela",
@@ -10572,12 +10557,12 @@
     {
       "lekcija": 31,
       "tezina": 3,
-      "pitanje": "Koji deo viška toplote telo izbacuje preko kože?",
+      "pitanje": "Koji organ najviše pomaže telu da izbaci višak toplote?",
       "odgovori": [
-        "Oko 90%",
-        "Oko 1%",
-        "Ništa – toplotu izbacujemo samo plućima",
-        "Tačno polovinu, kroz kosu"
+        "Koža",
+        "Pluća",
+        "Jetra",
+        "Bubrezi"
       ],
       "zanimljivost": "Krvni sudovi u koži se na vrućini šire (zato pocrvenimo), a znoj isparava i odnosi toplotu.",
       "rec": "koža"
@@ -10662,7 +10647,7 @@
         "Oko 1,5 do 2 litra, i više pri naporu",
         "Samo jednu čašu dnevno",
         "Oko 10 litara dnevno",
-        "Ništa – dovoljna je hrana"
+        "Oko pola litra, samo uveče"
       ],
       "zanimljivost": "Gazirani i zaslađeni sokovi nisu zamena za vodu, a alkohol dodatno izbacuje vodu iz tela.",
       "rec": "voda"
@@ -10940,7 +10925,7 @@
       "pitanje": "Ko može da pomogne osobi koja je zavisna od alkohola?",
       "odgovori": [
         "Lekari i stručnjaci, uz podršku porodice",
-        "Niko – zavisnost se ne može lečiti nikako",
+        "Samo sam bolesnik, bez pomoći drugih",
         "Samo prodavac u prodavnici pića i hrane",
         "Samo prijatelji koji i sami redovno piju alkohol"
       ],
@@ -10983,7 +10968,7 @@
         "Vrsta društvene igre u kojoj se pije sok na brzinu iz čaše",
         "Zdrav obrok koji sadrži malo alkohola iz voća i grožđa"
       ],
-      "zanimljivost": "Trovanje alkoholom može da izazove gubitak svesti i prestanak disanja – tada odmah treba zvati hitnu pomoć (194).",
+      "zanimljivost": "Trovanje alkoholom može da izazove gubitak svesti i prestanak disanja – tada odmah treba zvati hitnu pomoć.",
       "rec": "hitna"
     },
     {

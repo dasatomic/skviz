@@ -125,10 +125,10 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, nzd, nzs, skok, skokovi }) =
      K('$35 = 5 · 7$, pa je $105 = 3 · 5 · 7$.')],
     G(O, drvo(105).e, { ...bez, velicina: 160 }));
 
-  Z(1, 'Snežana je $91$ salvetu podelila drugaricama, svakoj jednako (više od jedne, a ima više od jedne drugarice). Koliko salveta je dobila svaka?',
-    ['$7$ ili $13$', 'samo $7$', 'samo $13$', '$91$'],
-    [K('Broj drugarica i broj salveta po drugarici su činioci broja $91$, oba veća od $1$.'),
-     K('$91 = 7 · 13$ – i $7$ i $13$ su prosti. Dakle: $7$ drugarica po $13$ salveta, ili $13$ drugarica po $7$.')]);
+  Z(1, 'Snežana je $91$ salvetu podelila drugaricama, svakoj jednako, više od $10$ salveta, a drugarica je bilo više od jedne. Koliko salveta je dobila svaka?',
+    ['$13$', '$7$', '$91$', '$26$'],
+    [K('Broj drugarica i broj salveta po drugarici su činioci broja $91$, a oba su veća od $1$.'),
+     K('$91 = 7 · 13$. Ako su salvete po drugarici više od $10$, to je $13$ salveta (a drugarica ima $7$). Druga mogućnost, $13$ drugarica po $7$ salveta, otpada.')]);
 
   Z(2, 'Svi prosti činioci nekog broja su $2$, $5$, $7$, $11$ i $13$. Koji je najmanji takav broj?',
     ['$10 010$', '$1 001$', '$770$', '$2 002$'],
@@ -276,11 +276,11 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, nzd, nzs, skok, skokovi }) =
     [K('$NZS(27, 6) = 54$, a zajednički sadržaoci su $54, 108, …$'),
      K('Dvocifren je samo $54$.')]);
 
-  Z(3, 'Koji je najmanji prirodan broj koji pri deljenju sa $16$ i sa $24$ daje ostatak $3$?',
-    ['$51$', '$48$', '$387$', '$27$'],
-    [K('Broj umanjen za $3$ je deljiv i sa $16$ i sa $24$ – sadržalac je $NZS(16, 24)$.'),
-     K('$NZS(16, 24) = 48$, pa je traženi broj $48 + 3 = 51$.'),
-     K('Provera: $51 = 16 · 3 + 3 = 24 · 2 + 3$ ✓')]);
+  Z(3, 'Koji je najmanji trocifreni prirodan broj koji pri deljenju sa $16$ i sa $24$ daje ostatak $3$?',
+    ['$147$', '$51$', '$99$', '$387$'],
+    [K('Broj umanjen za $3$ je deljiv i sa $16$ i sa $24$, pa je sadržalac $NZS(16, 24) = 48$.'),
+     K('Brojevi $3$, $51$ i $99$ nisu trocifreni, pa je traženi broj $48 · 3 + 3 = 147$.'),
+     K('Provera: $147 = 16 · 9 + 3 = 24 · 6 + 3$ ✓')]);
 
   Z(3, 'Prednji točak kolica ima obim $80 cm$, a zadnji $200 cm$. Koliki je najkraći put posle kog oba točka naprave ceo broj obrtaja?',
     ['$4 m$', '$16 m$', '$2 m$', '$40 cm$'],

@@ -445,7 +445,7 @@
       "odgovori": [
         "$&'static str$",
         "$String$",
-        "$&String$",
+        "$&'static String$",
         "$[char; 5]$"
       ],
       "zanimljivost": "The bytes of the literal are stored directly in the program's binary, so the reference stays valid for the whole run.",
@@ -478,7 +478,7 @@
         "vrsta": "kod",
         "tekst": "let mut s = String::new();\nlet r1 = &s;\nprintln!(\"{r1}\");\nlet r2 = &mut s;"
       },
-      "zanimljivost": "Since the 2018 edition, Non-Lexical Lifetimes end a borrow at its last use, not at the end of the block.",
+      "zanimljivost": "Non-Lexical Lifetimes (NLL) end a borrow at its last use, not at the end of the block – that is why this compiles.",
       "rec": "dozvola"
     },
     {
@@ -549,7 +549,7 @@
         "No – $s$ was moved into $t$",
         "Yes – it prints $5 x$"
       ],
-      "zanimljivost": "$i32$ implements $Copy$, so $let b = a;$ copies the bits and $a$ stays usable. $String$ owns heap memory and isn't $Copy$ – without $.clone()$ the second line would move it.",
+      "zanimljivost": "$i32$ implements $Copy$, so $let b = a;$ copies the bits and $a$ stays usable. $String$ owns heap memory and is not $Copy$ – with $let t = s;$ instead of $.clone()$, $s$ would be moved and the last line would not compile.",
       "rec": "kopija",
       "mediji": {
         "vrsta": "kod",
@@ -615,14 +615,14 @@
     {
       "lekcija": 3,
       "tezina": 1,
-      "pitanje": "Which derive lets you print a struct with $\\{:?\\}$?",
+      "pitanje": "Which derive lets you print a struct with ${:?}$?",
       "odgovori": [
         "$Debug$",
         "$Display$",
         "$Clone$",
         "$Print$"
       ],
-      "zanimljivost": "$\\{:#?\\}$ pretty-prints, and $dbg!(expr)$ prints file, line and value to stderr – and returns ownership of the value.",
+      "zanimljivost": "${:#?}$ pretty-prints, and $dbg!(expr)$ prints file, line and value to stderr – and returns ownership of the value.",
       "rec": "ispis"
     },
     {
@@ -920,7 +920,7 @@
           "Ignore one value"
         ]
       ],
-      "zanimljivost": "Ranges in patterns work only for numbers and $char$, because the compiler must check if the range is empty.",
+      "zanimljivost": "The $..$ may appear only once in a tuple pattern: $(first, .., last)$ works, but $(.., x, ..)$ is rejected because the compiler cannot tell where $x$ is.",
       "rec": "poklapanje"
     },
     {
@@ -1002,9 +1002,9 @@
       "pitanje": "If a struct is $pub$, what about its fields?",
       "odgovori": [
         "They stay private unless marked $pub$",
-        "They all become public",
-        "They become read-only",
-        "They become $pub(crate)$"
+        "They all become public automatically",
+        "They become read-only for other modules",
+        "They become $pub(crate)$ by default"
       ],
       "zanimljivost": "Enums are the opposite: if the enum is $pub$, all its variants are public too.",
       "rec": "privatnost"
@@ -1045,7 +1045,7 @@
         "Listing the crate's features",
         "Storing registry passwords"
       ],
-      "zanimljivost": "Binaries should commit it to version control so everyone builds the same thing. Cargo now recommends committing it for libraries too.",
+      "zanimljivost": "Commit it for applications, so everyone builds the same versions. A library's $Cargo.lock$ is ignored by the projects that depend on it, which resolve their own.",
       "rec": "zapis"
     },
     {
@@ -1248,8 +1248,8 @@
       "pitanje": "Which hash function does $HashMap$ use by default?",
       "odgovori": [
         "SipHash",
-        "FNV",
-        "MD5",
+        "FNV-1a",
+        "MurmurHash",
         "CRC32"
       ],
       "zanimljivost": "SipHash is not the fastest, but resists HashDoS attacks. You can swap in another hasher with the $BuildHasher$ trait.",
@@ -1280,7 +1280,7 @@
         "$BTreeSet$"
       ],
       "objasnjenje": "$ArrayList$ is Java's growable array; in Rust that role is played by $Vec$.",
-      "zanimljivost": "$std::collections$ docs advise: “use $Vec$ or $HashMap$” for almost everything.",
+      "zanimljivost": "$Vec$ is the growable array that plays the role of Java's $ArrayList$ and C++'s $std::vector$.",
       "rec": "zbirka"
     },
     {
@@ -1319,24 +1319,24 @@
         "18",
         "3"
       ],
-      "zanimljivost": "The Book's example: 18 bytes, 6 Unicode scalar values, but 4 letters (grapheme clusters) as a reader would count them.",
+      "zanimljivost": "The word has 6 $char$ values and 18 bytes, but only 3 grapheme clusters – न, म and स्ते – which is how a reader sees the letters.",
       "rec": "slovo"
     },
     {
       "lekcija": 6,
       "tezina": 1,
-      "pitanje": "Why doesn't this compile?",
+      "pitanje": "What does this print?",
       "odgovori": [
-        "$push$ needs $&mut v$ while $first$ lives",
-        "$v[0]$ returns a copy",
-        "Vectors can't grow",
-        "$vec!$ makes it immutable"
+        "[1, 3]",
+        "[2]",
+        "[1, 2, 3]",
+        "[]"
       ],
-      "zanimljivost": "$push$ may reallocate the buffer and move every element, which would leave $first$ pointing at freed memory. In C++ this is the classic „iterator invalidation“ bug; Rust rejects it at compile time.",
-      "rec": "vektor",
+      "zanimljivost": "retain keeps the elements for which the closure returns true and works in place, without allocating a new vector.",
+      "rec": "filter",
       "mediji": {
         "vrsta": "kod",
-        "tekst": "let mut v = vec![1, 2, 3];\nlet first = &v[0];\nv.push(4);\nprintln!(\"{first}\");"
+        "tekst": "let mut v = vec![1, 2, 3];\nv.retain(|x| x % 2 == 1);\nprintln!(\"{:?}\", v);"
       }
     },
     {
@@ -1344,16 +1344,16 @@
       "tezina": 2,
       "pitanje": "What does this print?",
       "odgovori": [
-        "12",
-        "6",
-        "7",
-        "24"
+        "olléh",
+        "olleh",
+        "héllo",
+        "It panics at run time"
       ],
-      "zanimljivost": "$len$ counts bytes, not letters. Each Cyrillic letter takes 2 bytes in UTF-8, so 6 letters are 12 bytes. $s.chars().count()$ gives 6. That's also why $s[0]$ doesn't compile.",
-      "rec": "bajt",
+      "zanimljivost": "Reversing by chars() keeps the two-byte é intact. Reversing the raw bytes would split it and leave invalid UTF-8.",
+      "rec": "obrtanje",
       "mediji": {
         "vrsta": "kod",
-        "tekst": "let s = String::from(\"здраво\");\nprintln!(\"{}\", s.len());"
+        "tekst": "let s: String = \"héllo\".chars().rev().collect();\nprintln!(\"{s}\");"
       }
     },
     {
@@ -1479,9 +1479,9 @@
       "pitanje": "What does $\"42\".parse::<i32>()$ return?",
       "odgovori": [
         "$Result<i32, ParseIntError>$",
-        "$i32$",
-        "$Option<i32>$",
-        "$Result<i32, String>$"
+        "$Result<i32, String>$",
+        "$Result<String, i32>$",
+        "$Result<i32, ParseFloatError>$"
       ],
       "zanimljivost": "$parse$ is generic over any type implementing $FromStr$, so you must say which type you want.",
       "rec": "parsiranje"
@@ -1528,19 +1528,15 @@
     {
       "lekcija": 7,
       "tezina": 2,
-      "pitanje": "What do $parse(\" 21 \")$ and $parse(\"x\")$ return?",
+      "pitanje": "What do $\" 21 \".trim().parse::<i32>()$ and $\"x\".parse::<i32>()$ return?",
       "odgovori": [
-        "$Ok(42)$ and an $Err$",
-        "$Ok(42)$ and a panic",
+        "$Ok(21)$ and an $Err$",
+        "$Ok(21)$ and a panic",
         "$Ok(21)$ and $Ok(0)$",
         "Two $Err$ values"
       ],
-      "zanimljivost": "$?$ returns the error early from the function instead of panicking. It also calls $From::from$ on the error, so one function can bubble up several error types into one.",
-      "rec": "greška",
-      "mediji": {
-        "vrsta": "kod",
-        "tekst": "fn parse(s: &str) -> Result<i32, ParseIntError> {\n    let n: i32 = s.trim().parse()?;\n    Ok(n * 2)\n}"
-      }
+      "zanimljivost": "$parse$ accepts no whitespace around the number, so $trim()$ comes first. Without it, $\" 21 \"$ would be an $Err$ and $?$ would pass that error up the call chain.",
+      "rec": "greška"
     },
     {
       "lekcija": 8,
@@ -1679,7 +1675,7 @@
         ],
         [
           "$Hash$",
-          "Use as a $HashMap$ key"
+          "Computes a hash of the value"
         ],
         [
           "$Default$",
@@ -1899,19 +1895,15 @@
     {
       "lekcija": 9,
       "tezina": 1,
-      "pitanje": "Why doesn't this compile?",
+      "pitanje": "In fn first<'a>(x: &'a str, _y: &str) -> &'a str, why may the caller drop the second argument right after the call?",
       "odgovori": [
-        "$x$ doesn't live long enough",
-        "$r$ has no type",
-        "$r$ must be $mut$",
-        "$5$ isn't a reference"
+        "The result borrows only from x",
+        "_y is never read, so it isn't checked",
+        "_y must be 'static for the result",
+        "Lifetimes of arguments are never checked"
       ],
-      "zanimljivost": "The borrow checker compares scopes: $x$ dies at the closing brace while $r$ is used after it. A reference must never outlive what it points to – that's what lifetimes describe.",
-      "rec": "trajanje",
-      "mediji": {
-        "vrsta": "kod",
-        "tekst": "let r;\n{\n    let x = 5;\n    r = &x;\n}\nprintln!(\"{r}\");"
-      }
+      "zanimljivost": "With two reference inputs the compiler cannot pick the output lifetime by itself (elision needs exactly one), so writing 'a on x alone says the result depends only on x.",
+      "rec": "povratak"
     },
     {
       "lekcija": 10,
@@ -1936,7 +1928,7 @@
         "It never panics",
         "It also compares the types of both values"
       ],
-      "zanimljivost": "Both values must implement $PartialEq$ and $Debug$. In Rust the order of “left” and “right” doesn't matter.",
+      "zanimljivost": "Both values must implement $PartialEq$ and $Debug$ – the $Debug$ part is what lets the failure message print them.",
       "rec": "jednakost"
     },
     {
@@ -2059,7 +2051,7 @@
     {
       "lekcija": 10,
       "tezina": 2,
-      "pitanje": "How do you run this test?",
+      "pitanje": "How do you run this ignored test?",
       "odgovori": [
         "$cargo test -- --ignored$",
         "$cargo test --all$",
@@ -2187,7 +2179,7 @@
         "Diamond",
         "Fat arrow"
       ],
-      "zanimljivost": "The name was coined by Anna Harren in 2015. The Rust parser's test suite has a test called “bastion of the turbofish”.",
+      "zanimljivost": "Without the $::$ the parser reads $collect < Vec<_>>()$ as comparisons, which is why the turbofish is needed inside expressions.",
       "rec": "riba"
     },
     {
@@ -2381,9 +2373,9 @@
       "pitanje": "How do you drop a value before the end of its scope?",
       "odgovori": [
         "$std::mem::drop(x)$",
-        "$x.drop()$",
-        "$delete x$",
-        "$x = null$"
+        "$Drop::drop(&mut x)$",
+        "$std::mem::forget(x)$",
+        "$x.destroy()$"
       ],
       "zanimljivost": "Calling the $Drop::drop$ method directly is forbidden, because Rust would call it again at the end of scope (a double free).",
       "rec": "brisanje"
@@ -2398,7 +2390,7 @@
         "A value that can't change",
         "A non-owning reference"
       ],
-      "zanimljivost": "In the Book's mock-object example this lets tests record messages through a shared reference.",
+      "zanimljivost": "$Rc$ is single-threaded. For shared mutable state across threads, the usual pattern is $Arc<Mutex<T>>$.",
       "rec": "zajedništvo"
     },
     {
@@ -2627,7 +2619,7 @@
           "Waiting for a thread"
         ]
       ],
-      "zanimljivost": "Go's motto, quoted in the Book: “Do not communicate by sharing memory; share memory by communicating.”",
+      "zanimljivost": "Go's motto, quoted in the Book: “Do not communicate by sharing memory; instead, share memory by communicating.”",
       "rec": "razmena"
     },
     {
@@ -2741,12 +2733,12 @@
     {
       "lekcija": 14,
       "tezina": 2,
-      "pitanje": "How does the Book distinguish concurrency from parallelism?",
+      "pitanje": "What is the difference between concurrency and parallelism?",
       "odgovori": [
         "Switching tasks vs. running at once",
-        "Threads vs. processes",
-        "Async vs. sync code",
-        "One CPU core vs. a GPU"
+        "Threads vs. separate processes",
+        "Async code vs. synchronous code",
+        "One CPU core vs. a whole GPU"
       ],
       "zanimljivost": "One person switching between tasks is concurrency; a team working on tasks simultaneously is parallelism.",
       "rec": "paralelizam"
@@ -2774,7 +2766,7 @@
         "A thread pool",
         "A byte buffer"
       ],
-      "zanimljivost": "The $Stream$ trait isn't in the standard library yet; it lives in crates like $futures$ and $tokio-stream$.",
+      "zanimljivost": "With the $futures$ crate, $while let Some(x) = s.next().await$ loops over a stream.",
       "rec": "tok"
     },
     {
@@ -2878,9 +2870,9 @@
       "pitanje": "How does the Book's $AveragedCollection$ show encapsulation?",
       "odgovori": [
         "Private fields keep the average in sync",
-        "It inherits from $Vec$",
-        "It uses a global variable",
-        "All fields are public"
+        "It inherits its behavior from $Vec$",
+        "It keeps its data in a global variable",
+        "Every field is public for easy access"
       ],
       "zanimljivost": "Since $list$ and $average$ are private, users can't change one without the other.",
       "rec": "kapsula"
@@ -2955,7 +2947,7 @@
     {
       "lekcija": 15,
       "tezina": 3,
-      "pitanje": "Why can't you write $Box<dyn Dup>$?",
+      "pitanje": "Why can't you write $Box<dyn Dup>$ when $trait Dup$ has the method $fn dup(&self) -> Self$?",
       "odgovori": [
         "$dup$ returns an unknown $Self$",
         "Traits can't take $&self$",
@@ -2963,11 +2955,7 @@
         "$Dup$ has no default method"
       ],
       "zanimljivost": "A trait object hides the concrete type, so a method returning $Self$ can't be called through it. Adding $where Self: Sized$ to $dup$ excludes just that method and makes the trait „dyn compatible“ again.",
-      "rec": "objekat",
-      "mediji": {
-        "vrsta": "kod",
-        "tekst": "trait Dup {\n    fn dup(&self) -> Self;\n}"
-      }
+      "rec": "objekat"
     },
     {
       "vrsta": "uljez",
@@ -2980,7 +2968,7 @@
         "Calling an $unsafe$ function",
         "Mutating a $static mut$"
       ],
-      "objasnjenje": "Inside $unsafe$ references are still borrow-checked; you just get five extra abilities (also: $unsafe$ traits and $union$ fields).",
+      "objasnjenje": "Inside $unsafe$ references are still borrow-checked. The five extra abilities are: dereferencing raw pointers, calling $unsafe$ functions, using $static mut$, implementing $unsafe$ traits and reading $union$ fields.",
       "zanimljivost": "Keeping $unsafe$ blocks small makes it much easier to find a memory bug: you know where to look.",
       "rec": "moć"
     },
@@ -2994,7 +2982,7 @@
         "Comparing it",
         "Printing its address"
       ],
-      "zanimljivost": "$&raw const x$ or $&x as *const i32$ is safe – a pointer that is never read can't hurt anyone.",
+      "zanimljivost": "Creating a raw pointer is safe; only dereferencing it needs $unsafe$. $&raw const x$ (stable since Rust 1.82) makes one without going through a reference.",
       "rec": "sirov"
     },
     {
@@ -3163,9 +3151,9 @@
       "pitanje": "Where do the bytes of a string literal live?",
       "odgovori": [
         "In static memory, in the binary",
-        "On the heap",
-        "On the stack",
-        "In CPU registers"
+        "On the heap, allocated at run time",
+        "On the stack, in the current frame",
+        "In CPU registers, for fast access"
       ],
       "zanimljivost": "Static memory is loaded together with the program and lives for its whole run – hence the $'static$ lifetime of literals.",
       "rec": "memorija"
@@ -3206,7 +3194,7 @@
         "$Box<T>$",
         "$Vec<T>$"
       ],
-      "zanimljivost": "A function that accepts any $&'a str$ is more useful than one that requires $&'static str$ – the subtyping goes “the other way”.",
+      "zanimljivost": "A function that accepts any $&'a str$ can stand in for one that is only ever handed $&'static str$ – a function taking more is a subtype of one taking less.",
       "rec": "obrnuto"
     },
     {
@@ -3220,7 +3208,7 @@
         "With a $static mut$"
       ],
       "zanimljivost": "$Cell$, $RefCell$, $Mutex$ and the atomics are all built on top of $UnsafeCell$.",
-      "rec": "unutrašnjost"
+      "rec": "mutacija"
     },
     {
       "lekcija": 17,
@@ -3327,9 +3315,9 @@
       "pitanje": "Without $#[repr(C)]$, how big would the same $a: u8, b: u32, c: u8$ struct be?",
       "odgovori": [
         "8 bytes – fields get reordered",
-        "12 bytes, like C",
-        "6 bytes, no padding",
-        "It varies at run time"
+        "12 bytes, like C with its padding",
+        "6 bytes, no padding is needed",
+        "It varies from one run to another"
       ],
       "zanimljivost": "The default Rust layout makes no promises about field order, so the compiler can place $b$ first and pack $a$ and $c$ together.",
       "rec": "preuređenje"
@@ -3655,7 +3643,7 @@
       "rec": "interfejs",
       "mediji": {
         "vrsta": "kod",
-        "tekst": "fn shout(s: impl Into<String>) -> String {\n    let mut s = s.into();\n    s.push('!');\n    s\n}\n\nshout(\"hi\");\nshout(String::from(\"yo\"));"
+        "tekst": "fn shout(s: impl Into<String>) -> String {\n    let mut s = s.into();\n    s.push('!');\n    s\n}"
       }
     },
     {
@@ -3824,7 +3812,7 @@
         "$?$ ignores the error type",
         "$main$ handles them later"
       ],
-      "zanimljivost": "There's a blanket $impl From<E: Error> for Box<dyn Error>$. Libraries usually prefer their own error enum (often via $thiserror$), while applications like $anyhow::Error$.",
+      "zanimljivost": "There is a blanket $impl From<E: Error> for Box<dyn Error>$. Libraries usually prefer their own error enum (often via $thiserror$), while applications often use $anyhow::Error$, which adds context to any error.",
       "rec": "konverzija",
       "mediji": {
         "vrsta": "kod",
@@ -3972,7 +3960,7 @@
         "They slow down linking"
       ],
       "zanimljivost": "Because of feature unification you can't control what others in the dependency graph turn on.",
-      "rec": "isključivost"
+      "rec": "isključenje"
     },
     {
       "lekcija": 21,
@@ -4137,19 +4125,15 @@
     {
       "lekcija": 22,
       "tezina": 1,
-      "pitanje": "What runs the code in this comment?",
+      "pitanje": "How do you run only the doc tests of a crate?",
       "odgovori": [
-        "$cargo test$, as a doctest",
-        "Nothing – it's just a comment",
-        "$cargo doc$ only",
-        "$rustc$ on every build"
+        "$cargo test --doc$",
+        "$cargo doc --test$",
+        "$cargo test --docs$",
+        "$cargo test --examples$"
       ],
-      "zanimljivost": "Doc examples are compiled and run as tests, so documentation can't silently go stale. Lines starting with $# $ are hidden in the docs but still run.",
-      "rec": "primer",
-      "mediji": {
-        "vrsta": "kod",
-        "tekst": "/// ```\n/// assert_eq!(mylib::double(2), 4);\n/// ```\npub fn double(x: i32) -> i32 {\n    x * 2\n}"
-      }
+      "zanimljivost": "Each doc example is compiled and run as its own small program, so one broken example does not hide the others.",
+      "rec": "dokument"
     },
     {
       "lekcija": 23,
@@ -4477,7 +4461,7 @@
           "A promise not to move"
         ]
       ],
-      "zanimljivost": "With these four pieces you could write a tiny executor yourself – a classic exercise from the book.",
+      "zanimljivost": "With these four pieces you can write a tiny executor yourself; it is a common exercise for learning how async runtimes work.",
       "rec": "signal"
     },
     {
@@ -4554,15 +4538,15 @@
     {
       "lekcija": 25,
       "tezina": 3,
-      "pitanje": "Why is creating a $bool$ from byte 2 immediate UB, while invalid UTF-8 in a $str$ isn't instantly UB?",
+      "pitanje": "Why is $let b: bool = unsafe { mem::transmute(2u8) };$ already undefined behavior, even if $b$ is never read?",
       "odgovori": [
-        "Validity vs. safety invariants",
-        "$bool$ lives on the stack",
-        "$str$ contents are checked at run time",
-        "UTF-8 errors are ignored"
+        "A $bool$ must be 0 or 1, so the value itself is invalid",
+        "Only reading $b$ is undefined behavior",
+        "$transmute$ checks the value at run time",
+        "A $bool$ is stored as a 32-bit integer"
       ],
-      "zanimljivost": "The compiler relies on validity invariants (it may use the spare bit patterns of $bool$), while UTF-8 is a library promise that breaks only when something relies on it.",
-      "rec": "valjanost"
+      "zanimljivost": "The compiler relies on that rule: $Option<bool>$ uses the spare byte values for its $None$, so it stays one byte.",
+      "rec": "vrednost"
     },
     {
       "lekcija": 25,
@@ -4890,7 +4874,7 @@
         "Forbidden in Rust",
         "Only for $no_std$"
       ],
-      "zanimljivost": "The compiler can't check what foreign code does. Since 2024 you can write $unsafe extern$ and mark checked functions $safe$.",
+      "zanimljivost": "The compiler cannot check what foreign code does. Since Rust 1.82 you can write $unsafe extern$ and mark checked functions $safe$.",
       "rec": "spoljašnje"
     },
     {
@@ -4951,9 +4935,9 @@
       "pitanje": "How does a build script tell Cargo to link a native library?",
       "odgovori": [
         "Printing $cargo:rustc-link-lib=…$",
-        "Editing $Cargo.lock$",
-        "Setting $PATH$",
-        "Calling $rustc$ directly"
+        "Editing $Cargo.lock$ by hand",
+        "Setting $PATH$ before the build",
+        "Calling $rustc$ directly from build.rs"
       ],
       "zanimljivost": "$pkg-config$ and $cc$ crates help find and build C libraries from $build.rs$.",
       "rec": "povezivač"
@@ -5147,7 +5131,7 @@
           "Manages toolchains"
         ]
       ],
-      "zanimljivost": "All four ship as rustup components: $rustup component add clippy$.",
+      "zanimljivost": "Clippy, rustfmt and Miri are rustup components: $rustup component add clippy$.",
       "rec": "alat"
     },
     {
@@ -5186,7 +5170,7 @@
         "1.0, 2.0, 3.0",
         "2016, 2019, 2022"
       ],
-      "zanimljivost": "Crates of different editions work together in the same build – editions only change how one crate is parsed.",
+      "zanimljivost": "Crates of different editions link together in the same build; an edition changes how one crate is parsed and which names its prelude provides.",
       "rec": "edicija"
     },
     {
@@ -5251,7 +5235,7 @@
         "A Rust game engine",
         "A code coverage tool"
       ],
-      "zanimljivost": "Before a release, the Rust team can build and test essentially every crate on crates.io with the old and new compiler.",
+      "zanimljivost": "Before a release, the Rust team builds and tests a large set of crates from crates.io with the old and new compilers to find regressions.",
       "rec": "krater"
     },
     {
@@ -5260,9 +5244,9 @@
       "pitanje": "Which versions may Cargo choose for this dependency?",
       "odgovori": [
         "From 1.0.150 up to (not incl.) 2.0",
-        "Exactly 1.0.150",
-        "Any version at all",
-        "Only 1.0.x patches"
+        "Only the exact release 1.0.150",
+        "Any 1.0.x patch, never 1.1 or later",
+        "Anything from 1.0.150 up to 3.0"
       ],
       "zanimljivost": "A bare version is a caret requirement ($^1.0.150$): anything semver-compatible. Use $=1.0.150$ to pin it exactly – $Cargo.lock$ already pins it for applications.",
       "rec": "verzija",

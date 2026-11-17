@@ -77,7 +77,7 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, S3, kocke, pr }) => {
     'Pošto je ${1|3}$ = 0,333…, dvostruko više je ${2|3}$ = 0,666… Zapis 0,6 = ${6|10}$ je kraći broj – staje posle jedne decimale.',
     'decimala');
 
-  Q(2, 'Kakav decimalni zapis ima razlomak ${1|7}$?', ['Beskonačan periodičan', 'Konačan', 'Beskonačan neperiodičan', 'Nema decimalni zapis'],
+  Q(2, 'Kakav decimalni zapis ima razlomak ${1|7}$?', ['Beskonačan periodičan', 'Konačan', 'Beskonačan neperiodičan', 'Konačan, sa šest decimala'],
     '${1|7}$ = 0,142857 142857… – grupa od 6 cifara se ponavlja. Svaki razlomak ima ili konačan ili periodičan zapis; beskonačan NEPERIODIČAN zapis imaju samo iracionalni brojevi.',
     'period');
 
@@ -99,8 +99,8 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, S3, kocke, pr }) => {
     'Stepeni iste osnove se množe tako što se izložioci SABIRAJU: tri dvojke puta četiri dvojke = sedam dvojki = 128.',
     'stepen');
 
-  Q(3, 'Koji broj je veći: $2^{100}$ ili $10^{30}$?', ['$2^{100}$', '$10^{30}$', 'Jednaki su', 'Ne može se odrediti'],
-    'Trik: $2^{10} = 1.024$, što je malo više od $10^{3}$. Zato je $2^{100} = (2^{10})^{10}$ malo više od $(10^{3})^{10} = 10^{30}$. Računarski „kilo“ od 1.024 potiče baš odavde.',
+  Q(3, 'Koliko je otprilike $2^{100}$?', ['$10^{30}$', '$10^{20}$', '$10^{40}$', '$10^{25}$'],
+    'Trik: $2^{10} = 1.024$, što je malo više od $10^{3}$. Zato je $2^{100} = (2^{10})^{10}$ malo više od $(10^{3})^{10} = 10^{30}$. Računarski „kilo“ od 1.024 zato je tako blizu hiljade.',
     'stepen');
 
   Q(2, 'Sunce je od Zemlje udaljeno oko 150.000.000 km. Kako se to piše u naučnom zapisu?', ['$1,5 · 10^{8}$ km', '$1,5 · 10^{7}$ km', '$1,5 · 10^{9}$ km', '$15 · 10^{9}$ km'],
@@ -137,7 +137,7 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, S3, kocke, pr }) => {
 
   U(2, 'Koji broj NIJE kvadrat celog broja?', ['200', '144', '196', '225'],
     '$144 = 12^{2}$, $196 = 14^{2}$, $225 = 15^{2}$, a 200 je između $14^{2}$ i $15^{2}$.',
-    'Kvadrat celog broja nikad se ne završava cifrom 2, 3, 7 ili 8, a ako se završava nulama – mora ih biti paran broj. Broj 200 ima dve nule, ali 2 nije kvadrat.',
+    'Kvadrat celog broja nikad se ne završava cifrom 2, 3, 7 ili 8, a ako se završava nulama – mora ih biti paran broj. Broj 200 je 2 · 10², a 2 nije kvadrat, pa ni 200 nije.',
     'kvadrat');
 
   Q(2, 'Koliko je $(−3)^{2}$, a koliko $−3^{2}$?', ['9 i −9', '9 i 9', '−9 i −9', '−9 i 9'],

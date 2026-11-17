@@ -76,7 +76,7 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, kocke, pr }) => {
     'površina', { medijiOdgovora: mreza(krst, ['9', '9', '9', '9', '9', '9'], 0) });
 
   Q(2, 'Koliko kockica šećera ivice 1 cm staje u kutiju oblika kocke ivice 2 cm?', ['8', '2', '4', '6'],
-    'Nova kocka ima 2 · 2 · 2 = 8 starih kocaka. Zato su velike životinje „teške“: slon duplo viši od nekog drugog bio bi oko 8 puta teži.',
+    'Nova kocka ima 2 · 2 · 2 = 8 starih kocaka. Zato su velike životinje mnogo teže: kad bi sve dužine bile dva puta veće, masa bi porasla oko 8 puta.',
     'zapremina', { medijiOdgovora: kocke(2, 2, 2, { boja: 2 }) });
 
   proveri(Math.abs(Math.PI * 1 * 1 * 1 - 3.14) < 0.01, 'valjak 1 dm');
@@ -124,7 +124,7 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, kocke, pr }) => {
   }
 
   S(2, 'Spoji lik koji se okreće sa telom koje nastaje', [['Pravougaonik oko stranice', 'Valjak'], ['Pravougli trougao oko katete', 'Kupa'], ['Polukrug oko prečnika', 'Lopta'], ['Pravougli trapez oko kraka uz prave uglove', 'Zarubljena kupa']],
-    'Tela koja nastaju okretanjem zovu se obrtna tela – lončar na grnčarskom kolu pravi baš takva tela. Kupa nastaje i okretanjem jednakokrakog trougla oko visine.',
+    'Tela koja nastaju okretanjem zovu se obrtna tela – lončar na grnčarskom kolu pravi baš takva tela. Dvostruka kupa nastaje okretanjem jednakokrakog trougla oko visine.',
     'obrtno');
 
   Q(2, 'Koliko temena ima ovo telo?', ['7', '6', '12', '8'],

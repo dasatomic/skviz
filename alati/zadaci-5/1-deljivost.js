@@ -1,5 +1,5 @@
 // Tema 1: Prirodni brojevi i deljivost – prvi deo (lekcije 1.1–1.8)
-module.exports = ({ L, Z, K, G, O, bez, r, proveri, traka, skok, skokovi, krug, venn, upisi, sat, tackice, stubici, naKrugu, sto }) => {
+module.exports = ({ L, Z, K, G, R, O, bez, r, proveri, traka, skok, skokovi, krug, venn, upisi, sat, tackice, stubici, naKrugu, sto }) => {
   // pravougaonik (x, y, širina, visina) kao popunjen lik
   const pr = (x, y, w, h, x2 = {}) => ({ lin: [[x, y], [x + w, y], [x + w, y + h], [x, y + h]].map((p) => p.map(r)), zatv: 1, ...x2 });
   // mreža kvadratića a×b (množenje kao pravougaonik)
@@ -94,7 +94,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, traka, skok, skokovi, krug, 
   // ════════════════ 1.2 Deljenje sa ostatkom ════════════════
   L('Deljenje sa ostatkom');
 
-  Z(1, '$23$ kolača treba rasporediti na tacne po $5$. Koliko tacni će biti puno i koliko kolača ostaje?',
+  Z(1, '$23$ kolača treba rasporediti na tacne po $5$. Koliko će se punih tacni dobiti i koliko kolača ostaje?',
     ['$4$ tacne, ostaje $3$', '$5$ tacni, ostaje $2$', '$4$ tacne, ostaje $2$', '$3$ tacne, ostaje $8$'],
     [K('Ređamo kolače u redove po $5$: dobijamo $4$ puna reda.'),
      K('Ostaju $3$ kolača – manje od $5$, pa ne čine novi red.', ['ost']),
@@ -180,13 +180,13 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, traka, skok, skokovi, krug, 
      K('$72 : 7 = 10$ (ostatak $2$), $72 : 10$ ima ostatak $2$, $72 : 11$ ima ostatak $6$.'),
      K('Delioci iz liste: $6, 8, 9, 12$.')]);
 
-  Z(1, 'Koji je treći po veličini sadržalac broja $17$?',
+  Z(1, 'Koji je treći najmanji pozitivan sadržalac broja $17$?',
     ['$51$', '$34$', '$68$', '$17$'],
     [K('Sadržaoci su $17 · 1, 17 · 2, 17 · 3, …$ – skokovi po $17$ od nule.'),
      K('$17, 34, 51$: treći je $51$.', ['s'])],
     G(O, [{ osa: [0, 70], podela: 17, svaki: 1 }, ...skokovi(0, 17, 3, { h: 6, id: 's', k: 1 })], { ...bez, velicina: 300 }));
 
-  Z(2, 'Površina pravougaonika je $18 cm²$, a dužine stranica (u $cm$) su prirodni brojevi. Koliko ima različitih takvih pravougaonika?',
+  Z(2, 'Površina pravougaonika je $18 cm²$, a dužine stranica (u $cm$) su prirodni brojevi. Koliko ima različitih takvih pravougaonika (pravougaonik okrenut za $90°$ ne broji se kao novi)?',
     ['$3$', '$6$', '$2$', '$4$'],
     [K('Stranice su par delilaca broja $18$ čiji je proizvod $18$.'),
      K('$1 · 18$, $2 · 9$, $3 · 6$ – tri pravougaonika ($6 × 3$ je isti kao $3 × 6$, samo okrenut).', [], G(O, [kvadratici(1, 18, {}, 0, 0, 0.4), kvadratici(2, 9, { b: 2 }, 0, -1.4, 0.4), kvadratici(3, 6, { b: 5 }, 4.4, -1.8, 0.4)], { ...bez, velicina: 260 })),
@@ -200,7 +200,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, traka, skok, skokovi, krug, 
     G(O, [{ osa: [0, 36], podela: 1, svaki: 6 }, ...[[1, 36], [2, 18], [3, 12], [4, 9]].map(([a, b], i) => skok(a, b, { h: 3 + i * 2.5, boja: i % 5, k: 1, id: 'p', kasni: 0.3 + i * 0.4 })), { tx: '6', at: [6, 1.2], b: 3, k: 1 }], { ...bez, velicina: 320 }));
 
   Z(2, 'Da li je broj $34 · 51$ deljiv sa $17$?',
-    ['jeste, jer je $34$ deljiv sa $17$', 'nije, jer $51$ nije deljiv sa $17$', 'jeste, ali samo zato što je $51$ neparan', 'ne može se znati bez računanja proizvoda'],
+    ['jeste, jer je $34$ deljiv sa $17$', 'nije, jer $51$ nije deljiv sa $17$', 'jeste, ali samo zato što je $51$ neparan', 'nije, jer je proizvod paran'],
     [K('Ako je jedan činilac deljiv nekim brojem, deljiv je i ceo proizvod.'),
      K('$34 = 2 · 17$, pa je $34 · 51 = 17 · (2 · 51) = 17 · 102$. (I $51 = 3 · 17$ je deljiv sa $17$.)')]);
 
@@ -210,7 +210,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, traka, skok, skokovi, krug, 
      K('Najmanji takav delilac broja $48$ je $2$, pa je najveći $48 : 2 = 24$.')]);
 
   Z(3, 'Važi $a + b + c = d$. Brojevi $a$, $c$ i $d$ su deljivi sa $7$. Šta važi za $b$?',
-    ['$b$ je sigurno deljiv sa $7$', '$b$ sigurno nije deljiv sa $7$', '$b$ je deljiv sa $7$ samo ako je paran', 'ne može se odrediti'],
+    ['$b$ je sigurno deljiv sa $7$', '$b$ sigurno nije deljiv sa $7$', '$b$ je deljiv sa $7$ samo ako je paran', '$b$ je sigurno deljiv sa $14$'],
     [K('$b = d − a − c$.'),
      K('Razlika brojeva deljivih sa $7$ je deljiva sa $7$ (na brojevnoj pravoj: skokovi po $7$ ostaju na sadržaocima broja $7$).'),
      K('Dakle $b$ je sigurno deljiv sa $7$.')]);
@@ -294,7 +294,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, traka, skok, skokovi, krug, 
     ['$425$ i $975$', 'samo $425$', '$425$, $730$ i $975$', '$975$ i $880$'],
     [K('Broj je deljiv sa $25$ ako mu je dvocifreni završetak $00$, $25$, $50$ ili $75$ (kao četvrtine stotine).'),
      K('$425$ ✓ ($25$), $730$ ✗, $975$ ✓ ($75$), $880$ ✗')],
-    G(O, [sto(25, { b: 1 }), { tx: '25', at: [1.5, 7.0], b: 1 }, { tx: '~od', at: [3, 7.0] }, { tx: '100', at: [4.5, 7.0] }], { ...bez, velicina: 180 }));
+    R(G(O, [sto(25, { b: 1 }), { tx: '25', at: [1.5, 7.0], b: 1 }, { tx: '~od', at: [3, 7.0] }, { tx: '100', at: [4.5, 7.0] }], { ...bez, velicina: 180 })));
 
   Z(1, 'Koju cifru treba upisati umesto * da bi broj $52 37*$ bio deljiv sa $25$?',
     ['$5$', '$0$', '$4$', '$2$'],
@@ -316,8 +316,8 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, traka, skok, skokovi, krug, 
   Z(2, 'Stranica kvadrata u centimetrima je prirodan broj. Koji od ovih brojeva može biti njegov obim?',
     ['$196 cm$', '$198 cm$', '$121 cm$', '$146 cm$'],
     [K('Obim kvadrata je $4a$ – mora biti deljiv sa $4$.'),
-     K('$96 : 4 = 24$ ✓; $98$, $21$ i $46$ nisu deljivi sa $4$.'),
-     K('$196 : 4 = 49$, pa je stranica $49 cm$.')],
+     K('$196 : 4 = 49$ ✓; $198$, $121$ i $146$ nisu deljivi sa $4$.'),
+     K('Stranica je $49 cm$.')],
     G({ A: [0, 0], B: [4, 0], C: [4, 4], D: [0, 4] }, [{ p: 'ABCD' }, { d: 'AB', o: 'a = ?' }, { lin: [[0, 0], [4, 0], [4, 4], [0, 4], [0, 0]], crtaj: 1, b: 1, trajanje: 2, ponovi: 1 }], { bezImena: ['A', 'B', 'C', 'D'], velicina: 160 }));
 
   Z(2, 'Koliko ima trocifrenih brojeva većih od $300$, a manjih od $500$, napisanih ciframa $2$, $4$ i $8$ (cifre se mogu ponavljati), koji su deljivi sa $4$?',
@@ -336,7 +336,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, traka, skok, skokovi, krug, 
     [K('Deljivih sa $4$: $200 : 4 = 50$. Deljivih sa $25$: $200 : 25 = 8$.'),
      K('Neki su brojani dvaput – deljivi i sa $4$ i sa $25$, tj. sa $100$: $100$ i $200$.', ['presek']),
      K('$50 + 8 − 2 = 56$.')],
-    (() => { const v = venn({ imena: ['4', '25'], presek: true, k: 2 }); return G(O, [v.e, { tx: '50', at: v.mesta.A, vel: 20 }, { tx: '8', at: v.mesta.B, vel: 20 }, { tx: '2', at: v.mesta.AB, vel: 20, k: 2 }], { ...bez, velicina: 240 }); })());
+    (() => { const v = venn({ imena: ['4', '25'], presek: true, k: 2 }); return R(G(O, [v.e, { tx: '50', at: v.mesta.A, vel: 20 }, { tx: '8', at: v.mesta.B, vel: 20 }, { tx: '2', at: v.mesta.AB, vel: 20, k: 2 }], { ...bez, velicina: 240 })); })());
   proveri([...Array(200)].map((_, i) => i + 1).filter((n) => n % 4 === 0 || n % 25 === 0).length === 56, '4 ili 25');
 
   Z(3, 'Koju najveću cifru treba upisati umesto * da broj $7*16$ bude deljiv sa $4$?',
@@ -353,7 +353,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, traka, skok, skokovi, krug, 
   L('Deljivost sa 3 i 9');
 
   Z(1, 'Koji od brojeva $123$, $124$, $125$, $126$, $127$, $128$ su deljivi sa $3$?',
-    ['$123$ i $126$', 'samo $126$', '$123$, $126$ i $129$', '$124$ i $127$'],
+    ['$123$ i $126$', 'samo $126$', '$123$, $125$ i $126$', '$124$ i $127$'],
     [K('Broj je deljiv sa $3$ ako mu je zbir cifara deljiv sa $3$.'),
      K('$1 + 2 + 3 = 6$ ✓, $1 + 2 + 6 = 9$ ✓, ostali daju $7, 8, 10, 11$ ✗.'),
      K('Među uzastopnim brojevima svaki treći je deljiv sa $3$.')],
@@ -394,7 +394,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, traka, skok, skokovi, krug, 
      K('Zbir cifara: $1 + 3 + 2 + 5 = 11$ ✗, $5 + 4 + 0 + 0 = 9$ ✓. Broj je $5 400$.')]);
 
   Z(3, 'Zašto broj $10^{n}$ (npr. $100$, $1 000$) uvek daje ostatak $1$ pri deljenju sa $9$?',
-    ['jer je $10^{n} − 1 = 99…9$ deljiv sa $9$', 'jer je $10$ deljiv sa $9$', 'jer je zbir cifara $0$', 'jer je $10^{n}$ paran'],
+    ['jer je $10^{n} − 1 = 99…9$ deljiv sa $9$', 'jer je $10^{n}$ deljivo sa $9$ bez ostatka', 'jer je zbir cifara broja $10^{n}$ jednak nuli', 'jer je $10^{n}$ paran, a parni brojevi daju ostatak $1$'],
     [K('$10 = 9 + 1$, $100 = 99 + 1$, $1 000 = 999 + 1$.'),
      K('Brojevi $9, 99, 999, …$ su deljivi sa $9$, pa svaka dekadna jedinica daje ostatak $1$.'),
      K('Zato je $3 · 100 + 4 · 10 + 5$ istog ostatka kao $3 + 4 + 5$ – odatle pravilo zbira cifara.')]);
@@ -442,7 +442,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, traka, skok, skokovi, krug, 
     ['$B ⊂ A$', '$A ⊂ B$', '$A = B$', 'nijedan nije podskup drugog'],
     [K('$A = \\{1, 2, …, 19\\}$, a $B = \\{14, 15, 16\\}$.'),
      K('Svi elementi skupa $B$ su manji od $20$, pa su u $A$: $B ⊂ A$.')],
-    G(O, [{ osa: [0, 20], podela: 1, svaki: 2 }, { lin: [[1, 0.5], [19, 0.5]], b: 0, debljina: 5, crtaj: 1 }, { tx: 'A', at: [10, 1.2], b: 0 }, { lin: [[14, -0.5], [16, -0.5]], b: 5, debljina: 5, crtaj: 1, kasni: 1.4 }, { tx: 'B', at: [15, -1.3], b: 5 }], { ...bez, velicina: 300 }));
+    R(G(O, [{ osa: [0, 20], podela: 1, svaki: 2 }, { lin: [[1, 0.5], [19, 0.5]], b: 0, debljina: 5, crtaj: 1 }, { tx: 'A', at: [10, 1.2], b: 0 }, { lin: [[14, -0.5], [16, -0.5]], b: 5, debljina: 5, crtaj: 1, kasni: 1.4 }, { tx: 'B', at: [15, -1.3], b: 5 }], { ...bez, velicina: 300 })));
 
   Z(2, 'Iz skupa $\\{5 228, 3 045, 29, 531, 7 405\\}$ izdvoj brojeve deljive sa $3$. Koliko ih je?',
     ['$2$', '$1$', '$3$', '$4$'],
@@ -476,7 +476,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, traka, skok, skokovi, krug, 
       ['$\\{3, 4\\}$', '$\\{1, 2, 3, 4, 5, 7, 9\\}$', '$\\{1, 2\\}$', '$\\{5, 7, 9\\}$'],
       [K('Presek čine elementi koji su u oba skupa – u zajedničkom delu dijagrama.', ['presek']),
        K('$A ∩ B = \\{3, 4\\}$')],
-      G(O, [v.e, ...upisi([1, 2], v.mesta.A, { kolona: 1 }), ...upisi([3, 4], v.mesta.AB, { kolona: 1 }), ...upisi([5, 7, 9], v.mesta.B, { kolona: 1, razmak: 0.8 })], { ...bez, velicina: 240 }));
+      R(G(O, [v.e, ...upisi([1, 2], v.mesta.A, { kolona: 1 }), ...upisi([3, 4], v.mesta.AB, { kolona: 1 }), ...upisi([5, 7, 9], v.mesta.B, { kolona: 1, razmak: 0.8 })], { ...bez, velicina: 240 })));
   }
   {
     const v = venn({ imena: ['A', 'B'], samoA: true, presek: true, samoB: true, k: 1 });
@@ -484,7 +484,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, traka, skok, skokovi, krug, 
       ['$4$', '$5$', '$1$', '$2$'],
       [K('Uniju čine svi elementi koji su u bar jednom skupu – ceo obojeni deo.', ['samoA', 'presek', 'samoB']),
        K('$A ∪ B = \\{a, b, c, d\\}$ – element $c$ se piše samo jednom. Ima $4$ elementa.')],
-      G(O, [v.e, ...upisi(['a', 'b'], v.mesta.A, { kolona: 1 }), { tx: 'c', at: v.mesta.AB }, { tx: 'd', at: v.mesta.B }], { ...bez, velicina: 240 }));
+      R(G(O, [v.e, ...upisi(['a', 'b'], v.mesta.A, { kolona: 1 }), { tx: 'c', at: v.mesta.AB }, { tx: 'd', at: v.mesta.B }], { ...bez, velicina: 240 })));
   }
   {
     const v = venn({ imena: ['A', 'B'], samoA: true, k: 1 });
@@ -492,30 +492,30 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, traka, skok, skokovi, krug, 
       ['$\\{2, 4, 8\\}$', '$\\{3, 9\\}$', '$\\{6\\}$', '$\\{2, 3, 4, 8, 9\\}$'],
       [K('$A \\ B$ su elementi skupa $A$ koji nisu u $B$ – deo kruga $A$ izvan $B$.', ['samoA']),
        K('Iz $A$ izbacujemo $6$: $A \\ B = \\{2, 4, 8\\}$.')],
-      G(O, [v.e, ...upisi([2, 4, 8], v.mesta.A, { kolona: 1, razmak: 0.8 }), { tx: '6', at: v.mesta.AB }, ...upisi([3, 9], v.mesta.B, { kolona: 1 })], { ...bez, velicina: 240 }));
+      R(G(O, [v.e, ...upisi([2, 4, 8], v.mesta.A, { kolona: 1, razmak: 0.8 }), { tx: '6', at: v.mesta.AB }, ...upisi([3, 9], v.mesta.B, { kolona: 1 })], { ...bez, velicina: 240 })));
   }
 
   {
     const v = venn({ imena: ['A', 'B'], samoB: true, k: 2 });
-    Z(2, 'Na Venovom dijagramu su prikazani skupovi $A$ i $B$. Koliko elemenata ima $B \\ A$?',
+    Z(2, 'Skupovi su $A = \\{2, 4, 6, 8, 12\\}$ i $B = \\{3, 6, 10, 12, 15\\}$. Koliko elemenata ima $B \\ A$?',
       ['$3$', '$2$', '$5$', '$4$'],
       [K('$B = \\{3, 6, 10, 12, 15\\}$, a zajedničko sa $A$ je $\\{6, 12\\}$.'),
        K('$B \\ A$ – deo kruga $B$ izvan $A$: $\\{3, 10, 15\\}$, tri elementa.', ['samoB'])],
-      G(O, [v.e, ...upisi([2, 4, 8], v.mesta.A, { kolona: 1, razmak: 0.8 }), ...upisi([6, 12], v.mesta.AB, { kolona: 1 }), ...upisi([3, 10, 15], v.mesta.B, { kolona: 1, razmak: 0.8 })], { ...bez, velicina: 240 }));
+      R(G(O, [v.e, ...upisi([2, 4, 8], v.mesta.A, { kolona: 1, razmak: 0.8 }), ...upisi([6, 12], v.mesta.AB, { kolona: 1 }), ...upisi([3, 10, 15], v.mesta.B, { kolona: 1, razmak: 0.8 })], { ...bez, velicina: 240 })));
   }
 
   Z(2, 'Neka je $A = \\{n \\| n ∈ N, 1 ≤ n ≤ 5\\}$, a $B$ skup jednocifrenih neparnih brojeva. Koliko elemenata ima $A ∪ B$?',
     ['$7$', '$10$', '$3$', '$8$'],
     [K('$A = \\{1, 2, 3, 4, 5\\}$, $B = \\{1, 3, 5, 7, 9\\}$.'),
      K('Zajednički: $1, 3, 5$. Unija: $\\{1, 2, 3, 4, 5, 7, 9\\}$ – $5 + 5 − 3 = 7$ elemenata.')],
-    (() => { const v = venn({ imena: ['A', 'B'] }); return G(O, [v.e, ...upisi([2, 4], v.mesta.A, { kolona: 1 }), ...upisi([1, 3, 5], v.mesta.AB, { kolona: 1, razmak: 0.8 }), ...upisi([7, 9], v.mesta.B, { kolona: 1 })], { ...bez, velicina: 240 }); })());
+    (() => { const v = venn({ imena: ['A', 'B'] }); return R(G(O, [v.e, ...upisi([2, 4], v.mesta.A, { kolona: 1 }), ...upisi([1, 3, 5], v.mesta.AB, { kolona: 1, razmak: 0.8 }), ...upisi([7, 9], v.mesta.B, { kolona: 1 })], { ...bez, velicina: 240 })); })());
 
   Z(2, '$A$ je skup parnih brojeva ne većih od $20$, a $B$ skup brojeva deljivih sa $3$ ne većih od $20$. Koji je $A ∩ B$?',
     ['$\\{6, 12, 18\\}$', '$\\{3, 6, 9, 12, 15, 18\\}$', '$\\{6, 12\\}$', '$\\{2, 3, 6, 12, 18\\}$'],
     [K('U preseku su brojevi deljivi i sa $2$ i sa $3$ – tj. sa $6$.'),
      K('Do $20$: $6, 12, 18$.', ['p'])],
-    G(O, [{ osa: [0, 20], podela: 1, svaki: 2 }, ...[2, 4, 6, 8, 10, 12, 14, 16, 18, 20].map((x) => ({ tx: '●', at: [x, 0.7], b: 0 })), ...[3, 6, 9, 12, 15, 18].map((x) => ({ tx: '●', at: [x, -0.6], b: 5 })),
-      ...[6, 12, 18].map((x) => ({ lin: [[x, 1.3], [x, -1.2]], b: 2, debljina: 4, k: 2, id: 'p', crtaj: 1 })), { tx: 'A', at: [-1, 0.7], b: 0 }, { tx: 'B', at: [-1, -0.6], b: 5 }], { ...bez, velicina: 320 }));
+    R(G(O, [{ osa: [0, 20], podela: 1, svaki: 2 }, ...[2, 4, 6, 8, 10, 12, 14, 16, 18, 20].map((x) => ({ tx: '●', at: [x, 0.7], b: 0 })), ...[3, 6, 9, 12, 15, 18].map((x) => ({ tx: '●', at: [x, -0.6], b: 5 })),
+      ...[6, 12, 18].map((x) => ({ lin: [[x, 1.3], [x, -1.2]], b: 2, debljina: 4, k: 2, id: 'p', crtaj: 1 })), { tx: 'A', at: [-1, 0.7], b: 0 }, { tx: 'B', at: [-1, -0.6], b: 5 }], { ...bez, velicina: 320 })));
 
   Z(2, 'Ako je $A = \\{1, 2, 3\\}$, $B = \\{3, 4, 5, 6, 7\\}$ i $C = \\{2, 4, 8\\}$, koji je skup $(A ∪ B) ∩ C$?',
     ['$\\{2, 4\\}$', '$\\{2, 4, 8\\}$', '$\\{4\\}$', '$\\{1, 2, 3, 4, 5, 6, 7, 8\\}$'],
@@ -541,5 +541,5 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, traka, skok, skokovi, krug, 
     [K('$A = \\{2, 4, 6, 8\\}$, $B = \\{3, 6, 9\\}$.'),
      K('$A ∪ B = \\{2, 3, 4, 6, 8, 9\\}$, $A ∩ B = \\{6\\}$.', ['samoA', 'samoB']),
      K('Bez zajedničkog: $\\{2, 3, 4, 8, 9\\}$ – $5$ elemenata.')],
-    (() => { const v = venn({ imena: ['A', 'B'], samoA: true, samoB: true, k: 2 }); return G(O, [v.e, ...upisi([2, 4, 8], v.mesta.A, { kolona: 1, razmak: 0.8 }), { tx: '6', at: v.mesta.AB }, ...upisi([3, 9], v.mesta.B, { kolona: 1 })], { ...bez, velicina: 240 }); })());
+    (() => { const v = venn({ imena: ['A', 'B'], samoA: true, samoB: true, k: 2 }); return R(G(O, [v.e, ...upisi([2, 4, 8], v.mesta.A, { kolona: 1, razmak: 0.8 }), { tx: '6', at: v.mesta.AB }, ...upisi([3, 9], v.mesta.B, { kolona: 1 })], { ...bez, velicina: 240 })); })());
 };

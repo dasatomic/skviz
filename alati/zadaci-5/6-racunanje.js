@@ -1,5 +1,6 @@
 // Tema 6: Razlomci – drugi deo: računanje (lekcije 6.1–6.12)
 module.exports = ({ L, Z, K, G, O, bez, r, proveri, traka, pica, skok, skokovi, sto, skrati, isti }) => {
+  const RS = require('./osnova').R; // (R je ovde zauzeto lokalnom funkcijom)
   const pr = (x, y, w, h, x2 = {}) => ({ lin: [[x, y], [x + w, y], [x + w, y + h], [x, y + h]].map((p) => p.map(r)), zatv: 1, ...x2 });
   const g = (e, vel = 240) => G(O, e, { ...bez, velicina: vel });
   const g0 = (e, vel = 280) => G({}, e, { velicina: vel });
@@ -304,7 +305,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, traka, pica, skok, skokovi, 
     [K('$x ≥ 3{1|2} − {4|5} = {35|10} − {8|10} = {27|10} = 2{7|10}$.'),
      K('Prvi prirodan broj od $2{7|10}$ naviše je $3$.')]);
 
-  Z(2, 'Lift nosi najviše $300 kg$, a u njemu je već $236,5 kg$. Koliko najviše može da ima još jedna osoba?',
+  Z(2, 'Lift nosi najviše $300 kg$, a u njemu je već $236,5 kg$. Koliko najviše može da teži još jedna osoba?',
     ['$63,5 kg$', '$64,5 kg$', '$536,5 kg$', '$73,5 kg$'],
     [K('$236,5 + x ≤ 300$'),
      K('$x ≤ 300 − 236,5 = 63,5 kg$.')]);
@@ -461,10 +462,10 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, traka, pica, skok, skokovi, 
     ['$10$', '${2|5}$', '${1|10}$', '$7$'],
     [K('Koliko petina ima u $2$ cela? U svakom celom $5$, u dva cela $10$.', ['t']),
      K('$2 : {1|5} = 2 · 5 = 10$.')],
-    g([...traka(5, 5, { w: 5, k: 1, id: 't' }), ...traka(5, 5, { x: 5.4, w: 5, b: 2, k: 1, id: 't' }), ...traka(5, 0, { w: 5 }), ...traka(5, 0, { x: 5.4, w: 5 })], 260));
+    RS(g([...traka(5, 5, { w: 5, k: 1, id: 't' }), ...traka(5, 5, { x: 5.4, w: 5, b: 2, k: 1, id: 't' }), ...traka(5, 0, { w: 5 }), ...traka(5, 0, { x: 5.4, w: 5 })], 260)));
 
   Z(2, 'Izračunaj: ${5|6} : 10$.',
-    ['${1|12}$', '${25|3}$', '${50|6}$', '${1|2}$'],
+    ['${1|12}$', '${25|3}$', '${1|60}$', '${1|2}$'],
     [K('Deliti sa $10$ = množiti sa ${1|10}$: ${5|6} · {1|10}$.'),
      K('$= {5|60} = {1|12}$.')]);
 
@@ -489,7 +490,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, traka, pica, skok, skokovi, 
      K('$= {2|3}$.')]);
 
   Z(3, 'Koji broj je jednak svom recipročnom broju (od pozitivnih brojeva)?',
-    ['$1$', '$0$', '${1|2}$', 'nijedan'],
+    ['$1$', '$0$', '${1|2}$', '$-1$'],
     [K('$x · {1|x} = 1$; ako je $x = {1|x}$, onda je $x · x = 1$.'),
      K('Jedini pozitivan takav broj je $1$. (Nula nema recipročan broj.)')]);
 
@@ -608,7 +609,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, traka, pica, skok, skokovi, 
   L('Jednačine sa množenjem i deljenjem razlomaka');
 
   Z(1, 'Reši jednačinu: ${3|4} · x = {9|16}$.',
-    ['$x = {3|4}$', '$x = {27|64}$', '$x = {4|3}$', '$x = {12|16}$'],
+    ['$x = {3|4}$', '$x = {27|64}$', '$x = {4|3}$', '$x = {16|9}$'],
     [K('Nepoznati činilac = proizvod : poznati činilac.'),
      K('$x = {9|16} : {3|4} = {9|16} · {4|3} = {3|4}$.')],
     g(vaga('3/4 · x', '9/16'), 220));
@@ -635,7 +636,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, traka, pica, skok, skokovi, 
      K('$= {15|30} = {1|2}$.')]);
 
   Z(2, 'Reši jednačinu: $6 : x = {3|4}$.',
-    ['$x = 8$', '$x = {9|2}$', '$x = {1|8}$', '$x = 4{1|2}$'],
+    ['$x = 8$', '$x = {9|2}$', '$x = {1|8}$', '$x = 2{1|4}$'],
     [K('Delilac = deljenik : količnik: $x = 6 : {3|4}$.'),
      K('$x = 6 · {4|3} = 8$.')]);
 

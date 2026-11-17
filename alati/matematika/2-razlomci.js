@@ -67,7 +67,7 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, pr, polja, torta, kruzni }) =>
     'Kad se 1 deli sa 3, ostatak je uvek 1, pa se trojka ponavlja zauvek: 0,333… = 0,(3). Broj 0,3 je za malo manji – to je ${3|10}$.',
     'trećina');
 
-  Q(3, 'Koliko je 0,999… (devetke se ponavljaju beskonačno)?', ['Tačno 1', 'Malo manje od 1', '0,99', 'Ne može se izračunati'],
+  Q(3, 'Koliko je 0,999… (devetke se ponavljaju beskonačno)?', ['Tačno 1', 'Malo manje od 1', '0,99', 'Tačno 0,999'],
     'Pošto je ${1|3}$ = 0,333…, kad se pomnoži sa 3: ${3|3}$ = 0,999…, a ${3|3}$ = 1. Između 0,999… i 1 ne postoji nijedan broj, pa su to dva zapisa istog broja.',
     'decimala', { mediji: F('0,999… = ?'), medijiOdgovora: F('3 · 0,333… = 0,999… = 1') });
 

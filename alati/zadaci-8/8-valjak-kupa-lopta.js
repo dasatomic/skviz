@@ -64,7 +64,7 @@ module.exports = ({ L, Z, G, K, proveri, r, telo, A }) => {
      K('$M = 314 cm²$.')]);
 
   Z(2, 'Valjak ima $r = 3 cm$ i $H = 7 cm$. Kolika mu je površina? (Uzmi $π ≈ 3,14$.)',
-    ['$188,4 cm²$', '$131,9 cm²$', '$188,4 + 18,84 cm²$', '$94,2 cm²$'],
+    ['$188,4 cm²$', '$131,9 cm²$', '$160,1 cm²$', '$94,2 cm²$'],
     [K('Osnova: $B = r²π = 9π ≈ 28,26 cm²$.'),
      K('Omotač: $M = 2rπH = 2 · 3 · 3,14 · 7 = 131,88 cm²$.'),
      K('$P = 2B + M = 2 · 28,26 + 131,88 = 188,4 cm²$.'),
@@ -145,9 +145,9 @@ module.exports = ({ L, Z, G, K, proveri, r, telo, A }) => {
      K('Njegova površina je $M = rπs$.')]);
 
   Z(2, 'Kupa ima $r = 5 cm$ i izvodnicu $s = 13 cm$. Koliki joj je omotač? (Uzmi $π ≈ 3,14$.)',
-    ['$204,1 cm²$', '$65π cm²$', '$204,1π cm²$', '$102,05 cm²$'],
+    ['$204,1 cm²$', '$130π cm²$', '$204,1π cm²$', '$102,05 cm²$'],
     [K('$M = rπs = 5 · 3,14 · 13$.'),
-     K('$M = 204,1 cm²$ (tj. $65π cm²$).')]);
+     K('$M = 65π cm² ≈ 204,1 cm²$ (za $π ≈ 3,14$).')]);
 
   Z(3, 'Kupa ima $r = 3 cm$ i $H = 4 cm$. Kolika joj je ukupna površina? (Uzmi $π ≈ 3,14$.)',
     ['$75,36 cm²$', '$37,68 cm²$', '$56,52 cm²$', '$94,2 cm²$'],
@@ -196,8 +196,8 @@ module.exports = ({ L, Z, G, K, proveri, r, telo, A }) => {
   L('Ravni preseci lopte');
 
   Z(1, 'Presek lopte ravninom je…',
-    ['krug', 'elipsa', 'pravougaonik', 'tačka'],
-    [K('Svaka ravan koja seče loptu seče je po krugu.'),
+    ['krug', 'elipsa', 'pravougaonik', 'duž'],
+    [K('Svaka ravan koja seče loptu daje presek u obliku kruga.'),
      K('Ako ravan prolazi kroz centar, dobijamo veliki krug (poluprečnika $r$).')]);
 
   Z(2, 'Presek lopte ravninom kroz centar je…',
@@ -232,7 +232,7 @@ module.exports = ({ L, Z, G, K, proveri, r, telo, A }) => {
      K('$V = {2712,96|3} = 904,32 cm³$.')]);
 
   Z(3, 'Površina lopte je $100π cm²$. Koliki joj je poluprečnik?',
-    ['$5 cm$', '$10 cm$', '$25 cm$', '$√{25} cm$'],
+    ['$5 cm$', '$10 cm$', '$25 cm$', '$√{50} cm$'],
     [K('$4r²π = 100π$, pa je $4r² = 100$ i $r² = 25$.'),
      K('$r = 5 cm$.')]);
 
@@ -253,7 +253,7 @@ module.exports = ({ L, Z, G, K, proveri, r, telo, A }) => {
     ['$2 : 3$', '$1 : 2$', '$1 : 3$', '$3 : 4$'],
     [K('Lopta ima poluprečnik $r$ (jer je visina valjka $2r$).'),
      K('$V_{lopte} = {4r³π|3}$, $V_{valjka} = r²π · 2r = 2r³π$.'),
-     K('Odnos: ${{4r³π|3}|2r³π} = {4|3} · {1|2} = {2|3} = 2 : 3$.')]);
+     K('Odnos: ${4r³π|3} : 2r³π = {4|3} · {1|2} = {2|3} = 2 : 3$.')]);
 
   Z(3, 'Lopta poluprečnika $5 cm$ upisana je u valjak. Kolika je zapremina valjka? (Uzmi $π ≈ 3,14$.)',
     ['$785 cm³$', '$523,3 cm³$', '$1570 cm³$', '$392,5 cm³$'],
@@ -299,12 +299,14 @@ module.exports = ({ L, Z, G, K, proveri, r, telo, A }) => {
     ['$6 cm$', '$12 cm$', '$24 cm$', '$3 cm$'],
     [K('Ako je osni presek kvadrat, prečnik je jednak visini: $2r = 12$.'),
      K('$r = 6 cm$.')]);
-  Z(3, 'Ravan dodiruje omotač valjka duž jedne izvodnice. Presek je:',
-    ['pravougaonik (stranica 2r × H)', 'krug', 'elipsa', 'duž'],
-    [K('Ravan kroz izvodnicu i osu (ili paralelna osi kroz izvodnicu) seče valjak po pravougaoniku.')]);
-  Z(3, 'Valjak ima visinu $10 cm$, a njegov osni presek je kvadrat. Koliki je poluprečnik osnove?',
-    ['$5 cm$', '$10 cm$', '$20 cm$', '$2,5 cm$'],
-    [K('Kvadrat: $2r = H = 10$, pa je $r = 5 cm$.')]);
+  Z(3, 'Ravan dodiruje omotač valjka duž jedne izvodnice. Presek ravni i valjka je:',
+    ['duž (izvodnica)', 'krug', 'elipsa', 'pravougaonik'],
+    [K('Ravan dodiruje valjak samo duž izvodnice, pa je presek jedna duž – ta izvodnica.'),
+     K('Ravan kroz osu seče valjak po pravougaoniku, a ravan paralelna osnovama po krugu.')]);
+  Z(3, 'Osni presek valjka je kvadrat površine $64 cm²$. Koliki je poluprečnik osnove?',
+    ['$4 cm$', '$8 cm$', '$2 cm$', '$16 cm$'],
+    [K('Stranica kvadrata je $√{64} = 8 cm$, pa je $2r = H = 8 cm$.'),
+     K('$r = 4 cm$.')]);
 
   L('Mreža valjka, površina valjka');
   Z(1, 'Omotač valjka razvijen u ravan je:',
@@ -329,13 +331,13 @@ module.exports = ({ L, Z, G, K, proveri, r, telo, A }) => {
     [K('$V = r²πH = 4π · 5 = 20π cm³ ≈ 62,8 cm³$.')]);
   Z(2, 'Valjak ima $r = 10 cm$ i $H = 3 cm$. Kolika mu je zapremina?',
     ['$300π cm³$', '$100π cm³$', '$30π cm³$', '$900π cm³$'],
-    [K('$V = 100π · 3 = 300π cm³ ≈ 942 cm³$.')]);
+    [K('$V = 100π · 3 = 300π cm³ ≈ 942,5 cm³$.')]);
   Z(3, 'Valjak ima zapreminu $200π cm³$ i poluprečnik osnove $5 cm$. Kolika mu je visina?',
     ['$8 cm$', '$10 cm$', '$4 cm$', '$6 cm$'],
     [K('$V = r²πH$, pa je $200π = 25πH$.'),
      K('$H = {200|25} = 8 cm$.')]);
   Z(3, 'Valjak ima zapreminu $120π cm³$ i visinu $10 cm$. Koliki je poluprečnik osnove?',
-    ['$2√{3} cm$', '$√{12} cm$', '$4 cm$', '$6 cm$'],
+    ['$2√{3} cm$', '$√{6} cm$', '$4 cm$', '$6 cm$'],
     [K('$120π = r²π · 10$, pa je $r² = 12$.'),
      K('$r = √{12} = 2√{3} cm$.')]);
   Z(3, 'Valjak ima $r = 7 cm$ i $H = 7 cm$. Kolika mu je zapremina?',
@@ -343,7 +345,7 @@ module.exports = ({ L, Z, G, K, proveri, r, telo, A }) => {
     [K('$V = 49π · 7 = 343π cm³$.')]);
   Z(3, 'Valjak ima prečnik osnove $6 cm$ i visinu $9 cm$. Kolika mu je zapremina?',
     ['$81π cm³$', '$54π cm³$', '$27π cm³$', '$162π cm³$'],
-    [K('$r = 3 cm$; $V = 9π · 9 = 81π cm³ ≈ 254,3 cm³$.')]);
+    [K('$r = 3 cm$; $V = 9π · 9 = 81π cm³ ≈ 254,5 cm³$.')]);
   Z(3, 'Ako se poluprečnik valjka udvostruči, a visina ostane ista, zapremina se:',
     ['poveća 4 puta', 'poveća 2 puta', 'poveća 8 puta', 'ne promeni'],
     [K('$V = r²πH$; ako je $r → 2r$, onda $r² → 4r²$, pa je zapremina $4$ puta veća.')]);
@@ -379,7 +381,7 @@ module.exports = ({ L, Z, G, K, proveri, r, telo, A }) => {
     ['$2r$', '$r$', '$s$', '$H$'],
     [K('Osnovica osnog preseka je prečnik osnove: $2r$.')]);
   Z(3, 'Kupa ima $r = 4 cm$ i $H = 6 cm$. Kolika joj je izvodnica?',
-    ['$2√{13} cm$', '$√{52} cm$', '$10 cm$', '$2√{5} cm$'],
+    ['$2√{13} cm$', '$√{30} cm$', '$10 cm$', '$2√{5} cm$'],
     [K('$s² = 16 + 36 = 52$, pa je $s = √{52} = 2√{13} cm ≈ 7,2 cm$.')]);
   Z(2, 'Presek kupe ravninom kroz vrh i dve tačke oboda osnove je:',
     ['trougao', 'krug', 'elipsa', 'pravougaonik'],
@@ -390,9 +392,10 @@ module.exports = ({ L, Z, G, K, proveri, r, telo, A }) => {
   Z(3, 'Ravan paralelna osnovi seče kupu na polovini visine. Dobijeni presek je:',
     ['krug manji od osnove', 'krug isti kao osnova', 'trougao', 'elipsa'],
     [K('Presek paralelan osnovi je krug, ali manji od osnove (bliže vrhu).')]);
-  Z(3, 'Ravan koja seče kupu koso (ne kroz vrh, ne paralelno osnovi) daje:',
-    ['elipsu', 'krug', 'trougao', 'pravougaonik'],
-    [K('Kosi presek kupe je elipsa (ili parabola/hiperbola u posebnim slučajevima).')]);
+  Z(3, 'Kupa ima poluprečnik osnove $6 cm$ i visinu $8 cm$. Ravan paralelna osnovi, na polovini visine, seče kupu po krugu poluprečnika:',
+    ['$3 cm$', '$4 cm$', '$6 cm$', '$2 cm$'],
+    [K('Na polovini visine presek je sličan osnovi sa koeficijentom ${1|2}$, jer se visine i poluprečnici menjaju srazmerno.'),
+     K('Poluprečnik je ${6|2} = 3 cm$.')]);
 
   L('Mreža kupe, površina kupe');
   Z(1, 'Omotač kupe razvijen u ravan je:',
@@ -403,7 +406,7 @@ module.exports = ({ L, Z, G, K, proveri, r, telo, A }) => {
     [K('Isečak omotača ima poluprečnik jednak izvodnici $s$.')]);
   Z(2, 'Kupa ima $r = 6 cm$ i izvodnicu $s = 10 cm$. Koliki joj je omotač?',
     ['$60π cm²$', '$30π cm²$', '$120π cm²$', '$36π cm²$'],
-    [K('$M = rπs = 6 · π · 10 = 60π cm² ≈ 188,4 cm²$.')]);
+    [K('$M = rπs = 6 · π · 10 = 60π cm² ≈ 188,5 cm²$.')]);
   Z(2, 'Površina kupe računa se kao:',
     ['$P = rπs + r²π$', '$P = 2rπs + r²π$', '$P = rπs$', '$P = {rπs|2}$'],
     [K('$P = M + B = rπs + r²π$ (omotač + osnova).')]);
@@ -423,7 +426,7 @@ module.exports = ({ L, Z, G, K, proveri, r, telo, A }) => {
     ['$100π cm³$', '$300π cm³$', '$200π cm³$', '$60π cm³$'],
     [K('$V = {25π · 12|3} = 100π cm³ ≈ 314 cm³$.')]);
   Z(3, 'Kupa ima zapreminu $150π cm³$ i visinu $9 cm$. Koliki je poluprečnik osnove?',
-    ['$5√{2} cm$', '$5 cm$', '$√{50} cm$', '$10 cm$'],
+    ['$5√{2} cm$', '$5 cm$', '$√{40} cm$', '$10 cm$'],
     [K('$150π = {r²π · 9|3} = 3r²π$, pa je $r² = 50$.'),
      K('$r = √{50} = 5√{2} cm$.')]);
   Z(3, 'Kupa ima zapreminu $90π cm³$ i poluprečnik $6 cm$. Kolika joj je visina?',
@@ -431,13 +434,13 @@ module.exports = ({ L, Z, G, K, proveri, r, telo, A }) => {
     [K('$90π = {36π · H|3} = 12πH$, pa je $H = {90|12} = 7,5 cm$.')]);
   Z(3, 'Kupa ima prečnik osnove $10 cm$ i visinu $9 cm$. Kolika joj je zapremina?',
     ['$75π cm³$', '$225π cm³$', '$25π cm³$', '$150π cm³$'],
-    [K('$r = 5 cm$; $V = {25π · 9|3} = 75π cm³ ≈ 235,5 cm³$.')]);
+    [K('$r = 5 cm$; $V = {25π · 9|3} = 75π cm³ ≈ 235,6 cm³$.')]);
   Z(2, 'Kupa i valjak imaju istu osnovu i istu visinu. Zapremina kupe je:',
     ['trećina zapremine valjka', 'polovina zapremine valjka', 'jednaka zapremini valjka', 'dvostruka zapremina valjka'],
     [K('$V_{kupe} = {1|3} V_{valjka}$ – ista osnova i visina.')]);
   Z(3, 'Kupa ima $r = 9 cm$ i $H = 4 cm$. Kolika joj je zapremina?',
     ['$108π cm³$', '$36π cm³$', '$324π cm³$', '$144π cm³$'],
-    [K('$V = {81π · 4|3} = 108π cm³ ≈ 339,1 cm³$.')]);
+    [K('$V = {81π · 4|3} = 108π cm³ ≈ 339,3 cm³$.')]);
 
   L('Lopta: osnovni elementi');
   Z(1, 'Poluprečnik lopte je duž od centra do:',
@@ -464,7 +467,7 @@ module.exports = ({ L, Z, G, K, proveri, r, telo, A }) => {
 
   L('Ravni preseci lopte');
   Z(1, 'Ravan koja seče loptu, a ne prolazi kroz centar, daje presek:',
-    ['krug manji od velikog kruga', 'veliki krug', 'tačku', 'elipsu'],
+    ['krug manji od velikog kruga', 'veliki krug', 'duž', 'elipsu'],
     [K('Svaka ravan seče loptu po krugu; ako ne prolazi kroz centar, to je manji krug.')]);
   Z(2, 'Presek lopte ravninom kroz centar je:',
     ['veliki krug', 'mali krug', 'elipsa', 'polovina lopte'],
@@ -502,7 +505,7 @@ module.exports = ({ L, Z, G, K, proveri, r, telo, A }) => {
      K('$r = 3 cm$.')]);
   Z(3, 'Lopta ima poluprečnik $9 cm$. Kolika joj je površina?',
     ['$324π cm²$', '$81π cm²$', '$162π cm²$', '$648π cm²$'],
-    [K('$P = 4 · 81π = 324π cm² ≈ 1017,4 cm²$.')]);
+    [K('$P = 4 · 81π = 324π cm² ≈ 1017,9 cm²$.')]);
 
   L('Upisana i opisana tela');
   Z(2, 'U kocku ivice $8 cm$ upisana je lopta. Koliki joj je poluprečnik?',
@@ -518,7 +521,7 @@ module.exports = ({ L, Z, G, K, proveri, r, telo, A }) => {
     [K('Lopta dodiruje obe osnove valjka, pa je $H = 2r$.')]);
   Z(3, 'U kocku ivice $10 cm$ upisana je lopta. Kolika je zapremina lopte?',
     ['${500π|3} cm³$', '$500π cm³$', '${1000π|3} cm³$', '${250π|3} cm³$'],
-    [K('$r = 5 cm$; $V = {4 · 125π|3} = {500π|3} cm³ ≈ 523,3 cm³$.')]);
+    [K('$r = 5 cm$; $V = {4 · 125π|3} = {500π|3} cm³ ≈ 523,6 cm³$.')]);
   Z(3, 'Kocka ivice $a$ i u nju upisana lopta. Odnos zapremina kocke i lopte je:',
     ['$6 : π$', '$π : 6$', '$4 : 3$', '$3 : 4$'],
     [K('$V_{kocke} = a³$; lopta ima $r = {a|2}$, pa je $V_{lopte} = {4|3}π({a|2})³ = {πa³|6}$.'),

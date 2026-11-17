@@ -22,19 +22,19 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, pravilni, krug, luk, O, bez, papi
   Q(1, 'Koji geometrijski objekat nema ni dužinu, ni širinu, ni debljinu?',
     ['Tačka', 'Duž', 'Prava', 'Ravan'],
     'Tačka je najmanji geometrijski objekat – označavamo je velikim slovom, na primer $A$. Ona samo pokazuje položaj.', 'tačka',
-    { mediji: G({ A: [0, 0] }, [{ tacka: 'A', b: 1 }], { velicina: 160 }) });
+    { medijiOdgovora: G({ A: [0, 0] }, [{ tacka: 'A', b: 1 }], { velicina: 160 }) });
   Q(1, 'Šta se proteže beskonačno u oba smera?',
     ['Prava', 'Duž', 'Poluprava', 'Tačka'],
     'Prava nema ni početak ni kraj. Označavamo je malim slovom ($p$, $q$…) ili preko dve tačke: prava $AB$.', 'prava',
-    { mediji: prava([-4.2, 0], [4.2, 0]) });
+    { medijiOdgovora: prava([-4.2, 0], [4.2, 0]) });
   Q(1, 'Kako se zove deo prave koji ima početnu tačku i proteže se beskonačno u jednom smeru?',
     ['Poluprava', 'Duž', 'Prava', 'Krug'],
     'Poluprava ima jedan kraj (početnu tačku), a u drugom smeru ide beskonačno. Kao zrak svetlosti iz lampe.', 'poluprava',
-    { mediji: G({ A: [0, 0], B: [4.5, 0] }, [{ d: 'AB', b: 1, str: 1, debljina: 3 }, { tacka: 'A', b: 1 }], { velicina: 260 }) });
+    { medijiOdgovora: G({ A: [0, 0], B: [4.5, 0] }, [{ d: 'AB', b: 1, str: 1, debljina: 3 }, { tacka: 'A', b: 1 }], { velicina: 260 }) });
   Q(1, 'Kako se zove deo prave između dve tačke (ima i početak i kraj)?',
     ['Duž', 'Prava', 'Poluprava', 'Tačka'],
     'Duž je najkraći put između dve tačke. Njene krajnje tačke su početak i kraj duži, a označavamo je $AB$.', 'duž',
-    { mediji: G({ A: [0, 0], B: [4, 0] }, [{ d: 'AB', b: 1, debljina: 3 }, { tacka: 'A', b: 1 }, { tacka: 'B', b: 1 }], { velicina: 260 }) });
+    { medijiOdgovora: G({ A: [0, 0], B: [4, 0] }, [{ d: 'AB', b: 1, debljina: 3 }, { tacka: 'A', b: 1 }, { tacka: 'B', b: 1 }], { velicina: 260 }) });
   Q(2, 'Koliko pravih prolazi kroz dve različite tačke?',
     ['Tačno jedna', 'Dve', 'Beskonačno mnogo', 'Nijedna'],
     'Kroz jednu tačku prolazi beskonačno mnogo pravih, ali kroz DVE različite tačke prolazi tačno jedna prava – one je potpuno određuju.', 'prava',
@@ -46,26 +46,26 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, pravilni, krug, luk, O, bez, papi
   Q(2, 'Koliko tačaka sadrži jedna duž?',
     ['Beskonačno mnogo', 'Samo dve', 'Tačno tri', 'Nijednu'],
     'Duž ima dva kraja, ali između njih leži beskonačno mnogo tačaka. Zato se i najkraća duž sastoji od beskonačno mnogo tačaka.', 'duž',
-    { mediji: G({ A: [0, 0], B: [5, 0] }, [{ d: 'AB', b: 1, debljina: 3 }, ...[1, 2, 3, 4].map((x) => ({ tx: '●', at: [x, 0], vel: 12, b: 2 }))], { velicina: 260 }) });
+    { medijiOdgovora: G({ A: [0, 0], B: [5, 0] }, [{ d: 'AB', b: 1, debljina: 3 }, ...[1, 2, 3, 4].map((x) => ({ tx: '●', at: [x, 0], vel: 12, b: 2 }))], { velicina: 260 }) });
   Q(3, 'Tri tačke A, B i C NE leže na istoj pravoj. Koliko duži one određuju?',
     ['3', '1', '2', '6'],
     'Svake dve tačke određuju jednu duž: $AB$, $BC$ i $CA$ – ukupno 3 duži. One čine trougao.', 'duž',
-    { mediji: G({ A: [0, 0], B: [3.5, 0], C: [1, 2.2] }, [{ d: 'AB', b: 1, debljina: 3 }, { d: 'BC', b: 2, debljina: 3 }, { d: 'CA', b: 3, debljina: 3 }, { tacka: 'A', b: 1 }, { tacka: 'B', b: 1 }, { tacka: 'C', b: 1 }], { velicina: 260 }) });
+    { medijiOdgovora: G({ A: [0, 0], B: [3.5, 0], C: [1, 2.2] }, [{ d: 'AB', b: 1, debljina: 3 }, { d: 'BC', b: 2, debljina: 3 }, { d: 'CA', b: 3, debljina: 3 }, { tacka: 'A', b: 1 }, { tacka: 'B', b: 1 }, { tacka: 'C', b: 1 }], { velicina: 260 }) });
 
   // ── 10. odnosi pravih ──
   L('Odnosi pravih u ravni');
   Q(1, 'Kako se zovu prave u ravni koje nemaju nijednu zajedničku tačku?',
     ['Paralelne prave', 'Normalne prave', 'Ukrštene prave', 'Krive prave'],
     'Paralelne prave se nikada ne seku, koliko god ih produžavali. Primer su šine na pruzi. Označavamo ih $a \\parallel b$.', 'paralelne',
-    { mediji: G({ A: [-3, 1.2], B: [3, 1.2], C: [-3, -1.2], D: [3, -1.2] }, [{ d: 'AB', b: 1, debljina: 3 }, { d: 'CD', b: 2, debljina: 3 }, { tx: 'a', at: [-2.6, 1.7], vel: 15, b: 1 }, { tx: 'b', at: [-2.6, -1.4], vel: 15, b: 2 }], { velicina: 280 }) });
+    { medijiOdgovora: G({ A: [-3, 1.2], B: [3, 1.2], C: [-3, -1.2], D: [3, -1.2] }, [{ d: 'AB', b: 1, debljina: 3 }, { d: 'CD', b: 2, debljina: 3 }, { tx: 'a', at: [-2.6, 1.7], vel: 15, b: 1 }, { tx: 'b', at: [-2.6, -1.4], vel: 15, b: 2 }], { velicina: 280 }) });
   Q(1, 'Kako se zovu prave koje se seku pod pravim uglom (90°)?',
     ['Normalne (upravne) prave', 'Paralelne prave', 'Mimoilazne prave', 'Podudarne prave'],
     'Normalne prave seku se pod uglom od $90°$. Označavamo ih $a \\perp b$. Ivice kvadrata su uzajamno normalne.', 'normalne',
-    { mediji: G({ A: [-3, 0], B: [3, 0], C: [0, -3], D: [0, 3] }, [{ d: 'AB', b: 1, debljina: 3 }, { d: 'CD', b: 2, debljina: 3 }, { pu: 'AOD' }, { tx: 'a', at: [3.2, 0.4], vel: 15, b: 1 }, { tx: 'b', at: [0.4, 3.2], vel: 15, b: 2 }], { ...bez, velicina: 280 }) });
+    { medijiOdgovora: G({ A: [-3, 0], B: [3, 0], C: [0, -3], D: [0, 3] }, [{ d: 'AB', b: 1, debljina: 3 }, { d: 'CD', b: 2, debljina: 3 }, { pu: 'AOD' }, { tx: 'a', at: [3.2, 0.4], vel: 15, b: 1 }, { tx: 'b', at: [0.4, 3.2], vel: 15, b: 2 }], { ...bez, velicina: 280 }) });
   Q(2, 'Koliko zajedničkih tačaka najviše mogu imati dve različite prave u ravni?',
     ['Jednu', 'Dve', 'Tri', 'Beskonačno mnogo'],
     'Dve različite prave se ili seku u jednoj tački ili su paralelne (nula zajedničkih tačaka). Više od jedne zajedničke tačke imale bi samo kad bi se poklapale.', 'presek',
-    { mediji: G({ A: [-3, -2], B: [3, 2], C: [-3, 2], D: [3, -2] }, [{ d: 'AB', b: 1, debljina: 3 }, { d: 'CD', b: 2, debljina: 3 }], { velicina: 260 }) });
+    { medijiOdgovora: G({ A: [-3, -2], B: [3, 2], C: [-3, 2], D: [3, -2] }, [{ d: 'AB', b: 1, debljina: 3 }, { d: 'CD', b: 2, debljina: 3 }], { velicina: 260 }) });
   Q(2, 'Dve prave se seku u tački O. Kako se ta tačka zove?',
     ['Presečna tačka', 'Dodirna tačka', 'Početna tačka', 'Središte'],
     'Tačka u kojoj se dve prave seku zove se presečna tačka. To je jedina zajednička tačka tih pravih.', 'presek',
@@ -116,7 +116,7 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, pravilni, krug, luk, O, bez, papi
   Q(1, 'Kojim priborom prenosiš dužinu duži na drugo mesto?',
     ['Šestarom', 'Lenjirom i olovkom', 'Uglomerom', 'Trouglom'],
     'Šestarom „uhvatiš“ dužinu duži i preneseš je. Lenjir služi samo za povlačenje pravih linija, a uglomer za uglove.', 'šestar',
-    { mediji: G({ A: [-2, 0], B: [2, 0], M: [0, 1.5], N: [0, -1.5] },
+    { medijiOdgovora: G({ A: [-2, 0], B: [2, 0], M: [0, 1.5], N: [0, -1.5] },
       [{ d: 'AB', b: 0, debljina: 3 },
        { l: 'A', r: 2.5, od: 10, do: 85, b: 3 }, { l: 'A', r: 2.5, od: 275, do: 350, b: 3 },
        { l: 'B', r: 2.5, od: 95, do: 170, b: 3 }, { l: 'B', r: 2.5, od: 190, do: 265, b: 3 },
@@ -147,27 +147,27 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, pravilni, krug, luk, O, bez, papi
   Q(1, 'Šta je mnogougao?',
     ['Zatvorena izlomljena linija', 'Otvorena izlomljena linija', 'Prava linija', 'Kružna linija'],
     'Mnogougao nastaje kad se izlomljena linija zatvori – kraj se spoji sa početkom. Primeri: trougao, kvadrat, petougao.', 'mnogougao',
-    { mediji: mnogougao(5) });
+    { medijiOdgovora: mnogougao(5) });
   Q(1, 'Koliko stranica ima petougao?',
     ['5', '6', '4', '7'],
     'Petougao ima 5 stranica (peta = pet). Svaka stranica je duž koja spaja dva susedna temena.', 'petougao',
-    { mediji: mnogougao(5) });
+    { medijiOdgovora: mnogougao(5) });
   Q(1, 'Kako se zove mnogougao sa 6 stranica?',
     ['Šestougao', 'Petougao', 'Sedmougao', 'Osmougao'],
     'Šestougao ima 6 stranica i 6 temena. Saće u košnici sastoji se od pravilnih šestouglova.', 'šestougao',
-    { mediji: mnogougao(6) });
+    { medijiOdgovora: mnogougao(6) });
   Q(2, 'Kako se zove mnogougao kome su sve stranice i svi uglovi jednaki?',
     ['Pravilan mnogougao', 'Nepravilan mnogougao', 'Konveksan mnogougao', 'Pravougaonik'],
     'Pravilan mnogougao ima sve stranice jednake i sve uglove jednake. Primeri: jednakostranični trougao, kvadrat, pravilni šestougao.', 'pravilan',
-    { mediji: mnogougao(6, { krugOpisan: true }) });
+    { medijiOdgovora: mnogougao(6, { krugOpisan: true }) });
   Q(2, 'Kako se zove duž koja spaja dva nesusedna temena mnogougla?',
     ['Dijagonala', 'Stranica', 'Visina', 'Poluprečnik'],
     'Dijagonala spaja dva temena koja nisu susedna. Kvadrat ima 2 dijagonale, petougao 5, a šestougao 9.', 'dijagonala',
-    { mediji: mnogougao(5, { dijagonala: true }) });
+    { medijiOdgovora: mnogougao(5, { dijagonala: true }) });
   Q(2, 'Šta su temena mnogougla?',
     ['Tačke u kojima se spajaju stranice', 'Sredine stranica', 'Duži koje spajaju tačke', 'Uglovi mnogougla'],
     'Temena su tačke u kojima se sustiču dve susedne stranice. Mnogougao ima isto toliko temena koliko i stranica.', 'teme',
-    { mediji: G(pravilni(5, 3), [{ p: 'ABCDE', b: 0 }, { tacka: 'A', b: 1 }, { tacka: 'B', b: 1 }, { tacka: 'C', b: 1 }, { tacka: 'D', b: 1 }, { tacka: 'E', b: 1 }], { velicina: 240 }) });
+    { medijiOdgovora: G(pravilni(5, 3), [{ p: 'ABCDE', b: 0 }, { tacka: 'A', b: 1 }, { tacka: 'B', b: 1 }, { tacka: 'C', b: 1 }, { tacka: 'D', b: 1 }, { tacka: 'E', b: 1 }], { velicina: 240 }) });
   Q(3, 'Koji od ovih oblika NIJE mnogougao?',
     ['Krug', 'Trougao', 'Šestougao', 'Kvadrat'],
     'Krug nije mnogougao jer nije ograničen dužima, nego zakrivljenom linijom. Mnogougao uvek ima stranice koje su duži.', 'krug',
@@ -178,23 +178,23 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, pravilni, krug, luk, O, bez, papi
   Q(1, 'Šta je kružnica?',
     ['Skup tačaka jednako udaljenih od centra', 'Skup tačaka unutar kruga', 'Duž koja prolazi kroz centar', 'Zatvorena izlomljena linija'],
     'Kružnica je samo linija – sve tačke koje su na istoj udaljenosti od centra $O$. Ta udaljenost je poluprečnik.', 'kružnica',
-    { mediji: G({ O: [0, 0], A: [3, 0] }, [{ kr: 'O', r: 3, b: 1 }, { d: 'OA', b: 1, debljina: 3, o: 'r' }, { tx: 'O', at: [0, -0.5], vel: 14 }], { bezImena: ['O'], velicina: 260 }) });
+    { mediji: G({ O: [0, 0] }, [{ kr: 'O', r: 3, b: 1 }, { tx: 'O', at: [0, -0.5], vel: 14 }], { bezImena: ['O'], velicina: 260 }) });
   Q(1, 'Kako se zove duž koja spaja centar kružnice sa bilo kojom tačkom na kružnici?',
     ['Poluprečnik', 'Prečnik', 'Tetiva', 'Tangenta'],
     'Poluprečnik (radijus) je duž od centra do kružnice. Označavamo ga sa $r$. Svi poluprečnici jedne kružnice su jednaki.', 'poluprečnik',
-    { mediji: G({ O: [0, 0], A: [3, 0] }, [{ kr: 'O', r: 3, b: 1 }, { d: 'OA', b: 1, debljina: 3, o: 'r' }, { tx: 'O', at: [0, -0.5], vel: 14 }], { bezImena: ['O'], velicina: 260 }) });
+    { medijiOdgovora: G({ O: [0, 0], A: [3, 0] }, [{ kr: 'O', r: 3, b: 1 }, { d: 'OA', b: 1, debljina: 3, o: 'r' }, { tx: 'O', at: [0, -0.5], vel: 14 }], { bezImena: ['O'], velicina: 260 }) });
   Q(1, 'Kako se zove duž koja prolazi kroz centar i spaja dve tačke kružnice?',
     ['Prečnik', 'Poluprečnik', 'Tetiva', 'Sečica'],
     'Prečnik (dijametar) je najduža tetiva. Dva puta je duži od poluprečnika: $d = 2r$.', 'prečnik',
-    { mediji: G({ O: [0, 0], A: [-3, 0], B: [3, 0] }, [{ kr: 'O', r: 3, b: 1 }, { d: 'AB', b: 2, debljina: 3, o: 'd' }, { tx: 'O', at: [0, -0.5], vel: 14 }], { bezImena: ['O'], velicina: 260 }) });
+    { medijiOdgovora: G({ O: [0, 0], A: [-3, 0], B: [3, 0] }, [{ kr: 'O', r: 3, b: 1 }, { d: 'AB', b: 2, debljina: 3, o: 'd' }, { tx: 'O', at: [0, -0.5], vel: 14 }], { bezImena: ['O'], velicina: 260 }) });
   Q(2, 'Kako se zove prava koja dodiruje kružnicu u tačno jednoj tački?',
     ['Tangenta', 'Sečica', 'Tetiva', 'Simetrala'],
     'Tangenta dodiruje kružnicu u jednoj tački (dodirna tačka). Ona je normalna na poluprečnik u toj tački.', 'tangenta',
-    { mediji: G({ O: [0, 0], A: [0, 3], B: [-3, 3], C: [3, 3] }, [{ kr: 'O', r: 3, b: 1 }, { d: 'BC', b: 2, debljina: 3 }, { tacka: 'A', b: 1 }, { pu: 'OAB' }], { ...bez, velicina: 260 }) });
+    { medijiOdgovora: G({ O: [0, 0], A: [0, 3], B: [-3, 3], C: [3, 3] }, [{ kr: 'O', r: 3, b: 1 }, { d: 'BC', b: 2, debljina: 3 }, { tacka: 'A', b: 1 }, { pu: 'OAB' }], { ...bez, velicina: 260 }) });
   Q(2, 'Kako se zove prava koja seče kružnicu u dve tačke?',
     ['Sečica', 'Tangenta', 'Tetiva', 'Paralela'],
     'Sečica prolazi kroz kružnicu i seče je u dve tačke. Deo sečice unutar kružnice zove se tetiva.', 'sečica',
-    { mediji: G({ O: [0, 0], A: [-3.5, -1], B: [3.5, 1] }, [{ kr: 'O', r: 3, b: 1 }, { d: 'AB', b: 2, debljina: 3 }], { ...bez, velicina: 260 }) });
+    { medijiOdgovora: G({ O: [0, 0], A: [-3.5, -1], B: [3.5, 1] }, [{ kr: 'O', r: 3, b: 1 }, { d: 'AB', b: 2, debljina: 3 }], { ...bez, velicina: 260 }) });
   Q(2, 'Šta je krug (za razliku od kružnice)?',
     ['Kružnica sa svim tačkama unutar nje', 'Samo linija oko centra', 'Centar sa poluprečnikom', 'Najduža tetiva kružnice'],
     'Kružnica je samo linija, a krug je linija PLUS sve unutrašnje tačke. Kružnica je „obod“, krug je „puna ploča“.', 'krug',
@@ -202,7 +202,7 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, pravilni, krug, luk, O, bez, papi
   Q(3, 'Duž koja spaja dve tačke kružnice, a ne mora da prolazi kroz centar, zove se…',
     ['Tetiva', 'Prečnik', 'Poluprečnik', 'Tangenta'],
     'Tetiva spaja bilo koje dve tačke kružnice. Prečnik je posebna tetiva – ona koja prolazi kroz centar i najduža je.', 'tetiva',
-    { mediji: G({ O: [0, 0], A: [-2.4, -1.8], B: [2.4, -1.8] }, [{ kr: 'O', r: 3, b: 1 }, { d: 'AB', b: 2, debljina: 3 }], { ...bez, velicina: 260 }) });
+    { mediji: G({ O: [0, 0] }, [{ kr: 'O', r: 3, b: 1 }], { bezImena: ['O'], velicina: 260 }), medijiOdgovora: G({ O: [0, 0], A: [-2.4, -1.8], B: [2.4, -1.8] }, [{ kr: 'O', r: 3, b: 1 }, { d: 'AB', b: 2, debljina: 3 }], { ...bez, velicina: 260 }) });
   Q(2, 'Koliko puta je prečnik duži od poluprečnika?',
     ['2 puta', '3 puta', '4 puta', 'Isti su'],
     'Prečnik je $2$ puta duži od poluprečnika: $d=2r$. Ako je poluprečnik 5 cm, prečnik je 10 cm.', 'prečnik',
@@ -236,7 +236,7 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, pravilni, krug, luk, O, bez, papi
   Q(1, 'Šta je vektor?',
     ['Usmerena duž', 'Obična duž', 'Tačka', 'Prava'],
     'Vektor je duž kojoj je važan i smer – zato ga crtamo sa strelicom. Njime opisujemo pomeranje (translaciju).', 'vektor',
-    { mediji: G({ A: [0, 0], B: [4, 0] }, [{ d: 'AB', b: 1, str: 1, debljina: 4 }], { velicina: 240 }) });
+    { medijiOdgovora: G({ A: [0, 0], B: [4, 0] }, [{ d: 'AB', b: 1, str: 1, debljina: 4 }], { velicina: 240 }) });
   Q(1, 'Šta sve određuje jedan vektor?',
     ['Pravac, smer i dužina', 'Samo dužina', 'Samo pravac', 'Boja i debljina'],
     'Vektor ima tri osobine: pravac (na kojoj je liniji), smer (na koju stranu pokazuje strelica) i intenzitet (dužinu).', 'vektor',
@@ -244,7 +244,7 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, pravilni, krug, luk, O, bez, papi
   Q(1, 'Kako se zove pomeranje figure duž vektora?',
     ['Translacija', 'Rotacija', 'Simetrija', 'Merenje'],
     'Translacija je klizanje figure bez okretanja – svaka tačka figure pomeri se za isti vektor. Figura ostaje ista, samo promeni mesto.', 'translacija',
-    { mediji: G({ A: [0, 0], B: [1.8, 0], C: [0.6, 1.8], D: [4.2, 1.2] }, [{ p: 'ABC', b: 1, gusto: 1 }, { d: 'AD', b: 4, str: 1, isp: 1, debljina: 3 }], { velicina: 240 }) });
+    { medijiOdgovora: G({ A: [0, 0], B: [1.8, 0], C: [0.6, 1.8], D: [4.2, 1.2] }, [{ p: 'ABC', b: 1, gusto: 1 }, { d: 'AD', b: 4, str: 1, isp: 1, debljina: 3 }], { velicina: 240 }) });
   Q(2, 'Kada su dva vektora jednaka?',
     ['Isti pravac, smer i dužina', 'Ista dužina i početak', 'Isti pravac i dužina', 'Isti smer i početak'],
     'Dva vektora su jednaka ako su im pravac, smer i dužina isti. Mesto početka nije bitno – vektor se može pomeriti, a da ostane isti.', 'vektor',
@@ -252,10 +252,10 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, pravilni, krug, luk, O, bez, papi
   Q(2, 'Pri translaciji trougla za neki vektor, šta se dešava sa dužinama stranica?',
     ['Ostaju iste', 'Povećaju se', 'Smanje se', 'Zavisi od vektora'],
     'Translacija ne menja ni oblik ni veličinu figure – samo je pomera. Zato su dužine stranica i uglovi posle translacije isti.', 'translacija',
-    { mediji: G({ A: [0, 0], B: [1.6, 0], C: [0.6, 1.6], "A'": [3, 1.2], "B'": [4.6, 1.2], "C'": [3.6, 2.8] }, [{ p: 'ABC', b: 0 }, { p: "A'B'C'", b: 1 }, { d: "AA'", b: 2, str: 1, isp: 1 }], { velicina: 280 }) });
+    { medijiOdgovora: G({ A: [0, 0], B: [1.6, 0], C: [0.6, 1.6], "A'": [3, 1.2], "B'": [4.6, 1.2], "C'": [3.6, 2.8] }, [{ p: 'ABC', b: 0 }, { p: "A'B'C'", b: 1 }, { d: "AA'", b: 2, str: 1, isp: 1 }], { velicina: 280 }) });
   Q(3, 'Gde se piše strelica u oznaci vektora?',
     ['Iznad slova', 'Ispod slova', 'Ispred slova', 'Između slova'],
     'Vektor označavamo strelicom iznad slova: $\\vec{AB}$ ili $\\vec{v}$. Strelica pokazuje da je smer važan.', 'vektor',
-    { mediji: G({ A: [0, 0], B: [4, 0] }, [{ d: 'AB', b: 1, str: 1, debljina: 4 }, { tx: 'A', at: [0, -0.5], vel: 15 }, { tx: 'B', at: [4, -0.5], vel: 15 }], { velicina: 260 }) });
+    { medijiOdgovora: G({ A: [0, 0], B: [4, 0] }, [{ d: 'AB', b: 1, str: 1, debljina: 4 }, { tx: 'A', at: [0, -0.5], vel: 15 }, { tx: 'B', at: [4, -0.5], vel: 15 }], { velicina: 260 }) });
 
 };

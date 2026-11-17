@@ -1,5 +1,5 @@
 // Tema 4: Razlomci – prvi deo (lekcije 4.1–4.5)
-module.exports = ({ L, Z, K, G, O, bez, r, proveri, traka, pica, skok, skokovi, sto, isti, nzs }) => {
+module.exports = ({ L, Z, K, G, R, O, bez, r, proveri, traka, pica, skok, skokovi, sto, isti, nzs }) => {
   const pr = (x, y, w, h, x2 = {}) => ({ lin: [[x, y], [x + w, y], [x + w, y + h], [x, y + h]].map((p) => p.map(r)), zatv: 1, ...x2 });
   const g = (e, vel = 240) => G(O, e, { ...bez, velicina: vel });
   // brojevna poluprava od a do b sa podeocima 1/n i natpisima celih brojeva
@@ -67,7 +67,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, traka, pica, skok, skokovi, 
     [K('${1|3}$ od $24$: $24 : 3 = 8$ kockica (Ana).', ['a']),
      K('${1|4}$ od $24$: $24 : 4 = 6$ kockica (Bojan).', ['b']),
      K('Ostalo: $24 − 8 − 6 = 10$ kockica.')],
-    g([...Array(24)].map((_, i) => pr((i % 6) * 0.8, Math.floor(i / 6) * 0.8, 0.75, 0.75, { b: i < 8 ? 1 : i < 14 ? 2 : 3, gusto: 1, ...(i < 8 ? { k: 1, id: 'a' } : i < 14 ? { k: 2, id: 'b' } : {}) })).concat([...Array(24)].map((_, i) => pr((i % 6) * 0.8, Math.floor(i / 6) * 0.8, 0.75, 0.75, { b: 3, gusto: 1, kraj: i < 8 ? 1 : i < 14 ? 2 : 99 }))), 200));
+    R(g([...Array(24)].map((_, i) => pr((i % 6) * 0.8, Math.floor(i / 6) * 0.8, 0.75, 0.75, { b: i < 8 ? 1 : i < 14 ? 2 : 3, gusto: 1, ...(i < 8 ? { k: 1, id: 'a' } : i < 14 ? { k: 2, id: 'b' } : {}) })).concat([...Array(24)].map((_, i) => pr((i % 6) * 0.8, Math.floor(i / 6) * 0.8, 0.75, 0.75, { b: 3, gusto: 1, kraj: i < 8 ? 1 : i < 14 ? 2 : 99 }))), 200)));
 
   // ════════════════ 4.2 Razlomci na brojevnoj polupravoj ════════════════
   L('Razlomci na brojevnoj polupravoj');
@@ -114,7 +114,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, traka, pica, skok, skokovi, 
      K('Brojioci od $1$ do $11$: ukupno $11$ tačaka.', ['t'])],
     G({}, [osa(0, 3, 4), ...[...Array(11)].map((_, i) => ({ tx: '●', at: [(i + 1) / 4, 0.05], b: 1, k: 2, id: 't' }))], { ...bez, velicina: 280 }));
 
-  Z(3, 'Na polupravoj podeljenoj na šestine, koliko podeoka ima između tačaka ${1|2}$ i ${5|3}$?',
+  Z(3, 'Na polupravoj podeljenoj na šestine, za koliko šestina je tačka ${5|3}$ dalja od tačke ${1|2}$?',
     ['$7$', '$4$', '$6$', '$3$'],
     [K('U šestinama: ${1|2} = {3|6}$ i ${5|3} = {10|6}$.'),
      K('Od $3$ do $10$ šestina: $10 − 3 = 7$ koraka po ${1|6}$.', ['s'])],
@@ -159,7 +159,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, traka, pica, skok, skokovi, 
      K('$27 < 28 < 30$: ${3|4} < {7|9} < {5|6}$.')]);
 
   Z(2, 'Jedan radnik je uradio ${3|8}$ posla, a drugi ${5|12}$. Ko je uradio više?',
-    ['drugi', 'prvi', 'jednako su uradili', 'ne može se odrediti'],
+    ['drugi', 'prvi', 'jednako su uradili', 'prvi, za ${1|24}$ posla'],
     [K('$NZS(8, 12) = 24$: ${3|8} = {9|24}$, ${5|12} = {10|24}$.'),
      K('$10 > 9$ – drugi je uradio više (za ${1|24}$ posla).')]);
   proveri(3 * 24 / 8 === 9 && 5 * 24 / 12 === 10, 'radnici');
@@ -193,7 +193,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, traka, pica, skok, skokovi, 
     ['${3|4}$', '${7|5}$', '${75|10}$', '${1|75}$'],
     [K('$0,75 = {75|100}$.', ['s']),
      K('Skraćujemo sa $25$: ${3|4}$ litra.')],
-    g([...sto(75, { id: 's' })], 160));
+    R(g([...sto(75, { id: 's' })], 160)));
 
   Z(1, 'Zapiši ${3|5}$ u decimalnom zapisu.',
     ['$0,6$', '$0,35$', '$3,5$', '$0,53$'],
@@ -210,7 +210,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, traka, pica, skok, skokovi, 
     ['$0,35$', '$0,72$', '$7,2$', '$0,7$'],
     [K('Proširimo sa $5$ do stotih delova: ${7|20} = {35|100}$.'),
      K('${35|100} = 0,35$ – $35$ kvadratića od $100$.', ['s'])],
-    g(sto(35, { k: 2, id: 's' }), 160));
+    R(g(sto(35, { k: 2, id: 's' }), 160)));
 
   Z(2, 'Zapiši ${5|8}$ u decimalnom zapisu.',
     ['$0,625$', '$0,58$', '$1,6$', '$0,85$'],
@@ -285,7 +285,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, traka, pica, skok, skokovi, 
 
   Z(2, 'Koliko ima brojeva sa tačno dve decimale između $3,4$ i $3,5$?',
     ['$9$', '$10$', '$11$', '$99$'],
-    [K('To su $3,41; 3,42; …; 3,49$ (bez $3,40$ i $3,50$ – oni imaju jednu decimalu, a i granice nisu uključene).'),
+    [K('To su $3,41; 3,42; …; 3,49$ (bez $3,40$ i $3,50$, jer granice nisu uključene).'),
      K('Ukupno $9$ brojeva.')]);
 
   Z(3, 'Koji je najveći broj sa dve decimale koji zaokrugljen na jednu decimalu daje $5,3$?',

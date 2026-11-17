@@ -73,7 +73,7 @@ module.exports = ({ L, Z, K, G, r, S3, proveri, pravilni, naKrugu }) => {
      K('Saberemo sve tri jednakosti: $2(r₁ + r₂ + r₃) = 18$, pa je $r₁ + r₂ + r₃ = 9$.'),
      K('$r₃ = 9 − 5 = 4$, $r₁ = 9 − 6 = 3$, $r₂ = 9 − 7 = 2$. Najveći je $4 cm$.', ['k3'])],
     G({ 'O₁': [0, 0, 200], 'O₂': [5, 0, -20], 'O₃': [3.8, 5.879, 90] },
-      [{ kr: 'O₁', r: 3, b: 0 }, { kr: 'O₂', r: 2, b: 1 }, { kr: 'O₃', r: 4, b: 2, id: 'k3' }, { p: 'O₁O₂O₃', b: 3, prazno: 1, isp: 1 }, { d: 'O₁O₂', o: '5' }, { d: 'O₂O₃', o: '6' }, { d: 'O₁O₃', o: '7' }], { velicina: 240 }));
+      [{ kr: 'O₁', r: 3, b: 0, k: 1 }, { kr: 'O₂', r: 2, b: 1, k: 1 }, { kr: 'O₃', r: 4, b: 2, id: 'k3', k: 1 }, { p: 'O₁O₂O₃', b: 3, prazno: 1, isp: 1 }, { d: 'O₁O₂', o: '5' }, { d: 'O₂O₃', o: '6' }, { d: 'O₁O₃', o: '7' }], { velicina: 240 }));
   proveri(Math.abs(Math.hypot(3.8, 5.879) - 7) < 0.01 && Math.abs(Math.hypot(1.2, 5.879) - 6) < 0.01, 'tri kruga: rastojanja centara 7 i 6');
 
   Z(3, 'U pravougli trougao sa katetama $6 cm$ i $8 cm$ upisan je krug. Koliki je njegov poluprečnik?',
@@ -83,7 +83,7 @@ module.exports = ({ L, Z, K, G, r, S3, proveri, pravilni, naKrugu }) => {
      K('Iz $A$: $8 − r$, iz $B$: $6 − r$, a one zajedno čine hipotenuzu: $(8 − r) + (6 − r) = 10$.'),
      K('$14 − 2r = 10$, pa je $r = 2 cm$.')],
     G({ C: [0, 0, 225], A: [8, 0], B: [0, 6], O: [2, 2], M: [2, 0], N: [0, 2] },
-      [{ p: 'ABC', b: 0 }, { pu: 'ACB' }, { kr: 'O', r: 2, b: 1 }, { p: 'CMON', b: 3, id: 'kv', k: 2 }, { d: 'CA', o: '8 cm' }, { d: 'CB', o: '6 cm' }], { bezImena: ['O', 'M', 'N'] }));
+      [{ p: 'ABC', b: 0 }, { pu: 'ACB' }, { kr: 'O', r: 2, b: 1, k: 1 }, { p: 'CMON', b: 3, id: 'kv', k: 2 }, { d: 'CA', o: '8 cm' }, { d: 'CB', o: '6 cm' }], { bezImena: ['O', 'M', 'N'] }));
 
   // ════════════════ 5.2 Centralni i periferijski ugao ════════════════
   L('Centralni i periferijski ugao kruga');
@@ -299,7 +299,7 @@ module.exports = ({ L, Z, K, G, r, S3, proveri, pravilni, naKrugu }) => {
     G({ O: [0, 0], A: kp(30, 6), B: kp(150, 6) },
       [{ is: 'O', r: 6, od: 30, do: 150, b: 0, id: 'is' }, { l: 'O', r: 6, od: 30, do: 150, b: 1, pun: 1, id: 'luk', k: 2 }, { d: 'OA', o: '6 cm' }, { d: 'OB' }, { u: 'AOB', o: '120°', r: 20 }], { bezImena: ['O', 'A', 'B'], velicina: 220 }));
 
-  Z(3, 'Atletska staza ima dve prave deonice od po $80 m$ i dva polukruga. Unutrašnja ivica polukruga ima poluprečnik $30 m$. Koliko je duži krug po liniji udaljenoj $1 m$ od unutrašnje ivice?',
+  Z(3, 'Atletska staza ima dve prave deonice od po $80 m$ i dva polukruga. Unutrašnja ivica polukruga ima poluprečnik $30 m$. Koliko je duži krivi deo staze (dva polukruga) po liniji udaljenoj $1 m$ od unutrašnje ivice, nego po samoj unutrašnjoj ivici?',
     ['$2π ≈ 6,28 m$', '$π ≈ 3,14 m$', '$4 m$', '$60π m$'],
     [K('Prave deonice su iste ($2 · 80 m$), menja se samo dužina dva polukruga – zajedno jedan pun krug.'),
      K('Unutra: $2 · 30 · π$, spolja: $2 · 31 · π$. Razlika: $2 · 1 · π = 2π ≈ 6,28 m$.'),
@@ -346,10 +346,10 @@ module.exports = ({ L, Z, K, G, r, S3, proveri, pravilni, naKrugu }) => {
       [{ p: 'ABCD', b: 3, id: 'ost', gusto: 1 }, { kr: 'O', r: 5, b: 0, pun: 1, id: 'kr', gusto: 1 }, { d: 'AB', o: '10 cm' }], { bezImena: ['O', 'A', 'B', 'C', 'D'], velicina: 200 }));
 
   Z(2, 'Šta je više: jedna pica prečnika $30 cm$ ili dve pice prečnika $20 cm$ (iste debljine)?',
-    ['jedna velika ($225π$ prema $200π cm²$)', 'dve male ($200π$ prema $150π cm²$)', 'jednako je', 'dve male ($400π$ prema $225π cm²$)'],
+    ['jedna velika ($225π$ prema $200π cm²$)', 'dve male ($200π$ prema $225π cm²$)', 'jednako je', 'dve male ($400π$ prema $225π cm²$)'],
     [K('Velika: $r = 15 cm$, $P = 225π cm²$.'),
      K('Male: $r = 10 cm$, $P = 100π$ svaka – ukupno $200π cm²$.'),
-     K('Velika pica je veća za $25π ≈ 78,5 cm²$, iako je „$30 < 20 + 20$“. Površina raste sa kvadratom poluprečnika!')],
+     K('Velika pica je veća za $25π ≈ 78,5 cm²$, iako joj je prečnik ($30 cm$) manji od zbira prečnika dve male ($40 cm$). Površina raste sa kvadratom poluprečnika!')],
     G({ A: [0, 0], B: [21, 3.5], C: [21, -6.5] }, [{ kr: 'A', r: 7.5, b: 3, pun: 1 }, { kr: 'B', r: 5, b: 1, pun: 1 }, { kr: 'C', r: 5, b: 1, pun: 1 }, { tx: '30 cm', at: [0, 0] }, { tx: '20 cm', at: [21, 3.5] }, { tx: '20 cm', at: [21, -6.5] }], { bezImena: ['A', 'B', 'C'], velicina: 260 }));
 
   Z(2, 'Obim kruga je $12π cm$. Kolika je njegova površina?',
@@ -439,7 +439,7 @@ module.exports = ({ L, Z, K, G, r, S3, proveri, pravilni, naKrugu }) => {
       { bezImena: ['O'], velicina: 200 }));
 
   Z(3, 'Tetiva većeg kruga kružnog prstena dodiruje manji krug i duga je $10 cm$. Kolika je površina prstena?',
-    ['$25π cm²$', '$100π cm²$', '$10π cm²$', 'ne može se odrediti'],
+    ['$25π cm²$', '$100π cm²$', '$10π cm²$', '$50π cm²$'],
     [K('Tetiva dodiruje manji krug u svom središtu $M$, pa je $OM = r$ i $OM ⊥ AB$, $MB = 5 cm$.', ['omb']),
      K('Pitagora u trouglu $OMB$: $R² − r² = 5² = 25$.'),
      K('$P = R²π − r²π = (R² − r²)π = 25π cm²$ – a da ne znamo ni $R$ ni $r$!', ['pr'])],

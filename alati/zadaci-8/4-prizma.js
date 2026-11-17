@@ -5,7 +5,7 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, telo, A, kocke }) => {
   L('Pojam, vrste i elementi prizme');
 
   Z(1, 'Prizma je telo koje ima dve podudarne paralelne osnove i…',
-    ['bočne strane pravougaonike', 'bočne strane trouglove', 'jednu osnovu', 'bočne strane krugove'],
+    ['bočne strane paralelograme', 'bočne strane trouglove', 'jednu osnovu', 'bočne strane krugove'],
     [K('Prizma ima dve podudarne i paralelne osnove (mnogouglovi).'),
      K('Bočne strane su paralelogrami; kod prave prizme to su pravougaonici.'),
      K('Prizma se naziva po osnovi: trostrana, četvorostrana, šestostrana…')]);
@@ -53,7 +53,7 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, telo, A, kocke }) => {
     ['$13 cm$', '$5 cm$', '$12 cm$', '$19 cm$'],
     [K('$D² = a² + b² + c² = 3² + 4² + 12²$.'),
      K('$D² = 9 + 16 + 144 = 169$, pa je $D = 13 cm$.'),
-     K('To je trojka $3, 4, 12 → 13$.', [], telo('kvadar', { opis: 'Dijagonala spaja suprotna temena' }))]);
+     K('Brže: $√{3² + 4²} = 5$, pa je $D = √{5² + 12²} = 13 cm$.', [], telo('kvadar', { opis: 'Dijagonala spaja suprotna temena' }))]);
 
   Z(2, 'Kocka ima ivicu $2 cm$. Kolika je dijagonala njene strane?',
     ['$2√{2} cm$', '$4 cm$', '$2√{3} cm$', '$8 cm$'],
@@ -94,7 +94,7 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, telo, A, kocke }) => {
      K('U mreži je to $2$ šestougla i $6$ pravougaonika.')]);
 
   Z(3, 'Da li se svaki raspored $6$ kvadrata savije u kocku?',
-    ['Ne', 'Da', 'Da, ako su kvadrati jednaki', 'Samo ako su obojeni'],
+    ['Ne', 'Da', 'Da, ako su kvadrati jednaki', 'Samo ako je raspored u obliku krsta'],
     [K('Ne – samo $11$ od mnogo rasporeda $6$ kvadrata daju mrežu kocke.'),
      K('Neki rasporedi se preklapaju ili ostavljaju rupe pri savijanju.'),
      K('Proveri crtanjem i isecanjem!')]);
@@ -171,12 +171,11 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, telo, A, kocke }) => {
      K('Površina bi bila $6 · 81 = 486 cm²$.'),
      K('Zapreminu kocke možemo zamisliti i kao kockice od $1 cm³$: $9$ redova × $9$ kolona × $9$ slojeva.', [], telo('kocka', { opis: 'Zapremina kocke: a · a · a' }))]);
 
-  Z(1, 'Kvadar se sastoji od $24$ kockice ivice $1 cm$, raspoređene kao $2 × 3 × 4$. Kolika mu je zapremina?',
-    ['$24 cm³$', '$9 cm³$', '$48 cm³$', '$12 cm³$'],
-    [K('Broj kockica ivice $1 cm$ jednak je zapremini u $cm³$.'),
-     K('Kvadar se sastoji od $2 · 3 · 4 = 24$ kockice.'),
-     K('Zapremina kvadra je proizvod tri dimenzije: $V = a · b · c$.')],
-    kocke(2, 3, 4));
+  Z(1, 'Koliko kockica ivice $1 cm$ staje u kvadar dimenzija $2 cm × 3 cm × 4 cm$?',
+    ['$24$', '$9$', '$48$', '$12$'],
+    [K('Broj kockica ivice $1 cm$ jednak je zapremini kvadra u $cm³$.'),
+     K('$V = 2 · 3 · 4 = 24 cm³$, pa staje $24$ kockice.'),
+     K('Slaganje kockica:', [], kocke(2, 3, 4))]);
 
   Z(2, 'Kvadar ima dimenzije $5 cm$, $4 cm$ i $10 cm$. Kolika mu je zapremina?',
     ['$200 cm³$', '$100 cm³$', '$20 cm³$', '$50 cm³$'],
@@ -276,17 +275,17 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, telo, A, kocke }) => {
   Z(3, 'Kvadar ima ivice $3 cm$ i $4 cm$, a dijagonalu $13 cm$. Kolika je treća ivica?',
     ['$12 cm$', '$10 cm$', '$6 cm$', '$9 cm$'],
     [K('$13² = 9 + 16 + c²$, pa je $c² = 144$ i $c = 12 cm$.')]);
-  Z(3, 'Telesna dijagonala kocke ivice $a$ je:',
-    ['$a√{3}$', '$a√{2}$', '$2a$', '$3a$'],
-    [K('$D = √{a² + a² + a²} = a√{3}$.')]);
+  Z(3, 'Kvadar ima ivice $2 cm$, $6 cm$ i $9 cm$. Kolika mu je dijagonala?',
+    ['$11 cm$', '$7 cm$', '$13 cm$', '$15 cm$'],
+    [K('$D² = 4 + 36 + 81 = 121$, pa je $D = 11 cm$.')]);
 
   L('Mreža prizme');
   Z(2, 'Mreža kvadra sastoji se od:',
-    ['6 pravougaonika', '6 kvadrata', '4 pravougaonika', '2 kvadrata i 4 pravougaonika'],
+    ['6 pravougaonika', '6 kvadrata', '4 pravougaonika', '3 kvadrata i 3 trougla'],
     [K('Kvadar ima $6$ pravougaonih strana.')]);
-  Z(2, 'Mreža trostrane prizme sastoji se od:',
-    ['2 trougla i 3 pravougaonika', '3 trougla', '2 trougla i 2 pravougaonika', '6 trouglova'],
-    [K('Dve trouglaste osnove + tri bočna pravougaonika.')]);
+  Z(2, 'Koliko pravougaonika ima omotač petostrane prave prizme?',
+    ['5', '10', '4', '7'],
+    [K('Omotač čine bočne strane – one su pravougaonici, po jedan za svaku od $5$ bočnih strana.')]);
   Z(3, 'Mreža petostrane prizme sastoji se od:',
     ['2 petougla i 5 pravougaonika', '5 petouglova', '1 petougla i 5 pravougaonika', '2 petougla i 3 pravougaonika'],
     [K('Dve petouglaste osnove + pet bočnih pravougaonika = $7$ mnogouglova.')]);
@@ -382,7 +381,7 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, telo, A, kocke }) => {
     [K('$V = 8 · 4 · 2 = 64 m³$.')]);
   Z(3, 'Kocka ima ivicu $2 dm$. Koliko litara vode staje u nju?',
     ['8 litara', '4 litra', '2 litra', '6 litara'],
-    [K('$V = 2³ = 8 dm³ = 8$ litara (jer je $1\,dm³ = 1$ litar).')]);
+    [K('$V = 2³ = 8 dm³ = 8$ litara (jer je $1 dm³ = 1$ litar).')]);
   Z(2, 'Zemljište oblika kvadra dužine $10 m$, širine $5 m$ i dubine $3 m$. Koliko $m³$ zemlje treba iskopati?',
     ['$150 m³$', '$50 m³$', '$30 m³$', '$300 m³$'],
     [K('$V = 10 · 5 · 3 = 150 m³$.')]);

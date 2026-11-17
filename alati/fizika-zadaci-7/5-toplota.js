@@ -73,7 +73,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, T, mera, stubovi }) => {
     [K('Voda se ponaša neobično: između $0 °C$ i $4 °C$ pri zagrevanju se skuplja.'),
      K('Najmanju zapreminu (najveću gustinu) ima na $4 °C$, a posle se širi kao i druge tečnosti.'),
      K('Zato zimi na dnu jezera ostaje voda od $4 °C$, a led pliva na površini.')],
-    S('termometar', { skale: ['C', 'K'], od: -10, do: 30, tacke: [{ c: 4, o: '~najveća gustina' }] }));
+    S('termometar', { skale: ['C', 'K'], od: -10, do: 30 }));
 
   // ════════════════ 20. Količina toplote i specifični toplotni kapacitet ════════════════
   L('Količina toplote i specifični toplotni kapacitet');
@@ -124,7 +124,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, T, mera, stubovi }) => {
     ['Od gvožđa', 'Od aluminijuma', 'Od bakra', 'Od olova'],
     [K('$c = {Q|m Δt} = {9 200 J|0,5 kg · 40 °C}$.'),
      K('$c = {9 200|20} = 460 J/(kg · °C)$ – to je gvožđe.')],
-    S('kalorimetar', { tip: 'grejanje', m: '0,5 kg', e: '🔩', t1: 20, t2: 60, Q: '9,2 kJ', tecnost: '?' }));
+    S('kalorimetar', { tip: 'grejanje', m: '0,5 kg', t1: 20, t2: 60, Q: '9,2 kJ', tecnost: '?' }));
 
   proveri((4 * cv) / 800, 21);
   Z(2, 'Voda i pesak iste mase prime istu količinu toplote. Voda se zagreje za $4 °C$. Za koliko se zagreje pesak? ($c_{vode} = 4 200$, $c_{peska} = 800 J/(kg · °C)$)',
@@ -210,7 +210,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, T, mera, stubovi }) => {
     { crtez: G(vaga(126, 126, 'kJ', { k: [1, 2], id: [null, 'v'] }), { velicina: 200 }) });
 
   Z(1, 'Vruć čaj sipamo u hladnu šolju. Šta se dešava dok se ne uspostavi toplotna ravnoteža?',
-    ['Toplota prelazi sa čaja na šolju dok im se temperature ne izjednače', 'Hladnoća prelazi sa šolje na čaj', 'Toplota prelazi sa šolje na čaj', 'Ništa – svako telo zadržava svoju temperaturu'],
+    ['Toplota prelazi sa čaja na šolju dok im se temperature ne izjednače', 'Hladnoća prelazi sa šolje na čaj', 'Toplota prelazi sa šolje na čaj', 'Toplota naizmenično prelazi sa čaja na šolju i obrnuto'],
     [K('Toplota spontano prelazi uvek sa toplijeg na hladnije telo.'),
      K('Čaj se hladi, šolja se greje – dok ne dostignu istu temperaturu (toplotna ravnoteža).', ['q'])],
     null,

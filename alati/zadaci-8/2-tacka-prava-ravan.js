@@ -15,7 +15,7 @@ module.exports = ({ L, Z, G, K, telo }) => {
     [K('Kroz jednu tačku može se povući bezbroj pravih – sve one čine „pramen“ pravih kroz $A$.'),
      K('Zato je za jednoznačno određivanje prave potrebna još jedna tačka.')]);
 
-  Z(2, 'Koliko najviše pravih može proći kroz $4$ tačke u istoj ravni, ako nikoje tri nisu kolinearne?',
+  Z(2, 'Koliko najviše pravih određuju $4$ tačke u istoj ravni, ako nikoje tri nisu na istoj pravoj?',
     ['6', '4', '12', '8'],
     [K('Prava je određena parom tačaka; tražimo broj parova od $4$ tačke.'),
      K('$C_{4}^{2} = {4 · 3|2} = 6$ pravih.'),
@@ -69,11 +69,11 @@ module.exports = ({ L, Z, G, K, telo }) => {
      K('Dve prave koje se poklapaju imaju beskonačno mnogo zajedničkih tačaka.')]);
 
   Z(2, 'Ako je prava $a$ paralelna sa $b$, a $b$ paralelna sa $c$, šta važi za $a$ i $c$?',
-    ['Paralelne su', 'Seku se', 'Mimoilazne su', 'Ne znamo'],
+    ['Paralelne su', 'Seku se', 'Mimoilazne su', 'Normalne su'],
     [K('Odnos paralelnosti je tranzitivan: ako je $a \\| b$ i $b \\| c$, onda je i $a \\| c$.'),
      K('Ili se $a$ i $c$ poklapaju, ako su sve tri ista prava – ali u svakom slučaju se ne seku.')]);
 
-  Z(3, 'Kroz tačku $A$ van prave $p$ može se povući…',
+  Z(3, 'Kroz tačku $A$ van prave $p$, u istoj ravni sa njom, može se povući…',
     ['tačno jedna paralela sa $p$', 'beskonačno mnogo paralela sa $p$', 'nijedna paralela', 'tačno dve paralele'],
     [K('Ovo je Euklidov postulat (aksiom) o paralelama.'),
      K('Kroz tačku van prave prolazi tačno jedna prava paralelna datoj.'),
@@ -93,7 +93,7 @@ module.exports = ({ L, Z, G, K, telo }) => {
     [K('Mimoilazne prave se ne seku, pa nemaju zajedničkih tačaka.'),
      K('Razlika u odnosu na paralelne: paralelne leže u istoj ravni, mimoilazne ne.')]);
 
-  Z(2, 'Na kocki, ivica $AB$ i ivica $EH$ (koje ne leže u istoj ravni) su…',
+  Z(2, 'Na kocki, ivica $AB$ i ivica $EH$ su…',
     ['mimoilazne', 'paralelne', 'normalne', 'podudarne'],
     [K('Ivica $AB$ leži u donjoj osnovi, a $EH$ u gornjoj; idu u različitim smerovima i nisu paralelne.'),
      K('Ne seku se i ne leže u istoj ravni – dakle mimoilazne su.', [], telo('kocka', { opis: 'Okreni kocku i pronađi ivice AB i EH' }))]);
@@ -114,7 +114,7 @@ module.exports = ({ L, Z, G, K, telo }) => {
      K('Ako prava leži u ravni, imaju beskonačno mnogo zajedničkih tačaka.')]);
 
   Z(2, 'Prava je normalna na ravan ako je normalna na…',
-    ['dve prave u ravni koje se seku', 'jednu pravu u ravni', 'sve prave osim jedne', 'bilo koju pravu u ravni'],
+    ['dve prave u ravni koje se seku', 'jednu pravu u ravni', 'sve prave osim jedne', 'dve paralelne prave u ravni'],
     [K('Da bi prava bila normalna na ravan, mora biti normalna na svaku pravu u ravni.'),
      K('Dovoljno je proveriti dve prave u ravni koje se seku – ako je prava normalna na obe, normalna je na celu ravan.')]);
 
@@ -145,11 +145,10 @@ module.exports = ({ L, Z, G, K, telo }) => {
      K('Primer: zid i pod u sobi seku se po pravoj duž spoja.'),
      K('Dve ravni se ne mogu seći samo u jednoj tački.')]);
 
-  Z(3, 'Pod i plafon sobe su paralelne ravni. Rastojanje između njih je $2,7 m$. Koliko je rastojanje od poda do tačke na plafonu?',
-    ['$2,7 m$', 'Zavisi od tačke', '$5,4 m$', '$1,35 m$'],
-    [K('Rastojanje između paralelnih ravni je isto u svakoj tački.'),
-     K('Sve tačke plafona su na $2,7 m$ od poda.'),
-     K('Zato se visina sobe meri bilo gde.')]);
+  Z(3, 'Pod i plafon sobe su paralelne ravni na rastojanju $2,7 m$. Lampa visi $1,2 m$ ispod plafona. Koliko je lampa udaljena od poda?',
+    ['$1,5 m$', '$3,9 m$', '$1,2 m$', '$2,7 m$'],
+    [K('Rastojanje između paralelnih ravni je isto u svakoj tački: svaka tačka plafona je na $2,7 m$ od poda.'),
+     K('Lampa je $1,2 m$ ispod plafona, pa je od poda udaljena $2,7 − 1,2 = 1,5 m$.')]);
 
   // ════════════════ 2.7 Normalna projekcija tačke, prave i duži na ravan ════════════════
   L('Normalna projekcija tačke, prave i duži na ravan');
@@ -161,7 +160,7 @@ module.exports = ({ L, Z, G, K, telo }) => {
      K('Projekcija je kao senka kad sunce sija tačno odozgo.')]);
 
   Z(2, 'Normalna projekcija kose duži na ravan je…',
-    ['duž (ili tačka)', 'uvek tačka', 'uvek duž jednake dužine', 'prava'],
+    ['duž', 'tačka', 'duž jednake dužine', 'prava'],
     [K('Ako duž nije normalna na ravan, njena projekcija je duž (kraća ili jednaka originalu).'),
      K('Ako je duž normalna na ravan, cela se projicira u jednu tačku.'),
      K('Projekcija duži je duž čija je dužina uvek manja ili jednaka dužini originala.')]);
@@ -190,7 +189,7 @@ module.exports = ({ L, Z, G, K, telo }) => {
   Z(3, 'Duž duga $10 cm$ nagnuta je prema ravni pod uglom od $30°$. Kolika je njena normalna projekcija na ravan?',
     ['$5√{3} cm$', '$5 cm$', '$10 cm$', '$10√{3} cm$'],
     [K('U pravouglom trouglu koji čine duž, projekcija i normala: projekcija je nalegla kateta ugla od $30°$.'),
-     K('Trougao sa uglom od $30°$ je polovina jednakostraničnog trougla: kateta naspram $30°$ je pola hipotenuze, a druga kateta je $5√{3}$ puta veća od nje.'),
+     K('Trougao sa uglom od $30°$ je polovina jednakostraničnog trougla: kateta naspram $30°$ je pola hipotenuze, a druga kateta je $√{3}$ puta duža od nje.'),
      K('Hipotenuza je $10 cm$, pa je kraća kateta (normalna na ravan) $5 cm$, a projekcija (duža kateta) je $5√{3} cm ≈ 8,66 cm$.')]);
 
   // ════════════ dopuna do 10 po lekciji ════════════
@@ -205,10 +204,10 @@ module.exports = ({ L, Z, G, K, telo }) => {
   Z(2, 'Tri tačke koje leže na istoj pravoj zovu se:',
     ['kolinearne', 'nekolinearne', 'podudarne', 'paralelne'],
     [K('Kolinearne tačke leže na istoj pravoj.')]);
-  Z(3, 'Koliko najviše pravih može proći kroz $3$ nekolinearne tačke?',
+  Z(3, 'Koliko najviše pravih određuju $3$ nekolinearne tačke?',
     ['3', '1', '6', '2'],
     [K('Svaki par tačaka daje po jednu pravu: $3$ prave (stranice trougla).')]);
-  Z(3, 'Koliko najviše pravih može proći kroz $5$ tačaka, ako nikoje tri nisu kolinearne?',
+  Z(3, 'Koliko najviše pravih određuje $5$ tačaka, ako nikoje tri nisu kolinearne?',
     ['10', '5', '20', '15'],
     [K('$C_{5}^{2} = {5 · 4|2} = 10$ pravih.')]);
   Z(2, 'Tačke koje leže na istoj pravoj su:',
@@ -245,15 +244,15 @@ module.exports = ({ L, Z, G, K, telo }) => {
   Z(2, 'Normalne prave seku se pod uglom:',
     ['$90°$', '$45°$', '$60°$', '$180°$'],
     [K('Normalne prave su uzajamno normalne – seku se pod pravim uglom.')]);
-  Z(2, 'Ako je $a \\| b$ i $b \\| c$, onda je:',
-    ['$a \\| c$', '$a$ normalno na $c$', '$a$ i $c$ se seku', 'ne znamo'],
-    [K('Paralelnost je tranzitivna: $a \\| b$ i $b \\| c$ daju $a \\| c$.')]);
+  Z(2, 'Ako je $a \\| b$ i $b$ normalna na $c$, onda je:',
+    ['$a$ normalna na $c$', '$a \\| c$', '$a$ i $c$ se seku', '$a$ i $c$ se poklapaju'],
+    [K('Prava $a$ ima pravac prave $b$, a $b$ je normalna na $c$, pa je i $a$ normalna na $c$.')]);
   Z(3, 'Dve prave koje se poklapaju imaju:',
     ['beskonačno mnogo zajedničkih tačaka', 'jednu zajedničku tačku', 'nijednu', 'dve zajedničke tačke'],
     [K('Ako se prave poklapaju, sve tačke su im zajedničke.')]);
-  Z(2, 'Koliko zajedničkih tačaka imaju dve prave koje se seku?',
-    ['Jednu', 'Nijednu', 'Dve', 'Beskonačno mnogo'],
-    [K('Prave koje se seku imaju tačno jednu zajedničku tačku.')]);
+  Z(2, 'Koliko najviše preseka mogu imati $3$ prave u ravni, ako nikoje dve nisu paralelne i nikoje tri nisu u istoj tački?',
+    ['3', '2', '6', '9'],
+    [K('Svake dve prave daju po jedan presek: $C_{3}^{2} = {3 · 2|2} = 3$.')]);
 
   L('Mimoilazne prave; presek pravih');
   Z(2, 'Da li mimoilazne prave leže u istoj ravni?',
@@ -262,9 +261,9 @@ module.exports = ({ L, Z, G, K, telo }) => {
   Z(2, 'Dve prave u prostoru mogu biti:',
     ['paralelne, da se seku ili mimoilazne', 'samo paralelne', 'samo da se seku', 'samo mimoilazne'],
     [K('U prostoru: paralelne, prave koje se seku, ili mimoilazne.')]);
-  Z(2, 'Mimoilazne prave imaju zajedničkih tačaka:',
-    ['nijednu', 'jednu', 'dve', 'beskonačno mnogo'],
-    [K('Mimoilazne prave se ne seku, pa nemaju zajedničkih tačaka.')]);
+  Z(2, 'Koliko ivica kocke je paralelno sa ivicom $AB$ (ne računajući nju samu)?',
+    ['3', '4', '2', '6'],
+    [K('Kocka ima po $4$ ivice u svakom od tri pravca; od njih $3$ su paralelne sa $AB$.')]);
   Z(3, 'Jedna ivica kocke je mimoilazna sa koliko drugih ivica?',
     ['4', '2', '6', '8'],
     [K('Svaka ivica kocke je mimoilazna sa tačno $4$ druge ivice.')]);
@@ -273,7 +272,7 @@ module.exports = ({ L, Z, G, K, telo }) => {
     [K('Prave koje ne leže u istoj ravni su mimoilazne.')]);
   Z(3, 'Na kvadru, koliko ivica je mimoilazno sa jednom datom bočnom ivicom?',
     ['4', '2', '3', '6'],
-    [K('Bočna ivica kvadra je mimoilazna sa $4$ ivice naspramne osnove.')]);
+    [K('Bočna ivica je mimoilazna sa dve ivice donje osnove i sa dve ivice gornje osnove koje je ne dodiruju.')]);
 
   L('Odnos prave i ravni; normala na ravan');
   Z(1, 'Prava i ravan mogu biti:',
@@ -308,13 +307,13 @@ module.exports = ({ L, Z, G, K, telo }) => {
   Z(3, 'Rastojanje između dve paralelne ravni je:',
     ['isto u svakoj tački', 'različito u svakoj tački', 'uvek nula', 'uvek beskonačno'],
     [K('Rastojanje između paralelnih ravni je konstantno.')]);
-  Z(2, 'Zid i plafon sobe seku se po:',
-    ['pravoj', 'tački', 'duži', 'krugu'],
-    [K('Zid i plafon su ravni koje se seku duž spoja – prave.')]);
+  Z(2, 'Koliko zajedničkih tačaka imaju dve ravni koje se seku?',
+    ['Beskonačno mnogo', 'Jednu', 'Dve', 'Nijednu'],
+    [K('Dve ravni koje se seku imaju zajedničku pravu, a na pravoj ima beskonačno mnogo tačaka.')]);
   Z(3, 'Dve ravni koje se poklapaju imaju zajedničkih tačaka:',
     ['beskonačno mnogo', 'jednu', 'nijednu', 'dve'],
     [K('Ako se ravni poklapaju, sve tačke su im zajedničke.')]);
-  Z(3, 'Pod i plafon sobe su:',
+  Z(1, 'Pod i plafon sobe su:',
     ['paralelne ravni', 'ravni koje se seku', 'normalne ravni', 'iste ravni'],
     [K('Pod i plafon su paralelne ravni.')]);
 

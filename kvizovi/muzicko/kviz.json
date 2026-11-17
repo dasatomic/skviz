@@ -14,9 +14,9 @@
         "tempo": 132
       },
       "odgovori": [
-        "Betovenova Deveta – „Oda radosti“",
+        "Betovenova Deveta",
         "Mocartova Četrdeseta",
-        "Vivaldijeva „Četiri godišnja doba“",
+        "Šubertova Nedovršena",
         "Dvoržakova „Iz Novog sveta“"
       ],
       "zanimljivost": "Betoven je Devetu simfoniju napisao kada je već bio potpuno gluv. Na premijeri 1824. nije čuo aplauz – jedna pevačica ga je okrenula ka publici da vidi kako ljudi oduševljeno plješću.",
@@ -85,7 +85,7 @@
       },
       "odgovori": [
         "„Turski marš“",
-        "„Laka sonata“ (u C-duru)",
+        "„Laka sonata“",
         "„Fantazija u d-molu“",
         "„Mala noćna muzika“"
       ],
@@ -156,7 +156,7 @@
       },
       "odgovori": [
         "„Na lepom plavom Dunavu“",
-        "„Vltava“",
+        "„Priče iz Bečke šume“",
         "„Bečka krv“",
         "„Talasi Dunava“"
       ],
@@ -309,7 +309,7 @@
       "pitanje": "Koji je ovo instrument?",
       "mediji": {
         "vrsta": "slika",
-        "src": "slike/violina.jpg"
+        "src": "slike/violina.png"
       },
       "odgovori": [
         "Violina",
@@ -325,7 +325,7 @@
       "pitanje": "Koji je ovo instrument sa mnogo žica?",
       "mediji": {
         "vrsta": "slika",
-        "src": "slike/harfa.jpg"
+        "src": "slike/harfa.png"
       },
       "odgovori": [
         "Harfa",
@@ -341,7 +341,7 @@
       "pitanje": "Koji je ovo drveni duvački instrument dubokog zvuka?",
       "mediji": {
         "vrsta": "slika",
-        "src": "slike/fagot.jpg"
+        "src": "slike/fagot.png"
       },
       "odgovori": [
         "Fagot",
@@ -397,7 +397,7 @@
         "Igor Stravinski",
         "Modest Musorgski"
       ],
-      "zanimljivost": "Čajkovski je bio veoma stidljiv i plašio se dirigovanja – pričao je da se boji da će mu glava otpasti, pa ju je pridržavao rukom! U „Orašaru“ je prvi upotrebio novi instrument – čelestu – za Ples šećerne vile.",
+      "zanimljivost": "Čajkovski je bio veoma stidljiv i plašio se dirigovanja – pričao je da se boji da će mu glava otpasti, pa ju je pridržavao rukom! „Orašar“ je proslavio tada novi instrument – čelestu, čiji zvuk podseća na zvončiće – u Plesu Vile šećerne vodice.",
       "rec": "čajkovski"
     },
     {
@@ -458,7 +458,7 @@
         "6",
         "7"
       ],
-      "zanimljivost": "Notno pismo je usavršio italijanski monah Gvido iz Areca oko 1000. godine. On je dao i nazive tonova: do, re, mi, fa, sol, la – po početnim slogovima stihova jedne crkvene himne.",
+      "zanimljivost": "Notno pismo je usavršio italijanski monah Gvido iz Areca oko 1000. godine. On je dao i nazive tonova ut, re, mi, fa, sol, la – po početnim slogovima stihova jedne crkvene himne. Kasnije je „ut“ zamenjen sa „do“.",
       "rec": "crtovlje"
     },
     {
@@ -499,10 +499,10 @@
       "tezina": 2,
       "pitanje": "Šta znači muzička oznaka „allegro“?",
       "odgovori": [
-        "Brzo, veselo",
+        "Brzo i veselo",
         "Sporo i svečano",
-        "Tiho",
-        "Glasno"
+        "Umereno, hodajući",
+        "Postepeno sve glasnije"
       ],
       "zanimljivost": "Muzičke oznake su uglavnom na italijanskom: adagio (polako), andante (umereno, „hodajući“), presto (vrlo brzo). „Forte“ znači glasno, a „piano“ tiho.",
       "rec": "alegro"
@@ -530,7 +530,7 @@
         "Marija Šerifović",
         "Jelena Tomašević",
         "Konstrakta",
-        "Željko Joksimović"
+        "Tijana Bogićević"
       ],
       "zanimljivost": "To je bilo prvi put da Srbija nastupa samostalno na Evroviziji – i odmah je pobedila! Zbog toga je takmičenje 2008. održano u Beogradu.",
       "medijiOdgovora": {
@@ -541,12 +541,8 @@
       "rec": "šerifović"
     },
     {
-      "tezina": 3,
+      "tezina": 2,
       "pitanje": "Ko je kompozitor ciklusa „Četiri godišnja doba“?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/vivaldi.jpg"
-      },
       "odgovori": [
         "Antonio Vivaldi",
         "Johan Sebastijan Bah",
@@ -554,15 +550,16 @@
         "Đoakino Rosini"
       ],
       "zanimljivost": "Vivaldi je radio u sirotištu za devojčice u Veneciji i komponovao za njihov orkestar, koji je postao jedan od najpoznatijih u Evropi. Napisao je oko 500 koncerata.",
-      "rec": "vivaldi"
+      "rec": "vivaldi",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/vivaldi.jpg",
+        "opis": "Antonio Vivaldi"
+      }
     },
     {
       "tezina": 1,
       "pitanje": "Ko je kompozitor koji je imao 20 dece i bio čuveni orguljaš?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/bah.jpg"
-      },
       "odgovori": [
         "Johan Sebastijan Bah",
         "Ludvig van Betoven",
@@ -570,7 +567,12 @@
         "Jozef Hajdn"
       ],
       "zanimljivost": "Kao mladić, Bah je pešačio oko 400 km da bi čuo čuvenog orguljaša Bukstehudea. Nekoliko njegovih sinova takođe su postali poznati kompozitori.",
-      "rec": "bah"
+      "rec": "bah",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/bah.jpg",
+        "opis": "Johan Sebastijan Bah"
+      }
     },
     {
       "tezina": 2,
@@ -581,7 +583,7 @@
         "Simfonija",
         "Sonata"
       ],
-      "zanimljivost": "U baletu se ne peva nego igra, a simfonija je delo samo za orkestar. Najduža poznata opera, Vagnerov „Prsten Nibelunga“, izvodi se četiri večeri i traje oko 15 sati!",
+      "zanimljivost": "U baletu se ne peva nego igra, a simfonija je delo samo za orkestar. Vagnerov „Prsten Nibelunga“ je ciklus od četiri opere koji se izvodi četiri večeri i traje oko 15 sati!",
       "rec": "opera"
     },
     {
@@ -640,9 +642,9 @@
       "pitanje": "Kako se zove znak na početku notnog crtovlja koji izgleda kao uvijena „S“?",
       "odgovori": [
         "Violinski ključ",
-        "Bas ključ (F ključ)",
-        "Povisilica (♯ znak)",
-        "Pauza za celu notu"
+        "Bas ključ",
+        "Alt ključ",
+        "Povisilica"
       ],
       "zanimljivost": "Violinski ključ se zove i „sol ključ“, jer se njegova spirala obavija oko linije na kojoj je ton sol.",
       "medijiOdgovora": {
@@ -768,9 +770,9 @@
       "pitanje": "Kako se zove grupa od mnogo instrumentalista koji sviraju klasičnu muziku?",
       "odgovori": [
         "Simfonijski orkestar",
-        "Hor (velika grupa pevača)",
-        "Gudački kvartet (četiri svirača)",
-        "Rok bend sa električnim gitarama"
+        "Kamerni hor",
+        "Gudački kvartet",
+        "Rok bend"
       ],
       "zanimljivost": "Veliki simfonijski orkestar može imati i preko 100 muzičara. Hor je grupa pevača.",
       "medijiOdgovora": {
@@ -877,7 +879,7 @@
         "Antonio Stradivari",
         "Adolf Saks",
         "Bartolomeo Kristofori",
-        "Đuzepe Verdi"
+        "Andrea Amati"
       ],
       "zanimljivost": "Stradivari je živeo u Kremoni i napravio oko 1.100 instrumenata. Sačuvano je oko 650, a neki vrede više od 15 miliona dolara.",
       "rec": "stradivari",
@@ -939,9 +941,9 @@
       "pitanje": "Šta je pauza u notnom zapisu?",
       "odgovori": [
         "Znak za tišinu određenog trajanja",
-        "Znak za kraj pesme ili kompozicije",
-        "Znak za ponavljanje dela kompozicije",
-        "Promena tempa"
+        "Znak za kraj kompozicije",
+        "Znak za ponavljanje dela",
+        "Znak za promenu tempa"
       ],
       "zanimljivost": "Džon Kejdž je napisao delo „4′33″“ – četiri minuta i 33 sekunde potpune tišine. Muzika je – zvuk publike i sale!",
       "rec": "pauza"
@@ -950,10 +952,10 @@
       "tezina": 2,
       "pitanje": "Šta je oktava?",
       "odgovori": [
-        "Razmak od osam tonova, npr. od do do sledećeg do",
-        "Grupa od osam muzičara koji sviraju zajedno u orkestru",
-        "Vrsta takta sa osam doba u jednoj meri, kao kod valcera",
-        "Osma nota u nekoj kompoziciji ili pesmi, posle sedme"
+        "Razmak od do do sledećeg do",
+        "Grupa od osam svirača",
+        "Takt sa osam doba",
+        "Osmi ton u pesmi"
       ],
       "zanimljivost": "Ton oktavu viši ima tačno dvostruku frekvenciju. Zato zvuče kao „isti“ ton, samo viši.",
       "medijiOdgovora": {
@@ -1104,7 +1106,7 @@
         "Jozef Hajdn",
         "Volfgang Amadeus Mocart"
       ],
-      "zanimljivost": "Bah je napisao preko 1.000 dela. Bio je zaboravljen skoro 80 godina posle smrti, dok ga Feliks Mendelson nije ponovo „otkrio“ 1829.",
+      "zanimljivost": "Bah je za života bio cenjen više kao orguljaš nego kao kompozitor. Skoro 80 godina posle njegove smrti mlađi kompozitor Feliks Mendelson ponovo je izveo njegovu „Muku po Mateju“ (1829) i Evropa ga je ponovo „otkrila“.",
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/bah.jpg",
@@ -1166,7 +1168,7 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Koji srpski kompozitor je napisao „Primorske napjeve“ i „Kozara“?",
+      "pitanje": "Koji srpski kompozitor je napisao „Primorske napjeve“ i „Kozar“?",
       "odgovori": [
         "Stevan Mokranjac",
         "Josif Marinković",
@@ -1422,7 +1424,7 @@
         "Džez",
         "Rok",
         "Rep",
-        "Barok"
+        "Kantri"
       ],
       "zanimljivost": "Džez je spoj afričkih ritmova, bluza i evropske muzike. Luj Armstrong je bio jedan od najvećih džez trubača i pevača.",
       "medijiOdgovora": {
@@ -1552,10 +1554,10 @@
       "tezina": 3,
       "pitanje": "Koji grčki bog je, prema mitu, svirao liru, a koji frulu?",
       "odgovori": [
-        "Apolon liru, Pan frulu (sviralu)",
+        "Apolon liru, Pan frulu",
         "Zevs liru, Hermes frulu",
         "Ares liru, Posejdon frulu",
-        "Atina oba"
+        "Dionis liru, Ares frulu"
       ],
       "zanimljivost": "Pan je bio bog pastira, napola koza. Po njemu su nazvane „panova frula“ i reč „panika“ – strah koji je on izazivao.",
       "rec": "lira"
@@ -1581,7 +1583,7 @@
         "Gitarom",
         "Trubom"
       ],
-      "zanimljivost": "Stefan Milenković je počeo da svira violinu kao trogodišnjak, a kao dečak je već nastupao po celom svetu. Danas je i profesor violine u Americi.",
+      "zanimljivost": "Stefan Milenković je počeo da svira violinu kao trogodišnjak, a već kao dečak nastupao je po celom svetu. Predavao je violinu i na univerzitetima u Americi.",
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/milenkovic.jpg",

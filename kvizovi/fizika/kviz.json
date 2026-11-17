@@ -143,7 +143,7 @@
         "Merkur",
         "Jupiter"
       ],
-      "zanimljivost": "Mars je crven zbog gvožđe-oksida, odnosno rđe u prašini. Na njemu je Olimp – najveći vulkan u Sunčevom sistemu, skoro tri puta viši od Mont Everesta.",
+      "zanimljivost": "Mars je crven zbog gvožđe-oksida, odnosno rđe u prašini. Na njemu je Olimp – najveći vulkan u Sunčevom sistemu, oko 2,5 puta viši od Mont Everesta.",
       "medijiOdgovora": {
         "vrsta": "planeta",
         "ime": "mars"
@@ -213,7 +213,7 @@
         "Svetlost",
         "Zvuk",
         "Jednako su brzi",
-        "Zavisi od vremena"
+        "Zvuk, jer je glasniji"
       ],
       "zanimljivost": "Zvuk u vazduhu prelazi oko 340 m u sekundi. Kada vidiš munju, broj sekunde do groma i podeli sa 3 – dobićeš otprilike koliko kilometara je oluja daleko.",
       "rec": "svetlost"
@@ -274,7 +274,7 @@
         "Sve boje duge",
         "Samo crvena i plava",
         "Samo bela, ali jača",
-        "Crna i bela"
+        "Samo zelena i žuta"
       ],
       "zanimljivost": "Njutn je prvi pokazao da je bela svetlost mešavina svih boja. Duga nastaje isto – svaka kapljica kiše je mala prizma. Dugu možeš videti samo kad ti je Sunce iza leđa.",
       "rec": "duga",
@@ -340,7 +340,7 @@
         "Težina je oko 6 puta manja",
         "Težina je ista",
         "Težina je 6 puta veća",
-        "Nema nikakvu masu"
+        "Težina je 2 puta manja"
       ],
       "zanimljivost": "Masa ostaje ista, ali Mesec privlači slabije – oko 1/6 Zemljine teže. Na Mesecu bi skočio šest puta više! Tragovi astronauta „Apola“ i dalje stoje jer na Mesecu nema vetra.",
       "rec": "težina"
@@ -352,7 +352,7 @@
         "Padaju istovremeno",
         "Čekić",
         "Pero",
-        "Ništa ne pada u vakuumu"
+        "Pero, jer je lakše"
       ],
       "zanimljivost": "Astronaut Dejvid Skot je to 1971. pokazao na Mesecu sa čekićem i sokolovim perom – pali su zajedno! Galilej je to predvideo vekovima ranije: bez otpora vazduha sva tela padaju jednako brzo.",
       "rec": "vakuum",
@@ -490,10 +490,6 @@
     {
       "tezina": 3,
       "pitanje": "Koja planeta se okreće „ležeći na boku“, sa osom nagnutom skoro 98°?",
-      "mediji": {
-        "vrsta": "planeta",
-        "ime": "uran"
-      },
       "odgovori": [
         "Uran",
         "Neptun",
@@ -501,7 +497,11 @@
         "Venera"
       ],
       "zanimljivost": "Uran se kotrlja oko Sunca, pa na njegovim polovima dan i noć traju po oko 42 godine! Verovatno ga je u davnoj prošlosti udarilo neko ogromno telo.",
-      "rec": "uran"
+      "rec": "uran",
+      "medijiOdgovora": {
+        "vrsta": "planeta",
+        "ime": "uran"
+      }
     },
     {
       "pitanje": "Koliko je otprilike Mesec udaljen od Zemlje?",
@@ -558,7 +558,7 @@
         "Led je lakši od vode pa pluta i čuva toplotu ispod",
         "Ribe zagrevaju vodu",
         "Dno reke je toplo od Zemljinog jezgra",
-        "Reka teče prebrzo"
+        "Led je teži od vode"
       ],
       "zanimljivost": "Voda je najgušća na oko 4 °C, pa ta voda pada na dno. Led odozgo deluje kao pokrivač. Da led tone, jezera bi se zaleđivala odozdo i život u njima ne bi preživeo zimu.",
       "medijiOdgovora": {
@@ -961,9 +961,9 @@
       "pitanje": "Zašto lakše hodamo po asfaltu nego po ledu?",
       "odgovori": [
         "Zbog većeg trenja između obuće i asfalta",
-        "Asfalt je topliji od leda, pa se obuća zagreje i lepi",
-        "Led je teži",
-        "Na ledu nema gravitacije"
+        "Asfalt je gladak, pa ima manje trenja",
+        "Led je hladniji od asfalta",
+        "Asfalt je mekši od leda"
       ],
       "zanimljivost": "Trenje je ponekad korisno – bez njega ne bismo mogli ni da hodamo. Zimi se po ledu posipa pesak upravo da bi se trenje povećalo.",
       "rec": "trenje"
@@ -1003,7 +1003,7 @@
         "Na Paskalovom zakonu – pritisak se u tečnosti prenosi podjednako u svim pravcima",
         "Na magnetizmu – jak elektromagnet pritiska klip i tako pokreće točkove automobila",
         "Na trenju – pločice se trljaju o točak i usporavaju ga zbog velikog trenja površina",
-        "Na svetlosti"
+        "Na Arhimedovom zakonu – telo gubi težinu u vodi"
       ],
       "zanimljivost": "Mala sila na malom klipu stvara veliku silu na velikom klipu. Tako jedna noga vozača zaustavlja automobil od tone i više.",
       "rec": "presa",
@@ -1085,7 +1085,7 @@
         "Zračenjem",
         "Provođenjem",
         "Strujanjem",
-        "Ne prenosi se"
+        "Preko magnetnog polja"
       ],
       "zanimljivost": "Između Sunca i Zemlje je skoro prazan prostor, pa ni provođenje ni strujanje nisu mogući. Svetlost i toplotno zračenje putuju i kroz vakuum.",
       "rec": "zračenje",
@@ -1135,7 +1135,7 @@
         "Uspravan, iste veličine, sa zamenjenom levom i desnom stranom",
         "Obrnut i umanjen, kao u kašiki, sa zamenjenim gornjim i donjim delom",
         "Uvećan i uspravan, kao lupa, sa istim rasporedom leve i desne strane",
-        "Nikakav – ravno ogledalo samo odbija svetlost i ne daje nikakav lik"
+        "Obrnut, iste veličine, sa zamenjenim gornjim i donjim delom"
       ],
       "zanimljivost": "Zato je natpis AMBULANCE na kolima hitne pomoći napisan obrnuto – vozač ispred ga u retrovizoru pročita pravilno.",
       "rec": "ogledalo",
@@ -1529,18 +1529,14 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Koja je najbliža zvezda Zemlji?",
+      "pitanje": "Koja je najbliža zvezda Zemlji, posle Sunca?",
       "odgovori": [
-        "Sunce",
         "Proksima Kentauri",
         "Sirijus",
-        "Severnjača"
+        "Severnjača",
+        "Betelgez"
       ],
-      "zanimljivost": "Sunce je zvezda udaljena oko 150 miliona km. Ta udaljenost zove se astronomska jedinica.",
-      "medijiOdgovora": {
-        "vrsta": "planeta",
-        "ime": "sunce"
-      },
+      "zanimljivost": "Proksima Kentauri je udaljena oko 4,2 svetlosne godine, to jest oko 40 biliona km. Sunce je od Zemlje udaljeno oko 150 miliona km, što je jedna astronomska jedinica.",
       "rec": "sunce"
     },
     {
@@ -1834,7 +1830,7 @@
         "Vojvoda iz Prvog srpskog ustanka koji je oslobodio Beograd 1806.",
         "Kompozitor koji je napisao prvu srpsku operu i himnu „Bože pravde“"
       ],
-      "zanimljivost": "Stanojević je pomogao izgradnju prve hidroelektrane u Srbiji, „Pod gradom“ u Užicu (1900), po Teslinim principima naizmenične struje. Bio je i rektor Beogradskog univerziteta.",
+      "zanimljivost": "Stanojević je bio profesor fizike i astronomije i učestvovao je u uvođenju električne energije u Srbiju, po Teslinim principima naizmenične struje. Bio je i rektor Beogradskog univerziteta.",
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/stanojevic.jpg",
@@ -1945,9 +1941,9 @@
       "pitanje": "Zašto termos-boca dugo čuva čaj toplim?",
       "odgovori": [
         "Između zidova je vakuum, koji skoro ne provodi toplotu",
-        "Ima mali grejač u dnu koji se puni dok je čaj vreo, pa ga posle greje",
-        "Napravljen je od leda",
-        "Ima magnet"
+        "Zidovi su od gume, pa ne propuštaju vazduh",
+        "Čaj u termosu ne hladi jer je zatvoren poklopcem",
+        "Zidovi su premazani crnom bojom koja zadržava toplotu"
       ],
       "zanimljivost": "Vakuum sprečava provođenje i strujanje, a sjajni zidovi odbijaju toplotno zračenje. Termos isto tako čuva i hladne napitke hladnim.",
       "medijiOdgovora": {
@@ -1963,7 +1959,7 @@
       "odgovori": [
         "Suvi vazduh bez oblaka ne zadržava toplotu",
         "Zbog jakog i vrelog vetra koji duva i danju i noću",
-        "Zbog peska koji svetli",
+        "Pesak danju upija vodu, a noću je ispušta",
         "Zato što je bliže Suncu"
       ],
       "zanimljivost": "U Sahari temperatura može danju biti preko 40 °C, a noću pasti blizu nule. Oblaci i vlaga deluju kao pokrivač.",
