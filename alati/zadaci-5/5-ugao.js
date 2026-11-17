@@ -39,7 +39,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, naKrugu, sat, uglomer, pica,
     sat(12, 0, { okreniMin: -120, ponovi: 1 }));
 
   Z(1, 'Dve poluprave $Oa$ i $Ob$ sa zajedničkim početkom, koje nisu na istoj pravoj, određuju koliko uglova?',
-    ['$2$ – konveksan i nekonveksan', '$1$', '$4$', 'beskonačno mnogo'],
+    ['$2$', '$1$', '$4$', 'beskonačno mnogo'],
     [K('Poluprave dele ravan na dva dela: manji (konveksan) i veći (nekonveksan) ugao.', ['m', 'v']),
      K('Zajedno daju pun ugao.')],
     G({ O: [0, 0], A: [4, 0], B: naKrugu([0, 0], 4, 70) }, [{ d: 'OA' }, { d: 'OB' }, { lin: [[0, 0], ...luk(0, 0, 1.5, 0, 70, 12)], zatv: 1, b: 2, gusto: 1, id: 'm', k: 1 }, { lin: [[0, 0], ...luk(0, 0, 2.2, 70, 360, 48)], zatv: 1, b: 1, id: 'v', k: 1 }], { velicina: 180 }));
@@ -144,7 +144,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, naKrugu, sat, uglomer, pica,
      K('$∠AOD = 2 · 43°20\' = 86°40\'$.', ['ad'])],
     G(zraci([0, 130 / 3, 260 / 3, 130]), [{ d: 'OA' }, { d: 'OB' }, { d: 'OC', isp: 1 }, { d: 'OD', isp: 1 }, { u: 'AOD', b: 1, id: 'ad', k: 2, r: 50 }], { velicina: 200 }));
 
-  Z(3, 'Kolika je zbir uglova kod temena kad se uglovi četvorougla „otkinu“ i nadovežu jedan na drugi?',
+  Z(3, 'Uglovi četvorougla se „otkinu“ i nadovežu jedan na drugi oko jedne tačke. Koliki ugao čine zajedno?',
     ['$360°$', '$180°$', '$270°$', '$540°$'],
     [K('Dijagonala deli četvorougao na dva trougla.', ['d']),
      K('Uglovi svakog trougla daju $180°$, pa uglovi četvorougla daju $2 · 180° = 360°$ – pun ugao.')],
@@ -229,7 +229,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, naKrugu, sat, uglomer, pica,
     sat(12, 0, { okreniMin: -6, ponovi: 1 }));
 
   Z(2, 'Izračunaj: $37°45\' + 25°30\'$.',
-    ['$63°15\'$', '$62°75\'$', '$62°15\'$', '$63°75\'$'],
+    ['$63°15\'$', '$63°25\'$', '$62°15\'$', '$63°75\'$'],
     [K('Stepeni: $37° + 25° = 62°$; minuti: $45\' + 30\' = 75\'$.'),
      K('$75\' = 1°15\'$, pa je ukupno $63°15\'$.')]);
 
@@ -244,7 +244,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, naKrugu, sat, uglomer, pica,
      K('Za $1$ minut: $30° : 60 = 0,5° = 30\'$.')]);
 
   Z(2, 'Izračunaj: $3 · 25°40\'$.',
-    ['$77°$', '$75°120\'$', '$76°$', '$75°40\'$'],
+    ['$77°$', '$76°20\'$', '$76°$', '$75°40\'$'],
     [K('$3 · 25° = 75°$ i $3 · 40\' = 120\'$.'),
      K('$120\' = 2°$, pa je $75° + 2° = 77°$.')]);
 

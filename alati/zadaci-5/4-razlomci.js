@@ -268,7 +268,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, traka, pica, skok, skokovi, 
      K('$3,3 = 3,30 > 3,00$ – najveći je $3,3$.')]);
 
   Z(2, 'Zaokrugli $7,054321539$ na $6$ decimala.',
-    ['$7,054322$', '$7,054321$', '$7,054320$', '$7,05432$'],
+    ['$7,054322$', '$7,054321$', '$7,054320$', '$7,0543$'],
     [K('Šesta decimala je $1$ ($7,054321…$), a sedma je $5$.'),
      K('Sedma decimala je $5$ – šestu povećavamo: $7,054322$.')]);
 

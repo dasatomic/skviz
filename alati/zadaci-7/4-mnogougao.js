@@ -266,7 +266,7 @@ module.exports = ({ L, Z, K, G, r, S3, proveri, pravilni, ime, naKrugu }) => {
     mnogougao(6, { t: { O: [0, 0] }, bez: ['O'], dod: [{ kr: 'O', r: 5, b: 4, isp: 1 }, { p: 'ACE', b: 1, id: 'ace', k: 2 }] }));
 
   Z(2, 'Kako se konstruiše pravilni osmougao upisan u krug?',
-    ['prvo upisani kvadrat, pa simetrale njegovih stranica seku krug u preostalim temenima', 'nanošenjem poluprečnika osam puta po kružnici', 'spajanjem svakog drugog temena šestougla', 'deljenjem prečnika na osam jednakih delova'],
+    ['upisani kvadrat, pa simetrale njegovih stranica', 'nanošenjem poluprečnika osam puta po kružnici', 'spajanjem svakog drugog temena šestougla', 'deljenjem prečnika na osam jednakih delova'],
     [K('Centralni ugao osmougla je $360° : 8 = 45°$ – polovina centralnog ugla kvadrata ($90°$).'),
      K('Simetrala stranice kvadrata prolazi kroz centar i polovi centralni ugao od $90°$ – seče krug baš u novom temenu.', ['sim']),
      K('Tako dobijamo $4 + 4 = 8$ temena.', ['osm'])],

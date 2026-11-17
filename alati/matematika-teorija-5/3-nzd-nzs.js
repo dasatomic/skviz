@@ -64,7 +64,7 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, stabloCinioca, sito, vennDelilaca
     { mediji: stabloCinioca([42, 2, [21, 3, 7]]) });
   Q(3, 'Broj 24 rastavljen na proste činioce glasi…',
     ['$2 \\cdot 2 \\cdot 2 \\cdot 3$', '$2 \\cdot 2 \\cdot 6$', '$3 \\cdot 8$', '$4 \\cdot 6$'],
-    '$24 = 2\\cdot2\\cdot2\\cdot3$ (tri dvojke i jedna trojka). To kraće pišemo kao $2^3 \\cdot 3$.', 'činilac',
+    '$24 = 2\\cdot2\\cdot2\\cdot3$ (tri dvojke i jedna trojka). To kraće pišemo kao $2^{3} \\cdot 3$.', 'činilac',
     { mediji: stabloCinioca([24, 2, [12, 2, [6, 2, 3]]]) });
 
   // ── 19. NZD ──

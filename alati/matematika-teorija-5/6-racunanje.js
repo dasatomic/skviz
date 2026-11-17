@@ -173,7 +173,7 @@ module.exports = ({ L, Q, U, S, G, r, traka, pica, sto, O, bez, dec }) => {
     'Pomnožimo $2\\cdot3=6$. Oba činioca imaju po jednu decimalu, ukupno dve, pa rezultat ima dve decimale: $0,\\!06$.', 'množenje',
     { mediji: G(O, [...sto(6), { tx: '0,06', at: [3, 7.3], vel: 16, b: 1 }], { ...bez, velicina: 260 }) });
   Q(2, 'Koliko je $0,\\!5 \\cdot 4$?',
-    ['$2$', '$0,\\!2$', '$0,\\!20$', '$20$'],
+    ['$2$', '$0,\\!2$', '$0,\\!02$', '$20$'],
     '$0,\\!5\\cdot4=2$. Polovina puta 4 je 2 cela. Možeš i ovako: $5\\cdot4=20$, pa jedna decimala → $2,\\!0=2$.', 'množenje',
     { mediji: G(O, [...traka(2, 1, { y: 0 }), ...traka(2, 1, { y: -2, b: 2 }), ...traka(2, 1, { y: -4, b: 3 }), ...traka(2, 1, { y: -6, b: 4 }), { tx: '4 × 0,5 = 2', at: [9.5, -3], vel: 15 }], { ...bez, velicina: 320 }) });
   Q(2, 'Koliko decimalnih mesta ima proizvod $0,\\!12 \\cdot 0,\\!3$?',

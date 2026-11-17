@@ -542,9 +542,9 @@
       "pitanje": "Šta je rezultujuća sila?",
       "odgovori": [
         "Jedna sila koja ima isto dejstvo kao više sila zajedno",
-        "Najmanja sila od svih sila koje deluju na telo istovremeno",
-        "Sila trenja",
-        "Sila koja ne deluje"
+        "Najveća od svih sila koje istovremeno deluju na telo",
+        "Sila trenja koja se uvek suprotstavlja kretanju tela",
+        "Sila koja ostaje kada telo prestane da se kreće"
       ],
       "zanimljivost": "U Drugom Njutnovom zakonu F je uvek rezultujuća sila na telo.",
       "rec": "rezultanta"
@@ -638,16 +638,16 @@
     },
     {
       "lekcija": 2,
-      "tezina": 2,
-      "pitanje": "Zašto prazan kamion lakše kreće nego pun, iako ima isti motor?",
+      "tezina": 3,
+      "pitanje": "Na telo mase 5 kg deluju dve sile duž istog pravca, suprotnih smerova: 30 N i 10 N. Koliko je ubrzanje tela?",
       "odgovori": [
-        "Ima manju masu, pa ista sila daje veće ubrzanje",
-        "Ima manje točkova koji dodiruju put, pa je trenje manje",
-        "Ima veće trenje sa putem, pa se lakše odgurne od tla",
-        "Nema razlike – prazan i pun kamion kreću potpuno isto"
+        "4 m/s²",
+        "8 m/s²",
+        "6 m/s²",
+        "2 m/s²"
       ],
-      "zanimljivost": "Zato kamioni sa teretom polako ubrzavaju na semaforu.",
-      "rec": "teret"
+      "zanimljivost": "U Drugom Njutnovom zakonu računa se rezultujuća sila: 30 N − 10 N = 20 N, pa je a = 20 N : 5 kg = 4 m/s².",
+      "rec": "rezultanta"
     },
     {
       "lekcija": 3,
@@ -696,9 +696,9 @@
       "pitanje": "Kojom formulom se računa pređeni put pri ravnomerno ubrzanom kretanju iz mirovanja?",
       "odgovori": [
         "s = a·t² / 2",
-        "s = a·t (bez kvadrata)",
-        "s = v·t² (puta kvadrat)",
-        "s = a/t + v (podeljeno)"
+        "s = a·t / 2",
+        "s = a·t²",
+        "s = 2·a·t"
       ],
       "zanimljivost": "Put raste sa kvadratom vremena – za dvostruko više vremena telo pređe četiri puta veći put.",
       "rec": "kvadrat"
@@ -1159,14 +1159,14 @@
     {
       "lekcija": 4,
       "tezina": 3,
-      "pitanje": "Ako je srednja brzina na putu 60 km/h, da li je automobil morao nekad da vozi brže od 60 km/h?",
+      "pitanje": "Srednja brzina automobila na putu bila je 60 km/h, a usput je neko vreme stajao na semaforu. Da li je negde morao da vozi brže od 60 km/h?",
       "odgovori": [
-        "Da, osim ako je sve vreme vozio tačno 60 km/h",
-        "Ne, nikad nije morao da vozi brže od 60 km/h na putu",
-        "Ne – uvek je vozio sporije od 60 km/h na celom putu",
-        "Pitanje nema smisla"
+        "Da, inače mu srednja brzina ne bi bila 60 km/h",
+        "Ne, mogao je sve vreme da vozi tačno 60 km/h",
+        "Ne, jer se vreme stajanja ne računa u srednju brzinu",
+        "Samo ako je ukupan put bio duži od 60 km"
       ],
-      "zanimljivost": "Ako je negde vozio sporije (npr. stajao), morao je negde voziti brže da bi prosek bio 60.",
+      "zanimljivost": "Srednja brzina je ceo put kroz celo vreme – i vreme stajanja se računa. Ako je negde stajao, negde je morao da vozi brže od proseka.",
       "rec": "prosek"
     },
     {
@@ -1894,9 +1894,9 @@
       "pitanje": "Kako pliva riba?",
       "odgovori": [
         "Gura vodu unazad, a voda gura ribu napred",
-        "Leti kroz vodu, jer je voda mnogo lakša od same ribe",
-        "Hoda po dnu",
-        "Bez sile"
+        "Voda je sama nosi napred dok ona maše repom",
+        "Riblji mehur je gura napred kao mali motor",
+        "Odguruje se perajima od dna reke ili mora"
       ],
       "zanimljivost": "Hobotnice i lignje ispuštaju mlaz vode – pravi „reaktivni pogon“.",
       "rec": "plivanje"
@@ -1909,7 +1909,7 @@
         "Stopalom guramo tlo unazad, a tlo gura nas napred",
         "Gravitacija nas gura napred svakim korakom koji napravimo",
         "Vazduh nas gura napred kada pomeramo ruke dok hodamo",
-        "Bez sile"
+        "Stopalom guramo tlo napred, a ono nas vuče za sobom"
       ],
       "zanimljivost": "Na savršeno glatkom ledu ne bismo mogli da se odgurnemo i krenemo.",
       "rec": "hod"
@@ -1988,8 +1988,8 @@
       "pitanje": "Zašto veslač gura veslo unazad?",
       "odgovori": [
         "Voda deluje na veslo napred i pokreće čamac",
-        "Da bi ohladio vodu oko čamca dok vesla po suncu",
-        "Da bi uplašio ribe i oslobodio put ispred čamca",
+        "Da veslo smanji otpor vode ispred čamca",
+        "Da vazduh iza čamca gura čamac napred",
         "Da napravi talase koji guraju čamac napred"
       ],
       "zanimljivost": "Veslački osmerac dostiže brzinu i preko 20 km/h.",
@@ -2001,9 +2001,9 @@
       "pitanje": "Kako mlazni avion stvara potisak?",
       "odgovori": [
         "Izbacuje vrele gasove unazad velikom brzinom",
-        "Okreće velike točkove ispod krila koji ga guraju napred",
-        "Maše krilima",
-        "Odbija se od oblaka"
+        "Krila odguruju vazduh i tako nose avion napred",
+        "Izduvni gasovi se odupiru o vazduh iza aviona",
+        "Elisa na nosu aviona ga vuče kroz vazduh"
       ],
       "zanimljivost": "Motor velikog putničkog aviona izbaci i preko tone vazduha u sekundi.",
       "rec": "mlazni"
@@ -2163,9 +2163,9 @@
       "pitanje": "Ko je, po predanju, ispuštao kugle sa kosog tornja u Pizi?",
       "odgovori": [
         "Galileo Galilej",
-        "Isak Njutn (Engleska)",
-        "Arhimed iz Sirakuze",
-        "Aristotel iz Stagire"
+        "Isak Njutn",
+        "Arhimed",
+        "Aristotel"
       ],
       "zanimljivost": "Aristotel je tvrdio da teška tela padaju brže – Galilej je pokazao da nije tako.",
       "rec": "piza"
@@ -2279,7 +2279,7 @@
         "Merenjem vremena padanja sa poznate visine ili klatnom",
         "Vagom – izmeri se težina tela i podeli sa masom zapisanom na pakovanju",
         "Termometrom – ubrzanje Zemljine teže zavisi samo od temperature vazduha",
-        "Lenjirom samo"
+        "Barometrom – iz vazdušnog pritiska na mestu gde se meri"
       ],
       "zanimljivost": "Ubrzanje teže se malo razlikuje od mesta do mesta – geolozi tako otkrivaju rude pod zemljom.",
       "rec": "klatno"
@@ -2292,7 +2292,7 @@
         "Dostižu stalnu (graničnu) brzinu zbog otpora vazduha",
         "Padaju sve brže i brže bez kraja, sve do samog udara u tlo",
         "Padaju naviše, jer ih topao vazduh nosi uvis kao balone",
-        "Ne padaju"
+        "Padaju stalnom brzinom od trenutka kada se odvoje od oblaka"
       ],
       "zanimljivost": "Kapi kiše padaju oko 30 km/h – da nema otpora vazduha, pogađale bi nas kao meci.",
       "rec": "kiša"
@@ -2405,7 +2405,7 @@
         "Istom brzinom kojom je bačena",
         "Dvostruko većom brzinom od početne",
         "Manjom brzinom, jer je ruka malo niže",
-        "Nula"
+        "Manjom, jer je teža usporava i pri padu"
       ],
       "zanimljivost": "U stvarnosti je malo sporija, jer otpor vazduha uzme deo energije.",
       "rec": "povratak",
@@ -2534,7 +2534,7 @@
         "Voda je bačena naviše i ukoso, a teža je vraća naniže",
         "Zbog vetra koji uvek duva i savija tanak mlaz vode u luk",
         "Zbog pritiska vazduha koji pritiska mlaz odozgo naniže",
-        "Voda je laka"
+        "Voda je laka, pa je mlaz brzo izgubi snagu i stane"
       ],
       "zanimljivost": "Najviši vodoskok na svetu, u Džedi, izbacuje vodu do visine oko 300 m.",
       "rec": "vodoskok"
@@ -2565,8 +2565,8 @@
       "odgovori": [
         "Stanje kada telo ne pritiska podlogu niti zateže konac",
         "Stanje u kome telo nema nikakvu masu i potpuno je prazno iznutra",
-        "Stanje u kome nema gravitacije",
-        "Stanje mirovanja"
+        "Stanje u kome na telo uopšte ne deluje gravitacija",
+        "Stanje mirovanja tela u odnosu na podlogu"
       ],
       "zanimljivost": "Bestežinsko stanje nastaje kada telo i sve oko njega slobodno padaju zajedno.",
       "rec": "bestežinsko"
@@ -2579,7 +2579,7 @@
         "Oni i stanica zajedno slobodno padaju oko Zemlje",
         "Tamo uopšte nema gravitacije, jer je stanica daleko od Zemlje",
         "Stanica je jak magnet koji privlači astronaute ka zidovima",
-        "Lebde zbog vazduha"
+        "Vazduh u stanici je gušći, pa ih drži kao voda"
       ],
       "zanimljivost": "Stanica kruži brzinom od oko 28.000 km/h i obiđe Zemlju za 90 minuta.",
       "rec": "stanica",
@@ -2594,10 +2594,10 @@
       "tezina": 2,
       "pitanje": "Kada ćemo kratko osetiti bestežinsko stanje na zemlji?",
       "odgovori": [
-        "Pri skoku sa trambuline ili na toboganu dok se spuštamo",
-        "Dok mirno sedimo u školskoj klupi tokom celog časa fizike",
-        "Dok spavamo u krevetu tokom cele duge i mirne zimske noći",
-        "Dok stojimo u liftu koji miruje i čeka putnike na spratu"
+        "Pri skoku sa trambuline, dok smo u vazduhu",
+        "Dok mirno sedimo u školskoj klupi",
+        "Dok ležimo u krevetu i spavamo",
+        "Dok stojimo u liftu koji miruje"
       ],
       "zanimljivost": "„Stomak u grlu“ na ljuljašci je osećaj delimičnog bestežinskog stanja.",
       "rec": "tobogan"
@@ -2656,7 +2656,7 @@
     },
     {
       "lekcija": 9,
-      "tezina": 1,
+      "tezina": 2,
       "pitanje": "Kako se sveća ponaša u bestežinskom stanju?",
       "odgovori": [
         "Plamen je okrugao i plav",
@@ -2695,16 +2695,16 @@
     },
     {
       "lekcija": 9,
-      "tezina": 1,
-      "pitanje": "Koja država je prva poslala čoveka u svemir?",
+      "tezina": 2,
+      "pitanje": "Stojiš na vagi u liftu koji kreće naniže sa ubrzanjem. Šta pokazuje vaga u odnosu na lift koji miruje?",
       "odgovori": [
-        "Sovjetski Savez (Jurij Gagarin, 1961)",
-        "SAD (Alan Šepard, 1958. godine, na Floridi)",
-        "Kina (Jang Livej, 1957. godine, iz pustinje Gobi)",
-        "Francuska (Žak Kusto, 1959. godine, iz Gvajane)"
+        "Manje nego kad lift miruje",
+        "Više nego kad lift miruje",
+        "Isto kao kad lift miruje",
+        "Tačno nulu, kao u svemiru"
       ],
-      "zanimljivost": "Gagarin je obišao Zemlju jednom – let je trajao 108 minuta.",
-      "rec": "gagarin"
+      "zanimljivost": "Zato pri polasku lifta naniže kratko osećamo da smo „lakši“, a pri polasku naviše „teži“. Vaga bi pokazala nulu tek kad bi lift slobodno padao.",
+      "rec": "lift"
     },
     {
       "lekcija": 9,
@@ -2724,8 +2724,8 @@
       "tezina": 2,
       "pitanje": "Zašto se predmeti u svemirskoj stanici vezuju čičak-trakom?",
       "odgovori": [
-        "Inače bi lebdeli i udarali",
-        "Da ih ne ukradu drugi astronauti",
+        "Inače bi lebdeli po stanici i udarali",
+        "Da ih Zemljina teža ne povuče ka podu",
         "Zbog magnetizma metalnih zidova stanice",
         "Zbog velike hladnoće unutar stanice"
       ],
@@ -2747,16 +2747,16 @@
     },
     {
       "lekcija": 9,
-      "tezina": 2,
-      "pitanje": "Ko je prvi čovek koji je hodao po Mesecu?",
+      "tezina": 3,
+      "pitanje": "Kolika je težina astronauta mase 70 kg u svemirskoj stanici koja kruži oko Zemlje (težina je sila kojom telo pritiska podlogu)?",
       "odgovori": [
-        "Nil Armstrong",
-        "Jurij Gagarin",
-        "Baz Oldrin",
-        "Majkl Kolins"
+        "Nula",
+        "Oko 700 N",
+        "Oko 630 N",
+        "Oko 70 N"
       ],
-      "zanimljivost": "„To je mali korak za čoveka, a džinovski skok za čovečanstvo“ – 20. jul 1969.",
-      "rec": "armstrong"
+      "zanimljivost": "Sila Zemljine teže na astronauta je i tamo oko 90% one na Zemlji, ali on ne pritiska pod – jer pada zajedno sa stanicom. Masa mu ostaje 70 kg.",
+      "rec": "težina"
     },
     {
       "lekcija": 10,
@@ -2857,12 +2857,12 @@
     {
       "lekcija": 10,
       "tezina": 3,
-      "pitanje": "Zašto skijaši mažu skije voskom?",
+      "pitanje": "Zašto alpski skijaši mažu klizne površine skija voskom?",
       "odgovori": [
         "Da smanje trenje i brže klize",
-        "Da skije lepše mirišu",
-        "Da bi bile teže",
-        "Da se ne vide"
+        "Da povećaju trenje i bolje koče",
+        "Da bi skije bile teže i stabilnije",
+        "Da se skije ne bi skupljale na hladnoći"
       ],
       "zanimljivost": "Za različite temperature snega koriste se različiti voskovi.",
       "rec": "vosak"
@@ -2886,9 +2886,9 @@
       "pitanje": "Zašto padobranac otvara padobran pre doskoka?",
       "odgovori": [
         "Da veliki otpor vazduha smanji brzinu padanja",
-        "Da ga ne vide sa zemlje pre nego što bezbedno sleti",
+        "Da bi ga vetar odneo tačno do mesta sletanja",
         "Zbog hladnoće, jer padobran zadržava toplotu tela",
-        "Da bi ubrzao"
+        "Da smanji silu teže koja deluje na njega"
       ],
       "zanimljivost": "Rekordni skok sa 39 km visine (2012) bio je toliko visok da je skakač u slobodnom padu probio brzinu zvuka.",
       "rec": "padobran",
@@ -2905,8 +2905,8 @@
       "odgovori": [
         "Otpor vazduha raste otprilike sa kvadratom brzine",
         "Gume se brže troše na asfaltu, pa motor mora jače da radi",
-        "Motor je umoran od brze vožnje, pa troši mnogo više goriva",
-        "Ne treba više goriva"
+        "Sila teže na automobil raste kada on brže vozi",
+        "Trenje kotrljanja točkova raste sa kvadratom brzine"
       ],
       "zanimljivost": "Pri 130 km/h više od polovine snage motora troši se na savladavanje otpora vazduha.",
       "rec": "gorivo"
@@ -3149,12 +3149,12 @@
     {
       "lekcija": 11,
       "tezina": 2,
-      "pitanje": "Zašto je kamion sa teretom na krovu sklon prevrtanju?",
+      "pitanje": "Zašto je kombi sa teškim teretom na krovu sklon prevrtanju?",
       "odgovori": [
         "Težište mu je visoko",
-        "Težište je nisko",
-        "Ima mnogo točkova",
-        "Zbog boje"
+        "Težište mu je nisko",
+        "Teret smanjuje trenje guma",
+        "Površina oslonca mu se poveća"
       ],
       "zanimljivost": "Trkački automobili su niski upravo da bi im težište bilo što niže.",
       "rec": "prevrtanje"
@@ -3178,7 +3178,7 @@
       "pitanje": "Zašto hodač po žici nosi dugu motku?",
       "odgovori": [
         "Da lakše održi ravnotežu",
-        "Da bi bio teži i stabilniji",
+        "Da bi njome odgurnuo vetar",
         "Da bi se odmorio na sredini",
         "Zbog lepote i utiska publike"
       ],
@@ -3204,9 +3204,9 @@
       "pitanje": "Dve sile od 10 N deluju na telo u suprotnim smerovima. Šta se dešava sa telom koje miruje?",
       "odgovori": [
         "Ostaje da miruje",
-        "Kreće se brzinom 20 N",
-        "Ubrzava",
-        "Pada"
+        "Kreće se stalnom brzinom",
+        "Ubrzava u smeru jedne sile",
+        "Ubrzava, jer deluju dve sile"
       ],
       "zanimljivost": "Rezultanta je nula – u igri potezanja konopca ravnopravne ekipe se ne pomeraju.",
       "rec": "nula",
@@ -3308,7 +3308,7 @@
         "Vertikala iz njegovog težišta pada unutar osnove",
         "Drže ga čelične sajle koje su zakačene za susedne zgrade",
         "Ima magnet u temelju koji ga privlači uspravno ka zemlji",
-        "Zbog vetra"
+        "Vetar ga stalno pridržava sa nagnute strane"
       ],
       "zanimljivost": "Inženjeri su krajem 20. veka uklonili zemlju ispod jedne strane i smanjili nagib za oko 40 cm.",
       "rec": "piza"
@@ -3373,30 +3373,10 @@
         "1,5 m od oslonca",
         "2 m od oslonca, isto kao i prvo dete",
         "1 m od oslonca",
-        "2,5 m"
+        "2,5 m od oslonca"
       ],
       "zanimljivost": "Uslov ravnoteže poluge: F₁·d₁ = F₂·d₂.",
       "rec": "klackalica",
-      "mediji": {
-        "vrsta": "fizika",
-        "scena": "poluga",
-        "levo": [
-          {
-            "m": 30,
-            "d": 2,
-            "e": "🧒"
-          }
-        ],
-        "desno": [
-          {
-            "m": 40,
-            "d": 1.5,
-            "e": "👦",
-            "do": "?"
-          }
-        ],
-        "ravnoteza": true
-      },
       "medijiOdgovora": {
         "vrsta": "fizika",
         "scena": "poluga",
@@ -3435,9 +3415,9 @@
       "pitanje": "Zašto ključ za odvrtanje šrafova na točku ima dugu dršku?",
       "odgovori": [
         "Duži krak daje veći moment uz manju silu",
-        "Da bude lepši i lakše se drži u ruci dok radimo",
-        "Da bude lakši",
-        "Nema razloga"
+        "Duža drška smanjuje trenje u navojima šrafa",
+        "Duža drška povećava silu teže na ključ",
+        "Duži krak daje manji moment, pa je šraf sigurniji"
       ],
       "zanimljivost": "Ponekad majstori na ključ stave cev – produže krak i lakše odviju zarđali šraf.",
       "rec": "ključ"
@@ -3479,9 +3459,9 @@
       "pitanje": "Koja je cena „dobitka u sili“ kod poluge?",
       "odgovori": [
         "Moramo pomeriti kraj poluge na većem putu",
-        "Nema cene",
-        "Poluga postaje teža",
-        "Samo je potrebno više vremena"
+        "Moramo uložiti veći rad nego bez poluge",
+        "Poluga povećava težinu tereta",
+        "Teret se podiže na veću visinu"
       ],
       "zanimljivost": "Poluga ne štedi rad – koliko puta smanji silu, toliko puta poveća put. To je „zlatno pravilo mehanike“.",
       "rec": "zlatno"
@@ -3520,8 +3500,8 @@
       "tezina": 1,
       "pitanje": "Koji alat koristi polugu da se izvuče ekser?",
       "odgovori": [
-        "Čekić sa račvastim krajem (ili klešta)",
-        "Šrafciger sa dugom, tankom i ravnom drškom",
+        "Čekić sa račvastim krajem",
+        "Turpija",
         "Lenjir",
         "Testera"
       ],
@@ -3547,8 +3527,8 @@
       "pitanje": "Zašto kran ima kontrateg na kraćem kraku?",
       "odgovori": [
         "Da uravnoteži moment tereta",
-        "Da bude teži",
-        "Za ukras",
+        "Da poveća trenje krana sa tlom",
+        "Da kran brže okreće krak",
         "Da ga vetar ne pomera"
       ],
       "zanimljivost": "Bez kontratega kran bi se prevrnuo čim podigne teret.",
@@ -3677,10 +3657,10 @@
       "tezina": 1,
       "pitanje": "Da li i vazduh deluje silom potiska?",
       "odgovori": [
-        "Da",
-        "Ne",
-        "Samo na vodu",
-        "Samo noću"
+        "Da, na sva tela u vazduhu",
+        "Ne, potisak postoji samo u tečnostima",
+        "Samo na tela lakša od vazduha",
+        "Samo kada duva vetar"
       ],
       "zanimljivost": "Baloni sa helijumom lete zbog potiska vazduha.",
       "rec": "balon"
@@ -3844,7 +3824,7 @@
         "Kada mu je gustina manja od gustine tečnosti",
         "Kada je veoma teško i ima mnogo veliku masu u odnosu na vodu",
         "Kada je po veličini veće od suda u kome je tečnost",
-        "Uvek"
+        "Kada mu je gustina veća od gustine tečnosti"
       ],
       "zanimljivost": "Drvo, led i pluta plivaju na vodi.",
       "rec": "plivanje",
@@ -4065,7 +4045,7 @@
         "Plovak za merenje gustine tečnosti, npr. mleka ili akumulatorske kiseline",
         "Uređaj za merenje brzine vetra pomoću okretnih kašičica, npr. na meteorološkim stanicama",
         "Instrument za merenje vazdušnog pritiska, npr. kod predviđanja promene vremena",
-        "Vaga za zlato"
+        "Vaga za merenje mase dragocenih metala, npr. zlata"
       ],
       "zanimljivost": "Što je tečnost gušća, areometar manje uranja.",
       "rec": "areometar"
@@ -4140,8 +4120,8 @@
       "odgovori": [
         "Kada sila pomera telo",
         "Kada držimo teret u mestu",
-        "Kada razmišljamo",
-        "Kada spavamo"
+        "Kada guramo zid koji se ne pomera",
+        "Kada telo miruje na stolu"
       ],
       "zanimljivost": "Ako držiš tešku torbu i stojiš, umaraš se, ali u fizičkom smislu ne vršiš rad.",
       "rec": "rad"

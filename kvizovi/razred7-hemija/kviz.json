@@ -206,9 +206,9 @@
       "pitanje": "Šta je hemijski element?",
       "odgovori": [
         "Čista supstanca sastavljena od atoma iste vrste",
-        "Smeša dve ili više supstanci koje se mogu razdvojiti",
-        "Bilo koja tečnost",
-        "Molekul vode"
+        "Najmanja čestica supstance koja zadržava njena svojstva",
+        "Supstanca sastavljena od atoma dve ili više vrsta",
+        "Svaka supstanca koja provodi električnu struju"
       ],
       "zanimljivost": "Danas je poznato 118 elemenata. Oko 90 se nalazi u prirodi, a ostali su napravljeni u laboratorijama.",
       "rec": "element",
@@ -751,7 +751,7 @@
         "Masa se uvek smanjuje, jer se deo supstance pretvori u energiju",
         "Gasovi nemaju masu, pa se zbog njih masa posle reakcije menja"
       ],
-      "zanimljivost": "Zakon je postavio Lavoazje. Ako drvo izgori, pepeo je lakši – ali je masa gasova koji su otišli u vazduh tačno nadoknađuje razliku.",
+      "zanimljivost": "Zakon je postavio Lavoazje. Kad drvo izgori, pepeo je lakši od drveta – ali ako se izmere i potrošeni kiseonik i gasovi koji su nastali, ukupna masa ostaje ista.",
       "rec": "masa",
       "lekcija": 22
     },
@@ -790,7 +790,7 @@
         "16",
         "10"
       ],
-      "zanimljivost": "Mr(H₂O) = 2 · 1 + 16 = 18. Relativne mase nemaju jedinicu – pokazuju koliko je puta molekul teži od dvanaestine atoma ugljenika-12.",
+      "zanimljivost": "Mr(H₂O) = 2 · 1 + 16 = 18. Relativne mase nemaju jedinicu – pokazuju koliko je puta masa molekula veća od dvanaestine mase atoma ugljenika-12.",
       "rec": "voda",
       "lekcija": 25
     },
@@ -945,17 +945,17 @@
       "zanimljivost": "Skoro sve oko nas – odeća, boje, lekovi, šamponi – napravljeno je uz pomoć hemije.",
       "odgovori": [
         "Plastiku, lekove i veštačka đubriva",
-        "Samo kamen i pesak",
-        "Samo drvo i papir",
-        "Samo vodu i so"
+        "Drvo, pamuk i prirodnu vunu",
+        "Kamen, šljunak i rečni pesak",
+        "Sirovu naftu i ugalj iz rudnika"
       ]
     },
     {
       "lekcija": 1,
       "tezina": 3,
-      "pitanje": "Ko je 1661. objavio knjigu „Skeptični hemičar“ i prvi jasno razlikovao element od jedinjenja?",
+      "pitanje": "Ko je 1661. u knjizi „Skeptični hemičar“ odbacio staro učenje o četiri elementa (vatra, voda, vazduh, zemlja)?",
       "rec": "bojl",
-      "zanimljivost": "Bojl je bio i fizičar – po njemu i Mariotu se zove zakon o pritisku i zapremini gasova.",
+      "zanimljivost": "Bojl je smatrao da je element supstanca koja se ne može razložiti na prostije. Bio je i fizičar – po njemu i Mariotu se zove zakon o pritisku i zapremini gasova.",
       "odgovori": [
         "Robert Bojl",
         "Isak Njutn",
@@ -981,7 +981,7 @@
       "tezina": 2,
       "pitanje": "Kako se zove pretpostavka koju naučnik proverava ogledom?",
       "rec": "hipoteza",
-      "zanimljivost": "Ako ogled ponavljeno potvrdi hipotezu, ona može prerasti u teoriju.",
+      "zanimljivost": "Ako ogledi više puta potvrde hipotezu, ona može postati deo naučne teorije.",
       "odgovori": [
         "Hipoteza",
         "Zaključak",
@@ -997,9 +997,9 @@
       "zanimljivost": "Kontrolisani ogled se ponavlja više puta pod istim uslovima, pa se rezultati uporede.",
       "odgovori": [
         "Izvođenjem kontrolisanih ogleda",
-        "Slučajnim pogađanjem",
-        "Čitanjem horoskopa",
-        "Bacanjem novčića"
+        "Prepisivanjem iz starih knjiga",
+        "Glasanjem među naučnicima",
+        "Oslanjanjem samo na osećaj"
       ]
     },
     {
@@ -1058,7 +1058,7 @@
     },
     {
       "lekcija": 1,
-      "tezina": 3,
+      "tezina": 1,
       "pitanje": "Koja nauka proučava građu i osobine materije na nivou atoma i molekula?",
       "rec": "hemija",
       "zanimljivost": "Astronomija proučava nebeska tela, lingvistika jezike, a arheologija ostatke prošlosti.",
@@ -1085,14 +1085,14 @@
     {
       "lekcija": 1,
       "tezina": 2,
-      "pitanje": "Čime se hemija bavi u vezi sa supstancama?",
-      "rec": "svojstvo",
-      "zanimljivost": "Hemija objašnjava od čega je supstanca sastavljena, kakva su joj svojstva i kako se menja.",
+      "pitanje": "Kako se zvala srednjovekovna preteča hemije, čiji su sledbenici pokušavali da obične metale pretvore u zlato?",
+      "rec": "alhemija",
+      "zanimljivost": "Alhemičari zlato nisu dobili, ali su otkrili mnoge supstance i izmislili laboratorijsko posuđe i postupke, poput destilacije, koje hemija koristi i danas.",
       "odgovori": [
-        "Njihovim sastavom, svojstvima i promenama",
-        "Samo njihovom cenom u prodavnici",
-        "Samo njihovim oblikom i bojom",
-        "Samo mestom gde se nalaze"
+        "Alhemija",
+        "Astrologija",
+        "Metalurgija",
+        "Mineralogija"
       ]
     },
     {
@@ -1107,7 +1107,7 @@
         "Morska voda",
         "Supa sa povrćem"
       ],
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "molekul",
         "ime": "so"
       }
@@ -1150,7 +1150,7 @@
         "Bakar (Cu)",
         "Neon (Ne)"
       ],
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "molekul",
         "ime": "voda",
         "legenda": false
@@ -1207,7 +1207,7 @@
         "Ugljen-dioksid (CO₂)",
         "Kuhinjska so (NaCl)"
       ],
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "molekul",
         "ime": "kiseonik"
       }
@@ -1217,7 +1217,7 @@
       "tezina": 3,
       "pitanje": "Koji element je najzastupljeniji u svemiru?",
       "rec": "vodonik",
-      "zanimljivost": "Oko 75 % vidljive materije u svemiru čini vodonik – gorivo zvezda.",
+      "zanimljivost": "Oko 75% mase vidljive materije u svemiru čini vodonik – gorivo zvezda.",
       "odgovori": [
         "Vodonik",
         "Gvožđe",
@@ -1259,9 +1259,9 @@
       "zanimljivost": "Čista supstanca ima stalan sastav. Morska voda je smeša – u njoj ima soli, gasova i drugih primesa.",
       "odgovori": [
         "So ima stalan sastav, a morska voda nema",
-        "So je slana, a morska voda nije",
-        "So je tečna, a morska voda je čvrsta",
-        "So nema masu, a morska voda ima"
+        "So je čvrsta, a morska voda je tečna",
+        "So se rastvara u vodi, a morska voda ne",
+        "So se dobija iz morske vode, pa je čistija"
       ]
     },
     {
@@ -1293,14 +1293,14 @@
     {
       "lekcija": 3,
       "tezina": 2,
-      "pitanje": "Čemu služi tronožac sa azbestnom mrežicom?",
+      "pitanje": "Čemu služi tronožac sa mrežicom?",
       "rec": "tronožac",
-      "zanimljivost": "Mrežica ravnomerno raspoređuje toplotu, pa se staklo ne puca.",
+      "zanimljivost": "Mrežica ravnomerno raspoređuje toplotu, pa staklo ne puca. Nekada se pravila od azbesta, a danas je keramička.",
       "odgovori": [
         "Da drži posudu pri zagrevanju iznad gorionika",
-        "Za merenje mase",
-        "Za filtriranje",
-        "Za mešanje tečnosti"
+        "Da se na njemu meri masa supstance",
+        "Da se na njemu suše oprani sudovi",
+        "Da drži epruvete u uspravnom položaju"
       ]
     },
     {
@@ -1311,9 +1311,9 @@
       "zanimljivost": "Hemikalije se mirišu tako što se para lagano navije rukom ka nosu, nikad direktno.",
       "odgovori": [
         "Nikad se ne miriše i ne proba supstanca direktno iz posude",
-        "Može se jesti u laboratoriji",
-        "Supstance se probaju da se proveri ukus",
-        "Ne mora se nositi zaštitna oprema"
+        "Višak supstance vraća se u originalnu bočicu",
+        "Epruveta se zagreva otvorom okrenutim ka sebi",
+        "Hrana i piće smeju da stoje na radnom stolu"
       ]
     },
     {
@@ -1337,9 +1337,9 @@
       "zanimljivost": "Voda u menzuri pravi udubljen meniskus – očitava se najniža tačka površine.",
       "odgovori": [
         "Zakrivljena površina tečnosti u uskoj posudi",
-        "Vrsta laboratorijske vage",
-        "Deo plamenika",
-        "Filter-papir"
+        "Najniži podeok na skali menzure",
+        "Zaobljeno dno epruvete",
+        "Izliv na vrhu laboratorijske čaše"
       ]
     },
     {
@@ -1358,17 +1358,17 @@
     {
       "lekcija": 3,
       "tezina": 3,
-      "pitanje": "Koja mera zaštite NIJE obavezna pri radu sa kiselinama?",
+      "pitanje": "Šta od navedenog NE štiti pri radu sa kiselinama?",
       "rec": "zaštita",
-      "zanimljivost": "Oči se štite zaštitnim naočarima, a ne sunčanim naočarima. Uvek se nosi i kecelja.",
+      "zanimljivost": "Oči se štite zaštitnim naočarima koje prijanjaju uz lice; uz njih se nose kecelja i rukavice.",
       "odgovori": [
-        "Nošenje sunčanih naočara umesto zaštitnih",
+        "Sunčane naočare",
         "Zaštitne naočare",
-        "Radna (zaštitna) kecelja",
-        "Pažljivo rukovanje"
+        "Zaštitna kecelja",
+        "Zaštitne rukavice"
       ],
       "vrsta": "uljez",
-      "objasnjenje": "Sunčane naočare ne štite od prskanja hemikalija; obavezne su zaštitne naočare i kecelja."
+      "objasnjenje": "Sunčane naočare ne štite oči od prskanja hemikalija; zaštitne naočare, kecelja i rukavice štite."
     },
     {
       "lekcija": 3,
@@ -1391,34 +1391,34 @@
       "zanimljivost": "Prosute hemikalije uvek prijavljujemo nastavniku – nikad ih ne diramo golim rukama.",
       "odgovori": [
         "Odmah obavestiti nastavnika i postupiti po uputstvu",
-        "Obrisati rukom",
-        "Pokriti papirom i nastaviti rad",
-        "Ne reći nikome"
+        "Sam je pokupiti krpom i nastaviti rad",
+        "Pokriti je papirom i nastaviti rad",
+        "Otvoriti prozor i sačekati da ispari"
       ]
     },
     {
       "lekcija": 3,
       "tezina": 1,
-      "pitanje": "Koje posuđe služi za mešanje (usitnjavanje) čvrstih supstanci?",
-      "rec": "avan",
-      "zanimljivost": "Avan je obično od porcelana i koristi se i u kuhinji za začine.",
+      "pitanje": "Čime se drži epruveta dok se zagreva iznad plamena?",
+      "rec": "hvataljka",
+      "zanimljivost": "Hvataljka se stavlja pri vrhu epruvete. Drvo slabo provodi toplotu, pa se ruka ne opeče.",
       "odgovori": [
-        "Avan sa tučkom",
-        "Menzura",
-        "Pipeta",
-        "Levak"
+        "Drvenom hvataljkom (štipaljkom)",
+        "Pincetom",
+        "Metalnim tronošcem",
+        "Kašičicom (špatulom)"
       ]
     },
     {
       "lekcija": 3,
       "tezina": 2,
-      "pitanje": "Koji plamen na Bunzenovom (gasnom) gorioniku je najtopliji?",
+      "pitanje": "Koji deo plamena Bunzenovog (gasnog) gorionika je najtopliji?",
       "rec": "plamen",
       "zanimljivost": "Plavi plamen znači da je sagorevanje potpuno i najtoplije je.",
       "odgovori": [
         "Plavi, spoljašnji deo plamena",
-        "Žuti, svetleći deo",
-        "Hladan deo oko fitilja",
+        "Žuti, svetleći deo plamena",
+        "Tamni unutrašnji deo, iznad cevi",
         "Svi delovi su jednako topli"
       ]
     },
@@ -1492,7 +1492,7 @@
     {
       "lekcija": 4,
       "tezina": 2,
-      "pitanje": "Po kojem fizičkom svojstvu se magnet privlači?",
+      "pitanje": "Kako se zove fizičko svojstvo supstanci koje privlači magnet?",
       "rec": "magnet",
       "zanimljivost": "Gvožđe, nikl i kobalt privlači magnet – to je fizičko svojstvo.",
       "odgovori": [
@@ -1505,17 +1505,17 @@
     {
       "lekcija": 4,
       "tezina": 1,
-      "pitanje": "Kojim čulom NE možemo odrediti fizičko svojstvo supstance?",
+      "pitanje": "Koje od navedenih fizičkih svojstava NE možemo odrediti samo čulima?",
       "rec": "čulno",
-      "zanimljivost": "Boja, tvrdoća i miris se vide ili osete čulima, a gorenje je hemijska promena.",
+      "zanimljivost": "Gustina se izračunava iz izmerene mase i zapremine – „na oko“ je ne možemo odrediti.",
       "odgovori": [
-        "Sluhom – da li supstanca gori",
-        "Vidom – boju",
-        "Dodirom – tvrdoću",
-        "Mirisom – miris"
+        "Gustina",
+        "Boja",
+        "Miris",
+        "Sjaj"
       ],
       "vrsta": "uljez",
-      "objasnjenje": "Gorenje je hemijsko svojstvo i ne određuje se čulom sluha, dok su boja, tvrdoća i miris fizička svojstva."
+      "objasnjenje": "Gustinu ne opažamo čulima – izračunava se kao količnik izmerene mase i zapremine. Boju i sjaj vidimo, a miris osećamo."
     },
     {
       "lekcija": 4,
@@ -1525,9 +1525,9 @@
       "zanimljivost": "Pri ključanju mehurići pare nastaju u celoj tečnosti, a ne samo na površini.",
       "odgovori": [
         "Isparava u celoj zapremini tečnosti",
-        "Pretvara se u led",
-        "Zapali se",
-        "Rastvara se u vodi"
+        "Isparava samo sa površine",
+        "Prelazi u čvrsto stanje",
+        "Razlaže se na elemente"
       ]
     },
     {
@@ -1552,8 +1552,8 @@
       "odgovori": [
         "Bela boja i sladak ukus",
         "Gori na vazduhu",
-        "Rđa u vodi",
-        "Reaguje sa kiselinom"
+        "Karamelizuje se pri zagrevanju",
+        "Pocrni u sumpornoj kiselini"
       ]
     },
     {
@@ -1577,35 +1577,35 @@
       "zanimljivost": "Gvožđe privlači magnet i gušće je, a aluminijum je lakši i srebrnast.",
       "odgovori": [
         "Po gustini, boji i magnetičnosti",
-        "Samo po ukusu",
-        "Samo po ceni",
-        "Nikako – isto su"
+        "Po agregatnom stanju",
+        "Samo gvožđe provodi struju",
+        "Samo aluminijum ima sjaj"
       ]
     },
     {
       "lekcija": 4,
       "tezina": 2,
-      "pitanje": "Koje fizičko svojstvo vode znamo iz plivanja?",
+      "pitanje": "Koje svojstvo određuje da li će telo plutati na vodi ili potonuti?",
       "rec": "gustina",
       "zanimljivost": "Telo pluta ako mu je gustina manja od gustine vode.",
       "odgovori": [
         "Gustina",
-        "Zapaljivost",
-        "Rđanje",
-        "Kiselost"
+        "Boja",
+        "Providnost",
+        "Temperatura topljenja"
       ]
     },
     {
       "lekcija": 4,
       "tezina": 1,
-      "pitanje": "Providnost (prozirnost) je primer kojeg svojstva?",
-      "rec": "providnost",
-      "zanimljivost": "Da li supstanca propušta svetlost – to je fizičko svojstvo.",
+      "pitanje": "Kako se zove fizičko svojstvo koje pokazuje da li supstanca provodi električnu struju?",
+      "rec": "struja",
+      "zanimljivost": "Metali dobro provode struju, a staklo, plastika i guma ne provode – zato se od njih prave izolatori.",
       "odgovori": [
-        "Fizičkog",
-        "Hemijskog",
-        "Ni jednog",
-        "Samo hemijskog"
+        "Električna provodljivost",
+        "Gustina",
+        "Zapaljivost",
+        "Tvrdoća"
       ]
     },
     {
@@ -1629,9 +1629,9 @@
       "zanimljivost": "1 L = 1000 mL. Zapremina se meri menzurom ili pipetom.",
       "odgovori": [
         "Litar (L) ili mililitar (mL)",
-        "Gram (g)",
-        "Sekunda (s)",
-        "Stepen (°)"
+        "Kilogram (kg) ili gram (g)",
+        "Sekunda (s) ili minut (min)",
+        "Metar (m) ili centimetar (cm)"
       ]
     },
     {
@@ -1745,16 +1745,16 @@
       "rec": "menzura",
       "zanimljivost": "Menzura je merni sud – nije predviđena za zagrevanje.",
       "odgovori": [
-        "Staklo može da pukne, a graduacija se ošteti",
-        "Zato što se istopi kao led",
-        "Zato što promeni boju",
-        "Ne postoji takva opasnost"
+        "Staklo može da pukne, a podela postane netačna",
+        "Menzura se skupi, pa pokazuje manje",
+        "Tečnost u menzuri ne može da proključa",
+        "Plamen izbriše podeoke sa menzure"
       ]
     },
     {
       "lekcija": 5,
       "tezina": 1,
-      "pitanje": "Koja je NAJMANJA jedinica za merenje mase?",
+      "pitanje": "Koja je od navedenih jedinica za masu najmanja?",
       "rec": "miligram",
       "zanimljivost": "1 g = 1000 mg, pa je miligram hiljadu puta manji od grama.",
       "odgovori": [
@@ -1767,14 +1767,14 @@
     {
       "lekcija": 5,
       "tezina": 2,
-      "pitanje": "Koliko stepeni ima između tačke topljenja leda i tačke ključanja vode?",
+      "pitanje": "Koliko stepeni Celzijusa ima između tačke topljenja leda i tačke ključanja vode?",
       "rec": "skala",
       "zanimljivost": "Led se topi na 0 °C, a voda ključa na 100 °C – razlika je 100 stepeni.",
       "odgovori": [
-        "100 °C",
-        "10 °C",
-        "50 °C",
-        "1000 °C"
+        "100",
+        "10",
+        "50",
+        "1000"
       ]
     },
     {
@@ -1785,9 +1785,9 @@
       "zanimljivost": "Pipeta je baždarena za tačno odmeravanje male zapremine.",
       "odgovori": [
         "Pipetom od 10 mL",
-        "Velikom čašom od 500 mL",
-        "Okom, bez instrumenta",
-        "Dlanom"
+        "Menzurom od 1000 mL",
+        "Čašom od 250 mL",
+        "Erlenmajerom od 500 mL"
       ]
     },
     {
@@ -1878,9 +1878,9 @@
       "zanimljivost": "Rđa je jedinjenje gvožđa, kiseonika i vode – to je hemijska promena.",
       "odgovori": [
         "Nastaje nova supstanca (rđa)",
-        "Samo promeni oblik",
-        "Samo se isparava",
-        "Ništa se ne dešava"
+        "Samo menja boju, a ostaje gvožđe",
+        "Topi se na vlažnom vazduhu",
+        "Rastvara se u vodi kao so"
       ]
     },
     {
@@ -1903,10 +1903,10 @@
       "rec": "promena",
       "zanimljivost": "Mehurići gasa, nova boja, talog ili miris ukazuju da je nastala nova supstanca.",
       "odgovori": [
-        "Izdvajanje gasa, promena boje ili pojava taloga",
-        "Samo promena oblika",
-        "Samo promena temperature",
-        "Samo promena mesta"
+        "Gas, nova boja ili talog",
+        "Promena oblika tela",
+        "Promena agregatnog stanja",
+        "Usitnjavanje u prah"
       ]
     },
     {
@@ -2070,9 +2070,9 @@
       "zanimljivost": "Fe od „ferrum“, Cu od „cuprum“ (bakar), Au od „aurum“ (zlato).",
       "odgovori": [
         "Simboli se pišu prema latinskim nazivima",
-        "Zato što je G zauzeto za gas",
-        "Slovo G ne postoji u hemiji",
-        "Gvožđe nema simbol"
+        "Simboli se pišu prema engleskim nazivima",
+        "Po imenu naučnika koji ga je otkrio",
+        "Slovo G je rezervisano za gram"
       ]
     },
     {
@@ -2133,7 +2133,7 @@
         "Jedno ili dva slova",
         "Uvek tri slova",
         "Uvek jedno slovo",
-        "Koliko god želimo"
+        "Uvek tačno dva slova"
       ]
     },
     {
@@ -2218,7 +2218,7 @@
         "Proton",
         "Elektron",
         "Neutron",
-        "Nijedna"
+        "Atom"
       ]
     },
     {
@@ -2321,7 +2321,7 @@
       "odgovori": [
         "Elektronski omotač",
         "Jezgro",
-        "Nukleus",
+        "Kristalna rešetka",
         "Vakuum"
       ]
     },
@@ -2359,9 +2359,9 @@
       "zanimljivost": "Kad bi jezgro bilo veličine graška, atom bi bio veličine fudbalskog stadiona.",
       "odgovori": [
         "Uglavnom prazan prostor",
-        "Potpuno pun",
-        "Potpuno prazan",
-        "Zavisi od boje"
+        "Gusto ispunjen česticama",
+        "Ispunjen vazduhom",
+        "Ispunjen tečnošću"
       ]
     },
     {
@@ -2520,7 +2520,7 @@
         "Imaju isti broj elektrona",
         "Imaju istu masu",
         "Imaju isti broj neutrona",
-        "Nemaju isto svojstvo"
+        "Imaju isti maseni broj"
       ]
     },
     {
@@ -2632,7 +2632,7 @@
       "tezina": 3,
       "pitanje": "Koji element ima raspored elektrona 2, 8, 8?",
       "rec": "argon",
-      "zanimljivost": "Argon ima popunjen treći nivo (za prvih 18 elemenata) – zato je plemeniti gas.",
+      "zanimljivost": "Argon ima 8 elektrona u spoljašnjem nivou (oktet) – zato je plemeniti gas i skoro ne reaguje.",
       "odgovori": [
         "Argon",
         "Natrijum",
@@ -2674,14 +2674,14 @@
     {
       "lekcija": 10,
       "tezina": 2,
-      "pitanje": "Zašto se elektroni raspoređuju po nivoima?",
+      "pitanje": "Kojim redom se popunjavaju energetski nivoi?",
       "rec": "nivo",
       "zanimljivost": "Prvo se popuni prvi nivo, pa drugi, pa treći…",
       "odgovori": [
-        "Nivo bliži jezgru popunjava se prvi",
-        "Nivo dalji od jezgra popunjava se prvi",
+        "Prvo nivo najbliži jezgru, pa dalji",
+        "Prvo nivo najdalji od jezgra",
         "Svi nivoi se pune istovremeno",
-        "Elektroni ne prave nivoe"
+        "Nasumično, bez ikakvog reda"
       ]
     },
     {
@@ -2710,14 +2710,14 @@
     {
       "lekcija": 10,
       "tezina": 2,
-      "pitanje": "Šta pokazuje broj elektrona u poslednjem energetskom nivou?",
-      "rec": "valenca",
+      "pitanje": "Šta najviše zavisi od broja elektrona u poslednjem energetskom nivou?",
+      "rec": "elektron",
       "zanimljivost": "Elektroni u poslednjem nivou (valentni) određuju kako će se element vezivati.",
       "odgovori": [
-        "Valencu elementa",
-        "Maseni broj",
-        "Broj neutrona",
-        "Broj nivoa"
+        "Kako se atom hemijski vezuje",
+        "Masa atoma",
+        "Broj neutrona u jezgru",
+        "Broj energetskih nivoa"
       ]
     },
     {
@@ -2784,10 +2784,10 @@
       "rec": "helijum",
       "zanimljivost": "Helijum ima samo 2 elektrona, ali je time prvi nivo potpuno pun.",
       "odgovori": [
-        "Prvi nivo mu je popunjen (2 elektrona)",
-        "Ima mnogo neutrona",
-        "Nema jezgro",
-        "Ima 8 nivoa"
+        "Prvi (jedini) nivo mu je popunjen",
+        "Ima isti broj protona i neutrona",
+        "Ima 8 elektrona u spoljašnjem nivou",
+        "Jezgro mu je najteže od svih"
       ],
       "medijiOdgovora": {
         "vrsta": "atom",
@@ -2820,7 +2820,7 @@
         "7",
         "18",
         "8",
-        "100"
+        "6"
       ]
     },
     {

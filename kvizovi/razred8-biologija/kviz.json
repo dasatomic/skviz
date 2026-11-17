@@ -228,9 +228,9 @@
       "pitanje": "Zašto visoka temperatura (groznica preko 41 °C) može biti opasna?",
       "odgovori": [
         "Enzimi menjaju oblik i prestaju da rade",
-        "Krv se zaledi",
-        "Ćelije počnu da fotosintetišu",
-        "Kosti omekšaju"
+        "Krv postane retka kao voda",
+        "Kosti počnu da gube kalcijum",
+        "Ćelije prestanu da primaju vodu"
       ],
       "zanimljivost": "Isto se dešava sa belancetom kad se kuva – belančevine se trajno promene (denaturišu).",
       "rec": "belance"
@@ -284,9 +284,9 @@
       "pitanje": "Zašto neki ljudi ne podnose mleko?",
       "odgovori": [
         "Nemaju dovoljno enzima laktaze",
-        "Imaju previše kalcijuma",
-        "Alergični su na vodu",
-        "Nemaju zube"
+        "Imaju previše enzima amilaze",
+        "Želudac im luči premalo kiseline",
+        "Jetra im ne razgrađuje mlečnu mast"
       ],
       "zanimljivost": "Većina odraslih ljudi na svetu ima smanjenu laktazu – podnošenje mleka u odraslom dobu je ređa osobina.",
       "rec": "laktaza"
@@ -336,11 +336,11 @@
       "pitanje": "Odakle telo dobija energiju za metaboličke procese?",
       "odgovori": [
         "Iz hrane",
-        "Iz vazduha bez hrane",
-        "Iz sunca direktno kroz kožu",
-        "Iz vode"
+        "Iz kiseonika koji udišemo",
+        "Iz vode koju pijemo",
+        "Iz toplote okoline"
       ],
-      "zanimljivost": "Čak i dok spavamo, mozak, srce i disanje troše oko 60–70% ukupne dnevne energije.",
+      "zanimljivost": "Čak i u potpunom mirovanju telo potroši oko 60–70% ukupne dnevne energije – na rad mozga i srca, disanje i održavanje toplote.",
       "rec": "hrana"
     },
     {
@@ -364,7 +364,7 @@
         "Pomoćni molekuli bez kojih neki enzimi ne rade",
         "Hormoni rasta koje luči hipofiza u našem mozgu i krvi",
         "Vrste šećera koje se nalaze u voću, mleku i medu",
-        "Ćelijske organele"
+        "Male organele koje se nalaze u citoplazmi svake ćelije"
       ],
       "zanimljivost": "Zbog toga nedostatak vitamina remeti metabolizam – enzimi ostaju bez „pomoćnika“.",
       "rec": "vitamin"
@@ -533,7 +533,7 @@
         "Jedro sa hromozomima",
         "Vakuola sa ćelijskim sokom"
       ],
-      "zanimljivost": "Ćelije srčanog mišića imaju toliko mitohondrija da one zauzimaju skoro 40% njihove citoplazme.",
+      "zanimljivost": "Mitohondrije nasleđujemo samo od majke – one iz spermatozoida ne prelaze u zigot ili se u njemu razgrade.",
       "rec": "elektrana",
       "medijiOdgovora": {
         "vrsta": "biologija",
@@ -633,7 +633,7 @@
         "Razlaganje šećera u ćeliji uz pomoć kiseonika",
         "Stvaranje ATP-a"
       ],
-      "zanimljivost": "Kad krastavac staviš u slanu vodu, osmozom gubi vodu i postaje kiseli krastavčić.",
+      "zanimljivost": "Kad krastavac staviš u veoma slanu vodu, osmozom gubi vodu i smežura se – isto se desi i sa zelenom salatom posoljenom dugo pre jela.",
       "rec": "osmoza"
     },
     {
@@ -862,7 +862,7 @@
         "Plavu i crvenu",
         "Zelenu i žutu",
         "Samo zelenu",
-        "Samo belu"
+        "Žutu i narandžastu"
       ],
       "zanimljivost": "Zelenu svetlost hlorofil odbija i propušta – zato su listovi zeleni.",
       "rec": "hlorofil"
@@ -1134,10 +1134,10 @@
       "pitanje": "Gde se odvija svetla faza fotosinteze?",
       "rec": "fotosinteza",
       "odgovori": [
-        "U membranama tilakoida hloroplasta",
+        "U tilakoidima hloroplasta",
         "U stromi hloroplasta",
-        "U jedrovoj membrani",
-        "U biljnoj vakuoli"
+        "U jedru ćelije",
+        "U ćelijskoj vakuoli"
       ],
       "zanimljivost": "Molekuli bogati energijom koji nastaju u ovoj fazi prelaze iz membrana tilakoida u stromu.",
       "autor": "ivona tomic"
@@ -1262,10 +1262,10 @@
       "tezina": 2,
       "pitanje": "Zašto slon ima velike uši?",
       "odgovori": [
-        "Da bi odavao toplotu jer mu je površina mala u odnosu na zapreminu",
-        "Da bi mogao malo da leti i skače mašući ušima kad je u opasnosti od lavova",
-        "Da bi plašio miševe",
-        "Da bi čuo zvezde"
+        "Da bi lakše odavao toplotu",
+        "Da bi u njima čuvao zalihe vode",
+        "Da bi lakše održavao ravnotežu",
+        "Da bi njima hvatao hranu"
       ],
       "zanimljivost": "Slon maše ušima kao lepezom – krv u njima se hladi i do nekoliko stepeni.",
       "rec": "slon"
@@ -1291,7 +1291,7 @@
         "Lopta ima najmanju površinu",
         "Lopta ima najveću površinu",
         "Isti je kao kod kocke",
-        "Lopta nema površinu"
+        "Zavisi od materijala tela"
       ],
       "zanimljivost": "Zato se životinje na hladnoći sklupčaju u loptu – tako gube najmanje toplote.",
       "rec": "lopta",
@@ -1306,9 +1306,9 @@
       "pitanje": "Zašto mače spava sklupčano kad je hladno?",
       "odgovori": [
         "Da bi smanjilo površinu kroz koju gubi toplotu",
-        "Da bi bilo manje vidljivo za pse i druge životinje",
-        "Jer ga boli stomak od hladnog mleka i hrane",
-        "Jer tako sanja lepše snove o lovu na miševe"
+        "Da bi lakše čulo šta se dešava oko njega",
+        "Da bi lakše disalo dok spava",
+        "Da bi mu mišići brže rasli"
       ],
       "zanimljivost": "Pingvini se zimi zbijaju u gusto jato i naizmenično menjaju mesta u sredini i na ivici.",
       "rec": "klupko"
@@ -1321,7 +1321,7 @@
         "Da bi imao veliku površinu za svetlost i razmenu gasova",
         "Da bi bio što lakši, pa ga vetar ne može otkinuti sa grane drveta",
         "Da bi ga životinje lakše jele i tako raznosile seme biljke dalje",
-        "Slučajno"
+        "Da bi kiša lakše spirala prašinu sa njega"
       ],
       "zanimljivost": "Iglice četinara imaju malu površinu – tako gube manje vode zimi kad je zemlja zaleđena.",
       "rec": "list"
@@ -1344,12 +1344,12 @@
       "tezina": 2,
       "pitanje": "Koja anatomska struktura bubrega povećava površinu za filtriranje krvi?",
       "odgovori": [
-        "Milioni sitnih nefrona",
-        "Jedna velika šupljina",
-        "Dlake",
-        "Kosti"
+        "Oko milion sitnih nefrona",
+        "Jedna velika bubrežna karlica",
+        "Debela masna kapsula oko bubrega",
+        "Dugačak i uzan mokraćovod"
       ],
-      "zanimljivost": "Svi kapilari jednog bubrega spojeni bi bili dugi desetinama kilometara.",
+      "zanimljivost": "Svaki bubreg ima oko milion nefrona, a oba bubrega zajedno dnevno profiltriraju oko 180 litara krvne plazme – od toga ostane tek oko litar i po mokraće.",
       "rec": "nefron"
     },
     {
@@ -1360,7 +1360,7 @@
         "Male su, pa brzo uzimaju hranu kroz površinu",
         "Velike su, pa lako nalaze hranu svuda oko sebe",
         "Ne dišu, pa im uopšte ne treba kiseonik za rast",
-        "Imaju organe"
+        "Imaju mnogo jedara, pa se brže dele"
       ],
       "zanimljivost": "Mala veličina je „tajna“ brzog metabolizma bakterija.",
       "rec": "bakterija"
@@ -1536,9 +1536,9 @@
       "pitanje": "Gde se kod odraslog čoveka nalazi najviše matičnih ćelija krvi?",
       "odgovori": [
         "U koštanoj srži",
-        "U kosi",
-        "U noktima",
-        "U zubnoj gleđi"
+        "U slezini",
+        "U jetri",
+        "U limfnim čvorovima"
       ],
       "zanimljivost": "Transplantacija koštane srži spasava obolele od leukemije – zato je važno postati donor.",
       "rec": "srž"
@@ -1563,7 +1563,7 @@
       "odgovori": [
         "Iz krvi pupčane vrpce",
         "Iz kose novorođene bebe",
-        "Iz mlečnih zuba koji ispadnu",
+        "Iz prvih suza novorođene bebe",
         "Iz noktiju na rukama bebe"
       ],
       "zanimljivost": "Krv pupčanika je bogata matičnim ćelijama, a ranije se bacala kao otpad.",
@@ -1629,7 +1629,7 @@
         "U koži postoje matične ćelije koje stvaraju nove ćelije",
         "Koža se uopšte ne obnavlja, pa rana zaraste ožiljkom od vezivnog tkiva",
         "Rana se sama zalepi i spoji ivice, jer je krv lepljiva kao lepak za papir",
-        "Zbog flastera"
+        "Bela krvna zrnca se pretvore u ćelije kože"
       ],
       "zanimljivost": "Površinski sloj kože potpuno se obnovi za oko mesec dana.",
       "rec": "koža"
@@ -1681,7 +1681,7 @@
         "U tvornom tkivu (meristemu) na vrhovima",
         "U listovima, gde se stalno stvaraju nove ćelije",
         "U cvetu, odakle se nove ćelije šire kroz celu biljku",
-        "U plodu"
+        "U plodu, iz kog nastaje novo seme"
       ],
       "zanimljivost": "Zato iz jednog parčeta stabla (reznice) može da izraste cela nova biljka.",
       "rec": "meristem"
@@ -1702,14 +1702,14 @@
     {
       "lekcija": 5,
       "tezina": 1,
-      "pitanje": "Kako se zove davalac koštane srži?",
+      "pitanje": "Zašto se za presađivanje koštane srži traži davalac (donor) čija su tkiva što sličnija tkivima bolesnika?",
       "odgovori": [
-        "Donor",
-        "Pacijent",
-        "Primalac",
-        "Hirurg"
+        "Da imunski sistem ne bi odbacio presađene ćelije",
+        "Da bi presađene ćelije brže putovale kroz krv",
+        "Da davalac ne bi ostao bez svoje koštane srži",
+        "Da bi bolesnik posle dobio krvnu grupu davaoca"
       ],
-      "zanimljivost": "U Srbiji postoji registar davalaca matičnih ćelija koštane srži – u njega se može upisati punoletna osoba.",
+      "zanimljivost": "Zato se najpre traži davalac među braćom i sestrama. U Srbiji postoji i registar dobrovoljnih davalaca matičnih ćelija koštane srži, u koji se mogu upisati punoletne osobe.",
       "rec": "donor"
     },
     {
@@ -1722,9 +1722,9 @@
         "Do 1.000 ćelija",
         "To može samo zigot"
       ],
-      "zanimljivost": "Na stupnju od 16 do 64 ćelije embrion liči na plod duda, pa se zove morula (lat. morus – dud).",
+      "zanimljivost": "Na stupnju od oko 16 do 32 ćelije embrion liči na plod duda, pa se zove morula (lat. morus – dud).",
       "rec": "morula",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "biologija",
         "scena": "deoba",
         "tip": "zigot",
@@ -1825,8 +1825,8 @@
       "odgovori": [
         "Održavanje stalnih uslova unutrašnje sredine organizma",
         "Rast organizma od rođenja do odraslog doba i do duboke starosti",
-        "Razmnožavanje",
-        "Kretanje"
+        "Razmnožavanje organizama i stvaranje potomstva",
+        "Kretanje tela pomoću mišića i kostiju"
       ],
       "zanimljivost": "Termin homeostaza smislio je Volter Kenon 1926. godine.",
       "rec": "homeostaza"
@@ -1940,7 +1940,7 @@
         "Oko 0,1 mmol/L",
         "Oko 100 mmol/L"
       ],
-      "zanimljivost": "U celoj krvi odraslog čoveka ima tek oko 4–5 grama glukoze – manje od kafene kašičice šećera.",
+      "zanimljivost": "U celoj krvi odraslog čoveka ima tek oko 4–5 grama glukoze – otprilike jedna kafena kašičica šećera.",
       "rec": "glukoza"
     },
     {
@@ -1964,7 +1964,7 @@
         "Da izbacimo višak ugljen-dioksida i unesemo više kiseonika",
         "Zbog straha od pada, umora i takmičarske trke sa drugim učenicima",
         "Da bismo se ohladili kroz usta, isto kao psi kada im je vruće",
-        "Nema razloga"
+        "Da bi srce sporije kucalo"
       ],
       "zanimljivost": "Mozak meri ugljen-dioksid u krvi – njegov porast, a ne manjak kiseonika, najviše tera na disanje.",
       "rec": "disanje"
@@ -1988,9 +1988,9 @@
       "pitanje": "Koji sistemi organa najviše učestvuju u održavanju homeostaze?",
       "odgovori": [
         "Nervni i endokrini",
-        "Skelet i mišići",
-        "Koža i kosa",
-        "Zubi i jezik"
+        "Skeletni i mišićni",
+        "Organi za varenje",
+        "Koža i čula"
       ],
       "zanimljivost": "Nervni sistem reaguje brzo, a hormoni sporije ali duže.",
       "rec": "hormoni"
@@ -2003,7 +2003,7 @@
         "Suzi se",
         "Raširi se",
         "Ne menja se",
-        "Nestane"
+        "Pomeri se ka uglu oka"
       ],
       "zanimljivost": "Suženje zenice štiti mrežnjaču od previše svetlosti – i to je oblik homeostaze.",
       "rec": "zenica",
@@ -2091,7 +2091,7 @@
         "Pesak im upada u oči",
         "Tako hlade telo na suncu"
       ],
-      "zanimljivost": "Isto rade i morski krokodili – otuda izreka „krokodilske suze“.",
+      "zanimljivost": "Slične žlezde za so imaju i morske ptice (kod kljuna) i morske iguane, koje višak soli „kijaju“ kroz nos.",
       "rec": "suze",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -2104,12 +2104,12 @@
       "tezina": 2,
       "pitanje": "Kako morska zvezda podnosi promene slanosti vode?",
       "odgovori": [
-        "Podnosi velike promene vode i soli u telu",
-        "Ima bubrege kao sisari",
-        "Pije slatku vodu iz reka",
-        "Zatvori se u čvrstu ljušturu dok voda ne postane ista"
+        "Slanost njenih telesnih tečnosti prati slanost mora",
+        "Bubrezima izbacuje višak soli iz tela",
+        "Pije slatku vodu kad je more preslano",
+        "Zatvori se u ljušturu dok se voda ne promeni"
       ],
-      "zanimljivost": "Većina beskičmenjaka drži unutrašnju sredinu u širim granicama nego kičmenjaci, ali i oni imaju granice koje ne smeju preći.",
+      "zanimljivost": "Morska zvezda ne reguliše so u telu, pa podnosi samo male promene slanosti – zato je nema u rekama ni u bočatim lagunama. Kičmenjaci drže unutrašnju sredinu u mnogo užim granicama.",
       "rec": "zvezda"
     },
     {
@@ -2137,7 +2137,7 @@
         "Nadražljivost",
         "Provodljivost",
         "Kontraktilnost",
-        "Razdražljivost"
+        "Pokretljivost"
       ],
       "zanimljivost": "I biljke su nadražljive – mimoza za tren sklopi listiće kad je dodirneš.",
       "rec": "nadrazaj",
@@ -2213,7 +2213,7 @@
         "Brzinom svetlosti",
         "Do oko 12 km/s"
       ],
-      "zanimljivost": "To je preko 400 km/h – brže od najbržeg voza.",
+      "zanimljivost": "To je oko 430 km/h – brzo kao najbrži putnički vozovi.",
       "rec": "brzina"
     },
     {
@@ -2240,9 +2240,9 @@
       "pitanje": "Od čega zavisi brzina provođenja impulsa kroz nervno vlakno?",
       "odgovori": [
         "Od debljine – deblje vlakno provodi brže",
-        "Od visine – kod viših ljudi je brže",
-        "Od boje kože – kod tamnije je brže",
-        "Od doba dana – noću je mnogo brže"
+        "Od dužine – duže vlakno provodi brže",
+        "Od jačine draži – jača draž putuje brže",
+        "Od broja dendrita – više dendrita, brže"
       ],
       "zanimljivost": "Lignje imaju džinovska nervna vlakna debela i do 1 mm – na njima su naučnici prvi put detaljno izmerili nervni impuls.",
       "rec": "debljina"
@@ -2448,7 +2448,7 @@
         "Ćelije ili strukture koje primaju draži",
         "Mišići koji se skupljaju kada primaju nervne impulse",
         "Hormoni koji kroz krv prenose poruke od mozga do organa",
-        "Kosti"
+        "Ćelije koštane srži koje stvaraju krvna zrnca"
       ],
       "zanimljivost": "Na vrhovima prstiju ima i do 2.500 receptora za dodir na kvadratnom centimetru.",
       "rec": "receptor"
@@ -2461,7 +2461,7 @@
         "Izolacioni sloj oko aksona koji ubrzava impulse",
         "Kost oko mozga koja ga štiti od udaraca i povreda",
         "Spoljašnji sloj kože koji štiti nerve od hladnoće",
-        "Deo oka"
+        "Providni sloj na prednjem delu oka koji ga štiti"
       ],
       "zanimljivost": "Bolest multipla skleroza nastaje oštećenjem mijelina, pa se impulsi usporavaju ili prekidaju.",
       "rec": "mijelin",
@@ -2564,13 +2564,13 @@
     },
     {
       "lekcija": 8,
-      "tezina": 1,
-      "pitanje": "Koji organ prima mirise?",
+      "tezina": 2,
+      "pitanje": "Gde se nalaze čulne ćelije za miris?",
       "odgovori": [
-        "Nos",
-        "Uvo",
-        "Oko",
-        "Koža"
+        "U sluzokoži na svodu nosne duplje",
+        "U nozdrvama, među dlačicama",
+        "U sluzokoži ždrela",
+        "U sinusima kostiju lica"
       ],
       "zanimljivost": "Ljudski mozak može da zapamti i prepozna desetine hiljada različitih mirisa – a pas, sa mnogo više receptora, još mnogo više.",
       "rec": "nos"
@@ -2773,7 +2773,7 @@
         "Limun, sirće i kiselo mleko",
         "Kafa, kakao i grejpfrut"
       ],
-      "zanimljivost": "Umami na japanskom znači „prijatan ukus“; potiče od aminokiseline glutamata i opisuje se kao slano-slatki ukus.",
+      "zanimljivost": "Umami na japanskom znači „prijatan ukus“; potiče od aminokiseline glutamata i opisuje se kao pun, „mesnat“ ukus, kao kod supe.",
       "rec": "umami"
     },
     {
@@ -2854,7 +2854,7 @@
         "Nervi koji povezuju centralni nervni sistem sa delovima tela",
         "Samo mozak, sa velikim mozgom, malim mozgom i moždanim stablom",
         "Samo kičmena moždina, koja se nalazi u kanalu kičmenog stuba i kostiju",
-        "Samo oči"
+        "Samo čulni organi – oči, uši i nos"
       ],
       "zanimljivost": "Najduži nerv u telu je sedalni (išijadični) – ide od kičme do stopala.",
       "rec": "nervi"
@@ -2911,10 +2911,10 @@
       "tezina": 3,
       "pitanje": "Koji je pravilan redosled delova refleksnog luka?",
       "odgovori": [
-        "Receptor – senzorni neuron – centar – motorni neuron – efektor",
-        "Mozak – receptor – mišić – koža – nerv – centar u kičmenoj moždini",
-        "Mišić – receptor – mozak",
-        "Efektor – receptor – centar"
+        "Receptor – osetni neuron – centar – pokretački neuron – efektor",
+        "Efektor – pokretački neuron – centar – osetni neuron – receptor",
+        "Centar – receptor – osetni neuron – efektor – pokretački neuron",
+        "Receptor – pokretački neuron – centar – osetni neuron – efektor"
       ],
       "zanimljivost": "Lekar udara čekićem ispod kolena da proveri refleksni luk – noga se sama ispruži.",
       "rec": "luk",
@@ -2931,7 +2931,7 @@
         "Simpatički nervni sistem",
         "Parasimpatički nervni sistem",
         "Mali mozak",
-        "Čulo vida"
+        "Kora velikog mozga"
       ],
       "zanimljivost": "Pri strahu se ubrzava srce, šire zenice i usporava varenje – sve za tren.",
       "rec": "strah"
@@ -3009,9 +3009,9 @@
         "Spoljašnji sloj sa centrima za mišljenje, govor i svesne pokrete",
         "Kost lobanje koja okružuje mozak i štiti ga od udaraca i povreda glave",
         "Unutrašnja tečnost u kojoj mozak pluta, a koja ga hrani i čisti od otpada",
-        "Deo kičme"
+        "Omotač od vezivnog tkiva koji obavija mozak"
       ],
-      "zanimljivost": "Kora je naborana da bi stala u lobanju – razvučena bi bila velika kao stranica novina.",
+      "zanimljivost": "Kora velikog mozga debela je samo 2–4 mm, a u njoj su tela milijardi neurona – zato je siva.",
       "rec": "kora"
     },
     {
@@ -3020,9 +3020,9 @@
       "pitanje": "Šta se nalazi u kanalu koji prolazi kroz pršljenove?",
       "odgovori": [
         "Kičmena moždina",
-        "Krv iz srca",
-        "Vazduh iz pluća i grla",
-        "Želudac i creva"
+        "Koštana srž",
+        "Produžena moždina",
+        "Mali mozak"
       ],
       "zanimljivost": "Kičmena moždina je dugačka oko 45 cm i debela otprilike kao mali prst.",
       "rec": "moždina"
@@ -3033,9 +3033,9 @@
       "pitanje": "Koliko otprilike treba da spava tinejdžer?",
       "odgovori": [
         "8–10 sati",
-        "3 sata",
-        "15 sati",
-        "1 sat"
+        "5–6 sati",
+        "11–13 sati",
+        "3–4 sata"
       ],
       "zanimljivost": "Tokom sna mozak se „čisti“ od otpadnih materija i učvršćuje naučeno.",
       "rec": "san"
@@ -3248,13 +3248,7 @@
         "U mijelinskom omotaču oko dugog nervnog vlakna"
       ],
       "zanimljivost": "Kesice se zovu vezikule; kad stigne impuls, spoje se sa membranom i izbace neurotransmiter u uzan prostor između ćelija.",
-      "rec": "kesica",
-      "medijiOdgovora": {
-        "vrsta": "biologija",
-        "scena": "sinapsa",
-        "istakni": "vezikule",
-        "natpisi": true
-      }
+      "rec": "kesica"
     },
     {
       "lekcija": 10,
@@ -3534,7 +3528,7 @@
         "Žlezde koje svoje proizvode luče direktno u krv",
         "Žlezde koje luče znoj na površinu kože celog tela",
         "Žlezde koje luče pljuvačku u usnu duplju tokom jela",
-        "Žlezde koje luče suze"
+        "Žlezde koje luče suze u oči kad plačemo"
       ],
       "zanimljivost": "Znojne, pljuvačne i suzne žlezde luče kroz kanale i spadaju u žlezde sa spoljašnjim lučenjem.",
       "rec": "krv"
@@ -3588,9 +3582,9 @@
       "pitanje": "Koji polni hormoni dominiraju kod žena?",
       "odgovori": [
         "Estrogen i progesteron",
-        "Testosteron",
-        "Adrenalin",
-        "Tiroksin"
+        "Testosteron i adrenalin",
+        "Insulin i glukagon",
+        "Tiroksin i kortizol"
       ],
       "zanimljivost": "Estrogen utiče i na jačanje kostiju.",
       "rec": "estrogen"
@@ -3615,8 +3609,8 @@
       "odgovori": [
         "Krvlju",
         "Nervima",
-        "Vazduhom",
-        "Kostima"
+        "Kroz kičmenu moždinu",
+        "Kroz mišiće"
       ],
       "zanimljivost": "Hormoni deluju sporije od nervnih impulsa, ali njihovo dejstvo traje duže.",
       "rec": "krv"
@@ -3852,9 +3846,9 @@
       "pitanje": "Šta je termoregulacija?",
       "odgovori": [
         "Održavanje stalne telesne temperature",
-        "Merenje temperature vazduha",
-        "Hlađenje hrane",
-        "Grejanje kuće"
+        "Merenje telesne temperature toplomerom",
+        "Snižavanje temperature lekovima",
+        "Stvaranje toplote samo u mišićima"
       ],
       "zanimljivost": "Već pad telesne temperature ispod 35 °C ili porast iznad 40 °C ozbiljno ugrožavaju zdravlje.",
       "rec": "toplota"
@@ -3923,7 +3917,7 @@
         "Ostatak refleksa podizanja dlake radi zadržavanja toplote",
         "Bolest kože koju izaziva virus i koja se lako prenosi dodirom",
         "Alergijska reakcija kože na hladnoću, vunu ili polen biljaka",
-        "Znak gladi"
+        "Znak da je koži potrebno više vode"
       ],
       "zanimljivost": "Kod mačaka i pasa podignuta dlaka zadržava topao vazduh – a pri strahu ih čini većim.",
       "rec": "ježenje"
@@ -3986,9 +3980,9 @@
       "pitanje": "Zašto je pingvinima toplo na ledu?",
       "odgovori": [
         "Imaju gusto perje i debeo sloj sala",
-        "Imaju krzno kao medved",
-        "Stalno trče",
-        "Ne osećaju hladnoću jer nemaju nerve"
+        "Imaju šuplje kosti pune toplog vazduha",
+        "Stalno drhte i tako se greju",
+        "Krv im se ne hladi jer je veoma slana"
       ],
       "zanimljivost": "Na nogama pingvina krvni sudovi su tako raspoređeni da topla krv greje hladnu koja se vraća – noge ne gube mnogo toplote.",
       "rec": "pingvin"
@@ -4014,7 +4008,7 @@
         "Zimski san sa jako sniženom temperaturom i metabolizmom",
         "Letnje plivanje medveda u hladnim rekama radi hlađenja tela",
         "Seoba ptica selica u toplije krajeve pre dolaska hladne zime",
-        "Presvlačenje"
+        "Presvlačenje kože ili perja pred zimu"
       ],
       "zanimljivost": "Telesna temperatura nekih vrsta tekunica u hibernaciji padne i ispod 0 °C!",
       "rec": "hibernacija"
@@ -4027,7 +4021,7 @@
         "Krvni sudovi u koži se šire da odaju toplotu",
         "Zbog stida, uvek kad nas neko pogleda dok vežbamo",
         "Zbog hladnoće, jer se krv tada skuplja u licu i obrazima",
-        "Zbog gladi"
+        "Zbog manjka kiseonika u krvi"
       ],
       "zanimljivost": "Na hladnoći je obrnuto – krvni sudovi se skupljaju, pa su prsti beli i hladni.",
       "rec": "crvenilo"
@@ -4340,7 +4334,7 @@
         "Vrsta glavobolje od gladi, žeđi i umora posle škole",
         "Bolest uha koja izaziva zujanje, mučninu i vrtoglavicu"
       ],
-      "zanimljivost": "Zato su kaciga pri vožnji bicikla i trotineta obavezne.",
+      "zanimljivost": "Zato je pri vožnji bicikla, trotineta i rolera važno nositi kacigu.",
       "rec": "kaciga"
     },
     {
@@ -4377,7 +4371,7 @@
         "Loš vid na blizinu",
         "Loš vid na daljinu",
         "Slepilo za boje",
-        "Nema vida"
+        "Slab vid u mraku"
       ],
       "zanimljivost": "Sa godinama skoro svi postaju „dalekovidi“ jer sočivo gubi elastičnost – zato starije osobe čitaju sa naočarima.",
       "rec": "blizina"
@@ -4403,7 +4397,7 @@
         "Razrokost – oči ne gledaju u istu tačku",
         "Zamućenje sočiva u oku kod starijih (katarakta)",
         "Upala srednjeg uha posle prehlade i kijavice",
-        "Gubitak mirisa"
+        "Gubitak mirisa posle prehlade"
       ],
       "zanimljivost": "Kod dece se strabizam leči naočarima i „zatvaranjem“ zdravog oka, da bi slabije oko vežbalo.",
       "rec": "razrokost"
@@ -4453,9 +4447,9 @@
       "pitanje": "Koji znak posle udarca u glavu može da ukaže na krvarenje u mozgu?",
       "odgovori": [
         "Nejednako velike zenice",
-        "Crvenilo na čelu",
-        "Kijanje",
-        "Štucanje"
+        "Crvena mrlja na mestu udarca",
+        "Pojačano znojenje dlanova",
+        "Kijanje i suzenje očiju"
       ],
       "zanimljivost": "Znaci se ne moraju javiti odmah – zato posle jakog udarca u glavu uvek treba otići kod lekara, čak i ako se osećaš dobro.",
       "rec": "zenice"
@@ -4538,7 +4532,7 @@
         "Šećerna bolest (dijabetes)",
         "Gušavost (bolest štitne žlezde)",
         "Astma (bolest disajnih puteva)",
-        "Rahitis"
+        "Rahitis (nedostatak vitamina D)"
       ],
       "zanimljivost": "Oko 1 od 10 odraslih u svetu ima dijabetes.",
       "rec": "dijabetes"
@@ -4551,7 +4545,7 @@
         "Telo ne proizvodi insulin jer imunski sistem uništi ćelije pankreasa",
         "Bolest koja nastaje samo od previše šećera iz slatkiša, sokova i kolača",
         "Zarazna bolest koja se prenosi isto kao grip, kijanjem, kašljanjem i dodirom ruku",
-        "Bolest štitne žlezde"
+        "Bolest kod koje štitna žlezda luči previše tiroksina"
       ],
       "zanimljivost": "Osobe sa dijabetesom tipa 1 primaju insulin injekcijama ili pumpom, a mogu normalno da se bave sportom.",
       "rec": "insulin"
@@ -4564,7 +4558,7 @@
         "Gojaznost i nedostatak fizičke aktivnosti",
         "Pijenje previše hladne vode tokom leta i zime",
         "Previše sna i odmora, posebno posle obilnog ručka",
-        "Čitanje"
+        "Česte prehlade i virusne infekcije u detinjstvu"
       ],
       "zanimljivost": "Tip 2 se često može sprečiti zdravom ishranom i redovnim kretanjem.",
       "rec": "gojaznost"
@@ -4577,7 +4571,7 @@
         "Uvećanje štitne žlezde, često zbog nedostatka joda",
         "Upala grla i krajnika koja nastaje zbog bakterija i virusa",
         "Bolest pluća koja nastaje zbog udisanja prašine u rudniku",
-        "Prehlada"
+        "Prehlada koja zahvati grlo i glasne žice"
       ],
       "zanimljivost": "Gušavost je nekada bila česta u planinskim krajevima, a gotovo je nestala kada se jod počeo dodavati soli.",
       "rec": "gušavost"
@@ -4629,7 +4623,7 @@
         "Velika žeđ, često mokrenje i gubitak težine",
         "Kijanje i curenje nosa svakog jutra posle buđenja",
         "Svrab ušiju i zujanje u ušima posle slušanja muzike",
-        "Opadanje noktiju"
+        "Žute mrlje na zubima i desnima"
       ],
       "zanimljivost": "Telo pokušava da „ispere“ višak šećera mokraćom, pa se gubi mnogo vode.",
       "rec": "žeđ"
@@ -4640,7 +4634,7 @@
         "U Langerhansovim ostrvcima",
         "U jetrinim režnjevima",
         "U kori nadbubrežne žlezde",
-        "U mišićima"
+        "U zidu tankog creva"
       ],
       "tezina": 3,
       "zanimljivost": "Langerhansova ostrvca su sićušne grupe ćelija rasute po pankreasu – čine samo oko 1–2% njegove mase. Ostatak pankreasa luči sokove za varenje.",
@@ -4681,7 +4675,7 @@
         "Kada žlezda luči previše ili premalo hormona",
         "Kada se sluzokoža nosa upali zbog virusa prehlade",
         "Kada se kost slomi pa žlezde prestanu da rastu",
-        "Karijes"
+        "Kada se zbog bakterija pokvari zub"
       ],
       "zanimljivost": "Mnogi hormonski poremećaji otkrivaju se jednostavnom analizom krvi.",
       "rec": "poremećaj"
@@ -4689,10 +4683,10 @@
     {
       "pitanje": "Zašto je štitna žlezda važna za decu u razvoju?",
       "odgovori": [
-        "Njeni hormoni upravljaju rastom i razvojem mozga",
-        "Proizvodi krvna zrnca",
-        "Luči želudačni sok",
-        "Prečišćava krv od otrova"
+        "Njeni hormoni usmeravaju rast i razvoj mozga",
+        "Njeni hormoni podstiču stvaranje krvnih zrnaca",
+        "Ona luči sok za varenje u želudac",
+        "Ona prečišćava krv od štetnih materija"
       ],
       "tezina": 2,
       "zanimljivost": "Zato se svim bebama u porodilištu proverava rad štitne žlezde. Za njene hormone neophodan je jod, koji se dodaje kuhinjskoj soli.",
@@ -4757,9 +4751,9 @@
       "pitanje": "Zašto je uzimanje anaboličkih steroida radi većih mišića opasno?",
       "odgovori": [
         "Oštećuju jetru, srce i plodnost",
-        "Izazivaju samo blagu prehladu",
-        "Usporavaju rast noktiju",
-        "Izazivaju samo pospanost"
+        "Pretvaraju mišiće u masno tkivo",
+        "Izazivaju samo kratku glavobolju",
+        "Ubrzavaju rast kose i noktiju"
       ],
       "zanimljivost": "To su veštački hormoni slični testosteronu; kod mladih mogu i zauvek da zaustave rast u visinu.",
       "rec": "steroid"
@@ -4809,9 +4803,9 @@
       "pitanje": "Šta je pubertet?",
       "odgovori": [
         "Period polnog sazrevanja",
-        "Period starenja",
-        "Prve godine života",
-        "Zimski raspust"
+        "Period smene mlečnih zuba",
+        "Period posle završetka rasta",
+        "Period učenja govora i hoda"
       ],
       "zanimljivost": "Kod devojčica pubertet počinje obično oko 10–11. godine, a kod dečaka oko 11–12.",
       "rec": "pubertet"
@@ -4837,7 +4831,7 @@
         "Dublji glas i rast brade",
         "Polni organi sa kojima se rađa",
         "Boja očiju i kose nasleđena od oca",
-        "Krvna grupa"
+        "Krvna grupa nasleđena od roditelja"
       ],
       "zanimljivost": "Glas dečaka „mutira“ jer grkljan raste i glasne žice se izdužuju.",
       "rec": "mutiranje"
@@ -4900,9 +4894,9 @@
       "pitanje": "Šta je normalno u adolescenciji?",
       "odgovori": [
         "Nagle promene raspoloženja",
-        "Prestanak rasta zauvek",
-        "Gubitak sluha",
-        "Promena krvne grupe"
+        "Potpuni prestanak rasta",
+        "Smanjena potreba za snom",
+        "Prestanak rada lojnih žlezda"
       ],
       "zanimljivost": "Hormoni i razvoj mozga utiču na emocije – razgovor sa bliskim osobama pomaže.",
       "rec": "emocije"
@@ -4913,8 +4907,8 @@
       "pitanje": "Kada je najbrži rast u visinu u adolescenciji?",
       "odgovori": [
         "Tokom puberteta (nagli „skok“ rasta)",
-        "Posle 30. godine, kada telo potpuno sazri",
-        "U prvoj godini škole",
+        "Pred kraj adolescencije, oko 19. godine",
+        "Tek pošto se pubertet završi",
         "Ravnomerno tokom celog života"
       ],
       "zanimljivost": "Tokom skoka rasta dečaci mogu porasti i 10 cm za godinu.",
@@ -4940,8 +4934,8 @@
       "odgovori": [
         "Oslobađanje jajne ćelije iz jajnika",
         "Rast kostiju u dužinu tokom puberteta",
-        "Lučenje znoja",
-        "Deoba bakterije"
+        "Lučenje hormona iz hipofize",
+        "Ugnežđavanje embriona u matericu"
       ],
       "zanimljivost": "Jajna ćelija je najveća ćelija ljudskog tela – oko 0,1 mm, vidljiva i golim okom.",
       "rec": "jajnik"
@@ -4966,8 +4960,8 @@
       "odgovori": [
         "Zdrava ishrana, san, kretanje i razgovor o problemima",
         "Preskakanje doručka i večere da bi se ostalo vitko i lako",
-        "Spavanje 4 sata",
-        "Izbegavanje svih prijatelja"
+        "Spavanje samo 5–6 sati, da bi ostalo više vremena",
+        "Što manje druženja, a što više učenja"
       ],
       "zanimljivost": "Adolescenti kojima je potreban savet mogu da se obrate i savetovalištima za mlade pri domovima zdravlja.",
       "rec": "zdravlje"
@@ -4993,7 +4987,7 @@
         "FSH i LH",
         "Insulinom i glukagonom",
         "Adrenalinom i kortizolom",
-        "Melatoninom"
+        "Melatoninom i tiroksinom"
       ],
       "zanimljivost": "FSH podstiče sazrevanje polnih ćelija, a LH stvaranje polnih hormona – testosterona, estrogena i progesterona.",
       "rec": "hipofiza"
@@ -5084,7 +5078,7 @@
         "Materije koje menjaju rad mozga i mogu izazvati zavisnost",
         "Vitamini i minerali koji jačaju mozak i pomažu u učenju i pamćenju",
         "Uvek samo lekovi protiv kašlja, prehlade i bolova u grlu i ušima",
-        "Voda i čaj"
+        "Prirodni sokovi od voća i povrća"
       ],
       "zanimljivost": "Alkohol, nikotin i droge su psihoaktivne supstance – i kofein, u blažoj meri.",
       "rec": "droga"
@@ -5135,8 +5129,8 @@
       "odgovori": [
         "Poremećaj ishrane sa strahom od debljanja i preteranim gladovanjem",
         "Alergija na mleko i mlečne proizvode, zbog koje osoba gubi apetit i slabi",
-        "Vrsta vitamina",
-        "Bolest zuba"
+        "Nedostatak vitamina koji izaziva slabost i umor",
+        "Upala želuca od previše ljute i masne hrane"
       ],
       "zanimljivost": "Poremećaji ishrane su ozbiljne bolesti i leče se uz pomoć lekara i psihologa.",
       "rec": "anoreksija"
@@ -5173,9 +5167,9 @@
       "pitanje": "Šta je uravnotežena ishrana?",
       "odgovori": [
         "Raznovrsna hrana u pravoj količini",
-        "Jedenje samo jedne namirnice",
-        "Jedenje samo slatkiša",
-        "Preskakanje svih obroka"
+        "Ishrana samo voćem i povrćem",
+        "Ishrana bez ikakvih masti",
+        "Jedan veliki obrok dnevno"
       ],
       "zanimljivost": "Tanjir može da se podeli: pola povrće i voće, četvrtina žitarice, četvrtina belančevine.",
       "rec": "ishrana"
@@ -5199,9 +5193,9 @@
       "pitanje": "Kada treba pozvati Hitnu pomoć (194)?",
       "odgovori": [
         "Kada je nečiji život u opasnosti",
-        "Kada nam je dosadno kod kuće posle škole",
-        "Kada izgubimo telefon na igralištu",
-        "Kada imamo kontrolni iz fizike sutradan"
+        "Kada nas boli grlo i imamo temperaturu",
+        "Kada treba produžiti recept za lek",
+        "Kada želimo savet o zdravoj ishrani"
       ],
       "zanimljivost": "Kod poziva treba mirno reći šta se desilo, adresu i broj povređenih.",
       "rec": "hitna"
@@ -5212,9 +5206,9 @@
       "pitanje": "Šta znači samopouzdanje u odnosu na pritisak društva?",
       "odgovori": [
         "Sposobnost da kažeš „ne“ onome što ti šteti",
-        "Prihvatanje svega što drugi traže",
-        "Izbegavanje svih ljudi",
-        "Laganje"
+        "Prihvatanje svega što drugi traže od tebe",
+        "Izbegavanje svakog druženja sa vršnjacima",
+        "Uverenje da si uvek u pravu"
       ],
       "zanimljivost": "Reći „ne“ zahteva hrabrost – pravi prijatelji će to poštovati.",
       "rec": "hrabrost"
@@ -5222,15 +5216,15 @@
     {
       "lekcija": 16,
       "tezina": 3,
-      "pitanje": "Zašto anabolički steroidi nisu „prečica“ do mišića?",
+      "pitanje": "Zašto treba popiti antibiotik onoliko dana koliko je lekar propisao, iako se osećamo bolje već posle dva dana?",
       "odgovori": [
-        "Oštećuju jetru, srce i hormonski sistem",
-        "Potpuno su bezbedni ako se uzimaju po uputstvu sa interneta",
-        "Prirodni su vitamin koji jača mišiće bez ikakvih posledica",
-        "Pojačavaju rast u visinu, pa ih preporučuju i lekari deci"
+        "Da preživele bakterije ne postanu otporne na lek",
+        "Da bi telo stvorilo trajni imunitet na tu bolest",
+        "Da bi antibiotik počeo da deluje i na viruse",
+        "Da bi se iskoristio ceo lek, jer je skup"
       ],
-      "zanimljivost": "Kod mladih steroidi mogu trajno zaustaviti rast kostiju u dužinu.",
-      "rec": "steroidi"
+      "zanimljivost": "Otpornost bakterija na antibiotike jedna je od najvećih pretnji zdravlju u svetu – zato se antibiotici uzimaju samo uz recept lekara i nikad „za svaki slučaj“ kod prehlade.",
+      "rec": "antibiotik"
     },
     {
       "lekcija": 16,
@@ -5621,9 +5615,9 @@
       "pitanje": "Zašto ne treba deliti igle, žilete ili pribor za tetoviranje?",
       "odgovori": [
         "Mogu preneti hepatitis i HIV krvlju",
-        "Brzo se tupe",
-        "Zabranjeno je samo zbog higijene noktiju",
-        "Nema opasnosti"
+        "Mogu preneti grip i prehladu",
+        "Brže se istupe kad ih koristi više ljudi",
+        "Mogu izazvati alergiju na metal"
       ],
       "zanimljivost": "I pribor za pirsing mora biti sterilan – to je pravilo svakog ozbiljnog salona.",
       "rec": "igla"
@@ -5647,9 +5641,9 @@
       "pitanje": "Koja bakterijska polno prenosiva bolest je u prošlosti bila velika epidemija u Evropi, a danas se leči penicilinom?",
       "odgovori": [
         "Sifilis",
-        "Malarija",
-        "Kolera",
-        "Kuga"
+        "Sida",
+        "Genitalni herpes",
+        "Kandidijaza"
       ],
       "zanimljivost": "Pre penicilina sifilis nije imao delotvoran lek i izazivao je teška oštećenja nerava i srca.",
       "rec": "sifilis"

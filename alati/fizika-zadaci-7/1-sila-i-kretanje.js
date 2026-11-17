@@ -498,7 +498,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik,
     [K('Iz mirovanja $s = {a t^{2}|2}$: put raste sa kvadratom vremena.'),
      K('Za $3$ puta duže vreme put je $3^{2} = 9$ puta veći: $s = 9 · 2 m = 18 m$.'),
      K('Po sekundama: $2 m$, $6 m$, $10 m$ (odnos $1 : 3 : 5$) – zbir $18 m$.')],
-    S('kretanje', { tela: [{ v: 0, a: 4, b: 3 }], duzina: 20, podeok: 2, natpisi: 99, sat: true, trag: 1 }));
+    S('kretanje', { tela: [{ v: 0, a: 4, b: 3 }], duzina: 20, podeok: 2, natpisi: 99, sat: false, trag: 1 }));
 
   proveri((60 / 2) * 30, 900);
   Z(2, 'Avion pri poletanju iz mirovanja ravnomerno ubrzava i za $30 s$ dostigne brzinu $60 m/s$. Kolika najmanje mora biti dužina piste?',

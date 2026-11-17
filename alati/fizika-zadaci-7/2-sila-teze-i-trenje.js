@@ -71,7 +71,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik 
     { crtez: (() => { const gg = grafik({ xmax: 5, ymax: 50, yk: 10 }); return G([gg.e, gg.linija([[0, 0], [5, 50]], { b: 4 }), gg.proj(1, 10, { k: 1 }), gg.proj(4, 40, { k: 1 }), gg.povrs([[1, 10], [4, 40]], { k: 2, id: 'pov' }), gg.tekst('75 m', 3, 12, { k: 2, id: 'pov' })], { velicina: 300 }); })() });
 
   Z(1, 'Uže lifta pukne i lift sa čovekom mase $50 kg$ slobodno pada. Kolikom silom čovek tada pritiska pod lifta (koliko bi pokazala vaga)?',
-    ['$0 N$ – bestežinsko stanje', '$500 N$', '$50 N$', '$1 000 N$'],
+    ['$0 N$', '$500 N$', '$50 N$', '$1 000 N$'],
     [K('I čovek i lift padaju sa istim ubrzanjem $g$ – pod „beži“ ispod čoveka isto koliko čovek pada.'),
      K('Čovek uopšte ne pritiska pod: težina je $0 N$ – to je bestežinsko stanje (kao kod astronauta u orbiti).'),
      K('Sila Zemljine teže ($500 N$) i dalje deluje – ona je ta koja ih ubrzava!')],
@@ -229,7 +229,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik 
     [K('Usporenje je $a = μ g$: na asfaltu $5 m/s^{2}$, na ledu samo $1 m/s^{2}$.'),
      K('Zaustavni put $s = {v^{2}|2a}$. Na asfaltu: ${400|10} = 40 m$.'),
      K('Na ledu: ${400|2} = 200 m$ – pet puta duže! Zato zimi treba voziti sporije.')],
-    S('kretanje', { tela: [{ e: '🚗', v: 20, a: -5, podloga: 'asfalt', staza: '~asfalt' }, { e: '🚗', v: 20, a: -1, podloga: 'led', staza: '~led' }], duzina: 200, podeok: 25, natpisi: 99, tempo: 4, sat: false }));
+    S('kretanje', { tela: [{ e: '🚗', v: 20, a: -5, podloga: 'asfalt', staza: '~asfalt' }, { e: '🚗', v: 20, a: -1, podloga: 'led', staza: '~led' }], duzina: 240, podeok: 20, natpisi: 99, tempo: 4, sat: false }));
 
   Z(1, 'Teška kutija mase $30 kg$ miruje na vodoravnom podu i niko je ne gura. Kolika sila trenja deluje na nju?',
     ['$0 N$', '$300 N$', '$μ · 300 N$', 'Zavisi od vrste poda'],

@@ -305,7 +305,7 @@
         "Milutin Milanković",
         "Albert Ajnštajn"
       ],
-      "zanimljivost": "Po Tesli je nazvana jedinica za jačinu magnetnog polja – tesla (T).",
+      "zanimljivost": "Po Tesli je nazvana jedinica za magnetnu indukciju (jačinu magnetnog polja) – tesla (T).",
       "rec": "tesla"
     },
     {
@@ -1136,7 +1136,7 @@
         "Svi imaju točkove za kretanje",
         "Svi su živi i dišu vazduh kroz pluća"
       ],
-      "zanimljivost": "Puž golać pređe oko 1 metar za nekoliko minuta – ali i to je mehaničko kretanje!",
+      "zanimljivost": "Puž pređe 1 metar za oko četvrt sata – ali i to je mehaničko kretanje!",
       "rec": "puž"
     },
     {
@@ -1390,12 +1390,12 @@
       "pitanje": "Čime je potpuno određena brzina tela?",
       "odgovori": [
         "Intenzitetom, pravcem i smerom",
-        "Samo brojem koji pokazuje brzinomer na tablu",
+        "Samo brojem koji pokazuje brzinomer na tabli",
         "Samo pravcem",
         "Samo masom tela"
       ],
       "zanimljivost": "Podatak „80 km/h“ nije dovoljan. Potpun podatak je, na primer: 80 km/h, auto-putem, od Beograda ka Nišu.",
-      "rec": "sila"
+      "rec": "pravac"
     },
     {
       "lekcija": 7,
@@ -1620,7 +1620,7 @@
         "Ne može se uporediti"
       ],
       "zanimljivost": "Najbrži sprinter Jusein Bolt istrčao je 100 m za 9,58 s – u jednom delu trke dostizao je preko 44 km/h.",
-      "rec": "bolt",
+      "rec": "trkač",
       "mediji": {
         "vrsta": "emodzi",
         "tekst": "🏃‍♂️ vs 🚴"
@@ -1661,9 +1661,9 @@
       "pitanje": "Automobil vozi pravim putem i svake sekunde pređe 25 m. Kakvo je njegovo kretanje?",
       "odgovori": [
         "Ravnomerno pravolinijsko",
-        "Ubrzano",
-        "Usporeno",
-        "Kružno"
+        "Ubrzano pravolinijsko",
+        "Usporeno pravolinijsko",
+        "Ravnomerno kružno"
       ],
       "tezina": 1,
       "zanimljivost": "Brzina od 25 m/s je 90 km/h. Kod ravnomernog kretanja grafik puta od vremena je prava linija.",
@@ -1737,7 +1737,7 @@
         "200 km/h"
       ],
       "zanimljivost": "Da bi se m/s pretvorilo u km/h, množi se sa 3,6.",
-      "rec": "kmh",
+      "rec": "kilometar",
       "mediji": {
         "vrsta": "formula",
         "tekst": "20 m/s = ? km/h"
@@ -2434,7 +2434,7 @@
         "Temperatura"
       ],
       "zanimljivost": "Grafike je u nauku uveo francuski matematičar Rene Dekart, po kome se koordinatni sistem zove Dekartov.",
-      "rec": "dekart"
+      "rec": "vertikala"
     },
     {
       "lekcija": 9,
@@ -2973,7 +2973,7 @@
     },
     {
       "lekcija": 10,
-      "tezina": 3,
+      "tezina": 1,
       "pitanje": "Kolika je rezultujuća sila ako dve sile od 30 N deluju na telo u istom smeru?",
       "odgovori": [
         "60 N",
@@ -3037,7 +3037,7 @@
         "Elastičnost"
       ],
       "zanimljivost": "Fudbalska lopta pri jakom šutu dobije brzinu i preko 100 km/h za delić sekunde.",
-      "rec": "šut"
+      "rec": "promena"
     },
     {
       "lekcija": 10,
@@ -3687,23 +3687,6 @@
       ],
       "zanimljivost": "Istezanje je srazmerno sili: 4 N → 2 cm, znači 2 N → 1 cm.",
       "rec": "računanje",
-      "mediji": {
-        "vrsta": "fizika",
-        "scena": "opruga",
-        "tip": "istezanje",
-        "koraci": [
-          {
-            "F": "4 N",
-            "dl": 2,
-            "o": "2 cm"
-          },
-          {
-            "F": "10 N",
-            "dl": 5,
-            "o": "?"
-          }
-        ]
-      },
       "medijiOdgovora": {
         "vrsta": "fizika",
         "scena": "opruga",
@@ -4126,7 +4109,7 @@
         "Sat",
         "Dan"
       ],
-      "zanimljivost": "Za precizno merenje vremena koriste se hronometar (štoperica) i metronom. Digitalni hronometar meri i stote delove sekunde.",
+      "zanimljivost": "Za merenje kratkih vremenskih intervala koristi se hronometar (štoperica). Digitalni hronometar meri i stote delove sekunde.",
       "rec": "sekunda"
     },
     {
@@ -4140,7 +4123,7 @@
         "Jednaki su"
       ],
       "zanimljivost": "Porediti se mogu samo iste vrste veličina – dužina sa dužinom, vreme sa vremenom. Ovo je česta „zamka“ u fizici.",
-      "rec": "masa"
+      "rec": "poređenje"
     },
     {
       "lekcija": 15,
@@ -4680,8 +4663,8 @@
       "pitanje": "Šta je godina sa stanovišta fizike?",
       "odgovori": [
         "Vreme jednog obilaska Zemlje oko Sunca",
-        "Vreme okretanja oko ose",
-        "12 punih meseci",
+        "Vreme jednog okretanja Zemlje oko ose",
+        "Vreme jednog obilaska Meseca oko Zemlje",
         "Vreme od Nove godine do Božića"
       ],
       "zanimljivost": "Godina traje oko 365,25 dana – zato svake četvrte godine imamo prestupnu godinu sa 29. februarom.",
@@ -4692,10 +4675,10 @@
       "tezina": 3,
       "pitanje": "Kako je Galilej merio vreme u ogledima sa kuglama, pre preciznih satova?",
       "odgovori": [
-        "Merio je koliko vode iscuri iz posude",
-        "Mobilnim telefonom",
-        "Brojanjem u sebi do sto",
-        "Sunčanim satom noću"
+        "Merenjem vode koja iscuri iz posude",
+        "Peščanim satom sa sitnim peskom",
+        "Brojanjem udaraca crkvenog zvona",
+        "Sunčanim satom u svojoj radionici"
       ],
       "zanimljivost": "Galilej je vreme merio i sopstvenim pulsom – tako je otkrio da zamah klatna uvek traje jednako dugo.",
       "rec": "voda"
@@ -4915,14 +4898,14 @@
     {
       "lekcija": 18,
       "tezina": 3,
-      "pitanje": "Koja je greška veća: ±0,5 g pri merenju 1 kg brašna ili ±0,5 g pri merenju 5 g zlata?",
+      "pitanje": "Kod kog merenja je relativna greška veća: ±0,5 g pri merenju 1 kg brašna ili ±0,5 g pri merenju 5 g zlata?",
       "odgovori": [
-        "Pri merenju zlata (relativno)",
+        "Pri merenju zlata",
         "Pri merenju brašna, jer ga je više",
         "Iste su, jer je greška ista (±0,5 g)",
-        "Nijedna – greška od pola grama ne postoji"
+        "Ne može se odrediti bez ponovnog merenja"
       ],
-      "zanimljivost": "Zato se zlato i lekovi mere na veoma preciznim vagama.",
+      "zanimljivost": "Kod zlata je relativna greška 0,5 g : 5 g = 10%, a kod brašna samo 0,05%. Zato se zlato i lekovi mere na veoma preciznim vagama.",
       "rec": "zlato"
     },
     {
@@ -4944,9 +4927,9 @@
       "pitanje": "Zašto merimo više puta istu veličinu?",
       "odgovori": [
         "Da bismo dobili tačniji rezultat",
-        "Da bismo pokvarili instrument",
-        "Iz dosade",
-        "Nije potrebno"
+        "Da bi se instrument zagrejao",
+        "Da bi greška instrumenta postala nula",
+        "Jer pravilo traži tačno tri merenja"
       ],
       "zanimljivost": "Profesionalni stolari imaju izreku: „Dvaput meri, jednom seci.“",
       "rec": "stolar"
@@ -5095,9 +5078,9 @@
       "pitanje": "Zašto putnici u autobusu „polete“ napred kada autobus naglo zakoči?",
       "odgovori": [
         "Zbog inercije nastavljaju da se kreću napred",
-        "Autobus ih gura napred",
-        "Vazduh u autobusu ih gura",
-        "Zemlja ih privlači napred"
+        "Autobus ih pri kočenju gura napred",
+        "Vazduh u autobusu ih gura napred",
+        "Sila kočenja autobusa ih vuče napred"
       ],
       "tezina": 1,
       "zanimljivost": "Autobus se zaustavlja, a putnici teže da zadrže brzinu koju su imali. Zato se u vozilima drže rukohvati i vezuju pojasevi.",
@@ -5185,7 +5168,7 @@
         "Kockica se okrene"
       ],
       "zanimljivost": "Ovaj ogled može da se izvede i sa novčićem na kartonu iznad čaše – novčić upadne u čašu.",
-      "rec": "novčić",
+      "rec": "kockica",
       "medijiOdgovora": {
         "vrsta": "fizika",
         "scena": "inercija",
@@ -5239,7 +5222,7 @@
         "Mora da savlada trenje i otpor vazduha",
         "Zbog inercije bicikl staje",
         "Zbog gravitacije koja vuče nazad",
-        "Ne mora"
+        "Da bi savladao svoju inerciju"
       ],
       "zanimljivost": "Bez trenja i otpora vazduha bicikl bi po Prvom Njutnovom zakonu nastavio da se kreće sam.",
       "rec": "otpor"
@@ -5275,10 +5258,10 @@
       "tezina": 1,
       "pitanje": "Koja je razlika između mase i težine?",
       "odgovori": [
-        "Masa je količina supstance (kg), a težina sila kojom telo pritiska podlogu (N)",
-        "Nema razlike – masa i težina su dva naziva za istu veličinu i mere se u kilogramima",
-        "Masa se meri u njutnima",
-        "Težina se meri u kilogramima"
+        "Masa se meri u kilogramima, a težina je sila i meri se u njutnima",
+        "Masa se meri u njutnima, a težina je količina supstance u kilogramima",
+        "Nema razlike – obe veličine se mere u kilogramima, samo različitim vagama",
+        "Masa zavisi od mesta na kome je telo, a težina je svuda potpuno ista"
       ],
       "zanimljivost": "U svakodnevnom govoru kažemo „težak sam 50 kg“, ali fizičar bi rekao „masa mi je 50 kg“.",
       "rec": "razlika"
@@ -5498,7 +5481,7 @@
       ],
       "zanimljivost": "Gustina vode je 1000 kg/m³. Hrastovo drvo ima oko 700, a gvožđe oko 7800 kg/m³. Čelični brod pluta jer je pun vazduha, pa mu je prosečna gustina manja od vode.",
       "rec": "drvo",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "fizika",
         "scena": "tecnost",
         "tela": [
@@ -6178,10 +6161,10 @@
     {
       "pitanje": "Zašto se vodotornjevi grade visoko?",
       "odgovori": [
-        "Da bi voda imala dovoljan pritisak da stigne u stanove",
-        "Da bi voda bila hladnija",
-        "Da bi voda bila čistija",
-        "Da bi bili vidljivi iz daleka"
+        "Da bi voda imala dovoljan pritisak u cevima",
+        "Da bi se voda u tornju brže hladila",
+        "Da bi vetar i sunce prečistili vodu",
+        "Da bi se videli izdaleka kao orijentir"
       ],
       "tezina": 2,
       "zanimljivost": "Što je voda u tornju više, veći je pritisak u cevima. Zato na najvišim spratovima zgrada ponekad treba dodatna pumpa.",
@@ -6246,7 +6229,7 @@
         "Da ne bi plutale, jer bi ih talasi izbacivali na površinu",
         "Zbog rđe, jer morska so brzo izgrize svaki tanji čelik"
       ],
-      "zanimljivost": "Na dnu Marijanske brazde (11 km) pritisak je kao da na nokat stane slon – više od 1.000 atmosfera.",
+      "zanimljivost": "Na dnu Marijanske brazde (11 km) pritisak je više od 1.000 atmosfera – kao da na nokat stane automobil.",
       "rec": "podmornica"
     },
     {

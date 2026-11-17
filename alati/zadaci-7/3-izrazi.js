@@ -175,10 +175,10 @@ module.exports = ({ L, Z, K, G, r, proveri, kocke }) => {
      K('Milijarditi deo: ${1|10⁹} = 10^{−9}$. Poređenja radi: $1 mm = 10^{−3} m$, $1 μm = 10^{−6} m$.')]);
 
   Z(2, 'Kako se u naučnom zapisu piše broj $0,00045$?',
-    ['$4,5 · 10^{−4}$', '$45 · 10^{−5}$', '$4,5 · 10⁴$', '$4,5 · 10^{−5}$'],
+    ['$4,5 · 10^{−4}$', '$4,5 · 10^{−3}$', '$4,5 · 10⁴$', '$4,5 · 10^{−5}$'],
     [K('Naučni zapis: $a · 10ⁿ$, gde je $1 ≤ a < 10$. Ovde je $a = 4,5$.'),
      K('Od $4,5$ do $0,00045$ zarez se pomera $4$ mesta ulevo, pa je $n = −4$.'),
-     K('$0,00045 = 4,5 · 10^{−4}$. ($45 · 10^{−5}$ je ista vrednost, ali to nije naučni zapis jer je $45 > 10$.)')]);
+     K('$0,00045 = 4,5 · 10^{−4}$. (I $45 · 10^{−5}$ ima istu vrednost, ali to nije naučni zapis jer je $45 > 10$.)')]);
 
   {
     // skala veličina u metrima (izložioci)
@@ -188,7 +188,7 @@ module.exports = ({ L, Z, K, G, r, proveri, kocke }) => {
     const obj = [[-5.15, '~zrnce krvi', 1, 1], [0.24, '~čovek', 2, 0], [7.1, '~Zemlja', 3, 0], [11.18, '~do Sunca', 4, 0]];
     obj.forEach(([x, nat, b, k], i) => { t['p' + i] = [x, 0]; e.push({ tacka: 'p' + i, b, k, id: 'o' + i }, { tx: nat, at: [x, i % 2 ? -2.6 : 1.3], b, k }); });
     Z(2, 'Prečnik crvenog krvnog zrnca je oko $0,000007 m$. Kako se to zapisuje u naučnom zapisu?',
-      ['$7 · 10^{−6} m$', '$7 · 10^{−5} m$', '$7 · 10⁶ m$', '$0,7 · 10^{−5} m$'],
+      ['$7 · 10^{−6} m$', '$7 · 10^{−5} m$', '$7 · 10⁶ m$', '$7 · 10^{−7} m$'],
       [K('Zarez treba pomeriti $6$ mesta udesno da bi se dobilo $7$: $0,000007 → 7$.'),
        K('Zato je $0,000007 = 7 · 10^{−6} m$ ($7$ mikrometara).', ['o0']),
        K('Na skali veličina (svaki podeok je deset puta više): zrnce, čovek ($≈ 1,7 m$), Zemlja ($≈ 1,3 · 10⁷ m$) i rastojanje do Sunca ($1,5 · 10^{11} m$).')],
@@ -196,7 +196,7 @@ module.exports = ({ L, Z, K, G, r, proveri, kocke }) => {
   }
 
   Z(2, 'Rastojanje od Zemlje do Sunca je oko $150 000 000 km$. Kako se to piše u naučnom zapisu?',
-    ['$1,5 · 10⁸ km$', '$15 · 10⁷ km$', '$1,5 · 10⁷ km$', '$1,5 · 10⁹ km$'],
+    ['$1,5 · 10⁸ km$', '$1,5 · 10^{−8} km$', '$1,5 · 10⁷ km$', '$1,5 · 10⁹ km$'],
     [K('$150 000 000$: posle cifara $15$ sledi $7$ nula, pa broj ima $9$ cifara.'),
      K('Zarez iz $1,5$ pomeramo $8$ mesta udesno: $1,5 · 10⁸ = 150 000 000$.')]);
 
@@ -448,7 +448,7 @@ module.exports = ({ L, Z, K, G, r, proveri, kocke }) => {
      K('$a² + 5a = a(a + 5)$')]);
 
   Z(2, 'Rastavi na činioce: $x² + 10x + 25$.',
-    ['$(x + 5)²$', '$(x + 25)(x + 1)$', '$x(x + 10) + 25$', '$(x − 5)(x + 5)$'],
+    ['$(x + 5)²$', '$(x + 25)(x + 1)$', '$(x + 2)(x + 5)$', '$(x − 5)(x + 5)$'],
     [K('Prvi član je $x²$, poslednji $25 = 5²$, a srednji $10x = 2 · x · 5$.', ['c01', 'c10']),
      K('To je razvijen kvadrat binoma: $x² + 2 · x · 5 + 5² = (x + 5)²$.'),
      K('Na slici: pločice $x²$, dve trake $5x$ i kvadrat $25$ slažu se tačno u kvadrat stranice $x + 5$.')],

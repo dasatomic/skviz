@@ -307,7 +307,7 @@
       "odgovori": [
         "Homologi hromozomi",
         "Polni hromozomi",
-        "Sestrinske ćelije",
+        "Sestrinske hromatide",
         "Deobna vretena"
       ],
       "zanimljivost": "Homologi hromozomi nose iste gene na istim mestima, ali ne moraju imati iste oblike tih gena – zato ličimo pomalo na oba roditelja.",
@@ -615,10 +615,10 @@
       "tezina": 3,
       "pitanje": "Kod zamoraca je crno krzno (A) dominantno nad belim (a). Dva crna zamorca dobila su belo mladunče. Kakve genotipove imaju roditelji?",
       "odgovori": [
-        "Oba Aa (nose skriveni a)",
-        "Oba AA (bez alela a)",
-        "Jedan AA, a drugi aa",
-        "Jedan AA, a drugi crn Aa"
+        "Oba su heterozigoti – Aa",
+        "Oba su dominantni homozigoti – AA",
+        "Jedan dominantni homozigot, drugi recesivni homozigot",
+        "Jedan dominantni homozigot, drugi heterozigot"
       ],
       "zanimljivost": "Belo mladunče (aa) moralo je dobiti po jedan alel a od svakog roditelja – a pošto su roditelji crni, oba su Aa.",
       "rec": "zamorac"
@@ -685,7 +685,7 @@
         "Gameta",
         "Spora"
       ],
-      "zanimljivost": "Zigot se već nekoliko sati posle oplođenja deli mitozom: 2, 4, 8, 16 ćelija…",
+      "zanimljivost": "Zigot se prvi put podeli mitozom oko jedan dan posle oplođenja, a zatim se deobe nastavljaju: 2, 4, 8, 16 ćelija…",
       "rec": "zigot"
     },
     {
@@ -1415,7 +1415,7 @@
         "Zbog fosfora iz podvodnih stena",
         "Zbog ribljih jaja"
       ],
-      "zanimljivost": "Alga noktiluka svetli kada je voda pokrene. Lepo izgleda, ali kad se prenamnoži, otrovna je za ribe.",
+      "zanimljivost": "Alga noktiluka svetli kada je voda pokrene. Lepo izgleda, ali kad se prenamnoži, može da izazove pomor riba.",
       "rec": "alga",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -2089,15 +2089,15 @@
     },
     {
       "lekcija": 9,
-      "tezina": 2,
-      "pitanje": "Lala se ujutru otvara, a uveče zatvara. Kakav je to pokret?",
+      "tezina": 3,
+      "pitanje": "Lala se otvara na toploti, a zatvara kad zahladi – bez obzira na to sa koje strane dolazi toplota. Kako se zovu takvi pokreti biljaka?",
       "odgovori": [
-        "Privremeni pokret",
-        "Pokret rastenja",
-        "Kretanje celog organizma",
-        "Refleks"
+        "Nastije",
+        "Tropizmi",
+        "Taksije",
+        "Refleksi"
       ],
-      "zanimljivost": "Lala reaguje na toplotu – ako je unesemo u toplu sobu, otvoriće se i uveče.",
+      "zanimljivost": "Tropizmi su usmereni ka draži ili od nje (stablo ka svetlosti), a nastije ne zavise od pravca draži. Ako lalu unesemo u toplu sobu, otvoriće se i uveče.",
       "rec": "lala"
     },
     {
@@ -2326,7 +2326,7 @@
         "Aleksandar Fleming",
         "Luj Paster",
         "Robert Koh",
-        "Edvard Džener iz Engleske"
+        "Edvard Džener"
       ],
       "zanimljivost": "Fleming je 1928. primetio da oko plesni koja je slučajno pala na njegovu podlogu ne rastu bakterije.",
       "rec": "penicilin"
@@ -2476,7 +2476,7 @@
         "Ptice",
         "Sisari"
       ],
-      "zanimljivost": "Opisano je oko milion vrsta insekata – to je oko dve trećine svih poznatih vrsta na Zemlji.",
+      "zanimljivost": "Opisano je oko milion vrsta insekata – više od polovine svih poznatih vrsta živih bića na Zemlji.",
       "rec": "buba"
     },
     {
@@ -2498,9 +2498,9 @@
       "pitanje": "Po čemu najlakše razlikujemo krokodila od aligatora?",
       "odgovori": [
         "Krokodil ima užu, šiljatu njušku",
-        "Krokodil ima kraći rep i šest nogu",
-        "Aligator živi samo u slanom moru",
-        "Aligator nema zube"
+        "Krokodil ima širu, zaobljenu njušku",
+        "Aligator ima duži i tanji rep",
+        "Aligator ima krljušti samo na leđima"
       ],
       "zanimljivost": "Kod krokodila se i sa zatvorenim ustima vide zubi donje vilice, a aligator ima široku, zaobljenu njušku u obliku slova U.",
       "rec": "krokodil",
@@ -4647,15 +4647,15 @@
     {
       "lekcija": 20,
       "tezina": 2,
-      "pitanje": "Otkud izraz „trinaesto prase“ za nekoga ko je odbačen?",
+      "pitanje": "Zašto kokoška mora da ima unutrašnje oplođenje?",
       "odgovori": [
-        "Krmača obično ima 12 sisa",
-        "Prasići se rađaju po 12",
-        "Svako trinaesto prase je slabo",
-        "Iz jedne narodne pesme"
+        "Jaje dobije ljusku pre polaganja",
+        "Jaja polaže u vodu, kao žaba",
+        "Pilići se razvijaju u telu majke",
+        "Tako jaje brže pređe u pile"
       ],
-      "zanimljivost": "O trinaestom prasetu divlje svinje govori domaći film „Svet koji nestaje“.",
-      "rec": "prase"
+      "zanimljivost": "Jaje se oplodi na samom početku jajovoda, a ljusku dobije tek kasnije, pri kraju puta kroz jajovod. Kokoška nosi jaja i bez petla, ali iz takvih, neoplođenih jaja pile se ne izleže.",
+      "rec": "ljuska"
     },
     {
       "lekcija": 20,
@@ -4928,9 +4928,9 @@
       "pitanje": "Zašto virusi nisu svrstani ni u jedno carstvo živih bića?",
       "odgovori": [
         "Nemaju ćelijsku građu",
-        "Previše su veliki",
-        "Žive samo u moru",
-        "Nemaju nasledni materijal"
+        "Nemaju nasledni materijal",
+        "Svi su paraziti biljaka",
+        "Otkriveni su tek nedavno"
       ],
       "zanimljivost": "Virusi imaju nasledni materijal, ali se razmnožavaju samo u tuđoj ćeliji – zato se raspravlja da li su uopšte živi.",
       "rec": "virus"
@@ -5352,12 +5352,12 @@
     {
       "lekcija": 23,
       "tezina": 3,
-      "pitanje": "Brojnost leminga na severu se svakih nekoliko godina jako poveća, pa naglo smanji. Šta je istina o njima?",
+      "pitanje": "Brojnost leminga na severu se svakih nekoliko godina jako poveća, pa naglo smanji. Šta je glavni uzrok pada brojnosti?",
       "odgovori": [
-        "Ne skaču namerno u more",
-        "Svi uginu skačući sa litica",
-        "Presele se na jug",
-        "Pretvore se u ptice"
+        "Manjak hrane i mnoštvo grabljivaca",
+        "Masovno skakanje sa litica u more",
+        "Selidba svih leminga na jug",
+        "Lov ljudi zbog njihovog krzna"
       ],
       "zanimljivost": "Mit o „masovnom samoubistvu“ leminga proširio je jedan dokumentarni film iz 1958, u kome je scena bila namerno nameštena.",
       "rec": "leming"
@@ -5580,7 +5580,7 @@
         "Temperatura i padavine",
         "Vrsta stena",
         "Broj životinja",
-        "Nadmorska visina sela"
+        "Blizina naselja"
       ],
       "zanimljivost": "Penjući se na visoku planinu prolazimo kroz pojaseve slične biomima – od listopadne šume do „tundre“ na vrhu.",
       "rec": "klima"
@@ -6711,7 +6711,7 @@
         "Da bi se rana ohladila",
         "Da bi se ruka odmorila"
       ],
-      "zanimljivost": "Krv teže teče uzbrdo – zato je i kod krvarenja iz nosa pravilno sagnuti glavu napred i pritisnuti nos, a ne zabaciti glavu.",
+      "zanimljivost": "Kod krvarenja iz nosa glavu treba nagnuti napred i pritisnuti nozdrve, a ne zabacivati je – tako krv ne curi niz grlo u želudac.",
       "rec": "zavoj"
     },
     {
@@ -6720,9 +6720,9 @@
       "pitanje": "Zašto deca imaju brži puls od odraslih?",
       "odgovori": [
         "Srce im je manje",
-        "Imaju više krvi",
-        "Više se plaše",
-        "Imaju dva srca"
+        "Imaju više krvi od odraslih",
+        "Krvni sudovi su im širi",
+        "Dišu sporije od odraslih"
       ],
       "zanimljivost": "Puls novorođenčeta je oko 120–160 otkucaja u minuti.",
       "rec": "dete"

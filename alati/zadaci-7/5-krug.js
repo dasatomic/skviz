@@ -45,7 +45,7 @@ module.exports = ({ L, Z, K, G, r, S3, proveri, pravilni, naKrugu }) => {
   proveri(Math.abs(Math.hypot(13 - 1.923, 4.615) - 12) < 0.01 && Math.abs(Math.hypot(1.923, 4.615) - 5) < 0.01, 'tangenta 5-12-13');
 
   Z(2, 'Kružnice poluprečnika $7 cm$ i $3 cm$ imaju centre na rastojanju $2 cm$. Kakav im je međusobni položaj?',
-    ['manja je unutar veće, bez zajedničkih tačaka', 'dodiruju se iznutra', 'seku se u dve tačke', 'dodiruju se spolja'],
+    ['manja je u većoj, bez dodira', 'dodiruju se iznutra', 'seku se u dve tačke', 'dodiruju se spolja'],
     [K('Razlika poluprečnika: $7 − 3 = 4 cm$.'),
      K('Rastojanje centara $2 cm$ je manje od $4 cm$: najdalja tačka manje kružnice je od $O₁$ udaljena samo $2 + 3 = 5 < 7$.'),
      K('Manja kružnica je cela unutar veće. (Za rastojanje $4 cm$ bio bi unutrašnji dodir.)')],

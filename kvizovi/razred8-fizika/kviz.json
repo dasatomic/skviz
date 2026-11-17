@@ -348,15 +348,15 @@
     },
     {
       "lekcija": 1,
-      "tezina": 2,
-      "pitanje": "Koliko puta u sekundi zamahne krilima kolibri?",
+      "tezina": 3,
+      "pitanje": "Kolibri zamahne krilima 40 puta u sekundi. Koliki je period jednog zamaha?",
       "odgovori": [
-        "50–80 puta",
-        "1 put",
-        "5.000 puta",
-        "1–2 puta"
+        "0,025 s",
+        "0,4 s",
+        "2,5 s",
+        "40 s"
       ],
-      "zanimljivost": "Zbog toga krila kolibrija zuje – frekvencija zamaha je u opsegu zvuka.",
+      "zanimljivost": "T = 1/f = 1/40 s = 0,025 s. Krila kolibrija, zavisno od vrste, zamahnu 10–80 puta u sekundi – zato zuje.",
       "rec": "kolibri"
     },
     {
@@ -735,7 +735,7 @@
         "Samo vazduh, kada je talas zvuk"
       ],
       "zanimljivost": "Navijači na stadionu prave „meksički talas“ – svaki ustane i sedne, a talas „putuje“ tribinama.",
-      "rec": "meksički",
+      "rec": "energija",
       "medijiOdgovora": {
         "vrsta": "fizika",
         "scena": "talas",
@@ -1097,16 +1097,16 @@
     },
     {
       "lekcija": 4,
-      "tezina": 1,
-      "pitanje": "Kojim organom čujemo zvuk?",
+      "tezina": 2,
+      "pitanje": "Koji deo uha prvi zatreperi kada do njega stigne zvučni talas?",
       "odgovori": [
-        "Uhom",
-        "Okom",
-        "Nosom",
-        "Jezikom"
+        "Bubna opna",
+        "Pužnica",
+        "Slušni nerv",
+        "Polukružni kanali"
       ],
-      "zanimljivost": "Zvučni talasi pomeraju bubnu opnu, a tri sitne koščice prenose oscilacije u unutrašnje uho.",
-      "rec": "uho"
+      "zanimljivost": "Bubna opna prenosi oscilacije na tri sitne koščice (čekić, nakovanj i uzengiju), a one ih pojačane predaju unutrašnjem uhu.",
+      "rec": "opna"
     },
     {
       "lekcija": 5,
@@ -1288,13 +1288,13 @@
     },
     {
       "lekcija": 5,
-      "tezina": 3,
-      "pitanje": "Koja jedinica za rastojanje se koristi za udaljenosti do zvezda, a nije jedinica za vreme?",
+      "tezina": 2,
+      "pitanje": "Za šta je jedinica svetlosna godina?",
       "odgovori": [
-        "Svetlosna godina",
-        "Kilogram (kg) – za masu",
-        "Herc (Hz) – za frekvenciju",
-        "Vat"
+        "Za rastojanje",
+        "Za vreme",
+        "Za brzinu",
+        "Za jačinu svetlosti"
       ],
       "zanimljivost": "Svetlosna godina je oko 9.500 milijardi kilometara.",
       "rec": "godina"
@@ -1804,7 +1804,7 @@
       "tezina": 2,
       "pitanje": "Koji je najveći teleskop sa ogledalom poslat u svemir?",
       "odgovori": [
-        "Svemirski teleskop „Džejms Veb“",
+        "Džejms Veb",
         "Habl",
         "Galilejev teleskop",
         "Kepler"
@@ -2670,7 +2670,7 @@
         "U naočarima, fotoaparatima, mikroskopima i teleskopima",
         "Samo u igračkama i lupama za decu koja istražuju prirodu",
         "U frižideru, za hlađenje vazduha usmeravanjem svetlosti",
-        "U termometru, gde staklo uvećava stub žive da bi se lakše očitala temperatura"
+        "U zvučnicima, gde usmeravaju zvuk ka slušaocima u sobi"
       ],
       "zanimljivost": "Prve naočare pojavile su se u Italiji krajem 13. veka.",
       "rec": "naočare"
@@ -3204,7 +3204,7 @@
         "Ista",
         "Ne postoji"
       ],
-      "zanimljivost": "Gravitacija je jaka samo zato što su planete ogromne i električno neutralne.",
+      "zanimljivost": "Električna sila između elektrona i protona je oko 10³⁹ puta jača od gravitacione. Gravitacija u svemiru preovlađuje samo zato što su planete i zvezde ogromne i električno neutralne.",
       "rec": "jačina"
     },
     {
@@ -3327,10 +3327,10 @@
     {
       "pitanje": "Šta se dešava sa listićima elektroskopa kada mu priđemo naelektrisanim štapom?",
       "odgovori": [
-        "Razmaknu se, jer dobiju istoimeno naelektrisanje",
-        "Skupe se i slepe",
-        "Promene boju",
-        "Ništa se ne dešava"
+        "Razmaknu se",
+        "Skupe se i dodirnu",
+        "Ostanu nepomični",
+        "Oba se okrenu ka štapu"
       ],
       "tezina": 2,
       "zanimljivost": "Listići se odbijaju jer su naelektrisani istim znakom. Što je naelektrisanje veće, razmak je veći.",
@@ -3481,7 +3481,7 @@
         "8 J",
         "4 J"
       ],
-      "zanimljivost": "Rad je A = q · U.",
+      "zanimljivost": "A = q · U = 2 C · 6 V = 12 J.",
       "rec": "rad"
     },
     {
@@ -4665,12 +4665,12 @@
     {
       "lekcija": 20,
       "tezina": 1,
-      "pitanje": "Gde je ista struja – kod redne ili paralelne veze?",
+      "pitanje": "Kod koje veze otpornika kroz svaki otpornik teče ista struja?",
       "odgovori": [
-        "Kod redne",
-        "Kod paralelne",
-        "Kod obe",
-        "Kod nijedne"
+        "Kod redne veze",
+        "Kod paralelne veze",
+        "Kod obe veze",
+        "Ni kod jedne veze"
       ],
       "zanimljivost": "Kod paralelne veze struja se grana kao reka u rukavce.",
       "rec": "struja"

@@ -66,7 +66,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, traka, skok, skokovi, krug, 
     ['$20$', '$17$', '$13$', '$10$'],
     [K('Prvo zagrada, a u njoj deljenje pre oduzimanja: $44 : 4 = 11$.'),
      K('$180 − 11 = 169$'),
-     K('$169 : 13 = 13$, pa $13 + 7 = 20$. (Greška $17$ dobija se ako se „oduzme pre deljenja“: $(180 − 44) : 4 = 34$.)')]);
+     K('$169 : 13 = 13$, pa $13 + 7 = 20$. (Ko oduzme pre deljenja, $(180 − 44) : 4 = 34$, zaglavi se: $34$ nije deljiv sa $13$.)')]);
   proveri((180 - 44 / 4) / 13 + 7 === 20, 'izraz');
 
   Z(2, 'Od kog broja treba oduzeti $38$ da bi se dobilo $567$?',
@@ -517,10 +517,11 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, traka, skok, skokovi, krug, 
     G(O, [{ osa: [0, 20], podela: 1, svaki: 2 }, ...[2, 4, 6, 8, 10, 12, 14, 16, 18, 20].map((x) => ({ tx: '●', at: [x, 0.7], b: 0 })), ...[3, 6, 9, 12, 15, 18].map((x) => ({ tx: '●', at: [x, -0.6], b: 5 })),
       ...[6, 12, 18].map((x) => ({ lin: [[x, 1.3], [x, -1.2]], b: 2, debljina: 4, k: 2, id: 'p', crtaj: 1 })), { tx: 'A', at: [-1, 0.7], b: 0 }, { tx: 'B', at: [-1, -0.6], b: 5 }], { ...bez, velicina: 320 }));
 
-  Z(2, 'Ako je $A = \\{1, 2, 3\\}$, $B = \\{3, 4, 5, 6, 7\\}$ i $C = \\{2, 3, 4\\}$, koji je skup $(A ∪ B) ∩ C$?',
-    ['$\\{2, 3, 4\\}$', '$\\{3\\}$', '$\\{1, 2, 3, 4, 5, 6, 7\\}$', '$\\{3, 4\\}$'],
+  Z(2, 'Ako je $A = \\{1, 2, 3\\}$, $B = \\{3, 4, 5, 6, 7\\}$ i $C = \\{2, 4, 8\\}$, koji je skup $(A ∪ B) ∩ C$?',
+    ['$\\{2, 4\\}$', '$\\{2, 4, 8\\}$', '$\\{4\\}$', '$\\{1, 2, 3, 4, 5, 6, 7, 8\\}$'],
     [K('Prvo zagrada: $A ∪ B = \\{1, 2, 3, 4, 5, 6, 7\\}$.'),
-     K('Presek sa $C = \\{2, 3, 4\\}$: svi elementi skupa $C$ su u uniji, pa je rezultat ceo $C$.')]);
+     K('Presek sa $C = \\{2, 4, 8\\}$: zajednički su $2$ i $4$, a $8$ nije u uniji.'),
+     K('$(A ∪ B) ∩ C = \\{2, 4\\}$')]);
 
   Z(3, '$A$ je skup svih prirodnih brojeva deljivih sa $3$, a $B$ skup svih prirodnih brojeva deljivih sa $9$. Šta je $B \\ A$?',
     ['prazan skup', 'skup brojeva deljivih sa $9$', 'skup brojeva deljivih sa $3$, a ne sa $9$', 'skup $\\{3, 6\\}$'],

@@ -1912,17 +1912,17 @@
      },
      {
       "d": "CA",
-      "o": "√16 = 4",
+      "o": "√16",
       "id": "b"
      },
      {
       "d": "CB",
-      "o": "√9 = 3",
+      "o": "√9",
       "id": "a"
      },
      {
       "d": "AB",
-      "o": "√25 = 5",
+      "o": "√25",
       "id": "c",
       "b": 3
      }
@@ -2856,7 +2856,7 @@
        0,
        2.88
       ],
-      "k": 0
+      "k": 1
      },
      {
       "tx": "1.",
@@ -2887,7 +2887,7 @@
        2.598,
        -1.62
       ],
-      "k": 0
+      "k": 1
      },
      {
       "tx": "3.",
@@ -2902,7 +2902,7 @@
        0,
        -3.12
       ],
-      "k": 0
+      "k": 1
      },
      {
       "tx": "4.",
@@ -2917,7 +2917,7 @@
        -2.598,
        -1.62
       ],
-      "k": 0
+      "k": 1
      },
      {
       "tx": "5.",
@@ -2932,7 +2932,7 @@
        -2.598,
        1.38
       ],
-      "k": 0
+      "k": 1
      },
      {
       "tx": "6.",
@@ -16350,7 +16350,7 @@
    "pitanje": "Kako se u naučnom zapisu piše broj $0,00045$?",
    "odgovori": [
     "$4,5 · 10^{−4}$",
-    "$45 · 10^{−5}$",
+    "$4,5 · 10^{−3}$",
     "$4,5 · 10⁴$",
     "$4,5 · 10^{−5}$"
    ],
@@ -16362,7 +16362,7 @@
      "t": "Od $4,5$ do $0,00045$ zarez se pomera $4$ mesta ulevo, pa je $n = −4$."
     },
     {
-     "t": "$0,00045 = 4,5 · 10^{−4}$. ($45 · 10^{−5}$ je ista vrednost, ali to nije naučni zapis jer je $45 > 10$.)"
+     "t": "$0,00045 = 4,5 · 10^{−4}$. (I $45 · 10^{−5}$ ima istu vrednost, ali to nije naučni zapis jer je $45 > 10$.)"
     }
    ]
   },
@@ -16374,7 +16374,7 @@
     "$7 · 10^{−6} m$",
     "$7 · 10^{−5} m$",
     "$7 · 10⁶ m$",
-    "$0,7 · 10^{−5} m$"
+    "$7 · 10^{−7} m$"
    ],
    "mediji": {
     "vrsta": "geo",
@@ -16553,7 +16553,7 @@
    "pitanje": "Rastojanje od Zemlje do Sunca je oko $150 000 000 km$. Kako se to piše u naučnom zapisu?",
    "odgovori": [
     "$1,5 · 10⁸ km$",
-    "$15 · 10⁷ km$",
+    "$1,5 · 10^{−8} km$",
     "$1,5 · 10⁷ km$",
     "$1,5 · 10⁹ km$"
    ],
@@ -18613,7 +18613,7 @@
    "odgovori": [
     "$(x + 5)²$",
     "$(x + 25)(x + 1)$",
-    "$x(x + 10) + 25$",
+    "$(x + 2)(x + 5)$",
     "$(x − 5)(x + 5)$"
    ],
    "mediji": {
@@ -21597,7 +21597,7 @@
    "tezina": 2,
    "pitanje": "Kako se konstruiše pravilni osmougao upisan u krug?",
    "odgovori": [
-    "prvo upisani kvadrat, pa simetrale njegovih stranica seku krug u preostalim temenima",
+    "upisani kvadrat, pa simetrale njegovih stranica",
     "nanošenjem poluprečnika osam puta po kružnici",
     "spajanjem svakog drugog temena šestougla",
     "deljenjem prečnika na osam jednakih delova"
@@ -25290,7 +25290,7 @@
    "tezina": 2,
    "pitanje": "Kružnice poluprečnika $7 cm$ i $3 cm$ imaju centre na rastojanju $2 cm$. Kakav im je međusobni položaj?",
    "odgovori": [
-    "manja je unutar veće, bez zajedničkih tačaka",
+    "manja je u većoj, bez dodira",
     "dodiruju se iznutra",
     "seku se u dve tačke",
     "dodiruju se spolja"

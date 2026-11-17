@@ -209,7 +209,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik,
      K('$400 J · 2 : 4 = 200 J$.')]);
 
   Z(1, 'Gde je potencijalna energija veća: kod tega od $2 kg$ na visini $5 m$ ili kod tega od $5 kg$ na visini $2 m$? ($g = 10 m/s^{2}$)',
-    ['Jednake su – po $100 J$', 'Kod tega od $5 kg$', 'Kod tega od $2 kg$', 'Ne može se uporediti'],
+    ['Jednake su', 'Kod tega od $5 kg$', 'Kod tega od $2 kg$', 'Ne može se uporediti'],
     [K('$E_{p1} = 2 · 10 · 5 = 100 J$.'),
      K('$E_{p2} = 5 · 10 · 2 = 100 J$ – jednake.')],
     null, { crtez: G(stubovi([['2 kg, 5 m', 100, 0], ['5 kg, 2 m', 100, 2]], { jedinica: 'J', vis: 3, sir: 2.4, razmak: 1, k: [1, 2] }), { velicina: 200 }) });
@@ -291,7 +291,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik,
     { crtez: G(stubovi([['~pre', 25, 0], ['~posle', 16, 0], ['Q', 9, 5]], { jedinica: 'J', vis: 4, sir: 1.4, razmak: 0.8, k: [0, 0, 2], id: [null, null, 'q'] }), { velicina: 220 }) });
 
   Z(1, 'Šta se dešava sa energijom tela koje slobodno pada (bez otpora vazduha)?',
-    ['$E_{p}$ opada, $E_{k}$ raste, zbir je stalan', '$E_{p}$ i $E_{k}$ rastu', '$E_{p}$ raste, $E_{k}$ opada', 'Obe opadaju'],
+    ['$E_{p}$ opada, $E_{k}$ raste, zbir je stalan', '$E_{p}$ opada, $E_{k}$ raste, zbir opada', '$E_{p}$ raste, $E_{k}$ opada, zbir je stalan', '$E_{p}$ opada, a $E_{k}$ ostaje ista'],
     [K('Telo gubi visinu – potencijalna energija opada.'),
      K('Brzina raste – kinetička energija raste za isto toliko; ukupna mehanička energija se održava.')],
     S('energija', { tip: 'staza' }));

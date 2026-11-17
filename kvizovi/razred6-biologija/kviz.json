@@ -1158,7 +1158,7 @@
     {
       "lekcija": 4,
       "tezina": 2,
-      "pitanje": "Šta je skraćenica DNK?",
+      "pitanje": "Šta znači skraćenica DNK?",
       "odgovori": [
         "Dezoksiribonukleinska kiselina",
         "Dvostruka nukleinska kost",
@@ -1192,7 +1192,7 @@
         "Na ribozomima",
         "U vakuoli",
         "U ćelijskom zidu",
-        "U hloroplastima samo"
+        "U lizozomima"
       ],
       "zanimljivost": "Jedna ćelija može da ima i više miliona ribozoma.",
       "rec": "ribozom"
@@ -1203,9 +1203,9 @@
       "pitanje": "Kako se zove dvostruka opna koja odvaja nasledni materijal ćelije od citoplazme?",
       "odgovori": [
         "Jedrova membrana (ovojnica)",
-        "Ćelijski zid od tvrde celuloze",
-        "Pokrovno staklo na preparatu",
-        "Citoplazma oko svih organela"
+        "Ćelijska membrana",
+        "Ćelijski zid od celuloze",
+        "Membrana vakuole"
       ],
       "zanimljivost": "Jedrova ovojnica ima pore kroz koje prolaze poruke iz jedra u citoplazmu.",
       "rec": "ovojnica"
@@ -1288,8 +1288,8 @@
       "odgovori": [
         "Sistem kanala u citoplazmi kojima se prenose materije",
         "Mreža nerava koja prolazi kroz ćeliju i prenosi poruke od jedra",
-        "Ćelijski zid",
-        "Deo mikroskopa"
+        "Spoljni omotač koji štiti ćeliju od okoline",
+        "Zrnca u kojima ćelija čuva rezervni skrob"
       ],
       "zanimljivost": "Na zrnastoj (hrapavoj) endoplazmatičnoj mreži sede ribozomi, pa ona izgleda posuto zrncima.",
       "rec": "mreža"
@@ -1851,9 +1851,9 @@
       "pitanje": "Koji mlečni proizvodi nastaju uz pomoć korisnih bakterija?",
       "odgovori": [
         "Jogurt i kefir",
-        "Maslac i mleko u prahu",
+        "Mleko u prahu i kondenzovano mleko",
         "Sladoled i čokolada",
-        "Pavlaka i šlag iz spreja"
+        "Šlag i puding od vanile"
       ],
       "zanimljivost": "Kefir ima ne samo puno bakterija, već i više različitih vrsta – i kvasce. Takve „dobre“ bakterije zovu se probiotske jer pomažu varenju i imunitetu.",
       "rec": "jogurt"
@@ -2311,7 +2311,7 @@
       "odgovori": [
         "Mogu da narastu veći i da im ćelije budu specijalizovane",
         "Žive mnogo kraće od jednoćelijskih organizama u istoj sredini",
-        "Ne trebaju im nikakve hranljive materije, voda ni kiseonik za život i rast",
+        "Nisu im potrebne hranljive materije, voda ni kiseonik za život i rast",
         "Brže se razmnožavaju, prostom deobom na dva dela"
       ],
       "zanimljivost": "Veličina štiti od grabljivaca koji love sitni plen.",
@@ -2568,8 +2568,8 @@
       "pitanje": "Koja vrsta mišićnog tkiva radi bez naše volje i nikad se ne umara?",
       "odgovori": [
         "Srčani mišić",
-        "Poprečnoprugasti skeletni",
-        "Glatki mišić u šaci",
+        "Skeletni mišić butine",
+        "Mišići šake",
         "Mišić jezika"
       ],
       "zanimljivost": "Srce otkuca oko 100.000 puta dnevno i nikada ne odmara duže od delića sekunde.",
@@ -2961,7 +2961,7 @@
         "Šampinjon",
         "Lisičarka"
       ],
-      "zanimljivost": "Zelena pupavka je smrtonosna već u količini od pola šešira, a simptomi se javljaju tek posle 6–12 sati, kada je otrov već oštetio jetru.",
+      "zanimljivost": "Zelena pupavka može da ubije odraslog čoveka već jednom pečurkom, a simptomi se javljaju tek posle 6–12 sati, kada je otrov već oštetio jetru.",
       "rec": "pupavka",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -3018,7 +3018,7 @@
       ],
       "zanimljivost": "Tartufe traže posebno obučeni psi, a nekada su to radile i svinje. Beli tartuf je među najskupljim namirnicama na svetu – raste i u Srbiji.",
       "rec": "tartuf",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/tartuf.jpg",
         "opis": "Tartuf"
@@ -3075,7 +3075,7 @@
     {
       "lekcija": 9,
       "tezina": 3,
-      "pitanje": "Koja gljiva, poznata i kao šumska kašika, vekovima se koristi kao lekovita u Kini i Japanu?",
+      "pitanje": "Koja gljiva se vekovima koristi kao lekovita u Kini i Japanu?",
       "odgovori": [
         "Reiši",
         "Muhara",
@@ -3087,7 +3087,7 @@
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/reisi.jpg",
-        "opis": "Reiši (šumska kašika)"
+        "opis": "Reiši"
       }
     },
     {
@@ -3544,7 +3544,7 @@
       "pitanje": "Kako se zovu sićušni otvori na listu kroz koje biljka razmenjuje gasove i ispušta vodenu paru?",
       "odgovori": [
         "Stome",
-        "Pore",
+        "Korenske dlačice",
         "Lenticele",
         "Alveole"
       ],
@@ -3566,7 +3566,7 @@
         "Fotosinteza",
         "Respiracija"
       ],
-      "zanimljivost": "Transpiracija „vuče“ vodu od korena kroz stablo do lista. Kada je vazduh vrlo vlažan, neke biljke (npr. adam) izbacuju vodu u kapljicama – to se zove gutacija, pa izgleda kao da biljka plače.",
+      "zanimljivost": "Transpiracija „vuče“ vodu od korena kroz stablo do lista. Kada je vazduh vrlo vlažan, neke biljke (npr. jagoda i trave) izbacuju vodu u kapljicama – to se zove gutacija, pa izgleda kao da biljka plače.",
       "rec": "isparavanje",
       "medijiOdgovora": {
         "vrsta": "biologija",
@@ -3821,7 +3821,7 @@
         "Seme im nije zaštićeno plodovim omotačem",
         "Zimi nemaju nijedan jedini list",
         "Nemaju koren, nego samo rizoide",
-        "Seme im je bez ikakve ljuske"
+        "Rastu samo na golom kamenju"
       ],
       "zanimljivost": "Seme četinara nalazi se na ljuspama šišarki. Najpoznatije golosemenice su četinari – bor, jela, smrča i omorika.",
       "rec": "šišarka",
@@ -3837,7 +3837,7 @@
         "Jela",
         "Tisa"
       ],
-      "zanimljivost": "Josif Pančić ju je opisao 1875. godine. Omorika je „živi fosil“ preživeo iz doba pre ledenih doba, a danas se kao ukrasno drvo sadi u parkovima širom Evrope.",
+      "zanimljivost": "Josif Pančić ju je otkrio 1875. godine. Omorika je „živi fosil“ – vrsta koja je preživela ledena doba, a danas se kao ukrasno drvo sadi u parkovima širom Evrope.",
       "rec": "omorika",
       "mediji": {
         "vrsta": "slika",
@@ -4318,7 +4318,7 @@
     {
       "lekcija": 13,
       "tezina": 2,
-      "pitanje": "Kako se zove deo creva, u koji se ulivaju kanali jetre i pankreasa?",
+      "pitanje": "Kako se zove deo creva u koji se ulivaju kanali jetre i pankreasa?",
       "odgovori": [
         "Dvanaestopalačno crevo (početni deo tankog creva)",
         "Slepo crevo (na početku debelog)",
@@ -4464,9 +4464,9 @@
         "Kvasi hranu i počinje varenje skroba",
         "Uništava kosti riba i ptica koje jedemo",
         "Pravi krv od hrane i vode koju pijemo",
-        "Nema ulogu"
+        "Razlaže belančevine iz mesa"
       ],
-      "zanimljivost": "Za dan napravimo oko 1–1,5 litar pljuvačke.",
+      "zanimljivost": "Za dan napravimo oko 1–1,5 litara pljuvačke.",
       "rec": "pljuvačka"
     },
     {
@@ -4757,10 +4757,10 @@
       "odgovori": [
         "Imaju vazdušne kese pa vazduh kroz pluća prolazi u jednom smeru",
         "Imaju i škrge i pluća, pa uzimaju kiseonik iz vazduha i iz vode u letu",
-        "Dišu kožom",
-        "Ne dišu u letu"
+        "Dišu i kožom, kao žabe",
+        "U letu dišu ređe, pa štede vazduh"
       ],
-      "zanimljivost": "Zbog ovog sistema guske mogu da preleću i Himalaje, na visini od skoro 8 km.",
+      "zanimljivost": "Zbog ovog sistema guske mogu da preleću i Himalaje, na visini većoj od 7 km.",
       "rec": "guska",
       "autor": "ivona tomic",
       "medijiOdgovora": {
@@ -5028,7 +5028,7 @@
         "Ptice (vrabac i golub)",
         "Sisari (pas, mačka, konj)"
       ],
-      "zanimljivost": "Zatvoreni krvotok prvi put se javio kod člankovitih crva, kao što je kišna glista. Ona ima pet „srca“ – zapravo proširenih krvnih sudova koji pumpaju krv.",
+      "zanimljivost": "Zatvoreni krvotok prvi put se javio kod člankovitih crva, kao što je kišna glista. Ona ima pet pari „srca“ – zapravo proširenih krvnih sudova koji pumpaju krv.",
       "rec": "krvotok",
       "medijiOdgovora": {
         "vrsta": "biologija",
@@ -5343,7 +5343,7 @@
         "Mišićni želudac",
         "Mokraćna bešika"
       ],
-      "zanimljivost": "Kloaku imaju i žabe i većina gmizavaca. Zato kod ptica postoji samo jedan otvor za sva tri sistema – i jaja izlaze kroz njega.",
+      "zanimljivost": "Kloaku imaju i žabe i gmizavci. Zato kod ptica postoji samo jedan otvor za sva tri sistema – i jaja izlaze kroz njega.",
       "rec": "kloaka"
     },
     {
@@ -5404,7 +5404,7 @@
         "Oko 10 litara",
         "Oko 5.000 litara"
       ],
-      "zanimljivost": "Od 180 litara „primarne mokraće“, gotovo sve se vrati u krv – izlučimo samo oko 1,5 litar.",
+      "zanimljivost": "Od 180 litara „primarne mokraće“, gotovo sve se vrati u krv – izlučimo samo oko 1,5 litara.",
       "rec": "bubreg"
     },
     {
@@ -5570,7 +5570,7 @@
         "Bubreg",
         "Jetra",
         "Slezina",
-        "Pluće"
+        "Nadbubrežna žlezda"
       ],
       "zanimljivost": "Čovek može sasvim normalno da živi i sa jednim zdravim bubregom – zato ljudi mogu da doniraju bubreg bolesnom srodniku.",
       "rec": "bubreg",
@@ -5620,7 +5620,7 @@
         "Gameta",
         "Hromozom"
       ],
-      "zanimljivost": "Deobom zigota nastaju sve ćelije tela. Čovek, koji se sastoji od hiljada milijardi ćelija, počinje kao samo jedna ćelija!",
+      "zanimljivost": "Deobom zigota nastaju sve ćelije tela. Čovek, koji se sastoji od desetina hiljada milijardi ćelija, počinje kao samo jedna ćelija!",
       "rec": "zigot",
       "medijiOdgovora": {
         "vrsta": "biologija",
@@ -5777,7 +5777,7 @@
         "Žirafe",
         "Nosoroga"
       ],
-      "zanimljivost": "Mladunče plavog kita dnevno pije stotine litara mleka i dobija oko 90 kg dnevno.",
+      "zanimljivost": "Mleko plavog kita ima 35–50% masti, a kravlje samo oko 4%. Mladunče dnevno popije stotine litara mleka.",
       "rec": "mleko",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -6142,10 +6142,10 @@
       ],
       "zanimljivost": "Voda postane zelena, mutna i neprijatnog mirisa, smanji se količina kiseonika, a mnoge cijanobakterije oslobađaju otrove – zato ribe masovno uginu.",
       "rec": "alga",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/cvetanje-vode.jpg",
-        "opis": "Jezero u leto"
+        "opis": "Cvetanje vode na jezeru"
       }
     },
     {
@@ -6236,7 +6236,7 @@
         "Pecanje u rekama tokom leta",
         "Gradnju vodenica na potocima"
       ],
-      "zanimljivost": "Već u srednjovekovnoj Srbiji ljudi su toliko krčili šume za njive, sela i manastire da je car morao da ih štiti zakonom.",
+      "zanimljivost": "Zabrana se odnosila na Sase – rudare koji su sekli šume za rudnike i topionice: iskrčena šuma nije smela da se naseli, nego da ostane prazna „da raste gora“.",
       "rec": "šuma"
     },
     {
@@ -6436,10 +6436,10 @@
       "tezina": 1,
       "pitanje": "Šta je bara kao ekosistem?",
       "odgovori": [
-        "Mesto gde žive biljke, životinje i mikroorganizmi zajedno sa vodom, muljem i svetlošću",
-        "Velika slana vodena površina u kojoj žive samo ribe, alge, rakovi i morske ptice galebovi",
-        "Samo žabe",
-        "Mesto gde se skuplja kišnica, ali u kojoj zbog mulja ne može da opstane nijedno živo biće"
+        "Živa bića zajedno sa vodom, muljem i svetlošću",
+        "Samo voda i mulj, bez živih bića",
+        "Samo biljke i životinje koje žive u vodi",
+        "Jedna populacija žaba u plitkoj vodi"
       ],
       "zanimljivost": "U jednoj bari može živeti na hiljade vrsta – od bakterija do čaplji.",
       "rec": "bara"
@@ -6472,7 +6472,7 @@
         "Punoglavci",
         "Larve"
       ],
-      "zanimljivost": "Ptići lasta, vrabaca, golubova i orlova su goluždravci. Pilići kokoške i pačići su potrkušci – odmah posle izleganja imaju paperje i trče za majkom.",
+      "zanimljivost": "Ptići lasta, vrabaca, golubova i detlića su goluždravci. Pilići kokoške i pačići su potrkušci – odmah posle izleganja imaju paperje i trče za majkom.",
       "rec": "ptić"
     },
     {
@@ -6546,16 +6546,16 @@
     },
     {
       "lekcija": 20,
-      "tezina": 3,
-      "pitanje": "Od koje francuske reči potiče reč „niša“?",
+      "tezina": 2,
+      "pitanje": "Šta je zec u lancu ishrane trava → zec → lisica?",
       "odgovori": [
-        "Od reči za „ugnezditi se“",
-        "Od reči za „sakriti se“",
-        "Od reči za „nahraniti se“",
-        "Od reči za „odmoriti se“"
+        "Potrošač prvog reda",
+        "Proizvođač hrane",
+        "Potrošač drugog reda",
+        "Razlagač ostataka"
       ],
-      "zanimljivost": "Ekološka niša je mesto i uloga vrste u ekosistemu. Koala ima vrlo usku nišu – hrani se samo lišćem eukaliptusa, pa može živeti samo tamo gde on raste.",
-      "rec": "niša"
+      "zanimljivost": "Lisica je potrošač drugog reda jer jede biljojede. Čovek je potrošač više redova – jede i biljke i životinje. Reč „niša“ potiče od francuske reči za „ugnezditi se“.",
+      "rec": "potrošač"
     },
     {
       "lekcija": 20,
@@ -6626,7 +6626,7 @@
       "medijiOdgovora": {
         "vrsta": "biologija",
         "scena": "krive",
-        "naslov": "~Broj jedinki",
+        "naslov": "~Broj jedinki po godinama",
         "serije": [
           {
             "o": "~zečevi",
@@ -6657,14 +6657,14 @@
           }
         ],
         "x": [
-          2010,
-          2011,
-          2012,
-          2013,
-          2014,
-          2015,
-          2016,
-          2017
+          "1.",
+          "2.",
+          "3.",
+          "4.",
+          "5.",
+          "6.",
+          "7.",
+          "8."
         ]
       }
     },
@@ -6675,8 +6675,8 @@
       "odgovori": [
         "Zajednički život dve vrste na korist obe",
         "Odnos u kojem jedna vrsta ubija i jede drugu",
-        "Takmičenje",
-        "Parazitizam"
+        "Takmičenje dve vrste za istu hranu i prostor",
+        "Život jedne vrste na račun druge, uz štetu"
       ],
       "zanimljivost": "Rak samac nosi na kućici morsku sasu – sasa ga štiti pipcima, a on je prenosi do hrane.",
       "rec": "simbioza",
@@ -6694,7 +6694,7 @@
         "Takmičenje organizama za iste resurse (hranu, prostor, svetlost)",
         "Pomaganje organizama jedni drugima u nalaženju hrane, prostora i zaklona",
         "Prenošenje polena sa jednog cveta na drugi uz pomoć vetra, insekata i ptica",
-        "Razmnožavanje"
+        "Razmnožavanje organizama iste vrste u proleće"
       ],
       "zanimljivost": "Drveće u gustoj šumi raste visoko i tanko jer se „takmiči“ za svetlost.",
       "rec": "kompeticija"
@@ -6724,8 +6724,8 @@
       "odgovori": [
         "Odnos u kojem jedna vrsta ima korist, a druga ni korist ni štetu",
         "Odnos u kojem obe vrste imaju štetu jedna od druge, pa se izbegavaju",
-        "Lov",
-        "Parazitizam"
+        "Odnos u kojem jedna vrsta lovi i jede drugu",
+        "Odnos u kojem jedna vrsta živi na račun druge"
       ],
       "zanimljivost": "Ribe pilot plivaju uz ajkule i jedu ostatke njihovog plena, a ajkulama ne smetaju.",
       "rec": "pilot",
@@ -6805,7 +6805,7 @@
         "Uloga vrste u zajednici – šta jede, gde i kada živi",
         "Rupa u drvetu u kojoj žive ptice duplarice i veverice",
         "Vrsta stene u kojoj životinje prave svoja skrovišta i jazbine",
-        "Ime staništa"
+        "Naziv staništa u kome vrsta živi"
       ],
       "zanimljivost": "Dve vrste ptica mogu da žive na istom drvetu, ali hrane se na različitim spratovima krošnje – imaju različite niše.",
       "rec": "niša"
@@ -6871,7 +6871,7 @@
       "mediji": {
         "vrsta": "biologija",
         "scena": "krive",
-        "naslov": "~Broj jedinki",
+        "naslov": "~Broj jedinki po godinama",
         "serije": [
           {
             "o": "~zečevi",
@@ -6902,14 +6902,14 @@
           }
         ],
         "x": [
-          2010,
-          2011,
-          2012,
-          2013,
-          2014,
-          2015,
-          2016,
-          2017
+          "1.",
+          "2.",
+          "3.",
+          "4.",
+          "5.",
+          "6.",
+          "7.",
+          "8."
         ]
       }
     },
@@ -7048,16 +7048,16 @@
     },
     {
       "lekcija": 21,
-      "tezina": 2,
-      "pitanje": "Šta su biotički činioci?",
+      "tezina": 1,
+      "pitanje": "Koji od navedenih činilaca je abiotički (neživi)?",
       "odgovori": [
-        "Uticaji drugih živih bića",
-        "Svetlost i toplota Sunca",
-        "Voda i vlažnost vazduha",
-        "Sastav i vrsta zemljišta"
+        "Vlažnost vazduha",
+        "Grabljivac",
+        "Parazit",
+        "Oprašivač"
       ],
-      "zanimljivost": "Biljojedi su za travu biotički činilac – kao i oprašivači za cvet.",
-      "rec": "biotički"
+      "zanimljivost": "Grabljivci, paraziti i oprašivači su biotički činioci. Biljojedi su za travu takođe biotički činilac – kao i oprašivači za cvet.",
+      "rec": "vlaga"
     },
     {
       "lekcija": 21,
@@ -7082,7 +7082,7 @@
         "Kserofite",
         "Halofite"
       ],
-      "zanimljivost": "Šumska bukvica i mnoge paprati imaju veće, tanje listove da „uhvate“ i malo svetlosti.",
+      "zanimljivost": "Zečja soca i mnoge paprati imaju veće, tanje listove da „uhvate“ i malo svetlosti.",
       "rec": "senka"
     },
     {
@@ -7124,7 +7124,7 @@
         "Raspon uslova u kojem vrsta može da živi",
         "Boja vrste kojom se ona prilagođava staništu",
         "Starost vrste od njenog nastanka do danas na Zemlji",
-        "Broj jedinki"
+        "Broj jedinki jedne vrste na staništu"
       ],
       "zanimljivost": "Pacov ima veoma široku ekološku valencu i živi skoro svuda, a pastrmka usku – samo u hladnoj, čistoj vodi.",
       "rec": "valenca"
@@ -7316,7 +7316,7 @@
     {
       "lekcija": 21,
       "tezina": 3,
-      "pitanje": "Koja je najveća ptica Balkana, „čistač prirode“ spasen hranilištima u kanjonu Uvca?",
+      "pitanje": "Koja velika ptica lešinar, „čistač prirode“, spasena je hranilištima u kanjonu Uvca?",
       "odgovori": [
         "Beloglavi sup",
         "Sivi soko",
@@ -7334,14 +7334,14 @@
     {
       "lekcija": 21,
       "tezina": 2,
-      "pitanje": "Zašto je u Srbiji od 2019. zabranjen ribolov kečige?",
+      "pitanje": "Zašto je u Srbiji zabranjen ribolov kečige?",
       "odgovori": [
         "Jer je ta vrsta veoma ugrožena",
         "Jer je kečiga otrovna",
         "Jer je ima previše u rekama",
         "Jer se meso kečige ne može jesti"
       ],
-      "zanimljivost": "Kečiga je riba iz porodice jesetri, kao i moruna, koja je nekada iz Crnog mora dolazila uz Dunav sve do Beograda.",
+      "zanimljivost": "Kečiga je riba iz porodice jesetri, kao i moruna, koja je nekada iz Crnog mora dolazila uz Dunav i daleko uzvodno od Beograda.",
       "rec": "kečiga",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -7449,8 +7449,8 @@
       "odgovori": [
         "Prilagodile su se na iste sušne uslove",
         "Imaju istog roditelja, jer su nastale od iste biljke",
-        "Slučajno",
-        "Jer ih je čovek ukrstio"
+        "Imaju iste cvetove i isto seme",
+        "Čovek ih je ukrstio u vrtovima"
       ],
       "zanimljivost": "Ova pojava – da nesrodne vrste postanu slične – zove se konvergencija.",
       "rec": "sličnost",
@@ -7576,8 +7576,8 @@
       "odgovori": [
         "Ništa – prilagođeni su potpuno drugačijim uslovima",
         "Oba su trnovita i štite biljku od životinja koje je jedu",
-        "Oba plutaju",
-        "Oba su bodljikava"
+        "Oba plutaju po površini vode",
+        "Oba čuvaju vodu u debelom tkivu"
       ],
       "zanimljivost": "Lokvanj ima stome na gornjoj strani lista, jer donja leži na vodi.",
       "rec": "lokvanj"
@@ -7633,7 +7633,7 @@
         ],
         [
           "Jelen lopatar",
-          "Kreće se po zemlji"
+          "Trkačka forma"
         ],
         [
           "Slepi miš",
@@ -8179,7 +8179,7 @@
         "Hibrid",
         "Klon"
       ],
-      "zanimljivost": "Albinizam postoji i kod životinja – beli tigrovi, pacovi i kosovi crvenih očiju.",
+      "zanimljivost": "Albinizam postoji i kod životinja – beli pacovi, zečevi i kosovi crvenih očiju.",
       "rec": "albino",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -8444,7 +8444,7 @@
         "Grupa gajenih organizama sa osobinama koje je čovek odabrao",
         "Divlja vrsta koja živi u prirodi bez ikakvog uticaja čoveka na nju",
         "Bolest koja napada samo gajene biljke i životinje na farmama i njivama",
-        "Kontinent"
+        "Sve jedinke jedne vrste na jednom staništu"
       ],
       "zanimljivost": "U svetu postoji više od 7.000 sorti jabuka.",
       "rec": "sorta"
@@ -8496,7 +8496,7 @@
         "Preživeli otporni insekti dali su otporno potomstvo",
         "Insekti su naučili da beže od prskalice čim je čuju iz daljine",
         "Pesticidi se pokvare posle nekoliko godina stajanja u magacinu",
-        "Insekti su postali biljke"
+        "Insekti su počeli da se hrane pesticidom"
       ],
       "zanimljivost": "Krompirova zlatica je postala otporna na veliki broj pesticida.",
       "rec": "zlatica"
@@ -8625,7 +8625,7 @@
         "Populacije",
         "Kolonije"
       ],
-      "zanimljivost": "Kod životinja se te grupe zovu rase. Od samo tri divlje sorte breskve dobijeno je više od 200 sorti, a od divljih lubenica oko 1.200.",
+      "zanimljivost": "Kod životinja se te grupe zovu rase. Kupus, karfiol, brokoli, kelj i kelj pupčar su sorte iste divlje vrste – divljeg kupusa.",
       "rec": "sorta"
     },
     {
@@ -8710,7 +8710,7 @@
         "Od izuma mikroskopa",
         "Od 2000. godine"
       ],
-      "zanimljivost": "Pšenica potiče iz jugozapadne Azije, a u Evropi se gaji oko 5.000 godina. Klip divljeg pretka kukuruza bio je dug samo oko 2 cm.",
+      "zanimljivost": "Pšenica i ječam počeli su da se gaje pre oko 10.000 godina u jugozapadnoj Aziji, a na Balkan je zemljoradnja stigla pre oko 8.000 godina.",
       "rec": "pšenica"
     },
     {
@@ -8810,7 +8810,7 @@
         "Ribe",
         "Biljke cvetnice"
       ],
-      "zanimljivost": "Prvih oko 2 milijarde godina život na Zemlji bio je samo jednoćelijski.",
+      "zanimljivost": "Skoro tri milijarde godina život na Zemlji bio je samo jednoćelijski.",
       "rec": "bakterije"
     },
     {
@@ -8933,8 +8933,8 @@
       "pitanje": "Kada su biljke prešle na kopno?",
       "odgovori": [
         "Pre oko 470 miliona godina",
-        "Pre 10 godina",
-        "Pre 4 milijarde godina",
+        "Pre oko 10.000 godina",
+        "Pre oko 3,5 milijarde godina",
         "Pre 66 miliona godina, kad su nestali dinosaurusi"
       ],
       "zanimljivost": "Prve kopnene biljke bile su niske i slične mahovinama, bez korena i listova.",
@@ -9027,12 +9027,12 @@
     {
       "lekcija": 26,
       "tezina": 3,
-      "pitanje": "Kojoj porodici pripada ova životinja sa prugama na nogama?",
+      "pitanje": "Sa kojom životinjom je najbliže srodna ova životinja sa prugama na nogama?",
       "odgovori": [
-        "Žirafa",
-        "Zebri",
-        "Konja",
-        "Antilopa"
+        "Sa žirafom",
+        "Sa zebrom",
+        "Sa konjem",
+        "Sa antilopom"
       ],
       "zanimljivost": "Okapi živi u gustim šumama Konga i za nauku je otkriven tek 1901. godine, iako su ga lokalni narodi odavno znali. Dugim jezikom može da očisti sopstvene uši.",
       "rec": "okapi",
@@ -9058,7 +9058,7 @@
     {
       "lekcija": 27,
       "tezina": 2,
-      "pitanje": "Kako se zove naziv za „poslednjeg univerzalnog zajedničkog pretka“ svih živih bića?",
+      "pitanje": "Kako se skraćeno naziva „poslednji univerzalni zajednički predak“ svih živih bića?",
       "odgovori": [
         "LUCA",
         "DNK",
@@ -9106,7 +9106,7 @@
         "Srodnost svih živih bića i njihovo zajedničko poreklo",
         "Najstarije drvo na svetu, koje raste u Kaliforniji preko 4.000 godina",
         "Porodično stablo kraljeva i careva Evrope od srednjeg veka do danas",
-        "Mapu šuma"
+        "Raspored šuma po kontinentima"
       ],
       "zanimljivost": "Darvin je u svojoj beležnici 1837. nacrtao prvo „drvo života“ i iznad njega napisao „Mislim da...“.",
       "rec": "drvo",
@@ -9252,7 +9252,7 @@
         "Ptice i dinosaurusi",
         "Cvetnice (prve biljke)"
       ],
-      "zanimljivost": "Bakterije su oko 3 milijarde godina bile jedini stanovnici Zemlje.",
+      "zanimljivost": "Bakterije i arheje su skoro dve milijarde godina bile jedini stanovnici Zemlje.",
       "rec": "bakterije"
     },
     {
@@ -9443,7 +9443,7 @@
         "Male boginje",
         "Tuberkulozu"
       ],
-      "zanimljivost": "Kuga je u srednjem veku odnela više od 75 miliona života. Danas je skoro istrebljena zahvaljujući higijeni i lekovima.",
+      "zanimljivost": "Kuga je u srednjem veku odnela više od 75 miliona života. Danas je retka i leči se antibioticima.",
       "rec": "pacov"
     },
     {
@@ -9557,7 +9557,7 @@
       "pitanje": "Koje bakterije izazivaju anginu (gnojnu upalu grla)?",
       "odgovori": [
         "Streptokoke",
-        "Salmonela",
+        "Salmonele",
         "Kvasci",
         "Plesni"
       ],
@@ -9584,8 +9584,8 @@
       "odgovori": [
         "Organizmi koji prenose uzročnike, npr. krpelji i komarci",
         "Lekovi koji uništavaju bolest u telu, kao što su antibiotici i sirupi",
-        "Vakcine",
-        "Bela krvna zrnca"
+        "Vakcine koje uče telo da se brani",
+        "Bela krvna zrnca koja napadaju klice"
       ],
       "zanimljivost": "Posle šetnje kroz visoku travu treba pregledati kožu – krpelja treba ukloniti što pre i u celosti.",
       "rec": "vektor"
@@ -9780,8 +9780,8 @@
       "odgovori": [
         "Preživele bakterije postaju otporne na lek",
         "Antibiotici izazivaju grip i prehladu kod dece",
-        "Pojačavaju bakterije u mleku",
-        "Nisu opasni"
+        "Telo prestaje da stvara bela krvna zrnca",
+        "Nije opasno ako se piju kratko"
       ],
       "zanimljivost": "Lekar može da uradi antibiogram – uzorak sa bakterijama stavi u Petrijevu šolju sa kružićima raznih antibiotika i vidi oko kog nastaje najveća „prazna“ površina.",
       "rec": "antibiotik"
@@ -9874,7 +9874,7 @@
     {
       "lekcija": 29,
       "tezina": 2,
-      "pitanje": "Koje su korisne bakterije u našim crevima?",
+      "pitanje": "Kakvu ulogu imaju korisne bakterije u našim crevima?",
       "odgovori": [
         "Pomažu varenje i štite nas od štetnih",
         "Izazivaju jak proliv i povraćanje",
@@ -9920,7 +9920,7 @@
       "tezina": 1,
       "pitanje": "Da li treba piti antibiotik bez saveta lekara?",
       "odgovori": [
-        "Ne",
+        "Ne, samo kad ga lekar prepiše",
         "Da, uvek kad nas boli grlo",
         "Samo kod prehlade",
         "Da, ako je ostao od prošlog puta"
@@ -10258,7 +10258,7 @@
       "lekcija": 30,
       "tezina": 2,
       "vrsta": "spoji",
-      "pitanje": "Spoji bolest sa njenim prenosiocem",
+      "pitanje": "Spoji bolest sa načinom prenošenja",
       "parovi": [
         [
           "Malarija",

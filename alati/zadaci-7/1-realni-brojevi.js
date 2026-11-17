@@ -221,7 +221,7 @@ module.exports = ({ L, Z, K, G, r, proveri, kocke, prava }) => {
     [K('$√{9 + 16} = √{25} = 5$', ['c']),
      K('$√{9} + √{16} = 3 + 4 = 7$', ['a', 'b']),
      K('$5 − 7 = −2$. Koren zbira NIJE zbir korena. Na slici: hipotenuza ($5$) je kraća od zbira kateta ($3 + 4 = 7$).')],
-    G({ C: [0, 0], A: [4, 0], B: [0, 3] }, [{ p: 'ABC' }, { pu: 'ACB' }, { d: 'CA', o: '√16 = 4', id: 'b' }, { d: 'CB', o: '√9 = 3', id: 'a' }, { d: 'AB', o: '√25 = 5', id: 'c', b: 3 }], { bezImena: ['A', 'B', 'C'] }));
+    G({ C: [0, 0], A: [4, 0], B: [0, 3] }, [{ p: 'ABC' }, { pu: 'ACB' }, { d: 'CA', o: '√16', id: 'b' }, { d: 'CB', o: '√9', id: 'a' }, { d: 'AB', o: '√25', id: 'c', b: 3 }], { bezImena: ['A', 'B', 'C'] }));
 
   Z(2, 'Površina kvadrata je $2,89 dm²$. Koliki je njegov obim?',
     ['$6,8 dm$', '$11,56 dm$', '$1,7 dm$', '$0,68 dm$'],
@@ -362,7 +362,7 @@ module.exports = ({ L, Z, K, G, r, proveri, kocke, prava }) => {
     const t = { O: [0, 0] }, e = [{ kr: 'O', r: 3, b: 4 }];
     cifre.forEach((c, i) => {
       const u = 90 - i * 60;
-      e.push({ tx: String(c), at: [r(3 * Math.cos((u * Math.PI) / 180)), r(3 * Math.sin((u * Math.PI) / 180) - 0.12)], b: i === 1 ? 1 : undefined, k: i === 1 ? 2 : 0 });
+      e.push({ tx: String(c), at: [r(3 * Math.cos((u * Math.PI) / 180)), r(3 * Math.sin((u * Math.PI) / 180) - 0.12)], b: i === 1 ? 1 : undefined, k: i === 1 ? 2 : 1 });
       e.push({ tx: `${i + 1}.`, at: [r(4.1 * Math.cos((u * Math.PI) / 180)), r(4.1 * Math.sin((u * Math.PI) / 180) - 0.12)] });
     });
     e.push({ l: 'O', r: 2.2, od: 100, do: 440 - 300, b: 3, str: -1, pun: 1 });

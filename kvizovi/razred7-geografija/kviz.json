@@ -758,13 +758,6 @@
    "lekcija": 2,
    "tezina": 2,
    "pitanje": "Koji prostor na Zemlji se smatra najhomogenijim?",
-   "mediji": {
-    "vrsta": "mapa",
-    "oblast": "antarktik",
-    "predeli": [
-     "Istočni Antarktik"
-    ]
-   },
    "odgovori": [
     "Unutrašnjost polarnih pustinja Arktika i Antarktika",
     "Veliki gradovi poput Pariza, Londona i Rima",
@@ -772,22 +765,19 @@
     "Doline velikih reka poput Nila i Dunava"
    ],
    "zanimljivost": "U unutrašnjosti Antarktika led je debeo i preko 4 km, a temperatura je i leti daleko ispod nule – predeo se ne menja stotinama kilometara.",
+   "medijiOdgovora": {
+    "vrsta": "mapa",
+    "oblast": "antarktik",
+    "predeli": [
+     "Istočni Antarktik"
+    ]
+   },
    "rec": "antarktik"
   },
   {
    "lekcija": 2,
    "tezina": 2,
    "pitanje": "Koji je od ovih prostora primer heterogenog geografskog prostora?",
-   "mediji": {
-    "vrsta": "mapa",
-    "oblast": "evropa",
-    "predeli": [
-     "Karpati"
-    ],
-    "istakni": [
-     "Karpati"
-    ]
-   },
    "odgovori": [
     "Ukrajinski Karpati",
     "Unutrašnjost Antarktika",
@@ -882,7 +872,14 @@
    "lekcija": 2,
    "tezina": 2,
    "pitanje": "Na kom kontinentu ima najviše pravolinijskih granica između država?",
-   "mediji": {
+   "odgovori": [
+    "U Africi",
+    "U Evropi",
+    "U Južnoj Americi",
+    "U Aziji"
+   ],
+   "zanimljivost": "Te granice su povukle evropske kolonijalne sile lenjirom po karti, često presecajući teritorije istog naroda.",
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "afrika",
     "istakni": [
@@ -896,13 +893,6 @@
      "MRT"
     ]
    },
-   "odgovori": [
-    "U Africi",
-    "U Evropi",
-    "U Južnoj Americi",
-    "U Aziji"
-   ],
-   "zanimljivost": "Te granice su povukle evropske kolonijalne sile lenjirom po karti, često presecajući teritorije istog naroda.",
    "rec": "afrika"
   },
   {
@@ -910,14 +900,6 @@
    "vrsta": "uljez",
    "tezina": 2,
    "pitanje": "Šta NIJE primer prirodne granice?",
-   "mediji": {
-    "vrsta": "mapa",
-    "oblast": "severna-afrika",
-    "istakni": [
-     "EGY",
-     "LBY"
-    ]
-   },
    "odgovori": [
     "Pravolinijska granica Egipta i Libije",
     "Greben visoke planine",
@@ -926,6 +908,14 @@
    ],
    "objasnjenje": "Granica Egipta i Libije prati meridijan 25° istočne geografske dužine – to je veštačka granica. Ostalo su prirodne granice.",
    "zanimljivost": "Granica SAD i Kanade dugo prati 49. uporednik – najduža je pravolinijska granica na svetu.",
+   "medijiOdgovora": {
+    "vrsta": "mapa",
+    "oblast": "severna-afrika",
+    "istakni": [
+     "EGY",
+     "LBY"
+    ]
+   },
    "rec": "granica"
   },
   {
@@ -975,13 +965,6 @@
    "lekcija": 2,
    "tezina": 1,
    "pitanje": "Koja pustinja je najveća vrela pustinja na svetu?",
-   "mediji": {
-    "vrsta": "mapa",
-    "oblast": "afrika",
-    "predeli": [
-     "Sahara"
-    ]
-   },
    "odgovori": [
     "Sahara",
     "Gobi",
@@ -989,6 +972,13 @@
     "Atakama"
    ],
    "zanimljivost": "Sahara je velika približno koliko SAD – oko 9 miliona km².",
+   "medijiOdgovora": {
+    "vrsta": "mapa",
+    "oblast": "afrika",
+    "predeli": [
+     "Sahara"
+    ]
+   },
    "rec": "sahara"
   },
   {
@@ -1185,13 +1175,6 @@
    "lekcija": 3,
    "tezina": 1,
    "pitanje": "Kako se zove more oko kog se prostire Južna Evropa?",
-   "mediji": {
-    "vrsta": "mapa",
-    "oblast": "juzna-evropa",
-    "mora": [
-     "Sredozemno more"
-    ]
-   },
    "odgovori": [
     "Sredozemno more",
     "Severno more",
@@ -1199,6 +1182,13 @@
     "Arabijsko more"
    ],
    "zanimljivost": "Ime potiče od latinskog „mare mediterraneum“ – more usred zemalja: okružuju ga Evropa, Azija i Afrika.",
+   "medijiOdgovora": {
+    "vrsta": "mapa",
+    "oblast": "juzna-evropa",
+    "mora": [
+     "Sredozemno more"
+    ]
+   },
    "rec": "mediteran"
   },
   {
@@ -1271,22 +1261,6 @@
    "lekcija": 3,
    "tezina": 1,
    "pitanje": "Koji kanal je 1869. godine povezao Sredozemno i Crveno more?",
-   "mediji": {
-    "vrsta": "mapa",
-    "oblast": "jugozapadna-azija",
-    "mora": [
-     "Crveno more"
-    ],
-    "reke": [
-     "Suecki kanal"
-    ],
-    "tacke": [
-     {
-      "lat": 30.6,
-      "lon": 32.3
-     }
-    ]
-   },
    "odgovori": [
     "Suecki kanal",
     "Panamski kanal",
@@ -1675,7 +1649,14 @@
    "lekcija": 3,
    "tezina": 2,
    "pitanje": "Koliko država obuhvata Južna Evropa prema udžbeniku?",
-   "mediji": {
+   "odgovori": [
+    "17",
+    "9",
+    "12",
+    "25"
+   ],
+   "zanimljivost": "Među njima su i četiri najmanje države Evrope: Andora, Monako, San Marino i Vatikan.",
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "juzna-evropa",
     "istakni": [
@@ -1698,13 +1679,6 @@
      "VAT"
     ]
    },
-   "odgovori": [
-    "17",
-    "9",
-    "12",
-    "25"
-   ],
-   "zanimljivost": "Među njima su i četiri najmanje države Evrope: Andora, Monako, San Marino i Vatikan.",
    "rec": "država"
   },
   {
@@ -1789,14 +1763,21 @@
     "Grčka",
     "Portugal"
    ],
-   "zanimljivost": "Italija ima oko 59, a Španija oko 47 miliona stanovnika; Španija je zato veća po površini.",
+   "zanimljivost": "Italija ima oko 59, a Španija oko 49 miliona stanovnika – iako je Španija veća po površini.",
    "rec": "italija"
   },
   {
    "lekcija": 4,
    "tezina": 1,
    "pitanje": "Koliko je nezavisnih država nastalo raspadom nekadašnje Jugoslavije (SFRJ)?",
-   "mediji": {
+   "odgovori": [
+    "Šest",
+    "Četiri",
+    "Osam",
+    "Tri"
+   ],
+   "zanimljivost": "Srbija, Hrvatska, Bosna i Hercegovina, Slovenija, Crna Gora i Severna Makedonija – „od Vardara pa do Triglava“.",
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "sfrj",
     "istakni": [
@@ -1808,13 +1789,6 @@
      "MKD"
     ]
    },
-   "odgovori": [
-    "Šest",
-    "Četiri",
-    "Osam",
-    "Tri"
-   ],
-   "zanimljivost": "Srbija, Hrvatska, Bosna i Hercegovina, Slovenija, Crna Gora i Severna Makedonija – „od Vardara pa do Triglava“.",
    "rec": "šest"
   },
   {
@@ -1883,13 +1857,6 @@
    "lekcija": 4,
    "tezina": 1,
    "pitanje": "Koja je najduža nacionalna reka Srbije – teče samo kroz Srbiju?",
-   "mediji": {
-    "vrsta": "mapa",
-    "oblast": "srbija",
-    "reke": [
-     "Morava"
-    ]
-   },
    "odgovori": [
     "Morava",
     "Dunav",
@@ -1897,6 +1864,13 @@
     "Drina"
    ],
    "zanimljivost": "Dunav je najduža reka koja teče kroz Srbiju (588 km), ali on protiče kroz deset država.",
+   "medijiOdgovora": {
+    "vrsta": "mapa",
+    "oblast": "srbija",
+    "reke": [
+     "Morava"
+    ]
+   },
    "rec": "morava"
   },
   {
@@ -1934,7 +1908,8 @@
      {
       "lat": 44.67,
       "lon": 22.53,
-      "oznaka": "HE Đerdap"
+      "oznaka": "HE Đerdap",
+      "tajna": true
      }
     ],
     "reke": [
@@ -1960,10 +1935,10 @@
    "tezina": 1,
    "pitanje": "Po proizvodnji kojeg voća je Srbija poznata u svetu?",
    "odgovori": [
-    "Šljiva i malina",
-    "Banana i ananasa",
-    "Kivija i manga",
-    "Narandži i limuna"
+    "Šljive i maline",
+    "Narandži i limuna",
+    "Smokava i maslina",
+    "Kivija i manga"
    ],
    "zanimljivost": "Okolina Arilja je nazvana „malinarskom prestonicom“ – Srbija je među vodećim izvoznicima smrznute maline na svetu.",
    "medijiOdgovora": {
@@ -1984,7 +1959,8 @@
      {
       "lat": 44.08,
       "lon": 22.1,
-      "oznaka": "Bor"
+      "oznaka": "Bor",
+      "tajna": true
      },
      {
       "lat": 44.42,
@@ -2231,7 +2207,6 @@
    "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "sfrj",
-    "reke": [],
     "tacke": [
      {
       "lat": 41.72,
@@ -2308,13 +2283,6 @@
    "lekcija": 4,
    "tezina": 1,
    "pitanje": "Koja je od bivših jugoslovenskih republika privredno najrazvijenija?",
-   "mediji": {
-    "vrsta": "mapa",
-    "oblast": "sfrj",
-    "istakni": [
-     "SVN"
-    ]
-   },
    "odgovori": [
     "Slovenija",
     "Severna Makedonija",
@@ -2322,20 +2290,19 @@
     "Crna Gora"
    ],
    "zanimljivost": "Slovenija je ušla u Evropsku uniju 2004, a Hrvatska 2013. godine.",
+   "medijiOdgovora": {
+    "vrsta": "mapa",
+    "oblast": "sfrj",
+    "istakni": [
+     "SVN"
+    ]
+   },
    "rec": "slovenija"
   },
   {
    "lekcija": 4,
    "tezina": 1,
    "pitanje": "Koje bivše jugoslovenske republike su članice Evropske unije?",
-   "mediji": {
-    "vrsta": "mapa",
-    "oblast": "sfrj",
-    "istakni": [
-     "SVN",
-     "HRV"
-    ]
-   },
    "odgovori": [
     "Slovenija i Hrvatska",
     "Srbija i Crna Gora",
@@ -2343,6 +2310,14 @@
     "Hrvatska i Srbija"
    ],
    "zanimljivost": "Ostale bivše jugoslovenske republike su kandidati za članstvo.",
+   "medijiOdgovora": {
+    "vrsta": "mapa",
+    "oblast": "sfrj",
+    "istakni": [
+     "SVN",
+     "HRV"
+    ]
+   },
    "rec": "unija"
   },
   {
@@ -2411,12 +2386,12 @@
     "silueta": "HRV"
    },
    "odgovori": [
-    "Linija od njenog istoka do juga prelazi preko tri susedne države",
-    "Zato što ima samo ravnice i nijednu planinu višu od 500 m",
-    "Jer je skoro cela smeštena na ostrvima Jadranskog mora",
-    "Jer joj je glavni grad na samoj granici sa Mađarskom"
+    "Uskim lukom obavija Bosnu i Hercegovinu",
+    "Ima isti oblik kao susedna Slovenija",
+    "Pruža se pravo od severa ka jugu",
+    "Ima oblik skoro pravilnog kruga"
    ],
-   "zanimljivost": "Hrvatska ima oblik „potkovice“ ili „kifle“ oko Bosne i Hercegovine.",
+   "zanimljivost": "Hrvatska ima oblik „potkovice“ ili „kifle“. Dubrovnik je kopnom bio odvojen od ostatka zemlje kod Neuma, sve dok 2022. nije otvoren Pelješki most.",
    "rec": "oblik"
   },
   {
@@ -2484,13 +2459,6 @@
    "lekcija": 4,
    "tezina": 1,
    "pitanje": "Koja je površinski i po broju stanovnika najmanja bivša jugoslovenska republika?",
-   "mediji": {
-    "vrsta": "mapa",
-    "oblast": "sfrj",
-    "istakni": [
-     "MNE"
-    ]
-   },
    "odgovori": [
     "Crna Gora",
     "Slovenija",
@@ -2498,6 +2466,13 @@
     "Bosna i Hercegovina"
    ],
    "zanimljivost": "Crna Gora ima oko 620.000 stanovnika – više nego upola manje od samog Beograda.",
+   "medijiOdgovora": {
+    "vrsta": "mapa",
+    "oblast": "sfrj",
+    "istakni": [
+     "MNE"
+    ]
+   },
    "rec": "gora"
   },
   {
@@ -2742,9 +2717,6 @@
     "predeli": [
      "Kavkaz",
      "Alpi"
-    ],
-    "istakni": [
-     "Kavkaz"
     ]
    },
    "odgovori": [
@@ -2778,7 +2750,7 @@
     "Padska nizija",
     "Andaluzija",
     "Tesalija",
-    "Panonska nizija"
+    "Kampanja"
    ],
    "zanimljivost": "Padska nizija u dolini reke Po je srce italijanske industrije i poljoprivrede.",
    "rec": "nizija"
@@ -2787,13 +2759,6 @@
    "lekcija": 5,
    "tezina": 1,
    "pitanje": "Koja je najduža reka Italije?",
-   "mediji": {
-    "vrsta": "mapa",
-    "oblast": "juzna-evropa",
-    "reke": [
-     "Po"
-    ]
-   },
    "odgovori": [
     "Po",
     "Tibar",
@@ -2801,6 +2766,13 @@
     "Ebro"
    ],
    "zanimljivost": "Po se puni otopljenim snegom sa Alpa i uliva u Jadransko more deltom južno od Venecije.",
+   "medijiOdgovora": {
+    "vrsta": "mapa",
+    "oblast": "juzna-evropa",
+    "reke": [
+     "Po"
+    ]
+   },
    "rec": "reka"
   },
   {
@@ -2978,13 +2950,6 @@
    "lekcija": 5,
    "tezina": 1,
    "pitanje": "Koja je površinski najveća država Južne Evrope?",
-   "mediji": {
-    "vrsta": "mapa",
-    "oblast": "juzna-evropa",
-    "istakni": [
-     "ESP"
-    ]
-   },
    "odgovori": [
     "Španija",
     "Italija",
@@ -2992,6 +2957,13 @@
     "Portugal"
    ],
    "zanimljivost": "Španija ima oko 505.000 km² – oko šest puta više od Srbije.",
+   "medijiOdgovora": {
+    "vrsta": "mapa",
+    "oblast": "juzna-evropa",
+    "istakni": [
+     "ESP"
+    ]
+   },
    "rec": "španija"
   },
   {
@@ -3099,13 +3071,6 @@
    "lekcija": 5,
    "tezina": 1,
    "pitanje": "Koja je najveća reka Španije u slivu Sredozemnog mora?",
-   "mediji": {
-    "vrsta": "mapa",
-    "oblast": "juzna-evropa",
-    "reke": [
-     "Ebro"
-    ]
-   },
    "odgovori": [
     "Ebro",
     "Taho",
@@ -3199,13 +3164,6 @@
    "lekcija": 5,
    "tezina": 1,
    "pitanje": "Koje je najveće grčko ostrvo?",
-   "mediji": {
-    "vrsta": "mapa",
-    "oblast": "juzna-evropa",
-    "predeli": [
-     "Krit"
-    ]
-   },
    "odgovori": [
     "Krit",
     "Rodos",
@@ -3384,10 +3342,6 @@
     [
      "Padska nizija",
      "Italija"
-    ],
-    [
-     "Tejde",
-     "Španija (Kanarska ostrva)"
     ]
    ],
    "zanimljivost": "Sve tri države su članice Evropske unije i zajedno imaju više od 115 miliona stanovnika.",
@@ -3417,10 +3371,6 @@
    "lekcija": 5,
    "tezina": 1,
    "pitanje": "Koja država je kolevka Olimpijskih igara?",
-   "mediji": {
-    "vrsta": "slika",
-    "src": "slike/zastava-grcka.png"
-   },
    "odgovori": [
     "Grčka",
     "Italija",
@@ -3439,7 +3389,14 @@
    "lekcija": 6,
    "tezina": 1,
    "pitanje": "Koliko država obuhvata Srednja Evropa prema udžbeniku?",
-   "mediji": {
+   "odgovori": [
+    "Devet",
+    "Pet",
+    "Četrnaest",
+    "Tri"
+   ],
+   "zanimljivost": "To su Nemačka, Poljska, Rumunija, Mađarska, Austrija, Češka, Slovačka, Švajcarska i Lihtenštajn.",
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "srednja-evropa",
     "istakni": [
@@ -3454,20 +3411,20 @@
      "LIE"
     ]
    },
-   "odgovori": [
-    "Devet",
-    "Pet",
-    "Četrnaest",
-    "Tri"
-   ],
-   "zanimljivost": "To su Nemačka, Poljska, Rumunija, Mađarska, Austrija, Češka, Slovačka, Švajcarska i Lihtenštajn.",
    "rec": "devet"
   },
   {
    "lekcija": 6,
    "tezina": 2,
    "pitanje": "Kojim planinama je sa svih strana ograničena Panonska nizija?",
-   "mediji": {
+   "odgovori": [
+    "Alpima, Karpatima i Dinaridima",
+    "Pirinejima, Alpima i Apeninima",
+    "Uralom, Kavkazom i Karpatima",
+    "Skandinavskim planinama i Uralom"
+   ],
+   "zanimljivost": "Panonska nizija je dno nekadašnjeg Panonskog mora, koje je isteklo pre nekoliko miliona godina.",
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "srednja-evropa",
     "predeli": [
@@ -3480,13 +3437,6 @@
      "Panonska nizija"
     ]
    },
-   "odgovori": [
-    "Alpima, Karpatima i Dinaridima",
-    "Pirinejima, Alpima i Apeninima",
-    "Uralom, Kavkazom i Karpatima",
-    "Skandinavskim planinama i Uralom"
-   ],
-   "zanimljivost": "Panonska nizija je dno nekadašnjeg Panonskog mora, koje je isteklo pre nekoliko miliona godina.",
    "rec": "panonija"
   },
   {
@@ -3520,15 +3470,6 @@
    "lekcija": 6,
    "tezina": 1,
    "pitanje": "Koja je najduža pritoka Dunava?",
-   "mediji": {
-    "vrsta": "mapa",
-    "oblast": "srednja-evropa",
-    "reke": [
-     "Dunav",
-     "Tisa"
-    ],
-    "istakni": []
-   },
    "odgovori": [
     "Tisa",
     "Sava",
@@ -3536,13 +3477,28 @@
     "Morava"
    ],
    "zanimljivost": "Tisa izvire na Karpatima i teče kroz Ukrajinu, Rumuniju (kratko), Slovačku, Mađarsku i Srbiju.",
+   "medijiOdgovora": {
+    "vrsta": "mapa",
+    "oblast": "srednja-evropa",
+    "reke": [
+     "Dunav",
+     "Tisa"
+    ]
+   },
    "rec": "tisa"
   },
   {
    "lekcija": 6,
    "tezina": 2,
    "pitanje": "U koje more otiču Odra i Visla?",
-   "mediji": {
+   "odgovori": [
+    "U Baltičko more",
+    "U Severno more",
+    "U Crno more",
+    "U Jadransko more"
+   ],
+   "zanimljivost": "Visla je najduža reka Poljske – na njoj su i Varšava i Krakov.",
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "srednja-evropa",
     "reke": [
@@ -3553,20 +3509,20 @@
      "Baltičko more"
     ]
    },
-   "odgovori": [
-    "U Baltičko more",
-    "U Severno more",
-    "U Crno more",
-    "U Jadransko more"
-   ],
-   "zanimljivost": "Visla je najduža reka Poljske – na njoj su i Varšava i Krakov.",
    "rec": "visla"
   },
   {
    "lekcija": 6,
    "tezina": 2,
    "pitanje": "Kroz koliko država teče Dunav?",
-   "mediji": {
+   "odgovori": [
+    "Deset",
+    "Pet",
+    "Sedam",
+    "Dvanaest"
+   ],
+   "zanimljivost": "Nemačka, Austrija, Slovačka, Mađarska, Hrvatska, Srbija, Rumunija, Bugarska, Moldavija i Ukrajina – više nego ijedna reka na svetu.",
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "evropa",
     "reke": [
@@ -3585,13 +3541,6 @@
      "UKR"
     ]
    },
-   "odgovori": [
-    "Deset",
-    "Pet",
-    "Sedam",
-    "Dvanaest"
-   ],
-   "zanimljivost": "Nemačka, Austrija, Slovačka, Mađarska, Hrvatska, Srbija, Rumunija, Bugarska, Moldavija i Ukrajina – više nego ijedna reka na svetu.",
    "rec": "dunav"
   },
   {
@@ -3671,7 +3620,14 @@
    "lekcija": 6,
    "tezina": 2,
    "pitanje": "Kog porekla su Mađari?",
-   "mediji": {
+   "odgovori": [
+    "Ugro-finskog",
+    "Južnoslovenskog",
+    "Romanskog",
+    "Germanskog"
+   ],
+   "zanimljivost": "Mađarski je srodan finskom i estonskom, a ne jezicima svojih suseda.",
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "evropa",
     "istakni": [
@@ -3680,13 +3636,6 @@
      "EST"
     ]
    },
-   "odgovori": [
-    "Ugro-finskog",
-    "Južnoslovenskog",
-    "Romanskog",
-    "Germanskog"
-   ],
-   "zanimljivost": "Mađarski je srodan finskom i estonskom, a ne jezicima svojih suseda.",
    "rec": "mađari"
   },
   {
@@ -3901,18 +3850,11 @@
    "lekcija": 6,
    "tezina": 2,
    "pitanje": "Koja je država, uz Nemačku, industrijski najvažnija u Srednjoj Evropi?",
-   "mediji": {
-    "vrsta": "mapa",
-    "oblast": "srednja-evropa",
-    "istakni": [
-     "POL"
-    ]
-   },
    "odgovori": [
     "Poljska",
-    "Lihtenštajn",
-    "Švajcarska",
-    "Slovačka"
+    "Mađarska",
+    "Slovačka",
+    "Lihtenštajn"
    ],
    "zanimljivost": "Glavne poljske luke na Baltiku su Gdanjsk, Ščećin i Gdinja.",
    "medijiOdgovora": {
@@ -3926,13 +3868,6 @@
    "lekcija": 6,
    "tezina": 2,
    "pitanje": "Koja je država dobila nadimak „Tigar sa Tatri“, jer pravi najviše automobila po stanovniku?",
-   "mediji": {
-    "vrsta": "mapa",
-    "oblast": "srednja-evropa",
-    "istakni": [
-     "SVK"
-    ]
-   },
    "odgovori": [
     "Slovačka",
     "Češka",
@@ -3951,13 +3886,6 @@
    "lekcija": 6,
    "tezina": 1,
    "pitanje": "Koje jezero je turistički najposećenije u Srednjoj Evropi?",
-   "mediji": {
-    "vrsta": "mapa",
-    "oblast": "srednja-evropa",
-    "jezera": [
-     "Balaton"
-    ]
-   },
    "odgovori": [
     "Balaton",
     "Bodensko",
@@ -4053,14 +3981,6 @@
    "vrsta": "uljez",
    "tezina": 1,
    "pitanje": "Koja država Srednje Evrope NIJE članica Evropske unije?",
-   "mediji": {
-    "vrsta": "mapa",
-    "oblast": "srednja-evropa",
-    "istakni": [
-     "CHE",
-     "LIE"
-    ]
-   },
    "odgovori": [
     "Švajcarska",
     "Austrija",
@@ -4069,6 +3989,14 @@
    ],
    "objasnjenje": "Švajcarska i Lihtenštajn nisu u EU; ostale države Srednje Evrope jesu.",
    "zanimljivost": "Švajcarci su na referendumima više puta odbili ulazak u EU.",
+   "medijiOdgovora": {
+    "vrsta": "mapa",
+    "oblast": "srednja-evropa",
+    "istakni": [
+     "CHE",
+     "LIE"
+    ]
+   },
    "rec": "unija"
   },
   {
@@ -4196,7 +4124,14 @@
    "lekcija": 7,
    "tezina": 1,
    "pitanje": "Na koja dva mora izlazi Nemačka?",
-   "mediji": {
+   "odgovori": [
+    "Severno i Baltičko",
+    "Baltičko i Crno",
+    "Severno i Jadransko",
+    "Sredozemno i Severno"
+   ],
+   "zanimljivost": "Mora povezuje Kilski kanal – jedan od najprometnijih veštačkih plovnih puteva na svetu.",
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "srednja-evropa",
     "mora": [
@@ -4207,13 +4142,6 @@
      "DEU"
     ]
    },
-   "odgovori": [
-    "Severno i Baltičko",
-    "Baltičko i Crno",
-    "Severno i Jadransko",
-    "Sredozemno i Severno"
-   ],
-   "zanimljivost": "Mora povezuje Kilski kanal – jedan od najprometnijih veštačkih plovnih puteva na svetu.",
    "rec": "more"
   },
   {
@@ -4318,13 +4246,6 @@
    "lekcija": 7,
    "tezina": 1,
    "pitanje": "Koja je najznačajnija reka Nemačke?",
-   "mediji": {
-    "vrsta": "mapa",
-    "oblast": "srednja-evropa",
-    "reke": [
-     "Rajna"
-    ]
-   },
    "odgovori": [
     "Rajna",
     "Dunav",
@@ -4343,7 +4264,14 @@
    "lekcija": 7,
    "tezina": 2,
    "pitanje": "Kroz koje jezero teče Rajna na granici Nemačke, Švajcarske i Austrije?",
-   "mediji": {
+   "odgovori": [
+    "Kroz Bodensko jezero",
+    "Kroz Ženevsko jezero",
+    "Kroz Balaton",
+    "Kroz Gardu"
+   ],
+   "zanimljivost": "Bodensko jezero daje pijaću vodu za oko četiri miliona ljudi.",
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "srednja-evropa",
     "jezera": [
@@ -4353,20 +4281,20 @@
      "Rajna"
     ]
    },
-   "odgovori": [
-    "Kroz Bodensko jezero",
-    "Kroz Ženevsko jezero",
-    "Kroz Balaton",
-    "Kroz Gardu"
-   ],
-   "zanimljivost": "Bodensko jezero daje pijaću vodu za oko četiri miliona ljudi.",
    "rec": "bodensko"
   },
   {
    "lekcija": 7,
    "tezina": 2,
    "pitanje": "Koja reka čini granicu Nemačke i Poljske?",
-   "mediji": {
+   "odgovori": [
+    "Odra",
+    "Elba (Laba)",
+    "Vezer",
+    "Majna"
+   ],
+   "zanimljivost": "Granica na Odri i Nisi utvrđena je posle Drugog svetskog rata.",
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "srednja-evropa",
     "reke": [
@@ -4377,13 +4305,6 @@
      "POL"
     ]
    },
-   "odgovori": [
-    "Odra",
-    "Elba (Laba)",
-    "Vezer",
-    "Majna"
-   ],
-   "zanimljivost": "Granica na Odri i Nisi utvrđena je posle Drugog svetskog rata.",
    "rec": "odra"
   },
   {

@@ -463,7 +463,7 @@
   {
    "lekcija": 2,
    "tezina": 2,
-   "pitanje": "Kog roda su imenice koje se završavaju na -o i -e (selo, more, polje)?",
+   "pitanje": "Kog roda su najčešće imenice koje se završavaju na -o i -e (selo, more, polje)?",
    "odgovori": [
     "Srednjeg",
     "Muškog",
@@ -550,7 +550,7 @@
     "Šest",
     "Osam"
    ],
-   "zanimljivost": "Većina evropskih jezika (engleski, francuski, italijanski) nema padežne nastavke, već koristi predloge ispred reči. U srpskom se značenje vidi na kraju reči.",
+   "zanimljivost": "Mnogi evropski jezici (engleski, francuski, italijanski) nemaju padežne nastavke, već koriste predloge i red reči. U srpskom se značenje vidi na kraju reči.",
    "rec": "padež"
   },
   {
@@ -563,7 +563,7 @@
     "Komparacija",
     "Gradacija"
    ],
-   "zanimljivost": "Naziv deklinacija potiče od latinske reči za „savijanje, padanje“: oblici reči su smatrani „padanjem“ od osnovnog oblika. Otuda i reč padež.",
+   "zanimljivost": "Deklinacija dolazi od latinske reči za „skretanje, odstupanje“ – od osnovnog oblika. Reč „padež“ je prevod latinskog „casus“ (pad): oblici reči su smatrani „padanjem“ od osnovnog oblika.",
    "rec": "deklinacija"
   },
   {
@@ -693,7 +693,7 @@
     "Nataše",
     "Natašu"
    ],
-   "zanimljivost": "Duža imena (Jovana, Nataša, Sofija, Nemanja, Andrija) imaju vokativ samo na -a, dakle isti kao nominativ.",
+   "zanimljivost": "Duža imena (Jovana, Nataša, Sofija, Nemanja, Andrija) imaju vokativ samo na -a, dakle isti kao nominativ. Izuzetak su imena na -ica: Milice, Ljubice.",
    "rec": "vokativ"
   },
   {
@@ -819,7 +819,7 @@
    "pitanje": "Kojim pridevom se može zameniti prisvojni genitiv u izrazu „glas nastavnika“?",
    "odgovori": [
     "nastavnikov",
-    "nastavnički",
+    "nastavnikovim",
     "nastavničin",
     "nastavnikom"
    ],
@@ -1143,14 +1143,14 @@
   {
    "lekcija": 5,
    "tezina": 2,
-   "pitanje": "Koji predlog uvek stoji uz instrumental?",
+   "pitanje": "Koji predlog se upotrebljava uz instrumental?",
    "odgovori": [
     "nad",
     "do",
     "ka",
     "bez"
    ],
-   "zanimljivost": "Uz instrumental stoje predlozi s(a), pred, nad, pod, među i za. „Do“ i „bez“ traže genitiv, a „ka“ dativ.",
+   "zanimljivost": "Uz instrumental stoje predlozi s(a), pred, nad, pod, među i za („pod orahom“, „među drugovima“). „Do“ i „bez“ traže genitiv, a „ka“ dativ.",
    "rec": "predlog"
   },
   {
@@ -1581,7 +1581,7 @@
     "Samo druga reč",
     "Nijedna reč"
    ],
-   "zanimljivost": "Slično: Sveta gora, Pančićev vrh, Rt dobre nade. Kad naziv čine pridev i zajednička imenica, veliko slovo ima samo prva reč.",
+   "zanimljivost": "Slično: Fruška gora, Pančićev vrh, Rt dobre nade. Kad naziv čine pridev i zajednička imenica, veliko slovo ima samo prva reč.",
    "rec": "planina"
   },
   {
@@ -1804,7 +1804,7 @@
     "Pozitiv, komparativ, superlativ",
     "Pozitiv, negativ, superlativ",
     "Komparativ, superlativ, elativ",
-    "Osnovni, viši, najviši"
+    "Pozitiv, deminutiv, augmentativ"
    ],
    "zanimljivost": "Pozitiv je osobina pojma (skupa knjiga), komparativ izraženija osobina (skuplja), a superlativ najizraženija (najskuplja).",
    "rec": "komparacija"
@@ -1988,7 +1988,7 @@
     "težji",
     "težeji"
    ],
-   "zanimljivost": "Tvrđi, lakši, teži, mlađi – u komparativu se glas menja (jotovanje), pa pridev ne dobija običan nastavak -iji.",
+   "zanimljivost": "Tvrđi, teži, mlađi, kraći – u komparativu se glas menja (jotovanje), pa pridev ne dobija običan nastavak -iji.",
    "rec": "komparativ"
   },
   {
@@ -2001,7 +2001,7 @@
     "vesejiji",
     "veselši"
    ],
-   "zanimljivost": "Pridevi na -o menjaju oblik ovako: veseo – veseliji – najveseliji; tužan – tužniji; sitan – sitniji.",
+   "zanimljivost": "Kod prideva na -o prava osnova se vidi u ženskom rodu: veseo – vesela – veseliji – najveseliji. Isto: topao – topla – topliji, nagao – nagla – nagliji.",
    "rec": "komparativ"
   },
   {
@@ -2209,7 +2209,7 @@
     "Vokativ",
     "Imenovanje"
    ],
-   "zanimljivost": "Običaj dolazi još iz doba Rimskog carstva, kad se podanik caru obraćao u množini jer je car predstavljao ceo narod.",
+   "zanimljivost": "Reč „persiranje“ dolazi od nemačkog izraza „per Sie“ – obraćati se sa „Vi“. Obraćanje sa „ti“ zove se tikanje.",
    "rec": "persiranje"
   },
   {
@@ -2326,7 +2326,7 @@
      "Redni broj"
     ]
    ],
-   "zanimljivost": "Glavni brojevi odgovaraju na pitanje „koliko“, a redni na „koji po redu“.",
+   "zanimljivost": "Osnovni brojevi odgovaraju na pitanje „koliko“, a redni na „koji po redu“.",
    "rec": "broj"
   },
   {
@@ -2406,7 +2406,7 @@
     "četiri"
    ],
    "objasnjenje": "Od pet naviše osnovni brojevi su nepromenljivi: sa sedam kolega. „Jedan, dva, tri i četiri“ menjaju oblik.",
-   "zanimljivost": "Zbirni i redni brojevi se menjaju po padežima uvek – izuzetaka nema.",
+   "zanimljivost": "Redni brojevi se menjaju kao pridevi: peti, petog, petom. Zbirni brojevi se menjaju ređe (dvoje – dvoga), a obično ostaju isti: sa petoro dece.",
    "rec": "broj"
   },
   {
@@ -2694,7 +2694,7 @@
     "Ne menja se po padežima ni po rodovima",
     "Koristi se samo u poeziji i pesmama"
    ],
-   "zanimljivost": "Lični oblici (prezent, perfekat, futur) kazuju lice i broj, a mogu biti predikat. Infinitiv ne može biti predikat.",
+   "zanimljivost": "Lični oblici (prezent, perfekat, futur) kazuju lice i broj i mogu biti predikat. Infinitiv sam ne može biti predikat, ali može biti njegov deo: „Moram učiti.“",
    "rec": "nelični"
   },
   {
@@ -2829,15 +2829,15 @@
      "neću"
     ],
     [
-     "imam",
-     "nemam"
+     "jesu",
+     "nisu"
     ],
     [
      "hoćemo",
      "nećemo"
     ]
    ],
-   "zanimljivost": "Odrični oblici pomoćnih glagola pišu se spojeno sa „ne“: nisam, neću, nemam, nemoj.",
+   "zanimljivost": "Odrični oblici pomoćnih glagola pišu se spojeno sa „ne“: nisam, neću. Isto i nemam, nemoj.",
    "rec": "negacija"
   },
   {
@@ -3030,7 +3030,7 @@
     "pisaću",
     "pisati ću",
     "pisa ću",
-    "pisaću,"
+    "pisatiću"
    ],
    "zanimljivost": "Kod glagola na -ti i -sti pomoćni glagol hteti stoji uvek ispred infinitiva (ću pisati) ili se piše spojeno (pisaću). Pogrešno: „pisati ću“.",
    "rec": "futur"
@@ -3309,7 +3309,7 @@
     "posle",
     "ispod",
     "ispred",
-    "kroz"
+    "iznad"
    ],
    "zanimljivost": "Predlozi vremena: do, posle, u, od, na, nakon, oko, za. „Doći će posle tri.“",
    "rec": "vreme"
@@ -3389,7 +3389,7 @@
     "Samo u upitnim rečenicama",
     "Samo u trećem licu"
    ],
-   "zanimljivost": "Iz oblika predikata se vidi ko radi: „Pevao sam“ = „Ja sam pevao“. U većini drugih jezika (engleski „I sing“) subjekat mora da stoji.",
+   "zanimljivost": "Iz oblika predikata se vidi ko radi: „Pevao sam“ = „Ja sam pevao“. U nekim jezicima, na primer u engleskom („I sing“), subjekat mora da stoji.",
    "rec": "subjekat"
   },
   {
@@ -3493,7 +3493,7 @@
     "Nosila je novu haljinu.",
     "Kupila sam novu haljinu."
    ],
-   "zanimljivost": "Imenski deo stoji iza oblika glagola „biti“, a atribut ispred imenice. Isto: „Ta haljina je nova“ i „Nova haljina je kupljena“.",
+   "zanimljivost": "Imenski deo stoji iza oblika glagola „biti“, a atribut uz imenicu. Uporedi: „Ta haljina je nova“ (imenski deo predikata) i „Nova haljina je kupljena“ (atribut).",
    "rec": "imenski"
   },
   {
@@ -3763,7 +3763,7 @@
   {
    "lekcija": 18,
    "tezina": 2,
-   "pitanje": "Koji rečenični članovi se uvek odvajaju zapetom?",
+   "pitanje": "Šta se u rečenici uvek odvaja zapetom?",
    "odgovori": [
     "Vokativ i apozicija",
     "Subjekat i predikat",
@@ -3780,8 +3780,8 @@
    "odgovori": [
     "Stigao, nisam zakasnio.",
     "Stigao nisam, zakasnio.",
-    "Stigao nisam zakasnio,",
-    "Stigao nisam zakasnio.,"
+    "Stigao nisam zakasnio.",
+    "Stigao, nisam, zakasnio."
    ],
    "zanimljivost": "Zapetom se menja smisao: „Stigao nisam, zakasnio“ znači da nije stigao jer je zakasnio. Slično: „Dok sam ležao, na krevetu videh bubu.“",
    "rec": "smisao"
@@ -3822,7 +3822,7 @@
     "„Hajduci“",
     "\"Hajduci\"",
     "”Hajduci„",
-    "«Hajduci»"
+    "„Hajduci„"
    ],
    "zanimljivost": "Naši navodnici imaju dva znaka: uvodni stoji dole („), a izvodni gore (“). Engleski način pisanja nije naš.",
    "rec": "navodnici"
@@ -4051,9 +4051,9 @@
   {
    "lekcija": 19,
    "tezina": 3,
-   "pitanje": "Šta se menja ako u rečenici „Tadija je dobio ranac“ naglasimo drugu reč?",
+   "pitanje": "Šta se menja ako u rečenici „Tadija je dobio ranac“ naglasimo reč „dobio“?",
    "odgovori": [
-    "Značenje – ističe se druga reč",
+    "Značenje – ističe se baš ta reč",
     "Ništa, rečenica ostaje potpuno ista",
     "Menja se rod subjekta u rečenici",
     "Menja se padež imenice u rečenici"
@@ -4097,7 +4097,7 @@
     "pizama",
     "pidjama"
    ],
-   "zanimljivost": "Glas „dž“ je jedan glas i jedno slovo, kao u rečima džep i džungla. Većina jezika ga nema, pa ga stranci teže izgovaraju.",
+   "zanimljivost": "Glas „dž“ je jedan glas, kao u rečima džep i džungla. U ćirilici ga beleži jedno slovo (џ), a u latinici dva znaka koja čine jedno slovo.",
    "rec": "džep"
   },
   {
@@ -4107,11 +4107,11 @@
    "odgovori": [
     "svađa",
     "svadža",
-    "svadja",
+    "svaća",
     "sveđa"
    ],
    "zanimljivost": "Glas đ se često meša sa dž, ć sa č: ćošak (ne „čošak“), obuća (ne „obuča“), đaci. To su najčešće greške pri izgovoru.",
-   "rec": "ćošak"
+   "rec": "svađa"
   },
   {
    "lekcija": 19,
@@ -4364,16 +4364,16 @@
   },
   {
    "lekcija": 20,
-   "tezina": 3,
-   "pitanje": "Koliki deo komunikacije se, prema nekim istraživanjima, odvija usmeno?",
+   "tezina": 2,
+   "pitanje": "Šta od navedenog NE treba da stoji u službenom pismu ili imejlu?",
    "odgovori": [
-    "Oko 75%",
-    "Oko 25%",
-    "Oko 50%",
-    "Oko 10%"
+    "Žargonizmi i emodžiji",
+    "Obraćanje sa „Poštovani“",
+    "Pozdrav i potpis",
+    "Jasno navedena tema"
    ],
-   "zanimljivost": "Čovek je prvo počeo da govori, a mnogo kasnije da piše. Ono što napišeš traje duže, ponekad i vekovima.",
-   "rec": "usmeni"
+   "zanimljivost": "Čovek je prvo počeo da govori, a mnogo kasnije da piše. Ono što napišeš ostaje zapisano, pa službeni tekst traži književni jezik i uzdržan ton.",
+   "rec": "službeno"
   },
   {
    "lekcija": 21,

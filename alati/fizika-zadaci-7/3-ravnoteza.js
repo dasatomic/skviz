@@ -230,7 +230,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera }) => {
   // ════════════════ 13. Plivanje i tonjenje tela ════════════════
   L('Plivanje i tonjenje tela');
   Z(1, 'Telo težine $15 N$ potpuno potopimo u vodu i pustimo. Najveća sila potiska (kad je potpuno pod vodom) je $20 N$. Šta će se desiti?',
-    ['Isplivaće i plivaće delimično potopljeno', 'Potonuće', 'Lebdeće u vodi', 'Ostaće gde smo ga pustili, pa potonuti'],
+    ['Isplivaće na površinu', 'Potonuće na dno', 'Lebdeće pod vodom', 'Lebdeće, pa potonuti'],
     [K('Potisak ($20 N$) je veći od težine ($15 N$) – rezultanta ($5 N$) je naviše i telo izranja.'),
      K('Na površini se potopljeni deo smanjuje dok potisak ne postane $15 N$ – tada telo pliva ($3/4$ zapremine pod vodom).', [], S('tecnost', { tip: 'plivanje', tela: [{ ro: 750, o: '15 N', b: 2 }], sile: true }))]);
 

@@ -420,7 +420,7 @@
         "U Kladovu",
         "U Kruševcu"
       ],
-      "zanimljivost": "Kikindski mamut je stepski mamut star oko pola miliona godina i jedan je od najočuvanijih u Evropi. Mamuti su izumrli krajem poslednjeg ledenog doba.",
+      "zanimljivost": "Kikindski mamut je stepski mamut star oko pola miliona godina i jedan je od najočuvanijih u Evropi. Većina mamuta izumrla je krajem poslednjeg ledenog doba, a poslednji su na ostrvu Vrangel živeli do pre oko 4.000 godina.",
       "rec": "mamut",
       "mediji": {
         "vrsta": "slika",
@@ -881,9 +881,9 @@
       "pitanje": "Koja je od navedenih osobina zajednička SVIM živim bićima?",
       "odgovori": [
         "Imaju ćelijsku građu",
-        "Jarkih su boja",
-        "Dišu preko škrga",
-        "Žive na kopnu"
+        "Kreću se s mesta na mesto",
+        "Vrše fotosintezu",
+        "Imaju krvotok"
       ],
       "zanimljivost": "Sva živa bića su izgrađena od ćelija. Hrane, dišu, izlučuju, reaguju na draži, rastu i razmnožavaju se. Virusi su zato granični slučaj – van ćelije domaćina ne pokazuju nijednu od ovih osobina.",
       "rec": "organizam",
@@ -913,7 +913,7 @@
         "Reaguju na draži"
       ],
       "zanimljivost": "Ris i pečurka spolja nemaju ničeg zajedničkog, a ipak oba dišu, hrane se i razmnožavaju – zato su oba živa bića.",
-      "rec": "virus"
+      "rec": "kamen"
     },
     {
       "lekcija": 3,
@@ -972,16 +972,16 @@
     },
     {
       "lekcija": 3,
-      "tezina": 2,
-      "pitanje": "Šta je zajedničko svim živim bićima, od bakterije do slona?",
+      "tezina": 1,
+      "pitanje": "Kako se zove osobina živih bića da tokom života postaju veća i menjaju se – na primer, iz punoglavca nastaje žaba?",
       "odgovori": [
-        "Građena su od ćelija",
-        "Imaju srce",
-        "Imaju listove",
-        "Imaju čula vida"
+        "Rast i razviće",
+        "Nadražljivost",
+        "Izlučivanje",
+        "Razmnožavanje"
       ],
-      "zanimljivost": "Virusi nemaju ćelijsku građu i zato ih većina naučnika ne smatra pravim živim bićima.",
-      "rec": "ćelija"
+      "zanimljivost": "Rast znači povećanje veličine i mase tela, a razviće promene u građi i izgledu. Kristal soli može da „raste“, ali samo tako što mu se spolja dodaju nove čestice – živo biće raste iznutra, stvaranjem novih ćelija iz hrane.",
+      "rec": "razviće"
     },
     {
       "lekcija": 3,
@@ -1016,7 +1016,7 @@
       "pitanje": "Koja je čuvena biljka koja može da preživi skoro potpuno isušivanje i ponovo „oživi“ kada dobije vodu?",
       "odgovori": [
         "Natalijina ramonda",
-        "Bela rada (kamilica)",
+        "Kamilica",
         "Maslačak",
         "Bosiljak"
       ],
@@ -1160,13 +1160,13 @@
       "tezina": 2,
       "pitanje": "Šta od navedenog nije prisutno kod svih ćelija?",
       "odgovori": [
-        "Ćelijske organele",
+        "Jedro",
         "Ćelijska membrana",
         "Citoplazma",
         "DNK molekul"
       ],
-      "zanimljivost": "Svaka ćelija ima membranu, citoplazmu, ribozome i nasledni materijal (DNK). Prokariotske ćelije, kao što su bakterije, nemaju prave organele obavijene membranom – ni jedro, ni mitohondrije, ni hloroplaste.",
-      "rec": "organela",
+      "zanimljivost": "Svaka ćelija ima membranu, citoplazmu, ribozome i nasledni materijal (DNK). Bakterije nemaju jedro – njihov nasledni materijal leži slobodno u citoplazmi, a nemaju ni mitohondrije ni hloroplaste.",
+      "rec": "jedro",
       "autor": "ivona tomic"
     },
     {
@@ -1213,13 +1213,12 @@
       ],
       "zanimljivost": "Ako ćeliju zamislimo kao grad, jedro je gradska kuća u kojoj se čuvaju svi planovi.",
       "rec": "jedro",
-      "mediji": {
+      "autor": "ivona tomic",
+      "medijiOdgovora": {
         "vrsta": "biologija",
         "scena": "celija",
-        "tip": "zivotinjska",
-        "istakni": "jedro"
-      },
-      "autor": "ivona tomic"
+        "tip": "zivotinjska"
+      }
     },
     {
       "lekcija": 4,
@@ -1233,13 +1232,12 @@
       ],
       "zanimljivost": "Membrana je toliko tanka da bi oko 10.000 membrana naslaganih jedna na drugu bilo tanko kao list papira.",
       "rec": "membrana",
-      "mediji": {
+      "autor": "ivona tomic",
+      "medijiOdgovora": {
         "vrsta": "biologija",
         "scena": "celija",
-        "tip": "zivotinjska",
-        "istakni": "membrana"
-      },
-      "autor": "ivona tomic"
+        "tip": "zivotinjska"
+      }
     },
     {
       "lekcija": 4,
@@ -1248,8 +1246,8 @@
       "odgovori": [
         "Ćelijski zid od celuloze",
         "Jedro sa naslednim materijalom",
-        "Citoplazmu sa svim organelama",
-        "Ćelijsku membranu"
+        "Citoplazma sa organelama",
+        "Ćelijska membrana"
       ],
       "zanimljivost": "Upravo zbog čvrstog ćelijskog zida biljne ćelije pod mikroskopom liče na cigle, a životinjske su okruglaste i nepravilne.",
       "rec": "zid",
@@ -1285,13 +1283,12 @@
       ],
       "zanimljivost": "Citoplazma je stalno u pokretu – u ćelijama nekih biljaka pod mikroskopom se vidi kako kruži i nosi hloroplaste.",
       "rec": "citoplazma",
-      "mediji": {
+      "autor": "ivona tomic",
+      "medijiOdgovora": {
         "vrsta": "biologija",
         "scena": "celija",
-        "tip": "biljna",
-        "istakni": "citoplazma"
-      },
-      "autor": "ivona tomic"
+        "tip": "biljna"
+      }
     },
     {
       "lekcija": 4,
@@ -1323,11 +1320,10 @@
       ],
       "zanimljivost": "Hloroplasti sadrže hlorofil, zeleni pigment – zato su listovi zeleni.",
       "rec": "hloroplast",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "biologija",
         "scena": "celija",
-        "tip": "biljna",
-        "istakni": "hloroplast"
+        "tip": "biljna"
       }
     },
     {
@@ -1368,13 +1364,12 @@
       ],
       "zanimljivost": "Kad biljka nema dovoljno vode, vakuole se smanje i listovi uvenu – zato zalivena biljka brzo ponovo „ustane“.",
       "rec": "vakuola",
-      "mediji": {
+      "autor": "ivona tomic",
+      "medijiOdgovora": {
         "vrsta": "biologija",
         "scena": "celija",
-        "tip": "biljna",
-        "istakni": "vakuola"
-      },
-      "autor": "ivona tomic"
+        "tip": "biljna"
+      }
     },
     {
       "lekcija": 4,
@@ -1418,12 +1413,12 @@
         "Ćelije bez citoplazme"
       ],
       "zanimljivost": "Takve ćelije imaju čovek, životinje, biljke i gljive. Samo kod bakterija nasledni materijal leži slobodno u citoplazmi.",
-      "rec": "membrana",
+      "rec": "jedro",
       "autor": "ivona tomic",
       "medijiOdgovora": {
         "vrsta": "biologija",
         "scena": "celija",
-        "tip": "bakterija"
+        "tip": "zivotinjska"
       }
     },
     {
@@ -1594,7 +1589,7 @@
     {
       "lekcija": 5,
       "tezina": 2,
-      "pitanje": "Kako se zove deo tela biljke koji je organ?",
+      "pitanje": "Koji od navedenih delova biljke je organ?",
       "odgovori": [
         "List",
         "Hloroplast",
@@ -1643,7 +1638,7 @@
         "Mnogo više – hiljade milijardi",
         "Isto – jednu jedinu ćeliju",
         "Manje, jer su bakterije mnogo veće od nas",
-        "Dve ćelije – jednu za glavu i telo"
+        "Nekoliko stotina ćelija"
       ],
       "zanimljivost": "U jednoj kapi krvi ima oko 250 miliona crvenih krvnih zrnaca.",
       "rec": "telo"
@@ -1902,10 +1897,10 @@
       "tezina": 2,
       "pitanje": "Zašto virusi nisu svrstani ni u jedno carstvo živih bića?",
       "odgovori": [
-        "Nisu građeni od ćelija i ne mogu da žive van ćelije domaćina",
+        "Nisu građeni od ćelija",
         "Građeni su od ćelija bez jedra",
         "Nemaju nasledni materijal",
-        "Zato što vrše fotosintezu"
+        "Svi izazivaju bolesti"
       ],
       "zanimljivost": "Virusi imaju nasledni materijal, ali se razmnožavaju samo unutar tuđih ćelija. Zato se i danas raspravlja da li su uopšte živi.",
       "rec": "virus",
@@ -2050,14 +2045,14 @@
     {
       "lekcija": 6,
       "tezina": 3,
-      "pitanje": "Šta je mula?",
+      "pitanje": "Šta je zajedničko mazgi i muli?",
       "odgovori": [
-        "Potomak konja i magarice",
-        "Potomak magarca i kobile",
-        "Mladunče magarca",
-        "Divlji konj iz Azije"
+        "Potomci su konja i magarca",
+        "Obe su divlji konji iz Azije",
+        "Obe su mladunčad magarca",
+        "Potomci su zebre i konja"
       ],
-      "zanimljivost": "Potomak magarca i kobile je mazga – ona je mnogo češća. Mule i mazge su gotovo uvek neplodne – zato konj i magarac pripadaju različitim vrstama.",
+      "zanimljivost": "Mazge i mule su gotovo uvek neplodne – zato konj i magarac, iako mogu imati zajedničko potomstvo, pripadaju različitim vrstama. Vekovima su služile kao izdržljive tovarne životinje.",
       "rec": "mula",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -2158,7 +2153,7 @@
       "tezina": 2,
       "pitanje": "Šta je zajedničko vrstama iz porodice mačaka, od tigra do domaće mačke?",
       "odgovori": [
-        "Grabljivice su, gipkog tela i oštrih kandži",
+        "Zveri su, gipkog tela i oštrih kandži",
         "Biljojedi su, sa tupim zubima za mlevenje trave",
         "Polažu jaja u gnezda na drveću",
         "Žive samo u vodi i imaju peraja"
@@ -2234,7 +2229,7 @@
       "pitanje": "Zašto biljke mesožderke mogu da žive na zemljištu siromašnom mineralima?",
       "odgovori": [
         "Minerale uzimaju iz tela uhvaćenih insekata",
-        "Ne trebaju im uopšte nikakvi minerali za rast i cvetanje",
+        "Uopšte im nisu potrebni minerali za rast i cvetanje",
         "Minerale dobijaju direktno iz vazduha kroz svoje listove",
         "Žive samo u vodi, gde ima dovoljno rastvorenih minerala"
       ],
@@ -2252,9 +2247,9 @@
       "pitanje": "Zašto u korenu biljke nema hlorofila?",
       "odgovori": [
         "Koren je pod zemljom, gde nema svetlosti za fotosintezu",
-        "Zato što koren ne diše, pa mu nije potreban hlorofil za život",
-        "Zato što je koren mrtav",
-        "Zato što hlorofil smrdi"
+        "Koren ne diše, pa mu nije potreban hlorofil za život",
+        "Voda koju koren upija razgrađuje sav hlorofil",
+        "Hlorofil bi u zemlji privukao štetočine i crve"
       ],
       "zanimljivost": "Zbog toga je koren obično bele ili smeđe boje, a zeleni su samo delovi biljke izloženi svetlosti. Neki delovi korena ipak mogu ozeleneti ako se izlože svetlu.",
       "rec": "koren"
@@ -2578,7 +2573,7 @@
         "Energija",
         "Hlorofil",
         "Svetlost",
-        "Mleko"
+        "Skrob"
       ],
       "zanimljivost": "Za razlaganje hrane potreban je kiseonik, a kao otpad nastaju ugljen-dioksid i voda. Bez hrane čovek može da preživi nedeljama, a bez kiseonika samo nekoliko minuta.",
       "rec": "energija"
@@ -2643,12 +2638,12 @@
     {
       "lekcija": 8,
       "tezina": 1,
-      "pitanje": "Koji gas izdišemo?",
+      "pitanje": "Kog gasa ima mnogo više u izdahnutom nego u udahnutom vazduhu?",
       "odgovori": [
-        "Ugljen-dioksid",
-        "Samo kiseonik",
-        "Azot",
-        "Ozon"
+        "Ugljen-dioksida",
+        "Kiseonika",
+        "Azota",
+        "Ozona"
       ],
       "zanimljivost": "Kada dunemo kroz slamčicu u krečnu vodu, ona se zamuti – to je dokaz ugljen-dioksida u izdahnutom vazduhu.",
       "rec": "izdah",
@@ -2685,7 +2680,7 @@
         "Škrgama na krilima",
         "Kroz krila, dok lete kroz vazduh"
       ],
-      "zanimljivost": "Zbog disanja traheama insekti ne mogu biti ogromni – pre 300 miliona godina, kada je u vazduhu bilo više kiseonika, postojali su vilinski konjici veliki kao vrana.",
+      "zanimljivost": "Zbog disanja trahejama insekti ne mogu biti ogromni – pre 300 miliona godina, kada je u vazduhu bilo više kiseonika, postojali su vilinski konjici veliki kao vrana.",
       "rec": "traheja"
     },
     {
@@ -2696,7 +2691,7 @@
         "Oslobađanju energije iz hrane",
         "Stvaranju hrane u listovima",
         "Hlađenju tela tokom leta i napora",
-        "Rastu kose"
+        "Varenju hrane u želucu"
       ],
       "zanimljivost": "Disanje i sagorevanje liče: u oba procesa troši se kiseonik i nastaju ugljen-dioksid i voda – ali u ćeliji se energija oslobađa polako, bez plamena.",
       "rec": "energija"
@@ -2709,7 +2704,7 @@
         "Plućima i preko kože",
         "Samo škrgama, kao ribe",
         "Samo kožom, kao gliste",
-        "Traheama, kao insekti"
+        "Trahejama, kao insekti"
       ],
       "zanimljivost": "Punoglavci dišu škrgama, a odrasle žabe plućima i vlažnom kožom – zato koža žabe mora uvek da bude vlažna.",
       "rec": "žaba"
@@ -2780,7 +2775,7 @@
         "Plućima, kroz nozdrvu na vrhu glave",
         "Škrgama, kao i sve velike ribe u okeanu",
         "Kožom, upijajući kiseonik iz morske vode",
-        "Traheama"
+        "Trahejama"
       ],
       "zanimljivost": "„Fontana“ koju kit izbaci nije voda iz usta, već topao vlažan izdahnuti vazduh koji se kondenzuje.",
       "rec": "nozdrva"
@@ -2981,7 +2976,7 @@
         "Pomoću kontraktilne (pulsirajuće) vakuole",
         "Kroz sitne bubrege na zadnjem kraju svog tela",
         "Znojenjem kroz otvore na celoj površini ćelije",
-        "Kroz pluća"
+        "Isparavanjem kroz ćelijski zid"
       ],
       "zanimljivost": "Kontraktilna vakuola se puni i prazni kao mala pumpa – kod papučice i na svakih nekoliko sekundi.",
       "rec": "vakuola"
@@ -2993,7 +2988,7 @@
       "odgovori": [
         "Odbacuje lišće u kojem su se te materije nakupile",
         "Ispušta ih kroz cvetove koji se otvaraju u jesen tokom kiše",
-        "Ne oslobađa ih nikako",
+        "Rastvara ih u soku koji curi iz kore",
         "Izbacuje ih kroz plodove i semenke tokom zime i rano u proleće"
       ],
       "zanimljivost": "Žuta i crvena boja lišća postoje i leti, ali ih „prekriva“ zeleni hlorofil – ujesen se on razgrađuje pa se pokažu.",
@@ -3079,7 +3074,7 @@
       "tezina": 1,
       "pitanje": "Koliko otprilike mokraće dnevno izluči odrastao čovek?",
       "odgovori": [
-        "Oko 1,5 litar",
+        "Oko 1,5 litra",
         "Oko 10 litara",
         "Oko pola šoljice",
         "Oko 50 litara"
@@ -3153,7 +3148,7 @@
         "Oko 30 puta",
         "Oko 3.000 puta"
       ],
-      "zanimljivost": "Kroz bubrege svakog minuta protekne više od litra krvi. Od skoro 1.700 litara krvi dnevno nastane svega oko 1,5 litar mokraće.",
+      "zanimljivost": "Kroz bubrege svakog minuta protekne više od litra krvi. Od skoro 1.700 litara krvi dnevno nastane svega oko 1,5 litra mokraće.",
       "rec": "bubreg"
     },
     {
@@ -3342,12 +3337,12 @@
     {
       "lekcija": 10,
       "tezina": 2,
-      "pitanje": "Zašto životinje grabljivice moraju da budu dobro prilagođene okolini?",
+      "pitanje": "Zašto je grabljivicama, poput lavice, korisno da im boja liči na boju okoline?",
       "odgovori": [
-        "Da ih plen ne primeti dok se prikradaju",
-        "Da bi bile lepše",
-        "Da bi se lakše razmnožavale",
-        "Da ne bi zaboravile put"
+        "Plen ih ne primeti dok se prikradaju",
+        "Tako se lakše hlade na jakom suncu",
+        "Tako ih mladunci lakše pronađu",
+        "Tako ih manje napadaju insekti"
       ],
       "zanimljivost": "Lavice su prave majstorice lova u grupi: polako se prikradaju kroz visoku savansku travu i napadaju zajedno.",
       "rec": "grabljivica"
@@ -3360,7 +3355,7 @@
         "Jamice osetljive na toplotu (kod nekih zmija)",
         "Uši osetljive na zvuk koje čuju otkucaje srca plena",
         "Rašljasti jezik kojim zmija oseća toplotu kroz vazduh",
-        "Rep"
+        "Oči koje u mraku sijaju kao mačje"
       ],
       "zanimljivost": "Zvečarke toplotnim jamicama osete toplotu miša i u potpunom mraku, na rastojanju od skoro metar.",
       "rec": "zmija"
@@ -3534,7 +3529,7 @@
         "Ne kreću se sami, već ih nosi voda bare"
       ],
       "zanimljivost": "Bičari se kreću pomoću jednog ili više bičeva, a amebe strujanjem citoplazme i stvaranjem lažnih nožica.",
-      "rec": "jato",
+      "rec": "treplja",
       "mediji": {
         "vrsta": "slika",
         "src": "/kvizovi/razred7-biologija/slike/paramecijum.jpg",
@@ -3637,7 +3632,7 @@
       "odgovori": [
         "Okreću bič kao propeler",
         "Mašu bičem kao repom",
-        "Skaču",
+        "Skupljaju bič kao oprugu",
         "Ne mogu da se kreću"
       ],
       "zanimljivost": "Bič bakterije je pravi mali „motor“ koji se okreće i više stotina puta u sekundi.",
@@ -3812,7 +3807,7 @@
         "Njegov skelet nema kičmu",
         "Živi u moru, a ne na kopnu",
         "Pokriven je bodljama",
-        "Nema mozak"
+        "Previše je sitan"
       ],
       "zanimljivost": "Skelet morskog ježa građen je od krečnjačkih pločica, a pokretne bodlje služe za odbranu, a kod nekih vrsta i za kretanje.",
       "rec": "bodlja",
@@ -3845,7 +3840,7 @@
         "Mekušci",
         "Sisari"
       ],
-      "zanimljivost": "Opisano je oko milion vrsta insekata – više nego svih ostalih životinja zajedno. Samo buba ima oko 400.000 vrsta.",
+      "zanimljivost": "Opisano je oko milion vrsta insekata – više nego svih ostalih životinja zajedno. Samo tvrdokrilaca (buba) ima oko 400.000 vrsta.",
       "rec": "insekti"
     },
     {
@@ -3948,7 +3943,7 @@
     {
       "lekcija": 12,
       "tezina": 3,
-      "pitanje": "Koliko dugo se mladunče slona razvija u telu majke – najduže od svih životinja?",
+      "pitanje": "Koliko dugo se mladunče slona razvija u telu majke – najduže od svih sisara?",
       "odgovori": [
         "Oko 22 meseca",
         "Oko 9 meseci",
@@ -4130,7 +4125,7 @@
       "tezina": 2,
       "pitanje": "Šta je potrebno za polno razmnožavanje?",
       "odgovori": [
-        "Dva roditelja – muška i ženska polna ćelija",
+        "Spajanje muške i ženske polne ćelije",
         "Samo jedan roditelj koji se deli na dva dela",
         "Sunčeva svetlost i mnogo hrane tokom proleća",
         "Spore koje vetar donese iz drugih krajeva"
@@ -4146,7 +4141,7 @@
         "Iz jedne oplođene jajne ćelije koja se podeli",
         "Iz dve jajne ćelije koje su oplođene u isto vreme",
         "Iz jedne jajne ćelije i dva spermatozoida",
-        "Iz jedne bebe podeljene posle rođenja"
+        "Iz dve jajne ćelije i jednog spermatozoida"
       ],
       "zanimljivost": "Jednojajčani blizanci su uvek istog pola i gotovo isti. Dvojajčani mogu biti i brat i sestra, a liče kao obična braća i sestre.",
       "rec": "blizanac",

@@ -242,7 +242,7 @@ module.exports = ({ L, Z, K, G, R, O, bez, r, proveri, naKrugu, pravilni, krug, 
     G({ A: [0, 0, 270] }, [{ osa: [0, 16], podela: 1, svaki: 3 }, { tacka: 'A' }, ...skokovi(0, 3, 5, { h: 1.5, k: 1, id: 's', razmak: 0.5 })], { velicina: 300 }));
 
   Z(2, 'Izlomljena linija se sastoji od $5$ duži dužine $2 cm 5 mm$. Kolika je duž jednaka dužini te linije?',
-    ['$12 cm 5 mm$', '$10 cm 25 mm$', '$7 cm 5 mm$', '$12 cm$'],
+    ['$12 cm 5 mm$', '$10 cm 5 mm$', '$7 cm 5 mm$', '$12 cm$'],
     [K('$2 cm 5 mm = 25 mm$; $5 · 25 mm = 125 mm$.'),
      K('$125 mm = 12 cm 5 mm$.')],
     G({ O: [0, 0] }, [{ lin: [[0, 0], [2, 1.5], [4.5, 1.5], [6.5, 0], [8.5, 1.5], [11, 1.5]], b: 0, debljina: 3, crtaj: 1, trajanje: 2 }], { ...bez, velicina: 260 }));
@@ -338,7 +338,7 @@ module.exports = ({ L, Z, K, G, R, O, bez, r, proveri, naKrugu, pravilni, krug, 
   L('Kružnica i krug; kružnica i prava');
 
   Z(1, 'Poluprečnik kruga je $2 cm 5 mm$. Koliki je prečnik?',
-    ['$5 cm$', '$4 cm 10 mm$', '$1 cm 2 mm$', '$2 cm 5 mm$'],
+    ['$5 cm$', '$4 cm 5 mm$', '$1 cm 2 mm$', '$2 cm 5 mm$'],
     [K('Prečnik je dva poluprečnika – prolazi kroz centar, od kraja do kraja.', ['d']),
      K('$d = 2 · 25 mm = 50 mm = 5 cm$.')],
     G({ O: [0, 0, 90], A: [3, 0], B: [-3, 0] }, [{ kr: 'O', r: 3 }, { d: 'OA', o: '2 cm 5 mm', b: 0 }, { d: 'BA', b: 1, id: 'd', k: 1, crtaj: 1, debljina: 4 }], { velicina: 180 }));
@@ -350,7 +350,7 @@ module.exports = ({ L, Z, K, G, R, O, bez, r, proveri, naKrugu, pravilni, krug, 
     G({ O: [0, 0], a1: [-5, 3], a2: [5, 3], b1: [-5, -3], b2: [5, -3], T: [0, 3], S: [0, -3] }, [{ d: 'a1a2', b: 0 }, { d: 'b1b2', b: 0 }, { kr: 'O', r: 3, id: 'k', pomeri: [1.5, 0], ponovi: 1, k: 2 }, { d: 'TS', b: 1, id: 'd', k: 1, o: '6 cm' }], { bezImena: ['O', 'T', 'S', 'a1', 'a2', 'b1', 'b2'], velicina: 200 }));
 
   Z(1, 'Tačka $A$ je na rastojanju $4 cm$ od centra kruga $K(O, 5 cm)$. Gde se nalazi tačka $A$?',
-    ['u krugu, ali ne na kružnici', 'na kružnici', 'van kruga', 'u centru kruga'],
+    ['u unutrašnjosti kruga', 'na kružnici', 'van kruga', 'u centru kruga'],
     [K('Tačke kružnice su tačno $5 cm$ od centra. $OA = 4 cm < 5 cm$.'),
      K('Zato je $A$ unutar kruga (pripada krugu), ali ne i kružnici.', ['a'])],
     R(G({ O: [0, 0, 225], A: [4, 0, 90] }, [{ kr: 'O', r: 5, pun: 1 }, { d: 'OA', o: '4 cm', b: 1 }, { tacka: 'A', id: 'a', k: 0 }, { tacka: 'O' }], { velicina: 180 })));
@@ -429,7 +429,7 @@ module.exports = ({ L, Z, K, G, R, O, bez, r, proveri, naKrugu, pravilni, krug, 
     G({ A: [0, 0], B: [6, 0], C: [6, 3], D: [0, 3], S: [3, 1.5] }, [{ p: 'ABCD' }, { d: 'AC', isp: 1, k: 1 }, { d: 'BD', isp: 1, k: 1 }, { p: 'ABCD', b: 1, okreni: 180, oko: 'S', k: 1, id: 'ok', prazno: 1 }, { tacka: 'S', k: 1 }], { velicina: 200 }));
 
   Z(1, 'Rastojanje tačke $A$ od centra simetrije $O$ je $3 cm 5 mm$. Koliko je rastojanje tačke $A$ od njene slike $A\'$?',
-    ['$7 cm$', '$3 cm 5 mm$', '$6 cm 10 mm$', '$1 cm 7 mm$'],
+    ['$7 cm$', '$3 cm 5 mm$', '$6 cm 5 mm$', '$1 cm 7 mm$'],
     [K('$O$ je sredina duži $AA\'$: $OA\' = OA = 3 cm 5 mm$.', ['s']),
      K('$AA\' = 2 · 35 mm = 70 mm = 7 cm$.')],
     G({ A: [0, 0], O: [3.5, 0, 90], X: [7, 0] }, [{ d: 'AO', o: '3 cm 5 mm', b: 0 }, { d: 'AO', b: 1, okreni: 180, oko: 'O', k: 1, id: 's' }, { tacka: 'AO' }, { tx: "A'", at: [7, 0.6], k: 1 }], { bezImena: ['X'], velicina: 240 }));
@@ -482,7 +482,7 @@ module.exports = ({ L, Z, K, G, R, O, bez, r, proveri, naKrugu, pravilni, krug, 
     G({ A: [0, 0], B: [4, 0], C: [4, 4], D: [0, 4] }, [{ p: 'ABCD', b: 4, prazno: 1 }, { d: 'AB', str: 1, b: 0, id: 'ab' }, { d: 'DC', str: 1, b: 0, id: 'dc', k: 2 }], { velicina: 160 }));
 
   Z(1, 'Da li su vektori $\\vec{AB}$ i $\\vec{BA}$ jednaki?',
-    ['ne – iste su dužine i pravca, ali suprotnog smera', 'da – iste su dužine', 'da – leže na istoj pravoj', 'ne – različitih su dužina'],
+    ['ne – suprotnog su smera', 'da – iste su dužine', 'da – leže na istoj pravoj', 'ne – različitih su dužina'],
     [K('Oba vektora leže na pravoj $AB$ i imaju istu dužinu.'),
      K('Ali $\\vec{AB}$ ide od $A$ ka $B$, a $\\vec{BA}$ obrnuto – smerovi su suprotni, pa vektori nisu jednaki.', ['ba'])],
     G({ A: [0, 0], B: [5, 0], P: [0, -0.8], Q: [5, -0.8] }, [{ d: 'AB', str: 1, b: 0 }, { d: 'QP', str: 1, b: 1, id: 'ba', k: 2, crtaj: 1 }, { tacka: 'AB' }], { bezImena: ['P', 'Q'], velicina: 220 }));
@@ -552,7 +552,7 @@ module.exports = ({ L, Z, K, G, R, O, bez, r, proveri, naKrugu, pravilni, krug, 
 
   L('Prenošenje i nadovezivanje duži');
   Z(1, 'Duž dužine $2 cm 4 mm$ nadovežemo samu na sebe $5$ puta. Kolika je dobijena duž?',
-    ['$12 cm$', '$10 cm 20 mm$', '$10 cm 4 mm$', '$12 cm 4 mm$'],
+    ['$12 cm$', '$12 cm 2 mm$', '$10 cm 4 mm$', '$12 cm 4 mm$'],
     [K('$2 cm 4 mm = 24 mm$; $5 · 24 mm = 120 mm$.'),
      K('$120 mm = 12 cm$.', ['s'])],
     G({}, [{ osa: [0, 12.5], podela: 0.4, svaki: 5 }, ...skokovi(0, 2.4, 5, { h: 1, k: 2, id: 's', razmak: 0.5 })], { velicina: 300 }));

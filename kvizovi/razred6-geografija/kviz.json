@@ -248,7 +248,7 @@
    "tezina": 1,
    "pitanje": "Na koje se četiri discipline deli društvena geografija?",
    "odgovori": [
-    "Stanovništvo, naselja, privreda, politika",
+    "Na geografiju stanovništva, naselja, ekonomsku i političku",
     "Na fizičku, hemijsku, biološku i matematičku geografiju",
     "Na kartografiju, hidrologiju, klimatologiju i pedologiju",
     "Na urbanu, ruralnu, agrarnu i turističku geografiju"
@@ -266,15 +266,16 @@
     "Mihajlo Pupin",
     "Nikola Tesla"
    ],
-   "zanimljivost": "Cvijić se bavio i fizičkom i društvenom geografijom; proučavao je naselja, poreklo stanovništva i migracije.",
+   "zanimljivost": "Cvijić je rođen 1865. u Loznici; bavio se i fizičkom i društvenom geografijom – proučavao je naselja, poreklo stanovništva i migracije.",
    "rec": "cvijic",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "srbija",
     "tacke": [
      {
-      "lat": 44.82,
-      "lon": 20.46
+      "lat": 44.53,
+      "lon": 19.22,
+      "oznaka": "Loznica"
      }
     ]
    }
@@ -284,10 +285,10 @@
    "tezina": 1,
    "pitanje": "Kako je Fridrih Racel nazvao geografsku disciplinu koja proučava odnose čoveka i prirodne sredine?",
    "odgovori": [
-    "Antropogeografija ili geografija čoveka",
-    "Disciplina koja proučava reljef Zemlje",
-    "Nauka o morskim strujama",
-    "Istraživanje vazdušnih masa"
+    "Antropogeografija",
+    "Geomorfologija",
+    "Klimatologija",
+    "Biogeografija"
    ],
    "zanimljivost": "Racel je bio nemački geograf koji je delovao na prelazu iz 19. u 20. vek.",
    "rec": "racel"
@@ -407,7 +408,7 @@
     "Isključivo rad u rudnicima i šumama",
     "Nauka o poreklu i seobama naroda"
    ],
-   "zanimljivost": "O privredi se uči u 5. oblasti udžbenika.",
+   "zanimljivost": "Privreda obuhvata poljoprivredu, industriju, saobraćaj, trgovinu, turizam i druge delatnosti.",
    "rec": "privreda"
   },
   {
@@ -427,7 +428,7 @@
   },
   {
    "lekcija": 1,
-   "tezina": 3,
+   "tezina": 1,
    "pitanje": "Šta proučava turistička geografija?",
    "odgovori": [
     "Turizam i turistička kretanja",
@@ -485,7 +486,7 @@
     "Podnevci",
     "Uporednici",
     "Ekvatori",
-    "Horizontali"
+    "Izohipse"
    ],
    "zanimljivost": "Zovu se podnevci jer je u svim mestima na istom meridijanu podne u isto vreme.",
    "rec": "meridijan"
@@ -599,7 +600,7 @@
    "pitanje": "Šta spajaju meridijani?",
    "odgovori": [
     "Severni i Južni pol",
-    "Ekvaator i Grinič",
+    "Ekvator i Grinič",
     "Istočnu i zapadnu obalu",
     "Sve paralele"
    ],
@@ -675,16 +676,16 @@
   },
   {
    "lekcija": 2,
-   "tezina": 3,
-   "pitanje": "Šta na globusu primećuješ kad ga detaljnije pogledaš, a odnosi se na mrežu?",
+   "tezina": 2,
+   "pitanje": "Kolika je približno dužina ekvatora?",
    "odgovori": [
-    "Linije koje čine mrežu",
-    "Samo obojene površine mora i kopna na globusu",
-    "Isključivo nazive država i gradova na globusu",
-    "Samo sliku zvezda i planeta na globusu"
+    "Oko 40 000 km",
+    "Oko 12 750 km",
+    "Oko 20 000 km",
+    "Oko 6 370 km"
    ],
-   "zanimljivost": "Te linije služe da se lakše odredi položaj neke tačke.",
-   "rec": "globe"
+   "zanimljivost": "Ekvator je dug oko 40 075 km; 12 750 km je prečnik Zemlje, a 6 370 km njen poluprečnik.",
+   "rec": "ekvator"
   },
   {
    "lekcija": 3,
@@ -793,7 +794,7 @@
    ],
    "zanimljivost": "Kad se putuje na zapad u sledeću časovnu zonu, oduzima se jedan sat.",
    "rec": "london",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "sat",
     "vreme": "12:00"
    }
@@ -810,7 +811,7 @@
    ],
    "zanimljivost": "Kad se putuje na istok u sledeću časovnu zonu, dodaje se jedan sat.",
    "rec": "bukurest",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "sat",
     "vreme": "14:00"
    }
@@ -823,7 +824,7 @@
     "Srednjoevropskoj (središnji meridijan 15° IGD)",
     "Zapadnoevropskoj (oko Griniča)",
     "Istočnoevropskoj (središnji meridijan 30° IGD)",
-    "Ni jednoj navedenoj"
+    "Nijednoj navedenoj"
    ],
    "zanimljivost": "U istočnoevropskoj zoni su, na primer, Bugarska, Rumunija i Ukrajina.",
    "rec": "srbija",
@@ -971,12 +972,12 @@
    "tezina": 1,
    "pitanje": "Šta predstavlja Majkopska vaza?",
    "odgovori": [
-    "Srebrnu vazu na kojoj je prikazano lovište",
+    "Srebrnu vazu sa prikazom planina, reka i životinja",
     "Glinenu ploču na kojoj je nacrtana karta sveta",
     "Papirus sa kartom rudnika zlata u Nubiji",
-    "Kamen sa ucrtanim tokom reke i naseljima"
+    "Kamenu ploču sa ucrtanim naseljima i putevima"
    ],
-   "zanimljivost": "Stara je oko 5 000 godina i jedan je od najstarijih kartografskih prikaza.",
+   "zanimljivost": "Pronađena je 1897. godine u kurganu kod grada Majkopa na Kavkazu i stara je oko 5 000 godina.",
    "rec": "vaza"
   },
   {
@@ -1132,7 +1133,7 @@
    "zanimljivost": "Svi su doprineli razvoju kartografije kroz istoriju.",
    "rec": "kartografi",
    "vrsta": "spoji",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "lenta",
     "od": -300,
     "do": 1600,
@@ -1354,7 +1355,7 @@
    ],
    "zanimljivost": "Ime Bangkoka ima preko 160 slova i znači „grad anđela“.",
    "rec": "bangkok",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "azija",
     "tacke": [
@@ -1515,14 +1516,14 @@
    "tezina": 3,
    "pitanje": "Šta nam govori rastojanje između izohipsi?",
    "odgovori": [
-    "Blizu su – strm teren",
-    "Ako su izohipse bliže, teren je blaži",
+    "Što su bliže, teren je strmiji",
+    "Što su bliže, teren je blaži",
     "Rastojanje nema nikakav značaj",
     "Što su dalje, teren je viši"
    ],
    "zanimljivost": "Na blažim terenima izohipse su međusobno udaljenije.",
    "rec": "nagib",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "svg",
     "kod": "<svg viewBox=\"0 0 420 210\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"420\" height=\"210\" rx=\"12\" fill=\"#fdfaf3\"/><path d=\"M30 180 Q120 160 210 90 T390 40\" fill=\"none\" stroke=\"#8b5a2b\" stroke-width=\"2\"/><path d=\"M30 165 Q120 145 210 70 T390 22\" fill=\"none\" stroke=\"#8b5a2b\" stroke-width=\"2\"/><path d=\"M30 150 Q120 130 210 50 T390 6\" fill=\"none\" stroke=\"#8b5a2b\" stroke-width=\"2\"/><text x=\"40\" y=\"195\" font-size=\"12\" fill=\"#555\">blagi nagib – izohipse udaljene</text><text x=\"280\" y=\"30\" font-size=\"12\" fill=\"#555\">strm nagib – izohipse blizu</text></svg>"
    }
@@ -1558,10 +1559,10 @@
    "tezina": 2,
    "pitanje": "Kojom bojom se prikazuju planinski predeli preko 500 m nadmorske visine?",
    "odgovori": [
-    "Braon",
+    "Braon (smeđom)",
     "Zelenom",
     "Plavom",
-    "Belo"
+    "Belom"
    ],
    "zanimljivost": "Bela boja označava vrhove pod večnim snegom i ledom.",
    "rec": "braon"
@@ -1569,14 +1570,14 @@
   {
    "lekcija": 6,
    "tezina": 3,
-   "pitanje": "Ko je prvi uveo metodu senčenja za prikazivanje reljefa na kartama?",
+   "pitanje": "Koji švajcarski kartograf je proslavio metodu senčenja za prikazivanje reljefa na kartama?",
    "odgovori": [
     "Edvard Imhof",
     "Gerhard Merkator",
     "Ptolomej",
     "Abraham Ortelijus"
    ],
-   "zanimljivost": "Imhof je bio profesor kartografije u Cirihu (Švajcarska).",
+   "zanimljivost": "Imhof je bio profesor kartografije u Cirihu; njegove senčene karte Alpa izgledaju gotovo kao fotografije iz vazduha.",
    "rec": "imhof"
   },
   {
@@ -1688,7 +1689,7 @@
    "tezina": 1,
    "pitanje": "Na koje tri grupe se karte dele prema veličini razmera?",
    "odgovori": [
-    "Krupno, srednje, sitno",
+    "Krupnog, srednjeg i sitnog razmera",
     "Na male, srednje i velike",
     "Na planske, zidne i atlasne",
     "Na kopnene, morske i vazdušne"
@@ -1915,19 +1916,15 @@
   {
    "lekcija": 8,
    "tezina": 1,
-   "pitanje": "Kojim slovom se na kompasu obeležava sever?",
+   "pitanje": "Koja zvezda noću pokazuje pravac severa?",
    "odgovori": [
-    "N (od engleske reči North)",
-    "S (od engleske reči South)",
-    "E (od engleske reči East)",
-    "W (od engleske reči West)"
+    "Severnjača",
+    "Danica",
+    "Sirijus",
+    "Večernjača"
    ],
-   "zanimljivost": "Jug se obeležava slovom S, istok E, a zapad W.",
-   "rec": "sever",
-   "mediji": {
-    "vrsta": "svg",
-    "kod": "<svg viewBox=\"0 0 420 210\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"420\" height=\"210\" rx=\"12\" fill=\"#fdfaf3\"/><circle cx=\"210\" cy=\"105\" r=\"60\" fill=\"none\" stroke=\"#8b5a2b\" stroke-width=\"2\"/><line x1=\"210\" y1=\"45\" x2=\"210\" y2=\"165\" stroke=\"#c0392b\" stroke-width=\"2\"/><line x1=\"150\" y1=\"105\" x2=\"270\" y2=\"105\" stroke=\"#555\" stroke-width=\"2\"/><text x=\"205\" y=\"38\" font-size=\"16\" fill=\"#c0392b\">N</text><text x=\"205\" y=\"180\" font-size=\"14\" fill=\"#555\">S</text><text x=\"275\" y=\"109\" font-size=\"14\" fill=\"#555\">E</text><text x=\"142\" y=\"109\" font-size=\"14\" fill=\"#555\">W</text></svg>"
-   }
+   "zanimljivost": "Severnjača se gotovo ne pomera na nebu jer je skoro tačno iznad Severnog pola; Danica i Večernjača su zapravo planeta Venera.",
+   "rec": "severnjaca"
   },
   {
    "lekcija": 8,
@@ -1945,7 +1942,7 @@
   {
    "lekcija": 8,
    "tezina": 3,
-   "pitanje": "Šta je GPS (GPS)?",
+   "pitanje": "Šta je GPS?",
    "odgovori": [
     "Satelitski uređaj za položaj",
     "Vrsta kompasa sa magnetnom iglom",
@@ -1958,14 +1955,14 @@
   {
    "lekcija": 8,
    "tezina": 3,
-   "pitanje": "Kako se zove mreža od preko 20 satelita koji kruže oko Zemlje i prenose signale?",
+   "pitanje": "Kako se zajedničkim imenom zovu sistemi satelita koji šalju signale za određivanje položaja na Zemlji?",
    "odgovori": [
-    "GNSS",
-    "Interna mreža računara u jednoj zgradi",
-    "Radio mreža za prenos muzike",
-    "Meteorološka mreža stanica na tlu"
+    "GNSS – satelitski navigacioni sistemi",
+    "GIS – geografski informacioni sistemi",
+    "ISS – Međunarodna svemirska stanica",
+    "WWW – svetska računarska mreža"
    ],
-   "zanimljivost": "Najpoznatiji među njima je Globalni pozicioni sistem (GPS).",
+   "zanimljivost": "U GNSS spadaju američki GPS, evropski Galileo, ruski GLONASS i kineski Beidou.",
    "rec": "sateliti"
   },
   {
@@ -2037,7 +2034,7 @@
   },
   {
    "lekcija": 8,
-   "tezina": 2,
+   "tezina": 1,
    "pitanje": "Na kojoj strani sveta Sunce izlazi?",
    "odgovori": [
     "Na istoku",
@@ -2197,14 +2194,14 @@
   {
    "lekcija": 9,
    "tezina": 2,
-   "pitanje": "Kada je u Srbiji obavljen poslednji popis?",
+   "pitanje": "Koje godine je u Srbiji obavljen popis stanovništva koji je usledio posle popisa iz 2011?",
    "odgovori": [
-    "2022. godine",
-    "1991. godine",
-    "2002. godine",
-    "2011. godine"
+    "2022.",
+    "2021.",
+    "2016.",
+    "2019."
    ],
-   "zanimljivost": "Prema popisu iz 2022. godine, Srbija ima negativan prirodni priraštaj.",
+   "zanimljivost": "Popis je bio planiran za 2021, ali je zbog pandemije kovida pomeren na jesen 2022. Tada je u Srbiji (bez Kosova i Metohije) popisano oko 6,6 miliona stanovnika.",
    "rec": "srbija"
   },
   {
@@ -2217,7 +2214,7 @@
     "Samo broj automobila po domaćinstvu",
     "Samo imena ulica i trgova u gradu"
    ],
-   "zanimljivost": "Prikup ljeni podaci su osnova većine demografskih istraživanja.",
+   "zanimljivost": "Prikupljeni podaci su osnova većine demografskih istraživanja.",
    "rec": "podaci"
   },
   {
@@ -2338,7 +2335,7 @@
    ],
    "zanimljivost": "U Aziji živi oko 4,7 milijardi ljudi.",
    "rec": "azija",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "svet",
     "istakni": [
@@ -2407,7 +2404,7 @@
    "tezina": 3,
    "pitanje": "Kolika je prosečna gustina naseljenosti u svetu?",
    "odgovori": [
-    "Oko 58 st/km²",
+    "Oko 60 st/km²",
     "Oko 10 st/km²",
     "Oko 500 st/km²",
     "Oko 1 000 st/km²"
@@ -2420,12 +2417,12 @@
    "tezina": 3,
    "pitanje": "Koja država ima najveću gustinu naseljenosti na svetu?",
    "odgovori": [
-    "Monako (18 713 st/km²)",
-    "Singapur i Japan",
-    "Japan i Kanada",
-    "Kanada i Srbija"
+    "Monako",
+    "Singapur",
+    "Bangladeš",
+    "Holandija"
    ],
-   "zanimljivost": "Monako je patuljasta država na obali Sredozemnog mora.",
+   "zanimljivost": "Monako je patuljasta država na obali Sredozemnog mora: na oko 2 km² živi oko 38 000 ljudi – blizu 19 000 st/km². Singapur je drugi.",
    "rec": "monako",
    "mediji": {
     "vrsta": "mapa",
@@ -2445,14 +2442,14 @@
    "tezina": 3,
    "pitanje": "Koja država ima najmanju gustinu naseljenosti na svetu?",
    "odgovori": [
-    "Mongolija (2 st/km²)",
-    "Australija i Kanada",
-    "Kanada i Srbija",
-    "Srbija i Japan"
+    "Mongolija",
+    "Kanada",
+    "Australija",
+    "Rusija"
    ],
-   "zanimljivost": "Mongolija je velika po površini, a ima malo stanovnika.",
+   "zanimljivost": "Mongolija je velika po površini, a ima samo oko 3,5 miliona stanovnika – oko 2 st/km²; skoro polovina živi u glavnom gradu Ulan Batoru.",
    "rec": "mongolija",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "azija",
     "tacke": [
@@ -2470,10 +2467,10 @@
    "tezina": 2,
    "pitanje": "Kolika je gustina naseljenosti u Srbiji?",
    "odgovori": [
-    "94 st/km²",
-    "18 st/km²",
-    "250 st/km²",
-    "5 st/km²"
+    "Oko 90 st/km²",
+    "Oko 18 st/km²",
+    "Oko 250 st/km²",
+    "Oko 5 st/km²"
    ],
    "zanimljivost": "Najgušće su naseljeni veliki gradovi, a najređe planinski predeli.",
    "rec": "srbija",
@@ -2502,7 +2499,7 @@
    "odgovori": [
     "Raspored stanovništva po nadmorskoj visini",
     "Raspored po geografskoj širini i dužini",
-    "Raspored po geografskoj dužini i širini",
+    "Raspored po udaljenosti od mora",
     "Raspored po kontinentima i državama"
    ],
    "zanimljivost": "Više od polovine svetske populacije živi ispod 200 m nadmorske visine.",
@@ -2513,12 +2510,12 @@
    "tezina": 3,
    "pitanje": "Koje je najviše stalno naselje na svetu?",
    "odgovori": [
-    "La Rinkonada (oko 5 100 m)",
-    "Jerihon i Almere",
-    "Almere i Luksemburg",
-    "Luksemburg i Jerihon"
+    "La Rinkonada u Peruu",
+    "Lasa u Tibetu",
+    "La Paz u Boliviji",
+    "Kito u Ekvadoru"
    ],
-   "zanimljivost": "La Rinkonada je rudarski grad u Peruu, blizu rudnika zlata.",
+   "zanimljivost": "La Rinkonada je rudarski grad na oko 5 100 m, blizu rudnika zlata; Lasa i La Paz su na oko 3 600 m.",
    "rec": "rinkonada",
    "mediji": {
     "vrsta": "mapa",
@@ -2538,12 +2535,12 @@
    "tezina": 3,
    "pitanje": "Koje je najniže naselje na svetu?",
    "odgovori": [
-    "Jerihon (258 m ispod nivoa mora)",
-    "Almere u Holandiji i Bangkok u Tajlandu",
-    "Bangkok i naselje Denki u Indiji",
-    "Denki i Almere u Holandiji"
+    "Jerihon",
+    "Almere u Holandiji",
+    "Baku u Azerbejdžanu",
+    "Astrahan u Rusiji"
    ],
-   "zanimljivost": "Jerihon se nalazi blizu Mrtvog mora.",
+   "zanimljivost": "Jerihon je na oko 258 m ispod nivoa mora, blizu Mrtvog mora; Baku (oko 28 m ispod nivoa mora) je najniže položen glavni grad.",
    "rec": "jerihon",
    "mediji": {
     "vrsta": "mapa",
@@ -2596,7 +2593,7 @@
    ],
    "zanimljivost": "Može biti pozitivan (više rođenih) ili negativan (više umrlih).",
    "rec": "priraštaj",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "formula",
     "tekst": "natalitet − mortalitet = prirodni priraštaj"
    }
@@ -2619,14 +2616,14 @@
    "tezina": 1,
    "pitanje": "Koji kontinent ima najvišu prosečnu stopu nataliteta?",
    "odgovori": [
-    "Afrika (oko 35,8‰)",
+    "Afrika",
     "Evropa",
     "Severna Amerika",
     "Australija"
    ],
-   "zanimljivost": "U nekim afričkim državama žene rađaju pet do šest dece.",
+   "zanimljivost": "Stopa nataliteta u Africi je preko 30‰, a u Evropi oko 9‰; u nekim afričkim državama žene u proseku rađaju pet do šest dece.",
    "rec": "afrika",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "afrika",
     "istakni": [
@@ -2656,7 +2653,7 @@
    "tezina": 3,
    "pitanje": "Šta je bela kuga?",
    "odgovori": [
-    "Smanjenje broja stanovnika",
+    "Više umrlih nego rođenih",
     "Ubrzan rast broja stanovnika",
     "Migracije iz sela u gradove",
     "Bolest koja pogađa domaću stoku"
@@ -2669,7 +2666,7 @@
    "tezina": 3,
    "pitanje": "Šta je demografska eksplozija?",
    "odgovori": [
-    "Ubrzan rast ljudi",
+    "Ubrzan rast broja stanovnika",
     "Naglo smanjenje broja ljudi u gradu",
     "Iseljavanje celog naroda u inostranstvo",
     "Izumiranje pojedinih sela i zaselaka"
@@ -2692,12 +2689,12 @@
    "tezina": 2,
    "pitanje": "Kakav je prirodni priraštaj u Srbiji?",
    "odgovori": [
-    "Negativan (oko −4,5‰ prema popisu 2022)",
-    "Veoma visok (preko 30 promila)",
-    "Nula još od 1990. godine",
-    "Uvek pozitivan u svim krajevima"
+    "Negativan",
+    "Veoma visok i pozitivan",
+    "Jednak nuli",
+    "Pozitivan, ali nizak"
    ],
-   "zanimljivost": "Srbija spada u države sa negativnim prirodnim priraštajem.",
+   "zanimljivost": "U Srbiji svake godine umre desetine hiljada ljudi više nego što se rodi.",
    "rec": "srbija",
    "mediji": {
     "vrsta": "mapa",
@@ -2750,10 +2747,10 @@
    "tezina": 2,
    "pitanje": "Šta je UNICEF?",
    "odgovori": [
-    "Fond za decu i majke",
+    "Fond Ujedinjenih nacija za decu",
     "Svetska zdravstvena organizacija",
-    "Organizacija za kulturu",
-    "Vojni savez"
+    "Organizacija za kulturu i nauku",
+    "Vojni savez evropskih država"
    ],
    "zanimljivost": "UNICEF sprovodi programe pružanja zdravstvenih usluga deci širom sveta.",
    "rec": "unicef"
@@ -2763,7 +2760,7 @@
    "tezina": 3,
    "pitanje": "Zašto neke razvijene države imaju visoku stopu mortaliteta?",
    "odgovori": [
-    "Zbog udela starog",
+    "Zbog velikog udela starog stanovništva",
     "Zbog ratova i oružanih sukoba",
     "Zbog nedostatka pijaće vode",
     "Zbog loše ishrane i gladi"
@@ -2867,10 +2864,10 @@
    "tezina": 2,
    "pitanje": "Kojim uzrocima pripada Velika seoba Srba 1690. godine?",
    "odgovori": [
-    "Politički razlozi",
-    "Ekonomskim uzrocima",
-    "Sezonskim poslovima",
-    "Dobrovoljnim odlukama"
+    "Prisilnim – zbog rata i progona",
+    "Ekonomskim – zbog boljeg posla",
+    "Sezonskim – zbog poljskih radova",
+    "Klimatskim – zbog suša i poplava"
    ],
    "zanimljivost": "Ratovi i progoni spadaju u prisilne uzroke migracija.",
    "rec": "seoba"
@@ -2932,7 +2929,7 @@
    ],
    "zanimljivost": "To su razvijene države koje privlače migrante.",
    "rec": "useljavanje",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "svet",
     "istakni": [
@@ -3139,7 +3136,7 @@
     "Zambosi",
     "Kreoli"
    ],
-   "zanimljivost": "Mestici su mešavina bele i žute, a zambosi crne i žute rase.",
+   "zanimljivost": "Mestici su potomci belaca i Indijanaca, a zambosi potomci crnaca i Indijanaca.",
    "rec": "mulati"
   },
   {
@@ -3162,14 +3159,14 @@
   {
    "lekcija": 13,
    "tezina": 2,
-   "pitanje": "Koji su najbrojniji narodi na svetu?",
+   "pitanje": "Koji je najbrojniji narod na svetu?",
    "odgovori": [
-    "Kinezi i Indijci",
-    "Samo Evropljani i njihovi narodi",
-    "Samo Afrikanci i njihova plemena",
-    "Narodi Okeanije i Australije"
+    "Kinezi (Hani)",
+    "Arapi",
+    "Rusi",
+    "Amerikanci"
    ],
-   "zanimljivost": "Na svetu ima oko 200 naroda sa više od milion pripadnika.",
+   "zanimljivost": "Hani čine oko 90% stanovnika Kine – oko 1,3 milijarde ljudi.",
    "rec": "narodi"
   },
   {
@@ -3190,12 +3187,12 @@
    "tezina": 2,
    "pitanje": "Koja religija ima najviše vernika na svetu?",
    "odgovori": [
-    "Hrišćanstvo (oko 2,5 milijardi)",
-    "Islam (oko 1,8 milijardi)",
-    "Hinduizam (oko 1,15 milijardi)",
-    "Budizam (oko pola milijarde)"
+    "Hrišćanstvo",
+    "Islam",
+    "Hinduizam",
+    "Budizam"
    ],
-   "zanimljivost": "Hrišćanstvo se deli na katoličku, pravoslavnu i protestantsku crkvu.",
+   "zanimljivost": "Hrišćana ima oko 2,3 milijarde, a muslimana oko 2 milijarde. Hrišćanstvo se deli na katoličku, pravoslavnu i protestantsku crkvu.",
    "rec": "religija",
    "mediji": {
     "vrsta": "mapa",
@@ -3325,7 +3322,7 @@
    ],
    "zanimljivost": "Većina tih država je manje razvijena, što donosi nove izazove.",
    "rec": "azija",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "svet",
     "istakni": [
@@ -3343,13 +3340,13 @@
    "pitanje": "U kojim evropskim državama se procenjuje pad broja stanovnika?",
    "odgovori": [
     "U Srbiji, Hrvatskoj, BiH i Mađarskoj",
-    "U Francuskoj i Nemačkoj i Italiji",
-    "U Španiji i Italiji i Grčkoj",
-    "U Danskoj i Švedskoj i Norveškoj"
+    "U Irskoj, Norveškoj, Švedskoj i Islandu",
+    "U Francuskoj, Belgiji, Holandiji i Luksemburgu",
+    "U Švajcarskoj, Austriji, Danskoj i Malti"
    ],
    "zanimljivost": "Procenjuje se smanjenje od oko 15% tokom narednih decenija.",
    "rec": "pad",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "evropa",
     "istakni": [
@@ -3363,15 +3360,15 @@
   {
    "lekcija": 14,
    "tezina": 2,
-   "pitanje": "Kakav prirodni priraštaj beleži Srbija?",
+   "pitanje": "Zašto mnoga sela u Srbiji ostaju bez stanovnika?",
    "odgovori": [
-    "Negativan",
-    "Veoma visok",
-    "Nula",
-    "Pozitivan"
+    "Mladi odlaze u gradove i inostranstvo",
+    "U njima se rađa previše dece",
+    "U njih se doseljava mnogo stranaca",
+    "U njima se brzo razvija industrija"
    ],
-   "zanimljivost": "Negativan priraštaj je zastupljen u mnogim gradovima i selima.",
-   "rec": "srbija"
+   "zanimljivost": "U Srbiji ima stotine sela sa manje od 100 stanovnika, a neka su potpuno opustela.",
+   "rec": "sela"
   },
   {
    "lekcija": 14,
@@ -3404,10 +3401,10 @@
    "tezina": 2,
    "pitanje": "Koje pojave ostavljaju loše posledice po demografske procese?",
    "odgovori": [
-    "Ratovi i zagađenje",
-    "Samo lepo vreme i sunčani dani",
-    "Samo praznici i raspusti",
-    "Samo školske raspuste i ekskurzije"
+    "Ratovi, glad i zagađenje",
+    "Izgradnja škola i bolnica",
+    "Napredak medicine i vakcine",
+    "Razvoj saobraćaja i interneta"
    ],
    "zanimljivost": "One utiču na promene broja i rasporeda stanovnika.",
    "rec": "posledice"
@@ -3417,10 +3414,10 @@
    "tezina": 2,
    "pitanje": "Šta su savremeni demografski procesi?",
    "odgovori": [
-    "Promene broja ljudi",
-    "Procesi u geološkoj prošlosti",
-    "Procesi nastanka planina",
-    "Procesi stvaranja mora"
+    "Promene broja i rasporeda stanovnika danas",
+    "Promene reljefa pod uticajem čoveka",
+    "Promene klime u geološkoj prošlosti",
+    "Promene granica država kroz istoriju"
    ],
    "zanimljivost": "To su demografska eksplozija, migracije, izumiranje naselja i depopulacija.",
    "rec": "procesi"
@@ -3428,14 +3425,14 @@
   {
    "lekcija": 14,
    "tezina": 2,
-   "pitanje": "Koliko je ljudi živelo na Zemlji prema proceni za 2050. godinu?",
+   "pitanje": "Koliko će ljudi, prema proceni UN, živeti na Zemlji 2050. godine?",
    "odgovori": [
     "Oko 10 milijardi",
     "Oko 8 milijardi",
     "Oko 5 milijardi",
     "Oko 15 milijardi"
    ],
-   "zanimljivost": "To je procena UN ako se rast nastavi sadašnjim tempom.",
+   "zanimljivost": "Rast se usporava – UN procenjuju da će broj ljudi dostići vrhunac od nešto više od 10 milijardi u drugoj polovini 21. veka.",
    "rec": "prognoza"
   },
   {
@@ -3551,14 +3548,14 @@
   {
    "lekcija": 15,
    "tezina": 1,
-   "pitanje": "Koja je civilizacija nastala u dolini Tigra i Eufrata oko 3500. g. p.n.e.?",
+   "pitanje": "Koja je civilizacija nastala u dolini Tigra i Eufrata oko 3500. godine p. n. e.?",
    "odgovori": [
     "Sumer",
     "Stari Egipat",
     "Antička Grčka",
     "Stara Kina"
    ],
-   "zanimljivost": "To je najstarija poznata civilizacija i prva država.",
+   "zanimljivost": "To je jedna od najstarijih poznatih civilizacija; Sumerci su izmislili klinasto pismo.",
    "rec": "sumer"
   },
   {
@@ -3571,7 +3568,7 @@
     "Rim",
     "Beograd"
    ],
-   "zanimljivost": "Jerihon je osnovan pre oko 9 000 godina, blizu Mrtvog mora.",
+   "zanimljivost": "Kamene zidine i kula Jerihona podignute su pre oko 10 000 godina; grad se nalazi blizu Mrtvog mora.",
    "rec": "jerihon",
    "mediji": {
     "vrsta": "mapa",
@@ -3659,7 +3656,7 @@
     "Jerihon",
     "Knosos"
    ],
-   "zanimljivost": "Vinča je nastala u periodu 4500–3200. g. p.n.e.",
+   "zanimljivost": "Naselje na lokalitetu Belo brdo u Vinči postojalo je pre više od 7 000 godina; po njemu je cela vinčanska kultura dobila ime.",
    "rec": "vinca",
    "mediji": {
     "vrsta": "mapa",
@@ -3919,7 +3916,7 @@
     "Zemunica",
     "Iglo"
    ],
-   "zanimljivost": "Jure grade nomadi u stepskim predelima gde nema drveća.",
+   "zanimljivost": "Jurte grade nomadi u stepskim predelima gde nema drveća.",
    "rec": "jurta"
   },
   {
@@ -3932,7 +3929,7 @@
     "Koliba",
     "Sojenica"
    ],
-   "zanimljivost": "Iglo grade Eskimi u severnim polarnim predelima.",
+   "zanimljivost": "Iglo grade Inuiti (Eskimi) u severnim polarnim predelima.",
    "rec": "iglo"
   },
   {
@@ -3951,14 +3948,14 @@
   {
    "lekcija": 16,
    "tezina": 2,
-   "pitanje": "Koji srpski gradovi imaju stare tvrđave?",
+   "pitanje": "Koji od ovih srpskih gradova ima veliku srednjovekovnu tvrđavu na Dunavu?",
    "odgovori": [
-    "Smederevo i Niš",
-    "Samo Beograd",
-    "Samo Subotica",
-    "Samo Kragujevac"
+    "Smederevo",
+    "Kragujevac",
+    "Jagodina",
+    "Leskovac"
    ],
-   "zanimljivost": "Danas te tvrđave imaju turističku funkciju i čuvaju kulturnu baštinu.",
+   "zanimljivost": "Smederevsku tvrđavu podigao je despot Đurađ Branković oko 1430. godine; danas, kao i Niška i Petrovaradinska tvrđava, ima turističku funkciju.",
    "rec": "tvrdjave",
    "mediji": {
     "vrsta": "mapa",
@@ -3969,16 +3966,6 @@
       "lon": 20.93,
       "oznaka": "Smederevo",
       "tajna": true
-     },
-     {
-      "lat": 43.32,
-      "lon": 21.9,
-      "oznaka": "Niš"
-     },
-     {
-      "lat": 45.25,
-      "lon": 19.85,
-      "oznaka": "Novi Sad"
      }
     ]
    }
@@ -4015,7 +4002,8 @@
      {
       "lat": 51.43,
       "lon": 6.76,
-      "oznaka": "Rur"
+      "oznaka": "Rur",
+      "tajna": true
      }
     ]
    }
@@ -4079,8 +4067,8 @@
    "odgovori": [
     "Gradovi sa preko 10 miliona stanovnika",
     "Gradovi sa preko 100 000 stanovnika",
-    "Gradovi sa preko milion i po ljudi",
-    "Gradovi sa preko 5 000 i 20 000 ljudi"
+    "Gradovi sa preko milion stanovnika",
+    "Gradovi sa preko 20 000 stanovnika"
    ],
    "zanimljivost": "Primer megagrada je Tokio.",
    "rec": "megagrad",
@@ -4179,7 +4167,8 @@
      {
       "lat": 44.07,
       "lon": 22.09,
-      "oznaka": "Bor"
+      "oznaka": "Bor",
+      "tajna": true
      }
     ]
    }
@@ -4190,9 +4179,9 @@
    "pitanje": "Koji srpski grad je poznat po turističkoj funkciji (banja)?",
    "odgovori": [
     "Vrnjačka Banja",
-    "Bor i njegovi rudnici",
-    "Kragujevac i njegove fabrike",
-    "Niš i njegove saobraćajnice"
+    "Bor",
+    "Kragujevac",
+    "Pančevo"
    ],
    "zanimljivost": "Vrnjačka Banja ima prirodne vrednosti koje privlače turiste.",
    "rec": "vrnjacka",
@@ -4212,7 +4201,7 @@
   {
    "lekcija": 17,
    "tezina": 2,
-   "pitanje": "Koji srpski grad je administrativni centar?",
+   "pitanje": "Koji grad je glavni administrativni centar Srbije, sa sedištima državnih organa?",
    "odgovori": [
     "Beograd",
     "Subotica",
@@ -4237,14 +4226,14 @@
   {
    "lekcija": 17,
    "tezina": 2,
-   "pitanje": "Koji je najveći grad na svetu po broju stanovnika (2023)?",
+   "pitanje": "Koji je od navedenih gradova, sa svojom okolinom, najveći po broju stanovnika?",
    "odgovori": [
-    "Tokio (oko 37 miliona)",
-    "Nju Delhi i Šangaj",
-    "Šangaj i Sao Paulo",
-    "Sao Paulo i Nju Delhi"
+    "Tokio",
+    "London",
+    "Pariz",
+    "Moskva"
    ],
-   "zanimljivost": "Tokio je i primer čistog grada sa razvrstavanjem smeća.",
+   "zanimljivost": "Tokio sa okolinom ima više od 30 miliona stanovnika i decenijama je važio za najveći grad sveta; po novijim procenama UN prestigle su ga Džakarta i Daka.",
    "rec": "tokio"
   },
   {
@@ -4304,7 +4293,8 @@
      {
       "lat": 43.32,
       "lon": 21.9,
-      "oznaka": "Niš"
+      "oznaka": "Niš",
+      "tajna": true
      }
     ]
    }
@@ -4432,9 +4422,9 @@
    "pitanje": "Koje naselje je poznat primer pametnog naselja?",
    "odgovori": [
     "Rajninghaus u Gracu (Austrija)",
-    "Venecija i njene lagune",
-    "Moskva i njena okolina",
-    "Istanbul na dva kontinenta"
+    "Kalemegdan u Beogradu (Srbija)",
+    "Trastevere u Rimu (Italija)",
+    "Monmartr u Parizu (Francuska)"
    ],
    "zanimljivost": "Kombinuje solarnu energiju sa energijom iz obližnjeg postrojenja.",
    "rec": "rajninghaus",
@@ -4457,9 +4447,9 @@
    "pitanje": "Šta su mešovita naselja?",
    "odgovori": [
     "Prelazne forme između gradova i sela",
-    "Samo gradovi i varoši i prestonice",
-    "Samo sela i zaselci i katuni",
-    "Napuštena naselja i stare ruševine"
+    "Naselja sa samo jednom funkcijom",
+    "Privremena stočarska naselja",
+    "Napuštena sela i zaseoci"
    ],
    "zanimljivost": "Nastaju kad se seoska naselja blizu gradova menjaju pod njihovim uticajem.",
    "rec": "mesovita"

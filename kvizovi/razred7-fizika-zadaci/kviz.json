@@ -7545,7 +7545,7 @@
     "duzina": 20,
     "podeok": 2,
     "natpisi": 99,
-    "sat": true,
+    "sat": false,
     "trag": 1
    },
    "resenje": [
@@ -8649,7 +8649,7 @@
    "tezina": 1,
    "pitanje": "Uže lifta pukne i lift sa čovekom mase $50 kg$ slobodno pada. Kolikom silom čovek tada pritiska pod lifta (koliko bi pokazala vaga)?",
    "odgovori": [
-    "$0 N$ – bestežinsko stanje",
+    "$0 N$",
     "$500 N$",
     "$50 N$",
     "$1 000 N$"
@@ -10813,8 +10813,8 @@
       "staza": "~led"
      }
     ],
-    "duzina": 200,
-    "podeok": 25,
+    "duzina": 240,
+    "podeok": 20,
     "natpisi": 99,
     "tempo": 4,
     "sat": false
@@ -13245,10 +13245,10 @@
    "tezina": 1,
    "pitanje": "Telo težine $15 N$ potpuno potopimo u vodu i pustimo. Najveća sila potiska (kad je potpuno pod vodom) je $20 N$. Šta će se desiti?",
    "odgovori": [
-    "Isplivaće i plivaće delimično potopljeno",
-    "Potonuće",
-    "Lebdeće u vodi",
-    "Ostaće gde smo ga pustili, pa potonuti"
+    "Isplivaće na površinu",
+    "Potonuće na dno",
+    "Lebdeće pod vodom",
+    "Lebdeće, pa potonuti"
    ],
    "resenje": [
     {
@@ -16104,7 +16104,7 @@
    "tezina": 1,
    "pitanje": "Gde je potencijalna energija veća: kod tega od $2 kg$ na visini $5 m$ ili kod tega od $5 kg$ na visini $2 m$? ($g = 10 m/s^{2}$)",
    "odgovori": [
-    "Jednake su – po $100 J$",
+    "Jednake su",
     "Kod tega od $5 kg$",
     "Kod tega od $2 kg$",
     "Ne može se uporediti"
@@ -17246,9 +17246,9 @@
    "pitanje": "Šta se dešava sa energijom tela koje slobodno pada (bez otpora vazduha)?",
    "odgovori": [
     "$E_{p}$ opada, $E_{k}$ raste, zbir je stalan",
-    "$E_{p}$ i $E_{k}$ rastu",
-    "$E_{p}$ raste, $E_{k}$ opada",
-    "Obe opadaju"
+    "$E_{p}$ opada, $E_{k}$ raste, zbir opada",
+    "$E_{p}$ raste, $E_{k}$ opada, zbir je stalan",
+    "$E_{p}$ opada, a $E_{k}$ ostaje ista"
    ],
    "mediji": {
     "vrsta": "fizika",

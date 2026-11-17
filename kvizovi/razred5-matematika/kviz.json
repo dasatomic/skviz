@@ -244,10 +244,6 @@
    "lekcija": 1,
    "tezina": 1,
    "pitanje": "Koji broj je neutralan za sabiranje (ne menja broj kad mu se doda)?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "a + 0 = a"
-   },
    "odgovori": [
     "0",
     "1",
@@ -255,16 +251,16 @@
     "Ne postoji"
    ],
    "zanimljivost": "Nula je neutralna za sabiranje: $a+0=a$. Zato se nula i zove „neutral“. Za množenje je neutralan broj 1.",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$a+0=a$"
+   },
    "rec": "nula"
   },
   {
    "lekcija": 1,
    "tezina": 1,
    "pitanje": "Koji broj je neutralan za množenje (ne menja broj kad se njime pomnoži)?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "a·1 = a"
-   },
    "odgovori": [
     "1",
     "0",
@@ -272,16 +268,16 @@
     "10"
    ],
    "zanimljivost": "Jedinica je neutralna za množenje: $a · 1 = a$. Svaki broj pomnožen jedinicom ostaje isti.",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$a\\cdot1=a$"
+   },
    "rec": "jedinica"
   },
   {
    "lekcija": 1,
    "tezina": 1,
    "pitanje": "Koliko je $0$ podeljeno nekim brojem različitim od nule, na primer $0:7$?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "0:7 = 0"
-   },
    "odgovori": [
     "0",
     "7",
@@ -289,6 +285,10 @@
     "Ne može se podeliti"
    ],
    "zanimljivost": "Nula podeljena bilo čim (osim nulom) je uvek nula: nemaš ništa, pa na koliko god delova da podeliš, svaki deo je prazan.",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$0:7=0$"
+   },
    "rec": "nula"
   },
   {
@@ -312,10 +312,6 @@
    "lekcija": 1,
    "tezina": 2,
    "pitanje": "Šta se dešava kad bilo koji broj pomnožiš nulom?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "a·0 = 0"
-   },
    "odgovori": [
     "Rezultat je uvek 0",
     "Rezultat je 1",
@@ -323,6 +319,10 @@
     "Ne može se izračunati"
    ],
    "zanimljivost": "Množenje nulom „uništava“ sve: $a · 0 = 0$. Zato se nula zove i „upijajući element“ za množenje.",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$a\\cdot0=0$"
+   },
    "rec": "množenje"
   },
   {
@@ -346,10 +346,6 @@
    "lekcija": 1,
    "tezina": 2,
    "pitanje": "Šta je $a - a$ za bilo koji broj $a$?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "a − a = 0"
-   },
    "odgovori": [
     "Uvek 0",
     "Uvek $a$",
@@ -357,6 +353,10 @@
     "Zavisi od broja"
    ],
    "zanimljivost": "Kad od broja oduzmeš samog sebe, ostaje ništa: $a-a=0$. Isto kao kad pojedeš sve što imaš.",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$a-a=0$"
+   },
    "rec": "oduzimanje"
   },
   {
@@ -598,10 +598,6 @@
    "lekcija": 2,
    "tezina": 2,
    "pitanje": "Kako proveravaš deljenje sa ostatkom $23 = 4 · 5 + 3$?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "a = b· q + r"
-   },
    "odgovori": [
     "Delilac puta količnik plus ostatak daje deljenik",
     "Delilac puta ostatak daje količnik",
@@ -609,6 +605,10 @@
     "Ostatak puta količnik daje deljenik"
    ],
    "zanimljivost": "Provera je uvek: $deljenik = delilac · količnik + ostatak$. Ovde: $23 = 4·5 + 3$. Ako ovo važi, deljenje je tačno.",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$a=b\\cdot q+r$"
+   },
    "rec": "provera"
   },
   {
@@ -1683,10 +1683,6 @@
    "lekcija": 3,
    "tezina": 2,
    "pitanje": "Koji broj je delilac SVAKOG prirodnog broja?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "n:1 = n"
-   },
    "odgovori": [
     "1",
     "0",
@@ -1694,6 +1690,10 @@
     "10"
    ],
    "zanimljivost": "Broj 1 deli svaki broj bez ostatka, pa je delilac svih prirodnih brojeva. Zato se i ne računa u „prave“ delioce kada tražimo proste brojeve.",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$n:1=n$"
+   },
    "rec": "jedinica"
   },
   {
@@ -1706,9 +1706,9 @@
    },
    "odgovori": [
     "Jer je $0 = n · 0$ za svako $n$",
-    "Jer se 0 deli svim brojevima",
+    "Jer je $0 + n = n$ za svako $n$",
     "Jer je 0 najmanji broj",
-    "0 nije sadržalac nikog broja"
+    "Jer je 0 paran broj"
    ],
    "zanimljivost": "Za svaki prirodan broj $n$ važi $n · 0 = 0$, pa je $0$ sadržalac svakog broja. Zato je 0 i deljiva svim brojevima (osim deljenja nulom).",
    "rec": "nula"
@@ -2065,10 +2065,6 @@
    "lekcija": 4,
    "tezina": 1,
    "pitanje": "Po kojoj cifri prepoznaješ da je broj deljiv sa 2?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "parne cifre: 0,2,4,6,8"
-   },
    "odgovori": [
     "Po cifri jedinica – mora biti parna",
     "Po prvoj cifri",
@@ -2076,13 +2072,24 @@
     "Po poslednje dve cifre"
    ],
    "zanimljivost": "Broj je deljiv sa 2 ako mu je poslednja cifra parna: $0, 2, 4, 6$ ili $8$. Takve brojeve zovemo parni.",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "parne cifre: $0,2,4,6,8$"
+   },
    "rec": "deljivost"
   },
   {
    "lekcija": 4,
    "tezina": 1,
    "pitanje": "Koji od ovih brojeva je deljiv sa 5?",
-   "mediji": {
+   "odgovori": [
+    "1.235",
+    "1.234",
+    "1.238",
+    "1.232"
+   ],
+   "zanimljivost": "Broj je deljiv sa 5 ako se završava cifrom 0 ili 5. Broj $1.235$ se završava sa 5, pa je deljiv sa 5.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -2114,13 +2121,6 @@
     ],
     "velicina": 240
    },
-   "odgovori": [
-    "1.235",
-    "1.234",
-    "1.238",
-    "1.232"
-   ],
-   "zanimljivost": "Broj je deljiv sa 5 ako se završava cifrom 0 ili 5. Broj $1.235$ se završava sa 5, pa je deljiv sa 5.",
    "rec": "deljivost"
   },
   {
@@ -2144,7 +2144,14 @@
    "lekcija": 4,
    "tezina": 2,
    "pitanje": "Koliko nula na kraju mora imati broj da bi bio deljiv sa 100?",
-   "mediji": {
+   "odgovori": [
+    "Bar dve nule",
+    "Bar jednu nulu",
+    "Bar tri nule",
+    "Četiri nule"
+   ],
+   "zanimljivost": "Dekadne jedinice: deljivost sa 10 traži jednu nulu, sa 100 dve nule, sa 1000 tri nule, i tako dalje.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -2176,20 +2183,20 @@
     ],
     "velicina": 240
    },
-   "odgovori": [
-    "Bar dve nule",
-    "Bar jednu nulu",
-    "Bar tri nule",
-    "Četiri nule"
-   ],
-   "zanimljivost": "Dekadne jedinice: deljivost sa 10 traži jednu nulu, sa 100 dve nule, sa 1000 tri nule, i tako dalje.",
    "rec": "stotina"
   },
   {
    "lekcija": 4,
    "tezina": 2,
    "pitanje": "Koji od ovih brojeva je deljiv i sa 2 i sa 5?",
-   "mediji": {
+   "odgovori": [
+    "370",
+    "365",
+    "372",
+    "375"
+   ],
+   "zanimljivost": "Da bi broj bio deljiv i sa 2 i sa 5, mora da se završava sa 0 (jer 2 traži parnu cifru, a 5 traži 0 ili 5 – jedino 0 zadovoljava oba).",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -2221,20 +2228,20 @@
     ],
     "velicina": 240
    },
-   "odgovori": [
-    "370",
-    "365",
-    "372",
-    "375"
-   ],
-   "zanimljivost": "Da bi broj bio deljiv i sa 2 i sa 5, mora da se završava sa 0 (jer 2 traži parnu cifru, a 5 traži 0 ili 5 – jedino 0 zadovoljava oba).",
    "rec": "deset"
   },
   {
    "lekcija": 4,
    "tezina": 3,
    "pitanje": "Koji od ovih brojeva je deljiv sa 2, sa 5 i sa 10 istovremeno?",
-   "mediji": {
+   "odgovori": [
+    "1.000",
+    "1.005",
+    "1.002",
+    "1.025"
+   ],
+   "zanimljivost": "Deljivost sa 10 povlači deljivost sa 2 i sa 5. Od ponuđenih, samo se $1.000$ završava nulom; $1.002$ je deljiv samo sa 2, a $1.005$ i $1.025$ samo sa 5.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -2266,13 +2273,6 @@
     ],
     "velicina": 240
    },
-   "odgovori": [
-    "1.000",
-    "1.005",
-    "1.002",
-    "1.010"
-   ],
-   "zanimljivost": "Deljivost sa 10 povlači deljivost sa 2 i sa 5. Od ponuđenih, $1.000$ i $1.010$ se završavaju nulom, ali prvi odgovor je tačan izbor za sva tri uslova.",
    "rec": "deset"
   },
   {
@@ -2324,7 +2324,14 @@
    "lekcija": 5,
    "tezina": 1,
    "pitanje": "Koji od ovih brojeva je deljiv sa 4?",
-   "mediji": {
+   "odgovori": [
+    "1.024",
+    "1.014",
+    "1.022",
+    "1.026"
+   ],
+   "zanimljivost": "Gledamo poslednje dve cifre: $24$ je deljivo sa 4 ($24=4·6$), pa je i ceo broj $1.024$ deljiv sa 4.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -2356,20 +2363,20 @@
     ],
     "velicina": 240
    },
-   "odgovori": [
-    "1.024",
-    "1.014",
-    "1.022",
-    "1.026"
-   ],
-   "zanimljivost": "Gledamo poslednje dve cifre: $24$ je deljivo sa 4 ($24=4·6$), pa je i ceo broj $1.024$ deljiv sa 4.",
    "rec": "deljivost"
   },
   {
    "lekcija": 5,
    "tezina": 1,
    "pitanje": "Broj deljiv sa 25 mora da se završava na…",
-   "mediji": {
+   "odgovori": [
+    "00, 25, 50 ili 75",
+    "samo na 25",
+    "samo na 00",
+    "5 ili 0"
+   ],
+   "zanimljivost": "Četiri moguća završetka: $00, 25, 50$ i $75$. Na primer, $3.175$ se završava sa $75$, pa je deljiv sa 25.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -2420,20 +2427,20 @@
     ],
     "velicina": 280
    },
-   "odgovori": [
-    "00, 25, 50 ili 75",
-    "samo na 25",
-    "samo na 00",
-    "5 ili 0"
-   ],
-   "zanimljivost": "Četiri moguća završetka: $00, 25, 50$ i $75$. Na primer, $3.175$ se završava sa $75$, pa je deljiv sa 25.",
    "rec": "deljivost"
   },
   {
    "lekcija": 5,
    "tezina": 2,
    "pitanje": "Koji od ovih brojeva je deljiv sa 25?",
-   "mediji": {
+   "odgovori": [
+    "4.075",
+    "4.070",
+    "4.085",
+    "4.055"
+   ],
+   "zanimljivost": "Broj $4.075$ se završava sa $75$, a to je jedan od dozvoljenih završetaka za deljivost sa 25 ($00,25,50,75$).",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -2465,13 +2472,6 @@
     ],
     "velicina": 240
    },
-   "odgovori": [
-    "4.075",
-    "4.070",
-    "4.085",
-    "4.055"
-   ],
-   "zanimljivost": "Broj $4.075$ se završava sa $75$, a to je jedan od dozvoljenih završetaka za deljivost sa 25 ($00,25,50,75$).",
    "rec": "deljivost"
   },
   {
@@ -2523,7 +2523,14 @@
    "lekcija": 5,
    "tezina": 3,
    "pitanje": "Koji od ovih brojeva je deljiv i sa 4 i sa 25?",
-   "mediji": {
+   "odgovori": [
+    "2.300",
+    "2.325",
+    "2.304",
+    "2.350"
+   ],
+   "zanimljivost": "Deljiv sa 4: gledamo poslednje dve cifre. Deljiv sa 25: završetak $00,25,50,75$. Završetak $00$ (broj $2.300$) zadovoljava oba uslova.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -2555,20 +2562,20 @@
     ],
     "velicina": 240
    },
-   "odgovori": [
-    "2.300",
-    "2.325",
-    "2.304",
-    "2.350"
-   ],
-   "zanimljivost": "Deljiv sa 4: gledamo poslednje dve cifre. Deljiv sa 25: završetak $00,25,50,75$. Završetak $00$ (broj $2.300$) zadovoljava oba uslova.",
    "rec": "deljivost"
   },
   {
    "lekcija": 6,
    "tezina": 1,
    "pitanje": "Kako bez deljenja proveravaš da li je broj deljiv sa 3?",
-   "mediji": {
+   "odgovori": [
+    "Po zbiru svih cifara",
+    "Po poslednjoj cifri",
+    "Po poslednje dve cifre",
+    "Po prvoj cifri"
+   ],
+   "zanimljivost": "Sabereš sve cifre broja. Ako je taj zbir deljiv sa 3, ceo broj je deljiv sa 3. Na primer, $123$: zbir $1+2+3=6$, a $6$ je deljivo sa 3.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -2634,20 +2641,20 @@
     ],
     "velicina": 280
    },
-   "odgovori": [
-    "Sabereš cifre i vidiš da li je zbir deljiv sa 3",
-    "Gledaš poslednju cifru",
-    "Gledaš poslednje dve cifre",
-    "Gledaš da li je paran"
-   ],
-   "zanimljivost": "Sabereš sve cifre broja. Ako je taj zbir deljiv sa 3, ceo broj je deljiv sa 3. Na primer, $123$: zbir $1+2+3=6$, a $6$ je deljivo sa 3.",
    "rec": "deljivost"
   },
   {
    "lekcija": 6,
    "tezina": 1,
    "pitanje": "Koji od ovih brojeva je deljiv sa 3?",
-   "mediji": {
+   "odgovori": [
+    "405",
+    "406",
+    "407",
+    "409"
+   ],
+   "zanimljivost": "Za $405$: zbir cifara je $4+0+5=9$, a $9$ je deljivo sa 3, pa je i $405$ deljivo sa 3.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -2713,20 +2720,20 @@
     ],
     "velicina": 280
    },
-   "odgovori": [
-    "405",
-    "406",
-    "407",
-    "409"
-   ],
-   "zanimljivost": "Za $405$: zbir cifara je $4+0+5=9$, a $9$ je deljivo sa 3, pa je i $405$ deljivo sa 3.",
    "rec": "deljivost"
   },
   {
    "lekcija": 6,
    "tezina": 2,
    "pitanje": "Koji od ovih brojeva je deljiv sa 9?",
-   "mediji": {
+   "odgovori": [
+    "3.186",
+    "3.183",
+    "3.187",
+    "3.185"
+   ],
+   "zanimljivost": "Za $3.186$: zbir cifara je $3+1+8+6=18$, a $18$ je deljivo sa 9, pa je i ceo broj deljiv sa 9.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -2809,13 +2816,6 @@
     ],
     "velicina": 280
    },
-   "odgovori": [
-    "3.186",
-    "3.183",
-    "3.187",
-    "3.185"
-   ],
-   "zanimljivost": "Za $3.186$: zbir cifara je $3+1+8+6=18$, a $18$ je deljivo sa 9, pa je i ceo broj deljiv sa 9.",
    "rec": "deljivost"
   },
   {
@@ -2918,10 +2918,6 @@
    "lekcija": 6,
    "tezina": 2,
    "pitanje": "Ako je broj deljiv sa 9, on je uvek deljiv i sa…",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "9 = 3·3"
-   },
    "odgovori": [
     "3",
     "6",
@@ -2929,6 +2925,10 @@
     "5"
    ],
    "zanimljivost": "Svaki broj deljiv sa 9 deljiv je i sa 3, jer je $9=3·3$. Obrnuto ne važi: $12$ je deljivo sa 3, ali ne i sa 9.",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$9=3\\cdot3$"
+   },
    "rec": "deljivost"
   },
   {
@@ -3032,10 +3032,6 @@
    "lekcija": 7,
    "tezina": 1,
    "pitanje": "Koja oznaka znači da element pripada skupu?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "2 ∈ A"
-   },
    "odgovori": [
     "$∈$",
     "$=$",
@@ -3043,6 +3039,10 @@
     "$∉$"
    ],
    "zanimljivost": "Oznaka $∈$ čitamo „pripada“: $2 ∈ A$ znači da je 2 element skupa $A$. Precrtana oznaka $∉$ znači „ne pripada“.",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$2 \\in A$"
+   },
    "rec": "pripada"
   },
   {
@@ -3066,10 +3066,6 @@
    "lekcija": 7,
    "tezina": 2,
    "pitanje": "Kojim slovom označavamo skup prirodnih brojeva?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "ℕ = {1,2,3,4,…}"
-   },
    "odgovori": [
     "$ℕ$",
     "$ℤ$",
@@ -3077,16 +3073,16 @@
     "$ℝ$"
    ],
    "zanimljivost": "Prirodni brojevi su brojevi za brojanje: $1,2,3,4,…$ Označavamo ih sa $ℕ$ (od engleskog „natural“).",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$\\mathbb{N}=\\{1,2,3,4,\\dots\\}$"
+   },
    "rec": "prirodan"
   },
   {
    "lekcija": 7,
    "tezina": 2,
    "pitanje": "Kojim slovom označavamo skup prirodnih brojeva zajedno sa nulom?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "ℕ₀ = {0,1,2,3,…}"
-   },
    "odgovori": [
     "$ℕ₀$",
     "$ℕ$",
@@ -3094,16 +3090,16 @@
     "$∅$"
    ],
    "zanimljivost": "Skup $ℕ₀$ dobijamo kad prirodnim brojevima dodamo nulu: $0,1,2,3,…$ Donja nula u oznaci upravo to i govori.",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$\\mathbb{N}_0=\\{0,1,2,3,\\dots\\}$"
+   },
    "rec": "prirodan"
   },
   {
    "lekcija": 7,
    "tezina": 2,
    "pitanje": "Da li su $∅$ i $\\{0\\}$ isto?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "∅≠{0}"
-   },
    "odgovori": [
     "Ne – prazan skup i skup sa jednim elementom 0",
     "Da – oba su prazna",
@@ -3111,6 +3107,10 @@
     "Ne – oba su puna"
    ],
    "zanimljivost": "$∅$ nema nijedan element, a $\\{0\\}$ ima jedan element – broj 0. To je razlika kao između prazne kutije i kutije u kojoj je jedna nula.",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$\\varnothing\\neq\\{0\\}$"
+   },
    "rec": "prazan"
   },
   {
@@ -3157,8 +3157,7 @@
        1,
        0
       ],
-      "vel": 22,
-      "b": 1
+      "vel": 22
      }
     ],
     "bezImena": [
@@ -3180,7 +3179,14 @@
    "lekcija": 7,
    "tezina": 3,
    "pitanje": "Koliko elemenata ima skup $B = \\{2, 4, 6, 2, 8\\}$?",
-   "mediji": {
+   "odgovori": [
+    "4",
+    "5",
+    "6",
+    "3"
+   ],
+   "zanimljivost": "Element 2 se pojavljuje dva puta, ali se u skupu računa samo jednom. Zato skup $B$ ima 4 različita elementa: $2, 4, 6$ i $8$.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -3221,13 +3227,6 @@
     ],
     "velicina": 300
    },
-   "odgovori": [
-    "4",
-    "5",
-    "6",
-    "3"
-   ],
-   "zanimljivost": "Element 2 se pojavljuje dva puta, ali se u skupu računa samo jednom. Zato skup $B$ ima 4 različita elementa: $2, 4, 6$ i $8$.",
    "rec": "skup"
   },
   {
@@ -4054,7 +4053,14 @@
    "lekcija": 8,
    "tezina": 2,
    "pitanje": "Ako je $A=\\{1,2,3\\}$ i $B=\\{3,4\\}$, koliki je presek $A ∩ B$?",
-   "mediji": {
+   "odgovori": [
+    "$\\{3\\}$",
+    "$\\{1,2,3,4\\}$",
+    "$\\{1,2\\}$",
+    "$\\{4\\}$"
+   ],
+   "zanimljivost": "Jedini element koji je u oba skupa je 3, pa je $A∩ B=\\{3\\}$. Presek traži ono što je zajedničko.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -4860,20 +4866,20 @@
     ],
     "velicina": 260
    },
-   "odgovori": [
-    "$\\{3\\}$",
-    "$\\{1,2,3,4\\}$",
-    "$\\{1,2\\}$",
-    "$\\{4\\}$"
-   ],
-   "zanimljivost": "Jedini element koji je u oba skupa je 3, pa je $A∩ B=\\{3\\}$. Presek traži ono što je zajedničko.",
    "rec": "presek"
   },
   {
    "lekcija": 8,
    "tezina": 2,
    "pitanje": "Ako je $A=\\{1,2,3\\}$ i $B=\\{3,4\\}$, kolika je unija $A ∪ B$?",
-   "mediji": {
+   "odgovori": [
+    "$\\{1,2,3,4\\}$",
+    "$\\{3\\}$",
+    "$\\{1,2\\}$",
+    "$\\{4\\}$"
+   ],
+   "zanimljivost": "Unija uzima sve elemente iz oba skupa, bez ponavljanja: $\\{1,2,3,4\\}$. Element 3 pišemo samo jednom.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -6286,13 +6292,6 @@
     ],
     "velicina": 260
    },
-   "odgovori": [
-    "$\\{1,2,3,4\\}$",
-    "$\\{3\\}$",
-    "$\\{1,2\\}$",
-    "$\\{4\\}$"
-   ],
-   "zanimljivost": "Unija uzima sve elemente iz oba skupa, bez ponavljanja: $\\{1,2,3,4\\}$. Element 3 pišemo samo jednom.",
    "rec": "unija"
   },
   {
@@ -7522,10 +7521,10 @@
     "velicina": 260
    },
    "odgovori": [
-    "A, B i C su na istoj pravoj (kolinearne)",
-    "A, B i C čine trougao",
-    "C je van duži AB",
-    "Prava AB ne postoji"
+    "Sve tri leže na istoj pravoj",
+    "Sve tri su temena trougla",
+    "Tačka C je van duži AB",
+    "Tačke A i C se poklapaju"
    ],
    "zanimljivost": "Kad tačka leži „između“, sve tri tačke su na istoj pravoj – takve tačke zovemo kolinearne. Kažemo i da je C unutrašnja tačka duži AB.",
    "rec": "kolinearan"
@@ -7719,7 +7718,7 @@
    "odgovori": [
     "Paralelne prave",
     "Normalne prave",
-    "Ukštene prave",
+    "Ukrštene prave",
     "Krive prave"
    ],
    "zanimljivost": "Paralelne prave se nikada ne seku, koliko god ih produžavali. Primer su šine na pruzi. Označavamo ih $a ∥ b$.",
@@ -7913,7 +7912,14 @@
    "lekcija": 10,
    "tezina": 2,
    "pitanje": "Prava $m$ je normalna na pravu $n$. Koliki ugao one zaklapaju?",
-   "mediji": {
+   "odgovori": [
+    "90°",
+    "180°",
+    "45°",
+    "0°"
+   ],
+   "zanimljivost": "Normalne prave uvek zaklapaju prav ugao od $90°$. To je četvrtina punog kruga.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "A": [
@@ -7961,23 +7967,12 @@
     ],
     "velicina": 260
    },
-   "odgovori": [
-    "90°",
-    "180°",
-    "45°",
-    "0°"
-   ],
-   "zanimljivost": "Normalne prave uvek zaklapaju prav ugao od $90°$. To je četvrtina punog kruga.",
    "rec": "normalne"
   },
   {
    "lekcija": 10,
    "tezina": 3,
    "pitanje": "Koji od ovih znakova se koristi za paralelnost dveju pravih?",
-   "mediji": {
-    "vrsta": "formula",
-    "tekst": "a ∥ b"
-   },
    "odgovori": [
     "$∥$",
     "$⊥$",
@@ -7985,35 +7980,16 @@
     "$∠$"
    ],
    "zanimljivost": "Znak $∥$ čitamo „paralelno sa“: $a∥ b$. Znak $⊥$ znači „normalno na“.",
+   "medijiOdgovora": {
+    "vrsta": "formula",
+    "tekst": "$a \\parallel b$"
+   },
    "rec": "paralelne"
   },
   {
    "lekcija": 11,
    "tezina": 1,
    "pitanje": "Koja je osnovna jedinica za merenje dužine?",
-   "mediji": {
-    "vrsta": "geo",
-    "t": {
-     "O": [
-      0,
-      0
-     ]
-    },
-    "e": [
-     {
-      "osa": [
-       0,
-       10
-      ],
-      "podela": 1,
-      "svaki": 1
-     }
-    ],
-    "bezImena": [
-     "O"
-    ],
-    "velicina": 320
-   },
    "odgovori": [
     "Metar",
     "Kilogram",
@@ -8027,7 +8003,14 @@
    "lekcija": 11,
    "tezina": 1,
    "pitanje": "Koliko milimetara ima jedan centimetar?",
-   "mediji": {
+   "odgovori": [
+    "10",
+    "100",
+    "1000",
+    "2"
+   ],
+   "zanimljivost": "Jedan centimetar (cm) ima 10 milimetara (mm). Zato lenjir od 10 cm ima 100 mm.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -8058,20 +8041,20 @@
     ],
     "velicina": 300
    },
-   "odgovori": [
-    "10",
-    "100",
-    "1000",
-    "2"
-   ],
-   "zanimljivost": "Jedan centimetar (cm) ima 10 milimetara (mm). Zato lenjir od 10 cm ima 100 mm.",
    "rec": "milimetar"
   },
   {
    "lekcija": 11,
    "tezina": 1,
    "pitanje": "Koliko centimetara ima jedan metar?",
-   "mediji": {
+   "odgovori": [
+    "100",
+    "10",
+    "1000",
+    "60"
+   ],
+   "zanimljivost": "Jedan metar ima 100 centimetara. Prefiks „centi“ znači stoti deo, pa je centimetar stoti deo metra.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -8102,50 +8085,12 @@
     ],
     "velicina": 320
    },
-   "odgovori": [
-    "100",
-    "10",
-    "1000",
-    "60"
-   ],
-   "zanimljivost": "Jedan metar ima 100 centimetara. Prefiks „centi“ znači stoti deo, pa je centimetar stoti deo metra.",
    "rec": "metar"
   },
   {
    "lekcija": 11,
    "tezina": 1,
    "pitanje": "Koliko metara ima jedan kilometar?",
-   "mediji": {
-    "vrsta": "geo",
-    "t": {
-     "O": [
-      0,
-      0
-     ]
-    },
-    "e": [
-     {
-      "osa": [
-       0,
-       1000
-      ],
-      "podela": 1000,
-      "svaki": 1
-     },
-     {
-      "tx": "1 km",
-      "at": [
-       0,
-       0.7
-      ],
-      "vel": 15
-     }
-    ],
-    "bezImena": [
-     "O"
-    ],
-    "velicina": 300
-   },
    "odgovori": [
     "1000",
     "100",
@@ -8185,7 +8130,14 @@
    "lekcija": 11,
    "tezina": 2,
    "pitanje": "Kada su dve duži jednake?",
-   "mediji": {
+   "odgovori": [
+    "Kada imaju istu dužinu",
+    "Kada su paralelne",
+    "Kada imaju isti pravac",
+    "Kada se seku"
+   ],
+   "zanimljivost": "Duži su jednake ako imaju istu dužinu, bez obzira gde se nalaze i kako su okrenute. Jednakost označavamo sa $AB = CD$.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "A": [
@@ -8221,13 +8173,6 @@
     ],
     "velicina": 260
    },
-   "odgovori": [
-    "Kada imaju istu dužinu",
-    "Kada su paralelne",
-    "Kada imaju isti pravac",
-    "Kada se seku"
-   ],
-   "zanimljivost": "Duži su jednake ako imaju istu dužinu, bez obzira gde se nalaze i kako su okrenute. Jednakost označavamo sa $AB = CD$.",
    "rec": "jednakost"
   },
   {
@@ -8283,69 +8228,6 @@
    "lekcija": 11,
    "tezina": 3,
    "pitanje": "Koji niz jedinica je poređan od najmanje ka najvećoj?",
-   "mediji": {
-    "vrsta": "geo",
-    "t": {
-     "O": [
-      0,
-      0
-     ]
-    },
-    "e": [
-     {
-      "osa": [
-       0,
-       1000
-      ],
-      "podela": 1000,
-      "svaki": 1
-     },
-     {
-      "tx": "mm",
-      "at": [
-       0,
-       0.7
-      ],
-      "vel": 13
-     },
-     {
-      "tx": "cm",
-      "at": [
-       250,
-       0.7
-      ],
-      "vel": 13
-     },
-     {
-      "tx": "dm",
-      "at": [
-       500,
-       0.7
-      ],
-      "vel": 13
-     },
-     {
-      "tx": "m",
-      "at": [
-       750,
-       0.7
-      ],
-      "vel": 13
-     },
-     {
-      "tx": "km",
-      "at": [
-       1000,
-       0.7
-      ],
-      "vel": 13
-     }
-    ],
-    "bezImena": [
-     "O"
-    ],
-    "velicina": 320
-   },
    "odgovori": [
     "mm, cm, dm, m, km",
     "km, m, dm, cm, mm",
@@ -8552,7 +8434,14 @@
    "lekcija": 12,
    "tezina": 2,
    "pitanje": "Šta znači „nadovezati duži“?",
-   "mediji": {
+   "odgovori": [
+    "Postaviti jednu duž na kraj druge",
+    "Postaviti ih tako da se ukrste",
+    "Postaviti ih jednu ispod druge",
+    "Prepoloviti obe duži"
+   ],
+   "zanimljivost": "Nadovezivanje: kraj jedne duži postane početak druge, tako da zajedno čine jednu dužu duž. Tako se dužine sabiraju.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "A": [
@@ -8591,20 +8480,20 @@
     ],
     "velicina": 260
    },
-   "odgovori": [
-    "Postaviti jednu duž na kraj druge, na istoj pravoj",
-    "Postaviti ih ukršteno",
-    "Postaviti ih paralelno",
-    "Skratiti obe duži"
-   ],
-   "zanimljivost": "Nadovezivanje: kraj jedne duži postane početak druge, tako da zajedno čine jednu dužu duž. Tako se dužine sabiraju.",
    "rec": "duž"
   },
   {
    "lekcija": 12,
    "tezina": 2,
    "pitanje": "Duž AB preneta je šestarom na polupravu od tačke C, pa je dobijena duž CD. Šta sigurno važi?",
-   "mediji": {
+   "odgovori": [
+    "$AB = CD$",
+    "$AB < CD$",
+    "$AB > CD$",
+    "Duži su paralelne"
+   ],
+   "zanimljivost": "Prenošenje šestarom čuva dužinu, pa su duži jednake: $AB = CD$. To je osnovni način da kopiramo duž.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "A": [
@@ -8646,13 +8535,6 @@
     ],
     "velicina": 260
    },
-   "odgovori": [
-    "$AB = CD$",
-    "$AB < CD$",
-    "$AB > CD$",
-    "Duži su paralelne"
-   ],
-   "zanimljivost": "Prenošenje šestarom čuva dužinu, pa su duži jednake: $AB = CD$. To je osnovni način da kopiramo duž.",
    "rec": "šestar"
   },
   {
@@ -9062,7 +8944,14 @@
    "lekcija": 13,
    "tezina": 3,
    "pitanje": "Koji od ovih oblika NIJE mnogougao?",
-   "mediji": {
+   "odgovori": [
+    "Krug",
+    "Trougao",
+    "Šestougao",
+    "Kvadrat"
+   ],
+   "zanimljivost": "Krug nije mnogougao jer nije ograničen dužima, nego zakrivljenom linijom. Mnogougao uvek ima stranice koje su duži.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -9110,13 +8999,6 @@
     ],
     "velicina": 300
    },
-   "odgovori": [
-    "Krug",
-    "Trougao",
-    "Šestougao",
-    "Kvadrat"
-   ],
-   "zanimljivost": "Krug nije mnogougao jer nije ograničen dužima, nego zakrivljenom linijom. Mnogougao uvek ima stranice koje su duži.",
    "rec": "krug"
   },
   {
@@ -9162,9 +9044,9 @@
     "velicina": 260
    },
    "odgovori": [
-    "Skup svih tačaka jednako udaljenih od centra",
-    "Unutrašnjost kruga",
-    "Duž kroz centar",
+    "Skup tačaka jednako udaljenih od centra",
+    "Skup tačaka unutar kruga",
+    "Duž koja prolazi kroz centar",
     "Zatvorena izlomljena linija"
    ],
    "zanimljivost": "Kružnica je samo linija – sve tačke koje su na istoj udaljenosti od centra $O$. Ta udaljenost je poluprečnik.",
@@ -9218,7 +9100,7 @@
     "Tetiva",
     "Tangenta"
    ],
-   "zanimljivost": "Poluprečnik (radijus) je duž od centra do kružnice. Označavamo ga sa $r$. Sve poluprečnike jedne kružnice su jednake.",
+   "zanimljivost": "Poluprečnik (radijus) je duž od centra do kružnice. Označavamo ga sa $r$. Svi poluprečnici jedne kružnice su jednaki.",
    "rec": "poluprečnik"
   },
   {
@@ -9309,8 +9191,7 @@
      {
       "d": "BC",
       "b": 2,
-      "debljina": 3,
-      "o": "t"
+      "debljina": 3
      },
      {
       "tacka": "A",
@@ -9363,8 +9244,7 @@
      {
       "d": "AB",
       "b": 2,
-      "debljina": 3,
-      "o": "s"
+      "debljina": 3
      }
     ],
     "bezImena": [
@@ -9385,7 +9265,14 @@
    "lekcija": 14,
    "tezina": 2,
    "pitanje": "Šta je krug (za razliku od kružnice)?",
-   "mediji": {
+   "odgovori": [
+    "Kružnica sa svim tačkama unutar nje",
+    "Samo linija oko centra",
+    "Centar sa poluprečnikom",
+    "Najduža tetiva kružnice"
+   ],
+   "zanimljivost": "Kružnica je samo linija, a krug je linija PLUS sve unutrašnje tačke. Kružnica je „obod“, krug je „puna ploča“.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -9419,20 +9306,20 @@
     ],
     "velicina": 240
    },
-   "odgovori": [
-    "Kružnica zajedno sa unutrašnjošću",
-    "Samo linija kružnice",
-    "Samo centar",
-    "Duž kroz centar"
-   ],
-   "zanimljivost": "Kružnica je samo linija, a krug je linija PLUS sve unutrašnje tačke. Kružnica je „obod“, krug je „puna ploča“.",
    "rec": "krug"
   },
   {
    "lekcija": 14,
    "tezina": 2,
    "pitanje": "Koliko puta je prečnik duži od poluprečnika?",
-   "mediji": {
+   "odgovori": [
+    "2 puta",
+    "3 puta",
+    "4 puta",
+    "Isti su"
+   ],
+   "zanimljivost": "Prečnik je $2$ puta duži od poluprečnika: $d=2r$. Ako je poluprečnik 5 cm, prečnik je 10 cm.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -9475,13 +9362,6 @@
     ],
     "velicina": 260
    },
-   "odgovori": [
-    "2 puta",
-    "3 puta",
-    "4 puta",
-    "Isti su"
-   ],
-   "zanimljivost": "Prečnik je $2$ puta duži od poluprečnika: $d=2r$. Ako je poluprečnik 5 cm, prečnik je 10 cm.",
    "rec": "prečnik"
   },
   {
@@ -9513,8 +9393,7 @@
      {
       "d": "AB",
       "b": 2,
-      "debljina": 3,
-      "o": "tetiva"
+      "debljina": 3
      }
     ],
     "bezImena": [
@@ -9575,7 +9454,14 @@
    "lekcija": 15,
    "tezina": 2,
    "pitanje": "U centralnoj simetriji sa centrom O, tačka A preslikava se u tačku A′. Šta je tačka O za duž AA′?",
-   "mediji": {
+   "odgovori": [
+    "Središte duži AA′",
+    "Kraj duži AA′",
+    "Van duži AA′",
+    "Teme trougla"
+   ],
+   "zanimljivost": "Tačka O je tačno na sredini duži $AA'$: važi $AO = OA'$, a tačke A, O i A′ su na istoj pravoj.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "A": [
@@ -9611,13 +9497,6 @@
     ],
     "velicina": 280
    },
-   "odgovori": [
-    "Središte duži AA′",
-    "Kraj duži AA′",
-    "Van duži AA′",
-    "Teme trougla"
-   ],
-   "zanimljivost": "Tačka O je tačno na sredini duži $AA'$: važi $AO = OA'$, a tačke A, O i A′ su na istoj pravoj.",
    "rec": "središte"
   },
   {
@@ -9698,7 +9577,14 @@
    "lekcija": 15,
    "tezina": 2,
    "pitanje": "Koja od ovih figura ima centar simetrije?",
-   "mediji": {
+   "odgovori": [
+    "Krug",
+    "Trougao",
+    "Poluprava",
+    "Ugao"
+   ],
+   "zanimljivost": "Krug ima centar simetrije u svom središtu – okretanjem za 180° izgleda isto. Kvadrat i paralelogram takođe imaju centar simetrije.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "O": [
@@ -9734,20 +9620,20 @@
     ],
     "velicina": 240
    },
-   "odgovori": [
-    "Krug",
-    "Trougao",
-    "Poluprava",
-    "Ugao"
-   ],
-   "zanimljivost": "Krug ima centar simetrije u svom središtu – okretanjem za 180° izgleda isto. Kvadrat i paralelogram takođe imaju centar simetrije.",
    "rec": "centar"
   },
   {
    "lekcija": 15,
    "tezina": 3,
    "pitanje": "Koliko centara simetrije ima duž?",
-   "mediji": {
+   "odgovori": [
+    "Jedan (njeno središte)",
+    "Dva (krajevi)",
+    "Nijedan",
+    "Beskonačno mnogo"
+   ],
+   "zanimljivost": "Duž ima centar simetrije u svom središtu: okretanjem za 180° oko središta, krajevi zamene mesta, a duž ostane ista.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "A": [
@@ -9787,13 +9673,6 @@
     ],
     "velicina": 260
    },
-   "odgovori": [
-    "Jedan (njeno središte)",
-    "Dva (krajevi)",
-    "Nijedan",
-    "Beskonačno mnogo"
-   ],
-   "zanimljivost": "Duž ima centar simetrije u svom središtu: okretanjem za 180° oko središta, krajevi zamene mesta, a duž ostane ista.",
    "rec": "centar"
   },
   {
@@ -9835,7 +9714,14 @@
    "lekcija": 16,
    "tezina": 1,
    "pitanje": "Šta sve određuje jedan vektor?",
-   "mediji": {
+   "odgovori": [
+    "Pravac, smer i dužina",
+    "Samo dužina",
+    "Samo pravac",
+    "Boja i debljina"
+   ],
+   "zanimljivost": "Vektor ima tri osobine: pravac (na kojoj je liniji), smer (na koju stranu pokazuje strelica) i intenzitet (dužinu).",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "A": [
@@ -9867,13 +9753,6 @@
     ],
     "velicina": 240
    },
-   "odgovori": [
-    "Pravac, smer i dužina",
-    "Samo dužina",
-    "Samo pravac",
-    "Boja i debljina"
-   ],
-   "zanimljivost": "Vektor ima tri osobine: pravac (na kojoj je liniji), smer (na koju stranu pokazuje strelica) i intenzitet (dužinu).",
    "rec": "vektor"
   },
   {
@@ -9929,7 +9808,14 @@
    "lekcija": 16,
    "tezina": 2,
    "pitanje": "Kada su dva vektora jednaka?",
-   "mediji": {
+   "odgovori": [
+    "Isti pravac, smer i dužina",
+    "Ista dužina i početak",
+    "Isti pravac i dužina",
+    "Isti smer i početak"
+   ],
+   "zanimljivost": "Dva vektora su jednaka ako su im pravac, smer i dužina isti. Mesto početka nije bitno – vektor se može pomeriti, a da ostane isti.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "A": [
@@ -9965,13 +9851,6 @@
     ],
     "velicina": 260
    },
-   "odgovori": [
-    "Kada imaju isti pravac, smer i dužinu",
-    "Kada imaju isti početak",
-    "Kada su na istoj pravoj",
-    "Kada se seku"
-   ],
-   "zanimljivost": "Dva vektora su jednaka ako su im pravac, smer i dužina isti. Mesto početka nije bitno – vektor se može pomeriti, a da ostane isti.",
    "rec": "vektor"
   },
   {
@@ -10036,7 +9915,7 @@
   {
    "lekcija": 16,
    "tezina": 3,
-   "pitanje": "Kojom strelicom se označava vektor?",
+   "pitanje": "Gde se piše strelica u oznaci vektora?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -10076,10 +9955,10 @@
     "velicina": 260
    },
    "odgovori": [
-    "Iznad slova, na primer $\\vec{AB}$",
+    "Iznad slova",
     "Ispod slova",
-    "Pored broja",
-    "Nema oznaku"
+    "Ispred slova",
+    "Između slova"
    ],
    "zanimljivost": "Vektor označavamo strelicom iznad slova: $\\vec{AB}$ ili $\\vec{v}$. Strelica pokazuje da je smer važan.",
    "rec": "vektor"

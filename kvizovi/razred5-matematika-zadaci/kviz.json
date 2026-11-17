@@ -1304,7 +1304,7 @@
      "t": "$180 − 11 = 169$"
     },
     {
-     "t": "$169 : 13 = 13$, pa $13 + 7 = 20$. (Greška $17$ dobija se ako se „oduzme pre deljenja“: $(180 − 44) : 4 = 34$.)"
+     "t": "$169 : 13 = 13$, pa $13 + 7 = 20$. (Ko oduzme pre deljenja, $(180 − 44) : 4 = 34$, zaglavi se: $34$ nije deljiv sa $13$.)"
     }
    ]
   },
@@ -20758,19 +20758,22 @@
   {
    "lekcija": 8,
    "tezina": 2,
-   "pitanje": "Ako je $A = \\{1, 2, 3\\}$, $B = \\{3, 4, 5, 6, 7\\}$ i $C = \\{2, 3, 4\\}$, koji je skup $(A ∪ B) ∩ C$?",
+   "pitanje": "Ako je $A = \\{1, 2, 3\\}$, $B = \\{3, 4, 5, 6, 7\\}$ i $C = \\{2, 4, 8\\}$, koji je skup $(A ∪ B) ∩ C$?",
    "odgovori": [
-    "$\\{2, 3, 4\\}$",
-    "$\\{3\\}$",
-    "$\\{1, 2, 3, 4, 5, 6, 7\\}$",
-    "$\\{3, 4\\}$"
+    "$\\{2, 4\\}$",
+    "$\\{2, 4, 8\\}$",
+    "$\\{4\\}$",
+    "$\\{1, 2, 3, 4, 5, 6, 7, 8\\}$"
    ],
    "resenje": [
     {
      "t": "Prvo zagrada: $A ∪ B = \\{1, 2, 3, 4, 5, 6, 7\\}$."
     },
     {
-     "t": "Presek sa $C = \\{2, 3, 4\\}$: svi elementi skupa $C$ su u uniji, pa je rezultat ceo $C$."
+     "t": "Presek sa $C = \\{2, 4, 8\\}$: zajednički su $2$ i $4$, a $8$ nije u uniji."
+    },
+    {
+     "t": "$(A ∪ B) ∩ C = \\{2, 4\\}$"
     }
    ]
   },
@@ -26928,7 +26931,7 @@
    "pitanje": "Izlomljena linija se sastoji od $5$ duži dužine $2 cm 5 mm$. Kolika je duž jednaka dužini te linije?",
    "odgovori": [
     "$12 cm 5 mm$",
-    "$10 cm 25 mm$",
+    "$10 cm 5 mm$",
     "$7 cm 5 mm$",
     "$12 cm$"
    ],
@@ -27348,7 +27351,7 @@
    "pitanje": "Duž dužine $2 cm 4 mm$ nadovežemo samu na sebe $5$ puta. Kolika je dobijena duž?",
    "odgovori": [
     "$12 cm$",
-    "$10 cm 20 mm$",
+    "$12 cm 2 mm$",
     "$10 cm 4 mm$",
     "$12 cm 4 mm$"
    ],
@@ -29069,7 +29072,7 @@
    "pitanje": "Poluprečnik kruga je $2 cm 5 mm$. Koliki je prečnik?",
    "odgovori": [
     "$5 cm$",
-    "$4 cm 10 mm$",
+    "$4 cm 5 mm$",
     "$1 cm 2 mm$",
     "$2 cm 5 mm$"
    ],
@@ -29224,7 +29227,7 @@
    "tezina": 1,
    "pitanje": "Tačka $A$ je na rastojanju $4 cm$ od centra kruga $K(O, 5 cm)$. Gde se nalazi tačka $A$?",
    "odgovori": [
-    "u krugu, ali ne na kružnici",
+    "u unutrašnjosti kruga",
     "na kružnici",
     "van kruga",
     "u centru kruga"
@@ -31874,7 +31877,7 @@
    "odgovori": [
     "$7 cm$",
     "$3 cm 5 mm$",
-    "$6 cm 10 mm$",
+    "$6 cm 5 mm$",
     "$1 cm 7 mm$"
    ],
    "mediji": {
@@ -32608,7 +32611,7 @@
    "tezina": 1,
    "pitanje": "Da li su vektori $\\vec{AB}$ i $\\vec{BA}$ jednaki?",
    "odgovori": [
-    "ne – iste su dužine i pravca, ali suprotnog smera",
+    "ne – suprotnog su smera",
     "da – iste su dužine",
     "da – leže na istoj pravoj",
     "ne – različitih su dužina"
@@ -35242,7 +35245,7 @@
    "tezina": 3,
    "pitanje": "$p$ i $q$ su prosti brojevi veći od $2$. Šta je sigurno tačno za broj $p + q$?",
    "odgovori": [
-    "složen je (paran i veći od $2$)",
+    "složen je",
     "prost je",
     "deljiv je sa $3$",
     "neparan je"
@@ -35952,10 +35955,10 @@
    "tezina": 3,
    "pitanje": "Da li postoji prirodan broj kome je proizvod cifara jednak $231$?",
    "odgovori": [
-    "ne, jer je $231 = 3 · 7 · 11$, a $11$ nije cifra",
-    "da, npr. $3711$",
-    "da, $231$",
-    "ne, jer je $231$ neparan"
+    "ne postoji",
+    "da, npr. $3 711$",
+    "da, npr. $231$",
+    "da, npr. $7 311$"
    ],
    "resenje": [
     {
@@ -37067,10 +37070,10 @@
    "tezina": 3,
    "pitanje": "Euklidovim algoritmom proveri da li su $104$ i $165$ uzajamno prosti. Koliki je poslednji nenulti ostatak?",
    "odgovori": [
-    "$1$ – jesu uzajamno prosti",
-    "$13$ – nisu",
-    "$61$ – nisu",
-    "$5$ – nisu"
+    "$1$",
+    "$13$",
+    "$43$",
+    "$3$"
    ],
    "resenje": [
     {
@@ -56280,7 +56283,7 @@
    "tezina": 1,
    "pitanje": "Dve poluprave $Oa$ i $Ob$ sa zajedničkim početkom, koje nisu na istoj pravoj, određuju koliko uglova?",
    "odgovori": [
-    "$2$ – konveksan i nekonveksan",
+    "$2$",
     "$1$",
     "$4$",
     "beskonačno mnogo"
@@ -60302,7 +60305,7 @@
   {
    "lekcija": 27,
    "tezina": 3,
-   "pitanje": "Kolika je zbir uglova kod temena kad se uglovi četvorougla „otkinu“ i nadovežu jedan na drugi?",
+   "pitanje": "Uglovi četvorougla se „otkinu“ i nadovežu jedan na drugi oko jedne tačke. Koliki ugao čine zajedno?",
    "odgovori": [
     "$360°$",
     "$180°$",
@@ -64055,7 +64058,7 @@
    "pitanje": "Izračunaj: $37°45' + 25°30'$.",
    "odgovori": [
     "$63°15'$",
-    "$62°75'$",
+    "$63°25'$",
     "$62°15'$",
     "$63°75'$"
    ],
@@ -64112,7 +64115,7 @@
    "pitanje": "Izračunaj: $3 · 25°40'$.",
    "odgovori": [
     "$77°$",
-    "$75°120'$",
+    "$76°20'$",
     "$76°$",
     "$75°40'$"
    ],
@@ -68834,7 +68837,7 @@
     "${3|10}$",
     "${5|5}$",
     "${1|2}$",
-    "${5|10}$"
+    "${9|10}$"
    ],
    "resenje": [
     {
@@ -68871,7 +68874,7 @@
    "odgovori": [
     "$4{1|12}$",
     "$3{4|7}$",
-    "$3{13|12}$",
+    "$3{1|12}$",
     "$4{1|7}$"
    ],
    "resenje": [
@@ -74256,7 +74259,7 @@
      "t": "Redom sleva: ${9|10} − {5|10} = {4|10}$."
     },
     {
-     "t": "${4|10} + {6|10} = {10|10} = 1$. (Greška ${1|5}$: prvo sabrano ${1|2} + {3|5}$.)"
+     "t": "${4|10} + {6|10} = {10|10} = 1$. (Sabiranje i oduzimanje radimo redom sleva nadesno – ne sme se prvo sabrati ${1|2} + {3|5}$.)"
     }
    ]
   },

@@ -102,7 +102,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, nzd, nzs, skok, skokovi }) =
      K('$1 001 = 7 · 11 · 13$ – zato je npr. $abcabc = abc · 1 001$ uvek deljiv sa $7$, $11$ i $13$!')]);
 
   Z(3, '$p$ i $q$ su prosti brojevi veći od $2$. Šta je sigurno tačno za broj $p + q$?',
-    ['složen je (paran i veći od $2$)', 'prost je', 'deljiv je sa $3$', 'neparan je'],
+    ['složen je', 'prost je', 'deljiv je sa $3$', 'neparan je'],
     [K('Svi prosti brojevi veći od $2$ su neparni.'),
      K('Zbir dva neparna broja je paran, a pošto je $p + q ≥ 3 + 3 = 6 > 2$, ima delioce $1$, $2$ i sebe – složen je.')]);
 
@@ -154,7 +154,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, nzd, nzs, skok, skokovi }) =
      K('Spojimo: $2^{3} · 3 · 2 · 17 = 2^{4} · 3 · 17$ (ukupno četiri dvojke).')]);
 
   Z(3, 'Da li postoji prirodan broj kome je proizvod cifara jednak $231$?',
-    ['ne, jer je $231 = 3 · 7 · 11$, a $11$ nije cifra', 'da, npr. $3711$', 'da, $231$', 'ne, jer je $231$ neparan'],
+    ['ne postoji', 'da, npr. $3 711$', 'da, npr. $231$', 'da, npr. $7 311$'],
     [K('$231 = 3 · 7 · 11$.'),
      K('Svaka cifra je od $0$ do $9$, pa u njenom rastavljanju nema prostih činilaca većih od $7$.'),
      K('Prost činilac $11$ ne može da dođe ni iz jedne cifre – takav broj ne postoji.')]);
@@ -221,7 +221,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, nzd, nzs, skok, skokovi }) =
   proveri(178 % 7 === 3 && 199 % 7 === 3 && nzd(175, 196) === 7, '178 199');
 
   Z(3, 'Euklidovim algoritmom proveri da li su $104$ i $165$ uzajamno prosti. Koliki je poslednji nenulti ostatak?',
-    ['$1$ – jesu uzajamno prosti', '$13$ – nisu', '$61$ – nisu', '$5$ – nisu'],
+    ['$1$', '$13$', '$43$', '$3$'],
     [K('$165 = 1 · 104 + 61$, $104 = 1 · 61 + 43$, $61 = 1 · 43 + 18$.'),
      K('$43 = 2 · 18 + 7$, $18 = 2 · 7 + 4$, $7 = 1 · 4 + 3$, $4 = 1 · 3 + 1$, $3 = 3 · 1 + 0$.'),
      K('Poslednji nenulti ostatak je $1$: $NZD(104, 165) = 1$ – uzajamno su prosti.')]);
