@@ -1,0 +1,76 @@
+name: Deploy na skviz.rs
+
+on:
+  workflow_dispatch:
+    inputs:
+      nacin:
+        description: 'Način objave'
+        required: true
+        default: 'pun'
+        type: choice
+        options:
+          - pun
+          - pitanja
+  schedule:
+    # Svake noći: GitHub cron je po UTC i ne prati letnje/zimsko vreme.
+    #   '0 2 * * *' = 02:00 UTC → 04:00 leti, 03:00 zimi (po srpskom vremenu)
+    #   '0 3 * * *' = 03:00 UTC → 05:00 leti, 04:00 zimi
+    - cron: '0 2 * * *'
+
+# Dva deploy-a nikad ne smeju da idu uporedo (rsync + restart na istom serveru).
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # objavi.sh i test-deploy trebaju i „stari“ commit sa servera
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: SSH ključ i poznati domaćini
+        env:
+          DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+        run: |
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          printf '%s\n' "$DEPLOY_SSH_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          cat > ~/.ssh/config <<'EOF'
+          Host skviz
+            HostName 2.29.146.92
+            User root
+            IdentityFile ~/.ssh/id_ed25519
+            StrictHostKeyChecking accept-new
+          EOF
+          chmod 600 ~/.ssh/config
+
+      - name: Preskoči ako nema novih komitova (samo noćno)
+        id: provera
+        if: github.event_name == 'schedule'
+        run: |
+          NA_SERVERU="$(ssh skviz 'cat /opt/gric-kviz/.objavljeno 2>/dev/null' || true)"
+          OVDE="$(git rev-parse HEAD)"
+          if [ -n "$NA_SERVERU" ] && [ "$NA_SERVERU" = "$OVDE" ]; then
+            echo "Nema novih komitova (server je već na $OVDE) – preskačem."
+            echo "preskoci=1" >> "$GITHUB_OUTPUT"
+          else
+            echo "Ima novih komitova: server=${NA_SERVERU:-nepoznato} → HEAD=$OVDE"
+          fi
+
+      - name: Deploy
+        if: steps.provera.outputs.preskoci != '1'
+        run: |
+          NACIN="${{ github.event_name == 'workflow_dispatch' && inputs.nacin || 'pun' }}"
+          if [ "$NACIN" = "pitanja" ]; then
+            ./deploy/objavi.sh skviz --pitanja
+          else
+            ./deploy/objavi.sh skviz
+          fi
