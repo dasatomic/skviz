@@ -102,7 +102,7 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, stubici, pr, polja, kuglica
     'Mogući ishodi su GG, GP, PG i PP – četiri jednako verovatna. Bar jedna glava je u tri od njih. Lakše: jedini „loš“ ishod je PP (${1|4}$), pa je ostatak ${3|4}$.',
     'novčić', { medijiOdgovora: { vrsta: 'citat', tekst: 'GG · GP · PG · PP' } });
 
-  Q(3, 'Plate petoro zaposlenih su 50.000 dinara, a direktorova je 1.000.000. Koja mera bolje pokazuje „tipičnu“ platu u toj firmi?', ['Medijana', 'Aritmetička sredina', 'Najveća plata', 'Raspon plata'],
+  Q(3, 'Petoro zaposlenih ima platu od 50.000 dinara, a direktorova je 1.000.000 dinara. Koja mera bolje pokazuje „tipičnu“ platu u toj firmi?', ['Medijana', 'Aritmetička sredina', 'Najveća plata', 'Raspon plata'],
     'Prosek šest plata je oko 208.000 dinara – a niko osim direktora nema ni približno toliko! Medijana (srednja vrednost po veličini) je 50.000 i ne „vuče“ je jedna ogromna vrednost.',
     'medijana');
 

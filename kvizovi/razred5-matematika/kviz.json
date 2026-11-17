@@ -2083,12 +2083,12 @@
    "tezina": 1,
    "pitanje": "Koji od ovih brojeva je deljiv sa 5?",
    "odgovori": [
-    "1.235",
-    "1.234",
-    "1.238",
-    "1.232"
+    "1 235",
+    "1 234",
+    "1 238",
+    "1 232"
    ],
-   "zanimljivost": "Broj je deljiv sa 5 ako se završava cifrom 0 ili 5. Broj $1.235$ se završava sa 5, pa je deljiv sa 5.",
+   "zanimljivost": "Broj je deljiv sa 5 ako se završava cifrom 0 ili 5. Broj $1 235$ se završava sa 5, pa je deljiv sa 5.",
    "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
@@ -2099,7 +2099,7 @@
     },
     "e": [
      {
-      "tx": "1.23",
+      "tx": "1 23",
       "at": [
        0,
        0
@@ -2143,7 +2143,7 @@
   {
    "lekcija": 4,
    "tezina": 2,
-   "pitanje": "Koliko najmanje nula na kraju mora imati broj da bi bio deljiv sa 100?",
+   "pitanje": "Koliko nula najmanje mora da ima broj na kraju da bi bio deljiv sa 100?",
    "odgovori": [
     "Dve nule",
     "Jednu nulu",
@@ -2235,12 +2235,12 @@
    "tezina": 3,
    "pitanje": "Koji od ovih brojeva je deljiv sa 2, sa 5 i sa 10 istovremeno?",
    "odgovori": [
-    "1.000",
-    "1.005",
-    "1.002",
-    "1.025"
+    "1 000",
+    "1 005",
+    "1 002",
+    "1 025"
    ],
-   "zanimljivost": "Deljivost sa 10 povlači deljivost sa 2 i sa 5. Od ponuđenih, samo se $1.000$ završava nulom; $1.002$ je deljiv samo sa 2, a $1.005$ i $1.025$ samo sa 5.",
+   "zanimljivost": "Deljivost sa 10 povlači deljivost sa 2 i sa 5. Od ponuđenih, samo se $1 000$ završava nulom; $1 002$ je deljiv samo sa 2, a $1 005$ i $1 025$ samo sa 5.",
    "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
@@ -2251,7 +2251,7 @@
     },
     "e": [
      {
-      "tx": "1.",
+      "tx": "1 ",
       "at": [
        0,
        0
@@ -2325,12 +2325,12 @@
    "tezina": 1,
    "pitanje": "Koji od ovih brojeva je deljiv sa 4?",
    "odgovori": [
-    "1.024",
-    "1.014",
-    "1.022",
-    "1.026"
+    "1 024",
+    "1 014",
+    "1 022",
+    "1 026"
    ],
-   "zanimljivost": "Gledamo poslednje dve cifre: $24$ je deljivo sa 4 ($24=4·6$), pa je i ceo broj $1.024$ deljiv sa 4.",
+   "zanimljivost": "Gledamo poslednje dve cifre: $24$ je deljivo sa 4 ($24=4·6$), pa je i ceo broj $1 024$ deljiv sa 4.",
    "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
@@ -2375,7 +2375,7 @@
     "samo na 00",
     "5 ili 0"
    ],
-   "zanimljivost": "Četiri moguća završetka: $00, 25, 50$ i $75$. Na primer, $3.175$ se završava sa $75$, pa je deljiv sa 25.",
+   "zanimljivost": "Četiri moguća završetka: $00, 25, 50$ i $75$. Na primer, $3 175$ se završava sa $75$, pa je deljiv sa 25.",
    "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
@@ -2434,12 +2434,12 @@
    "tezina": 2,
    "pitanje": "Koji od ovih brojeva je deljiv sa 25?",
    "odgovori": [
-    "4.075",
-    "4.070",
-    "4.085",
-    "4.055"
+    "4 075",
+    "4 070",
+    "4 085",
+    "4 055"
    ],
-   "zanimljivost": "Broj $4.075$ se završava sa $75$, a to je jedan od dozvoljenih završetaka za deljivost sa 25 ($00,25,50,75$).",
+   "zanimljivost": "Broj $4 075$ se završava sa $75$, a to je jedan od dozvoljenih završetaka za deljivost sa 25 ($00,25,50,75$).",
    "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
@@ -2450,7 +2450,7 @@
     },
     "e": [
      {
-      "tx": "4.0",
+      "tx": "4 0",
       "at": [
        0,
        0
@@ -2524,12 +2524,12 @@
    "tezina": 3,
    "pitanje": "Koji od ovih brojeva je deljiv i sa 4 i sa 25?",
    "odgovori": [
-    "2.300",
-    "2.325",
-    "2.304",
-    "2.350"
+    "2 300",
+    "2 325",
+    "2 304",
+    "2 350"
    ],
-   "zanimljivost": "Deljiv sa 4: gledamo poslednje dve cifre. Deljiv sa 25: završetak $00,25,50,75$. Završetak $00$ (broj $2.300$) zadovoljava oba uslova.",
+   "zanimljivost": "Deljiv sa 4: gledamo poslednje dve cifre. Deljiv sa 25: završetak $00,25,50,75$. Završetak $00$ (broj $2 300$) zadovoljava oba uslova.",
    "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
@@ -2727,12 +2727,12 @@
    "tezina": 2,
    "pitanje": "Koji od ovih brojeva je deljiv sa 9?",
    "odgovori": [
-    "3.186",
-    "3.183",
-    "3.187",
-    "3.185"
+    "3 186",
+    "3 183",
+    "3 187",
+    "3 185"
    ],
-   "zanimljivost": "Za $3.186$: zbir cifara je $3+1+8+6=18$, a $18$ je deljivo sa 9, pa je i ceo broj deljiv sa 9.",
+   "zanimljivost": "Za $3 186$: zbir cifara je $3+1+8+6=18$, a $18$ je deljivo sa 9, pa je i ceo broj deljiv sa 9.",
    "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
@@ -2821,14 +2821,14 @@
   {
    "lekcija": 6,
    "tezina": 2,
-   "pitanje": "Da li je broj 1.234 deljiv sa 3?",
+   "pitanje": "Da li je broj 1 234 deljiv sa 3?",
    "odgovori": [
     "Ne, jer je zbir cifara 10",
     "Da, jer je paran",
     "Da, jer se završava sa 4",
     "Ne, jer se završava sa 4"
    ],
-   "zanimljivost": "Zbir cifara je $1+2+3+4=10$, a $10$ nije deljivo sa 3, pa ni $1.234$ nije deljivo sa 3. Paran broj nije automatski deljiv sa 3!",
+   "zanimljivost": "Zbir cifara je $1+2+3+4=10$, a $10$ nije deljivo sa 3, pa ni $1 234$ nije deljivo sa 3. Paran broj nije automatski deljiv sa 3!",
    "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
@@ -4041,12 +4041,12 @@
     "velicina": 260
    },
    "odgovori": [
-    "Presek skupova A i B",
-    "Unija skupova A i B",
-    "Razlika A i B",
-    "Samo skup A"
+    "Presek skupova $A$ i $B$",
+    "Unija skupova $A$ i $B$",
+    "Razlika $A$ i $B$",
+    "Samo skup $A$"
    ],
-   "zanimljivost": "Obojen je „listić“ gde se krugovi preklapaju – to je presek $A∩ B$, deo koji pripada i skupu A i skupu B.",
+   "zanimljivost": "Obojen je „listić“ gde se krugovi preklapaju – to je presek $A∩ B$, deo koji pripada i skupu $A$ i skupu $B$.",
    "rec": "presek"
   },
   {
@@ -6395,7 +6395,7 @@
   {
    "lekcija": 8,
    "tezina": 3,
-   "pitanje": "Na Venovom dijagramu obojen je deo skupa A koji se NE preklapa sa B. Koja je to operacija?",
+   "pitanje": "Na Venovom dijagramu obojen je deo skupa $A$ koji se NE preklapa sa $B$. Koja je to operacija?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -7271,7 +7271,7 @@
     "Unija $A ∪ B$",
     "Prazan skup"
    ],
-   "zanimljivost": "Obojen je samo deo kruga A van kruga B – to su elementi koji pripadaju A, ali ne pripadaju B, dakle razlika $A∖ B$.",
+   "zanimljivost": "Obojen je samo deo kruga $A$ van kruga $B$ – to su elementi koji pripadaju $A$, ali ne pripadaju $B$, dakle razlika $A∖ B$.",
    "rec": "razlika"
   },
   {
@@ -7482,7 +7482,7 @@
   {
    "lekcija": 9,
    "tezina": 2,
-   "pitanje": "Ako tačka C leži između tačaka A i B, šta sigurno važi?",
+   "pitanje": "Ako tačka $C$ leži između tačaka $A$ i $B$, šta sigurno važi?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -7523,10 +7523,10 @@
    "odgovori": [
     "Sve tri leže na istoj pravoj",
     "Sve tri su temena trougla",
-    "Tačka C je van duži AB",
-    "Tačke A i C se poklapaju"
+    "Tačka $C$ je van duži $AB$",
+    "Tačke $A$ i $C$ se poklapaju"
    ],
-   "zanimljivost": "Kad tačka leži „između“, sve tri tačke su na istoj pravoj – takve tačke zovemo kolinearne. Kažemo i da je C unutrašnja tačka duži AB.",
+   "zanimljivost": "Kad tačka leži „između“, sve tri tačke su na istoj pravoj – takve tačke zovemo kolinearne. Kažemo i da je $C$ unutrašnja tačka duži $AB$.",
    "rec": "kolinearan"
   },
   {
@@ -7602,7 +7602,7 @@
   {
    "lekcija": 9,
    "tezina": 3,
-   "pitanje": "Tri tačke A, B i C NE leže na istoj pravoj. Koliko duži one određuju?",
+   "pitanje": "Tri tačke $A$, $B$ i $C$ NE leže na istoj pravoj. Koliko duži one određuju?",
    "odgovori": [
     "3",
     "1",
@@ -7734,7 +7734,7 @@
     "Mimoilazne prave",
     "Podudarne prave"
    ],
-   "zanimljivost": "Normalne prave seku se pod uglom od $90°$. Označavamo ih $a ⊥ b$. Ivice kvadrata su uzajamno normalne.",
+   "zanimljivost": "Normalne prave seku se pod uglom od $90°$. Označavamo ih $a ⊥ b$. Susedne stranice kvadrata su normalne jedna na drugu.",
    "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
@@ -7845,7 +7845,7 @@
   {
    "lekcija": 10,
    "tezina": 2,
-   "pitanje": "Dve prave se seku u tački O. Kako se ta tačka zove?",
+   "pitanje": "Dve prave se seku u tački $O$. Kako se ta tačka zove?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -8123,7 +8123,7 @@
      "10 mm"
     ]
    ],
-   "zanimljivost": "Jedinice za dužinu idu po deseticama: svaka manja jedinica je 10 puta manja od veće (osim kilometra koji je 1000 m).",
+   "zanimljivost": "Jedinice za dužinu idu po deseticama: svaka manja jedinica je 10 puta manja od veće (osim kilometra, koji je 1000 puta veći od metra).",
    "rec": "jedinica"
   },
   {
@@ -8178,7 +8178,7 @@
   {
    "lekcija": 11,
    "tezina": 2,
-   "pitanje": "Duž AB je duga 3 cm, a duž CD je duga 30 mm. Šta važi?",
+   "pitanje": "Duž $AB$ je duga 3 cm, a duž $CD$ je duga 30 mm. Šta važi?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -8217,11 +8217,11 @@
    },
    "odgovori": [
     "Duži su jednake",
-    "AB je duža",
-    "CD je duža",
+    "$AB$ je duža",
+    "$CD$ je duža",
     "Ne može se uporediti"
    ],
-   "zanimljivost": "$30$ mm je isto što i $3$ cm, jer je $1$ cm $= 10$ mm. Zato su duži jednake – samo su izražene različitim jedinicama.",
+   "zanimljivost": "$30 mm$ je isto što i $3 cm$, jer je $1 cm = 10 mm$. Zato su duži jednake – samo su izražene različitim jedinicama.",
    "rec": "jednakost"
   },
   {
@@ -8229,12 +8229,12 @@
    "tezina": 3,
    "pitanje": "Koji niz jedinica je poređan od najmanje ka najvećoj?",
    "odgovori": [
-    "mm, cm, dm, m, km",
-    "km, m, dm, cm, mm",
-    "cm, mm, m, km, dm",
-    "dm, cm, mm, km, m"
+    "$mm$, $cm$, $dm$, $m$, $km$",
+    "$km$, $m$, $dm$, $cm$, $mm$",
+    "$cm$, $mm$, $m$, $km$, $dm$",
+    "$dm$, $cm$, $mm$, $km$, $m$"
    ],
-   "zanimljivost": "Od najmanje ka najvećoj: milimetar, centimetar, decimetar, metar, kilometar. Svaka sledeća je 10 puta veća od prethodne (osim km koji je 1000 m).",
+   "zanimljivost": "Od najmanje ka najvećoj: milimetar, centimetar, decimetar, metar, kilometar. Svaka sledeća je 10 puta veća od prethodne (osim kilometra, koji je 1000 puta veći od metra).",
    "rec": "jedinica"
   },
   {
@@ -8363,13 +8363,13 @@
     "5 cm",
     "8 cm"
    ],
-   "zanimljivost": "Nadovezivanje znači postavljanje jedne duži na kraj druge, pa se dužine sabiraju: $3 + 4 = 7$ cm.",
+   "zanimljivost": "Nadovezivanje znači postavljanje jedne duži na kraj druge, pa se dužine sabiraju: $3 cm + 4 cm = 7 cm$.",
    "rec": "duž"
   },
   {
    "lekcija": 12,
    "tezina": 2,
-   "pitanje": "Tačka C je na duži AB. Ako je $AB = 5$ cm i $AC = 2$ cm, kolika je duž $CB$?",
+   "pitanje": "Tačka $C$ je na duži $AB$. Ako je $AB = 5 cm$ i $AC = 2 cm$, kolika je duž $CB$?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -8427,7 +8427,7 @@
     "5 cm",
     "7 cm"
    ],
-   "zanimljivost": "Kad je tačka na duži, delovi se dopunjuju do cele duži: $CB = AB - AC = 5 - 2 = 3$ cm.",
+   "zanimljivost": "Kad je tačka na duži, delovi se dopunjuju do cele duži: $CB = AB - AC = 5 cm - 2 cm = 3 cm$.",
    "rec": "duž"
   },
   {
@@ -8485,7 +8485,7 @@
   {
    "lekcija": 12,
    "tezina": 2,
-   "pitanje": "Duž AB preneta je šestarom na polupravu od tačke C, pa je dobijena duž CD. Šta sigurno važi?",
+   "pitanje": "Duž $AB$ preneta je šestarom na polupravu od tačke $C$, pa je dobijena duž $CD$. Šta sigurno važi?",
    "odgovori": [
     "$AB = CD$",
     "$AB < CD$",
@@ -8592,7 +8592,7 @@
     "8 cm",
     "14 cm"
    ],
-   "zanimljivost": "Sve tri se sabiraju: $2+4+6=12$ cm. Nadovezivanjem se dužine uvek sabiraju.",
+   "zanimljivost": "Sve tri se sabiraju: $2 cm + 4 cm + 6 cm = 12 cm$. Nadovezivanjem se dužine uvek sabiraju.",
    "rec": "duž"
   },
   {
@@ -8657,7 +8657,7 @@
     "4",
     "7"
    ],
-   "zanimljivost": "Petougao ima 5 stranica (peta = pet). Svaka stranica je duž koja spaja dva susedna temena.",
+   "zanimljivost": "Petougao ima 5 stranica i 5 temena. Svaka stranica je duž koja spaja dva susedna temena.",
    "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
@@ -8885,7 +8885,7 @@
     "Duži koje spajaju tačke",
     "Uglovi mnogougla"
    ],
-   "zanimljivost": "Temena su tačke u kojima se sustiču dve susedne stranice. Mnogougao ima isto toliko temena koliko i stranica.",
+   "zanimljivost": "Temena su tačke u kojima se sastaju dve susedne stranice. Mnogougao ima isto toliko temena koliko i stranica.",
    "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
@@ -9463,14 +9463,14 @@
   {
    "lekcija": 15,
    "tezina": 2,
-   "pitanje": "U centralnoj simetriji sa centrom O, tačka A preslikava se u tačku A′. Šta je tačka O za duž AA′?",
+   "pitanje": "U centralnoj simetriji sa centrom $O$, tačka $A$ preslikava se u tačku $A′$. Šta je tačka $O$ za duž $AA′$?",
    "odgovori": [
-    "Središte duži AA′",
-    "Kraj duži AA′",
-    "Van duži AA′",
+    "Središte duži $AA′$",
+    "Kraj duži $AA′$",
+    "Van duži $AA′$",
     "Teme trougla"
    ],
-   "zanimljivost": "Tačka O je tačno na sredini duži $AA'$: važi $AO = OA'$, a tačke A, O i A′ su na istoj pravoj.",
+   "zanimljivost": "Tačka $O$ je tačno na sredini duži $AA'$: važi $AO = OA'$, a tačke $A$, $O$ i $A′$ su na istoj pravoj.",
    "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
@@ -22991,7 +22991,7 @@
     "−1",
     "2"
    ],
-   "zanimljivost": "Početna tačka (ishodište O) po dogovoru dobija broj 0. Udesno se zatim ređaju 1, 2, 3…, a razlomci leže na jediničnim dužima između celih brojeva.",
+   "zanimljivost": "Početna tačka (ishodište $O$) po dogovoru dobija broj 0. Udesno se zatim ređaju 1, 2, 3…, a razlomci leže na jediničnim dužima između celih brojeva.",
    "rec": "poluprava"
   },
   {
@@ -37468,7 +37468,7 @@
     "$0,17 < 0,07 < 0,7$",
     "Svi su jednaki"
    ],
-   "zanimljivost": "Upišemo iste brojeve decimala: $0,70$, $0,17$, $0,07$. Redom od najmanjeg: $0,07$, pa $0,17$, pa $0,70$.",
+   "zanimljivost": "Dopišemo nule da svi imaju po dve decimale: $0,70$, $0,17$, $0,07$. Redom od najmanjeg: $0,07$, pa $0,17$, pa $0,70$.",
    "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
@@ -37573,7 +37573,7 @@
     "7",
     "2"
    ],
-   "zanimljivost": "Decimale redom: 3 su desetinke, 4 su stotinke, 7 su hiljaditinke. Dakle, stotinke su cifra 4.",
+   "zanimljivost": "Decimale redom: 3 je na mestu desetinki, 4 na mestu stotinki, 7 na mestu hiljaditinki. Dakle, cifra stotinki je 4.",
    "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
@@ -37683,7 +37683,7 @@
     "Stranica",
     "Centar"
    ],
-   "zanimljivost": "Teme je tačka iz koje polaze oba kraka ugla. Ugao $∠ AOB$ ima teme u tački O.",
+   "zanimljivost": "Teme je tačka iz koje polaze oba kraka ugla. Ugao $∠ AOB$ ima teme u tački $O$.",
    "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
@@ -37774,7 +37774,7 @@
   {
    "lekcija": 26,
    "tezina": 2,
-   "pitanje": "Kako se označava ugao sa temenom O i kracima kroz A i B?",
+   "pitanje": "Kako se označava ugao sa temenom $O$ i kracima kroz $A$ i $B$?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -40259,7 +40259,7 @@
   {
    "lekcija": 30,
    "tezina": 2,
-   "pitanje": "Ako jedan unakrsni ugao ima 55°, koliki je njemu unakrsni ugao?",
+   "pitanje": "Ako jedan od unakrsnih uglova ima 55°, koliki je drugi?",
    "odgovori": [
     "55°",
     "125°",
@@ -40323,7 +40323,7 @@
   {
    "lekcija": 30,
    "tezina": 3,
-   "pitanje": "Pri preseku dve prave, jedan ugao ima 120°. Koliki je njemu UPOREDAN ugao?",
+   "pitanje": "Pri preseku dve prave, jedan ugao ima 120°. Koliki je njemu UPOREDNI ugao?",
    "odgovori": [
     "60°",
     "120°",
@@ -40857,7 +40857,7 @@
     "20°",
     "90°"
    ],
-   "zanimljivost": "Saglasni uglovi su jednaki, pa i njemu saglasan ugao ima 70°. Uporedan ugao sa njim imao bi $180°-70°=110°$.",
+   "zanimljivost": "Saglasni uglovi su jednaki, pa i njemu saglasan ugao ima 70°. Uporedni ugao sa njim imao bi $180°-70°=110°$.",
    "rec": "saglasni"
   },
   {
@@ -51781,7 +51781,7 @@
   {
    "lekcija": 36,
    "tezina": 3,
-   "pitanje": "Koja nejednačina opisuje: „broj x je manji ili jednak 7“?",
+   "pitanje": "Koja nejednačina znači: broj $x$ je manji ili jednak 7?",
    "odgovori": [
     "$x ≤ 7$",
     "$x < 7$",
@@ -54980,7 +54980,7 @@
     "$0,02$",
     "$20$"
    ],
-   "zanimljivost": "$0,5·4=2$. Polovina puta 4 je 2 cela. Možeš i ovako: $5·4=20$, pa jedna decimala → $2,0=2$.",
+   "zanimljivost": "$0,5·4=2$. Polovina puta 4 je 2 cela. Možeš i ovako: $5·4=20$, pa u rezultatu odvojiš jednu decimalu → $2,0=2$.",
    "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
@@ -55696,7 +55696,7 @@
     "Pomnožiš decimale",
     "Zanemariš zareze i podeliš"
    ],
-   "zanimljivost": "Da bi podelio, na primer, $1,5:0,5$, proširiš oba broja sa 10: $15:5=3$. Delilac mora postati ceo broj.",
+   "zanimljivost": "Na primer, za $1,5:0,5$ proširimo oba broja sa 10: $15:5=3$. Delilac mora postati ceo broj.",
    "medijiOdgovora": {
     "vrsta": "formula",
     "tekst": "$1,\\!5:0,\\!5=3$"
@@ -56671,12 +56671,12 @@
   {
    "lekcija": 44,
    "tezina": 2,
-   "pitanje": "Tačka A i njena slika A′ su osnosimetrične. Šta je osa simetrije za duž AA′?",
+   "pitanje": "Tačka $A$ i njena slika $A′$ su osnosimetrične. Šta je osa simetrije za duž $AA′$?",
    "odgovori": [
-    "Simetrala duži AA′ (normalna u središtu)",
-    "Sama duž AA′",
-    "Poluprava AA′",
-    "Kružnica kroz A i A′"
+    "Simetrala duži $AA′$ (normalna u središtu)",
+    "Sama duž $AA′$",
+    "Poluprava $AA′$",
+    "Kružnica kroz $A$ i $A′$"
    ],
    "zanimljivost": "Osa simetrije stoji normalno na duž $AA'$ i prolazi kroz njeno središte – zato se i zove simetrala duži.",
    "medijiOdgovora": {
@@ -57436,7 +57436,7 @@
   {
    "lekcija": 46,
    "tezina": 2,
-   "pitanje": "Na slici je prava normalna na duž AB u njenoj sredini. Kako se zove ta prava?",
+   "pitanje": "Na slici je prava normalna na duž $AB$ u njenoj sredini. Kako se zove ta prava?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -57491,12 +57491,12 @@
     "velicina": 300
    },
    "odgovori": [
-    "Simetrala duži AB",
-    "Paralela duži AB",
+    "Simetrala duži $AB$",
+    "Paralela duži $AB$",
     "Simetrala ugla",
     "Dijagonala"
    ],
-   "zanimljivost": "Prava koja stoji normalno na duž i prolazi kroz njenu sredinu je simetrala duži. Tačka S je središte duži.",
+   "zanimljivost": "Prava koja stoji normalno na duž i prolazi kroz njenu sredinu je simetrala duži. Tačka $S$ je središte duži.",
    "rec": "simetrala"
   },
   {
@@ -57509,7 +57509,7 @@
     "dva dela 1:2",
     "četiri jednaka dela"
    ],
-   "zanimljivost": "Simetrala prolazi kroz središte duži, pa je deli na dva podudarna dela. Zato se i zove simetrala (symmetria = razmera).",
+   "zanimljivost": "Simetrala prolazi kroz središte duži, pa je deli na dva podudarna dela.",
    "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
@@ -57748,7 +57748,7 @@
   {
    "lekcija": 47,
    "tezina": 2,
-   "pitanje": "Kako se na slici zove poluprava koja deli ugao AOB na dva jednaka dela?",
+   "pitanje": "Kako se na slici zove poluprava koja deli ugao $AOB$ na dva jednaka dela?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -57809,7 +57809,7 @@
     "Transverzala",
     "Tangenta"
    ],
-   "zanimljivost": "Poluprava OP polazi iz temena O i deli ugao AOB na dva jednaka dela – to je simetrala ugla.",
+   "zanimljivost": "Poluprava $OP$ polazi iz temena $O$ i deli ugao $AOB$ na dva jednaka dela – to je simetrala ugla.",
    "rec": "simetrala"
   },
   {
@@ -74519,14 +74519,14 @@
   {
    "lekcija": 49,
    "tezina": 1,
-   "pitanje": "Šta znači razmera na karti 1 : 100.000?",
+   "pitanje": "Šta znači razmera na karti 1 : 100 000?",
    "odgovori": [
-    "1 cm na karti je 100.000 cm u prirodi",
-    "1 cm na karti je 100.000 km",
-    "Karta je velika 100.000 cm",
-    "1 cm u prirodi je 100.000 cm na karti"
+    "1 cm na karti je 100 000 cm u prirodi",
+    "1 cm na karti je 100 000 km",
+    "Karta je velika 100 000 cm",
+    "1 cm u prirodi je 100 000 cm na karti"
    ],
-   "zanimljivost": "Razmera 1:100.000 znači da 1 cm na karti odgovara 100.000 cm (to je 1 km) u stvarnosti. Karta je umanjena.",
+   "zanimljivost": "Razmera 1:100 000 znači da 1 cm na karti odgovara 100 000 cm (to je 1 km) u stvarnosti. Karta je umanjena.",
    "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
@@ -74553,7 +74553,7 @@
       "vel": 13
      },
      {
-      "tx": "priroda: 100.000 cm",
+      "tx": "priroda: 100 000 cm",
       "at": [
        100000,
        0.7

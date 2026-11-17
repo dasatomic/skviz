@@ -136,7 +136,7 @@ module.exports = ({ L, Z, K, G, R, O, bez, r, proveri, traka, skok, skokovi, kru
     })());
   proveri(100 % 7 === 2, 'dani');
 
-  Z(2, 'U skupu je $529$ učenika. Ako se poređaju u redove po $9$, koliko će biti punih redova i koliko će učenika ostati?',
+  Z(2, 'U školi je $529$ učenika. Ako se poređaju u redove po $9$, koliko će biti punih redova i koliko će učenika ostati?',
     ['$58$ redova, ostaje $7$', '$59$ redova, ostaje $2$', '$58$ redova, ostaje $9$', '$57$ redova, ostaje $16$'],
     [K('Delimo: $52 : 9 = 5$ (ostatak $7$), spuštamo $9$: $79 : 9 = 8$ (ostatak $7$).'),
      K('$529 = 9 · 58 + 7$'),

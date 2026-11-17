@@ -71,10 +71,10 @@ module.exports = ({ L, Q, U, S, G, r, sto, O, bez }) => {
     ['Njihov količnik (odnos)', 'Njihov zbir', 'Njihov proizvod', 'Njihova razlika'],
     'Razmera je odnos dve veličine, zapisuje se kao $a:b$ ili $\\frac{a}{b}$. Govori koliko puta je jedna veličina veća od druge.', 'razmera',
     { mediji: barovi(2, 4, { o1: 'a', o2: 'b' }) });
-  Q(1, 'Šta znači razmera na karti 1 : 100.000?',
-    ['1 cm na karti je 100.000 cm u prirodi', '1 cm na karti je 100.000 km', 'Karta je velika 100.000 cm', '1 cm u prirodi je 100.000 cm na karti'],
-    'Razmera 1:100.000 znači da 1 cm na karti odgovara 100.000 cm (to je 1 km) u stvarnosti. Karta je umanjena.', 'razmera',
-    { medijiOdgovora: G(O, [{ osa: [0, 100000], podela: 100000, svaki: 1 }, { tx: 'karta: 1 cm', at: [0, 0.7], vel: 13 }, { tx: 'priroda: 100.000 cm', at: [100000, 0.7], vel: 13 }], { ...bez, velicina: 320 }) });
+  Q(1, 'Šta znači razmera na karti 1 : 100 000?',
+    ['1 cm na karti je 100 000 cm u prirodi', '1 cm na karti je 100 000 km', 'Karta je velika 100 000 cm', '1 cm u prirodi je 100 000 cm na karti'],
+    'Razmera 1:100 000 znači da 1 cm na karti odgovara 100 000 cm (to je 1 km) u stvarnosti. Karta je umanjena.', 'razmera',
+    { medijiOdgovora: G(O, [{ osa: [0, 100000], podela: 100000, svaki: 1 }, { tx: 'karta: 1 cm', at: [0, 0.7], vel: 13 }, { tx: 'priroda: 100 000 cm', at: [100000, 0.7], vel: 13 }], { ...bez, velicina: 320 }) });
   Q(2, 'Šta je aritmetička sredina nekoliko brojeva?',
     ['Zbir brojeva podeljen njihovim brojem', 'Najveći od tih brojeva', 'Zbir svih brojeva', 'Srednji po veličini broj'],
     'Aritmetička sredina (prosek) se dobija kad zbir svih brojeva podelimo brojem sabiraka. „Sve saberi pa podeli.“', 'sredina',

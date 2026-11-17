@@ -383,8 +383,8 @@ module.exports = ({ L, Z, K, G, r, proveri, kocke, prava }) => {
   Z(3, 'Koji od ovih brojeva je iracionalan?',
     ['$0,1010010001…$', '$0,(10)$', '$0,1010$', '${101|99}$'],
     [K('$0,1010$ je konačan decimalni broj – racionalan (${101|1000}$).'),
-     K('$0,(10) = 0,101010…$ je periodičan, pa je racionalan: jednak je ${10|99}$. Između jedinica je redom $1, 2, 3, …$ nula – to je broj koji nije periodičan.'),
-     K('U broju $0,1010010001…$ nijedan niz cifara se ne ponavlja zauvek (nule se stalno produžavaju), pa zapis nije ni konačan ni periodičan – broj je iracionalan.')]);
+     K('$0,(10) = 0,101010…$ je periodičan, pa je racionalan: jednak je ${10|99}$.'),
+     K('U broju $0,1010010001…$ između jedinica je redom $1, 2, 3, …$ nula, pa nijedan niz cifara se ne ponavlja zauvek (nule se stalno produžavaju), zato zapis nije ni konačan ni periodičan – broj je iracionalan.')]);
 
   Z(3, 'Koliko cifara ima period decimalnog zapisa broja ${1|13}$?',
     ['$6$', '$12$', '$13$', '$2$'],
@@ -397,7 +397,7 @@ module.exports = ({ L, Z, K, G, r, proveri, kocke, prava }) => {
 
   Z(1, 'Zaokruži broj $3,14159$ na dve decimale.',
     ['$3,14$', '$3,15$', '$3,1$', '$3,141$'],
-    [K('Gledamo treću decimalu: $3,14|159$ – ona je $1$.'),
+    [K('Gledamo treću decimalu: u broju $3,14159$ to je cifra $1$.'),
      K('Pošto je $1 < 5$, druga decimala ostaje ista: $3,14159 ≈ 3,14$.')]);
 
   Z(1, 'Zaokruži broj $0,0476$ na dve decimale.',
@@ -437,7 +437,7 @@ module.exports = ({ L, Z, K, G, r, proveri, kocke, prava }) => {
      K('$24,5$ se zaokružuje na $25$ – ne može biti stvarna dužina.')],
     brojevna(23, 25, [[23.5, '23,5', 2], [24.5, '24,5', 1]], { podela: 0.1, svaki: 10, dodatno: [{ lin: [[23.5, 0.08], [24.5, 0.08]], b: 2, debljina: 6 }] }));
 
-  Z(3, 'Marko je $√{2}$ zaokružio na $1,4$, pa izračunao $1,4² · 100$. Koliko se njegov rezultat razlikuje od tačne vrednosti $(√{2})² · 100$?',
+  Z(3, 'Marko je $√{2}$ zaokružio na $1,4$, pa izračunao $1,4² · 100$. Za koliko se njegov rezultat razlikuje od tačne vrednosti $(√{2})² · 100$?',
     ['za $4$', 'za $0$', 'za $0,4$', 'za $40$'],
     [K('Tačno: $(√{2})² · 100 = 2 · 100 = 200$.'),
      K('Markov račun: $1,4² = 1,96$, pa je $1,96 · 100 = 196$.'),
@@ -622,7 +622,7 @@ module.exports = ({ L, Z, K, G, r, proveri, kocke, prava }) => {
      K('$a : b = 2 : 3 = 8 : 12$ (puta $4$), a $b : c = 4 : 5 = 12 : 15$ (puta $3$).'),
      K('Spojimo: $a : b : c = 8 : 12 : 15$.')]);
 
-  Z(2, 'Tri drugara uložila su $400$, $600$ i $1000$ dinara u zajedničku kupovinu, a zatim zaradila $3000$ dinara. Zaradu dele srazmerno ulozima. Koliko dobija onaj koji je uložio $600$ dinara?',
+  Z(2, 'Tri drugara uložili su $400$, $600$ i $1000$ dinara u zajedničku kupovinu, a zatim zaradili $3000$ dinara. Zaradu dele srazmerno ulozima. Koliko dobija onaj koji je uložio $600$ dinara?',
     ['$900$ dinara', '$1000$ dinara', '$600$ dinara', '$1500$ dinara'],
     [K('Razmera uloga: $400 : 600 : 1000 = 2 : 3 : 5$.', ['tr0', 'tr1', 'tr2']),
      K('$2 + 3 + 5 = 10$ delova; jedan deo je $3000 : 10 = 300$ dinara.'),

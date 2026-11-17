@@ -126,14 +126,14 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, skok, skokovi, venn, upisi, tacki
     'Broj je deljiv sa 2 ako mu je poslednja cifra parna: $0, 2, 4, 6$ ili $8$. Takve brojeve zovemo parni.', 'deljivost',
     { medijiOdgovora: { vrsta: 'formula', tekst: 'parne cifre: $0,2,4,6,8$' } });
   Q(1, 'Koji od ovih brojeva je deljiv sa 5?',
-    ['1.235', '1.234', '1.238', '1.232'],
-    'Broj je deljiv sa 5 ako se završava cifrom 0 ili 5. Broj $1\\,235$ se završava sa 5, pa je deljiv sa 5.', 'deljivost',
-    { medijiOdgovora: broj([['1.23'], ['5', 1]]) });
+    ['1 235', '1 234', '1 238', '1 232'],
+    'Broj je deljiv sa 5 ako se završava cifrom 0 ili 5. Broj $1 235$ se završava sa 5, pa je deljiv sa 5.', 'deljivost',
+    { medijiOdgovora: broj([['1 23'], ['5', 1]]) });
   Q(1, 'Broj deljiv sa 10 mora da se završava…',
     ['cifrom 0', 'cifrom 5', 'parnom cifrom', 'cifrom 1'],
     'Deljivost sa 10 traži poslednju cifru 0, jer je $10=2\\cdot5$ – broj mora istovremeno biti deljiv sa 2 i sa 5.', 'deset',
     { mediji: { vrsta: 'formula', tekst: '$10=2\\cdot5$' } });
-  Q(2, 'Koliko najmanje nula na kraju mora imati broj da bi bio deljiv sa 100?',
+  Q(2, 'Koliko nula najmanje mora da ima broj na kraju da bi bio deljiv sa 100?',
     ['Dve nule', 'Jednu nulu', 'Tri nule', 'Četiri nule'],
     'Dekadne jedinice: deljivost sa 10 traži jednu nulu, sa 100 dve nule, sa 1000 tri nule, i tako dalje.', 'stotina',
     { medijiOdgovora: broj([['1'], ['00', 1]]) });
@@ -142,9 +142,9 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, skok, skokovi, venn, upisi, tacki
     'Da bi broj bio deljiv i sa 2 i sa 5, mora da se završava sa 0 (jer 2 traži parnu cifru, a 5 traži 0 ili 5 – jedino 0 zadovoljava oba).', 'deset',
     { medijiOdgovora: broj([['37'], ['0', 1]]) });
   Q(3, 'Koji od ovih brojeva je deljiv sa 2, sa 5 i sa 10 istovremeno?',
-    ['1.000', '1.005', '1.002', '1.025'],
-    'Deljivost sa 10 povlači deljivost sa 2 i sa 5. Od ponuđenih, samo se $1\\,000$ završava nulom; $1\\,002$ je deljiv samo sa 2, a $1\\,005$ i $1\\,025$ samo sa 5.', 'deset',
-    { medijiOdgovora: broj([['1.'], ['000', 1]]) });
+    ['1 000', '1 005', '1 002', '1 025'],
+    'Deljivost sa 10 povlači deljivost sa 2 i sa 5. Od ponuđenih, samo se $1 000$ završava nulom; $1 002$ je deljiv samo sa 2, a $1 005$ i $1 025$ samo sa 5.', 'deset',
+    { medijiOdgovora: broj([['1 '], ['000', 1]]) });
 
   // ── 5. deljivost sa 4 i 25 ──
   L('Deljivost sa 4 i 25');
@@ -153,24 +153,24 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, skok, skokovi, venn, upisi, tacki
     'Gledaš samo poslednje dve cifre: ako čine broj deljiv sa 4, ceo broj je deljiv sa 4. Na primer, $132$ je deljivo sa 4 jer je $32$ deljivo sa 4.', 'deljivost',
     { mediji: broj([['1'], ['32', 1]]) });
   Q(1, 'Koji od ovih brojeva je deljiv sa 4?',
-    ['1.024', '1.014', '1.022', '1.026'],
-    'Gledamo poslednje dve cifre: $24$ je deljivo sa 4 ($24=4\\cdot6$), pa je i ceo broj $1\\,024$ deljiv sa 4.', 'deljivost',
+    ['1 024', '1 014', '1 022', '1 026'],
+    'Gledamo poslednje dve cifre: $24$ je deljivo sa 4 ($24=4\\cdot6$), pa je i ceo broj $1 024$ deljiv sa 4.', 'deljivost',
     { medijiOdgovora: broj([['10'], ['24', 1]]) });
   Q(1, 'Broj deljiv sa 25 mora da se završava na…',
     ['00, 25, 50 ili 75', 'samo na 25', 'samo na 00', '5 ili 0'],
-    'Četiri moguća završetka: $00, 25, 50$ i $75$. Na primer, $3\\,175$ se završava sa $75$, pa je deljiv sa 25.', 'deljivost',
+    'Četiri moguća završetka: $00, 25, 50$ i $75$. Na primer, $3 175$ se završava sa $75$, pa je deljiv sa 25.', 'deljivost',
     { medijiOdgovora: G(O, [{ tx: '00', at: [-3, 0], vel: 20, b: 1 }, { tx: '25', at: [-1, 0], vel: 20, b: 1 }, { tx: '50', at: [1, 0], vel: 20, b: 1 }, { tx: '75', at: [3, 0], vel: 20, b: 1 }], { ...bez, velicina: 280 }) });
   Q(2, 'Koji od ovih brojeva je deljiv sa 25?',
-    ['4.075', '4.070', '4.085', '4.055'],
-    'Broj $4\\,075$ se završava sa $75$, a to je jedan od dozvoljenih završetaka za deljivost sa 25 ($00,25,50,75$).', 'deljivost',
-    { medijiOdgovora: broj([['4.0'], ['75', 1]]) });
+    ['4 075', '4 070', '4 085', '4 055'],
+    'Broj $4 075$ se završava sa $75$, a to je jedan od dozvoljenih završetaka za deljivost sa 25 ($00,25,50,75$).', 'deljivost',
+    { medijiOdgovora: broj([['4 0'], ['75', 1]]) });
   Q(2, 'Ako se broj završava sa 00, on je sigurno deljiv sa…',
     ['i sa 4 i sa 25', 'samo sa 4', 'samo sa 25', 'sa 3'],
     'Završetak 00 znači da su poslednje dve cifre deljive i sa 4 i sa 25, pa je i ceo broj deljiv sa oba. Takav broj je deljiv i sa 100.', 'stotina',
     { mediji: broj([['2 3'], ['00', 1]]) });
   Q(3, 'Koji od ovih brojeva je deljiv i sa 4 i sa 25?',
-    ['2.300', '2.325', '2.304', '2.350'],
-    'Deljiv sa 4: gledamo poslednje dve cifre. Deljiv sa 25: završetak $00,25,50,75$. Završetak $00$ (broj $2\\,300$) zadovoljava oba uslova.', 'deljivost',
+    ['2 300', '2 325', '2 304', '2 350'],
+    'Deljiv sa 4: gledamo poslednje dve cifre. Deljiv sa 25: završetak $00,25,50,75$. Završetak $00$ (broj $2 300$) zadovoljava oba uslova.', 'deljivost',
     { medijiOdgovora: broj([['23'], ['00', 1]]) });
 
   // ── 6. deljivost sa 3 i 9 ──
@@ -184,12 +184,12 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, skok, skokovi, venn, upisi, tacki
     'Za $405$: zbir cifara je $4+0+5=9$, a $9$ je deljivo sa 3, pa je i $405$ deljivo sa 3.', 'deljivost',
     { medijiOdgovora: zbirCifara([4, 0, 5]) });
   Q(2, 'Koji od ovih brojeva je deljiv sa 9?',
-    ['3.186', '3.183', '3.187', '3.185'],
-    'Za $3\\,186$: zbir cifara je $3+1+8+6=18$, a $18$ je deljivo sa 9, pa je i ceo broj deljiv sa 9.', 'deljivost',
+    ['3 186', '3 183', '3 187', '3 185'],
+    'Za $3 186$: zbir cifara je $3+1+8+6=18$, a $18$ je deljivo sa 9, pa je i ceo broj deljiv sa 9.', 'deljivost',
     { medijiOdgovora: zbirCifara([3, 1, 8, 6]) });
-  Q(2, 'Da li je broj 1.234 deljiv sa 3?',
+  Q(2, 'Da li je broj 1 234 deljiv sa 3?',
     ['Ne, jer je zbir cifara 10', 'Da, jer je paran', 'Da, jer se završava sa 4', 'Ne, jer se završava sa 4'],
-    'Zbir cifara je $1+2+3+4=10$, a $10$ nije deljivo sa 3, pa ni $1\\,234$ nije deljivo sa 3. Paran broj nije automatski deljiv sa 3!', 'deljivost',
+    'Zbir cifara je $1+2+3+4=10$, a $10$ nije deljivo sa 3, pa ni $1 234$ nije deljivo sa 3. Paran broj nije automatski deljiv sa 3!', 'deljivost',
     { medijiOdgovora: zbirCifara([1, 2, 3, 4]) });
   Q(2, 'Ako je broj deljiv sa 9, on je uvek deljiv i sa…',
     ['3', '6', '2', '5'],
@@ -263,12 +263,12 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, skok, skokovi, venn, upisi, tacki
     'Kad nema zajedničkih elemenata, presek je prazan skup $\\varnothing$. Takvi skupovi se zovu disjunktni – ne seku se.', 'presek',
     { mediji: G({ c1: [-2.5, 0], c2: [2.5, 0] }, [{ kr: 'c1', r: 1.8, b: 1, prazno: 1 }, { kr: 'c2', r: 1.8, b: 2, prazno: 1 }, { tx: 'A', at: [-2.5, 2.1], vel: 16, b: 1 }, { tx: 'B', at: [2.5, 2.1], vel: 16, b: 2 }], { velicina: 260 }) });
   Q(1, 'Koji deo Venovog dijagrama je obojen?',
-    ['Presek skupova A i B', 'Unija skupova A i B', 'Razlika A i B', 'Samo skup A'],
-    'Obojen je „listić“ gde se krugovi preklapaju – to je presek $A\\cap B$, deo koji pripada i skupu A i skupu B.', 'presek',
+    ['Presek skupova $A$ i $B$', 'Unija skupova $A$ i $B$', 'Razlika $A$ i $B$', 'Samo skup $A$'],
+    'Obojen je „listić“ gde se krugovi preklapaju – to je presek $A\\cap B$, deo koji pripada i skupu $A$ i skupu $B$.', 'presek',
     { mediji: G(O, venn({ presek: true }).e, { ...bez, velicina: 260 }) });
-  Q(3, 'Na Venovom dijagramu obojen je deo skupa A koji se NE preklapa sa B. Koja je to operacija?',
+  Q(3, 'Na Venovom dijagramu obojen je deo skupa $A$ koji se NE preklapa sa $B$. Koja je to operacija?',
     ['Razlika $A \\setminus B$', 'Presek $A \\cap B$', 'Unija $A \\cup B$', 'Prazan skup'],
-    'Obojen je samo deo kruga A van kruga B – to su elementi koji pripadaju A, ali ne pripadaju B, dakle razlika $A\\setminus B$.', 'razlika',
+    'Obojen je samo deo kruga $A$ van kruga $B$ – to su elementi koji pripadaju $A$, ali ne pripadaju $B$, dakle razlika $A\\setminus B$.', 'razlika',
     { mediji: G(O, venn({ samoA: true }).e, { ...bez, velicina: 260 }) });
   S(2, 'Spoji operaciju sa rezultatom za $A=\\{1,2,3\\}$ i $B=\\{3,4\\}$.',
     [['$A \\cap B$', '$\\{3\\}$'], ['$A \\cup B$', '$\\{1,2,3,4\\}$'], ['$A \\setminus B$', '$\\{1,2\\}$']],

@@ -252,12 +252,12 @@ module.exports = ({ L, Z, G, K, proveri, r, telo, A }) => {
   Z(3, 'U valjak poluprečnika osnove $r$ i visine $2r$ upisana je lopta. Koliki je odnos zapremina lopte i valjka?',
     ['$2 : 3$', '$1 : 2$', '$1 : 3$', '$3 : 4$'],
     [K('Lopta ima poluprečnik $r$ (jer je visina valjka $2r$).'),
-     K('$V_{lopte} = {4r³π|3}$, $V_{valjka} = r²π · 2r = 2r³π$.'),
+     K('Zapremina lopte je ${4r³π|3}$, a zapremina valjka je $r²π · 2r = 2r³π$.'),
      K('Odnos: ${4r³π|3} : 2r³π = {4|3} · {1|2} = {2|3} = 2 : 3$.')]);
 
   Z(3, 'Lopta poluprečnika $5 cm$ upisana je u valjak. Kolika je zapremina valjka? (Uzmi $π ≈ 3,14$.)',
     ['$785 cm³$', '$523,3 cm³$', '$1570 cm³$', '$392,5 cm³$'],
-    [K('Lopta dodiruje valjak, pa je $r_{valjka} = 5 cm$ i $H = 2 · 5 = 10 cm$.'),
+    [K('Lopta dodiruje valjak, pa je poluprečnik valjka $r = 5 cm$, a visina $H = 2 · 5 = 10 cm$.'),
      K('$V = r²πH = 25 · 3,14 · 10 = 785 cm³$.')]);
 
   // ════════════ dopuna do 10 po lekciji ════════════
@@ -437,7 +437,7 @@ module.exports = ({ L, Z, G, K, proveri, r, telo, A }) => {
     [K('$r = 5 cm$; $V = {25π · 9|3} = 75π cm³ ≈ 235,6 cm³$.')]);
   Z(2, 'Kupa i valjak imaju istu osnovu i istu visinu. Zapremina kupe je:',
     ['trećina zapremine valjka', 'polovina zapremine valjka', 'jednaka zapremini valjka', 'dvostruka zapremina valjka'],
-    [K('$V_{kupe} = {1|3} V_{valjka}$ – ista osnova i visina.')]);
+    [K('Zapremina kupe je ${1|3}$ zapremine valjka (ista osnova i visina).')]);
   Z(3, 'Kupa ima $r = 9 cm$ i $H = 4 cm$. Kolika joj je zapremina?',
     ['$108π cm³$', '$36π cm³$', '$324π cm³$', '$144π cm³$'],
     [K('$V = {81π · 4|3} = 108π cm³ ≈ 339,3 cm³$.')]);
@@ -524,7 +524,7 @@ module.exports = ({ L, Z, G, K, proveri, r, telo, A }) => {
     [K('$r = 5 cm$; $V = {4 · 125π|3} = {500π|3} cm³ ≈ 523,6 cm³$.')]);
   Z(3, 'Kocka ivice $a$ i u nju upisana lopta. Odnos zapremina kocke i lopte je:',
     ['$6 : π$', '$π : 6$', '$4 : 3$', '$3 : 4$'],
-    [K('$V_{kocke} = a³$; lopta ima $r = {a|2}$, pa je $V_{lopte} = {4|3}π({a|2})³ = {πa³|6}$.'),
+    [K('Kocka ima zapreminu $a³$, a lopta ima $r = {a|2}$, pa je njena zapremina ${4|3}π({a|2})³ = {πa³|6}$.'),
      K('Odnos: $a³ : {πa³|6} = 6 : π$.')]);
   Z(3, 'Lopta poluprečnika $4 cm$ upisana je u kocku. Kolika je zapremina kocke?',
     ['$512 cm³$', '$64 cm³$', '$216 cm³$', '$343 cm³$'],

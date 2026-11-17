@@ -11,14 +11,14 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, S3, rad, naKrugu, pravilni,
       ], { bezImena: ['O', 'A', 'B', 'C', 'D', 'T', 'P', 'R', 'M', 'N'], velicina: 240 }),
     });
 
-  Q(1, 'Kako se zove prava p na slici?', ['Tangenta', 'Sečica', 'Tetiva', 'Poluprečnik'],
+  Q(1, 'Kako se zove prava $p$ na slici?', ['Tangenta', 'Sečica', 'Tetiva', 'Poluprečnik'],
     'Tangenta dodiruje kružnicu u samo jednoj tački (lat. tangere – dodirnuti). Kad se kamen zavitlan u praćki pusti, poleti baš po tangenti.',
     'tangenta', { mediji: G({ O: [0, 0, -90], T: [0, 3, 90], P: [-4.5, 3], R: [4.5, 3] }, [{ kr: 'O', r: 3, b: 0 }, { d: 'PR', b: 1 }, { tacka: 'OT' }, { tx: 'p', at: [4, 3.6], b: 1 }], { bezImena: ['P', 'R'], velicina: 220 }) });
 
   {
     const t = { O: [0, 0, 90], A: K(230), B: K(310), C: K(100) };
     Q(3, 'Centralni ugao $AOB$ je 80°. Koliki je periferijski ugao $ACB$ nad istim lukom?', ['40°', '80°', '160°', '20°'],
-      'Periferijski ugao je uvek POLOVINA centralnog ugla nad istim lukom: 80° : 2 = 40°. I gde god da se tačka $C$ pomeri po većem luku, ugao ostaje 40°!',
+      'Periferijski ugao je uvek POLOVINA centralnog ugla nad istim lukom: 80° : 2 = 40°. Gde god da se tačka $C$ pomeri po većem luku, ugao ostaje 40°!',
       'ugao', { mediji: G(t, [{ kr: 'O', r: 4, b: 5 }, { d: 'OA' }, { d: 'OB' }, { d: 'CA', b: 0 }, { d: 'CB', b: 0 }, { u: 'AOB', o: '80°' }, { u: 'ACB', o: 'α', b: 1, r: 30 }], { velicina: 220 }), medijiOdgovora: A('periferijski-ugao') });
   }
 
@@ -133,7 +133,7 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, S3, rad, naKrugu, pravilni,
   }
 
   Q(1, 'Maketa kuće u razmeri 1 : 50 visoka je 20 cm. Kolika je visina prave kuće?', ['10 m', '1 m', '100 m', '2,5 m'],
-    '20 cm · 50 = 1.000 cm = 10 m. Razmera kaže koliko puta je stvarnost veća od modela; maketa voza u razmeri 1 : 87 („H0“) je najpopularnija na svetu.',
+    '20 cm · 50 = 1.000 cm = 10 m. Razmera kaže koliko puta je stvarnost veća od modela; maketa voza u razmeri 1 : 87 („H0“) je jedna od najpopularnijih na svetu.',
     'maketa');
 
   proveri(Math.abs(1 / (2 * Math.PI) - 0.159) < 0.001, 'konopac');

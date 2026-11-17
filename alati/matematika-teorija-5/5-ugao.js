@@ -42,13 +42,13 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, uglomer, O, bez }) => {
     { mediji: ugao(60) });
   Q(1, 'Kako se zove zajednička početna tačka krakova ugla?',
     ['Teme', 'Krak', 'Stranica', 'Centar'],
-    'Teme je tačka iz koje polaze oba kraka ugla. Ugao $\\angle AOB$ ima teme u tački O.', 'teme',
+    'Teme je tačka iz koje polaze oba kraka ugla. Ugao $\\angle AOB$ ima teme u tački $O$.', 'teme',
     { medijiOdgovora: ugao(60, { teme: true }) });
   Q(1, 'Kako se zovu poluprave koje čine ugao?',
     ['Kraci', 'Temena', 'Stranice', 'Dijagonale'],
     'Kraci su dve poluprave koje polaze iz temena. Ugao je „razmak“ između njih.', 'krak',
     { mediji: ugao(60) });
-  Q(2, 'Kako se označava ugao sa temenom O i kracima kroz A i B?',
+  Q(2, 'Kako se označava ugao sa temenom $O$ i kracima kroz $A$ i $B$?',
     ['$\\angle AOB$', '$AB$', '$\\vec{AB}$', '$O + A + B$'],
     'Ugao označavamo sa $\\angle AOB$ (teme u sredini) ili grčkim slovom, na primer $\\alpha$.', 'ugao',
     { mediji: ugao(50, { o: 'α' }) });
@@ -169,11 +169,11 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, uglomer, O, bez }) => {
     ['Uporedni (suplementni) uglovi', 'Unakrsni uglovi', 'Komplementni uglovi', 'Prav uglovi'],
     'Uporedni uglovi imaju zajednički krak, a ostala dva kraka čine pravu. Njihov zbir je uvek 180°.', 'uporedan',
     { mediji: unakrsni({ uporedni: true }) });
-  Q(2, 'Ako jedan unakrsni ugao ima 55°, koliki je njemu unakrsni ugao?',
+  Q(2, 'Ako jedan od unakrsnih uglova ima 55°, koliki je drugi?',
     ['55°', '125°', '35°', '90°'],
     'Unakrsni uglovi su jednaki, pa i drugi ima 55°. Ugao uporedan sa njima imao bi $180° - 55° = 125°$.', 'unakrsni',
     { medijiOdgovora: unakrsni({ alfa: true, polu: 27.5, o: '55°' }) });
-  Q(3, 'Pri preseku dve prave, jedan ugao ima 120°. Koliki je njemu UPOREDAN ugao?',
+  Q(3, 'Pri preseku dve prave, jedan ugao ima 120°. Koliki je njemu UPOREDNI ugao?',
     ['60°', '120°', '30°', '90°'],
     'Uporedni uglovi se dopunjuju do 180°: $180° - 120° = 60°$. Unakrsni ugao bi bio 120° (jednak polaznom).', 'uporedan',
     { medijiOdgovora: unakrsni({ uporedni: true, polu: 30, o1: '120°', o2: '60°' }) });
@@ -202,7 +202,7 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, uglomer, O, bez }) => {
     { mediji: transverzala({ par: 'naizmenicni' }) });
   Q(3, 'Na paralelnim pravama presecanim transverzalom, jedan ugao ima 70°. Koliki je njemu saglasan ugao?',
     ['70°', '110°', '20°', '90°'],
-    'Saglasni uglovi su jednaki, pa i njemu saglasan ugao ima 70°. Uporedan ugao sa njim imao bi $180°-70°=110°$.', 'saglasni',
+    'Saglasni uglovi su jednaki, pa i njemu saglasan ugao ima 70°. Uporedni ugao sa njim imao bi $180°-70°=110°$.', 'saglasni',
     { mediji: transverzala({ par: 'saglasni' }) });
 
 };

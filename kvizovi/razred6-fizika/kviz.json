@@ -1023,7 +1023,7 @@
         "Samo kada posmatramo njeno okretanje oko svoje ose",
         "Samo ako se zanemari njeno kretanje oko Sunca"
       ],
-      "zanimljivost": "Od Sunca je Zemlja udaljena oko 150 miliona km, a njen prečnik je oko 12.700 km – zato se u tom poređenju pravi kao tačka.",
+      "zanimljivost": "Od Sunca je Zemlja udaljena oko 150 miliona $km$, a njen prečnik je oko 12.700 km – zato se u tom poređenju pravi kao tačka.",
       "rec": "zemlja"
     },
     {
@@ -1477,7 +1477,7 @@
         "Dužina putanje koju telo pređe",
         "Brzina kojom se telo kreće kroz prostor",
         "Vreme koje traje kretanje tela od starta",
-        "Masa tela koje se kreće, izražena u kg"
+        "Masa tela koje se kreće, izražena u $kg$"
       ],
       "zanimljivost": "Pređeni put se meri u metrima (ili kilometrima). Na putu kroz grad pređeni put je duži od rastojanja „vazdušnom linijom“.",
       "rec": "put"
@@ -1544,7 +1544,7 @@
         "v = t / s",
         "v = s + t"
       ],
-      "zanimljivost": "Slovo v dolazi od latinske reči velocitas – brzina.",
+      "zanimljivost": "Slovo $v$ dolazi od latinske reči velocitas – brzina.",
       "rec": "brzina"
     },
     {
@@ -2237,7 +2237,7 @@
     {
       "lekcija": 9,
       "tezina": 3,
-      "pitanje": "Na grafiku s(t) dve prave linije – jedna strmija, druga blaža. Koje telo je brže?",
+      "pitanje": "Na grafiku $s(t)$ dve prave linije – jedna strmija, druga blaža. Koje telo je brže?",
       "odgovori": [
         "Telo sa strmijom linijom",
         "Telo sa blažom linijom",
@@ -2290,7 +2290,7 @@
     {
       "lekcija": 9,
       "tezina": 1,
-      "pitanje": "Šta se na grafiku s(t) nalazi na horizontalnoj osi?",
+      "pitanje": "Šta se na grafiku $s(t)$ nalazi na horizontalnoj osi?",
       "odgovori": [
         "Vreme",
         "Put",
@@ -2303,7 +2303,7 @@
     {
       "lekcija": 9,
       "tezina": 2,
-      "pitanje": "Šta znači horizontalna linija na grafiku s(t)?",
+      "pitanje": "Šta znači horizontalna linija na grafiku $s(t)$?",
       "odgovori": [
         "Telo miruje",
         "Telo se kreće najbrže",
@@ -2343,7 +2343,7 @@
     {
       "lekcija": 9,
       "tezina": 3,
-      "pitanje": "Na grafiku v(t) brzina je stalno 5 m/s tokom 4 s. Koliki je pređeni put?",
+      "pitanje": "Na grafiku $v(t)$ brzina je stalno 5 m/s tokom 4 s. Koliki je pređeni put?",
       "odgovori": [
         "20 m",
         "9 m",
@@ -2383,7 +2383,7 @@
     {
       "lekcija": 9,
       "tezina": 2,
-      "pitanje": "Iz grafika s(t) vidi se da je telo za 2 s prešlo 10 m. Kolika mu je brzina?",
+      "pitanje": "Iz grafika $s(t)$ vidi se da je telo za 2 s prešlo 10 m. Kolika mu je brzina?",
       "odgovori": [
         "5 m/s",
         "20 m/s",
@@ -2426,7 +2426,7 @@
     {
       "lekcija": 9,
       "tezina": 1,
-      "pitanje": "Šta se nalazi na vertikalnoj osi grafika s(t)?",
+      "pitanje": "Šta se nalazi na vertikalnoj osi grafika $s(t)$?",
       "odgovori": [
         "Pređeni put",
         "Vreme",
@@ -2439,7 +2439,7 @@
     {
       "lekcija": 9,
       "tezina": 3,
-      "pitanje": "Na grafiku s(t) linija ide naviše, pa postaje horizontalna, pa opet ide naviše. Šta je radilo telo?",
+      "pitanje": "Na grafiku $s(t)$ linija ide naviše, pa postaje horizontalna, pa opet ide naviše. Šta je radilo telo?",
       "odgovori": [
         "Kretalo se, zastalo, pa nastavilo",
         "Stalno je ubrzavalo, sve brže i brže",
@@ -2528,7 +2528,7 @@
     {
       "lekcija": 9,
       "tezina": 3,
-      "pitanje": "Dva tela kreću istovremeno iz istog mesta. Na grafiku s(t) njihove linije se seku posle nekog vremena. Šta to znači?",
+      "pitanje": "Dva tela kreću istovremeno iz istog mesta. Na grafiku $s(t)$ njihove linije se seku posle nekog vremena. Šta to znači?",
       "odgovori": [
         "U tom trenutku su na istom mestu",
         "Oba tela imaju istu brzinu u tom trenutku",
@@ -2600,14 +2600,14 @@
     {
       "lekcija": 9,
       "tezina": 1,
-      "pitanje": "Ako je na grafiku v(t) linija horizontalna, telo se kreće…",
+      "pitanje": "Ako je na grafiku $v(t)$ linija horizontalna, telo se kreće…",
       "odgovori": [
         "stalnom brzinom",
         "sve brže",
         "sve sporije",
         "unazad"
       ],
-      "zanimljivost": "Površina ispod ove linije na grafiku v(t) daje pređeni put – za 5 s i brzinu 4 m/s to je 20 m.",
+      "zanimljivost": "Površina ispod ove linije na grafiku $v(t)$ daje pređeni put – za 5 s i brzinu 4 m/s to je 20 m.",
       "rec": "stalno",
       "medijiOdgovora": {
         "vrsta": "fizika",
@@ -2634,14 +2634,14 @@
     {
       "lekcija": 9,
       "tezina": 3,
-      "pitanje": "Šta predstavlja nagib prave na grafiku s(t)?",
+      "pitanje": "Šta predstavlja nagib prave na grafiku $s(t)$?",
       "odgovori": [
         "Brzinu tela",
         "Masu tela",
         "Vreme kretanja",
         "Pređeni put"
       ],
-      "zanimljivost": "Nagib prave na grafiku s(t) je put podeljen vremenom: 20 m za 4 s daje 5 m/s.",
+      "zanimljivost": "Nagib prave na grafiku $s(t)$ je put podeljen vremenom: 20 m za 4 s daje 5 m/s.",
       "rec": "nagib",
       "medijiOdgovora": {
         "vrsta": "fizika",
@@ -2683,7 +2683,7 @@
     {
       "lekcija": 9,
       "tezina": 2,
-      "pitanje": "Telo se kreće brzinom 3 m/s. Koliki put pređe za 5 s, prema grafiku s(t)?",
+      "pitanje": "Telo se kreće brzinom 3 m/s. Koliki put pređe za 5 s, prema grafiku $s(t)$?",
       "odgovori": [
         "15 m",
         "8 m",
@@ -3189,7 +3189,7 @@
         "Od njihove brzine kretanja i oblika",
         "Od njihovih masa, ali ne i rastojanja"
       ],
-      "zanimljivost": "Newton je zakon gravitacije objavio 1687. u delu Principia.",
+      "zanimljivost": "Njutn je zakon gravitacije objavio 1687. u delu „Principia“.",
       "rec": "masa"
     },
     {
@@ -4110,7 +4110,7 @@
       "odgovori": [
         "Kilogram",
         "Gram (g), hiljaditi deo",
-        "Tona (t), hiljadu kg",
+        "Tona (t), hiljadu $kg$",
         "Njutn (N)"
       ],
       "zanimljivost": "Od 2019. kilogram je definisan preko Plankove konstante, a ne više preko metalnog valjka u Parizu.",
@@ -4201,7 +4201,7 @@
       "odgovori": [
         "Svojstvo tela ili pojave koje se može izmeriti",
         "Bilo koja reč kojom opisujemo neko telo ili pojavu",
-        "Oznaka koja se piše na jedinici mere, npr. m ili kg",
+        "Oznaka koja se piše na jedinici mere, npr. $m$ ili $kg$",
         "Svaka osobina koju možemo da zamislimo, čak i ako se ne može izmeriti"
       ],
       "zanimljivost": "Lepota nije fizička veličina – ne može se izmeriti instrumentom.",
@@ -4210,7 +4210,7 @@
     {
       "lekcija": 15,
       "tezina": 3,
-      "pitanje": "Koja izvedena jedinica se dobija kao kg · m/s²?",
+      "pitanje": "Koja izvedena jedinica se dobija kao $kg · m/s²$?",
       "odgovori": [
         "Njutn",
         "Džul",
@@ -4697,7 +4697,7 @@
         "Oko 19 sati",
         "Oko 190 godina"
       ],
-      "zanimljivost": "Sunce je udaljeno oko 150 miliona km.",
+      "zanimljivost": "Sunce je udaljeno oko 150 miliona $km$.",
       "rec": "sunce"
     },
     {
@@ -4786,7 +4786,7 @@
         "Odnos apsolutne greške i izmerene vrednosti",
         "Zbir svih merenja podeljen ukupnim brojem merenja",
         "Najveća greška od svih merenja koja smo uradili",
-        "Greška izražena u jedinicama, npr. u cm"
+        "Greška izražena u jedinicama, npr. u $cm$"
       ],
       "zanimljivost": "Relativna greška se često izražava u procentima i pokazuje koliko je merenje „dobro“.",
       "rec": "relativna"
@@ -4915,7 +4915,7 @@
     {
       "lekcija": 18,
       "tezina": 3,
-      "pitanje": "Ako je dužina izmerena kao (20,0 ± 0,1) cm, u kom opsegu je prava vrednost?",
+      "pitanje": "Ako je dužina izmerena kao (20,0 ± 0,1) $cm$, u kom opsegu je prava vrednost?",
       "odgovori": [
         "Između 19,9 cm i 20,1 cm",
         "Tačno 20 cm",
@@ -4948,7 +4948,7 @@
         "Aristotel iz Stagire",
         "Ajnštajn"
       ],
-      "zanimljivost": "Galilej je pokazao da kuglica na glatkoj podlozi prelazi sve duži put kada je trenje manje. Njutn je to kasnije formulisao kao Prvi Njutnov zakon.",
+      "zanimljivost": "Galilej je pokazao da kuglica na glatkoj podlozi prelazi sve duži put kada je trenje manje. Njutn je to kasnije formulisao kao prvi Njutnov zakon.",
       "rec": "galilej"
     },
     {
@@ -5197,7 +5197,7 @@
         "Zbog gravitacije koja vuče nazad",
         "Da bi savladao svoju inerciju"
       ],
-      "zanimljivost": "Bez trenja i otpora vazduha bicikl bi po Prvom Njutnovom zakonu nastavio da se kreće sam.",
+      "zanimljivost": "Bez trenja i otpora vazduha bicikl bi po prvom Njutnovom zakonu nastavio da se kreće sam.",
       "rec": "otpor"
     },
     {
@@ -5249,7 +5249,7 @@
         "400 N",
         "0,4 N"
       ],
-      "zanimljivost": "Na Mesecu bi isto telo imalo težinu oko 6,5 N, jer je tamo g oko 1,6 N/kg.",
+      "zanimljivost": "Na Mesecu bi isto telo imalo težinu oko 6,5 N, jer je tamo $g$ oko 1,6 N/kg.",
       "rec": "težina"
     },
     {
@@ -5379,7 +5379,7 @@
         "6 kg",
         "6.000 kg"
       ],
-      "zanimljivost": "Masa se računa kao m = Q / g.",
+      "zanimljivost": "Masa se računa kao m = G / g.",
       "rec": "masa",
       "medijiOdgovora": {
         "vrsta": "formula",
@@ -5419,7 +5419,7 @@
       "odgovori": [
         "Grčkim slovom ρ (ro)",
         "Slovom G (od reči gustina)",
-        "Slovom m (od reči masa)",
+        "Slovom $m$ (od reči masa)",
         "Slovom V (od reči volumen)"
       ],
       "zanimljivost": "Gustina se računa kao masa podeljena zapreminom: ρ = m / V. Jedinica je kilogram po kubnom metru (kg/m³).",
@@ -6456,7 +6456,7 @@
         "Voda ispari na sobnoj temperaturi, pa se ne može koristiti",
         "Živa se ne širi pri promeni temperature"
       ],
-      "zanimljivost": "Paskal je navodno napravio barometar sa crnim vinom – stub je bio visok preko 10 m!",
+      "zanimljivost": "Paskal je navodno napravio barometar sa vinom – stub je bio visok preko 10 m!",
       "rec": "živa",
       "medijiOdgovora": {
         "vrsta": "fizika",

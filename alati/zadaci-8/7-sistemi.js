@@ -348,8 +348,8 @@ module.exports = ({ L, Z, G, K, proveri, r, dvePrave, grafik, A }) => {
     ['40', '30', '45', '35'],
     [K('$x + y = 50$ i $x = 4y$; uvrstimo: $4y + y = 50$, pa je $y = 10$.'),
      K('Veći je $x = 40$.')]);
-  Z(3, 'Prodato je $100$ ulaznica za $16.000$ dinara. Ulaznica za odrasle je $200$, a za decu $100$ dinara. Koliko je prodato ulaznica za odrasle?',
+  Z(3, 'Prodato je $100$ ulaznica za $16 000$ dinara. Ulaznica za odrasle je $200$, a za decu $100$ dinara. Koliko je prodato ulaznica za odrasle?',
     ['60', '40', '50', '70'],
-    [K('$a + d = 100$ i $200a + 100d = 16.000$.'),
-     K('Uvrstimo $d = 100 − a$: $200a + 100(100 − a) = 16.000$, pa je $100a = 6000$ i $a = 60$.')]);
+    [K('$a + d = 100$ i $200a + 100d = 16 000$.'),
+     K('Uvrstimo $d = 100 − a$: $200a + 100(100 − a) = 16 000$, pa je $100a = 6000$ i $a = 60$.')]);
 };

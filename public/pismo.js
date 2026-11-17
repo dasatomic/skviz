@@ -18,7 +18,9 @@
   // međunarodne skraćenice koje se i u ćiriličnom tekstu pišu latinicom (ДНК, САД, ТВ… se preslovljavaju)
   const SKRACENICE = new Set(['BTS', 'ILM', 'IUCN', 'RGB', 'OASIS', 'GPS', 'GIS', 'LHC', 'BCG', 'HPV', 'MVP', 'CERN', 'ABO', 'AA', 'AAA', 'USB', 'WC', 'Rh', 'HIPPO', 'SOS',
     // TLA+ (kategorija „Eksperimenti“): ime jezika i alata
-    'TLA', 'TLC']);
+    'TLA', 'TLC',
+    // skraćenice NBA timova (lenta)
+    'GSW', 'CLE']);
   // hemijski simboli (u tekstovima o elementima ostaju latinicom: Au, Fe, Pb, N, Ca…)
   const SIMBOLI = new Set(('H He Li Be B C N O F Ne Na Mg Al Si P S Cl Ar K Ca Ti Cr Mn Fe Co Ni Cu Zn As Se Br Kr Ag Sn Sb I Xe ' +
     'Ba Pt Au Hg Pb Bi Po Rn Ra U Pu W Ur Sr Cs').split(' '));
@@ -54,6 +56,8 @@
     'felis catus panthera leo tigris gorilla pongo australopithecus escherichia coli coccinella septempunctata drosophila melanogaster ' +
     'pinus longaeva vacca adolescere tricolor ' +
     'centum mille passus septem omnis cellula carpe diem mens sana corpore sano perpetuum mobile ' +
+    'crescit collaborare fermentum carbo morus vitro nostrum urbe condita res publica libertas veritas victoria principia ' +
+    'zoon botane endling hippo ambulance help ' +
     // poreklo gramatičkih termina (Gramatika 7): lat. potentia, imperare…, grč. sýntagma, nem. Fußnote
     'potentia imperare congruentia particula copula reportare plagiarius citare aisthesis sýntagma onomatopoiía fußnote fuß ' +
     // sport: nazivi timova i takmičenja, nadimci („Heat“, „Final Four“, „Adriatic Basketball Association“)
@@ -61,12 +65,12 @@
     // igre, serije, filmovi, likovi i ličnosti u izvornom obliku (dopuna)
     'pubg rockstar electronic activision ubisoft sega mojang rovio theft need speed free fire scarface bellic johnson michael borderland patrick krabs amphibia friends seinfeld narcos dark sherlock luther broadchurch ketchum brock oak dragon vegeta piccolo garfield spider batman minnie donald pluto luigi toad peach rosalina zuckerberg tajiri north east south habitat hunting insects population precipitation parasites overharvesting moesia kampf nitrogen ' +
     // muzičke oznake (italijanski)
-    'allegro adagio crescendo decrescendo fortissimo pianissimo ff pp mf mp ' +
+    'allegro adagio andante diminuendo crescendo decrescendo fortissimo pianissimo ff pp mf mp ' +
     // engleske službene reči (ne postoje u srpskom)
     'the of and with from is am are up off all').split(/\s+/).filter(Boolean));
   const NASTAVCI = /^(a|u|om|e|i|ima|ov|ova|ove|ovi|ovo|ovog|ovom|ovu|ovih|ovim|ovoj|ovim)$/;
   // samo kad su sami u navodu: „love“ (tenis) – inače je to srpska reč (love)
-  const STRANE_U_NAVODU = new Set(['love']);
+  const STRANE_U_NAVODU = new Set(['love', 'presto']); // presto (muzička oznaka) – inače престо
   function strana(tok) {
     if (/[qwxyQWXY]/.test(tok) && /[a-z]/.test(tok)) return true; // ne XIV, HUNTR/X
     const m = tok.toLowerCase();
@@ -87,7 +91,7 @@
 
   function recUCir(t) {
     const m = t.toLowerCase();
-    const bezNj = /^(konjug|konjunk|injek|vanjezi|tanjug)/.test(m), bezDz = /^(nad|pod)ž/.test(m);
+    const bezNj = /^(konjug|konjunk|injek|vanjezi|tanjug|anjon)/.test(m), bezDz = /^(nad|pod)ž/.test(m);
     let out = '';
     for (let i = 0; i < t.length; i++) {
       const c = m[i], d = m[i + 1], vel = t[i] !== c;
@@ -131,7 +135,12 @@
         if (!/[=\d]/.test(tekst) && !(/→/.test(tekst) && /^[A-Z]$/.test(tok))) return false;
         return (/^[iuaoskv]$/i.test(tok) ? '+·×÷^<>/' : OPERATORI).includes(z);
       };
-      if (operator(preZnak, pre.slice(-2, -1)) || operator(posleZnak, posle.slice(1, 2))) return true;
+      // „okular 15× i objektiv 100×“: × posle broja je „puta“, a „i“ je veznik
+      const putaPre = preZnak === '×' && /\d×\s?$/.test(pre);
+      if ((!putaPre && operator(preZnak, pre.slice(-2, -1))) || operator(posleZnak, posle.slice(1, 2))) return true;
+      // oznaka veličine uz jedinicu u zagradi (u grafiku i tabeli): „v (m/s)“, „t (h)“, „a (m/s²)“
+      const zagrada = posle.match(/^\s?\(([^()]+)\)/);
+      if (zagrada && /^[A-Za-z]+(?:[\/·][A-Za-z]+)*[²³]?$/.test(zagrada[1].replace(/\s/g, '')) && zagrada[1].split(/[\/·²³\s]+/).filter(Boolean).every((j) => JEDINICE.has(j))) return true;
     }
     // kraće oznake uz znak jednakosti (Ek = …, M = 1000)
     if (tok.length <= 3 && (preZnak === '=' || posleZnak === '=' || ((preZnak === '→' || posleZnak === '→') && /[A-Z\d]/.test(tok)))) return true;
@@ -139,11 +148,15 @@
     if (preZnak === '(' && posleZnak === ')' && /^(?:[A-Z][a-z]?\d*)+$/.test(tok) && (tok.match(/[A-Z][a-z]?/g) || []).every((x) => SIMBOLI.has(x))
       && /(oksid|kiselin|gas|hemij|molekul|atom|element|jedinjenj|baz|so\b)/i.test(tekst)) return true;
     // jedinice: posle broja, uz razlomačku crtu, ili same u zagradi – „(Hz)“
-    if (JEDINICE.has(tok) && (/\d\s?$/.test(pre) || odmahPre === '/' || odmahPosle === '/' || (preZnak === '(' && posleZnak === ')'))) return true;
+    // jedinica na početku čvora teksta posle $…$: „$25$ m.“
+    if (JEDINICE.has(tok) && /^\s+$/.test(pre) && /^\s*([.,;:!?)]|$)/.test(posle)) return true;
+    if (JEDINICE.has(tok) && (/[\d?]\s?$/.test(pre) || /\d\s(hiljad[aeu]|milion[aui]?|milijard[aei]|bilion[aui]?)\s$/i.test(pre) || odmahPre === '/' || odmahPosle === '/' || (preZnak === '(' && posleZnak === ')'))) return true;
     // rimski brojevi: XIV, II, CM; jedno slovo samo posle imena (Petar I, Džordž V), ne posle „vitamin“
     if (tok === tok.toUpperCase() && RIMSKI.test(tok)) {
       if (tok.length >= 2) return true;
       if (/^[A-ZČĆŽŠĐ][a-zčćžšđ]+$/.test(preRec) && /[a-zčćžšđ]\s$/.test(pre) && !/^vitamin/i.test(preRec)) return true;
+      // vek: „u V veku“, „od V do XV veka“
+      if (/^\s?(?:(?:do|i|ili|–|-)\s?[MDCLXVI]+\s?)?vek/.test(posle)) return true;
       // „futur I“ (gramatika): vreme, ne ime
       if (/^futur/i.test(preRec) && /[a-zčćžšđ]\s$/.test(pre)) return true;
       // verzija uz skraćenicu: GTA V (prethodna reč je sva velikim slovima)
@@ -151,9 +164,10 @@
     }
     if (SKRACENICE.has(tok)) return true;
     // hemijski simboli u tekstu o elementima
-    if (SIMBOLI.has(tok) && /(simbol|hemijsk|latinsk|element|dolazi od|metal)/i.test(tekst)) {
+    // (ne deo imena: Al-Horezmi)
+    if (SIMBOLI.has(tok) && !/^-[A-ZČĆŽŠĐ]/.test(posle) && /(simbol|hemijsk|latinsk|element|dolazi od|metal)/i.test(tekst)) {
       const recSimbola = /^(dolazi|je)$/.test(posleRec.toLowerCase()) && /^\s*(dolazi|je od)/.test(posle);
-      if (!SRPSKE_RECI.has(tok.toLowerCase())) return true;
+      if (!SRPSKE_RECI.has(tok.toLowerCase()) || /^simbol/i.test(preRec)) return true;
       if (recSimbola || /(ijum|on|kl|ik|um|ozon|gas)$/.test(preRec)) return true;
     }
     const jednoVeliko = tok.length === 1 && /[A-Z]/.test(tok);
@@ -183,7 +197,8 @@
     if (!SLOVO.test(tekst)) return tekst;
     const t = tekst.trim();
     // ceo tekst je jedna oznaka (odgovor „L“, „H“, „XIV“, „AB“) – ostavi
-    if (/^[A-Z]{1,4}$/.test(t) && (t.length === 1 || RIMSKI.test(t))) return tekst;
+    // (ali ne „U “ ispred $…$ – čvor teksta „U $3$ sata“: to je predlog, ne oznaka)
+    if (/^[A-Z]{1,4}$/.test(t) && (t.length === 1 || RIMSKI.test(t)) && !(/^[AIUOSKV]$/.test(t) && tekst !== t)) return tekst;
     if (/^([ČĆŽŠĐ]|Dž|Lj|Nj)$/.test(t)) return tekst; // slovo latinice kao odgovor
     if (/^(A|B|AB|0)[+−-]?$/.test(t)) return tekst; // krvna grupa kao odgovor
     // nizovi pojedinačnih velikih slova (tastatura Q W E R T Y…, note C D E F G A H) ostaju latinicom

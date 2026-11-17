@@ -73,7 +73,7 @@ module.exports = ({ L, Z, K, G, r, proveri, kocke }) => {
 
   Z(2, 'Jedna bakterija se deli na dve svakih $20$ minuta. Koliko bakterija nastane od jedne posle $3$ sata?',
     ['$512$', '$18$', '$256$', '$1024$'],
-    [K('U $3$ sata ima $180 : 20 = 9$ deljenja.'),
+    [K('Za $3$ sata (to je $180$ minuta) bakterija se deli $180 : 20 = 9$ puta.'),
      K('Posle svakog deljenja broj bakterija se udvostruči: $1 → 2 → 4 → 8 → …$ Posle $n$ deljenja ima ih $2ⁿ$.'),
      K('$2⁹ = 512$. (Za još jedan sat bilo bi ih $2^{12} = 4096$ – zato je stepen „eksplozivan“ rast.)')]);
 
@@ -213,12 +213,12 @@ module.exports = ({ L, Z, K, G, r, proveri, kocke }) => {
   Z(3, 'Koliko je ${6 · 10⁸|2 · 10^{−3}}$?',
     ['$3 · 10^{11}$', '$3 · 10⁵$', '$3 · 10^{−11}$', '$4 · 10^{11}$'],
     [K('$6 : 2 = 3$'),
-     K('$10⁸ : 10^{−3} = 10^{8 − (−3)} = 10^{11}$ – deljenje negativnim izložiocem povećava izložilac.'),
+     K('$10⁸ : 10^{−3} = 10^{8 − (−3)} = 10^{11}$ – oduzimanje negativnog broja povećava izložilac.'),
      K('Rezultat: $3 · 10^{11}$.')]);
 
   Z(3, 'Svetlost prelazi $3 · 10⁵ km$ u sekundi. Rastojanje do Meseca je oko $3,84 · 10⁵ km$. Koliko vremena treba svetlosti da stigne od Meseca do Zemlje?',
     ['oko $1,28 s$', 'oko $0,78 s$', 'oko $12,8 s$', 'oko $1,28 min$'],
-    [K('Vreme = put : brzina $= {3,84 · 10⁵|3 · 10⁵} s$.'),
+    [K('Vreme je rastojanje podeljeno brzinom: $t = {3,84 · 10⁵|3 · 10⁵} s$.'),
      K('Stepeni $10⁵$ se skrate: $3,84 : 3 = 1,28$.'),
      K('Svetlost sa Meseca stiže za oko $1,28 s$. (Sa Sunca joj treba oko $8$ minuta!)')]);
 
@@ -265,7 +265,7 @@ module.exports = ({ L, Z, K, G, r, proveri, kocke }) => {
       for (let i = 0; i < n; i++) { sib(x0 + i, 0, x0 + i + 1, 0); sib(x0 + i, 1, x0 + i + 1, 1); }
       e.push({ tx: String(3 * n + 1), at: [x0 + n / 2, -0.55], k: 1 });
     });
-    Z(2, 'Od šibica se slaže niz kvadrata u jednom redu (kao na slici). Koliko šibica treba za $20$ kvadrata?',
+    Z(2, 'Niz kvadrata u jednom redu slaže se od šibica (kao na slici). Koliko šibica treba za $20$ kvadrata?',
       ['$61$', '$80$', '$60$', '$81$'],
       [K('Prvi kvadrat traži $4$ šibice, a svaki sledeći još $3$ (dele jednu stranicu sa prethodnim).'),
        K('Za $n$ kvadrata: $4 + 3(n − 1) = 3n + 1$ šibica. Provera na slici: $4, 7, 10$ ✓'),
@@ -331,7 +331,7 @@ module.exports = ({ L, Z, K, G, r, proveri, kocke }) => {
     ['$x² + 8x + 15$', '$x² + 15$', '$x² + 8x + 8$', '$2x + 8$'],
     [K('Svaki član prvog binoma množimo svakim članom drugog: $x · x + x · 5 + 3 · x + 3 · 5$.', ['c00', 'c01', 'c10', 'c11']),
      K('$x² + 5x + 3x + 15 = x² + 8x + 15$'),
-     K('Na slici: pravougaonik sa stranicama $x + 3$ i $x + 5$ se deli na četiri dela – zato je greška $x² + 15$ (zaboravljena dva srednja dela).')],
+     K('Na slici: pravougaonik sa stranicama $x + 3$ i $x + 5$ se deli na četiri dela. Greška $x² + 15$ nastaje kad se zaborave dva srednja dela.')],
     model([['x', 3], ['5', 2]], [['x', 3], ['3', 1.4]], [['x²', '5x'], ['3x', '15']], { kNatpisi: 1 }));
 
   Z(2, 'Koliko je $(2x − 1)(x + 4)$?',
@@ -356,7 +356,7 @@ module.exports = ({ L, Z, K, G, r, proveri, kocke }) => {
     ['$7x − 6$', '$4x² + 5x + 2$', '$7x + 2$', '$5x − 6$'],
     [K('$2P = 2x² + 6x − 2$'),
      K('$2P − Q = 2x² + 6x − 2 − 2x² + x − 4$'),
-     K('$= 7x − 6$ (kvadrati se ponište).')]);
+     K('$= 7x − 6$ (članovi sa $x²$ se poništavaju).')]);
 
   // ════════════════ 3.6 Kvadrat binoma i razlika kvadrata ════════════════
   L('Kvadrat binoma i razlika kvadrata');

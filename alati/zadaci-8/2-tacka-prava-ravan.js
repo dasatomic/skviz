@@ -38,12 +38,12 @@ module.exports = ({ L, Z, G, K, telo }) => {
 
   Z(1, 'Sto sa tri noge nikad se ne klima, a sto sa četiri može. Zašto?',
     ['Tri nekolinearne tačke uvek leže u jednoj ravni', 'Tri noge su uvek jednake', 'Četiri noge su teže', 'Zbog težine stola'],
-    [K('Krajevi tri noge su tri nekolinearne tačke, a tri nekolinearne tačke uvek leže u tačno jednoj ravni.'),
-     K('Krajevi četiri noge su četiri tačke, a četiri tačke ne moraju sve da leže u istoj ravni – zato se četvoronožni sto klima na neravnom podu.')]);
+    [K('Tri noge stola završavaju se u tri nekolinearne tačke, a tri nekolinearne tačke uvek leže u tačno jednoj ravni.'),
+     K('Četiri noge se završavaju u četiri tačke, a one ne moraju sve da leže u istoj ravni – zato se četvoronožni sto klima na neravnom podu.')]);
 
   Z(2, 'Koliko ravni prolazi kroz dve date tačke?',
     ['Beskonačno mnogo', 'Tačno jedna', 'Tačno dve', 'Nijedna'],
-    [K('Dve tačke određuju pravu kroz sebe.'),
+    [K('Dve tačke određuju pravu koja prolazi kroz njih.'),
      K('Kroz tu pravu prolazi beskonačno mnogo ravni (kao listovi knjige oko kičme).'),
      K('Zato dve tačke nisu dovoljne za jednoznačno određivanje ravni.')]);
 
@@ -71,7 +71,7 @@ module.exports = ({ L, Z, G, K, telo }) => {
   Z(2, 'Ako je prava $a$ paralelna sa $b$, a $b$ paralelna sa $c$, šta važi za $a$ i $c$?',
     ['Paralelne su', 'Seku se', 'Mimoilazne su', 'Normalne su'],
     [K('Odnos paralelnosti je tranzitivan: ako je $a \\| b$ i $b \\| c$, onda je i $a \\| c$.'),
-     K('Ili se $a$ i $c$ poklapaju, ako su sve tri ista prava – ali u svakom slučaju se ne seku.')]);
+     K('Prave $a$ i $c$ se ne seku (ako su različite, one su paralelne).')]);
 
   Z(3, 'Kroz tačku $A$ van prave $p$, u istoj ravni sa njom, može se povući…',
     ['tačno jedna paralela sa $p$', 'beskonačno mnogo paralela sa $p$', 'nijedna paralela', 'tačno dve paralele'],
@@ -118,7 +118,7 @@ module.exports = ({ L, Z, G, K, telo }) => {
     [K('Da bi prava bila normalna na ravan, mora biti normalna na svaku pravu u ravni.'),
      K('Dovoljno je proveriti dve prave u ravni koje se seku – ako je prava normalna na obe, normalna je na celu ravan.')]);
 
-  Z(2, 'Koliko normala može se spustiti iz tačke na ravan?',
+  Z(2, 'Koliko se normala može spustiti iz tačke na ravan?',
     ['Tačno jedna', 'Beskonačno mnogo', 'Dve', 'Nijedna'],
     [K('Iz date tačke na ravan može se spustiti tačno jedna normala.'),
      K('Njen podnožni deo na ravni je normalna projekcija tačke.'),
@@ -189,7 +189,7 @@ module.exports = ({ L, Z, G, K, telo }) => {
   Z(3, 'Duž duga $10 cm$ nagnuta je prema ravni pod uglom od $30°$. Kolika je njena normalna projekcija na ravan?',
     ['$5√{3} cm$', '$5 cm$', '$10 cm$', '$10√{3} cm$'],
     [K('U pravouglom trouglu koji čine duž, projekcija i normala: projekcija je nalegla kateta ugla od $30°$.'),
-     K('Trougao sa uglom od $30°$ je polovina jednakostraničnog trougla: kateta naspram $30°$ je pola hipotenuze, a druga kateta je $√{3}$ puta duža od nje.'),
+     K('Pravougli trougao sa uglom od $30°$ je polovina jednakostraničnog trougla: kateta naspram $30°$ je pola hipotenuze, a druga kateta je $√{3}$ puta duža od nje.'),
      K('Hipotenuza je $10 cm$, pa je kraća kateta (normalna na ravan) $5 cm$, a projekcija (duža kateta) je $5√{3} cm ≈ 8,66 cm$.')]);
 
   // ════════════ dopuna do 10 po lekciji ════════════
@@ -259,7 +259,7 @@ module.exports = ({ L, Z, G, K, telo }) => {
     ['Ne', 'Da', 'Uvek', 'Samo ako su paralelne'],
     [K('Mimoilazne prave ne leže u istoj ravni.')]);
   Z(2, 'Dve prave u prostoru mogu biti:',
-    ['paralelne, da se seku ili mimoilazne', 'samo paralelne', 'samo da se seku', 'samo mimoilazne'],
+    ['paralelne, seku se ili su mimoilazne', 'samo paralelne', 'samo da se seku', 'samo mimoilazne'],
     [K('U prostoru: paralelne, prave koje se seku, ili mimoilazne.')]);
   Z(2, 'Koliko ivica kocke je paralelno sa ivicom $AB$ (ne računajući nju samu)?',
     ['3', '4', '2', '6'],
@@ -352,11 +352,11 @@ module.exports = ({ L, Z, G, K, telo }) => {
     [K('Prava normalna na ravan zaklapa ugao $90°$.')]);
   Z(3, 'Duž duga $12 cm$ nagnuta je prema ravni pod uglom od $60°$. Kolika je njena projekcija na ravan?',
     ['$6 cm$', '$12 cm$', '$6√{3} cm$', '$24 cm$'],
-    [K('Trougao sa uglom $60°$ je polovina jednakostraničnog: kateta uz ugao (projekcija) je polovina hipotenuze.'),
+    [K('Pravougli trougao sa uglom $60°$ je polovina jednakostraničnog: kateta uz ugao (projekcija) je polovina hipotenuze.'),
      K('Projekcija: $12 : 2 = 6 cm$.')]);
   Z(3, 'Duž duga $8 cm$ nagnuta je prema ravni pod uglom od $45°$. Kolika je njena projekcija?',
     ['$4√{2} cm$', '$4 cm$', '$8 cm$', '$8√{2} cm$'],
-    [K('Trougao sa uglovima $45°$ i $90°$ je jednakokraki: projekcija $p$ i normala $h$ su jednake.'),
+    [K('Pravougli trougao sa uglom $45°$ je jednakokraki: projekcija $p$ i normala $h$ su jednake.'),
      K('$p² + p² = 8²$, pa je $2p² = 64$, $p² = 32$ i $p = 4√{2} cm$.')]);
   Z(3, 'Duž $AB$ nagnuta je prema ravni; njena projekcija je $9 cm$, a normala $12 cm$. Kolika je duž $AB$?',
     ['$15 cm$', '$21 cm$', '$13 cm$', '$10 cm$'],

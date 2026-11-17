@@ -2,7 +2,7 @@
   "naziv": "Rust",
   "ikona": "🦀",
   "boja": "#b7410e",
-  "opis": "The Rust language by topic: the core from „The Rust Programming Language“ and advanced chapters from Jon Gjengset's „Rust for Rustaceans“",
+  "opis": "The Rust language by topic: the core from “The Rust Programming Language” and advanced chapters from Jon Gjengset's “Rust for Rustaceans”",
   "redosled": 902,
   "oblast": "eksperimenti",
   "uOpstem": false,
@@ -220,7 +220,7 @@
         "$for$",
         "All three of them"
       ],
-      "zanimljivost": "Only $loop$ is guaranteed to end through a $break$, so only it can produce a value: $let r = loop { … break n * 2; };$",
+      "zanimljivost": "Only $loop$ can end with a $break$ that carries a value: $let r = loop { … break n * 2; };$",
       "rec": "petlja"
     },
     {
@@ -1725,7 +1725,7 @@
         "$Hi, !$",
         "$Ana$"
       ],
-      "zanimljivost": "$greet$ has a default body, so implementors only have to write $name$. A default method may call required ones – a pattern similar to the „template method“ from OOP.",
+      "zanimljivost": "$greet$ has a default body, so implementors only have to write $name$. A default method may call required ones – a pattern similar to the “template method” from OOP.",
       "rec": "osobina",
       "mediji": {
         "vrsta": "kod",
@@ -2248,7 +2248,7 @@
         "$3 2 1$",
         "Only $1$"
       ],
-      "zanimljivost": "Iterator adapters are lazy: $map$ only builds a new iterator, and nothing calls $next$ on it. The compiler warns „unused $Map$ that must be used“. Use a $for$ loop or $for_each$ for side effects.",
+      "zanimljivost": "Iterator adapters are lazy: $map$ only builds a new iterator, and nothing calls $next$ on it. The compiler warns “unused $Map$ that must be used”. Use a $for$ loop or $for_each$ for side effects.",
       "rec": "iterator",
       "mediji": {
         "vrsta": "kod",
@@ -2954,7 +2954,7 @@
         "$Box$ needs a lifetime",
         "$Dup$ has no default method"
       ],
-      "zanimljivost": "A trait object hides the concrete type, so a method returning $Self$ can't be called through it. Adding $where Self: Sized$ to $dup$ excludes just that method and makes the trait „dyn compatible“ again.",
+      "zanimljivost": "A trait object hides the concrete type, so a method returning $Self$ can't be called through it. Adding $where Self: Sized$ to $dup$ excludes just that method and makes the trait “dyn compatible” again.",
       "rec": "objekat"
     },
     {
@@ -3643,7 +3643,7 @@
       "rec": "interfejs",
       "mediji": {
         "vrsta": "kod",
-        "tekst": "fn shout(s: impl Into<String>) -> String {\n    let mut s = s.into();\n    s.push('!');\n    s\n}"
+        "tekst": "fn shout(s: impl Into<String>) -> String {\n    let mut s: String = s.into();\n    s.push('!');\n    s\n}"
       }
     },
     {
@@ -4653,7 +4653,7 @@
           "One total order for all"
         ]
       ],
-      "zanimljivost": "Rust's orderings come from the C++20 memory model. $Acquire$ and $Release$ come in pairs, like opening and closing a gate.",
+      "zanimljivost": "Rust's orderings come from the C++11 memory model. $Acquire$ and $Release$ come in pairs, like opening and closing a gate.",
       "rec": "redosled"
     },
     {

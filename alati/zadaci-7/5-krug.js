@@ -15,7 +15,7 @@ module.exports = ({ L, Z, K, G, r, S3, proveri, pravilni, naKrugu }) => {
   Z(1, 'Rastojanje centra kruga poluprečnika $3 cm$ od prave $p$ je $5 cm$. Kakav je međusobni položaj prave i kruga?',
     ['prava i krug nemaju zajedničkih tačaka', 'prava dodiruje krug', 'prava seče krug u dve tačke', 'prava prolazi kroz centar'],
     [K('Upoređujemo rastojanje $d$ centra od prave sa poluprečnikom $r$.', ['d']),
-     K('$d = 5 > 3 = r$ – prava je dalje od centra nego bilo koja tačka kružnice, pa je ne dodiruje.'),
+     K('$d = 5 > 3 = r$ – prava je dalja od centra nego što je poluprečnik, pa nema zajedničkih tačaka sa krugom.'),
      K('Za $d = r$ prava bi bila tangenta, a za $d < r$ sečica.')],
     G({ O: [0, 0], P: [0, -5, -90], a: [-6, -5], b: [6, -5], c: [2.12, 2.12] },
       [{ kr: 'O', r: 3, b: 4 }, { d: 'ab', b: 3 }, { d: 'OP', isp: 1, b: 1, o: 'd = 5', id: 'd' }, { pu: 'OPb' }, { d: 'Oc', o: 'r = 3', k: 0 }, { tacka: 'O' }], { bezImena: ['P'], velicina: 220 }));
@@ -142,7 +142,7 @@ module.exports = ({ L, Z, K, G, r, S3, proveri, pravilni, naKrugu }) => {
 
   Z(3, 'Tačke $A$, $B$ i $C$ dele kružnicu na tri luka čije su dužine u razmeri $2 : 3 : 4$. Koliki je najveći ugao trougla $ABC$?',
     ['$80°$', '$160°$', '$60°$', '$90°$'],
-    [K('Lukovi: $360°$ podelimo na $9$ delova po $40°$: $80°$, $120°$ i $160°$.', ['l1', 'l2', 'l3']),
+    [K('Podelimo $360°$ na $9$ delova: jedan deo je $40°$, pa su lukovi $80°$, $120°$ i $160°$.', ['l1', 'l2', 'l3']),
      K('Svaki ugao trougla je periferijski ugao nad suprotnim lukom – polovina tog luka: $40°$, $60°$ i $80°$.'),
      K('Najveći ugao je $80°$ (naspram najvećeg luka od $160°$).')],
     G({ O: [0, 0], A: kp(90), B: kp(170), C: kp(290) },
@@ -215,7 +215,7 @@ module.exports = ({ L, Z, K, G, r, S3, proveri, pravilni, naKrugu }) => {
         { bezImena: ['O', 'A', 'B', 'P'], velicina: 320 }));
   }
 
-  Z(3, 'Uže je zategnuto oko Zemlje po ekvatoru. Zatim ga produžimo za $6,28 m$ i podignemo tako da je svuda jednako udaljeno od tla. Koliko je visoko iznad tla? (Uzmi $π ≈ 3,14$.)',
+  Z(3, 'Uže je zategnuto oko Zemlje po ekvatoru. Zatim ga produžimo za $6,28 m$ i podignemo tako da svuda bude jednako udaljeno od tla. Koliko je visoko iznad tla? (Uzmi $π ≈ 3,14$.)',
     ['oko $1 m$', 'oko $1 mm$', 'oko $1 cm$', 'oko $6,28 m$'],
     [K('Ako je poluprečnik Zemlje $R$, a uže se podigne za $h$, novi obim je $2π(R + h) = 2πR + 2πh$.'),
      K('Razlika obima je $2πh = 6,28 m$ – i uopšte ne zavisi od $R$!'),
@@ -299,7 +299,7 @@ module.exports = ({ L, Z, K, G, r, S3, proveri, pravilni, naKrugu }) => {
     G({ O: [0, 0], A: kp(30, 6), B: kp(150, 6) },
       [{ is: 'O', r: 6, od: 30, do: 150, b: 0, id: 'is' }, { l: 'O', r: 6, od: 30, do: 150, b: 1, pun: 1, id: 'luk', k: 2 }, { d: 'OA', o: '6 cm' }, { d: 'OB' }, { u: 'AOB', o: '120°', r: 20 }], { bezImena: ['O', 'A', 'B'], velicina: 220 }));
 
-  Z(3, 'Atletska staza ima dve prave deonice od po $80 m$ i dva polukruga. Unutrašnja ivica polukruga ima poluprečnik $30 m$. Koliko je duži krivi deo staze (dva polukruga) po liniji udaljenoj $1 m$ od unutrašnje ivice, nego po samoj unutrašnjoj ivici?',
+  Z(3, 'Atletska staza ima dve prave deonice od po $80 m$ i dva polukruga. Unutrašnja ivica polukruga ima poluprečnik $30 m$. Za koliko je duži krivi deo staze (dva polukruga) po liniji udaljenoj $1 m$ od unutrašnje ivice nego po samoj unutrašnjoj ivici?',
     ['$2π ≈ 6,28 m$', '$π ≈ 3,14 m$', '$4 m$', '$60π m$'],
     [K('Prave deonice su iste ($2 · 80 m$), menja se samo dužina dva polukruga – zajedno jedan pun krug.'),
      K('Unutra: $2 · 30 · π$, spolja: $2 · 31 · π$. Razlika: $2 · 1 · π = 2π ≈ 6,28 m$.'),
@@ -433,14 +433,14 @@ module.exports = ({ L, Z, K, G, r, S3, proveri, pravilni, naKrugu }) => {
     ['$9π − 18 cm²$', '$9π cm²$', '$36π − 18 cm²$', '$18 − 9π cm²$'],
     [K('Isečak $AOB$: ${36π|4} = 9π cm²$.', ['is']),
      K('Trougao $AOB$ je pravougli: ${6 · 6|2} = 18 cm²$.', ['tr']),
-     K('Odsečak = isečak − trougao $= 9π − 18 ≈ 10,3 cm²$.', ['od'])],
+     K('Odsečak je isečak minus trougao: $9π − 18 ≈ 10,3 cm²$.', ['od'])],
     G({ O: [0, 0], A: [6, 0], B: [0, 6] },
       [{ kr: 'O', r: 6, b: 4, isp: 1 }, { is: 'O', r: 6, od: 0, do: 90, b: 0, id: 'is' }, { p: 'OAB', b: 3, id: 'tr', k: 2 }, { pu: 'AOB' }, { d: 'AB', b: 1, id: 'od' }, { d: 'OA', o: '6 cm' }, { tx: '?', at: [3.2, 3.2], b: 1 }],
       { bezImena: ['O'], velicina: 200 }));
 
   Z(3, 'Tetiva većeg kruga kružnog prstena dodiruje manji krug i duga je $10 cm$. Kolika je površina prstena?',
     ['$25π cm²$', '$100π cm²$', '$10π cm²$', '$50π cm²$'],
-    [K('Tetiva dodiruje manji krug u svom središtu $M$, pa je $OM = r$ i $OM ⊥ AB$, $MB = 5 cm$.', ['omb']),
+    [K('Tetiva dodiruje manji krug u tački $M$, pa je $OM = r$ i $OM ⊥ AB$, $MB = 5 cm$.', ['omb']),
      K('Pitagora u trouglu $OMB$: $R² − r² = 5² = 25$.'),
      K('$P = R²π − r²π = (R² − r²)π = 25π cm²$ – a da ne znamo ni $R$ ni $r$!', ['pr'])],
     G({ O: [0, 0, 90], A: [-5, -4], B: [5, -4], M: [0, -4, -90] },

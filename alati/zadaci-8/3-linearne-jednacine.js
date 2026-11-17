@@ -49,7 +49,7 @@ module.exports = ({ L, Z, G, K, proveri }) => {
     ['$3x − 2 = 7$', '$x² = 9$', '${1|x} = 2$', '$√{x} = 3$'],
     [K('Linearna jednačina ima oblik $ax + b = 0$, gde je nepoznata na prvom stepenu.'),
      K('$3x − 2 = 7$ je linearna.'),
-     K('$x²$, ${1|x}$ i $√{x}$ nisu linearni izrazi po $x$.')]);
+     K('$x²$, ${1|x}$ i $√{x}$ nisu linearne jednačine po $x$.')]);
 
   Z(3, 'Za koju vrednost $a$ jednačina $ax + 1 = 5$ ima rešenje $x = 2$?',
     ['$a = 2$', '$a = 1$', '$a = 4$', '$a = 3$'],
@@ -207,7 +207,7 @@ module.exports = ({ L, Z, G, K, proveri }) => {
 
   Z(2, 'Automobil vozi stalnom brzinom i za $3$ sata pređe $240 km$. Kolika mu je brzina?',
     ['$80 km/h$', '$72 km/h$', '$90 km/h$', '$75 km/h$'],
-    [K('Brzina = put : vreme: $v = {240|3} = 80 km/h$.'),
+    [K('Brzina je pređeni put podeljen vremenom: $v = {240|3} = 80 km/h$.'),
      K('Formula: $s = v · t$.'),
      K('Provera: $80 · 3 = 240$ ✓')]);
 
@@ -218,15 +218,15 @@ module.exports = ({ L, Z, G, K, proveri }) => {
      K('Za $2$ sata prvi pređe $120 km$, drugi $180 km$; $120 + 180 = 300$ ✓')]);
 
   Z(3, 'Biciklista krene u $8:00$ brzinom $15 km/h$. Sat kasnije za njim krene motociklista brzinom $45 km/h$. Kada će ga stići?',
-    ['U $9:30$', 'U $9:00$', 'U $10:00$', 'U $9:15$'],
+    ['u $9:30$', 'u $9:00$', 'u $10:00$', 'u $9:15$'],
     [K('Za sat vremena biciklista pređe $15 km$ prednosti.'),
      K('Motociklista ga sustiže brzinom $45 − 15 = 30 km/h$.'),
-     K('Vreme sustizanja: ${15|30} = 0,5$ h, dakle u $8:00 + 1 h + 0,5 h = 9:30$.')]);
+     K('Vreme sustizanja: $t = {15|30} = 0,5 h$, pa je sustizanje u $8:00 + 1 h + 0,5 h = 9:30$.')]);
 
   Z(3, 'Čamac plovi nizvodno brzinom $18 km/h$, a uzvodno $12 km/h$. Kolika je brzina reke?',
     ['$3 km/h$', '$6 km/h$', '$15 km/h$', '$2 km/h$'],
     [K('Nizvodno: brzina čamca + brzina reke = $18$. Uzvodno: brzina čamca − brzina reke = $12$.'),
-     K('Saberemo: $2 · (brzina čamca) = 30$, pa je brzina čamca $15 km/h$.'),
+     K('Ako je $v$ brzina čamca, saberemo: $2v = 30$, pa je $v = 15 km/h$.'),
      K('Brzina reke: $18 − 15 = 3 km/h$.')]);
 
   // ════════════════ 3.9 Još neke primene ════════════════
@@ -234,12 +234,12 @@ module.exports = ({ L, Z, G, K, proveri }) => {
 
   Z(2, 'Bure se puni kroz dve cevi. Kroz prvu za $4$ sata, a kroz drugu za $6$ sati. Za koliko sati se napuni kroz obe istovremeno?',
     ['$2,4$ sata', '$10$ sati', '$2$ sata', '$5$ sati'],
-    [K('Prva cev za $1$ h napuni ${1|4}$, druga ${1|6}$ bureta.'),
-     K('Zajedno za $1$ h: ${1|4} + {1|6} = {3|12} + {2|12} = {5|12}$.'),
+    [K('Prva cev za $1 h$ napuni ${1|4}$, druga ${1|6}$ bureta.'),
+     K('Zajedno za $1 h$: ${1|4} + {1|6} = {3|12} + {2|12} = {5|12}$.'),
      K('Vreme: ${1|{5|12}} = {12|5} = 2,4$ sata.')]);
 
-  Z(2, 'Cena patika snižena je za $20 %$ i sada koštaju $6.400$ dinara. Kolika je bila cena pre sniženja?',
-    ['$8.000$ dinara', '$7.680$ dinara', '$5.120$ dinara', '$8.500$ dinara'],
+  Z(2, 'Cena patika snižena je za $20 %$ i sada koštaju $6400$ dinara. Kolika je bila cena pre sniženja?',
+    ['$8000$ dinara', '$7680$ dinara', '$5120$ dinara', '$8500$ dinara'],
     [K('Nova cena je $80 %$ stare: $0,8x = 6400$.'),
      K('$x = {6400|0,8} = 8000$ dinara.'),
      K('Provera: $20 %$ od $8000$ je $1600$; $8000 − 1600 = 6400$ ✓')]);
@@ -304,7 +304,7 @@ module.exports = ({ L, Z, G, K, proveri }) => {
     ['$2x + 1 ≤ 7$', '$x² > 4$', '${1|x} < 2$', '$√{x} ≥ 3$'],
     [K('Linearna nejednačina ima nepoznatu na prvom stepenu.'),
      K('$2x + 1 ≤ 7$ je linearna.'),
-     K('$x²$, ${1|x}$ i $√{x}$ nisu linearni.')]);
+     K('Ovi izrazi nisu linearni: $x²$, ${1|x}$ i $√{x}$.')]);
 
   Z(2, 'Reši linearnu nejednačinu $2x + 3 ≤ 9$.',
     ['$x ≤ 3$', '$x ≥ 3$', '$x ≤ 6$', '$x ≥ 6$'],
@@ -354,7 +354,7 @@ module.exports = ({ L, Z, G, K, proveri }) => {
      K('$n > {120|45} = 2,67$, pa je najmanji ceo broj $3$.'),
      K('Provera: $3 · 45 = 135 ≥ 120$ ✓; $2$ autobusa ($90$) nije dovoljno.')]);
 
-  Z(2, 'Milan ima $500$ dinara. Sveška košta $60$ dinara, a olovka $35$. Ako kupi jednu svesku, koliko najviše olovaka može da kupi?',
+  Z(2, 'Milan ima $500$ dinara. Sveska košta $60$ dinara, a olovka $35$. Ako kupi jednu svesku, koliko najviše olovaka može da kupi?',
     ['12', '13', '14', '10'],
     [K('Posle sveske ostaje $500 − 60 = 440$ dinara.'),
      K('$35x ≤ 440$, pa je $x ≤ {440|35} = 12,57$.'),
@@ -565,14 +565,14 @@ module.exports = ({ L, Z, G, K, proveri }) => {
   L('Još neke primene linearnih jednačina');
   Z(2, 'Bure se puni kroz prvu cev za $3$ sata, a kroz drugu za $6$ sati. Za koliko se napuni kroz obe istovremeno?',
     ['2 sata', '4,5 sata', '1,5 sati', '3 sata'],
-    [K('Za $1$ h: ${1|3} + {1|6} = {2|6} + {1|6} = {3|6} = {1|2}$ bureta.'),
+    [K('Za $1 h$: ${1|3} + {1|6} = {2|6} + {1|6} = {3|6} = {1|2}$ bureta.'),
      K('Celo bure za $2$ sata.')]);
-  Z(2, 'Cena je poskupljenjem od $25 %$ porasla na $1.250$ dinara. Kolika je bila cena pre poskupljenja?',
-    ['$1.000$ dinara', '$937,5$ dinara', '$1.100$ dinara', '$1.050$ dinara'],
+  Z(2, 'Cena je poskupljenjem od $25 %$ porasla na $1250$ dinara. Kolika je bila cena pre poskupljenja?',
+    ['$1000$ dinara', '$937,5$ dinara', '$1100$ dinara', '$1050$ dinara'],
     [K('$1,25x = 1250$'),
      K('$x = {1250|1,25} = 1000$ dinara.')]);
-  Z(3, 'Posle sniženja od $30 %$ jakna košta $3.500$ dinara. Kolika je bila cena pre sniženja?',
-    ['$5.000$ dinara', '$4.550$ dinara', '$4.500$ dinara', '$5.500$ dinara'],
+  Z(3, 'Posle sniženja od $30 %$ jakna košta $3500$ dinara. Kolika je bila cena pre sniženja?',
+    ['$5000$ dinara', '$4550$ dinara', '$4500$ dinara', '$5500$ dinara'],
     [K('$0,7x = 3500$'),
      K('$x = {3500|0,7} = 5000$ dinara.')]);
   Z(2, 'U smeši mase $30 kg$ so čini $20 %$. Koliko kilograma soli ima u smeši?',
@@ -584,7 +584,7 @@ module.exports = ({ L, Z, G, K, proveri }) => {
      K('$4x = 60$, pa je $x = 15$.')]);
   Z(3, 'Dve slavine pune bazen: prva za $4$ sata, druga za $12$ sati. Za koliko se bazen napuni kroz obe?',
     ['3 sata', '4 sata', '2 sata', '6 sati'],
-    [K('Za $1$ h: ${1|4} + {1|12} = {3|12} + {1|12} = {4|12} = {1|3}$ bazena.'),
+    [K('Za $1 h$: ${1|4} + {1|12} = {3|12} + {1|12} = {4|12} = {1|3}$ bazena.'),
      K('Ceo bazen za $3$ sata.')]);
   Z(3, 'U posudu je dodato $5 kg$ soli i sada so čini $30 %$ smeše od $20 kg$. Koliko je soli bilo na početku?',
     ['$1 kg$', '$6 kg$', '$5 kg$', '$2 kg$'],

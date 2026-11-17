@@ -60,7 +60,7 @@ module.exports = ({ L, Q, U, S, G, r, traka, pica, sto, O, bez, dec }) => {
     { medijiOdgovora: G(O, [{ osa: [0, 1], podela: 0.25, svaki: 4 }, { lin: [[0.25, -0.06], [0.25, 0.06]], b: 2, debljina: 4 }, { lin: [[0.5, -0.06], [0.5, 0.06]], b: 1, debljina: 4 }, { tx: '1/4', at: [0.25, 0.3], vel: 14, b: 2 }, { tx: '1/2', at: [0.5, 0.3], vel: 14, b: 1 }], { ...bez, velicina: 320 }) });
   Q(2, 'Koji broj odgovara POČETNOJ tački brojevne poluprave?',
     ['0', '1', '−1', '2'],
-    'Početna tačka (ishodište O) po dogovoru dobija broj 0. Udesno se zatim ređaju 1, 2, 3…, a razlomci leže na jediničnim dužima između celih brojeva.', 'poluprava',
+    'Početna tačka (ishodište $O$) po dogovoru dobija broj 0. Udesno se zatim ređaju 1, 2, 3…, a razlomci leže na jediničnim dužima između celih brojeva.', 'poluprava',
     { mediji: G({ O: [0, 0] }, [{ osa: [0, 3], podela: 0.5, svaki: 2 }, { tacka: 'O', b: 1 }, { tx: 'O', at: [0, 0.55], vel: 15 }], { ...bez, velicina: 320 }) });
 
   // ── 23. proširivanje, skraćivanje, upoređivanje ──
@@ -149,11 +149,11 @@ module.exports = ({ L, Q, U, S, G, r, traka, pica, sto, O, bez, dec }) => {
     { medijiOdgovora: G(O, [{ osa: [6, 7], podela: 0.1, svaki: 10 }, { lin: [[6.5, -0.06], [6.5, 0.06]], b: 1, debljina: 4 }, { tx: '6,5', at: [6.5, 0.3], vel: 14 }, { tx: '7', at: [7, 0.6], vel: 16, b: 2 }], { ...bez, velicina: 300 }) });
   Q(3, 'Poređaj od najmanjeg ka najvećem: $0,\\!7$, $0,\\!17$, $0,\\!07$.',
     ['$0,\\!07 < 0,\\!17 < 0,\\!7$', '$0,\\!7 < 0,\\!17 < 0,\\!07$', '$0,\\!17 < 0,\\!07 < 0,\\!7$', 'Svi su jednaki'],
-    'Upišemo iste brojeve decimala: $0,\\!70$, $0,\\!17$, $0,\\!07$. Redom od najmanjeg: $0,\\!07$, pa $0,\\!17$, pa $0,\\!70$.', 'decimala',
+    'Dopišemo nule da svi imaju po dve decimale: $0,\\!70$, $0,\\!17$, $0,\\!07$. Redom od najmanjeg: $0,\\!07$, pa $0,\\!17$, pa $0,\\!70$.', 'decimala',
     { medijiOdgovora: G(O, [{ osa: [0, 1], podela: 0.1, svaki: 5 }, { lin: [[0.07, -0.06], [0.07, 0.06]], b: 1, debljina: 4 }, { lin: [[0.17, -0.06], [0.17, 0.06]], b: 2, debljina: 4 }, { lin: [[0.7, -0.06], [0.7, 0.06]], b: 3, debljina: 4 }, { tx: '0,07', at: [0.07, 0.3], vel: 13, b: 1 }, { tx: '0,17', at: [0.17, 0.3], vel: 13, b: 2 }, { tx: '0,7', at: [0.7, 0.3], vel: 13, b: 3 }], { ...bez, velicina: 320 }) });
   Q(3, 'U broju $12,\\!347$, koja cifra je na mestu stotinki?',
     ['4', '3', '7', '2'],
-    'Decimale redom: 3 su desetinke, 4 su stotinke, 7 su hiljaditinke. Dakle, stotinke su cifra 4.', 'decimala',
+    'Decimale redom: 3 je na mestu desetinki, 4 na mestu stotinki, 7 na mestu hiljaditinki. Dakle, cifra stotinki je 4.', 'decimala',
     { medijiOdgovora: G(O, [{ tx: '1 2 , 3 4 7', at: [0, 0.7], vel: 24 }, { tx: 'desetinke', at: [1.2, -0.3], vel: 11, b: 1 }, { tx: 'stotinke', at: [2.4, -0.3], vel: 11, b: 2 }, { tx: 'hiljaditinke', at: [3.8, -0.3], vel: 11, b: 3 }], { ...bez, velicina: 300 }) });
 
 };

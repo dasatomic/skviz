@@ -832,7 +832,7 @@
      "t": "$OD = OC + CD = 4,5 + 7,5 = 12 cm$."
     },
     {
-     "t": "Može se odmah i ${OA|OB} = {OC|OD}$: ${3|8} = {4,5|OD}$ → $OD = 12 cm$ ✓",
+     "t": "Brže se dobija i ovako: ${OA|OB} = {OC|OD}$, tj. ${3|8} = {4,5|OD}$, pa je $OD = 12 cm$ ✓",
      "crtez": {
       "vrsta": "geo",
       "t": {
@@ -906,12 +906,12 @@
        },
        {
         "d": "OC",
-        "o": "4.5",
+        "o": "4,5",
         "na": 0.3
        },
        {
         "d": "CD",
-        "o": "7.5",
+        "o": "7,5",
         "na": 0.75
        },
        {
@@ -968,10 +968,10 @@
    ],
    "resenje": [
     {
-     "t": "U trapezu je $AB \\| CD$, a tačke $A$ i $B$ su na jednoj, $C$ i $D$ na drugoj paralelnoj pravoj."
+     "t": "U trapezu je $AB \\| CD$, pa tačke $A$ i $B$ leže na jednoj, a $C$ i $D$ na drugoj paralelnoj pravoj."
     },
     {
-     "t": "Trouglovi $ABS$ i $CDS$ su slični (podudarni uglovi uz $S$ i uz paralelne prave), pa je ${AS|SC} = {BS|SD}$."
+     "t": "Trouglovi $ABS$ i $CDS$ su slični (uglovi uz $S$ su jednaki, a uglovi uz paralelne prave su naizmenični), pa je ${AS|SC} = {BS|SD}$."
     },
     {
      "t": "${8|4} = {6|SD}$, pa je $SD = {4 · 6|8} = 3 cm$."
@@ -1218,7 +1218,7 @@
   {
    "lekcija": 2,
    "tezina": 3,
-   "pitanje": "U trouglu $ABC$ je $DE | AB$: $D$ na $AC$, $E$ na $BC$. Ako je $CD = 4 cm$, $DA = 8 cm$ i $CE = 5 cm$, kolika je duž $EB$?",
+   "pitanje": "U trouglu $ABC$ je $DE \\| AB$: $D$ na $AC$, $E$ na $BC$. Ako je $CD = 4 cm$, $DA = 8 cm$ i $CE = 5 cm$, kolika je duž $EB$?",
    "odgovori": [
     "$10 cm$",
     "$8 cm$",
@@ -1268,7 +1268,7 @@
      "t": "Poslednju tačku spojimo sa drugim krajem date duži, pa kroz ostale tačke povučemo paralelne prave."
     },
     {
-     "t": "Po Talesovoj teoremi one dele datu duž na $4$ jednaka dela. Pomoćnih duži mora biti onoliko koliko i delova."
+     "t": "Po Talesovoj teoremi one dele datu duž na $4$ jednaka dela. Pomoćnih duži mora biti onoliko koliko ima delova."
     }
    ]
   },
@@ -1312,7 +1312,7 @@
      "t": "$15 : 3 = 5 cm$."
     },
     {
-     "t": "Talesova konstrukcija je tačna bez obzira na dužinu duži – zato se i koristi kad dužina nije deljiva."
+     "t": "Talesova konstrukcija radi bez obzira na dužinu duži – zato se koristi i kad se duž ne može lako podeliti računom."
     }
    ]
   },
@@ -1334,7 +1334,7 @@
      "t": "$x = {4 · 9|6} = {36|6} = 6 cm$."
     },
     {
-     "t": "Konstrukcija: na krake ugla nanesemo $a$ i $b$ na jedan, a $c$ na drugi krak; spojimo krajeve $a$ i $c$, pa paralelu kroz kraj duži $b$."
+     "t": "Konstrukcija: na jedan krak ugla nanesemo $a$ i $b$, a na drugi krak $c$; spojimo krajeve $a$ i $c$, pa paralelu kroz kraj duži $b$."
     }
    ]
   },
@@ -1368,7 +1368,7 @@
     "5 jednakih duži",
     "5 duži različite dužine",
     "jednu duž",
-    "duž cele dužine"
+    "jednu duž cele dužine"
    ],
    "resenje": [
     {
@@ -1516,7 +1516,7 @@
      "t": "Najduža stranica većeg: ${3|2} · 8 = 12 cm$."
     },
     {
-     "t": "Uvek: odnos obima jednak je odnosu odgovarajućih stranica."
+     "t": "Odnos obima jednak je odnosu odgovarajućih stranica."
     }
    ]
   },
@@ -1734,7 +1734,7 @@
      "t": "Treći ugao trougla $ABC$: $180° − 40° − 60° = 80°$."
     },
     {
-     "t": "Trougao $DEF$ ima uglove $60°$ i $80°$ – a onda i treći od $40°$ ($180° − 60° − 80°$)."
+     "t": "Trougao $DEF$ ima uglove $60°$ i $80°$, pa mu je treći ugao $40°$ ($180° − 60° − 80°$)."
     },
     {
      "t": "Oba trougla imaju uglove $40°, 60°, 80°$, pa su slični po stavu UU."
@@ -1770,7 +1770,7 @@
    "odgovori": [
     "$2, 3, 4$",
     "$8, 12, 16$",
-    "$1, 1,5, 2$",
+    "$3, 4, 6$",
     "$6, 9, 12$"
    ],
    "resenje": [
@@ -1900,10 +1900,10 @@
    "tezina": 3,
    "pitanje": "Trouglovi imaju stranice $3, 4, 5$ i $6, 8, 12$. Jesu li slični?",
    "odgovori": [
+    "Ne, jer $12 : 5 ≠ 2$",
     "Da, po SSS",
     "Da, po SUS",
-    "Da, po UU",
-    "Ne, jer $12 : 5 ≠ 2$"
+    "Da, po UU"
    ],
    "resenje": [
     {
@@ -2458,7 +2458,7 @@
   {
    "lekcija": 7,
    "tezina": 2,
-   "pitanje": "Na karti razmere $1 : 100.000$ rastojanje je $4 cm$. Koliko je stvarno rastojanje?",
+   "pitanje": "Na karti razmere $1 : 100 000$ rastojanje je $4 cm$. Koliko je stvarno rastojanje?",
    "odgovori": [
     "$4 km$",
     "$40 km$",
@@ -2467,7 +2467,7 @@
    ],
    "resenje": [
     {
-     "t": "$4 · 100.000 = 400.000 cm = 4.000 m = 4 km$."
+     "t": "$4 · 100 000 = 400 000 cm = 4000 m = 4 km$."
     }
    ]
   },
@@ -2686,10 +2686,10 @@
    ],
    "resenje": [
     {
-     "t": "Krajevi tri noge su tri nekolinearne tačke, a tri nekolinearne tačke uvek leže u tačno jednoj ravni."
+     "t": "Tri noge stola završavaju se u tri nekolinearne tačke, a tri nekolinearne tačke uvek leže u tačno jednoj ravni."
     },
     {
-     "t": "Krajevi četiri noge su četiri tačke, a četiri tačke ne moraju sve da leže u istoj ravni – zato se četvoronožni sto klima na neravnom podu."
+     "t": "Četiri noge se završavaju u četiri tačke, a one ne moraju sve da leže u istoj ravni – zato se četvoronožni sto klima na neravnom podu."
     }
    ]
   },
@@ -2705,7 +2705,7 @@
    ],
    "resenje": [
     {
-     "t": "Dve tačke određuju pravu kroz sebe."
+     "t": "Dve tačke određuju pravu koja prolazi kroz njih."
     },
     {
      "t": "Kroz tu pravu prolazi beskonačno mnogo ravni (kao listovi knjige oko kičme)."
@@ -2892,7 +2892,7 @@
      "t": "Odnos paralelnosti je tranzitivan: ako je $a \\| b$ i $b \\| c$, onda je i $a \\| c$."
     },
     {
-     "t": "Ili se $a$ i $c$ poklapaju, ako su sve tri ista prava – ali u svakom slučaju se ne seku."
+     "t": "Prave $a$ i $c$ se ne seku (ako su različite, one su paralelne)."
     }
    ]
   },
@@ -3122,7 +3122,7 @@
    "tezina": 2,
    "pitanje": "Dve prave u prostoru mogu biti:",
    "odgovori": [
-    "paralelne, da se seku ili mimoilazne",
+    "paralelne, seku se ili su mimoilazne",
     "samo paralelne",
     "samo da se seku",
     "samo mimoilazne"
@@ -3241,7 +3241,7 @@
   {
    "lekcija": 12,
    "tezina": 2,
-   "pitanje": "Koliko normala može se spustiti iz tačke na ravan?",
+   "pitanje": "Koliko se normala može spustiti iz tačke na ravan?",
    "odgovori": [
     "Tačno jedna",
     "Beskonačno mnogo",
@@ -3790,7 +3790,7 @@
      "t": "U pravouglom trouglu koji čine duž, projekcija i normala: projekcija je nalegla kateta ugla od $30°$."
     },
     {
-     "t": "Trougao sa uglom od $30°$ je polovina jednakostraničnog trougla: kateta naspram $30°$ je pola hipotenuze, a druga kateta je $√{3}$ puta duža od nje."
+     "t": "Pravougli trougao sa uglom od $30°$ je polovina jednakostraničnog trougla: kateta naspram $30°$ je pola hipotenuze, a druga kateta je $√{3}$ puta duža od nje."
     },
     {
      "t": "Hipotenuza je $10 cm$, pa je kraća kateta (normalna na ravan) $5 cm$, a projekcija (duža kateta) je $5√{3} cm ≈ 8,66 cm$."
@@ -3857,7 +3857,7 @@
    ],
    "resenje": [
     {
-     "t": "Trougao sa uglom $60°$ je polovina jednakostraničnog: kateta uz ugao (projekcija) je polovina hipotenuze."
+     "t": "Pravougli trougao sa uglom $60°$ je polovina jednakostraničnog: kateta uz ugao (projekcija) je polovina hipotenuze."
     },
     {
      "t": "Projekcija: $12 : 2 = 6 cm$."
@@ -3876,7 +3876,7 @@
    ],
    "resenje": [
     {
-     "t": "Trougao sa uglovima $45°$ i $90°$ je jednakokraki: projekcija $p$ i normala $h$ su jednake."
+     "t": "Pravougli trougao sa uglom $45°$ je jednakokraki: projekcija $p$ i normala $h$ su jednake."
     },
     {
      "t": "$p² + p² = 8²$, pa je $2p² = 64$, $p² = 32$ i $p = 4√{2} cm$."
@@ -4170,7 +4170,7 @@
      "t": "$3x − 2 = 7$ je linearna."
     },
     {
-     "t": "$x²$, ${1|x}$ i $√{x}$ nisu linearni izrazi po $x$."
+     "t": "$x²$, ${1|x}$ i $√{x}$ nisu linearne jednačine po $x$."
     }
    ]
   },
@@ -5323,7 +5323,7 @@
    ],
    "resenje": [
     {
-     "t": "Brzina = put : vreme: $v = {240|3} = 80 km/h$."
+     "t": "Brzina je pređeni put podeljen vremenom: $v = {240|3} = 80 km/h$."
     },
     {
      "t": "Formula: $s = v · t$."
@@ -5360,10 +5360,10 @@
    "tezina": 3,
    "pitanje": "Biciklista krene u $8:00$ brzinom $15 km/h$. Sat kasnije za njim krene motociklista brzinom $45 km/h$. Kada će ga stići?",
    "odgovori": [
-    "U $9:30$",
-    "U $9:00$",
-    "U $10:00$",
-    "U $9:15$"
+    "u $9:30$",
+    "u $9:00$",
+    "u $10:00$",
+    "u $9:15$"
    ],
    "resenje": [
     {
@@ -5373,7 +5373,7 @@
      "t": "Motociklista ga sustiže brzinom $45 − 15 = 30 km/h$."
     },
     {
-     "t": "Vreme sustizanja: ${15|30} = 0,5$ h, dakle u $8:00 + 1 h + 0,5 h = 9:30$."
+     "t": "Vreme sustizanja: $t = {15|30} = 0,5 h$, pa je sustizanje u $8:00 + 1 h + 0,5 h = 9:30$."
     }
    ]
   },
@@ -5392,7 +5392,7 @@
      "t": "Nizvodno: brzina čamca + brzina reke = $18$. Uzvodno: brzina čamca − brzina reke = $12$."
     },
     {
-     "t": "Saberemo: $2 · (brzina čamca) = 30$, pa je brzina čamca $15 km/h$."
+     "t": "Ako je $v$ brzina čamca, saberemo: $2v = 30$, pa je $v = 15 km/h$."
     },
     {
      "t": "Brzina reke: $18 − 15 = 3 km/h$."
@@ -5510,10 +5510,10 @@
    ],
    "resenje": [
     {
-     "t": "Prva cev za $1$ h napuni ${1|4}$, druga ${1|6}$ bureta."
+     "t": "Prva cev za $1 h$ napuni ${1|4}$, druga ${1|6}$ bureta."
     },
     {
-     "t": "Zajedno za $1$ h: ${1|4} + {1|6} = {3|12} + {2|12} = {5|12}$."
+     "t": "Zajedno za $1 h$: ${1|4} + {1|6} = {3|12} + {2|12} = {5|12}$."
     },
     {
      "t": "Vreme: ${1|{5|12}} = {12|5} = 2,4$ sata."
@@ -5523,12 +5523,12 @@
   {
    "lekcija": 24,
    "tezina": 2,
-   "pitanje": "Cena patika snižena je za $20 %$ i sada koštaju $6.400$ dinara. Kolika je bila cena pre sniženja?",
+   "pitanje": "Cena patika snižena je za $20 %$ i sada koštaju $6400$ dinara. Kolika je bila cena pre sniženja?",
    "odgovori": [
-    "$8.000$ dinara",
-    "$7.680$ dinara",
-    "$5.120$ dinara",
-    "$8.500$ dinara"
+    "$8000$ dinara",
+    "$7680$ dinara",
+    "$5120$ dinara",
+    "$8500$ dinara"
    ],
    "resenje": [
     {
@@ -5576,7 +5576,7 @@
    ],
    "resenje": [
     {
-     "t": "Za $1$ h: ${1|3} + {1|6} = {2|6} + {1|6} = {3|6} = {1|2}$ bureta."
+     "t": "Za $1 h$: ${1|3} + {1|6} = {2|6} + {1|6} = {3|6} = {1|2}$ bureta."
     },
     {
      "t": "Celo bure za $2$ sata."
@@ -5586,12 +5586,12 @@
   {
    "lekcija": 24,
    "tezina": 2,
-   "pitanje": "Cena je poskupljenjem od $25 %$ porasla na $1.250$ dinara. Kolika je bila cena pre poskupljenja?",
+   "pitanje": "Cena je poskupljenjem od $25 %$ porasla na $1250$ dinara. Kolika je bila cena pre poskupljenja?",
    "odgovori": [
-    "$1.000$ dinara",
+    "$1000$ dinara",
     "$937,5$ dinara",
-    "$1.100$ dinara",
-    "$1.050$ dinara"
+    "$1100$ dinara",
+    "$1050$ dinara"
    ],
    "resenje": [
     {
@@ -5605,12 +5605,12 @@
   {
    "lekcija": 24,
    "tezina": 3,
-   "pitanje": "Posle sniženja od $30 %$ jakna košta $3.500$ dinara. Kolika je bila cena pre sniženja?",
+   "pitanje": "Posle sniženja od $30 %$ jakna košta $3500$ dinara. Kolika je bila cena pre sniženja?",
    "odgovori": [
-    "$5.000$ dinara",
-    "$4.550$ dinara",
-    "$4.500$ dinara",
-    "$5.500$ dinara"
+    "$5000$ dinara",
+    "$4550$ dinara",
+    "$4500$ dinara",
+    "$5500$ dinara"
    ],
    "resenje": [
     {
@@ -5668,7 +5668,7 @@
    ],
    "resenje": [
     {
-     "t": "Za $1$ h: ${1|4} + {1|12} = {3|12} + {1|12} = {4|12} = {1|3}$ bazena."
+     "t": "Za $1 h$: ${1|4} + {1|12} = {3|12} + {1|12} = {4|12} = {1|3}$ bazena."
     },
     {
      "t": "Ceo bazen za $3$ sata."
@@ -6065,7 +6065,7 @@
      "t": "$2x + 1 ≤ 7$ je linearna."
     },
     {
-     "t": "$x²$, ${1|x}$ i $√{x}$ nisu linearni."
+     "t": "Ovi izrazi nisu linearni: $x²$, ${1|x}$ i $√{x}$."
     }
    ]
   },
@@ -6449,7 +6449,7 @@
   {
    "lekcija": 29,
    "tezina": 2,
-   "pitanje": "Milan ima $500$ dinara. Sveška košta $60$ dinara, a olovka $35$. Ako kupi jednu svesku, koliko najviše olovaka može da kupi?",
+   "pitanje": "Milan ima $500$ dinara. Sveska košta $60$ dinara, a olovka $35$. Ako kupi jednu svesku, koliko najviše olovaka može da kupi?",
    "odgovori": [
     "12",
     "13",
@@ -7198,7 +7198,7 @@
    "odgovori": [
     "2 petougla i 5 pravougaonika",
     "5 petouglova",
-    "1 petougla i 5 pravougaonika",
+    "1 petougao i 5 pravougaonika",
     "2 petougla i 3 pravougaonika"
    ],
    "resenje": [
@@ -7522,7 +7522,7 @@
    ],
    "resenje": [
     {
-     "t": "$B = a · h_{osnove} = 5 · 4 = 20 cm²$."
+     "t": "Osnova je romb: $B = a · h = 5 · 4 = 20 cm²$, gde je $h$ visina osnove."
     },
     {
      "t": "Omotač: $M = O · H = 4 · 5 · 8 = 160 cm²$."
@@ -8346,10 +8346,10 @@
    ],
    "resenje": [
     {
-     "t": "$V = 40 · 25 · 30 = 30.000 cm³$."
+     "t": "$V = 40 · 25 · 30 = 30 000 cm³$."
     },
     {
-     "t": "$1 liter = 1000 cm³$, pa je $V = 30$ litara."
+     "t": "Litar je $1000 cm³$, pa je $30 000 : 1000 = 30$ litara."
     }
    ]
   },
@@ -8876,7 +8876,7 @@
      "t": "Jedna osnova + $6$ bočnih trouglova = $7$ strana."
     },
     {
-     "t": "Temena: $6$ na osnovi + $1$ vrh = $7$."
+     "t": "Temena: $6$ na osnovi i još $1$ u vrhu, ukupno $7$."
     },
     {
      "t": "Ivica: $6 + 6 = 12$.",
@@ -9016,7 +9016,7 @@
    ],
    "resenje": [
     {
-     "t": "$5$ temena osnove + $1$ vrh = $6$ temena."
+     "t": "$5$ temena osnove i još $1$ u vrhu: ukupno $6$ temena."
     }
    ]
   },
@@ -9057,10 +9057,10 @@
    "tezina": 1,
    "pitanje": "Mreža četvorostrane piramide sastoji se od…",
    "odgovori": [
-    "1 kvadrata i 4 trougla",
+    "1 kvadrat i 4 trougla",
     "2 kvadrata i 4 trougla",
     "4 kvadrata",
-    "1 trougla i 4 kvadrata"
+    "1 trougao i 4 kvadrata"
    ],
    "resenje": [
     {
@@ -9082,7 +9082,7 @@
    "pitanje": "Mreža trostrane piramide (tetraedra) sastoji se od…",
    "odgovori": [
     "4 trougla",
-    "1 trougla i 3 kvadrata",
+    "1 trougao i 3 kvadrata",
     "2 trougla",
     "6 trouglova"
    ],
@@ -9122,9 +9122,9 @@
    "tezina": 2,
    "pitanje": "Mreža šestostrane piramide sastoji se od:",
    "odgovori": [
-    "1 šestougla i 6 trouglova",
+    "1 šestougao i 6 trouglova",
     "6 šestouglova",
-    "1 šestougla i 3 trougla",
+    "1 šestougao i 3 trougla",
     "2 šestougla i 6 trouglova"
    ],
    "resenje": [
@@ -9170,9 +9170,9 @@
    "tezina": 3,
    "pitanje": "Mreža petostrane piramide sastoji se od:",
    "odgovori": [
-    "1 petougla i 5 trouglova",
+    "1 petougao i 5 trouglova",
     "5 petouglova",
-    "1 petougla i 3 trougla",
+    "1 petougao i 3 trougla",
     "2 petougla i 5 trouglova"
    ],
    "resenje": [
@@ -9769,7 +9769,7 @@
    ],
    "resenje": [
     {
-     "t": "$V_{piramide} = {1|3} V_{prizme}$ za istu osnovu i visinu."
+     "t": "Zapremina piramide je ${1|3}$ zapremine prizme sa istom osnovom i visinom."
     }
    ]
   },
@@ -9827,10 +9827,10 @@
    ],
    "resenje": [
     {
-     "t": "$B = 230² = 52.900 m²$."
+     "t": "$B = 230² = 52 900 m²$."
     },
     {
-     "t": "$V = {52.900 · 146|3} = {7.723.400|3} ≈ 2.574.467 m³$."
+     "t": "$V = {52 900 · 146|3} = {7 723 400|3} ≈ 2 574 467 m³$."
     },
     {
      "t": "Dakle oko $2,57$ miliona kubnih metara."
@@ -10005,7 +10005,7 @@
    ],
    "resenje": [
     {
-     "t": "U $y = x + 1$ svakom $x$ odgovara tačno jedno $y$."
+     "t": "Za $y = x + 1$ svakom $x$ odgovara tačno jedno $y$."
     },
     {
      "t": "Kod $y² = x$ (tj. $x = y²$), za $x = 4$ imamo $y = 2$ i $y = −2$ – dva rešenja, pa to nije funkcija."
@@ -10097,7 +10097,7 @@
    ],
    "resenje": [
     {
-     "t": "U $y = 2x$ svakom $x$ odgovara tačno jedno $y$."
+     "t": "Za $y = 2x$ svakom $x$ odgovara tačno jedno $y$."
     },
     {
      "t": "Kod $y² = x$ (tj. $x = y²$) i kružnice $x² + y² = 4$ nekom $x$ odgovara više vrednosti $y$."
@@ -10533,7 +10533,7 @@
    ],
    "resenje": [
     {
-     "t": "Rast $3 °C$/min je koeficijent, početnih $20 °C$ je odsečak."
+     "t": "Rast od $3 °C$ po minutu je koeficijent, a početna temperatura $20 °C$ je odsečak."
     },
     {
      "t": "$y = 3x + 20$."
@@ -10545,10 +10545,10 @@
    "tezina": 3,
    "pitanje": "Krojač naplaćuje $200$ dinara po košulji plus fiksni trošak od $500$ dinara. Koliko košta $6$ košulja?",
    "odgovori": [
-    "$1.700$ dinara",
-    "$1.200$ dinara",
-    "$2.200$ dinara",
-    "$1.500$ dinara"
+    "$1700$ dinara",
+    "$1200$ dinara",
+    "$2200$ dinara",
+    "$1500$ dinara"
    ],
    "resenje": [
     {
@@ -10606,7 +10606,7 @@
      "t": "Voda ističe, pa je koeficijent negativan: $−2$."
     },
     {
-     "t": "Početnih $100$ litara je odsečak: $y = −2x + 100$."
+     "t": "Početna količina od $100$ litara je odsečak: $y = −2x + 100$."
     }
    ]
   },
@@ -11736,10 +11736,10 @@
    "tezina": 3,
    "pitanje": "Prava prolazi kroz $(0, 3)$ i $(2, 5)$. Gde seče $x$-osu?",
    "odgovori": [
-    "U $x = −3$",
-    "U $x = 3$",
-    "U $x = −1,5$",
-    "U $x = 1,5$"
+    "u tački $(−3, 0)$",
+    "u tački $(3, 0)$",
+    "u tački $(0, 3)$",
+    "u tački $(0, −3)$"
    ],
    "resenje": [
     {
@@ -13627,7 +13627,7 @@
   {
    "lekcija": 59,
    "tezina": 3,
-   "pitanje": "Prodato je $100$ ulaznica za $16.000$ dinara. Ulaznica za odrasle je $200$, a za decu $100$ dinara. Koliko je prodato ulaznica za odrasle?",
+   "pitanje": "Prodato je $100$ ulaznica za $16 000$ dinara. Ulaznica za odrasle je $200$, a za decu $100$ dinara. Koliko je prodato ulaznica za odrasle?",
    "odgovori": [
     "60",
     "40",
@@ -13636,10 +13636,10 @@
    ],
    "resenje": [
     {
-     "t": "$a + d = 100$ i $200a + 100d = 16.000$."
+     "t": "$a + d = 100$ i $200a + 100d = 16 000$."
     },
     {
-     "t": "Uvrstimo $d = 100 − a$: $200a + 100(100 − a) = 16.000$, pa je $100a = 6000$ i $a = 60$."
+     "t": "Uvrstimo $d = 100 − a$: $200a + 100(100 − a) = 16 000$, pa je $100a = 6000$ i $a = 60$."
     }
    ]
   },
@@ -15062,7 +15062,7 @@
    ],
    "resenje": [
     {
-     "t": "$V_{kupe} = {1|3} V_{valjka}$ – ista osnova i visina."
+     "t": "Zapremina kupe je ${1|3}$ zapremine valjka (ista osnova i visina)."
     }
    ]
   },
@@ -15653,7 +15653,7 @@
      "t": "Lopta ima poluprečnik $r$ (jer je visina valjka $2r$)."
     },
     {
-     "t": "$V_{lopte} = {4r³π|3}$, $V_{valjka} = r²π · 2r = 2r³π$."
+     "t": "Zapremina lopte je ${4r³π|3}$, a zapremina valjka je $r²π · 2r = 2r³π$."
     },
     {
      "t": "Odnos: ${4r³π|3} : 2r³π = {4|3} · {1|2} = {2|3} = 2 : 3$."
@@ -15672,7 +15672,7 @@
    ],
    "resenje": [
     {
-     "t": "Lopta dodiruje valjak, pa je $r_{valjka} = 5 cm$ i $H = 2 · 5 = 10 cm$."
+     "t": "Lopta dodiruje valjak, pa je poluprečnik valjka $r = 5 cm$, a visina $H = 2 · 5 = 10 cm$."
     },
     {
      "t": "$V = r²πH = 25 · 3,14 · 10 = 785 cm³$."
@@ -15761,7 +15761,7 @@
    ],
    "resenje": [
     {
-     "t": "$V_{kocke} = a³$; lopta ima $r = {a|2}$, pa je $V_{lopte} = {4|3}π({a|2})³ = {πa³|6}$."
+     "t": "Kocka ima zapreminu $a³$, a lopta ima $r = {a|2}$, pa je njena zapremina ${4|3}π({a|2})³ = {πa³|6}$."
     },
     {
      "t": "Odnos: $a³ : {πa³|6} = 6 : π$."

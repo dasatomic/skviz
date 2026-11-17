@@ -80,7 +80,7 @@ module.exports = ({ L, Z, K, G, R, O, bez, r, proveri, sto, traka, stubici, kruz
   Z(1, 'Ocene učenika su $4, 5, 3, 5, 4$. Kolika je aritmetička sredina?',
     ['$4,2$', '$4$', '$21$', '$4,5$'],
     [K('Zbir: $4 + 5 + 3 + 5 + 4 = 21$.'),
-     K('Sredina: $21 : 5 = 4,2$ – „poravnati“ stubići.', ['pr'])],
+     K('Sredina: $21 : 5 = 4,2$ – toliko bi svaki stubić bio kad bi se svi izjednačili.', ['pr'])],
     saProsekom([['1', 4], ['2', 5], ['3', 3], ['4', 5], ['5', 4]], 4.2, 2, { maxY: 5 }));
 
   Z(1, 'Temperature u podne četiri dana bile su $12°$, $15°$, $9°$ i $14°$. Kolika je prosečna temperatura?',

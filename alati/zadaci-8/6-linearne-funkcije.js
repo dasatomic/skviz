@@ -16,7 +16,7 @@ module.exports = ({ L, Z, G, K, proveri, r, grafik, prava, A }) => {
 
   Z(2, 'Koja zavisnost jeste funkcija po $x$?',
     ['$y = x + 1$', '$y² = x$', '$x² + y² = 1$', '$|y| = x$'],
-    [K('U $y = x + 1$ svakom $x$ odgovara tačno jedno $y$.'),
+    [K('Za $y = x + 1$ svakom $x$ odgovara tačno jedno $y$.'),
      K('Kod $y² = x$ (tj. $x = y²$), za $x = 4$ imamo $y = 2$ i $y = −2$ – dva rešenja, pa to nije funkcija.'),
      K('Kružnica $x² + y² = 1$ takođe nije grafik funkcije.')]);
 
@@ -194,7 +194,7 @@ module.exports = ({ L, Z, G, K, proveri, r, grafik, prava, A }) => {
     [K('$k = {y_{2} − y_{1}|x_{2} − x_{1}} = {6 − 2|3 − 1} = {4|2} = 2$.')]);
 
   Z(3, 'Prava prolazi kroz $(0, 3)$ i $(2, 5)$. Gde seče $x$-osu?',
-    ['U $x = −3$', 'U $x = 3$', 'U $x = −1,5$', 'U $x = 1,5$'],
+    ['u tački $(−3, 0)$', 'u tački $(3, 0)$', 'u tački $(0, 3)$', 'u tački $(0, −3)$'],
     [K('$n = 3$; $k = {5 − 3|2 − 0} = 1$, pa je $y = x + 3$.'),
      K('Nula: $x + 3 = 0$, pa je $x = −3$.'),
      K('Tačka preseka sa $x$-osom je $(−3, 0)$.')]);
@@ -213,7 +213,7 @@ module.exports = ({ L, Z, G, K, proveri, r, grafik, prava, A }) => {
     [K('$f(0) = 2 · 0 + 3 = 3$.')]);
   Z(2, 'Koja zavisnost jeste funkcija po $x$?',
     ['$y = 2x$', '$y² = x$', '$|y| = x$', '$x² + y² = 4$'],
-    [K('U $y = 2x$ svakom $x$ odgovara tačno jedno $y$.'),
+    [K('Za $y = 2x$ svakom $x$ odgovara tačno jedno $y$.'),
      K('Kod $y² = x$ (tj. $x = y²$) i kružnice $x² + y² = 4$ nekom $x$ odgovara više vrednosti $y$.')]);
   Z(2, 'Funkcija je data sa $f(x) = x²$. Koliko je $f(3)$?',
     ['9', '6', '3', '0'],
@@ -260,10 +260,10 @@ module.exports = ({ L, Z, G, K, proveri, r, grafik, prava, A }) => {
     [K('$y = 80x + 100$.')]);
   Z(2, 'Temperatura raste $3 °C$ svakog minuta, a početna je $20 °C$. Funkcija temperature je:',
     ['$y = 3x + 20$', '$y = 20x + 3$', '$y = −3x + 20$', '$y = 3x$'],
-    [K('Rast $3 °C$/min je koeficijent, početnih $20 °C$ je odsečak.'),
+    [K('Rast od $3 °C$ po minutu je koeficijent, a početna temperatura $20 °C$ je odsečak.'),
      K('$y = 3x + 20$.')]);
   Z(3, 'Krojač naplaćuje $200$ dinara po košulji plus fiksni trošak od $500$ dinara. Koliko košta $6$ košulja?',
-    ['$1.700$ dinara', '$1.200$ dinara', '$2.200$ dinara', '$1.500$ dinara'],
+    ['$1700$ dinara', '$1200$ dinara', '$2200$ dinara', '$1500$ dinara'],
     [K('$y = 200x + 500$.'),
      K('Za $x = 6$: $200 · 6 + 500 = 1700$ dinara.')]);
   Z(2, 'Telefon se puni $10 %$ po minutu, a baterija je na $40 %$. Funkcija napunjenosti je:',
@@ -275,7 +275,7 @@ module.exports = ({ L, Z, G, K, proveri, r, grafik, prava, A }) => {
   Z(3, 'Iz bazena sa $100$ litara ističe $2$ litra vode u minutu. Funkcija količine vode je:',
     ['$y = −2x + 100$', '$y = 2x + 100$', '$y = 100x − 2$', '$y = 2x$'],
     [K('Voda ističe, pa je koeficijent negativan: $−2$.'),
-     K('Početnih $100$ litara je odsečak: $y = −2x + 100$.')]);
+     K('Početna količina od $100$ litara je odsečak: $y = −2x + 100$.')]);
 
   L('Grafik linearne funkcije');
   Z(1, 'Grafik funkcije $y = 2x + 1$ prolazi kroz tačke:',

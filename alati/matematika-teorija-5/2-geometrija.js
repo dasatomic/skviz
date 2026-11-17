@@ -39,15 +39,15 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, pravilni, krug, luk, O, bez, papi
     ['Tačno jedna', 'Dve', 'Beskonačno mnogo', 'Nijedna'],
     'Kroz jednu tačku prolazi beskonačno mnogo pravih, ali kroz DVE različite tačke prolazi tačno jedna prava – one je potpuno određuju.', 'prava',
     { mediji: G({ A: [0, 0], B: [4, 0] }, [{ d: 'AB', b: 1, debljina: 3 }, { tacka: 'A', b: 1 }, { tacka: 'B', b: 1 }], { velicina: 260 }) });
-  Q(2, 'Ako tačka C leži između tačaka A i B, šta sigurno važi?',
-    ['Sve tri leže na istoj pravoj', 'Sve tri su temena trougla', 'Tačka C je van duži AB', 'Tačke A i C se poklapaju'],
-    'Kad tačka leži „između“, sve tri tačke su na istoj pravoj – takve tačke zovemo kolinearne. Kažemo i da je C unutrašnja tačka duži AB.', 'kolinearan',
+  Q(2, 'Ako tačka $C$ leži između tačaka $A$ i $B$, šta sigurno važi?',
+    ['Sve tri leže na istoj pravoj', 'Sve tri su temena trougla', 'Tačka $C$ je van duži $AB$', 'Tačke $A$ i $C$ se poklapaju'],
+    'Kad tačka leži „između“, sve tri tačke su na istoj pravoj – takve tačke zovemo kolinearne. Kažemo i da je $C$ unutrašnja tačka duži $AB$.', 'kolinearan',
     { mediji: G({ A: [0, 0], C: [1.6, 0], B: [3.6, 0] }, [{ d: 'AB', b: 4, debljina: 2 }, { tacka: 'A', b: 1 }, { tacka: 'C', b: 2 }, { tacka: 'B', b: 1 }], { velicina: 260 }) });
   Q(2, 'Koliko tačaka sadrži jedna duž?',
     ['Beskonačno mnogo', 'Samo dve', 'Tačno tri', 'Nijednu'],
     'Duž ima dva kraja, ali između njih leži beskonačno mnogo tačaka. Zato se i najkraća duž sastoji od beskonačno mnogo tačaka.', 'duž',
     { medijiOdgovora: G({ A: [0, 0], B: [5, 0] }, [{ d: 'AB', b: 1, debljina: 3 }, ...[1, 2, 3, 4].map((x) => ({ tx: '●', at: [x, 0], vel: 12, b: 2 }))], { velicina: 260 }) });
-  Q(3, 'Tri tačke A, B i C NE leže na istoj pravoj. Koliko duži one određuju?',
+  Q(3, 'Tri tačke $A$, $B$ i $C$ NE leže na istoj pravoj. Koliko duži one određuju?',
     ['3', '1', '2', '6'],
     'Svake dve tačke određuju jednu duž: $AB$, $BC$ i $CA$ – ukupno 3 duži. One čine trougao.', 'duž',
     { medijiOdgovora: G({ A: [0, 0], B: [3.5, 0], C: [1, 2.2] }, [{ d: 'AB', b: 1, debljina: 3 }, { d: 'BC', b: 2, debljina: 3 }, { d: 'CA', b: 3, debljina: 3 }, { tacka: 'A', b: 1 }, { tacka: 'B', b: 1 }, { tacka: 'C', b: 1 }], { velicina: 260 }) });
@@ -60,13 +60,13 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, pravilni, krug, luk, O, bez, papi
     { medijiOdgovora: G({ A: [-3, 1.2], B: [3, 1.2], C: [-3, -1.2], D: [3, -1.2] }, [{ d: 'AB', b: 1, debljina: 3 }, { d: 'CD', b: 2, debljina: 3 }, { tx: 'a', at: [-2.6, 1.7], vel: 15, b: 1 }, { tx: 'b', at: [-2.6, -1.4], vel: 15, b: 2 }], { velicina: 280 }) });
   Q(1, 'Kako se zovu prave koje se seku pod pravim uglom (90°)?',
     ['Normalne (upravne) prave', 'Paralelne prave', 'Mimoilazne prave', 'Podudarne prave'],
-    'Normalne prave seku se pod uglom od $90°$. Označavamo ih $a \\perp b$. Ivice kvadrata su uzajamno normalne.', 'normalne',
+    'Normalne prave seku se pod uglom od $90°$. Označavamo ih $a \\perp b$. Susedne stranice kvadrata su normalne jedna na drugu.', 'normalne',
     { medijiOdgovora: G({ A: [-3, 0], B: [3, 0], C: [0, -3], D: [0, 3] }, [{ d: 'AB', b: 1, debljina: 3 }, { d: 'CD', b: 2, debljina: 3 }, { pu: 'AOD' }, { tx: 'a', at: [3.2, 0.4], vel: 15, b: 1 }, { tx: 'b', at: [0.4, 3.2], vel: 15, b: 2 }], { ...bez, velicina: 280 }) });
   Q(2, 'Koliko zajedničkih tačaka najviše mogu imati dve različite prave u ravni?',
     ['Jednu', 'Dve', 'Tri', 'Beskonačno mnogo'],
     'Dve različite prave se ili seku u jednoj tački ili su paralelne (nula zajedničkih tačaka). Više od jedne zajedničke tačke imale bi samo kad bi se poklapale.', 'presek',
     { medijiOdgovora: G({ A: [-3, -2], B: [3, 2], C: [-3, 2], D: [3, -2] }, [{ d: 'AB', b: 1, debljina: 3 }, { d: 'CD', b: 2, debljina: 3 }], { velicina: 260 }) });
-  Q(2, 'Dve prave se seku u tački O. Kako se ta tačka zove?',
+  Q(2, 'Dve prave se seku u tački $O$. Kako se ta tačka zove?',
     ['Presečna tačka', 'Dodirna tačka', 'Početna tačka', 'Središte'],
     'Tačka u kojoj se dve prave seku zove se presečna tačka. To je jedina zajednička tačka tih pravih.', 'presek',
     { mediji: G({ A: [-3, -2], B: [3, 2], C: [-3, 2], D: [3, -2], O: [0, 0] }, [{ d: 'AB', b: 1, debljina: 3 }, { d: 'CD', b: 2, debljina: 3 }, { tacka: 'O', b: 1 }, { tx: 'O', at: [0, -0.5], vel: 15 }], { bezImena: ['O'], velicina: 260 }) });
@@ -99,17 +99,17 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, pravilni, krug, luk, O, bez, papi
     ['Kada imaju istu dužinu', 'Kada su paralelne', 'Kada imaju isti pravac', 'Kada se seku'],
     'Duži su jednake ako imaju istu dužinu, bez obzira gde se nalaze i kako su okrenute. Jednakost označavamo sa $AB = CD$.', 'jednakost',
     { medijiOdgovora: G({ A: [0, 0], B: [3, 0], C: [0, -2], D: [3, -2] }, [{ d: 'AB', b: 1, debljina: 3, o: '3 cm' }, { d: 'CD', b: 2, debljina: 3, o: '3 cm' }], { velicina: 260 }) });
-  Q(2, 'Duž AB je duga 3 cm, a duž CD je duga 30 mm. Šta važi?',
-    ['Duži su jednake', 'AB je duža', 'CD je duža', 'Ne može se uporediti'],
-    '$30$ mm je isto što i $3$ cm, jer je $1$ cm $= 10$ mm. Zato su duži jednake – samo su izražene različitim jedinicama.', 'jednakost',
+  Q(2, 'Duž $AB$ je duga 3 cm, a duž $CD$ je duga 30 mm. Šta važi?',
+    ['Duži su jednake', '$AB$ je duža', '$CD$ je duža', 'Ne može se uporediti'],
+    '$30 mm$ je isto što i $3 cm$, jer je $1 cm = 10 mm$. Zato su duži jednake – samo su izražene različitim jedinicama.', 'jednakost',
     { mediji: G({ A: [0, 0], B: [3, 0], C: [0, -2], D: [3, -2] }, [{ d: 'AB', b: 1, debljina: 3, o: '3 cm' }, { d: 'CD', b: 2, debljina: 3, o: '30 mm' }], { velicina: 260 }) });
   Q(3, 'Koji niz jedinica je poređan od najmanje ka najvećoj?',
-    ['mm, cm, dm, m, km', 'km, m, dm, cm, mm', 'cm, mm, m, km, dm', 'dm, cm, mm, km, m'],
-    'Od najmanje ka najvećoj: milimetar, centimetar, decimetar, metar, kilometar. Svaka sledeća je 10 puta veća od prethodne (osim km koji je 1000 m).', 'jedinica');
+    ['$mm$, $cm$, $dm$, $m$, $km$', '$km$, $m$, $dm$, $cm$, $mm$', '$cm$, $mm$, $m$, $km$, $dm$', '$dm$, $cm$, $mm$, $km$, $m$'],
+    'Od najmanje ka najvećoj: milimetar, centimetar, decimetar, metar, kilometar. Svaka sledeća je 10 puta veća od prethodne (osim kilometra, koji je 1000 puta veći od metra).', 'jedinica');
 
   S(1, 'Spoji jedinicu sa njenom vrednošću.',
     [['1 m', '100 cm'], ['1 km', '1000 m'], ['1 dm', '10 cm'], ['1 cm', '10 mm']],
-    'Jedinice za dužinu idu po deseticama: svaka manja jedinica je 10 puta manja od veće (osim kilometra koji je 1000 m).', 'jedinica');
+    'Jedinice za dužinu idu po deseticama: svaka manja jedinica je 10 puta manja od veće (osim kilometra, koji je 1000 puta veći od metra).', 'jedinica');
 
   // ── 12. prenošenje i nadovezivanje duži ──
   L('Prenošenje i nadovezivanje duži');
@@ -123,11 +123,11 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, pravilni, krug, luk, O, bez, papi
        { tacka: 'M', b: 1 }, { tacka: 'N', b: 1 }], { bezImena: ['M', 'N'], velicina: 260 }) });
   Q(1, 'Ako duž od 3 cm nadovežeš na duž od 4 cm, kolika je ukupna duž?',
     ['7 cm', '6 cm', '5 cm', '8 cm'],
-    'Nadovezivanje znači postavljanje jedne duži na kraj druge, pa se dužine sabiraju: $3 + 4 = 7$ cm.', 'duž',
+    'Nadovezivanje znači postavljanje jedne duži na kraj druge, pa se dužine sabiraju: $3 cm + 4 cm = 7 cm$.', 'duž',
     { mediji: G({ A: [0, 0], B: [3, 0], D: [7, 0] }, [{ d: 'AB', b: 1, debljina: 4, o: '3 cm', na: 0.3 }, { d: 'BD', b: 2, debljina: 4, o: '4 cm', na: 0.7 }], { velicina: 300 }) });
-  Q(2, 'Tačka C je na duži AB. Ako je $AB = 5$ cm i $AC = 2$ cm, kolika je duž $CB$?',
+  Q(2, 'Tačka $C$ je na duži $AB$. Ako je $AB = 5 cm$ i $AC = 2 cm$, kolika je duž $CB$?',
     ['3 cm', '2 cm', '5 cm', '7 cm'],
-    'Kad je tačka na duži, delovi se dopunjuju do cele duži: $CB = AB - AC = 5 - 2 = 3$ cm.', 'duž',
+    'Kad je tačka na duži, delovi se dopunjuju do cele duži: $CB = AB - AC = 5 cm - 2 cm = 3 cm$.', 'duž',
     { mediji: G({ A: [0, 0], C: [2, 0], B: [5, 0] }, [{ d: 'AB', b: 4, debljina: 2 }, { d: 'AC', b: 1, debljina: 4 }, { tacka: 'C', b: 1 }, { tx: '2 cm', at: [1, 0.45], vel: 14, b: 1 }, { tx: '5 cm', at: [3.6, -0.75], vel: 14 }], { velicina: 260 }) });
   Q(2, 'Šta znači „nadovezati duži“?',
     ['Postaviti jednu duž na kraj druge', 'Postaviti ih tako da se ukrste', 'Postaviti ih jednu ispod druge', 'Prepoloviti obe duži'],
@@ -135,9 +135,9 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, pravilni, krug, luk, O, bez, papi
     { medijiOdgovora: G({ A: [0, 0], B: [2.5, 0], C: [0, -1.8], D: [2.5, -1.8] }, [{ d: 'AB', b: 1, debljina: 4 }, { d: 'CD', b: 2, debljina: 4, pomeri: [2.5, 1.8], ponovi: 1 }], { velicina: 260 }) });
   Q(3, 'Imaš tri duži: 2 cm, 4 cm i 6 cm. Nadovezivanjem sve tri dobijaš duž od…',
     ['12 cm', '10 cm', '8 cm', '14 cm'],
-    'Sve tri se sabiraju: $2+4+6=12$ cm. Nadovezivanjem se dužine uvek sabiraju.', 'duž',
+    'Sve tri se sabiraju: $2 cm + 4 cm + 6 cm = 12 cm$. Nadovezivanjem se dužine uvek sabiraju.', 'duž',
     { mediji: G({ A: [0, 0], B: [2, 0], C: [6, 0], D: [12, 0] }, [{ d: 'AB', b: 1, debljina: 4, o: '2', na: 0.4 }, { d: 'BC', b: 2, debljina: 4, o: '4', na: 0.4 }, { d: 'CD', b: 3, debljina: 4, o: '6', na: 0.4 }], { velicina: 320 }) });
-  Q(2, 'Duž AB preneta je šestarom na polupravu od tačke C, pa je dobijena duž CD. Šta sigurno važi?',
+  Q(2, 'Duž $AB$ preneta je šestarom na polupravu od tačke $C$, pa je dobijena duž $CD$. Šta sigurno važi?',
     ['$AB = CD$', '$AB < CD$', '$AB > CD$', 'Duži su paralelne'],
     'Prenošenje šestarom čuva dužinu, pa su duži jednake: $AB = CD$. To je osnovni način da kopiramo duž.', 'šestar',
     { medijiOdgovora: G({ A: [0, 0], B: [3, 0], C: [0, -2], D: [3, -2] }, [{ d: 'AB', b: 1, debljina: 4, o: '3 cm' }, { d: 'CD', b: 2, debljina: 4, o: '3 cm' }, { d: 'AC', isp: 1, b: 4, str: 1 }], { velicina: 260 }) });
@@ -150,7 +150,7 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, pravilni, krug, luk, O, bez, papi
     { medijiOdgovora: mnogougao(5) });
   Q(1, 'Koliko stranica ima petougao?',
     ['5', '6', '4', '7'],
-    'Petougao ima 5 stranica (peta = pet). Svaka stranica je duž koja spaja dva susedna temena.', 'petougao',
+    'Petougao ima 5 stranica i 5 temena. Svaka stranica je duž koja spaja dva susedna temena.', 'petougao',
     { medijiOdgovora: mnogougao(5) });
   Q(1, 'Kako se zove mnogougao sa 6 stranica?',
     ['Šestougao', 'Petougao', 'Sedmougao', 'Osmougao'],
@@ -166,7 +166,7 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, pravilni, krug, luk, O, bez, papi
     { medijiOdgovora: mnogougao(5, { dijagonala: true }) });
   Q(2, 'Šta su temena mnogougla?',
     ['Tačke u kojima se spajaju stranice', 'Sredine stranica', 'Duži koje spajaju tačke', 'Uglovi mnogougla'],
-    'Temena su tačke u kojima se sustiču dve susedne stranice. Mnogougao ima isto toliko temena koliko i stranica.', 'teme',
+    'Temena su tačke u kojima se sastaju dve susedne stranice. Mnogougao ima isto toliko temena koliko i stranica.', 'teme',
     { medijiOdgovora: G(pravilni(5, 3), [{ p: 'ABCDE', b: 0 }, { tacka: 'A', b: 1 }, { tacka: 'B', b: 1 }, { tacka: 'C', b: 1 }, { tacka: 'D', b: 1 }, { tacka: 'E', b: 1 }], { velicina: 240 }) });
   Q(3, 'Koji od ovih oblika NIJE mnogougao?',
     ['Krug', 'Trougao', 'Šestougao', 'Kvadrat'],
@@ -214,9 +214,9 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, pravilni, krug, luk, O, bez, papi
     ['Tačka oko koje se vrši preslikavanje', 'Prava oko koje se preslikava', 'Duž koja se preslikava', 'Ugao figure'],
     'Centar simetrije je tačka $O$ oko koje preslikavamo. Centralna simetrija je isto što i okretanje za $180°$ oko te tačke.', 'centar',
     { mediji: G({ O: [0, 0] }, [{ tacka: 'O', b: 1 }, { tx: 'O', at: [0, -0.5], vel: 15 }], { bezImena: ['O'], velicina: 160 }) });
-  Q(2, 'U centralnoj simetriji sa centrom O, tačka A preslikava se u tačku A′. Šta je tačka O za duž AA′?',
-    ['Središte duži AA′', 'Kraj duži AA′', 'Van duži AA′', 'Teme trougla'],
-    'Tačka O je tačno na sredini duži $AA\'$: važi $AO = OA\'$, a tačke A, O i A′ su na istoj pravoj.', 'središte',
+  Q(2, 'U centralnoj simetriji sa centrom $O$, tačka $A$ preslikava se u tačku $A′$. Šta je tačka $O$ za duž $AA′$?',
+    ['Središte duži $AA′$', 'Kraj duži $AA′$', 'Van duži $AA′$', 'Teme trougla'],
+    'Tačka $O$ je tačno na sredini duži $AA\'$: važi $AO = OA\'$, a tačke $A$, $O$ i $A′$ su na istoj pravoj.', 'središte',
     { medijiOdgovora: G({ A: [-2.2, 0], O: [0, 0], "A'": [2.2, 0] }, [{ d: "AA'", b: 0 }, { tacka: 'O', b: 1 }, { tx: 'O', at: [0, -0.5], vel: 14 }], { velicina: 280 }) });
   Q(2, 'Centralna simetrija je isto što i okretanje za koliko stepeni?',
     ['180°', '90°', '360°', '45°'],

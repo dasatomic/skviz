@@ -240,7 +240,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, naKrugu, sat, uglomer, pica,
 
   Z(2, 'Za koliko se pomeri mala kazaljka (za sate) za $1$ minut?',
     ['$30\'$', '$6°$', '$1°$', '$5\'$'],
-    [K('Mala kazaljka za $1$ sat ($60$ min) pređe $30°$.'),
+    [K('Mala kazaljka za $1$ sat (60 min) pređe $30°$.'),
      K('Za $1$ minut: $30° : 60 = 0,5° = 30\'$.')]);
 
   Z(2, 'Izračunaj: $3 · 25°40\'$.',
@@ -352,10 +352,10 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, naKrugu, sat, uglomer, pica,
   {
     const v = ugaoTransverzale(70);
     const t = { P: v.P, Q: v.Q, C: v.C, D: v.D, A: [4, 2], B: [v.Q[0] + 3, -1], a1: [-3, 2], a2: [5, 2], b1: [-3, -1], b2: [5, -1] };
-    Z(2, 'Prave $a ∥ b$ seče transverzala. Jedan od suprotnih uglova (sa iste strane transverzale, između pravih) je $70°$. Koliki je drugi?',
+    Z(2, 'Prave $a ∥ b$ seče transverzala. Jedan od unutrašnjih uglova sa iste strane transverzale je $70°$. Koliki je drugi?',
       ['$110°$', '$70°$', '$20°$', '$290°$'],
       [K('Drugi ugao je uporedan uglu koji je saglasan sa prvim.'),
-       K('Zato je zbir suprotnih uglova $180°$: $180° − 70° = 110°$.', ['x'])],
+       K('Zato je zbir ta dva unutrašnja ugla $180°$: $180° − 70° = 110°$.', ['x'])],
       G(t, [{ d: 'a1a2', b: 0 }, { d: 'b1b2', b: 0 }, { d: 'CD', b: 1 }, { u: 'DPA', o: '110°', b: 3, r: 26, k: 2, id: 'x' }, { u: 'APD', b: 3, r: 26, kraj: 2, o: '?' }, { u: 'BQP', o: '70°', b: 2, r: 26 }], { bezImena: ['P', 'Q', 'A', 'B', 'C', 'D', 'a1', 'a2', 'b1', 'b2'], velicina: 220 }));
   }
 

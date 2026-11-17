@@ -44,7 +44,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik 
     ['$25 m$', '$15 m$', '$45 m$', '$20 m$'],
     [K('Vreme pada: $t = √{2h : g} = √{90 : 10} s = 3 s$.'),
      K('Za prve $2 s$ telo padne $h_{2} = {10 · 2^{2}|2} m = 20 m$.'),
-     K('U poslednjoj (trećoj) sekundi: $45 m − 20 m = 25 m$. Po sekundama: $5$, $15$, $25$ m.', [], S('pad', { tip: 'slobodan', visina: 45, strob: 1 }))],
+     K('U poslednjoj (trećoj) sekundi: $45 m − 20 m = 25 m$. Po sekundama: $5 m$, $15 m$, $25 m$.', [], S('pad', { tip: 'slobodan', visina: 45, strob: 1 }))],
     S('pad', { tip: 'slobodan', visina: 45, brzina: false, sat: false, strob: 99 }));
 
   proveri(1.6 * 5, 8);

@@ -134,7 +134,7 @@ module.exports = ({ L, Z, K, G, r, S3, proveri, pravilni, ime, naKrugu }) => {
     [K('Unutrašnji + spoljašnji $= 180°$. Ako je spoljašnji $s$, unutrašnji je $4s$: $5s = 180°$, $s = 36°$.'),
      K('$n = 360° : 36° = 10$. Provera: unutrašnji ugao desetougla je $144° = 4 · 36°$ ✓')]);
 
-  Z(3, 'Zbir unutrašnjih uglova mnogougla je za $900°$ veći od zbira njegovih spoljašnjih uglova. Koliko mnogougao ima stranica?',
+  Z(3, 'Zbir unutrašnjih uglova mnogougla je za $900°$ veći od zbira njegovih spoljašnjih uglova. Koliko stranica ima mnogougao?',
     ['$9$', '$7$', '$5$', '$11$'],
     [K('Zbir spoljašnjih je $360°$, pa je zbir unutrašnjih $360° + 900° = 1260°$.'),
      K('$(n − 2) · 180° = 1260°$, $n − 2 = 7$, $n = 9$.')]);
@@ -314,7 +314,7 @@ module.exports = ({ L, Z, K, G, r, S3, proveri, pravilni, ime, naKrugu }) => {
   Z(3, 'Koji od ovih pravilnih mnogouglova NE može da se konstruiše lenjirom i šestarom?',
     ['sedmougao', 'osmougao', 'dvanaestougao', 'šesnaestougao'],
     [K('Osmougao, dvanaestougao i šesnaestougao dobijaju se ponovljenim prepolovljavanjem centralnih uglova kvadrata ($90° → 45° → 22,5°$) ili šestougla ($60° → 30°$).'),
-     K('Pravilni sedmougao se ne može konstruisati samo lenjirom i šestarom – to je dokazano u 19. veku (Gaus).'),
+     K('Pravilni sedmougao se ne može konstruisati samo lenjirom i šestarom – to je dokazano u 19. veku.'),
      K('Gaus je, kao devetnaestogodišnjak, otkrio da se može konstruisati pravilni sedamnaestougao!')]);
 
   // ════════════════ 4.5 Obim i površina mnogougla ════════════════
@@ -426,7 +426,7 @@ module.exports = ({ L, Z, K, G, r, S3, proveri, pravilni, ime, naKrugu }) => {
     ['u temenu pravog ugla', 'u središtu hipotenuze', 'u težištu', 'izvan trougla'],
     [K('Ortocentar je presek pravih na kojima leže visine.'),
      K('U pravouglom trouglu svaka kateta je visina na drugu katetu – obe prolaze kroz teme pravog ugla $C$.', ['ha', 'hb']),
-     K('Zato se i treća visina (na hipotenuzu) seče sa njima u temenu $C$: $H = C$.', ['hc'])],
+     K('Zato i treća visina (na hipotenuzu) prolazi kroz teme $C$: $H = C$.', ['hc'])],
     G({ A: [8, 0], B: [0, 6], C: [0, 0, 225], D: [2.88, 3.84] },
       [{ p: 'ABC' }, { pu: 'ACB' }, { d: 'CA', b: 3, id: 'ha', k: 2 }, { d: 'CB', b: 3, id: 'hb', k: 2 }, { d: 'CD', b: 1, isp: 1, id: 'hc', k: 3 }, { pu: 'CDA', k: 3 }, { tacka: 'C', b: 1, k: 3 }], { bezImena: ['D'] }));
 
@@ -515,7 +515,7 @@ module.exports = ({ L, Z, K, G, r, S3, proveri, pravilni, ime, naKrugu }) => {
   Z(1, 'Koji od ovih podataka NIJE dovoljan da bi dva trougla bila podudarna?',
     ['jednaka sva tri ugla', 'jednake sve tri stranice', 'jednake dve stranice i ugao između njih', 'jednaka stranica i dva nalegla ugla'],
     [K('SSS, SUS i USU su stavovi podudarnosti.'),
-     K('Trouglovi sa istim uglovima mogu biti različite veličine (jedan je „uvećan“ drugi) – slični su, ali ne i podudarni.', ['mali', 'vel'])],
+     K('Trouglovi sa istim uglovima mogu biti različite veličine (jedan je „uvećan“ u odnosu na drugi) – slični su, ali ne i podudarni.', ['mali', 'vel'])],
     G({ A: [0, 0], B: [3, 0], C: [1, 2], D: [4, 0], E: [10, 0], F: [6, 4] },
       [{ p: 'ABC', b: 1, id: 'mali' }, { p: 'DEF', b: 2, id: 'vel' }, { u: 'BAC', r: 14 }, { u: 'EDF', r: 14 }, { u: 'CBA', r: 14 }, { u: 'FED', r: 14 }], { bezImena: ['A', 'B', 'C', 'D', 'E', 'F'] }));
 
@@ -531,7 +531,7 @@ module.exports = ({ L, Z, K, G, r, S3, proveri, pravilni, ime, naKrugu }) => {
     ['USU', 'SSS', 'SUS', 'nisu podudarni'],
     [K('Stranica $AB$ je zajednička.', ['ab']),
      K('Uglovi na osnovici jednakokrakog trougla su jednaki: $∠BAB₁ = ∠ABA₁$.'),
-     K('Pravi uglovi kod $A₁$ i $B₁$ daju i $∠ABB₁ = ∠BAA₁ = 90° − α$. Stranica i dva nalegla ugla – USU, pa je $AA₁ = BB₁$.', ['t1', 't2'])],
+     K('Pravi uglovi kod $A₁$ i $B₁$ daju i $∠ABB₁ = ∠BAA₁ = 90° − α$ (α je ugao na osnovici). Stranica i dva nalegla ugla – USU, pa je $AA₁ = BB₁$.', ['t1', 't2'])],
     (() => {
       const A = [0, 0], B = [8, 0], C = [4, 7];
       const proj = (P, Q, X) => { const d = [Q[0] - P[0], Q[1] - P[1]]; const t = ((X[0] - P[0]) * d[0] + (X[1] - P[1]) * d[1]) / (d[0] ** 2 + d[1] ** 2); return [r(P[0] + t * d[0]), r(P[1] + t * d[1])]; };
@@ -573,7 +573,7 @@ module.exports = ({ L, Z, K, G, r, S3, proveri, pravilni, ime, naKrugu }) => {
     ['jedno', 'dva', 'nijedno', 'tri'],
     [K('Kružnica $k(C, 3 cm)$ ima poluprečnik jednak rastojanju tačke $C$ od prave $AC₁$.', ['kr']),
      K('Zato je dodiruje u samo jednoj tački – u $C₁$: $B = C₁$ i trougao je pravougli.', ['b']),
-     K('Za $a < 3 cm$ ne bi bilo rešenja, a za $3 < a < 6$ bila bi dva.')],
+     K('Za $a < 3 cm$ ne bi bilo rešenja, a za $3 < a < 6$ bila bi dva rešenja.')],
     G({ A: [0, 0], C: [5.196, 3], B: [5.196, 0, -90], e: [10, 0] },
       [{ d: 'Ae', b: 5 }, { p: 'ABC', b: 1, id: 'b', k: 2 }, { pu: 'CBA' }, { d: 'CB', isp: 1, o: '3' }, { u: 'BAC', o: '30°', r: 34 }, { kr: 'C', r: 3, b: 4, isp: 1, id: 'kr' }, { tacka: 'B', b: 1, k: 2 }], { velicina: 260 }));
 

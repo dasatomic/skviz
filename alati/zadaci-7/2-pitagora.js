@@ -26,11 +26,11 @@ Z(1, 'Filip pušta zmaja na kanapu dugom $50 m$, koji je potpuno zategnut. Njego
    K('$h = √{1600} = 40 m$ (trojka $3, 4, 5$ puta $10$).', ['h'])],
   G({ F: [0, 0], D: [30, 0], Z: [30, 40] }, [{ pu: 'FDZ' }, { d: 'FD', o: '30 m', id: 'baza' }, { d: 'DZ', o: 'h', id: 'h', isp: 1, b: 3 }, { d: 'FZ', o: '50 m', id: 'kanap', b: 1 }, { tx: '🪁', at: [32.5, 42] }]));
 
-Z(2, 'Dva biciklista istovremeno krenu sa raskrsnice dva puta koji se seku pod pravim uglom: jedan vozi $16 km/h$, a drugi $12 km/h$. Koliko su udaljeni posle sat i po vožnje?',
+Z(2, 'Dva biciklista istovremeno krenu sa raskrsnice dvaju puteva koji se seku pod pravim uglom: jedan vozi $16 km/h$, a drugi $12 km/h$. Koliko su udaljeni posle sat i po vožnje?',
   ['$30 km$', '$42 km$', '$6 km$', '$36 km$'],
   [K('Za $1,5 h$ prvi pređe $16 · 1,5 = 24 km$, a drugi $12 · 1,5 = 18 km$.', ['rb', 'rp']),
    K('Putevi su normalni, pa je njihovo rastojanje hipotenuza: $d² = 24² + 18² = 576 + 324 = 900$.', ['d']),
-   K('$d = √{900} = 30 km$. (Opet $3, 4, 5$ – ovog puta puta $6$.)', ['d'])],
+   K('$d = √{900} = 30 km$. (Opet trojka $3, 4, 5$, ovog puta uvećana $6$ puta.)', ['d'])],
   G({ R: [0, 0], B: [24, 0], P: [0, 18] }, [{ pu: 'BRP' }, { d: 'RB', o: '24 km', id: 'rb', k: 1 }, { d: 'RP', o: '18 km', id: 'rp', k: 1 }, { d: 'BP', o: 'd', id: 'd', isp: 1, b: 3 }, { tx: '🚲', at: [25.5, 1.8] }, { tx: '🚲', at: [1.8, 19.5] }]));
 
 Z(2, 'Površina pravouglog trougla je $30 cm²$, a jedna kateta je $5 cm$. Kolika je hipotenuza?',
@@ -130,7 +130,7 @@ Z(3, 'Dve stranice pravouglog trougla su $20 cm$ i $99 cm$, a obim mu je ceo bro
 
 Z(1, 'Stari egipatski graditelji pravili su prav ugao pomoću konopca sa $12$ jednakih razmaka između čvorova, savijenog u trougao. Kako su razmake rasporedili na tri stranice?',
   ['3, 4 i 5 razmaka', '4, 4 i 4 razmaka', '2, 5 i 5 razmaka', '3, 3 i 6 razmaka'],
-  [K('Ukupno ima $12$ razmaka – zbir svih ponuđenih trojki jeste $12$, pa moramo da proverimo uglove.'),
+  [K('Ukupno ima $12$ razmaka – zbir svake ponuđene trojke je $12$, pa moramo da proverimo uglove.'),
    K('Od $3, 3, 6$ trougao se ne može sastaviti ($3 + 3 = 6$). Od $4, 4, 4$ nastaje jednakostranični trougao (svi uglovi $60°$), a $2² + 5² = 29 ≠ 25$.'),
    K('$3² + 4² = 9 + 16 = 25 = 5²$, pa je po obrnutoj Pitagorinoj teoremi ugao između stranica od $3$ i $4$ razmaka prav.', [],
      G({ A: [0, 0], B: [4, 0], C: [0, 3], a1: [1, 0], a2: [2, 0], a3: [3, 0], b1: [0, 1], b2: [0, 2], c1: [3.2, 0.6], c2: [2.4, 1.2], c3: [1.6, 1.8], c4: [0.8, 2.4] },
@@ -303,7 +303,7 @@ Z(2, 'Data su dva kruga sa zajedničkim centrom. Tetiva većeg kruga duga $24 cm
   G({ O: [0, 0, 90], A: [-12, -5], B: [12, -5], M: [0, -5, 40] },
     [{ kr: 'O', r: 13 }, { kr: 'O', r: 5, b: 2 }, { p: 'OMB', b: 1, id: 'omb', k: 2 }, { d: 'AB', o: '24 cm' }, { d: 'OM', o: '5', id: 'om' }, { d: 'OB', o: 'R', isp: 1, b: 3, id: 'ob' }, { pu: 'OMB' }, { tacka: 'OM' }]));
 
-Z(3, 'Nad stranicom $AB$ jednakostraničnog trougla $ABC$ stranice $6 cm$ konstruisan je kvadrat $ABED$, sa druge strane od temena $C$. Kolika je površina trougla $DEC$?',
+Z(3, 'Nad stranicom $AB$ jednakostraničnog trougla $ABC$ stranice $6 cm$ konstruisan je kvadrat $ABED$, sa strane suprotnoj temenu $C$. Kolika je površina trougla $DEC$?',
   ['$18 + 9√{3} cm²$', '$36 + 9√{3} cm²$', '$18 + 18√{3} cm²$', '$9√{3} cm²$'],
   [K('Visina jednakostraničnog trougla $ABC$: $h² = 6² − 3² = 27$, $h = 3√{3} cm$.', ['h']),
    K('Visina trougla $DEC$ na stranicu $DE$ ide iz $C$ kroz središte $F$ stranice $AB$ do $DE$: $h + 6 = 6 + 3√{3} cm$.', ['hv']),
@@ -569,13 +569,13 @@ Z(2, 'Treba nacrtati kvadrat površine $29 cm²$. Kolike treba da budu katete pr
 
 Z(3, 'Treba konstruisati kvadrat površine $15 cm²$. Koji pravougli trougao daje njegovu stranicu?',
   ['Hipotenuza 4 cm, kateta 1 cm', 'Hipotenuza 5 cm, kateta 2 cm', 'Katete 3 cm i 2 cm', 'Katete 4 cm i 1 cm'],
-  [K('Stranica treba da bude $√{15}$. Zbir dva kvadrata ($1, 4, 9$) ne može dati $15$.'),
+  [K('Stranica treba da bude $√{15}$. Zbir dva kvadrata prirodnih brojeva ne može dati $15$.'),
    K('Ali razlika može: $15 = 16 − 1 = 4² − 1²$. Tada je $√{15}$ kateta trougla sa hipotenuzom $4 cm$ i katetom $1 cm$. (Ostali trouglovi daju $√{21}$, $√{13}$ i $√{17}$.)'),
    K('Konstrukcija: kateta $1 cm$, u njenom kraju normala, pa luk poluprečnika $4 cm$ iz početka katete – druga kateta je $√{15} ≈ 3,87 cm$.', [],
      G({ C: [0, 0], A: [1, 0], B: [0, 3.873] },
        [{ p: 'ABC', b: 1 }, { pu: 'ACB' }, { d: 'CA', o: '1' }, { d: 'AB', o: '4' }, { d: 'CB', o: '√15', b: 3 }, { l: 'A', r: 4, od: 95, do: 115, b: 3 }], { bezImena: ['A', 'B', 'C'] }))]);
 
-Z(3, 'Nad katetama $1$ i $3$ konstruisan je pravougli trougao. Zatim je nad njegovom hipotenuzom i duži dužine $2$, kao katetama, konstruisan novi pravougli trougao. Kolika je hipotenuza novog trougla?',
+Z(3, 'Nad katetama $1$ i $3$ konstruisan je pravougli trougao. Zatim je nad njegovom hipotenuzom kao jednom katetom i duži dužine $2$ kao drugom katetom konstruisan novi pravougli trougao. Kolika je hipotenuza novog trougla?',
   ['$√{14}$', '$√{12}$', '$6$', '$√{10} + 2$'],
   [K('Prvi trougao: $OB² = 1² + 3² = 10$, $OB = √{10}$.', ['t1']),
    K('Drugi trougao: $OC² = OB² + BC² = 10 + 2² = 14$, $OC = √{14} ≈ 3,74$.', ['t2']),
@@ -655,7 +655,7 @@ Z(2, 'Kakav je trougao sa temenima $A(1, 1)$, $B(5, 1)$ i $C(3, 5)$?',
   ['jednakokraki', 'jednakostranični', 'pravougli', 'raznostranični'],
   [K('$AB = 5 − 1 = 4$ (paralelna $x$-osi).', ['ab']),
    K('$AC² = (3 − 1)² + (5 − 1)² = 4 + 16 = 20$, $BC² = (5 − 3)² + (5 − 1)² = 4 + 16 = 20$.', ['ac', 'bc']),
-   K('$AC = BC = √{20} = 2√{5} ≈ 4,47 ≠ 4$ – jednakokraki, ali ne jednakostranični. Nije ni pravougli: $20 + 20 = 40 ≠ 16$, a $16 + 20 ≠ 20$.')],
+   K('$AC = BC = √{20} = 2√{5} ≈ 4,47$, a $AB = 4$ – jednakokraki, ali ne jednakostranični. Nije ni pravougli: $16 + 20 = 36 ≠ 20$, a $20 + 20 = 40 ≠ 16$.')],
   G({ A: [1, 1], B: [5, 1], C: [3, 5], O: [0, 0] }, [{ mreza: [-1, 6, -1, 6], ose: ['x', 'y'] }, { p: 'ABC', b: 1 }, { d: 'AB', id: 'ab' }, { d: 'AC', id: 'ac', b: 3 }, { d: 'BC', id: 'bc', b: 3 }], { bezImena: ['O'], velicina: 260 }));
 
 Z(3, 'Kolika je površina kvadrata $ABCD$ sa temenima $A(0, 0)$, $B(3, 1)$, $C(2, 4)$ i $D(−1, 3)$?',

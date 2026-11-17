@@ -55,7 +55,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, nzd, nzs, skok, skokovi }) =
   Z(1, 'Koliko ima prostih brojeva od $1$ do $30$?',
     ['$10$', '$11$', '$9$', '$15$'],
     [K('Eratostenovo sito: precrtavamo sadržaoce broja $2$ (osim same dvojke)…', ['s2']),
-     K('…zatim sadržaoce broja $3$ i broja $5$. (Sadržaoci broja $7$ do $30$ su već precrtani.)', ['s3', 's5']),
+     K('…zatim sadržaoce broja $3$ i broja $5$. (Svi složeni brojevi do 30 već su precrtani, jer imaju prost činilac 2, 3 ili 5.)', ['s3', 's5']),
      K('Broj $1$ nije prost. Ostaju: $2, 3, 5, 7, 11, 13, 17, 19, 23, 29$ – njih $10$.', ['pr'])],
     sito(30, [2, 3, 5], { kraj: 3 }));
   proveri([...Array(30)].map((_, i) => i + 1).filter(jeProst).length === 10, 'prosti do 30');
@@ -125,7 +125,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, nzd, nzs, skok, skokovi }) =
      K('$35 = 5 · 7$, pa je $105 = 3 · 5 · 7$.')],
     G(O, drvo(105).e, { ...bez, velicina: 160 }));
 
-  Z(1, 'Snežana je $91$ salvetu podelila drugaricama, svakoj jednako, više od $10$ salveta, a drugarica je bilo više od jedne. Koliko salveta je dobila svaka?',
+  Z(1, 'Snežana je $91$ salvetu podelila drugaricama, svakoj jednako, više od $10$ salveta, a bilo je više od jedne drugarice. Koliko salveta je dobila svaka?',
     ['$13$', '$7$', '$91$', '$26$'],
     [K('Broj drugarica i broj salveta po drugarici su činioci broja $91$, a oba su veća od $1$.'),
      K('$91 = 7 · 13$. Ako su salvete po drugarici više od $10$, to je $13$ salveta (a drugarica ima $7$). Druga mogućnost, $13$ drugarica po $7$ salveta, otpada.')]);

@@ -19,7 +19,7 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, telo }) => {
   Z(2, 'Koliko strana ima šestostrana piramida?',
     ['7', '6', '12', '8'],
     [K('Jedna osnova + $6$ bočnih trouglova = $7$ strana.'),
-     K('Temena: $6$ na osnovi + $1$ vrh = $7$.'),
+     K('Temena: $6$ na osnovi i još $1$ u vrhu, ukupno $7$.'),
      K('Ivica: $6 + 6 = 12$.', [], telo('piramida6', { opis: '7 strana, 12 ivica' }))]);
 
   Z(2, 'Šta je apotema pravilne piramide?',
@@ -43,12 +43,12 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, telo }) => {
   L('Mreža piramide');
 
   Z(1, 'Mreža četvorostrane piramide sastoji se od…',
-    ['1 kvadrata i 4 trougla', '2 kvadrata i 4 trougla', '4 kvadrata', '1 trougla i 4 kvadrata'],
+    ['1 kvadrat i 4 trougla', '2 kvadrata i 4 trougla', '4 kvadrata', '1 trougao i 4 kvadrata'],
     [K('Osnova je kvadrat ($1$), a omotač su $4$ bočna trougla.'),
      K('Ukupno $1$ kvadrat + $4$ trougla.', [], telo('piramida4', { opis: 'Zamisli kako se mreža savija' }))]);
 
   Z(2, 'Mreža trostrane piramide (tetraedra) sastoji se od…',
-    ['4 trougla', '1 trougla i 3 kvadrata', '2 trougla', '6 trouglova'],
+    ['4 trougla', '1 trougao i 3 kvadrata', '2 trougla', '6 trouglova'],
     [K('Tetraedar ima $4$ strane i sve su trouglovi.'),
      K('Mreža je $4$ trougla.'),
      K('Pravilni tetraedar ima $4$ jednakostranična trougla.')]);
@@ -140,8 +140,8 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, telo }) => {
 
   Z(3, 'Keopsova piramida je približno pravilna četvorostrana piramida osnovne ivice $230 m$ i visine $146 m$. Kolika joj je približna zapremina?',
     ['$2,57$ miliona $m³$', '$7,7$ miliona $m³$', '$1,1$ milion $m³$', '$3,4$ miliona $m³$'],
-    [K('$B = 230² = 52.900 m²$.'),
-     K('$V = {52.900 · 146|3} = {7.723.400|3} ≈ 2.574.467 m³$.'),
+    [K('$B = 230² = 52 900 m²$.'),
+     K('$V = {52 900 · 146|3} = {7 723 400|3} ≈ 2 574 467 m³$.'),
      K('Dakle oko $2,57$ miliona kubnih metara.')]);
 
   Z(3, 'Pravilna četvorostrana piramida ima osnovnu ivicu $10 cm$ i bočnu ivicu $13 cm$. Kolika joj je visina?',
@@ -164,7 +164,7 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, telo }) => {
     [K('$3$ ivice osnove + $3$ bočne = $6$ ivica.')]);
   Z(2, 'Koliko temena ima petostrana piramida?',
     ['6', '5', '10', '7'],
-    [K('$5$ temena osnove + $1$ vrh = $6$ temena.')]);
+    [K('$5$ temena osnove i još $1$ u vrhu: ukupno $6$ temena.')]);
   Z(2, 'Visina pravilne piramide spaja vrh sa:',
     ['centrom osnove', 'jednim temenom osnove', 'sredinom ivice osnove', 'bilo kojom tačkom osnove'],
     [K('Kod pravilne piramide vrh je tačno iznad centra osnove.')]);
@@ -174,7 +174,7 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, telo }) => {
 
   L('Mreža piramide');
   Z(2, 'Mreža šestostrane piramide sastoji se od:',
-    ['1 šestougla i 6 trouglova', '6 šestouglova', '1 šestougla i 3 trougla', '2 šestougla i 6 trouglova'],
+    ['1 šestougao i 6 trouglova', '6 šestouglova', '1 šestougao i 3 trougla', '2 šestougla i 6 trouglova'],
     [K('Osnova je šestougao, a omotač čini $6$ bočnih trouglova.')]);
   Z(2, 'Koliko bočnih trouglova ima mreža petostrane piramide?',
     ['5', '6', '4', '3'],
@@ -183,7 +183,7 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, telo }) => {
     ['4 trougla', '3 trougla', '1 trougao i 3 kvadrata', '6 trouglova'],
     [K('Tetraedar ima $4$ trouglaste strane.')]);
   Z(3, 'Mreža petostrane piramide sastoji se od:',
-    ['1 petougla i 5 trouglova', '5 petouglova', '1 petougla i 3 trougla', '2 petougla i 5 trouglova'],
+    ['1 petougao i 5 trouglova', '5 petouglova', '1 petougao i 3 trougla', '2 petougla i 5 trouglova'],
     [K('Osnova je petougao, omotač je $5$ trouglova.')]);
   Z(2, 'Bočne strane piramide su uvek:',
     ['trouglovi', 'pravougaonici', 'kvadrati', 'trapezi'],
@@ -258,7 +258,7 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, telo }) => {
     [K('$B = 81 cm²$; $V = {81 · 7|3} = 189 cm³$.')]);
   Z(3, 'Zapremina piramide je trećina zapremine:',
     ['prizme iste osnove i visine', 'prizme iste osnove', 'kocke', 'valjka'],
-    [K('$V_{piramide} = {1|3} V_{prizme}$ za istu osnovu i visinu.')]);
+    [K('Zapremina piramide je ${1|3}$ zapremine prizme sa istom osnovom i visinom.')]);
 
   L('Zapremina pravilne trostrane i pravilne šestostrane piramide');
   Z(2, 'Pravilna trostrana piramida ima osnovnu ivicu $6 cm$ (površina osnove $9√{3} cm²$) i visinu $6 cm$. Kolika joj je zapremina?',

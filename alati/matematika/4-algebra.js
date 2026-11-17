@@ -4,12 +4,12 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, pr, polja, vaga, prava }) =
   const O = { O: [0, 0] }, bez = { bezImena: ['O'] };
 
   proveri(3 * 3 + 2 === 11, 'vaga 1');
-  Q(1, 'Vaga je u ravnoteži. Koliko je teška jedna kutija x?', ['3', '4', '11', '2'],
+  Q(1, 'Vaga je u ravnoteži. Koliko je teška jedna kutija $x$?', ['3', '4', '11', '2'],
     'Sa obe strane se skine teg 2 i vaga ostaje u ravnoteži: $3x = 9$, pa je $x = 3$. Rešavanje jednačine je baš to – sa obe strane se radi isto, dok x ne ostane sam.',
     'vaga', { mediji: vaga(['x', 'x', 'x', 2], [11]) });
 
   proveri(2 * 4 + 5 === 4 + 9, 'vaga 2');
-  Q(2, 'Vaga je u ravnoteži. Koliko je teška jedna kutija x?', ['4', '14', '7', '9'],
+  Q(2, 'Vaga je u ravnoteži. Koliko je teška jedna kutija $x$?', ['4', '14', '7', '9'],
     'Sa svake strane skini po jednu kutiju: ostaje $x + 5 = 9$. Zatim skini 5 sa obe strane: $x = 4$. Proveri: 4 + 4 + 5 = 13 i 4 + 9 = 13.',
     'jednačina', { mediji: vaga(['x', 'x', 5], ['x', 9]) });
 
@@ -52,8 +52,8 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, pr, polja, vaga, prava }) =
     'Prava seče y-osu u 1 (to je slobodan član), a kad x poraste za 1, y poraste za 2 (to je koeficijent pravca). Iz (0, 1) u (2, 5): pomeraj 2 udesno i 4 nagore.',
     'prava', { mediji: G({ M: [0, 1, 180], N: [2, 5, 0] }, [{ mreza: [-3, 4, -3, 6], ose: ['x', 'y'] }, prava(2, 1, -2, 2.5), { tacka: 'MN', b: 3 }], { bezImena: ['M', 'N'], velicina: 260 }) });
 
-  Q(2, 'U kojoj tački prava $y = −x + 3$ seče y-osu?', ['(0, 3)', '(3, 0)', '(0, −3)', '(−1, 3)'],
-    'Na y-osi je $x = 0$, pa je $y = −0 + 3 = 3$. Slobodan član u $y = kx + n$ uvek pokazuje gde prava seče y-osu.',
+  Q(2, 'U kojoj tački prava $y = −x + 3$ seče $y$-osu?', ['(0, 3)', '(3, 0)', '(0, −3)', '(−1, 3)'],
+    'Na $y$-osi je $x = 0$, pa je $y = −0 + 3 = 3$. Slobodan član u $y = kx + n$ uvek pokazuje gde prava seče y-osu.',
     'prava', { medijiOdgovora: G({ N: [0, 3, 0] }, [{ mreza: [-2, 5, -2, 5], ose: ['x', 'y'] }, prava(-1, 3, -1.5, 4.5), { tacka: 'N', b: 3 }], { bezImena: ['N'], velicina: 230 }) });
 
   Q(2, 'Grafik pokazuje cenu jabuka u zavisnosti od količine. Kakva je to zavisnost?', ['Direktna proporcionalnost', 'Obrnuta proporcionalnost', 'Cena ne zavisi od količine', 'Kvadratna zavisnost'],
@@ -128,11 +128,11 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, pr, polja, vaga, prava }) =
     '$y = 3 · (−2) − 1 = −6 − 1 = −7$. Funkcija je kao mašina: ubaciš x, ona po pravilu izbaci tačno jedan y.',
     'funkcija');
 
-  Q(2, 'Ako je $x + y = 10$ i $x − y = 4$, koliko je x?', ['7', '3', '6', '14'],
+  Q(2, 'Ako je $x + y = 10$ i $x − y = 4$, koliko je $x$?', ['7', '3', '6', '14'],
     'Saberi jednačine: $2x = 14$, pa je $x = 7$, a $y = 3$. Isto napamet: dva broja čiji je zbir 10, a razlika 4 – veći je pola od 10 + 4.',
     'sistem');
 
-  Q(3, 'U kojoj tački prava $y = 2x − 6$ seče x-osu?', ['(3, 0)', '(−6, 0)', '(0, −6)', '(−3, 0)'],
+  Q(3, 'U kojoj tački prava $y = 2x − 6$ seče $x$-osu?', ['(3, 0)', '(−6, 0)', '(0, −6)', '(−3, 0)'],
     'Na x-osi je $y = 0$: $2x − 6 = 0$, pa je $x = 3$. Ta vrednost $x$ zove se nula funkcije. Tačka (0, −6) je presek sa y-osom – lako se pomešaju.',
     'nula', { medijiOdgovora: G({ N: [3, 0, -45], M: [0, -6, 180] }, [{ mreza: [-2, 5, -7, 3], ose: ['x', 'y'], podela: 1 }, prava(2, -6, -0.5, 4.5), { tacka: 'N', b: 3 }, { tacka: 'M', b: 1 }], { velicina: 230 }) });
 

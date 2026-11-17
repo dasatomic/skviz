@@ -75,7 +75,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik,
       ['$10 m/s^{2}$', '$36 m/s^{2}$', '$20 m/s^{2}$', '$5 m/s^{2}$'],
       [K('$72 km/h = {72|3,6} m/s = 20 m/s$.'),
        K('$a = {20 m/s|2 s} = 10 m/s^{2}$.'),
-       K('Gepard ubrzava otprilike kao telo koje slobodno pada – brže od skoro svakog automobila!')],
+       K('Gepard ubrzava otprilike kao telo koje slobodno pada – ovakvo ubrzanje većina običnih automobila ne postiže.')],
       S('kretanje', { tela: [{ e: '🐆', v: 0, a: 10, okreni: true }, { e: '🚗', v: 0, a: 3.5 }], duzina: 40, podeok: 5, vektor: true, sat: true }));
   }
 
@@ -242,7 +242,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik,
     S('magnet', { tip: 'polovi', polovi: 'NS' }));
 
   proveri(3 * 2, 6);
-  Z(3, 'Dvoja kolica se odgurnu jedna od drugih. Za isto vreme kolica A (mase $3 kg$) pređu dvostruko duži put od kolica B. Kolika je masa kolica B?',
+  Z(3, 'Dvoja kolica se odgurnu jedna od drugih. Za isto vreme kolica $A$ (mase $3 kg$) pređu dvostruko duži put od kolica $B$. Kolika je masa kolica $B$?',
     ['$6 kg$', '$1,5 kg$', '$3 kg$', '$12 kg$'],
     [K('Kolica kreću iz mirovanja, pa je pređeni put srazmeran ubrzanju ($s = {a t^{2}|2}$): $a_{A} = 2 a_{B}$.'),
      K('Sile su jednake (Treći Njutnov zakon): $m_{A} · a_{A} = m_{B} · a_{B}$.'),
@@ -316,11 +316,11 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik,
     S('energija', { tip: 'staza' }));
 
   proveri(12 / 2, 6);
-  Z(3, 'Automobil A kreće iz mirovanja sa ubrzanjem $2 m/s^{2}$ u trenutku kada pored njega prolazi automobil B stalnom brzinom $12 m/s$. Posle koliko sekundi će imati jednake brzine?',
+  Z(3, 'Automobil $A$ kreće iz mirovanja sa ubrzanjem $2 m/s^{2}$ u trenutku kada pored njega prolazi automobil $B$ stalnom brzinom $12 m/s$. Posle koliko sekundi će imati jednake brzine?',
     ['$6 s$', '$12 s$', '$24 s$', '$3 s$'],
-    [K('Brzina automobila A raste: $v_{A} = 2 m/s^{2} · t$; brzina B je stalno $12 m/s$.'),
+    [K('Brzina automobila $A$ raste: $v_{A} = 2 m/s^{2} · t$; brzina $B$ je stalno $12 m/s$.'),
      K('$2 · t = 12$ ⇒ $t = 6 s$.', ['p']),
-     K('Pazi: u tom trenutku A još nije stigao B – B je prešao $72 m$, a A samo $36 m$ (površine ispod grafika).', ['pa', 'pb'])],
+     K('Pazi: u tom trenutku $A$ još nije stigao $B$ – $B$ je prešao $72 m$, a $A$ samo $36 m$ (površine ispod grafika).', ['pa', 'pb'])],
     S('kretanje', { tela: [{ e: '🚗', v: 0, a: 2, o: 'A' }, { e: '🚙', v: 12, o: 'B' }], duzina: 150, podeok: 25, vektor: true, sat: false }),
     { crtez: (() => { const g = grafik({ xmax: 10, ymax: 20, xk: 2, yk: 4 }); return G([g.e, g.linija([[0, 0], [10, 20]], { b: 0, o: 'A', oAt: [9.6, 21.5] }), g.linija([[0, 12], [10, 12]], { b: 1, o: 'B', oAt: [9.6, 13.6] }), g.proj(6, 12, { k: 2, id: 'p' }), g.tacka(6, 12, { k: 2, id: 'p' }), g.povrs([[0, 12], [6, 12]], { k: 3, id: 'pb', b: 1 }), g.povrs([[0, 0], [6, 12]], { k: 3, id: 'pa', b: 0 })], { velicina: 300 }); })() });
 
@@ -372,10 +372,10 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik,
   {
     const g = grafik({ xmax: 6, ymax: 12, yk: 2 });
     proveri((10 / 2) / (10 / 5), 2.5);
-    Z(2, 'Na grafiku su brzine dva tela, A i B. Koliko je puta ubrzanje tela B veće od ubrzanja tela A?',
+    Z(2, 'Na grafiku su brzine dva tela, $A$ i $B$. Koliko je puta ubrzanje tela $B$ veće od ubrzanja tela $A$?',
       ['$2,5$ puta', '$2$ puta', '$5$ puta', '$0,4$ puta'],
-      [K('Telo A: $a_{A} = {10 m/s|5 s} = 2 m/s^{2}$.', ['a']),
-       K('Telo B: $a_{B} = {10 m/s|2 s} = 5 m/s^{2}$.', ['bb']),
+      [K('Telo $A$: $a_{A} = {10 m/s|5 s} = 2 m/s^{2}$.', ['a']),
+       K('Telo $B$: $a_{B} = {10 m/s|2 s} = 5 m/s^{2}$.', ['bb']),
        K('$a_{B} : a_{A} = 5 : 2 = 2,5$. Strmija prava – veće ubrzanje.')],
       G([g.e, g.linija([[0, 0], [5, 10]], { crtaj: false, b: 0, o: 'A', oAt: [5.3, 10.6] }), g.linija([[0, 0], [2, 10], [6, 10]], { crtaj: false, b: 1, o: 'B', oAt: [1.6, 11] }), g.proj(5, 10, { k: 1, id: 'a', b: 0 }), g.proj(2, 10, { k: 2, id: 'bb', b: 1 })], { velicina: 300 }));
   }
@@ -425,21 +425,21 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik,
   {
     const g = grafik({ xmax: 8, ymax: 16, yk: 2, xk: 1 });
     proveri(10 * 5 - (2 * 5 * 5) / 2, 25);
-    Z(3, 'Automobil A kreće iz mirovanja sa ubrzanjem $2 m/s^{2}$ kada pored njega prođe automobil B stalnom brzinom $10 m/s$. Za koliko je B prešao više od A do trenutka kada su im brzine jednake?',
+    Z(3, 'Automobil $A$ kreće iz mirovanja sa ubrzanjem $2 m/s^{2}$ kada pored njega prođe automobil $B$ stalnom brzinom $10 m/s$. Za koliko je $B$ prešao više od $A$ do trenutka kada su im brzine jednake?',
       ['$25 m$', '$50 m$', '$0 m$', '$10 m$'],
       [K('Brzine su jednake kada je $2 · t = 10$, tj. u $t = 5 s$.', ['p']),
-       K('Put automobila B (pravougaonik): $10 m/s · 5 s = 50 m$.', ['pb']),
-       K('Put automobila A (trougao): ${5 s · 10 m/s|2} = 25 m$.', ['pa']),
+       K('Put automobila $B$ (pravougaonik): $10 m/s · 5 s = 50 m$.', ['pb']),
+       K('Put automobila $A$ (trougao): ${5 s · 10 m/s|2} = 25 m$.', ['pa']),
        K('Razlika: $50 m − 25 m = 25 m$ – to je beli trougao između pravih.')],
       G([g.e, g.povrs([[0, 10], [5, 10]], { k: 2, id: 'pb', b: 1 }), g.povrs([[0, 0], [5, 10]], { k: 3, id: 'pa', b: 0 }), g.linija([[0, 0], [8, 16]], { crtaj: false, b: 0, o: 'A', oAt: [7.6, 15.4] }), g.linija([[0, 10], [8, 10]], { crtaj: false, b: 1, o: 'B', oAt: [7.6, 11] }), g.proj(5, 10, { k: 1, id: 'p' })], { velicina: 300 }));
   }
   {
     const g = grafik({ xmax: 6, ymax: 12, yk: 2 });
-    Z(1, 'Na grafiku su brzine tri tela: A, B i C. Koje telo usporava?',
+    Z(1, 'Na grafiku su brzine tri tela: $A$, $B$ i $C$. Koje telo usporava?',
       ['C', 'A', 'B', 'Nijedno'],
-      [K('A: brzina raste – telo ubrzava.', ['a']),
-       K('B: brzina je stalna – ravnomerno kretanje.', ['bb']),
-       K('C: brzina opada od $10 m/s$ ka $2 m/s$ – telo usporava.', ['c'])],
+      [K('$A$: brzina raste – telo ubrzava.', ['a']),
+       K('$B$: brzina je stalna – ravnomerno kretanje.', ['bb']),
+       K('$C$: brzina opada od $10 m/s$ ka $2 m/s$ – telo usporava.', ['c'])],
       G([g.e, g.linija([[0, 2], [5, 10]], { crtaj: false, b: 0, o: 'A', oAt: [5.4, 10.4], id: 'a' }), g.linija([[0, 6], [5, 6]], { crtaj: false, b: 2, o: 'B', oAt: [5.4, 6.4], id: 'bb' }), g.linija([[0, 10], [5, 2]], { crtaj: false, b: 1, o: 'C', oAt: [5.4, 2.4], id: 'c' })], { velicina: 300 }));
   }
 
@@ -450,7 +450,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik,
     ['$25 m$', '$10 m$', '$50 m$', '$5 m$'],
     [K('Iz mirovanja: $s = {a · t^{2}|2}$.'),
      K('$s = {2 m/s^{2} · (5 s)^{2}|2} = {2 · 25|2} m = 25 m$.'),
-     K('Tragovi na svake sekunde pokazuju da se rastojanja povećavaju: $1, 3, 5, 7, 9$ m – zbir je $25 m$.', [], S('kretanje', { tela: [{ e: '🛴', v: 0, a: 2 }], duzina: 30, podeok: 5, sat: true, trag: 1, tragNatpis: true }))],
+     K('Tragovi na svake sekunde pokazuju da se rastojanja povećavaju: $1 m$, $3 m$, $5 m$, $7 m$, $9 m$ – zbir je $25 m$.', [], S('kretanje', { tela: [{ e: '🛴', v: 0, a: 2 }], duzina: 30, podeok: 5, sat: true, trag: 1, tragNatpis: true }))],
     S('kretanje', { tela: [{ e: '🛴', v: 0, a: 2 }], duzina: 30, podeok: 5, natpisi: 99, vektor: true, sat: false }));
 
   proveri(((10 + 20) / 2) * 4, 60);
@@ -519,7 +519,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik,
     ['$40 m$', '$20 m$', '$10 m$', '$80 m$'],
     [K('Pri zaustavljanju $v^{2} = 2 · a · s$, pa je zaustavni put $s = {v^{2}|2a}$ – srazmeran kvadratu brzine.'),
      K('Brzina je $2$ puta veća ⇒ put je $2^{2} = 4$ puta veći: $4 · 10 m = 40 m$.'),
-     K('Zato je brza vožnja opasna: dvostruko brže – četiri puta duže kočenje!')],
+     K('Zato je brza vožnja opasna: dvostruko brže – četiri puta duži zaustavni put!')],
     S('kretanje', { tela: [{ e: '🚗', v: 10, a: -5, o: '36 km/h' }, { e: '🚗', v: 20, a: -5, o: '72 km/h' }], duzina: 45, podeok: 5, natpisi: 99, vektor: true, sat: false }));
 
   proveri(Math.sqrt(2 * 3 * 24), 12);

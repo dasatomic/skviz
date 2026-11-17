@@ -134,7 +134,7 @@ module.exports = ({ L, Q, U, S, G, r, traka, pica, sto, O, bez, dec }) => {
     ['4', '3', '2', '1'],
     '$4+2=6$, a $6>5$ – tačno. Broj 3 bi dao $3+2=5$, a to nije veće od 5.', 'nejednačina',
     { medijiOdgovora: { vrsta: 'formula', tekst: '$x+2>5 \\Rightarrow x>3$' } });
-  Q(3, 'Koja nejednačina opisuje: „broj x je manji ili jednak 7“?',
+  Q(3, 'Koja nejednačina znači: broj $x$ je manji ili jednak 7?',
     ['$x \\le 7$', '$x < 7$', '$x \\ge 7$', '$x = 7$'],
     'Znak $\\le$ znači „manje ili jednako“, pa $x \\le 7$ uključuje i sam broj 7.', 'nejednačina',
     { medijiOdgovora: G(O, [{ osa: [0, 8], podela: 1, svaki: 1 }, { tacka: 'g', b: 1 }, { lin: [[7, -0.4], [0, -0.4]], b: 1, debljina: 3, str: 1 }, { tx: '7', at: [7, 0.3], vel: 14 }], { ...bez, t: { O: [0, 0], g: [7, 0] }, velicina: 300 }) });
@@ -174,7 +174,7 @@ module.exports = ({ L, Q, U, S, G, r, traka, pica, sto, O, bez, dec }) => {
     { medijiOdgovora: G(O, [...sto(6), { tx: '0,06', at: [3, 7.3], vel: 16, b: 1 }], { ...bez, velicina: 260 }) });
   Q(2, 'Koliko je $0,\\!5 \\cdot 4$?',
     ['$2$', '$0,\\!2$', '$0,\\!02$', '$20$'],
-    '$0,\\!5\\cdot4=2$. Polovina puta 4 je 2 cela. Možeš i ovako: $5\\cdot4=20$, pa jedna decimala → $2,\\!0=2$.', 'množenje',
+    '$0,\\!5\\cdot4=2$. Polovina puta 4 je 2 cela. Možeš i ovako: $5\\cdot4=20$, pa u rezultatu odvojiš jednu decimalu → $2,\\!0=2$.', 'množenje',
     { medijiOdgovora: G(O, [...traka(2, 1, { y: 0 }), ...traka(2, 1, { y: -2, b: 2 }), ...traka(2, 1, { y: -4, b: 3 }), ...traka(2, 1, { y: -6, b: 4 }), { tx: '4 × 0,5 = 2', at: [9.5, -3], vel: 15 }], { ...bez, velicina: 320 }) });
   Q(2, 'Koliko decimalnih mesta ima proizvod $0,\\!12 \\cdot 0,\\!3$?',
     ['3', '2', '1', '4'],
@@ -220,7 +220,7 @@ module.exports = ({ L, Q, U, S, G, r, traka, pica, sto, O, bez, dec }) => {
   L('Deljenje decimalnih brojeva');
   Q(1, 'Kako deliš decimalni broj decimalnim?',
     ['Proširiš oba broja tako da delilac postane ceo broj', 'Podeliš samo cele delove', 'Pomnožiš decimale', 'Zanemariš zareze i podeliš'],
-    'Da bi podelio, na primer, $1,\\!5:0,\\!5$, proširiš oba broja sa 10: $15:5=3$. Delilac mora postati ceo broj.', 'deljenje',
+    'Na primer, za $1,\\!5:0,\\!5$ proširimo oba broja sa 10: $15:5=3$. Delilac mora postati ceo broj.', 'deljenje',
     { medijiOdgovora: { vrsta: 'formula', tekst: '$1,\\!5:0,\\!5=3$' } });
   Q(1, 'Koliko je $1,\\!5 : 0,\\!5$?',
     ['3', '$0,\\!3$', '$30$', '$0,\\!03$'],

@@ -123,7 +123,7 @@ module.exports = ({ L, Z, K, G, R, O, bez, r, proveri, traka, pica, skok, skokov
   Z(3, 'Koji od razlomaka ${7|8}$, ${4|5}$, ${9|10}$, ${2|3}$ je najbliži broju $1$?',
     ['${9|10}$', '${7|8}$', '${4|5}$', '${2|3}$'],
     [K('Gledamo koliko im fali do $1$: ${1|8}$, ${1|5}$, ${1|10}$, ${1|3}$.'),
-     K('Najmanje fali ${9|10}$ – samo ${1|10}$ (manji deo jer je celina podeljena na više delova).', ['n'])],
+     K('Najmanje mu fali do celog: ${1|10}$, pa je to najmanji deo (celina je podeljena na najviše delova).', ['n'])],
     G({}, [osa(0.6, 1, 120, { svaki: 120, brojevi: 0 }), { tx: '1', at: [1, -0.04] }, ...[[7 / 8, '7/8', 0, 0.05], [4 / 5, '4/5', 2, 0.05], [9 / 10, '9/10', 1, -0.07], [2 / 3, '2/3', 5, 0.05]].map(([x, t, b, y]) => [{ tx: t, at: [x, y], b, ...(t === '9/10' ? { id: 'n' } : {}) }, { tx: '●', at: [x, 0], b }]).flat()], { ...bez, velicina: 300 }));
 
   // ════════════════ 4.3 Proširivanje, skraćivanje, upoređivanje ════════════════
@@ -179,7 +179,7 @@ module.exports = ({ L, Z, K, G, R, O, bez, r, proveri, traka, pica, skok, skokov
   Z(3, 'Koji je najveći od razlomaka ${10|11}$, ${11|12}$, ${12|13}$, ${13|14}$?',
     ['${13|14}$', '${10|11}$', '${11|12}$', 'svi su jednaki'],
     [K('Svakom fali tačno jedan deo do celog: ${1|11}$, ${1|12}$, ${1|13}$, ${1|14}$.'),
-     K('Najmanje fali ${13|14}$ (jer je ${1|14}$ najmanji deo), pa je on najveći.')]);
+     K('Najmanje fali do celog ${1|14}$, pa je ${13|14}$ najveći.')]);
 
   Z(3, 'Koliko ima razlomaka oblika ${1|n}$ koji su veći od ${1|7}$, a manji od ${1|2}$?',
     ['$4$', '$5$', '$6$', '$3$'],

@@ -4,7 +4,7 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, rad, naKrugu, telo, A }) => {
   // ── pomoćni crteži ──
   // Talesova teorema: dve prave a i b seku krake ugla sa temenom O; duži na jednom kraku su
   // proporcionalne dužima na drugom. Crtamo ugao sa tačkama A,B na levom kraku i C,D na desnom.
-  function tales(OA, AB, OC, CD, { oa = String(OA), ab = String(AB), oc = String(OC), cd = String(CD) } = {}) {
+  function tales(OA, AB, OC, CD, { oa = String(OA).replace('.', ','), ab = String(AB).replace('.', ','), oc = String(OC).replace('.', ','), cd = String(CD).replace('.', ',') } = {}) {
     // levi krak ide duž x-ose udesno, desni krak nagore-desno (nagib 0,4; tačke su na pravom rastojanju od O)
     const A = [OA, 0], B = [OA + AB, 0];
     const u = [1 / Math.sqrt(1.16), 0.4 / Math.sqrt(1.16)];
@@ -91,7 +91,7 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, rad, naKrugu, telo, A }) => {
     ['$12 cm$', '$7,5 cm$', '$9 cm$', '$10,5 cm$'],
     [K('Talesova teorema: ${OA|AB} = {OC|CD}$ → ${3|5} = {4,5|CD}$, pa je $CD = {5 · 4,5|3} = 7,5 cm$.', ['ac', 'bd']),
      K('$OD = OC + CD = 4,5 + 7,5 = 12 cm$.'),
-     K('Može se odmah i ${OA|OB} = {OC|OD}$: ${3|8} = {4,5|OD}$ → $OD = 12 cm$ ✓', [], tales(3, 5, 4.5, 7.5))]);
+     K('Brže se dobija i ovako: ${OA|OB} = {OC|OD}$, tj. ${3|8} = {4,5|OD}$, pa je $OD = 12 cm$ ✓', [], tales(3, 5, 4.5, 7.5))]);
 
   Z(3, 'Duž $AB$ podeljena je tačkom $C$ tako da je $AC : CB = 3 : 2$. Kroz tačku $A$ povučena je prava $p$ koja nije paralelna sa $AB$, i na njoj tačke $M$ i $N$ tako da je $CM \\| BN$. Ako je $AM = 9 cm$, koliko je $MN$?',
     ['$6 cm$', '$15 cm$', '$3 cm$', '$13,5 cm$'],
@@ -101,8 +101,8 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, rad, naKrugu, telo, A }) => {
 
   Z(3, 'U trapezu $ABCD$ ($AB \\| CD$) dijagonale se seku u tački $S$. Ako je $AS = 8 cm$, $SC = 4 cm$ i $BS = 6 cm$, koliko je $SD$?',
     ['$3 cm$', '$4 cm$', '$2 cm$', '$12 cm$'],
-    [K('U trapezu je $AB \\| CD$, a tačke $A$ i $B$ su na jednoj, $C$ i $D$ na drugoj paralelnoj pravoj.'),
-     K('Trouglovi $ABS$ i $CDS$ su slični (podudarni uglovi uz $S$ i uz paralelne prave), pa je ${AS|SC} = {BS|SD}$.'),
+    [K('U trapezu je $AB \\| CD$, pa tačke $A$ i $B$ leže na jednoj, a $C$ i $D$ na drugoj paralelnoj pravoj.'),
+     K('Trouglovi $ABS$ i $CDS$ su slični (uglovi uz $S$ su jednaki, a uglovi uz paralelne prave su naizmenični), pa je ${AS|SC} = {BS|SD}$.'),
      K('${8|4} = {6|SD}$, pa je $SD = {4 · 6|8} = 3 cm$.'),
      K('Provera: ${8|4} = 2$ i ${6|3} = 2$ ✓')]);
 
@@ -113,7 +113,7 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, rad, naKrugu, telo, A }) => {
     ['Četiri jednake duži', 'Jednu duž od $2,5 cm$', 'Dve duži od $5 cm$', 'Pet jednakih duži'],
     [K('Na pomoćni zrak iz jednog kraja date duži nanesemo četiri jednake duži – njihova dužina može biti proizvoljna.'),
      K('Poslednju tačku spojimo sa drugim krajem date duži, pa kroz ostale tačke povučemo paralelne prave.'),
-     K('Po Talesovoj teoremi one dele datu duž na $4$ jednaka dela. Pomoćnih duži mora biti onoliko koliko i delova.')]);
+     K('Po Talesovoj teoremi one dele datu duž na $4$ jednaka dela. Pomoćnih duži mora biti onoliko koliko ima delova.')]);
 
   Z(2, 'Duž dugu $9 cm$ treba podeliti u razmeri $2 : 3$. Na pomoćni zrak nanesemo $5$ jednakih duži. Koju tačku na zraku spajamo sa krajem date duži?',
     ['Petu', 'Treću', 'Drugu', 'Prvu'],
@@ -125,13 +125,13 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, rad, naKrugu, telo, A }) => {
     ['$5 cm$', '$3 cm$', '$7,5 cm$', '$10 cm$'],
     [K('Kad duž podelimo na $3$ jednaka dela, svaki je trećina cele duži.'),
      K('$15 : 3 = 5 cm$.'),
-     K('Talesova konstrukcija je tačna bez obzira na dužinu duži – zato se i koristi kad dužina nije deljiva.')]);
+     K('Talesova konstrukcija radi bez obzira na dužinu duži – zato se koristi i kad se duž ne može lako podeliti računom.')]);
 
   Z(3, 'Treba konstruisati četvrtu proporcionalu: za duži $a = 6 cm$, $b = 4 cm$ i $c = 9 cm$ traži se duž $x$ tako da je $a : b = c : x$. Kolika je $x$?',
     ['$6 cm$', '$13,5 cm$', '$8 cm$', '$6,75 cm$'],
     [K('Iz proporcije $a : b = c : x$ sledi $x = {b · c|a}$.'),
      K('$x = {4 · 9|6} = {36|6} = 6 cm$.'),
-     K('Konstrukcija: na krake ugla nanesemo $a$ i $b$ na jedan, a $c$ na drugi krak; spojimo krajeve $a$ i $c$, pa paralelu kroz kraj duži $b$.')]);
+     K('Konstrukcija: na jedan krak ugla nanesemo $a$ i $b$, a na drugi krak $c$; spojimo krajeve $a$ i $c$, pa paralelu kroz kraj duži $b$.')]);
 
   Z(3, 'Duž od $7 cm$ podeljena je tačkom $M$ u razmeri $3 : 4$. Koliko je $M$ udaljeno od bližeg kraja?',
     ['$3 cm$', '$4 cm$', '$3,5 cm$', '$1 cm$'],
@@ -159,7 +159,7 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, rad, naKrugu, telo, A }) => {
     ['$12 cm$', '$10 cm$', '$16 cm$', '$9 cm$'],
     [K('Koeficijent sličnosti većeg prema manjem: $k = {36|24} = {3|2}$.'),
      K('Najduža stranica većeg: ${3|2} · 8 = 12 cm$.'),
-     K('Uvek: odnos obima jednak je odnosu odgovarajućih stranica.')]);
+     K('Odnos obima jednak je odnosu odgovarajućih stranica.')]);
 
   Z(2, 'Dva jednakostranična trougla su uvek slična. Ako su im stranice $5 cm$ i $8 cm$, koliki je odnos njihovih površina?',
     ['$25 : 64$', '$5 : 8$', '$25 : 40$', '$8 : 5$'],
@@ -203,7 +203,7 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, rad, naKrugu, telo, A }) => {
   Z(2, 'Trougao $ABC$ ima uglove $40°$ i $60°$, a trougao $DEF$ uglove $60°$ i $80°$. Jesu li slični?',
     ['Da, po stavu UU', 'Ne', 'Samo ako su stranice jednake', 'Da, po stavu SSS'],
     [K('Treći ugao trougla $ABC$: $180° − 40° − 60° = 80°$.'),
-     K('Trougao $DEF$ ima uglove $60°$ i $80°$ – a onda i treći od $40°$ ($180° − 60° − 80°$).'),
+     K('Trougao $DEF$ ima uglove $60°$ i $80°$, pa mu je treći ugao $40°$ ($180° − 60° − 80°$).'),
      K('Oba trougla imaju uglove $40°, 60°, 80°$, pa su slični po stavu UU.')]);
 
   Z(2, 'Dva pravougla trougla imaju po jedan oštar ugao od $35°$. Šta sigurno važi?',
@@ -213,7 +213,7 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, rad, naKrugu, telo, A }) => {
      K('Podudarnost bi tražila još i jednaku bar jednu stranicu – nju ovde ne znamo.')]);
 
   Z(3, 'Stranice trougla su $4 cm$, $6 cm$ i $8 cm$. Koje stranice ima njemu sličan trougao najmanjeg celobrojnog obima?',
-    ['$2, 3, 4$', '$8, 12, 16$', '$1, 1,5, 2$', '$6, 9, 12$'],
+    ['$2, 3, 4$', '$8, 12, 16$', '$3, 4, 6$', '$6, 9, 12$'],
     [K('Sličan trougao ima stranice proporcionalne datim: $4 : 6 : 8 = 2 : 3 : 4$.'),
      K('Najmanje celobrojne stranice u toj razmeri su upravo $2, 3, 4$ (ne mogu se više skratiti).'),
      K('Trouglovi $8, 12, 16$ i $6, 9, 12$ su takođe slični, ali veći.')]);
@@ -329,7 +329,7 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, rad, naKrugu, telo, A }) => {
     ['$20 cm$', '$15 cm$', '$10 cm$', '$18 cm$'],
     [K('${OA|OB} = {OC|OD}$, tj. ${3|12} = {5|OD}$.'),
      K('$OD = {12 · 5|3} = 20 cm$.', [], tales(3, 9, 5, 15))]);
-  Z(3, 'U trouglu $ABC$ je $DE \| AB$: $D$ na $AC$, $E$ na $BC$. Ako je $CD = 4 cm$, $DA = 8 cm$ i $CE = 5 cm$, kolika je duž $EB$?',
+  Z(3, 'U trouglu $ABC$ je $DE \\| AB$: $D$ na $AC$, $E$ na $BC$. Ako je $CD = 4 cm$, $DA = 8 cm$ i $CE = 5 cm$, kolika je duž $EB$?',
     ['$10 cm$', '$8 cm$', '$6 cm$', '$12 cm$'],
     [K('${CD|DA} = {CE|EB}$, tj. ${4|8} = {5|EB}$.'),
      K('$EB = {8 · 5|4} = 10 cm$.')]);
@@ -339,7 +339,7 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, rad, naKrugu, telo, A }) => {
 
   L('Primena Talesove teoreme u konstrukcijama');
   Z(2, 'Da bismo duž podelili na $5$ jednakih delova, na pomoćni zrak nanosimo:',
-    ['5 jednakih duži', '5 duži različite dužine', 'jednu duž', 'duž cele dužine'],
+    ['5 jednakih duži', '5 duži različite dužine', 'jednu duž', 'jednu duž cele dužine'],
     [K('Nanosimo $5$ jednakih (proizvoljnih) duži na pomoćni zrak.')]);
   Z(3, 'Duž treba podeliti u razmeri $3 : 5$. Na pomoćni zrak nanosimo $8$ jednakih duži. Koju tačku spajamo sa krajem date duži?',
     ['Osmu', 'Petu', 'Treću', 'Prvu'],
@@ -379,7 +379,7 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, rad, naKrugu, telo, A }) => {
     ['SSS', 'SUS', 'UU', 'SSU'],
     [K('${4|2} = {6|3} = {8|4} = 2$ – sve stranice proporcionalne, stav SSS.')]);
   Z(3, 'Trouglovi imaju stranice $3, 4, 5$ i $6, 8, 12$. Jesu li slični?',
-    ['Da, po SSS', 'Da, po SUS', 'Da, po UU', 'Ne, jer $12 : 5 ≠ 2$'],
+    ['Ne, jer $12 : 5 ≠ 2$', 'Da, po SSS', 'Da, po SUS', 'Da, po UU'],
     [K('${6|3} = 2$, ${8|4} = 2$, ali ${12|5} = 2,4 ≠ 2$.'),
      K('Stranice nisu proporcionalne – nisu slični.')]);
 
@@ -411,7 +411,7 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, rad, naKrugu, telo, A }) => {
   Z(3, 'U podne čovek visok $1,8 m$ baca senku $2,4 m$. U isto vreme toranj baca senku $40 m$. Koliko je visok toranj?',
     ['$30 m$', '$32 m$', '$36 m$', '$24 m$'],
     [K('${h|40} = {1,8|2,4}$, pa je $h = {40 · 1,8|2,4} = 30 m$.')]);
-  Z(2, 'Na karti razmere $1 : 100.000$ rastojanje je $4 cm$. Koliko je stvarno rastojanje?',
+  Z(2, 'Na karti razmere $1 : 100 000$ rastojanje je $4 cm$. Koliko je stvarno rastojanje?',
     ['$4 km$', '$40 km$', '$400 m$', '$10 km$'],
-    [K('$4 · 100.000 = 400.000 cm = 4.000 m = 4 km$.')]);
+    [K('$4 · 100 000 = 400 000 cm = 4000 m = 4 km$.')]);
 };

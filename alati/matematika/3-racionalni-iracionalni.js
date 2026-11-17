@@ -124,7 +124,7 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, S3, kocke, pr }) => {
   proveri(101 * 99 === 9999, '101·99');
   Q(3, 'Koliko je 101 · 99 (napamet)?', ['9.999', '9.909', '10.001', '9.899'],
     '$101 · 99 = (100 + 1)(100 − 1) = 100^{2} − 1^{2} = 9.999$. Razlika kvadrata pretvara teška množenja u laka: $48 · 52 = 50^{2} − 2^{2} = 2.496$.',
-    'razlika', { medijiOdgovora: A('razlika-kvadrata', 'a² − b² = (a + b)(a − b)') });
+    'razlika', { medijiOdgovora: A('razlika-kvadrata', '$a² − b² = (a + b)(a − b)$') });
 
   proveri(35 * 35 === 1225, '35²');
   Q(3, 'Koliko je $35^{2}$?', ['1.225', '925', '1.125', '1.235'],

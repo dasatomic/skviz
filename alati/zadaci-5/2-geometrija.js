@@ -68,7 +68,7 @@ module.exports = ({ L, Z, K, G, R, O, bez, r, proveri, naKrugu, pravilni, krug, 
     Z(3, 'Dato je $5$ tačaka od kojih nikoje tri nisu na jednoj pravoj. Koliko trouglova imaju temena u tim tačkama?',
       ['$10$', '$5$', '$60$', '$15$'],
       [K('Trougao je određen izborom $3$ tačke od $5$.'),
-       K('Svaki izbor $3$ tačke od $5$ ostavlja $2$ tačke van trougla, a takvih parova ima $10$.'),
+       K('Trougao određuje izbor $3$ tačke od $5$. Takvih izbora ima $5 · 4 · 3 : (3 · 2 · 1) = 10$.'),
        K('Dakle trouglova ima $10$.')],
       G(t, e, { velicina: 200 }));
   }
@@ -116,7 +116,7 @@ module.exports = ({ L, Z, K, G, R, O, bez, r, proveri, naKrugu, pravilni, krug, 
   Z(2, 'Prave $a ∥ b$, a prava $c$ je normalna na $a$. Kakav je odnos pravih $c$ i $b$?',
     ['$c ⊥ b$', '$c ∥ b$', '$c$ i $b$ se ne seku', 'seku se, ali nisu normalne'],
     [K('Prava $c$ seče $a$, pa seče i paralelnu pravu $b$.'),
-     K('Pravi ugao sa $a$ „klizi“ duž $c$ do prave $b$ – i tamo je ugao prav: $c ⊥ b$.', ['u'])],
+     K('Ugao između $c$ i $b$ je saglasan sa pravim uglom između $c$ i $a$, pa je i on prav: $c ⊥ b$.', ['u'])],
     G({ a1: [-4, 2], a2: [4, 2], b1: [-4, -1], b2: [4, -1], c1: [0, 3.5], c2: [0, -2.5], P: [0, 2], Q: [0, -1], X: [3, 2], Y: [3, -1] }, [{ d: 'a1a2', b: 0 }, { d: 'b1b2', b: 0 }, { d: 'c1c2', b: 1 }, { pu: 'XPc1' }, { pu: 'YQc1', id: 'u', k: 2 }, { tx: 'a', at: [4.4, 2] }, { tx: 'b', at: [4.4, -1] }, { tx: 'c', at: [0.4, 3.5] }], { bezImena: ['P', 'Q', 'X', 'Y', 'a1', 'a2', 'b1', 'b2', 'c1', 'c2'], velicina: 200 }));
 
   Z(2, 'Na kvadratnoj mreži su nacrtane prave $a$, $b$, $c$ i $d$. Koje dve su paralelne?',
@@ -198,7 +198,7 @@ module.exports = ({ L, Z, K, G, R, O, bez, r, proveri, naKrugu, pravilni, krug, 
     G(O, [papir(0, 8, 0, 5), { lin: [[0, 4], [3, 4]], b: 0, debljina: 4, id: 'a' }, { lin: [[4, 1], [7, 4]], b: 1, debljina: 4, id: 'b' }, { lin: [[1, 0.5], [1, 3.5]], b: 2, debljina: 4, id: 'c' }, { lin: [[5, 0.5], [7, 0.5]], b: 5, debljina: 4, id: 'd' },
       { tx: 'a', at: [1.5, 4.4] }, { tx: 'b', at: [5.2, 3] }, { tx: 'c', at: [1.4, 2] }, { tx: 'd', at: [6, 0.9] }], { ...bez, velicina: 240 }));
 
-  Z(3, 'Od komada platna dugog $1 632 cm$ odsecaju se jednaki komadi dok god je moguće. Koliki komadi daju najkraći ostatak?',
+  Z(3, 'Od komada platna dugog $1 632 cm$ odsecaju se jednaki komadi dok god je moguće. Koje dužine komada daju najkraći ostatak?',
     ['$4 cm$', '$7 cm$', '$5 cm$', '$9 cm$'],
     [K('Ostatak je ostatak pri deljenju $1 632$ dužinom komada.'),
      K('$1 632 : 7$ → ostatak $1$; $: 5$ → ostatak $2$; $: 9$ → ostatak $3$ (zbir cifara $12$).'),
@@ -256,7 +256,7 @@ module.exports = ({ L, Z, K, G, R, O, bez, r, proveri, naKrugu, pravilni, krug, 
 
   Z(2, 'Pravougaonik ima stranice $3 cm$ i $2 cm$. Kolika je duž jednaka obimu pravougaonika?',
     ['$10 cm$', '$5 cm$', '$6 cm$', '$12 cm$'],
-    [K('Obim = zbir sve četiri stranice: $3 + 2 + 3 + 2$.'),
+    [K('Obim je zbir svih stranica: $3 + 2 + 3 + 2$.'),
      K('$O = 2 · (3 + 2) = 10 cm$.')],
     G({ A: [0, 0], B: [3, 0], C: [3, 2], D: [0, 2] }, [{ p: 'ABCD' }, { d: 'AB', o: '3 cm' }, { d: 'BC', o: '2 cm' }, { lin: [[0, 0], [3, 0], [3, 2], [0, 2], [0, 0]], b: 1, crtaj: 1, trajanje: 2.5, ponovi: 1 }], { velicina: 160 }));
 
@@ -339,7 +339,7 @@ module.exports = ({ L, Z, K, G, R, O, bez, r, proveri, naKrugu, pravilni, krug, 
 
   Z(1, 'Poluprečnik kruga je $2 cm 5 mm$. Koliki je prečnik?',
     ['$5 cm$', '$4 cm 5 mm$', '$1 cm 2 mm$', '$2 cm 5 mm$'],
-    [K('Prečnik je dva poluprečnika – prolazi kroz centar, od kraja do kraja.', ['d']),
+    [K('Prečnik prolazi kroz centar i dug je dva poluprečnika.', ['d']),
      K('$d = 2 · 25 mm = 50 mm = 5 cm$.')],
     G({ O: [0, 0, 90], A: [3, 0], B: [-3, 0] }, [{ kr: 'O', r: 3 }, { d: 'OA', o: '2 cm 5 mm', b: 0 }, { d: 'BA', b: 1, id: 'd', k: 1, crtaj: 1, debljina: 4 }], { velicina: 180 }));
 
@@ -551,7 +551,7 @@ module.exports = ({ L, Z, K, G, R, O, bez, r, proveri, naKrugu, pravilni, krug, 
     G({ A: [0, 0], B: [5, 0], C: [5, 3], D: [0, 3] }, [{ p: 'ABCD', b: 4, prazno: 1 }, { d: 'AB', b: 0, id: 'a', k: 1 }, { d: 'DC', b: 0, id: 'a', k: 1 }, { d: 'BC', b: 1, id: 'b', k: 1 }, { d: 'AD', b: 1, id: 'b', k: 1 }], { velicina: 180 }));
 
   L('Prenošenje i nadovezivanje duži');
-  Z(1, 'Duž dužine $2 cm 4 mm$ nadovežemo samu na sebe $5$ puta. Kolika je dobijena duž?',
+  Z(1, 'Duž dužine $2 cm 4 mm$ nadovežemo pet puta, jednu za drugom. Kolika je dobijena duž?',
     ['$12 cm$', '$12 cm 2 mm$', '$10 cm 4 mm$', '$12 cm 4 mm$'],
     [K('$2 cm 4 mm = 24 mm$; $5 · 24 mm = 120 mm$.'),
      K('$120 mm = 12 cm$.', ['s'])],

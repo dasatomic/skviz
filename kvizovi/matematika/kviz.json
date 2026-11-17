@@ -156,7 +156,7 @@
         "Lopta",
         "Prizma"
       ],
-      "zanimljivost": "Zapremina valjka je V = r²πh. Arhimed je toliko bio ponosan na otkriće da lopta upisana u valjak ima tačno 2/3 njegove zapremine da je tražio da mu to bude nacrtano na grobu.",
+      "zanimljivost": "Zapremina valjka je $V = r^{2}πh$. Arhimed je toliko bio ponosan na otkriće da lopta upisana u valjak ima tačno 2/3 njegove zapremine da je tražio da mu to bude nacrtano na grobu.",
       "rec": "valjak"
     },
     {
@@ -261,7 +261,7 @@
         "2,71",
         "1,61"
       ],
-      "zanimljivost": "π je odnos obima i prečnika svakog kruga i ima beskonačno mnogo decimala bez ponavljanja. Dan broja π slavi se 14. marta (3/14). Broj 2,71 je Ojlerov broj e, a 1,61 je zlatni presek.",
+      "zanimljivost": "π je odnos obima i prečnika svakog kruga i ima beskonačno mnogo decimala bez ponavljanja. Dan broja π slavi se 14. marta (3/14). Broj $e$ ≈ 2,71 je Ojlerov broj, a 1,618 je zlatni presek.",
       "rec": "decimala"
     },
     {
@@ -341,7 +341,7 @@
         "72",
         "11"
       ],
-      "zanimljivost": "Znak √ potiče od izduženog slova r, od latinske reči „radix“ – koren. 144 se zove i „gros“ – to je tuce tuceta (12 · 12).",
+      "zanimljivost": "Znak √ potiče od izduženog slova $r$, od latinske reči „radix“ – koren. 144 se zove i „gros“ – to je tuce tuceta (12 · 12).",
       "rec": "koren"
     },
     {
@@ -369,7 +369,7 @@
         "12",
         "3"
       ],
-      "zanimljivost": "Formula za broj dijagonala mnogougla sa n temena je n·(n−3)/2. Za šestougao: 6·3/2 = 9. Trougao nema nijednu dijagonalu!",
+      "zanimljivost": "Formula za broj dijagonala mnogougla sa $n$ temena je ${n · (n − 3)|2}$. Za šestougao: ${6 · 3|2} = 9$. Trougao nema nijednu dijagonalu!",
       "rec": "dijagonala",
       "mediji": {
         "vrsta": "svg",
@@ -438,7 +438,7 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Ako je 3x + 5 = 20, koliko je x?",
+      "pitanje": "Ako je $3x + 5 = 20$, koliko je $x$?",
       "mediji": {
         "vrsta": "formula",
         "tekst": "3x + 5 = 20"
@@ -601,7 +601,7 @@
         "15,7 cm",
         "25 cm"
       ],
-      "zanimljivost": "O = 2rπ = 2 · 5 · 3,14 = 31,4 cm. Broj 78,5 je površina tog kruga (r²π). Arhimed je π izračunao upisujući u krug mnogougao sa 96 stranica!",
+      "zanimljivost": "$O = 2rπ = 2 · 5 · 3,14 = 31,4$ cm. Broj 78,5 je površina tog kruga ($r^{2}π$). Arhimed je π izračunao upisujući u krug mnogougao sa 96 stranica!",
       "medijiOdgovora": {
         "vrsta": "formula",
         "tekst": "O = 2rπ ≈ 31,4 cm"
@@ -902,7 +902,7 @@
         "18 cm³",
         "54 cm³"
       ],
-      "zanimljivost": "V = a³ = 3 · 3 · 3. Broj 54 je njena površina (6 · 9 cm²).",
+      "zanimljivost": "$V = a^{3} = 3 · 3 · 3$. Broj 54 je njena površina (6 · 9 cm²).",
       "rec": "kocka"
     },
     {
@@ -931,7 +931,7 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Koji je broj rešenje jednačine x : 4 = 9?",
+      "pitanje": "Koji je broj rešenje jednačine $x : 4 = 9$?",
       "odgovori": [
         "36",
         "13",
@@ -1182,7 +1182,7 @@
         "35",
         "49"
       ],
-      "zanimljivost": "To su kvadrati prirodnih brojeva. Zanimljivo: razlike su uzastopni neparni brojevi (3, 5, 7, 9, 11) – zbir prvih n neparnih brojeva uvek je n².",
+      "zanimljivost": "To su kvadrati prirodnih brojeva. Zanimljivo: razlike su uzastopni neparni brojevi (3, 5, 7, 9, 11) – zbir prvih $n$ neparnih brojeva uvek je $n^{2}$.",
       "rec": "kvadrat"
     },
     {
@@ -1479,7 +1479,7 @@
         "720°",
         "450°"
       ],
-      "zanimljivost": "Formula je (n − 2) · 180°. Za petougao: 3 · 180° = 540°. Klasična fudbalska lopta sašivena je od 12 crnih petouglova i 20 belih šestouglova.",
+      "zanimljivost": "Formula je $(n − 2) · 180°$. Za petougao: 3 · 180° = 540°. Klasična fudbalska lopta sašivena je od 12 crnih petouglova i 20 belih šestouglova.",
       "medijiOdgovora": {
         "vrsta": "svg",
         "kod": "<svg viewBox=\"0 0 200 170\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" fill=\"none\" stroke-linejoin=\"round\"><path d=\"M100 10 L185 70 L152 160 L48 160 L15 70 Z\" stroke=\"#3867d6\" stroke-width=\"2.5\"/><g stroke=\"#e84118\" stroke-width=\"2\" stroke-dasharray=\"5 4\"><line x1=\"100\" y1=\"10\" x2=\"152\" y2=\"160\"/><line x1=\"100\" y1=\"10\" x2=\"48\" y2=\"160\"/></g><text x=\"100\" y=\"120\" font-size=\"13\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\" >3 · 180° = 540°</text></svg>"
@@ -1511,7 +1511,7 @@
         "20",
         "70"
       ],
-      "zanimljivost": "Formula n · (n − 3) / 2: 10 · 7 / 2 = 35.",
+      "zanimljivost": "Formula ${n · (n − 3)|2}$: ${10 · 7|2} = 35$.",
       "rec": "dijagonala"
     },
     {
@@ -14640,7 +14640,7 @@
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "animacije/razlika-kvadrata.webp",
-        "opis": "a² − b² = (a + b)(a − b)"
+        "opis": "$a² − b² = (a + b)(a − b)$"
       },
       "rec": "razlika"
     },
@@ -14708,7 +14708,7 @@
     },
     {
       "tezina": 1,
-      "pitanje": "Vaga je u ravnoteži. Koliko je teška jedna kutija x?",
+      "pitanje": "Vaga je u ravnoteži. Koliko je teška jedna kutija $x$?",
       "mediji": {
         "vrsta": "geo",
         "t": {
@@ -15042,7 +15042,7 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Vaga je u ravnoteži. Koliko je teška jedna kutija x?",
+      "pitanje": "Vaga je u ravnoteži. Koliko je teška jedna kutija $x$?",
       "mediji": {
         "vrsta": "geo",
         "t": {
@@ -15747,14 +15747,14 @@
     },
     {
       "tezina": 2,
-      "pitanje": "U kojoj tački prava $y = −x + 3$ seče y-osu?",
+      "pitanje": "U kojoj tački prava $y = −x + 3$ seče $y$-osu?",
       "odgovori": [
         "(0, 3)",
         "(3, 0)",
         "(0, −3)",
         "(−1, 3)"
       ],
-      "zanimljivost": "Na y-osi je $x = 0$, pa je $y = −0 + 3 = 3$. Slobodan član u $y = kx + n$ uvek pokazuje gde prava seče y-osu.",
+      "zanimljivost": "Na $y$-osi je $x = 0$, pa je $y = −0 + 3 = 3$. Slobodan član u $y = kx + n$ uvek pokazuje gde prava seče y-osu.",
       "medijiOdgovora": {
         "vrsta": "geo",
         "t": {
@@ -16933,7 +16933,7 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Ako je $x + y = 10$ i $x − y = 4$, koliko je x?",
+      "pitanje": "Ako je $x + y = 10$ i $x − y = 4$, koliko je $x$?",
       "odgovori": [
         "7",
         "3",
@@ -16945,7 +16945,7 @@
     },
     {
       "tezina": 3,
-      "pitanje": "U kojoj tački prava $y = 2x − 6$ seče x-osu?",
+      "pitanje": "U kojoj tački prava $y = 2x − 6$ seče $x$-osu?",
       "odgovori": [
         "(3, 0)",
         "(−6, 0)",
@@ -18277,7 +18277,7 @@
         "12",
         "2"
       ],
-      "zanimljivost": "Tri ose prolaze kroz naspramna temena, a tri kroz sredine naspramnih stranica. Pravilan mnogougao sa n stranica uvek ima tačno n osa simetrije.",
+      "zanimljivost": "Tri ose prolaze kroz naspramna temena, a tri kroz sredine naspramnih stranica. Pravilan mnogougao sa $n$ stranica uvek ima tačno $n$ osa simetrije.",
       "medijiOdgovora": {
         "vrsta": "geo",
         "t": {
@@ -18433,14 +18433,14 @@
     },
     {
       "tezina": 1,
-      "pitanje": "Tačka $A(2, 3)$ se preslikava osnom simetrijom u odnosu na x-osu. Koje su koordinate slike?",
+      "pitanje": "Tačka $A(2, 3)$ se preslikava osnom simetrijom u odnosu na $x$-osu. Koje su koordinate slike?",
       "odgovori": [
         "(2, −3)",
         "(−2, 3)",
         "(−2, −3)",
         "(3, 2)"
       ],
-      "zanimljivost": "x-osa je „ogledalo“: tačka ostaje iznad istog mesta, samo prelazi na drugu stranu – y menja znak. Slika je jednako daleko od ose kao i original.",
+      "zanimljivost": "$x$-osa je „ogledalo“: tačka ostaje iznad istog mesta, samo prelazi na drugu stranu – $y$ menja znak. Slika je jednako daleko od ose kao i original.",
       "medijiOdgovora": {
         "vrsta": "geo",
         "t": {
@@ -19277,7 +19277,7 @@
     },
     {
       "tezina": 1,
-      "pitanje": "Kako se zove prava p na slici?",
+      "pitanje": "Kako se zove prava $p$ na slici?",
       "mediji": {
         "vrsta": "geo",
         "t": {
@@ -19400,7 +19400,7 @@
         "160°",
         "20°"
       ],
-      "zanimljivost": "Periferijski ugao je uvek POLOVINA centralnog ugla nad istim lukom: 80° : 2 = 40°. I gde god da se tačka $C$ pomeri po većem luku, ugao ostaje 40°!",
+      "zanimljivost": "Periferijski ugao je uvek POLOVINA centralnog ugla nad istim lukom: 80° : 2 = 40°. Gde god da se tačka $C$ pomeri po većem luku, ugao ostaje 40°!",
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "animacije/periferijski-ugao.webp"
@@ -20824,7 +20824,7 @@
         "100 m",
         "2,5 m"
       ],
-      "zanimljivost": "20 cm · 50 = 1.000 cm = 10 m. Razmera kaže koliko puta je stvarnost veća od modela; maketa voza u razmeri 1 : 87 („H0“) je najpopularnija na svetu.",
+      "zanimljivost": "20 cm · 50 = 1.000 cm = 10 m. Razmera kaže koliko puta je stvarnost veća od modela; maketa voza u razmeri 1 : 87 („H0“) je jedna od najpopularnijih na svetu.",
       "rec": "maketa"
     },
     {
@@ -33073,7 +33073,7 @@
     },
     {
       "tezina": 3,
-      "pitanje": "Plate petoro zaposlenih su 50.000 dinara, a direktorova je 1.000.000. Koja mera bolje pokazuje „tipičnu“ platu u toj firmi?",
+      "pitanje": "Petoro zaposlenih ima platu od 50.000 dinara, a direktorova je 1.000.000 dinara. Koja mera bolje pokazuje „tipičnu“ platu u toj firmi?",
       "odgovori": [
         "Medijana",
         "Aritmetička sredina",

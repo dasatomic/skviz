@@ -46,7 +46,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, T, mera, stubovi }) => {
     ['$17 mm$', '$0,85 mm$', '$0,34 mm$', '$1,7 mm$'],
     [K('Produženje je srazmerno i dužini i promeni temperature.'),
      K('Za $20 m$ i $1 °C$: $20 · 0,017 mm = 0,34 mm$.'),
-     K('Za $50 °C$: $50 · 0,34 mm = 17 mm$ – zato dalekovodi leti više vise.', [], S('toplota', { tip: 'zice' }))],
+     K('Za $50 °C$: $50 · 0,34 mm = 17 mm$ – zato žice dalekovoda leti više vise.', [], S('toplota', { tip: 'zice' }))],
     S('toplota', { tip: 'zice' }));
 
   Z(1, 'Najniža moguća temperatura je apsolutna nula, $0 K$. Koliko je to stepeni Celzijusa?',
@@ -120,7 +120,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, T, mera, stubovi }) => {
     S('kalorimetar', { tip: 'grejanje', m: '1 kg', t1: 20, t2: 100, Q: 'P = 1 000 W' }));
 
   proveri(9200 / (0.5 * 40), 460);
-  Z(3, 'Metalni predmet mase $0,5 kg$ primi $9 200 J$ toplote i zagreje se za $40 °C$. Od kog metala je napravljen? (Al: $900$, Fe: $460$, Cu: $380$, Pb: $130$ – sve u $J/(kg · °C)$)',
+  Z(3, 'Metalni predmet mase $0,5 kg$ primi $9 200 J$ toplote i zagreje se za $40 °C$. Od kog metala je napravljen? ($Al$: $900$, $Fe$: $460$, $Cu$: $380$, $Pb$: $130$ – sve u $J/(kg · °C)$)',
     ['Od gvožđa', 'Od aluminijuma', 'Od bakra', 'Od olova'],
     [K('$c = {Q|m Δt} = {9 200 J|0,5 kg · 40 °C}$.'),
      K('$c = {9 200|20} = 460 J/(kg · °C)$ – to je gvožđe.')],
@@ -217,7 +217,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, T, mera, stubovi }) => {
     { crtez: G([{ lin: [[0, 0], [2.4, 0], [2.4, 2], [0, 2]], zatv: 1, b: 1, gusto: 1 }, T('~čaj 90 °C', 1.2, 1), { lin: [[2.4, 0], [4.8, 0], [4.8, 2], [2.4, 2]], zatv: 1, b: 0, gusto: 1 }, T('~šolja 20 °C', 3.6, 1), F(0.8, 2.6, 3.2, 0, { o: 'Q', b: 3, k: 1, id: 'q', crtaj: 1, oAt: [2.4, 3.1] })], { velicina: 220 }) });
 
   proveri(smesa([0.2, 90], [0.05, 10]), 74);
-  Z(2, 'U $200 g$ čaja temperature $90 °C$ dolijemo $50 g$ mleka temperature $10 °C$. Kolika je temperatura čaja sa mlekom? (Uzmi da čaj i mleko imaju isti specifični toplotni kapacitet.)',
+  Z(2, 'Sipamo $200 g$ čaja temperature $90 °C$ i dolijemo $50 g$ mleka temperature $10 °C$. Kolika je temperatura čaja sa mlekom? (Uzmi da čaj i mleko imaju isti specifični toplotni kapacitet.)',
     ['$74 °C$', '$50 °C$', '$80 °C$', '$70 °C$'],
     [K('Kad je $c$ isto, smeša ima „srednju vrednost sa težinama“: $t = {m_{1} t_{1} + m_{2} t_{2}|m_{1} + m_{2}}$.'),
      K('$t = {200 · 90 + 50 · 10|250} = {18 000 + 500|250} °C = 74 °C$.')],

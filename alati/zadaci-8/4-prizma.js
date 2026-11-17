@@ -153,7 +153,7 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, telo, A, kocke }) => {
 
   Z(3, 'Prava prizma ima osnovu romb stranice $5 cm$ i visine osnove $4 cm$; visina prizme je $8 cm$. Kolika je površina prizme?',
     ['$200 cm²$', '$160 cm²$', '$180 cm²$', '$240 cm²$'],
-    [K('$B = a · h_{osnove} = 5 · 4 = 20 cm²$.'),
+    [K('Osnova je romb: $B = a · h = 5 · 4 = 20 cm²$, gde je $h$ visina osnove.'),
      K('Omotač: $M = O · H = 4 · 5 · 8 = 160 cm²$.'),
      K('$P = 2 · 20 + 160 = 200 cm²$.')]);
 
@@ -184,8 +184,8 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, telo, A, kocke }) => {
 
   Z(2, 'Akvarijum je oblika kvadra dimenzija $40 cm$, $25 cm$ i $30 cm$. Koliko litara vode staje u njega?',
     ['$30$ litara', '$300$ litara', '$3$ litara', '$3000$ litara'],
-    [K('$V = 40 · 25 · 30 = 30.000 cm³$.'),
-     K('$1 liter = 1000 cm³$, pa je $V = 30$ litara.')]);
+    [K('$V = 40 · 25 · 30 = 30 000 cm³$.'),
+     K('Litar je $1000 cm³$, pa je $30 000 : 1000 = 30$ litara.')]);
 
   Z(3, 'Kocka ima zapreminu $125 cm³$. Kolika je njena ivica?',
     ['$5 cm$', '$25 cm$', '$12,5 cm$', '$5√{5} cm$'],
@@ -287,7 +287,7 @@ module.exports = ({ L, Z, G, K, proveri, r, S3, telo, A, kocke }) => {
     ['5', '10', '4', '7'],
     [K('Omotač čine bočne strane – one su pravougaonici, po jedan za svaku od $5$ bočnih strana.')]);
   Z(3, 'Mreža petostrane prizme sastoji se od:',
-    ['2 petougla i 5 pravougaonika', '5 petouglova', '1 petougla i 5 pravougaonika', '2 petougla i 3 pravougaonika'],
+    ['2 petougla i 5 pravougaonika', '5 petouglova', '1 petougao i 5 pravougaonika', '2 petougla i 3 pravougaonika'],
     [K('Dve petouglaste osnove + pet bočnih pravougaonika = $7$ mnogouglova.')]);
   Z(3, 'Broj mnogouglova u mreži $n$-tostrane prizme je:',
     ['$n + 2$', '$2n$', '$n$', '$n + 3$'],

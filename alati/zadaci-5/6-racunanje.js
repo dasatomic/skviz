@@ -550,7 +550,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, traka, pica, skok, skokovi, 
   Z(3, 'Biciklista je prešao $31,5 km$ za $1,75$ sati. Kolikom je prosečnom brzinom vozio?',
     ['$18 km$ na sat', '$55,125 km$ na sat', '$1,8 km$ na sat', '$29,75 km$ na sat'],
     [K('Brzina je količnik pređenog puta i vremena: $31,5 : 1,75$.'),
-     K('Proširimo sa $100$: $3 150 : 175 = 18$ km na sat.')]);
+     K('Proširimo sa $100$: $3 150 : 175 = 18 km$ na sat.')]);
 
   // ════════════════ 6.10 Svojstva množenja i deljenja ════════════════
   L('Svojstva množenja i deljenja; brojevni izrazi');
@@ -588,7 +588,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, traka, pica, skok, skokovi, 
   Z(2, 'Izračunaj: ${2|3} + {1|3} · {3|4}$.',
     ['${11|12}$', '${3|4}$', '${1|2}$', '$1$'],
     [K('Množenje pre sabiranja: ${1|3} · {3|4} = {1|4}$.'),
-     K('${2|3} + {1|4} = {8|12} + {3|12} = {11|12}$. (Greška ${3|4}$: prvo sabrano.)')]);
+     K('${2|3} + {1|4} = {8|12} + {3|12} = {11|12}$. (Greška bi bila prvo sabrati: $({2|3} + {1|3}) · {3|4} = {3|4}$, a to nije tačno.)')]);
 
   Z(2, 'Izračunaj na najlakši način: $9,9 · 9,9 + 9,9 · 0,1$.',
     ['$99$', '$98,01$', '$990$', '$9,9$'],

@@ -124,7 +124,7 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, S3, rad, naKrugu, pravilni 
     const t = pravilni(6, 4, [0, 0], 0);
     const ose = [0, 30, 60, 90, 120, 150].map((u, i) => ({ lin: [naKrugu([0, 0], 5, u), naKrugu([0, 0], 5, u + 180)], b: 1, isp: 1, debljina: 2 }));
     Q(2, 'Koliko osa simetrije ima pravilan šestougao?', ['6', '3', '12', '2'],
-      'Tri ose prolaze kroz naspramna temena, a tri kroz sredine naspramnih stranica. Pravilan mnogougao sa n stranica uvek ima tačno n osa simetrije.',
+      'Tri ose prolaze kroz naspramna temena, a tri kroz sredine naspramnih stranica. Pravilan mnogougao sa $n$ stranica uvek ima tačno $n$ osa simetrije.',
       'simetrija', { mediji: G(t, [{ p: 'ABCDEF', b: 3 }], { bezImena: Object.keys(t), velicina: 200 }), medijiOdgovora: G({ ...t, O: [0, 0] }, [{ p: 'ABCDEF', b: 3 }, ...ose], { bezImena: [...Object.keys(t), 'O'], velicina: 200 }) });
   }
 
@@ -132,8 +132,8 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, S3, rad, naKrugu, pravilni 
     '$A$ i $T$ imaju samo uspravnu osu, $E$ samo vodoravnu, a $H$ obe. Slova sa obe ose izgledaju isto i u ogledalu i naopako – takva su još $O$, $X$ i $I$.',
     'simetrija');
 
-  Q(1, 'Tačka $A(2, 3)$ se preslikava osnom simetrijom u odnosu na x-osu. Koje su koordinate slike?', ['(2, −3)', '(−2, 3)', '(−2, −3)', '(3, 2)'],
-    'x-osa je „ogledalo“: tačka ostaje iznad istog mesta, samo prelazi na drugu stranu – y menja znak. Slika je jednako daleko od ose kao i original.',
+  Q(1, 'Tačka $A(2, 3)$ se preslikava osnom simetrijom u odnosu na $x$-osu. Koje su koordinate slike?', ['(2, −3)', '(−2, 3)', '(−2, −3)', '(3, 2)'],
+    '$x$-osa je „ogledalo“: tačka ostaje iznad istog mesta, samo prelazi na drugu stranu – $y$ menja znak. Slika je jednako daleko od ose kao i original.',
     'simetrija', { medijiOdgovora: G({ A: [2, 3, 0], B: [2, -3, 0] }, [{ mreza: [-4, 4, -4, 4], ose: ['x', 'y'] }, { d: 'AB', isp: 1, b: 3 }, { tacka: 'A', b: 0 }, { tacka: 'B', b: 1 }], { velicina: 220 }) });
 
   {

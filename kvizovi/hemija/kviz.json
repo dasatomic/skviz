@@ -129,10 +129,10 @@
       "tezina": 1,
       "pitanje": "Šta je hemijski simbol za zlato?",
       "odgovori": [
-        "Au",
-        "Zl",
-        "Go",
-        "Ag"
+        "$Au$",
+        "$Zl$",
+        "$Go$",
+        "$Ag$"
       ],
       "zanimljivost": "Au dolazi od latinske reči „aurum“ – „sjajna zora“. Ag je srebro (argentum). Sve zlato ikada iskopano stalo bi u kocku sa stranicom od samo oko 22 metra.",
       "medijiOdgovora": {
@@ -146,10 +146,10 @@
       "tezina": 2,
       "pitanje": "Šta je hemijski simbol za gvožđe?",
       "odgovori": [
-        "Fe",
+        "$Fe$",
         "G",
-        "Gv",
-        "Ir"
+        "$Gv$",
+        "$Ir$"
       ],
       "zanimljivost": "Fe je od latinskog „ferrum“. Gvožđe u našoj krvi (u hemoglobinu) nosi kiseonik, i zato je krv crvena. Zemljino jezgro je uglavnom od gvožđa i nikla.",
       "medijiOdgovora": {
@@ -449,7 +449,7 @@
         "Ugljen-dioksid",
         "Voda"
       ],
-      "zanimljivost": "Ozonski omotač, 15–35 km iznad nas, upija opasne UV zrake. Posle oluje ponekad osetiš „svež“ miris – to je ozon koji nastaje od munja.",
+      "zanimljivost": "Ozonski omotač, 15–35 km iznad nas, upija opasne $UV$ zrake. Posle oluje ponekad osetiš „svež“ miris – to je ozon koji nastaje od munja.",
       "rec": "ozon"
     },
     {
@@ -643,11 +643,11 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Koji je element obeležen simbolom Na?",
+      "pitanje": "Koji je element obeležen simbolom $Na$?",
       "odgovori": [
-        "Natrijum",
-        "Azot (Nitrogen)",
-        "Neon (plemeniti gas)",
+        "Natrijum (metal)",
+        "Azot (gas)",
+        "Neon (gas)",
         "Nikl (metal)"
       ],
       "zanimljivost": "Na dolazi od latinskog „natrium“. Azot je N, neon Ne, a nikl Ni. Uličnu rasvetu narandžaste boje daju baš natrijumove lampe.",
@@ -667,11 +667,11 @@
       "pitanje": "Koja je hemijska formula kuhinjske soli?",
       "odgovori": [
         "NaCl",
-        "KCl",
+        "$KCl$",
         "NaOH",
         "CaCO₃"
       ],
-      "zanimljivost": "CaCO₃ je kreda (i krečnjak i ljuske jaja), NaOH je kaustična soda kojom se otpušavaju cevi, a KCl se koristi kao „so bez natrijuma“.",
+      "zanimljivost": "CaCO₃ je kreda (i krečnjak i ljuske jaja), NaOH je kaustična soda kojom se otpušavaju cevi, a $KCl$ se koristi kao „so bez natrijuma“.",
       "medijiOdgovora": {
         "vrsta": "molekul",
         "ime": "so"
@@ -720,7 +720,7 @@
       "odgovori": [
         "H",
         "V",
-        "Hd",
+        "$Hd$",
         "O"
       ],
       "zanimljivost": "H dolazi od latinskog „hydrogenium“ – „onaj koji stvara vodu“. Vodonik je prvi element periodnog sistema.",
@@ -736,8 +736,8 @@
       "odgovori": [
         "C",
         "U",
-        "Ca",
-        "Co"
+        "$Ca$",
+        "$Co$"
       ],
       "zanimljivost": "C dolazi od latinske reči „carbo“ – ugalj. Ca je kalcijum, a Co kobalt.",
       "medijiOdgovora": {
@@ -754,10 +754,10 @@
       "tezina": 1,
       "pitanje": "Koji je hemijski simbol srebra?",
       "odgovori": [
-        "Ag",
-        "Sr",
+        "$Ag$",
+        "$Sr$",
         "S",
-        "Si"
+        "$Si$"
       ],
       "zanimljivost": "Ag je od latinskog „argentum“. Država Argentina je dobila ime po srebru, jer su Španci verovali da tamo ima mnogo srebra.",
       "medijiOdgovora": {
@@ -774,7 +774,7 @@
         "H₂O",
         "HO₂",
         "H₂O₂",
-        "OH"
+        "$OH$"
       ],
       "zanimljivost": "Dva atoma vodonika i jedan kiseonika. H₂O₂ je vodonik-peroksid, sasvim druga supstanca – zato je važno pažljivo pisati formule!",
       "medijiOdgovora": {
@@ -1359,7 +1359,7 @@
       "tezina": 2,
       "pitanje": "Šta je ozonski omotač?",
       "odgovori": [
-        "Sloj atmosfere bogat ozonom (O₃) koji upija UV zračenje",
+        "Sloj atmosfere bogat ozonom (O₃) koji upija $UV$ zračenje",
         "Sloj oblaka koji zadržava toplotu i stvara kišu nad gradovima",
         "Sloj leda na vrhu atmosfere koji odbija sunčevu svetlost nazad",
         "Najniži sloj atmosfere u kome živimo i u kome nastaju oblaci"
@@ -1397,7 +1397,7 @@
         "Kiseonik",
         "Azot"
       ],
-      "zanimljivost": "CO se vezuje za hemoglobin mnogo jače od kiseonika i sprečava prenos kiseonika. Zato postoje detektori ugljen-monoksida, a peći se moraju redovno čistiti.",
+      "zanimljivost": "Ugljen-monoksid (CO) se vezuje za hemoglobin mnogo jače od kiseonika i sprečava prenos kiseonika. Zato postoje detektori ugljen-monoksida, a peći se moraju redovno čistiti.",
       "medijiOdgovora": {
         "vrsta": "molekul",
         "atomi": [
@@ -1590,9 +1590,9 @@
       "tezina": 3,
       "pitanje": "Koji je simbol olova?",
       "odgovori": [
-        "Pb",
-        "Ol",
-        "Pl",
+        "$Pb$",
+        "$Ol$",
+        "$Pl$",
         "O"
       ],
       "zanimljivost": "Pb je od latinskog „plumbum“. Odatle i engleska reč „plumber“ (vodoinstalater), jer su Rimljani pravili vodovodne cevi od olova – što je bilo štetno po zdravlje.",
@@ -1607,10 +1607,10 @@
       "tezina": 3,
       "pitanje": "Koji je simbol žive?",
       "odgovori": [
-        "Hg",
-        "Zv",
+        "$Hg$",
+        "$Zv$",
         "Ž",
-        "Ag"
+        "$Ag$"
       ],
       "zanimljivost": "Hg je od grčko-latinskog „hydrargyrum“ – tečno srebro. U astrologiji i alhemiji živa je povezivana sa bogom Merkurom, pa se na engleskom zove „mercury“.",
       "medijiOdgovora": {
@@ -1642,7 +1642,7 @@
       "odgovori": [
         "2H₂ + O₂ → 2H₂O",
         "H₂ + O₂ → H₂O",
-        "H + O → HO",
+        "$H + O → HO$",
         "2H + O₂ → H₂O"
       ],
       "zanimljivost": "Broj atoma svakog elementa mora biti isti sa obe strane – to je Lavoazjeov zakon održanja mase. Pre i posle reakcije: 4 atoma H i 2 atoma O.",
@@ -1657,7 +1657,7 @@
         "Jedan molekul vode koji ima dva atoma vodonika i kiseonik",
         "Vrsta kiseline"
       ],
-      "zanimljivost": "To je Avogadrov broj. Kada bi imao mol zrna peska, njima bi mogla da se pokrije cela Srbija u sloju debljine oko jednog kilometra!",
+      "zanimljivost": "To je Avogadrov broj. Kada bi imao mol zrna peska, njima bi mogla da se pokrije cela Srbija u sloju debljine nekoliko stotina metara!",
       "rec": "mol"
     },
     {
@@ -1868,7 +1868,7 @@
         "Rok trajanja proizvoda izražen u danima od dana proizvodnje",
         "Zemlja porekla proizvoda (slovo E znači Evropa)"
       ],
-      "zanimljivost": "E330 je limunska kiselina, a E300 vitamin C. Mnogi E-brojevi su sasvim prirodne materije, ali ih je dobro znati.",
+      "zanimljivost": "E330 je limunska kiselina, a E300 vitamin $C$. Mnogi E-brojevi su sasvim prirodne materije, ali ih je dobro znati.",
       "rec": "oznaka"
     },
     {
@@ -1899,7 +1899,7 @@
         "Zbog jake svetlosti koja izbeljuje i zatim zatamnjuje voće",
         "Zato što se brzo suši, pa voda isparava iz isečene površine"
       ],
-      "zanimljivost": "Enzimi jabuke, u dodiru sa kiseonikom, stvaraju braon materije. Ako je pokapaš limunovim sokom, sporije će tamneti – vitamin C usporava tu reakciju.",
+      "zanimljivost": "Enzimi jabuke, u dodiru sa kiseonikom, stvaraju braon materije. Ako je pokapaš limunovim sokom, sporije će tamneti – vitamin $C$ usporava tu reakciju.",
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/jabuka.jpg",

@@ -56,9 +56,10 @@
     {
       "tezina": 1,
       "pitanje": "Ko je 1492. godine, ploveći ka Indiji, stigao do Amerike?",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
-        "src": "slike/kolumbo.jpg"
+        "src": "slike/kolumbo.jpg",
+        "opis": "Kristifor Kolumbo"
       },
       "odgovori": [
         "Kristifor Kolumbo",
@@ -136,9 +137,10 @@
     {
       "tezina": 1,
       "pitanje": "Ko je bio prvi čovek u svemiru (1961)?",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
-        "src": "slike/gagarin.jpg"
+        "src": "slike/gagarin.jpg",
+        "opis": "Jurij Gagarin"
       },
       "odgovori": [
         "Jurij Gagarin",
@@ -284,9 +286,10 @@
     {
       "tezina": 2,
       "pitanje": "Kako se zove događaj iz 1789. kada je pariski narod zauzeo tvrđavu-zatvor?",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
-        "src": "slike/bastilja.jpg"
+        "src": "slike/bastilja.jpg",
+        "opis": "Bastilja u Parizu"
       },
       "odgovori": [
         "Pad Bastilje",
@@ -519,7 +522,7 @@
         "Prosvetiteljstvo",
         "Romantizam"
       ],
-      "zanimljivost": "Renesansa znači „preporod“, a počela je u Firenci. Leonardo da Vinči je bio pravi renesansni čovek: slikar, vajar, inženjer, anatom i pronalazač – nacrtao je padobran više od 300 godina pre nego što je neko zaista skočio padobranom.",
+      "zanimljivost": "Renesansa znači „preporod“, a počela je u Firenci. Leonardo da Vinči je bio pravi renesansni čovek: slikar, vajar, inženjer, anatom i pronalazač – nacrtao je padobran skoro 300 godina pre nego što je neko zaista skočio s njim.",
       "rec": "renesansa",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -559,9 +562,10 @@
     {
       "tezina": 2,
       "pitanje": "Kako se zvao brod kojim su engleski doseljenici 1620. stigli u Ameriku?",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
-        "src": "slike/mejflauer.jpg"
+        "src": "slike/mejflauer.jpg",
+        "opis": "Brod Mejflauer"
       },
       "odgovori": [
         "Mejflauer",
@@ -608,9 +612,10 @@
     {
       "tezina": 2,
       "pitanje": "Kako se zove dokument kojim je 1215. ograničena vlast engleskog kralja?",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
-        "src": "slike/magna-karta.jpg"
+        "src": "slike/magna-karta.jpg",
+        "opis": "Magna karta iz 1215."
       },
       "odgovori": [
         "Magna karta",
@@ -658,9 +663,10 @@
     {
       "tezina": 1,
       "pitanje": "Kako se zovu ogromne kamene statue na Uskršnjem ostrvu?",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
-        "src": "slike/moai.jpg"
+        "src": "slike/moai.jpg",
+        "opis": "Moai na Uskršnjem ostrvu"
       },
       "odgovori": [
         "Moai",
@@ -763,9 +769,10 @@
     {
       "tezina": 2,
       "pitanje": "Kako se zove glavna ulica u starom gradu Dubrovniku?",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
-        "src": "slike/stradun.jpg"
+        "src": "slike/stradun.jpg",
+        "opis": "Stradun u Dubrovniku"
       },
       "odgovori": [
         "Stradun",
@@ -778,7 +785,7 @@
     },
     {
       "tezina": 3,
-      "pitanje": "Koji naučnik iz Dubrovnika, rođen 1711, bio je jezuita, astronom i matematičar, a po njemu je nazvan i krater na Mesecu?",
+      "pitanje": "Koji naučnik iz Dubrovnika, rođen 1711, bio je jezuit, astronom i matematičar, a po njemu je nazvan i krater na Mesecu?",
       "odgovori": [
         "Ruđer Bošković",
         "Marin Držić",
@@ -872,7 +879,7 @@
         "Džore Držić"
       ],
       "tezina": 3,
-      "zanimljivost": "U „Dubravci“ je čuvena himna slobodi: „O lijepa, o draga, o slatka slobodo“. Njeni stihovi se svečano recituju na otvaranju Dubrovačkih letnjih igara.",
+      "zanimljivost": "U „Dubravci“ je čuvena himna slobodi: „O lijepa, o draga, o slatka slobodo“. Na Gundulićevoj poljani u Dubrovniku stoji njegov spomenik.",
       "rec": "sloboda",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -954,9 +961,10 @@
     {
       "tezina": 1,
       "pitanje": "Kako se zove drevni grad koji je zatrpan pepelom vulkana Vezuv 79. godine?",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
-        "src": "slike/pompeja.jpg"
+        "src": "slike/pompeja.jpg",
+        "opis": "Pompeja pod pepelom Vezuva"
       },
       "odgovori": [
         "Pompeja",
@@ -1182,7 +1190,7 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Koja bitka iz 1066. je odlučila da Normani osvoje Englesku?",
+      "pitanje": "Koja bitka iz 1066. je omogućila Normanima da osvoje Englesku?",
       "odgovori": [
         "Bitka kod Hejstingsa",
         "Bitka kod Vaterloa",
@@ -1723,9 +1731,10 @@
     {
       "tezina": 3,
       "pitanje": "Koja pomorska bitka 1571. je zaustavila prodor Osmanlija na Sredozemlju?",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
-        "src": "slike/lepanto.jpg"
+        "src": "slike/lepanto.jpg",
+        "opis": "Bitka kod Lepanta"
       },
       "odgovori": [
         "Bitka kod Lepanta",
@@ -1739,9 +1748,10 @@
     {
       "tezina": 3,
       "pitanje": "Koja bitka 1805. je donela Britaniji prevlast na moru, ali je u njoj poginuo admiral Nelson?",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
-        "src": "slike/trafalgar.jpg"
+        "src": "slike/trafalgar.jpg",
+        "opis": "Bitka kod Trafalgara"
       },
       "odgovori": [
         "Bitka kod Trafalgara",
@@ -2121,9 +2131,10 @@
     {
       "tezina": 1,
       "pitanje": "U kojoj bici je Napoleon konačno poražen 1815. godine?",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
-        "src": "slike/vaterlo.jpg"
+        "src": "slike/vaterlo.jpg",
+        "opis": "Bitka kod Vaterloa"
       },
       "odgovori": [
         "Kod Vaterloa",

@@ -3038,10 +3038,10 @@
      "t": "$0,1010$ je konačan decimalni broj – racionalan (${101|1000}$)."
     },
     {
-     "t": "$0,(10) = 0,101010…$ je periodičan, pa je racionalan: jednak je ${10|99}$. Između jedinica je redom $1, 2, 3, …$ nula – to je broj koji nije periodičan."
+     "t": "$0,(10) = 0,101010…$ je periodičan, pa je racionalan: jednak je ${10|99}$."
     },
     {
-     "t": "U broju $0,1010010001…$ nijedan niz cifara se ne ponavlja zauvek (nule se stalno produžavaju), pa zapis nije ni konačan ni periodičan – broj je iracionalan."
+     "t": "U broju $0,1010010001…$ između jedinica je redom $1, 2, 3, …$ nula, pa nijedan niz cifara se ne ponavlja zauvek (nule se stalno produžavaju), zato zapis nije ni konačan ni periodičan – broj je iracionalan."
     }
    ]
   },
@@ -3079,7 +3079,7 @@
    ],
    "resenje": [
     {
-     "t": "Gledamo treću decimalu: $3,14|159$ – ona je $1$."
+     "t": "Gledamo treću decimalu: u broju $3,14159$ to je cifra $1$."
     },
     {
      "t": "Pošto je $1 < 5$, druga decimala ostaje ista: $3,14159 ≈ 3,14$."
@@ -3442,7 +3442,7 @@
   {
    "lekcija": 6,
    "tezina": 3,
-   "pitanje": "Marko je $√{2}$ zaokružio na $1,4$, pa izračunao $1,4² · 100$. Koliko se njegov rezultat razlikuje od tačne vrednosti $(√{2})² · 100$?",
+   "pitanje": "Marko je $√{2}$ zaokružio na $1,4$, pa izračunao $1,4² · 100$. Za koliko se njegov rezultat razlikuje od tačne vrednosti $(√{2})² · 100$?",
    "odgovori": [
     "za $4$",
     "za $0$",
@@ -5019,7 +5019,7 @@
   {
    "lekcija": 9,
    "tezina": 2,
-   "pitanje": "Tri drugara uložila su $400$, $600$ i $1000$ dinara u zajedničku kupovinu, a zatim zaradila $3000$ dinara. Zaradu dele srazmerno ulozima. Koliko dobija onaj koji je uložio $600$ dinara?",
+   "pitanje": "Tri drugara uložili su $400$, $600$ i $1000$ dinara u zajedničku kupovinu, a zatim zaradili $3000$ dinara. Zaradu dele srazmerno ulozima. Koliko dobija onaj koji je uložio $600$ dinara?",
    "odgovori": [
     "$900$ dinara",
     "$1000$ dinara",
@@ -6015,7 +6015,7 @@
   {
    "lekcija": 10,
    "tezina": 2,
-   "pitanje": "Dva biciklista istovremeno krenu sa raskrsnice dva puta koji se seku pod pravim uglom: jedan vozi $16 km/h$, a drugi $12 km/h$. Koliko su udaljeni posle sat i po vožnje?",
+   "pitanje": "Dva biciklista istovremeno krenu sa raskrsnice dvaju puteva koji se seku pod pravim uglom: jedan vozi $16 km/h$, a drugi $12 km/h$. Koliko su udaljeni posle sat i po vožnje?",
    "odgovori": [
     "$30 km$",
     "$42 km$",
@@ -6092,7 +6092,7 @@
      ]
     },
     {
-     "t": "$d = √{900} = 30 km$. (Opet $3, 4, 5$ – ovog puta puta $6$.)",
+     "t": "$d = √{900} = 30 km$. (Opet trojka $3, 4, 5$, ovog puta uvećana $6$ puta.)",
      "i": [
       "d"
      ]
@@ -7123,7 +7123,7 @@
    ],
    "resenje": [
     {
-     "t": "Ukupno ima $12$ razmaka – zbir svih ponuđenih trojki jeste $12$, pa moramo da proverimo uglove."
+     "t": "Ukupno ima $12$ razmaka – zbir svake ponuđene trojke je $12$, pa moramo da proverimo uglove."
     },
     {
      "t": "Od $3, 3, 6$ trougao se ne može sastaviti ($3 + 3 = 6$). Od $4, 4, 4$ nastaje jednakostranični trougao (svi uglovi $60°$), a $2² + 5² = 29 ≠ 25$."
@@ -8891,7 +8891,7 @@
   {
    "lekcija": 13,
    "tezina": 3,
-   "pitanje": "Nad stranicom $AB$ jednakostraničnog trougla $ABC$ stranice $6 cm$ konstruisan je kvadrat $ABED$, sa druge strane od temena $C$. Kolika je površina trougla $DEC$?",
+   "pitanje": "Nad stranicom $AB$ jednakostraničnog trougla $ABC$ stranice $6 cm$ konstruisan je kvadrat $ABED$, sa strane suprotnoj temenu $C$. Kolika je površina trougla $DEC$?",
    "odgovori": [
     "$18 + 9√{3} cm²$",
     "$36 + 9√{3} cm²$",
@@ -11804,7 +11804,7 @@
    ],
    "resenje": [
     {
-     "t": "Stranica treba da bude $√{15}$. Zbir dva kvadrata ($1, 4, 9$) ne može dati $15$."
+     "t": "Stranica treba da bude $√{15}$. Zbir dva kvadrata prirodnih brojeva ne može dati $15$."
     },
     {
      "t": "Ali razlika može: $15 = 16 − 1 = 4² − 1²$. Tada je $√{15}$ kateta trougla sa hipotenuzom $4 cm$ i katetom $1 cm$. (Ostali trouglovi daju $√{21}$, $√{13}$ i $√{17}$.)"
@@ -11868,7 +11868,7 @@
   {
    "lekcija": 16,
    "tezina": 3,
-   "pitanje": "Nad katetama $1$ i $3$ konstruisan je pravougli trougao. Zatim je nad njegovom hipotenuzom i duži dužine $2$, kao katetama, konstruisan novi pravougli trougao. Kolika je hipotenuza novog trougla?",
+   "pitanje": "Nad katetama $1$ i $3$ konstruisan je pravougli trougao. Zatim je nad njegovom hipotenuzom kao jednom katetom i duži dužine $2$ kao drugom katetom konstruisan novi pravougli trougao. Kolika je hipotenuza novog trougla?",
    "odgovori": [
     "$√{14}$",
     "$√{12}$",
@@ -12701,7 +12701,7 @@
      ]
     },
     {
-     "t": "$AC = BC = √{20} = 2√{5} ≈ 4,47 ≠ 4$ – jednakokraki, ali ne jednakostranični. Nije ni pravougli: $20 + 20 = 40 ≠ 16$, a $16 + 20 ≠ 20$."
+     "t": "$AC = BC = √{20} = 2√{5} ≈ 4,47$, a $AB = 4$ – jednakokraki, ali ne jednakostranični. Nije ni pravougli: $16 + 20 = 36 ≠ 20$, a $20 + 20 = 40 ≠ 16$."
     }
    ]
   },
@@ -14295,7 +14295,7 @@
    ],
    "resenje": [
     {
-     "t": "U $3$ sata ima $180 : 20 = 9$ deljenja."
+     "t": "Za $3$ sata (to je $180$ minuta) bakterija se deli $180 : 20 = 9$ puta."
     },
     {
      "t": "Posle svakog deljenja broj bakterija se udvostruči: $1 → 2 → 4 → 8 → …$ Posle $n$ deljenja ima ih $2ⁿ$."
@@ -16671,7 +16671,7 @@
      "t": "$6 : 2 = 3$"
     },
     {
-     "t": "$10⁸ : 10^{−3} = 10^{8 − (−3)} = 10^{11}$ – deljenje negativnim izložiocem povećava izložilac."
+     "t": "$10⁸ : 10^{−3} = 10^{8 − (−3)} = 10^{11}$ – oduzimanje negativnog broja povećava izložilac."
     },
     {
      "t": "Rezultat: $3 · 10^{11}$."
@@ -16690,7 +16690,7 @@
    ],
    "resenje": [
     {
-     "t": "Vreme = put : brzina $= {3,84 · 10⁵|3 · 10⁵} s$."
+     "t": "Vreme je rastojanje podeljeno brzinom: $t = {3,84 · 10⁵|3 · 10⁵} s$."
     },
     {
      "t": "Stepeni $10⁵$ se skrate: $3,84 : 3 = 1,28$."
@@ -16961,7 +16961,7 @@
   {
    "lekcija": 21,
    "tezina": 2,
-   "pitanje": "Od šibica se slaže niz kvadrata u jednom redu (kao na slici). Koliko šibica treba za $20$ kvadrata?",
+   "pitanje": "Niz kvadrata u jednom redu slaže se od šibica (kao na slici). Koliko šibica treba za $20$ kvadrata?",
    "odgovori": [
     "$61$",
     "$80$",
@@ -17799,7 +17799,7 @@
      "t": "$x² + 5x + 3x + 15 = x² + 8x + 15$"
     },
     {
-     "t": "Na slici: pravougaonik sa stranicama $x + 3$ i $x + 5$ se deli na četiri dela – zato je greška $x² + 15$ (zaboravljena dva srednja dela)."
+     "t": "Na slici: pravougaonik sa stranicama $x + 3$ i $x + 5$ se deli na četiri dela. Greška $x² + 15$ nastaje kad se zaborave dva srednja dela."
     }
    ]
   },
@@ -17887,7 +17887,7 @@
      "t": "$2P − Q = 2x² + 6x − 2 − 2x² + x − 4$"
     },
     {
-     "t": "$= 7x − 6$ (kvadrati se ponište)."
+     "t": "$= 7x − 6$ (članovi sa $x²$ se poništavaju)."
     }
    ]
   },
@@ -20374,7 +20374,7 @@
   {
    "lekcija": 26,
    "tezina": 3,
-   "pitanje": "Zbir unutrašnjih uglova mnogougla je za $900°$ veći od zbira njegovih spoljašnjih uglova. Koliko mnogougao ima stranica?",
+   "pitanje": "Zbir unutrašnjih uglova mnogougla je za $900°$ veći od zbira njegovih spoljašnjih uglova. Koliko stranica ima mnogougao?",
    "odgovori": [
     "$9$",
     "$7$",
@@ -22223,7 +22223,7 @@
      "t": "Osmougao, dvanaestougao i šesnaestougao dobijaju se ponovljenim prepolovljavanjem centralnih uglova kvadrata ($90° → 45° → 22,5°$) ili šestougla ($60° → 30°$)."
     },
     {
-     "t": "Pravilni sedmougao se ne može konstruisati samo lenjirom i šestarom – to je dokazano u 19. veku (Gaus)."
+     "t": "Pravilni sedmougao se ne može konstruisati samo lenjirom i šestarom – to je dokazano u 19. veku."
     },
     {
      "t": "Gaus je, kao devetnaestogodišnjak, otkrio da se može konstruisati pravilni sedamnaestougao!"
@@ -23299,7 +23299,7 @@
      ]
     },
     {
-     "t": "Zato se i treća visina (na hipotenuzu) seče sa njima u temenu $C$: $H = C$.",
+     "t": "Zato i treća visina (na hipotenuzu) prolazi kroz teme $C$: $H = C$.",
      "i": [
       "hc"
      ]
@@ -24284,7 +24284,7 @@
      "t": "SSS, SUS i USU su stavovi podudarnosti."
     },
     {
-     "t": "Trouglovi sa istim uglovima mogu biti različite veličine (jedan je „uvećan“ drugi) – slični su, ali ne i podudarni.",
+     "t": "Trouglovi sa istim uglovima mogu biti različite veličine (jedan je „uvećan“ u odnosu na drugi) – slični su, ali ne i podudarni.",
      "i": [
       "mali",
       "vel"
@@ -24448,7 +24448,7 @@
      "t": "Uglovi na osnovici jednakokrakog trougla su jednaki: $∠BAB₁ = ∠ABA₁$."
     },
     {
-     "t": "Pravi uglovi kod $A₁$ i $B₁$ daju i $∠ABB₁ = ∠BAA₁ = 90° − α$. Stranica i dva nalegla ugla – USU, pa je $AA₁ = BB₁$.",
+     "t": "Pravi uglovi kod $A₁$ i $B₁$ daju i $∠ABB₁ = ∠BAA₁ = 90° − α$ (α je ugao na osnovici). Stranica i dva nalegla ugla – USU, pa je $AA₁ = BB₁$.",
      "i": [
       "t1",
       "t2"
@@ -24811,7 +24811,7 @@
      ]
     },
     {
-     "t": "Za $a < 3 cm$ ne bi bilo rešenja, a za $3 < a < 6$ bila bi dva."
+     "t": "Za $a < 3 cm$ ne bi bilo rešenja, a za $3 < a < 6$ bila bi dva rešenja."
     }
    ]
   },
@@ -25080,7 +25080,7 @@
      ]
     },
     {
-     "t": "$d = 5 > 3 = r$ – prava je dalje od centra nego bilo koja tačka kružnice, pa je ne dodiruje."
+     "t": "$d = 5 > 3 = r$ – prava je dalja od centra nego što je poluprečnik, pa nema zajedničkih tačaka sa krugom."
     },
     {
      "t": "Za $d = r$ prava bi bila tangenta, a za $d < r$ sečica."
@@ -26482,7 +26482,7 @@
    },
    "resenje": [
     {
-     "t": "Lukovi: $360°$ podelimo na $9$ delova po $40°$: $80°$, $120°$ i $160°$.",
+     "t": "Podelimo $360°$ na $9$ delova: jedan deo je $40°$, pa su lukovi $80°$, $120°$ i $160°$.",
      "i": [
       "l1",
       "l2",
@@ -27131,7 +27131,7 @@
   {
    "lekcija": 34,
    "tezina": 3,
-   "pitanje": "Uže je zategnuto oko Zemlje po ekvatoru. Zatim ga produžimo za $6,28 m$ i podignemo tako da je svuda jednako udaljeno od tla. Koliko je visoko iznad tla? (Uzmi $π ≈ 3,14$.)",
+   "pitanje": "Uže je zategnuto oko Zemlje po ekvatoru. Zatim ga produžimo za $6,28 m$ i podignemo tako da svuda bude jednako udaljeno od tla. Koliko je visoko iznad tla? (Uzmi $π ≈ 3,14$.)",
    "odgovori": [
     "oko $1 m$",
     "oko $1 mm$",
@@ -27982,7 +27982,7 @@
   {
    "lekcija": 35,
    "tezina": 3,
-   "pitanje": "Atletska staza ima dve prave deonice od po $80 m$ i dva polukruga. Unutrašnja ivica polukruga ima poluprečnik $30 m$. Koliko je duži krivi deo staze (dva polukruga) po liniji udaljenoj $1 m$ od unutrašnje ivice, nego po samoj unutrašnjoj ivici?",
+   "pitanje": "Atletska staza ima dve prave deonice od po $80 m$ i dva polukruga. Unutrašnja ivica polukruga ima poluprečnik $30 m$. Za koliko je duži krivi deo staze (dva polukruga) po liniji udaljenoj $1 m$ od unutrašnje ivice nego po samoj unutrašnjoj ivici?",
    "odgovori": [
     "$2π ≈ 6,28 m$",
     "$π ≈ 3,14 m$",
@@ -29116,7 +29116,7 @@
      ]
     },
     {
-     "t": "Odsečak = isečak − trougao $= 9π − 18 ≈ 10,3 cm²$.",
+     "t": "Odsečak je isečak minus trougao: $9π − 18 ≈ 10,3 cm²$.",
      "i": [
       "od"
      ]
@@ -29206,7 +29206,7 @@
    },
    "resenje": [
     {
-     "t": "Tetiva dodiruje manji krug u svom središtu $M$, pa je $OM = r$ i $OM ⊥ AB$, $MB = 5 cm$.",
+     "t": "Tetiva dodiruje manji krug u tački $M$, pa je $OM = r$ i $OM ⊥ AB$, $MB = 5 cm$.",
      "i": [
       "omb"
      ]
@@ -32091,7 +32091,7 @@
   {
    "lekcija": 40,
    "tezina": 2,
-   "pitanje": "Prosek četiri ocene je $4,5$. Kakav je prosek posle pete ocene, petice?",
+   "pitanje": "Prosek četiri ocene je $4,5$. Koliki je prosek posle pete ocene, petice?",
    "odgovori": [
     "$4,6$",
     "$4,75$",
@@ -32909,7 +32909,7 @@
    },
    "resenje": [
     {
-     "t": "Zbir ocena: $3 · 2 + 7 · 3 + 6 · 4 + 4 · 5 = 6 + 21 + 24 + 20 = 71$."
+     "t": "Zbir ocena (broj učenika · ocena): $3 · 2 + 7 · 3 + 6 · 4 + 4 · 5 = 6 + 21 + 24 + 20 = 71$."
     },
     {
      "t": "Prosek: $71 : 20 = 3,55$."
@@ -35116,13 +35116,13 @@
      "t": "Podataka ima $20$; medijana je srednja vrednost desetog i jedanaestog podatka po veličini."
     },
     {
-     "t": "Prvih $2$ su jedinice, sledećih $5$ dvojke (do $7.$), pa trojke od $8.$ do $15.$ mesta.",
+     "t": "Prva $2$ podatka su jedinice, sledećih $5$ su dvojke (do $7.$ mesta), a trojke su od $8.$ do $15.$ mesta.",
      "i": [
       "s2"
      ]
     },
     {
-     "t": "Deseti i jedanaesti podatak su trojke, pa je medijana $3$. (Greška $8$ je visina stuba, a ne podatak.)"
+     "t": "Deseti i jedanaesti podatak su trojke, pa je medijana $3$. (Greška je uzeti visinu stuba, $8$, kao podatak.)"
     }
    ]
   }

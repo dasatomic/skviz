@@ -6692,7 +6692,7 @@
   {
    "lekcija": 2,
    "tezina": 2,
-   "pitanje": "U skupu je $529$ učenika. Ako se poređaju u redove po $9$, koliko će biti punih redova i koliko će učenika ostati?",
+   "pitanje": "U školi je $529$ učenika. Ako se poređaju u redove po $9$, koliko će biti punih redova i koliko će učenika ostati?",
    "odgovori": [
     "$58$ redova, ostaje $7$",
     "$59$ redova, ostaje $2$",
@@ -24285,7 +24285,7 @@
      "t": "Trougao je određen izborom $3$ tačke od $5$."
     },
     {
-     "t": "Svaki izbor $3$ tačke od $5$ ostavlja $2$ tačke van trougla, a takvih parova ima $10$."
+     "t": "Trougao određuje izbor $3$ tačke od $5$. Takvih izbora ima $5 · 4 · 3 : (3 · 2 · 1) = 10$."
     },
     {
      "t": "Dakle trouglova ima $10$."
@@ -25128,7 +25128,7 @@
      "t": "Prava $c$ seče $a$, pa seče i paralelnu pravu $b$."
     },
     {
-     "t": "Pravi ugao sa $a$ „klizi“ duž $c$ do prave $b$ – i tamo je ugao prav: $c ⊥ b$.",
+     "t": "Ugao između $c$ i $b$ je saglasan sa pravim uglom između $c$ i $a$, pa je i on prav: $c ⊥ b$.",
      "i": [
       "u"
      ]
@@ -26140,7 +26140,7 @@
   {
    "lekcija": 11,
    "tezina": 3,
-   "pitanje": "Od komada platna dugog $1 632 cm$ odsecaju se jednaki komadi dok god je moguće. Koliki komadi daju najkraći ostatak?",
+   "pitanje": "Od komada platna dugog $1 632 cm$ odsecaju se jednaki komadi dok god je moguće. Koje dužine komada daju najkraći ostatak?",
    "odgovori": [
     "$4 cm$",
     "$7 cm$",
@@ -27144,7 +27144,7 @@
    },
    "resenje": [
     {
-     "t": "Obim = zbir sve četiri stranice: $3 + 2 + 3 + 2$."
+     "t": "Obim je zbir svih stranica: $3 + 2 + 3 + 2$."
     },
     {
      "t": "$O = 2 · (3 + 2) = 10 cm$."
@@ -27348,7 +27348,7 @@
   {
    "lekcija": 12,
    "tezina": 1,
-   "pitanje": "Duž dužine $2 cm 4 mm$ nadovežemo samu na sebe $5$ puta. Kolika je dobijena duž?",
+   "pitanje": "Duž dužine $2 cm 4 mm$ nadovežemo pet puta, jednu za drugom. Kolika je dobijena duž?",
    "odgovori": [
     "$12 cm$",
     "$12 cm 2 mm$",
@@ -29116,7 +29116,7 @@
    },
    "resenje": [
     {
-     "t": "Prečnik je dva poluprečnika – prolazi kroz centar, od kraja do kraja.",
+     "t": "Prečnik prolazi kroz centar i dug je dva poluprečnika.",
      "i": [
       "d"
      ]
@@ -34321,7 +34321,7 @@
      ]
     },
     {
-     "t": "…zatim sadržaoce broja $3$ i broja $5$. (Sadržaoci broja $7$ do $30$ su već precrtani.)",
+     "t": "…zatim sadržaoce broja $3$ i broja $5$. (Svi složeni brojevi do 30 već su precrtani, jer imaju prost činilac 2, 3 ili 5.)",
      "i": [
       "s3",
       "s5"
@@ -35688,7 +35688,7 @@
   {
    "lekcija": 18,
    "tezina": 1,
-   "pitanje": "Snežana je $91$ salvetu podelila drugaricama, svakoj jednako, više od $10$ salveta, a drugarica je bilo više od jedne. Koliko salveta je dobila svaka?",
+   "pitanje": "Snežana je $91$ salvetu podelila drugaricama, svakoj jednako, više od $10$ salveta, a bilo je više od jedne drugarice. Koliko salveta je dobila svaka?",
    "odgovori": [
     "$13$",
     "$7$",
@@ -45532,7 +45532,7 @@
      "t": "Gledamo koliko im fali do $1$: ${1|8}$, ${1|5}$, ${1|10}$, ${1|3}$."
     },
     {
-     "t": "Najmanje fali ${9|10}$ – samo ${1|10}$ (manji deo jer je celina podeljena na više delova).",
+     "t": "Najmanje mu fali do celog: ${1|10}$, pa je to najmanji deo (celina je podeljena na najviše delova).",
      "i": [
       "n"
      ]
@@ -48211,7 +48211,7 @@
      "t": "Svakom fali tačno jedan deo do celog: ${1|11}$, ${1|12}$, ${1|13}$, ${1|14}$."
     },
     {
-     "t": "Najmanje fali ${13|14}$ (jer je ${1|14}$ najmanji deo), pa je on najveći."
+     "t": "Najmanje fali do celog ${1|14}$, pa je ${13|14}$ najveći."
     }
    ]
   },
@@ -64102,7 +64102,7 @@
    ],
    "resenje": [
     {
-     "t": "Mala kazaljka za $1$ sat ($60$ min) pređe $30°$."
+     "t": "Mala kazaljka za $1$ sat (60 min) pređe $30°$."
     },
     {
      "t": "Za $1$ minut: $30° : 60 = 0,5° = 30'$."
@@ -67596,7 +67596,7 @@
   {
    "lekcija": 31,
    "tezina": 2,
-   "pitanje": "Prave $a ∥ b$ seče transverzala. Jedan od suprotnih uglova (sa iste strane transverzale, između pravih) je $70°$. Koliki je drugi?",
+   "pitanje": "Prave $a ∥ b$ seče transverzala. Jedan od unutrašnjih uglova sa iste strane transverzale je $70°$. Koliki je drugi?",
    "odgovori": [
     "$110°$",
     "$70°$",
@@ -67701,7 +67701,7 @@
      "t": "Drugi ugao je uporedan uglu koji je saglasan sa prvim."
     },
     {
-     "t": "Zato je zbir suprotnih uglova $180°$: $180° − 70° = 110°$.",
+     "t": "Zato je zbir ta dva unutrašnja ugla $180°$: $180° − 70° = 110°$.",
      "i": [
       "x"
      ]
@@ -81007,7 +81007,7 @@
      "t": "Brzina je količnik pređenog puta i vremena: $31,5 : 1,75$."
     },
     {
-     "t": "Proširimo sa $100$: $3 150 : 175 = 18$ km na sat."
+     "t": "Proširimo sa $100$: $3 150 : 175 = 18 km$ na sat."
     }
    ]
   },
@@ -81140,7 +81140,7 @@
      "t": "Množenje pre sabiranja: ${1|3} · {3|4} = {1|4}$."
     },
     {
-     "t": "${2|3} + {1|4} = {8|12} + {3|12} = {11|12}$. (Greška ${3|4}$: prvo sabrano.)"
+     "t": "${2|3} + {1|4} = {8|12} + {3|12} = {11|12}$. (Greška bi bila prvo sabrati: $({2|3} + {1|3}) · {3|4} = {3|4}$, a to nije tačno.)"
     }
    ]
   },
@@ -95202,7 +95202,7 @@
      "t": "Zbir: $4 + 5 + 3 + 5 + 4 = 21$."
     },
     {
-     "t": "Sredina: $21 : 5 = 4,2$ – „poravnati“ stubići.",
+     "t": "Sredina: $21 : 5 = 4,2$ – toliko bi svaki stubić bio kad bi se svi izjednačili.",
      "i": [
       "pr"
      ]

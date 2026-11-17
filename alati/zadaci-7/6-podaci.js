@@ -129,7 +129,7 @@ module.exports = ({ L, Z, K, G, r, proveri, stubici, kruzni }) => {
        K('Medijana je njihova srednja vrednost: ${4 + 8|2} = 6$.')]);
   }
 
-  Z(2, 'Prosek četiri ocene je $4,5$. Kakav je prosek posle pete ocene, petice?',
+  Z(2, 'Prosek četiri ocene je $4,5$. Koliki je prosek posle pete ocene, petice?',
     ['$4,6$', '$4,75$', '$5$', '$4,5$'],
     [K('Zbir prve četiri ocene: $4 · 4,5 = 18$.'),
      K('Sa peticom: $18 + 5 = 23$, a ocena je $5$.'),
@@ -164,7 +164,7 @@ module.exports = ({ L, Z, K, G, r, proveri, stubici, kruzni }) => {
     proveri(prosek(sve) === 3.55 && medijana(sve) === 3.5, 'ocene u odeljenju');
     Z(3, 'Dijagram prikazuje ocene $20$ učenika iz jednog kontrolnog. Kolika je prosečna ocena?',
       ['$3,55$', '$3,5$', '$3,75$', '$3$'],
-      [K('Zbir ocena: $3 · 2 + 7 · 3 + 6 · 4 + 4 · 5 = 6 + 21 + 24 + 20 = 71$.'),
+      [K('Zbir ocena (broj učenika · ocena): $3 · 2 + 7 · 3 + 6 · 4 + 4 · 5 = 6 + 21 + 24 + 20 = 71$.'),
        K('Prosek: $71 : 20 = 3,55$.'),
        K('Za poređenje: mod je $3$ (najviši stub), a medijana $3,5$ (deseta ocena po redu je $3$, a jedanaesta $4$).', ['s1'])],
       stubici(p, { korakY: 1, vrednosti: true }));
@@ -264,8 +264,8 @@ module.exports = ({ L, Z, K, G, r, proveri, stubici, kruzni }) => {
     Z(3, 'Dijagram prikazuje koliko dece ima u porodicama $20$ učenika (na primer, $5$ porodica ima po dvoje dece). Kolika je medijana broja dece?',
       ['$3$', '$8$', '$2,5$', '$4$'],
       [K('Podataka ima $20$; medijana je srednja vrednost desetog i jedanaestog podatka po veličini.'),
-       K('Prvih $2$ su jedinice, sledećih $5$ dvojke (do $7.$), pa trojke od $8.$ do $15.$ mesta.', ['s2']),
-       K('Deseti i jedanaesti podatak su trojke, pa je medijana $3$. (Greška $8$ je visina stuba, a ne podatak.)')],
+       K('Prva $2$ podatka su jedinice, sledećih $5$ su dvojke (do $7.$ mesta), a trojke su od $8.$ do $15.$ mesta.', ['s2']),
+       K('Deseti i jedanaesti podatak su trojke, pa je medijana $3$. (Greška je uzeti visinu stuba, $8$, kao podatak.)')],
       stubici(p, { korakY: 2, vrednosti: true }));
   }
 };
