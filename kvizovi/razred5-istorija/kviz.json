@@ -190,7 +190,7 @@
       "pitanje": "Šta proučava arheologija?",
       "odgovori": [
         "Materijalne ostatke prošlosti pronađene iskopavanjem",
-        "Samo pisane tekstove sačuvane u bibliotekama i manastirima",
+        "Pisane tekstove sačuvane u bibliotekama i manastirima",
         "Kretanje zvezda i planeta na nebu",
         "Jezike starih naroda i način na koji su se oni menjali kroz vreme"
       ],
@@ -208,9 +208,9 @@
       "pitanje": "Koje pomoćne nauke pomažu istoriji?",
       "odgovori": [
         "Arheologija, numizmatika, epigrafika, heraldika",
-        "Samo hemija i fizika, koje objašnjavaju sve pojave u prirodi",
-        "Samo astronomija, jer se vreme određuje po kretanju zvezda",
-        "Samo muzika, jer su se istorijske priče prenosile pesmom"
+        "Matematika, fizika, hemija, biologija",
+        "Botanika, zoologija, anatomija, fiziologija",
+        "Muzika, slikarstvo, književnost, pozorište"
       ],
       "zanimljivost": "Heraldika proučava grbove, a epigrafika natpise na kamenu i metalu.",
       "medijiOdgovora": {
@@ -226,9 +226,9 @@
       "pitanje": "Šta proučava epigrafika?",
       "odgovori": [
         "Natpise na tvrdom materijalu – kamenu, metalu",
-        "Grbove plemićkih porodica i gradova srednjovekovne Evrope",
-        "Stari novac, kovanice i medalje iz prošlosti, iz svih vekova",
-        "Pečate"
+        "Grbove plemićkih porodica i gradova",
+        "Stare kovanice i medalje iz prošlosti",
+        "Pečate plemićkih porodica i vladara"
       ],
       "zanimljivost": "Rimski natpisi u Srbiji, poput Trajanove table, važni su epigrafski izvori.",
       "medijiOdgovora": {
@@ -264,7 +264,7 @@
         "Da bismo razumeli sadašnjost i učili iz prošlosti",
         "Da bismo mogli da predvidimo vreme i prirodne nepogode",
         "Da bismo znali kako da merimo zemlju i delimo imanja",
-        "Da bismo naučili napamet što više godina"
+        "Da bismo lakše učili strane jezike"
       ],
       "zanimljivost": "Rimski govornik Ciceron rekao je da je istorija „učiteljica života“.",
       "medijiOdgovora": {
@@ -352,9 +352,9 @@
       "pitanje": "Šta je radiokarbonska metoda?",
       "odgovori": [
         "Određivanje starosti organskih ostataka merenjem ugljenika-14",
-        "Merenje dužine i težine predmeta pronađenih tokom arheoloških iskopavanja",
-        "Čitanje natpisa na kamenu pomoću posebnog radio-aparata i zvučnih talasa",
-        "Merenje temperature"
+        "Merenje dužine i težine predmeta pronađenih u zemlji",
+        "Čitanje natpisa na kamenu pomoću zvučnih talasa",
+        "Određivanje godine gradnje zgrade prema boji kamena"
       ],
       "zanimljivost": "Metodom se mogu datovati ostaci stari do oko 50.000 godina.",
       "medijiOdgovora": {
@@ -389,10 +389,10 @@
       "odgovori": [
         "Proveren podatak o važnom događaju iz prošlosti",
         "Priča koju je neko izmislio o davnim vremenima",
-        "Svaki događaj iz našeg života, kao prvo letovanje",
+        "Mišljenje savremenika o događaju, bez dokaza",
         "Predviđanje onoga što će se desiti u budućnosti"
       ],
-      "zanimljivost": "Istorijske činjenice su događaji važni za ljudsko društvo – npr. Prvi svetski rat ili Drugi srpski ustanak. Istoričar ih utvrđuje poređenjem više izvora.",
+      "zanimljivost": "Istoričari razlikuju činjenice od tumačenja: da li je bitka bila 1389. jeste činjenica, a zašto je bila važna – tumačenje.",
       "rec": "činjenica",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -404,7 +404,7 @@
       "lekcija": 1,
       "tezina": 2,
       "pitanje": "Šta je Herodot napisao o sebi u uvodu svog dela?",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/herodot.jpg",
         "opis": "Herodot"
@@ -425,8 +425,8 @@
       "odgovori": [
         "Pre nove ere",
         "Posle nove ere",
-        "Prvi narodni ep",
-        "Period neolitske ere"
+        "Pre pronalaska pisma",
+        "Posle pronalaska pisma"
       ],
       "zanimljivost": "Godine pre nove ere „teku unazad“: 500. p. n. e. je bila pre 400. p. n. e. Nulte godine nema – posle 1. p. n. e. ide 1. n. e.",
       "medijiOdgovora": {
@@ -589,9 +589,9 @@
       "pitanje": "Šta znači „n. e.“?",
       "odgovori": [
         "Nove ere – posle rođenja Hrista",
-        "Naše epohe – pre Hrista",
-        "Nema ere",
-        "Novo doba"
+        "Pre nove ere – pre rođenja Hrista",
+        "Nove ere – pre rođenja Hrista",
+        "Srednje doba – posle rođenja Hrista"
       ],
       "zanimljivost": "Nulte godine nema – posle 1. godine pre nove ere dolazi 1. godina nove ere.",
       "medijiOdgovora": {
@@ -705,11 +705,11 @@
       "pitanje": "Koja su četiri velika perioda istorije?",
       "odgovori": [
         "Stari vek, srednji vek, novi vek, savremeno doba",
-        "Kameno, bronzano, gvozdeno i zlatno doba",
-        "Proleće, leto, jesen, zima",
+        "Antičko, bizantijsko, osmansko i moderno doba",
+        "Rimsko, grčko, egipatsko i persijsko doba",
         "Prošlost, sadašnjost, budućnost"
       ],
-      "zanimljivost": "Praistorija prethodi pisanoj istoriji.",
+      "zanimljivost": "Praistorija traje mnogo duže od istorije – pisani izvori postoje tek poslednjih nekoliko hiljada godina.",
       "medijiOdgovora": {
         "vrsta": "lenta",
         "od": -3500,
@@ -766,7 +766,7 @@
       "lekcija": 2,
       "tezina": 2,
       "pitanje": "Kojim događajem se završava stari vek?",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "lenta",
         "od": -800,
         "do": 1600,
@@ -821,7 +821,7 @@
       "pitanje": "Koji rimski državnik je uveo kalendar sa prestupnom godinom na svake četiri godine?",
       "odgovori": [
         "Julije Cezar",
-        "Avgust",
+        "Trajan",
         "Neron",
         "Konstantin"
       ],
@@ -891,12 +891,12 @@
     {
       "lekcija": 2,
       "tezina": 2,
-      "pitanje": "Ko je sastavio kalendar od 365 dana posmatrajući Sunce i Nil?",
+      "pitanje": "Koji narod je prvi koristio kalendar od 365 dana, vezan za poplave Nila?",
       "odgovori": [
         "Stari Egipćani",
-        "Rimljani pod Cezarom",
-        "Grci iz Aleksandrije",
-        "Vikinzi sa severa Evrope"
+        "Sumerani u Mesopotamiji",
+        "Stari Kinezi",
+        "Stari Grci u Atini"
       ],
       "zanimljivost": "Egipatska godina imala je 12 meseci po 30 dana i još 5 dodatnih dana.",
       "medijiOdgovora": {
@@ -989,7 +989,7 @@
       "lekcija": 2,
       "tezina": 1,
       "pitanje": "Kako se zove vremenska linija na kojoj se ređaju događaji?",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "lenta",
         "od": 1800,
         "do": 1950,
@@ -1023,9 +1023,9 @@
       "pitanje": "Šta su istorijski izvori?",
       "odgovori": [
         "Sve što svedoči o prošlosti – predmeti, spisi, građevine",
-        "Samo udžbenici istorije koje su napisali naučnici u naše vreme",
-        "Samo filmovi",
-        "Samo pesme"
+        "Udžbenici istorije koje su napisali savremeni pisci",
+        "Filmovi i serije snimljeni o davnim vremenima",
+        "Izmišljene priče i legende bez ikakvih ostataka"
       ],
       "zanimljivost": "Izvori mogu biti pisani (povelje, pisma) i materijalni (oruđe, novac, ruševine). Narodne pesme su usmeni izvori.",
       "medijiOdgovora": {
@@ -1059,9 +1059,9 @@
       "pitanje": "Šta su materijalni istorijski izvori?",
       "odgovori": [
         "Predmeti iz prošlosti – oruđa, posuđe, građevine, novac",
-        "Narodne pesme i priče koje su se prenosile usmeno sa kolena",
-        "Pisma i povelje vladara koje su pisari zapisali na pergamentu",
-        "Knjige"
+        "Narodne pesme i priče koje su se prenosile usmeno",
+        "Pisma i povelje vladara zapisane na pergamentu",
+        "Hronike i zapisi pisani na papirusu"
       ],
       "zanimljivost": "Materijalni izvori često „govore“ o ljudima koji nisu ostavili pisane tragove.",
       "medijiOdgovora": {
@@ -1077,9 +1077,9 @@
       "pitanje": "Šta su pisani istorijski izvori?",
       "odgovori": [
         "Tekstovi iz prošlosti – zapisi, povelje, hronike, pisma",
-        "Oruđa i oružje od kamena i metala nađena u zemlji na iskopavanju",
-        "Kosti ljudi i životinja iz praistorijskih naselja i pećina Evrope",
-        "Građevine"
+        "Oruđa i oružje od kamena i metala nađena u zemlji",
+        "Kosti ljudi i životinja iz praistorijskih naselja",
+        "Građevine i ruševine starih gradova i hramova"
       ],
       "zanimljivost": "Najstariji pisani izvori su glinene pločice iz Mesopotamije.",
       "medijiOdgovora": {
@@ -1113,9 +1113,9 @@
       "pitanje": "Šta je Rozetski kamen?",
       "odgovori": [
         "Ploča sa istim tekstom na tri pisma koja je omogućila odgonetanje hijeroglifa",
-        "Egipatska piramida od crnog kamena u gradu Rozeti, blizu samog ušća reke Nil u more",
-        "Grčki hram od sivog kamena u kome je pronađen tekst napisan na tri različita pisma",
-        "Rimski novac od kamena sa likom cara, kojim se plaćalo u egipatskim gradovima na Nilu"
+        "Egipatska piramida od crnog kamena u gradu Rozeti, blizu ušća Nila",
+        "Grčki hram od sivog kamena u kome su pronađeni kipovi bogova",
+        "Rimski novac od kamena sa likom cara, kojim se plaćalo u egipatskim gradovima"
       ],
       "zanimljivost": "Hijeroglife je 1822. odgonetnuo Žan-Fransoa Šampolion.",
       "rec": "rozeta",
@@ -1131,9 +1131,9 @@
       "pitanje": "Šta je povelja?",
       "odgovori": [
         "Pisani dokument kojim vladar daje prava ili poklone",
-        "Vrsta oružja koje su nosili plemići i vitezovi u boju",
+        "Vrsta oružja koje su nosili plemići i vitezovi",
         "Vrsta svečane odeće koju je vladar nosio na krunisanju",
-        "Novčić"
+        "Kameni stub na kome se upisuje ime vladara"
       ],
       "zanimljivost": "Hilandarska povelja Stefana Nemanje jedna je od najstarijih srpskih povelja.",
       "medijiOdgovora": {
@@ -1146,14 +1146,14 @@
     {
       "lekcija": 3,
       "tezina": 1,
-      "pitanje": "Kakav je izvor Miroslavljevo jevanđelje?",
+      "pitanje": "Iz kog veka potiče Miroslavljevo jevanđelje?",
       "odgovori": [
-        "Pisani izvor",
-        "Materijalni izvor",
-        "Usmeni izvor",
-        "Nije izvor"
+        "12. veka",
+        "11. veka",
+        "13. veka",
+        "14. veka"
       ],
-      "zanimljivost": "Miroslavljevo jevanđelje iz 12. veka upisano je u UNESKO-ov registar „Pamćenje sveta“.",
+      "zanimljivost": "Miroslavljevo jevanđelje nastalo je oko 1180. za Miroslava, brata Stefana Nemanje, a UNESCO ga je 2005. upisao u registar „Pamćenje sveta“.",
       "rec": "jevanđelje",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -1169,7 +1169,7 @@
         "Izvori nastali u vreme događaja ili od njegovih učesnika",
         "Knjige koje su istoričari napisali danas na osnovu starijih knjiga",
         "Igrani filmovi i serije o prošlosti snimljeni u poslednjih pedeset godina",
-        "Udžbenici"
+        "Udžbenici i enciklopedije istorije"
       ],
       "zanimljivost": "Udžbenik istorije nije primarni izvor – on je nastao na osnovu izvora.",
       "medijiOdgovora": {
@@ -1185,9 +1185,9 @@
       "pitanje": "Zašto istoričari porede više izvora o istom događaju?",
       "odgovori": [
         "Izvori mogu biti pristrasni ili netačni",
-        "Da bi njihove knjige bile što deblje",
-        "Zato što su izvori skupi, pa ih treba što više iskoristiti",
-        "Nije potrebno – dovoljan je jedan izvor ako je dovoljno star"
+        "Da bi se utvrdilo koji je pisac bio najpoznatiji",
+        "Zato što stariji izvori uvek sadrže više podataka",
+        "Da bi se što više stranica popunilo tekstom"
       ],
       "zanimljivost": "Pobednici su često pisali istoriju na svoj način.",
       "medijiOdgovora": {
@@ -1202,8 +1202,8 @@
       "pitanje": "Šta je zapis despota Stefana na Mramornom stubu?",
       "odgovori": [
         "Natpis o Kosovskom boju na mestu bitke",
-        "Grob kralja Milutina u manastiru Banjska kod Zvečana",
-        "Hram",
+        "Natpis o Maričkoj bici na mestu pobede",
+        "Spisak vladara koji su vladali Srbijom",
         "Povelja kojom je despot darovao zemlju manastiru Manasija"
       ],
       "zanimljivost": "Despot Stefan Lazarević podigao je stub na Kosovu polju u spomen na oca, kneza Lazara.",
@@ -1248,12 +1248,12 @@
     {
       "lekcija": 3,
       "tezina": 2,
-      "pitanje": "Kakav je izvor fotografija?",
+      "pitanje": "Kako se zovu istorijski izvori koji su slike, crteži i fotografije?",
       "odgovori": [
-        "Slikovni (vizuelni) izvor",
-        "Usmeni izvor",
-        "Materijalni izvor iz kamenog doba",
-        "Nije izvor"
+        "Slikovni (vizuelni) izvori",
+        "Usmeni izvori",
+        "Pisani izvori – spisi, pisma i povelje",
+        "Izvori iz kamenog doba"
       ],
       "zanimljivost": "Prve fotografije u Srbiji snimio je Anastas Jovanović sredinom 19. veka.",
       "medijiOdgovora": {
@@ -1271,7 +1271,7 @@
         "Zapis događaja po hronološkom redu",
         "Narodna pesma o junacima i bitkama",
         "Mermerna statua cara na gradskom trgu",
-        "Novac"
+        "Spisak zakona koji su važili u gradu"
       ],
       "zanimljivost": "Monasi su u srednjem veku pisali letopise – godinu po godinu.",
       "medijiOdgovora": {
@@ -1285,7 +1285,7 @@
       "lekcija": 4,
       "tezina": 1,
       "pitanje": "Kako se zove najduži period ljudske prošlosti, od pojave prvih ljudi do nastanka pisma?",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/lasko.jpg",
         "opis": "Pećinski crtež iz Laska"
@@ -1369,7 +1369,7 @@
       },
       "odgovori": [
         "Horda",
-        "Pleme",
+        "Ceh",
         "Polis",
         "Kasta"
       ],
@@ -1431,8 +1431,8 @@
       "odgovori": [
         "U pećinama i šatorima od kože i kostiju",
         "U kućama od pečene cigle sa krovovima od crepa",
-        "U zamkovima",
-        "U gradovima"
+        "U zamkovima i tvrđavama na brdima",
+        "U gradovima sa zidinama i kulama"
       ],
       "zanimljivost": "Neke kolibe su pravljene i od kostiju mamuta.",
       "medijiOdgovora": {
@@ -1467,7 +1467,7 @@
         "Savremeni čovek – „razuman čovek“",
         "Prvi majmun koji je sišao sa drveta",
         "Neandertalac koji je živeo u ledenom dobu",
-        "Vrsta dinosaurusa koja je hodala na dve noge"
+        "Vrsta majmuna koja danas živi samo u džunglama"
       ],
       "zanimljivost": "Homo sapiens se pojavio u Africi pre oko 300.000 godina.",
       "medijiOdgovora": {
@@ -1490,7 +1490,7 @@
       "odgovori": [
         "Period kada su lednici prekrivali velike delove Zemlje",
         "Doba kada Sunce nije grejalo Zemlju zbog oblaka od vulkana",
-        "Svaka hladna zima u praistoriji, kada su ljudi bežali u pećine",
+        "Vreme kada su ljudi naučili da prave odeću od krzna",
         "Doba dinosaurusa, pre nego što je velika kometa udarila u Zemlju"
       ],
       "zanimljivost": "U ledenom dobu ljudi su lovili mamute i vunaste nosoroge.",
@@ -1504,12 +1504,12 @@
     {
       "lekcija": 4,
       "tezina": 3,
-      "pitanje": "Koje se nalazište u Srbiji vezuje za najstarije ostatke ljudi na Balkanu?",
+      "pitanje": "Gde je u Srbiji nađena vilica jednog od najstarijih ljudskih predaka u Evropi?",
       "odgovori": [
         "Pećina Mala Balanica kod Niške Banje",
         "Lepenski Vir na obali Dunava u Đerdapu",
         "Vinča, naselje na Dunavu kod Beograda",
-        "Starčevo"
+        "Pećina Resava kod Despotovca"
       ],
       "zanimljivost": "Vilica iz Male Balanice stara je oko 400.000–500.000 godina.",
       "medijiOdgovora": {
@@ -1533,7 +1533,7 @@
         "Od kamena, kostiju i drveta",
         "Od gvožđa iskopanog u rudnicima",
         "Od bronze, legure bakra i kalaja",
-        "Od plastike"
+        "Od pečene gline i keramike"
       ],
       "zanimljivost": "Kremen se lako lomi u oštre ivice – bio je najomiljeniji kamen za oruđe.",
       "medijiOdgovora": {
@@ -1546,19 +1546,19 @@
     {
       "lekcija": 4,
       "tezina": 2,
-      "pitanje": "Šta je horda?",
+      "pitanje": "Kako su praistorijski ljudi čuvali meso za duže vreme?",
       "odgovori": [
-        "Mala grupa ljudi koja je zajedno lovila i živela",
-        "Veliki grad sa zidinama, palatom i hramom u samoj sredini",
-        "Država sa kraljem, zakonima, porezima i stalnom vojskom",
-        "Vojska"
+        "Sušenjem na suncu i dimljenjem",
+        "Zamrzavanjem u hladnjaku",
+        "Pakovanjem u plastičnu foliju",
+        "Čuvanjem u limenim kutijama"
       ],
-      "zanimljivost": "Horde su verovatno brojale 20–30 članova.",
+      "zanimljivost": "Dim je štitio meso od truljenja i insekata – zato se i danas koristi dimljeno meso.",
       "medijiOdgovora": {
         "vrsta": "emodzi",
-        "tekst": "👨‍👩‍👧‍👦 🏹 🦣"
+        "tekst": "🥩 ☀️ 🔥"
       },
-      "rec": "horda"
+      "rec": "sušenje"
     },
     {
       "lekcija": 4,
@@ -1567,8 +1567,8 @@
       "odgovori": [
         "Srodnici savremenog čoveka koji su izumrli pre oko 40.000 godina",
         "Prvi zemljoradnici koji su gradili sela od blata u dolini reke Nil",
-        "Stari Grci koji su živeli u pećinama pre nego što su sagradili gradove",
-        "Pećinske životinje, slične medvedima, koje su lovili praistorijski ljudi"
+        "Narod koji je živeo u Mesopotamiji pre prvih gradova",
+        "Vrsta majmuna koja je živela u pećinama Afrike"
       ],
       "zanimljivost": "Ime su dobili po dolini Neander u Nemačkoj, gde su prvi put nađeni njihovi ostaci.",
       "rec": "neandertal",
@@ -1586,7 +1586,7 @@
         "Trljanjem drveta ili udaranjem kremena o kamen",
         "Šibicama koje su pravili od smole i sumpora iz vulkana",
         "Udarom groma u drvo, koje su potom čuvali godinama u pećini",
-        "Uvek Sunčevim zracima, koje su skupljali kroz providno kamenje"
+        "Sakupljanjem lave iz vulkana u posude"
       ],
       "zanimljivost": "Najstariji tragovi korišćenja vatre stari su oko milion godina.",
       "medijiOdgovora": {
@@ -1650,9 +1650,9 @@
       "pitanje": "Šta je „neolitska revolucija“?",
       "odgovori": [
         "Prelazak na zemljoradnju, stočarstvo i stalna naselja",
-        "Rat",
         "Otkriće vatre i prvi pokušaji kuvanja hrane na otvorenom ognjištu",
-        "Pronalazak pisma"
+        "Pronalazak pisma",
+        "Seobe naroda sa severa na jug Evrope"
       ],
       "zanimljivost": "Prve žitarice gajene su na Bliskom istoku pre oko 11.000 godina.",
       "medijiOdgovora": {
@@ -1680,9 +1680,9 @@
       "pitanje": "Koje su prve pripitomljene životinje?",
       "odgovori": [
         "Pas, ovca, koza, svinja i govedo",
-        "Lav i tigar, koje su čuvali u kavezima kraj kuća",
-        "Konj i kamila",
-        "Samo mačka"
+        "Medved i jelen, koje su čuvali kraj kuća",
+        "Konj, magarac i mazga",
+        "Samo kokoška i guska"
       ],
       "zanimljivost": "Pas je verovatno pripitomljen još pre zemljoradnje – bio je saputnik lovaca.",
       "medijiOdgovora": {
@@ -1769,7 +1769,7 @@
         "Rude gvožđa ima mnogo više, pa je oružje i oruđe bilo dostupnije",
         "Gvožđe je lepše od bronze, pa su ga plemići nosili kao skupoceni nakit",
         "Gvožđe je mekše od bronze, pa se lakše oblikovalo i bez zagrevanja u vatri",
-        "Bronza je bila zabranjena zakonom, jer se od nje pravio novac i kovanice"
+        "Bronza je brzo rđala i nije mogla da se popravi"
       ],
       "zanimljivost": "Hetiti iz Male Azije među prvima su masovno koristili gvožđe.",
       "medijiOdgovora": {
@@ -1786,7 +1786,7 @@
       "odgovori": [
         "Zemljoradnja",
         "Lov",
-        "Samo ribolov",
+        "Nomadski život sa stadima",
         "Trgovina"
       ],
       "zanimljivost": "Stalna naselja dovela su do brzog rasta broja ljudi.",
@@ -1800,14 +1800,14 @@
     {
       "lekcija": 5,
       "tezina": 2,
-      "pitanje": "Šta je točak i kada je izmišljen?",
+      "pitanje": "Koji pronalazak je omogućio kola i lakši prevoz tereta?",
       "odgovori": [
-        "Jedan od najvažnijih pronalazaka, star oko 5.500 godina",
-        "Pronalazak 19. veka",
-        "Pronalazak Rimljana koji su ga koristili za bojna kola i trgovinu",
-        "Kameno oruđe"
+        "Točak",
+        "Plug",
+        "Luk i strela",
+        "Kamena sekira"
       ],
-      "zanimljivost": "Prvi točkovi verovatno su korišćeni za grnčarski kotur, pa tek onda za kola.",
+      "zanimljivost": "Isti princip, osovina koja se okreće, služi i grnčarskom kotur i kolima – ali se prvi točkovi verovatno koristili za grnčarstvo.",
       "rec": "točak",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -1826,7 +1826,7 @@
         "Grob egipatskog faraona u Dolini kraljeva"
       ],
       "zanimljivost": "Najpoznatiji megalit je Stounhendž u Engleskoj.",
-      "rec": "stounhendž",
+      "rec": "megalit",
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "/kvizovi/umetnost/slike/stonhendz.jpg",
@@ -1857,9 +1857,9 @@
       "pitanje": "Kako su ljudi u neolitu gradili kuće?",
       "odgovori": [
         "Od pruća, blata i drveta",
-        "Od betona i cigle pečene u peći",
-        "Od stakla i mermera sa obala mora",
-        "Od čelika"
+        "Od cigle pečene u peći i crepa",
+        "Od betona i čelika",
+        "Od mermera i opeke iz kamenoloma"
       ],
       "zanimljivost": "Kuće su često bile zbijene jedna uz drugu, a ulazilo se i kroz krov.",
       "medijiOdgovora": {
@@ -1876,8 +1876,8 @@
       "odgovori": [
         "Zemljani nasipi iznad praistorijskih grobova",
         "Brda nastala od vulkanske lave u praistorijsko doba",
-        "Mravinjaci",
-        "Kule"
+        "Ostaci starih zidina i utvrđenja na brdima",
+        "Kameni stubovi postavljeni uz put do hrama"
       ],
       "zanimljivost": "U Srbiji i danas postoje stotine praistorijskih humki, naročito u Vojvodini.",
       "rec": "humka",
@@ -1895,7 +1895,7 @@
         "Vinčanska kultura",
         "Lepenski Vir",
         "Starčevačka kultura",
-        "Kelti"
+        "Vučedolska kultura"
       ],
       "zanimljivost": "Vinčansko nalazište je udaljeno samo oko 14 km od centra Beograda. Na nekim posudama pronađeni su znaci koje neki smatraju ranim oblikom pisma.",
       "rec": "vinča",
@@ -1909,7 +1909,7 @@
       "lekcija": 6,
       "tezina": 2,
       "pitanje": "Koje praistorijsko naselje u Đerdapu je poznato po kamenim skulpturama ribolikih bića?",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/lepenski-vir.jpg"
       },
@@ -1932,7 +1932,7 @@
         "Kuće su stajale na stubovima usred jezera",
         "Ljudi su živeli u pećinama i šatorima od kože"
       ],
-      "zanimljivost": "Vinčanske kuće imale su zidove od pruća oblepljenog glinom, a neke su imale više prostorija, peći i ostave za žito. Zato se vinčanska kultura smatra jednom od najnaprednijih u tadašnjoj Evropi.",
+      "zanimljivost": "Neke vinčanske kuće imale su više prostorija, peći i ostave za žito – to su ljudi gradili pre nekih pisanih zakona.",
       "rec": "ulica",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -1947,8 +1947,8 @@
       "odgovori": [
         "Jedan od najstarijih rudnika bakra u Evropi, kod Majdanpeka",
         "Pećina sa praistorijskim crtežima životinja kod Zaječara i Bora",
-        "Grad iz bronzanog doba sa zidinama i kulama na obali reke Dunava",
-        "Planina u Grčkoj"
+        "Grad iz bronzanog doba sa zidinama i kulama na obali Dunava",
+        "Tvrđava iz rimskog doba na Dunavu kod Smedereva"
       ],
       "zanimljivost": "Rudarenje bakra na Rudnoj glavi počelo je pre oko 7.000 godina.",
       "medijiOdgovora": {
@@ -2017,9 +2017,9 @@
       "pitanje": "Šta je Vučedolska golubica?",
       "odgovori": [
         "Glinena posuda u obliku ptice iz bakarnog doba, nađena kod Vukovara",
-        "Rimska bronzana kaciga sa perjem, nađena u reci Dunav kod samog Beograda",
-        "Freska sa prizorom lova na zidu praistorijske pećine u Španiji i Francuskoj",
-        "Zlatni novac grčkog kralja nađen u grobu jedne kraljice kod grada Vukovara"
+        "Rimska bronzana kaciga sa perjem, nađena u Dunavu kod Beograda",
+        "Freska sa prizorom lova na zidu praistorijske pećine u Španiji",
+        "Zlatni novac grčkog kralja nađen u grobu jedne kraljice u Egiptu"
       ],
       "zanimljivost": "Vučedolska kultura je bila razvijena i u Sremu.",
       "rec": "golubica",
@@ -2074,11 +2074,11 @@
       "pitanje": "Zašto je Lepenski Vir premešten?",
       "odgovori": [
         "Zbog podizanja nivoa Dunava posle izgradnje hidroelektrane Đerdap",
-        "Zbog rata, da ga ne bi uništile vojske u borbama",
+        "Zbog poplave Save, koja je potopila naselje",
         "Zbog zemljotresa koji je oštetio naselje i stene",
         "Nije premešten – i danas je na istom mestu kao pre više od 9.000 godina"
       ],
-      "zanimljivost": "Ostaci naselja premešteni su oko 30 m više uz obalu.",
+      "zanimljivost": "Arheolozi su pažljivo isekli podove kuća i ponovo ih složili na višem terenu uz obalu.",
       "rec": "đerdap",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -2118,7 +2118,7 @@
         "Lovci i sakupljači, kasnije zemljoradnici",
         "Robovlasnici sa velikim imanjima i dvorcima",
         "Trgovci iz Rima koji su prodavali vino i ulje",
-        "Vitezovi"
+        "Plemići koji su gradili utvrđena sela"
       ],
       "zanimljivost": "Teritorija Srbije je zbog Dunava i Morave oduvek bila „raskrsnica“ naroda.",
       "medijiOdgovora": {
@@ -2151,7 +2151,7 @@
       "tezina": 3,
       "pitanje": "Šta je Gomolava, nalazište na obali Save u Sremu?",
       "odgovori": [
-        "Praistorijsko naselje sa slojevima iz više hiljada godina",
+        "Naselje sa slojevima od mlađeg kamenog doba do srednjeg veka",
         "Rimski vojni logor sa amfiteatrom",
         "Srednjovekovna tvrđava despota Đurđa",
         "Pećina sa crtežima iz ledenog doba"
@@ -2179,8 +2179,8 @@
       "pitanje": "Koji narod je, prema većini istoričara, osnovao naselje Singidunum na mestu današnjeg Beograda?",
       "odgovori": [
         "Kelti",
-        "Rimljani",
-        "Iliri",
+        "Sloveni",
+        "Franci",
         "Stari Grci"
       ],
       "zanimljivost": "Keltsko pleme Skordisci stiglo je na ušće Save u Dunav u 3. veku pre nove ere. Rimljani su kasnije zauzeli njihovo naselje i zadržali keltsko ime Singidunum.",
@@ -2247,9 +2247,9 @@
       },
       "odgovori": [
         "Reke su donosile vodu i plodno zemljište za poljoprivredu",
-        "Zato što su ljudi voleli da plivaju i pecaju u rekama svaki dan",
-        "Zbog zaštite od Sunca",
-        "Slučajno"
+        "Zato što su ljudi voleli da plivaju i pecaju u rekama",
+        "Zbog bezbednosti od velikih planina i šuma",
+        "Zato što reke nikad nisu poplavljivale"
       ],
       "zanimljivost": "Nil, Tigar i Eufrat, Ind i Žuta reka bile su kolevke civilizacija. Poplave su ostavljale plodan mulj na njivama.",
       "rec": "reka"
@@ -2281,7 +2281,7 @@
           "Sumer"
         ]
       ],
-      "zanimljivost": "Sumerani su oko 3200. pre n. e. počeli da pišu klinastim znacima na glinenim pločicama – to je jedno od najstarijih pisama na svetu.",
+      "zanimljivost": "Sumerani su oko 3500. p. n. e. počeli da pišu klinastim znacima na glinenim pločicama – to je jedno od najstarijih pisama na svetu.",
       "medijiOdgovora": {
         "vrsta": "mapa",
         "oblast": "evropa",
@@ -2329,10 +2329,10 @@
         "U Mesopotamiji, između Tigra i Eufrata",
         "U Evropi, na obalama toplog Sredozemnog mora",
         "U Americi, u plodnoj dolini velike reke Misisipi",
-        "U Australiji"
+        "Na ostrvu Krit, u kraljevskim dvorcima"
       ],
       "zanimljivost": "Mesopotamija na grčkom znači „zemlja između reka“.",
-      "rec": "sumeri",
+      "rec": "tigar",
       "medijiOdgovora": {
         "vrsta": "mapa",
         "oblast": "bliski-istok",
@@ -2443,7 +2443,7 @@
       "pitanje": "Koja reka je kolevka indijske civilizacije?",
       "odgovori": [
         "Ind",
-        "Ganges",
+        "Volga",
         "Jangce",
         "Nil"
       ],
@@ -2491,9 +2491,9 @@
       "pitanje": "Koje je persijsko carstvo bilo najveće carstvo starog veka pre Aleksandra?",
       "odgovori": [
         "Ahemenidsko carstvo",
-        "Rimsko carstvo pod Avgustom",
-        "Egipatsko carstvo faraona",
-        "Asirsko"
+        "Sasanidsko carstvo",
+        "Partsko carstvo",
+        "Medijsko carstvo"
       ],
       "zanimljivost": "Persijski „Carski put“ dug 2.700 km imao je stanice sa svežim konjima za glasnike.",
       "medijiOdgovora": {
@@ -2623,7 +2623,7 @@
       "odgovori": [
         "354",
         "365",
-        "360",
+        "330",
         "300"
       ],
       "zanimljivost": "Lunarni kalendar je 11 dana kraći od Sunčeve godine, pa su Vavilonci povremeno dodavali ceo jedan mesec. Egipćani su prešli na solarni kalendar od 365 dana – 12 meseci po 30 dana plus 5 dodatnih.",
@@ -2647,7 +2647,7 @@
         "Stepenasta, Crvena i Bela",
         "Sfinga, Luksor i Karnak"
       ],
-      "zanimljivost": "Piramide su grobnice faraona iz oko 26. veka pre Hrista. Kod Kefrenove piramide nalazi se Velika sfinga – telo lava sa glavom čoveka, najveća statua starog sveta.",
+      "zanimljivost": "Kod Kefrenove piramide nalazi se Velika sfinga – telo lava sa glavom čoveka, jedna od najstarijih i najvećih skulptura na svetu.",
       "rec": "piramida"
     },
     {
@@ -2656,9 +2656,9 @@
       "pitanje": "Koji grčki istoričar je pisao da je geometrija nastala u Egiptu, zbog ponovnog merenja zemlje posle poplava Nila?",
       "odgovori": [
         "Herodot",
-        "Tukidid",
         "Homer",
-        "Platon"
+        "Platon",
+        "Euklid"
       ],
       "zanimljivost": "Herodota zovu „ocem istorije“. Egipćani su njive merili užadima sa čvorovima na jednakom rastojanju – a reč geometrija i znači „merenje zemlje“.",
       "medijiOdgovora": {
@@ -2674,7 +2674,7 @@
       "pitanje": "Na čemu su pisali stari Egipćani?",
       "odgovori": [
         "Na papirusu",
-        "Na papiru",
+        "Na svili",
         "Na pergamentu od kože",
         "Na glinenim pločicama"
       ],
@@ -2714,9 +2714,9 @@
         "Pismo Sumera utiskivano trskom u glinene pločice",
         "Egipatsko pismo slikama, uklesano u kamen hramova",
         "Kinesko pismo sa znacima koji su se pisali kistom na svili",
-        "Latinica"
+        "Alfabet Feničana ispisan na pergamentu"
       ],
-      "zanimljivost": "Klinasto pismo korišćeno je oko 3.000 godina.",
+      "zanimljivost": "Klinasto pismo koristilo se oko 3.000 godina, sve do nove ere.",
       "rec": "klinasto",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -2730,9 +2730,9 @@
       "pitanje": "Šta su hijeroglifi?",
       "odgovori": [
         "Egipatsko pismo sa slikovnim znacima",
-        "Grčka slova koja su Egipćani preuzeli od trgovaca sa Krita",
-        "Rimski brojevi",
-        "Kineski znaci"
+        "Grčka slova koja su Egipćani preuzeli od trgovaca",
+        "Rimski brojevi za računanje na tablici",
+        "Kineski znaci nacrtani tušem na svili"
       ],
       "zanimljivost": "Bilo je preko 700 hijeroglifskih znakova.",
       "rec": "hijeroglifi",
@@ -2767,7 +2767,7 @@
       "odgovori": [
         "Papir i svilu",
         "Sat sa klatnom i teleskop",
-        "Štampariju i naočare",
+        "Automobil i avion",
         "Parnu mašinu i struju"
       ],
       "zanimljivost": "Kinezi su hiljadama godina čuvali tajnu pravljenja svile. Caj Lun je oko 105. godine nove ere usavršio pravljenje papira od kore drveta, krpa i starih ribarskih mreža.",
@@ -2783,12 +2783,12 @@
       "tezina": 2,
       "pitanje": "Koji brojni sistem potiče iz Mesopotamije?",
       "odgovori": [
-        "Šezdesetični (zato sat ima 60 minuta)",
-        "Desetični (kakav mi danas koristimo svuda)",
-        "Binarni (sa samo dve cifre, 0 i 1, kao računar)",
-        "Rimski"
+        "Šezdesetični",
+        "Desetični",
+        "Binarni",
+        "Rimski brojevi"
       ],
-      "zanimljivost": "Krug od 360 stepeni takođe potiče iz Vavilona.",
+      "zanimljivost": "Zato sat ima 60 minuta, a krug 360 stepeni – i to je nasleđe Vavilonaca.",
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/plimpton.jpg",
@@ -2821,8 +2821,8 @@
       "odgovori": [
         "Jedno od sedam svetskih čuda, u Vavilonu",
         "Egipatski hram boginje Izide na obali reke Nil",
-        "Kineski park",
-        "Grčka bašta"
+        "Kineski park sa jezerima i pagodama na obali reke",
+        "Grčka bašta sa mirisnim biljkama u Atini"
       ],
       "zanimljivost": "To je jedino od sedam čuda čije postojanje nije sigurno dokazano.",
       "rec": "vavilon",
@@ -2840,7 +2840,7 @@
         "Postupak čuvanja tela umrlih od raspadanja",
         "Pravljenje piramida od kamenih blokova",
         "Pisanje hijeroglifa na zidovima grobnica",
-        "Vrsta lova"
+        "Obred molitve i prinošenja hrane bogovima"
       ],
       "zanimljivost": "Za mumifikaciju je trebalo oko 70 dana.",
       "medijiOdgovora": {
@@ -2858,7 +2858,7 @@
         "Tutankamon",
         "Ramzes II",
         "Keops",
-        "Kleopatra"
+        "Hamurabi"
       ],
       "zanimljivost": "Tutankamon je postao faraon sa oko 9 godina, a umro je sa 19.",
       "rec": "tutankamon",
@@ -2875,8 +2875,8 @@
       "odgovori": [
         "Lečili su rane, lomove i poznavali mnoge lekovite biljke",
         "Lečili su samo molitvama, bez ikakvih lekova",
-        "Pravili su vakcine protiv kuge i drugih zaraznih bolesti od koje su ljudi umirali",
-        "Radili su operacije srca"
+        "Pravili su vakcine protiv kuge i drugih bolesti",
+        "Radili su operacije srca i presađivali organe"
       ],
       "zanimljivost": "Na papirusima su sačuvani opisi stotina recepata i bolesti.",
       "medijiOdgovora": {
@@ -2892,7 +2892,7 @@
       "pitanje": "Čemu su služile piramide?",
       "odgovori": [
         "Grobnice faraona",
-        "Hramovi za molitvu",
+        "Skladišta za žito za vreme suše",
         "Palate faraona",
         "Utvrđenja"
       ],
@@ -2908,7 +2908,7 @@
       "lekcija": 9,
       "tezina": 2,
       "pitanje": "Kako se zvao egipatski bog Sunca?",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/ra.png"
       },
@@ -2931,7 +2931,7 @@
         "Zamrzavanjem u ledenim pećinama u pustinji",
         "Sahranjivanjem u reci Nil, da ih voda odnese"
       ],
-      "zanimljivost": "Proces balzamovanja trajao je oko 70 dana. Verovali su da je telo potrebno duši u zagrobnom životu.",
+      "zanimljivost": "Srce je ostavljano u telu, jer se verovalo da će ono biti potrebno u zagrobnom životu.",
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/kanopske-posude.jpg",
@@ -2980,9 +2980,9 @@
       "pitanje": "Ko su bili pisari u Egiptu?",
       "odgovori": [
         "Obrazovani ljudi koji su znali da pišu i vode evidenciju",
-        "Robovi koji su gradili piramide i hramove za faraona i sveštenike",
-        "Vojnici",
-        "Seljaci"
+        "Robovi koji su gradili piramide i hramove za faraona",
+        "Vojnici koji su čuvali granice i hramove u delti Nila",
+        "Seljaci koji su na njivama gajili pšenicu i davali porez"
       ],
       "zanimljivost": "Učenje pisanja trajalo je godinama – pisari su bili veoma cenjeni.",
       "rec": "pisar",
@@ -3071,8 +3071,8 @@
       "odgovori": [
         "Judaizam – vera u jednog Boga",
         "Mnogoboštvo – vera u mnogo bogova prirode",
-        "Budizam",
-        "Hinduizam"
+        "Zoroastrizam – vera u boga Ahura Mazdu u Persiji",
+        "Hinduizam – vera u mnogo bogova u Indiji"
       ],
       "zanimljivost": "Judaizam je najstarija jednobožačka vera koja i danas postoji.",
       "medijiOdgovora": {
@@ -3108,7 +3108,7 @@
         "Konfučije",
         "Buda",
         "Aristotel",
-        "Lao Ce"
+        "Sokrat"
       ],
       "zanimljivost": "Konfučijeva učenja hiljadama godina uticala su na kinesko društvo.",
       "rec": "konfučije",
@@ -3143,8 +3143,8 @@
       "odgovori": [
         "Podela društva u zatvorene grupe po rođenju",
         "Vrsta vojske sastavljene od konjanika na slonovima i kočijama",
-        "Način gradnje",
-        "Vrsta pisma"
+        "Način trgovanja začinima na pučinama mora",
+        "Vrsta hrama sa visokim tornjem u obliku stupa"
       ],
       "zanimljivost": "Pripadnost kasti nije mogla da se menja – određivala je zanimanje i brak.",
       "medijiOdgovora": {
@@ -3229,7 +3229,7 @@
         "Partenon",
         "Mikena"
       ],
-      "zanimljivost": "Palata je imala preko 1.000 prostorija – možda je to izvor mita o lavirintu.",
+      "zanimljivost": "Palata je imala na stotine prostorija – možda je to izvor mita o lavirintu.",
       "rec": "knosos",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -3242,10 +3242,10 @@
       "tezina": 2,
       "pitanje": "Ko je, prema mitu, bio Minotaur?",
       "odgovori": [
-        "Čudovište pola čovek – pola bik u lavirintu, koga je ubio Tezej",
-        "Bog mora koji je potapao brodove i stvarao velike oluje i talase",
-        "Kralj Atine koji je oslobodio grad od plaćanja teškog danka Kritu",
-        "Grčki filozof koji je živeo sam u lavirintu i tamo učio mlade ljude mudrosti"
+        "Čudovište pola čovek – pola bik, koje je živelo u lavirintu",
+        "Bog mora koji je izazivao oluje i talase nad brodovima",
+        "Kralj Atine koji je oslobodio grad od plaćanja danka Kritu",
+        "Grčki junak koji je pobedio kentaura u borbi na Olimpu"
       ],
       "zanimljivost": "Arijadnin konac pomogao je Tezeju da izađe iz lavirinta.",
       "rec": "minotaur",
@@ -3260,7 +3260,7 @@
       "tezina": 3,
       "pitanje": "Šta je verovatno oslabilo minojsku civilizaciju?",
       "odgovori": [
-        "Vulkanska erupcija na ostrvu Tera (Santorini)",
+        "Vulkanska erupcija na ostrvu Santorini",
         "Rimljani koji su osvojili Krit",
         "Persijanci koji su osvojili ostrvo i spalili sve palate",
         "Kuga koja je pomorila skoro sve stanovnike ostrva Krit"
@@ -3329,7 +3329,7 @@
         "Drveni konj u kome su se sakrili grčki ratnici",
         "Pravi konj koga su Grci poklonili trojanskom kralju",
         "Vrsta bojnih kola sa konjima kojima su se borili Trojanci",
-        "Hram"
+        "Konjički turnir u čast boga Posejdona"
       ],
       "zanimljivost": "„Trojanski konj“ danas se zove i vrsta računarskog virusa.",
       "rec": "konj",
@@ -3347,7 +3347,7 @@
         "Pismo mikenskih Grka na glinenim pločicama",
         "Kinesko pismo sa hiljadama znakova za svaku reč",
         "Egipatski kalendar sa 365 dana i tri godišnja doba",
-        "Rimski broj koji je označavao jednu legiju vojnika"
+        "Pisanje hijeroglifa na zidovima grobnica"
       ],
       "zanimljivost": "Odgonetnuo ga je arhitekta Majkl Ventris 1952. – pokazalo se da je to najstariji oblik grčkog jezika.",
       "rec": "linear",
@@ -3363,9 +3363,9 @@
       "pitanje": "Kakve su bile minojske freske?",
       "odgovori": [
         "Vedre slike prirode, delfina i igre sa bikovima",
-        "Uvek ratne scene sa vojnicima, kopljima i kočijama u bitkama",
+        "Ratne scene sa vojnicima, kopljima i kočijama u bitkama",
         "Crno-bele slike bez boja, urezane u kamen na zidovima palate",
-        "Samo portreti kraljeva i kraljica Krita u svečanoj odeći"
+        "Portreti kraljeva i kraljica Krita u svečanoj odeći"
       ],
       "zanimljivost": "Igra preskakanja bika bila je verovatno verski obred.",
       "rec": "freska",
@@ -3450,7 +3450,7 @@
       "lekcija": 10,
       "tezina": 2,
       "pitanje": "Kako se zove pismo minojskog Krita koje do danas nije odgonetnuto?",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/linear-a.png",
         "opis": "Pločica sa minojskim pismom"
@@ -3471,10 +3471,10 @@
       "odgovori": [
         "Dedal",
         "Tezej",
-        "Minos",
+        "Herakle",
         "Ikar"
       ],
-      "zanimljivost": "Dedal je bio toliko vešt graditelj da ni sam nije lako izlazio iz lavirinta. Sa Krita je pobegao krilima od perja i voska koja je napravio sebi i sinu Ikaru.",
+      "zanimljivost": "Dedal je bio toliko vešt graditelj da ni on sam nije mogao lako da izađe iz lavirinta. Sa Krita je pobegao krilima od perja i voska koja je napravio sebi i sinu Ikaru.",
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/dedal.jpg",
@@ -3549,7 +3549,7 @@
       "lekcija": 11,
       "tezina": 2,
       "pitanje": "Ko je, po grčkom predanju, napisao „Ilijadu“ i „Odiseju“?",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/homer.jpg"
       },
@@ -3597,10 +3597,10 @@
       "tezina": 2,
       "pitanje": "O čemu govori „Odiseja“?",
       "odgovori": [
-        "O desetogodišnjem povratku Odiseja kući posle Trojanskog rata",
-        "O osnivanju Rima i borbi braće Romula i Rema oko budućeg grada",
-        "O Zevsovom rođenju",
-        "O Persijskim ratovima"
+        "O Odisejevom povratku kući posle Trojanskog rata",
+        "O osnivanju Rima i borbi braće Romula i Rema oko grada",
+        "O rođenju bogova i Zevsovom uspinjanju na Olimp",
+        "O borbama Persijanaca i Grka kod Maratona i Salamine"
       ],
       "zanimljivost": "Odisejeva žena Penelopa čekala ga je 20 godina.",
       "medijiOdgovora": {
@@ -3722,7 +3722,7 @@
         "Vladar koji je silom preuzeo vlast, ne nužno okrutan",
         "Sveštenik koji je prinosio žrtve bogovima u hramu na akropolju",
         "Rob koji je radio u rudnicima srebra kod Atine i u lukama",
-        "Pesnik"
+        "Trgovac koji je prodavao vino i ulje po celoj Grčkoj"
       ],
       "zanimljivost": "Neki tirani, poput Pisistrata u Atini, gradili su hramove i pomagali seljacima.",
       "medijiOdgovora": {
@@ -3755,7 +3755,7 @@
       "tezina": 2,
       "pitanje": "Kako se zvalo grčko pismo koje su preuzeli od Feničana?",
       "odgovori": [
-        "Alfabet (alfa, beta…)",
+        "Alfabet",
         "Hijeroglifi",
         "Klinasto pismo",
         "Latinica"
@@ -3950,9 +3950,9 @@
         "Smatrali su da grad brane hrabri ljudi, a ne zidovi",
         "Nisu imali dovoljno kamena u okolini, pa nisu mogli da ih zidaju",
         "Bila je na ostrvu, pa ju je more štitilo sa svih strana od neprijatelja",
-        "Zabranio im je Zevsov sveštenik iz proročišta u Delfima, pod pretnjom kazne"
+        "Zabranili su im Persijanci, koji su tako hteli da ih oslabe"
       ],
-      "zanimljivost": "Spartanski dečaci su od 7. godine išli na vojničku obuku, a sa 30 godina postajali punopravni građani. Sparta je jedina u Grčkoj imala stalnu vojsku.",
+      "zanimljivost": "Spartanski dečaci su od 7. godine išli na vojničku obuku, a sa 30 godina postajali su punopravni građani.",
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/leonida.jpg",
@@ -4038,9 +4038,9 @@
       "pitanje": "Ko je smatran „ocem atinske demokratije“?",
       "odgovori": [
         "Klisten",
-        "Perikle",
-        "Solon",
-        "Leonida"
+        "Darije",
+        "Leonida",
+        "Filip Makedonski"
       ],
       "zanimljivost": "Klisten je reformisao Atinu krajem 6. veka pre nove ere.",
       "medijiOdgovora": {
@@ -4075,7 +4075,7 @@
         "Od 7. godine strogo vojničko obrazovanje",
         "Učili su muziku i filozofiju",
         "Učili su da budu trgovci",
-        "Nisu išli u školu"
+        "Učili su samo čitanje i pisanje u hramovima"
       ],
       "zanimljivost": "Izraz „spartanski uslovi“ i danas znači veoma skromne i teške uslove.",
       "medijiOdgovora": {
@@ -4092,7 +4092,7 @@
         "Atinski zakonodavac koji je ukinuo dužničko ropstvo",
         "Spartanski kralj koji je uveo strogo vojničko vaspitanje dečaka",
         "Persijski car",
-        "Pesnik"
+        "Filozof iz Milete koji je merio visinu piramida"
       ],
       "zanimljivost": "Solon se ubraja među „Sedam mudraca“ antičke Grčke.",
       "medijiOdgovora": {
@@ -4157,7 +4157,7 @@
         "Savez grčkih gradova pod vođstvom Atine",
         "Savez Sparte i Persije protiv Atine i njenih saveznika",
         "Pomorska trka trijera oko ostrva Delosa svake četiri godine",
-        "Hram boga Apolona na ostrvu Delosu, gde se čuvalo blago"
+        "Vojna svečanost sa takmičenjem brodova na Egejskom moru"
       ],
       "zanimljivost": "Riznica saveza kasnije je prebačena u Atinu i delom potrošena na gradnju Partenona.",
       "medijiOdgovora": {
@@ -4547,7 +4547,7 @@
         "Zidovi koji su povezivali Atinu sa lukom Pirej",
         "Utvrđena granica između Atine i Sparte na Peloponezu",
         "Zidine oko Akropolja koje su štitile hramove od Persijanaca",
-        "Zidine Troje koje su Grci osvojili uz pomoć drvenog konja"
+        "Zidovi oko Atine koji su štitili pijacu od poplave"
       ],
       "zanimljivost": "Zahvaljujući njima Atina je mogla da dobija hranu morem i za vreme opsade.",
       "medijiOdgovora": {
@@ -4582,7 +4582,7 @@
         "Brzi ratni brodovi sa tri reda veslača",
         "Teška kola sa konjima za proboj neprijateljskih redova",
         "Opsadne kule za napad na zidine neprijateljskih gradova",
-        "Konjica"
+        "Vojni tabor sa palisadom i bedemom"
       ],
       "zanimljivost": "Trijera je imala oko 170 veslača i mogla je da probije neprijateljski brod kljunom.",
       "rec": "trijera",
@@ -4600,7 +4600,7 @@
         "Atinski vojskovođa koji je ubedio Atinjane da grade flotu",
         "Spartanski kralj koji je sa 300 vojnika branio prolaz kod Termopila",
         "Persijski car koji je spalio Atinu i pokušao da osvoji celu Grčku",
-        "Filozof"
+        "Atinski pesnik koji je opevao bitku kod Maratona"
       ],
       "zanimljivost": "Novac od srebrnih rudnika Laurija Atina je, na njegov predlog, uložila u brodove.",
       "medijiOdgovora": {
@@ -4618,7 +4618,7 @@
         "Aleksandar Makedonski",
         "Perikle, vođa Atine",
         "Julije Cezar, rimski vojskovođa",
-        "Kserks, persijski car"
+        "Karlo Veliki, franački vladar"
       ],
       "zanimljivost": "Aleksandar je umro sa samo 32 godine, posle 13 godina vladavine.",
       "rec": "aleksandar",
@@ -4638,7 +4638,7 @@
         "Platon",
         "Homer"
       ],
-      "zanimljivost": "Aristotel je Aleksandra učio filozofiji, prirodi i medicini.",
+      "zanimljivost": "Aristotel je Aleksandru predavao filozofiju, prirodne nauke i Homera.",
       "rec": "aristotel",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -4752,7 +4752,7 @@
       "odgovori": [
         "Persijsko carstvo",
         "Rimsko carstvo",
-        "Egipatsko carstvo pod faraonima",
+        "Kartaginsko carstvo",
         "Kinesko carstvo"
       ],
       "zanimljivost": "Odlučujuća bitka bila je kod Gaugamele 331. pre nove ere.",
@@ -4768,7 +4768,7 @@
       "tezina": 1,
       "pitanje": "Šta se desilo sa Aleksandrovim carstvom posle njegove smrti?",
       "odgovori": [
-        "Podelile su ga njegove vojskovođe (dijadosi)",
+        "Podelile su ga njegove vojskovođe",
         "Ostalo je celo",
         "Odmah ga je osvojio Rim, koji je tada vladao celim Sredozemljem",
         "Nestalo je zauvek, a Grci su se vratili u svoje gradove-države"
@@ -4827,7 +4827,7 @@
       "odgovori": [
         "Zamršen čvor koji je Aleksandar presekao mačem",
         "Vrsta grčkog broda sa jednim jarbolom i veslima",
-        "Ime grada u Maloj Aziji koji je osnovao Gordije",
+        "Dvorac kralja Gordija sa visokim tornjem na brdu",
         "Morski čvor kojim su mornari vezivali brodove u luci"
       ],
       "zanimljivost": "Prema proročanstvu, ko razmrsi čvor, vladaće Azijom.",
@@ -4859,20 +4859,26 @@
     {
       "lekcija": 14,
       "tezina": 2,
-      "pitanje": "Kako se zvala Aleksandrova vojna formacija sa veoma dugim kopljima?",
+      "pitanje": "Koji grad je bio glavni grad Makedonije za vreme Aleksandra?",
       "odgovori": [
-        "Makedonska falanga",
-        "Rimska legija sa štitovima",
-        "Kohorta pešaka sa mačevima",
-        "Trijera"
+        "Pela",
+        "Atina",
+        "Sparta",
+        "Aleksandrija"
       ],
-      "zanimljivost": "Koplje sarisa bilo je dugo 5–7 metara.",
+      "zanimljivost": "Pela je bila rodno mesto Aleksandra, a tamo su pronađeni raskošni mozaici iz 4. veka pre nove ere.",
       "medijiOdgovora": {
-        "vrsta": "slika",
-        "src": "slike/falanga.jpg",
-        "opis": "Makedonska falanga"
+        "vrsta": "mapa",
+        "oblast": "evropa",
+        "tacke": [
+          {
+            "lat": 40.76,
+            "lon": 22.52,
+            "oznaka": "Pela"
+          }
+        ]
       },
-      "rec": "falanga"
+      "rec": "pela"
     },
     {
       "lekcija": 14,
@@ -4939,7 +4945,7 @@
       "lekcija": 15,
       "tezina": 2,
       "pitanje": "Kako se zvao vrhovni grčki bog, koji je bacao munje?",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/zevs.jpg"
       },
@@ -4971,8 +4977,8 @@
           "Rat"
         ],
         [
-          "Atina",
-          "Mudrost"
+          "Hefest",
+          "Vatra i kovanje"
         ],
         [
           "Afrodita",
@@ -5010,7 +5016,7 @@
       "tezina": 2,
       "pitanje": "Kako se zove boginja mudrosti, kojoj je posvećen Partenon?",
       "odgovori": [
-        "Atina (Palada Atena)",
+        "Atina",
         "Hera",
         "Afrodita",
         "Artemida"
@@ -5427,7 +5433,7 @@
         "Na otvorenom, u obliku polukruga, uz padinu brda",
         "U zatvorenoj zgradi sa krovom, kao današnja pozorišta",
         "Pod zemljom, u pećinama, da bi zvuk bio što jači",
-        "Na brodu"
+        "Na ravnom polju bez ikakvih sedišta za gledaoce"
       ],
       "zanimljivost": "Pozorište u Epidauru ima tako dobru akustiku da se šapat sa scene čuje u poslednjem redu.",
       "rec": "epidaur",
@@ -5480,7 +5486,7 @@
       "odgovori": [
         "Tukidid",
         "Herodot",
-        "Ksenofont",
+        "Polibije",
         "Plutarh"
       ],
       "zanimljivost": "Tukidid je bio i učesnik rata – kao atinski vojskovođa.",
@@ -5499,7 +5505,7 @@
         "Aleksandrija u Egiptu",
         "Sparta na Peloponezu",
         "Rim, prestonica carstva",
-        "Atina, grad filozofa"
+        "Kartagina, grad trgovaca u severnoj Africi"
       ],
       "zanimljivost": "Aleksandrijska biblioteka imala je stotine hiljada svitaka.",
       "medijiOdgovora": {
@@ -5519,7 +5525,7 @@
         "Pozorište na ostrvu Faros, u kome su se izvodile grčke komedije",
         "Biblioteka u kojoj su se čuvali svici sa delima svih grčkih pisaca"
       ],
-      "zanimljivost": "Visok oko 100 m, bio je jedna od najviših građevina antičkog sveta.",
+      "zanimljivost": "Svetionik je bio visok možda i preko 100 m, pa je bio jedna od najviših građevina antičkog sveta.",
       "rec": "svetionik",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -5530,20 +5536,15 @@
     {
       "lekcija": 17,
       "tezina": 2,
-      "pitanje": "Koji naučnik iz Sirakuze je rekao „Eureka!“?",
+      "pitanje": "Koji naučnik iz Aleksandrije je napravio parnu napravu, eolipil, pokretanu mlazom pare?",
       "odgovori": [
-        "Arhimed",
+        "Heron Aleksandrijski",
         "Euklid",
-        "Pitagora",
-        "Hipokrat"
+        "Ptolomej",
+        "Eratosten"
       ],
-      "zanimljivost": "Arhimed je izumeo i zavrtanj za podizanje vode i ratne mašine za odbranu grada.",
-      "medijiOdgovora": {
-        "vrsta": "slika",
-        "src": "slike/arhimed.jpg",
-        "opis": "Arhimed"
-      },
-      "rec": "arhimed"
+      "zanimljivost": "Heronov eolipil bio je parna lopta koja se okretala, ali nije imala praktičnu primenu u to doba.",
+      "rec": "heron"
     },
     {
       "lekcija": 17,
@@ -5555,7 +5556,7 @@
         "Ptolomej",
         "Hiparh"
       ],
-      "zanimljivost": "Eratosten je bio upravnik Aleksandrijske biblioteke.",
+      "zanimljivost": "Eratosten je bio upravnik Aleksandrijske biblioteke, a obim Zemlje je izračunao merenjem senki u dva grada.",
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/eratosten.png",
@@ -5568,12 +5569,12 @@
       "tezina": 2,
       "pitanje": "Šta je Kolos sa Rodosa?",
       "odgovori": [
-        "Ogromna bronzana statua boga Sunca, jedno od sedam svetskih čuda",
-        "Ogroman mermerni hram boga Sunca na akropolju grada Rodosa na ostrvu",
+        "Bronzana statua boga Sunca, jedno od sedam svetskih čuda",
+        "Ogroman mermerni hram boga Sunca na akropolju grada Rodosa",
         "Najveći trgovački brod antike, koji je plovio između Rodosa i Egipta",
-        "Svetionik na ulazu u luku Rodosa, koji je svetlom vodio brodove noću"
+        "Pozorište na ostrvu Rodos sa stotinama sedišta"
       ],
-      "zanimljivost": "Kolos je stajao samo oko 54 godine pre nego što ga je srušio zemljotres.",
+      "zanimljivost": "Kolos je stajao samo nekoliko decenija pre nego što ga je srušio zemljotres.",
       "rec": "kolos",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -5587,9 +5588,9 @@
       "pitanje": "Šta je Laokon?",
       "odgovori": [
         "Čuvena helenistička skulptura sveštenika i sinova koje dave zmije",
-        "Čuveno grčko pozorište na otvorenom u Epidauru, poznato po odličnoj akustici",
-        "Bog mora i zemljotresa kod starih Grka, brat Zevsa i gospodar svih okeana",
-        "Hram"
+        "Čuveno grčko pozorište na otvorenom u Epidauru, poznato po akustici",
+        "Bog mora i zemljotresa kod starih Grka, brat Zevsa",
+        "Grčki vojskovođa koji je zaustavio Persijance na moru"
       ],
       "zanimljivost": "Skulptura je pronađena u Rimu 1506. i danas je u Vatikanu.",
       "rec": "laokon",
@@ -5627,9 +5628,9 @@
         "Samo geometrijski ukrasi na posudama",
         "Ravne figure prikazane iz profila"
       ],
-      "zanimljivost": "Nika sa Samotrake, sa raširenim krilima, jedna je od najlepših helenističkih statua.",
-      "rec": "nika",
-      "mediji": {
+      "zanimljivost": "Helenistički umetnici su često prikazivali stare, ranjene i umorne ljude – bez uljepšavanja.",
+      "rec": "realizam",
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/umiruci-galac.jpg",
         "opis": "Helenistička skulptura (rimska kopija)"
@@ -5640,12 +5641,12 @@
       "tezina": 2,
       "pitanje": "Kojim jezikom se govorilo širom helenističkog sveta?",
       "odgovori": [
-        "Grčkim (koine)",
+        "Grčkim",
         "Latinskim",
         "Egipatskim",
         "Persijskim"
       ],
-      "zanimljivost": "Na koine grčkom napisan je i Novi zavet.",
+      "zanimljivost": "Zajednički grčki jezik tog doba zove se koine – na njemu je napisan i Novi zavet.",
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/koine.jpg",
@@ -5874,7 +5875,7 @@
       "tezina": 3,
       "pitanje": "Koji narod je pre Rimljana vladao srednjom Italijom i uticao na njih?",
       "odgovori": [
-        "Etrurci (Etrušćani)",
+        "Etrurci",
         "Grci",
         "Kartaginjani",
         "Gali"
@@ -6121,9 +6122,9 @@
         "Patriciji – plemstvo, plebejci – običan narod",
         "Obrnuto – patriciji su bili sirotinja, a plebejci plemstvo",
         "Patriciji – vojnici u legijama, plebejci – robovi sa imanja",
-        "Patriciji – sveštenici u hramovima, plebejci – seljaci na selu"
+        "Patriciji – trgovci sa lukama, plebejci – seljaci na selu"
       ],
-      "zanimljivost": "Plebejci su dugom borbom stekli prava – i narodne tribune koji su ih štitili.",
+      "zanimljivost": "Plebejci su dugom borbom stekli prava, a njihovi narodni tribuni su ih štitili.",
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/toga.jpg",
@@ -6175,7 +6176,7 @@
         "Rimski vojskovođa i državnik koji je osvojio Galiju i postao doživotni diktator",
         "Prvi rimski car Avgust, koji je vladao posle građanskih ratova i doneo „rimski mir“",
         "Kartaginjanin koji je sa slonovima prešao Alpe i dugo ratovao protiv Rima u Italiji",
-        "Grčki tiranin"
+        "Grčki filozof koji je pisao o državi i zakonima u Atini"
       ],
       "zanimljivost": "Ubijen je 15. marta 44. pre nove ere – na „Martovske ide“.",
       "rec": "cezar",
@@ -6190,9 +6191,9 @@
       "tezina": 2,
       "pitanje": "Koju je čuvenu izreku Cezar izgovorio posle jedne brze pobede?",
       "odgovori": [
-        "„Dođoh, videh, pobedih“ (Veni, vidi, vici)",
-        "„Kocka je bačena“ (Alea iacta est)",
-        "„I ti, sine Brute?“ (Et tu, Brute?)",
+        "„Dođoh, videh, pobedih“",
+        "„Kocka je bačena“",
+        "„I ti, sine Brute?“",
         "„Eureka“"
       ],
       "zanimljivost": "Pri prelasku reke Rubikon rekao je i „Kocka je bačena“.",
@@ -6311,7 +6312,7 @@
       "odgovori": [
         "Sredozemno more",
         "Crno more",
-        "Jadransko more",
+        "Crveno more",
         "Baltičko more"
       ],
       "zanimljivost": "Na latinskom – Mare Nostrum.",
@@ -6338,7 +6339,7 @@
       "lekcija": 20,
       "tezina": 3,
       "pitanje": "Koji rimski car je podelio carstvo na četiri dela (tetrarhija)?",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/dioklecijan.jpg"
       },
@@ -6549,8 +6550,8 @@
       "odgovori": [
         "U više slojeva kamena i šljunka, ravne i trajne",
         "Od nabijenog blata i slame, koje je kiša često raznosila",
-        "Od drveta",
-        "Nisu gradili puteve"
+        "Od drvenih dasaka položenih preko močvara",
+        "Nisu gradili puteve, već su koristili reke"
       ],
       "zanimljivost": "„Svi putevi vode u Rim“ – mreža je bila duga preko 80.000 km.",
       "rec": "put",
@@ -6617,12 +6618,12 @@
     {
       "lekcija": 20,
       "tezina": 2,
-      "pitanje": "Koji grad je zatrpao Vezuv 79. godine?",
+      "pitanje": "Koji grad kod Vezuva je 79. godine bio zatrpan pepelom erupcije?",
       "odgovori": [
-        "Pompeju",
+        "Pompeja",
         "Rim",
-        "Atinu",
-        "Kartaginu"
+        "Atina",
+        "Kartagina"
       ],
       "zanimljivost": "Pompeja je ponovo otkrivena u 18. veku – kao „zamrznuta“ u vremenu.",
       "rec": "pompeja",
@@ -6672,7 +6673,7 @@
       "lekcija": 21,
       "tezina": 2,
       "pitanje": "U kom gradu na Jadranu se nalazi jedan od najbolje očuvanih rimskih amfiteatara, zvani „Arena“?",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/pula-arena.jpg"
       },
@@ -6799,7 +6800,7 @@
       "odgovori": [
         "Rimsko pravo – osnova mnogih današnjih zakona",
         "Zakone preuzete od egipatskih faraona",
-        "Samo zakone o gladijatorima i borbama u arenama",
+        "Zakone o trkama kočija i gladijatorskim borbama",
         "Kinesko pravo, preuzeto od trgovaca na Putu svile"
       ],
       "zanimljivost": "Mnogi pravni izrazi i danas su latinski – npr. „alibi“ znači „negde drugde“.",
@@ -6836,7 +6837,7 @@
         "Beton",
         "Čelik",
         "Plastiku",
-        "Staklo za prozore"
+        "Porcelan iz Kine"
       ],
       "zanimljivost": "Rimski beton je bio toliko dobar da neke luke od njega stoje već 2.000 godina.",
       "rec": "beton",
@@ -6922,7 +6923,7 @@
       "lekcija": 22,
       "tezina": 3,
       "pitanje": "Koji rimski car je 313. godine dozvolio slobodu hrišćanima?",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/konstantin.jpg"
       },
@@ -6932,7 +6933,7 @@
         "Dioklecijan",
         "Avgust"
       ],
-      "zanimljivost": "Milanski edikt je i važan deo istorije Niša, gde je Konstantin rođen. Dioklecijan je, naprotiv, progonio hrišćane.",
+      "zanimljivost": "Konstantin je rođen u Naisu (Nišu), a Milanski edikt je izdao zajedno sa carem Licinijem.",
       "rec": "hrišćanstvo"
     },
     {
@@ -7012,9 +7013,9 @@
       "tezina": 2,
       "pitanje": "Kako se zove sveta knjiga hrišćana?",
       "odgovori": [
-        "Biblija (Stari i Novi zavet)",
+        "Biblija",
         "Kuran, objavljen preko proroka Muhameda",
-        "Tora",
+        "Veda",
         "Ilijada"
       ],
       "zanimljivost": "Reč biblija na grčkom znači „knjige“.",
@@ -7085,9 +7086,9 @@
       "pitanje": "Šta znači reč „jevanđelje“?",
       "odgovori": [
         "Blaga (dobra) vest",
-        "Knjiga zakona",
-        "Pesma",
-        "Molitva"
+        "Knjiga zakona i pravila za vernike",
+        "Pesma koja se peva na crkvenim obredima",
+        "Molitva za pokojnike u crkvi"
       ],
       "zanimljivost": "Četiri jevanđelja napisali su Matej, Marko, Luka i Jovan.",
       "medijiOdgovora": {
@@ -7105,7 +7106,7 @@
         "Na grčkom",
         "Na latinskom",
         "Na srpskom",
-        "Na hebrejskom"
+        "Na egipatskom"
       ],
       "zanimljivost": "Sveti Jeronim ga je u 4. veku preveo na latinski – „Vulgata“.",
       "medijiOdgovora": {
@@ -7172,27 +7173,22 @@
     {
       "lekcija": 22,
       "tezina": 2,
-      "pitanje": "Kojim ediktom je 313. godine hrišćanima dozvoljeno da slobodno ispovedaju veru?",
+      "pitanje": "Petar je Isusov učenik koji ga je tri puta odrekao pre nego što je petao zapevao. Kako se zove?",
       "odgovori": [
-        "Milanskim",
-        "Niškim",
-        "Rimskim",
-        "Carigradskim"
+        "Petar",
+        "Jovan",
+        "Matej",
+        "Toma"
       ],
-      "zanimljivost": "Edikt su u Milanu dogovorili carevi Konstantin i Licinije. Godine 2013, na 1.700 godina od tog događaja, u Nišu – Konstantinovom rodnom gradu – održana je velika proslava.",
-      "medijiOdgovora": {
-        "vrsta": "slika",
-        "src": "slike/konstantin.jpg",
-        "opis": "Konstantin Veliki"
-      },
-      "rec": "edikt"
+      "zanimljivost": "Petar se po predanju smatra prvim rimskim biskupom, pa je otuda kasnije nastalo papstvo.",
+      "rec": "petar"
     },
     {
       "lekcija": 23,
       "tezina": 2,
       "pitanje": "Ko je bio prozvan „Bič Božiji“?",
       "odgovori": [
-        "Atila, vođa Huna",
+        "Atila",
         "Neron",
         "Džingis-kan",
         "Hanibal"
@@ -7230,7 +7226,7 @@
       "odgovori": [
         "Odoakar",
         "Atila",
-        "Teodorih",
+        "Gejzerih",
         "Justinijan"
       ],
       "zanimljivost": "Odoakar je bio germanski zapovednik. Zanimljivo je da je poslednji car nosio imena i prvog kralja Rima (Romul) i prvog cara (Avgust)!",
@@ -7269,7 +7265,7 @@
         "Krštenje Konstantina",
         "Osnivanje Carigrada"
       ],
-      "zanimljivost": "Huni su gurnuli Gote, a Goti su potisnuli druge narode ka rimskim granicama – kao lanac domina. Rimsko carstvo je 395. konačno podeljeno na Zapadno i Istočno.",
+      "zanimljivost": "Huni su gurnuli Gote, a Goti su potisnuli druge narode ka rimskim granicama – kao lanac domina.",
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/atila.jpg",
@@ -7336,7 +7332,7 @@
         "395. godine, posle smrti Teodosija",
         "476. godine, padom Rima",
         "330. godine, osnivanjem Carigrada",
-        "1054. godine, velikim crkvenim raskolom"
+        "800. godine, krunisanjem Karla Velikog"
       ],
       "zanimljivost": "Istočno rimsko carstvo (Vizantija) trajalo je još skoro hiljadu godina – do 1453.",
       "medijiOdgovora": {
@@ -7402,9 +7398,9 @@
       "pitanje": "Kako se zvala država koja je nastavila da postoji na istoku posle pada Rima?",
       "odgovori": [
         "Vizantija",
-        "Persija",
+        "Franačko kraljevstvo",
         "Kartagina",
-        "Egipat"
+        "Ostrogotsko kraljevstvo"
       ],
       "zanimljivost": "Vizantinci su sebe sve vreme nazivali Rimljanima – Romejima.",
       "medijiOdgovora": {
@@ -7573,9 +7569,9 @@
         "Kralj Ostrogota koji je vladao Italijom posle pada Rima",
         "Rimski car koji je poslednji vladao ujedinjenim carstvom pre podele",
         "Hunski vođa koji je posle Atile poveo svoj narod nazad u stepe Azije",
-        "Vizantijski car"
+        "Franački kralj koji je osnovao Karolinšku dinastiju"
       ],
-      "zanimljivost": "Njegov mauzolej u Raveni pokriven je jednim kamenim blokom teškim oko 230 tona.",
+      "zanimljivost": "Njegov mauzolej u Raveni ima kupolu od jednog kamenog bloka – jedan od najpoznatijih spomenika ranog srednjeg veka.",
       "rec": "teodorih",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -7591,7 +7587,7 @@
         "Prestonica Zapadnog rimskog carstva u poslednjim decenijama",
         "Grad u Grčkoj, poznat po proročištu boga Apolona i Pitijskim igrama",
         "Luka u Egiptu",
-        "Grad u Srbiji"
+        "Grad u Turskoj, na obali Crnog mora"
       ],
       "zanimljivost": "Ravena je čuvena po vizantijskim mozaicima.",
       "rec": "ravena",
@@ -7605,7 +7601,7 @@
       "lekcija": 24,
       "tezina": 3,
       "pitanje": "Gde se nalazi „Trajanova tabla“, rimski natpis isklesan u steni iznad Dunava?",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/trajanova-tabla.jpg"
       },
@@ -7657,7 +7653,7 @@
     {
       "lekcija": 24,
       "tezina": 2,
-      "pitanje": "Koje je rimsko nalazište kod Kostolca, sa ostacima mamuta i vojnog logora?",
+      "pitanje": "Koje je rimsko nalazište kod Kostolca, nekadašnje sedište legije?",
       "odgovori": [
         "Viminacijum",
         "Gamzigrad",
@@ -7677,7 +7673,7 @@
       "tezina": 3,
       "pitanje": "Šta je Feliks Romulijana?",
       "odgovori": [
-        "Carska palata kod Gamzigrada, na listi UNESKO-a",
+        "Carska palata kod Gamzigrada",
         "Rimski kameni most preko Dunava koji je podigao car Trajan",
         "Velika arena u Nišu u kojoj su se borili gladijatori i zveri",
         "Hram boga Jupitera u rimskom Singidunumu, današnjem Beogradu"
@@ -7695,12 +7691,12 @@
       "tezina": 2,
       "pitanje": "Koliko je rimskih careva rođeno na tlu današnje Srbije?",
       "odgovori": [
-        "Oko 17–18",
+        "Više od deset",
         "Nijedan",
         "Dva",
         "Oko pet"
       ],
-      "zanimljivost": "Među njima su Konstantin Veliki, Galerije, Probus i Konstancije II.",
+      "zanimljivost": "Među njima su Konstantin Veliki, Galerije, Probus i Konstancije II – većina je rođena u Naisusu, Sirmijumu i okolini.",
       "medijiOdgovora": {
         "vrsta": "mapa",
         "oblast": "srbija",
@@ -7804,12 +7800,12 @@
       "tezina": 3,
       "pitanje": "Šta je Justinijana Prima?",
       "odgovori": [
-        "Grad podignut u 6. veku kod Lebana (Caričin grad)",
+        "Grad podignut u 6. veku kod Lebana",
         "Veliki rimski vojni logor na ušću Save u Dunav, tačno na mestu današnjeg Beograda",
         "Hram posvećen caru Konstantinu Velikom u Nišu, gradu u kome je ovaj car i rođen",
         "Rimska rečna luka na Dunavu kod Đerdapa u kojoj je bila smeštena carska flota"
       ],
-      "zanimljivost": "Car Justinijan podigao je grad u blizini svog rodnog mesta i nazvao ga svojim imenom. Bio je to i sedište arhiepiskopije, ali je napušten već posle oko 80 godina.",
+      "zanimljivost": "Car Justinijan podigao je grad u blizini svog rodnog mesta i nazvao ga svojim imenom. Bio je to i sedište arhiepiskopije, ali je ubrzo napušten.",
       "rec": "caričin",
       "medijiOdgovora": {
         "vrsta": "slika",
@@ -7869,7 +7865,7 @@
         "Vikinški brod sa štitovima i mačevima zakopan u pesku Dunava",
         "Deo Kineskog zida i figure vojnika od pečene gline"
       ],
-      "zanimljivost": "Viminacijum je imao i do 40.000 stanovnika.",
+      "zanimljivost": "Procenjuje se da je Viminacijum imao i do 40.000 stanovnika.",
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "/kvizovi/srpska-istorija/slike/viminacijum.jpg",
