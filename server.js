@@ -63,7 +63,22 @@ const javniId = (tajni) => (tajni ? crypto.createHmac('sha256', KLJUC_ID).update
 // broj otvorenih SSE tokova jednog igrača (računa se iz skupa tokova, pa ne može da se „raštimuje“)
 const brojVeza = (kod, id) => { let n = 0; for (const t of tokovi.get(kod) || []) if (t.id === id) n++; return n; };
 
+// Svaka promena (npr. svaki odgovor) šalje svakom telefonu u sobi njegov pogled – u sobi od 40 igrača to je 40 × 40
+// poruka po pitanju (a Caddy svaku još šifruje). Zato se slanje proređuje: prva promena ide odmah, a sve promene u
+// narednih RAZMAK_EMITOVANJA ms se spoje u jedno slanje najnovijeg stanja.
+const RAZMAK_EMITOVANJA = +process.env.RAZMAK_EMITOVANJA || 120;
+const emitovanje = new WeakMap(); // soba -> { posle (ms), tajmer }
 function emituj(soba) {
+  let e = emitovanje.get(soba);
+  if (!e) emitovanje.set(soba, (e = { posle: 0, tajmer: null }));
+  if (e.tajmer) return; // slanje je već zakazano – poslaće se najnovije stanje
+  const ceka = e.posle - Date.now();
+  if (ceka <= 0) return emitujOdmah(soba, e);
+  e.tajmer = setTimeout(() => { e.tajmer = null; emitujOdmah(soba, e); }, ceka);
+}
+function emitujOdmah(soba, e) {
+  e.posle = Date.now() + RAZMAK_EMITOVANJA;
+  if (sobe.get(soba.kod) !== soba) return; // soba je u međuvremenu obrisana
   const set = tokovi.get(soba.kod);
   if (set) for (const t of set) posalji(t.res, soba.pogled(t.id));
   const c = cekaci.get(soba.kod);

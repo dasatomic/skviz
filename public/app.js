@@ -130,6 +130,19 @@ async function akcija(tip, podaci = {}) {
   }
 }
 
+// odgovor na pitanje: odmah se prikazuje kao zaključan, a pamti se dok ga server ne potvrdi (vidi primi)
+let poslatOdgovor = null; // { kod, krug, rb, izbor }
+async function posaljiOdgovor(izbor) {
+  const o = (poslatOdgovor = { kod: V.kod, krug: V.krug, rb: V.pitanje.rb, izbor });
+  V.mojOdgovor = izbor;
+  const r = await akcija('odgovor', { izbor });
+  // nije stigao do servera – otključaj, da igrač može ponovo
+  if (r.ok !== true && poslatOdgovor === o) {
+    poslatOdgovor = null;
+    if (V && V.faza === 'pitanje' && V.kod === o.kod && V.krug === o.krug && V.pitanje.rb === o.rb) { V.mojOdgovor = null; crtaj(); }
+  }
+}
+
 // ───────────────────────── veza ─────────────────────────
 let nacin = 'sse';      // 'sse' ili 'poll' (long-polling kad SSE ne prolazi, npr. kroz Cloudflare tunel)
 let generacija = 0;
@@ -147,6 +160,13 @@ function primi(v) {
     }
   }
   pomak = v.sada - Date.now();
+  // Odgovor je poslat, a server ga još nije zabeležio: stanje izazvano TUĐIM odgovorom (u velikoj sobi stižu jedno za
+  // drugim) ne sme da „vrati“ dugmad – inače igrač misli da dodir nije uspeo i bira ponovo, a važi prvi izbor.
+  if (poslatOdgovor) {
+    const o = poslatOdgovor;
+    if (v.faza === 'pitanje' && v.kod === o.kod && v.krug === o.krug && v.pitanje?.rb === o.rb && v.mojOdgovor === null) v.mojOdgovor = o.izbor;
+    else poslatOdgovor = null; // server ga je potvrdio (ili je pitanje prošlo)
+  }
   const staro = V;
   V = v;
   if (v.podesavanja?.pismo && v.podesavanja.pismo !== PISMO) { postaviPismo(v.podesavanja.pismo, false); kljucEkrana = ''; }
@@ -899,9 +919,8 @@ function ekranPitanje(nov, staro) {
     app.querySelectorAll('.odg').forEach((b) => (b.onclick = () => {
       if (TV || V.faza !== 'pitanje' || V.mojOdgovor !== null) return;
       Zvuk.efekat('klik');
-      V.mojOdgovor = +b.dataset.i;
+      posaljiOdgovor(+b.dataset.i);
       ekranPitanje(false);
-      akcija('odgovor', { izbor: +b.dataset.i });
     }));
     if (!otkriveno) tajmer(P.pocetak, P.trajanje);
   }
@@ -1022,8 +1041,7 @@ function ekranSpoji(nov, staro) {
       $('#posalji-parove', d).onclick = () => {
         if (V.mojOdgovor !== null) return;
         Zvuk.efekat('klik');
-        V.mojOdgovor = [...spajanje.parovi];
-        akcija('odgovor', { izbor: V.mojOdgovor });
+        posaljiOdgovor([...spajanje.parovi]);
         ekranSpoji(false);
       };
     } else donjaTraka('');
