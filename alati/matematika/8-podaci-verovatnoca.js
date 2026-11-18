@@ -1,7 +1,30 @@
 // Podaci i dijagrami, verovatnoća, kombinatorika, logika
-module.exports = ({ T, Q, U, S, A, F, G, proveri, r, stubici, pr, polja, kuglica }) => {
+module.exports = ({ T, Q, U, S, A, F, G, proveri, r, stubici, pr, polja, kuglica, pravilni }) => {
   T('Podaci, verovatnoća i logika');
   const O = { O: [0, 0] }, bez = { bezImena: ['O'] };
+  // stablo mogućnosti: nivoi = [[natpis, …], …] – svaki čvor nivoa i grana se u sve čvorove nivoa i + 1
+  // (natpisi[i] je niz natpisa za nivo i, a čvorova na nivou i ima proizvod dužina prethodnih nivoa)
+  function stablo(nivoi, { dx = 1, dy = 2.2, boje = [], sivi = () => false, list = null } = {}) {
+    const e = [];
+    let cvorovi = [{ x: 0, y: 0, put: [] }];
+    const listova = nivoi.reduce((a, n) => a * n.length, 1);
+    nivoi.forEach((n, nivo) => {
+      const novi = [];
+      const ukupno = cvorovi.length * n.length;
+      cvorovi.forEach((c, ci) => n.forEach((natpis, i) => {
+        const k = ci * n.length + i;
+        const x = r(((k + 0.5) / ukupno - 0.5) * listova * dx), y = r(-(nivo + 1) * dy);
+        const put = [...c.put, i];
+        const b = boje[put[0]] ?? 5;
+        e.push({ lin: [[c.x, c.y - 0.35], [x, y + 0.45]], b, debljina: 2, crtaj: 1, kasni: r(0.2 + nivo * 0.8 + k * 0.04), trajanje: 0.6, ...(sivi(put) ? { isp: 1 } : {}) });
+        const poslednji = nivo === nivoi.length - 1;
+        e.push({ tx: poslednji && list ? list(put) : natpis, at: [x, y], ...(poslednji && list && !sivi(put) ? { b: 3 } : {}) });
+        novi.push({ x, y, put });
+      }));
+      cvorovi = novi;
+    });
+    return { e, listovi: cvorovi };
+  }
 
   Q(1, 'Stubičasti dijagram pokazuje omiljeni sport učenika jednog odeljenja. Koliko je učenika ukupno odgovorilo?', ['20', '8', '18', '24'],
     'Saberu se visine svih stubića: 8 + 6 + 4 + 2 = 20. Pre čitanja dijagrama uvek pogledaj koliko vredi jedan podeok na uspravnoj osi – ovde 2.',
@@ -12,13 +35,20 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, stubici, pr, polja, kuglica
     const n = p.reduce((a, x) => a + x[1], 0), z = p.reduce((a, x) => a + x[0] * x[1], 0);
     proveri(n === 20 && z / n === 3.5, 'srednja ocena');
     Q(3, 'Dijagram pokazuje koliko je učenika dobilo koju ocenu na kontrolnom. Kolika je srednja ocena?', ['3,5', '3', '4', '3,75'],
-      'Učenika je 1 + 3 + 5 + 7 + 4 = 20, a zbir svih ocena 1 + 6 + 15 + 28 + 20 = 70. Prosek je 70 : 20 = 3,5. Nije dovoljno uzeti prosek brojeva 1–5 (to bi bilo 3) – svaka ocena se broji onoliko puta koliko je učenika dobilo.',
-      'prosek', { mediji: stubici(p.map(([o, v]) => [String(o), v]), { korakY: 1, sirina: 8 }) });
+      'Nije dovoljno uzeti prosek brojeva 1–5 (to bi bilo 3) – svaka ocena se broji onoliko puta koliko je učenika dobilo. Takav prosek se zove „ponderisani“.',
+      'prosek', {
+        mediji: stubici(p.map(([o, v]) => [String(o), v]), { korakY: 1, sirina: 8 }),
+        resenje: [
+          { t: 'Broj učenika je zbir visina stubića: 1 + 3 + 5 + 7 + 4 = 20.', i: ['s0', 's1', 's2', 's3', 's4'] },
+          { t: 'Zbir ocena: svaku ocenu množimo brojem učenika – 1 · 1 + 2 · 3 + 3 · 5 + 4 · 7 + 5 · 4 = 70.', i: ['s3'] },
+          { t: 'Prosek: 70 : 20 = 3,5' },
+        ],
+      });
   }
 
   Q(1, 'Šta je mod (najčešća vrednost) niza 2, 5, 3, 5, 7, 5, 2?', ['5', '2', '7', '4'],
     'Petica se pojavljuje tri puta, više od ostalih. Mod je jedina srednja vrednost koja ima smisla i za podatke koji nisu brojevi – na primer, najčešća boja očiju u odeljenju.',
-    'mod');
+    'mod', { medijiOdgovora: stubici([['2', 2], ['3', 1], ['5', 3], ['7', 1]], { korakY: 1, sirina: 7, istakni: [2], visina: 4 }) });
 
   {
     const dani = ['~pon', '~uto', '~sre', '~čet', '~pet', '~sub', '~ned'];
@@ -31,7 +61,10 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, stubici, pr, polja, kuglica
     e.push({ lin: t.map((v, i) => [i + 0.5, (v - 10) / 2]), b: 1 });
     Q(2, 'Grafik pokazuje najvišu dnevnu temperaturu tokom jedne nedelje. Između koja dva dana je temperatura najviše porasla?', ['Između srede i četvrtka', 'Između subote i nedelje', 'Između ponedeljka i utorka', 'Između četvrtka i petka'],
       'Najveći rast je tamo gde linija ide najstrmije nagore: od 13 °C u sredu do 19 °C u četvrtak, tj. za 6 °C. Linijski grafik je zgodan baš za praćenje promena tokom vremena.',
-      'grafik', { mediji: G(O, e, { ...bez, velicina: 300 }) });
+      'grafik', {
+        mediji: G(O, e, { ...bez, velicina: 300 }),
+        medijiOdgovora: G(O, [...e, { lin: [[2.5, (13 - 10) / 2], [3.5, (19 - 10) / 2]], b: 3, debljina: 6, crtaj: 1, kasni: 0.4 }, { tx: '+6 °C', at: [2.4, 3.6], b: 3 }], { ...bez, velicina: 300 }),
+      });
   }
 
   {
@@ -40,7 +73,11 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, stubici, pr, polja, kuglica
     boje.forEach((b, i) => e.push(kuglica((i % 5) * 1, Math.floor(i / 5) * 1.6 + ((i % 2) * 0.3), b)));
     Q(1, 'U kesi su 3 žute, 5 plavih i 2 zelene kuglice. Kolika je verovatnoća da se naslepo izvuče žuta?', ['${3|10}$', '${1|3}$', '${3|7}$', '${1|10}$'],
       'Povoljnih ishoda (žutih kuglica) je 3, a svih mogućih 10: verovatnoća je ${3|10}$ = 30%. Za plavu bi bila ${5|10} = {1|2}$ – plave su najverovatnije.',
-      'verovatnoća', { mediji: G(O, e, { ...bez, velicina: 220 }) });
+      'verovatnoća', {
+        mediji: G(O, e, { ...bez, velicina: 220 }),
+        // žute (povoljne) su pune, ostale samo obrisi
+        medijiOdgovora: G(O, [e[0], ...e.slice(1).map((k, i) => (boje[i] === 3 ? { ...k, crtaj: 1, kasni: 0.3 + 0.3 * i } : { ...k, gusto: 0 })), { tx: '3 : 10 = 30%', at: [2, -1.5], b: 3 }], { ...bez, velicina: 220 }),
+      });
   }
 
   {
@@ -55,15 +92,48 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, stubici, pr, polja, kuglica
 
   Q(3, 'Bacaju se dve kockice. Kolika je verovatnoća da obe pokažu šesticu?', ['${1|36}$', '${1|12}$', '${1|6}$', '${2|6}$'],
     'Mogućih ishoda je 6 · 6 = 36, a samo jedan je (6, 6). Verovatnoće nezavisnih događaja se množe: ${1|6} · {1|6} = {1|36}$.',
-    'šestica');
+    'šestica', {
+      medijiOdgovora: G(O, [...polja(6, 6, (i, j) => (i === 5 && j === 5 ? 1 : undefined)), ...[1, 2, 3, 4, 5, 6].flatMap((n) => [{ tx: String(n), at: [n - 0.5, -0.45] }, { tx: String(n), at: [-0.45, n - 0.5] }]),
+        { tx: '6 · 6 = 36', at: [3, 6.6], b: 3 }], { ...bez, velicina: 200 }),
+    });
 
   Q(1, 'Na koliko načina troje dece može da stane u red?', ['6', '3', '9', '8'],
     'Na prvo mesto može bilo ko od 3, na drugo neko od preostale 2, a na treće onaj koji je ostao: 3 · 2 · 1 = 6. Za 10 dece bilo bi čak 3.628.800 rasporeda!',
-    'raspored', { mediji: { vrsta: 'emodzi', tekst: '👧 👦 🧒' } });
+    'raspored', {
+      mediji: { vrsta: 'emodzi', tekst: '👧 👦 🧒' },
+      medijiOdgovora: (() => {
+        const deca = ['👧', '👦', '🧒'];
+        // svaki nivo: preostala deca (natpisi zavise od puta, pa se stablo gradi ručno za 3 · 2 · 1)
+        const e = [];
+        let n = 0;
+        const W = 6;
+        deca.forEach((a, i) => {
+          const x1 = r((i - 1) * 2 * W / 6 * 1.5);
+          e.push({ tx: a, at: [x1, -1.5], vel: 22 }, { lin: [[0, -0.2], [x1, -1.1]], b: i, debljina: 2, crtaj: 1, kasni: 0.2, trajanje: 0.5 });
+          deca.filter((b) => b !== a).forEach((b, j) => {
+            const x2 = r(x1 + (j - 0.5) * 1.5);
+            e.push({ tx: b, at: [x2, -3.3], vel: 22 }, { lin: [[x1, -1.9], [x2, -2.9]], b: i, debljina: 2, crtaj: 1, kasni: 0.9, trajanje: 0.5 });
+            const c = deca.find((d) => d !== a && d !== b);
+            e.push({ tx: c, at: [x2, -5.1], vel: 22 }, { lin: [[x2, -3.7], [x2, -4.7]], b: i, debljina: 2, crtaj: 1, kasni: 1.6, trajanje: 0.5 });
+            n++;
+          });
+        });
+        proveri(n === 6, '3 · 2 · 1 rasporeda');
+        e.push({ tx: '3 · 2 · 1 = 6', at: [0, -6.4], b: 3 });
+        return G(O, e, { ...bez, velicina: 240 });
+      })(),
+    });
 
   Q(1, 'Mila ima 3 majice i 4 para pantalona. Na koliko načina može da se obuče?', ['12', '7', '9', '16'],
     'Uz svaku od 3 majice idu 4 pantalone: 3 · 4 = 12 kombinacija. Ovo je pravilo proizvoda – osnova cele kombinatorike.',
-    'kombinacija', { mediji: { vrsta: 'emodzi', tekst: '👕👕👕 × 👖👖👖👖' } });
+    'kombinacija', {
+      mediji: { vrsta: 'emodzi', tekst: '👕👕👕 × 👖👖👖👖' },
+      medijiOdgovora: (() => {
+        const { e, listovi } = stablo([['👕', '👕', '👕'], ['👖', '👖', '👖', '👖']], { dx: 0.75, boje: [0, 1, 2] });
+        proveri(listovi.length === 12, '12 kombinacija');
+        return G(O, [...e, { tx: '3 · 4 = 12', at: [0, -5.6], b: 3 }], { ...bez, velicina: 260 });
+      })(),
+    });
 
   Q(1, 'Katanac ima šifru od tri cifre (0–9, cifre mogu da se ponavljaju). Koliko ima različitih šifara?', ['1.000', '30', '720', '999'],
     'Svaka od 3 cifre ima 10 mogućnosti: 10 · 10 · 10 = 1.000 (od 000 do 999). Kad se cifre ne bi ponavljale, bilo bi 10 · 9 · 8 = 720.',
@@ -72,15 +142,28 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, stubici, pr, polja, kuglica
   proveri((8 * 7) / 2 === 28, 'turnir');
   Q(3, 'Na turniru 8 ekipa igra „svako sa svakim“ po jednu utakmicu. Koliko utakmica se odigra?', ['28', '56', '64', '16'],
     'Svaka ekipa igra 7 utakmica: 8 · 7 = 56, ali je tako svaka utakmica brojana dvaput (i za domaćina i za gosta): 56 : 2 = 28.',
-    'turnir');
+    'turnir', {
+      medijiOdgovora: (() => {
+        const t = pravilni(8, 4);
+        const im = Object.keys(t), e = [];
+        for (let i = 0; i < 8; i++) for (let j = i + 1; j < 8; j++) e.push({ d: im[i] + im[j], b: i % 6, crtaj: 1, kasni: r(0.2 + 0.12 * e.length), trajanje: 0.4 });
+        proveri(e.length === 28, '28 duži');
+        return G(t, [...e, { tacka: im.join(''), b: 3 }, { tx: '8 · 7 : 2 = 28', at: [0, -5.3], b: 3 }], { bezImena: im, velicina: 220 });
+      })(),
+    });
 
   Q(3, 'Na kup takmičenju (poraženi ispada) učestvuju 32 ekipe. Koliko utakmica treba odigrati do pobednika?', ['31', '16', '32', '63'],
     'Trik bez računanja: svaka utakmica izbaci tačno jednu ekipu, a ispasti mora 31 ekipa. Proveri: 16 + 8 + 4 + 2 + 1 = 31.',
-    'pobednik');
+    'pobednik', {
+      medijiOdgovora: { ...stubici([['32 → 16', 16], ['16 → 8', 8], ['8 → 4', 4], ['4 → 2', 2], ['2 → 1', 1]], { korakY: 4, sirina: 11, vrednosti: true, visina: 5 }), opis: 'Ekipa pre i posle kola, iznad stubića broj utakmica: 16 + 8 + 4 + 2 + 1 = 31' },
+    });
 
   Q(2, 'Neki psi su crni. Svi crni psi laju. Šta SIGURNO važi?', ['Neki psi laju', 'Svi psi laju', 'Sve što laje je crno', 'Nijedan beli pas ne laje'],
     'Crni psi postoje i svi laju, pa sigurno postoji pas koji laje. Ali o psima drugih boja ne znamo ništa – možda i oni laju, a možda ne. Ovakvo zaključivanje proučava logika.',
-    'logika');
+    'logika', {
+      medijiOdgovora: G({ P: [-1.4, 0], L: [1.6, 0], C: [0.15, 0] }, [{ kr: 'P', r: 3, b: 0, pun: 1 }, { kr: 'L', r: 3, b: 3, pun: 1 }, { kr: 'C', r: 1, b: 1, pun: 1, crtaj: 1, kasni: 0.5 },
+        { tx: '~psi', at: [-3, 2.2], b: 0 }, { tx: '~ono što laje', at: [3.2, 3.4], b: 3 }, { tx: '~crni psi', at: [0.15, 0] }], { bezImena: ['P', 'L', 'C'], velicina: 240 }),
+    });
 
   {
     const t = { P: [-1.6, 0], R: [1.6, 0] };
@@ -96,15 +179,34 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, stubici, pr, polja, kuglica
   proveri(9 + 4 + 1 === 14, 'kvadrati 3×3');
   Q(3, 'Koliko ukupno kvadrata (svih veličina) ima na ovoj tabli 3 × 3?', ['14', '9', '13', '10'],
     'Malih kvadrata 1 × 1 ima 9, srednjih 2 × 2 ima 4, a veliki 3 × 3 je jedan: 9 + 4 + 1 = 14. Na šahovskoj tabli 8 × 8 ima ih čak 204 (zbir kvadrata od 1 do 8).',
-    'kvadrat', { mediji: G(O, polja(3, 3, (i, j) => ((i + j) % 2 ? 3 : 0)), { ...bez, velicina: 180 }) });
+    'kvadrat', {
+      mediji: G(O, polja(3, 3, (i, j) => ((i + j) % 2 ? 3 : 0)), { ...bez, velicina: 180 }),
+      medijiOdgovora: G(O, [...polja(3, 3, () => undefined), ...[[0, 0], [1, 0], [0, 1], [1, 1]].map(([x, y], i) => pr(x + 0.08 + 0.04 * i, y + 0.08 + 0.04 * i, 1.76, 1.76, { b: [1, 2, 4, 5][i], prazno: 1, crtaj: 1, kasni: 0.3 + 0.6 * i, trajanje: 0.6 })),
+        pr(-0.06, -0.06, 3.12, 3.12, { b: 3, prazno: 1, crtaj: 1, kasni: 3, trajanje: 0.8 }), { tx: '9 + 4 + 1 = 14', at: [1.5, -0.6], b: 3 }], { ...bez, velicina: 180 }),
+    });
 
   Q(2, 'Novčić se baca dva puta. Kolika je verovatnoća da bar jednom padne glava?', ['${3|4}$', '${1|2}$', '${2|3}$', '${1|4}$'],
     'Mogući ishodi su GG, GP, PG i PP – četiri jednako verovatna. Bar jedna glava je u tri od njih. Lakše: jedini „loš“ ishod je PP (${1|4}$), pa je ostatak ${3|4}$.',
-    'novčić', { medijiOdgovora: { vrsta: 'citat', tekst: 'GG · GP · PG · PP' } });
+    'novčić', {
+      medijiOdgovora: (() => {
+        // isprekidana grana i beli natpis: jedini ishod bez glave (PP)
+        const { e } = stablo([['~G', '~P'], ['~G', '~P']], { dx: 1.6, boje: [3, 0], sivi: (put) => put.length === 2 && put[0] === 1 && put[1] === 1, list: (put) => '~' + put.map((i) => 'GP'[i]).join('') });
+        return G(O, [...e, { tx: '~3 od 4 imaju glavu', at: [0, -5.6], b: 3 }], { ...bez, velicina: 220 });
+      })(),
+    });
 
   Q(3, 'Petoro zaposlenih ima platu od 50.000 dinara, a direktorova je 1.000.000 dinara. Koja mera bolje pokazuje „tipičnu“ platu u toj firmi?', ['Medijana', 'Aritmetička sredina', 'Najveća plata', 'Raspon plata'],
     'Prosek šest plata je oko 208.000 dinara – a niko osim direktora nema ni približno toliko! Medijana (srednja vrednost po veličini) je 50.000 i ne „vuče“ je jedna ogromna vrednost.',
-    'medijana');
+    'medijana', {
+      medijiOdgovora: (() => {
+        const plate = [50, 50, 50, 50, 50, 1000], sy = 5 / 1000, W = 9;
+        const pr6 = plate.reduce((a, b) => a + b, 0) / 6;
+        proveri(Math.round(pr6) === 208, 'prosek plata');
+        const d = stubici(plate.map((v, i) => [i < 5 ? String(i + 1) : '~dir.', v]), { korakY: 250, sirina: W, visina: 5, istakni: [5] });
+        return G(O, [...d.e, { lin: [[0, r(pr6 * sy)], [W, r(pr6 * sy)]], b: 3, debljina: 3, crtaj: 1, kasni: 0.5 }, { tx: '~prosek ≈ 208.000', at: [3, r(pr6 * sy) + 0.4], b: 3 },
+          { lin: [[0, r(50 * sy)], [W, r(50 * sy)]], b: 2, debljina: 3, isp: 1 }, { tx: '~medijana 50.000', at: [3, -1.2], b: 2 }, { tx: '~u hiljadama dinara', at: [2.2, 6.2], b: 5 }], { ...bez, velicina: 320 });
+      })(),
+    });
 
   U(2, 'Koji događaj NEMA verovatnoću ${1|2}$?', ['Na kockici padne 6', 'Na kockici padne paran broj', 'Novčić padne „pismo“', 'Na kockici padne broj manji od 4'],
     'Šestica je samo jedan od 6 ishoda: ${1|6}$. Parnih brojeva (2, 4, 6) i brojeva manjih od 4 (1, 2, 3) ima po tri od šest, a novčić ima dve strane.',
@@ -117,5 +219,15 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, stubici, pr, polja, kuglica
 
   Q(3, 'Iza jednih od troja vrata je nagrada. Izabereš jedna, a voditelj (koji zna gde je nagrada) otvori druga, prazna, i ponudi ti zamenu. Šta je bolje?', ['Zameniti vrata', 'Ostati pri izboru', 'Potpuno je svejedno', 'Zavisi od sreće'],
     'Prvi izbor je tačan u ${1|3}$ slučajeva, pa je u ${2|3}$ nagrada iza preostala dva vrata – a voditelj je jedna prazna otklonio. Zamenom se dobija u ${2|3}$ igara! Ovaj „problem Montija Hola“ zbunio je i mnoge profesore matematike.',
-    'vrata', { mediji: { vrsta: 'emodzi', tekst: '🚪 🚪 🚪' }, vreme: 30 });
+    'vrata', {
+      mediji: { vrsta: 'emodzi', tekst: '🚪 🚪 🚪' }, vreme: 30,
+      // biraš 1. vrata; nagrada može biti iza bilo kojih od troja
+      medijiOdgovora: G(O, [{ tx: '~ti biraš ①', at: [0, 3.2] }, { tx: '~ostaneš', at: [3.6, 3.2], b: 5 }, { tx: '~promeniš', at: [6.2, 3.2], b: 2 },
+        ...[0, 1, 2].flatMap((n) => [
+          { tx: [0, 1, 2].map((v) => (v === n ? '🚗' : '🐐')).join(' '), at: [0, 2 - n * 1.3], vel: 20 },
+          { tx: n === 0 ? '✓' : '✗', at: [3.6, 2 - n * 1.3], b: n === 0 ? 2 : 1, vel: 22 },
+          { tx: n === 0 ? '✗' : '✓', at: [6.2, 2 - n * 1.3], b: n === 0 ? 1 : 2, vel: 22 },
+        ]),
+        { tx: '1 : 3', at: [3.6, -2.2], b: 5 }, { tx: '2 : 3', at: [6.2, -2.2], b: 2 }], { ...bez, velicina: 260 }),
+    });
 };

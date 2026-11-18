@@ -41,7 +41,12 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, kocke, pr }) => {
     proveri(new Set(savij(pogresna)).size < 6, 'pogrešna mreža');
     Q(3, 'Može li se od ove mreže sklopiti kocka?', ['Ne – dva kvadrata padaju na isto mesto', 'Da, bez ikakvog problema', 'Ne – nedostaju dva kvadrata', 'Da, ali bez jedne strane'],
       'Četiri kvadrata u nizu obaviju kocku sa strane, a oba gornja kvadrata se savijaju na istu, gornju stranu – preklope se, a dno ostaje otvoreno. Kod ispravne mreže „poklopci“ moraju biti sa suprotnih strana niza.',
-      'mreža', { mediji: mreza(pogresna, null, [2, 2, 2, 2, 1, 1]) });
+      'mreža', {
+        mediji: mreza(pogresna, null, [2, 2, 2, 2, 1, 1]),
+        // oba „poklopca“ padaju na gornju stranu, a dno ostaje prazno
+        medijiOdgovora: G(O, [...pogresna.map(([x, y], i) => pr(x, y, 1, 1, { b: i < 4 ? 2 : 1, gusto: i >= 4 ? 1 : 0 })), { tx: '~gore', at: [0.5, 1.5] }, { tx: '~gore', at: [1.5, 1.5] },
+          pr(2, -1, 1, 1, { b: 5, isp: 1, prazno: 1 }), { tx: '~dno?', at: [2.5, -0.5], b: 5 }], { ...bez, velicina: 200 }),
+      });
   }
 
   {
@@ -53,7 +58,16 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, kocke, pr }) => {
     proveri(brojevi[naspram1] === 4, 'naspram 1 je 4');
     Q(2, 'Ova mreža se savije u kocku. Koji broj će biti na strani NASPRAM broja 1?', ['4', '3', '5', '6'],
       'Kod mreže „stepenice“ strane 1 i 2 su gore, 3 i 4 u sredini, 5 i 6 dole. Strana 1 se savija tako da gleda u stranu 4. Na pravoj kockici za igru zbir naspramnih strana je uvek 7.',
-      'kockica', { mediji: mreza(stepenice, brojevi, 3) });
+      'kockica', {
+        mediji: mreza(stepenice, brojevi, 3),
+        // naspramne strane iste boje
+        medijiOdgovora: (() => {
+          const prvi = [], boje = [];
+          s.forEach((x, i) => { const j = s.indexOf(NASPRAM[x]); if (boje[j] === undefined) prvi.push(i); boje[i] = boje[j] ?? prvi.length - 1; });
+          proveri(boje[0] === boje[3] && new Set(boje).size === 3, 'parovi naspramnih strana');
+          return mreza(stepenice, brojevi, boje.map((b) => [1, 0, 2][b]));
+        })(),
+      });
   }
 
   {
@@ -69,7 +83,14 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, kocke, pr }) => {
 
   Q(1, 'Koliko malih kockica čini ovaj kvadar?', ['24', '9', '20', '26'],
     'Kvadar ima 4 · 3 = 12 kockica u jednom sloju, a slojeva su 2: 12 · 2 = 24. Zapremina kvadra je proizvod sve tri ivice: $a · b · c$.',
-    'zapremina', { mediji: kocke(4, 3, 2) });
+    'zapremina', {
+      mediji: kocke(4, 3, 2),
+      // gornji sloj od 12 kockica se podigne: dva sloja po 4 · 3
+      medijiOdgovora: (() => {
+        const sloj = kocke(4, 3, 1);
+        return G(O, [...sloj.e, ...sloj.e.map((e) => ({ ...e, pomeri: [0, 1.6], kasni: 0.5 })), { tx: '4 · 3 = 12', at: [4.6, 3.4], b: 3 }, { tx: '4 · 3 = 12', at: [4.6, 1.2], b: 3 }, { tx: '2 · 12 = 24', at: [0.4, -0.9], b: 2 }], { ...bez, velicina: 220 });
+      })(),
+    });
 
   Q(2, 'Kolika je površina kocke ivice 3 cm?', ['54 cm²', '27 cm²', '36 cm²', '18 cm²'],
     'Kocka ima 6 jednakih kvadrata, svaki 3 · 3 = 9 cm²: 6 · 9 = 54 cm². Česta zamena: 27 je ZAPREMINA (u cm³), a ne površina.',
@@ -82,7 +103,13 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, kocke, pr }) => {
   proveri(Math.abs(Math.PI * 1 * 1 * 1 - 3.14) < 0.01, 'valjak 1 dm');
   Q(3, 'Valjak ima poluprečnik osnove 1 dm i visinu 1 dm. Koliko otprilike litara vode staje u njega?', ['Oko 3,14 l', 'Tačno 1 l', 'Oko 6,28 l', 'Tačno 2 l'],
     '$V = r^{2}πH = 1 · 1 · 3,14 · 1$ ≈ 3,14 dm³, a 1 dm³ = 1 litar. Taj valjak je veći od kocke 1 dm × 1 dm × 1 dm jer mu je prečnik 2 dm.',
-    'valjak', { mediji: telo('valjak', { boja: '#74b9ff' }) });
+    'valjak', {
+      mediji: telo('valjak', { boja: '#74b9ff' }),
+      // osnova poluprečnika 1 dm pokriva oko 3,14 kvadrata 1 dm × 1 dm
+      medijiOdgovora: G({ O: [0, 0], A: [1, 0] }, [pr(-1, -1, 1, 1, { b: 5, prazno: 1 }), pr(0, -1, 1, 1, { b: 5, prazno: 1 }), pr(-1, 0, 1, 1, { b: 5, prazno: 1 }), pr(0, 0, 1, 1, { b: 5, prazno: 1 }),
+        { kr: 'O', r: 1, b: 0, pun: 1, crtaj: 1 }, { d: 'OA', b: 3, o: '1 dm' }, { tx: 'π ≈ 3,14 dm²', at: [0, -1.4], b: 3 }, { tx: '3,14 dm² · 1 dm ≈ 3,14 l', at: [0, -1.75], b: 2 }],
+      { bezImena: ['O', 'A'], velicina: 200 }),
+    });
 
   Q(2, 'Kupa i valjak imaju istu osnovu i istu visinu. Koliko puni kupa vode staje u valjak?', ['3', '2', '4', 'π'],
     'Zapremina kupe je trećina zapremine valjka: $V = {1|3}r^{2}πH$. Isto važi i za piramidu i prizmu iste osnove i visine – to je znao još Demokrit, a dokazao Eudoks.',
@@ -111,7 +138,12 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, kocke, pr }) => {
     Q(3, 'Kocka se preseče ravnim rezom kroz tri temena susedna jednom temenu. Kakav lik je presek?', ['Jednakostranični trougao', 'Pravougli trougao', 'Kvadrat', 'Pravougaonik'],
       'Sve tri stranice preseka su dijagonale jednakih kvadrata (strana kocke), pa su jednake – trougao je jednakostraničan. Ravan kroz sredine šest ivica dala bi čak pravilan šestougao!',
       'presek', {
-        medijiOdgovora: G(O, [...kocka, { lin: [s([0, 0, 1]), s([1, 1, 1]), s([1, 0, 0])], zatv: 1, b: 1, gusto: 1 }], { ...bez, velicina: 200 }),
+        // uz pitanje: kocka sa istaknutim temenom i njegova tri susedna temena (kroz njih prolazi rez)
+        mediji: G({ O: [0, 0], X: s([0, 0, 1]), Y: s([1, 1, 1]), Z: s([1, 0, 0]), V: s([1, 0, 1]) }, [...kocka, { tacka: 'XYZ', b: 1 }, { tacka: 'V', b: 3 }], { bezImena: ['O', 'X', 'Y', 'Z', 'V'], velicina: 200 }),
+        // stranice preseka su dijagonale tri jednaka kvadrata
+        medijiOdgovora: G(O, [...kocka, { lin: [s([0, 0, 1]), s([1, 1, 1]), s([1, 0, 0])], zatv: 1, b: 1, gusto: 1 },
+          ...[[[0, 0, 1], [1, 1, 1]], [[1, 1, 1], [1, 0, 0]], [[1, 0, 0], [0, 0, 1]]].map(([a, b], i) => ({ lin: [s(a), s(b)], b: 3, debljina: 4, crtaj: 1, kasni: 0.3 + 0.7 * i, trajanje: 0.6 })),
+          { tx: '√2 = √2 = √2', at: [1.8, -0.9], b: 3 }], { ...bez, velicina: 200 }),
       });
 
     proveri(Math.abs(Math.hypot(1, 1, 1) - Math.sqrt(3)) < 1e-9, 'prostorna dijagonala');
@@ -124,7 +156,7 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, kocke, pr }) => {
   }
 
   S(2, 'Spoji lik koji se okreće sa telom koje nastaje', [['Pravougaonik oko stranice', 'Valjak'], ['Pravougli trougao oko katete', 'Kupa'], ['Polukrug oko prečnika', 'Lopta'], ['Pravougli trapez oko kraka uz prave uglove', 'Zarubljena kupa']],
-    'Tela koja nastaju okretanjem zovu se obrtna tela – lončar na grnčarskom kolu pravi baš takva tela. Dvostruka kupa nastaje okretanjem jednakokrakog trougla oko visine.',
+    'Tela koja nastaju okretanjem zovu se obrtna tela – lončar na grnčarskom kolu pravi baš takva tela. Jednakokraki trougao okretanjem oko visine daje kupu, a oko osnovice – dvostruku kupu.',
     'obrtno');
 
   Q(2, 'Koliko temena ima ovo telo?', ['7', '6', '12', '8'],
@@ -138,7 +170,7 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, kocke, pr }) => {
   proveri(50 * 30 * 40 === 60000, 'akvarijum');
   Q(2, 'Akvarijum ima oblik kvadra 50 cm × 30 cm × 40 cm. Koliko litara vode staje u njega?', ['60 l', '120 l', '600 l', '6 l'],
     '50 · 30 · 40 = 60.000 cm³, a 1 litar = 1.000 cm³, pa je to 60 l. Najlakše je odmah preći na decimetre: 5 · 3 · 4 = 60 dm³.',
-    'akvarijum');
+    'akvarijum', { medijiOdgovora: { ...kocke(5, 3, 4, { boja: 0 }), opis: '5 dm · 3 dm · 4 dm = 60 dm³ = 60 l' } });
 
   U(1, 'Koje telo NIJE poliedar?', ['Valjak', 'Kocka', 'Piramida', 'Prizma'],
     'Poliedar je telo čije su sve strane mnogouglovi. Valjak ima zakrivljen omotač i krugove za osnove, pa je obrtno telo.',

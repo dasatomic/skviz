@@ -285,11 +285,13 @@
           sredina += anim(e, saAnim(`<path d="M${f(S[0])},${f(S[1])} A${f(r)},${f(r)} 0 ${a2 - a1 > Math.PI ? 1 : 0} ${sw} ${f(E[0])},${f(E[1])}" fill="none" stroke="${c}" stroke-width="${e.pun ? 3.5 : 2.2}" class="krug ${kl}"${crt || (e.pun || e.str ? '' : ' stroke-dasharray="5 5"')}/>`, cr.anim));
           if (e.str === 1) { const a0 = a2 - 0.08; sredina += anim(e, strelicaA([c0[0] + r * Math.cos(a0), c0[1] - r * Math.sin(a0)], B, c, cr)); }
           if (e.str === -1) { const a0 = a1 + 0.08; sredina += anim(e, strelicaA([c0[0] + r * Math.cos(a0), c0[1] - r * Math.sin(a0)], A, c, cr)); }
-          if (e.o) { const sr = (a1 + a2) / 2, ro = r + 16; vrh += anim(e, tekst(c0[0] + ro * Math.cos(sr), c0[1] - ro * Math.sin(sr) + 5, e.o, e, `fill="${c}"`)); }
+          if (e.o) { const sr = (a1 + a2) / 2, ro = r + 16; vrh += anim(e, tekst(c0[0] + ro * Math.cos(sr), c0[1] - ro * Math.sin(sr) + 5, e.o, e, `style="fill:${c}"`)); }
         }
       } else if (e.tx !== undefined) {
         const [x, y] = P(e.at[0], e.at[1]);
-        vrh += anim(e, tekst(x, y + 5, e.tx, e, `${e.b !== undefined ? `fill="${boja(e)}"` : ''}${e.vel ? ` style="font-size:${e.vel}px"` : ''}`));
+        // boja ide u style (atribut fill bi pregazio CSS klase .oznaka)
+        const stil = `${e.b !== undefined ? `fill:${boja(e)};` : ''}${e.vel ? `font-size:${e.vel}px;` : ''}`;
+        vrh += anim(e, tekst(x, y + 5, e.tx, e, stil ? `style="${stil}"` : ''));
       }
       if (e.tacka) for (const n of imena(e.tacka)) { const [x, y] = Pn(n); vrh += anim(e, `<circle cx="${f(x)}" cy="${f(y)}" r="4.5" fill="${boja(e, '#ffeaa7')}" class="${kl}"/>`); }
     }

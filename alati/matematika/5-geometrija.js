@@ -17,7 +17,11 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, S3, rad, naKrugu, pravilni 
 
   Q(1, 'Koliko stepeni otprilike ima ovaj ugao?', ['135°', '45°', '90°', '180°'],
     'Ugao je veći od pravog (90°), a manji od opruženog (180°) – tup je. Tačno je na pola puta između njih: 90° + 45° = 135°.',
-    'ugao', { mediji: G({ O: [0, 0], A: [5, 0], B: ug(135) }, [{ d: 'OA' }, { d: 'OB' }, { u: 'AOB', r: 30 }], { bezImena: ['O', 'A', 'B'], velicina: 240 }) });
+    'ugao', {
+      mediji: G({ O: [0, 0], A: [5, 0], B: ug(135) }, [{ d: 'OA' }, { d: 'OB' }, { u: 'AOB', r: 30 }], { bezImena: ['O', 'A', 'B'], velicina: 240 }),
+      medijiOdgovora: G({ O: [0, 0], A: [5, 0], B: ug(135), C: [0, 5] }, [{ d: 'OA' }, { d: 'OB' }, { d: 'OC', isp: 1, b: 5, crtaj: 1 }, { pu: 'AOC', b: 3 }, { tx: '90°', at: [1.3, 1.3], b: 3 },
+        { u: 'COB', o: '45°', r: 40, b: 1 }], { bezImena: ['O', 'A', 'B', 'C'], velicina: 240 }),
+    });
 
   Q(1, 'Prav ugao je podeljen na dva dela. Jedan ima 35°. Koliki je drugi ugao α?', ['55°', '145°', '65°', '45°'],
     '90° − 35° = 55°. Dva ugla koja zajedno čine prav ugao zovu se komplementni. Zato u pravouglom trouglu dva oštra ugla uvek daju zbir 90°.',
@@ -29,14 +33,23 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, S3, rad, naKrugu, pravilni 
 
   Q(1, 'Dve prave se seku. Koliki je ugao α?', ['40°', '140°', '50°', '320°'],
     'Naspramni (unakrsni) uglovi su uvek jednaki. Oba su uporedna sa istim uglom od 140°, pa moraju biti isti: 180° − 140° = 40°.',
-    'unakrsni', { mediji: G({ O: [0, 0], A: [5, 0], C: [-5, 0], B: ug(40), D: ug(220) }, [{ d: 'AC' }, { d: 'BD' }, { u: 'AOB', o: '40°', r: 40 }, { u: 'COD', o: 'α', r: 40, b: 1 }], { bezImena: ['O', 'A', 'B', 'C', 'D'], velicina: 240 }) });
+    'unakrsni', {
+      mediji: G({ O: [0, 0], A: [5, 0], C: [-5, 0], B: ug(40), D: ug(220) }, [{ d: 'AC' }, { d: 'BD' }, { u: 'BOC', o: '140°', r: 30 }, { u: 'COD', o: 'α', r: 40, b: 1 }], { bezImena: ['O', 'A', 'B', 'C', 'D'], velicina: 240 }),
+      // α se okrene za 180° oko preseka i poklopi naspramni ugao
+      medijiOdgovora: G({ O: [0, 0], A: [5, 0], C: [-5, 0], B: ug(40), D: ug(220) }, [{ d: 'AC' }, { d: 'BD' }, { u: 'BOC', o: '140°', r: 30 }, { u: 'COD', o: 'α', r: 40, b: 1 },
+        { u: 'COD', r: 40, b: 1, okreni: 180, oko: 'O', trajanje: 2 }, { tx: '40°', at: ug(20, 2.3) }], { bezImena: ['O', 'A', 'B', 'C', 'D'], velicina: 240 }),
+    });
 
   {
     const Qt = [r(3 / Math.tan(rad(65))), 3];
     const t = { P: [0, 0], Q: Qt, A: [-4, 0], B: [5, 0], C: [-4, 3], D: [5, 3], E: [r(-0.5 * Qt[0]), -1.5], F: [r(1.5 * Qt[0]), 4.5] };
     Q(2, 'Gornja i donja prava su paralelne. Koliki je ugao α?', ['115°', '65°', '25°', '125°'],
       'Ugao od 65° se „prenosi“ gore: ugao između prave i gornje paralelne prave udesno je takođe 65° (saglasni uglovi). Ugao α je uporedan sa njim: 180° − 65° = 115°.',
-      'paralelna', { mediji: G(t, [{ d: 'AB' }, { d: 'CD' }, { d: 'EF', b: 4 }, { u: 'BPQ', o: '65°', r: 34 }, { u: 'FQC', o: 'α', r: 30, b: 1 }], { bezImena: Object.keys(t), velicina: 260 }) });
+      'paralelna', {
+        mediji: G(t, [{ d: 'AB' }, { d: 'CD' }, { d: 'EF', b: 4 }, { u: 'BPQ', o: '65°', r: 34 }, { u: 'FQC', o: 'α', r: 30, b: 1 }], { bezImena: Object.keys(t), velicina: 260 }),
+        medijiOdgovora: G(t, [{ d: 'AB' }, { d: 'CD' }, { d: 'EF', b: 4 }, { u: 'BPQ', o: '65°', r: 34 }, { u: 'BPQ', o: '65°', r: 34, b: 3, pomeri: Qt, trajanje: 2 },
+          { u: 'FQC', o: 'α = 115°', r: 30, b: 1 }], { bezImena: Object.keys(t), velicina: 260 }),
+      });
   }
 
   {
@@ -45,7 +58,13 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, S3, rad, naKrugu, pravilni 
     proveri(Math.abs(Math.atan2(t.C[1], t.C[0] - 6) * 180 / Math.PI - 110) < 0.01, 'spoljašnji');
     Q(2, 'Stranica $AC$ je produžena. Koliki je spoljašnji ugao α?', ['120°', '60°', '110°', '130°'],
       'Spoljašnji ugao trougla jednak je zbiru dva unutrašnja ugla koja nisu uz njega: 50° + 70° = 120°. Unutrašnji ugao kod $C$ je 60°, a α je uporedan sa njim: 180° − 60°.',
-      'spoljašnji', { mediji: G(t, [{ p: 'ABC', b: 0 }, { d: 'CD', isp: 1 }, { u: 'BAC', o: '50°' }, { u: 'CBA', o: '70°' }, { u: 'DCB', o: 'α', b: 1, r: 26 }], { bezImena: ['D'], velicina: 240 }) });
+      'spoljašnji', {
+        mediji: G(t, [{ p: 'ABC', b: 0 }, { d: 'CD', isp: 1 }, { u: 'BAC', o: '50°' }, { u: 'CBA', o: '70°' }, { u: 'DCB', o: 'α', b: 1, r: 26, id: 'al' }, { u: 'BCA', o: '60°', b: 3, r: 22, k: 1, id: 'c' }], { bezImena: ['D'], velicina: 240 }),
+        resenje: [
+          { t: 'Unutrašnji ugao kod $C$: 180° − 50° − 70° = 60°.', i: ['c'] },
+          { t: 'α i ugao od 60° leže na istoj pravoj (uporedni su): α = 180° − 60° = 120° – baš koliko i 50° + 70°.', i: ['al'] },
+        ],
+      });
   }
 
   {
@@ -61,17 +80,35 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, S3, rad, naKrugu, pravilni 
     proveri(Math.abs(Math.atan2(t.E[1], t.E[0]) * 180 / Math.PI - 75) < 0.01, 'kvadrat i trougao');
     Q(3, 'Nad stranicom kvadrata $ABCD$ spolja je nacrtan jednakostranični trougao $DCE$. Koliki je ugao $AEB$?', ['30°', '15°', '45°', '60°'],
       'Trougao $ADE$ je jednakokraki ($AD = DE$), a ugao kod $D$ je 90° + 60° = 150°. Zato su uglovi uz osnovicu po (180° − 150°) : 2 = 15°. Ugao $AEB$ = 60° − 15° − 15° = 30°.',
-      'kvadrat', { mediji: G(t, [{ p: 'ABCD', b: 0 }, { p: 'DCE', b: 2 }, { d: 'AE', isp: 1 }, { d: 'BE', isp: 1 }, { u: 'AEB', o: '?', b: 1, r: 34 }], { velicina: 220 }) });
+      'kvadrat', {
+        mediji: G(t, [{ p: 'ABCD', b: 0 }, { p: 'DCE', b: 2 }, { d: 'AE', isp: 1 }, { d: 'BE', isp: 1 }, { u: 'AEB', o: '?', b: 1, r: 34, id: 'x' },
+          { p: 'ADE', b: 4, k: 1, kraj: 4, id: 'ade' }, { d: 'DE', b: 3, k: 1, id: 'de' }, { d: 'AD', b: 3, k: 1, id: 'ad' },
+          { u: 'ADE', o: '150°', b: 3, r: 20, k: 2, kraj: 4, id: 'd' }, { u: 'DEA', o: '15°', b: 4, r: 70, k: 3, id: 'e1' }, { u: 'BEC', o: '15°', b: 4, r: 70, k: 3, id: 'e2' }], { velicina: 220 }),
+        resenje: [
+          { t: 'Stranice kvadrata i trougla su jednake: $AD = DC = DE$. Zato je trougao $ADE$ jednakokraki.', i: ['ad', 'de', 'ade'] },
+          { t: 'Ugao kod $D$: 90° (kvadrat) + 60° (trougao) = 150°.', i: ['d'] },
+          { t: 'Uglovi uz osnovicu $AE$ su jednaki: (180° − 150°) : 2 = 15°. Isto važi i za trougao $BCE$.', i: ['e1', 'e2'] },
+          { t: 'Od ugla trougla kod $E$ (60°) oduzmemo oba dela: 60° − 15° − 15° = 30°.', i: ['x'] },
+        ],
+      });
   }
 
   U(2, 'Koji trougao NE MOŽE da postoji?', ['Sa dva prava ugla', 'Pravougli jednakokraki', 'Tupougli raznostranični', 'Oštrougli jednakokraki'],
     'Dva prava ugla već daju 180°, pa za treći ugao ne ostaje ništa – kraci bi bili paralelni i nikad se ne bi sreli.',
     'Na površini lopte ovo je moguće! Trougao sa temenom na Severnom polu i dva temena na ekvatoru ima tri prava ugla.',
-    'trougao');
+    'trougao', {
+      medijiOdgovora: G({ A: [0, 0], B: [5, 0], C: [0, 5], D: [5, 5] }, [{ d: 'AB', b: 0 }, { pu: 'CAB', b: 3 }, { pu: 'ABD', b: 3 },
+        { d: 'AC', b: 1, str: 1, crtaj: 1, trajanje: 2 }, { d: 'BD', b: 1, str: 1, crtaj: 1, trajanje: 2 }], { bezImena: ['C', 'D'], velicina: 200 }),
+    });
 
   Q(2, 'Od kojih duži NE MOŽE da se napravi trougao?', ['3, 4 i 8 cm', '5, 5 i 9 cm', '4, 5 i 6 cm', '2, 3 i 4 cm'],
     'Zbir bilo koje dve stranice mora biti veći od treće: 3 + 4 = 7 < 8, pa se kraće duži „ne dohvate“. To je nejednakost trougla – i razlog zašto je prečica preko livade kraća od puta oko nje.',
-    'trougao');
+    'trougao', {
+      // šestarom: luk poluprečnika 3 iz A i 4 iz B – nemaju zajedničku tačku
+      medijiOdgovora: G({ A: [0, 0], B: [8, 0], P: [3, 0], R: [4, 0], M: naKrugu([0, 0], 3, 60), N: naKrugu([8, 0], 4, 120) }, [
+        { d: 'AB', o: '8', os: -1 }, { l: 'A', r: 3, od: 0, do: 180, b: 0, crtaj: 1 }, { l: 'B', r: 4, od: 0, do: 180, b: 1, crtaj: 1, kasni: 1.2 },
+        { d: 'AM', b: 0, o: '3' }, { d: 'BN', b: 1, o: '4' }, { d: 'PR', b: 3, debljina: 6 }, { tacka: 'PR', b: 3 }], { bezImena: ['P', 'R', 'M', 'N'], velicina: 260 }),
+    });
 
   Q(1, 'Kako se zove ovaj četvorougao?', ['Trapez', 'Paralelogram', 'Romb', 'Deltoid'],
     'Trapez ima jedan par paralelnih stranica (osnovice). Ovaj je jednakokraki – kraci su mu jednaki, kao kod abažura ili kofe gledane sa strane.',
@@ -110,19 +147,31 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, S3, rad, naKrugu, pravilni 
     const m = (x) => [{ mreza: [-0.5, 5.5, -0.5, 4.5], brojevi: 0 }, { lin: L.map(([a, b]) => [a, b]), zatv: 1, b: x }];
     Q(1, 'Svako polje mreže je 1 cm². Kolika je površina ovog lika?', ['14 cm²', '20 cm²', '18 cm²', '12 cm²'],
       'Lik se može podeliti na pravougaonike 5 × 2 i 2 × 2: 10 + 4 = 14 cm². Ili: ceo pravougaonik 5 × 4 = 20, minus „isečeni“ ugao 3 × 2 = 6.',
-      'površina', { mediji: G({ O: [0, 0] }, m(0), { bezImena: ['O'], velicina: 220 }) });
+      'površina', {
+        mediji: G({ O: [0, 0] }, m(0), { bezImena: ['O'], velicina: 220 }),
+        medijiOdgovora: G({ O: [0, 0] }, [{ mreza: [-0.5, 5.5, -0.5, 4.5], brojevi: 0 }, { lin: [[0, 0], [5, 0], [5, 2], [0, 2]], zatv: 1, b: 0, o: '5 · 2 = 10' },
+          { lin: [[0, 2], [2, 2], [2, 4], [0, 4]], zatv: 1, b: 1, o: '4', pomeri: [0, 0.6], trajanje: 1 }], { bezImena: ['O'], velicina: 220 }),
+      });
     Q(3, 'Stranica polja mreže je 1 cm. Koliki je OBIM ovog lika?', ['18 cm', '14 cm', '16 cm', '20 cm'],
       'Iznenađenje: obim je isti kao kod celog pravougaonika 5 × 4 (18 cm)! Dve „uvučene“ stranice ugla samo su pomerene unutra, a ukupna dužina vodoravnih i uspravnih ivica se ne menja. Površina se smanjila, a obim nije.',
-      'obim', { mediji: G({ O: [0, 0] }, m(4), { bezImena: ['O'], velicina: 220 }) });
+      'obim', {
+        mediji: G({ O: [0, 0] }, m(4), { bezImena: ['O'], velicina: 220 }),
+        medijiOdgovora: G({ O: [0, 0] }, [{ mreza: [-0.5, 5.5, -0.5, 4.5], brojevi: 0 }, { lin: L, zatv: 1, b: 4 }, { lin: [[2, 4], [5, 4], [5, 2]], b: 5, isp: 1 },
+          { lin: [[2, 2], [5, 2]], b: 1, debljina: 5, pomeri: [0, 2], trajanje: 2 }, { lin: [[2, 2], [2, 4]], b: 3, debljina: 5, pomeri: [3, 0], trajanje: 2 }], { bezImena: ['O'], velicina: 220 }),
+      });
   }
 
   Q(2, 'Svako polje mreže je 1 cm². Kolika je površina trapeza $ABCD$?', ['16 cm²', '24 cm²', '12 cm²', '32 cm²'],
     'Površina trapeza = (zbir osnovica) : 2 · visina = (6 + 2) : 2 · 4 = 16 cm². Dva ista trapeza okrenuta jedan uz drugi daju paralelogram osnovice 8 i visine 4 – a pola od 32 je 16.',
-    'trapez', { mediji: G({ A: [1, 1], B: [7, 1], C: [5, 5], D: [3, 5] }, [{ mreza: [0, 8, 0, 6], brojevi: 0 }, { p: 'ABCD', b: 3 }], { velicina: 240 }) });
+    'trapez', {
+      mediji: G({ A: [1, 1], B: [7, 1], C: [5, 5], D: [3, 5] }, [{ mreza: [0, 8, 0, 6], brojevi: 0 }, { p: 'ABCD', b: 3 }], { velicina: 240 }),
+      medijiOdgovora: G({ A: [1, 1], B: [7, 1], C: [5, 5], D: [3, 5], M: [6, 3] }, [{ mreza: [0, 12, 0, 6], brojevi: 0 }, { p: 'ABCD', b: 3 },
+        { p: 'ABCD', b: 1, okreni: 180, oko: 'M', trajanje: 2.2 }, { tacka: 'M' }, { tx: '(6 + 2) · 4 : 2 = 16', at: [6, -0.4] }], { bezImena: ['M'], velicina: 260 }),
+    });
 
   {
     const t = pravilni(6, 4, [0, 0], 0);
-    const ose = [0, 30, 60, 90, 120, 150].map((u, i) => ({ lin: [naKrugu([0, 0], 5, u), naKrugu([0, 0], 5, u + 180)], b: 1, isp: 1, debljina: 2 }));
+    const ose = [0, 30, 60, 90, 120, 150].map((u, i) => ({ lin: [naKrugu([0, 0], 5, u), naKrugu([0, 0], 5, u + 180)], b: i % 2 ? 1 : 0, debljina: 2, crtaj: 1, kasni: 0.3 + 0.6 * i, trajanje: 0.8 }));
     Q(2, 'Koliko osa simetrije ima pravilan šestougao?', ['6', '3', '12', '2'],
       'Tri ose prolaze kroz naspramna temena, a tri kroz sredine naspramnih stranica. Pravilan mnogougao sa $n$ stranica uvek ima tačno $n$ osa simetrije.',
       'simetrija', { mediji: G(t, [{ p: 'ABCDEF', b: 3 }], { bezImena: Object.keys(t), velicina: 200 }), medijiOdgovora: G({ ...t, O: [0, 0] }, [{ p: 'ABCDEF', b: 3 }, ...ose], { bezImena: [...Object.keys(t), 'O'], velicina: 200 }) });
@@ -130,11 +179,15 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, S3, rad, naKrugu, pravilni 
 
   Q(1, 'Koje slovo ima i vodoravnu i uspravnu osu simetrije?', ['$H$', '$A$', '$E$', '$T$'],
     '$A$ i $T$ imaju samo uspravnu osu, $E$ samo vodoravnu, a $H$ obe. Slova sa obe ose izgledaju isto i u ogledalu i naopako – takva su još $O$, $X$ i $I$.',
-    'simetrija');
+    'simetrija', {
+      medijiOdgovora: G({ O: [0, 0] }, [{ lin: [[-1.5, -2.2], [-1.5, 2.2]], b: 3, debljina: 9 }, { lin: [[1.5, -2.2], [1.5, 2.2]], b: 3, debljina: 9 }, { lin: [[-1.5, 0], [1.5, 0]], b: 3, debljina: 9 },
+        { lin: [[0, -3], [0, 3]], b: 1, debljina: 2, crtaj: 1 }, { lin: [[-3, 0], [3, 0]], b: 0, debljina: 2, crtaj: 1, kasni: 1 }], { bezImena: ['O'], velicina: 160 }),
+    });
 
   Q(1, 'Tačka $A(2, 3)$ se preslikava osnom simetrijom u odnosu na $x$-osu. Koje su koordinate slike?', ['(2, −3)', '(−2, 3)', '(−2, −3)', '(3, 2)'],
     '$x$-osa je „ogledalo“: tačka ostaje iznad istog mesta, samo prelazi na drugu stranu – $y$ menja znak. Slika je jednako daleko od ose kao i original.',
-    'simetrija', { medijiOdgovora: G({ A: [2, 3, 0], B: [2, -3, 0] }, [{ mreza: [-4, 4, -4, 4], ose: ['x', 'y'] }, { d: 'AB', isp: 1, b: 3 }, { tacka: 'A', b: 0 }, { tacka: 'B', b: 1 }], { velicina: 220 }) });
+    'simetrija', { medijiOdgovora: G({ A: [2, 3, 0], "A'": [2, -3, 0], P: [-4, 0], R: [4, 0] }, [{ mreza: [-4, 4, -4, 4], ose: ['x', 'y'] }, { d: "AA'", isp: 1, b: 3 }, { tacka: 'A', b: 0 },
+      { tacka: 'A', b: 1, odrazi: 'PR', trajanje: 1.8 }], { bezImena: ['P', 'R'], velicina: 220 }) });
 
   {
     const t = { A: [-2, -2], B: [2, -2], C: [2, 2], D: [-2, 2], O: [0, 0], e: [-0.8, -2], f: [-2, -0.8] };
@@ -148,24 +201,32 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, S3, rad, naKrugu, pravilni 
 
   Q(3, 'Koji lik je centralno simetričan, a NEMA nijednu osu simetrije?', ['Kosi paralelogram', 'Jednakokraki trapez', 'Jednakostranični trougao', 'Deltoid'],
     'Paralelogram (koji nije romb ni pravougaonik) okrenut za 180° oko preseka dijagonala poklapa se sa sobom, ali nijedna prava ga ne deli na dve slike u ogledalu. Trapez i deltoid imaju osu, a trougao nema centar simetrije.',
-    'simetrija');
+    'simetrija', {
+      medijiOdgovora: G({ A: [0, 0], B: [5, 0], C: [6.5, 3], D: [1.5, 3], O: [3.25, 1.5], e: [0.9, 0], f: [0.27, 0.54] }, [{ p: 'ABCD', b: 5, prazno: 1, isp: 1 }, { d: 'AC', b: 5, isp: 1 }, { d: 'BD', b: 5, isp: 1 },
+        { p: 'ABCD', b: 2, okreni: 180, oko: 'O', trajanje: 2.5 }, { p: 'Aef', b: 1, gusto: 1, okreni: 180, oko: 'O', trajanje: 2.5 }, { tacka: 'O' }], { bezImena: ['A', 'B', 'C', 'D', 'O', 'e', 'f'], velicina: 240 }),
+    });
 
   Q(2, 'Trougao $ABC$ je pomeren (translacijom) u $A′B′C′$. Za koliko polja je pomeren?', ['3 udesno, 2 nagore', '2 udesno, 3 nagore', '3 udesno, 3 nagore', '5 udesno, 2 nagore'],
     'Gleda se samo jedno teme: $A(1, 1)$ je prešlo u $A′(4, 3)$ – to je 3 polja udesno i 2 nagore. Pri translaciji se sve tačke pomere za isti vektor, pa lik ostaje isti i isto okrenut.',
-    'vektor', { mediji: G({ A: [1, 1], B: [3, 1], C: [1, 3], "A'": [4, 3], "B'": [6, 3], "C'": [4, 5] }, [{ mreza: [0, 7, 0, 6], brojevi: 0 }, { p: 'ABC', b: 0 }, { p: "A'B'C'", b: 1 }], { velicina: 230 }) });
+    'vektor', {
+      mediji: G({ A: [1, 1], B: [3, 1], C: [1, 3], "A'": [4, 3], "B'": [6, 3], "C'": [4, 5] }, [{ mreza: [0, 7, 0, 6], brojevi: 0 }, { p: 'ABC', b: 0 }, { p: "A'B'C'", b: 1 }], { velicina: 230 }),
+      medijiOdgovora: G({ A: [1, 1], B: [3, 1], C: [1, 3], "A'": [4, 3], "B'": [6, 3], "C'": [4, 5], m: [6, 1] }, [{ mreza: [0, 7, 0, 6], brojevi: 0 }, { p: 'ABC', b: 0 }, { p: "A'B'C'", b: 1, prazno: 1, isp: 1 },
+        { d: 'Bm', b: 3, str: 1, o: '3' }, { d: "mB'", b: 3, str: 1, o: '2', os: -1 }, { p: 'ABC', b: 1, pomeri: [3, 2], trajanje: 2 }], { bezImena: ['m'], velicina: 230 }),
+    });
 
   {
     const t = { A: [0, 0], B: [5, 0.5], C: [4, 4], D: [0.5, 3.5] };
     Q(2, 'Date su 4 tačke, od kojih nikoje tri nisu na istoj pravoj. Koliko različitih pravih one određuju?', ['6', '4', '8', '12'],
       'Svaki par tačaka daje jednu pravu: $AB$, $AC$, $AD$, $BC$, $BD$, $CD$ – to je 4 · 3 : 2 = 6. Deli se sa 2 jer je prava $AB$ isto što i $BA$.',
-      'prava', { mediji: G(t, [{ tacka: 'ABCD', b: 3 }], { velicina: 180 }), medijiOdgovora: G(t, [{ d: 'AB' }, { d: 'AC', b: 1 }, { d: 'AD' }, { d: 'BC' }, { d: 'BD', b: 1 }, { d: 'CD' }, { tacka: 'ABCD', b: 3 }], { velicina: 180 }) });
+      'prava', { mediji: G(t, [{ tacka: 'ABCD', b: 3 }], { velicina: 180 }), medijiOdgovora: G(t, [...['AB', 'AC', 'AD', 'BC', 'BD', 'CD'].map((d, i) => ({ d, b: i % 3, crtaj: 1, kasni: 0.3 + 0.5 * i, trajanje: 0.6 })), { tacka: 'ABCD', b: 3 }], { velicina: 180 }) });
   }
 
   {
     const t = pravilni(5, 4);
     const e = [];
     const im = Object.keys(t);
-    for (let i = 0; i < 5; i++) for (let j = i + 1; j < 5; j++) e.push({ d: im[i] + im[j], b: j === i + 1 || (i === 0 && j === 4) ? 0 : 1 });
+    for (let i = 0; i < 5; i++) for (let j = i + 1; j < 5; j++) e.push({ d: im[i] + im[j], b: j === i + 1 || (i === 0 && j === 4) ? 0 : 1, crtaj: 1, kasni: 0.3 + 0.4 * e.length, trajanje: 0.5 });
+    proveri(e.length === 10, 'rukovanja');
     Q(2, 'Petoro prijatelja se pozdravi tako da se svako rukuje sa svakim tačno jednom. Koliko je bilo rukovanja?', ['10', '20', '25', '5'],
       'Svako se rukuje sa 4 druga: 5 · 4 = 20, ali je tako svako rukovanje brojano dvaput, pa je 10. Na crtežu: 5 stranica + 5 dijagonala petougla.',
       'rukovanje', { medijiOdgovora: G(t, [...e, { tacka: im.join(''), b: 3 }], { bezImena: im, velicina: 200 }) });
@@ -173,10 +234,16 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, S3, rad, naKrugu, pravilni 
 
   Q(1, 'Kako se zove prava koja je normalna na duž i prolazi kroz njeno središte?', ['Simetrala duži', 'Težišna duž', 'Visina', 'Dijagonala'],
     'Svaka tačka simetrale je jednako udaljena od oba kraja duži. Zato se, na primer, mesto za česmu jednako udaljenu od dve kuće traži baš na simetrali.',
-    'simetrala', { medijiOdgovora: G({ A: [0, 0], B: [6, 0], S: [3, 0, -45], M: [3, 3.5], N: [3, -1.5] }, [{ d: 'AB' }, { d: 'MN', b: 1 }, { pu: 'BSM', b: 3 }, { tacka: 'S' }], { bezImena: ['M', 'N'], velicina: 200 }) });
+    'simetrala', {
+      // konstrukcija: lukovi istog poluprečnika iz A i B, prava kroz njihove preseke
+      medijiOdgovora: G({ A: [0, 0], B: [6, 0], S: [3, 0, -45], P: [3, r(Math.sqrt(7))], R: [3, -r(Math.sqrt(7))], M: [3, 3.6], N: [3, -3.6] }, [{ d: 'AB' },
+        { l: 'A', r: 4, od: 25, do: 55, b: 5, crtaj: 1 }, { l: 'A', r: 4, od: -55, do: -25, b: 5, crtaj: 1, kasni: 0.6 },
+        { l: 'B', r: 4, od: 125, do: 155, b: 5, crtaj: 1, kasni: 1.2 }, { l: 'B', r: 4, od: 205, do: 235, b: 5, crtaj: 1, kasni: 1.8 },
+        { d: 'MN', b: 1, crtaj: 1, kasni: 2.6 }, { d: 'AP', b: 0, isp: 1 }, { d: 'BP', b: 0, isp: 1 }, { pu: 'BSM', b: 3 }, { tacka: 'SPR' }], { bezImena: ['M', 'N', 'P', 'R'], velicina: 220 }),
+    });
 
   Q(3, 'Koji od ovih uglova NE MOŽE da se konstruiše samo lenjirom i šestarom?', ['20°', '15°', '75°', '105°'],
-    'Lenjirom i šestarom dobijaju se 60° i 90°, a zatim njihove polovine, zbirovi i razlike: 15° = 60° − 45°, 75° = 45° + 30°, 105° = 60° + 45°. Ugao od 20° bi zahtevao deljenje 60° na tri dela.',
+    'Lenjirom i šestarom dobijaju se 60° i 90°, a zatim njihove polovine, zbirovi i razlike: 15° = 60° − 45°, 75° = 45° + 30°, 105° = 60° + 45°. Ugao od 20° bi zahtevao deljenje 60° na tri jednaka dela – a Pjer Vancel je 1837. dokazao da se ugao od 60° ne može tako podeliti.',
     'šestar');
 
   {
@@ -194,7 +261,8 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, S3, rad, naKrugu, pravilni 
     };
     Q(2, 'Centar kruga opisanog oko trougla je presek…', ['simetrala stranica', 'simetrala uglova', 'visina trougla', 'težišnih duži'],
       'Centar opisanog kruga je jednako udaljen od sva tri temena, a tačke jednako udaljene od dva temena leže na simetrali stranice. Presek simetrala uglova je centar UPISANOG kruga.',
-      'krug', { medijiOdgovora: G(t, [{ p: 'ABC', b: 0 }, { kr: 'O', kroz: 'A', b: 3 }, sim('A', 'B'), sim('B', 'C'), sim('C', 'A'), { tacka: 'O', b: 1 }], { velicina: 220 }) });
+      'krug', { medijiOdgovora: G(t, [{ p: 'ABC', b: 0 }, ...[sim('A', 'B'), sim('B', 'C'), sim('C', 'A')].map((x, i) => ({ ...x, crtaj: 1, kasni: 0.3 + 0.8 * i })),
+        { kr: 'O', kroz: 'A', b: 3, crtaj: 1, kasni: 2.8, trajanje: 1.8 }, { tacka: 'O', b: 1 }], { velicina: 220 }) });
   }
 
   {
@@ -203,10 +271,20 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, S3, rad, naKrugu, pravilni 
     Object.assign(t, { a: sr('B', 'C'), b: sr('A', 'C'), c: sr('A', 'B'), T: [r(3), r(5.5 / 3), -80] });
     Q(3, 'U kom odnosu težište deli svaku težišnu duž trougla (od temena ka sredini stranice)?', ['2 : 1', '1 : 1', '3 : 1', '3 : 2'],
       'Težište je uvek dva puta dalje od temena nego od sredine naspramne stranice. Trougao od kartona izrezan po meri može se balansirati na vrhu olovke baš u težištu.',
-      'težište', { medijiOdgovora: G(t, [{ p: 'ABC', b: 0 }, { d: 'Aa', b: 1 }, { d: 'Bb', b: 1 }, { d: 'Cc', b: 1 }, { tacka: 'T', b: 3 }], { velicina: 220 }) });
+      'težište', { medijiOdgovora: G(t, [{ p: 'ABC', b: 0 }, ...['Aa', 'Bb', 'Cc'].map((d, i) => ({ d, b: 1, crtaj: 1, kasni: 0.3 + 0.7 * i })), { d: 'AT', b: 3, debljina: 4, o: '2', os: -1 }, { d: 'Ta', b: 4, debljina: 4, o: '1', os: -1 }, { tacka: 'T', b: 3 }], { velicina: 220 }) });
   }
 
   Q(2, 'Koliko ukupno trouglova ima na slici?', ['6', '3', '4', '5'],
     'Iz vrha polaze 4 linije, a svaka dva od njih (sa delom osnovice) čine jedan trougao: 3 mala, 2 srednja (od po dva mala) i 1 veliki – ukupno 6. Kod ovakvih zadataka pomaže brojanje po veličini.',
-    'trougao', { mediji: G({ V: [3, 5], A: [0, 0], B: [2, 0], C: [4, 0], D: [6, 0] }, [{ p: 'VAD', b: 4 }, { d: 'VB' }, { d: 'VC' }], { bezImena: ['V', 'A', 'B', 'C', 'D'], velicina: 220 }) });
+    'trougao', {
+      mediji: G({ V: [3, 5], A: [0, 0], B: [2, 0], C: [4, 0], D: [6, 0] }, [{ p: 'VAD', b: 4, prazno: 1 }, { d: 'VB' }, { d: 'VC' },
+        { p: 'VAB', b: 0, gusto: 1, k: 1, kraj: 2 }, { p: 'VBC', b: 1, gusto: 1, k: 1, kraj: 2 }, { p: 'VCD', b: 2, gusto: 1, k: 1, kraj: 2 },
+        { p: 'VAC', b: 0, gusto: 1, k: 2, kraj: 3 }, { p: 'VBD', b: 1, gusto: 1, k: 3, kraj: 4 }, { p: 'VAD', b: 3, gusto: 1, k: 4 }], { velicina: 220 }),
+      resenje: [
+        { t: 'Mali trouglovi: $VAB$, $VBC$ i $VCD$ – to su 3.' },
+        { t: 'Srednji, od po dva mala: $VAC$…' },
+        { t: '…i $VBD$ – još 2.' },
+        { t: 'Veliki: $VAD$ – još 1. Ukupno 3 + 2 + 1 = 6.' },
+      ],
+    });
 };

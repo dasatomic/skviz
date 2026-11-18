@@ -35,18 +35,37 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, S3, rad, naKrugu, pravilni,
     'površina', { medijiOdgovora: G({ O: [1, 1], P: [6, 2] }, [{ kr: 'O', r: 1, b: 0, pun: 1 }, { kr: 'P', r: 2, b: 1, pun: 1 }, { tx: 'r', at: [1, -0.5] }, { tx: '2r', at: [6, -0.5] }, { tx: '× 4', at: [3.3, 3.2], b: 3 }], { bezImena: ['O', 'P'], velicina: 220 }) });
 
   proveri(20 * 20 > 2 * 12.5 * 12.5, 'pice');
-  Q(3, 'Šta je više pice: jedna prečnika 40 cm ili dve prečnika 25 cm?', ['Jedna od 40 cm', 'Dve od 25 cm', 'Isto je', 'Jedna od 35 cm'],
-    'Površina raste sa kvadratom: $20^{2} = 400$, a $2 · 12,5^{2} = 312,5$ (puta π). Jedna velika pica ima oko 28% više nego dve srednje!',
-    'pica', { mediji: G({ O: [0, 0], P: [6.8, 1.5], R: [6.8, -1.5] }, [{ kr: 'O', r: 4, b: 3, pun: 1 }, { kr: 'P', r: 2.5 * 0.6, b: 1, pun: 1 }, { kr: 'R', r: 2.5 * 0.6, b: 1, pun: 1 }, { tx: '40 cm', at: [0, 0] }, { tx: '25 cm', at: [6.8, 1.5] }, { tx: '25 cm', at: [6.8, -1.5] }], { bezImena: ['O', 'P', 'R'], velicina: 260 }) });
+  Q(3, 'Šta je više pice: jedna prečnika 40 cm ili dve prečnika 25 cm?', ['Jedna od 40 cm', 'Dve od 25 cm', 'Isto je', 'Ne može se uporediti'],
+    'Površina raste sa kvadratom prečnika, pa je za 60% veći prečnik pica čak 2,56 puta veća. Zato je velika pica u piceriji skoro uvek isplativija od dve manje.',
+    'pica', {
+      // poluprečnici u razmeri 20 : 12,5 (crtež je srazmeran)
+      mediji: G({ O: [0, 0], P: [7, 2.6], R: [7, -2.6] }, [{ kr: 'O', r: 4, b: 3, pun: 1, id: 'v' }, { kr: 'P', r: 2.5, b: 1, pun: 1, id: 'm1' }, { kr: 'R', r: 2.5, b: 1, pun: 1, id: 'm2' }, { tx: '40 cm', at: [0, 0.5] }, { tx: '25 cm', at: [7, 3.1] }, { tx: '25 cm', at: [7, -2.1] },
+        { tx: '400π', at: [0, -1], b: 3, k: 1 }, { tx: '156,25π', at: [7, 1.6], k: 2 }, { tx: '156,25π', at: [7, -3.6], k: 2 }], { bezImena: ['O', 'P', 'R'], velicina: 260 }),
+      resenje: [
+        { t: 'Velika pica ima poluprečnik 20 cm: $P = 20^{2}π = 400π$ cm².', i: ['v'] },
+        { t: 'Mala ima poluprečnik 12,5 cm: $P = 12,5^{2}π = 156,25π$ cm², a dve male $312,5π$ cm².', i: ['m1', 'm2'] },
+        { t: '$400π > 312,5π$ – jedna velika pica ima oko 28% više od dve male.', i: ['v'] },
+      ],
+    });
 
   Q(1, 'Koji deo kruga je ovaj isečak od 120°?', ['${1|3}$', '${1|4}$', '${1|6}$', '${1|2}$'],
     'Ceo krug je 360°, a 120° je trećina od toga. Isečci od 120° dele krug na tri jednaka dela – kao znak „Mercedesa“ ili tri parčeta torte.',
-    'isečak', { mediji: G({ O: [0, 0] }, [{ kr: 'O', r: 4, b: 5 }, { is: 'O', r: 4, od: 90, do: 210, b: 1, gusto: 1, o: '120°' }], { bezImena: ['O'], velicina: 200 }) });
+    'isečak', {
+      mediji: G({ O: [0, 0] }, [{ kr: 'O', r: 4, b: 5 }, { is: 'O', r: 4, od: 90, do: 210, b: 1, gusto: 1, o: '120°' }], { bezImena: ['O'], velicina: 200 }),
+      // isti isečak se okrene još dva puta za 120° i popuni ceo krug
+      medijiOdgovora: G({ O: [0, 0] }, [{ kr: 'O', r: 4, b: 5 }, { is: 'O', r: 4, od: 90, do: 210, b: 1, gusto: 1, o: '120°' },
+        { is: 'O', r: 4, od: 90, do: 210, b: 0, gusto: 1, okreni: 120, oko: 'O', kasni: 0.4 }, { is: 'O', r: 4, od: 90, do: 210, b: 2, gusto: 1, okreni: 240, oko: 'O', kasni: 2.2 },
+        { tx: '3 · 120° = 360°', at: [0, -5], b: 3 }], { bezImena: ['O'], velicina: 200 }),
+    });
 
   proveri(Math.abs(2 * 10 * Math.PI - 62.8) < 0.1, 'kazaljka');
   Q(2, 'Minutna kazaljka je duga 10 cm. Koliki put pređe njen vrh za jedan sat?', ['Oko 62,8 cm', 'Oko 31,4 cm', 'Oko 314 cm', 'Tačno 60 cm'],
     'Za sat vremena vrh obiđe ceo krug: $O = 2rπ = 2 · 10 · 3,14$ ≈ 62,8 cm. Mala kazaljka iste dužine za to vreme pređe samo dvanaestinu toga.',
-    'kazaljka', { mediji: { vrsta: 'sat', vreme: '4:00' } });
+    'kazaljka', {
+      mediji: { vrsta: 'sat', vreme: '4:00' },
+      medijiOdgovora: G({ O: [0, 0], A: [0, 4] }, [{ kr: 'O', r: 4, b: 5, isp: 1 }, { d: 'OA', b: 0, o: '10 cm', okreni: -360, oko: 'O', trajanje: 3, ponovi: 1 },
+        { l: 'O', r: 4, od: -268, do: 90, b: 1, pun: 1, str: -1, crtaj: 1, trajanje: 3, ponovi: 1 }, { tx: '2 · 10 · π ≈ 62,8 cm', at: [0, -5.2], b: 3 }], { bezImena: ['O', 'A'], velicina: 200 }),
+    });
 
   {
     const t = pravilni(6, 4);
@@ -60,7 +79,12 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, S3, rad, naKrugu, pravilni,
     proveri(((8 - 2) * 180) / 8 === 135, 'osmougao');
     Q(3, 'Saobraćajni znak STOP je pravilan osmougao. Koliki je svaki njegov unutrašnji ugao?', ['135°', '120°', '140°', '150°'],
       'Zbir uglova osmougla je (8 − 2) · 180° = 1.080°, a pošto su svi jednaki: 1.080° : 8 = 135°. Brže: spoljašnji ugao je 360° : 8 = 45°, a unutrašnji 180° − 45°.',
-      'osmougao', { mediji: G(t, [{ p: 'ABCDEFGH', b: 1, gusto: 1 }], { bezImena: Object.keys(t), velicina: 190 }) });
+      'osmougao', {
+        mediji: G(t, [{ p: 'ABCDEFGH', b: 1, gusto: 1 }], { bezImena: Object.keys(t), velicina: 190 }),
+        // dijagonale iz temena A dele osmougao na 6 trouglova
+        medijiOdgovora: G(t, [{ p: 'ABCDEFGH', b: 1 }, ...['C', 'D', 'E', 'F', 'G'].map((x, i) => ({ d: 'A' + x, b: 3, crtaj: 1, trajanje: 0.6, kasni: 0.3 + 0.5 * i })),
+          { u: 'HAB', b: 2, r: 26 }, { tx: '6 · 180° = 1.080°', at: [0, -5.3], b: 3 }, { tx: '1.080° : 8 = 135°', at: [0, -6.3], b: 2 }], { bezImena: Object.keys(t), velicina: 200 }),
+      });
   }
 
   {
@@ -73,14 +97,20 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, S3, rad, naKrugu, pravilni,
       k++;
     }
     for (const n of Object.keys(t)) t[n] = t[n].map((x) => r(x));
-    Q(3, 'Ravan se može popločati bez praznina samo jednom vrstom pravilnih mnogouglova. Kojim NE MOŽE?', ['Petouglovima', 'Trouglovima', 'Kvadratima', 'Šestouglovima'],
+    Q(3, 'Pod treba popločati jednakim pravilnim mnogouglovima jedne vrste, bez praznina i preklapanja. Kojim to NE MOŽE?', ['Petouglovima', 'Trouglovima', 'Kvadratima', 'Šestouglovima'],
       'U jednom temenu uglovi moraju dati tačno 360°: trouglovi 6 · 60°, kvadrati 4 · 90°, šestouglovi 3 · 120°. Ugao petougla je 108°, a 360 nije deljivo sa 108. Pčele grade saće od šestouglova – oni troše najmanje voska za istu površinu.',
       'parket', { medijiOdgovora: G(t, e, { bezImena: Object.keys(t), velicina: 220 }) });
   }
 
-  Q(3, 'Spoljašnji ugao pravilnog mnogougla je 30°. Koliko taj mnogougao ima stranica?', ['12', '10', '6', '30'],
-    'Kad se obiđe ceo mnogougao, skrene se ukupno za pun krug: zbir spoljašnjih uglova je uvek 360°. Pa je 360° : 30° = 12 stranica (dvanaestougao).',
-    'mnogougao');
+  {
+    const t = pravilni(12, 4);
+    t.X = [r(2 * t.B[0] - t.A[0]), r(2 * t.B[1] - t.A[1])]; // produžetak stranice AB preko B
+    Q(3, 'Spoljašnji ugao pravilnog mnogougla je 30°. Koliko taj mnogougao ima stranica?', ['12', '10', '6', '30'],
+      'Kad se obiđe ceo mnogougao, skrene se ukupno za pun krug: zbir spoljašnjih uglova je uvek 360°. Pa je 360° : 30° = 12 stranica (dvanaestougao). Brojčanik sata je takav dvanaestougao.',
+      'mnogougao', {
+        medijiOdgovora: G(t, [{ p: 'ABCDEFGHIJKL', b: 0 }, { d: 'BX', isp: 1, b: 5 }, { u: 'XBC', o: '30°', b: 1, r: 34 }, { tx: '12 · 30° = 360°', at: [0, 0], b: 3 }], { bezImena: Object.keys(t), velicina: 210 }),
+      });
+  }
 
   {
     const t = { A: [0, 0, 225], B: [4, 0], C: [0, 3], a1: [4, -4], a2: [0, -4], b1: [-3, 3], b2: [-3, 0], c1: [3, 7], c2: [7, 4] };
@@ -95,40 +125,82 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, S3, rad, naKrugu, pravilni,
   proveri(8 * 8 + 15 * 15 === 17 * 17 && 5 * 5 + 11 * 11 !== 12 * 12 && 6 * 6 + 7 * 7 !== 81 && 4 * 4 + 6 * 6 !== 64, 'trojke');
   Q(3, 'Koje dužine mogu biti stranice pravouglog trougla?', ['8, 15 i 17', '5, 11 i 12', '6, 7 i 9', '4, 6 i 8'],
     '$8^{2} + 15^{2} = 64 + 225 = 289 = 17^{2}$. Takve trojke zovu se Pitagorine trojke. Vavilonska glinena pločica Plimpton 322 stara skoro 4.000 godina sadrži spisak takvih trojki!',
-    'trojka');
+    'trojka', {
+      medijiOdgovora: G({ C: [0, 0], A: [7.5, 0], B: [0, 4] }, [{ p: 'ABC', b: 2 }, { pu: 'ACB', b: 3 }, { d: 'CA', o: '15' }, { d: 'BC', o: '8' }, { d: 'AB', o: '17', b: 3 },
+        { tx: '64 + 225 = 289 = 17²', at: [3.75, -1.4], b: 3 }], { bezImena: ['A', 'B', 'C'], velicina: 230 }),
+    });
 
   Q(2, 'Merdevine duge 5 m oslonjene su o zid, a donji kraj je 3 m od zida. Koliko visoko dosežu?', ['4 m', '2 m', '3,5 m', '4,5 m'],
     '$5^{2} − 3^{2} = 25 − 9 = 16$, a $√{16} = 4$ m. Trougao 3–4–5 je najpoznatija Pitagorina trojka – priča se da su egipatski graditelji konopcem sa 12 jednakih razmaka pravili prav ugao.',
-    'merdevine', { mediji: G({ A: [0, 0], B: [3, 0], C: [0, 4], Z: [0, 5], P: [4, 0] }, [{ d: 'AZ', b: 5 }, { d: 'AP', b: 5 }, { d: 'BC', b: 3, o: '5 m' }, { d: 'AB', o: '3 m', os: -1 }, { d: 'AC', isp: 1, b: 1, o: '?' }, { pu: 'BAC', b: 5 }], { bezImena: ['A', 'B', 'C', 'Z', 'P'], velicina: 200 }) });
+    'merdevine', {
+      mediji: G({ A: [0, 0], B: [3, 0], C: [0, 4], Z: [0, 5], P: [4, 0] }, [{ d: 'AZ', b: 5 }, { d: 'AP', b: 5 }, { d: 'BC', b: 3, o: '5 m', id: 'c' }, { d: 'AB', o: '3 m', os: -1, id: 'a' }, { d: 'AC', isp: 1, b: 1, o: '?', id: 'h', kraj: 3 },
+        { p: 'ABC', b: 2, k: 1 }, { d: 'AC', b: 1, o: '4 m', k: 3 }, { pu: 'BAC', b: 5 }], { bezImena: ['A', 'B', 'C', 'Z', 'P'], velicina: 200 }),
+      resenje: [
+        { t: 'Zid, zemlja i merdevine čine pravougli trougao; merdevine su hipotenuza: $5^{2} = 3^{2} + h^{2}$.', i: ['c'] },
+        { t: '$h^{2} = 25 − 9 = 16$', i: ['a', 'h'] },
+        { t: '$h = √{16} = 4$ m' },
+      ],
+    });
 
   proveri(48 * 48 + 36 * 36 === 60 * 60, 'TV');
   Q(2, 'Ekran je širok 48 cm i visok 36 cm. Kolika je njegova dijagonala?', ['60 cm', '84 cm', '54 cm', '42 cm'],
-    '$48^{2} + 36^{2} = 2.304 + 1.296 = 3.600$, a $√{3.600} = 60$ cm. Brže: to je trougao 3–4–5 uvećan 12 puta. Veličina televizora se meri baš po dijagonali, u inčima (1 inč = 2,54 cm).',
-    'ekran', { mediji: G({ A: [0, 0], B: [4.8, 0], C: [4.8, 3.6], D: [0, 3.6] }, [{ p: 'ABCD', b: 0 }, { d: 'AB', o: '48 cm' }, { d: 'BC', o: '36 cm' }, { d: 'AC', isp: 1, b: 1, o: '?' }], { bezImena: ['A', 'B', 'C', 'D'], velicina: 220 }) });
+    'Veličina televizora se meri baš po dijagonali, u inčima (1 inč = 2,54 cm): ovaj ekran od 60 cm bio bi televizor od oko 24 inča.',
+    'ekran', {
+      mediji: G({ A: [0, 0], B: [4.8, 0], C: [4.8, 3.6], D: [0, 3.6] }, [{ p: 'ABCD', b: 0 }, { d: 'AB', o: '48 cm', id: 'a' }, { d: 'BC', o: '36 cm', id: 'b' }, { d: 'AC', isp: 1, b: 1, o: '?', id: 'd', kraj: 3 },
+        { p: 'ABC', b: 3, k: 1 }, { d: 'AC', b: 1, o: '60 cm', k: 3 }], { bezImena: ['A', 'B', 'C', 'D'], velicina: 220 }),
+      resenje: [
+        { t: 'Dijagonala je hipotenuza pravouglog trougla sa katetama 48 cm i 36 cm.', i: ['a', 'b'] },
+        { t: '$48^{2} + 36^{2} = 2.304 + 1.296 = 3.600$ (ili brže: 48 = 4 · 12, 36 = 3 · 12 – trougao 3–4–5 uvećan 12 puta)' },
+        { t: '$d = √{3.600} = 60$ cm (= 5 · 12)' },
+      ],
+    });
 
   Q(3, 'Kolika je udaljenost (vazdušnom linijom) od tačke $A$ do tačke $B$ ako je stranica polja 1?', ['5', '7', '6', '$√{7}$'],
     'Od $A$ do $B$ ide se 3 polja udesno i 4 nagore – to su katete, a tražena duž je hipotenuza: $√{3^{2} + 4^{2}} = 5$. Hodanjem „po ulicama“ put bi bio 3 + 4 = 7.',
     'udaljenost', {
       mediji: G({ A: [1, 1, 225], B: [4, 5, 45] }, [{ mreza: [0, 5, 0, 6], brojevi: 0 }, { tacka: 'AB', b: 1 }], { velicina: 200 }),
-      medijiOdgovora: G({ A: [1, 1, 225], B: [4, 5, 45], C: [4, 1, -45] }, [{ mreza: [0, 5, 0, 6], brojevi: 0 }, { d: 'AC', b: 3, o: '3' }, { d: 'CB', b: 3, o: '4' }, { d: 'AB', b: 1, o: '5' }, { pu: 'ACB', b: 3 }], { bezImena: ['C'], velicina: 200 }),
+      medijiOdgovora: G({ A: [1, 1, 225], B: [4, 5, 45], C: [4, 1, -45] }, [{ mreza: [0, 5, 0, 6], brojevi: 0 }, { d: 'AC', b: 3, o: '3', crtaj: 1, trajanje: 0.8 }, { d: 'CB', b: 3, o: '4', crtaj: 1, trajanje: 0.9, kasni: 1.1 }, { d: 'AB', b: 1, o: '5', crtaj: 1, kasni: 2.2 }, { pu: 'ACB', b: 3 }], { bezImena: ['C'], velicina: 200 }),
     });
 
   Q(3, 'Kolika je visina jednakostraničnog trougla čija je stranica 2?', ['$√{3}$', '1', '$√{2}$', '2'],
-    'Visina deli trougao na dva pravougla trougla sa hipotenuzom 2 i katetom 1: $h = √{2^{2} − 1^{2}} = √{3}$ ≈ 1,73. Uopšte, visina jednakostraničnog trougla stranice $a$ je ${a√{3}|2}$.',
-    'visina', { mediji: G({ A: [0, 0], B: [2, 0], C: [1, r(S3)], H: [1, 0] }, [{ p: 'ABC', b: 0 }, { d: 'CH', isp: 1, b: 1, o: 'h' }, { pu: 'BHC', b: 3 }, { d: 'AB', o: '2' }], { bezImena: ['H'], velicina: 180 }) });
+    'Uopšte, visina jednakostraničnog trougla stranice $a$ je ${a√{3}|2}$ – to je oko 87% stranice. Zato je trougao uvek „niži“ nego što izgleda.',
+    'visina', {
+      mediji: G({ A: [0, 0], B: [2, 0], C: [1, r(S3)], H: [1, 0] }, [{ p: 'ABC', b: 0 }, { d: 'CH', isp: 1, b: 1, o: 'h', id: 'h' }, { pu: 'BHC', b: 3 }, { d: 'AB', o: '2', kraj: 1 },
+        { p: 'AHC', b: 3, gusto: 1, k: 1, id: 'pol' }, { d: 'AH', o: '1', os: -1, b: 3, k: 1, id: 'k' }, { d: 'AC', o: '2', os: -1, b: 3, k: 1, id: 'hip' }], { bezImena: ['H'], velicina: 180 }),
+      resenje: [
+        { t: 'Visina deli trougao na dve polovine. U polovini $AHC$ hipotenuza je 2, a kateta $AH$ je pola stranice, 1.', i: ['pol', 'k', 'hip'] },
+        { t: 'Pitagora: $h^{2} = 2^{2} − 1^{2} = 3$', i: ['h'] },
+        { t: '$h = √{3}$ ≈ 1,73' },
+      ],
+    });
 
   Q(2, 'Štap visok 1 m baca senku dugu 2 m. U isto vreme drvo baca senku od 12 m. Koliko je visoko drvo?', ['6 m', '24 m', '12 m', '3 m'],
     'Sunčevi zraci su paralelni, pa su trouglovi štap–senka i drvo–senka slični: drvo je visoko pola svoje senke. Tako je Tales, kažu, izmerio visinu Keopsove piramide.',
-    'senka', { mediji: G({ A: [0, 0], B: [2, 0], C: [0, 1], D: [4, 0], E: [16, 0], F: [4, 6] }, [{ p: 'ABC', b: 3 }, { p: 'DEF', b: 2 }, { d: 'AC', b: 5, o: '1 m' }, { d: 'AB', o: '2 m' }, { d: 'DE', o: '12 m' }, { d: 'DF', b: 5, o: '?' }], { bezImena: ['A', 'B', 'C', 'D', 'E', 'F'], velicina: 280 }) });
+    'senka', {
+      mediji: G({ A: [0, 0], B: [2, 0], C: [0, 1], D: [4, 0], E: [16, 0], F: [4, 6] }, [{ p: 'ABC', b: 3, id: 'm' }, { p: 'DEF', b: 2, id: 'v' }, { d: 'AC', b: 5, o: '1 m' }, { d: 'AB', o: '2 m' }, { d: 'DE', o: '12 m' }, { d: 'DF', b: 5, o: '?', kraj: 2 },
+        { d: 'CB', b: 3, debljina: 4, k: 1, id: 'z1' }, { d: 'FE', b: 3, debljina: 4, k: 1, id: 'z2' }, { d: 'DF', b: 1, o: '6 m', k: 2 }], { bezImena: ['A', 'B', 'C', 'D', 'E', 'F'], velicina: 280 }),
+      resenje: [
+        { t: 'Sunčevi zraci su paralelni, pa su trouglovi štap–senka i drvo–senka slični (isti uglovi).', i: ['z1', 'z2'] },
+        { t: 'Kod štapa je senka 2 puta duža od visine, pa je i kod drveta: 12 m : 2 = 6 m.', i: ['v'] },
+      ],
+    });
 
   {
     const h = r(S3 / 2), e = [];
     const tr = (x, y, s) => [[x, y], [x + s, y], [r(x + s / 2), r(y + s * h * 2 / 2)]];
     e.push({ lin: tr(0, 0, 1), zatv: 1, b: 0, gusto: 1 });
-    for (let i = 0; i < 3; i++) for (let j = 0; j < 3 - i; j++) e.push({ lin: tr(2 + j + i * 0.5, r(i * h), 1), zatv: 1, b: 1 });
-    for (let i = 0; i < 2; i++) for (let j = 0; j < 2 - i; j++) e.push({ lin: [[2.5 + j + i * 0.5, r((i + 1) * h)], [3.5 + j + i * 0.5, r((i + 1) * h)], [3 + j + i * 0.5, r(i * h)]], zatv: 1, b: 4 });
+    // mali trouglovi „doleću“ sa mesta polaznog trougla (pomeri) i popune veliki
+    let n = 0;
+    const doleti = (x, y, b, obrnut) => e.push({
+      lin: obrnut ? [[0, r(2 * h)], [1, r(2 * h)], [0.5, r(h)]] : tr(0, 0, 1), zatv: 1, b, gusto: 1,
+      pomeri: obrnut ? [r(x), r(y - 2 * h)] : [r(x), r(y)], kasni: r(0.3 + 0.35 * n++), trajanje: 0.9,
+    });
+    e.push({ lin: tr(2, 0, 3), zatv: 1, b: 1, prazno: 1 });
+    for (let i = 0; i < 3; i++) for (let j = 0; j < 3 - i; j++) doleti(2 + j + i * 0.5, r(i * h), 1);
+    for (let i = 0; i < 2; i++) for (let j = 0; j < 2 - i; j++) doleti(2.5 + j + i * 0.5, r((i + 1) * h), 4, true);
+    proveri(n === 9, '9 malih trouglova');
     Q(3, 'Sve stranice trougla se uvećaju 3 puta. Koliko puta se poveća njegova površina?', ['9 puta', '3 puta', '6 puta', '27 puta'],
-      'Kad se dužine uvećaju $k$ puta, površina se uveća $k · k$ puta: 3 · 3 = 9. Na slici: veliki trougao se sastoji od 9 malih. Zapremina tela bi se uvećala čak 3 · 3 · 3 = 27 puta.',
+      'Kad se dužine uvećaju $k$ puta, površina se uveća $k · k$ puta: 3 · 3 = 9 – u veliki trougao staje tačno 9 malih. Zapremina tela bi se uvećala čak 3 · 3 · 3 = 27 puta.',
       'površina', { mediji: G({ O: [0, 0] }, [e[0], { lin: tr(2, 0, 3), zatv: 1, b: 1 }], { bezImena: ['O'], velicina: 220 }), medijiOdgovora: G({ O: [0, 0] }, e, { bezImena: ['O'], velicina: 220 }) });
   }
 
@@ -139,11 +211,16 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, S3, rad, naKrugu, pravilni,
   proveri(Math.abs(1 / (2 * Math.PI) - 0.159) < 0.001, 'konopac');
   Q(3, 'Konopac čvrsto obavija Zemlju po ekvatoru. Produžimo ga za samo 1 m i podignemo ravnomerno svuda okolo. Koliko visoko će biti iznad zemlje?', ['Oko 16 cm', 'Manje od 1 mm', 'Oko 1 cm', 'Oko 1 m'],
     'Obim je $2πr$, pa duži obim za 1 m znači poluprečnik veći za ${1|2π}$ m ≈ 16 cm – bez obzira na to koliko je krug velik! Ista visina bi bila i oko lopte za tenis. Većina ljudi pogađa „manje od milimetra“.',
-    'konopac', { vreme: 30 });
+    'konopac', {
+      vreme: 30,
+      medijiOdgovora: G({ O: [0, 0], A: [0, 4], B: [0, 4.8] }, [{ kr: 'O', r: 4, b: 2, pun: 1 }, { kr: 'O', r: 4.8, b: 3, crtaj: 1, trajanje: 1.8 }, { d: 'OA', b: 5, o: 'r', na: 0.4 }, { d: 'AB', b: 1, debljina: 4, o: '≈ 16 cm' },
+        { tx: '2π(r + h) = 2πr + 1', at: [0, -6], b: 3 }, { tx: 'h = 1 : 2π ≈ 0,16 m', at: [0, -7], b: 1 }], { bezImena: ['O', 'A', 'B'], velicina: 220 }),
+    });
 
   Q(3, 'Kvadrat je upisan u krug poluprečnika 1. Kolika je površina kvadrata?', ['2', '1', '4', '1,5'],
     'Dijagonale kvadrata su prečnici kruga (dužine 2) i normalne su, pa kvadrat čine 4 pravougla trougla sa katetama 1: 4 · ${1|2}$ = 2. Krug ima površinu π ≈ 3,14, pa kvadrat zauzima oko 64% kruga.',
-    'kvadrat', { mediji: G({ O: [0, 0], A: [1, 0], B: [0, 1], C: [-1, 0], D: [0, -1] }, [{ kr: 'O', r: 1, b: 5 }, { p: 'ABCD', b: 0 }, { d: 'OA', o: '1', b: 3 }], { bezImena: ['O', 'A', 'B', 'C', 'D'], velicina: 190 }), medijiOdgovora: G({ O: [0, 0], A: [1, 0], B: [0, 1], C: [-1, 0], D: [0, -1] }, [{ kr: 'O', r: 1, b: 5 }, { p: 'ABCD', b: 0 }, { d: 'AC', b: 1 }, { d: 'BD', b: 1 }], { bezImena: ['O', 'A', 'B', 'C', 'D'], velicina: 190 }) });
+    'kvadrat', { mediji: G({ O: [0, 0], A: [1, 0], B: [0, 1], C: [-1, 0], D: [0, -1] }, [{ kr: 'O', r: 1, b: 5 }, { p: 'ABCD', b: 0 }, { d: 'OA', o: '1', b: 3 }], { bezImena: ['O', 'A', 'B', 'C', 'D'], velicina: 190 }), medijiOdgovora: G({ O: [0, 0], A: [1, 0], B: [0, 1], C: [-1, 0], D: [0, -1] }, [{ kr: 'O', r: 1, b: 5 }, ...['OAB', 'OBC', 'OCD', 'ODA'].map((p, i) => ({ p, b: i, gusto: 1, crtaj: 1, kasni: 0.3 + 0.5 * i, trajanje: 0.6 })),
+      { d: 'OA', o: '1' }, { d: 'OB', o: '1', os: -1 }, { pu: 'AOB', b: 3 }, { tx: '4 · ½ · 1 · 1 = 2', at: [0, -1.45], b: 3 }], { bezImena: ['O', 'A', 'B', 'C', 'D'], velicina: 190 }) });
 
   S(2, 'Spoji veličinu sa formulom (krug poluprečnika $r$)', [['Obim kruga', '$2rπ$'], ['Površina kruga', '$r^{2}π$'], ['Prečnik', '$2r$'], ['Dužina polukružnice', '$rπ$']],
     'Lako se pomešaju obim i površina: površina ima KVADRAT (jedinica je cm²), a obim nema (jedinica je cm). Dužina luka od α stepeni je ${α|360°}$ obima.',

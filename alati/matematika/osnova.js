@@ -18,8 +18,10 @@ function dodaj(p) {
 const dodatno = (x) => ({
   ...(x.mediji ? { mediji: x.mediji } : {}),
 });
-const posle = (x) => ({
-  ...(x.objasnjenje ? { objasnjenje: x.objasnjenje } : {}),
+// rešenje korak po korak (kao u zadacima): [{ t: 'korak', i: [id…], crtez? }, …]; osnovni crtež je resenjeCrtez ili geo uz pitanje
+const resenje = (x) => ({
+  ...(x.resenje ? { resenje: x.resenje } : {}),
+  ...(x.resenjeCrtez ? { resenjeCrtez: x.resenjeCrtez } : {}),
 });
 
 // Q(težina, pitanje, odgovori [prvi tačan], zanimljivost, pojam, { mediji, medijiOdgovora, vreme, autor })
@@ -28,6 +30,7 @@ function Q(tezina, pitanje, odgovori, zanimljivost, rec, x = {}) {
   dodaj({
     tezina, pitanje, ...dodatno(x), odgovori, zanimljivost,
     ...(x.medijiOdgovora ? { medijiOdgovora: x.medijiOdgovora } : {}),
+    ...resenje(x),
     ...(x.vreme ? { vreme: x.vreme } : {}),
     rec,
     ...(x.autor ? { autor: x.autor } : {}),
@@ -39,6 +42,7 @@ function U(tezina, pitanje, odgovori, objasnjenje, zanimljivost, rec, x = {}) {
   dodaj({
     vrsta: 'uljez', tezina, pitanje, ...dodatno(x), odgovori, objasnjenje, zanimljivost,
     ...(x.medijiOdgovora ? { medijiOdgovora: x.medijiOdgovora } : {}),
+    ...resenje(x),
     rec,
     ...(x.autor ? { autor: x.autor } : {}),
   });
@@ -48,6 +52,7 @@ function S(tezina, pitanje, parovi, zanimljivost, rec, x = {}) {
   dodaj({
     vrsta: 'spoji', tezina, pitanje, ...dodatno(x), parovi, zanimljivost,
     ...(x.medijiOdgovora ? { medijiOdgovora: x.medijiOdgovora } : {}),
+    ...resenje(x),
     rec,
     ...(x.autor ? { autor: x.autor } : {}),
   });
