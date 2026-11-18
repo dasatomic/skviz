@@ -14702,6 +14702,54 @@
   {
    "lekcija": 8,
    "tezina": 2,
+   "pitanje": "Ronilac kreće sa površine mora i svakog minuta se spusti 3 m. Ako površinu računamo kao 0 m, njegov položaj posle $x$ minuta je $y = -3x$. Gde je posle 4 minuta?",
+   "odgovori": [
+    "−12 m",
+    "12 m",
+    "−7 m",
+    "−1 m"
+   ],
+   "zanimljivost": "Zamenimo $x = 4$: $y = -3· 4 = -12$. Minus znači da je 12 m ispod površine. Nadmorska visina se meri od nivoa mora kao od nule: obala Mrtvog mora je oko 430 m ispod nivoa mora, pa joj je nadmorska visina oko −430 m.",
+   "rec": "koeficijent",
+   "mediji": {
+    "vrsta": "geo",
+    "t": {},
+    "e": [
+     {
+      "mreza": [
+       0,
+       5,
+       -15,
+       0
+      ],
+      "podela": [
+       1,
+       3
+      ],
+      "brojevi": 1
+     },
+     {
+      "lin": [
+       [
+        0,
+        0
+       ],
+       [
+        5,
+        -15
+       ]
+      ],
+      "b": 1,
+      "debljina": 3
+     }
+    ],
+    "bezImena": [],
+    "velicina": 300
+   }
+  },
+  {
+   "lekcija": 8,
+   "tezina": 2,
    "pitanje": "Kako izgleda grafik funkcije $y = -2x$?",
    "odgovori": [
     "Opadajuća prava kroz koordinatni početak",
@@ -14987,54 +15035,6 @@
    ],
    "zanimljivost": "Koeficijent je broj uz $x$. Kod $y = {x|3}$ je $k = {1|3}$, jer je ${x|3} = {1|3}· x$.",
    "rec": "koeficijent"
-  },
-  {
-   "lekcija": 8,
-   "tezina": 3,
-   "pitanje": "Mama je na računu imala 0 dinara. Svaka čokolada koju kupi sinu košta 100 dinara, pa je stanje $y = -100x$. Koliko je stanje posle tri čokolade?",
-   "odgovori": [
-    "−300 din.",
-    "300 din.",
-    "−103 din.",
-    "−30 din."
-   ],
-   "zanimljivost": "Zamenimo $x = 3$: $y = -100· 3 = -300$. Minus znači dug na računu. Stanje koje se menja po jednom pravilu je primer linearne funkcije; sve direktne proporcionalnosti prolaze kroz (0, 0).",
-   "rec": "koeficijent",
-   "mediji": {
-    "vrsta": "geo",
-    "t": {},
-    "e": [
-     {
-      "mreza": [
-       0,
-       4,
-       -400,
-       0
-      ],
-      "podela": [
-       1,
-       100
-      ],
-      "brojevi": 1
-     },
-     {
-      "lin": [
-       [
-        0,
-        0
-       ],
-       [
-        4,
-        -400
-       ]
-      ],
-      "b": 1,
-      "debljina": 3
-     }
-    ],
-    "bezImena": [],
-    "velicina": 300
-   }
   },
   {
    "lekcija": 8,

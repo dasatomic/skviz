@@ -193,9 +193,9 @@ module.exports = ({ L, Q, U, S, G, r, kruzni, proveri, pitanja }) => {
     'Iz $y = 4x$ sledi $x = \\frac{y}{4} = \\frac{7}{4} = 1,75$. Obim je uvek 4 puta veći od stranice.', 'obim',
     { mediji: ravan([0, 2.5, 0, 8.5], { podela: [0.5, 1], elementi: [{ lin: [[0, 0], [2.1, 8.4]], b: 1, debljina: 3 }] }),
       medijiOdgovora: ravan([0, 2.5, 0, 8.5], { podela: [0.5, 1], elementi: [{ lin: [[0, 0], [2.1, 8.4]], b: 1, debljina: 3 }, { lin: [[0, 7], [1.75, 7], [1.75, 0]], b: 2, isp: 1 }, { tacka: 'T', b: 2 }] }) });
-  Q(3, 'Mama je na računu imala 0 dinara. Svaka čokolada koju kupi sinu košta 100 dinara, pa je stanje $y = -100x$. Koliko je stanje posle tri čokolade?',
-    ['−300 din.', '300 din.', '−103 din.', '−30 din.'],
-    'Zamenimo $x = 3$: $y = -100\\cdot 3 = -300$. Minus znači dug na računu.', 'koeficijent');
+  Q(2, 'Ronilac kreće sa površine mora i svakog minuta se spusti 3 m. Ako površinu računamo kao 0 m, njegov položaj posle $x$ minuta je $y = -3x$. Gde je posle 4 minuta?',
+    ['−12 m', '12 m', '−7 m', '−1 m'],
+    'Zamenimo $x = 4$: $y = -3\\cdot 4 = -12$. Minus znači da je 12 m ispod površine.', 'koeficijent');
   Q(2, 'Kako izgleda grafik funkcije $y = -2x$?',
     ['Opadajuća prava kroz koordinatni početak', 'Rastuća prava kroz koordinatni početak', 'Prava paralelna sa x-osom', 'Prava koja ne prolazi kroz koordinatni početak'],
     'Za $k = -2 < 0$ prava se spušta: što je $x$ veće, $y$ je manje. Prolazi kroz $(0, 0)$ jer je $y = 0$ za $x = 0$.', 'nagib',
@@ -321,7 +321,7 @@ module.exports = ({ L, Q, U, S, G, r, kruzni, proveri, pitanja }) => {
   uzPitanje('za $x = 4$', ravan([0, 5, 0, 9], { elementi: [{ lin: [[0, 0], [4.5, 9]], b: 1, debljina: 3 }] }));
   uzPitanje('za $x = 1,5$', ravan([0, 2.5, 0, 5], { elementi: [{ lin: [[0, 0], [2.25, 4.5]], b: 1, debljina: 3 }] }));
   uzPitanje('Ako je $y = 3x$ i', ravan([-3, 1, -7, 1], { elementi: [{ lin: [[-2.4, -7.2], [0.5, 1.5]], b: 1, debljina: 3 }] }));
-  uzPitanje('Mama je na računu', ravan([0, 4, -400, 0], { podela: [1, 100], elementi: [{ lin: [[0, 0], [4, -400]], b: 1, debljina: 3 }] }));
+  uzPitanje('Ronilac kreće sa površine', ravan([0, 5, -15, 0], { podela: [1, 3], elementi: [{ lin: [[0, 0], [5, -15]], b: 1, debljina: 3 }] }));
   // 9. produžena proporcija: trake podeljene u razmeri
   uzPitanje('Ako je $a : b : c = 1 : 2 : 3$ i $b = 10$', trakaDelova([1, 2, 3], { natpisi: ['a', 'b', 'c'], iznad: 'b = 10', velicina: 340 }));
   uzPitanje('Ako je $a : b = 3 : 4$ i $a = 9$', trakaDelova([3, 4], { natpisi: ['a = 9', 'b'], velicina: 340 }));
@@ -362,7 +362,7 @@ module.exports = ({ L, Q, U, S, G, r, kruzni, proveri, pitanja }) => {
   cinjenica('Prava $y = kx$ prolazi kroz', 'Količnik y/x je za sve tačke jedne prave isti, pa se proporcionalnost prepoznaje i iz tabele.');
   cinjenica('Prave $p$ i $q$', 'Koeficijent k je tangens ugla koji prava zaklapa sa x-osom (to se uči u srednjoj školi).');
   cinjenica('stranica kvadrata $x$ kad je njegov obim', 'Obim kvadrata je uvek 4 puta veći od stranice, pa je grafik ove veze uvek prava sa k = 4.');
-  cinjenica('Mama je na računu', 'Stanje koje se menja po jednom pravilu je primer linearne funkcije; sve direktne proporcionalnosti prolaze kroz (0, 0).');
+  cinjenica('Ronilac kreće sa površine', 'Nadmorska visina se meri od nivoa mora kao od nule: obala Mrtvog mora je oko 430 m ispod nivoa mora, pa joj je nadmorska visina oko −430 m.');
   cinjenica('Kako izgleda grafik funkcije', 'Nizbrdica je primer negativnog nagiba: što se dalje ide, to je niže.');
   cinjenica('Za koje $k$ je funkcija', 'Prava kroz koordinatni početak deli ravan na dva dela; znak k određuje u kom smeru prava ide.');
   cinjenica('Zašto koeficijent', 'Kad je k = 0, grafik je x-osa, jedina proporcionalna prava koja se ne penje ni ne spušta.');
