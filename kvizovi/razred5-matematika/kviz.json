@@ -219,7 +219,7 @@
    "zanimljivost": "Komutativnost znači „razmena“: $a+b=b+a$. Isto važi i za množenje: $a · b = b · a$. Oduzimanje i deljenje ovo svojstvo nemaju!",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$a+b=b+a$"
+    "tekst": "a + b = b + a"
    },
    "rec": "zamena"
   },
@@ -236,7 +236,7 @@
    "zanimljivost": "Asocijativnost znači „udruživanje“ – zagrade se mogu pomerati. Zahvaljujući njoj možeš prvo sabrati $357+643=1000$, pa tek onda dodati $589$.",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$(a+b)+c=a+(b+c)$"
+    "tekst": "(a + b) + c = a + (b + c)"
    },
    "rec": "udruživanje"
   },
@@ -253,7 +253,7 @@
    "zanimljivost": "Nula je neutralna za sabiranje: $a+0=a$. Zato se nula i zove „neutral“. Za množenje je neutralan broj 1.",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$a+0=a$"
+    "tekst": "a + 0 = a"
    },
    "rec": "nula"
   },
@@ -270,7 +270,7 @@
    "zanimljivost": "Jedinica je neutralna za množenje: $a · 1 = a$. Svaki broj pomnožen jedinicom ostaje isti.",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$a\\cdot1=a$"
+    "tekst": "a·1 = a"
    },
    "rec": "jedinica"
   },
@@ -287,7 +287,7 @@
    "zanimljivost": "Nula podeljena bilo čim (osim nulom) je uvek nula: nemaš ništa, pa na koliko god delova da podeliš, svaki deo je prazan.",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$0:7=0$"
+    "tekst": "0:7 = 0"
    },
    "rec": "nula"
   },
@@ -304,7 +304,7 @@
    "zanimljivost": "Distributivnost znači „razdeljivanje“: množenje se raspodeljuje na svaki sabirak u zagradi. Zato je $7 · 12 = 7·10 + 7·2 = 70+14=84$.",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$a\\cdot(b+c)=a\\cdot b+a\\cdot c$"
+    "tekst": "a·(b + c) = a· b + a· c"
    },
    "rec": "raspodela"
   },
@@ -321,7 +321,7 @@
    "zanimljivost": "Množenje nulom „uništava“ sve: $a · 0 = 0$. Zato se nula zove i „upijajući element“ za množenje.",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$a\\cdot0=0$"
+    "tekst": "a·0 = 0"
    },
    "rec": "množenje"
   },
@@ -338,7 +338,7 @@
    "zanimljivost": "Da je $10:0=x$, moralo bi da važi $x · 0 = 10$ – a svaki broj puta nula daje nulu. Zato deljenje nulom nema rešenje; kažemo da nije definisano.",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$a:0$ nije definisano"
+    "tekst": "a:0 nije definisano"
    },
    "rec": "deljenje"
   },
@@ -355,7 +355,7 @@
    "zanimljivost": "Kad od broja oduzmeš samog sebe, ostaje ništa: $a-a=0$. Isto kao kad pojedeš sve što imaš.",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$a-a=0$"
+    "tekst": "a − a = 0"
    },
    "rec": "oduzimanje"
   },
@@ -607,7 +607,7 @@
    "zanimljivost": "Provera je uvek: $deljenik = delilac · količnik + ostatak$. Ovde: $23 = 4·5 + 3$. Ako ovo važi, deljenje je tačno.",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$a=b\\cdot q+r$"
+    "tekst": "a = b· q + r"
    },
    "rec": "provera"
   },
@@ -901,7 +901,7 @@
    "zanimljivost": "Ako $6$ deli $24$ bez ostatka, onda je $6$ delilac (činilac) broja $24$. Činioci su brojevi čijim množenjem nastaje dati broj: $6·4=24$.",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$24=6\\cdot4$"
+    "tekst": "24 = 6·4"
    },
    "rec": "delilac"
   },
@@ -1692,7 +1692,7 @@
    "zanimljivost": "Broj 1 deli svaki broj bez ostatka, pa je delilac svih prirodnih brojeva. Zato se i ne računa u „prave“ delioce kada tražimo proste brojeve.",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$n:1=n$"
+    "tekst": "n:1 = n"
    },
    "rec": "jedinica"
   },
@@ -1709,7 +1709,7 @@
    "zanimljivost": "Za svaki prirodan broj $n$ važi $n · 0 = 0$, pa je $0$ sadržalac svakog broja. Zato je 0 i deljiva svim brojevima (osim deljenja nulom).",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$n\\cdot0=0$"
+    "tekst": "n·0 = 0"
    },
    "rec": "nula"
   },
@@ -2074,7 +2074,7 @@
    "zanimljivost": "Broj je deljiv sa 2 ako mu je poslednja cifra parna: $0, 2, 4, 6$ ili $8$. Takve brojeve zovemo parni.",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "parne cifre: $0,2,4,6,8$"
+    "tekst": "parne cifre: 0,2,4,6,8"
    },
    "rec": "deljivost"
   },
@@ -2927,7 +2927,7 @@
    "zanimljivost": "Svaki broj deljiv sa 9 deljiv je i sa 3, jer je $9=3·3$. Obrnuto ne važi: $12$ je deljivo sa 3, ali ne i sa 9.",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$9=3\\cdot3$"
+    "tekst": "9 = 3·3"
    },
    "rec": "deljivost"
   },
@@ -3024,7 +3024,7 @@
    "zanimljivost": "Skup je osnovni pojam: objekte skupa zovemo elementima. Skup se zapisuje vitičastim zagradama, na primer $A=\\{1,2,3\\}$.",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$A=\\{1,2,3\\}$"
+    "tekst": "A = {1,2,3}"
    },
    "rec": "skup"
   },
@@ -3041,7 +3041,7 @@
    "zanimljivost": "Oznaka $∈$ čitamo „pripada“: $2 ∈ A$ znači da je 2 element skupa $A$. Precrtana oznaka $∉$ znači „ne pripada“.",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$2 \\in A$"
+    "tekst": "2 ∈ A"
    },
    "rec": "pripada"
   },
@@ -3058,7 +3058,7 @@
    "zanimljivost": "Prazan skup označavamo sa $∅$ ili $\\{\\}$. On nema nijedan element, ali je i dalje skup – kao prazna kutija.",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$\\varnothing = \\{\\}$"
+    "tekst": "∅ = {}"
    },
    "rec": "prazan"
   },
@@ -3075,7 +3075,7 @@
    "zanimljivost": "Prirodni brojevi su brojevi za brojanje: $1,2,3,4,…$ Označavamo ih sa $ℕ$ (od engleskog „natural“).",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$\\mathbb{N}=\\{1,2,3,4,\\dots\\}$"
+    "tekst": "ℕ = {1,2,3,4,…}"
    },
    "rec": "prirodan"
   },
@@ -3092,7 +3092,7 @@
    "zanimljivost": "Skup $ℕ₀$ dobijamo kad prirodnim brojevima dodamo nulu: $0,1,2,3,…$ Donja nula u oznaci upravo to i govori.",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$\\mathbb{N}_0=\\{0,1,2,3,\\dots\\}$"
+    "tekst": "ℕ₀ = {0,1,2,3,…}"
    },
    "rec": "prirodan"
   },
@@ -3109,7 +3109,7 @@
    "zanimljivost": "$∅$ nema nijedan element, a $\\{0\\}$ ima jedan element – broj 0. To je razlika kao između prazne kutije i kutije u kojoj je jedna nula.",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$\\varnothing\\neq\\{0\\}$"
+    "tekst": "∅≠{0}"
    },
    "rec": "prazan"
   },
@@ -7982,7 +7982,7 @@
    "zanimljivost": "Znak $∥$ čitamo „paralelno sa“: $a∥ b$. Znak $⊥$ znači „normalno na“.",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$a \\parallel b$"
+    "tekst": "a ∥ b"
    },
    "rec": "paralelne"
   },
@@ -20835,7 +20835,7 @@
    "zanimljivost": "Zlatno pravilo: proizvod NZD i NZS jednak je proizvodu samih brojeva. Na primer, za 12 i 18: $6 · 36 = 12 · 18 = 216$.",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$NZD\\cdot NZS=a\\cdot b$"
+    "tekst": "NZD· NZS = a· b"
    },
    "rec": "proizvod"
   },
@@ -40873,7 +40873,7 @@
    "zanimljivost": "Kad su imenioci isti, samo sabereš brojioce: ${1|5}+{2|5}={3|5}$. Imenilac se ne menja.",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$\\frac{a}{c}+\\frac{b}{c}=\\frac{a+b}{c}$"
+    "tekst": "a/c + b/c = (a + b)/c"
    },
    "rec": "sabiranje"
   },
@@ -42928,7 +42928,7 @@
    "zanimljivost": "Pri potpisivanju decimalnih brojeva, decimalni zarezi moraju biti tačno jedan ispod drugog – tako se saberu desetinke sa desetinkama, stotinke sa stotinkama…",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$0,\\!3+0,\\!4=0,\\!7$"
+    "tekst": "0,3 + 0,4 = 0,7"
    },
    "rec": "decimala"
   },
@@ -50940,7 +50940,7 @@
    "zanimljivost": "Prvo se računa ono što je u zagradama, zatim množenje i deljenje, pa tek onda sabiranje i oduzimanje.",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$(2+3)\\cdot4=20$"
+    "tekst": "(2 + 3)·4 = 20"
    },
    "rec": "zagrada"
   },
@@ -50957,7 +50957,7 @@
    "zanimljivost": "Množenje ima prednost nad sabiranjem: $6+4·3=6+12=18$.",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$6+4\\cdot3=6+12=18$"
+    "tekst": "6 + 4·3 = 6 + 12 = 18"
    },
    "rec": "redosled"
   },
@@ -51347,7 +51347,7 @@
    "zanimljivost": "Prvo množenje: $3·2=6$, pa $12-6=6$, pa $6+4=10$. Računanje redom sleva nadesno daje 22, a to je greška – množenje ide pre sabiranja i oduzimanja.",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$12-3\\cdot2+4=10$"
+    "tekst": "12 − 3·2 + 4 = 10"
    },
    "rec": "redosled"
   },
@@ -51398,7 +51398,7 @@
    "zanimljivost": "Ako je $x + 3 = 7$, onda je $x = 7 - 3 = 4$. Nepoznati sabirak je zbir minus poznati sabirak.",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$x+3=7 \\Rightarrow x=7-3=4$"
+    "tekst": "x + 3 = 7 ⇒ x = 7 − 3 = 4"
    },
    "rec": "jednačina"
   },
@@ -51474,7 +51474,7 @@
    "zanimljivost": "Umanjenik je broj od kog oduzimamo. Nalazimo ga tako što razliku saberemo sa umanjiocem: $x = 9 + 5 = 14$.",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$x-5=9 \\Rightarrow x=14$"
+    "tekst": "x − 5 = 9 ⇒ x = 14"
    },
    "rec": "jednačina"
   },
@@ -51774,7 +51774,7 @@
    "zanimljivost": "$4+2=6$, a $6>5$ – tačno. Broj 3 bi dao $3+2=5$, a to nije veće od 5.",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$x+2>5 \\Rightarrow x>3$"
+    "tekst": "x + 2>5 ⇒ x>3"
    },
    "rec": "nejednačina"
   },
@@ -51858,7 +51858,7 @@
    "zanimljivost": "Množenje razlomaka: ${a|b}·{c|d}={a· c|b· d}$. Brojioci se množe međusobno, imenioci takođe.",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$\\frac{a}{b}\\cdot\\frac{c}{d}=\\frac{a\\cdot c}{b\\cdot d}$"
+    "tekst": "a/b·c/d = (a· c)/(b· d)"
    },
    "rec": "množenje"
   },
@@ -52345,7 +52345,7 @@
    "zanimljivost": "Celi broj napišemo kao ${2|1}$, pa množimo: ${2|1}·{3|5}={6|5}$. Dakle, samo se brojilac množi.",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$2\\cdot\\frac{3}{5}=\\frac{2\\cdot3}{5}=\\frac{6}{5}$"
+    "tekst": "2·3/5 = (2·3)/5 = 6/5"
    },
    "rec": "množenje"
   },
@@ -52629,7 +52629,7 @@
    "zanimljivost": "Prvo zanemariš zareze i pomnožiš kao cele brojeve. Zatim u rezultatu odvojiš onoliko decimala koliko ih imaju oba činioca zajedno.",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$0,\\!2\\cdot0,\\!3=0,\\!06$"
+    "tekst": "0,2·0,3 = 0,06"
    },
    "rec": "množenje"
   },
@@ -55203,7 +55203,7 @@
    "zanimljivost": "Prvi činilac ima 2 decimale, drugi 1 – ukupno 3. Zato proizvod $0,036$ ima 3 decimalna mesta.",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$0,\\!12\\cdot0,\\!3=0,\\!036$"
+    "tekst": "0,12·0,3 = 0,036"
    },
    "rec": "decimala"
   },
@@ -55338,7 +55338,7 @@
    "zanimljivost": "Recipročna vrednost broja $a$ je ${1|a}$, jer je $a·{1|a}=1$. Na primer, recipročno od 5 je ${1|5}$.",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$a\\cdot\\frac{1}{a}=1$"
+    "tekst": "a·1/a = 1"
    },
    "rec": "recipročan"
   },
@@ -55355,7 +55355,7 @@
    "zanimljivost": "Recipročnu vrednost razlomka dobijemo zamenom brojioca i imenioca: ${2|3} → {3|2}$.",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$\\frac{2}{3}\\to\\frac{3}{2}$"
+    "tekst": "2/3→3/2"
    },
    "rec": "recipročan"
   },
@@ -55372,7 +55372,7 @@
    "zanimljivost": "Deljenje razlomaka pretvaramo u množenje: ${a|b}:{c|d}={a|b}·{d|c}$. Delilac se „obrne“.",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$\\frac{a}{b}:\\frac{c}{d}=\\frac{a}{b}\\cdot\\frac{d}{c}$"
+    "tekst": "a/b:c/d = a/b·d/c"
    },
    "rec": "deljenje"
   },
@@ -55665,7 +55665,7 @@
    "zanimljivost": "Recipročno od 5 je ${1|5}$, jer je $5·{1|5}=1$. Svaki broj (osim nule) ima recipročnu vrednost.",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$5\\to\\frac{1}{5}$"
+    "tekst": "5→1/5"
    },
    "rec": "recipročan"
   },
@@ -55682,7 +55682,7 @@
    "zanimljivost": "Recipročno od 0 bi bilo ${1|0}$, a deljenje nulom nije dozvoljeno. Nijedan broj pomnožen nulom ne daje 1.",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$\\frac{1}{0}$ nije definisano"
+    "tekst": "1/0 nije definisano"
    },
    "rec": "recipročan"
   },
@@ -55699,7 +55699,7 @@
    "zanimljivost": "Na primer, za $1,5:0,5$ proširimo oba broja sa 10: $15:5=3$. Delilac mora postati ceo broj.",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$1,\\!5:0,\\!5=3$"
+    "tekst": "1,5:0,5 = 3"
    },
    "rec": "deljenje"
   },
@@ -55760,7 +55760,7 @@
    "zanimljivost": "Deljenje sa $0,1$ znači „koliko desetinki staje u broj“ – to je isto kao množenje sa 10: $3:0,1=30$.",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$3:0,\\!1=3\\cdot10=30$"
+    "tekst": "3:0,1 = 3·10 = 30"
    },
    "rec": "deljenje"
   },
@@ -55895,7 +55895,7 @@
    "zanimljivost": "Množenje ima prednost: $2+3·4=2+12=14$.",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$2+3\\cdot4=14$"
+    "tekst": "2 + 3·4 = 14"
    },
    "rec": "redosled"
   },
@@ -55912,7 +55912,7 @@
    "zanimljivost": "Distributivnost razlaže množenje na sabirke: $a·(b+c)=a· b+a· c$. Tako je lakše množiti „okrugle“ brojeve.",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$a\\cdot(b+c)=a\\cdot b+a\\cdot c$"
+    "tekst": "a·(b + c) = a· b + a· c"
    },
    "rec": "raspodela"
   },
@@ -55929,7 +55929,7 @@
    "zanimljivost": "Množenje i deljenje su obrnute operacije: ako je $6·4=24$, onda je $24:4=6$. Jedna „poništava“ drugu.",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$6\\cdot4=24 \\Leftrightarrow 24:4=6$"
+    "tekst": "6·4 = 24 ⇔ 24:4 = 6"
    },
    "rec": "množenje"
   },
@@ -55946,7 +55946,7 @@
    "zanimljivost": "Prvo zagrada: $2+3=5$, pa $5·4=20$. Zagrade menjaju redosled računanja!",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$(2+3)\\cdot4=20$"
+    "tekst": "(2 + 3)·4 = 20"
    },
    "rec": "redosled"
   },
@@ -55963,7 +55963,7 @@
    "zanimljivost": "Komutativnost množenja: činioci mogu da zamene mesta, proizvod ostaje isti. Na primer, $3·4=4·3$.",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$a\\cdot b=b\\cdot a$"
+    "tekst": "a· b = b· a"
    },
    "rec": "zamena"
   },
@@ -55980,7 +55980,7 @@
    "zanimljivost": "Nepoznati činilac nalazimo deljenjem: $x = 12:3 = 4$.",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$x\\cdot3=12 \\Rightarrow x=4$"
+    "tekst": "x·3 = 12 ⇒ x = 4"
    },
    "rec": "jednačina"
   },
@@ -56056,7 +56056,7 @@
    "zanimljivost": "Nepoznati deljenik nalazimo množenjem: $x = 5·4 = 20$.",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$x:4=5 \\Rightarrow x=20$"
+    "tekst": "x:4 = 5 ⇒ x = 20"
    },
    "rec": "jednačina"
   },
@@ -56247,7 +56247,7 @@
    "zanimljivost": "Nepoznati delilac: $x = 12:4 = 3$. Provera: $12:3=4$.",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$12:x=4 \\Rightarrow x=3$"
+    "tekst": "12:x = 4 ⇒ x = 3"
    },
    "rec": "jednačina"
   },
@@ -56486,7 +56486,7 @@
    "zanimljivost": "Množenje pozitivnim brojem ne menja smer nejednakosti: iz $x<5$ sledi $2x<10$. (Kod negativnih brojeva znak bi se okrenuo.)",
    "medijiOdgovora": {
     "vrsta": "formula",
-    "tekst": "$x<5 \\Rightarrow 2x<10$"
+    "tekst": "x<5 ⇒ 2x<10"
    },
    "rec": "nejednačina"
   },

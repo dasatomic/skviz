@@ -831,7 +831,10 @@ function prikaziSat(k, m) {
 // ───────────────────────── ostalo ─────────────────────────
 function prikaziTekst(k, m) {
   const d = document.createElement('div');
-  d.className = m.vrsta === 'emodzi' ? 'emodzi' : m.vrsta === 'citat' ? 'citat' : 'formula';
+  // formula sa rečima („…, pa je x = 3“) uz "pismo": true preslovljava se po pravilima iz pismo.js
+  // (klasa formula-tekst nije u NE_DIRAJ, a formule, promenljive i jedinice pismo.js ostavlja latinicom)
+  d.className = m.vrsta === 'emodzi' ? 'emodzi' : m.vrsta === 'citat' ? 'citat' : m.pismo ? 'formula-tekst' : 'formula';
+  if (m.vrsta === 'formula' && [...String(m.tekst)].length > 22) d.classList.add('formula-duga');
   d.textContent = m.tekst;
   k.appendChild(d);
   return () => {};

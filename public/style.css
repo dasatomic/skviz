@@ -168,7 +168,8 @@ body.ekran .medij-fizika svg { max-height: 56vh; }
 .legenda { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; padding: 0 8px 10px; font-size: .8em; color: var(--blago); }
 .legenda i { display: inline-block; width: 12px; height: 12px; border-radius: 50%; margin-right: 4px; vertical-align: -1px; border: 1px solid #fff5; }
 .formula-mala { color: #fff; font-size: 1.2em; }
-.formula { font-size: 2.6em; font-weight: 900; padding: 22px 10px; letter-spacing: 1px; }
+.formula, .formula-tekst { font-size: 2.6em; font-weight: 900; padding: 22px 10px; letter-spacing: 1px; }
+.formula-duga { font-size: 1.5em; letter-spacing: 0; line-height: 1.35; }
 .kod { margin: 0; padding: 12px 14px; text-align: left; white-space: pre; overflow-x: auto; font: 500 .82em/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; }
 .citat { font-size: 1.9em; font-weight: 800; padding: 22px 14px; line-height: 1.3; color: #ffeaa7; }
 .emodzi { font-size: 3.4em; padding: 18px 10px; letter-spacing: .1em; line-height: 1.3; }
