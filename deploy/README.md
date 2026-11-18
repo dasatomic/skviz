@@ -130,7 +130,7 @@ Autor predloga vidi stanje („Čeka pregled / Prihvaćeno / Rešeno“) i komen
 Ograničenja: 100 predloga na sat po adresi, 1000 dnevno ukupno (`LIMIT_PREDLOGA`, `LIMIT_PREDLOGA_DAN`); provera stanja predloga („Moji predlozi“) 200 puta u minutu po adresi (`LIMIT_STANJA`).
 
 ## Admin pregled (`/admin`)
-Sobe uživo (koliko ih je aktivno, iz kojih kategorija, faza igre) i istorija poslednjih 7/14/30 dana iz SQLite baze `podaci/telemetrija.db` (`lib/telemetrija.js`, ugrađeni `node:sqlite`, Node 22.13+). Beleže se samo zbirni podaci o sobama, bez imena igrača; zapisi stariji od 90 dana se brišu (`TELEMETRIJA_DANA`).
+Sobe uživo (koliko ih je aktivno, iz kojih kategorija, faza igre) i istorija poslednjih 7/14/30 dana iz SQLite baze `podaci/telemetrija.db` (`lib/telemetrija.js`, ugrađeni `node:sqlite`, Node 22.13+). Beleže se podaci o sobama, a uz svaku partiju i nadimci igrača sa poenima (prikaz „Partije po sobama“; id-jevi igrača se ne čuvaju); zapisi stariji od 90 dana se brišu (`TELEMETRIJA_DANA`).
 
 Stranica postoji samo ako je postavljena lozinka (inače `/admin` vraća 404):
 ```bash

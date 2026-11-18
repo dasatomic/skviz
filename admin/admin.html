@@ -114,6 +114,19 @@
   #prijava input { padding: 10px 12px; }
   #prijava button { padding: 10px; background: var(--serija); color: #fff; border: 0; font-weight: 600; }
   #greskaPrijave { color: var(--greska); font-size: 14px; min-height: 1.4em; }
+  .siroka { grid-column: 1 / -1; }
+  .igraci { display: flex; flex-wrap: wrap; gap: 4px; }
+  .igrac { font-size: 13px; padding: 1px 8px; border-radius: 99px; background: var(--mreza); white-space: nowrap; }
+  .igrac.odsutan { color: var(--tekst-3); background: transparent; border: 1px dashed var(--ivica); }
+  .igrac .p { color: var(--tekst-2); font-size: 12px; margin-left: 3px; }
+  .igrac.prvi { font-weight: 600; }
+  .sobaIst { padding: 12px 0; border-bottom: 1px solid var(--ivica); }
+  .sobaIst:last-child { border-bottom: 0; }
+  .sobaIst > .zag { display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; margin-bottom: 6px; }
+  .ishod { font-size: 12px; padding: 1px 8px; border-radius: 99px; border: 1px solid var(--ivica); white-space: nowrap; }
+  .ishod.zavrsena { border-color: var(--uzivo); color: var(--uzivo); }
+  .ishod.prekinuta { color: var(--tekst-3); }
+  #trazi { padding: 4px 10px; font-weight: 400; font-size: 14px; }
   [hidden] { display: none !important; }
 </style>
 </head>
@@ -147,10 +160,10 @@
       <h3>Aktivne sobe po kategoriji</h3>
       <div id="uzivoKategorije"></div>
     </div>
-    <div class="kartica">
+    <div class="kartica siroka">
       <h3>Sobe</h3>
       <div class="skrol"><table>
-        <thead><tr><th>Kod</th><th>Kviz</th><th>Faza</th><th class="br">Igrači</th><th class="br">Traje</th></tr></thead>
+        <thead><tr><th>Kod</th><th>Kviz</th><th>Faza</th><th class="br">Igrači</th><th>Nadimci</th><th class="br">Traje</th></tr></thead>
         <tbody id="uzivoSobe"></tbody>
       </table></div>
       <div class="sitno" id="uzivoSobeVise"></div>
@@ -200,6 +213,13 @@
         <h3>Najigraniji izbori (kategorija – razred/lekcija)</h3>
         <div id="najigranije"></div>
       </div>
+    </div>
+
+    <div class="kartica" style="margin-top:12px">
+      <h3 style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">Partije po sobama <span class="sitno" id="partijeBroj"></span>
+        <input id="trazi" type="search" placeholder="Kod sobe ili nadimak" aria-label="Pretraga soba"></h3>
+      <div id="partije"><div class="prazno">Učitavanje…</div></div>
+      <div class="sitno" id="partijeVise"></div>
     </div>
 
     <div class="kartica" style="margin-top:12px">
@@ -272,6 +292,12 @@ function status(ok) {
 }
 
 const MAKS_SOBA_U_TABELI = 60;
+// nadimak igrača kao „čip“: 👑 vođa, 👁 vođa koji samo gleda, isprekidano = nije povezan
+function cipIgraca(x) {
+  const oznaka = (x.vodja ? '👑 ' : '') + (x.gleda ? '👁 ' : '');
+  const naslov = [x.vodja && 'vođa', x.gleda && 'samo gleda', x.povezan === false && 'nije povezan'].filter(Boolean).join(', ');
+  return `<span class="igrac${x.povezan === false ? ' odsutan' : ''}"${naslov ? ` title="${naslov}"` : ''}>${oznaka}${esc(x.avatar || '')} ${esc(x.ime)}${x.gleda ? '' : `<span class="p">${broj(x.poeni)}</span>`}</span>`;
+}
 function crtajUzivo(d) {
   $('uAktivne').textContent = broj(d.ukupno.aktivne);
   $('uUIgri').textContent = broj(d.ukupno.uIgri);
@@ -290,9 +316,10 @@ function crtajUzivo(d) {
         <td>${esc(s.kategorija)}${s.detalj ? `<div class="sitno">${esc(s.detalj)}</div>` : ''}</td>
         <td><span class="faza">${esc(FAZE[s.faza] || s.faza)}</span></td>
         <td class="br">${s.prisutnih} / ${s.igraca}</td>
+        <td><div class="igraci">${(s.igraci || []).map(cipIgraca).join('') || '<span class="sitno">–</span>'}</div></td>
         <td class="br">${s.igraOd ? 'igra ' + trajanje(d.sada - s.igraOd) : 'otvorena ' + trajanje(d.sada - s.otvorena)}${s.prisutnih ? '' : `<div class="sitno">neaktivna ${trajanje(s.neaktivnaMs)}</div>`}</td>
       </tr>`).join('')
-    : '<tr><td colspan="5" class="prazno">Nema soba.</td></tr>';
+    : '<tr><td colspan="6" class="prazno">Nema soba.</td></tr>';
   $('uzivoSobeVise').textContent = d.sobe.length > sobe.length ? `+ još ${d.sobe.length - sobe.length} soba` : '';
 }
 
@@ -455,7 +482,50 @@ const DANI_U_NEDELJI = ['ned', 'pon', 'uto', 'sre', 'čet', 'pet', 'sub'];
 const datum = (dan) => { const [g, m, d] = dan.split('-'); return `${+d}. ${+m}.`; };
 const danUNedelji = (dan) => DANI_U_NEDELJI[new Date(dan + 'T12:00:00Z').getUTCDay()];
 
+// ───────── partije po sobama ─────────
+let partije = null;
+async function ucitajPartije() {
+  const r = await fetch('/api/admin/partije?dana=' + $('period').value).catch(() => null);
+  if (!r) return;
+  if (r.status === 401) return prikaziPrijavu();
+  partije = await r.json();
+  crtajPartije();
+}
+const MAKS_PRIKAZANIH_SOBA = 60;
+function crtajPartije() {
+  const d = partije;
+  if (!d) return;
+  if (!d.istorija) return ($('partije').innerHTML = '<div class="prazno">Istorija nije dostupna.</div>');
+  const fPun = new Intl.DateTimeFormat('sr-Latn', { timeZone: d.zona, weekday: 'short', day: 'numeric', month: 'numeric', hour: '2-digit', minute: '2-digit' });
+  const fSat = new Intl.DateTimeFormat('sr-Latn', { timeZone: d.zona, hour: '2-digit', minute: '2-digit' });
+  const upit = $('trazi').value.trim().toLowerCase();
+  const sobe = upit
+    ? d.sobe.filter((s) => s.kod.toLowerCase().includes(upit) || s.partije.some((p) => (p.igraci || []).some((x) => String(x.ime).toLowerCase().includes(upit))))
+    : d.sobe;
+  const prikaz = sobe.slice(0, MAKS_PRIKAZANIH_SOBA);
+  $('partijeBroj').textContent = `${d.ukupnoSoba} soba sa partijama`;
+  $('partije').innerHTML = prikaz.length ? prikaz.map((s) => `<div class="sobaIst">
+      <div class="zag"><span class="kod">${esc(s.kod)}</span>
+        <span class="sitno">${s.otvorena ? 'otvorena ' + fPun.format(s.otvorena) : 'otvorena pre perioda'}${s.zatvorena ? ' · zatvorena ' + fSat.format(s.zatvorena) : ''}
+          · ${s.partije.length} ${[2, 3, 4].includes(s.partije.length % 10) && ![12, 13, 14].includes(s.partije.length % 100) ? 'partije' : 'partija'}</span></div>
+      <div class="skrol"><table>
+        <thead><tr><th>Početak</th><th>Kviz</th><th>Ishod</th><th class="br">Trajanje</th><th>Igrači (poeni)</th></tr></thead>
+        <tbody>${s.partije.map((p) => `<tr>
+          <td class="dan">${p.pocela ? fPun.format(p.pocela) : '–'}</td>
+          <td>${esc(p.kategorija)}${p.detalj ? `<div class="sitno">${esc(p.detalj)}</div>` : ''}</td>
+          <td><span class="ishod ${p.kraj || ''}">${p.kraj === 'zavrsena' ? 'do kraja' : p.kraj === 'prekinuta' ? 'prekinuta' : 'u toku / bez kraja'}</span></td>
+          <td class="br">${p.trajanje != null ? trajanje(p.trajanje) : '–'}</td>
+          <td><div class="igraci">${p.igraci ? p.igraci.map((x, i) => `<span class="igrac${i === 0 && p.kraj === 'zavrsena' && x.poeni > 0 ? ' prvi' : ''}">${i === 0 && p.kraj === 'zavrsena' && x.poeni > 0 ? '🏆 ' : ''}${esc(x.avatar || '')} ${esc(x.ime)}${p.kraj ? `<span class="p">${broj(x.poeni)}</span>` : ''}</span>`).join('')
+            : `<span class="sitno">${p.igraca ?? '?'} igrača (nadimci nisu zabeleženi)</span>`}</div></td>
+        </tr>`).join('')}</tbody>
+      </table></div>
+    </div>`).join('') : `<div class="prazno">${upit ? 'Nema soba za tu pretragu.' : 'U ovom periodu nije odigrana nijedna partija.'}</div>`;
+  $('partijeVise').textContent = sobe.length > prikaz.length ? `+ još ${sobe.length - prikaz.length} soba (suzi pretragu)` : '';
+}
+$('trazi').addEventListener('input', crtajPartije);
+
 async function ucitajIstoriju() {
+  ucitajPartije();
   const r = await fetch('/api/admin/istorija?dana=' + $('period').value).catch(() => null);
   if (!r) return;
   if (r.status === 401) return prikaziPrijavu();
@@ -534,6 +604,7 @@ async function pokreni() {
   $('istorijaOsvezeno').textContent = 'osveženo ' + new Date().toLocaleTimeString('sr-Latn', { hour: '2-digit', minute: '2-digit' });
   crtajIstoriju();
   ucitajPrijave();
+  ucitajPartije();
   clearInterval(tajmerIstorije);
   tajmerIstorije = setInterval(() => { ucitajIstoriju(); ucitajPrijave(); }, 5 * 60e3);
 }

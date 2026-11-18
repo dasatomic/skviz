@@ -432,6 +432,7 @@ async function admin(req, res, p, url) {
   }
   if (!jeAdmin(req)) return kraj(res, 401, { greska: 'Potrebna je prijava' });
   if (p === '/api/admin/istorija') return kraj(res, 200, telemetrija.istorija(url.searchParams.get('dana') || 14));
+  if (p === '/api/admin/partije') return kraj(res, 200, telemetrija.partije(url.searchParams.get('dana') || 14));
   if (p === '/api/admin/prijave') return kraj(res, 200, telemetrija.prijave());
   if (p === '/api/admin/prijave/resi' && req.method === 'POST') {
     const b = await citajTelo(req);
