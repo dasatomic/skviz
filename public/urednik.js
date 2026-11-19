@@ -552,19 +552,19 @@ function osveziPregled(odmah = false) {
   const P = F;
   const slova = ls.get('pismo', 'cirilica') === 'cirilica' ? ['А', 'Б', 'В', 'Г'] : ['A', 'B', 'C', 'D'];
   const zv = [1, 2, 3].map((i) => `<span style="opacity:${i <= P.tezina ? 1 : 0.25}">★</span>`).join('');
-  const naslov = P.vrsta === 'uljez' ? `<h3>🕵️ Uljez je: ${esc(P.odgovori[0])}</h3>` : P.vrsta === 'spoji' ? '<h3>✅ Tačni parovi</h3>' : `<h3>✅ ${mat(P.odgovori[0])}</h3>`;
+  const naslov = P.vrsta === 'uljez' ? `<h3>🕵️ Uljez je: ${mat(P.odgovori[0])}</h3>` : P.vrsta === 'spoji' ? '<h3>✅ Tačni parovi</h3>' : `<h3>✅ ${mat(P.odgovori[0])}</h3>`;
   const parovi = P.parovi.filter((x) => x[0].trim() || x[1].trim());
   const telo = P.vrsta === 'spoji'
-    ? `<div class="spoji"><div class="kolona">${parovi.map((x) => `<div class="spoj levo">${esc(x[0])}</div>`).join('')}</div>
-        <div class="kolona">${parovi.map((x) => `<div class="spoj desno tacan">${esc(x[1])}</div>`).join('')}</div></div>`
+    ? `<div class="spoji"><div class="kolona">${parovi.map((x) => `<div class="spoj levo">${mat(x[0])}</div>`).join('')}</div>
+        <div class="kolona">${parovi.map((x) => `<div class="spoj desno tacan">${mat(x[1])}</div>`).join('')}</div></div>`
     : `<div class="odgovori otkriveno">${P.odgovori.map((o, i) => `<div class="odg ${i === 0 ? 'tacan' : ''}" data-slovo="${slova[i]}">${mat(o) || '<span style="opacity:.4">…</span>'}</div>`).join('')}</div>`;
   const medijKljuc = JSON.stringify(P.mediji || null) + kvizId;
   const zadrziMedij = medijKljuc === poslednjiMedij && $('#pv-medij', el);
   const stariMedij = zadrziMedij ? $('#pv-medij', el) : null;
   const ispod = zadatak
     ? `<div class="kartica resenje">${naslov}<h3>📝 Rešenje</h3><ol class="koraci">${(P.resenje || []).map((k) => `<li>${mat(k.t) || '<span style="opacity:.4">…</span>'}</li>`).join('')}</ol></div>`
-    : `<div class="kartica zanimljivost">${naslov}${P.objasnjenje.trim() ? `<p>${esc(P.objasnjenje)}</p>` : ''}
-      <h3 style="margin-top:12px">💡 Da li si znao?</h3><div>${esc(P.zanimljivost) || '<span style="opacity:.4">…</span>'}</div></div>`;
+    : `<div class="kartica zanimljivost">${naslov}${P.objasnjenje.trim() ? `<p>${mat(P.objasnjenje)}</p>` : ''}
+      <h3 style="margin-top:12px">💡 Da li si znao?</h3><div>${mat(P.zanimljivost) || '<span style="opacity:.4">…</span>'}</div></div>`;
   el.innerHTML = `
     <div class="traka"><span class="znacka">1/10</span>${kviz.ikona ? `<span class="znacka" style="background:${esc(kviz.boja || '#6c5ce7')}">${kviz.ikona} ${esc(kviz.naziv)}</span>` : ''}
       <span class="znacka tezina">${zv}${P.tezina === 3 ? ' ×1,5' : ''}</span></div>
@@ -588,7 +588,7 @@ function osveziPregled(odmah = false) {
     } else mesto.remove();
     poslednjiMedij = medijKljuc;
   }
-  if (ls.get('pismo', 'cirilica') === 'cirilica') uCirilicu(el);
+  if (ls.get('pismo', 'cirilica') === 'cirilica' && !kviz?.jezik) uCirilicu(el); // kviz na stranom jeziku (en) se ne preslovljava
 }
 
 // preslovljavanje pregleda (kao u igri, pravila su u pismo.js)
@@ -597,7 +597,7 @@ function uCirilicu(koren) {
   const w = document.createTreeWalker(koren, NodeFilter.SHOW_TEXT);
   const cvorovi = [];
   while (w.nextNode()) cvorovi.push(w.currentNode);
-  for (const n of cvorovi) if (!n.parentElement.closest(NE_DIRAJ)) n.nodeValue = window.Pismo.uCirilicu(n.nodeValue);
+  for (const n of cvorovi) if (!n.parentElement.closest(NE_DIRAJ) || n.parentElement.closest('.formula-tekst')) n.nodeValue = window.Pismo.uCirilicu(n.nodeValue);
 }
 
 // ───── slanje predloga ─────

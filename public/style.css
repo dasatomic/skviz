@@ -418,6 +418,7 @@ body.ekran .mini { width: 44px; height: 44px; font-size: 1.4em; }
 /* matematika u tekstu: matematički font (STIX Two, rezerva Cambria/Times), kurziv promenljivih, blaga „pločica“ */
 .mat { white-space: nowrap; font-family: 'STIX Two Text', 'Cambria Math', Cambria, 'Times New Roman', serif; font-size: 1.12em;
   font-variant-numeric: lining-nums; font-weight: 500; background: #ffffff14; border-radius: .3em; padding: 0 .18em; }
+.mat.duga { white-space: normal; }
 .mat i.v { font-style: italic; padding-right: .04em; }
 .mat .jed { font-family: Roboto, system-ui, sans-serif; font-size: .86em; }
 .mat sup, .mat sub { font-size: .7em; line-height: 0; }

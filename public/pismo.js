@@ -9,7 +9,15 @@
   const CIR = { a: 'а', b: 'б', v: 'в', g: 'г', d: 'д', đ: 'ђ', e: 'е', ž: 'ж', z: 'з', i: 'и', j: 'ј', k: 'к', l: 'л', m: 'м', n: 'н', o: 'о', p: 'п',
     r: 'р', s: 'с', t: 'т', ć: 'ћ', u: 'у', f: 'ф', h: 'х', c: 'ц', č: 'ч', š: 'ш' };
   const SLOVO = /[A-Za-zČĆŽŠĐčćžšđ]/;
-  const TOKEN = /[A-Za-zČĆŽŠĐčćžšđ0-9]+/g;
+  const TOKEN = /[A-Za-zČĆŽŠĐčćžšđ0-9\u00C0-\u024F]+/g; // i slova sa stranim znacima: Hergé, Paraná, Astérix
+  // strana slova sa kvačicama/akcentima (é, ñ, ü…) – reč ostaje cela latinicom (ne „Паранá“)
+  const STRANI_ZNAK = /[\u00C0-\u024F]/;
+  const SRPSKI_ZNAK = /[ČĆŽŠĐčćžšđ]/g;
+  // naglasci u gramatici (rúka, kùća, grȁd, sȗnce): samoglasnik ćirilicom + znak za naglasak, ne latinično slovo usred reči
+  const NAGLASCI = { 'á': ['а', '\u0301'], 'à': ['а', '\u0300'], 'ȁ': ['а', '\u030F'], 'ȃ': ['а', '\u0311'], 'é': ['е', '\u0301'], 'è': ['е', '\u0300'], 'ȅ': ['е', '\u030F'], 'ȇ': ['е', '\u0311'],
+    'í': ['и', '\u0301'], 'ì': ['и', '\u0300'], 'ȉ': ['и', '\u030F'], 'ȋ': ['и', '\u0311'], 'ó': ['о', '\u0301'], 'ò': ['о', '\u0300'], 'ȍ': ['о', '\u030F'], 'ȏ': ['о', '\u0311'],
+    'ú': ['у', '\u0301'], 'ù': ['у', '\u0300'], 'ȕ': ['у', '\u030F'], 'ȗ': ['у', '\u0311'], 'ŕ': ['р', '\u0301'], 'ȑ': ['р', '\u030F'], 'ȓ': ['р', '\u0311'] };
+  const NAGLASAK_TEKST = /(akcen|naglas|uzlazn|silazn)/i;
   // SI jedinice i uobičajene oznake mera
   const JEDINICE = new Set(['m', 's', 'km', 'h', 'N', 'kg', 'cm', 'mm', 'dm', 'nm', 'J', 'kJ', 'Hz', 'kHz', 'MHz', 'g', 'mg', 'A', 'mA', 'Pa', 'kPa',
     'K', 'V', 'kV', 'W', 'kW', 'MW', 'Wh', 'kWh', 'eV', 'Sv', 'T', 'C', 'mol', 'mmol', 'L', 'l', 'ml', 'dB', 't', 'ha', 'Gy', 'Bq']);
@@ -35,6 +43,7 @@
     'pac bulbasaur nintendo jumpman fandango life counter doom undertale elden baldur gate tomb raider uncharted redemption ' +
     'corrupted duke invaders sports football rocket silksong megalovania black hedgehog sight funcom projekt valve larian ' +
     'drum bass hal ibm bucks minecoins cake lie imdb ' +
+    'supercell riot epic gem zero helldivers adopt brookhaven pocketpair science lucia colt primo heist unreal creative steam battle ' +
     // izvorni nazivi stranih filmova u zagradi: „Pakleni šund“ (Pulp Fiction)
     'pulp forrest gump philadelphia inception interstellar casablanca noon gladiator avengers endgame iron gisaengchung citizen ' +
     'oppenheimer tale buono brutto cattivo pugno dollari toride akunin shichinin samurai sjunde inseglet bella times ' +
@@ -234,7 +243,16 @@
       if (a < k || b > k) nizovi.push([tokeni[a].index, tokeni[b].index + tokeni[b][0].length]);
     });
     const uNizu = (i) => nizovi.some(([a, b]) => i >= a && i < b);
-    return tekst.replace(TOKEN, (tok, i) => (uNizu(i) || latinicom(tok, i, tekst) ? tok : recUCir(tok)));
+    const naglasci = NAGLASAK_TEKST.test(tekst);
+    return tekst.replace(TOKEN, (tok, i) => {
+      if (uNizu(i)) return tok;
+      if (STRANI_ZNAK.test(tok.replace(SRPSKI_ZNAK, ''))) {
+        const sviNaglasci = naglasci && [...tok.toLowerCase().replace(SRPSKI_ZNAK, '')].every((c) => !STRANI_ZNAK.test(c) || NAGLASCI[c]);
+        if (!sviNaglasci) return tok;
+        return [...tok].map((c) => { const n = NAGLASCI[c.toLowerCase()]; return n ? (c === c.toLowerCase() ? n[0] : n[0].toUpperCase()) + n[1] : recUCir(c); }).join('');
+      }
+      return latinicom(tok, i, tekst) ? tok : recUCir(tok);
+    });
   }
 
   const api = { uCirilicu, recUCir, latinicom };

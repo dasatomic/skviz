@@ -880,7 +880,11 @@ function kurziv(html) {
   });
 }
 function matTekst(t) {
-  return esc(t).replace(/\$([^$]+)\$/g, (_, m) => {
+  return esc(t).replace(/\$([^$]+)\$/g, (_, m0) => {
+    let m = m0;
+    // dugačka formula: sme da se prelomi, ali samo posle znaka (=, +, ·…) – broj i jedinica ostaju zajedno
+    const duga = m.replace(/[{}|^_\\]/g, '').length > 26;
+    if (duga) m = m.split(/(?<=[=+−≈·×÷<>→⇒≤≥,;]) /).map((d) => d.replace(/ /g, '\u00a0')).join(' ');
     let x = m.replace(/\\\|/g, '\u0001').replace(/\\\{/g, '\u0002').replace(/\\\}/g, '\u0003'), pre;
     // koren bez vitičastih zagrada: √(…), √144, √2,5, √x, √a₁ → √{…}
     x = x.replace(/√\(([^()]*)\)/g, '√{$1}').replace(/√(\d+(?:,\d+)?|[A-Za-zα-ω][₀-₉]?)(?![{\w])/g, '√{$1}');
@@ -897,7 +901,7 @@ function matTekst(t) {
     x = x.replace(/\u0001/g, '|').replace(/\u0002/g, '{').replace(/\u0003/g, '}');
     // sam broj (sa jedinicom) – „$3$“, „$20 N$“, „$0,4 m/s²$“: font teksta, bez pločice
     const broj = /^[−-]?\d[\d.,\s]*(?:\s?(?:[A-Za-zΩ°%]{1,3}(?:\/[A-Za-z]{1,2})?(?:[²³]|\^\{?[23]\}?)?))?$/.test(m.trim()) && !/^\d+[a-z]$/.test(m.trim());
-    return `<span class="mat${broj ? ' broj' : ''}">${kurziv(x)}</span>`;
+    return `<span class="mat${broj ? ' broj' : ''}${duga ? ' duga' : ''}">${kurziv(x)}</span>`;
   }).replace(/\n/g, '<br>');
 }
 
