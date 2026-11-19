@@ -1434,7 +1434,7 @@
         "72 m/s",
         "200 m/s"
       ],
-      "zanimljivost": "1 km/h = 1000 m : 3600 s, pa se km/h deli sa 3,6 da bi se dobilo m/s.",
+      "zanimljivost": "$1 km/h = 1000 m : 3600 s$, pa se km/h deli sa 3,6 da bi se dobilo m/s.",
       "rec": "brzina"
     },
     {
@@ -1447,7 +1447,7 @@
         "17 km",
         "13 km"
       ],
-      "zanimljivost": "s = v · t = 15 km/h · 2 h = 30 km.",
+      "zanimljivost": "$s = v · t = 15 km/h · 2 h = 30 km$.",
       "rec": "put",
       "medijiOdgovora": {
         "vrsta": "fizika",
@@ -1539,10 +1539,10 @@
       "tezina": 1,
       "pitanje": "Kojom formulom se računa brzina pri ravnomernom kretanju?",
       "odgovori": [
-        "v = s / t",
-        "v = s · t",
-        "v = t / s",
-        "v = s + t"
+        "$v = s / t$",
+        "$v = s · t$",
+        "$v = t / s$",
+        "$v = s + t$"
       ],
       "zanimljivost": "Slovo $v$ dolazi od latinske reči velocitas – brzina.",
       "rec": "brzina"
@@ -1587,7 +1587,7 @@
         "92 km",
         "900 km"
       ],
-      "zanimljivost": "Ovo je primer ravnomernog pravolinijskog kretanja: s = v · t.",
+      "zanimljivost": "Ovo je primer ravnomernog pravolinijskog kretanja: $s = v · t$.",
       "rec": "automobil",
       "medijiOdgovora": {
         "vrsta": "fizika",
@@ -1766,7 +1766,7 @@
         "27 sati",
         "9 sati"
       ],
-      "zanimljivost": "Vreme se računa kao t = s / v.",
+      "zanimljivost": "Vreme se računa kao $t = s / v$.",
       "rec": "vreme",
       "mediji": {
         "vrsta": "formula",
@@ -2799,10 +2799,10 @@
       "tezina": 1,
       "pitanje": "Kojim slovom se označava sila?",
       "odgovori": [
-        "F",
-        "S",
-        "V",
-        "M"
+        "$F$",
+        "$S$",
+        "$V$",
+        "$M$"
       ],
       "zanimljivost": "Oznaka dolazi od engleske reči force – sila.",
       "rec": "oznaka"
@@ -3060,7 +3060,7 @@
     {
       "lekcija": 11,
       "tezina": 1,
-      "pitanje": "Kolika je sila teže koja deluje na telo mase 2 kg? (g = 10 N/kg)",
+      "pitanje": "Kolika je sila teže koja deluje na telo mase 2 kg? ($g = 10 N/kg$)",
       "odgovori": [
         "20 N",
         "2 N",
@@ -3394,7 +3394,7 @@
       "odgovori": [
         "Volta",
         "Amper",
-        "Om",
+        "$Om$",
         "Faradej"
       ],
       "zanimljivost": "Volt je dobio ime po italijanskom fizičaru Aleksandru Volti, koji je napravio prvu bateriju 1800.",
@@ -3643,7 +3643,7 @@
     {
       "lekcija": 13,
       "tezina": 2,
-      "pitanje": "Dinamometar pokazuje 3 N kada je telo okačeno o njega. Kolika je masa tela? (g = 10 N/kg)",
+      "pitanje": "Dinamometar pokazuje 3 N kada je telo okačeno o njega. Kolika je masa tela? ($g = 10 N/kg$)",
       "odgovori": [
         "0,3 kg",
         "3 kg",
@@ -4124,7 +4124,7 @@
         "Amper",
         "Volt",
         "Vat",
-        "Om"
+        "$Om$"
       ],
       "zanimljivost": "Jedinica je nazvana po francuskom fizičaru Andre-Mariju Amperu.",
       "rec": "amper"
@@ -4364,7 +4364,7 @@
         "1.000",
         "1.000.000"
       ],
-      "zanimljivost": "Kvadrat stranice 1 m ima 100 · 100 = 10.000 kvadratića od 1 cm².",
+      "zanimljivost": "Kvadrat stranice 1 m ima $100 · 100 = 10.000$ kvadratića od 1 cm².",
       "rec": "kvadrat",
       "mediji": {
         "vrsta": "formula",
@@ -4670,7 +4670,7 @@
         "720"
       ],
       "tezina": 2,
-      "zanimljivost": "24 · 60 = 1.440 minuta. A godina ima preko pola miliona minuta – oko 525.600.",
+      "zanimljivost": "$24 · 60 = 1.440$ minuta. A godina ima preko pola miliona minuta – oko 525.600.",
       "rec": "minut",
       "lekcija": 17
     },
@@ -4883,7 +4883,7 @@
         "Iste su, jer je greška ista (±0,5 g)",
         "Pri merenju brašna, jer je merenje duže trajalo"
       ],
-      "zanimljivost": "Kod zlata je relativna greška 0,5 g : 5 g = 10%, a kod brašna samo 0,05%. Zato se lekovi i plemeniti metali mere na vagama koje pokazuju i miligrame.",
+      "zanimljivost": "Kod zlata je relativna greška $0,5 g : 5 g = 10%$, a kod brašna samo 0,05%. Zato se lekovi i plemeniti metali mere na vagama koje pokazuju i miligrame.",
       "rec": "zlato"
     },
     {
@@ -5242,7 +5242,7 @@
     {
       "lekcija": 20,
       "tezina": 2,
-      "pitanje": "Telo ima masu 4 kg. Kolika mu je težina na Zemlji (g = 10 N/kg)?",
+      "pitanje": "Telo ima masu 4 kg. Kolika mu je težina na Zemlji ($g = 10 N/kg$)?",
       "odgovori": [
         "40 N",
         "4 N",
@@ -5372,14 +5372,14 @@
     {
       "lekcija": 20,
       "tezina": 3,
-      "pitanje": "Telo na Zemlji ima težinu 600 N (g = 10 N/kg). Kolika mu je masa?",
+      "pitanje": "Telo na Zemlji ima težinu 600 N ($g = 10 N/kg$). Kolika mu je masa?",
       "odgovori": [
         "Oko 60 kg",
         "600 kg",
         "6 kg",
         "6.000 kg"
       ],
-      "zanimljivost": "Masa se računa kao m = G / g.",
+      "zanimljivost": "Masa se računa kao $m = G / g$.",
       "rec": "masa",
       "medijiOdgovora": {
         "vrsta": "formula",
@@ -5422,7 +5422,7 @@
         "Slovom $m$ (od reči masa)",
         "Slovom V (od reči volumen)"
       ],
-      "zanimljivost": "Gustina se računa kao masa podeljena zapreminom: ρ = m / V. Jedinica je kilogram po kubnom metru (kg/m³).",
+      "zanimljivost": "Gustina se računa kao masa podeljena zapreminom: $ρ = m / V$. Jedinica je kilogram po kubnom metru (kg/m³).",
       "rec": "gustina"
     },
     {
@@ -5435,7 +5435,7 @@
         "4002 kg/m³",
         "500 kg/m³"
       ],
-      "zanimljivost": "ρ = m / V = 4000 kg : 2 m³ = 2000 kg/m³. To je otprilike gustina betona.",
+      "zanimljivost": "$ρ = m / V = 4000 kg : 2 m³ = 2000 kg/m³$. To je otprilike gustina betona.",
       "rec": "gustina"
     },
     {
@@ -5472,10 +5472,10 @@
       "tezina": 1,
       "pitanje": "Kojom formulom se računa gustina?",
       "odgovori": [
-        "ρ = m / V",
-        "ρ = m · V",
-        "ρ = V / m",
-        "ρ = m + V"
+        "$ρ = m / V$",
+        "$ρ = m · V$",
+        "$ρ = V / m$",
+        "$ρ = m + V$"
       ],
       "zanimljivost": "Gustina se označava grčkim slovom ro (ρ).",
       "rec": "gustina"
@@ -5749,10 +5749,10 @@
       "tezina": 1,
       "pitanje": "Kojom formulom se računa pritisak?",
       "odgovori": [
-        "p = F / S",
-        "p = F · S",
-        "p = S / F",
-        "p = F + S"
+        "$p = F / S$",
+        "$p = F · S$",
+        "$p = S / F$",
+        "$p = F + S$"
       ],
       "zanimljivost": "Pritisak je veći kada se ista sila rasporedi na manju površinu.",
       "rec": "pritisak"
@@ -5977,7 +5977,7 @@
         "2.003 N",
         "1.500 N"
       ],
-      "zanimljivost": "F = p · S – formula pritiska može se „okrenuti“ da se nađe sila.",
+      "zanimljivost": "$F = p · S$ – formula pritiska može se „okrenuti“ da se nađe sila.",
       "rec": "sila"
     },
     {
@@ -6143,7 +6143,7 @@
     {
       "lekcija": 23,
       "tezina": 3,
-      "pitanje": "Koliki je hidrostatički pritisak na dubini od 10 m u vodi (g = 10 N/kg)?",
+      "pitanje": "Koliki je hidrostatički pritisak na dubini od 10 m u vodi ($g = 10 N/kg$)?",
       "odgovori": [
         "Oko 100.000 Pa",
         "Oko 1.000 Pa",

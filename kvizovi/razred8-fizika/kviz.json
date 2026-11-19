@@ -202,7 +202,7 @@
         "5 Hz",
         "20 Hz"
       ],
-      "zanimljivost": "f = 1/T = 1/0,5 = 2 Hz.",
+      "zanimljivost": "$f = 1/T = 1/0,5 = 2 Hz$.",
       "rec": "računanje"
     },
     {
@@ -343,7 +343,7 @@
         "45 s",
         "450 s"
       ],
-      "zanimljivost": "T = t/n = 15/30 = 0,5 s.",
+      "zanimljivost": "$T = t/n = 15/30 = 0,5 s$.",
       "rec": "opruga"
     },
     {
@@ -356,7 +356,7 @@
         "2,5 s",
         "40 s"
       ],
-      "zanimljivost": "T = 1/f = 1/40 s = 0,025 s. Krila kolibrija, zavisno od vrste, zamahnu 10–80 puta u sekundi – zato zuje.",
+      "zanimljivost": "$T = 1/f = 1/40 s = 0,025 s$. Krila kolibrija, zavisno od vrste, zamahnu 10–80 puta u sekundi – zato zuje.",
       "rec": "kolibri"
     },
     {
@@ -487,14 +487,14 @@
     {
       "lekcija": 2,
       "tezina": 3,
-      "pitanje": "Klatno mase 0,2 kg podigne se 5 cm iznad najniže tačke. Kolika je njegova najveća kinetička energija (g = 10 N/kg)?",
+      "pitanje": "Klatno mase 0,2 kg podigne se 5 cm iznad najniže tačke. Kolika je njegova najveća kinetička energija ($g = 10 N/kg$)?",
       "odgovori": [
         "0,1 J",
         "1 J",
         "10 J",
         "0,01 J"
       ],
-      "zanimljivost": "Ep = m·g·h = 0,2 · 10 · 0,05 = 0,1 J – toliko je i najveća kinetička energija.",
+      "zanimljivost": "$Ep = m·g·h = 0,2 · 10 · 0,05 = 0,1 J$ – toliko je i najveća kinetička energija.",
       "rec": "računanje"
     },
     {
@@ -578,7 +578,7 @@
         "Isti je",
         "Klatno ne osciluje"
       ],
-      "zanimljivost": "Na Mesecu je ubrzanje teže oko 6 puta manje, pa je period oko √6 puta duži.",
+      "zanimljivost": "Na Mesecu je ubrzanje teže oko 6 puta manje, pa je period oko $√6$ puta duži.",
       "rec": "mesec",
       "medijiOdgovora": {
         "vrsta": "fizika",
@@ -666,10 +666,10 @@
       "tezina": 2,
       "pitanje": "Kako se računa brzina talasa?",
       "odgovori": [
-        "v = λ · f",
-        "v = λ / f",
-        "v = f / λ",
-        "v = λ + f"
+        "$v = λ · f$",
+        "$v = λ / f$",
+        "$v = f / λ$",
+        "$v = λ + f$"
       ],
       "zanimljivost": "Za zvuk od 340 Hz u vazduhu talasna dužina je oko 1 m.",
       "rec": "brzina"
@@ -721,7 +721,7 @@
         "7 m/s",
         "0,4 m/s"
       ],
-      "zanimljivost": "v = λ · f = 2 · 5 = 10 m/s.",
+      "zanimljivost": "$v = λ · f = 2 · 5 = 10 m/s$.",
       "rec": "računanje"
     },
     {
@@ -2685,7 +2685,7 @@
         "0,25 dioptrije",
         "40 dioptrija"
       ],
-      "zanimljivost": "D = 1 / 0,25 m = 4 m⁻¹ = 4 dioptrije.",
+      "zanimljivost": "$D = 1 / 0,25 m = 4 m$⁻¹ = 4 dioptrije.",
       "rec": "računanje"
     },
     {
@@ -2987,7 +2987,7 @@
         "Kulon (C)",
         "Amper (A), za struju",
         "Volt",
-        "Om"
+        "$Om$"
       ],
       "zanimljivost": "Jedan kulon je ogromno naelektrisanje – oko 6 milijardi milijardi elektrona.",
       "rec": "kulon"
@@ -3481,7 +3481,7 @@
         "8 J",
         "4 J"
       ],
-      "zanimljivost": "A = q · U = 2 C · 6 V = 12 J.",
+      "zanimljivost": "$A = q · U = 2$ $C · 6 V = 12 J$.",
       "rec": "rad"
     },
     {
@@ -3502,10 +3502,10 @@
       "tezina": 1,
       "pitanje": "Koja je oznaka za napon?",
       "odgovori": [
-        "U",
-        "I",
-        "R",
-        "P"
+        "$U$",
+        "$I$",
+        "$R$",
+        "$P$"
       ],
       "zanimljivost": "Napon se meri voltmetrom, koji se vezuje paralelno sa potrošačem.",
       "rec": "oznaka"
@@ -3835,10 +3835,10 @@
       "tezina": 1,
       "pitanje": "Koja je oznaka za jačinu struje?",
       "odgovori": [
-        "I",
-        "U",
-        "R",
-        "P"
+        "$I$",
+        "$U$",
+        "$R$",
+        "$P$"
       ],
       "zanimljivost": "Oznaka I potiče od francuske reči za jačinu.",
       "rec": "oznaka"
@@ -3905,7 +3905,7 @@
         "Oko milion elektrona",
         "Oko hiljadu elektrona svake sekunde"
       ],
-      "zanimljivost": "1 A = 1 C/s, a 1 C je oko 6,24·10¹⁸ elektrona.",
+      "zanimljivost": "$1 A = 1$ C/s, a 1 C je oko 6,24·10¹⁸ elektrona.",
       "rec": "računanje"
     },
     {
@@ -4255,7 +4255,7 @@
         "0,5 A",
         "30 A"
       ],
-      "zanimljivost": "I = U/R = 20/10 = 2 A.",
+      "zanimljivost": "$I = U/R = 20/10 = 2 A$.",
       "rec": "računanje"
     },
     {
@@ -4320,7 +4320,7 @@
         "15 Ω",
         "0,25 Ω"
       ],
-      "zanimljivost": "R = U/I = 12/3 = 4 Ω.",
+      "zanimljivost": "$R = U/I = 12/3 = 4 Ω$.",
       "rec": "otpor"
     },
     {
@@ -4406,10 +4406,10 @@
       "tezina": 1,
       "pitanje": "Koja je oznaka za otpor?",
       "odgovori": [
-        "R",
-        "I",
-        "U",
-        "P"
+        "$R$",
+        "$I$",
+        "$U$",
+        "$P$"
       ],
       "zanimljivost": "R dolazi od engleske reči za otpor.",
       "rec": "oznaka"
@@ -4557,7 +4557,7 @@
         "30 Ω",
         "3 Ω"
       ],
-      "zanimljivost": "1/R = 1/30 + 1/30 + 1/30 = 1/10, pa je R = 10 Ω.",
+      "zanimljivost": "$1/R = 1/30 + 1/30 + 1/30 = 1/10$, pa je $R = 10 Ω$.",
       "rec": "računanje",
       "mediji": {
         "vrsta": "fizika",
@@ -4748,7 +4748,7 @@
         "Isti su",
         "Zavisi od materijala žice"
       ],
-      "zanimljivost": "Struja je ista, pa je napon srazmeran otporu (U = I·R).",
+      "zanimljivost": "Struja je ista, pa je napon srazmeran otporu ($U = I·R$).",
       "rec": "veći"
     },
     {
@@ -4756,10 +4756,10 @@
       "tezina": 1,
       "pitanje": "Kojom formulom se računa snaga struje?",
       "odgovori": [
-        "P = U · I",
-        "P = U / I",
-        "P = I / U",
-        "P = U + I"
+        "$P = U · I$",
+        "$P = U / I$",
+        "$P = I / U$",
+        "$P = U + I$"
       ],
       "zanimljivost": "Fen od 2000 W na 230 V uzima struju od skoro 9 A.",
       "rec": "snaga"
@@ -4787,7 +4787,7 @@
         "0,1 kWh",
         "1000 kWh"
       ],
-      "zanimljivost": "E = P · t = 0,1 kW · 10 h = 1 kWh.",
+      "zanimljivost": "$E = P · t = 0,1 kW · 10 h = 1 kWh$.",
       "rec": "računanje"
     },
     {
@@ -4800,7 +4800,7 @@
         "690 A",
         "230 A"
       ],
-      "zanimljivost": "I = P/U = 460/230 = 2 A.",
+      "zanimljivost": "$I = P/U = 460/230 = 2 A$.",
       "rec": "struja"
     },
     {
@@ -4852,7 +4852,7 @@
         "20 dinara",
         "600 dinara"
       ],
-      "zanimljivost": "E = 2 kW · 3 h = 6 kWh; 6 · 10 = 60 dinara.",
+      "zanimljivost": "$E = 2 kW · 3 h = 6 kWh$; $6 · 10 = 60$ dinara.",
       "rec": "cena"
     },
     {
@@ -4930,7 +4930,7 @@
         "Jedinica za napon",
         "Jedinica za vreme"
       ],
-      "zanimljivost": "1 kWh = 3,6 miliona džula.",
+      "zanimljivost": "$1 kWh = 3,6$ miliona džula.",
       "rec": "kilovat"
     },
     {
@@ -6471,7 +6471,7 @@
     {
       "lekcija": 29,
       "tezina": 2,
-      "pitanje": "Šta pokazuje Ajnštajnova formula E = mc²?",
+      "pitanje": "Šta pokazuje Ajnštajnova formula $E = mc²$?",
       "odgovori": [
         "Masa i energija su ekvivalentne – mala masa daje ogromnu energiju",
         "Kolika je brzina svetlosti u vakuumu i kako ona zavisi od mase tela",

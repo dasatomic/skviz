@@ -7,6 +7,7 @@
 // Svaki fajl teme u alati/<folder>/<n>-<tema>.js izvozi funkciju ({ L, Q, U, S, G, … }) => { … }.
 const fs = require('fs');
 const path = require('path');
+const { umotajPitanje } = require('./mat-zapis');
 
 // Oznake tačaka, skupova i promenljive napisane van $…$ klijent bi preslovio u ćirilicu
 // („tačke A, B“ → „А, Б“, „duž AB“ → „АБ“). Ovde ih stavljamo u $…$ (tekst u $…$ se ne dira).
@@ -207,6 +208,8 @@ function gradi({ lekcije, pomocne, folder, kviz: zaglavlje, paket, oznake = fals
     if (m?.vrsta === 'formula' && !/[^\x00-\x7FčćžšđČĆŽŠĐ²³⁴ⁿ₀-₉√π·−±≈≤≥⇒→°∠αβγ…|×÷–]/u.test(m.tekst) && /[a-zčćžšđ]{3,}|(^|\s)(je|pa|ili)(\s|$)|, a /u.test(m.tekst.replace(/\b(cm|mm|dm|km|min)\b/g, ''))) m.pismo = true;
   }
 
+  // formule napisane kao običan tekst („pa je x = 7“) idu u $…$ (alati/mat-zapis.js)
+  for (const p of pitanja) umotajPitanje(p);
   const po = {};
   for (const p of pitanja) po[p.lekcija] = (po[p.lekcija] || 0) + 1;
   if (process.argv.includes('--suvo')) {

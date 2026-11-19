@@ -20,7 +20,9 @@ const O = require('./matematika/osnova.js');
 for (const f of fs.readdirSync(DIR).filter((f) => /^\d+-.*\.js$/.test(f)).sort((a, b) => parseInt(a) - parseInt(b))) require(path.join(DIR, f))(O);
 
 const kljuc = (p) => (p.pitanje || '').trim() + '|' + (p.odgovori || p.parovi.map((x) => x.join('='))).join('|');
-const nova = O.pitanja.map(({ tema, ...p }) => p);
+// formule napisane kao običan tekst idu u $…$ (alati/mat-zapis.js)
+const { umotajPitanje } = require('./mat-zapis');
+const nova = O.pitanja.map(({ tema, ...p }) => umotajPitanje(p));
 
 // statistika
 const po = (f) => O.pitanja.reduce((m, p) => ((m[f(p)] = (m[f(p)] || 0) + 1), m), {});

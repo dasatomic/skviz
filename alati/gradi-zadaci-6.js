@@ -36,5 +36,7 @@ const kviz = {
 };
 const izlaz = process.env.IZLAZ || path.join(KOREN, 'kvizovi', 'razred6-matematika-zadaci', 'kviz.json');
 fs.mkdirSync(path.dirname(izlaz), { recursive: true });
+// formule napisane kao običan tekst idu u $…$ (alati/mat-zapis.js)
+for (const p of kviz.pitanja) require('./mat-zapis').umotajPitanje(p);
 fs.writeFileSync(izlaz, JSON.stringify(kviz, null, 1) + '\n');
 console.log(`✓ ${path.relative(process.cwd(), izlaz)}: ${zadaci.length} zadataka`);

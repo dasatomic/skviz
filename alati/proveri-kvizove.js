@@ -5,6 +5,7 @@ const fs = require('fs');
 const path = require('path');
 const KOREN = path.join(__dirname, '..', 'kvizovi');
 const recnik = require('../lib/recnik');
+const MAT = require('./mat-zapis');
 const VRSTE = ['slika', 'svg', 'melodija', 'morze', 'molekul', 'telo', 'atom', 'planeta', 'dnk', 'mapa', 'sat', 'formula', 'emodzi', 'geo', 'kod', 'fizika', 'biologija', 'lenta', 'citat'];
 const SCENE = require('../public/fizika.js').SCENE;
 const BIO_SCENE = require('../public/biologija.js').SCENE;
@@ -82,6 +83,11 @@ for (const dir of fs.readdirSync(KOREN).sort()) {
         if (m === osnova) for (const x of p.resenje || []) if (!x.crtez) for (const id of x.i || []) if (!idjevi.has(id)) g(oz, `rešenje ističe nepoznat element „${id}“`);
       }
     } else if (!p.zanimljivost) u(oz, 'nema zanimljivosti');
+    // matematika i fizika: formula napisana kao običan tekst (popravka: node alati/sredi-mat-zapis.js)
+    if (/matematika|fizika/.test(k.oblast || dir)) {
+      const q = MAT.umotajPitanje(JSON.parse(JSON.stringify(p)));
+      if (JSON.stringify(q) !== JSON.stringify(p)) u(oz, 'formula van $…$ (node alati/sredi-mat-zapis.js)');
+    }
     if (k.zadaci && p.rec === undefined) {} else if (p.rec !== undefined) {
       // pojam za krug „Najduža reč“: latinica ili ćirilica, 3–11 slova (ćirilična slova; lj/nj/dž su po jedno)
       const c = recnik.uCirilicu(String(p.rec));

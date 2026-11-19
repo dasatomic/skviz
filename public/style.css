@@ -415,12 +415,24 @@ body.ekran .mini { width: 44px; height: 44px; font-size: 1.4em; }
 .izabrani-predmet button:hover { background: #ffffff0d; }
 
 /* ───── matematički zadaci ───── */
-.mat { white-space: nowrap; font-variant-numeric: lining-nums; }
+/* matematika u tekstu: matematički font (STIX Two, rezerva Cambria/Times), kurziv promenljivih, blaga „pločica“ */
+.mat { white-space: nowrap; font-family: 'STIX Two Text', 'Cambria Math', Cambria, 'Times New Roman', serif; font-size: 1.12em;
+  font-variant-numeric: lining-nums; font-weight: 500; background: #ffffff14; border-radius: .3em; padding: 0 .18em; }
+.mat i.v { font-style: italic; padding-right: .04em; }
+.mat .jed { font-family: Roboto, system-ui, sans-serif; font-size: .86em; }
 .mat sup, .mat sub { font-size: .7em; line-height: 0; }
-.mat .pod-korenom { border-top: 2px solid currentColor; padding: 0 1px; margin-left: 1px; }
+.mat .koren { display: inline-block; position: relative; padding-left: .62em; margin-left: .04em; line-height: 1.2; }
+.mat .koren::before { content: ''; position: absolute; left: 0; top: 0; bottom: -.08em; width: .64em; background: currentColor;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 24' preserveAspectRatio='none'%3E%3Cpath d='M.6 14.6 3.4 12.8 6.6 22.6 11.6.7H12' fill='none' stroke='%23000' stroke-width='1.5' stroke-linejoin='round' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E") 0 0 / 100% 100% no-repeat;
+          mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 24' preserveAspectRatio='none'%3E%3Cpath d='M.6 14.6 3.4 12.8 6.6 22.6 11.6.7H12' fill='none' stroke='%23000' stroke-width='1.5' stroke-linejoin='round' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E") 0 0 / 100% 100% no-repeat; }
+.mat .pod-korenom { display: inline-block; border-top: .08em solid currentColor; padding: .06em .1em 0 .06em; }
 .mat .vektor { display: inline-block; position: relative; padding-top: .35em; line-height: 1; }
 .mat .vektor::before { content: "→"; position: absolute; top: -.2em; left: 0; right: 0; text-align: center; font-size: .75em; }
 .mat .razlomak { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: .85em; line-height: 1.15; margin: 0 2px; }
+.mat.broj { font-family: inherit; font-size: inherit; font-weight: inherit; background: none; padding: 0; }
+.mat.broj .jed { font-size: inherit; }
+/* u velikom mediju „formula“ i u kodu bez pločice */
+.formula .mat, .formula-duga .mat { background: none; padding: 0; font-size: 1em; font-weight: 600; }
 .mat .razlomak > span:first-child { border-bottom: 1.5px solid currentColor; padding: 0 2px; }
 .pitanje-tekst.zadatak { font-size: 1.12em; font-weight: 700; line-height: 1.4; }
 .medij-geo svg, .resenje-crtez svg { max-height: 46vh; }

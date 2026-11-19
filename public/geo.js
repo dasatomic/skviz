@@ -111,7 +111,10 @@
       const pola = [...String(sadrzaj)].length * 4.6 + 3;
       x = Math.max(pola, Math.min(W - pola, x));
       y = Math.max(14, Math.min(H - 4, y));
-      return `<text x="${f(x)}" y="${f(y)}" class="oznaka ${klasa(e)}" ${prevesti ? '' : 'data-lat'} ${dod}>${esc(sadrzaj)}</text>`;
+      // koren sa crtom iznad („5√3 cm“, „√(a² + b²)“) i promenljiva od jednog slova u kurzivu („a“, „h“, „r₁“)
+      const html = esc(sadrzaj).replace(/√\(([^()]*)\)|√(\d+(?:,\d+)?|[A-Za-z])/g, (m, u, v) => `√<tspan text-decoration="overline">${u ?? v}</tspan>`);
+      const kurziv = !prevesti && /^[A-Za-zα-ω][₀-₉0-9′']?$/.test(String(sadrzaj)) ? ' font-style="italic"' : '';
+      return `<text x="${f(x)}" y="${f(y)}" class="oznaka ${klasa(e)}" ${prevesti ? '' : 'data-lat'}${kurziv} ${dod}>${html}</text>`;
     };
     let dno = '', sredina = '', vrh = '';
     const broj = (x) => String(+x.toFixed(4)).replace('.', ',').replace('-', '−');

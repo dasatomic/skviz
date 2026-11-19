@@ -835,7 +835,9 @@ function prikaziTekst(k, m) {
   // (klasa formula-tekst nije u NE_DIRAJ, a formule, promenljive i jedinice pismo.js ostavlja latinicom)
   d.className = m.vrsta === 'emodzi' ? 'emodzi' : m.vrsta === 'citat' ? 'citat' : m.pismo ? 'formula-tekst' : 'formula';
   if (m.vrsta === 'formula' && [...String(m.tekst)].length > 22) d.classList.add('formula-duga');
-  d.textContent = m.tekst;
+  // formula (bez reči) se crta kao matematika: kurziv promenljivih, koren, razlomci
+  if (m.vrsta === 'formula' && !m.pismo && !String(m.tekst).includes('$')) d.innerHTML = matTekst('$' + m.tekst + '$');
+  else d.textContent = m.tekst;
   k.appendChild(d);
   return () => {};
 }
@@ -858,17 +860,44 @@ const KOD_JEZICI = {
   },
 };
 // tekst sa matematikom ($…$) – zajedničko za igru (app.js) i urednik (urednik.js), opis oznaka je u app.js
+// Matematika u tekstu ($…$): matematički font, promenljive u kurzivu (kao u udžbeniku), brojevi i jedinice
+// uspravno, pravi znak korena čija crta pokriva ceo izraz, razlomci {a|b} jedan iznad drugog, vektori, stepeni.
+//   √{x}, √(x + 1), √2, √x  → koren      {a|b}, 3/4 → razlomak      ^{n}, _{n} → stepen, indeks      \vec{a} → vektor
+const MAT_JEDINICE = /^(?:km|dm|cm|mm|m|kg|g|t|s|h|min|N|kN|J|kJ|MJ|W|kW|MW|Wh|kWh|Pa|kPa|Hz|V|A|mA|Ω|kΩ|K|l|ml|dl|din|cal|kcal)$/;
+const MAT_RECI = new Set(['sin', 'cos', 'tg', 'ctg', 'log', 'ln', 'max', 'min', 'mod', 'nzd', 'nzs', 'lim', 'ili', 'je', 'pa', 'za', 'od', 'do', 'na', 'sa', 'ako', 'tj', 'npr']);
+function kurziv(html) {
+  // slova van oznaka i HTML entiteta; odluka po tekstu ispred (bez oznaka)
+  return html.replace(/(<[^>]+>|&[#\w]+;)|([A-Za-zα-ωΔ]+)/g, (m, tag, rec, poz) => {
+    if (tag) return m;
+    const pre = html.slice(Math.max(0, poz - 40), poz).replace(/<[^>]*>/g, '').replace(/&[#\w]+;/g, '·').slice(-3);
+    // jedinica: iza broja i razmaka („5 cm“, „100 N“) ili iza „/“ posle jedinice („km/h“, „m/s“)
+    if ((/\d[\s\u00a0]$/.test(pre) || /[A-Za-z]\/$/.test(pre)) && MAT_JEDINICE.test(rec)) return `<span class="jed">${rec}</span>`;
+    // promenljiva: jedno slovo (x, a, α) ili oznaka tačaka velikim slovima (AB, ABC, ABCD)
+    if ((rec.length === 1 && rec !== 'Δ') || /^[A-Z]{2,4}$/.test(rec)) return `<i class="v">${rec}</i>`;
+    // proizvod promenljivih bez znaka („2gh“, „√{ab}“): svako slovo u kurzivu, ali ne funkcije i jedinice
+    if (/^[a-z]{2,3}$/.test(rec) && !MAT_JEDINICE.test(rec) && !MAT_RECI.has(rec)) return [...rec].map((c) => `<i class="v">${c}</i>`).join('');
+    return rec;
+  });
+}
 function matTekst(t) {
   return esc(t).replace(/\$([^$]+)\$/g, (_, m) => {
     let x = m.replace(/\\\|/g, '\u0001').replace(/\\\{/g, '\u0002').replace(/\\\}/g, '\u0003'), pre;
+    // koren bez vitičastih zagrada: √(…), √144, √2,5, √x, √a₁ → √{…}
+    x = x.replace(/√\(([^()]*)\)/g, '√{$1}').replace(/√(\d+(?:,\d+)?|[A-Za-zα-ω][₀-₉]?)(?![{\w])/g, '√{$1}');
+    // prost razlomak od cifara „3/4“ (ne „1/0,5“ ni jedinice „km/h“)
+    x = x.replace(/(?<![\w.,{|/])(\d+)\/(\d+)(?![\w.,}/])/g, '{$1|$2}');
     do {
       pre = x;
-      x = x.replace(/√\{([^{}]*)\}/g, '√<span class="pod-korenom">$1</span>').replace(/\\vec\{([^{}]*)\}/g, '<span class="vektor">$1</span>')
+      x = x.replace(/√\{([^{}]*)\}/g, '<span class="koren"><span class="pod-korenom">$1</span></span>').replace(/\\vec\{([^{}]*)\}/g, '<span class="vektor">$1</span>')
         .replace(/\^\{([^{}|]*)\}/g, '<sup>$1</sup>').replace(/_\{([^{}|]*)\}/g, '<sub>$1</sub>')
         .replace(/\{([^{}|]*)\|([^{}|]*)\}/g, '<span class="razlomak"><span>$1</span><span>$2</span></span>');
     } while (x !== pre);
+    // stepen i indeks bez zagrada: „x^2“, „1,4^2“, „A_1“, „h_a“
+    x = x.replace(/\^(\d+|[a-zA-Z])/g, '<sup>$1</sup>').replace(/_(\d+|[a-zA-Z])/g, '<sub>$1</sub>');
     x = x.replace(/\u0001/g, '|').replace(/\u0002/g, '{').replace(/\u0003/g, '}');
-    return `<span class="mat">${x}</span>`;
+    // sam broj (sa jedinicom) – „$3$“, „$20 N$“, „$0,4 m/s²$“: font teksta, bez pločice
+    const broj = /^[−-]?\d[\d.,\s]*(?:\s?(?:[A-Za-zΩ°%]{1,3}(?:\/[A-Za-z]{1,2})?(?:[²³]|\^\{?[23]\}?)?))?$/.test(m.trim()) && !/^\d+[a-z]$/.test(m.trim());
+    return `<span class="mat${broj ? ' broj' : ''}">${kurziv(x)}</span>`;
   }).replace(/\n/g, '<br>');
 }
 

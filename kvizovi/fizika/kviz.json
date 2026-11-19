@@ -259,10 +259,10 @@
         "tekst": "E"
       },
       "odgovori": [
-        "E",
-        "T",
-        "A",
-        "S"
+        "$E$",
+        "$T$",
+        "$A$",
+        "$S$"
       ],
       "zanimljivost": "E je samo jedna tačkica, a T jedna crta – zato što su to najčešća slova u engleskom. Morze i njegov saradnik Alfred Vejl prebrojali su slova u kutijama štamparije da bi najčešćima dali najkraće znakove.",
       "rec": "morze"
@@ -387,7 +387,7 @@
       "odgovori": [
         "Volt",
         "Amper",
-        "Om",
+        "$Om$",
         "Vat"
       ],
       "zanimljivost": "Jedinica je nazvana po Italijanu Aleksandru Volti, koji je napravio prvu bateriju („Voltin stub“) 1800. godine. U našim utičnicama je napon oko 230 V.",
@@ -880,7 +880,7 @@
         "1 N",
         "1000 N"
       ],
-      "zanimljivost": "G = m · g ≈ 10 kg · 10 m/s² = 100 N. Na Mesecu bi ista masa težila samo oko 16 N.",
+      "zanimljivost": "$G = m · g ≈ 10 kg · 10 m/s² = 100 N$. Na Mesecu bi ista masa težila samo oko 16 N.",
       "rec": "težina"
     },
     {
@@ -892,7 +892,7 @@
         "0,2 m/s",
         "120 m/s"
       ],
-      "zanimljivost": "v = s/t = 100/20 = 5 m/s. To je 18 km/h – brzina brzog trčanja ili lagane vožnje bicikla.",
+      "zanimljivost": "$v = s/t = 100/20 = 5 m/s$. To je 18 km/h – brzina brzog trčanja ili lagane vožnje bicikla.",
       "rec": "brzina",
       "medijiOdgovora": {
         "vrsta": "fizika",
@@ -1223,7 +1223,7 @@
         "Herc",
         "Decibel",
         "Vat",
-        "Om"
+        "$Om$"
       ],
       "zanimljivost": "Nazvana je po Hajnrihu Hercu, koji je dokazao postojanje radio-talasa. Struja u našim utičnicama napravi 50 punih oscilacija u sekundi – 50 Hz.",
       "medijiOdgovora": {
@@ -1249,12 +1249,12 @@
       "tezina": 2,
       "pitanje": "Kako se zove jedinica za električni otpor?",
       "odgovori": [
-        "Om",
+        "$Om$",
         "Amper",
         "Volt",
         "Kulon"
       ],
-      "zanimljivost": "Nazvana je po Georgu Omu. Om je otkrio vezu napona, struje i otpora: U = I · R.",
+      "zanimljivost": "Nazvana je po Georgu Omu. Om je otkrio vezu napona, struje i otpora: $U = I · R$.",
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/om.jpg",
@@ -1777,7 +1777,7 @@
     },
     {
       "tezina": 3,
-      "pitanje": "Šta znači čuvena Ajnštajnova formula E = mc²?",
+      "pitanje": "Šta znači čuvena Ajnštajnova formula $E = mc²$?",
       "odgovori": [
         "Masa i energija su povezane – mala masa sadrži ogromnu energiju",
         "Energija je uvek jednaka brzini tela pomnoženoj sa njegovom masom",

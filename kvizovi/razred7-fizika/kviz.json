@@ -395,10 +395,10 @@
       "tezina": 1,
       "pitanje": "Kako glasi Drugi Njutnov zakon?",
       "odgovori": [
-        "F = m · a",
-        "F = m / a",
-        "F = m + a",
-        "F = a / m"
+        "$F = m · a$",
+        "$F = m / a$",
+        "$F = m + a$",
+        "$F = a / m$"
       ],
       "zanimljivost": "Zakon pokazuje da ista sila telu veće mase daje manje ubrzanje.",
       "rec": "njutn"
@@ -459,7 +459,7 @@
         "Poveća se četiri puta"
       ],
       "tezina": 2,
-      "zanimljivost": "Ubrzanje je srazmerno sili: a = F / m. Zato jači motor brže ubrza isti automobil.",
+      "zanimljivost": "Ubrzanje je srazmerno sili: $a = F / m$. Zato jači motor brže ubrza isti automobil.",
       "rec": "ubrzanje",
       "lekcija": 2,
       "medijiOdgovora": {
@@ -620,7 +620,7 @@
         "16 kg",
         "0,33 kg"
       ],
-      "zanimljivost": "Iz F = m·a dobija se m = F/a – tako se može „izmeriti“ masa i u bestežinskom stanju.",
+      "zanimljivost": "Iz $F = m·a$ dobija se $m = F/a$ – tako se može „izmeriti“ masa i u bestežinskom stanju.",
       "rec": "masa"
     },
     {
@@ -646,7 +646,7 @@
         "6 m/s²",
         "2 m/s²"
       ],
-      "zanimljivost": "U Drugom Njutnovom zakonu računa se rezultujuća sila: 30 N − 10 N = 20 N, pa je a = 20 N : 5 kg = 4 m/s².",
+      "zanimljivost": "U Drugom Njutnovom zakonu računa se rezultujuća sila: $30 N − 10 N = 20 N$, pa je $a = 20 N : 5 kg = 4 m/s²$.",
       "rec": "rezultanta"
     },
     {
@@ -682,10 +682,10 @@
       "tezina": 2,
       "pitanje": "Kojom formulom se računa brzina pri ravnomerno ubrzanom kretanju iz mirovanja?",
       "odgovori": [
-        "v = a · t",
-        "v = a / t",
-        "v = t / a",
-        "v = a + t"
+        "$v = a · t$",
+        "$v = a / t$",
+        "$v = t / a$",
+        "$v = a + t$"
       ],
       "zanimljivost": "Posle 3 s ubrzanja od 2 m/s², brzina je 6 m/s.",
       "rec": "brzina"
@@ -695,10 +695,10 @@
       "tezina": 3,
       "pitanje": "Kojom formulom se računa pređeni put pri ravnomerno ubrzanom kretanju iz mirovanja?",
       "odgovori": [
-        "s = a·t² / 2",
-        "s = a·t / 2",
-        "s = a·t²",
-        "s = 2·a·t"
+        "$s = a·t² / 2$",
+        "$s = a·t / 2$",
+        "$s = a·t²$",
+        "$s = 2·a·t$"
       ],
       "zanimljivost": "Put raste sa kvadratom vremena – za dvostruko više vremena telo pređe četiri puta veći put.",
       "rec": "kvadrat"
@@ -726,7 +726,7 @@
         "50 m",
         "5 m"
       ],
-      "zanimljivost": "s = 2 · 5² / 2 = 25 m.",
+      "zanimljivost": "$s = 2 · 5² / 2 = 25 m$.",
       "rec": "put",
       "medijiOdgovora": {
         "vrsta": "fizika",
@@ -954,7 +954,7 @@
     {
       "lekcija": 3,
       "tezina": 3,
-      "pitanje": "Koliki put pređe telo za prvu sekundu, a koliki za prve dve sekunde, ako kreće iz mirovanja sa a = 4 m/s²?",
+      "pitanje": "Koliki put pređe telo za prvu sekundu, a koliki za prve dve sekunde, ako kreće iz mirovanja sa $a = 4 m/s²$?",
       "odgovori": [
         "2 m i 8 m",
         "4 m i 8 m",
@@ -1394,7 +1394,7 @@
         "10 m",
         "2 m"
       ],
-      "zanimljivost": "Površina trougla: 10 · 5 / 2 = 25 m.",
+      "zanimljivost": "Površina trougla: $10 · 5 / 2 = 25 m$.",
       "rec": "trougao",
       "mediji": {
         "vrsta": "fizika",
@@ -1676,7 +1676,7 @@
         "2,5 m/s²",
         "12 m/s²"
       ],
-      "zanimljivost": "a = (10 − 2) / 4 = 2 m/s².",
+      "zanimljivost": "$a = (10 − 2) / 4 = 2 m/s²$.",
       "rec": "ubrzanje",
       "mediji": {
         "vrsta": "fizika",
@@ -1819,7 +1819,7 @@
       "pitanje": "Kako glasi Treći Njutnov zakon?",
       "odgovori": [
         "Svakoj akciji odgovara reakcija iste jačine a suprotnog smera",
-        "Sila je jednaka proizvodu mase tela i njegovog ubrzanja (F = m · a)",
+        "Sila je jednaka proizvodu mase tela i njegovog ubrzanja ($F = m · a$)",
         "Telo miruje ili se kreće ravnomerno dok na njega ne deluje neka sila",
         "Sila zavisi samo od boje i oblika tela na koje deluje u prirodi"
       ],
@@ -2118,7 +2118,7 @@
     {
       "lekcija": 7,
       "tezina": 3,
-      "pitanje": "Kolika je brzina tela posle 3 s slobodnog padanja (g = 10 m/s²)?",
+      "pitanje": "Kolika je brzina tela posle 3 s slobodnog padanja ($g = 10 m/s²$)?",
       "odgovori": [
         "30 m/s",
         "10 m/s",
@@ -2137,14 +2137,14 @@
     {
       "lekcija": 7,
       "tezina": 3,
-      "pitanje": "Koliki put pređe telo za 2 s slobodnog padanja (g = 10 m/s²)?",
+      "pitanje": "Koliki put pređe telo za 2 s slobodnog padanja ($g = 10 m/s²$)?",
       "odgovori": [
         "20 m",
         "10 m",
         "40 m",
         "5 m"
       ],
-      "zanimljivost": "h = g·t²/2 = 10·4/2 = 20 m.",
+      "zanimljivost": "$h = g·t²/2 = 10·4/2 = 20 m$.",
       "rec": "visina",
       "mediji": {
         "vrsta": "formula",
@@ -2223,7 +2223,7 @@
     {
       "lekcija": 7,
       "tezina": 2,
-      "pitanje": "Telo padne za 1 s. Sa koje visine je pušteno (g = 10 m/s²)?",
+      "pitanje": "Telo padne za 1 s. Sa koje visine je pušteno ($g = 10 m/s²$)?",
       "odgovori": [
         "5 m",
         "10 m",
@@ -2255,14 +2255,14 @@
     {
       "lekcija": 7,
       "tezina": 3,
-      "pitanje": "Koliko bi otprilike trajao slobodan pad sa 45 m (g = 10 m/s²), bez otpora vazduha?",
+      "pitanje": "Koliko bi otprilike trajao slobodan pad sa 45 m ($g = 10 m/s²$), bez otpora vazduha?",
       "odgovori": [
         "3 s",
         "4,5 s",
         "9 s",
         "1 s"
       ],
-      "zanimljivost": "45 = 10·t²/2 → t² = 9 → t = 3 s.",
+      "zanimljivost": "$45 = 10·t²/2$ → $t² = 9$ → $t = 3 s$.",
       "rec": "vreme",
       "medijiOdgovora": {
         "vrsta": "fizika",
@@ -2338,7 +2338,7 @@
     {
       "lekcija": 8,
       "tezina": 3,
-      "pitanje": "Lopta je bačena naviše brzinom 20 m/s. Posle koliko vremena dostiže najvišu tačku (g = 10 m/s²)?",
+      "pitanje": "Lopta je bačena naviše brzinom 20 m/s. Posle koliko vremena dostiže najvišu tačku ($g = 10 m/s²$)?",
       "odgovori": [
         "2 s",
         "20 s",
@@ -2357,14 +2357,14 @@
     {
       "lekcija": 8,
       "tezina": 3,
-      "pitanje": "Do koje visine stigne telo bačeno naviše brzinom 10 m/s (g = 10 m/s²)?",
+      "pitanje": "Do koje visine stigne telo bačeno naviše brzinom 10 m/s ($g = 10 m/s²$)?",
       "odgovori": [
         "5 m",
         "10 m",
         "1 m",
         "20 m"
       ],
-      "zanimljivost": "Visina se računa kao h = v²/(2g).",
+      "zanimljivost": "Visina se računa kao $h = v²/(2g)$.",
       "rec": "visina",
       "mediji": {
         "vrsta": "formula",
@@ -2445,14 +2445,14 @@
     {
       "lekcija": 8,
       "tezina": 3,
-      "pitanje": "Kamen je bačen naniže brzinom 5 m/s sa mosta. Kolika mu je brzina posle 2 s (g = 10 m/s²)?",
+      "pitanje": "Kamen je bačen naniže brzinom 5 m/s sa mosta. Kolika mu je brzina posle 2 s ($g = 10 m/s²$)?",
       "odgovori": [
         "25 m/s",
         "20 m/s",
         "10 m/s",
         "15 m/s"
       ],
-      "zanimljivost": "v = v₀ + g·t = 5 + 20 = 25 m/s.",
+      "zanimljivost": "$v = v₀ + g·t = 5 + 20 = 25 m/s$.",
       "rec": "most",
       "medijiOdgovora": {
         "vrsta": "fizika",
@@ -2542,7 +2542,7 @@
     {
       "lekcija": 8,
       "tezina": 3,
-      "pitanje": "Lopta bačena naviše vratila se posle 6 s. Kolikom brzinom je bačena (g = 10 m/s²)?",
+      "pitanje": "Lopta bačena naviše vratila se posle 6 s. Kolikom brzinom je bačena ($g = 10 m/s²$)?",
       "odgovori": [
         "30 m/s",
         "60 m/s",
@@ -3344,10 +3344,10 @@
       "tezina": 2,
       "pitanje": "Kako se računa moment sile?",
       "odgovori": [
-        "M = F · d (sila puta krak)",
-        "M = F / d (sila podeljena krakom)",
-        "M = F + d (sila plus krak sile)",
-        "M = m · a (masa puta ubrzanje tela)"
+        "$M = F · d$ (sila puta krak)",
+        "$M = F / d$ (sila podeljena krakom)",
+        "$M = F + d$ (sila plus krak sile)",
+        "$M = m · a$ (masa puta ubrzanje tela)"
       ],
       "zanimljivost": "Krak je normalno rastojanje od oslonca do pravca sile.",
       "rec": "moment"
@@ -3375,7 +3375,7 @@
         "1 m od oslonca",
         "2,5 m od oslonca"
       ],
-      "zanimljivost": "Uslov ravnoteže poluge: F₁·d₁ = F₂·d₂.",
+      "zanimljivost": "Uslov ravnoteže poluge: $F₁·d₁ = F₂·d₂$.",
       "rec": "klackalica",
       "medijiOdgovora": {
         "vrsta": "fizika",
@@ -3513,10 +3513,10 @@
       "tezina": 3,
       "pitanje": "Sila od 20 N deluje na krak od 0,5 m. Koliki je moment sile?",
       "odgovori": [
-        "10 N·m",
-        "40 N·m",
-        "20,5 N·m",
-        "0,025 N·m"
+        "$10 N·m$",
+        "$40 N·m$",
+        "$20,5 N·m$",
+        "$0,025 N·m$"
       ],
       "zanimljivost": "Moment se meri u njutn-metrima.",
       "rec": "moment"
@@ -3629,7 +3629,7 @@
     {
       "lekcija": 13,
       "tezina": 3,
-      "pitanje": "Kolika je sila potiska na telo zapremine 2 dm³ potpuno potopljeno u vodu (g = 10 N/kg)?",
+      "pitanje": "Kolika je sila potiska na telo zapremine 2 dm³ potpuno potopljeno u vodu ($g = 10 N/kg$)?",
       "odgovori": [
         "20 N",
         "2 N",
@@ -4131,10 +4131,10 @@
       "tezina": 2,
       "pitanje": "Kojom formulom se računa mehanički rad?",
       "odgovori": [
-        "A = F · s",
-        "A = F / s",
-        "A = m · a",
-        "A = F + s"
+        "$A = F · s$",
+        "$A = F / s$",
+        "$A = m · a$",
+        "$A = F + s$"
       ],
       "zanimljivost": "Rad je najveći kada sila deluje u pravcu kretanja.",
       "rec": "formula"
@@ -4181,14 +4181,14 @@
     {
       "lekcija": 15,
       "tezina": 3,
-      "pitanje": "Koliki rad je potreban da se telo mase 10 kg podigne 2 m (g = 10 N/kg)?",
+      "pitanje": "Koliki rad je potreban da se telo mase 10 kg podigne 2 m ($g = 10 N/kg$)?",
       "odgovori": [
         "200 J",
         "20 J",
         "12 J",
         "100 J"
       ],
-      "zanimljivost": "Rad protiv sile teže: A = m·g·h.",
+      "zanimljivost": "Rad protiv sile teže: $A = m·g·h$.",
       "rec": "podizanje"
     },
     {
@@ -4200,7 +4200,7 @@
         "0 J"
       ],
       "tezina": 2,
-      "zanimljivost": "Rad je sila puta put: 1 N · 3 m = 3 J. Taj rad se pretvara u kinetičku energiju jabuke.",
+      "zanimljivost": "Rad je sila puta put: $1 N · 3 m = 3 J$. Taj rad se pretvara u kinetičku energiju jabuke.",
       "rec": "jabuka",
       "lekcija": 15
     },
@@ -4326,10 +4326,10 @@
       "tezina": 2,
       "pitanje": "Kojom formulom se računa kinetička energija?",
       "odgovori": [
-        "Ek = m·v² / 2",
-        "Ek = m·g·h",
-        "Ek = F·s",
-        "Ek = m·v"
+        "$Ek = m·v² / 2$",
+        "$Ek = m·g·h$",
+        "$Ek = F·s$",
+        "$Ek = m·v$"
       ],
       "zanimljivost": "Kinetička energija zavisi od kvadrata brzine – zato su sudari pri velikim brzinama toliko razorni.",
       "rec": "formula"
@@ -4357,7 +4357,7 @@
         "50 J",
         "2,5 J"
       ],
-      "zanimljivost": "Ek = 0,5 · 100 / 2 = 25 J.",
+      "zanimljivost": "$Ek = 0,5 · 100 / 2 = 25 J$.",
       "rec": "lopta"
     },
     {
@@ -4376,14 +4376,14 @@
     {
       "lekcija": 16,
       "tezina": 2,
-      "pitanje": "Kolika je potencijalna energija tela mase 2 kg na visini 5 m (g = 10 N/kg)?",
+      "pitanje": "Kolika je potencijalna energija tela mase 2 kg na visini 5 m ($g = 10 N/kg$)?",
       "odgovori": [
         "100 J",
         "10 J",
         "7 J",
         "50 J"
       ],
-      "zanimljivost": "Ep = 2 · 10 · 5 = 100 J.",
+      "zanimljivost": "$Ep = 2 · 10 · 5 = 100 J$.",
       "rec": "visina"
     },
     {
@@ -4461,7 +4461,7 @@
         "100 m/s",
         "5 m/s"
       ],
-      "zanimljivost": "Iz Ek = m·v²/2 → v² = 2·200/4 = 100.",
+      "zanimljivost": "Iz $Ek = m·v²/2$ → $v² = 2·200/4 = 100$.",
       "rec": "brzina"
     },
     {
@@ -4544,14 +4544,14 @@
     {
       "lekcija": 17,
       "tezina": 3,
-      "pitanje": "Telo pada sa visine 5 m bez otpora vazduha. Kolikom brzinom udari u tlo (g = 10 m/s²)?",
+      "pitanje": "Telo pada sa visine 5 m bez otpora vazduha. Kolikom brzinom udari u tlo ($g = 10 m/s²$)?",
       "odgovori": [
         "10 m/s",
         "5 m/s",
         "50 m/s",
         "25 m/s"
       ],
-      "zanimljivost": "Iz m·g·h = m·v²/2 masa se skrati – brzina ne zavisi od mase!",
+      "zanimljivost": "Iz $m·g·h = m·v²/2$ masa se skrati – brzina ne zavisi od mase!",
       "rec": "pad"
     },
     {
@@ -4601,14 +4601,14 @@
     {
       "lekcija": 17,
       "tezina": 3,
-      "pitanje": "Lopta je bačena naviše brzinom 20 m/s. Do koje visine stigne ako nema otpora vazduha (g = 10 m/s²)?",
+      "pitanje": "Lopta je bačena naviše brzinom 20 m/s. Do koje visine stigne ako nema otpora vazduha ($g = 10 m/s²$)?",
       "odgovori": [
         "20 m",
         "40 m",
         "10 m",
         "200 m"
       ],
-      "zanimljivost": "Sva kinetička energija na vrhu prelazi u potencijalnu: h = v²/(2g).",
+      "zanimljivost": "Sva kinetička energija na vrhu prelazi u potencijalnu: $h = v²/(2g)$.",
       "rec": "visina"
     },
     {
@@ -4684,14 +4684,14 @@
     {
       "lekcija": 17,
       "tezina": 3,
-      "pitanje": "Klatno kreće sa visine 0,2 m. Kolika mu je brzina u najnižoj tački (g = 10 m/s²)?",
+      "pitanje": "Klatno kreće sa visine 0,2 m. Kolika mu je brzina u najnižoj tački ($g = 10 m/s²$)?",
       "odgovori": [
         "2 m/s",
         "4 m/s",
         "0,2 m/s",
         "20 m/s"
       ],
-      "zanimljivost": "v = √(2gh) = √4 = 2 m/s.",
+      "zanimljivost": "$v = √(2gh) = √4 = 2 m/s$.",
       "rec": "brzina"
     },
     {
@@ -4886,7 +4886,7 @@
         "3,3 J",
         "300 J"
       ],
-      "zanimljivost": "A = P · t – snažan biciklista može nekoliko minuta da razvija i 400 W.",
+      "zanimljivost": "$A = P · t$ – snažan biciklista može nekoliko minuta da razvija i 400 W.",
       "rec": "rad"
     },
     {
@@ -4912,7 +4912,7 @@
         "50 W",
         "5 010 W"
       ],
-      "zanimljivost": "Snaga se računa kao rad podeljen vremenom: P = A / t. Motor jakog automobila ima snagu oko 100 000 W – dvesta puta više od ovog motora.",
+      "zanimljivost": "Snaga se računa kao rad podeljen vremenom: $P = A / t$. Motor jakog automobila ima snagu oko 100 000 W – dvesta puta više od ovog motora.",
       "rec": "snaga"
     },
     {

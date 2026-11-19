@@ -11243,7 +11243,7 @@
     "0,83",
     "0,3"
    ],
-   "zanimljivost": "$3:8=0,375$. Množenjem: ${3|8}={375|1000}$. Razlomak sa imeniocem 8 = 2³ ima konačan decimalni zapis, jer je imenilac stepen dvojke.",
+   "zanimljivost": "$3:8=0,375$. Množenjem: ${3|8}={375|1000}$. Razlomak sa imeniocem $8 = 2³$ ima konačan decimalni zapis, jer je imenilac stepen dvojke.",
    "medijiOdgovora": {
     "vrsta": "formula",
     "tekst": "3 : 8 = 0,375"
@@ -12352,7 +12352,7 @@
     "3,14",
     "3,15"
    ],
-   "zanimljivost": "π = 3,14159…: četvrta decimala je 5, pa se treća decimala 1 zaokružuje na gore: 3,142. Ako se broj jednostavno skrati bez zaokruživanja, dobija se 3,141; to je greška koja se često pravi.",
+   "zanimljivost": "$π = 3,14159$…: četvrta decimala je 5, pa se treća decimala 1 zaokružuje na gore: 3,142. Ako se broj jednostavno skrati bez zaokruživanja, dobija se 3,141; to je greška koja se često pravi.",
    "rec": "decimale"
   },
   {
@@ -12685,7 +12685,7 @@
     "1,41",
     "1"
    ],
-   "zanimljivost": "Kako je $1,4^2 = 1,96 < 2$ i $1,5^2 = 2,25 > 2$, broj $√{2}$ je između 1,4 i 1,5. Srednja vrednost $1,45^2 = 2,1025$ je veća od 2, pa je $√{2}$ bliže 1,4. Stari Grci su dokazali da √2 nije razlomak, što je bilo šokantno, jer su verovali da se svi brojevi mogu zapisati razlomkom.",
+   "zanimljivost": "Kako je $1,4^2 = 1,96 < 2$ i $1,5^2 = 2,25 > 2$, broj $√{2}$ je između 1,4 i 1,5. Srednja vrednost $1,45^2 = 2,1025$ je veća od 2, pa je $√{2}$ bliže 1,4. Stari Grci su dokazali da $√2$ nije razlomak, što je bilo šokantno, jer su verovali da se svi brojevi mogu zapisati razlomkom.",
    "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
@@ -13008,7 +13008,7 @@
     "$√{5} = 2,25$",
     "$√{5} > 2,25$"
    ],
-   "zanimljivost": "Kvadriranjem: $2,25^2 = 5,0625$, što je više od 5. Zato je $√{5} < 2,25$. Broj $√{5}$ nema konačan decimalni zapis. Broj √5 nema konačan ni periodičan decimalni zapis, pa je iracionalan.",
+   "zanimljivost": "Kvadriranjem: $2,25^2 = 5,0625$, što je više od 5. Zato je $√{5} < 2,25$. Broj $√{5}$ nema konačan decimalni zapis. Broj $√5$ nema konačan ni periodičan decimalni zapis, pa je iracionalan.",
    "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
@@ -13204,7 +13204,7 @@
     "4",
     "5"
    ],
-   "zanimljivost": "Zbir je približno $1,41 + 1,73 = 3,14$, pa je najbliži ceo broj 3. Greška je misliti da je zbir jednak $√{5}$, a to nije tačno. Zbir √2 + √3 ne može se zapisati jednostavnije, zato se njegova tačna vrednost čuva kao zbir.",
+   "zanimljivost": "Zbir je približno $1,41 + 1,73 = 3,14$, pa je najbliži ceo broj 3. Greška je misliti da je zbir jednak $√{5}$, a to nije tačno. Zbir $√2 + √3$ ne može se zapisati jednostavnije, zato se njegova tačna vrednost čuva kao zbir.",
    "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
@@ -13394,11 +13394,11 @@
    },
    "odgovori": [
     "3",
-    "√3",
+    "$√3$",
     "6",
     "1,73"
    ],
-   "zanimljivost": "Površina kvadrata je stranica na kvadrat: $(√{3})^2 = 3$. Odnos stranica papira A4 je √2: kad se list prepolovi, ostaje isti oblik.",
+   "zanimljivost": "Površina kvadrata je stranica na kvadrat: $(√{3})^2 = 3$. Odnos stranica papira A4 je $√2$: kad se list prepolovi, ostaje isti oblik.",
    "rec": "kvadrat"
   },
   {
@@ -13407,7 +13407,7 @@
    "pitanje": "Koliko je $(√{5})^2$?",
    "odgovori": [
     "5",
-    "√5",
+    "$√5$",
     "25",
     "2,236"
    ],
@@ -13607,7 +13607,7 @@
     "$√{48}:2$"
    ],
    "objasnjenje": "Pošto je $12 = 4· 3$, važi $√{12} = 2√{3}≈ 3,46$. Zapis $3√{3}≈ 5,2$ je veći.",
-   "zanimljivost": "Broj $3√{3}$ je isto što i $√{27}$, pa je veći od $√{12}$ jer je 27 > 12.",
+   "zanimljivost": "Broj $3√{3}$ je isto što i $√{27}$, pa je veći od $√{12}$ jer je $27 > 12$.",
    "rec": "koren"
   },
   {
@@ -13736,8 +13736,8 @@
    },
    "odgovori": [
     "4",
-    "√10",
-    "2√2",
+    "$√10$",
+    "$2√2$",
     "6"
    ],
    "zanimljivost": "Površina je $√{2}·√{8}$. Pod jednim korenom množimo brojeve: $√{16} = 4$. Površina pravougaonika sa stranicama korenima je koren iz proizvoda, zato su kvadratni koreni tako korisni u geometriji.",
@@ -13876,7 +13876,7 @@
     "3,5 cm",
     "6,5 cm"
    ],
-   "zanimljivost": "$√{13} ≈ 3,6$ cm. Stranice se ne sabiraju: $√{4} + √{9} = 5$ je stranica kvadrata površine 25, a ne 13. Pitagorina teorema kaže da je kvadrat nad hipotenuzom zbir kvadrata nad katetama – ovde 4 + 9 = 13.",
+   "zanimljivost": "$√{13} ≈ 3,6$ cm. Stranice se ne sabiraju: $√{4} + √{9} = 5$ je stranica kvadrata površine 25, a ne 13. Pitagorina teorema kaže da je kvadrat nad hipotenuzom zbir kvadrata nad katetama – ovde $4 + 9 = 13$.",
    "medijiOdgovora": {
     "vrsta": "geo",
     "t": {},
@@ -13923,11 +13923,11 @@
    "pitanje": "Koliko je $√{7}·√{28}$?",
    "odgovori": [
     "14",
-    "√35",
+    "$√35$",
     "7",
     "28"
    ],
-   "zanimljivost": "Pod korenom množimo: $7· 28 = 196$, a $√{196} = 14$, jer je $14^2 = 196$. Proizvod 7 i 28 je 196 = 14 · 14, pa se rezultat lako prepozna kad se broj rastavi na činioce.",
+   "zanimljivost": "Pod korenom množimo: $7· 28 = 196$, a $√{196} = 14$, jer je $14^2 = 196$. Proizvod 7 i 28 je $196 = 14 · 14$, pa se rezultat lako prepozna kad se broj rastavi na činioce.",
    "medijiOdgovora": {
     "vrsta": "geo",
     "t": {},
@@ -14101,10 +14101,10 @@
     "velicina": 320
    },
    "odgovori": [
-    "3√2",
-    "√10",
-    "2√2",
-    "4√2"
+    "$3√2$",
+    "$√10$",
+    "$2√2$",
+    "$4√2$"
    ],
    "zanimljivost": "Pošto je $√{8} = 2√{2}$, sabiramo: $√{2} + 2√{2} = 3√{2}$. Koreni se sabiraju samo kad su istog „sastava“, zato se sve prvo svodi na isti broj pod korenom.",
    "rec": "zbir"
@@ -14284,7 +14284,7 @@
     "Tačka $C$",
     "Tačka $D$"
    ],
-   "zanimljivost": "Tačka $A(1, 2)$: za $x = 1$ dobijamo $y = 2· 1 = 2$. Ostale tačke ne zadovoljavaju $y = 2x$. Grafik y = 2x prolazi kroz koordinatni početak: za svaku tačku y je dvostruko veće od x.",
+   "zanimljivost": "Tačka $A(1, 2)$: za $x = 1$ dobijamo $y = 2· 1 = 2$. Ostale tačke ne zadovoljavaju $y = 2x$. Grafik $y = 2x$ prolazi kroz koordinatni početak: za svaku tačku y je dvostruko veće od x.",
    "rec": "grafik"
   },
   {
@@ -15211,10 +15211,10 @@
    "tezina": 1,
    "pitanje": "Koliki je odnos broja $a$ i broja $b$ ako je $a = 2$ i $b = 6$?",
    "odgovori": [
-    "1 : 3",
-    "3 : 1",
-    "2 : 4",
-    "1 : 2"
+    "$1 : 3$",
+    "$3 : 1$",
+    "$2 : 4$",
+    "$1 : 2$"
    ],
    "zanimljivost": "Odnos $2 : 6$ skraćujemo sa 2: dobijamo $1 : 3$. Odnosi se mogu skraćivati kao razlomci: 2 : 6 i 1 : 3 su isti odnos zapisan drugačije.",
    "medijiOdgovora": {
@@ -15369,10 +15369,10 @@
    "tezina": 1,
    "pitanje": "Ako je $a : b = 2 : 3$ i $b : c = 3 : 5$, koliki je odnos $a : c$?",
    "odgovori": [
-    "2 : 5",
-    "2 : 3",
-    "5 : 2",
-    "3 : 5"
+    "$2 : 5$",
+    "$2 : 3$",
+    "$5 : 2$",
+    "$3 : 5$"
    ],
    "zanimljivost": "Produžena proporcija je $a : b : c = 2 : 3 : 5$, pa je $a : c = 2 : 5$. Isti postupak se koristi u kartografiji kad se mape u različitim razmerama spajaju.",
    "rec": "produžena"
@@ -15464,10 +15464,10 @@
    "tezina": 1,
    "pitanje": "Odnos broja učenika dva odeljenja je $20 : 30$. Koji je to odnos u najprostijem obliku?",
    "odgovori": [
-    "2 : 3",
-    "3 : 2",
-    "1 : 2",
-    "2 : 5"
+    "$2 : 3$",
+    "$3 : 2$",
+    "$1 : 2$",
+    "$2 : 5$"
    ],
    "zanimljivost": "Deljenjem oba broja sa 10 dobijamo $2 : 3$. Najprostiji oblik dobija se deljenjem sa najvećim zajedničkim deliocem (ovde 10).",
    "medijiOdgovora": {
@@ -15625,20 +15625,20 @@
    "pitanje": "Spoji odnos sa njemu jednakim odnosom.",
    "parovi": [
     [
-     "2 : 3",
-     "6 : 9"
+     "$2 : 3$",
+     "$6 : 9$"
     ],
     [
-     "3 : 4",
-     "9 : 12"
+     "$3 : 4$",
+     "$9 : 12$"
     ],
     [
-     "5 : 2",
-     "15 : 6"
+     "$5 : 2$",
+     "$15 : 6$"
     ],
     [
-     "1 : 4",
-     "3 : 12"
+     "$1 : 4$",
+     "$3 : 12$"
     ]
    ],
    "zanimljivost": "Odnos se ne menja kad i oba broja pomnožimo istim brojem: $2 : 3 = 6 : 9$.",
@@ -16163,10 +16163,10 @@
    "tezina": 2,
    "pitanje": "Ako je $x : y = 2 : 5$ i $y : z = 5 : 7$, koliko je $x : z$?",
    "odgovori": [
-    "2 : 7",
-    "7 : 2",
-    "2 : 5",
-    "5 : 7"
+    "$2 : 7$",
+    "$7 : 2$",
+    "$2 : 5$",
+    "$5 : 7$"
    ],
    "zanimljivost": "Produžena proporcija je $x : y : z = 2 : 5 : 7$, pa je $x : z = 2 : 7$. Lančano spajanje razmera radi kao prenos u zupčanicima: od jednog do drugog.",
    "rec": "produžena"
@@ -16294,10 +16294,10 @@
    "tezina": 3,
    "pitanje": "Ako je $a : b = 2 : 3$ i $a : c = 1 : 4$, koliki je odnos $b : c$?",
    "odgovori": [
-    "3 : 8",
-    "2 : 8",
-    "3 : 4",
-    "8 : 3"
+    "$3 : 8$",
+    "$2 : 8$",
+    "$3 : 4$",
+    "$8 : 3$"
    ],
    "zanimljivost": "Ako je $a = 2$, onda je $b = 3$, a $c = 4a = 8$. Zato je $b : c = 3 : 8$. Isti postupak koristi se u kartografiji kad se mape u različitim razmerama spajaju.",
    "medijiOdgovora": {
@@ -16377,7 +16377,7 @@
     "$a· c = b· d$",
     "$a + d = b + c$"
    ],
-   "zanimljivost": "Spoljašnji članovi su $a$ i $d$, a unutrašnji $b$ i $c$. Proizvod spoljašnjih jednak je proizvodu unutrašnjih. Isto pravilo služi za jednačine: x : 3 = 4 : 6 daje $x = 2$.",
+   "zanimljivost": "Spoljašnji članovi su $a$ i $d$, a unutrašnji $b$ i $c$. Proizvod spoljašnjih jednak je proizvodu unutrašnjih. Isto pravilo služi za jednačine: $x : 3 = 4 : 6$ daje $x = 2$.",
    "rec": "spoljašnji"
   },
   {
@@ -19390,7 +19390,7 @@
     "5, 12, 13",
     "6, 8, 10"
    ],
-   "objasnjenje": "Pitagorina trojka zadovoljava $a^{2}+b^{2}=c^{2}$. Za 2, 3, 4 važi 4 + 9 = 13, a $4^{2}=16$.",
+   "objasnjenje": "Pitagorina trojka zadovoljava $a^{2}+b^{2}=c^{2}$. Za 2, 3, 4 važi $4 + 9 = 13$, a $4^{2}=16$.",
    "zanimljivost": "Pitagorine trojke nazvane su po Pitagori, ali su bile poznate i mnogo ranije.",
    "rec": "trojka"
   },
@@ -20183,7 +20183,7 @@
     "Tupougli",
     "Jednakostranični"
    ],
-   "zanimljivost": "Zbir kvadrata kraćih stranica je 2 + 3 = 5, a kvadrat najduže je 4. Kad je zbir veći, svi uglovi su oštri.",
+   "zanimljivost": "Zbir kvadrata kraćih stranica je $2 + 3 = 5$, a kvadrat najduže je 4. Kad je zbir veći, svi uglovi su oštri.",
    "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
@@ -21183,7 +21183,7 @@
     "4 cm",
     "$√{2}$ cm"
    ],
-   "zanimljivost": "Dijagonala pravougaonika dobija se iz zbira kvadrata stranica: 1 + 3 = 4.",
+   "zanimljivost": "Dijagonala pravougaonika dobija se iz zbira kvadrata stranica: $1 + 3 = 4$.",
    "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
@@ -50697,7 +50697,7 @@
     "360",
     "18"
    ],
-   "zanimljivost": "Iz svakog od 20 temena ima 17 dijagonala: 20 · 17 : 2 = 170.",
+   "zanimljivost": "Iz svakog od 20 temena ima 17 dijagonala: $20 · 17 : 2 = 170$.",
    "rec": "konveksan"
   },
   {
@@ -51089,7 +51089,7 @@
     "2703",
     "1275"
    ],
-   "zanimljivost": "Iz svakog temena ima 50 dijagonala: 53 · 50 : 2 = 1325.",
+   "zanimljivost": "Iz svakog temena ima 50 dijagonala: $53 · 50 : 2 = 1325$.",
    "rec": "temena"
   },
   {
@@ -51198,7 +51198,7 @@
     "720°",
     "540°"
    ],
-   "zanimljivost": "Četvorougao se jednom dijagonalom deli na dva trougla, pa je zbir 2 · 180° = 360°.",
+   "zanimljivost": "Četvorougao se jednom dijagonalom deli na dva trougla, pa je zbir $2 · 180° = 360°$.",
    "rec": "četvorougao"
   },
   {
@@ -51254,7 +51254,7 @@
     "720°",
     "30°"
    ],
-   "zanimljivost": "Spoljašnji uglovi pravilnog šestougla su jednaki: 360° : 6 = 60°.",
+   "zanimljivost": "Spoljašnji uglovi pravilnog šestougla su jednaki: $360° : 6 = 60°$.",
    "medijiOdgovora": {
     "vrsta": "formula",
     "tekst": "360°/6 = 60°"
@@ -51429,7 +51429,7 @@
     "720°",
     "600°"
    ],
-   "zanimljivost": "Iz jednog temena petougla povučene dijagonale dele ga na tri trougla: 3 · 180° = 540°.",
+   "zanimljivost": "Iz jednog temena petougla povučene dijagonale dele ga na tri trougla: $3 · 180° = 540°$.",
    "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
@@ -51876,7 +51876,7 @@
     "540°",
     "270°"
    ],
-   "zanimljivost": "Ako dijagonalom $BD$ podelimo četvorougao, dobijamo dva trougla: 2 · 180° = 360°.",
+   "zanimljivost": "Ako dijagonalom $BD$ podelimo četvorougao, dobijamo dva trougla: $2 · 180° = 360°$.",
    "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
@@ -51926,7 +51926,7 @@
     "10",
     "36"
    ],
-   "zanimljivost": "Broj stranica je 360° : 40° = 9.",
+   "zanimljivost": "Broj stranica je $360° : 40° = 9$.",
    "medijiOdgovora": {
     "vrsta": "formula",
     "tekst": "360°/40° = 9"
@@ -51943,7 +51943,7 @@
     "18",
     "30"
    ],
-   "zanimljivost": "Broj stranica je 360° : 15° = 24.",
+   "zanimljivost": "Broj stranica je $360° : 15° = 24$.",
    "medijiOdgovora": {
     "vrsta": "formula",
     "tekst": "360°/15° = 24"
@@ -51994,7 +51994,7 @@
     "60°",
     "90°"
    ],
-   "zanimljivost": "Zbir je 180°, pa je treći ugao 180° − 50° − 60° = 70°.",
+   "zanimljivost": "Zbir je 180°, pa je treći ugao $180° − 50° − 60° = 70°$.",
    "medijiOdgovora": {
     "vrsta": "formula",
     "tekst": "180° − 50° − 60° = 70°"
@@ -52327,7 +52327,7 @@
     "120°",
     "45°"
    ],
-   "zanimljivost": "Zbir uglova trougla je 180°, a u pravilnom trouglu su svi jednaki: 180° : 3 = 60°.",
+   "zanimljivost": "Zbir uglova trougla je 180°, a u pravilnom trouglu su svi jednaki: $180° : 3 = 60°$.",
    "medijiOdgovora": {
     "vrsta": "formula",
     "tekst": "180°/3 = 60°"
@@ -52379,7 +52379,7 @@
     "180°",
     "60°"
    ],
-   "zanimljivost": "Kvadrat je pravilan četvorougao, pa je unutrašnji ugao (4 − 2) · 180° : 4 = 90°.",
+   "zanimljivost": "Kvadrat je pravilan četvorougao, pa je unutrašnji ugao $(4 − 2) · 180° : 4 = 90°$.",
    "medijiOdgovora": {
     "vrsta": "formula",
     "tekst": "((4 − 2)· 180°)/4 = 90°"
@@ -52530,7 +52530,7 @@
     "150°",
     "162°"
    ],
-   "zanimljivost": "Unutrašnji ugao je (10 − 2) · 180° : 10 = 144°.",
+   "zanimljivost": "Unutrašnji ugao je $(10 − 2) · 180° : 10 = 144°$.",
    "medijiOdgovora": {
     "vrsta": "formula",
     "tekst": "((10 − 2)· 180°)/10 = 144°"
@@ -52632,7 +52632,7 @@
     "45°",
     "20°"
    ],
-   "zanimljivost": "Centralni ugao je 360° : 9 = 40°.",
+   "zanimljivost": "Centralni ugao je $360° : 9 = 40°$.",
    "medijiOdgovora": {
     "vrsta": "formula",
     "tekst": "360°/9 = 40°"
@@ -53061,7 +53061,7 @@
     "60°",
     "36°"
    ],
-   "zanimljivost": "Spoljašnji ugao je 360° : 12 = 30°.",
+   "zanimljivost": "Spoljašnji ugao je $360° : 12 = 30°$.",
    "medijiOdgovora": {
     "vrsta": "formula",
     "tekst": "360°/12 = 30°"
@@ -53364,7 +53364,7 @@
     "4 cm",
     "2 cm",
     "8 cm",
-    "2√3 cm"
+    "$2√3 cm$"
    ],
    "zanimljivost": "Stranica pravilnog šestougla jednaka je poluprečniku opisane kružnice: 4 cm.",
    "medijiOdgovora": {
@@ -53624,7 +53624,7 @@
     "8",
     "12"
    ],
-   "zanimljivost": "Tetiva jednaka poluprečniku odgovara centralnom uglu 60°, pa je 360° : 60° = 6 koraka.",
+   "zanimljivost": "Tetiva jednaka poluprečniku odgovara centralnom uglu 60°, pa je $360° : 60° = 6$ koraka.",
    "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
@@ -53744,7 +53744,7 @@
     "60°",
     "22,5°"
    ],
-   "zanimljivost": "Centralni ugao osmougla je 360° : 8 = 45°, pa se njime konstruišu osnovni trouglovi.",
+   "zanimljivost": "Centralni ugao osmougla je $360° : 8 = 45°$, pa se njime konstruišu osnovni trouglovi.",
    "medijiOdgovora": {
     "vrsta": "formula",
     "tekst": "360°/8 = 45°"
@@ -54089,7 +54089,7 @@
     "Jednakokraki tupougli",
     "Raznostranični"
    ],
-   "zanimljivost": "Ugao pri vrhu je 360° : 6 = 60°, a kraci su jednaki poluprečniku, pa je trougao jednakostraničan.",
+   "zanimljivost": "Ugao pri vrhu je $360° : 6 = 60°$, a kraci su jednaki poluprečniku, pa je trougao jednakostraničan.",
    "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
@@ -54319,9 +54319,9 @@
    },
    "odgovori": [
     "5 cm",
-    "5√2 cm",
+    "$5√2 cm$",
     "10 cm",
-    "5√3 cm"
+    "$5√3 cm$"
    ],
    "zanimljivost": "Stranica kvadrata je ujedno stranica dvanaestougla: 5 cm.",
    "medijiOdgovora": {
@@ -55954,7 +55954,7 @@
    },
    "odgovori": [
     "8 cm",
-    "4√3 cm",
+    "$4√3 cm$",
     "6 cm",
     "4 cm"
    ],
@@ -56877,10 +56877,10 @@
     "velicina": 320
    },
    "odgovori": [
-    "3 : 2",
-    "2 : 3",
-    "1 : 1",
-    "6 : 1"
+    "$3 : 2$",
+    "$2 : 3$",
+    "$1 : 1$",
+    "$6 : 1$"
    ],
    "zanimljivost": "Šestougao se deli na šest jednakostraničnih trouglova stranice $a$, a veći trougao na četiri takva. Površine su u odnosu $6 : 4$, to jest $3 : 2$. Figure istog obima mogu imati različite površine.",
    "medijiOdgovora": {
@@ -64120,10 +64120,10 @@
     "velicina": 300
    },
    "odgovori": [
-    "1 : 2",
-    "2 : 1",
-    "1 : 4",
-    "1 : 1"
+    "$1 : 2$",
+    "$2 : 1$",
+    "$1 : 4$",
+    "$1 : 1$"
    ],
    "zanimljivost": "Dužine lukova se odnose kao centralni uglovi: $40 : 80 = 1 : 2$.",
    "rec": "odnos"
@@ -64938,7 +64938,7 @@
    "odgovori": [
     "4 puta",
     "2 puta",
-    "√2 puta",
+    "$√2$ puta",
     "8 puta"
    ],
    "zanimljivost": "Ista pravila važe i za lopte: kad im se poluprečnik prepolovi, površina postane četiri puta manja, a zapremina osam puta manja.",
@@ -65060,9 +65060,9 @@
     "4 cm",
     "8 cm",
     "2 cm",
-    "√8 cm"
+    "$√8 cm$"
    ],
-   "zanimljivost": "Kad se površina udvostruči, poluprečnik se poveća za √2 puta, a ne dva puta.",
+   "zanimljivost": "Kad se površina udvostruči, poluprečnik se poveća za $√2$ puta, a ne dva puta.",
    "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
@@ -66024,10 +66024,10 @@
    "tezina": 3,
    "pitanje": "Površina kruga je $2π$ cm². Koliki je poluprečnik?",
    "odgovori": [
-    "√2 cm",
+    "$√2 cm$",
     "2 cm",
     "1 cm",
-    "π/2 cm"
+    "$π/2 cm$"
    ],
    "zanimljivost": "Broj $√{2}$ je iracionalan: ne može se zapisati kao razlomak, a ipak se lako nacrta kao dijagonala kvadrata stranice 1.",
    "medijiOdgovora": {
@@ -66677,7 +66677,7 @@
     "π cm²",
     "2π cm²",
     "4π cm²",
-    "π/2 cm²"
+    "$π/2 cm²$"
    ],
    "zanimljivost": "Površina isečka od 90° je četvrtina površine celog kruga, a ne četvrtina poluprečnika.",
    "rec": "isečak"
@@ -67216,8 +67216,8 @@
    "tezina": 1,
    "pitanje": "Koji ugao rotacije odgovara rotaciji suprotno od kretanja kazaljke na satu?",
    "odgovori": [
-    "Pozitivan ugao, α > 0",
-    "Negativan ugao, α < 0",
+    "Pozitivan ugao, $α > 0$",
+    "Negativan ugao, $α < 0$",
     "Ugao 0°",
     "Ugao veći od 360°"
    ],
@@ -68482,9 +68482,9 @@
     "velicina": 230
    },
    "odgovori": [
-    "(−1, √3)",
-    "(−√3, 1)",
-    "(1, −√3)",
+    "(−1, $√3$)",
+    "(−$√3$, 1)",
+    "(1, −$√3$)",
     "(0, 2)"
    ],
    "zanimljivost": "Tačka $(1, √{3})$ je na udaljenosti 2 od $O$, a rotacija ne menja udaljenost od centra. Nova tačka je na istoj kružnici, za 60° dalje.",
@@ -75512,7 +75512,7 @@
     "4",
     "6"
    ],
-   "zanimljivost": "Saberemo sve ocene (2 + 4 + 5 + 9 = 20) i podelimo brojem ocena: 20 : 4 = 5. Sredina ne mora biti jedan od podataka: sredina brojeva 2 i 3 je 2,5.",
+   "zanimljivost": "Saberemo sve ocene ($2 + 4 + 5 + 9 = 20$) i podelimo brojem ocena: $20 : 4 = 5$. Sredina ne mora biti jedan od podataka: sredina brojeva 2 i 3 je 2,5.",
    "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
@@ -76635,7 +76635,7 @@
     "8",
     "7"
    ],
-   "zanimljivost": "Poređamo: 3, 5, 8, 10. Kad je podataka paran broj, medijana je sredina dva srednja: (5 + 8) : 2 = 6,5. Medijana ne mora biti jedan od podataka.",
+   "zanimljivost": "Poređamo: 3, 5, 8, 10. Kad je podataka paran broj, medijana je sredina dva srednja: $(5 + 8) : 2 = 6,5$. Medijana ne mora biti jedan od podataka.",
    "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
@@ -77047,7 +77047,7 @@
     "4,2",
     "4,8"
    ],
-   "zanimljivost": "Zbir svih ocena je 4 · 5 + 3 = 23, pa je prosek 23 : 5 = 4,6. Greška je računati (5 + 3) : 2 = 4, jer petica ima više puta.",
+   "zanimljivost": "Zbir svih ocena je $4 · 5 + 3 = 23$, pa je prosek $23 : 5 = 4,6$. Greška je računati $(5 + 3) : 2 = 4$, jer petica ima više puta.",
    "medijiOdgovora": {
     "vrsta": "formula",
     "tekst": "(4 · 5 + 1 · 3) : 5 = 23 : 5 = 4,6"
@@ -77453,7 +77453,7 @@
     "4",
     "3"
    ],
-   "zanimljivost": "Srednja dva su 3 i 4, pa je medijana (3 + 4) : 2 = 3,5. Aritmetička sredina bi bila 4,17 zbog broja 10, a medijana to i ne oseti.",
+   "zanimljivost": "Srednja dva su 3 i 4, pa je medijana $(3 + 4) : 2 = 3,5$. Aritmetička sredina bi bila 4,17 zbog broja 10, a medijana to i ne oseti.",
    "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
@@ -77592,7 +77592,7 @@
     "12",
     "6"
    ],
-   "zanimljivost": "Kad svaki podatak uvećamo za isti broj, i aritmetička sredina se uveća za taj broj: 4 + 3 = 7. Kad sve pomnožimo nekim brojem, i sredina se pomnoži tim brojem.",
+   "zanimljivost": "Kad svaki podatak uvećamo za isti broj, i aritmetička sredina se uveća za taj broj: $4 + 3 = 7$. Kad sve pomnožimo nekim brojem, i sredina se pomnoži tim brojem.",
    "medijiOdgovora": {
     "vrsta": "formula",
     "tekst": "sredina + 3 = 4 + 3 = 7",
@@ -78054,7 +78054,7 @@
     "6",
     "8"
    ],
-   "zanimljivost": "Zbir sva tri broja je 3 · 6 = 18. Od toga oduzmemo 4 i 7: 18 − 11 = 7. Treći broj je 7.",
+   "zanimljivost": "Zbir sva tri broja je $3 · 6 = 18$. Od toga oduzmemo 4 i 7: $18 − 11 = 7$. Treći broj je 7.",
    "medijiOdgovora": {
     "vrsta": "formula",
     "tekst": "3 · 6 = 18; 18 − 4 − 7 = 7"
@@ -78226,7 +78226,7 @@
     "Polovina (tačno 50%)",
     "Petina (tačno 20%)"
    ],
-   "zanimljivost": "Tri jednaka dela čine celinu, pa je svaki trećina: 1 : 3 ≈ 0,33, odnosno oko 33%.",
+   "zanimljivost": "Tri jednaka dela čine celinu, pa je svaki trećina: $1 : 3 ≈ 0,33$, odnosno oko 33%.",
    "rec": "trećina"
   },
   {
@@ -78239,7 +78239,7 @@
     "35%",
     "20%"
    ],
-   "zanimljivost": "Svi isečci zajedno čine 100%. Zbir poznatih je 40 + 25 + 20 = 85, pa je ostalo 100 − 85 = 15%.",
+   "zanimljivost": "Svi isečci zajedno čine 100%. Zbir poznatih je $40 + 25 + 20 = 85$, pa je ostalo $100 − 85 = 15%$.",
    "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
@@ -80639,7 +80639,7 @@
     "4",
     "40"
    ],
-   "zanimljivost": "40% od 30 je 0,4 · 30 = 12. Procenat je deo od sto, pa se 40 od 100 primenjuje na celinu od 30 učenika.",
+   "zanimljivost": "40% od 30 je $0,4 · 30 = 12$. Procenat je deo od sto, pa se 40 od 100 primenjuje na celinu od 30 učenika.",
    "rec": "procenat"
   },
   {
@@ -80711,7 +80711,7 @@
     "45°",
     "250°"
    ],
-   "zanimljivost": "Ceo krug ima 360°, a 25% je četvrtina: 360° : 4 = 90°. Zato je jedan procenat 3,6°.",
+   "zanimljivost": "Ceo krug ima 360°, a 25% je četvrtina: $360° : 4 = 90°$. Zato je jedan procenat 3,6°.",
    "rec": "ugao"
   },
   {
@@ -81201,7 +81201,7 @@
     "33%",
     "3%"
    ],
-   "zanimljivost": "Košarku trenira 9 od 30 učenika. Procenat je ${9|30}$ = 0,3 = 30%.",
+   "zanimljivost": "Košarku trenira 9 od 30 učenika. Procenat je ${9|30}$ = $0,3 = 30%$.",
    "rec": "procenat"
   },
   {

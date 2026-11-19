@@ -32,6 +32,8 @@ const kviz = {
 };
 const dir = path.join(KOREN, 'kvizovi', 'razred5-matematika-zadaci');
 fs.mkdirSync(dir, { recursive: true });
+// formule napisane kao običan tekst idu u $…$ (alati/mat-zapis.js)
+for (const p of kviz.pitanja) require('./mat-zapis').umotajPitanje(p);
 fs.writeFileSync(path.join(dir, 'kviz.json'), JSON.stringify(kviz, null, 1) + '\n');
 const po = {};
 for (const z of zadaci) po[z.lekcija] = (po[z.lekcija] || []).concat(z.tezina);

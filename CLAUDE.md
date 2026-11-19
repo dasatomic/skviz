@@ -51,6 +51,7 @@ Format je opisan u `kvizovi/UPUTSTVO.md`. Ukratko:
 7. Pokreni `npm run proveri` – mora proći bez grešaka. Server pokupi nove kvizove bez restarta.
 
 ## Konvencije
+- Matematika i formule (i u fizici) u tekstu pitanja idu između `$…$`: klijent ih crta matematičkim fontom na blagoj pločici, promenljive kurzivom, jedinice i brojevi uspravno, pravi koren (`√{…}`, `√(…)`, `√2`), razlomci `{a|b}` i `3/4`, `^{}`/`_{}` (`Mediji.matTekst` u `public/mediji.js`; sam broj „$3$“ ostaje bez pločice). Formule napisane kao običan tekst („F = m · a“) generatori sami stavljaju u `$…$` (`alati/mat-zapis.js`), za ručno pisane kvizove `node alati/sredi-mat-zapis.js`; `npm run proveri` upozorava na formulu van `$…$`.
 - Ne dodavati npm zavisnosti; klijent radi i bez interneta (osim Google fonta, koji ima rezervu).
 - Proveravati činjenice – pitanja su za decu i moraju biti tačna.
 
