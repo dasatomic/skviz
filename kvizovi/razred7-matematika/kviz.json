@@ -8005,7 +8005,7 @@
     "7 cm",
     "40,5 cm"
    ],
-   "zanimljivost": "Stranica je $√{81}=9$ cm, jer je $9·9=81$. Kvadratno polje površine 81 $m²$ ima stranicu 9 m. Koren iz površine daje stranicu.",
+   "zanimljivost": "Stranica je $√{81}=9$ cm, jer je $9·9=81$. Kvadratno polje površine 81 m² ima stranicu 9 m. Koren iz površine daje stranicu.",
    "medijiOdgovora": {
     "vrsta": "formula",
     "tekst": "√81 = 9, jer je 9 · 9 = 81",
@@ -54630,6 +54630,60 @@
    ],
    "objasnjenje": "Pravilni sedmougao se ne može konstruisati samo lenjirom i šestarom. Šestougao, osmougao i dvanaestougao mogu.",
    "zanimljivost": "Vancel je 1837. godine dokazao da pravilni sedmougao ne može da se konstruiše samo lenjirom i šestarom.",
+   "medijiOdgovora": {
+    "vrsta": "geo",
+    "t": {
+     "O": [
+      0,
+      0
+     ]
+    },
+    "e": [
+     {
+      "lin": [
+       [
+        -1.302,
+        -2.703
+       ],
+       [
+        1.302,
+        -2.703
+       ],
+       [
+        2.925,
+        -0.668
+       ],
+       [
+        2.345,
+        1.87
+       ],
+       [
+        0,
+        3
+       ],
+       [
+        -2.345,
+        1.87
+       ],
+       [
+        -2.925,
+        -0.668
+       ],
+       [
+        -1.302,
+        -2.703
+       ]
+      ],
+      "zatv": 1,
+      "b": 0,
+      "gusto": 1
+     }
+    ],
+    "bezImena": [
+     "O"
+    ],
+    "velicina": 240
+   },
    "rec": "lenjir"
   },
   {

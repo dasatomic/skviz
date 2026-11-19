@@ -26,7 +26,8 @@ function oznakeUMat(t) {
     // „n-ti“, „n-tom“
     s = s.replace(/(?<![\p{L}\d$])([nkab])-(?=\p{Ll})/gu, (m, a) => `$${a}$-`);
     // „r²“, „d²“
-    s = s.replace(/(?<![\p{L}\d$])([a-z][²³])(?![\p{L}\d])/gu, (m, a) => `$${a}$`);
+    // (ne i jedinica iza broja: „100 m²“)
+    s = s.replace(/(?<![\p{L}\d$])(?<!\d\s)([a-z][²³])(?![\p{L}\d])/gu, (m, a) => `$${a}$`);
     // „slovom r“
     s = s.replace(/(slov(?:o|om|a)\s)([a-z])(?![\p{L}\d])/gu, (m, a, b) => `${a}$${b}$`);
     // velika slova: A, B, AB, AOB, P₃, A′
@@ -38,6 +39,7 @@ function oznakeUMat(t) {
         const pocetak = (i === 0 && /^[\s„(]*$/.test(pre)) || /[.!?:;]\s+$/.test(pre);
         const glagol = /^\s+(je|i|su|se|leži|ima)\s/u.test(posle); // „O je centar…“, „A i B…“
         if (pocetak && malo && !glagol) return m; // „A ako…“, „U paralelogramu…“, „O čemu…“
+        if (pocetak && x !== 'A' && !glagol && /^\s+([IVX]+\s|\$|\d|\p{Lu}\p{Ll})/u.test(posle)) return m; // „U II kvadrantu“, „U $14$ časova“, „U Novom Sadu“
         if (x !== 'A' && malo && !glagol && !/(tačk\p{L}*|teme\p{L}*|kod|od|do|oko|kroz|iz|skup\p{L}*|centar|centr\p{L}*|središt\p{L}*)\s+$/u.test(pre)) return m;
       }
       return `$${x}$`;
@@ -78,7 +80,7 @@ function gradi({ lekcije, pomocne, folder, kviz: zaglavlje, paket, oznake = fals
   }
   // U(težina, pitanje, odgovori [prvi je uljez], objašnjenje, zanimljivost, pojam, { … })
   function U(tezina, pitanje, odgovori, objasnjenje, zanimljivost, rec, x = {}) {
-    dodaj({ vrsta: 'uljez', tezina, pitanje, ...(x.mediji ? { mediji: x.mediji } : {}), odgovori, objasnjenje, zanimljivost, rec });
+    dodaj({ vrsta: 'uljez', tezina, pitanje, ...(x.mediji ? { mediji: x.mediji } : {}), odgovori, objasnjenje, zanimljivost, ...(x.medijiOdgovora ? { medijiOdgovora: x.medijiOdgovora } : {}), rec });
   }
   // S(težina, pitanje, parovi [[levo, desno], …], zanimljivost, pojam, { … })
   function S(tezina, pitanje, parovi, zanimljivost, rec, x = {}) {
