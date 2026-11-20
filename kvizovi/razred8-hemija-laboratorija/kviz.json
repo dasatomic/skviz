@@ -1,0 +1,4056 @@
+{
+ "naziv": "8. razred · Hemija – laboratorija",
+ "ikona": "🥽",
+ "boja": "#1abc9c",
+ "opis": "Laboratorijske vežbe iz hemije 8: bezbedan rad, pribor i posuđe, ogledi sa metalima, nemetalima, kiselinama, solima, ugljovodonicima, alkoholima, kiselinama i biološki važnim jedinjenjima – uz animirane oglede",
+ "redosled": 111,
+ "uOpstem": false,
+ "oblast": "hemija-laboratorija",
+ "razred": 8,
+ "celina": "Sve vežbe",
+ "lekcije": [
+  {
+   "naziv": "Mere predostrožnosti i oznake opasnosti",
+   "tema": "Bezbedan rad i laboratorijski pribor",
+   "strana": 6
+  },
+  {
+   "naziv": "Laboratorijsko posuđe i pribor",
+   "tema": "Bezbedan rad i laboratorijski pribor",
+   "strana": 8
+  },
+  {
+   "naziv": "Vežba I – fizička svojstva metala",
+   "tema": "Vežbe: metali i nemetali",
+   "strana": 8
+  },
+  {
+   "naziv": "Vežba I – reakcija metala sa kiselinom i naponski niz",
+   "tema": "Vežbe: metali i nemetali",
+   "strana": 15
+  },
+  {
+   "naziv": "Vežba II – fizička svojstva nemetala",
+   "tema": "Vežbe: metali i nemetali",
+   "strana": 17
+  },
+  {
+   "naziv": "Vežba III – kiselost neorganskih kiselina",
+   "tema": "Vežbe: kiseline i soli",
+   "strana": 19
+  },
+  {
+   "naziv": "Vežba IV – dobijanje soli i rastvorljivost",
+   "tema": "Vežbe: kiseline i soli",
+   "strana": 20
+  },
+  {
+   "naziv": "Vežba V – modeli molekula ugljovodonika",
+   "tema": "Vežbe: organska i biološki važna jedinjenja",
+   "strana": 27
+  },
+  {
+   "naziv": "Vežba VI – alkoholi i karboksilne kiseline",
+   "tema": "Vežbe: organska i biološki važna jedinjenja",
+   "strana": 29
+  },
+  {
+   "naziv": "Vežba VII – biološki važna jedinjenja",
+   "tema": "Vežbe: organska i biološki važna jedinjenja",
+   "strana": 33
+  },
+  {
+   "naziv": "Vežbe VIII i IX – određivanje nepoznatih supstanci",
+   "tema": "Vežbe: određivanje nepoznatih supstanci",
+   "strana": 38
+  }
+ ],
+ "pitanja": [
+  {
+   "lekcija": 1,
+   "tezina": 1,
+   "pitanje": "Pod čijim nadzorom se uvek izvode hemijski ogledi u školi?",
+   "medijiOdgovora": {
+    "vrsta": "emodzi",
+    "tekst": "👩‍🏫🧪"
+   },
+   "odgovori": [
+    "Pod nadzorom nastavnika",
+    "Pod nadzorom starijeg druga",
+    "Pod nadzorom roditelja",
+    "Bez ičijeg nadzora"
+   ],
+   "zanimljivost": "Nikada ne izvodi oglede sam – nastavnik zna kako da reaguje ako nešto pođe naopako.",
+   "rec": "nadzor"
+  },
+  {
+   "lekcija": 1,
+   "tezina": 1,
+   "pitanje": "Koju zaštitnu opremu je obavezno nositi u laboratoriji?",
+   "medijiOdgovora": {
+    "vrsta": "emodzi",
+    "tekst": "🥽🧤🥼"
+   },
+   "odgovori": [
+    "Zaštitne naočare, rukavice i mantil",
+    "Samo zaštitne naočare i kačket",
+    "Kačket, šal i lagana jakna",
+    "Sandale, kratke rukave i kratke pantalone"
+   ],
+   "zanimljivost": "Treba nositi i zatvorenu obuću, a dugu kosu vezati.",
+   "rec": "oprema"
+  },
+  {
+   "lekcija": 1,
+   "tezina": 1,
+   "pitanje": "Kako se pravilno greje epruveta sa tečnošću?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "grejanje"
+   },
+   "odgovori": [
+    "Otvor je okrenut od ljudi, a epruveta je pod uglom",
+    "Otvor je okrenut ka sebi, radi bolje kontrole",
+    "Otvor je okrenut ka drugu da bolje gleda ogled",
+    "Epruveta stoji uspravno iznad samog plamena"
+   ],
+   "zanimljivost": "Tečnost može da prsne – zato otvor epruvete nikada ne usmeravamo ka sebi ili drugoj osobi.",
+   "rec": "greje"
+  },
+  {
+   "lekcija": 1,
+   "tezina": 1,
+   "pitanje": "Šta je nepravilno prikazano u ovom ogledu?",
+   "mediji": {
+    "vrsta": "laboratorija",
+    "scena": "grejanje",
+    "tip": "nepravilno"
+   },
+   "odgovori": [
+    "Otvor epruvete je usmeren ka osobi",
+    "Epruveta se greje direktno plamenom lampe",
+    "Epruveta se drži drvenom hvataljkom",
+    "Koristi se špiritusna lampa za grejanje"
+   ],
+   "zanimljivost": "Otvor epruvete mora biti okrenut od ljudi.",
+   "rec": "nepravilno"
+  },
+  {
+   "lekcija": 1,
+   "tezina": 2,
+   "pitanje": "Kako se pravilno proverava miris supstance u epruveti?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "mirisanje"
+   },
+   "odgovori": [
+    "Rukom se lagano usmeri para ka nosu",
+    "Nos se prisloni direktno uz otvor epruvete",
+    "Epruveta se udahne iz neposredne blizine",
+    "Miris se proverava kad se supstanca zagreje"
+   ],
+   "zanimljivost": "Miris se procenjuje iz daljine i pažljivo, naročito kod mravlje i sirćetne kiseline.",
+   "rec": "miris"
+  },
+  {
+   "lekcija": 1,
+   "tezina": 3,
+   "pitanje": "Kako se pravilno razblažuje koncentrovana sumporna kiselina?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "sumporna-kiselina"
+   },
+   "odgovori": [
+    "Kiselina se lagano sipa u vodu, preko štapića, uz mešanje",
+    "Voda se sipa u kiselinu, preko štapića, uz mešanje",
+    "Obe tečnosti se naglo sipaju zajedno u posudu",
+    "Kiselina se ulije u vodu odjednom, bez mešanja"
+   ],
+   "zanimljivost": "Pravilo: nikada ne sipati vodu u koncentrovanu sumpornu kiselinu – oslobađa se mnogo toplote i može da prsne.",
+   "rec": "kiselina"
+  },
+  {
+   "lekcija": 1,
+   "tezina": 3,
+   "pitanje": "Gde se izvode ogledi sa otrovnim isparljivim supstancama?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "oznake",
+    "znaci": [
+     "otrovno"
+    ]
+   },
+   "odgovori": [
+    "U digestoru, pored prozora ili napolju",
+    "Na nastavničkom stolu u sredini učionice",
+    "Na bilo kom stolu u laboratoriji",
+    "Blizu radijatora, da brže ispare"
+   ],
+   "zanimljivost": "Digestor je ormar sa odsisavanjem, u kome se rukuje supstancama koje oslobađaju štetne gasove.",
+   "rec": "digestor"
+  },
+  {
+   "lekcija": 1,
+   "tezina": 2,
+   "pitanje": "Gde se izvode ogledi sa zapaljivim supstancama?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "oznake",
+    "znaci": [
+     "zapaljivo"
+    ]
+   },
+   "odgovori": [
+    "Daleko od plamena",
+    "Blizu špiritusne lampe",
+    "Iznad plamena gorionika",
+    "Na tronošcu sa mrežicom"
+   ],
+   "zanimljivost": "Zapaljive supstance se čuvaju zatvorene i dalje od izvora paljenja.",
+   "rec": "zapaljivo"
+  },
+  {
+   "lekcija": 1,
+   "tezina": 1,
+   "pitanje": "Šta se nikada ne radi u laboratoriji?",
+   "medijiOdgovora": {
+    "vrsta": "emodzi",
+    "tekst": "🍔🚫"
+   },
+   "odgovori": [
+    "Ne jede se i ne pije",
+    "Ne nosi se mantil",
+    "Ne zapisuju se podaci",
+    "Ne koriste se naočare"
+   ],
+   "zanimljivost": "Hemikalije mogu dospeti u hranu ili piće, a odatle u organizam.",
+   "rec": "jelo"
+  },
+  {
+   "lekcija": 1,
+   "tezina": 1,
+   "pitanje": "Šta znači ovaj znak opasnosti?",
+   "mediji": {
+    "vrsta": "laboratorija",
+    "scena": "oznake",
+    "znaci": [
+     "otrovno"
+    ],
+    "istakni": true
+   },
+   "odgovori": [
+    "Otrovna supstanca",
+    "Zapaljiva supstanca",
+    "Komprimovani gas",
+    "Opasno po okolinu"
+   ],
+   "zanimljivost": "Otrovne supstance mogu izazvati teško trovanje ili smrt udisanjem, gutanjem ili dodirom sa kožom.",
+   "rec": "otrov"
+  },
+  {
+   "lekcija": 1,
+   "tezina": 1,
+   "pitanje": "Šta znači ovaj znak opasnosti?",
+   "mediji": {
+    "vrsta": "laboratorija",
+    "scena": "oznake",
+    "znaci": [
+     "zapaljivo"
+    ],
+    "istakni": true
+   },
+   "odgovori": [
+    "Zapaljiva supstanca",
+    "Otrovna supstanca",
+    "Eksplozivna supstanca",
+    "Nagrizajuća supstanca"
+   ],
+   "zanimljivost": "Zapaljive supstance se pale same ili pri kratkom kontaktu sa izvorom paljenja.",
+   "rec": "plamen"
+  },
+  {
+   "lekcija": 1,
+   "tezina": 2,
+   "pitanje": "Šta znači ovaj znak opasnosti?",
+   "mediji": {
+    "vrsta": "laboratorija",
+    "scena": "oznake",
+    "znaci": [
+     "nagrizajuce"
+    ],
+    "istakni": true
+   },
+   "odgovori": [
+    "Nagrizajuća supstanca",
+    "Zapaljiva supstanca",
+    "Oksidujuća supstanca",
+    "Štetna supstanca"
+   ],
+   "zanimljivost": "Nagrizajuće supstance uništavaju tkiva i druge materijale – na primer koncentrovane kiseline i baze.",
+   "rec": "nagriza"
+  },
+  {
+   "lekcija": 1,
+   "tezina": 2,
+   "pitanje": "Šta znači ovaj znak opasnosti?",
+   "mediji": {
+    "vrsta": "laboratorija",
+    "scena": "oznake",
+    "znaci": [
+     "okolina"
+    ],
+    "istakni": true
+   },
+   "odgovori": [
+    "Opasno po životnu sredinu",
+    "Opasno po zdravlje ljudi",
+    "Komprimovani gas u boci",
+    "Otrovna supstanca"
+   ],
+   "zanimljivost": "Takve supstance se ne sipaju u sliv ni u običan otpad.",
+   "rec": "okolina"
+  },
+  {
+   "lekcija": 1,
+   "tezina": 2,
+   "pitanje": "Kako se u laboratoriji odlaže otpad posle ogleda?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "oznake",
+    "znaci": [
+     "okolina"
+    ]
+   },
+   "odgovori": [
+    "Prema pravilima, ne u sliv",
+    "U sliv, uz mnogo vode",
+    "U običnu kantu za smeće",
+    "Izlije se kroz prozor"
+   ],
+   "zanimljivost": "Neke supstance su štetne po životnu sredinu i moraju se odlagati odvojeno.",
+   "rec": "otpad"
+  },
+  {
+   "lekcija": 1,
+   "tezina": 2,
+   "pitanje": "Šta treba proveriti posle upotrebe grejnog tela, rešoa ili lampe?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "pribor",
+    "stavke": [
+     "reso"
+    ],
+    "natpisi": false
+   },
+   "odgovori": [
+    "Da li je isključeno ili ugašeno",
+    "Da li je još uvek toplo na dodir",
+    "Koliko vode je ostalo u čaši",
+    "Da li je vaga namagnetisana"
+   ],
+   "zanimljivost": "Ostavljen uključen rešo može izazvati požar.",
+   "rec": "reso"
+  },
+  {
+   "lekcija": 1,
+   "vrsta": "spoji",
+   "tezina": 2,
+   "pitanje": "Spoji oznaku opasnosti sa značenjem.",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "oznake",
+    "znaci": [
+     "otrovno",
+     "zapaljivo",
+     "okolina"
+    ]
+   },
+   "parovi": [
+    [
+     "Lobanja sa kostima",
+     "Otrovna supstanca"
+    ],
+    [
+     "Plamen",
+     "Zapaljiva supstanca"
+    ],
+    [
+     "Riba i drvo",
+     "Opasno po okolinu"
+    ],
+    [
+     "Eksplozija",
+     "Eksplozivna supstanca"
+    ]
+   ],
+   "zanimljivost": "Postoji devet oznaka za opasnost po sistemu GHS, i svaka ima svoje mere opreza.",
+   "rec": "oznake"
+  },
+  {
+   "lekcija": 2,
+   "tezina": 1,
+   "pitanje": "Kako se zove prikazani laboratorijski pribor?",
+   "mediji": {
+    "vrsta": "laboratorija",
+    "scena": "pribor",
+    "stavke": [
+     "epruveta"
+    ],
+    "istakni": true
+   },
+   "odgovori": [
+    "Epruveta",
+    "Menzura",
+    "Bireta",
+    "Pipeta"
+   ],
+   "zanimljivost": "U epruvetama se izvodi većina malih ogleda.",
+   "rec": "epruveta"
+  },
+  {
+   "lekcija": 2,
+   "tezina": 1,
+   "pitanje": "Kako se zove prikazano laboratorijsko posuđe?",
+   "mediji": {
+    "vrsta": "laboratorija",
+    "scena": "pribor",
+    "stavke": [
+     "casa"
+    ],
+    "istakni": true
+   },
+   "odgovori": [
+    "Laboratorijska čaša",
+    "Erlenmajerova tikvica",
+    "Menzura",
+    "Epruveta"
+   ],
+   "zanimljivost": "Ima izlivnik i podeoke sa strane, ali nije precizno za merenje.",
+   "rec": "čaša"
+  },
+  {
+   "lekcija": 2,
+   "tezina": 1,
+   "pitanje": "Kako se zove prikazano posuđe sa konusnim telom i uskim grlom?",
+   "mediji": {
+    "vrsta": "laboratorija",
+    "scena": "pribor",
+    "stavke": [
+     "erlenmajer"
+    ],
+    "istakni": true
+   },
+   "odgovori": [
+    "Erlenmajerova tikvica",
+    "Laboratorijska čaša",
+    "Menzura",
+    "Tikvica sa okruglim dnom"
+   ],
+   "zanimljivost": "Nazvana je po nemačkom hemičaru Emilu Erlenmajeru.",
+   "rec": "erlenmajer"
+  },
+  {
+   "lekcija": 2,
+   "tezina": 1,
+   "pitanje": "Čemu služi menzura?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "pribor",
+    "stavke": [
+     "menzura"
+    ]
+   },
+   "odgovori": [
+    "Za merenje zapremine tečnosti",
+    "Za merenje mase supstance",
+    "Za zagrevanje supstanci",
+    "Za usitnjavanje čvrstih supstanci"
+   ],
+   "zanimljivost": "Zapremina se čita u visini oka, na najnižem delu meniska.",
+   "rec": "menzura"
+  },
+  {
+   "lekcija": 2,
+   "tezina": 1,
+   "pitanje": "Kako se zove prikazani pribor za usitnjavanje čvrstih supstanci?",
+   "mediji": {
+    "vrsta": "laboratorija",
+    "scena": "pribor",
+    "stavke": [
+     "avan"
+    ],
+    "istakni": true
+   },
+   "odgovori": [
+    "Avan sa tučkom",
+    "Kašičica za čvrste supstance",
+    "Levak sa filter hartijom",
+    "Drvena hvataljka"
+   ],
+   "zanimljivost": "U avanu se kristali sitne u prah.",
+   "rec": "avan"
+  },
+  {
+   "lekcija": 2,
+   "tezina": 1,
+   "pitanje": "Čemu služi levak sa filter hartijom?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "filtriranje"
+   },
+   "odgovori": [
+    "Za odvajanje čvrste supstance od tečnosti",
+    "Za precizno merenje zapremine tečnosti u ogledu",
+    "Za zagrevanje rastvora do tačke ključanja",
+    "Za dugotrajno čuvanje reagenasa u obliku praha"
+   ],
+   "zanimljivost": "Čvrsti ostatak ostaje na filter hartiji, a bistar filtrat prolazi u posudu ispod.",
+   "rec": "levak"
+  },
+  {
+   "lekcija": 2,
+   "tezina": 1,
+   "pitanje": "Čemu služi Pasterova pipeta?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "pribor",
+    "stavke": [
+     "pipeta"
+    ]
+   },
+   "odgovori": [
+    "Za prenošenje malih količina tečnosti",
+    "Za merenje temperature rastvora u epruveti",
+    "Za mešanje čvrstih supstanci u čaši",
+    "Za hvatanje vrućih epruveta iznad plamena"
+   ],
+   "zanimljivost": "Naziv je dobila po francuskom naučniku Luju Pasteru.",
+   "rec": "pipeta"
+  },
+  {
+   "lekcija": 2,
+   "tezina": 1,
+   "pitanje": "Kako se zove prikazani pribor kojim se zagreva u laboratoriji?",
+   "mediji": {
+    "vrsta": "laboratorija",
+    "scena": "pribor",
+    "stavke": [
+     "lampa"
+    ],
+    "istakni": true
+   },
+   "odgovori": [
+    "Špiritusna lampa",
+    "Rešo sa grejačem",
+    "Tronožac sa mrežicom",
+    "Stativ sa hvataljkom"
+   ],
+   "zanimljivost": "Špiritusna lampa gori plamenom koji nastaje sagorevanjem alkohola.",
+   "rec": "lampa"
+  },
+  {
+   "lekcija": 2,
+   "tezina": 2,
+   "pitanje": "Čemu služi tronožac sa metalnom mrežicom?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "pribor",
+    "stavke": [
+     "tronozac"
+    ]
+   },
+   "odgovori": [
+    "Postavlja se posuda iznad plamena pri zagrevanju",
+    "Meri se masa supstance koja se zagreva na plamenu",
+    "Odvaja se talog od rastvora u čaši pomoću mrežice",
+    "Čuvaju se epruvete sa reagensima u stalku"
+   ],
+   "zanimljivost": "Mrežica ravnomerno raspoređuje toplotu na dno posude.",
+   "rec": "tronožac"
+  },
+  {
+   "lekcija": 2,
+   "tezina": 2,
+   "pitanje": "Čemu služi stativ sa hvataljkom (klemom)?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "pribor",
+    "stavke": [
+     "stativ"
+    ]
+   },
+   "odgovori": [
+    "Za držanje aparature na određenoj visini",
+    "Za čuvanje epruveta sa rastvorima na stolu",
+    "Za merenje temperature rastvora u čaši",
+    "Za mešanje rastvora u laboratorijskoj čaši"
+   ],
+   "zanimljivost": "Na njega se pričvršćuju epruvete, tikvice i cevi za gasove.",
+   "rec": "stativ"
+  },
+  {
+   "lekcija": 2,
+   "tezina": 1,
+   "pitanje": "Šta se koristi za držanje više epruveta?",
+   "mediji": {
+    "vrsta": "laboratorija",
+    "scena": "pribor",
+    "stavke": [
+     "stalak"
+    ],
+    "istakni": true
+   },
+   "odgovori": [
+    "Stalak za epruvete",
+    "Hvataljka za epruvete",
+    "Tronožac",
+    "Avan"
+   ],
+   "zanimljivost": "Epruvete se u stalku obeležavaju markerom da se ne pomešaju.",
+   "rec": "stalak"
+  },
+  {
+   "lekcija": 2,
+   "tezina": 2,
+   "pitanje": "Čemu služi špric-boca u laboratoriji?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "pribor",
+    "stavke": [
+     "boca"
+    ]
+   },
+   "odgovori": [
+    "Za doziranje i ispiranje destilovanom vodom",
+    "Za zagrevanje tečnosti do ključanja",
+    "Za merenje precizne zapremine gasa",
+    "Za mešanje dva čvrsta uzorka u epruveti"
+   ],
+   "zanimljivost": "Iz nje se u epruvete dodaje destilovana voda do trećine zapremine.",
+   "rec": "boca"
+  },
+  {
+   "lekcija": 2,
+   "tezina": 2,
+   "pitanje": "Čemu služi tehnička vaga?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "pribor",
+    "stavke": [
+     "vaga"
+    ]
+   },
+   "odgovori": [
+    "Za merenje mase supstance",
+    "Za merenje zapremine tečnosti",
+    "Za merenje temperature",
+    "Za merenje pH vrednosti"
+   ],
+   "zanimljivost": "Tehnička vaga meri na jedno ili dva decimalna mesta, a analitička na četiri i više.",
+   "rec": "vaga"
+  },
+  {
+   "lekcija": 2,
+   "tezina": 2,
+   "pitanje": "Čemu služi termometar?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "pribor",
+    "stavke": [
+     "termometar"
+    ]
+   },
+   "odgovori": [
+    "Za merenje temperature",
+    "Za merenje mase",
+    "Za merenje zapremine",
+    "Za merenje vlažnosti"
+   ],
+   "zanimljivost": "Običan termometar sadrži obojenu tečnost koja se širi pri zagrevanju.",
+   "rec": "termometar"
+  },
+  {
+   "lekcija": 2,
+   "tezina": 3,
+   "pitanje": "Zašto se zapremina u menzuri čita na najnižem delu meniska?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "menzura",
+    "predmet": "Fe",
+    "v0": 30,
+    "v1": 40
+   },
+   "odgovori": [
+    "Površina vode je udubljena",
+    "Površina vode je izbočena",
+    "Voda je providna",
+    "Menzura je od stakla"
+   ],
+   "zanimljivost": "Oko mora biti u visini meniska, a pogled vodoravan.",
+   "rec": "menisk"
+  },
+  {
+   "lekcija": 2,
+   "vrsta": "spoji",
+   "tezina": 2,
+   "pitanje": "Spoji pribor sa namenom.",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "pribor",
+    "stavke": [
+     "menzura",
+     "levak",
+     "lampa"
+    ]
+   },
+   "parovi": [
+    [
+     "Menzura",
+     "Merenje zapremine"
+    ],
+    [
+     "Vaga",
+     "Merenje mase"
+    ],
+    [
+     "Levak",
+     "Filtriranje"
+    ],
+    [
+     "Špiritusna lampa",
+     "Zagrevanje"
+    ]
+   ],
+   "zanimljivost": "Svaki pribor ima svoju ulogu – pogrešan izbor kvari rezultat ogleda.",
+   "rec": "pribor"
+  },
+  {
+   "lekcija": 3,
+   "tezina": 1,
+   "pitanje": "Šta od ovoga privlači magnet iz skupa: Mg, Fe, Cu, Al, Pb, Zn?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "magnet",
+    "uzorci": [
+     "Fe",
+     "Cu",
+     "Al",
+     "Zn"
+    ]
+   },
+   "odgovori": [
+    "Samo gvožđe (Fe)",
+    "Samo bakar (Cu)",
+    "Svi metali, ali slabo",
+    "Magnezijum i cink"
+   ],
+   "zanimljivost": "Gvožđe je magnetno; privlače ga i nikl i kobalt, ali ostali metali iz ogleda ne.",
+   "rec": "magnet"
+  },
+  {
+   "lekcija": 3,
+   "tezina": 2,
+   "pitanje": "Koji od ispitivanih metala bi se mogao izdvojiti iz smeše metala pomoću magneta?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "magnet",
+    "uzorci": [
+     "Cu",
+     "Fe",
+     "Pb"
+    ]
+   },
+   "odgovori": [
+    "Gvožđe",
+    "Bakar",
+    "Olovo",
+    "Aluminijum"
+   ],
+   "zanimljivost": "Magnet izdvaja samo magnetne metale, zato se koristi u reciklaži otpada.",
+   "rec": "smeša"
+  },
+  {
+   "lekcija": 3,
+   "tezina": 1,
+   "pitanje": "Koji od ispitivanih metala je tečan na sobnoj temperaturi?",
+   "medijiOdgovora": {
+    "vrsta": "hemija",
+    "scena": "atom",
+    "z": 80
+   },
+   "odgovori": [
+    "Živa",
+    "Olovo",
+    "Cink",
+    "Magnezijum"
+   ],
+   "zanimljivost": "Živa nije bila u ogledu jer je otrovna, ali je jedini tečni metal.",
+   "rec": "živa"
+  },
+  {
+   "lekcija": 3,
+   "tezina": 1,
+   "pitanje": "Po čemu se od ostalih metala razlikuje bakar?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "resetka-bakar"
+   },
+   "odgovori": [
+    "Crvenkastom bojom",
+    "Magnetnim svojstvima",
+    "Agregatnim stanjem",
+    "Velikom lakoćom"
+   ],
+   "zanimljivost": "Osim bakra, po boji se razlikuju još zlato, cezijum i osmijum.",
+   "rec": "bakar"
+  },
+  {
+   "lekcija": 3,
+   "tezina": 2,
+   "pitanje": "Kako se računa gustina tela?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "menzura",
+    "predmet": "Fe",
+    "v0": 30,
+    "v1": 40,
+    "masa": 79
+   },
+   "odgovori": [
+    "Masa podeljena zapreminom",
+    "Zapremina podeljena masom",
+    "Masa pomnožena zapreminom",
+    "Zapremina umanjena za masu"
+   ],
+   "zanimljivost": "ρ = m / V. U hemiji se obično izražava u g/cm³.",
+   "rec": "gustina"
+  },
+  {
+   "lekcija": 3,
+   "tezina": 2,
+   "pitanje": "Kako se u ogledu određuje zapremina metalnog valjka?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "menzura",
+    "predmet": "Cu",
+    "v0": 20,
+    "v1": 30,
+    "masa": 90
+   },
+   "odgovori": [
+    "Razlikom zapremina vode u menzuri posle i pre uranjanja",
+    "Merenjem mase valjka na tehničkoj vagi",
+    "Merenjem temperature vode pre uranjanja valjka",
+    "Brojanjem podeoka na menzuri pre početka ogleda"
+   ],
+   "zanimljivost": "Telo istiskuje zapreminu vode jednaku svojoj zapremini (Arhimedov zakon).",
+   "rec": "zapremina"
+  },
+  {
+   "lekcija": 3,
+   "tezina": 2,
+   "pitanje": "Valjak od gvožđa mase 79 g istisne 10 cm³ vode. Kolika je gustina gvožđa?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "menzura",
+    "predmet": "Fe",
+    "v0": 30,
+    "v1": 40,
+    "masa": 79
+   },
+   "odgovori": [
+    "7,9 g/cm³",
+    "0,79 g/cm³",
+    "79 g/cm³",
+    "790 g/cm³"
+   ],
+   "zanimljivost": "ρ = 79 g : 10 cm³ = 7,9 g/cm³.",
+   "rec": "gustina"
+  },
+  {
+   "lekcija": 3,
+   "tezina": 2,
+   "pitanje": "Valjak od bakra mase 90 g istisne 10 cm³ vode. Kolika je gustina bakra?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "menzura",
+    "predmet": "Cu",
+    "v0": 30,
+    "v1": 40,
+    "masa": 90
+   },
+   "odgovori": [
+    "9,0 g/cm³",
+    "0,9 g/cm³",
+    "90 g/cm³",
+    "900 g/cm³"
+   ],
+   "zanimljivost": "Bakar je gušći od gvožđa.",
+   "rec": "bakar"
+  },
+  {
+   "lekcija": 3,
+   "tezina": 2,
+   "pitanje": "Valjak od aluminijuma mase 27 g istisne 10 cm³ vode. Kolika je gustina aluminijuma?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "menzura",
+    "predmet": "Al",
+    "v0": 30,
+    "v1": 40,
+    "masa": 27
+   },
+   "odgovori": [
+    "2,7 g/cm³",
+    "0,27 g/cm³",
+    "27 g/cm³",
+    "270 g/cm³"
+   ],
+   "zanimljivost": "Aluminijum je lak metal – zato se koristi u avionima.",
+   "rec": "aluminijum"
+  },
+  {
+   "lekcija": 3,
+   "tezina": 3,
+   "pitanje": "Koji od ova tri metala ima najmanju gustinu?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "menzura",
+    "predmet": "Al",
+    "v0": 30,
+    "v1": 40,
+    "masa": 27
+   },
+   "odgovori": [
+    "Aluminijum",
+    "Gvožđe",
+    "Bakar",
+    "Svi imaju istu"
+   ],
+   "zanimljivost": "ρ(Al) = 2,7; ρ(Fe) = 7,9; ρ(Cu) = 9,0 g/cm³.",
+   "rec": "najlakši"
+  },
+  {
+   "lekcija": 3,
+   "tezina": 3,
+   "pitanje": "Zašto se gustina kalcijuma ne može odrediti uranjanjem u vodu?",
+   "medijiOdgovora": {
+    "vrsta": "hemija",
+    "scena": "reakcija",
+    "reaktanti": [
+     [
+      "kalcijum",
+      1
+     ],
+     [
+      "voda",
+      2
+     ]
+    ],
+    "proizvodi": [
+     [
+      "kalcijum-hidroksid",
+      1
+     ],
+     [
+      "vodonik",
+      1
+     ]
+    ],
+    "efekat": "mehurici"
+   },
+   "odgovori": [
+    "Kalcijum reaguje sa vodom i oslobađa vodonik",
+    "Kalcijum je lakši od vazduha pa lebdi",
+    "Kalcijum nema masu pa se ne može meriti",
+    "Kalcijum je providan i teško se vidi u vodi"
+   ],
+   "zanimljivost": "Ca + 2H₂O → Ca(OH)₂ + H₂.",
+   "rec": "kalcijum"
+  },
+  {
+   "lekcija": 3,
+   "tezina": 3,
+   "pitanje": "Koji metali su manje gusti od vode (1 g/cm³)?",
+   "medijiOdgovora": {
+    "vrsta": "hemija",
+    "scena": "atom",
+    "z": 3
+   },
+   "odgovori": [
+    "Litijum, natrijum i kalijum",
+    "Gvožđe, bakar i cink",
+    "Olovo, živa i zlato",
+    "Aluminijum i magnezijum"
+   ],
+   "zanimljivost": "Zato litijum, natrijum i kalijum plivaju na vodi.",
+   "rec": "gustina"
+  },
+  {
+   "lekcija": 3,
+   "tezina": 1,
+   "pitanje": "Koji metal je najgušći?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "menzura",
+    "predmet": "Fe",
+    "v0": 30,
+    "v1": 40,
+    "masa": 79
+   },
+   "odgovori": [
+    "Osmijum",
+    "Olovo",
+    "Živa",
+    "Litijum"
+   ],
+   "zanimljivost": "Gustina osmijuma je oko 22,6 g/cm³, a litijum je najređi sa 0,534 g/cm³.",
+   "rec": "osmijum"
+  },
+  {
+   "lekcija": 3,
+   "tezina": 1,
+   "pitanje": "Šta se dešava sa sijalicom kad se u strujno kolo veže bakarna žica?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "struja",
+    "predmet": "Cu"
+   },
+   "odgovori": [
+    "Sijalica svetli",
+    "Sijalica ne svetli",
+    "Sijalica eksplodira",
+    "Sijalica gasne i isparava"
+   ],
+   "zanimljivost": "Metali provode struju, pa se kolo zatvara.",
+   "rec": "sijalica"
+  },
+  {
+   "lekcija": 3,
+   "tezina": 1,
+   "pitanje": "Koji metal je najbolji provodnik struje među gvožđem, bakrom i aluminijumom?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "struja",
+    "predmet": "Cu"
+   },
+   "odgovori": [
+    "Bakar",
+    "Gvožđe",
+    "Aluminijum",
+    "Svi isto"
+   ],
+   "zanimljivost": "Sijalica sa bakrom svetli najjače. Srebro je još bolji provodnik, ali je preskupo za kablove.",
+   "rec": "provodnik"
+  },
+  {
+   "lekcija": 3,
+   "tezina": 3,
+   "pitanje": "Zašto se srebro, iako najbolje provodi struju, ne koristi za kablove?",
+   "medijiOdgovora": {
+    "vrsta": "hemija",
+    "scena": "atom",
+    "z": 47
+   },
+   "odgovori": [
+    "Veoma je skupo",
+    "Ne provodi struju",
+    "Previše je mekano da bi provodilo",
+    "Reaguje sa vodom burno"
+   ],
+   "zanimljivost": "Zato se koristi bakar, a negde i aluminijum.",
+   "rec": "srebro"
+  },
+  {
+   "lekcija": 3,
+   "tezina": 2,
+   "pitanje": "Kako se može uporediti toplotna provodljivost metala?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "toplota",
+    "uzorci": [
+     "Fe",
+     "Al",
+     "Cu"
+    ]
+   },
+   "odgovori": [
+    "Zagrevanjem krajeva metalnih traka u vrućoj vodi",
+    "Merenjem njihove mase na tehničkoj vagi",
+    "Merenjem zapremine vode koju istisnu",
+    "Posmatranjem boje plamena pri sagorevanju"
+   ],
+   "zanimljivost": "Trake različitih metala istog oblika se uroni u vruću vodu; brže se zagreva onaj sa boljom provodljivošću.",
+   "rec": "toplota"
+  },
+  {
+   "lekcija": 3,
+   "tezina": 3,
+   "pitanje": "Koji metal od ova tri najbrže provodi toplotu?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "toplota",
+    "uzorci": [
+     "Fe",
+     "Al",
+     "Cu"
+    ]
+   },
+   "odgovori": [
+    "Bakar",
+    "Gvožđe",
+    "Aluminijum",
+    "Svi isto"
+   ],
+   "zanimljivost": "Redosled opadanja: Cu > Al > Fe.",
+   "rec": "toplota"
+  },
+  {
+   "lekcija": 3,
+   "tezina": 2,
+   "pitanje": "Kako se procenjuje tvrdoća metala u ogledu?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "tvrdoca",
+    "uzorci": [
+     "Fe",
+     "Al",
+     "Cu"
+    ]
+   },
+   "odgovori": [
+    "Grebanjem oštrim predmetom i poređenjem useka",
+    "Merenjem temperature topljenja svakog metala",
+    "Merenjem mase istog komada svakog metala",
+    "Merenjem napona baterije u strujnom kolu"
+   ],
+   "zanimljivost": "Što je metal mekši, to je urez veći i dublji.",
+   "rec": "tvrdoća"
+  },
+  {
+   "lekcija": 3,
+   "tezina": 3,
+   "pitanje": "Koji je poredak po opadajućoj tvrdoći za ova tri metala?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "tvrdoca",
+    "uzorci": [
+     "Fe",
+     "Cu",
+     "Al"
+    ]
+   },
+   "odgovori": [
+    "Gvožđe, bakar, aluminijum",
+    "Aluminijum, bakar, gvožđe",
+    "Bakar, aluminijum, gvožđe",
+    "Gvožđe, aluminijum, bakar"
+   ],
+   "zanimljivost": "Najtvrđi od svih metala je hrom, ali legure gvožđa sa malo hroma mogu biti još tvrđe.",
+   "rec": "tvrdoća"
+  },
+  {
+   "lekcija": 3,
+   "vrsta": "spoji",
+   "tezina": 2,
+   "pitanje": "Spoji metal sa svojstvom koje se u vežbi proverava.",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "magnet",
+    "uzorci": [
+     "Fe",
+     "Cu",
+     "Al"
+    ]
+   },
+   "parovi": [
+    [
+     "Gvožđe",
+     "Privlači ga magnet"
+    ],
+    [
+     "Bakar",
+     "Najbolje provodi struju od ova tri"
+    ],
+    [
+     "Aluminijum",
+     "Najmanja gustina od ova tri"
+    ],
+    [
+     "Živa",
+     "Tečna na sobnoj temperaturi"
+    ]
+   ],
+   "zanimljivost": "Metali se razlikuju po mnogim svojstvima, ali većina je sive boje.",
+   "rec": "svojstva"
+  },
+  {
+   "lekcija": 4,
+   "tezina": 1,
+   "pitanje": "Šta se posmatra u epruvetama kada metal reaguje sa razblaženom hlorovodoničnom kiselinom?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "metali"
+   },
+   "odgovori": [
+    "Izdvajaju se mehurići gasa",
+    "Nastaje plavi talog na dnu",
+    "Rastvor postaje crn kao mastilo",
+    "Nastaje plamen iznad epruvete"
+   ],
+   "zanimljivost": "Mehurići potiču od vodonika.",
+   "rec": "mehurići"
+  },
+  {
+   "lekcija": 4,
+   "tezina": 1,
+   "pitanje": "Koji gas se izdvaja u reakciji cinka sa hlorovodoničnom kiselinom?",
+   "medijiOdgovora": {
+    "vrsta": "hemija",
+    "scena": "reakcija",
+    "reaktanti": [
+     [
+      "cink",
+      1
+     ],
+     [
+      "hlorovodonik",
+      2
+     ]
+    ],
+    "proizvodi": [
+     [
+      "cink-hlorid",
+      1
+     ],
+     [
+      "vodonik",
+      1
+     ]
+    ],
+    "efekat": "mehurici"
+   },
+   "odgovori": [
+    "Vodonik",
+    "Kiseonik",
+    "Hlor",
+    "Azot"
+   ],
+   "zanimljivost": "Zn + 2HCl → ZnCl₂ + H₂↑.",
+   "rec": "vodonik"
+  },
+  {
+   "lekcija": 4,
+   "tezina": 2,
+   "pitanje": "Koji od metala najburnije reaguje sa razblaženom hlorovodoničnom kiselinom?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "metali"
+   },
+   "odgovori": [
+    "Magnezijum",
+    "Aluminijum",
+    "Gvožđe",
+    "Cink"
+   ],
+   "zanimljivost": "Magnezijum je jedan od najreaktivnijih metala u vežbi.",
+   "rec": "magnezijum"
+  },
+  {
+   "lekcija": 4,
+   "tezina": 1,
+   "pitanje": "Koji metal ne reaguje sa razblaženom hlorovodoničnom kiselinom?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "metali"
+   },
+   "odgovori": [
+    "Bakar",
+    "Cink",
+    "Gvožđe",
+    "Magnezijum"
+   ],
+   "zanimljivost": "Bakar stoji iza vodonika u naponskom nizu.",
+   "rec": "bakar"
+  },
+  {
+   "lekcija": 4,
+   "tezina": 2,
+   "pitanje": "Kako izgleda jednačina reakcije magnezijuma sa hlorovodoničnom kiselinom?",
+   "medijiOdgovora": {
+    "vrsta": "hemija",
+    "scena": "reakcija",
+    "reaktanti": [
+     [
+      "magnezijum",
+      1
+     ],
+     [
+      "hlorovodonik",
+      2
+     ]
+    ],
+    "proizvodi": [
+     [
+      "magnezijum-hlorid",
+      1
+     ],
+     [
+      "vodonik",
+      1
+     ]
+    ],
+    "efekat": "mehurici"
+   },
+   "odgovori": [
+    "Mg + 2HCl → MgCl₂ + H₂",
+    "Mg + HCl → MgCl + H",
+    "Mg + 2HCl → MgH₂ + Cl₂",
+    "Mg + 2HCl → MgCl₂ + 2H₂"
+   ],
+   "zanimljivost": "Magnezijum je dvovalentan, pa je so MgCl₂.",
+   "rec": "jednačina"
+  },
+  {
+   "lekcija": 4,
+   "tezina": 2,
+   "pitanje": "Kako izgleda jednačina reakcije gvožđa sa hlorovodoničnom kiselinom (gvožđe je dvovalentno)?",
+   "medijiOdgovora": {
+    "vrsta": "hemija",
+    "scena": "reakcija",
+    "reaktanti": [
+     [
+      "gvozdje",
+      1
+     ],
+     [
+      "hlorovodonik",
+      2
+     ]
+    ],
+    "proizvodi": [
+     [
+      "gvozdje-hlorid-2",
+      1
+     ],
+     [
+      "vodonik",
+      1
+     ]
+    ],
+    "efekat": "mehurici"
+   },
+   "odgovori": [
+    "Fe + 2HCl → FeCl₂ + H₂",
+    "Fe + HCl → FeCl + H",
+    "Fe + 3HCl → FeCl₃ + H₂",
+    "2Fe + 2HCl → Fe₂Cl₂ + H₂"
+   ],
+   "zanimljivost": "Nastaje gvožđe(II)-hlorid.",
+   "rec": "gvožđe"
+  },
+  {
+   "lekcija": 4,
+   "tezina": 1,
+   "pitanje": "Šta je naponski niz metala?",
+   "medijiOdgovora": {
+    "vrsta": "hemija",
+    "scena": "periodni",
+    "istakni": [
+     "K",
+     "Na",
+     "Mg",
+     "Al",
+     "Zn",
+     "Fe",
+     "Pb",
+     "Cu",
+     "Ag",
+     "Au"
+    ],
+    "bezKlasa": true
+   },
+   "odgovori": [
+    "Niz metala poređanih po reaktivnosti, sa vodonikom u nizu",
+    "Niz metala poređanih po boji i sjaju, od svetlih ka tamnim",
+    "Niz metala poređanih po gustini i masi, od lakih ka teškim",
+    "Niz metala poređanih po tvrdoći i čvrstoći, od mekih ka tvrdim"
+   ],
+   "zanimljivost": "Što je metal levlje u nizu, to je reaktivniji.",
+   "rec": "napon"
+  },
+  {
+   "lekcija": 4,
+   "tezina": 2,
+   "pitanje": "Koji metali iz naponskog niza istiskuju vodonik iz kiselina?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "metali"
+   },
+   "odgovori": [
+    "Metali levo od vodonika",
+    "Metali desno od vodonika",
+    "Svi metali podjednako",
+    "Samo živa"
+   ],
+   "zanimljivost": "Bakar, srebro i zlato stoje desno od vodonika, pa ga ne istiskuju.",
+   "rec": "levo"
+  },
+  {
+   "lekcija": 4,
+   "tezina": 3,
+   "pitanje": "Šta važi za reakciju sa 5% HCl u epruvetama?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "metali"
+   },
+   "odgovori": [
+    "Magnezijum burno, cink i gvožđe sporije, bakar nikako",
+    "Svi metali reaguju podjednako brzo i burno",
+    "Samo bakar reaguje burno, a ostali sporo",
+    "Nijedan metal ne reaguje sa hlorovodoničnom kiselinom"
+   ],
+   "zanimljivost": "Brzina izdvajanja mehurića pokazuje reaktivnost.",
+   "rec": "reaktivnost"
+  },
+  {
+   "lekcija": 4,
+   "tezina": 2,
+   "pitanje": "Šta se događa kada cink stavimo u rastvor bakar(II)-sulfata?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "zncuso4"
+   },
+   "odgovori": [
+    "Izdvaja se crveni bakar, a rastvor bledi",
+    "Izdvaja se crni ugljenik na cinku",
+    "Nastaje beli talog neke soli",
+    "Ništa se ne dešava ni posle sat vremena"
+   ],
+   "zanimljivost": "Zn + CuSO₄ → ZnSO₄ + Cu. Cink je reaktivniji, pa istiskuje bakar.",
+   "rec": "istiskuje"
+  },
+  {
+   "lekcija": 4,
+   "tezina": 2,
+   "pitanje": "Šta se događa kada bakarnu žicu stavimo u rastvor srebro(I)-nitrata?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "cuag"
+   },
+   "odgovori": [
+    "Rastvor postaje plav, a na žici se izdvajaju kristali srebra",
+    "Rastvor postaje zelen, a žica se rastvara u sivi prah",
+    "Nastaje crveni talog bakra na dnu epruvete",
+    "Ništa se ne dešava ni posle dužeg vremena stajanja"
+   ],
+   "zanimljivost": "Cu + 2AgNO₃ → Cu(NO₃)₂ + 2Ag. Bakar istiskuje manje reaktivno srebro.",
+   "rec": "srebro"
+  },
+  {
+   "lekcija": 4,
+   "tezina": 2,
+   "pitanje": "Kako izgleda jednačina reakcije bakra sa srebro(I)-nitratom?",
+   "medijiOdgovora": {
+    "vrsta": "hemija",
+    "scena": "reakcija",
+    "reaktanti": [
+     [
+      "bakar",
+      1
+     ],
+     [
+      "srebro-nitrat",
+      2
+     ]
+    ],
+    "proizvodi": [
+     [
+      "bakar-nitrat",
+      1
+     ],
+     [
+      "srebro",
+      2
+     ]
+    ]
+   },
+   "odgovori": [
+    "Cu + 2AgNO₃ → Cu(NO₃)₂ + 2Ag",
+    "Cu + AgNO₃ → CuNO₃ + Ag",
+    "2Cu + AgNO₃ → Cu₂NO₃ + Ag",
+    "Cu + 2AgNO₃ → 2CuNO₃ + Ag₂"
+   ],
+   "zanimljivost": "Bakar je ovde dvovalentan, pa nastaje bakar(II)-nitrat.",
+   "rec": "jednačina"
+  },
+  {
+   "lekcija": 4,
+   "tezina": 3,
+   "pitanje": "Zašto gvožđe ne može da istisne cink iz rastvora cink-sulfata?",
+   "medijiOdgovora": {
+    "vrsta": "hemija",
+    "scena": "periodni",
+    "istakni": [
+     "Zn",
+     "Fe"
+    ],
+    "bezKlasa": true
+   },
+   "odgovori": [
+    "Gvožđe je manje reaktivno od cinka",
+    "Gvožđe je reaktivnije od cinka",
+    "Gvožđe je nerastvorno u vodi",
+    "Cink je tečan na sobnoj temperaturi"
+   ],
+   "zanimljivost": "Reaktivniji metal istiskuje manje reaktivan, a ne obrnuto: Zn + FeSO₄ → ZnSO₄ + Fe.",
+   "rec": "cink"
+  },
+  {
+   "lekcija": 4,
+   "tezina": 2,
+   "pitanje": "Kako se opšte piše reakcija jednostruke izmene?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "zncuso4"
+   },
+   "odgovori": [
+    "A + BC → AC + B",
+    "AB + CD → AD + CB",
+    "A + B → AB",
+    "AB → A + B"
+   ],
+   "zanimljivost": "Elemenat A istiskuje element B iz njegovog jedinjenja.",
+   "rec": "izmena"
+  },
+  {
+   "lekcija": 4,
+   "tezina": 2,
+   "pitanje": "Po kome je naučniku pipeta za prenošenje malih zapremina dobila ime?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "pribor",
+    "stavke": [
+     "pipeta"
+    ]
+   },
+   "odgovori": [
+    "Luju Pasteru",
+    "Mendeljejevu",
+    "Mariji Kiri",
+    "Lavoazjeu"
+   ],
+   "zanimljivost": "Pasteur ih je često koristio u svojim ogledima.",
+   "rec": "pipeta"
+  },
+  {
+   "lekcija": 4,
+   "vrsta": "spoji",
+   "tezina": 2,
+   "pitanje": "Spoji reakciju sa onim što se opaža.",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "metali"
+   },
+   "parovi": [
+    [
+     "Mg + HCl",
+     "Burno izdvajanje mehurića"
+    ],
+    [
+     "Cu + HCl",
+     "Nema vidljive promene"
+    ],
+    [
+     "Zn + CuSO₄",
+     "Izdvaja se crveni bakar"
+    ],
+    [
+     "Cu + AgNO₃",
+     "Kristali srebra i plava boja"
+    ]
+   ],
+   "zanimljivost": "Brzina i vrsta promene govore o reaktivnosti metala.",
+   "rec": "opažanja"
+  },
+  {
+   "lekcija": 5,
+   "tezina": 1,
+   "pitanje": "Koji nemetali se ispituju u ovoj vežbi?",
+   "medijiOdgovora": {
+    "vrsta": "hemija",
+    "scena": "periodni",
+    "istakni": [
+     "I",
+     "S",
+     "P",
+     "C"
+    ],
+    "bezKlasa": true
+   },
+   "odgovori": [
+    "Jod, sumpor, crveni fosfor i ugljenik",
+    "Natrijum, kalijum, kalcijum i magnezijum",
+    "Gvožđe, bakar, cink i aluminijum",
+    "Hlor, fluor, brom i vodonik"
+   ],
+   "zanimljivost": "Svi su čvrste supstance na sobnoj temperaturi.",
+   "rec": "nemetali"
+  },
+  {
+   "lekcija": 5,
+   "tezina": 2,
+   "pitanje": "Kakav je jod na sobnoj temperaturi?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "jod"
+   },
+   "odgovori": [
+    "Čvrst, ljubičastocrn",
+    "Gas, žutozelen",
+    "Tečan, crvenomrk",
+    "Čvrst, žut"
+   ],
+   "zanimljivost": "Jod lako sublimira – prelazi iz čvrstog u gasovito stanje.",
+   "rec": "jod"
+  },
+  {
+   "lekcija": 5,
+   "tezina": 2,
+   "pitanje": "Kakav je sumpor na sobnoj temperaturi?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "sumpor-s8"
+   },
+   "odgovori": [
+    "Čvrst, žut prah",
+    "Gas, bezbojan",
+    "Tečan, crven",
+    "Čvrst, crn"
+   ],
+   "zanimljivost": "Molekul sumpora S₈ je prsten od osam atoma.",
+   "rec": "sumpor"
+  },
+  {
+   "lekcija": 5,
+   "tezina": 1,
+   "pitanje": "Šta se dešava kad se jod stavi u vodu?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "jod"
+   },
+   "odgovori": [
+    "Veoma se slabo rastvara",
+    "Odlično se rastvara",
+    "Burno reaguje sa vodom",
+    "Potpuno nestaje u vodi"
+   ],
+   "zanimljivost": "Nemetali su uglavnom slabo rastvorni u vodi.",
+   "rec": "jod"
+  },
+  {
+   "lekcija": 5,
+   "tezina": 2,
+   "pitanje": "Šta se dešava kad se jod stavi u organski rastvarač (heksan)?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "jod"
+   },
+   "odgovori": [
+    "Rastvara se i boji rastvor ljubičasto",
+    "Ne rastvara se uopšte i ostaje na dnu",
+    "Pretvara se u gas i potpuno nestaje",
+    "Reaguje i nastaje beli talog"
+   ],
+   "zanimljivost": "Jod je nepolarna supstanca, a heksan nepolaran rastvarač.",
+   "rec": "heksan"
+  },
+  {
+   "lekcija": 5,
+   "tezina": 2,
+   "pitanje": "Šta znači princip „slično se u sličnom rastvara“?",
+   "medijiOdgovora": {
+    "vrsta": "hemija",
+    "scena": "rastvaranje",
+    "tip": "ulje"
+   },
+   "odgovori": [
+    "Nepolarne supstance se rastvaraju u nepolarnim rastvaračima",
+    "Sve supstance se dobro rastvaraju u vodi i alkoholu",
+    "Metali se rastvaraju samo u drugim metalima",
+    "Gasovi se uvek rastvaraju u čvrstim supstancama"
+   ],
+   "zanimljivost": "Polarne i jonske supstance se dobro rastvaraju u polarnim rastvaračima, kao što je voda.",
+   "rec": "rastvarač"
+  },
+  {
+   "lekcija": 5,
+   "tezina": 3,
+   "pitanje": "U kom rastvaraču se sumpor vidljivo rastvara?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "sumpor-s8"
+   },
+   "odgovori": [
+    "U ugljen-disulfidu",
+    "U običnoj vodi iz česme",
+    "U etanolu iz apoteke",
+    "U heksanu iz laboratorije"
+   ],
+   "zanimljivost": "Ugljen-disulfid je otrovan i radi se u digestoru; čak ni u njemu se ne rastvara svaki oblik sumpora.",
+   "rec": "sumpor"
+  },
+  {
+   "lekcija": 5,
+   "tezina": 3,
+   "pitanje": "Zašto se ogledi sa ugljen-disulfidom izvode u digestoru ili pored prozora?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "oznake",
+    "znaci": [
+     "otrovno",
+     "zapaljivo"
+    ]
+   },
+   "odgovori": [
+    "Para je otrovna i zapaljiva",
+    "Zato što je tečnost providna",
+    "Zato što je tečnost bezbojna",
+    "Zato što se brzo hladi"
+   ],
+   "zanimljivost": "Digestor odvodi štetne gasove.",
+   "rec": "digestor"
+  },
+  {
+   "lekcija": 5,
+   "tezina": 1,
+   "pitanje": "Koji nemetal je jedini tečan na sobnoj temperaturi?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "brom"
+   },
+   "odgovori": [
+    "Brom",
+    "Jod",
+    "Sumpor",
+    "Fosfor"
+   ],
+   "zanimljivost": "Hlor i fluor su gasovi, a brom je crvenomrka tečnost.",
+   "rec": "brom"
+  },
+  {
+   "lekcija": 5,
+   "tezina": 2,
+   "pitanje": "Koji gasovi čine „praznu“ epruvetu u kojoj je samo vazduh?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "azot"
+   },
+   "odgovori": [
+    "Azot i kiseonik",
+    "Hlor i fluor",
+    "Helijum i vodonik",
+    "Ugljen-dioksid i metan"
+   ],
+   "zanimljivost": "Azot (oko 78%) i kiseonik (oko 21%) su bezbojni gasovi bez mirisa.",
+   "rec": "vazduh"
+  },
+  {
+   "lekcija": 5,
+   "tezina": 2,
+   "pitanje": "Koje alotropske modifikacije fosfora poznaješ?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "beli-fosfor"
+   },
+   "odgovori": [
+    "Beli, crveni i crni fosfor",
+    "Grafit, dijamant i fuleren",
+    "Rombični i plastični fosfor",
+    "Samo beli fosfor"
+   ],
+   "zanimljivost": "Beli fosfor je otrovan i samozapaljiv.",
+   "rec": "fosfor"
+  },
+  {
+   "lekcija": 5,
+   "tezina": 2,
+   "pitanje": "Koje alotropske modifikacije ugljenika poznaješ?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "fuleren"
+   },
+   "odgovori": [
+    "Dijamant, grafit i fuleren",
+    "Beli, crveni i crni ugljenik",
+    "Rombični i plastični ugljenik",
+    "Samo čađ"
+   ],
+   "zanimljivost": "Svi su građeni isključivo od atoma ugljenika.",
+   "rec": "ugljenik"
+  },
+  {
+   "lekcija": 5,
+   "tezina": 3,
+   "pitanje": "Kako bi se razdvojila smeša ugljenika (aktivnog uglja) i vode?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "filtriranje"
+   },
+   "odgovori": [
+    "Filtriranjem",
+    "Magnetom",
+    "Isparavanjem do suva",
+    "Dekantiranjem pomoću stativa"
+   ],
+   "zanimljivost": "Ugljenik je nerastvoran u vodi i ostaje na filter hartiji.",
+   "rec": "filtriranje"
+  },
+  {
+   "lekcija": 5,
+   "tezina": 1,
+   "pitanje": "Koji nemetal dobro provodi struju?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "grafit"
+   },
+   "odgovori": [
+    "Ugljenik u obliku grafita",
+    "Sumpor u obliku praha",
+    "Jod u obliku kristala",
+    "Fosfor u obliku praha"
+   ],
+   "zanimljivost": "U grafitu se elektroni kreću duž slojeva.",
+   "rec": "grafit"
+  },
+  {
+   "lekcija": 5,
+   "vrsta": "spoji",
+   "tezina": 2,
+   "pitanje": "Spoji nemetal sa njegovim izgledom.",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "jod"
+   },
+   "parovi": [
+    [
+     "Jod",
+     "Ljubičastocrna čvrsta supstanca"
+    ],
+    [
+     "Sumpor",
+     "Žuti prah"
+    ],
+    [
+     "Crveni fosfor",
+     "Tamnocrven prah"
+    ],
+    [
+     "Grafit",
+     "Sivocrna sjajna supstanca"
+    ]
+   ],
+   "zanimljivost": "Boja nemetala zavisi i od njegove alotropske modifikacije.",
+   "rec": "izgled"
+  },
+  {
+   "lekcija": 6,
+   "tezina": 1,
+   "pitanje": "Čime se u vežbi dokazuje kiselost neorganskih kiselina?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "lakmus",
+    "tip": "kiselina"
+   },
+   "odgovori": [
+    "Plavom lakmus hartijom",
+    "Magnetom iz kutije",
+    "Vagom za merenje mase",
+    "Menzurom za tečnosti"
+   ],
+   "zanimljivost": "Plava lakmus hartija u kiselini postaje crvena.",
+   "rec": "lakmus"
+  },
+  {
+   "lekcija": 6,
+   "tezina": 1,
+   "pitanje": "Šta se dešava sa plavom lakmus hartijom kad se na nju stavi kap rastvora kiseline?",
+   "mediji": {
+    "vrsta": "laboratorija",
+    "scena": "lakmus",
+    "tip": "kiselina"
+   },
+   "odgovori": [
+    "Postaje crvena",
+    "Postaje zelena",
+    "Ostaje plava",
+    "Postaje bela"
+   ],
+   "zanimljivost": "Zato se plava lakmus hartija koristi za dokazivanje kiselina.",
+   "rec": "crvena"
+  },
+  {
+   "lekcija": 6,
+   "tezina": 2,
+   "pitanje": "Šta se dešava sa crvenom lakmus hartijom kad se na nju stavi kap kiseline?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "lakmus",
+    "tip": "kiselina"
+   },
+   "odgovori": [
+    "Ostaje crvena",
+    "Postaje plava",
+    "Postaje bezbojna",
+    "Postaje žuta"
+   ],
+   "zanimljivost": "Crvena lakmus hartija se menja samo u bazama – postaje plava.",
+   "rec": "crvena"
+  },
+  {
+   "lekcija": 6,
+   "tezina": 2,
+   "pitanje": "Šta se dešava sa lakmus hartijama u rastvoru baze?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "lakmus",
+    "tip": "baza"
+   },
+   "odgovori": [
+    "Crvena postaje plava, a plava ostaje plava",
+    "Plava postaje crvena, a crvena ostaje crvena",
+    "Obe postaju zelene boje",
+    "Obe ostaju potpuno nepromenjene"
+   ],
+   "zanimljivost": "Baze boje lakmus u plavo.",
+   "rec": "baza"
+  },
+  {
+   "lekcija": 6,
+   "tezina": 2,
+   "pitanje": "Šta se dešava sa obe lakmus hartije u neutralnom rastvoru?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "lakmus",
+    "tip": "neutralno"
+   },
+   "odgovori": [
+    "Ne menjaju boju",
+    "Obe postaju crvene",
+    "Obe postaju plave",
+    "Obe postaju bele"
+   ],
+   "zanimljivost": "Neutralan rastvor nije ni kiseo ni bazan.",
+   "rec": "neutralan"
+  },
+  {
+   "lekcija": 6,
+   "tezina": 1,
+   "pitanje": "Kojom formulom se u vežbi zapisuje hlorovodonična kiselina?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "hlorovodonik"
+   },
+   "odgovori": [
+    "HCl",
+    "HNO₃",
+    "H₂SO₄",
+    "H₃PO₄"
+   ],
+   "zanimljivost": "Kiselinski ostatak je hloridni jon Cl⁻.",
+   "rec": "kiselina"
+  },
+  {
+   "lekcija": 6,
+   "tezina": 1,
+   "pitanje": "Kojom formulom se u vežbi zapisuje azotna kiselina?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "azotna-kiselina"
+   },
+   "odgovori": [
+    "HNO₃",
+    "HCl",
+    "H₂SO₄",
+    "H₃PO₄"
+   ],
+   "zanimljivost": "Kiselinski ostatak je nitratni jon NO₃⁻.",
+   "rec": "azotna"
+  },
+  {
+   "lekcija": 6,
+   "tezina": 1,
+   "pitanje": "Kojom formulom se u vežbi zapisuje sumporna kiselina?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "sumporna-kiselina"
+   },
+   "odgovori": [
+    "H₂SO₄",
+    "HNO₃",
+    "HCl",
+    "H₃PO₄"
+   ],
+   "zanimljivost": "Kiselinski ostatak je sulfatni jon SO₄²⁻.",
+   "rec": "sumporna"
+  },
+  {
+   "lekcija": 6,
+   "tezina": 1,
+   "pitanje": "Kojom formulom se u vežbi zapisuje fosforna kiselina?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "fosforna-kiselina"
+   },
+   "odgovori": [
+    "H₃PO₄",
+    "H₂SO₄",
+    "HNO₃",
+    "HCl"
+   ],
+   "zanimljivost": "Kiselinski ostatak je fosfatni jon PO₄³⁻.",
+   "rec": "fosforna"
+  },
+  {
+   "lekcija": 6,
+   "tezina": 2,
+   "pitanje": "Kako izgleda jednačina elektrolitičke disocijacije hlorovodonične kiseline?",
+   "medijiOdgovora": {
+    "vrsta": "hemija",
+    "scena": "rastvaranje",
+    "tip": "kiselina"
+   },
+   "odgovori": [
+    "HCl → H⁺ + Cl⁻",
+    "HCl → H₂ + Cl₂",
+    "HCl → H⁻ + Cl⁺",
+    "HCl → HCl⁺ + e⁻"
+   ],
+   "zanimljivost": "U vodi se kiselina razlaže na vodonikov katjon i anjon kiselinskog ostatka.",
+   "rec": "joni"
+  },
+  {
+   "lekcija": 6,
+   "tezina": 2,
+   "pitanje": "Kako izgleda jednačina elektrolitičke disocijacije azotne kiseline?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "nitrat"
+   },
+   "odgovori": [
+    "HNO₃ → H⁺ + NO₃⁻",
+    "HNO₃ → H₂ + NO₃",
+    "HNO₃ → H⁺ + N + 3O",
+    "HNO₃ → NO₃⁺ + H⁻"
+   ],
+   "zanimljivost": "Nastaju jedan vodonikov i jedan nitratni jon.",
+   "rec": "azotna"
+  },
+  {
+   "lekcija": 6,
+   "tezina": 3,
+   "pitanje": "Kako izgleda jednačina disocijacije sumporne kiseline?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "sulfat"
+   },
+   "odgovori": [
+    "H₂SO₄ → 2H⁺ + SO₄²⁻",
+    "H₂SO₄ → H⁺ + SO₄⁻",
+    "H₂SO₄ → H₂ + SO₄",
+    "H₂SO₄ → 2H⁺ + S + 4O"
+   ],
+   "zanimljivost": "Kiselina ima dva vodonika, pa nastaju dva H⁺ i jedan dvovalentni sulfatni jon.",
+   "rec": "sumporna"
+  },
+  {
+   "lekcija": 6,
+   "tezina": 3,
+   "pitanje": "Kako izgleda jednačina disocijacije fosforne kiseline?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "fosfat"
+   },
+   "odgovori": [
+    "H₃PO₄ → 3H⁺ + PO₄³⁻",
+    "H₃PO₄ → H⁺ + PO₄⁻",
+    "H₃PO₄ → H₃ + PO₄",
+    "H₃PO₄ → 3H⁺ + P + 4O"
+   ],
+   "zanimljivost": "Fosfatni jon ima naelektrisanje 3−.",
+   "rec": "fosforna"
+  },
+  {
+   "lekcija": 6,
+   "tezina": 2,
+   "pitanje": "Čime se rastvor stavlja na lakmus hartiju u vežbi?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "pribor",
+    "stavke": [
+     "stapic"
+    ]
+   },
+   "odgovori": [
+    "Staklenim štapićem",
+    "Magnetom iz kutije",
+    "Prstima ruke",
+    "Menzurom za tečnosti"
+   ],
+   "zanimljivost": "Štapićem se prenosi mala količina rastvora na satno staklo sa hartijama.",
+   "rec": "štapić"
+  },
+  {
+   "lekcija": 6,
+   "tezina": 1,
+   "pitanje": "Šta je zajedničko svim ispitivanim kiselinama (HCl, HNO₃, H₂SO₄, H₃PO₄)?",
+   "medijiOdgovora": {
+    "vrsta": "hemija",
+    "scena": "ph",
+    "vrednost": 1
+   },
+   "odgovori": [
+    "Boje plavu lakmus hartiju u crveno",
+    "Boje crvenu lakmus hartiju u plavo",
+    "Ne provode struju",
+    "Sve su bezbojni gasovi"
+   ],
+   "zanimljivost": "U vodi svaka daje H⁺ jone – zato imaju slična svojstva.",
+   "rec": "kiseline"
+  },
+  {
+   "lekcija": 6,
+   "tezina": 3,
+   "pitanje": "Koji jon je uzrok kiselosti vodenih rastvora?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "hidronijum"
+   },
+   "odgovori": [
+    "H⁺ (H₃O⁺)",
+    "OH⁻ (hidroksid)",
+    "Cl⁻ (hlorid)",
+    "Na⁺ (natrijum)"
+   ],
+   "zanimljivost": "Što je više H₃O⁺ jona, to je pH manji.",
+   "rec": "katjon"
+  },
+  {
+   "lekcija": 7,
+   "tezina": 1,
+   "pitanje": "Šta nastaje kad se u rastvor natrijum-sulfata doda rastvor barijum-hlorida?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "baso4"
+   },
+   "odgovori": [
+    "Beli talog barijum-sulfata",
+    "Plavi talog bakar-sulfata",
+    "Gas ugljen-dioksid",
+    "Ništa se ne vidi"
+   ],
+   "zanimljivost": "Na₂SO₄ + BaCl₂ → BaSO₄↓ + 2NaCl.",
+   "rec": "talog"
+  },
+  {
+   "lekcija": 7,
+   "tezina": 2,
+   "pitanje": "Kako izgleda jednačina reakcije Na₂SO₄ i BaCl₂?",
+   "medijiOdgovora": {
+    "vrsta": "hemija",
+    "scena": "reakcija",
+    "reaktanti": [
+     [
+      "natrijum-sulfat",
+      1
+     ],
+     [
+      "barijum-hlorid",
+      1
+     ]
+    ],
+    "proizvodi": [
+     [
+      "barijum-sulfat",
+      1
+     ],
+     [
+      "kuhinjska-so",
+      2
+     ]
+    ],
+    "efekat": "sjaj"
+   },
+   "odgovori": [
+    "Na₂SO₄ + BaCl₂ → BaSO₄ + 2NaCl",
+    "Na₂SO₄ + BaCl₂ → NaCl + BaSO₄",
+    "Na₂SO₄ + BaCl₂ → Ba + 2Na + SO₄ + Cl₂",
+    "Na₂SO₄ + BaCl₂ → 2Na + BaSO₄ + Cl₂"
+   ],
+   "zanimljivost": "Talog se u jednačini označava strelicom nadole (↓).",
+   "rec": "jednačina"
+  },
+  {
+   "lekcija": 7,
+   "tezina": 2,
+   "pitanje": "Šta nastaje kad se rastvoru natrijum-sulfata doda barijum-nitrat?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "baso4"
+   },
+   "odgovori": [
+    "Beli talog barijum-sulfata",
+    "Plavi rastvor bakar-sulfata",
+    "Crni talog bakar-sulfida",
+    "Gas bez boje i mirisa"
+   ],
+   "zanimljivost": "Isti beli talog – nastaje bez obzira na to koja je so barijuma.",
+   "rec": "barijum"
+  },
+  {
+   "lekcija": 7,
+   "tezina": 2,
+   "pitanje": "Šta nastaje kad se rastvoru sumporne kiseline doda barijum-hlorid?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "baso4"
+   },
+   "odgovori": [
+    "Beli talog barijum-sulfata",
+    "Gas vodonik iz kiseline",
+    "Plavi talog hidroksida",
+    "Ništa se ne vidi"
+   ],
+   "zanimljivost": "H₂SO₄ + BaCl₂ → BaSO₄↓ + 2HCl.",
+   "rec": "sumporna"
+  },
+  {
+   "lekcija": 7,
+   "tezina": 2,
+   "pitanje": "Kakvim tipom reakcije su dobijene soli u ovom ogledu?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "baso4"
+   },
+   "odgovori": [
+    "Dvostrukom izmenom",
+    "Jednostrukom izmenom",
+    "Sjedinjavanjem",
+    "Razlaganjem"
+   ],
+   "zanimljivost": "AB + CD → AD + CB; to su i neutralizacije i reakcije dve soli.",
+   "rec": "izmena"
+  },
+  {
+   "lekcija": 7,
+   "tezina": 2,
+   "pitanje": "Kako izgleda talog koji nastaje reakcijom AgNO₃ i NaCl?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "agcl"
+   },
+   "odgovori": [
+    "Beo i sirast",
+    "Plav i kristalan",
+    "Crn i prašnjav",
+    "Providan i tečan"
+   ],
+   "zanimljivost": "Srebro(I)-hlorid je veoma slabo rastvoran u vodi.",
+   "rec": "srebro"
+  },
+  {
+   "lekcija": 7,
+   "tezina": 2,
+   "pitanje": "Kako izgleda jednačina reakcije AgNO₃ i NaCl?",
+   "medijiOdgovora": {
+    "vrsta": "hemija",
+    "scena": "reakcija",
+    "reaktanti": [
+     [
+      "srebro-nitrat",
+      1
+     ],
+     [
+      "kuhinjska-so",
+      1
+     ]
+    ],
+    "proizvodi": [
+     [
+      "srebro-hlorid",
+      1
+     ],
+     [
+      "natrijum-nitrat",
+      1
+     ]
+    ],
+    "efekat": "sjaj"
+   },
+   "odgovori": [
+    "AgNO₃ + NaCl → AgCl + NaNO₃",
+    "AgNO₃ + NaCl → Ag + NaClNO₃",
+    "AgNO₃ + NaCl → AgNa + ClNO₃",
+    "AgNO₃ + 2NaCl → AgCl₂ + 2NaNO₃"
+   ],
+   "zanimljivost": "AgCl je talog.",
+   "rec": "srebro"
+  },
+  {
+   "lekcija": 7,
+   "tezina": 2,
+   "pitanje": "Šta nastaje kad se u hlorovodoničnu kiselinu doda rastvor srebro(I)-nitrata?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "agcl"
+   },
+   "odgovori": [
+    "Beli talog srebro(I)-hlorida",
+    "Gas vodonik iz kiseline",
+    "Plava boja celog rastvora",
+    "Ništa se ne dešava"
+   ],
+   "zanimljivost": "HCl + AgNO₃ → AgCl↓ + HNO₃.",
+   "rec": "hlorid"
+  },
+  {
+   "lekcija": 7,
+   "tezina": 3,
+   "pitanje": "Šta bi se desilo kad bi se rastvor srebro(I)-nitrata dokapao u rastvor kalcijum-hlorida?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "agcl"
+   },
+   "odgovori": [
+    "Izdvojio bi se beli talog",
+    "Izdvojio bi se gas",
+    "Ne bi bilo vidljive promene",
+    "Rastvor bi postao plav"
+   ],
+   "zanimljivost": "Hloridni jon iz CaCl₂ daje talog AgCl sa srebrom.",
+   "rec": "kalcijum"
+  },
+  {
+   "lekcija": 7,
+   "tezina": 2,
+   "pitanje": "Koji gas nastaje u reakciji natrijum-hidrogenkarbonata i hlorovodonične kiseline?",
+   "medijiOdgovora": {
+    "vrsta": "hemija",
+    "scena": "reakcija",
+    "reaktanti": [
+     [
+      "natrijum-hidrogenkarbonat",
+      1
+     ],
+     [
+      "hlorovodonik",
+      1
+     ]
+    ],
+    "proizvodi": [
+     [
+      "kuhinjska-so",
+      1
+     ],
+     [
+      "voda",
+      1
+     ],
+     [
+      "ugljen-dioksid",
+      1
+     ]
+    ],
+    "efekat": "mehurici"
+   },
+   "odgovori": [
+    "Ugljen-dioksid",
+    "Vodonik (H₂)",
+    "Kiseonik (O₂)",
+    "Hlor (Cl₂)"
+   ],
+   "zanimljivost": "NaHCO₃ + HCl → NaCl + H₂O + CO₂↑.",
+   "rec": "gas"
+  },
+  {
+   "lekcija": 7,
+   "tezina": 2,
+   "pitanje": "Šta se dešava sa kreč na vodom kad se u nju uvede CO₂?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "gas",
+    "tip": "co2"
+   },
+   "odgovori": [
+    "Postepeno se muti",
+    "Menja boju u plavo",
+    "Ključa",
+    "Ne dešava se ništa"
+   ],
+   "zanimljivost": "Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O.",
+   "rec": "kreč"
+  },
+  {
+   "lekcija": 7,
+   "tezina": 1,
+   "pitanje": "Šta je beli talog koji muti kreč na vodu?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "kalcijum-karbonat"
+   },
+   "odgovori": [
+    "Kalcijum-karbonat",
+    "Kalcijum-hidroksid",
+    "Natrijum-hlorid",
+    "Kalcijum-oksid"
+   ],
+   "zanimljivost": "Zato kreč na voda služi za dokazivanje ugljen-dioksida.",
+   "rec": "karbonat"
+  },
+  {
+   "lekcija": 7,
+   "tezina": 2,
+   "pitanje": "Kako se naziva reakcija čiji ishod ukazuje na prisustvo određene supstance?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "gas",
+    "tip": "co2"
+   },
+   "odgovori": [
+    "Dokazna reakcija",
+    "Kvantitativna reakcija",
+    "Neutralizacija",
+    "Razlaganje"
+   ],
+   "zanimljivost": "Takve reakcije dokazuju prisustvo elementa, jedinjenja ili jona.",
+   "rec": "dokaz"
+  },
+  {
+   "lekcija": 7,
+   "tezina": 3,
+   "pitanje": "Zašto se u jednačini reakcije NaHCO₃ i HCl ne piše formula H₂CO₃?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "ugljena-kiselina"
+   },
+   "odgovori": [
+    "Ugljena kiselina je nestabilna i raspada se na CO₂ i vodu",
+    "Ugljena kiselina ne postoji nikada u vodenom rastvoru",
+    "Ugljena kiselina je talog koji se taloži na dno",
+    "Ugljena kiselina je gas vodonik koji izlazi"
+   ],
+   "zanimljivost": "H₂CO₃ → CO₂ + H₂O. Zato se piše voda i ugljen-dioksid.",
+   "rec": "nestabilna"
+  },
+  {
+   "lekcija": 7,
+   "tezina": 1,
+   "pitanje": "Šta su kristalohidrati?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "bakar-sulfat"
+   },
+   "odgovori": [
+    "Soli koje u kristalu vezuju molekule vode",
+    "Rastvori soli u velikoj količini vode",
+    "Soli bez ijednog molekula vode",
+    "Kristali leda sa solju u sebi"
+   ],
+   "zanimljivost": "Primeri: CuSO₄ · 5H₂O (plavi kamen) i MgSO₄ · 7H₂O (gorka so).",
+   "rec": "hidrati"
+  },
+  {
+   "lekcija": 7,
+   "tezina": 2,
+   "pitanje": "Koja so je u ogledu rastvorljivosti slabo rastvorna u vodi?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "rastvorljivost"
+   },
+   "odgovori": [
+    "Kalcijum-karbonat",
+    "Natrijum-hlorid",
+    "Bakar(II)-sulfat",
+    "Natrijum-hidrogenkarbonat"
+   ],
+   "zanimljivost": "Natrijum-hlorid, bakar-sulfat i soda bikarbona se rastvaraju.",
+   "rec": "rastvara"
+  },
+  {
+   "lekcija": 7,
+   "tezina": 3,
+   "pitanje": "Koje reakcije u vodenim rastvorima se odvijaju kao dvostruka izmena?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "baso4"
+   },
+   "odgovori": [
+    "Kad nastaje talog, gas ili slab elektrolit",
+    "Uvek, bez obzira na to šta nastaje u rastvoru",
+    "Samo kad se rastvori zagreju do ključanja",
+    "Nikada u vodenim rastvorima soli"
+   ],
+   "zanimljivost": "Ako su svi proizvodi rastvorni i potpuno disosovani, nema stvarne promene.",
+   "rec": "uslov"
+  },
+  {
+   "lekcija": 7,
+   "vrsta": "spoji",
+   "tezina": 2,
+   "pitanje": "Spoji reaktante sa opaženom promenom.",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "baso4"
+   },
+   "parovi": [
+    [
+     "Na₂SO₄ + BaCl₂",
+     "Beli talog"
+    ],
+    [
+     "AgNO₃ + NaCl",
+     "Beli sirasti talog"
+    ],
+    [
+     "NaHCO₃ + HCl",
+     "Izdvajanje gasa"
+    ],
+    [
+     "Ca(OH)₂ + CO₂",
+     "Mutnoća rastvora"
+    ]
+   ],
+   "zanimljivost": "U svim tim ogledima nastaje nešto što se vidi – talog ili mehurići.",
+   "rec": "ogledi"
+  },
+  {
+   "lekcija": 8,
+   "tezina": 1,
+   "pitanje": "Šta predstavljaju crne kuglice u modelu „kuglica i štapić“?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "metan"
+   },
+   "odgovori": [
+    "Atome ugljenika",
+    "Atome vodonika",
+    "Hemijske veze",
+    "Molekule vode"
+   ],
+   "zanimljivost": "Crna kuglica ima četiri rupe, jer je ugljenik četvorovalentan.",
+   "rec": "ugljenik"
+  },
+  {
+   "lekcija": 8,
+   "tezina": 1,
+   "pitanje": "Šta predstavljaju male bele kuglice u modelu?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "metan"
+   },
+   "odgovori": [
+    "Atome vodonika",
+    "Atome ugljenika",
+    "Hemijske veze",
+    "Atome kiseonika"
+   ],
+   "zanimljivost": "Bela kuglica ima jednu rupu, jer je vodonik jednovalentan.",
+   "rec": "vodonik"
+  },
+  {
+   "lekcija": 8,
+   "tezina": 1,
+   "pitanje": "Šta predstavljaju sivi štapići u modelu?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "eten"
+   },
+   "odgovori": [
+    "Hemijske veze",
+    "Atome ugljenika",
+    "Atome vodonika",
+    "Elektrone"
+   ],
+   "zanimljivost": "Višestruke veze se prave sa dva ili tri štapića.",
+   "rec": "veze"
+  },
+  {
+   "lekcija": 8,
+   "tezina": 2,
+   "pitanje": "Koji prostorni oblik ima molekul metana na modelu?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "metan"
+   },
+   "odgovori": [
+    "Tetraedar",
+    "Ravan kvadrat",
+    "Linearan",
+    "Prsten"
+   ],
+   "zanimljivost": "Nekad se mislilo da su atomi u ravni u obliku znaka „+“, ali su zapravo u temenima tetraedra.",
+   "rec": "metan"
+  },
+  {
+   "lekcija": 8,
+   "tezina": 2,
+   "pitanje": "Koliko štapića povezuje atome ugljenika u modelu etena?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "eten"
+   },
+   "odgovori": [
+    "Dva",
+    "Jedan",
+    "Tri",
+    "Četiri"
+   ],
+   "zanimljivost": "U etenu je dvostruka veza.",
+   "rec": "eten"
+  },
+  {
+   "lekcija": 8,
+   "tezina": 2,
+   "pitanje": "Koliko štapića povezuje atome ugljenika u modelu etina?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "etin"
+   },
+   "odgovori": [
+    "Tri",
+    "Dva",
+    "Jedan",
+    "Četiri"
+   ],
+   "zanimljivost": "U etinu je trostruka veza.",
+   "rec": "etin"
+  },
+  {
+   "lekcija": 8,
+   "tezina": 2,
+   "pitanje": "Od koliko atoma vodonika se sastoji model etena?",
+   "mediji": {
+    "vrsta": "molekul",
+    "ime": "eten"
+   },
+   "odgovori": [
+    "Četiri",
+    "Šest",
+    "Dva",
+    "Tri"
+   ],
+   "zanimljivost": "C₂H₄.",
+   "rec": "eten"
+  },
+  {
+   "lekcija": 8,
+   "tezina": 2,
+   "pitanje": "Od koliko atoma vodonika se sastoji model etina?",
+   "mediji": {
+    "vrsta": "molekul",
+    "ime": "etin"
+   },
+   "odgovori": [
+    "Dva",
+    "Četiri",
+    "Šest",
+    "Tri"
+   ],
+   "zanimljivost": "C₂H₂ – molekul je linearan.",
+   "rec": "etin"
+  },
+  {
+   "lekcija": 8,
+   "tezina": 2,
+   "pitanje": "Koliko različitih izomera ima pentan (C₅H₁₂)?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "neopentan"
+   },
+   "odgovori": [
+    "Tri",
+    "Dva",
+    "Četiri",
+    "Pet"
+   ],
+   "zanimljivost": "Pentan, 2-metilbutan i 2,2-dimetilpropan.",
+   "rec": "pentan"
+  },
+  {
+   "lekcija": 8,
+   "tezina": 1,
+   "pitanje": "Kako se zove izomer pentana sa jednom metil-grupom na drugom ugljeniku?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "izopentan"
+   },
+   "odgovori": [
+    "2-metilbutan",
+    "3-metilbutan",
+    "2,2-dimetilpropan",
+    "Izopropan"
+   ],
+   "zanimljivost": "Najduži niz ima 4 ugljenika, a račvanje je na drugom.",
+   "rec": "izomeri"
+  },
+  {
+   "lekcija": 8,
+   "tezina": 1,
+   "pitanje": "Kako se zove izomer pentana sa dve metil-grupe na istom ugljeniku?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "neopentan"
+   },
+   "odgovori": [
+    "2,2-dimetilpropan",
+    "2-metilbutan",
+    "Pentan",
+    "1,1-dimetilpropan"
+   ],
+   "zanimljivost": "Centralni ugljenik je vezan za četiri druga ugljenika.",
+   "rec": "neopentan"
+  },
+  {
+   "lekcija": 8,
+   "tezina": 3,
+   "pitanje": "Koji izomer pentana ima najrazgranatiji lanac i najnižu temperaturu ključanja?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "neopentan"
+   },
+   "odgovori": [
+    "2,2-dimetilpropan",
+    "Pentan",
+    "2-metilbutan",
+    "Svi imaju istu"
+   ],
+   "zanimljivost": "Što je lanac razgranatiji, to su međumolekulske sile slabije.",
+   "rec": "ključanje"
+  },
+  {
+   "lekcija": 8,
+   "tezina": 2,
+   "pitanje": "Koliko ugljenikovih i vodonikovih atoma ima svaki od izomera pentana?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "pentan"
+   },
+   "odgovori": [
+    "5 C i 12 H",
+    "5 C i 10 H",
+    "4 C i 12 H",
+    "6 C i 12 H"
+   ],
+   "zanimljivost": "Svi imaju isti molekulski sastav C₅H₁₂, ali različitu strukturu.",
+   "rec": "pentan"
+  },
+  {
+   "lekcija": 8,
+   "tezina": 2,
+   "pitanje": "Čime se u vežbi mogu zameniti molekulski modeli?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "pribor",
+    "stavke": [
+     "kasicica"
+    ],
+    "natpisi": false
+   },
+   "odgovori": [
+    "Plastelinom i čačkalicama",
+    "Magnetima i čavlima iz kutije",
+    "Špagom i novčićima iz džepa",
+    "Vodom i uljem u čaši"
+   ],
+   "zanimljivost": "Čačkalice predstavljaju veze, a kuglice od plastelina atome.",
+   "rec": "plastelin"
+  },
+  {
+   "lekcija": 8,
+   "tezina": 2,
+   "pitanje": "Koji je primer alkena sa više od četiri atoma ugljenika?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "pent-1-en"
+   },
+   "odgovori": [
+    "Pent-1-en",
+    "Propen (C₃H₆)",
+    "Eten (C₂H₄)",
+    "But-1-en (C₄H₈)"
+   ],
+   "zanimljivost": "C₅H₁₀ ima jednu dvostruku vezu.",
+   "rec": "penten"
+  },
+  {
+   "lekcija": 8,
+   "tezina": 3,
+   "pitanje": "Zašto atome vodonika na modelu raspoređujemo što dalje jedan od drugog?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "metan"
+   },
+   "odgovori": [
+    "Elektronski omotači se odbijaju",
+    "Zato što su vodonici teški",
+    "Zato što su veze nevidljive",
+    "Zato što je tako lepše"
+   ],
+   "zanimljivost": "Istoimeno naelektrisane čestice se odbijaju, pa atomi zauzimaju položaje sa najvećim razmakom.",
+   "rec": "odbijanje"
+  },
+  {
+   "lekcija": 8,
+   "vrsta": "spoji",
+   "tezina": 2,
+   "pitanje": "Spoji ugljovodonik sa brojem štapića između ugljenika.",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "benzen"
+   },
+   "parovi": [
+    [
+     "Etan",
+     "Jedan (jednostruka veza)"
+    ],
+    [
+     "Eten",
+     "Dva (dvostruka veza)"
+    ],
+    [
+     "Etin",
+     "Tri (trostruka veza)"
+    ],
+    [
+     "Benzen",
+     "Naizmenično jedan i dva"
+    ]
+   ],
+   "zanimljivost": "Zbir veza oko svakog ugljenika uvek je četiri.",
+   "rec": "veze"
+  },
+  {
+   "lekcija": 9,
+   "tezina": 1,
+   "pitanje": "Kakvo je agregatno stanje etanola, 2-propanola i 1-butanola na sobnoj temperaturi?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "alkoholi"
+   },
+   "odgovori": [
+    "Tečno",
+    "Čvrsto",
+    "Gasovito",
+    "Različito za svaki"
+   ],
+   "zanimljivost": "Alkoholi do 11 ugljenika su tečni.",
+   "rec": "alkoholi"
+  },
+  {
+   "lekcija": 9,
+   "tezina": 1,
+   "pitanje": "Kakva je oktadekanska (stearinska) kiselina na sobnoj temperaturi?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "stearinska-kiselina"
+   },
+   "odgovori": [
+    "Čvrsta",
+    "Tečna",
+    "Gasovita",
+    "Providna tečnost"
+   ],
+   "zanimljivost": "Duži lanac ugljenika daje čvrste masne kiseline.",
+   "rec": "stearinska"
+  },
+  {
+   "lekcija": 9,
+   "tezina": 2,
+   "pitanje": "Kako se pravilno proverava miris etanske (sirćetne) kiseline?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "mirisanje"
+   },
+   "odgovori": [
+    "Rukom usmeriti paru ka nosu iz daljine",
+    "Duboko udahnuti iznad otvora epruvete",
+    "Prineti nos otvoru epruvete",
+    "Probati supstancu vrhom jezika"
+   ],
+   "zanimljivost": "Miris metanske i etanske kiseline je oštar i može nadražiti disajne puteve.",
+   "rec": "miris"
+  },
+  {
+   "lekcija": 9,
+   "tezina": 2,
+   "pitanje": "Koja je formula metanske (mravlje) kiseline?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "metanska-kiselina"
+   },
+   "odgovori": [
+    "HCOOH",
+    "CH₃COOH",
+    "CH₃OH",
+    "HCHO"
+   ],
+   "zanimljivost": "Najprostija karboksilna kiselina.",
+   "rec": "mravlja"
+  },
+  {
+   "lekcija": 9,
+   "tezina": 2,
+   "pitanje": "Koja je formula etanske (sirćetne) kiseline?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "etanska-kiselina"
+   },
+   "odgovori": [
+    "CH₃COOH",
+    "HCOOH",
+    "C₂H₅OH",
+    "CH₃CHO"
+   ],
+   "zanimljivost": "Sirće je oko 5% rastvor etanske kiseline.",
+   "rec": "sirćetna"
+  },
+  {
+   "lekcija": 9,
+   "tezina": 1,
+   "pitanje": "Koja je opšta formula monohidroksilnih zasićenih alkohola?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "propan-1-ol"
+   },
+   "odgovori": [
+    "CₙH₂ₙ₊₁OH",
+    "CₙH₂ₙ₊₂",
+    "CₙH₂ₙ₊₁COOH",
+    "CₙH₂ₙ₋₁OH"
+   ],
+   "zanimljivost": "Alkan u kome je jedan vodonik zamenjen grupom –OH.",
+   "rec": "formula"
+  },
+  {
+   "lekcija": 9,
+   "tezina": 1,
+   "pitanje": "Koja je opšta formula zasićenih monokarboksilnih kiselina?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "propanska-kiselina"
+   },
+   "odgovori": [
+    "CₙH₂ₙ₊₁COOH",
+    "CₙH₂ₙ₊₁OH",
+    "CₙH₂ₙ₊₂",
+    "CₙH₂ₙ₋₁COOH"
+   ],
+   "zanimljivost": "Alkil-grupa vezana za karboksilnu grupu.",
+   "rec": "formula"
+  },
+  {
+   "lekcija": 9,
+   "tezina": 2,
+   "pitanje": "Koji alkoholi se dobro rastvaraju u vodi?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "alkoholi"
+   },
+   "odgovori": [
+    "Etanol i 2-propanol",
+    "Samo 1-butanol",
+    "Nijedan",
+    "Samo oni sa dugim lancem"
+   ],
+   "zanimljivost": "Kod alkohola sa više od četiri ugljenika nepolarni deo preovladava.",
+   "rec": "voda"
+  },
+  {
+   "lekcija": 9,
+   "tezina": 3,
+   "pitanje": "Zašto se 1-butanol u vodi ne meša potpuno?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "alkoholi"
+   },
+   "odgovori": [
+    "Dugački ugljovodonični lanac je nepolaran",
+    "Nema ni jednu –OH grupu u molekulu",
+    "Ima previše atoma kiseonika u lancu",
+    "Nije tečan na sobnoj temperaturi"
+   ],
+   "zanimljivost": "Butanol se delimično rastvara i pravi dva sloja.",
+   "rec": "butanol"
+  },
+  {
+   "lekcija": 9,
+   "tezina": 2,
+   "pitanje": "Kako se ponaša stearinska kiselina u vodi?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "alkoholi"
+   },
+   "odgovori": [
+    "Ne rastvara se",
+    "Odlično se rastvara",
+    "Burno reaguje",
+    "Pretvara se u gas"
+   ],
+   "zanimljivost": "Duži lanac znači veću nepolarnost.",
+   "rec": "stearinska"
+  },
+  {
+   "lekcija": 9,
+   "tezina": 3,
+   "pitanje": "Koji rastvarač zamenjuje hloroform ako ga nema u školi?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "etil-etanoat"
+   },
+   "odgovori": [
+    "Etil-etanoat ili toluen",
+    "n-heksan, nepolaran ugljovodonik",
+    "Destilovana voda iz čaše",
+    "Kuhinjska so, jonsko jedinjenje"
+   ],
+   "zanimljivost": "n-heksan se ne sme: nijedna od tri karboksilne kiseline se u njemu ne rastvara.",
+   "rec": "rastvarač"
+  },
+  {
+   "lekcija": 9,
+   "tezina": 2,
+   "pitanje": "Šta se dešava kad na sodu bikarbonu kapne sirćetna kiselina?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "soda"
+   },
+   "odgovori": [
+    "Izdvajaju se mehurići ugljen-dioksida",
+    "Nastaje plavi talog bakar-hidroksida",
+    "Nastaje plamen na vrhu epruvete",
+    "Ništa se ne dešava u epruveti"
+   ],
+   "zanimljivost": "CH₃COOH + NaHCO₃ → CH₃COONa + H₂O + CO₂↑.",
+   "rec": "soda"
+  },
+  {
+   "lekcija": 9,
+   "tezina": 2,
+   "pitanje": "Kako izgleda jednačina reakcije etanske kiseline i NaHCO₃?",
+   "medijiOdgovora": {
+    "vrsta": "hemija",
+    "scena": "reakcija",
+    "reaktanti": [
+     [
+      "etanska-kiselina",
+      1
+     ],
+     [
+      "natrijum-hidrogenkarbonat",
+      1
+     ]
+    ],
+    "proizvodi": [
+     [
+      "natrijum-etanoat",
+      1
+     ],
+     [
+      "voda",
+      1
+     ],
+     [
+      "ugljen-dioksid",
+      1
+     ]
+    ],
+    "efekat": "mehurici"
+   },
+   "odgovori": [
+    "CH₃COOH + NaHCO₃ → CH₃COONa + H₂O + CO₂",
+    "CH₃COOH + NaHCO₃ → CH₃CONa + H₂CO₃",
+    "CH₃COOH + NaHCO₃ → CH₄ + Na₂CO₃",
+    "2CH₃COOH + NaHCO₃ → (CH₃COO)₂Na + CO₂"
+   ],
+   "zanimljivost": "Nastaje natrijum-etanoat (natrijum-acetat).",
+   "rec": "jednačina"
+  },
+  {
+   "lekcija": 9,
+   "tezina": 3,
+   "pitanje": "Zašto organske kiseline sa NaHCO₃ reaguju kao i neorganska HCl?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "soda"
+   },
+   "odgovori": [
+    "Sve su kiseline koje daju H⁺ jone i istiskuju CO₂",
+    "Zato što su sve neorganske kiseline i jake",
+    "Zato što nijedna ne sadrži vodonik u svom molekulu",
+    "Zato što su sve one soli ugljene kiseline"
+   ],
+   "zanimljivost": "Iako su organske kiseline slabije, dovoljno su jake da iz karbonata i hidrogenkarbonata istisnu CO₂.",
+   "rec": "kiseline"
+  },
+  {
+   "lekcija": 9,
+   "tezina": 2,
+   "pitanje": "Koji procenat etanola u smeši sa vodom preporučuje SZO za dezinfekciju ruku?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "pribor",
+    "stavke": [
+     "boca"
+    ]
+   },
+   "odgovori": [
+    "Oko 80%",
+    "Oko 10%",
+    "Oko 100%",
+    "Oko 30%"
+   ],
+   "zanimljivost": "Etanol razara ćelijske zidove mikroba i denaturiše proteine.",
+   "rec": "etanol"
+  },
+  {
+   "lekcija": 9,
+   "vrsta": "spoji",
+   "tezina": 2,
+   "pitanje": "Spoji jedinjenje sa klasom.",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "etanol"
+   },
+   "parovi": [
+    [
+     "Etanol",
+     "Alkohol"
+    ],
+    [
+     "Etanska kiselina",
+     "Karboksilna kiselina"
+    ],
+    [
+     "Stearinska kiselina",
+     "Viša masna kiselina"
+    ],
+    [
+     "Propan-2-ol",
+     "Sekundarni alkohol"
+    ]
+   ],
+   "zanimljivost": "Funkcionalna grupa određuje klasu jedinjenja.",
+   "rec": "klase"
+  },
+  {
+   "lekcija": 10,
+   "tezina": 1,
+   "pitanje": "Čemu služi vodeno kupatilo u laboratoriji?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "grejanje"
+   },
+   "odgovori": [
+    "Za blago, ravnomerno zagrevanje do 100 °C",
+    "Za brzo hlađenje rastvora ispod 0 °C",
+    "Za merenje mase rastvora u čaši",
+    "Za odvajanje taloga od tečnosti"
+   ],
+   "zanimljivost": "Za temperature više od 100 °C koriste se uljana ili peščana kupatila.",
+   "rec": "kupatilo"
+  },
+  {
+   "lekcija": 10,
+   "tezina": 2,
+   "pitanje": "Koja od ovih supstanci se rastvara u vodi na sobnoj temperaturi?",
+   "medijiOdgovora": {
+    "vrsta": "hemija",
+    "scena": "rastvaranje",
+    "tip": "secer"
+   },
+   "odgovori": [
+    "Glukoza",
+    "Svinjska mast",
+    "Jestivo ulje",
+    "Celuloza (vata)"
+   ],
+   "zanimljivost": "Masti i ulja i celuloza se u vodi ne rastvaraju.",
+   "rec": "glukoza"
+  },
+  {
+   "lekcija": 10,
+   "tezina": 2,
+   "pitanje": "Šta se dešava sa uljem u vodi?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "masti"
+   },
+   "odgovori": [
+    "Ne rastvara se i pliva po površini",
+    "Rastvara se potpuno i bistri vodu",
+    "Tone na dno i stvara talog",
+    "Reaguje sa vodom i nastaje gas"
+   ],
+   "zanimljivost": "Gustina sunčokretovog ulja je oko 0,919 g/cm³ – manja od vode.",
+   "rec": "ulje"
+  },
+  {
+   "lekcija": 10,
+   "tezina": 2,
+   "pitanje": "Kolika je približna gustina sunčokretovog ulja?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "masti"
+   },
+   "odgovori": [
+    "0,919 g/cm³",
+    "1,23 g/cm³",
+    "7,64 g/cm³",
+    "0,0103 g/cm³"
+   ],
+   "zanimljivost": "Ulje je lakše od vode, zato pliva.",
+   "rec": "gustina"
+  },
+  {
+   "lekcija": 10,
+   "tezina": 2,
+   "pitanje": "Kako se ponaša skrob u hladnoj vodi i pri zagrevanju?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "skrob"
+   },
+   "odgovori": [
+    "Slabo se rastvara u hladnoj, a u toploj stvara koloid",
+    "Odmah se potpuno rastvori i u hladnoj vodi",
+    "Nikada se ne rastvara ni u kakvoj vodi",
+    "Uvek se pretvara u šećer pri zagrevanju"
+   ],
+   "zanimljivost": "Zato se epruveta sa skrobom stavlja u vodeno kupatilo na deset minuta.",
+   "rec": "skrob"
+  },
+  {
+   "lekcija": 10,
+   "tezina": 1,
+   "pitanje": "Čime se dokazuje prisustvo skroba?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "lugol"
+   },
+   "odgovori": [
+    "Luglovim rastvorom joda",
+    "Plavom lakmus hartijom",
+    "Kreč na vodom",
+    "Magnetom"
+   ],
+   "zanimljivost": "U prisustvu skroba boja postaje tamnoplava.",
+   "rec": "skrob"
+  },
+  {
+   "lekcija": 10,
+   "tezina": 2,
+   "pitanje": "Koja boja se javlja kad se skrob tretira Luglovim rastvorom?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "lugol"
+   },
+   "odgovori": [
+    "Tamnoplava",
+    "Crvena",
+    "Zelena",
+    "Žuta"
+   ],
+   "zanimljivost": "Trijodidni jon zauzima šupljine u strukturi skroba.",
+   "rec": "jod"
+  },
+  {
+   "lekcija": 10,
+   "tezina": 2,
+   "pitanje": "Šta sadrži Luglov rastvor?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "jod"
+   },
+   "odgovori": [
+    "Jod i kalijum-jodid u vodi",
+    "Samo jod rastvoren u etanolu",
+    "Natrijum-hlorid u destilovanoj vodi",
+    "Bakar(II)-sulfat u destilovanoj vodi"
+   ],
+   "zanimljivost": "Kalijum-jodid povećava rastvorljivost joda u vodi.",
+   "rec": "lugol"
+  },
+  {
+   "lekcija": 10,
+   "tezina": 2,
+   "pitanje": "Koja namirnica sadrži skrob?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "lugol"
+   },
+   "odgovori": [
+    "Hleb, kuvani pirinač, krompir",
+    "Jabuka, mleko i sir",
+    "Ulje, maslac i svinjska mast",
+    "Med, šećer i džem"
+   ],
+   "zanimljivost": "Skrob je rezervni ugljeni hidrat biljaka.",
+   "rec": "namirnice"
+  },
+  {
+   "lekcija": 10,
+   "tezina": 1,
+   "pitanje": "Šta je denaturacija proteina?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "denaturacija"
+   },
+   "odgovori": [
+    "Gubitak prostorne strukture proteina",
+    "Spajanje proteina u molekul šećera",
+    "Rastvaranje proteina u običnoj vodi",
+    "Zamrzavanje proteina u frižideru"
+   ],
+   "zanimljivost": "Belance pri kuvanju postaje belo i čvrsto.",
+   "rec": "belance"
+  },
+  {
+   "lekcija": 10,
+   "tezina": 2,
+   "pitanje": "Koji od ovih postupaka može izazvati denaturaciju proteina belanceta?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "denaturacija"
+   },
+   "odgovori": [
+    "Zagrevanje, sirće, Pb(NO₃)₂, mućenje",
+    "Hlađenje i mešanje sa običnom vodom",
+    "Osvetljavanje sijalicom i miris",
+    "Samo mućenje vilicom pet minuta"
+   ],
+   "zanimljivost": "Toplota, kiselina, katjoni teških metala i mehanička agitacija kvare strukturu proteina.",
+   "rec": "belance"
+  },
+  {
+   "lekcija": 10,
+   "tezina": 2,
+   "pitanje": "Šta se dešava sa belancetom kad se zagreva?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "denaturacija"
+   },
+   "odgovori": [
+    "Postaje belo i čvrsto",
+    "Postaje providno i tečnije",
+    "Postaje crveno",
+    "Isparava bez ostatka"
+   ],
+   "zanimljivost": "Proteini se denaturišu i povezuju u mrežu.",
+   "rec": "jaje"
+  },
+  {
+   "lekcija": 10,
+   "tezina": 3,
+   "pitanje": "Zašto se pri denaturaciji proteina belance ne vraća u prvobitno stanje?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "denaturacija"
+   },
+   "odgovori": [
+    "Promenjena prostorna struktura se ne obnavlja",
+    "Zato što posle zagrevanja nestaje sva voda",
+    "Zato što se šećeri pretvaraju u so",
+    "Zato što se belance ohladi u frižideru"
+   ],
+   "zanimljivost": "Zato se kuvano jaje ne može vratiti u sirovo.",
+   "rec": "trajno"
+  },
+  {
+   "lekcija": 10,
+   "tezina": 2,
+   "pitanje": "Šta se dešava sa belancetom kad se doda rastvor olovo(II)-nitrata?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "denaturacija"
+   },
+   "odgovori": [
+    "Taloži se – denaturacija jonima metala",
+    "Nastaje plavi talog bakra u čaši",
+    "Ništa se ne dešava ni posle sat vremena",
+    "Nastaje gas koji menja boju belanceta"
+   ],
+   "zanimljivost": "Zato su soli teških metala otrovne – kvare proteine u ćelijama.",
+   "rec": "olovo"
+  },
+  {
+   "lekcija": 10,
+   "tezina": 2,
+   "pitanje": "Kako se pravilno odvaja belance od žumanceta u vežbi?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "pribor",
+    "stavke": [
+     "casa"
+    ]
+   },
+   "odgovori": [
+    "Razbije se jaje i belance se sipa u čašu",
+    "Jaje se kuva pa se belance cedi",
+    "Jaje se zamrzne pa se preseče",
+    "Žumance se rastvori u mnogo vode"
+   ],
+   "zanimljivost": "Posle toga se belance deli u četiri čaše za različite oglede.",
+   "rec": "jaje"
+  },
+  {
+   "lekcija": 10,
+   "tezina": 2,
+   "pitanje": "Koje namirnice su bogate mastima?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "trigliserid"
+   },
+   "odgovori": [
+    "Maslac, svinjska mast, ulje",
+    "Hleb, pirinač i krompir iz kuhinje",
+    "Meso, jaja i mleko iz frižidera",
+    "Voće i povrće sa pijace"
+   ],
+   "zanimljivost": "Masti i ulja su estri glicerola i masnih kiselina.",
+   "rec": "masti"
+  },
+  {
+   "lekcija": 10,
+   "vrsta": "spoji",
+   "tezina": 2,
+   "pitanje": "Spoji supstancu sa njenim ponašanjem u vodi.",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "masti"
+   },
+   "parovi": [
+    [
+     "Glukoza",
+     "Rastvara se"
+    ],
+    [
+     "Jestivo ulje",
+     "Pliva, ne rastvara se"
+    ],
+    [
+     "Vata (celuloza)",
+     "Ne rastvara se"
+    ],
+    [
+     "Skrob",
+     "Rastvara se tek zagrevanjem"
+    ]
+   ],
+   "zanimljivost": "Rastvorljivost zavisi od polarnosti molekula.",
+   "rec": "rastvara"
+  },
+  {
+   "lekcija": 11,
+   "tezina": 1,
+   "pitanje": "Šta je cilj vežbe VIII?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "mesanje",
+    "tabela": [
+     [
+      "",
+      "–",
+      "↑",
+      "–"
+     ],
+     [
+      "–",
+      "",
+      "–",
+      "↓"
+     ],
+     [
+      "↑",
+      "–",
+      "",
+      "↓"
+     ],
+     [
+      "–",
+      "↓",
+      "↓",
+      ""
+     ]
+    ]
+   },
+   "odgovori": [
+    "Odrediti sadržaj četiri nepoznata rastvora bez dodatnih reagenasa",
+    "Izmeriti pH četiri rastvora univerzalnim indikatorom i pH-metrom",
+    "Odrediti gustinu četiri rastvora tehničkom vagom i menzurom",
+    "Odrediti boju četiri rastvora svetlošću sijalice i lupom"
+   ],
+   "zanimljivost": "Rastvori su mravlja kiselina, natrijum-sulfat, kalijum-karbonat i barijum-nitrat.",
+   "rec": "cilj"
+  },
+  {
+   "lekcija": 11,
+   "tezina": 2,
+   "pitanje": "Kako se u vežbi VIII određuje koja bočica šta sadrži?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "mesanje",
+    "tabela": [
+     [
+      "",
+      "–",
+      "↑",
+      "–"
+     ],
+     [
+      "–",
+      "",
+      "–",
+      "↓"
+     ],
+     [
+      "↑",
+      "–",
+      "",
+      "↓"
+     ],
+     [
+      "–",
+      "↓",
+      "↓",
+      ""
+     ]
+    ]
+   },
+   "odgovori": [
+    "Mešanjem rastvora u parovima i posmatranjem promena",
+    "Merenjem mase svake bočice na tehničkoj vagi",
+    "Zagrevanjem svakog rastvora u vodenom kupatilu",
+    "Mirisanjem svih rastvora redom, jedan po jedan"
+   ],
+   "zanimljivost": "Svaka kombinacija daje taloga, gas ili nikakvu promenu.",
+   "rec": "parovi"
+  },
+  {
+   "lekcija": 11,
+   "tezina": 2,
+   "pitanje": "Šta se dešava kad se pomešaju rastvori kalijum-karbonata i mravlje kiseline?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "soda"
+   },
+   "odgovori": [
+    "Izdvaja se gas ugljen-dioksid",
+    "Nastaje beli talog barijum-sulfata",
+    "Nastaje plavi talog hidroksida",
+    "Ne vidi se nikakva promena"
+   ],
+   "zanimljivost": "Kiselina iz karbonata istiskuje CO₂.",
+   "rec": "gas"
+  },
+  {
+   "lekcija": 11,
+   "tezina": 2,
+   "pitanje": "Šta se dešava kad se pomešaju kalijum-karbonat i barijum-nitrat?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "baso4"
+   },
+   "odgovori": [
+    "Nastaje beli talog barijum-karbonata",
+    "Izdvaja se gas ugljen-dioksid iz rastvora",
+    "Nastaje plavi rastvor soli bakra",
+    "Ne vidi se nikakva promena u epruveti"
+   ],
+   "zanimljivost": "K₂CO₃ + Ba(NO₃)₂ → BaCO₃↓ + 2KNO₃.",
+   "rec": "talog"
+  },
+  {
+   "lekcija": 11,
+   "tezina": 2,
+   "pitanje": "Šta se dešava kad se pomešaju natrijum-sulfat i barijum-nitrat?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "baso4"
+   },
+   "odgovori": [
+    "Nastaje beli talog barijum-sulfata",
+    "Izdvaja se gas vodonik iz rastvora",
+    "Nastaje plavi talog soli bakra",
+    "Ne vidi se nikakva promena u epruveti"
+   ],
+   "zanimljivost": "Na₂SO₄ + Ba(NO₃)₂ → BaSO₄↓ + 2NaNO₃.",
+   "rec": "talog"
+  },
+  {
+   "lekcija": 11,
+   "tezina": 2,
+   "pitanje": "Šta se dešava kad se pomešaju mravlja kiselina i natrijum-sulfat?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "mesanje",
+    "tabela": [
+     [
+      "",
+      "–",
+      "↑",
+      "–"
+     ],
+     [
+      "–",
+      "",
+      "–",
+      "↓"
+     ],
+     [
+      "↑",
+      "–",
+      "",
+      "↓"
+     ],
+     [
+      "–",
+      "↓",
+      "↓",
+      ""
+     ]
+    ]
+   },
+   "odgovori": [
+    "Ne vidi se nikakva promena",
+    "Izdvaja se gas iz rastvora",
+    "Nastaje beli talog soli",
+    "Nastaje plavi talog soli"
+   ],
+   "zanimljivost": "Nema taloga ni gasa; rastvor ostaje bistar.",
+   "rec": "promena"
+  },
+  {
+   "lekcija": 11,
+   "tezina": 3,
+   "pitanje": "Koja bočica daje gas sa jednim, a talog sa drugim rastvorom?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "mesanje",
+    "tabela": [
+     [
+      "",
+      "–",
+      "↑",
+      "–"
+     ],
+     [
+      "–",
+      "",
+      "–",
+      "↓"
+     ],
+     [
+      "↑",
+      "–",
+      "",
+      "↓"
+     ],
+     [
+      "–",
+      "↓",
+      "↓",
+      ""
+     ]
+    ]
+   },
+   "odgovori": [
+    "Kalijum-karbonat",
+    "Natrijum-sulfat",
+    "Mravlja kiselina",
+    "Barijum-nitrat"
+   ],
+   "zanimljivost": "Kalijum-karbonat daje gas sa kiselinom i talog sa barijum-nitratom.",
+   "rec": "karbonat"
+  },
+  {
+   "lekcija": 11,
+   "tezina": 3,
+   "pitanje": "Koja bočica daje talog sa dva različita rastvora?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "mesanje",
+    "tabela": [
+     [
+      "",
+      "–",
+      "↑",
+      "–"
+     ],
+     [
+      "–",
+      "",
+      "–",
+      "↓"
+     ],
+     [
+      "↑",
+      "–",
+      "",
+      "↓"
+     ],
+     [
+      "–",
+      "↓",
+      "↓",
+      ""
+     ]
+    ]
+   },
+   "odgovori": [
+    "Barijum-nitrat",
+    "Mravlja kiselina",
+    "Natrijum-sulfat",
+    "Kalijum-karbonat"
+   ],
+   "zanimljivost": "Barijum-nitrat daje talog i sa sulfatom i sa karbonatom.",
+   "rec": "barijum"
+  },
+  {
+   "lekcija": 11,
+   "tezina": 2,
+   "pitanje": "Koji znak se u jednačini piše uz formulu taloga?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "baso4"
+   },
+   "odgovori": [
+    "Strelica nadole (↓)",
+    "Strelica nagore (↑)",
+    "Znak jednakosti",
+    "Zagrada"
+   ],
+   "zanimljivost": "Strelicom nagore se označava gas.",
+   "rec": "talog"
+  },
+  {
+   "lekcija": 11,
+   "tezina": 2,
+   "pitanje": "Koji znak se u jednačini piše uz formulu gasa?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "soda"
+   },
+   "odgovori": [
+    "Strelica nagore (↑)",
+    "Strelica nadole (↓)",
+    "Znak plus",
+    "Dvostruka crta"
+   ],
+   "zanimljivost": "Na primer CO₂↑.",
+   "rec": "gas"
+  },
+  {
+   "lekcija": 11,
+   "tezina": 1,
+   "pitanje": "Šta je cilj vežbe IX?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "dihromat"
+   },
+   "odgovori": [
+    "Odrediti četiri nepoznata organska jedinjenja",
+    "Izmeriti masu četiri organska jedinjenja",
+    "Dobiti so iz organskog jedinjenja",
+    "Spaliti četiri organska jedinjenja"
+   ],
+   "zanimljivost": "Ispituju se rastvorljivost i reaktivnost prema kalijum-dihromatu i Felingovom reagensu.",
+   "rec": "cilj"
+  },
+  {
+   "lekcija": 11,
+   "tezina": 2,
+   "pitanje": "Koja supstanca iz vežbe IX se ne rastvara u vodi?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "heksan"
+   },
+   "odgovori": [
+    "n-heksan",
+    "Glukoza",
+    "2-propanol",
+    "Natrijum-acetat"
+   ],
+   "zanimljivost": "n-heksan je nepolaran ugljovodonik; ostali su polarni ili jonski.",
+   "rec": "heksan"
+  },
+  {
+   "lekcija": 11,
+   "tezina": 2,
+   "pitanje": "Šta se dešava kad se 2-propanol zagreje sa zakišeljenim rastvorom kalijum-dihromata?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "dihromat"
+   },
+   "odgovori": [
+    "Boja prelazi iz narandžaste u zelenu",
+    "Boja prelazi iz narandžaste u plavu",
+    "Nastaje crveni talog",
+    "Ne dešava se ništa"
+   ],
+   "zanimljivost": "Dihromat oksiduje alkohol, a sam prelazi u soli hroma(III) zelene boje.",
+   "rec": "dihromat"
+  },
+  {
+   "lekcija": 11,
+   "tezina": 3,
+   "pitanje": "Koji jon je odgovoran za zelenu boju posle reakcije alkohola sa dihromatom?",
+   "medijiOdgovora": {
+    "vrsta": "hemija",
+    "scena": "atom",
+    "z": 24,
+    "naboj": 3
+   },
+   "odgovori": [
+    "Cr³⁺",
+    "Cr₂O₇²⁻",
+    "K⁺",
+    "Cu²⁺"
+   ],
+   "zanimljivost": "Hrom(VI) u dihromatu se redukuje na hrom(III).",
+   "rec": "hrom"
+  },
+  {
+   "lekcija": 11,
+   "tezina": 2,
+   "pitanje": "Šta se dešava kad se glukoza zagreje sa Felingovim reagensom?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "felling"
+   },
+   "odgovori": [
+    "Nastaje crveni talog bakar(I)-oksida",
+    "Nastaje plavi talog bakar(II)-hidroksida",
+    "Nastaje beli talog srebro-hlorida",
+    "Izdvaja se plavi gas iz epruvete"
+   ],
+   "zanimljivost": "Glukoza ima aldehidnu grupu koja redukuje bakar(II) do bakar(I).",
+   "rec": "felingov"
+  },
+  {
+   "lekcija": 11,
+   "tezina": 3,
+   "pitanje": "Koja je formula crvenog taloga koji nastaje pri Felingovoj probi?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "bakar-oksid"
+   },
+   "odgovori": [
+    "Cu₂O",
+    "CuO",
+    "CuSO₄",
+    "Cu(OH)₂"
+   ],
+   "zanimljivost": "To je bakar(I)-oksid.",
+   "rec": "bakar"
+  },
+  {
+   "lekcija": 11,
+   "tezina": 2,
+   "pitanje": "Od čega se dobija Felingov reagens?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "felling"
+   },
+   "odgovori": [
+    "Mešanjem Felingovog rastvora I i Felingovog rastvora II",
+    "Mešanjem jodnog i skrobnog rastvora u vodi",
+    "Mešanjem etanola i vode u jednakim delovima",
+    "Rastvaranjem kristala soli u razblaženoj kiselini"
+   ],
+   "zanimljivost": "Plava boja potiče od bakar(II)-sulfata.",
+   "rec": "felingov"
+  },
+  {
+   "lekcija": 11,
+   "tezina": 2,
+   "pitanje": "Koja od četiri supstance iz vežbe IX podleže elektrolitičkoj disocijaciji?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "natrijum-etanoat"
+   },
+   "odgovori": [
+    "Natrijum-acetat",
+    "n-heksan (ugljovodonik)",
+    "2-propanol (alkohol)",
+    "Glukoza (šećer)"
+   ],
+   "zanimljivost": "CH₃COONa → CH₃COO⁻ + Na⁺ – jedina jonska supstanca.",
+   "rec": "acetat"
+  },
+  {
+   "lekcija": 11,
+   "tezina": 3,
+   "pitanje": "Kako izgleda jednačina disocijacije bakar(II)-sulfata?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "bakar-sulfat"
+   },
+   "odgovori": [
+    "CuSO₄ → Cu²⁺ + SO₄²⁻",
+    "CuSO₄ → Cu + SO₄",
+    "CuSO₄ → Cu⁺ + SO₄⁻",
+    "CuSO₄ → Cu²⁻ + SO₄²⁺"
+   ],
+   "zanimljivost": "Naelektrisanja katjona i anjona moraju se poništavati.",
+   "rec": "joni"
+  },
+  {
+   "lekcija": 11,
+   "tezina": 2,
+   "pitanje": "Koja supstanca iz vežbe IX nema reakciju ni sa dihromatom ni sa Felingovim reagensom?",
+   "medijiOdgovora": {
+    "vrsta": "molekul",
+    "ime": "natrijum-etanoat"
+   },
+   "odgovori": [
+    "Natrijum-acetat",
+    "2-propanol (alkohol)",
+    "Glukoza (šećer)",
+    "Etanol (alkohol)"
+   ],
+   "zanimljivost": "Soli karboksilnih kiselina su stabilne – nisu ni alkoholi ni šećeri.",
+   "rec": "acetat"
+  },
+  {
+   "lekcija": 11,
+   "tezina": 3,
+   "pitanje": "Zašto se u ogledima sa dihromatom i Felingovim reagensom koristi vodeno kupatilo?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "grejanje"
+   },
+   "odgovori": [
+    "Reakcije traže zagrevanje, ali ne do ključanja",
+    "Voda je neophodna kao katalizator reakcije",
+    "Voda se meša sa reagensom u epruveti",
+    "Zato što je kupatilo providno i lepo se vidi"
+   ],
+   "zanimljivost": "Vodeno kupatilo ravnomerno zagreva i ne dozvoljava pregrevanje.",
+   "rec": "kupatilo"
+  },
+  {
+   "lekcija": 11,
+   "tezina": 2,
+   "pitanje": "Kako su nekad radili uređaji za alko-test koje koristi policija?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "dihromat"
+   },
+   "odgovori": [
+    "Na principu reakcije alkohola sa kalijum-dihromatom",
+    "Na principu reakcije alkohola sa kuhinjskom solju",
+    "Na principu merenja pH",
+    "Na principu merenja mase"
+   ],
+   "zanimljivost": "Zelena boja je ukazivala na prisustvo alkohola u dahu.",
+   "rec": "alkohol"
+  },
+  {
+   "lekcija": 11,
+   "tezina": 1,
+   "pitanje": "Šta je potrebno da bi se alkohol blago oksidovao dihromatom?",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "dihromat"
+   },
+   "odgovori": [
+    "Kisela sredina i zagrevanje",
+    "Bazna sredina i hlađenje",
+    "Samo vodena para",
+    "Samo kuhinjska so"
+   ],
+   "zanimljivost": "Zato se dihromat zakiseljava sumpornom kiselinom.",
+   "rec": "oksidacija"
+  },
+  {
+   "lekcija": 11,
+   "vrsta": "spoji",
+   "tezina": 2,
+   "pitanje": "Spoji supstancu sa ponašanjem u vežbi IX.",
+   "medijiOdgovora": {
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "dihromat"
+   },
+   "parovi": [
+    [
+     "n-heksan",
+     "Ne rastvara se u vodi"
+    ],
+    [
+     "2-propanol",
+     "Dihromat postaje zelen"
+    ],
+    [
+     "Glukoza",
+     "Crveni talog sa Felingovim reagensom"
+    ],
+    [
+     "Natrijum-acetat",
+     "Ne daje ni jednu od ovih reakcija"
+    ]
+   ],
+   "zanimljivost": "Četiri supstance se razlikuju po rastvorljivosti i reaktivnosti.",
+   "rec": "razlike"
+  }
+ ]
+}

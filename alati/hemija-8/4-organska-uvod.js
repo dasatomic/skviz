@@ -1,0 +1,40 @@
+// Poglavlje 4: Organska jedinjenja i njihova opšta svojstva (lekcije 16–17)
+module.exports = ({ L, Q, U, S, mol, at, jon, kov, met, rast, ph, ps, R, lab, epr, pri }) => {
+  // ───────────── Uvod u organsku hemiju ─────────────
+  L('Uvod u organsku hemiju');
+  Q(1, 'Šta proučava organska hemija?', ['Jedinjenja ugljenika', 'Samo jedinjenja metala', 'Samo žive organizme', 'Samo gasove u vazduhu'], 'Danas je poznato preko 20 miliona organskih jedinjenja.', 'organska', { m: mol('metan') });
+  Q(1, 'Koji element se nalazi u gotovo svim organskim jedinjenjima uz ugljenik?', ['Vodonik', 'Hlor', 'Natrijum', 'Gvožđe'], 'Osim njih, česti su kiseonik, azot, sumpor, fosfor i halogeni elementi.', 'vodonik', { o: mol('metan') });
+  Q(1, 'Koliko ima valentnih elektrona atom ugljenika?', ['Četiri', 'Dva', 'Šest', 'Osam'], 'Zato ugljenik gradi četiri kovalentne veze.', 'ugljenik', { m: at(6, { brojevi: true, istakni: 'valentna' }) });
+  Q(1, 'Koja je valenca ugljenika u organskim jedinjenjima?', ['IV', 'II', 'III', 'VI'], 'U molekulu CH₄ ugljenik vezuje četiri atoma vodonika.', 'valenca', { o: mol('metan') });
+  Q(2, 'Koje vrste veza ugljenik može da gradi sa susednim atomima?', ['Jednostruke, dvostruke i trostruke', 'Samo jednostruke', 'Samo jonske', 'Samo metalne'], 'Ipak, zbir svih veza oko atoma ugljenika uvek je četiri.', 'veze', { o: mol('etin') });
+  Q(2, 'Koliko atoma ima molekul metana CH₄?', ['Pet', 'Četiri', 'Tri', 'Šest'], 'Jedan atom ugljenika i četiri atoma vodonika.', 'metan', { o: mol('metan') });
+  Q(2, 'Kakav prostorni oblik ima molekul metana?', ['Tetraedar', 'Pravougaonik', 'Linearan', 'Prsten'], 'Vodonici su raspoređeni u temenima tetraedra, a ugljenik je u sredini – ugao između veza je 109,5°.', 'tetraedar', { o: mol('metan') });
+  Q(2, 'Koje veze u molekulu etena povezuju dva atoma ugljenika?', ['Jedna dvostruka veza', 'Jedna jednostruka veza', 'Jedna trostruka veza', 'Dve jonske veze'], 'Eten (etilen) je najprostiji alken.', 'eten', { o: mol('eten') });
+  Q(2, 'Koje veze povezuju dva atoma ugljenika u molekulu etina?', ['Trostruka veza', 'Dvostruka veza', 'Jednostruka veza', 'Jonska veza'], 'Etin (acetilen) se koristi za zavarivanje.', 'etin', { o: mol('etin') });
+  Q(2, 'Zašto organske supstance imaju niže temperature topljenja od neorganskih?', ['Molekule drže slabe međumolekulske sile', 'U njima su jake jonske veze', 'Sadrže mnogo metala', 'Imaju veliku gustinu'], 'Za topljenje je dovoljno savladati slabe sile između molekula, a ne jonske veze.', 'topljenje', { o: mol('etanol') });
+  Q(2, 'Kako se većina organskih supstanci ponaša u vodi?', ['Slabo se rastvara', 'Odlično se rastvara', 'Reaguje burno', 'Provodi struju'], 'Izuzeci su šećer, alkohol i sirćetna kiselina, koji imaju polarne grupe.', 'rastvor', { o: rast('ulje') });
+  Q(2, 'Šta se dobija kad se organska supstanca (drvo) zagreva ili gori i na hladnoj površini ostane crna masa?', ['Čađ (ugljenik)', 'Kuhinjska so', 'Sumpor', 'Vodonik'], 'Pojava čađi dokazuje prisustvo ugljenika u organskim supstancama.', 'čađ', { o: R('metan+kiseonik>ugljenik+2voda', { otvoreno: true, efekat: 'plamen' }) });
+  Q(3, 'Koje od ovih jedinjenja ugljenika se ipak ubraja u neorganska?', ['Ugljen(IV)-oksid CO₂', 'Metan CH₄', 'Etanol C₂H₅OH', 'Glukoza C₆H₁₂O₆'], 'Oksidi ugljenika, ugljena kiselina i njene soli proučavaju se u neorganskoj hemiji.', 'izuzetak', { o: mol('ugljen-dioksid') });
+  Q(3, 'Koliko je veza oko svakog atoma ugljenika u molekulu etena?', ['Četiri, računajući dvostruku vezu kao dve', 'Tri', 'Dve', 'Pet'], 'Svaki ugljenik veže dva vodonika i drugi ugljenik dvostrukom vezom: 2 + 2 = 4.', 'valenca', { m: mol('eten') });
+  Q(3, 'Ko je bio srpski hemičar, jedan od prvih profesora na Velikoj školi u Beogradu i osnivač naše organske hemije?', ['Sima Lozanić', 'Mihailo Petrović', 'Mihajlo Pupin', 'Milutin Milanković'], 'Sima Lozanić (1847–1935) bio je i predsednik Srpske kraljevske akademije.', 'lozanić', { m: mol('etanol') });
+  S(2, 'Spoji vrstu veze između ugljenikovih atoma sa jedinjenjem.', [['Jednostruka', 'Etan'], ['Dvostruka', 'Eten'], ['Trostruka', 'Etin'], ['Naizmenično jednostruke i dvostruke', 'Benzen']], 'Što je više veza između dva ugljenika, to je rastojanje među njima kraće.', 'veze', { o: mol('benzen') });
+
+  // ───────────── Klase organskih jedinjenja ─────────────
+  L('Klase organskih jedinjenja');
+  Q(1, 'Šta je funkcionalna grupa?', ['Grupa atoma koja daje karakteristična svojstva klasi jedinjenja', 'Grupa ljudi koja radi u laboratoriji', 'Najveći atom u molekulu', 'Skup svih atoma ugljenika u molekulu'], 'Jedinjenja sa istom funkcionalnom grupom ponašaju se slično.', 'grupa', { m: mol('etanol') });
+  Q(1, 'Koja funkcionalna grupa je karakteristična za alkohole?', ['–OH (hidroksilna)', '–COOH (karboksilna)', '–COO– (estarska)', '–NH₂ (amino)'], 'Etanol ima jednu –OH grupu na kraju lanca.', 'hidroksil', { o: mol('etanol') });
+  Q(1, 'Koja funkcionalna grupa je karakteristična za karboksilne kiseline?', ['–COOH (karboksilna)', '–OH (hidroksilna)', '–NH₂ (amino)', '–COO– (estarska)'], 'Sirćetna kiselina CH₃COOH ima karboksilnu grupu.', 'karboksil', { o: mol('etanska-kiselina') });
+  Q(2, 'Koja funkcionalna grupa je karakteristična za estre?', ['–COO– (estarska)', '–OH', '–NH₂', '–CHO'], 'Estre prepoznajemo po atomu kiseonika koji povezuje dve ugljovodonične grupe, uz C=O.', 'estar', { o: mol('etil-etanoat') });
+  Q(2, 'Koju funkcionalnu grupu sadrže aminokiseline pored karboksilne?', ['Aminogrupu –NH₂', 'Hidroksilnu grupu –OH', 'Estarsku grupu', 'Aldehidnu grupu –CHO'], 'Zato imaju i kisela i bazna svojstva.', 'amino', { o: mol('glicin') });
+  Q(2, 'Šta je karakteristična funkcionalna grupa alkena?', ['Dvostruka veza C=C', 'Trostruka veza C≡C', 'Hidroksilna grupa', 'Karboksilna grupa'], 'Dvostruka veza je izuzetak jer ne sadrži druge atome osim ugljenika.', 'dvostruka', { o: mol('eten') });
+  Q(2, 'Šta je karakteristična funkcionalna grupa alkina?', ['Trostruka veza C≡C', 'Dvostruka veza C=C', 'Hidroksilna grupa', 'Aminogrupa'], 'Najprostiji alkin je etin.', 'trostruka', { o: mol('etin') });
+  Q(2, 'Kojoj klasi pripada jedinjenje CH₃CH₂OH?', ['Alkoholima', 'Alkanima', 'Estrima', 'Karboksilnim kiselinama'], 'Etanol je alkohol u alkoholnim pićima, ali i u dezinfekcionim sredstvima.', 'etanol', { m: mol('etanol') });
+  Q(2, 'Kojoj klasi pripada jedinjenje CH₃COOH?', ['Karboksilnim kiselinama', 'Alkoholima', 'Estrima', 'Alkanima'], 'Sirće je oko 5% rastvor etanske (sirćetne) kiseline.', 'sirćetna', { m: mol('etanska-kiselina') });
+  Q(2, 'Kojoj klasi pripada jedinjenje CH₃COOCH₂CH₃?', ['Estrima', 'Alkoholima', 'Kiselinama', 'Alkenima'], 'Estri su odgovorni za miris voća.', 'estar', { m: mol('etil-etanoat') });
+  Q(2, 'Kojoj klasi ugljovodonika pripada CH₄?', ['Alkanima', 'Alkenima', 'Alkinima', 'Aromatičnim ugljovodonicima'], 'Alkani imaju samo jednostruke veze.', 'alkan', { m: mol('metan') });
+  Q(2, 'Kojoj klasi pripada jedinjenje C₂H₄?', ['Alkenima', 'Alkanima', 'Alkinima', 'Alkoholima'], 'Ima dvostruku vezu između ugljenika.', 'alken', { m: mol('eten') });
+  Q(3, 'Koja je funkcionalna grupa u molekulu glukoze pored –OH?', ['Aldehidna grupa –CHO (u otvorenom obliku)', 'Karboksilna grupa –COOH', 'Aminogrupa –NH₂', 'Estarska grupa'], 'Zbog aldehidne grupe glukoza daje crveni talog sa Felingovim reagensom.', 'aldehid', { o: mol('glukoza') });
+  Q(2, 'Koji hemijski element je u funkcionalnoj grupi alkohola pored vodonika?', ['Kiseonik', 'Azot', 'Sumpor', 'Hlor'], 'Hidroksilna grupa se sastoji od kiseonika i vodonika.', 'kiseonik', { o: mol('metanol') });
+  U(2, 'Koje jedinjenje NIJE alkohol?', ['Etanska kiselina', 'Metanol', 'Etanol', 'Propan-2-ol'], 'Etanska kiselina je karboksilna kiselina (–COOH).', 'Alkoholi imaju –OH vezanu za zasićeni ugljenik.', 'kiselina', { o: mol('etanska-kiselina') });
+  S(2, 'Spoji jedinjenje sa klasom kojoj pripada.', [['Etan', 'Alkan'], ['Eten', 'Alken'], ['Etanol', 'Alkohol'], ['Etanska kiselina', 'Karboksilna kiselina']], 'Sva četiri jedinjenja imaju po dva atoma ugljenika u lancu.', 'klase', { o: mol('etanol') });
+};

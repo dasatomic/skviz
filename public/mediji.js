@@ -255,10 +255,10 @@ const MOLEKULI = {
 };
 
 function prikaziMolekul(k, m) {
-  const def = m.atomi ? m : MOLEKULI[m.ime];
+  const def = m.atomi ? m : MOLEKULI[m.ime] || (window.Molekuli && window.Molekuli.dohvati(m.ime));
   if (!def) return prikaziTekst(k, { tekst: m.formula || '?' });
   const { cv, g, w, h } = platno(k, m.visina || 270);
-  const at = def.atomi.map(([e, x, y, z]) => ({ e, p: [x, y, z] }));
+  const at = def.atomi.map(([e, x, y, z, o]) => ({ e, p: [x, y, z], q: o && o.q }));
   // centriranje i razmera
   const cx = at.reduce((s, a) => s + a.p[0], 0) / at.length;
   const cy = at.reduce((s, a) => s + a.p[1], 0) / at.length;
@@ -292,7 +292,7 @@ function prikaziMolekul(k, m) {
         for (let r = 0; r < red; r++) {
           const o = (r - (red - 1) / 2) * 6;
           g.strokeStyle = '#8a8fa3';
-          g.lineWidth = def.tanke ? 2 : red > 1 ? 3.5 : 6;
+          g.lineWidth = def.tanke || def.atomi.length > 40 ? 2 : red > 1 ? 3.5 : 6;
           g.beginPath();
           g.moveTo(A.x + nx * o, A.y + ny * o);
           g.lineTo(B.x + nx * o, B.y + ny * o);
@@ -301,7 +301,7 @@ function prikaziMolekul(k, m) {
       } else {
         const p = s.atom;
         const info = ATOMI[p.a.e] || { boja: '#ccc', r: 0.5 };
-        const r = info.r * sk * p.f * (def.atomi.length < 6 ? 0.72 : 0.85);
+        const r = info.r * sk * p.f * (def.atomi.length < 6 ? 0.72 : def.atomi.length > 40 ? 0.6 : def.atomi.length > 24 ? 0.68 : 0.85);
         const gr = g.createRadialGradient(p.x - r * 0.35, p.y - r * 0.35, r * 0.1, p.x, p.y, r);
         gr.addColorStop(0, '#ffffff');
         gr.addColorStop(0.25, info.boja);
@@ -310,6 +310,14 @@ function prikaziMolekul(k, m) {
         g.beginPath();
         g.arc(p.x, p.y, r, 0, Math.PI * 2);
         g.fill();
+        if (p.a.q) {
+          // naboj jona: „+“, „−“, „2+“ …
+          const q = p.a.q, tekst = (Math.abs(q) > 1 ? Math.abs(q) : '') + (q > 0 ? '+' : '−');
+          g.font = `bold ${Math.max(13, r * 0.95)}px system-ui`;
+          g.textAlign = 'center'; g.textBaseline = 'middle';
+          g.lineWidth = 3; g.strokeStyle = '#0b1826'; g.strokeText(tekst, p.x, p.y);
+          g.fillStyle = q > 0 ? '#ff7675' : '#74b9ff'; g.fillText(tekst, p.x, p.y);
+        }
         if (m.oznake) {
           g.fillStyle = p.a.e === 'H' ? '#333' : '#fff';
           g.font = `bold ${Math.max(10, r * 0.8)}px system-ui`;
@@ -1045,11 +1053,19 @@ function prikaziBiologiju(k, m) {
   return window.Biologija ? window.Biologija.prikazi(k, m) : () => {};
 }
 
+// 3D hemija: atomi, jonske veze, reakcije (public/hemija3d.js) i laboratorija (public/laboratorija.js)
+function prikaziHemiju(k, m) {
+  return window.Hemija3D ? window.Hemija3D.prikazi(k, m) : () => {};
+}
+function prikaziLaboratoriju(k, m) {
+  return window.Laboratorija ? window.Laboratorija.prikazi(k, m) : () => {};
+}
+
 const PRIKAZI = {
   slika: prikaziSliku, svg: prikaziSVG, melodija: prikaziMelodiju, morze: prikaziMorze, molekul: prikaziMolekul,
   telo: prikaziTelo, atom: prikaziAtom, planeta: prikaziPlanetu, dnk: prikaziDNK, mapa: prikaziMapu,
   sat: prikaziSat, lenta: prikaziLentu, formula: prikaziTekst, citat: prikaziTekst, emodzi: prikaziTekst, geo: prikaziGeo, kod: prikaziKod, fizika: prikaziFiziku,
-  biologija: prikaziBiologiju,
+  biologija: prikaziBiologiju, hemija: prikaziHemiju, laboratorija: prikaziLaboratoriju,
 };
 
 // glavna funkcija: vraća funkciju za čišćenje
@@ -1068,5 +1084,5 @@ function prikaziMedij(kontejner, m, { auto = false, paket = '', kod = null } = {
   return () => ciscenje();
 }
 
-window.Mediji = { prikaziMedij, Zvuk, MOLEKULI, bojiKod, matTekst };
+window.Mediji = { prikaziMedij, Zvuk, MOLEKULI, ATOMI, bojiKod, matTekst, rotiraj, platno, okretanje, shade, hexA };
 })();

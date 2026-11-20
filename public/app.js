@@ -534,7 +534,8 @@ function izborKvizaHTML(P) {
   const predmeti = [
     ['oblast:matematika', 'oblast:matematika-zadaci'],
     ['srpski-jezik', 'oblast:srpski-gramatika'],
-    ['oblast:fizika', 'oblast:fizika-zadaci', 'oblast:hemija'],
+    ['oblast:fizika', 'oblast:fizika-zadaci'],
+    ['oblast:hemija', 'oblast:hemija-laboratorija'],
     ['oblast:biologija', 'oblast:istorija', 'oblast:geografija'],
   ];
   const dodatno = ['oblast:eksperimenti'];

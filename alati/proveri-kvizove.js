@@ -6,9 +6,12 @@ const path = require('path');
 const KOREN = path.join(__dirname, '..', 'kvizovi');
 const recnik = require('../lib/recnik');
 const MAT = require('./mat-zapis');
-const VRSTE = ['slika', 'svg', 'melodija', 'morze', 'molekul', 'telo', 'atom', 'planeta', 'dnk', 'mapa', 'sat', 'formula', 'emodzi', 'geo', 'kod', 'fizika', 'biologija', 'lenta', 'citat'];
+const VRSTE = ['slika', 'svg', 'melodija', 'morze', 'molekul', 'telo', 'atom', 'planeta', 'dnk', 'mapa', 'sat', 'formula', 'emodzi', 'geo', 'kod', 'fizika', 'biologija', 'hemija', 'laboratorija', 'lenta', 'citat'];
 const SCENE = require('../public/fizika.js').SCENE;
 const BIO_SCENE = require('../public/biologija.js').SCENE;
+const MOLEKULI3D = require('../public/molekuli.js');
+const HEM3D = require('../public/hemija3d.js');
+const LAB = require('../public/laboratorija.js');
 const ISTORIJA = require('../public/istorija.js');
 const SVET = require('../public/geo/svet.json');
 const PRIRODA = require('../public/geo/priroda.json');
@@ -123,7 +126,18 @@ for (const dir of fs.readdirSync(KOREN).sort()) {
         }
         if (m.vrsta === 'fizika' && !SCENE.includes(m.scena)) g(oz, 'nepoznata fizička scena ' + m.scena + ' (postoje: ' + SCENE.join(', ') + ')');
         if (m.vrsta === 'biologija' && !BIO_SCENE.includes(m.scena)) g(oz, 'nepoznata biološka scena ' + m.scena + ' (postoje: ' + BIO_SCENE.join(', ') + ')');
-        if (m.vrsta === 'molekul' && !m.atomi && !MOLEKULI.includes(m.ime)) g(oz, 'nepoznat molekul ' + m.ime);
+        if (m.vrsta === 'molekul' && !m.atomi && !MOLEKULI.includes(m.ime) && !MOLEKULI3D.IMENA.includes(m.ime)) g(oz, 'nepoznat molekul ' + m.ime);
+        if (m.vrsta === 'hemija') {
+          if (!HEM3D.SCENE.includes(m.scena)) g(oz, 'nepoznata scena hemije ' + m.scena + ' (postoje: ' + HEM3D.SCENE.join(', ') + ')');
+          if (m.scena === 'reakcija') { try { const e = HEM3D.proveriReakciju(m); if (e) g(oz, 'reakcija: ' + e); } catch (e) { g(oz, 'reakcija: ' + e.message); } }
+          if (m.scena === 'kovalentna' && !MOLEKULI3D.IMENA.includes(m.ime)) g(oz, 'kovalentna: nepoznat molekul ' + m.ime);
+          if (m.scena === 'atom' && !(m.z >= 1 && m.z <= 83)) g(oz, 'atom: z mora biti redni broj elementa');
+        }
+        if (m.vrsta === 'laboratorija') {
+          if (!LAB.SCENE.includes(m.scena)) g(oz, 'nepoznata laboratorijska scena ' + m.scena + ' (postoje: ' + LAB.SCENE.join(', ') + ')');
+          if (m.scena === 'epruvete' && m.preset && !LAB.PRESETI.includes(m.preset)) g(oz, 'nepoznat preset epruveta ' + m.preset + ' (postoje: ' + LAB.PRESETI.join(', ') + ')');
+          if (m.scena === 'pribor') for (const x of m.stavke || []) if (!LAB.PRIBOR.includes(x)) g(oz, 'nepoznat pribor ' + x + ' (postoje: ' + LAB.PRIBOR.join(', ') + ')');
+        }
         if (m.vrsta === 'mapa' && m.karta && !ISTORIJA.karte[m.karta]) g(oz, 'nepoznata istorijska karta ' + m.karta + ' (postoje: ' + Object.keys(ISTORIJA.karte).join(', ') + ')');
         if (m.vrsta === 'mapa') for (const s of m.slojevi || []) if (typeof s.o === 'string' && !ISTORIJA.oblasti[s.o]) g(oz, 'nepoznata istorijska oblast ' + s.o);
         if (m.vrsta === 'mapa') for (const l of m.linije || []) if (typeof l.l === 'string' && !ISTORIJA.linije[l.l]) g(oz, 'nepoznata istorijska linija ' + l.l);

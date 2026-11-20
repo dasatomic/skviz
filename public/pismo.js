@@ -32,6 +32,8 @@
   // hemijski simboli (u tekstovima o elementima ostaju latinicom: Au, Fe, Pb, N, Ca…)
   const SIMBOLI = new Set(('H He Li Be B C N O F Ne Na Mg Al Si P S Cl Ar K Ca Ti Cr Mn Fe Co Ni Cu Zn As Se Br Kr Ag Sn Sb I Xe ' +
     'Ba Pt Au Hg Pb Bi Po Rn Ra U Pu W Ur Sr Cs').split(' '));
+  // tekst o hemiji: tek tada se KOH, HCl, COOH, OH… (simboli elemenata bez indeksa) smatraju formulama, a ne rečima
+  const HEM_KONTEKST = /(kiselin|hidroksid|oksid|\bjon(?:a|i|u|e|om|ima)?\b|jedinjenj|molekul|reakcij|\bbaz[aeiu]|alkohol|funkcional|supstanc|\bhemij|rastvor|\batom|karboks|ugljovodonik|\bestr|alkan|alkin|alken|aldehid|katjon|anjon|valenc|elektrolit|formul|\bgrup|→)/i;
   const SRPSKE_RECI = new Set(['ne', 'na', 'ni', 'po', 'se', 'li', 'i', 'u', 'as']);
   // Strane reči i imena koja se i u ćiriličnom tekstu pišu izvorno (igre, brendovi, naslovi, latinski nazivi vrsta,
   // italijanske muzičke oznake). Ostaju latinicom i sa padežnim nastavkom (Minecraftu, Cupheada, Netherita).
@@ -128,6 +130,10 @@
     const odmahPre = pre.slice(-1), odmahPosle = posle.slice(0, 1);
     const preRec = (pre.match(/([A-Za-zČĆŽŠĐčćžšđ]+)[\s,]*$/) || [])[1] || '';
     const posleRec = (posle.match(/^[\s,]*([A-Za-zČĆŽŠĐčćžšđ]+)/) || [])[1] || '';
+    // hemijske formule bez indeksa: HCl, KOH, NaOH, CaO, COOH, OH (dva ili više simbola elemenata uzastopno)
+    if (HEM_KONTEKST.test(tekst) && /^(?:[A-Z][a-z]?\d*)+$/.test(tok) && tok !== 'BiH') { const sim = tok.match(/[A-Z][a-z]?/g); if (sim.length >= 2 && sim.every((x) => SIMBOLI.has(x))) return true; }
+    // simbol ispred zagrade sa indeksom: Ca(OH)₂, Ba(NO₃)₂, Al₂(SO₄)₃
+    if (SIMBOLI.has(tok) && /^\([A-Za-z0-9\u2080-\u2089]+\)[\u2080-\u2089\d]/.test(posle)) return true;
     // hemijske formule i stepeni: H₂O, CO₂, mc², m³
     if (INDEKSI.test(odmahPosle) || INDEKSI.test(odmahPre)) return true;
     // °C, °F
@@ -201,12 +207,27 @@
     return false;
   }
 
+  // ceo tekst je kratka hemijska formula: sve reči su nizovi simbola elemenata (Mg, OH, COOH), ukupno bar dva simbola, a uz
+  // to indeks/zagrada/strelica/malo slovo ili poznata formula (KOH, COOH…) – „SSS“, „UN“, „Ra“, „Ne“ ostaju običan tekst
+  const FORMULE_VELIKA = new Set(['KOH', 'OH', 'COOH', 'CHO', 'CO', 'NO', 'HF', 'HI', 'NH', 'CH', 'CS', 'NI']);
+  function jeFormula(t) {
+    if (!/^[A-Za-z0-9\u2080-\u2089\u2070-\u209F\u00B2\u00B3\u00B9()·\s+→⇌↑↓−–\-=.,/]+$/.test(t)) return false;
+    const reci = t.match(/[A-Za-z]+/g) || [];
+    if (!reci.length || !reci.every((w) => /^(?:[A-Z][a-z]?)+$/.test(w) && w.match(/[A-Z][a-z]?/g).every((x) => SIMBOLI.has(x)))) return false;
+    const jedinice = reci.reduce((n, w) => n + w.match(/[A-Z][a-z]?/g).length, 0);
+    if (jedinice < 2) return false;
+    if (/[0-9\u2080-\u2089\u2070-\u209F\u00B2\u00B3\u00B9()→⇌↑↓]|[a-z]/.test(t)) return true;
+    return reci.every((w) => FORMULE_VELIKA.has(w));
+  }
+
   function uCirilicu(tekst) {
     tekst = String(tekst);
     if (!SLOVO.test(tekst)) return tekst;
     const t = tekst.trim();
     // ceo tekst je jedna oznaka (odgovor „L“, „H“, „XIV“, „AB“) – ostavi
     // (ali ne „U “ ispred $…$ – čvor teksta „U $3$ sata“: to je predlog, ne oznaka)
+    // ceo tekst je hemijska formula („Mg(OH)₂“, „–COOH“, „2H₂ + O₂ → 2H₂O“) – ostaje latinicom
+    if (jeFormula(t)) return tekst;
     if (/^[A-Z]{1,4}$/.test(t) && (t.length === 1 || RIMSKI.test(t)) && !(/^[AIUOSKV]$/.test(t) && tekst !== t)) return tekst;
     if (/^([ČĆŽŠĐ]|Dž|Lj|Nj)$/.test(t)) return tekst; // slovo latinice kao odgovor
     if (/^(A|B|AB|0)[+−-]?$/.test(t)) return tekst; // krvna grupa kao odgovor
