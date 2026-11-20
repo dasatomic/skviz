@@ -5337,6 +5337,54 @@
       ],
       "zanimljivost": "„GTA VI“ se vraća u Vajs Siti, grad po uzoru na Majami, a pored Lusije glavni junak je i Džejson. Najava iz decembra 2023. postala je jedan od najgledanijih trejlera ikada.",
       "rec": "pljačka"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "U epizodi „Simpsonovih“ (The Simpsons) „Čarobnjak iz Ulice zimzelenih terasa“ (1998) Homer napiše na tabli $3987^{12} + 4365^{12} = 4472^{12}$, i kalkulator to potvrđuje. Kako se najlakše vidi da jednakost ne može biti tačna?",
+      "odgovori": [
+        "Leva strana je deljiva sa 3, a desna nije",
+        "Leva strana je neparna, a desna parna",
+        "Poslednje cifre leve i desne strane su različite",
+        "Desna strana je manja od broja $4365^{12}$"
+      ],
+      "zanimljivost": "Broj je deljiv sa 3 kad mu je zbir cifara deljiv sa 3: $3+9+8+7 = 27$ i $4+3+6+5 = 18$, ali $4+4+7+2 = 17$. Obe strane se slažu u prvih 10 cifara, pa kalkulator „vidi“ jednakost. Prema Fermaovoj teoremi, $a^n + b^n = c^n$ nema rešenja u prirodnim brojevima za $n > 2$ – to je tek 1994. dokazao Endru Vajls, posle više od 350 godina pokušaja. Mnogi scenaristi serije su matematičari, pa su Homeru namerno dali „skoro rešenje“.",
+      "rec": "teorema"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "U epizodi „Simpsonovih“ (The Simpsons) publika na stadionu pogađa broj gledalaca od ponuđenih: 8191, 8128 i 8208. Jedan od njih je „savršen broj“ – jednak je zbiru svih svojih delilaca manjih od njega (kao $6 = 1+2+3$). Koji?",
+      "odgovori": [
+        "8128",
+        "8191",
+        "8208",
+        "8200"
+      ],
+      "zanimljivost": "Nijedan od tri broja nije slučajan: 8191 je prost broj (Mersenov prost broj, $2^{13} - 1$), a 8208 je jednak zbiru četvrtih stepena svojih cifara: $8^4 + 2^4 + 0^4 + 8^4$. Savršeni brojevi su retki – prva četiri su 6, 28, 496 i 8128, a do danas niko ne zna da li postoji ijedan neparan savršen broj.",
+      "rec": "delilac"
+    },
+    {
+      "tezina": 3,
+      "pitanje": "U epizodi „Futurame“ „Zarobljenik Bende“ (2010) mašina zamenjuje tela dvoje ljudi, ali isti par ne može da se zameni dvaput. Koliko dodatnih ljudi je, prema teoremi napisanoj baš za ovu epizodu, uvek dovoljno da svi vrate svoja tela?",
+      "odgovori": [
+        "Dvoje",
+        "Jedan",
+        "Troje",
+        "Onoliko koliko je zamena bilo"
+      ],
+      "zanimljivost": "Teoremu je dokazao scenarista Ken Kiler, doktor primenjene matematike sa Harvarda, a dokaz se pojavljuje na tabli u epizodi. Danas se zove „Futuramina teorema“ i bavi se permutacijama – premeštanjima. U epizodi tela vraćaju košarkaši čuvenog tima Harlem Globtroteri.",
+      "rec": "zamena"
+    },
+    {
+      "tezina": 2,
+      "pitanje": "Broj 1729 se u „Futurami“ pojavljuje više puta, npr. na trupu broda „Nimbus“. Po čemu je taj broj poznat u matematici?",
+      "odgovori": [
+        "Najmanji je zbir dva kuba na dva načina",
+        "Najveći je prost broj sa četiri cifre",
+        "Jednak je zbiru kvadrata svojih cifara",
+        "Prvi je broj deljiv sa svim ciframa"
+      ],
+      "zanimljivost": "$1729 = 1^3 + 12^3 = 9^3 + 10^3$. Matematičar Hardi je posetio bolesnog Ramanudžana i rekao da mu je broj taksija, 1729, bio dosadan. Ramanudžan je odmah odgovorio da je to veoma zanimljiv broj – i objasnio zašto. Zato se 1729 zove „taksi broj“.",
+      "rec": "kocka"
     }
   ]
 }
