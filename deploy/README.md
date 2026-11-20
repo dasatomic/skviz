@@ -105,7 +105,7 @@ Ako token procuri, najviše što neko može je da otvara PR-ove i menja robotov 
    - Podesi dvofaktorsku zaštitu (Settings → Password and authentication).
 2. **Token** (prijavljen kao robot): Settings → Developer settings → Personal access tokens → **Tokens (classic)** → Generate new token (classic)
    - Note: `skviz urednik`, Expiration: 1 godina (stavi podsetnik u kalendar)
-   - Scope: **samo `public_repo`**
+   - Scope: **`public_repo` + `workflow`** (`workflow` je potreban da bi robotov fork mogao da se sinhronizuje kad upstream sadrži `.github/workflows/…`; bez njega `merge-upstream` vraća 422 i predlozi prestaju da rade – vidi `lib/predlozi.js`)
    - Kopiraj token (`ghp_…`) – prikazuje se samo jednom.
    - Klasični token je potreban jer fine-grained token ne može da otvori PR u tuđem repozitorijumu.
 3. **Token na server** (sa svog računara):
