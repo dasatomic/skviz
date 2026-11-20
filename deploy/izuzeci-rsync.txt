@@ -1,6 +1,8 @@
 # Šta pun deploy (rsync --delete) ne šalje na server i tamo ne briše.
 # Koriste ga deploy/objavi.sh i alati/test-deploy.js (test radi isti rsync kao pravi deploy).
 /.github
+# iOS aplikacija (Xcode projekat) – serveru ne treba
+/ios
 /.objavljeno
 # stanje servera (podaci/ – piše ga igra)
 /podaci/statistika.json

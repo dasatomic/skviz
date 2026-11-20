@@ -43,8 +43,8 @@ if [ "$NACIN" = "--pitanja" ]; then
   KOD="$(ssh "$CILJ" "cat $DIR/.objavljeno 2>/dev/null" || true)"
   [ -n "$KOD" ] || { echo "Na serveru nije zapisano koja verzija koda radi – uradi jednom pun deploy: ./deploy/objavi.sh $CILJ"; exit 1; }
   git cat-file -e "$KOD^{commit}" 2>/dev/null || { echo "Commit $KOD (kod na serveru) ne postoji u ovom repozitorijumu – git fetch ili pun deploy."; exit 1; }
-  # sve što server izvršava ili šalje telefonima; pitanja, alati, uputstva i CI se ne računaju
-  RAZLIKA="$(git diff --name-only "$KOD" "$COMMIT" -- . ':(exclude)kvizovi' ':(exclude)alati' ':(exclude)deploy' ':(exclude).github' ':(exclude,glob)**/*.md')"
+  # sve što server izvršava ili šalje telefonima; pitanja, alati, uputstva, CI i iOS aplikacija se ne računaju
+  RAZLIKA="$(git diff --name-only "$KOD" "$COMMIT" -- . ':(exclude)kvizovi' ':(exclude)alati' ':(exclude)deploy' ':(exclude).github' ':(exclude)ios' ':(exclude,glob)**/*.md')"
   if [ -n "$RAZLIKA" ]; then
     echo "Od verzije na serveru (${KOD:0:7}) promenjen je i kod:"
     echo "$RAZLIKA" | sed 's/^/  /'

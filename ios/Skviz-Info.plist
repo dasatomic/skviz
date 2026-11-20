@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyLists/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- skviz://soba/ABCD otvara aplikaciju i ulazi u sobu (QR kod, testiranje). Ostali ključevi se generišu iz build podešavanja. -->
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>rs.skviz.ios</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>skviz</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
