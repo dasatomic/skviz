@@ -3,7 +3,7 @@
 // Proverava format, broj odgovora, duplikate, postojanje slika, poznate vrste medija i pojam za krug reči.
 const fs = require('fs');
 const path = require('path');
-const KOREN = path.join(__dirname, '..', 'kvizovi');
+const KOREN = process.env.KVIZOVI ? path.resolve(process.env.KVIZOVI) : path.join(__dirname, '..', 'kvizovi'); // KVIZOVI=dir – provera kopije
 const recnik = require('../lib/recnik');
 const MAT = require('./mat-zapis');
 const VRSTE = ['slika', 'svg', 'melodija', 'morze', 'molekul', 'telo', 'atom', 'planeta', 'dnk', 'mapa', 'sat', 'formula', 'emodzi', 'geo', 'kod', 'fizika', 'biologija', 'hemija', 'laboratorija', 'lenta', 'citat'];

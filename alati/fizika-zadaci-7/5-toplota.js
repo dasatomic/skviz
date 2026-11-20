@@ -13,13 +13,13 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, T, mera, stubovi }) => {
     ['$298 K$', '$248 K$', '$25 K$', '$273 K$'],
     [K('Veza Kelvinove i Celzijusove skale: $T = t + 273$.'),
      K('$T = 25 + 273 = 298 K$.')],
-    S('termometar', { skale: ['C', 'K'], od: -20, do: 110, temp: 25, tacke: [{ c: 25, o: '25 °C', l: '? K' }] }));
+    S('termometar', { skale: ['C'], od: -20, do: 110, temp: 25, tacke: [{ c: 25, o: '25 °C', l: '? K' }] }));
 
   Z(1, 'Temperatura neke tečnosti je $300 K$. Kolika je ona u stepenima Celzijusa?',
     ['$27 °C$', '$573 °C$', '$−27 °C$', '$300 °C$'],
     [K('$t = T − 273$.'),
      K('$t = 300 − 273 = 27 °C$.')],
-    S('termometar', { skale: ['C', 'K'], od: -20, do: 110, temp: 27 }));
+    S('termometar', { skale: ['K'], od: -20, do: 110, temp: 27 }));
 
   Z(2, 'Temperatura vode porasla je sa $15 °C$ na $40 °C$. Kolika je promena temperature izražena u kelvinima?',
     ['$25 K$', '$298 K$', '$313 K$', '$55 K$'],
@@ -31,7 +31,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, T, mera, stubovi }) => {
     ['$37 °C$; za $60 °C$', '$37 °C$; za $333 °C$', '$310 °C$; za $60 °C$', '$−23 °C$; za $60 °C$'],
     [K('Konačna temperatura: $310 − 273 = 37 °C$ (kao temperatura ljudskog tela).'),
      K('Početna je bila $250 − 273 = −23 °C$, a promena $310 K − 250 K = 60 K = 60 °C$.')],
-    S('termometar', { skale: ['C', 'K'], od: -30, do: 50, tacke: [{ c: -23, o: '250 K' }, { c: 37, o: '310 K' }] }));
+    S('termometar', { skale: ['C', 'K'], od: -30, do: 50, tacke: [{ c: -23, o: '250 K' }] }));
 
   proveri(0.144 * (40 - -10), 7.2);
   Z(3, 'Čelična šina dužine $12 m$ produži se za $0,144 mm$ kada se zagreje za $1 °C$. Zimi temperatura padne do $−10 °C$, a leti šina dostigne $40 °C$. Za koliko se razlikuju njene dužine leti i zimi?',

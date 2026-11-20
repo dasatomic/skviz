@@ -71,7 +71,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera }) => {
     ['$20 N$', '$0 N$', '$10 N$', '$40 N$'],
     [K('Lampa miruje – sile su u ravnoteži: sila kabla naviše jednaka je težini naniže.', ['n']),
      K('Sila zatezanja kabla: $T = 20 N$.')],
-    null,
+    G([{ lin: [[-2, 4], [2, 4]], b: 4, debljina: 4 }, { lin: [[0, 4], [0, 1]], b: 5, debljina: 2 }, T('💡', 0, 0.4, { vel: 40 }), F(0.7, 0.3, 0, -2, { o: 'Q = 20 N', b: 1 }), F(0.7, 1.2, 0, 2, { o: 'T = 20 N', b: 2, k: 1, id: 'n' })], { velicina: 180 }),
     { crtez: G([{ lin: [[-2, 4], [2, 4]], b: 4, debljina: 4 }, { lin: [[0, 4], [0, 1]], b: 5, debljina: 2 }, T('💡', 0, 0.4, { vel: 40 }), F(0.7, 0.3, 0, -2, { o: 'Q = 20 N', b: 1 }), F(0.7, 1.2, 0, 2, { o: 'T = 20 N', b: 2, k: 1, id: 'n' })], { velicina: 180 }) });
 
   proveri((30 * g) / 2, 150);
@@ -79,7 +79,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera }) => {
     ['$150 N$', '$300 N$', '$30 N$', '$15 N$'],
     [K('Težina deteta: $Q = 30 kg · 10 m/s^{2} = 300 N$.'),
      K('Dva lanca zajedno drže $300 N$; ako je dete na sredini, svaki drži pola: $150 N$.', ['l'])],
-    null,
+    G([{ lin: [[-3, 5], [3, 5]], b: 4, debljina: 4 }, { lin: [[-1.5, 5], [-1.5, 0.6]], b: 5, debljina: 2 }, { lin: [[1.5, 5], [1.5, 0.6]], b: 5, debljina: 2 }, { lin: [[-1.8, 0.6], [1.8, 0.6]], b: 5, debljina: 5 }, T('🧒', 0, 1.4, { vel: 40 }), T('30 kg', 0, -0.5, { b: 3, vel: 14 })], { velicina: 200 }),
     { crtez: G([{ lin: [[-3, 5], [3, 5]], b: 4, debljina: 4 }, { lin: [[-1.5, 5], [-1.5, 0.6]], b: 5, debljina: 2 }, { lin: [[1.5, 5], [1.5, 0.6]], b: 5, debljina: 2 }, { lin: [[-1.8, 0.6], [1.8, 0.6]], b: 5, debljina: 5 }, T('🧒', 0, 1.4, { vel: 40 }), F(0, 0.4, 0, -2.4, { o: '300 N', b: 1 }), F(-1.5, 2.4, 0, 1.6, { o: '150 N', b: 2, k: 2, id: 'l', oAt: [-2.6, 3.6] }), F(1.5, 2.4, 0, 1.6, { o: '150 N', b: 2, k: 2, id: 'l', oAt: [2.6, 3.6] })], { velicina: 200 }) });
 
   // ════════════════ 11. Moment sile i poluga ════════════════
@@ -182,7 +182,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera }) => {
     ['$3 000 kg/m^{3}$ – kamen', '$300 kg/m^{3}$ – pluta', '$480 kg/m^{3}$ – drvo', '$7 800 kg/m^{3}$ – gvožđe'],
     [K('Zapremina tela je jednaka zapremini istisnute vode: $V = 0,4 l = 0,0004 m^{3}$.'),
      K('$ρ = {m|V} = {1,2 kg|0,0004 m^{3}} = 3 000 kg/m^{3}$ – tri puta gušće od vode, kao kamen (granit i mermer imaju oko $2 700 kg/m^{3}$).')],
-    S('tecnost', { tip: 'dinamometar', F1: 12, F2: 8 }));
+    S('tecnost', { tip: 'plivanje', tela: [{ ro: 3000, o: '1,2 kg', b: 4 }] }));
 
   proveri(800 * g * 0.0005, 4);
   Z(2, 'Kamen zapremine $0,5 dm^{3}$ potopljen je u ulje gustine $800 kg/m^{3}$. Kolika je sila potiska? ($g = 10 m/s^{2}$)',
@@ -232,19 +232,22 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera }) => {
   Z(1, 'Telo težine $15 N$ potpuno potopimo u vodu i pustimo. Najveća sila potiska (kad je potpuno pod vodom) je $20 N$. Šta će se desiti?',
     ['Isplivaće na površinu', 'Potonuće na dno', 'Lebdeće pod vodom', 'Lebdeće, pa potonuti'],
     [K('Potisak ($20 N$) je veći od težine ($15 N$) – rezultanta ($5 N$) je naviše i telo izranja.'),
-     K('Na površini se potopljeni deo smanjuje dok potisak ne postane $15 N$ – tada telo pliva ($3/4$ zapremine pod vodom).', [], S('tecnost', { tip: 'plivanje', tela: [{ ro: 750, o: '15 N', b: 2 }], sile: true }))]);
+     K('Na površini se potopljeni deo smanjuje dok potisak ne postane $15 N$ – tada telo pliva ($3/4$ zapremine pod vodom).')],
+    null, { odgovor: S('tecnost', { tip: 'plivanje', tela: [{ ro: 750, o: '15 N', b: 2 }], sile: true }) });
 
   proveri(600 / 1000, 0.6);
   Z(2, 'Drvena kocka gustine $600 kg/m^{3}$ pliva u vodi. Koji deo njene zapremine je pod vodom?',
     ['$60 %$', '$40 %$', '$100 %$', '$6 %$'],
     [K('Telo koje pliva: težina = potisak, tj. $ρ_{t} · V · g = ρ_{v} · V_{pot} · g$.'),
-     K('${V_{pot}|V} = {ρ_{t}|ρ_{v}} = {600|1 000} = 0,6 = 60 %$.', [], S('tecnost', { tip: 'plivanje', tela: [{ ro: 600, o: '~drvo', b: 5 }], sile: true }))]);
+     K('${V_{pot}|V} = {ρ_{t}|ρ_{v}} = {600|1 000} = 0,6 = 60 %$.')],
+    null, { odgovor: S('tecnost', { tip: 'plivanje', tela: [{ ro: 600, o: '~drvo', b: 5 }], sile: true }) });
 
   proveri(900 / 1000, 0.9);
   Z(2, 'Gustina leda je $900 kg/m^{3}$. Koliki deo ledenog bloka koji pliva u slatkoj vodi je ispod površine?',
     ['$90 %$', '$10 %$', '$50 %$', '$80 %$'],
     [K('${V_{pot}|V} = {ρ_{led}|ρ_{voda}} = {900|1 000} = 90 %$.'),
-     K('Iznad vode viri samo desetina – otuda izraz „vrh ledenog brega“ (u gušćoj, slanoj morskoj vodi viri malo više).', [], S('tecnost', { tip: 'plivanje', tela: [{ ro: 900, e: '🧊', b: 0 }], sile: true }))]);
+     K('Iznad vode viri samo desetina – otuda izraz „vrh ledenog brega“ (u gušćoj, slanoj morskoj vodi viri malo više).')],
+    null, { odgovor: S('tecnost', { tip: 'plivanje', tela: [{ ro: 900, e: '🧊', b: 0 }], sile: true }) });
 
   proveri((300 * g) / (1000 * g), 0.3);
   Z(2, 'Čamac mase $300 kg$ pluta na jezeru. Kolika je zapremina vode koju istiskuje? ($ρ_{vode} = 1 000 kg/m^{3}$)',
@@ -258,13 +261,15 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera }) => {
     ['$400 kg$', '$800 kg$', '$500 kg$', '$4 000 kg$'],
     [K('Masa splava: $500 · 0,8 = 400 kg$.'),
      K('Kad je ceo pod vodom, istisne $0,8 m^{3}$ vode – $800 kg$. Potisak može da drži ukupno $800 kg$.'),
-     K('Za teret ostaje $800 kg − 400 kg = 400 kg$.', [], S('tecnost', { tip: 'plivanje', tela: [{ ro: 500, o: '~splav', b: 5 }, { ro: 1000, o: '+400 kg', b: 1 }], sile: true }))]);
+     K('Za teret ostaje $800 kg − 400 kg = 400 kg$.', [], S('tecnost', { tip: 'plivanje', tela: [{ ro: 500, o: '~splav', b: 5 }, { ro: 1000, o: '+400 kg', b: 1 }], sile: true }))],
+    S('tecnost', { tip: 'plivanje', tela: [{ ro: 500, o: '~splav', b: 5 }], sile: true }));
 
   proveri(10 * 250 / 1000, 2.5);
   Z(2, 'Kocka od plute, ivice $10 cm$ i gustine $250 kg/m^{3}$, pliva u vodi. Koliko duboko je potopljena?',
     ['$2,5 cm$', '$7,5 cm$', '$25 cm$', '$4 cm$'],
     [K('Potopljeni deo: ${ρ_{pluta}|ρ_{voda}} = {250|1 000} = {1|4}$ zapremine.'),
-     K('Kocka je uspravna, pa je potopljena četvrtina visine: ${10 cm|4} = 2,5 cm$.', [], S('tecnost', { tip: 'plivanje', tela: [{ ro: 250, o: '~pluta', b: 3 }] }))]);
+     K('Kocka je uspravna, pa je potopljena četvrtina visine: ${10 cm|4} = 2,5 cm$.')],
+    null, { odgovor: S('tecnost', { tip: 'plivanje', tela: [{ ro: 250, o: '~pluta', b: 3 }] }) });
 
   Z(1, 'Telo lebdi u vodi (ne tone i ne izranja, ma gde ga postavili). Kolika je njegova gustina?',
     ['$1 000 kg/m^{3}$', '$0 kg/m^{3}$', '$500 kg/m^{3}$', 'Veća od $1 000 kg/m^{3}$'],
@@ -285,11 +290,12 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera }) => {
     [K('Potisak potopljene lopte: $F_{p} = 1 000 · 10 · 0,005 N = 50 N$.'),
      K('Težina: $Q = 0,5 · 10 = 5 N$.'),
      K('Naša sila + težina = potisak: $F = 50 N − 5 N = 45 N$ – kao da držimo teg od $4,5 kg$!')],
-    S('tecnost', { tip: 'plivanje', tela: [{ ro: 100, e: '🏐', b: 1 }], sile: true }));
+    null);
 
   Z(1, 'Telo gustine $900 kg/m^{3}$ stavimo u ulje ($800 kg/m^{3}$) i u vodu ($1 000 kg/m^{3}$). Šta se dešava?',
     ['U ulju tone, a u vodi pliva', 'U ulju pliva, a u vodi tone', 'U obe tečnosti pliva', 'U obe tečnosti tone'],
     [K('Telo tone ako je gušće od tečnosti, a pliva ako je ređe.'),
-     K('$900 > 800$ – u ulju tone.', [], S('tecnost', { tip: 'plivanje', tela: [{ ro: 900, o: '900', b: 3 }], ro: 800, tecnost: '~ulje', boja: 3, sile: true })),
-     K('$900 < 1 000$ – u vodi pliva (pod vodom je $90 %$ tela).', [], S('tecnost', { tip: 'plivanje', tela: [{ ro: 900, o: '900', b: 3 }], sile: true }))]);
+     K('$900 > 800$ – u ulju tone.'),
+     K('$900 < 1 000$ – u vodi pliva (pod vodom je $90 %$ tela).', [], S('tecnost', { tip: 'plivanje', tela: [{ ro: 900, o: '900', b: 3 }], sile: true }))],
+    null, { odgovor: S('tecnost', { tip: 'plivanje', tela: [{ ro: 900, o: '900', b: 3 }], ro: 800, tecnost: '~ulje', boja: 3, sile: true }) });
 };

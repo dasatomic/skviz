@@ -27,13 +27,13 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik,
     [K('Sila trenja: $F_{tr} = μ m g = 0,2 · 30 · 10 N = 60 N$.'),
      K('Trenje deluje suprotno kretanju, pa je njegov rad negativan: $A = −F_{tr} · s = −60 N · 5 m = −300 J$.'),
      K('Tih $300 J$ prelazi u toplotu – pod i sanduk se malo zagreju.')],
-    S('sile', { sile: [{ F: 80, ugao: 0, o: 'F' }, { F: 60, ugao: 180, o: 'Ftr' }], telo: '30 kg', kretanje: true }));
+    S('sile', { sile: [{ F: 60, ugao: 180, o: 'Ftr = ?' }], telo: '30 kg' }));
 
   Z(2, 'Marko nosi rančić mase $5 kg$ i hoda po ravnom hodniku $10 m$, stalnom brzinom. Koliki rad vrši sila kojom drži rančić?',
     ['$0 J$', '$500 J$', '$50 J$', '$5 J$'],
     [K('Sila kojom drži rančić ($50 N$) je usmerena naviše, a pomeranje je vodoravno.', ['f']),
      K('Sila normalna na pravac kretanja ne vrši rad: $A = 0 J$ – iako se Marko umara!')],
-    null,
+    G([tlo(-1, 8, 0), T('🎒', 0.5, 2.2, { vel: 30 }), T('🎒', 6.5, 2.2, { vel: 30, k: 1 }), F(0.5, 2.8, 0, 1.6, { o: 'F', b: 2, id: 'f' }), F(1.5, 1, 4, 0, { o: 's = 10 m', b: 3, oAt: [3.5, 0.5] })], { velicina: 240 }),
     { crtez: G([tlo(-1, 8, 0), T('🎒', 0.5, 2.2, { vel: 30 }), T('🎒', 6.5, 2.2, { vel: 30, k: 1 }), F(0.5, 2.8, 0, 1.6, { o: 'F', b: 2, id: 'f' }), F(1.5, 1, 4, 0, { o: 's = 10 m', b: 3, oAt: [3.5, 0.5] })], { velicina: 240 }) });
 
   proveri(1200 / 40, 30);
@@ -90,14 +90,14 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik,
     ['$25 J$', '$2,5 J$', '$50 J$', '$5 J$'],
     [K('$E_{k} = {m v^{2}|2}$.'),
      K('$E_{k} = {0,5 kg · (10 m/s)^{2}|2} = {0,5 · 100|2} J = 25 J$.')],
-    S('kretanje', { tela: [{ e: '⚽', v: 10 }], duzina: 20, podeok: 2, vektor: true }));
+    S('kretanje', { tela: [{ e: '⚽', v: 10 }], duzina: 60, podeok: 10, vektor: true }));
 
   proveri((1000 * 400) / 2, 200000);
   Z(1, 'Automobil mase $1 000 kg$ vozi brzinom $20 m/s$. Kolika je njegova kinetička energija?',
     ['$200 kJ$', '$20 kJ$', '$400 kJ$', '$10 kJ$'],
     [K('$E_{k} = {1 000 kg · (20 m/s)^{2}|2} = {1 000 · 400|2} J = 200 000 J$.'),
      K('$200 000 J = 200 kJ$ (kilodžula).')],
-    S('kretanje', { tela: [{ e: '🚗', v: 20 }], duzina: 60, podeok: 10, vektor: true }));
+    S('kretanje', { tela: [{ e: '🚗', v: 20 }], duzina: 120, podeok: 20, vektor: true }));
 
   Z(2, 'Kako se promeni kinetička energija automobila kada mu se brzina udvostruči (sa $50 km/h$ na $100 km/h$)?',
     ['Poveća se $4$ puta', 'Poveća se $2$ puta', 'Ostane ista', 'Poveća se $8$ puta'],
@@ -118,7 +118,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik,
     [K('Rad je jednak promeni kinetičke energije: $A = E_{k2} − E_{k1}$.'),
      K('$E_{k1} = {80 · 25|2} = 1 000 J$, $E_{k2} = {80 · 100|2} = 4 000 J$.', ['e']),
      K('$A = 4 000 J − 1 000 J = 3 000 J$ – za dvostruku brzinu treba triput više rada nego za prvih $5 m/s$!')],
-    S('kretanje', { tela: [{ e: '🚴', v: 5, a: 1.25 }], duzina: 40, podeok: 5, vektor: true }),
+    S('kretanje', { tela: [{ e: '🚴', v: 5 }], duzina: 40, podeok: 5, vektor: true }),
     { crtez: G(stubovi([['5 m/s', 1000, 0], ['10 m/s', 4000, 1]], { jedinica: 'J', vis: 4, sir: 2, razmak: 1, k: [0, 2], id: [null, 'e'] }), { velicina: 200 }) });
 
   proveri((1200 * 400) / 2 / 40, 6000);
@@ -127,7 +127,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik,
     [K('Kinetička energija automobila: $E_{k} = {1 200 · 20^{2}|2} J = 240 000 J$.'),
      K('Sila kočenja „potroši“ svu tu energiju: $F · s = E_{k}$.'),
      K('$F = {240 000 J|40 m} = 6 000 N$.')],
-    S('kretanje', { tela: [{ e: '🚗', v: 20, a: -5 }], duzina: 45, podeok: 5, vektor: true }));
+    G([{ lin: [[-3, 0], [5, 0]], b: 4, debljina: 2 }, T('🚗', -2, 0.8, { vel: 40 }), F(-1, 1.9, 3, 0, { o: '20 m/s', b: 1 }), mera(-2, -0.9, 3.5, -0.9, 'put kočenja: 40 m', { b: 3 })], { velicina: 240 }));
 
   proveri((0.01 * 400 * 400) / 2, 800);
   Z(2, 'Strela mase $10 g$ leti brzinom $40 m/s$, a metak iste mase brzinom $400 m/s$. Kolika je kinetička energija metka?',
@@ -141,7 +141,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik,
     ['$300 kJ$', '$3 888 kJ$', '$54 kJ$', '$30 kJ$'],
     [K('Brzina u m/s: $72 km/h = 20 m/s$.'),
      K('$E_{k} = {1 500 · 20^{2}|2} J = 300 000 J = 300 kJ$. ($3 888 kJ$ – zamka, brzina nije pretvorena.)')],
-    S('kretanje', { tela: [{ e: '🚐', v: 20 }], duzina: 60, podeok: 10, vektor: true }));
+    S('kretanje', { tela: [{ e: '🚐', v: 20 }], duzina: 120, podeok: 20, vektor: true }));
 
   proveri(Math.sqrt((2 * 50 * 9) / 25), 6);
   Z(3, 'Sanke mase $25 kg$ miruju na ledu. Vučemo ih vodoravnom silom $50 N$ na putu od $9 m$ (trenje zanemari). Kolika je brzina sanki na kraju?',
@@ -168,7 +168,8 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik,
   proveri(0.5 * g * 20, 100);
   Z(1, 'Kamen mase $0,5 kg$ nalazi se na litici visokoj $20 m$. Kolika je njegova potencijalna energija? ($g = 10 m/s^{2}$)',
     ['$100 J$', '$10 J$', '$40 J$', '$1 000 J$'],
-    [K('$E_{p} = m g h = 0,5 · 10 · 20 J = 100 J$.')]);
+    [K('$E_{p} = m g h = 0,5 · 10 · 20 J = 100 J$.')],
+    G([tlo(-3, 3, 0), { lin: [[-3, 0], [-3, 4], [-1, 4], [-1, 0]], zatv: 1, b: 4, gusto: 1 }, T('🪨', -2, 4.7, { vel: 30 }), mera(0.6, 0, 0.6, 4, '20 m', { oAt: [1.2, 2] })], { velicina: 200 }));
 
   proveri(1200 / (40 * g), 3);
   Z(2, 'Dete mase $40 kg$ na toboganu ima potencijalnu energiju $1 200 J$ u odnosu na tlo. Na kojoj je visini? ($g = 10 m/s^{2}$)',
@@ -181,7 +182,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik,
     ['$4 050 J$', '$5 400 J$', '$1 350 J$', '$405 J$'],
     [K('Važna je samo razlika visina: $Δh = 12 m − 3 m = 9 m$.'),
      K('$ΔE_{p} = m g Δh = 45 · 10 · 9 J = 4 050 J$.')],
-    S('dizanje', { tip: 'stepenice', visina: 9, stepenika: 9, e: '🧒' }));
+    G([tlo(-3, 3, 0), { lin: [[-3, 0.9], [-1, 0.9]], b: 4, debljina: 6 }, { lin: [[1, 3.6], [3, 3.6]], b: 4, debljina: 6 }, T('🧒', -2, 1.5, { vel: 30 }), T('~prvi sprat: 3 m', -2.6, 0.2, { b: 3, vel: 13 }), T('~četvrti sprat: 12 m', 0.2, 4.2, { b: 3, vel: 13 }), mera(2.6, 0.9, 2.6, 3.6, 'Δh = ?', { oAt: [3.2, 2.2] })], { velicina: 220 }));
 
   proveri(1 * g * (2 - 0.8), 12);
   Z(3, 'Knjiga mase $1 kg$ stoji na polici $2 m$ iznad poda. Sto je visok $0,8 m$. Kolika je potencijalna energija knjige u odnosu na površinu stola? ($g = 10 m/s^{2}$)',
@@ -194,7 +195,8 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik,
   Z(2, 'Planinarka mase $60 kg$ popne se od planinarskog doma na $500 m$ do vrha na $1 500 m$ nadmorske visine. Za koliko joj je porasla potencijalna energija? ($g = 10 m/s^{2}$)',
     ['$600 kJ$', '$900 kJ$', '$60 kJ$', '$6 000 kJ$'],
     [K('$Δh = 1 500 m − 500 m = 1 000 m$.'),
-     K('$ΔE_{p} = 60 · 10 · 1 000 J = 600 000 J = 600 kJ$ – otprilike koliko energije daje četvrtina čokolade od $100 g$ (a mišići pri penjanju potroše i nekoliko puta više).')]);
+     K('$ΔE_{p} = 60 · 10 · 1 000 J = 600 000 J = 600 kJ$ – otprilike koliko energije daje četvrtina čokolade od $100 g$ (a mišići pri penjanju potroše i nekoliko puta više).')],
+    G([tlo(-3, 3, 0), { lin: [[-2.5, 0], [0.5, 3], [3, 0]], zatv: 1, b: 2, gusto: 1 }, T('🏠', -1.8, 0.5, { vel: 26 }), T('⛰️', 0.5, 3.4, { vel: 26 }), T('~dom: 500 m', -1.9, -0.7, { b: 3, vel: 13 }), T('~vrh: 1 500 m', 0.4, 4.3, { b: 3, vel: 13 })], { velicina: 220 }));
 
   proveri(1000 * g * 50, 500000);
   Z(2, 'Iza brane hidroelektrane voda je $50 m$ iznad turbina. Kolika je potencijalna energija $1 m^{3}$ vode u odnosu na turbine? ($ρ = 1 000 kg/m^{3}$, $g = 10 m/s^{2}$)',
@@ -238,14 +240,14 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik,
     ['$20 m/s$', '$400 m/s$', '$200 m/s$', '$14 m/s$'],
     [K('$m g h = {m v^{2}|2}$ – masa se skrati!'),
      K('$v^{2} = 2 g h = 2 · 10 · 20 = 400$ ⇒ $v = 20 m/s$.')],
-    S('energija', { tip: 'odskok' }));
+    S('pad', { tip: 'slobodan', visina: 20, brzina: false, sat: false, strob: 99 }));
 
   proveri(Math.sqrt(2 * g * 0.45), 3);
   Z(2, 'Kuglica klatna podignuta je tako da je $45 cm$ iznad najnižeg položaja i puštena. Kolika joj je brzina u najnižoj tački? ($g = 10 m/s^{2}$)',
     ['$3 m/s$', '$9 m/s$', '$30 m/s$', '$0,9 m/s$'],
     [K('Potencijalna energija na vrhu prelazi u kinetičku na dnu: $m g h = {m v^{2}|2}$.'),
      K('$v^{2} = 2 · 10 · 0,45 = 9$ ⇒ $v = 3 m/s$. (Pazi: $45 cm = 0,45 m$.)')],
-    S('klatno', { ugao: 50, energija: true, brzina: true }));
+    S('klatno', { ugao: 50, energija: true }));
 
   proveri(Math.sqrt(2 * g * 1.8), 6);
   Z(2, 'Skejter kreće iz mirovanja sa ivice rampe visoke $1,8 m$. Kolikom brzinom prolazi kroz najnižu tačku? (Trenje zanemari, $g = 10 m/s^{2}$.)',

@@ -987,15 +987,10 @@
       "v": 0,
       "a": 10,
       "okreni": true
-     },
-     {
-      "e": "🚗",
-      "v": 0,
-      "a": 3.5
      }
     ],
-    "duzina": 40,
-    "podeok": 5,
+    "duzina": 60,
+    "podeok": 10,
     "vektor": true,
     "sat": true
    },
@@ -1021,6 +1016,95 @@
     "$1,7 m/s$",
     "$0,6 m/s$"
    ],
+   "mediji": {
+    "vrsta": "geo",
+    "t": {
+     "O": [
+      0,
+      0
+     ]
+    },
+    "e": [
+     {
+      "tx": "🏠",
+      "at": [
+       0.4,
+       1.4
+      ],
+      "vel": 30
+     },
+     {
+      "tx": "🏪",
+      "at": [
+       6.2,
+       1.4
+      ],
+      "vel": 30
+     },
+     {
+      "lin": [
+       [
+        0.4,
+        0.4
+       ],
+       [
+        5.8,
+        0.4
+       ]
+      ],
+      "str": 1,
+      "b": 1,
+      "debljina": 3.5,
+      "o": "1,5 m/s",
+      "oAt": [
+       6.05,
+       0.85
+      ]
+     },
+     {
+      "lin": [
+       [
+        5.8,
+        -0.6
+       ],
+       [
+        0.4,
+        -0.6
+       ]
+      ],
+      "str": 1,
+      "b": 2,
+      "debljina": 3.5,
+      "o": "2 m/s",
+      "oAt": [
+       0.15,
+       -0.15
+      ]
+     },
+     {
+      "tx": "5 min",
+      "at": [
+       6.2,
+       -1.6
+      ],
+      "b": 3,
+      "vel": 13
+     },
+     {
+      "tx": "600 m",
+      "at": [
+       3.3,
+       1.1
+      ],
+      "b": 3,
+      "vel": 13
+     }
+    ],
+    "bezImena": [
+     "O"
+    ],
+    "velicina": 260
+   },
    "resenje": [
     {
      "t": "Odlazak: $t_{1} = {600 m|1,5 m/s} = 400 s$."
@@ -1602,6 +1686,19 @@
     "$0,2 kg$",
     "$12 kg$"
    ],
+   "mediji": {
+    "vrsta": "fizika",
+    "scena": "sile",
+    "sile": [
+     {
+      "F": 15,
+      "ugao": 0,
+      "o": "15 N"
+     }
+    ],
+    "telo": "m = ?",
+    "kretanje": true
+   },
    "resenje": [
     {
      "t": "Iz $F = m · a$ sledi $m = {F|a}$."
@@ -1712,24 +1809,16 @@
    ],
    "mediji": {
     "vrsta": "fizika",
-    "scena": "kretanje",
-    "tela": [
+    "scena": "sile",
+    "sile": [
      {
-      "v": 0,
-      "a": 6,
-      "o": "2 kg",
-      "b": 0
-     },
-     {
-      "v": 0,
-      "a": 4,
-      "o": "3 kg",
-      "b": 1
+      "F": 12,
+      "ugao": 0,
+      "o": "F"
      }
     ],
-    "duzina": 30,
-    "podeok": 5,
-    "sat": false
+    "telo": "3 kg",
+    "kretanje": true
    },
    "resenje": [
     {
@@ -1755,16 +1844,16 @@
    ],
    "mediji": {
     "vrsta": "fizika",
-    "scena": "kretanje",
-    "tela": [
+    "scena": "sile",
+    "sile": [
      {
-      "e": "⚽",
-      "v": 15
+      "F": 300,
+      "ugao": 0,
+      "o": "F = ?"
      }
     ],
-    "duzina": 30,
-    "podeok": 5,
-    "vektor": true
+    "e": "⚽",
+    "kretanje": true
    },
    "resenje": [
     {
@@ -1908,7 +1997,18 @@
     "$0$ i $2 m/s^{2}$",
     "$1,2 m/s^{2}$ i $1,2 m/s^{2}$"
    ],
-   "mediji": {
+   "resenje": [
+    {
+     "t": "Po Trećem Njutnovom zakonu i devojčica gura dečaka silom iste jačine, $120 N$, u suprotnom smeru."
+    },
+    {
+     "t": "Dečak: $a_{1} = {120 N|40 kg} = 3 m/s^{2}$."
+    },
+    {
+     "t": "Devojčica: $a_{2} = {120 N|60 kg} = 2 m/s^{2}$. Sile su jednake, ali lakši dobija veće ubrzanje."
+    }
+   ],
+   "medijiOdgovora": {
     "vrsta": "fizika",
     "scena": "reakcija",
     "tip": "klizaci",
@@ -1923,18 +2023,7 @@
      "o": "60 kg"
     },
     "brzine": true
-   },
-   "resenje": [
-    {
-     "t": "Po Trećem Njutnovom zakonu i devojčica gura dečaka silom iste jačine, $120 N$, u suprotnom smeru."
-    },
-    {
-     "t": "Dečak: $a_{1} = {120 N|40 kg} = 3 m/s^{2}$."
-    },
-    {
-     "t": "Devojčica: $a_{2} = {120 N|60 kg} = 2 m/s^{2}$. Sile su jednake, ali lakši dobija veće ubrzanje."
-    }
-   ]
+   }
   },
   {
    "lekcija": 3,
@@ -1946,6 +2035,249 @@
     "$2 N$ naviše",
     "$0 N$"
    ],
+   "mediji": {
+    "vrsta": "geo",
+    "t": {
+     "O": [
+      0,
+      0
+     ]
+    },
+    "e": [
+     {
+      "lin": [
+       [
+        -3,
+        0
+       ],
+       [
+        3,
+        0
+       ]
+      ],
+      "b": 4,
+      "debljina": 2.5
+     },
+     {
+      "lin": [
+       [
+        -2.7,
+        0
+       ],
+       [
+        -3,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        -2.1,
+        0
+       ],
+       [
+        -2.4,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        -1.5,
+        0
+       ],
+       [
+        -1.8,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        -0.9,
+        0
+       ],
+       [
+        -1.2,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        -0.3,
+        0
+       ],
+       [
+        -0.6,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        0.3,
+        0
+       ],
+       [
+        0,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        0.9,
+        0
+       ],
+       [
+        0.6,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        1.5,
+        0
+       ],
+       [
+        1.2,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        2.1,
+        0
+       ],
+       [
+        1.8,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        2.7,
+        0
+       ],
+       [
+        2.4,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        -1.2,
+        0
+       ],
+       [
+        1.2,
+        0
+       ],
+       [
+        1.2,
+        1
+       ],
+       [
+        -1.2,
+        1
+       ]
+      ],
+      "zatv": 1,
+      "b": 0,
+      "gusto": 1
+     },
+     {
+      "tx": "📕",
+      "at": [
+       0,
+       0.5
+      ]
+     },
+     {
+      "lin": [
+       [
+        0.6,
+        0
+       ],
+       [
+        0.6,
+        -2
+       ]
+      ],
+      "str": 1,
+      "b": 1,
+      "debljina": 3.5,
+      "o": "Q = 20 N",
+      "oAt": [
+       1.15,
+       -2.45
+      ],
+      "k": 1,
+      "id": "q"
+     },
+     {
+      "lin": [
+       [
+        -0.6,
+        1
+       ],
+       [
+        -0.6,
+        3
+       ]
+      ],
+      "str": 1,
+      "b": 2,
+      "debljina": 3.5,
+      "o": "N = 20 N",
+      "oAt": [
+       -0.05,
+       3.2
+      ],
+      "k": 2,
+      "id": "n"
+     }
+    ],
+    "bezImena": [
+     "O"
+    ],
+    "velicina": 200
+   },
    "resenje": [
     {
      "t": "Knjiga pritiska sto svojom težinom: $Q = m · g = 2 kg · 10 m/s^{2} = 20 N$ naniže.",
@@ -2214,7 +2546,18 @@
     "$3 m/s^{2}$",
     "$0,33 m/s^{2}$"
    ],
-   "mediji": {
+   "resenje": [
+    {
+     "t": "Opruga gura oba kolica silom iste jačine: $F = 2 kg · 3 m/s^{2} = 6 N$."
+    },
+    {
+     "t": "Teža kolica: $a = {6 N|6 kg} = 1 m/s^{2}$."
+    },
+    {
+     "t": "Masa je $3$ puta veća – ubrzanje $3$ puta manje."
+    }
+   ],
+   "medijiOdgovora": {
     "vrsta": "fizika",
     "scena": "reakcija",
     "tip": "klizaci",
@@ -2228,18 +2571,7 @@
      "m": 6,
      "o": "6 kg"
     }
-   },
-   "resenje": [
-    {
-     "t": "Opruga gura oba kolica silom iste jačine: $F = 2 kg · 3 m/s^{2} = 6 N$."
-    },
-    {
-     "t": "Teža kolica: $a = {6 N|6 kg} = 1 m/s^{2}$."
-    },
-    {
-     "t": "Masa je $3$ puta veća – ubrzanje $3$ puta manje."
-    }
-   ]
+   }
   },
   {
    "lekcija": 3,
@@ -2251,6 +2583,289 @@
     "$4 m/s^{2}$",
     "$150 m/s^{2}$"
    ],
+   "mediji": {
+    "vrsta": "geo",
+    "t": {
+     "O": [
+      0,
+      0
+     ]
+    },
+    "e": [
+     {
+      "lin": [
+       [
+        4,
+        0
+       ],
+       [
+        4,
+        4
+       ]
+      ],
+      "b": 4,
+      "debljina": 6
+     },
+     {
+      "lin": [
+       [
+        -4,
+        0
+       ],
+       [
+        4,
+        0
+       ]
+      ],
+      "b": 4,
+      "debljina": 2.5
+     },
+     {
+      "lin": [
+       [
+        -3.7,
+        0
+       ],
+       [
+        -4,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        -3.1,
+        0
+       ],
+       [
+        -3.4,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        -2.5,
+        0
+       ],
+       [
+        -2.8,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        -1.9,
+        0
+       ],
+       [
+        -2.2,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        -1.3,
+        0
+       ],
+       [
+        -1.6,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        -0.7,
+        0
+       ],
+       [
+        -1,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        -0.1,
+        0
+       ],
+       [
+        -0.4,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        0.5,
+        0
+       ],
+       [
+        0.2,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        1.1,
+        0
+       ],
+       [
+        0.8,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        1.7,
+        0
+       ],
+       [
+        1.4,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        2.3,
+        0
+       ],
+       [
+        2,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        2.9,
+        0
+       ],
+       [
+        2.6,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        3.5,
+        0
+       ],
+       [
+        3.2,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "tx": "🛹",
+      "at": [
+       1.6,
+       0.7
+      ],
+      "vel": 30
+     },
+     {
+      "tx": "🧍",
+      "at": [
+       1.6,
+       2.3
+      ],
+      "vel": 46
+     },
+     {
+      "lin": [
+       [
+        2.6,
+        2.6
+       ],
+       [
+        3.9,
+        2.6
+       ]
+      ],
+      "str": 1,
+      "b": 3,
+      "debljina": 3.5,
+      "o": "150 N",
+      "oAt": [
+       4.15,
+       3.05
+      ]
+     },
+     {
+      "lin": [
+       [
+        4,
+        2
+       ],
+       [
+        1.8,
+        2
+       ]
+      ],
+      "str": 1,
+      "b": 1,
+      "debljina": 3.5,
+      "o": "150 N",
+      "oAt": [
+       1.55,
+       2.45
+      ],
+      "k": 1,
+      "id": "n"
+     }
+    ],
+    "bezImena": [
+     "O"
+    ],
+    "velicina": 220
+   },
    "resenje": [
     {
      "t": "Dečak deluje na zid silom $150 N$, a zid na dečaka – istom silom u suprotnom smeru. Ta sila ga pokreće.",
@@ -2734,7 +3349,18 @@
     "$3 kg$",
     "$12 kg$"
    ],
-   "mediji": {
+   "resenje": [
+    {
+     "t": "Kolica kreću iz mirovanja, pa je pređeni put srazmeran ubrzanju ($s = {a t^{2}|2}$): $a_{A} = 2 a_{B}$."
+    },
+    {
+     "t": "Sile su jednake (Treći Njutnov zakon): $m_{A} · a_{A} = m_{B} · a_{B}$."
+    },
+    {
+     "t": "$3 kg · 2a_{B} = m_{B} · a_{B}$ ⇒ $m_{B} = 6 kg$."
+    }
+   ],
+   "medijiOdgovora": {
     "vrsta": "fizika",
     "scena": "reakcija",
     "tip": "klizaci",
@@ -2746,20 +3372,9 @@
     "desno": {
      "e": "🛒",
      "m": 6,
-     "o": "B: ?"
+     "o": "B: 6 kg"
     }
-   },
-   "resenje": [
-    {
-     "t": "Kolica kreću iz mirovanja, pa je pređeni put srazmeran ubrzanju ($s = {a t^{2}|2}$): $a_{A} = 2 a_{B}$."
-    },
-    {
-     "t": "Sile su jednake (Treći Njutnov zakon): $m_{A} · a_{A} = m_{B} · a_{B}$."
-    },
-    {
-     "t": "$3 kg · 2a_{B} = m_{B} · a_{B}$ ⇒ $m_{B} = 6 kg$."
-    }
-   ]
+   }
   },
   {
    "lekcija": 3,
@@ -2775,10 +3390,7 @@
     "vrsta": "fizika",
     "scena": "dizanje",
     "visina": 6,
-    "e": "🧍",
-    "sile": true,
-    "F": "N",
-    "Fg": "Q"
+    "e": "🧍"
    },
    "resenje": [
     {
@@ -3454,6 +4066,206 @@
     "$3 m/s$",
     "$7 m/s$"
    ],
+   "mediji": {
+    "vrsta": "geo",
+    "t": {
+     "O": [
+      0,
+      0
+     ]
+    },
+    "e": [
+     {
+      "mreza": [
+       0,
+       8,
+       0,
+       5
+      ],
+      "podela": [
+       1.333,
+       1
+      ],
+      "brojevi": 0
+     },
+     {
+      "tx": "1",
+      "at": [
+       1.333,
+       -0.38
+      ],
+      "vel": 12
+     },
+     {
+      "tx": "2",
+      "at": [
+       2.667,
+       -0.38
+      ],
+      "vel": 12
+     },
+     {
+      "tx": "3",
+      "at": [
+       4,
+       -0.38
+      ],
+      "vel": 12
+     },
+     {
+      "tx": "4",
+      "at": [
+       5.333,
+       -0.38
+      ],
+      "vel": 12
+     },
+     {
+      "tx": "5",
+      "at": [
+       6.667,
+       -0.38
+      ],
+      "vel": 12
+     },
+     {
+      "tx": "6",
+      "at": [
+       8,
+       -0.38
+      ],
+      "vel": 12
+     },
+     {
+      "tx": "4",
+      "at": [
+       -0.5,
+       1
+      ],
+      "vel": 12
+     },
+     {
+      "tx": "8",
+      "at": [
+       -0.5,
+       2
+      ],
+      "vel": 12
+     },
+     {
+      "tx": "12",
+      "at": [
+       -0.58,
+       3
+      ],
+      "vel": 12
+     },
+     {
+      "tx": "16",
+      "at": [
+       -0.58,
+       4
+      ],
+      "vel": 12
+     },
+     {
+      "tx": "20",
+      "at": [
+       -0.58,
+       5
+      ],
+      "vel": 12
+     },
+     {
+      "tx": "0",
+      "at": [
+       -0.3,
+       -0.38
+      ],
+      "vel": 12
+     },
+     {
+      "lin": [
+       [
+        0,
+        0
+       ],
+       [
+        8.7,
+        0
+       ]
+      ],
+      "str": 1,
+      "b": 5,
+      "debljina": 2
+     },
+     {
+      "lin": [
+       [
+        0,
+        0
+       ],
+       [
+        0,
+        5.7
+       ]
+      ],
+      "str": 1,
+      "b": 5,
+      "debljina": 2
+     },
+     {
+      "tx": "t (s)",
+      "at": [
+       8.75,
+       0.45
+      ],
+      "vel": 13
+     },
+     {
+      "tx": "v (m/s)",
+      "at": [
+       0.95,
+       5.85
+      ],
+      "vel": 13
+     },
+     {
+      "tx": "●",
+      "at": [
+       2.667,
+       1.75
+      ],
+      "b": 1
+     },
+     {
+      "tx": "●",
+      "at": [
+       6.667,
+       4
+      ],
+      "b": 1
+     },
+     {
+      "tx": "7 m/s",
+      "at": [
+       2.933,
+       2.1
+      ]
+     },
+     {
+      "tx": "16 m/s",
+      "at": [
+       6.933,
+       4.35
+      ]
+     }
+    ],
+    "bezImena": [
+     "O"
+    ],
+    "velicina": 300
+   },
    "resenje": [
     {
      "t": "Ubrzanje: $a = {16 m/s − 7 m/s|5 s − 2 s} = {9|3} m/s^{2} = 3 m/s^{2}$.",
@@ -7793,6 +8605,15 @@
     "$16 s$",
     "$2,8 s$"
    ],
+   "mediji": {
+    "vrsta": "fizika",
+    "scena": "pad",
+    "tip": "slobodan",
+    "visina": 80,
+    "brzina": false,
+    "sat": false,
+    "strob": 99
+   },
    "resenje": [
     {
      "t": "Iz $h = {g t^{2}|2}$ sledi $t^{2} = {2h|g}$."
@@ -8658,8 +9479,12 @@
    ],
    "mediji": {
     "vrsta": "fizika",
-    "scena": "orbita",
-    "tip": "njutn"
+    "scena": "pad",
+    "tip": "slobodan",
+    "visina": 30,
+    "brzina": false,
+    "sat": false,
+    "strob": 99
    },
    "resenje": [
     {
@@ -8683,6 +9508,57 @@
     "$10 m$",
     "$45 m$"
    ],
+   "mediji": {
+    "vrsta": "geo",
+    "t": {
+     "O": [
+      0,
+      0
+     ]
+    },
+    "e": [
+     {
+      "tx": "●",
+      "at": [
+       -1,
+       0
+      ],
+      "b": 1,
+      "vel": 30
+     },
+     {
+      "tx": "●",
+      "at": [
+       1,
+       0
+      ],
+      "b": 2,
+      "vel": 30
+     },
+     {
+      "tx": "~prva",
+      "at": [
+       -1,
+       0.9
+      ],
+      "b": 1,
+      "vel": 13
+     },
+     {
+      "tx": "~druga",
+      "at": [
+       1,
+       0.9
+      ],
+      "b": 2,
+      "vel": 13
+     }
+    ],
+    "bezImena": [
+     "O"
+    ],
+    "velicina": 200
+   },
    "resenje": [
     {
      "t": "Prva kuglica tada pada već $3 s$: $h_{1} = {10 · 3^{2}|2} m = 45 m$.",
@@ -10144,22 +11020,265 @@
     "$200 N$"
    ],
    "mediji": {
-    "vrsta": "fizika",
-    "scena": "sile",
-    "sile": [
+    "vrsta": "geo",
+    "t": {
+     "O": [
+      0,
+      0
+     ]
+    },
+    "e": [
      {
-      "F": 80,
-      "ugao": 0,
-      "o": "F"
+      "lin": [
+       [
+        -4,
+        0
+       ],
+       [
+        4,
+        0
+       ]
+      ],
+      "b": 4,
+      "debljina": 2.5
      },
      {
-      "F": 60,
-      "ugao": 180,
-      "o": "Ftr = ?"
+      "lin": [
+       [
+        -3.7,
+        0
+       ],
+       [
+        -4,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        -3.1,
+        0
+       ],
+       [
+        -3.4,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        -2.5,
+        0
+       ],
+       [
+        -2.8,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        -1.9,
+        0
+       ],
+       [
+        -2.2,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        -1.3,
+        0
+       ],
+       [
+        -1.6,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        -0.7,
+        0
+       ],
+       [
+        -1,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        -0.1,
+        0
+       ],
+       [
+        -0.4,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        0.5,
+        0
+       ],
+       [
+        0.2,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        1.1,
+        0
+       ],
+       [
+        0.8,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        1.7,
+        0
+       ],
+       [
+        1.4,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        2.3,
+        0
+       ],
+       [
+        2,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        2.9,
+        0
+       ],
+       [
+        2.6,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        3.5,
+        0
+       ],
+       [
+        3.2,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        -1,
+        0
+       ],
+       [
+        1,
+        0
+       ],
+       [
+        1,
+        1.4
+       ],
+       [
+        -1,
+        1.4
+       ]
+      ],
+      "zatv": 1,
+      "b": 4,
+      "gusto": 1
+     },
+     {
+      "tx": "20 kg",
+      "at": [
+       0,
+       0.7
+      ]
+     },
+     {
+      "lin": [
+       [
+        1,
+        0.7
+       ],
+       [
+        3.4,
+        0.7
+       ]
+      ],
+      "str": 1,
+      "b": 2,
+      "debljina": 3.5,
+      "o": "v",
+      "oAt": [
+       3.65,
+       1.15
+      ]
      }
     ],
-    "telo": "20 kg",
-    "kretanje": true
+    "bezImena": [
+     "O"
+    ],
+    "velicina": 220
    },
    "resenje": [
     {
@@ -10583,11 +11702,6 @@
       "F": 50,
       "ugao": 0,
       "o": "50 N"
-     },
-     {
-      "F": 20,
-      "ugao": 180,
-      "o": "Ftr"
      }
     ],
     "telo": "10 kg"
@@ -10843,6 +11957,205 @@
     "$μ · 300 N$",
     "Zavisi od vrste poda"
    ],
+   "mediji": {
+    "vrsta": "geo",
+    "t": {
+     "O": [
+      0,
+      0
+     ]
+    },
+    "e": [
+     {
+      "lin": [
+       [
+        -3,
+        0
+       ],
+       [
+        3,
+        0
+       ]
+      ],
+      "b": 4,
+      "debljina": 2.5
+     },
+     {
+      "lin": [
+       [
+        -2.7,
+        0
+       ],
+       [
+        -3,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        -2.1,
+        0
+       ],
+       [
+        -2.4,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        -1.5,
+        0
+       ],
+       [
+        -1.8,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        -0.9,
+        0
+       ],
+       [
+        -1.2,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        -0.3,
+        0
+       ],
+       [
+        -0.6,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        0.3,
+        0
+       ],
+       [
+        0,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        0.9,
+        0
+       ],
+       [
+        0.6,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        1.5,
+        0
+       ],
+       [
+        1.2,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        2.1,
+        0
+       ],
+       [
+        1.8,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        2.7,
+        0
+       ],
+       [
+        2.4,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        -1,
+        0
+       ],
+       [
+        1,
+        0
+       ],
+       [
+        1,
+        1.4
+       ],
+       [
+        -1,
+        1.4
+       ]
+      ],
+      "zatv": 1,
+      "b": 4,
+      "gusto": 1
+     },
+     {
+      "tx": "30 kg",
+      "at": [
+       0,
+       0.7
+      ]
+     }
+    ],
+    "bezImena": [
+     "O"
+    ],
+    "velicina": 200
+   },
    "resenje": [
     {
      "t": "Trenje se javlja tek kada nešto pokušava da pokrene telo (ili kad se telo kreće)."
@@ -11574,6 +12887,99 @@
     "$10 N$",
     "$40 N$"
    ],
+   "mediji": {
+    "vrsta": "geo",
+    "t": {
+     "O": [
+      0,
+      0
+     ]
+    },
+    "e": [
+     {
+      "lin": [
+       [
+        -2,
+        4
+       ],
+       [
+        2,
+        4
+       ]
+      ],
+      "b": 4,
+      "debljina": 4
+     },
+     {
+      "lin": [
+       [
+        0,
+        4
+       ],
+       [
+        0,
+        1
+       ]
+      ],
+      "b": 5,
+      "debljina": 2
+     },
+     {
+      "tx": "💡",
+      "at": [
+       0,
+       0.4
+      ],
+      "vel": 40
+     },
+     {
+      "lin": [
+       [
+        0.7,
+        0.3
+       ],
+       [
+        0.7,
+        -1.7
+       ]
+      ],
+      "str": 1,
+      "b": 1,
+      "debljina": 3.5,
+      "o": "Q = 20 N",
+      "oAt": [
+       1.25,
+       -2.15
+      ]
+     },
+     {
+      "lin": [
+       [
+        0.7,
+        1.2
+       ],
+       [
+        0.7,
+        3.2
+       ]
+      ],
+      "str": 1,
+      "b": 2,
+      "debljina": 3.5,
+      "o": "T = 20 N",
+      "oAt": [
+       1.25,
+       3.4
+      ],
+      "k": 1,
+      "id": "n"
+     }
+    ],
+    "bezImena": [
+     "O"
+    ],
+    "velicina": 180
+   },
    "resenje": [
     {
      "t": "Lampa miruje – sile su u ravnoteži: sila kabla naviše jednaka je težini naniže.",
@@ -11689,6 +13095,94 @@
     "$30 N$",
     "$15 N$"
    ],
+   "mediji": {
+    "vrsta": "geo",
+    "t": {
+     "O": [
+      0,
+      0
+     ]
+    },
+    "e": [
+     {
+      "lin": [
+       [
+        -3,
+        5
+       ],
+       [
+        3,
+        5
+       ]
+      ],
+      "b": 4,
+      "debljina": 4
+     },
+     {
+      "lin": [
+       [
+        -1.5,
+        5
+       ],
+       [
+        -1.5,
+        0.6
+       ]
+      ],
+      "b": 5,
+      "debljina": 2
+     },
+     {
+      "lin": [
+       [
+        1.5,
+        5
+       ],
+       [
+        1.5,
+        0.6
+       ]
+      ],
+      "b": 5,
+      "debljina": 2
+     },
+     {
+      "lin": [
+       [
+        -1.8,
+        0.6
+       ],
+       [
+        1.8,
+        0.6
+       ]
+      ],
+      "b": 5,
+      "debljina": 5
+     },
+     {
+      "tx": "🧒",
+      "at": [
+       0,
+       1.4
+      ],
+      "vel": 40
+     },
+     {
+      "tx": "30 kg",
+      "at": [
+       0,
+       -0.5
+      ],
+      "b": 3,
+      "vel": 14
+     }
+    ],
+    "bezImena": [
+     "O"
+    ],
+    "velicina": 200
+   },
    "resenje": [
     {
      "t": "Težina deteta: $Q = 30 kg · 10 m/s^{2} = 300 N$."
@@ -12957,9 +14451,14 @@
    "mediji": {
     "vrsta": "fizika",
     "scena": "tecnost",
-    "tip": "dinamometar",
-    "F1": 12,
-    "F2": 8
+    "tip": "plivanje",
+    "tela": [
+     {
+      "ro": 3000,
+      "o": "1,2 kg",
+      "b": 4
+     }
+    ]
    },
    "resenje": [
     {
@@ -13257,22 +14756,22 @@
      "t": "Potisak ($20 N$) je veći od težine ($15 N$) – rezultanta ($5 N$) je naviše i telo izranja."
     },
     {
-     "t": "Na površini se potopljeni deo smanjuje dok potisak ne postane $15 N$ – tada telo pliva ($3/4$ zapremine pod vodom).",
-     "crtez": {
-      "vrsta": "fizika",
-      "scena": "tecnost",
-      "tip": "plivanje",
-      "tela": [
-       {
-        "ro": 750,
-        "o": "15 N",
-        "b": 2
-       }
-      ],
-      "sile": true
-     }
+     "t": "Na površini se potopljeni deo smanjuje dok potisak ne postane $15 N$ – tada telo pliva ($3/4$ zapremine pod vodom)."
     }
-   ]
+   ],
+   "medijiOdgovora": {
+    "vrsta": "fizika",
+    "scena": "tecnost",
+    "tip": "plivanje",
+    "tela": [
+     {
+      "ro": 750,
+      "o": "15 N",
+      "b": 2
+     }
+    ],
+    "sile": true
+   }
   },
   {
    "lekcija": 13,
@@ -13289,22 +14788,22 @@
      "t": "Telo koje pliva: težina = potisak, tj. $ρ_{t} · V · g = ρ_{v} · V_{pot} · g$."
     },
     {
-     "t": "${V_{pot}|V} = {ρ_{t}|ρ_{v}} = {600|1 000} = 0,6 = 60 %$.",
-     "crtez": {
-      "vrsta": "fizika",
-      "scena": "tecnost",
-      "tip": "plivanje",
-      "tela": [
-       {
-        "ro": 600,
-        "o": "~drvo",
-        "b": 5
-       }
-      ],
-      "sile": true
-     }
+     "t": "${V_{pot}|V} = {ρ_{t}|ρ_{v}} = {600|1 000} = 0,6 = 60 %$."
     }
-   ]
+   ],
+   "medijiOdgovora": {
+    "vrsta": "fizika",
+    "scena": "tecnost",
+    "tip": "plivanje",
+    "tela": [
+     {
+      "ro": 600,
+      "o": "~drvo",
+      "b": 5
+     }
+    ],
+    "sile": true
+   }
   },
   {
    "lekcija": 13,
@@ -13321,22 +14820,22 @@
      "t": "${V_{pot}|V} = {ρ_{led}|ρ_{voda}} = {900|1 000} = 90 %$."
     },
     {
-     "t": "Iznad vode viri samo desetina – otuda izraz „vrh ledenog brega“ (u gušćoj, slanoj morskoj vodi viri malo više).",
-     "crtez": {
-      "vrsta": "fizika",
-      "scena": "tecnost",
-      "tip": "plivanje",
-      "tela": [
-       {
-        "ro": 900,
-        "e": "🧊",
-        "b": 0
-       }
-      ],
-      "sile": true
-     }
+     "t": "Iznad vode viri samo desetina – otuda izraz „vrh ledenog brega“ (u gušćoj, slanoj morskoj vodi viri malo više)."
     }
-   ]
+   ],
+   "medijiOdgovora": {
+    "vrsta": "fizika",
+    "scena": "tecnost",
+    "tip": "plivanje",
+    "tela": [
+     {
+      "ro": 900,
+      "e": "🧊",
+      "b": 0
+     }
+    ],
+    "sile": true
+   }
   },
   {
    "lekcija": 13,
@@ -13380,6 +14879,19 @@
     "$500 kg$",
     "$4 000 kg$"
    ],
+   "mediji": {
+    "vrsta": "fizika",
+    "scena": "tecnost",
+    "tip": "plivanje",
+    "tela": [
+     {
+      "ro": 500,
+      "o": "~splav",
+      "b": 5
+     }
+    ],
+    "sile": true
+   },
    "resenje": [
     {
      "t": "Masa splava: $500 · 0,8 = 400 kg$."
@@ -13425,21 +14937,21 @@
      "t": "Potopljeni deo: ${ρ_{pluta}|ρ_{voda}} = {250|1 000} = {1|4}$ zapremine."
     },
     {
-     "t": "Kocka je uspravna, pa je potopljena četvrtina visine: ${10 cm|4} = 2,5 cm$.",
-     "crtez": {
-      "vrsta": "fizika",
-      "scena": "tecnost",
-      "tip": "plivanje",
-      "tela": [
-       {
-        "ro": 250,
-        "o": "~pluta",
-        "b": 3
-       }
-      ]
-     }
+     "t": "Kocka je uspravna, pa je potopljena četvrtina visine: ${10 cm|4} = 2,5 cm$."
     }
-   ]
+   ],
+   "medijiOdgovora": {
+    "vrsta": "fizika",
+    "scena": "tecnost",
+    "tip": "plivanje",
+    "tela": [
+     {
+      "ro": 250,
+      "o": "~pluta",
+      "b": 3
+     }
+    ]
+   }
   },
   {
    "lekcija": 13,
@@ -13514,19 +15026,6 @@
     "$5 N$",
     "$55 N$"
    ],
-   "mediji": {
-    "vrsta": "fizika",
-    "scena": "tecnost",
-    "tip": "plivanje",
-    "tela": [
-     {
-      "ro": 100,
-      "e": "🏐",
-      "b": 1
-     }
-    ],
-    "sile": true
-   },
    "resenje": [
     {
      "t": "Potisak potopljene lopte: $F_{p} = 1 000 · 10 · 0,005 N = 50 N$."
@@ -13554,23 +15053,7 @@
      "t": "Telo tone ako je gušće od tečnosti, a pliva ako je ređe."
     },
     {
-     "t": "$900 > 800$ – u ulju tone.",
-     "crtez": {
-      "vrsta": "fizika",
-      "scena": "tecnost",
-      "tip": "plivanje",
-      "tela": [
-       {
-        "ro": 900,
-        "o": "900",
-        "b": 3
-       }
-      ],
-      "ro": 800,
-      "tecnost": "~ulje",
-      "boja": 3,
-      "sile": true
-     }
+     "t": "$900 > 800$ – u ulju tone."
     },
     {
      "t": "$900 < 1 000$ – u vodi pliva (pod vodom je $90 %$ tela).",
@@ -13588,7 +15071,23 @@
       "sile": true
      }
     }
-   ]
+   ],
+   "medijiOdgovora": {
+    "vrsta": "fizika",
+    "scena": "tecnost",
+    "tip": "plivanje",
+    "tela": [
+     {
+      "ro": 900,
+      "o": "900",
+      "b": 3
+     }
+    ],
+    "ro": 800,
+    "tecnost": "~ulje",
+    "boja": 3,
+    "sile": true
+   }
   },
   {
    "lekcija": 14,
@@ -14044,18 +15543,12 @@
     "scena": "sile",
     "sile": [
      {
-      "F": 80,
-      "ugao": 0,
-      "o": "F"
-     },
-     {
       "F": 60,
       "ugao": 180,
-      "o": "Ftr"
+      "o": "Ftr = ?"
      }
     ],
-    "telo": "30 kg",
-    "kretanje": true
+    "telo": "30 kg"
    },
    "resenje": [
     {
@@ -14079,6 +15572,303 @@
     "$50 J$",
     "$5 J$"
    ],
+   "mediji": {
+    "vrsta": "geo",
+    "t": {
+     "O": [
+      0,
+      0
+     ]
+    },
+    "e": [
+     {
+      "lin": [
+       [
+        -1,
+        0
+       ],
+       [
+        8,
+        0
+       ]
+      ],
+      "b": 4,
+      "debljina": 2.5
+     },
+     {
+      "lin": [
+       [
+        -0.7,
+        0
+       ],
+       [
+        -1,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        -0.1,
+        0
+       ],
+       [
+        -0.4,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        0.5,
+        0
+       ],
+       [
+        0.2,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        1.1,
+        0
+       ],
+       [
+        0.8,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        1.7,
+        0
+       ],
+       [
+        1.4,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        2.3,
+        0
+       ],
+       [
+        2,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        2.9,
+        0
+       ],
+       [
+        2.6,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        3.5,
+        0
+       ],
+       [
+        3.2,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        4.1,
+        0
+       ],
+       [
+        3.8,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        4.7,
+        0
+       ],
+       [
+        4.4,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        5.3,
+        0
+       ],
+       [
+        5,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        5.9,
+        0
+       ],
+       [
+        5.6,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        6.5,
+        0
+       ],
+       [
+        6.2,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        7.1,
+        0
+       ],
+       [
+        6.8,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        7.7,
+        0
+       ],
+       [
+        7.4,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "tx": "🎒",
+      "at": [
+       0.5,
+       2.2
+      ],
+      "vel": 30
+     },
+     {
+      "tx": "🎒",
+      "at": [
+       6.5,
+       2.2
+      ],
+      "vel": 30,
+      "k": 1
+     },
+     {
+      "lin": [
+       [
+        0.5,
+        2.8
+       ],
+       [
+        0.5,
+        4.4
+       ]
+      ],
+      "str": 1,
+      "b": 2,
+      "debljina": 3.5,
+      "o": "F",
+      "oAt": [
+       1.05,
+       4.6
+      ],
+      "id": "f"
+     },
+     {
+      "lin": [
+       [
+        1.5,
+        1
+       ],
+       [
+        5.5,
+        1
+       ]
+      ],
+      "str": 1,
+      "b": 3,
+      "debljina": 3.5,
+      "o": "s = 10 m",
+      "oAt": [
+       3.5,
+       0.5
+      ]
+     }
+    ],
+    "bezImena": [
+     "O"
+    ],
+    "velicina": 240
+   },
    "resenje": [
     {
      "t": "Sila kojom drži rančić ($50 N$) je usmerena naviše, a pomeranje je vodoravno.",
@@ -14849,8 +16639,8 @@
       "v": 10
      }
     ],
-    "duzina": 20,
-    "podeok": 2,
+    "duzina": 60,
+    "podeok": 10,
     "vektor": true
    },
    "resenje": [
@@ -14881,8 +16671,8 @@
       "v": 20
      }
     ],
-    "duzina": 60,
-    "podeok": 10,
+    "duzina": 120,
+    "podeok": 20,
     "vektor": true
    },
    "resenje": [
@@ -15034,8 +16824,7 @@
     "tela": [
      {
       "e": "🚴",
-      "v": 5,
-      "a": 1.25
+      "v": 5
      }
     ],
     "duzina": 40,
@@ -15167,18 +16956,99 @@
     "$600 N$"
    ],
    "mediji": {
-    "vrsta": "fizika",
-    "scena": "kretanje",
-    "tela": [
+    "vrsta": "geo",
+    "t": {
+     "O": [
+      0,
+      0
+     ]
+    },
+    "e": [
      {
-      "e": "🚗",
-      "v": 20,
-      "a": -5
+      "lin": [
+       [
+        -3,
+        0
+       ],
+       [
+        5,
+        0
+       ]
+      ],
+      "b": 4,
+      "debljina": 2
+     },
+     {
+      "tx": "🚗",
+      "at": [
+       -2,
+       0.8
+      ],
+      "vel": 40
+     },
+     {
+      "lin": [
+       [
+        -1,
+        1.9
+       ],
+       [
+        2,
+        1.9
+       ]
+      ],
+      "str": 1,
+      "b": 1,
+      "debljina": 3.5,
+      "o": "20 m/s",
+      "oAt": [
+       2.25,
+       2.35
+      ]
+     },
+     {
+      "lin": [
+       [
+        0.75,
+        -0.9
+       ],
+       [
+        3.5,
+        -0.9
+       ]
+      ],
+      "str": 1,
+      "b": 3,
+      "debljina": 1.6
+     },
+     {
+      "lin": [
+       [
+        0.75,
+        -0.9
+       ],
+       [
+        -2,
+        -0.9
+       ]
+      ],
+      "str": 1,
+      "b": 3,
+      "debljina": 1.6
+     },
+     {
+      "tx": "put kočenja: 40 m",
+      "at": [
+       0.75,
+       -0.5
+      ],
+      "b": 3
      }
     ],
-    "duzina": 45,
-    "podeok": 5,
-    "vektor": true
+    "bezImena": [
+     "O"
+    ],
+    "velicina": 240
    },
    "resenje": [
     {
@@ -15233,8 +17103,8 @@
       "v": 20
      }
     ],
-    "duzina": 60,
-    "podeok": 10,
+    "duzina": 120,
+    "podeok": 20,
     "vektor": true
    },
    "resenje": [
@@ -15579,6 +17449,244 @@
     "$40 J$",
     "$1 000 J$"
    ],
+   "mediji": {
+    "vrsta": "geo",
+    "t": {
+     "O": [
+      0,
+      0
+     ]
+    },
+    "e": [
+     {
+      "lin": [
+       [
+        -3,
+        0
+       ],
+       [
+        3,
+        0
+       ]
+      ],
+      "b": 4,
+      "debljina": 2.5
+     },
+     {
+      "lin": [
+       [
+        -2.7,
+        0
+       ],
+       [
+        -3,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        -2.1,
+        0
+       ],
+       [
+        -2.4,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        -1.5,
+        0
+       ],
+       [
+        -1.8,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        -0.9,
+        0
+       ],
+       [
+        -1.2,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        -0.3,
+        0
+       ],
+       [
+        -0.6,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        0.3,
+        0
+       ],
+       [
+        0,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        0.9,
+        0
+       ],
+       [
+        0.6,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        1.5,
+        0
+       ],
+       [
+        1.2,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        2.1,
+        0
+       ],
+       [
+        1.8,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        2.7,
+        0
+       ],
+       [
+        2.4,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        -3,
+        0
+       ],
+       [
+        -3,
+        4
+       ],
+       [
+        -1,
+        4
+       ],
+       [
+        -1,
+        0
+       ]
+      ],
+      "zatv": 1,
+      "b": 4,
+      "gusto": 1
+     },
+     {
+      "tx": "🪨",
+      "at": [
+       -2,
+       4.7
+      ],
+      "vel": 30
+     },
+     {
+      "lin": [
+       [
+        0.6,
+        2
+       ],
+       [
+        0.6,
+        4
+       ]
+      ],
+      "str": 1,
+      "b": 3,
+      "debljina": 1.6
+     },
+     {
+      "lin": [
+       [
+        0.6,
+        2
+       ],
+       [
+        0.6,
+        0
+       ]
+      ],
+      "str": 1,
+      "b": 3,
+      "debljina": 1.6
+     },
+     {
+      "tx": "20 m",
+      "at": [
+       1.2,
+       2
+      ],
+      "b": 3
+     }
+    ],
+    "bezImena": [
+     "O"
+    ],
+    "velicina": 200
+   },
    "resenje": [
     {
      "t": "$E_{p} = m g h = 0,5 · 10 · 20 J = 100 J$."
@@ -15617,12 +17725,265 @@
     "$405 J$"
    ],
    "mediji": {
-    "vrsta": "fizika",
-    "scena": "dizanje",
-    "tip": "stepenice",
-    "visina": 9,
-    "stepenika": 9,
-    "e": "🧒"
+    "vrsta": "geo",
+    "t": {
+     "O": [
+      0,
+      0
+     ]
+    },
+    "e": [
+     {
+      "lin": [
+       [
+        -3,
+        0
+       ],
+       [
+        3,
+        0
+       ]
+      ],
+      "b": 4,
+      "debljina": 2.5
+     },
+     {
+      "lin": [
+       [
+        -2.7,
+        0
+       ],
+       [
+        -3,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        -2.1,
+        0
+       ],
+       [
+        -2.4,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        -1.5,
+        0
+       ],
+       [
+        -1.8,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        -0.9,
+        0
+       ],
+       [
+        -1.2,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        -0.3,
+        0
+       ],
+       [
+        -0.6,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        0.3,
+        0
+       ],
+       [
+        0,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        0.9,
+        0
+       ],
+       [
+        0.6,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        1.5,
+        0
+       ],
+       [
+        1.2,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        2.1,
+        0
+       ],
+       [
+        1.8,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        2.7,
+        0
+       ],
+       [
+        2.4,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        -3,
+        0.9
+       ],
+       [
+        -1,
+        0.9
+       ]
+      ],
+      "b": 4,
+      "debljina": 6
+     },
+     {
+      "lin": [
+       [
+        1,
+        3.6
+       ],
+       [
+        3,
+        3.6
+       ]
+      ],
+      "b": 4,
+      "debljina": 6
+     },
+     {
+      "tx": "🧒",
+      "at": [
+       -2,
+       1.5
+      ],
+      "vel": 30
+     },
+     {
+      "tx": "~prvi sprat: 3 m",
+      "at": [
+       -2.6,
+       0.2
+      ],
+      "b": 3,
+      "vel": 13
+     },
+     {
+      "tx": "~četvrti sprat: 12 m",
+      "at": [
+       0.2,
+       4.2
+      ],
+      "b": 3,
+      "vel": 13
+     },
+     {
+      "lin": [
+       [
+        2.6,
+        2.25
+       ],
+       [
+        2.6,
+        3.6
+       ]
+      ],
+      "str": 1,
+      "b": 3,
+      "debljina": 1.6
+     },
+     {
+      "lin": [
+       [
+        2.6,
+        2.25
+       ],
+       [
+        2.6,
+        0.9
+       ]
+      ],
+      "str": 1,
+      "b": 3,
+      "debljina": 1.6
+     },
+     {
+      "tx": "Δh = ?",
+      "at": [
+       3.2,
+       2.2
+      ],
+      "b": 3
+     }
+    ],
+    "bezImena": [
+     "O"
+    ],
+    "velicina": 220
    },
    "resenje": [
     {
@@ -16049,6 +18410,228 @@
     "$60 kJ$",
     "$6 000 kJ$"
    ],
+   "mediji": {
+    "vrsta": "geo",
+    "t": {
+     "O": [
+      0,
+      0
+     ]
+    },
+    "e": [
+     {
+      "lin": [
+       [
+        -3,
+        0
+       ],
+       [
+        3,
+        0
+       ]
+      ],
+      "b": 4,
+      "debljina": 2.5
+     },
+     {
+      "lin": [
+       [
+        -2.7,
+        0
+       ],
+       [
+        -3,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        -2.1,
+        0
+       ],
+       [
+        -2.4,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        -1.5,
+        0
+       ],
+       [
+        -1.8,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        -0.9,
+        0
+       ],
+       [
+        -1.2,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        -0.3,
+        0
+       ],
+       [
+        -0.6,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        0.3,
+        0
+       ],
+       [
+        0,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        0.9,
+        0
+       ],
+       [
+        0.6,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        1.5,
+        0
+       ],
+       [
+        1.2,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        2.1,
+        0
+       ],
+       [
+        1.8,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        2.7,
+        0
+       ],
+       [
+        2.4,
+        -0.3
+       ]
+      ],
+      "b": 4,
+      "debljina": 1
+     },
+     {
+      "lin": [
+       [
+        -2.5,
+        0
+       ],
+       [
+        0.5,
+        3
+       ],
+       [
+        3,
+        0
+       ]
+      ],
+      "zatv": 1,
+      "b": 2,
+      "gusto": 1
+     },
+     {
+      "tx": "🏠",
+      "at": [
+       -1.8,
+       0.5
+      ],
+      "vel": 26
+     },
+     {
+      "tx": "⛰️",
+      "at": [
+       0.5,
+       3.4
+      ],
+      "vel": 26
+     },
+     {
+      "tx": "~dom: 500 m",
+      "at": [
+       -1.9,
+       -0.7
+      ],
+      "b": 3,
+      "vel": 13
+     },
+     {
+      "tx": "~vrh: 1 500 m",
+      "at": [
+       0.4,
+       4.3
+      ],
+      "b": 3,
+      "vel": 13
+     }
+    ],
+    "bezImena": [
+     "O"
+    ],
+    "velicina": 220
+   },
    "resenje": [
     {
      "t": "$Δh = 1 500 m − 500 m = 1 000 m$."
@@ -16587,8 +19170,12 @@
    ],
    "mediji": {
     "vrsta": "fizika",
-    "scena": "energija",
-    "tip": "odskok"
+    "scena": "pad",
+    "tip": "slobodan",
+    "visina": 20,
+    "brzina": false,
+    "sat": false,
+    "strob": 99
    },
    "resenje": [
     {
@@ -16613,8 +19200,7 @@
     "vrsta": "fizika",
     "scena": "klatno",
     "ugao": 50,
-    "energija": true,
-    "brzina": true
+    "energija": true
    },
    "resenje": [
     {
@@ -17688,8 +20274,7 @@
     "vrsta": "fizika",
     "scena": "termometar",
     "skale": [
-     "C",
-     "K"
+     "C"
     ],
     "od": -20,
     "do": 110,
@@ -17725,7 +20310,6 @@
     "vrsta": "fizika",
     "scena": "termometar",
     "skale": [
-     "C",
      "K"
     ],
     "od": -20,
@@ -17803,10 +20387,6 @@
      {
       "c": -23,
       "o": "250 K"
-     },
-     {
-      "c": 37,
-      "o": "310 K"
      }
     ]
    },

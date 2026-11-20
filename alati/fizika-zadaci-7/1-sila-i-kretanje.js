@@ -76,7 +76,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik,
       [K('$72 km/h = {72|3,6} m/s = 20 m/s$.'),
        K('$a = {20 m/s|2 s} = 10 m/s^{2}$.'),
        K('Gepard ubrzava otprilike kao telo koje slobodno pada – ovakvo ubrzanje većina običnih automobila ne postiže.')],
-      S('kretanje', { tela: [{ e: '🐆', v: 0, a: 10, okreni: true }, { e: '🚗', v: 0, a: 3.5 }], duzina: 40, podeok: 5, vektor: true, sat: true }));
+      S('kretanje', { tela: [{ e: '🐆', v: 0, a: 10, okreni: true }], duzina: 60, podeok: 10, vektor: true, sat: true }));
   }
 
   {
@@ -87,7 +87,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik,
        K('Povratak: $t_{2} = {600 m|2 m/s} = 300 s$; zadržavanje $t_{3} = 5 min = 300 s$.'),
        K('Ukupno: put $s = 1 200 m$, vreme $t = 400 s + 300 s + 300 s = 1 000 s$.', ['t']),
        K('$v_{sr} = {1 200 m|1 000 s} = 1,2 m/s$. (Bez zadržavanja bi bilo $1 200 m : 700 s ≈ 1,7 m/s$.)')],
-      null,
+      G([T('🏠', 0.4, 1.4, { vel: 30 }), T('🏪', 6.2, 1.4, { vel: 30 }), F(0.4, 0.4, 5.4, 0, { o: '1,5 m/s', b: 1 }), F(5.8, -0.6, -5.4, 0, { o: '2 m/s', b: 2 }), T('5 min', 6.2, -1.6, { b: 3, vel: 13 }), T('600 m', 3.3, 1.1, { b: 3, vel: 13 })], { velicina: 260 }),
       { crtez: G([...stubovi([['~odlazak', 400, 0], ['~kupovina', 300, 4], ['~povratak', 300, 2]], { jedinica: 's', vis: 3.5, sir: 2, razmak: 0.6 }), T('t = 1 000 s', 4, 4.6, { k: 3, id: 't', b: 3 })], { velicina: 260 }) });
   }
 
@@ -129,7 +129,8 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik,
   Z(1, 'Sila od $15 N$ daje telu ubrzanje $3 m/s^{2}$. Kolika je masa tela?',
     ['$5 kg$', '$45 kg$', '$0,2 kg$', '$12 kg$'],
     [K('Iz $F = m · a$ sledi $m = {F|a}$.'),
-     K('$m = {15 N|3 m/s^{2}} = 5 kg$.')]);
+     K('$m = {15 N|3 m/s^{2}} = 5 kg$.')],
+    S('sile', { sile: [{ F: 15, ugao: 0, o: '15 N' }], telo: 'm = ?', kretanje: true }));
 
   {
     proveri((30 - 10) / 4, 5);
@@ -153,14 +154,14 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik,
     [K('Sila: $F = m_{1} · a_{1} = 2 kg · 6 m/s^{2} = 12 N$.'),
      K('Novo ubrzanje: $a_{2} = {F|m_{2}} = {12 N|3 kg} = 4 m/s^{2}$.'),
      K('Veća masa – manje ubrzanje: masa je $1,5$ put veća, ubrzanje $1,5$ put manje.')],
-    S('kretanje', { tela: [{ v: 0, a: 6, o: '2 kg', b: 0 }, { v: 0, a: 4, o: '3 kg', b: 1 }], duzina: 30, podeok: 5, sat: false }));
+    S('sile', { sile: [{ F: 12, ugao: 0, o: 'F' }], telo: '3 kg', kretanje: true }));
 
   proveri((0.4 * 15) / 0.02, 300);
   Z(3, 'Fudbaler šutira loptu mase $0,4 kg$ koja je mirovala. Udarac traje $0,02 s$, a lopta odleti brzinom $15 m/s$. Kolikom srednjom silom je delovao na loptu?',
     ['$300 N$', '$6 N$', '$30 N$', '$3 000 N$'],
     [K('Ubrzanje lopte za vreme udarca: $a = {15 m/s|0,02 s} = 750 m/s^{2}$.'),
      K('$F = m · a = 0,4 kg · 750 m/s^{2} = 300 N$ – kao da na loptu pritisne teg od $30 kg$, ali samo dve stotinke sekunde.')],
-    S('kretanje', { tela: [{ e: '⚽', v: 15 }], duzina: 30, podeok: 5, vektor: true }));
+    S('sile', { sile: [{ F: 300, ugao: 0, o: 'F = ?' }], e: '⚽', kretanje: true }));
 
   proveri((12 - 3) / 3 * 4, 12);
   Z(3, 'Kolica mase $3 kg$ vučemo silom $12 N$, a sila trenja je $3 N$. Kolika je brzina kolica posle $4 s$ ako su krenula iz mirovanja?',
@@ -192,13 +193,13 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik,
     [K('Po Trećem Njutnovom zakonu i devojčica gura dečaka silom iste jačine, $120 N$, u suprotnom smeru.'),
      K('Dečak: $a_{1} = {120 N|40 kg} = 3 m/s^{2}$.'),
      K('Devojčica: $a_{2} = {120 N|60 kg} = 2 m/s^{2}$. Sile su jednake, ali lakši dobija veće ubrzanje.')],
-    S('reakcija', { tip: 'klizaci', levo: { e: '🧒', m: 40, o: '40 kg' }, desno: { e: '👧', m: 60, o: '60 kg' }, brzine: true }));
+    null, { odgovor: S('reakcija', { tip: 'klizaci', levo: { e: '🧒', m: 40, o: '40 kg' }, desno: { e: '👧', m: 60, o: '60 kg' }, brzine: true }) });
 
   Z(1, 'Knjiga mase $2 kg$ miruje na stolu. Kolikom silom i u kom smeru sto deluje na knjigu? ($g = 10 m/s^{2}$)',
     ['$20 N$ naviše', '$20 N$ naniže', '$2 N$ naviše', '$0 N$'],
     [K('Knjiga pritiska sto svojom težinom: $Q = m · g = 2 kg · 10 m/s^{2} = 20 N$ naniže.', ['q']),
      K('Po Trećem Njutnovom zakonu sto deluje na knjigu silom iste jačine u suprotnom smeru: $N = 20 N$ naviše.', ['n'])],
-    null,
+    G([tlo(-3, 3, 0), telo(-1.2, 0, 2.4, 1, { tx: '📕', b: 0 }), F(0.6, 0, 0, -2, { o: 'Q = 20 N', b: 1, k: 1, id: 'q' }), F(-0.6, 1, 0, 2, { o: 'N = 20 N', b: 2, k: 2, id: 'n' })], { velicina: 200 }),
     { crtez: G([tlo(-3, 3, 0), telo(-1.2, 0, 2.4, 1, { tx: '📕', b: 0 }), F(0.6, 0, 0, -2, { o: 'Q = 20 N', b: 1, k: 1, id: 'q' }), F(-0.6, 1, 0, 2, { o: 'N = 20 N', b: 2, k: 2, id: 'n' })], { velicina: 200 }) });
 
   proveri(2 * 3 / 6, 1);
@@ -207,14 +208,14 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik,
     [K('Opruga gura oba kolica silom iste jačine: $F = 2 kg · 3 m/s^{2} = 6 N$.'),
      K('Teža kolica: $a = {6 N|6 kg} = 1 m/s^{2}$.'),
      K('Masa je $3$ puta veća – ubrzanje $3$ puta manje.')],
-    S('reakcija', { tip: 'klizaci', levo: { e: '🛒', m: 2, o: '2 kg' }, desno: { e: '🛒', m: 6, o: '6 kg' } }));
+    null, { odgovor: S('reakcija', { tip: 'klizaci', levo: { e: '🛒', m: 2, o: '2 kg' }, desno: { e: '🛒', m: 6, o: '6 kg' } }) });
 
   proveri(150 / 75, 2);
   Z(2, 'Dečak mase $75 kg$ (zajedno sa skejtom) odgurne se od zida silom $150 N$. Koliko ubrzanje dobija dok se gura? (Trenje zanemari.)',
     ['$2 m/s^{2}$', '$0$ – zid se ne pomera', '$4 m/s^{2}$', '$150 m/s^{2}$'],
     [K('Dečak deluje na zid silom $150 N$, a zid na dečaka – istom silom u suprotnom smeru. Ta sila ga pokreće.', ['n']),
      K('$a = {F|m} = {150 N|75 kg} = 2 m/s^{2}$.')],
-    null,
+    G([{ lin: [[4, 0], [4, 4]], b: 4, debljina: 6 }, tlo(-4, 4, 0), T('🛹', 1.6, 0.7, { vel: 30 }), T('🧍', 1.6, 2.3, { vel: 46 }), F(2.6, 2.6, 1.3, 0, { o: '150 N', b: 3 }), F(4, 2, -2.2, 0, { o: '150 N', b: 1, k: 1, id: 'n' })], { velicina: 220 }),
     { crtez: G([{ lin: [[4, 0], [4, 4]], b: 4, debljina: 6 }, tlo(-4, 4, 0), T('🛹', 1.6, 0.7, { vel: 30 }), T('🧍', 1.6, 2.3, { vel: 46 }), F(2.6, 2.6, 1.3, 0, { o: '150 N', b: 3 }), F(4, 2, -2.2, 0, { o: '150 N', b: 1, k: 1, id: 'n' })], { velicina: 220 }) });
 
   Z(2, 'Jabuka mase $0,2 kg$ pada sa grane. Kolikom silom jabuka privlači Zemlju? ($g = 10 m/s^{2}$)',
@@ -247,7 +248,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik,
     [K('Kolica kreću iz mirovanja, pa je pređeni put srazmeran ubrzanju ($s = {a t^{2}|2}$): $a_{A} = 2 a_{B}$.'),
      K('Sile su jednake (Treći Njutnov zakon): $m_{A} · a_{A} = m_{B} · a_{B}$.'),
      K('$3 kg · 2a_{B} = m_{B} · a_{B}$ ⇒ $m_{B} = 6 kg$.')],
-    S('reakcija', { tip: 'klizaci', levo: { e: '🛒', m: 3, o: 'A: 3 kg' }, desno: { e: '🛒', m: 6, o: 'B: ?' } }));
+    null, { odgovor: S('reakcija', { tip: 'klizaci', levo: { e: '🛒', m: 3, o: 'A: 3 kg' }, desno: { e: '🛒', m: 6, o: 'B: 6 kg' } }) });
 
   proveri(60 * (10 + 2), 720);
   Z(3, 'Čovek mase $60 kg$ stoji u liftu koji kreće naviše ubrzanjem $2 m/s^{2}$. Kolikom silom čovek pritiska pod lifta? ($g = 10 m/s^{2}$)',
@@ -255,7 +256,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik,
     [K('Na čoveka deluju: sila teže $Q = 600 N$ naniže i sila poda $N$ naviše. Rezultanta daje ubrzanje naviše.'),
      K('$N − Q = m · a$ ⇒ $N = 600 N + 60 kg · 2 m/s^{2} = 720 N$.'),
      K('Po Trećem Njutnovom zakonu čovek pritiska pod istom silom: $720 N$ – vaga u liftu bi pokazala „$72 kg$“.')],
-    S('dizanje', { visina: 6, e: '🧍', sile: true, F: 'N', Fg: 'Q' }));
+    S('dizanje', { visina: 6, e: '🧍' }));
 
   Z(1, 'Kutija pritiska sto silom od $50 N$ naniže. Kojom silom sto deluje na kutiju?',
     ['$50 N$ naviše', '$50 N$ naniže', '$0 N$', '$100 N$ naviše'],
@@ -337,7 +338,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik,
     [K('Ubrzanje: $a = {16 m/s − 7 m/s|5 s − 2 s} = {9|3} m/s^{2} = 3 m/s^{2}$.', ['dt', 'dv']),
      K('Od trenutka $0 s$ do $2 s$ brzina se poveća za $2 s · 3 m/s^{2} = 6 m/s$.'),
      K('$v_{0} = 7 m/s − 6 m/s = 1 m/s$.', ['v0'])],
-    null,
+    (() => { const g = grafik({ xmax: 6, ymax: 20, yk: 4 }); return G([g.e, g.tacka(2, 7, { b: 1 }), g.tacka(5, 16, { b: 1 }), g.tekst('7 m/s', 2.2, 8.4), g.tekst('16 m/s', 5.2, 17.4)], { velicina: 300 }); })(),
     { crtez: (() => { const g = grafik({ xmax: 6, ymax: 20, yk: 4 }); return G([g.e, g.linija([[2, 7], [5, 16]]), g.tacka(2, 7), g.tacka(5, 16), nagib(g, [2, 7], [5, 16], { kdt: 1, kdv: 1 }), g.linija([[0, 1], [2, 7]], { k: 3, id: 'v0', b: 3 }), g.tacka(0, 1, { k: 3, id: 'v0' })], { velicina: 300 }); })() });
 
   // ════════════════ 5. Grafik zavisnosti brzine od vremena ════════════════

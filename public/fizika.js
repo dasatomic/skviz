@@ -221,7 +221,8 @@
     // Kretanje po stazi. tela: [{e:'🚗', v:20, a:0, x0:0, o:'20 m/s', staza:'~led', podloga:'led|pesak|trava|asfalt|sneg'}],
     // faze (umesto v/a – kretanje u delovima): [{t:2, v:90, o:'90 km/h'}, {t:1, v:60}, {t:3, a:-20}] – t trajanje, v brzina na početku
     // dela (ako je nema, nastavlja se), a ubrzanje u tom delu, o natpis tela za vreme tog dela; posle poslednjeg dela telo stoji.
-    // duzina (m), jedinica, podeok, tempo (fizičkih jedinica vremena po s animacije), jedVreme ('s' | 'h' | 'min'), trag (vreme između otisaka), vektor, sat.
+    // duzina (m), jedinica, podeok, natpisi (svaki n-ti podeok sa brojem; 99 = bez brojeva), lenjir: false (bez lenjira – kad se pita put),
+    // tempo (fizičkih jedinica vremena po s animacije), jedVreme ('s' | 'h' | 'min'), trag (vreme između otisaka), vektor, sat.
     kretanje(s, m) {
       const tela = niz(m.tela).slice(0, 4);
       if (!tela.length) tela.push({ e: '🚗', v: 2 });
@@ -262,9 +263,9 @@
         T = Math.max(T, 1);
       }
       const yR = H - 24;
-      lin(s, X0, yR, X1, yR, C.siva, 1.5);
+      if (m.lenjir !== false) lin(s, X0, yR, X1, yR, C.siva, 1.5);
       const pod = br(m.podeok, L / 10), nat = Math.max(1, br(m.natpisi, Math.round(L / pod / 5)));
-      for (let i = 0; i * pod <= L + 1e-9; i++) {
+      for (let i = 0; m.lenjir !== false && i * pod <= L + 1e-9; i++) {
         const x = px(i * pod), velik = i % nat === 0;
         lin(s, x, yR - (velik ? 5 : 3), x, yR + (velik ? 5 : 3), C.siva, 1.5);
         if (velik) tx(s, x, yR + 14, `${bf(i * pod, 2)}${jed ? ' ' + jed : ''}`, { v: 10, b: C.siva });
@@ -673,7 +674,8 @@
     },
 
     // Padanje i hici. tip: 'slobodan' | 'navise' | 'nanize' | 'vakuum' | 'horizontalni' | 'kosi' | 'padobran'.
-    // visina (m), v0 (m/s), uglovi ([15,45,75] za 'kosi'), strob (s između otisaka), brzina (prikaz v), sat.
+    // visina (m), v0 (m/s), uglovi ([15,45,75] za 'kosi'), strob (s između otisaka), brzina (prikaz v), sat,
+    // natpisi: false (lenjir bez brojeva – kad se pita visina); padobran: sile: false (bez Fg i Fo), tekst: false (bez „brzina raste“).
     pad(s, m) {
       const v = m.tip || 'slobodan', g = br(m.g, 10), W = 320, H = 230;
       vel(s, W, H);
@@ -745,16 +747,17 @@
       if (v === 'padobran') {
         lin(s, 8, yTlo, W - 8, yTlo, C.tlo, 3);
         const cov = emo(s, '🪂', 34);
-        const fg = strelica(s, C.crvena, 3), fo = strelica(s, C.plava, 3);
-        tx(s, 250, 30, 'Fg', { v: 13, b: C.crvena }); tx(s, 290, 30, 'Fo', { v: 13, b: C.plava });
-        const tv = tx(s, 20, 16, '', { a: 'start', v: 12, b: C.zuta });
+        const sl = m.sile !== false;
+        const fg = sl ? strelica(s, C.crvena, 3) : null, fo = sl ? strelica(s, C.plava, 3) : null;
+        if (sl) { tx(s, 250, 30, 'Fg', { v: 13, b: C.crvena }); tx(s, 290, 30, 'Fo', { v: 13, b: C.plava }); }
+        const tv = m.tekst !== false ? tx(s, 20, 16, '', { a: 'start', v: 12, b: C.zuta }) : null;
         return {
           trajanje: 7, pauza: 1,
           kadar(t) {
             const vg = 1 - Math.exp(-t / 1.1), y = 30 + 150 * (t / 7);
             poz(cov, 120, y);
-            fg.set(165, y, 165, y + 50); fo.set(175, y, 175, y - 50 * vg * vg);
-            postaviTekst(tv, vg > 0.97 ? '~stalna brzina' : '~brzina raste');
+            if (sl) { fg.set(165, y, 165, y + 50); fo.set(175, y, 175, y - 50 * vg * vg); }
+            if (tv) postaviTekst(tv, vg > 0.97 ? '~stalna brzina' : '~brzina raste');
           },
         };
       }
@@ -768,7 +771,7 @@
       const xr = 64;
       lin(s, xr, yTlo, xr, yTlo - hm * sc, C.siva, 1.5);
       const kor = [1, 2, 5, 10, 20, 50, 100].find((k) => hm / k <= 5) || 200;
-      for (let i = 0; i * kor <= hm + 1e-9; i++) { const y = v === 'navise' ? yTlo - i * kor * sc : yTlo - hm * sc + i * kor * sc; lin(s, xr - 4, y, xr + 4, y, C.siva, 1.5); tx(s, xr - 8, y, `${i * kor} m`, { a: 'end', v: 10, b: C.siva }); }
+      for (let i = 0; i * kor <= hm + 1e-9; i++) { const y = v === 'navise' ? yTlo - i * kor * sc : yTlo - hm * sc + i * kor * sc; lin(s, xr - 4, y, xr + 4, y, C.siva, 1.5); if (m.natpisi !== false) tx(s, xr - 8, y, `${i * kor} m`, { a: 'end', v: 10, b: C.siva }); }
       if (v !== 'navise') el(s, 'rect', { x: X - 52, y: yTlo - hm * sc - 1, width: 40, height: 6, fill: C.tamna });
       const tragovi = el(s, 'g');
       const lopta = kr(s, X, 0, 8, { fill: C.narandz, stroke: C.bela, 'stroke-width': 1.5 });
@@ -813,7 +816,9 @@
       const horiz = sile.every((f) => Math.abs(Math.sin(f.u * RAD)) < 0.01);
       const pod = m.podloga !== false && horiz;
       const sc = (horiz ? 100 : 80) / Math.max(Fmax, m.rezultanta ? R : 0);
-      const cx = horiz ? 160 : 130, cy = pod ? 118 : 110, a = 22;
+      // telo koje se kreće počinje dalje od ivice ka kojoj ide, da strelice ne izađu iz kadra
+      const kr_ = m.kretanje && R > 1e-6 ? Math.sign(rx) : 0;
+      const cx = horiz ? 160 - kr_ * 45 : 130 - kr_ * 20, cy = pod ? 118 : 110, a = 22;
       if (pod) lin(s, 6, cy + a + 1, W - 6, cy + a + 1, C.tlo, 3);
       const svet = el(s, 'g');
       const telo = el(svet, 'g', { transform: `translate(${cx} ${cy})` });
@@ -868,13 +873,13 @@
             }
           }
           if (T3) {
-            const tt = Math.max(0, t - T2), mx = ogr(0.5 * 30 * tt * tt, 0, horiz ? 110 : 60);
+            const tt = Math.max(0, t - T2), mx = ogr(0.5 * 30 * tt * tt, 0, horiz ? 70 : 60);
             svet.setAttribute('transform', `translate(${f2((rx / R) * mx)} ${f2((-ry / R) * mx)})`);
           } else svet.removeAttribute('transform');
         },
       };
     },
-    // Akcija i reakcija. tip: 'klizaci' (levo/desno: {e, m, o}) | 'raketa' | 'balon'.
+    // Akcija i reakcija. tip: 'klizaci' (levo/desno: {e, m, o}; strelice: false – bez strelica brzina, sile: false – bez strelica sila) | 'raketa' | 'balon'.
     reakcija(s, m) {
       const W = 320, H = 190, v = m.tip || 'klizaci';
       vel(s, W, H);
@@ -925,11 +930,11 @@
           const xl = 140 - vlv * tt * 0.9, xd = 180 + vdv * tt * 0.9;
           poz(gl, xl, 122, true); poz(gd, xd, 116);
           at(nl, { x: xl }); at(nd, { x: xd });
-          const pr = t > 0.5 && t < 1.4;
+          const pr = t > 0.5 && t < 1.4 && m.sile !== false;
           fl.g.style.display = fd.g.style.display = pr ? '' : 'none';
           if (pr) { fl.set(156, 70, 106, 70); fd.set(164, 70, 214, 70); }
-          if (t > 1.4) { vl.set(xl, 82, xl - vlv * 0.9, 82); vd.set(xd, 82, xd + vdv * 0.9, 82); } else { vl.g.style.display = vd.g.style.display = 'none'; }
-          if (vNat) { postaviTekst(vNat[0], t > 1.4 ? 'v₁' : ''); postaviTekst(vNat[1], t > 1.4 ? 'v₂' : ''); at(vNat[0], { x: xl - vlv * 0.45, y: 70 }); at(vNat[1], { x: xd + vdv * 0.45, y: 70 }); }
+          if (t > 1.4 && m.strelice !== false) { vl.set(xl, 82, xl - vlv * 0.9, 82); vd.set(xd, 82, xd + vdv * 0.9, 82); } else { vl.g.style.display = vd.g.style.display = 'none'; }
+          if (vNat && m.strelice !== false) { postaviTekst(vNat[0], t > 1.4 ? 'v₁' : ''); postaviTekst(vNat[1], t > 1.4 ? 'v₂' : ''); at(vNat[0], { x: xl - vlv * 0.45, y: 70 }); at(vNat[1], { x: xd + vdv * 0.45, y: 70 }); }
           void vL;
         },
       };
@@ -1335,7 +1340,7 @@
       };
     },
 
-    // Ravno ogledalo. tip 'odbijanje' (ugao, menja: ugao se menja, oznake) | 'lik' (o1, o2: rastojanja) | 'difuzno' | 'periskop'.
+    // Ravno ogledalo. tip 'odbijanje' (ugao, menja: ugao se menja, oznake, uglovi: false – bez α i β, samoUpadni: true – zrak staje na ogledalu) | 'lik' (o1, o2: rastojanja) | 'difuzno' | 'periskop'.
     ogledalo(s, m) {
       const W = 320, H = 200, v = m.tip || 'odbijanje';
       vel(s, W, H);
@@ -1390,8 +1395,8 @@
           const u = m.menja ? 45 + 28 * Math.sin((t / 10) * 2 * Math.PI) : u0;
           const p1 = [160 - D * Math.sin(u * RAD), 160 - D * Math.cos(u * RAD)], p2 = [160 + D * Math.sin(u * RAD), 160 - D * Math.cos(u * RAD)];
           if (m.menja || !zr) { z.e.remove(); zr = zrak(s, [p1, [160, 160], p2], { b: C.zuta, w: 2.6 }); s.insertBefore(zr.e, g); z.e = zr.e; }
-          zr.set(m.menja ? 1 : t / 1.6);
-          const vid = m.menja || t > 1.7;
+          zr.set(m.samoUpadni ? Math.min(0.5, t / 1.6) : m.menja ? 1 : t / 1.6);
+          const vid = (m.menja || t > 1.7) && m.uglovi !== false && !m.samoUpadni;
           g.style.display = vid ? '' : 'none';
           l1.setAttribute('d', luk(160, 160, 34, -90 - u, -90));
           l2.setAttribute('d', luk(160, 160, 40, -90, -90 + u));
@@ -1403,7 +1408,7 @@
     },
 
     // Sferno ogledalo. tip 'konkavno' | 'konveksno', predmet: rastojanje u žižnim daljinama (npr. 3, 1.5, 0.5)
-    // ili snop: true (paralelni zraci), lik (prikaži lik, podrazumevano da), oznake (F, C).
+    // ili snop: true (paralelni zraci), lik (prikaži lik, podrazumevano da), oznake (F, C), zraci: false (bez zraka).
     sferno(s, m) {
       const W = 320, H = 200, konv = m.tip === 'konveksno';
       vel(s, W, H);
@@ -1449,6 +1454,7 @@
       const r2 = dalje(M, A, xo, A + h, 6);
       zraci.push({ z: zrak(s, [[xo, y0], [M, A], r2], { b: C.narandz }), t0: 0.5 });
       if (Number.isFinite(q) && q < 0) zraci.push({ z: zrak(s, [[M, A], [xi, A - hi]], { b: C.narandz, isp: true, op: 0.55 }), t0: 1.9 }, { z: zrak(s, [[M, y0], [xi, A - hi]], { b: C.zuta, isp: true, op: 0.55 }), t0: 1.9 });
+      if (m.zraci === false) { zraci.forEach((o) => o.z.e.remove()); zraci.length = 0; }
       const lik = Number.isFinite(q) && xi > 4 && xi < W - 4 && m.lik !== false ? strelica(s, C.roze, 3) : null;
       if (lik) { lik.set(xi, A, xi, A - hi); if (q < 0) lik.g.querySelector('line').setAttribute('stroke-dasharray', '5 4'); }
       return {
@@ -1460,7 +1466,7 @@
       };
     },
 
-    // Sočivo. tip 'sabirno' | 'rasipno', predmet (u žižnim daljinama) ili snop: true, lik, oznake.
+    // Sočivo. tip 'sabirno' | 'rasipno', predmet (u žižnim daljinama) ili snop: true, lik, oznake, zraci: false (bez zraka – samo sočivo, predmet i žiže).
     socivo(s, m) {
       const W = 320, H = 200, ras = m.tip === 'rasipno';
       vel(s, W, H);
@@ -1486,6 +1492,7 @@
             if (h) zraci.push({ z: zrak(s, [[Lx, A + h], [Lx - f, A]], { b: C.zuta, isp: true, op: 0.55 }), t0: 1.4 });
           }
         }
+        if (m.zraci === false) { zraci.forEach((o) => o.z.e.remove()); zraci.length = 0; }
         return { trajanje: 3, pauza: 2, kadar(t) { zraci.forEach((o) => o.z.set((t - o.t0) / 1.5)); } };
       }
       const h = 38, xo = Lx - p * f, y0 = A - h;
@@ -1500,6 +1507,7 @@
         zraci.push({ z: zrak(s, [[Lx, y0], [xi, yi]], { b: C.zuta, isp: true, op: 0.55 }), t0: 1.9 });
         zraci.push({ z: zrak(s, [[Lx, A], [xi, yi]], { b: C.narandz, isp: true, op: 0.55 }), t0: 1.9 });
       }
+      if (m.zraci === false) { zraci.forEach((o) => o.z.e.remove()); zraci.length = 0; }
       const lik = Number.isFinite(q) && xi > 4 && xi < W - 4 && m.lik !== false ? strelica(s, C.roze, 3) : null;
       if (lik) { lik.set(xi, A, xi, yi); if (q < 0) lik.g.querySelector('line').setAttribute('stroke-dasharray', '5 4'); }
       return {
@@ -1512,7 +1520,8 @@
     },
 
     // Prelamanje svetlosti. gore/dole: 'vazduh' | 'voda' | 'staklo' | 'dijamant', ugao (upadni, °),
-    // iz: 'gore' | 'dole' (odakle dolazi zrak), menja (ugao se menja – vidi se i totalna refleksija), uglovi (α, β).
+    // iz: 'gore' | 'dole' (odakle dolazi zrak), menja (ugao se menja – vidi se i totalna refleksija), uglovi (α, β; false – bez njih),
+    // normala: false (bez normale), samoUpadni: true (samo upadni zrak – kad se pita kuda će se zrak prelomiti).
     prelamanje(s, m) {
       const W = 320, H = 200;
       vel(s, W, H);
@@ -1525,7 +1534,7 @@
       el(s, 'rect', { x: 0, y: yG, width: W, height: H - yG, fill: g2 === 'vazduh' ? 'transparent' : 'rgba(46,134,222,.35)' });
       if (g1 !== 'vazduh') el(s, 'rect', { x: 0, y: 0, width: W, height: yG, fill: 'rgba(46,134,222,.35)' });
       tx(s, 10, 14, IME[g1], { a: 'start', v: 11, b: C.siva }); tx(s, 10, H - 12, IME[g2], { a: 'start', v: 11, b: C.siva });
-      lin(s, X, 12, X, H - 12, C.siva, 1.2, true);
+      if (m.normala !== false) lin(s, X, 12, X, H - 12, C.siva, 1.2, true);
       const ul = zrak(s, [[0, 0], [X, yG]], { b: C.zuta, w: 2.6 }), izl = zrak(s, [[X, yG], [0, 0]], { b: C.zuta, w: 2.6 }), odb = zrak(s, [[X, yG], [0, 0]], { b: C.zuta, w: 2 });
       const g = el(s, 'g');
       const l1 = put(g, '', { stroke: C.crvena, 'stroke-width': 2 }), l2 = put(g, '', { stroke: C.zelena, 'stroke-width': 2 });
@@ -1550,8 +1559,9 @@
             Z = [zameni(Z[0], [p0, [X, yG]], { b: C.zuta, w: 2.6 }), zameni(Z[1], [[X, yG], p1], { b: C.zuta, w: 2.6 }), zameni(Z[2], [[X, yG], p2], { b: C.zuta, w: totalna ? 2.6 : 1.4, op: totalna ? 1 : 0.35 })];
           }
           const tt = m.menja ? 9 : t;
-          Z[0].set(tt / 1.2); Z[1].set(totalna ? 0 : (tt - 1.2) / 1.2); Z[2].set((tt - 1.2) / 1.2);
-          g.style.display = tt > 2.4 && m.uglovi !== false ? '' : 'none';
+          const su = m.samoUpadni ? 0 : 1;
+          Z[0].set(tt / 1.2); Z[1].set(totalna ? 0 : su * (tt - 1.2) / 1.2); Z[2].set(su * (tt - 1.2) / 1.2);
+          g.style.display = tt > 2.4 && m.uglovi !== false && su ? '' : 'none';
           const a0 = odozdo ? 90 : -90;
           l1.setAttribute('d', odozdo ? luk(X, yG, 30, 90, 90 + u) : luk(X, yG, 30, -90 - u, -90));
           l2.setAttribute('d', totalna ? '' : odozdo ? luk(X, yG, 36, -90, -90 + b) : luk(X, yG, 36, 90 - b, 90));
@@ -1559,7 +1569,7 @@
           at(t2, { x: X + 50 * Math.sin((b / 2) * RAD), y: yG - sy * 50 * Math.cos((b / 2) * RAD) });
           t2.style.display = totalna ? 'none' : '';
           if (m.menja) { postaviTekst(t1, `${Math.round(u)}°`); postaviTekst(t2, `${Math.round(b)}°`); }
-          postaviTekst(tot, totalna && m.oznake !== false ? '~totalna refleksija' : '');
+          postaviTekst(tot, totalna && su && m.oznake !== false ? '~totalna refleksija' : '');
           void a0;
         },
       };
@@ -1933,8 +1943,8 @@
       };
     },
 
-    // Naelektrisanja. tip 'kuglice' (znaci: '+-' | '++' | '--'; dve kuglice na koncu) | 'polje' (znak: '+' | '−', ili dipol: true) |
-    // 'elektroskop'.
+    // Naelektrisanja. tip 'kuglice' (znaci: '+-' | '++' | '--'; dve kuglice na koncu; staticno: true – vise mirno, bez strelica sila) |
+    // 'polje' (znak: '+' | '−', ili dipol: true; strelice: false – linije bez smera) | 'elektroskop' (neutralan: true – bez štapa, listići skupljeni).
     naelektrisanje(s, m) {
       const W = 320, H = 200, v = m.tip || 'kuglice';
       vel(s, W, H);
@@ -1947,7 +1957,7 @@
         for (let i = 0; i < 16; i++) { const u = ((i + 0.5) / 16) * 2 * Math.PI; st.push([izv[0] + 5 * Math.cos(u), izv[1] + 5 * Math.sin(u), dip ? 1 : znak]); }
         const linije = linijePolja(nab, st, [-10, -10, W + 10, H + 10]);
         const g = el(s, 'g');
-        const e = linije.map((p) => { const d = znak < 0 && !dip ? [...p].reverse() : p; const x = put(g, putanja(d), { stroke: C.ljub, 'stroke-width': 1.6, 'stroke-dasharray': '6 5' }); smerNaLiniji(g, d, C.ljub, dip ? 0.5 : 0.55); return x; });
+        const e = linije.map((p) => { const d = znak < 0 && !dip ? [...p].reverse() : p; const x = put(g, putanja(d), { stroke: C.ljub, 'stroke-width': 1.6, 'stroke-dasharray': '6 5' }); if (m.strelice !== false) smerNaLiniji(g, d, C.ljub, dip ? 0.5 : 0.55); return x; });
         nab.forEach(([x, y, q]) => poz(kuglica(s, q > 0 ? '+' : '−', 15), x, y));
         return { trajanje: Infinity, kadar(t) { e.forEach((x) => x.setAttribute('stroke-dashoffset', f2(-t * 14))); } };
       }
@@ -1963,7 +1973,8 @@
         return {
           trajanje: 5, pauza: 0.5,
           kadar(t) {
-            const u = glatko(t / 1.8) * (t < 3.6 ? 1 : 1 - glatko((t - 3.6) / 1.2));
+            const u = m.neutralan ? 0 : glatko(t / 1.8) * (t < 3.6 ? 1 : 1 - glatko((t - 3.6) / 1.2));
+            stap.style.display = m.neutralan ? 'none' : '';
             stap.setAttribute('transform', `translate(${f2(290 - 110 * u)} ${f2(20 + 10 * (1 - u))}) rotate(-12)`);
             const a = 28 * u;
             at(l1, { x2: 160 - 40 * Math.sin(a * RAD), y2: 130 + 40 * Math.cos(a * RAD) }); at(l2, { x2: 160 + 40 * Math.sin(a * RAD), y2: 130 + 40 * Math.cos(a * RAD) });
@@ -1981,7 +1992,7 @@
       return {
         trajanje: 3, pauza: 1.2,
         kadar(t) {
-          const u = glatko((t - 0.4) / 1.4) * (privl ? 6 : 14);
+          const u = m.staticno ? 0 : glatko((t - 0.4) / 1.4) * (privl ? 6 : 14);
           const L = 134;
           const p1 = [124 + (privl ? 1 : -1) * L * Math.sin(u * RAD), 16 + L * Math.cos(u * RAD)];
           const p2 = [196 - (privl ? 1 : -1) * L * Math.sin(u * RAD), 16 + L * Math.cos(u * RAD)];
@@ -1989,7 +2000,7 @@
           poz(k1, p1[0], p1[1]); poz(k2, p2[0], p2[1]);
           const s1 = privl ? 1 : -1;
           f1.set(p1[0], p1[1] - 26, p1[0] + s1 * 17, p1[1] - 26); f2s.set(p2[0], p2[1] - 26, p2[0] - s1 * 17, p2[1] - 26);
-          f1.g.style.display = f2s.g.style.display = t > 0.4 ? '' : 'none';
+          f1.g.style.display = f2s.g.style.display = t > 0.4 && !m.staticno ? '' : 'none';
         },
       };
     },
@@ -2132,10 +2143,11 @@
     },
 
     // Mehanička energija. tip 'staza' (kuglica u žlebu; trenje: true – zaustavlja se) | 'odskok' (lopta odskače sve niže).
+    // trake: false – bez traka Ep/Ek/Q (kad se pita šta se dešava sa energijom).
     energija(s, m) {
       const W = 320, H = 210, v = m.tip || 'staza';
       vel(s, W, H);
-      const tr = trake(s, 252, H - 26, 150, [{ o: 'Ep', b: C.plava }, { o: 'Ek', b: C.crvena }, ...(m.trenje || v === 'odskok' ? [{ o: 'Q', b: C.narandz }] : [])]);
+      const tr = m.trake === false ? { set() {} } : trake(s, 252, H - 26, 150, [{ o: 'Ep', b: C.plava }, { o: 'Ek', b: C.crvena }, ...(m.trenje || v === 'odskok' ? [{ o: 'Q', b: C.narandz }] : [])]);
       if (v === 'odskok') {
         lin(s, 10, 186, 236, 186, C.tlo, 3);
         const lopta = kr(s, 120, 0, 10, { fill: C.narandz });
@@ -2181,7 +2193,7 @@
       };
     },
 
-    // Termometar sa dve skale. skale: ['C','K'] | ['C','F'], od, do (°C), tacke: [{c:0, o:'~led se topi'}], temp (zaustavi na vrednosti).
+    // Termometar sa dve skale. skale: ['C','K'] | ['C','F'] | ['K'], od, do (uvek u °C, i kad je skala samo K: od -73 do 127 = 200–400 K), tacke: [{c:0, o:'~led se topi'}], temp (zaustavi na vrednosti).
     termometar(s, m) {
       const W = 320, H = 220;
       vel(s, W, H);
@@ -2371,7 +2383,7 @@
     },
 
     // Kalorimetar (količina toplote). tip 'grejanje': posuda (m: natpis mase, tecnost, e: emodži umesto vode – npr. '🧱'),
-    // t1 → t2 (°C), Q (natpis uz traku energije), sat: natpis vremena (npr. '5 min'), skrij: true (konačna temperatura je „?“).
+    // t1 → t2 (°C), Q (natpis uz traku energije), trake: false (bez trake Q), sat: natpis vremena (npr. '5 min'), skrij: true (konačna temperatura je „?“).
     // tip 'mesanje': tela [{m:'1 kg', t:80, o:'~topla'}, {m:'3 kg', t:20, o:'~hladna'}] (m – i broj za nivo vode: mb;
     // c – specifični toplotni kapacitet, ako tela nisu od iste supstance),
     // tk (temperatura smeše), skrij: true (temperatura smeše je „?“; telo sa skrij: true ima nepoznatu početnu temperaturu).
@@ -2440,7 +2452,7 @@
       const plamen = t2 < t1 ? [] : [110, 145, 180].map(() => emo(s, '🔥', 20));
       if (t2 < t1) [110, 145, 180].forEach((x, i) => poz(emo(s, '💨', 18), x, 52 - (i % 2) * 6));
       const tm = term(236, 50, 110, od, dok);
-      const tr = trake(s, 286, 190, 150, [{ o: 'Q', b: C.narandz }]);
+      const tr = m.trake === false ? { set() {} } : trake(s, 286, 190, 150, [{ o: 'Q', b: C.narandz }]);
       const nq = m.Q ? tx(s, 293, 24, m.Q, { v: 12, b: C.narandz }) : null;
       const sat = m.sat ? tx(s, 10, 14, '', { a: 'start', v: 12, b: C.zuta }) : null;
       return {

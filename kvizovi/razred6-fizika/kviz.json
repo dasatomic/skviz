@@ -117,7 +117,11 @@
         "Istoriju naroda, gradova i velikih ratova"
       ],
       "zanimljivost": "Fizika proučava mehaničke, toplotne, električne, magnetne i svetlosne pojave – od zvezda do najsitnijih čestica.",
-      "rec": "fizika"
+      "rec": "fizika",
+      "medijiOdgovora": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 400 250' xmlns='http://www.w3.org/2000/svg' font-family='sans-serif'><rect x='110' y='8' width='180' height='40' rx='6' fill='#ffeaa7' /><text x='200' y='35' fill='#0b1826' font-size='20' text-anchor='middle'>Fizika</text><rect x='20' y='70' width='180' height='42' rx='6' fill='#74b9ff' /><text x='110' y='97' fill='#0b1826' font-size='15' text-anchor='middle'>Mehanika</text><rect x='215' y='70' width='180' height='42' rx='6' fill='#74b9ff' /><text x='305' y='97' fill='#0b1826' font-size='15' text-anchor='middle'>Toplota</text><rect x='20' y='130' width='180' height='42' rx='6' fill='#74b9ff' /><text x='110' y='157' fill='#0b1826' font-size='15' text-anchor='middle'>Optika</text><rect x='215' y='130' width='180' height='42' rx='6' fill='#74b9ff' /><text x='305' y='157' fill='#0b1826' font-size='15' text-anchor='middle'>Akustika</text><rect x='20' y='190' width='180' height='42' rx='6' fill='#74b9ff' /><text x='110' y='217' fill='#0b1826' font-size='15' text-anchor='middle'>Struja i magnetizam</text><rect x='215' y='190' width='180' height='42' rx='6' fill='#74b9ff' /><text x='305' y='217' fill='#0b1826' font-size='15' text-anchor='middle'>Atomi i jezgro</text></svg>"
+      }
     },
     {
       "lekcija": 1,
@@ -143,7 +147,13 @@
         "Sagorevanje drveta u peći, pri čemu nastaju pepeo, dim i toplota sobe"
       ],
       "zanimljivost": "Kada se led otopi, ostaje voda – samo je promenila stanje, zato je to fizička, a ne hemijska promena.",
-      "rec": "pojava"
+      "rec": "pojava",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "cestice",
+        "stanje": "cvrsto",
+        "tip": "zagrevanje"
+      }
     },
     {
       "lekcija": 1,
@@ -169,7 +179,11 @@
         "Arheologija"
       ],
       "zanimljivost": "Astrofizika je spoj astronomije i fizike – zahvaljujući njoj znamo od čega su zvezde, iako ih nikada nismo dodirnuli.",
-      "rec": "astronomija"
+      "rec": "astronomija",
+      "mediji": {
+        "vrsta": "planeta",
+        "ime": "saturn"
+      }
     },
     {
       "lekcija": 1,
@@ -182,7 +196,22 @@
         "Elektrostatika"
       ],
       "zanimljivost": "Prvi zakon termodinamike kaže da se energija ne stvara ni ne nestaje, već samo prelazi iz jednog oblika u drugi.",
-      "rec": "toplota"
+      "rec": "toplota",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "toplota",
+        "tip": "provodjenje",
+        "sipke": [
+          {
+            "o": "~metal",
+            "k": 1
+          },
+          {
+            "o": "~drvo",
+            "k": 0.1
+          }
+        ]
+      }
     },
     {
       "lekcija": 1,
@@ -195,7 +224,19 @@
         "Termodinamika"
       ],
       "zanimljivost": "Reč mehanika potiče od grčke reči za „mašinu, napravu“.",
-      "rec": "mehanika"
+      "rec": "mehanika",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "kretanje",
+        "duzina": 100,
+        "tela": [
+          {
+            "e": "🚗",
+            "v": 15
+          }
+        ],
+        "trag": 1
+      }
     },
     {
       "lekcija": 1,
@@ -208,7 +249,13 @@
         "Elektrostatika"
       ],
       "zanimljivost": "Svetlost od Sunca do Zemlje putuje oko 8 minuta i 20 sekundi.",
-      "rec": "optika"
+      "rec": "optika",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "ogledalo",
+        "tip": "odbijanje",
+        "ugao": 35
+      }
     },
     {
       "lekcija": 1,
@@ -221,7 +268,12 @@
         "Nuklearna fizika"
       ],
       "zanimljivost": "Zvuk u vazduhu prelazi oko 340 metara u sekundi – zato grom čujemo posle munje.",
-      "rec": "akustika"
+      "rec": "akustika",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "talas",
+        "tip": "zvuk"
+      }
     },
     {
       "lekcija": 1,
@@ -247,7 +299,11 @@
         "Optika"
       ],
       "zanimljivost": "Seizmolozi po talasima zemljotresa „vide“ kroz Zemlju i tako su otkrili da ima tečno spoljašnje jezgro.",
-      "rec": "geofizika"
+      "rec": "geofizika",
+      "mediji": {
+        "vrsta": "planeta",
+        "ime": "zemlja"
+      }
     },
     {
       "lekcija": 1,
@@ -260,7 +316,11 @@
         "Sagorevanje papira"
       ],
       "zanimljivost": "Duga nastaje kada se sunčeva svetlost prelama i odbija u kapima kiše.",
-      "rec": "duga"
+      "rec": "duga",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "prizma"
+      }
     },
     {
       "lekcija": 1,
@@ -306,12 +366,16 @@
         "Albert Ajnštajn"
       ],
       "zanimljivost": "Po Tesli je nazvana jedinica za magnetnu indukciju (jačinu magnetnog polja) – tesla (T).",
-      "rec": "tesla"
+      "rec": "tesla",
+      "medijiOdgovora": {
+        "vrsta": "formula",
+        "tekst": "1 T = {N|A · m}"
+      }
     },
     {
       "lekcija": 2,
       "tezina": 1,
-      "pitanje": "Rad frižidera, mikrotalasne i televizora zasniva se na zakonima koje nauke?",
+      "pitanje": "Na zakonima koje nauke se zasniva rad frižidera, mikrotalasne pećnice i televizora?",
       "odgovori": [
         "Fizika",
         "Hemija",
@@ -319,7 +383,7 @@
         "Geografija"
       ],
       "zanimljivost": "Frižider radi zato što tečnost pri isparavanju uzima toplotu iz unutrašnjosti – to je fizika toplote.",
-      "rec": "tehnika"
+      "rec": "frižider"
     },
     {
       "lekcija": 2,
@@ -332,7 +396,11 @@
         "Mikroskop"
       ],
       "zanimljivost": "Rendgensko zračenje je otkrio Vilhelm Rendgen 1895, a prva rendgenska slika bila je šaka njegove žene sa prstenom.",
-      "rec": "rendgen"
+      "rec": "rendgen",
+      "medijiOdgovora": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 400 250' xmlns='http://www.w3.org/2000/svg' font-family='sans-serif'><rect x='60' y='50' width='280' height='150' rx='6' fill='#3b5068' rx='70'/><rect x='120' y='95' width='22' height='80' rx='6' fill='#ffffff' rx='10'/><rect x='170' y='95' width='22' height='80' rx='6' fill='#ffffff' rx='10'/><rect x='220' y='95' width='22' height='80' rx='6' fill='#ffffff' rx='10'/><rect x='270' y='95' width='22' height='80' rx='6' fill='#ffffff' rx='10'/></svg>"
+      }
     },
     {
       "lekcija": 2,
@@ -345,17 +413,22 @@
         "Laser za sečenje"
       ],
       "zanimljivost": "Ultrazvuk je zvuk toliko visok da ga ne čujemo; slepi miševi i delfini ga koriste za snalaženje.",
-      "rec": "ultrazvuk"
+      "rec": "ultrazvuk",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "talas",
+        "tip": "jeka"
+      }
     },
     {
       "lekcija": 2,
       "tezina": 2,
       "pitanje": "Zašto se roboti šalju na mesta opasna za čoveka?",
       "odgovori": [
-        "Jer mogu da rade tamo gde bi čovek bio ugrožen, npr. u zračenju ili pod vodom",
-        "Jer ne troše nikakvu energiju i mogu da rade bez prekida i odmora",
-        "Jer su jeftiniji od svake mašine koja se koristi u fabrikama i rudnicima",
-        "Jer ljudi ne smeju da upravljaju mašinama na mestima gde ima opasnosti"
+        "Jer mogu da rade tamo gde bi čoveku bilo opasno",
+        "Jer ne troše energiju i mogu da rade bez prekida",
+        "Jer su jeftiniji od mašina koje se koriste u fabrikama",
+        "Jer ljudi ne smeju da upravljaju opasnim mašinama"
       ],
       "zanimljivost": "Rover „Kjuriositi“ istražuje Mars od 2012; komande sa Zemlje do njega putuju i do 22 minuta, pa ume deo puta da isplanira sam.",
       "rec": "robot"
@@ -371,7 +444,12 @@
         "Pavle Savić"
       ],
       "zanimljivost": "Pupin je za svoju autobiografiju dobio Pulicerovu nagradu 1924.",
-      "rec": "pupin"
+      "rec": "pupin",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "magnet",
+        "tip": "kalem"
+      }
     },
     {
       "lekcija": 2,
@@ -384,7 +462,12 @@
         "Radio-stanica koja emituje vremensku prognozu iz svemira"
       ],
       "zanimljivost": "GPS mora da uračuna i Ajnštajnovu teoriju relativnosti – inače bi greška rasla po oko 10 km dnevno.",
-      "rec": "satelit"
+      "rec": "satelit",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "orbita",
+        "tip": "mesec"
+      }
     },
     {
       "lekcija": 2,
@@ -397,7 +480,11 @@
         "Vodu"
       ],
       "zanimljivost": "Za samo jedan sat na Zemlju stigne više sunčeve energije nego što čovečanstvo potroši za godinu.",
-      "rec": "sunce"
+      "rec": "sunce",
+      "medijiOdgovora": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 400 250' xmlns='http://www.w3.org/2000/svg' font-family='sans-serif'><circle cx='60' cy='60' r='28' fill='#ffeaa7'/><line x1='98' y1='60' x2='110' y2='60' stroke='#ffeaa7' stroke-width='3'/><line x1='86.87005768508881' y1='86.8700576850888' x2='95.35533905932738' y2='95.35533905932738' stroke='#ffeaa7' stroke-width='3'/><line x1='60' y1='98' x2='60' y2='110' stroke='#ffeaa7' stroke-width='3'/><line x1='33.1299423149112' y1='86.87005768508881' x2='24.64466094067263' y2='95.35533905932738' stroke='#ffeaa7' stroke-width='3'/><line x1='22' y1='60.00000000000001' x2='10' y2='60.00000000000001' stroke='#ffeaa7' stroke-width='3'/><line x1='33.12994231491119' y1='33.1299423149112' x2='24.644660940672615' y2='24.64466094067263' stroke='#ffeaa7' stroke-width='3'/><line x1='59.99999999999999' y1='22' x2='59.99999999999999' y2='10' stroke='#ffeaa7' stroke-width='3'/><line x1='86.8700576850888' y1='33.12994231491119' x2='95.35533905932738' y2='24.644660940672615' stroke='#ffeaa7' stroke-width='3'/><line x1='100' y1='90' x2='200' y2='140' stroke='#ffeaa7' stroke-width='3' stroke-dasharray='8 6'/><polygon points='190,125 330,95 350,165 210,195' fill='#2d4a6e' stroke='#74b9ff' stroke-width='3'/><text x='270' y='235' fill='#fff' font-size='15' text-anchor='middle'>solarni panel</text></svg>"
+      }
     },
     {
       "lekcija": 2,
@@ -423,7 +510,12 @@
         "Aleksandar Grejam Bel je prvi poslao telegram bez žica"
       ],
       "zanimljivost": "Radio talasi putuju brzinom svetlosti, oko 300.000 km/s.",
-      "rec": "herc"
+      "rec": "herc",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "talas",
+        "tip": "poprecni"
+      }
     },
     {
       "lekcija": 2,
@@ -435,8 +527,21 @@
         "Kompas sa magnetnom iglom",
         "Teleskop za posmatranje neba"
       ],
-      "zanimljivost": "LED sijalica troši oko 80% manje struje od stare sijalice sa užarenom niti.",
-      "rec": "sijalica"
+      "zanimljivost": "LED sijalica za istu svetlost troši do oko 80% manje struje od stare sijalice sa užarenom niti.",
+      "rec": "sijalica",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "kolo",
+        "veza": "redno",
+        "elementi": [
+          {
+            "t": "sijalica",
+            "o": "12 Ω"
+          }
+        ],
+        "izvor": "12 V",
+        "prekidac": "klik"
+      }
     },
     {
       "lekcija": 2,
@@ -449,7 +554,12 @@
         "Recepti za hranu za vozače na putu"
       ],
       "zanimljivost": "Pojas pri sudaru deluje na osnovu zakona inercije – sprečava da telo nastavi da se kreće napred.",
-      "rec": "pojas"
+      "rec": "pojas",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "inercija",
+        "tip": "autobus"
+      }
     },
     {
       "lekcija": 2,
@@ -462,7 +572,11 @@
         "Električna struja kroz hranu je kuva kao u šporetu"
       ],
       "zanimljivost": "Mikrotalasnu je slučajno otkrio inženjer Persi Spenser kada mu se u džepu otopila čokolada pored radarskog uređaja.",
-      "rec": "mikrotalasi"
+      "rec": "mikrotalasi",
+      "medijiOdgovora": {
+        "vrsta": "molekul",
+        "ime": "voda"
+      }
     },
     {
       "lekcija": 2,
@@ -475,7 +589,11 @@
         "Baterija"
       ],
       "zanimljivost": "Laserom je izmerena udaljenost do Meseca – astronauti su tamo ostavili ogledala, a merenje je tačno do nekoliko centimetara.",
-      "rec": "laser"
+      "rec": "laser",
+      "medijiOdgovora": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 400 250' xmlns='http://www.w3.org/2000/svg' font-family='sans-serif'><circle cx='60' cy='125' r='16' fill='#ffeaa7'/><line x1='80' y1='125' x2='170' y2='30' stroke='#ffeaa7' stroke-width='2' opacity='0.6'/><line x1='80' y1='125' x2='170' y2='80' stroke='#ffeaa7' stroke-width='2' opacity='0.6'/><line x1='80' y1='125' x2='170' y2='125' stroke='#ffeaa7' stroke-width='2' opacity='0.6'/><line x1='80' y1='125' x2='170' y2='170' stroke='#ffeaa7' stroke-width='2' opacity='0.6'/><line x1='80' y1='125' x2='170' y2='220' stroke='#ffeaa7' stroke-width='2' opacity='0.6'/><rect x='230' y='115' width='40' height='20' rx='6' fill='#8fa3b8' /><line x1='270' y1='125' x2='385' y2='125' stroke='#ff7675' stroke-width='4'/><text x='60' y='240' fill='#fff' font-size='15' text-anchor='middle'>sijalica</text><text x='300' y='240' fill='#fff' font-size='15' text-anchor='middle'>laser</text></svg>"
+      }
     },
     {
       "lekcija": 2,
@@ -488,7 +606,12 @@
         "Barometar"
       ],
       "zanimljivost": "Kineski moreplovci koristili su kompas već pre oko hiljadu godina.",
-      "rec": "kompas"
+      "rec": "kompas",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "magnet",
+        "tip": "sipka"
+      }
     },
     {
       "lekcija": 2,
@@ -514,7 +637,11 @@
         "Crtanje grafika"
       ],
       "zanimljivost": "Posmatranjem ne koristimo samo vid – i sluh, i miris, i dodir.",
-      "rec": "posmatranje"
+      "rec": "posmatranje",
+      "mediji": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 400 250' xmlns='http://www.w3.org/2000/svg' font-family='sans-serif'><circle cx='62' cy='110' r='40' fill='#74b9ff'/><text x='62' y='117' fill='#0b1826' font-size='17' text-anchor='middle'>vid</text><circle cx='154' cy='110' r='40' fill='#74b9ff'/><text x='154' y='117' fill='#0b1826' font-size='17' text-anchor='middle'>sluh</text><circle cx='246' cy='110' r='40' fill='#74b9ff'/><text x='246' y='117' fill='#0b1826' font-size='17' text-anchor='middle'>miris</text><circle cx='338' cy='110' r='40' fill='#74b9ff'/><text x='338' y='117' fill='#0b1826' font-size='17' text-anchor='middle'>dodir</text></svg>"
+      }
     },
     {
       "lekcija": 3,
@@ -527,7 +654,11 @@
         "Pogađanje rezultata bez merenja, na osnovu iskustva i osećaja"
       ],
       "zanimljivost": "Eksperiment mora moći da se ponovi – ako ga drugi ne mogu ponoviti, rezultat se ne prihvata.",
-      "rec": "eksperiment"
+      "rec": "eksperiment",
+      "medijiOdgovora": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 400 250' xmlns='http://www.w3.org/2000/svg' font-family='sans-serif'><rect x='20' y='90' width='110' height='70' rx='6' fill='#55efc4' /><text x='75' y='120' fill='#0b1826' font-size='16' text-anchor='middle'>uslovi</text><rect x='150' y='90' width='110' height='70' rx='6' fill='#74b9ff' /><text x='205' y='120' fill='#0b1826' font-size='16' text-anchor='middle'>ogled</text><rect x='280' y='90' width='100' height='70' rx='6' fill='#ffeaa7' /><text x='330' y='120' fill='#0b1826' font-size='15' text-anchor='middle'>rezultat</text><line x1='134' y1='125' x2='146' y2='125' stroke='#fff' stroke-width='3'/><line x1='264' y1='125' x2='276' y2='125' stroke='#fff' stroke-width='3'/></svg>"
+      }
     },
     {
       "lekcija": 3,
@@ -540,7 +671,12 @@
         "Balone napunjene vazduhom i vodom, da pokaže koji brže pada"
       ],
       "zanimljivost": "Da li je Galilej zaista bacao kugle sa tornja nije sigurno, ali je zakone padanja proučavao kotrljajući kugle niz strmu ravan.",
-      "rec": "piza"
+      "rec": "piza",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "pad",
+        "tip": "vakuum"
+      }
     },
     {
       "lekcija": 3,
@@ -553,7 +689,11 @@
         "Nuklearna, kosmička i zemaljska"
       ],
       "zanimljivost": "Teorijski fizičar Ajnštajn retko je radio eksperimente, ali su njegova predviđanja potvrđena merenjima.",
-      "rec": "teorija"
+      "rec": "teorija",
+      "medijiOdgovora": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 400 250' xmlns='http://www.w3.org/2000/svg' font-family='sans-serif'><rect x='6' y='60' width='124' height='120' rx='6' fill='#74b9ff' /><text x='68' y='100' fill='#0b1826' font-size='14' text-anchor='middle'>Eksperimentalna</text><text x='68' y='130' fill='#0b1826' font-size='14' text-anchor='middle'>ogledi i merenja</text><rect x='138' y='60' width='124' height='120' rx='6' fill='#55efc4' /><text x='200' y='100' fill='#0b1826' font-size='14' text-anchor='middle'>Teorijska</text><text x='200' y='130' fill='#0b1826' font-size='14' text-anchor='middle'>zakoni i modeli</text><rect x='270' y='60' width='124' height='120' rx='6' fill='#ffeaa7' /><text x='332' y='100' fill='#0b1826' font-size='14' text-anchor='middle'>Primenjena</text><text x='332' y='130' fill='#0b1826' font-size='14' text-anchor='middle'>tehnika i uređaji</text></svg>"
+      }
     },
     {
       "lekcija": 3,
@@ -592,7 +732,11 @@
         "Samo merni instrument, bez jedinice mere"
       ],
       "zanimljivost": "Najstarije jedinice za dužinu bile su delovi tela: palac, pedalj, lakat i stopa.",
-      "rec": "merenje"
+      "rec": "merenje",
+      "medijiOdgovora": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 400 250' xmlns='http://www.w3.org/2000/svg' font-family='sans-serif'><rect x='20' y='110' width='360' height='50' rx='6' fill='#ffeaa7' /><line x1='20' y1='110' x2='20' y2='138' stroke='#0b1826' stroke-width='2'/><text x='20' y='182' fill='#fff' font-size='14' text-anchor='middle'>0</text><line x1='56' y1='110' x2='56' y2='138' stroke='#0b1826' stroke-width='2'/><text x='56' y='182' fill='#fff' font-size='14' text-anchor='middle'>1</text><line x1='92' y1='110' x2='92' y2='138' stroke='#0b1826' stroke-width='2'/><text x='92' y='182' fill='#fff' font-size='14' text-anchor='middle'>2</text><line x1='128' y1='110' x2='128' y2='138' stroke='#0b1826' stroke-width='2'/><text x='128' y='182' fill='#fff' font-size='14' text-anchor='middle'>3</text><line x1='164' y1='110' x2='164' y2='138' stroke='#0b1826' stroke-width='2'/><text x='164' y='182' fill='#fff' font-size='14' text-anchor='middle'>4</text><line x1='200' y1='110' x2='200' y2='138' stroke='#0b1826' stroke-width='2'/><text x='200' y='182' fill='#fff' font-size='14' text-anchor='middle'>5</text><line x1='236' y1='110' x2='236' y2='138' stroke='#0b1826' stroke-width='2'/><text x='236' y='182' fill='#fff' font-size='14' text-anchor='middle'>6</text><line x1='272' y1='110' x2='272' y2='138' stroke='#0b1826' stroke-width='2'/><text x='272' y='182' fill='#fff' font-size='14' text-anchor='middle'>7</text><line x1='308' y1='110' x2='308' y2='138' stroke='#0b1826' stroke-width='2'/><text x='308' y='182' fill='#fff' font-size='14' text-anchor='middle'>8</text><line x1='344' y1='110' x2='344' y2='138' stroke='#0b1826' stroke-width='2'/><text x='344' y='182' fill='#fff' font-size='14' text-anchor='middle'>9</text><line x1='380' y1='110' x2='380' y2='138' stroke='#0b1826' stroke-width='2'/><text x='380' y='182' fill='#fff' font-size='14' text-anchor='middle'>10</text><text x='385' y='100' fill='#fff' font-size='14' text-anchor='end'>cm</text></svg>"
+      }
     },
     {
       "lekcija": 3,
@@ -618,7 +762,11 @@
         "Jedinica mere za veličinu tela, kao što su metar, kilogram ili sekunda"
       ],
       "zanimljivost": "Materijalna tačka je model – telo zamišljamo kao tačku kada nam njegova veličina nije važna.",
-      "rec": "model"
+      "rec": "model",
+      "medijiOdgovora": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 400 250' xmlns='http://www.w3.org/2000/svg' font-family='sans-serif'><rect x='30' y='120' width='130' height='40' rx='6' fill='#74b9ff' rx='12'/><path d='M60 120 L90 92 L130 92 L150 120 Z' fill='#74b9ff'/><circle cx='60' cy='164' r='12' fill='#2d3436' stroke='#fff' stroke-width='2'/><circle cx='130' cy='164' r='12' fill='#2d3436' stroke='#fff' stroke-width='2'/><text x='95' y='215' fill='#fff' font-size='14' text-anchor='middle'>stvarno telo</text><polygon points='214,134 232,140 214,146' fill='#fff'/><line x1='180' y1='140' x2='220' y2='140' stroke='#fff' stroke-width='3'/><rect x='240' y='120' width='130' height='40' rx='6' fill='#fab1a0' rx='4'/><text x='305' y='215' fill='#fff' font-size='14' text-anchor='middle'>model</text></svg>"
+      }
     },
     {
       "lekcija": 3,
@@ -631,7 +779,47 @@
         "Način da se izračuna gustina bez merenja mase"
       ],
       "zanimljivost": "Iz grafika se često „na prvi pogled“ vidi zakonitost koju je teško uočiti u nizu brojeva.",
-      "rec": "grafik"
+      "rec": "grafik",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "grafik",
+        "x": "t (s)",
+        "y": "s (m)",
+        "xmax": 5,
+        "ymax": 20,
+        "xk": 1,
+        "yk": 4,
+        "linije": [
+          {
+            "t": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                8
+              ],
+              [
+                3,
+                12
+              ],
+              [
+                4,
+                16
+              ],
+              [
+                5,
+                20
+              ]
+            ]
+          }
+        ]
+      }
     },
     {
       "lekcija": 3,
@@ -644,7 +832,11 @@
         "Nije potrebno – dovoljno je jednom"
       ],
       "zanimljivost": "Srednja vrednost više merenja bliža je pravoj vrednosti od jednog merenja.",
-      "rec": "ponavljanje"
+      "rec": "ponavljanje",
+      "medijiOdgovora": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 400 250' xmlns='http://www.w3.org/2000/svg' font-family='sans-serif'><line x1='30' y1='115' x2='380' y2='115' stroke='#55efc4' stroke-width='3' stroke-dasharray='10 6'/><text x='385' y='92' fill='#55efc4' font-size='14' text-anchor='end'>srednja vrednost</text><circle cx='60' cy='110' r='7' fill='#74b9ff'/><circle cx='110' cy='134' r='7' fill='#74b9ff'/><circle cx='165' cy='98' r='7' fill='#74b9ff'/><circle cx='215' cy='140' r='7' fill='#74b9ff'/><circle cx='262' cy='104' r='7' fill='#74b9ff'/><circle cx='318' cy='128' r='7' fill='#74b9ff'/></svg>"
+      }
     },
     {
       "lekcija": 3,
@@ -657,7 +849,11 @@
         "Lenjir"
       ],
       "zanimljivost": "Galilej je 1610. teleskopom otkrio četiri najveća Jupiterova meseca.",
-      "rec": "teleskop"
+      "rec": "teleskop",
+      "mediji": {
+        "vrsta": "planeta",
+        "ime": "jupiter"
+      }
     },
     {
       "lekcija": 3,
@@ -670,7 +866,12 @@
         "Mišljenje većine"
       ],
       "zanimljivost": "Njutnova teorija gravitacije objašnjava i pad jabuke i kretanje Meseca oko Zemlje.",
-      "rec": "teorija"
+      "rec": "teorija",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "orbita",
+        "tip": "njutn"
+      }
     },
     {
       "lekcija": 3,
@@ -683,7 +884,17 @@
         "Hronometar"
       ],
       "zanimljivost": "Preteču termometra, termoskop, napravio je Galilej krajem 16. veka – pokazivao je da li je toplije ili hladnije, ali nije imao skalu.",
-      "rec": "termometar"
+      "rec": "termometar",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "termometar",
+        "skale": [
+          "C"
+        ],
+        "od": -10,
+        "do": 40,
+        "temp": 22
+      }
     },
     {
       "lekcija": 3,
@@ -709,7 +920,12 @@
         "Atom i molekul u supstanci"
       ],
       "zanimljivost": "Fizičko polje se ne vidi, ali deluje – na primer gravitaciono i magnetno polje. Supstanca je ono od čega su sačinjena tela.",
-      "rec": "supstanca"
+      "rec": "supstanca",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "magnet",
+        "tip": "zemlja"
+      }
     },
     {
       "lekcija": 4,
@@ -722,7 +938,11 @@
         "Voda"
       ],
       "zanimljivost": "Supstanca je materijal (srebro, drvo, voda), a telo je predmet određenog oblika i zapremine napravljen od supstance.",
-      "rec": "telo"
+      "rec": "telo",
+      "mediji": {
+        "vrsta": "telo",
+        "oblik": "kocka"
+      }
     },
     {
       "pitanje": "Koje polje okružuje magnet i deluje na gvozdene predmete?",
@@ -766,7 +986,12 @@
         "Vrsta tečnog metala koja ne provodi struju"
       ],
       "zanimljivost": "Zemlja preko gravitacionog polja privlači Mesec udaljen 384.000 km.",
-      "rec": "polje"
+      "rec": "polje",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "orbita",
+        "tip": "mesec"
+      }
     },
     {
       "lekcija": 4,
@@ -810,7 +1035,13 @@
         "Svetlosno"
       ],
       "zanimljivost": "Gravitaciono polje deluje i na Mesec i na satelite – oni stalno „padaju“ oko Zemlje.",
-      "rec": "gravitacija"
+      "rec": "gravitacija",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "pad",
+        "tip": "slobodan",
+        "visina": 5
+      }
     },
     {
       "lekcija": 4,
@@ -891,7 +1122,11 @@
         "Jedinica mere za zapreminu ili masu tela"
       ],
       "zanimljivost": "U fizici su tela i zrno peska i Sunce.",
-      "rec": "telo"
+      "rec": "telo",
+      "mediji": {
+        "vrsta": "telo",
+        "oblik": "lopta"
+      }
     },
     {
       "lekcija": 4,
@@ -922,7 +1157,11 @@
         "Voda"
       ],
       "zanimljivost": "Olovka je napravljena od više supstanci – drveta, grafita, gline, boje.",
-      "rec": "olovka"
+      "rec": "olovka",
+      "medijiOdgovora": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 400 250' xmlns='http://www.w3.org/2000/svg' font-family='sans-serif'><rect x='40' y='100' width='20' height='40' rx='6' fill='#fab1a0' /><rect x='60' y='100' width='220' height='40' rx='6' fill='#fdcb6e' /><polygon points='280,100 320,120 280,140' fill='#636e72'/><text x='170' y='126' fill='#0b1826' font-size='16' text-anchor='middle'>drvo</text><text x='300' y='170' fill='#fff' font-size='15' text-anchor='middle'>grafit</text></svg>"
+      }
     },
     {
       "lekcija": 4,
@@ -935,7 +1174,13 @@
         "Plazmi"
       ],
       "zanimljivost": "Led pluta jer je ređi od vode – voda je jedna od retkih supstanci koja se širi kada se zaledi.",
-      "rec": "led"
+      "rec": "led",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "cestice",
+        "stanje": "cvrsto",
+        "o": "led"
+      }
     },
     {
       "lekcija": 4,
@@ -961,7 +1206,21 @@
         "Kada se kreće vrlo brzo, pa se njegove dimenzije ne vide"
       ],
       "zanimljivost": "Zemlja se pri kretanju oko Sunca može posmatrati kao tačka – njen prečnik je više od deset hiljada puta manji od prečnika putanje.",
-      "rec": "tačka"
+      "rec": "tačka",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "kretanje",
+        "duzina": 1000,
+        "jedinica": "km",
+        "podeok": 100,
+        "tela": [
+          {
+            "e": "🚗",
+            "v": 25
+          }
+        ],
+        "trag": 1
+      }
     },
     {
       "lekcija": 5,
@@ -993,7 +1252,19 @@
         "Promena boje tela koje je izloženo jakoj svetlosti"
       ],
       "zanimljivost": "I kada sedimo, krećemo se zajedno sa Zemljom oko Sunca brzinom od oko 30 km u sekundi!",
-      "rec": "kretanje"
+      "rec": "kretanje",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "kretanje",
+        "duzina": 50,
+        "tela": [
+          {
+            "e": "🚗",
+            "v": 8
+          }
+        ],
+        "trag": 1
+      }
     },
     {
       "pitanje": "Kako se zove kretanje kod koga se telo vraća u isti položaj i ponavlja isto kretanje, kao ljuljaška?",
@@ -1024,7 +1295,11 @@
         "Samo ako se zanemari njeno kretanje oko Sunca"
       ],
       "zanimljivost": "Od Sunca je Zemlja udaljena oko 150 miliona $km$, a njen prečnik je oko 12.700 km – zato se u tom poređenju pravi kao tačka.",
-      "rec": "zemlja"
+      "rec": "zemlja",
+      "mediji": {
+        "vrsta": "planeta",
+        "ime": "zemlja"
+      }
     },
     {
       "lekcija": 5,
@@ -1063,7 +1338,11 @@
         "Zato što se planete okreću brže nego što se kreću po putanji"
       ],
       "zanimljivost": "Isti predmet može biti tačka u jednom zadatku, a „pravo telo“ u drugom – zavisi šta proučavamo.",
-      "rec": "okretanje"
+      "rec": "okretanje",
+      "mediji": {
+        "vrsta": "planeta",
+        "ime": "saturn"
+      }
     },
     {
       "lekcija": 5,
@@ -1093,7 +1372,15 @@
         "Kretanje po ravnoj i po kosoj ravni"
       ],
       "zanimljivost": "Kretanje lopte bačene ukoso je krivolinijsko – putanja je luk (parabola).",
-      "rec": "putanja"
+      "rec": "putanja",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "pad",
+        "tip": "kosi",
+        "uglovi": [
+          45
+        ]
+      }
     },
     {
       "lekcija": 5,
@@ -1106,7 +1393,12 @@
         "Oscilatorno"
       ],
       "zanimljivost": "Najbrži liftovi na svetu penju se brže od 70 km/h.",
-      "rec": "lift"
+      "rec": "lift",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "dizanje",
+        "tip": "kran"
+      }
     },
     {
       "lekcija": 5,
@@ -1137,7 +1429,27 @@
         "Svi su živi i dišu vazduh kroz pluća"
       ],
       "zanimljivost": "Puž pređe 1 metar za oko četvrt sata – ali i to je mehaničko kretanje!",
-      "rec": "puž"
+      "rec": "puž",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "kretanje",
+        "duzina": 100,
+        "tela": [
+          {
+            "e": "🚆",
+            "v": 25
+          },
+          {
+            "e": "🚲",
+            "v": 6
+          },
+          {
+            "e": "🐌",
+            "v": 1
+          }
+        ],
+        "trag": 2
+      }
     },
     {
       "lekcija": 5,
@@ -1163,7 +1475,19 @@
         "Samo oscilatorno"
       ],
       "zanimljivost": "Tačka na vrhu točka kreće se dvostruko brže od bicikla, a tačka koja dodiruje tlo trenutno miruje!",
-      "rec": "točak"
+      "rec": "točak",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "kretanje",
+        "duzina": 50,
+        "tela": [
+          {
+            "e": "🚲",
+            "v": 5
+          }
+        ],
+        "trag": 1
+      }
     },
     {
       "lekcija": 6,
@@ -1176,7 +1500,15 @@
         "Ubrzanje tela (izraženo u m/s²)"
       ],
       "zanimljivost": "Trag aviona na nebu ili svetli trag meteora su primeri putanje koju možemo da vidimo.",
-      "rec": "putanja"
+      "rec": "putanja",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "pad",
+        "tip": "kosi",
+        "uglovi": [
+          30
+        ]
+      }
     },
     {
       "lekcija": 6,
@@ -1189,7 +1521,20 @@
         "U odnosu na Sunce"
       ],
       "zanimljivost": "Svako kretanje i mirovanje je relativno – zavisi od referentnog tela. U odnosu na prugu putnik se kreće brzinom voza.",
-      "rec": "voz"
+      "rec": "voz",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "kretanje",
+        "duzina": 100,
+        "tela": [
+          {
+            "e": "🚆",
+            "v": 20
+          }
+        ],
+        "trag": 1,
+        "sat": false
+      }
     },
     {
       "lekcija": 6,
@@ -1215,7 +1560,22 @@
         "Važi samo za kretanje po pravoj liniji"
       ],
       "zanimljivost": "Putnik u avionu miruje u odnosu na sedište, a kreće se u odnosu na Zemlju brzinom od oko 900 km/h.",
-      "rec": "relativnost"
+      "rec": "relativnost",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "kretanje",
+        "duzina": 100,
+        "tela": [
+          {
+            "e": "🚗",
+            "v": 20
+          },
+          {
+            "e": "🚙",
+            "v": 10
+          }
+        ]
+      }
     },
     {
       "lekcija": 6,
@@ -1241,7 +1601,11 @@
         "Prava linija okomita na put"
       ],
       "zanimljivost": "U odnosu na osovinu točka ventil se kreće po krugu – putanja zavisi od referentnog tela!",
-      "rec": "cikloida"
+      "rec": "cikloida",
+      "medijiOdgovora": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 400 250' xmlns='http://www.w3.org/2000/svg' font-family='sans-serif'><line x1='10' y1='200' x2='390' y2='200' stroke='#8fa3b8' stroke-width='3'/><polyline points='20.0,200.0 20.0,200.0 20.0,199.9 20.0,199.7 20.0,199.4 20.1,199.1 20.2,198.7 20.3,198.3 20.4,197.8 20.5,197.2 20.7,196.6 21.0,195.9 21.2,195.1 21.6,194.3 22.0,193.5 22.4,192.6 22.9,191.6 23.5,190.7 24.1,189.7 24.8,188.6 25.5,187.6 26.3,186.5 27.2,185.4 28.2,184.3 29.2,183.1 30.3,182.0 31.4,180.9 32.7,179.7 34.0,178.6 35.4,177.5 36.8,176.4 38.3,175.4 39.9,174.3 41.5,173.3 43.3,172.4 45.0,171.4 46.8,170.5 48.7,169.7 50.7,168.9 52.6,168.1 54.7,167.4 56.7,166.8 58.8,166.2 61.0,165.7 63.1,165.3 65.3,164.9 67.5,164.6 69.8,164.3 72.0,164.1 74.3,164.0 76.5,164.0 78.8,164.0 81.1,164.1 83.3,164.3 85.5,164.6 87.8,164.9 90.0,165.3 92.1,165.7 94.3,166.2 96.4,166.8 98.4,167.4 100.5,168.1 102.4,168.9 104.4,169.7 106.3,170.5 108.1,171.4 109.8,172.4 111.5,173.3 113.2,174.3 114.8,175.4 116.3,176.4 117.7,177.5 119.1,178.6 120.4,179.7 121.7,180.9 122.8,182.0 123.9,183.1 124.9,184.3 125.9,185.4 126.8,186.5 127.6,187.6 128.3,188.6 129.0,189.7 129.6,190.7 130.2,191.6 130.7,192.6 131.1,193.5 131.5,194.3 131.8,195.1 132.1,195.9 132.4,196.6 132.6,197.2 132.7,197.8 132.8,198.3 132.9,198.7 133.0,199.1 133.0,199.4 133.1,199.7 133.1,199.9 133.1,200.0 133.1,200.0 133.1,200.0 133.1,199.9 133.1,199.7 133.1,199.4 133.2,199.1 133.3,198.7 133.4,198.3 133.5,197.8 133.6,197.2 133.8,196.6 134.1,195.9 134.3,195.1 134.7,194.3 135.1,193.5 135.5,192.6 136.0,191.6 136.6,190.7 137.2,189.7 137.8,188.6 138.6,187.6 139.4,186.5 140.3,185.4 141.3,184.3 142.3,183.1 143.4,182.0 144.5,180.9 145.8,179.7 147.1,178.6 148.5,177.5 149.9,176.4 151.4,175.4 153.0,174.3 154.6,173.3 156.4,172.4 158.1,171.4 159.9,170.5 161.8,169.7 163.8,168.9 165.7,168.1 167.8,167.4 169.8,166.8 171.9,166.2 174.1,165.7 176.2,165.3 178.4,164.9 180.6,164.6 182.9,164.3 185.1,164.1 187.4,164.0 189.6,164.0 191.9,164.0 194.2,164.1 196.4,164.3 198.6,164.6 200.9,164.9 203.1,165.3 205.2,165.7 207.4,166.2 209.5,166.8 211.5,167.4 213.6,168.1 215.5,168.9 217.5,169.7 219.3,170.5 221.2,171.4 222.9,172.4 224.6,173.3 226.3,174.3 227.9,175.4 229.4,176.4 230.8,177.5 232.2,178.6 233.5,179.7 234.8,180.9 235.9,182.0 237.0,183.1 238.0,184.3 239.0,185.4 239.9,186.5 240.7,187.6 241.4,188.6 242.1,189.7 242.7,190.7 243.3,191.6 243.8,192.6 244.2,193.5 244.6,194.3 244.9,195.1 245.2,195.9 245.5,196.6 245.7,197.2 245.8,197.8 245.9,198.3 246.0,198.7 246.1,199.1 246.1,199.4 246.2,199.7 246.2,199.9 246.2,200.0 246.2,200.0' fill='none' stroke='#ffeaa7' stroke-width='3'/><text x='200' y='235' fill='#fff' font-size='15' text-anchor='middle'>putanja tačke na točku</text></svg>"
+      }
     },
     {
       "lekcija": 6,
@@ -1254,7 +1618,12 @@
         "Mesec se ne kreće"
       ],
       "zanimljivost": "Mesec je stalno okrenut istom stranom ka Zemlji – drugu stranu prvi su fotografisali sovjetski istraživači 1959.",
-      "rec": "mesec"
+      "rec": "mesec",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "orbita",
+        "tip": "mesec"
+      }
     },
     {
       "lekcija": 6,
@@ -1267,7 +1636,11 @@
         "Mars"
       ],
       "zanimljivost": "Zemlja se oko Sunca kreće brzinom od oko 30 km/s – tako se obično računa, u odnosu na Sunce.",
-      "rec": "sunce"
+      "rec": "sunce",
+      "medijiOdgovora": {
+        "vrsta": "planeta",
+        "ime": "sunce"
+      }
     },
     {
       "lekcija": 6,
@@ -1309,7 +1682,11 @@
         "Krećemo se samo kad vetar duva jako"
       ],
       "zanimljivost": "Okretanjem Zemlje oko ose u Srbiji „putujemo“ brzinom od oko 1.200 km/h.",
-      "rec": "zemlja"
+      "rec": "zemlja",
+      "medijiOdgovora": {
+        "vrsta": "planeta",
+        "ime": "zemlja"
+      }
     },
     {
       "lekcija": 6,
@@ -1343,7 +1720,11 @@
         "Kiša se ne vidi"
       ],
       "zanimljivost": "Na stanici iste kapi padaju pravo – razlika je samo u referentnom telu.",
-      "rec": "kiša"
+      "rec": "kiša",
+      "medijiOdgovora": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 400 250' xmlns='http://www.w3.org/2000/svg' font-family='sans-serif'><rect x='120' y='170' width='160' height='40' rx='6' fill='#74b9ff' rx='12'/><circle cx='145' cy='212' r='12' fill='#2d3436'/><circle cx='255' cy='212' r='12' fill='#2d3436'/><line x1='60' y1='20' x2='30' y2='80' stroke='#74b9ff' stroke-width='3'/><line x1='110' y1='20' x2='80' y2='80' stroke='#74b9ff' stroke-width='3'/><line x1='160' y1='20' x2='130' y2='80' stroke='#74b9ff' stroke-width='3'/><line x1='210' y1='20' x2='180' y2='80' stroke='#74b9ff' stroke-width='3'/><line x1='260' y1='20' x2='230' y2='80' stroke='#74b9ff' stroke-width='3'/><line x1='310' y1='20' x2='280' y2='80' stroke='#74b9ff' stroke-width='3'/><line x1='360' y1='20' x2='330' y2='80' stroke='#74b9ff' stroke-width='3'/><line x1='60' y1='20' x2='60' y2='20'/><text x='200' y='130' fill='#fff' font-size='16' text-anchor='middle'>kiša</text></svg>"
+      }
     },
     {
       "lekcija": 6,
@@ -1382,7 +1763,11 @@
         "Dim se diže pravo naviše, bez obzira na kretanje"
       ],
       "zanimljivost": "Dim koji se ispusti ostaje u vazduhu tamo gde je nastao, pa brod za sobom ostavlja dimni trag – ako nema vetra.",
-      "rec": "dim"
+      "rec": "dim",
+      "medijiOdgovora": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 400 250' xmlns='http://www.w3.org/2000/svg' font-family='sans-serif'><polygon points='150,190 340,190 320,215 170,215' fill='#74b9ff'/><rect x='230' y='160' width='50' height='30' rx='6' fill='#dfe6e9' /><rect x='255' y='130' width='14' height='30' rx='6' fill='#ff7675' /><circle cx='240' cy='120' r='12' fill='#8fa3b8' opacity='0.8'/><circle cx='215' cy='108' r='14' fill='#8fa3b8' opacity='0.8'/><circle cx='190' cy='98' r='15' fill='#8fa3b8' opacity='0.8'/><circle cx='165' cy='88' r='16' fill='#8fa3b8' opacity='0.8'/><text x='250' y='240' fill='#fff' font-size='14' text-anchor='middle'>brod se kreće udesno</text></svg>"
+      }
     },
     {
       "lekcija": 7,
@@ -1395,7 +1780,20 @@
         "Samo vremenom koje je telo provelo u kretanju"
       ],
       "zanimljivost": "Podatak „80 km/h“ nije dovoljan. Potpun podatak je, na primer: 80 km/h, auto-putem, od Beograda ka Nišu.",
-      "rec": "pravac"
+      "rec": "pravac",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "kretanje",
+        "duzina": 100,
+        "tela": [
+          {
+            "e": "🚗",
+            "v": 20
+          }
+        ],
+        "vektor": true,
+        "trag": 1
+      }
     },
     {
       "lekcija": 7,
@@ -1435,7 +1833,11 @@
         "200 m/s"
       ],
       "zanimljivost": "$1 km/h = 1000 m : 3600 s$, pa se km/h deli sa 3,6 da bi se dobilo m/s.",
-      "rec": "brzina"
+      "rec": "brzina",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "72 km/h = ? m/s"
+      }
     },
     {
       "lekcija": 7,
@@ -1480,7 +1882,19 @@
         "Masa tela koje se kreće, izražena u $kg$"
       ],
       "zanimljivost": "Pređeni put se meri u metrima (ili kilometrima). Na putu kroz grad pređeni put je duži od rastojanja „vazdušnom linijom“.",
-      "rec": "put"
+      "rec": "put",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "kretanje",
+        "duzina": 60,
+        "tela": [
+          {
+            "e": "🚶",
+            "v": 1.5
+          }
+        ],
+        "trag": 1
+      }
     },
     {
       "lekcija": 7,
@@ -1621,10 +2035,6 @@
       ],
       "zanimljivost": "Najbrži sprinter Jusejn Bolt istrčao je 100 m za 9,58 s – u jednom delu trke dostizao je preko 44 km/h.",
       "rec": "trkač",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "🏃‍♂️ vs 🚴"
-      },
       "medijiOdgovora": {
         "vrsta": "fizika",
         "scena": "kretanje",
@@ -1655,7 +2065,11 @@
         "10 sekundi (manje od minuta)"
       ],
       "zanimljivost": "Najsporiji sisar, lenjivac, po drveću se kreće oko 4 metra u minutu – i to je oko 70 puta brže od ovog puža.",
-      "rec": "puž"
+      "rec": "puž",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "1 m : (1 mm/s) = ? s"
+      }
     },
     {
       "pitanje": "Automobil vozi pravim putem i svake sekunde pređe 25 m. Kakvo je njegovo kretanje?",
@@ -1696,8 +2110,8 @@
       "zanimljivost": "Svetlost stiže skoro trenutno, pa po broju sekundi do groma možemo proceniti udaljenost oluje.",
       "rec": "grom",
       "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "⚡…3s…🔊"
+        "vrsta": "formula",
+        "tekst": "s = 340 m/s · 3 s = ?"
       }
     },
     {
@@ -1711,7 +2125,19 @@
         "Pokazuje ukupan put tela, bez obzira na vreme"
       ],
       "zanimljivost": "Brzina ima i pravac i smer – zato se crta strelicom (vektor).",
-      "rec": "vektor"
+      "rec": "vektor",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "kretanje",
+        "duzina": 100,
+        "tela": [
+          {
+            "e": "🚗",
+            "v": 10
+          }
+        ],
+        "vektor": true
+      }
     },
     {
       "lekcija": 7,
@@ -1754,7 +2180,11 @@
         "Barometar"
       ],
       "zanimljivost": "Policija brzinu meri radarom, koji koristi odbijanje talasa od automobila.",
-      "rec": "brzinomer"
+      "rec": "brzinomer",
+      "medijiOdgovora": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 400 250' xmlns='http://www.w3.org/2000/svg' font-family='sans-serif'><path d='M125.75378797541251 214.24621202458746 A 105 105 0 1 1 274.2462120245875 214.24621202458746' fill='none' stroke='#fff' stroke-width='3'/><line x1='125.75378797541251' y1='214.24621202458746' x2='134.23906934965106' y2='205.7609306503489' stroke='#fff' stroke-width='2'/><line x1='100.13906578900887' y1='172.44678440936946' x2='111.55174398455071' y2='168.7385804768701' stroke='#fff' stroke-width='2'/><line x1='96.29272423751054' y1='123.57438117077575' x2='108.14498432465219' y2='125.45159475125853' stroke='#fff' stroke-width='2'/><line x1='115.05321559063051' y1='78.28254850929032' x2='124.76141952312989' y2='85.3359715368' stroke='#fff' stroke-width='2'/><line x1='152.3309975273476' y1='46.44431496022138' x2='157.77888352422215' y2='57.13639325048179' stroke='#fff' stroke-width='2'/><line x1='200' y1='35' x2='200' y2='47' stroke='#fff' stroke-width='2'/><line x1='247.6690024726524' y1='46.44431496022138' x2='242.22111647577785' y2='57.13639325048179' stroke='#fff' stroke-width='2'/><line x1='284.94678440936946' y1='78.28254850929032' x2='275.2385804768701' y2='85.3359715368' stroke='#fff' stroke-width='2'/><line x1='303.7072757624895' y1='123.57438117077575' x2='291.85501567534783' y2='125.45159475125853' stroke='#fff' stroke-width='2'/><line x1='299.8609342109911' y1='172.44678440936946' x2='288.44825601544926' y2='168.7385804768701' stroke='#fff' stroke-width='2'/><line x1='274.2462120245875' y1='214.24621202458746' x2='265.76093065034894' y2='205.7609306503489' stroke='#fff' stroke-width='2'/><text x='145.6' y='199.4' fill='#fff' font-size='14' text-anchor='middle'>0</text><text x='123.9' y='133.0' fill='#fff' font-size='14' text-anchor='middle'>40</text><text x='165.0' y='76.4' fill='#fff' font-size='14' text-anchor='middle'>80</text><text x='235.0' y='76.4' fill='#fff' font-size='14' text-anchor='middle'>120</text><text x='276.1' y='133.0' fill='#fff' font-size='14' text-anchor='middle'>160</text><text x='254.4' y='199.4' fill='#fff' font-size='14' text-anchor='middle'>200</text><line x1='200' y1='140' x2='171.9' y2='84.8' stroke='#ff7675' stroke-width='4'/><circle cx='200' cy='140' r='7' fill='#ff7675'/><text x='200' y='215' fill='#fff' font-size='16' text-anchor='middle'>km/h</text></svg>"
+      }
     },
     {
       "lekcija": 7,
@@ -1784,7 +2214,11 @@
         "2160 km/h"
       ],
       "zanimljivost": "Srednja brzina je ukupan pređeni put podeljen ukupnim vremenom. Voz je možda negde stajao, a negde jurio – srednja brzina to ne pokazuje.",
-      "rec": "brzina"
+      "rec": "brzina",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "360 km : 6 h = ? km/h"
+      }
     },
     {
       "lekcija": 8,
@@ -1797,7 +2231,21 @@
         "Kretanje po kome telo prelazi jednake puteve"
       ],
       "zanimljivost": "Kretanje automobila kroz grad je promenljivo – staje na semaforima i ubrzava.",
-      "rec": "promena"
+      "rec": "promena",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "kretanje",
+        "duzina": 40,
+        "tela": [
+          {
+            "e": "🚗",
+            "v": 2,
+            "a": 3
+          }
+        ],
+        "trag": 1,
+        "vektor": true
+      }
     },
     {
       "lekcija": 8,
@@ -2042,7 +2490,11 @@
         "0,5 m/s"
       ],
       "zanimljivost": "Prosečna brzina hoda odraslog čoveka je oko 5 km/h.",
-      "rec": "pešak"
+      "rec": "pešak",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "5 km : 1 h = ? m/s"
+      }
     },
     {
       "lekcija": 8,
@@ -2055,7 +2507,11 @@
         "10 km/h"
       ],
       "zanimljivost": "Maraton ima tačno 42,195 km – dužinu je 1908. u Londonu odredila kraljevska loža, tako da trka završi ispred nje.",
-      "rec": "maraton"
+      "rec": "maraton",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "42 km : 2 h = ? km/h"
+      }
     },
     {
       "lekcija": 8,
@@ -2163,7 +2619,7 @@
         "Brzina je stalna",
         "Telo se uvek kreće po krugu"
       ],
-      "zanimljivost": "Kod kružnog kretanja menja se pravac brzine, pa je i ono promenljivo, čak i kad brojčana vrednost brzine stoji.",
+      "zanimljivost": "Brzina može da raste (ubrzano kretanje) ili da opada (usporeno kretanje); oba su promenljiva kretanja.",
       "rec": "promenljivo"
     },
     {
@@ -2298,7 +2754,29 @@
         "Masa"
       ],
       "zanimljivost": "Uobičajeno je da se na horizontalnu osu stavlja veličina koja se „sama menja“ – vreme.",
-      "rec": "osa"
+      "rec": "osa",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "grafik",
+        "x": "?",
+        "y": "?",
+        "xmax": 5,
+        "ymax": 10,
+        "linije": [
+          {
+            "t": [
+              [
+                0,
+                0
+              ],
+              [
+                4,
+                8
+              ]
+            ]
+          }
+        ]
+      }
     },
     {
       "lekcija": 9,
@@ -2434,7 +2912,29 @@
         "Temperatura"
       ],
       "zanimljivost": "Koordinatni sistem sa dve normalne ose nosi ime po Dekartu, francuskom matematičaru, pa se zove Dekartov.",
-      "rec": "vertikala"
+      "rec": "vertikala",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "grafik",
+        "x": "?",
+        "y": "?",
+        "xmax": 5,
+        "ymax": 10,
+        "linije": [
+          {
+            "t": [
+              [
+                0,
+                0
+              ],
+              [
+                4,
+                8
+              ]
+            ]
+          }
+        ]
+      }
     },
     {
       "lekcija": 9,
@@ -2595,7 +3095,11 @@
         "Dve paralelne prave za prikaz dva tela"
       ],
       "zanimljivost": "Koordinatni sistem koristimo i na mapama – geografska širina i dužina.",
-      "rec": "koordinate"
+      "rec": "koordinate",
+      "mediji": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 320 200' xmlns='http://www.w3.org/2000/svg'><line x1='30' y1='150' x2='300' y2='150' stroke='#fff' stroke-width='3'/><polygon points='300,150 290,145 290,155' fill='#fff'/><line x1='40' y1='180' x2='40' y2='15' stroke='#fff' stroke-width='3'/><polygon points='40,12 35,22 45,22' fill='#fff'/><text x='300' y='140' font-size='16' fill='#fff' text-anchor='start'>x</text><text x='52' y='22' font-size='16' fill='#fff' text-anchor='start'>y</text><circle cx='120' cy='90' r='4' fill='#fff' stroke='#fff' stroke-width='1'/></svg>"
+      }
     },
     {
       "lekcija": 9,
@@ -2641,7 +3145,7 @@
         "Vreme kretanja",
         "Pređeni put"
       ],
-      "zanimljivost": "Nagib prave na grafiku $s(t)$ je put podeljen vremenom: 20 m za 4 s daje 5 m/s.",
+      "zanimljivost": "Vozač na auto-putu za sat vremena pređe 120 km – to je nagib prave na grafiku s(t) od 120 km/h.",
       "rec": "nagib",
       "medijiOdgovora": {
         "vrsta": "fizika",
@@ -2792,7 +3296,18 @@
         "Samo zvuk, bez promene kretanja ili oblika"
       ],
       "zanimljivost": "Kad šutneš loptu, menjaš joj i brzinu i (na trenutak) oblik – lopta se ugne.",
-      "rec": "sila"
+      "rec": "sila",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "sile",
+        "sile": [
+          {
+            "F": 20,
+            "ugao": 0
+          }
+        ],
+        "e": "⚽"
+      }
     },
     {
       "lekcija": 10,
@@ -2818,7 +3333,18 @@
         "Samo vreme tokom kojeg ta sila deluje na telo"
       ],
       "zanimljivost": "Zato se sila crta strelicom – dužina strelice pokazuje intenzitet, a vrh smer.",
-      "rec": "strelica"
+      "rec": "strelica",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "sile",
+        "sile": [
+          {
+            "F": 40,
+            "ugao": 30,
+            "o": "?"
+          }
+        ]
+      }
     },
     {
       "lekcija": 10,
@@ -2831,7 +3357,11 @@
         "Merač brzine"
       ],
       "zanimljivost": "Najjednostavniji dinamometar je opruga sa skalom – što je sila veća, opruga se više istegne.",
-      "rec": "dinamometar"
+      "rec": "dinamometar",
+      "medijiOdgovora": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 230 252' xmlns='http://www.w3.org/2000/svg'><rect x='50' y='10' width='60' height='220' rx='10' fill='none' stroke='#fff' stroke-width='3'/><line x1='110' y1='200' x2='122' y2='200' stroke='#fff' stroke-width='2'/><text x='130' y='206' font-size='16' fill='#fff' text-anchor='start'>0</text><line x1='110' y1='168' x2='122' y2='168' stroke='#fff' stroke-width='2'/><text x='130' y='174' font-size='16' fill='#fff' text-anchor='start'>1</text><line x1='110' y1='136' x2='122' y2='136' stroke='#fff' stroke-width='2'/><text x='130' y='142' font-size='16' fill='#fff' text-anchor='start'>2</text><line x1='110' y1='104' x2='122' y2='104' stroke='#fff' stroke-width='2'/><text x='130' y='110' font-size='16' fill='#fff' text-anchor='start'>3</text><line x1='110' y1='72' x2='122' y2='72' stroke='#fff' stroke-width='2'/><text x='130' y='78' font-size='16' fill='#fff' text-anchor='start'>4</text><line x1='110' y1='40' x2='122' y2='40' stroke='#fff' stroke-width='2'/><text x='130' y='46' font-size='16' fill='#fff' text-anchor='start'>5</text><polyline points='94,24.0 66,30.7 94,37.3 66,44.0 94,50.7 66,57.3 94,64.0 66,70.7 94,77.3 66,84.0 94,90.7 66,97.3 94,104.0' fill='none' stroke='#ffeaa7' stroke-width='2.5'/><line x1='52' y1='104' x2='108' y2='104' stroke='#ef476f' stroke-width='3'/></svg>"
+      }
     },
     {
       "lekcija": 10,
@@ -2844,7 +3374,12 @@
         "Sila deluje samo pri dodiru, nikad na daljinu"
       ],
       "zanimljivost": "Magnet privlači ekser kroz papir, a Zemlja Mesec kroz prazan prostor.",
-      "rec": "daljina"
+      "rec": "daljina",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "naelektrisanje",
+        "znaci": "+-"
+      }
     },
     {
       "lekcija": 10,
@@ -2902,20 +3437,47 @@
         "Električno privlačenje kose"
       ],
       "zanimljivost": "Pri sudaru dve bilijarske kugle deluju jedna na drugu dodirom – samo delić sekunde.",
-      "rec": "dodir"
+      "rec": "dodir",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "sile",
+        "sile": [
+          {
+            "F": 30,
+            "ugao": 0
+          }
+        ],
+        "e": "🛒",
+        "kretanje": true
+      }
     },
     {
       "lekcija": 10,
       "tezina": 2,
       "pitanje": "Šta je međudelovanje tela?",
       "odgovori": [
-        "Kada jedno telo deluje na drugo, a drugo ostaje bez uticaja",
-        "Kada se tela ne dodiruju, pa ne deluju jedno na drugo",
-        "Kada tela imaju istu brzinu",
-        "Kada tela imaju istu boju"
+        "Tela deluju jedno na drugo silama istog intenziteta",
+        "Jedno telo deluje na drugo, a drugo ostaje bez uticaja",
+        "Tela se ne dodiruju, pa ne mogu da deluju jedno na drugo",
+        "Tela imaju istu brzinu, pa se ne mogu pomeriti"
       ],
       "zanimljivost": "Kada odgurneš zid, i zid gura tebe – zato na klizaljkama odletiš unazad.",
-      "rec": "uzajamno"
+      "rec": "uzajamno",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "reakcija",
+        "tip": "klizaci",
+        "levo": {
+          "e": "🧑",
+          "m": 60,
+          "o": "60 kg"
+        },
+        "desno": {
+          "e": "🧑",
+          "m": 50,
+          "o": "50 kg"
+        }
+      }
     },
     {
       "lekcija": 10,
@@ -2929,7 +3491,7 @@
       ],
       "zanimljivost": "Knjiga na stolu miruje jer su sila Zemljine teže i sila stola uravnotežene.",
       "rec": "ravnoteža",
-      "medijiOdgovora": {
+      "mediji": {
         "vrsta": "fizika",
         "scena": "sile",
         "sile": [
@@ -2998,6 +3560,20 @@
         ],
         "rezultanta": "60 N",
         "kretanje": true
+      },
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "sile",
+        "sile": [
+          {
+            "F": 30,
+            "ugao": 0
+          },
+          {
+            "F": 30,
+            "ugao": 0
+          }
+        ]
       }
     },
     {
@@ -3011,7 +3587,19 @@
         "Promene temperature"
       ],
       "zanimljivost": "Ako sila prestane, a opruga se vrati u prvobitni oblik, deformacija je bila elastična.",
-      "rec": "opruga"
+      "rec": "opruga",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "opruga",
+        "tip": "istezanje",
+        "koraci": [
+          {
+            "F": "5 N",
+            "dl": 3,
+            "o": "?"
+          }
+        ]
+      }
     },
     {
       "lekcija": 10,
@@ -3024,7 +3612,13 @@
         "Samo na tela koja se kreću"
       ],
       "zanimljivost": "I vazduh ima težinu – vazdušni omotač „pritiska“ na nas težinom.",
-      "rec": "teža"
+      "rec": "teža",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "pad",
+        "tip": "slobodan",
+        "visina": 10
+      }
     },
     {
       "lekcija": 10,
@@ -3037,7 +3631,18 @@
         "Njegova masa se smanji"
       ],
       "zanimljivost": "Fudbalska lopta pri jakom šutu dobije brzinu i preko 100 km/h za delić sekunde.",
-      "rec": "ubrzanje"
+      "rec": "ubrzanje",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "sile",
+        "sile": [
+          {
+            "F": 20,
+            "ugao": 0
+          }
+        ],
+        "e": "🛷"
+      }
     },
     {
       "lekcija": 10,
@@ -3068,7 +3673,19 @@
         "200 N"
       ],
       "zanimljivost": "Zemljina gravitacija deluje i na Mesec i drži ga na putanji oko Zemlje.",
-      "rec": "teža"
+      "rec": "teža",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "sile",
+        "sile": [
+          {
+            "F": 20,
+            "ugao": 270,
+            "o": "?"
+          }
+        ],
+        "telo": "2 kg"
+      }
     },
     {
       "lekcija": 11,
@@ -3081,7 +3698,24 @@
         "Helijum je tako lak da ga gravitacija ne privlači"
       ],
       "zanimljivost": "Gravitacija deluje na sva tela, ali ponekad je savladaju druge sile – potisak, uzgon krila aviona ili mišići ptice.",
-      "rec": "balon"
+      "rec": "balon",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "sile",
+        "sile": [
+          {
+            "F": 40,
+            "ugao": 90,
+            "o": "?"
+          },
+          {
+            "F": 20,
+            "ugao": 270,
+            "o": "?"
+          }
+        ],
+        "e": "🎈"
+      }
     },
     {
       "lekcija": 11,
@@ -3094,7 +3728,11 @@
         "Električna sila"
       ],
       "zanimljivost": "Gravitaciono privlačenje između dva čoveka postoji, ali je toliko slabo da ga ne osećamo.",
-      "rec": "gravitacija"
+      "rec": "gravitacija",
+      "mediji": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 320 180' xmlns='http://www.w3.org/2000/svg'><circle cx='100' cy='90' r='34' fill='none' stroke='#fff' stroke-width='3'/><circle cx='220' cy='90' r='34' fill='none' stroke='#fff' stroke-width='3'/><text x='100' y='96' font-size='16' fill='#fff' text-anchor='middle'>m₁</text><text x='220' y='96' font-size='16' fill='#fff' text-anchor='middle'>m₂</text><line x1='140' y1='90' x2='176' y2='90' stroke='#fff' stroke-width='3'/><polygon points='176,90 166,85 166,95' fill='#fff'/><line x1='180' y1='90' x2='144' y2='90' stroke='#fff' stroke-width='3'/><polygon points='144,90 154,85 154,95' fill='#fff'/></svg>"
+      }
     },
     {
       "lekcija": 11,
@@ -3107,7 +3745,23 @@
         "Nikola Tesla"
       ],
       "zanimljivost": "Prema priči, Njutna je na ideju navela jabuka koja je pala sa drveta u bašti njegove porodice.",
-      "rec": "njutn"
+      "rec": "njutn",
+      "medijiOdgovora": {
+        "vrsta": "lenta",
+        "od": 1600,
+        "do": 1950,
+        "dogadjaji": [
+          {
+            "g": 1687,
+            "t": "Principia",
+            "ist": true
+          },
+          {
+            "g": 1915,
+            "t": "Opšta relativnost"
+          }
+        ]
+      }
     },
     {
       "lekcija": 11,
@@ -3120,7 +3774,11 @@
         "Na Zemlji, jer je najveća planeta"
       ],
       "zanimljivost": "Na površini Sunca bi telo bilo oko 28 puta teže nego na Zemlji.",
-      "rec": "sunce"
+      "rec": "sunce",
+      "medijiOdgovora": {
+        "vrsta": "planeta",
+        "ime": "sunce"
+      }
     },
     {
       "lekcija": 11,
@@ -3133,7 +3791,41 @@
         "Ostaje ista na svakom rastojanju, ali slabi sa visinom"
       ],
       "zanimljivost": "Na visini Međunarodne svemirske stanice gravitacija je još oko 90% od one na površini – astronauti lebde jer stalno padaju oko Zemlje.",
-      "rec": "rastojanje"
+      "rec": "rastojanje",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "grafik",
+        "x": "r (m)",
+        "y": "F (N)",
+        "xmax": 6,
+        "ymax": 8,
+        "linije": [
+          {
+            "t": [
+              [
+                1,
+                8
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                0.9
+              ],
+              [
+                4,
+                0.5
+              ],
+              [
+                6,
+                0.2
+              ]
+            ]
+          }
+        ]
+      }
     },
     {
       "lekcija": 11,
@@ -3190,7 +3882,11 @@
         "Od njihovih masa, ali ne i rastojanja"
       ],
       "zanimljivost": "Njutn je zakon gravitacije objavio 1687. u delu „Principia“.",
-      "rec": "masa"
+      "rec": "masa",
+      "mediji": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 320 180' xmlns='http://www.w3.org/2000/svg'><circle cx='100' cy='80' r='34' fill='none' stroke='#fff' stroke-width='3'/><circle cx='220' cy='80' r='34' fill='none' stroke='#fff' stroke-width='3'/><text x='100' y='86' font-size='16' fill='#fff' text-anchor='middle'>m₁</text><text x='220' y='86' font-size='16' fill='#fff' text-anchor='middle'>m₂</text><line x1='134' y1='150' x2='186' y2='150' stroke='#fff' stroke-width='3'/><polygon points='186,150 176,145 176,155' fill='#fff'/><line x1='186' y1='150' x2='134' y2='150' stroke='#fff' stroke-width='3'/><polygon points='134,150 144,145 144,155' fill='#fff'/><text x='160' y='172' font-size='16' fill='#fff' text-anchor='middle'>r = ?</text></svg>"
+      }
     },
     {
       "lekcija": 11,
@@ -3203,7 +3899,11 @@
         "Ista je"
       ],
       "zanimljivost": "Astronaut sa opremom mase 150 kg na Mesecu ima težinu kao da nosi oko 25 kg – ali ga masa i dalje sprečava da lako menja brzinu.",
-      "rec": "skakanje"
+      "rec": "skakanje",
+      "medijiOdgovora": {
+        "vrsta": "planeta",
+        "ime": "mesec"
+      }
     },
     {
       "lekcija": 11,
@@ -3248,7 +3948,7 @@
       ],
       "zanimljivost": "Najjači bacači mogu da bace loptu desetinama metara uvis, ali ona se uvek vrati.",
       "rec": "lopta",
-      "medijiOdgovora": {
+      "mediji": {
         "vrsta": "fizika",
         "scena": "pad",
         "tip": "navise",
@@ -3266,7 +3966,19 @@
         "Inercija"
       ],
       "zanimljivost": "Težina se meri u njutnima, a masa u kilogramima – to nije isto!",
-      "rec": "težina"
+      "rec": "težina",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "sile",
+        "sile": [
+          {
+            "F": 30,
+            "ugao": 270,
+            "o": "?"
+          }
+        ],
+        "telo": "kutija"
+      }
     },
     {
       "lekcija": 11,
@@ -3279,7 +3991,11 @@
         "Na sredini između pola i ekvatora"
       ],
       "zanimljivost": "Na polu je čovek oko 0,5% teži nego na ekvatoru – zbog oblika i okretanja Zemlje.",
-      "rec": "pol"
+      "rec": "pol",
+      "mediji": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 320 220' xmlns='http://www.w3.org/2000/svg'><circle cx='160' cy='115' r='85' fill='none' stroke='#fff' stroke-width='3'/><line x1='160' y1='20' x2='160' y2='210' stroke='#fff' stroke-width='2' stroke-dasharray='6 5'/><circle cx='160' cy='30' r='5' fill='#fff' stroke='#fff' stroke-width='3'/><text x='190' y='26' font-size='16' fill='#fff' text-anchor='start'>pol</text><circle cx='245' cy='115' r='5' fill='#fff' stroke='#fff' stroke-width='3'/><text x='255' y='120' font-size='16' fill='#fff' text-anchor='start'>ekvator</text></svg>"
+      }
     },
     {
       "lekcija": 11,
@@ -3309,7 +4025,12 @@
         "Sila elastičnosti"
       ],
       "zanimljivost": "Istoimena naelektrisanja se odbijaju, a raznoimena privlače. Protrljan balon se zato „lepi“ za zid ili kosu.",
-      "rec": "elektron"
+      "rec": "elektron",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "naelektrisanje",
+        "znaci": "+-"
+      }
     },
     {
       "lekcija": 12,
@@ -3322,7 +4043,16 @@
         "Samo predmete koji su topli"
       ],
       "zanimljivost": "Magnetna sila deluje i kroz papir, staklo i vodu. Zato magnetom možeš pomerati spajalicu kroz sto.",
-      "rec": "magnet"
+      "rec": "magnet",
+      "medijiOdgovora": {
+        "vrsta": "laboratorija",
+        "scena": "magnet",
+        "uzorci": [
+          "Fe",
+          "Cu",
+          "Al"
+        ]
+      }
     },
     {
       "lekcija": 12,
@@ -3353,7 +4083,12 @@
         "Postane teži"
       ],
       "zanimljivost": "Isto se dešava sa plastičnim češljem – može čak da savije tanak mlaz vode iz slavine.",
-      "rec": "balon"
+      "rec": "balon",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "naelektrisanje",
+        "tip": "elektroskop"
+      }
     },
     {
       "lekcija": 12,
@@ -3366,7 +4101,12 @@
         "Levi i desni"
       ],
       "zanimljivost": "Ako magnet prepoloviš, dobićeš dva nova magneta – svaki sa oba pola.",
-      "rec": "polovi"
+      "rec": "polovi",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "magnet",
+        "tip": "sipka"
+      }
     },
     {
       "lekcija": 12,
@@ -3398,7 +4138,19 @@
         "Faradej"
       ],
       "zanimljivost": "Volt je dobio ime po italijanskom fizičaru Aleksandru Volti, koji je napravio prvu bateriju 1800.",
-      "rec": "volta"
+      "rec": "volta",
+      "medijiOdgovora": {
+        "vrsta": "lenta",
+        "od": 1780,
+        "do": 1830,
+        "dogadjaji": [
+          {
+            "g": 1800,
+            "t": "Prva baterija",
+            "ist": true
+          }
+        ]
+      }
     },
     {
       "lekcija": 12,
@@ -3429,7 +4181,13 @@
         "Isparavanje vode iz oblaka i mora"
       ],
       "zanimljivost": "Munja se zagreje i do 30.000 °C – pet puta toplije od površine Sunca.",
-      "rec": "munja"
+      "rec": "munja",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "naelektrisanje",
+        "tip": "polje",
+        "dipol": true
+      }
     },
     {
       "lekcija": 12,
@@ -3442,7 +4200,11 @@
         "Isak Njutn"
       ],
       "zanimljivost": "Frenklin je dokazao da je munja električna pojava čuvenim ogledom sa zmajem tokom oluje – vrlo opasnim!",
-      "rec": "gromobran"
+      "rec": "gromobran",
+      "mediji": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 320 200' xmlns='http://www.w3.org/2000/svg'><line x1='0' y1='190' x2='320' y2='190' stroke='#fff' stroke-width='2'/><polygon points='100,120 160,70 220,120' fill='none' stroke='#fff' stroke-width='3'/><rect x='110' y='120' width='100' height='70' fill='none' stroke='#fff' stroke-width='3'/><line x1='160' y1='70' x2='160' y2='28' stroke='#fff' stroke-width='3'/><circle cx='160' cy='26' r='3' fill='#fff' stroke='#fff' stroke-width='3'/><ellipse cx='70' cy='28' rx='50' ry='16' fill='none' stroke='#fff' stroke-width='3'/><polyline points='118,38 136,50 126,54 150,30' fill='none' stroke='#ffeaa7' stroke-width='3'/></svg>"
+      }
     },
     {
       "lekcija": 12,
@@ -3455,7 +4217,14 @@
         "Ne postoji"
       ],
       "zanimljivost": "Električna sila između elektrona i protona jača je od gravitacione između njih neverovatnih 10³⁹ puta.",
-      "rec": "jačina"
+      "rec": "jačina",
+      "mediji": {
+        "vrsta": "atom",
+        "ljuske": [
+          1
+        ],
+        "jezgro": "1+"
+      }
     },
     {
       "lekcija": 12,
@@ -3480,7 +4249,7 @@
         "Samo voda i drugi tečni rastvori soli",
         "Samo tela sa vrlo glatkom površinom"
       ],
-      "zanimljivost": "Reč elektricitet potiče od grčke reči elektron – ćilibar, koji su Grci trljali i privlačili perca.",
+      "zanimljivost": "Reč elektricitet potiče od grčke reči elektron – ćilibar, koji su stari Grci trljali i zatim privlačili sitne komadiće slame i perje.",
       "rec": "ćilibar"
     },
     {
@@ -3494,7 +4263,11 @@
         "Počne da privlači drvo i staklo"
       ],
       "zanimljivost": "Temperatura na kojoj gvožđe prestaje da bude magnetno zove se Kirijeva tačka – oko 770 °C.",
-      "rec": "toplota"
+      "rec": "toplota",
+      "medijiOdgovora": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 320 200' xmlns='http://www.w3.org/2000/svg'><rect x='100' y='110' width='60' height='24' fill='#e74c3c'/><rect x='160' y='110' width='60' height='24' fill='#3a86ff'/><text x='160' y='76' font-size='16' fill='#fff' text-anchor='middle'>zagrevanje</text><line x1='160' y1='150' x2='160' y2='150' stroke='#ffeaa7' stroke-width='3'/><polygon points='160,150 170,145 170,155' fill='#ffeaa7'/><text x='160' y='176' font-size='16' fill='#fff' text-anchor='middle'>↑ t</text></svg>"
+      }
     },
     {
       "lekcija": 12,
@@ -3506,7 +4279,7 @@
         "Svetla velikih gradova koja se odbijaju od oblaka i vide se na severu tokom noći",
         "Munje koje stalno sevaju u visokim oblacima iznad polova tokom duge polarne noći"
       ],
-      "zanimljivost": "Polarna svetlost se retko vidi i iz Srbije – desilo se, na primer, u maju 2024. godine.",
+      "zanimljivost": "Polarna svetlost na Severnom polu zove se aurora borealis, a na Južnom aurora australis.",
       "rec": "aurora"
     },
     {
@@ -3520,7 +4293,11 @@
         "Samo ako je magnet vrlo mali"
       ],
       "zanimljivost": "Magnetna sila deluje i kroz staklo, drvo, vodu – zato se magnetići drže na frižideru i preko papira.",
-      "rec": "magnet"
+      "rec": "magnet",
+      "mediji": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 320 200' xmlns='http://www.w3.org/2000/svg'><rect x='60' y='90' width='80' height='20' fill='#e74c3c'/><text x='100' y='80' font-size='16' fill='#fff' text-anchor='middle'>magnet</text><rect x='160' y='40' width='12' height='120' fill='#ffeaa7' fill-opacity='0.35' stroke='#ffeaa7' stroke-width='2'/><text x='166' y='180' font-size='16' fill='#fff' text-anchor='middle'>papir</text><rect x='200' y='96' width='40' height='8' rx='4' fill='none' stroke='#fff' stroke-width='3'/><text x='220' y='80' font-size='16' fill='#fff' text-anchor='middle'>?</text></svg>"
+      }
     },
     {
       "lekcija": 12,
@@ -3564,7 +4341,19 @@
         "Električna sila"
       ],
       "zanimljivost": "Akrobate na trambulini koriste silu elastičnosti mreže. Ako se telo previše istegne, ne vrati se – trajno se deformiše.",
-      "rec": "elastičnost"
+      "rec": "elastičnost",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "opruga",
+        "tip": "istezanje",
+        "koraci": [
+          {
+            "F": "2 N",
+            "dl": 2,
+            "o": "?"
+          }
+        ]
+      }
     },
     {
       "lekcija": 13,
@@ -3577,7 +4366,19 @@
         "Topljenje tela kada se zagreje, pa promeni oblik"
       ],
       "zanimljivost": "Gumica za kosu i opruga u hemijskoj olovci primeri su elastičnih tela.",
-      "rec": "elastičnost"
+      "rec": "elastičnost",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "opruga",
+        "tip": "istezanje",
+        "koraci": [
+          {
+            "F": "1 N",
+            "dl": 1,
+            "o": "1 cm"
+          }
+        ]
+      }
     },
     {
       "lekcija": 13,
@@ -3638,7 +4439,11 @@
         "Brzina kretanja tela"
       ],
       "zanimljivost": "Dinamometar pokazuje težinu tela okačenog na njega, a ne masu – na Mesecu bi pokazao manje.",
-      "rec": "skala"
+      "rec": "skala",
+      "mediji": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 230 252' xmlns='http://www.w3.org/2000/svg'><rect x='50' y='10' width='60' height='220' rx='10' fill='none' stroke='#fff' stroke-width='3'/><line x1='110' y1='200' x2='122' y2='200' stroke='#fff' stroke-width='2'/><text x='130' y='206' font-size='16' fill='#fff' text-anchor='start'>0</text><line x1='110' y1='168' x2='122' y2='168' stroke='#fff' stroke-width='2'/><text x='130' y='174' font-size='16' fill='#fff' text-anchor='start'>1</text><line x1='110' y1='136' x2='122' y2='136' stroke='#fff' stroke-width='2'/><text x='130' y='142' font-size='16' fill='#fff' text-anchor='start'>2</text><line x1='110' y1='104' x2='122' y2='104' stroke='#fff' stroke-width='2'/><text x='130' y='110' font-size='16' fill='#fff' text-anchor='start'>3</text><line x1='110' y1='72' x2='122' y2='72' stroke='#fff' stroke-width='2'/><text x='130' y='78' font-size='16' fill='#fff' text-anchor='start'>4</text><line x1='110' y1='40' x2='122' y2='40' stroke='#fff' stroke-width='2'/><text x='130' y='46' font-size='16' fill='#fff' text-anchor='start'>5</text><polyline points='94,24.0 66,30.7 94,37.3 66,44.0 94,50.7 66,57.3 94,64.0 66,70.7 94,77.3 66,84.0 94,90.7 66,97.3 94,104.0' fill='none' stroke='#ffeaa7' stroke-width='2.5'/><line x1='52' y1='104' x2='108' y2='104' stroke='#ef476f' stroke-width='3'/><text x='80' y='243' font-size='16' fill='#fff' text-anchor='middle'>?</text></svg>"
+      }
     },
     {
       "lekcija": 13,
@@ -3651,7 +4456,11 @@
         "0,03 kg"
       ],
       "zanimljivost": "Na Mesecu bi isto telo pokazalo oko šest puta manje njutna, a masa bi ostala ista.",
-      "rec": "masa"
+      "rec": "masa",
+      "mediji": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 230 252' xmlns='http://www.w3.org/2000/svg'><rect x='50' y='10' width='60' height='220' rx='10' fill='none' stroke='#fff' stroke-width='3'/><line x1='110' y1='200' x2='122' y2='200' stroke='#fff' stroke-width='2'/><text x='130' y='206' font-size='16' fill='#fff' text-anchor='start'>0</text><line x1='110' y1='168' x2='122' y2='168' stroke='#fff' stroke-width='2'/><text x='130' y='174' font-size='16' fill='#fff' text-anchor='start'>1</text><line x1='110' y1='136' x2='122' y2='136' stroke='#fff' stroke-width='2'/><text x='130' y='142' font-size='16' fill='#fff' text-anchor='start'>2</text><line x1='110' y1='104' x2='122' y2='104' stroke='#fff' stroke-width='2'/><text x='130' y='110' font-size='16' fill='#fff' text-anchor='start'>3</text><line x1='110' y1='72' x2='122' y2='72' stroke='#fff' stroke-width='2'/><text x='130' y='78' font-size='16' fill='#fff' text-anchor='start'>4</text><line x1='110' y1='40' x2='122' y2='40' stroke='#fff' stroke-width='2'/><text x='130' y='46' font-size='16' fill='#fff' text-anchor='start'>5</text><polyline points='94,24.0 66,30.7 94,37.3 66,44.0 94,50.7 66,57.3 94,64.0 66,70.7 94,77.3 66,84.0 94,90.7 66,97.3 94,104.0' fill='none' stroke='#ffeaa7' stroke-width='2.5'/><line x1='52' y1='104' x2='108' y2='104' stroke='#ef476f' stroke-width='3'/><text x='80' y='243' font-size='16' fill='#fff' text-anchor='middle'>3 N</text></svg>"
+      }
     },
     {
       "lekcija": 13,
@@ -3681,6 +4490,18 @@
             "o": "5 cm"
           }
         ]
+      },
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "opruga",
+        "tip": "istezanje",
+        "koraci": [
+          {
+            "F": "4 N",
+            "dl": 2,
+            "o": "2 cm"
+          }
+        ]
       }
     },
     {
@@ -3694,7 +4515,19 @@
         "Magnetna sila"
       ],
       "zanimljivost": "Istegnuta guma „čuva“ energiju koju preda kamenčiću – to je elastična potencijalna energija.",
-      "rec": "praćka"
+      "rec": "praćka",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "opruga",
+        "tip": "istezanje",
+        "koraci": [
+          {
+            "F": "3 N",
+            "dl": 3,
+            "o": "?"
+          }
+        ]
+      }
     },
     {
       "lekcija": 13,
@@ -3707,7 +4540,34 @@
         "Postaje kraća od svoje prvobitne dužine"
       ],
       "zanimljivost": "Zato se ne preporučuje preveliko istezanje ekspandera za vežbanje.",
-      "rec": "granica"
+      "rec": "granica",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "grafik",
+        "x": "F (N)",
+        "y": "Δl (cm)",
+        "xmax": 8,
+        "ymax": 10,
+        "linije": [
+          {
+            "t": [
+              [
+                0,
+                0
+              ],
+              [
+                4,
+                4
+              ],
+              [
+                6,
+                9
+              ]
+            ],
+            "o": "~trajno"
+          }
+        ]
+      }
     },
     {
       "lekcija": 13,
@@ -3720,7 +4580,11 @@
         "Uvek naviše"
       ],
       "zanimljivost": "Trambulina nas izbacuje naviše upravo silom elastičnosti.",
-      "rec": "trambulina"
+      "rec": "trambulina",
+      "medijiOdgovora": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 320 180' xmlns='http://www.w3.org/2000/svg'><rect x='30' y='60' width='12' height='80' fill='none' stroke='#fff' stroke-width='2'/><polyline points='42,100 60,80 80,120 100,80 120,120 140,80 160,120 180,100 200,100' fill='none' stroke='#fff' stroke-width='2.5'/><rect x='200' y='80' width='40' height='40' fill='none' stroke='#fff' stroke-width='3'/><line x1='250' y1='100' x2='300' y2='100' stroke='#74b9ff' stroke-width='3'/><polygon points='300,100 290,95 290,105' fill='#74b9ff'/><line x1='200' y1='140' x2='170' y2='140' stroke='#ef476f' stroke-width='3'/><polygon points='170,140 180,135 180,145' fill='#ef476f'/><text x='160' y='170' font-size='15' fill='#fff' text-anchor='middle'>Fel</text></svg>"
+      }
     },
     {
       "lekcija": 13,
@@ -3746,7 +4610,11 @@
         "U radiju, da pojačava zvuk"
       ],
       "zanimljivost": "Bez amortizera bi svaka rupa na putu bila osećena kao jak udarac.",
-      "rec": "amortizer"
+      "rec": "amortizer",
+      "medijiOdgovora": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 320 200' xmlns='http://www.w3.org/2000/svg'><rect x='40' y='80' width='240' height='44' rx='12' fill='none' stroke='#fff' stroke-width='3'/><path d='M80,80 L100,60 L200,60 L230,80' fill='none' stroke='#fff' stroke-width='3'/><circle cx='90' cy='140' r='22' fill='none' stroke='#fff' stroke-width='3'/><circle cx='230' cy='140' r='22' fill='none' stroke='#fff' stroke-width='3'/><polyline points='230,60 224,68 236,74 224,80 236,86 230,80' fill='none' stroke='#ffeaa7' stroke-width='3'/><text x='160' y='185' font-size='16' fill='#fff' text-anchor='middle'>amortizer</text></svg>"
+      }
     },
     {
       "lekcija": 13,
@@ -3802,7 +4670,19 @@
         "Dobije veću masu zbog istezanja"
       ],
       "zanimljivost": "Opruge u satovima i igračkama na navijanje čuvaju energiju i polako je otpuštaju.",
-      "rec": "opruga"
+      "rec": "opruga",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "opruga",
+        "tip": "istezanje",
+        "koraci": [
+          {
+            "F": "3 N",
+            "dl": 3,
+            "o": "3 cm"
+          }
+        ]
+      }
     },
     {
       "lekcija": 14,
@@ -3868,7 +4748,24 @@
         "Magnetna sila"
       ],
       "zanimljivost": "Bez trenja ne bismo mogli ni da hodamo – noge bi nam klizile kao na savršeno glatkom ledu.",
-      "rec": "trenje"
+      "rec": "trenje",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "sile",
+        "sile": [
+          {
+            "F": 40,
+            "ugao": 0,
+            "o": "40 N"
+          },
+          {
+            "F": 30,
+            "ugao": 180,
+            "o": "?"
+          }
+        ],
+        "telo": "kutija"
+      }
     },
     {
       "lekcija": 14,
@@ -3881,7 +4778,11 @@
         "Pojačavanjem pritiska između delova"
       ],
       "zanimljivost": "Stari Egipćani su sipali vodu na pesak ispred saonica sa kamenim blokovima – mokar pesak smanjuje trenje.",
-      "rec": "ulje"
+      "rec": "ulje",
+      "medijiOdgovora": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 320 200' xmlns='http://www.w3.org/2000/svg'><rect x='60' y='60' width='200' height='70' fill='#fab1a0' opacity='0.6'/><rect x='60' y='130' width='200' height='30' fill='none' stroke='#fff' stroke-width='2'/><rect x='90' y='30' width='60' height='30' fill='none' stroke='#fff' stroke-width='2'/></svg>"
+      }
     },
     {
       "lekcija": 14,
@@ -3927,7 +4828,12 @@
         "Sila elastičnosti"
       ],
       "zanimljivost": "Padobran ima veliku površinu, pa je otpor vazduha veliki i padanje sporo.",
-      "rec": "padobran"
+      "rec": "padobran",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "pad",
+        "tip": "padobran"
+      }
     },
     {
       "pitanje": "Zašto padobran usporava pad padobranca?",
@@ -3958,7 +4864,11 @@
         "Da bi se lakše vidjeli sa daljine"
       ],
       "zanimljivost": "Oblik voza „šinkansen“ u Japanu napravljen je po uzoru na kljun ptice vodomara.",
-      "rec": "oblik"
+      "rec": "oblik",
+      "medijiOdgovora": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 320 200' xmlns='http://www.w3.org/2000/svg'><path d='M30,100 Q60,70 120,90 Q130,100 120,110 Q60,130 30,100 Z' fill='none' stroke='#fff' stroke-width='3'/><rect x='190' y='75' width='80' height='50' fill='none' stroke='#fff' stroke-width='3'/><line x1='10' y1='150' x2='90' y2='150' stroke='#74b9ff' stroke-width='3'/><polygon points='90,150 80,145 80,155' fill='#74b9ff'/><line x1='10' y1='170' x2='90' y2='170' stroke='#74b9ff' stroke-width='3'/><polygon points='90,170 80,165 80,175' fill='#74b9ff'/><line x1='180' y1='150' x2='300' y2='150' stroke='#74b9ff' stroke-width='3'/><polygon points='300,150 290,145 290,155' fill='#74b9ff'/><line x1='180' y1='170' x2='300' y2='170' stroke='#74b9ff' stroke-width='3'/><polygon points='300,170 290,165 290,175' fill='#74b9ff'/></svg>"
+      }
     },
     {
       "lekcija": 14,
@@ -3971,7 +4881,21 @@
         "Zastaje odmah, jer trava drži loptu"
       ],
       "zanimljivost": "Na glatkom terenu lopta se kotrlja duže nego na visokoj travi – trenje je manje.",
-      "rec": "lopta"
+      "rec": "lopta",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "kretanje",
+        "duzina": 30,
+        "tela": [
+          {
+            "e": "⚽",
+            "v": 10,
+            "a": -1,
+            "staza": "~trava",
+            "podloga": "trava"
+          }
+        ]
+      }
     },
     {
       "lekcija": 14,
@@ -3984,7 +4908,28 @@
         "Trenje je jednako nuli"
       ],
       "zanimljivost": "Zato je točak jedan od najvažnijih pronalazaka – lakše je kotrljati nego vući.",
-      "rec": "točak"
+      "rec": "točak",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "kretanje",
+        "duzina": 30,
+        "tela": [
+          {
+            "e": "📦",
+            "v": 10,
+            "a": -6,
+            "staza": "~klizanje",
+            "podloga": "pesak"
+          },
+          {
+            "e": "⚽",
+            "v": 10,
+            "a": -1,
+            "staza": "~kotrljanje",
+            "podloga": "trava"
+          }
+        ]
+      }
     },
     {
       "lekcija": 14,
@@ -3997,7 +4942,19 @@
         "Nije teže – za oba je potrebna potpuno ista sila"
       ],
       "zanimljivost": "Isto se dešava pri pokretanju ormara – „prvi trzaj“ je najteži.",
-      "rec": "mirovanje"
+      "rec": "mirovanje",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "sile",
+        "sile": [
+          {
+            "F": 20,
+            "ugao": 0,
+            "o": "?"
+          }
+        ],
+        "telo": "kutija"
+      }
     },
     {
       "lekcija": 14,
@@ -4010,7 +4967,11 @@
         "Da bi brže trčali po vodi"
       ],
       "zanimljivost": "Gume automobila imaju šare koje odvode vodu – bez njih bi auto „plivao“ po mokrom putu.",
-      "rec": "đon"
+      "rec": "đon",
+      "medijiOdgovora": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 320 180' xmlns='http://www.w3.org/2000/svg'><rect x='40' y='100' width='240' height='28' rx='6' fill='none' stroke='#fff' stroke-width='3'/><line x1='70' y1='128' x2='70' y2='100' stroke='#fff' stroke-width='4'/><line x1='110' y1='128' x2='110' y2='100' stroke='#fff' stroke-width='4'/><line x1='150' y1='128' x2='150' y2='100' stroke='#fff' stroke-width='4'/><line x1='190' y1='128' x2='190' y2='100' stroke='#fff' stroke-width='4'/><line x1='230' y1='128' x2='230' y2='100' stroke='#fff' stroke-width='4'/><text x='160' y='160' font-size='16' fill='#fff' text-anchor='middle'>đon</text></svg>"
+      }
     },
     {
       "lekcija": 14,
@@ -4023,7 +4984,11 @@
         "Zbog hemijske reakcije sa kiseonikom u vazduhu"
       ],
       "zanimljivost": "Toplotni štit kapsule zagreje se i preko 1.500 °C, dok astronautima unutra bude prijatno.",
-      "rec": "štit"
+      "rec": "štit",
+      "medijiOdgovora": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 320 200' xmlns='http://www.w3.org/2000/svg'><path d='M120,40 Q160,20 200,40 L220,140 L100,140 Z' fill='none' stroke='#fff' stroke-width='3'/><line x1='230' y1='80' x2='290' y2='80' stroke='#74b9ff' stroke-width='3'/><polygon points='290,80 280,75 280,85' fill='#74b9ff'/><line x1='230' y1='110' x2='290' y2='110' stroke='#74b9ff' stroke-width='3'/><polygon points='290,110 280,105 280,115' fill='#74b9ff'/><line x1='120' y1='150' x2='200' y2='150' stroke='#fff' stroke-width='3'/><text x='160' y='180' font-size='15' fill='#fff' text-anchor='middle'>trenje o vazduh</text></svg>"
+      }
     },
     {
       "lekcija": 14,
@@ -4036,7 +5001,11 @@
         "Hladi točak, jer trenje stvara hladnoću"
       ],
       "zanimljivost": "Pri naglom kočenju niz brdo kočnice bicikla mogu postati toliko vrele da ne smeš da ih dodirneš.",
-      "rec": "kočnica"
+      "rec": "kočnica",
+      "mediji": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 320 200' xmlns='http://www.w3.org/2000/svg'><circle cx='160' cy='110' r='70' fill='none' stroke='#fff' stroke-width='3'/><circle cx='160' cy='110' r='60' fill='none' stroke='#fff' stroke-width='2'/><rect x='150' y='24' width='20' height='12' fill='none' stroke='#fff' stroke-width='3'/><line x1='120' y1='40' x2='146' y2='40' stroke='#ffeaa7' stroke-width='3'/><polygon points='146,40 136,35 136,45' fill='#ffeaa7'/><text x='160' y='196' font-size='15' fill='#fff' text-anchor='middle'>papuča</text></svg>"
+      }
     },
     {
       "lekcija": 14,
@@ -4049,7 +5018,11 @@
         "Kada auto naglo ubrzava na suvom putu i točkovi proklizaju"
       ],
       "zanimljivost": "Zato se po kiši vozi sporije – kočioni put se znatno produži.",
-      "rec": "akvaplaning"
+      "rec": "akvaplaning",
+      "mediji": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 320 200' xmlns='http://www.w3.org/2000/svg'><rect x='0' y='130' width='320' height='70' fill='#74b9ff' opacity='0.35'/><circle cx='160' cy='90' r='40' fill='none' stroke='#fff' stroke-width='3'/><line x1='60' y1='90' x2='20' y2='90' stroke='#fff' stroke-width='3'/><polygon points='20,90 30,85 30,95' fill='#fff'/><text x='160' y='190' font-size='15' fill='#fff' text-anchor='middle'>voda</text></svg>"
+      }
     },
     {
       "lekcija": 14,
@@ -4075,7 +5048,11 @@
         "Milja"
       ],
       "zanimljivost": "SI sistem ima sedam osnovnih veličina, među njima dužinu, masu, vreme i temperaturu. Sve ostale su izvedene iz njih.",
-      "rec": "metar"
+      "rec": "metar",
+      "mediji": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 360 130' xmlns='http://www.w3.org/2000/svg'><rect x='16' y='50' width='288' height='46' fill='none' stroke='#fff' stroke-width='2'/><line x1='20' y1='50' x2='20' y2='80' stroke='#fff' stroke-width='2'/><text x='20' y='116' font-size='16' fill='#fff' text-anchor='middle'>0</text><line x1='48' y1='50' x2='48' y2='80' stroke='#fff' stroke-width='2'/><text x='48' y='116' font-size='16' fill='#fff' text-anchor='middle'>1</text><line x1='76' y1='50' x2='76' y2='80' stroke='#fff' stroke-width='2'/><text x='76' y='116' font-size='16' fill='#fff' text-anchor='middle'>2</text><line x1='104' y1='50' x2='104' y2='80' stroke='#fff' stroke-width='2'/><text x='104' y='116' font-size='16' fill='#fff' text-anchor='middle'>3</text><line x1='132' y1='50' x2='132' y2='80' stroke='#fff' stroke-width='2'/><text x='132' y='116' font-size='16' fill='#fff' text-anchor='middle'>4</text><line x1='160' y1='50' x2='160' y2='80' stroke='#fff' stroke-width='2'/><text x='160' y='116' font-size='16' fill='#fff' text-anchor='middle'>5</text><line x1='188' y1='50' x2='188' y2='80' stroke='#fff' stroke-width='2'/><text x='188' y='116' font-size='16' fill='#fff' text-anchor='middle'>6</text><line x1='216' y1='50' x2='216' y2='80' stroke='#fff' stroke-width='2'/><text x='216' y='116' font-size='16' fill='#fff' text-anchor='middle'>7</text><line x1='244' y1='50' x2='244' y2='80' stroke='#fff' stroke-width='2'/><text x='244' y='116' font-size='16' fill='#fff' text-anchor='middle'>8</text><line x1='272' y1='50' x2='272' y2='80' stroke='#fff' stroke-width='2'/><text x='272' y='116' font-size='16' fill='#fff' text-anchor='middle'>9</text><line x1='300' y1='50' x2='300' y2='80' stroke='#fff' stroke-width='2'/><text x='300' y='116' font-size='16' fill='#fff' text-anchor='middle'>10</text><text x='314' y='40' font-size='18' fill='#fff' text-anchor='start'>?</text></svg>"
+      }
     },
     {
       "lekcija": 15,
@@ -4088,7 +5065,11 @@
         "Dan"
       ],
       "zanimljivost": "Za merenje kratkih vremenskih intervala koristi se hronometar (štoperica). Digitalni hronometar meri i stote delove sekunde.",
-      "rec": "sekunda"
+      "rec": "sekunda",
+      "mediji": {
+        "vrsta": "sat",
+        "vreme": "3:30"
+      }
     },
     {
       "lekcija": 15,
@@ -4101,7 +5082,11 @@
         "Jednaki su"
       ],
       "zanimljivost": "Porediti se mogu samo iste vrste veličina – dužina sa dužinom, vreme sa vremenom. Ovo je česta „zamka“ u fizici.",
-      "rec": "poređenje"
+      "rec": "poređenje",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "1 m ? 1 s"
+      }
     },
     {
       "lekcija": 15,
@@ -4114,7 +5099,14 @@
         "Njutn (N)"
       ],
       "zanimljivost": "Od 2019. kilogram je definisan preko Plankove konstante, a ne više preko metalnog valjka u Parizu.",
-      "rec": "kilogram"
+      "rec": "kilogram",
+      "mediji": {
+        "vrsta": "laboratorija",
+        "scena": "pribor",
+        "stavke": [
+          "vaga"
+        ]
+      }
     },
     {
       "lekcija": 15,
@@ -4127,7 +5119,20 @@
         "$Om$"
       ],
       "zanimljivost": "Jedinica je nazvana po francuskom fizičaru Andre-Mariju Amperu.",
-      "rec": "amper"
+      "rec": "amper",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "kolo",
+        "veza": "redno",
+        "elementi": [
+          {
+            "t": "sijalica",
+            "o": "4 Ω"
+          }
+        ],
+        "izvor": "12 V",
+        "ampermetar": true
+      }
     },
     {
       "lekcija": 15,
@@ -4153,7 +5158,11 @@
         "Samo vreme, koje se izvodi iz kretanja Sunca po nebu tokom jednog dana"
       ],
       "zanimljivost": "Jedinica brzine m/s „izvedena“ je iz metra i sekunde.",
-      "rec": "izvedena"
+      "rec": "izvedena",
+      "medijiOdgovora": {
+        "vrsta": "formula",
+        "tekst": "v = s / t"
+      }
     },
     {
       "lekcija": 15,
@@ -4166,7 +5175,15 @@
         "Džul"
       ],
       "zanimljivost": "Nula kelvina (–273,15 °C) je najniža moguća temperatura – apsolutna nula.",
-      "rec": "kelvin"
+      "rec": "kelvin",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "termometar",
+        "skale": [
+          "C",
+          "K"
+        ]
+      }
     },
     {
       "lekcija": 15,
@@ -4179,7 +5196,11 @@
         "Milion puta"
       ],
       "zanimljivost": "Kilometar je 1.000 m, kilogram 1.000 g, a „kilobajt“ (u računarstvu) oko 1.000 bajtova.",
-      "rec": "kilo"
+      "rec": "kilo",
+      "medijiOdgovora": {
+        "vrsta": "formula",
+        "tekst": "1 km = 1 000 m"
+      }
     },
     {
       "lekcija": 15,
@@ -4192,7 +5213,11 @@
         "Deseti deo"
       ],
       "zanimljivost": "U jednom metru ima 1.000 milimetara.",
-      "rec": "mili"
+      "rec": "mili",
+      "medijiOdgovora": {
+        "vrsta": "formula",
+        "tekst": "1 mm = 0,001 m"
+      }
     },
     {
       "lekcija": 15,
@@ -4232,10 +5257,14 @@
         "10",
         "100",
         "1.000",
-        "6"
+        "20"
       ],
       "zanimljivost": "Metar je 1791. definisan kao desetmilioniti deo udaljenosti od ekvatora do Severnog pola.",
-      "rec": "metar"
+      "rec": "metar",
+      "medijiOdgovora": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 360 130' xmlns='http://www.w3.org/2000/svg'><rect x='16' y='50' width='288' height='46' fill='none' stroke='#fff' stroke-width='2'/><line x1='20' y1='50' x2='20' y2='80' stroke='#fff' stroke-width='2'/><text x='20' y='116' font-size='16' fill='#fff' text-anchor='middle'>0</text><line x1='48' y1='50' x2='48' y2='66' stroke='#fff' stroke-width='1.5'/><line x1='76' y1='50' x2='76' y2='66' stroke='#fff' stroke-width='1.5'/><line x1='104' y1='50' x2='104' y2='66' stroke='#fff' stroke-width='1.5'/><line x1='132' y1='50' x2='132' y2='66' stroke='#fff' stroke-width='1.5'/><line x1='160' y1='50' x2='160' y2='66' stroke='#fff' stroke-width='1.5'/><line x1='188' y1='50' x2='188' y2='66' stroke='#fff' stroke-width='1.5'/><line x1='216' y1='50' x2='216' y2='66' stroke='#fff' stroke-width='1.5'/><line x1='244' y1='50' x2='244' y2='66' stroke='#fff' stroke-width='1.5'/><line x1='272' y1='50' x2='272' y2='66' stroke='#fff' stroke-width='1.5'/><line x1='300' y1='50' x2='300' y2='80' stroke='#fff' stroke-width='2'/><text x='300' y='116' font-size='16' fill='#fff' text-anchor='middle'>1 m</text></svg>"
+      }
     },
     {
       "lekcija": 15,
@@ -4248,7 +5277,11 @@
         "Mikro"
       ],
       "zanimljivost": "Megapikseli kamere telefona – milioni tačkica slike.",
-      "rec": "mega"
+      "rec": "mega",
+      "medijiOdgovora": {
+        "vrsta": "formula",
+        "tekst": "1 MW = 1 000 000 W"
+      }
     },
     {
       "lekcija": 15,
@@ -4261,7 +5294,11 @@
         "Stoti deo"
       ],
       "zanimljivost": "Prečnik ljudske dlake je oko 70 mikrometara.",
-      "rec": "mikro"
+      "rec": "mikro",
+      "medijiOdgovora": {
+        "vrsta": "formula",
+        "tekst": "1 µm = 0,000001 m"
+      }
     },
     {
       "lekcija": 15,
@@ -4274,7 +5311,11 @@
         "Vreme"
       ],
       "zanimljivost": "Površina se dobija množenjem dve dužine – zato joj je jedinica m².",
-      "rec": "površina"
+      "rec": "površina",
+      "mediji": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 320 200' xmlns='http://www.w3.org/2000/svg'><rect x='90' y='60' width='140' height='90' fill='none' stroke='#fff' stroke-width='3'/><text x='160' y='50' font-size='16' fill='#fff' text-anchor='middle'>a</text><text x='250' y='115' font-size='16' fill='#fff' text-anchor='start'>b</text></svg>"
+      }
     },
     {
       "lekcija": 15,
@@ -4313,7 +5354,11 @@
         "1 litar"
       ],
       "zanimljivost": "Kubni metar je zapremina kocke sa ivicom 1 m. U njega staje 1000 kocaka sa ivicom 1 dm – a svaka je jedan litar.",
-      "rec": "litar"
+      "rec": "litar",
+      "mediji": {
+        "vrsta": "telo",
+        "oblik": "kocka"
+      }
     },
     {
       "lekcija": 16,
@@ -4326,7 +5371,12 @@
         "Ne može se izmeriti – zapremina se meri samo kod pravilnih tela"
       ],
       "zanimljivost": "Ovo je Arhimedova metoda. Po legendi, tako je otkrio da li je kraljeva kruna od čistog zlata.",
-      "rec": "zapremina"
+      "rec": "zapremina",
+      "medijiOdgovora": {
+        "vrsta": "laboratorija",
+        "scena": "menzura",
+        "predmet": "Fe"
+      }
     },
     {
       "lekcija": 16,
@@ -4339,7 +5389,11 @@
         "Termometrom"
       ],
       "zanimljivost": "Najstarija sačuvana merna motka potiče iz Mesopotamije i stara je oko 4.500 godina.",
-      "rec": "lenjir"
+      "rec": "lenjir",
+      "medijiOdgovora": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 360 130' xmlns='http://www.w3.org/2000/svg'><rect x='16' y='50' width='288' height='46' fill='none' stroke='#fff' stroke-width='2'/><line x1='20' y1='50' x2='20' y2='80' stroke='#fff' stroke-width='2'/><text x='20' y='116' font-size='16' fill='#fff' text-anchor='middle'>0</text><line x1='48' y1='50' x2='48' y2='80' stroke='#fff' stroke-width='2'/><text x='48' y='116' font-size='16' fill='#fff' text-anchor='middle'>1</text><line x1='76' y1='50' x2='76' y2='80' stroke='#fff' stroke-width='2'/><text x='76' y='116' font-size='16' fill='#fff' text-anchor='middle'>2</text><line x1='104' y1='50' x2='104' y2='80' stroke='#fff' stroke-width='2'/><text x='104' y='116' font-size='16' fill='#fff' text-anchor='middle'>3</text><line x1='132' y1='50' x2='132' y2='80' stroke='#fff' stroke-width='2'/><text x='132' y='116' font-size='16' fill='#fff' text-anchor='middle'>4</text><line x1='160' y1='50' x2='160' y2='80' stroke='#fff' stroke-width='2'/><text x='160' y='116' font-size='16' fill='#fff' text-anchor='middle'>5</text><line x1='188' y1='50' x2='188' y2='80' stroke='#fff' stroke-width='2'/><text x='188' y='116' font-size='16' fill='#fff' text-anchor='middle'>6</text><line x1='216' y1='50' x2='216' y2='80' stroke='#fff' stroke-width='2'/><text x='216' y='116' font-size='16' fill='#fff' text-anchor='middle'>7</text><line x1='244' y1='50' x2='244' y2='80' stroke='#fff' stroke-width='2'/><text x='244' y='116' font-size='16' fill='#fff' text-anchor='middle'>8</text><line x1='272' y1='50' x2='272' y2='80' stroke='#fff' stroke-width='2'/><text x='272' y='116' font-size='16' fill='#fff' text-anchor='middle'>9</text><line x1='300' y1='50' x2='300' y2='80' stroke='#fff' stroke-width='2'/><text x='300' y='116' font-size='16' fill='#fff' text-anchor='middle'>10</text></svg>"
+      }
     },
     {
       "lekcija": 16,
@@ -4382,7 +5436,11 @@
         "3.000 m²"
       ],
       "zanimljivost": "Fudbalski teren ima površinu oko 7.000 m².",
-      "rec": "dvorište"
+      "rec": "dvorište",
+      "mediji": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 360 250' xmlns='http://www.w3.org/2000/svg'><rect x='40' y='20' width='240' height='180' fill='none' stroke='#fff' stroke-width='2.5'/><text x='160' y='236' font-size='16' fill='#fff' text-anchor='middle'>20 m</text><text x='292' y='115' font-size='16' fill='#fff' text-anchor='start'>15 m</text></svg>"
+      }
     },
     {
       "lekcija": 16,
@@ -4395,7 +5453,11 @@
         "10.000"
       ],
       "zanimljivost": "1 mL je isto što i 1 cm³ – kockica stranice 1 cm.",
-      "rec": "litar"
+      "rec": "litar",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "1 l = ? ml"
+      }
     },
     {
       "lekcija": 16,
@@ -4425,7 +5487,14 @@
       "tezina": 2,
       "zanimljivost": "Pri čitanju menzure oko treba držati u visini površine tečnosti. Voda u uskoj menzuri obrazuje blago udubljenje, pa se čita njegovo dno.",
       "rec": "menzura",
-      "lekcija": 16
+      "lekcija": 16,
+      "medijiOdgovora": {
+        "vrsta": "laboratorija",
+        "scena": "pribor",
+        "stavke": [
+          "menzura"
+        ]
+      }
     },
     {
       "lekcija": 16,
@@ -4438,7 +5507,11 @@
         "Litar (l)"
       ],
       "zanimljivost": "Hektar je 10.000 m² – koristi se za njive i šume.",
-      "rec": "hektar"
+      "rec": "hektar",
+      "medijiOdgovora": {
+        "vrsta": "formula",
+        "tekst": "1 m · 1 m = ?"
+      }
     },
     {
       "lekcija": 16,
@@ -4451,7 +5524,11 @@
         "0,5 m³"
       ],
       "zanimljivost": "1 m³ je 1.000 litara – kada voda napuni toliku kocku, teži jednu tonu.",
-      "rec": "kubik"
+      "rec": "kubik",
+      "mediji": {
+        "vrsta": "telo",
+        "oblik": "kvadar"
+      }
     },
     {
       "lekcija": 16,
@@ -4464,7 +5541,11 @@
         "Kilometar, jer je u sistemu SI"
       ],
       "zanimljivost": "Rimska milja je bila 1.000 dvostrukih koraka rimskih legionara – „mille passus“.",
-      "rec": "milja"
+      "rec": "milja",
+      "medijiOdgovora": {
+        "vrsta": "formula",
+        "tekst": "1 milja ≈ 1,6 km"
+      }
     },
     {
       "lekcija": 16,
@@ -4477,7 +5558,11 @@
         "Starost zvezde od njenog nastanka do danas, u godinama"
       ],
       "zanimljivost": "Najbliža zvezda posle Sunca, Proksima Kentauri, udaljena je oko 4,2 svetlosne godine.",
-      "rec": "svetlost"
+      "rec": "svetlost",
+      "medijiOdgovora": {
+        "vrsta": "formula",
+        "tekst": "1 svetlosna godina ≈ 9,46 · 10^{15} m"
+      }
     },
     {
       "lekcija": 16,
@@ -4490,7 +5575,11 @@
         "10"
       ],
       "zanimljivost": "Prosečna dužina koraka odraslog čoveka je oko 75 cm, pa je 1 km oko 1.300 koraka.",
-      "rec": "kilometar"
+      "rec": "kilometar",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "1 km = ? m"
+      }
     },
     {
       "lekcija": 16,
@@ -4516,7 +5605,11 @@
         "300 litara"
       ],
       "zanimljivost": "Većina flaša za vodu je od 0,5 do 2 litra.",
-      "rec": "litar"
+      "rec": "litar",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "3000 cm³ = ? l"
+      }
     },
     {
       "lekcija": 17,
@@ -4529,7 +5622,11 @@
         "12 puta"
       ],
       "zanimljivost": "Minutna kazaljka se za 24 sata okrene 24 puta, a sekundna čak 1440 puta.",
-      "rec": "kazaljka"
+      "rec": "kazaljka",
+      "mediji": {
+        "vrsta": "sat",
+        "vreme": "12:00"
+      }
     },
     {
       "lekcija": 17,
@@ -4542,7 +5639,11 @@
         "Metronom"
       ],
       "zanimljivost": "U klepsidri voda kaplje iz jedne posude u drugu kroz mali otvor. Koristili su je stari Egipćani i Grci – i u sudovima da bi se ograničilo vreme govora!",
-      "rec": "klepsidra"
+      "rec": "klepsidra",
+      "medijiOdgovora": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox=\"0 0 320 200\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"320\" height=\"200\" fill=\"#0b1826\"/><path d=\"M110,20 L210,20 L160,95 Z\" fill=\"none\" stroke=\"#8fa3b8\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M124,42 L196,42 L172,72 L148,72 Z\" fill=\"#2e86de\" opacity=\".8\"/><path d=\"M110,180 L210,180 L160,105 Z\" fill=\"none\" stroke=\"#8fa3b8\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M138,170 L182,170 L170,146 L150,146 Z\" fill=\"#2e86de\" opacity=\".8\"/><circle cx=\"160\" cy=\"102\" r=\"2.6\" fill=\"#9fd3ff\"/><circle cx=\"160\" cy=\"112\" r=\"2.6\" fill=\"#9fd3ff\"/><circle cx=\"160\" cy=\"122\" r=\"2.6\" fill=\"#9fd3ff\"/><line x1=\"160\" y1=\"20\" x2=\"160\" y2=\"20\" stroke=\"none\"/></svg>"
+      }
     },
     {
       "pitanje": "Koliko sekundi ima jedan dan?",
@@ -4555,7 +5656,11 @@
       "tezina": 2,
       "zanimljivost": "Plimske sile Meseca usporavaju Zemljinu rotaciju, pa se dan produžava za oko 2 milisekunde svakog veka.",
       "rec": "sekunda",
-      "lekcija": 17
+      "lekcija": 17,
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "1 dan = 24 h;  1 h = 60 min;  1 min = 60 s"
+      }
     },
     {
       "lekcija": 17,
@@ -4568,7 +5673,11 @@
         "Instrument za merenje brzine trčanja na stazi"
       ],
       "zanimljivost": "U sportu se danas vreme meri do hiljaditog dela sekunde.",
-      "rec": "štoperica"
+      "rec": "štoperica",
+      "medijiOdgovora": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox=\"0 0 320 200\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"320\" height=\"200\" fill=\"#0b1826\"/><rect x=\"150\" y=\"18\" width=\"20\" height=\"14\" rx=\"3\" fill=\"#8fa3b8\"/><rect x=\"156\" y=\"32\" width=\"8\" height=\"12\" fill=\"#8fa3b8\"/><circle cx=\"160\" cy=\"115\" r=\"72\" fill=\"#13293d\" stroke=\"#8fa3b8\" stroke-width=\"4\"/><line x1=\"160\" y1=\"55\" x2=\"160\" y2=\"59\" stroke=\"#8fa3b8\" stroke-width=\"2.5\"/><line x1=\"166.3\" y1=\"55.3\" x2=\"166.3\" y2=\"55.3\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"172.5\" y1=\"56.3\" x2=\"172.5\" y2=\"56.3\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"178.5\" y1=\"57.9\" x2=\"178.5\" y2=\"57.9\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"184.4\" y1=\"60.2\" x2=\"184.4\" y2=\"60.2\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"190\" y1=\"63\" x2=\"188\" y2=\"66.5\" stroke=\"#8fa3b8\" stroke-width=\"2.5\"/><line x1=\"195.3\" y1=\"66.5\" x2=\"195.3\" y2=\"66.5\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"200.1\" y1=\"70.4\" x2=\"200.1\" y2=\"70.4\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"204.6\" y1=\"74.9\" x2=\"204.6\" y2=\"74.9\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"208.5\" y1=\"79.7\" x2=\"208.5\" y2=\"79.7\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"212\" y1=\"85\" x2=\"208.5\" y2=\"87\" stroke=\"#8fa3b8\" stroke-width=\"2.5\"/><line x1=\"214.8\" y1=\"90.6\" x2=\"214.8\" y2=\"90.6\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"217.1\" y1=\"96.5\" x2=\"217.1\" y2=\"96.5\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"218.7\" y1=\"102.5\" x2=\"218.7\" y2=\"102.5\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"219.7\" y1=\"108.7\" x2=\"219.7\" y2=\"108.7\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"220\" y1=\"115\" x2=\"216\" y2=\"115\" stroke=\"#8fa3b8\" stroke-width=\"2.5\"/><line x1=\"219.7\" y1=\"121.3\" x2=\"219.7\" y2=\"121.3\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"218.7\" y1=\"127.5\" x2=\"218.7\" y2=\"127.5\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"217.1\" y1=\"133.5\" x2=\"217.1\" y2=\"133.5\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"214.8\" y1=\"139.4\" x2=\"214.8\" y2=\"139.4\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"212\" y1=\"145\" x2=\"208.5\" y2=\"143\" stroke=\"#8fa3b8\" stroke-width=\"2.5\"/><line x1=\"208.5\" y1=\"150.3\" x2=\"208.5\" y2=\"150.3\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"204.6\" y1=\"155.1\" x2=\"204.6\" y2=\"155.1\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"200.1\" y1=\"159.6\" x2=\"200.1\" y2=\"159.6\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"195.3\" y1=\"163.5\" x2=\"195.3\" y2=\"163.5\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"190\" y1=\"167\" x2=\"188\" y2=\"163.5\" stroke=\"#8fa3b8\" stroke-width=\"2.5\"/><line x1=\"184.4\" y1=\"169.8\" x2=\"184.4\" y2=\"169.8\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"178.5\" y1=\"172.1\" x2=\"178.5\" y2=\"172.1\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"172.5\" y1=\"173.7\" x2=\"172.5\" y2=\"173.7\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"166.3\" y1=\"174.7\" x2=\"166.3\" y2=\"174.7\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"160\" y1=\"175\" x2=\"160\" y2=\"171\" stroke=\"#8fa3b8\" stroke-width=\"2.5\"/><line x1=\"153.7\" y1=\"174.7\" x2=\"153.7\" y2=\"174.7\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"147.5\" y1=\"173.7\" x2=\"147.5\" y2=\"173.7\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"141.5\" y1=\"172.1\" x2=\"141.5\" y2=\"172.1\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"135.6\" y1=\"169.8\" x2=\"135.6\" y2=\"169.8\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"130\" y1=\"167\" x2=\"132\" y2=\"163.5\" stroke=\"#8fa3b8\" stroke-width=\"2.5\"/><line x1=\"124.7\" y1=\"163.5\" x2=\"124.7\" y2=\"163.5\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"119.9\" y1=\"159.6\" x2=\"119.9\" y2=\"159.6\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"115.4\" y1=\"155.1\" x2=\"115.4\" y2=\"155.1\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"111.5\" y1=\"150.3\" x2=\"111.5\" y2=\"150.3\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"108\" y1=\"145\" x2=\"111.5\" y2=\"143\" stroke=\"#8fa3b8\" stroke-width=\"2.5\"/><line x1=\"105.2\" y1=\"139.4\" x2=\"105.2\" y2=\"139.4\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"102.9\" y1=\"133.5\" x2=\"102.9\" y2=\"133.5\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"101.3\" y1=\"127.5\" x2=\"101.3\" y2=\"127.5\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"100.3\" y1=\"121.3\" x2=\"100.3\" y2=\"121.3\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"100\" y1=\"115\" x2=\"104\" y2=\"115\" stroke=\"#8fa3b8\" stroke-width=\"2.5\"/><line x1=\"100.3\" y1=\"108.7\" x2=\"100.3\" y2=\"108.7\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"101.3\" y1=\"102.5\" x2=\"101.3\" y2=\"102.5\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"102.9\" y1=\"96.5\" x2=\"102.9\" y2=\"96.5\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"105.2\" y1=\"90.6\" x2=\"105.2\" y2=\"90.6\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"108\" y1=\"85\" x2=\"111.5\" y2=\"87\" stroke=\"#8fa3b8\" stroke-width=\"2.5\"/><line x1=\"111.5\" y1=\"79.7\" x2=\"111.5\" y2=\"79.7\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"115.4\" y1=\"74.9\" x2=\"115.4\" y2=\"74.9\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"119.9\" y1=\"70.4\" x2=\"119.9\" y2=\"70.4\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"124.7\" y1=\"66.5\" x2=\"124.7\" y2=\"66.5\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"130\" y1=\"63\" x2=\"132\" y2=\"66.5\" stroke=\"#8fa3b8\" stroke-width=\"2.5\"/><line x1=\"135.6\" y1=\"60.2\" x2=\"135.6\" y2=\"60.2\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"141.5\" y1=\"57.9\" x2=\"141.5\" y2=\"57.9\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"147.5\" y1=\"56.3\" x2=\"147.5\" y2=\"56.3\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"153.7\" y1=\"55.3\" x2=\"153.7\" y2=\"55.3\" stroke=\"#8fa3b8\" stroke-width=\"1\"/><line x1=\"160\" y1=\"115\" x2=\"200\" y2=\"72\" stroke=\"#fd79a8\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"160\" cy=\"115\" r=\"4\" fill=\"#fd79a8\"/><text x=\"160\" y=\"150\" text-anchor=\"middle\" font-size=\"15\" fill=\"#ffeaa7\">12,34 s</text></svg>"
+      }
     },
     {
       "lekcija": 17,
@@ -4581,7 +5690,11 @@
         "Kvarcnim satom"
       ],
       "zanimljivost": "Sunčani sat ne radi noću i po oblačnom vremenu – zato su smislili klepsidre i peščane satove.",
-      "rec": "sunčani"
+      "rec": "sunčani",
+      "medijiOdgovora": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox=\"0 0 320 200\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"320\" height=\"200\" fill=\"#0b1826\"/><ellipse cx=\"160\" cy=\"160\" rx=\"115\" ry=\"26\" fill=\"#2d3e50\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"160\" y1=\"160\" x2=\"275\" y2=\"160\" stroke=\"#8fa3b8\" stroke-width=\"1.5\"/><line x1=\"160\" y1=\"160\" x2=\"259.6\" y2=\"173\" stroke=\"#8fa3b8\" stroke-width=\"1.5\"/><line x1=\"160\" y1=\"160\" x2=\"217.5\" y2=\"182.5\" stroke=\"#8fa3b8\" stroke-width=\"1.5\"/><line x1=\"160\" y1=\"160\" x2=\"160\" y2=\"186\" stroke=\"#8fa3b8\" stroke-width=\"1.5\"/><line x1=\"160\" y1=\"160\" x2=\"102.5\" y2=\"182.5\" stroke=\"#8fa3b8\" stroke-width=\"1.5\"/><line x1=\"160\" y1=\"160\" x2=\"60.4\" y2=\"173\" stroke=\"#8fa3b8\" stroke-width=\"1.5\"/><line x1=\"160\" y1=\"160\" x2=\"45\" y2=\"160\" stroke=\"#8fa3b8\" stroke-width=\"1.5\"/><line x1=\"160\" y1=\"160\" x2=\"60.4\" y2=\"147\" stroke=\"#8fa3b8\" stroke-width=\"1.5\"/><line x1=\"160\" y1=\"160\" x2=\"102.5\" y2=\"137.5\" stroke=\"#8fa3b8\" stroke-width=\"1.5\"/><line x1=\"160\" y1=\"160\" x2=\"160\" y2=\"134\" stroke=\"#8fa3b8\" stroke-width=\"1.5\"/><line x1=\"160\" y1=\"160\" x2=\"217.5\" y2=\"137.5\" stroke=\"#8fa3b8\" stroke-width=\"1.5\"/><line x1=\"160\" y1=\"160\" x2=\"259.6\" y2=\"147\" stroke=\"#8fa3b8\" stroke-width=\"1.5\"/><line x1=\"160\" y1=\"160\" x2=\"252\" y2=\"146\" stroke=\"#ffeaa7\" stroke-width=\"6\" stroke-linecap=\"round\"/><polyline points=\"160,160 160,62\" fill=\"none\" stroke=\"#fff\" stroke-width=\"4\"/><circle cx=\"50\" cy=\"40\" r=\"15\" fill=\"#ffeaa7\"/><line x1=\"50\" y1=\"40\" x2=\"110\" y2=\"82\" stroke=\"#ffeaa7\" stroke-width=\"2\" stroke-dasharray=\"4 4\"/></svg>"
+      }
     },
     {
       "lekcija": 17,
@@ -4594,7 +5707,11 @@
         "Brzinu vetra na otvorenom moru"
       ],
       "zanimljivost": "Na brodovima su se peščanim satovima merila brzina i smene straže.",
-      "rec": "pesak"
+      "rec": "pesak",
+      "mediji": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox=\"0 0 320 200\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"320\" height=\"200\" fill=\"#0b1826\"/><rect x=\"105\" y=\"10\" width=\"110\" height=\"9\" rx=\"2\" fill=\"#8fa3b8\"/><rect x=\"105\" y=\"181\" width=\"110\" height=\"9\" rx=\"2\" fill=\"#8fa3b8\"/><path d=\"M115,19 L205,19 L168,100 L205,181 L115,181 L152,100 Z\" fill=\"rgba(116,185,255,.14)\" stroke=\"#74b9ff\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M132,22 L188,22 L170,60 L150,60 Z\" fill=\"#ffeaa7\"/><path d=\"M140,180 L180,180 L172,150 L148,150 Z\" fill=\"#ffeaa7\"/><line x1=\"160\" y1=\"60\" x2=\"160\" y2=\"146\" stroke=\"#ffeaa7\" stroke-width=\"2.5\" stroke-dasharray=\"3 3\"/></svg>"
+      }
     },
     {
       "lekcija": 17,
@@ -4607,7 +5724,26 @@
         "Mehanički satovi sa klatnom"
       ],
       "zanimljivost": "Najbolji atomski satovi pogrešili bi manje od jedne sekunde za starost svemira.",
-      "rec": "atomski"
+      "rec": "atomski",
+      "medijiOdgovora": {
+        "vrsta": "lenta",
+        "od": 1600,
+        "do": 1980,
+        "dogadjaji": [
+          {
+            "g": 1656,
+            "t": "Sat sa klatnom"
+          },
+          {
+            "g": 1927,
+            "t": "Kvarcni sat"
+          },
+          {
+            "g": 1955,
+            "t": "Atomski sat"
+          }
+        ]
+      }
     },
     {
       "lekcija": 17,
@@ -4620,7 +5756,11 @@
         "1.000"
       ],
       "zanimljivost": "Jedan dan ima 86.400 sekundi.",
-      "rec": "sekunde"
+      "rec": "sekunde",
+      "mediji": {
+        "vrsta": "sat",
+        "vreme": "9:00"
+      }
     },
     {
       "lekcija": 17,
@@ -4633,7 +5773,11 @@
         "Vreme od izlaska do zalaska Sunca"
       ],
       "zanimljivost": "Nekada su dani bili kraći: pre 400 miliona godina dan je trajao oko 22 sata.",
-      "rec": "dan"
+      "rec": "dan",
+      "mediji": {
+        "vrsta": "planeta",
+        "ime": "zemlja"
+      }
     },
     {
       "lekcija": 17,
@@ -4646,7 +5790,11 @@
         "Vreme između dva pomračenja Sunca"
       ],
       "zanimljivost": "Godina traje oko 365,25 dana – zato svake četvrte godine imamo prestupnu godinu sa 29. februarom.",
-      "rec": "godina"
+      "rec": "godina",
+      "medijiOdgovora": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox=\"0 0 320 200\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"320\" height=\"200\" fill=\"#0b1826\"/><circle cx=\"160\" cy=\"100\" r=\"80\" fill=\"none\" stroke=\"#8fa3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 5\"/><circle cx=\"160\" cy=\"100\" r=\"22\" fill=\"#ffeaa7\"/><circle cx=\"240\" cy=\"100\" r=\"9\" fill=\"#74b9ff\"/><path d=\"M160,20 A80,80 0 0 1 240,100\" fill=\"none\" stroke=\"#55efc4\" stroke-width=\"2.5\"/><polygon points=\"240,100 231,93 234,101 224,104\" fill=\"#55efc4\" transform=\"rotate(0 240 100)\"/></svg>"
+      }
     },
     {
       "lekcija": 17,
@@ -4659,7 +5807,12 @@
         "Sunčanim satom u svojoj radionici"
       ],
       "zanimljivost": "Galilej je vreme merio i sopstvenim pulsom – tako je otkrio da zamah klatna uvek traje jednako dugo.",
-      "rec": "voda"
+      "rec": "voda",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "klatno",
+        "ugao": 25
+      }
     },
     {
       "pitanje": "Koliko minuta ima u jednom danu?",
@@ -4672,7 +5825,11 @@
       "tezina": 2,
       "zanimljivost": "$24 · 60 = 1.440$ minuta. A godina ima preko pola miliona minuta – oko 525.600.",
       "rec": "minut",
-      "lekcija": 17
+      "lekcija": 17,
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "1 dan = 24 h;  1 h = 60 min;  1 dan = ? min"
+      }
     },
     {
       "lekcija": 17,
@@ -4685,7 +5842,11 @@
         "15"
       ],
       "zanimljivost": "Školski čas obično traje 45 minuta – „školski sat“.",
-      "rec": "minut"
+      "rec": "minut",
+      "medijiOdgovora": {
+        "vrsta": "sat",
+        "vreme": "6:30"
+      }
     },
     {
       "lekcija": 17,
@@ -4698,7 +5859,11 @@
         "Oko 190 godina"
       ],
       "zanimljivost": "Sunce je udaljeno oko 150 miliona $km$.",
-      "rec": "sunce"
+      "rec": "sunce",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "s = 150 000 000 km;  v = 900 km/h;  t = ?"
+      }
     },
     {
       "lekcija": 17,
@@ -4711,7 +5876,11 @@
         "Svi pokazuju isto vreme u svakom delu sveta"
       ],
       "zanimljivost": "Kod mehaničkih satova to je klatno ili opruga, kod kvarcnih – titranje kristala kvarca.",
-      "rec": "ponavljanje"
+      "rec": "ponavljanje",
+      "mediji": {
+        "vrsta": "sat",
+        "vreme": "10:10"
+      }
     },
     {
       "lekcija": 17,
@@ -4724,7 +5893,18 @@
         "Sekunda koja se oduzima od sata za jedan dan svake godine"
       ],
       "zanimljivost": "Od 1972. dodato je 27 prestupnih sekundi; odlučeno je da se do 2035. ova praksa ukine.",
-      "rec": "sekunda"
+      "rec": "sekunda",
+      "mediji": {
+        "vrsta": "lenta",
+        "od": 1970,
+        "do": 2040,
+        "dogadjaji": [
+          {
+            "g": 1972,
+            "t": "Prve prestupne sekunde"
+          }
+        ]
+      }
     },
     {
       "lekcija": 17,
@@ -4737,7 +5917,11 @@
         "Sat u kome voda kaplje kroz kvarcni filter i pokreće kazaljke"
       ],
       "zanimljivost": "Kristal u ručnom satu titra tačno 32.768 puta u sekundi.",
-      "rec": "kvarc"
+      "rec": "kvarc",
+      "medijiOdgovora": {
+        "vrsta": "formula",
+        "tekst": "f = 32 768 Hz"
+      }
     },
     {
       "lekcija": 18,
@@ -4750,7 +5934,11 @@
         "Greška u računanju površine ili zapremine iz merenja"
       ],
       "zanimljivost": "Nijedno merenje nije savršeno tačno. Zato se meri više puta, pa se uzima srednja vrednost.",
-      "rec": "greška"
+      "rec": "greška",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "prava dužina: 10 cm;  izmereno: 10,3 cm"
+      }
     },
     {
       "lekcija": 18,
@@ -4763,7 +5951,11 @@
         "Da, ako se koristi digitalni instrument sa mnogo cifara"
       ],
       "zanimljivost": "Čak i najbolji instrumenti imaju granicu tačnosti – greška se samo može smanjiti.",
-      "rec": "greška"
+      "rec": "greška",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "merenja: 14,2 cm · 14,3 cm · 14,2 cm"
+      }
     },
     {
       "pitanje": "Ko je napravio prvi praktično upotrebljiv sat sa klatnom (1656)?",
@@ -4774,9 +5966,14 @@
         "Blez Paskal"
       ],
       "tezina": 3,
-      "zanimljivost": "Galilej je primetio da klatno uvek osciluje isto vreme, a Holanđanin Hajgens je tu ideju iskoristio za sat koji greši samo nekoliko sekundi dnevno.",
+      "zanimljivost": "Galilej je primetio da klatno uvek osciluje jednako dugo, a Holanđanin Hajgens je tu ideju iskoristio za prvi precizan sat sa klatnom.",
       "rec": "klatno",
-      "lekcija": 18
+      "lekcija": 18,
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "klatno",
+        "ugao": 15
+      }
     },
     {
       "lekcija": 18,
@@ -4789,7 +5986,11 @@
         "Greška izražena u jedinicama, npr. u $cm$"
       ],
       "zanimljivost": "Relativna greška se često izražava u procentima i pokazuje koliko je merenje „dobro“.",
-      "rec": "relativna"
+      "rec": "relativna",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "Δx = 0,1 cm;  x = 20 cm"
+      }
     },
     {
       "lekcija": 18,
@@ -4802,7 +6003,11 @@
         "Ne može se reći"
       ],
       "zanimljivost": "Relativna greška kod sobe je 0,2%, a kod olovke čak 10%.",
-      "rec": "procenat"
+      "rec": "procenat",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "soba: 5 m ± 1 cm;  olovka: 10 cm ± 1 cm"
+      }
     },
     {
       "lekcija": 18,
@@ -4815,7 +6020,11 @@
         "Zaokruživanjem svih rezultata na cele brojeve"
       ],
       "zanimljivost": "Na takmičenjima u skijaškim skokovima zato ocenjuje više sudija, a najviša i najniža ocena se odbace.",
-      "rec": "srednja"
+      "rec": "srednja",
+      "medijiOdgovora": {
+        "vrsta": "formula",
+        "tekst": "srednja = (x₁ + x₂ + … + xₙ) : n"
+      }
     },
     {
       "lekcija": 18,
@@ -4828,7 +6037,11 @@
         "Dodirom prsta, da se ne pomeri kazaljka"
       ],
       "zanimljivost": "Greška zbog gledanja iskosa zove se greška paralakse.",
-      "rec": "paralaksa"
+      "rec": "paralaksa",
+      "medijiOdgovora": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox=\"0 0 320 200\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"320\" height=\"200\" fill=\"#0b1826\"/><line x1=\"60\" y1=\"150\" x2=\"260\" y2=\"150\" stroke=\"#dfe6e9\" stroke-width=\"5\"/><line x1=\"60\" y1=\"150\" x2=\"60\" y2=\"132\" stroke=\"#dfe6e9\" stroke-width=\"1.6\"/><line x1=\"80\" y1=\"150\" x2=\"80\" y2=\"140\" stroke=\"#dfe6e9\" stroke-width=\"1.6\"/><line x1=\"100\" y1=\"150\" x2=\"100\" y2=\"140\" stroke=\"#dfe6e9\" stroke-width=\"1.6\"/><line x1=\"120\" y1=\"150\" x2=\"120\" y2=\"140\" stroke=\"#dfe6e9\" stroke-width=\"1.6\"/><line x1=\"140\" y1=\"150\" x2=\"140\" y2=\"140\" stroke=\"#dfe6e9\" stroke-width=\"1.6\"/><line x1=\"160\" y1=\"150\" x2=\"160\" y2=\"132\" stroke=\"#dfe6e9\" stroke-width=\"1.6\"/><line x1=\"180\" y1=\"150\" x2=\"180\" y2=\"140\" stroke=\"#dfe6e9\" stroke-width=\"1.6\"/><line x1=\"200\" y1=\"150\" x2=\"200\" y2=\"140\" stroke=\"#dfe6e9\" stroke-width=\"1.6\"/><line x1=\"220\" y1=\"150\" x2=\"220\" y2=\"140\" stroke=\"#dfe6e9\" stroke-width=\"1.6\"/><line x1=\"240\" y1=\"150\" x2=\"240\" y2=\"140\" stroke=\"#dfe6e9\" stroke-width=\"1.6\"/><line x1=\"260\" y1=\"150\" x2=\"260\" y2=\"132\" stroke=\"#dfe6e9\" stroke-width=\"1.6\"/><line x1=\"160\" y1=\"56\" x2=\"160\" y2=\"146\" stroke=\"#ff7675\" stroke-width=\"3\" stroke-linecap=\"round\"/><ellipse cx=\"160\" cy=\"32\" rx=\"22\" ry=\"12\" fill=\"#fff\"/><circle cx=\"160\" cy=\"32\" r=\"6\" fill=\"#0b1826\"/><line x1=\"160\" y1=\"44\" x2=\"160\" y2=\"52\" stroke=\"#55efc4\" stroke-width=\"2\" stroke-dasharray=\"3 3\"/></svg>"
+      }
     },
     {
       "lekcija": 18,
@@ -4840,7 +6053,7 @@
         "36,6 cm",
         "12,3 cm"
       ],
-      "zanimljivost": "Srednja vrednost se računa kao zbir podeljen brojem merenja.",
+      "zanimljivost": "Što se više merenja uzme u obzir, slučajne greške se međusobno više poništavaju, pa je srednja vrednost sve pouzdanija.",
       "rec": "prosek",
       "mediji": {
         "vrsta": "formula",
@@ -4858,20 +6071,28 @@
         "Broj cifara na digitalnom ekranu"
       ],
       "zanimljivost": "Lenjir sa milimetarskim podeocima meri tačno do oko pola milimetra.",
-      "rec": "podeok"
+      "rec": "podeok",
+      "mediji": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox=\"0 0 320 200\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"320\" height=\"200\" fill=\"#0b1826\"/><rect x=\"20\" y=\"60\" width=\"270\" height=\"40\" fill=\"#dfe6e9\" opacity=\".92\"/><line x1=\"20\" y1=\"60\" x2=\"20\" y2=\"84\" stroke=\"#2d3436\" stroke-width=\"1.4\"/><text x=\"20\" y=\"116\" text-anchor=\"middle\" font-size=\"14\" fill=\"#fff\">0</text><line x1=\"29\" y1=\"60\" x2=\"29\" y2=\"70\" stroke=\"#2d3436\" stroke-width=\"1.4\"/><line x1=\"38\" y1=\"60\" x2=\"38\" y2=\"70\" stroke=\"#2d3436\" stroke-width=\"1.4\"/><line x1=\"47\" y1=\"60\" x2=\"47\" y2=\"70\" stroke=\"#2d3436\" stroke-width=\"1.4\"/><line x1=\"56\" y1=\"60\" x2=\"56\" y2=\"70\" stroke=\"#2d3436\" stroke-width=\"1.4\"/><line x1=\"65\" y1=\"60\" x2=\"65\" y2=\"76\" stroke=\"#2d3436\" stroke-width=\"1.4\"/><line x1=\"74\" y1=\"60\" x2=\"74\" y2=\"70\" stroke=\"#2d3436\" stroke-width=\"1.4\"/><line x1=\"83\" y1=\"60\" x2=\"83\" y2=\"70\" stroke=\"#2d3436\" stroke-width=\"1.4\"/><line x1=\"92\" y1=\"60\" x2=\"92\" y2=\"70\" stroke=\"#2d3436\" stroke-width=\"1.4\"/><line x1=\"101\" y1=\"60\" x2=\"101\" y2=\"70\" stroke=\"#2d3436\" stroke-width=\"1.4\"/><line x1=\"110\" y1=\"60\" x2=\"110\" y2=\"84\" stroke=\"#2d3436\" stroke-width=\"1.4\"/><text x=\"110\" y=\"116\" text-anchor=\"middle\" font-size=\"14\" fill=\"#fff\">1</text><line x1=\"119\" y1=\"60\" x2=\"119\" y2=\"70\" stroke=\"#2d3436\" stroke-width=\"1.4\"/><line x1=\"128\" y1=\"60\" x2=\"128\" y2=\"70\" stroke=\"#2d3436\" stroke-width=\"1.4\"/><line x1=\"137\" y1=\"60\" x2=\"137\" y2=\"70\" stroke=\"#2d3436\" stroke-width=\"1.4\"/><line x1=\"146\" y1=\"60\" x2=\"146\" y2=\"70\" stroke=\"#2d3436\" stroke-width=\"1.4\"/><line x1=\"155\" y1=\"60\" x2=\"155\" y2=\"76\" stroke=\"#2d3436\" stroke-width=\"1.4\"/><line x1=\"164\" y1=\"60\" x2=\"164\" y2=\"70\" stroke=\"#2d3436\" stroke-width=\"1.4\"/><line x1=\"173\" y1=\"60\" x2=\"173\" y2=\"70\" stroke=\"#2d3436\" stroke-width=\"1.4\"/><line x1=\"182\" y1=\"60\" x2=\"182\" y2=\"70\" stroke=\"#2d3436\" stroke-width=\"1.4\"/><line x1=\"191\" y1=\"60\" x2=\"191\" y2=\"70\" stroke=\"#2d3436\" stroke-width=\"1.4\"/><line x1=\"200\" y1=\"60\" x2=\"200\" y2=\"84\" stroke=\"#2d3436\" stroke-width=\"1.4\"/><text x=\"200\" y=\"116\" text-anchor=\"middle\" font-size=\"14\" fill=\"#fff\">2</text><line x1=\"209\" y1=\"60\" x2=\"209\" y2=\"70\" stroke=\"#2d3436\" stroke-width=\"1.4\"/><line x1=\"218\" y1=\"60\" x2=\"218\" y2=\"70\" stroke=\"#2d3436\" stroke-width=\"1.4\"/><line x1=\"227\" y1=\"60\" x2=\"227\" y2=\"70\" stroke=\"#2d3436\" stroke-width=\"1.4\"/><line x1=\"236\" y1=\"60\" x2=\"236\" y2=\"70\" stroke=\"#2d3436\" stroke-width=\"1.4\"/><line x1=\"245\" y1=\"60\" x2=\"245\" y2=\"76\" stroke=\"#2d3436\" stroke-width=\"1.4\"/><line x1=\"254\" y1=\"60\" x2=\"254\" y2=\"70\" stroke=\"#2d3436\" stroke-width=\"1.4\"/><line x1=\"263\" y1=\"60\" x2=\"263\" y2=\"70\" stroke=\"#2d3436\" stroke-width=\"1.4\"/><line x1=\"272\" y1=\"60\" x2=\"272\" y2=\"70\" stroke=\"#2d3436\" stroke-width=\"1.4\"/><line x1=\"281\" y1=\"60\" x2=\"281\" y2=\"70\" stroke=\"#2d3436\" stroke-width=\"1.4\"/><line x1=\"290\" y1=\"60\" x2=\"290\" y2=\"84\" stroke=\"#2d3436\" stroke-width=\"1.4\"/><text x=\"290\" y=\"116\" text-anchor=\"middle\" font-size=\"14\" fill=\"#fff\">3</text><rect x=\"110\" y=\"100\" width=\"9\" height=\"0\" fill=\"none\"/><rect x=\"110\" y=\"62\" width=\"9\" height=\"36\" fill=\"#ffeaa7\" opacity=\".55\"/><line x1=\"110\" y1=\"46\" x2=\"119\" y2=\"46\" stroke=\"#ffeaa7\" stroke-width=\"2\"/><line x1=\"110\" y1=\"46\" x2=\"110\" y2=\"56\" stroke=\"#ffeaa7\" stroke-width=\"2\"/><line x1=\"119\" y1=\"46\" x2=\"119\" y2=\"56\" stroke=\"#ffeaa7\" stroke-width=\"2\"/></svg>"
+      }
     },
     {
       "lekcija": 18,
       "tezina": 2,
       "pitanje": "Šta je merni opseg instrumenta?",
       "odgovori": [
-        "Razlika između najveće i najmanje vrednosti koju instrument može da izmeri",
-        "Najveća vrednost koju instrument može da izmeri",
-        "Broj podeoka na skali",
+        "Interval od najmanje do najveće vrednosti koju instrument meri",
+        "Najmanji podeok na skali instrumenta",
+        "Ukupan broj podeoka na celoj skali",
         "Vreme koje instrument može da radi bez punjenja"
       ],
       "zanimljivost": "Kućna vaga za ljude obično meri do 150–180 kg – teže telo bi je oštetilo.",
-      "rec": "opseg"
+      "rec": "opseg",
+      "medijiOdgovora": {
+        "vrsta": "formula",
+        "tekst": "kućna vaga: od 0 do 150 kg"
+      }
     },
     {
       "lekcija": 18,
@@ -4884,7 +6105,11 @@
         "Pri merenju brašna, jer je merenje duže trajalo"
       ],
       "zanimljivost": "Kod zlata je relativna greška $0,5 g : 5 g = 10%$, a kod brašna samo 0,05%. Zato se lekovi i plemeniti metali mere na vagama koje pokazuju i miligrame.",
-      "rec": "zlato"
+      "rec": "zlato",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "brašno: 1 kg ± 0,5 g;  zlato: 5 g ± 0,5 g"
+      }
     },
     {
       "lekcija": 18,
@@ -4897,7 +6122,11 @@
         "Greške koje se javljaju samo kod prvog merenja"
       ],
       "zanimljivost": "Vaga koja „ne pokazuje nulu“ kada je prazna stalno daje sistematsku grešku – zato postoji dugme za tariranje.",
-      "rec": "vaga"
+      "rec": "vaga",
+      "medijiOdgovora": {
+        "vrsta": "formula",
+        "tekst": "vaga bez tereta pokazuje 0,2 g"
+      }
     },
     {
       "lekcija": 18,
@@ -4923,7 +6152,11 @@
         "Između 20 i 21 cm"
       ],
       "zanimljivost": "Ovakav zapis pokazuje i rezultat i koliko mu možemo verovati.",
-      "rec": "opseg"
+      "rec": "opseg",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "(20,0 ± 0,1) cm"
+      }
     },
     {
       "lekcija": 18,
@@ -4935,8 +6168,12 @@
         "Kalem",
         "Ručica"
       ],
-      "zanimljivost": "U nekim jezicima pomična skala se zove nonius, po portugalskom matematičaru Pedru Nunješu.",
-      "rec": "nonius"
+      "zanimljivost": "Pomoćna skala se u engleskom zove vernier, po francuskom matematičaru Pjeru Verniju, koji ju je opisao 1631. godine.",
+      "rec": "nonius",
+      "mediji": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox=\"0 0 320 200\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"320\" height=\"200\" fill=\"#0b1826\"/><rect x=\"20\" y=\"92\" width=\"280\" height=\"24\" fill=\"#dfe6e9\"/><line x1=\"20\" y1=\"116\" x2=\"20\" y2=\"130\" stroke=\"#dfe6e9\" stroke-width=\"1.4\"/><line x1=\"30\" y1=\"116\" x2=\"30\" y2=\"124\" stroke=\"#dfe6e9\" stroke-width=\"1.4\"/><line x1=\"40\" y1=\"116\" x2=\"40\" y2=\"124\" stroke=\"#dfe6e9\" stroke-width=\"1.4\"/><line x1=\"50\" y1=\"116\" x2=\"50\" y2=\"124\" stroke=\"#dfe6e9\" stroke-width=\"1.4\"/><line x1=\"60\" y1=\"116\" x2=\"60\" y2=\"124\" stroke=\"#dfe6e9\" stroke-width=\"1.4\"/><line x1=\"70\" y1=\"116\" x2=\"70\" y2=\"124\" stroke=\"#dfe6e9\" stroke-width=\"1.4\"/><line x1=\"80\" y1=\"116\" x2=\"80\" y2=\"124\" stroke=\"#dfe6e9\" stroke-width=\"1.4\"/><line x1=\"90\" y1=\"116\" x2=\"90\" y2=\"124\" stroke=\"#dfe6e9\" stroke-width=\"1.4\"/><line x1=\"100\" y1=\"116\" x2=\"100\" y2=\"124\" stroke=\"#dfe6e9\" stroke-width=\"1.4\"/><line x1=\"110\" y1=\"116\" x2=\"110\" y2=\"124\" stroke=\"#dfe6e9\" stroke-width=\"1.4\"/><line x1=\"120\" y1=\"116\" x2=\"120\" y2=\"130\" stroke=\"#dfe6e9\" stroke-width=\"1.4\"/><line x1=\"130\" y1=\"116\" x2=\"130\" y2=\"124\" stroke=\"#dfe6e9\" stroke-width=\"1.4\"/><line x1=\"140\" y1=\"116\" x2=\"140\" y2=\"124\" stroke=\"#dfe6e9\" stroke-width=\"1.4\"/><line x1=\"150\" y1=\"116\" x2=\"150\" y2=\"124\" stroke=\"#dfe6e9\" stroke-width=\"1.4\"/><line x1=\"160\" y1=\"116\" x2=\"160\" y2=\"124\" stroke=\"#dfe6e9\" stroke-width=\"1.4\"/><line x1=\"170\" y1=\"116\" x2=\"170\" y2=\"124\" stroke=\"#dfe6e9\" stroke-width=\"1.4\"/><line x1=\"180\" y1=\"116\" x2=\"180\" y2=\"124\" stroke=\"#dfe6e9\" stroke-width=\"1.4\"/><line x1=\"190\" y1=\"116\" x2=\"190\" y2=\"124\" stroke=\"#dfe6e9\" stroke-width=\"1.4\"/><line x1=\"200\" y1=\"116\" x2=\"200\" y2=\"124\" stroke=\"#dfe6e9\" stroke-width=\"1.4\"/><line x1=\"210\" y1=\"116\" x2=\"210\" y2=\"124\" stroke=\"#dfe6e9\" stroke-width=\"1.4\"/><line x1=\"220\" y1=\"116\" x2=\"220\" y2=\"130\" stroke=\"#dfe6e9\" stroke-width=\"1.4\"/><line x1=\"230\" y1=\"116\" x2=\"230\" y2=\"124\" stroke=\"#dfe6e9\" stroke-width=\"1.4\"/><line x1=\"240\" y1=\"116\" x2=\"240\" y2=\"124\" stroke=\"#dfe6e9\" stroke-width=\"1.4\"/><line x1=\"250\" y1=\"116\" x2=\"250\" y2=\"124\" stroke=\"#dfe6e9\" stroke-width=\"1.4\"/><line x1=\"260\" y1=\"116\" x2=\"260\" y2=\"124\" stroke=\"#dfe6e9\" stroke-width=\"1.4\"/><line x1=\"270\" y1=\"116\" x2=\"270\" y2=\"124\" stroke=\"#dfe6e9\" stroke-width=\"1.4\"/><line x1=\"280\" y1=\"116\" x2=\"280\" y2=\"124\" stroke=\"#dfe6e9\" stroke-width=\"1.4\"/><line x1=\"290\" y1=\"116\" x2=\"290\" y2=\"124\" stroke=\"#dfe6e9\" stroke-width=\"1.4\"/><line x1=\"300\" y1=\"116\" x2=\"300\" y2=\"124\" stroke=\"#dfe6e9\" stroke-width=\"1.4\"/><rect x=\"150\" y=\"64\" width=\"72\" height=\"56\" rx=\"4\" fill=\"#74b9ff\" opacity=\".45\" stroke=\"#fff\" stroke-width=\"2\"/><line x1=\"156\" y1=\"64\" x2=\"156\" y2=\"78\" stroke=\"#fff\" stroke-width=\"1.2\"/><line x1=\"163\" y1=\"64\" x2=\"163\" y2=\"72\" stroke=\"#fff\" stroke-width=\"1.2\"/><line x1=\"170\" y1=\"64\" x2=\"170\" y2=\"72\" stroke=\"#fff\" stroke-width=\"1.2\"/><line x1=\"177\" y1=\"64\" x2=\"177\" y2=\"72\" stroke=\"#fff\" stroke-width=\"1.2\"/><line x1=\"184\" y1=\"64\" x2=\"184\" y2=\"72\" stroke=\"#fff\" stroke-width=\"1.2\"/><line x1=\"191\" y1=\"64\" x2=\"191\" y2=\"78\" stroke=\"#fff\" stroke-width=\"1.2\"/><line x1=\"198\" y1=\"64\" x2=\"198\" y2=\"72\" stroke=\"#fff\" stroke-width=\"1.2\"/><line x1=\"205\" y1=\"64\" x2=\"205\" y2=\"72\" stroke=\"#fff\" stroke-width=\"1.2\"/><line x1=\"212\" y1=\"64\" x2=\"212\" y2=\"72\" stroke=\"#fff\" stroke-width=\"1.2\"/><line x1=\"219\" y1=\"64\" x2=\"219\" y2=\"72\" stroke=\"#fff\" stroke-width=\"1.2\"/><text x=\"186\" y=\"50\" text-anchor=\"middle\" font-size=\"22\" fill=\"#ffeaa7\">?</text></svg>"
+      }
     },
     {
       "lekcija": 19,
@@ -4949,7 +6186,26 @@
         "Ajnštajn"
       ],
       "zanimljivost": "Galilej je pokazao da kuglica na glatkoj podlozi prelazi sve duži put kada je trenje manje. Njutn je to kasnije formulisao kao prvi Njutnov zakon.",
-      "rec": "galilej"
+      "rec": "galilej",
+      "medijiOdgovora": {
+        "vrsta": "lenta",
+        "od": 1600,
+        "do": 1910,
+        "dogadjaji": [
+          {
+            "g": 1638,
+            "t": "Galilej"
+          },
+          {
+            "g": 1687,
+            "t": "Njutn"
+          },
+          {
+            "g": 1905,
+            "t": "Ajnštajn"
+          }
+        ]
+      }
     },
     {
       "lekcija": 19,
@@ -4962,7 +6218,12 @@
         "Brzina tela zavisi samo od sile koja na njega stalno deluje – bez sile se svako telo odmah zaustavlja"
       ],
       "zanimljivost": "Kad autobus naglo zakoči, putnici se zbog inercije „nastave“ kretati napred – zato je važno držati se i vezati pojas.",
-      "rec": "inercija"
+      "rec": "inercija",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "inercija",
+        "tip": "autobus"
+      }
     },
     {
       "lekcija": 19,
@@ -4975,7 +6236,11 @@
         "Kada se kreće nizbrdo"
       ],
       "zanimljivost": "Tela veće mase su inertnija – teže im se menja brzina. Zato teški kamioni imaju duži put kočenja.",
-      "rec": "vagon"
+      "rec": "vagon",
+      "medijiOdgovora": {
+        "vrsta": "formula",
+        "tekst": "F = m · a"
+      }
     },
     {
       "lekcija": 19,
@@ -4988,7 +6253,11 @@
         "Vratila bi se unazad"
       ],
       "zanimljivost": "Ovo je Galilejev ogled iz 17. veka – što je manje trenje, to kuglica prelazi duži put.",
-      "rec": "kuglica"
+      "rec": "kuglica",
+      "mediji": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox=\"0 0 320 200\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"320\" height=\"200\" fill=\"#0b1826\"/><line x1=\"20\" y1=\"150\" x2=\"300\" y2=\"150\" stroke=\"#6b7d90\" stroke-width=\"4\"/><circle cx=\"100\" cy=\"136\" r=\"14\" fill=\"#fd79a8\"/><line x1=\"122\" y1=\"136\" x2=\"186\" y2=\"136\" stroke=\"#55efc4\" stroke-width=\"3\"/><polygon points=\"196,136 184,130 184,142\" fill=\"#55efc4\"/><text x=\"160\" y=\"122\" text-anchor=\"middle\" font-size=\"16\" fill=\"#55efc4\">v</text></svg>"
+      }
     },
     {
       "lekcija": 19,
@@ -5001,7 +6270,12 @@
         "Brzina kojom se telo kreće kada na njega ne deluje nijedna sila"
       ],
       "zanimljivost": "Kada autobus naglo zakoči, putnici se „nagnu“ napred – to je inercija.",
-      "rec": "inercija"
+      "rec": "inercija",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "inercija",
+        "tip": "autobus"
+      }
     },
     {
       "lekcija": 19,
@@ -5014,7 +6288,11 @@
         "Brzina kojom se telo kreće kroz prostor tokom vremena"
       ],
       "zanimljivost": "Masa tela je ista i na Zemlji i na Mesecu.",
-      "rec": "masa"
+      "rec": "masa",
+      "mediji": {
+        "vrsta": "telo",
+        "oblik": "kvadar"
+      }
     },
     {
       "lekcija": 19,
@@ -5076,7 +6354,11 @@
         "Lako ga je zaustaviti – dovoljno je zakočiti"
       ],
       "zanimljivost": "Teretnom vozu kočioni put može biti duži od kilometra.",
-      "rec": "voz"
+      "rec": "voz",
+      "medijiOdgovora": {
+        "vrsta": "formula",
+        "tekst": "m voza = 1 000 000 kg;  m automobila = 1 000 kg"
+      }
     },
     {
       "lekcija": 19,
@@ -5128,7 +6410,11 @@
         "Telo koje ima manji otpor vazduha"
       ],
       "zanimljivost": "Zato je prazna kolica u prodavnici lako pokrenuti i zaustaviti, a puna teže.",
-      "rec": "kolica"
+      "rec": "kolica",
+      "medijiOdgovora": {
+        "vrsta": "formula",
+        "tekst": "m₁ = 2 kg;  m₂ = 20 kg"
+      }
     },
     {
       "lekcija": 19,
@@ -5159,7 +6445,11 @@
       "tezina": 1,
       "zanimljivost": "Što je masa tela veća, teže mu je promeniti brzinu – i pokrenuti ga i zaustaviti ga. Masa je mera inertnosti.",
       "rec": "kofer",
-      "lekcija": 19
+      "lekcija": 19,
+      "mediji": {
+        "vrsta": "telo",
+        "oblik": "kvadar"
+      }
     },
     {
       "lekcija": 19,
@@ -5185,7 +6475,11 @@
       "tezina": 1,
       "zanimljivost": "Tona se koristi za veoma teške terete. Jedan kubni metar vode ima masu od oko jedne tone.",
       "rec": "tona",
-      "lekcija": 19
+      "lekcija": 19,
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "1 t = ? kg"
+      }
     },
     {
       "lekcija": 19,
@@ -5198,7 +6492,26 @@
         "Da bi savladao svoju inerciju"
       ],
       "zanimljivost": "Bez trenja i otpora vazduha bicikl bi po prvom Njutnovom zakonu nastavio da se kreće sam.",
-      "rec": "otpor"
+      "rec": "otpor",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "sile",
+        "sile": [
+          {
+            "F": 20,
+            "ugao": 180,
+            "o": "trenje 20 N",
+            "b": 1
+          },
+          {
+            "F": 20,
+            "ugao": 0,
+            "o": "vuča 20 N",
+            "b": 0
+          }
+        ],
+        "telo": "🚲"
+      }
     },
     {
       "lekcija": 20,
@@ -5211,7 +6524,11 @@
         "Menja se samo na površini"
       ],
       "zanimljivost": "Masa ne zavisi od agregatnog stanja. Ali zapremina leda je veća, pa led ima manju gustinu i pluta.",
-      "rec": "masa"
+      "rec": "masa",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "1 l vode  →  led:  m = ?"
+      }
     },
     {
       "pitanje": "Zašto je težina tela na Mesecu manja nego na Zemlji?",
@@ -5224,7 +6541,11 @@
       "tezina": 2,
       "zanimljivost": "Masa tela je svuda ista, a težina zavisi od toga koliko jako ga nebesko telo privlači. Na Mesecu je ta sila oko 6 puta slabija.",
       "rec": "mesec",
-      "lekcija": 20
+      "lekcija": 20,
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "g (Zemlja) ≈ 10 N/kg;  g (Mesec) ≈ 1,6 N/kg"
+      }
     },
     {
       "lekcija": 20,
@@ -5237,7 +6558,11 @@
         "Masa zavisi od mesta na kome je telo, a težina je svuda potpuno ista"
       ],
       "zanimljivost": "U svakodnevnom govoru kažemo „težak sam 50 kg“, ali fizičar bi rekao „masa mi je 50 kg“.",
-      "rec": "razlika"
+      "rec": "razlika",
+      "medijiOdgovora": {
+        "vrsta": "formula",
+        "tekst": "m = 50 kg;  G = 500 N"
+      }
     },
     {
       "lekcija": 20,
@@ -5250,7 +6575,11 @@
         "0,4 N"
       ],
       "zanimljivost": "Na Mesecu bi isto telo imalo težinu oko 6,5 N, jer je tamo $g$ oko 1,6 N/kg.",
-      "rec": "težina"
+      "rec": "težina",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "G = m · g;  m = 4 kg;  g = 10 N/kg"
+      }
     },
     {
       "lekcija": 20,
@@ -5263,7 +6592,11 @@
         "Menzurom"
       ],
       "zanimljivost": "Vaga sa dva tasa poredi masu tela sa poznatim tegovima – i radila bi isto i na Mesecu.",
-      "rec": "vaga"
+      "rec": "vaga",
+      "medijiOdgovora": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox=\"0 0 320 200\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"320\" height=\"200\" fill=\"#0b1826\"/><line x1=\"50\" y1=\"70\" x2=\"270\" y2=\"70\" stroke=\"#dfe6e9\" stroke-width=\"4\"/><polygon points=\"160,62 150,84 170,84\" fill=\"#dfe6e9\"/><line x1=\"60\" y1=\"70\" x2=\"44\" y2=\"120\" stroke=\"#8fa3b8\" stroke-width=\"1.6\"/><line x1=\"60\" y1=\"70\" x2=\"76\" y2=\"120\" stroke=\"#8fa3b8\" stroke-width=\"1.6\"/><path d=\"M28,120 L92,120 L84,134 L36,134 Z\" fill=\"#8fa3b8\"/><line x1=\"260\" y1=\"70\" x2=\"244\" y2=\"120\" stroke=\"#8fa3b8\" stroke-width=\"1.6\"/><line x1=\"260\" y1=\"70\" x2=\"276\" y2=\"120\" stroke=\"#8fa3b8\" stroke-width=\"1.6\"/><path d=\"M228,120 L292,120 L284,134 L236,134 Z\" fill=\"#8fa3b8\"/><rect x=\"248\" y=\"104\" width=\"24\" height=\"16\" fill=\"#ffeaa7\"/><rect x=\"130\" y=\"160\" width=\"60\" height=\"8\" fill=\"#6b7d90\"/></svg>"
+      }
     },
     {
       "pitanje": "Šta se dešava sa masom astronauta kada ode na Mesec?",
@@ -5276,7 +6609,11 @@
       "tezina": 2,
       "zanimljivost": "Masa je količina supstance i ne zavisi od mesta. Na Mesecu se smanjuje samo težina, jer ga Mesec slabije privlači.",
       "rec": "masa",
-      "lekcija": 20
+      "lekcija": 20,
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "na Zemlji: m = 70 kg;  G = 700 N"
+      }
     },
     {
       "lekcija": 20,
@@ -5289,7 +6626,12 @@
         "Kada miruje na dnu mora"
       ],
       "zanimljivost": "Astronauti u stanici „lebde“ jer zajedno sa stanicom stalno padaju oko Zemlje.",
-      "rec": "bestežinsko"
+      "rec": "bestežinsko",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "pad",
+        "tip": "slobodan"
+      }
     },
     {
       "lekcija": 20,
@@ -5302,7 +6644,11 @@
         "10.000"
       ],
       "zanimljivost": "Jedna tona je 1.000 kg – otprilike masa malog automobila.",
-      "rec": "gram"
+      "rec": "gram",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "1 kg = ? g"
+      }
     },
     {
       "lekcija": 20,
@@ -5314,8 +6660,12 @@
         "Telo tačno poznate dužine koje se koristi pri merenju dužine",
         "Deo vage koji pokazuje masu na skali"
       ],
-      "zanimljivost": "Nekada su trgovci morali redovno da nose tegove na proveru da ne bi varali kupce.",
-      "rec": "teg"
+      "zanimljivost": "Međunarodni prototip kilograma, valjak od platine i iridijuma, čuvao se u Sevru kraj Pariza do 2019. godine, kada je kilogram definisan preko Plankove konstante.",
+      "rec": "teg",
+      "medijiOdgovora": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox=\"0 0 320 200\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"320\" height=\"200\" fill=\"#0b1826\"/><path d=\"M152,108 A8,8 0 1 1 168,108\" fill=\"none\" stroke=\"#b2bec3\" stroke-width=\"4\"/><rect x=\"128\" y=\"108\" width=\"64\" height=\"56\" rx=\"4\" fill=\"#b2bec3\"/><text x=\"160\" y=\"142\" text-anchor=\"middle\" font-size=\"16\" fill=\"#2d3436\">1 kg</text></svg>"
+      }
     },
     {
       "lekcija": 20,
@@ -5327,21 +6677,29 @@
         "Na Mesecu",
         "Na Marsu"
       ],
-      "zanimljivost": "Na Jupiteru bi telo bilo oko 2,5 puta teže nego na Zemlji.",
-      "rec": "jupiter"
+      "zanimljivost": "Na površini Sunca telo bi bilo oko 27 puta teže nego na Zemlji, samo što bi ga tamo pre toga spalila toplota.",
+      "rec": "jupiter",
+      "mediji": {
+        "vrsta": "planeta",
+        "ime": "zemlja"
+      }
     },
     {
       "lekcija": 20,
       "tezina": 3,
-      "pitanje": "Koja vaga radi preko istezanja opruge i šta ona zapravo meri?",
+      "pitanje": "Kako radi vaga sa oprugom i šta ona zapravo meri?",
       "odgovori": [
-        "Vaga sa oprugom – meri težinu, a skala je podešena u kilogramima",
-        "Terazije – meri masu poređenjem sa tegovima na drugom tasu iste vage",
-        "Menzura – meri zapreminu tela koje se potopi u vodu u staklenoj menzuri",
-        "Dinamometar – meri brzinu kojom se opruga isteže pod nekim teretom"
+        "Istezanje opruge pokazuje težinu, a skala je u kilogramima",
+        "Poređenjem sa tegovima na drugom tasu iste vage",
+        "Zapreminu tela koje se potopi u vodu u staklenoj menzuri",
+        "Brzinu kojom se opruga isteže pod nekim teretom"
       ],
       "zanimljivost": "Na Mesecu bi vaga sa oprugom pokazala oko 6 puta manje, a vaga sa tasovima isto.",
-      "rec": "opruga"
+      "rec": "opruga",
+      "medijiOdgovora": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox=\"0 0 320 200\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"320\" height=\"200\" fill=\"#0b1826\"/><rect x=\"140\" y=\"20\" width=\"40\" height=\"110\" rx=\"6\" fill=\"#dfe6e9\" opacity=\".9\"/><circle cx=\"160\" cy=\"12\" r=\"7\" fill=\"none\" stroke=\"#8fa3b8\" stroke-width=\"3\"/><path d=\"M160,22 L170,30 L150,36 L170,42 L150,48 L170,54 L150,60 L170,66 L150,72 L170,78 L150,84 L170,90 L150,96\" fill=\"none\" stroke=\"#2d3436\" stroke-width=\"2\"/><rect x=\"145\" y=\"104\" width=\"30\" height=\"18\" rx=\"3\" fill=\"#b2bec3\"/><line x1=\"182\" y1=\"30\" x2=\"182\" y2=\"120\" stroke=\"#dfe6e9\" stroke-width=\"1.5\"/><line x1=\"182\" y1=\"30\" x2=\"172\" y2=\"30\" stroke=\"#dfe6e9\" stroke-width=\"1.5\"/><line x1=\"182\" y1=\"48\" x2=\"176\" y2=\"48\" stroke=\"#dfe6e9\" stroke-width=\"1.5\"/><line x1=\"182\" y1=\"66\" x2=\"176\" y2=\"66\" stroke=\"#dfe6e9\" stroke-width=\"1.5\"/><line x1=\"182\" y1=\"84\" x2=\"176\" y2=\"84\" stroke=\"#dfe6e9\" stroke-width=\"1.5\"/><line x1=\"182\" y1=\"102\" x2=\"176\" y2=\"102\" stroke=\"#dfe6e9\" stroke-width=\"1.5\"/><line x1=\"182\" y1=\"120\" x2=\"172\" y2=\"120\" stroke=\"#dfe6e9\" stroke-width=\"1.5\"/><line x1=\"176\" y1=\"48\" x2=\"194\" y2=\"48\" stroke=\"#ff7675\" stroke-width=\"2.5\"/></svg>"
+      }
     },
     {
       "lekcija": 20,
@@ -5354,7 +6712,11 @@
         "Pedalj"
       ],
       "zanimljivost": "Oka je još dugo u narodu korišćena na pijacama i u zanatu, uprkos metričkom sistemu.",
-      "rec": "oka"
+      "rec": "oka",
+      "medijiOdgovora": {
+        "vrsta": "formula",
+        "tekst": "1 oka = 1,28 kg"
+      }
     },
     {
       "lekcija": 20,
@@ -5367,7 +6729,11 @@
         "Tvoju temperaturu"
       ],
       "zanimljivost": "Ako skočiš na vagu, na trenutak pokazuje više – jer je sila pritiska tada veća.",
-      "rec": "vaga"
+      "rec": "vaga",
+      "medijiOdgovora": {
+        "vrsta": "formula",
+        "tekst": "na vagi: 65 kg"
+      }
     },
     {
       "lekcija": 20,
@@ -5384,6 +6750,10 @@
       "medijiOdgovora": {
         "vrsta": "formula",
         "tekst": "m = 600 N : 10 N/kg"
+      },
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "G = 600 N;  g = 10 N/kg;  m = ?"
       }
     },
     {
@@ -5397,7 +6767,11 @@
         "Masa robe posle dugog čuvanja u frižideru"
       ],
       "zanimljivost": "Neto masa je masa same robe – na tegli meda piše, na primer, „neto 450 g“.",
-      "rec": "neto"
+      "rec": "neto",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "neto: 450 g  →  bruto: ?"
+      }
     },
     {
       "lekcija": 20,
@@ -5410,7 +6784,11 @@
         "Ne pokazuje više – vaga pokazuje uvek isto"
       ],
       "zanimljivost": "Masa je ista, ali je sila kojom pritiskamo vagu veća – zato kolena „osete“ ubrzanje lifta.",
-      "rec": "lift"
+      "rec": "lift",
+      "medijiOdgovora": {
+        "vrsta": "formula",
+        "tekst": "F = m · (g + a)  >  m · g"
+      }
     },
     {
       "lekcija": 21,
@@ -5423,7 +6801,11 @@
         "Slovom V (od reči volumen)"
       ],
       "zanimljivost": "Gustina se računa kao masa podeljena zapreminom: $ρ = m / V$. Jedinica je kilogram po kubnom metru (kg/m³).",
-      "rec": "gustina"
+      "rec": "gustina",
+      "medijiOdgovora": {
+        "vrsta": "formula",
+        "tekst": "ρ = m / V"
+      }
     },
     {
       "lekcija": 21,
@@ -5436,7 +6818,11 @@
         "500 kg/m³"
       ],
       "zanimljivost": "$ρ = m / V = 4000 kg : 2 m³ = 2000 kg/m³$. To je otprilike gustina betona.",
-      "rec": "gustina"
+      "rec": "gustina",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "m = 4 000 kg;  V = 2 m³;  ρ = ?"
+      }
     },
     {
       "lekcija": 21,
@@ -5478,7 +6864,11 @@
         "$ρ = m + V$"
       ],
       "zanimljivost": "Gustina se označava grčkim slovom ro (ρ).",
-      "rec": "gustina"
+      "rec": "gustina",
+      "medijiOdgovora": {
+        "vrsta": "formula",
+        "tekst": "ρ = m / V"
+      }
     },
     {
       "lekcija": 21,
@@ -5491,7 +6881,11 @@
         "1 kg/m³ (kao vazduh)"
       ],
       "zanimljivost": "Litar vode ima masu 1 kg – zato je voda pogodna za upoređivanje gustina.",
-      "rec": "voda"
+      "rec": "voda",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "1 l = 1 dm³ = 0,001 m³"
+      }
     },
     {
       "lekcija": 21,
@@ -5528,7 +6922,11 @@
         "Zavisi od veličine komada"
       ],
       "zanimljivost": "Aluminijum je oko tri puta ređi od gvožđa – zato se koristi za avione i limenke.",
-      "rec": "aluminijum"
+      "rec": "aluminijum",
+      "medijiOdgovora": {
+        "vrsta": "formula",
+        "tekst": "ρ_gvožđe ≈ 7 900 kg/m³;  ρ_aluminijum ≈ 2 700 kg/m³"
+      }
     },
     {
       "lekcija": 21,
@@ -5541,7 +6939,11 @@
         "Olovo (teški metal)"
       ],
       "zanimljivost": "Zlato ima gustinu oko 19.300 kg/m³ – kocka zlata od 1 m³ imala bi masu preko 19 tona.",
-      "rec": "kocka"
+      "rec": "kocka",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "m = 2 700 kg;  V = 1 m³"
+      }
     },
     {
       "lekcija": 21,
@@ -5554,7 +6956,19 @@
         "Ulje ima veću zapreminu od vode"
       ],
       "zanimljivost": "Kada se iz tankera izlije nafta, ona se širi po površini mora i ugrožava ptice i ribe.",
-      "rec": "ulje"
+      "rec": "ulje",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "tecnost",
+        "tela": [
+          {
+            "ro": 900,
+            "o": "~ulje",
+            "b": 3
+          }
+        ],
+        "tecnost": "~voda · 1000 kg/m³"
+      }
     },
     {
       "lekcija": 21,
@@ -5567,20 +6981,29 @@
         "0 kg/m³"
       ],
       "zanimljivost": "U učionici ima nekoliko stotina kilograma vazduha!",
-      "rec": "vazduh"
+      "rec": "vazduh",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "učionica: 8 m × 8 m × 3 m"
+      }
     },
     {
       "lekcija": 21,
       "tezina": 2,
       "pitanje": "Kako se određuje gustina kamena?",
       "odgovori": [
-        "Izmeri mu se masa vagom i zapremina u menzuri, pa se masa podeli zapreminom",
-        "Samo vagom – gustina kamena je jednaka njegovoj masi izraženoj u kilogramima na vagi",
-        "Samo lenjirom – izmere mu se dužina, širina i visina, i gustina je njihov proizvod",
-        "Samo vagom, bez merenja zapremine"
+        "Masa se meri vagom, zapremina menzurom, pa se masa podeli zapreminom",
+        "Samo vagom: gustina je jednaka masi kamena izraženoj u kilogramima",
+        "Samo lenjirom: izmeri se dužina, širina i visina, pa se one pomnože",
+        "Samo vagom, bez merenja zapremine, jer gustina zavisi od boje kamena"
       ],
       "zanimljivost": "Gustina kamena je obično oko 2.500–2.800 kg/m³, pa je kamen oko dva i po puta gušći od vode.",
-      "rec": "kamen"
+      "rec": "kamen",
+      "medijiOdgovora": {
+        "vrsta": "laboratorija",
+        "scena": "menzura",
+        "predmet": "Fe"
+      }
     },
     {
       "lekcija": 21,
@@ -5628,7 +7051,11 @@
         "Aluminijum"
       ],
       "zanimljivost": "Osmijum je najgušći prirodni element – kocka stranice 10 cm imala bi masu oko 22,6 kg.",
-      "rec": "osmijum"
+      "rec": "osmijum",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "gvožđe 7,9 · bakar 8,9 · aluminijum 2,7  (g/cm³)"
+      }
     },
     {
       "lekcija": 21,
@@ -5641,7 +7068,11 @@
         "Vrsta vage"
       ],
       "zanimljivost": "Areometar pluta u tečnosti – što je tečnost gušća, on manje tone.",
-      "rec": "areometar"
+      "rec": "areometar",
+      "medijiOdgovora": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox=\"0 0 320 200\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"320\" height=\"200\" fill=\"#0b1826\"/><rect x=\"90\" y=\"122\" width=\"140\" height=\"70\" fill=\"rgba(46,134,222,.45)\"/><line x1=\"90\" y1=\"122\" x2=\"230\" y2=\"122\" stroke=\"#9fd3ff\" stroke-width=\"1.5\"/><rect x=\"151\" y=\"12\" width=\"18\" height=\"110\" rx=\"4\" fill=\"#dfe6e9\" opacity=\".9\"/><line x1=\"151\" y1=\"26\" x2=\"163\" y2=\"26\" stroke=\"#2d3436\" stroke-width=\"1.4\"/><line x1=\"151\" y1=\"38\" x2=\"158\" y2=\"38\" stroke=\"#2d3436\" stroke-width=\"1.4\"/><line x1=\"151\" y1=\"50\" x2=\"163\" y2=\"50\" stroke=\"#2d3436\" stroke-width=\"1.4\"/><line x1=\"151\" y1=\"62\" x2=\"158\" y2=\"62\" stroke=\"#2d3436\" stroke-width=\"1.4\"/><line x1=\"151\" y1=\"74\" x2=\"163\" y2=\"74\" stroke=\"#2d3436\" stroke-width=\"1.4\"/><line x1=\"151\" y1=\"86\" x2=\"158\" y2=\"86\" stroke=\"#2d3436\" stroke-width=\"1.4\"/><line x1=\"151\" y1=\"98\" x2=\"163\" y2=\"98\" stroke=\"#2d3436\" stroke-width=\"1.4\"/><circle cx=\"160\" cy=\"160\" r=\"22\" fill=\"#b2bec3\"/></svg>"
+      }
     },
     {
       "lekcija": 21,
@@ -5665,26 +7096,43 @@
       "tezina": 2,
       "pitanje": "Zašto se u Mrtvom moru lako pluta?",
       "odgovori": [
-        "Voda ima veliku gustinu jer je veoma slana",
+        "Voda je veoma slana, pa ima veću gustinu",
         "Vazduh iznad mora je gušći od vode",
         "Voda je hladnija od ostalih mora",
-        "Voda je retka"
+        "Voda je tu retka i lakša od obične"
       ],
-      "zanimljivost": "Mrtvo more je oko 9 puta slanije od okeana – ljudi u njemu „leže“ na vodi i čitaju novine.",
-      "rec": "mrtvo"
+      "zanimljivost": "Mrtvo more je oko 10 puta slanije od okeana – ljudi u njemu „leže“ na vodi i čitaju novine.",
+      "rec": "mrtvo",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "tecnost",
+        "ro": 1240,
+        "tela": [
+          {
+            "ro": 1000,
+            "o": "~čovek",
+            "b": 2
+          }
+        ],
+        "tecnost": "~Mrtvo more"
+      }
     },
     {
       "lekcija": 21,
       "tezina": 1,
       "pitanje": "Šta ima veću gustinu – kilogram gvožđa ili kilogram perja?",
       "odgovori": [
-        "Gvožđe – iako su mase iste",
+        "Gvožđe, jer u istoj masi ima manju zapreminu",
         "Perje, jer zauzima više mesta",
         "Isto, jer su im mase potpuno iste",
-        "Perje, jer je mekše"
+        "Perje, jer je mekše i lakše"
       ],
       "zanimljivost": "Masa im je ista, ali kilogram perja zauzima ogroman prostor u odnosu na gvožđe.",
-      "rec": "perje"
+      "rec": "perje",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "1 kg gvožđa  ·  1 kg perja"
+      }
     },
     {
       "lekcija": 21,
@@ -5697,7 +7145,11 @@
         "Menja se samo na površini"
       ],
       "zanimljivost": "Voda ima najveću gustinu na 4 °C – zato je dno dubokih jezera zimi na oko 4 °C.",
-      "rec": "toplota"
+      "rec": "toplota",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "voda: 4 °C  →  80 °C"
+      }
     },
     {
       "lekcija": 22,
@@ -5742,7 +7194,11 @@
         "Vat (W)"
       ],
       "zanimljivost": "Jedan paskal je mali pritisak – kao list papira koji leži na stolu. Atmosferski pritisak je oko 100.000 Pa.",
-      "rec": "paskal"
+      "rec": "paskal",
+      "medijiOdgovora": {
+        "vrsta": "formula",
+        "tekst": "1 N/m² = 1 Pa"
+      }
     },
     {
       "lekcija": 22,
@@ -5754,8 +7210,12 @@
         "$p = S / F$",
         "$p = F + S$"
       ],
-      "zanimljivost": "Pritisak je veći kada se ista sila rasporedi na manju površinu.",
-      "rec": "pritisak"
+      "zanimljivost": "Ako sila od 1 N deluje na površinu od 1 m², pritisak je 1 Pa; ista sila na 1 cm² daje 10 000 Pa.",
+      "rec": "pritisak",
+      "medijiOdgovora": {
+        "vrsta": "formula",
+        "tekst": "p = F / S"
+      }
     },
     {
       "pitanje": "Koliko paskala ima jedan kilopaskal?",
@@ -5768,7 +7228,11 @@
       "tezina": 1,
       "zanimljivost": "Pritisak u gumama automobila meri se stotinama kilopaskala, oko 200–250 kPa, ili u barima: 1 bar je 100 kPa.",
       "rec": "paskal",
-      "lekcija": 22
+      "lekcija": 22,
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "1 kPa = ? Pa"
+      }
     },
     {
       "lekcija": 22,
@@ -5778,10 +7242,28 @@
         "Mala površina sečiva daje veliki pritisak",
         "Nož je obložen mekim materijalom koji smanjuje pritisak",
         "Oštrica je toplija od ostatka noža",
-        "Zbog trenja"
+        "Zbog trenja između oštrice i hrane koju seče"
       ],
-      "zanimljivost": "Oštrica dobrog noža debela je samo nekoliko mikrometara.",
-      "rec": "nož"
+      "zanimljivost": "Rezna ivica dobrog noža oštri se pod uglom od oko 15–20°, a kod sekire i do 30°.",
+      "rec": "nož",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "pritisak",
+        "tip": "podloga",
+        "tela": [
+          {
+            "w": 8,
+            "h": 40,
+            "o": "~oštrica"
+          },
+          {
+            "w": 60,
+            "h": 40,
+            "o": "~ravna"
+          }
+        ],
+        "podloga": "~tvrda"
+      }
     },
     {
       "lekcija": 22,
@@ -5829,7 +7311,25 @@
         "Da bi se smanjilo trenje sa putem"
       ],
       "zanimljivost": "Tenk od 60 tona pritiska tlo manje nego čovek u cipelama sa štiklom!",
-      "rec": "gusenica"
+      "rec": "gusenica",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "pritisak",
+        "tip": "podloga",
+        "tela": [
+          {
+            "w": 120,
+            "h": 40,
+            "o": "~gusenica"
+          },
+          {
+            "w": 24,
+            "h": 40,
+            "o": "~točak"
+          }
+        ],
+        "podloga": "~tlo"
+      }
     },
     {
       "lekcija": 22,
@@ -5842,14 +7342,18 @@
         "1.000 Pa"
       ],
       "zanimljivost": "Pritisak se meri u paskalima, a ime je dobio po Blezu Paskalu.",
-      "rec": "površina"
+      "rec": "površina",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "F = 200 N;  S = 0,5 m²;  p = ?"
+      }
     },
     {
       "lekcija": 22,
       "tezina": 2,
       "pitanje": "Zašto ekser ima šiljat vrh?",
       "odgovori": [
-        "Mala površina vrha daje veliki pritisak, pa lako ulazi u drvo",
+        "Mala površina vrha daje veliki pritisak, pa lako ulazi",
         "Da bi se lakše izvlačio iz drveta",
         "Da bi bio teži na vrhu, pa lakše pada u drvo",
         "Da bi trenje na vrhu bilo jače, pa ekser ne iskoči"
@@ -5900,7 +7404,11 @@
         "1.500 Pa"
       ],
       "zanimljivost": "Ako stane na jednu nogu, pritisak se udvostruči.",
-      "rec": "stopala"
+      "rec": "stopala",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "F = 600 N;  S = 0,04 m²;  p = ?"
+      }
     },
     {
       "lekcija": 22,
@@ -5913,7 +7421,25 @@
         "Da bi kaiševi bili jači pri vuči"
       ],
       "zanimljivost": "Preporučuje se da ranac ne bude teži od 10–15% mase deteta.",
-      "rec": "ranac"
+      "rec": "ranac",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "pritisak",
+        "tip": "podloga",
+        "tela": [
+          {
+            "w": 20,
+            "h": 40,
+            "o": "~uzak kaiš"
+          },
+          {
+            "w": 50,
+            "h": 40,
+            "o": "~širok kaiš"
+          }
+        ],
+        "podloga": "~rame"
+      }
     },
     {
       "lekcija": 22,
@@ -5926,20 +7452,43 @@
         "1 milion paskala"
       ],
       "zanimljivost": "Meteorolozi pritisak vazduha izražavaju u hektopaskalima – normalan je oko 1.013 hPa.",
-      "rec": "hektopaskal"
+      "rec": "hektopaskal",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "1 hPa = ? Pa"
+      }
     },
     {
       "lekcija": 22,
       "tezina": 3,
-      "pitanje": "Zašto se tabla leda lomi ako na nju stane jedan čovek, a ne lomi se ako legne?",
+      "pitanje": "Zašto se led pod čovekom koji stoji lomi, a pod čovekom koji legne ne lomi?",
       "odgovori": [
         "Kad legne, površina je veća, pa je pritisak manji",
-        "Kad čovek legne, on je lakši, pa manje pritiska led",
+        "Kad legne, čovek se rastegne i manje pritiska led",
         "Led se topi pod stajanjem, a pod ležanjem ne",
         "Led se lomi samo kad čovek ima veću težinu"
       ],
       "zanimljivost": "Zato se ka osobi koja je propala kroz led prilazi puzeći, ležeći.",
-      "rec": "led"
+      "rec": "led",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "pritisak",
+        "tip": "podloga",
+        "tela": [
+          {
+            "w": 100,
+            "h": 20,
+            "o": "~leži"
+          },
+          {
+            "w": 30,
+            "h": 70,
+            "o": "~stoji"
+          }
+        ],
+        "podloga": "~led",
+        "boja": "#bfe9ff"
+      }
     },
     {
       "lekcija": 22,
@@ -5978,7 +7527,11 @@
         "1.500 N"
       ],
       "zanimljivost": "$F = p · S$ – formula pritiska može se „okrenuti“ da se nađe sila.",
-      "rec": "sila"
+      "rec": "sila",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "p = 2 000 Pa;  S = 3 m²;  F = ?"
+      }
     },
     {
       "lekcija": 23,
@@ -5991,7 +7544,12 @@
         "Magnetni pritisak"
       ],
       "zanimljivost": "Hidrostatički pritisak zavisi od gustine tečnosti i dubine. Zato roniocima „pritiska“ uši sve jače što dublje zarone.",
-      "rec": "pritisak"
+      "rec": "pritisak",
+      "mediji": {
+        "vrsta": "fizika",
+        "scena": "pritisak",
+        "tip": "dubina"
+      }
     },
     {
       "lekcija": 23,
@@ -6040,7 +7598,13 @@
         "Zato što se krv brže zgusne pri naglom uspinjanju"
       ],
       "zanimljivost": "To se zove „ronilačka bolest“. Ronioci izranjaju polako, sa pauzama, da bi se telo prilagodilo promeni pritiska.",
-      "rec": "ronilac"
+      "rec": "ronilac",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "pritisak",
+        "tip": "dubina",
+        "e": "🤿"
+      }
     },
     {
       "pitanje": "Gde bi ronilac na istoj dubini osetio malo veći pritisak – u slanom moru ili u slatkom jezeru?",
@@ -6051,9 +7615,13 @@
         "U onom koje je toplije"
       ],
       "tezina": 3,
-      "zanimljivost": "Hidrostatički pritisak zavisi od gustine tečnosti. Morska voda je oko 3% gušća od slatke, pa je i pritisak na istoj dubini za toliko veći.",
+      "zanimljivost": "Morska voda je oko 2,5 % gušća od slatke, pa je i pritisak na istoj dubini za toliko veći.",
       "rec": "more",
-      "lekcija": 23
+      "lekcija": 23,
+      "medijiOdgovora": {
+        "vrsta": "formula",
+        "tekst": "ρ_more ≈ 1 025 kg/m³  >  ρ_voda = 1 000 kg/m³"
+      }
     },
     {
       "lekcija": 23,
@@ -6083,7 +7651,7 @@
         "Da bi bila viša i držala što više vode",
         "Zbog trenja vode o dno jezera iza brane"
       ],
-      "zanimljivost": "Brana „Tri klisure“ u Kini pri dnu je široka oko 115 metara.",
+      "zanimljivost": "Brane se grade od betona jer moraju da izdrže ogromnu silu vode – kod najvećih brana ona se meri milionima njutna.",
       "rec": "brana",
       "medijiOdgovora": {
         "vrsta": "fizika",
@@ -6121,10 +7689,15 @@
       ],
       "zanimljivost": "Hidraulični podizač u auto-servisu lako podigne automobil malom silom na malom klipu.",
       "rec": "presa",
-      "medijiOdgovora": {
+      "mediji": {
         "vrsta": "fizika",
         "scena": "pritisak",
-        "tip": "presa"
+        "tip": "presa",
+        "e": "🚗",
+        "o1": "F₁",
+        "o2": "F₂",
+        "s1": "S₁",
+        "s2": "S₂"
       }
     },
     {
@@ -6138,7 +7711,12 @@
       "tezina": 2,
       "zanimljivost": "Što je voda u tornju više, veći je pritisak u cevima. Zato na najvišim spratovima zgrada ponekad treba dodatna pumpa.",
       "rec": "toranj",
-      "lekcija": 23
+      "lekcija": 23,
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "pritisak",
+        "tip": "dubina"
+      }
     },
     {
       "lekcija": 23,
@@ -6186,7 +7764,13 @@
         "Zbog vode koja ulazi u uho i širi se"
       ],
       "zanimljivost": "Ronioci „izjednačavaju pritisak“ tako što stisnu nos i lagano izduvaju.",
-      "rec": "uši"
+      "rec": "uši",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "pritisak",
+        "tip": "dubina",
+        "e": "🤿"
+      }
     },
     {
       "lekcija": 23,
@@ -6199,7 +7783,13 @@
         "Zbog rđe, jer morska so brzo izgrize svaki tanji čelik"
       ],
       "zanimljivost": "Na dnu Marijanske brazde (11 km) pritisak je više od 1.000 atmosfera – kao da na nokat stane automobil.",
-      "rec": "podmornica"
+      "rec": "podmornica",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "pritisak",
+        "tip": "dubina",
+        "e": "🛥️"
+      }
     },
     {
       "lekcija": 23,
@@ -6212,7 +7802,12 @@
         "Ne, jer su gasovi preredi za prenos sile"
       ],
       "zanimljivost": "Zato se balon kada ga naduvamo širi podjednako na sve strane.",
-      "rec": "balon"
+      "rec": "balon",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "pritisak",
+        "tip": "paskal"
+      }
     },
     {
       "lekcija": 24,
@@ -6224,8 +7819,12 @@
         "Areometar",
         "Dinamometar"
       ],
-      "zanimljivost": "Toričeli je 1643. napravio prvi barometar od žive – stub žive na nivou mora visok je oko 76 cm.",
-      "rec": "barometar"
+      "zanimljivost": "Ime barometar znači „merač težine“ (grčki baros – težina, metron – mera), a Toričeli ga je 1643. napravio od žive.",
+      "rec": "barometar",
+      "medijiOdgovora": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox=\"0 0 320 200\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"320\" height=\"200\" fill=\"#0b1826\"/><circle cx=\"160\" cy=\"100\" r=\"80\" fill=\"#13293d\" stroke=\"#8fa3b8\" stroke-width=\"4\"/><line x1=\"124\" y1=\"37.6\" x2=\"129\" y2=\"46.3\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"147.5\" y1=\"29.1\" x2=\"149.2\" y2=\"38.9\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"172.5\" y1=\"29.1\" x2=\"170.8\" y2=\"38.9\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"196\" y1=\"37.6\" x2=\"191\" y2=\"46.3\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"215.2\" y1=\"53.7\" x2=\"207.5\" y2=\"60.1\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"227.7\" y1=\"75.4\" x2=\"218.3\" y2=\"78.8\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"232\" y1=\"100\" x2=\"222\" y2=\"100\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"227.7\" y1=\"124.6\" x2=\"218.3\" y2=\"121.2\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"215.2\" y1=\"146.3\" x2=\"207.5\" y2=\"139.9\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"196\" y1=\"162.4\" x2=\"191\" y2=\"153.7\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"172.5\" y1=\"170.9\" x2=\"170.8\" y2=\"161.1\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"147.5\" y1=\"170.9\" x2=\"149.2\" y2=\"161.1\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"124\" y1=\"162.4\" x2=\"129\" y2=\"153.7\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"160\" y1=\"100\" x2=\"201.4\" y2=\"65.3\" stroke=\"#ff7675\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"160\" cy=\"100\" r=\"4\" fill=\"#ff7675\"/><text x=\"160\" y=\"196\" text-anchor=\"middle\" font-size=\"13\" fill=\"#ffeaa7\">hPa</text></svg>"
+      }
     },
     {
       "lekcija": 23,
@@ -6237,7 +7836,7 @@
         "1.000 puta",
         "Ista je"
       ],
-      "zanimljivost": "Koliko puta je veća površina, toliko puta je veća sila – ali veliki klip se pomera toliko puta manje.",
+      "zanimljivost": "Veliki klip se pomera 100 puta manje od malog – dobitak u sili se plaća putem, kao kod poluge.",
       "rec": "klip",
       "mediji": {
         "vrsta": "fizika",
@@ -6257,8 +7856,13 @@
         "Isto je",
         "Zavisi od veličine bazena"
       ],
-      "zanimljivost": "Pri ronjenju na dno dubokog bazena pritisak je i do 50% veći nego na površini.",
-      "rec": "bazen"
+      "zanimljivost": "Na dubini od 5 m ukupni pritisak (vode i vazduha) je oko 50 % veći nego na površini.",
+      "rec": "bazen",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "pritisak",
+        "tip": "dubina"
+      }
     },
     {
       "lekcija": 23,
@@ -6271,7 +7875,12 @@
         "Gravitacijom"
       ],
       "zanimljivost": "Zato kočionu tečnost treba redovno proveravati – mehurić vazduha može da „oslabi“ kočnice.",
-      "rec": "kočnice"
+      "rec": "kočnice",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "pritisak",
+        "tip": "paskal"
+      }
     },
     {
       "lekcija": 24,
@@ -6303,7 +7912,11 @@
         "Dinamometrom"
       ],
       "zanimljivost": "Postoje živini i metalni barometri (aneroidi). Manometri mere pritisak gasova i tečnosti u zatvorenim sudovima – npr. u gumama automobila.",
-      "rec": "pritisak"
+      "rec": "pritisak",
+      "medijiOdgovora": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox=\"0 0 320 200\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"320\" height=\"200\" fill=\"#0b1826\"/><circle cx=\"160\" cy=\"100\" r=\"80\" fill=\"#13293d\" stroke=\"#8fa3b8\" stroke-width=\"4\"/><line x1=\"124\" y1=\"37.6\" x2=\"129\" y2=\"46.3\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"147.5\" y1=\"29.1\" x2=\"149.2\" y2=\"38.9\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"172.5\" y1=\"29.1\" x2=\"170.8\" y2=\"38.9\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"196\" y1=\"37.6\" x2=\"191\" y2=\"46.3\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"215.2\" y1=\"53.7\" x2=\"207.5\" y2=\"60.1\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"227.7\" y1=\"75.4\" x2=\"218.3\" y2=\"78.8\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"232\" y1=\"100\" x2=\"222\" y2=\"100\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"227.7\" y1=\"124.6\" x2=\"218.3\" y2=\"121.2\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"215.2\" y1=\"146.3\" x2=\"207.5\" y2=\"139.9\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"196\" y1=\"162.4\" x2=\"191\" y2=\"153.7\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"172.5\" y1=\"170.9\" x2=\"170.8\" y2=\"161.1\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"147.5\" y1=\"170.9\" x2=\"149.2\" y2=\"161.1\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"124\" y1=\"162.4\" x2=\"129\" y2=\"153.7\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"160\" y1=\"100\" x2=\"201.4\" y2=\"65.3\" stroke=\"#ff7675\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"160\" cy=\"100\" r=\"4\" fill=\"#ff7675\"/><text x=\"160\" y=\"196\" text-anchor=\"middle\" font-size=\"13\" fill=\"#ffeaa7\">hPa</text></svg>"
+      }
     },
     {
       "lekcija": 24,
@@ -6321,15 +7934,20 @@
     {
       "lekcija": 24,
       "tezina": 2,
-      "pitanje": "Koliko je debeo vazdušni omotač Zemlje (atmosfera)?",
+      "pitanje": "Kako se menja gustina vazduha sa nadmorskom visinom?",
       "odgovori": [
-        "Nekoliko stotina kilometara, sve ređi ka vrhu",
-        "Samo oko 10 metara, koliko je visoka kuća na sprat",
-        "Oko 1 km, koliko je visok najviši oblak na nebu",
-        "Oko 100.000 km"
+        "Opada – što je viši, vazduh je ređi",
+        "Raste – na visokim planinama vazduh je gušći",
+        "Ostaje ista na svakoj visini",
+        "Raste samo iznad oblaka, a ispod njih se ne menja"
       ],
-      "zanimljivost": "Atmosfera postepeno prelazi u bezvazdušni prostor. Polovina mase vazduha nalazi se ispod oko 5,5 km visine.",
-      "rec": "atmosfera"
+      "zanimljivost": "Polovina mase vazduha nalazi se ispod oko 5,5 km visine.",
+      "rec": "atmosfera",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "pritisak",
+        "tip": "visina"
+      }
     },
     {
       "lekcija": 24,
@@ -6342,7 +7960,11 @@
         "Areometar"
       ],
       "zanimljivost": "Aneroid ima zatvorenu metalnu kutijicu bez vazduha, čiji se poklopac ugiba kada se menja pritisak. Na tom principu rade i visinomeri u avionima.",
-      "rec": "aneroid"
+      "rec": "aneroid",
+      "medijiOdgovora": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox=\"0 0 320 200\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"320\" height=\"200\" fill=\"#0b1826\"/><circle cx=\"160\" cy=\"100\" r=\"80\" fill=\"#13293d\" stroke=\"#8fa3b8\" stroke-width=\"4\"/><line x1=\"124\" y1=\"37.6\" x2=\"129\" y2=\"46.3\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"147.5\" y1=\"29.1\" x2=\"149.2\" y2=\"38.9\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"172.5\" y1=\"29.1\" x2=\"170.8\" y2=\"38.9\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"196\" y1=\"37.6\" x2=\"191\" y2=\"46.3\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"215.2\" y1=\"53.7\" x2=\"207.5\" y2=\"60.1\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"227.7\" y1=\"75.4\" x2=\"218.3\" y2=\"78.8\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"232\" y1=\"100\" x2=\"222\" y2=\"100\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"227.7\" y1=\"124.6\" x2=\"218.3\" y2=\"121.2\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"215.2\" y1=\"146.3\" x2=\"207.5\" y2=\"139.9\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"196\" y1=\"162.4\" x2=\"191\" y2=\"153.7\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"172.5\" y1=\"170.9\" x2=\"170.8\" y2=\"161.1\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"147.5\" y1=\"170.9\" x2=\"149.2\" y2=\"161.1\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"124\" y1=\"162.4\" x2=\"129\" y2=\"153.7\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"160\" y1=\"100\" x2=\"201.4\" y2=\"65.3\" stroke=\"#ff7675\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"160\" cy=\"100\" r=\"4\" fill=\"#ff7675\"/><text x=\"160\" y=\"196\" text-anchor=\"middle\" font-size=\"13\" fill=\"#ffeaa7\">hPa</text></svg>"
+      }
     },
     {
       "lekcija": 24,
@@ -6355,7 +7977,11 @@
         "Pritisak krvi"
       ],
       "zanimljivost": "Na naše telo vazduh pritiska silom preko 150.000 N – ali isti pritisak iznutra ga uravnotežava.",
-      "rec": "vazduh"
+      "rec": "vazduh",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "p_atm ≈ 101 300 Pa"
+      }
     },
     {
       "lekcija": 24,
@@ -6387,7 +8013,11 @@
       "tezina": 3,
       "zanimljivost": "Na vrhu Mont Everesta voda ključa već na oko 70 °C, pa se tamo jaje teško skuva. U ekspres-loncu je pritisak veći, pa voda ključa na preko 110 °C.",
       "rec": "ključanje",
-      "lekcija": 24
+      "lekcija": 24,
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "pritisak na vrhu Everesta ≈ 33 kPa;  na nivou mora ≈ 101 kPa"
+      }
     },
     {
       "lekcija": 24,
@@ -6418,7 +8048,11 @@
         "Snagu vetra – polulopte su pokretale veliku vetrenjaču koja je vukla teret jači od nekoliko jakih konja"
       ],
       "zanimljivost": "Ogled je izveo Oto fon Gerike, gradonačelnik Magdeburga, pred carem.",
-      "rec": "magdeburg"
+      "rec": "magdeburg",
+      "medijiOdgovora": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox=\"0 0 320 200\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"320\" height=\"200\" fill=\"#0b1826\"/><path d=\"M150,40 A60,60 0 0 0 150,160 Z\" fill=\"#8fa3b8\" stroke=\"#fff\" stroke-width=\"2\"/><path d=\"M170,40 A60,60 0 0 1 170,160 Z\" fill=\"#8fa3b8\" stroke=\"#fff\" stroke-width=\"2\"/><line x1=\"120\" y1=\"100\" x2=\"58\" y2=\"100\" stroke=\"#ff7675\" stroke-width=\"4\"/><polygon points=\"50,100 62,94 62,106\" fill=\"#ff7675\"/><line x1=\"200\" y1=\"100\" x2=\"262\" y2=\"100\" stroke=\"#ff7675\" stroke-width=\"4\"/><polygon points=\"270,100 258,94 258,106\" fill=\"#ff7675\"/><text x=\"40\" y=\"92\" font-size=\"14\" fill=\"#ffeaa7\">F</text><text x=\"272\" y=\"92\" font-size=\"14\" fill=\"#ffeaa7\">F</text></svg>"
+      }
     },
     {
       "lekcija": 24,
@@ -6431,7 +8065,11 @@
         "Instrument za merenje temperature tečnosti u zatvorenom sudu, npr. u bojleru"
       ],
       "zanimljivost": "Pumpe na benzinskim stanicama imaju manometar da bi se gume naduvale pravilno.",
-      "rec": "manometar"
+      "rec": "manometar",
+      "medijiOdgovora": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox=\"0 0 320 200\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"320\" height=\"200\" fill=\"#0b1826\"/><circle cx=\"190\" cy=\"100\" r=\"70\" fill=\"#13293d\" stroke=\"#8fa3b8\" stroke-width=\"4\"/><line x1=\"159\" y1=\"46.3\" x2=\"164\" y2=\"55\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"179.2\" y1=\"38.9\" x2=\"181\" y2=\"48.8\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"200.8\" y1=\"38.9\" x2=\"199\" y2=\"48.8\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"221\" y1=\"46.3\" x2=\"216\" y2=\"55\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"237.5\" y1=\"60.1\" x2=\"229.8\" y2=\"66.6\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"248.3\" y1=\"78.8\" x2=\"238.9\" y2=\"82.2\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"252\" y1=\"100\" x2=\"242\" y2=\"100\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"248.3\" y1=\"121.2\" x2=\"238.9\" y2=\"117.8\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"237.5\" y1=\"139.9\" x2=\"229.8\" y2=\"133.4\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"221\" y1=\"153.7\" x2=\"216\" y2=\"145\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"200.8\" y1=\"161.1\" x2=\"199\" y2=\"151.2\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"179.2\" y1=\"161.1\" x2=\"181\" y2=\"151.2\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"159\" y1=\"153.7\" x2=\"164\" y2=\"145\" stroke=\"#8fa3b8\" stroke-width=\"2\"/><line x1=\"190\" y1=\"100\" x2=\"223.7\" y2=\"71.7\" stroke=\"#ff7675\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"190\" cy=\"100\" r=\"4\" fill=\"#ff7675\"/><rect x=\"20\" y=\"132\" width=\"50\" height=\"58\" rx=\"10\" fill=\"#74b9ff\" opacity=\".5\" stroke=\"#8fa3b8\" stroke-width=\"2.5\"/><path d=\"M70,160 L120,160 L120,184 L190,184 L190,170\" fill=\"none\" stroke=\"#8fa3b8\" stroke-width=\"4\"/></svg>"
+      }
     },
     {
       "lekcija": 24,
@@ -6444,7 +8082,11 @@
         "Zbog toplote usta koja tečnost diže"
       ],
       "zanimljivost": "Kroz slamčicu ne može se piti sa vrha veoma visokog tornja – vazduh može da „podigne“ vodu najviše oko 10 m.",
-      "rec": "slamčica"
+      "rec": "slamčica",
+      "medijiOdgovora": {
+        "vrsta": "formula",
+        "tekst": "p u slamčici < p atmosferski"
+      }
     },
     {
       "lekcija": 24,
@@ -6456,7 +8098,7 @@
         "Voda ispari na sobnoj temperaturi, pa se ne može koristiti",
         "Živa se ne širi pri promeni temperature"
       ],
-      "zanimljivost": "Paskal je navodno napravio barometar sa vinom – stub je bio visok preko 10 m!",
+      "zanimljivost": "Paskal je 1646. ogled ponovio sa crvenim vinom – stub je bio visok preko 10 m!",
       "rec": "živa",
       "medijiOdgovora": {
         "vrsta": "fizika",
@@ -6476,7 +8118,11 @@
         "Oko 10.000.000 Pa (100 bara)"
       ],
       "zanimljivost": "To odgovara stubu žive visine 760 mm.",
-      "rec": "normalan"
+      "rec": "normalan",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "1 mmHg ≈ 133 Pa"
+      }
     },
     {
       "lekcija": 24,
@@ -6489,7 +8135,11 @@
         "Zbog toga što bubna opna pri glasnom zvuku pucka"
       ],
       "zanimljivost": "Gutanje ili žvakanje žvake pomaže da se pritisak u uhu izjednači.",
-      "rec": "uši"
+      "rec": "uši",
+      "medijiOdgovora": {
+        "vrsta": "formula",
+        "tekst": "p spolja se menja,  p u uhu ostaje"
+      }
     },
     {
       "lekcija": 24,
@@ -6502,20 +8152,30 @@
         "Ne naduje se"
       ],
       "zanimljivost": "Isto se dešava sa flašom vode – ako je zatvoriš na planini, u dolini će se ugnuti.",
-      "rec": "kesa"
+      "rec": "kesa",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "Beograd ≈ 116 m n. m.;  Kopaonik ≈ 1 700 m n. m."
+      }
     },
     {
       "lekcija": 24,
       "tezina": 2,
       "pitanje": "Šta je vakuum?",
       "odgovori": [
-        "Prostor bez vazduha (i bez drugih čestica)",
+        "Prostor bez vazduha i drugih gasova",
         "Prostor pun vode bez ijednog mehurića vazduha",
         "Prostor u kom je pritisak veći od atmosferskog",
         "Komora u kojoj se gasovi mešaju"
       ],
       "zanimljivost": "Usisivač radi tako što smanji pritisak u sebi – spoljašnji vazduh gura prašinu unutra.",
-      "rec": "vakuum"
+      "rec": "vakuum",
+      "medijiOdgovora": {
+        "vrsta": "fizika",
+        "scena": "pritisak",
+        "tip": "toriceli",
+        "visina": "76 cm"
+      }
     },
     {
       "lekcija": 24,
@@ -6528,7 +8188,11 @@
         "Porast vlažnosti bez ikakve promene vremena"
       ],
       "zanimljivost": "Uragani imaju u središtu najniži pritisak – ispod 900 hPa kod najjačih.",
-      "rec": "oluja"
+      "rec": "oluja",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "normalan pritisak ≈ 1013 hPa;  sada: 990 hPa"
+      }
     },
     {
       "lekcija": 24,
@@ -6541,7 +8205,11 @@
         "Na osnovu jačine Zemljine teže"
       ],
       "zanimljivost": "Visinomer je zapravo barometar sa skalom u metrima.",
-      "rec": "visinomer"
+      "rec": "visinomer",
+      "mediji": {
+        "vrsta": "formula",
+        "tekst": "p = 900 hPa  ·  p₀ = 1013 hPa"
+      }
     }
   ]
 }

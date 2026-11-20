@@ -29,7 +29,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik 
     [K('Iz $h = {g t^{2}|2}$ sledi $t^{2} = {2h|g}$.'),
      K('$t^{2} = {2 · 80 m|10 m/s^{2}} = 16 s^{2}$, pa je $t = 4 s$. (Zamka: $16$ je $t^{2}$.)'),
      K('Provera po sekundama: $5 + 15 + 25 + 35 = 80 m$.', [], S('pad', { tip: 'slobodan', visina: 80, strob: 1 }))],
-    null, { crtez: G(visina(80, { k: 0 }), { velicina: 150 }) });
+    S('pad', { tip: 'slobodan', visina: 80, brzina: false, sat: false, strob: 99 }), { crtez: G(visina(80, { k: 0 }), { velicina: 150 }) });
 
   proveri(Math.sqrt(2 * g * 45), 30);
   Z(2, 'Kolikom brzinom udari u zemlju telo koje slobodno padne sa visine $45 m$? ($g = 10 m/s^{2}$)',
@@ -75,7 +75,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik 
     [K('I čovek i lift padaju sa istim ubrzanjem $g$ – pod „beži“ ispod čoveka isto koliko čovek pada.'),
      K('Čovek uopšte ne pritiska pod: težina je $0 N$ – to je bestežinsko stanje (kao kod astronauta u orbiti).'),
      K('Sila Zemljine teže ($500 N$) i dalje deluje – ona je ta koja ih ubrzava!')],
-    S('orbita', { tip: 'njutn' }));
+    S('pad', { tip: 'slobodan', visina: 30, brzina: false, sat: false, strob: 99 }));
 
   proveri((g * 9) / 2 - (g * 4) / 2, 25);
   Z(3, 'Sa istog mesta pustimo dve kuglice, drugu $1 s$ posle prve. Koliko je rastojanje između njih $2 s$ posle puštanja druge kuglice? ($g = 10 m/s^{2}$, nijedna još nije pala na tlo.)',
@@ -83,7 +83,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik 
     [K('Prva kuglica tada pada već $3 s$: $h_{1} = {10 · 3^{2}|2} m = 45 m$.', ['h1']),
      K('Druga pada $2 s$: $h_{2} = {10 · 2^{2}|2} m = 20 m$.', ['h2']),
      K('Rastojanje: $45 m − 20 m = 25 m$. Ono stalno raste, jer je prva kuglica uvek brža za $10 m/s$.')],
-    null,
+    G([T('●', -1, 0, { b: 1, vel: 30 }), T('●', 1, 0, { b: 2, vel: 30 }), T('~prva', -1, 0.9, { b: 1, vel: 13 }), T('~druga', 1, 0.9, { b: 2, vel: 13 })], { velicina: 200 }),
     { crtez: G([T('●', -1, 0, { b: 1 }), T('●', 1, 0, { b: 2 }), { lin: [[-1, 0], [-1, -4.5]], b: 1, debljina: 2, isp: 1, k: 1, id: 'h1' }, T('●', -1, -4.5, { b: 1, k: 1, id: 'h1', vel: 22 }), T('45 m', -2.1, -2.2, { b: 1, k: 1, id: 'h1' }),
       { lin: [[1, 0], [1, -2]], b: 2, debljina: 2, isp: 1, k: 2, id: 'h2' }, T('●', 1, -2, { b: 2, k: 2, id: 'h2', vel: 22 }), T('20 m', 2, -1, { b: 2, k: 2, id: 'h2' }), mera(0, -2, 0, -4.5, '25 m', { k: 3 })], { velicina: 200 }) });
 
@@ -169,7 +169,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik 
     ['$60 N$', '$6 N$', '$600 N$', '$200 N$'],
     [K('Na vodoravnoj podlozi sila kojom telo pritiska podlogu jednaka je težini: $N = m g = 20 kg · 10 m/s^{2} = 200 N$.', ['n']),
      K('$F_{tr} = μ · N = 0,3 · 200 N = 60 N$.', ['tr'])],
-    S('sile', { sile: [{ F: 80, ugao: 0, o: 'F' }, { F: 60, ugao: 180, o: 'Ftr = ?' }], telo: '20 kg', kretanje: true }),
+    G([tlo(-4, 4, 0), telo(-1, 0, 2, 1.4, { tx: '20 kg' }), F(1, 0.7, 2.4, 0, { o: 'v', b: 2 })], { velicina: 220 }),
     { crtez: G([tlo(-4, 4, 0), telo(-1, 0, 2, 1.4, { tx: '20 kg' }), F(0, 0, 0, -2, { o: 'N = 200 N', b: 1, k: 1, id: 'n' }), F(-1, 0.3, -2.4, 0, { o: 'Ftr = 60 N', b: 3, k: 2, id: 'tr' }), F(1, 0.7, 2.4, 0, { o: 'F', b: 2 })], { velicina: 220 }) });
 
   Z(1, 'Dete vuče sanke stalnom brzinom silom od $40 N$ (paralelno sa tlom). Kolika je sila trenja?',
@@ -191,7 +191,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik 
     [K('Trenje: $F_{tr} = μ m g = 0,2 · 10 kg · 10 m/s^{2} = 20 N$.'),
      K('Rezultanta: $R = 50 N − 20 N = 30 N$.', [], S('sile', { sile: [{ F: 50, ugao: 0, o: '50 N' }, { F: 20, ugao: 180, o: '20 N' }], telo: '10 kg', rezultanta: 'R = 30 N', kretanje: true })),
      K('$a = {R|m} = {30 N|10 kg} = 3 m/s^{2}$.')],
-    S('sile', { sile: [{ F: 50, ugao: 0, o: '50 N' }, { F: 20, ugao: 180, o: 'Ftr' }], telo: '10 kg' }));
+    S('sile', { sile: [{ F: 50, ugao: 0, o: '50 N' }], telo: '10 kg' }));
 
   proveri(0.05 * g, 0.5);
   Z(2, 'Hokejaški pak klizi po ledu; koeficijent trenja je $0,05$. Koliko je usporenje paka? ($g = 10 m/s^{2}$)',
@@ -234,5 +234,6 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik 
   Z(1, 'Teška kutija mase $30 kg$ miruje na vodoravnom podu i niko je ne gura. Kolika sila trenja deluje na nju?',
     ['$0 N$', '$300 N$', '$μ · 300 N$', 'Zavisi od vrste poda'],
     [K('Trenje se javlja tek kada nešto pokušava da pokrene telo (ili kad se telo kreće).'),
-     K('Ako na kutiju ne deluje nijedna vodoravna sila, nema čemu trenje da se suprotstavlja: $F_{tr} = 0$.')]);
+     K('Ako na kutiju ne deluje nijedna vodoravna sila, nema čemu trenje da se suprotstavlja: $F_{tr} = 0$.')],
+    G([tlo(-3, 3, 0), telo(-1, 0, 2, 1.4, { tx: '30 kg' })], { velicina: 200 }));
 };

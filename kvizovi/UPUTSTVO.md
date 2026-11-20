@@ -121,7 +121,7 @@ Slike sa Vikipedije: `node alati/preuzmi-slike.js kvizovi/<folder> ime-fajla "Na
 
 Samo slike sa slobodnom licencom (Commons): kadrovi iz filmova, posteri i likovi iz crtanih filmova/igrica to nisu – umesto njih fotografije glumaca, autora, mesta snimanja, stvarnih životinja i predmeta, ili dela u javnom domenu. Posle preuzimanja: `node alati/licence-slika.js` (osvežava `SLIKE.md`, ističe neslobodne).
 
-Provera pre igranja: `npm run proveri`
+Provera pre igranja: `npm run proveri`. Pregled kako mediji stvarno izgledaju (i da li odaju odgovor): `node alati/pregled-medija.js kvizovi/<folder>/kviz.json [lekcija]` – PNG po 6 pitanja (headless Chrome; `--vreme ms` = trenutak animacije).
 
 ## Zadaci – matematika i fizika (`"zadaci": true`)
 

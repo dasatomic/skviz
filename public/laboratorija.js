@@ -343,7 +343,7 @@
     baza: { tip: 'tecnost', jac: 0.9, n: '~rastvor NaOH', b: '#a8d8ff', jonski: true },
   };
   function struja(s, m) {
-    const W = 320, H = 200, K = KOLO[m.predmet || 'Cu'] || KOLO.Cu;
+    const K = KOLO[m.predmet || 'Cu'] || KOLO.Cu, W = 320, H = K.tip === 'metal' ? 200 : 214; // natpis tečnosti je ispod čaše
     vel(s, W, H);
     // baterija
     el(s, 'rect', { x: 14, y: 78, width: 36, height: 56, rx: 4, fill: '#2d3436', stroke: C.siva, 'stroke-width': 2 });
