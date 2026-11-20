@@ -234,10 +234,11 @@
    "lekcija": 1,
    "tezina": 1,
    "pitanje": "Koji metal je jedini tečan na sobnoj temperaturi?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "hemija",
     "scena": "atom",
-    "z": 80
+    "z": 80,
+    "natpis": false
    },
    "odgovori": [
     "Živa",
@@ -344,10 +345,11 @@
    "lekcija": 1,
    "tezina": 2,
    "pitanje": "Koji metali se u prirodi mogu naći i u elementarnom stanju?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "hemija",
     "scena": "atom",
-    "z": 79
+    "z": 79,
+    "natpis": false
    },
    "odgovori": [
     "Zlato, srebro i bakar",
@@ -355,18 +357,19 @@
     "Aluminijum, magnezijum i cink",
     "Gvožđe, olovo i kalaj"
    ],
-   "zanimljivost": "Zato su ljudi zlato i bakar koristili mnogo ranije nego gvožđe i aluminijum.",
+   "zanimljivost": "Zlato ne rđa i ne oksidiše se, pa se u prirodi nalazi čisto; zato su ga ljudi koristili mnogo ranije nego gvožđe.",
    "rec": "zlato"
   },
   {
    "lekcija": 1,
    "tezina": 1,
    "pitanje": "Koji metal se nalazi u hlorofilu zelenih biljaka?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "hemija",
     "scena": "atom",
     "z": 12,
-    "naboj": 2
+    "naboj": 2,
+    "natpis": false
    },
    "odgovori": [
     "Magnezijum",
@@ -374,7 +377,7 @@
     "Kalcijum",
     "Natrijum"
    ],
-   "zanimljivost": "U hemoglobinu u krvi se umesto magnezijuma nalazi gvožđe.",
+   "zanimljivost": "Magnezijum gori jakim belim plamenom, pa se nekad koristio u fotografskim bljeskalicama. U hlorofilu je u središtu molekula, tamo gde u hemoglobinu stoji gvožđe.",
    "rec": "hlorofil"
   },
   {
@@ -399,7 +402,7 @@
    "lekcija": 1,
    "tezina": 3,
    "pitanje": "Koliko iznosi masa 2 mola gvožđa ($Ar(Fe)$ = 56)?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "hemija",
     "scena": "atom",
     "z": 26
@@ -410,7 +413,7 @@
     "28 g",
     "224 g"
    ],
-   "zanimljivost": "Masa jednog mola u gramima brojno je jednaka relativnoj atomskoj masi.",
+   "zanimljivost": "Masa jednog mola u gramima brojno je jednaka relativnoj atomskoj masi. Gvožđa u ljudskom telu ima oko 3–4 g, uglavnom u hemoglobinu.",
    "rec": "mol"
   },
   {
@@ -453,7 +456,7 @@
    "lekcija": 1,
    "tezina": 3,
    "pitanje": "Pre koliko godina su ljudi vinčanske kulture na prostoru današnje Srbije dobijali bakar iz rude?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "mapa",
     "oblast": "srbija",
     "tacke": [
@@ -470,7 +473,7 @@
     "Pre oko 3.000 godina",
     "Pre oko 12.000 godina"
    ],
-   "zanimljivost": "To je jedno od najstarijih poznatih topljenja metala na svetu.",
+   "zanimljivost": "To je jedno od najstarijih poznatih topljenja metala na svetu. Lokalitet Vinča je na Dunavu, nedaleko od Beograda.",
    "rec": "vinča"
   },
   {
@@ -478,7 +481,7 @@
    "vrsta": "spoji",
    "tezina": 2,
    "pitanje": "Spoji metal sa njegovom osobinom.",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "laboratorija",
     "scena": "pribor",
     "stavke": [
@@ -708,9 +711,10 @@
    "lekcija": 2,
    "tezina": 1,
    "pitanje": "Kako se u običnom životu zove kalcijum-oksid CaO?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
-    "ime": "kalcijum-oksid"
+    "ime": "kalcijum-oksid",
+    "legenda": false
    },
    "odgovori": [
     "Živi (negašeni) kreč",
@@ -725,9 +729,10 @@
    "lekcija": 2,
    "tezina": 2,
    "pitanje": "Kako se u običnom životu zove kalcijum-hidroksid Ca(OH)₂?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
-    "ime": "kalcijum-hidroksid"
+    "ime": "kalcijum-hidroksid",
+    "legenda": false
    },
    "odgovori": [
     "Gašeni kreč",
@@ -1062,7 +1067,7 @@
     "Aluminijum",
     "Svi podjednako"
    ],
-   "zanimljivost": "Aluminijum je bolji provodnik struje od gvožđa, ali je gvožđe bolji provodnik toplote.",
+   "zanimljivost": "Bakar je bolji provodnik i struje i toplote od gvožđa i aluminijuma, pa se koristi za kablove i kuhinjsko posuđe.",
    "rec": "provodnik"
   },
   {
@@ -1074,8 +1079,8 @@
     "ime": "legura-celik"
    },
    "odgovori": [
-    "Prilično je krto, pa se pravi čelik",
-    "Previše je mekano za svaku primenu",
+    "Prilično je mekano, pa se ojačava u čelik",
+    "Previše je krto i lako puca pri udarcu",
     "Ne provodi toplotu",
     "Otrovno je za ljude"
    ],
@@ -1104,9 +1109,10 @@
    "lekcija": 3,
    "tezina": 1,
    "pitanje": "Koji metal se koristi za izradu aviona i konzervi za sokove?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
-    "ime": "aluminijum-oksid"
+    "ime": "aluminijum-oksid",
+    "legenda": false
    },
    "odgovori": [
     "Aluminijum",
@@ -1114,7 +1120,7 @@
     "Olovo",
     "Bakar"
    ],
-   "zanimljivost": "Aluminijum je lak (mala gustina) i otporan na koroziju.",
+   "zanimljivost": "Aluminijum je lak i otporan na koroziju, a najzastupljeniji je metal u Zemljinoj kori – u rudi boksitu je vezan za kiseonik.",
    "rec": "avion"
   },
   {
@@ -1155,7 +1161,7 @@
    "lekcija": 3,
    "tezina": 3,
    "pitanje": "Koliko iznosi maseni udeo gvožđa u Fe₂O₃ ($Ar(Fe)$ = 56, $Ar(O)$ = 16)?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "gvozdje-oksid"
    },
@@ -1246,10 +1252,11 @@
    "lekcija": 4,
    "tezina": 1,
    "pitanje": "Koji metal ostavlja taman trag na papiru?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "hemija",
     "scena": "atom",
-    "z": 82
+    "z": 82,
+    "natpis": false
    },
    "odgovori": [
     "Olovo",
@@ -1320,10 +1327,11 @@
    "lekcija": 4,
    "tezina": 2,
    "pitanje": "Od čega se prave zaštitni prsluci i pregrade u rendgen-kabinetima?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "hemija",
     "scena": "atom",
-    "z": 82
+    "z": 82,
+    "natpis": false
    },
    "odgovori": [
     "Od olova",
@@ -1376,10 +1384,11 @@
    "lekcija": 4,
    "tezina": 1,
    "pitanje": "Čime se prevlače gvozdeni limovi da bi se zaštitili od rđanja?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "hemija",
     "scena": "atom",
-    "z": 30
+    "z": 30,
+    "natpis": false
    },
    "odgovori": [
     "Cinkom",
@@ -1387,18 +1396,19 @@
     "Aluminijumom",
     "Natrijumom"
    ],
-   "zanimljivost": "Pocinkovani lim se koristi za žlebove, kante i ograde.",
+   "zanimljivost": "Pocinkovani lim se koristi za žlebove, kante i ograde: kad se prevlaka ogrebe, cink se prvi troši i štiti gvožđe.",
    "rec": "cink"
   },
   {
    "lekcija": 4,
    "tezina": 2,
    "pitanje": "Gde cink u malim količinama ima važnu ulogu?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "hemija",
     "scena": "atom",
     "z": 30,
-    "naboj": 2
+    "naboj": 2,
+    "natpis": false
    },
    "odgovori": [
     "U odbrambenom sistemu organizma protiv infekcija",
@@ -1406,7 +1416,7 @@
     "U hemoglobinu koji prenosi kiseonik u krvi",
     "U kostima i zubima zajedno sa kalcijumom"
    ],
-   "zanimljivost": "U većim količinama cink je otrovan – mera je presudna.",
+   "zanimljivost": "Cink je deo stotina enzima, a u većim količinama je otrovan – mera je presudna.",
    "rec": "cink"
   },
   {
@@ -1451,7 +1461,7 @@
    "lekcija": 4,
    "tezina": 3,
    "pitanje": "Koliki je maseni udeo kiseonika u cink-oksidu ZnO ($Ar(Zn)$ = 65, $Ar(O)$ = 16)?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "cink-oksid"
    },
@@ -1468,7 +1478,7 @@
    "lekcija": 4,
    "tezina": 2,
    "pitanje": "Koji metali se koriste za izradu akumulatora?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "hemija",
     "scena": "ph",
     "supstance": [
@@ -1652,9 +1662,10 @@
    "lekcija": 5,
    "tezina": 2,
    "pitanje": "Koji metali čine duralumin?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
-    "ime": "aluminijum"
+    "ime": "aluminijum",
+    "legenda": false
    },
    "odgovori": [
     "Aluminijum i bakar",
@@ -1669,7 +1680,7 @@
    "lekcija": 5,
    "tezina": 2,
    "pitanje": "Koje elemente osim gvožđa sadrže nerđajući čelici?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "legura-celik"
    },
@@ -1686,7 +1697,7 @@
    "lekcija": 5,
    "tezina": 1,
    "pitanje": "Zašto se avionski delovi prave od duralumina?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "hemija",
     "scena": "atom",
     "z": 13
@@ -1755,7 +1766,7 @@
    "lekcija": 5,
    "tezina": 2,
    "pitanje": "Po čemu se mesing od bakra razlikuje na prvi pogled?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "legura-mesing"
    },
@@ -1773,7 +1784,7 @@
    "vrsta": "uljez",
    "tezina": 2,
    "pitanje": "Šta od ovoga NIJE legura?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "legura-mesing"
    },
@@ -1791,9 +1802,9 @@
    "lekcija": 5,
    "tezina": 3,
    "pitanje": "Zašto je čist aluminijum manje pogodan za konstrukcije nego duralumin?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
-    "ime": "legura-celik"
+    "ime": "aluminijum"
    },
    "odgovori": [
     "Nije dovoljno čvrst",
@@ -1876,7 +1887,7 @@
    "lekcija": 6,
    "tezina": 1,
    "pitanje": "Koliki je zapreminski udeo kiseonika u vazduhu?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "kiseonik"
    },
@@ -1886,16 +1897,17 @@
     "Oko 50%",
     "Oko 1%"
    ],
-   "zanimljivost": "Azota ima oko 78%, argona oko 0,9%, a ugljen-dioksida samo oko 0,04%.",
+   "zanimljivost": "Tečni kiseonik je svetloplav, a magnet ga privlači – molekuli O₂ su paramagnetični.",
    "rec": "kiseonik"
   },
   {
    "lekcija": 6,
    "tezina": 1,
    "pitanje": "Koji od ovih nemetala je tečan na sobnoj temperaturi?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
-    "ime": "brom"
+    "ime": "brom",
+    "legenda": false
    },
    "odgovori": [
     "Brom",
@@ -1903,16 +1915,17 @@
     "Jod",
     "Sumpor"
    ],
-   "zanimljivost": "Hlor je gas, jod i sumpor su čvrsti, a brom je crvenomrka isparljiva tečnost.",
+   "zanimljivost": "Brom je jedini nemetal koji je tečan na sobnoj temperaturi. Isparava u crvenomrke, otrovne pare oštrog mirisa.",
    "rec": "brom"
   },
   {
    "lekcija": 6,
    "tezina": 1,
    "pitanje": "Koji nemetal je dobar provodnik struje?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
-    "ime": "grafit"
+    "ime": "grafit",
+    "legenda": false
    },
    "odgovori": [
     "Ugljenik u obliku grafita",
@@ -1963,10 +1976,11 @@
    "lekcija": 6,
    "tezina": 1,
    "pitanje": "Koji element čini najveći deo Zemljine kore po masi?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "hemija",
     "scena": "atom",
-    "z": 8
+    "z": 8,
+    "natpis": false
    },
    "odgovori": [
     "Kiseonik",
@@ -2482,7 +2496,7 @@
    "lekcija": 7,
    "tezina": 1,
    "pitanje": "Šta su kisele kiše?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "hemija",
     "scena": "ph",
     "supstance": [
@@ -2496,7 +2510,7 @@
     "Kiše koje sadrže kuhinjsku so",
     "Kiše bez ikakvih rastvorenih gasova"
    ],
-   "zanimljivost": "Oksidi SO₂ i NO₂ iz izduvnih gasova i fabrika sa vodom grade kiseline.",
+   "zanimljivost": "Oksidi SO₂ i NO₂ iz izduvnih gasova i fabrika sa vodom grade kiseline. Kisela kiša može imati pH oko 4 i nagriza mermer i krečnjak.",
    "rec": "kisela"
   },
   {
@@ -2632,9 +2646,10 @@
    "lekcija": 8,
    "tezina": 1,
    "pitanje": "Koji halogeni element je gas žutozelene boje?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
-    "ime": "hlor"
+    "ime": "hlor",
+    "legenda": false
    },
    "odgovori": [
     "Hlor",
@@ -2642,16 +2657,17 @@
     "Jod",
     "Fluor"
    ],
-   "zanimljivost": "Hlor je otrovan gas oštrog mirisa; zato se koristi za dezinfekciju vode u bazenima.",
+   "zanimljivost": "Hlor je otrovan gas oštrog mirisa, ali se u malim količinama koristi za dezinfekciju vode u bazenima.",
    "rec": "hlor"
   },
   {
    "lekcija": 8,
    "tezina": 1,
    "pitanje": "Koji halogeni element je čvrst, ljubičastocrn i lako sublimira?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
-    "ime": "jod"
+    "ime": "jod",
+    "legenda": false
    },
    "odgovori": [
     "Jod",
@@ -2738,7 +2754,7 @@
    "lekcija": 8,
    "tezina": 2,
    "pitanje": "Za šta se koristi hlor?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "hlor"
    },
@@ -2755,9 +2771,10 @@
    "lekcija": 8,
    "tezina": 1,
    "pitanje": "Šta je teflon?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
-    "ime": "fluor"
+    "ime": "fluor",
+    "legenda": false
    },
    "odgovori": [
     "Jedinjenje fluora i ugljenika – prevlaka tiganja",
@@ -2772,12 +2789,13 @@
    "lekcija": 8,
    "tezina": 1,
    "pitanje": "Koji halogeni element je najreaktivniji?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "hemija",
     "scena": "atom",
     "z": 9,
     "brojevi": true,
-    "istakni": "valentna"
+    "istakni": "valentna",
+    "natpis": false
    },
    "odgovori": [
     "Fluor",
@@ -2847,9 +2865,10 @@
    "lekcija": 8,
    "tezina": 1,
    "pitanje": "Koji halogeni element se koristi u medicini kao dezinfekciono sredstvo za rane?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
-    "ime": "jod"
+    "ime": "jod",
+    "legenda": false
    },
    "odgovori": [
     "Jod",
@@ -2865,7 +2884,7 @@
    "vrsta": "spoji",
    "tezina": 2,
    "pitanje": "Spoji halogeni element sa njegovim izgledom na sobnoj temperaturi.",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "hemija",
     "scena": "periodni",
     "istakni": "halogeni"
@@ -3064,7 +3083,7 @@
    "lekcija": 9,
    "tezina": 1,
    "pitanje": "Šta su alotropske modifikacije?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "sumpor-s8"
    },
@@ -3118,7 +3137,7 @@
    "lekcija": 9,
    "tezina": 3,
    "pitanje": "Kako se pravilno razblažuje koncentrovana sumporna kiselina?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "laboratorija",
     "scena": "oznake",
     "znaci": [
@@ -3257,7 +3276,7 @@
    "lekcija": 10,
    "tezina": 1,
    "pitanje": "Kakav je elementarni azot na sobnoj temperaturi?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "azot"
    },
@@ -3267,7 +3286,7 @@
     "Crvenomrka tečnost",
     "Čvrsta supstanca zelene boje"
    ],
-   "zanimljivost": "Azot čini oko 78% vazduha.",
+   "zanimljivost": "Azot čini oko 78% vazduha, a industrijski se dobija destilacijom tečnog vazduha.",
    "rec": "azot"
   },
   {
@@ -3292,7 +3311,7 @@
    "lekcija": 10,
    "tezina": 2,
    "pitanje": "Po čemu je elementarni azot sličan plemenitim gasovima?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "azot"
    },
@@ -3393,7 +3412,7 @@
    "lekcija": 10,
    "tezina": 2,
    "pitanje": "Za šta se koristi tečni azot?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "azot"
    },
@@ -3403,7 +3422,7 @@
     "Za zavarivanje metala u industriji",
     "Za punjenje običnih sijalica"
    ],
-   "zanimljivost": "Tečni azot ključa na −196 °C.",
+   "zanimljivost": "Tečni azot ključa na −196 °C, što je mnogo hladnije od suvog leda (−78 °C).",
    "rec": "hlađenje"
   },
   {
@@ -3589,7 +3608,7 @@
    "lekcija": 11,
    "tezina": 1,
    "pitanje": "Koje alotropske modifikacije fosfora postoje?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "beli-fosfor"
    },
@@ -3636,7 +3655,7 @@
     "Inače bi isparavao kao hlor",
     "Voda ga čini providnim"
    ],
-   "zanimljivost": "Crveni fosfor je znatno stabilniji i nalazi se u glavici šibice.",
+   "zanimljivost": "Crveni fosfor je znatno stabilniji i nalazi se u premazu kutije za šibice.",
    "rec": "čuvanje"
   },
   {
@@ -3779,7 +3798,7 @@
    "lekcija": 11,
    "tezina": 3,
    "pitanje": "Zbog čega fosfatna đubriva mogu da zagade vode?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "fosfat"
    },
@@ -3813,7 +3832,7 @@
    "lekcija": 11,
    "tezina": 2,
    "pitanje": "Koja boja ima crveni fosfor?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "laboratorija",
     "scena": "pribor",
     "stavke": [
@@ -3876,7 +3895,7 @@
    "vrsta": "uljez",
    "tezina": 2,
    "pitanje": "Koji od ovih oblika NIJE alotropska modifikacija fosfora?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "beli-fosfor"
    },
@@ -4132,7 +4151,7 @@
    "lekcija": 12,
    "tezina": 3,
    "pitanje": "Zašto je CO₂ staklenički gas?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "ugljen-dioksid"
    },
@@ -4149,7 +4168,7 @@
    "lekcija": 12,
    "tezina": 3,
    "pitanje": "Koliko iznosi molekulska masa CO₂ ($Ar(C)$ = 12, $Ar(O)$ = 16)?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "ugljen-dioksid"
    },
@@ -4184,7 +4203,7 @@
    "vrsta": "uljez",
    "tezina": 2,
    "pitanje": "Koji od ovih oblika NIJE alotropska modifikacija ugljenika?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "grafen"
    },
@@ -4219,7 +4238,7 @@
    "lekcija": 13,
    "tezina": 1,
    "pitanje": "Šta je kiselinski ostatak?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "sulfat"
    },
@@ -4229,7 +4248,7 @@
     "Višak vode koji se nalazi u kiselini",
     "Metal koji je rastvoren u kiselini"
    ],
-   "zanimljivost": "Kod HCl je to Cl⁻, kod H₂SO₄ je to SO₄²⁻.",
+   "zanimljivost": "Kod HCl je to Cl⁻, a sulfat je u gipsu. Glauberova so (Na₂SO₄ · 10H₂O) nazvana je po hemičaru Johanu Glauberu iz 17. veka.",
    "rec": "ostatak"
   },
   {
@@ -4425,7 +4444,7 @@
    "lekcija": 13,
    "tezina": 3,
    "pitanje": "Koliki je maseni udeo natrijuma u natrijum-hloridu ($Ar(Na)$ = 23, $Ar(Cl)$ = 35,5)?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "kuhinjska-so"
    },
@@ -4435,14 +4454,14 @@
     "Oko 50%",
     "Oko 23%"
    ],
-   "zanimljivost": "23 : (23 + 35,5) = 0,393.",
+   "zanimljivost": "23 : (23 + 35,5) = 0,393, tj. oko 39%. Fiziološki rastvor je 0,9%-tni rastvor kuhinjske soli, a morska voda ima oko 3,5%.",
    "rec": "udeo"
   },
   {
    "lekcija": 13,
    "tezina": 3,
    "pitanje": "Koliko grama soli ima u 200 g rastvora masenog udela 5%?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "hemija",
     "scena": "rastvaranje",
     "tip": "so"
@@ -4453,7 +4472,7 @@
     "20 g",
     "100 g"
    ],
-   "zanimljivost": "m(soli) = 0,05 · 200 g = 10 g.",
+   "zanimljivost": "m(soli) = 0,05 · 200 g = 10 g. Na 20 °C u 100 g vode rastvara se najviše oko 36 g kuhinjske soli; višak ostaje na dnu.",
    "rec": "rastvor"
   },
   {
@@ -4717,7 +4736,7 @@
    "lekcija": 14,
    "tezina": 3,
    "pitanje": "Koji je ukupan broj načina dobijanja soli navedenih u udžbeniku?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "hemija",
     "scena": "reakcija",
     "reaktanti": [
@@ -4747,7 +4766,7 @@
     "Tri",
     "Osam"
    ],
-   "zanimljivost": "Neutralizacija, metal + kiselina, bazni oksid + kiselina, kiseli oksid + baza i metal + nemetal.",
+   "zanimljivost": "Neutralizacija, metal + kiselina, bazni oksid + kiselina, kiseli oksid + baza i metal + nemetal. Kuhinjska so se i danas dobija isparavanjem morske vode u solanama.",
    "rec": "načini"
   },
   {
@@ -4789,7 +4808,7 @@
    "lekcija": 14,
    "tezina": 3,
    "pitanje": "Zašto bakar ne reaguje sa razblaženom hlorovodoničnom kiselinom?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "laboratorija",
     "scena": "epruvete",
     "preset": "metali"
@@ -5056,7 +5075,7 @@
    "lekcija": 15,
    "tezina": 3,
    "pitanje": "Zašto rastvor soli provodi struju?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "laboratorija",
     "scena": "struja",
     "predmet": "so"
@@ -5222,7 +5241,7 @@
    "lekcija": 15,
    "tezina": 3,
    "pitanje": "Šta je kristalohidrat?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "bakar-sulfat"
    },
@@ -5239,7 +5258,7 @@
    "lekcija": 15,
    "tezina": 2,
    "pitanje": "Za šta se koristi kuhinjska so?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "natrijum-hlorid"
    },
@@ -5249,7 +5268,7 @@
     "Kao veštačko đubrivo",
     "Kao gorivo"
    ],
-   "zanimljivost": "So je neophodna organizmu, ali prevelike količine su štetne.",
+   "zanimljivost": "So je neophodna organizmu, ali prevelike količine su štetne. Kuhinjska so se topi na oko 801 °C.",
    "rec": "ishrana"
   },
   {
@@ -5258,7 +5277,7 @@
    "pitanje": "Koja so se koristi u građevinarstvu kao vezivni materijal i za oblaganje zidova (gips)?",
    "medijiOdgovora": {
     "vrsta": "molekul",
-    "ime": "barijum-sulfat"
+    "ime": "kalcijum-sulfat"
    },
    "odgovori": [
     "Kalcijum-sulfat",
@@ -5465,7 +5484,7 @@
    "lekcija": 16,
    "tezina": 3,
    "pitanje": "Zašto organske supstance imaju niže temperature topljenja od neorganskih?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "etanol"
    },
@@ -5475,7 +5494,7 @@
     "Sadrže mnogo metala u rešetki",
     "Imaju veliku gustinu i tvrdoću"
    ],
-   "zanimljivost": "Za topljenje je dovoljno savladati slabe sile između molekula, a ne jonske veze.",
+   "zanimljivost": "Za topljenje je dovoljno savladati slabe sile između molekula, a ne jonske veze. Etanol se topi na oko −114 °C, pa se ne zamrzava u običnom zamrzivaču.",
    "rec": "topljenje"
   },
   {
@@ -5824,7 +5843,7 @@
    "lekcija": 17,
    "tezina": 3,
    "pitanje": "Koja je funkcionalna grupa u molekulu glukoze pored –OH?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "glukoza"
    },
@@ -5924,7 +5943,7 @@
    "lekcija": 18,
    "tezina": 1,
    "pitanje": "Koji ugljovodonici imaju samo jednostruke veze između ugljenika?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "butan"
    },
@@ -5934,14 +5953,14 @@
     "Alkini",
     "Aromatični ugljovodonici"
    ],
-   "zanimljivost": "Zbog toga su alkani zasićeni ugljovodonici.",
+   "zanimljivost": "Zbog toga su alkani zasićeni ugljovodonici. Butan se puni u upaljače i koristi kao gorivo za kampovanje.",
    "rec": "alkani"
   },
   {
    "lekcija": 18,
    "tezina": 1,
    "pitanje": "Koji ugljovodonici imaju jednu dvostruku vezu između ugljenika?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "eten"
    },
@@ -5951,14 +5970,14 @@
     "Alkini",
     "Cikloalkani"
    ],
-   "zanimljivost": "Najprostiji alken je eten.",
+   "zanimljivost": "Najprostiji alken je eten. Eten (etilen) je biljni hormon koji ubrzava sazrevanje voća.",
    "rec": "alkeni"
   },
   {
    "lekcija": 18,
    "tezina": 1,
    "pitanje": "Koji ugljovodonici imaju jednu trostruku vezu između ugljenika?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "etin"
    },
@@ -5968,14 +5987,14 @@
     "Alkani",
     "Cikloalkani"
    ],
-   "zanimljivost": "Najprostiji alkin je etin (acetilen).",
+   "zanimljivost": "Najprostiji alkin je etin (acetilen). Nekad se koristio u rudarskim lampama, a danas za zavarivanje metala.",
    "rec": "alkini"
   },
   {
    "lekcija": 18,
    "tezina": 2,
    "pitanje": "Šta znači da je ugljovodonik ciklični?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "cikloheksan"
    },
@@ -5985,14 +6004,14 @@
     "Sadrži atome kiseonika",
     "Sastoji se od više molekula"
    ],
-   "zanimljivost": "Cikloheksan ima prsten od šest atoma ugljenika.",
+   "zanimljivost": "Cikloheksan ima prsten od šest atoma ugljenika, a u prostoru je najstabilniji u obliku „stolice“.",
    "rec": "ciklični"
   },
   {
    "lekcija": 18,
    "tezina": 2,
    "pitanje": "Koji su ugljovodonici zasićeni i aciklični?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "pentan"
    },
@@ -6002,7 +6021,7 @@
     "Aromatični",
     "Alkini"
    ],
-   "zanimljivost": "Zasićeni znači samo jednostruke veze, a aciklični da niz nije zatvoren.",
+   "zanimljivost": "Zasićeni znači samo jednostruke veze, a aciklični da niz nije zatvoren. Pentan je sastojak benzina i lakih rastvarača.",
    "rec": "zasićeni"
   },
   {
@@ -6027,7 +6046,7 @@
    "lekcija": 18,
    "tezina": 2,
    "pitanje": "Šta određuje agregatno stanje ugljovodonika?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "heptan"
    },
@@ -6037,7 +6056,7 @@
     "Prisustvo soli",
     "Količina vode"
    ],
-   "zanimljivost": "Mali ugljovodonici (do 4 C) su gasovi, srednji su tečni, a veliki čvrsti.",
+   "zanimljivost": "Mali ugljovodonici (do 4 C) su gasovi, srednji su tečni, a veliki čvrsti. Heptan je tečan na sobnoj temperaturi i ključa na oko 98 °C.",
    "rec": "stanje"
   },
   {
@@ -6065,7 +6084,7 @@
    "lekcija": 18,
    "tezina": 2,
    "pitanje": "Koliko izomera ima pentan C₅H₁₂?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "neopentan"
    },
@@ -6075,7 +6094,7 @@
     "Pet",
     "Jedan"
    ],
-   "zanimljivost": "Pentan, 2-metilbutan i 2,2-dimetilpropan.",
+   "zanimljivost": "Pentan, 2-metilbutan i 2,2-dimetilpropan. Svi imaju formulu C₅H₁₂, ali se razlikuju po obliku molekula.",
    "rec": "pentan"
   },
   {
@@ -6099,7 +6118,7 @@
    "lekcija": 18,
    "tezina": 3,
    "pitanje": "Šta važi za temperature ključanja izomera istog broja ugljenika?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "neopentan"
    },
@@ -6109,7 +6128,7 @@
     "Sve su im iste",
     "Zavise samo od boje"
    ],
-   "zanimljivost": "Kod razgranatih molekula međumolekulske sile su slabije.",
+   "zanimljivost": "Kod razgranatih molekula međumolekulske sile su slabije, pa im je ključanje na nižoj temperaturi. Neopentan je gas na sobnoj temperaturi.",
    "rec": "razgranat"
   },
   {
@@ -6150,7 +6169,7 @@
    "lekcija": 18,
    "tezina": 2,
    "pitanje": "Šta pokazuje rationalna strukturna formula?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "izopentan"
    },
@@ -6160,7 +6179,7 @@
     "Samo boju i agregatno stanje molekula",
     "Sve veze, uključujući i sve C–H veze"
    ],
-   "zanimljivost": "Zbog toga je pogodna za crtanje velikih molekula.",
+   "zanimljivost": "Zbog toga je pogodna za crtanje velikih molekula. Izopentan (2-metilbutan) ključa na oko 28 °C i sastojak je benzina.",
    "rec": "formula"
   },
   {
@@ -6220,7 +6239,7 @@
    "lekcija": 19,
    "tezina": 1,
    "pitanje": "Koji nastavak imaju nazivi alkana?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "propan"
    },
@@ -6230,7 +6249,7 @@
     "-in",
     "-ol"
    ],
-   "zanimljivost": "Etan, propan, butan, pentan…",
+   "zanimljivost": "Etan, propan, butan, pentan… Propan se u bocama za roštilj čuva kao tečnost pod pritiskom; gas je bez mirisa, pa mu se dodaje miris kao od pokvarenih jaja.",
    "rec": "nastavak"
   },
   {
@@ -6301,7 +6320,7 @@
    "lekcija": 19,
    "tezina": 1,
    "pitanje": "Šta je homologi niz?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "heptan"
    },
@@ -6311,14 +6330,14 @@
     "Niz jedinjenja koja su u istom agregatnom stanju",
     "Niz izomera sa istom molekulskom formulom"
    ],
-   "zanimljivost": "Metan, etan, propan… svaki sledeći ima jednu CH₂ grupu više.",
+   "zanimljivost": "Metan, etan, propan… svaki sledeći ima jednu CH₂ grupu više. Heptan ima oktanski broj 0 i jedna je od dve referentne tačke skale za kvalitet benzina.",
    "rec": "homologi"
   },
   {
    "lekcija": 19,
    "tezina": 2,
    "pitanje": "U kom agregatnom stanju su alkani sa 5 do 17 atoma ugljenika?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "oktan"
    },
@@ -6328,14 +6347,14 @@
     "Čvrstom",
     "Plazmi"
    ],
-   "zanimljivost": "Alkani do 4 C su gasovi, a sa 18 i više C su čvrsti (parafin).",
+   "zanimljivost": "Alkani do 4 C su gasovi, a sa 18 i više C su čvrsti (parafin). Oktan je tečan na sobnoj temperaturi i ključa na oko 125 °C.",
    "rec": "tečni"
   },
   {
    "lekcija": 19,
    "tezina": 1,
    "pitanje": "Šta su alkil-grupe?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "izopentan"
    },
@@ -6345,14 +6364,14 @@
     "Soli alkana sa metalima",
     "Grupe atoma koje se nalaze samo u alkenima"
    ],
-   "zanimljivost": "Ime se dobija zamenom nastavka -an nastavkom -il: metan → metil, etan → etil.",
+   "zanimljivost": "Ime se dobija zamenom nastavka -an nastavkom -il: metan → metil, etan → etil. Izopentan ima metil-grupu kao granu na drugom ugljeniku.",
    "rec": "alkil"
   },
   {
    "lekcija": 19,
    "tezina": 1,
    "pitanje": "Kako se zove alkil-grupa koja nastaje od metana?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "izobutan"
    },
@@ -6362,7 +6381,7 @@
     "Propil (–C₃H₇)",
     "Butil (–C₄H₉)"
    ],
-   "zanimljivost": "Alkil-grupa ne postoji sama, već samo kao deo većeg molekula.",
+   "zanimljivost": "Alkil-grupa ne postoji sama, već samo kao deo većeg molekula. Izobutan ima tri metil-grupe vezane za centralni ugljenik.",
    "rec": "metil"
   },
   {
@@ -6430,7 +6449,7 @@
     "C₈H₁₄",
     "C₇H₁₆"
    ],
-   "zanimljivost": "Oktan je jedan od sastojaka benzina; po njemu se meri oktanski broj.",
+   "zanimljivost": "Oktan je jedan od sastojaka benzina; oktanski broj meri otpornost goriva na lupanje, a referentna mešavina je izooktan.",
    "rec": "oktan"
   },
   {
@@ -6507,7 +6526,7 @@
    "lekcija": 20,
    "tezina": 1,
    "pitanje": "Koji nastavak imaju nazivi alkena?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "eten"
    },
@@ -6517,14 +6536,14 @@
     "-in",
     "-il"
    ],
-   "zanimljivost": "Eten, propen, buten…",
+   "zanimljivost": "Eten, propen, buten… Eten (etilen) je najvažnija sirovina hemijske industrije; od njega se pravi polietilen.",
    "rec": "nastavak"
   },
   {
    "lekcija": 20,
    "tezina": 1,
    "pitanje": "Koji nastavak imaju nazivi alkina?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "etin"
    },
@@ -6534,7 +6553,7 @@
     "-an",
     "-ol"
    ],
-   "zanimljivost": "Etin, propin, butin…",
+   "zanimljivost": "Etin, propin, butin… Etin se pravi od kalcijum-karbida i vode.",
    "rec": "nastavak"
   },
   {
@@ -6668,7 +6687,7 @@
    "lekcija": 20,
    "tezina": 3,
    "pitanje": "Zašto se u nazivu but-1-en piše broj 1?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "but-1-en"
    },
@@ -6678,7 +6697,7 @@
     "Pokazuje ukupan broj izomera tog jedinjenja",
     "Pokazuje relativnu molekulsku masu jedinjenja"
    ],
-   "zanimljivost": "Numeracija počinje od kraja lanca koji je bliži višestrukoj vezi.",
+   "zanimljivost": "Numeracija počinje od kraja lanca koji je bliži višestrukoj vezi. But-1-en se koristi kao komonomer pri proizvodnji polietilena male gustine.",
    "rec": "položaj"
   },
   {
@@ -6702,10 +6721,9 @@
    "lekcija": 20,
    "tezina": 2,
    "pitanje": "Kako se alkeni mogu razlikovati od alkana reakcijom sa rastvorom kalijum-permanganata?",
-   "medijiOdgovora": {
-    "vrsta": "laboratorija",
-    "scena": "epruvete",
-    "preset": "baza"
+   "mediji": {
+    "vrsta": "molekul",
+    "ime": "eten"
    },
    "odgovori": [
     "Alken obezbojava ljubičasti rastvor, alkan ne",
@@ -7074,7 +7092,7 @@
    "lekcija": 21,
    "tezina": 2,
    "pitanje": "Koja reakcija je karakteristična za alkane?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "hlormetan"
    },
@@ -7084,7 +7102,7 @@
     "Polimerizacija",
     "Hidroliza"
    ],
-   "zanimljivost": "Alkani nemaju dvostruku vezu, pa ne mogu adirati.",
+   "zanimljivost": "Alkani nemaju dvostruku vezu, pa ne mogu adirati. Hlormetan se danas koristi uglavnom u industriji silikona.",
    "rec": "alkani"
   },
   {
@@ -7341,7 +7359,7 @@
    "lekcija": 22,
    "tezina": 2,
    "pitanje": "Kakve veze povezuju ugljenike u benzenu?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "benzen"
    },
@@ -7351,7 +7369,7 @@
     "Samo dvostruke veze između svih atoma ugljenika",
     "Jonske veze između atoma ugljenika i vodonika"
    ],
-   "zanimljivost": "Elektroni dvostrukih veza su razmešteni po celom prstenu – veze su istovetne.",
+   "zanimljivost": "Elektroni dvostrukih veza su razmešteni po celom prstenu – veze su istovetne. Dužina svake C–C veze u benzenu je između jednostruke i dvostruke.",
    "rec": "prsten"
   },
   {
@@ -7375,7 +7393,7 @@
    "lekcija": 22,
    "tezina": 2,
    "pitanje": "Po čemu su aromatični ugljovodonici dobili ime?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "toluen"
    },
@@ -7385,14 +7403,14 @@
     "Zato što su svi providni, bezbojni i lako isparljivi",
     "Zbog karakteristične boje plamena pri sagorevanju"
    ],
-   "zanimljivost": "Mnogi su imali miris, ali su danas poznati i kao štetni.",
+   "zanimljivost": "Mnogi su imali miris, ali su danas poznati i kao štetni. Toluen je rastvarač u lakovima i bojama; zbog isparenja se koristi uz provetravanje.",
    "rec": "aroma"
   },
   {
    "lekcija": 22,
    "tezina": 3,
    "pitanje": "Zašto benzen ulazi pre u supstituciju nego u adiciju?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "hemija",
     "scena": "reakcija",
     "reaktanti": [
@@ -7423,7 +7441,7 @@
     "Benzen ima trostruku vezu između ugljenika",
     "Benzen ne sadrži ugljenik u svom prstenu"
    ],
-   "zanimljivost": "Adicija bi razorila stabilni aromatični sistem.",
+   "zanimljivost": "Adicija bi razorila stabilni aromatični sistem. Delokalizacija elektrona daje benzenu dodatnu stabilnost od oko 150 kJ/mol.",
    "rec": "stabilnost"
   },
   {
@@ -7467,7 +7485,7 @@
    "lekcija": 22,
    "tezina": 2,
    "pitanje": "Koja jedinjenja se prave od aromatičnih ugljovodonika?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "stiren"
    },
@@ -7477,7 +7495,7 @@
     "Samo veštačka đubriva za njive",
     "Samo soli i metali za legure"
    ],
-   "zanimljivost": "Na primer aspirin, polistiren, TNT.",
+   "zanimljivost": "Na primer aspirin, polistiren, TNT. Od stirena se pravi polistiren, a od toluena TNT.",
    "rec": "primena"
   },
   {
@@ -7539,7 +7557,7 @@
    "lekcija": 22,
    "tezina": 3,
    "pitanje": "Koja je razlika u broju vodonika između heksana i benzena?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "heksan"
    },
@@ -7549,14 +7567,14 @@
     "Dva",
     "Dvanaest"
    ],
-   "zanimljivost": "C₆H₁₄ i C₆H₆: 14 − 6 = 8.",
+   "zanimljivost": "C₆H₁₄ i C₆H₆: 14 − 6 = 8. Heksan se koristi kao rastvarač pri izdvajanju ulja iz semena suncokreta i soje.",
    "rec": "razlika"
   },
   {
    "lekcija": 22,
    "tezina": 2,
    "pitanje": "Kako se naziva polimer koji nastaje od stirena?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "stiren"
    },
@@ -7566,7 +7584,7 @@
     "Polivinil-hlorid",
     "Teflon"
    ],
-   "zanimljivost": "Stiropor je napenjen polistiren.",
+   "zanimljivost": "Stiropor je napenjen polistiren, u kome je većina zapremine vazduh. Stiren je tečnost slatkastog mirisa.",
    "rec": "stiropor"
   },
   {
@@ -7592,7 +7610,7 @@
    "lekcija": 23,
    "tezina": 1,
    "pitanje": "Koja su tri osnovna fosilna goriva?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "laboratorija",
     "scena": "zemni-gas"
    },
@@ -7602,7 +7620,7 @@
     "Vetar, sunce i voda",
     "Nafta, so i benzin"
    ],
-   "zanimljivost": "Nastala su od ostataka biljaka i životinja tokom miliona godina.",
+   "zanimljivost": "Nastala su od ostataka biljaka i životinja tokom miliona godina. Zemni gas je bez mirisa, pa mu se dodaje mirisna supstanca da bi se curenje lakše primetilo.",
    "rec": "fosilna"
   },
   {
@@ -7626,7 +7644,7 @@
    "lekcija": 23,
    "tezina": 1,
    "pitanje": "Šta je nafta?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "laboratorija",
     "scena": "nafta"
    },
@@ -7636,7 +7654,7 @@
     "Rastvor soli u morskoj vodi",
     "Čist benzen bez ijedne primese"
    ],
-   "zanimljivost": "Sirova nafta se razdvaja destilacijom na frakcije.",
+   "zanimljivost": "Sirova nafta se razdvaja destilacijom na frakcije. Nafta je tamna, uljasta tečnost lakša od vode, pa pluta na njoj.",
    "rec": "nafta"
   },
   {
@@ -7869,7 +7887,7 @@
    "lekcija": 23,
    "tezina": 3,
    "pitanje": "Zašto se plastika teško razgrađuje u prirodi?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "polietilen"
    },
@@ -7879,14 +7897,14 @@
     "Rastvara se u kiši i vremenom nestaje",
     "Lako sagoreva u zemljištu bez ostatka"
    ],
-   "zanimljivost": "Zato je važna reciklaža i smanjenje upotrebe jednokratne plastike.",
+   "zanimljivost": "Zato je važna reciklaža i smanjenje upotrebe jednokratne plastike. Polietilen je jedan od najčešćih polimera u otpadu; mikroplastika iz njega dospeva u vodu.",
    "rec": "plastika"
   },
   {
    "lekcija": 23,
    "tezina": 2,
    "pitanje": "Za šta se najviše koristi polietilen?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "polietilen"
    },
@@ -7896,7 +7914,7 @@
     "Za proizvodnju stakla",
     "Za izradu cigle"
    ],
-   "zanimljivost": "Postoje polietilen male i velike gustine.",
+   "zanimljivost": "Polietilen male gustine je mekši (kese, folije), a velike gustine čvršći (flaše, cevi).",
    "rec": "kese"
   },
   {
@@ -7950,7 +7968,7 @@
    "lekcija": 24,
    "tezina": 1,
    "pitanje": "Koja je opšta formula monohidroksilnih alkohola?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "propan-1-ol"
    },
@@ -7960,14 +7978,14 @@
     "CₙH₂ₙ₊₂",
     "CₙH₂ₙ₋₁OH"
    ],
-   "zanimljivost": "To je formula alkana u kojoj je jedan vodonik zamenjen grupom –OH.",
+   "zanimljivost": "To je formula alkana u kojoj je jedan vodonik zamenjen grupom –OH. Propan-1-ol ključa na oko 97 °C, a propan-2-ol na oko 82 °C.",
    "rec": "formula"
   },
   {
    "lekcija": 24,
    "tezina": 1,
    "pitanje": "Koji nastavak imaju nazivi alkohola?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "metanol"
    },
@@ -7977,7 +7995,7 @@
     "-en",
     "-oat"
    ],
-   "zanimljivost": "Metanol, etanol, propanol…",
+   "zanimljivost": "Metanol, etanol, propanol… Metanol se nekad dobijao suvom destilacijom drveta, pa ga zovu i drveni alkohol.",
    "rec": "nastavak"
   },
   {
@@ -8052,7 +8070,7 @@
    "lekcija": 24,
    "tezina": 2,
    "pitanje": "Za šta se broj ispred nastavka u nazivu propan-2-ol?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "propan-2-ol"
    },
@@ -8062,7 +8080,7 @@
     "Označava relativnu molekulsku masu",
     "Označava ukupan broj izomera"
    ],
-   "zanimljivost": "Ugljenik sa grupom –OH numeriše se najmanjim mogućim brojem.",
+   "zanimljivost": "Ugljenik sa grupom –OH numeriše se najmanjim mogućim brojem. Propan-1-ol i propan-2-ol su izomeri: isti sastav, drugačiji položaj –OH.",
    "rec": "položaj"
   },
   {
@@ -8072,10 +8090,6 @@
    "mediji": {
     "vrsta": "molekul",
     "ime": "butan-1-ol"
-   },
-   "medijiOdgovora": {
-    "vrsta": "molekul",
-    "ime": "butan-2-ol"
    },
    "odgovori": [
     "Četiri",
@@ -8090,7 +8104,7 @@
    "lekcija": 24,
    "tezina": 3,
    "pitanje": "Kakav je alkohol propan-2-ol?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "propan-2-ol"
    },
@@ -8100,14 +8114,14 @@
     "Tercijarni",
     "Aromatični"
    ],
-   "zanimljivost": "Kod sekundarnog alkohola –OH je vezana za ugljenik koji je vezan za dva druga ugljenika.",
+   "zanimljivost": "Kod sekundarnog alkohola –OH je vezana za ugljenik koji je vezan za dva druga ugljenika. Propan-2-ol se u prodavnicama zove izopropil-alkohol i koristi se za dezinfekciju.",
    "rec": "sekundarni"
   },
   {
    "lekcija": 24,
    "tezina": 3,
    "pitanje": "Kakav je alkohol 2-metilpropan-2-ol?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "2-metilpropan-2-ol"
    },
@@ -8117,14 +8131,14 @@
     "Sekundarni",
     "Aromatični"
    ],
-   "zanimljivost": "Ugljenik sa –OH vezan je za tri druga ugljenika.",
+   "zanimljivost": "Ugljenik sa –OH vezan je za tri druga ugljenika. Terc-butanol se topi na oko 25 °C, pa u hladnoj prostoriji postaje čvrst.",
    "rec": "tercijarni"
   },
   {
    "lekcija": 24,
    "tezina": 3,
    "pitanje": "Kakav je alkohol etanol?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "etanol"
    },
@@ -8134,7 +8148,7 @@
     "Tercijarni",
     "Aromatični"
    ],
-   "zanimljivost": "Ugljenik sa –OH vezan je za samo jedan drugi ugljenik.",
+   "zanimljivost": "Ugljenik sa –OH vezan je za samo jedan drugi ugljenik. U vinu ima oko 10–15% etanola.",
    "rec": "primarni"
   },
   {
@@ -8342,7 +8356,7 @@
    "lekcija": 25,
    "tezina": 2,
    "pitanje": "Koji alkoholi su na sobnoj temperaturi tečni?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "butan-1-ol"
    },
@@ -8352,14 +8366,14 @@
     "Oni sa više od 11 ugljenika",
     "Nijedan"
    ],
-   "zanimljivost": "Alkoholi sa više od 11 ugljenikovih atoma su čvrsti.",
+   "zanimljivost": "Alkoholi sa više od 11 ugljenikovih atoma su čvrsti. Butan-1-ol, sa četiri, je tečan i koristi se kao rastvarač u lakovima.",
    "rec": "tečni"
   },
   {
    "lekcija": 25,
    "tezina": 2,
    "pitanje": "Do koliko atoma ugljenika se alkoholi dobro rastvaraju u vodi?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "laboratorija",
     "scena": "pribor",
     "stavke": [
@@ -8543,7 +8557,7 @@
    "lekcija": 25,
    "tezina": 1,
    "pitanje": "Koji alkohol je veoma otrovan i može izazvati slepilo?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "laboratorija",
     "scena": "oznake",
     "znaci": [
@@ -8580,7 +8594,7 @@
    "lekcija": 25,
    "tezina": 2,
    "pitanje": "Koji procenat etanola u smeši sa vodom je preporučen za dezinfekciju ruku?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "laboratorija",
     "scena": "pribor",
     "stavke": [
@@ -8601,7 +8615,7 @@
    "lekcija": 25,
    "tezina": 2,
    "pitanje": "Čemu služi etilen-glikol (etan-1,2-diol)?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "glikol"
    },
@@ -8671,7 +8685,7 @@
    "lekcija": 26,
    "tezina": 1,
    "pitanje": "Koji nastavak imaju nazivi karboksilnih kiselina po IUPAC-u?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "propanska-kiselina"
    },
@@ -8681,14 +8695,14 @@
     "-oat (kao kod estara)",
     "-an (kao kod alkana)"
    ],
-   "zanimljivost": "Metanska, etanska, propanska, butanska kiselina.",
+   "zanimljivost": "Metanska, etanska, propanska, butanska kiselina. Propanska (propionska) kiselina je konzervans za hleb (E280).",
    "rec": "nastavak"
   },
   {
    "lekcija": 26,
    "tezina": 1,
    "pitanje": "Kako se u svakodnevnom životu zove etanska kiselina?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "etanska-kiselina"
    },
@@ -8705,7 +8719,7 @@
    "lekcija": 26,
    "tezina": 1,
    "pitanje": "Kako se u svakodnevnom životu zove metanska kiselina?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "metanska-kiselina"
    },
@@ -8807,7 +8821,7 @@
    "lekcija": 26,
    "tezina": 3,
    "pitanje": "Kako se razlikuju zasićene i nezasićene karboksilne kiseline?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "stearinska-kiselina"
    },
@@ -8817,7 +8831,7 @@
     "Zasićene sadrže metal umesto vodonika",
     "Nema nikakve razlike među njima"
    ],
-   "zanimljivost": "Oleinska kiselina je nezasićena i zato tečna.",
+   "zanimljivost": "Stearinska kiselina se topi na oko 70 °C, a oleinska, sa istim brojem ugljenika, tečna je zbog dvostruke veze.",
    "rec": "nezasićene"
   },
   {
@@ -8912,7 +8926,7 @@
    "lekcija": 26,
    "tezina": 2,
    "pitanje": "Po čemu je oleinska kiselina neobična među masnim kiselinama?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "stearinska-kiselina"
    },
@@ -8966,7 +8980,7 @@
    "lekcija": 27,
    "tezina": 2,
    "pitanje": "Koje karboksilne kiseline se dobro rastvaraju u vodi?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "etanska-kiselina"
    },
@@ -8976,14 +8990,14 @@
     "Sve podjednako",
     "Nijedna"
    ],
-   "zanimljivost": "Što je lanac duži, rastvorljivost u vodi opada.",
+   "zanimljivost": "Što je lanac duži, rastvorljivost opada. Etanska kiselina se meša sa vodom u svakom odnosu.",
    "rec": "rastvara"
   },
   {
    "lekcija": 27,
    "tezina": 2,
    "pitanje": "Kako se ponašaju više masne kiseline u vodi?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "stearinska-kiselina"
    },
@@ -9134,7 +9148,7 @@
    "lekcija": 27,
    "tezina": 2,
    "pitanje": "Šta se oslobađa kad se na sodu bikarbonu doda sirće?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "laboratorija",
     "scena": "epruvete",
     "preset": "soda"
@@ -9152,7 +9166,7 @@
    "lekcija": 27,
    "tezina": 2,
    "pitanje": "Koje kiseline daju kiseo ukus hrani?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "hemija",
     "scena": "ph",
     "supstance": [
@@ -9191,7 +9205,7 @@
    "lekcija": 27,
    "tezina": 3,
    "pitanje": "Koliko grama čiste etanske kiseline ima u 20 g 5% rastvora?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "laboratorija",
     "scena": "pribor",
     "stavke": [
@@ -9254,7 +9268,7 @@
    "lekcija": 27,
    "tezina": 2,
    "pitanje": "Za šta se koristi mravlja kiselina?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "metanska-kiselina"
    },
@@ -9410,7 +9424,7 @@
    "lekcija": 28,
    "tezina": 2,
    "pitanje": "Šta se zove prvi deo naziva estra (npr. etil u etil-etanoatu)?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "etil-etanoat"
    },
@@ -9420,7 +9434,7 @@
     "Potiče od vode",
     "Potiče od katalizatora"
    ],
-   "zanimljivost": "Drugi deo, -oat, potiče od kiseline.",
+   "zanimljivost": "Drugi deo, -oat, potiče od kiseline. Etil-etanoat je rastvarač u lepilima i lakovima.",
    "rec": "alkohol"
   },
   {
@@ -9444,7 +9458,7 @@
    "lekcija": 28,
    "tezina": 2,
    "pitanje": "Po čemu su estri obično poznati?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "etil-butanoat"
    },
@@ -9454,7 +9468,7 @@
     "Boja",
     "Ukus soli"
    ],
-   "zanimljivost": "Estri daju miris voća i cveća.",
+   "zanimljivost": "Estri daju miris voća i cveća. Etil-butanoat se koristi kao veštačka aroma u bombonima i pićima.",
    "rec": "miris"
   },
   {
@@ -9529,7 +9543,7 @@
    "lekcija": 28,
    "tezina": 2,
    "pitanje": "Kakva su fizička svojstva estara sa malim brojem ugljenika?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "etil-etanoat"
    },
@@ -9539,7 +9553,7 @@
     "Gasovi bez boje i mirisa",
     "Metali sa sjajem i tvrdoćom"
    ],
-   "zanimljivost": "Zato mirišu – isparavaju i dolaze do nosa.",
+   "zanimljivost": "Zato mirišu – isparavaju i dolaze do nosa. Etil-etanoat ključa na oko 77 °C, pa brzo isparava na sobnoj temperaturi.",
    "rec": "tečni"
   },
   {
@@ -9668,7 +9682,7 @@
    "lekcija": 29,
    "tezina": 1,
    "pitanje": "Koje su glavne grupe biološki važnih organskih jedinjenja?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "glukoza"
    },
@@ -9678,14 +9692,14 @@
     "Metali, legure i oksidi metala",
     "Gasovi, tečnosti i čvrste supstance"
    ],
-   "zanimljivost": "Tome treba dodati i nukleinske kiseline (DNK i RNK).",
+   "zanimljivost": "Tome treba dodati i nukleinske kiseline (DNK i RNK). Mozak troši oko petinu energije tela, uglavnom iz glukoze.",
    "rec": "grupe"
   },
   {
    "lekcija": 29,
    "tezina": 1,
    "pitanje": "Koja jedinjenja su glavni izvor energije u ishrani?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "trigliserid"
    },
@@ -9695,14 +9709,14 @@
     "Voda i kiseonik",
     "Soli i kiseline"
    ],
-   "zanimljivost": "Gram masti daje više od duplo više energije nego gram ugljenih hidrata.",
+   "zanimljivost": "Gram masti daje više od duplo više energije nego gram ugljenih hidrata. Trigliceridi su glavni oblik masti u hrani i masnom tkivu.",
    "rec": "energija"
   },
   {
    "lekcija": 29,
    "tezina": 2,
    "pitanje": "Koja jedinjenja grade mišiće, kožu i enzime?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "tripeptid"
    },
@@ -9712,7 +9726,7 @@
     "Masti",
     "Vitamini"
    ],
-   "zanimljivost": "Proteini imaju najviše različitih uloga u organizmu.",
+   "zanimljivost": "Proteini imaju najviše različitih uloga u organizmu. Tripeptid je lanac od tri aminokiseline; protein može imati stotine ili hiljade ostataka.",
    "rec": "proteini"
   },
   {
@@ -9845,7 +9859,7 @@
    "lekcija": 29,
    "tezina": 2,
    "pitanje": "Koliko različitih aminokiselina ulazi u sastav proteina?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "alanin"
    },
@@ -9855,7 +9869,7 @@
     "Dvesta",
     "Tri"
    ],
-   "zanimljivost": "Njihovim kombinovanjem nastaje ogroman broj različitih proteina.",
+   "zanimljivost": "Njihovim kombinovanjem nastaje ogroman broj različitih proteina. Alanin ima najjednostavniji bočni lanac posle glicina: samo jednu metil-grupu.",
    "rec": "protein"
   },
   {
@@ -9872,7 +9886,7 @@
     "Šećeri koji daju brzu energiju ćelijama",
     "Soli koje se nalaze u krvi i znoju"
    ],
-   "zanimljivost": "Enzim i supstrat se uklapaju kao ključ i brava.",
+   "zanimljivost": "Enzim i supstrat se uklapaju kao ključ i brava. Ljudsko telo ima hiljade različitih enzima; svaki obično ubrzava samo jednu reakciju.",
    "rec": "enzimi"
   },
   {
@@ -9896,7 +9910,7 @@
    "lekcija": 29,
    "tezina": 2,
    "pitanje": "Koje biološki važno jedinjenje je glavni sastojak biljnih ćelijskih zidova?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "skrob"
    },
@@ -9906,14 +9920,14 @@
     "Glikogen",
     "Insulin"
    ],
-   "zanimljivost": "Celulozu ljudi ne mogu da svare, ali je važna kao dijetalno vlakno.",
+   "zanimljivost": "Celulozu ljudi ne mogu da svare, ali je važna kao dijetalno vlakno. Skrob je rezerva biljaka; krompir i pirinač su bogati njime.",
    "rec": "celuloza"
   },
   {
    "lekcija": 29,
    "tezina": 2,
    "pitanje": "Šta od ovoga se skladišti u jetri i mišićima životinja kao rezerva energije?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "skrob"
    },
@@ -9923,14 +9937,14 @@
     "Hlorofil",
     "Keratin"
    ],
-   "zanimljivost": "Biljke rezervu energije čuvaju u obliku skroba.",
+   "zanimljivost": "Skrob je biljna rezerva; glikogen je razgranatiji, pa se glukoza iz njega brže oslobađa.",
    "rec": "glikogen"
   },
   {
    "lekcija": 29,
    "tezina": 3,
    "pitanje": "Zašto su biološki važna jedinjenja uglavnom organska?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "saharoza"
    },
@@ -9940,7 +9954,7 @@
     "Imaju isključivo jonske veze među atomima",
     "Sastoje se samo od jednog atoma ugljenika"
    ],
-   "zanimljivost": "Ugljenik može da gradi dugačke lance i prstenove, pa daje ogroman broj jedinjenja.",
+   "zanimljivost": "Ugljenik može da gradi dugačke lance i prstenove, pa daje ogroman broj jedinjenja. Stoni šećer (saharoza) ima 12 atoma ugljenika u molekulu.",
    "rec": "ugljenik"
   },
   {
@@ -9948,7 +9962,7 @@
    "vrsta": "spoji",
    "tezina": 2,
    "pitanje": "Spoji jedinjenje sa ulogom u organizmu.",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "trigliserid"
    },
@@ -9970,7 +9984,7 @@
      "Čuvanje naslednih informacija"
     ]
    ],
-   "zanimljivost": "Svaka grupa ima više uloga, ali ovo su najvažnije.",
+   "zanimljivost": "Svaka grupa ima više uloga, ali ovo su najvažnije. Trigliceridi nastaju od glicerola i tri masne kiseline.",
    "rec": "uloge"
   },
   {
@@ -10029,7 +10043,7 @@
    "lekcija": 30,
    "tezina": 3,
    "pitanje": "Zašto su masti čvrste, a ulja tečna?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "stearinska-kiselina"
    },
@@ -10039,7 +10053,7 @@
     "Ulja ne sadrže kiseonik, a masti ga sadrže u izobilju",
     "Masti sadrže vodu koja ih čini čvrstim na sobnoj temperaturi"
    ],
-   "zanimljivost": "Zasićeni lanci su ravni i gusto se pakuju, a nezasićeni su savijeni.",
+   "zanimljivost": "Zasićeni lanci su ravni i gusto se pakuju, a nezasićeni su savijeni. Stearinska kiselina ima 18 ugljenikovih atoma i nema dvostrukih veza; ima je u kakao-maslacu.",
    "rec": "zasićene"
   },
   {
@@ -10097,7 +10111,7 @@
    "lekcija": 30,
    "tezina": 2,
    "pitanje": "Šta se dobija hidrogenizacijom biljnog ulja?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "hemija",
     "scena": "reakcija",
     "reaktanti": [
@@ -10123,7 +10137,7 @@
     "Šećer i voda",
     "Alkohol i kiselina"
    ],
-   "zanimljivost": "Pri tom dvostruke veze prelaze u jednostruke.",
+   "zanimljivost": "Pri tom dvostruke veze prelaze u jednostruke, kao kod but-2-en → butan. Delimičnom hidrogenizacijom biljnih ulja nastaju i trans-masti, koje se danas izbegavaju.",
    "rec": "margarin"
   },
   {
@@ -10167,7 +10181,7 @@
    "lekcija": 30,
    "tezina": 1,
    "pitanje": "Šta su sapuni?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "natrijum-stearat"
    },
@@ -10177,14 +10191,14 @@
     "Kiseline sa dugim lancem",
     "Alkoholi sa dugim lancem"
    ],
-   "zanimljivost": "Najčešće natrijumove (tvrdi sapun) ili kalijumove (meki sapun) soli.",
+   "zanimljivost": "Najčešće natrijumove (tvrdi sapun) ili kalijumove (meki sapun) soli. Natrijum-stearat je so stearinske kiseline i glavni sastojak tvrdog sapuna.",
    "rec": "sapuni"
   },
   {
    "lekcija": 30,
    "tezina": 3,
    "pitanje": "Kako sapun uklanja mast sa kože?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "natrijum-stearat"
    },
@@ -10194,14 +10208,14 @@
     "Razlaže mast na ugljenik i vodonik",
     "Zagreva kožu i topi mast na njoj"
    ],
-   "zanimljivost": "Tako se mast okruži molekulima sapuna i ispere vodom.",
+   "zanimljivost": "Tako se mast okruži molekulima sapuna i ispere vodom. Natrijum-stearat ima dugi nepolarni rep i polarnu glavu.",
    "rec": "sapun"
   },
   {
    "lekcija": 30,
    "tezina": 2,
    "pitanje": "Koja je uloga masti u organizmu?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "trigliserid"
    },
@@ -10211,14 +10225,14 @@
     "Prenos kiseonika kroz telo",
     "Pretvaranje u vodu i ugljen-dioksid"
    ],
-   "zanimljivost": "Sloj masti ispod kože pomaže životinjama da zadrže toplotu.",
+   "zanimljivost": "Sloj masti ispod kože pomaže životinjama da zadrže toplotu. Jedan gram masti daje oko 38 kJ energije.",
    "rec": "masti"
   },
   {
    "lekcija": 30,
    "tezina": 2,
    "pitanje": "Šta se dešava kad mast „užegne“?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "butanska-kiselina"
    },
@@ -10228,7 +10242,7 @@
     "Postaje alkohol i počinje da ključa",
     "Pretvara se u metal i taloži se"
    ],
-   "zanimljivost": "Pri tome nastaju slobodne masne kiseline i aldehidi neprijatnog mirisa.",
+   "zanimljivost": "Pri tome nastaju slobodne masne kiseline i aldehidi neprijatnog mirisa. Butanska (maslačna) kiselina dobila je ime po maslacu, u kome je ima u većoj količini.",
    "rec": "užeglost"
   },
   {
@@ -10272,7 +10286,7 @@
    "lekcija": 30,
    "tezina": 2,
    "pitanje": "Gde se još biljna ulja koriste osim u ishrani?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "metil-butanoat"
    },
@@ -10282,7 +10296,7 @@
     "Za dobijanje metala",
     "Za proizvodnju soli"
    ],
-   "zanimljivost": "Biodizel nastaje od ulja reakcijom sa metanolom.",
+   "zanimljivost": "Biodizel nastaje od ulja reakcijom sa metanolom. Metil-butanoat je estar sa mirisom na jabuku i ananas.",
    "rec": "primena"
   },
   {
@@ -10307,7 +10321,7 @@
    "vrsta": "uljez",
    "tezina": 2,
    "pitanje": "Šta od ovoga NIJE sastavni deo triglicerida?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "trigliserid"
    },
@@ -10561,7 +10575,7 @@
    "lekcija": 31,
    "tezina": 2,
    "pitanje": "Gde se u prirodi nalazi fruktoza?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "fruktoza"
    },
@@ -10777,7 +10791,7 @@
    "lekcija": 32,
    "tezina": 2,
    "pitanje": "U čemu se nalazi disaharid laktoza?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "biologija",
     "scena": "varenje"
    },
@@ -10787,7 +10801,7 @@
     "U grožđu i drugom voću",
     "U žitaricama i krompiru"
    ],
-   "zanimljivost": "Neki ljudi ne mogu da je svare – imaju intoleranciju na laktozu.",
+   "zanimljivost": "Neki ljudi ne mogu da je svare zbog nedostatka enzima laktaze, pa dobijaju stomačne tegobe.",
    "rec": "laktoza"
   },
   {
@@ -10811,7 +10825,7 @@
    "lekcija": 32,
    "tezina": 2,
    "pitanje": "Gde biljke skladište rezervu hrane u obliku skroba?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "skrob"
    },
@@ -10846,7 +10860,7 @@
    "lekcija": 32,
    "tezina": 2,
    "pitanje": "Koji polisaharid je glavni sastojak biljnih ćelijskih zidova?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "skrob"
    },
@@ -10856,14 +10870,14 @@
     "Glikogen",
     "Laktoza"
    ],
-   "zanimljivost": "Pamuk sadrži 80–90% celuloze.",
+   "zanimljivost": "Pamuk sadrži 80–90% celuloze. Skrob, građen od iste glukoze, ljudi lako svare.",
    "rec": "celuloza"
   },
   {
    "lekcija": 32,
    "tezina": 3,
    "pitanje": "Zašto ljudi ne mogu da svare celulozu?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "skrob"
    },
@@ -10873,14 +10887,14 @@
     "Rastvara se u vodi i izlazi iz tela",
     "Ne sadrži ugljenik pa nema energije"
    ],
-   "zanimljivost": "Preživari i termiti imaju mikroorganizme koji im pomažu da razgrade celulozu.",
+   "zanimljivost": "Preživari i termiti imaju mikroorganizme koji razgrađuju celulozu. Ljudi skrob razlažu amilazom iz pljuvačke.",
    "rec": "enzimi"
   },
   {
    "lekcija": 32,
    "tezina": 2,
    "pitanje": "Gde životinje i ljudi skladište polisaharid glikogen?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "skrob"
    },
@@ -10890,14 +10904,14 @@
     "U koži i kosi",
     "U krvi i limfi"
    ],
-   "zanimljivost": "Iz glikogena se brzo oslobađa glukoza kada organizmu zatreba energija.",
+   "zanimljivost": "Amilaza iz pljuvačke i pankreasa razlaže skrob na kraće šećere.",
    "rec": "glikogen"
   },
   {
    "lekcija": 32,
    "tezina": 3,
    "pitanje": "Po čemu se razlikuju skrob i celuloza, iako su oboje izgrađeni od glukoze?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "skrob"
    },
@@ -10907,14 +10921,14 @@
     "Agregatnim stanjem na sobnoj temperaturi",
     "Sadrže potpuno različite hemijske elemente"
    ],
-   "zanimljivost": "Mala razlika u povezivanju daje potpuno različita svojstva.",
+   "zanimljivost": "Mala razlika u povezivanju daje potpuno različita svojstva. Skrob se u vodi zgušnjava, a celuloza je vlaknasta i nerastvorna.",
    "rec": "veza"
   },
   {
    "lekcija": 32,
    "tezina": 2,
    "pitanje": "Koji disaharid sadrži glukozu i galaktozu?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "biologija",
     "scena": "varenje"
    },
@@ -10931,7 +10945,7 @@
    "lekcija": 32,
    "tezina": 2,
    "pitanje": "Šta se dešava sa skrobom u ustima?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "biologija",
     "scena": "varenje"
    },
@@ -10986,7 +11000,7 @@
    "vrsta": "spoji",
    "tezina": 2,
    "pitanje": "Spoji šećer sa njegovom prirodom ili izvorom.",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "saharoza"
    },
@@ -11008,14 +11022,14 @@
      "Pamuk"
     ]
    ],
-   "zanimljivost": "Svi su izgrađeni od glukoze ili njenih izomera.",
+   "zanimljivost": "Svi su izgrađeni od glukoze ili njenih izomera. Stoni šećer se od šećerne repe dobija kristalizacijom soka.",
    "rec": "izvori"
   },
   {
    "lekcija": 33,
    "tezina": 1,
    "pitanje": "Koje funkcionalne grupe sadrže aminokiseline?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "glicin"
    },
@@ -11025,7 +11039,7 @@
     "Samo estarsku grupu –COO– u lancu",
     "Samo aminogrupu –NH₂ na kraju lanca"
    ],
-   "zanimljivost": "Obe grupe su vezane za isti, α-ugljenik.",
+   "zanimljivost": "Obe grupe su vezane za isti, α-ugljenik. Glicin je jedina standardna aminokiselina bez hiralnog ugljenika.",
    "rec": "grupe"
   },
   {
@@ -11049,7 +11063,7 @@
    "lekcija": 33,
    "tezina": 1,
    "pitanje": "Šta su proteini?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "tripeptid"
    },
@@ -11125,14 +11139,14 @@
     "Aldehid i kiselina",
     "Dva monosaharida"
    ],
-   "zanimljivost": "Spajanjem mnogo aminokiselina nastaje polipeptid, tj. protein.",
+   "zanimljivost": "Spajanjem mnogo aminokiselina nastaje polipeptid, tj. protein. Tripeptid ima dve peptidne veze između tri aminokiseline.",
    "rec": "dipeptid"
   },
   {
    "lekcija": 33,
    "tezina": 2,
    "pitanje": "Koliko aminokiselina ulazi u sastav prirodnih proteina?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "alanin"
    },
@@ -11142,14 +11156,14 @@
     "Pet",
     "Sto"
    ],
-   "zanimljivost": "Različitim rasporedom nastaju hiljade proteina.",
+   "zanimljivost": "Različitim rasporedom nastaju hiljade proteina. Alanin je aminokiselina sa metil-grupom kao bočnim lancem.",
    "rec": "dvadeset"
   },
   {
    "lekcija": 33,
    "tezina": 1,
    "pitanje": "Šta su esencijalne aminokiseline?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "serin"
    },
@@ -11159,14 +11173,14 @@
     "One koje su otrovne i štetne po organizam",
     "One koje se nalaze samo u biljkama"
    ],
-   "zanimljivost": "Nalaze se u mesu, jajima, mleku i mahunarkama.",
+   "zanimljivost": "Nalaze se u mesu, jajima, mleku i mahunarkama. Serin je neesencijalna aminokiselina – telo je sam pravi.",
    "rec": "esencijalne"
   },
   {
    "lekcija": 33,
    "tezina": 2,
    "pitanje": "Koje namirnice su bogate proteinima?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "tripeptid"
    },
@@ -11176,7 +11190,7 @@
     "Maslinovo ulje i margarin",
     "Voda i led"
    ],
-   "zanimljivost": "Mahunarke su važan biljni izvor proteina.",
+   "zanimljivost": "Mahunarke su važan biljni izvor proteina. Tripeptid je lanac od tri aminokiseline, kao sićušan delić proteina u mesu.",
    "rec": "namirnice"
   },
   {
@@ -11254,7 +11268,7 @@
    "lekcija": 33,
    "tezina": 2,
    "pitanje": "Koji protein prenosi kiseonik u krvi?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "hemija",
     "scena": "atom",
     "z": 26,
@@ -11266,14 +11280,14 @@
     "Keratin",
     "Kolagen"
    ],
-   "zanimljivost": "Hemoglobin u sebi ima atom gvožđa.",
+   "zanimljivost": "Hemoglobin u sebi ima atom gvožđa, koji vezuje kiseonik; zato nedostatak gvožđa izaziva malokrvnost (anemiju).",
    "rec": "hemoglobin"
   },
   {
    "lekcija": 33,
    "tezina": 2,
    "pitanje": "Koji protein se nalazi u kosi i noktima?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "tripeptid"
    },
@@ -11283,14 +11297,14 @@
     "Insulin",
     "Skrob"
    ],
-   "zanimljivost": "Keratin je tvrd, vlaknast protein.",
+   "zanimljivost": "Keratin je tvrd, vlaknast protein u kosi, noktima i rogovima. Keratin ima mnogo više aminokiselina u lancu od tripeptida.",
    "rec": "keratin"
   },
   {
    "lekcija": 33,
    "tezina": 2,
    "pitanje": "Kakva svojstva imaju aminokiseline zbog dve različite grupe?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "glicin"
    },
@@ -11300,7 +11314,7 @@
     "Samo bazna",
     "Nikakva"
    ],
-   "zanimljivost": "Karboksilna grupa je kisela, a amino bazna.",
+   "zanimljivost": "Karboksilna grupa je kisela, a amino bazna. Glicin je slatkast na ukus i koristi se kao dodatak hrani i u lekovima.",
    "rec": "amfoterne"
   },
   {
@@ -11326,7 +11340,7 @@
    "lekcija": 34,
    "tezina": 1,
    "pitanje": "Šta su vitamini?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "vitamin-c-lanac"
    },
@@ -11336,14 +11350,14 @@
     "Gasovi iz vazduha koje udišemo",
     "Metali koji se nalaze u krvi"
    ],
-   "zanimljivost": "Organizam ih uglavnom ne može sam da napravi, pa se unose hranom.",
+   "zanimljivost": "Organizam ih uglavnom ne može sam da napravi, pa se unose hranom. Ljudi ne mogu sami da naprave vitamin C.",
    "rec": "vitamini"
   },
   {
    "lekcija": 34,
    "tezina": 2,
    "pitanje": "Koja podela vitamina je tačna?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "vitamin-c-lanac"
    },
@@ -11353,7 +11367,7 @@
     "Gasoviti i čvrsti vitamini",
     "Metalni i nemetalni vitamini"
    ],
-   "zanimljivost": "Vitamini rastvorljivi u vodi izlučuju se brzo, pa se unose svakodnevno.",
+   "zanimljivost": "Vitamini rastvorljivi u vodi izlučuju se brzo, pa se unose svakodnevno. Vitamin C je rastvorljiv u vodi; višak izlazi mokraćom.",
    "rec": "podela"
   },
   {
@@ -11411,7 +11425,7 @@
    "lekcija": 34,
    "tezina": 1,
    "pitanje": "Koji vitamin se u koži stvara delovanjem sunčeve svetlosti?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "kalcijum-fosfat"
    },
@@ -11421,14 +11435,14 @@
     "Vitamin B₁₂",
     "Vitamin E"
    ],
-   "zanimljivost": "Neophodan je za upijanje kalcijuma u kostima.",
+   "zanimljivost": "Neophodan je za upijanje kalcijuma u kostima. Kalcijum-fosfat je glavni mineral kostiju i zuba; oko 99 % kalcijuma u telu je u njima.",
    "rec": "sunce"
   },
   {
    "lekcija": 34,
    "tezina": 2,
    "pitanje": "Nedostatak koga vitamina izaziva rahitis kod dece?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "kalcijum-fosfat"
    },
@@ -11438,7 +11452,7 @@
     "Vitamina A",
     "Vitamina K"
    ],
-   "zanimljivost": "Kosti ostaju mekane i krive jer se ne ugrađuje kalcijum.",
+   "zanimljivost": "Kosti ostaju mekane i krive jer se ne ugrađuje kalcijum. Kalcijum-fosfat daje kostima čvrstoću.",
    "rec": "rahitis"
   },
   {
@@ -11462,7 +11476,7 @@
    "lekcija": 34,
    "tezina": 2,
    "pitanje": "Koji vitamin je važan za zgrušavanje krvi?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "retinol"
    },
@@ -11472,7 +11486,7 @@
     "Vitamin A",
     "Vitamin D"
    ],
-   "zanimljivost": "Nalazi se u zelenom lisnatom povrću.",
+   "zanimljivost": "Retinol je oblik vitamina A; u oku se pretvara u retinal, koji učestvuje u vidu pri slabom svetlu. Vitamin K nalazi se u zelenom lisnatom povrću.",
    "rec": "krv"
   },
   {
@@ -11499,7 +11513,7 @@
    "lekcija": 34,
    "tezina": 1,
    "pitanje": "Šta je avitaminoza?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "vitamin-c-lanac"
    },
@@ -11509,7 +11523,7 @@
     "Gojaznost zbog prevelikog unosa masti",
     "Alergija na određenu vrstu hrane"
    ],
-   "zanimljivost": "Višak vitamina (naročito A i D) naziva se hipervitaminoza.",
+   "zanimljivost": "Višak vitamina (naročito A i D) naziva se hipervitaminoza. Askorbinska kiselina je vitamin C; ime je dobila po tome što leči skorbut.",
    "rec": "avitaminoza"
   },
   {
@@ -11533,7 +11547,7 @@
    "lekcija": 34,
    "tezina": 3,
    "pitanje": "Zašto višak vitamina A i D može biti štetan?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "retinol"
    },
@@ -11543,14 +11557,14 @@
     "Pretvaraju se u soli i izlučuju",
     "Isparavaju iz organizma preko kože"
    ],
-   "zanimljivost": "Zato ne treba uzimati vitamine bez saveta lekara.",
+   "zanimljivost": "Zato ne treba uzimati vitamine bez saveta lekara. Retinol (vitamin A) se nakuplja u jetri, pa višak može biti štetan.",
    "rec": "višak"
   },
   {
    "lekcija": 34,
    "tezina": 2,
    "pitanje": "Kojoj grupi organskih jedinjenja pripada limunska kiselina?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "limunska-kiselina"
    },
@@ -11560,14 +11574,14 @@
     "Estar glicerola i kiseline",
     "Ugljovodonik sa prstenom"
    ],
-   "zanimljivost": "Ima tri karboksilne grupe – to je trikarboksilna kiselina.",
+   "zanimljivost": "Ima tri karboksilne grupe – to je trikarboksilna kiselina. Limunska kiselina daje kiselost citrusima.",
    "rec": "limunska"
   },
   {
    "lekcija": 34,
    "tezina": 2,
    "pitanje": "Gde se vitamin A čuva u organizmu?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "retinol"
    },
@@ -11577,7 +11591,7 @@
     "U mozgu",
     "U kosi"
    ],
-   "zanimljivost": "Zato je jetra bogata vitaminom A.",
+   "zanimljivost": "Retinol se čuva u jetri, a u mrkvi se nalazi kao beta-karoten, provitamin A.",
    "rec": "jetra"
   },
   {
@@ -11585,7 +11599,7 @@
    "vrsta": "spoji",
    "tezina": 2,
    "pitanje": "Spoji vitamin sa njegovom ulogom ili bolešću.",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "vitamin-c-lanac"
    },
@@ -11607,7 +11621,7 @@
      "Zgrušavanje krvi"
     ]
    ],
-   "zanimljivost": "Vitamini se razlikuju po ulozi, a svi su neophodni za zdravlje.",
+   "zanimljivost": "Vitamini se razlikuju po ulozi, a svi su neophodni za zdravlje. Vitamin C se najviše nalazi u citrusima, paprici i šipku.",
    "rec": "bolesti"
   },
   {
@@ -11740,7 +11754,7 @@
    "lekcija": 35,
    "tezina": 2,
    "pitanje": "Šta štiti ozonski omotač?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "ozon"
    },
@@ -11774,10 +11788,12 @@
    "lekcija": 35,
    "tezina": 2,
    "pitanje": "Koji teški metal je naročito otrovan i hronično se nakuplja u organizmu?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "hemija",
     "scena": "atom",
-    "z": 82
+    "z": 82,
+    "natpis": false,
+    "oznaka": false
    },
    "odgovori": [
     "Olovo",
@@ -11792,7 +11808,7 @@
    "lekcija": 35,
    "tezina": 1,
    "pitanje": "Šta su pesticidi?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "laboratorija",
     "scena": "oznake",
     "znaci": [
@@ -11830,7 +11846,7 @@
    "lekcija": 35,
    "tezina": 3,
    "pitanje": "Zašto ispuštanje tople vode iz elektrana može biti zagađenje?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "kiseonik"
    },
@@ -11840,14 +11856,14 @@
     "Hladi vodu i usporava reke",
     "Pravi talase i menja tok reke"
    ],
-   "zanimljivost": "Gasovi se bolje rastvaraju u hladnoj vodi.",
+   "zanimljivost": "Zasićena voda sadrži oko 14 mg kiseonika po litru na 0 °C, a oko 9 mg na 20 °C. Gasovi se bolje rastvaraju u hladnoj vodi.",
    "rec": "toplota"
   },
   {
    "lekcija": 35,
    "tezina": 2,
    "pitanje": "Koje čestice u vazduhu su posebno opasne po pluća?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "laboratorija",
     "scena": "oznake",
     "znaci": [
@@ -11920,7 +11936,7 @@
    "lekcija": 36,
    "tezina": 1,
    "pitanje": "Šta znači reciklirati otpad?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "polietilen"
    },
@@ -11930,14 +11946,14 @@
     "Zakopavanje otpada na deponijama",
     "Bacanje otpada u reku ili jezero"
    ],
-   "zanimljivost": "Reciklažom se štede sirovine, energija i prostor na deponijama.",
+   "zanimljivost": "Reciklažom se štede sirovine, energija i prostor na deponijama. Polietilen je jedna od najrasprostranjenijih plastika.",
    "rec": "reciklaža"
   },
   {
    "lekcija": 36,
    "tezina": 1,
    "pitanje": "Kako se zove simbol za reciklažu?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "laboratorija",
     "scena": "oznake",
     "znaci": [
@@ -11957,7 +11973,7 @@
    "lekcija": 36,
    "tezina": 2,
    "pitanje": "Koji materijali se mogu reciklirati?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "polietilen"
    },
@@ -11967,14 +11983,14 @@
     "Samo organski otpad iz kuhinje",
     "Ništa od navedenog materijala"
    ],
-   "zanimljivost": "Odvojeno sakupljanje otpada olakšava reciklažu.",
+   "zanimljivost": "Polietilen se može reciklirati: od njega se prave kese, folije i flaše. Odvojeno sakupljanje olakšava reciklažu.",
    "rec": "materijali"
   },
   {
    "lekcija": 36,
    "tezina": 3,
    "pitanje": "Zašto je reciklaža aluminijuma korisna?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "aluminijum"
    },
@@ -11991,7 +12007,7 @@
    "lekcija": 36,
    "tezina": 3,
    "pitanje": "Zašto je teško reciklirati mešane plastike?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "pvc"
    },
@@ -12001,14 +12017,14 @@
     "Plastike ne sadrže nikakav ugljenik",
     "Plastike se rastvaraju u običnoj vodi"
    ],
-   "zanimljivost": "Zato su na proizvodima oznake vrste plastike (1–7).",
+   "zanimljivost": "PVC sadrži hlor, pa pri nepravilnom spaljivanju oslobađa hlorovodonik. Zato su na proizvodima oznake vrste plastike (1–7).",
    "rec": "plastika"
   },
   {
    "lekcija": 36,
    "tezina": 2,
    "pitanje": "Kakav otpad se kompostira?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "glukoza"
    },
@@ -12018,14 +12034,14 @@
     "Aluminijumske limenke",
     "Baterije i akumulatori"
    ],
-   "zanimljivost": "Mikroorganizmi razgrađuju ostatke hrane u humus.",
+   "zanimljivost": "Mikroorganizmi razgrađuju ostatke hrane u humus. Glukoza je jednostavan šećer kojim se mikroorganizmi hrane.",
    "rec": "kompost"
   },
   {
    "lekcija": 36,
    "tezina": 1,
    "pitanje": "Šta je zelena hemija?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "laboratorija",
     "scena": "oznake",
     "znaci": [
@@ -12045,7 +12061,7 @@
    "lekcija": 36,
    "tezina": 2,
    "pitanje": "Koji je jedan od principa zelene hemije?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "voda"
    },
@@ -12055,7 +12071,7 @@
     "Koristiti samo neobnovljive sirovine",
     "Povećati količinu otpada"
    ],
-   "zanimljivost": "Bolje je sprečiti otpad nego ga kasnije čistiti.",
+   "zanimljivost": "Bolje je sprečiti otpad nego ga kasnije čistiti. Zato zelena hemija, gde god može, umesto otrovnih rastvarača koristi vodu.",
    "rec": "princip"
   },
   {
@@ -12079,7 +12095,7 @@
    "lekcija": 36,
    "tezina": 3,
    "pitanje": "Šta znači da je sirovina obnovljiva?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "trigliserid"
    },
@@ -12089,14 +12105,14 @@
     "Uvek je gas na sobnoj temperaturi",
     "Dobija se samo iz nafte i uglja"
    ],
-   "zanimljivost": "Nafta i ugalj nisu obnovljivi, a biomasa jeste.",
+   "zanimljivost": "Nafta i ugalj nisu obnovljivi, a biomasa jeste. Trigliseridi su glavni sastojak masti i ulja.",
    "rec": "obnovljiva"
   },
   {
    "lekcija": 36,
    "tezina": 3,
    "pitanje": "Zašto je biodizel „zelenije“ gorivo?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "metil-butanoat"
    },
@@ -12106,14 +12122,14 @@
     "Ne sagoreva u motoru, već se meša sa vodom",
     "Sadrži olovo kao dodatak za bolji rad motora"
    ],
-   "zanimljivost": "Biodizel nastaje reakcijom biljnog ulja sa metanolom.",
+   "zanimljivost": "Biodizel nastaje reakcijom biljnog ulja sa metanolom, a njegovi sastojci su estri masnih kiselina.",
    "rec": "biodizel"
   },
   {
    "lekcija": 36,
    "tezina": 3,
    "pitanje": "Koji je glavni nedostatak plastike za životnu sredinu?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "polietilen"
    },
@@ -12123,14 +12139,14 @@
     "Isparava na sunčevoj svetlosti brzo",
     "Truli za nekoliko dana u zemlji"
    ],
-   "zanimljivost": "Zato su važni biorazgradivi materijali i smanjenje jednokratne plastike.",
+   "zanimljivost": "Zato su važni biorazgradivi materijali i smanjenje jednokratne plastike. Polietilen se razgrađuje veoma sporo, a sitni komadi ostaju u moru.",
    "rec": "plastika"
   },
   {
    "lekcija": 36,
    "tezina": 2,
    "pitanje": "Koji od ovih postupaka štedi prirodne resurse?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "skrob"
    },
@@ -12140,7 +12156,7 @@
     "Spaljivanje papira u dvorištu",
     "Zakopavanje papira u zemlju"
    ],
-   "zanimljivost": "Reciklažom jedne tone papira spasava se više desetina stabala.",
+   "zanimljivost": "Skrob je građen od jedinica glukoze, kao i celuloza, glavni sastojak drveta i papira. Reciklažom jedne tone papira spasava se više desetina stabala.",
    "rec": "papir"
   },
   {

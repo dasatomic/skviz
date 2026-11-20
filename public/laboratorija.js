@@ -582,7 +582,7 @@
     const tuba = epruveta(tg, 0, -30, { w: 22, h: 80, boja: '#7ec8ff', nivo: 0.33 });
     put(tg, 'M-12,-22 L12,-22', { stroke: '#8d6e63', 'stroke-width': 5 }); lin(tg, 0, -22, -2, -72, '#a1887f', 6);
     const face = el(s, 'text', { x: 262, y: 76, 'font-size': 52, 'text-anchor': 'middle' }); face.textContent = '🧑‍🔬';
-    const nat = tx(s, 160, 194, ok ? '~otvor epruvete je okrenut od ljudi, epruveta je pod uglom' : '~nepravilno: otvor epruvete je usmeren ka čoveku!', { v: 10.5, b: C.zuta });
+    if (!m.bezNatpisa) tx(s, 160, 194, ok ? '~otvor epruvete je okrenut od ljudi, epruveta je pod uglom' : '~nepravilno: otvor epruvete je usmeren ka čoveku!', { v: 10.5, b: C.zuta });
     const znak = tx(s, 262, 124, ok ? '✔' : '✘', { v: 30, b: ok ? '#55efc4' : '#ff7675' });
     const strel = el(s, 'path', { d: ok ? 'M104,52 Q80,24 40,26' : 'M160,40 Q200,34 224,58', fill: 'none', stroke: ok ? '#55efc4' : '#ff7675', 'stroke-width': 2.5, 'stroke-dasharray': '6 5' });
     return {

@@ -124,7 +124,8 @@
    "mediji": {
     "vrsta": "laboratorija",
     "scena": "grejanje",
-    "tip": "nepravilno"
+    "tip": "nepravilno",
+    "bezNatpisa": true
    },
    "odgovori": [
     "Otvor epruvete je usmeren ka osobi",
@@ -156,7 +157,7 @@
    "lekcija": 1,
    "tezina": 3,
    "pitanje": "Kako se pravilno razblažuje koncentrovana sumporna kiselina?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "sumporna-kiselina"
    },
@@ -166,14 +167,14 @@
     "Obe tečnosti se naglo sipaju zajedno u posudu",
     "Kiselina se ulije u vodu odjednom, bez mešanja"
    ],
-   "zanimljivost": "Pravilo: nikada ne sipati vodu u koncentrovanu sumpornu kiselinu – oslobađa se mnogo toplote i može da prsne.",
+   "zanimljivost": "Pravilo: nikada ne sipati vodu u koncentrovanu sumpornu kiselinu – oslobađa se mnogo toplote i može da prsne. Sumporna kiselina je među najviše proizvođenim hemikalijama na svetu.",
    "rec": "kiselina"
   },
   {
    "lekcija": 1,
    "tezina": 3,
    "pitanje": "Gde se izvode ogledi sa otrovnim isparljivim supstancama?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "laboratorija",
     "scena": "oznake",
     "znaci": [
@@ -193,7 +194,7 @@
    "lekcija": 1,
    "tezina": 2,
    "pitanje": "Gde se izvode ogledi sa zapaljivim supstancama?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "laboratorija",
     "scena": "oznake",
     "znaci": [
@@ -334,7 +335,7 @@
    "lekcija": 1,
    "tezina": 2,
    "pitanje": "Šta treba proveriti posle upotrebe grejnog tela, rešoa ili lampe?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "laboratorija",
     "scena": "pribor",
     "stavke": [
@@ -453,7 +454,7 @@
    "lekcija": 2,
    "tezina": 1,
    "pitanje": "Čemu služi menzura?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "laboratorija",
     "scena": "pribor",
     "stavke": [
@@ -511,7 +512,7 @@
    "lekcija": 2,
    "tezina": 1,
    "pitanje": "Čemu služi Pasterova pipeta?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "laboratorija",
     "scena": "pribor",
     "stavke": [
@@ -552,7 +553,7 @@
    "lekcija": 2,
    "tezina": 2,
    "pitanje": "Čemu služi tronožac sa metalnom mrežicom?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "laboratorija",
     "scena": "pribor",
     "stavke": [
@@ -572,7 +573,7 @@
    "lekcija": 2,
    "tezina": 2,
    "pitanje": "Čemu služi stativ sa hvataljkom (klemom)?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "laboratorija",
     "scena": "pribor",
     "stavke": [
@@ -613,7 +614,7 @@
    "lekcija": 2,
    "tezina": 2,
    "pitanje": "Čemu služi špric-boca u laboratoriji?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "laboratorija",
     "scena": "pribor",
     "stavke": [
@@ -633,7 +634,7 @@
    "lekcija": 2,
    "tezina": 2,
    "pitanje": "Čemu služi tehnička vaga?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "laboratorija",
     "scena": "pribor",
     "stavke": [
@@ -653,7 +654,7 @@
    "lekcija": 2,
    "tezina": 2,
    "pitanje": "Čemu služi termometar?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "laboratorija",
     "scena": "pribor",
     "stavke": [
@@ -673,7 +674,7 @@
    "lekcija": 2,
    "tezina": 3,
    "pitanje": "Zašto se zapremina u menzuri čita na najnižem delu meniska?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "laboratorija",
     "scena": "menzura",
     "predmet": "Fe",
@@ -694,7 +695,7 @@
    "vrsta": "spoji",
    "tezina": 2,
    "pitanje": "Spoji pribor sa namenom.",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "laboratorija",
     "scena": "pribor",
     "stavke": [
@@ -808,7 +809,7 @@
    "lekcija": 3,
    "tezina": 2,
    "pitanje": "Kako se računa gustina tela?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "laboratorija",
     "scena": "menzura",
     "predmet": "Fe",
@@ -850,7 +851,7 @@
    "lekcija": 3,
    "tezina": 2,
    "pitanje": "Valjak od gvožđa mase 79 g istisne 10 cm³ vode. Kolika je gustina gvožđa?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "laboratorija",
     "scena": "menzura",
     "predmet": "Fe",
@@ -864,14 +865,14 @@
     "79 g/cm³",
     "790 g/cm³"
    ],
-   "zanimljivost": "ρ = 79 g : 10 cm³ = 7,9 g/cm³.",
+   "zanimljivost": "ρ = 79 g : 10 cm³ = 7,9 g/cm³. Gvožđe je četvrti element po zastupljenosti u Zemljinoj kori.",
    "rec": "gustina"
   },
   {
    "lekcija": 3,
    "tezina": 2,
    "pitanje": "Valjak od bakra mase 90 g istisne 10 cm³ vode. Kolika je gustina bakra?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "laboratorija",
     "scena": "menzura",
     "predmet": "Cu",
@@ -885,14 +886,14 @@
     "90 g/cm³",
     "900 g/cm³"
    ],
-   "zanimljivost": "Bakar je gušći od gvožđa.",
+   "zanimljivost": "ρ = 90 g : 10 cm³ = 9,0 g/cm³. Bakar je među prvim metalima koje su ljudi koristili; bronza (legura sa kalajem) dala je ime bronzanom dobu.",
    "rec": "bakar"
   },
   {
    "lekcija": 3,
    "tezina": 2,
    "pitanje": "Valjak od aluminijuma mase 27 g istisne 10 cm³ vode. Kolika je gustina aluminijuma?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "laboratorija",
     "scena": "menzura",
     "predmet": "Al",
@@ -906,7 +907,7 @@
     "27 g/cm³",
     "270 g/cm³"
    ],
-   "zanimljivost": "Aluminijum je lak metal – zato se koristi u avionima.",
+   "zanimljivost": "ρ = 27 g : 10 cm³ = 2,7 g/cm³. Aluminijum je najzastupljeniji metal u Zemljinoj kori, ali se dugo nije mogao lako dobiti.",
    "rec": "aluminijum"
   },
   {
@@ -972,10 +973,12 @@
    "lekcija": 3,
    "tezina": 3,
    "pitanje": "Koji metali su manje gusti od vode (1 g/cm³)?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "hemija",
     "scena": "atom",
-    "z": 3
+    "z": 3,
+    "natpis": false,
+    "oznaka": false
    },
    "odgovori": [
     "Litijum, natrijum i kalijum",
@@ -983,14 +986,14 @@
     "Olovo, živa i zlato",
     "Aluminijum i magnezijum"
    ],
-   "zanimljivost": "Zato litijum, natrijum i kalijum plivaju na vodi.",
+   "zanimljivost": "Zato litijum, natrijum i kalijum plivaju na vodi. Litijum je najlakši metal, s gustinom oko 0,53 g/cm³.",
    "rec": "gustina"
   },
   {
    "lekcija": 3,
    "tezina": 1,
    "pitanje": "Koji metal je najgušći?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "laboratorija",
     "scena": "menzura",
     "predmet": "Fe",
@@ -1047,7 +1050,7 @@
    "lekcija": 3,
    "tezina": 3,
    "pitanje": "Zašto se srebro, iako najbolje provodi struju, ne koristi za kablove?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "hemija",
     "scena": "atom",
     "z": 47
@@ -1058,7 +1061,7 @@
     "Previše je mekano da bi provodilo",
     "Reaguje sa vodom burno"
    ],
-   "zanimljivost": "Zato se koristi bakar, a negde i aluminijum.",
+   "zanimljivost": "Srebro je najbolji provodnik među elementima, ali je skupo, pa se kablovi prave od bakra. Simbol Ag potiče od latinskog argentum.",
    "rec": "srebro"
   },
   {
@@ -1356,7 +1359,7 @@
    "lekcija": 4,
    "tezina": 1,
    "pitanje": "Šta je naponski niz metala?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "hemija",
     "scena": "periodni",
     "istakni": [
@@ -1495,7 +1498,7 @@
    "lekcija": 4,
    "tezina": 3,
    "pitanje": "Zašto gvožđe ne može da istisne cink iz rastvora cink-sulfata?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "hemija",
     "scena": "periodni",
     "istakni": [
@@ -1535,7 +1538,7 @@
    "lekcija": 4,
    "tezina": 2,
    "pitanje": "Po kome je naučniku pipeta za prenošenje malih zapremina dobila ime?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "laboratorija",
     "scena": "pribor",
     "stavke": [
@@ -1548,7 +1551,7 @@
     "Mariji Kiri",
     "Lavoazjeu"
    ],
-   "zanimljivost": "Pasteur ih je često koristio u svojim ogledima.",
+   "zanimljivost": "Danas se pipete prave i od plastike za jednokratnu upotrebu; staklena pipeta se može ponovo koristiti posle pranja.",
    "rec": "pipeta"
   },
   {
@@ -1698,7 +1701,7 @@
    "lekcija": 5,
    "tezina": 3,
    "pitanje": "U kom rastvaraču se sumpor vidljivo rastvara?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "sumpor-s8"
    },
@@ -1887,7 +1890,7 @@
    "lekcija": 6,
    "tezina": 1,
    "pitanje": "Šta se dešava sa plavom lakmus hartijom kad se na nju stavi kap rastvora kiseline?",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "laboratorija",
     "scena": "lakmus",
     "tip": "kiselina"
@@ -2116,10 +2119,11 @@
    "lekcija": 6,
    "tezina": 1,
    "pitanje": "Šta je zajedničko svim ispitivanim kiselinama (HCl, HNO₃, H₂SO₄, H₃PO₄)?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "hemija",
     "scena": "ph",
-    "vrednost": 1
+    "vrednost": 1,
+    "bezBroja": true
    },
    "odgovori": [
     "Boje plavu lakmus hartiju u crveno",
@@ -2448,7 +2452,7 @@
    "lekcija": 7,
    "tezina": 3,
    "pitanje": "Zašto se u jednačini reakcije NaHCO₃ i HCl ne piše formula H₂CO₃?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "ugljena-kiselina"
    },
@@ -2458,14 +2462,14 @@
     "Ugljena kiselina je talog koji se taloži na dno",
     "Ugljena kiselina je gas vodonik koji izlazi"
    ],
-   "zanimljivost": "H₂CO₃ → CO₂ + H₂O. Zato se piše voda i ugljen-dioksid.",
+   "zanimljivost": "Ugljena kiselina se ne može izdvojiti u čistom obliku; postoji samo u rastvoru, npr. u gaziranoj vodi. Raspada se: H₂CO₃ → CO₂↑ + H₂O.",
    "rec": "nestabilna"
   },
   {
    "lekcija": 7,
    "tezina": 1,
    "pitanje": "Šta su kristalohidrati?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "bakar-sulfat"
    },
@@ -2549,9 +2553,10 @@
    "lekcija": 8,
    "tezina": 1,
    "pitanje": "Šta predstavljaju crne kuglice u modelu „kuglica i štapić“?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
-    "ime": "metan"
+    "ime": "metan",
+    "legenda": false
    },
    "odgovori": [
     "Atome ugljenika",
@@ -2559,16 +2564,17 @@
     "Hemijske veze",
     "Molekule vode"
    ],
-   "zanimljivost": "Crna kuglica ima četiri rupe, jer je ugljenik četvorovalentan.",
+   "zanimljivost": "Crna kuglica ima četiri veze, jer je ugljenik četvorovalentan. Metan (CH₄) je glavni sastojak zemnog gasa.",
    "rec": "ugljenik"
   },
   {
    "lekcija": 8,
    "tezina": 1,
    "pitanje": "Šta predstavljaju male bele kuglice u modelu?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
-    "ime": "metan"
+    "ime": "metan",
+    "legenda": false
    },
    "odgovori": [
     "Atome vodonika",
@@ -2576,16 +2582,17 @@
     "Hemijske veze",
     "Atome kiseonika"
    ],
-   "zanimljivost": "Bela kuglica ima jednu rupu, jer je vodonik jednovalentan.",
+   "zanimljivost": "Bela kuglica ima jednu vezu, jer je vodonik jednovalentan. Metan ima četiri takve kuglice oko jednog ugljenika.",
    "rec": "vodonik"
   },
   {
    "lekcija": 8,
    "tezina": 1,
    "pitanje": "Šta predstavljaju sivi štapići u modelu?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
-    "ime": "eten"
+    "ime": "eten",
+    "legenda": false
    },
    "odgovori": [
     "Hemijske veze",
@@ -2593,7 +2600,7 @@
     "Atome vodonika",
     "Elektrone"
    ],
-   "zanimljivost": "Višestruke veze se prave sa dva ili tri štapića.",
+   "zanimljivost": "Višestruke veze se prave sa dva ili tri štapića. Eten (C₂H₄) je prvi alken i od njega se pravi polietilen.",
    "rec": "veze"
   },
   {
@@ -2651,7 +2658,7 @@
    "lekcija": 8,
    "tezina": 2,
    "pitanje": "Od koliko atoma vodonika se sastoji model etena?",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "molekul",
     "ime": "eten"
    },
@@ -2668,7 +2675,7 @@
    "lekcija": 8,
    "tezina": 2,
    "pitanje": "Od koliko atoma vodonika se sastoji model etina?",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "molekul",
     "ime": "etin"
    },
@@ -2685,9 +2692,10 @@
    "lekcija": 8,
    "tezina": 2,
    "pitanje": "Koliko različitih izomera ima pentan (C₅H₁₂)?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
-    "ime": "neopentan"
+    "ime": "neopentan",
+    "legenda": false
    },
    "odgovori": [
     "Tri",
@@ -2695,16 +2703,17 @@
     "Četiri",
     "Pet"
    ],
-   "zanimljivost": "Pentan, 2-metilbutan i 2,2-dimetilpropan.",
+   "zanimljivost": "Izomera pentana ima tri: pentan, 2-metilbutan i 2,2-dimetilpropan. Neopentan ključa na oko 9,5 °C.",
    "rec": "pentan"
   },
   {
    "lekcija": 8,
    "tezina": 1,
    "pitanje": "Kako se zove izomer pentana sa jednom metil-grupom na drugom ugljeniku?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
-    "ime": "izopentan"
+    "ime": "izopentan",
+    "legenda": false
    },
    "odgovori": [
     "2-metilbutan",
@@ -2712,16 +2721,17 @@
     "2,2-dimetilpropan",
     "Izopropan"
    ],
-   "zanimljivost": "Najduži niz ima 4 ugljenika, a račvanje je na drugom.",
+   "zanimljivost": "2-metilbutan (izopentan) ima najduži niz od četiri ugljenika i ključa na oko 28 °C; nalazi se u benzinu.",
    "rec": "izomeri"
   },
   {
    "lekcija": 8,
    "tezina": 1,
    "pitanje": "Kako se zove izomer pentana sa dve metil-grupe na istom ugljeniku?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
-    "ime": "neopentan"
+    "ime": "neopentan",
+    "legenda": false
    },
    "odgovori": [
     "2,2-dimetilpropan",
@@ -2729,7 +2739,7 @@
     "Pentan",
     "1,1-dimetilpropan"
    ],
-   "zanimljivost": "Centralni ugljenik je vezan za četiri druga ugljenika.",
+   "zanimljivost": "Centralni ugljenik je vezan za četiri druga ugljenika, pa je molekul kompaktan i sa niskom temperaturom ključanja.",
    "rec": "neopentan"
   },
   {
@@ -2770,13 +2780,9 @@
    "lekcija": 8,
    "tezina": 2,
    "pitanje": "Čime se u vežbi mogu zameniti molekulski modeli?",
-   "medijiOdgovora": {
-    "vrsta": "laboratorija",
-    "scena": "pribor",
-    "stavke": [
-     "kasicica"
-    ],
-    "natpisi": false
+   "mediji": {
+    "vrsta": "molekul",
+    "ime": "metan"
    },
    "odgovori": [
     "Plastelinom i čačkalicama",
@@ -2808,9 +2814,10 @@
    "lekcija": 8,
    "tezina": 3,
    "pitanje": "Zašto atome vodonika na modelu raspoređujemo što dalje jedan od drugog?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
-    "ime": "metan"
+    "ime": "metan",
+    "legenda": false
    },
    "odgovori": [
     "Elektronski omotači se odbijaju",
@@ -2818,7 +2825,7 @@
     "Zato što su veze nevidljive",
     "Zato što je tako lepše"
    ],
-   "zanimljivost": "Istoimeno naelektrisane čestice se odbijaju, pa atomi zauzimaju položaje sa najvećim razmakom.",
+   "zanimljivost": "Istoimeno naelektrisane čestice se odbijaju, pa se veze u metanu (CH₄) raspoređuju u tetraedru, pod uglom od oko 109,5°.",
    "rec": "odbijanje"
   },
   {
@@ -2873,9 +2880,10 @@
    "lekcija": 9,
    "tezina": 1,
    "pitanje": "Kakva je oktadekanska (stearinska) kiselina na sobnoj temperaturi?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
-    "ime": "stearinska-kiselina"
+    "ime": "stearinska-kiselina",
+    "legenda": false
    },
    "odgovori": [
     "Čvrsta",
@@ -2883,7 +2891,7 @@
     "Gasovita",
     "Providna tečnost"
    ],
-   "zanimljivost": "Duži lanac ugljenika daje čvrste masne kiseline.",
+   "zanimljivost": "Stearinska kiselina ima 18 ugljenika i nalazi se u životinjskim mastima i kakao-maslacu; topi se na oko 69 °C.",
    "rec": "stearinska"
   },
   {
@@ -2941,9 +2949,10 @@
    "lekcija": 9,
    "tezina": 1,
    "pitanje": "Koja je opšta formula monohidroksilnih zasićenih alkohola?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
-    "ime": "propan-1-ol"
+    "ime": "propan-1-ol",
+    "legenda": false
    },
    "odgovori": [
     "CₙH₂ₙ₊₁OH",
@@ -2951,16 +2960,17 @@
     "CₙH₂ₙ₊₁COOH",
     "CₙH₂ₙ₋₁OH"
    ],
-   "zanimljivost": "Alkan u kome je jedan vodonik zamenjen grupom –OH.",
+   "zanimljivost": "Alkan u kome je jedan vodonik zamenjen grupom –OH. Propan-1-ol (sa tri ugljenika) ključa na oko 97 °C.",
    "rec": "formula"
   },
   {
    "lekcija": 9,
    "tezina": 1,
    "pitanje": "Koja je opšta formula zasićenih monokarboksilnih kiselina?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
-    "ime": "propanska-kiselina"
+    "ime": "propanska-kiselina",
+    "legenda": false
    },
    "odgovori": [
     "CₙH₂ₙ₊₁COOH",
@@ -2968,7 +2978,7 @@
     "CₙH₂ₙ₊₂",
     "CₙH₂ₙ₋₁COOH"
    ],
-   "zanimljivost": "Alkil-grupa vezana za karboksilnu grupu.",
+   "zanimljivost": "Alkil-grupa vezana za karboksilnu grupu. Propanska kiselina (sa tri ugljenika) ima oštar miris i koristi se kao konzervans u hrani (E280).",
    "rec": "formula"
   },
   {
@@ -3124,7 +3134,7 @@
    "lekcija": 9,
    "tezina": 2,
    "pitanje": "Koji procenat etanola u smeši sa vodom preporučuje SZO za dezinfekciju ruku?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "laboratorija",
     "scena": "pribor",
     "stavke": [
@@ -3174,7 +3184,7 @@
    "lekcija": 10,
    "tezina": 1,
    "pitanje": "Čemu služi vodeno kupatilo u laboratoriji?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "laboratorija",
     "scena": "grejanje"
    },
@@ -3245,9 +3255,10 @@
    "lekcija": 10,
    "tezina": 2,
    "pitanje": "Kako se ponaša skrob u hladnoj vodi i pri zagrevanju?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
-    "ime": "skrob"
+    "ime": "skrob",
+    "legenda": false
    },
    "odgovori": [
     "Slabo se rastvara u hladnoj, a u toploj stvara koloid",
@@ -3255,7 +3266,7 @@
     "Nikada se ne rastvara ni u kakvoj vodi",
     "Uvek se pretvara u šećer pri zagrevanju"
    ],
-   "zanimljivost": "Zato se epruveta sa skrobom stavlja u vodeno kupatilo na deset minuta.",
+   "zanimljivost": "Skrob je rezervni ugljeni hidrat biljaka; dobija se iz kukuruza, krompira i pšenice.",
    "rec": "skrob"
   },
   {
@@ -3423,7 +3434,7 @@
    "lekcija": 10,
    "tezina": 2,
    "pitanje": "Kako se pravilno odvaja belance od žumanceta u vežbi?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "laboratorija",
     "scena": "pribor",
     "stavke": [
@@ -3443,7 +3454,7 @@
    "lekcija": 10,
    "tezina": 2,
    "pitanje": "Koje namirnice su bogate mastima?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
     "ime": "trigliserid"
    },
@@ -3887,8 +3898,9 @@
    "tezina": 3,
    "pitanje": "Koja je formula crvenog taloga koji nastaje pri Felingovoj probi?",
    "medijiOdgovora": {
-    "vrsta": "molekul",
-    "ime": "bakar-oksid"
+    "vrsta": "laboratorija",
+    "scena": "epruvete",
+    "preset": "felling"
    },
    "odgovori": [
     "Cu₂O",
@@ -3938,9 +3950,10 @@
    "lekcija": 11,
    "tezina": 3,
    "pitanje": "Kako izgleda jednačina disocijacije bakar(II)-sulfata?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "molekul",
-    "ime": "bakar-sulfat"
+    "ime": "bakar-sulfat",
+    "legenda": false
    },
    "odgovori": [
     "CuSO₄ → Cu²⁺ + SO₄²⁻",
@@ -3948,7 +3961,7 @@
     "CuSO₄ → Cu⁺ + SO₄⁻",
     "CuSO₄ → Cu²⁻ + SO₄²⁺"
    ],
-   "zanimljivost": "Naelektrisanja katjona i anjona moraju se poništavati.",
+   "zanimljivost": "Naelektrisanja katjona i anjona moraju se poništavati. Bakar(II)-sulfat je plav u obliku kristalohidrata i koristi se kao fungicid u vinogradarstvu.",
    "rec": "joni"
   },
   {
@@ -3972,7 +3985,7 @@
    "lekcija": 11,
    "tezina": 3,
    "pitanje": "Zašto se u ogledima sa dihromatom i Felingovim reagensom koristi vodeno kupatilo?",
-   "medijiOdgovora": {
+   "mediji": {
     "vrsta": "laboratorija",
     "scena": "grejanje"
    },

@@ -1991,63 +1991,63 @@
       "lekcija": 7,
       "tezina": 1,
       "pitanje": "Koji je hemijski simbol za vodonik?",
-      "rec": "vodonik",
-      "zanimljivost": "Vodonik ima simbol H, a helijum He – nemoj ih pomešati!",
-      "odgovori": [
-        "H",
-        "$He$",
-        "O",
-        "V"
-      ],
-      "medijiOdgovora": {
+      "mediji": {
         "vrsta": "atom",
         "ljuske": [
           1
         ],
         "jezgro": "1+"
-      }
+      },
+      "rec": "vodonik",
+      "zanimljivost": "Vodonik ima simbol H, a helijum He – nemoj ih pomešati! Vodonik je najlakši i najrasprostranjeniji element u svemiru – od njega su uglavnom sazdane zvezde.",
+      "odgovori": [
+        "H",
+        "$He$",
+        "O",
+        "V"
+      ]
     },
     {
       "lekcija": 7,
       "tezina": 1,
       "pitanje": "Koji je hemijski simbol za kiseonik?",
-      "rec": "kiseonik",
-      "zanimljivost": "Kiseonik ima simbol O; O₂ je formula molekula koji čine dva atoma kiseonika.",
-      "odgovori": [
-        "O",
-        "K",
-        "$Ki$",
-        "O₂"
-      ],
-      "medijiOdgovora": {
+      "mediji": {
         "vrsta": "atom",
         "ljuske": [
           2,
           6
         ],
         "jezgro": "8+"
-      }
+      },
+      "rec": "kiseonik",
+      "zanimljivost": "Kiseonik ima simbol O; O₂ je formula molekula koji čine dva atoma kiseonika. Kiseonik je najzastupljeniji element u Zemljinoj kori – čini skoro polovinu njene mase.",
+      "odgovori": [
+        "O",
+        "K",
+        "$Ki$",
+        "O₂"
+      ]
     },
     {
       "lekcija": 7,
       "tezina": 2,
       "pitanje": "Koji element ima simbol C?",
-      "rec": "ugljenik",
-      "zanimljivost": "C je ugljenik (carboneum), a kalcijum ima simbol Ca.",
-      "odgovori": [
-        "Ugljenik",
-        "Kalcijum",
-        "Hlor",
-        "Kiseonik"
-      ],
-      "medijiOdgovora": {
+      "mediji": {
         "vrsta": "atom",
         "ljuske": [
           2,
           4
         ],
         "jezgro": "6+"
-      }
+      },
+      "rec": "ugljenik",
+      "zanimljivost": "C je ugljenik (carboneum), a kalcijum ima simbol Ca. Od ugljenika su i dijamant i grafit u olovci – razlikuju se samo po rasporedu atoma.",
+      "odgovori": [
+        "Ugljenik",
+        "Kalcijum",
+        "Hlor",
+        "Kiseonik"
+      ]
     },
     {
       "lekcija": 7,
@@ -2079,15 +2079,7 @@
       "lekcija": 7,
       "tezina": 1,
       "pitanje": "Koji je hemijski simbol natrijuma?",
-      "rec": "natrijum",
-      "zanimljivost": "Na dolazi od latinskog „natrium“. Azot ima simbol N.",
-      "odgovori": [
-        "$Na$",
-        "N",
-        "S",
-        "So"
-      ],
-      "medijiOdgovora": {
+      "mediji": {
         "vrsta": "atom",
         "ljuske": [
           2,
@@ -2095,7 +2087,15 @@
           1
         ],
         "jezgro": "11+"
-      }
+      },
+      "rec": "natrijum",
+      "zanimljivost": "Na dolazi od latinskog „natrium“. Azot ima simbol N. Čist natrijum je toliko mek da se seče nožem, a sa vodom burno reaguje.",
+      "odgovori": [
+        "$Na$",
+        "N",
+        "S",
+        "So"
+      ]
     },
     {
       "lekcija": 7,
@@ -2179,6 +2179,13 @@
       "lekcija": 7,
       "tezina": 1,
       "pitanje": "Koji je hemijski simbol helijuma?",
+      "mediji": {
+        "vrsta": "atom",
+        "ljuske": [
+          2
+        ],
+        "jezgro": "2+"
+      },
       "rec": "helijum",
       "zanimljivost": "Helijum je $He$, a vodonik $H$. Helijum je otkriven najpre na Suncu!",
       "odgovori": [
@@ -2186,14 +2193,7 @@
         "H",
         "$Hl$",
         "E"
-      ],
-      "medijiOdgovora": {
-        "vrsta": "atom",
-        "ljuske": [
-          2
-        ],
-        "jezgro": "2+"
-      }
+      ]
     },
     {
       "lekcija": 8,
@@ -2631,15 +2631,7 @@
       "lekcija": 10,
       "tezina": 3,
       "pitanje": "Koji element ima raspored elektrona 2, 8, 8?",
-      "rec": "argon",
-      "zanimljivost": "Argon ima 8 elektrona u spoljašnjem nivou (oktet) – zato je plemeniti gas i skoro ne reaguje.",
-      "odgovori": [
-        "Argon",
-        "Natrijum",
-        "Kiseonik",
-        "Ugljenik"
-      ],
-      "medijiOdgovora": {
+      "mediji": {
         "vrsta": "atom",
         "ljuske": [
           2,
@@ -2647,7 +2639,15 @@
           8
         ],
         "jezgro": "18+"
-      }
+      },
+      "rec": "argon",
+      "zanimljivost": "Argon ima 8 elektrona u spoljašnjem nivou (oktet) – zato je plemeniti gas i skoro ne reaguje. Argonom se pune sijalice sa vlaknom da vlakno ne bi izgorelo.",
+      "odgovori": [
+        "Argon",
+        "Natrijum",
+        "Kiseonik",
+        "Ugljenik"
+      ]
     },
     {
       "lekcija": 10,
@@ -2745,22 +2745,22 @@
       "lekcija": 10,
       "tezina": 2,
       "pitanje": "Koji element ima raspored elektrona 2, 4?",
-      "rec": "ugljenik",
-      "zanimljivost": "Ugljenik ima 6 elektrona: 2 + 4.",
-      "odgovori": [
-        "Ugljenik",
-        "Kiseonik",
-        "Berilijum",
-        "Azot"
-      ],
-      "medijiOdgovora": {
+      "mediji": {
         "vrsta": "atom",
         "ljuske": [
           2,
           4
         ],
         "jezgro": "6+"
-      }
+      },
+      "rec": "ugljenik",
+      "zanimljivost": "Ugljenik ima 6 elektrona: 2 + 4. Ugljenik gradi više jedinjenja od skoro svih ostalih elemenata zajedno – na tome počiva sav život.",
+      "odgovori": [
+        "Ugljenik",
+        "Kiseonik",
+        "Berilijum",
+        "Azot"
+      ]
     },
     {
       "lekcija": 10,
@@ -2781,21 +2781,21 @@
       "lekcija": 10,
       "tezina": 2,
       "pitanje": "Zašto je helijum stabilan?",
-      "rec": "helijum",
-      "zanimljivost": "Helijum ima samo 2 elektrona, ali je time prvi nivo potpuno pun.",
-      "odgovori": [
-        "Prvi (jedini) nivo mu je popunjen",
-        "Ima isti broj protona i neutrona",
-        "Ima 8 elektrona u spoljašnjem nivou",
-        "Jezgro mu je najteže od svih"
-      ],
-      "medijiOdgovora": {
+      "mediji": {
         "vrsta": "atom",
         "ljuske": [
           2
         ],
         "jezgro": "2+"
-      }
+      },
+      "rec": "helijum",
+      "zanimljivost": "Helijum ima samo 2 elektrona, ali je time prvi nivo potpuno pun. Zato helijum u običnim uslovima ne gradi nijedno jedinjenje.",
+      "odgovori": [
+        "Prvi (jedini) nivo mu je popunjen",
+        "Ima isti broj protona i neutrona",
+        "Ima 8 elektrona u spoljašnjem nivou",
+        "Jezgro mu je najteže od svih"
+      ]
     },
     {
       "lekcija": 11,
@@ -2918,22 +2918,22 @@
       "lekcija": 11,
       "tezina": 3,
       "pitanje": "Koji element se nalazi u 2. periodi i 18. grupi?",
-      "rec": "neon",
-      "zanimljivost": "Neon je plemeniti gas u 2. periodi.",
-      "odgovori": [
-        "Neon",
-        "Helijum",
-        "Argon",
-        "Fluor"
-      ],
-      "medijiOdgovora": {
+      "mediji": {
         "vrsta": "atom",
         "ljuske": [
           2,
           8
         ],
         "jezgro": "10+"
-      }
+      },
+      "rec": "neon",
+      "zanimljivost": "Neon je plemeniti gas u 2. periodi. Neon u svetlećim reklamama svetli narandžastocrveno – ostale boje daju drugi gasovi.",
+      "odgovori": [
+        "Neon",
+        "Helijum",
+        "Argon",
+        "Fluor"
+      ]
     },
     {
       "lekcija": 11,
@@ -2952,15 +2952,7 @@
       "lekcija": 11,
       "tezina": 1,
       "pitanje": "Koji je simbol elementa u 3. periodi i 1. grupi?",
-      "rec": "natrijum",
-      "zanimljivost": "U 3. periodi, 1. grupi je natrijum ($Na$).",
-      "odgovori": [
-        "$Na$",
-        "$Ne$",
-        "K",
-        "$Mg$"
-      ],
-      "medijiOdgovora": {
+      "mediji": {
         "vrsta": "atom",
         "ljuske": [
           2,
@@ -2968,7 +2960,15 @@
           1
         ],
         "jezgro": "11+"
-      }
+      },
+      "rec": "natrijum",
+      "zanimljivost": "U 3. periodi, 1. grupi je natrijum ($Na$). Natrijum boji plamen jarko žuto – zato su ulične svetiljke sa natrijumovom parom narandžastožute.",
+      "odgovori": [
+        "$Na$",
+        "$Ne$",
+        "K",
+        "$Mg$"
+      ]
     },
     {
       "lekcija": 12,
@@ -3400,18 +3400,18 @@
       "lekcija": 14,
       "tezina": 2,
       "pitanje": "Zašto led pliva na vodi?",
+      "mediji": {
+        "vrsta": "molekul",
+        "ime": "voda"
+      },
       "rec": "led",
-      "zanimljivost": "Pri smrzavanju molekuli vode se poređaju tako da led ima manju gustinu.",
+      "zanimljivost": "Pri smrzavanju molekuli vode se poređaju tako da led ima manju gustinu. Voda je najgušća na oko 4 °C, pa zimi na dnu jezera ostaje tečna voda u kojoj ribe prežive.",
       "odgovori": [
         "Led ima manju gustinu od tečne vode",
         "Led je teži od vode, pa zato i potone na dno",
         "Led je topliji od vode, pa zato ostaje na površini",
         "Led nema masu, pa ne može da potone ni da pluta"
-      ],
-      "medijiOdgovora": {
-        "vrsta": "molekul",
-        "ime": "voda"
-      }
+      ]
     },
     {
       "lekcija": 14,
@@ -3782,19 +3782,19 @@
       "lekcija": 16,
       "tezina": 2,
       "pitanje": "Kako se zove jedinjenje formule CO₂?",
+      "mediji": {
+        "vrsta": "molekul",
+        "ime": "ugljen-dioksid",
+        "legenda": false
+      },
       "rec": "dioksid",
-      "zanimljivost": "Prefiks „di“ znači dva – dva atoma kiseonika.",
+      "zanimljivost": "Prefiks „di“ znači dva – dva atoma kiseonika. Čvrst CO₂ (suvi led) se ne topi, nego na −78 °C odmah prelazi u gas.",
       "odgovori": [
         "Ugljen-dioksid",
         "Ugljen-monoksid",
         "Karbid",
         "Karbonat"
-      ],
-      "medijiOdgovora": {
-        "vrsta": "molekul",
-        "ime": "ugljen-dioksid",
-        "legenda": false
-      }
+      ]
     },
     {
       "lekcija": 16,
@@ -3868,19 +3868,19 @@
       "lekcija": 16,
       "tezina": 1,
       "pitanje": "Koji gas ima formulu O₂?",
+      "mediji": {
+        "vrsta": "molekul",
+        "ime": "kiseonik",
+        "legenda": false
+      },
       "rec": "kiseonik",
-      "zanimljivost": "O₂ je molekul kiseonika, a O₃ je ozon.",
+      "zanimljivost": "O₂ je molekul kiseonika, a O₃ je ozon. Tečni kiseonik je svetloplave boje i privlači ga magnet!",
       "odgovori": [
         "Kiseonik",
         "Vodonik",
         "Azot",
         "Ozon"
-      ],
-      "medijiOdgovora": {
-        "vrsta": "molekul",
-        "ime": "kiseonik",
-        "legenda": false
-      }
+      ]
     },
     {
       "lekcija": 16,
@@ -4272,18 +4272,18 @@
       "lekcija": 19,
       "tezina": 1,
       "pitanje": "Koliko kiseonika ima u vazduhu?",
+      "mediji": {
+        "vrsta": "molekul",
+        "ime": "kiseonik"
+      },
       "rec": "kiseonik",
-      "zanimljivost": "Vazduh je smeša: oko 78% azota, 21% kiseonika i 1% argona.",
+      "zanimljivost": "Vazduh je smeša: oko 78% azota, 21% kiseonika i 1% argona. Kiseonik u vazduhu su napravile cijanobakterije fotosintezom – pre oko 2,4 milijarde godina skoro ga nije bilo.",
       "odgovori": [
         "Oko 21%",
         "Oko 78%",
         "Oko 1%",
         "Oko 50%"
-      ],
-      "medijiOdgovora": {
-        "vrsta": "molekul",
-        "ime": "kiseonik"
-      }
+      ]
     },
     {
       "lekcija": 19,
@@ -4299,7 +4299,7 @@
       ],
       "medijiOdgovora": {
         "vrsta": "molekul",
-        "ime": "azot"
+        "ime": "ugljen-dioksid"
       }
     },
     {
@@ -5352,18 +5352,18 @@
       "lekcija": 25,
       "tezina": 2,
       "pitanje": "Kolika je $Mr$ kiseonika O₂ ($Ar(O)$ = 16)?",
+      "mediji": {
+        "vrsta": "molekul",
+        "ime": "kiseonik"
+      },
       "rec": "kiseonik",
-      "zanimljivost": "$Mr(O₂)$ = 2·16 = 32.",
+      "zanimljivost": "$Mr(O₂)$ = 2·16 = 32. Kiseonik je malo teži od vazduha, čija je prosečna Mr oko 29.",
       "odgovori": [
         "32",
         "16",
         "8",
         "64"
-      ],
-      "medijiOdgovora": {
-        "vrsta": "molekul",
-        "ime": "kiseonik"
-      }
+      ]
     },
     {
       "lekcija": 25,
@@ -5395,35 +5395,35 @@
       "lekcija": 25,
       "tezina": 3,
       "pitanje": "Kolika je $Mr$ metana CH₄ ($Ar(C)$ = 12, $Ar(H)$ = 1)?",
+      "mediji": {
+        "vrsta": "molekul",
+        "ime": "metan"
+      },
       "rec": "metan",
-      "zanimljivost": "$Mr(CH₄)$ = 12 + 4·1 = 16.",
+      "zanimljivost": "$Mr(CH₄)$ = 12 + 4·1 = 16. Metan je glavni sastojak zemnog gasa, a nastaje i u stomaku krava.",
       "odgovori": [
         "16",
         "13",
         "14",
         "18"
-      ],
-      "medijiOdgovora": {
-        "vrsta": "molekul",
-        "ime": "metan"
-      }
+      ]
     },
     {
       "lekcija": 25,
       "tezina": 2,
       "pitanje": "Kolika je $Mr$ amonijaka NH₃ ($Ar(N)$ = 14, $Ar(H)$ = 1)?",
+      "mediji": {
+        "vrsta": "molekul",
+        "ime": "amonijak"
+      },
       "rec": "amonijak",
-      "zanimljivost": "$Mr(NH₃)$ = 14 + 3·1 = 17.",
+      "zanimljivost": "$Mr(NH₃)$ = 14 + 3·1 = 17. Amonijak ima oštar miris, a od njega se pravi najveći deo veštačkih đubriva na svetu.",
       "odgovori": [
         "17",
         "14",
         "16",
         "15"
-      ],
-      "medijiOdgovora": {
-        "vrsta": "molekul",
-        "ime": "amonijak"
-      }
+      ]
     },
     {
       "lekcija": 25,
@@ -5468,35 +5468,35 @@
       "lekcija": 25,
       "tezina": 1,
       "pitanje": "Koliko je puta molekul vode teži od jedinice atomske mase?",
+      "mediji": {
+        "vrsta": "molekul",
+        "ime": "voda"
+      },
       "rec": "voda",
-      "zanimljivost": "$Mr$ pokazuje baš to – koliko je puta molekul teži od jedinice atomske mase.",
+      "zanimljivost": "$Mr$ pokazuje baš to – koliko je puta molekul teži od jedinice atomske mase. Molekul vode je savijen pod uglom od oko 105° – zato voda ima tako neobična svojstva.",
       "odgovori": [
         "18 puta",
         "1 put",
         "16 puta",
         "2 puta"
-      ],
-      "medijiOdgovora": {
-        "vrsta": "molekul",
-        "ime": "voda"
-      }
+      ]
     },
     {
       "lekcija": 25,
       "tezina": 2,
       "pitanje": "Kolika je $Mr$ ozona O₃ ($Ar(O)$ = 16)?",
+      "mediji": {
+        "vrsta": "molekul",
+        "ime": "ozon"
+      },
       "rec": "ozon",
-      "zanimljivost": "$Mr(O₃)$ = 3·16 = 48.",
+      "zanimljivost": "$Mr(O₃)$ = 3·16 = 48. Ozon ima oštar miris koji se oseti posle grmljavine, a ozonski omotač nas štiti od UV zračenja.",
       "odgovori": [
         "48",
         "32",
         "16",
         "24"
-      ],
-      "medijiOdgovora": {
-        "vrsta": "molekul",
-        "ime": "ozon"
-      }
+      ]
     },
     {
       "lekcija": 25,
@@ -5515,18 +5515,18 @@
       "lekcija": 25,
       "tezina": 2,
       "pitanje": "Kolika je $Mr$ etanola C₂H₅OH?",
+      "mediji": {
+        "vrsta": "molekul",
+        "ime": "etanol"
+      },
       "rec": "etanol",
-      "zanimljivost": "$Mr(C₂H₅OH)$ = 2·12 + 6·1 + 16 = 46.",
+      "zanimljivost": "$Mr(C₂H₅OH)$ = 2·12 + 6·1 + 16 = 46. Etanol nastaje vrenjem šećera pomoću kvasca, kao u vinu.",
       "odgovori": [
         "46",
         "44",
         "32",
         "60"
-      ],
-      "medijiOdgovora": {
-        "vrsta": "molekul",
-        "ime": "etanol"
-      }
+      ]
     },
     {
       "lekcija": 25,
@@ -5623,18 +5623,18 @@
       "lekcija": 26,
       "tezina": 2,
       "pitanje": "Kolika je molarna masa kiseonika O₂?",
+      "mediji": {
+        "vrsta": "molekul",
+        "ime": "kiseonik"
+      },
       "rec": "kiseonik",
-      "zanimljivost": "M(O₂) = 2·16 = 32 g/mol.",
+      "zanimljivost": "M(O₂) = 2·16 = 32 g/mol. Jedan mol kiseonika (32 g) kao gas zauzima oko 22,4 litra na 0 °C i normalnom pritisku.",
       "odgovori": [
         "32 g/mol",
         "16 g/mol",
         "8 g/mol",
         "64 g/mol"
-      ],
-      "medijiOdgovora": {
-        "vrsta": "molekul",
-        "ime": "kiseonik"
-      }
+      ]
     },
     {
       "lekcija": 26,
