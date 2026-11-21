@@ -433,7 +433,6 @@ async function obradi(req, res) {
         } else if (b.tip === 'dalje') soba.dalje(typeof b.faza === 'string' ? b.faza : undefined);
         else if (b.tip === 'lobi') soba.uLobi();
         else if (b.tip === 'izbaci') soba.izbaci(String(b.koga));
-        else if (b.tip === 'vodja' && typeof b.koga === 'string' && soba.igraci.has(b.koga)) { soba.domacin = b.koga; soba.promena(); }
     }
     return kraj(res, 200, { ok: true });
   }
