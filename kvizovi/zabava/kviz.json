@@ -921,22 +921,6 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Iz koje zemlje potiču LEGO kocke?",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/lego.jpg"
-      },
-      "odgovori": [
-        "Danske",
-        "Nemačke",
-        "Švedske",
-        "SAD"
-      ],
-      "zanimljivost": "Ime LEGO dolazi od danskog „leg godt“ – „igraj se lepo“. Kocke iz 1958. i danas se mogu spojiti sa novim kockama!",
-      "rec": "lego"
-    },
-    {
-      "tezina": 2,
       "pitanje": "Ko je izmislio igru „Tetris“?",
       "mediji": {
         "vrsta": "slika",
@@ -3310,38 +3294,6 @@
       }
     },
     {
-      "tezina": 2,
-      "pitanje": "Alan Tjuring je 1950. smislio test: ispitivač razgovara pisanjem sa nekim koga ne vidi. Šta ovaj test treba da pokaže?",
-      "odgovori": [
-        "Da li mašina u razgovoru može da se predstavi kao čovek",
-        "Koliko brzo računar može da reši veoma složenu jednačinu",
-        "Da li računar ima dovoljno memorije za igranje partije šaha",
-        "Da li čovek razlikuje slike od kompjuterskih crteža na ekranu"
-      ],
-      "zanimljivost": "Tjuring je test zvao „igra imitacije“ – odatle engleski naslov filma (kod nas „Igra kodova“). Danas, kad veštačka inteligencija piše tekstove, pitanje je aktuelnije nego ikad. I slova „CAPTCHA“ koja kucaš da dokažeš da nisi robot skraćenica su za „Potpuno automatizovani Tjuringov test…“.",
-      "rec": "test",
-      "mediji": {
-        "vrsta": "citat",
-        "tekst": "„Mogu li mašine da misle?“ – pitanje iz Tjuringovog rada iz 1950."
-      }
-    },
-    {
-      "tezina": 3,
-      "pitanje": "Pred kraj života Tjuring je 1952. matematikom objasnio kako dve hemikalije koje se šire kroz tkivo mogu da stvore šare u prirodi. Koje?",
-      "odgovori": [
-        "Pruge i pege na koži životinja, kao kod zebre",
-        "Boje duge posle kiše na nebu iznad polja",
-        "Oblike snežnih pahulja u hladnim oblacima",
-        "Putanje ptica selica pri preletu preko mora"
-      ],
-      "zanimljivost": "Njegov model „reakcije i difuzije“ pokazuje da dva jedinjenja – jedno koje pokreće, drugo koje koči stvaranje pigmenta – spontano daju pruge ili tačke. Naučnici su kasnije potvrdili sličan mehanizam kod zebrica (ribica zebrafish), a i kod razvoja prstiju kod miševa.",
-      "rec": "šare",
-      "medijiOdgovora": {
-        "vrsta": "emodzi",
-        "tekst": "🦓🐆🐠"
-      }
-    },
-    {
       "tezina": 1,
       "pitanje": "U filmu „Openhajmer“ (Oppenheimer, 2023) prvi test nuklearnog oružja („Trinity“) izveden je 16. jula 1945. u pustinji. U kojoj saveznoj državi SAD?",
       "odgovori": [
@@ -3384,38 +3336,6 @@
         "scena": "periodni",
         "istakni": [
           "U"
-        ]
-      }
-    },
-    {
-      "tezina": 2,
-      "pitanje": "Posle uspešnog testa, nuklearne bombe su u avgustu 1945. bačene na dva japanska grada. Koji su to gradovi?",
-      "odgovori": [
-        "Hirošima i Nagasaki",
-        "Tokio i Osaka",
-        "Kjoto i Jokohama",
-        "Nagoja i Sapporo"
-      ],
-      "zanimljivost": "Prva bomba („Mališa“, Little Boy) bila je od urana, druga („Debeljko“, Fat Man) od plutonijuma, kao ona iz testa u pustinji. Kjoto je bio na spisku meta, ali ga je američki ministar rata skinuo jer je to starogradski kulturni centar. Japan je kapitulirao 15. avgusta, a Drugi svetski rat se završio 2. septembra 1945.",
-      "rec": "hirošima",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "✈️☢️🇯🇵"
-      },
-      "medijiOdgovora": {
-        "vrsta": "mapa",
-        "oblast": "istocna-azija",
-        "tacke": [
-          {
-            "lat": 34.39,
-            "lon": 132.45,
-            "oznaka": "Hirošima"
-          },
-          {
-            "lat": 32.75,
-            "lon": 129.88,
-            "oznaka": "Nagasaki"
-          }
         ]
       }
     },
@@ -4172,26 +4092,6 @@
             "oznaka": "Černobilj"
           }
         ]
-      }
-    },
-    {
-      "tezina": 3,
-      "pitanje": "Cezijum-137 iz Černobilja ima poluživot od oko 30 godina, a od nesreće je prošlo 40 godina. Koliko ga otprilike ostane 60 godina posle nesreće?",
-      "odgovori": [
-        "Četvrtina početne količine",
-        "Polovina početne količine",
-        "Osmina početne količine",
-        "Nijedan atom"
-      ],
-      "zanimljivost": "Poluživot je vreme za koje se raspadne polovina jezgara: posle $30$ godina ostane $1/2$, posle $60$ – $1/4$, posle $90$ – $1/8$. Zato je potrebno više od stotinu godina da zračenje padne na bezbedan nivo, a neke vrste (plutonijum-239, $24 100$ godina) ostaju hiljadama godina.",
-      "rec": "poluživot",
-      "mediji": {
-        "vrsta": "emodzi",
-        "tekst": "☢️⏳"
-      },
-      "medijiOdgovora": {
-        "vrsta": "svg",
-        "kod": "<svg viewBox=\"0 0 320 180\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"320\" height=\"180\" fill=\"#f4f7fb\"/><rect x=\"30\" y=\"30\" width=\"50\" height=\"120\" fill=\"#e8a317\"/><text x=\"55\" y=\"168\" font-size=\"12\" text-anchor=\"middle\" fill=\"#444\" font-family=\"sans-serif\">0</text><text x=\"55\" y=\"24\" font-size=\"13\" text-anchor=\"middle\" fill=\"#222\" font-family=\"sans-serif\">100%</text><rect x=\"100\" y=\"90\" width=\"50\" height=\"60\" fill=\"#e8a317\"/><text x=\"125\" y=\"168\" font-size=\"12\" text-anchor=\"middle\" fill=\"#444\" font-family=\"sans-serif\">30 god.</text><text x=\"125\" y=\"84\" font-size=\"13\" text-anchor=\"middle\" fill=\"#222\" font-family=\"sans-serif\">50%</text><rect x=\"170\" y=\"120\" width=\"50\" height=\"30\" fill=\"#e8a317\"/><text x=\"195\" y=\"168\" font-size=\"12\" text-anchor=\"middle\" fill=\"#444\" font-family=\"sans-serif\">60 god.</text><text x=\"195\" y=\"114\" font-size=\"13\" text-anchor=\"middle\" fill=\"#222\" font-family=\"sans-serif\">25%</text><rect x=\"240\" y=\"135\" width=\"50\" height=\"15\" fill=\"#e8a317\"/><text x=\"265\" y=\"168\" font-size=\"12\" text-anchor=\"middle\" fill=\"#444\" font-family=\"sans-serif\">90 god.</text><text x=\"265\" y=\"129\" font-size=\"13\" text-anchor=\"middle\" fill=\"#222\" font-family=\"sans-serif\">12,5%</text></svg>"
       }
     },
     {
