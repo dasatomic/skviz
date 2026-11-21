@@ -126,7 +126,10 @@ Prihvatanje predloga: na stranici PR-a „Merge pull request“, pa `git pull` i
 Vrste predloga iz urednika: **izmena / novo pitanje** (PR), **🗑 brisanje** (PR koji uklanja pitanje, uz obavezan razlog u opisu)
 i **💬 komentar** (issue u `dasatomic/skviz` – primedba bez izmene `kviz.json`; zatvoriti ga kad se postupi po njemu).
 Napomene i razlozi idu samo u opis PR-a/issue-a, nikad u `kviz.json`.
-Autor predloga vidi stanje („Čeka pregled / Prihvaćeno / Rešeno“) i komentare u uredniku pod „Moji predlozi“.
+Slanje ne čeka GitHub: server odmah proveri predlog nad lokalnom kopijom kviza i javi „poslato“, a PR/issue otvara u pozadini
+(do 3 pokušaja; poslovi u `podaci/predlozi-poslovi.json`, nedovršeni se nastavljaju posle restarta). Ako GitHub odbije, urednik vidi
+„⚠ Nije poslato“ sa razlogom u „Mojim predlozima“, a greška je u logu servera („Predlog … nije poslat“).
+Autor predloga vidi stanje („Šalje se… / Čeka pregled / Prihvaćeno / Rešeno“) i komentare u uredniku pod „Moji predlozi“.
 Ograničenja: 100 predloga na sat po adresi, 1000 dnevno ukupno (`LIMIT_PREDLOGA`, `LIMIT_PREDLOGA_DAN`); provera stanja predloga („Moji predlozi“) 200 puta u minutu po adresi (`LIMIT_STANJA`).
 
 ## Admin pregled (`/admin`)

@@ -11,6 +11,8 @@
 /podaci/kljuc-id
 # sobe sačuvane pri gašenju starog servera – novi server ih vraća
 /podaci/sobe.json
+# predlozi iz urednika koji se šalju na GitHub u pozadini (lib/predlozi.js)
+/podaci/predlozi-poslovi.json
 /podaci/*.tmp
 # keš slika ličnosti iz bonus runde (lib/slike-bonus.js)
 /podaci/bonus-slike

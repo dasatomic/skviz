@@ -160,8 +160,29 @@ async function otvoriPrijavu(x) {
   idi({ paket: x.paket, lekcija: x.lekcija, pitanje: i });
 }
 
-async function mojiPredlozi() {
+// Predlog se na GitHub šalje u pozadini (server odmah kaže „poslato“): dok ne dobije broj PR-a/issue-a,
+// u „Mojim predlozima“ stoji samo id posla. Ovo pita server dokle je stigao i upisuje broj i adresu.
+async function razresiPoslove() {
   const lista = ls.get('predlozi', []);
+  const cekaju = lista.filter((p) => p.posao && !p.broj && !p.greska);
+  if (!cekaju.length) return lista;
+  try {
+    const st = await (await fetch('/api/predlog/poslovi?id=' + cekaju.map((p) => p.posao).join(','), { cache: 'no-store' })).json();
+    if (st.greska) return lista;
+    const sveze = ls.get('predlozi', []); // u međuvremenu je mogao da stigne nov predlog
+    for (const p of sveze) {
+      const x = p.posao && st[p.posao];
+      if (!x || p.broj) continue;
+      if (x.stanje === 'gotovo') Object.assign(p, { broj: x.broj, url: x.url, naslov: x.naslov || p.naslov });
+      else if (x.stanje === 'greska') p.greska = x.greska;
+    }
+    ls.set('predlozi', sveze);
+    return sveze;
+  } catch { return lista; }
+}
+
+async function mojiPredlozi() {
+  let lista = ls.get('predlozi', []);
   const el = $('#moji-predlozi');
   if (!el || !lista.length) return;
   el.hidden = false;
@@ -170,6 +191,8 @@ async function mojiPredlozi() {
       <p class="sitno">Predlozi poslati sa ovog računara. Klik na „Pogledaj“ otvara predlog na GitHub-u, gde urednik može da ostavi komentar ili pitanje.</p>
       <ul class="u-predlozi">${lista.slice().reverse().map((p) => {
         const s = st[p.broj];
+        if (!p.broj) return `<li>${p.greska ? '<span class="u-stanje odbijen">⚠ Nije poslato</span>' : '<span class="u-stanje salje">📤 Šalje se…</span>'}
+          <span class="naslov">${esc(p.naslov)}<br><span class="sitno">${new Date(p.datum).toLocaleDateString('sr-RS')}${p.greska ? ` · ${esc(p.greska)}` : ''}</span></span></li>`;
         const oznaka = !s ? '<span class="u-stanje ceka">…</span>'
           : s.stanje === 'prihvacen' ? '<span class="u-stanje prihvacen">✓ Prihvaćeno</span>'
           : s.stanje === 'odbijen' ? '<span class="u-stanje odbijen">Nije prihvaćeno</span>'
@@ -180,10 +203,22 @@ async function mojiPredlozi() {
       }).join('')}</ul>`;
   };
   crtajListu();
-  try {
-    const st = await (await fetch('/api/predlog/stanje?brojevi=' + lista.map((p) => p.broj).join(','))).json();
-    if (!st.greska) crtajListu(st);
-  } catch {}
+  let st = {};
+  for (let i = 0; i < 8 && el.isConnected; i++) {
+    lista = await razresiPoslove();
+    const brojevi = lista.filter((p) => p.broj && !(p.broj in st)).map((p) => p.broj);
+    try {
+      if (brojevi.length) {
+        const x = await (await fetch('/api/predlog/stanje?brojevi=' + brojevi.join(','))).json();
+        if (!x.greska) st = { ...st, ...x };
+      }
+    } catch {}
+    if (!el.isConnected) return;
+    crtajListu(st);
+    // predlog koji se još šalje – proveri ponovo za par sekundi (dok je početna strana otvorena)
+    if (!lista.some((p) => p.posao && !p.broj && !p.greska)) return;
+    await new Promise((r) => setTimeout(r, 4000));
+  }
 }
 
 // ───── 2) spisak pitanja (sa izborom razreda i lekcije) ─────
@@ -219,6 +254,12 @@ function ekranOblast(oblast) {
 const zvezdice = (t) => '★'.repeat(t || 2) + '<span style="opacity:.25">' + '★'.repeat(3 - (t || 2)) + '</span>';
 const normalizuj = (s) => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/g, 'dj');
 
+// pitanja vidljiva u spisku (lekcija + pretraga) – isti redosled koriste i dugmad „Prethodno/Sledeće“ u izmeni
+function vidljivaPitanja(K, lek, pretraga) {
+  const q = normalizuj(String(pretraga || '').trim());
+  return (K.pitanja || []).map((p, i) => ({ p, i })).filter(({ p }) => (!lek || p.lekcija === lek) && (!q || normalizuj([p.pitanje, ...(p.odgovori || []), ...(p.parovi || []).flat(), ...(p.resenje || []).map((k) => k.t), p.autor].join(' ')).includes(q)));
+}
+
 async function ekranSpisak(a) {
   const info = kvizPo(a.paket);
   if (!info) { glavni.innerHTML = '<div class="u-prazno">Ovaj kviz ne postoji ili se ne menja preko urednika. <a href="#">Nazad</a></div>'; return; }
@@ -244,9 +285,9 @@ async function ekranSpisak(a) {
         <tbody id="redovi"></tbody></table>
     </div>`;
   const crtajRedove = () => {
-    const q = normalizuj($('#pretraga').value.trim());
+    const q = $('#pretraga').value.trim();
     const lek = a.lekcija;
-    const vidljiva = pitanja.filter(({ p }) => (!lek || p.lekcija === lek) && (!q || normalizuj([p.pitanje, ...(p.odgovori || []), ...(p.parovi || []).flat(), ...(p.resenje || []).map((k) => k.t), p.autor].join(' ')).includes(q)));
+    const vidljiva = vidljivaPitanja(K, lek, q);
     $('#broj-nadjenih').textContent = q || lek ? `prikazano ${vidljiva.length}` : '';
     $('#redovi').innerHTML = vidljiva.length ? vidljiva.map(({ p, i }) => `<tr class="red-pitanja" data-i="${i}">
       <td class="br">${i + 1}</td>${lekcije.length ? `<td class="br">${p.lekcija || ''}</td>` : ''}
@@ -265,6 +306,11 @@ async function ekranSpisak(a) {
 }
 
 // ───── 3) izmena / novo pitanje ─────
+let listajTastaturom = null; // Alt + ← / → u izmeni pitanja
+window.addEventListener('keydown', (e) => {
+  if (!listajTastaturom || !e.altKey || e.ctrlKey || e.metaKey || !$('#prozor').hidden) return;
+  if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') { e.preventDefault(); listajTastaturom(e.key === 'ArrowLeft' ? -1 : 1); }
+});
 let F = null; // stanje forme: { vrsta, tezina, lekcija, pitanje, odgovori[4], parovi[[l,d]], objasnjenje, zanimljivost, rec, mediji }
 
 function izPitanja(p) {
@@ -367,10 +413,18 @@ async function ekranIzmena(a) {
   const lekcije = kviz.lekcije || [];
   const nazad = adresa({ paket: a.paket, lekcija: a.lekcija });
   izmenjeno = false;
+  // prethodno / sledeće pitanje u spisku (ista lekcija i pretraga kao u spisku)
+  const niz = novo ? [] : vidljivaPitanja(kviz, a.lekcija, ls.get('pretraga-' + a.paket, '')).map((x) => x.i);
+  const mesto = niz.indexOf(indeks);
+  const susedno = (d) => (mesto >= 0 && niz[mesto + d] !== undefined ? niz[mesto + d] : null);
+  const listanje = mesto < 0 ? '' : `<span class="u-listanje">
+      <button class="u-mini" id="prethodno" ${susedno(-1) === null ? 'disabled' : ''} title="Prethodno ${zadatak ? 'zadatak' : 'pitanje'} (Alt + ←)">‹ Prethodno</button>
+      <span class="sitno">${mesto + 1} / ${niz.length}</span>
+      <button class="u-mini" id="sledece" ${susedno(1) === null ? 'disabled' : ''} title="Sledeće ${zadatak ? 'zadatak' : 'pitanje'} (Alt + →)">Sledeće ›</button></span>`;
 
   glavni.innerHTML = `
     <div class="u-alati"><button class="u-mini" id="nazad">← Nazad na spisak</button>
-      <span class="sitno">${esc(info.ikona)} ${esc(kviz.naziv)}</span></div>
+      <span class="sitno">${esc(info.ikona)} ${esc(kviz.naziv)}</span><span class="razmak"></span>${listanje}</div>
     <div class="u-izmena">
       <div class="kartica">
         <h2>${novo ? '＋ Novo pitanje' : zadatak ? `✏️ Izmena zadatka #${indeks + 1}` : `✏️ Izmena pitanja #${indeks + 1}`}</h2>
@@ -432,6 +486,10 @@ async function ekranIzmena(a) {
     promena();
   })));
   $('#nazad').onclick = $('#odustani').onclick = () => idi(nazad);
+  // nesačuvane izmene: idi() menja adresu, a hashchange pita da li sigurno odlaziš
+  const idiNa = (d) => { const i = susedno(d); if (i !== null) idi({ paket: a.paket, lekcija: a.lekcija, pitanje: i }); };
+  if ($('#prethodno')) { $('#prethodno').onclick = () => idiNa(-1); $('#sledece').onclick = () => idiNa(1); }
+  listajTastaturom = mesto < 0 ? null : idiNa;
   $('#predlozi').onclick = () => potvrdi(a, original);
   if (!novo) {
     $('#komentar').onclick = () => potvrdiRadnju('komentar', a, original);
@@ -679,7 +737,7 @@ function potvrdiRadnju(radnja, a, original) {
 async function posalji(a, original, autor, telo) {
   const komentar = telo.radnja === 'komentar';
   const sta = komentar ? 'komentar' : 'predlog';
-  prozor(`<h2>📨 Slanje</h2><p><span class="u-ceka"></span>Šaljem ${sta}… ovo može da potraje do pola minuta.</p>`);
+  prozor(`<h2>📨 Slanje</h2><p><span class="u-ceka"></span>Šaljem ${sta}…</p>`);
   let r, odg;
   try {
     r = await fetch('/api/predlog', {
@@ -695,8 +753,9 @@ async function posalji(a, original, autor, telo) {
     $('#ne').onclick = zatvoriProzor;
     return;
   }
+  // server je predlog primio i proverio; na GitHub ga šalje u pozadini (broj i link stižu kasnije)
   const lista = ls.get('predlozi', []);
-  lista.push({ broj: odg.broj, url: odg.url, naslov: odg.naslov, datum: Date.now() });
+  lista.push({ posao: odg.posao, naslov: odg.naslov, datum: Date.now() });
   ls.set('predlozi', lista);
   if (telo.radnja === 'izmena') izmenjeno = false;
   const posle = komentar ? 'Urednik igre će ga pročitati i, ako treba, ispraviti pitanje.'
@@ -704,13 +763,29 @@ async function posalji(a, original, autor, telo) {
     : 'Urednik igre će ga pregledati. Kad ga prihvati, pitanje ulazi u igru sa sledećim osvežavanjem sajta.';
   prozor(`<h2>🎉 Hvala! ${komentar ? 'Komentar' : 'Predlog'} je poslat.</h2>
     <p>${posle}</p>
-    <p>Ovde možeš da pratiš ${komentar ? 'svoj komentar' : 'svoj predlog'} i da vidiš da li je urednik odgovorio:</p>
-    <a class="u-veza" href="${esc(odg.url)}" target="_blank" rel="noopener">${esc(odg.url)}</a>
-    <p class="sitno">Link je sačuvan i na početnoj strani urednika, pod „Moji predlozi“. Za komentarisanje na GitHub-u potreban je nalog, a za gledanje nije.</p>
-    <div class="u-akcije"><a class="dugme zeleno" href="${esc(odg.url)}" target="_blank" rel="noopener" style="text-decoration:none">Otvori ${sta} ↗</a>
-      <button class="dugme" id="jos">＋ Dodaj još jedno pitanje</button><button class="dugme sivo" id="spisak">Nazad na spisak</button></div>`);
-  $('#jos').onclick = () => { zatvoriProzor(); idi({ paket: a.paket, lekcija: F.lekcija || a.lekcija, pitanje: 'novo' }); };
+    <p class="sitno" id="veza-predloga">Pratićeš ga na početnoj strani urednika, pod „Moji predlozi“ – tamo se vidi i da li je urednik odgovorio.</p>
+    <div class="u-akcije">${kviz.zadaci ? '' : '<button class="dugme" id="jos">＋ Dodaj još jedno pitanje</button>'}<button class="dugme sivo" id="spisak">Nazad na spisak</button></div>`);
+  pratiPosao(odg.posao, komentar ? 'komentar' : 'predlog');
+  if ($('#jos')) $('#jos').onclick = () => { zatvoriProzor(); idi({ paket: a.paket, lekcija: F.lekcija || a.lekcija, pitanje: 'novo' }); };
   $('#spisak').onclick = () => { zatvoriProzor(); idi({ paket: a.paket, lekcija: a.lekcija }); };
+}
+
+// dok je prozor „Hvala“ otvoren, sačekaj da predlog stigne na GitHub i pokaži link (ili grešku)
+async function pratiPosao(posao, sta) {
+  for (let i = 0; i < 20; i++) {
+    await new Promise((r) => setTimeout(r, i < 5 ? 2000 : 5000));
+    const el = $('#veza-predloga');
+    const lista = await razresiPoslove();
+    const p = lista.find((x) => x.posao === posao);
+    if (!p || (!p.broj && !p.greska)) { if (!el || $('#prozor').hidden) return; continue; }
+    if (!el || $('#prozor').hidden) return;
+    el.outerHTML = p.greska
+      ? `<div class="u-upozorenje">⚠ GitHub nije prihvatio ${sta}: ${esc(p.greska)}</div>`
+      : `<p>Ovde možeš da pratiš ${sta === 'komentar' ? 'svoj komentar' : 'svoj predlog'} i da vidiš da li je urednik odgovorio:</p>
+        <a class="u-veza" href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.url)}</a>
+        <p class="sitno">Link je sačuvan i na početnoj strani urednika, pod „Moji predlozi“. Za komentarisanje na GitHub-u potreban je nalog, a za gledanje nije.</p>`;
+    return;
+  }
 }
 
 // ───── usmeravanje ─────
@@ -719,6 +794,7 @@ async function crtaj() {
   ciscenjeMedija?.();
   ciscenjeMedija = null;
   poslednjiMedij = '';
+  listajTastaturom = null;
   zatvoriProzor();
   const a = citajAdresu();
   try {

@@ -15,6 +15,7 @@ podaci/telemetrija.db*
 # ključ za javne id-jeve igrača i sobe sačuvane pri gašenju servera (deploy bez prekida igre)
 podaci/kljuc-id
 podaci/sobe.json
+podaci/predlozi-poslovi.json
 # privremene datoteke bezbednog upisa (lib/upis.js)
 podaci/*.tmp
 

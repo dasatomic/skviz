@@ -26,6 +26,8 @@ const POKRENUT = Date.now();
 
 const greske = kvizovi.ucitajSve();
 greske.forEach((g) => console.warn('⚠ Greška u kvizu', g));
+// predlozi iz urednika koji su ostali neposlati pri prethodnom gašenju idu na GitHub sada
+predlozi.nastaviPoslove((id) => kvizovi.paket(id));
 // pitanja objavljena bez restarta (`deploy/objavi.sh … --pitanja`) server pokupi najkasnije za 10 s
 // (i odmah pri /api/kvizovi i „Pokreni“); sobe u toku zadržavaju već izabrana pitanja
 setInterval(() => {
@@ -352,13 +354,19 @@ async function obradi(req, res) {
     if (previse(req, 'predlog', LIMIT_PREDLOGA, 3600e3) || previse({ socket: {}, headers: {} }, 'predlog-dan', LIMIT_PREDLOGA_DAN, 86400e3))
       return kraj(res, 429, { greska: 'Previše predloga za kratko vreme. Pokušaj ponovo za sat vremena.' });
     try {
+      // brza provera, a pull request se otvara u pozadini – urednik ne čeka GitHub (lib/predlozi.js → posalji)
       kvizovi.ucitajSve();
-      return kraj(res, 200, await predlozi.predlozi(b, kvizovi.paket(String(b.paket || ''))));
+      return kraj(res, 200, predlozi.posalji(b, kvizovi.paket(String(b.paket || ''))));
     } catch (e) {
       if (e instanceof predlozi.Greska) return kraj(res, e.kod, { greska: e.message });
       console.error('Predlog nije uspeo:', e);
       return kraj(res, 502, { greska: 'GitHub trenutno ne odgovara kako treba. Pokušaj ponovo za nekoliko minuta.' });
     }
+  }
+  if (p === '/api/predlog/poslovi') {
+    if (previse(req, 'stanje', LIMIT_STANJA, 60e3)) return kraj(res, 429, { greska: 'Previše zahteva. Pokušaj za minut.' });
+    const ids = (url.searchParams.get('id') || '').slice(0, 1000).split(',').filter((x) => /^[\w-]{8,40}$/.test(x));
+    return kraj(res, 200, predlozi.stanjePoslova(ids));
   }
   if (p === '/api/predlog/stanje') {
     // svaki nepoznat broj je jedan poziv GitHub-u sa robotovog naloga – ne dati da se limit potroši spolja

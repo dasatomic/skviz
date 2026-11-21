@@ -59,6 +59,8 @@ body.urednik { font-size: 16px; }
 .u-alati { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin: 6px 0 12px; }
 .u-alati .u-pretraga { width: 340px; }
 .u-alati select { background: #13103a; color: var(--tekst); border: 2px solid #4b4794; border-radius: 10px; padding: 9px 11px; font: inherit; max-width: 460px; }
+.u-listanje { display: inline-flex; gap: 8px; align-items: center; }
+.u-listanje .sitno { min-width: 4.5em; text-align: center; }
 .u-tabela { width: 100%; border-collapse: collapse; font-size: .93em; }
 .u-tabela th { text-align: left; color: var(--blago); font-size: .8em; text-transform: uppercase; letter-spacing: .04em; padding: 6px 8px; border-bottom: 2px solid #4b4794; position: sticky; top: 55px; background: var(--kartica); }
 .u-tabela td { padding: 8px; border-bottom: 1px solid #ffffff12; vertical-align: top; }
@@ -96,6 +98,7 @@ details.u-napredno summary { cursor: pointer; font-weight: 800; color: var(--bla
 .u-stanje.ceka { background: #4b4794; }
 .u-stanje.prihvacen { background: #00876a; }
 .u-stanje.odbijen { background: #8a2b2b; }
+.u-stanje.salje { background: #6a5a1e; }
 
 /* prozor (potvrda, rezultat) */
 .u-prozor { position: fixed; inset: 0; background: #000a; display: flex; align-items: center; justify-content: center; z-index: 50; padding: 20px; }
