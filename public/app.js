@@ -114,11 +114,19 @@ function poruka(t, ms = 2200) {
 // Dok se server restartuje (deploy, ~1 s) zahtev ne prolazi: bez veze ili 502/503/504 od Caddy-ja. Akcija se tada
 // ponavlja još nekoliko puta (ukupno ~4 s), da se ne izgubi odgovor ili reč poslata baš u tom trenutku. Ponavljanje je
 // bezbedno: server zanemaruje drugi odgovor na isto pitanje, „Dalje“ nosi fazu, „Pokreni“ ne kreće dvaput.
+// Zahtev sa rokom: na telefonu koji je promenio mrežu ili se probudio iz sna fetch ume da visi minutima (poluotvorena
+// veza) – tada dodir „ne radi“ ništa. Posle roka zahtev se prekida i ponavlja (ili prijavljuje grešku).
+function fetchRok(url, opcije = {}, ms = 10000) {
+  const ac = new AbortController();
+  const t = setTimeout(() => ac.abort(), ms);
+  return fetch(url, { ...opcije, signal: ac.signal }).finally(() => clearTimeout(t));
+}
+
 async function akcija(tip, podaci = {}) {
   const telo = JSON.stringify({ tip, igrac: ja.id, soba: V?.kod || ls.get('soba', ''), ...podaci });
   for (let pokusaj = 0; ; pokusaj++) {
     try {
-      const r = await fetch('/api/akcija', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: telo });
+      const r = await fetchRok('/api/akcija', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: telo });
       if (r.status >= 502 && r.status <= 504 && pokusaj < 5) throw new Error('restart');
       const j = await r.json();
       if (j.greska) poruka(j.greska);
@@ -186,7 +194,8 @@ function prekiniVezu() {
 async function anketa(kod, gen) {
   while (gen === generacija) {
     try {
-      const r = await fetch(`/api/stanje?soba=${encodeURIComponent(kod)}&igrac=${encodeURIComponent(ja.id)}&v=${V && V.kod === kod ? V.verzija : -1}`, { cache: 'no-store' });
+      // server drži zahtev najviše 20 s – duže čekanje znači mrtvu vezu
+      const r = await fetchRok(`/api/stanje?soba=${encodeURIComponent(kod)}&igrac=${encodeURIComponent(ja.id)}&v=${V && V.kod === kod ? V.verzija : -1}`, { cache: 'no-store' }, 30000);
       if (gen !== generacija) return;
       if (r.status === 404) { prekiniVezu(); V = null; ls.set('soba', ''); poruka('Soba više ne postoji'); return pocetna(); }
       if (!r.ok) { await new Promise((ok) => setTimeout(ok, r.status === 429 ? 5000 : 1500)); continue; }
@@ -203,11 +212,11 @@ function povezi(kod) {
   ls.set('soba', kod);
   if (nacin === 'poll') return anketa(kod, gen);
   let stiglo = false;
-  izvor = new EventSource(`/api/dogadjaji?soba=${encodeURIComponent(kod)}&igrac=${encodeURIComponent(ja.id)}`);
+  izvor = new EventSource(`/api/dogadjaji?soba=${encodeURIComponent(kod)}&igrac=${encodeURIComponent(ja.id)}&ziv=1`);
   izvor.onmessage = (e) => { if (gen !== generacija) return; stiglo = sseRadi = true; primi(JSON.parse(e.data)); };
   izvor.onerror = async () => {
     // v=-1: server odgovara odmah (ne drži zahtev otvoren kao kod long-pollinga)
-    const r = await fetch(`/api/stanje?soba=${encodeURIComponent(kod)}&igrac=x&v=-1`, { method: 'HEAD', cache: 'no-store' }).catch(() => null);
+    const r = await fetchRok(`/api/stanje?soba=${encodeURIComponent(kod)}&igrac=x&v=-1`, { method: 'HEAD', cache: 'no-store' }, 5000).catch(() => null);
     if (gen !== generacija) return;
     if (r && r.status === 404) { prekiniVezu(); V = null; ls.set('soba', ''); poruka('Soba više ne postoji'); return pocetna(); }
     // Pregledač sam ponovo otvara tok samo posle mrežne greške. Ako je odgovor bio greška (502 od Caddy-ja dok se
@@ -220,6 +229,35 @@ function povezi(kod) {
     if (!stiglo && !sseRadi && gen === generacija) { nacin = 'poll'; povezi(kod); }
   }, 3000);
 }
+
+// ───── puls: „tu sam“ serveru + provera da tok zaista radi ─────
+// Zaključan telefon (ili promena Wi-Fi ↔ mobilni) često ostavi SSE vezu „otvorenom“ (readyState 1), a ništa više ne
+// stiže – ekran se zamrzne. Puls na 10 s javlja serveru da je igrač tu (bez pulsa server ga posle ~35 s smatra
+// odsutnim i vođstvo prelazi na drugog), a odgovor nosi verziju sobe: ako je i posle sledećeg pulsa naše stanje
+// starije od verzije koju je server već imao, tok je mrtav – povezujemo se ponovo.
+let ocekivanaVerzija = -1, pulsRadi = false;
+async function puls() {
+  // šalje se i kad je stranica u pozadini (dok god pregledač pušta tajmere) – kratko prebacivanje u drugu aplikaciju
+  // ne čini igrača odsutnim; zaključan telefon zamrzne tajmere i tek tada puls izostane
+  if (pulsRadi || !V || nacin !== 'sse' || !izvor) return;
+  const kod = V.kod, gen = generacija;
+  if (izvor.readyState === 2 && !document.hidden) { ocekivanaVerzija = -1; return povezi(kod); }
+  pulsRadi = true;
+  try {
+    const r = await fetchRok(`/api/ziv?soba=${encodeURIComponent(kod)}&igrac=${encodeURIComponent(ja.id)}`, { cache: 'no-store' }, 8000);
+    if (gen !== generacija || !V || V.kod !== kod) return;
+    if (r.status === 404) { prekiniVezu(); V = null; ls.set('soba', ''); poruka('Soba više ne postoji'); return pocetna(); }
+    if (!r.ok) return;
+    const { v } = await r.json();
+    if (gen !== generacija || !V) return;
+    if (document.hidden) { ocekivanaVerzija = -1; return; } // obnova veze tek kad se ekran vidi (probudi)
+    if (ocekivanaVerzija >= 0 && V.verzija < ocekivanaVerzija) { ocekivanaVerzija = -1; return povezi(kod); }
+    ocekivanaVerzija = v > V.verzija ? v : -1;
+  } catch {
+    // puls nije prošao (mreža) – ako tok ipak radi, sve je u redu; ako ne radi, sledeći puls ga obnavlja
+  } finally { pulsRadi = false; }
+}
+setInterval(puls, 10000);
 
 // „O igri“ (statični tekst iz index.html, i za pretraživače) – samo na početnom ekranu telefona
 const oIgri = document.getElementById('o-igri');
@@ -1899,10 +1937,21 @@ const konfete = (() => {
 
 // ───────────────────────── start ─────────────────────────
 document.addEventListener('pointerdown', () => Zvuk.otkljucaj(), { once: true });
+// telefon se probudio / vratio na mrežu / stranica vraćena iz keša pregledača – tok posle sna često samo izgleda živ,
+// pa se povezujemo iznova (jeftino: server odmah pošalje celo stanje)
+function probudi() {
+  if (document.hidden || !V) return;
+  ocekivanaVerzija = -1;
+  if (nacin === 'sse') povezi(V.kod);
+}
+let sakriven = 0;
 document.addEventListener('visibilitychange', () => {
-  // telefon se probudio – ako je veza pukla, poveži ponovo
-  if (!document.hidden && V && nacin === 'sse' && izvor && izvor.readyState === 2) povezi(V.kod);
+  if (document.hidden) { sakriven = Date.now(); return; }
+  // kratko sklanjanje (obaveštenje, prebacivanje aplikacije na tren) ne traži novu vezu – to proverava puls
+  if (Date.now() - sakriven > 5000) probudi(); else puls();
 });
+window.addEventListener('online', probudi);
+window.addEventListener('pageshow', (e) => { if (e.persisted) probudi(); });
 (async () => {
   postaviPismo(PISMO, false); // naslov kartice
   osveziKvizove();

@@ -60,8 +60,10 @@ function kljucId() {
 }
 const KLJUC_ID = kljucId();
 const javniId = (tajni) => (tajni ? crypto.createHmac('sha256', KLJUC_ID).update(String(tajni)).digest('hex').slice(0, 16) : '');
-// broj otvorenih SSE tokova jednog igrača (računa se iz skupa tokova, pa ne može da se „raštimuje“)
-const brojVeza = (kod, id) => { let n = 0; for (const t of tokovi.get(kod) || []) if (t.id === id) n++; return n; };
+// broj otvorenih SSE tokova jednog igrača (računa se iz skupa tokova, pa ne može da se „raštimuje“).
+// Tokovi sa pulsom (`ziv`, vidi /api/ziv) se ne broje: prisutnost tih telefona određuje puls, ne otvoren tok.
+const brojVeza = (kod, id) => { let n = 0; for (const t of tokovi.get(kod) || []) if (t.id === id && !t.ziv) n++; return n; };
+const imaTok = (kod, id) => { for (const t of tokovi.get(kod) || []) if (t.id === id) return true; return false; };
 
 // Svaka promena (npr. svaki odgovor) šalje svakom telefonu u sobi njegov pogled – u sobi od 40 igrača to je 40 × 40
 // poruka po pitanju (a Caddy svaku još šifruje). Zato se slanje proređuje: prva promena ide odmah, a sve promene u
@@ -87,8 +89,14 @@ function emitujOdmah(soba, e) {
     for (const w of c) { clearTimeout(w.tajmer); kraj(w.res, 200, soba.pogled(w.id)); }
   }
 }
+// Mrtva veza (telefon zaključan ili van mreže, a TCP veza „poluotvorena“) ne prima ništa, pa se sve poslato gomila u
+// memoriji servera. Kad se nagomila previše, veza se prekida – telefon se, kad se probudi, sam poveže ponovo.
+const MAKS_BAFER = 1e6;
 function posalji(res, podaci) {
-  try { res.write(`data: ${JSON.stringify(podaci)}\n\n`); } catch {}
+  try {
+    if (res.writableLength > MAKS_BAFER) return res.destroy();
+    res.write(`data: ${JSON.stringify(podaci)}\n\n`);
+  } catch {}
 }
 
 const MAKS_SOBA = 20000; // 4 slova = 160.000 kodova; iznad ovoga nova soba se odbija (umesto beskonačne petlje)
@@ -208,10 +216,23 @@ function staticki(res, koren, rel, zaglavlja = {}) {
   if (f !== koren && !f.startsWith(koren + path.sep)) return kraj(res, 403, 'zabranjeno');
   fs.stat(f, (e, st) => {
     if (e || !st.isFile()) return kraj(res, 404, 'nema');
+    // „no-cache“ znači „proveri pre upotrebe“: bez ETag-a/Last-Modified svaka provera je bila celo preuzimanje
+    // (~1 MB skripti pri svakom otvaranju stranice) – sada nepromenjen fajl dobija samo 304
+    const etag = `W/"${st.size.toString(36)}-${Math.floor(st.mtimeMs).toString(36)}"`;
+    const izmenjen = new Date(Math.floor(st.mtimeMs / 1000) * 1000).toUTCString();
+    const kes = zaglavlja['Cache-Control'] || (koren === KVIZOVI || rel.startsWith('/geo/') ? 'public, max-age=3600' : 'no-cache');
+    const h = res.req?.headers || {};
+    // Caddy (encode) sažetom odgovoru dopisuje nastavak u ETag („…-gzip“) – pri proveri se skida
+    if (h['if-none-match'] ? h['if-none-match'].split(',').some((x) => x.trim().replace(/-(gzip|zstd|br)"$/, '"') === etag)
+      : Date.parse(h['if-modified-since'] || '') >= Date.parse(izmenjen)) {
+      res.writeHead(304, { ETag: etag, 'Last-Modified': izmenjen, 'Cache-Control': kes });
+      return res.end();
+    }
     res.writeHead(200, {
+      ETag: etag, 'Last-Modified': izmenjen,
       'Content-Type': TIPOVI[path.extname(f).toLowerCase()] || 'application/octet-stream',
       'Content-Length': st.size,
-      'Cache-Control': koren === KVIZOVI || rel.startsWith('/geo/') ? 'public, max-age=3600' : 'no-cache',
+      'Cache-Control': kes,
       'X-Content-Type-Options': 'nosniff',
       // fajlovi kvizova (slike, SVG) su samo sadržaj: ako se otvore direktno u pregledaču, ne smeju da pokreću skripte
       ...(koren === KVIZOVI ? { 'Content-Security-Policy': "default-src 'none'; img-src 'self' data:; style-src 'unsafe-inline'" } : {}),
@@ -256,21 +277,37 @@ async function obradi(req, res) {
     if (!soba) return kraj(res, previse(req, 'nema', LIMIT_NEMA, 60e3) ? 429 : 404, { greska: 'Soba ne postoji' });
     if (tajni.length > 64) return kraj(res, 400, { greska: 'Loš ID' });
     const id = javniId(tajni);
+    // ziv=1: telefon šalje i puls (/api/ziv) – samo otvoren tok ne znači da je igrač tu: zaključan telefon često ostavi
+    // „poluotvorenu“ vezu koju server ne vidi kao prekinutu, pa bi vođa ostao vođa, a soba čekala njegovo „Dalje“
+    const ziv = url.searchParams.get('ziv') === '1';
     res.writeHead(200, { 'Content-Type': 'text/event-stream', 'Cache-Control': 'no-cache', Connection: 'keep-alive', 'X-Accel-Buffering': 'no' });
     res.write('retry: 1500\n\n');
-    const t = { res, id };
+    const t = { res, id, ziv };
     if (!tokovi.has(soba.kod)) tokovi.set(soba.kod, new Set());
     tokovi.get(soba.kod).add(t);
-    soba.povezan(id, brojVeza(soba.kod, id));
+    if (ziv) soba.vidjen(id); else soba.povezan(id, brojVeza(soba.kod, id));
     posalji(res, soba.pogled(id));
-    const puls = setInterval(() => { try { res.write(': puls\n\n'); } catch {} }, 15000);
+    const puls = setInterval(() => { try { if (res.writableLength > MAKS_BAFER) res.destroy(); else res.write(': puls\n\n'); } catch {} }, 15000);
     req.on('close', () => {
       clearInterval(puls);
       tokovi.get(soba.kod)?.delete(t);
       // soba je možda u međuvremenu obrisana (ili je pod istim kodom napravljena nova)
-      if (sobe.get(soba.kod) === soba) soba.povezan(id, brojVeza(soba.kod, id));
+      if (sobe.get(soba.kod) !== soba) return;
+      if (!ziv) soba.povezan(id, brojVeza(soba.kod, id));
+      else if (!imaTok(soba.kod, id)) soba.otisao(id);
     });
     return;
+  }
+
+  // puls telefona (na ~10 s, dok je stranica vidljiva): igrač je prisutan; odgovor nosi verziju sobe, pa telefon
+  // prepozna tok koji je tiho prestao da prima promene i poveže se ponovo
+  if (p === '/api/ziv') {
+    const soba = sobe.get((url.searchParams.get('soba') || '').toUpperCase());
+    const tajni = url.searchParams.get('igrac') || '';
+    if (!soba) return kraj(res, previse(req, 'nema', LIMIT_NEMA, 60e3) ? 429 : 404, { greska: 'Soba ne postoji' });
+    if (tajni.length > 64) return kraj(res, 400, { greska: 'Loš ID' });
+    soba.vidjen(javniId(tajni));
+    return kraj(res, 200, { v: soba.verzija });
   }
 
   if (p === '/api/stanje') {
