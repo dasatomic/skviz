@@ -60,7 +60,7 @@ for (let s = 0; s < izbor.length; s += NA_STRANI) {
 <script>// animacije: prvi kadrovi u t = 0, zatim stalno kadar u trenutku VREME (scena „zaleđena“ u tom trenutku)
 const T0=performance.now();window.requestAnimationFrame=cb=>setTimeout(()=>cb(performance.now()-T0<300?0:${vreme}),40);</script>
 <script src="file://${pub}/geo.js"></script><script src="file://${pub}/fizika.js"></script><script src="file://${pub}/biologija.js"></script>
-<script src="file://${pub}/istorija.js"></script><script src="file://${pub}/mediji.js"></script><script src="file://${pub}/molekuli.js"></script>
+<script src="file://${pub}/istorija.js"></script><script src="file://${pub}/scena3d.js"></script><script src="file://${pub}/mediji.js"></script><script src="file://${pub}/molekuli.js"></script>
 <script src="file://${pub}/hemija3d.js"></script><script src="file://${pub}/laboratorija.js"></script>
 <script>
 const P=${JSON.stringify(podaci)};
@@ -78,7 +78,7 @@ window.onerror=(m)=>{document.body.insertAdjacentHTML('afterbegin','<div style="
   fs.writeFileSync(f, html);
   const png = f.replace(/\.html$/, '.png');
   const visina = Math.ceil(deo.length / 3) * 620 + 40;
-  execFileSync(CHROME, ['--headless=new', '--disable-gpu', '--hide-scrollbars', '--allow-file-access-from-files', `--window-size=1516,${visina}`,
+  execFileSync(CHROME, ['--headless=new', '--disable-gpu', '--enable-unsafe-swiftshader', '--use-angle=swiftshader', '--hide-scrollbars', '--allow-file-access-from-files', `--window-size=1516,${visina}`,
     '--virtual-time-budget=1500', `--screenshot=${png}`, 'file://' + f], { stdio: 'ignore', timeout: 60000 });
   console.log(png);
 }

@@ -110,8 +110,19 @@
   const proj = (p, ax, ay, w, h, sk) => {
     const [x, y, z] = MD().rotiraj(p, ax, ay);
     const f = 1 / (1 + z * 0.06);
-    return { x: w / 2 + x * sk * f, y: h / 2 + y * sk * f, z, f };
+    return { x: w / 2 + x * sk * f, y: h / 2 + y * sk * f, z, f, zp: z * sk };
   };
+  // kugla i veza (jednostruka/dvostruka/trostruka) za Scena3D, iz projektovanih tačaka
+  const kugla = (p, r, boja, alfa) => ({ x: p.x, y: p.y, z: p.zp, r, boja, alfa });
+  function vezaValjci(out, A, B, red, sk, bA, bB, alfa = 1) {
+    const f = (A.f + B.f) / 2;
+    const dx = B.x - A.x, dy = B.y - A.y, L = Math.hypot(dx, dy) || 1, nx = -dy / L, ny = dx / L;
+    const r = (red > 1 ? 0.062 : 0.1) * sk * f, raz = (red > 2 ? 0.15 : 0.19) * sk * f;
+    for (let q = 0; q < red; q++) {
+      const o = (q - (red - 1) / 2) * raz;
+      out.push({ a: [A.x + nx * o, A.y + ny * o, A.zp], b: [B.x + nx * o, B.y + ny * o, B.zp], r, boja: bA, boja2: bB, alfa });
+    }
+  }
   function natpisDiv(k, klasa = 'hem-natpis') {
     const d = document.createElement('div');
     d.className = klasa;
@@ -178,31 +189,28 @@
   function crtajSvet(g, w, h, ax, ay, t, svet, sk, o = {}) {
     g.clearRect(0, 0, w, h);
     const P = (p) => proj(p, ax, ay, w, h, sk);
-    const stavke = [];
+    const kugle = [], valjci = [], oreoli = [], natpisi = [], uvek = [];
+    const rEl = (p) => 4.6 * p.f * Math.max(0.8, sk / 50);
     for (const a of svet.atomi) {
       const sc = a.skala || 1;
-      // prstenovi
       a.ljuske.forEach((n, i) => {
         const [e1, e2] = bazaPrstena(i);
         const val = i === a.ljuske.length - 1 && o.istakni === 'valentna';
-        g.strokeStyle = val ? 'rgba(255,209,102,.75)' : 'rgba(255,255,255,.28)';
-        g.lineWidth = val ? 2 : 1.1;
-        g.beginPath();
-        for (let s = 0; s <= 48; s++) {
-          const th = (s / 48) * Math.PI * 2;
+        // prsten (orbita) od tankih ravnih valjaka – sa dubinom, pa ga jezgro zaklanja kad je iza
+        let pr = null;
+        for (let s = 0; s <= 64; s++) {
+          const th = (s / 64) * Math.PI * 2;
           const p = P(dod(a.c, mno(dod(mno(e1, Math.cos(th)), mno(e2, Math.sin(th))), ringR(i) * sc)));
-          if (s) g.lineTo(p.x, p.y); else g.moveTo(p.x, p.y);
+          if (pr) valjci.push({ a: [pr.x, pr.y, pr.zp], b: [p.x, p.y, p.zp], r: val ? 1 : 0.6, boja: val ? '#ffd166' : '#ffffff', alfa: val ? 0.75 : 0.3, ravno: true });
+          pr = p;
         }
-        g.stroke();
         for (let j = 0; j < n; j++) {
           const p = P(elPoz(a, i, j, n, t));
-          stavke.push({ z: p.z, crtaj: () => {
-            sfera(g, p.x, p.y, 4.6 * p.f * Math.max(0.8, sk / 50), val ? ELEK_V : ELEK);
-          } });
+          kugle.push(kugla(p, rEl(p), val ? ELEK_V : ELEK));
         }
         if (o.brojevi) {
           const p = P(dod(a.c, mno(e1, ringR(i) * sc)));
-          stavke.push({ z: p.z + 5, crtaj: () => oznaka(g, String(n), p.x + 11, p.y - 9, val ? ELEK_V : '#cfe8ff', 11) });
+          uvek.push([String(n), p.x + 11, p.y - 9, val ? ELEK_V : '#cfe8ff', 11]);
         }
       });
       // jezgro
@@ -210,35 +218,32 @@
       if (a.jezgro) {
         for (const q of a.jezgro) {
           const p = P(dod(a.c, q.p));
-          stavke.push({ z: p.z, crtaj: () => sfera(g, p.x, p.y, Math.max(3, 0.1 * sk * p.f), q.proton ? '#ff6b6b' : '#b2bec3') });
+          kugle.push(kugla(p, Math.max(3, 0.1 * sk * p.f), q.proton ? '#ff6b6b' : '#b2bec3'));
         }
       } else {
         const rj = (0.3 + 0.012 * a.ljuske.length) * sk * pc.f * sc;
-        stavke.push({ z: pc.z, crtaj: () => {
-          sfera(g, pc.x, pc.y, rj, '#e17055');
-          if (a.oznaka) oznaka(g, a.oznaka, pc.x, pc.y, '#fff', Math.max(10, rj * 0.9));
-        } });
+        kugle.push(kugla(pc, rj, '#e17055'));
+        if (a.oznaka) natpisi.push([a.oznaka, pc.x, pc.y, '#fff', Math.max(10, rj * 0.9), pc.zp - rj]);
       }
       if (a.q) {
         const R = ringR(a.ljuske.length - 1) * sc;
         const p = P(dod(a.c, [R * 0.75, -R * 0.8, 0]));
-        stavke.push({ z: -99, crtaj: () => oznaka(g, nCrtaj(a.q), p.x, p.y, a.q > 0 ? '#ff7675' : '#74b9ff', 17) });
+        uvek.push([nCrtaj(a.q), p.x, p.y, a.q > 0 ? '#ff7675' : '#74b9ff', 17]);
       }
       if (a.natpis) {
         const R = ringR(a.ljuske.length - 1) * sc;
         const p = P(dod(a.c, [0, R + 0.5, 0]));
-        stavke.push({ z: -99, crtaj: () => oznaka(g, a.natpis, p.x, p.y, '#cfe8ff', 13) });
+        uvek.push([a.natpis, p.x, p.y, '#cfe8ff', 13]);
       }
     }
     for (const e of svet.letece || []) {
       const p = P(e.p);
-      stavke.push({ z: p.z - 1, crtaj: () => {
-        g.fillStyle = 'rgba(255,209,102,.25)'; g.beginPath(); g.arc(p.x, p.y, 10 * p.f, 0, 7); g.fill();
-        sfera(g, p.x, p.y, 4.8 * p.f * Math.max(0.8, sk / 50), ELEK_V);
-      } });
+      oreoli.push({ x: p.x, y: p.y, z: p.zp, r: 13 * p.f, boja: ELEK_V, alfa: 0.55 });
+      kugle.push(kugla(p, 4.8 * p.f * Math.max(0.8, sk / 50), ELEK_V));
     }
-    stavke.sort((a, b) => b.z - a.z);
-    stavke.forEach((s) => s.crtaj());
+    window.Scena3D.crtaj(g, w, h, { kugle, valjci, oreoli });
+    for (const [tk, x, y, b, v, z] of natpisi) if (!window.Scena3D.zaklonjen(x, y, z, kugle)) oznaka(g, tk, x, y, b, v);
+    for (const [tk, x, y, b, v] of uvek) oznaka(g, tk, x, y, b, v);
   }
 
   function atom(k, m) {
@@ -559,24 +564,12 @@
       const faza = t < tAprox ? 0 : t < tRaz ? 1 : t < tKr ? 2 : 3;
       // koji se atomi crtaju: do tRaz-sredine reaktanti, posle proizvodi (isti objekti tokom prelaza)
       const P = (p) => proj(p, ax, ay, w, h, sk);
-      const stavke = [];
-      const prelaz = t >= tAprox;
-      const koristiD = t >= tAprox; // atomi proizvoda nasleđuju položaj reaktanata
-      const lista = koristiD ? S.aD : S.aL;
       const alfaL = 1 - glatko((t - tAprox) / 0.7), alfaD = glatko((t - tAprox - 0.5) / 0.9);
+      const kugle = [], valjci = [], natpisi = [];
+      const boja = (e) => (MD().ATOMI[e] || { boja: '#ccc' }).boja;
       const veza = (v, alfa, mapa) => {
         if (alfa <= 0.01) return;
-        const A = P(mapa(v.a)), B = P(mapa(v.b));
-        stavke.push({ z: (A.z + B.z) / 2 + 0.01, crtaj: () => {
-          const dx = B.x - A.x, dy = B.y - A.y, Ld = Math.hypot(dx, dy) || 1, nx = -dy / Ld, ny = dx / Ld;
-          g.lineCap = 'round'; g.globalAlpha = alfa;
-          for (let r = 0; r < v.r; r++) {
-            const o = (r - (v.r - 1) / 2) * 6;
-            g.strokeStyle = '#8a8fa3'; g.lineWidth = v.r > 1 ? 3.2 : 5;
-            g.beginPath(); g.moveTo(A.x + nx * o, A.y + ny * o); g.lineTo(B.x + nx * o, B.y + ny * o); g.stroke();
-          }
-          g.globalAlpha = 1;
-        } });
+        vezaValjci(valjci, P(mapa(v.a)), P(mapa(v.b)), v.r, sk, boja(v.a.e), boja(v.b.e), alfa);
       };
       // veze reaktanata prate atome reaktanata (koji se kreću ka položajima proizvoda), veze proizvoda – atome proizvoda
       const mapaL = (a) => pos.get(S.par.find(([x]) => x === a)?.[1]) || pos.get(a);
@@ -587,18 +580,13 @@
         const q = P(p);
         const info = MD().ATOMI[a.e] || { boja: '#ccc', r: 0.5 };
         const r = info.r * sk * q.f * 0.8;
-        stavke.push({ z: q.z, crtaj: () => {
-          sfera(g, q.x, q.y, r, info.boja);
-          if (a.q && !(t >= tAprox && t < tAprox + 0.6)) {
-            const tk = nCrtaj(a.q);
-            oznaka(g, tk, q.x, q.y, a.q > 0 ? '#ff7675' : '#74b9ff', Math.max(12, r));
-          }
-        } });
+        kugle.push(kugla(q, r, info.boja));
+        if (a.q && !(t >= tAprox && t < tAprox + 0.6)) natpisi.push([nCrtaj(a.q), q.x, q.y, a.q > 0 ? '#ff7675' : '#74b9ff', Math.max(12, r), q.zp - r]);
       };
       if (t < tAprox) S.aL.forEach((a) => crtajAtom(a, pos.get(a)));
       else S.aD.forEach((b) => crtajAtom(b, pos.get(b)));
-      stavke.sort((a, b) => b.z - a.z);
-      stavke.forEach((s) => s.crtaj());
+      window.Scena3D.crtaj(g, w, h, { kugle, valjci });
+      for (const [tk, x, y, b, v, z] of natpisi) if (!window.Scena3D.zaklonjen(x, y, z, kugle)) oznaka(g, tk, x, y, b, v);
       // sjaj pri preuređenju
       if (efekat && t > tAprox - 0.2 && t < tRaz + 1.2) {
         const u = (t - (tAprox - 0.2)) / (tRaz + 1.4 - (tAprox - 0.2));
@@ -639,17 +627,19 @@
           if (e.p[i] < -box[i]) e.p[i] += 2 * box[i];
         }
       });
-      const st = [];
+      const kugle = [], oreoli = [], plus = [];
       for (const j of joni) {
-        const p = proj(j, ax, ay, w, h, sk);
-        st.push({ z: p.z, crtaj: () => { sfera(g, p.x, p.y, info.r * sk * p.f * 0.62, info.boja, 0.9); oznaka(g, '+', p.x, p.y, '#fff', 13); } });
+        const p = proj(j, ax, ay, w, h, sk), r = info.r * sk * p.f * 0.62;
+        kugle.push(kugla(p, r, info.boja));
+        plus.push([p.x, p.y, p.zp - r]);
       }
       for (const e of el3) {
         const p = proj(e.p, ax, ay, w, h, sk);
-        st.push({ z: p.z - 0.5, crtaj: () => { g.fillStyle = 'rgba(255,209,102,.22)'; g.beginPath(); g.arc(p.x, p.y, 8 * p.f, 0, 7); g.fill(); sfera(g, p.x, p.y, 3.6 * p.f, ELEK_V); } });
+        oreoli.push({ x: p.x, y: p.y, z: p.zp, r: 10 * p.f, boja: ELEK_V, alfa: 0.45 });
+        kugle.push(kugla(p, 3.6 * p.f, ELEK_V));
       }
-      st.sort((a, b) => b.z - a.z);
-      st.forEach((s) => s.crtaj());
+      window.Scena3D.crtaj(g, w, h, { kugle, oreoli });
+      for (const [x, y, z] of plus) if (!window.Scena3D.zaklonjen(x, y, z, kugle)) oznaka(g, '+', x, y, '#fff', 13);
     }, { brzina: 0.004 });
   }
 

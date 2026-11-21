@@ -272,59 +272,51 @@ function prikaziMolekul(k, m) {
   legenda.innerHTML = (m.formula && m.prikaziFormulu ? `<b class="formula-mala">${esc(m.formula)}</b>` : '') +
     (m.legenda === false ? '' : elementi.map((e) => `<span><i style="background:${ATOMI[e]?.boja || '#ccc'}"></i>${m.skrijImena ? `<span data-lat>${e}</span>` : ATOMI[e]?.ime || e}</span>`).join(''));
   k.appendChild(legenda);
+  const n = def.atomi.length;
+  const fr = n < 6 ? 0.72 : n > 40 ? 0.6 : n > 24 ? 0.68 : 0.85;
+  const tanke = def.tanke || n > 40;
   return okretanje(cv, (ax, ay) => {
     g.clearRect(0, 0, w, h);
     const P = at.map((a) => {
       const [x, y, z] = rotiraj(a.p, ax, ay);
       const f = 1 / (1 + z * 0.06);
-      return { x: w / 2 + x * sk * f, y: h / 2 + y * sk * f, z, f, a };
+      const info = ATOMI[a.e] || { boja: '#ccc', r: 0.5 };
+      return { x: w / 2 + x * sk * f, y: h / 2 + y * sk * f, z: z * sk, f, a, boja: info.boja, r: info.r * sk * f * fr };
     });
-    const stavke = [];
-    for (const [i, j, red = 1] of def.veze) stavke.push({ z: (P[i].z + P[j].z) / 2 + 0.01, veza: [P[i], P[j], red] });
-    P.forEach((p) => stavke.push({ z: p.z, atom: p }));
-    stavke.sort((a, b) => b.z - a.z);
-    for (const s of stavke) {
-      if (s.veza) {
-        const [A, B, red] = s.veza;
-        const dx = B.x - A.x, dy = B.y - A.y, L = Math.hypot(dx, dy) || 1;
-        const nx = -dy / L, ny = dx / L;
-        g.lineCap = 'round';
-        for (let r = 0; r < red; r++) {
-          const o = (r - (red - 1) / 2) * 6;
-          g.strokeStyle = '#8a8fa3';
-          g.lineWidth = def.tanke || def.atomi.length > 40 ? 2 : red > 1 ? 3.5 : 6;
-          g.beginPath();
-          g.moveTo(A.x + nx * o, A.y + ny * o);
-          g.lineTo(B.x + nx * o, B.y + ny * o);
-          g.stroke();
-        }
-      } else {
-        const p = s.atom;
-        const info = ATOMI[p.a.e] || { boja: '#ccc', r: 0.5 };
-        const r = info.r * sk * p.f * (def.atomi.length < 6 ? 0.72 : def.atomi.length > 40 ? 0.6 : def.atomi.length > 24 ? 0.68 : 0.85);
-        const gr = g.createRadialGradient(p.x - r * 0.35, p.y - r * 0.35, r * 0.1, p.x, p.y, r);
-        gr.addColorStop(0, '#ffffff');
-        gr.addColorStop(0.25, info.boja);
-        gr.addColorStop(1, shade(info.boja, -0.55));
-        g.fillStyle = gr;
-        g.beginPath();
-        g.arc(p.x, p.y, r, 0, Math.PI * 2);
-        g.fill();
-        if (p.a.q) {
-          // naboj jona: „+“, „−“, „2+“ …
-          const q = p.a.q, tekst = (Math.abs(q) > 1 ? Math.abs(q) : '') + (q > 0 ? '+' : '−');
-          g.font = `bold ${Math.max(13, r * 0.95)}px system-ui`;
-          g.textAlign = 'center'; g.textBaseline = 'middle';
-          g.lineWidth = 3; g.strokeStyle = '#0b1826'; g.strokeText(tekst, p.x, p.y);
-          g.fillStyle = q > 0 ? '#ff7675' : '#74b9ff'; g.fillText(tekst, p.x, p.y);
-        }
-        if (m.oznake) {
-          g.fillStyle = p.a.e === 'H' ? '#333' : '#fff';
-          g.font = `bold ${Math.max(10, r * 0.8)}px system-ui`;
-          g.textAlign = 'center';
-          g.textBaseline = 'middle';
-          g.fillText(p.a.e, p.x, p.y);
-        }
+    // veze: valjci u boji svojih atoma (polovina – polovina); dvostruke/trostruke razmaknute normalno na vezu
+    const valjci = [];
+    for (const [i, j, red = 1] of def.veze) {
+      const A = P[i], B = P[j];
+      const f = (A.f + B.f) / 2;
+      const dx = B.x - A.x, dy = B.y - A.y, L = Math.hypot(dx, dy) || 1, nx = -dy / L, ny = dx / L;
+      const r = (tanke ? 0.045 : red > 1 ? 0.062 : 0.1) * sk * f;
+      const raz = (red > 2 ? 0.15 : 0.19) * sk * f;
+      for (let q = 0; q < red; q++) {
+        const o = (q - (red - 1) / 2) * raz;
+        valjci.push({
+          a: [A.x + nx * o, A.y + ny * o, A.z], b: [B.x + nx * o, B.y + ny * o, B.z], r,
+          boja: def.tanke ? '#8a8fa3' : A.boja, boja2: def.tanke ? '#8a8fa3' : B.boja,
+        });
+      }
+    }
+    const kugle = P.map((p) => ({ x: p.x, y: p.y, z: p.z, r: p.r, boja: p.boja }));
+    window.Scena3D.crtaj(g, w, h, { kugle, valjci });
+    // natpisi (naboj jona, simbol) – samo na atomima koji se vide spreda
+    if (!m.oznake && !P.some((p) => p.a.q)) return;
+    g.textAlign = 'center'; g.textBaseline = 'middle';
+    for (const p of [...P].sort((a, b) => b.z - a.z)) {
+      if (window.Scena3D.zaklonjen(p.x, p.y, p.z - p.r, kugle)) continue;
+      if (p.a.q) {
+        // naboj jona: „+“, „−“, „2+“ …
+        const q = p.a.q, tekst = (Math.abs(q) > 1 ? Math.abs(q) : '') + (q > 0 ? '+' : '−');
+        g.font = `bold ${Math.max(13, p.r * 0.95)}px system-ui`;
+        g.lineWidth = 3; g.strokeStyle = '#0b1826'; g.strokeText(tekst, p.x, p.y);
+        g.fillStyle = q > 0 ? '#ff7675' : '#74b9ff'; g.fillText(tekst, p.x, p.y);
+      }
+      if (m.oznake) {
+        g.fillStyle = p.a.e === 'H' ? '#333' : '#fff';
+        g.font = `bold ${Math.max(10, p.r * 0.8)}px system-ui`;
+        g.fillText(p.a.e, p.x, p.y);
       }
     }
   });
