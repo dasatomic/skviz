@@ -18,6 +18,12 @@ podaci/sobe.json
 # privremene datoteke bezbednog upisa (lib/upis.js)
 podaci/*.tmp
 
+# iOS aplikacija (Xcode – lična podešavanja i build)
+xcuserdata/
+*.xcuserstate
+DerivedData/
+ios/build/
+
 # Python keš (alati/manim)
 __pycache__/
 
