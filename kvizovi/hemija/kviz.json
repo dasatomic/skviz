@@ -527,7 +527,7 @@
         "Topljenje",
         "Destilacija"
       ],
-      "zanimljivost": "Oblaci su takođe nastali kondenzacijom – vodena para se u hladnijem vazduhu skuplja u sitne kapljice oko čestica prašine. Jedan prosečan oblak može da bude težak kao stotine slonova!",
+      "zanimljivost": "Oblaci su takođe nastali kondenzacijom – vodena para se u hladnijem vazduhu skuplja u sitne kapljice oko čestica prašine. Jedan običan beli oblak može da sadrži oko 500 tona vode – koliko je teško stotinak slonova!",
       "medijiOdgovora": {
         "vrsta": "biologija",
         "scena": "kruzenje",
@@ -562,6 +562,11 @@
         "Mendeljevijum"
       ],
       "zanimljivost": "Oganeson (118) nazvan je 2016. po ruskom fizičaru Juriju Oganesjanu. Pre toga je samo Glen Siborg, po kome je nazvan siborgijum, doživeo tu čast za života.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/oganesjan.jpg",
+        "opis": "Jurij Oganesjan"
+      },
       "rec": "oganeson"
     },
     {
@@ -574,6 +579,11 @@
         "Jedinjenje (stalan hemijski sastav)"
       ],
       "zanimljivost": "Rastvor šećera može da se razdvoji isparavanjem vode. A mleko izgleda homogeno, ali pod mikroskopom se vide kapljice masti – ono je zapravo koloidna smeša.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "rastvaranje",
+        "tip": "secer"
+      },
       "rec": "smeša"
     },
     {
@@ -1015,6 +1025,12 @@
         "Neutron"
       ],
       "zanimljivost": "Na⁺ je jon natrijuma koji je otpustio elektron, a Cl⁻ jon hlora koji ga je primio. Takvi joni grade kuhinjsku so.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "jonska",
+        "metal": 11,
+        "nemetal": 17
+      },
       "rec": "jon"
     },
     {
@@ -1147,6 +1163,30 @@
         "Metal"
       ],
       "zanimljivost": "To je reakcija neutralizacije. Tablete protiv gorušice sadrže baze koje neutrališu višak želudačne kiseline.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "reakcija",
+        "reaktanti": [
+          [
+            "hlorovodonik",
+            1
+          ],
+          [
+            "natrijum-hidroksid",
+            1
+          ]
+        ],
+        "proizvodi": [
+          [
+            "kuhinjska-so",
+            1
+          ],
+          [
+            "voda",
+            1
+          ]
+        ]
+      },
       "rec": "baza"
     },
     {
@@ -1176,6 +1216,31 @@
         "Azot"
       ],
       "zanimljivost": "Vodonik je zapaljiv – kada mu se prinese plamen, čuje se karakteristično „pucketanje“. To je školski dokaz za vodonik.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "reakcija",
+        "reaktanti": [
+          [
+            "cink",
+            1
+          ],
+          [
+            "hlorovodonik",
+            2
+          ]
+        ],
+        "proizvodi": [
+          [
+            "cink-hlorid",
+            1
+          ],
+          [
+            "vodonik",
+            1
+          ]
+        ],
+        "efekat": "mehurici"
+      },
       "rec": "vodonik"
     },
     {
@@ -1285,6 +1350,11 @@
         "Vrsta stakla"
       ],
       "zanimljivost": "Čelik ima do oko 2% ugljenika. Nerđajući čelik sadrži još i hrom, koji ga štiti od rđe – kašike su najčešće od njega.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/celik.jpg",
+        "opis": "Nerđajući čelik – gvožđe, ugljenik i hrom"
+      },
       "rec": "čelik"
     },
     {
@@ -1646,6 +1716,27 @@
         "2H + O₂ → H₂O"
       ],
       "zanimljivost": "Broj atoma svakog elementa mora biti isti sa obe strane – to je Lavoazjeov zakon održanja mase. Pre i posle reakcije: 4 atoma H i 2 atoma O.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "reakcija",
+        "reaktanti": [
+          [
+            "vodonik",
+            2
+          ],
+          [
+            "kiseonik",
+            1
+          ]
+        ],
+        "proizvodi": [
+          [
+            "voda",
+            2
+          ]
+        ],
+        "efekat": "plamen"
+      },
       "rec": "jednačina"
     },
     {
@@ -1657,7 +1748,7 @@
         "Jedan molekul vode koji ima dva atoma vodonika i kiseonik",
         "Vrsta kiseline"
       ],
-      "zanimljivost": "To je Avogadrov broj. Kada bi imao mol zrna peska, njima bi mogla da se pokrije cela Srbija u sloju debljine nekoliko stotina metara!",
+      "zanimljivost": "To je Avogadrov broj. Kada bi imao mol zrna sitnog peska, njima bi mogla da se pokrije cela Srbija u sloju debelom više od jednog kilometra!",
       "rec": "mol"
     },
     {
@@ -1778,6 +1869,10 @@
         "Metalna legura od mnogo različitih metala, kao što su bronza i mesing"
       ],
       "zanimljivost": "Plastika, guma, celuloza, skrob, pa i DNK su polimeri. Najlon je bio prvi potpuno sintetički polimer od koga su se pravila vlakna (1935).",
+      "medijiOdgovora": {
+        "vrsta": "molekul",
+        "ime": "polietilen"
+      },
       "rec": "polimer"
     },
     {
@@ -1950,6 +2045,11 @@
         "Pretvara se u gas čim dodirne hladnu vodu"
       ],
       "zanimljivost": "Ulje je ređe od vode i ne meša se sa njom. Sapun i deterdženti pomažu da se masnoća „spoji“ sa vodom i spere.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "rastvaranje",
+        "tip": "ulje"
+      },
       "rec": "ulje"
     },
     {

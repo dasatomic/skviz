@@ -218,7 +218,7 @@
       "pitanje": "Ova slepa pećinska životinja bele kože može da živi preko 100 godina i da ne jede godinama. Šta je ovo?",
       "mediji": {
         "vrsta": "slika",
-        "src": "slike/covecja-ribica.png"
+        "src": "slike/covecja-ribica-foto.jpg"
       },
       "odgovori": [
         "Čovečja ribica",
@@ -227,6 +227,11 @@
         "Pećinski crv"
       ],
       "zanimljivost": "Čovečja ribica nije riba nego vodozemac, i živi u pećinama Dinarida. Narod ju je tako nazvao zbog kože boje ljudske kože, a nekada su verovali da je mladunče zmaja!",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/covecja-ribica.png",
+        "opis": "Rasprostranjenost čovečje ribice – podzemne vode Dinarida"
+      },
       "rec": "ribica"
     },
     {
@@ -717,6 +722,11 @@
         "10"
       ],
       "zanimljivost": "Telo insekta ima tri dela: glavu, grudi i trbuh. Insekti su najbrojnija grupa životinja – opisano je preko milion vrsta.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/bubamara.jpg",
+        "opis": "Bubamara – insekt sa šest nogu"
+      },
       "rec": "insekt"
     },
     {
@@ -876,6 +886,11 @@
         "Zima"
       ],
       "zanimljivost": "Opadanje lišća štedi vodu tokom zime. Pre toga se hlorofil razgradi, pa se pokažu žute i narandžaste boje koje su u listu bile sve vreme.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/jesen.jpg",
+        "opis": "Jesenje lišće – kad se hlorofil razgradi, vide se žuti i crveni pigmenti"
+      },
       "rec": "jesen"
     },
     {
@@ -1080,6 +1095,10 @@
         "Rožnjačom (providnim slojem)"
       ],
       "zanimljivost": "Štapići služe za vid u mraku, ali ne razlikuju boje – zato noću sve izgleda sivo. Daltonisti imaju poremećaj u radu čepića.",
+      "medijiOdgovora": {
+        "vrsta": "biologija",
+        "scena": "oko"
+      },
       "rec": "čepić"
     },
     {
@@ -1180,6 +1199,11 @@
         "Zamenjuju krv"
       ],
       "zanimljivost": "Prvu vakcinu je napravio Edvard Džener 1796, protiv velikih boginja, koristeći kravlje boginje. Reč „vakcina“ dolazi od latinske reči za kravu – vacca!",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/dzener.jpg",
+        "opis": "Edvard Džener, tvorac prve vakcine (protiv velikih boginja, 1796)"
+      },
       "rec": "vakcina"
     },
     {
@@ -1259,6 +1283,11 @@
         "Zbog bolesti"
       ],
       "zanimljivost": "Zmija svlači kožu u komadu, čak i sa „naočarima“ preko očiju. Pre presvlačenja oči joj se zamute, pa slabije vidi.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/svlak.jpg",
+        "opis": "Ribarica pred presvlačenje – zamućeno oko"
+      },
       "rec": "koža"
     },
     {
@@ -1271,6 +1300,11 @@
         "Proizvođač (pravi hranu sam)"
       ],
       "zanimljivost": "Predatori imaju važnu ulogu: love bolesne i slabe jedinke i tako sprečavaju preteran porast broja biljojeda. Kad su vukovi 1995. vraćeni u Jelouston, broj jelena se smanjio, a rastinje se oporavilo.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/vuk.jpg",
+        "opis": "Vuk – predator"
+      },
       "rec": "predator"
     },
     {
@@ -1446,6 +1480,11 @@
         "Stablo"
       ],
       "zanimljivost": "Botanički, plod je sve što nastaje iz cveta i nosi seme – zato su i paprika, krastavac i tikva plodovi. Paradajz je u Evropu stigao iz Amerike i dugo se smatrao otrovnim.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/paradajz.jpg",
+        "opis": "Paradajz – plod koji nosi seme"
+      },
       "rec": "plod"
     },
     {
@@ -1575,7 +1614,7 @@
         "Fluorescencija minerala",
         "Refleksija"
       ],
-      "zanimljivost": "Svici svetle bez stvaranja toplote – skoro 100% energije pretvaraju u svetlost. Obična sijalica sa vlaknom pretvarala je u svetlost manje od 10%.",
+      "zanimljivost": "Svetlost svitaca je „hladna“ – skoro uopšte ne stvara toplotu. Obična sijalica sa vlaknom pretvarala je u svetlost manje od 10% energije, a sve ostalo u toplotu.",
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/svici.jpg",
@@ -1586,18 +1625,18 @@
     {
       "tezina": 3,
       "pitanje": "Koja je ovo ptica, izumrla oko 1681, koja je postala simbol izumiranja?",
+      "mediji": {
+        "vrsta": "slika",
+        "src": "slike/dodo.jpg"
+      },
       "odgovori": [
         "Dodo",
         "Kakapo",
         "Kazuar",
         "Kivi"
       ],
-      "zanimljivost": "Dodo je živeo na ostrvu Mauricijus i nije umeo da leti. Nestao je za manje od dvesta godina posle dolaska ljudi i životinja koje su doneli.",
-      "rec": "dodo",
-      "mediji": {
-        "vrsta": "slika",
-        "src": "slike/dodo.jpg"
-      }
+      "zanimljivost": "Dodo je živeo na ostrvu Mauricijus i nije umeo da leti. Nestao je za manje od sto godina posle dolaska ljudi i životinja koje su doneli (pacova, svinja, majmuna).",
+      "rec": "dodo"
     },
     {
       "tezina": 3,
@@ -1699,6 +1738,11 @@
         "Hibrid (mešanac dve vrste)"
       ],
       "zanimljivost": "Ime dolazi od grčkih bogova Hermesa i Afrodite. Pored puževa, hermafroditi su i kišne gliste, a neke ribe tokom života menjaju pol.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/puz.jpg",
+        "opis": "Vinogradarski puž – hermafrodit"
+      },
       "rec": "hermafrodit"
     },
     {
@@ -1817,6 +1861,11 @@
         "Kokoška"
       ],
       "zanimljivost": "Ovce se šišaju obično jednom godišnje. Jedna ovca godišnje da 2 do 15 kg vune, zavisno od rase.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/ovca.jpg",
+        "opis": "Ovce"
+      },
       "rec": "ovca"
     },
     {
@@ -1846,6 +1895,11 @@
         "Čulom dodira"
       ],
       "zanimljivost": "Psi imaju i do 300 miliona mirisnih ćelija, a čovek oko 6 miliona. Zato se psi koriste za traženje nestalih ljudi i otkrivanje bolesti.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/pas-njuh.jpg",
+        "opis": "Pas tragač (bladhaund) – rasa sa najboljim njuhom"
+      },
       "rec": "miris"
     },
     {
@@ -2615,7 +2669,12 @@
       ],
       "objasnjenje": "Pauk ima 8 nogu i telo iz dva dela – on je paukolik. Insekti imaju 6 nogu i telo iz tri dela.",
       "rec": "pauk",
-      "zanimljivost": "Paukova svila je vrlo rastegljiva – može da se rastegne i za trećinu svoje dužine bez pucanja."
+      "zanimljivost": "Paukova svila je vrlo rastegljiva – može da se rastegne i za trećinu svoje dužine bez pucanja.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/pauk.jpg",
+        "opis": "Pauk – osam nogu i dva dela tela"
+      }
     },
     {
       "vrsta": "uljez",
@@ -2661,7 +2720,12 @@
       ],
       "objasnjenje": "Gušter je gmizavac – ima suvu kožu sa krljuštima i jaja polaže na kopnu. Žaba, daždevnjak i triton su vodozemci.",
       "rec": "gušter",
-      "zanimljivost": "Vodozemci dišu i preko kože, zato im koža mora stalno da bude vlažna."
+      "zanimljivost": "Vodozemci dišu i preko kože, zato im koža mora stalno da bude vlažna.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/zelembac.jpg",
+        "opis": "Zelembać – gušter sa suvom kožom prekrivenom krljuštima"
+      }
     },
     {
       "vrsta": "uljez",
@@ -2675,7 +2739,12 @@
       ],
       "objasnjenje": "Kit je sisar – diše plućima i rađa mladunce koje hrani mlekom. Ajkula, šaran i som su ribe.",
       "rec": "kit",
-      "zanimljivost": "Kit ulješura može da zaroni dublje od 2 kilometra u potrazi za džinovskim lignjama."
+      "zanimljivost": "Kit ulješura može da zaroni dublje od 2 kilometra u potrazi za džinovskim lignjama.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/ulijesura.jpg",
+        "opis": "Kitovi ulješure"
+      }
     },
     {
       "vrsta": "uljez",
@@ -2811,7 +2880,12 @@
       ],
       "objasnjenje": "Vuk je mesožder – lovi druge životinje. Zec, srna i konj hrane se biljkama.",
       "rec": "vuk",
-      "zanimljivost": "Vukovi žive i love u čoporima, a zavijanje kojim se dozivaju čuje se kilometrima daleko."
+      "zanimljivost": "Vukovi žive i love u čoporima, a zavijanje kojim se dozivaju čuje se kilometrima daleko.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/vuk.jpg",
+        "opis": "Vuk – mesožder"
+      }
     },
     {
       "vrsta": "uljez",

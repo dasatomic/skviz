@@ -52,7 +52,7 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, stabloCinioca, sito, vennDelilaca
     { medijiOdgovora: stabloCinioca([18, 2, [9, 3, 3]]) });
   Q(2, 'Kako glasi rastavljanje broja 30 na proste činioce?',
     ['$2 \\cdot 3 \\cdot 5$', '$5 \\cdot 6$', '$2 \\cdot 15$', '$3 \\cdot 10$'],
-    '$30 = 2\\cdot3\\cdot5$ – tri različita prosta činioca. Broj 30 je proizvod prva tri prosta broja posle 1.', 'činilac',
+    '$30 = 2\\cdot3\\cdot5$ – tri različita prosta činioca. Broj 30 je proizvod prva tri prosta broja: 2, 3 i 5.', 'činilac',
     { medijiOdgovora: stabloCinioca([30, 2, [15, 3, 5]]) });
   Q(2, 'Koji su prosti činioci broja 20?',
     ['$2 \\cdot 2 \\cdot 5$', '$4 \\cdot 5$', '$2 \\cdot 10$', '$1 \\cdot 20$'],

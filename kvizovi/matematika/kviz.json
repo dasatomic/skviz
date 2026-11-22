@@ -41896,7 +41896,7 @@
         "122",
         "1111"
       ],
-      "zanimljivost": "Množenje dvocifrenog broja sa 11: zbir cifara se upiše u sredinu. $11 · 23 = 2(2+3)$$3 = 253$.",
+      "zanimljivost": "Trik za množenje dvocifrenog broja sa 11: zbir cifara se upiše u sredinu. Za $11 · 23$ između 2 i 3 ide $2 + 3 = 5$, pa je rezultat 253.",
       "rec": "množenje"
     },
     {
@@ -53145,8 +53145,7 @@
         "32",
         "−8"
       ],
-      "zanimljivost": "$3 · (−4) = −12$, pa −$12 + 20 = 8$.",
-      "rec": "množenje",
+      "zanimljivost": "$3 · (−4) = −12$, pa je $−12 + 20 = 8$.",
       "medijiOdgovora": {
         "vrsta": "geo",
         "t": {
@@ -53499,7 +53498,8 @@
           "K"
         ],
         "velicina": 320
-      }
+      },
+      "rec": "množenje"
     },
     {
       "tezina": 1,
@@ -78101,7 +78101,7 @@
         "−1,99",
         "−0,5"
       ],
-      "zanimljivost": "Na brojevnoj pravoj manji je onaj koji je više levo. Kod negativnih brojeva to znači: što je „veći“ broj iza minusa, to je broj manji. Zato je −$2,1 < −2$, kao što je −21 °C hladnije od −20 °C.",
+      "zanimljivost": "Na brojevnoj pravoj manji je onaj koji je više levo. Kod negativnih brojeva to znači: što je „veći“ broj iza minusa, to je broj manji. Zato je $−2,1 < −2$, kao što je −21 °C hladnije od −20 °C.",
       "medijiOdgovora": {
         "vrsta": "geo",
         "t": {
@@ -81276,7 +81276,7 @@
         "−9 i −9",
         "−9 i 9"
       ],
-      "zanimljivost": "Kod $(−3)^{2}$ kvadrira se ceo broj u zagradi: $(−3) · (−3) = 9$. Kod $−3^{2}$ stepen ide samo na 3, a minus ostaje ispred: −$(3 · 3) = −9$. Zagrade su ovde presudne!",
+      "zanimljivost": "Kod $(−3)^{2}$ kvadrira se ceo broj u zagradi: $(−3) · (−3) = 9$. Kod $−3^{2}$ stepen ide samo na 3, a minus ostaje ispred: $−(3 · 3) = −9$. Zagrade su ovde presudne!",
       "rec": "zagrada"
     },
     {
@@ -83731,7 +83731,7 @@
         "$x > 3$",
         "$x < 3$"
       ],
-      "zanimljivost": "Kad se nejednačina deli NEGATIVNIM brojem, znak se okreće: $x > −3$. Provera sa $x = 0$: −$2 · 0 = 0 < 6$ ✓, a 0 je zaista veće od −3.",
+      "zanimljivost": "Kad se nejednačina deli NEGATIVNIM brojem, znak se okreće: $x > −3$. Provera sa $x = 0$: $−2 · 0 = 0 < 6$ ✓, a 0 je zaista veće od −3.",
       "medijiOdgovora": {
         "vrsta": "geo",
         "t": {
