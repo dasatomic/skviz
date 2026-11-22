@@ -366,11 +366,12 @@
         "Albert Ajnštajn"
       ],
       "zanimljivost": "Po Tesli je nazvana jedinica za magnetnu indukciju (jačinu magnetnog polja) – tesla (T).",
-      "rec": "tesla",
       "medijiOdgovora": {
-        "vrsta": "formula",
-        "tekst": "1 T = {N|A · m}"
-      }
+        "vrsta": "slika",
+        "src": "/kvizovi/fizika/slike/tesla.jpg",
+        "opis": "Nikola Tesla (1856–1943)"
+      },
+      "rec": "tesla"
     },
     {
       "lekcija": 2,
@@ -4193,6 +4194,10 @@
       "lekcija": 12,
       "tezina": 2,
       "pitanje": "Ko je izumeo gromobran?",
+      "mediji": {
+        "vrsta": "svg",
+        "kod": "<svg viewBox='0 0 320 200' xmlns='http://www.w3.org/2000/svg'><line x1='0' y1='190' x2='320' y2='190' stroke='#fff' stroke-width='2'/><polygon points='100,120 160,70 220,120' fill='none' stroke='#fff' stroke-width='3'/><rect x='110' y='120' width='100' height='70' fill='none' stroke='#fff' stroke-width='3'/><line x1='160' y1='70' x2='160' y2='28' stroke='#fff' stroke-width='3'/><circle cx='160' cy='26' r='3' fill='#fff' stroke='#fff' stroke-width='3'/><ellipse cx='70' cy='28' rx='50' ry='16' fill='none' stroke='#fff' stroke-width='3'/><polyline points='118,38 136,50 126,54 150,30' fill='none' stroke='#ffeaa7' stroke-width='3'/></svg>"
+      },
       "odgovori": [
         "Bendžamin Frenklin",
         "Nikola Tesla",
@@ -4200,11 +4205,12 @@
         "Isak Njutn"
       ],
       "zanimljivost": "Frenklin je dokazao da je munja električna pojava čuvenim ogledom sa zmajem tokom oluje – vrlo opasnim!",
-      "rec": "gromobran",
-      "mediji": {
-        "vrsta": "svg",
-        "kod": "<svg viewBox='0 0 320 200' xmlns='http://www.w3.org/2000/svg'><line x1='0' y1='190' x2='320' y2='190' stroke='#fff' stroke-width='2'/><polygon points='100,120 160,70 220,120' fill='none' stroke='#fff' stroke-width='3'/><rect x='110' y='120' width='100' height='70' fill='none' stroke='#fff' stroke-width='3'/><line x1='160' y1='70' x2='160' y2='28' stroke='#fff' stroke-width='3'/><circle cx='160' cy='26' r='3' fill='#fff' stroke='#fff' stroke-width='3'/><ellipse cx='70' cy='28' rx='50' ry='16' fill='none' stroke='#fff' stroke-width='3'/><polyline points='118,38 136,50 126,54 150,30' fill='none' stroke='#ffeaa7' stroke-width='3'/></svg>"
-      }
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/fizika/slike/frenklin.jpg",
+        "opis": "Bendžamin Frenklin"
+      },
+      "rec": "gromobran"
     },
     {
       "lekcija": 12,
@@ -6677,7 +6683,7 @@
         "Na Mesecu",
         "Na Marsu"
       ],
-      "zanimljivost": "Na površini Sunca telo bi bilo oko 27 puta teže nego na Zemlji, samo što bi ga tamo pre toga spalila toplota.",
+      "zanimljivost": "Na površini Sunca telo bi bilo oko 28 puta teže nego na Zemlji, samo što bi ga tamo pre toga spalila toplota.",
       "rec": "jupiter",
       "mediji": {
         "vrsta": "planeta",
