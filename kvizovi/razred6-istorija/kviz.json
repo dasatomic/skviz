@@ -1067,14 +1067,6 @@
       "lekcija": 5,
       "tezina": 2,
       "pitanje": "Na kom položaju je izgrađen Carigrad?",
-      "odgovori": [
-        "Na Bosforu, između Evrope i Azije",
-        "Na obali Dunava",
-        "U unutrašnjosti Male Azije",
-        "Na obali Sredozemnog mora"
-      ],
-      "zanimljivost": "Carigrad je jedini grad na svetu koji se prostire na dva kontinenta, a štitili su ga trostruki bedemi.",
-      "rec": "bosfor",
       "mediji": {
         "vrsta": "mapa",
         "oblast": "bliski-istok",
@@ -1084,7 +1076,15 @@
             "lat": 41.01
           }
         ]
-      }
+      },
+      "odgovori": [
+        "Na Bosforu, između Evrope i Azije",
+        "Na obali Dunava",
+        "U unutrašnjosti Male Azije",
+        "Na obali Sredozemnog mora"
+      ],
+      "zanimljivost": "Carigrad (Istanbul) je najveći grad na svetu koji se prostire na dva kontinenta, a štitili su ga trostruki bedemi.",
+      "rec": "bosfor"
     },
     {
       "lekcija": 5,
@@ -1378,6 +1378,11 @@
         "Pipin Mali"
       ],
       "zanimljivost": "Karlo Veliki je proširio Franačku do te mere da je postala jedna od najvećih sila tadašnje Evrope.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/svetska-istorija/slike/karlo-veliki.jpg",
+        "opis": "Karlo Veliki"
+      },
       "rec": "karlo"
     },
     {
@@ -2488,14 +2493,14 @@
     {
       "lekcija": 11,
       "tezina": 3,
-      "pitanje": "Koji je najstariji sačuvani tekst pisan staroslovenskim jezikom?",
+      "pitanje": "Koji od ovih rukopisa je pisan glagoljicom i spada među najstarije spomenike staroslovenskog jezika?",
       "odgovori": [
         "Marijino jevanđelje",
         "Miroslavljevo jevanđelje",
         "Temnićki natpis",
         "Povelja bana Kulina"
       ],
-      "zanimljivost": "Marijino jevanđelje je pisano glagoljicom i jedan je od najstarijih spomenika slovenske pismenosti.",
+      "zanimljivost": "Marijino jevanđelje nastalo je krajem X ili početkom XI veka. Ime je dobilo po manastiru Svete Bogorodice (Marije) na Svetoj Gori, gde je pronađeno, a danas se čuva u Moskvi.",
       "rec": "jevanđelje"
     },
     {
@@ -3405,6 +3410,11 @@
         "Rimski papa"
       ],
       "zanimljivost": "Nemanja je postavio temelje snažnoj srpskoj srednjovekovnoj državi.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/srpska-istorija/slike/nemanja.jpg",
+        "opis": "Stefan Nemanja"
+      },
       "rec": "nemanja"
     },
     {
@@ -3431,6 +3441,11 @@
         "Sopoćane i Hilandar"
       ],
       "zanimljivost": "Đurđeve stupove podigao je u čast Svetog Đorđa, jer se, po predanju, njemu zavetovao.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/manastiri/slike/studenica.jpg",
+        "opis": "Studenica"
+      },
       "rec": "studenica"
     },
     {
@@ -3535,6 +3550,11 @@
         "Franački kralj"
       ],
       "zanimljivost": "Svetovno ime Save bilo je Rastko, a njegov praznik slavi se kao Dan škola.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/manastiri/slike/sveti-sava.jpg",
+        "opis": "Sveti Sava"
+      },
       "rec": "sava"
     },
     {
@@ -3561,6 +3581,11 @@
         "U Mileševi"
       ],
       "zanimljivost": "Žiču je podigao kralj Stefan Prvovenčani.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/manastiri/slike/zica.jpg",
+        "opis": "Manastir Žiča"
+      },
       "rec": "zica"
     },
     {
@@ -3756,6 +3781,11 @@
         "Samo jednu"
       ],
       "zanimljivost": "Među njegovim zadužbinama su Gračanica, Banjska i Bogorodica Ljeviška.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/manastiri/slike/gracanica.jpg",
+        "opis": "Gračanica, zadužbina kralja Milutina"
+      },
       "rec": "milutin"
     },
     {
@@ -3795,6 +3825,11 @@
         "Urošev brat"
       ],
       "zanimljivost": "Dobio je nadimak Dečanski po svojoj zadužbini, manastiru Dečani.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/manastiri/slike/decani.jpg",
+        "opis": "Manastir Visoki Dečani"
+      },
       "rec": "decanski"
     },
     {
@@ -3834,6 +3869,11 @@
         "Ugarski kralj"
       ],
       "zanimljivost": "Dušan je poznat i kao Dušan Silni, jer je za njegove vladavine Srbija dospela na vrhunac moći.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/srpska-istorija/slike/dusan.jpg",
+        "opis": "Car Dušan"
+      },
       "rec": "dusan"
     },
     {
@@ -4194,6 +4234,11 @@
         "Kralj Marko"
       ],
       "zanimljivost": "Uz Lazara su se borili Vuk Branković i bosanski vojvoda Vlatko Vuković.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/srpska-istorija/slike/lazar.jpg",
+        "opis": "Knez Lazar"
+      },
       "rec": "lazar"
     },
     {
@@ -4324,6 +4369,11 @@
         "Žiča"
       ],
       "zanimljivost": "Manasija je bila centar prepisivačke delatnosti poznate kao Resavska škola.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/manastiri/slike/manasija.jpg",
+        "opis": "Manasija"
+      },
       "rec": "manasija"
     },
     {
@@ -4547,6 +4597,11 @@
         "Obelisci"
       ],
       "zanimljivost": "Stećci su na listi svetske kulturne baštine UNESKO.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/srpska-istorija/slike/stecak.jpg",
+        "opis": "Stećak"
+      },
       "rec": "stecci"
     },
     {
@@ -4560,6 +4615,11 @@
         "Kupovinom teritorija"
       ],
       "zanimljivost": "Ime Dubrovnik potiče od slovenske reči „dubrava“ što znači šuma.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/geografija/slike/dubrovnik.jpg",
+        "opis": "Dubrovnik"
+      },
       "rec": "dubrovnik"
     },
     {
@@ -4664,6 +4724,11 @@
         "Bajazit I"
       ],
       "zanimljivost": "Mehmed II je Carigrad proglasio za prestonicu, a ime Istanbul se ubrzo učvrstilo.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/svetska-istorija/slike/mehmed.jpg",
+        "opis": "Mehmed II Osvajač"
+      },
       "rec": "mehmed"
     },
     {
@@ -5060,6 +5125,11 @@
         "Nomokanon"
       ],
       "zanimljivost": "Pisano je ćirilicom i ukrašeno raskošnim minijaturama, a nastalo je oko 1180. godine.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/srpska-istorija/slike/miroslavljevo.jpg",
+        "opis": "Miroslavljevo jevanđelje"
+      },
       "rec": "miroslav"
     },
     {
@@ -5112,19 +5182,29 @@
         "Mona Liza"
       ],
       "zanimljivost": "Beli anđeo je jedna od najpoznatijih fresaka srpskog srednjeg veka i nastao je krajem XIII veka.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/umetnost/slike/beli-andjeo.jpg",
+        "opis": "Beli anđeo iz Mileševe"
+      },
       "rec": "andjeo"
     },
     {
       "lekcija": 24,
       "tezina": 2,
-      "pitanje": "Kako se zove freska iz Sopoćana proglašena za najlepšu fresku srednjeg veka?",
+      "pitanje": "Koja freska iz Sopoćana se smatra jednim od vrhunskih dela evropskog slikarstva XIII veka?",
       "odgovori": [
-        "Loza Nemanjića",
-        "Beli anđeo",
         "Uspenje Bogorodice",
+        "Beli anđeo",
+        "Loza Nemanjića",
         "Tajna večera"
       ],
-      "zanimljivost": "Na izložbi u Parizu 1961. bila je među najlepšim delima srednjovekovnog slikarstva.",
+      "zanimljivost": "Sopoćane je oko 1265. podigao kralj Uroš I. „Uspenje Bogorodice“ zauzima ceo zapadni zid crkve, a Beli anđeo je, za razliku od njega, u Mileševi.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/manastiri/slike/sopocani.jpg",
+        "opis": "Manastir Sopoćani"
+      },
       "rec": "sopocani"
     },
     {
@@ -5248,6 +5328,11 @@
         "Martin Luter"
       ],
       "zanimljivost": "Iako su Kinezi poznavali štampu, Gutenbergova presa je u Evropu uvela novo doba.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/svetska-istorija/slike/gutenberg.jpg",
+        "opis": "Johan Gutenberg"
+      },
       "rec": "gutenberg"
     },
     {
@@ -5477,6 +5562,11 @@
         "Kukova"
       ],
       "zanimljivost": "Magelan je poginuo na Filipinima, ali je njegova posada dokazala da je Zemlja okrugla.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/razred7-geografija/slike/magelan.jpg",
+        "opis": "Ferdinand Magelan"
+      },
       "rec": "magelan"
     },
     {
@@ -5636,7 +5726,7 @@
         "Kolumbo",
         "Magelan"
       ],
-      "zanimljivost": "Pre Kuka, do obala Australije je doplovio holandski istraživač Abel Tasman.",
+      "zanimljivost": "Pre Kuka, delove obala Australije istražili su holandski moreplovci – među njima Abel Tasman, po kome je ime dobilo ostrvo Tasmanija.",
       "rec": "kuk"
     },
     {
@@ -5873,6 +5963,11 @@
         "Don Kihot"
       ],
       "zanimljivost": "Leonardo je bio i pronalazač, vajar i pisac – ideal renesansnog umetnika.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/razred7-geografija/slike/mona-liza.jpg",
+        "opis": "Mona Liza"
+      },
       "rec": "monaliza"
     },
     {
@@ -5990,6 +6085,11 @@
         "Don Kihot"
       ],
       "zanimljivost": "Skulptura „David“ prikazuje biblijskog junaka i jedno je od najpoznatijih dela renesanse.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/umetnost/slike/david.jpg",
+        "opis": "Mikelanđelov David"
+      },
       "rec": "david"
     },
     {
@@ -6044,6 +6144,11 @@
         "Henri VIII"
       ],
       "zanimljivost": "Luter je bio sveštenik i profesor teologije na Univerzitetu u Vitenbergu.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/razred7-geografija/slike/luter.jpg",
+        "opis": "Martin Luter"
+      },
       "rec": "luter"
     },
     {
@@ -6056,8 +6161,7 @@
         "1492. godine",
         "1618. godine"
       ],
-      "zanimljivost": "Teze je okačio na vrata katedrale u Vitenbergu, u Nemačkoj.",
-      "rec": "teze",
+      "zanimljivost": "Prema predanju, teze je okačio na vrata Dvorske crkve u Vitenbergu, u Nemačkoj.",
       "medijiOdgovora": {
         "vrsta": "lenta",
         "od": 1500,
@@ -6078,7 +6182,8 @@
             "t": "Tridesetogodišnji rat"
           }
         ]
-      }
+      },
+      "rec": "teze"
     },
     {
       "lekcija": 29,
@@ -6429,6 +6534,11 @@
         "Vindzor"
       ],
       "zanimljivost": "U Versaju je Luj XIV okupljao najznačajnije umetnike svog vremena.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/svetska-istorija/slike/versaj.jpg",
+        "opis": "Dvorac Versaj"
+      },
       "rec": "versaj"
     },
     {
@@ -6470,6 +6580,11 @@
         "Osman"
       ],
       "zanimljivost": "Sulejman je u Turskoj poznat i kao Zakonodavac zbog reforme pravosudnog sistema.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/svetska-istorija/slike/sulejman.jpg",
+        "opis": "Sulejman Veličanstveni"
+      },
       "rec": "sulejman"
     },
     {
@@ -6698,6 +6813,11 @@
         "Dubrovački knez"
       ],
       "zanimljivost": "Rođen je u selu Sokolovići kod Ruda, a u Istanbul je odveden dankom u krvi.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/geografija/slike/most-visegrad.jpg",
+        "opis": "Most Mehmed-paše Sokolovića u Višegradu, njegova zadužbina"
+      },
       "rec": "sokolovic"
     },
     {
@@ -7054,7 +7174,7 @@
         "1739. godine",
         "1789. godine"
       ],
-      "zanimljivost": "Ovim mirom Austrija je dobila Banat, Srem i severnu Srbiju do Zapadne Morave.",
+      "zanimljivost": "Ovim mirom Austrija je dobila Banat, severnu Srbiju sa Beogradom i Malu Vlašku. Srem je uglavnom već bio austrijski od Karlovačkog mira 1699.",
       "rec": "pozarevac"
     },
     {
@@ -7320,14 +7440,14 @@
     {
       "lekcija": 23,
       "tezina": 2,
-      "pitanje": "Kako se zvao zlatni novac u srpskoj državi za vreme Dušana?",
+      "pitanje": "Kako se zvala novčana jedinica u srednjovekovnoj Srbiji vredna 12 srebrnih dinara?",
       "odgovori": [
         "Perper",
         "Dinar",
         "Dukat",
         "Florin"
       ],
-      "zanimljivost": "Dušanovi perperi kovani su u zlatu po ugledu na vizantijski hiperpiron.",
+      "zanimljivost": "Perper je ime dobio po vizantijskom zlatniku hiperpironu. U Srbiji se kovao srebrni dinar, a perper je uglavnom služio za računanje – u njemu su, na primer, izražene kazne u Dušanovom zakoniku.",
       "rec": "perper"
     },
     {
@@ -7367,6 +7487,11 @@
         "Vuk Branković"
       ],
       "zanimljivost": "Ravanica je zadužbina kneza Lazara, a njena crkva je primer moravske arhitekture.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/manastiri/slike/ravanica.jpg",
+        "opis": "Manastir Ravanica"
+      },
       "rec": "ravanica"
     },
     {
