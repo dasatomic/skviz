@@ -200,6 +200,11 @@
         "Herodot"
       ],
       "zanimljivost": "Eratosten je oko 240. godine pre nove ere izračunao obim Zemlje sa greškom od svega nekoliko procenata.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/eratosten.png",
+        "opis": "Eratosten (stara gravira)"
+      },
       "rec": "eratosten"
     },
     {
@@ -384,6 +389,11 @@
         "Proučavanje stena, minerala i postanka planina na Zemlji"
       ],
       "zanimljivost": "Grčki istoričar Herodot opisivao je zemlje koje je obišao – i Egipat, i obale Crnog mora.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/herodot.jpg",
+        "opis": "Herodot (rimska bista)"
+      },
       "rec": "opis"
     },
     {
@@ -446,6 +456,11 @@
         "Laki, Žuća i Šarko"
       ],
       "zanimljivost": "Lajka je 1957. bila prvo živo biće u orbiti, ali se nije vratila. Belka i Strelka su 1960. provele dan u svemiru i vratile se žive – jedno od Strelkinih štenaca kasnije je poklonjeno deci američkog predsednika Kenedija!",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/razred5-biologija/slike/belka-strelka.jpg",
+        "opis": "Belka, danas u muzeju u Moskvi"
+      },
       "rec": "pas"
     },
     {
@@ -459,6 +474,11 @@
         "Tri dana i tri noći"
       ],
       "zanimljivost": "Za to vreme je jednom obleteo Zemlju u kapsuli „Vostok 1“. Gagarin nije sleteo u kapsuli – na visini od oko 7 km katapultirao se i spustio padobranom.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/vostok.jpg",
+        "opis": "Lansiranje rakete sa „Vostokom 1“, 12. aprila 1961."
+      },
       "rec": "gagarin"
     },
     {
@@ -671,6 +691,10 @@
         "Pluton"
       ],
       "zanimljivost": "Pluton je od 2006. patuljasta planeta. Na Neptunu jedna godina traje oko 165 Zemljinih godina.",
+      "medijiOdgovora": {
+        "vrsta": "planeta",
+        "ime": "neptun"
+      },
       "rec": "neptun"
     },
     {
@@ -761,6 +785,10 @@
         "Uran"
       ],
       "zanimljivost": "Crvenu boju daju joj gvozdeni oksidi – „rđa“ u prašini.",
+      "medijiOdgovora": {
+        "vrsta": "planeta",
+        "ime": "mars"
+      },
       "rec": "mars"
     },
     {
@@ -1517,6 +1545,11 @@
         "Evropa"
       ],
       "zanimljivost": "Led na Antarktiku je na nekim mestima debeo i preko 4 km.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/razred7-geografija/slike/antarktik-unutrasnjost.jpg",
+        "opis": "Unutrašnjost Antarktika – led dokle pogled seže"
+      },
       "rec": "antarktik"
     },
     {
@@ -1703,6 +1736,13 @@
       ],
       "tezina": 2,
       "zanimljivost": "Kada je u Kalinjingradu na zapadu podne, na Kamčatki na istoku je već 10 uveče.",
+      "medijiOdgovora": {
+        "vrsta": "mapa",
+        "oblast": "svet",
+        "istakni": [
+          "RUS"
+        ]
+      },
       "rec": "zona",
       "lekcija": 7
     },
@@ -1799,7 +1839,7 @@
         "Niš je na većoj nadmorskoj visini, pa ranije vidi Sunce",
         "Nije tačno – Sunce svuda u Srbiji izlazi u isto vreme"
       ],
-      "zanimljivost": "Razlika u izlasku Sunca između krajnjeg istoka i zapada Srbije iznosi i do petnaestak minuta.",
+      "zanimljivost": "Razlika u izlasku Sunca između krajnjeg istoka i krajnjeg zapada Srbije iznosi oko 17 minuta.",
       "rec": "niš"
     },
     {
@@ -1995,6 +2035,11 @@
         "Dan na ekvatoru, koji je uvek dug tačno 12 sati"
       ],
       "zanimljivost": "Na Severnom polu polarni dan traje oko šest meseci.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/razred7-geografija/slike/ponocno-sunce.jpg",
+        "opis": "Ponoćno sunce na severu Norveške"
+      },
       "rec": "polarni"
     },
     {
@@ -2770,6 +2815,11 @@
         "Podzemna voda iz banje"
       ],
       "zanimljivost": "Temperatura lave je oko 700–1.200 °C.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/lava.jpg",
+        "opis": "Lava izbija iz vulkana na Islandu"
+      },
       "rec": "lava"
     },
     {
@@ -4235,14 +4285,6 @@
       "lekcija": 18,
       "tezina": 3,
       "pitanje": "Koja morska struja greje zapadnu i severnu Evropu?",
-      "odgovori": [
-        "Golfska struja",
-        "Labradorska",
-        "Humboltova",
-        "Kanarska"
-      ],
-      "zanimljivost": "Zahvaljujući Golfskoj struji luke u severnoj Norveškoj zimi ne zamrzavaju.",
-      "rec": "golfska",
       "mediji": {
         "vrsta": "mapa",
         "oblast": "evropa",
@@ -4251,7 +4293,20 @@
           "GBR",
           "IRL"
         ]
-      }
+      },
+      "odgovori": [
+        "Golfska struja",
+        "Labradorska",
+        "Humboltova",
+        "Kanarska"
+      ],
+      "zanimljivost": "Zahvaljujući Golfskoj struji luke u severnoj Norveškoj zimi ne zamrzavaju.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/geografija/slike/golfska-struja.jpg",
+        "opis": "Golfska struja na satelitskom snimku temperature mora (crveno – toplo)"
+      },
+      "rec": "golfska"
     },
     {
       "lekcija": 18,
@@ -4514,7 +4569,7 @@
         "Energija iz nafte, koje ima toliko da nikada neće moći da se potroši",
         "Energija iz prirodnog gasa koji se stalno obnavlja ispod površine zemlje"
       ],
-      "zanimljivost": "Vetroparkovi u Banatu danas proizvode značajan deo struje u Srbiji.",
+      "zanimljivost": "Vetroparkovi u Banatu proizvode sve veći deo struje u Srbiji, a najviše obnovljive energije kod nas i dalje daju hidroelektrane, poput Đerdapa.",
       "rec": "vetar"
     },
     {
@@ -4689,6 +4744,11 @@
         "Reka"
       ],
       "zanimljivost": "Bokokotorski zaliv u Crnoj Gori često se naziva najjužnijim fjordom Evrope, iako to nije pravi fjord.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/geografija/slike/boka.jpg",
+        "opis": "Bokokotorski zaliv"
+      },
       "rec": "zaliv"
     },
     {
@@ -5402,6 +5462,11 @@
         "Zambezi"
       ],
       "zanimljivost": "Amazon je reka sa najviše vode – nosi oko petinu sve rečne vode koja se uliva u mora.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/geografija/slike/nil.jpg",
+        "opis": "Nil"
+      },
       "rec": "nil"
     },
     {
@@ -5454,6 +5519,11 @@
         "Timok"
       ],
       "zanimljivost": "„Na Drini ćuprija“ Ive Andrića govori o mostu u Višegradu.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/geografija/slike/most-visegrad.jpg",
+        "opis": "Most Mehmed-paše Sokolovića na Drini u Višegradu"
+      },
       "rec": "drina"
     },
     {
@@ -5480,6 +5550,11 @@
         "Sneg na vrhu planine"
       ],
       "zanimljivost": "Lednici su za vreme ledenih doba prekrivali veliki deo Evrope. Tragove njihovog rada vidimo i na Durmitoru.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/razred7-geografija/slike/perito-moreno.jpg",
+        "opis": "Lednik Perito Moreno u Argentini"
+      },
       "rec": "lednik"
     },
     {
@@ -5493,6 +5568,11 @@
         "Mesto gde podzemna voda izbija na površinu"
       ],
       "zanimljivost": "Najdublje jezero na svetu je Bajkal u Rusiji – dubok preko 1.600 m.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/razred7-geografija/slike/bajkal.jpg",
+        "opis": "Bajkal iz svemira"
+      },
       "rec": "jezero"
     },
     {
@@ -6013,6 +6093,11 @@
         "Hladna ravnica bez drveća sa trajno smrznutim tlom ispod"
       ],
       "zanimljivost": "U stepama Evroazije nekada su lutala stada divljih konja i antilopa sajgi.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/razred7-geografija/slike/stepa.jpg",
+        "opis": "Stepa u Kazahstanu"
+      },
       "rec": "stepa"
     },
     {
@@ -6153,6 +6238,11 @@
         "Sredozemna, sa blagim i kišnim zimama"
       ],
       "zanimljivost": "U tundri žive irvasi, polarne lisice i snežne sove.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/razred7-geografija/slike/irvasi.jpg",
+        "opis": "Irvas (severni jelen)"
+      },
       "rec": "tundra"
     },
     {
