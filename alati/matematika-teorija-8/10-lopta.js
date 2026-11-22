@@ -339,7 +339,7 @@ module.exports = ({ L, Q, U, S, G, proveri, prostor, elipsa3, kocka, valjak, kup
 
   Q(2, 'Lopta ima poluprečnik $3$ cm. Kolika joj je zapremina?',
     ['$36\\pi$ cm³', '$27\\pi$ cm³', '$12\\pi$ cm³', '$108\\pi$ cm³'],
-    'Zapremina je 4/3 · r³ · π = 4/3 · 27 · π = 36π cm³.', 'zapremina',
+    'Zapremina je $V = {4|3} · r³ · π = {4|3} · 27 · π = 36π$ cm³.', 'zapremina',
     { mediji: sfera(3, [{ d: 'OA', b: 1, debljina: 3, o: '3 cm' }], { T3: { A: pt(3, 0) }, imena: ['A'] }) });
 
   Q(2, 'Ako se poluprečnik lopte udvostruči, koliko puta se poveća njena površina?',
@@ -354,12 +354,12 @@ module.exports = ({ L, Q, U, S, G, proveri, prostor, elipsa3, kocka, valjak, kup
 
   Q(3, 'Za farbanje lopte treba pokriti $100\\pi$ cm². Koliki je poluprečnik lopte?',
     ['5 cm', '10 cm', '25 cm', '50 cm'],
-    'Iz 4r²π = 100π dobijamo r² = 25, pa je r = 5 cm.', 'površina',
+    'Iz $4r²π = 100π$ dobijamo $r² = 25$, pa je $r = 5$ cm.', 'površina',
     { mediji: sfera(5) });
 
   Q(3, 'Zapremina lopte je $288\\pi$ cm³. Koliki joj je poluprečnik?',
     ['6 cm', '12 cm', '8 cm', '4 cm'],
-    'Iz 4/3 · r³ · π = 288π dobijamo r³ = 216, pa je r = 6 cm.', 'zapremina',
+    'Iz ${4|3} · r³ · π = 288π$ dobijamo $r³ = 216$, pa je $r = 6$ cm.', 'zapremina',
     { mediji: sfera(6) });
 
   Q(1, 'Velik krug lopte ima površinu $25\\pi$ cm². Kolika je površina lopte?',

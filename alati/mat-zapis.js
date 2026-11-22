@@ -111,7 +111,7 @@ function umotajDeo(s) {
     const t = T[k];
     // minus tik uz broj na početku izraza („−2,1 < −2“) pripada formuli, ne ostaje ispred $
     const predznak = t.tip === 'op' && /^[−-]$/.test(t.t) && k + 1 < T.length && T[k + 1].tip !== 'ws' &&
-      (k === 0 || T[k - 1].tip === 'ws' || T[k - 1].tip === 'tekst');
+      (k === 0 || T[k - 1].tip === 'ws' || T[k - 1].tip === 'tekst' || T[k - 1].tip === 'otv');
     if (!predznak && (t.tip === 'ws' || t.tip === 'tekst' || t.tip === 'op' || t.tip === 'zat')) { k++; continue; }
     const info = { ops: [] };
     const j = izraz(T, k, info);

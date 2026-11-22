@@ -770,7 +770,7 @@ module.exports = ({ L, Q, U, S, G, proveri, telo, kocke, kvadar, kocka, prizma, 
 
   Q(2, 'Akvarijum oblika kvadra ima dno 40 cm × 20 cm i visinu 30 cm. Koliko litara vode staje u njega do vrha?',
     ['24 l', '240 l', '2,4 l', '12 l'],
-    'Zapremina je 24 000 cm³, a 1 l je 1 dm³ = 1000 cm³.',
+    'Zapremina je 24 000 cm³, a 1 l je $1 dm³ = 1000 cm³$.',
     'akvarijum', { mediji: kvadar(40, 20, 30) });
 
   Q(3, 'Isti akvarijum (dno 40 cm × 20 cm, visina 30 cm) napunjen je do tri četvrtine visine. Koliko litara vode ima?',
