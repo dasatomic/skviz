@@ -332,6 +332,11 @@
         "Zambezi"
       ],
       "zanimljivost": "Nil je dug oko 6 650 km, a njegov sliv obuhvata 11 država. Bez njegovih poplava, koje su nanosile plodno blato, stari Egipat ne bi ni postojao usred pustinje.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/nil.jpg",
+        "opis": "Beli Nil u Ugandi, blizu izvora iz Viktorijinog jezera"
+      },
       "rec": "afrika"
     },
     {
@@ -351,6 +356,11 @@
         "Rajna"
       ],
       "zanimljivost": "Volga je duga oko 3 530 km i cela teče kroz Rusiju. Uliva se u Kaspijsko jezero, koje je zapravo najveće jezero na svetu.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/volga.jpg",
+        "opis": "Volga"
+      },
       "rec": "volga"
     },
     {
@@ -1707,6 +1717,13 @@
     {
       "tezina": 3,
       "pitanje": "Koja reka je označena na mapi?",
+      "mediji": {
+        "vrsta": "mapa",
+        "oblast": "evropa",
+        "reke": [
+          "Po"
+        ]
+      },
       "odgovori": [
         "Po",
         "Tibar",
@@ -1714,12 +1731,10 @@
         "Rona"
       ],
       "zanimljivost": "Po je najduža reka Italije (oko 650 km). Teče kroz Padsku niziju, najplodniji deo Italije, i uliva se u Jadransko more.",
-      "mediji": {
-        "vrsta": "mapa",
-        "oblast": "evropa",
-        "reke": [
-          "Po"
-        ]
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/po.jpg",
+        "opis": "Po u Torinu"
       },
       "rec": "nizija"
     },
@@ -1822,13 +1837,6 @@
     {
       "tezina": 1,
       "pitanje": "Koji grad je označen na mapi?",
-      "odgovori": [
-        "Beograd",
-        "Novi Sad",
-        "Smederevo",
-        "Pančevo"
-      ],
-      "zanimljivost": "Beograd je jedan od najstarijih gradova u Evropi – na njegovom mestu ljudi žive preko 7 000 godina (Vinčanska kultura).",
       "mediji": {
         "vrsta": "mapa",
         "oblast": "srbija",
@@ -1838,6 +1846,18 @@
             "lon": 20.46
           }
         ]
+      },
+      "odgovori": [
+        "Beograd",
+        "Novi Sad",
+        "Smederevo",
+        "Pančevo"
+      ],
+      "zanimljivost": "Beograd je jedan od najstarijih gradova u Evropi – na njegovom mestu ljudi žive preko 7 000 godina (Vinčanska kultura).",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/beogradska-tvrdjava.jpg",
+        "opis": "Beogradska tvrđava iznad ušća Save u Dunav"
       },
       "rec": "beograd"
     },
@@ -1893,13 +1913,6 @@
     {
       "tezina": 3,
       "pitanje": "Koji grad je označen na mapi?",
-      "odgovori": [
-        "Vranje",
-        "Leskovac",
-        "Pirot",
-        "Niš"
-      ],
-      "zanimljivost": "Vranje je zavičaj Borisava Stankovića i njegovih junaka iz „Nečiste krvi“ i „Koštane“. U blizini je Vranjska banja, jedna od najtoplijih u Evropi.",
       "mediji": {
         "vrsta": "mapa",
         "oblast": "srbija",
@@ -1910,18 +1923,23 @@
           }
         ]
       },
+      "odgovori": [
+        "Vranje",
+        "Leskovac",
+        "Pirot",
+        "Niš"
+      ],
+      "zanimljivost": "Vranje je zavičaj Borisava Stankovića i njegovih junaka iz „Nečiste krvi“ i „Koštane“. U blizini je Vranjska banja, jedna od najtoplijih u Evropi.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/beli-most-vranje.jpg",
+        "opis": "Beli most u Vranju – „most ljubavi“ iz legende"
+      },
       "rec": "vranje"
     },
     {
       "tezina": 3,
       "pitanje": "Koji grad je označen na mapi?",
-      "odgovori": [
-        "Sombor",
-        "Subotica",
-        "Bačka Palanka",
-        "Apatin"
-      ],
-      "zanimljivost": "Sombor je „grad zelenila“, poznat po alejama i salašima. U Somboru je dugo živeo pesnik Laza Kostić, a tu je rođen i košarkaš Nikola Jokić.",
       "mediji": {
         "vrsta": "mapa",
         "oblast": "srbija",
@@ -1932,18 +1950,23 @@
           }
         ]
       },
+      "odgovori": [
+        "Sombor",
+        "Subotica",
+        "Bačka Palanka",
+        "Apatin"
+      ],
+      "zanimljivost": "Sombor je „grad zelenila“, poznat po alejama i salašima. U Somboru je dugo živeo pesnik Laza Kostić, a tu je rođen i košarkaš Nikola Jokić.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/sombor-zupanija.jpg",
+        "opis": "Zgrada Županije u Somboru"
+      },
       "rec": "sombor"
     },
     {
       "tezina": 3,
       "pitanje": "Koji grad je označen na mapi?",
-      "odgovori": [
-        "Valjevo",
-        "Šabac",
-        "Loznica",
-        "Užice"
-      ],
-      "zanimljivost": "Pored Valjeva je Brankovina, gde je sahranjena Desanka Maksimović. U gradu je i Muselimov konak, u kome su 1804. bili zatočeni knezovi Aleksa Nenadović i Ilija Birčanin pre nego što su ih dahije pogubile – to je bio povod Prvog ustanka.",
       "mediji": {
         "vrsta": "mapa",
         "oblast": "srbija",
@@ -1953,6 +1976,18 @@
             "lon": 19.89
           }
         ]
+      },
+      "odgovori": [
+        "Valjevo",
+        "Šabac",
+        "Loznica",
+        "Užice"
+      ],
+      "zanimljivost": "Pored Valjeva je Brankovina, gde je sahranjena Desanka Maksimović. U gradu je i Muselimov konak, u kome su 1804. bili zatočeni knezovi Aleksa Nenadović i Ilija Birčanin pre nego što su ih dahije pogubile – to je bio povod Prvog ustanka.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/muselimov-konak.jpg",
+        "opis": "Muselimov konak u Valjevu"
       },
       "rec": "valjevo"
     },
@@ -2331,13 +2366,13 @@
         "Atakamski rov",
         "Japanski rov"
       ],
-      "zanimljivost": "Najdublja tačka, Čelendžer, duboka je oko 11 km. Do nje su ljudi stigli samo nekoliko puta – prvi put 1960, a 2012. se sam spustio i reditelj Džejms Kameron.",
-      "rec": "čelendžer",
+      "zanimljivost": "Najdublja tačka, Čelendžer, duboka je oko 11 km. Prvi su do nje stigli Žak Pikar i Don Volš 1960, a 2012. se sam spustio reditelj Džejms Kameron. Do danas je tamo bilo tek nekoliko desetina ljudi – manje nego na Mesecu i u svemiru zajedno.",
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/batiskaf-trst.jpg",
         "opis": "Batiskaf „Trst“ – 1960. se spustio na dno Marijanskog rova"
-      }
+      },
+      "rec": "čelendžer"
     },
     {
       "tezina": 2,
@@ -2640,13 +2675,13 @@
         "Potpeć",
         "Rajkova pećina"
       ],
-      "zanimljivost": "Resavska pećina je stara oko 45 miliona godina, a otkrivena je tek 1962. Temperatura u njoj je cele godine oko 7 °C.",
-      "rec": "pećina",
+      "zanimljivost": "Resavska pećina je stara desetinama miliona godina, a čovek ju je istražio tek 1962. Temperatura u njoj je cele godine oko 7 °C, a staze za posetioce duge su oko 800 m.",
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/resavska-pecina.jpg",
         "opis": "Resavska pećina"
-      }
+      },
+      "rec": "pećina"
     },
     {
       "tezina": 3,
@@ -2674,7 +2709,12 @@
         "Tisa",
         "Begej"
       ],
-      "zanimljivost": "Novi Sad leži na desnoj obali Dunava (gledano niz tok), a Petrovaradin, sa čuvenom tvrđavom, na levoj.",
+      "zanimljivost": "Novi Sad leži na levoj obali Dunava (gledano niz tok), a Petrovaradin, sa čuvenom tvrđavom, na desnoj – na obroncima Fruške gore.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/petrovaradin.jpg",
+        "opis": "Petrovaradinska tvrđava, preko Dunava od Novog Sada"
+      },
       "rec": "dunav"
     },
     {
@@ -2686,7 +2726,12 @@
         "Midžor (Stara planina)",
         "Zlatibor"
       ],
-      "zanimljivost": "Vršačke planine su niske gromadne planine, nastale kao ostrva u Panonskom moru – kao i Fruška gora.",
+      "zanimljivost": "Najviši vrh Vršačkih planina, a time i Vojvodine, je Gudurički vrh (641 m). Vršačke planine i Fruška gora bile su ostrva u Panonskom moru, koje je pokrivalo današnju ravnicu.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "slike/vrsacka-kula.jpg",
+        "opis": "Vršačka kula na Vršačkom bregu"
+      },
       "rec": "vršac"
     }
   ]
