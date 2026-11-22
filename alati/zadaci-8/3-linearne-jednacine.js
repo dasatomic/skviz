@@ -348,11 +348,11 @@ module.exports = ({ L, Z, G, K, proveri }) => {
   // ════════════════ 3.14 Primena linearnih nejednačina ════════════════
   L('Primena linearnih nejednačina');
 
-  Z(2, 'Za prevoz više od $120$ učenika koriste se autobusi koji primaju po $45$ učenika. Koliko najmanje autobusa treba?',
+  Z(2, 'Na ekskurziju ide $130$ učenika, a autobusi primaju po $45$ učenika. Koliko najmanje autobusa treba?',
     ['3', '2', '4', '5'],
-    [K('Tražimo najmanji ceo broj $n$ takav da je $45n > 120$.'),
-     K('$n > {120|45} = 2,67$, pa je najmanji ceo broj $3$.'),
-     K('Provera: $3 · 45 = 135 ≥ 120$ ✓; $2$ autobusa ($90$) nije dovoljno.')]);
+    [K('Tražimo najmanji ceo broj $n$ takav da je $45n ≥ 130$.'),
+     K('$n ≥ {130|45} ≈ 2,89$, pa je najmanji ceo broj $3$.'),
+     K('Provera: $3 · 45 = 135 ≥ 130$ ✓; $2$ autobusa ($90$ mesta) nisu dovoljna.')]);
 
   Z(2, 'Milan ima $500$ dinara. Sveska košta $60$ dinara, a olovka $35$. Ako kupi jednu svesku, koliko najviše olovaka može da kupi?',
     ['12', '13', '14', '10'],
