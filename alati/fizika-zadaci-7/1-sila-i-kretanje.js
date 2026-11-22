@@ -18,7 +18,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik,
       [K('Promena brzine: $Δv = v − v_{0} = 25 m/s − 10 m/s = 15 m/s$.', ['dv']),
        K('Ubrzanje je promena brzine u jedinici vremena: $a = {Δv|Δt} = {15 m/s|5 s} = 3 m/s^{2}$.', ['dt', 'dv']),
        K('To znači da brzina svake sekunde poraste za $3 m/s$: $10 → 13 → 16 → 19 → 22 → 25$ m/s.', ['tacke'])],
-      S('kretanje', { tela: [{ e: '🚗', v: 10, a: 3 }], duzina: 90, podeok: 10, vektor: true, sat: true }),
+      S('kretanje', { tela: [{ e: '🚗', v: 10, a: 3 }], duzina: 90, podeok: 10, vektor: true, sat: true, trajanje: 5 }),
       { crtez: G([g.e, g.linija([[0, 10], [5, 25]]), nagib(g, [0, 10], [5, 25], { kdt: 2, kdv: 1 }), [1, 2, 3, 4, 5].map((t) => g.tacka(t, 10 + 3 * t, { k: 3, id: 'tacke' }))], { velicina: 300 }) });
   }
   proveri(1200 / 240, 5);
@@ -27,7 +27,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik,
     [K('Pretvaramo u osnovne jedinice: $s = 1,2 km = 1 200 m$, $t = 4 min = 240 s$.'),
      K('Srednja brzina: $v_{sr} = {s|t} = {1 200 m|240 s} = 5 m/s$.'),
      K('Za proveru: $5 m/s = 5 · 3,6 km/h = 18 km/h$ – uobičajena brzina bicikla (zato je „$18 m/s$“ zamka: to su km/h).')],
-    S('kretanje', { tela: [{ e: '🚴', v: 5 }], duzina: 1200, podeok: 200, jedinica: 'm', tempo: 60, trag: 30 }));
+    S('kretanje', { tela: [{ e: '🚴', v: 5 }], duzina: 1200, podeok: 200, jedinica: 'm', tempo: 60, trag: 40 }));
 
   {
     proveri((2 * 90 + 60) / 3, 80);
@@ -76,7 +76,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik,
       [K('$72 km/h = {72|3,6} m/s = 20 m/s$.'),
        K('$a = {20 m/s|2 s} = 10 m/s^{2}$.'),
        K('Gepard ubrzava otprilike kao telo koje slobodno pada – ovakvo ubrzanje većina običnih automobila ne postiže.')],
-      S('kretanje', { tela: [{ e: '🐆', v: 0, a: 10, okreni: true }], duzina: 60, podeok: 10, vektor: true, sat: true }));
+      S('kretanje', { tela: [{ e: '🐆', v: 0, a: 10, okreni: true }], duzina: 20, podeok: 2, vektor: true, sat: true }));
   }
 
   {
@@ -270,14 +270,14 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik,
     ['$12 m/s$', '$3 m/s$', '$36 m/s$', '$8 m/s$'],
     [K('Iz mirovanja: $v = a · t$.'),
      K('$v = 2 m/s^{2} · 6 s = 12 m/s$.')],
-    S('kretanje', { tela: [{ e: '🛵', v: 0, a: 2 }], duzina: 40, podeok: 5, vektor: true, sat: true }));
+    S('kretanje', { tela: [{ e: '🛵', v: 0, a: 2 }], duzina: 40, podeok: 5, vektor: true, sat: true, trajanje: 6 }));
 
   proveri(4 + 0.5 * 8, 8);
   Z(1, 'Biciklista vozi brzinom $4 m/s$, a zatim $8 s$ ubrzava ubrzanjem $0,5 m/s^{2}$. Kolika je njegova brzina na kraju?',
     ['$8 m/s$', '$4 m/s$', '$4,5 m/s$', '$12 m/s$'],
     [K('$v = v_{0} + a · t$.'),
      K('$v = 4 m/s + 0,5 m/s^{2} · 8 s = 4 m/s + 4 m/s = 8 m/s$.')],
-    S('kretanje', { tela: [{ e: '🚴', v: 4, a: 0.5 }], duzina: 50, podeok: 10, vektor: true, sat: true }));
+    S('kretanje', { tela: [{ e: '🚴', v: 4, a: 0.5 }], duzina: 50, podeok: 10, vektor: true, sat: true, trajanje: 8 }));
 
   proveri(20 / 4, 5);
   Z(1, 'Automobil vozi brzinom $20 m/s$ i počne da koči usporenjem $4 m/s^{2}$. Za koje vreme će se zaustaviti?',
@@ -306,7 +306,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik,
     ['$1,5 m/s^{2}$', '$5,4 m/s^{2}$', '$0,15 m/s^{2}$', '$15 m/s^{2}$'],
     [K('$54 km/h = {54|3,6} m/s = 15 m/s$.'),
      K('$a = {v|t} = {15 m/s|10 s} = 1,5 m/s^{2}$.')],
-    S('kretanje', { tela: [{ e: '🚎', v: 0, a: 1.5 }], duzina: 80, podeok: 10, vektor: true, sat: true }));
+    S('kretanje', { tela: [{ e: '🚎', v: 0, a: 1.5 }], duzina: 80, podeok: 10, vektor: true, sat: true, trajanje: 10 }));
 
   proveri((4.2 - 0.6) / 1.2, 3);
   Z(2, 'Kuglica se kotrlja niz žleb: početna brzina joj je $0,6 m/s$, a ubrzanje $1,2 m/s^{2}$. Posle koliko sekundi će njena brzina biti $4,2 m/s$?',
@@ -330,7 +330,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik,
     ['$36 km/h$', '$10 km/h$', '$54 km/h$', '$18 km/h$'],
     [K('$v = v_{0} − a · t = 25 m/s − 0,5 m/s^{2} · 30 s = 25 m/s − 15 m/s = 10 m/s$.'),
      K('U km/h množimo sa $3,6$: $10 m/s = 36 km/h$.')],
-    S('kretanje', { tela: [{ e: '🚆', v: 25, a: -0.5 }], duzina: 600, podeok: 100, vektor: true, tempo: 10 }));
+    S('kretanje', { tela: [{ e: '🚆', v: 25, a: -0.5 }], duzina: 600, podeok: 100, vektor: true, tempo: 10, trajanje: 30 }));
 
   proveri((16 - 7) / (5 - 2), 3); proveri(7 - 3 * 2, 1);
   Z(3, 'Telo se kreće ravnomerno ubrzano. U trenutku $2 s$ ima brzinu $7 m/s$, a u trenutku $5 s$ brzinu $16 m/s$. Kolika je bila njegova početna brzina (u trenutku $0 s$)?',
@@ -451,7 +451,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik,
     ['$25 m$', '$10 m$', '$50 m$', '$5 m$'],
     [K('Iz mirovanja: $s = {a · t^{2}|2}$.'),
      K('$s = {2 m/s^{2} · (5 s)^{2}|2} = {2 · 25|2} m = 25 m$.'),
-     K('Tragovi na svake sekunde pokazuju da se rastojanja povećavaju: $1 m$, $3 m$, $5 m$, $7 m$, $9 m$ – zbir je $25 m$.', [], S('kretanje', { tela: [{ e: '🛴', v: 0, a: 2 }], duzina: 30, podeok: 5, sat: true, trag: 1, tragNatpis: true }))],
+     K('Tragovi na svake sekunde pokazuju da se rastojanja povećavaju: $1 m$, $3 m$, $5 m$, $7 m$, $9 m$ – zbir je $25 m$.', [], S('kretanje', { tela: [{ e: '🛴', v: 0, a: 2 }], duzina: 30, podeok: 5, sat: true, trag: 1, tragNatpis: true, trajanje: 5 }))],
     S('kretanje', { tela: [{ e: '🛴', v: 0, a: 2 }], duzina: 30, podeok: 5, natpisi: 99, vektor: true, sat: false }));
 
   proveri(((10 + 20) / 2) * 4, 60);
@@ -479,7 +479,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik,
     [K('Iz $s = {a · t^{2}|2}$ sledi $a = {2s|t^{2}}$.'),
      K('$a = {2 · 18 m|(3 s)^{2}} = {36|9} m/s^{2} = 4 m/s^{2}$.'),
      K('$6 m/s^{2}$ je zamka: to je $18 : 3$ (srednja brzina u m/s, ne ubrzanje).')],
-    S('kretanje', { tela: [{ e: '🛷', v: 0, a: 4 }], duzina: 20, podeok: 2, vektor: true }));
+    S('kretanje', { tela: [{ e: '🛷', v: 0, a: 4 }], duzina: 20, podeok: 2, vektor: true, trajanje: 3 }));
 
   {
     proveri((2 * 9) / 2 - (2 * 4) / 2, 5);
@@ -529,5 +529,5 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik,
     [K('Veza brzine i puta: $v^{2} = v_{0}^{2} + 2 · a · s$, a $v_{0} = 0$.'),
      K('$v^{2} = 2 · 3 m/s^{2} · 24 m = 144 m^{2}/s^{2}$.'),
      K('$v = √{144} m/s = 12 m/s$ (zamka: $144$ je $v^{2}$, ne $v$).')],
-    S('kretanje', { tela: [{ e: '⛷️', v: 0, a: 3 }], duzina: 25, podeok: 5, vektor: true }));
+    S('kretanje', { tela: [{ e: '⛷️', v: 0, a: 3 }], duzina: 24, podeok: 4, vektor: true, sat: false }));
 };

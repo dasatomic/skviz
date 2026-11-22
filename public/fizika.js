@@ -258,6 +258,7 @@
         // tačan trenutak kad telo stigne do kraja staze (ili stane) – sat se tu zaustavi (100 m za 20 s → „t = 20 s“, ne 20,3 s)
         const van = (k, t) => { const x = k.x(t); return x < -1e-6 || x > L + 1e-6; };
         for (const k of kin) {
+          if (k.x(0) === k.x(40)) continue; // telo koje stoji (ormar koji se ne pomera) ne produžava animaciju
           let t = 0;
           while (t < 40 && t < k.tz && !van(k, t)) t += 0.02;
           if (t > 0 && t < k.tz && van(k, t)) {

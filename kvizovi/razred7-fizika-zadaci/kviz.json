@@ -118,7 +118,8 @@
     "duzina": 90,
     "podeok": 10,
     "vektor": true,
-    "sat": true
+    "sat": true,
+    "trajanje": 5
    },
    "resenje": [
     {
@@ -465,7 +466,7 @@
     "podeok": 200,
     "jedinica": "m",
     "tempo": 60,
-    "trag": 30
+    "trag": 40
    },
    "resenje": [
     {
@@ -989,8 +990,8 @@
       "okreni": true
      }
     ],
-    "duzina": 60,
-    "podeok": 10,
+    "duzina": 20,
+    "podeok": 2,
     "vektor": true,
     "sat": true
    },
@@ -3446,7 +3447,8 @@
     "duzina": 40,
     "podeok": 5,
     "vektor": true,
-    "sat": true
+    "sat": true,
+    "trajanje": 6
    },
    "resenje": [
     {
@@ -3480,7 +3482,8 @@
     "duzina": 50,
     "podeok": 10,
     "vektor": true,
-    "sat": true
+    "sat": true,
+    "trajanje": 8
    },
    "resenje": [
     {
@@ -3638,7 +3641,8 @@
     "duzina": 80,
     "podeok": 10,
     "vektor": true,
-    "sat": true
+    "sat": true,
+    "trajanje": 10
    },
    "resenje": [
     {
@@ -4045,7 +4049,8 @@
     "duzina": 600,
     "podeok": 100,
     "vektor": true,
-    "tempo": 10
+    "tempo": 10,
+    "trajanje": 30
    },
    "resenje": [
     {
@@ -7679,7 +7684,8 @@
       "podeok": 5,
       "sat": true,
       "trag": 1,
-      "tragNatpis": true
+      "tragNatpis": true,
+      "trajanje": 5
      }
     }
    ]
@@ -8040,7 +8046,8 @@
     ],
     "duzina": 20,
     "podeok": 2,
-    "vektor": true
+    "vektor": true,
+    "trajanje": 3
    },
    "resenje": [
     {
@@ -8510,9 +8517,10 @@
       "a": 3
      }
     ],
-    "duzina": 25,
-    "podeok": 5,
-    "vektor": true
+    "duzina": 24,
+    "podeok": 4,
+    "vektor": true,
+    "sat": false
    },
    "resenje": [
     {
