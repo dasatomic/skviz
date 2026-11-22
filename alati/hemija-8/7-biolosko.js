@@ -1,5 +1,5 @@
 // Poglavlje 7: Biološki važna organska jedinjenja (lekcije 29–34)
-module.exports = ({ L, Q, U, S, mol, at, jon, kov, met, rast, ph, ps, R, lab, epr, pri }) => {
+module.exports = ({ L, Q, U, S, mol, at, jon, kov, met, rast, ph, ps, R, lab, epr, pri, sl }) => {
   const bio = (scena, o = {}) => ({ vrsta: 'biologija', scena, ...o });
 
   // ───────────── Uloga biološki važnih jedinjenja ─────────────
@@ -67,7 +67,7 @@ module.exports = ({ L, Q, U, S, mol, at, jon, kov, met, rast, ph, ps, R, lab, ep
   Q(2, 'U čemu se nalazi disaharid laktoza?', ['U mleku i mlečnim proizvodima', 'U šećernoj repi', 'U grožđu', 'U žitaricama'], 'Neki ljudi ne mogu da je svare zbog nedostatka enzima laktaze, pa dobijaju stomačne tegobe.', 'laktoza', { m: bio('varenje') });
   Q(2, 'Koji su najznačajniji polisaharidi?', ['Skrob, celuloza i glikogen', 'Saharoza, laktoza i maltoza', 'Glukoza, fruktoza i galaktoza', 'Insulin, hemoglobin i keratin'], 'Svi su izgrađeni od mnogo ostataka glukoze.', 'skrob', { o: mol('skrob') });
   Q(2, 'Gde biljke skladište rezervu hrane u obliku skroba?', ['U krtolama, semenima i korenu', 'U listovima', 'U cvetovima', 'U kori'], 'Krompir i pirinač su bogati skrobom.', 'skrob', { m: mol('skrob') });
-  Q(2, 'Čime se dokazuje prisustvo skroba?', ['Luglovim rastvorom joda – boja postaje tamnoplava', 'Felingovim reagensom – boja postaje crvena', 'Lakmus hartijom', 'Kreč na vodom'], 'Jod se smešta u šupljine skroba i boji ga tamnoplavo.', 'skrob', { o: epr('lugol') });
+  Q(2, 'Čime se dokazuje prisustvo skroba?', ['Luglovim rastvorom joda – boja postaje tamnoplava', 'Felingovim reagensom – boja postaje crvena', 'Lakmus hartijom', 'Krečnom vodom'], 'Jod se smešta u šupljine skroba i boji ga tamnoplavo.', 'skrob', { o: epr('lugol') });
   Q(2, 'Koji polisaharid je glavni sastojak biljnih ćelijskih zidova?', ['Celuloza', 'Skrob', 'Glikogen', 'Laktoza'], 'Pamuk sadrži 80–90% celuloze. Skrob, građen od iste glukoze, ljudi lako svare.', 'celuloza', { m: mol('skrob') });
   Q(3, 'Zašto ljudi ne mogu da svare celulozu?', ['Nemamo enzime koji razlažu njene veze', 'Celuloza je gas', 'Rastvara se u vodi', 'Nema ugljenika'], 'Preživari i termiti imaju mikroorganizme koji razgrađuju celulozu. Ljudi skrob razlažu amilazom iz pljuvačke.', 'enzimi', { m: mol('skrob') });
   Q(2, 'Gde životinje i ljudi skladište polisaharid glikogen?', ['U jetri i mišićima', 'U kostima', 'U koži', 'U krvi'], 'Amilaza iz pljuvačke i pankreasa razlaže skrob na kraće šećere.', 'glikogen', { m: mol('skrob') });
@@ -106,7 +106,7 @@ module.exports = ({ L, Q, U, S, mol, at, jon, kov, met, rast, ph, ps, R, lab, ep
   Q(1, 'Koji vitamin se u koži stvara delovanjem sunčeve svetlosti?', ['Vitamin D', 'Vitamin C', 'Vitamin B₁₂', 'Vitamin E'], 'Neophodan je za upijanje kalcijuma u kostima. Kalcijum-fosfat je glavni mineral kostiju i zuba; oko 99 % kalcijuma u telu je u njima.', 'sunce', { m: mol('kalcijum-fosfat') });
   Q(2, 'Nedostatak koga vitamina izaziva rahitis kod dece?', ['Vitamina D', 'Vitamina C', 'Vitamina A', 'Vitamina K'], 'Kosti ostaju mekane i krive jer se ne ugrađuje kalcijum. Kalcijum-fosfat daje kostima čvrstoću.', 'rahitis', { m: mol('kalcijum-fosfat') });
   Q(2, 'Koji vitamin je važan za vid?', ['Vitamin A', 'Vitamin C', 'Vitamin D', 'Vitamin K'], 'Nalazi se u šargarepi (kao provitamin beta-karoten).', 'vid', { o: mol('retinol') });
-  Q(2, 'Koji vitamin je važan za zgrušavanje krvi?', ['Vitamin K', 'Vitamin C', 'Vitamin A', 'Vitamin D'], 'Retinol je oblik vitamina A; u oku se pretvara u retinal, koji učestvuje u vidu pri slabom svetlu. Vitamin K nalazi se u zelenom lisnatom povrću.', 'krv', { m: mol('retinol') });
+  Q(2, 'Koji vitamin je važan za zgrušavanje krvi?', ['Vitamin K', 'Vitamin C', 'Vitamin A', 'Vitamin D'], 'Vitamina K ima mnogo u zelenom lisnatom povrću (spanać, kelj), a deo ga stvaraju i korisne bakterije u našem debelom crevu.', 'krv', { o: sl('slike/spanac.jpg', 'Spanać – bogat vitaminom K') });
   Q(2, 'Koja namirnica je bogata vitaminom C?', ['Limun, paprika i šipak', 'Maslac', 'Jaja', 'Mleko'], 'Vitamin C se razgrađuje zagrevanjem.', 'limun', { o: ph({ supstance: ['limun'] }) });
   Q(2, 'Šta je avitaminoza?', ['Poremećaj zbog potpunog nedostatka nekog vitamina', 'Višak vitamina', 'Gojaznost', 'Alergija'], 'Višak vitamina (naročito A i D) naziva se hipervitaminoza. Askorbinska kiselina je vitamin C; ime je dobila po tome što leči skorbut.', 'avitaminoza', { m: mol('vitamin-c-lanac') });
   Q(3, 'Koliko ugljenikovih atoma ima molekul askorbinske kiseline (vitamin C)?', ['Šest', 'Dvanaest', 'Dva', 'Dvadeset'], 'C₆H₈O₆.', 'askorbinska', { o: mol('vitamin-c-lanac') });
