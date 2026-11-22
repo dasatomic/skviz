@@ -17,6 +17,12 @@ const [fajl, lekcija] = arg.filter((a, i) => !a.startsWith('--') && arg[i - 1] !
 if (!fajl) { console.error('upotreba: node alati/pregled-geo.js <kviz.json> [lekcija] [--izlaz dir]'); process.exit(1); }
 const izlaz = arg.includes('--izlaz') ? arg[arg.indexOf('--izlaz') + 1] : path.join(os.tmpdir(), 'pregled-geo');
 fs.mkdirSync(izlaz, { recursive: true });
+// font za natpis: prvi koji ImageMagick zna (Arial Unicode na macOS-u, Noto/Liberation na Linuksu)
+const FONT = (() => {
+  let spisak = '';
+  try { spisak = execFileSync('magick', ['-list', 'font'], { encoding: 'utf8' }); } catch { /* bez spiska – ostaje prvi */ }
+  return ['Arial-Unicode-MS', 'Noto-Sans-Regular', 'Liberation-Sans', 'DejaVu-Sans'].find((f) => spisak.includes('Font: ' + f + '\n')) || 'Arial-Unicode-MS';
+})();
 
 global.window = {};
 require(path.join(__dirname, '..', 'public', 'geo.js'));
@@ -72,7 +78,7 @@ for (const p of pitanja) {
   }
   const delovi = slike.filter((s) => s[1]).flatMap(([natpis, f]) => ['(', f, '+size', '-background', '#061440', '-fill', '#ffc93c', '-pointsize', '16', 'label:' + natpis, '+swap', '-gravity', 'center', '-append', ')']);
   const opis = slike.filter((s) => !s[1]).map((s) => s[0]).join('\n');
-  const args = ['-background', '#1b2a5a', '-fill', 'white', '-font', 'Arial-Unicode-MS', '-pointsize', '17', '-size', '1100x', 'caption:' + (tekst + (opis ? '\n' + opis : '')).replace(/%/g, '%%')];
+  const args = ['-background', '#1b2a5a', '-fill', 'white', '-font', FONT, '-pointsize', '17', '-size', '1100x', 'caption:' + (tekst + (opis ? '\n' + opis : '')).replace(/%/g, '%%')];
   if (delovi.length) args.push('(', ...delovi, '+append', ')', '-gravity', 'west', '-append');
   args.push(path.join(izlaz, ime + '.png'));
   try { execFileSync('magick', args); } catch (e) { console.error(ime, e.message.split('\n')[0]); }

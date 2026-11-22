@@ -216,7 +216,7 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, skok, skokovi, venn, upisi, tacki
     { medijiOdgovora: { vrsta: 'formula', tekst: '$\\varnothing = \\{\\}$' } });
   Q(2, 'Kojim slovom označavamo skup prirodnih brojeva?',
     ['$\\mathbb{N}$', '$\\mathbb{Z}$', '$\\mathbb{Q}$', '$\\mathbb{R}$'],
-    'Prirodni brojevi su brojevi za brojanje: $1,2,3,4,\\dots$ Označavamo ih sa $\\mathbb{N}$ (od engleskog „natural“).', 'prirodan',
+    'Prirodni brojevi su brojevi za brojanje: $1,2,3,4,\\dots$ Označavamo ih sa $\\mathbb{N}$ (od latinske reči naturalis – „prirodan“).', 'prirodan',
     { medijiOdgovora: { vrsta: 'formula', tekst: '$\\mathbb{N}=\\{1,2,3,4,\\dots\\}$' } });
   Q(2, 'Kojim slovom označavamo skup prirodnih brojeva zajedno sa nulom?',
     ['$\\mathbb{N}_0$', '$\\mathbb{N}$', '$\\mathbb{Z}$', '$\\varnothing$'],
