@@ -31,6 +31,8 @@ function tokeni(s) {
   };
   while (i < s.length) {
     if (probaj('ws', /^\s+/)) continue;
+    // ugao u stepenima i minutima („47°15′“, „110°05′30″“) je jedan operand
+    if (probaj('broj', /^\d+°\d+′(?:\d+″)?(?![\p{L}\d])/u)) continue;
     // broj (decimalni zarez/tačka samo ispred cifre), opciono stepen, „2x“, „3ab“ (broj pa promenljiva bez razmaka)
     if (probaj('broj', /^\d+(?:[.,]\d+)*(?:[²³])?(?:[a-zA-Z]{1,3}(?:[₀-₉²³′]*)(?![\p{L}\d]))?(?![\p{L}\d])/u)) {
       // jedinica tik iza broja („15 km/h“, „100 N“) pripada operandu
