@@ -255,10 +255,17 @@
       });
       let T = br(m.trajanje, 0);
       if (!T) {
+        // tačan trenutak kad telo stigne do kraja staze (ili stane) – sat se tu zaustavi (100 m za 20 s → „t = 20 s“, ne 20,3 s)
+        const van = (k, t) => { const x = k.x(t); return x < -1e-6 || x > L + 1e-6; };
         for (const k of kin) {
           let t = 0;
-          while (t < 40) { const x = k.x(t); if (x < -1e-6 || x > L + 1e-6 || t >= k.tz) break; t += 0.02; }
-          T = Math.max(T, Math.min(t, k.tz) + 0.3);
+          while (t < 40 && t < k.tz && !van(k, t)) t += 0.02;
+          if (t > 0 && t < k.tz && van(k, t)) {
+            let a = t - 0.02, b = t;
+            for (let i = 0; i < 30; i++) { const c = (a + b) / 2; if (van(k, c)) b = c; else a = c; }
+            t = a;
+          }
+          T = Math.max(T, Math.min(t, k.tz));
         }
         T = Math.max(T, 1);
       }
