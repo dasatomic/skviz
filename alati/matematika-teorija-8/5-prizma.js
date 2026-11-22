@@ -224,7 +224,7 @@ module.exports = ({ L, Q, U, S, G, proveri, telo, kocke, kvadar, kocka, prizma, 
   Q(3, 'Osnova kvadra je kvadrat ivice 5 cm, a telesna dijagonala je $5\\sqrt{3}$ cm. Kolika je visina kvadra?',
     ['5 cm', '$5\\sqrt{2}$ cm', '10 cm', '2,5 cm'],
     'Dijagonala osnove je $5\\sqrt{2}$ cm, a telesna dijagonala je hipotenuza trougla čija je druga kateta visina kvadra.',
-    'visina');
+    'visina', { medijiOdgovora: kocka(5, [{ d: 'AC₁', b: 1, debljina: 3 }, { d: 'AC', b: 2, isp: 1 }, { d: 'CC₁', b: 3, debljina: 3 }]) });
 
   U(2, 'Koja od ovih duži NIJE dijagonala kvadra $ABCDA_1B_1C_1D_1$?',
     ['$AB$', '$AC_1$', '$BD_1$', '$CA_1$'],
@@ -393,7 +393,7 @@ module.exports = ({ L, Q, U, S, G, proveri, telo, kocke, kvadar, kocka, prizma, 
   Q(3, 'Površina pravilne četvorostrane prizme je 250 cm², a ivica osnove 5 cm. Kolika je visina prizme?',
     ['10 cm', '12 cm', '8 cm', '20 cm'],
     'Od ukupne površine prvo oduzmemo dve osnove, pa ostatak delimo sa obimom osnove.',
-    'visina');
+    'visina', { medijiOdgovora: prizma(4, 5, 10) });
 
   Q(3, 'Ako se ivica osnove pravilne četvorostrane prizme udvostruči, a visina ostane ista, kako se promeni površina omotača?',
     ['Poveća se 2 puta', 'Poveća se 4 puta', 'Ostane ista', 'Poveća se 3 puta'],
@@ -490,7 +490,7 @@ module.exports = ({ L, Q, U, S, G, proveri, telo, kocke, kvadar, kocka, prizma, 
   Q(3, 'Površina omotača pravilne šestostrane prizme jednaka je površini jedne osnove, a ta površina je $216\\sqrt{3}$ cm². Kolika je visina ako je ivica osnove 12 cm?',
     ['$3\\sqrt{3}$ cm', '3 cm', '$6\\sqrt{3}$ cm', '12 cm'],
     'Površina osnove je $\\frac{3a^{2}\\sqrt{3}}{2}$, pa je $a = 12$ cm. Iz omotača $6aH = 216\\sqrt{3}$ sledi visina.',
-    'visina');
+    'visina', { medijiOdgovora: prizma(6, 12, 3 * Math.sqrt(3)) });
 
   S(2, 'Spoji oblik osnove sa njenom površinom za ivicu $a$.',
     [['jednakostranični trougao', '$\\frac{a^{2}\\sqrt{3}}{4}$'], ['pravilni šestougao', '$\\frac{3a^{2}\\sqrt{3}}{2}$'], ['kvadrat', '$a^{2}$'], ['pravougli trougao sa katetama $a$ i $b$', '$\\frac{ab}{2}$']],
@@ -500,7 +500,7 @@ module.exports = ({ L, Q, U, S, G, proveri, telo, kocke, kvadar, kocka, prizma, 
   Q(2, 'Omotač pravilne trostrane prizme je 48 cm², a visina 4 cm. Kolika je ivica osnove?',
     ['4 cm', '6 cm', '12 cm', '16 cm'],
     'Omotač je obim osnove puta visina, $3a \\cdot 4 = 48$, pa je $3a = 12$ cm.',
-    'obim');
+    'obim', { medijiOdgovora: prizma(3, 4, 4) });
 
   Q(1, 'Kolika je površina omotača pravilne šestostrane prizme ivice 4 cm i visine 2 cm?',
     ['48 cm²', '24 cm²', '12 cm²', '96 cm²'],
@@ -549,7 +549,7 @@ module.exports = ({ L, Q, U, S, G, proveri, telo, kocke, kvadar, kocka, prizma, 
   Q(2, 'Osnova pravilne četvorostrane prizme je kvadrat ivice 4 cm, a zapremina je 80 cm³. Kolika je visina?',
     ['5 cm', '20 cm', '10 cm', '4 cm'],
     'Iz formule $V = a^{2} \\cdot H$ visina je količnik zapremine i površine osnove.',
-    'visina');
+    'visina', { medijiOdgovora: prizma(4, 4, 5) });
 
   Q(2, 'Osnova prave prizme je jednakokraki trapez sa osnovicama 8 cm i 2 cm i visinom trapeza 4 cm. Visina prizme je 3 cm. Kolika je zapremina?',
     ['60 cm³', '40 cm³', '30 cm³', '120 cm³'],
@@ -569,7 +569,7 @@ module.exports = ({ L, Q, U, S, G, proveri, telo, kocke, kvadar, kocka, prizma, 
   Q(3, 'Pravilna četvorostrana prizma ima zapreminu 1440 cm³, a bočna ivica je 10 cm. Kolika je ivica osnove?',
     ['12 cm', '24 cm', '6 cm', '144 cm'],
     'Osnova je kvadrat, pa iz zapremine dobijamo površinu osnove $a^{2} = 144$ cm², a zatim i ivicu.',
-    'ivica');
+    'ivica', { medijiOdgovora: prizma(4, 12, 10) });
 
   Q(3, 'Kocka ima zapreminu 343 cm³. Kolika je njena površina?',
     ['294 cm²', '343 cm²', '98 cm²', '49 cm²'],
@@ -641,12 +641,12 @@ module.exports = ({ L, Q, U, S, G, proveri, telo, kocke, kvadar, kocka, prizma, 
   Q(3, 'Zapremina pravilne šestostrane prizme je $540\\sqrt{3}$ cm³, a visina 10 cm. Kolika je ivica osnove?',
     ['6 cm', '12 cm', '3 cm', '9 cm'],
     'Iz zapremine dobijamo površinu osnove, $\\frac{3a^{2}\\sqrt{3}}{2} = 54\\sqrt{3}$, a iz nje ivicu.',
-    'ivica');
+    'ivica', { medijiOdgovora: prizma(6, 6, 10) });
 
   Q(3, 'Zapremina pravilne trostrane prizme je $36\\sqrt{3}$ cm³, a ivica osnove 4 cm. Kolika je visina?',
     ['9 cm', '12 cm', '6 cm', '18 cm'],
     'Površina osnove je $4\\sqrt{3}$ cm², pa visinu dobijamo deljenjem zapremine sa njom.',
-    'visina');
+    'visina', { medijiOdgovora: prizma(3, 4, 9) });
 
   Q(2, 'Osnova prave prizme je pravougli trougao sa katetama 3 cm i 8 cm, a visina prizme je 5 cm. Kolika je zapremina?',
     ['60 cm³', '120 cm³', '30 cm³', '15 cm³'],
@@ -671,7 +671,7 @@ module.exports = ({ L, Q, U, S, G, proveri, telo, kocke, kvadar, kocka, prizma, 
   Q(3, 'Zapremina pravilne trostrane prizme je $18\\sqrt{3}$ cm³, a visina 2 cm. Kolika je ivica osnove?',
     ['6 cm', '3 cm', '12 cm', '9 cm'],
     'Površina osnove je $9\\sqrt{3}$ cm², pa ivicu nalazimo iz $\\frac{a^{2}\\sqrt{3}}{4} = 9\\sqrt{3}$.',
-    'osnova');
+    'osnova', { medijiOdgovora: prizma(3, 6, 2) });
 
   U(3, 'Koja formula NIJE za zapreminu pravilne šestostrane prizme?',
     ['$V = \\frac{a^{2}\\sqrt{3}}{4} \\cdot H$', '$V = \\frac{3a^{2}\\sqrt{3}}{2} \\cdot H$', '$V = 6 \\cdot \\frac{a^{2}\\sqrt{3}}{4} \\cdot H$', '$V = B \\cdot H$, gde je $B = \\frac{3a^{2}\\sqrt{3}}{2}$'],

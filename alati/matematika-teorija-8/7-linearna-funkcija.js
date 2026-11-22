@@ -505,7 +505,7 @@ module.exports = ({ L, Q, U, S, G, proveri, r }) => {
   L('Nule i znak linearne funkcije');
 
   Q(1, 'Šta je nula funkcije?',
-    ['$y = 0$', '$x = 0$', '$y = 1$', '$x = 1$'],
+    ['vrednost $x$ za koju je $y = 0$', 'vrednost $y$ za koju je $x = 0$', 'vrednost $x$ za koju je $y = 1$', 'najmanja vrednost $y$'],
     'Nula je vrednost nezavisne promenljive za koju zavisna promenljiva postaje nula. Grafički, to je presek grafika sa $x$-osom.', 'nula',
     { mediji: ravan(-1, 5, -3, 5, [pr(1, -2, -1, 5, -3, 5, { b: 1 })], { brojevi: 0 }) });
 
@@ -775,7 +775,7 @@ module.exports = ({ L, Q, U, S, G, proveri, r }) => {
     'Vrednost $y$ je pozitivna kad je grafik iznad $x$-ose, a to je desno od nule $x = 2$.', 'znak',
     { mediji: ravan(-2, 6, -4, 4, [pr(1, -2, -2, 6, -4, 4, { b: 1 })], { ose: ['x', 'y'], podela: [1, 1] }) });
 
-  Q(3, 'Vrednost sok u rezervoaru: $y = 100 − 3x$ litara posle $x$ dana. Posle koliko dana ostane 28 litara?',
+  Q(3, 'U rezervoaru ostaje $y = 100 − 3x$ litara soka posle $x$ dana. Posle koliko dana ostane 28 litara?',
     ['24', '28', '12', '33'],
     'Iz $28 = 100 − 3x$ je $3x = 72$, pa je $x = 24$. Na grafiku se vidi da je to tačka gde linija prolazi kroz visinu 28.', 'rezervoar',
     { mediji: ravan(0, 36, 0, 100, [dz([0, 100], [33, 1], { b: 1 })], { ose: ['~dana', '~l'], podela: [6, 20] }) });

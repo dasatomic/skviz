@@ -631,7 +631,7 @@ module.exports = ({ L, Q, U, S, G: G0, r, proveri, rad }) => {
     'Iz $\\frac{180}{120} = \\frac{h}{140}$ sledi $h = \\frac{180 · 140}{120} = 210 cm$.',
     'senka',
     { mediji: G({}, [...stub(0, 1.8, 1.2), ...stub(4, 2.1, 1.4)], { velicina: 280 }) });
-  Q(2, 'Anđelija je visoka $1{,}72 m$. Ogledalo je na zemlji tako da u njemu vidi vrh bora. Ogledalo je $3$ puta bliže boru nego Anđeliji. Kolika je visina bora?',
+  Q(2, 'Anđelija je visoka $1{,}72 m$. Ogledalo je na zemlji tako da u njemu vidi vrh bora. Bor je od ogledala $3$ puta dalje nego Anđelija. Kolika je visina bora?',
     ['$5{,}16 m$', '$0{,}57 m$', '$4{,}5 m$', '$6{,}2 m$'],
     'Svetlosni zrak se odbija pod istim uglom, pa su trouglovi slični: $\\frac{h_b}{h_A} = \\frac{l_b}{l_A} = 3$. Zato je $h_b = 3 · 1{,}72 = 5{,}16 m$.',
     'ogledalo',
