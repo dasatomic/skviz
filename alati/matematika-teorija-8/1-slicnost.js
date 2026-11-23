@@ -490,7 +490,7 @@ module.exports = ({ L, Q, U, S, G: G0, r, proveri, rad }) => {
     'Odnosi odgovarajućih stranica su $6 : 4 = 9 : 6 = 12 : 8 = \\frac{3}{2}$. Zato je koeficijent $\\frac{3}{2}$.',
     'koeficijent',
     { mediji: dvaSlicna(tri3(9, 12, 6), tri3(6, 8, 4), { dx: 14 }) });
-  Q(3, 'Katete pravouglog trougla su $6$ i $8$. Drugi pravougli trougao ima katete $9$ i $x$ i slican je prvom. Koliko je $x$?',
+  Q(3, 'Katete pravouglog trougla su $6$ i $8$. Drugi pravougli trougao ima katete $9$ i $x$ i sličan je prvom. Koliko je $x$?',
     ['$12$', '$10$', '$9$', '$16$'],
     'Odnos kateta mora biti isti: $6 : 9 = 8 : x$, pa je $\\frac{6}{9} = \\frac{8}{x}$, a odatle $x = 12$.',
     'katete',

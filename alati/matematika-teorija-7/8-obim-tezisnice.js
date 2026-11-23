@@ -188,7 +188,7 @@ module.exports = ({ L, Q, U, S, G, proveri, r, pravilni }) => {
   proveri(Math.abs(tuH[0] - 1) < 0.01 && Math.abs(tuH[1] - 5) < 0.01, 'ortocentar tupouglog trougla (1, 5)');
   Q(2, 'Gde leži ortocentar tupouglog trougla?',
     ['Van trougla', 'Unutar trougla', 'U središtu najduže stranice', 'Poklapa se sa težištem'],
-    'Kod tupouglog trougla visine ne sekut stranice unutar trougla, nego se njihovi produžeci seku van njega. Zanimljivo: ako se uzmu ortocentar i tri temena, svaka od te četiri tačke je ortocentar trougla koji čine ostale tri.', 'ortocentar',
+    'Kod tupouglog trougla visine ne seku stranice unutar trougla, nego se njihovi produžeci seku van njega. Zanimljivo: ako se uzmu ortocentar i tri temena, svaka od te četiri tačke je ortocentar trougla koji čine ostale tri.', 'ortocentar',
     { mediji: G(tu, [{ p: 'ABC', b: 0 }], { velicina: 260 }),
       medijiOdgovora: G({ ...tu, H: tuH }, [{ p: 'ABC', b: 0 }, { d: 'AH', isp: 1, b: 1 }, { d: 'BH', isp: 1, b: 2 }, { d: 'CH', isp: 1, b: 3 }, { tacka: 'H', b: 2 }], { velicina: 260 }) });
 

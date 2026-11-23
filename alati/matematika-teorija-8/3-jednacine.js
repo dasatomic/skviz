@@ -505,7 +505,7 @@ module.exports = ({ L, Q, U, S, G, proveri, r, brojevna, terazije }) => {
     'Ako je cena bez poreza $x$, sa porezom je $x + 0,1x = 1,1x = 660$, pa je $x = 600$ dinara.', 'porez',
     { mediji: TR([[1, '~bez poreza', 1], [0.3, '+10 %', 2]]) });
   U(2, 'Koji zadatak NE rešavamo linearnom jednačinom sa jednom nepoznatom?',
-    ['Zbir dva broja je $10$, a proizvod $21$', 'Zbir dva broja je $10$, a razlika $2$', 'Cena jedne sveske je $x$, pet sveski košta $50$', 'Broj je $3$ puta veći od drugog, a zbir im je $20$'],
+    ['Zbir dva broja je $10$, a proizvod $21$', 'Zbir dva broja je $10$, a razlika $2$', 'Cena jedne sveske je $x$, pet svezaka košta $50$', 'Broj je $3$ puta veći od drugog, a zbir im je $20$'],
     'Zadatak sa zbirom i proizvodom dva broja vodi do jednačine drugog stepena, jer se obe nepoznate ne mogu izraziti jednim stepenom.',
     'Proizvod dva nepoznata broja obično vodi do kvadratne jednačine.', 'primena', {});
   Q(2, 'Broj je najpre uvećan za $3$, zatim pomnožen sa $4$, a dobijeno je $28$. Koji je broj?',

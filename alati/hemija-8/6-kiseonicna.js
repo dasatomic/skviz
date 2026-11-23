@@ -55,7 +55,7 @@ Q(3, 'Kako se razlikuju zasićene i nezasićene karboksilne kiseline?', ['Nezasi
   Q(3, 'Zašto je mlečna kiselina i alkohol i kiselina?', ['Ima –OH i –COOH grupu u istom molekulu', 'Nastaje samo iz alkohola', 'Sadrži metal', 'Ima dve karboksilne grupe'], 'Mlečna kiselina nastaje u mišićima pri naporu i u fermentisanom mleku.', 'mlečna', { o: mol('mlecna-kiselina') });
   Q(2, 'Kako se zove karboksilna kiselina sa benzenovim prstenom, koja se koristi kao konzervans?', ['Benzoeva kiselina', 'Sirćetna kiselina', 'Mravlja kiselina', 'Oksalna kiselina'], 'Dodaje se u sokove i džemove da se ne kvare.', 'benzoeva', { o: mol('benzoeva-kiselina') });
 Q(2, 'Po čemu je oleinska kiselina neobična među masnim kiselinama?', ['Tečna je iako ima 18 ugljenika', 'Nema karboksilnu grupu', 'Sadrži azot', 'Čvrsta je kao kamen'], 'Zbog dvostruke veze molekul je savijen i slabije se pakuje.', 'oleinska', { m: mol('stearinska-kiselina') });
-  U(2, 'Koja kiselina NIJE karboksilna (organska)?', ['Sumporna', 'Sirćetna', 'Mravlja', 'Mlečna'], 'Sumporna je neorganska (mineralna) kiselina – nema karboksilnu grupu.', 'Karboksilne kiseline se nalaze u voću, mlečnim proizvodima i sirću.', 'organska', { o: mol('sumporna-kiselina') });
+  U(2, 'Koja kiselina NIJE karboksilna (organska)?', ['Sumporna', 'Sirćetna', 'Mravlja', 'Mlečna'], 'Sumporna je neorganska (mineralna) kiselina – nema karboksilnu grupu.', 'Karboksilne kiseline se nalaze u voću, mlečnim proizvodima i sirćetu.', 'organska', { o: mol('sumporna-kiselina') });
 
   // ───────────── Svojstva i primena karboksilnih kiselina ─────────────
   L('Svojstva i primena karboksilnih kiselina');

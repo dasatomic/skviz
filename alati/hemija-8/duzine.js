@@ -38,7 +38,7 @@ module.exports = [
   [179, ['Slojevi se lako klize i odvajaju', 'Veoma je tvrd i ne ostavlja trag', 'Rastvara se u vodi i boji je', 'Sadrži olovo koje ostaje na papiru']],
   [186, ['Postaje mutna – nastaje kalcijum-karbonat', 'Postaje plava jer nastaje bakar-sulfat', 'Menja boju u crvenu zbog kiseline', 'Ključa jer se zagreva reakcijom']],
   [188, ['U uglju, čađi i dijamantu', 'U vazduhu, kao gas bez boje', 'U morskoj vodi, u rastvorenom obliku', 'U kuhinjskoj soli kao sastojak']],
-  [189, ['Zadržava toplotu koju zrači Zemlja', 'Rastvara se u kiši i zakišeljava je', 'Sadrži ugljenik pa je zagađivač', 'Ima veliku gustinu pa pada ka tlu']],
+  [189, ['Zadržava toplotu koju zrači Zemlja', 'Rastvara se u kiši i zakiseljava je', 'Sadrži ugljenik pa je zagađivač', 'Ima veliku gustinu pa pada ka tlu']],
   [192, ['Plastični ugljenik', 'Grafit (slojevita struktura)', 'Dijamant (tetraedarska mreža)', 'Fuleren (kuglasti molekuli)']],
   [193, ['Jonska jedinjenja metala i kiselinskog ostatka', 'Kiseline sa dodatim vodonikom i metalom', 'Jedinjenja nemetala i vodonika u vodi', 'Smeše metala rastvorene u vodi']],
   [194, ['Ono što ostane kad se iz kiseline oduzme vodonik', 'Ono što ostane kad kiselina potpuno ispari', 'Višak vode koji se nalazi u kiselini', 'Metal koji je rastvoren u kiselini']],

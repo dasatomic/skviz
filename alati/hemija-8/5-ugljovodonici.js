@@ -92,7 +92,7 @@ module.exports = ({ L, Q, U, S, mol, at, jon, kov, met, rast, ph, ps, R, lab, ep
   Q(2, 'Koja je formula cikloheksana?', ['C₆H₁₂', 'C₆H₆', 'C₆H₁₀', 'C₆H₁₄'], 'Cikloheksan je zasićen – nije aromatičan.', 'cikloheksan', { o: mol('cikloheksan') });
   Q(2, 'Po čemu se cikloheksan razlikuje od benzena?', ['Ima samo jednostruke veze i nije ravan', 'Ima manje atoma ugljenika', 'Ima atom kiseonika', 'Provodi struju'], 'Benzen ima delokalizovane veze i ravan prsten.', 'razlika', { m: mol('cikloheksan'), o: mol('benzen') });
   Q(3, 'Koja je razlika u broju vodonika između heksana i benzena?', ['Osam', 'Šest', 'Dva', 'Dvanaest'], 'C₆H₁₄ i C₆H₆: 14 − 6 = 8. Heksan se koristi kao rastvarač pri izdvajanju ulja iz semena suncokreta i soje.', 'razlika', { m: mol('heksan') });
-  Q(2, 'Kako se naziva polimer koji nastaje od stirena?', ['Polistiren (stiropor)', 'Polietilen', 'Polivinil-hlorid', 'Teflon'], 'Stiropor je napenjen polistiren, u kome je većina zapremine vazduh. Stiren je tečnost slatkastog mirisa.', 'stiropor', { m: mol('stiren') });
+  Q(2, 'Kako se naziva polimer koji nastaje od stirena?', ['Polistiren (stiropor)', 'Polietilen', 'Polivinil-hlorid', 'Teflon'], 'Stiropor je ekspandirani (penasti) polistiren, u kome je većina zapremine vazduh. Stiren je tečnost slatkastog mirisa.', 'stiropor', { m: mol('stiren') });
   U(2, 'Koje jedinjenje NIJE aromatično?', ['Cikloheksan', 'Benzen', 'Toluen', 'Stiren'], 'Cikloheksan je zasićeni cikloalkan bez delokalizovanih veza.', 'Aromatični imaju prsten benzena.', 'aromatično', { o: mol('cikloheksan') });
 
   // ───────────── Nafta i zemni gas. Polimeri ─────────────
