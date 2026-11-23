@@ -13,9 +13,11 @@ on:
           - pitanja
   schedule:
     # Svake noći: GitHub cron je po UTC i ne prati letnje/zimsko vreme.
-    #   '0 2 * * *' = 02:00 UTC → 04:00 leti, 03:00 zimi (po srpskom vremenu)
-    #   '0 3 * * *' = 03:00 UTC → 05:00 leti, 04:00 zimi
-    - cron: '0 2 * * *'
+    #   '17 0 * * *' = 00:17 UTC → 01:17 zimi, 02:17 leti (po srpskom vremenu)
+    # Rano u prozoru (i ne na pun sat, kad je GitHub najzagušeniji), jer GitHub
+    # zna da zakasni i po nekoliko sati. Ako ipak zakasni van prozora 01:00–07:00
+    # po beogradskom vremenu, korak „Prozor“ ispod preskače deploy.
+    - cron: '17 0 * * *'
 
 # Dva deploy-a nikad ne smeju da idu uporedo (rsync + restart na istom serveru).
 concurrency:
@@ -27,15 +29,33 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
+      # Automatski (noćni) deploy sme samo od 01:00 do 07:00 po beogradskom vremenu –
+      # danju i uveče se igra, a restart bi prekinuo igru. Ručno pokretanje
+      # (workflow_dispatch) nije ograničeno.
+      - name: Prozor 01:00–07:00 (samo noćno)
+        id: prozor
+        if: github.event_name == 'schedule'
+        run: |
+          SAT=$((10#$(TZ=Europe/Belgrade date +%H)))
+          if [ "$SAT" -ge 1 ] && [ "$SAT" -lt 7 ]; then
+            echo "Beograd: $(TZ=Europe/Belgrade date '+%H:%M') – u prozoru, nastavljam."
+          else
+            echo "::notice::Beograd: $(TZ=Europe/Belgrade date '+%H:%M') – van prozora 01:00–07:00 (GitHub je zakasnio), preskačem deploy."
+            echo "van=1" >> "$GITHUB_OUTPUT"
+          fi
+
       - uses: actions/checkout@v4
+        if: steps.prozor.outputs.van != '1'
         with:
           fetch-depth: 0   # objavi.sh i test-deploy trebaju i „stari“ commit sa servera
 
       - uses: actions/setup-node@v4
+        if: steps.prozor.outputs.van != '1'
         with:
           node-version: 22
 
       - name: SSH ključ i poznati domaćini
+        if: steps.prozor.outputs.van != '1'
         env:
           DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
         run: |
@@ -54,7 +74,7 @@ jobs:
 
       - name: Preskoči ako nema novih komitova (samo noćno)
         id: provera
-        if: github.event_name == 'schedule'
+        if: github.event_name == 'schedule' && steps.prozor.outputs.van != '1'
         run: |
           NA_SERVERU="$(ssh skviz 'cat /opt/gric-kviz/.objavljeno 2>/dev/null' || true)"
           OVDE="$(git rev-parse HEAD)"
@@ -66,7 +86,7 @@ jobs:
           fi
 
       - name: Deploy
-        if: steps.provera.outputs.preskoci != '1'
+        if: steps.prozor.outputs.van != '1' && steps.provera.outputs.preskoci != '1'
         run: |
           NACIN="${{ github.event_name == 'workflow_dispatch' && inputs.nacin || 'pun' }}"
           if [ "$NACIN" = "pitanja" ]; then
