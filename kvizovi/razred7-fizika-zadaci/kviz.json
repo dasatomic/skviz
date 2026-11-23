@@ -465,8 +465,7 @@
     "duzina": 1200,
     "podeok": 200,
     "jedinica": "m",
-    "tempo": 60,
-    "trag": 40
+    "tempo": 60
    },
    "resenje": [
     {
@@ -515,9 +514,8 @@
     "jedinica": "km",
     "jedVreme": "h",
     "tempo": 0.8,
-    "natpisi": 3,
-    "sat": true,
-    "trag": 0.5
+    "lenjir": false,
+    "sat": false
    },
    "resenje": [
     {
@@ -873,9 +871,8 @@
     "jedinica": "km",
     "jedVreme": "h",
     "tempo": 0.6,
-    "natpisi": 3,
-    "sat": false,
-    "trag": 0.25
+    "lenjir": false,
+    "sat": false
    },
    "resenje": [
     {
@@ -895,12 +892,12 @@
   {
    "lekcija": 1,
    "tezina": 1,
-   "pitanje": "Voz koji ide brzinom $20 m/s$ ravnomerno koči i zaustavi se za $40 s$. Kolika je veličina njegovog usporenja?",
+   "pitanje": "Voz koji ide brzinom $25 m/s$ ravnomerno koči i zaustavi se za $50 s$. Kolika je veličina njegovog usporenja?",
    "odgovori": [
     "$0,5 m/s^{2}$",
     "$2 m/s^{2}$",
-    "$800 m/s^{2}$",
-    "$0,05 m/s^{2}$"
+    "$0,05 m/s^{2}$",
+    "$1,25 m/s^{2}$"
    ],
    "mediji": {
     "vrsta": "fizika",
@@ -908,13 +905,12 @@
     "tela": [
      {
       "e": "🚆",
-      "v": 20,
-      "a": -0.5,
-      "okreni": true
+      "v": 25,
+      "a": -0.5
      }
     ],
-    "duzina": 400,
-    "podeok": 50,
+    "duzina": 700,
+    "podeok": 100,
     "tempo": 10,
     "vektor": true,
     "sat": true,
@@ -922,10 +918,10 @@
    },
    "resenje": [
     {
-     "t": "Brzina se promeni sa $20 m/s$ na $0$: $Δv = 0 − 20 m/s = −20 m/s$."
+     "t": "Brzina se promeni sa $25 m/s$ na $0$: $Δv = 0 − 25 m/s = −25 m/s$."
     },
     {
-     "t": "$a = {Δv|Δt} = {−20 m/s|40 s} = −0,5 m/s^{2}$."
+     "t": "$a = {Δv|Δt} = {−25 m/s|50 s} = −0,5 m/s^{2}$."
     },
     {
      "t": "Znak „−“ znači da brzina opada (usporavanje). Veličina usporenja je $0,5 m/s^{2}$: svake sekunde voz izgubi $0,5 m/s$."
@@ -986,8 +982,7 @@
      {
       "e": "🐆",
       "v": 0,
-      "a": 10,
-      "okreni": true
+      "a": 10
      }
     ],
     "duzina": 20,
@@ -1276,13 +1271,6 @@
     "$0,5 m/s^{2}$",
     "$1,5 m/s^{2}$"
    ],
-   "mediji": {
-    "vrsta": "fizika",
-    "scena": "dizanje",
-    "visina": 4,
-    "e": "🛗",
-    "vreme": 1.5
-   },
    "resenje": [
     {
      "t": "$Δv = 3 m/s − 0 = 3 m/s$, $Δt = 1,5 s$."
@@ -1991,7 +1979,7 @@
   {
    "lekcija": 3,
    "tezina": 1,
-   "pitanje": "Dečak ($40 kg$) i devojčica ($60 kg$) stoje na ledu i odgurnu se rukama. Dečak gura devojčicu silom $120 N$. Kolika ubrzanja dobijaju (prvo dečak, pa devojčica)?",
+   "pitanje": "Dečak ($40 kg$) i devojčica ($60 kg$) stoje na ledu i odgurnu se rukama. Dečak gura devojčicu silom $120 N$ (trenje zanemari, sila je stalna). Kolika ubrzanja dobijaju (prvo dečak, pa devojčica)?",
    "odgovori": [
     "$3 m/s^{2}$ i $2 m/s^{2}$",
     "$2 m/s^{2}$ i $3 m/s^{2}$",
@@ -3343,7 +3331,7 @@
   {
    "lekcija": 3,
    "tezina": 3,
-   "pitanje": "Dvoja kolica se odgurnu jedna od drugih. Za isto vreme kolica $A$ (mase $3 kg$) pređu dvostruko duži put od kolica $B$. Kolika je masa kolica $B$?",
+   "pitanje": "Dvoja kolica miruju na glatkom podu, pa se odgurnu jedna od drugih (sile su stalne, trenje zanemarujemo). Za isto vreme kolica $A$ (mase $3 kg$) pređu dvostruko duži put od kolica $B$. Kolika je masa kolica $B$?",
    "odgovori": [
     "$6 kg$",
     "$1,5 kg$",
@@ -3387,12 +3375,6 @@
     "$480 N$",
     "$120 N$"
    ],
-   "mediji": {
-    "vrsta": "fizika",
-    "scena": "dizanje",
-    "visina": 6,
-    "e": "🧍"
-   },
    "resenje": [
     {
      "t": "Na čoveka deluju: sila teže $Q = 600 N$ naniže i sila poda $N$ naviše. Rezultanta daje ubrzanje naviše."
@@ -5370,7 +5352,7 @@
   {
    "lekcija": 5,
    "tezina": 2,
-   "pitanje": "Na grafiku su brzine dva tela, $A$ i $B$. Koliko je puta ubrzanje tela $B$ veće od ubrzanja tela $A$?",
+   "pitanje": "Na grafiku su brzine dva tela, $A$ i $B$, koja su krenula iz mirovanja. Koliko je puta ubrzanje tela $B$ veće od ubrzanja tela $A$?",
    "odgovori": [
     "$2,5$ puta",
     "$2$ puta",
@@ -5395,7 +5377,7 @@
       ],
       "podela": [
        1.333,
-       0.833
+       1
       ],
       "brojevi": 0
      },
@@ -5448,34 +5430,10 @@
       "vel": 12
      },
      {
-      "tx": "2",
+      "tx": "5",
       "at": [
        -0.5,
-       0.833
-      ],
-      "vel": 12
-     },
-     {
-      "tx": "4",
-      "at": [
-       -0.5,
-       1.667
-      ],
-      "vel": 12
-     },
-     {
-      "tx": "6",
-      "at": [
-       -0.5,
-       2.5
-      ],
-      "vel": 12
-     },
-     {
-      "tx": "8",
-      "at": [
-       -0.5,
-       3.333
+       1
       ],
       "vel": 12
      },
@@ -5483,12 +5441,28 @@
       "tx": "10",
       "at": [
        -0.58,
-       4.167
+       2
       ],
       "vel": 12
      },
      {
-      "tx": "12",
+      "tx": "15",
+      "at": [
+       -0.58,
+       3
+      ],
+      "vel": 12
+     },
+     {
+      "tx": "20",
+      "at": [
+       -0.58,
+       4
+      ],
+      "vel": 12
+     },
+     {
+      "tx": "25",
       "at": [
        -0.58,
        5
@@ -5557,7 +5531,7 @@
        ],
        [
         6.667,
-        4.167
+        2
        ]
       ],
       "b": 0,
@@ -5565,7 +5539,7 @@
       "o": "A",
       "oAt": [
        7.067,
-       4.417
+       2.12
       ]
      },
      {
@@ -5575,20 +5549,16 @@
         0
        ],
        [
-        2.667,
-        4.167
-       ],
-       [
-        8,
-        4.167
+        6.667,
+        5
        ]
       ],
       "b": 1,
       "debljina": 3.5,
       "o": "B",
       "oAt": [
-       2.133,
-       4.583
+       5.6,
+       4.7
       ]
      },
      {
@@ -5599,7 +5569,7 @@
        ],
        [
         6.667,
-        4.167
+        2
        ]
       ],
       "isp": 1,
@@ -5612,11 +5582,11 @@
       "lin": [
        [
         0,
-        4.167
+        2
        ],
        [
         6.667,
-        4.167
+        2
        ]
       ],
       "isp": 1,
@@ -5628,12 +5598,12 @@
      {
       "lin": [
        [
-        2.667,
+        6.667,
         0
        ],
        [
-        2.667,
-        4.167
+        6.667,
+        5
        ]
       ],
       "isp": 1,
@@ -5646,11 +5616,11 @@
       "lin": [
        [
         0,
-        4.167
+        5
        ],
        [
-        2.667,
-        4.167
+        6.667,
+        5
        ]
       ],
       "isp": 1,
@@ -5673,7 +5643,7 @@
      ]
     },
     {
-     "t": "Telo $B$: $a_{B} = {10 m/s|2 s} = 5 m/s^{2}$.",
+     "t": "Telo $B$: $a_{B} = {25 m/s|5 s} = 5 m/s^{2}$.",
      "i": [
       "bb"
      ]
@@ -6328,7 +6298,7 @@
      ]
     },
     {
-     "t": "Ukupno: $s = 9 m + 24 m + 6 m = 39 m$ – lift je prošao oko $13$ spratova."
+     "t": "Ukupno: $s = 9 m + 24 m + 6 m = 39 m$ – ako je sprat visok $3 m$, lift je prošao oko $13$ spratova."
     }
    ]
   },
@@ -6643,7 +6613,7 @@
   {
    "lekcija": 5,
    "tezina": 3,
-   "pitanje": "Grafik prikazuje brzinu tela u prve $3 s$. Ako se telo i dalje kreće isto ovako, kolika će mu biti brzina u trenutku $t = 8 s$?",
+   "pitanje": "Grafik prikazuje brzinu tela u prve $3 s$. Ako se telo i dalje kreće istim ubrzanjem, kolika će mu biti brzina u trenutku $t = 8 s$?",
    "odgovori": [
     "$28 m/s$",
     "$24 m/s$",
@@ -8364,10 +8334,8 @@
      }
     ],
     "duzina": 20,
-    "podeok": 2,
-    "natpisi": 99,
-    "sat": false,
-    "trag": 1
+    "lenjir": false,
+    "sat": false
    },
    "resenje": [
     {
@@ -8384,11 +8352,11 @@
   {
    "lekcija": 6,
    "tezina": 2,
-   "pitanje": "Avion pri poletanju iz mirovanja ravnomerno ubrzava i za $30 s$ dostigne brzinu $60 m/s$. Kolika najmanje mora biti dužina piste?",
+   "pitanje": "Avion pri poletanju iz mirovanja ravnomerno ubrzava i za $40 s$ dostigne brzinu $80 m/s$. Kolika najmanje mora biti dužina piste?",
    "odgovori": [
-    "$900 m$",
-    "$1 800 m$",
-    "$450 m$",
+    "$1 600 m$",
+    "$3 200 m$",
+    "$800 m$",
     "$2 km$"
    ],
    "mediji": {
@@ -8396,13 +8364,13 @@
     "scena": "kretanje",
     "tela": [
      {
-      "e": "✈️",
+      "e": "🛫",
       "v": 0,
       "a": 2
      }
     ],
-    "duzina": 1000,
-    "podeok": 100,
+    "duzina": 1800,
+    "podeok": 200,
     "natpisi": 99,
     "tempo": 6,
     "vektor": true,
@@ -8410,10 +8378,10 @@
    },
    "resenje": [
     {
-     "t": "Srednja brzina: $v_{sr} = {0 + 60 m/s|2} = 30 m/s$."
+     "t": "Srednja brzina: $v_{sr} = {0 + 80 m/s|2} = 40 m/s$."
     },
     {
-     "t": "$s = 30 m/s · 30 s = 900 m$."
+     "t": "$s = 40 m/s · 40 s = 1 600 m$ (ubrzanje je $a = {80 m/s|40 s} = 2 m/s^{2}$)."
     }
    ]
   },
@@ -8462,29 +8430,6 @@
     "$10 m$",
     "$80 m$"
    ],
-   "mediji": {
-    "vrsta": "fizika",
-    "scena": "kretanje",
-    "tela": [
-     {
-      "e": "🚗",
-      "v": 10,
-      "a": -5,
-      "o": "36 km/h"
-     },
-     {
-      "e": "🚗",
-      "v": 20,
-      "a": -5,
-      "o": "72 km/h"
-     }
-    ],
-    "duzina": 45,
-    "podeok": 5,
-    "natpisi": 99,
-    "vektor": true,
-    "sat": false
-   },
    "resenje": [
     {
      "t": "Pri zaustavljanju $v^{2} = 2 · a · s$, pa je zaustavni put $s = {v^{2}|2a}$ – srazmeran kvadratu brzine."
@@ -8493,7 +8438,30 @@
      "t": "Brzina je $2$ puta veća ⇒ put je $2^{2} = 4$ puta veći: $4 · 10 m = 40 m$."
     },
     {
-     "t": "Zato je brza vožnja opasna: dvostruko brže – četiri puta duži zaustavni put!"
+     "t": "Zato je brza vožnja opasna: dvostruko brže – četiri puta duži zaustavni put!",
+     "crtez": {
+      "vrsta": "fizika",
+      "scena": "kretanje",
+      "tela": [
+       {
+        "e": "🚗",
+        "v": 10,
+        "a": -5,
+        "o": "36 km/h"
+       },
+       {
+        "e": "🚗",
+        "v": 20,
+        "a": -5,
+        "o": "72 km/h"
+       }
+      ],
+      "duzina": 45,
+      "podeok": 5,
+      "natpisi": 99,
+      "vektor": true,
+      "sat": false
+     }
     }
    ]
   },
@@ -8578,15 +8546,6 @@
     "$10 m$",
     "$5 m$"
    ],
-   "mediji": {
-    "vrsta": "fizika",
-    "scena": "pad",
-    "tip": "vakuum",
-    "levo": "~vazduh",
-    "desno": "~vakuum",
-    "e1": "🪶",
-    "e2": "🪨"
-   },
    "resenje": [
     {
      "t": "Put pri slobodnom padu: $h = {g · t^{2}|2}$."
@@ -9124,19 +9083,13 @@
    ],
    "mediji": {
     "vrsta": "fizika",
-    "scena": "klatno",
-    "klatna": [
-     {
-      "l": 1,
-      "o": "~Zemlja"
-     },
-     {
-      "l": 1,
-      "g": 0.16,
-      "o": "~Mesec"
-     }
-    ],
-    "ugao": 25
+    "scena": "pad",
+    "tip": "slobodan",
+    "visina": 20,
+    "g": 1.6,
+    "brzina": false,
+    "sat": false,
+    "strob": 99
    },
    "resenje": [
     {
@@ -10361,7 +10314,7 @@
   {
    "lekcija": 8,
    "tezina": 3,
-   "pitanje": "Lopta je bačena uvis brzinom $25 m/s$. Na kojoj visini se nalazi posle $4 s$? ($g = 10 m/s^{2}$)",
+   "pitanje": "Lopta je bačena uvis brzinom $25 m/s$ sa tla. Na kojoj visini se nalazi posle $4 s$? ($g = 10 m/s^{2}$)",
    "odgovori": [
     "$20 m$, pada naniže",
     "$100 m$",
@@ -11918,31 +11871,6 @@
     "$100 m$",
     "$20 m$"
    ],
-   "mediji": {
-    "vrsta": "fizika",
-    "scena": "kretanje",
-    "tela": [
-     {
-      "e": "🚗",
-      "v": 20,
-      "a": -5,
-      "podloga": "asfalt",
-      "staza": "~asfalt"
-     },
-     {
-      "e": "🚗",
-      "v": 20,
-      "a": -1,
-      "podloga": "led",
-      "staza": "~led"
-     }
-    ],
-    "duzina": 240,
-    "podeok": 20,
-    "natpisi": 99,
-    "tempo": 4,
-    "sat": false
-   },
    "resenje": [
     {
      "t": "Usporenje je $a = μ g$: na asfaltu $5 m/s^{2}$, na ledu samo $1 m/s^{2}$."
@@ -11951,7 +11879,32 @@
      "t": "Zaustavni put $s = {v^{2}|2a}$. Na asfaltu: ${400|10} = 40 m$."
     },
     {
-     "t": "Na ledu: ${400|2} = 200 m$ – pet puta duže! Zato zimi treba voziti sporije."
+     "t": "Na ledu: ${400|2} = 200 m$ – pet puta duže! Zato zimi treba voziti sporije.",
+     "crtez": {
+      "vrsta": "fizika",
+      "scena": "kretanje",
+      "tela": [
+       {
+        "e": "🚗",
+        "v": 20,
+        "a": -5,
+        "podloga": "asfalt",
+        "staza": "~asfalt"
+       },
+       {
+        "e": "🚗",
+        "v": 20,
+        "a": -1,
+        "podloga": "led",
+        "staza": "~led"
+       }
+      ],
+      "duzina": 240,
+      "podeok": 20,
+      "natpisi": 99,
+      "tempo": 4,
+      "sat": false
+     }
     }
    ]
   },
@@ -13500,14 +13453,7 @@
       "e": "🧒"
      }
     ],
-    "desno": [
-     {
-      "m": 40,
-      "d": 2.2,
-      "e": "👧",
-      "do": "?"
-     }
-    ],
+    "desno": [],
     "ravnoteza": true,
     "duzina": 2.4
    },
@@ -13598,7 +13544,7 @@
   {
    "lekcija": 11,
    "tezina": 2,
-   "pitanje": "Da bi se odvrnuo zarđao zavrtanj, potreban je moment sile $30 Nm$. Kolika sila je potrebna ako koristimo ključ dužine $60 cm$?",
+   "pitanje": "Da bi se odvrnuo zarđao zavrtanj, potreban je moment sile $30 Nm$. Kolika sila je potrebna ako koristimo ključ dužine $60 cm$ (sila deluje normalno na ključ)?",
    "odgovori": [
     "$50 N$",
     "$18 N$",
@@ -13737,14 +13683,7 @@
       "e": "🧔"
      }
     ],
-    "desno": [
-     {
-      "m": 20,
-      "d": 2.5,
-      "e": "🧒",
-      "do": "?"
-     }
-    ],
+    "desno": [],
     "ravnoteza": true,
     "duzina": 4.4
    },
@@ -13996,14 +13935,7 @@
       "do": "10 cm"
      }
     ],
-    "desno": [
-     {
-      "m": 2,
-      "d": 0.5,
-      "o": "?",
-      "do": "50 cm"
-     }
-    ],
+    "desno": [],
     "ravnoteza": true,
     "duzina": 0.55
    },
@@ -14197,7 +14129,7 @@
   {
    "lekcija": 11,
    "tezina": 2,
-   "pitanje": "Da bi se otvorila vrata, potreban je moment sile $8 Nm$. Kolika je potrebna sila ako guramo vrata na samo $20 cm$ od šarki?",
+   "pitanje": "Da bi se otvorila vrata, potreban je moment sile $8 Nm$. Kolika je potrebna sila ako guramo vrata normalno na njih, na samo $20 cm$ od šarki?",
    "odgovori": [
     "$40 N$",
     "$1,6 N$",
@@ -14473,7 +14405,7 @@
      "t": "Zapremina tela je jednaka zapremini istisnute vode: $V = 0,4 l = 0,0004 m^{3}$."
     },
     {
-     "t": "$ρ = {m|V} = {1,2 kg|0,0004 m^{3}} = 3 000 kg/m^{3}$ – tri puta gušće od vode, kao kamen (granit i mermer imaju oko $2 700 kg/m^{3}$)."
+     "t": "$ρ = {m|V} = {1,2 kg|0,0004 m^{3}} = 3 000 kg/m^{3}$ – tri puta gušće od vode, kao kamen (bazalt ima oko $3 000 kg/m^{3}$, granit oko $2 700 kg/m^{3}$)."
     }
    ]
   },
@@ -19207,7 +19139,7 @@
    "mediji": {
     "vrsta": "fizika",
     "scena": "klatno",
-    "ugao": 50,
+    "ugao": 56.6,
     "energija": true
    },
    "resenje": [
@@ -19451,7 +19383,7 @@
   {
    "lekcija": 17,
    "tezina": 2,
-   "pitanje": "Telo slobodno pada sa visine $10 m$. Na kojoj visini su mu kinetička i potencijalna energija jednake?",
+   "pitanje": "Telo slobodno pada sa visine $10 m$. Na kojoj visini (računajući od tla) su mu kinetička i potencijalna energija jednake?",
    "odgovori": [
     "$5 m$",
     "$2,5 m$",
@@ -20321,8 +20253,7 @@
      "K"
     ],
     "od": -20,
-    "do": 110,
-    "temp": 27
+    "do": 110
    },
    "resenje": [
     {
@@ -21139,7 +21070,7 @@
   {
    "lekcija": 21,
    "tezina": 2,
-   "pitanje": "Pomešamo $1 kg$ vode na $80 °C$ i $3 kg$ vode na $20 °C$. Kolika je temperatura smeše?",
+   "pitanje": "Pomešamo $1 kg$ vode na $80 °C$ i $3 kg$ vode na $20 °C$. Kolika je temperatura smeše? (Gubitke toplote zanemari.)",
    "odgovori": [
     "$35 °C$",
     "$50 °C$",
@@ -21198,7 +21129,7 @@
   {
    "lekcija": 21,
    "tezina": 2,
-   "pitanje": "U kadu sipamo $2 kg$ vode na $90 °C$ i $3 kg$ vode na $10 °C$. Kolika je temperatura smeše?",
+   "pitanje": "U kadu sipamo $2 kg$ vode na $90 °C$ i $3 kg$ vode na $10 °C$. Kolika je temperatura smeše? (Gubitke toplote zanemari.)",
    "odgovori": [
     "$42 °C$",
     "$50 °C$",
@@ -21239,7 +21170,7 @@
   {
    "lekcija": 21,
    "tezina": 2,
-   "pitanje": "Koliko vode temperature $10 °C$ treba doliti u $2 kg$ vode temperature $70 °C$ da bi se dobila voda od $40 °C$?",
+   "pitanje": "Koliko vode temperature $10 °C$ treba doliti u $2 kg$ vode temperature $70 °C$ da bi se dobila voda od $40 °C$? (Gubitke toplote zanemari.)",
    "odgovori": [
     "$2 kg$",
     "$1 kg$",
@@ -21300,7 +21231,7 @@
   {
    "lekcija": 21,
    "tezina": 3,
-   "pitanje": "U kadi je $40 l$ vode na $15 °C$. Koliko litara vode temperature $75 °C$ treba doliti da bi kupka imala $35 °C$?",
+   "pitanje": "U kadi je $40 l$ vode na $15 °C$. Koliko litara vode temperature $75 °C$ treba doliti da bi kupka imala $35 °C$? (Gubitke toplote zanemari.)",
    "odgovori": [
     "$20 l$",
     "$40 l$",
@@ -21478,7 +21409,7 @@
   {
    "lekcija": 21,
    "tezina": 3,
-   "pitanje": "Metalni teg mase $1 kg$ ($c = 420 J/(kg · °C)$) zagrejan na $100 °C$ spustimo u $0,7 kg$ vode na $20 °C$. Kolika je temperatura kad se uspostavi toplotna ravnoteža?",
+   "pitanje": "Metalni teg mase $1 kg$ ($c = 420 J/(kg · °C)$) zagrejan na $100 °C$ spustimo u $0,7 kg$ vode na $20 °C$. Kolika je temperatura kad se uspostavi toplotna ravnoteža? (Gubitke toplote zanemari.)",
    "odgovori": [
     "$30 °C$",
     "$60 °C$",
@@ -21800,7 +21731,7 @@
   {
    "lekcija": 21,
    "tezina": 2,
-   "pitanje": "Sipamo $200 g$ čaja temperature $90 °C$ i dolijemo $50 g$ mleka temperature $10 °C$. Kolika je temperatura čaja sa mlekom? (Uzmi da čaj i mleko imaju isti specifični toplotni kapacitet.)",
+   "pitanje": "Sipamo $200 g$ čaja temperature $90 °C$ i dolijemo $50 g$ mleka temperature $10 °C$. Kolika je temperatura čaja sa mlekom? (Uzmi da čaj i mleko imaju isti specifični toplotni kapacitet i zanemari gubitke toplote.)",
    "odgovori": [
     "$74 °C$",
     "$50 °C$",
@@ -21838,7 +21769,7 @@
   {
    "lekcija": 21,
    "tezina": 3,
-   "pitanje": "Pomešali smo $2 kg$ vode temperature $20 °C$ sa $1 kg$ tople vode, i dobili smešu od $40 °C$. Kolika je bila temperatura tople vode?",
+   "pitanje": "Pomešali smo $2 kg$ vode temperature $20 °C$ sa $1 kg$ tople vode, i dobili smešu od $40 °C$. Kolika je bila temperatura tople vode? (Gubitke toplote zanemari.)",
    "odgovori": [
     "$80 °C$",
     "$60 °C$",

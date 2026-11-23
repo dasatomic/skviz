@@ -21,7 +21,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik 
     ['$20 m$', '$40 m$', '$10 m$', '$5 m$'],
     [K('Put pri slobodnom padu: $h = {g · t^{2}|2}$.'),
      K('$h = {10 m/s^{2} · (2 s)^{2}|2} = {10 · 4|2} m = 20 m$.', [], S('pad', { tip: 'slobodan', visina: 20, strob: 0.5 }))],
-    S('pad', { tip: 'vakuum', levo: '~vazduh', desno: '~vakuum', e1: '🪶', e2: '🪨' }));
+    null);
 
   proveri(Math.sqrt((2 * 80) / g), 4);
   Z(2, 'Za koje vreme telo slobodno padne sa visine $80 m$? ($g = 10 m/s^{2}$)',
@@ -52,7 +52,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik 
     ['$8 m/s$', '$50 m/s$', '$1,6 m/s$', '$20 m/s$'],
     [K('$v = g_{M} · t = 1,6 m/s^{2} · 5 s = 8 m/s$.'),
      K('Na Zemlji bi za isto vreme dostigao $50 m/s$ – Mesec privlači oko $6$ puta slabije.')],
-    S('klatno', { klatna: [{ l: 1, o: '~Zemlja' }, { l: 1, g: 0.16, o: '~Mesec' }], ugao: 25 }));
+    S('pad', { tip: 'slobodan', visina: 20, g: 1.6, brzina: false, sat: false, strob: 99 }));
 
   proveri(Math.sqrt((2 * 80) / g) / Math.sqrt((2 * 20) / g), 2);
   Z(2, 'Telo sa visine $20 m$ slobodno pada $2 s$. Za koje vreme bi slobodno palo sa visine $80 m$?',
@@ -140,7 +140,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik 
     G(visina(45, { telo: '🏐' }), { velicina: 150 }));
 
   proveri(25 * 4 - (g * 16) / 2, 20);
-  Z(3, 'Lopta je bačena uvis brzinom $25 m/s$. Na kojoj visini se nalazi posle $4 s$? ($g = 10 m/s^{2}$)',
+  Z(3, 'Lopta je bačena uvis brzinom $25 m/s$ sa tla. Na kojoj visini se nalazi posle $4 s$? ($g = 10 m/s^{2}$)',
     ['$20 m$, pada naniže', '$100 m$', '$31,25 m$, u vrhu', '$180 m$'],
     [K('$h = v_{0} t − {g t^{2}|2} = 25 · 4 − {10 · 16|2} = 100 − 80 = 20 m$.'),
      K('Brzina: $v = 25 − 10 · 4 = −15 m/s$ – lopta već pada (najviša tačka $31,25 m$ bila je u $2,5 s$).', ['h']),
@@ -228,8 +228,8 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik 
     ['$200 m$', '$40 m$', '$100 m$', '$20 m$'],
     [K('Usporenje je $a = μ g$: na asfaltu $5 m/s^{2}$, na ledu samo $1 m/s^{2}$.'),
      K('Zaustavni put $s = {v^{2}|2a}$. Na asfaltu: ${400|10} = 40 m$.'),
-     K('Na ledu: ${400|2} = 200 m$ – pet puta duže! Zato zimi treba voziti sporije.')],
-    S('kretanje', { tela: [{ e: '🚗', v: 20, a: -5, podloga: 'asfalt', staza: '~asfalt' }, { e: '🚗', v: 20, a: -1, podloga: 'led', staza: '~led' }], duzina: 240, podeok: 20, natpisi: 99, tempo: 4, sat: false }));
+     K('Na ledu: ${400|2} = 200 m$ – pet puta duže! Zato zimi treba voziti sporije.', [], S('kretanje', { tela: [{ e: '🚗', v: 20, a: -5, podloga: 'asfalt', staza: '~asfalt' }, { e: '🚗', v: 20, a: -1, podloga: 'led', staza: '~led' }], duzina: 240, podeok: 20, natpisi: 99, tempo: 4, sat: false }))],
+    null);
 
   Z(1, 'Teška kutija mase $30 kg$ miruje na vodoravnom podu i niko je ne gura. Kolika sila trenja deluje na nju?',
     ['$0 N$', '$300 N$', '$μ · 300 N$', 'Zavisi od vrste poda'],

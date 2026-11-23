@@ -95,7 +95,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera }) => {
     ['$1,5 m$', '$2,7 m$', '$2 m$', '$1 m$'],
     [K('Uslov ravnoteže poluge: momenti sa obe strane su jednaki: $m_{1} · d_{1} = m_{2} · d_{2}$ (težine su srazmerne masama).'),
      K('$30 kg · 2 m = 40 kg · d_{2}$ ⇒ $d_{2} = {60|40} m = 1,5 m$. Teže dete sedi bliže osloncu.', [], S('poluga', { levo: [{ m: 30, d: 2, e: '🧒' }], desno: [{ m: 40, d: 1.5, e: '👧' }], duzina: 2.4 }))],
-    S('poluga', { levo: [{ m: 30, d: 2, e: '🧒' }], desno: [{ m: 40, d: 2.2, e: '👧', do: '?' }], ravnoteza: true, duzina: 2.4 }));
+    S('poluga', { levo: [{ m: 30, d: 2, e: '🧒' }], desno: [], ravnoteza: true, duzina: 2.4 }));
 
   proveri((600 * 0.2) / 1.2, 100);
   Z(2, 'Šipkom kao polugom podižemo kamen težine $600 N$. Kamen je na $0,2 m$ od oslonca, a mi pritiskamo drugi kraj na $1,2 m$ od oslonca. Kolikom najmanjom silom treba pritiskati?',
@@ -105,7 +105,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera }) => {
     S('poluga', { levo: [{ m: 60, d: 0.2, e: '🪨', o: '600 N' }], desno: [{ F: '?', d: 1.2 }], ravnoteza: true, duzina: 1.3 }));
 
   proveri(30 / 0.6, 50);
-  Z(2, 'Da bi se odvrnuo zarđao zavrtanj, potreban je moment sile $30 Nm$. Kolika sila je potrebna ako koristimo ključ dužine $60 cm$?',
+  Z(2, 'Da bi se odvrnuo zarđao zavrtanj, potreban je moment sile $30 Nm$. Kolika sila je potrebna ako koristimo ključ dužine $60 cm$ (sila deluje normalno na ključ)?',
     ['$50 N$', '$18 N$', '$0,5 N$', '$1 800 N$'],
     [K('Krak u metrima: $60 cm = 0,6 m$.'),
      K('$F = {M|d} = {30 Nm|0,6 m} = 50 N$. Sa kraćim ključem ($25 cm$) trebalo bi čak $120 N$.')],
@@ -116,7 +116,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera }) => {
     ['$4 m$', '$0,25 m$', '$1 m$', '$2 m$'],
     [K('$80 kg · 1 m = 20 kg · d$.'),
      K('$d = 4 m$ – dete četiri puta lakše mora da sedi četiri puta dalje.', [], S('poluga', { levo: [{ m: 80, d: 1, e: '🧔' }], desno: [{ m: 20, d: 4, e: '🧒' }], duzina: 4.4 }))],
-    S('poluga', { levo: [{ m: 80, d: 1, e: '🧔' }], desno: [{ m: 20, d: 2.5, e: '🧒', do: '?' }], ravnoteza: true, duzina: 4.4 }));
+    S('poluga', { levo: [{ m: 80, d: 1, e: '🧔' }], desno: [], ravnoteza: true, duzina: 4.4 }));
 
   proveri((800 * 0.4) / 1.6, 200);
   Z(2, 'U građevinskim kolicima je teret težine $800 N$, na $0,4 m$ od ose točka. Ručke su na $1,6 m$ od ose točka. Kolikom silom treba podizati ručke?',
@@ -130,7 +130,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera }) => {
     ['$2,8 kg$', '$5 kg$', '$3 kg$', '$2,2 kg$'],
     [K('Zbir momenata levo: $3 kg · 40 cm + 2 kg · 10 cm = 120 + 20 = 140$ (kg·cm).'),
      K('Desno: $m · 50 cm = 140$ ⇒ $m = 2,8 kg$.', [], S('poluga', { levo: [{ m: 3, d: 0.4, o: '3 kg' }, { m: 2, d: 0.1, o: '2 kg' }], desno: [{ m: 2.8, d: 0.5, o: '2,8 kg' }], duzina: 0.55 }))],
-    S('poluga', { levo: [{ m: 3, d: 0.4, o: '3 kg', do: '40 cm' }, { m: 2, d: 0.1, o: '2 kg', do: '10 cm' }], desno: [{ m: 2, d: 0.5, o: '?', do: '50 cm' }], ravnoteza: true, duzina: 0.55 }));
+    S('poluga', { levo: [{ m: 3, d: 0.4, o: '3 kg', do: '40 cm' }, { m: 2, d: 0.1, o: '2 kg', do: '10 cm' }], desno: [], ravnoteza: true, duzina: 0.55 }));
 
   proveri(40 / (120 + 40), 0.25);
   Z(3, 'Na krajevima lake šipke dužine $1 m$ vise tereti od $120 N$ i $40 N$. Na kom rastojanju od težeg tereta treba postaviti oslonac da bi šipka bila u ravnoteži?',
@@ -141,7 +141,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera }) => {
     G([{ lin: [[0, 0], [10, 0]], b: 4, debljina: 6 }, F(0, 0, 0, -2.4, { o: '120 N', b: 1 }), F(10, 0, 0, -0.8, { o: '40 N', b: 1 }), mera(0, 0.7, 10, 0.7, '1 m'), T('▲ ?', 5, -0.9, { b: 3 })], { velicina: 260 }));
 
   proveri(8 / 0.2, 40);
-  Z(2, 'Da bi se otvorila vrata, potreban je moment sile $8 Nm$. Kolika je potrebna sila ako guramo vrata na samo $20 cm$ od šarki?',
+  Z(2, 'Da bi se otvorila vrata, potreban je moment sile $8 Nm$. Kolika je potrebna sila ako guramo vrata normalno na njih, na samo $20 cm$ od šarki?',
     ['$40 N$', '$1,6 N$', '$160 N$', '$8 N$'],
     [K('$F = {M|d} = {8 Nm|0,2 m} = 40 N$.'),
      K('Zato je kvaka daleko od šarki: na $80 cm$ bilo bi dovoljno samo $10 N$.')],
@@ -181,7 +181,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera }) => {
   Z(3, 'Telo mase $1,2 kg$ potopljeno u vodu istisne $0,4 l$ vode. Kolika je gustina tela? Od čega bi moglo biti napravljeno?',
     ['$3 000 kg/m^{3}$ – kamen', '$300 kg/m^{3}$ – pluta', '$480 kg/m^{3}$ – drvo', '$7 800 kg/m^{3}$ – gvožđe'],
     [K('Zapremina tela je jednaka zapremini istisnute vode: $V = 0,4 l = 0,0004 m^{3}$.'),
-     K('$ρ = {m|V} = {1,2 kg|0,0004 m^{3}} = 3 000 kg/m^{3}$ – tri puta gušće od vode, kao kamen (granit i mermer imaju oko $2 700 kg/m^{3}$).')],
+     K('$ρ = {m|V} = {1,2 kg|0,0004 m^{3}} = 3 000 kg/m^{3}$ – tri puta gušće od vode, kao kamen (bazalt ima oko $3 000 kg/m^{3}$, granit oko $2 700 kg/m^{3}$).')],
     S('tecnost', { tip: 'plivanje', tela: [{ ro: 3000, o: '1,2 kg', b: 4 }] }));
 
   proveri(800 * g * 0.0005, 4);

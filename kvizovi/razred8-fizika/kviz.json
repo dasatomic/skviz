@@ -1327,7 +1327,7 @@
     {
       "lekcija": 4,
       "tezina": 2,
-      "pitanje": "Koji deo uha prvi zatreperi kada do njega stigne zvučni talas?",
+      "pitanje": "Koja je prva opna u uhu koja zatreperi kada do nje stigne zvučni talas?",
       "odgovori": [
         "Bubna opna",
         "Pužnica",
@@ -1559,7 +1559,7 @@
         "Sveća",
         "Svitac"
       ],
-      "zanimljivost": "Mesec odbija samo oko 12% sunčeve svetlosti koja na njega padne – sjajan je kao tamni asfalt.",
+      "zanimljivost": "Mesec odbija oko 12% sunčeve svetlosti koja na njega padne – mnogo manje od snega, a nešto više od tamnog asfalta.",
       "rec": "mesec",
       "medijiOdgovora": {
         "vrsta": "planeta",
@@ -1786,19 +1786,15 @@
     {
       "lekcija": 6,
       "tezina": 1,
-      "pitanje": "Koja strana lika se menja u ravnom ogledalu?",
+      "pitanje": "Svetlosni zrak pada na ravno ogledalo pod uglom 35° u odnosu na normalu. Koliki je odbojni ugao?",
       "odgovori": [
-        "Leva i desna",
-        "Gore i dole",
-        "Nijedna",
-        "Samo ispred i iza"
+        "35°",
+        "55°",
+        "70°",
+        "145°"
       ],
-      "zanimljivost": "Kada podigneš desnu ruku, lik u ogledalu podiže svoju „levu“.",
-      "rec": "simetrija",
-      "medijiOdgovora": {
-        "vrsta": "svg",
-        "kod": "<svg viewBox=\"0 0 320 200\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"0\" y=\"0\" width=\"320\" height=\"200\" rx=\"12\" fill=\"#0b1826\"/><line x1=\"160\" y1=\"20\" x2=\"160\" y2=\"170\" stroke=\"#74b9ff\" stroke-width=\"4\"/><text x=\"80\" y=\"92\" font-size=\"22\" font-weight=\"700\" fill=\"#ffeaa7\" text-anchor=\"middle\" data-lat=\"\">AMBULANTA</text><text x=\"80\" y=\"92\" font-size=\"22\" font-weight=\"700\" fill=\"#ffeaa7\" text-anchor=\"middle\" data-lat=\"\" transform=\"translate(320 0) scale(-1 1)\">AMBULANTA</text><text x=\"80\" y=\"124\" font-size=\"13\" fill=\"#8fa3b8\" text-anchor=\"middle\">~predmet</text><text x=\"240\" y=\"124\" font-size=\"13\" fill=\"#8fa3b8\" text-anchor=\"middle\">~lik</text><text x=\"160\" y=\"190\" font-size=\"13\" fill=\"#74b9ff\" text-anchor=\"middle\">~ogledalo</text></svg>"
-      }
+      "zanimljivost": "Zakon odbijanja važi za svaki zrak – isto za ogledalo na zidu i za sitno ogledalce u periskopu.",
+      "rec": "odbijanje"
     },
     {
       "lekcija": 6,
@@ -2305,7 +2301,7 @@
       "pitanje": "Zašto se kaže da kada gledamo daleke zvezde, gledamo u prošlost?",
       "odgovori": [
         "Svetlost od njih putuje godinama, pa ih vidimo kakve su bile kad je svetlost krenula",
-        "Zvezde su veoma stare, pa sve što vidimo na nebu postoji već milijardama godina unazad",
+        "Teleskopi uvećavaju vreme, pa nam se zvezde čine starijim nego što jesu",
         "Teleskopi sporo obrađuju sliku, pa nam pokazuju zvezde onakve kakve su bile pre par dana",
         "Nije tačno – svetlost stiže trenutno, pa zvezde vidimo upravo onakve kakve su baš sada"
       ],
@@ -4535,14 +4531,14 @@
     {
       "lekcija": 16,
       "tezina": 3,
-      "pitanje": "Zašto ne treba stajati pod usamljenim drvetom za vreme oluje?",
+      "pitanje": "Zbog čega je za vreme grmljavine opasno stajati pod usamljenim drvetom na livadi?",
       "odgovori": [
-        "Munja najčešće udara u visoke predmete",
-        "Drvo može pasti na čoveka zbog jake kiše i vetra",
-        "Zbog lišća",
-        "Pod drvetom se stvaraju jači vetrovi"
+        "Munja najčešće udara u najviši predmet u okolini",
+        "Lišće drveta privlači naelektrisanje iz oblaka",
+        "Drvo pod kišom postaje magnet za gvožđe",
+        "Pod drvetom je vazduh topliji, pa privlači munju"
       ],
-      "zanimljivost": "Najbezbednije je u zgradi ili automobilu, daleko od visokih predmeta i vode.",
+      "zanimljivost": "Udar munje u drvo širi se i kroz tlo i može da „preskoči“ na čoveka pored stabla. Najbezbednije je u zgradi ili automobilu, daleko od visokih predmeta i vode.",
       "rec": "drvo",
       "mediji": {
         "vrsta": "svg",
@@ -5884,33 +5880,15 @@
     {
       "lekcija": 20,
       "tezina": 3,
-      "pitanje": "Kako se vezuju lampice u lancu za jelku da pregorela sijalica ne ugasi ceo lanac?",
+      "pitanje": "Dve sijalice, svaka otpora 6 Ω, vezane su redno na napon 12 V. Kolika je jačina struje kroz svaku?",
       "odgovori": [
-        "Paralelno, svaka lampica ima svoj put za struju",
-        "Sve redno, jedna za drugom u jednom dugom nizu",
-        "Samo jedna lampica prima struju, ostale su na zalihi",
-        "Lampice nisu vezane, svaka ima svoj izvor"
+        "1 A",
+        "2 A",
+        "0,5 A",
+        "6 A"
       ],
-      "zanimljivost": "Kod većine lanaca za jelku sijalice su redno vezane, pa se ugrađuje šant (mali provodnik) koji premošćuje pregorelu sijalicu.",
-      "rec": "paralelno",
-      "medijiOdgovora": {
-        "vrsta": "fizika",
-        "scena": "kolo",
-        "veza": "paralelno",
-        "elementi": [
-          {
-            "t": "sijalica"
-          },
-          {
-            "t": "sijalica",
-            "pregorela": true
-          },
-          {
-            "t": "sijalica"
-          }
-        ],
-        "izvor": "12 V"
-      }
+      "zanimljivost": "Ukupni otpor je $6 Ω + 6 Ω = 12 Ω$, pa je $I = U / R = 12 / 12 = 1 A$ – kroz obe sijalice ista struja.",
+      "rec": "otpor"
     },
     {
       "lekcija": 20,
@@ -8086,7 +8064,7 @@
       "tezina": 2,
       "pitanje": "Šta je znak upozorenja za radioaktivnost?",
       "odgovori": [
-        "Žuti trolist (☢) na crnoj pozadini",
+        "Crni trolist (☢) na žutoj pozadini",
         "Crveni krst na beloj pozadini, znak za prvu pomoć",
         "Plavi krug sa belom linijom, znak za obavezni smer",
         "Zelena strelica na belom polju, znak za izlaz"
@@ -8095,7 +8073,7 @@
       "rec": "znak",
       "medijiOdgovora": {
         "vrsta": "svg",
-        "kod": "<svg viewBox=\"0 0 320 200\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\"><rect width=\"320\" height=\"200\" fill=\"#0b1826\"/><text x=\"160\" y=\"140\" text-anchor=\"middle\" font-size=\"110\" fill=\"#ffd166\">☢</text></svg>"
+        "kod": "<svg viewBox=\"0 0 320 200\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\"><rect width=\"320\" height=\"200\" fill=\"#ffd166\"/><text x=\"160\" y=\"140\" text-anchor=\"middle\" font-size=\"110\" fill=\"#0b1826\">☢</text></svg>"
       }
     },
     {

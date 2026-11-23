@@ -66,6 +66,37 @@
     t.textContent = e;
     return g;
   }
+  // U kom smeru emodži sam od sebe gleda (proveren crtež Apple/Noto): većina vozila, ljudi i životinja gleda ulevo,
+  // pa se pri kretanju udesno ogleda. Neki gledaju udesno, avion i raketa gledaju koso gore-desno (okreću se za 45°),
+  // a simetrični (lopta, kutija, čovek spreda, voz spreda) se ne ogledaju.
+  const GLEDA_DESNO = new Set(['🐌', '🛷', '🛫']);
+  const KOSO = new Set(['✈', '🚀']);
+  const BEZ_OKRETA = new Set(['⚽', '🏀', '🎾', '🎱', '🎳', '🏐', '📦', '🗄', '🧳', '🧍', '🧑', '🧒', '👦', '👧', '🧔', '🚆', '🚃', '🪨', '🧊', '🥚', '🍎', '🎈', '🪢', '🥬', '🔹', '🛸', '🪙', '⚪', '🔴', '🔵']);
+  // okret emodžija koji se kreće udesno (desno = true) ili ulevo: { okreni, rot } za poz()
+  function okretLika(e, desno, rucno = false) {
+    const k = String(e || '').replace(/️/g, '');
+    if (KOSO.has(k)) return desno ? { okreni: false, rot: 45 } : { okreni: true, rot: -45 };
+    if (BEZ_OKRETA.has(k)) return { okreni: false, rot: 0 };
+    return { okreni: (desno !== GLEDA_DESNO.has(k)) !== !!rucno, rot: 0 };
+  }
+  const VOZOVI = new Set(['🚆', '🚄', '🚅', '🚂', '🚈', '🚝', '🚋']);
+  // voz kao kompozicija vagona (gleda udesno, čelo u 0, rep u -duz, točkovi na y = 12)
+  function voz(r, duz, kola, b = '#dfe6e9') {
+    const g = el(r, 'g');
+    const d = duz / kola, h = 17;
+    for (let i = 0; i < kola; i++) {
+      const x = -duz + i * d, celo = i === kola - 1;
+      const w = d - 1.5;
+      if (celo) put(g, `M${f2(x)},${-h + 12} L${f2(x + w - 9)},${-h + 12} Q${f2(x + w)},${-h + 14} ${f2(x + w)},${12 - 3} L${f2(x + w)},12 L${f2(x)},12 Z`, { fill: b, stroke: '#636e72', 'stroke-width': 1 });
+      else el(g, 'rect', { x, y: -h + 12, width: w, height: h, rx: 2.5, fill: b, stroke: '#636e72', 'stroke-width': 1 });
+      el(g, 'rect', { x, y: 4, width: w - (celo ? 2 : 0), height: 3, fill: '#d63031' });
+      const n = Math.max(1, Math.floor((w - (celo ? 12 : 4)) / 7));
+      for (let j = 0; j < n; j++) el(g, 'rect', { x: x + 3 + j * 7, y: -h + 15, width: 4.5, height: 5, rx: 1, fill: '#2d3e50' });
+      if (celo) el(g, 'rect', { x: x + w - 9, y: -h + 15, width: 6, height: 5, rx: 1.5, fill: '#2d3e50' });
+      kr(g, x + 4, 12.5, 2.2, { fill: '#2d3436' }); kr(g, x + w - 5, 12.5, 2.2, { fill: '#2d3436' });
+    }
+    return g;
+  }
   function poz(g, x, y, okreni = false, rot = 0, sk = 1) {
     g.setAttribute('transform', `translate(${f2(x)} ${f2(y)})${rot ? ` rotate(${f2(rot)})` : ''}${okreni || sk !== 1 ? ` scale(${okreni ? -sk : sk} ${sk})` : ''}`);
   }
@@ -157,6 +188,10 @@
         }
         e.setAttribute('points', tacke(out));
       },
+      duzDo(i, f) { // deo (0..1) dužine linije do tačke između pts[i] i pts[i + 1] (f = 0..1)
+        const pre = i > 0 ? duz[i - 1] : 0, seg = (duz[i] ?? pre) - pre;
+        return L ? (pre + seg * f) / L : 0;
+      },
       tacka(u) { // položaj na delu u (0..1) linije
         const cilj = ogr(u, 0, 1) * L;
         for (let i = 1; i < pts.length; i++) {
@@ -223,6 +258,9 @@
     // dela (ako je nema, nastavlja se), a ubrzanje u tom delu, o natpis tela za vreme tog dela; posle poslednjeg dela telo stoji.
     // duzina (m), jedinica, podeok, natpisi (svaki n-ti podeok sa brojem; 99 = bez brojeva), lenjir: false (bez lenjira – kad se pita put),
     // tempo (fizičkih jedinica vremena po s animacije), jedVreme ('s' | 'h' | 'min'), trag (vreme između otisaka), vektor, sat.
+    // Smer emodžija se bira sam (okretLika – avion se okreće nosom napred); okreni: true samo za izuzetke.
+    // Voz (🚆🚄🚅🚂) se crta kao kompozicija u razmeri staze: duzinaTela (m, podrazumevano 75) ili vagoni (25 m po kolima).
+    // Brzine i ubrzanja neka budu stvarna (voz 80–160 km/h, ubrzanje voza ≤ 1 m/s², automobila 2–4 m/s²), a tempo 1 = stvarno vreme.
     kretanje(s, m) {
       const tela = niz(m.tela).slice(0, 4);
       if (!tela.length) tela.push({ e: '🚗', v: 2 });
@@ -285,11 +323,15 @@
         lin(s, X0 - 12, y + 2, X1 + 12, y + 2, PODLOGE[b.podloga] || C.tamna, b.podloga ? 5 : 2.5);
         if (b.staza) tx(s, X0 - 10, y - RED + 22, b.staza, { a: 'start', v: 11, b: C.siva });
         const g = el(s, 'g');
-        const lik = b.e ? emo(g, b.e, 28) : null;
+        // voz se crta kao kompozicija u razmeri staze: duzinaTela (m, podrazumevano 25 m po vagonu), vagoni (broj kola)
+        const jeVoz = VOZOVI.has(String(b.e || '').replace(/️/g, ''));
+        const kola = jeVoz ? ogr(Math.round(br(b.vagoni, br(b.duzinaTela, 75) / 25)), 1, 12) : 0;
+        const duzVoza = jeVoz ? ogr((br(b.duzinaTela, kola * 25) / L) * (X1 - X0), 14 * kola, 0.6 * (X1 - X0)) : 0;
+        const lik = jeVoz ? voz(g, duzVoza, kola) : b.e ? emo(g, b.e, 28) : null;
         if (!b.e) kr(g, 0, 0, 10, { fill: boja(b.b, BOJE[i]) });
         const nat = b.o || niz(b.faze).some((f) => f.o) ? tx(s, 0, y - 42, b.o || '', { v: 11, b: boja(b.b, C.bela) }) : null;
         const vek = m.vektor ? strelica(s, boja(b.b, BOJE[i]), 2.5) : null;
-        return { b, y, g, lik, nat, vek, sled: 0 };
+        return { b, y, g, lik, nat, vek, sled: 0, jeVoz, duzVoza };
       });
       const vmax = Math.max(...kin.map((k) => Math.max(Math.abs(k.v(0)), Math.abs(k.v(Math.min(T, k.tz))))), 1e-6);
       const sat = m.sat === false ? null : tx(s, W - 8, 12, '', { a: 'end', v: 12, b: C.zuta });
@@ -305,12 +347,15 @@
             const vidi = x >= -0.04 * L && x <= 1.04 * L;
             d.g.style.display = vidi ? '' : 'none';
             if (d.nat) d.nat.style.display = vidi ? '' : 'none';
-            const smer = (kin[i].v(0) || br(d.b.a, 0)) >= 0 ? 1 : -1;
+            const smer = (kin[i].v(0) || br(d.b.a, 0) || br(niz(d.b.faze)[0]?.v, 0) || br(niz(d.b.faze)[0]?.a, 0)) >= 0 ? 1 : -1;
             const X = px(ogr(x, -0.04 * L, 1.04 * L));
-            poz(d.g, X, d.y - 14, d.lik ? (smer > 0) !== !!d.b.okreni : false);
-            if (d.nat) at(d.nat, { x: X });
+            if (d.jeVoz) poz(d.g, X, d.y - 14, smer < 0);
+            else if (d.lik) { const o = okretLika(d.b.e, smer > 0, d.b.okreni); poz(d.g, X, d.y - 14, o.okreni, o.rot); }
+            else poz(d.g, X, d.y - 14);
+            const Xs = d.jeVoz ? X - (smer * d.duzVoza) / 2 : X; // natpis i vektor iznad sredine voza
+            if (d.nat) at(d.nat, { x: Xs });
             if (d.nat && kin[i].o) { const o = kin[i].o(tf); if (o) postaviTekst(d.nat, o); }
-            if (d.vek) { if (vidi) d.vek.set(X, d.y - 32, X + (v / vmax) * 46, d.y - 32); else d.vek.g.style.display = 'none'; }
+            if (d.vek) { if (vidi) d.vek.set(Xs, d.y - 32, Xs + (v / vmax) * 46, d.y - 32); else d.vek.g.style.display = 'none'; }
             while (korak && d.sled * korak <= tf + 1e-9 && d.sled * korak <= T) {
               const xs = kin[i].x(d.sled * korak);
               if (xs >= 0 && xs <= L) {
@@ -383,7 +428,7 @@
           if (telG && linije[0]) {
             const l0 = linije[0].t, ymx = Math.max(...l0.map((q) => q[1])) || 1;
             const kraj = Math.min(xc, l0[l0.length - 1][0]);
-            poz(telG, L - 4 + (yNa(l0, kraj) / ymx) * (R - L), yTel, true);
+            const o = okretLika(telo, true); poz(telG, L - 4 + (yNa(l0, kraj) / ymx) * (R - L), yTel, o.okreni, o.rot);
           }
         },
       };
@@ -588,7 +633,7 @@
           trajanje: 9, pauza: 0,
           kadar(t) {
             const xi = 40 + vi * t;
-            poz(izv, xi, 100, true);
+            const o = okretLika(m.e || '🚑', true); poz(izv, xi, 100, o.okreni, o.rot);
             krugovi.forEach((c, i) => {
               const n = Math.floor(t / per) - i;
               if (n < 0) { c.style.display = 'none'; return; }
@@ -718,12 +763,20 @@
           const z = zrak(s, pts, { b: BOJE[i % 6], w: 2.4 });
           const nat = tx(s, pts[40][0], a > 45 ? yTlo - 11 : yTlo + 9, `${a}°`, { v: 11, b: BOJE[i % 6] });
           nat.style.display = 'none';
-          return { z, nat, lopta: kr(s, 0, 0, 4.5, { fill: BOJE[i % 6] }) };
+          return { z, nat, T, pts, lopta: kr(s, 0, 0, 4.5, { fill: BOJE[i % 6] }) };
         });
+        const Tmax = Math.max(...zr.map((o) => o.T));
+        zr.forEach((o) => (o.Tmax = Tmax));
         return {
           trajanje: 3, pauza: 2,
           kadar(t) {
-            zr.forEach((o) => { const u = t / 2.6; o.z.set(u); const [x, y] = o.z.tacka(Math.min(u, 1)); at(o.lopta, { cx: x, cy: y }); o.nat.style.display = u >= 1 ? '' : 'none'; });
+            // stvarno vreme leta: strmiji hitac traje duže (T = 2·v0·sin α / g), najduži traje 2,6 s animacije
+            // tačke putanje su ravnomerno po vremenu, pa lopta usporava pri vrhu kao u stvarnosti
+            zr.forEach((o) => {
+              const u = ogr((t / 2.6) * (o.Tmax / o.T), 0, 1), k = u * 40, i = Math.min(39, Math.floor(k)), f = k - i;
+              const p = o.pts, x = p[i][0] + (p[i + 1][0] - p[i][0]) * f, y = p[i][1] + (p[i + 1][1] - p[i][1]) * f;
+              o.z.set(u > 0 ? o.z.duzDo(i, f) : 0); at(o.lopta, { cx: x, cy: y }); o.nat.style.display = u >= 1 ? '' : 'none';
+            });
           },
         };
       }
@@ -762,7 +815,9 @@
         return {
           trajanje: 7, pauza: 1,
           kadar(t) {
-            const vg = 1 - Math.exp(-t / 1.1), y = 30 + 150 * (t / 7);
+            // brzina raste do granične (v ∝ 1 − e^(−t/τ)), pa je pređeni put integral te brzine
+            const tau = 1.1, vg = 1 - Math.exp(-t / tau), put7 = 7 - tau * (1 - Math.exp(-7 / tau));
+            const y = 30 + (150 * (t - tau * vg)) / put7;
             poz(cov, 120, y);
             if (sl) { fg.set(165, y, 165, y + 50); fo.set(175, y, 175, y - 50 * vg * vg); }
             if (tv) postaviTekst(tv, vg > 0.97 ? '~stalna brzina' : '~brzina raste');
@@ -1359,8 +1414,10 @@
         const p = emo(s, m.e || '🕯️', 40); poz(p, 170 - d, 140);
         const l = emo(s, m.e || '🕯️', 40); poz(l, 170 + d, 140, true); l.setAttribute('opacity', 0.4);
         const oko = emo(s, '👁️', 22); poz(oko, 40, 60);
-        const z1 = zrak(s, [[170 - d, 124], [170, 104], [42, 64]], { b: C.zuta });
-        const z2 = zrak(s, [[170, 104], [170 + d, 124]], { b: C.zuta, isp: true, op: 0.6 });
+        // tačka odbijanja leži na pravoj lik → oko (zakon odbijanja: α = β)
+        const yO = 124 + ((64 - 124) * d) / (d + 170 - 42);
+        const z1 = zrak(s, [[170 - d, 124], [170, yO], [42, 64]], { b: C.zuta });
+        const z2 = zrak(s, [[170, yO], [170 + d, 124]], { b: C.zuta, isp: true, op: 0.6 });
         if (m.o1 || m.o2) {
           strelica(s, C.siva, 1.5).set(170 - d / 2, 186, 170 - d, 186); strelica(s, C.siva, 1.5).set(170 - d / 2, 186, 170, 186);
           strelica(s, C.siva, 1.5).set(170 + d / 2, 186, 170, 186); strelica(s, C.siva, 1.5).set(170 + d / 2, 186, 170 + d, 186);
@@ -2242,6 +2299,7 @@
     },
 
     // Toplota. tip 'provodjenje' (sipke: [{o:'~metal', k:1}, {o:'~drvo', k:0.1}]) | 'strujanje' | 'zracenje' | 'bimetal' | 'sine' | 'zice'.
+    // tekst: false – bez natpisa („nije potreban vazduh ni dodir“, „leto/zima“) kad scena stoji uz pitanje.
     toplota(s, m) {
       const W = 320, H = 200, v = m.tip || 'provodjenje';
       vel(s, W, H);
@@ -2274,7 +2332,8 @@
               const u = ((t / 5 + c.f) % 1) * 2 * Math.PI, st = c.l ? 1 : -1;
               const x = 160 + st * (38 - 32 * Math.cos(u)), y = 112 + 46 * Math.sin(u) * st * 0 + 46 * Math.sin(u);
               // gore u sredini (toplo), dole sa strane (hladno)
-              const xx = 160 + st * (36 + 34 * Math.cos(u)), yy = 112 - 46 * Math.sin(u);
+              // topla voda se diže u sredini (iznad plamena), hladna se spušta uz zidove
+              const xx = 160 + st * (36 + 34 * Math.cos(u)), yy = 112 + 46 * Math.sin(u);
               void x; void y;
               at(c.e, { cx: xx, cy: yy, fill: toplo(0.5 + 0.5 * Math.sin(u) * -Math.cos(u) * 0 + 0.5 * -Math.cos(u)) });
             });
@@ -2285,7 +2344,7 @@
         const sunce = emo(s, '☀️', 54); poz(sunce, 46, 60);
         const talasi = Array.from({ length: 4 }, () => put(s, '', { stroke: C.narandz, 'stroke-width': 2 }));
         const kamen = el(s, 'rect', { x: 230, y: 120, width: 60, height: 40, rx: 8, fill: toplo(0) });
-        tx(s, 160, 190, '~nije potreban vazduh ni dodir', { v: 11, b: C.siva });
+        if (m.tekst !== false) tx(s, 160, 190, '~nije potreban vazduh ni dodir', { v: 11, b: C.siva });
         return {
           trajanje: 6, pauza: 1,
           kadar(t) {
@@ -2304,8 +2363,9 @@
           kadar(t) {
             const u = t < 3.5 ? glatko(t / 2.5) : 1 - glatko((t - 3.5) / 2.5);
             vr.style.opacity = t < 3.5 ? 1 : 0;
+            // zajednički centar krivine iznad trake: donja traka (mesing, više se širi) je spolja – duža je
             const R = 2000 / (0.01 + u * 9), L = 210;
-            const luk2 = (dy) => { if (u < 0.01) return `M60,${105 + dy} L${60 + L},${105 + dy}`; const r = R - dy, a = L / R; return `M60,${105 + dy} A${f2(r)},${f2(r)} 0 0 0 ${f2(60 + r * Math.sin(a))},${f2(105 - R + dy + r * (1 - Math.cos(a)) * -1 + R)}`; };
+            const luk2 = (dy) => { if (u < 0.01) return `M60,${105 + dy} L${60 + L},${105 + dy}`; const r = R + dy, a = L / R; return `M60,${105 + dy} A${f2(r)},${f2(r)} 0 0 0 ${f2(60 + r * Math.sin(a))},${f2(105 - R + r * Math.cos(a))}`; };
             g1.setAttribute('d', luk2(3.5)); g2.setAttribute('d', luk2(-3.5));
           },
         };
@@ -2335,7 +2395,7 @@
           const u = 0.5 - 0.5 * Math.cos((t / 8) * 2 * Math.PI), g = 12 * (1 - u) + 1;
           at(s1, { width: 140 - g / 2 }); at(s2, { x: 160 + g / 2, width: 140 - g / 2 });
           ik.firstChild.textContent = u > 0.5 ? '☀️' : '❄️';
-          postaviTekst(raz, u > 0.5 ? '~leto' : '~zima');
+          if (m.tekst !== false) postaviTekst(raz, u > 0.5 ? '~leto' : '~zima');
         },
       };
     },

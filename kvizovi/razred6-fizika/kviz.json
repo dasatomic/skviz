@@ -714,7 +714,7 @@
       "pitanje": "Zašto je samo posmatranje često nedovoljno za proučavanje pojava?",
       "odgovori": [
         "Može dati nepotpunu ili prividnu sliku",
-        "Zato što posmatrač uvek unosi grešku u rezultat",
+        "Zato što posmatranje uvek košta više od ogleda",
         "Zato što se pojave ne mogu posmatrati golim okom",
         "Zato što pojave nikad ne ponavljaju isti tok"
       ],
@@ -996,7 +996,7 @@
     {
       "lekcija": 4,
       "tezina": 2,
-      "pitanje": "U kojim agregatnim stanjima može biti supstanca?",
+      "pitanje": "Koja su tri osnovna agregatna stanja supstance na Zemlji?",
       "odgovori": [
         "Čvrstom, tečnom i gasovitom",
         "Samo u čvrstom stanju, kao led i kamen",
@@ -1090,7 +1090,7 @@
         "Od neprekidne mase koja se može deliti bez kraja",
         "Od čestica koje postoje samo u tečnostima i gasovima"
       ],
-      "zanimljivost": "U jednoj kapi vode ima oko 1.500 milijardi milijardi molekula.",
+      "zanimljivost": "U jednoj kapi vode ima više od 1.000 milijardi milijardi molekula.",
       "rec": "molekul",
       "medijiOdgovora": {
         "vrsta": "fizika",
@@ -1397,7 +1397,8 @@
       "medijiOdgovora": {
         "vrsta": "fizika",
         "scena": "dizanje",
-        "tip": "kran"
+        "tip": "kran",
+        "e": "🛗"
       }
     },
     {
@@ -1410,7 +1411,7 @@
         "Kružno kretanje, pun krug oko tačke vešanja",
         "Nema kretanja – klatno stoji na jednom mestu"
       ],
-      "zanimljivost": "Galilej je, posmatrajući luster u katedrali u Pizi, primetio da jedan zamah klatna uvek traje isto, bio zamah veliki ili mali.",
+      "zanimljivost": "Galilej je, posmatrajući luster u katedrali u Pizi, primetio da jedan zamah klatna traje gotovo isto, i kad je zamah veći i kad je manji.",
       "rec": "klatno",
       "medijiOdgovora": {
         "vrsta": "fizika",
@@ -1429,27 +1430,7 @@
         "Svi su živi i dišu vazduh kroz pluća"
       ],
       "zanimljivost": "Puž pređe 1 metar za oko četvrt sata – ali i to je mehaničko kretanje!",
-      "rec": "puž",
-      "mediji": {
-        "vrsta": "fizika",
-        "scena": "kretanje",
-        "duzina": 100,
-        "tela": [
-          {
-            "e": "🚆",
-            "v": 25
-          },
-          {
-            "e": "🚲",
-            "v": 6
-          },
-          {
-            "e": "🐌",
-            "v": 1
-          }
-        ],
-        "trag": 2
-      }
+      "rec": "puž"
     },
     {
       "lekcija": 5,
@@ -1529,7 +1510,7 @@
         "tela": [
           {
             "e": "🚆",
-            "v": 20
+            "v": 25
           }
         ],
         "trag": 1,
@@ -1657,7 +1638,7 @@
       "mediji": {
         "vrsta": "fizika",
         "scena": "kretanje",
-        "duzina": 200,
+        "duzina": 300,
         "tela": [
           {
             "e": "🚆",
@@ -2461,17 +2442,17 @@
         "Ravnomerno",
         "Kružno"
       ],
-      "zanimljivost": "Automobil koji koči od 50 km/h zaustavi se za oko 10–15 metara na suvom putu.",
+      "zanimljivost": "Automobil koji naglo koči na suvom putu pri 72 km/h zaustavi se za oko 25 metara, a pri 50 km/h za oko 12 metara – dvostruko veća brzina znači četiri puta duži put kočenja.",
       "rec": "kočenje",
       "medijiOdgovora": {
         "vrsta": "fizika",
         "scena": "kretanje",
-        "duzina": 50,
+        "duzina": 30,
         "tela": [
           {
             "e": "🚗",
             "v": 20,
-            "a": -4,
+            "a": -8,
             "o": "~usporava"
           }
         ],
@@ -2541,16 +2522,17 @@
       "medijiOdgovora": {
         "vrsta": "fizika",
         "scena": "kretanje",
-        "duzina": 50,
+        "duzina": 300,
         "tela": [
           {
             "e": "🚆",
             "v": 0,
-            "a": 4
+            "a": 0.8
           }
         ],
         "trag": 1,
-        "vektor": true
+        "vektor": true,
+        "tempo": 3
       }
     },
     {
@@ -3319,7 +3301,7 @@
         "$V$",
         "$M$"
       ],
-      "zanimljivost": "Oznaka dolazi od engleske reči force – sila.",
+      "zanimljivost": "Oznaka F se piše kurzivom, jer je to oznaka veličine, a ne jedinice.",
       "rec": "oznaka"
     },
     {
@@ -3692,7 +3674,7 @@
       "tezina": 2,
       "pitanje": "Zašto balon sa helijumom ne pada na zemlju, iako na njega deluje gravitacija?",
       "odgovori": [
-        "Druga sila (potisak vazduha) je veća od njegove težine",
+        "Druga sila (uzgon vazduha) je veća od njegove težine",
         "Na njega uopšte ne deluje gravitacija, jer je ispunjen gasom",
         "Helijum je magnetan, pa ga odbija Zemljino magnetno polje",
         "Helijum je tako lak da ga gravitacija ne privlači"
@@ -3766,7 +3748,7 @@
     {
       "lekcija": 11,
       "tezina": 2,
-      "pitanje": "Na kom od ovih nebeskih tela je sila teže najjača?",
+      "pitanje": "Na površini kog od ovih nebeskih tela je sila teže najjača?",
       "odgovori": [
         "Na Suncu, jer ima najveću masu",
         "Na Mesecu, jer je najbliži",
@@ -5388,7 +5370,7 @@
         "Satom",
         "Termometrom"
       ],
-      "zanimljivost": "Najstarija sačuvana merna motka potiče iz Mesopotamije i stara je oko 4.500 godina.",
+      "zanimljivost": "Stari Egipćani su dužinu merili laktom (kubitom) – od lakta do vrha srednjeg prsta, oko 52 cm.",
       "rec": "lenjir",
       "medijiOdgovora": {
         "vrsta": "svg",
@@ -5806,7 +5788,7 @@
         "Brojanjem udaraca crkvenog zvona",
         "Sunčanim satom u svojoj radionici"
       ],
-      "zanimljivost": "Galilej je vreme merio i sopstvenim pulsom – tako je otkrio da zamah klatna uvek traje jednako dugo.",
+      "zanimljivost": "Galilej je vreme merio i sopstvenim pulsom – tako je došao do zaključka da zamah klatna traje gotovo jednako dugo.",
       "rec": "voda",
       "mediji": {
         "vrsta": "fizika",
@@ -5966,7 +5948,7 @@
         "Blez Paskal"
       ],
       "tezina": 3,
-      "zanimljivost": "Galilej je primetio da klatno uvek osciluje jednako dugo, a Holanđanin Hajgens je tu ideju iskoristio za prvi precizan sat sa klatnom.",
+      "zanimljivost": "Galilej je primetio da klatno gotovo uvek osciluje jednako dugo, a Holanđanin Hajgens je tu ideju iskoristio za prvi precizan sat sa klatnom.",
       "rec": "klatno",
       "lekcija": 18,
       "mediji": {
@@ -7745,7 +7727,7 @@
         "Zatvorene flaše spojene čepom u kojima se gas sabija i tečnost diže uvis",
         "Sudovi bez tečnosti spojeni cevima, koji služe za merenje pritiska vazduha"
       ],
-      "zanimljivost": "Na principu spojenih sudova rade čajnik, vodovod i libela kojom majstori proveravaju da li je nešto vodoravno.",
+      "zanimljivost": "Na principu spojenih sudova rade čajnik i vodovod – voda u povezanim sudovima uvek stane na isti nivo.",
       "rec": "spojeni",
       "medijiOdgovora": {
         "vrsta": "fizika",
@@ -8144,7 +8126,7 @@
     {
       "lekcija": 24,
       "tezina": 3,
-      "pitanje": "Zašto se kesica čipsa kupljena u Beogradu „naduje“ na vrhu Kopaonika?",
+      "pitanje": "Zašto se kesica čipsa kupljena u Beogradu „naduje“ na Kopaoniku?",
       "odgovori": [
         "Spoljašnji pritisak je manji, pa vazduh u kesi širi kesu",
         "Čips se topi na visini i stvara gas",

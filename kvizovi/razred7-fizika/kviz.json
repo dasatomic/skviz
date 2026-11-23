@@ -270,7 +270,7 @@
         "3 m/s²",
         "14 m/s²"
       ],
-      "zanimljivost": "Kočnice na mokrom putu daju mnogo manje usporenje – zato biciklisti po kiši voze sporije.",
+      "zanimljivost": "Na mokrom putu trenje između guma i puta je manje, pa kočenje daje manje usporenje i zaustavni put je duži.",
       "rec": "bicikl",
       "medijiOdgovora": {
         "vrsta": "fizika",
@@ -612,7 +612,7 @@
         "0,5 m/s²",
         "75 m/s²"
       ],
-      "zanimljivost": "Ako se uračuna i trenje, stvarno ubrzanje kolica bilo bi manje.",
+      "zanimljivost": "Sila od 50 N otprilike je težina tela mase 5 kg.",
       "rec": "kolica",
       "mediji": {
         "vrsta": "fizika",
@@ -652,20 +652,7 @@
         "100 N"
       ],
       "zanimljivost": "Sila od 10 N je otprilike težina flaše vode od 1 litra.",
-      "rec": "sila",
-      "mediji": {
-        "vrsta": "fizika",
-        "scena": "sile",
-        "sile": [
-          {
-            "F": 10,
-            "ugao": 0,
-            "o": "F = ?"
-          }
-        ],
-        "telo": "4 kg",
-        "kretanje": true
-      }
+      "rec": "sila"
     },
     {
       "lekcija": 2,
@@ -1310,15 +1297,18 @@
       "medijiOdgovora": {
         "vrsta": "fizika",
         "scena": "kretanje",
-        "duzina": 60,
+        "duzina": 300,
         "tela": [
           {
             "e": "🚆",
             "v": 0,
-            "a": 0.5
+            "a": 0.5,
+            "x0": 60
           }
         ],
-        "trag": 1
+        "trag": 1,
+        "trajanje": 30,
+        "tempo": 3
       }
     },
     {
@@ -1595,7 +1585,7 @@
     {
       "lekcija": 4,
       "tezina": 2,
-      "pitanje": "Kada su srednja i trenutna brzina jednake?",
+      "pitanje": "U kom kretanju su srednja i trenutna brzina jednake u svakom trenutku?",
       "odgovori": [
         "Kod ravnomernog kretanja",
         "Kod ubrzanog kretanja",
@@ -2962,7 +2952,7 @@
       "tezina": 3,
       "pitanje": "Zašto veslač gura veslo unazad?",
       "odgovori": [
-        "Voda deluje na veslo napred i pokreće čamac",
+        "Da veslo gurne vodu unazad, a voda tada gura čamac napred",
         "Da veslo smanji otpor vode ispred čamca",
         "Da veslo bude što dalje od čamca, pa da ne smeta",
         "Da napravi talase koji guraju čamac napred"
@@ -3020,7 +3010,7 @@
     {
       "lekcija": 6,
       "tezina": 3,
-      "pitanje": "Ako dečak (40 kg) i odrasli (80 kg) na klizaljkama odgurnu jedan drugog, kako se odnose njihove brzine?",
+      "pitanje": "Ako dečak (40 kg) i odrasli (80 kg) na klizaljkama odgurnu jedan drugog (zanemarimo trenje), kako se odnose njihove brzine?",
       "odgovori": [
         "Dečak ima dvostruko veću brzinu",
         "Brzine su potpuno iste za oboje",
@@ -3190,7 +3180,8 @@
         "tip": "slobodan",
         "visina": 20,
         "natpisi": false,
-        "brzina": false
+        "brzina": false,
+        "sat": false
       },
       "medijiOdgovora": {
         "vrsta": "fizika",
@@ -3288,7 +3279,7 @@
     {
       "lekcija": 7,
       "tezina": 2,
-      "pitanje": "Telo padne za 1 s. Sa koje visine je pušteno ($g = 10 m/s²$)?",
+      "pitanje": "Telo slobodno padne za 1 s (bez otpora vazduha, $g = 10 m/s²$). Sa koje visine je pušteno?",
       "odgovori": [
         "5 m",
         "10 m",
@@ -3404,7 +3395,7 @@
       "rec": "kiša"
     },
     {
-      "pitanje": "Kakvo je kretanje lopte bačene naviše dok pada nazad ka zemlji?",
+      "pitanje": "Kakvo je kretanje lopte bačene naviše dok pada nazad ka zemlji (bez otpora vazduha)?",
       "odgovori": [
         "Ravnomerno ubrzano",
         "Ravnomerno",
@@ -3447,7 +3438,7 @@
     {
       "lekcija": 8,
       "tezina": 3,
-      "pitanje": "Lopta je bačena naviše brzinom 20 m/s. Posle koliko vremena dostiže najvišu tačku ($g = 10 m/s²$)?",
+      "pitanje": "Lopta je bačena naviše brzinom 20 m/s. Posle koliko vremena dostiže najvišu tačku (bez otpora vazduha, $g = 10 m/s²$)?",
       "odgovori": [
         "2 s",
         "20 s",
@@ -3469,7 +3460,7 @@
     {
       "lekcija": 8,
       "tezina": 3,
-      "pitanje": "Do koje visine stigne telo bačeno naviše brzinom 10 m/s ($g = 10 m/s²$)?",
+      "pitanje": "Do koje visine stigne telo bačeno naviše brzinom 10 m/s (bez otpora vazduha, $g = 10 m/s²$)?",
       "odgovori": [
         "5 m",
         "10 m",
@@ -3492,7 +3483,7 @@
     {
       "lekcija": 8,
       "tezina": 2,
-      "pitanje": "Kakvo je kretanje kamena bačenog vertikalno naniže?",
+      "pitanje": "Kakvo je kretanje kamena bačenog vertikalno naniže (bez otpora vazduha)?",
       "odgovori": [
         "Ravnomerno ubrzano, sa početnom brzinom",
         "Ravnomerno usporeno, jer ga otpor vazduha koči",
@@ -3578,7 +3569,7 @@
     {
       "lekcija": 8,
       "tezina": 3,
-      "pitanje": "Kamen je bačen naniže brzinom 5 m/s sa mosta. Kolika mu je brzina posle 2 s ($g = 10 m/s²$)?",
+      "pitanje": "Kamen je bačen naniže brzinom 5 m/s sa mosta. Kolika mu je brzina posle 2 s (bez otpora vazduha, $g = 10 m/s²$)?",
       "odgovori": [
         "25 m/s",
         "20 m/s",
@@ -3601,7 +3592,7 @@
     {
       "lekcija": 8,
       "tezina": 2,
-      "pitanje": "Kakvo ubrzanje ima lopta u hicu naviše?",
+      "pitanje": "Kakvo ubrzanje ima lopta u hicu naviše (bez otpora vazduha)?",
       "odgovori": [
         "Stalno, oko 9,81 m/s², usmereno naniže",
         "Prvo naviše, a zatim naniže, posle vrha",
@@ -3686,7 +3677,7 @@
         "Zbog pritiska vazduha koji pritiska mlaz odozgo naniže",
         "Voda se pri letu sama zaledi i padne"
       ],
-      "zanimljivost": "Najviši vodoskok na svetu, u Džedi, izbacuje vodu do visine oko 300 m.",
+      "zanimljivost": "Najviši vodoskok na svetu, u Džedi, izbacuje vodu do visine više od 250 m.",
       "rec": "vodoskok",
       "medijiOdgovora": {
         "vrsta": "fizika",
@@ -3700,7 +3691,7 @@
     {
       "lekcija": 8,
       "tezina": 3,
-      "pitanje": "Lopta bačena naviše vratila se posle 6 s. Kolikom brzinom je bačena ($g = 10 m/s²$)?",
+      "pitanje": "Lopta bačena naviše vratila se posle 6 s. Kolikom brzinom je bačena (bez otpora vazduha, $g = 10 m/s²$)?",
       "odgovori": [
         "30 m/s",
         "60 m/s",
@@ -3969,7 +3960,6 @@
       ],
       "zanimljivost": "U svemiru se ulje i voda ne razdvajaju kao na Zemlji, jer bez gravitacije razlika u gustini ne gura lakšu tečnost naviše.",
       "rec": "mehurić",
-      "vrsta": "izbor",
       "medijiOdgovora": {
         "vrsta": "svg",
         "kod": "<svg viewBox=\"0 0 320 180\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"320\" height=\"180\" rx=\"8\" fill=\"#0b1826\"/><rect x=\"40\" y=\"40\" width=\"100\" height=\"120\" fill=\"rgba(46,134,222,.35)\" stroke=\"#dfe6e9\" stroke-width=\"3\"/><rect x=\"180\" y=\"40\" width=\"100\" height=\"120\" fill=\"rgba(46,134,222,.35)\" stroke=\"#dfe6e9\" stroke-width=\"3\"/><circle cx=\"70\" cy=\"140\" r=\"5\" fill=\"#fff\"/><circle cx=\"90\" cy=\"120\" r=\"7\" fill=\"#fff\"/><circle cx=\"110\" cy=\"150\" r=\"4\" fill=\"#fff\"/><circle cx=\"75\" cy=\"100\" r=\"6\" fill=\"#fff\"/><circle cx=\"210\" cy=\"120\" r=\"5\" fill=\"#fff\"/><circle cx=\"235\" cy=\"95\" r=\"7\" fill=\"#fff\"/><circle cx=\"255\" cy=\"140\" r=\"4\" fill=\"#fff\"/><circle cx=\"220\" cy=\"70\" r=\"6\" fill=\"#fff\"/><line x1=\"150\" y1=\"150\" x2=\"150\" y2=\"62\" stroke=\"#ffeaa7\" stroke-width=\"3\"/><polygon points=\"150,50 144,64 156,64\" fill=\"#ffeaa7\"/><text x=\"90\" y=\"175\" fill=\"#fff\" font-size=\"14\" text-anchor=\"middle\" font-family=\"sans-serif\">Na Zemlji</text><text x=\"230\" y=\"175\" fill=\"#fff\" font-size=\"14\" text-anchor=\"middle\" font-family=\"sans-serif\">Bez težine</text></svg>"
@@ -4058,7 +4048,7 @@
         "Masa tela koje klizi po podlozi, izražena u kilogramima ili gramima",
         "Jedinica za merenje sile trenja, kao što je to njutn ili kilopond"
       ],
-      "zanimljivost": "Između gume i suvog asfalta koeficijent je oko 0,7, a između čelika i leda svega oko 0,02.",
+      "zanimljivost": "Između gume i suvog asfalta koeficijent je oko 0,7, a između čelika i leda svega oko 0,03.",
       "rec": "koeficijent"
     },
     {
@@ -4149,7 +4139,7 @@
     {
       "lekcija": 10,
       "tezina": 1,
-      "pitanje": "Koje se najlakše kreće po podlozi: vozilo sa točkovima, sanke po asfaltu ili kutija koju vučemo?",
+      "pitanje": "Tri tela iste mase kreću se po asfaltu: vozilo na točkovima, sanke i kutija koju vučemo. Koje se najlakše kreće?",
       "odgovori": [
         "Vozilo sa točkovima",
         "Sanke po asfaltu",
@@ -4562,7 +4552,7 @@
       ],
       "zanimljivost": "Lopta na ravnom stolu je u indiferentnoj ravnoteži.",
       "rec": "lopta",
-      "mediji": {
+      "medijiOdgovora": {
         "vrsta": "svg",
         "kod": "<svg viewBox=\"0 0 320 180\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"320\" height=\"180\" rx=\"8\" fill=\"#0b1826\"/><line x1=\"20\" y1=\"140\" x2=\"300\" y2=\"140\" stroke=\"#dfe6e9\" stroke-width=\"4\"/><circle cx=\"160\" cy=\"118\" r=\"22\" fill=\"#ffeaa7\"/></svg>"
       }
@@ -6651,15 +6641,15 @@
     {
       "lekcija": 17,
       "tezina": 1,
-      "pitanje": "Kada skakač u vis dođe u najvišu tačku skoka, koja energija je najveća?",
+      "pitanje": "Kada loptica bačena naviše (bez otpora vazduha) dođe u najvišu tačku, koja energija je najveća?",
       "odgovori": [
         "Potencijalna",
         "Kinetička",
         "Toplotna",
         "Električna"
       ],
-      "zanimljivost": "Svetski rekord u skoku uvis, 2,45 m, postavio je Havijer Sotomajor 1993.",
-      "rec": "skok"
+      "zanimljivost": "Na vrhu putanje brzina loptice je nula, pa je sva kinetička energija prešla u potencijalnu.",
+      "rec": "vrh"
     },
     {
       "lekcija": 17,
@@ -6677,7 +6667,7 @@
     {
       "lekcija": 17,
       "tezina": 3,
-      "pitanje": "Klatno kreće sa visine 0,2 m. Kolika mu je brzina u najnižoj tački ($g = 10 m/s²$)?",
+      "pitanje": "Klatno kreće sa visine 0,2 m. Kolika mu je brzina u najnižoj tački (bez trenja i otpora vazduha, $g = 10 m/s²$)?",
       "odgovori": [
         "2 m/s",
         "4 m/s",
@@ -6689,7 +6679,7 @@
       "mediji": {
         "vrsta": "fizika",
         "scena": "klatno",
-        "ugao": 30,
+        "ugao": 37,
         "klatna": [
           {
             "l": 1
@@ -7096,7 +7086,7 @@
         "Zbog ptica koje sede na njima",
         "Zbog vetra koji ih vuče dole"
       ],
-      "zanimljivost": "Zimi se žice skrate i zategnu – zato se ne zatežu previše pri postavljanju.",
+      "zanimljivost": "Žice se postavljaju sa rezervom (blagim provesom) jer se zimi skupe i mogu da pucaju od zatezanja.",
       "rec": "žice",
       "medijiOdgovora": {
         "vrsta": "fizika",
@@ -7287,7 +7277,7 @@
     {
       "lekcija": 19,
       "tezina": 1,
-      "pitanje": "Šta se dešava sa telom kada se ohladi?",
+      "pitanje": "Šta se uglavnom dešava sa telom kada se ohladi?",
       "odgovori": [
         "Uglavnom se skuplja",
         "Širi se, kao i pri zagrevanju",
@@ -8187,7 +8177,7 @@
         "Toplota se meri termometrom u stepenima, a temperatura u džulima",
         "Temperatura se meri u džulima, a toplota u stepenima Celzijusa ili kelvinima"
       ],
-      "zanimljivost": "Varnica od 1 000 °C ne opeče jer nosi malo energije, a kanta vode od 60 °C može da opeče.",
+      "zanimljivost": "Iskra od 1 000 °C ima malo toplote i brzo se ugasi na koži, a kanta vode od 60 °C može ozbiljno da opeče.",
       "rec": "razlika",
       "mediji": {
         "vrsta": "fizika",

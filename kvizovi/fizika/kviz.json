@@ -120,7 +120,7 @@
     },
     {
       "tezina": 1,
-      "pitanje": "Koja je ovo planeta, poznata po prstenovima?",
+      "pitanje": "Koja planeta ima najuočljiviji sistem prstenova?",
       "mediji": {
         "vrsta": "planeta",
         "ime": "saturn"
@@ -179,7 +179,7 @@
       "rec": "merkur",
       "mediji": {
         "vrsta": "svg",
-        "kod": "<svg viewBox=\"0 0 400 240\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"150\" cy=\"120\" r=\"22\" fill=\"#ffeaa7\"/><circle cx=\"150\" cy=\"120\" r=\"40\" fill=\"none\" stroke=\"#74b9ff\" stroke-width=\"2\"/><circle cx=\"150\" cy=\"120\" r=\"70\" fill=\"none\" stroke=\"#74b9ff\" stroke-width=\"2\"/><circle cx=\"150\" cy=\"120\" r=\"100\" fill=\"none\" stroke=\"#74b9ff\" stroke-width=\"2\"/><text x=\"200\" y=\"125\" fill=\"#fff\" font-size=\"18\">1</text><text x=\"230\" y=\"125\" fill=\"#fff\" font-size=\"18\">2</text><text x=\"260\" y=\"125\" fill=\"#fff\" font-size=\"18\">3</text></svg>"
+        "kod": "<svg viewBox=\"0 0 400 240\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"150\" cy=\"120\" r=\"22\" fill=\"#ffeaa7\"/><circle cx=\"150\" cy=\"120\" r=\"40\" fill=\"none\" stroke=\"#74b9ff\" stroke-width=\"2\"/><circle cx=\"150\" cy=\"120\" r=\"70\" fill=\"none\" stroke=\"#74b9ff\" stroke-width=\"2\"/><circle cx=\"150\" cy=\"120\" r=\"100\" fill=\"none\" stroke=\"#74b9ff\" stroke-width=\"2\"/><rect x=\"138\" y=\"71\" width=\"24\" height=\"18\" rx=\"4\" fill=\"#0c1a20\"/><text x=\"150\" y=\"86\" fill=\"#fff\" font-size=\"16\" text-anchor=\"middle\">1</text><rect x=\"138\" y=\"41\" width=\"24\" height=\"18\" rx=\"4\" fill=\"#0c1a20\"/><text x=\"150\" y=\"56\" fill=\"#fff\" font-size=\"16\" text-anchor=\"middle\">2</text><rect x=\"138\" y=\"11\" width=\"24\" height=\"18\" rx=\"4\" fill=\"#0c1a20\"/><text x=\"150\" y=\"26\" fill=\"#fff\" font-size=\"16\" text-anchor=\"middle\">3</text></svg>"
       }
     },
     {
@@ -368,13 +368,7 @@
         "Pero, jer je lakše"
       ],
       "zanimljivost": "Astronaut Dejvid Skot je to 1971. pokazao na Mesecu sa čekićem i sokolovim perom – pali su zajedno! Galilej je to predvideo vekovima ranije: bez otpora vazduha sva tela padaju jednako brzo.",
-      "rec": "vakuum",
-      "medijiOdgovora": {
-        "vrsta": "fizika",
-        "scena": "pad",
-        "tip": "vakuum",
-        "e2": "🔨"
-      }
+      "rec": "vakuum"
     },
     {
       "tezina": 1,
@@ -497,7 +491,7 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Koliko je planeta u Sunčevom sistemu?",
+      "pitanje": "Koliko planeta ima Sunčev sistem prema današnjoj definiciji Međunarodne astronomske unije?",
       "odgovori": [
         "8",
         "9",
@@ -537,7 +531,7 @@
         "Oko 150 miliona $km$"
       ],
       "tezina": 2,
-      "zanimljivost": "U taj razmak bi stale sve ostale planete Sunčevog sistema, poređane jedna do druge! Udaljenost od 150 miliona $km$ je, inače, razdaljina od Zemlje do Sunca.",
+      "zanimljivost": "Da su Zemlje poređane jedna do druge, u taj razmak bi stalo oko 30 Zemalja. Udaljenost od 150 miliona $km$ je, inače, razdaljina od Zemlje do Sunca.",
       "rec": "mesec",
       "mediji": {
         "vrsta": "fizika",
@@ -569,7 +563,7 @@
       "pitanje": "Koliko otprilike traje da svetlost sa Meseca stigne do Zemlje?",
       "odgovori": [
         "Oko 1,3 sekunde",
-        "Oko 8 minuta",
+        "Oko 8 minuta i 20 sekundi",
         "Oko 1 sat",
         "Trenutno"
       ],
@@ -726,10 +720,10 @@
       "tezina": 1,
       "pitanje": "Koja je jedinica za vreme u SI sistemu?",
       "odgovori": [
-        "Sekunda",
-        "Minut",
-        "Sat",
-        "Dan"
+        "Sekunda (s)",
+        "Minut (min)",
+        "Sat (h)",
+        "Dan (d)"
       ],
       "zanimljivost": "Sekunda je danas definisana pomoću oscilacija atoma cezijuma – atomski satovi pogreše manje od jedne sekunde za desetine miliona godina.",
       "rec": "sekunda",
@@ -916,7 +910,7 @@
         "scena": "pad",
         "tip": "slobodan",
         "visina": 20,
-        "brzina": true,
+        "brzina": false,
         "sat": true
       },
       "rec": "ubrzanje"
@@ -953,7 +947,7 @@
         "0,2 m/s",
         "120 m/s"
       ],
-      "zanimljivost": "$v = s/t = 100/20 = 5 m/s$. To je 18 km/h – brzina brzog trčanja ili lagane vožnje bicikla.",
+      "zanimljivost": "$v = s/t = 100/20 = 5 m/s$. To je 18 km/h – brzina laganog trčanja ili vožnje bicikla.",
       "rec": "brzina",
       "medijiOdgovora": {
         "vrsta": "fizika",
@@ -1035,7 +1029,7 @@
         "tela": [
           {
             "e": "🧍",
-            "v": 3,
+            "v": 1.4,
             "a": 0,
             "x0": 0,
             "o": "?",
@@ -1051,8 +1045,8 @@
       "odgovori": [
         "Prosta mašina koja pomoću oslonca olakšava podizanje tereta",
         "Vrsta motora koji pokreće veoma teške terete pomoću pare i vode",
-        "Električni prekidač",
-        "Merni instrument"
+        "Električni prekidač za struju u kući",
+        "Merni instrument za merenje jačine struje"
       ],
       "zanimljivost": "Arhimed je rekao: „Dajte mi oslonac i pomeriću Zemlju!“ Klackalica, makaze i klešta su poluge.",
       "rec": "poluga",
@@ -1165,11 +1159,6 @@
         "Preko magnetnog polja"
       ],
       "zanimljivost": "Između Sunca i Zemlje je skoro prazan prostor, pa ni provođenje ni strujanje nisu mogući. Svetlost i toplotno zračenje putuju i kroz vakuum.",
-      "medijiOdgovora": {
-        "vrsta": "fizika",
-        "scena": "toplota",
-        "tip": "zracenje"
-      },
       "rec": "zračenje"
     },
     {
@@ -1182,12 +1171,7 @@
         "Da bi kiša lakše oticala"
       ],
       "zanimljivost": "Većina tela se pri zagrevanju širi. Ajfelova kula leti „naraste“ oko 15 cm iz istog razloga.",
-      "rec": "šina",
-      "medijiOdgovora": {
-        "vrsta": "fizika",
-        "scena": "toplota",
-        "tip": "sine"
-      }
+      "rec": "šina"
     },
     {
       "tezina": 2,
@@ -1281,9 +1265,9 @@
       "pitanje": "Kako se zove zvuk previsok da bi ga čovek čuo?",
       "odgovori": [
         "Ultrazvuk",
-        "Infrazvuk",
-        "Eho",
-        "Šum"
+        "Infrazvuk (ispod 20 Hz)",
+        "Eho (odjek zvuka)",
+        "Šum u pozadini"
       ],
       "zanimljivost": "Čovek čuje od oko 20 do 20.000 Hz. Psi čuju ultrazvuk – zato postoje pištaljke za pse koje mi ne čujemo. Ultrazvukom lekari gledaju bebe u stomaku.",
       "medijiOdgovora": {
@@ -1515,7 +1499,7 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Koja je ovo plava planeta, najudaljenija od Sunca?",
+      "pitanje": "Koja je ovo plava planeta, najudaljenija od Sunca među osam planeta?",
       "odgovori": [
         "Neptun",
         "Uran",
@@ -1566,9 +1550,9 @@
       "pitanje": "Šta je svetlosna godina?",
       "odgovori": [
         "Put koji svetlost pređe za godinu dana",
-        "Godina sa mnogo sunčanih dana",
+        "Godina u kojoj ima mnogo sunčanih dana",
         "Vreme za koje Zemlja obiđe Sunce",
-        "Starost neke zvezde"
+        "Koliko godina ima neka zvezda"
       ],
       "zanimljivost": "Svetlosna godina je mera udaljenosti, oko 9.460 milijardi $km$. Najbliža zvezda posle Sunca, Proksima Kentauri, udaljena je oko 4,2 svetlosne godine.",
       "rec": "svetlost"
@@ -1613,8 +1597,8 @@
       "odgovori": [
         "Mesec se nađe između Sunca i Zemlje",
         "Zemlja se nađe između Sunca i Meseca",
-        "Sunce se ugasi",
-        "Oblaci zaklone Sunce"
+        "Sunce se privremeno ugasi za nekoliko minuta",
+        "Oblaci iz atmosfere zaklone Sunce"
       ],
       "zanimljivost": "Ne gledaj u Sunce ni tokom pomračenja bez posebnih naočara – može trajno da ošteti vid! Kod pomračenja Meseca Zemlja baca senku na Mesec.",
       "rec": "mesec",
@@ -1631,7 +1615,7 @@
         "Područje sa toliko jakom gravitacijom da ni svetlost ne može da pobegne",
         "Velika rupa u Zemljinoj kori koja vodi duboko do užarenog jezgra planete",
         "Tamna planeta koja ne odbija svetlost Sunca pa je ne vidimo ni teleskopom",
-        "Ugašeno Sunce"
+        "Ugašena zvezda koja više ne sija"
       ],
       "zanimljivost": "Prvu „sliku“ crne rupe snimili su astronomi 2019, koristeći teleskope širom sveta. U središtu našeg Mlečnog puta je ogromna crna rupa.",
       "rec": "gravitacija",
@@ -1659,7 +1643,7 @@
     },
     {
       "tezina": 2,
-      "pitanje": "Ko je postavio heliocentrični sistem – da se Zemlja okreće oko Sunca?",
+      "pitanje": "Ko je u 16. veku objavio heliocentrični sistem – da se Zemlja okreće oko Sunca?",
       "odgovori": [
         "Nikola Kopernik",
         "Klaudije Ptolemej",
@@ -1697,8 +1681,8 @@
       "odgovori": [
         "Zato što zajedno sa stanicom stalno „padaju“ oko Zemlje",
         "Zato što u svemiru uopšte nema gravitacije, čak ni blizu planeta i Zemlje",
-        "Zato što nose posebna odela",
-        "Zbog magneta u stanici"
+        "Zato što nose posebna odela za lebdenje",
+        "Zbog jakih magneta ugrađenih u zidove stanice"
       ],
       "zanimljivost": "Stanica se kreće toliko brzo (oko 28.000 km/h) da, dok pada ka Zemlji, stalno „promaši“ – i tako kruži. Sve unutra pada zajedno, pa izgleda kao bestežinsko stanje.",
       "rec": "astronaut",
@@ -1710,7 +1694,7 @@
     },
     {
       "tezina": 3,
-      "pitanje": "Koliko puta dnevno Međunarodna svemirska stanica obiđe Zemlju?",
+      "pitanje": "Koliko puta dnevno Međunarodna svemirska stanica obiđe Zemlju (približno)?",
       "odgovori": [
         "Oko 16",
         "Jednom",
@@ -1803,11 +1787,6 @@
         "Gubitak električne struje u dugim vodovima zbog otpora žica, pa se deo energije pretvara u toplotu"
       ],
       "zanimljivost": "Pevač može glasom da razbije čašu ako pogodi njenu frekvenciju. Zbog rezonancije vojnici preko mostova ne marširaju u korak.",
-      "medijiOdgovora": {
-        "vrsta": "slika",
-        "src": "slike/takoma.jpg",
-        "opis": "Most Takoma Nerouz u trenutku rušenja – vetar ga je zaljuljao u rezonanciji"
-      },
       "rec": "rezonancija"
     },
     {
@@ -1819,7 +1798,7 @@
         "Bruklinski most",
         "Londonski most"
       ],
-      "zanimljivost": "Vetar od samo oko 60 km/h izazvao je sve jače talasanje mosta u SAD dok se nije srušio. Od tada se mostovi obavezno ispituju u aerodinamičnim tunelima.",
+      "zanimljivost": "Vetar od samo oko 60 km/h izazvao je sve jače talasanje mosta u SAD dok se nije srušio. Od tada se novi mostovi ispituju u aerodinamičnim tunelima.",
       "rec": "most",
       "mediji": {
         "vrsta": "slika",
@@ -1868,7 +1847,7 @@
         "Da je svetlost elektromagnetni talas",
         "Radio-talase koji prolaze kroz zid"
       ],
-      "zanimljivost": "Većina čestica je prošla kroz zlato, ali su se neke odbile nazad – kao da „topovsko đule odskoči od maramice“, rekao je Raderford.",
+      "zanimljivost": "Većina čestica je prošla kroz zlato, ali su se neke odbile nazad. Raderford je to poredio sa tim kao da bi teška granata odskočila od papirne maramice.",
       "rec": "jezgro",
       "mediji": {
         "vrsta": "slika",
@@ -1932,9 +1911,9 @@
         "Pavle Savić",
         "Mihajlo Pupin",
         "Milutin Milanković",
-        "Đorđe Stanojević"
+        "Mihajlo Petrović Alas"
       ],
-      "zanimljivost": "Pavle Savić je radio sa Irenom Žolio-Kiri u Parizu, na istraživanjima koja su vodila ka otkriću fisije uranijuma. Institut „Vinča“ kod Beograda osnovan je 1948. godine, a Savić je kasnije bio i predsednik Srpske akademije nauka i umetnosti (1971–1981).",
+      "zanimljivost": "Pavle Savić je radio sa Irenom Žolio-Kiri u Parizu, na istraživanjima koja su vodila ka otkriću fisije uranijuma. Institut „Vinča“ kod Beograda osnovan je 1948. godine.",
       "medijiOdgovora": {
         "vrsta": "slika",
         "src": "slike/savic.jpg",
@@ -2032,7 +2011,7 @@
         "Za autobiografiju „Od pašnjaka do naučenjaka“",
         "Za otkriće X-zraka (rendgenskih zraka) u Americi",
         "Za teoriju relativnosti",
-        "Za izum radija"
+        "Za izum radija i radio-prijemnika"
       ],
       "zanimljivost": "Knjiga opisuje njegov put od siromašnog dečaka iz Idvora do profesora na Kolumbiji. Pupinovi kalemovi su omogućili telefoniranje na velike daljine.",
       "rec": "pašnjak",

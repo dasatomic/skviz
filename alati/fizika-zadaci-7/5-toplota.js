@@ -19,7 +19,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, T, mera, stubovi }) => {
     ['$27 °C$', '$573 °C$', '$−27 °C$', '$300 °C$'],
     [K('$t = T − 273$.'),
      K('$t = 300 − 273 = 27 °C$.')],
-    S('termometar', { skale: ['K'], od: -20, do: 110, temp: 27 }));
+    S('termometar', { skale: ['K'], od: -20, do: 110 }));
 
   Z(2, 'Temperatura vode porasla je sa $15 °C$ na $40 °C$. Kolika je promena temperature izražena u kelvinima?',
     ['$25 K$', '$298 K$', '$313 K$', '$55 K$'],
@@ -162,7 +162,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, T, mera, stubovi }) => {
     S('kalorimetar', { tip: 'mesanje', tela: [{ m: '1 kg', t: 80, o: '~topla' }, { m: '1 kg', t: 20, o: '~hladna' }], tk: 50, skrij: true }));
 
   proveri(smesa([1, 80], [3, 20]), 35);
-  Z(2, 'Pomešamo $1 kg$ vode na $80 °C$ i $3 kg$ vode na $20 °C$. Kolika je temperatura smeše?',
+  Z(2, 'Pomešamo $1 kg$ vode na $80 °C$ i $3 kg$ vode na $20 °C$. Kolika je temperatura smeše? (Gubitke toplote zanemari.)',
     ['$35 °C$', '$50 °C$', '$65 °C$', '$25 °C$'],
     [K('Predata toplota = primljena toplota: $1 · c · (80 − t) = 3 · c · (t − 20)$ ($c$ se skrati).'),
      K('$80 − t = 3t − 60$ ⇒ $4t = 140$ ⇒ $t = 35 °C$.'),
@@ -170,7 +170,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, T, mera, stubovi }) => {
     S('kalorimetar', { tip: 'mesanje', tela: [{ m: '1 kg', t: 80, o: '~topla' }, { m: '3 kg', t: 20, o: '~hladna' }], tk: 35, skrij: true }));
 
   proveri(smesa([2, 90], [3, 10]), 42);
-  Z(2, 'U kadu sipamo $2 kg$ vode na $90 °C$ i $3 kg$ vode na $10 °C$. Kolika je temperatura smeše?',
+  Z(2, 'U kadu sipamo $2 kg$ vode na $90 °C$ i $3 kg$ vode na $10 °C$. Kolika je temperatura smeše? (Gubitke toplote zanemari.)',
     ['$42 °C$', '$50 °C$', '$58 °C$', '$34 °C$'],
     [K('$2 · (90 − t) = 3 · (t − 10)$.'),
      K('$180 − 2t = 3t − 30$ ⇒ $5t = 210$ ⇒ $t = 42 °C$.'),
@@ -178,14 +178,14 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, T, mera, stubovi }) => {
     S('kalorimetar', { tip: 'mesanje', tela: [{ m: '2 kg', t: 90, o: '~topla' }, { m: '3 kg', t: 10, o: '~hladna' }], tk: 42, skrij: true }));
 
   proveri((2 * (70 - 40)) / (40 - 10), 2);
-  Z(2, 'Koliko vode temperature $10 °C$ treba doliti u $2 kg$ vode temperature $70 °C$ da bi se dobila voda od $40 °C$?',
+  Z(2, 'Koliko vode temperature $10 °C$ treba doliti u $2 kg$ vode temperature $70 °C$ da bi se dobila voda od $40 °C$? (Gubitke toplote zanemari.)',
     ['$2 kg$', '$1 kg$', '$3 kg$', '$4 kg$'],
     [K('Topla voda se ohladi za $70 − 40 = 30 °C$, a hladna zagreje za $40 − 10 = 30 °C$.'),
      K('$2 · 30 = m · 30$ ⇒ $m = 2 kg$ – promene su jednake, pa i mase moraju biti jednake.', [], S('kalorimetar', { tip: 'mesanje', tela: [{ m: '2 kg', t: 70, o: '~topla' }, { m: '2 kg', t: 10, o: '~hladna' }], tk: 40 }))],
     S('termometar', { skale: ['C', 'K'], od: 0, do: 80, tacke: [{ c: 70, o: '2 kg' }, { c: 40, o: '~smeša' }, { c: 10, o: '? kg' }] }));
 
   proveri((40 * (35 - 15)) / (75 - 35), 20);
-  Z(3, 'U kadi je $40 l$ vode na $15 °C$. Koliko litara vode temperature $75 °C$ treba doliti da bi kupka imala $35 °C$?',
+  Z(3, 'U kadi je $40 l$ vode na $15 °C$. Koliko litara vode temperature $75 °C$ treba doliti da bi kupka imala $35 °C$? (Gubitke toplote zanemari.)',
     ['$20 l$', '$40 l$', '$10 l$', '$80 l$'],
     [K('Hladna voda se zagreje za $35 − 15 = 20 °C$; topla se ohladi za $75 − 35 = 40 °C$.'),
      K('$m · 40 = 40 · 20$ ⇒ $m = 20 kg$, tj. $20 l$.', ['v']),
@@ -194,7 +194,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, T, mera, stubovi }) => {
     { crtez: G(vaga(40 * 4.2 * 20, 40 * 4.2 * 20, 'kJ', { k: [2, 2], id: 'v' }).concat([T('3 360 kJ = 3 360 kJ', 1.4, 4.6, { k: 2, id: 'v', b: 3 })]), { velicina: 200 }) });
 
   proveri((1 * 420 * 70) / (0.7 * cv) + 20, 30);
-  Z(3, 'Metalni teg mase $1 kg$ ($c = 420 J/(kg · °C)$) zagrejan na $100 °C$ spustimo u $0,7 kg$ vode na $20 °C$. Kolika je temperatura kad se uspostavi toplotna ravnoteža?',
+  Z(3, 'Metalni teg mase $1 kg$ ($c = 420 J/(kg · °C)$) zagrejan na $100 °C$ spustimo u $0,7 kg$ vode na $20 °C$. Kolika je temperatura kad se uspostavi toplotna ravnoteža? (Gubitke toplote zanemari.)',
     ['$30 °C$', '$60 °C$', '$33 °C$', '$25 °C$'],
     [K('Metal predaje: $1 · 420 · (100 − t)$; voda prima: $0,7 · 4 200 · (t − 20) = 2 940 · (t − 20)$.'),
      K('$420 · (100 − t) = 2 940 · (t − 20)$; delimo sa $420$: $100 − t = 7 · (t − 20)$.'),
@@ -217,14 +217,14 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, T, mera, stubovi }) => {
     { crtez: G([{ lin: [[0, 0], [2.4, 0], [2.4, 2], [0, 2]], zatv: 1, b: 1, gusto: 1 }, T('~čaj 90 °C', 1.2, 1), { lin: [[2.4, 0], [4.8, 0], [4.8, 2], [2.4, 2]], zatv: 1, b: 0, gusto: 1 }, T('~šolja 20 °C', 3.6, 1), F(0.8, 2.6, 3.2, 0, { o: 'Q', b: 3, k: 1, id: 'q', crtaj: 1, oAt: [2.4, 3.1] })], { velicina: 220 }) });
 
   proveri(smesa([0.2, 90], [0.05, 10]), 74);
-  Z(2, 'Sipamo $200 g$ čaja temperature $90 °C$ i dolijemo $50 g$ mleka temperature $10 °C$. Kolika je temperatura čaja sa mlekom? (Uzmi da čaj i mleko imaju isti specifični toplotni kapacitet.)',
+  Z(2, 'Sipamo $200 g$ čaja temperature $90 °C$ i dolijemo $50 g$ mleka temperature $10 °C$. Kolika je temperatura čaja sa mlekom? (Uzmi da čaj i mleko imaju isti specifični toplotni kapacitet i zanemari gubitke toplote.)',
     ['$74 °C$', '$50 °C$', '$80 °C$', '$70 °C$'],
     [K('Kad je $c$ isto, smeša ima „srednju vrednost sa težinama“: $t = {m_{1} t_{1} + m_{2} t_{2}|m_{1} + m_{2}}$.'),
      K('$t = {200 · 90 + 50 · 10|250} = {18 000 + 500|250} °C = 74 °C$.')],
     S('kalorimetar', { tip: 'mesanje', tela: [{ m: '200 g', t: 90, o: '~čaj' }, { m: '50 g', t: 10, o: '~mleko' }], tk: 74, skrij: true }));
 
   proveri((2 * (40 - 20)) / 1 + 40, 80);
-  Z(3, 'Pomešali smo $2 kg$ vode temperature $20 °C$ sa $1 kg$ tople vode, i dobili smešu od $40 °C$. Kolika je bila temperatura tople vode?',
+  Z(3, 'Pomešali smo $2 kg$ vode temperature $20 °C$ sa $1 kg$ tople vode, i dobili smešu od $40 °C$. Kolika je bila temperatura tople vode? (Gubitke toplote zanemari.)',
     ['$80 °C$', '$60 °C$', '$100 °C$', '$70 °C$'],
     [K('Hladna voda je primila: $2 · c · (40 − 20) = 40 · c$.'),
      K('Topla voda je predala isto: $1 · c · (t − 40) = 40 · c$ ⇒ $t − 40 = 40$.'),

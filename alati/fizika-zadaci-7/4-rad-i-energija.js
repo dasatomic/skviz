@@ -247,7 +247,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik,
     ['$3 m/s$', '$9 m/s$', '$30 m/s$', '$0,9 m/s$'],
     [K('Potencijalna energija na vrhu prelazi u kinetičku na dnu: $m g h = {m v^{2}|2}$.'),
      K('$v^{2} = 2 · 10 · 0,45 = 9$ ⇒ $v = 3 m/s$. (Pazi: $45 cm = 0,45 m$.)')],
-    S('klatno', { ugao: 50, energija: true }));
+    S('klatno', { ugao: 56.6, energija: true }));
 
   proveri(Math.sqrt(2 * g * 1.8), 6);
   Z(2, 'Skejter kreće iz mirovanja sa ivice rampe visoke $1,8 m$. Kolikom brzinom prolazi kroz najnižu tačku? (Trenje zanemari, $g = 10 m/s^{2}$.)',
@@ -263,7 +263,7 @@ module.exports = ({ L, Z, K, G, S, proveri, b, r, F, telo, tlo, T, mera, grafik,
      K('$h = {v^{2}|2 g} = {144|20} m = 7,2 m$.', [], S('pad', { tip: 'navise', v0: 12, strob: 0.4 }))],
     G([tlo(-2, 2, 0), T('🏐', 0, 0.4, { vel: 26 }), F(0.8, 0.4, 0, 2.5, { o: '12 m/s', b: 1 }), mera(-1.4, 0, -1.4, 5, 'h = ?', { oAt: [-2.3, 2.5] })], { velicina: 160 }));
 
-  Z(2, 'Telo slobodno pada sa visine $10 m$. Na kojoj visini su mu kinetička i potencijalna energija jednake?',
+  Z(2, 'Telo slobodno pada sa visine $10 m$. Na kojoj visini (računajući od tla) su mu kinetička i potencijalna energija jednake?',
     ['$5 m$', '$2,5 m$', '$7,5 m$', '$0 m$'],
     [K('Ukupna energija je stalna: $E = m g · 10 m$.'),
      K('Ako su jednake, svaka je polovina ukupne: $m g h = {1|2} m g · 10 m$ ⇒ $h = 5 m$.')],
