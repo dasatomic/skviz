@@ -273,7 +273,7 @@ module.exports = ({ L, Q, U, S, G, proveri, r, bez, O }) => {
     ['$x + 1$ i $x + 3$', '$x + 2$ i $x + 2$', '$x + 3$ i $x + 3$', '$x + 1$ i $x + 2$'],
     'Rastavljanjem: $x^{2} + 4x + 3 = (x + 1)(x + 3)$, jer je zbir brojeva 4, a njihov proizvod 3. Provera: $(x+1)(x+3) = x^{2} + 4x + 3$.', 'stranice',
     { mediji: G(O, [pravougaonik(0, 0, 4, 3, 1), { tx: '?', at: [2, -0.6], vel: 20 }, { tx: '?', at: [4.6, 1.5], vel: 20 }], { ...bez, velicina: 300 }) });
-  Q(2, 'Pločice $x^{2}$, jedna veća pločica $x$ i dve pločice $1$ slažu se u pravougaonik (crtež). Koje su stranice?',
+  Q(2, 'Pločice $x^{2}$, tri pločice $x$ i dve pločice $1$ slažu se u pravougaonik (crtež). Koje su stranice?',
     ['$x + 1$ i $x + 2$', '$x + 2$ i $x + 2$', '$x + 1$ i $x + 3$', '$x + 3$ i $x + 2$'],
     'Stranice su $x + 1$ i $x + 2$, jer je $(x + 1)(x + 2) = x^{2} + 3x + 2$. Pločice se slažu tako da se stranice ne vide direktno, nego se broje.', 'pločice',
     { mediji: G(O, [...plocica(0, 0, 'x²', 1, { w: 2, h: 2 }), ...plocica(0, 2, 'x', 2, { w: 2, h: 1 }), ...plocica(2, 0, '2x', 3, { w: 2, h: 2 }), ...plocica(2, 2, '2', 4, { w: 2, h: 1 })], { ...bez, velicina: 300 }) });
@@ -285,7 +285,7 @@ module.exports = ({ L, Q, U, S, G, proveri, r, bez, O }) => {
     ['$x + 3$', '$x + 6$', '$x + 9$', '$x - 3$'],
     'Površina kvadrata je stranica na kvadrat, pa je $x^{2} + 6x + 9 = (x + 3)^{2}$, a stranica je $x + 3$.', 'stranica',
     { mediji: G(O, [kvadrat(0, 0, 4, 1), { tx: '?', at: [2, -0.6], vel: 20 }, { tx: '?', at: [4.6, 2], vel: 20 }], { ...bez, velicina: 300 }) });
-  Q(2, 'Kvadrat je složen od pločica $x^{2}$, dve pločice $2x$, dve pločice $2x$ i pločica $4$ (crtež). Koja mu je stranica?',
+  Q(2, 'Kvadrat je složen od pločica $x^{2}$, dve pločice $2x$ i pločica $4$ (crtež). Koja mu je stranica?',
     ['$x + 2$', '$x + 4$', '$2x + 2$', '$x^{2} + 2$'],
     'Pločice se slažu u kvadrat stranice $x + 2$, jer je $(x + 2)^{2} = x^{2} + 4x + 4$. Konstantni deo $4$ je $2 \\cdot 2$.', 'kvadrat',
     { mediji: G(O, [...plocica(0, 0, 'x²', 1, { w: 2, h: 2 }), ...plocica(0, 2, '2x', 2, { w: 2, h: 2 }), ...plocica(2, 0, '2x', 2, { w: 2, h: 2 }), ...plocica(2, 2, '4', 3, { w: 2, h: 2 })], { ...bez, velicina: 300 }) });

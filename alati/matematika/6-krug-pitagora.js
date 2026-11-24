@@ -106,7 +106,7 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, S3, rad, naKrugu, pravilni,
     const t = pravilni(12, 4);
     t.X = [r(2 * t.B[0] - t.A[0]), r(2 * t.B[1] - t.A[1])]; // produžetak stranice AB preko B
     Q(3, 'Spoljašnji ugao pravilnog mnogougla je 30°. Koliko taj mnogougao ima stranica?', ['12', '10', '6', '30'],
-      'Kad se obiđe ceo mnogougao, skrene se ukupno za pun krug: zbir spoljašnjih uglova je uvek 360°. Pa je 360° : 30° = 12 stranica (dvanaestougao). Brojčanik sata je takav dvanaestougao.',
+      'Kad se obiđe ceo mnogougao, skrene se ukupno za pun krug: zbir spoljašnjih uglova je uvek 360°. Pa je 360° : 30° = 12 stranica (dvanaestougao). Brojevi na brojčaniku sata stoje na temenima takvog dvanaestougla.',
       'mnogougao', {
         medijiOdgovora: G(t, [{ p: 'ABCDEFGHIJKL', b: 0 }, { d: 'BX', isp: 1, b: 5 }, { u: 'XBC', o: '30°', b: 1, r: 34 }, { tx: '12 · 30° = 360°', at: [0, 0], b: 3 }], { bezImena: Object.keys(t), velicina: 210 }),
       });

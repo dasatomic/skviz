@@ -93,14 +93,14 @@ module.exports = ({ L, Q, U, S, G, r, kruzni, proveri, pitanja }) => {
     { medijiOdgovora: brojevna(0.2, 0.3, [[2 / 7, '2/7']], { podela: 0.01, svaki: 10 }) });
   Q(3, 'Koliko je $0,0378$ zaokruženo na dve decimale?',
     ['0,04', '0,03', '0,038', '0,4'],
-    'Dve decimale su mesta 0,01 i 0,02. Broj je $0,0378$, a odbačena cifra je 7, pa se 3 povećava na 4: $0,04$. Pazi na mesta decimala: $0,4$ je deset puta veće.', 'decimala', { medijiOdgovora: brojevna(0.03, 0.04, [[0.0378, '0,0378']], { podela: 0.001, svaki: 5 }) });
+    'Dve decimale su mesta 0,1 i 0,01. Broj je $0,0378$, a odbačena cifra je 7, pa se 3 povećava na 4: $0,04$. Pazi na mesta decimala: $0,4$ je deset puta veće.', 'decimala', { medijiOdgovora: brojevna(0.03, 0.04, [[0.0378, '0,0378']], { podela: 0.001, svaki: 5 }) });
   Q(3, 'Koji je ceo broj najbliži zbiru $\\sqrt{2}+\\sqrt{3}$?',
     ['3', '2', '4', '5'],
     'Zbir je približno $1,41 + 1,73 = 3,14$, pa je najbliži ceo broj 3. Greška je misliti da je zbir jednak $\\sqrt{5}$, a to nije tačno.', 'zbir',
     { medijiOdgovora: brojevna(2, 4, [[Math.SQRT2 + Math.sqrt(3), '√2+√3']], { podela: 0.1, svaki: 5 }) });
   S(1, 'Spoji broj sa njegovom vrednošću zaokruženom na jednu decimalu.',
     [['3,14159', '3,1'], ['2,75', '2,8'], ['0,96', '1,0'], ['7,449', '7,4']],
-    'Pri zaokruživanju gledamo prvu odbačenu cifru. Broj 2,75 je 2,8, jer je ispred pete cifre neparna 7.', 'zaokružiti');
+    'Pri zaokruživanju gledamo prvu odbačenu cifru. Broj 2,75 je 2,8, jer je cifra ispred 5 neparna 7.', 'zaokružiti');
   U(1, 'Koji od ovih brojeva NIJE zaokružen na dve decimale?',
     ['3,1', '3,14', '2,50', '7,09'],
     'Broj $3,1$ ima samo jednu decimalu. Ostali imaju po dve decimale.', 'Kalkulator često prikaže mnogo decimala, ali pri zaokruživanju sami biramo koliko ih čuvamo.', 'decimala');

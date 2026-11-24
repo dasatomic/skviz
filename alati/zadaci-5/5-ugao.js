@@ -140,7 +140,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, naKrugu, sat, uglomer, pica,
 
   Z(3, 'Ugao $∠AOB = 130°$. Unutar njega su poluprave $OC$ i $OD$ tako da je $∠AOC = ∠COD = ∠DOB$. Koliki je $∠AOD$?',
     ['$86°40\'$', '$65°$', '$43°20\'$', '$87°$'],
-    [K('Ugao je podeljen na $3$ jednaka dela: $130° : 3 = 43°20\'$ (jer je $1° = 60\'$, a $10° = 600\'$, $600\' : 3 = 200\' = 3°20\'$).'),
+    [K('Ugao je podeljen na $3$ jednaka dela: $130° : 3 = 43°20\'$ (jer $130° = 3 · 43° + 1°$, a $1° = 60\'$, pa je $60\' : 3 = 20\'$).'),
      K('$∠AOD = 2 · 43°20\' = 86°40\'$.', ['ad'])],
     G(zraci([0, 130 / 3, 260 / 3, 130]), [{ d: 'OA' }, { d: 'OB' }, { d: 'OC', isp: 1 }, { d: 'OD', isp: 1 }, { u: 'AOD', b: 1, id: 'ad', k: 2, r: 50 }], { velicina: 200 }));
 

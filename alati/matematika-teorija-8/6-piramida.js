@@ -167,7 +167,7 @@ module.exports = ({ L, Q, U, S, G, proveri, r, piramida, piramidaOsnova, mrezaPi
     [['tetraedar', '4'], ['četvorostrana piramida', '5'], ['petostrana piramida', '6'], ['šestostrana piramida', '7']],
     'Mreža ima onoliko mnogouglova koliko telo ima strana: osnova plus bočne strane.', 'mnogouglovi',
     { mediji: mrezaPiramide(4, 6, 5) });
-  Q(1, 'Koliko ivica treba da se spoje pri savijanju mreže piramide u tela?',
+  Q(1, 'Koje ivice se spajaju pri savijanju mreže piramide u telo?',
     ['bočne ivice se spajaju u vrhu', 'ivice osnove se spajaju u vrhu', 'nijedna', 'sve ivice se lepe jedna za drugu'],
     'Pri savijanju se bočne ivice spajaju u vrhu, a osnovna linija ostaje kao obod osnove.', 'savijanje',
     { mediji: mrezaPiramide(4, 6, 5) });

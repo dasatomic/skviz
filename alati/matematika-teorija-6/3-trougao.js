@@ -372,7 +372,7 @@ module.exports = (O) => {
     proveri(n === 3, 'štapići 2,3,4,5 → 3');
     Q(2, 'Imamo štapiće od 2, 3, 4 i 5 dm. Koliko različitih trouglova možemo složiti od po tri štapića?',
       ['3', '4', '2', '1'],
-      'Trojke su 2-3-4, 2-3-5, 2-4-5 i 3-4-5. Ne može samo 2-3-5, jer je 2 + 3 = 5.', 'štapić',
+      'Trojke koje čine trougao su 2-3-4, 2-4-5 i 3-4-5. Trojka 2-3-5 ne može, jer je 2 + 3 = 5.', 'štapić',
       { mediji: stapici(4, 2, 5) });
   }
   {

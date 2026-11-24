@@ -490,7 +490,7 @@ module.exports = ({ L, Q, U, S, G: G0, r, proveri, rad }) => {
     'Odnosi odgovarajućih stranica su $6 : 4 = 9 : 6 = 12 : 8 = \\frac{3}{2}$. Zato je koeficijent $\\frac{3}{2}$.',
     'koeficijent',
     { mediji: dvaSlicna(tri3(9, 12, 6), tri3(6, 8, 4), { dx: 14 }) });
-  Q(3, 'Katete pravouglog trougla su $6$ i $8$. Drugi pravougli trougao ima katete $9$ i $x$ i sličan je prvom. Koliko je $x$?',
+  Q(3, 'Katete pravouglog trougla su $6$ i $8$. Drugi pravougli trougao, sličan prvom, ima katete $9$ i $x$, pri čemu kateta $9$ odgovara kateti $6$. Koliko je $x$?',
     ['$12$', '$10$', '$9$', '$16$'],
     'Odnos kateta mora biti isti: $6 : 9 = 8 : x$, pa je $\\frac{6}{9} = \\frac{8}{x}$, a odatle $x = 12$.',
     'katete',
@@ -631,7 +631,7 @@ module.exports = ({ L, Q, U, S, G: G0, r, proveri, rad }) => {
     'Iz $\\frac{180}{120} = \\frac{h}{140}$ sledi $h = \\frac{180 · 140}{120} = 210 cm$.',
     'senka',
     { mediji: G({}, [...stub(0, 1.8, 1.2), ...stub(4, 2.1, 1.4)], { velicina: 280 }) });
-  Q(2, 'Anđelija je visoka $1{,}72 m$. Ogledalo je na zemlji tako da u njemu vidi vrh bora. Ogledalo je $3$ puta bliže boru nego Anđeliji. Kolika je visina bora?',
+  Q(2, 'Anđelija je visoka $1{,}72 m$. Ogledalo je na zemlji tako da u njemu vidi vrh bora. Ogledalo je $3$ puta bliže Anđeliji nego boru. Kolika je visina bora?',
     ['$5{,}16 m$', '$0{,}57 m$', '$4{,}5 m$', '$6{,}2 m$'],
     'Svetlosni zrak se odbija pod istim uglom, pa su trouglovi slični: $\\frac{h_b}{h_A} = \\frac{l_b}{l_A} = 3$. Zato je $h_b = 3 · 1{,}72 = 5{,}16 m$.',
     'ogledalo',
@@ -692,7 +692,7 @@ module.exports = ({ L, Q, U, S, G: G0, r, proveri, rad }) => {
     'U tom trenutku su zraci u Asuanu padali okomito na tlo, a u Aleksandriji su bili nagnuti pod uglom od $7°$. Upoređivanjem je merio ugao.',
     'zenit',
     { mediji: G({}, [...stub(0, 1, 0), { lin: [[2, 4], [0, 0]], b: 2, str: 1 }], { velicina: 240 }) });
-  Q(3, 'Talesov štap visine $1 m$ baca senku $2 m$. Senka piramide, merena od podnožja, je $140 m$, a osnovica piramide je $20 m$. Kolika je visina piramide?',
+  Q(3, 'Talesov štap visine $1 m$ baca senku $2 m$. Senka piramide, merena od ivice osnove na strani senke, je $140 m$, a osnovica piramide je $20 m$. Kolika je visina piramide?',
     ['$75 m$', '$70 m$', '$80 m$', '$140 m$'],
     'Talesova senka je dugačka do vrha senke, pa iznosi $140 + \\frac{20}{2} = 150 m$. Iz $\\frac{1}{2} = \\frac{h}{150}$ sledi $h = 75 m$.',
     'Talesova',

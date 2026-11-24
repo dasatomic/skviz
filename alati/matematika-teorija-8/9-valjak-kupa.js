@@ -251,7 +251,7 @@ module.exports = ({ L, Q, U, S, G, proveri, telo, A, valjak, kupa, elipsa3, mrez
 
   Q(2, 'Dve ravni paralelne osi valjka poluprečnika 5 cm i visine 8 cm: jedna je na 1 cm od ose, a druga na 4 cm. Koja daje širi presek?',
     ['ona bliža osi', 'ona dalja od ose', 'obe su jednake', 'zavisi od visine valjka'],
-    'Širina preseka je $2√{r² − d²}$. Što je rastojanje d manje, to je širina veća, pa je bliža ravan daje širi pravougaonik.', 'blizu',
+    'Širina preseka je $2√{r² − d²}$. Što je rastojanje d manje, to je širina veća, pa bliža ravan daje širi pravougaonik.', 'blizu',
     { mediji: valjak(5, 8, [...presekOsi(5, 8, 1, 4), ...presekOsi(5, 8, 4, 2)]) });
 
   S(2, 'Spoji vrstu ravni i presek valjka.',

@@ -218,7 +218,7 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, stubici, pr, polja, kuglica
     'verovatnoća');
 
   Q(3, 'Iza jednih od troja vrata je nagrada. Izabereš jedna, a voditelj (koji zna gde je nagrada) otvori druga, prazna, i ponudi ti zamenu. Šta je bolje?', ['Zameniti vrata', 'Ostati pri izboru', 'Potpuno je svejedno', 'Zavisi od sreće'],
-    'Prvi izbor je tačan u ${1|3}$ slučajeva, pa je u ${2|3}$ nagrada iza preostala dva vrata – a voditelj je jedna prazna otklonio. Zamenom se dobija u ${2|3}$ igara! Ovaj „problem Montija Hola“ zbunio je i mnoge profesore matematike.',
+    'Prvi izbor je tačan u ${1|3}$ slučajeva, pa je u ${2|3}$ nagrada iza preostala dva vrata – a voditelj je otklonio jedna prazna vrata. Zamenom se dobija u ${2|3}$ igara! Ovaj „problem Montija Hola“ zbunio je i mnoge profesore matematike.',
     'vrata', {
       mediji: { vrsta: 'emodzi', tekst: '🚪 🚪 🚪' }, vreme: 30,
       // biraš 1. vrata; nagrada može biti iza bilo kojih od troja

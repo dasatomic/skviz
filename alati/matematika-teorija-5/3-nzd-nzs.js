@@ -33,7 +33,7 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, stabloCinioca, sito, vennDelilaca
     { medijiOdgovora: G(O, sito(27, { kolona: 9 }), { ...bez, velicina: 280 }) });
   Q(3, 'Koliko delilaca ima prost broj?',
     ['Tačno 2', 'Tačno 1', 'Više od 2', 'Nijedan'],
-    'Prost broj ima tačno dva delioca: 1 i samog sebe. Zato se ne može zapisati kao proizvod dva manja broja (osim $1 \\cdot$ on sam).', 'delilac',
+    'Prost broj ima tačno dva delioca: 1 i samog sebe. Zato se ne može zapisati kao proizvod dva manja broja (osim proizvoda $1 \\cdot p$, gde je $p$ sam taj broj).', 'delilac',
     { medijiOdgovora: G(O, sito(20), { ...bez, velicina: 280 }) });
 
   // ── 18. rastavljanje na proste činioce ──

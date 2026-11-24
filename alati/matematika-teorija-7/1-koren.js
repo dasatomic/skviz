@@ -126,7 +126,7 @@ module.exports = ({ L, Q, U, S, G, r, krug, traka, proveri }) => {
   Qz(2, 'Kom broju je kvadrat veći od njega?',
     ['$-\\frac{1}{2}$', '$\\frac{1}{2}$', '$1$', '$0$'],
     'Kvadrat negativnog broja je pozitivan, pa je uvek veći od njega: $(-\\frac{1}{2})^{2}=\\frac{1}{4}>-\\frac{1}{2}$. Za $\\frac{1}{2}$ kvadrat je manji, a za $0$ i $1$ je jednak.',
-    'Brojevi 0 i 1 su jedini pozitivni brojevi jednaki svojim kvadratima. Svi brojevi između 0 i 1 imaju manji kvadrat.', 'negativan',
+    'Brojevi 0 i 1 su jedini nenegativni brojevi jednaki svojim kvadratima. Svi brojevi između 0 i 1 imaju manji kvadrat.', 'negativan',
     { medijiOdgovora: { vrsta: 'formula', tekst: '(−1/2)² = 1/4, a 1/4 > −1/2' } });
   Qz(2, 'Ako je $0<x<1$, koja nejednakost je tačna?',
     ['$x^{2}<x$', '$x^{2}>x$', '$x^{2}=x$', '$x^{2}>1$'],
@@ -294,7 +294,7 @@ module.exports = ({ L, Q, U, S, G, r, krug, traka, proveri }) => {
   Qz(1, 'Kvadrat ima površinu 0,09 dm². Kolika mu je stranica?',
     ['0,3 dm', '0,9 dm', '0,03 dm', '0,09 dm'],
     'Stranica je $\\sqrt{0,09}=0,3$ dm, jer je $0,3\\cdot0,3=0,09$.',
-    'Reč „koren“ na latinskom je „radix“, pa se kvadratni koren označava slovom r.', 'koren',
+    'Reč „koren“ na latinskom je „radix“, a znak za koren (√) potiče od slova r.', 'koren',
     { mediji: kvadrat(1, { dole: '?', sredina: 'P = 0,09 dm²' }),
       medijiOdgovora: { vrsta: 'formula', tekst: '√0,09 = 0,3, jer je 0,3 · 0,3 = 0,09' } });
   Qz(1, 'Kvadrat ima površinu $\\frac{16}{25}$ dm². Kolika mu je stranica?',
@@ -310,7 +310,7 @@ module.exports = ({ L, Q, U, S, G, r, krug, traka, proveri }) => {
     { medijiOdgovora: { vrsta: 'formula', tekst: '(−3)² = 9, √9 = 3 = |−3|' } });
   Qz(2, 'Kvadrat A ima površinu 9 cm², a kvadrat B površinu 16 cm². Kolika je stranica kvadrata čija je površina jednaka zbiru površina kvadrata A i B?',
     ['5 cm', '7 cm', '25 cm', '$\\sqrt{7}$ cm'],
-    'Zbir površina je $9+16=25$ cm², a $\\sqrt{25}=5$ cm. Zbir korena nije koren zbira: $\\sqrt{9}+\\sqrt{16}=7$ nije tačno.',
+    'Zbir površina je $9+16=25$ cm², a $\\sqrt{25}=5$ cm. Zbir korena nije koren zbira: $\\sqrt{9}+\\sqrt{16}=7$, a $\\sqrt{9+16}=5$.',
     'Ovaj odnos (3, 4, 5) je poznat kao Pitagorina trojka i važi za pravougli trougao.', 'trojka',
     { mediji: G({}, [
         { lin: [[0, 0], [3, 0], [3, 3], [0, 3]].map((p) => p.map(r)), zatv: 1, b: 1, prazno: 1 },

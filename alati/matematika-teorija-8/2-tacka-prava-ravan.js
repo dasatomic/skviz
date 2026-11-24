@@ -174,7 +174,7 @@ module.exports = ({ L, Q, U, S, G, r, proveri, kvadar, prostor, ravanZ, ravan })
     'Zato se vrata ne klimaju iako stoje samo na dve šarke: šarke određuju pravu, a ravan vrata „traži“ još jednu tačku – bravu ili štok.', 'ravan',
     { mediji: prostor({ A: V(0, 0, 0), B: V(2.6, 0.8, 1.1) }, [{ d: 'AB', b: 2, debljina: 3 }], { velicina: 220 }) });
 
-  Q(3, 'Dve paralelne prave $a$ i $b$ leže u ravni. Koliko još različitih ravni može da sadrži obe?',
+  Q(3, 'Dve paralelne prave $a$ i $b$ leže u ravni. Koliko različitih ravni ukupno može da sadrži obe?',
     ['Tačno jednu', 'Nijednu', 'Beskonačno mnogo', 'Dve'],
     'Dve različite paralelne prave određuju tačno jednu ravan, jer kroz njih ne prolazi nijedna tačka koja bi bila van ravni koju one određuju.', 'paralelne',
     { mediji: prostor({ A: V(0, 0, 0), B: V(4, 0, 0), C: V(0, 2, 0), D: V(4, 2, 0) }, [...PRAVA3([0, 0, 0], [4, 0, 0], 'a', 0), ...PRAVA3([0, 2, 0], [4, 2, 0], 'b', 0)], { velicina: 240 }) });
@@ -333,8 +333,8 @@ module.exports = ({ L, Q, U, S, G, r, proveri, kvadar, prostor, ravanZ, ravan })
     { mediji: KV([H('AB'), H('CC₁', 2)]) });
 
   Q(3, 'Ako prave $a$ i $b$ imaju tačno jednu zajedničku tačku, a prava $c$ je mimoilazna sa $a$, šta važi za $c$ i $b$?',
-    ['Mogu se seći ili biti mimoilazne', 'Uvek su paralelne', 'Uvek se seku', 'Uvek su normalne'],
-    'Prava $c$ može da seče $b$ (tada leži u ravni sa njom i ne seče $a$) ili da bude mimoilazna sa $b$. Odnos nije unapred određen.', 'prave',
+    ['Mogu biti paralelne, seći se ili biti mimoilazne', 'Uvek su paralelne', 'Uvek se seku', 'Uvek su normalne'],
+    'Prava $c$ može da bude paralelna sa $b$, da seče $b$ (tada leži u ravni sa njom i ne seče $a$) ili da bude mimoilazna sa $b$. Odnos nije unapred određen.', 'prave',
     { mediji: KV([H('AB'), H('AC', 2), H('CC₁', 2)]) });
 
   Q(1, 'Koja ivica kvadra seče ivicu $AB$ u temenu $B$?',
@@ -391,7 +391,7 @@ module.exports = ({ L, Q, U, S, G, r, proveri, kvadar, prostor, ravanZ, ravan })
 
   Q(3, 'Koliko pravih kroz tačku $A$ na ravni $\\alpha$ je normalno na $\\alpha$?',
     ['Tačno jedna', 'Beskonačno mnogo', 'Nijedna', 'Tri'],
-    'Normala u tački ravni je jedinstvena: sve prave kroz A koje su normalne na α leže u ravni normalnoj na α, a jedine koje su normalne na sve prave u α su one na samoj normali.', 'normala',
+    'Normala u tački ravni je jedinstvena: samo jedna prava kroz A je normalna na sve prave ravni α.', 'normala',
     { mediji: prostor({ A: V(1.5, 1.2, 0) }, [ravanZ(-1, 4, -1, 3, 0, { ime: 'α' })], { velicina: 260 }) });
 
   Q(2, 'Tačka $A$ je van ravni $\\alpha$. Koliko pravih kroz $A$ je paralelno sa ravni $\\alpha$?',
@@ -401,12 +401,12 @@ module.exports = ({ L, Q, U, S, G, r, proveri, kvadar, prostor, ravanZ, ravan })
 
   Q(2, 'Vrata su uspravna na podu, a šarke su vertikalne. Koji je odnos ravni vrata i ravni poda?',
     ['Normalne su (seku se pod pravim uglom)', 'Paralelne su', 'Poklapaju se', 'Mimoilazne su'],
-    'Uspravna vrata su normalna na pod: ravan vrata seče pod pod pravim uglom, a vertikalna šarka je normalna na ravan poda.', 'vrata',
+    'Uspravna vrata su normalna na pod: ravan vrata seče pod pravim uglom, a vertikalna šarka je normalna na ravan poda.', 'vrata',
     { mediji: prostor({ A: V(0, 0, 0), B: V(4, 0, 0), C: V(0, 3, 0), D: V(4, 3, 0) }, [ravanZ(-1, 5, -1, 4, 0, { ime: 'pod' }), ravan([[0, 0, 0], [4, 0, 0], [4, 0, 2.6], [0, 0, 2.6]], { ime: 'vrata', b: 4 })], { velicina: 260 }) });
 
   Q(1, 'Ivica $AA_1$ kvadra i ravan $BCC_1B_1$. Šta je tačno?',
     ['Paralelne su', 'Seku se u tački', 'Prava pripada ravni', 'Normalne su'],
-    'Ivica AA₁ je paralelna sa ravni BCC₁B₁ (ta ravan je suprotna strana kvadra), pa nemaju zajedničkih tačaka.', 'paralelna',
+    'Ivica AA₁ je paralelna sa ravni BCC₁B₁ (ravan sadrži ivicu $BB₁$, koja je paralelna sa $AA₁$), pa nemaju zajedničkih tačaka.', 'paralelna',
     { mediji: KV([H('AA₁'), SP('BCC₁B₁', 3)]) });
 
   Q(3, 'Prava $AD_1$ kvadra i ravan $ABCD$. Kakav je njihov položaj?',
@@ -455,8 +455,8 @@ module.exports = ({ L, Q, U, S, G, r, proveri, kvadar, prostor, ravanZ, ravan })
       ravanZ(-0.5, 4.5, -0.5, 3.5, 0, { ime: 'α' }), ravan([[0.4, 0.2, 0], [3.6, 2.6, 0], [3.6, 2.6, 2.5], [0.4, 0.2, 2.5]], { ime: 'β', b: 4 })], { velicina: 260 }) });
 
   Q(1, 'Koliko međusobnih položaja mogu imati dve različite ravni?',
-    ['Tri', 'Dva', 'Četiri', 'Jedan'],
-    'Ravni se mogu poklapati (nema različitih), seći po pravoj ili biti paralelne. Ukupno su to tri različita položaja.', 'položaj',
+    ['Dva', 'Tri', 'Četiri', 'Jedan'],
+    'Dve različite ravni mogu da se seku po pravoj ili da budu paralelne. Treći slučaj – poklapanje – važi samo kad je to ista ravan.', 'položaj',
     { mediji: prostor({ A: V(0, 0, 0) }, [ravanZ(-0.5, 4.5, -0.5, 3.5, 0, { ime: 'α' })], { velicina: 240 }) });
 
   Q(2, 'Pod učionice i zid učionice. Kakav je njihov međusobni odnos?',
@@ -560,7 +560,7 @@ module.exports = ({ L, Q, U, S, G, r, proveri, kvadar, prostor, ravanZ, ravan })
 
   Q(3, 'Duž je koso postavljena prema ravni i nije paralelna ni normalna na nju. Koja je tačna tvrdnja o njenoj projekciji?',
     ['Kraća je od same duži', 'Duža je od same duži', 'Iste je dužine', 'Jednaka je nuli'],
-    'Projekcija je kateta pravouglog trapeza čija je hipotenuza sama duž, pa je uvek kraća od nje.', 'hipotenuza',
+    'Projekcija je kateta pravouglog trougla čija je hipotenuza sama duž, pa je uvek kraća od nje.', 'hipotenuza',
     { mediji: prostor({ A: V(0.5, 0.5, 0.2), B: V(3.6, 2.4, 2.8) }, [ravanZ(-0.5, 4.5, -0.5, 3.5, 0, { ime: 'π' }), { d: 'AB', b: 2, debljina: 3 }], { velicina: 240 }) });
 
   Q(3, 'Tačka $A$ je na rastojanju 8 cm od ravni, a tačka $B$ na rastojanju 2 cm, obe sa iste strane. Duž $AB$ je 10 cm. Kolika je dužina njene normalne projekcije?',
@@ -592,7 +592,7 @@ module.exports = ({ L, Q, U, S, G, r, proveri, kvadar, prostor, ravanZ, ravan })
   U(2, 'Koja tvrdnja o normalnoj projekciji duži NIJE tačna?',
     ['Projekcija je uvek duža od same duži', 'Projekcija duži normalne na ravan je tačka', 'Projekcija duži paralelne sa ravni je jednake dužine', 'Projekcija je kraća ili jednaka duži'],
     'Projekcija nikad nije duža od same duži. Ostale tri tvrdnje su tačne.',
-    'Senka u podne je normalna projekcija na zemlju: štap nikad ne baca senku dužu od sebe kad je Sunce tačno iznad glave, a uveče, kad zraci padaju koso, senka može biti mnogo duža – ali to više nije normalna projekcija.', 'projekcija',
+    'Senka je projekcija štapa na zemlju, ali normalna samo kad zraci padaju okomito (Sunce tačno iznad glave); tad je senka tačka. Uveče, kad zraci padaju koso, senka može biti mnogo duža – ali to nije normalna projekcija.', 'projekcija',
     { mediji: prostor({ A: V(0.5, 0.5, 2), B: V(3.5, 2.2, 2) }, [ravanZ(-0.5, 4, -0.5, 3.4, 0, { ime: 'π' })], { velicina: 240 }) });
 
   Q(3, 'Normalna projekcija tačke $D_1$ kvadra na ravan $ABCD$ je tačka…',

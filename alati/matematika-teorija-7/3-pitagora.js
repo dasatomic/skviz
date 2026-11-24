@@ -90,7 +90,7 @@ module.exports = ({ L, Q, U, S, G, proveri, r, O, bez }) => {
       medijiOdgovora: G(pravi(12, 5), [...tr({ CB: '12', CA: '5', AB: '13' }), ...kvadrati(pravi(12, 5), STRANE, { oznake: ['144', '25', '169'] })], GO) });
   Q(2, 'Hipotenuza pravouglog trougla je 17 cm, a jedna kateta 8 cm. Kolika je druga kateta?',
     ['15 cm', '9 cm', '$\\sqrt{353}$ cm', '25 cm'],
-    'Trojke 5, 12, 13 i 8, 15, 17 pripadaju istoj porodici – ima ih beskonačno mnogo.', 'kateta',
+    'Trojke 5, 12, 13 i 8, 15, 17 nisu iz iste porodice – Pitagorinih trojki ima beskonačno mnogo.', 'kateta',
     { mediji: G(pravi(15, 8), tr({ CA: '8', AB: '17' }, { pu: 'BCA' }), GO),
       medijiOdgovora: G(pravi(15, 8), [...tr({ CB: '15', CA: '8', AB: '17' }), ...kvadrati(pravi(15, 8), STRANE, { oznake: ['225', '64', '289'] })], GO) });
   Q(1, 'Katete pravouglog trougla su 5 cm i 12 cm. Kolika je površina kvadrata nad hipotenuzom?',

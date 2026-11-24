@@ -438,7 +438,7 @@ module.exports = ({ L, Q, U, S, G, proveri, r, pravilni }) => {
   L('Složenije primene stavova podudarnosti');
   {
     const ej = { A: [0, 0], B: [2, 0], C: [1, r(Math.sqrt(3))], D: [4, 0], E: [7, 0], F: [5.5, r((3 * Math.sqrt(3)) / 2)] };
-    Q(3, 'Koji od ovih uslova NIJE stav podudarnosti trouglova?', ['SSS', 'SUS', 'USU', 'UUU'],
+    Q(3, 'Koji od ovih uslova NIJE stav podudarnosti trouglova?', ['UUU', 'SUS', 'USU', 'SSS'],
       'Tri jednaka ugla određuju samo oblik trougla, ne i veličinu. Jednakostranični trouglovi stranica $2$ i $3$ imaju iste uglove, a nisu podudarni. Svaki stav podudarnosti mora da sadrži bar jednu stranicu.', 'podudarnost',
       { mediji: G(ej, [{ p: 'ABC', b: 0 }, { p: 'DEF', b: 1 }, { u: 'BAC', o: '60°' }, { u: 'ABC', o: '60°' }, { u: 'ACB', o: '60°' }, { u: 'EDF', o: '60°' }, { u: 'DEF', o: '60°' }, { u: 'DFE', o: '60°' }], { bezImena: sve(ej), velicina: 300 }) });
 

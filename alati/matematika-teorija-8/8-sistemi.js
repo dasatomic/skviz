@@ -89,7 +89,7 @@ module.exports = ({ L, Q, U, S, G, proveri, r, dvePrave, grafik, koord, terazije
 
   Q(2, 'Dve prave se seku u jednoj tački. Koliko rešenja ima sistem tih dveju jednačina?',
     ['jedno rešenje', 'nema rešenja', 'beskonačno mnogo', 'dva rešenja'],
-    'Dve prave u ravni mogu da se seku, da budu paralelne ili da se poklope. Samo poklapanje daje beskonačno rešenja.',
+    'Dve prave u ravni mogu da se seku, da budu paralelne ili da se poklope. Samo poklapanje daje beskonačno mnogo rešenja.',
     'presek', { mediji: prave(2, 1, -1, 4).pitanje, medijiOdgovora: prave(2, 1, -1, 4).odgovor });
 
   Q(2, 'Koliko rešenja ima sistem $x + y = 2$ i $2x + 2y = 4$?',
@@ -135,7 +135,7 @@ module.exports = ({ L, Q, U, S, G, proveri, r, dvePrave, grafik, koord, terazije
 
   Q(2, 'Jednačina $x = 2$ ima dve nepoznate, ali $y$ se u njoj ne pojavljuje. Koju tačku ili skup tačaka predstavlja u ravni?',
     ['vertikalna prava $x = 2$', 'horizontalna prava $y = 2$', 'tačka $(2, 0)$', 'krug sa centrom u $(2, 2)$'],
-    'Vertikalna prava $x = 2$ je paralelna sa $y$-osom, pa su sve njene tačke na istom rastojanju od nje.',
+    'Vertikalna prava $x = 2$ je paralelna sa $y$-osom, pa su sve njene tačke na istom rastojanju od $y$-ose.',
     'prava', { mediji: koord(-1, 5, -2, 4, {}), medijiOdgovora: koord(-1, 5, -2, 4, {}, { e: [{ lin: [[2, -2], [2, 4]], b: 1, debljina: 3 }] }) });
 
   Q(3, 'Šta predstavlja jednačina $0 · x + 2y = 6$ u koordinatnoj ravni?',
@@ -297,7 +297,7 @@ module.exports = ({ L, Q, U, S, G, proveri, r, dvePrave, grafik, koord, terazije
 
   Q(3, 'Posle smene u sistemu ostane jednačina $0 · x = 0$. Šta to znači za sistem?',
     ['beskonačno mnogo rešenja', 'nema rešenja', 'jedno rešenje $x = 0$', 'dva rešenja'],
-    'Sistem sa beskonačno rešenja zove se neodređen, jer nema jedinstvenog odgovora.',
+    'Sistem sa beskonačno mnogo rešenja zove se neodređen, jer nema jedinstvenog odgovora.',
     'neodređen', { mediji: kartica(['0 · x = 0']) });
 
   Q(2, 'Kad iz jedne jednačine dobijemo vrednost za $y$, šta sledi?',
@@ -307,7 +307,7 @@ module.exports = ({ L, Q, U, S, G, proveri, r, dvePrave, grafik, koord, terazije
 
   U(1, 'Koji korak NIJE deo metode smene?',
     ['nacrtati grafik obe prave u koordinatnoj ravni', 'izraziti jednu nepoznatu iz jedne jednačine', 'uvrstiti izraz u drugu jednačinu', 'rešiti dobijenu jednačinu sa jednom nepoznatom'],
-    'Metoda smene je računska: izrazimo, uvrstimo i rešimo. Crtanje grafika je druga metoda, iz 7.5.',
+    'Metoda smene je računska: izrazimo, uvrstimo i rešimo. Crtanje grafika je grafička metoda, a ne računska.',
     'Ponekad je crtanje dobar način da se proveri rezultat dobijen smenom.',
     'smena', { mediji: koord(-1, 4, -1, 4, {}) });
 
@@ -524,17 +524,17 @@ module.exports = ({ L, Q, U, S, G, proveri, r, dvePrave, grafik, koord, terazije
     'protivrečan', { mediji: kartica(['0 · x = 5']) });
 
   Q(3, 'Sistem $x + y = 5 + y$ i $3x = 18$ je…',
-    ['nemoguć, nema rešenja', 'ima jedno rešenje $(6, 0)$', 'neodređen, beskonačno rešenja', 'ima rešenje $(5, 6)$'],
+    ['nemoguć, nema rešenja', 'ima jedno rešenje $(6, 0)$', 'neodređen, beskonačno mnogo rešenja', 'ima rešenje $(5, 6)$'],
     'Takvi sistemi se pojavljuju kad se u postavci zadatka nalaze dva međusobno isključiva uslova.',
     'nemoguć', { mediji: kartica(['x + y = 5 + y', '3x = 18']) });
 
   Q(2, 'Sistem $2x + 3y = 7$ i $4x + 6y = 22$ je…',
-    ['nemoguć, nema rešenja', 'ima jedno rešenje', 'neodređen, beskonačno rešenja', 'ima rešenje $(1, 1)$'],
-    'Sistemi sa istim levim stranama, a različitim desnim, daju paralelne prave.',
+    ['nemoguć, nema rešenja', 'ima jedno rešenje', 'neodređen, beskonačno mnogo rešenja', 'ima rešenje $(1, 1)$'],
+    'Sistemi čije su leve strane proporcionalne, a desne nisu u istom odnosu, daju paralelne prave.',
     'nemoguć', { mediji: kartica(['2x + 3y = 7', '4x + 6y = 22']) });
 
   Q(2, 'Sistem $x − y = 5$ i $3x − 3y = 15$ je…',
-    ['neodređen, beskonačno rešenja', 'nemoguć, nema rešenja', 'ima jedno rešenje $(5, 0)$', 'ima dva rešenja'],
+    ['neodređen, beskonačno mnogo rešenja', 'nemoguć, nema rešenja', 'ima jedno rešenje $(5, 0)$', 'ima dva rešenja'],
     'Za neodređen sistem dovoljna je jedna jednačina; druga ne dodaje ništa novo.',
     'neodređen', { mediji: kartica(['x − y = 5', '3x − 3y = 15']), medijiOdgovora: poklopljene(1, -5, [-1, 8, -7, 4]) });
 
@@ -545,12 +545,12 @@ module.exports = ({ L, Q, U, S, G, proveri, r, dvePrave, grafik, koord, terazije
     'rešenje', { mediji: kartica(['x + y = 2', '2x + 2y = 4']) });
 
   Q(2, 'Sistem $2x + y = 4$ i $4x + 2y = 9$ je…',
-    ['nemoguć (nema rešenja)', 'neodređen (beskonačno rešenja)', 'ima tačno jedno rešenje', 'ima rešenje $(2, 0)$'],
+    ['nemoguć (nema rešenja)', 'neodređen (beskonačno mnogo rešenja)', 'ima tačno jedno rešenje', 'ima rešenje $(2, 0)$'],
     'Sisteme sa „nemogućim“ desnim stranama nazivamo i protivrečni.',
     'nemoguć', { mediji: kartica(['2x + y = 4', '4x + 2y = 9']) });
 
   Q(2, 'Sistem $3x − y = 2$ i $6x − 2y = 4$ je…',
-    ['neodređen, beskonačno rešenja', 'nemoguć, nema rešenja', 'ima jedno rešenje', 'paralelan, pa nema zajedničkih tačaka'],
+    ['neodređen, beskonačno mnogo rešenja', 'nemoguć, nema rešenja', 'ima jedno rešenje', 'paralelan, pa nema zajedničkih tačaka'],
     'U tabeli vrednosti za ovakav sistem dobijaju se iste tačke za svaku vrednost $x$.',
     'neodređen', { mediji: kartica(['3x − y = 2', '6x − 2y = 4']) });
 
@@ -595,7 +595,7 @@ module.exports = ({ L, Q, U, S, G, proveri, r, dvePrave, grafik, koord, terazije
     'nemoguć', { mediji: kartica(['x = 3', 'x = 5']) });
 
   S(2, 'Spoji sistem sa njegovom vrstom.',
-    [['$x + y = 2$ i $x + y = 5$', 'nemoguć, nema rešenja'], ['$x − y = 1$ i $2x − 2y = 2$', 'neodređen, beskonačno rešenja'], ['$x = 2$ i $y = 3$', 'jedno rešenje $(2, 3)$'], ['$3x = 9$ i $y = x$', 'jedno rešenje $(3, 3)$']],
+    [['$x + y = 2$ i $x + y = 5$', 'nemoguć, nema rešenja'], ['$x − y = 1$ i $2x − 2y = 2$', 'neodređen, beskonačno mnogo rešenja'], ['$x = 2$ i $y = 3$', 'jedno rešenje $(2, 3)$'], ['$3x = 9$ i $y = x$', 'jedno rešenje $(3, 3)$']],
     'Vrstu sistema vidimo po tome da li su jednačine iste, protivrečne ili različite.',
     'vrsta', { mediji: kartica(['nemoguć · neodređen · jedinstven']) });
 
@@ -675,7 +675,7 @@ module.exports = ({ L, Q, U, S, G, proveri, r, dvePrave, grafik, koord, terazije
     'Obim pravougaonika je $2(a + b)$, pa je polovina obima zbir stranica.',
     'obim', { mediji: pravougaonik() });
 
-  Q(3, 'Pravougaonik iz prethodnog pitanja ima obim $36$ cm, a dužina mu je dva puta veća od širine. Kolika mu je površina?',
+  Q(3, 'Pravougaonik ima obim $36$ cm, a dužina mu je dva puta veća od širine. Kolika mu je površina?',
     ['72 cm²', '36 cm²', '24 cm²', '108 cm²'],
     'Kad su dužina i širina poznate, površina je njihov proizvod, a obim njihov zbir.',
     'površina', { mediji: pravougaonik(), medijiOdgovora: pravougaonik(12, 6, { a: '12 cm', b: '6 cm' }) });

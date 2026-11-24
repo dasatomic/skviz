@@ -87,7 +87,7 @@ module.exports = ({ L, Q, U, S, G, proveri }) => {
     { mediji: interval(-2, 6, { a: 3, levo: true }) });
   Q(2, 'Koji je najmanji ceo broj u skupu rešenja prikazanom na crtežu?',
     ['$−2$', '$−3$', '$−1$', '$0$'],
-    'Krajevi ovog intervala nisu celi brojevi, pa se gleda ceo broj koji je tačno u intervalu. Najmanji je prvi ceo broj desno od levog kraja, a levi kraj ne pripada skupu jer je zatvoren samo za −2,5 ≤ x.', 'najmanji',
+    'Krajevi ovog intervala nisu celi brojevi, pa se gleda ceo broj koji je tačno u intervalu. Najmanji je prvi ceo broj desno od levog kraja, a levi kraj −2,5 nije ceo broj.', 'najmanji',
     { mediji: interval(-4, 3, { a: -2.5, b: 1, ukljA: true, ukljB: true }) });
   Q(2, 'Crtež prikazuje dva uslova, jedan ispod drugog: dole zrak udesno od −1 (bez tačke na −1), a gore zrak ulevo od 4 (sa tačkom na 4). Koji je skup koji zadovoljava oba uslova?',
     ['$(−1, 4]$', '$(−1, 4)$', '$[−1, 4]$', '$(−∞, 4]$'],
@@ -99,7 +99,7 @@ module.exports = ({ L, Q, U, S, G, proveri }) => {
     { mediji: interval(-4, 3, { a: -3, b: 2, ukljB: true }) });
   Q(3, 'Koji je najveći ceo broj u skupu rešenja nejednačine $x ≤ −1$?',
     ['−1', '−2', '−4', '−3'],
-    'Svi brojevi manji od −1 i sam −1 pripadaju skupu. Najveći je onaj koji je najbliži −1 ulevo od kraja, a sam kraj pripada.', 'najveći',
+    'Svi brojevi manji od −1 i sam −1 pripadaju skupu. Najveći je sam kraj −1, jer on pripada skupu (znak ≤).', 'najveći',
     { mediji: interval(-5, 3, { a: -1, levo: true, ukljA: true }) });
   Q(1, 'Koji zapis odgovara rečenici: broj $x$ je veći od −3, a manji ili jednak 5?',
     ['$−3 < x ≤ 5$', '$−3 ≤ x < 5$', '$−5 < x ≤ 3$', '$3 < x ≤ 5$'],
@@ -154,7 +154,7 @@ module.exports = ({ L, Q, U, S, G, proveri }) => {
     { mediji: terazije([{ tx: 'x + 3', b: 1 }], [{ tx: '7', b: 3 }], { nagib: 1 }), medijiOdgovora: interval(0, 8, { a: 4 }) });
   Q(2, 'Koja nejednačina je ekvivalentna sa $2x < 8$?',
     ['$x < 4$', '$x < 6$', '$x > 4$', '$x ≤ 4$'],
-    'Deljenjem obe strane pozitivnim brojem 2 dobijamo $x < 4$. Broj 4 ne pripada skupu, jer je 2 · 4 = 8, a nejednakost je stroga.', 'deljenje',
+    'Deljenjem obe strane pozitivnim brojem 2 dobijamo $x < 4$. Broj $4$ ne pripada skupu, jer je $2 · 4 = 8$, a nejednakost je stroga.', 'deljenje',
     { mediji: terazije(['x', 'x'], [8], { nagib: -1 }), medijiOdgovora: interval(-2, 6, { a: 4, levo: true }) });
   Q(2, 'Da li je nejednačina $x > 2$ ekvivalentna sa $x^{2} > 4$?',
     ['Ne, jer je −3 rešenje druge, a nije prve', 'Da, jer je $2^{2} = 4$', 'Da, jer su obe nejednačine pozitivne', 'Ne, jer $x^{2}$ nikad nije veće od 4'],
@@ -182,7 +182,7 @@ module.exports = ({ L, Q, U, S, G, proveri }) => {
     'Kvadriranje nije ekvivalentna transformacija, jer dodaje rešenja sa negativnim znakom.', 'ekvivalent', { mediji: interval(0, 9, { a: 5 }) });
   S(2, 'Poveži nejednačinu sa ekvivalentnom nejednačinom.',
     [['$x + 2 < 5$', '$x < 3$'], ['$3x > 6$', '$x > 2$'], ['$−x < 4$', '$x > −4$'], ['$−2x ≥ 6$', '$x ≤ −3$']],
-    'Pri deljenju ili množenju negativnim brojem znak se okreće, kao u drugom i trećem paru.', 'parovi', { mediji: terazije([{ tx: 'x + 2', b: 1 }], [{ tx: '5', b: 3 }], { nagib: -1 }) });
+    'Pri deljenju ili množenju negativnim brojem znak se okreće, kao u trećem i četvrtom paru.', 'parovi', { mediji: terazije([{ tx: 'x + 2', b: 1 }], [{ tx: '5', b: 3 }], { nagib: -1 }) });
   Q(1, 'Ako od nejednačine $x − 5 > 2$ dodamo 5 na obe strane, šta dobijamo?',
     ['$x > 7$', '$x > 3$', '$x > −3$', '$x < 7$'],
     'Dodavanjem 5 sa obe strane leva strana postaje $x$, a desna $2 + 5 = 7$. Znak ostaje isti.', 'dodavanje',

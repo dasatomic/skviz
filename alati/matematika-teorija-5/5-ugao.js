@@ -69,7 +69,7 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, uglomer, O, bez }) => {
   L('Prenošenje i nadovezivanje uglova');
   Q(1, 'Kojim priborom najlakše prenosiš (meriš) ugao?',
     ['Uglomerom', 'Lenjirom', 'Šestarom', 'Trouglom'],
-    'Uglomer je polukrug sa podelom u stepenima – njime merimo i prenosimo uglove. Šestar i lenjir takođe mogu, ali sporije.', 'uglomer',
+    'Uglomer je polukrug sa podelom u stepenima – njime merimo i prenosimo uglove. Šestarom se ugao može preneti konstrukcijom, ali je to sporije.', 'uglomer',
     { medijiOdgovora: G(O, uglomer(), { ...bez, velicina: 260 }) });
   Q(1, 'Šta znači NADOVEZATI uglove?',
     ['Postaviti jedan ugao uz drugi, krak do kraka', 'Postaviti ih jedan preko drugog', 'Nacrtati ih daleko', 'Sabrati im temena'],

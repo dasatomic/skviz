@@ -8699,7 +8699,7 @@
   {
    "lekcija": 5,
    "tezina": 3,
-   "pitanje": "Katete pravouglog trougla su $6$ i $8$. Drugi pravougli trougao ima katete $9$ i $x$ i sličan je prvom. Koliko je $x$?",
+   "pitanje": "Katete pravouglog trougla su $6$ i $8$. Drugi pravougli trougao, sličan prvom, ima katete $9$ i $x$, pri čemu kateta $9$ odgovara kateti $6$. Koliko je $x$?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -10945,7 +10945,7 @@
   {
    "lekcija": 7,
    "tezina": 2,
-   "pitanje": "Anđelija je visoka $1{,}72 m$. Ogledalo je na zemlji tako da u njemu vidi vrh bora. Ogledalo je $3$ puta bliže boru nego Anđeliji. Kolika je visina bora?",
+   "pitanje": "Anđelija je visoka $1{,}72 m$. Ogledalo je na zemlji tako da u njemu vidi vrh bora. Ogledalo je $3$ puta bliže Anđeliji nego boru. Kolika je visina bora?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -11596,7 +11596,7 @@
   {
    "lekcija": 7,
    "tezina": 3,
-   "pitanje": "Talesov štap visine $1 m$ baca senku $2 m$. Senka piramide, merena od podnožja, je $140 m$, a osnovica piramide je $20 m$. Kolika je visina piramide?",
+   "pitanje": "Talesov štap visine $1 m$ baca senku $2 m$. Senka piramide, merena od ivice osnove na strani senke, je $140 m$, a osnovica piramide je $20 m$. Kolika je visina piramide?",
    "mediji": {
     "vrsta": "geo",
     "t": {},
@@ -14383,7 +14383,7 @@
   {
    "lekcija": 9,
    "tezina": 3,
-   "pitanje": "Dve paralelne prave $a$ i $b$ leže u ravni. Koliko još različitih ravni može da sadrži obe?",
+   "pitanje": "Dve paralelne prave $a$ i $b$ leže u ravni. Koliko različitih ravni ukupno može da sadrži obe?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -19267,12 +19267,12 @@
     "velicina": 240
    },
    "odgovori": [
-    "Mogu se seći ili biti mimoilazne",
+    "Mogu biti paralelne, seći se ili biti mimoilazne",
     "Uvek su paralelne",
     "Uvek se seku",
     "Uvek su normalne"
    ],
-   "zanimljivost": "Prava $c$ može da seče $b$ (tada leži u ravni sa njom i ne seče $a$) ili da bude mimoilazna sa $b$. Odnos nije unapred određen.",
+   "zanimljivost": "Prava $c$ može da bude paralelna sa $b$, da seče $b$ (tada leži u ravni sa njom i ne seče $a$) ili da bude mimoilazna sa $b$. Odnos nije unapred određen.",
    "rec": "prave"
   },
   {
@@ -19524,7 +19524,7 @@
     "Prava pripada ravni",
     "Normalne su"
    ],
-   "zanimljivost": "Ivica $AA₁$ je paralelna sa ravni $BCC$₁$B₁$ (ta ravan je suprotna strana kvadra), pa nemaju zajedničkih tačaka.",
+   "zanimljivost": "Ivica $AA₁$ je paralelna sa ravni $BCC$₁$B₁$ (ravan sadrži ivicu $BB₁$, koja je paralelna sa $AA₁$), pa nemaju zajedničkih tačaka.",
    "rec": "paralelna"
   },
   {
@@ -20381,7 +20381,7 @@
     "Poklapaju se",
     "Mimoilazne su"
    ],
-   "zanimljivost": "Uspravna vrata su normalna na pod: ravan vrata seče pod pod pravim uglom, a vertikalna šarka je normalna na ravan poda.",
+   "zanimljivost": "Uspravna vrata su normalna na pod: ravan vrata seče pod pravim uglom, a vertikalna šarka je normalna na ravan poda.",
    "rec": "vrata"
   },
   {
@@ -20750,7 +20750,7 @@
     "Nijedna",
     "Tri"
    ],
-   "zanimljivost": "Normala u tački ravni je jedinstvena: sve prave kroz $A$ koje su normalne na α leže u ravni normalnoj na α, a jedine koje su normalne na sve prave u α su one na samoj normali.",
+   "zanimljivost": "Normala u tački ravni je jedinstvena: samo jedna prava kroz $A$ je normalna na sve prave ravni α.",
    "rec": "normala"
   },
   {
@@ -21283,12 +21283,12 @@
     "velicina": 240
    },
    "odgovori": [
-    "Tri",
     "Dva",
+    "Tri",
     "Četiri",
     "Jedan"
    ],
-   "zanimljivost": "Ravni se mogu poklapati (nema različitih), seći po pravoj ili biti paralelne. Ukupno su to tri različita položaja.",
+   "zanimljivost": "Dve različite ravni mogu da se seku po pravoj ili da budu paralelne. Treći slučaj – poklapanje – važi samo kad je to ista ravan.",
    "rec": "položaj"
   },
   {
@@ -24780,7 +24780,7 @@
     "Projekcija je kraća ili jednaka duži"
    ],
    "objasnjenje": "Projekcija nikad nije duža od same duži. Ostale tri tvrdnje su tačne.",
-   "zanimljivost": "Senka u podne je normalna projekcija na zemlju: štap nikad ne baca senku dužu od sebe kad je Sunce tačno iznad glave, a uveče, kad zraci padaju koso, senka može biti mnogo duža – ali to više nije normalna projekcija.",
+   "zanimljivost": "Senka je projekcija štapa na zemlju, ali normalna samo kad zraci padaju okomito (Sunce tačno iznad glave); tad je senka tačka. Uveče, kad zraci padaju koso, senka može biti mnogo duža – ali to nije normalna projekcija.",
    "rec": "projekcija"
   },
   {
@@ -25133,7 +25133,7 @@
     "Iste je dužine",
     "Jednaka je nuli"
    ],
-   "zanimljivost": "Projekcija je kateta pravouglog trapeza čija je hipotenuza sama duž, pa je uvek kraća od nje.",
+   "zanimljivost": "Projekcija je kateta pravouglog trougla čija je hipotenuza sama duž, pa je uvek kraća od nje.",
    "rec": "hipotenuza"
   },
   {
@@ -27466,7 +27466,7 @@
     "Nejednakost sa znakom <",
     "Identitet"
    ],
-   "zanimljivost": "Znak = uveo je engleski matematičar Robert Rekord 1557. godine. Napisao je da se ne može naći ništa jednakije od dve paralelne linije.",
+   "zanimljivost": "Znak = uveo je velški matematičar Robert Rekord 1557. godine. Napisao je da se ne može naći ništa jednakije od dve paralelne linije.",
    "rec": "brojevna"
   },
   {
@@ -31476,7 +31476,7 @@
      "$x = 0$"
     ]
    ],
-   "zanimljivost": "Sve jednačine u jednom paru su ekvivalentne, jer imaju isto rešenje. Kad menjamo oblik, rešenje ostaje isto.",
+   "zanimljivost": "Broj iz para zamenjen u jednačinu daje tačnu jednakost. Kad menjamo oblik jednačine, rešenje ostaje isto.",
    "rec": "rešenje"
   },
   {
@@ -43994,7 +43994,7 @@
     "$10$",
     "$12$",
     "$8$",
-    "$40$ godina"
+    "$40$"
    ],
    "zanimljivost": "Ako sin ima $x$ godina, otac ima $4x$. Zbir je $5x = 50$, pa sin ima $10$ godina.",
    "medijiOdgovora": {
@@ -44613,7 +44613,7 @@
     "Cena jedne sveske je $x$, pet svezaka košta $50$",
     "Broj je $3$ puta veći od drugog, a zbir im je $20$"
    ],
-   "objasnjenje": "Zadatak sa zbirom i proizvodom dva broja vodi do jednačine drugog stepena, jer se obe nepoznate ne mogu izraziti jednim stepenom.",
+   "objasnjenje": "Zadatak sa zbirom i proizvodom dva broja vodi do jednačine drugog stepena, jer se drugi broj izražava kao $10 − x$, pa proizvod daje $x(10 − x) = 21$, a to je kvadratna jednačina.",
    "zanimljivost": "Proizvod dva nepoznata broja obično vodi do kvadratne jednačine.",
    "rec": "primena"
   },
@@ -49860,7 +49860,7 @@
     "$−1$",
     "$0$"
    ],
-   "zanimljivost": "Krajevi ovog intervala nisu celi brojevi, pa se gleda ceo broj koji je tačno u intervalu. Najmanji je prvi ceo broj desno od levog kraja, a levi kraj ne pripada skupu jer je zatvoren samo za $−2,5 ≤ x$.",
+   "zanimljivost": "Krajevi ovog intervala nisu celi brojevi, pa se gleda ceo broj koji je tačno u intervalu. Najmanji je prvi ceo broj desno od levog kraja, a levi kraj $−2,5$ nije ceo broj.",
    "rec": "najmanji"
   },
   {
@@ -50151,7 +50151,7 @@
     "−4",
     "−3"
    ],
-   "zanimljivost": "Svi brojevi manji od −1 i sam −1 pripadaju skupu. Najveći je onaj koji je najbliži −1 ulevo od kraja, a sam kraj pripada.",
+   "zanimljivost": "Svi brojevi manji od −1 i sam −1 pripadaju skupu. Najveći je sam kraj −1, jer on pripada skupu (znak ≤).",
    "rec": "najveći"
   },
   {
@@ -52894,7 +52894,7 @@
     "$x > 4$",
     "$x ≤ 4$"
    ],
-   "zanimljivost": "Deljenjem obe strane pozitivnim brojem 2 dobijamo $x < 4$$. Broj 4 ne pripada skupu, jer je 2 · 4 = 8, a nejednakost je stroga.$",
+   "zanimljivost": "Deljenjem obe strane pozitivnim brojem 2 dobijamo $x < 4$. Broj $ ne pripada skupu, jer je  · 4 = 8$, a nejednakost je stroga.",
    "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
@@ -53641,7 +53641,7 @@
      "$x ≤ −3$"
     ]
    ],
-   "zanimljivost": "Pri deljenju ili množenju negativnim brojem znak se okreće, kao u drugom i trećem paru.",
+   "zanimljivost": "Pri deljenju ili množenju negativnim brojem znak se okreće, kao u trećem i četvrtom paru.",
    "rec": "parovi"
   },
   {
@@ -70264,7 +70264,7 @@
     "Pravougaonik 2 × 3 (dva reda po tri, jedan iznad drugog)",
     "Raspored 1–4–1 (četiri u nizu, jedan iznad i jedan ispod)",
     "Raspored 2–3–1 (stepenasto)",
-    "Raspored 3–3 (dva reda po tri, pomereni za jedan kvadrat)"
+    "Raspored 3–3 (dva reda po tri, povezana jednom zajedničkom kolonom)"
    ],
    "objasnjenje": "Pravougaonik 2 × 3 nije mreža kocke: pri savijanju dva kvadrata padnu na istu stranu, a jedna strana ostane bez kvadrata.",
    "zanimljivost": "Kocka ima 11 mreža, a sve ostale tri vrste rasporeda su među njima.",
@@ -71003,7 +71003,7 @@
     "12 cm",
     "6 cm"
    ],
-   "zanimljivost": "Ako je 6 cm obim osnove, a 12 cm visina, dobijamo drugu prizmu sa ivicom 2 cm. Zato pitanje mora biti precizno postavljeno.",
+   "zanimljivost": "Obim osnove je 12 cm, pa je ivica osnove $12 : 3 = 4$ cm.",
    "rec": "omotač"
   },
   {
@@ -83922,7 +83922,7 @@
     "2,4 l",
     "12 l"
    ],
-   "zanimljivost": "$Zapremina je 24 000 cm³, a 1 l je 1 dm³ = 1000 cm³.$",
+   "zanimljivost": "Zapremina je  000 cm³$, a  l = 1 dm³ = 1000 cm³$.",
    "rec": "akvarijum"
   },
   {
@@ -87692,7 +87692,7 @@
   {
    "lekcija": 39,
    "tezina": 1,
-   "pitanje": "Koliko ivica treba da se spoje pri savijanju mreže piramide u tela?",
+   "pitanje": "Koje ivice se spajaju pri savijanju mreže piramide u telo?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -100270,13 +100270,13 @@
     "$y = −2x − 1$",
     "$y = x − 2$"
    ],
-   "zanimljivost": "Dovoljno je proveriti jednu vrednost: za $x = 0$ je $y = −1$, što odgovara samo prvoj formuli. Proveri i ostale vrednosti – tako se najbrže otklanjaju lažne formule.",
+   "zanimljivost": "Dovoljno je proveriti jednu vrednost: za $x = 0$ je $y = −1$, što odgovara i prvoj i trećoj formuli, pa treba proveriti još jednu vrednost. Proveri i ostale vrednosti – tako se najbrže otklanjaju lažne formule.",
    "rec": "tabela"
   },
   {
    "lekcija": 44,
    "tezina": 2,
-   "pitanje": "Tabela: $x$ $= 1, 2, 3 i$ $f(x)$ = 5, 5, 8. Da li je to funkcija?",
+   "pitanje": "Tabela: $x$ $= 1, 2, 3$ i $f(x)$ = 5, 5, 8. Da li je to funkcija?",
    "mediji": {
     "vrsta": "geo",
     "t": {},
@@ -101819,7 +101819,7 @@
   {
    "lekcija": 45,
    "tezina": 2,
-   "pitanje": "Kad se u $y = kx + n$ poveća $k$, a $n$ ostane isto, šta se dešava sa grafikom?",
+   "pitanje": "Kad se u $y = kx + n$ poveća $k$ (za $k > 0$), a $n$ ostane isto, šta se dešava sa grafikom?",
    "mediji": {
     "vrsta": "geo",
     "t": {},
@@ -103745,7 +103745,7 @@
     "18 h",
     "3,5 h"
    ],
-   "zanimljivost": "Udaljenost je $d = 2 + 6t$. Iz $20 = 2 + 6t$ je $6t = 18$, pa je $t = 3$ sata. Ako zaboravimo početnih 2 km, dobijamo 3,5 h.",
+   "zanimljivost": "Udaljenost je $d = 2 + 6t$. Iz $20 = 2 + 6t$ je $6t = 18$, pa je $t = 3$ sata. Ako zaboravimo početnih 2 km, dobijamo $20 : 6 ≈ 3{,}3$ h.",
    "rec": "udaljenost"
   },
   {
@@ -108792,7 +108792,7 @@
   {
    "lekcija": 52,
    "tezina": 3,
-   "pitanje": "Vrednost sok u rezervoaru: $y = 100 − 3x$ litara posle $x$ dana. Posle koliko dana ostane 28 litara?",
+   "pitanje": "Količina soka u rezervoaru: $y = 100 − 3x$ litara posle $x$ dana. Posle koliko dana ostane 28 litara?",
    "mediji": {
     "vrsta": "geo",
     "t": {},
@@ -109766,7 +109766,7 @@
     "beskonačno mnogo",
     "dva rešenja"
    ],
-   "zanimljivost": "Dve prave u ravni mogu da se seku, da budu paralelne ili da se poklope. Samo poklapanje daje beskonačno rešenja.",
+   "zanimljivost": "Dve prave u ravni mogu da se seku, da budu paralelne ili da se poklope. Samo poklapanje daje beskonačno mnogo rešenja.",
    "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
@@ -110213,7 +110213,7 @@
     "tačka $(2, 0)$",
     "krug sa centrom u $(2, 2)$"
    ],
-   "zanimljivost": "Vertikalna prava $x = 2$ je paralelna sa $y$-osom, pa su sve njene tačke na istom rastojanju od nje.",
+   "zanimljivost": "Vertikalna prava $x = 2$ je paralelna sa $y$-osom, pa su sve njene tačke na istom rastojanju od $y$-ose.",
    "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
@@ -111924,7 +111924,7 @@
     "uvrstiti izraz u drugu jednačinu",
     "rešiti dobijenu jednačinu sa jednom nepoznatom"
    ],
-   "objasnjenje": "Metoda smene je računska: izrazimo, uvrstimo i rešimo. Crtanje grafika je druga metoda, iz 7.5.",
+   "objasnjenje": "Metoda smene je računska: izrazimo, uvrstimo i rešimo. Crtanje grafika je grafička metoda, a ne računska.",
    "zanimljivost": "Ponekad je crtanje dobar način da se proveri rezultat dobijen smenom.",
    "rec": "smena"
   },
@@ -112695,7 +112695,7 @@
     "jedno rešenje $x = 0$",
     "dva rešenja"
    ],
-   "zanimljivost": "Sistem sa beskonačno rešenja zove se neodređen, jer nema jedinstvenog odgovora.",
+   "zanimljivost": "Sistem sa beskonačno mnogo rešenja zove se neodređen, jer nema jedinstvenog odgovora.",
    "rec": "neodređen"
   },
   {
@@ -116260,10 +116260,10 @@
    "odgovori": [
     "nemoguć, nema rešenja",
     "ima jedno rešenje",
-    "neodređen, beskonačno rešenja",
+    "neodređen, beskonačno mnogo rešenja",
     "ima rešenje $(1, 1)$"
    ],
-   "zanimljivost": "Sistemi sa istim levim stranama, a različitim desnim, daju paralelne prave.",
+   "zanimljivost": "Sistemi čije su leve strane proporcionalne, a desne nisu u istom odnosu, daju paralelne prave.",
    "rec": "nemoguć"
   },
   {
@@ -116319,7 +116319,7 @@
     "velicina": 240
    },
    "odgovori": [
-    "neodređen, beskonačno rešenja",
+    "neodređen, beskonačno mnogo rešenja",
     "nemoguć, nema rešenja",
     "ima jedno rešenje $(5, 0)$",
     "ima dva rešenja"
@@ -116490,7 +116490,7 @@
    },
    "odgovori": [
     "nemoguć (nema rešenja)",
-    "neodređen (beskonačno rešenja)",
+    "neodređen (beskonačno mnogo rešenja)",
     "ima tačno jedno rešenje",
     "ima rešenje $(2, 0)$"
    ],
@@ -116550,7 +116550,7 @@
     "velicina": 240
    },
    "odgovori": [
-    "neodređen, beskonačno rešenja",
+    "neodređen, beskonačno mnogo rešenja",
     "nemoguć, nema rešenja",
     "ima jedno rešenje",
     "paralelan, pa nema zajedničkih tačaka"
@@ -116792,7 +116792,7 @@
     ],
     [
      "$x − y = 1$ i $2x − 2y = 2$",
-     "neodređen, beskonačno rešenja"
+     "neodređen, beskonačno mnogo rešenja"
     ],
     [
      "$x = 2$ i $y = 3$",
@@ -116861,7 +116861,7 @@
    "odgovori": [
     "nemoguć, nema rešenja",
     "ima jedno rešenje $(6, 0)$",
-    "neodređen, beskonačno rešenja",
+    "neodređen, beskonačno mnogo rešenja",
     "ima rešenje $(5, 6)$"
    ],
    "zanimljivost": "Takvi sistemi se pojavljuju kad se u postavci zadatka nalaze dva međusobno isključiva uslova.",
@@ -118558,7 +118558,7 @@
   {
    "lekcija": 59,
    "tezina": 3,
-   "pitanje": "Pravougaonik iz prethodnog pitanja ima obim $36$ cm, a dužina mu je dva puta veća od širine. Kolika mu je površina?",
+   "pitanje": "Pravougaonik ima obim $36$ cm, a dužina mu je dva puta veća od širine. Kolika mu je površina?",
    "mediji": {
     "vrsta": "geo",
     "t": {},
@@ -158957,7 +158957,7 @@
     "obe su jednake",
     "zavisi od visine valjka"
    ],
-   "zanimljivost": "Širina preseka je $2√{r² − d²}$. Što je rastojanje d manje, to je širina veća, pa je bliža ravan daje širi pravougaonik.",
+   "zanimljivost": "Širina preseka je $2√{r² − d²}$. Što je rastojanje d manje, to je širina veća, pa bliža ravan daje širi pravougaonik.",
    "rec": "blizu"
   },
   {
@@ -251256,7 +251256,7 @@
     "$12π$ cm³",
     "$108π$ cm³"
    ],
-   "zanimljivost": "$Zapremina je 4/3 · r³ · π = 4/3 · 27 · π = 36π cm³.$",
+   "zanimljivost": "Zapremina je $4/3 · r³ · π = 4/3 · 27 · π = 36π$ cm³.",
    "rec": "zapremina"
   },
   {
@@ -252633,7 +252633,7 @@
     "25 cm",
     "50 cm"
    ],
-   "zanimljivost": "$Iz 4r²π = 100π dobijamo r² = 25, pa je r = 5 cm.$",
+   "zanimljivost": "Iz $4r²π = 100π$ dobijamo $r² = 25$, pa je $r = 5$ cm.",
    "rec": "površina"
   },
   {
@@ -252976,7 +252976,7 @@
     "8 cm",
     "4 cm"
    ],
-   "zanimljivost": "$Iz 4/3 · r³ · π = 288π dobijamo r³ = 216, pa je r = 6 cm.$",
+   "zanimljivost": "Iz $4/3 · r³ · π = 288π$ dobijamo $r³ = 216$, pa je $r = 6$ cm.",
    "rec": "zapremina"
   },
   {

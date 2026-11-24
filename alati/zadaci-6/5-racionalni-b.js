@@ -136,7 +136,7 @@ module.exports = (A) => {
     ['$−{4|5}$', '${4|5}$', '$1,25$', '$−{5|4}$'],
     [K('$−1,25 = −{125|100} = −{5|4}$.'),
      K('Recipročan broj ima zamenjen brojilac i imenilac, a znak ostaje isti: $−{4|5}$.'),
-     K('Provera: $(−{5|4}) · (−{4|5}) = 1$ ✓ (recipročni brojevi daju proizvod $1$, ne $0$ – to su suprotni brojevi). Oba broja su na istoj, negativnoj strani nule.', ['b'])],
+     K('Provera: $(−{5|4}) · (−{4|5}) = 1$ ✓ (recipročni brojevi daju proizvod $1$; suprotni brojevi daju zbir $0$). Oba broja su na istoj, negativnoj strani nule.', ['b'])],
     R(A.brojevna(-2, 0.5, [[-1.25, '−5/4'], [-0.8, '−4/5', 2, { id: 'b' }]], { podela: 0.25, svaki: 4 })));
   proveri(je(puta(F(-5, 4), F(-4, 5)), F(1)), 'recipročni −5/4');
 
@@ -201,7 +201,7 @@ module.exports = (A) => {
     ['$−14$', '$−1$', '$−4$', '$18$'],
     [K('Prvo zagrada: $3 − 7 = −4$.', ['a']),
      K('Zatim deljenje: $(−4) : {1|4} = −4 · 4 = −16$.', ['b']),
-     K('Na kraju sabiranje: $2 + (−16) = −14$. (Greška $−1$ nastaje kad se saberu $2$ i $−4$ pre deljenja.)', ['c'])],
+     K('Na kraju sabiranje: $2 + (−16) = −14$. (Česta greška je da se deli sa $4$ umesto da se množi.)', ['c'])],
     drvo({ op: '+', id: 'c', v: '−14', k: 3, l: '2', r: { op: ':', id: 'b', v: '−16', k: 2, l: { op: '−', id: 'a', v: '−4', k: 1, l: '3', r: '7' }, r: '1/4' } }));
   proveri(je(plus(F(2), kroz(minus(F(3), F(7)), F(1, 4))), F(-14)), '2 + (3−7):1/4');
 

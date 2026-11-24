@@ -115,7 +115,7 @@ module.exports = ({ L, Q, U, S, G, proveri, r }) => {
 
   Q(2, 'Funkcija je data tabelom. Koja formula joj odgovara?',
     ['$y = 2x − 1$', '$y = 2x + 1$', '$y = −2x − 1$', '$y = x − 2$'],
-    'Dovoljno je proveriti jednu vrednost: za $x = 0$ je $y = −1$, što odgovara samo prvoj formuli. Proveri i ostale vrednosti – tako se najbrže otklanjaju lažne formule.', 'tabela',
+    'Dovoljno je proveriti jednu vrednost: za $x = 0$ je $y = −1$, što odgovara i prvoj i trećoj formuli, pa treba proveriti još jednu vrednost. Proveri i ostale vrednosti – tako se najbrže otklanjaju lažne formule.', 'tabela',
     { mediji: tabela([['x', '−1', '0', '1', '2'], ['y', '−3', '−1', '1', '3']]) });
 
   Q(2, 'Tabela: $x$ = 1, 2, 3 i $f(x)$ = 5, 5, 8. Da li je to funkcija?',
@@ -196,7 +196,7 @@ module.exports = ({ L, Q, U, S, G, proveri, r }) => {
     'Presek sa $y$-osom ima $x = 0$, pa je $y = n = 6$. Tačka $(6, 0)$ bi bila presek sa $x$-osom, a ne sa $y$-osom.', 'odsečak',
     { mediji: ravan(-1, 5, -2, 8, [pr(-2, 6, -1, 5, -2, 8, { b: 1 })], { brojevi: 0 }) });
 
-  Q(2, 'Kad se u $y = kx + n$ poveća $k$, a $n$ ostane isto, šta se dešava sa grafikom?',
+  Q(2, 'Kad se u $y = kx + n$ poveća $k$ (za $k > 0$), a $n$ ostane isto, šta se dešava sa grafikom?',
     ['postaje strmiji', 'pomera se naniže', 'postaje horizontalan', 'seče $x$-osu bliže nuli'],
     'Nagib puta meri se procentom: nagib $10\\%$ znači da se na 100 m puta penjemo 10 m. Put sa nagibom $20\\%$ je dva puta strmiji. Pomeranje sa $n$ nema veze sa strminom.', 'strmina',
     { mediji: ravan(-3, 3, -2, 6, [pr(1, 1, -3, 3, -2, 6, { b: 1 }), pr(3, 1, -3, 3, -2, 6, { b: 2 }), tx('a', [2.2, 3.4]), tx('b', [1.2, 5.6], { b: 2 })], { brojevi: 0 }) });
@@ -317,7 +317,7 @@ module.exports = ({ L, Q, U, S, G, proveri, r }) => {
 
   Q(3, 'Biciklista je na početku 2 km od kuće, a udaljava se po 6 km na sat. Posle koliko sati je 20 km od kuće?',
     ['3 h', '2 h', '18 h', '3,5 h'],
-    'Udaljenost je $d = 2 + 6t$. Iz $20 = 2 + 6t$ je $6t = 18$, pa je $t = 3$ sata. Ako zaboravimo početnih 2 km, dobijamo 3,5 h.', 'udaljenost',
+    'Udaljenost je $d = 2 + 6t$. Iz $20 = 2 + 6t$ je $6t = 18$, pa je $t = 3$ sata. Ako zaboravimo početnih 2 km, dobijamo $20 : 6 ≈ 3{,}3$ h.', 'udaljenost',
     { mediji: ravan(0, 6, 0, 40, [dz([0, 2], [6, 38], { b: 1 })], { ose: ['~h', '~km'], podela: [1, 10] }) });
 
   Q(3, 'Voće se kupuje po 120 dinara za kilogram, a na celu porudžbinu je popust 80 dinara. Koliko košta $3$ kg?',
@@ -775,7 +775,7 @@ module.exports = ({ L, Q, U, S, G, proveri, r }) => {
     'Vrednost $y$ je pozitivna kad je grafik iznad $x$-ose, a to je desno od nule $x = 2$.', 'znak',
     { mediji: ravan(-2, 6, -4, 4, [pr(1, -2, -2, 6, -4, 4, { b: 1 })], { ose: ['x', 'y'], podela: [1, 1] }) });
 
-  Q(3, 'Vrednost sok u rezervoaru: $y = 100 − 3x$ litara posle $x$ dana. Posle koliko dana ostane 28 litara?',
+  Q(3, 'Količina soka u rezervoaru: $y = 100 − 3x$ litara posle $x$ dana. Posle koliko dana ostane 28 litara?',
     ['24', '28', '12', '33'],
     'Iz $28 = 100 − 3x$ je $3x = 72$, pa je $x = 24$. Na grafiku se vidi da je to tačka gde linija prolazi kroz visinu 28.', 'rezervoar',
     { mediji: ravan(0, 36, 0, 100, [dz([0, 100], [33, 1], { b: 1 })], { ose: ['~dana', '~l'], podela: [6, 20] }) });

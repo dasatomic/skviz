@@ -287,11 +287,11 @@ module.exports = ({ L, Q, U, S, G, proveri, telo, kocke, kvadar, kocka, prizma, 
 
   Q(3, 'Omotač trostrane prizme je pravougaonik 12 cm × 6 cm, pri čemu je 12 cm obim osnove. Kolika je ivica osnove?',
     ['4 cm', '2 cm', '12 cm', '6 cm'],
-    'Ako je 6 cm obim osnove, a 12 cm visina, dobijamo drugu prizmu sa ivicom 2 cm. Zato pitanje mora biti precizno postavljeno.',
+    'Obim osnove je 12 cm, pa je ivica osnove $12 : 3 = 4$ cm.',
     'omotač', { mediji: G({}, [{ lin: [[0, 0], [12, 0], [12, 6], [0, 6]], zatv: 1, b: 1 }, { tx: '12 cm', at: [6, -0.9] }, { tx: '6 cm', at: [13, 3] }], V()) });
 
   U(2, 'Koji raspored šest kvadrata NIJE mreža kocke?',
-    ['Pravougaonik 2 × 3 (dva reda po tri, jedan iznad drugog)', 'Raspored 1–4–1 (četiri u nizu, jedan iznad i jedan ispod)', 'Raspored 2–3–1 (stepenasto)', 'Raspored 3–3 (dva reda po tri, pomereni za jedan kvadrat)'],
+    ['Pravougaonik 2 × 3 (dva reda po tri, jedan iznad drugog)', 'Raspored 1–4–1 (četiri u nizu, jedan iznad i jedan ispod)', 'Raspored 2–3–1 (stepenasto)', 'Raspored 3–3 (dva reda po tri, povezana jednom zajedničkom kolonom)'],
     'Pravougaonik 2 × 3 nije mreža kocke: pri savijanju dva kvadrata padnu na istu stranu, a jedna strana ostane bez kvadrata.',
     'Kocka ima 11 mreža, a sve ostale tri vrste rasporeda su među njima.',
     'mreža', { mediji: G({}, [kvadrat(0, 0), kvadrat(1, 0), kvadrat(2, 0), kvadrat(3, 0), kvadrat(1, 1), kvadrat(2, -1)], V()) });
@@ -770,7 +770,7 @@ module.exports = ({ L, Q, U, S, G, proveri, telo, kocke, kvadar, kocka, prizma, 
 
   Q(2, 'Akvarijum oblika kvadra ima dno 40 cm × 20 cm i visinu 30 cm. Koliko litara vode staje u njega do vrha?',
     ['24 l', '240 l', '2,4 l', '12 l'],
-    'Zapremina je 24 000 cm³, a 1 l je 1 dm³ = 1000 cm³.',
+    'Zapremina je $24 000 cm³$, a $1 l = 1 dm³ = 1000 cm³$.',
     'akvarijum', { mediji: kvadar(40, 20, 30) });
 
   Q(3, 'Isti akvarijum (dno 40 cm × 20 cm, visina 30 cm) napunjen je do tri četvrtine visine. Koliko litara vode ima?',

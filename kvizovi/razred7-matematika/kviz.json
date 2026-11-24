@@ -478,7 +478,7 @@
     "$1$",
     "$0$"
    ],
-   "zanimljivost": "Kvadrat negativnog broja je pozitivan, pa je uvek veći od njega: $(-{1|2})^{2}={1|4}>-{1|2}$. Za ${1|2}$ kvadrat je manji, a za $0$ i $1$ je jednak. Brojevi 0 i 1 su jedini pozitivni brojevi jednaki svojim kvadratima. Svi brojevi između 0 i 1 imaju manji kvadrat.",
+   "zanimljivost": "Kvadrat negativnog broja je pozitivan, pa je uvek veći od njega: $(-{1|2})^{2}={1|4}>-{1|2}$. Za ${1|2}$ kvadrat je manji, a za $0$ i $1$ je jednak. Brojevi 0 i 1 su jedini nenegativni brojevi jednaki svojim kvadratima. Svi brojevi između 0 i 1 imaju manji kvadrat.",
    "medijiOdgovora": {
     "vrsta": "formula",
     "tekst": "(−1/2)² = 1/4, a 1/4 > −1/2",
@@ -8097,7 +8097,7 @@
     "0,03 dm",
     "0,09 dm"
    ],
-   "zanimljivost": "Stranica je $√{0,09}=0,3$ dm, jer je $0,3·0,3=0,09$. Reč „koren“ na latinskom je „radix“, pa se kvadratni koren označava slovom $r$.",
+   "zanimljivost": "Stranica je $√{0,09}=0,3$ dm, jer je $0,3·0,3=0,09$. Reč „koren“ na latinskom je „radix“, a znak za koren (√) potiče od slova $r$.",
    "medijiOdgovora": {
     "vrsta": "formula",
     "tekst": "√0,09 = 0,3, jer je 0,3 · 0,3 = 0,09",
@@ -8269,7 +8269,7 @@
     "25 cm",
     "$√{7}$ cm"
    ],
-   "zanimljivost": "Zbir površina je $9+16=25$ cm², a $√{25}=5$ cm. Zbir korena nije koren zbira: $√{9}+√{16}=7$ nije tačno. Ovaj odnos (3, 4, 5) je poznat kao Pitagorina trojka i važi za pravougli trougao.",
+   "zanimljivost": "Zbir površina je $9+16=25$ cm², a $√{25}=5$ cm. Zbir korena nije koren zbira: $√{9}+√{16}=7$, a $√{9+16}=5$. Ovaj odnos (3, 4, 5) je poznat kao Pitagorina trojka i važi za pravougli trougao.",
    "medijiOdgovora": {
     "vrsta": "formula",
     "tekst": "9 + 16 = 25, a √25 = 5 cm",
@@ -12609,7 +12609,7 @@
      "7,4"
     ]
    ],
-   "zanimljivost": "Pri zaokruživanju gledamo prvu odbačenu cifru. Broj 2,75 je 2,8, jer je ispred pete cifre neparna 7.",
+   "zanimljivost": "Pri zaokruživanju gledamo prvu odbačenu cifru. Broj 2,75 je 2,8, jer je cifra ispred 5 neparna 7.",
    "rec": "zaokružiti"
   },
   {
@@ -13156,7 +13156,7 @@
     "0,038",
     "0,4"
    ],
-   "zanimljivost": "Dve decimale su mesta 0,01 i 0,02. Broj je $0,0378$, a odbačena cifra je 7, pa se 3 povećava na 4: $0,04$. Pazi na mesta decimala: $0,4$ je deset puta veće. Greška sa mestom decimale (0,4 umesto 0,04) najčešća je pri zaokruživanju, zato se mesta prebrajaju od zareza.",
+   "zanimljivost": "Dve decimale su mesta 0,1 i 0,01. Broj je $0,0378$, a odbačena cifra je 7, pa se 3 povećava na 4: $0,04$. Pazi na mesta decimala: $0,4$ je deset puta veće. Greška sa mestom decimale (0,4 umesto 0,04) najčešća je pri zaokruživanju, zato se mesta prebrajaju od zareza.",
    "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
@@ -14639,7 +14639,7 @@
     "7",
     "1,4"
    ],
-   "zanimljivost": "Iz $y = 4x$ sledi $x = {y|4} = {7|4} = 1,75$. Obim je uvek 4 puta veći od stranice. Obim kvadrata je uvek 4 puta veći od stranice, pa je grafik ove veze uvek prava sa $k = 4$.",
+   "zanimljivost": "Iz $y = 4x$ sledi $x = {y|4} = {7|4} = 1,75$. Obim kvadrata je uvek 4 puta veći od stranice, pa je grafik ove veze uvek prava sa $k = 4$.",
    "medijiOdgovora": {
     "vrsta": "geo",
     "t": {},
@@ -18096,7 +18096,7 @@
     "$√{353}$ cm",
     "25 cm"
    ],
-   "zanimljivost": "Trojke 5, 12, 13 i 8, 15, 17 pripadaju istoj porodici – ima ih beskonačno mnogo.",
+   "zanimljivost": "Trojke 5, 12, 13 i 8, 15, 17 nisu iz iste porodice – Pitagorinih trojki ima beskonačno mnogo.",
    "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
@@ -49231,7 +49231,7 @@
   {
    "lekcija": 24,
    "tezina": 2,
-   "pitanje": "Pločice $x^{2}$, jedna veća pločica $x$ i dve pločice $1$ slažu se u pravougaonik (crtež). Koje su stranice?",
+   "pitanje": "Pločice $x^{2}$, tri pločice $x$ i dve pločice $1$ slažu se u pravougaonik (crtež). Koje su stranice?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -49454,7 +49454,7 @@
   {
    "lekcija": 24,
    "tezina": 2,
-   "pitanje": "Kvadrat je složen od pločica $x^{2}$, dve pločice $2x$, dve pločice $2x$ i pločica $4$ (crtež). Koja mu je stranica?",
+   "pitanje": "Kvadrat je složen od pločica $x^{2}$, dve pločice $2x$ i pločica $4$ (crtež). Koja mu je stranica?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -60048,10 +60048,10 @@
     "velicina": 300
    },
    "odgovori": [
-    "SSS",
+    "UUU",
     "SUS",
     "USU",
-    "UUU"
+    "SSS"
    ],
    "zanimljivost": "Tri jednaka ugla određuju samo oblik trougla, ne i veličinu. Jednakostranični trouglovi stranica $2$ i $3$ imaju iste uglove, a nisu podudarni. Svaki stav podudarnosti mora da sadrži bar jednu stranicu.",
    "rec": "podudarnost"
