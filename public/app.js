@@ -158,7 +158,17 @@ let sseRadi = false;    // SSE je bar jednom proradio na ovoj stranici
 
 // verzija koda sa servera pri prvom stanju; ako se kasnije promeni (server je dobio novi kod), stranica se osveži
 let mojaVerzija = null;
-function primi(v) {
+// Razlika satova server − telefon. Svaka poruka nosi `sada` servera, ali stiže sa zakašnjenjem (mreža, zagušen Wi-Fi),
+// pa je izmerena razlika uvek manja od prave. Od skorašnjih merenja važi najveće (ono sa najmanje kašnjenja) – inače
+// telefon kome poruke kasne vidi više preostalih sekundi nego ostali.
+const uzorciPomaka = [];
+function izmeriPomak(sadaServera, primljeno) {
+  if (typeof sadaServera !== 'number') return;
+  uzorciPomaka.push(sadaServera - primljeno);
+  if (uzorciPomaka.length > 12) uzorciPomaka.shift();
+  pomak = Math.max(...uzorciPomaka);
+}
+function primi(v, izmereno) {
   if (v.klijent) {
     if (mojaVerzija === null) mojaVerzija = v.klijent;
     else if (v.klijent !== mojaVerzija) {
@@ -167,7 +177,7 @@ function primi(v) {
       return;
     }
   }
-  pomak = v.sada - Date.now();
+  if (!izmereno) izmeriPomak(v.sada, Date.now()); // long-polling (SSE meri pri prijemu poruke)
   // Odgovor je poslat, a server ga još nije zabeležio: stanje izazvano TUĐIM odgovorom (u velikoj sobi stižu jedno za
   // drugim) ne sme da „vrati“ dugmad – inače igrač misli da dodir nije uspeo i bira ponovo, a važi prvi izbor.
   if (poslatOdgovor) {
@@ -186,8 +196,25 @@ function primi(v) {
   crtaj(staro);
 }
 
+// Poruke sa SSE toka: svaka se odmah spoji sa prethodnom (`isto` – delovi stanja koje server nije ponovio, vidi
+// posaljiToku u server.js), a crta se samo najnovija. Spor telefon (ili zauzet crtanjem medija) inače bi crtao jedno po
+// jedno zastarelo stanje i kasnio za ostalima; ovako odmah preskoči na trenutno.
+let naCekanju = null, primljenaVerzija = -1;
+function primiSaToka(v, gen) {
+  const bilo = naCekanju;
+  naCekanju = { v, gen };
+  if (bilo) return;
+  setTimeout(() => {
+    const x = naCekanju;
+    naCekanju = null;
+    if (x && x.gen === generacija) primi(x.v, true);
+  }, 0);
+}
+
 function prekiniVezu() {
   generacija++;
+  naCekanju = null;
+  primljenaVerzija = -1;
   if (izvor) { izvor.close(); izvor = null; }
 }
 
@@ -211,9 +238,24 @@ function povezi(kod) {
   const gen = generacija;
   ls.set('soba', kod);
   if (nacin === 'poll') return anketa(kod, gen);
-  let stiglo = false;
-  izvor = new EventSource(`/api/dogadjaji?soba=${encodeURIComponent(kod)}&igrac=${encodeURIComponent(ja.id)}&ziv=1`);
-  izvor.onmessage = (e) => { if (gen !== generacija) return; stiglo = sseRadi = true; primi(JSON.parse(e.data)); };
+  let stiglo = false, prethodna = null;
+  izvor = new EventSource(`/api/dogadjaji?soba=${encodeURIComponent(kod)}&igrac=${encodeURIComponent(ja.id)}&ziv=1&d=1`);
+  izvor.onmessage = (e) => {
+    if (gen !== generacija) return;
+    const primljeno = Date.now();
+    stiglo = sseRadi = true;
+    const v = JSON.parse(e.data);
+    if (v.isto) {
+      // nema prethodne poruke na ovom toku (ne bi smelo da se desi) – nova veza donosi celo stanje
+      if (!prethodna) return povezi(kod);
+      for (const k of v.isto) v[k] = prethodna[k];
+      delete v.isto;
+    }
+    prethodna = { ...v }; // kopija: primi menja polja poruke (npr. mojOdgovor), a sledeća poruka se spaja sa poslatim
+    primljenaVerzija = v.verzija;
+    izmeriPomak(v.sada, primljeno);
+    primiSaToka(v, gen);
+  };
   izvor.onerror = async () => {
     // v=-1: server odgovara odmah (ne drži zahtev otvoren kao kod long-pollinga)
     const r = await fetchRok(`/api/stanje?soba=${encodeURIComponent(kod)}&igrac=x&v=-1`, { method: 'HEAD', cache: 'no-store' }, 5000).catch(() => null);
@@ -251,8 +293,12 @@ async function puls() {
     const { v } = await r.json();
     if (gen !== generacija || !V) return;
     if (document.hidden) { ocekivanaVerzija = -1; return; } // obnova veze tek kad se ekran vidi (probudi)
-    if (ocekivanaVerzija >= 0 && V.verzija < ocekivanaVerzija) { ocekivanaVerzija = -1; return povezi(kod); }
-    ocekivanaVerzija = v > V.verzija ? v : -1;
+    const imam = Math.max(V.verzija, primljenaVerzija);
+    if (ocekivanaVerzija >= 0 && imam < ocekivanaVerzija) { ocekivanaVerzija = -1; return povezi(kod); }
+    ocekivanaVerzija = v > imam ? v : -1;
+    // server već ima novije stanje: ako ni za 3 s ne stigne, tok je mrtav ili zatrpan – nova veza odmah donosi
+    // trenutno stanje (ranije se čekao sledeći puls, pa je ekran stajao i do 20 s)
+    if (ocekivanaVerzija >= 0) setTimeout(puls, 3000);
   } catch {
     // puls nije prošao (mreža) – ako tok ipak radi, sve je u redu; ako ne radi, sledeći puls ga obnavlja
   } finally { pulsRadi = false; }

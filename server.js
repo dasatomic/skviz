@@ -84,12 +84,42 @@ function emitujOdmah(soba, e) {
   e.posle = Date.now() + RAZMAK_EMITOVANJA;
   if (sobe.get(soba.kod) !== soba) return; // soba je u međuvremenu obrisana
   const set = tokovi.get(soba.kod);
-  if (set) for (const t of set) posalji(t.res, soba.pogled(t.id));
+  if (set) for (const t of set) posaljiToku(soba, t);
   const c = cekaci.get(soba.kod);
   if (c && c.size) {
     cekaci.set(soba.kod, new Set());
     for (const w of c) { clearTimeout(w.tajmer); kraj(w.res, 200, soba.pogled(w.id)); }
   }
+}
+// Stanje jednom telefonu preko SSE-a. Telefon na slabom Wi-Fi-ju ne stiže da primi sve: ranije su se njegova zastarela
+// stanja gomilala u baferu i on ih je primao redom, pa je kasnio za ostalima sve više (u sobi od 10+ igrača svaki
+// odgovor je novo stanje). Zato:
+//  - dok prethodna poruka nije otišla (bafer pun), ne šalje se ništa; kad se isprazni – samo NAJNOVIJE stanje;
+//  - telefon koji to traži (`d=1`, public/app.js) ne dobija ponovo delove stanja koji su isti kao u prethodnoj poruci
+//    na istom toku (pitanje sa medijima, igrači…) – umesto njih `isto: [ključevi]`, a telefon ih uzme iz prethodne.
+const MIN_ISTO = 48; // kraći delovi stanja se uvek šalju (ušteda je manja od spiska `isto`)
+function posaljiToku(soba, t) {
+  const res = t.res;
+  if (res.destroyed) return;
+  if (res.writableNeedDrain) {
+    if (!t.ceka) {
+      t.ceka = Date.now();
+      res.once('drain', () => { t.ceka = 0; if (sobe.get(soba.kod) === soba && tokovi.get(soba.kod)?.has(t)) posaljiToku(soba, t); });
+    }
+    return;
+  }
+  const v = soba.pogled(t.id);
+  if (t.poslato) {
+    const isto = [];
+    for (const k of t.poslato.keys()) if (!(k in v)) t.poslato.delete(k);
+    for (const k of Object.keys(v)) {
+      const j = JSON.stringify(v[k]);
+      if (j === undefined || j.length < MIN_ISTO) { t.poslato.delete(k); continue; }
+      if (t.poslato.get(k) === j) { isto.push(k); delete v[k]; } else t.poslato.set(k, j);
+    }
+    if (isto.length) v.isto = isto;
+  }
+  posalji(res, v);
 }
 // Mrtva veza (telefon zaključan ili van mreže, a TCP veza „poluotvorena“) ne prima ništa, pa se sve poslato gomila u
 // memoriji servera. Kad se nagomila previše, veza se prekida – telefon se, kad se probudi, sam poveže ponovo.
@@ -284,12 +314,16 @@ async function obradi(req, res) {
     const ziv = url.searchParams.get('ziv') === '1';
     res.writeHead(200, { 'Content-Type': 'text/event-stream', 'Cache-Control': 'no-cache', Connection: 'keep-alive', 'X-Accel-Buffering': 'no' });
     res.write('retry: 1500\n\n');
-    const t = { res, id, ziv };
+    // d=1: telefon spaja poruke sa prethodnom (`isto`, vidi posaljiToku); stari klijenti i alati dobijaju celo stanje
+    const t = { res, id, ziv, poslato: url.searchParams.get('d') === '1' ? new Map() : null, ceka: 0 };
     if (!tokovi.has(soba.kod)) tokovi.set(soba.kod, new Set());
     tokovi.get(soba.kod).add(t);
     if (ziv) soba.vidjen(id); else soba.povezan(id, brojVeza(soba.kod, id));
-    posalji(res, soba.pogled(id));
-    const puls = setInterval(() => { try { if (res.writableLength > MAKS_BAFER) res.destroy(); else res.write(': puls\n\n'); } catch {} }, 15000);
+    posaljiToku(soba, t);
+    // tok koji minut ne prima ništa (bafer se ne prazni) je mrtav – telefon se, kad se probudi, poveže ponovo
+    const puls = setInterval(() => {
+      try { if (res.writableLength > MAKS_BAFER || (t.ceka && Date.now() - t.ceka > 60e3)) res.destroy(); else if (!t.ceka) res.write(': puls\n\n'); } catch {}
+    }, 15000);
     req.on('close', () => {
       clearInterval(puls);
       tokovi.get(soba.kod)?.delete(t);
