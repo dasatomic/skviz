@@ -101,7 +101,7 @@ const MORA = {
   'Zaliv Svetog Lovrenca': ['Gulf of Saint Lawrence'], 'Floridski moreuz': ['Straits of Florida'], 'Dejvisov moreuz': ['Davis Strait'],
   'La Plata': ['Río de la Plata'],
   'Koralno more': ['Coral Sea'], 'Tasmanovo more': ['Tasman Sea'], 'Arafursko more': ['Arafura Sea'], 'Timorsko more': ['Timor Sea'], 'Karpentarijski zaliv': ['Gulf of Carpentaria'],
-  'Veliki australijski zaliv': ['Great Australian Bight'], 'Basov moreuz': ['Bass Strait'], 'Veliki koralni greben': ['Great Barrier Reef'], 'Torezov moreuz': ['Torres Strait'],
+  'Veliki australijski zaliv': ['Great Australian Bight'], 'Basov prolaz': ['Bass Strait'], 'Veliki koralni greben': ['Great Barrier Reef'], 'Torezov moreuz': ['Torres Strait'],
   'Vedelovo more': ['Weddell Sea'], 'Rosovo more': ['Ross Sea'], 'Amundsenovo more': ['Amundsen Sea'], 'Belinsgauzenovo more': ['Bellingshausen Sea'],
 };
 // srpski naziv → name u ne_10m_lakes

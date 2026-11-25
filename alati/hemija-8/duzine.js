@@ -122,7 +122,7 @@ module.exports = [
   [495, ['Enzimi ubrzavaju razlaganje korak po korak', 'Jer su šećeri jonska jedinjenja kao so', 'Jer su šećeri metali sa sjajem', 'Jer šećeri ne sadrže ugljenik uopšte']],
   [501, ['U mleku i mlečnim proizvodima', 'U šećernoj repi i trsci', 'U grožđu i drugom voću', 'U žitaricama i krompiru']],
   [503, ['U krtolama, semenima i korenu', 'U listovima i cvetovima', 'U kori i drvetu stabla', 'U voću kao rezervni šećer']],
-  [504, ['Luglovim rastvorom joda – boja postaje tamnoplava', 'Felingovim reagensom – boja postaje crvena pri zagrevanju', 'Lakmus hartijom – hartija menja boju u plavo', 'Krečnom vodom – rastvor postaje beo i mutan']],
+  [504, ['Lugolovim rastvorom joda – boja postaje tamnoplava', 'Felingovim reagensom – boja postaje crvena pri zagrevanju', 'Lakmus hartijom – hartija menja boju u plavo', 'Krečnom vodom – rastvor postaje beo i mutan']],
   [506, ['Nemamo enzime koji razlažu njene veze', 'Celuloza je gas koji ne možemo da svarimo', 'Rastvara se u vodi i izlazi iz tela', 'Ne sadrži ugljenik pa nema energije']],
   [507, ['U jetri i mišićima', 'U kostima i zubima', 'U koži i kosi', 'U krvi i limfi']],
   [508, ['Načinom povezivanja ostataka glukoze', 'Brojem atoma kiseonika u molekulu', 'Agregatnim stanjem na sobnoj temperaturi', 'Sadrže potpuno različite hemijske elemente']],

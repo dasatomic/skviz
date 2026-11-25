@@ -164,7 +164,7 @@
       natpisi: [{ lon: 21.3, lat: 41.6, t: 'Osmansko carstvo', vel: 'm' }],
       legenda: [[B.srb, 'Srbija'], [B.cg, 'Crna Gora'], [B.bug, 'Bugarska'], [B.grc, 'Grčka'], [B.osm, 'Osmansko carstvo']],
     },
-    // Balkan posle Bukureštanskog mira (1913)
+    // Balkan posle Bukureškog mira (1913)
     'balkan-1913': {
       kutija: [17.5, 38.5, 29.5, 46.0], reke: ['Dunav', 'Sava'],
       slojevi: [{ d: ['TUR'], boja: B.osm, kljuc: 'osmanlije' }, { d: ['GRC'], boja: B.grc, kljuc: 'grcka', natpis: 'Grčka', na: [22.0, 39.5] },
@@ -348,7 +348,7 @@
         { r: [[[10.9, 54.0], [10.75, 53.6], [11.15, 53.2], [10.8, 52.85], [10.95, 52.35], [10.6, 51.95], [10.15, 51.45], [9.95, 51.2], [10.2, 50.6], [10.65, 50.35], [11.3, 50.45], [11.95, 50.35], [12.3, 50.2], [13.3, 50.6], [14.3, 50.9], [14.8, 50.85], [15.0, 51.15], [14.6, 51.6], [14.75, 52.1], [14.55, 52.6], [14.3, 53.3], [14.2, 53.9], [13.8, 54.6], [12.4, 54.45], [11.3, 54.15]]], boja: '#c0392b', kljuc: 'ddr' },
         { d: ['ALB'], boja: '#8d6e63', kljuc: 'albanija' }, { d: ['SVN', 'HRV', 'BIH', 'SRB', 'MNE', 'MKD'], boja: '#e6a23c', kljuc: 'jugoslavija' }],
       linije: [{ tacke: [[10.9, 54.0], [10.8, 52.85], [10.2, 50.6], [12.3, 50.2], [13.6, 48.8], [16.9, 48.6], [17.1, 48.0], [16.5, 46.5], [16.2, 46.4]], boja: '#ffeb3b', debljina: 5, isprekidana: true }],
-      legenda: [['#2f6fb3', 'NATO'], ['#c0392b', 'Varšavski ugovor'], ['#e6a23c', 'Jugoslavija (nesvrstana)'], [B.neu, 'neutralne'], ['#ffeb3b', '„gvozdena zavesa“']],
+      legenda: [['#2f6fb3', 'NATO'], ['#c0392b', 'Varšavski pakt'], ['#e6a23c', 'Jugoslavija (nesvrstana)'], [B.neu, 'neutralne'], ['#ffeb3b', '„gvozdena zavesa“']],
     },
     // Socijalistička Jugoslavija: šest republika i dve pokrajine (1945–1991)
     'sfrj': {
