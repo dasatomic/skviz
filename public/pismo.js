@@ -77,7 +77,7 @@
     // igre, serije, filmovi, likovi i ličnosti u izvornom obliku (dopuna)
     'pubg rockstar electronic activision ubisoft sega mojang rovio theft need speed free fire scarface bellic johnson michael borderland patrick krabs amphibia friends seinfeld narcos dark sherlock luther broadchurch ketchum brock oak dragon vegeta piccolo garfield spider batman minnie donald pluto luigi toad peach rosalina zuckerberg tajiri north east south habitat hunting insects population precipitation parasites overharvesting moesia kampf nitrogen ' +
     // muzičke oznake (italijanski)
-    'allegro adagio andante diminuendo crescendo decrescendo fortissimo pianissimo ff pp mf mp ' +
+    'allegro adagio crescendo decrescendo fortissimo pianissimo ff pp mf mp ' +
     // engleske službene reči (ne postoje u srpskom)
     'the of and with from is am are up off all').split(/\s+/).filter(Boolean));
   const NASTAVCI = /^(a|u|om|e|i|ima|ov|ova|ove|ovi|ovo|ovog|ovom|ovu|ovih|ovim|ovoj|ovim)$/;
