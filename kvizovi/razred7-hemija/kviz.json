@@ -237,6 +237,13 @@
         "Pinceta"
       ],
       "zanimljivost": "Menzura je graduisani stakleni cilindar. Pri čitanju, oko treba da bude u visini donjeg ruba površine tečnosti (meniska).",
+      "medijiOdgovora": {
+        "vrsta": "laboratorija",
+        "scena": "pribor",
+        "stavke": [
+          "menzura"
+        ]
+      },
       "rec": "menzura",
       "lekcija": 3
     },
@@ -250,6 +257,13 @@
         "Za filtriranje smeše kroz filter-papir"
       ],
       "zanimljivost": "I u kuhinji se koristi avan – za usitnjavanje začina. Laboratorijski je obično od porcelana.",
+      "medijiOdgovora": {
+        "vrsta": "laboratorija",
+        "scena": "pribor",
+        "stavke": [
+          "avan"
+        ]
+      },
       "rec": "avan",
       "lekcija": 3
     },
@@ -341,6 +355,12 @@
         "Broj elektronskih nivoa"
       ],
       "zanimljivost": "Ugljenik ima redni broj 6 – svaki atom ugljenika ima 6 protona. Broj protona „određuje“ koji je element.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "atom",
+        "z": 6,
+        "brojevi": true
+      },
       "rec": "proton",
       "lekcija": 9
     },
@@ -354,6 +374,12 @@
         "Broj energetskih nivoa atoma"
       ],
       "zanimljivost": "Ugljenik-12 ima 6 protona i 6 neutrona. Ugljenik-14 ima 6 protona i 8 neutrona – to je izotop.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "atom",
+        "z": 6,
+        "brojevi": true
+      },
       "rec": "neutron",
       "lekcija": 9
     },
@@ -367,6 +393,12 @@
         "34"
       ],
       "zanimljivost": "Broj neutrona = maseni broj − redni broj = 23 − 11 = 12.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "atom",
+        "z": 11,
+        "brojevi": true
+      },
       "rec": "neutron",
       "lekcija": 9
     },
@@ -380,6 +412,11 @@
         "4"
       ],
       "zanimljivost": "Drugi nivo prima najviše 8 elektrona. Zato su helijum (2) i neon (2 + 8) vrlo stabilni – nivoi su im popunjeni.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "atom",
+        "z": 2
+      },
       "rec": "nivo",
       "lekcija": 10
     },
@@ -393,6 +430,11 @@
         "2, 2, 4"
       ],
       "zanimljivost": "Kiseoniku do popunjenog drugog nivoa nedostaju 2 elektrona – zato gradi dve veze, kao u molekulu vode.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "atom",
+        "z": 8
+      },
       "rec": "kiseonik",
       "lekcija": 10
     },
@@ -406,6 +448,11 @@
         "Kolone"
       ],
       "zanimljivost": "Ima ih sedam. Broj periode pokazuje koliko energetskih nivoa ima atom tog elementa.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "periodni",
+        "istakni": "perioda:3"
+      },
       "rec": "perioda",
       "lekcija": 11
     },
@@ -419,6 +466,11 @@
         "Nizovi"
       ],
       "zanimljivost": "Elementi u istoj grupi imaju isti broj elektrona u poslednjem nivou, pa imaju i slična svojstva.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "periodni",
+        "istakni": "grupa:17"
+      },
       "rec": "grupa",
       "lekcija": 11
     },
@@ -432,6 +484,11 @@
         "Ista boja i sjaj, pa ih je lako prepoznati u prirodi"
       ],
       "zanimljivost": "Zato se litijum, natrijum i kalijum ponašaju slično – svi imaju po jedan elektron u spoljašnjem nivou.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "periodni",
+        "istakni": "grupa:1"
+      },
       "rec": "grupa",
       "lekcija": 11
     },
@@ -445,6 +502,11 @@
         "Uvek su tečni, pa se ne mešaju sa gasovima"
       ],
       "zanimljivost": "Argon se zbog toga koristi u sijalicama i pri zavarivanju – štiti metal od kiseonika iz vazduha.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "periodni",
+        "istakni": "plemeniti"
+      },
       "rec": "stabilnost",
       "lekcija": 12
     },
@@ -497,6 +559,11 @@
         "Vodonična veza"
       ],
       "zanimljivost": "Kovalentnom vezom su povezani atomi u molekulima vodonika, kiseonika, vode i metana.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "kovalentna",
+        "ime": "vodonik"
+      },
       "rec": "kovalentna",
       "lekcija": 13
     },
@@ -510,6 +577,12 @@
         "Polarna veza"
       ],
       "zanimljivost": "Jonska veza postoji, na primer, u kuhinjskoj soli – između jona Na⁺ i Cl⁻.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "jonska",
+        "metal": 11,
+        "nemetal": 17
+      },
       "rec": "jon",
       "lekcija": 15
     },
@@ -562,6 +635,12 @@
         "Mg₂O₃"
       ],
       "zanimljivost": "Kada su valence iste, atomi se jednostavno spoje 1 : 1. Magnezijum-oksid nastaje kada magnezijum gori jarkim belim plamenom.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "jonska",
+        "metal": 12,
+        "nemetal": 8
+      },
       "rec": "magnezijum",
       "lekcija": 16
     },
@@ -635,6 +714,11 @@
         "Filtrat"
       ],
       "zanimljivost": "Voda je „univerzalni rastvarač“ – rastvara više supstanci od bilo koje druge tečnosti.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "rastvaranje",
+        "tip": "so"
+      },
       "rec": "rastvarač",
       "lekcija": 18
     },
@@ -687,6 +771,10 @@
         "Isparavanjem"
       ],
       "zanimljivost": "Kad se gvožđe i sumpor zagrevaju zajedno, nastaje jedinjenje gvožđe-sulfid – i tada ih magnet više ne može razdvojiti.",
+      "medijiOdgovora": {
+        "vrsta": "laboratorija",
+        "scena": "magnet"
+      },
       "rec": "magnet",
       "lekcija": 21
     },
@@ -700,6 +788,10 @@
         "Magnetom"
       ],
       "zanimljivost": "Destilacija se koristi u preradi nafte i za dobijanje destilovane vode.",
+      "medijiOdgovora": {
+        "vrsta": "laboratorija",
+        "scena": "destilacija"
+      },
       "rec": "destilacija",
       "lekcija": 21
     },
@@ -778,6 +870,26 @@
         "C₂ + O₂ → C₂O"
       ],
       "zanimljivost": "Jednačina je izjednačena: sa obe strane je po jedan atom ugljenika i dva atoma kiseonika.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "reakcija",
+        "reaktanti": [
+          [
+            "ugljenik",
+            1
+          ],
+          [
+            "kiseonik",
+            1
+          ]
+        ],
+        "proizvodi": [
+          [
+            "ugljen-dioksid",
+            1
+          ]
+        ]
+      },
       "rec": "sagorevanje",
       "lekcija": 23
     },
@@ -882,6 +994,10 @@
         "Oksidi metala"
       ],
       "zanimljivost": "Kiseline sadrže vodonik koji u vodi daje vodonikove jone (H⁺). Nikada ne treba probati laboratorijske kiseline!",
+      "medijiOdgovora": {
+        "vrsta": "laboratorija",
+        "scena": "lakmus"
+      },
       "rec": "kiselina",
       "lekcija": 31
     },
@@ -895,6 +1011,10 @@
         "Plemeniti gasovi"
       ],
       "zanimljivost": "Natrijum-hidroksid (kaustična soda) koristi se za pravljenje sapuna i odčepljivanje odvoda – vrlo je nagrizajući.",
+      "medijiOdgovora": {
+        "vrsta": "laboratorija",
+        "scena": "lakmus"
+      },
       "rec": "baza",
       "lekcija": 31
     },
@@ -917,6 +1037,11 @@
       "pitanje": "Ko se smatra ocem moderne hemije?",
       "rec": "lavoazje",
       "zanimljivost": "Lavoazje je prvi pažljivo merio mase pre i posle reakcije i postavio zakon o održanju mase.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/hemija/slike/lavoazje.jpg",
+        "opis": "Antoan Lavoazje"
+      },
       "odgovori": [
         "Antoan Lavoazje",
         "Džon Dalton",
@@ -1270,6 +1395,14 @@
       "pitanje": "Koje posuđe služi za zagrevanje tečnosti u laboratoriji?",
       "rec": "epruveta",
       "zanimljivost": "Epruveta se zagreva u kosom položaju, otvorom okrenutim od lica i drugih ljudi.",
+      "medijiOdgovora": {
+        "vrsta": "laboratorija",
+        "scena": "pribor",
+        "stavke": [
+          "epruveta",
+          "hvataljka"
+        ]
+      },
       "odgovori": [
         "Epruveta",
         "Menzura",
@@ -1283,6 +1416,13 @@
       "pitanje": "Čime se u laboratoriji uzima čvrsta supstanca u prahu?",
       "rec": "špatula",
       "zanimljivost": "Nikad se supstance ne uzimaju rukom niti se probaju – koristi se kašičica.",
+      "medijiOdgovora": {
+        "vrsta": "laboratorija",
+        "scena": "pribor",
+        "stavke": [
+          "kasicica"
+        ]
+      },
       "odgovori": [
         "Kašičicom (špatulom)",
         "Pipetom",
@@ -1296,6 +1436,14 @@
       "pitanje": "Čemu služi tronožac sa mrežicom?",
       "rec": "tronožac",
       "zanimljivost": "Mrežica ravnomerno raspoređuje toplotu, pa staklo ne puca. Nekada se pravila od azbesta, a danas je keramička.",
+      "medijiOdgovora": {
+        "vrsta": "laboratorija",
+        "scena": "pribor",
+        "stavke": [
+          "tronozac",
+          "lampa"
+        ]
+      },
       "odgovori": [
         "Da drži posudu pri zagrevanju iznad gorionika",
         "Da se na njemu meri masa supstance",
@@ -1322,6 +1470,13 @@
       "pitanje": "Koji pribor se koristi za merenje zapremine tečnosti?",
       "rec": "menzura",
       "zanimljivost": "Zapremina se u menzuri čita u visini donjeg ruba površine tečnosti (meniska).",
+      "medijiOdgovora": {
+        "vrsta": "laboratorija",
+        "scena": "pribor",
+        "stavke": [
+          "menzura"
+        ]
+      },
       "odgovori": [
         "Menzura",
         "Vaga",
@@ -1376,6 +1531,10 @@
       "pitanje": "Kako se pravilno miriše supstanca u epruveti?",
       "rec": "miris",
       "zanimljivost": "Para se lagano navije dlanom ka nosu – tako se izbegne udisanje jake pare.",
+      "medijiOdgovora": {
+        "vrsta": "laboratorija",
+        "scena": "mirisanje"
+      },
       "odgovori": [
         "Paru lagano navijemo rukom ka nosu",
         "Nos prinesemo direktno otvoru",
@@ -1402,6 +1561,14 @@
       "pitanje": "Čime se drži epruveta dok se zagreva iznad plamena?",
       "rec": "hvataljka",
       "zanimljivost": "Hvataljka se stavlja pri vrhu epruvete. Drvo slabo provodi toplotu, pa se ruka ne opeče.",
+      "medijiOdgovora": {
+        "vrsta": "laboratorija",
+        "scena": "pribor",
+        "stavke": [
+          "hvataljka",
+          "epruveta"
+        ]
+      },
       "odgovori": [
         "Drvenom hvataljkom (štipaljkom)",
         "Pincetom",
@@ -1614,6 +1781,13 @@
       "pitanje": "Kojim instrumentom se meri masa supstance?",
       "rec": "vaga",
       "zanimljivost": "Osnovna jedinica za masu je kilogram (kg), a u laboratoriji se često koristi gram (g).",
+      "medijiOdgovora": {
+        "vrsta": "laboratorija",
+        "scena": "pribor",
+        "stavke": [
+          "vaga"
+        ]
+      },
       "odgovori": [
         "Vagom",
         "Menzurom",
@@ -1796,6 +1970,13 @@
       "pitanje": "Šta se dešava sa tečnošću u termometru kad temperatura raste?",
       "rec": "širenje",
       "zanimljivost": "Tečnost (npr. živa ili alkohol) se pri zagrevanju širi, pa se penje.",
+      "medijiOdgovora": {
+        "vrsta": "laboratorija",
+        "scena": "pribor",
+        "stavke": [
+          "termometar"
+        ]
+      },
       "odgovori": [
         "Širi se i penje uz cevčicu",
         "Skuplja se i spušta",
@@ -2305,6 +2486,11 @@
       "pitanje": "Ko je ogledom sa zlatnim listićem otkrio da atom ima jezgro?",
       "rec": "raderford",
       "zanimljivost": "Raderford je 1911. zaključio da je atom uglavnom prazan prostor sa sićušnim jezgrom.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/fizika/slike/raderford.jpg",
+        "opis": "Ernest Raderford"
+      },
       "odgovori": [
         "Ernest Raderford",
         "Džon Dalton",
@@ -2529,6 +2715,12 @@
       "pitanje": "Koliko protona i neutrona ima atom hlora-35 (Z = 17)?",
       "rec": "neutron",
       "zanimljivost": "Maseni broj 35 − atomski broj 17 = 18 neutrona.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "atom",
+        "z": 17,
+        "brojevi": true
+      },
       "odgovori": [
         "17 protona i 18 neutrona",
         "17 protona i 35 neutrona",
@@ -2555,6 +2747,11 @@
       "pitanje": "Koliko elektrona najviše prima drugi energetski nivo?",
       "rec": "nivo",
       "zanimljivost": "Prvi nivo prima najviše 2 elektrona, a drugi 8.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "atom",
+        "z": 10
+      },
       "odgovori": [
         "8",
         "2",
@@ -2803,6 +3000,11 @@
       "pitanje": "Ko je sastavio periodni sistem elemenata 1869. godine?",
       "rec": "mendeljejev",
       "zanimljivost": "Mendeljejev je poređao elemente po rastućoj atomskoj masi i uočio pravilnosti.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/hemija/slike/mendeljejev.jpg",
+        "opis": "Dmitrij Mendeljejev"
+      },
       "odgovori": [
         "Dmitrij Mendeljejev",
         "Antoan Lavoazje",
@@ -2816,6 +3018,10 @@
       "pitanje": "Koliko perioda ima periodni sistem?",
       "rec": "perioda",
       "zanimljivost": "Broj periode pokazuje koliko energetskih nivoa ima atom.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "periodni"
+      },
       "odgovori": [
         "7",
         "18",
@@ -2829,6 +3035,10 @@
       "pitanje": "Koliko grupa ima periodni sistem?",
       "rec": "grupa",
       "zanimljivost": "Elementi iste grupe imaju slična hemijska svojstva.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "periodni"
+      },
       "odgovori": [
         "18",
         "7",
@@ -2855,6 +3065,13 @@
       "pitanje": "Koji element se nalazi u prvoj grupi i prvoj periodi?",
       "rec": "vodonik",
       "zanimljivost": "Vodonik je poseban: iako je u 1. grupi, nije metal kao ostali.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "periodni",
+        "istakni": [
+          "H"
+        ]
+      },
       "odgovori": [
         "Vodonik",
         "Helijum",
@@ -2868,6 +3085,11 @@
       "pitanje": "Kako se zovu elementi 17. grupe?",
       "rec": "halogen",
       "zanimljivost": "Halogeni (fluor, hlor, brom, jod) lako reaguju i grade soli.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "periodni",
+        "istakni": "halogeni"
+      },
       "odgovori": [
         "Halogeni elementi",
         "Plemeniti gasovi",
@@ -2881,6 +3103,11 @@
       "pitanje": "Kako se zovu elementi 18. grupe?",
       "rec": "gas",
       "zanimljivost": "Plemeniti gasovi su stabilni i skoro ne reaguju.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "periodni",
+        "istakni": "plemeniti"
+      },
       "odgovori": [
         "Plemeniti gasovi",
         "Halogeni elementi",
@@ -2894,6 +3121,11 @@
       "pitanje": "Gde se u periodnom sistemu nalaze metali?",
       "rec": "metal",
       "zanimljivost": "Metali čine većinu elemenata; nemetali su u gornjem desnom delu.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "periodni",
+        "istakni": "metali"
+      },
       "odgovori": [
         "Levo i u sredini",
         "Samo u gornjem desnom uglu",
@@ -2907,6 +3139,10 @@
       "pitanje": "Kako su elementi poređani u savremenom periodnom sistemu?",
       "rec": "redosled",
       "zanimljivost": "Atomski broj raste s leva na desno i odozgo naniže.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "periodni"
+      },
       "odgovori": [
         "Po rastućem atomskom broju",
         "Po opadajućoj masi",
@@ -2941,6 +3177,11 @@
       "pitanje": "Gde se u periodnom sistemu nalaze nemetali?",
       "rec": "nemetal",
       "zanimljivost": "Nemetali su u gornjem desnom delu, uz plemenite gasove.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "periodni",
+        "istakni": "nemetali"
+      },
       "odgovori": [
         "U gornjem desnom delu",
         "U donjem levom delu",
@@ -3009,6 +3250,11 @@
       "pitanje": "U kojoj grupi periodnog sistema su plemeniti gasovi?",
       "rec": "gas",
       "zanimljivost": "Plemeniti gasovi su u poslednjoj, 18. grupi.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "periodni",
+        "istakni": "grupa:18"
+      },
       "odgovori": [
         "18. grupi",
         "1. grupi",
@@ -3126,6 +3372,11 @@
       "pitanje": "Kovalentna veza nastaje…",
       "rec": "par",
       "zanimljivost": "Dva atoma dele jedan ili više elektronskih parova – zato se veza zove kovalentna.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "kovalentna",
+        "ime": "hlor"
+      },
       "odgovori": [
         "deljenjem zajedničkog elektronskog para",
         "privlačenjem suprotno naelektrisanih jona",
@@ -3156,6 +3407,11 @@
       "pitanje": "Kako se zove veza u kojoj atomi dele jedan zajednički par elektrona?",
       "rec": "veza",
       "zanimljivost": "Jedan zajednički par = jednostruka veza, dva para = dvostruka, tri para = trostruka.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "kovalentna",
+        "ime": "hlor"
+      },
       "odgovori": [
         "Jednostruka veza",
         "Dvostruka veza",
@@ -3169,6 +3425,11 @@
       "pitanje": "Koliko zajedničkih elektronskih parova ima dvostruka veza?",
       "rec": "veza",
       "zanimljivost": "Dvostruka veza ima dva zajednička para (4 elektrona), kao u kiseoniku O₂.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "kovalentna",
+        "ime": "kiseonik"
+      },
       "odgovori": [
         "2",
         "1",
@@ -3247,6 +3508,11 @@
       "pitanje": "Zašto atomi grade kovalentne veze?",
       "rec": "oktet",
       "zanimljivost": "Atomi „teže“ popunjenom spoljašnjem nivou – obično sa 8 elektrona (oktet).",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "kovalentna",
+        "ime": "voda"
+      },
       "odgovori": [
         "Da popune spoljašnji nivo i postanu stabilni",
         "Da izgube sve elektrone i tako postanu stabilni joni",
@@ -3278,6 +3544,11 @@
       "pitanje": "Koliko kovalentnih veza gradi atom ugljenika u metanu?",
       "rec": "ugljenik",
       "zanimljivost": "Ugljenik je četvorovalentan – gradi 4 veze, kao u CH₄.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "kovalentna",
+        "ime": "metan"
+      },
       "odgovori": [
         "4",
         "2",
@@ -3345,6 +3616,10 @@
       "pitanje": "Kakvu kristalnu rešetku ima led?",
       "rec": "led",
       "zanimljivost": "U čvorovima rešetke leda su molekuli vode povezani slabim silama.",
+      "medijiOdgovora": {
+        "vrsta": "molekul",
+        "ime": "led"
+      },
       "odgovori": [
         "Molekulsku",
         "Atomsku",
@@ -3358,6 +3633,10 @@
       "pitanje": "Šta se nalazi u čvorovima molekulske kristalne rešetke?",
       "rec": "molekul",
       "zanimljivost": "Led, suvi led i šećer imaju molekulsku rešetku.",
+      "medijiOdgovora": {
+        "vrsta": "molekul",
+        "ime": "led"
+      },
       "odgovori": [
         "Molekuli",
         "Atomi",
@@ -3389,6 +3668,10 @@
       "pitanje": "Zašto je dijamant tako tvrd?",
       "rec": "dijamant",
       "zanimljivost": "Zbog jake atomske rešetke dijamant je najtvrđi prirodni materijal.",
+      "medijiOdgovora": {
+        "vrsta": "molekul",
+        "ime": "dijamant"
+      },
       "odgovori": [
         "Svi atomi su povezani jakim kovalentnim vezama",
         "Molekuli su mu veoma teški i gusto zbijeni",
@@ -3462,6 +3745,11 @@
       "pitanje": "Koja supstanca ima metalnu kristalnu rešetku?",
       "rec": "metal",
       "zanimljivost": "Metali imaju metalnu rešetku sa slobodnim elektronima koji provode struju.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "metalna",
+        "metal": "Cu"
+      },
       "odgovori": [
         "Bakar",
         "Led",
@@ -3475,6 +3763,10 @@
       "pitanje": "Kako se zove rešetka u kojoj se elektroni kreću kao „more“ između jona?",
       "rec": "metal",
       "zanimljivost": "Slobodni elektroni čine metale dobrim provodnicima struje i toplote.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "metalna"
+      },
       "odgovori": [
         "Metalna rešetka",
         "Atomska rešetka",
@@ -3488,6 +3780,10 @@
       "pitanje": "Kakvu kristalnu rešetku ima grafit?",
       "rec": "grafit",
       "zanimljivost": "Grafit je ugljenik u slojevima koji lako klize – zato ostavlja trag na papiru.",
+      "medijiOdgovora": {
+        "vrsta": "molekul",
+        "ime": "grafit"
+      },
       "odgovori": [
         "Atomsku, sa slojevima",
         "Jonsku",
@@ -3501,6 +3797,10 @@
       "pitanje": "Po čemu se grafit razlikuje od dijamanta?",
       "rec": "grafit",
       "zanimljivost": "I grafit i dijamant su čist ugljenik, ali su atomi drugačije povezani.",
+      "medijiOdgovora": {
+        "vrsta": "molekul",
+        "ime": "grafit"
+      },
       "odgovori": [
         "U grafitu su slojevi koji klize, a u dijamantu je čvrsta mreža",
         "Grafit ima jone, a dijamant molekule, pa se zato razlikuju po tvrdoći",
@@ -3514,6 +3814,10 @@
       "pitanje": "Šta je grafit?",
       "rec": "grafit",
       "zanimljivost": "Mina olovke je grafit pomešan sa glinom.",
+      "medijiOdgovora": {
+        "vrsta": "molekul",
+        "ime": "grafit"
+      },
       "odgovori": [
         "Ugljenik koji ostavlja trag (u olovci)",
         "Metal za nakit, sličan srebru i zlatu, ali mekši",
@@ -3540,6 +3844,12 @@
       "pitanje": "Kako nastaje jon?",
       "rec": "jon",
       "zanimljivost": "Atom koji izgubi ili primi elektron postaje naelektrisana čestica – jon.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "jonska",
+        "metal": 11,
+        "nemetal": 17
+      },
       "odgovori": [
         "Kad atom primi ili otpusti elektron",
         "Kad se atom rastvori u vodi",
@@ -3579,6 +3889,12 @@
       "pitanje": "Koji jon nastaje od natrijuma kada otpusti jedan elektron?",
       "rec": "jon",
       "zanimljivost": "Natrijum (Z = 11) otpuštanjem jednog elektrona postaje jon Na⁺.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "jonska",
+        "metal": 11,
+        "nemetal": 17
+      },
       "odgovori": [
         "Na⁺",
         "Na⁻",
@@ -3605,6 +3921,12 @@
       "pitanje": "Koja čestica nastaje kada atom hlora primi elektron?",
       "rec": "hlor",
       "zanimljivost": "Hlor primi elektron i postaje negativni jon Cl⁻.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "jonska",
+        "metal": 11,
+        "nemetal": 17
+      },
       "odgovori": [
         "Hloridni jon (Cl⁻)",
         "Katjon natrijuma",
@@ -3662,6 +3984,10 @@
       "pitanje": "Kakvu temperaturu topljenja obično imaju jonska jedinjenja?",
       "rec": "topljenje",
       "zanimljivost": "Zbog jake jonske veze, so se topi tek na oko 801 °C.",
+      "medijiOdgovora": {
+        "vrsta": "molekul",
+        "ime": "natrijum-hlorid"
+      },
       "odgovori": [
         "Visoku",
         "Nisku",
@@ -3675,6 +4001,12 @@
       "pitanje": "Koji par elemenata gradi jonsko jedinjenje?",
       "rec": "metal",
       "zanimljivost": "Metal otpušta elektron nemetalu, pa nastaju suprotno naelektrisani joni.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "jonska",
+        "metal": 12,
+        "nemetal": 8
+      },
       "odgovori": [
         "Metal i nemetal (npr. Na i Cl)",
         "Dva metala",
@@ -3771,6 +4103,10 @@
       "pitanje": "Koja je hemijska formula natrijum-oksida?",
       "rec": "natrijum",
       "zanimljivost": "Natrijum je jednovalentan, a kiseonik dvovalentan, pa su potrebna dva atoma natrijuma za jedan atom kiseonika.",
+      "medijiOdgovora": {
+        "vrsta": "molekul",
+        "ime": "natrijum-oksid"
+      },
       "odgovori": [
         "Na₂O",
         "NaO",
@@ -3839,17 +4175,17 @@
       "pitanje": "Koja je hemijska formula amonijaka?",
       "rec": "amonijak",
       "zanimljivost": "Azot je trovalentan, pa veže tri jednovalentna vodonika: NH₃.",
+      "medijiOdgovora": {
+        "vrsta": "molekul",
+        "ime": "amonijak",
+        "legenda": false
+      },
       "odgovori": [
         "NH₃",
         "NH₄",
         "N₂H",
         "NO₃"
-      ],
-      "mediji": {
-        "vrsta": "molekul",
-        "ime": "amonijak",
-        "legenda": false
-      }
+      ]
     },
     {
       "lekcija": 16,
@@ -4014,6 +4350,11 @@
       "pitanje": "Šta je emulzija?",
       "rec": "emulzija",
       "zanimljivost": "Ulje i voda čine emulziju; majonez je takođe emulzija.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "rastvaranje",
+        "tip": "ulje"
+      },
       "odgovori": [
         "Smeša dve tečnosti koje se ne mešaju",
         "Smeša dva čvrsta metala",
@@ -4053,6 +4394,10 @@
       "pitanje": "Koja smeša se može razdvojiti magnetom?",
       "rec": "magnet",
       "zanimljivost": "Gvožđe privlači magnet, a sumpor ne – tako se lako razdvoje.",
+      "medijiOdgovora": {
+        "vrsta": "laboratorija",
+        "scena": "magnet"
+      },
       "odgovori": [
         "Gvožđe i sumpor",
         "So i voda",
@@ -4118,6 +4463,11 @@
       "pitanje": "Šta je rastvor?",
       "rec": "rastvor",
       "zanimljivost": "Rastvor je homogena smeša – rastvorena supstanca se ne vidi.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "rastvaranje",
+        "tip": "so"
+      },
       "odgovori": [
         "Homogena smeša rastvarača i rastvorene supstance",
         "Heterogena smeša čvrstih i tečnih delova",
@@ -4131,6 +4481,11 @@
       "pitanje": "U slanoj vodi, šta je rastvorena supstanca?",
       "rec": "hlorid",
       "zanimljivost": "Voda je rastvarač, a so je supstanca koja se u njoj rastvara.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "rastvaranje",
+        "tip": "so"
+      },
       "odgovori": [
         "So",
         "Voda",
@@ -4209,6 +4564,11 @@
       "pitanje": "Kako se šećer najbrže rastvara u vodi?",
       "rec": "mešanje",
       "zanimljivost": "Mešanje i toplija voda ubrzavaju rastvaranje.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "rastvaranje",
+        "tip": "secer"
+      },
       "odgovori": [
         "Mešanjem i zagrevanjem",
         "Hlađenjem vode",
@@ -4235,6 +4595,11 @@
       "pitanje": "Koja tečnost rastvara šećer?",
       "rec": "voda",
       "zanimljivost": "Šećer se u vodi rastvara, a u ulju ne.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "rastvaranje",
+        "tip": "secer"
+      },
       "odgovori": [
         "Voda",
         "Ulje",
@@ -4261,6 +4626,11 @@
       "pitanje": "Šta dobijamo kad u vodu dodamo so?",
       "rec": "rastvor",
       "zanimljivost": "So se u vodi rastvori i nastane homogena smeša – slana voda.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "rastvaranje",
+        "tip": "so"
+      },
       "odgovori": [
         "Rastvor (slanu vodu)",
         "Talog",
@@ -4676,6 +5046,10 @@
       "pitanje": "Kojim postupkom se razdvajaju pesak i voda?",
       "rec": "filtracija",
       "zanimljivost": "Voda prođe kroz filter-papir, a pesak ostane na njemu.",
+      "medijiOdgovora": {
+        "vrsta": "laboratorija",
+        "scena": "filtriranje"
+      },
       "odgovori": [
         "Filtriranjem",
         "Isparavanjem",
@@ -4689,6 +5063,10 @@
       "pitanje": "Šta ostaje na filter-papiru pri filtriranju?",
       "rec": "talog",
       "zanimljivost": "Na filteru ostaje čvrsta supstanca, a tečnost prođe.",
+      "medijiOdgovora": {
+        "vrsta": "laboratorija",
+        "scena": "filtriranje"
+      },
       "odgovori": [
         "Čvrsta supstanca (talog)",
         "Tečnost (filtrat)",
@@ -4702,6 +5080,10 @@
       "pitanje": "Kako se zove tečnost koja prođe kroz filter-papir?",
       "rec": "filtrat",
       "zanimljivost": "Filtrat je bistra tečnost koja prođe kroz filter.",
+      "medijiOdgovora": {
+        "vrsta": "laboratorija",
+        "scena": "filtriranje"
+      },
       "odgovori": [
         "Filtrat",
         "Talog",
@@ -4741,6 +5123,10 @@
       "pitanje": "Kojim postupkom se iz smeše alkohola i vode dobija čist alkohol?",
       "rec": "destilacija",
       "zanimljivost": "Alkohol ključa na nižoj temperaturi od vode, pa prvi ispari.",
+      "medijiOdgovora": {
+        "vrsta": "laboratorija",
+        "scena": "destilacija"
+      },
       "odgovori": [
         "Destilacijom",
         "Filtriranjem",
@@ -4754,6 +5140,10 @@
       "pitanje": "Kako se izdvaja gvožđe iz smeše sa peskom?",
       "rec": "magnet",
       "zanimljivost": "Magnet privlači gvožđe, a pesak ne.",
+      "medijiOdgovora": {
+        "vrsta": "laboratorija",
+        "scena": "magnet"
+      },
       "odgovori": [
         "Magnetom",
         "Filtriranjem",
@@ -4858,6 +5248,11 @@
       "pitanje": "Ko je postavio zakon o održanju mase?",
       "rec": "lavoazje",
       "zanimljivost": "Lavoazje je pažljivim merenjem pokazao da se masa u reakciji ne menja.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/hemija/slike/lavoazje.jpg",
+        "opis": "Antoan Lavoazje"
+      },
       "odgovori": [
         "Antoan Lavoazje",
         "Žozef Prust",
@@ -4951,6 +5346,27 @@
       "pitanje": "Koja pojava je hemijska reakcija?",
       "rec": "gorenje",
       "zanimljivost": "Gorenjem magnezijuma nastaje magnezijum-oksid – nova supstanca.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "reakcija",
+        "reaktanti": [
+          [
+            "magnezijum",
+            2
+          ],
+          [
+            "kiseonik",
+            1
+          ]
+        ],
+        "proizvodi": [
+          [
+            "magnezijum-oksid",
+            2
+          ]
+        ],
+        "efekat": "plamen"
+      },
       "odgovori": [
         "Gorenje magnezijuma",
         "Topljenje leda",
@@ -5042,6 +5458,26 @@
       "pitanje": "Koja je jednačina pravilno izjednačena?",
       "rec": "jednačina",
       "zanimljivost": "Sa leve strane ima 4 atoma $H$ i 2 atoma $O$, a sa desne isto toliko.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "reakcija",
+        "reaktanti": [
+          [
+            "vodonik",
+            2
+          ],
+          [
+            "kiseonik",
+            1
+          ]
+        ],
+        "proizvodi": [
+          [
+            "voda",
+            2
+          ]
+        ]
+      },
       "odgovori": [
         "2H₂ + O₂ → 2H₂O",
         "H₂ + O₂ → H₂O",
@@ -5068,6 +5504,26 @@
       "pitanje": "Kako se čita jednačina C + O₂ → CO₂?",
       "rec": "jednačina",
       "zanimljivost": "Levo su reaktanti, desno proizvodi, a strelica znači „nastaje“.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "reakcija",
+        "reaktanti": [
+          [
+            "ugljenik",
+            1
+          ],
+          [
+            "kiseonik",
+            1
+          ]
+        ],
+        "proizvodi": [
+          [
+            "ugljen-dioksid",
+            1
+          ]
+        ]
+      },
       "odgovori": [
         "Ugljenik reaguje sa kiseonikom i daje ugljen-dioksid",
         "Ugljenik se rastvara u vodi i nastaje ugljena kiselina",
@@ -5120,6 +5576,27 @@
       "pitanje": "Koja je pravilno izjednačena jednačina gorenja magnezijuma u kiseoniku?",
       "rec": "magnezijum",
       "zanimljivost": "Magnezijum gori jarkim belim plamenom, a nastali magnezijum-oksid je beli prah.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "reakcija",
+        "reaktanti": [
+          [
+            "magnezijum",
+            2
+          ],
+          [
+            "kiseonik",
+            1
+          ]
+        ],
+        "proizvodi": [
+          [
+            "magnezijum-oksid",
+            2
+          ]
+        ],
+        "efekat": "plamen"
+      },
       "odgovori": [
         "2Mg + O₂ → 2MgO",
         "$Mg$ + O₂ → MgO",
@@ -5910,6 +6387,26 @@
       "pitanje": "U jednačini 2H₂ + O₂ → 2H₂O, koliko molekula vode nastaje od 2 molekula vodonika?",
       "rec": "jednačina",
       "zanimljivost": "Koeficijenti pokazuju odnos: 2 molekula H₂ daju 2 molekula H₂O.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "reakcija",
+        "reaktanti": [
+          [
+            "vodonik",
+            2
+          ],
+          [
+            "kiseonik",
+            1
+          ]
+        ],
+        "proizvodi": [
+          [
+            "voda",
+            2
+          ]
+        ]
+      },
       "odgovori": [
         "2",
         "1",
@@ -5962,6 +6459,26 @@
       "pitanje": "Sagorevanjem 12 g ugljenika nastaje koliko grama CO₂? (C + O₂ → CO₂)",
       "rec": "dioksid",
       "zanimljivost": "12 g C + 32 g O₂ = 44 g CO₂ (zakon održanja mase).",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "reakcija",
+        "reaktanti": [
+          [
+            "ugljenik",
+            1
+          ],
+          [
+            "kiseonik",
+            1
+          ]
+        ],
+        "proizvodi": [
+          [
+            "ugljen-dioksid",
+            1
+          ]
+        ]
+      },
       "odgovori": [
         "44 g",
         "12 g",
@@ -6148,6 +6665,30 @@
       "pitanje": "Koji gas se izdvaja kad se cink stavi u hlorovodoničnu kiselinu?",
       "rec": "vodonik",
       "zanimljivost": "Mehurići koji nastaju su vodonik – zapaljiv gas.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "reakcija",
+        "reaktanti": [
+          [
+            "cink",
+            1
+          ],
+          [
+            "hlorovodonik",
+            2
+          ]
+        ],
+        "proizvodi": [
+          [
+            "cink-hlorid",
+            1
+          ],
+          [
+            "vodonik",
+            1
+          ]
+        ]
+      },
       "odgovori": [
         "Vodonik",
         "Kiseonik",
@@ -6174,6 +6715,27 @@
       "pitanje": "Šta nastaje sagorevanjem vodonika u kiseoniku?",
       "rec": "voda",
       "zanimljivost": "2H₂ + O₂ → 2H₂O – zato je vodonik čisto gorivo.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "reakcija",
+        "reaktanti": [
+          [
+            "vodonik",
+            2
+          ],
+          [
+            "kiseonik",
+            1
+          ]
+        ],
+        "proizvodi": [
+          [
+            "voda",
+            2
+          ]
+        ],
+        "efekat": "plamen"
+      },
       "odgovori": [
         "Voda",
         "Ugljen-dioksid",
@@ -6481,6 +7043,10 @@
       "pitanje": "Koja kiselina se nalazi u limunu?",
       "rec": "kiselina",
       "zanimljivost": "Limunska kiselina daje kiseo ukus limunu i pomorandži.",
+      "medijiOdgovora": {
+        "vrsta": "molekul",
+        "ime": "limunska-kiselina"
+      },
       "odgovori": [
         "Limunska",
         "Hlorovodonična",
@@ -6511,6 +7077,10 @@
       "pitanje": "Koja kiselina se nalazi u sirćetu?",
       "rec": "sirćetna",
       "zanimljivost": "Sirćetna kiselina daje kiseo ukus sirćetu.",
+      "medijiOdgovora": {
+        "vrsta": "molekul",
+        "ime": "etanska-kiselina"
+      },
       "odgovori": [
         "Sirćetna",
         "Limunska",
@@ -6550,6 +7120,10 @@
       "pitanje": "Koja je formula natrijum-hidroksida?",
       "rec": "hidroksid",
       "zanimljivost": "NaOH sadrži natrijum i OH grupu.",
+      "medijiOdgovora": {
+        "vrsta": "molekul",
+        "ime": "natrijum-hidroksid"
+      },
       "odgovori": [
         "NaOH",
         "NaCl",
@@ -6599,6 +7173,10 @@
       "pitanje": "Koji indikator menja boju u kiselinama?",
       "rec": "lakmus",
       "zanimljivost": "Plavi lakmus-papir u kiselini pocrveni.",
+      "medijiOdgovora": {
+        "vrsta": "laboratorija",
+        "scena": "lakmus"
+      },
       "odgovori": [
         "Lakmus (plavi papir pocrveni)",
         "Termometar, jer menja boju kad se zagreje",
@@ -6625,6 +7203,10 @@
       "pitanje": "Koja je formula azotne kiseline?",
       "rec": "kiselina",
       "zanimljivost": "Azotna kiselina se koristi za pravljenje đubriva i eksploziva.",
+      "medijiOdgovora": {
+        "vrsta": "molekul",
+        "ime": "azotna-kiselina"
+      },
       "odgovori": [
         "HNO₃",
         "HCl",
@@ -6664,6 +7246,10 @@
       "pitanje": "Šta pokazuje pH vrednost rastvora?",
       "rec": "kiselost",
       "zanimljivost": "pH skala ide od 0 do 14 i meri kiselost rastvora.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "ph"
+      },
       "odgovori": [
         "Koliko je rastvor kiseo ili bazan",
         "Koliko je rastvor topao",
@@ -6677,6 +7263,11 @@
       "pitanje": "Koji pH ima neutralan rastvor?",
       "rec": "neutralan",
       "zanimljivost": "Čista voda je neutralna i ima pH 7.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "ph",
+        "vrednost": 7
+      },
       "odgovori": [
         "7",
         "0",
@@ -6690,6 +7281,11 @@
       "pitanje": "Koji pH ima KISELI rastvor?",
       "rec": "kiselost",
       "zanimljivost": "Kiseli rastvori imaju pH manji od 7.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "ph",
+        "vrednost": 3
+      },
       "odgovori": [
         "Manji od 7",
         "Veći od 7",
@@ -6703,6 +7299,11 @@
       "pitanje": "Koji pH ima BAZNI rastvor?",
       "rec": "baza",
       "zanimljivost": "Bazni rastvori imaju pH veći od 7.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "ph",
+        "vrednost": 11
+      },
       "odgovori": [
         "Veći od 7",
         "Manji od 7",
@@ -6716,6 +7317,11 @@
       "pitanje": "Koja supstanca ima pH oko 1?",
       "rec": "kiselina",
       "zanimljivost": "Jake kiseline imaju pH blizu 0 ili 1.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "ph",
+        "vrednost": 1
+      },
       "odgovori": [
         "Hlorovodonična kiselina",
         "Čista voda",
@@ -6729,6 +7335,11 @@
       "pitanje": "Koji pH ima rastvor natrijum-hidroksida?",
       "rec": "hidroksid",
       "zanimljivost": "Jake baze imaju pH blizu 14.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "ph",
+        "vrednost": 13
+      },
       "odgovori": [
         "Oko 14",
         "Oko 1",
@@ -6768,6 +7379,13 @@
       "pitanje": "Koji pH ima limunov sok?",
       "rec": "limun",
       "zanimljivost": "Limunov sok je kiseo – pH mu je oko 2.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "ph",
+        "supstance": [
+          "limun"
+        ]
+      },
       "odgovori": [
         "Oko 2 (kiseo)",
         "Oko 7",
@@ -6781,6 +7399,13 @@
       "pitanje": "Koja tečnost je BAZNA?",
       "rec": "sapun",
       "zanimljivost": "Rastvor sapuna ima pH veći od 7 – bazan je.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "ph",
+        "supstance": [
+          "sapun"
+        ]
+      },
       "odgovori": [
         "Rastvor sapuna",
         "Limunov sok",
@@ -6807,6 +7432,11 @@
       "pitanje": "Da li je rastvor sa pH 9 kiseo ili bazan?",
       "rec": "baza",
       "zanimljivost": "Sve što ima pH veći od 7 je bazno.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "ph",
+        "vrednost": 9
+      },
       "odgovori": [
         "Bazan",
         "Kiseo",
@@ -6820,6 +7450,10 @@
       "pitanje": "Koji indikator menja boju prema pH vrednosti?",
       "rec": "indikator",
       "zanimljivost": "Univerzalni indikator menja boju od crvene (kiselo) do ljubičaste (bazno).",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "ph"
+      },
       "odgovori": [
         "Univerzalni indikator",
         "Lakmus-papir koji je uvek plav",
@@ -6833,6 +7467,16 @@
       "pitanje": "Koja od navedenih tečnosti ima najniži pH?",
       "rec": "kiselina",
       "zanimljivost": "Što je pH manji, to je rastvor kiseliji.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "ph",
+        "supstance": [
+          "akumulator",
+          "limun",
+          "voda",
+          "soda"
+        ]
+      },
       "odgovori": [
         "Sumporna kiselina u akumulatoru",
         "Limunov sok",
@@ -6846,6 +7490,13 @@
       "pitanje": "Koliki pH ima rastvor amonijaka?",
       "rec": "amonijak",
       "zanimljivost": "Amonijak je baza – njegov rastvor ima pH oko 11.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "ph",
+        "supstance": [
+          "amonijak"
+        ]
+      },
       "odgovori": [
         "Veći od 7 (oko 11)",
         "Manji od 7",
@@ -6859,6 +7510,30 @@
       "pitanje": "Šta nastaje neutralizacijom kiseline i baze?",
       "rec": "neutralan",
       "zanimljivost": "Neutralizacija je reakcija kiseline i baze – nastaju so i voda.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "reakcija",
+        "reaktanti": [
+          [
+            "hlorovodonik",
+            1
+          ],
+          [
+            "natrijum-hidroksid",
+            1
+          ]
+        ],
+        "proizvodi": [
+          [
+            "kuhinjska-so",
+            1
+          ],
+          [
+            "voda",
+            1
+          ]
+        ]
+      },
       "odgovori": [
         "So i voda",
         "Samo gas",
@@ -6885,6 +7560,30 @@
       "pitanje": "Koja so nastaje iz hlorovodonične kiseline i natrijum-hidroksida?",
       "rec": "hlorid",
       "zanimljivost": "HCl + NaOH → NaCl + H₂O – nastaje kuhinjska so.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "reakcija",
+        "reaktanti": [
+          [
+            "hlorovodonik",
+            1
+          ],
+          [
+            "natrijum-hidroksid",
+            1
+          ]
+        ],
+        "proizvodi": [
+          [
+            "kuhinjska-so",
+            1
+          ],
+          [
+            "voda",
+            1
+          ]
+        ]
+      },
       "odgovori": [
         "Natrijum-hlorid (kuhinjska so)",
         "Kalijum-hlorid",
@@ -6911,6 +7610,30 @@
       "pitanje": "Koja je jednačina neutralizacije HCl i NaOH?",
       "rec": "jednačina",
       "zanimljivost": "Kiselina i baza daju so i vodu – jednačina je izjednačena.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "reakcija",
+        "reaktanti": [
+          [
+            "hlorovodonik",
+            1
+          ],
+          [
+            "natrijum-hidroksid",
+            1
+          ]
+        ],
+        "proizvodi": [
+          [
+            "kuhinjska-so",
+            1
+          ],
+          [
+            "voda",
+            1
+          ]
+        ]
+      },
       "odgovori": [
         "HCl + NaOH → NaCl + H₂O",
         "HCl + NaOH → NaCl",
@@ -6981,6 +7704,10 @@
       "pitanje": "Koja so je kalcijum-karbonat?",
       "rec": "krečnjak",
       "zanimljivost": "Krečnjak i mermer su kalcijum-karbonat.",
+      "medijiOdgovora": {
+        "vrsta": "molekul",
+        "ime": "kalcijum-karbonat"
+      },
       "odgovori": [
         "Krečnjak (CaCO₃)",
         "Kuhinjska so",
@@ -7020,6 +7747,10 @@
       "pitanje": "Šta je kamenac u kuvalima za vodu?",
       "rec": "kamenac",
       "zanimljivost": "Kamenac je so koja se izdvaja iz tvrde vode pri zagrevanju.",
+      "medijiOdgovora": {
+        "vrsta": "molekul",
+        "ime": "kalcijum-karbonat"
+      },
       "odgovori": [
         "Kalcijum-karbonat (so)",
         "Natrijum-hlorid",
@@ -7085,6 +7816,13 @@
       "pitanje": "Kako se zove najteži plemeniti gas, sa atomskim brojem 118?",
       "rec": "oganeson",
       "zanimljivost": "Oganeson ($Og$) je veštački dobijen i ime je dobio po naučniku Juriju Oganesjanu.",
+      "medijiOdgovora": {
+        "vrsta": "hemija",
+        "scena": "periodni",
+        "istakni": [
+          "Og"
+        ]
+      },
       "odgovori": [
         "Oganeson",
         "Radon",

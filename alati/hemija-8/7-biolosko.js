@@ -1,5 +1,5 @@
 // Poglavlje 7: Biološki važna organska jedinjenja (lekcije 29–34)
-module.exports = ({ L, Q, U, S, mol, at, jon, kov, met, rast, ph, ps, R, lab, epr, pri }) => {
+module.exports = ({ L, Q, U, S, mol, at, jon, kov, met, rast, ph, ps, R, lab, epr, pri, sl }) => {
   const bio = (scena, o = {}) => ({ vrsta: 'biologija', scena, ...o });
 
   // ───────────── Uloga biološki važnih jedinjenja ─────────────
@@ -106,7 +106,7 @@ module.exports = ({ L, Q, U, S, mol, at, jon, kov, met, rast, ph, ps, R, lab, ep
   Q(1, 'Koji vitamin se u koži stvara delovanjem sunčeve svetlosti?', ['Vitamin D', 'Vitamin C', 'Vitamin B₁₂', 'Vitamin E'], 'Neophodan je za upijanje kalcijuma u kostima. Kalcijum-fosfat je glavni mineral kostiju i zuba; oko 99 % kalcijuma u telu je u njima.', 'sunce', { m: mol('kalcijum-fosfat') });
   Q(2, 'Nedostatak koga vitamina izaziva rahitis kod dece?', ['Vitamina D', 'Vitamina C', 'Vitamina A', 'Vitamina K'], 'Kosti ostaju mekane i krive jer se ne ugrađuje kalcijum. Kalcijum-fosfat daje kostima čvrstoću.', 'rahitis', { m: mol('kalcijum-fosfat') });
   Q(2, 'Koji vitamin je važan za vid?', ['Vitamin A', 'Vitamin C', 'Vitamin D', 'Vitamin K'], 'Nalazi se u šargarepi (kao provitamin beta-karoten).', 'vid', { o: mol('retinol') });
-  Q(2, 'Koji vitamin je važan za zgrušavanje krvi?', ['Vitamin K', 'Vitamin C', 'Vitamin A', 'Vitamin D'], 'Retinol je oblik vitamina A; u oku se pretvara u retinal, koji učestvuje u vidu pri slabom svetlu. Vitamin K nalazi se u zelenom lisnatom povrću.', 'krv', { m: mol('retinol') });
+  Q(2, 'Koji vitamin je važan za zgrušavanje krvi?', ['Vitamin K', 'Vitamin C', 'Vitamin A', 'Vitamin D'], 'Vitamina K ima mnogo u zelenom lisnatom povrću (spanać, kelj), a deo ga stvaraju i korisne bakterije u našem debelom crevu.', 'krv', { o: sl('slike/spanac.jpg', 'Spanać – bogat vitaminom K') });
   Q(2, 'Koja namirnica je bogata vitaminom C?', ['Limun, paprika i šipak', 'Maslac', 'Jaja', 'Mleko'], 'Vitamin C se razgrađuje zagrevanjem.', 'limun', { o: ph({ supstance: ['limun'] }) });
   Q(2, 'Šta je avitaminoza?', ['Poremećaj zbog potpunog nedostatka nekog vitamina', 'Višak vitamina', 'Gojaznost', 'Alergija'], 'Višak vitamina (naročito A i D) naziva se hipervitaminoza. Askorbinska kiselina je vitamin C; ime je dobila po tome što leči skorbut.', 'avitaminoza', { m: mol('vitamin-c-lanac') });
   Q(3, 'Koliko ugljenikovih atoma ima molekul askorbinske kiseline (vitamin C)?', ['Šest', 'Dvanaest', 'Dva', 'Dvadeset'], 'C₆H₈O₆.', 'askorbinska', { o: mol('vitamin-c-lanac') });

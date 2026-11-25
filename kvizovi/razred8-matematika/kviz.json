@@ -49860,7 +49860,7 @@
     "$−1$",
     "$0$"
    ],
-   "zanimljivost": "Krajevi ovog intervala nisu celi brojevi, pa se gleda ceo broj koji je tačno u intervalu. Najmanji je prvi ceo broj desno od levog kraja, a levi kraj $−2,5$ nije ceo broj.",
+   "zanimljivost": "Skup je $[−2{,}5; 1]$ – oba kraja pripadaju skupu (pune tačke), ali $−2{,}5$ nije ceo broj. Najmanji ceo broj u skupu je prvi ceo broj desno od $−2{,}5$, a to je $−2$.",
    "rec": "najmanji"
   },
   {
@@ -68550,6 +68550,151 @@
     "2,5 cm"
    ],
    "zanimljivost": "Dijagonala osnove je $5√{2}$ cm, a telesna dijagonala je hipotenuza trougla čija je druga kateta visina kvadra.",
+   "medijiOdgovora": {
+    "vrsta": "geo",
+    "t": {
+     "A": [
+      0,
+      0
+     ],
+     "A₁": [
+      0,
+      4.636
+     ],
+     "B": [
+      4.33,
+      -0.937
+     ],
+     "B₁": [
+      4.33,
+      3.699
+     ],
+     "C": [
+      6.83,
+      0.686
+     ],
+     "C₁": [
+      6.83,
+      5.321
+     ],
+     "D": [
+      2.5,
+      1.622
+     ],
+     "D₁": [
+      2.5,
+      6.258
+     ]
+    },
+    "e": [
+     {
+      "p": [
+       "A₁",
+       "B₁",
+       "C₁",
+       "D₁"
+      ],
+      "b": 0
+     },
+     {
+      "p": [
+       "A",
+       "B",
+       "B₁",
+       "A₁"
+      ],
+      "b": 0
+     },
+     {
+      "p": [
+       "B",
+       "C",
+       "C₁",
+       "B₁"
+      ],
+      "b": 0
+     },
+     {
+      "d": "DC",
+      "b": 0,
+      "debljina": 1.6,
+      "isp": 1
+     },
+     {
+      "d": "CB",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "BA",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "AD",
+      "b": 0,
+      "debljina": 1.6,
+      "isp": 1
+     },
+     {
+      "d": "A₁B₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "B₁C₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "C₁D₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "D₁A₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "BB₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "A₁A",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "CC₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "DD₁",
+      "b": 0,
+      "debljina": 1.6,
+      "isp": 1
+     },
+     {
+      "d": "AC₁",
+      "b": 1,
+      "debljina": 3
+     },
+     {
+      "d": "AC",
+      "b": 2,
+      "isp": 1
+     },
+     {
+      "d": "CC₁",
+      "b": 3,
+      "debljina": 3
+     }
+    ],
+    "velicina": 240
+   },
    "rec": "visina"
   },
   {
@@ -73117,6 +73262,136 @@
     "20 cm"
    ],
    "zanimljivost": "Od ukupne površine prvo oduzmemo dve osnove, pa ostatak delimo sa obimom osnove.",
+   "medijiOdgovora": {
+    "vrsta": "geo",
+    "t": {
+     "A": [
+      0,
+      0
+     ],
+     "A₁": [
+      0,
+      9.272
+     ],
+     "B": [
+      4.33,
+      -0.937
+     ],
+     "B₁": [
+      4.33,
+      8.335
+     ],
+     "C": [
+      6.83,
+      0.686
+     ],
+     "C₁": [
+      6.83,
+      9.957
+     ],
+     "D": [
+      2.5,
+      1.622
+     ],
+     "D₁": [
+      2.5,
+      10.894
+     ]
+    },
+    "e": [
+     {
+      "p": [
+       "A₁",
+       "B₁",
+       "C₁",
+       "D₁"
+      ],
+      "b": 0
+     },
+     {
+      "p": [
+       "A",
+       "B",
+       "B₁",
+       "A₁"
+      ],
+      "b": 0
+     },
+     {
+      "p": [
+       "B",
+       "C",
+       "C₁",
+       "B₁"
+      ],
+      "b": 0
+     },
+     {
+      "d": "DC",
+      "b": 0,
+      "debljina": 1.6,
+      "isp": 1
+     },
+     {
+      "d": "CB",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "BA",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "AD",
+      "b": 0,
+      "debljina": 1.6,
+      "isp": 1
+     },
+     {
+      "d": "A₁B₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "B₁C₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "C₁D₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "D₁A₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "BB₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "A₁A",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "CC₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "DD₁",
+      "b": 0,
+      "debljina": 1.6,
+      "isp": 1
+     }
+    ],
+    "velicina": 240
+   },
    "rec": "visina"
   },
   {
@@ -75383,6 +75658,103 @@
     "16 cm"
    ],
    "zanimljivost": "Omotač je obim osnove puta visina, $3a · 4 = 48$, pa je $3a = 12$ cm.",
+   "medijiOdgovora": {
+    "vrsta": "geo",
+    "t": {
+     "A": [
+      -2.196,
+      -0.267
+     ],
+     "A₁": [
+      -2.196,
+      3.441
+     ],
+     "B": [
+      1.716,
+      -0.579
+     ],
+     "B₁": [
+      1.716,
+      3.13
+     ],
+     "C": [
+      0.48,
+      0.846
+     ],
+     "C₁": [
+      0.48,
+      4.555
+     ]
+    },
+    "e": [
+     {
+      "p": [
+       "A₁",
+       "B₁",
+       "C₁"
+      ],
+      "b": 0
+     },
+     {
+      "p": [
+       "A",
+       "B",
+       "B₁",
+       "A₁"
+      ],
+      "b": 0
+     },
+     {
+      "d": "CB",
+      "b": 0,
+      "debljina": 1.6,
+      "isp": 1
+     },
+     {
+      "d": "BA",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "AC",
+      "b": 0,
+      "debljina": 1.6,
+      "isp": 1
+     },
+     {
+      "d": "A₁B₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "B₁C₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "C₁A₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "BB₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "A₁A",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "CC₁",
+      "b": 0,
+      "debljina": 1.6,
+      "isp": 1
+     }
+    ],
+    "velicina": 240
+   },
    "rec": "obim"
   },
   {
@@ -75753,6 +76125,195 @@
     "12 cm"
    ],
    "zanimljivost": "Površina osnove je ${3a^{2}√{3}|2}$, pa je $a = 12$ cm. Iz omotača $6aH = 216√{3}$ sledi visina.",
+   "medijiOdgovora": {
+    "vrsta": "geo",
+    "t": {
+     "A": [
+      -10.392,
+      -2.248
+     ],
+     "A₁": [
+      -10.392,
+      2.57
+     ],
+     "B": [
+      0,
+      -4.495
+     ],
+     "B₁": [
+      0,
+      0.323
+     ],
+     "C": [
+      10.392,
+      -2.248
+     ],
+     "C₁": [
+      10.392,
+      2.57
+     ],
+     "D": [
+      10.392,
+      2.248
+     ],
+     "D₁": [
+      10.392,
+      7.065
+     ],
+     "E": [
+      0,
+      4.495
+     ],
+     "E₁": [
+      0,
+      9.313
+     ],
+     "F": [
+      -10.392,
+      2.248
+     ],
+     "F₁": [
+      -10.392,
+      7.065
+     ]
+    },
+    "e": [
+     {
+      "p": [
+       "A₁",
+       "B₁",
+       "C₁",
+       "D₁",
+       "E₁",
+       "F₁"
+      ],
+      "b": 0
+     },
+     {
+      "p": [
+       "A",
+       "B",
+       "B₁",
+       "A₁"
+      ],
+      "b": 0
+     },
+     {
+      "p": [
+       "B",
+       "C",
+       "C₁",
+       "B₁"
+      ],
+      "b": 0
+     },
+     {
+      "p": [
+       "F",
+       "A",
+       "A₁",
+       "F₁"
+      ],
+      "b": 0
+     },
+     {
+      "d": "FE",
+      "b": 0,
+      "debljina": 1.6,
+      "isp": 1
+     },
+     {
+      "d": "ED",
+      "b": 0,
+      "debljina": 1.6,
+      "isp": 1
+     },
+     {
+      "d": "DC",
+      "b": 0,
+      "debljina": 1.6,
+      "isp": 1
+     },
+     {
+      "d": "CB",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "BA",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "AF",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "A₁B₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "B₁C₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "C₁D₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "D₁E₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "E₁F₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "F₁A₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "BB₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "A₁A",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "CC₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "DD₁",
+      "b": 0,
+      "debljina": 1.6,
+      "isp": 1
+     },
+     {
+      "d": "EE₁",
+      "b": 0,
+      "debljina": 1.6,
+      "isp": 1
+     },
+     {
+      "d": "FF₁",
+      "b": 0,
+      "debljina": 2.5
+     }
+    ],
+    "velicina": 240
+   },
    "rec": "visina"
   },
   {
@@ -78096,6 +78657,136 @@
     "4 cm"
    ],
    "zanimljivost": "Iz formule $V = a^{2} · H$ visina je količnik zapremine i površine osnove.",
+   "medijiOdgovora": {
+    "vrsta": "geo",
+    "t": {
+     "A": [
+      0,
+      0
+     ],
+     "A₁": [
+      0,
+      4.636
+     ],
+     "B": [
+      3.464,
+      -0.749
+     ],
+     "B₁": [
+      3.464,
+      3.887
+     ],
+     "C": [
+      5.464,
+      0.548
+     ],
+     "C₁": [
+      5.464,
+      5.184
+     ],
+     "D": [
+      2,
+      1.298
+     ],
+     "D₁": [
+      2,
+      5.934
+     ]
+    },
+    "e": [
+     {
+      "p": [
+       "A₁",
+       "B₁",
+       "C₁",
+       "D₁"
+      ],
+      "b": 0
+     },
+     {
+      "p": [
+       "A",
+       "B",
+       "B₁",
+       "A₁"
+      ],
+      "b": 0
+     },
+     {
+      "p": [
+       "B",
+       "C",
+       "C₁",
+       "B₁"
+      ],
+      "b": 0
+     },
+     {
+      "d": "DC",
+      "b": 0,
+      "debljina": 1.6,
+      "isp": 1
+     },
+     {
+      "d": "CB",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "BA",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "AD",
+      "b": 0,
+      "debljina": 1.6,
+      "isp": 1
+     },
+     {
+      "d": "A₁B₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "B₁C₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "C₁D₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "D₁A₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "BB₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "A₁A",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "CC₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "DD₁",
+      "b": 0,
+      "debljina": 1.6,
+      "isp": 1
+     }
+    ],
+    "velicina": 240
+   },
    "rec": "visina"
   },
   {
@@ -80107,6 +80798,136 @@
     "144 cm"
    ],
    "zanimljivost": "Osnova je kvadrat, pa iz zapremine dobijamo površinu osnove $a^{2} = 144$ cm², a zatim i ivicu.",
+   "medijiOdgovora": {
+    "vrsta": "geo",
+    "t": {
+     "A": [
+      0,
+      0
+     ],
+     "A₁": [
+      0,
+      9.272
+     ],
+     "B": [
+      10.392,
+      -2.248
+     ],
+     "B₁": [
+      10.392,
+      7.024
+     ],
+     "C": [
+      16.392,
+      1.645
+     ],
+     "C₁": [
+      16.392,
+      10.917
+     ],
+     "D": [
+      6,
+      3.893
+     ],
+     "D₁": [
+      6,
+      13.165
+     ]
+    },
+    "e": [
+     {
+      "p": [
+       "A₁",
+       "B₁",
+       "C₁",
+       "D₁"
+      ],
+      "b": 0
+     },
+     {
+      "p": [
+       "A",
+       "B",
+       "B₁",
+       "A₁"
+      ],
+      "b": 0
+     },
+     {
+      "p": [
+       "B",
+       "C",
+       "C₁",
+       "B₁"
+      ],
+      "b": 0
+     },
+     {
+      "d": "DC",
+      "b": 0,
+      "debljina": 1.6,
+      "isp": 1
+     },
+     {
+      "d": "CB",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "BA",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "AD",
+      "b": 0,
+      "debljina": 1.6,
+      "isp": 1
+     },
+     {
+      "d": "A₁B₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "B₁C₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "C₁D₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "D₁A₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "BB₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "A₁A",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "CC₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "DD₁",
+      "b": 0,
+      "debljina": 1.6,
+      "isp": 1
+     }
+    ],
+    "velicina": 240
+   },
    "rec": "ivica"
   },
   {
@@ -82002,6 +82823,195 @@
     "9 cm"
    ],
    "zanimljivost": "Iz zapremine dobijamo površinu osnove, ${3a^{2}√{3}|2} = 54√{3}$, a iz nje ivicu.",
+   "medijiOdgovora": {
+    "vrsta": "geo",
+    "t": {
+     "A": [
+      -5.196,
+      -1.124
+     ],
+     "A₁": [
+      -5.196,
+      8.148
+     ],
+     "B": [
+      0,
+      -2.248
+     ],
+     "B₁": [
+      0,
+      7.024
+     ],
+     "C": [
+      5.196,
+      -1.124
+     ],
+     "C₁": [
+      5.196,
+      8.148
+     ],
+     "D": [
+      5.196,
+      1.124
+     ],
+     "D₁": [
+      5.196,
+      10.396
+     ],
+     "E": [
+      0,
+      2.248
+     ],
+     "E₁": [
+      0,
+      11.519
+     ],
+     "F": [
+      -5.196,
+      1.124
+     ],
+     "F₁": [
+      -5.196,
+      10.396
+     ]
+    },
+    "e": [
+     {
+      "p": [
+       "A₁",
+       "B₁",
+       "C₁",
+       "D₁",
+       "E₁",
+       "F₁"
+      ],
+      "b": 0
+     },
+     {
+      "p": [
+       "A",
+       "B",
+       "B₁",
+       "A₁"
+      ],
+      "b": 0
+     },
+     {
+      "p": [
+       "B",
+       "C",
+       "C₁",
+       "B₁"
+      ],
+      "b": 0
+     },
+     {
+      "p": [
+       "F",
+       "A",
+       "A₁",
+       "F₁"
+      ],
+      "b": 0
+     },
+     {
+      "d": "FE",
+      "b": 0,
+      "debljina": 1.6,
+      "isp": 1
+     },
+     {
+      "d": "ED",
+      "b": 0,
+      "debljina": 1.6,
+      "isp": 1
+     },
+     {
+      "d": "DC",
+      "b": 0,
+      "debljina": 1.6,
+      "isp": 1
+     },
+     {
+      "d": "CB",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "BA",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "AF",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "A₁B₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "B₁C₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "C₁D₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "D₁E₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "E₁F₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "F₁A₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "BB₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "A₁A",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "CC₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "DD₁",
+      "b": 0,
+      "debljina": 1.6,
+      "isp": 1
+     },
+     {
+      "d": "EE₁",
+      "b": 0,
+      "debljina": 1.6,
+      "isp": 1
+     },
+     {
+      "d": "FF₁",
+      "b": 0,
+      "debljina": 2.5
+     }
+    ],
+    "velicina": 240
+   },
    "rec": "ivica"
   },
   {
@@ -82015,6 +83025,103 @@
     "18 cm"
    ],
    "zanimljivost": "Površina osnove je $4√{3}$ cm², pa visinu dobijamo deljenjem zapremine sa njom.",
+   "medijiOdgovora": {
+    "vrsta": "geo",
+    "t": {
+     "A": [
+      -2.196,
+      -0.267
+     ],
+     "A₁": [
+      -2.196,
+      8.077
+     ],
+     "B": [
+      1.716,
+      -0.579
+     ],
+     "B₁": [
+      1.716,
+      7.766
+     ],
+     "C": [
+      0.48,
+      0.846
+     ],
+     "C₁": [
+      0.48,
+      9.191
+     ]
+    },
+    "e": [
+     {
+      "p": [
+       "A₁",
+       "B₁",
+       "C₁"
+      ],
+      "b": 0
+     },
+     {
+      "p": [
+       "A",
+       "B",
+       "B₁",
+       "A₁"
+      ],
+      "b": 0
+     },
+     {
+      "d": "CB",
+      "b": 0,
+      "debljina": 1.6,
+      "isp": 1
+     },
+     {
+      "d": "BA",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "AC",
+      "b": 0,
+      "debljina": 1.6,
+      "isp": 1
+     },
+     {
+      "d": "A₁B₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "B₁C₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "C₁A₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "BB₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "A₁A",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "CC₁",
+      "b": 0,
+      "debljina": 1.6,
+      "isp": 1
+     }
+    ],
+    "velicina": 240
+   },
    "rec": "visina"
   },
   {
@@ -82419,6 +83526,103 @@
     "9 cm"
    ],
    "zanimljivost": "Površina osnove je $9√{3}$ cm², pa ivicu nalazimo iz ${a^{2}√{3}|4} = 9√{3}$.",
+   "medijiOdgovora": {
+    "vrsta": "geo",
+    "t": {
+     "A": [
+      -3.295,
+      -0.401
+     ],
+     "A₁": [
+      -3.295,
+      1.453
+     ],
+     "B": [
+      2.574,
+      -0.868
+     ],
+     "B₁": [
+      2.574,
+      0.986
+     ],
+     "C": [
+      0.72,
+      1.269
+     ],
+     "C₁": [
+      0.72,
+      3.124
+     ]
+    },
+    "e": [
+     {
+      "p": [
+       "A₁",
+       "B₁",
+       "C₁"
+      ],
+      "b": 0
+     },
+     {
+      "p": [
+       "A",
+       "B",
+       "B₁",
+       "A₁"
+      ],
+      "b": 0
+     },
+     {
+      "d": "CB",
+      "b": 0,
+      "debljina": 1.6,
+      "isp": 1
+     },
+     {
+      "d": "BA",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "AC",
+      "b": 0,
+      "debljina": 1.6,
+      "isp": 1
+     },
+     {
+      "d": "A₁B₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "B₁C₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "C₁A₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "BB₁",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "A₁A",
+      "b": 0,
+      "debljina": 2.5
+     },
+     {
+      "d": "CC₁",
+      "b": 0,
+      "debljina": 1.6,
+      "isp": 1
+     }
+    ],
+    "velicina": 240
+   },
    "rec": "osnova"
   },
   {
@@ -106008,10 +107212,10 @@
     "velicina": 240
    },
    "odgovori": [
-    "$y = 0$",
-    "$x = 0$",
-    "$y = 1$",
-    "$x = 1$"
+    "vrednost $x$ za koju je $y = 0$",
+    "vrednost $y$ za koju je $x = 0$",
+    "vrednost $x$ za koju je $y = 1$",
+    "najmanja vrednost $y$"
    ],
    "zanimljivost": "Nula je vrednost nezavisne promenljive za koju zavisna promenljiva postaje nula. Grafički, to je presek grafika sa $x$-osom.",
    "rec": "nula"
@@ -251568,7 +252772,7 @@
     "$12π$ cm³",
     "$108π$ cm³"
    ],
-   "zanimljivost": "Zapremina je $4/3 · r³ · π = 4/3 · 27 · π = 36π$ cm³.",
+   "zanimljivost": "Zapremina je $V = {4|3} · r³ · π = {4|3} · 27 · π = 36π$ cm³.",
    "rec": "zapremina"
   },
   {
@@ -253288,7 +254492,7 @@
     "8 cm",
     "4 cm"
    ],
-   "zanimljivost": "Iz $4/3 · r³ · π = 288π$ dobijamo $r³ = 216$, pa je $r = 6$ cm.",
+   "zanimljivost": "Iz ${4|3} · r³ · π = 288π$ dobijamo $r³ = 216$, pa je $r = 6$ cm.",
    "rec": "zapremina"
   },
   {

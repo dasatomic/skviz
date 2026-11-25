@@ -759,6 +759,11 @@
         "Arhimed iz Sirakuze"
       ],
       "zanimljivost": "Njutn je bio i matematičar – istovremeno sa Lajbnicom razvio je diferencijalni račun.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/fizika/slike/njutn.jpg",
+        "opis": "Isak Njutn"
+      },
       "rec": "njutn"
     },
     {
@@ -2191,14 +2196,6 @@
       "lekcija": 5,
       "tezina": 3,
       "pitanje": "Na grafiku $v(t)$ brzina raste od 0 do 10 m/s za 5 s. Koliki je pređeni put?",
-      "odgovori": [
-        "25 m",
-        "50 m",
-        "10 m",
-        "2 m"
-      ],
-      "zanimljivost": "Da je brzina ostala 10 m/s ceo čas, telo bi za 5 s pređe 50 m – dvostruko više.",
-      "rec": "trougao",
       "mediji": {
         "vrsta": "fizika",
         "scena": "grafik",
@@ -2223,6 +2220,13 @@
           }
         ]
       },
+      "odgovori": [
+        "25 m",
+        "50 m",
+        "10 m",
+        "2 m"
+      ],
+      "zanimljivost": "Da je brzina sve vreme bila 10 m/s, telo bi za 5 s prešlo 50 m – dvostruko više.",
       "medijiOdgovora": {
         "vrsta": "fizika",
         "scena": "grafik",
@@ -2247,7 +2251,8 @@
           }
         ],
         "povrsina": 0
-      }
+      },
+      "rec": "trougao"
     },
     {
       "lekcija": 5,
@@ -3202,6 +3207,11 @@
         "Aristotel iz Stagire"
       ],
       "zanimljivost": "Aristotel je tvrdio da teška tela padaju brže – Galilej je pokazao da nije tako.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/fizika/slike/galilej.jpg",
+        "opis": "Galileo Galilej"
+      },
       "rec": "piza"
     },
     {
@@ -5201,6 +5211,11 @@
         "Koliko je star hram"
       ],
       "zanimljivost": "Kruna od zlata pomešanog sa srebrom imala bi veću zapreminu – istisnula bi više vode.",
+      "medijiOdgovora": {
+        "vrsta": "slika",
+        "src": "/kvizovi/razred5-istorija/slike/arhimed.jpg",
+        "opis": "Arhimed"
+      },
       "rec": "kruna"
     },
     {

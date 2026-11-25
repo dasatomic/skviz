@@ -17,7 +17,8 @@ function oznakeUMat(t) {
   return String(t).split(/(\$[^$]*\$)/).map((deo, i) => {
     if (i % 2) return deo; // već matematika
     // ceo tekst je formula („P = 2rπ“) – tipično ponuđeni odgovor
-    if (/=/.test(deo) && /^[\sA-Za-z0-9²³π=+\-−·/()₀-₉.,]+$/.test(deo) && /[A-Za-z]/.test(deo)) {
+    // (ne i rečenica bez naših slova: „Iz temena ne vodi… Zato je 8 − 3 = 5.“ – dve reči zaredom su tekst)
+    if (/=/.test(deo) && /^[\sA-Za-z0-9²³π=+\-−·/()₀-₉.,]+$/.test(deo) && /[A-Za-z]/.test(deo) && !/[a-z]{2,}\s+[a-z]{2,}/.test(deo)) {
       const x = deo.trim();
       return deo.replace(x, `$${x}$`);
     }

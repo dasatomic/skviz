@@ -468,7 +468,7 @@ module.exports = ({ L, Q, U, S, G, r, krug, traka, proveri }) => {
     { mediji: G({}, traka(3, 1, { w: 8, h: 1.2 }), { velicina: 300 }),
       medijiOdgovora: { vrsta: 'formula', tekst: '1 : 3 = 0,3333… = 0,(3)' } });
   Qz(1, 'Koji od ovih brojeva ima beskonačan decimalni zapis koji NIJE periodičan?',
-    ['$0,(12)$', '$0,1010010001\\dots$', '$0,125$', '$2,(3)$'],
+    ['$0,1010010001\\dots$', '$0,(12)$', '$0,125$', '$2,(3)$'],
     'Kod $0,1010010001\\dots$ broj nula između jedinica raste, pa nema perioda. Zato je iracionalan.',
     'Racionalni brojevi imaju konačan ili periodičan decimalni zapis.', 'periodican');
   Qz(2, 'Koji je decimalni zapis razlomka $\\frac{5}{12}$?',

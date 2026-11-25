@@ -31,6 +31,8 @@ function tokeni(s) {
   };
   while (i < s.length) {
     if (probaj('ws', /^\s+/)) continue;
+    // ugao u stepenima i minutima („47°15′“, „110°05′30″“) je jedan operand
+    if (probaj('broj', /^\d+°\d+′(?:\d+″)?(?![\p{L}\d])/u)) continue;
     // broj (decimalni zarez/tačka samo ispred cifre), opciono stepen, „2x“, „3ab“ (broj pa promenljiva bez razmaka)
     if (probaj('broj', /^\d+(?:[.,]\d+)*(?:[²³])?(?:[a-zA-Z]{1,3}(?:[₀-₉²³′]*)(?![\p{L}\d]))?(?![\p{L}\d])/u)) {
       // jedinica tik iza broja („15 km/h“, „100 N“) pripada operandu
@@ -109,7 +111,7 @@ function umotajDeo(s) {
     const t = T[k];
     // minus tik uz broj na početku izraza („−2,1 < −2“) pripada formuli, ne ostaje ispred $
     const predznak = t.tip === 'op' && /^[−-]$/.test(t.t) && k + 1 < T.length && T[k + 1].tip !== 'ws' &&
-      (k === 0 || T[k - 1].tip === 'ws' || T[k - 1].tip === 'tekst');
+      (k === 0 || T[k - 1].tip === 'ws' || T[k - 1].tip === 'tekst' || T[k - 1].tip === 'otv');
     if (!predznak && (t.tip === 'ws' || t.tip === 'tekst' || t.tip === 'op' || t.tip === 'zat')) { k++; continue; }
     const info = { ops: [] };
     const j = izraz(T, k, info);

@@ -185,14 +185,14 @@ module.exports = ({ L, Q, U, S, G, proveri, r, naKrugu, luk, pica, pravilni }) =
     ['12π cm²', '24π cm²', '6π cm²', '36π cm²'],
     'Isečak od 120° je trećina kruga, ali zato njegov luk nije trećina obima već trećina kruga po uglu.',
     'luk', { mediji: isecak(6, 0, 120, '120°') });
-  Q(2, 'Kružni luk dužine $8\\pi$ cm pripada isečku poluprečnika 3 cm. Kolika je površina tog isečka?',
-    ['12π cm²', '24π cm²', '8π cm²', '4π cm²'],
+  Q(2, 'Kružni luk dužine $4\\pi$ cm pripada isečku poluprečnika 6 cm. Kolika je površina tog isečka?',
+    ['12π cm²', '24π cm²', '6π cm²', '4π cm²'],
     'Formula $P_i = \\frac{l \\cdot r}{2}$ je kao za trougao sa osnovicom $l$ i visinom $r$. Zato se isečak lako „ispravi“ u trougao.',
     'dužina', { medijiOdgovora: isecak(3, 20, 140, 'r') });
-  Q(3, 'Površina kružnog isečka je 12π cm², a dužina njegovog luka 8π cm. Koliki je poluprečnik kruga?',
-    ['3 cm', '6 cm', '2 cm', '4 cm'],
+  Q(3, 'Površina kružnog isečka je 12π cm², a dužina njegovog luka 4π cm. Koliki je poluprečnik kruga?',
+    ['6 cm', '3 cm', '2 cm', '12 cm'],
     'Iz površine i dužine luka poluprečnik se dobija bez ugla: $r = \\frac{2P}{l}$.',
-    'visina', { medijiOdgovora: isecak(3, 0, 90, 'r') });
+    'visina', { medijiOdgovora: isecak(3, 0, 120, 'r') });
   Q(1, 'Kružni isečak ima centralni ugao 45°. Koji je to deo kruga?',
     ['Osmina kruga', 'Četvrtina kruga', 'Šestina kruga', 'Petina kruga'],
     'Ugao od 45° je polovina pravog ugla, pa je isečak polovina četvrtine kruga.',

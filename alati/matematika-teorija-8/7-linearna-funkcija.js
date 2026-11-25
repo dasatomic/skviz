@@ -510,7 +510,7 @@ module.exports = ({ L, Q, U, S, G, proveri, r }) => {
   L('Nule i znak linearne funkcije');
 
   Q(1, 'Šta je nula funkcije?',
-    ['$y = 0$', '$x = 0$', '$y = 1$', '$x = 1$'],
+    ['vrednost $x$ za koju je $y = 0$', 'vrednost $y$ za koju je $x = 0$', 'vrednost $x$ za koju je $y = 1$', 'najmanja vrednost $y$'],
     'Nula je vrednost nezavisne promenljive za koju zavisna promenljiva postaje nula. Grafički, to je presek grafika sa $x$-osom.', 'nula',
     { mediji: ravan(-1, 5, -3, 5, [pr(1, -2, -1, 5, -3, 5, { b: 1 })], { brojevi: 0 }) });
 
