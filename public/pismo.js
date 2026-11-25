@@ -66,6 +66,7 @@
     'homo sapiens erectus habilis neanderthalensis floresiensis lactobacillus bulgaricus penicillium turritopsis dohrnii naegleria palingenia longicauda ' +
     'felis catus panthera leo tigris gorilla pongo australopithecus escherichia coli coccinella septempunctata drosophila melanogaster ' +
     'pinus longaeva vacca adolescere tricolor ' +
+    'aeterni patris unam sanctam rerum novarum humanae vitae flatus vocis ' +
     'centum mille passus septem omnis cellula carpe diem mens sana corpore sano perpetuum mobile ' +
     'crescit collaborare fermentum carbo morus vitro nostrum urbe condita res publica libertas veritas victoria principia ' +
     'zoon botane endling hippo ambulance help ' +

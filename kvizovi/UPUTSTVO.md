@@ -89,6 +89,8 @@ Primer: `kvizovi/eksperimenti-tla` – pitanja po poglavljima knjige Leslija Lam
 
 Drugi primer: `kvizovi/eksperimenti-rust` (🦀, `"celina": "Sve oblasti"`) – lekcije su glavne oblasti jezika, a polje `tema` u lekciji ih grupiše u lobiju po knjizi (srednji nivo: „The Rust Programming Language“, napredni: „Rust for Rustaceans“). Sa `"kod": "rust"` se `$…$` ne tumači kao matematika, ali znak `$` iz makroa (`$x:expr`) i dalje kvari granice – takav kôd ide u medij `kod`.
 
+Treći primer: `kvizovi/eksperimenti-filozofija` (🦉, „Istorija zapadne filozofije“) – poglavlja knjige Bertranda Rasela, po 15 pitanja, na srpskom; `tema` lekcije je deo knjige (antika, katolička filozofija, moderna). Pitanja se ne pišu direktno u `kviz.json`, već u `alati/filozofija/*.txt`, jedno pitanje po redu: `težina|pitanje|tačan|netačan|netačan|netačan|zanimljivost|pojam` (`== deo knjige`, `= naslov poglavlja`, `@{…}` / `@@{…}` medij uz pitanje / odgovor), pa `node alati/gradi-filozofiju.js`.
+
 ## Mediji (`"mediji": {...}`)
 
 | vrsta | primer | napomena |
