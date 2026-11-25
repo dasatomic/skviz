@@ -210,7 +210,7 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, S3, rad, naKrugu, pravilni,
 
   proveri(Math.abs(1 / (2 * Math.PI) - 0.159) < 0.001, 'konopac');
   Q(3, 'Konopac čvrsto obavija Zemlju po ekvatoru. Produžimo ga za samo 1 m i podignemo ravnomerno svuda okolo. Koliko visoko će biti iznad zemlje?', ['Oko 16 cm', 'Manje od 1 mm', 'Oko 1 cm', 'Oko 1 m'],
-    'Obim je $2πr$, pa duži obim za 1 m znači poluprečnik veći za ${1|2π}$ m ≈ 16 cm – bez obzira na to koliko je krug velik! Ista visina bi bila i oko lopte za tenis. Većina ljudi pogađa „manje od milimetra“.',
+    'Obim je $2πr$, pa duži obim za 1 m znači poluprečnik veći za ${1|2π} m ≈ 16 cm$ – bez obzira na to koliko je krug velik! Ista visina bi bila i oko lopte za tenis. Većina ljudi pogađa „manje od milimetra“.',
     'konopac', {
       vreme: 30,
       medijiOdgovora: G({ O: [0, 0], A: [0, 4], B: [0, 4.8] }, [{ kr: 'O', r: 4, b: 2, pun: 1 }, { kr: 'O', r: 4.8, b: 3, crtaj: 1, trajanje: 1.8 }, { d: 'OA', b: 5, o: 'r', na: 0.4 }, { d: 'AB', b: 1, debljina: 4, o: '≈ 16 cm' },

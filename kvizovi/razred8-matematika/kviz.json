@@ -15294,10 +15294,10 @@
     "velicina": 220
    },
    "odgovori": [
-    "u jednoj ravni",
-    "u različitim ravnima",
-    "na različitim visinama",
-    "mimoilazno"
+    "uvek u jednoj ravni",
+    "nikad u istoj ravni",
+    "u istoj ravni samo kad su normalne",
+    "u dve paralelne ravni"
    ],
    "zanimljivost": "Dve prave koje se seku određuju jednu ravan, jer tri tačke (dve na jednoj i jedna na drugoj pravoj) nisu kolinearne.",
    "rec": "presek"
@@ -26867,7 +26867,7 @@
     "${12|13}$",
     "${13|5}$"
    ],
-   "zanimljivost": "Ugao $C₁AC$ ima naspramnu katetu $CC₁ = 12$ i nalegla kateta $AC = 5$, pa je tangens ${12|5}$.",
+   "zanimljivost": "Ugao $C₁AC$ ima naspramnu katetu $CC₁ = 12$ i naleglu katetu $AC = 5$, pa je tangens ${12|5}$.",
    "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
@@ -47963,7 +47963,7 @@
   {
    "lekcija": 24,
    "tezina": 2,
-   "pitanje": "$U$ $100$ l vode na $20$ °$C$ treba dolijati toplu vodu na $60$ °$C$, da mešavina bude $40$ °$C$. Koliko litara tople vode treba?",
+   "pitanje": "Koliko litara tople vode od $60 °C$ treba doliti u $100$ l vode od $20 °C$, da mešavina ima $40 °C$?",
    "mediji": {
     "vrsta": "geo",
     "t": {
@@ -52894,7 +52894,7 @@
     "$x > 4$",
     "$x ≤ 4$"
    ],
-   "zanimljivost": "Deljenjem obe strane pozitivnim brojem 2 dobijamo $x < 4$. Broj $ ne pripada skupu, jer je  · 4 = 8$, a nejednakost je stroga.",
+   "zanimljivost": "Deljenjem obe strane pozitivnim brojem 2 dobijamo $x < 4$. Broj $4$ ne pripada skupu, jer je $2 · 4 = 8$, a nejednakost je stroga.",
    "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
@@ -83922,7 +83922,7 @@
     "2,4 l",
     "12 l"
    ],
-   "zanimljivost": "Zapremina je  000 cm³$, a  l = 1 dm³ = 1000 cm³$.",
+   "zanimljivost": "Zapremina je $24 000 cm³$, a $1 l = 1 dm³ = 1000 cm³$.",
    "rec": "akvarijum"
   },
   {
@@ -100276,7 +100276,7 @@
   {
    "lekcija": 44,
    "tezina": 2,
-   "pitanje": "Tabela: $x$ $= 1, 2, 3$ i $f(x)$ = 5, 5, 8. Da li je to funkcija?",
+   "pitanje": "Tabela: $x = 1, 2, 3$ i $f(x) = 5, 5, 8$. Da li je to funkcija?",
    "mediji": {
     "vrsta": "geo",
     "t": {},
@@ -101980,7 +101980,8 @@
       "ose": [
        "x",
        "y"
-      ]
+      ],
+      "brojevi": 0
      },
      {
       "lin": [
@@ -102013,6 +102014,51 @@
     "2"
    ],
    "zanimljivost": "Zamenimo $x = 2$ i $y = 1$: $1 = −2 + n$, pa je $n = 3$. Provera: za $x = 2$ je $y = −2 + 3 = 1$.",
+   "medijiOdgovora": {
+    "vrsta": "geo",
+    "t": {
+     "M": [
+      2,
+      1
+     ]
+    },
+    "e": [
+     {
+      "mreza": [
+       -2,
+       5,
+       -3,
+       6
+      ],
+      "ose": [
+       "x",
+       "y"
+      ]
+     },
+     {
+      "lin": [
+       [
+        -2,
+        5
+       ],
+       [
+        5,
+        -2
+       ]
+      ],
+      "b": 1,
+      "debljina": 3
+     },
+     {
+      "tacka": "M",
+      "b": 1
+     }
+    ],
+    "velicina": 240,
+    "bezImena": [
+     "M"
+    ]
+   },
    "rec": "zamena"
   },
   {
@@ -102958,8 +103004,53 @@
   {
    "lekcija": 46,
    "tezina": 2,
-   "pitanje": "Voda se hladi 2 °$C$ svakog minuta, a počinje sa 80 °$C$. Kolika je temperatura posle 10 minuta?",
+   "pitanje": "Voda se hladi $2 °C$ svakog minuta, a počinje sa $80 °C$. Kolika je temperatura posle $10$ minuta?",
    "mediji": {
+    "vrsta": "geo",
+    "t": {},
+    "e": [
+     {
+      "mreza": [
+       0,
+       30,
+       0,
+       90
+      ],
+      "ose": [
+       "~min",
+       "~°C"
+      ],
+      "brojevi": 0,
+      "podela": [
+       5,
+       20
+      ]
+     },
+     {
+      "lin": [
+       [
+        0,
+        80
+       ],
+       [
+        30,
+        20
+       ]
+      ],
+      "b": 1,
+      "debljina": 3
+     }
+    ],
+    "velicina": 240
+   },
+   "odgovori": [
+    "$60 °C$",
+    "$70 °C$",
+    "$80 °C$",
+    "$20 °C$"
+   ],
+   "zanimljivost": "Posle $10$ minuta voda je izgubila $2 · 10 = 20$ stepeni, pa je $80 − 20 = 60 °C$. Ovakav pad temperature je linearan samo dok se voda ne približi temperaturi okoline.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {},
     "e": [
@@ -102996,13 +103087,6 @@
     ],
     "velicina": 240
    },
-   "odgovori": [
-    "60 °$C$",
-    "70 °$C$",
-    "80 °$C$",
-    "20 °$C$"
-   ],
-   "zanimljivost": "Posle 10 minuta voda je izgubila $2 · 10 = 20$ stepeni, pa je $80 − 20 = 60$ °$C$. Ovakav pad temperature je linearan samo dok se voda ne približi temperaturi okoline.",
    "rec": "hlađenje"
   },
   {
@@ -103667,6 +103751,7 @@
        "~min",
        "~din"
       ],
+      "brojevi": 0,
       "podela": [
        10,
        200
@@ -103696,6 +103781,43 @@
     "200 min"
    ],
    "zanimljivost": "Račun je $y = 300 + 10t$. Iz $500 = 300 + 10t$ dobijamo $10t = 200$, pa je $t = 20$ minuta. Broj 200 je samo razlika računa, a ne vreme.",
+   "medijiOdgovora": {
+    "vrsta": "geo",
+    "t": {},
+    "e": [
+     {
+      "mreza": [
+       0,
+       40,
+       0,
+       800
+      ],
+      "ose": [
+       "~min",
+       "~din"
+      ],
+      "podela": [
+       10,
+       200
+      ]
+     },
+     {
+      "lin": [
+       [
+        0,
+        300
+       ],
+       [
+        40,
+        700
+       ]
+      ],
+      "b": 1,
+      "debljina": 3
+     }
+    ],
+    "velicina": 240
+   },
    "rec": "pretplata"
   },
   {
@@ -103703,6 +103825,51 @@
    "tezina": 3,
    "pitanje": "Biciklista je na početku 2 km od kuće, a udaljava se po 6 km na sat. Posle koliko sati je 20 km od kuće?",
    "mediji": {
+    "vrsta": "geo",
+    "t": {},
+    "e": [
+     {
+      "mreza": [
+       0,
+       6,
+       0,
+       40
+      ],
+      "ose": [
+       "~h",
+       "~km"
+      ],
+      "brojevi": 0,
+      "podela": [
+       1,
+       10
+      ]
+     },
+     {
+      "lin": [
+       [
+        0,
+        2
+       ],
+       [
+        6,
+        38
+       ]
+      ],
+      "b": 1,
+      "debljina": 3
+     }
+    ],
+    "velicina": 240
+   },
+   "odgovori": [
+    "3 h",
+    "2 h",
+    "18 h",
+    "3,5 h"
+   ],
+   "zanimljivost": "Udaljenost je $d = 2 + 6t$. Iz $20 = 2 + 6t$ je $6t = 18$, pa je $t = 3$ sata. Ako zaboravimo početnih 2 km, dobijamo $20 : 6 ≈ 3{,}3$ h.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {},
     "e": [
@@ -103739,13 +103906,6 @@
     ],
     "velicina": 240
    },
-   "odgovori": [
-    "3 h",
-    "2 h",
-    "18 h",
-    "3,5 h"
-   ],
-   "zanimljivost": "Udaljenost je $d = 2 + 6t$. Iz $20 = 2 + 6t$ je $6t = 18$, pa je $t = 3$ sata. Ako zaboravimo početnih 2 km, dobijamo $20 : 6 ≈ 3{,}3$ h.",
    "rec": "udaljenost"
   },
   {
@@ -103753,6 +103913,51 @@
    "tezina": 3,
    "pitanje": "Voće se kupuje po 120 dinara za kilogram, a na celu porudžbinu je popust 80 dinara. Koliko košta $3$ kg?",
    "mediji": {
+    "vrsta": "geo",
+    "t": {},
+    "e": [
+     {
+      "mreza": [
+       0,
+       6,
+       -100,
+       700
+      ],
+      "ose": [
+       "~kg",
+       "~din"
+      ],
+      "brojevi": 0,
+      "podela": [
+       1,
+       200
+      ]
+     },
+     {
+      "lin": [
+       [
+        0,
+        -80
+       ],
+       [
+        6,
+        640
+       ]
+      ],
+      "b": 1,
+      "debljina": 3
+     }
+    ],
+    "velicina": 240
+   },
+   "odgovori": [
+    "280 din",
+    "360 din",
+    "440 din",
+    "200 din"
+   ],
+   "zanimljivost": "Funkcija je $c = 120x − 80$. Za $x = 3$ je $c = 360 − 80 = 280$ dinara. Popust se oduzima jednom, a ne po kilogramu.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {},
     "e": [
@@ -103789,13 +103994,6 @@
     ],
     "velicina": 240
    },
-   "odgovori": [
-    "280 din",
-    "360 din",
-    "440 din",
-    "200 din"
-   ],
-   "zanimljivost": "Funkcija je $c = 120x − 80$. Za $x = 3$ je $c = 360 − 80 = 280$ dinara. Popust se oduzima jednom, a ne po kilogramu.",
    "rec": "popust"
   },
   {
@@ -108556,6 +108754,7 @@
        "~km",
        "~din"
       ],
+      "brojevi": 0,
       "podela": [
        1,
        200
@@ -108585,6 +108784,43 @@
     "450 din"
    ],
    "zanimljivost": "Za $x = 4$ je $c = 240 + 150 = 390$ dinara. Vrednost 240 bi bila samo cena po kilometrima, bez starta.",
+   "medijiOdgovora": {
+    "vrsta": "geo",
+    "t": {},
+    "e": [
+     {
+      "mreza": [
+       0,
+       10,
+       0,
+       800
+      ],
+      "ose": [
+       "~km",
+       "~din"
+      ],
+      "podela": [
+       1,
+       200
+      ]
+     },
+     {
+      "lin": [
+       [
+        0,
+        150
+       ],
+       [
+        10,
+        750
+       ]
+      ],
+      "b": 1,
+      "debljina": 3
+     }
+    ],
+    "velicina": 240
+   },
    "rec": "taksi"
   },
   {
@@ -108808,6 +109044,7 @@
        "~dana",
        "~l"
       ],
+      "brojevi": 0,
       "podela": [
        6,
        20
@@ -108837,6 +109074,43 @@
     "33"
    ],
    "zanimljivost": "Iz $28 = 100 − 3x$ je $3x = 72$, pa je $x = 24$. Na grafiku se vidi da je to tačka gde linija prolazi kroz visinu 28.",
+   "medijiOdgovora": {
+    "vrsta": "geo",
+    "t": {},
+    "e": [
+     {
+      "mreza": [
+       0,
+       36,
+       0,
+       100
+      ],
+      "ose": [
+       "~dana",
+       "~l"
+      ],
+      "podela": [
+       6,
+       20
+      ]
+     },
+     {
+      "lin": [
+       [
+        0,
+        100
+       ],
+       [
+        33,
+        1
+       ]
+      ],
+      "b": 1,
+      "debljina": 3
+     }
+    ],
+    "velicina": 240
+   },
    "rec": "rezervoar"
   },
   {
@@ -108844,6 +109118,51 @@
    "tezina": 3,
    "pitanje": "Prihod od berača malina je $P = 1000x − 3000$ evra. Koliko berača treba da prihod bude 7000 evra?",
    "mediji": {
+    "vrsta": "geo",
+    "t": {},
+    "e": [
+     {
+      "mreza": [
+       0,
+       12,
+       -4,
+       10
+      ],
+      "ose": [
+       "~berača",
+       "~hilj."
+      ],
+      "brojevi": 0,
+      "podela": [
+       1,
+       2
+      ]
+     },
+     {
+      "lin": [
+       [
+        0,
+        -3
+       ],
+       [
+        12,
+        9
+       ]
+      ],
+      "b": 1,
+      "debljina": 3
+     }
+    ],
+    "velicina": 240
+   },
+   "odgovori": [
+    "10",
+    "7",
+    "4",
+    "13"
+   ],
+   "zanimljivost": "Iz $7000 = 1000x − 3000$ dobijamo $1000x = 10000$, pa je $x = 10$. Na grafiku se to vidi na apscisi 10.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {},
     "e": [
@@ -108880,13 +109199,6 @@
     ],
     "velicina": 240
    },
-   "odgovori": [
-    "10",
-    "7",
-    "4",
-    "13"
-   ],
-   "zanimljivost": "Iz $7000 = 1000x − 3000$ dobijamo $1000x = 10000$, pa je $x = 10$. Na grafiku se to vidi na apscisi 10.",
    "rec": "prihod"
   },
   {
@@ -188355,7 +188667,7 @@
     "0,6 l",
     "600 l"
    ],
-   "zanimljivost": "Zapremina je $π · 10² · 20 = 6000$ cm³, a to je 6 litara. Podsećanje: 1 $l = 1$ $dm³ = 1000 cm³$.",
+   "zanimljivost": "Zapremina je $π · 10² · 20 = 6000$ cm³, a to je $6$ litara. Podsećanje: $1 l = 1 dm³ = 1000 cm³$.",
    "rec": "litar"
   },
   {
@@ -255432,7 +255744,7 @@
     "$1 : 3$",
     "$1 : 2$",
     "$2 : 3$",
-    "1 : 3π$"
+    "$1 : 3π$"
    ],
    "zanimljivost": "Zapremina kupe je trećina zapremine valjka iste osnove i visine.",
    "rec": "kupa"

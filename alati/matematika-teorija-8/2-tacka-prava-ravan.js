@@ -230,7 +230,7 @@ module.exports = ({ L, Q, U, S, G, r, proveri, kvadar, prostor, ravanZ, ravan })
 
   Q(1, 'Koja je od ivica kvadra sa $AB$ u istoj ravni i paralelna?',
     ['$DC$', '$CC_1$', '$AA_1$', '$BC$'],
-    'Ivice AB i DC leže na istoj donjoj strani i ne seku se, pa su paralelne. Ivice AA₁ i BC se seku u teménima A odnosno B.', 'paralelne',
+    'Ivice AB i DC leže na istoj donjoj strani i ne seku se, pa su paralelne. Ivice AA₁ i BC se seku u temenima $A$ odnosno $B$.', 'paralelne',
     { mediji: KV([H('AB'), ISP('DC')]), medijiOdgovora: KV([H('AB'), H('DC', 2)]) });
 
   Q(2, 'Kakav je položaj ivica $AB$ i $AA_1$ kvadra?',
@@ -270,7 +270,7 @@ module.exports = ({ L, Q, U, S, G, r, proveri, kvadar, prostor, ravanZ, ravan })
     { mediji: KV([H('AB'), H('CC₁', 2)]) });
 
   Q(1, 'Dve prave koje se seku nalaze se…',
-    ['u jednoj ravni', 'u različitim ravnima', 'na različitim visinama', 'mimoilazno'],
+    ['uvek u jednoj ravni', 'nikad u istoj ravni', 'u istoj ravni samo kad su normalne', 'u dve paralelne ravni'],
     'Dve prave koje se seku određuju jednu ravan, jer tri tačke (dve na jednoj i jedna na drugoj pravoj) nisu kolinearne.', 'presek',
     { mediji: G({ A: [0, 0] }, [...PRAVA2([-2, -1], [2.2, 1.4], 'a'), ...PRAVA2([-1.6, 1.8], [1.8, -1.2], 'b')], { velicina: 220 }) });
 
@@ -309,7 +309,7 @@ module.exports = ({ L, Q, U, S, G, r, proveri, kvadar, prostor, ravanZ, ravan })
 
   Q(3, 'Koliko mimoilaznih parova ivica ima kvadar?',
     ['24', '18', '12', '36'],
-    'Od svih ${12 \\cdot 11|2} = 66$ parova ivica, 18 su paralelni, a 24 se seku u nekom teménu (3 para u svakom od 8 temena). Ostaje $66-18-24=24$ mimoilaznih parova.', 'parovi',
+    'Od svih ${12 \\cdot 11|2} = 66$ parova ivica, 18 su paralelni, a 24 se seku u nekom temenu (3 para u svakom od 8 temena). Ostaje $66-18-24=24$ mimoilaznih parova.', 'parovi',
     { mediji: KV([]) });
 
   Q(3, 'Koja tačka je presek dijagonala $AC$ i $BD$ osnove kvadra?',
@@ -645,7 +645,7 @@ module.exports = ({ L, Q, U, S, G, r, proveri, kvadar, prostor, ravanZ, ravan })
 
   Q(3, 'Kvadar $4$ cm, $3$ cm i $12$ cm (osnova sa dijagonalom 5 cm, visina 12 cm). Koliki je tangens ugla koji dijagonala tela $AC_1$ zaklapa sa osnovom?',
     ['$\\frac{12}{5}$', '$\\frac{5}{12}$', '$\\frac{12}{13}$', '$\\frac{13}{5}$'],
-    'Ugao C₁AC ima naspramnu katetu CC₁ = 12 i nalegla kateta AC = 5, pa je tangens $\\frac{12}{5}$.', 'tangens',
+    'Ugao $C₁AC$ ima naspramnu katetu $CC₁ = 12$ i naleglu katetu $AC = 5$, pa je tangens $\\frac{12}{5}$.', 'tangens',
     { mediji: KV([H('AC₁', 2)]), medijiOdgovora: KV([H('AC₁', 2), H('AC', 1), ISP('C₁C', 1)]) });
 
   Q(3, 'Duž dužine 6 cm zaklapa sa ravni ugao od 30°. Kolika je dužina njene normalne projekcije?',

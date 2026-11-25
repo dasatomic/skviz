@@ -116,7 +116,7 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, proveri }) => {
       zanimljivost: 'U građevinarstvu se koriste trouglovi, a ne četvorouglovi, jer se trougao ne može deformisati bez promene dužina stranica.' });
   Q(2, 'Koliko dijagonala izlazi iz jednog temena osmougla?',
     ['5', '7', '6', '8'],
-    'Iz temena ne vodi dijagonala do dva susedna temena, jer su to stranice. Zato je 8 − 3 = 5.', 'temeno',
+    'Iz temena ne vodi dijagonala do dva susedna temena, jer su to stranice. Zato je $8 − 3 = 5$.', 'temeno',
     { mediji: pol(8, { e: [{ tacka: 'A', b: 1 }] }), medijiOdgovora: pol(8, { e: diag(8, { iz: 0 }) }),
       zanimljivost: 'Osmougao ima ukupno 20 dijagonala, pa je iz jednog temena 5 od 20 – tačno četvrtina.' });
   Q(1, 'Koliko dijagonala ima četvorougao?',
@@ -387,7 +387,7 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, proveri }) => {
       zanimljivost: 'Ako kvadratu odsečemo četiri jednaka ugla tako da stranice budu jednake, dobijamo pravilni osmougao.' });
   Q(2, 'Nad svakom stranicom pravilnog šestougla konstruisan je kvadrat. Koji mnogougao čine slobodna temena kvadrata?',
     ['Dvanaestougao', 'Osmougao', 'Desetougao', 'Šestougao'],
-    'Svaki kvadrat ima dva slobodna temena, pa dobijamo 6 · 2 = 12 temena dvanaestougla.', 'kvadrati',
+    'Svaki kvadrat ima dva slobodna temena, pa dobijamo $6 · 2 = 12$ temena dvanaestougla.', 'kvadrati',
     { mediji: pol(6, { bezOznaka: true }),
       medijiOdgovora: pol(6, { bezOznaka: true, e: kvadrati(3) }),
       zanimljivost: 'Procepi između kvadrata na temenima šestougla su jednakostranični trouglovi.' });

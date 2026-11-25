@@ -584,14 +584,14 @@
   {
    "lekcija": 2,
    "tezina": 1,
-   "pitanje": "Kakve su međusobno linije paralela?",
+   "pitanje": "Šta važi za paralele na globusu?",
    "odgovori": [
-    "Međusobno su paralelne",
-    "Seku se pod pravim uglom",
-    "Sve se spajaju u polovima",
-    "Nemaju nikakav međusobni odnos"
+    "Nikada se ne seku",
+    "Sve se seku u polovima",
+    "Sve su jednake dužine",
+    "Seku ekvator pod pravim uglom"
    ],
-   "zanimljivost": "Zato se i zovu paralele (uporednice).",
+   "zanimljivost": "Zato se i zovu paralele (uporednice). Najduža paralela je ekvator, a ka polovima su sve kraće – meridijani su, naprotiv, svi jednake dužine.",
    "rec": "linije"
   },
   {
@@ -1098,14 +1098,14 @@
   {
    "lekcija": 4,
    "tezina": 3,
-   "pitanje": "Šta su deformacije na geografskoj karti?",
+   "pitanje": "Zašto svaka geografska karta ima deformacije?",
    "odgovori": [
-    "Deformacije oblika i površina",
-    "Greške u bojenju mora i kopna",
-    "Netačno napisani nazivi gradova i sela",
-    "Prevelike dimenzije papira i okvira karte"
+    "Zakrivljena površina Zemlje ne može verno da se prenese u ravan",
+    "Karte se crtaju rukom, bez preciznih merenja na terenu",
+    "Kontinenti se stalno pomeraju, pa karte brzo zastarevaju",
+    "Karte se uvek štampaju u sitnom razmeru"
    ],
-   "zanimljivost": "Projekcije su jedno od rešenja za smanjivanje deformacija.",
+   "zanimljivost": "Zato Grenland na mnogim kartama sveta izgleda veliki kao Afrika, iako je oko 14 puta manji. Kartografske projekcije biraju koja će se deformacija smanjiti.",
    "rec": "deformacija"
   },
   {
@@ -2314,7 +2314,7 @@
   {
    "lekcija": 10,
    "tezina": 1,
-   "pitanje": "Na kom kontinentu živi najviše stanovnika (oko 59%)?",
+   "pitanje": "Gde živi najviše stanovnika sveta (oko 59%)?",
    "odgovori": [
     "U Aziji",
     "U Africi",
@@ -2865,10 +2865,10 @@
    "tezina": 2,
    "pitanje": "Ko su klimatske izbeglice?",
    "odgovori": [
-    "Ljudi zbog klimatskih nepogoda",
-    "Ljudi koji putuju na letovanje",
-    "Turisti na planini i moru",
-    "Radnici na sezonskim poslovima"
+    "Ljudi koje su suše ili poplave oterale od kuće",
+    "Ljudi koji leti putuju na more",
+    "Turisti koji zimi idu na planine po sneg",
+    "Radnici koji svake godine odlaze na sezonske poslove"
    ],
    "zanimljivost": "Samo 2020. godine oko 30 miliona ljudi raseljeno je zbog vremenskih nepogoda.",
    "rec": "izbeglice"
@@ -3087,7 +3087,7 @@
   {
    "lekcija": 13,
    "tezina": 1,
-   "pitanje": "Kako se zovu grafici koji prikazuju polnu i starosnu strukturu?",
+   "pitanje": "Kako se zove grafik koji prikazuje koliko ima muškaraca i žena u svakoj starosnoj grupi?",
    "odgovori": [
     "Polno-starosne piramide",
     "Stubičasti dijagrami",
@@ -5712,14 +5712,14 @@
   {
    "lekcija": 24,
    "tezina": 1,
-   "pitanje": "Kako se zove proces razvoja i širenja industrije?",
+   "pitanje": "Kako se zove proces u kome fabrike postaju glavni izvor posla i proizvodnje u nekoj zemlji?",
    "odgovori": [
     "Industrijalizacija",
     "Urbanizacija",
     "Kolonizacija",
     "Dekolonizacija"
    ],
-   "zanimljivost": "Industrijalizacija se odvija zahvaljujući tehničkim pronalascima.",
+   "zanimljivost": "Industrijalizacija je počela u Engleskoj u 18. veku, sa parnom mašinom i fabrikama tekstila, a zatim se proširila na ostatak Evrope i Ameriku.",
    "rec": "razvoj"
   },
   {
@@ -7018,14 +7018,14 @@
   {
    "lekcija": 29,
    "tezina": 2,
-   "pitanje": "Kako država dobija međunarodno priznanje?",
+   "pitanje": "Šta najviše pokazuje da je nova država međunarodno priznata?",
    "odgovori": [
-    "Priznanjem drugih država",
-    "Proglašenjem nezavisnosti",
-    "Imenom i grbom",
-    "Zastavom i himnom"
+    "Druge države uspostave diplomatske odnose s njom",
+    "Njen parlament svečano proglasi nezavisnost",
+    "Usvoji svoju zastavu, grb i himnu",
+    "Počne da štampa svoj novac i pasoše za građane"
    ],
-   "zanimljivost": "Danas u svetu postoji 193 priznate države.",
+   "zanimljivost": "Ujedinjene nacije danas imaju 193 države članice, a neke države priznaje samo deo sveta.",
    "rec": "priznanje"
   },
   {
@@ -7110,12 +7110,12 @@
    "tezina": 1,
    "pitanje": "Šta je geografski položaj države?",
    "odgovori": [
-    "Položaj prema okruženju",
-    "Površina i veličina države",
-    "Broj stanovnika države",
-    "Oblik zastave i grba"
+    "Položaj prema susednim državama, morima i putevima",
+    "Njena površina i oblik granica",
+    "Broj stanovnika i njihov raspored po gradovima i selima",
+    "Državno uređenje i oblik vlasti"
    ],
-   "zanimljivost": "Geografski položaj obuhvata više vrsta položaja.",
+   "zanimljivost": "Srbija, na primer, ima povoljan saobraćajni položaj: kroz Moravsko-vardarsku dolinu ide najkraći kopneni put od Srednje Evrope do Grčke.",
    "rec": "polozaj"
   },
   {
@@ -7573,7 +7573,7 @@
   {
    "lekcija": 31,
    "tezina": 2,
-   "pitanje": "Koja funkcija granice se odnosi na kontrolu pasoša, viza i robe?",
+   "pitanje": "Koja funkcija granice se ostvaruje kada carinici i policija pregledaju pasoše, vize i robu?",
    "odgovori": [
     "Kontrolna funkcija",
     "Pravna funkcija",
@@ -7920,14 +7920,14 @@
   {
    "lekcija": 33,
    "tezina": 1,
-   "pitanje": "Kako monarh dolazi na vlast?",
+   "pitanje": "Kako monarh najčešće dolazi na vlast?",
    "odgovori": [
-    "Nasleđem",
-    "Na izborima",
-    "Slučajnim odabirom",
-    "Žrebom"
+    "Nasleđem prestola",
+    "Pobedom na izborima",
+    "Imenovanjem od strane vlade",
+    "Žrebom među plemićima"
    ],
-   "zanimljivost": "Vladarska titula je nasledna.",
+   "zanimljivost": "Ima i izuzetaka: kralja Malezije biraju vladari njenih država, a papu biraju kardinali.",
    "rec": "monarh"
   },
   {
@@ -7984,7 +7984,7 @@
   {
    "lekcija": 33,
    "tezina": 1,
-   "pitanje": "Kako se zove monarhija u kojoj monarh ima simboličnu ulogu, a vlast pripada parlamentu?",
+   "pitanje": "Kako se zove monarhija u kojoj kralj samo predstavlja državu, a zakone donosi skupština izabrana na izborima?",
    "odgovori": [
     "Parlamentarna monarhija",
     "Apsolutna monarhija",
@@ -8631,12 +8631,12 @@
    "tezina": 1,
    "pitanje": "Šta je teritorijalni integritet države?",
    "odgovori": [
-    "Celovitost teritorije",
-    "Broj stanovnika države",
-    "Vrsta vladavine i uređenja",
-    "Boja zastave i grba"
+    "Pravo da joj niko ne oduzme ni deo prostora",
+    "Broj stanovnika koji u njoj žive",
+    "Vrsta vladavine i državno uređenje",
+    "Pravo da sama bira zastavu, grb i himnu bez mešanja drugih"
    ],
-   "zanimljivost": "Uspostavlja se međunarodnim ugovorima.",
+   "zanimljivost": "Poštovanje teritorijalnog integriteta drugih država jedno je od osnovnih načela Povelje Ujedinjenih nacija.",
    "rec": "integritet"
   },
   {
@@ -8657,9 +8657,9 @@
    "tezina": 1,
    "pitanje": "Kada nastaju teritorijalni sporovi?",
    "odgovori": [
-    "Kad se države sukobe oko teritorije",
+    "Kad dve države polažu pravo na isti prostor",
     "Kad države međusobno trguju",
-    "Kad države sarađuju i pomažu se",
+    "Kad države sarađuju i pomažu jedna drugoj u nevolji",
     "Kad se sklapaju savezi i unije"
    ],
    "zanimljivost": "Sporovi se mogu rešavati pregovorima ili referendumom.",
@@ -8808,14 +8808,14 @@
   {
    "lekcija": 36,
    "tezina": 2,
-   "pitanje": "Koja teritorija je pod upravom Francuske?",
+   "pitanje": "Francuska Gvajana je prekomorski deo Francuske. Na kom kontinentu se nalazi?",
    "odgovori": [
-    "Francuska Gvajana",
-    "Grenland",
-    "Gibraltar",
-    "Farska ostrva"
+    "U Južnoj Americi",
+    "U Africi",
+    "U Okeaniji",
+    "U Severnoj Americi"
    ],
-   "zanimljivost": "Francuska Gvajana se nalazi u Južnoj Americi.",
+   "zanimljivost": "Iz Kurua u Francuskoj Gvajani poleću evropske rakete – blizu ekvatora Zemljina rotacija daje raketi dodatnu brzinu.",
    "rec": "gvajana"
   },
   {
@@ -9053,7 +9053,7 @@
   {
    "lekcija": 37,
    "tezina": 2,
-   "pitanje": "Koje su najznačajnije svetske finansijske organizacije?",
+   "pitanje": "Koje međunarodne organizacije pozajmljuju novac državama u finansijskoj krizi?",
    "odgovori": [
     "MMF i Svetska banka",
     "NATO i UN",
@@ -9197,13 +9197,13 @@
   },
   {
    "lekcija": 38,
-   "tezina": 3,
-   "pitanje": "Koja regija obuhvata države i oblasti na planinskim vencima Alpa?",
+   "tezina": 2,
+   "pitanje": "Kojoj regiji pripadaju Švajcarska i Austrija?",
    "odgovori": [
-    "Alpska regija",
-    "Panonska nizija",
-    "Sredozemlje",
-    "Laponija"
+    "Alpskoj regiji",
+    "Panonskoj niziji",
+    "Sredozemlju",
+    "Laponiji"
    ],
    "zanimljivost": "Alpska regija je primer prirodne regije.",
    "rec": "alpi",
@@ -9224,13 +9224,13 @@
   },
   {
    "lekcija": 38,
-   "tezina": 3,
-   "pitanje": "Koja regija obuhvata države i oblasti na Panonskoj ravnici?",
+   "tezina": 2,
+   "pitanje": "Kojoj regiji pripadaju Mađarska i Vojvodina?",
    "odgovori": [
-    "Panonska nizija",
-    "Alpska regija",
-    "Sredozemlje",
-    "Skandinavija"
+    "Panonskoj niziji",
+    "Alpskoj regiji",
+    "Sredozemlju",
+    "Skandinaviji"
    ],
    "zanimljivost": "Panonska nizija se prostire kroz više država.",
    "rec": "panonska",
@@ -9251,17 +9251,17 @@
   },
   {
    "lekcija": 38,
-   "tezina": 3,
-   "pitanje": "Šta je Sredozemlje (Mediteran)?",
+   "tezina": 1,
+   "pitanje": "Koje države pripadaju Sredozemlju (Mediteranu)?",
    "odgovori": [
-    "Regija oko Sredozemnog mora",
-    "Regija na severu Evrope",
-    "Regija u centralnoj Aziji",
-    "Regija u Južnoj Americi"
+    "Italija, Grčka i Španija",
+    "Švedska, Norveška i Finska",
+    "Poljska, Češka i Slovačka",
+    "Austrija, Švajcarska i Mađarska"
    ],
    "zanimljivost": "Sredozemlje je i prirodna i društveno-istorijska regija.",
    "rec": "sredozemlje",
-   "mediji": {
+   "medijiOdgovora": {
     "vrsta": "mapa",
     "oblast": "juzna-evropa"
    }
@@ -9998,14 +9998,14 @@
   {
    "lekcija": 41,
    "tezina": 1,
-   "pitanje": "Gde je zastupljena planinska klima?",
+   "pitanje": "Gde vlada klima sa svežim letima i dugim, snežnim zimama, iako je u podnožju toplo?",
    "odgovori": [
     "U visokim planinama",
     "Uz obale mora i okeana",
     "U nizijama i ravnicama",
     "U polarnim i ledenim predelima"
    ],
-   "zanimljivost": "Odlikuje se svežim letima i dugim, snežnim zimama.",
+   "zanimljivost": "Sa svakih 100 m visine temperatura vazduha opada za oko 0,6 °C, pa je na vrhu Kopaonika i leti oko 10 °C hladnije nego u Kruševcu.",
    "rec": "planinska"
   },
   {

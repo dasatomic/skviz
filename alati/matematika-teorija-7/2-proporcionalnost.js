@@ -38,8 +38,8 @@ module.exports = ({ L, Q, U, S, G, r, kruzni, proveri, pitanja }) => {
     return G({}, e, { velicina });
   };
   // koordinatna ravan sa mrežom [x0, x1, y0, y1]; tačke [[ime, x, y]] (ime = velika slova → oznaka sama)
-  const ravan = (mreza, { tacke = [], elementi = [], velicina = 300, podela = [1, 1] } = {}) => {
-    const t = {}, e = [{ mreza, podela, brojevi: 1 }];
+  const ravan = (mreza, { tacke = [], elementi = [], velicina = 300, podela = [1, 1], brojevi = 1 } = {}) => {
+    const t = {}, e = [{ mreza, podela, brojevi }];
     tacke.forEach(([ime, x, y]) => { t[ime] = [x, y]; e.push({ tacka: ime, b: 1 }); });
     return G(t, [...e, ...elementi], { bezImena: [], velicina });
   };
@@ -190,7 +190,7 @@ module.exports = ({ L, Q, U, S, G, r, kruzni, proveri, pitanja }) => {
     { mediji: ravan([0, 5, 0, 5], { elementi: [{ lin: [[0, 0], [1.5, 4.5]], b: 1, debljina: 3 }, { tx: 'p', at: [1.75, 4.8], vel: 18, b: 1 }, { lin: [[0, 0], [4.5, 2.25]], b: 2, debljina: 3 }, { tx: 'q', at: [4.7, 2.5], vel: 18, b: 2 }] }) });
   Q(2, 'Kolika je stranica kvadrata $x$ kad je njegov obim $y = 4x$ jednak 7?',
     ['1,75', '2,8', '7', '1,4'],
-    'Iz $y = 4x$ sledi $x = \\frac{y}{4} = \\frac{7}{4} = 1,75$. Obim je uvek 4 puta veći od stranice.', 'obim',
+    'Iz $y = 4x$ sledi $x = \\frac{y}{4} = \\frac{7}{4} = 1,75$.', 'obim',
     { mediji: ravan([0, 2.5, 0, 8.5], { podela: [0.5, 1], elementi: [{ lin: [[0, 0], [2.1, 8.4]], b: 1, debljina: 3 }] }),
       medijiOdgovora: ravan([0, 2.5, 0, 8.5], { podela: [0.5, 1], elementi: [{ lin: [[0, 0], [2.1, 8.4]], b: 1, debljina: 3 }, { lin: [[0, 7], [1.75, 7], [1.75, 0]], b: 2, isp: 1 }, { tacka: 'T', b: 2 }] }) });
   Q(2, 'Ronilac kreće sa površine mora i svakog minuta se spusti 3 m. Ako površinu računamo kao 0 m, njegov položaj posle $x$ minuta je $y = -3x$. Gde je posle 4 minuta?',
@@ -228,7 +228,7 @@ module.exports = ({ L, Q, U, S, G, r, kruzni, proveri, pitanja }) => {
     ['$y = 1 + x$', '$y = -x$', '$y = 3x$', '$y = \\frac{x}{2}$'],
     'Funkcija direktne proporcionalnosti ima oblik $y = k\\cdot x$, pa prolazi kroz koordinatni početak. Kod $y = 1 + x$ je za $x = 0$ vrednost $y = 1$.', 'Grafik svake funkcije direktne proporcionalnosti je prava kroz koordinatni početak. Ovde je $y=1+x$ pomeren za jedan gore.', 'proporcija');
   S(2, 'Spoji funkciju sa koeficijentom $k$.',
-    [['$y = 2x$', 'k = 2'], ['$y = -x$', 'k = −1'], ['$y = \\frac{x}{3}$', 'k = $\\frac{1}{3}$'], ['$y = -0,5x$', 'k = −0,5']],
+    [['$y = 2x$', '$k = 2$'], ['$y = -x$', '$k = −1$'], ['$y = \\frac{x}{3}$', '$k = \\frac{1}{3}$'], ['$y = -0,5x$', '$k = −0,5$']],
     'Koeficijent je broj uz $x$. Kod $y = \\frac{x}{3}$ je $k = \\frac{1}{3}$, jer je $\\frac{x}{3} = \\frac{1}{3}\\cdot x$.', 'koeficijent');
 
   // ── 9. produžena proporcija ──
@@ -318,10 +318,10 @@ module.exports = ({ L, Q, U, S, G, r, kruzni, proveri, pitanja }) => {
   uzPitanje('√{7}·√{28}', pravougaonik(5.292, 2.646, { donja: '√28', desna: '√7' }));
   uzPitanje('√{0,25}', pravougaonik(0.5, 0.5, { gore: '√0,25', velicina: 200 }));
   // 8. proporcionalnost: grafik y = kx, tačke, nagib, račun na mreži
-  uzPitanje('za $x = 4$', ravan([0, 5, 0, 9], { elementi: [{ lin: [[0, 0], [4.5, 9]], b: 1, debljina: 3 }] }));
-  uzPitanje('za $x = 1,5$', ravan([0, 2.5, 0, 5], { elementi: [{ lin: [[0, 0], [2.25, 4.5]], b: 1, debljina: 3 }] }));
-  uzPitanje('Ako je $y = 3x$ i', ravan([-3, 1, -7, 1], { elementi: [{ lin: [[-2.4, -7.2], [0.5, 1.5]], b: 1, debljina: 3 }] }));
-  uzPitanje('Ronilac kreće sa površine', ravan([0, 5, -15, 0], { podela: [1, 3], elementi: [{ lin: [[0, 0], [5, -15]], b: 1, debljina: 3 }] }));
+  uzPitanje('za $x = 4$', ravan([0, 5, 0, 9], { brojevi: 0, elementi: [{ lin: [[0, 0], [4.5, 9]], b: 1, debljina: 3 }] }));
+  uzPitanje('za $x = 1,5$', ravan([0, 2.5, 0, 5], { brojevi: 0, elementi: [{ lin: [[0, 0], [2.25, 4.5]], b: 1, debljina: 3 }] }));
+  uzPitanje('Ako je $y = 3x$ i', ravan([-3, 1, -7, 1], { brojevi: 0, elementi: [{ lin: [[-2.4, -7.2], [0.5, 1.5]], b: 1, debljina: 3 }] }));
+  uzPitanje('Ronilac kreće sa površine', ravan([0, 5, -15, 0], { brojevi: 0, podela: [1, 3], elementi: [{ lin: [[0, 0], [5, -15]], b: 1, debljina: 3 }] }));
   // 9. produžena proporcija: trake podeljene u razmeri
   uzPitanje('Ako je $a : b : c = 1 : 2 : 3$ i $b = 10$', trakaDelova([1, 2, 3], { natpisi: ['a', 'b', 'c'], iznad: 'b = 10', velicina: 340 }));
   uzPitanje('Ako je $a : b = 3 : 4$ i $a = 9$', trakaDelova([3, 4], { natpisi: ['a = 9', 'b'], velicina: 340 }));

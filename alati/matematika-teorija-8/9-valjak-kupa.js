@@ -385,7 +385,7 @@ module.exports = ({ L, Q, U, S, G, proveri, telo, A, valjak, kupa, elipsa3, mrez
 
   Q(2, 'Koliko litara stane u valjkastu posudu poluprečnika 10 cm i visine 20 cm, ako je $π ≈ 3$?',
     ['6 l', '60 l', '0,6 l', '600 l'],
-    'Zapremina je $π · 10² · 20 = 6000$ cm³, a to je 6 litara. Podsećanje: 1 l = 1 dm³ = 1000 cm³.', 'litar',
+    'Zapremina je $π · 10² · 20 = 6000$ cm³, a to je $6$ litara. Podsećanje: $1 l = 1 dm³ = 1000 cm³$.', 'litar',
     { mediji: valjak(10, 20, [{ d: 'OB', b: 1, debljina: 3, o: 'r = 10 cm' }], { imena: true, bezImena: ['O', 'O₁', 'A', 'A₁'] }) });
 
   Q(3, 'Valjak ima visinu jednaku prečniku osnove. Kolika mu je zapremina, ako je poluprečnik $r$?',

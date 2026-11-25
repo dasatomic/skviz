@@ -380,7 +380,7 @@ module.exports = ({ L, Q, U, S, G, proveri, r, naKrugu, luk, pica, pravilni }) =
       ], opts({ bezImena: [...z.ime, 'O'], velicina: 240 })); })(),
     });
   Q(3, 'Tačka $A(1, \\sqrt{3})$ rotira se oko $O$ za 60°. Koje su koordinate nove tačke?',
-    ['(−1, √3)', '(−√3, 1)', '(1, −√3)', '(0, 2)'],
+    ['(−1, √3)', '($−√3$, 1)', '(1, −√3)', '(0, 2)'],
     'Tačka $(1, \\sqrt{3})$ je na udaljenosti 2 od $O$, a rotacija ne menja udaljenost od centra. Nova tačka je na istoj kružnici, za 60° dalje.',
     'udaljenost', {
       mediji: mreza({ A: naKrugu(Z0, 2, 60) }, [{ d: 'OA', b: 4 }, { tacka: 'A', b: 1 }]),

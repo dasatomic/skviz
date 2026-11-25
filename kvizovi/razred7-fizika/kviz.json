@@ -631,12 +631,12 @@
     {
       "lekcija": 2,
       "tezina": 1,
-      "pitanje": "Šta je jedinica za silu?",
+      "pitanje": "Koja je jedinica za silu?",
       "odgovori": [
-        "Njutn (N), jedinica za silu",
-        "Kilogram (kg), jedinica za masu",
-        "Džul (J), jedinica za rad i energiju",
-        "Vat (W), jedinica za snagu"
+        "Njutn (N)",
+        "Kilogram (kg)",
+        "Džul (J)",
+        "Vat (W)"
       ],
       "zanimljivost": "Isak Njutn je rođen 1643, iste godine kada je Toričeli izveo ogled sa živom.",
       "rec": "njutn"
@@ -1168,7 +1168,8 @@
           }
         ],
         "natpisi": 99,
-        "vektor": true
+        "vektor": true,
+        "sat": false
       }
     },
     {
@@ -1714,8 +1715,8 @@
             "o": "72 km/h"
           }
         ],
-        "natpisi": 99,
-        "sat": true
+        "sat": true,
+        "lenjir": false
       }
     },
     {
@@ -7455,10 +7456,10 @@
       "tezina": 3,
       "pitanje": "Koliko je apsolutna nula u stepenima Celzijusa?",
       "odgovori": [
-        "Oko –273 °C, apsolutna nula",
-        "0 °C, kao led na jezeru zimi",
-        "–100 °C, kao u hladnom zamrzivaču",
-        "–1 000 °C, kao u vrućoj peći"
+        "Oko −273 °C",
+        "Tačno 0 °C",
+        "Oko −100 °C",
+        "Oko −460 °C"
       ],
       "zanimljivost": "Na apsolutnoj nuli bi toplotno kretanje čestica bilo najmanje moguće – niža temperatura ne postoji.",
       "rec": "nula",

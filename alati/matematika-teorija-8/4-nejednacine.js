@@ -87,7 +87,7 @@ module.exports = ({ L, Q, U, S, G, proveri }) => {
     { mediji: interval(-2, 6, { a: 3, levo: true }) });
   Q(2, 'Koji je najmanji ceo broj u skupu rešenja prikazanom na crtežu?',
     ['$−2$', '$−3$', '$−1$', '$0$'],
-    'Krajevi ovog intervala nisu celi brojevi, pa se gleda ceo broj koji je tačno u intervalu. Najmanji je prvi ceo broj desno od levog kraja, a levi kraj −2,5 nije ceo broj.', 'najmanji',
+    'Krajevi ovog intervala nisu celi brojevi, pa se gleda ceo broj koji je tačno u intervalu. Najmanji je prvi ceo broj desno od levog kraja, a levi kraj $−2,5$ nije ceo broj.', 'najmanji',
     { mediji: interval(-4, 3, { a: -2.5, b: 1, ukljA: true, ukljB: true }) });
   Q(2, 'Crtež prikazuje dva uslova, jedan ispod drugog: dole zrak udesno od −1 (bez tačke na −1), a gore zrak ulevo od 4 (sa tačkom na 4). Koji je skup koji zadovoljava oba uslova?',
     ['$(−1, 4]$', '$(−1, 4)$', '$[−1, 4]$', '$(−∞, 4]$'],

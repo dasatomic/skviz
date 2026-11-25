@@ -118,7 +118,7 @@ module.exports = ({ L, Q, U, S, G, proveri, r }) => {
     'Dovoljno je proveriti jednu vrednost: za $x = 0$ je $y = −1$, što odgovara i prvoj i trećoj formuli, pa treba proveriti još jednu vrednost. Proveri i ostale vrednosti – tako se najbrže otklanjaju lažne formule.', 'tabela',
     { mediji: tabela([['x', '−1', '0', '1', '2'], ['y', '−3', '−1', '1', '3']]) });
 
-  Q(2, 'Tabela: $x$ = 1, 2, 3 i $f(x)$ = 5, 5, 8. Da li je to funkcija?',
+  Q(2, 'Tabela: $x = 1, 2, 3$ i $f(x) = 5, 5, 8$. Da li je to funkcija?',
     ['Da, dve različite vrednosti $x$ mogu imati istu vrednost $f(x)$', 'Ne, jer se vrednost 5 ponavlja', 'Ne, jer $f(3)$ nije jednako $f(1)$', 'Da, jer su sve vrednosti različite'],
     'Ponavljanje vrednosti $y$ nije problem; problem je samo kad jedno $x$ ima dve vrednosti. Zato je tabela funkcija, iako se broj 5 pojavljuje dva puta.', 'slika',
     { mediji: tabela([['x', '1', '2', '3'], ['f(x)', '5', '5', '8']]) });
@@ -209,7 +209,8 @@ module.exports = ({ L, Q, U, S, G, proveri, r }) => {
   Q(2, 'Funkcija $y = −x + n$ prolazi kroz tačku $(2, 1)$. Koliko je $n$?',
     ['3', '1', '−1', '2'],
     'Zamenimo $x = 2$ i $y = 1$: $1 = −2 + n$, pa je $n = 3$. Provera: za $x = 2$ je $y = −2 + 3 = 1$.', 'zamena',
-    { mediji: ravan(-2, 5, -3, 6, [pr(-1, 3, -2, 5, -3, 6, { b: 1 }), tk('M', { b: 1 })], { t: { M: [2, 1] }, bez: ['M'] }) });
+    { mediji: ravan(-2, 5, -3, 6, [pr(-1, 3, -2, 5, -3, 6, { b: 1 }), tk('M', { b: 1 })], { t: { M: [2, 1] }, bez: ['M'] , brojevi: 0 }),
+      medijiOdgovora: ravan(-2, 5, -3, 6, [pr(-1, 3, -2, 5, -3, 6, { b: 1 }), tk('M', { b: 1 })], { t: { M: [2, 1] }, bez: ['M'] }) });
 
   Q(3, 'Prava $y = kx + n$ prolazi kroz tačke $(1, 4)$ i $(3, 8)$. Koliko je $k$?',
     ['2', '4', '−2', '$\\frac{1}{2}$'],
@@ -270,10 +271,11 @@ module.exports = ({ L, Q, U, S, G, proveri, r }) => {
     'Voda se troši, pa je koeficijent negativan: $−25$. Početna količina je slobodan član $1000$. Posle 40 minuta bazen je prazan.', 'bazen',
     { mediji: ravan(0, 40, 0, 1000, [dz([0, 1000], [40, 0], { b: 1 })], { ose: ['~min', '~l'], podela: [5, 200] }) });
 
-  Q(2, 'Voda se hladi 2 °C svakog minuta, a počinje sa 80 °C. Kolika je temperatura posle 10 minuta?',
-    ['60 °C', '70 °C', '80 °C', '20 °C'],
-    'Posle 10 minuta voda je izgubila $2 · 10 = 20$ stepeni, pa je $80 − 20 = 60$ °C. Ovakav pad temperature je linearan samo dok se voda ne približi temperaturi okoline.', 'hlađenje',
-    { mediji: ravan(0, 30, 0, 90, [dz([0, 80], [30, 20], { b: 1 })], { ose: ['~min', '~°C'], podela: [5, 20] }) });
+  Q(2, 'Voda se hladi $2 °C$ svakog minuta, a počinje sa $80 °C$. Kolika je temperatura posle $10$ minuta?',
+    ['$60 °C$', '$70 °C$', '$80 °C$', '$20 °C$'],
+    'Posle $10$ minuta voda je izgubila $2 · 10 = 20$ stepeni, pa je $80 − 20 = 60 °C$. Ovakav pad temperature je linearan samo dok se voda ne približi temperaturi okoline.', 'hlađenje',
+    { mediji: ravan(0, 30, 0, 90, [dz([0, 80], [30, 20], { b: 1 })], { ose: ['~min', '~°C'], podela: [5, 20], brojevi: 0 }),
+      medijiOdgovora: ravan(0, 30, 0, 90, [dz([0, 80], [30, 20], { b: 1 })], { ose: ['~min', '~°C'], podela: [5, 20] }) });
 
   Q(2, 'Krojač naplaćuje 500 dinara po košulji i 1000 dinara fiksnog troška. Koliko košta izrada 8 košulja?',
     ['5 000 din', '4 000 din', '4 500 din', '9 000 din'],
@@ -298,7 +300,8 @@ module.exports = ({ L, Q, U, S, G, proveri, r }) => {
   Q(3, 'Telefonska pretplata je 300 dinara, a svaki minut razgovora košta 10 dinara. Posle koliko minuta račun iznosi 500 dinara?',
     ['20 min', '30 min', '50 min', '200 min'],
     'Račun je $y = 300 + 10t$. Iz $500 = 300 + 10t$ dobijamo $10t = 200$, pa je $t = 20$ minuta. Broj 200 je samo razlika računa, a ne vreme.', 'pretplata',
-    { mediji: ravan(0, 40, 0, 800, [dz([0, 300], [40, 700], { b: 1 })], { ose: ['~min', '~din'], podela: [10, 200] }) });
+    { mediji: ravan(0, 40, 0, 800, [dz([0, 300], [40, 700], { b: 1 })], { ose: ['~min', '~din'], podela: [10, 200] , brojevi: 0 }),
+      medijiOdgovora: ravan(0, 40, 0, 800, [dz([0, 300], [40, 700], { b: 1 })], { ose: ['~min', '~din'], podela: [10, 200] }) });
 
   Q(2, 'Knjiga ima 300 stranica, a čita se po 20 stranica dnevno. Koja funkcija daje broj preostalih stranica $s$ posle $x$ dana?',
     ['$s = 300 − 20x$', '$s = 20 − 300x$', '$s = 300 + 20x$', '$s = 300x − 20$'],
@@ -318,12 +321,14 @@ module.exports = ({ L, Q, U, S, G, proveri, r }) => {
   Q(3, 'Biciklista je na početku 2 km od kuće, a udaljava se po 6 km na sat. Posle koliko sati je 20 km od kuće?',
     ['3 h', '2 h', '18 h', '3,5 h'],
     'Udaljenost je $d = 2 + 6t$. Iz $20 = 2 + 6t$ je $6t = 18$, pa je $t = 3$ sata. Ako zaboravimo početnih 2 km, dobijamo $20 : 6 ≈ 3{,}3$ h.', 'udaljenost',
-    { mediji: ravan(0, 6, 0, 40, [dz([0, 2], [6, 38], { b: 1 })], { ose: ['~h', '~km'], podela: [1, 10] }) });
+    { mediji: ravan(0, 6, 0, 40, [dz([0, 2], [6, 38], { b: 1 })], { ose: ['~h', '~km'], podela: [1, 10] , brojevi: 0 }),
+      medijiOdgovora: ravan(0, 6, 0, 40, [dz([0, 2], [6, 38], { b: 1 })], { ose: ['~h', '~km'], podela: [1, 10] }) });
 
   Q(3, 'Voće se kupuje po 120 dinara za kilogram, a na celu porudžbinu je popust 80 dinara. Koliko košta $3$ kg?',
     ['280 din', '360 din', '440 din', '200 din'],
     'Funkcija je $c = 120x − 80$. Za $x = 3$ je $c = 360 − 80 = 280$ dinara. Popust se oduzima jednom, a ne po kilogramu.', 'popust',
-    { mediji: ravan(0, 6, -100, 700, [dz([0, -80], [6, 640], { b: 1 })], { ose: ['~kg', '~din'], podela: [1, 200] }) });
+    { mediji: ravan(0, 6, -100, 700, [dz([0, -80], [6, 640], { b: 1 })], { ose: ['~kg', '~din'], podela: [1, 200] , brojevi: 0 }),
+      medijiOdgovora: ravan(0, 6, -100, 700, [dz([0, -80], [6, 640], { b: 1 })], { ose: ['~kg', '~din'], podela: [1, 200] }) });
 
   U(2, 'Koja od ovih veličina NIJE primer linearne funkcije?',
     ['površina kruga $P = r²π$ u zavisnosti od poluprečnika', 'put $s = 5t$ pri stalnoj brzini', 'cena $c = 200 + 30x$', 'ostatak novca $n = 1000 − 40t$'],
@@ -778,17 +783,20 @@ module.exports = ({ L, Q, U, S, G, proveri, r }) => {
   Q(3, 'Količina soka u rezervoaru: $y = 100 − 3x$ litara posle $x$ dana. Posle koliko dana ostane 28 litara?',
     ['24', '28', '12', '33'],
     'Iz $28 = 100 − 3x$ je $3x = 72$, pa je $x = 24$. Na grafiku se vidi da je to tačka gde linija prolazi kroz visinu 28.', 'rezervoar',
-    { mediji: ravan(0, 36, 0, 100, [dz([0, 100], [33, 1], { b: 1 })], { ose: ['~dana', '~l'], podela: [6, 20] }) });
+    { mediji: ravan(0, 36, 0, 100, [dz([0, 100], [33, 1], { b: 1 })], { ose: ['~dana', '~l'], podela: [6, 20] , brojevi: 0 }),
+      medijiOdgovora: ravan(0, 36, 0, 100, [dz([0, 100], [33, 1], { b: 1 })], { ose: ['~dana', '~l'], podela: [6, 20] }) });
 
   Q(3, 'Prihod od berača malina je $P = 1000x − 3000$ evra. Koliko berača treba da prihod bude 7000 evra?',
     ['10', '7', '4', '13'],
     'Iz $7000 = 1000x − 3000$ dobijamo $1000x = 10000$, pa je $x = 10$. Na grafiku se to vidi na apscisi 10.', 'prihod',
-    { mediji: ravan(0, 12, -4, 10, [dz([0, -3], [12, 9], { b: 1 })], { ose: ['~berača', '~hilj.'], podela: [1, 2] }) });
+    { mediji: ravan(0, 12, -4, 10, [dz([0, -3], [12, 9], { b: 1 })], { ose: ['~berača', '~hilj.'], podela: [1, 2] , brojevi: 0 }),
+      medijiOdgovora: ravan(0, 12, -4, 10, [dz([0, -3], [12, 9], { b: 1 })], { ose: ['~berača', '~hilj.'], podela: [1, 2] }) });
 
   Q(2, 'Cena vožnje taksijem je $c = 60x + 150$ dinara. Koliko košta vožnja 4 km?',
     ['390 din', '240 din', '150 din', '450 din'],
     'Za $x = 4$ je $c = 240 + 150 = 390$ dinara. Vrednost 240 bi bila samo cena po kilometrima, bez starta.', 'taksi',
-    { mediji: ravan(0, 10, 0, 800, [dz([0, 150], [10, 750], { b: 1 })], { ose: ['~km', '~din'], podela: [1, 200] }) });
+    { mediji: ravan(0, 10, 0, 800, [dz([0, 150], [10, 750], { b: 1 })], { ose: ['~km', '~din'], podela: [1, 200] , brojevi: 0 }),
+      medijiOdgovora: ravan(0, 10, 0, 800, [dz([0, 150], [10, 750], { b: 1 })], { ose: ['~km', '~din'], podela: [1, 200] }) });
 
   Q(2, 'Sveća na grafiku: koliko milimetara ostane posle 60 minuta?',
     ['180 mm', '240 mm', '120 mm', '60 mm'],

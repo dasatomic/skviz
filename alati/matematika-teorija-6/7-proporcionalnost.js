@@ -347,7 +347,8 @@ module.exports = (A) => {
   Q(2, 'Na karti razmere $1 : 200 000$ dva grada su udaljena $3$ cm. Koliko su udaljeni u prirodi?',
     ['$6$ km', '$60$ km', '$600$ m', '$3$ km'],
     'Razmera $1 : 200 000$ znači da je $1$ cm na karti $200 000$ cm, tj. $2$ km u prirodi. Na karti se crta razmernik da bi se rastojanja čitala bez računanja.', 'karta',
-    { mediji: G(O, [...razmernik(3, 'km', { u: 1, korak: 2 }), { tx: '●', at: [0.5, 2.3], b: 1, vel: 18 }, { tx: '●', at: [3.5, 2.3], b: 1, vel: 18 }, { lin: [[0.5, 2.3], [3.5, 2.3]], isp: 1, b: 1 }, { tx: '3 cm', at: [2, 2.75] }], { ...bez, velicina: 240 }) });
+    { mediji: G(O, [{ tx: '●', at: [0.5, 2.3], b: 1, vel: 18 }, { tx: '●', at: [3.5, 2.3], b: 1, vel: 18 }, { lin: [[0.5, 2.3], [3.5, 2.3]], isp: 1, b: 1 }, { tx: '3 cm', at: [2, 2.75] }], { ...bez, velicina: 240 }),
+      medijiOdgovora: G(O, [...razmernik(3, 'km', { u: 1, korak: 2 }), { tx: '●', at: [0.5, 2.3], b: 1, vel: 18 }, { tx: '●', at: [3.5, 2.3], b: 1, vel: 18 }, { lin: [[0.5, 2.3], [3.5, 2.3]], isp: 1, b: 1 }, { tx: '3 cm', at: [2, 2.75] }], { ...bez, velicina: 240 }) });
   proveri(200 * 100000 / 1000000 === 20, '200 km na 1 : 1 000 000');
   Q(3, 'Karta je u razmeri $1 : 1 000 000$. Koliko je na karti dugačko rastojanje od $200$ km?',
     ['$20$ cm', '$2$ cm', '$200$ cm', '$2$ m'],
