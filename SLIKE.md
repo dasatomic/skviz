@@ -422,6 +422,201 @@ Ako smatrate da neka slika ne bi trebalo da bude ovde, otvorite issue i biće uk
 | biologija | zelembac.jpg | Uoaei1 | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/European_green_lizard) |
 | biologija | ulijesura.jpg | Gabriel Barathieu | CC BY-SA 2.0 | [izvor](https://en.wikipedia.org/wiki/Sperm_whale) |
 | biologija | covecja-ribica-foto.jpg | Arne Hodalič | CC BY-SA 3.0 | [izvor](https://commons.wikimedia.org/wiki/File%3AP%20anguinus1.jpg) |
+| eksperimenti-filozofija | hesiod.jpg | Yair Haklai | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Hesiod) |
+| eksperimenti-filozofija | anaksimen.jpg | Girolamo Olgiati | Public domain | [izvor](https://en.wikipedia.org/wiki/Anaximenes_of_Miletus) |
+| eksperimenti-filozofija | pitagorina-teorema.jpg | en:User:Wapcaplet | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Pythagorean_theorem) |
+| eksperimenti-filozofija | herakli.jpg | RoyFokker | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Heraclitus) |
+| eksperimenti-filozofija | empedokle.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Empedocles) |
+| eksperimenti-filozofija | cetiri-elementa.jpg | Gottfried Wilhelm von Leibniz | Public domain | [izvor](https://en.wikipedia.org/wiki/Classical_element) |
+| eksperimenti-filozofija | tukidid.jpg | user:shakko | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Thucydides) |
+| eksperimenti-filozofija | anaksagora.jpg | Eduard Lebiedzki, after a design by Carl Rahl | Public domain | [izvor](https://en.wikipedia.org/wiki/Anaxagoras) |
+| eksperimenti-filozofija | protagora.jpg | Jusepe de Ribera | Public domain | [izvor](https://en.wikipedia.org/wiki/Protagoras) |
+| eksperimenti-filozofija | ksantipa.jpg | Published by Guillaume Rouillé (1518-1589) | Public domain | [izvor](https://en.wikipedia.org/wiki/Xanthippe) |
+| eksperimenti-filozofija | leonida.jpg | de:Benutzer:Ticinese | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Leonidas_I) |
+| eksperimenti-filozofija | fedon.jpg | Thompson, Edward Maunde,(1840-1929). | Public domain | [izvor](https://en.wikipedia.org/wiki/Phaedo) |
+| eksperimenti-filozofija | nikomahova-etika.jpg | — | Public domain | [izvor](https://en.wikipedia.org/wiki/Nicomachean_Ethics) |
+| eksperimenti-filozofija | logika-dijagram.jpg | WatchduckYou can name the author as "T. Piesk", "Tilman Piesk" or "Watchduck". | Public domain | [izvor](https://en.wikipedia.org/wiki/Square_of_opposition) |
+| eksperimenti-filozofija | nebeske-sfere.jpg | Fastfission | Public domain | [izvor](https://en.wikipedia.org/wiki/Celestial_spheres) |
+| eksperimenti-filozofija | fizika-aristotel.jpg | — | Public domain | [izvor](https://en.wikipedia.org/wiki/Physics_(Aristotle)) |
+| eksperimenti-filozofija | almagest.jpg | Ptolemy | Public domain | [izvor](https://en.wikipedia.org/wiki/Almagest) |
+| eksperimenti-filozofija | plotin.jpg | AnonymousUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Plotinus) |
+| eksperimenti-filozofija | jeronim.jpg | Matthias Stom | Public domain | [izvor](https://en.wikipedia.org/wiki/Jerome) |
+| eksperimenti-filozofija | ambrozije.jpg | — | Public domain | [izvor](https://en.wikipedia.org/wiki/Ambrose) |
+| eksperimenti-filozofija | boetije.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Boethius) |
+| eksperimenti-filozofija | bozja-drzava.jpg | Augustine | Public domain | [izvor](https://en.wikipedia.org/wiki/The_City_of_God) |
+| eksperimenti-filozofija | benedikt.jpg | Hans Memling | Public domain | [izvor](https://en.wikipedia.org/wiki/Benedict_of_Nursia) |
+| eksperimenti-filozofija | abelar-eloiza.jpg | Antoni Oleszczyński | Public domain | [izvor](https://en.wikipedia.org/wiki/Peter_Abelard) |
+| eksperimenti-filozofija | franja-asiz.jpg | Parzi | Public domain | [izvor](https://en.wikipedia.org/wiki/Francis_of_Assisi) |
+| eksperimenti-filozofija | fridrih-ii.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Frederick_II%2C_Holy_Roman_Emperor) |
+| eksperimenti-filozofija | okam.jpg | self-created (Moscarlop) | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/William_of_Ockham) |
+| eksperimenti-filozofija | suma-teologije.jpg | — | Public domain | [izvor](https://en.wikipedia.org/wiki/Summa_Theologica) |
+| eksperimenti-filozofija | dante.jpg | Wolfgang Sauber | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Dante_Alighieri) |
+| eksperimenti-filozofija | roger-bekon.jpg | — | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Roger_Bacon) |
+| eksperimenti-filozofija | jan-hus.jpg | Christoph Murer 1587 | Public domain | [izvor](https://en.wikipedia.org/wiki/Jan_Hus) |
+| eksperimenti-filozofija | medici.jpg | Workshop of Bronzino | Public domain | [izvor](https://en.wikipedia.org/wiki/Lorenzo_de'_Medici) |
+| eksperimenti-filozofija | utopija.jpg | Original uploader was Marcok at it.wikipedia | Public domain | [izvor](https://en.wikipedia.org/wiki/Utopia_(book)) |
+| eksperimenti-filozofija | lojola.jpg | AnonymousUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Ignatius_of_Loyola) |
+| eksperimenti-filozofija | galilej.jpg | Justus Sustermans | Public domain | [izvor](https://en.wikipedia.org/wiki/Galileo_Galilei) |
+| eksperimenti-filozofija | rasprava-o-metodi.jpg | Ian Maire | Public domain | [izvor](https://en.wikipedia.org/wiki/Discourse_on_the_Method) |
+| eksperimenti-filozofija | ogled-o-ljudskom-razumu.jpg | The original uploader was Olaf Simons at German Wikipedia. | Public domain | [izvor](https://en.wikipedia.org/wiki/An_Essay_Concerning_Human_Understanding) |
+| eksperimenti-filozofija | dve-rasprave.jpg | — | Public domain | [izvor](https://en.wikipedia.org/wiki/Two_Treatises_of_Government) |
+| eksperimenti-filozofija | monteskje.jpg | After Jacques-Antoine Dassier | Public domain | [izvor](https://en.wikipedia.org/wiki/Montesquieu) |
+| eksperimenti-filozofija | fenomenologija-duha.jpg | The original uploader was Nihil Kainer at German Wikipedia. | Public domain | [izvor](https://en.wikipedia.org/wiki/The_Phenomenology_of_Spirit) |
+| eksperimenti-filozofija | bajron.jpg | Thomas Phillips | Public domain | [izvor](https://en.wikipedia.org/wiki/Lord_Byron) |
+| eksperimenti-filozofija | cajld-harold.jpg | w:Lord Byron (Life time: 1788-1824) | Public domain | [izvor](https://en.wikipedia.org/wiki/Childe_Harold's_Pilgrimage) |
+| eksperimenti-filozofija | zaratustra.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Thus_Spoke_Zarathustra) |
+| eksperimenti-filozofija | frege.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Gottlob_Frege) |
+| eksperimenti-filozofija | rasel.jpg | Bassano Ltd | Public domain | [izvor](https://en.wikipedia.org/wiki/Bertrand_Russell) |
+| eksperimenti-filozofija | principia.jpg | Nick Dillinger | Public domain | [izvor](https://en.wikipedia.org/wiki/Principia_Mathematica) |
+| eksperimenti-filozofija | minojska-freska.jpg | Gleb Simonov | Public domain | [izvor](https://en.wikipedia.org/wiki/Bull-Leaping_Fresco) |
+| eksperimenti-filozofija | dionis.jpg | Marie-Lan Nguyen | CC BY 2.5 | [izvor](https://en.wikipedia.org/wiki/Dionysus) |
+| eksperimenti-filozofija | homer.jpg | Photograph by Mike Peel (www.mikepeel.net). | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Homer) |
+| eksperimenti-filozofija | orfej.jpg | Giovanni Dall'Orto | Public domain | [izvor](https://en.wikipedia.org/wiki/Orpheus) |
+| eksperimenti-filozofija | eleusina.jpg | No machine-readable author provided. Marsyas assumed (based on copyright claims) | Public domain | [izvor](https://en.wikipedia.org/wiki/Eleusinian_Mysteries) |
+| eksperimenti-filozofija | tales.jpg | Sailko | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Thales_of_Miletus) |
+| eksperimenti-filozofija | anaksimandar.jpg | Attributed to Pietro Bellotti | Public domain | [izvor](https://en.wikipedia.org/wiki/Anaximander) |
+| eksperimenti-filozofija | milet.jpg | Bernard Gagnon | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Miletus) |
+| eksperimenti-filozofija | pitagora.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Pythagoras) |
+| eksperimenti-filozofija | skola-atinska.jpg | Raphael | Public domain | [izvor](https://en.wikipedia.org/wiki/The_School_of_Athens) |
+| eksperimenti-filozofija | samos.jpg | Pe-sa | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Samos) |
+| eksperimenti-filozofija | efes.jpg | Benh LIEU SONG | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Ephesus) |
+| eksperimenti-filozofija | parmenid.jpg | Sergio Spolti | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Parmenides) |
+| eksperimenti-filozofija | zenon.jpg | Jan de Bisschop | CC0 | [izvor](https://en.wikipedia.org/wiki/Zeno_of_Elea) |
+| eksperimenti-filozofija | eleja.jpg | AlMare | CC BY-SA 2.5 | [izvor](https://en.wikipedia.org/wiki/Velia) |
+| eksperimenti-filozofija | etna.jpg | BenAveling | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Mount_Etna) |
+| eksperimenti-filozofija | akragas.jpg | Wolfgang Pehlemann | CC BY-SA 3.0 de | [izvor](https://en.wikipedia.org/wiki/Valle_dei_Templi) |
+| eksperimenti-filozofija | partenon.jpg | Steve Swayne | CC BY 2.0 | [izvor](https://en.wikipedia.org/wiki/Parthenon) |
+| eksperimenti-filozofija | perikle.jpg | Copy of Kresilas | Public domain | [izvor](https://en.wikipedia.org/wiki/Pericles) |
+| eksperimenti-filozofija | aspazija.jpg | Unknown artistUnknown artist | Public domain | [izvor](https://en.wikipedia.org/wiki/Aspasia) |
+| eksperimenti-filozofija | herodot.jpg | — | CC0 | [izvor](https://en.wikipedia.org/wiki/Herodotus) |
+| eksperimenti-filozofija | fidija.jpg | Yair-haklai | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Phidias) |
+| eksperimenti-filozofija | aristofan.jpg | Alexander Mayatsky | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Aristophanes) |
+| eksperimenti-filozofija | eshil.jpg | Zde | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Aeschylus) |
+| eksperimenti-filozofija | demokrit.jpg | user:shakko | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Democritus) |
+| eksperimenti-filozofija | leukip.jpg | Didier Descouens | Public domain | [izvor](https://en.wikipedia.org/wiki/Leucippus) |
+| eksperimenti-filozofija | sokrat.jpg | Copy of Lysippos (?) | Public domain | [izvor](https://en.wikipedia.org/wiki/Socrates) |
+| eksperimenti-filozofija | smrt-sokrata.jpg | Jacques-Louis David | Public domain | [izvor](https://en.wikipedia.org/wiki/The_Death_of_Socrates) |
+| eksperimenti-filozofija | sparta.jpg | T8612 | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Sparta) |
+| eksperimenti-filozofija | termopili.jpg | Jacques-Louis David | Public domain | [izvor](https://en.wikipedia.org/wiki/Battle_of_Thermopylae) |
+| eksperimenti-filozofija | platon.jpg | Marie-Lan Nguyen | Public domain | [izvor](https://en.wikipedia.org/wiki/Plato) |
+| eksperimenti-filozofija | pecina.jpg | Jan Saenredam / After Cornelis van Haarlem | Public domain | [izvor](https://en.wikipedia.org/wiki/Allegory_of_the_cave) |
+| eksperimenti-filozofija | drzava.jpg | Plato | Public domain | [izvor](https://en.wikipedia.org/wiki/Republic_(Plato)) |
+| eksperimenti-filozofija | timaj.jpg | Plato | Public domain | [izvor](https://en.wikipedia.org/wiki/Timaeus_(dialogue)) |
+| eksperimenti-filozofija | demijurg.jpg | Richard Teschner | Public domain | [izvor](https://en.wikipedia.org/wiki/Demiurge) |
+| eksperimenti-filozofija | atlantida.jpg | Athanasius Kircher | Public domain | [izvor](https://en.wikipedia.org/wiki/Atlantis) |
+| eksperimenti-filozofija | aristotel.jpg | After Lysippos | Public domain | [izvor](https://en.wikipedia.org/wiki/Aristotle) |
+| eksperimenti-filozofija | likej.jpg | Raphael | Public domain | [izvor](https://en.wikipedia.org/wiki/Lyceum_(classical)) |
+| eksperimenti-filozofija | agora.jpg | Chabe01 | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Ancient_Agora_of_Athens) |
+| eksperimenti-filozofija | organon.jpg | Francesco Bini | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Organon) |
+| eksperimenti-filozofija | arhimed.jpg | Domenico Fetti | Public domain | [izvor](https://en.wikipedia.org/wiki/Archimedes) |
+| eksperimenti-filozofija | euklid.jpg | Jusepe de Ribera (Spanish / Italian, 1591 - 1652) (1591 - 1652) – artist (Spanis | Public domain | [izvor](https://en.wikipedia.org/wiki/Euclid) |
+| eksperimenti-filozofija | eratosten.jpg | — | Public domain | [izvor](https://en.wikipedia.org/wiki/Eratosthenes) |
+| eksperimenti-filozofija | antikiterski.jpg | Logg Tandy | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Antikythera_mechanism) |
+| eksperimenti-filozofija | ptolemej.jpg | Justus van Gent / Pedro Berruguete | Public domain | [izvor](https://en.wikipedia.org/wiki/Ptolemy) |
+| eksperimenti-filozofija | aleksandar-mozaik.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Alexander_Mosaic) |
+| eksperimenti-filozofija | faros.jpg | Prof. Hermann Thiersch (1874–1939) | Public domain | [izvor](https://en.wikipedia.org/wiki/Lighthouse_of_Alexandria) |
+| eksperimenti-filozofija | diogen.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Diogenes) |
+| eksperimenti-filozofija | aleksandrijska-biblioteka.jpg | O. Von Corven | Public domain | [izvor](https://en.wikipedia.org/wiki/Library_of_Alexandria) |
+| eksperimenti-filozofija | epikur.jpg | Unknown artistUnknown artist | Public domain | [izvor](https://en.wikipedia.org/wiki/Epicurus) |
+| eksperimenti-filozofija | zenon-kition.jpg | Paolo Monti | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Zeno_of_Citium) |
+| eksperimenti-filozofija | lukrecije.jpg | Designed by “T. C.” (possibly Thomas Creech, died 1700); drawn and engraved by M | Public domain | [izvor](https://en.wikipedia.org/wiki/Lucretius) |
+| eksperimenti-filozofija | marko-aurelije.jpg | Daniel Martin | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Marcus_Aurelius) |
+| eksperimenti-filozofija | seneka.jpg | Calidius | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Seneca_the_Younger) |
+| eksperimenti-filozofija | epiktet.jpg | William Sonmans / Michael Burghers | Public domain | [izvor](https://en.wikipedia.org/wiki/Epictetus) |
+| eksperimenti-filozofija | avgust.jpg | Justin Benttinen | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Augustus) |
+| eksperimenti-filozofija | ciceron.jpg | José Luiz | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Cicero) |
+| eksperimenti-filozofija | forum-rim.jpg | This Photo was taken by Wolfgang Moroder. Feel free to use my photos, but please | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Roman_Forum) |
+| eksperimenti-filozofija | jerusalim-hram.jpg | Ariely | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Second_Temple) |
+| eksperimenti-filozofija | titov-slavoluk.jpg | Jebulon | CC0 | [izvor](https://en.wikipedia.org/wiki/Arch_of_Titus) |
+| eksperimenti-filozofija | nikejski-sabor.jpg | C messier | Public domain | [izvor](https://en.wikipedia.org/wiki/First_Council_of_Nicaea) |
+| eksperimenti-filozofija | konstantin.jpg | Merulana | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Constantine_the_Great) |
+| eksperimenti-filozofija | dioklecijan.jpg | Dosseman | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Diocletian) |
+| eksperimenti-filozofija | pavle.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Paul_the_Apostle) |
+| eksperimenti-filozofija | avgustin.jpg | Philippe de Champaigne | Public domain | [izvor](https://en.wikipedia.org/wiki/Augustine_of_Hippo) |
+| eksperimenti-filozofija | sveta-sofija.jpg | Adli Wahid | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Hagia_Sophia) |
+| eksperimenti-filozofija | monte-kasino.jpg | Monticiano | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Monte_Cassino) |
+| eksperimenti-filozofija | grgur-veliki.jpg | British Library | CC0 | [izvor](https://en.wikipedia.org/wiki/Pope_Gregory_I) |
+| eksperimenti-filozofija | vikinzi.jpg | Abbey of Saint-Aubin | Public domain | [izvor](https://en.wikipedia.org/wiki/Vikings) |
+| eksperimenti-filozofija | karlo-veliki.jpg | Charlemagne. Autorité émettrice de monnaie indéterminé. Atelier monétaire. Émett | Public domain | [izvor](https://en.wikipedia.org/wiki/Charlemagne) |
+| eksperimenti-filozofija | kelska-knjiga.jpg | Unattributed | Public domain | [izvor](https://en.wikipedia.org/wiki/Book_of_Kells) |
+| eksperimenti-filozofija | kanosa.jpg | Eduard Schwoiser (1826 — 1902) | Public domain | [izvor](https://en.wikipedia.org/wiki/Road_to_Canossa) |
+| eksperimenti-filozofija | avicena.jpg | National Library of Medicine | No restrictions | [izvor](https://en.wikipedia.org/wiki/Avicenna) |
+| eksperimenti-filozofija | klini.jpg | Benjamin Smith | CC BY-SA 4.0 | [izvor](https://en.wikipedia.org/wiki/Cluny_Abbey) |
+| eksperimenti-filozofija | alhambra.jpg | Jebulon | CC0 | [izvor](https://en.wikipedia.org/wiki/Alhambra) |
+| eksperimenti-filozofija | averoes.jpg | Sailko | CC BY 3.0 | [izvor](https://en.wikipedia.org/wiki/Averroes) |
+| eksperimenti-filozofija | goticka-katedrala.jpg | Diliff | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Gothic_architecture) |
+| eksperimenti-filozofija | magna-karta.jpg | Original authors were the barons and King John of England. Uploaded by Earthsoun | Public domain | [izvor](https://en.wikipedia.org/wiki/Magna_Carta) |
+| eksperimenti-filozofija | toma-akvinski.jpg | Carlo Crivelli | Public domain | [izvor](https://en.wikipedia.org/wiki/Thomas_Aquinas) |
+| eksperimenti-filozofija | duns-skot.jpg | Justus van Gent / Pedro Berruguete | Public domain | [izvor](https://en.wikipedia.org/wiki/Duns_Scotus) |
+| eksperimenti-filozofija | avinjon.jpg | François de Dijon | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Palais_des_Papes) |
+| eksperimenti-filozofija | kolumbo.jpg | Sebastiano del Piombo | Public domain | [izvor](https://en.wikipedia.org/wiki/Christopher_Columbus) |
+| eksperimenti-filozofija | stamparija.jpg | International Printing Museum | CC0 | [izvor](https://en.wikipedia.org/wiki/Printing_press) |
+| eksperimenti-filozofija | firenca.jpg | Giorgio Galeotti | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Florence) |
+| eksperimenti-filozofija | mona-liza.jpg | Leonardo da Vinci | Public domain | [izvor](https://en.wikipedia.org/wiki/Mona_Lisa) |
+| eksperimenti-filozofija | savonarola.jpg | Fra Bartolomeo | Public domain | [izvor](https://en.wikipedia.org/wiki/Girolamo_Savonarola) |
+| eksperimenti-filozofija | piko.jpg | Cristofano dell'Altissimo | Public domain | [izvor](https://en.wikipedia.org/wiki/Giovanni_Pico_della_Mirandola) |
+| eksperimenti-filozofija | sikstinska-kapela.jpg | Antoine Taveneaux | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Sistine_Chapel_ceiling) |
+| eksperimenti-filozofija | makijaveli.jpg | Santi di Tito | Public domain | [izvor](https://en.wikipedia.org/wiki/Niccol%C3%B2_Machiavelli) |
+| eksperimenti-filozofija | vladalac.jpg | Niccolò Machiavelli | Public domain | [izvor](https://en.wikipedia.org/wiki/The_Prince) |
+| eksperimenti-filozofija | erazmo.jpg | Hans Holbein the Younger | Public domain | [izvor](https://en.wikipedia.org/wiki/Erasmus) |
+| eksperimenti-filozofija | cezar-bordzija.jpg | After Bartolomeo Veneto | Public domain | [izvor](https://en.wikipedia.org/wiki/Cesare_Borgia) |
+| eksperimenti-filozofija | tomas-mor.jpg | Hans Holbein the Younger | Public domain | [izvor](https://en.wikipedia.org/wiki/Thomas_More) |
+| eksperimenti-filozofija | luter.jpg | Lucas Cranach the Elder | Public domain | [izvor](https://en.wikipedia.org/wiki/Martin_Luther) |
+| eksperimenti-filozofija | kalvin.jpg | Anonymous (France)Unknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/John_Calvin) |
+| eksperimenti-filozofija | tridentski-sabor.jpg | Laurom | CC BY-SA 3.0 | [izvor](https://en.wikipedia.org/wiki/Council_of_Trent) |
+| eksperimenti-filozofija | kopernik.jpg | Unknown authorUnknown author | Public domain | [izvor](https://en.wikipedia.org/wiki/Nicolaus_Copernicus) |
+| eksperimenti-filozofija | njutn.jpg | Godfrey Kneller | Public domain | [izvor](https://en.wikipedia.org/wiki/Isaac_Newton) |
+| eksperimenti-filozofija | kepler.jpg | August Köhler [1] | Public domain | [izvor](https://en.wikipedia.org/wiki/Johannes_Kepler) |
+| eksperimenti-filozofija | bekon.jpg | Paul van Somer I / Formerly attributed to Frans Pourbus the Younger | Public domain | [izvor](https://en.wikipedia.org/wiki/Francis_Bacon) |
+| eksperimenti-filozofija | brun.jpg | — | CC BY 4.0 | [izvor](https://en.wikipedia.org/wiki/Giordano_Bruno) |
+| eksperimenti-filozofija | hobs.jpg | John Michael Wright | Public domain | [izvor](https://en.wikipedia.org/wiki/Thomas_Hobbes) |
+| eksperimenti-filozofija | novi-organon.jpg | Francis Bacon | Public domain | [izvor](https://en.wikipedia.org/wiki/Novum_Organum) |
+| eksperimenti-filozofija | levijatan.jpg | Abraham Bosse | Public domain | [izvor](https://en.wikipedia.org/wiki/Leviathan_(Hobbes_book)) |
+| eksperimenti-filozofija | dekart.jpg | After Frans Hals | Public domain | [izvor](https://en.wikipedia.org/wiki/Ren%C3%A9_Descartes) |
+| eksperimenti-filozofija | spinoza.jpg | anonymous | Public domain | [izvor](https://en.wikipedia.org/wiki/Baruch_Spinoza) |
+| eksperimenti-filozofija | lajbnic.jpg | Christoph Bernhard Francke | Public domain | [izvor](https://en.wikipedia.org/wiki/Gottfried_Wilhelm_Leibniz) |
+| eksperimenti-filozofija | etika.jpg | — | Public domain | [izvor](https://en.wikipedia.org/wiki/Spinoza's_Ethics) |
+| eksperimenti-filozofija | slavna-revolucija.jpg | Johan Herman Isings | Public domain | [izvor](https://en.wikipedia.org/wiki/Glorious_Revolution) |
+| eksperimenti-filozofija | lok.jpg | Godfrey Kneller | Public domain | [izvor](https://en.wikipedia.org/wiki/John_Locke) |
+| eksperimenti-filozofija | enciklopedija.jpg | Long List of Contributors to the Encyclopédie | Public domain | [izvor](https://en.wikipedia.org/wiki/Encyclop%C3%A9die) |
+| eksperimenti-filozofija | volter.jpg | Nicolas de Largillière | CC0 | [izvor](https://en.wikipedia.org/wiki/Voltaire) |
+| eksperimenti-filozofija | deklaracija.jpg | original: w:Second Continental Congress; reproduction: William Stone | Public domain | [izvor](https://en.wikipedia.org/wiki/United_States_Declaration_of_Independence) |
+| eksperimenti-filozofija | hjum.jpg | Allan Ramsay | Public domain | [izvor](https://en.wikipedia.org/wiki/David_Hume) |
+| eksperimenti-filozofija | berkli.jpg | John Smibert | Public domain | [izvor](https://en.wikipedia.org/wiki/George_Berkeley) |
+| eksperimenti-filozofija | lutalica-iznad-more.jpg | Caspar David Friedrich | Public domain | [izvor](https://en.wikipedia.org/wiki/Wanderer_Above_the_Sea_of_Fog) |
+| eksperimenti-filozofija | rasprava-o-ljudskoj-prirodi.jpg | David Hume | Public domain | [izvor](https://en.wikipedia.org/wiki/A_Treatise_of_Human_Nature) |
+| eksperimenti-filozofija | kolridz.jpg | Samuel Cousins / After Washington Allston | Public domain | [izvor](https://en.wikipedia.org/wiki/Samuel_Taylor_Coleridge) |
+| eksperimenti-filozofija | frankestajn.jpg | Mary Shelley | Public domain | [izvor](https://en.wikipedia.org/wiki/Frankenstein) |
+| eksperimenti-filozofija | ruso.jpg | Maurice Quentin de La Tour (Life time: 1788) | Public domain | [izvor](https://en.wikipedia.org/wiki/Jean-Jacques_Rousseau) |
+| eksperimenti-filozofija | drustveni-ugovor.jpg | — | Public domain | [izvor](https://en.wikipedia.org/wiki/The_Social_Contract) |
+| eksperimenti-filozofija | kritika-cistog-uma.jpg | Unknown, possibly Elisabeth von Stägemann (Anton Graff school) | Public domain | [izvor](https://en.wikipedia.org/wiki/Critique_of_Pure_Reason) |
+| eksperimenti-filozofija | kant.jpg | Johann Gottlieb Becker (1720-1782) | Public domain | [izvor](https://en.wikipedia.org/wiki/Immanuel_Kant) |
+| eksperimenti-filozofija | darvin.jpg | Charles_Darwin_seated.jpg: Henry Maull (1829–1914) and John Fox (1832–1907) (Mau | Public domain | [izvor](https://en.wikipedia.org/wiki/Charles_Darwin) |
+| eksperimenti-filozofija | poreklo-vrsta.jpg | John Murray, Publisher | Public domain | [izvor](https://en.wikipedia.org/wiki/On_the_Origin_of_Species) |
+| eksperimenti-filozofija | hegel.jpg | Jakob Schlesinger | Public domain | [izvor](https://en.wikipedia.org/wiki/Georg_Wilhelm_Friedrich_Hegel) |
+| eksperimenti-filozofija | napoleon.jpg | Jacques-Louis David | Public domain | [izvor](https://en.wikipedia.org/wiki/Napoleon) |
+| eksperimenti-filozofija | sopenhauer.jpg | Johann Schäfer | Public domain | [izvor](https://en.wikipedia.org/wiki/Arthur_Schopenhauer) |
+| eksperimenti-filozofija | nice.jpg | Friedrich Hermann Hartmann | Public domain | [izvor](https://en.wikipedia.org/wiki/Friedrich_Nietzsche) |
+| eksperimenti-filozofija | vagner.jpg | Franz Hanfstaengl | Public domain | [izvor](https://en.wikipedia.org/wiki/Richard_Wagner) |
+| eksperimenti-filozofija | mil.jpg | London Stereoscopic Company | Public domain | [izvor](https://en.wikipedia.org/wiki/John_Stuart_Mill) |
+| eksperimenti-filozofija | bentam.jpg | Henry William Pickersgill | Public domain | [izvor](https://en.wikipedia.org/wiki/Jeremy_Bentham) |
+| eksperimenti-filozofija | panoptikon.jpg | Jeremy Bentham | Public domain | [izvor](https://en.wikipedia.org/wiki/Panopticon) |
+| eksperimenti-filozofija | marks.jpg | John Jabez Edwin Mayall | Public domain | [izvor](https://en.wikipedia.org/wiki/Karl_Marx) |
+| eksperimenti-filozofija | kapital.jpg | Zentralbibliothek Zürich | Public domain | [izvor](https://en.wikipedia.org/wiki/Das_Kapital) |
+| eksperimenti-filozofija | komunisticki-manifest.jpg | Friedrich Engels, Karl Marx | Public domain | [izvor](https://en.wikipedia.org/wiki/The_Communist_Manifesto) |
+| eksperimenti-filozofija | bergson.jpg | Henri Manuel | Public domain | [izvor](https://en.wikipedia.org/wiki/Henri_Bergson) |
+| eksperimenti-filozofija | dzejms.jpg | Notman Studios (photographer) | Public domain | [izvor](https://en.wikipedia.org/wiki/William_James) |
+| eksperimenti-filozofija | djui.jpg | Underwood & Underwood | Public domain | [izvor](https://en.wikipedia.org/wiki/John_Dewey) |
+| eksperimenti-filozofija | anselm.jpg | Unknown authorUnknown author | Public domain | [izvor](https://commons.wikimedia.org/wiki/File:Anselm_of_Canterbury.jpg) |
+| eksperimenti-filozofija | bolonja.jpg | Vlach Pavel | CC0 | [izvor](https://commons.wikimedia.org/wiki/File:University_of_Bologna_-_library.jpg) |
+| eksperimenti-filozofija | parna-masina.jpg | Nicolás Pérez | CC BY-SA 3.0 | [izvor](https://commons.wikimedia.org/wiki/File:Maquina_vapor_Watt_ETSIIM.jpg) |
+| eksperimenti-filozofija | mrtvo-more-svitci.jpg | Photograph: the Israel Antiquities Authority 1993; photographer not named. | Public domain | [izvor](https://commons.wikimedia.org/wiki/File:Psalms_Scroll.jpg) |
+| eksperimenti-filozofija | hipatija.jpg | Charles William Mitchell | Public domain | [izvor](https://commons.wikimedia.org/wiki/File:Hypatia_(Charles_Mitchell).jpg) |
+| eksperimenti-filozofija | jovan-skot.jpg | — | Copyrighted free use | [izvor](https://commons.wikimedia.org/wiki/File:Johannes-Scotus-Erigena.jpg) |
+| eksperimenti-filozofija | likurg.jpg | Merry-Joseph Blondel | Public domain | [izvor](https://commons.wikimedia.org/wiki/File:Lycurgus_of_Sparta,_Merry_Joseph_Blondel.jpg) |
+| eksperimenti-filozofija | akademija.jpg | Unknown authorUnknown author | Public domain | [izvor](https://commons.wikimedia.org/wiki/File:Plato's_Academy_mosaic_from_Pompeii.jpg) |
+| eksperimenti-filozofija | piron.jpg | Unknown authorUnknown author | Public domain | [izvor](https://commons.wikimedia.org/wiki/File:Pyrrho_in_Thomas_Stanley_History_of_Philosophy.jpg) |
+| eksperimenti-filozofija | grcki-alfabet.jpg | Logg Tandy | CC BY 4.0 | [izvor](https://commons.wikimedia.org/wiki/File:NAMA_greek_alphabet_kylix_(accurate_colours)_-_National_Archaeological_Museum_Athens_-_February_2025.webp) |
 | fizika | ajnstajn.jpg | Oren Jack Turner | Public domain | [izvor](https://en.wikipedia.org/wiki/Albert_Einstein) |
 | fizika | kiri.jpg | Henri Manuel | Public domain | [izvor](https://en.wikipedia.org/wiki/Marie_Curie) |
 | fizika | njutn.jpg | Godfrey Kneller | Public domain | [izvor](https://en.wikipedia.org/wiki/Isaac_Newton) |
