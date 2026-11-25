@@ -11,12 +11,62 @@ const Zvuk = (() => {
   let ctx = null;
   let ugaseno = false;
   try { ugaseno = localStorage.getItem('tiho') === '1'; } catch {}
+  let bus = null, reverb = null;
   const aktivni = new Set();
+
+  // veštački odjek (dvorana): stereo šum koji se postepeno gasi – daje „snimljen“ zvuk umesto zujalice
+  function napraviOdjek(a) {
+    const len = Math.floor(a.sampleRate * 1.4);
+    const buf = a.createBuffer(2, len, a.sampleRate);
+    for (let ch = 0; ch < 2; ch++) {
+      const d = buf.getChannelData(ch);
+      for (let i = 0; i < len; i++) d[i] = (Math.random() * 2 - 1) * Math.pow(1 - i / len, 2.4);
+    }
+    return buf;
+  }
+
   function c() {
-    if (!ctx) ctx = new (window.AudioContext || window.webkitAudioContext)();
+    if (!ctx) {
+      ctx = new (window.AudioContext || window.webkitAudioContext)();
+      const kompresor = ctx.createDynamicsCompressor();
+      kompresor.threshold.value = -16;
+      kompresor.knee.value = 24;
+      kompresor.ratio.value = 6;
+      kompresor.attack.value = 0.004;
+      kompresor.release.value = 0.25;
+      bus = ctx.createGain();
+      bus.gain.value = 0.9;
+      bus.connect(kompresor);
+      kompresor.connect(ctx.destination);
+      reverb = ctx.createConvolver();
+      reverb.buffer = napraviOdjek(ctx);
+      const vlazan = ctx.createGain();
+      vlazan.gain.value = 1;
+      reverb.connect(vlazan);
+      vlazan.connect(bus);
+    }
     if (ctx.state === 'suspended') ctx.resume();
     return ctx;
   }
+
+  function prati(s) {
+    aktivni.add(s);
+    const prethodni = s.onended;
+    s.onended = () => { aktivni.delete(s); if (typeof prethodni === 'function') prethodni(); };
+    return s;
+  }
+
+  // suvi signal ide na glavni izlaz, deo i u odjek
+  function izlaz(a, node, odjek = 0.3) {
+    node.connect(bus);
+    if (odjek > 0 && reverb) {
+      const s = a.createGain();
+      s.gain.value = odjek;
+      node.connect(s);
+      s.connect(reverb);
+    }
+  }
+
   const NOTE = { C: 0, D: 2, E: 4, F: 5, G: 7, A: 9, B: 11, H: 11 };
   function frekv(n) {
     const m = /^([A-H])([#b]?)(\d)$/.exec(n);
@@ -25,6 +75,20 @@ const Zvuk = (() => {
     const midi = 12 * (+m[3] + 1) + s;
     return 440 * Math.pow(2, (midi - 69) / 12);
   }
+
+  function vibrato(a, parametri, dubina, brzina, t0) {
+    const lfo = a.createOscillator();
+    lfo.frequency.value = brzina;
+    const g = a.createGain();
+    g.gain.value = dubina;
+    lfo.connect(g);
+    for (const p of parametri) g.connect(p);
+    lfo.start(t0);
+    lfo.stop(t0 + 120);
+    prati(lfo);
+  }
+
+  // običan ton za efekte i Morzeovu azbuku
   function ton(f, t0, dur, tip = 'triangle', jacina = 0.25) {
     const a = c();
     const o = a.createOscillator();
@@ -35,28 +99,180 @@ const Zvuk = (() => {
     g.gain.linearRampToValueAtTime(jacina, t0 + 0.015);
     g.gain.setTargetAtTime(jacina * 0.6, t0 + 0.05, 0.1);
     g.gain.setTargetAtTime(0, t0 + Math.max(0.05, dur - 0.06), 0.03);
-    o.connect(g).connect(a.destination);
+    o.connect(g);
+    izlaz(a, g, 0.15);
     o.start(t0);
     o.stop(t0 + dur + 0.2);
-    aktivni.add(o);
-    o.onended = () => aktivni.delete(o);
+    prati(o);
     return o;
   }
-  const INSTR = { klavir: 'triangle', flauta: 'sine', orgulje: 'square', violina: 'sawtooth', truba: 'sawtooth', fagot: 'square' };
+
+  // klavir (i harfa): Karplus–Strong trzana žica + kratak udar na početku tona
+  function klavir(f, t0, dur) {
+    const a = c();
+    const n = Math.max(2, Math.floor(a.sampleRate / f));
+    const kasnjenje = a.createDelay(2);
+    kasnjenje.delayTime.value = n / a.sampleRate;
+    const prigus = a.createBiquadFilter();
+    prigus.type = 'lowpass';
+    prigus.frequency.value = Math.min(12000, f * 9);
+    const povrat = a.createGain();
+    povrat.gain.value = 0.996;
+    const boja = a.createBiquadFilter();
+    boja.type = 'lowpass';
+    boja.frequency.value = Math.min(7000, f * 5);
+    const izl = a.createGain();
+    izl.gain.setValueAtTime(0, t0);
+    izl.gain.linearRampToValueAtTime(0.7, t0 + 0.004);
+    izl.gain.setTargetAtTime(0, t0 + dur, 0.045);
+
+    const buf = a.createBuffer(1, n, a.sampleRate);
+    const d = buf.getChannelData(0);
+    for (let i = 0; i < n; i++) d[i] = Math.random() * 2 - 1;
+    const trzaj = a.createBufferSource();
+    trzaj.buffer = buf;
+    trzaj.connect(kasnjenje);
+    kasnjenje.connect(prigus);
+    prigus.connect(povrat);
+    povrat.connect(kasnjenje);
+    prigus.connect(boja);
+    boja.connect(izl);
+
+    const tn = Math.floor(a.sampleRate * 0.04);
+    const tbuf = a.createBuffer(1, tn, a.sampleRate);
+    const td = tbuf.getChannelData(0);
+    for (let i = 0; i < tn; i++) td[i] = (Math.random() * 2 - 1) * (1 - i / tn);
+    const udar = a.createBufferSource();
+    udar.buffer = tbuf;
+    const uf = a.createBiquadFilter();
+    uf.type = 'lowpass';
+    uf.frequency.value = 3200;
+    const ug = a.createGain();
+    ug.gain.value = 0.5;
+    udar.connect(uf);
+    uf.connect(ug);
+    ug.connect(izl);
+
+    trzaj.start(t0);
+    udar.start(t0);
+    povrat.gain.setTargetAtTime(0, t0 + dur, 0.05);
+    prati(trzaj);
+    prati(udar);
+    izlaz(a, izl, 0.4);
+  }
+
+  // flauta: mek sinus sa blagim višim tonovima + dah
+  function flauta(f, t0, dur) {
+    const a = c();
+    const izl = a.createGain();
+    izl.gain.setValueAtTime(0, t0);
+    izl.gain.linearRampToValueAtTime(0.3, t0 + 0.08);
+    izl.gain.setTargetAtTime(0, t0 + dur, 0.09);
+    const o1 = a.createOscillator(); o1.type = 'sine'; o1.frequency.value = f;
+    const o2 = a.createOscillator(); o2.type = 'sine'; o2.frequency.value = f * 2;
+    const g2 = a.createGain(); g2.gain.value = 0.2;
+    const o3 = a.createOscillator(); o3.type = 'sine'; o3.frequency.value = f * 3;
+    const g3 = a.createGain(); g3.gain.value = 0.06;
+    o1.connect(izl);
+    o2.connect(g2); g2.connect(izl);
+    o3.connect(g3); g3.connect(izl);
+    vibrato(a, [o1.detune, o2.detune, o3.detune], 6, 5, t0);
+    const dn = Math.floor(a.sampleRate * 0.06);
+    const dbuf = a.createBuffer(1, dn, a.sampleRate);
+    const dd = dbuf.getChannelData(0);
+    for (let i = 0; i < dn; i++) dd[i] = (Math.random() * 2 - 1) * (1 - i / dn);
+    const dah = a.createBufferSource();
+    dah.buffer = dbuf;
+    const df = a.createBiquadFilter(); df.type = 'highpass'; df.frequency.value = 2200;
+    const dg = a.createGain(); dg.gain.value = 0.14;
+    dah.connect(df); df.connect(dg); dg.connect(izl);
+    [o1, o2, o3, dah].forEach((o) => { o.start(t0); o.stop(t0 + dur + 0.2); prati(o); });
+    izlaz(a, izl, 0.35);
+  }
+
+  // violina: dva lagano raštimovana testerasta tona + vibrato
+  function violina(f, t0, dur) {
+    const a = c();
+    const izl = a.createGain();
+    izl.gain.setValueAtTime(0, t0);
+    izl.gain.linearRampToValueAtTime(0.2, t0 + 0.1);
+    izl.gain.setTargetAtTime(0, t0 + dur, 0.1);
+    const mk = (raz) => {
+      const o = a.createOscillator(); o.type = 'sawtooth'; o.frequency.value = f; o.detune.value = raz;
+      const fi = a.createBiquadFilter(); fi.type = 'bandpass'; fi.frequency.value = Math.min(3200, f * 2.5); fi.Q.value = 0.7;
+      o.connect(fi); fi.connect(izl);
+      return o;
+    };
+    const a1 = mk(-5), a2 = mk(5);
+    vibrato(a, [a1.detune, a2.detune], 8, 5.5, t0);
+    [a1, a2].forEach((o) => { o.start(t0); o.stop(t0 + dur + 0.2); prati(o); });
+    izlaz(a, izl, 0.45);
+  }
+
+  // orgulje: dodati alikvoti, stalan ton
+  function orgulje(f, t0, dur) {
+    const a = c();
+    const izl = a.createGain();
+    izl.gain.setValueAtTime(0, t0);
+    izl.gain.linearRampToValueAtTime(0.15, t0 + 0.05);
+    izl.gain.setTargetAtTime(0, t0 + dur, 0.05);
+    [1, 0.5, 0.33, 0.22, 0.12, 0.07].forEach((am, i) => {
+      const o = a.createOscillator(); o.type = 'sine'; o.frequency.value = f * (i + 1);
+      const g = a.createGain(); g.gain.value = am;
+      o.connect(g); g.connect(izl);
+      o.start(t0); o.stop(t0 + dur + 0.2); prati(o);
+    });
+    izlaz(a, izl, 0.3);
+  }
+
+  // truba: svetao spoj testerastog i pravougaonog tona
+  function truba(f, t0, dur) {
+    const a = c();
+    const izl = a.createGain();
+    izl.gain.setValueAtTime(0, t0);
+    izl.gain.linearRampToValueAtTime(0.22, t0 + 0.04);
+    izl.gain.setTargetAtTime(0, t0 + dur, 0.09);
+    const o1 = a.createOscillator(); o1.type = 'sawtooth'; o1.frequency.value = f;
+    const o2 = a.createOscillator(); o2.type = 'square'; o2.frequency.value = f;
+    const g2 = a.createGain(); g2.gain.value = 0.4;
+    const fi = a.createBiquadFilter(); fi.type = 'bandpass'; fi.frequency.value = Math.min(4200, f * 3); fi.Q.value = 0.6;
+    o1.connect(fi); o2.connect(g2); g2.connect(fi); fi.connect(izl);
+    vibrato(a, [o1.detune, o2.detune], 7, 4.5, t0);
+    [o1, o2].forEach((o) => { o.start(t0); o.stop(t0 + dur + 0.2); prati(o); });
+    izlaz(a, izl, 0.35);
+  }
+
+  // fagot: dubok, pomalo „drven“ ton
+  function fagot(f, t0, dur) {
+    const a = c();
+    const izl = a.createGain();
+    izl.gain.setValueAtTime(0, t0);
+    izl.gain.linearRampToValueAtTime(0.15, t0 + 0.12);
+    izl.gain.setTargetAtTime(0, t0 + dur, 0.08);
+    const o1 = a.createOscillator(); o1.type = 'square'; o1.frequency.value = f;
+    const o2 = a.createOscillator(); o2.type = 'square'; o2.frequency.value = f * 2;
+    const g2 = a.createGain(); g2.gain.value = 0.18;
+    const fi = a.createBiquadFilter(); fi.type = 'lowpass'; fi.frequency.value = Math.min(1800, f * 1.5); fi.Q.value = 1;
+    o1.connect(fi); o2.connect(g2); g2.connect(fi); fi.connect(izl);
+    vibrato(a, [o1.detune, o2.detune], 5, 4, t0);
+    [o1, o2].forEach((o) => { o.start(t0); o.stop(t0 + dur + 0.2); prati(o); });
+    izlaz(a, izl, 0.3);
+  }
+
+  const INSTRUMENTI = { klavir, flauta, violina, orgulje, truba, fagot };
   // note: "E4 E4 F4 G4/2 R/0.5 ..." – trajanje u dobama (podrazumevano 1)
   function melodija(zapis, tempo = 120, instrument = 'klavir', naNotu) {
     const a = c();
     const doba = 60 / tempo;
     let t = a.currentTime + 0.1;
-    const tip = INSTR[instrument] || 'triangle';
-    const jac = tip === 'sawtooth' || tip === 'square' ? 0.08 : 0.25;
     const tajmeri = [];
+    const sviraj = INSTRUMENTI[instrument] || INSTRUMENTI.klavir;
     zapis.trim().split(/\s+/).forEach((tok, i) => {
       const [n, d] = tok.split('/');
       const dur = (d ? +d : 1) * doba;
       if (n !== 'R') {
         // akord: C4+E4+G4
-        n.split('+').forEach((x) => ton(frekv(x), t, dur * 0.95, tip, jac));
+        n.split('+').forEach((x) => sviraj(frekv(x), t, dur * 0.95));
         if (naNotu) tajmeri.push(setTimeout(() => naNotu(i, n), (t - a.currentTime) * 1000));
       }
       t += dur;
