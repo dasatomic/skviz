@@ -331,6 +331,60 @@
    "rec": "pridev"
   },
   {
+   "lekcija": 1,
+   "tezina": 1,
+   "pitanje": "Koliko brojeva ima u rečenici „Hobotnica ima tri srca i devet mozgova.“?",
+   "odgovori": [
+    "Dva",
+    "Jedan",
+    "Tri",
+    "Nijedan"
+   ],
+   "zanimljivost": "Brojevi su „tri“ i „devet“. A rečenica je tačna: hobotnica ima tri srca, a pored glavnog mozga i po jedan veliki nervni čvor u svakom od osam krakova – zato se kaže da ima devet „mozgova“.",
+   "rec": "broj"
+  },
+  {
+   "lekcija": 1,
+   "tezina": 2,
+   "pitanje": "Koje reči su prilozi u rečenici „Rika bengalskog tigra noću se čuje dva kilometra daleko.“?",
+   "odgovori": [
+    "noću i daleko",
+    "rika i tigra",
+    "bengalskog i dva",
+    "se i čuje"
+   ],
+   "zanimljivost": "Prilozi kazuju okolnosti radnje: kada se čuje? – noću (prilog za vreme), kako daleko? – daleko (za mesto). „Bengalskog“ je pridev, „dva“ broj, a „čuje“ glagol.",
+   "rec": "prilog"
+  },
+  {
+   "lekcija": 1,
+   "vrsta": "uljez",
+   "tezina": 1,
+   "pitanje": "Koja reč je uljez u nizu „voda, more, teći, plavetnilo, brod“?",
+   "odgovori": [
+    "teći",
+    "voda",
+    "plavetnilo",
+    "brod"
+   ],
+   "objasnjenje": "Sve ostale reči su imenice, a „teći“ je glagol – kazuje radnju.",
+   "zanimljivost": "I „plavetnilo“ je imenica, iako je nastala od prideva „plav“: imenica označava pojam boje, a ne osobinu nečega.",
+   "rec": "glagol"
+  },
+  {
+   "lekcija": 1,
+   "tezina": 2,
+   "pitanje": "Kojoj vrsti reči pripada „mišjim“ u rečenici „Spas od kobaca vrapci često nalaze u mišjim rupama.“?",
+   "odgovori": [
+    "Pridev",
+    "Imenica",
+    "Prilog",
+    "Zamenica"
+   ],
+   "zanimljivost": "Kakvim rupama? – mišjim: to je prisvojni pridev od imenice „miš“. Odatle i izreka „saterati nekoga u mišju rupu“ – toliko ga uplašiti da se sakrije kao vrabac pred kopcem.",
+   "rec": "pridev"
+  },
+  {
    "lekcija": 2,
    "tezina": 1,
    "pitanje": "Šta imenuju imenice?",
@@ -1395,6 +1449,32 @@
    "rec": "dativ"
   },
   {
+   "lekcija": 6,
+   "vrsta": "spoji",
+   "tezina": 2,
+   "pitanje": "Spoji poslovicu sa padežom istaknute imenice",
+   "parovi": [
+    [
+     "Od MIRA glava ne boli.",
+     "Genitiv"
+    ],
+    [
+     "Vatra se SLAMOM ne gasi.",
+     "Instrumental"
+    ],
+    [
+     "SVETU se ne može ugoditi.",
+     "Dativ"
+    ],
+    [
+     "Ne kupuje se MAČKA u džaku.",
+     "Nominativ"
+    ]
+   ],
+   "zanimljivost": "Padež se lako odredi pitanjem: od čega? (genitiv), čime? (instrumental), kome? (dativ), ko? šta? (nominativ). „Ne kupuje se mačka“ – šta se ne kupuje? – mačka je subjekat.",
+   "rec": "padež"
+  },
+  {
    "lekcija": 7,
    "tezina": 1,
    "pitanje": "Koje reči se pišu velikim početnim slovom u nazivu države „Crna Gora“?",
@@ -2439,6 +2519,19 @@
    ],
    "zanimljivost": "Brojeva ima beskonačno mnogo, a brojki samo deset. Brojevi mogu biti jednocifreni, dvocifreni, trocifreni…",
    "rec": "brojka"
+  },
+  {
+   "lekcija": 11,
+   "tezina": 2,
+   "pitanje": "Dopuni: „Milica ima jednog brata i dve sestre. Od njih ___ Milica je najbolji đak.“",
+   "odgovori": [
+    "četvoro",
+    "četvorica",
+    "četiri",
+    "četvrta"
+   ],
+   "zanimljivost": "Ima ih četvoro – Milica, brat i dve sestre. Zbirni broj (dvoje, troje, četvoro) koristimo kad su u skupu osobe različitog pola. „Četvorica“ bi značilo četiri muške osobe.",
+   "rec": "broj"
   },
   {
    "lekcija": 12,
@@ -3745,6 +3838,19 @@
    "rec": "zapeta"
   },
   {
+   "lekcija": 17,
+   "tezina": 3,
+   "pitanje": "Kako glasi rečenica „Kroz žičanu ogradu mačka mirno posmatra velikog psa.“ kad subjekat postane objekat, a objekat subjekat (bez promene reda reči)?",
+   "odgovori": [
+    "Kroz žičanu ogradu mačku mirno posmatra veliki pas.",
+    "Kroz žičanu ogradu mačka mirno posmatra veliki pas.",
+    "Kroz žičanu ogradu mački mirno posmatra velikog psa.",
+    "Kroz žičanu ogradu mačku mirno posmatra velikog psa."
+   ],
+   "zanimljivost": "Subjekat je u nominativu (ko? – veliki pas), a pravi objekat u akuzativu (koga? – mačku). Atribut se menja zajedno sa imenicom: velikog psa → veliki pas.",
+   "rec": "objekat"
+  },
+  {
    "lekcija": 18,
    "tezina": 1,
    "pitanje": "Šta u govoru odgovara zapeti u pisanju?",
@@ -3940,6 +4046,32 @@
    ],
    "zanimljivost": "U nabrajanju se ispred poslednjeg člana uz veznik „i“ zapeta ne piše: „Iva, Una i Tea“.",
    "rec": "zapeta"
+  },
+  {
+   "lekcija": 18,
+   "tezina": 2,
+   "pitanje": "Gde treba staviti zapete: „Ivane gde se nalazi manastir Ljubostinja zadužbina kneginje Milice?“",
+   "odgovori": [
+    "Iza „Ivane“ i iza „Ljubostinja“",
+    "Samo iza „Ivane“",
+    "Samo iza „Ljubostinja“",
+    "Iza „nalazi“ i iza „manastir“"
+   ],
+   "zanimljivost": "„Ivane“ je vokativ, a „zadužbina kneginje Milice“ apozicija – oba se odvajaju zapetom. Manastir Ljubostinja nalazi se kod Trstenika, a podigla ga je kneginja Milica, žena kneza Lazara.",
+   "rec": "zapeta"
+  },
+  {
+   "lekcija": 18,
+   "tezina": 2,
+   "pitanje": "U kojoj rečenici je crta pravilno upotrebljena?",
+   "odgovori": [
+    "Spiker reče: – Sutra se očekuju velike padavine.",
+    "– Spiker reče: Sutra se očekuju velike padavine.",
+    "Spiker reče: – Sutra se očekuju velike padavine. –",
+    "– Spiker reče: – Sutra se očekuju velike padavine."
+   ],
+   "zanimljivost": "Crta stoji samo ispred upravnog govora, a ne i iza njega. Iza reči kojima se najavljuje govor piše se dvotačka.",
+   "rec": "crta"
   },
   {
    "lekcija": 19,
@@ -4596,6 +4728,58 @@
    "rec": "zamena"
   },
   {
+   "lekcija": 21,
+   "tezina": 2,
+   "pitanje": "Iz kog jezika potiču reči palačinke, paprika, šargarepa i cipele?",
+   "odgovori": [
+    "Iz mađarskog",
+    "Iz turskog",
+    "Iz nemačkog",
+    "Iz engleskog"
+   ],
+   "zanimljivost": "Mnoge reči za hranu i odeću su pozajmljenice: iz italijanskog kaput, pantalone, salata, torta; iz nemačkog viršla, jakna, krofna, krompir; iz francuskog majonez i pire. Lingvista Milan Šipka se našalio da bismo bez njih ostali „gladni, goli i bosi“.",
+   "rec": "pozajmica"
+  },
+  {
+   "lekcija": 21,
+   "tezina": 2,
+   "pitanje": "Iz kog jezika smo preuzeli reči kečap, puding, džem i pidžama?",
+   "odgovori": [
+    "Iz engleskog",
+    "Iz francuskog",
+    "Iz italijanskog",
+    "Iz mađarskog"
+   ],
+   "zanimljivost": "Iz engleskog su i keks, čips i džemper. Reč „banana“ došla je iz portugalskog, a iz turskog alva, baklava, burek, kafa i ratluk.",
+   "rec": "pozajmica"
+  },
+  {
+   "lekcija": 21,
+   "tezina": 2,
+   "pitanje": "Šta je „Nikoletina“, ime Ćopićevog junaka Nikoletine Bursaća?",
+   "odgovori": [
+    "Augmentativ (uvećanica)",
+    "Deminutiv (umanjenica)",
+    "Hipokoristik (reč od milja)",
+    "Antonim"
+   ],
+   "zanimljivost": "Ćopić je od imena Nikola pravio imena koja opisuju junake: krupni Nikoletina je augmentativ, a sitni Nikolica deminutiv. Augmentativi se grade nastavcima -ina, -etina, -urina, -urda (nosina, zgradurina, glavurda) i često imaju i pogrdno značenje.",
+   "rec": "Nikoletina"
+  },
+  {
+   "lekcija": 21,
+   "tezina": 2,
+   "pitanje": "Kako se zovu reči kao „seka, bata, deka, sanak“ kojima se obraćamo od milja?",
+   "odgovori": [
+    "Hipokoristici",
+    "Augmentativi",
+    "Pejorativi",
+    "Antonimi"
+   ],
+   "zanimljivost": "Hipokoristici su bliski deminutivima, ali ne moraju označavati nešto malo – izražavaju nežnost. U uspavanci „Ide sanak uz ulicu, vodi Pavla za ručicu“ i „san“ i „ruka“ su dobili nežne oblike.",
+   "rec": "tepanje"
+  },
+  {
    "lekcija": 22,
    "tezina": 1,
    "pitanje": "Koje tri celine ima sastav?",
@@ -4804,6 +4988,19 @@
    ],
    "zanimljivost": "Razrada ima najmanje dva pasusa, a zaključak jedan.",
    "rec": "pasus"
+  },
+  {
+   "lekcija": 22,
+   "tezina": 2,
+   "pitanje": "Kako se jednostavnije kaže „Sutra ćemo izvršiti izbor predsednika odeljenja.“?",
+   "odgovori": [
+    "Sutra ćemo izabrati predsednika odeljenja.",
+    "Sutra ćemo obaviti izbor predsednika odeljenja.",
+    "Sutra ćemo vršiti izbor predsednika odeljenja.",
+    "Sutra ćemo izvršiti biranje predsednika odeljenja."
+   ],
+   "zanimljivost": "Izrazi iz jezika administracije često su nepotrebno opširni: vršiti popravku → popravljati, dati doprinos → doprineti, doneti odluku → odlučiti, biti na smetnji → smetati. Informacija ostaje ista, a rečenica je jasnija.",
+   "rec": "izbor"
   }
  ]
 }
