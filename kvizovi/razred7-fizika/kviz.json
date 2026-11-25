@@ -1025,7 +1025,7 @@
         "50 m",
         "5 m"
       ],
-      "zanimljivost": "$s = 2 · 5² / 2 = 25 m$.",
+      "zanimljivost": "Put raste sa kvadratom vremena: za prvih 5 s telo pređe 25 m, a za narednih 5 s čak 75 m.",
       "rec": "put",
       "medijiOdgovora": {
         "vrsta": "fizika",
@@ -1105,8 +1105,8 @@
             "a": 2
           }
         ],
-        "natpisi": 99,
-        "sat": true
+        "sat": true,
+        "lenjir": false
       }
     },
     {
@@ -1284,13 +1284,13 @@
     },
     {
       "lekcija": 3,
-      "tezina": 1,
-      "pitanje": "Kada voz kreće sa stanice i ravnomerno povećava brzinu, kakvo je kretanje?",
+      "tezina": 2,
+      "pitanje": "Voz polazi sa stanice: posle 10 s ima brzinu 5 m/s, posle 20 s 10 m/s, a posle 30 s 15 m/s. Kakvo je to kretanje?",
       "odgovori": [
         "Ravnomerno ubrzano",
-        "Ravnomerno kretanje",
-        "Usporeno kretanje",
-        "Kružno kretanje voza"
+        "Ravnomerno pravolinijsko",
+        "Ravnomerno usporeno",
+        "Neravnomerno ubrzano"
       ],
       "zanimljivost": "Vozovi za velike brzine ubrzavaju mnogo minuta pre nego što dostignu najveću brzinu.",
       "rec": "voz",
@@ -1490,14 +1490,14 @@
     {
       "lekcija": 4,
       "tezina": 2,
-      "pitanje": "Šta je trenutna brzina?",
+      "pitanje": "Automobil je za 2 h prešao 160 km. Na jednom mestu brzinomer je pokazivao 110 km/h. Šta je tih 110 km/h?",
       "odgovori": [
-        "Brzina u određenom trenutku",
-        "Prosečna brzina za ceo put",
-        "Najveća brzina koju telo postigne",
-        "Brzina na samom startu"
+        "Trenutna brzina",
+        "Srednja brzina",
+        "Ubrzanje automobila",
+        "Pređeni put za sat"
       ],
-      "zanimljivost": "Radar policije meri trenutnu brzinu automobila.",
+      "zanimljivost": "Srednja brzina na tom putu je $160 km : 2 h = 80 km/h$ – manja od 110 km/h, jer je auto negde usporavao i stajao.",
       "rec": "trenutna",
       "mediji": {
         "vrsta": "fizika",
@@ -1585,7 +1585,7 @@
     {
       "lekcija": 4,
       "tezina": 2,
-      "pitanje": "U kom kretanju su srednja i trenutna brzina jednake u svakom trenutku?",
+      "pitanje": "Kod kog kretanja su srednja i trenutna brzina jednake u svakom trenutku?",
       "odgovori": [
         "Kod ravnomernog kretanja",
         "Kod ubrzanog kretanja",

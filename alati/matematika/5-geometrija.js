@@ -259,7 +259,7 @@ module.exports = ({ T, Q, U, S, A, F, G, proveri, r, S3, rad, naKrugu, pravilni 
       const dx = ox - m[0], dy = oy - m[1], L = Math.hypot(dx, dy);
       return { lin: [[r(m[0] - (dx / L) * 1.2), r(m[1] - (dy / L) * 1.2)], [r(ox + (dx / L) * 0.8), r(oy + (dy / L) * 0.8)]], b: 1, isp: 1, debljina: 2 };
     };
-    Q(2, 'Centar kruga opisanog oko trougla je presek…', ['simetrala stranica', 'simetrala uglova', 'visina trougla', 'težišnih duži'],
+    Q(2, 'Centar kruga opisanog oko trougla je presek…', ['simetrala stranica', 'simetrala uglova', 'visina', 'težišnih duži'],
       'Centar opisanog kruga je jednako udaljen od sva tri temena, a tačke jednako udaljene od dva temena leže na simetrali stranice. Presek simetrala uglova je centar UPISANOG kruga.',
       'krug', { medijiOdgovora: G(t, [{ p: 'ABC', b: 0 }, ...[sim('A', 'B'), sim('B', 'C'), sim('C', 'A')].map((x, i) => ({ ...x, crtaj: 1, kasni: 0.3 + 0.8 * i })),
         { kr: 'O', kroz: 'A', b: 3, crtaj: 1, kasni: 2.8, trajanje: 1.8 }, { tacka: 'O', b: 1 }], { velicina: 220 }) });
