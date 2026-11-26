@@ -563,6 +563,13 @@ function opisIzbora(id) {
   if (!r.paket) { const g = grupaOblasti(r.oblast); return { naziv: g.naziv, podnaslov: g.podkategorije.length ? 'sve teme' : 'svi razredi', ikona: g.ikona, boja: g.boja }; }
   const k = r.paket;
   if (r.lekcije.length) {
+    if (k.izborTeme) {
+      // npr. „Opštinsko takmičenje 2024“ ili „Okružno takmičenje“ (sve godine)
+      const tema = temaIzbora(k, r.lekcije);
+      const naziv = r.lekcije.length === 1 ? `${tema || ''} ${k.lekcije[r.lekcije[0] - 1]?.naziv || ''}`.trim()
+        : tema && r.lekcije.length === lekcijeTeme(k, tema).length ? tema : tema ? `${tema} (${r.lekcije.length} god.)` : brojLekcija(r.lekcije.length);
+      return { naziv, podnaslov: k.naziv, ikona: k.ikona, boja: k.boja };
+    }
     if (r.lekcije.length === 1) return { naziv: k.lekcije[r.lekcije[0] - 1]?.naziv || k.naziv, podnaslov: k.naziv, ikona: k.ikona, boja: k.boja, jezik: k.jezik };
     return { naziv: brojLekcija(r.lekcije.length), podnaslov: k.naziv, ikona: k.ikona, boja: k.boja, jezik: k.jezik };
   }
@@ -612,7 +619,7 @@ function izborKvizaHTML(P) {
   const po = (id) => kartice.find((k) => k.id === id);
   const niz = (ids) => ids.map(po).filter(Boolean).map(karticaHTML).join('');
   const odeljak = (naziv) => `<div class="odeljak">${naziv}</div>`;
-  // „Predmeti“: po redu po dve ili tri kartice; „Dodatno“: Eksperimenti
+  // „Predmeti“: po redu po dve ili tri kartice; „Takmičenja“: zadaci sa takmičenja po predmetu; „Dodatno“: Eksperimenti
   // Parovi (matematika + zadaci, srpski + gramatika, fizika + zadaci) moraju da ostanu
   // jedan pored drugog i u dve kolone na telefonu – zato parovi idu prvo, pa samostalne oblasti.
   const predmeti = [
@@ -622,8 +629,10 @@ function izborKvizaHTML(P) {
     ['oblast:hemija', 'oblast:hemija-laboratorija'],
     ['oblast:biologija', 'oblast:istorija', 'oblast:geografija'],
   ];
+  // u odeljku „Takmičenja“ kartica nosi samo ime predmeta
+  const takmicenja = [['oblast:matematika-takmicenja', 'Matematika']];
   const dodatno = ['oblast:eksperimenti'];
-  const predmetiIds = predmeti.flat();
+  const predmetiIds = [...predmeti.flat(), ...takmicenja.map(([id]) => id)];
   // „Kultura“: Opšte znanje + sve ostale oblasti (bilo koja nova oblast automatski završava ovde)
   const kultura = kartice.map((k) => k.id).filter((id) => !predmetiIds.includes(id) && !dodatno.includes(id));
   return `<div class="kartica">
@@ -631,13 +640,42 @@ function izborKvizaHTML(P) {
     <div class="predmeti">${predmeti.map((ids) => `<div class="kvizovi">${niz(ids)}</div>`).join('')}</div>
     ${odeljak('Kultura')}
     <div class="kvizovi">${niz(kultura)}</div>
+    ${odeljak('Takmičenja')}
+    <div class="kvizovi">${takmicenja.map(([id, naziv]) => po(id) && karticaHTML({ ...po(id), naziv })).filter(Boolean).join('')}</div>
     ${odeljak('Dodatno')}
     <div class="kvizovi">${niz(dodatno)}</div>
   </div>`;
 }
 
+// lekcije jedne teme (redni brojevi od 1), npr. sve godine opštinskog takmičenja
+const lekcijeTeme = (k, tema) => k.lekcije.map((l, i) => (l.tema === tema ? i + 1 : 0)).filter(Boolean);
+// izabrana tema: sve izabrane lekcije pripadaju istoj temi
+function temaIzbora(k, lekcije) {
+  const teme = new Set(lekcije.map((n) => k.lekcije[n - 1]?.tema));
+  return lekcije.length && teme.size === 1 ? [...teme][0] : null;
+}
+// izbor u dva koraka ("izborTeme": true, npr. takmičenja): tema (nivo), pa lekcije te teme (godine)
+function temeHTML(k, lekcije) {
+  const teme = [...new Set(k.lekcije.map((l) => l.tema).filter(Boolean))];
+  const tema = temaIzbora(k, lekcije);
+  let html = `<h3>${esc(k.naslovTeme || 'Tema')}</h3><div class="izbor razredi">
+    <button data-k="${k.id}" class="${!lekcije.length ? 'izabran' : ''}">${esc(celina(k))}</button>
+    ${teme.map((t) => `<button data-k="${k.id}#${lekcijeTeme(k, t).join(',')}" class="${t === tema ? 'izabran' : ''}">${esc(t)}</button>`).join('')}</div>`;
+  if (!tema) return html;
+  const sve = lekcijeTeme(k, tema);
+  // cela tema izabrana → nijedna kućica nije štiklirana, istaknuto je „Sve“
+  const izabrane = new Set(lekcije.length === sve.length ? [] : lekcije);
+  html += `<h3>${esc(k.naslovLekcije || 'Lekcija')}</h3><div class="lekcije"><button class="lekcija ${izabrane.size ? '' : 'izabran'}" data-k="${k.id}#${sve.join(',')}" data-pid="${k.id}"><b>📚 Sve – ${esc(tema)}</b><span>${sve.reduce((s, n) => s + (k.lekcije[n - 1].broj || 0), 0)}</span></button>`;
+  for (const n of sve) {
+    const l = k.lekcije[n - 1];
+    html += `<label class="lekcija ${izabrane.has(n) ? 'izabran' : ''}"><input type="checkbox" data-lekcija="${n}" ${izabrane.has(n) ? 'checked' : ''} ${l.broj ? '' : 'disabled'}> <span class="l-naziv">${esc(l.naziv)}</span><span>${l.broj}</span></label>`;
+  }
+  return html + '</div>';
+}
+
 // spisak lekcija izabranog kviza: „Cela godina“ (ili `celina`) + lekcije sa kućicama za više izbora
 function lekcijeHTML(k, lekcije) {
+  if (k.izborTeme) return temeHTML(k, lekcije);
   const izabrane = new Set(lekcije);
   let tema = null;
   let html = `<div class="lekcije"><button class="lekcija ${izabrane.size ? '' : 'izabran'}" data-k="${k.id}"><b>📚 ${esc(celina(k))}</b><span>${k.broj}</span></button>`;
@@ -768,10 +806,17 @@ function podesavanja() {
     }));
     k.querySelectorAll('input[data-lekcija]').forEach((cb) => (cb.onchange = () => {
       Zvuk.efekat('klik');
-      const pid = k.querySelector('.lekcija[data-k]')?.dataset.k;
-      if (!pid) return;
-      const izabrane = [...k.querySelectorAll('input[data-lekcija]:checked')].map((x) => +x.dataset.lekcija).sort((a, b) => a - b);
-      const id = izabrane.length ? `${pid}#${izabrane.join(',')}` : pid;
+      // „Sve“ (cela godina ili cela tema – data-pid nosi id paketa) je izbor kad nijedna kućica nije štiklirana
+      const sve = k.querySelector('.lekcija[data-k]');
+      if (!sve) return;
+      const pid = sve.dataset.pid || sve.dataset.k;
+      let izabrane = [...k.querySelectorAll('input[data-lekcija]:checked')].map((x) => +x.dataset.lekcija).sort((a, b) => a - b);
+      // izbor po temama: štiklirane sve lekcije teme = „Sve – tema“ (kućice se poništavaju, kao u prikazu)
+      if (sve.dataset.pid && izabrane.length === k.querySelectorAll('input[data-lekcija]').length) {
+        k.querySelectorAll('input[data-lekcija]').forEach((x) => (x.checked = false));
+        izabrane = [];
+      }
+      const id = izabrane.length ? `${pid}#${izabrane.join(',')}` : sve.dataset.k;
       // Promena izbora lekcija ne sme da ponovo iscrta listu (to vraća skrol na vrh i treperi kao „refresh“):
       // samo se u mestu ažuriraju kućice, dugme „Cela godina“ i opcija „Broj pitanja“.
       azurirajLekcije(k);
@@ -873,7 +918,7 @@ function tajmer(pocetak, trajanje) {
 
 // ───────────────────────── pitanje ─────────────────────────
 // posebne vrste pitanja: natpis iznad pitanja
-const VRSTE_PITANJA = { uljez: '🕵️ Izbaci uljeza', spoji: '🔗 Spoj pojmove' };
+const VRSTE_PITANJA = { uljez: '🕵️ Izbaci uljeza', spoji: '🔗 Spoj pojmove', dokaz: '✍️ Dokaži' };
 
 function zaglavljePitanja(P) {
   const zvezde = [1, 2, 3].map((i) => `<span style="opacity:${i <= P.tezina ? 1 : 0.25}">★</span>`).join('');
@@ -883,6 +928,7 @@ function zaglavljePitanja(P) {
         <span class="znacka tezina" title="težina">${zvezde}${P.tezina === 3 ? ' ×1,5' : ''}</span><span class="razmak"></span><span class="sekunde"></span></div>
       <div class="tajmer"><i></i></div>
       ${VRSTE_PITANJA[P.vrsta] ? `<div class="vrsta-pitanja">${VRSTE_PITANJA[P.vrsta]}</div>` : ''}
+      ${P.izvor ? `<div class="izvor-zadatka">🏆 ${esc(P.izvor)}</div>` : ''}
       <div class="pitanje-tekst${P.zadatak ? ' zadatak' : ''}">${mat(P.tekst)}</div>`;
 }
 
@@ -890,7 +936,9 @@ function zaglavljePitanja(P) {
 function otkrivanjePitanja(P, naslov) {
   const moj = V.dobitak[V.ja];
   let rez = '';
-  if (moj && !TV) {
+  if (moj && !TV && moj.dokaz) {
+    // dokaz se ne boduje – nema „Tačno/Netačno“
+  } else if (moj && !TV) {
     if (moj.tacno) {
       rez = `<div class="rezultat dobro">${P.vrsta === 'spoji' ? 'Sve tačno!' : 'Tačno!'} +${moj.poeni}</div>${moj.bonus ? `<div class="bonus">🔥 Niz od ${moj.niz} tačnih: +${moj.bonus}</div>` : ''}`;
       Zvuk.efekat('tacno');
@@ -932,7 +980,7 @@ const crtezResenja = (P) => P.resenjeCrtez || (P.mediji?.vrsta === 'geo' ? P.med
 function resenjeHTML(P) {
   const R = P.resenje;
   const crtez = crtezResenja(P) || R.some((k) => k.crtez);
-  return `<div class="kartica resenje"><h3>📝 Rešenje</h3>
+  return `<div class="kartica resenje"><h3>${P.vrsta === 'dokaz' ? '✍️ Dokaz' : '📝 Rešenje'}</h3>
     ${crtez ? '<div class="medij medij-svg resenje-crtez" id="resenje-crtez"></div>' : ''}
     <ol class="koraci">${R.map((k, i) => `<li data-k="${i}">${mat(k.t)}</li>`).join('')}</ol>
     <div class="koraci-dugmad"><button class="dugme sivo" id="kr-pre">◀</button><span id="kr-br"></span>
@@ -992,6 +1040,7 @@ function pokreniResenje(P) {
 function ekranPitanje(nov, staro) {
   const P = V.pitanje;
   if (P.vrsta === 'spoji') return ekranSpoji(nov, staro);
+  if (P.vrsta === 'dokaz') return ekranDokaz(nov, staro);
   const otkriveno = V.faza === 'otkrivanje';
   if (nov) {
     app.innerHTML = `${zaglavljePitanja(P)}
@@ -1050,6 +1099,52 @@ function ekranPitanje(nov, staro) {
     if (!TV) setTimeout(() => $('.zanimljivost')?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 900);
   }
   dugmeDalje(P.rb === P.ukupno ? 'Rang lista 🏆' : 'Sledeće pitanje ➜');
+}
+
+// ───────────────────────── dokazni zadatak ─────────────────────────
+// Nema ponuđenih odgovora: igrač dokazuje na papiru, pa pritisne „Pokaži dokaz“. Kad su svi spremni (ili istekne
+// vreme), otkriva se dokaz korak po korak. Ne boduje se.
+function ekranDokaz(nov, staro) {
+  const P = V.pitanje;
+  const otkriveno = V.faza === 'otkrivanje';
+  if (nov) {
+    app.innerHTML = `${zaglavljePitanja(P)}
+      <div id="medij"></div>
+      <div id="ispod"></div>`;
+    if (P.mediji) ciscenje.push(prikaziMedij($('#medij'), P.mediji, { auto: true, paket: P.paket, kod: P.kod }));
+    else $('#medij').remove();
+    if (!otkriveno) tajmer(P.pocetak, P.trajanje);
+  }
+  const ispod = $('#ispod');
+  if (!otkriveno) {
+    const spreman = V.mojOdgovor !== null;
+    ispod.innerHTML = `${TV ? '' : spreman ? `<div class="cekanje">${V.igraci.length > 1 ? 'Čekamo ostale<span class="tackice"></span>' : 'Otvaram dokaz…'}</div>`
+      : `<div class="sitno centar">✏️ Dokaži tvrđenje na papiru, pa pogledaj dokaz. Ovaj zadatak se ne boduje.</div>
+        <button class="dugme zuto siroko" id="pokazi-dokaz" style="margin-top:14px">✍️ Pokaži dokaz</button>`}
+      ${koJeOdgovorio(V.odgovorili, 'spremno')}`;
+    const b = $('#pokazi-dokaz');
+    if (b) b.onclick = () => {
+      if (V.faza !== 'pitanje' || V.mojOdgovor !== null) return;
+      Zvuk.efekat('klik');
+      posaljiOdgovor(0);
+      ekranDokaz(false);
+    };
+    donjaTraka('');
+    return;
+  }
+  if (nov || staro?.faza !== 'otkrivanje') {
+    clearInterval(tikTajmer);
+    $('.tajmer i').style.transform = 'scaleX(0)';
+    $('.sekunde').textContent = '';
+    ispod.innerHTML = otkrivanjePitanja(P, '');
+    // kartica „zanimljivost“ je prazna kad nema napomene – ne prikazuje se
+    const z = $('.zanimljivost');
+    if (z && !z.textContent.trim() && !z.querySelector('#medij-odgovora')) z.remove();
+    prikaziMedijOdgovora(P);
+    if (P.resenje) pokreniResenje(P);
+    if (!TV) setTimeout(() => $('.resenje')?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 600);
+  }
+  dugmeDalje(P.rb === P.ukupno ? 'Rang lista 🏆' : 'Sledeći zadatak ➜');
 }
 
 // ───────────────────────── spoj pojmove ─────────────────────────
