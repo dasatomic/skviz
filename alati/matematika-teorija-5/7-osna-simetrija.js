@@ -104,7 +104,7 @@ module.exports = ({ L, Q, U, S, G, r, naKrugu, pravilni, O, bez }) => {
   Q(3, 'Koja od ovih figura NIJE osnosimetrična?',
     ['Raznostrani trougao', 'Kvadrat', 'Krug', 'Jednakokraki trougao'],
     'Raznostrani trougao (sve stranice različite) nema nijednu osu simetrije. Kvadrat, krug i jednakokraki trougao imaju.', 'simetrija',
-    { mediji: raznostrani() });
+    { medijiOdgovora: raznostrani() });
   Q(2, 'Koliko osa simetrije ima jednakokraki trougao?',
     ['1', '2', '3', 'Nijednu'],
     'Jednakokraki trougao ima tačno jednu osu simetrije – visinu koja pada na osnovicu i deli je na dva jednaka dela.', 'trougao',

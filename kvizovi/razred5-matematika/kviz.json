@@ -57197,7 +57197,14 @@
    "lekcija": 45,
    "tezina": 3,
    "pitanje": "Koja od ovih figura NIJE osnosimetrična?",
-   "mediji": {
+   "odgovori": [
+    "Raznostrani trougao",
+    "Kvadrat",
+    "Krug",
+    "Jednakokraki trougao"
+   ],
+   "zanimljivost": "Raznostrani trougao (sve stranice različite) nema nijednu osu simetrije. Kvadrat, krug i jednakokraki trougao imaju.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "A": [
@@ -57221,13 +57228,6 @@
     ],
     "velicina": 240
    },
-   "odgovori": [
-    "Raznostrani trougao",
-    "Kvadrat",
-    "Krug",
-    "Jednakokraki trougao"
-   ],
-   "zanimljivost": "Raznostrani trougao (sve stranice različite) nema nijednu osu simetrije. Kvadrat, krug i jednakokraki trougao imaju.",
    "rec": "simetrija"
   },
   {

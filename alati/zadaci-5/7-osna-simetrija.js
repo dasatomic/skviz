@@ -50,7 +50,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, naKrugu, pravilni, krug, pap
     ['$A$', '$R$', '$N$', '$S$'],
     [K('Ogledalo „presavija“ sliku preko vertikalne ose.'),
      K('Slovo $A$ je simetrično u odnosu na vertikalnu pravu kroz vrh – u ogledalu je isto. $R$, $N$ i $S$ se izokrenu.', ['a'])],
-    G({ s1: [1, -0.5], s2: [1, 3.5] }, [osa({}, 's1', 's2', { k: 1 }), { lin: [[0, 0], [1, 3], [2, 0]], b: 0, debljina: 6 }, { lin: [[0.4, 1.2], [1.6, 1.2]], b: 0, debljina: 6 }, { lin: [[0, 0], [1, 3]], b: 1, debljina: 6, odrazi: 's1s2', k: 2, id: 'a', ponovi: 1 }], { bezImena: ['s1', 's2'], velicina: 100 }));
+    { samoResenje: G({ s1: [1, -0.5], s2: [1, 3.5] }, [osa({}, 's1', 's2', { k: 1 }), { lin: [[0, 0], [1, 3], [2, 0]], b: 0, debljina: 6 }, { lin: [[0.4, 1.2], [1.6, 1.2]], b: 0, debljina: 6 }, { lin: [[0, 0], [1, 3]], b: 1, debljina: 6, odrazi: 's1s2', k: 2, id: 'a', ponovi: 1 }], { bezImena: ['s1', 's2'], velicina: 100 }) });
 
   Z(2, 'Prava $p$ je normalna na osu simetrije $s$. U šta se preslikava prava $p$?',
     ['u samu sebe', 'u pravu paralelnu sa $p$', 'u pravu $s$', 'u pravu normalnu na $p$'],
@@ -102,7 +102,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, naKrugu, pravilni, krug, pap
     ['$H$', '$A$', '$E$', '$K$'],
     [K('$A$ ima samo vertikalnu, $E$ i $K$ samo horizontalnu osu.'),
      K('$H$ ima obe ose.', ['ose'])],
-    G({ O: [0, 0] }, [{ lin: [[-1, -1.5], [-1, 1.5]], b: 0, debljina: 6 }, { lin: [[1, -1.5], [1, 1.5]], b: 0, debljina: 6 }, { lin: [[-1, 0], [1, 0]], b: 0, debljina: 6 }, ...ose([0, 90], 2.2, { k: 2 })], { ...bez, velicina: 110 }));
+    { samoResenje: G({ O: [0, 0] }, [{ lin: [[-1, -1.5], [-1, 1.5]], b: 0, debljina: 6 }, { lin: [[1, -1.5], [1, 1.5]], b: 0, debljina: 6 }, { lin: [[-1, 0], [1, 0]], b: 0, debljina: 6 }, ...ose([0, 90], 2.2, { k: 2 })], { ...bez, velicina: 110 }) });
 
   Z(2, 'Koliko osa simetrije ima pravilni šestougao?',
     ['$6$', '$3$', '$12$', '$2$'],

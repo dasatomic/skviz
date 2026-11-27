@@ -34,6 +34,12 @@
     'Ba Pt Au Hg Pb Bi Po Rn Ra U Pu W Ur Sr Cs').split(' '));
   // tekst o hemiji: tek tada se KOH, HCl, COOH, OH… (simboli elemenata bez indeksa) smatraju formulama, a ne rečima
   const HEM_KONTEKST = /(kiselin|hidroksid|oksid|\bjon(?:a|i|u|e|om|ima)?\b|jedinjenj|molekul|reakcij|\bbaz[aeiu]|alkohol|funkcional|supstanc|\bhemij|rastvor|\batom|karboks|ugljovodonik|\bestr|alkan|alkin|alken|aldehid|katjon|anjon|valenc|elektrolit|formul|\bgrup|→)/i;
+  // dvoslovni simboli koji su i reči ili imena (Na, Ne, Ti, Ra, Al Pačino, Huang He, Sun Cu) – latinicom samo u hemijskom tekstu
+  const DVOSMISLENI = new Set(['Na', 'Ne', 'Ni', 'Po', 'Se', 'Ti', 'Li', 'As', 'Ra', 'Al', 'Ar', 'He', 'Cu', 'Bi', 'Ur', 'Co', 'Sn', 'Be', 'Ba']);
+  // reči po kojima se prepoznaje tekst o hemiji (uz HEM_KONTEKST)
+  const GLASOVI = /(slov|zvučn|izgovar|glas[aoue]?\b|suglasn|samoglasn)/i; // tekst o slovima i glasovima (gramatika)
+  const RECI_SIMBOLI = new Set(['Na', 'Ne', 'Ni', 'Po', 'Se', 'Ti', 'Li', 'As']); // i srpske reči – na početku rečenice su reči
+  const HEM_TEKST = /(metan|etan|propan|butan|pentan|heksan|metil|etil|ugljenik|vodonik|kiseonik|azot|sumpor|fosfor|ugljovodon|izomer|\bmetal|elemen(at|t)|\bmol[aeu]?\b|≡|\bvez[aeu]\b|plemenit|helijum|argon|neon|cink|bakar|gvožđ|olovo|magnezijum|aluminijum|živ[aeu]\b|gustin)/i;
   const SRPSKE_RECI = new Set(['ne', 'na', 'ni', 'po', 'se', 'li', 'i', 'u', 'as']);
   // Strane reči i imena koja se i u ćiriličnom tekstu pišu izvorno (igre, brendovi, naslovi, latinski nazivi vrsta,
   // italijanske muzičke oznake). Ostaju latinicom i sa padežnim nastavkom (Minecraftu, Cupheada, Netherita).
@@ -166,11 +172,11 @@
     // jedinice: posle broja, uz razlomačku crtu, ili same u zagradi – „(Hz)“
     // jedinica na početku čvora teksta posle $…$: „$25$ m.“
     if (JEDINICE.has(tok) && /^\s+$/.test(pre) && /^\s*([.,;:!?)]|$)/.test(posle)) return true;
-    if (JEDINICE.has(tok) && (/[\d?]\s?$/.test(pre) || /\d\s(hiljad[aeu]|milion[aui]?|milijard[aei]|bilion[aui]?)\s$/i.test(pre) || odmahPre === '/' || odmahPosle === '/' || (preZnak === '(' && posleZnak === ')'))) return true;
+    if (JEDINICE.has(tok) && (/[\d?]\s?$/.test(pre) || /\d\s(hiljad[aeu]|milion[aui]?|milijard[aei]|bilion[aui]?)\s$/i.test(pre) || odmahPre === '/' || odmahPosle === '/' || odmahPre === '·' || odmahPosle === '·' || (preZnak === '(' && posleZnak === ')'))) return true;
     // rimski brojevi: XIV, II, CM; jedno slovo samo posle imena (Petar I, Džordž V), ne posle „vitamin“
     if (tok === tok.toUpperCase() && RIMSKI.test(tok)) {
       if (tok.length >= 2) return true;
-      if (/^[A-ZČĆŽŠĐ][a-zčćžšđ]+$/.test(preRec) && /[a-zčćžšđ]\s$/.test(pre) && !/^vitamin/i.test(preRec)) return true;
+      if (/^[A-ZČĆŽŠĐ][a-zčćžšđ]+$/.test(preRec) && /[a-zčćžšđ]\s$/.test(pre) && !/^vitamin/i.test(preRec) && !GLASOVI.test(tekst)) return true;
       // vek: „u V veku“, „od V do XV veka“
       if (/^\s?(?:(?:do|i|ili|–|-)\s?[MDCLXVI]+\s?)?vek/.test(posle)) return true;
       // „futur I“ (gramatika): vreme, ne ime
@@ -179,6 +185,34 @@
       if (/^[A-ZČĆŽŠĐ]{2,}$/.test(preRec) && /[A-ZČĆŽŠĐ]\s$/.test(pre)) return true;
     }
     if (SKRACENICE.has(tok)) return true;
+    // oksidacioni broj uz naziv: srebro(I)-hlorid, bakar(I)-oksid – „I“ ostaje rimski broj
+    if (RIMSKI.test(tok) && odmahPre === '(' && odmahPosle === ')' && /[a-zčćžšđ]\($/.test(pre)) return true;
+    // strane oznake strana sveta i polova magneta: „N (od engleske reči North)“, „sever (N)“, „S-pol“
+    if (/^[NSEW]$/.test(tok) && (/^\s*\(od engl/i.test(posle) || (preZnak === '(' && posleZnak === ')' && /(sever|jug|istok|zapad|pol)\w*\s*\($/i.test(pre)) || /^-pol/.test(posle))) return true;
+    // seizmički P i S talasi
+    if (/^[PS]$/.test(tok) && (/^(-|\)?\s)talas/.test(posle) || (preZnak === '(' && /^\)\s*talas/.test(posle)))) return true;
+    // hemijski simboli u hemijskom tekstu: Fe, Zn, Hg uvek; C, H, N… uz broj, vezu, formulu ili u tekstu o hemiji
+    const pocetakRecenice = !pre.trim() || /[.!?:]\s*[„"]?$/.test(pre);
+    if (SIMBOLI.has(tok) && !/^vitamin/i.test(preRec) && !/^-[A-ZČĆŽŠĐa-zčćžšđ]/.test(posle) && !GLASOVI.test(tekst) && !(pocetakRecenice && RECI_SIMBOLI.has(tok)) && !(pocetakRecenice && /^[OSIU]$/.test(tok))) {
+      const dvoslovni = tok.length === 2;
+      const dvosmislen = DVOSMISLENI.has(tok);
+      if (dvoslovni && !dvosmislen) return true;
+      const velike = tekst.match(/(?<![A-Za-z0-9])[A-ZČĆŽŠĐ][a-zčćžšđ]*(?![A-Za-z0-9])/g) || [];
+      // kratak tekst sastava („5 C i 12 H“, „2Na i S i 4O“): broj uz simbol, a sve reči velikim slovom su simboli
+      if (/\d\s?[A-Z][a-z]?(?![a-z])/.test(tekst) && !/[a-zčćžšđ]{3,}/.test(tekst) && velike.length && velike.every((w) => SIMBOLI.has(w))) return true;
+      const hemija = HEM_KONTEKST.test(tekst) || HEM_TEKST.test(tekst) || INDEKSI.test(tekst)
+        || velike.some((w) => w.length === 2 && SIMBOLI.has(w) && !DVOSMISLENI.has(w)); // uz Fe, Zn, Mg… i Cu, Al su simboli
+      const veza = /^[–—\-=≡]/.test(odmahPosle) || /[–—\-=≡]$/.test(odmahPre) || /^\s?[+→>]/.test(posle) || /[+→>]\s?$/.test(pre);
+      if (veza && hemija) return true;
+      if (/^(prvom|drugom|trećem|četvrtom|petom|šestom|svakom|istom)$/i.test(preRec) && /^[CNO]$/.test(tok)) return true; // „na drugom C“
+      if (preZnak === '(' && /^\)\s*$/.test(posle) && /^[A-ZČĆŽŠĐ]?[a-zčćžšđ]+\s\($/.test(pre) && !RECI_SIMBOLI.has(tok)) return true; // odgovor „Jedan (P)“
+      if (hemija && /\d\s?$/.test(pre) && !JEDINICE.has(tok)) return true;                     // 4 C, 12 H (ne 25 °C – to je gore)
+      if (hemija && preZnak === '(' && posleZnak === ')' && /[a-zčćžšđ]\s\($/.test(pre)) return true; // Argon (Ar), fosfor (P)
+      if (hemija && (/^\s?[,)]/.test(posle) || /[(,]\s?$/.test(pre)) && /(,\s?[A-Z][a-z]?\b.*){1}/.test(tekst) && (tekst.match(/\b[A-Z][a-z]?\b/g) || []).filter((x) => SIMBOLI.has(x)).length >= 3) return true; // nabrajanje: Mg, Fe, Cu…
+      if (hemija && tok.length === 1 && !/^[OSIU]$/.test(tok)) return true;                    // „na drugom C“, „samo C i H“
+      if (hemija && /^[OSIU]$/.test(tok) && /^\s?([),.;:+→]|\(\d|$)/.test(posle)) return true;  // „1 mola S (32 g)“, ali ne „O tome…“
+      if (hemija && dvoslovni && (/^\s?[,)]/.test(posle) || /[(,]\s?$/.test(pre) || /^\s*(i|ili)\s+[A-Z]/.test(posle) || /\b(i|ili)\s$/.test(pre))) return true;
+    }
     // hemijski simboli u tekstu o elementima
     // (ne deo imena: Al-Horezmi)
     if (SIMBOLI.has(tok) && !/^-[A-ZČĆŽŠĐ]/.test(posle) && /(simbol|hemijsk|latinsk|element|dolazi od|metal)/i.test(tekst)) {
@@ -230,6 +264,8 @@
     // ceo tekst je hemijska formula („Mg(OH)₂“, „–COOH“, „2H₂ + O₂ → 2H₂O“) – ostaje latinicom
     if (jeFormula(t)) return tekst;
     if (/^[A-Z]{1,4}$/.test(t) && (t.length === 1 || RIMSKI.test(t)) && !(/^[AIUOSKV]$/.test(t) && tekst !== t)) return tekst;
+    // ceo tekst je simbol elementa (odgovor „Cu“, „He“) – osim kad je to i reč ili ime (Na, Ne, Po, Ra…)
+    if (/^[A-Z][a-z]$/.test(t) && SIMBOLI.has(t) && !/^(Na|Ne|Ni|Po|Se|Ti|Li|As|Ra|Al|Ur|Bi)$/.test(t)) return tekst;
     if (/^([ČĆŽŠĐ]|Dž|Lj|Nj)$/.test(t)) return tekst; // slovo latinice kao odgovor
     if (/^(A|B|AB|0)[+−-]?$/.test(t)) return tekst; // krvna grupa kao odgovor
     // nizovi pojedinačnih velikih slova (tastatura Q W E R T Y…, note C D E F G A H) ostaju latinicom

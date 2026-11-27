@@ -388,11 +388,11 @@ module.exports = ({ L, Q, U, S, G, r, krug, proveri }) => {
   Q(1, 'Kako se zove paralelogram čiji su svi uglovi pravi?',
     ['Pravougaonik', 'Romb', 'Deltoid', 'Trapez'],
     'Pravougaonika ima svuda oko nas: sveska, ekran telefona, vrata, košarkaški teren…', 'pravougli',
-    { mediji: G(PR, [{ p: 'ABCD', b: 0 }, { pu: 'DAB' }, { pu: 'ABC' }, { pu: 'BCD' }, { pu: 'CDA' }], { velicina: 240 }) });
+    { medijiOdgovora: G(PR, [{ p: 'ABCD', b: 0 }, { pu: 'DAB' }, { pu: 'ABC' }, { pu: 'BCD' }, { pu: 'CDA' }], { velicina: 240 }) });
   Q(1, 'Kako se zove paralelogram čije su sve stranice jednake?',
     ['Romb', 'Pravougaonik', 'Trapez', 'Deltoid'],
     'Romb izgleda kao „nakrivljen kvadrat“. Ime potiče od grčke reči „rhombos“ – čigra koja se vrti.', 'romb',
-    { mediji: cetv(RB, { e: sveCrtice(RB) }) });
+    { medijiOdgovora: cetv(RB, { e: sveCrtice(RB) }) });
   Q(1, 'Koji paralelogram je istovremeno i pravougaonik i romb?',
     ['Kvadrat', 'Deltoid', 'Trapez', 'Takav ne postoji'],
     'Kvadrat ima sve osobine pravougaonika (prave uglove, jednake dijagonale) i sve osobine romba (jednake stranice, normalne dijagonale).', 'kvadrat',
@@ -410,14 +410,14 @@ module.exports = ({ L, Q, U, S, G, r, krug, proveri }) => {
   Q(2, 'Oko kog od ovih paralelograma uvek može da se opiše kružnica?',
     ['Pravougaonika', 'Romba koji nije kvadrat', 'Svakog paralelograma', 'Nijednog'],
     'Centar opisane kružnice je presek dijagonala, a poluprečnik je polovina dijagonale. Kod romba (koji nije kvadrat) temena nisu jednako udaljena od centra.', 'kružnica',
-    { mediji: cetv(PR), medijiOdgovora: cetv(PR, { dijag: true, O: true, e: [{ kr: 'O', kroz: 'A', b: 3, crtaj: 1 }] }) });
+    { medijiOdgovora: cetv(PR, { dijag: true, O: true, e: [{ kr: 'O', kroz: 'A', b: 3, crtaj: 1 }] }) });
   {
     const O = presekDuzi(RB.A, RB.C, RB.B, RB.D);
     const h = 5 * Math.sin((60 * Math.PI) / 180);
     Q(2, 'U koji od ovih paralelograma uvek može da se upiše kružnica (koja dodiruje sve stranice)?',
       ['U romb', 'U pravougaonik koji nije kvadrat', 'U svaki paralelogram', 'Ni u jedan'],
       'Presek dijagonala romba je jednako udaljen od sve četiri stranice, a poluprečnik upisane kružnice je polovina visine romba.', 'romb',
-      { mediji: cetv(RB), medijiOdgovora: cetv(RB, { dijag: true, O: true, e: [{ kr: 'O', r: r(h / 2), b: 3, crtaj: 1 }] }) });
+      { medijiOdgovora: cetv(RB, { dijag: true, O: true, e: [{ kr: 'O', r: r(h / 2), b: 3, crtaj: 1 }] }) });
     proveri(O[0] > 0, 'O');
   }
   Q(2, 'Kvadrat ima 4 ose simetrije, a romb koji nije kvadrat samo 2. Koje ose kvadrata romb „gubi“?',
@@ -460,7 +460,7 @@ module.exports = ({ L, Q, U, S, G, r, krug, proveri }) => {
     ['Trapez', 'Romb', 'Kvadrat', 'Pravougaonik'],
     'Trapez ima samo jedan par paralelnih stranica, a paralelogram dva para. Romb, kvadrat i pravougaonik su paralelogrami.',
     'Svaki kvadrat je istovremeno i romb, i pravougaonik, i paralelogram – ima čak četiri imena!', 'trapez',
-    { mediji: G({ A: [0, 0], B: [6, 0], C: [4.5, 3], D: [1.2, 3] }, [{ p: 'ABCD', b: 0 }, ...paralelno([0, 0], [6, 0]), ...paralelno([1.2, 3], [4.5, 3])], { velicina: 240, bezImena: ['A', 'B', 'C', 'D'] }) });
+    { medijiOdgovora: G({ A: [0, 0], B: [6, 0], C: [4.5, 3], D: [1.2, 3] }, [{ p: 'ABCD', b: 0 }, ...paralelno([0, 0], [6, 0]), ...paralelno([1.2, 3], [4.5, 3])], { velicina: 240, bezImena: ['A', 'B', 'C', 'D'] }) });
   S(2, 'Spoji osobine sa vrstom paralelograma:',
     [['Sve stranice jednake, uglovi nisu pravi', 'romb'], ['Svi uglovi pravi, stranice nisu sve jednake', 'pravougaonik'], ['Sve stranice jednake i svi uglovi pravi', 'kvadrat']],
     'Pravougaonik „nasleđuje“ sve osobine paralelograma i dodaje prave uglove; romb dodaje jednake stranice; kvadrat ima oboje.', 'vrsta',

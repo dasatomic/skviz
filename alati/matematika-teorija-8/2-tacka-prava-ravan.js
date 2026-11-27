@@ -166,7 +166,7 @@ module.exports = ({ L, Q, U, S, G, r, proveri, kvadar, prostor, ravanZ, ravan })
   Q(1, 'Kroz jednu tačku, koliko ravni možemo da provučemo?',
     ['Beskonačno mnogo', 'Tačno jednu', 'Tačno dve', 'Nijednu'],
     'Ravan može da prolazi kroz tačku na bezbroj načina, kao što lepeza sadrži bezbroj pravaca kroz jednu tačku.', 'ravan',
-    { mediji: prostor({ A: V(0, 0, 0) }, [], { velicina: 200 }) });
+    { mediji: prostor({ A: V(0, 0, 0) }, [{ tacka: 'A' }], { velicina: 200 }) });
 
   U(2, 'Koja tvrdnja o ravni NIJE tačna?',
     ['Dve tačke jednoznačno određuju ravan', 'Tri nekolinearne tačke određuju ravan', 'Prava i tačka van nje određuju ravan', 'Dve paralelne prave određuju ravan'],
@@ -187,7 +187,7 @@ module.exports = ({ L, Q, U, S, G, r, proveri, kvadar, prostor, ravanZ, ravan })
   Q(1, 'Koja figura u prostoru leži cela u jednoj ravni?',
     ['Krug', 'Kocka', 'Kvadar', 'Lopta'],
     'Krug je ravna figura, pa cela leži u jednoj ravni. Kocka, kvadar i lopta su tela i ne mogu da stanu u jednu ravan.', 'krug',
-    { mediji: G({ O: [0, 0] }, [{ kr: 'O', r: 2.2, b: 2 }], { velicina: 220 }) });
+    { medijiOdgovora: G({ O: [0, 0] }, [{ kr: 'O', r: 2.2, b: 2 }], { velicina: 220 }) });
 
   Q(1, 'Koji predmet najbolje modeluje ravan?',
     ['Tabla', 'Ivica stola', 'Vrh olovke', 'Konac'],

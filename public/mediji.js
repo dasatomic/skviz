@@ -470,6 +470,28 @@ const MOLEKULI = {
   })(),
 };
 
+// Molekul se okreće tako da mu je najduži pravac vodoravan, a najtanji ka posmatraču (glavne ose, Jakobijeva metoda) –
+// inače se ravan molekul (estar, benzen) može videti „sa ivice“ i atomi se poklope.
+function usmeri(at) {
+  const C = [[0, 0, 0], [0, 0, 0], [0, 0, 0]];
+  for (const { p } of at) for (let i = 0; i < 3; i++) for (let j = 0; j < 3; j++) C[i][j] += p[i] * p[j];
+  const V = [[1, 0, 0], [0, 1, 0], [0, 0, 1]];
+  for (let it = 0; it < 30; it++) {
+    let p = 0, q = 1;
+    for (const [i, j] of [[0, 1], [0, 2], [1, 2]]) if (Math.abs(C[i][j]) > Math.abs(C[p][q])) { p = i; q = j; }
+    if (Math.abs(C[p][q]) < 1e-9) break;
+    const th = 0.5 * Math.atan2(2 * C[p][q], C[q][q] - C[p][p]), c = Math.cos(th), s = Math.sin(th);
+    for (let k = 0; k < 3; k++) { const a = C[k][p], b = C[k][q]; C[k][p] = c * a - s * b; C[k][q] = s * a + c * b; }
+    for (let k = 0; k < 3; k++) { const a = C[p][k], b = C[q][k]; C[p][k] = c * a - s * b; C[q][k] = s * a + c * b; }
+    for (let k = 0; k < 3; k++) { const a = V[k][p], b = V[k][q]; V[k][p] = c * a - s * b; V[k][q] = s * a + c * b; }
+  }
+  const ose = [0, 1, 2].sort((a, b) => C[b][b] - C[a][a]); // od najvećeg rasipanja: x, y, pa z (ka posmatraču)
+  const [u, v, w] = ose.map((o) => [V[0][o], V[1][o], V[2][o]]);
+  const det = u[0] * (v[1] * w[2] - v[2] * w[1]) - u[1] * (v[0] * w[2] - v[2] * w[0]) + u[2] * (v[0] * w[1] - v[1] * w[0]);
+  const zn = det < 0 ? -1 : 1; // bez ogledanja – hiralni molekul ostaje isti
+  for (const a of at) { const [x, y, z] = a.p; a.p = [u, v, w].map((e, i) => (i === 2 ? zn : 1) * (x * e[0] + y * e[1] + z * e[2])); }
+}
+
 function prikaziMolekul(k, m) {
   const def = m.atomi ? m : MOLEKULI[m.ime] || (window.Molekuli && window.Molekuli.dohvati(m.ime));
   if (!def) return prikaziTekst(k, { tekst: m.formula || '?' });
@@ -480,8 +502,12 @@ function prikaziMolekul(k, m) {
   const cy = at.reduce((s, a) => s + a.p[1], 0) / at.length;
   const cz = at.reduce((s, a) => s + a.p[2], 0) / at.length;
   at.forEach((a) => (a.p = [a.p[0] - cx, a.p[1] - cy, a.p[2] - cz]));
+  if (!m.atomi && def.s && at.length > 2) usmeri(at); // samo molekuli iz SMILES-a – ručno složeni (rešetke, grafit) imaju svoj ugao
   const R = Math.max(1, ...at.map((a) => Math.hypot(...a.p) + (ATOMI[a.e]?.r || 0.5)));
-  const sk = Math.min(w, h) / 2.3 / R;
+  // okreće se oko uspravne ose: vodoravno staje rastojanje od ose (x, z), uspravno visina (y) uz malo nagiba
+  const Rxz = Math.max(1, ...at.map((a) => Math.hypot(a.p[0], a.p[2]) + (ATOMI[a.e]?.r || 0.5)));
+  const Ry = Math.max(1, ...at.map((a) => Math.abs(a.p[1]) + (ATOMI[a.e]?.r || 0.5)));
+  const sk = Math.min(w / 2.2 / Rxz, h / 2.3 / Math.min(R, Ry + 0.35 * Rxz), (Math.min(w, h) / 2.3 / R) * 2.2);
   const legenda = document.createElement('div');
   legenda.className = 'legenda';
   const elementi = [...new Set(at.map((a) => a.e))];

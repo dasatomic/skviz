@@ -3,6 +3,7 @@
 //
 //   node alati/pregled-medija.js kvizovi/razred7-fizika/kviz.json 5           (lekcija 5)
 //   node alati/pregled-medija.js kvizovi/razred7-fizika/kviz.json 5 --vreme 4000 --izlaz /tmp/pf
+//   node alati/pregled-medija.js kvizovi/fizika/kviz.json --pitanja 12,50 --cirilica   (redni brojevi u kviz.json; prikaz ćirilicom kao u igri)
 //   node alati/pregled-medija.js kvizovi/razred7-fizika/kviz.json 5 --od 3 --do 8   (samo pitanja 3–8 lekcije)
 //
 // Pravi stranice <izlaz>/L<lekcija>-<n>.png sa po 6 pitanja: tekst pitanja (✓ tačan odgovor),
@@ -23,6 +24,7 @@ const izlaz = path.resolve(opc('--izlaz', path.join(os.tmpdir(), 'pregled-medija
 const vreme = Number(opc('--vreme', 3000));
 const od = Number(opc('--od', 1));
 const doN = Number(opc('--do', 1e9));
+const CIRILICA = arg.includes('--cirilica'); // prikaz kao u igri: preslovljavanje DOM-a (public/pismo.js, isto kao app.js)
 const NA_STRANI = 6;
 fs.mkdirSync(izlaz, { recursive: true });
 
@@ -32,7 +34,8 @@ if (!CHROME) { console.error('Nema Chrome-a (postavi CHROME=…)'); process.exit
 const kviz = JSON.parse(fs.readFileSync(fajl, 'utf8'));
 const sva = kviz.pitanja.map((p, i) => ({ ...p, _i: i }));
 const lek = sva.filter((p) => !lekcija || p.lekcija === Number(lekcija));
-const izbor = lek.slice(od - 1, doN);
+const samo = opc('--pitanja', '') ? opc('--pitanja').split(',').map(Number) : null;
+const izbor = samo ? sva.filter((p) => samo.includes(p._i)) : lek.slice(od - 1, doN);
 const pub = path.join(__dirname, '..', 'public');
 const paket = path.relative(pub, path.dirname(path.resolve(fajl)));
 
@@ -59,19 +62,23 @@ for (let s = 0; s < izbor.length; s += NA_STRANI) {
 <base href="file://${path.dirname(path.resolve(fajl))}/"></head><body>
 <script>// animacije: prvi kadrovi u t = 0, zatim stalno kadar u trenutku VREME (scena „zaleđena“ u tom trenutku)
 const T0=performance.now();window.requestAnimationFrame=cb=>setTimeout(()=>cb(performance.now()-T0<300?0:${vreme}),40);</script>
-<script src="file://${pub}/geo.js"></script><script src="file://${pub}/fizika.js"></script><script src="file://${pub}/biologija.js"></script>
+<script src="file://${pub}/pismo.js"></script>${CIRILICA ? `<script>
+const NE_DIRAJ='script,style,textarea,input,[data-lat],[lang="en"],.formula,.formula-mala,.kod-sobe,.adresa,.mat,.kod,.kod-prozor,.kod-uz';
+function prevedi(k){if(k.nodeType===3){if(!k.parentElement?.closest(NE_DIRAJ)){const n=Pismo.uCirilicu(k.data);if(n!==k.data)k.data=n}return}if(k.nodeType!==1||k.closest(NE_DIRAJ))return;const w=document.createTreeWalker(k,NodeFilter.SHOW_TEXT);for(let n;(n=w.nextNode());){if(n.parentElement?.closest(NE_DIRAJ))continue;const t=Pismo.uCirilicu(n.data);if(t!==n.data)n.data=t}}
+addEventListener('DOMContentLoaded',()=>{prevedi(document.body);new MutationObserver(l=>{for(const m of l){if(m.type==='characterData')prevedi(m.target);else m.addedNodes.forEach(prevedi)}}).observe(document.body,{childList:true,subtree:true,characterData:true})});
+</script>` : ''}<script src="file://${pub}/geo.js"></script><script src="file://${pub}/fizika.js"></script><script src="file://${pub}/biologija.js"></script>
 <script src="file://${pub}/istorija.js"></script><script src="file://${pub}/scena3d.js"></script><script src="file://${pub}/mediji.js"></script><script src="file://${pub}/molekuli.js"></script>
 <script src="file://${pub}/hemija3d.js"></script><script src="file://${pub}/laboratorija.js"></script>
 <script>
 const P=${JSON.stringify(podaci)};
 const esc=s=>String(s??'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
 for(const p of P){const d=document.createElement('div');d.className='kartica';
-d.innerHTML='<div class="n">'+esc(p.naslov)+'</div><div class="o">'+p.odgovori.map((o,i)=>i?esc(o):'<b>✓ '+esc(o)+'</b>').join(' · ')+'</div>';
+const mt=t=>Mediji.matTekst(String(t));d.innerHTML='<div class="n">'+mt(p.naslov)+'</div><div class="o">'+p.odgovori.map((o,i)=>i?mt(o):'<b>✓ '+mt(o)+'</b>').join(' · ')+'</div>';
 document.body.appendChild(d);
 for(const [lab,m] of [['uz pitanje',p.mediji],['uz odgovor',p.odg]]){if(!m)continue;
  for(const x of [].concat(m)){const l=document.createElement('div');l.className='lab';l.textContent=lab+': '+x.vrsta+(x.scena?' / '+x.scena:'')+(x.tip?' / '+x.tip:'');d.appendChild(l);
  const k=document.createElement('div');d.appendChild(k);try{Mediji.prikaziMedij(k,x,{auto:true,paket:${JSON.stringify(paket)}})}catch(e){k.textContent='GREŠKA: '+e.message}}}
-const z=document.createElement('div');z.className='z';z.textContent=p.zan;d.appendChild(z);}
+const z=document.createElement('div');z.className='z';z.innerHTML=Mediji.matTekst(String(p.zan));d.appendChild(z);}
 window.onerror=(m)=>{document.body.insertAdjacentHTML('afterbegin','<div style="color:red">'+esc(m)+'</div>')};
 </script></body></html>`;
   const f = path.join(izlaz, `L${lekcija || 'sve'}-${strana}.html`);

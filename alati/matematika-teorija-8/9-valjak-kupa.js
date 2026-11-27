@@ -539,7 +539,8 @@ module.exports = ({ L, Q, U, S, G, proveri, telo, A, valjak, kupa, elipsa3, mrez
   Q(1, 'Ravan prolazi kroz osu kupe. Kakav je osni presek?',
     ['jednakokraki trougao', 'pravougaonik', 'krug', 'pravougli trougao'],
     'Osni presek kupe je jednakokraki trougao: osnovica je prečnik osnove, a kraci su izvodnice.', 'osni',
-    { mediji: kupa(4, 6, [{ lin3: [p3(-4, 0, 0), p3(4, 0, 0), p3(0, 0, 6)], zatv: 1, b: 2, gusto: 1 }], { imena: true, bezImena: ['K', 'L'] }) });
+    { mediji: kupa(4, 6, [], { imena: true, bezImena: ['K', 'L'] }),
+      medijiOdgovora: kupa(4, 6, [{ lin3: [p3(-4, 0, 0), p3(4, 0, 0), p3(0, 0, 6)], zatv: 1, b: 2, gusto: 1 }], { imena: true, bezImena: ['K', 'L'] }) });
 
   Q(2, 'Ravan paralelna osnovi seče kupu poluprečnika 6 cm i visine 8 cm na polovini visine. Koliki je poluprečnik preseka?',
     ['3 cm', '4 cm', '6 cm', '2 cm'],
@@ -555,7 +556,8 @@ module.exports = ({ L, Q, U, S, G, proveri, telo, A, valjak, kupa, elipsa3, mrez
   Q(2, 'Ravan prolazi kroz vrh kupe i tetivu osnove. Kakav je presek?',
     ['jednakokraki trougao', 'krug', 'elipsa', 'pravougaonik'],
     'Presek je trougao sa vrhom u S. Kraci su dve izvodnice, pa je jednakokraki.', 'tetiva',
-    { mediji: kupa(5, 3, [{ p: 'SPQ', b: 2, gusto: 1 }], { imena: true, bezImena: ['K', 'L', 'O', 'A', 'B'], T3: { P: p3(-3, 4, 0), Q: p3(3, 4, 0) } }) });
+    { mediji: kupa(5, 3, [{ d: 'PQ', b: 2, debljina: 3 }], { imena: true, bezImena: ['K', 'L', 'O', 'A', 'B'], T3: { P: p3(-3, 4, 0), Q: p3(3, 4, 0) } }),
+      medijiOdgovora: kupa(5, 3, [{ p: 'SPQ', b: 2, gusto: 1 }], { imena: true, bezImena: ['K', 'L', 'O', 'A', 'B'], T3: { P: p3(-3, 4, 0), Q: p3(3, 4, 0) } }) });
 
   Q(3, 'Kupa ima poluprečnik 5 cm i visinu 3 cm. Ravan kroz vrh i tetivu dužine 6 cm u osnovi (tetiva je na rastojanju 4 cm od centra) seče kupu. Kolika je površina tog preseka?',
     ['15 cm²', '12 cm²', '18 cm²', '30 cm²'],

@@ -438,7 +438,7 @@ module.exports = ({ L, Z, K, G, R, O, bez, r, proveri, naKrugu, pravilni, krug, 
     ['$N$', '$E$', '$K$', '$T$'],
     [K('Okretanjem za $180°$ slovo $N$ ponovo izgleda kao $N$ – centar je u sredini kose crte.', ['n']),
      K('$E$, $K$ i $T$ okrenuti naglavačke izgledaju drugačije.')],
-    G({ S: [1, 1.5] }, [{ lin: [[0, 0], [0, 3], [2, 0], [2, 3]], b: 1, debljina: 6, okreni: 180, oko: 'S', k: 1, id: 'n', ponovi: 1 }, { tacka: 'S', k: 1 }], { bezImena: ['S'], velicina: 100 }));
+    { samoResenje: G({ S: [1, 1.5] }, [{ lin: [[0, 0], [0, 3], [2, 0], [2, 3]], b: 1, debljina: 6, okreni: 180, oko: 'S', k: 1, id: 'n', ponovi: 1 }, { tacka: 'S', k: 1 }], { bezImena: ['S'], velicina: 100 }) });
 
   Z(2, 'Na kružnici $k(O, r)$ data je tetiva $AB$, a $CD$ je njena centralno simetrična slika u odnosu na $O$. Kakav je četvorougao $ABCD$?',
     ['pravougaonik', 'trapez koji nije pravougaonik', 'deltoid', 'trougao'],
@@ -569,5 +569,5 @@ module.exports = ({ L, Z, K, G, R, O, bez, r, proveri, naKrugu, pravilni, krug, 
     ['jednakostranični trougao', 'kvadrat', 'krug', 'pravougaonik'],
     [K('Figura ima centar simetrije ako se okretanjem za $180°$ oko njega poklopi sama sa sobom.'),
      K('Okrenut trougao „gleda“ na drugu stranu – ne poklapa se. Kvadrat, krug i pravougaonik se poklapaju.', ['t'])],
-    G({ ...pravilni(3, 2.5, [0, 0], 90), S: [0, 0] }, [{ p: 'ABC', b: 0 }, { p: 'ABC', b: 1, okreni: 180, oko: 'S', k: 2, id: 't', prazno: 1 }, { tacka: 'S', k: 2 }], { bezImena: ['A', 'B', 'C', 'S'], velicina: 160 }));
+    { samoResenje: G({ ...pravilni(3, 2.5, [0, 0], 90), S: [0, 0] }, [{ p: 'ABC', b: 0 }, { p: 'ABC', b: 1, okreni: 180, oko: 'S', k: 2, id: 't', prazno: 1 }, { tacka: 'S', k: 2 }], { bezImena: ['A', 'B', 'C', 'S'], velicina: 160 }) });
 };

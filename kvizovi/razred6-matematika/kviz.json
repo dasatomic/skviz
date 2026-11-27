@@ -103553,7 +103553,14 @@
    "lekcija": 37,
    "tezina": 1,
    "pitanje": "Kako se zove paralelogram čiji su svi uglovi pravi?",
-   "mediji": {
+   "odgovori": [
+    "Pravougaonik",
+    "Romb",
+    "Deltoid",
+    "Trapez"
+   ],
+   "zanimljivost": "Pravougaonika ima svuda oko nas: sveska, ekran telefona, vrata, košarkaški teren…",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "A": [
@@ -103593,20 +103600,20 @@
     ],
     "velicina": 240
    },
-   "odgovori": [
-    "Pravougaonik",
-    "Romb",
-    "Deltoid",
-    "Trapez"
-   ],
-   "zanimljivost": "Pravougaonika ima svuda oko nas: sveska, ekran telefona, vrata, košarkaški teren…",
    "rec": "pravougli"
   },
   {
    "lekcija": 37,
    "tezina": 1,
    "pitanje": "Kako se zove paralelogram čije su sve stranice jednake?",
-   "mediji": {
+   "odgovori": [
+    "Romb",
+    "Pravougaonik",
+    "Trapez",
+    "Deltoid"
+   ],
+   "zanimljivost": "Romb izgleda kao „nakrivljen kvadrat“. Ime potiče od grčke reči „rhombos“ – čigra koja se vrti.",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "A": [
@@ -103692,13 +103699,6 @@
     "velicina": 240,
     "bezImena": []
    },
-   "odgovori": [
-    "Romb",
-    "Pravougaonik",
-    "Trapez",
-    "Deltoid"
-   ],
-   "zanimljivost": "Romb izgleda kao „nakrivljen kvadrat“. Ime potiče od grčke reči „rhombos“ – čigra koja se vrti.",
    "rec": "romb"
   },
   {
@@ -103849,7 +103849,15 @@
    "vrsta": "uljez",
    "tezina": 1,
    "pitanje": "Koji četvorougao NIJE paralelogram?",
-   "mediji": {
+   "odgovori": [
+    "Trapez",
+    "Romb",
+    "Kvadrat",
+    "Pravougaonik"
+   ],
+   "objasnjenje": "Trapez ima samo jedan par paralelnih stranica, a paralelogram dva para. Romb, kvadrat i pravougaonik su paralelogrami.",
+   "zanimljivost": "Svaki kvadrat je istovremeno i romb, i pravougaonik, i paralelogram – ima čak četiri imena!",
+   "medijiOdgovora": {
     "vrsta": "geo",
     "t": {
      "A": [
@@ -103919,14 +103927,6 @@
      "D"
     ]
    },
-   "odgovori": [
-    "Trapez",
-    "Romb",
-    "Kvadrat",
-    "Pravougaonik"
-   ],
-   "objasnjenje": "Trapez ima samo jedan par paralelnih stranica, a paralelogram dva para. Romb, kvadrat i pravougaonik su paralelogrami.",
-   "zanimljivost": "Svaki kvadrat je istovremeno i romb, i pravougaonik, i paralelogram – ima čak četiri imena!",
    "rec": "trapez"
   },
   {
@@ -104112,36 +104112,6 @@
    "lekcija": 37,
    "tezina": 2,
    "pitanje": "Oko kog od ovih paralelograma uvek može da se opiše kružnica?",
-   "mediji": {
-    "vrsta": "geo",
-    "t": {
-     "A": [
-      0,
-      0
-     ],
-     "B": [
-      6,
-      0
-     ],
-     "C": [
-      6,
-      3.6
-     ],
-     "D": [
-      0,
-      3.6
-     ]
-    },
-    "e": [
-     {
-      "p": "ABCD",
-      "b": 0,
-      "id": "lik"
-     }
-    ],
-    "velicina": 240,
-    "bezImena": []
-   },
    "odgovori": [
     "Pravougaonika",
     "Romba koji nije kvadrat",
@@ -104211,36 +104181,6 @@
    "lekcija": 37,
    "tezina": 2,
    "pitanje": "U koji od ovih paralelograma uvek može da se upiše kružnica (koja dodiruje sve stranice)?",
-   "mediji": {
-    "vrsta": "geo",
-    "t": {
-     "A": [
-      0,
-      0
-     ],
-     "B": [
-      5,
-      0
-     ],
-     "C": [
-      7.5,
-      4.33
-     ],
-     "D": [
-      2.5,
-      4.33
-     ]
-    },
-    "e": [
-     {
-      "p": "ABCD",
-      "b": 0,
-      "id": "lik"
-     }
-    ],
-    "velicina": 240,
-    "bezImena": []
-   },
    "odgovori": [
     "U romb",
     "U pravougaonik koji nije kvadrat",
