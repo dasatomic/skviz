@@ -591,3 +591,52 @@ body.ekran .elementi { grid-template-columns: repeat(5, 1fr); }
 .karta-objasnjenje h3 { color: var(--istaknuto); }
 .karta-objasnjenje p { margin: 6px 0 0; line-height: 1.45; }
 body.ekran .karta-pitanje { font-size: 1.35em; }
+
+/* ───── bonus „Napucani iks oks“ (public/xo.js) ───── */
+.xo-tabla { display: block; width: 100%; height: auto; }
+.xo-tabla .xo-velik { opacity: .9; animation: uskok .5s; }
+.xo-tabla .xo-novo { animation: uskok .4s; transform-box: fill-box; transform-origin: center; }
+.xo-tabla .xo-linija { stroke-dasharray: 120; stroke-dashoffset: 120; animation: xo-crta .8s .2s forwards; filter: drop-shadow(0 0 2px #ffd166); }
+.xo-tabla .xo-slobodno { fill: #ffffff00; cursor: pointer; }
+.xo-tabla.biram .xo-slobodno { fill: #ffd16630; animation: xo-sija 1.4s infinite alternate; }
+.xo-tabla.biram .xo-slobodno:hover, .xo-tabla .xo-slobodno.izabrano { fill: #ffd16666; }
+.xo-tabla .xo-puls { animation: xo-sija .8s infinite alternate; }
+@keyframes xo-crta { to { stroke-dashoffset: 0; } }
+@keyframes xo-sija { from { opacity: .45; } to { opacity: 1; } }
+.xo-polje { max-width: 520px; margin: 8px auto; padding: 6px; border-radius: var(--radijus); background: var(--panel); box-shadow: 0 6px 28px #0008, inset 0 0 0 1px #ffffff14; }
+.xo-z { font-weight: 900; }
+.xo-glava { display: flex; align-items: center; gap: 8px; margin: 4px 0 6px; font-weight: 600; }
+.xo-strana { flex: 1; min-width: 0; padding: 6px 10px; border-radius: 99px; background: var(--polje); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; transition: box-shadow .3s; }
+.xo-strana.desno { text-align: right; }
+.xo-strana.na-potezu { box-shadow: 0 0 0 2px var(--istaknuto), 0 0 14px #ffc93c66; }
+.xo-rez { font-family: var(--uslovno); font-size: 1.5em; font-weight: 800; font-variant-numeric: tabular-nums; }
+.xo-status { text-align: center; font-size: 1.1em; margin: 6px 0 2px; }
+.xo-vest { text-align: center; color: var(--blago); font-size: .95em; animation: ulaz .4s; }
+.xo-vest.lose { color: #ff8a80; }
+.xo-rok { height: 5px; border-radius: 9px; background: var(--polje); overflow: hidden; margin: 6px 0; }
+.xo-rok i { display: block; height: 100%; background: var(--dobro); transform-origin: left; transition: transform .2s linear; }
+.xo-rok.tudji i { background: var(--blago); }
+.xo-rok.hitno:not(.tudji) i { background: var(--lose); }
+.xo-naslov { margin-top: 14px; }
+.xo-mreza { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; margin: 8px 0 90px; }
+.xo-mreza.velika { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+.xo-kartica { background: var(--kartica); border-radius: var(--radijus); padding: 8px; display: flex; flex-direction: column; gap: 4px; }
+.xo-ig { display: flex; align-items: center; gap: 5px; font-size: .9em; padding: 2px 6px; border-radius: 99px; }
+.xo-ig .ime { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.xo-ig.na-potezu { background: #ffc93c22; }
+.xo-ig.pobednik .ime { color: var(--istaknuto); font-weight: 700; }
+.xo-ig .plus { color: #5ce68a; font-weight: 700; }
+.xo-mini-zad { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.xo-uvod h1 { font-size: 2.1em; }
+.xo-uvod-slika { width: min(250px, 70vw); margin: 4px auto 10px; animation: ulaz .6s; }
+.xo-uvod-slika .xo-tabla { padding: 5px; border-radius: 12px; background: var(--panel); }
+.xo-uvod-slika .sitno { margin-top: 6px; }
+.xo-pravila { list-style: none; padding: 0; margin: 4px auto 10px; max-width: 480px; text-align: left; display: flex; flex-direction: column; gap: 7px; }
+.xo-pravila li { display: flex; gap: 10px; align-items: center; background: var(--kartica); border-radius: 12px; padding: 8px 12px; animation: ulaz .5s backwards; }
+.xo-pravila li:nth-child(2) { animation-delay: .1s; } .xo-pravila li:nth-child(3) { animation-delay: .2s; } .xo-pravila li:nth-child(4) { animation-delay: .3s; }
+.xo-pravila li > span { font-size: 1.4em; min-width: 1.6em; text-align: center; }
+.xo-pravila .xo-tri { color: #ff6b81; font-size: 1em; font-weight: 900; letter-spacing: -.1em; }
+body.ekran .xo-pravila { max-width: 640px; font-size: 1.15em; }
+body.ekran .xo-uvod-slika { width: min(340px, 40vw); }
+.xo-tabla .xo-cilj { fill: none; stroke: #ffd166; stroke-width: 1.1; filter: drop-shadow(0 0 2px #ffd166aa); animation: xo-sija 1s infinite alternate; pointer-events: none; }
+.xo-tabla .xo-strelica { fill: none; stroke: #ffd166; stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; filter: drop-shadow(0 0 1.5px #000); }

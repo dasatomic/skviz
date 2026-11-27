@@ -332,12 +332,13 @@ function crtaj(staro) {
   if (f === 'trojka' || f === 'trojka-otkrivanje') kljuc = 't' + V.trojka.rb + V.krug;
   if (f === 'hemija' || f === 'hemija-otkrivanje') kljuc = 'h' + V.hemija.rb + V.krug;
   if (f === 'karta' || f === 'karta-otkrivanje') kljuc = 'k' + V.karta.rb + V.krug;
+  if (f === 'xo' || f === 'xo-otkrivanje') kljuc = 'o' + V.xo.rb + V.krug;
   const nov = kljuc !== kljucEkrana;
   if (nov) { ocisti(); kljucEkrana = kljuc; app.innerHTML = ''; window.scrollTo(0, 0); }
   ({ lobi: ekranLobi, uvod: ekranUvod, pitanje: ekranPitanje, otkrivanje: ekranPitanje, tabela: ekranTabela,
     reci: ekranReci, 'reci-otkrivanje': ekranReci, slovo: ekranSlovo, 'slovo-otkrivanje': ekranSlovo,
     raptori: ekranRaptori, 'raptori-otkrivanje': ekranRaptori, trojka: ekranTrojka, 'trojka-otkrivanje': ekranTrojka,
-    hemija: ekranHemija, 'hemija-otkrivanje': ekranHemija, karta: ekranKarta, 'karta-otkrivanje': ekranKarta, kraj: ekranKraj }[f] || ekranLobi)(nov, staro);
+    hemija: ekranHemija, 'hemija-otkrivanje': ekranHemija, karta: ekranKarta, 'karta-otkrivanje': ekranKarta, xo: ekranXO, 'xo-otkrivanje': ekranXO, kraj: ekranKraj }[f] || ekranLobi)(nov, staro);
   meniDugme();
 }
 
@@ -821,6 +822,7 @@ function ekranUvod(nov) {
   if (u.vrsta === 'trojka') return uvodTrojke(u);
   if (u.vrsta === 'hemija') return uvodHemija(u);
   if (u.vrsta === 'karta') return uvodKarte(u);
+  if (u.vrsta === 'xo') return uvodXO(u);
   app.innerHTML = `<div class="uvod">
     <div class="veliki">${pitanja ? kv?.ikona || '❓' : '🔤'}</div>
     <div class="sitno">Krug ${u.broj}${pitanja && kv?.podnaslov ? ' · ' + esc(kv.podnaslov) : pitanja ? '' : ' · bonus'}</div>
@@ -1290,8 +1292,8 @@ function osveziSlaganje() {
 }
 
 // ───────────────────────── bonus „Na slovo…“ ─────────────────────────
-const IKONA_BONUSA = { reci: '🔤', geografija: '🌍', nauka: '🧑‍🔬', istorija: '👑', sport: '🏅', raptori: '🦖', trojka: '🏀', hemija: '⚗️', karta: '🗺️', 'raptori|trojka': '🎲' };
-const NAZIV_BONUSA = { reci: 'Najduža reč', geografija: 'Zanimljiva geografija', nauka: 'Naučnici – matematičari i fizičari', istorija: 'Istorijske ličnosti', sport: 'Sportisti', raptori: 'Beži od raptora!', trojka: 'Trojka!', hemija: 'Elementi – cena i opasnost', karta: 'Pronađi grad na karti', 'raptori|trojka': 'Beži od raptora! ili Trojka!' };
+const IKONA_BONUSA = { reci: '🔤', geografija: '🌍', nauka: '🧑‍🔬', istorija: '👑', sport: '🏅', raptori: '🦖', trojka: '🏀', hemija: '⚗️', karta: '🗺️', xo: '#️⃣', 'raptori|trojka': '🎲', 'raptori|trojka|xo': '🎲' };
+const NAZIV_BONUSA = { reci: 'Najduža reč', geografija: 'Zanimljiva geografija', nauka: 'Naučnici – matematičari i fizičari', istorija: 'Istorijske ličnosti', sport: 'Sportisti', raptori: 'Beži od raptora!', trojka: 'Trojka!', hemija: 'Elementi – cena i opasnost', karta: 'Pronađi grad na karti', xo: 'Napucani iks oks', 'raptori|trojka': 'Beži od raptora! ili Trojka!', 'raptori|trojka|xo': 'Beži od raptora!, Trojka! ili Napucani iks oks' };
 // nazivi iz Wikidate stižu ćirilicom; u latinici se preslovljavaju (i velika slova: Љубљана → Ljubljana)
 const naziv = (t) => (PISMO === 'cirilica' ? String(t ?? '') : [...String(t ?? '')].map((c) => {
   const l = LAT[c.toLowerCase()];
@@ -1934,6 +1936,233 @@ async function otkrivanjeKarte() {
     <div class="kartica karta-objasnjenje"><h3>📍 ${esc(X.grad.ime)}</h3>
       <p>Zlatna tačka je tačna lokacija. Tvoji i tuđi izbori su obojeni bojom igrača.</p></div>`;
   dugmeDalje(X.rb === X.ukupno ? 'Rang lista 🏆' : 'Sledeći grad ➜');
+}
+
+// ───────────────────────── bonus „Napucani iks oks“ (public/xo.js) ─────────────────────────
+const XO_BOJA = { X: '#ff6b81', O: '#5cc8ff' };
+const xoZnak = (s) => (s === 'X' ? '✕' : s === 'O' ? '◯' : '');
+const xoZnakHTML = (s) => `<b class="xo-z" style="color:${XO_BOJA[s]}">${xoZnak(s)}</b>`;
+const xoOsoba = (id) => (id === 'ai' ? { id: 'ai', ime: 'Robot', avatar: '🤖', boja: '#b2bec3' } : igrac(id) || { id, ime: 'Igrač', avatar: '👤', boja: '#888' });
+const xoMoja = () => (TV || !V?.xo ? null : V.xo.igre.find((g) => g.x === V.ja || g.o === V.ja) || null);
+
+const XO_MESTA = ['gore levo', 'gore u sredini', 'gore desno', 'levo u sredini', 'u sredini', 'desno u sredini', 'dole levo', 'dole u sredini', 'dole desno'];
+// tabla kao SVG: o = { biram (slobodna polja se dodiruju), cilj (tabla u kojoj se igra; null = bilo koja, undefined = ne prikazuje se),
+// poslednje (indeks), linija (pobednička linija tabli), istakni: { i, s }, strelica: [polje, tabla], mini }
+function xoSvg(polja, o = {}) {
+  const t = XO.table(polja);
+  const K = 10, T = 33; // ćelija 10, mala tabla 30 + razmak 3
+  const poz = (i) => { const k = Math.floor(i / 9), c = i % 9; return [(k % 3) * T + (c % 3) * K, Math.floor(k / 3) * T + Math.floor(c / 3) * K]; };
+  const znak = (s, x, y, v, kl = '') => (s === 'X'
+    ? `<path class="${kl}" d="M${x + v * 0.27} ${y + v * 0.27}L${x + v * 0.73} ${y + v * 0.73}M${x + v * 0.73} ${y + v * 0.27}L${x + v * 0.27} ${y + v * 0.73}" stroke="${XO_BOJA.X}" stroke-width="${v * 0.14}" stroke-linecap="round" fill="none"/>`
+    : `<circle class="${kl}" cx="${x + v / 2}" cy="${y + v / 2}" r="${v * 0.26}" stroke="${XO_BOJA.O}" stroke-width="${v * 0.13}" fill="none"/>`);
+  let h = '';
+  for (let k = 0; k < 9; k++) {
+    const x = (k % 3) * T, y = Math.floor(k / 3) * T, w = t[k];
+    h += `<rect x="${x}" y="${y}" width="30" height="30" rx="2" fill="${w === 'X' || w === 'O' ? XO_BOJA[w] + '24' : w === '=' ? '#ffffff05' : '#ffffff10'}"/>`;
+    for (const j of [1, 2]) h += `<path d="M${x + j * K} ${y + 1.5}V${y + 28.5}M${x + 1.5} ${y + j * K}H${x + 28.5}" stroke="#ffffff38" stroke-width=".5"/>`;
+  }
+  for (let i = 0; i < 81; i++) {
+    const [x, y] = poz(i), z = polja[i];
+    if (z === 'X' || z === 'O') h += znak(z, x, y, K, i === o.poslednje ? 'xo-novo' : '');
+    else if (o.biram && t[Math.floor(i / 9)] === '.' && (o.cilj == null || Math.floor(i / 9) === o.cilj)) h += `<rect class="xo-slobodno" data-i="${i}" x="${x + 0.7}" y="${y + 0.7}" width="8.6" height="8.6" rx="1.4"/>`;
+    if (i === o.poslednje) h += `<rect x="${x + 0.5}" y="${y + 0.5}" width="9" height="9" rx="1.5" fill="none" stroke="#ffd166" stroke-width=".7"/>`;
+  }
+  if (o.istakni) {
+    const [x, y] = poz(o.istakni.i);
+    h += `<g class="xo-puls">${znak(o.istakni.s, x, y, K)}<rect x="${x + 0.5}" y="${y + 0.5}" width="9" height="9" rx="1.5" fill="none" stroke="#ffd166" stroke-width=".8"/></g>`;
+  }
+  for (let k = 0; k < 9; k++) if (t[k] === 'X' || t[k] === 'O') h += znak(t[k], (k % 3) * T, Math.floor(k / 3) * T, 30, 'xo-velik');
+  // tabla u kojoj se igra sledeći potez (ili sve slobodne, kad je izbor slobodan)
+  if (o.cilj !== undefined) {
+    for (let k = 0; k < 9; k++) {
+      if (o.cilj === null ? t[k] !== '.' : k !== o.cilj) continue;
+      h += `<rect class="xo-cilj" x="${(k % 3) * T - 0.8}" y="${Math.floor(k / 3) * T - 0.8}" width="31.6" height="31.6" rx="2.5"/>`;
+    }
+  }
+  if (o.strelica) {
+    const [x1, y1] = poz(o.strelica[0]).map((v) => v + 5);
+    const k = o.strelica[1], x2 = (k % 3) * T + 15, y2 = Math.floor(k / 3) * T + 15;
+    const d = Math.hypot(x2 - x1, y2 - y1), ux = (x2 - x1) / d, uy = (y2 - y1) / d;
+    const kx = x2 - ux * 7, ky = y2 - uy * 7;
+    h += `<path class="xo-strelica" d="M${x1 + ux * 4} ${y1 + uy * 4}L${kx} ${ky}M${kx - ux * 4 - uy * 3} ${ky - uy * 4 + ux * 3}L${kx} ${ky}L${kx - ux * 4 + uy * 3} ${ky - uy * 4 - ux * 3}"/>`;
+  }
+  if (o.linija) {
+    const c = (k) => [(k % 3) * T + 15, Math.floor(k / 3) * T + 15];
+    const [a, b] = [c(o.linija[0]), c(o.linija[2])];
+    h += `<path class="xo-linija" d="M${a[0]} ${a[1]}L${b[0]} ${b[1]}" stroke="#ffd166" stroke-width="3" stroke-linecap="round"/>`;
+  }
+  return `<svg class="xo-tabla${o.mini ? ' xo-mala' : ''}${o.biram ? ' biram' : ''}" viewBox="-1.5 -1.5 98 98">${h}</svg>`;
+}
+
+// uvod: kratko uputstvo + slika (primer table pred pobedu)
+function uvodXO(u) {
+  // primer: ✕ je upravo odigrao gornje desno polje srednje table → ◯ mora da igra u gornjoj desnoj tabli
+  const p = [...XO.PRAZNO];
+  const stavi = (k, s, celije) => celije.forEach((c) => (p[k * 9 + c] = s));
+  stavi(0, 'X', [0, 4, 8]); stavi(0, 'O', [1, 2]);
+  stavi(4, 'X', [2, 6]); stavi(4, 'O', [4]);
+  stavi(2, 'O', [4, 0]); stavi(2, 'X', [8]);
+  stavi(8, 'X', [4]); stavi(8, 'O', [0]);
+  stavi(6, 'O', [2]); stavi(1, 'X', [6]); stavi(3, 'O', [8]);
+  const B = XO.BODOVI;
+  app.innerHTML = `<div class="uvod xo-uvod">
+    <div class="sitno">Krug ${u.broj} · bonus${u.brojReci > 1 ? ` · ${u.brojReci} partije` : ''}</div>
+    <h1>Napucani iks oks</h1>
+    <div class="xo-uvod-slika">${xoSvg(p.join(''), { poslednje: 38, cilj: 2, strelica: [38, 2] })}
+      <div class="sitno">✕ je odigrao polje <b>gore desno</b> u srednjoj tabli → ◯ sada mora da igra u <b>gornjoj desnoj tabli</b>.</div></div>
+    <ol class="xo-pravila">
+      <li><span>👆</span><div>Igrate naizmenično. Prvi potez je bilo gde, a <b>polje na koje odigraš određuje tablu</b> u kojoj protivnik igra sledeći potez.</div></li>
+      <li><span>🔓</span><div>Ako je ta tabla već osvojena ili puna, protivnik bira <b>bilo koju</b> slobodnu tablu.</div></li>
+      <li><span class="xo-tri">✕✕✕</span><div>Tri u nizu na maloj tabli → ta <b>tabla je tvoja</b>.</div></li>
+      <li><span>🏆</span><div>Tri osvojene table u nizu → <b>pobeda</b>! Ako vreme istekne, pobeđuje ko ima više tabli.</div></li>
+      <li><span>👥</span><div>Parovi se prave sami, po rang listi; slabije rangirani igra prvi. Neparan igrač igra protiv 🤖.</div></li>
+    </ol>
+    <div class="sitno">${B.tabla} poena za svaku osvojenu tablu · ${B.pobeda} za pobedu · ${B.nereseno} za nerešeno · ${Math.round(XO.POTEZ / 1000)} s za potez</div>
+  </div>`;
+  Zvuk.efekat('bubanj');
+  if (!jaDomacin()) return dugmeDalje();
+  const d = donjaTraka('<button class="dugme sivo" id="xo-preskoci">⏭ Preskoči</button><button class="dugme zuto" id="dalje">Kreni! ➜</button>');
+  $('#dalje', d).onclick = () => { Zvuk.efekat('klik'); akcija('dalje', { faza: V.faza }); };
+  $('#xo-preskoci', d).onclick = () => { Zvuk.efekat('klik'); akcija('preskoci', { faza: V.faza }); };
+}
+
+let xoVideo = null; // poslednji događaj moje partije koji je već odsviran
+let xoPoslato = false; // odgovor/polje poslato – dugmad zaključana dok server ne odgovori
+function ekranXO(nov, staro) {
+  const X = V.xo;
+  const otkriveno = V.faza === 'xo-otkrivanje';
+  const moja = xoMoja();
+  if (nov) {
+    xoVideo = moja?.poslednji?.n ?? null;
+    xoPoslato = false;
+    app.innerHTML = `
+      <div class="traka"><span class="znacka">#️⃣ Napucani iks oks${X.ukupno > 1 ? ` · ${X.rb}/${X.ukupno}` : ''}</span><span class="razmak"></span><span class="sekunde"></span></div>
+      <div class="tajmer"><i></i></div>
+      <div id="xo-moja"></div><div id="sredina"></div><div id="xo-ostale"></div>`;
+    if (!otkriveno) {
+      tajmer(X.pocetak, X.trajanje);
+      const t = setInterval(xoRok, 200);
+      ciscenje.push(() => clearInterval(t));
+      $('#xo-moja').onclick = xoDodir;
+    }
+  }
+  if (otkriveno) { if (nov || staro?.faza !== 'xo-otkrivanje') otkrivanjeXO(moja); return; }
+  if (moja) xoCrtajMoju(moja);
+  else if (nov && !TV) $('#xo-moja').innerHTML = '<div class="kartica sitno centar">Ušao si posle početka partije – gledaš kako igraju ostali.</div>';
+  xoOstale(X.igre.filter((g) => g !== moja), !moja);
+  if (jaDomacin()) {
+    const d = donjaTraka('<button class="dugme sivo" id="xo-preskoci">⏭ Preskoči igru</button>');
+    $('#xo-preskoci', d).onclick = () => { Zvuk.efekat('klik'); akcija('preskoci', { faza: V.faza }); };
+  } else donjaTraka('');
+}
+
+function xoCrtajMoju(g) {
+  const s = g.x === V.ja ? 'X' : 'O', o = XO.drugi(s);
+  const prot = xoOsoba(o === 'X' ? g.x : g.o);
+  const st = XO.stanje(g.polja);
+  const biram = g.na === s;
+  const pos = g.poslednji;
+  // zvuk samo za nov događaj
+  if (pos && pos.n !== xoVideo) {
+    xoVideo = pos.n;
+    if (g.kraj) Zvuk.efekat(g.kraj.pobednik === s ? 'fanfare' : 'netacno');
+    else if (pos.osvojena) Zvuk.efekat(pos.s === s ? 'fanfare' : 'netacno');
+    else Zvuk.efekat('klik');
+    if (g.kraj?.pobednik === s) konfete(150);
+  }
+  let status;
+  if (g.kraj) status = g.kraj.pobednik === s ? '🏆 Pobeda! Čekamo ostale partije…' : g.kraj.pobednik === '=' ? '🤝 Nerešeno – čekamo ostale partije…' : `Pobeda: ${esc(prot.avatar)} ${esc(prot.ime)} – čekamo ostale partije…`;
+  else if (biram) status = g.cilj === null ? `👆 Tvoj potez ${xoZnakHTML(s)} – igraj u <b>bilo kojoj</b> slobodnoj tabli` : `👆 Tvoj potez ${xoZnakHTML(s)} – igraj u tabli <b>${XO_MESTA[g.cilj]}</b>`;
+  else status = `${esc(prot.avatar)} <b>${esc(prot.ime)}</b> je na potezu${g.cilj === null ? ' (bira bilo koju tablu)' : ` – tabla ${XO_MESTA[g.cilj]}`}…`;
+  let vest = '';
+  if (!g.kraj && pos?.osvojena) vest = pos.s === s ? '🎉 Tabla je tvoja!' : `Tablu osvaja ${esc(prot.ime)} ${xoZnakHTML(o)}`;
+  else if (!g.kraj && pos?.isteklo) vest = pos.s === s ? '⌛ Isteklo vreme – polje je izabrano umesto tebe.' : `⌛ ${esc(prot.ime)}: isteklo vreme – polje je izabrano automatski.`;
+  const html = `<div class="xo-glava">
+      <span class="xo-strana ${g.na === s ? 'na-potezu' : ''}">${xoZnakHTML(s)} Ti</span>
+      <span class="xo-rez" title="osvojene table">${st.broj[s]} : ${st.broj[o]}</span>
+      <span class="xo-strana desno ${g.na === o ? 'na-potezu' : ''}">${esc(prot.avatar)} ${esc(prot.ime)} ${xoZnakHTML(o)}</span></div>
+    <div class="xo-status">${status}</div>
+    ${vest ? `<div class="xo-vest ${pos?.isteklo && pos.s === s ? 'lose' : ''}">${vest}</div>` : ''}
+    ${g.kraj ? '' : '<div class="xo-rok"><i></i></div>'}
+    <div class="xo-polje">${xoSvg(g.polja, { biram, cilj: g.na ? g.cilj : undefined, poslednje: pos?.i ?? -1, linija: g.kraj?.linija })}</div>`;
+  const el = $('#xo-moja');
+  if (el.dataset.h !== html) { el.innerHTML = html; el.dataset.h = html; xoPoslato = false; xoRok(); }
+}
+
+// dodir slobodnog polja u mojoj partiji
+async function xoDodir(e) {
+  if (V?.faza !== 'xo' || xoPoslato) return;
+  const polje = e.target.closest('.xo-slobodno');
+  if (!polje) return;
+  xoPoslato = true;
+  Zvuk.efekat('klik');
+  polje.classList.add('izabrano');
+  $('#xo-moja .xo-tabla')?.classList.remove('biram');
+  const r = await akcija('xo', { polje: +polje.dataset.i });
+  // nije prošlo (npr. vreme je baš isteklo) – ekran se crta iz novog stanja
+  if (r.ok !== true) { xoPoslato = false; const el = $('#xo-moja'); if (el) delete el.dataset.h; if (V?.faza === 'xo') crtaj(); }
+}
+
+// traka vremena za potez u mojoj partiji
+function xoRok() {
+  const el = $('.xo-rok i');
+  const g = xoMoja();
+  if (!el || !g) return;
+  const ost = g.na ? Math.max(0, g.rokPoteza - sada()) : 0;
+  el.style.transform = `scaleX(${Math.min(1, ost / XO.POTEZ)})`;
+  el.parentNode.classList.toggle('hitno', ost < 5000);
+  el.parentNode.classList.toggle('tudji', g.na !== (g.x === V.ja ? 'X' : 'O'));
+}
+
+function xoKartica(g, otkriveno) {
+  const st = XO.stanje(g.polja), a = xoOsoba(g.x), b = xoOsoba(g.o);
+  const red = (x, s) => {
+    const d = otkriveno && V.dobitak?.[x.id];
+    return `<div class="xo-ig ${!g.kraj && g.na === s ? 'na-potezu' : ''} ${g.kraj?.pobednik === s ? 'pobednik' : ''}">${xoZnakHTML(s)}<span class="av">${esc(x.avatar)}</span><span class="ime">${esc(x.ime)}</span>
+      <b>${st.broj[s]}</b>${d ? `<span class="plus">+${d.poeni + d.bonus}</span>` : ''}</div>`;
+  };
+  const dno = g.kraj
+    ? `<div class="sitno centar">${g.kraj.pobednik === '=' ? '🤝 Nerešeno' : `🏆 ${esc(xoOsoba(g.kraj.pobednik === 'X' ? g.x : g.o).ime)}${g.kraj.poBroju ? ' (više tabli)' : ''}`}</div>`
+    : `<div class="sitno centar xo-mini-zad">na potezu: ${esc((g.na === 'X' ? a : b).ime)} ${xoZnakHTML(g.na)}</div>`;
+  return `<div class="xo-kartica">${red(a, 'X')}${red(b, 'O')}${xoSvg(g.polja, { mini: true, cilj: g.na && g.cilj !== null ? g.cilj : undefined, linija: g.kraj?.linija, poslednje: g.poslednji?.i ?? -1 })}${dno}</div>`;
+}
+
+function xoOstale(lista, veliko, otkriveno) {
+  const el = $('#xo-ostale');
+  if (!el) return;
+  const html = lista.length
+    ? `${veliko ? '' : `<div class="sitno centar xo-naslov">${otkriveno ? 'Sve partije' : 'Ostale partije'}</div>`}<div class="xo-mreza ${veliko ? 'velika' : ''}">${lista.map((g) => xoKartica(g, otkriveno)).join('')}</div>`
+    : '';
+  if (el.dataset.h !== html) { el.innerHTML = html; el.dataset.h = html; }
+}
+
+function otkrivanjeXO(moja) {
+  clearInterval(tikTajmer);
+  $('.tajmer i').style.transform = 'scaleX(0)';
+  $('.sekunde').textContent = '';
+  const X = V.xo, B = XO.BODOVI;
+  const d = V.dobitak?.[V.ja];
+  let html = '';
+  if (moja && d && !d.bez) {
+    if (d.pobeda) { Zvuk.efekat('fanfare'); konfete(150); } else Zvuk.efekat(d.oznaka ? 'tacno' : 'netacno');
+    html = `<div class="rezultat ${d.pobeda ? 'dobro' : d.oznaka ? 'delimicno' : 'lose'}">${d.pobeda ? '🏆 Pobeda' : d.oznaka ? '🤝 Nerešeno' : 'Ovog puta poraz'} · +${d.poeni + d.bonus}</div>
+      <div class="sitno centar">${xoZnakHTML(d.s)} ${d.tabli} ${d.tabli === 1 ? 'tabla' : d.tabli >= 2 && d.tabli <= 4 ? 'table' : 'tabli'} (+${d.tabli * B.tabla})${d.bonus ? ` · ${esc(d.oznaka)} +${d.bonus}` : ''}</div>
+      <div class="xo-polje">${xoSvg(moja.polja, { linija: moja.kraj?.linija })}</div>`;
+  }
+  const el = $('#xo-moja');
+  el.innerHTML = html;
+  el.onclick = null;
+  delete el.dataset.h;
+  const igrali = V.igraci.filter((x) => V.dobitak?.[x.id] && !V.dobitak[x.id].bez)
+    .sort((a, b) => V.dobitak[b.id].poeni + V.dobitak[b.id].bonus - V.dobitak[a.id].poeni - V.dobitak[a.id].bonus);
+  $('#sredina').innerHTML = igrali.length ? `<div class="kartica"><div class="lista-poena">${skratiListu(igrali, (x, i) => {
+    const dd = V.dobitak[x.id];
+    return `<div class="st ${x.id === V.ja ? 'ja' : ''}" style="animation-delay:${0.15 * Math.min(i, 8)}s">${mesto(i)}<span style="font-size:1.4em">${esc(x.avatar)}</span><div style="min-width:0"><b>${esc(x.ime)}</b>
+      <div class="sitno">${xoZnakHTML(dd.s)} ${dd.tabli} ${dd.tabli === 1 ? 'tabla' : dd.tabli >= 2 && dd.tabli <= 4 ? 'table' : 'tabli'}</div></div>
+      <span class="p"><span class="plus">+${dd.poeni + dd.bonus}</span>${dd.oznaka ? `<div class="sitno">${esc(dd.oznaka)}</div>` : ''}</span></div>`;
+  })}</div></div>` : '';
+  xoOstale(X.igre.filter((g) => g !== moja), !moja, true);
+  dugmeDalje(X.rb === X.ukupno ? 'Rang lista 🏆' : 'Sledeća partija ➜');
 }
 
 // ───────────────────────── kraj ─────────────────────────

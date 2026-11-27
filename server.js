@@ -231,7 +231,7 @@ let otisak = { do: 0, v: '' };
 function verzijaKlijenta() {
   if (Date.now() < otisak.do || (otisak.v && PRODUKCIJA)) return otisak.v;
   const h = crypto.createHash('md5');
-  for (const f of ['index.html', 'app.js', 'geo.js', 'fizika.js', 'biologija.js', 'istorija.js', 'scena3d.js', 'mediji.js', 'molekuli.js', 'hemija3d.js', 'laboratorija.js', 'pismo.js', 'raptori.js', 'trojka.js', 'hemija.js', 'karta.js', 'style.css']) {
+  for (const f of ['index.html', 'app.js', 'geo.js', 'fizika.js', 'biologija.js', 'istorija.js', 'scena3d.js', 'mediji.js', 'molekuli.js', 'hemija3d.js', 'laboratorija.js', 'pismo.js', 'raptori.js', 'trojka.js', 'hemija.js', 'karta.js', 'xo.js', 'style.css']) {
     try {
       if (PRODUKCIJA) h.update(fs.readFileSync(path.join(JAVNO, f)));
       else { const st = fs.statSync(path.join(JAVNO, f)); h.update(st.size.toString(36) + st.mtimeMs.toString(36)); }
@@ -449,6 +449,8 @@ async function obradi(req, res) {
         return kraj(res, 200, soba.posaljiHemiju(id, b.izbor) || { ok: false, poruka: 'Ne može sad' });
       case 'grad':
         return kraj(res, 200, soba.posaljiGrad(id, b.lon, b.lat) || { ok: false, poruka: 'Ne može sad' });
+      case 'xo':
+        return kraj(res, 200, soba.potezXO(id, b.polje) || { ok: false, poruka: 'Ne može sad' });
       case 'pojam':
         return kraj(res, 200, soba.posaljiPojam(id, b.tekst) || { ok: false, poruka: 'Ne može sad' });
       case 'gotov':
@@ -473,6 +475,7 @@ async function obradi(req, res) {
           kvizovi.ucitajSve(); // pokupi nove kvizove bez restartovanja servera
           if (!soba.pokreni()) return kraj(res, 409, { greska: 'Za ovaj izbor nema pitanja. Izaberi drugi kviz.' });
         } else if (b.tip === 'dalje') soba.dalje(typeof b.faza === 'string' ? b.faza : undefined);
+        else if (b.tip === 'preskoci') soba.preskoci(typeof b.faza === 'string' ? b.faza : undefined);
         else if (b.tip === 'lobi') soba.uLobi();
         else if (b.tip === 'izbaci') soba.izbaci(String(b.koga));
     }
