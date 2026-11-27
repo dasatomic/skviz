@@ -20,7 +20,13 @@ const Zvuk = (() => {
     const buf = a.createBuffer(2, len, a.sampleRate);
     for (let ch = 0; ch < 2; ch++) {
       const d = buf.getChannelData(ch);
-      for (let i = 0; i < len; i++) d[i] = (Math.random() * 2 - 1) * Math.pow(1 - i / len, 2.4);
+      // šum kroz niskopropusni filter koji se vremenom zatvara (visoki tonovi se u dvorani brže gase)
+      let lp = 0;
+      for (let i = 0; i < len; i++) {
+        const t = i / len;
+        lp += (0.6 - 0.5 * t) * ((Math.random() * 2 - 1) - lp);
+        d[i] = lp * Math.pow(1 - t, 2.4) * 1.6;
+      }
     }
     return buf;
   }
@@ -107,58 +113,98 @@ const Zvuk = (() => {
     return o;
   }
 
-  // klavir (i harfa): Karplus–Strong trzana žica + kratak udar na početku tona
+  // klavir: ton se računa unapred u JS-u (aditivna sinteza) i čuva po visini.
+  // (Ranija trzana žica preko DelayNode-a u povratnoj petlji nije radila: Web Audio u petlji
+  // ne dozvoljava kašnjenje kraće od 128 uzoraka, pa su svi tonovi iznad ~F#4 imali pogrešnu
+  // visinu, a petlja se raspirivala u izobličen šum.)
+  // Uzorci se računaju na 44,1 kHz bez audio konteksta (može i pre prvog dodira – `pripremi`);
+  // izvor bafera sam preračuna na frekvenciju uređaja.
+  const KLAVIR_SR = 44100;
+  const klavirUzorci = new Map(), klavirBaferi = new Map();
+  function klavirTon(f) {
+    const kljuc = Math.round(f * 100);
+    if (klavirUzorci.has(kljuc)) return klavirUzorci.get(kljuc);
+    const sr = KLAVIR_SR;
+    const r = f / 261.63; // odnos prema C4
+    const trajanje = Math.min(4.5, Math.max(1.1, 3.2 / Math.pow(r, 0.55)));
+    const n = Math.floor(sr * trajanje);
+    const d = new Float32Array(n);
+    // neharmoničnost žice (alikvoti malo viši od celih umnožaka), jača u visokim tonovima
+    const B = Math.min(0.0015, 0.00018 * Math.pow(r, 1.1));
+    const T0 = Math.min(5, Math.max(0.5, 2.6 / Math.pow(r, 0.65))); // gašenje osnovnog tona (s)
+    const granica = Math.min(0.45 * sr, 9000);
+    const dve = [Math.pow(2, -0.35 / 1200), Math.pow(2, 0.45 / 1200)]; // dve žice istog tona
+    for (let k = 1; k <= 28; k++) {
+      const fk = k * f * Math.sqrt(1 + B * k * k);
+      if (fk > granica) break;
+      // čekić udara na ~1/7 žice → spektar „češlja“; viši alikvoti tiši, u visini još tiši
+      let am = (0.3 + Math.abs(Math.sin(Math.PI * k / 7.3))) / Math.pow(k, 1.15) * Math.exp(-fk / (2500 + 1.6 * f));
+      if (k === 1) am *= 1.4;
+      const tau = T0 / (1 + 0.35 * (k - 1) * Math.sqrt(r + 0.3));
+      // dvostepeno gašenje: brzi „udar“ pa duži ostatak tona
+      const r1 = Math.exp(-1 / (sr * tau * 0.22)), r2 = Math.exp(-1 / (sr * tau));
+      for (const dz of dve) {
+        const w = 2 * Math.PI * fk * dz / sr;
+        const c = Math.cos(w), sn = Math.sin(w);
+        let x = 1, y = 0, e1 = 0.62 * am, e2 = 0.38 * am;
+        // viši alikvoti se brzo ugase – računaj ih samo dok se čuju
+        const m = Math.min(n, Math.ceil(sr * tau * Math.log(Math.max(2, 0.38 * am / 2e-5))));
+        for (let i = 0; i < m; i++) {
+          d[i] += y * (e1 + e2);
+          const nx = x * c - y * sn; y = x * sn + y * c; x = nx;
+          e1 *= r1; e2 *= r2;
+        }
+      }
+    }
+    // udar čekića: kratak prigušen šum
+    const tn = Math.floor(sr * 0.018);
+    let lp = 0, seme = 12345 + kljuc;
+    const koef = Math.min(0.9, 0.15 + f / 4000);
+    for (let i = 0; i < tn; i++) {
+      seme = (seme * 1103515245 + 12345) & 0x7fffffff;
+      lp += koef * ((seme / 0x3fffffff - 1) - lp);
+      d[i] += lp * 0.05 * (1 - i / tn);
+    }
+    // blag početak (bez pucketanja) i kraj
+    const nap = Math.floor(sr * 0.002);
+    for (let i = 0; i < nap; i++) d[i] *= i / nap;
+    const kraj = Math.floor(sr * 0.05);
+    for (let i = 0; i < kraj; i++) d[n - 1 - i] *= i / kraj;
+    let vrh = 0;
+    for (let i = 0; i < n; i++) vrh = Math.max(vrh, Math.abs(d[i]));
+    // visoki tonovi se čuju glasnije – malo ih utišaj
+    const jacina = 0.42 / Math.pow(Math.max(1, r), 0.25);
+    for (let i = 0; i < n; i++) d[i] *= jacina / (vrh || 1);
+    klavirUzorci.set(kljuc, d);
+    return d;
+  }
+  function klavirBafer(a, f) {
+    const kljuc = Math.round(f * 100);
+    let buf = klavirBaferi.get(kljuc);
+    if (!buf || buf.ctx !== a) {
+      const d = klavirTon(f);
+      buf = a.createBuffer(1, d.length, KLAVIR_SR);
+      buf.getChannelData(0).set(d);
+      buf.ctx = a;
+      klavirBaferi.set(kljuc, buf);
+    }
+    return buf;
+  }
+
   function klavir(f, t0, dur) {
+    if (!f) return;
     const a = c();
-    const n = Math.max(2, Math.floor(a.sampleRate / f));
-    const kasnjenje = a.createDelay(2);
-    kasnjenje.delayTime.value = n / a.sampleRate;
-    const prigus = a.createBiquadFilter();
-    prigus.type = 'lowpass';
-    prigus.frequency.value = Math.min(12000, f * 9);
-    const povrat = a.createGain();
-    povrat.gain.value = 0.996;
-    const boja = a.createBiquadFilter();
-    boja.type = 'lowpass';
-    boja.frequency.value = Math.min(7000, f * 5);
-    const izl = a.createGain();
-    izl.gain.setValueAtTime(0, t0);
-    izl.gain.linearRampToValueAtTime(0.7, t0 + 0.004);
-    izl.gain.setTargetAtTime(0, t0 + dur, 0.045);
-
-    const buf = a.createBuffer(1, n, a.sampleRate);
-    const d = buf.getChannelData(0);
-    for (let i = 0; i < n; i++) d[i] = Math.random() * 2 - 1;
-    const trzaj = a.createBufferSource();
-    trzaj.buffer = buf;
-    trzaj.connect(kasnjenje);
-    kasnjenje.connect(prigus);
-    prigus.connect(povrat);
-    povrat.connect(kasnjenje);
-    prigus.connect(boja);
-    boja.connect(izl);
-
-    const tn = Math.floor(a.sampleRate * 0.04);
-    const tbuf = a.createBuffer(1, tn, a.sampleRate);
-    const td = tbuf.getChannelData(0);
-    for (let i = 0; i < tn; i++) td[i] = (Math.random() * 2 - 1) * (1 - i / tn);
-    const udar = a.createBufferSource();
-    udar.buffer = tbuf;
-    const uf = a.createBiquadFilter();
-    uf.type = 'lowpass';
-    uf.frequency.value = 3200;
-    const ug = a.createGain();
-    ug.gain.value = 0.5;
-    udar.connect(uf);
-    uf.connect(ug);
-    ug.connect(izl);
-
-    trzaj.start(t0);
-    udar.start(t0);
-    povrat.gain.setTargetAtTime(0, t0 + dur, 0.05);
-    prati(trzaj);
-    prati(udar);
-    izlaz(a, izl, 0.4);
+    const izvor = a.createBufferSource();
+    izvor.buffer = klavirBafer(a, f);
+    const g = a.createGain();
+    g.gain.setValueAtTime(1, t0);
+    // pušten taster: prigušivač gasi žicu za desetak delova sekunde (kao blaga pedala)
+    g.gain.setTargetAtTime(0, t0 + Math.max(0.05, dur), 0.12);
+    izvor.connect(g);
+    izvor.start(t0);
+    izvor.stop(Math.min(t0 + izvor.buffer.duration, t0 + dur + 1));
+    prati(izvor);
+    izlaz(a, g, 0.3);
   }
 
   // flauta: mek sinus sa blagim višim tonovima + dah
@@ -264,10 +310,13 @@ const Zvuk = (() => {
   function melodija(zapis, tempo = 120, instrument = 'klavir', naNotu) {
     const a = c();
     const doba = 60 / tempo;
-    let t = a.currentTime + 0.1;
     const tajmeri = [];
     const sviraj = INSTRUMENTI[instrument] || INSTRUMENTI.klavir;
-    zapis.trim().split(/\s+/).forEach((tok, i) => {
+    const tokeni = zapis.trim().split(/\s+/);
+    // tonovi klavira se računaju unapred, da prva nota ne zakasni
+    if (sviraj === klavir) visine(zapis).forEach((f) => klavirBafer(a, f));
+    let t = a.currentTime + 0.1;
+    tokeni.forEach((tok, i) => {
       const [n, d] = tok.split('/');
       const dur = (d ? +d : 1) * doba;
       if (n !== 'R') {
@@ -278,6 +327,14 @@ const Zvuk = (() => {
       t += dur;
     });
     return { trajanje: (t - a.currentTime) * 1000, tajmeri };
+  }
+  const visine = (zapis) => [...new Set(zapis.trim().split(/\s+/).flatMap((tok) => tok.split('/')[0].split('+').map(frekv)))].filter((f) => f > 0);
+  // izračunaj tonove klavira unapred, po jedan u svakom koraku (da se ekran ne zakoči)
+  function pripremi(zapis, instrument = 'klavir') {
+    if ((INSTRUMENTI[instrument] || klavir) !== klavir) return;
+    const red = visine(zapis);
+    const korak = () => { if (red.length) { klavirTon(red.shift()); setTimeout(korak, 0); } };
+    setTimeout(korak, 0);
   }
   function morze(tekst, naZnak) {
     const K = { A: '.-', B: '-...', C: '-.-.', D: '-..', E: '.', F: '..-.', G: '--.', H: '....', I: '..', J: '.---', K: '-.-', L: '.-..', M: '--', N: '-.', O: '---', P: '.--.', Q: '--.-', R: '.-.', S: '...', T: '-', U: '..-', V: '...-', W: '.--', X: '-..-', Y: '-.--', Z: '--..', 1: '.----', 2: '..---', 3: '...--', 4: '....-', 5: '.....', 6: '-....', 7: '--...', 8: '---..', 9: '----.', 0: '-----' };
@@ -315,7 +372,7 @@ const Zvuk = (() => {
   }
   function stop() { aktivni.forEach((o) => { try { o.stop(); } catch {} }); aktivni.clear(); }
   return {
-    melodija, morze, efekat, stop, otkljucaj: () => { try { c(); } catch {} },
+    melodija, pripremi, morze, efekat, stop, otkljucaj: () => { try { c(); } catch {} },
     get tiho() { return ugaseno; },
     set tiho(v) { ugaseno = v; try { localStorage.setItem('tiho', v ? '1' : '0'); } catch {} },
   };
@@ -1204,6 +1261,7 @@ function dugmeZvuk(k, natpis, pokreni) {
 
 function prikaziMelodiju(k, m, auto) {
   const boje = ['#ff7675', '#74b9ff', '#55efc4', '#ffeaa7', '#a29bfe', '#fd79a8'];
+  Zvuk.pripremi(m.note, m.instrument);
   const d = dugmeZvuk(k, m.natpis || 'Pusti melodiju', (vis) => Zvuk.melodija(m.note, m.tempo || 120, m.instrument, (i) => {
     const n = document.createElement('span');
     n.className = 'nota';
