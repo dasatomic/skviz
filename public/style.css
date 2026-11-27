@@ -435,6 +435,7 @@ body.ekran .mini { width: 44px; height: 44px; font-size: 1.4em; }
 /* u velikom mediju „formula“ i u kodu bez pločice */
 .formula .mat, .formula-duga .mat { background: none; padding: 0; font-size: 1em; font-weight: 600; }
 .mat .razlomak > span:first-child { border-bottom: 1.5px solid currentColor; padding: 0 2px; }
+.izvor-zadatka { text-align: center; font-size: .8em; opacity: .75; margin: 6px 0 -4px; }
 .pitanje-tekst.zadatak { font-size: 1.12em; font-weight: 700; line-height: 1.4; }
 .medij-geo svg, .resenje-crtez svg { max-height: 46vh; }
 body.ekran .medij-geo svg, body.ekran .resenje-crtez svg { max-height: 58vh; }

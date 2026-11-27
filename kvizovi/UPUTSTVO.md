@@ -74,6 +74,12 @@ Pored običnih pitanja sa 4 odgovora (`"vrsta": "izbor"`, podrazumevano) postoje
 
 U jednoj partiji ovakva pitanja čine oko 15% (npr. 2 od 15), naizmenično po vrsti, kad god ih izabrani kviz ima.
 
+**Dokaz** (samo u kvizovima sa zadacima, npr. takmičenja) – tvrđenje koje treba dokazati, **bez ponuđenih odgovora**. Igrač dokazuje na papiru i dugmetom „Pokaži dokaz“ otvara dokaz (kad su svi spremni ili istekne vreme); ne boduje se. Dokaz je `resenje` korak po korak, kao kod ostalih zadataka.
+```json
+{ "vrsta": "dokaz", "tezina": 3, "pitanje": "Dokaži da je $AE = BD$.",
+  "resenje": [{ "t": "Tangentne duži iz iste tačke su jednake…" }, { "t": "Dakle $AE = AF = BD$. ∎" }] }
+```
+
 ## Kvizovi po razredima i lekcijama
 
 Folder `kvizovi/razred<N>-<oblast>/` (npr. `razred6-biologija`) sa `"oblast"`, `"razred"`, `"uOpstem": false` i spiskom `lekcije` (naslovi iz sadržaja udžbenika, redom).

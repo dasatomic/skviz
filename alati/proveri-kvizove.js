@@ -42,7 +42,7 @@ for (const dir of fs.readdirSync(KOREN).sort()) {
       else { poLekciji[p.lekcija - 1].n++; poLekciji[p.lekcija - 1][p.tezina]++; }
     } else if (p.lekcija !== undefined) g(oz, 'pitanje ima lekciju, a kviz nema spisak „lekcije“');
     if (!p.pitanje) g(oz, 'nema teksta pitanja');
-    if (p.vrsta !== undefined && !['izbor', 'uljez', 'spoji'].includes(p.vrsta)) g(oz, 'nepoznata vrsta pitanja: ' + p.vrsta);
+    if (p.vrsta !== undefined && !['izbor', 'uljez', 'spoji', 'dokaz'].includes(p.vrsta)) g(oz, 'nepoznata vrsta pitanja: ' + p.vrsta);
     if (p.vrsta === 'spoji') {
       // „spoj pojmove“: 3–5 parova [levo, desno], bez ponavljanja ni levo ni desno
       const P = p.parovi;
@@ -53,6 +53,10 @@ for (const dir of fs.readdirSync(KOREN).sort()) {
         if (new Set(P.map((x) => x[1].trim().toLowerCase())).size !== P.length) g(oz, 'spoji: pojmovi desno se ponavljaju');
       }
       if (p.odgovori) u(oz, 'spoji: „odgovori“ se ne koriste (samo „parovi“)');
+    } else if (p.vrsta === 'dokaz') {
+      // dokazni zadatak: bez ponuđenih odgovora, dokaz je „resenje“ (samo u zadacima)
+      if (!k.zadaci) g(oz, 'dokaz: samo u kvizu sa zadacima („zadaci“: true)');
+      if (p.odgovori) g(oz, 'dokaz: „odgovori“ se ne koriste');
     } else {
       if (!Array.isArray(p.odgovori) || p.odgovori.length !== 4 || p.odgovori.some((x) => typeof x !== 'string' || !x.trim())) g(oz, 'mora imati tačno 4 odgovora (prvi je tačan), svaki kao neprazan tekst');
       else if (new Set(p.odgovori.map((x) => x.trim().toLowerCase())).size !== 4) g(oz, 'odgovori se ponavljaju');
@@ -156,7 +160,8 @@ for (const dir of fs.readdirSync(KOREN).sort()) {
   lekcije.forEach((l, i) => {
     const x = poLekciji[i];
     const ime = typeof l === 'string' ? l : l.naziv;
-    if (k.zadaci) { if (x.n && x.n < 10) u(`${dir} lekcija ${i + 1}`, `„${ime}“ ima samo ${x.n} zadataka (preporuka: bar 10)`); return; }
+    // takmičenja: lekcija = jedno takmičenje (godina), ima koliko i zadataka na takmičenju (do 5)
+    if (k.zadaci) { if (x.n && x.n < 10 && !k.izborTeme) u(`${dir} lekcija ${i + 1}`, `„${ime}“ ima samo ${x.n} zadataka (preporuka: bar 10)`); return; }
     if (x.n < 15) u(`${dir} lekcija ${i + 1}`, `„${ime}“ ima samo ${x.n} pitanja (preporuka: bar 15)`);
     else if (!x[1] || !x[3]) u(`${dir} lekcija ${i + 1}`, `„${ime}“ nema i lakih i teških pitanja`);
   });
