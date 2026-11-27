@@ -192,10 +192,9 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, naKrugu, sat, uglomer, pica,
     [K('Zbir uporednih uglova mora biti $180°$.'),
      K('Dva oštra ugla zajedno imaju manje od $90° + 90° = 180°$ – ne mogu biti uporedni.')]);
 
-  Z(3, 'Uporedni uglovi $α$ i $β$: $α$ je oštar. Šta je sigurno $β$?',
+  Z(3, 'Uglovi $α$ i $β$ su uporedni, a $α$ je oštar. Kakav je sigurno ugao $β$?',
     ['tup', 'oštar', 'prav', 'opružen'],
-    [K('$β = 180° − α$, a $α < 90°$.'),
-     K('Zato je $β > 90°$, a manji je od $180°$ – tup ugao.')]);
+    [K('$β = 180° − α$. Pošto je $α < 90°$, ugao $β$ je veći od $90°$, a manji od $180°$ – tup ugao.')]);
 
   Z(3, 'Ugao je $5$ puta manji od svog uporednog ugla. Kakav je ugao koji je za $40°$ veći od njega?',
     ['oštar ($70°$)', 'prav', 'tup ($110°$)', 'opružen ($180°$)'],

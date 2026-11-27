@@ -89,7 +89,7 @@ module.exports = ({ L, Z, K, G, r, proveri, kocke, prava }) => {
     G({ A: [0, 0], B: [3, 0], C: [3, 3], D: [0, 3], e: [1, 0], f: [1, 1], g: [0, 1] },
       [{ p: 'ABCD', b: 0, prazno: 1 }, { p: 'Aefg', b: 1, gusto: 1, id: 'mali', o: 'a' }, { d: 'AB', o: '3a' }], { bezImena: ['A', 'B', 'C', 'D'], velicina: 220 }));
 
-  Z(3, 'Dati su brojevi $a = 0,5²$, $b = (−0,7)²$ i $c = −0,6²$. Kako su poređani?',
+  Z(3, 'Dati su brojevi $a = 0,5²$, $b = (−0,7)²$ i $c = −0,6²$. Kojim redom idu, od najmanjeg do najvećeg?',
     ['$c < a < b$', '$a < b < c$', '$c < b < a$', '$a < c < b$'],
     [K('$a = 0,5 · 0,5 = 0,25$', ['t0']),
      K('$b = (−0,7) · (−0,7) = 0,49$ – kvadrat negativnog broja je pozitivan.', ['t1']),

@@ -73,9 +73,9 @@ module.exports = ({ L, Z, K, G, R, O, bez, r, proveri, naKrugu, pravilni, krug, 
       G(t, e, { velicina: 200 }));
   }
   Z(1, 'Prave $a$ i $b$ seku se u tački $O$. Šta je presek $a ∩ b$?',
-    ['skup $\\{O\\}$', 'tačka $O$ i prava $a$', 'prazan skup', 'prava $b$'],
+    ['tačka $O$', 'prava $a$', 'prazan skup', 'poluprava sa početkom $O$'],
     [K('Presek čine zajedničke tačke obe prave.'),
-     K('Dve različite prave koje se seku imaju tačno jednu zajedničku tačku: $a ∩ b = \\{O\\}$.', ['o'])],
+     K('Dve različite prave koje se seku imaju tačno jednu zajedničku tačku – presek je tačka $O$.', ['o'])],
     G({ O: [0, 0, 225], a1: [-4, -2], a2: [4, 2], b1: [-3, 3], b2: [3, -3] }, [{ d: 'a1a2', b: 0 }, { d: 'b1b2', b: 1 }, { tacka: 'O', id: 'o', k: 0 }, { tx: 'a', at: [4.3, 2.3] }, { tx: 'b', at: [3.3, -3.3] }], { bezImena: ['a1', 'a2', 'b1', 'b2'], velicina: 200 }));
 
   Z(2, 'Tačke $A$, $B$, $C$ su na pravoj, a $B$ je između $A$ i $C$. Šta je $AB ∪ BC$ (unija duži)?',

@@ -24297,10 +24297,10 @@
    "tezina": 1,
    "pitanje": "Prave $a$ i $b$ seku se u tački $O$. Šta je presek $a ∩ b$?",
    "odgovori": [
-    "skup $\\{O\\}$",
-    "tačka $O$ i prava $a$",
+    "tačka $O$",
+    "prava $a$",
     "prazan skup",
-    "prava $b$"
+    "poluprava sa početkom $O$"
    ],
    "mediji": {
     "vrsta": "geo",
@@ -24369,7 +24369,7 @@
      "t": "Presek čine zajedničke tačke obe prave."
     },
     {
-     "t": "Dve različite prave koje se seku imaju tačno jednu zajedničku tačku: $a ∩ b = \\{O\\}$.",
+     "t": "Dve različite prave koje se seku imaju tačno jednu zajedničku tačku – presek je tačka $O$.",
      "i": [
       "o"
      ]
@@ -62080,7 +62080,7 @@
   {
    "lekcija": 28,
    "tezina": 3,
-   "pitanje": "Uporedni uglovi $α$ i $β$: $α$ je oštar. Šta je sigurno $β$?",
+   "pitanje": "Uglovi $α$ i $β$ su uporedni, a $α$ je oštar. Kakav je sigurno ugao $β$?",
    "odgovori": [
     "tup",
     "oštar",
@@ -62089,10 +62089,7 @@
    ],
    "resenje": [
     {
-     "t": "$β = 180° − α$, a $α < 90°$."
-    },
-    {
-     "t": "Zato je $β > 90°$, a manji je od $180°$ – tup ugao."
+     "t": "$β = 180° − α$. Pošto je $α < 90°$, ugao $β$ je veći od $90°$, a manji od $180°$ – tup ugao."
     }
    ]
   },

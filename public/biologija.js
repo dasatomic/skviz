@@ -1802,22 +1802,35 @@
           sluz.forEach((e, i) => e.style.opacity = f2(0.3 + 0.4 * talas(t + i * 0.3, 0.5)));
         };
       } else {
-        el(s, 'path', { d: 'M40,120 C40,70 100,50 170,52 C240,54 280,80 290,120 C280,160 230,176 170,176 C100,176 40,166 40,120Z', fill: 'rgba(223,230,233,.08)', stroke: '#dfe6e9', 'stroke-width': 2 });
-        el(s, 'path', { d: 'M40,110 C24,96 12,92 4,96 C12,104 22,112 40,118Z', fill: '#dfe6e9', opacity: 0.5 });
-        put(s, 'M20,96 C40,96 60,100 100,110', { stroke: '#dff9fb', 'stroke-width': 3 });
-        const pl = el(s, 'ellipse', { cx: 140, cy: 108, rx: 26, ry: 14, fill: '#ff7675', stroke: '#ff9f9f', 'stroke-width': 2 });
-        const kesaZ = el(s, 'ellipse', { cx: 222, cy: 128, rx: 46, ry: 30, fill: 'rgba(116,185,255,.18)', stroke: '#74b9ff', 'stroke-width': 2 });
-        const kesaP = el(s, 'ellipse', { cx: 92, cy: 136, rx: 28, ry: 20, fill: 'rgba(116,185,255,.18)', stroke: '#74b9ff', 'stroke-width': 2 });
-        const p1 = [[20, 96], [100, 110], [176, 116], [222, 128]], p2 = [[222, 128], [166, 108], [114, 106], [92, 136], [60, 110], [20, 98]];
-        const vaz = Array.from({ length: 14 }, (_, i) => ({ e: kr(s, 0, 0, 2.6, { fill: O2 }), f: i / 14 }));
+        // Ptica okrenuta ulevo (glava, kljun, podignuto krilo, rep, noge), unutra dušnik, pluća uz leđa
+        // i dve grupe vazdušnih kesa – prednje (uz grudi) i zadnje (u trbuhu).
+        const PERO = '#dfe6e9', TELO = 'rgba(223,230,233,.10)';
+        const krilo = el(s, 'g');
+        el(krilo, 'path', { d: 'M168,92 C182,52 236,18 304,12 C292,34 270,52 248,66 C232,76 206,88 190,98Z', fill: TELO, stroke: PERO, 'stroke-width': 2, 'stroke-linejoin': 'round' });
+        for (const [x1, y1, x2, y2] of [[214, 62, 270, 34], [200, 76, 252, 58], [190, 88, 232, 76]]) put(krilo, `M${x1},${y1} L${x2},${y2}`, { stroke: PERO, 'stroke-width': 1, opacity: 0.45 });
+        el(s, 'path', { d: 'M274,110 L318,98 L316,112 L318,128 L272,128Z', fill: TELO, stroke: PERO, 'stroke-width': 2, 'stroke-linejoin': 'round' });
+        for (const x of [160, 186]) { lin(s, x, 168, x - 4, 196, '#e1b12c', 3); put(s, `M${x - 16},198 L${x - 4},196 L${x + 8},199 M${x - 4},196 L${x - 6},203`, { stroke: '#e1b12c', 'stroke-width': 2.5, 'stroke-linecap': 'round' }); }
+        el(s, 'path', { d: 'M76,96 C70,76 62,70 60,60 L84,52 C92,66 104,82 128,88 C190,78 262,90 284,118 C270,158 218,174 166,172 C112,170 80,150 76,96Z', fill: TELO, stroke: PERO, 'stroke-width': 2, 'stroke-linejoin': 'round' });
+        kr(s, 64, 50, 20, { fill: '#2d3436', stroke: PERO, 'stroke-width': 2 });
+        el(s, 'path', { d: 'M46,44 L14,52 L46,58Z', fill: '#f9ca24', stroke: '#e1b12c', 'stroke-width': 1.5, 'stroke-linejoin': 'round' });
+        kr(s, 62, 44, 5, { fill: '#fff' }); kr(s, 61, 44, 2.5, { fill: '#111' });
+        put(s, 'M44,54 C62,62 74,74 86,90 C98,104 114,110 130,112', { stroke: '#dff9fb', 'stroke-width': 3.5, 'stroke-linecap': 'round' });
+        const pl = el(s, 'ellipse', { cx: 156, cy: 100, rx: 28, ry: 11, fill: '#ff7675', stroke: '#ff9f9f', 'stroke-width': 2 });
+        const kesaP = el(s, 'ellipse', { cx: 108, cy: 134, rx: 20, ry: 15, fill: 'rgba(116,185,255,.22)', stroke: '#74b9ff', 'stroke-width': 2 });
+        const kesaZ = el(s, 'ellipse', { cx: 222, cy: 134, rx: 36, ry: 22, fill: 'rgba(116,185,255,.22)', stroke: '#74b9ff', 'stroke-width': 2 });
+        // Udah: dušnik → zadnje kese; izdah: zadnje kese → kroz pluća (uvek u istom smeru) → prednje kese → napolje.
+        const p1 = [[14, 52], [44, 54], [74, 74], [96, 102], [130, 116], [180, 124], [222, 134]];
+        const p2 = [[222, 134], [196, 106], [156, 100], [124, 104], [108, 134], [96, 104], [74, 74], [44, 54], [14, 52]];
+        const vaz = Array.from({ length: 16 }, (_, i) => ({ e: kr(s, 0, 0, 2.6, { fill: O2 }), f: i / 16 }));
         delovi.push(
-          { id: 'pluca', naziv: '~pluća', ax: 140, ay: 96, lx: 150, ly: 24, a: 'middle', sjaj: sjaj(pl) },
-          { id: 'kese', naziv: '~vazdušne kese', ax: 240, ay: 154, lx: 250, ly: 200, a: 'middle', sjaj: sjaj(kesaZ, kesaP) },
+          { id: 'pluca', naziv: '~pluća', ax: 150, ay: 90, lx: 128, ly: 24, a: 'middle', sjaj: sjaj(pl) },
+          { id: 'kese', naziv: '~vazdušne kese', ax: 230, ay: 156, lx: 250, ly: 200, a: 'middle', sjaj: sjaj(kesaZ, kesaP) },
         );
         kadar = (t) => {
           const udah = 0.5 + 0.5 * Math.sin(t * 2);
-          at(kesaZ, { rx: f2(38 + 10 * udah), ry: f2(24 + 7 * udah) });
-          at(kesaP, { rx: f2(22 + 7 * (1 - udah)), ry: f2(16 + 5 * (1 - udah)) });
+          at(kesaZ, { rx: f2(32 + 6 * udah), ry: f2(19 + 5 * udah) });
+          at(kesaP, { rx: f2(17 + 5 * udah), ry: f2(13 + 4 * udah) });
+          krilo.setAttribute('transform', `rotate(${f2(-6 * Math.sin(t * 2))} 180 96)`);
           vaz.forEach((v) => { const u = (v.f + t * 0.12) % 1; const [x, y] = u < 0.5 ? na(p1, u * 2) : na(p2, (u - 0.5) * 2); at(v.e, { cx: f2(x), cy: f2(y), fill: u < 0.62 ? O2 : CO2 }); });
         };
       }
