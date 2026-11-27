@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "proveri": "node alati/proveri-kvizove.js",
+    "proveri": "node alati/proveri-kvizove.js && node alati/proveri-vremeplov.js && node alati/proveri-greske.js",
     "test-deploy": "node alati/test-deploy.js"
   },
   "license": "MIT",

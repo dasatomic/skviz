@@ -333,12 +333,16 @@ function crtaj(staro) {
   if (f === 'hemija' || f === 'hemija-otkrivanje') kljuc = 'h' + V.hemija.rb + V.krug;
   if (f === 'karta' || f === 'karta-otkrivanje') kljuc = 'k' + V.karta.rb + V.krug;
   if (f === 'xo' || f === 'xo-otkrivanje') kljuc = 'o' + V.xo.rb + V.krug;
+  if (f === 'vremeplov' || f === 'vremeplov-otkrivanje') kljuc = 'v' + V.vremeplov.rb + V.krug;
+  if (f === 'telo' || f === 'telo-otkrivanje') kljuc = 'a' + V.telo.rb + V.krug;
+  if (f === 'greske' || f === 'greske-otkrivanje') kljuc = 'g' + V.greske.rb + V.krug;
   const nov = kljuc !== kljucEkrana;
   if (nov) { ocisti(); kljucEkrana = kljuc; app.innerHTML = ''; window.scrollTo(0, 0); }
   ({ lobi: ekranLobi, uvod: ekranUvod, pitanje: ekranPitanje, otkrivanje: ekranPitanje, tabela: ekranTabela,
     reci: ekranReci, 'reci-otkrivanje': ekranReci, slovo: ekranSlovo, 'slovo-otkrivanje': ekranSlovo,
     raptori: ekranRaptori, 'raptori-otkrivanje': ekranRaptori, trojka: ekranTrojka, 'trojka-otkrivanje': ekranTrojka,
-    hemija: ekranHemija, 'hemija-otkrivanje': ekranHemija, karta: ekranKarta, 'karta-otkrivanje': ekranKarta, xo: ekranXO, 'xo-otkrivanje': ekranXO, kraj: ekranKraj }[f] || ekranLobi)(nov, staro);
+    hemija: ekranHemija, 'hemija-otkrivanje': ekranHemija, karta: ekranKarta, 'karta-otkrivanje': ekranKarta, xo: ekranXO, 'xo-otkrivanje': ekranXO,
+    vremeplov: ekranVremeplov, 'vremeplov-otkrivanje': ekranVremeplov, telo: ekranTelo, 'telo-otkrivanje': ekranTelo, greske: ekranGreske, 'greske-otkrivanje': ekranGreske, kraj: ekranKraj }[f] || ekranLobi)(nov, staro);
   meniDugme();
 }
 
@@ -847,7 +851,7 @@ function opisBonusa(v, n, lista) {
   if (!n) return 'Bez bonus krugova';
   if (v === 'nasumicno') {
     const k = Math.min(n, 5);
-    return k === 1 ? 'Bonus krug: <b>iznenađenje – najduža reč ili igra „Na slovo…“</b>' : `Bonus: <b>iznenađenje – ${k} ${k < 5 ? 'različite igre' : 'različitih igara'}</b> (najduža reč i igre „Na slovo…“)`;
+    return k === 1 ? 'Bonus krug: <b>iznenađenje – najduža reč, Vremeplov ili igra „Na slovo…“</b>' : `Bonus: <b>iznenađenje – ${k} ${k < 5 ? 'različite igre' : 'različitih igara'}</b> (najduža reč, Vremeplov i igre „Na slovo…“)`;
   }
   // igre predmeta redom (Soba.planBonusa): koliko rundi, toliko različitih igara
   const igre = (lista?.length ? lista : [v, 'reci']).filter((x, i, a) => NAZIV_BONUSA[x] && a.indexOf(x) === i).slice(0, Math.max(1, n));
@@ -868,6 +872,9 @@ function ekranUvod(nov) {
   if (u.vrsta === 'hemija') return uvodHemija(u);
   if (u.vrsta === 'karta') return uvodKarte(u);
   if (u.vrsta === 'xo') return uvodXO(u);
+  if (u.vrsta === 'vremeplov') return uvodVremeplov(u);
+  if (u.vrsta === 'telo') return uvodTela(u);
+  if (u.vrsta === 'greske') return uvodGresaka(u);
   app.innerHTML = `<div class="uvod">
     <div class="veliki">${pitanja ? kv?.ikona || '❓' : '🔤'}</div>
     <div class="sitno">Krug ${u.broj}${pitanja && kv?.podnaslov ? ' · ' + esc(kv.podnaslov) : pitanja ? '' : ' · bonus'}</div>
@@ -1387,8 +1394,8 @@ function osveziSlaganje() {
 }
 
 // ───────────────────────── bonus „Na slovo…“ ─────────────────────────
-const IKONA_BONUSA = { reci: '🔤', geografija: '🌍', nauka: '🧑‍🔬', istorija: '👑', sport: '🏅', raptori: '🦖', trojka: '🏀', hemija: '⚗️', karta: '🗺️', xo: '#️⃣', 'raptori|trojka': '🎲', 'raptori|trojka|xo': '🎲' };
-const NAZIV_BONUSA = { reci: 'Najduža reč', geografija: 'Zanimljiva geografija', nauka: 'Naučnici – matematičari i fizičari', istorija: 'Istorijske ličnosti', sport: 'Sportisti', raptori: 'Beži od raptora!', trojka: 'Trojka!', hemija: 'Elementi – cena i opasnost', karta: 'Pronađi grad na karti', xo: 'Napucani iks oks', 'raptori|trojka': 'Beži od raptora! ili Trojka!', 'raptori|trojka|xo': 'Beži od raptora!, Trojka! ili Napucani iks oks' };
+const IKONA_BONUSA = { reci: '🔤', geografija: '🌍', nauka: '🧑‍🔬', istorija: '👑', sport: '🏅', raptori: '🦖', trojka: '🏀', hemija: '⚗️', karta: '🗺️', xo: '#️⃣', vremeplov: '⏳', telo: '🫀', greske: '🔍', 'raptori|trojka': '🎲', 'raptori|trojka|xo': '🎲' };
+const NAZIV_BONUSA = { reci: 'Najduža reč', geografija: 'Zanimljiva geografija', nauka: 'Naučnici – matematičari i fizičari', istorija: 'Istorijske ličnosti', sport: 'Sportisti', raptori: 'Beži od raptora!', trojka: 'Trojka!', hemija: 'Elementi – cena i opasnost', karta: 'Pronađi grad na karti', xo: 'Napucani iks oks', vremeplov: 'Vremeplov', telo: 'Gde je u telu?', greske: 'Lovac na greške', 'raptori|trojka': 'Beži od raptora! ili Trojka!', 'raptori|trojka|xo': 'Beži od raptora!, Trojka! ili Napucani iks oks' };
 // nazivi iz Wikidate stižu ćirilicom; u latinici se preslovljavaju (i velika slova: Љубљана → Ljubljana)
 const naziv = (t) => (PISMO === 'cirilica' ? String(t ?? '') : [...String(t ?? '')].map((c) => {
   const l = LAT[c.toLowerCase()];
@@ -2031,6 +2038,343 @@ async function otkrivanjeKarte() {
     <div class="kartica karta-objasnjenje"><h3>📍 ${esc(X.grad.ime)}</h3>
       <p>Zlatna tačka je tačna lokacija. Tvoji i tuđi izbori su obojeni bojom igrača.</p></div>`;
   dugmeDalje(X.rb === X.ukupno ? 'Rang lista 🏆' : 'Sledeći grad ➜');
+}
+
+// ───────────────────────── zajedničko za „Vremeplov“, „Gde je u telu?“ i „Lovac na greške“ ─────────────────────────
+// lista igrača na otkrivanju, po osvojenim poenima; opis(x) = sitan red ispod imena
+function listaDobitaka(opis) {
+  const zbir = (x) => (V.dobitak[x.id]?.poeni || 0) + (V.dobitak[x.id]?.bonus || 0);
+  const igrali = V.igraci.filter((x) => V.dobitak[x.id] && !V.dobitak[x.id].bez).sort((a, b) => zbir(b) - zbir(a));
+  if (!igrali.length) return '<div class="kartica sitno">Niko nije odigrao ovu rundu.</div>';
+  return `<div class="kartica"><div class="lista-poena">${skratiListu(igrali, (x, i) => {
+    const d = V.dobitak[x.id] || {};
+    return `<div class="st ${x.id === V.ja ? 'ja' : ''}" style="animation-delay:${0.15 * Math.min(i, 8)}s">${mesto(i)}<span style="font-size:1.4em">${esc(x.avatar)}</span><div style="min-width:0"><b>${esc(x.ime)}</b>
+      <div class="sitno">${opis(x, d)}</div></div>
+      <span class="p"><span class="plus">+${zbir(x)}</span>${d.oznaka ? `<div class="sitno">${esc(d.oznaka)}</div>` : ''}</span></div>`;
+  })}</div></div>`;
+}
+function mojDobitak(bez) {
+  const moj = V.dobitak[V.ja];
+  if (!moj || TV) return '';
+  Zvuk.efekat(moj.bez || !(moj.poeni + moj.bonus) ? 'netacno' : 'tacno');
+  if (moj.oznaka && /Savršeno|Sve pogođeno|Najbolj/.test(moj.oznaka)) konfete(80);
+  return `<div class="rezultat ${moj.bez ? 'lose' : 'dobro'}">${moj.bez ? bez : `+${moj.poeni + moj.bonus}${moj.oznaka ? ' · ' + esc(moj.oznaka) : ''}`}</div>`;
+}
+function zaustaviTajmer() {
+  clearInterval(tikTajmer);
+  const t = $('.tajmer i');
+  if (t) t.style.transform = 'scaleX(0)';
+  if ($('.sekunde')) $('.sekunde').textContent = '';
+}
+function stanjePredaje(predali, predao, rec) {
+  const s = $('#sredina');
+  if (!s) return;
+  const h = predao && !TV ? `<div class="cekanje">Čekamo ostale<span class="tackice"></span></div>${koJeOdgovorio(predali, rec)}` : koJeOdgovorio(predali, rec);
+  if (s.dataset.h !== h) { s.innerHTML = h; s.dataset.h = h; }
+}
+
+// ───────────────────────── bonus „Vremeplov“ (public/vremeplov.js) ─────────────────────────
+let vpGodine = [];
+function uvodVremeplov(u) {
+  app.innerHTML = `<div class="uvod">
+    <div class="veliki">⏳</div>
+    <div class="sitno">Krug ${u.broj} · bonus${u.brojReci > 1 ? ` · ${u.brojReci} runde` : ''}</div>
+    <h1>Vremeplov</h1>
+    <p>Stižu <b>tri događaja</b> iz različitih vremena. Za svaki klizačem izaberi <b>godinu</b> kada se desio (dugmići ±1, ±10, ±100 za fino podešavanje).
+      Promašaj se meri prema tome koliko je događaj star: za stari vek je i 30 godina blizu, a za prošli vek već je mnogo.
+      Do 300 poena po događaju, tačna godina +100, a najbolji putnik kroz vreme +300.</p>
+  </div>`;
+  Zvuk.efekat('bubanj');
+  dugmeDalje('Kreni! ➜');
+}
+const vpGodinaHTML = (g) => `${esc(Vremeplov.godinaBroj(g))}<small>${g < 0 ? ' p. n. e.' : '.'}</small>`;
+function ekranVremeplov(nov, staro) {
+  const X = V.vremeplov;
+  const otkriveno = V.faza === 'vremeplov-otkrivanje';
+  const igram = !TV && !!igrac(V.ja);
+  if (nov) {
+    vpGodine = X.moj ? [...X.moj] : X.dogadjaji.map(() => Vremeplov.izKlizaca(500));
+    app.innerHTML = `
+      <div class="traka"><span class="znacka">⏳ Vremeplov${X.ukupno > 1 ? ` · ${X.rb}/${X.ukupno}` : ''}</span><span class="razmak"></span><span class="sekunde"></span></div>
+      <div class="tajmer"><i></i></div>
+      <div id="vp-polje"></div>
+      <div id="sredina"></div>`;
+    if (!otkriveno) { tajmer(X.pocetak, X.trajanje); vpPanel(igram); }
+  }
+  if (!otkriveno) {
+    if (!nov && X.moj && !$('#vp-polje').dataset.predato) vpPanel(igram);
+    stanjePredaje(X.predali, !!X.moj, 'poslalo');
+    if (jaDomacin() && (!igram || X.moj)) dugmeDalje('Završi rundu ➜');
+    else if (igram && !X.moj) {
+      const d = donjaTraka('<button class="dugme zeleno" id="vp-posalji">Pošalji godine ✓</button>');
+      $('#vp-posalji', d).onclick = () => { Zvuk.efekat('tacno'); akcija('godine', { godine: vpGodine }); donjaTraka(''); };
+    } else donjaTraka('');
+    return;
+  }
+  if (nov || staro?.faza !== 'vremeplov-otkrivanje') otkrivanjeVremeplova();
+}
+function vpPanel(igram) {
+  const X = V.vremeplov;
+  const p = $('#vp-polje');
+  const zakljucano = !igram || !!X.moj;
+  if (X.moj) p.dataset.predato = '1';
+  p.innerHTML = X.dogadjaji.map((d, i) => `<div class="kartica vp-dog">
+      <div class="vp-naslov"><span class="vp-broj">${i + 1}</span><span>${Vremeplov.OBLASTI[d.oblast] || ''} ${esc(d.t)}</span></div>
+      ${TV ? '' : `<div class="vp-godina" id="vp-g${i}">${vpGodinaHTML(vpGodine[i])}</div>
+      <input type="range" class="vp-klizac" min="0" max="1000" step="1" value="${Vremeplov.uKlizac(vpGodine[i])}" data-i="${i}" ${zakljucano ? 'disabled' : ''}>
+      <div class="vp-skala">${Vremeplov.PODEOCI.filter((g) => g !== 1 && g !== 1900).map((g) => `<span style="left:${Vremeplov.procenat(g)}%">${g < 0 ? `${-g} p.n.e.` : g}</span>`).join('')}</div>
+      ${zakljucano ? '' : `<div class="vp-dugmici">${[-100, -10, -1, 1, 10, 100].map((k) => `<button class="dugme" data-i="${i}" data-k="${k}">${k > 0 ? '+' : '−'}${Math.abs(k)}</button>`).join('')}</div>`}`}
+    </div>`).join('');
+  if (zakljucano) return;
+  const postavi = (i, g, klizac = true) => {
+    vpGodine[i] = g;
+    $('#vp-g' + i).innerHTML = vpGodinaHTML(g);
+    if (klizac) p.querySelector(`.vp-klizac[data-i="${i}"]`).value = Vremeplov.uKlizac(g);
+  };
+  p.querySelectorAll('.vp-klizac').forEach((k) => (k.oninput = () => postavi(+k.dataset.i, Vremeplov.izKlizaca(+k.value), false)));
+  p.querySelectorAll('.vp-dugmici button').forEach((b) => (b.onclick = () => { Zvuk.efekat('klik'); postavi(+b.dataset.i, Vremeplov.pomeri(vpGodine[+b.dataset.i], +b.dataset.k)); }));
+}
+function otkrivanjeVremeplova() {
+  zaustaviTajmer();
+  donjaTraka('');
+  const X = V.vremeplov;
+  const ja_ = igrac(V.ja);
+  const moje = X.izbori[V.ja];
+  const moj = V.dobitak[V.ja];
+  const rez = mojDobitak('Nisi poslao godine 😕');
+  $('#vp-polje').innerHTML = `${rez}<div class="kartica vp-lenta-k">${Vremeplov.lenta(X.dogadjaji, moje && ja_ ? moje.map((g) => ({ g, boja: ja_.boja })) : [])}
+      <div class="sitno centar">Zlatni brojevi su tačne godine${moje ? ', a tvoje tačke su u tvojoj boji' : ''}.</div></div>
+    ${X.dogadjaji.map((d, i) => {
+      // najbliži među igračima
+      const naj = V.igraci.filter((x) => X.izbori[x.id]).sort((a, b) => Vremeplov.razlika(d.g, X.izbori[a.id][i]) - Vremeplov.razlika(d.g, X.izbori[b.id][i]))[0];
+      const m = moj?.po?.[i];
+      return `<div class="kartica vp-dog otkr" style="animation-delay:${0.2 + i * 0.3}s">
+        <div class="vp-naslov"><span class="vp-broj">${i + 1}</span><span>${Vremeplov.OBLASTI[d.oblast] || ''} ${esc(d.t)}</span></div>
+        <div class="vp-godina tacna">${vpGodinaHTML(d.g)}</div>
+        ${moje && m ? `<div class="vp-moj">Ti: <b>${esc(Vremeplov.godina(moje[i]))}</b> · ${m.d ? `promašaj ${m.d} ${m.d % 10 === 1 && m.d % 100 !== 11 ? 'godina' : m.d % 10 >= 2 && m.d % 10 <= 4 && (m.d % 100 < 12 || m.d % 100 > 14) ? 'godine' : 'godina'}` : 'tačno!'} · <span class="plus">+${m.poeni}</span>${m.oznaka ? ` · ${esc(m.oznaka)}` : ''}</div>` : ''}
+        ${naj && V.igraci.length > 1 ? `<div class="sitno">Najbliže: ${esc(naj.avatar)} ${esc(naj.ime)} (${esc(Vremeplov.godina(X.izbori[naj.id][i]))})</div>` : ''}
+        <p class="vp-opis">${esc(d.opis)}</p></div>`;
+    }).join('')}`;
+  $('#sredina').innerHTML = listaDobitaka((x) => X.izbori[x.id].map((g) => esc(Vremeplov.godina(g))).join(' · '));
+  delete $('#sredina').dataset.h;
+  dugmeDalje(X.rb === X.ukupno ? 'Rang lista 🏆' : 'Sledeći događaji ➜');
+}
+
+// ───────────────────────── bonus „Gde je u telu?“ (public/anatomija.js) ─────────────────────────
+let anPoslato = []; // moji dodiri (lokalno, pre potvrde servera)
+function uvodTela(u) {
+  app.innerHTML = `<div class="uvod">
+    <div class="veliki">🫀</div>
+    <div class="sitno">Krug ${u.broj} · bonus${u.brojReci > 1 ? ` · ${u.brojReci} runde` : ''}</div>
+    <h1>Gde je u telu?</h1>
+    <p>Pojaviće se crtež – <b>unutrašnji organi</b>, <b>kostur</b> ili <b>ćelija</b> – i tri zadata dela (organ, žlezda, kost ili organela).
+      <b>Dodirni redom</b> mesto svakog od njih. Pogodak donosi 400 poena, a promašaj sve manje što je dalje.</p>
+    <p class="sitno">Pazi: čovek na slici gleda u tebe, kao u ogledalu – njegova leva strana (srce, slezina) je na tvojoj desnoj.</p>
+  </div>`;
+  Zvuk.efekat('bubanj');
+  dugmeDalje('Kreni! ➜');
+}
+function anTacka(svg, x, y, boja, oznaka, klasa = '') {
+  const g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+  g.setAttribute('class', 'an-pin ' + klasa);
+  g.innerHTML = `<circle cx="${x}" cy="${y}" r="${oznaka ? 6 : 3.5}" style="fill:${boja}"/>${oznaka ? `<text x="${x}" y="${y + 2.6}" text-anchor="middle">${esc(oznaka)}</text>` : ''}`;
+  svg.appendChild(g);
+}
+function ekranTelo(nov, staro) {
+  const X = V.telo;
+  const otkriveno = V.faza === 'telo-otkrivanje';
+  const igram = !TV && !!igrac(V.ja);
+  const S = Anatomija.SCENE[X.scena];
+  if (nov) {
+    anPoslato = [...(X.moj || [])];
+    app.innerHTML = `
+      <div class="traka"><span class="znacka">${S.ikona} Gde je u telu?${X.ukupno > 1 ? ` · ${X.rb}/${X.ukupno}` : ''}</span><span class="razmak"></span><span class="sekunde"></span></div>
+      <div class="tajmer"><i></i></div>
+      <div class="an-zadatak" id="an-zadatak"></div>
+      <div class="an-polje an-polje-${X.scena}" id="an-polje">${Anatomija.svg(X.scena)}</div>
+      <div id="an-objasnjenje"></div>
+      <div id="sredina"></div>`;
+    if (!otkriveno) {
+      tajmer(X.pocetak, X.trajanje);
+      const svg = $('#an-polje svg');
+      anPoslato.forEach(([x, y], i) => anTacka(svg, x, y, igrac(V.ja)?.boja || '#fff', String(i + 1)));
+      if (igram) {
+        const on = (e) => {
+          e.preventDefault();
+          if (V.faza !== 'telo' || anPoslato.length >= X.delovi.length) return;
+          const pt = svg.createSVGPoint();
+          pt.x = e.clientX; pt.y = e.clientY;
+          const ctm = svg.getScreenCTM();
+          if (!ctm) return;
+          const q = pt.matrixTransform(ctm.inverse());
+          const x = Math.round(Math.max(0, Math.min(S.w, q.x)) * 10) / 10, y = Math.round(Math.max(0, Math.min(S.h, q.y)) * 10) / 10;
+          anPoslato.push([x, y]);
+          Zvuk.efekat('klik');
+          anTacka(svg, x, y, igrac(V.ja)?.boja || '#fff', String(anPoslato.length));
+          akcija('dodir', { x, y });
+          anZadatak();
+        };
+        svg.addEventListener('pointerdown', on);
+        ciscenje.push(() => svg.removeEventListener('pointerdown', on));
+      }
+    }
+  }
+  if (!otkriveno) {
+    anZadatak();
+    stanjePredaje(X.predali, anPoslato.length >= X.delovi.length, 'pronašlo');
+    if (jaDomacin() && (!igram || anPoslato.length >= X.delovi.length)) dugmeDalje('Završi rundu ➜'); else donjaTraka('');
+    return;
+  }
+  if (nov || staro?.faza !== 'telo-otkrivanje') otkrivanjeTela();
+}
+function anZadatak() {
+  const X = V.telo;
+  const z = $('#an-zadatak');
+  if (!z) return;
+  const igram = !TV && !!igrac(V.ja);
+  const n = anPoslato.length;
+  const ime = (id) => esc(Anatomija.deo(X.scena, id)?.ime || id);
+  const h = !igram || n >= X.delovi.length
+    ? `<div class="an-spisak">${X.delovi.map((id, i) => `<span class="cip">${i + 1}. ${ime(id)}</span>`).join('')}</div>`
+    : `<div class="an-trazi">Dodirni: <b>${ime(X.delovi[n])}</b> <span class="sitno">(${n + 1}/${X.delovi.length})</span></div>
+       <div class="an-spisak">${X.delovi.map((id, i) => `<span class="cip ${i < n ? 'gotov' : i === n ? 'sad' : ''}">${i + 1}. ${ime(id)}</span>`).join('')}</div>`;
+  if (z.dataset.h !== h) { z.innerHTML = h; z.dataset.h = h; }
+}
+function otkrivanjeTela() {
+  zaustaviTajmer();
+  donjaTraka('');
+  const X = V.telo;
+  const svg = $('#an-polje svg');
+  svg.querySelectorAll('.an-pin').forEach((x) => x.remove());
+  // istaknuti delovi + broj
+  X.delovi.forEach((id, i) => {
+    svg.insertAdjacentHTML('beforeend', Anatomija.istakni(X.scena, id));
+    const [x, y] = Anatomija.centar(Anatomija.deo(X.scena, id));
+    anTacka(svg, x, y, '#ffc93c', String(i + 1), 'tacan');
+  });
+  // tuđi dodiri sitno, moji sa brojevima
+  for (const x of V.igraci) if (x.id !== V.ja) for (const t of X.izbori[x.id] || []) anTacka(svg, t[0], t[1], x.boja, '', 'tudji');
+  const ja_ = igrac(V.ja);
+  (X.izbori[V.ja] || []).forEach((t, i) => anTacka(svg, t[0], t[1], ja_?.boja || '#fff', String(i + 1), 'moj'));
+  const moj = V.dobitak[V.ja];
+  const rez = mojDobitak('Nisi ništa dodirnuo 😕');
+  $('#an-zadatak').innerHTML = rez;
+  delete $('#an-zadatak').dataset.h;
+  $('#an-objasnjenje').innerHTML = X.delovi.map((id, i) => {
+    const D = Anatomija.deo(X.scena, id);
+    const m = moj?.po?.[i];
+    return `<div class="kartica an-deo-k" style="animation-delay:${0.2 + i * 0.3}s"><h3><span class="vp-broj">${i + 1}</span> ${esc(D.ime)}</h3>
+      ${m && !TV ? `<div class="vp-moj">${m.d == null ? 'Nisi stigao' : m.d === 0 ? 'Pogodak!' : `promašaj ${Anatomija.procenat(X.scena, m.d) || '<1'}% crteža`} · <span class="plus">+${m.poeni}</span>${m.oznaka && m.d !== 0 ? ` · ${esc(m.oznaka)}` : ''}</div>` : ''}
+      <p>${esc(D.opis)}</p></div>`;
+  }).join('');
+  $('#sredina').innerHTML = listaDobitaka((x, d) => (d.po || []).map((b, i) => `${i + 1}: ${b.d === 0 ? '🎯' : b.d == null ? '—' : '+' + b.poeni}`).join(' · '));
+  delete $('#sredina').dataset.h;
+  dugmeDalje(X.rb === X.ukupno ? 'Rang lista 🏆' : 'Sledeći crtež ➜');
+}
+
+// ───────────────────────── bonus „Lovac na greške“ (public/greske.js) ─────────────────────────
+let grOznake = [];
+function uvodGresaka(u) {
+  app.innerHTML = `<div class="uvod">
+    <div class="veliki">🔍</div>
+    <div class="sitno">Krug ${u.broj} · bonus${u.brojReci > 1 ? ` · ${u.brojReci} runde` : ''}</div>
+    <h1>Lovac na greške</h1>
+    <p>U svakoj od <b>tri rečenice</b> krije se jedna do tri <b>pravopisne greške</b> – „ne“ uz glagole, č i ć, velika slova, „li“, futur…
+      Dodirni pogrešne reči (uz rečenicu piše koliko grešaka ima). Pronađena greška +100, dodirnuta tačna reč −50, sve bez greške +200.
+      Na kraju sledi ispravka i pravilo iz Pravopisa.</p>
+  </div>`;
+  Zvuk.efekat('bubanj');
+  dugmeDalje('Kreni! ➜');
+}
+// reči rečenice preslovljene odjednom (u ćirilici „U“ na početku rečenice nije oznaka) – zato data-lat na svakoj reči
+const grReci = (reci) => (PISMO === 'cirilica' ? tr(reci.join(' ')).split(' ') : reci);
+const grBrojGresaka = (n) => `${n} ${n === 1 ? 'greška' : 'greške'}`;
+function ekranGreske(nov, staro) {
+  const X = V.greske;
+  const otkriveno = V.faza === 'greske-otkrivanje';
+  const igram = !TV && !!igrac(V.ja);
+  if (nov) {
+    grOznake = X.moj ? X.moj.map((o) => [...o]) : X.recenice.map(() => []);
+    app.innerHTML = `
+      <div class="traka"><span class="znacka">🔍 Lovac na greške${X.ukupno > 1 ? ` · ${X.rb}/${X.ukupno}` : ''}</span><span class="razmak"></span><span class="sekunde"></span></div>
+      <div class="tajmer"><i></i></div>
+      <div id="gr-polje"></div>
+      <div id="sredina"></div>`;
+    if (!otkriveno) { tajmer(X.pocetak, X.trajanje); grPanel(igram); }
+  }
+  if (!otkriveno) {
+    if (!nov && X.moj && !$('#gr-polje').dataset.predato) grPanel(igram);
+    stanjePredaje(X.predali, !!X.moj, 'poslalo');
+    if (jaDomacin() && (!igram || X.moj)) dugmeDalje('Završi rundu ➜');
+    else if (igram && !X.moj) {
+      const d = donjaTraka('<button class="dugme zeleno" id="gr-posalji">Pošalji ✓</button>');
+      $('#gr-posalji', d).onclick = () => { Zvuk.efekat('tacno'); akcija('greske', { oznake: grOznake }); donjaTraka(''); };
+    } else donjaTraka('');
+    return;
+  }
+  if (nov || staro?.faza !== 'greske-otkrivanje') otkrivanjeGresaka();
+}
+function grPanel(igram) {
+  const X = V.greske;
+  const p = $('#gr-polje');
+  const zakljucano = !igram || !!X.moj;
+  if (X.moj) p.dataset.predato = '1';
+  p.innerHTML = X.recenice.map((r, i) => `<div class="kartica gr-recenica">
+      <div class="gr-zaglavlje"><span class="vp-broj">${i + 1}</span><span class="sitno">${grBrojGresaka(r.broj)}</span><span class="sitno gr-brojac" id="gr-n${i}"></span></div>
+      <div class="gr-reci">${grReci(r.reci).map((w, j) => `<button class="gr-rec ${grOznake[i].includes(j) ? 'oznacena' : ''}" data-i="${i}" data-j="${j}" data-lat ${zakljucano ? 'disabled' : ''}>${esc(w)}</button>`).join('')}</div>
+    </div>`).join('');
+  const brojac = () => X.recenice.forEach((r, i) => { const el = $('#gr-n' + i); if (el && !zakljucano) el.textContent = `označeno ${grOznake[i].length}/${r.broj}`; });
+  brojac();
+  if (zakljucano) return;
+  p.querySelectorAll('.gr-rec').forEach((b) => (b.onclick = () => {
+    const i = +b.dataset.i, j = +b.dataset.j;
+    const o = grOznake[i];
+    if (o.includes(j)) o.splice(o.indexOf(j), 1);
+    else {
+      // najviše onoliko oznaka koliko ima grešaka – najstarija oznaka ustupa mesto novoj
+      if (o.length >= X.recenice[i].broj) {
+        const stara = o.shift();
+        p.querySelector(`.gr-rec[data-i="${i}"][data-j="${stara}"]`)?.classList.remove('oznacena');
+      }
+      o.push(j);
+    }
+    b.classList.toggle('oznacena', o.includes(j));
+    Zvuk.efekat('klik');
+    brojac();
+  }));
+}
+function otkrivanjeGresaka() {
+  zaustaviTajmer();
+  donjaTraka('');
+  const X = V.greske;
+  const moje = X.izbori[V.ja];
+  const rez = mojDobitak('Nisi poslao odgovor 😕');
+  const t = (w) => (PISMO === 'cirilica' ? tr(w) : w);
+  $('#gr-polje').innerHTML = rez + X.recenice.map((r, i) => {
+    const oznaceno = new Set(moje?.[i] || []);
+    const prikaz = grReci(r.reci);
+    const html = [];
+    for (let j = 0; j < r.reci.length; j++) {
+      const gi = r.greske.findIndex((x) => x.reci[0] === j);
+      if (gi >= 0) {
+        // cela greška (može biti više reči) kao jedan blok: precrtano pogrešno → tačno
+        const x = r.greske[gi];
+        const nadjena = x.reci.some((k) => oznaceno.has(k));
+        const kraj = x.reci[x.reci.length - 1];
+        html.push(`<span class="gr-ispravka ${moje ? (nadjena ? 'nadjena' : 'propustena') : ''}" data-lat><s>${esc(prikaz.slice(j, kraj + 1).join(' '))}</s> <b>${esc(t(x.tacno))}</b></span>`);
+        j = kraj;
+      } else html.push(`<span class="gr-obicna ${oznaceno.has(j) ? 'greskom' : ''}" data-lat>${esc(prikaz[j])}</span>`);
+    }
+    const b = moje ? Greske.bodovi(r, moje[i]) : null;
+    return `<div class="kartica gr-recenica otkr" style="animation-delay:${0.2 + i * 0.3}s">
+      <div class="gr-zaglavlje"><span class="vp-broj">${i + 1}</span>${b ? `<span class="sitno">pronađeno ${b.nadjeno}/${b.ukupno}${b.greskom.length ? ` · ${b.greskom.length} tačn${b.greskom.length === 1 ? 'a reč' : 'e reči'} označen${b.greskom.length === 1 ? 'a' : 'e'}` : ''}</span><span class="plus">+${b.poeni}</span>` : ''}</div>
+      <div class="gr-reci">${html.join(' ')}</div>
+      ${r.greske.map((x) => `<div class="gr-pravilo"><b data-lat>${esc(t(x.pogresno))} → ${esc(t(x.tacno))}</b> – ${esc(x.napomena || X.pravila[x.pravilo] || '')}</div>`).join('')}
+    </div>`;
+  }).join('');
+  $('#sredina').innerHTML = listaDobitaka((x, d) => `pronašao ${d.nadjeno}/${d.ukupno}${d.promasaja ? ` · ${d.promasaja} pogrešno` : ''}`);
+  delete $('#sredina').dataset.h;
+  dugmeDalje(X.rb === X.ukupno ? 'Rang lista 🏆' : 'Sledeće rečenice ➜');
 }
 
 // ───────────────────────── bonus „Napucani iks oks“ (public/xo.js) ─────────────────────────

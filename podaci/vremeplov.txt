@@ -1,0 +1,189 @@
+# Događaji za bonus igru „Vremeplov“ (public/vremeplov.js, lib/soba.js).
+# Red: godina|naziv|zanimljivost|oblast|naslov članka na engleskoj Vikipediji (za proveru godine u Wikidati)
+# Godina pre nove ere je negativna (-490 = 490. p. n. e.). Oblast: srbija, svet, nauka, kultura, sport.
+# Naziv ne sme da oda godinu. Provera: node alati/proveri-vremeplov.js (godine iz Wikidate, uz --wikidata).
+
+# ───── Srbija i naši krajevi ─────
+1217|Stefan Prvovenčani krunisan za kralja|Krunu mu je poslao papa, pa je Srbija postala kraljevina – otud i nadimak „Prvovenčani“.|srbija|Stefan the First-Crowned
+1219|Sveti Sava dobija samostalnu Srpsku crkvu|Sava je postao prvi srpski arhiepiskop, a sedište crkve bilo je u manastiru Žiči.|srbija|Serbian Orthodox Church
+1346|Dušan krunisan za cara|Krunisan je u Skoplju na Uskrs, a Srbija je tada bila jedna od najvećih država Balkana.|srbija|Stefan Dušan
+1349|Donet Dušanov zakonik|Zakonik je dopunjen 1354. godine, a sačuvan je u više od 20 prepisa.|srbija|Dušan's Code
+1371|Marička bitka|Posle ove bitke Turci su lakše prodirali na Balkan; poginuli su kralj Vukašin i despot Uglješa.|srbija|Battle of Maritsa
+1389|Kosovska bitka|U bici su poginuli i knez Lazar i sultan Murat – to se retko dešavalo u srednjovekovnim bitkama.|srbija|Battle of Kosovo
+1456|Opsada Beograda – odbrana od Turaka|U znak sećanja na ovu pobedu katoličke crkve i danas zvone podnevna zvona.|srbija|Siege of Belgrade (1456)
+1459|Pad Smedereva|Pad prestonice despota značio je kraj srednjovekovne srpske države.|srbija|Fall of Smederevo
+1494|Štampan Oktoih prvoglasnik na Cetinju|To je prva ćirilična knjiga štampana kod južnih Slovena.|srbija|Oktoih prvoglasnik
+1521|Turci osvajaju Beograd|Sulejman Veličanstveni je tako otvorio put ka Ugarskoj i Beču.|srbija|Siege of Belgrade (1521)
+1594|Sinan-paša spaljuje mošti Svetog Save|Mošti su spaljene na Vračaru – na tom mestu danas stoji Hram Svetog Save.|srbija|Burning of the relics of Saint Sava
+1690|Velika seoba Srba|Pod vođstvom patrijarha Arsenija III Čarnojevića Srbi su se preselili u Ugarsku.|srbija|Great Migrations of the Serbs
+1804|Počinje Prvi srpski ustanak|Ustanak je podignut u Orašcu, a vođa je bio Karađorđe Petrović.|srbija|First Serbian Uprising
+1814|Vuk Karadžić objavljuje „Pismenicu“|To je prva gramatika srpskog narodnog jezika.|srbija|Vuk Karadžić
+1815|Počinje Drugi srpski ustanak|Ustanak je podignut u Takovu, a predvodio ga je Miloš Obrenović.|srbija|Second Serbian Uprising
+1818|Objavljen Vukov „Srpski rječnik“|Rečnik je imao oko 26.000 reči i bio je napisan novom, Vukovom azbukom.|srbija|Vuk Karadžić
+1835|Donet Sretenjski ustav|Prvi srpski ustav donet je na Sretenje u Kragujevcu; važio je samo nekoliko nedelja.|srbija|Sretenje Constitution
+1838|Osnovan Licej u Kragujevcu|Licej je preteča Beogradskog univerziteta.|srbija|University of Belgrade
+1844|Osnovan Narodni muzej u Beogradu|To je najstariji muzej u Srbiji.|srbija|National Museum of Serbia
+1847|Objavljen „Gorski vijenac“|Njegoš ga je napisao kao vladar Crne Gore, a objavljen je u Beču.|srbija|The Mountain Wreath
+1856|Rođen Nikola Tesla|Rođen je u Smiljanu u Lici, za vreme jake oluje sa munjama.|srbija|Nikola Tesla
+1858|Rođen Mihajlo Pupin|Pupin je rođen u Idvoru u Banatu, a postao je profesor na Kolumbija univerzitetu.|srbija|Mihajlo Pupin
+1868|Osnovano Narodno pozorište u Beogradu|Zgrada na Trgu republike otvorena je godinu dana kasnije.|srbija|National Theatre in Belgrade
+1867|Turci predaju gradove u Srbiji|Knez Mihailo je diplomatijom postigao da turska vojska napusti Beograd i druge gradove.|srbija|Mihailo Obrenović III, Prince of Serbia
+1878|Srbija postaje nezavisna država|Nezavisnost je priznata na Berlinskom kongresu.|srbija|Congress of Berlin
+1879|Rođen Milutin Milanković|Izračunao je kako promene Zemljine putanje izazivaju ledena doba.|srbija|Milutin Milanković
+1882|Srbija postaje kraljevina|Milan Obrenović je postao prvi kralj moderne Srbije.|srbija|Kingdom of Serbia
+1884|Prvi voz od Beograda do Niša|Prva pruga u Srbiji povezala je Beograd i Niš.|srbija|Belgrade–Niš railway
+1896|Prva filmska projekcija u Beogradu|Film je prikazan u kafani „Kod zlatnog krsta“, samo nekoliko meseci posle Pariza.|srbija|Cinema of Serbia
+1912|Kumanovska bitka|Srpska vojska je pobedila tursku u Prvom balkanskom ratu.|srbija|Battle of Kumanovo
+1914|Cerska bitka|Ovo je prva pobeda saveznika u Prvom svetskom ratu.|srbija|Battle of Cer
+1915|Povlačenje srpske vojske preko Albanije|U zimu su vojska, kralj i narod prešli albanske planine – taj put se zove Albanska golgota.|srbija|Serbian campaign of World War I
+1918|Proboj Solunskog fronta|Srpska vojska je za nekoliko nedelja prešla put od Soluna do Beograda.|srbija|Vardar offensive
+1941|Aprilski rat|Kraljevina Jugoslavija je kapitulirala posle samo jedanaest dana.|srbija|Invasion of Yugoslavia
+1944|Oslobođenje Beograda|Grad je oslobođen 20. oktobra – taj dan je i danas Dan Beograda.|srbija|Belgrade offensive
+1958|Prvi program Televizije Beograd|Prvi program emitovan je iz Beograda; u početku je bilo samo nekoliko sati programa dnevno.|srbija|Radio Television of Serbia
+1961|Ivo Andrić dobija Nobelovu nagradu|Nagradu je dobio za književnost, najviše zbog romana „Na Drini ćuprija“.|srbija|Ivo Andrić
+1970|Otvoren most Gazela u Beogradu|Gazela je deo auto-puta i jedan od najprometnijih mostova u Srbiji.|srbija|Gazela Bridge
+1991|Crvena zvezda osvaja Kup šampiona|Finale protiv Olimpika iz Marselja igrano je u Bariju i rešeno penalima.|sport|1991 European Cup final
+2006|Srbija ponovo samostalna država|Posle referenduma u Crnoj Gori državna zajednica se razdvojila.|srbija|Serbia
+2007|Marija Šerifović pobeđuje na Evroviziji|Pobedila je pesmom „Molitva“, pa je Beograd sledeće godine bio domaćin takmičenja.|kultura|Eurovision Song Contest 2007
+2011|Novak Đoković prvi put prvi na svetu|Iste godine osvojio je tri gren slem turnira.|sport|Novak Djokovic
+
+# ───── Stari vek ─────
+-2560|Završena Keopsova piramida|Više od 3.800 godina bila je najviša građevina koju je napravio čovek.|svet|Great Pyramid of Giza
+-776|Prve olimpijske igre u Olimpiji|Na prvim igrama takmičilo se samo u trčanju na oko 192 metra.|sport|Ancient Olympic Games
+-753|Osnivanje Rima (po predanju)|Po legendi grad su osnovali braća blizanci Romul i Rem.|svet|Founding of Rome
+-509|Osnovana Rimska republika|Rimljani su proterali poslednjeg kralja i birali dva konzula godišnje.|svet|Roman Republic
+-490|Bitka kod Maratona|Po predanju glasnik je trčao do Atine da javi o pobedi – otud trka maraton.|svet|Battle of Marathon
+-480|Bitka kod Termopila|Spartanski kralj Leonida sa malim odredom zadržao je ogromnu persijsku vojsku.|svet|Battle of Thermopylae
+-323|Umro Aleksandar Makedonski|Umro je u Vavilonu sa samo 32 godine, posle osvajanja do Indije.|svet|Alexander the Great
+-221|Ujedinjenje Kine pod prvim carem|Prvi car Ćin Ši Huang naredio je i izradu Terakotine vojske.|svet|Qin Shi Huang
+-44|Ubijen Julije Cezar|Ubijen je u Senatu na Martovske ide (15. marta).|svet|Assassination of Julius Caesar
+-27|Oktavijan Avgust postaje prvi rimski car|Po njemu je mesec avgust dobio ime.|svet|Augustus
+79|Erupcija Vezuva zatrpava Pompeju|Pepeo je sačuvao grad toliko dobro da se i danas vide hleb i natpisi na zidovima.|svet|Eruption of Mount Vesuvius in 79 AD
+313|Milanski edikt|Car Konstantin, rođen u Nišu, dozvolio je slobodno ispovedanje hrišćanstva.|svet|Edict of Milan
+330|Konstantinopolj postaje prestonica|Grad se pre toga zvao Vizantion, a danas se zove Istanbul.|svet|Constantinople
+476|Pad Zapadnog rimskog carstva|Poslednji car, Romul Avgustul, bio je tada još dečak.|svet|Fall of the Western Roman Empire
+
+# ───── Srednji vek ─────
+622|Muhamedova hidžra iz Meke u Medinu|Od te godine počinje islamski kalendar.|svet|Hijrah
+800|Karlo Veliki krunisan za cara|Krunisan je u Rimu na Božić.|svet|Charlemagne
+863|Ćirilo i Metodije kreću u Moravsku|Za tu misiju Ćirilo je sastavio glagoljicu, prvo slovensko pismo.|kultura|Saints Cyril and Methodius
+1054|Veliki raskol hrišćanske crkve|Hrišćanstvo se podelilo na pravoslavnu i katoličku crkvu.|svet|East–West Schism
+1066|Bitka kod Hejstingsa|Normani su osvojili Englesku; bitka je izvezena na tapiseriji dugoj skoro 70 metara.|svet|Battle of Hastings
+1096|Počinje Prvi krstaški rat|Krstaši su posle tri godine zauzeli Jerusalim.|svet|First Crusade
+1206|Džingis-kan postaje veliki kan Mongola|Mongolsko carstvo je postalo najveće kopneno carstvo u istoriji.|svet|Genghis Khan
+1215|Potpisana Velika povelja slobode (Magna karta)|Engleski kralj je prvi put morao da prizna da i on mora da poštuje zakon.|svet|Magna Carta
+1271|Marko Polo kreće na put u Kinu|Vratio se tek posle 24 godine, a njegova knjiga oduševila je Evropu.|svet|Marco Polo
+1347|Kuga (Crna smrt) stiže u Evropu|Za nekoliko godina umrla je otprilike trećina stanovnika Evrope.|svet|Black Death
+1453|Turci osvajaju Carigrad|Pad Carigrada označava kraj Vizantije i, po mnogima, kraj srednjeg veka.|svet|Fall of Constantinople
+
+# ───── Novi vek ─────
+1455|Gutenberg štampa Bibliju|Pokretna slova od metala omogućila su da knjige postanu jeftine.|nauka|Gutenberg Bible
+1492|Kolumbo stiže do Amerike|Mislio je da je stigao u Indiju, pa je starosedeoce nazvao Indijancima.|svet|Voyages of Christopher Columbus
+1498|Vasko da Gama stiže u Indiju|Prvi je stigao morem iz Evrope do Indije, oplovivši celu Afriku.|svet|Vasco da Gama
+1503|Leonardo počinje da slika Mona Lizu|Slika je mala – oko 77 × 53 cm – a danas je u Luvru iza neprobojnog stakla.|kultura|Mona Lisa
+1508|Mikelanđelo počinje da oslikava Sikstinsku kapelu|Na tavanici je radio četiri godine, slikajući na skelama.|kultura|Sistine Chapel ceiling
+1517|Martin Luter objavljuje 95 teza|Tako je počela reformacija i nastale su protestantske crkve.|svet|Ninety-five Theses
+1519|Magelanova flota kreće oko sveta|Od pet brodova vratio se samo jedan, a Magelan je poginuo na putu.|svet|Magellan expedition
+1543|Kopernik objavljuje da Zemlja kruži oko Sunca|Knjiga je objavljena iste godine kada je Kopernik umro.|nauka|De revolutionibus orbium coelestium
+1564|Rođen Vilijam Šekspir|Napisao je „Romea i Juliju“ i „Hamleta“, a izmislio je i mnoge engleske reči.|kultura|William Shakespeare
+1588|Poraz španske Nepobedive armade|Veliki deo flote uništile su oluje kod obala Škotske i Irske.|svet|Spanish Armada
+1605|Objavljen „Don Kihot“|Servantesov vitez se bori protiv vetrenjača misleći da su divovi.|kultura|Don Quixote
+1610|Galilej otkriva četiri Jupiterova meseca|To su Io, Evropa, Ganimed i Kalisto – zovu se Galilejevi meseci.|nauka|Galilean moons
+1620|Brod Mejflauer stiže u Ameriku|Doseljenici su sledeće jeseni proslavili prvi Dan zahvalnosti.|svet|Mayflower
+1648|Vestfalski mir|Mirom je završen Tridesetogodišnji rat u Evropi.|svet|Peace of Westphalia
+1683|Opsada Beča|Po predanju, posle opsade u Beču su se proširile kafane i kifle.|svet|Battle of Vienna
+1687|Njutn objavljuje zakone kretanja i gravitacije|Knjiga „Principi“ je jedna od najvažnijih u istoriji nauke.|nauka|Philosophiæ Naturalis Principia Mathematica
+1752|Bendžamin Frenklin pušta zmaja u oluji|Pokazao je da je munja električna pojava i izumeo gromobran.|nauka|Kite experiment
+1756|Rođen Volfgang Amadeus Mocart|Prvu kompoziciju napisao je sa pet godina.|kultura|Wolfgang Amadeus Mozart
+1769|Džejms Vat patentira poboljšanu parnu mašinu|Jedinica za snagu, vat, dobila je ime po njemu.|nauka|Watt steam engine
+1770|Rođen Ludvig van Betoven|Mnoga čuvena dela komponovao je kada je već bio potpuno gluv.|kultura|Ludwig van Beethoven
+1776|Deklaracija nezavisnosti SAD|Dan nezavisnosti, 4. jul, slavi se i danas vatrometima.|svet|United States Declaration of Independence
+1781|Otkrivena planeta Uran|To je prva planeta otkrivena teleskopom; otkrio ju je Vilijam Heršel.|nauka|Uranus
+1789|Pad Bastilje – Francuska revolucija|Dan pada Bastilje, 14. jul, francuski je državni praznik.|svet|Storming of the Bastille
+1796|Edvard Džener daje prvu vakcinu|Vakcinisao je dečaka protiv velikih boginja; reč „vakcina“ dolazi od latinske reči za kravu.|nauka|Edward Jenner
+1800|Alesandro Volta pravi prvu bateriju|Jedinica za napon, volt, nosi njegovo ime.|nauka|Voltaic pile
+
+# ───── 19. vek ─────
+1804|Napoleon se krunisao za cara|Na krunisanju je sam sebi stavio krunu na glavu.|svet|Coronation of Napoleon
+1815|Bitka kod Vaterloa|Posle ovog poraza Napoleon je prognan na ostrvo Sveta Jelena.|svet|Battle of Waterloo
+1824|Prvo izvođenje Betovenove Devete simfonije|Njen deo „Oda radosti“ danas je himna Evropske unije.|kultura|Symphony No. 9 (Beethoven)
+1825|Prva javna železnica sa parnom lokomotivom|Pruga u Engleskoj povezala je Stokton i Darlington.|nauka|Stockton and Darlington Railway
+1846|Otkrivena planeta Neptun|Njen položaj je prvo izračunat matematikom, pa je tek onda nađena teleskopom.|nauka|Neptune
+1859|Darvin objavljuje „Poreklo vrsta“|Svih 1.250 primeraka prvog izdanja prodato je već prvog dana.|nauka|On the Origin of Species
+1861|Počinje Američki građanski rat|Rat između Severa i Juga trajao je četiri godine i završio se ukidanjem ropstva.|svet|American Civil War
+1863|Osnovan Fudbalski savez Engleske i zapisana pravila fudbala|Pre toga je skoro svaka škola igrala fudbal po svojim pravilima.|sport|The Football Association
+1865|Ubijen predsednik Abraham Linkoln|Ubijen je u pozorištu, samo nekoliko dana posle kraja građanskog rata.|svet|Assassination of Abraham Lincoln
+1869|Mendeljejev pravi periodni sistem elemenata|Ostavio je prazna mesta za elemente koji tada još nisu bili otkriveni.|nauka|Periodic table
+1869|Otvoren Suecki kanal|Kanal je spojio Sredozemno i Crveno more, pa brodovi više nisu morali oko Afrike.|svet|Suez Canal
+1876|Aleksandar Grejem Bel patentira telefon|Prve reči preko telefona bile su poziv njegovom pomoćniku Votsonu.|nauka|Invention of the telephone
+1877|Prvi teniski turnir u Vimbldonu|Na prvom turniru igrali su samo muškarci, a gledalaca je bilo oko 200.|sport|1877 Wimbledon Championship
+1879|Edison predstavlja sijalicu koja dugo svetli|Probao je hiljade materijala za nit dok nije našao pravi.|nauka|Incandescent light bulb
+1883|Erupcija vulkana Krakatau|Eksplozija se čula i na 4.800 km daljine – to je najglasniji zabeleženi zvuk.|nauka|1883 eruption of Krakatoa
+1885|Paster spasava dečaka vakcinom protiv besnila|Dečaka je ujeo besan pas, a vakcina mu je spasla život.|nauka|Louis Pasteur
+1886|Karl Benc patentira automobil|Njegovo vozilo imalo je tri točka i motor na benzin.|nauka|Benz Patent-Motorwagen
+1886|Svečano otvoren Kip slobode u Njujorku|Kip je poklon Francuske; unutra ima čeličnu konstrukciju koju je projektovao Ajfel.|svet|Statue of Liberty
+1889|Završena Ajfelova kula|Pravljena je za svetsku izložbu i trebalo je da bude srušena posle 20 godina.|svet|Eiffel Tower
+1891|Džejms Nejsmit izmišlja košarku|Prvi koševi bile su korpe za breskve, pa je loptu trebalo vaditi iz njih.|sport|History of basketball
+1895|Rendgen otkriva X-zrake|Prvi rendgenski snimak bila je šaka njegove žene, sa prstenom.|nauka|X-ray
+1895|Braća Limijer prikazuju prvi film u bioskopu|Projekcija je održana u jednom pariskom kafeu.|kultura|Auguste and Louis Lumière
+1896|Prve moderne olimpijske igre u Atini|Prvi olimpijski pobednik u maratonu bio je Grk Spiridon Luis, raznosač vode.|sport|1896 Summer Olympics
+1898|Marija i Pjer Kiri otkrivaju radijum|Marija Kiri je jedina osoba koja je dobila Nobelovu nagradu iz dve prirodne nauke.|nauka|Radium
+
+# ───── 20. vek ─────
+1901|Dodeljene prve Nobelove nagrade|Alfred Nobel, pronalazač dinamita, ostavio je svoje bogatstvo za nagrade.|nauka|Nobel Prize
+1903|Braća Rajt prvi put lete avionom|Prvi let trajao je samo 12 sekundi.|nauka|Wright Flyer
+1903|Prva biciklistička trka Tur de Frans|Trkači su vozili i noću, a etape su bile duge i po 400 km.|sport|1903 Tour de France
+1905|Ajnštajn objavljuje teoriju relativnosti|Te godine je objavio četiri važna rada, pa se ona zove „čudesna godina“.|nauka|Special relativity
+1908|Eksplozija iznad Tunguske u Sibiru|Verovatno je eksplodirao meteor i oborio oko 80 miliona stabala.|nauka|Tunguska event
+1911|Amundsen prvi stiže na Južni pol|Pobedio je Britanca Skota za oko pet nedelja.|svet|Amundsen's South Pole expedition
+1912|Potonuo Titanik|Brod koji „ne može da potone“ udario je u santu leda na prvom putovanju.|svet|Titanic
+1914|Sarajevski atentat|Gavrilo Princip je ubio austrougarskog prestolonaslednika Franca Ferdinanda.|svet|Assassination of Archduke Franz Ferdinand
+1917|Oktobarska revolucija u Rusiji|Po starom ruskom kalendaru bila je u oktobru, a po našem u novembru.|svet|October Revolution
+1918|Kraj Prvog svetskog rata|Primirje je potpisano u vagonu u šumi kod Kompjenja.|svet|Armistice of 11 November 1918
+1924|Prve zimske olimpijske igre|Održane su u Šamoniju u Francuskoj.|sport|1924 Winter Olympics
+1927|Lindberg sam leti preko Atlantika|Leteo je bez prestanka 33 i po sata, od Njujorka do Pariza.|nauka|Spirit of St. Louis
+1928|Fleming otkriva penicilin|Otkriće je bilo slučajno – plesan je ubila bakterije u zaboravljenoj posudi.|nauka|Penicillin
+1928|Prvi crtani film sa Miki Mausom i zvukom|Miki Maus je u filmu upravljao parobrodom i zviždao.|kultura|Steamboat Willie
+1929|Veliki slom berze u Njujorku|Počela je Velika ekonomska kriza koja je trajala godinama.|svet|Wall Street crash of 1929
+1930|Prvo svetsko prvenstvo u fudbalu|Održano je u Urugvaju, a Jugoslavija je stigla do polufinala.|sport|1930 FIFA World Cup
+1930|Otkriven Pluton|Otkrio ga je Klajd Tombo, a od 2006. godine Pluton se zove patuljasta planeta.|nauka|Pluto
+1937|Prvi dugometražni crtani film „Snežana i sedam patuljaka“|Mnogi su predviđali propast filma, a postao je veliki uspeh.|kultura|Snow White and the Seven Dwarfs (1937 film)
+1939|Počinje Drugi svetski rat|Rat je počeo napadom Nemačke na Poljsku 1. septembra.|svet|World War II
+1945|Osnovane Ujedinjene nacije|Osnivačka povelja potpisana je u San Francisku.|svet|United Nations
+1946|Predstavljen ENIAC, jedan od prvih računara|Zauzimao je celu prostoriju i težio oko 27 tona.|nauka|ENIAC
+1947|Izumljen tranzistor|Tranzistori su osnova svih današnjih računara i telefona.|nauka|Transistor
+1953|Otkrivena struktura DNK – dvostruka spirala|Votson i Krik su koristili snimak koji je napravila Rozalind Frenklin.|nauka|Nucleic acid double helix
+1953|Hilari i Tenzing osvajaju Mont Everest|Bili su prvi ljudi za koje se pouzdano zna da su stigli na vrh.|sport|1953 British Mount Everest expedition
+1954|Baništer trči milju ispod četiri minuta|Dugo se mislilo da je to nemoguće za ljudsko telo.|sport|Roger Bannister
+1955|Otvoren prvi Diznilend|Park je otvoren u Kaliforniji.|kultura|Disneyland
+1957|Lansiran Sputnjik, prvi veštački satelit|Sputnjik je bio metalna lopta sa četiri antene koja je samo „pištala“.|nauka|Sputnik 1
+1961|Jurij Gagarin, prvi čovek u svemiru|Jednom je obleteo Zemlju za 108 minuta.|nauka|Vostok 1
+1961|Podignut Berlinski zid|Zid je delio grad 28 godina.|svet|Berlin Wall
+1962|Bitlsi objavljuju svoj prvi singl|Pesma se zvala „Love Me Do“.|kultura|Love Me Do
+1963|Ubijen američki predsednik Džon Kenedi|Ubijen je u Dalasu dok se vozio u otvorenom automobilu.|svet|Assassination of John F. Kennedy
+1969|Prvi ljudi na Mesecu|Nil Armstrong i Baz Oldrin su hodali po Mesecu oko dva i po sata.|nauka|Apollo 11
+1971|Poslat prvi imejl|Rej Tomlinson je izabrao znak @ da odvoji ime od adrese računara.|nauka|Email
+1976|Nadja Komaneči dobija prvu ocenu 10 u gimnastici|Semafor nije mogao da prikaže 10,00, pa je pisalo 1,00.|sport|Nadia Comăneci
+1984|Napravljena igra Tetris|Izmislio ju je ruski programer Aleksej Pajitnov.|kultura|Tetris
+1984|Zimske olimpijske igre u Sarajevu|To su bile prve zimske olimpijske igre u socijalističkoj zemlji.|sport|1984 Winter Olympics
+1985|Izlazi prva igra Super Mario|Mario je prvo bio stolar, a tek kasnije vodoinstalater.|kultura|Super Mario Bros.
+1986|Nesreća u nuklearnoj elektrani Černobilj|Oko elektrane i danas postoji zona u kojoj se ne živi.|nauka|Chernobyl disaster
+1989|Pad Berlinskog zida|Ljudi su zid razbijali čekićima i nosili komade kao suvenir.|svet|Fall of the Berlin Wall
+1990|Lansiran svemirski teleskop Habl|Prve slike su bile mutne, pa su astronauti morali da mu poprave „naočare“.|nauka|Hubble Space Telescope
+1991|Raspad Sovjetskog Saveza|Od jedne države nastalo je 15 novih.|svet|Dissolution of the Soviet Union
+1991|Pokrenut prvi veb sajt|Napravio ga je Tim Berners-Li u CERN-u kod Ženeve.|nauka|World Wide Web
+1992|Košarkaški „Tim snova“ na olimpijskim igrama|SAD su prvi put na olimpijske igre poslale igrače iz NBA lige.|sport|1992 United States men's Olympic basketball team
+1996|Rođena ovca Doli, prvi klonirani sisar|Ime je dobila po pevačici Doli Parton.|nauka|Dolly (sheep)
+1997|Objavljena prva knjiga o Hariju Poteru|Pre objavljivanja rukopis je odbilo dvanaest izdavača.|kultura|Harry Potter and the Philosopher's Stone
+
+# ───── 21. vek ─────
+2002|Evro postaje novac u džepu|Novčanice i kovanice evra počele su da se koriste u 12 zemalja.|svet|Euro
+2002|Jugoslavija postaje prvak sveta u košarci|Finale u Indijanapolisu dobijeno je protiv Argentine posle produžetka.|sport|2002 FIBA World Championship
+2003|Završeno čitanje ljudskog genoma|Ljudski genom ima oko tri milijarde „slova“ DNK.|nauka|Human Genome Project
+2007|Predstavljen prvi Ajfon|Telefon bez tastature, sa ekranom na dodir, promenio je svet mobilnih telefona.|nauka|IPhone (1st generation)
+2009|Izlazi prva verzija igre Minecraft|Prvu verziju napravio je jedan programer za samo nekoliko dana.|kultura|Minecraft
+2009|Jusein Bolt trči 100 metara za 9,58 sekundi|Svetski rekord postavljen u Berlinu važi i danas.|sport|Usain Bolt
+2012|Otkriven Higsov bozon|Čestica je otkrivena u CERN-u, skoro 50 godina posle predviđanja.|nauka|Higgs boson
+2015|Prvi put zabeleženi gravitacioni talasi|Talasi su nastali sudarom dve crne rupe pre više od milijardu godina.|nauka|First observation of gravitational waves
+2019|Objavljena prva slika crne rupe|Za snimak je trebalo spojiti teleskope širom sveta u jedan „teleskop veličine Zemlje“.|nauka|Messier 87
+2021|Lansiran svemirski teleskop Džejms Veb|Ogledalo prečnika 6,5 m moralo je da se sklopi kao origami da bi stalo u raketu.|nauka|James Webb Space Telescope

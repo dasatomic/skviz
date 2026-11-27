@@ -1,0 +1,253 @@
+# Rečenice za bonus igru „Lovac na greške“ (public/greske.js, lib/soba.js).
+# Greška se zapisuje kao {pogrešno|tačno|pravilo} ili {pogrešno|tačno|pravilo|napomena}; ostatak rečenice mora biti tačan.
+# Pravila (@id: tekst) se prikazuju na otkrivanju. U rečenici 1–3 greške. Greška ne sme zavisiti od pisma –
+# ne koristiti „dj“ umesto „đ“ i slično (u ćirilici bi izgledalo drugačije). Provera: node alati/proveri-greske.js
+
+@ne-glagol: Rečca „ne“ uz glagole piše se odvojeno: ne bi, ne znam, ne mogu, ne volim. Spojeno se pišu samo neću, nemoj, nemam i nisam (i njihovi oblici).
+@ne-spojeno: Spojeno se pišu „neću“, „nemoj“, „nemam“ i „nisam“ (i njihovi oblici: nećeš, nemamo, nisi…).
+@ne-pridev: Uz imenice, prideve i priloge „ne“ se piše spojeno: nepoznat, nesreća, nedovoljno, nežno.
+@li: Upitna rečca „li“ piše se odvojeno od reči ispred nje: da li, je li, hoćeš li, možeš li.
+@futur: Kad pomoćni glagol „ću“ ide iza glagola na -ti, piše se spojeno i bez -ti: radiću, pevaćemo. Glagoli na -ći pišu se odvojeno: doći ću, reći ćeš.
+@c: Glasovi č i ć su različiti i ne smeju se mešati; pomaže srodna reč (kuća – kućica, noć – noćni, čovek – čovečanstvo).
+@dz: Glasovi dž i đ su različiti i ne smeju se mešati (džep, džemper, džungla – ali đak, đubre, anđeo).
+@veliko-ime: Vlastita imena – ljudi, država, gradova, reka, planina – pišu se velikim slovom.
+@visecl: U imenima naselja sve reči se pišu velikim slovom (Novi Sad, Bela Crkva), a u imenima planina, reka, mora i okeana samo prva (Fruška gora, Jadransko more, Atlantski okean).
+@institucija: U imenima ustanova, škola i organizacija samo prva reč se piše velikim slovom, osim vlastitih imena u njemu (Narodni muzej, Osnovna škola „Vuk Karadžić“).
+@malo-dani: Dani u nedelji i meseci pišu se malim slovom: ponedeljak, subota, januar, maj.
+@malo-pridev: Pridevi izvedeni od vlastitih imena pišu se malim slovom: srpski, beogradski, engleski. Velikim slovom pišu se samo prisvojni pridevi (Teslin, Vukov).
+@stanovnik: Imena naroda i stanovnika pišu se velikim slovom: Srbin, Beograđanin, Englez, Novosađanka.
+@praznik: Imena praznika pišu se velikim slovom: Božić, Uskrs, Vidovdan, Savindan, Nova godina.
+@zvucnost: Jednačenje po zvučnosti piše se onako kako se izgovara: ispred bezvučnog suglasnika zvučni postaje bezvučan, a ispred zvučnog bezvučni zvučan (sladak – slatko, težak – teško, bez + pomoći – bespomoćan, šest + deset – šezdeset).
+@zvucnost-d: Glas d ispred s i š se ne menja u pisanju: predsednik, podsetiti, odseći, podšišati. Izuzetak od jednačenja je i „svadba“.
+@gubljenje: Kad se nađu dva ista suglasnika ili kad je skup suglasnika težak za izgovor, jedan se gubi: šest + naest – šesnaest, bez + zuba – bezub, otac – oca.
+@sa: Predlog „sa“ (a ne „s“) piše se ispred reči koje počinju sa s, z, š i ž, i ispred „mnom“: sa sestrom, sa zecom, sa mnom.
+@io: Glagolski pridev radni muškog roda završava se na -o, bez j: radio, video, mislio, pročitao.
+@reci: Infinitiv je „reći“ (sa ć), a zapovedni način „reci“ (sa c): Moram ti reći. Reci mi!
+@h: Glas h ne sme da se izostavi: hoću, hteo, hleb, hladno, hrana, hvala.
+@spojeno: Prilozi i veznici nastali od više reči pišu se spojeno: uvek, zauvek, odjednom, odmah, iako, takođe, uopšte, naravno, unapred, nazad, ponekad.
+@odvojeno: Odvojeno se pišu: „na primer“, „zato što“, „bilo ko“, „bilo šta“, „i po“ (dva i po), „ne samo“.
+@kako-se-pise: Neke reči se jednostavno moraju zapamtiti.
+@predmet: Nazivi školskih predmeta pišu se malim slovom: matematika, srpski jezik, fizičko vaspitanje.
+
+# ───── ne uz glagole ─────
+Marko {nebi|ne bi|ne-glagol} pojeo ni parče torte bez dozvole.
+Moja sestra {nevoli|ne voli|ne-glagol} spanać, a ja ga obožavam.
+Ja to {neznam|ne znam|ne-glagol}, pitaj učiteljicu.
+Danas {nemogu|ne mogu|ne-glagol} da dođem jer imam trening.
+Baka kaže da {nesme|ne sme|ne-glagol} da se jede pre ručka.
+{Nebih|Ne bih|ne-glagol} se kupao u reci kad je mutna.
+Pas {nelaje|ne laje|ne-glagol} kad su gosti u kući.
+Tata {ne će|neće|ne-spojeno} stići na vreme, zaglavio se u gužvi.
+Ja {ni sam|nisam|ne-spojeno} kriv što je vaza pala.
+{Ne moj|Nemoj|ne-spojeno} da trčiš po hodniku!
+Mi {ne mamo|nemamo|ne-spojeno} domaći zadatak za sutra.
+To je bila {ne poznata|nepoznata|ne-pridev} ptica sa dugim repom.
+Kiša je padala {ne prestano|neprestano|ne-pridev} celog dana.
+Lopta je {ne stala|nestala|ne-pridev|„Nestati“ je jedan glagol (nestane, nestao), a ne „ne“ + „stati“.} iza ograde i niko je {nemože|ne može|ne-glagol} naći.
+Sanja je bila {ne zadovoljna|nezadovoljna|ne-pridev} ocenom iz fizike.
+Brat {nesluša|ne sluša|ne-glagol} kad mu mama kaže da ugasi računar.
+Ovaj zadatak nije težak, {ne moj|nemoj|ne-spojeno} da odustaješ.
+
+# ───── li ─────
+{Dali|Da li|li} si video moju svesku iz matematike?
+{Jeli|Je li|li|„Jeli“ je glagol (jeli smo pitu), a pitanje počinje sa „je li“.} ovo tvoja jakna?
+{Hoćešli|Hoćeš li|li} da igramo šah posle večere?
+{Možešli|Možeš li|li} da mi pomogneš oko domaćeg?
+Ne znam {dali|da li|li} ću stići na autobus.
+{Dali|Da li|li} je Dunav duži od Save?
+{Imali|Ima li|li} još soka u frižideru?
+
+# ───── futur ─────
+Sutra {čemo|ćemo|c} ići na izlet na Zlatibor.
+Posle škole {raditi ću|radiću|futur} domaći iz srpskog.
+Na raspustu {putovati ćemo|putovaćemo|futur} vozom do mora.
+Ako budeš vredan, {doćiću|doći ću|futur} da te vidim.
+{Pevati ćemo|Pevaćemo|futur} pesmu na priredbi za Svetog Savu.
+Mama kaže da {češ|ćeš|c} dobiti bicikl za rođendan.
+Ne znam šta {ču|ću|c} obući za maskenbal.
+Kad porastem, {biti ću|biću|futur} pilot ili kuvar.
+Sutra {pisati ćete|pisaćete|futur} kontrolni iz geografije.
+Reći ću ti tajnu ako obećaš da {nečeš|nećeš|c} nikome reći.
+Na ekskurziji {gledati ćemo|gledaćemo|futur} manastir Studenicu.
+
+# ───── č i ć ─────
+Naša {kuča|kuća|c} ima veliko dvorište sa trešnjom.
+Te {noči|noći|c} smo gledali zvezde sa terase.
+Pokrij se {čebetom|ćebetom|c}, napolju je hladno.
+Najviše volim {čevape|ćevape|c} sa lukom.
+U jesen {lišče|lišće|c} menja boju i pada sa drveća.
+Čekali smo ga na {čošku|ćošku|c} kod pekare.
+Izgubio sam {kljuć|ključ|c} od stana.
+{Sreča|Sreća|c} je što smo stigli pre kiše.
+Moja {kčerka|kćerka|c} ide u peti razred, rekla je komšinica.
+Grad {Čaćak|Čačak|c} leži na reci Zapadnoj Moravi.
+Na pijaci smo kupili {voče|voće|c} i povrće.
+Učiteljica nam je pročitala {pricu|priču|c} o hrabrom dečaku.
+Ovaj {ćaj|čaj|c} je previše vruć, sačekaj da se ohladi.
+Moja baka plete čarape za celu porodicu, a {svaćiji|svačiji|c} par je druge boje.
+
+# ───── dž i đ ─────
+Stavio sam telefon u {đep|džep|dz} i krenuo u školu.
+Baka mi je isplela vuneni {đemper|džemper|dz}.
+Tigrovi žive u {đungli|džungli|dz} i odlični su plivači.
+Svaki {džak|đak|dz|„Džak“ je velika vreća, a „đak“ je učenik.} prvak dobio je ranac na poklon.
+Iznesi {džubre|đubre|dz} pre nego što tata dođe.
+U pekari smo kupili đevrek i jogurt, a sestra krofnu sa {đemom|džemom|dz}.
+Pevač je imao {đinovsku|džinovsku|dz} gitaru na bini.
+
+# ───── velika i mala slova ─────
+Glavni grad {srbije|Srbije|veliko-ime} je Beograd.
+Leto smo proveli kod tetke u {novom sadu|Novom Sadu|visecl}.
+Reka {dunav|Dunav|veliko-ime} protiče kroz deset država.
+Na izletu smo se popeli na {Frušku Goru|Frušku goru|visecl}.
+Sledećeg leta idemo na {Jadransko More|Jadransko more|visecl}.
+Kolumbo je preplovio {Atlantski Okean|Atlantski okean|visecl} i stigao do Amerike.
+Rođendan mi je u {Martu|martu|malo-dani}, a sestrin u {Avgustu|avgustu|malo-dani}.
+Svakog {Ponedeljka|ponedeljka|malo-dani} imamo čas fizičkog.
+U {Subotu|subotu|malo-dani} idemo kod babe i dede na selo.
+Najviše volim čas {Srpskog|srpskog|malo-pridev} jezika.
+Moj drug je {srbin|Srbin|stanovnik}, a njegova mama je Engleskinja iz Londona.
+Svi {beograđani|Beograđani|stanovnik} znaju gde je Kalemegdan.
+Na {božić|Božić|praznik} se okupi cela porodica.
+Za {uskrs|Uskrs|praznik} farbamo jaja.
+Dočekali smo {Novu Godinu|Novu godinu|praznik|Kod praznika „Nova godina“ velikim slovom piše se samo prva reč.} na trgu.
+Sa razredom smo posetili {Narodni Muzej|Narodni muzej|institucija} u Beogradu.
+Moja škola se zove Osnovna škola „{vuk karadžić|Vuk Karadžić|veliko-ime}“.
+Planina {kopaonik|Kopaonik|veliko-ime} je poznata po skijalištima.
+Pisac {ivo andrić|Ivo Andrić|veliko-ime} dobio je Nobelovu nagradu.
+Na mapi Evrope pronašli smo {francusku|Francusku|veliko-ime} i Italiju.
+Moja tetka živi u {Beloj crkvi|Beloj Crkvi|visecl}.
+Gledali smo utakmicu Engleske i {Srpske|srpske|malo-pridev} reprezentacije.
+Vidovdan se slavi u {Junu|junu|malo-dani}.
+Na času smo čitali {Srpske|srpske|malo-pridev} narodne bajke.
+Naš komšija je {novosađanin|Novosađanin|stanovnik}, a radi u Nišu.
+U {Decembru|decembru|malo-dani} padne najviše snega, a u {Julu|julu|malo-dani} je najtoplije.
+Reka {morava|Morava|veliko-ime} je najduža reka koja teče samo kroz {srbiju|Srbiju|veliko-ime}.
+Ivana je najbolja u odeljenju iz {Engleskog|engleskog|malo-pridev}.
+
+# ───── jednačenje po zvučnosti i gubljenje ─────
+Ova jabuka je {sladka|slatka|zvucnost} kao med.
+Torba mi je {težka|teška|zvucnost} od knjiga.
+Mače je bilo {bezpomoćno|bespomoćno|zvucnost} na drvetu.
+Moja baba ima {šesdeset|šezdeset|zvucnost} godina.
+Moj brat ima {šestnaest|šesnaest|gubljenje} godina.
+{Pretsednik|Predsednik|zvucnost-d} odeljenja je skupio novac za izlet.
+Mama me je {potsetila|podsetila|zvucnost-d} da ponesem užinu.
+Na {svatbi|svadbi|zvucnost-d} smo igrali kolo do ponoći.
+Lav je {redko|retko|zvucnost} gladan posle velikog obroka.
+Ovo je najteži zadatak, ali ga je {lagko|lako|kako-se-pise} rešila.
+{Razpored|Raspored|zvucnost} časova se menja od ponedeljka.
+Deda je {izkopao|iskopao|zvucnost} rupu za novu voćku.
+Ispod slike je bio {podpis|potpis|zvucnost} slikara.
+Naučnici su {odkrili|otkrili|zvucnost} novu vrstu žabe.
+Zubar je rekao da je deda skoro {bezzub|bezub|gubljenje}.
+Jedan svezak enciklopedije bio je {iztrošen|istrošen|zvucnost}.
+
+# ───── sa i s ─────
+Išla sam u bioskop {s sestrom|sa sestrom|sa}.
+Da li hoćeš da se igraš {s mnom|sa mnom|sa}?
+Deca su se igrala {s zecom|sa zecom|sa} u dvorištu.
+Razgovarali smo {s šefom|sa šefom|sa} prodavnice.
+
+# ───── -io ─────
+Juče sam {videjo|video|io} duplu dugu.
+Petar je {pročitajo|pročitao|io} celu knjigu za jedan dan.
+Deda je {radijo|radio|io} kao poštar četrdeset godina.
+Ko je to {mislijo|mislio|io} da će pasti sneg u maju?
+Kuvar je {spremijo|spremio|io} supu, a moj brat je {popijo|popio|io} dva tanjira.
+
+# ───── reći i reci ─────
+Moram ti {reci|reći|reci} nešto važno.
+{Reći|Reci|reci} mi istinu, ko je pojeo kolače?
+Hoćeš li mi {reci|reći|reci} kako se stiže do muzeja?
+Nemoj nikome {reci|reći|reci}, to je iznenađenje!
+
+# ───── h ─────
+{Oću|Hoću|h} da postanem veterinar.
+Vrabac je {teo|hteo|h} da uzme mrvicu {leba|hleba|h}.
+Napolju je {ladno|hladno|h}, obuci kaput.
+{Fala|Hvala|h} ti na poklonu!
+Ovo je zdrava {rana|hrana|h|Bez h je to „rana“ – povreda.} za ptice.
+Rekao je da {oće|hoće|h} da igra košarku, ali nije {teo|hteo|h} da trči.
+
+# ───── spojeno i odvojeno ─────
+Moj pas {u vek|uvek|spojeno} maše repom kad me vidi.
+Ova knjiga će mi ostati u sećanju {za uvek|zauvek|spojeno}.
+{Od jednom|Odjednom|spojeno} je nestalo struje.
+Dođi {od mah|odmah|spojeno}, večera je na stolu!
+{I ako|Iako|spojeno} je padala kiša, utakmica je odigrana.
+Ja sam {tako đe|takođe|spojeno} dobio peticu iz biologije.
+Ne razumem {u opšte|uopšte|spojeno} ovaj zadatak.
+Mi {uopće|uopšte|kako-se-pise|„Uopće“ je hrvatski oblik; u srpskom se piše „uopšte“.} nismo bili umorni.
+Volim životinje, {naprimer|na primer|odvojeno} mačke i konje.
+Kasnio sam {zatošto|zato što|odvojeno} je autobus pokvaren.
+Može da dođe {biloko|bilo ko|odvojeno}, svi su dobrodošli.
+Film traje {dva ipo|dva i po|odvojeno} sata.
+{Na ravno|Naravno|spojeno} da ću ti pomoći!
+Platili smo karte {u napred|unapred|spojeno}.
+Vrati se {na zad|nazad|spojeno}, zaboravio si ključ!
+{Po nekad|Ponekad|spojeno} sanjam da letim.
+Volim {nesamo|ne samo|odvojeno} sport nego i muziku.
+Moja mačka {nemože|ne može|ne-glagol} da odoli kutiji, a {u vek|uvek|spojeno} se sakrije u nju.
+
+# ───── mešano (2–3 greške) ─────
+U {Julu|julu|malo-dani} {čemo|ćemo|c} ići na more u {grčku|Grčku|veliko-ime}.
+{Dali|Da li|li} {češ|ćeš|c} doći na moj rođendan u {Subotu|subotu|malo-dani}?
+Moj deda {nevidi|ne vidi|ne-glagol} dobro bez naočara, pa mu čitam novine.
+Baka je rekla da Ana {nebi|ne bi|ne-glagol} smela da jede čokoladu pre ručka, pa joj je dala {voče|voće|c}.
+{Oćeš|Hoćeš|h} li da idemo zajedno u {narodni muzej|Narodni muzej|institucija}?
+Sestra ima šesnaest godina i {u vek|uvek|spojeno} kasni.
+Kad sam bio mali, {mislijo|mislio|io} sam da sunce spava noću, a Mesec čuva zvezde sve do jutra.
+Moj brat je {mislijo|mislio|io} da je nedelja u {Aprilu|aprilu|malo-dani}.
+Na {božić|Božić|praznik} smo jeli česnicu i pevali.
+Naš razred {nemože|ne može|ne-glagol} da se dogovori gde {čemo|ćemo|c} na ekskurziju.
+{Jeli|Je li|li} istina da {beograđani|Beograđani|stanovnik} najviše vole Kalemegdan?
+Tata je {kupijo|kupio|io} novi {đemper|džemper|dz} za zimu.
+Svakog {Utorka|utorka|malo-dani} idem na plivanje {s sestrom|sa sestrom|sa}.
+{Putovati ćemo|Putovaćemo|futur} na Zlatibor {za to što|zato što|odvojeno} je počeo raspust.
+Torba je bila {težka|teška|zvucnost}, pa sam je jedva doneo {kuči|kući|c}.
+Moj brat {nevoli|ne voli|ne-glagol} {Matematiku|matematiku|predmet}, ali voli fiziku.
+Juče sam {videjo|video|io} jelena u šumi na Tari, a danas ću ga nacrtati.
+Mama mi je rekla da {nesmem|ne smem|ne-glagol} da plivam sam i {u vek|uvek|spojeno} je pazila na mene.
+Na ekskurziji u {novom sadu|Novom Sadu|visecl} smo videli Petrovaradinsku tvrđavu.
+Ko će da nam {reci|reći|reci} kada počinje predstava?
+{Oću|Hoću|h} da naučim da sviram gitaru do {Nove Godine|Nove godine|praznik}.
+U {Maju|maju|malo-dani} {čemo|ćemo|c} posaditi paradajz u bašti.
+{Dali|Da li|li} si {videjo|video|io} novi film o dinosaurusima?
+Moja drugarica {nevoli|ne voli|ne-glagol} da razgovara {s strancima|sa strancima|sa}.
+Svake {Nedelje|nedelje|malo-dani} idemo kod bake u {smederevo|Smederevo|veliko-ime}.
+Deda nije {teo|hteo|h} da proda staru {kuču|kuću|c}.
+{Raditi ću|Radiću|futur} domaći {od mah|odmah|spojeno} posle ručka.
+Moj tata {ni je|nije|ne-spojeno} {videjo|video|io} utakmicu jer je radio.
+Na Adi smo igrali fudbal sa {beograđanima|Beograđanima|stanovnik} i {novosađanima|Novosađanima|stanovnik}.
+Ova torta je {sladka|slatka|zvucnost}, nemoj da je pojedeš {od jednom|odjednom|spojeno}.
+{Oću|Hoću|h} da ti kažem nešto, ali {neznam|ne znam|ne-glagol} kako.
+Za {Novu Godinu|Novu godinu|praznik} {kititi ćemo|kitićemo|futur} jelku.
+{Jeli|Je li|li} tačno da {dunav|Dunav|veliko-ime} teče kroz četiri prestonice?
+Učiteljica je rekla da {čemo|ćemo|c} u {Junu|junu|malo-dani} ići u zoološki vrt.
+Moja mačka {nevoli|ne voli|ne-glagol} {ladnu|hladnu|h} vodu.
+Brat je {pročitajo|pročitao|io} knjigu {za to što|zato što|odvojeno} je bila zanimljiva.
+Moj ujak je {englez|Englez|stanovnik} i ne zna {Srpski|srpski|malo-pridev}.
+Na {vidovdan|Vidovdan|praznik} smo bili u {kruševcu|Kruševcu|veliko-ime}.
+{Kčerka|Kćerka|c} naše komšinice ide {s zečićem|sa zečićem|sa} u šetnju.
+Deca su se {u vek|uvek|spojeno} igrala na Kalemegdanu pošto {ni su|nisu|ne-spojeno} imala domaći.
+Kad je počela kiša, {od jednom|odjednom|spojeno} smo potrčali {kuči|kući|c}.
+Nismo znali {dali|da li|li} {čemo|ćemo|c} stići pre mraka.
+Profesorka {Srpskog|srpskog|malo-pridev} jezika nam je čitala Andrićeve pripovetke.
+Pronalasci {nikole tesle|Nikole Tesle|veliko-ime} i danas menjaju svet.
+Moja baka je rođena u {Aprilu|aprilu|malo-dani}, a deda u {Oktobru|oktobru|malo-dani}.
+{Fala|Hvala|h} ti što si mi {pomogo|pomogao|kako-se-pise|Pravilno je „pomogao“ (pomoći – pomogao).} oko {Matematike|matematike|predmet}.
+Brat je {skupijo|skupio|io} {šesdeset|šezdeset|zvucnost} sličica za album.
+Na času {Fizike|fizike|predmet} smo merili koliko je voda {ladna|hladna|h}.
+{Nebi|Ne bi|ne-glagol} bilo loše da ponesemo kišobran {za to što|zato što|odvojeno} pada kiša.
+Mama je kupila {đem|džem|dz} od kajsija i {sladke|slatke|zvucnost} kiflice.
+{Hoćešli|Hoćeš li|li} da idemo na {Frušku Goru|Frušku goru|visecl} u {Nedelju|nedelju|malo-dani}?
+Dok sam čekao autobus na {čošku|ćošku|c}, {videjo|video|io} sam drugara iz škole.
+Iako je bio umoran, nije {teo|hteo|h} da ide {kuči|kući|c}.
+U {Atlantskom Okeanu|Atlantskom okeanu|visecl} žive kitovi veći od autobusa.
+Ana je rekla da {če|će|c} doći {s sestrom|sa sestrom|sa}.
+Koliko košta ulaznica za {Narodno Pozorište|Narodno pozorište|institucija}?
+Moj pas {nemože|ne može|ne-glagol} da spava kad grmi, pa se {u vek|uvek|spojeno} sakrije pod krevet.
+Sutra {čemo|ćemo|c} učiti o {rimljanima|Rimljanima|stanovnik} i njihovim putevima.
+Moja tetka živi u {Banjoj luci|Banjoj Luci|visecl}.
+Za {uskrs|Uskrs|praznik} smo farbali jaja {s sestrom|sa sestrom|sa}.
