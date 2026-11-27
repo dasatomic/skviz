@@ -16,8 +16,10 @@
   // naglasci u gramatici (rúka, kùća, grȁd, sȗnce): samoglasnik ćirilicom + znak za naglasak, ne latinično slovo usred reči
   const NAGLASCI = { 'á': ['а', '\u0301'], 'à': ['а', '\u0300'], 'ȁ': ['а', '\u030F'], 'ȃ': ['а', '\u0311'], 'é': ['е', '\u0301'], 'è': ['е', '\u0300'], 'ȅ': ['е', '\u030F'], 'ȇ': ['е', '\u0311'],
     'í': ['и', '\u0301'], 'ì': ['и', '\u0300'], 'ȉ': ['и', '\u030F'], 'ȋ': ['и', '\u0311'], 'ó': ['о', '\u0301'], 'ò': ['о', '\u0300'], 'ȍ': ['о', '\u030F'], 'ȏ': ['о', '\u0311'],
-    'ú': ['у', '\u0301'], 'ù': ['у', '\u0300'], 'ȕ': ['у', '\u030F'], 'ȗ': ['у', '\u0311'], 'ŕ': ['р', '\u0301'], 'ȑ': ['р', '\u030F'], 'ȓ': ['р', '\u0311'] };
-  const NAGLASAK_TEKST = /(akcen|naglas|uzlazn|silazn)/i;
+    'ú': ['у', '\u0301'], 'ù': ['у', '\u0300'], 'ȕ': ['у', '\u030F'], 'ȗ': ['у', '\u0311'], 'ŕ': ['р', '\u0301'], 'ȑ': ['р', '\u030F'], 'ȓ': ['р', '\u0311'],
+    // genitivni znak (profesorâ, učenikâ)
+    'â': ['а', '\u0302'], 'ê': ['е', '\u0302'], 'î': ['и', '\u0302'], 'ô': ['о', '\u0302'], 'û': ['у', '\u0302'] };
+  const NAGLASAK_TEKST = /(akcen|naglas|uzlazn|silazn|genitivn)/i;
   // SI jedinice i uobičajene oznake mera
   const JEDINICE = new Set(['m', 's', 'km', 'h', 'N', 'kg', 'cm', 'mm', 'dm', 'nm', 'J', 'kJ', 'Hz', 'kHz', 'MHz', 'g', 'mg', 'A', 'mA', 'Pa', 'kPa',
     'K', 'V', 'kV', 'W', 'kW', 'MW', 'Wh', 'kWh', 'eV', 'Sv', 'T', 'C', 'mol', 'mmol', 'L', 'l', 'ml', 'dB', 't', 'ha', 'Gy', 'Bq']);
