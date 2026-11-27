@@ -169,12 +169,12 @@ module.exports = ({ L, Q, U, S, G, proveri, prostor, elipsa3, kocka, valjak, kup
   Q(1, 'Tačka $P$ je na površi lopte sa centrom $O$. Koja tvrdnja je tačna?',
     ['$OP = r$', '$OP < r$', '$OP > r$', '$OP = 2r$'],
     'Sve tačke površi su na istom rastojanju od centra, a to je poluprečnik. Po toj osobini se sfera i definiše.', 'poluprečnik',
-    { mediji: sfera(4, [{ d: 'OP', isp: 1, b: 0 }], { T3: { P: pt(4, 65) }, imena: [] }) });
+    { mediji: sfera(4, [{ d: 'OP', isp: 1, b: 0 }], { T3: { P: pt(4, 65) }, imena: ['O', 'P'] }) });
 
   Q(2, 'Tačke $M$ i $N$ su na površi lopte. Koliki je odnos $OM : ON$, gde je $O$ centar?',
     ['$1 : 1$', '$1 : 2$', '$2 : 1$', 'zavisi od tačaka'],
     'Duži OM i ON su poluprečnici iste lopte. Trougao OMN je zato jednakokraki, a njegova dva kraka su jednaka.', 'odnos',
-    { mediji: sfera(5, [{ d: 'OM', isp: 1, b: 0 }, { d: 'ON', isp: 1, b: 0 }, { tacka: 'M' }, { tacka: 'N' }], { T3: { M: pt(5, 30), N: pt(5, 150) }, imena: [] }) });
+    { mediji: sfera(5, [{ d: 'OM', isp: 1, b: 0 }, { d: 'ON', isp: 1, b: 0 }, { tacka: 'M' }, { tacka: 'N' }], { T3: { M: pt(5, 30), N: pt(5, 150) }, imena: ['O', 'M', 'N'] }) });
 
   Q(2, 'Šta je razlika između sfere i lopte?',
     ['Sfera je površ, a lopta i unutrašnjost', 'Lopta je površ, a sfera i njen unutrašnji deo', 'Sfera je ravan krug, a lopta je kocka', 'Lopta i sfera nemaju zajednički centar'],
@@ -212,8 +212,8 @@ module.exports = ({ L, Q, U, S, G, proveri, prostor, elipsa3, kocka, valjak, kup
   Q(3, 'Tačke $A$ i $B$ su na površi lopte poluprečnika $5$ cm, a rastojanje $AB$ je $8$ cm. Koliko je rastojanje centra $O$ od prave $AB$?',
     ['$3$ cm', '$4$ cm', '$\\sqrt{39}$ cm', '$6$ cm'],
     'Normala iz centra polovi tetivu. Dobijaš pravougli trougao sa hipotenuzom 5 i katetom 4, pa je druga kateta 3.', 'normala',
-    { mediji: G({ O: [0, 0], A: [-4, 3], B: [4, 3] }, [{ kr: 'O', r: 5, b: 4 }, { d: 'AB', o: '8 cm', b: 3, debljina: 3 }, { d: 'OA', b: 0 }, { tacka: 'A' }, { tacka: 'B' }], V({ bezImena: ['O', 'A', 'B'] })),
-      medijiOdgovora: G({ O: [0, 0], A: [-4, 3], B: [4, 3], H: [0, 3] }, [{ kr: 'O', r: 5, b: 4 }, { d: 'AB', o: '8 cm', b: 3, debljina: 3 }, { d: 'OA', b: 0, o: '5 cm' }, { d: 'OH', b: 1, isp: 1, o: '3 cm' }, { pu: 'OHA' }, { tacka: 'A' }, { tacka: 'B' }], V({ bezImena: ['O', 'A', 'B', 'H'] })) });
+    { mediji: G({ O: [0, 0], A: [-4, 3], B: [4, 3] }, [{ kr: 'O', r: 5, b: 4 }, { d: 'AB', o: '8 cm', b: 3, debljina: 3 }, { d: 'OA', b: 0 }, { tacka: 'A' }, { tacka: 'B' }, { tacka: 'O' }], V({})),
+      medijiOdgovora: G({ O: [0, 0], A: [-4, 3], B: [4, 3], H: [0, 3] }, [{ kr: 'O', r: 5, b: 4 }, { d: 'AB', o: '8 cm', b: 3, debljina: 3 }, { d: 'OA', b: 0, o: '5 cm' }, { d: 'OH', b: 1, isp: 1, o: '3 cm' }, { pu: 'OHA' }, { tacka: 'A' }, { tacka: 'B' }, { tacka: 'O' }], V({ bezImena: ['H'] })) });
 
   Q(1, 'Koliko tačaka lopte je na rastojanju tačno $r$ od centra?',
     ['Beskonačno mnogo', 'Tačno jedna, u centru', 'Dve', 'Nijedna'],

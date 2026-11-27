@@ -36,6 +36,7 @@ module.exports = ({ L, Q, U, S, G, r, proveri, kvadar, prostor, ravanZ, ravan })
     'Skup svih pravih koje prolaze kroz istu tačku zove se pramen pravih. Tek druga tačka na pravoj izdvaja jednu od njih.', 'pramen',
     { mediji: G({ A: [0, 0] }, [
       ...PRAVA2([0, 0], [3, 0.2], 'a'), ...PRAVA2([0, 0], [2, 2], 'b'), ...PRAVA2([0, 0], [0.5, 2.6], 'c'), ...PRAVA2([0, 0], [-2, 1.4], 'd'),
+      { tacka: 'A' },
     ], { velicina: 220 }) });
 
   Q(1, 'Kako se zovu tri tačke koje leže na jednoj pravoj?',
@@ -80,9 +81,9 @@ module.exports = ({ L, Q, U, S, G, r, proveri, kvadar, prostor, ravanZ, ravan })
   Q(3, 'Tri različite tačke $A$, $B$, $C$ leže na pravoj $p$, a tačka $D$ nije na njoj. Koliko pravih određuju ove četiri tačke?',
     ['4', '3', '6', '2'],
     'Tri tačke na pravoj određuju samo pravu $p$. Svaka od ostale tri tačke određuje sa tačkom $D$ po jednu novu pravu: $1+3=4$.', 'kolinearne',
-    { mediji: G({ A: [0.6, 1.2], B: [2, 1.2], C: [3.4, 1.2], D: [2.2, 3.2] }, [...PRAVA2([0.6, 1.2], [3.4, 1.2], 'p')], { velicina: 240 }),
+    { mediji: G({ A: [0.6, 1.2], B: [2, 1.2], C: [3.4, 1.2], D: [2.2, 3.2] }, [...PRAVA2([0.6, 1.2], [3.4, 1.2], 'p'), { tacka: 'ABCD' }], { velicina: 240 }),
       medijiOdgovora: G({ A: [0.6, 1.2], B: [2, 1.2], C: [3.4, 1.2], D: [2.2, 3.2] }, [...PRAVA2([0.6, 1.2], [3.4, 1.2], 'p'),
-        { d: 'DA', b: 2, debljina: 3 }, { d: 'DB', b: 2, debljina: 3 }, { d: 'DC', b: 2, debljina: 3 }], { velicina: 240 }) });
+        { d: 'DA', b: 2, debljina: 3 }, { d: 'DB', b: 2, debljina: 3 }, { d: 'DC', b: 2, debljina: 3 }, { tacka: 'ABCD' }], { velicina: 240 }) });
 
   U(2, 'Koji pojam NE opisuje položaj tačke u odnosu na pravu?',
     ['Mimoilaznost', 'Pripadanje', 'Van prave', 'Na pravoj'],
@@ -138,8 +139,8 @@ module.exports = ({ L, Q, U, S, G, r, proveri, kvadar, prostor, ravanZ, ravan })
   Q(1, 'Koliko ravni određuju prava $p$ i tačka $A$ van nje?',
     ['Tačno jedna', 'Beskonačno mnogo', 'Dve', 'Nijedna'],
     'Dve tačke prave i tačka A van nje čine tri nekolinearne tačke. Te tri tačke određuju tačno jednu ravan koja sadrži pravu $p$.', 'ravan',
-    { mediji: prostor({ P1: V(0, 0, 0), P2: V(4, 0, 0), A: V(1.5, 1.9, 1.5) }, [...PRAVA3([0, 0, 0], [4, 0, 0], 'p', 2)], { velicina: 240 }),
-      medijiOdgovora: prostor({ P1: V(0, 0, 0), P2: V(4, 0, 0), A: V(1.5, 1.9, 1.5) }, [...PRAVA3([0, 0, 0], [4, 0, 0], 'p', 2), ravan([[0, 0, 0], [4, 0, 0], [5.5, 1.9, 1.5], [1.5, 1.9, 1.5]], { ime: 'α', b: 4 }), { d: 'P1A', b: 1, debljina: 3 }, { d: 'P2A', b: 1, debljina: 3 }], { velicina: 240 }) });
+    { mediji: prostor({ P1: V(0, 0, 0), P2: V(4, 0, 0), A: V(1.5, 1.9, 1.5) }, [...PRAVA3([0, 0, 0], [4, 0, 0], 'p', 2), { tacka: 'A' }], { velicina: 240 }),
+      medijiOdgovora: prostor({ P1: V(0, 0, 0), P2: V(4, 0, 0), A: V(1.5, 1.9, 1.5) }, [...PRAVA3([0, 0, 0], [4, 0, 0], 'p', 2), ravan([[0, 0, 0], [4, 0, 0], [5.5, 1.9, 1.5], [1.5, 1.9, 1.5]], { ime: 'α', b: 4 }), { d: 'P1A', b: 1, debljina: 3 }, { d: 'P2A', b: 1, debljina: 3 }, { tacka: 'A' }], { velicina: 240, bezImena: ['P1', 'P2'] }) });
 
   Q(2, 'Četiri tačke $A$, $B$, $C$, $D$ nisu u istoj ravni. Koliko najviše različitih ravni one određuju?',
     ['4', '6', '3', '1'],
@@ -215,13 +216,13 @@ module.exports = ({ L, Q, U, S, G, r, proveri, kvadar, prostor, ravanZ, ravan })
   Q(3, 'Kroz tačku $A$ van prave $p$, u istoj ravni sa njom, koliko pravih možemo povući paralelno sa $p$?',
     ['Tačno jednu', 'Beskonačno mnogo', 'Nijednu', 'Tačno dve'],
     'Ovo je Euklidov postulat o paralelama: kroz tačku van prave prolazi tačno jedna prava paralelna datoj. Sve ostale prave kroz $A$ seku $p$.', 'paralelne',
-    { mediji: G({ A: [1.6, 2.2] }, [...PRAVA2([0, 0], [3.6, 0.2], 'p')], { velicina: 240 }),
-      medijiOdgovora: G({ A: [1.6, 2.2] }, [...PRAVA2([0, 0], [3.6, 0.2], 'p'), ...PRAVA2([0.4, 2.2], [3.0, 2.2], 'q', 2)], { velicina: 240 }) });
+    { mediji: G({ A: [1.6, 2.2] }, [...PRAVA2([0, 0], [3.6, 0.2], 'p'), { tacka: 'A' }], { velicina: 240 }),
+      medijiOdgovora: G({ A: [1.6, 2.2] }, [...PRAVA2([0, 0], [3.6, 0.2], 'p'), ...PRAVA2([0.4, 2.2], [3.0, 2.2], 'q', 2), { tacka: 'A' }], { velicina: 240 }) });
 
   Q(3, 'Kroz tačku $A$ van prave $p$ u prostoru, koliko pravih možemo povući paralelno sa $p$?',
     ['Tačno jednu', 'Beskonačno mnogo', 'Nijednu', 'Tačno dve'],
     'I u prostoru važi isto: kroz tačku van prave prolazi tačno jedna prava paralelna sa njom. Sve prave kroz $A$ paralelne sa $p$ leže u jednoj ravni, ali je samo jedna od njih paralelna sa $p$.', 'prostor',
-    { mediji: prostor({ A: V(1, 1.2, 2.2), P1: V(0, 0, 0), P2: V(4, 0, 0) }, [...PRAVA3([0, 0, 0], [4, 0, 0], 'p', 2)], { velicina: 240 }) });
+    { mediji: prostor({ A: V(1, 1.2, 2.2), P1: V(0, 0, 0), P2: V(4, 0, 0) }, [...PRAVA3([0, 0, 0], [4, 0, 0], 'p', 2), { tacka: 'A' }], { velicina: 240 }) });
 
   Q(1, 'Dve prave se seku pod pravim uglom. Kako se zovu?',
     ['Normalne', 'Paralelne', 'Podudarne', 'Mimoilazne'],
@@ -387,17 +388,17 @@ module.exports = ({ L, Q, U, S, G, r, proveri, kvadar, prostor, ravanZ, ravan })
   Q(2, 'Koliko pravih kroz tačku $A$ van ravni $\\alpha$ je normalno na $\\alpha$?',
     ['Tačno jedna', 'Beskonačno mnogo', 'Nijedna', 'Dve'],
     'Kroz tačku van ravni postoji jedinstvena normala na ravan. Ona prodire ravan u tački koja je njena normalna projekcija.', 'normala',
-    { mediji: prostor({ A: V(1.2, 0.8, 2.4) }, [ravanZ(-1, 4, -1, 3, 0, { ime: 'α' })], { velicina: 260 }) });
+    { mediji: prostor({ A: V(1.2, 0.8, 2.4) }, [ravanZ(-1, 4, -1, 3, 0, { ime: 'α' }), { tacka: 'A' }], { velicina: 260 }) });
 
   Q(3, 'Koliko pravih kroz tačku $A$ na ravni $\\alpha$ je normalno na $\\alpha$?',
     ['Tačno jedna', 'Beskonačno mnogo', 'Nijedna', 'Tri'],
     'Normala u tački ravni je jedinstvena: samo jedna prava kroz A je normalna na sve prave ravni α.', 'normala',
-    { mediji: prostor({ A: V(1.5, 1.2, 0) }, [ravanZ(-1, 4, -1, 3, 0, { ime: 'α' })], { velicina: 260 }) });
+    { mediji: prostor({ A: V(1.5, 1.2, 0) }, [ravanZ(-1, 4, -1, 3, 0, { ime: 'α' }), { tacka: 'A' }], { velicina: 260 }) });
 
   Q(2, 'Tačka $A$ je van ravni $\\alpha$. Koliko pravih kroz $A$ je paralelno sa ravni $\\alpha$?',
     ['Beskonačno mnogo', 'Tačno jedna', 'Nijedna', 'Dve'],
     'Sve prave kroz A koje su paralelne sa α leže u ravni kroz A paralelnoj sa α. Tu ravan ispunjava beskonačno mnogo pravih.', 'paralelna',
-    { mediji: prostor({ A: V(1.5, 1.2, 2) }, [ravanZ(-1, 4, -1, 3, 0, { ime: 'α' })], { velicina: 260 }) });
+    { mediji: prostor({ A: V(1.5, 1.2, 2) }, [ravanZ(-1, 4, -1, 3, 0, { ime: 'α' }), { tacka: 'A' }], { velicina: 260 }) });
 
   Q(2, 'Vrata su uspravna na podu, a šarke su vertikalne. Koji je odnos ravni vrata i ravni poda?',
     ['Normalne su (seku se pod pravim uglom)', 'Paralelne su', 'Poklapaju se', 'Mimoilazne su'],
@@ -576,8 +577,8 @@ module.exports = ({ L, Q, U, S, G, r, proveri, kvadar, prostor, ravanZ, ravan })
   Q(2, 'Tačka $A$ je na rastojanju 5 cm od ravni $\\alpha$. Koliko je rastojanje od $A$ do ravni $\\alpha$ jednako?',
     ['Dužini normale iz $A$ do njenog prodora', 'Dužini duži od $A$ do najdaljeg temena', 'Nuli', 'Polovini dužine duži $AB$'],
     'Rastojanje tačke od ravni je dužina normale iz te tačke do ravni, odnosno do njene normalne projekcije.', 'rastojanje',
-    { mediji: prostor({ A: V(1.5, 1.2, 2.4) }, [ravanZ(-0.5, 4, -0.5, 3, 0, { ime: 'α' })], { velicina: 240 }),
-      medijiOdgovora: prostor({ A: V(1.5, 1.2, 2.4), N: V(1.5, 1.2, 0) }, [ravanZ(-0.5, 4, -0.5, 3, 0, { ime: 'α' }), NORMALA(V(1.5, 1.2, 2.4), V(1.5, 1.2, 0), 2)], { velicina: 240 }) });
+    { mediji: prostor({ A: V(1.5, 1.2, 2.4) }, [ravanZ(-0.5, 4, -0.5, 3, 0, { ime: 'α' }), { tacka: 'A' }], { velicina: 240 }),
+      medijiOdgovora: prostor({ A: V(1.5, 1.2, 2.4), N: V(1.5, 1.2, 0) }, [ravanZ(-0.5, 4, -0.5, 3, 0, { ime: 'α' }), NORMALA(V(1.5, 1.2, 2.4), V(1.5, 1.2, 0), 2), { tacka: 'A' }], { velicina: 240 }) });
 
   Q(3, 'Kvadrat $ABCD$ leži u ravni paralelnoj sa ravni $\\pi$. Kakva je njegova normalna projekcija?',
     ['Kvadrat iste veličine', 'Duž', 'Pravougaonik', 'Tačka'],

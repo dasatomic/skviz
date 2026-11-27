@@ -639,12 +639,13 @@
      {
       "tacka": "N",
       "b": 3
+     },
+     {
+      "tacka": "P",
+      "b": 3
      }
     ],
-    "velicina": 260,
-    "bezImena": [
-     "P"
-    ]
+    "velicina": 260
    },
    "odgovori": [
     "$6 cm$",
@@ -3610,13 +3611,17 @@
       "crtaj": 1,
       "kasni": 0.2,
       "trajanje": 1.2
+     },
+     {
+      "tacka": "A",
+      "b": 3
+     },
+     {
+      "tacka": "B",
+      "b": 3
      }
     ],
-    "velicina": 280,
-    "bezImena": [
-     "A",
-     "B"
-    ]
+    "velicina": 280
    },
    "odgovori": [
     "$5$",
@@ -4207,13 +4212,17 @@
       "crtaj": 1,
       "kasni": 0.2,
       "trajanje": 1.2
+     },
+     {
+      "tacka": "A",
+      "b": 3
+     },
+     {
+      "tacka": "B",
+      "b": 3
      }
     ],
-    "velicina": 280,
-    "bezImena": [
-     "A",
-     "B"
-    ]
+    "velicina": 280
    },
    "odgovori": [
     "$3$",
@@ -4809,13 +4818,17 @@
       "crtaj": 1,
       "kasni": 0.2,
       "trajanje": 1.2
+     },
+     {
+      "tacka": "A",
+      "b": 3
+     },
+     {
+      "tacka": "B",
+      "b": 3
      }
     ],
-    "velicina": 280,
-    "bezImena": [
-     "A",
-     "B"
-    ]
+    "velicina": 280
    },
    "odgovori": [
     "$7$",
@@ -11853,6 +11866,9 @@
       ],
       "b": 0,
       "vel": 18
+     },
+     {
+      "tacka": "A"
      }
     ],
     "velicina": 220
@@ -12553,6 +12569,9 @@
       ],
       "b": 0,
       "vel": 18
+     },
+     {
+      "tacka": "ABCD"
      }
     ],
     "velicina": 240
@@ -12622,6 +12641,9 @@
       "d": "DC",
       "b": 2,
       "debljina": 3
+     },
+     {
+      "tacka": "ABCD"
      }
     ],
     "velicina": 240
@@ -13072,6 +13094,9 @@
        4.503,
        -0.974
       ]
+     },
+     {
+      "tacka": "A"
      }
     ],
     "velicina": 240
@@ -13163,9 +13188,16 @@
       "d": "P2A",
       "b": 1,
       "debljina": 3
+     },
+     {
+      "tacka": "A"
      }
     ],
-    "velicina": 240
+    "velicina": 240,
+    "bezImena": [
+     "P1",
+     "P2"
+    ]
    },
    "rec": "ravan"
   },
@@ -15941,6 +15973,9 @@
       ],
       "b": 0,
       "vel": 18
+     },
+     {
+      "tacka": "A"
      }
     ],
     "velicina": 240
@@ -16006,6 +16041,9 @@
       ],
       "b": 2,
       "vel": 18
+     },
+     {
+      "tacka": "A"
      }
     ],
     "velicina": 240
@@ -16055,6 +16093,9 @@
        4.503,
        -0.974
       ]
+     },
+     {
+      "tacka": "A"
      }
     ],
     "velicina": 240
@@ -20220,6 +20261,9 @@
        -0.733,
        -0.101
       ]
+     },
+     {
+      "tacka": "A"
      }
     ],
     "velicina": 260
@@ -20276,6 +20320,9 @@
        -0.733,
        -0.101
       ]
+     },
+     {
+      "tacka": "A"
      }
     ],
     "velicina": 260
@@ -20744,6 +20791,9 @@
        -0.733,
        -0.101
       ]
+     },
+     {
+      "tacka": "A"
      }
     ],
     "velicina": 260
@@ -24576,6 +24626,9 @@
        -0.118,
        -0.039
       ]
+     },
+     {
+      "tacka": "A"
      }
     ],
     "velicina": 240
@@ -24645,6 +24698,9 @@
         0.108
        ]
       ]
+     },
+     {
+      "tacka": "A"
      }
     ],
     "velicina": 240
@@ -136411,6 +136467,9 @@
       "b": 1,
       "debljina": 3,
       "o": "s"
+     },
+     {
+      "tacka": "OO₁"
      }
     ],
     "velicina": 220,
@@ -244306,10 +244365,7 @@
      }
     ],
     "velicina": 240,
-    "bezImena": [
-     "O",
-     "P"
-    ]
+    "bezImena": []
    },
    "odgovori": [
     "$OP = r$",
@@ -246825,11 +246881,7 @@
      }
     ],
     "velicina": 240,
-    "bezImena": [
-     "O",
-     "M",
-     "N"
-    ]
+    "bezImena": []
    },
    "odgovori": [
     "$1 : 1$",
@@ -249113,14 +249165,12 @@
      },
      {
       "tacka": "B"
+     },
+     {
+      "tacka": "O"
      }
     ],
-    "velicina": 240,
-    "bezImena": [
-     "O",
-     "A",
-     "B"
-    ]
+    "velicina": 240
    },
    "odgovori": [
     "$3$ cm",
@@ -249180,13 +249230,13 @@
      },
      {
       "tacka": "B"
+     },
+     {
+      "tacka": "O"
      }
     ],
     "velicina": 240,
     "bezImena": [
-     "O",
-     "A",
-     "B",
      "H"
     ]
    },

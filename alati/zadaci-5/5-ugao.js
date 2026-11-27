@@ -214,7 +214,7 @@ module.exports = ({ L, Z, K, G, O, bez, r, proveri, naKrugu, sat, uglomer, pica,
     ['$130°$', '$50°$', '$120°$', '$140°$'],
     [K('Krak $OA$ je na podeoku $0°$, pa čitamo samo gde prolazi krak $OB$.'),
      K('$OB$ je jedan podeok ($10°$) posle $120°$: $130°$. (Greška $50°$ nastaje čitanjem od druge strane uglomera.)', ['u'])],
-    G({ O: [0, 0], A: [6, 0], B: naKrugu([0, 0], 6, 130) }, [...uglomer({ R: 5 }), { d: 'OA', b: 1, debljina: 3 }, { d: 'OB', b: 1, debljina: 3 }, { u: 'AOB', b: 2, id: 'u', k: 2, r: 30 }], { bezImena: ['O', 'A', 'B'], velicina: 260 }));
+    G({ O: [0, 0, -90], A: [6, 0, -90], B: [...naKrugu([0, 0], 6, 130), 130] }, [...uglomer({ R: 5 }), { d: 'OA', b: 1, debljina: 3 }, { d: 'OB', b: 1, debljina: 3 }, { u: 'AOB', b: 2, id: 'u', k: 2, r: 30 }], { velicina: 260 }));
 
   Z(1, 'Koliko minuta ima $2,5°$?',
     ['$150\'$', '$25\'$', '$250\'$', '$130\'$'],

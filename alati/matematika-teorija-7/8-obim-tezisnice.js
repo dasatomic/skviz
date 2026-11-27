@@ -348,7 +348,7 @@ module.exports = ({ L, Q, U, S, G, proveri, r, pravilni }) => {
   Q(2, 'U trouglovima $ABC$ i $DEF$ važi $AB = DE = 5$ cm, $AC = DF = 7$ cm i $\\angle A = \\angle D = 40°$. Po kom stavu su podudarni?',
     ['SUS', 'SSS', 'USU', 'SSU'],
     'Dve stranice su jednake, a ugao između njih je jednak. To je stav SUS (strana, ugao, strana). Ugao mora da bude baš između datih stranica, inače ne važi.', 'podudarnost',
-    { mediji: G({ ...sus1, ...sus2 }, [{ p: 'ABC', b: 0 }, { p: 'DEF', b: 0 }, { d: 'AB', o: '5 cm', b: 1 }, { d: 'AC', o: '7 cm', b: 2 }, { u: 'BAC', o: '40°', b: 3 }, { d: 'DE', o: '5 cm', b: 1 }, { d: 'DF', o: '7 cm', b: 2 }, { u: 'EDF', o: '40°', b: 3 }], { bezImena: sve({ ...sus1, ...sus2 }), velicina: 300 }) });
+    { mediji: G({ ...sus1, ...sus2 }, [{ p: 'ABC', b: 0 }, { p: 'DEF', b: 0 }, { d: 'AB', o: '5 cm', b: 1 }, { d: 'AC', o: '7 cm', b: 2 }, { u: 'BAC', o: '40°', b: 3 }, { d: 'DE', o: '5 cm', b: 1 }, { d: 'DF', o: '7 cm', b: 2 }, { u: 'EDF', o: '40°', b: 3 }], { velicina: 300 }) });
 
   // USU
   const usuA = [r(3.553), r(4.235)];
@@ -357,7 +357,7 @@ module.exports = ({ L, Q, U, S, G, proveri, r, pravilni }) => {
   Q(2, 'Trouglovi $ABC$ i $DEF$ imaju $BC = EF = 6$ cm, $\\angle B = \\angle E = 50°$ i $\\angle C = \\angle F = 60°$. Po kom stavu su podudarni?',
     ['USU', 'SUS', 'SSU', 'SSS'],
     'Imaju po jednaku stranicu i na njenim krajevima jednake uglove, pa je to stav USU (ugao, strana, ugao). Stranica $BC$ je baš između uglova $B$ i $C$.', 'podudarnost',
-    { mediji: G({ ...usu1, ...usu2 }, [{ p: 'ABC', b: 0 }, { p: 'DEF', b: 0 }, { d: 'BC', o: '6 cm', b: 1 }, { d: 'EF', o: '6 cm', b: 1 }, { u: 'ABC', o: '50°', b: 3 }, { u: 'BCA', o: '60°', b: 4 }, { u: 'DEF', o: '50°', b: 3 }, { u: 'EFD', o: '60°', b: 4 }], { bezImena: sve({ ...usu1, ...usu2 }), velicina: 300 }) });
+    { mediji: G({ ...usu1, ...usu2 }, [{ p: 'ABC', b: 0 }, { p: 'DEF', b: 0 }, { d: 'BC', o: '6 cm', b: 1 }, { d: 'EF', o: '6 cm', b: 1 }, { u: 'ABC', o: '50°', b: 3 }, { u: 'BCA', o: '60°', b: 4 }, { u: 'DEF', o: '50°', b: 3 }, { u: 'EFD', o: '60°', b: 4 }], { velicina: 300 }) });
 
   // isti uglovi, različite veličine
   const sl1 = { A: [0, 0], B: [4, 0], C: [1, 3] };

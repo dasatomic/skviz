@@ -499,8 +499,8 @@ module.exports = ({ L, Z, K, G, proveri }) => {
     [K('Rastojanja od $O$ do stranica su $12 cm$ i $8 cm$, pa su $OM = OP = 6 cm$ i $ON = OQ = 4 cm$.'),
      K('$MNPQ$ je romb sa dijagonalama $MP = 12 cm$ i $NQ = 8 cm$, koje su normalne.', ['d1', 'd2']),
      K('$P = {12 · 8|2} = 48 cm²$')],
-    G({ a: [-12, -8], b: [12, -8], c: [12, 8], d: [-12, 8], O: [0, 0], M: [-6, 0], N: [0, -4], P: [6, 0], Q: [0, 4], x1: [-12, 0], x2: [12, 0], y1: [0, -8], y2: [0, 8] },
-      [{ p: 'abcd', b: 4, prazno: 1 }, { d: 'x1x2', b: 4, isp: 1 }, { d: 'y1y2', b: 4, isp: 1 }, { p: 'MNPQ', b: 1, gusto: 1 }, { d: 'MP', b: 1, id: 'd1', k: 2 }, { d: 'NQ', b: 3, id: 'd2', k: 2 }, { d: 'ab', o: '24 cm' }, { d: 'bc', o: '16 cm' }], V({ velicina: 300 })));
+    G({ a: [-12, -8], b: [12, -8], c: [12, 8], d: [-12, 8], O: [0, 0, 30], M: [-6, 0], N: [0, -4], P: [6, 0], Q: [0, 4], x1: [-12, 0], x2: [12, 0], y1: [0, -8], y2: [0, 8] },
+      [{ p: 'abcd', b: 4, prazno: 1 }, { d: 'x1x2', b: 4, isp: 1 }, { d: 'y1y2', b: 4, isp: 1 }, { p: 'MNPQ', b: 1, gusto: 1 }, { tacka: 'O' }, { d: 'MP', b: 1, id: 'd1', k: 2 }, { d: 'NQ', b: 3, id: 'd2', k: 2 }, { d: 'ab', o: '24 cm' }, { d: 'bc', o: '16 cm' }], V({ velicina: 300 })));
 
   proveri(sh([[1, 3], [5, 0], [9, 3], [5, 10]]) === 40, 'deltoid u koordinatnoj ravni 40');
   Z(3, 'Kolika je površina četvorougla sa temenima $A(1, 3)$, $B(5, 0)$, $C(9, 3)$ i $D(5, 10)$?',

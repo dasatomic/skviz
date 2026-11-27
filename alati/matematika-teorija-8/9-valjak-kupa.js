@@ -131,7 +131,7 @@ module.exports = ({ L, Q, U, S, G, proveri, telo, A, valjak, kupa, elipsa3, mrez
   Q(2, 'Izvodnica valjka je 6 cm. Kolika je dužina duži OO₁ koja spaja centre osnova?',
     ['6 cm', '3 cm', '12 cm', '4 cm'],
     'Duž OO₁ je osa valjka, a njena dužina je jednaka visini. Izvodnica i visina su jednake, pa je i OO₁ jednaka izvodnici. Mnogi pomešaju osu s poluprečnikom.', 'osa',
-    { mediji: valjak(3, 6, [{ d: 'AA₁', b: 1, debljina: 3, o: 's' }], { imena: true, bezImena: ['A', 'B', 'A₁', 'B₁'] }),
+    { mediji: valjak(3, 6, [{ d: 'AA₁', b: 1, debljina: 3, o: 's' }, { tacka: 'OO₁' }], { imena: true, bezImena: ['A', 'B', 'A₁', 'B₁'] }),
       medijiOdgovora: valjak(3, 6, [{ d: 'OO₁', b: 2, isp: 1, debljina: 2, o: 'OO₁ = 6 cm' }], { imena: true, bezImena: ['A', 'B', 'A₁', 'B₁'] }) });
 
   Q(3, 'Pravougaonik ABCD ima stranice AD = 5 cm i AB = 3 cm i obrće se oko stranice AD. Koji je poluprečnik osnove dobijenog valjka?',

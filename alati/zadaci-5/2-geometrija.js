@@ -444,7 +444,7 @@ module.exports = ({ L, Z, K, G, R, O, bez, r, proveri, naKrugu, pravilni, krug, 
     ['pravougaonik', 'trapez koji nije pravougaonik', 'deltoid', 'trougao'],
     [K('$C$ je slika tačke $A$, a $D$ slika tačke $B$: dijagonale $AC$ i $BD$ su prečnici.', ['d']),
      K('Dijagonale su jednake (obe su prečnici) i polove se u $O$ – takav četvorougao je pravougaonik.', ['p'])],
-    (() => { const t = { O: [0, 0], A: naKrugu([0, 0], 3, 150), B: naKrugu([0, 0], 3, 40) }; t.C = [-t.A[0], -t.A[1]]; t.D = [-t.B[0], -t.B[1]]; return G(t, [{ kr: 'O', r: 3, b: 4 }, { d: 'AB', b: 0, debljina: 4 }, { d: 'AB', b: 1, debljina: 4, okreni: 180, oko: 'O', k: 1 }, { d: 'AC', isp: 1, k: 1, id: 'd' }, { d: 'BD', isp: 1, k: 1, id: 'd' }, { p: 'ABCD', b: 2, k: 2, id: 'p' }, { tacka: 'O' }], { bezImena: ['O'], velicina: 180 }); })());
+    (() => { const t = { O: [0, 0, -90], A: naKrugu([0, 0], 3, 150), B: naKrugu([0, 0], 3, 40) }; t.C = [-t.A[0], -t.A[1]]; t.D = [-t.B[0], -t.B[1]]; return G(t, [{ kr: 'O', r: 3, b: 4 }, { d: 'AB', b: 0, debljina: 4 }, { d: 'AB', b: 1, debljina: 4, okreni: 180, oko: 'O', k: 1 }, { d: 'AC', isp: 1, k: 1, id: 'd' }, { d: 'BD', isp: 1, k: 1, id: 'd' }, { p: 'ABCD', b: 2, k: 2, id: 'p' }, { tacka: 'O' }], { velicina: 180 }); })());
 
   Z(2, 'Prava $p$ prolazi kroz tačku $O$. Šta je slika prave $p$ pri centralnoj simetriji sa centrom $O$?',
     ['sama prava $p$', 'prava paralelna sa $p$', 'prava normalna na $p$', 'tačka $O$'],

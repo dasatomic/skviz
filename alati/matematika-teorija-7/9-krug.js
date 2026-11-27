@@ -67,8 +67,8 @@ module.exports = ({ L, Q, U, S, G, proveri, r, naKrugu, rad }) => {
   Q(3, 'Iz tačke $A$ spolja, koja je od centra $O$ udaljena 13 cm, povučena je tangenta na kružnicu poluprečnika 5 cm. Kolika je dužina tangentne duži $AB$ (od $A$ do dodirne tačke $B$)?',
     ['12 cm', '8 cm', '18 cm', '25 cm'],
     'Trougao $OBA$ je pravougli sa hipotenuzom $OA = 13$ cm i katetom $OB = 5$ cm. Pitagorina teorema daje $AB^2 = 169 - 25 = 144$, pa je $AB = 12$ cm.', 'tangenta',
-    { mediji: G({ O: [0, 0], A: [13, 0], B: [25 / 13, 60 / 13] }, [{ kr: 'O', r: 5, b: 4 }, { d: 'OA', b: 1, debljina: 3, o: 'OA = 13 cm' }, { d: 'OB', b: 2, debljina: 2, o: 'r = 5 cm' }], { bezImena: ['O'], velicina: 300 }),
-      medijiOdgovora: G({ O: [0, 0], A: [13, 0], B: [25 / 13, 60 / 13] }, [{ kr: 'O', r: 5, b: 4 }, { d: 'OA', b: 1, debljina: 3, o: 'OA = 13 cm' }, { d: 'OB', b: 2, debljina: 2 }, { d: 'AB', b: 3, debljina: 3, o: '12 cm' }, { pu: 'OBA' }], { bezImena: ['O'], velicina: 300 }) });
+    { mediji: G({ O: [0, 0, 200], A: [13, 0], B: [25 / 13, 60 / 13] }, [{ kr: 'O', r: 5, b: 4 }, { d: 'OA', b: 1, debljina: 3, o: 'OA = 13 cm' }, { d: 'OB', b: 2, debljina: 2, o: 'r = 5 cm' }, { tacka: 'O' }], { velicina: 300 }),
+      medijiOdgovora: G({ O: [0, 0, 200], A: [13, 0], B: [25 / 13, 60 / 13] }, [{ kr: 'O', r: 5, b: 4 }, { d: 'OA', b: 1, debljina: 3, o: 'OA = 13 cm' }, { d: 'OB', b: 2, debljina: 2 }, { d: 'AB', b: 3, debljina: 3, o: '12 cm' }, { pu: 'OBA' }, { tacka: 'O' }], { velicina: 300 }) });
   Q(2, 'Kolika je najveća moguća dužina tetive koja polazi iz tačke $A$ kruga poluprečnika 5 cm?',
     ['10 cm', '5 cm', '20 cm', '7,5 cm'],
     'Najduža tetiva iz jedne tačke kruga je prečnik koji prolazi kroz nju. Njen drugi kraj je tačka koja je centralno simetrična tački $A$.', 'prečnik',

@@ -68,7 +68,7 @@ module.exports = ({ L, Q, U, S, G: G0, r, proveri, rad }) => {
     ['$6 cm$', '$15 cm$', '$7 cm$', '$4 cm$'],
     'Razmera $2 : 5$ deli duž na $2 + 5 = 7$ jednakih delova. Jedan deo je $21 : 7 = 3 cm$, pa je $MP = 2 · 3 = 6 cm$, a $PN = 15 cm$.',
     'razmera',
-    { mediji: G({ M: [0, 0], N: [7, 0], P: [2, 0] }, [{ lin: [[0, 0], [7, 0]], b: 1, debljina: 3 }, ...podeoci([0, 0], [7, 0], 7), { tacka: 'P', b: 3 }], { ...GO, bezImena: ['P'] }) });
+    { mediji: G({ M: [0, 0], N: [7, 0], P: [2, 0] }, [{ lin: [[0, 0], [7, 0]], b: 1, debljina: 3 }, ...podeoci([0, 0], [7, 0], 7), { tacka: 'P', b: 3 }], { ...GO }) });
   Q(2, 'Tačka $T$ deli duž $AB$ u razmeri $AT : TB = 3 : 4$. Koji deo duži $AB$ je duž $AT$?',
     ['$\\frac{3}{7}$', '$\\frac{3}{4}$', '$\\frac{4}{7}$', '$\\frac{1}{2}$'],
     'Duž se deli na $3 + 4 = 7$ delova, a $AT$ zauzima $3$ od njih. Odnos $\\frac{3}{4}$ je odnos dva dela, a ne deo cele duži.',
@@ -235,7 +235,7 @@ module.exports = ({ L, Q, U, S, G: G0, r, proveri, rad }) => {
       T['B' + IND[i]] = [rr(10 * i / n), 0];
       if (!paralele || paralele.includes(i)) el.push({ lin: [T['A' + IND[i]], T['B' + IND[i]]], b: 2, isp: 1, kasni: 1.8 + 0.3 * i, crtaj: 1 });
     }
-    return G(T, el, { velicina: 280, ...(ticks ? {} : { bezImena: ['A', 'B'] }) });
+    return G(T, el, { velicina: 280 });
   }
 
   L('Primena Talesove teoreme u konstrukcijama');
