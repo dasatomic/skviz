@@ -2758,6 +2758,9 @@
       "tacka": "S"
      },
      {
+      "tacka": "PQ"
+     },
+     {
       "p": "SDQ",
       "id": "t1",
       "b": 2,
@@ -4363,17 +4366,17 @@
       225
      ],
      "B": [
-      8,
+      16,
       0,
       -45
      ],
      "C": [
-      4,
-      6,
+      8,
+      15,
       90
      ],
      "D": [
-      4,
+      8,
       0,
       -90
      ]
@@ -7962,6 +7965,18 @@
       0.382,
       1.176,
       180
+     ],
+     "m": [
+      1.5,
+      1.539
+     ],
+     "s1": [
+      0.047,
+      1.067
+     ],
+     "s2": [
+      1.947,
+      1.684
      ]
     },
     "e": [
@@ -7971,6 +7986,14 @@
      {
       "d": "CP",
       "b": 1
+     },
+     {
+      "d": "s1s2",
+      "isp": 1,
+      "b": 4
+     },
+     {
+      "pu": "PmC"
      },
      {
       "tacka": "P"
@@ -8402,6 +8425,17 @@
       "isp": 1,
       "b": 1,
       "id": "s"
+     },
+     {
+      "tacka": "EF"
+     },
+     {
+      "tx": "s",
+      "at": [
+       5.85,
+       6.9
+      ],
+      "b": 1
      },
      {
       "p": "AEFD",
@@ -10782,7 +10816,7 @@
      "B": [
       6.71,
       0,
-      -45
+      225
      ],
      "C": [
       9,
@@ -10797,7 +10831,7 @@
      "E": [
       6.8,
       0.12,
-      -20
+      0
      ],
      "H": [
       4.59,
@@ -12014,8 +12048,8 @@
      {
       "tx": "p",
       "at": [
-       8.3,
-       0.3
+       7.6,
+       0.45
       ]
      },
      {
@@ -12059,6 +12093,11 @@
       "b": 4,
       "k": 4
      }
+    ],
+    "bezImena": [
+     "P1",
+     "P2",
+     "X"
     ]
    },
    "resenje": [
@@ -21897,6 +21936,9 @@
       "tacka": "Q"
      },
      {
+      "tacka": "P"
+     },
+     {
       "pu": "MPD",
       "k": 3
      },
@@ -23642,12 +23684,14 @@
      },
      {
       "u": "ADM",
-      "o": "20°"
+      "o": "20°",
+      "r": 55
      },
      {
       "u": "MDN",
       "o": "?",
-      "b": 1
+      "b": 1,
+      "r": 32
      },
      {
       "d": "KA",
@@ -25975,11 +26019,29 @@
      },
      {
       "u": "DBA",
-      "o": "80°"
+      "r": 18
      },
      {
       "u": "ADB",
-      "o": "70°"
+      "r": 18,
+      "b": 2
+     },
+     {
+      "tx": "80°",
+      "at": [
+       0.62,
+       1.35
+      ],
+      "vel": 13
+     },
+     {
+      "tx": "70°",
+      "at": [
+       1.5,
+       0.3
+      ],
+      "vel": 13,
+      "b": 2
      },
      {
       "d": "EB",
@@ -30169,7 +30231,7 @@
   {
    "lekcija": 27,
    "tezina": 2,
-   "pitanje": "Stranice trougla $ABC$ su tri uzastopna prirodna broja. Neka je $R$ središte stranice $BC$ i neka je simetrala ugla $BCA$ normalna na duž $AR$. Kolike su stranice trougla?",
+   "pitanje": "Stranice trougla $ABC$ su tri uzastopna prirodna broja. Neka je $P$ središte stranice $BC$ i neka je simetrala ugla $BCA$ normalna na duž $AP$. Kolike su stranice trougla?",
    "odgovori": [
     "$AB = 3$, $BC = 4$, $CA = 2$",
     "$AB = 4$, $BC = 3$, $CA = 2$",
@@ -30194,10 +30256,18 @@
       1.984,
       90
      ],
-     "R": [
+     "P": [
       2,
       0,
       -90
+     ],
+     "n": [
+      1.4375,
+      0.992
+     ],
+     "l": [
+      1.917,
+      1.323
      ]
     },
     "e": [
@@ -30205,18 +30275,28 @@
       "p": "ABC"
      },
      {
-      "d": "AR"
+      "d": "AP"
+     },
+     {
+      "d": "Cl",
+      "isp": 1,
+      "b": 4
+     },
+     {
+      "pu": "Anl"
      },
      {
       "d": "CA",
-      "o": "2"
+      "o": "2",
+      "k": 4
      },
      {
       "d": "CB",
-      "o": "4"
+      "o": "4",
+      "k": 4
      },
      {
-      "p": "ACR",
+      "p": "ACP",
       "id": "t",
       "b": 2,
       "k": 1
@@ -30225,13 +30305,13 @@
    },
    "resenje": [
     {
-     "t": "U trouglu $ACR$ simetrala ugla $C$ je normalna na naspramnu stranicu $AR$ – tada je trougao $ACR$ jednakokrak: $CA = CR$ (simetrala je i visina samo u jednakokrakom trouglu).",
+     "t": "U trouglu $ACP$ simetrala ugla $C$ je normalna na naspramnu stranicu $AP$ – tada je trougao $ACP$ jednakokrak: $CA = CP$ (simetrala je i visina samo u jednakokrakom trouglu).",
      "i": [
       "t"
      ]
     },
     {
-     "t": "$CR = {BC|2}$, pa je $BC = 2 · CA$."
+     "t": "$CP = {BC|2}$, pa je $BC = 2 · CA$."
     },
     {
      "t": "Tri uzastopna broja od kojih je jedan dvostruko veći od drugog: $1, 2, 3$ ($2 = 2 · 1$, ali trougao $1, 2, 3$ ne postoji) ili $2, 3, 4$ ($4 = 2 · 2$)."

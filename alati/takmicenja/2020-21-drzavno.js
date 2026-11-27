@@ -65,8 +65,8 @@ module.exports = {
         'Pazi: ostatak nije $3$! Kod deljenja „velikih“ brojeva sa zajedničkim činiocem i ostatak se množi tim činiocem.',
       ]);
     Z(7, 2, 3,
-      'Neka je $ABCDEF$ pravilni šestougao stranice $1 cm$, a $X$, $Y$, $Z$ središta stranica $AB$, $CD$, $EF$. Kolika je površina šestougla koji je presek trouglova $ACE$ i $XYZ$?',
-      ['${15√3|32} cm²$', '${3√3|8} cm²$', '${9√3|16} cm²$', '${√3|2} cm²$'],
+      'Neka je $ABCDEF$ pravilni šestougao stranice $1 cm$, a $X$, $Y$, $Z$ središta stranica $AB$, $CD$, $EF$. Koliki su obim i površina šestougla koji je presek trouglova $ACE$ i $XYZ$?',
+      ['$O = {9 + 3√3|4} cm$, $P = {15√3|32} cm²$', '$O = {9 + 3√3|4} cm$, $P = {3√3|8} cm²$', '$O = 3 cm$, $P = {15√3|32} cm²$', '$O = {9 + 3√3|4} cm$, $P = {9√3|16} cm²$'],
       [
         K('Trouglovi $ACE$ i $XYZ$ su jednakostranični; njihov presek je šestougao $MNPQRS$.', ['h']),
         'Duž $XY$ je srednja linija trapeza $ABCD$: $XY = {AD + BC|2} = {2 + 1|2} = {3|2}$. Površina trougla $XYZ$: ${(3/2)²√3|4} = {9√3|16}$.',

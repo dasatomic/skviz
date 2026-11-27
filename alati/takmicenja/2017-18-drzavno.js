@@ -71,7 +71,7 @@ module.exports = {
         '$k_{1}$ dodiruje $AB$ u $O$ i $k$ iznutra, pa je njen prečnik $r$: $r_{1} = {r|2}$, $O_{1}$ na visini ${r|2}$ iznad $O$.',
         'Neka je $O_{2} = (x, r_{2})$ (koordinate, $O$ u početku). Dodir sa $k$: $OO_{2} = r − r_{2}$, tj. $x² + r_{2}² = (r − r_{2})²$, pa $x² = r² − 2rr_{2}$.',
         'Dodir sa $k_{1}$: $O_{1}O_{2} = {r|2} + r_{2}$: $x² + ({r|2} − r_{2})² = ({r|2} + r_{2})²$, pa $x² = 2rr_{2}$. Iz obe: $r_{2} = {r|4}$.',
-        K('Tada $OO_{2} = r − {r|4} = {3r|4}$ i $O_{1}O_{2} = {r|2} + {r|4} = {3r|4}$; simetrično za $O_{3}$. Sve četiri stranice su ${3r|4}$ – romb (nije kvadrat).', [], G({ O: [0, 0, -90], O1: [0, 2, 90], O2: [2.828, 1, 0], O3: [-2.828, 1, 180] }, [{ l: 'O', r: 4, od: 0, do: 180 }, { lin: [[-4, 0], [4, 0]] }, { kr: 'O1', r: 2, b: 4 }, { kr: 'O2', r: 1, b: 4 }, { kr: 'O3', r: 1, b: 4 }, { p: 'OO2O1O3', b: 1 }])),
+        K('Tada $OO_{2} = r − {r|4} = {3r|4}$ i $O_{1}O_{2} = {r|2} + {r|4} = {3r|4}$; simetrično za $O_{3}$. Sve četiri stranice su ${3r|4}$ – romb (nije kvadrat).', [], G({ O: [0, 0, -90], O1: [0, 2, 90], O2: [2.828, 1, 0], O3: [-2.828, 1, 180] }, [{ l: 'O', r: 4, od: 0, do: 180, pun: 1 }, { lin: [[-4, 0], [4, 0]] }, { kr: 'O1', r: 2, b: 4 }, { kr: 'O2', r: 1, b: 4 }, { kr: 'O3', r: 1, b: 4 }, { p: 'OO2O1O3', b: 1 }])),
       ]);
     Z(7, 4, 2,
       'Koji su svi realni brojevi $a$ takvi da su $a + √{15}$ i ${1|a} − √{15}$ celi brojevi?',

@@ -52,7 +52,7 @@ module.exports = {
         'Zato je $DM = 2 · PQ$, a kako je $CM = DM$, važi $CM = 2 · PQ$, tj. $CM : PQ = 2$.',
       ],
       G({ A: [0, 0, 225], B: [4, 0, -45], C: [4, 4, 45], D: [0, 4, 135], M: [2, 0, -90], N: [4, 2, 0], P: [3.2, 2.4, -30], Q: [1, 2, 180] },
-        [{ p: 'ABCD' }, { d: 'CM' }, { d: 'DN' }, { d: 'DM' }, { tacka: 'Q' }, { pu: 'MPD', k: 3 }, { p: 'DMP', id: 'tr', b: 2, k: 3 }, { d: 'PQ', b: 1, k: 4 }]));
+        [{ p: 'ABCD' }, { d: 'CM' }, { d: 'DN' }, { d: 'DM' }, { tacka: 'Q' }, { tacka: 'P' }, { pu: 'MPD', k: 3 }, { p: 'DMP', id: 'tr', b: 2, k: 3 }, { d: 'PQ', b: 1, k: 4 }]));
     D(6, 5, 3,
       'Dato je $5$ složenih brojeva ne većih od $120$. Dokaži da među njima postoje dva broja koja nisu uzajamno prosta.',
       [

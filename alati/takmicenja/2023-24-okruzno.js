@@ -74,9 +74,9 @@ module.exports = {
         'Naspramni uglovi paralelograma su jednaki, a susedni su suplementni: $∡ADC = ∡ABC = 80°$ i $∡DAB = ∡BCD = 100°$.',
       ],
       G({ A: [0, 0, -90], B: [6.4, 2.33, -30], C: [4.4, 5.79, 90], D: [-2, 3.46, 135], F: [-2.5, 0, -90], E: [-0.82, 1.41, 160], P1: [-4, 0], P2: [8, 0], X: [5.55, 6.75] },
-        [{ d: 'P1P2' }, { tx: 'p', at: [8.3, 0.3] }, { d: 'AD' }, { d: 'DC' }, { d: 'FX' }, { d: 'AB', isp: 1 }, { d: 'BC', isp: 1 },
+        [{ d: 'P1P2' }, { tx: 'p', at: [7.6, 0.45] }, { d: 'AD' }, { d: 'DC' }, { d: 'FX' }, { d: 'AB', isp: 1 }, { d: 'BC', isp: 1 },
           { u: 'P2AD', o: '120°' }, { u: 'AFC', o: '40°' }, { u: 'DCX', o: '160°' },
-          { p: 'AEF', id: 't1', b: 2, k: 1 }, { p: 'DEC', id: 't2', b: 4, k: 4 }]));
+          { p: 'AEF', id: 't1', b: 2, k: 1 }, { p: 'DEC', id: 't2', b: 4, k: 4 }], { bezImena: ['P1', 'P2', 'X'] }));
     Z(6, 3, 2,
       'Marko izvlači iz šešira kuglice sa brojevima $0, 5, 8$ i $10$. Izvukao je jednak broj kuglica sa brojevima $8$ i $10$, i nekoliko kuglica sa brojem $5$. Kuglica sa brojem $0$ ima četvrtina od ukupnog broja izvučenih kuglica. Koliko je kuglica Marko izvukao ako je zbir svih brojeva na njima $99$?',
       ['$20$', '$15$', '$16$', '$24$'],
@@ -135,8 +135,8 @@ module.exports = {
         'Podelimo trougao $ABC$ dužom $SB$ na trouglove $SCB$ i $SAB$. Visina trougla $SCB$ na $BC$ je $SC = r$, a visina trougla $SAB$ na $AB$ je $SD = r$.',
         'Površine: $\{5 · r|2\} + \{13 · r|2\} = 9r = 30$, pa je $r = \{10|3\} cm$.',
       ],
-      G({ C: [0, 0, 225], A: [12, 0, -45], B: [0, 5, 135], S: [3.33, 0, -90], D: [2.05, 4.15, 60] },
-        [{ p: 'ABC' }, { pu: 'ACB' }, { l: 'S', r: 3.33, od: 0, do: 180 }, { tacka: 'S' }, { d: 'SD', id: 'r', b: 1, o: 'r', k: 2 }, { d: 'SB', isp: 1, k: 3 }]));
+      G({ C: [0, 0, 225], A: [12, 0, -45], B: [0, 5, 135], S: [3.33, 0, -90], D: [4.62, 3.08, 60] },
+        [{ p: 'ABC' }, { pu: 'ACB' }, { l: 'S', r: 3.33, od: 0, do: 180, pun: 1 }, { tacka: 'S' }, { tacka: 'D' }, { d: 'SD', id: 'r', b: 1, o: 'r', k: 2 }, { d: 'SB', isp: 1, k: 3 }]));
     Z(7, 4, 2,
       'Koliko ima prirodnih brojeva $n$ većih od $2$, a manjih od $2024$, takvih da je vrednost izraza $6^{n} + 7^{n} + 8^{n} − 789$ deljiva sa $10$?',
       ['$505$', '$506$', '$504$', '$1010$'],
@@ -179,7 +179,7 @@ module.exports = {
         'Tačka $B(3, 0)$ je na grafiku: $0 = 3k + 4$, pa je $k = −\{4|3\}$.',
         'Funkcija: $y = −\{4|3\}x + 4$ (opadajuća – inače ne bi sekla pozitivan deo $x$-ose).',
       ],
-      G({ O: [0, 0, 225], A: [0, 4, 180], B: [3, 0, -90] }, [{ mreza: [-1, 5, -1, 5], ose: ['x', 'y'] }, { p: 'OAB', b: 2, k: 2 }, { lin: [[-0.75, 5], [3.75, -1]], b: 1, k: 3 }]));
+      G({ O: [0, 0, 225], A: [0, 4, 180], B: [3, 0, -90] }, [{ mreza: [-1, 5, -1, 5], ose: ['x', 'y'] }, { tacka: 'A' }, { p: 'OAB', b: 2, k: 2 }, { lin: [[-0.75, 5], [3.75, -1]], b: 1, k: 3 }]));
     Z(8, 3, 2,
       'Sa koliko nula se završava zbir $98! + 99! + 100!$? ($n!$ je proizvod svih prirodnih brojeva od $1$ do $n$.)',
       ['$26$', '$22$', '$24$', '$23$'],

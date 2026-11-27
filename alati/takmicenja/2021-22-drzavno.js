@@ -32,7 +32,7 @@ module.exports = {
         K('$ED = EB + BD = AB + BD = AC$. Dakle $AE = AC$ – trougao $AEC$ je jednakokrak, pa je $∡ACB = ∡AEC = 40°$.', ['t2']),
       ],
       G({ B: [0, 0, -90], C: [6, 0, -45], A: [0.773, 4.385, 90], D: [2.37, 0, -90], E: [-4.453, 0, 225] },
-        [{ p: 'ABC' }, { d: 'AD' }, { u: 'ABD'.split('').reverse().join(''), o: '80°' }, { u: 'BDA'.split('').reverse().join(''), o: '70°' }, { d: 'EB', isp: 1, k: 2 }, { p: 'ABE', id: 't1', b: 2, k: 2 }, { p: 'AEC', id: 't2', b: 4, k: 4 }]));
+        [{ p: 'ABC' }, { d: 'AD' }, { u: 'DBA', r: 18 }, { u: 'ADB', r: 18, b: 2 }, { tx: '80°', at: [0.62, 1.35], vel: 13 }, { tx: '70°', at: [1.5, 0.3], vel: 13, b: 2 }, { d: 'EB', isp: 1, k: 2 }, { p: 'ABE', id: 't1', b: 2, k: 2 }, { p: 'AEC', id: 't2', b: 4, k: 4 }]));
     Z(6, 4, 3,
       'Data su četiri prirodna broja. Sve nenegativne razlike ovih brojeva uzimaju samo vrednosti $0, 2, 3, 5$. Zbir dva veća broja je tri puta veći od zbira dva manja. Koji su to brojevi?',
       ['$2, 2, 5, 7$ ili $1, 3, 6, 6$', 'samo $2, 2, 5, 7$', 'samo $1, 3, 6, 6$', '$1, 3, 4, 6$'],

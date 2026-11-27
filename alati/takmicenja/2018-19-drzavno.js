@@ -25,15 +25,15 @@ module.exports = {
         '$NZD(d, a) = 78$ (npr. $a = 24 · 13$, $d = 54 · 13$).',
       ]);
     Z(6, 3, 2,
-      'Stranice trougla $ABC$ su tri uzastopna prirodna broja. Neka je $R$ središte stranice $BC$ i neka je simetrala ugla $BCA$ normalna na duž $AR$. Kolike su stranice trougla?',
+      'Stranice trougla $ABC$ su tri uzastopna prirodna broja. Neka je $P$ središte stranice $BC$ i neka je simetrala ugla $BCA$ normalna na duž $AP$. Kolike su stranice trougla?',
       ['$AB = 3$, $BC = 4$, $CA = 2$', '$AB = 4$, $BC = 3$, $CA = 2$', '$AB = 5$, $BC = 6$, $CA = 4$', '$AB = 3$, $BC = 2$, $CA = 4$'],
       [
-        K('U trouglu $ACR$ simetrala ugla $C$ je normalna na naspramnu stranicu $AR$ – tada je trougao $ACR$ jednakokrak: $CA = CR$ (simetrala je i visina samo u jednakokrakom trouglu).', ['t']),
-        '$CR = {BC|2}$, pa je $BC = 2 · CA$.',
+        K('U trouglu $ACP$ simetrala ugla $C$ je normalna na naspramnu stranicu $AP$ – tada je trougao $ACP$ jednakokrak: $CA = CP$ (simetrala je i visina samo u jednakokrakom trouglu).', ['t']),
+        '$CP = {BC|2}$, pa je $BC = 2 · CA$.',
         'Tri uzastopna broja od kojih je jedan dvostruko veći od drugog: $1, 2, 3$ ($2 = 2 · 1$, ali trougao $1, 2, 3$ ne postoji) ili $2, 3, 4$ ($4 = 2 · 2$).',
         'Dakle $CA = 2$, $BC = 4$, $AB = 3$.',
       ],
-      G({ C: [0, 0, 225], B: [4, 0, -45], A: [0.875, 1.984, 90], R: [2, 0, -90] }, [{ p: 'ABC' }, { d: 'AR' }, { d: 'CA', o: '2' }, { d: 'CB', o: '4' }, { p: 'ACR', id: 't', b: 2, k: 1 }]));
+      G({ C: [0, 0, 225], B: [4, 0, -45], A: [0.875, 1.984, 90], P: [2, 0, -90], n: [1.4375, 0.992], l: [1.917, 1.323] }, [{ p: 'ABC' }, { d: 'AP' }, { d: 'Cl', isp: 1, b: 4 }, { pu: 'Anl' }, { d: 'CA', o: '2', k: 4 }, { d: 'CB', o: '4', k: 4 }, { p: 'ACP', id: 't', b: 2, k: 1 }]));
     Z(6, 4, 2,
       'Svaki od brojeva $a_{1}, a_{2}, …, a_{10}$ jednak je $1$ ili $−1$. Da li je moguće da važi $a_{1}a_{2} + a_{2}a_{3} + … + a_{9}a_{10} + a_{10}a_{1} = 0$?',
       ['Nije moguće', 'Moguće je, npr. naizmenično $1, −1$', 'Moguće je samo ako su svi jednaki', 'Moguće je na tačno $10$ načina'],

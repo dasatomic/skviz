@@ -68,7 +68,7 @@ module.exports = {
         K('Obim $ADC$: $AD + DC + CA = {a|2} + h + b = 40$.', ['t']),
         'Oduzmemo: $h = 40 − 25 = 15 cm$. (Trouglovi $ADC$ i $BDC$ zajedno „pokrivaju“ obim $ABC$ plus dvaput $CD$: $2 · 40 = 50 + 2h$.)',
       ],
-      G({ A: [0, 0, 225], B: [8, 0, -45], C: [4, 6, 90], D: [4, 0, -90] }, [{ p: 'ABC' }, { d: 'CD', isp: 1, o: 'h' }, { d: 'AC', o: 'b' }, { d: 'BC', o: 'b' }, { d: 'AD', o: 'a/2' }, { pu: 'CDB' }, { p: 'ADC', id: 't', b: 1, k: 2 }]));
+      G({ A: [0, 0, 225], B: [16, 0, -45], C: [8, 15, 90], D: [8, 0, -90] }, [{ p: 'ABC' }, { d: 'CD', isp: 1, o: 'h' }, { d: 'AC', o: 'b' }, { d: 'BC', o: 'b' }, { d: 'AD', o: 'a/2' }, { pu: 'CDB' }, { p: 'ADC', id: 't', b: 1, k: 2 }]));
     Z(6, 3, 1,
       'Petar je dobio kutiju bombona. Prvog dana je pojeo četvrtinu bombona, a drugog dana četvrtinu ostatka. Koliko je bombona dobio ako je na kraju drugog dana ostalo $9$?',
       ['$16$', '$12$', '$24$', '$36$'],
@@ -170,7 +170,7 @@ module.exports = {
         '$r√3 = 10√3$ ⇒ $r = 10$, pa je $AB = 10 cm$.',
       ],
       G({ O: [0, 0, 90], A: [-2, -3.464, 225], B: [2, -3.464, -45], C: [-2, 3.464, 135], D: [4, 0, 0] },
-        [{ kr: 'O', r: 4 }, { d: 'AB', b: 1, id: 'ab' }, { d: 'CD', b: 2 }, { d: 'CA', isp: 1 }, { d: 'CB', isp: 1 }, { u: 'ACB'.split('').reverse().join(''), o: '30°' }, { d: 'OA', k: 2 }, { d: 'OB', k: 2 }, { d: 'OC', k: 3 }, { d: 'OD', k: 3 }]));
+        [{ kr: 'O', r: 4, k: 1 }, { d: 'AB', b: 1, id: 'ab' }, { d: 'CD', b: 2 }, { d: 'CA', isp: 1 }, { d: 'CB', isp: 1 }, { d: 'DA', isp: 1 }, { d: 'DB', isp: 1 }, { u: 'BCA', o: '30°', r: 40 }, { u: 'ADB', o: '30°', r: 40 }, { u: 'DAC', o: '60°', r: 18 }, { u: 'DBC', o: '60°', r: 18 }, { d: 'OA', k: 2 }, { d: 'OB', k: 2 }, { d: 'OC', k: 3 }, { d: 'OD', k: 3 }]));
     Z(8, 4, 2,
       'Reši jednačinu $|x + |2x − |3x||| = 2021$.',
       ['$x = {2021|2}$ ili $x = −{2021|4}$', 'samo $x = {2021|2}$', '$x = ±{2021|2}$', '$x = {2021|2}$ ili $x = −{2021|6}$'],

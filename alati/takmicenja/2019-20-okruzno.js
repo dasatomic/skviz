@@ -31,7 +31,7 @@ module.exports = {
         'Uporedni ugao: $180° − 53° 23\' = 126° 37\'$ (to je upravo $y$).',
       ],
       G({ O: [0, 0, 225], A: [5, 0, 0], B: [0, 5, 90], P: [2.98, 4.01, 60], Q: [-2.98, -4.01, 240] },
-        [{ d: 'OA' }, { d: 'OB' }, { d: 'PQ', b: 1 }, { pu: 'AOB' }, { u: 'AOP', o: 'α' }, { u: 'POB', o: 'x' }, { u: 'QOA'.split('').reverse().join(''), o: 'y' }], { bezImena: ['O', 'A', 'B', 'P', 'Q'] }));
+        [{ d: 'OA' }, { d: 'OB' }, { d: 'PQ', b: 1 }, { pu: 'AOB' }, { u: 'AOP', o: 'α', r: 55, b: 2 }, { u: 'POB', o: 'x', r: 30 }, { u: 'AOQ', o: 'y', r: 40, b: 4 }], { bezImena: ['O', 'A', 'B', 'P', 'Q'] }));
     Z(5, 4, 2,
       'Odredi prirodan broj $n$ tako da važi ${3|n + 1} < {7|2020} < {3|n}$.',
       ['$865$', '$866$', '$864$', '$288$'],
@@ -132,7 +132,7 @@ module.exports = {
         'Razlika: $AB² − CD² = (d² − 1) − (d² − 25) = 24 cm²$ – ne zavisi od rastojanja centara!',
       ],
       G({ O2: [0, 0, 225], O1: [7, 0, -45], B: [-0.286, 1.979, 135], A: [6.571, 2.969, 90], D: [1.429, -1.4, -60], C: [4.857, 2.1, 120] },
-        [{ kr: 'O2', r: 2 }, { kr: 'O1', r: 3 }, { lin: [[-1.5, 1.81], [8.5, 3.25]], b: 1 }, { lin: [[0, -2.83], [6, 3.4]], b: 2 }, { tacka: 'A' }, { tacka: 'B' }, { tacka: 'C' }, { tacka: 'D' }, { tx: 'p', at: [8.8, 3.6] }, { tx: 'q', at: [6.2, 3.9] }],
+        [{ kr: 'O2', r: 2 }, { kr: 'O1', r: 3 }, { lin: [[-1.5, 1.81], [8.5, 3.25]], b: 1 }, { lin: [[0, -2.83], [6, 3.4]], b: 2 }, { tacka: 'A' }, { tacka: 'B' }, { tacka: 'C' }, { tacka: 'D' }, { tx: 'p', at: [8.8, 3.6] }, { tx: 'q', at: [-0.4, -2.9] }, { tx: 'k₁', at: [10.4, 2.3] }, { tx: 'k₂', at: [-2.4, 1.7] }],
         { bezImena: ['O1', 'O2'] }));
     Z(7, 5, 2,
       'U pravouglom trouglu $ABC$ (pravi ugao kod $C$) je $BC = 3AC$. Tačke $M$ i $N$ na kateti $BC$ dele je na tri jednaka dela ($BM = MN = NC$), a $K$ je središte hipotenuze $AB$. Kolika je mera ugla $MKN$?',

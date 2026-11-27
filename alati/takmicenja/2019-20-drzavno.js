@@ -60,7 +60,7 @@ module.exports = {
         '$AE² + DE² = {3|9} + {6|9} = 1 = AD²$ – po obrnutoj Pitagorinoj teoremi ugao $AED$ je prav, pa je i $∡CED = 90°$.',
       ],
       G({ A: [0, 0, 225], B: [1.414, 0, -45], C: [1.414, 1, 45], D: [0, 1, 135], M: [0.707, 0, -90], E: [0.471, 0.333, -60] },
-        [{ p: 'ABCD' }, { d: 'AC' }, { d: 'DM' }, { d: 'BD', isp: 1, k: 2 }, { p: 'ABD', id: 't', b: 4, k: 2, prazno: 1 }, { pu: 'CED', k: 4 }]));
+        [{ p: 'ABCD' }, { d: 'AC' }, { d: 'DM' }, { tacka: 'E' }, { d: 'BD', isp: 1, k: 2 }, { p: 'ABD', id: 't', b: 4, k: 2, prazno: 1 }, { pu: 'CED', k: 4 }]));
     Z(7, 2, 2,
       'Razlomak ${100^{n} + 10^{n}|100^{n} + 4 · 10^{n}}$ ($n$ prirodan) svedi na oblik ${p|q}$ sa uzajamno prostim $p$ i $q$.',
       ['${10^{n} + 1|10^{n} + 4}$', '${1|4}$', '${10^{n}|10^{n} + 3}$', '${11|14}$'],

@@ -14,7 +14,7 @@ module.exports = {
         K('$F$ je na kružnici $k_{2}$, pa je i $BF = r = 21 cm$. Zato je $AF = AB − BF = 53 − 21 = 32 cm$.', ['af']),
       ],
       G({ E: [0, 0, 200], A: [9.96, 8.36, 90], D: [-9.96, -8.36, 225], B: [62.16, -0.84, -45], F: [41.48, 2.81, 250], C: [58.51, 19.84, 90] },
-        [{ kr: 'E', r: 13 }, { kr: 'B', r: 21 }, { d: 'DA' }, { d: 'AB' }, { d: 'BC' }, { tacka: 'E' }, { tacka: 'B' }, { tx: 'k₁', at: [-12, 11] }, { tx: 'k₂', at: [80, 18] }, { d: 'AF', id: 'af', b: 1, k: 3 }]));
+        [{ kr: 'E', r: 13 }, { kr: 'B', r: 21 }, { d: 'DA' }, { d: 'AB' }, { d: 'BC' }, { tacka: 'E' }, { tacka: 'B' }, { tacka: 'F' }, { tx: 'k₁', at: [-12, 11] }, { tx: 'k₂', at: [80, 18] }, { d: 'AF', id: 'af', b: 1, k: 3 }]));
     Z(5, 2, 1,
       'Dat je niz slova KOLIČNIKOSTATAKKOLIČNIKOSTATAKKOLIČNIKOSTATAK… Koje je $2022$. slovo u tom nizu?',
       ['A', 'T', 'K', 'S'],
@@ -111,7 +111,7 @@ module.exports = {
         K('Upisana kružnica dodiruje dve paralelne stranice, pa je njen prečnik jednak visini: $r = {h|2} = 36 cm$.', ['k']),
       ],
       G({ A: [-6, 0, 180], C: [6, 0, 0], B: [0, -4.5, -90], D: [0, 4.5, 90], O: [0, 0, -45] },
-        [{ p: 'ABCD' }, { d: 'AC', isp: 1, o: '90' }, { d: 'BD', isp: 1 }, { kr: 'O', r: 3.6, id: 'k', b: 1, k: 4 }], { bezImena: ['O'] }));
+        [{ p: 'ABCD' }, { d: 'AC', isp: 1 }, { d: 'BD', isp: 1, o: '90', na: 0.25 }, { d: 'AC', isp: 1, o: '120', na: 0.25, k: 1 }, { kr: 'O', r: 3.6, id: 'k', b: 1, k: 4 }], { bezImena: ['O'] }));
     Z(7, 2, 2,
       'Dat je broj $x = {1|10} + {1|11} + {1|12} + … + {1|19}$. Kako su poređani po veličini brojevi $x$, $x²$, ${1|x}$, ${1|x²}$?',
       ['$x² < x < {1|x} < {1|x²}$', '$x < x² < {1|x²} < {1|x}$', '${1|x²} < {1|x} < x < x²$', '$x² < {1|x²} < x < {1|x}$'],
@@ -204,7 +204,7 @@ module.exports = {
         K('Tangenta paralelna sa $AB$ je na rastojanju $2r = 8 cm$ od $AB$ (krug je između njih). Zato je visina malog trougla $NMC$: $CE = 12 − 8 = 4 cm$.', ['mn']),
         'Trouglovi $NMC$ i $ABC$ su slični: ${MN|AB} = {CE|CD} = {4|12}$, pa je $MN = {14|3} cm$.',
       ],
-      G({ A: [0, 0, 225], B: [14, 0, -45], C: [5, 12, 90], I: [6.667, 4, 0], M: [8, 8, 0], N: [3.333, 8, 180], D: [5, 0, -90], E: [5, 8, 135] },
+      G({ A: [0, 0, 225], B: [14, 0, -45], C: [9, 12, 90], I: [8, 4, 0], M: [10.667, 8, 0], N: [6, 8, 180], D: [9, 0, -90], E: [9, 8, 45] },
         [{ p: 'ABC' }, { kr: 'I', r: 4 }, { d: 'NM', id: 'mn', b: 1 }, { d: 'CD', isp: 1, k: 1 }, { pu: 'CDB', k: 1 }, { p: 'NMC', b: 2, k: 3 }], { bezImena: ['I'] }));
   },
 };

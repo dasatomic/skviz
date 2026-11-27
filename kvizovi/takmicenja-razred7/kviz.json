@@ -2760,12 +2760,12 @@
   {
    "lekcija": 4,
    "tezina": 2,
-   "pitanje": "Neka je $D$ tačka hipotenuze $AB$ pravouglog trougla $ABC$ takva da je $CA = CD = √5$ i $CB = 2√5$. Kolika je površina trougla $BCD$?",
+   "pitanje": "Neka je $D$ tačka hipotenuze $AB$ pravouglog trougla $ABC$ takva da je $CA = CD = √5$ i $CB = 2√5$. Koliki su obim i površina trougla $BCD$?",
    "odgovori": [
-    "$3$",
-    "$5$",
-    "$2$",
-    "$4$"
+    "$O = 3 + 3√5$, $P = 3$",
+    "$O = 3 + 3√5$, $P = 5$",
+    "$O = 5 + 3√5$, $P = 3$",
+    "$O = 3 + 2√5$, $P = 2$"
    ],
    "mediji": {
     "vrsta": "geo",
@@ -2879,12 +2879,12 @@
   {
    "lekcija": 5,
    "tezina": 2,
-   "pitanje": "Romb $ABCD$ ima stranicu $6 cm$ i ugao od $60°$ kod temena $A$. Iz temena $B$ konstruisane su visine romba $BE$ i $BF$. Kolika je površina trougla $BEF$?",
+   "pitanje": "Romb $ABCD$ ima stranicu $6 cm$ i ugao od $60°$ kod temena $A$. Iz temena $B$ konstruisane su visine romba $BE$ i $BF$. Koliki su obim i površina trougla $BEF$?",
    "odgovori": [
-    "${27√3|4} cm²$",
-    "$9√3 cm²$",
-    "${9√3|4} cm²$",
-    "$27 cm²$"
+    "$O = 9√3 cm$, $P = {27√3|4} cm²$",
+    "$O = 9√3 cm$, $P = 9√3 cm²$",
+    "$O = 18 cm$, $P = {27√3|4} cm²$",
+    "$O = 6√3 cm$, $P = {9√3|4} cm²$"
    ],
    "mediji": {
     "vrsta": "geo",
@@ -4258,12 +4258,20 @@
      },
      {
       "d": "AC",
-      "isp": 1,
-      "o": "90"
+      "isp": 1
      },
      {
       "d": "BD",
-      "isp": 1
+      "isp": 1,
+      "o": "90",
+      "na": 0.25
+     },
+     {
+      "d": "AC",
+      "isp": 1,
+      "o": "120",
+      "na": 0.25,
+      "k": 1
      },
      {
       "kr": "O",
@@ -6331,12 +6339,12 @@
   {
    "lekcija": 8,
    "tezina": 2,
-   "pitanje": "Stranice trougla $ABC$ su $AB = 14 cm$, $BC = 15 cm$, $CA = 13 cm$. Tačka $S$ na stranici $AB$ jednako je udaljena od stranica $AC$ i $BC$. Koliko je to rastojanje?",
+   "pitanje": "Stranice trougla $ABC$ su $AB = 14 cm$, $BC = 15 cm$, $CA = 13 cm$. Tačka $S$ na stranici $AB$ jednako je udaljena od stranica $AC$ i $BC$. Kolika je površina trougla $ABC$ i koliko je rastojanje tačke $S$ od stranica $AC$ i $BC$?",
    "odgovori": [
-    "$6 cm$",
-    "$12 cm$",
-    "$5,6 cm$",
-    "$4 cm$"
+    "$P = 84 cm²$, $6 cm$",
+    "$P = 84 cm²$, $12 cm$",
+    "$P = 84 cm²$, $5,6 cm$",
+    "$P = 72 cm²$, $4 cm$"
    ],
    "mediji": {
     "vrsta": "geo",
@@ -6542,12 +6550,12 @@
   {
    "lekcija": 8,
    "tezina": 2,
-   "pitanje": "Na slici je pravougli trapez $ABCD$ ($AD ⊥ AB$, $AD = DC = 10 cm$). Površina trougla $ACD$ je pet puta manja od površine trougla $ABC$. Kolika je površina trapeza?",
+   "pitanje": "Na slici je pravougli trapez $ABCD$ ($AD ⊥ AB$, $AD = DC = 10 cm$). Površina trougla $ACD$ je pet puta manja od površine trougla $ABC$. Koliki su obim i površina trapeza?",
    "odgovori": [
-    "$300 cm²$",
-    "$250 cm²$",
-    "$350 cm²$",
-    "$600 cm²$"
+    "$O = 10(7 + √{17}) cm$, $P = 300 cm²$",
+    "$O = 10(7 + √{17}) cm$, $P = 250 cm²$",
+    "$O = 110 cm$, $P = 300 cm²$",
+    "$O = 10(7 + √{17}) cm$, $P = 600 cm²$"
    ],
    "mediji": {
     "vrsta": "geo",
@@ -8277,12 +8285,12 @@
   {
    "lekcija": 10,
    "tezina": 2,
-   "pitanje": "Na slici je jednakokraki trapez $ABCD$ sa $AB = 12 cm$ i krakom $AD = 5 cm$. Površina trougla $ABC$ je tri puta veća od površine trougla $ACD$. Kolika je površina trapeza?",
+   "pitanje": "Na slici je jednakokraki trapez $ABCD$ sa $AB = 12 cm$ i krakom $AD = 5 cm$. Površina trougla $ABC$ je tri puta veća od površine trougla $ACD$. Koliki su obim i površina trapeza?",
    "odgovori": [
-    "$24 cm²$",
-    "$48 cm²$",
-    "$36 cm²$",
-    "$32 cm²$"
+    "$O = 26 cm$, $P = 24 cm²$",
+    "$O = 26 cm$, $P = 48 cm²$",
+    "$O = 28 cm$, $P = 36 cm²$",
+    "$O = 24 cm$, $P = 32 cm²$"
    ],
    "mediji": {
     "vrsta": "geo",
@@ -12265,8 +12273,8 @@
       -90
      ],
      "D": [
-      2.05,
-      4.15,
+      4.62,
+      3.08,
       60
      ]
     },
@@ -12281,10 +12289,14 @@
       "l": "S",
       "r": 3.33,
       "od": 0,
-      "do": 180
+      "do": 180,
+      "pun": 1
      },
      {
       "tacka": "S"
+     },
+     {
+      "tacka": "D"
      },
      {
       "d": "SD",
@@ -14391,6 +14403,9 @@
      {
       "d": "BD",
       "isp": 1
+     },
+     {
+      "tacka": "O"
      },
      {
       "tacka": "E"
@@ -16589,7 +16604,8 @@
       "r": 2.071,
       "od": 0,
       "do": 180,
-      "b": 1
+      "b": 1,
+      "pun": 1
      },
      {
       "tacka": "O"
@@ -17884,8 +17900,22 @@
      {
       "tx": "q",
       "at": [
-       6.2,
-       3.9
+       -0.4,
+       -2.9
+      ]
+     },
+     {
+      "tx": "k₁",
+      "at": [
+       10.4,
+       2.3
+      ]
+     },
+     {
+      "tx": "k₂",
+      "at": [
+       -2.4,
+       1.7
       ]
      }
     ],
@@ -28338,12 +28368,12 @@
   {
    "lekcija": 25,
    "tezina": 3,
-   "pitanje": "Neka je $ABCDEF$ pravilni šestougao stranice $1 cm$, a $X$, $Y$, $Z$ središta stranica $AB$, $CD$, $EF$. Kolika je površina šestougla koji je presek trouglova $ACE$ i $XYZ$?",
+   "pitanje": "Neka je $ABCDEF$ pravilni šestougao stranice $1 cm$, a $X$, $Y$, $Z$ središta stranica $AB$, $CD$, $EF$. Koliki su obim i površina šestougla koji je presek trouglova $ACE$ i $XYZ$?",
    "odgovori": [
-    "${15√3|32} cm²$",
-    "${3√3|8} cm²$",
-    "${9√3|16} cm²$",
-    "${√3|2} cm²$"
+    "$O = {9 + 3√3|4} cm$, $P = {15√3|32} cm²$",
+    "$O = {9 + 3√3|4} cm$, $P = {3√3|8} cm²$",
+    "$O = 3 cm$, $P = {15√3|32} cm²$",
+    "$O = {9 + 3√3|4} cm$, $P = {9√3|16} cm²$"
    ],
    "mediji": {
     "vrsta": "geo",
@@ -29304,6 +29334,9 @@
      },
      {
       "d": "DM"
+     },
+     {
+      "tacka": "E"
      },
      {
       "d": "BD",
@@ -31830,7 +31863,8 @@
         "l": "O",
         "r": 4,
         "od": 0,
-        "do": 180
+        "do": 180,
+        "pun": 1
        },
        {
         "lin": [

@@ -75,7 +75,7 @@ module.exports = {
         'Drugim rečima: središte pravougaonika (presek dijagonala) je centar simetrije – svaka prava kroz njega seče pravougaonik u dve simetrične tačke.',
       ],
       G({ A: [0, 0, 225], B: [8, 0, -45], C: [8, 4, 45], D: [0, 4, 135], S: [4, 2, 0], P: [5, 0, -90], Q: [3, 4, 90], p1: [5.6, -1.2], p2: [2.4, 5.2] },
-        [{ p: 'ABCD' }, { d: 'BD' }, { d: 'p1p2' }, { tacka: 'S' }, { p: 'SDQ', id: 't1', b: 2, k: 4 }, { p: 'SBP', id: 't2', b: 4, k: 4 }]));
+        [{ p: 'ABCD' }, { d: 'BD' }, { d: 'p1p2' }, { tacka: 'S' }, { tacka: 'PQ' }, { p: 'SDQ', id: 't1', b: 2, k: 4 }, { p: 'SBP', id: 't2', b: 4, k: 4 }]));
     Z(6, 3, 1,
       'Dat je razlomak ${2023|2024}$. Koji broj treba oduzeti od brojioca i dodati imeniocu, da bi se posle skraćivanja dobio razlomak $−{3|4}$?',
       ['$14 164$', '$10 120$', '$12 145$', '$−14 164$'],
@@ -153,8 +153,8 @@ module.exports = {
         'Brojevi su $49$ ($7 · 49 = 343 = 7³$) i $392$ ($7 · 392 = 2744 = 14³$). Zbir: $441$.',
       ]);
     Z(7, 5, 2,
-      'Neka je $D$ tačka hipotenuze $AB$ pravouglog trougla $ABC$ takva da je $CA = CD = √5$ i $CB = 2√5$. Kolika je površina trougla $BCD$?',
-      ['$3$', '$5$', '$2$', '$4$'],
+      'Neka je $D$ tačka hipotenuze $AB$ pravouglog trougla $ABC$ takva da je $CA = CD = √5$ i $CB = 2√5$. Koliki su obim i površina trougla $BCD$?',
+      ['$O = 3 + 3√5$, $P = 3$', '$O = 3 + 3√5$, $P = 5$', '$O = 5 + 3√5$, $P = 3$', '$O = 3 + 2√5$, $P = 2$'],
       [
         'Hipotenuza: $AB = √{5 + 20} = 5$. Površina trougla $ABC$: ${√5 · 2√5|2} = 5$.',
         'Neka je $E$ podnožje visine iz $C$ na $AB$. Iz $P = {AB · CE|2}$: $5 = {5 · CE|2}$, pa je $CE = 2$.',

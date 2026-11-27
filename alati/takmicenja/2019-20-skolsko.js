@@ -137,7 +137,7 @@ module.exports = {
 
     // ───────── VIII razred ─────────
     Z(8, 1, 1,
-      'Pravougaonik ima stranice $5 cm$ i $14 cm$. Osenčena figura je deo pravougaonika između dve četvrtine kruga poluprečnika $5 cm$ (jedna sa centrom u donjem levom, druga u gornjem desnom temenu, kao na slici). Koliki je obim osenčene figure?',
+      'Pravougaonik ima stranice $5 cm$ i $14 cm$. Osenčena figura je deo pravougaonika između dve četvrtine kruga poluprečnika $5 cm$ (jedna sa centrom u gornjem levom, druga u donjem desnom temenu, kao na slici). Koliki je obim osenčene figure?',
       ['$(5π + 18) cm$', '$(10π + 18) cm$', '$(5π + 28) cm$', '$(2,5π + 18) cm$'],
       [
         'Granicu osenčene figure čine dva luka (četvrtine kružnica) i dve duži.',
@@ -145,7 +145,7 @@ module.exports = {
         'Duži su delovi dužih stranica: $14 − 5 = 9 cm$ svaka, ukupno $18 cm$.',
         'Obim: $5π + 18 ≈ 33,7 cm$.',
       ],
-      G({}, [C.pr(0, 0, 14, 5, 4, { prazno: 1 }), { lin: [[5, 0], ...C.luk(0, 0, 5, 0, 90, 24), [0, 5], [9, 5], ...C.luk(14, 5, 5, 180, 270, 24), [14, 0]], zatv: 1, b: 1, gusto: 1 }]));
+      G({}, [C.pr(0, 0, 14, 5, 4, { prazno: 1 }), { lin: [[0, 0], ...C.luk(0, 5, 5, 270, 360, 24), [5, 5], [14, 5], ...C.luk(14, 0, 5, 90, 180, 24), [9, 0]], zatv: 1, b: 1, gusto: 1 }]));
     Z(8, 2, 1,
       'Milašinu nedostaje $600$ dinara za kupovinu $4$ sulundara, a Radašinu $600$ dinara za kupovinu $5$ sulundara. Ako se udruže, nedostajaće im $600$ dinara za kupovinu $6$ sulundara. Kolika je cena sulundara?',
       ['$200$ dinara', '$150$ dinara', '$300$ dinara', '$600$ dinara'],

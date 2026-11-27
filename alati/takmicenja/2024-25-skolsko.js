@@ -161,7 +161,7 @@ module.exports = {
         'Srednja linija je polovina zbira osnovica: $SS_{1} = {7 + 15|2} = 11 cm$.',
       ],
       G({ A: [0, 7, 135], B: [8, 15, 45], S: [4, 11, 135], A1: [0, 0, 270], B1: [8, 0, 270], S1: [4, 0, 270], p1: [-2, 0], p2: [10, 0] },
-        [{ d: 'p1p2' }, { d: 'AB' }, { d: 'AA1', o: '7' }, { d: 'BB1', o: '15' }, { d: 'SS1', isp: 1, b: 1, k: 1 }, { p: 'A1B1BA', id: 'tr', b: 2, k: 2 }]));
+        [{ d: 'p1p2' }, { tx: 'β', at: [9.6, 0.7] }, { d: 'AB' }, { d: 'AA1', o: '7' }, { d: 'BB1', o: '15' }, { d: 'SS1', isp: 1, b: 1, k: 1 }, { p: 'A1B1BA', id: 'tr', b: 2, k: 2 }]));
     Z(8, 2, 1,
       'Obim jednakokrakog trougla čiji je krak za $2 cm$ duži od osnovice je $22 cm$, a obim njemu sličnog trougla je $33 cm$. Koliki je krak većeg trougla?',
       ['$12 cm$', '$9 cm$', '$11 cm$', '$13 cm$'],

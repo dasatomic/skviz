@@ -123,7 +123,7 @@ module.exports = {
         '$r = {1|√2 + 1} = √2 − 1 ≈ 0,41 cm$ (racionalisanje: $(√2 + 1)(√2 − 1) = 1$).',
       ],
       G({ C: [0, 0, 225], A: [5, 0, -45], B: [0, 5, 135], O: [2.071, 0, -90], T: [3.536, 1.464, 30] },
-        [{ p: 'ABC' }, { pu: 'ACB' }, { l: 'O', r: 2.071, od: 0, do: 180, b: 1 }, { tacka: 'O' }, { d: 'OT', id: 'r', b: 2, k: 1 }, { d: 'OB', isp: 1, k: 1 }], { bezImena: ['T'] }));
+        [{ p: 'ABC' }, { pu: 'ACB' }, { l: 'O', r: 2.071, od: 0, do: 180, b: 1, pun: 1 }, { tacka: 'O' }, { d: 'OT', id: 'r', b: 2, k: 1 }, { d: 'OB', isp: 1, k: 1 }], { bezImena: ['T'] }));
     Z(7, 4, 3,
       'U trapezu $ABCD$ kraci su $AD = 3 cm$ i $BC = 4 cm$, kraća osnovica $DC = 4 cm$, a dijagonala $AC = 4 cm$. Kolika je dijagonala $BD$?',
       ['$√{55} cm$', '$7 cm$', '$√{41} cm$', '$5 cm$'],

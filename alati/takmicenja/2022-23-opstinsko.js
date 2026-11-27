@@ -116,8 +116,8 @@ module.exports = {
         '$p = 19$: $m = 2$, $s = 4$ – složen ✓. $p = 2$: $m = 19$, $s = 2^{19}$ – složen ✓. ($p = 38$ nije prost, a $s = 2$ nije složen.)',
       ]);
     Z(7, 2, 2,
-      'Romb $ABCD$ ima stranicu $6 cm$ i ugao od $60°$ kod temena $A$. Iz temena $B$ konstruisane su visine romba $BE$ i $BF$. Kolika je površina trougla $BEF$?',
-      ['${27√3|4} cm²$', '$9√3 cm²$', '${9√3|4} cm²$', '$27 cm²$'],
+      'Romb $ABCD$ ima stranicu $6 cm$ i ugao od $60°$ kod temena $A$. Iz temena $B$ konstruisane su visine romba $BE$ i $BF$. Koliki su obim i površina trougla $BEF$?',
+      ['$O = 9√3 cm$, $P = {27√3|4} cm²$', '$O = 9√3 cm$, $P = 9√3 cm²$', '$O = 18 cm$, $P = {27√3|4} cm²$', '$O = 6√3 cm$, $P = {9√3|4} cm²$'],
       [
         K('Kraća dijagonala $BD$ deli romb na dva jednakostranična trougla $ABD$ i $CBD$ (stranica $6$, ugao $60°$).', ['t1', 't2']),
         'Visine romba iz $B$ su visine ovih trouglova: $BE = BF = {6√3|2} = 3√3 cm$, i one polove uglove kod $B$: $∡EBD = ∡FBD = 30°$.',

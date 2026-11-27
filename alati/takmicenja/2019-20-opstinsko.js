@@ -106,8 +106,8 @@ module.exports = {
         K('$45² = 2025 < 2028$ i $46² = 2116 > 2031$, pa je vrednost izraza između $45$ i $46$.', [], C.brojevna(2020, 2120, [[2025, '45²', 2], [2028, '', 1], [2031, '', 1], [2116, '46²', 2]], { podela: 10, svaki: 5 })),
       ]);
     Z(7, 2, 2,
-      'Stranice trougla $ABC$ su $AB = 14 cm$, $BC = 15 cm$, $CA = 13 cm$. Tačka $S$ na stranici $AB$ jednako je udaljena od stranica $AC$ i $BC$. Koliko je to rastojanje?',
-      ['$6 cm$', '$12 cm$', '$5,6 cm$', '$4 cm$'],
+      'Stranice trougla $ABC$ su $AB = 14 cm$, $BC = 15 cm$, $CA = 13 cm$. Tačka $S$ na stranici $AB$ jednako je udaljena od stranica $AC$ i $BC$. Kolika je površina trougla $ABC$ i koliko je rastojanje tačke $S$ od stranica $AC$ i $BC$?',
+      ['$P = 84 cm²$, $6 cm$', '$P = 84 cm²$, $12 cm$', '$P = 84 cm²$, $5,6 cm$', '$P = 72 cm²$, $4 cm$'],
       [
         'Površina (Heron): $s = 21$, $P = √{21 · 7 · 6 · 8} = 84 cm²$.',
         K('Neka je $h$ traženo rastojanje. Duž $CS$ deli trougao na $ASC$ i $BSC$ sa visinama $h$ na stranice $AC$ i $BC$.', ['t1', 't2']),
@@ -125,8 +125,8 @@ module.exports = {
         K('Povećanje: $42{26|47} t ≈ 42,55 t$ (a ne $40 t$, kao da bi se procenti samo sabrali!).', [], G({}, [C.pr(0, 0, 98, 4, 0, { gusto: 1 }), C.pr(98, 0, 2, 4, 1, { gusto: 1 }), { tx: '~980 t suvo', at: [49, 1.6] }, C.pr(0, -6, 98, 4, 0, { gusto: 1 }), C.pr(98, -6, 6.26, 4, 1, { gusto: 1 }), { tx: '~980 t = 94%', at: [49, -4.4] }])),
       ]);
     Z(7, 4, 2,
-      'Na slici je pravougli trapez $ABCD$ ($AD ⊥ AB$, $AD = DC = 10 cm$). Površina trougla $ACD$ je pet puta manja od površine trougla $ABC$. Kolika je površina trapeza?',
-      ['$300 cm²$', '$250 cm²$', '$350 cm²$', '$600 cm²$'],
+      'Na slici je pravougli trapez $ABCD$ ($AD ⊥ AB$, $AD = DC = 10 cm$). Površina trougla $ACD$ je pet puta manja od površine trougla $ABC$. Koliki su obim i površina trapeza?',
+      ['$O = 10(7 + √{17}) cm$, $P = 300 cm²$', '$O = 10(7 + √{17}) cm$, $P = 250 cm²$', '$O = 110 cm$, $P = 300 cm²$', '$O = 10(7 + √{17}) cm$, $P = 600 cm²$'],
       [
         'Trouglovi $ACD$ i $ABC$ imaju jednake visine (visinu trapeza), pa se površine odnose kao osnovice: $AB = 5 · CD = 50 cm$.',
         'Površina trapeza: ${50 + 10|2} · 10 = 300 cm²$.',
@@ -160,7 +160,7 @@ module.exports = {
         'Krug dodiruje i luk: $FI + r = R$, tj. $3r = 30$, $r = 10 cm$.',
         'Površina: $100π cm²$.',
       ],
-      G({ F: [0, 0, 225], I: [17.32, 10, 0] }, [{ is: 'F', r: 30, od: 0, do: 60, b: 4 }, { kr: 'I', r: 10, b: 1, id: 'k', k: 0 }, { d: 'FI', isp: 1, k: 2 }, { lin: [[17.32, 10], [17.32, 0]], b: 2, k: 2 }], { bezImena: ['F', 'I'] }));
+      G({ F: [0, 0, 225], I: [17.32, 10, 0], x1: [30, 0], x2: [15, 25.98] }, [{ is: 'F', r: 30, od: 0, do: 60, b: 4 }, { u: 'x1Fx2', o: '60°', r: 30 }, { kr: 'I', r: 10, b: 1, id: 'k', k: 0 }, { d: 'FI', isp: 1, k: 2 }, { lin: [[17.32, 10], [17.32, 0]], b: 2, k: 2 }], { bezImena: ['F', 'I'] }));
     Z(8, 3, 2,
       'Koliko celobrojnih rešenja $(x, y)$ ima jednačina $||2x − 4| − 6| + |7 − |1 − y|| = 0$?',
       ['$4$', '$2$', '$8$', '$1$'],

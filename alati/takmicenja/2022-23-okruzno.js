@@ -128,7 +128,7 @@ module.exports = {
         K('Četvorougao $EBGD$ ima dijagonale $EG$ i $BD$ koje se seku u $O$ i polove: $EO = OG$, $BO = OD$. Četvorougao čije se dijagonale polove je paralelogram.', ['p']),
       ],
       G({ A: [0, 0, 225], B: [6, 0, -45], C: [8, 4, 45], D: [2, 4, 135], O: [4, 2, -90], E: [2.667, 1.333, 225], G: [5.333, 2.667, 60] },
-        [{ p: 'ABCD' }, { d: 'AC', isp: 1 }, { d: 'BD', isp: 1 }, { tacka: 'E' }, { tacka: 'G' }, { p: 'EBGD', id: 'p', b: 1, k: 3 }]));
+        [{ p: 'ABCD' }, { d: 'AC', isp: 1 }, { d: 'BD', isp: 1 }, { tacka: 'O' }, { tacka: 'E' }, { tacka: 'G' }, { p: 'EBGD', id: 'p', b: 1, k: 3 }]));
     Z(7, 4, 2,
       'Prosti brojevi $p$ i $q$ zadovoljavaju $20p + 23q = 2023$. Koliko je $p + q$?',
       ['$92$', '$80$', '$102$', '$72$'],

@@ -65,7 +65,7 @@ module.exports = {
         'Obim $AEFD$: $2(5,5 + 6) = 23 cm$.',
       ],
       G({ A: [0, 0, 225], B: [6, 0, -45], C: [6, 6, 45], D: [0, 6, 135], A1: [11, 0, -45], B1: [5, 0, 225], C1: [5, 6, 135], D1: [11, 6, 45], E: [5.5, 0, -90], F: [5.5, 6, 90], s1: [5.5, -1], s2: [5.5, 7] },
-        [{ p: 'ABCD', prazno: 1 }, { p: 'A1D1C1B1', prazno: 1 }, { d: 's1s2', isp: 1, b: 1, id: 's' }, { p: 'AEFD', b: 2, k: 2 }], { bezImena: ['s1', 's2'] }));
+        [{ p: 'ABCD', prazno: 1 }, { p: 'A1D1C1B1', prazno: 1 }, { d: 's1s2', isp: 1, b: 1, id: 's' }, { tacka: 'EF' }, { tx: 's', at: [5.85, 6.9], b: 1 }, { p: 'AEFD', b: 2, k: 2 }], { bezImena: ['s1', 's2'] }));
     Z(6, 3, 2,
       'Tačka $S$ je centar kruga upisanog u trougao $ABC$, $AC = 13 cm$, $BC = 14 cm$. Prava kroz $S$ paralelna sa $AB$ seče $AC$ i $BC$ u tačkama $P$ i $Q$. Koliki je obim trougla $CPQ$?',
       ['$27 cm$', '$13,5 cm$', '$41 cm$', 'ne može se odrediti bez $AB$'],
@@ -104,8 +104,8 @@ module.exports = {
         '$(−1)^{2017} + 1^{2018} = −1 + 1 = 0$.',
       ]);
     Z(7, 2, 2,
-      'Na slici je jednakokraki trapez $ABCD$ sa $AB = 12 cm$ i krakom $AD = 5 cm$. Površina trougla $ABC$ je tri puta veća od površine trougla $ACD$. Kolika je površina trapeza?',
-      ['$24 cm²$', '$48 cm²$', '$36 cm²$', '$32 cm²$'],
+      'Na slici je jednakokraki trapez $ABCD$ sa $AB = 12 cm$ i krakom $AD = 5 cm$. Površina trougla $ABC$ je tri puta veća od površine trougla $ACD$. Koliki su obim i površina trapeza?',
+      ['$O = 26 cm$, $P = 24 cm²$', '$O = 26 cm$, $P = 48 cm²$', '$O = 28 cm$, $P = 36 cm²$', '$O = 24 cm$, $P = 32 cm²$'],
       [
         'Trouglovi $ABC$ i $ACD$ imaju istu visinu (visinu trapeza), pa se površine odnose kao osnovice: $AB = 3 · CD$, tj. $CD = 4 cm$.',
         K('Projekcija kraka: ${12 − 4|2} = 4$, pa je visina $h = √{5² − 4²} = 3 cm$.', [], G({ A: [0, 0, 225], B: [12, 0, -45], C: [8, 3, 45], D: [4, 3, 135], E: [4, 0, -90] }, [{ p: 'ABCD' }, { d: 'AC', isp: 1 }, { d: 'DE', isp: 1, o: '3' }, { pu: 'DEB' }])),
@@ -164,7 +164,7 @@ module.exports = {
         '$BE = {1|2}$, $EC = {3|2}$: razmera $1 : 3$.',
       ],
       G({ A: [0, 0, 225], B: [4, 0, -45], C: [4, 4, 45], D: [0, 4, 135], E: [4, 1, 0], O: [2, 0, -90], T: [3.2, 1.6, 60] },
-        [{ p: 'ABCD', prazno: 1 }, { l: 'O', r: 2, od: 0, do: 180, b: 1 }, { d: 'DE', b: 2 }, { d: 'OT', isp: 1, id: 't', k: 2 }, { tacka: 'T', k: 2 }], { bezImena: ['O'] }));
+        [{ p: 'ABCD', prazno: 1 }, { l: 'O', r: 2, od: 0, do: 180, b: 1, pun: 1 }, { d: 'DE', b: 2 }, { d: 'OT', isp: 1, id: 't', k: 2 }, { tacka: 'T', k: 2 }], { bezImena: ['O'] }));
     Z(8, 4, 3,
       'Pravilna šestostrana prizma sa svim ivicama $4 cm$ presečena je ravni koja sadrži dužu dijagonalu jedne osnove i njoj paralelnu osnovnu ivicu druge osnove. Kolika je površina preseka?',
       ['$12√7 cm²$', '$24√3 cm²$', '$12√3 cm²$', '$8√7 cm²$'],

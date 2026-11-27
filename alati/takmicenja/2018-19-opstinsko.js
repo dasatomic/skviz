@@ -77,8 +77,8 @@ module.exports = {
         '$CP$ je simetrala ugla $C$: $∡PCA = {β|2}$. Dakle $α = {β|2}$, tj. $β = 2α$.',
         '$α + 2β = 180°$: $α + 4α = 180°$, $α = 36°$, $β = 72°$ – to je „zlatni trougao“.',
       ],
-      G({ B: [0, 0, 225], C: [2, 0, -45], A: [1, 3.078, 90], P: [0.382, 1.176, 180] },
-        [{ p: 'ABC' }, { d: 'CP', b: 1 }, { tacka: 'P' }, { p: 'APC', id: 't', b: 2, k: 2 }]));
+      G({ B: [0, 0, 225], C: [2, 0, -45], A: [1, 3.078, 90], P: [0.382, 1.176, 180], m: [1.5, 1.539], s1: [0.047, 1.067], s2: [1.947, 1.684] },
+        [{ p: 'ABC' }, { d: 'CP', b: 1 }, { d: 's1s2', isp: 1, b: 4 }, { pu: 'PmC' }, { tacka: 'P' }, { p: 'APC', id: 't', b: 2, k: 2 }]));
     D(6, 4, 2,
       'Na olimpijadi učestvuje $2019$ takmičara. Dokaži da postoji zemlja iz koje je došlo najmanje $64$ takmičara ili da na olimpijadi učestvuju takmičari iz najmanje $33$ zemlje.',
       [
@@ -187,6 +187,6 @@ module.exports = {
         '$∡EBF = 30° + 75° + 30° = 135°$.',
       ],
       G({ A: [0, 0, 180], B: [6.347, 0, 0], C: [3.173, 2.435, 120], D: [3.173, -2.435, 240], E: [4.816, 3.696, 90], F: [4.816, -3.696, -90] },
-        [{ kr: 'A', r: 4 }, { kr: 'B', r: 4, b: 2 }, { d: 'AE' }, { d: 'AF' }, { d: 'BE', b: 1 }, { d: 'BF', b: 1 }, { d: 'BC', isp: 1 }, { d: 'BD', isp: 1 }, { d: 'AB', isp: 1 }, { u: 'DAC'.split('').reverse().join(''), o: '75°' }, { p: 'BCE', id: 't1', b: 3, k: 2 }]));
+        [{ kr: 'A', r: 4 }, { kr: 'B', r: 4, b: 2 }, { d: 'AE' }, { d: 'AF' }, { d: 'BE', b: 1 }, { d: 'BF', b: 1 }, { d: 'BC', isp: 1 }, { d: 'BD', isp: 1 }, { d: 'AB', isp: 1 }, { u: 'CAD', r: 26 }, { tx: '75°', at: [1.55, 0.55], vel: 13 }, { tx: 'k₁', at: [-3.4, 3.2] }, { tx: 'k₂', at: [9.8, 3.2], b: 2 }, { p: 'BCE', id: 't1', b: 3, k: 2 }]));
   },
 };

@@ -76,7 +76,7 @@ module.exports = {
         '1) $∡BAC = 20°$: $∡BAD = 55°$, a tupi ugao je $180° − 55° = 125°$.',
         '2) $∡BAC = 50°$: $∡BAD = 85°$, a tupi ugao je $95°$. Oba paralelograma postoje, pa su uglovi $55°, 125°$ ili $85°, 95°$.',
       ],
-      G({ A: [0, 0, 225], B: [6.71, 0, -45], C: [9, 3.28, 45], D: [2.29, 3.28, 135], E: [6.8, 0.12, -20], H: [4.59, 1.67, 270] },
+      G({ A: [0, 0, 225], B: [6.71, 0, 225], C: [9, 3.28, 45], D: [2.29, 3.28, 135], E: [6.8, 0.12, 0], H: [4.59, 1.67, 270] },
         [{ p: 'ABCD' }, { d: 'AC' }, { d: 'DE', b: 1 }, { pu: 'DEC' }, { u: 'AHD', o: '55°' }, { p: 'CHE', id: 'tr', b: 2, k: 1 }]));
     Z(6, 3, 2,
       'Prirodni brojevi $a, b, c$ zadovoljavaju jednakost ${253|228} = 1 + {1|a + {1|b + {1|c}}}$. Koliko je $a + b + c$?',
@@ -180,13 +180,13 @@ module.exports = {
         K('Ana: $8000$, Bojana: $9600$, Sanja: ${33|40} · 8000 + 440 = 6600 + 440 = 7040$ dinara. Provera: $8000 + 9600 + 7040 = 24 640$ ✓.', [], C.stubici([['Ana', 8000], ['Bojana', 9600], ['Sanja', 7040]], { korakY: 2000, maxY: 10000, vrednosti: true })),
       ]);
     Z(8, 2, 2,
-      'U pravouglom koordinatnom sistemu $xOy$ dat je jednakokraki trougao $OAB$ sa uglom $∡AOB = 120°$, tačkom $A(0, 8)$ i tačkom $B$ u trećem kvadrantu. Koje su koordinate tačke $B$ i koliko je rastojanje tačke $O$ od prave $AB$?',
-      ['$B(−4√3, −4)$, rastojanje $4$', '$B(−4, −4√3)$, rastojanje $4$', '$B(−4√3, −4)$, rastojanje $8$', '$B(−4√3, −4)$, rastojanje $4√3$'],
+      'U pravouglom koordinatnom sistemu $xOy$ dat je jednakokraki trougao $OAB$ sa uglom $∡AOB = 120°$, tačkom $A(0, 8)$ i tačkom $B$ u trećem kvadrantu. Odredi: a) koordinate tačke $B$; b) obim i površinu trougla $OAB$; c) rastojanje tačke $O$ od prave $AB$.',
+      ['$B(−4√3, −4)$; $O = 16 + 8√3$, $P = 16√3$; $4$', '$B(−4, −4√3)$; $O = 16 + 8√3$, $P = 16√3$; $4$', '$B(−4√3, −4)$; $O = 24$, $P = 32√3$; $8$', '$B(−4√3, −4)$; $O = 16 + 8√3$, $P = 16√3$; $4√3$'],
       [
         'Ugao kod $O$ je tup ($120°$), pa su kraci $OA$ i $OB$: $OB = OA = 8$.',
         'Neka je $X_{B}$ podnožje normale iz $B$ na $x$-osu. Ugao između $OB$ i negativnog dela $x$-ose je $120° − 90° = 30°$. Trougao $OX_{B}B$ je polovina jednakostraničnog trougla stranice $8$.',
         'Kateta naspram $30°$ je $BX_{B} = 4$, a druga kateta $OX_{B} = {8√3|2} = 4√3$. Tačka je u trećem kvadrantu, pa je $B(−4√3, −4)$.',
-        'Usput (delovi b): $AB² = (4√3)² + (8 + 4)² = 48 + 144 = 192$, $AB = 8√3$; obim $16 + 8√3$, površina $P = {OA · |x_{B}||2} = {8 · 4√3|2} = 16√3$.',
+        'b) $AB² = (4√3)² + (8 + 4)² = 48 + 144 = 192$, $AB = 8√3$; obim $16 + 8√3$, površina $P = {OA · |x_{B}||2} = {8 · 4√3|2} = 16√3$.',
         'Rastojanje $O$ od prave $AB$ je visina $h$ na $AB$: ${AB · h|2} = 16√3$, pa je $h = {32√3|8√3} = 4$.',
         'Kraće: u jednakokrakom trouglu uglovi na osnovici su ${180° − 120°|2} = 30°$, pa je $h = {OA|2} = 4$ (kateta naspram $30°$).',
       ],
