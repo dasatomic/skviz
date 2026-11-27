@@ -69,7 +69,7 @@
     'aeterni patris unam sanctam rerum novarum humanae vitae flatus vocis ' +
     'centum mille passus septem omnis cellula carpe diem mens sana corpore sano perpetuum mobile ' +
     'crescit collaborare fermentum carbo morus vitro nostrum urbe condita res publica libertas veritas victoria principia ' +
-    'zoon botane endling hippo ambulance help ' +
+    'zoon botane endling hippo ambulance help ecce mono monuments men das undbild ' +
     // poreklo gramatičkih termina (Gramatika 7): lat. potentia, imperare…, grč. sýntagma, nem. Fußnote
     'potentia imperare congruentia particula copula reportare plagiarius citare aisthesis sýntagma onomatopoiía fußnote fuß ' +
     // sport: nazivi timova i takmičenja, nadimci („Heat“, „Final Four“, „Adriatic Basketball Association“)
