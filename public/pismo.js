@@ -307,7 +307,11 @@
       if (STRANI_ZNAK.test(tok.replace(SRPSKI_ZNAK, ''))) {
         const sviNaglasci = naglasci && [...tok.toLowerCase().replace(SRPSKI_ZNAK, '')].every((c) => !STRANI_ZNAK.test(c) || NAGLASCI[c]);
         if (!sviNaglasci) return tok;
-        return [...tok].map((c) => { const n = NAGLASCI[c.toLowerCase()]; return n ? (c === c.toLowerCase() ? n[0] : n[0].toUpperCase()) + n[1] : recUCir(c); }).join('');
+        // naglašeno slovo zameni ćiriličnim + znakom, a delove između preslovi cele (kònj → ко̀њ, ne ко̀нј)
+        return tok.split(/([^A-Za-zČĆŽŠĐčćžšđ])/).map((c, k) => {
+          if (k % 2 === 0) return recUCir(c);
+          const n = NAGLASCI[c.toLowerCase()]; return (c === c.toLowerCase() ? n[0] : n[0].toUpperCase()) + n[1];
+        }).join('');
       }
       return latinicom(tok, i, tekst) ? tok : recUCir(tok);
     });
